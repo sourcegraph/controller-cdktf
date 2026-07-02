@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeInstanceGuestAcceleratorOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInstanceGuestAcceleratorOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInstanceGuestAcceleratorOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_ComputeInstanceGuestAcceleratorOutputReference) validateSetCo
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInstanceGuestAcceleratorOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInstanceGuestAcceleratorOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewComputeInstanceGuestAcceleratorOutputReferenceParameters(terrafo
 
 	return nil
 }
-

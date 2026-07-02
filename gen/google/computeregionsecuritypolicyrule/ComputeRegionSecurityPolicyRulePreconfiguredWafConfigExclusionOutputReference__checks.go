@@ -90,7 +90,7 @@ func (c *jsiiProxy_ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusio
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionOutputReference) validatePutRequestCookieParameters(value interface{}) error {
+func (c *jsiiProxy_ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionOutputReference) validatePutRequestCookieParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (c *jsiiProxy_ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusio
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionOutputReference) validatePutRequestHeaderParameters(value interface{}) error {
+func (c *jsiiProxy_ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionOutputReference) validatePutRequestHeaderParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -152,7 +152,7 @@ func (c *jsiiProxy_ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusio
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionOutputReference) validatePutRequestQueryParamParameters(value interface{}) error {
+func (c *jsiiProxy_ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionOutputReference) validatePutRequestQueryParamParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (c *jsiiProxy_ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusio
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionOutputReference) validatePutRequestUriParameters(value interface{}) error {
+func (c *jsiiProxy_ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionOutputReference) validatePutRequestUriParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -222,7 +222,7 @@ func (c *jsiiProxy_ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusio
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -287,7 +287,7 @@ func (j *jsiiProxy_ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusio
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -362,4 +362,3 @@ func validateNewComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionOu
 
 	return nil
 }
-

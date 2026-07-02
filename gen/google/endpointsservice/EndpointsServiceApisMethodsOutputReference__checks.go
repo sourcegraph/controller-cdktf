@@ -98,7 +98,7 @@ func (e *jsiiProxy_EndpointsServiceApisMethodsOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_EndpointsServiceApisMethodsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EndpointsServiceApisMethodsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewEndpointsServiceApisMethodsOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

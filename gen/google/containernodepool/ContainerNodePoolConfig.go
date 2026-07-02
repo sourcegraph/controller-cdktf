@@ -6,9 +6,9 @@ import (
 
 type ContainerNodePoolConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type ContainerNodePoolConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The cluster to create the node pool for. Cluster must be present in location provided for zonal clusters.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_node_pool#cluster ContainerNodePool#cluster}
@@ -77,7 +77,7 @@ type ContainerNodePoolConfig struct {
 	// node_drain_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_node_pool#node_drain_config ContainerNodePool#node_drain_config}
-	NodeDrainConfig interface{} `field:"optional" json:"nodeDrainConfig" yaml:"nodeDrainConfig"`
+	NodeDrainConfig any `field:"optional" json:"nodeDrainConfig" yaml:"nodeDrainConfig"`
 	// The list of zones in which the node pool's nodes should be located.
 	//
 	// Nodes must be in the region of their regional cluster or in the same region as their cluster's zone for zonal clusters. If unspecified, the cluster-level node_locations will be used.
@@ -113,4 +113,3 @@ type ContainerNodePoolConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_node_pool#version ContainerNodePool#version}
 	Version *string `field:"optional" json:"version" yaml:"version"`
 }
-

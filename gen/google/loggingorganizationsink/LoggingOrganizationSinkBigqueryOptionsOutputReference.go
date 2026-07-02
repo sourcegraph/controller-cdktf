@@ -12,9 +12,9 @@ type LoggingOrganizationSinkBigqueryOptionsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -37,13 +37,13 @@ type LoggingOrganizationSinkBigqueryOptionsOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	UsePartitionedTables() interface{}
-	SetUsePartitionedTables(val interface{})
-	UsePartitionedTablesInput() interface{}
+	UsePartitionedTables() any
+	SetUsePartitionedTables(val any)
+	UsePartitionedTablesInput() any
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -66,7 +66,7 @@ type LoggingOrganizationSinkBigqueryOptionsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,8 +79,8 @@ type jsiiProxy_LoggingOrganizationSinkBigqueryOptionsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_LoggingOrganizationSinkBigqueryOptionsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoggingOrganizationSinkBigqueryOptionsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -149,8 +149,8 @@ func (j *jsiiProxy_LoggingOrganizationSinkBigqueryOptionsOutputReference) Terraf
 	return returns
 }
 
-func (j *jsiiProxy_LoggingOrganizationSinkBigqueryOptionsOutputReference) UsePartitionedTables() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoggingOrganizationSinkBigqueryOptionsOutputReference) UsePartitionedTables() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"usePartitionedTables",
@@ -159,8 +159,8 @@ func (j *jsiiProxy_LoggingOrganizationSinkBigqueryOptionsOutputReference) UsePar
 	return returns
 }
 
-func (j *jsiiProxy_LoggingOrganizationSinkBigqueryOptionsOutputReference) UsePartitionedTablesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoggingOrganizationSinkBigqueryOptionsOutputReference) UsePartitionedTablesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"usePartitionedTablesInput",
@@ -168,7 +168,6 @@ func (j *jsiiProxy_LoggingOrganizationSinkBigqueryOptionsOutputReference) UsePar
 	)
 	return returns
 }
-
 
 func NewLoggingOrganizationSinkBigqueryOptionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) LoggingOrganizationSinkBigqueryOptionsOutputReference {
 	_init_.Initialize()
@@ -180,7 +179,7 @@ func NewLoggingOrganizationSinkBigqueryOptionsOutputReference(terraformResource 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.loggingOrganizationSink.LoggingOrganizationSinkBigqueryOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -192,12 +191,12 @@ func NewLoggingOrganizationSinkBigqueryOptionsOutputReference_Override(l Logging
 
 	_jsii_.Create(
 		"@cdktf/provider-google.loggingOrganizationSink.LoggingOrganizationSinkBigqueryOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LoggingOrganizationSinkBigqueryOptionsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_LoggingOrganizationSinkBigqueryOptionsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -208,7 +207,7 @@ func (j *jsiiProxy_LoggingOrganizationSinkBigqueryOptionsOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_LoggingOrganizationSinkBigqueryOptionsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_LoggingOrganizationSinkBigqueryOptionsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -219,7 +218,7 @@ func (j *jsiiProxy_LoggingOrganizationSinkBigqueryOptionsOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_LoggingOrganizationSinkBigqueryOptionsOutputReference)SetInternalValue(val *LoggingOrganizationSinkBigqueryOptions) {
+func (j *jsiiProxy_LoggingOrganizationSinkBigqueryOptionsOutputReference) SetInternalValue(val *LoggingOrganizationSinkBigqueryOptions) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -230,7 +229,7 @@ func (j *jsiiProxy_LoggingOrganizationSinkBigqueryOptionsOutputReference)SetInte
 	)
 }
 
-func (j *jsiiProxy_LoggingOrganizationSinkBigqueryOptionsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_LoggingOrganizationSinkBigqueryOptionsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -241,7 +240,7 @@ func (j *jsiiProxy_LoggingOrganizationSinkBigqueryOptionsOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_LoggingOrganizationSinkBigqueryOptionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LoggingOrganizationSinkBigqueryOptionsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -252,7 +251,7 @@ func (j *jsiiProxy_LoggingOrganizationSinkBigqueryOptionsOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_LoggingOrganizationSinkBigqueryOptionsOutputReference)SetUsePartitionedTables(val interface{}) {
+func (j *jsiiProxy_LoggingOrganizationSinkBigqueryOptionsOutputReference) SetUsePartitionedTables(val any) {
 	if err := j.validateSetUsePartitionedTablesParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,16 +275,16 @@ func (l *jsiiProxy_LoggingOrganizationSinkBigqueryOptionsOutputReference) Comput
 	return returns
 }
 
-func (l *jsiiProxy_LoggingOrganizationSinkBigqueryOptionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_LoggingOrganizationSinkBigqueryOptionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -301,7 +300,7 @@ func (l *jsiiProxy_LoggingOrganizationSinkBigqueryOptionsOutputReference) GetBoo
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -317,7 +316,7 @@ func (l *jsiiProxy_LoggingOrganizationSinkBigqueryOptionsOutputReference) GetBoo
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -333,7 +332,7 @@ func (l *jsiiProxy_LoggingOrganizationSinkBigqueryOptionsOutputReference) GetLis
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -349,7 +348,7 @@ func (l *jsiiProxy_LoggingOrganizationSinkBigqueryOptionsOutputReference) GetNum
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -365,7 +364,7 @@ func (l *jsiiProxy_LoggingOrganizationSinkBigqueryOptionsOutputReference) GetNum
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -381,7 +380,7 @@ func (l *jsiiProxy_LoggingOrganizationSinkBigqueryOptionsOutputReference) GetNum
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -397,7 +396,7 @@ func (l *jsiiProxy_LoggingOrganizationSinkBigqueryOptionsOutputReference) GetStr
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -413,7 +412,7 @@ func (l *jsiiProxy_LoggingOrganizationSinkBigqueryOptionsOutputReference) GetStr
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -442,23 +441,23 @@ func (l *jsiiProxy_LoggingOrganizationSinkBigqueryOptionsOutputReference) Interp
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (l *jsiiProxy_LoggingOrganizationSinkBigqueryOptionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (l *jsiiProxy_LoggingOrganizationSinkBigqueryOptionsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := l.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -477,4 +476,3 @@ func (l *jsiiProxy_LoggingOrganizationSinkBigqueryOptionsOutputReference) ToStri
 
 	return returns
 }
-

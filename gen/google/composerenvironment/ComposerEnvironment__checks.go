@@ -19,7 +19,7 @@ func (c *jsiiProxy_ComposerEnvironment) validateAddMoveTargetParameters(moveTarg
 	return nil
 }
 
-func (c *jsiiProxy_ComposerEnvironment) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_ComposerEnvironment) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_ComposerEnvironment) validateMoveFromIdParameters(id *string)
 	return nil
 }
 
-func (c *jsiiProxy_ComposerEnvironment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_ComposerEnvironment) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -253,7 +253,7 @@ func validateComposerEnvironment_GenerateConfigForImportParameters(scope constru
 	return nil
 }
 
-func validateComposerEnvironment_IsConstructParameters(x interface{}) error {
+func validateComposerEnvironment_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -261,7 +261,7 @@ func validateComposerEnvironment_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateComposerEnvironment_IsTerraformElementParameters(x interface{}) error {
+func validateComposerEnvironment_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -269,7 +269,7 @@ func validateComposerEnvironment_IsTerraformElementParameters(x interface{}) err
 	return nil
 }
 
-func validateComposerEnvironment_IsTerraformResourceParameters(x interface{}) error {
+func validateComposerEnvironment_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -277,7 +277,7 @@ func validateComposerEnvironment_IsTerraformResourceParameters(x interface{}) er
 	return nil
 }
 
-func (j *jsiiProxy_ComposerEnvironment) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ComposerEnvironment) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -310,7 +310,7 @@ func (j *jsiiProxy_ComposerEnvironment) validateSetConnectionParameters(val inte
 	return nil
 }
 
-func (j *jsiiProxy_ComposerEnvironment) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ComposerEnvironment) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -407,7 +407,7 @@ func (j *jsiiProxy_ComposerEnvironment) validateSetProjectParameters(val *string
 	return nil
 }
 
-func (j *jsiiProxy_ComposerEnvironment) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ComposerEnvironment) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -479,4 +479,3 @@ func validateNewComposerEnvironmentParameters(scope constructs.Construct, id *st
 
 	return nil
 }
-

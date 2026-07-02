@@ -17,15 +17,15 @@ type TagsTagValueIamMember interface {
 	Condition() TagsTagValueIamMemberConditionOutputReference
 	ConditionInput() *TagsTagValueIamMemberCondition
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -56,11 +56,11 @@ type TagsTagValueIamMember interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Role() *string
 	SetRole(val *string)
 	RoleInput() *string
@@ -70,16 +70,16 @@ type TagsTagValueIamMember interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -97,7 +97,7 @@ type TagsTagValueIamMember interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -109,7 +109,7 @@ type TagsTagValueIamMember interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -122,17 +122,17 @@ type TagsTagValueIamMember interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for TagsTagValueIamMember
@@ -170,8 +170,8 @@ func (j *jsiiProxy_TagsTagValueIamMember) ConditionInput() *TagsTagValueIamMembe
 	return returns
 }
 
-func (j *jsiiProxy_TagsTagValueIamMember) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TagsTagValueIamMember) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -180,8 +180,8 @@ func (j *jsiiProxy_TagsTagValueIamMember) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_TagsTagValueIamMember) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_TagsTagValueIamMember) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -190,8 +190,8 @@ func (j *jsiiProxy_TagsTagValueIamMember) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_TagsTagValueIamMember) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TagsTagValueIamMember) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -320,8 +320,8 @@ func (j *jsiiProxy_TagsTagValueIamMember) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_TagsTagValueIamMember) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_TagsTagValueIamMember) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -330,8 +330,8 @@ func (j *jsiiProxy_TagsTagValueIamMember) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_TagsTagValueIamMember) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TagsTagValueIamMember) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -390,8 +390,8 @@ func (j *jsiiProxy_TagsTagValueIamMember) TerraformGeneratorMetadata() *cdktf.Te
 	return returns
 }
 
-func (j *jsiiProxy_TagsTagValueIamMember) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_TagsTagValueIamMember) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -410,7 +410,6 @@ func (j *jsiiProxy_TagsTagValueIamMember) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/tags_tag_value_iam_member google_tags_tag_value_iam_member} Resource.
 func NewTagsTagValueIamMember(scope constructs.Construct, id *string, config *TagsTagValueIamMemberConfig) TagsTagValueIamMember {
 	_init_.Initialize()
@@ -422,7 +421,7 @@ func NewTagsTagValueIamMember(scope constructs.Construct, id *string, config *Ta
 
 	_jsii_.Create(
 		"@cdktf/provider-google.tagsTagValueIamMember.TagsTagValueIamMember",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -435,12 +434,12 @@ func NewTagsTagValueIamMember_Override(t TagsTagValueIamMember, scope constructs
 
 	_jsii_.Create(
 		"@cdktf/provider-google.tagsTagValueIamMember.TagsTagValueIamMember",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		t,
 	)
 }
 
-func (j *jsiiProxy_TagsTagValueIamMember)SetConnection(val interface{}) {
+func (j *jsiiProxy_TagsTagValueIamMember) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -451,7 +450,7 @@ func (j *jsiiProxy_TagsTagValueIamMember)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_TagsTagValueIamMember)SetCount(val interface{}) {
+func (j *jsiiProxy_TagsTagValueIamMember) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -462,7 +461,7 @@ func (j *jsiiProxy_TagsTagValueIamMember)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_TagsTagValueIamMember)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_TagsTagValueIamMember) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -470,7 +469,7 @@ func (j *jsiiProxy_TagsTagValueIamMember)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_TagsTagValueIamMember)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_TagsTagValueIamMember) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -478,7 +477,7 @@ func (j *jsiiProxy_TagsTagValueIamMember)SetForEach(val cdktf.ITerraformIterator
 	)
 }
 
-func (j *jsiiProxy_TagsTagValueIamMember)SetId(val *string) {
+func (j *jsiiProxy_TagsTagValueIamMember) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -489,7 +488,7 @@ func (j *jsiiProxy_TagsTagValueIamMember)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TagsTagValueIamMember)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_TagsTagValueIamMember) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -500,7 +499,7 @@ func (j *jsiiProxy_TagsTagValueIamMember)SetLifecycle(val *cdktf.TerraformResour
 	)
 }
 
-func (j *jsiiProxy_TagsTagValueIamMember)SetMember(val *string) {
+func (j *jsiiProxy_TagsTagValueIamMember) SetMember(val *string) {
 	if err := j.validateSetMemberParameters(val); err != nil {
 		panic(err)
 	}
@@ -511,7 +510,7 @@ func (j *jsiiProxy_TagsTagValueIamMember)SetMember(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TagsTagValueIamMember)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_TagsTagValueIamMember) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -519,7 +518,7 @@ func (j *jsiiProxy_TagsTagValueIamMember)SetProvider(val cdktf.TerraformProvider
 	)
 }
 
-func (j *jsiiProxy_TagsTagValueIamMember)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_TagsTagValueIamMember) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -530,7 +529,7 @@ func (j *jsiiProxy_TagsTagValueIamMember)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_TagsTagValueIamMember)SetRole(val *string) {
+func (j *jsiiProxy_TagsTagValueIamMember) SetRole(val *string) {
 	if err := j.validateSetRoleParameters(val); err != nil {
 		panic(err)
 	}
@@ -541,7 +540,7 @@ func (j *jsiiProxy_TagsTagValueIamMember)SetRole(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TagsTagValueIamMember)SetTagValue(val *string) {
+func (j *jsiiProxy_TagsTagValueIamMember) SetTagValue(val *string) {
 	if err := j.validateSetTagValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -564,7 +563,7 @@ func TagsTagValueIamMember_GenerateConfigForImport(scope constructs.Construct, i
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.tagsTagValueIamMember.TagsTagValueIamMember",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -588,7 +587,7 @@ func TagsTagValueIamMember_GenerateConfigForImport(scope constructs.Construct, i
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func TagsTagValueIamMember_IsConstruct(x interface{}) *bool {
+func TagsTagValueIamMember_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateTagsTagValueIamMember_IsConstructParameters(x); err != nil {
@@ -599,7 +598,7 @@ func TagsTagValueIamMember_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.tagsTagValueIamMember.TagsTagValueIamMember",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -607,7 +606,7 @@ func TagsTagValueIamMember_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func TagsTagValueIamMember_IsTerraformElement(x interface{}) *bool {
+func TagsTagValueIamMember_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateTagsTagValueIamMember_IsTerraformElementParameters(x); err != nil {
@@ -618,7 +617,7 @@ func TagsTagValueIamMember_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.tagsTagValueIamMember.TagsTagValueIamMember",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -626,7 +625,7 @@ func TagsTagValueIamMember_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func TagsTagValueIamMember_IsTerraformResource(x interface{}) *bool {
+func TagsTagValueIamMember_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateTagsTagValueIamMember_IsTerraformResourceParameters(x); err != nil {
@@ -637,7 +636,7 @@ func TagsTagValueIamMember_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.tagsTagValueIamMember.TagsTagValueIamMember",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -662,31 +661,31 @@ func (t *jsiiProxy_TagsTagValueIamMember) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		t,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (t *jsiiProxy_TagsTagValueIamMember) AddOverride(path *string, value interface{}) {
+func (t *jsiiProxy_TagsTagValueIamMember) AddOverride(path *string, value any) {
 	if err := t.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		t,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (t *jsiiProxy_TagsTagValueIamMember) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (t *jsiiProxy_TagsTagValueIamMember) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := t.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		t,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -702,7 +701,7 @@ func (t *jsiiProxy_TagsTagValueIamMember) GetBooleanAttribute(terraformAttribute
 	_jsii_.Invoke(
 		t,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -718,7 +717,7 @@ func (t *jsiiProxy_TagsTagValueIamMember) GetBooleanMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		t,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -734,7 +733,7 @@ func (t *jsiiProxy_TagsTagValueIamMember) GetListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		t,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -750,7 +749,7 @@ func (t *jsiiProxy_TagsTagValueIamMember) GetNumberAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		t,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -766,7 +765,7 @@ func (t *jsiiProxy_TagsTagValueIamMember) GetNumberListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		t,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -782,7 +781,7 @@ func (t *jsiiProxy_TagsTagValueIamMember) GetNumberMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		t,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -798,7 +797,7 @@ func (t *jsiiProxy_TagsTagValueIamMember) GetStringAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		t,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -814,15 +813,15 @@ func (t *jsiiProxy_TagsTagValueIamMember) GetStringMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		t,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (t *jsiiProxy_TagsTagValueIamMember) HasResourceMove() interface{} {
-	var returns interface{}
+func (t *jsiiProxy_TagsTagValueIamMember) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		t,
@@ -841,7 +840,7 @@ func (t *jsiiProxy_TagsTagValueIamMember) ImportFrom(id *string, provider cdktf.
 	_jsii_.InvokeVoid(
 		t,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -854,7 +853,7 @@ func (t *jsiiProxy_TagsTagValueIamMember) InterpolationForAttribute(terraformAtt
 	_jsii_.Invoke(
 		t,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -868,18 +867,18 @@ func (t *jsiiProxy_TagsTagValueIamMember) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		t,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (t *jsiiProxy_TagsTagValueIamMember) MoveTo(moveTarget *string, index interface{}) {
+func (t *jsiiProxy_TagsTagValueIamMember) MoveTo(moveTarget *string, index any) {
 	if err := t.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		t,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -890,7 +889,7 @@ func (t *jsiiProxy_TagsTagValueIamMember) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		t,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -901,7 +900,7 @@ func (t *jsiiProxy_TagsTagValueIamMember) OverrideLogicalId(newLogicalId *string
 	_jsii_.InvokeVoid(
 		t,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -912,7 +911,7 @@ func (t *jsiiProxy_TagsTagValueIamMember) PutCondition(value *TagsTagValueIamMem
 	_jsii_.InvokeVoid(
 		t,
 		"putCondition",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -940,8 +939,8 @@ func (t *jsiiProxy_TagsTagValueIamMember) ResetOverrideLogicalId() {
 	)
 }
 
-func (t *jsiiProxy_TagsTagValueIamMember) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (t *jsiiProxy_TagsTagValueIamMember) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		t,
@@ -953,8 +952,8 @@ func (t *jsiiProxy_TagsTagValueIamMember) SynthesizeAttributes() *map[string]int
 	return returns
 }
 
-func (t *jsiiProxy_TagsTagValueIamMember) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (t *jsiiProxy_TagsTagValueIamMember) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		t,
@@ -966,8 +965,8 @@ func (t *jsiiProxy_TagsTagValueIamMember) SynthesizeHclAttributes() *map[string]
 	return returns
 }
 
-func (t *jsiiProxy_TagsTagValueIamMember) ToHclTerraform() interface{} {
-	var returns interface{}
+func (t *jsiiProxy_TagsTagValueIamMember) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		t,
@@ -979,8 +978,8 @@ func (t *jsiiProxy_TagsTagValueIamMember) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (t *jsiiProxy_TagsTagValueIamMember) ToMetadata() interface{} {
-	var returns interface{}
+func (t *jsiiProxy_TagsTagValueIamMember) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		t,
@@ -1005,8 +1004,8 @@ func (t *jsiiProxy_TagsTagValueIamMember) ToString() *string {
 	return returns
 }
 
-func (t *jsiiProxy_TagsTagValueIamMember) ToTerraform() interface{} {
-	var returns interface{}
+func (t *jsiiProxy_TagsTagValueIamMember) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		t,
@@ -1017,4 +1016,3 @@ func (t *jsiiProxy_TagsTagValueIamMember) ToTerraform() interface{} {
 
 	return returns
 }
-

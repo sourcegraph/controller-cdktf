@@ -34,7 +34,7 @@ func (w *jsiiProxy_WorkstationsWorkstationConfigPersistentDirectoriesList) valid
 	return nil
 }
 
-func (j *jsiiProxy_WorkstationsWorkstationConfigPersistentDirectoriesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_WorkstationsWorkstationConfigPersistentDirectoriesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewWorkstationsWorkstationConfigPersistentDirectoriesListParameters
 
 	return nil
 }
-

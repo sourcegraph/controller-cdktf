@@ -98,7 +98,7 @@ func (g *jsiiProxy_GkeonpremBareMetalClusterValidationCheckOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_GkeonpremBareMetalClusterValidationCheckOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GkeonpremBareMetalClusterValidationCheckOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGkeonpremBareMetalClusterValidationCheckOutputReferenceParameter
 
 	return nil
 }
-

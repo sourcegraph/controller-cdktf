@@ -90,7 +90,7 @@ func (m *jsiiProxy_ManagedKafkaClusterTlsConfigTrustConfigOutputReference) valid
 	return nil
 }
 
-func (m *jsiiProxy_ManagedKafkaClusterTlsConfigTrustConfigOutputReference) validatePutCasConfigsParameters(value interface{}) error {
+func (m *jsiiProxy_ManagedKafkaClusterTlsConfigTrustConfigOutputReference) validatePutCasConfigsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (m *jsiiProxy_ManagedKafkaClusterTlsConfigTrustConfigOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_ManagedKafkaClusterTlsConfigTrustConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ManagedKafkaClusterTlsConfigTrustConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -229,4 +229,3 @@ func validateNewManagedKafkaClusterTlsConfigTrustConfigOutputReferenceParameters
 
 	return nil
 }
-

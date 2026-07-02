@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.discoveryEngineLicenseConfig.DiscoveryEngineLicenseConfig",
-		reflect.TypeOf((*DiscoveryEngineLicenseConfig)(nil)).Elem(),
+		reflect.TypeFor[DiscoveryEngineLicenseConfig](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -87,7 +87,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DiscoveryEngineLicenseConfig{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -95,15 +95,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.discoveryEngineLicenseConfig.DiscoveryEngineLicenseConfigConfig",
-		reflect.TypeOf((*DiscoveryEngineLicenseConfigConfig)(nil)).Elem(),
+		reflect.TypeFor[DiscoveryEngineLicenseConfigConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.discoveryEngineLicenseConfig.DiscoveryEngineLicenseConfigEndDate",
-		reflect.TypeOf((*DiscoveryEngineLicenseConfigEndDate)(nil)).Elem(),
+		reflect.TypeFor[DiscoveryEngineLicenseConfigEndDate](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.discoveryEngineLicenseConfig.DiscoveryEngineLicenseConfigEndDateOutputReference",
-		reflect.TypeOf((*DiscoveryEngineLicenseConfigEndDateOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DiscoveryEngineLicenseConfigEndDateOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -136,7 +136,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "year", GoGetter: "Year"},
 			_jsii_.MemberProperty{JsiiProperty: "yearInput", GoGetter: "YearInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DiscoveryEngineLicenseConfigEndDateOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -144,11 +144,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.discoveryEngineLicenseConfig.DiscoveryEngineLicenseConfigStartDate",
-		reflect.TypeOf((*DiscoveryEngineLicenseConfigStartDate)(nil)).Elem(),
+		reflect.TypeFor[DiscoveryEngineLicenseConfigStartDate](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.discoveryEngineLicenseConfig.DiscoveryEngineLicenseConfigStartDateOutputReference",
-		reflect.TypeOf((*DiscoveryEngineLicenseConfigStartDateOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DiscoveryEngineLicenseConfigStartDateOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -181,7 +181,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "year", GoGetter: "Year"},
 			_jsii_.MemberProperty{JsiiProperty: "yearInput", GoGetter: "YearInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DiscoveryEngineLicenseConfigStartDateOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -189,11 +189,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.discoveryEngineLicenseConfig.DiscoveryEngineLicenseConfigTimeouts",
-		reflect.TypeOf((*DiscoveryEngineLicenseConfigTimeouts)(nil)).Elem(),
+		reflect.TypeFor[DiscoveryEngineLicenseConfigTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.discoveryEngineLicenseConfig.DiscoveryEngineLicenseConfigTimeoutsOutputReference",
-		reflect.TypeOf((*DiscoveryEngineLicenseConfigTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DiscoveryEngineLicenseConfigTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -226,7 +226,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DiscoveryEngineLicenseConfigTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

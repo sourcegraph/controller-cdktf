@@ -98,7 +98,7 @@ func (b *jsiiProxy_BigqueryReservationTimeoutsOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryReservationTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryReservationTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_BigqueryReservationTimeoutsOutputReference) validateSetDelete
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryReservationTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryReservationTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewBigqueryReservationTimeoutsOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

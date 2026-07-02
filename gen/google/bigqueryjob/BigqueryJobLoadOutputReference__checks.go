@@ -142,7 +142,7 @@ func (b *jsiiProxy_BigqueryJobLoadOutputReference) validateResolveParameters(_co
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryJobLoadOutputReference) validateSetAllowJaggedRowsParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryJobLoadOutputReference) validateSetAllowJaggedRowsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -162,7 +162,7 @@ func (j *jsiiProxy_BigqueryJobLoadOutputReference) validateSetAllowJaggedRowsPar
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryJobLoadOutputReference) validateSetAllowQuotedNewlinesParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryJobLoadOutputReference) validateSetAllowQuotedNewlinesParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -182,7 +182,7 @@ func (j *jsiiProxy_BigqueryJobLoadOutputReference) validateSetAllowQuotedNewline
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryJobLoadOutputReference) validateSetAutodetectParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryJobLoadOutputReference) validateSetAutodetectParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -202,7 +202,7 @@ func (j *jsiiProxy_BigqueryJobLoadOutputReference) validateSetAutodetectParamete
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryJobLoadOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryJobLoadOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -291,7 +291,7 @@ func (j *jsiiProxy_BigqueryJobLoadOutputReference) validateSetFieldDelimiterPara
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryJobLoadOutputReference) validateSetIgnoreUnknownValuesParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryJobLoadOutputReference) validateSetIgnoreUnknownValuesParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -426,4 +426,3 @@ func validateNewBigqueryJobLoadOutputReferenceParameters(terraformResource cdktf
 
 	return nil
 }
-

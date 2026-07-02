@@ -106,7 +106,7 @@ func (j *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsOtherCloudTargetCondi
 	return nil
 }
 
-func (j *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsOtherCloudTargetConditionsAmazonS3BucketConditionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsOtherCloudTargetConditionsAmazonS3BucketConditionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewDataLossPreventionDiscoveryConfigTargetsOtherCloudTargetConditio
 
 	return nil
 }
-

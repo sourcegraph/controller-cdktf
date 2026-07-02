@@ -12,9 +12,9 @@ type ComputeBackendServiceLogConfigOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,9 +25,9 @@ type ComputeBackendServiceLogConfigOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Enable() interface{}
-	SetEnable(val interface{})
-	EnableInput() interface{}
+	Enable() any
+	SetEnable(val any)
+	EnableInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *ComputeBackendServiceLogConfig
@@ -52,7 +52,7 @@ type ComputeBackendServiceLogConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -79,7 +79,7 @@ type ComputeBackendServiceLogConfigOutputReference interface {
 	ResetSampleRate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,8 +92,8 @@ type jsiiProxy_ComputeBackendServiceLogConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ComputeBackendServiceLogConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeBackendServiceLogConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -122,8 +122,8 @@ func (j *jsiiProxy_ComputeBackendServiceLogConfigOutputReference) CreationStack(
 	return returns
 }
 
-func (j *jsiiProxy_ComputeBackendServiceLogConfigOutputReference) Enable() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeBackendServiceLogConfigOutputReference) Enable() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enable",
@@ -132,8 +132,8 @@ func (j *jsiiProxy_ComputeBackendServiceLogConfigOutputReference) Enable() inter
 	return returns
 }
 
-func (j *jsiiProxy_ComputeBackendServiceLogConfigOutputReference) EnableInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeBackendServiceLogConfigOutputReference) EnableInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableInput",
@@ -242,7 +242,6 @@ func (j *jsiiProxy_ComputeBackendServiceLogConfigOutputReference) TerraformResou
 	return returns
 }
 
-
 func NewComputeBackendServiceLogConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ComputeBackendServiceLogConfigOutputReference {
 	_init_.Initialize()
 
@@ -253,7 +252,7 @@ func NewComputeBackendServiceLogConfigOutputReference(terraformResource cdktf.II
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceLogConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -265,12 +264,12 @@ func NewComputeBackendServiceLogConfigOutputReference_Override(c ComputeBackendS
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceLogConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputeBackendServiceLogConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ComputeBackendServiceLogConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,7 +280,7 @@ func (j *jsiiProxy_ComputeBackendServiceLogConfigOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_ComputeBackendServiceLogConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ComputeBackendServiceLogConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,7 +291,7 @@ func (j *jsiiProxy_ComputeBackendServiceLogConfigOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_ComputeBackendServiceLogConfigOutputReference)SetEnable(val interface{}) {
+func (j *jsiiProxy_ComputeBackendServiceLogConfigOutputReference) SetEnable(val any) {
 	if err := j.validateSetEnableParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_ComputeBackendServiceLogConfigOutputReference)SetEnable(val i
 	)
 }
 
-func (j *jsiiProxy_ComputeBackendServiceLogConfigOutputReference)SetInternalValue(val *ComputeBackendServiceLogConfig) {
+func (j *jsiiProxy_ComputeBackendServiceLogConfigOutputReference) SetInternalValue(val *ComputeBackendServiceLogConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_ComputeBackendServiceLogConfigOutputReference)SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_ComputeBackendServiceLogConfigOutputReference)SetOptionalFields(val *[]*string) {
+func (j *jsiiProxy_ComputeBackendServiceLogConfigOutputReference) SetOptionalFields(val *[]*string) {
 	if err := j.validateSetOptionalFieldsParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_ComputeBackendServiceLogConfigOutputReference)SetOptionalFiel
 	)
 }
 
-func (j *jsiiProxy_ComputeBackendServiceLogConfigOutputReference)SetOptionalMode(val *string) {
+func (j *jsiiProxy_ComputeBackendServiceLogConfigOutputReference) SetOptionalMode(val *string) {
 	if err := j.validateSetOptionalModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_ComputeBackendServiceLogConfigOutputReference)SetOptionalMode
 	)
 }
 
-func (j *jsiiProxy_ComputeBackendServiceLogConfigOutputReference)SetSampleRate(val *float64) {
+func (j *jsiiProxy_ComputeBackendServiceLogConfigOutputReference) SetSampleRate(val *float64) {
 	if err := j.validateSetSampleRateParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_ComputeBackendServiceLogConfigOutputReference)SetSampleRate(v
 	)
 }
 
-func (j *jsiiProxy_ComputeBackendServiceLogConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ComputeBackendServiceLogConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -358,7 +357,7 @@ func (j *jsiiProxy_ComputeBackendServiceLogConfigOutputReference)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_ComputeBackendServiceLogConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeBackendServiceLogConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,16 +381,16 @@ func (c *jsiiProxy_ComputeBackendServiceLogConfigOutputReference) ComputeFqn() *
 	return returns
 }
 
-func (c *jsiiProxy_ComputeBackendServiceLogConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComputeBackendServiceLogConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -407,7 +406,7 @@ func (c *jsiiProxy_ComputeBackendServiceLogConfigOutputReference) GetBooleanAttr
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -423,7 +422,7 @@ func (c *jsiiProxy_ComputeBackendServiceLogConfigOutputReference) GetBooleanMapA
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -439,7 +438,7 @@ func (c *jsiiProxy_ComputeBackendServiceLogConfigOutputReference) GetListAttribu
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -455,7 +454,7 @@ func (c *jsiiProxy_ComputeBackendServiceLogConfigOutputReference) GetNumberAttri
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -471,7 +470,7 @@ func (c *jsiiProxy_ComputeBackendServiceLogConfigOutputReference) GetNumberListA
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -487,7 +486,7 @@ func (c *jsiiProxy_ComputeBackendServiceLogConfigOutputReference) GetNumberMapAt
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -503,7 +502,7 @@ func (c *jsiiProxy_ComputeBackendServiceLogConfigOutputReference) GetStringAttri
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -519,7 +518,7 @@ func (c *jsiiProxy_ComputeBackendServiceLogConfigOutputReference) GetStringMapAt
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -548,7 +547,7 @@ func (c *jsiiProxy_ComputeBackendServiceLogConfigOutputReference) InterpolationF
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -587,16 +586,16 @@ func (c *jsiiProxy_ComputeBackendServiceLogConfigOutputReference) ResetSampleRat
 	)
 }
 
-func (c *jsiiProxy_ComputeBackendServiceLogConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ComputeBackendServiceLogConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -615,4 +614,3 @@ func (c *jsiiProxy_ComputeBackendServiceLogConfigOutputReference) ToString() *st
 
 	return returns
 }
-

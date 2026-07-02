@@ -98,7 +98,7 @@ func (d *jsiiProxy_DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfil
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesTelephonyTransferCallOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesTelephonyTransferCallOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillme
 
 	return nil
 }
-

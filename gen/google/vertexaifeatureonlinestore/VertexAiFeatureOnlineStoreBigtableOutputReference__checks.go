@@ -109,7 +109,7 @@ func (v *jsiiProxy_VertexAiFeatureOnlineStoreBigtableOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_VertexAiFeatureOnlineStoreBigtableOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_VertexAiFeatureOnlineStoreBigtableOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -174,7 +174,7 @@ func (j *jsiiProxy_VertexAiFeatureOnlineStoreBigtableOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_VertexAiFeatureOnlineStoreBigtableOutputReference) validateSetEnableDirectBigtableAccessParameters(val interface{}) error {
+func (j *jsiiProxy_VertexAiFeatureOnlineStoreBigtableOutputReference) validateSetEnableDirectBigtableAccessParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -237,4 +237,3 @@ func validateNewVertexAiFeatureOnlineStoreBigtableOutputReferenceParameters(terr
 
 	return nil
 }
-

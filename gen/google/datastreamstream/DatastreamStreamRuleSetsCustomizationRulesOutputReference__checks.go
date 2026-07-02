@@ -120,7 +120,7 @@ func (d *jsiiProxy_DatastreamStreamRuleSetsCustomizationRulesOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_DatastreamStreamRuleSetsCustomizationRulesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DatastreamStreamRuleSetsCustomizationRulesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -185,7 +185,7 @@ func (j *jsiiProxy_DatastreamStreamRuleSetsCustomizationRulesOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_DatastreamStreamRuleSetsCustomizationRulesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DatastreamStreamRuleSetsCustomizationRulesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -244,4 +244,3 @@ func validateNewDatastreamStreamRuleSetsCustomizationRulesOutputReferenceParamet
 
 	return nil
 }
-

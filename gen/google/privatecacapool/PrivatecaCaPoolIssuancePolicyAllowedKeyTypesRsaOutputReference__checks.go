@@ -98,7 +98,7 @@ func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyAllowedKeyTypesRsaOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyAllowedKeyTypesRsaOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyAllowedKeyTypesRsaOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewPrivatecaCaPoolIssuancePolicyAllowedKeyTypesRsaOutputReferencePa
 
 	return nil
 }
-

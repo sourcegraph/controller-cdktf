@@ -1,11 +1,10 @@
 package vmwareengineprivatecloud
 
-
 type VmwareenginePrivateCloudManagementClusterAutoscalingSettings struct {
 	// autoscaling_policies block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_private_cloud#autoscaling_policies VmwareenginePrivateCloud#autoscaling_policies}
-	AutoscalingPolicies interface{} `field:"required" json:"autoscalingPolicies" yaml:"autoscalingPolicies"`
+	AutoscalingPolicies any `field:"required" json:"autoscalingPolicies" yaml:"autoscalingPolicies"`
 	// The minimum duration between consecutive autoscale operations.
 	//
 	// It starts once addition or removal of nodes is fully completed.
@@ -24,4 +23,3 @@ type VmwareenginePrivateCloudManagementClusterAutoscalingSettings struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_private_cloud#min_cluster_node_count VmwareenginePrivateCloud#min_cluster_node_count}
 	MinClusterNodeCount *float64 `field:"optional" json:"minClusterNodeCount" yaml:"minClusterNodeCount"`
 }
-

@@ -34,7 +34,7 @@ func (c *jsiiProxy_ContainerClusterAddonsConfigRayOperatorConfigList) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterAddonsConfigRayOperatorConfigList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterAddonsConfigRayOperatorConfigList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewContainerClusterAddonsConfigRayOperatorConfigListParameters(terr
 
 	return nil
 }
-

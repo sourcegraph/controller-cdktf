@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeDiskTimeoutsOutputReference) validateResolveParameters
 	return nil
 }
 
-func (j *jsiiProxy_ComputeDiskTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeDiskTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_ComputeDiskTimeoutsOutputReference) validateSetDeleteParamete
 	return nil
 }
 
-func (j *jsiiProxy_ComputeDiskTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeDiskTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewComputeDiskTimeoutsOutputReferenceParameters(terraformResource c
 
 	return nil
 }
-

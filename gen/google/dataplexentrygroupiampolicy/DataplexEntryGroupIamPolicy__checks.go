@@ -19,7 +19,7 @@ func (d *jsiiProxy_DataplexEntryGroupIamPolicy) validateAddMoveTargetParameters(
 	return nil
 }
 
-func (d *jsiiProxy_DataplexEntryGroupIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataplexEntryGroupIamPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (d *jsiiProxy_DataplexEntryGroupIamPolicy) validateMoveFromIdParameters(id 
 	return nil
 }
 
-func (d *jsiiProxy_DataplexEntryGroupIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (d *jsiiProxy_DataplexEntryGroupIamPolicy) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateDataplexEntryGroupIamPolicy_GenerateConfigForImportParameters(scope
 	return nil
 }
 
-func validateDataplexEntryGroupIamPolicy_IsConstructParameters(x interface{}) error {
+func validateDataplexEntryGroupIamPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateDataplexEntryGroupIamPolicy_IsConstructParameters(x interface{}) er
 	return nil
 }
 
-func validateDataplexEntryGroupIamPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateDataplexEntryGroupIamPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateDataplexEntryGroupIamPolicy_IsTerraformElementParameters(x interfac
 	return nil
 }
 
-func validateDataplexEntryGroupIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+func validateDataplexEntryGroupIamPolicy_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateDataplexEntryGroupIamPolicy_IsTerraformResourceParameters(x interfa
 	return nil
 }
 
-func (j *jsiiProxy_DataplexEntryGroupIamPolicy) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_DataplexEntryGroupIamPolicy) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_DataplexEntryGroupIamPolicy) validateSetConnectionParameters(
 	return nil
 }
 
-func (j *jsiiProxy_DataplexEntryGroupIamPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataplexEntryGroupIamPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -382,7 +382,7 @@ func (j *jsiiProxy_DataplexEntryGroupIamPolicy) validateSetProjectParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_DataplexEntryGroupIamPolicy) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_DataplexEntryGroupIamPolicy) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -446,4 +446,3 @@ func validateNewDataplexEntryGroupIamPolicyParameters(scope constructs.Construct
 
 	return nil
 }
-

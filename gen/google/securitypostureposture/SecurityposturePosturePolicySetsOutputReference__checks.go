@@ -90,7 +90,7 @@ func (s *jsiiProxy_SecurityposturePosturePolicySetsOutputReference) validateInte
 	return nil
 }
 
-func (s *jsiiProxy_SecurityposturePosturePolicySetsOutputReference) validatePutPoliciesParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityposturePosturePolicySetsOutputReference) validatePutPoliciesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (s *jsiiProxy_SecurityposturePosturePolicySetsOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_SecurityposturePosturePolicySetsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SecurityposturePosturePolicySetsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -202,7 +202,7 @@ func (j *jsiiProxy_SecurityposturePosturePolicySetsOutputReference) validateSetD
 	return nil
 }
 
-func (j *jsiiProxy_SecurityposturePosturePolicySetsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SecurityposturePosturePolicySetsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -269,4 +269,3 @@ func validateNewSecurityposturePosturePolicySetsOutputReferenceParameters(terraf
 
 	return nil
 }
-

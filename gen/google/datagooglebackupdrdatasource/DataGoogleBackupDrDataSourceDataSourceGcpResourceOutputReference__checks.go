@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleBackupDrDataSourceDataSourceGcpResourceOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleBackupDrDataSourceDataSourceGcpResourceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleBackupDrDataSourceDataSourceGcpResourceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleBackupDrDataSourceDataSourceGcpResourceOutputReference
 
 	return nil
 }
-

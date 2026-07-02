@@ -98,7 +98,7 @@ func (d *jsiiProxy_DiscoveryEngineControlConditionsActiveTimeRangeOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineControlConditionsActiveTimeRangeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DiscoveryEngineControlConditionsActiveTimeRangeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_DiscoveryEngineControlConditionsActiveTimeRangeOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineControlConditionsActiveTimeRangeOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DiscoveryEngineControlConditionsActiveTimeRangeOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewDiscoveryEngineControlConditionsActiveTimeRangeOutputReferencePa
 
 	return nil
 }
-

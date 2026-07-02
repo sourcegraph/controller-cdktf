@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataGoogleCloudQuotasQuotaInfos) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataGoogleCloudQuotasQuotaInfos) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataGoogleCloudQuotasQuotaInfos_GenerateConfigForImportParameters(s
 	return nil
 }
 
-func validateDataGoogleCloudQuotasQuotaInfos_IsConstructParameters(x interface{}) error {
+func validateDataGoogleCloudQuotasQuotaInfos_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataGoogleCloudQuotasQuotaInfos_IsConstructParameters(x interface{}
 	return nil
 }
 
-func validateDataGoogleCloudQuotasQuotaInfos_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataGoogleCloudQuotasQuotaInfos_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataGoogleCloudQuotasQuotaInfos_IsTerraformDataSourceParameters(x i
 	return nil
 }
 
-func validateDataGoogleCloudQuotasQuotaInfos_IsTerraformElementParameters(x interface{}) error {
+func validateDataGoogleCloudQuotasQuotaInfos_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func validateDataGoogleCloudQuotasQuotaInfos_IsTerraformElementParameters(x inte
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleCloudQuotasQuotaInfos) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleCloudQuotasQuotaInfos) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -258,4 +258,3 @@ func validateNewDataGoogleCloudQuotasQuotaInfosParameters(scope constructs.Const
 
 	return nil
 }
-

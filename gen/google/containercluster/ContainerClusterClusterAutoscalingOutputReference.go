@@ -20,9 +20,9 @@ type ContainerClusterClusterAutoscalingOutputReference interface {
 	AutoscalingProfileInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,18 +33,18 @@ type ContainerClusterClusterAutoscalingOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	DefaultComputeClassEnabled() interface{}
-	SetDefaultComputeClassEnabled(val interface{})
-	DefaultComputeClassEnabledInput() interface{}
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	DefaultComputeClassEnabled() any
+	SetDefaultComputeClassEnabled(val any)
+	DefaultComputeClassEnabledInput() any
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *ContainerClusterClusterAutoscaling
 	SetInternalValue(val *ContainerClusterClusterAutoscaling)
 	ResourceLimits() ContainerClusterClusterAutoscalingResourceLimitsList
-	ResourceLimitsInput() interface{}
+	ResourceLimitsInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -56,7 +56,7 @@ type ContainerClusterClusterAutoscalingOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -78,7 +78,7 @@ type ContainerClusterClusterAutoscalingOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAutoProvisioningDefaults(value *ContainerClusterClusterAutoscalingAutoProvisioningDefaults)
-	PutResourceLimits(value interface{})
+	PutResourceLimits(value any)
 	ResetAutoProvisioningDefaults()
 	ResetAutoProvisioningLocations()
 	ResetAutoscalingProfile()
@@ -87,7 +87,7 @@ type ContainerClusterClusterAutoscalingOutputReference interface {
 	ResetResourceLimits()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -160,8 +160,8 @@ func (j *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference) Autoscalin
 	return returns
 }
 
-func (j *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -190,8 +190,8 @@ func (j *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference) CreationSt
 	return returns
 }
 
-func (j *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference) DefaultComputeClassEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference) DefaultComputeClassEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"defaultComputeClassEnabled",
@@ -200,8 +200,8 @@ func (j *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference) DefaultCom
 	return returns
 }
 
-func (j *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference) DefaultComputeClassEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference) DefaultComputeClassEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"defaultComputeClassEnabledInput",
@@ -210,8 +210,8 @@ func (j *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference) DefaultCom
 	return returns
 }
 
-func (j *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -220,8 +220,8 @@ func (j *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference) Enabled() 
 	return returns
 }
 
-func (j *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -260,8 +260,8 @@ func (j *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference) ResourceLi
 	return returns
 }
 
-func (j *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference) ResourceLimitsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference) ResourceLimitsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"resourceLimitsInput",
@@ -290,7 +290,6 @@ func (j *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference) TerraformR
 	return returns
 }
 
-
 func NewContainerClusterClusterAutoscalingOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ContainerClusterClusterAutoscalingOutputReference {
 	_init_.Initialize()
 
@@ -301,7 +300,7 @@ func NewContainerClusterClusterAutoscalingOutputReference(terraformResource cdkt
 
 	_jsii_.Create(
 		"@cdktf/provider-google.containerCluster.ContainerClusterClusterAutoscalingOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -313,12 +312,12 @@ func NewContainerClusterClusterAutoscalingOutputReference_Override(c ContainerCl
 
 	_jsii_.Create(
 		"@cdktf/provider-google.containerCluster.ContainerClusterClusterAutoscalingOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference)SetAutoProvisioningLocations(val *[]*string) {
+func (j *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference) SetAutoProvisioningLocations(val *[]*string) {
 	if err := j.validateSetAutoProvisioningLocationsParameters(val); err != nil {
 		panic(err)
 	}
@@ -329,7 +328,7 @@ func (j *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference)SetAutoProv
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference)SetAutoscalingProfile(val *string) {
+func (j *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference) SetAutoscalingProfile(val *string) {
 	if err := j.validateSetAutoscalingProfileParameters(val); err != nil {
 		panic(err)
 	}
@@ -340,7 +339,7 @@ func (j *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference)SetAutoscal
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -351,7 +350,7 @@ func (j *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -362,7 +361,7 @@ func (j *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference)SetDefaultComputeClassEnabled(val interface{}) {
+func (j *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference) SetDefaultComputeClassEnabled(val any) {
 	if err := j.validateSetDefaultComputeClassEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -373,7 +372,7 @@ func (j *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference)SetDefaultC
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference)SetEnabled(val interface{}) {
+func (j *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -384,7 +383,7 @@ func (j *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference)SetEnabled(
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference)SetInternalValue(val *ContainerClusterClusterAutoscaling) {
+func (j *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference) SetInternalValue(val *ContainerClusterClusterAutoscaling) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -395,7 +394,7 @@ func (j *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference)SetInternal
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -406,7 +405,7 @@ func (j *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -430,16 +429,16 @@ func (c *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference) ComputeFqn
 	return returns
 }
 
-func (c *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -455,7 +454,7 @@ func (c *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference) GetBoolean
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -471,7 +470,7 @@ func (c *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference) GetBoolean
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -487,7 +486,7 @@ func (c *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference) GetListAtt
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -503,7 +502,7 @@ func (c *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference) GetNumberA
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -519,7 +518,7 @@ func (c *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference) GetNumberL
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -535,7 +534,7 @@ func (c *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference) GetNumberM
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -551,7 +550,7 @@ func (c *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference) GetStringA
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -567,7 +566,7 @@ func (c *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference) GetStringM
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -596,7 +595,7 @@ func (c *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference) Interpolat
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -610,18 +609,18 @@ func (c *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference) PutAutoPro
 	_jsii_.InvokeVoid(
 		c,
 		"putAutoProvisioningDefaults",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference) PutResourceLimits(value interface{}) {
+func (c *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference) PutResourceLimits(value any) {
 	if err := c.validatePutResourceLimitsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putResourceLimits",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -673,16 +672,16 @@ func (c *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference) ResetResou
 	)
 }
 
-func (c *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -701,4 +700,3 @@ func (c *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference) ToString()
 
 	return returns
 }
-

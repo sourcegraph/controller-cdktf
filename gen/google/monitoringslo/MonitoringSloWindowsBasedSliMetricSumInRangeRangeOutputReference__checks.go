@@ -98,7 +98,7 @@ func (m *jsiiProxy_MonitoringSloWindowsBasedSliMetricSumInRangeRangeOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_MonitoringSloWindowsBasedSliMetricSumInRangeRangeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MonitoringSloWindowsBasedSliMetricSumInRangeRangeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewMonitoringSloWindowsBasedSliMetricSumInRangeRangeOutputReference
 
 	return nil
 }
-

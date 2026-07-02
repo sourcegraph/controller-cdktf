@@ -109,7 +109,7 @@ func (d *jsiiProxy_DialogflowCxPageFormParametersAdvancedSettingsOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxPageFormParametersAdvancedSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxPageFormParametersAdvancedSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewDialogflowCxPageFormParametersAdvancedSettingsOutputReferencePar
 
 	return nil
 }
-

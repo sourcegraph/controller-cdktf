@@ -117,7 +117,7 @@ func (j *jsiiProxy_BigtableInstanceClusterOutputReference) validateSetClusterIdP
 	return nil
 }
 
-func (j *jsiiProxy_BigtableInstanceClusterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BigtableInstanceClusterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -182,7 +182,7 @@ func (j *jsiiProxy_BigtableInstanceClusterOutputReference) validateSetComplexObj
 	return nil
 }
 
-func (j *jsiiProxy_BigtableInstanceClusterOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_BigtableInstanceClusterOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -281,4 +281,3 @@ func validateNewBigtableInstanceClusterOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

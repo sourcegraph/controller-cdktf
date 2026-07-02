@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleComputeRegionSecurityPolicyRulesPreconfiguredWafCon
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionRequestCookieOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionRequestCookieOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleComputeRegionSecurityPolicyRulesPreconfiguredWafConfig
 
 	return nil
 }
-

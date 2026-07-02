@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2Job",
-		reflect.TypeOf((*DataGoogleCloudRunV2Job)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2Job](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "annotations", GoGetter: "Annotations"},
@@ -82,7 +82,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudRunV2Job{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -90,11 +90,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobBinaryAuthorization",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobBinaryAuthorization)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobBinaryAuthorization](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobBinaryAuthorizationList",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobBinaryAuthorizationList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobBinaryAuthorizationList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -107,7 +107,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudRunV2JobBinaryAuthorizationList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -115,7 +115,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobBinaryAuthorizationOutputReference",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobBinaryAuthorizationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobBinaryAuthorizationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "breakglassJustification", GoGetter: "BreakglassJustification"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -142,7 +142,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "useDefault", GoGetter: "UseDefault"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudRunV2JobBinaryAuthorizationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -150,11 +150,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobConditions",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobConditions)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobConditions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobConditionsList",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobConditionsList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobConditionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -167,7 +167,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudRunV2JobConditionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -175,7 +175,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobConditionsOutputReference",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobConditionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobConditionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -207,7 +207,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudRunV2JobConditionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -215,15 +215,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobConfig",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobConfig)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobLatestCreatedExecution",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobLatestCreatedExecution)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobLatestCreatedExecution](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobLatestCreatedExecutionList",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobLatestCreatedExecutionList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobLatestCreatedExecutionList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -236,7 +236,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudRunV2JobLatestCreatedExecutionList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -244,7 +244,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobLatestCreatedExecutionOutputReference",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobLatestCreatedExecutionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobLatestCreatedExecutionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "completionTime", GoGetter: "CompletionTime"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -271,7 +271,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudRunV2JobLatestCreatedExecutionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -279,11 +279,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplate",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobTemplate)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobTemplate](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateList",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobTemplateList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobTemplateList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -296,7 +296,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudRunV2JobTemplateList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -304,7 +304,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateOutputReference",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobTemplateOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobTemplateOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "annotations", GoGetter: "Annotations"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -333,7 +333,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudRunV2JobTemplateOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -341,19 +341,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplate",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobTemplateTemplate)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobTemplateTemplate](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateContainers",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobTemplateTemplateContainers)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobTemplateTemplateContainers](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateContainersEnv",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobTemplateTemplateContainersEnv)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobTemplateTemplateContainersEnv](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateContainersEnvList",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobTemplateTemplateContainersEnvList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobTemplateTemplateContainersEnvList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -366,7 +366,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudRunV2JobTemplateTemplateContainersEnvList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -374,7 +374,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateContainersEnvOutputReference",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobTemplateTemplateContainersEnvOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobTemplateTemplateContainersEnvOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -401,7 +401,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueSource", GoGetter: "ValueSource"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudRunV2JobTemplateTemplateContainersEnvOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -409,11 +409,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateContainersEnvValueSource",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobTemplateTemplateContainersEnvValueSource)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobTemplateTemplateContainersEnvValueSource](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateContainersEnvValueSourceList",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobTemplateTemplateContainersEnvValueSourceList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobTemplateTemplateContainersEnvValueSourceList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -426,7 +426,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudRunV2JobTemplateTemplateContainersEnvValueSourceList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -434,7 +434,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateContainersEnvValueSourceOutputReference",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobTemplateTemplateContainersEnvValueSourceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobTemplateTemplateContainersEnvValueSourceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -459,7 +459,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudRunV2JobTemplateTemplateContainersEnvValueSourceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -467,11 +467,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateContainersEnvValueSourceSecretKeyRef",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobTemplateTemplateContainersEnvValueSourceSecretKeyRef)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobTemplateTemplateContainersEnvValueSourceSecretKeyRef](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateContainersEnvValueSourceSecretKeyRefList",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobTemplateTemplateContainersEnvValueSourceSecretKeyRefList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobTemplateTemplateContainersEnvValueSourceSecretKeyRefList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -484,7 +484,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudRunV2JobTemplateTemplateContainersEnvValueSourceSecretKeyRefList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -492,7 +492,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateContainersEnvValueSourceSecretKeyRefOutputReference",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobTemplateTemplateContainersEnvValueSourceSecretKeyRefOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobTemplateTemplateContainersEnvValueSourceSecretKeyRefOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -518,7 +518,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudRunV2JobTemplateTemplateContainersEnvValueSourceSecretKeyRefOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -526,7 +526,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateContainersList",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobTemplateTemplateContainersList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobTemplateTemplateContainersList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -539,7 +539,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudRunV2JobTemplateTemplateContainersList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -547,7 +547,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateContainersOutputReference",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobTemplateTemplateContainersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobTemplateTemplateContainersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "args", GoGetter: "Args"},
 			_jsii_.MemberProperty{JsiiProperty: "command", GoGetter: "Command"},
@@ -582,7 +582,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "volumeMounts", GoGetter: "VolumeMounts"},
 			_jsii_.MemberProperty{JsiiProperty: "workingDir", GoGetter: "WorkingDir"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudRunV2JobTemplateTemplateContainersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -590,11 +590,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateContainersPorts",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobTemplateTemplateContainersPorts)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobTemplateTemplateContainersPorts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateContainersPortsList",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobTemplateTemplateContainersPortsList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobTemplateTemplateContainersPortsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -607,7 +607,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudRunV2JobTemplateTemplateContainersPortsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -615,7 +615,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateContainersPortsOutputReference",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobTemplateTemplateContainersPortsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobTemplateTemplateContainersPortsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -641,7 +641,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudRunV2JobTemplateTemplateContainersPortsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -649,11 +649,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateContainersResources",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobTemplateTemplateContainersResources)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobTemplateTemplateContainersResources](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateContainersResourcesList",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobTemplateTemplateContainersResourcesList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobTemplateTemplateContainersResourcesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -666,7 +666,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudRunV2JobTemplateTemplateContainersResourcesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -674,7 +674,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateContainersResourcesOutputReference",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobTemplateTemplateContainersResourcesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobTemplateTemplateContainersResourcesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -699,7 +699,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudRunV2JobTemplateTemplateContainersResourcesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -707,15 +707,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateContainersStartupProbe",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobTemplateTemplateContainersStartupProbe)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobTemplateTemplateContainersStartupProbe](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateContainersStartupProbeGrpc",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobTemplateTemplateContainersStartupProbeGrpc)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobTemplateTemplateContainersStartupProbeGrpc](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateContainersStartupProbeGrpcList",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobTemplateTemplateContainersStartupProbeGrpcList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobTemplateTemplateContainersStartupProbeGrpcList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -728,7 +728,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudRunV2JobTemplateTemplateContainersStartupProbeGrpcList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -736,7 +736,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateContainersStartupProbeGrpcOutputReference",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobTemplateTemplateContainersStartupProbeGrpcOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobTemplateTemplateContainersStartupProbeGrpcOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -762,7 +762,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudRunV2JobTemplateTemplateContainersStartupProbeGrpcOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -770,15 +770,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateContainersStartupProbeHttpGet",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobTemplateTemplateContainersStartupProbeHttpGet)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobTemplateTemplateContainersStartupProbeHttpGet](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateContainersStartupProbeHttpGetHttpHeaders",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobTemplateTemplateContainersStartupProbeHttpGetHttpHeaders)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobTemplateTemplateContainersStartupProbeHttpGetHttpHeaders](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateContainersStartupProbeHttpGetHttpHeadersList",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobTemplateTemplateContainersStartupProbeHttpGetHttpHeadersList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobTemplateTemplateContainersStartupProbeHttpGetHttpHeadersList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -791,7 +791,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudRunV2JobTemplateTemplateContainersStartupProbeHttpGetHttpHeadersList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -799,7 +799,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateContainersStartupProbeHttpGetHttpHeadersOutputReference",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobTemplateTemplateContainersStartupProbeHttpGetHttpHeadersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobTemplateTemplateContainersStartupProbeHttpGetHttpHeadersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -825,7 +825,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudRunV2JobTemplateTemplateContainersStartupProbeHttpGetHttpHeadersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -833,7 +833,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateContainersStartupProbeHttpGetList",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobTemplateTemplateContainersStartupProbeHttpGetList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobTemplateTemplateContainersStartupProbeHttpGetList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -846,7 +846,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudRunV2JobTemplateTemplateContainersStartupProbeHttpGetList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -854,7 +854,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateContainersStartupProbeHttpGetOutputReference",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobTemplateTemplateContainersStartupProbeHttpGetOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobTemplateTemplateContainersStartupProbeHttpGetOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -881,7 +881,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudRunV2JobTemplateTemplateContainersStartupProbeHttpGetOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -889,7 +889,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateContainersStartupProbeList",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobTemplateTemplateContainersStartupProbeList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobTemplateTemplateContainersStartupProbeList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -902,7 +902,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudRunV2JobTemplateTemplateContainersStartupProbeList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -910,7 +910,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateContainersStartupProbeOutputReference",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobTemplateTemplateContainersStartupProbeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobTemplateTemplateContainersStartupProbeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -941,7 +941,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "timeoutSeconds", GoGetter: "TimeoutSeconds"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudRunV2JobTemplateTemplateContainersStartupProbeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -949,11 +949,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateContainersStartupProbeTcpSocket",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobTemplateTemplateContainersStartupProbeTcpSocket)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobTemplateTemplateContainersStartupProbeTcpSocket](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateContainersStartupProbeTcpSocketList",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobTemplateTemplateContainersStartupProbeTcpSocketList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobTemplateTemplateContainersStartupProbeTcpSocketList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -966,7 +966,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudRunV2JobTemplateTemplateContainersStartupProbeTcpSocketList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -974,7 +974,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateContainersStartupProbeTcpSocketOutputReference",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobTemplateTemplateContainersStartupProbeTcpSocketOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobTemplateTemplateContainersStartupProbeTcpSocketOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -999,7 +999,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudRunV2JobTemplateTemplateContainersStartupProbeTcpSocketOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1007,11 +1007,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateContainersVolumeMounts",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobTemplateTemplateContainersVolumeMounts)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobTemplateTemplateContainersVolumeMounts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateContainersVolumeMountsList",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobTemplateTemplateContainersVolumeMountsList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobTemplateTemplateContainersVolumeMountsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1024,7 +1024,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudRunV2JobTemplateTemplateContainersVolumeMountsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1032,7 +1032,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateContainersVolumeMountsOutputReference",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobTemplateTemplateContainersVolumeMountsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobTemplateTemplateContainersVolumeMountsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1059,7 +1059,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudRunV2JobTemplateTemplateContainersVolumeMountsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1067,7 +1067,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateList",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobTemplateTemplateList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobTemplateTemplateList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1080,7 +1080,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudRunV2JobTemplateTemplateList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1088,11 +1088,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateNodeSelector",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobTemplateTemplateNodeSelector)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobTemplateTemplateNodeSelector](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateNodeSelectorList",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobTemplateTemplateNodeSelectorList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobTemplateTemplateNodeSelectorList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1105,7 +1105,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudRunV2JobTemplateTemplateNodeSelectorList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1113,7 +1113,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateNodeSelectorOutputReference",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobTemplateTemplateNodeSelectorOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobTemplateTemplateNodeSelectorOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accelerator", GoGetter: "Accelerator"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1138,7 +1138,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudRunV2JobTemplateTemplateNodeSelectorOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1146,7 +1146,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateOutputReference",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobTemplateTemplateOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobTemplateTemplateOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1180,7 +1180,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "volumes", GoGetter: "Volumes"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcAccess", GoGetter: "VpcAccess"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudRunV2JobTemplateTemplateOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1188,15 +1188,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateVolumes",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobTemplateTemplateVolumes)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobTemplateTemplateVolumes](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateVolumesCloudSqlInstance",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobTemplateTemplateVolumesCloudSqlInstance)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobTemplateTemplateVolumesCloudSqlInstance](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateVolumesCloudSqlInstanceList",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobTemplateTemplateVolumesCloudSqlInstanceList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobTemplateTemplateVolumesCloudSqlInstanceList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1209,7 +1209,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudRunV2JobTemplateTemplateVolumesCloudSqlInstanceList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1217,7 +1217,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateVolumesCloudSqlInstanceOutputReference",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobTemplateTemplateVolumesCloudSqlInstanceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobTemplateTemplateVolumesCloudSqlInstanceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1242,7 +1242,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudRunV2JobTemplateTemplateVolumesCloudSqlInstanceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1250,11 +1250,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateVolumesEmptyDir",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobTemplateTemplateVolumesEmptyDir)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobTemplateTemplateVolumesEmptyDir](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateVolumesEmptyDirList",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobTemplateTemplateVolumesEmptyDirList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobTemplateTemplateVolumesEmptyDirList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1267,7 +1267,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudRunV2JobTemplateTemplateVolumesEmptyDirList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1275,7 +1275,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateVolumesEmptyDirOutputReference",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobTemplateTemplateVolumesEmptyDirOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobTemplateTemplateVolumesEmptyDirOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1301,7 +1301,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudRunV2JobTemplateTemplateVolumesEmptyDirOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1309,11 +1309,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateVolumesGcs",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobTemplateTemplateVolumesGcs)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobTemplateTemplateVolumesGcs](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateVolumesGcsList",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobTemplateTemplateVolumesGcsList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobTemplateTemplateVolumesGcsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1326,7 +1326,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudRunV2JobTemplateTemplateVolumesGcsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1334,7 +1334,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateVolumesGcsOutputReference",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobTemplateTemplateVolumesGcsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobTemplateTemplateVolumesGcsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucket", GoGetter: "Bucket"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1361,7 +1361,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudRunV2JobTemplateTemplateVolumesGcsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1369,7 +1369,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateVolumesList",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobTemplateTemplateVolumesList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobTemplateTemplateVolumesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1382,7 +1382,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudRunV2JobTemplateTemplateVolumesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1390,11 +1390,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateVolumesNfs",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobTemplateTemplateVolumesNfs)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobTemplateTemplateVolumesNfs](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateVolumesNfsList",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobTemplateTemplateVolumesNfsList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobTemplateTemplateVolumesNfsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1407,7 +1407,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudRunV2JobTemplateTemplateVolumesNfsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1415,7 +1415,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateVolumesNfsOutputReference",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobTemplateTemplateVolumesNfsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobTemplateTemplateVolumesNfsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1442,7 +1442,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudRunV2JobTemplateTemplateVolumesNfsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1450,7 +1450,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateVolumesOutputReference",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobTemplateTemplateVolumesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobTemplateTemplateVolumesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cloudSqlInstance", GoGetter: "CloudSqlInstance"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1480,7 +1480,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudRunV2JobTemplateTemplateVolumesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1488,15 +1488,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateVolumesSecret",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobTemplateTemplateVolumesSecret)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobTemplateTemplateVolumesSecret](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateVolumesSecretItems",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobTemplateTemplateVolumesSecretItems)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobTemplateTemplateVolumesSecretItems](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateVolumesSecretItemsList",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobTemplateTemplateVolumesSecretItemsList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobTemplateTemplateVolumesSecretItemsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1509,7 +1509,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudRunV2JobTemplateTemplateVolumesSecretItemsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1517,7 +1517,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateVolumesSecretItemsOutputReference",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobTemplateTemplateVolumesSecretItemsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobTemplateTemplateVolumesSecretItemsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1544,7 +1544,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudRunV2JobTemplateTemplateVolumesSecretItemsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1552,7 +1552,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateVolumesSecretList",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobTemplateTemplateVolumesSecretList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobTemplateTemplateVolumesSecretList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1565,7 +1565,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudRunV2JobTemplateTemplateVolumesSecretList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1573,7 +1573,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateVolumesSecretOutputReference",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobTemplateTemplateVolumesSecretOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobTemplateTemplateVolumesSecretOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1600,7 +1600,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudRunV2JobTemplateTemplateVolumesSecretOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1608,11 +1608,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateVpcAccess",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobTemplateTemplateVpcAccess)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobTemplateTemplateVpcAccess](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateVpcAccessList",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobTemplateTemplateVpcAccessList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobTemplateTemplateVpcAccessList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1625,7 +1625,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudRunV2JobTemplateTemplateVpcAccessList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1633,11 +1633,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateVpcAccessNetworkInterfaces",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobTemplateTemplateVpcAccessNetworkInterfaces)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobTemplateTemplateVpcAccessNetworkInterfaces](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateVpcAccessNetworkInterfacesList",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobTemplateTemplateVpcAccessNetworkInterfacesList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobTemplateTemplateVpcAccessNetworkInterfacesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1650,7 +1650,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudRunV2JobTemplateTemplateVpcAccessNetworkInterfacesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1658,7 +1658,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateVpcAccessNetworkInterfacesOutputReference",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobTemplateTemplateVpcAccessNetworkInterfacesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobTemplateTemplateVpcAccessNetworkInterfacesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1685,7 +1685,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudRunV2JobTemplateTemplateVpcAccessNetworkInterfacesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1693,7 +1693,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateVpcAccessOutputReference",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobTemplateTemplateVpcAccessOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobTemplateTemplateVpcAccessOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1720,7 +1720,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudRunV2JobTemplateTemplateVpcAccessOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1728,11 +1728,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTerminalCondition",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobTerminalCondition)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobTerminalCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTerminalConditionList",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobTerminalConditionList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobTerminalConditionList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1745,7 +1745,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudRunV2JobTerminalConditionList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1753,7 +1753,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTerminalConditionOutputReference",
-		reflect.TypeOf((*DataGoogleCloudRunV2JobTerminalConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudRunV2JobTerminalConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1785,7 +1785,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudRunV2JobTerminalConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

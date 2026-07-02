@@ -12,9 +12,9 @@ type SourcerepoRepositoryPubsubConfigsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,8 +27,8 @@ type SourcerepoRepositoryPubsubConfigsOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	MessageFormat() *string
 	SetMessageFormat(val *string)
 	MessageFormatInput() *string
@@ -49,7 +49,7 @@ type SourcerepoRepositoryPubsubConfigsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -73,7 +73,7 @@ type SourcerepoRepositoryPubsubConfigsOutputReference interface {
 	ResetServiceAccountEmail()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -86,8 +86,8 @@ type jsiiProxy_SourcerepoRepositoryPubsubConfigsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_SourcerepoRepositoryPubsubConfigsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SourcerepoRepositoryPubsubConfigsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -126,8 +126,8 @@ func (j *jsiiProxy_SourcerepoRepositoryPubsubConfigsOutputReference) Fqn() *stri
 	return returns
 }
 
-func (j *jsiiProxy_SourcerepoRepositoryPubsubConfigsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SourcerepoRepositoryPubsubConfigsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -216,7 +216,6 @@ func (j *jsiiProxy_SourcerepoRepositoryPubsubConfigsOutputReference) TopicInput(
 	return returns
 }
 
-
 func NewSourcerepoRepositoryPubsubConfigsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SourcerepoRepositoryPubsubConfigsOutputReference {
 	_init_.Initialize()
 
@@ -227,7 +226,7 @@ func NewSourcerepoRepositoryPubsubConfigsOutputReference(terraformResource cdktf
 
 	_jsii_.Create(
 		"@cdktf/provider-google.sourcerepoRepository.SourcerepoRepositoryPubsubConfigsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -239,12 +238,12 @@ func NewSourcerepoRepositoryPubsubConfigsOutputReference_Override(s SourcerepoRe
 
 	_jsii_.Create(
 		"@cdktf/provider-google.sourcerepoRepository.SourcerepoRepositoryPubsubConfigsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SourcerepoRepositoryPubsubConfigsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_SourcerepoRepositoryPubsubConfigsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_SourcerepoRepositoryPubsubConfigsOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_SourcerepoRepositoryPubsubConfigsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_SourcerepoRepositoryPubsubConfigsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_SourcerepoRepositoryPubsubConfigsOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_SourcerepoRepositoryPubsubConfigsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_SourcerepoRepositoryPubsubConfigsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_SourcerepoRepositoryPubsubConfigsOutputReference)SetInternalV
 	)
 }
 
-func (j *jsiiProxy_SourcerepoRepositoryPubsubConfigsOutputReference)SetMessageFormat(val *string) {
+func (j *jsiiProxy_SourcerepoRepositoryPubsubConfigsOutputReference) SetMessageFormat(val *string) {
 	if err := j.validateSetMessageFormatParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_SourcerepoRepositoryPubsubConfigsOutputReference)SetMessageFo
 	)
 }
 
-func (j *jsiiProxy_SourcerepoRepositoryPubsubConfigsOutputReference)SetServiceAccountEmail(val *string) {
+func (j *jsiiProxy_SourcerepoRepositoryPubsubConfigsOutputReference) SetServiceAccountEmail(val *string) {
 	if err := j.validateSetServiceAccountEmailParameters(val); err != nil {
 		panic(err)
 	}
@@ -299,7 +298,7 @@ func (j *jsiiProxy_SourcerepoRepositoryPubsubConfigsOutputReference)SetServiceAc
 	)
 }
 
-func (j *jsiiProxy_SourcerepoRepositoryPubsubConfigsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SourcerepoRepositoryPubsubConfigsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -310,7 +309,7 @@ func (j *jsiiProxy_SourcerepoRepositoryPubsubConfigsOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_SourcerepoRepositoryPubsubConfigsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SourcerepoRepositoryPubsubConfigsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -321,7 +320,7 @@ func (j *jsiiProxy_SourcerepoRepositoryPubsubConfigsOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_SourcerepoRepositoryPubsubConfigsOutputReference)SetTopic(val *string) {
+func (j *jsiiProxy_SourcerepoRepositoryPubsubConfigsOutputReference) SetTopic(val *string) {
 	if err := j.validateSetTopicParameters(val); err != nil {
 		panic(err)
 	}
@@ -345,16 +344,16 @@ func (s *jsiiProxy_SourcerepoRepositoryPubsubConfigsOutputReference) ComputeFqn(
 	return returns
 }
 
-func (s *jsiiProxy_SourcerepoRepositoryPubsubConfigsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SourcerepoRepositoryPubsubConfigsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -370,7 +369,7 @@ func (s *jsiiProxy_SourcerepoRepositoryPubsubConfigsOutputReference) GetBooleanA
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -386,7 +385,7 @@ func (s *jsiiProxy_SourcerepoRepositoryPubsubConfigsOutputReference) GetBooleanM
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -402,7 +401,7 @@ func (s *jsiiProxy_SourcerepoRepositoryPubsubConfigsOutputReference) GetListAttr
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -418,7 +417,7 @@ func (s *jsiiProxy_SourcerepoRepositoryPubsubConfigsOutputReference) GetNumberAt
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -434,7 +433,7 @@ func (s *jsiiProxy_SourcerepoRepositoryPubsubConfigsOutputReference) GetNumberLi
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -450,7 +449,7 @@ func (s *jsiiProxy_SourcerepoRepositoryPubsubConfigsOutputReference) GetNumberMa
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -466,7 +465,7 @@ func (s *jsiiProxy_SourcerepoRepositoryPubsubConfigsOutputReference) GetStringAt
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -482,7 +481,7 @@ func (s *jsiiProxy_SourcerepoRepositoryPubsubConfigsOutputReference) GetStringMa
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -511,7 +510,7 @@ func (s *jsiiProxy_SourcerepoRepositoryPubsubConfigsOutputReference) Interpolati
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -526,16 +525,16 @@ func (s *jsiiProxy_SourcerepoRepositoryPubsubConfigsOutputReference) ResetServic
 	)
 }
 
-func (s *jsiiProxy_SourcerepoRepositoryPubsubConfigsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_SourcerepoRepositoryPubsubConfigsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -554,4 +553,3 @@ func (s *jsiiProxy_SourcerepoRepositoryPubsubConfigsOutputReference) ToString() 
 
 	return returns
 }
-

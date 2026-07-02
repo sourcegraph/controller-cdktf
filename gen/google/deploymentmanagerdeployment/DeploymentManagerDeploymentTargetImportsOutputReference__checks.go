@@ -98,7 +98,7 @@ func (d *jsiiProxy_DeploymentManagerDeploymentTargetImportsOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentManagerDeploymentTargetImportsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DeploymentManagerDeploymentTargetImportsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_DeploymentManagerDeploymentTargetImportsOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentManagerDeploymentTargetImportsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DeploymentManagerDeploymentTargetImportsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewDeploymentManagerDeploymentTargetImportsOutputReferenceParameter
 
 	return nil
 }
-

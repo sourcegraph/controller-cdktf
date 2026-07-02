@@ -22,21 +22,21 @@ type RedisCluster interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	CrossClusterReplicationConfig() RedisClusterCrossClusterReplicationConfigOutputReference
 	CrossClusterReplicationConfigInput() *RedisClusterCrossClusterReplicationConfig
-	DeletionProtectionEnabled() interface{}
-	SetDeletionProtectionEnabled(val interface{})
-	DeletionProtectionEnabledInput() interface{}
+	DeletionProtectionEnabled() any
+	SetDeletionProtectionEnabled(val any)
+	DeletionProtectionEnabledInput() any
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -95,15 +95,15 @@ type RedisCluster interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	PscConfigs() RedisClusterPscConfigsList
-	PscConfigsInput() interface{}
+	PscConfigsInput() any
 	PscConnections() RedisClusterPscConnectionsList
 	PscServiceAttachments() RedisClusterPscServiceAttachmentsList
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RedisConfigs() *map[string]*string
 	SetRedisConfigs(val *map[string]*string)
 	RedisConfigsInput() *map[string]*string
@@ -129,11 +129,11 @@ type RedisCluster interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() RedisClusterTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	TransitEncryptionMode() *string
 	SetTransitEncryptionMode(val *string)
 	TransitEncryptionModeInput() *string
@@ -144,9 +144,9 @@ type RedisCluster interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -164,7 +164,7 @@ type RedisCluster interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -176,7 +176,7 @@ type RedisCluster interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -189,7 +189,7 @@ type RedisCluster interface {
 	PutMaintenancePolicy(value *RedisClusterMaintenancePolicy)
 	PutManagedBackupSource(value *RedisClusterManagedBackupSource)
 	PutPersistenceConfig(value *RedisClusterPersistenceConfig)
-	PutPscConfigs(value interface{})
+	PutPscConfigs(value any)
 	PutTimeouts(value *RedisClusterTimeouts)
 	PutZoneDistributionConfig(value *RedisClusterZoneDistributionConfig)
 	ResetAuthorizationMode()
@@ -219,17 +219,17 @@ type RedisCluster interface {
 	ResetTimeouts()
 	ResetTransitEncryptionMode()
 	ResetZoneDistributionConfig()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for RedisCluster
@@ -307,8 +307,8 @@ func (j *jsiiProxy_RedisCluster) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_RedisCluster) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RedisCluster) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -317,8 +317,8 @@ func (j *jsiiProxy_RedisCluster) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RedisCluster) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_RedisCluster) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -327,8 +327,8 @@ func (j *jsiiProxy_RedisCluster) ConstructNodeMetadata() *map[string]interface{}
 	return returns
 }
 
-func (j *jsiiProxy_RedisCluster) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RedisCluster) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -367,8 +367,8 @@ func (j *jsiiProxy_RedisCluster) CrossClusterReplicationConfigInput() *RedisClus
 	return returns
 }
 
-func (j *jsiiProxy_RedisCluster) DeletionProtectionEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RedisCluster) DeletionProtectionEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deletionProtectionEnabled",
@@ -377,8 +377,8 @@ func (j *jsiiProxy_RedisCluster) DeletionProtectionEnabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RedisCluster) DeletionProtectionEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RedisCluster) DeletionProtectionEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deletionProtectionEnabledInput",
@@ -737,8 +737,8 @@ func (j *jsiiProxy_RedisCluster) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_RedisCluster) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_RedisCluster) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -757,8 +757,8 @@ func (j *jsiiProxy_RedisCluster) PscConfigs() RedisClusterPscConfigsList {
 	return returns
 }
 
-func (j *jsiiProxy_RedisCluster) PscConfigsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RedisCluster) PscConfigsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"pscConfigsInput",
@@ -787,8 +787,8 @@ func (j *jsiiProxy_RedisCluster) PscServiceAttachments() RedisClusterPscServiceA
 	return returns
 }
 
-func (j *jsiiProxy_RedisCluster) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RedisCluster) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -967,8 +967,8 @@ func (j *jsiiProxy_RedisCluster) TerraformLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_RedisCluster) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_RedisCluster) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -997,8 +997,8 @@ func (j *jsiiProxy_RedisCluster) Timeouts() RedisClusterTimeoutsOutputReference 
 	return returns
 }
 
-func (j *jsiiProxy_RedisCluster) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RedisCluster) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -1057,7 +1057,6 @@ func (j *jsiiProxy_RedisCluster) ZoneDistributionConfigInput() *RedisClusterZone
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/redis_cluster google_redis_cluster} Resource.
 func NewRedisCluster(scope constructs.Construct, id *string, config *RedisClusterConfig) RedisCluster {
 	_init_.Initialize()
@@ -1069,7 +1068,7 @@ func NewRedisCluster(scope constructs.Construct, id *string, config *RedisCluste
 
 	_jsii_.Create(
 		"@cdktf/provider-google.redisCluster.RedisCluster",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -1082,12 +1081,12 @@ func NewRedisCluster_Override(r RedisCluster, scope constructs.Construct, id *st
 
 	_jsii_.Create(
 		"@cdktf/provider-google.redisCluster.RedisCluster",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		r,
 	)
 }
 
-func (j *jsiiProxy_RedisCluster)SetAuthorizationMode(val *string) {
+func (j *jsiiProxy_RedisCluster) SetAuthorizationMode(val *string) {
 	if err := j.validateSetAuthorizationModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1098,7 +1097,7 @@ func (j *jsiiProxy_RedisCluster)SetAuthorizationMode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RedisCluster)SetConnection(val interface{}) {
+func (j *jsiiProxy_RedisCluster) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1109,7 +1108,7 @@ func (j *jsiiProxy_RedisCluster)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RedisCluster)SetCount(val interface{}) {
+func (j *jsiiProxy_RedisCluster) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -1120,7 +1119,7 @@ func (j *jsiiProxy_RedisCluster)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RedisCluster)SetDeletionProtectionEnabled(val interface{}) {
+func (j *jsiiProxy_RedisCluster) SetDeletionProtectionEnabled(val any) {
 	if err := j.validateSetDeletionProtectionEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -1131,7 +1130,7 @@ func (j *jsiiProxy_RedisCluster)SetDeletionProtectionEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RedisCluster)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_RedisCluster) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -1139,7 +1138,7 @@ func (j *jsiiProxy_RedisCluster)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_RedisCluster)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_RedisCluster) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1147,7 +1146,7 @@ func (j *jsiiProxy_RedisCluster)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_RedisCluster)SetId(val *string) {
+func (j *jsiiProxy_RedisCluster) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1158,7 +1157,7 @@ func (j *jsiiProxy_RedisCluster)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RedisCluster)SetKmsKey(val *string) {
+func (j *jsiiProxy_RedisCluster) SetKmsKey(val *string) {
 	if err := j.validateSetKmsKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -1169,7 +1168,7 @@ func (j *jsiiProxy_RedisCluster)SetKmsKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RedisCluster)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_RedisCluster) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1180,7 +1179,7 @@ func (j *jsiiProxy_RedisCluster)SetLabels(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_RedisCluster)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_RedisCluster) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1191,7 +1190,7 @@ func (j *jsiiProxy_RedisCluster)SetLifecycle(val *cdktf.TerraformResourceLifecyc
 	)
 }
 
-func (j *jsiiProxy_RedisCluster)SetMaintenanceVersion(val *string) {
+func (j *jsiiProxy_RedisCluster) SetMaintenanceVersion(val *string) {
 	if err := j.validateSetMaintenanceVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1202,7 +1201,7 @@ func (j *jsiiProxy_RedisCluster)SetMaintenanceVersion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RedisCluster)SetName(val *string) {
+func (j *jsiiProxy_RedisCluster) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1213,7 +1212,7 @@ func (j *jsiiProxy_RedisCluster)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RedisCluster)SetNodeType(val *string) {
+func (j *jsiiProxy_RedisCluster) SetNodeType(val *string) {
 	if err := j.validateSetNodeTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1224,7 +1223,7 @@ func (j *jsiiProxy_RedisCluster)SetNodeType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RedisCluster)SetProject(val *string) {
+func (j *jsiiProxy_RedisCluster) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -1235,7 +1234,7 @@ func (j *jsiiProxy_RedisCluster)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RedisCluster)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_RedisCluster) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1243,7 +1242,7 @@ func (j *jsiiProxy_RedisCluster)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_RedisCluster)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_RedisCluster) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1254,7 +1253,7 @@ func (j *jsiiProxy_RedisCluster)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RedisCluster)SetRedisConfigs(val *map[string]*string) {
+func (j *jsiiProxy_RedisCluster) SetRedisConfigs(val *map[string]*string) {
 	if err := j.validateSetRedisConfigsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1265,7 +1264,7 @@ func (j *jsiiProxy_RedisCluster)SetRedisConfigs(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_RedisCluster)SetRegion(val *string) {
+func (j *jsiiProxy_RedisCluster) SetRegion(val *string) {
 	if err := j.validateSetRegionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1276,7 +1275,7 @@ func (j *jsiiProxy_RedisCluster)SetRegion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RedisCluster)SetReplicaCount(val *float64) {
+func (j *jsiiProxy_RedisCluster) SetReplicaCount(val *float64) {
 	if err := j.validateSetReplicaCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -1287,7 +1286,7 @@ func (j *jsiiProxy_RedisCluster)SetReplicaCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_RedisCluster)SetServerCaMode(val *string) {
+func (j *jsiiProxy_RedisCluster) SetServerCaMode(val *string) {
 	if err := j.validateSetServerCaModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1298,7 +1297,7 @@ func (j *jsiiProxy_RedisCluster)SetServerCaMode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RedisCluster)SetServerCaPool(val *string) {
+func (j *jsiiProxy_RedisCluster) SetServerCaPool(val *string) {
 	if err := j.validateSetServerCaPoolParameters(val); err != nil {
 		panic(err)
 	}
@@ -1309,7 +1308,7 @@ func (j *jsiiProxy_RedisCluster)SetServerCaPool(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RedisCluster)SetShardCount(val *float64) {
+func (j *jsiiProxy_RedisCluster) SetShardCount(val *float64) {
 	if err := j.validateSetShardCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -1320,7 +1319,7 @@ func (j *jsiiProxy_RedisCluster)SetShardCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_RedisCluster)SetTransitEncryptionMode(val *string) {
+func (j *jsiiProxy_RedisCluster) SetTransitEncryptionMode(val *string) {
 	if err := j.validateSetTransitEncryptionModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1343,7 +1342,7 @@ func RedisCluster_GenerateConfigForImport(scope constructs.Construct, importToId
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.redisCluster.RedisCluster",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1367,7 +1366,7 @@ func RedisCluster_GenerateConfigForImport(scope constructs.Construct, importToId
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func RedisCluster_IsConstruct(x interface{}) *bool {
+func RedisCluster_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRedisCluster_IsConstructParameters(x); err != nil {
@@ -1378,7 +1377,7 @@ func RedisCluster_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.redisCluster.RedisCluster",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1386,7 +1385,7 @@ func RedisCluster_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func RedisCluster_IsTerraformElement(x interface{}) *bool {
+func RedisCluster_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRedisCluster_IsTerraformElementParameters(x); err != nil {
@@ -1397,7 +1396,7 @@ func RedisCluster_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.redisCluster.RedisCluster",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1405,7 +1404,7 @@ func RedisCluster_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func RedisCluster_IsTerraformResource(x interface{}) *bool {
+func RedisCluster_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRedisCluster_IsTerraformResourceParameters(x); err != nil {
@@ -1416,7 +1415,7 @@ func RedisCluster_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.redisCluster.RedisCluster",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1441,31 +1440,31 @@ func (r *jsiiProxy_RedisCluster) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (r *jsiiProxy_RedisCluster) AddOverride(path *string, value interface{}) {
+func (r *jsiiProxy_RedisCluster) AddOverride(path *string, value any) {
 	if err := r.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (r *jsiiProxy_RedisCluster) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_RedisCluster) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1481,7 +1480,7 @@ func (r *jsiiProxy_RedisCluster) GetBooleanAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1497,7 +1496,7 @@ func (r *jsiiProxy_RedisCluster) GetBooleanMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1513,7 +1512,7 @@ func (r *jsiiProxy_RedisCluster) GetListAttribute(terraformAttribute *string) *[
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1529,7 +1528,7 @@ func (r *jsiiProxy_RedisCluster) GetNumberAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1545,7 +1544,7 @@ func (r *jsiiProxy_RedisCluster) GetNumberListAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1561,7 +1560,7 @@ func (r *jsiiProxy_RedisCluster) GetNumberMapAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1577,7 +1576,7 @@ func (r *jsiiProxy_RedisCluster) GetStringAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1593,15 +1592,15 @@ func (r *jsiiProxy_RedisCluster) GetStringMapAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (r *jsiiProxy_RedisCluster) HasResourceMove() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RedisCluster) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -1620,7 +1619,7 @@ func (r *jsiiProxy_RedisCluster) ImportFrom(id *string, provider cdktf.Terraform
 	_jsii_.InvokeVoid(
 		r,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1633,7 +1632,7 @@ func (r *jsiiProxy_RedisCluster) InterpolationForAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1647,18 +1646,18 @@ func (r *jsiiProxy_RedisCluster) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (r *jsiiProxy_RedisCluster) MoveTo(moveTarget *string, index interface{}) {
+func (r *jsiiProxy_RedisCluster) MoveTo(moveTarget *string, index any) {
 	if err := r.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1669,7 +1668,7 @@ func (r *jsiiProxy_RedisCluster) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1680,7 +1679,7 @@ func (r *jsiiProxy_RedisCluster) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1691,7 +1690,7 @@ func (r *jsiiProxy_RedisCluster) PutAutomatedBackupConfig(value *RedisClusterAut
 	_jsii_.InvokeVoid(
 		r,
 		"putAutomatedBackupConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1702,7 +1701,7 @@ func (r *jsiiProxy_RedisCluster) PutCrossClusterReplicationConfig(value *RedisCl
 	_jsii_.InvokeVoid(
 		r,
 		"putCrossClusterReplicationConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1713,7 +1712,7 @@ func (r *jsiiProxy_RedisCluster) PutGcsSource(value *RedisClusterGcsSource) {
 	_jsii_.InvokeVoid(
 		r,
 		"putGcsSource",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1724,7 +1723,7 @@ func (r *jsiiProxy_RedisCluster) PutMaintenancePolicy(value *RedisClusterMainten
 	_jsii_.InvokeVoid(
 		r,
 		"putMaintenancePolicy",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1735,7 +1734,7 @@ func (r *jsiiProxy_RedisCluster) PutManagedBackupSource(value *RedisClusterManag
 	_jsii_.InvokeVoid(
 		r,
 		"putManagedBackupSource",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1746,18 +1745,18 @@ func (r *jsiiProxy_RedisCluster) PutPersistenceConfig(value *RedisClusterPersist
 	_jsii_.InvokeVoid(
 		r,
 		"putPersistenceConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (r *jsiiProxy_RedisCluster) PutPscConfigs(value interface{}) {
+func (r *jsiiProxy_RedisCluster) PutPscConfigs(value any) {
 	if err := r.validatePutPscConfigsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"putPscConfigs",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1768,7 +1767,7 @@ func (r *jsiiProxy_RedisCluster) PutTimeouts(value *RedisClusterTimeouts) {
 	_jsii_.InvokeVoid(
 		r,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1779,7 +1778,7 @@ func (r *jsiiProxy_RedisCluster) PutZoneDistributionConfig(value *RedisClusterZo
 	_jsii_.InvokeVoid(
 		r,
 		"putZoneDistributionConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1983,8 +1982,8 @@ func (r *jsiiProxy_RedisCluster) ResetZoneDistributionConfig() {
 	)
 }
 
-func (r *jsiiProxy_RedisCluster) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (r *jsiiProxy_RedisCluster) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
@@ -1996,8 +1995,8 @@ func (r *jsiiProxy_RedisCluster) SynthesizeAttributes() *map[string]interface{} 
 	return returns
 }
 
-func (r *jsiiProxy_RedisCluster) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (r *jsiiProxy_RedisCluster) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
@@ -2009,8 +2008,8 @@ func (r *jsiiProxy_RedisCluster) SynthesizeHclAttributes() *map[string]interface
 	return returns
 }
 
-func (r *jsiiProxy_RedisCluster) ToHclTerraform() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RedisCluster) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -2022,8 +2021,8 @@ func (r *jsiiProxy_RedisCluster) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (r *jsiiProxy_RedisCluster) ToMetadata() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RedisCluster) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -2048,8 +2047,8 @@ func (r *jsiiProxy_RedisCluster) ToString() *string {
 	return returns
 }
 
-func (r *jsiiProxy_RedisCluster) ToTerraform() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RedisCluster) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -2060,4 +2059,3 @@ func (r *jsiiProxy_RedisCluster) ToTerraform() interface{} {
 
 	return returns
 }
-

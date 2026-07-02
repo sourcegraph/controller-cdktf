@@ -34,7 +34,7 @@ func (d *jsiiProxy_DnsRecordSetRoutingPolicyGeoList) validateResolveParameters(_
 	return nil
 }
 
-func (j *jsiiProxy_DnsRecordSetRoutingPolicyGeoList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DnsRecordSetRoutingPolicyGeoList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDnsRecordSetRoutingPolicyGeoListParameters(terraformResource cdk
 
 	return nil
 }
-

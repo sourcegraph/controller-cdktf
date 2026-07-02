@@ -98,7 +98,7 @@ func (b *jsiiProxy_BigqueryTableTimePartitioningOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryTableTimePartitioningOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryTableTimePartitioningOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -187,7 +187,7 @@ func (j *jsiiProxy_BigqueryTableTimePartitioningOutputReference) validateSetInte
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryTableTimePartitioningOutputReference) validateSetRequirePartitionFilterParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryTableTimePartitioningOutputReference) validateSetRequirePartitionFilterParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -242,4 +242,3 @@ func validateNewBigqueryTableTimePartitioningOutputReferenceParameters(terraform
 
 	return nil
 }
-

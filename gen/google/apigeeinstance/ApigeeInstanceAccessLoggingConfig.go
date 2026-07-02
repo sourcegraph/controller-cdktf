@@ -1,11 +1,10 @@
 package apigeeinstance
 
-
 type ApigeeInstanceAccessLoggingConfig struct {
 	// Boolean flag that specifies whether the customer access log feature is enabled.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_instance#enabled ApigeeInstance#enabled}
-	Enabled interface{} `field:"required" json:"enabled" yaml:"enabled"`
+	Enabled any `field:"required" json:"enabled" yaml:"enabled"`
 	// Ship the access log entries that match the statusCode defined in the filter.
 	//
 	// The statusCode is the only expected/supported filter field. (Ex: statusCode)
@@ -15,4 +14,3 @@ type ApigeeInstanceAccessLoggingConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_instance#filter ApigeeInstance#filter}
 	Filter *string `field:"optional" json:"filter" yaml:"filter"`
 }
-

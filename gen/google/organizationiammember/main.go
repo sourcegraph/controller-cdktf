@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.organizationIamMember.OrganizationIamMember",
-		reflect.TypeOf((*OrganizationIamMember)(nil)).Elem(),
+		reflect.TypeFor[OrganizationIamMember](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -67,7 +67,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_OrganizationIamMember{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -75,11 +75,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.organizationIamMember.OrganizationIamMemberCondition",
-		reflect.TypeOf((*OrganizationIamMemberCondition)(nil)).Elem(),
+		reflect.TypeFor[OrganizationIamMemberCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.organizationIamMember.OrganizationIamMemberConditionOutputReference",
-		reflect.TypeOf((*OrganizationIamMemberConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[OrganizationIamMemberConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -110,7 +110,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_OrganizationIamMemberConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -118,6 +118,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.organizationIamMember.OrganizationIamMemberConfig",
-		reflect.TypeOf((*OrganizationIamMemberConfig)(nil)).Elem(),
+		reflect.TypeFor[OrganizationIamMemberConfig](),
 	)
 }

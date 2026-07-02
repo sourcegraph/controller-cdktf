@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.loggingSavedQuery.LoggingSavedQuery",
-		reflect.TypeOf((*LoggingSavedQuery)(nil)).Elem(),
+		reflect.TypeFor[LoggingSavedQuery](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -83,7 +83,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "visibility", GoGetter: "Visibility"},
 			_jsii_.MemberProperty{JsiiProperty: "visibilityInput", GoGetter: "VisibilityInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LoggingSavedQuery{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -91,15 +91,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.loggingSavedQuery.LoggingSavedQueryConfig",
-		reflect.TypeOf((*LoggingSavedQueryConfig)(nil)).Elem(),
+		reflect.TypeFor[LoggingSavedQueryConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.loggingSavedQuery.LoggingSavedQueryLoggingQuery",
-		reflect.TypeOf((*LoggingSavedQueryLoggingQuery)(nil)).Elem(),
+		reflect.TypeFor[LoggingSavedQueryLoggingQuery](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.loggingSavedQuery.LoggingSavedQueryLoggingQueryOutputReference",
-		reflect.TypeOf((*LoggingSavedQueryLoggingQueryOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LoggingSavedQueryLoggingQueryOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -135,7 +135,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LoggingSavedQueryLoggingQueryOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -143,11 +143,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.loggingSavedQuery.LoggingSavedQueryLoggingQuerySummaryFields",
-		reflect.TypeOf((*LoggingSavedQueryLoggingQuerySummaryFields)(nil)).Elem(),
+		reflect.TypeFor[LoggingSavedQueryLoggingQuerySummaryFields](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.loggingSavedQuery.LoggingSavedQueryLoggingQuerySummaryFieldsList",
-		reflect.TypeOf((*LoggingSavedQueryLoggingQuerySummaryFieldsList)(nil)).Elem(),
+		reflect.TypeFor[LoggingSavedQueryLoggingQuerySummaryFieldsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -161,7 +161,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LoggingSavedQueryLoggingQuerySummaryFieldsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -169,7 +169,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.loggingSavedQuery.LoggingSavedQueryLoggingQuerySummaryFieldsOutputReference",
-		reflect.TypeOf((*LoggingSavedQueryLoggingQuerySummaryFieldsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LoggingSavedQueryLoggingQuerySummaryFieldsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -196,7 +196,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LoggingSavedQueryLoggingQuerySummaryFieldsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -204,11 +204,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.loggingSavedQuery.LoggingSavedQueryOpsAnalyticsQuery",
-		reflect.TypeOf((*LoggingSavedQueryOpsAnalyticsQuery)(nil)).Elem(),
+		reflect.TypeFor[LoggingSavedQueryOpsAnalyticsQuery](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.loggingSavedQuery.LoggingSavedQueryOpsAnalyticsQueryOutputReference",
-		reflect.TypeOf((*LoggingSavedQueryOpsAnalyticsQueryOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LoggingSavedQueryOpsAnalyticsQueryOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -234,7 +234,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LoggingSavedQueryOpsAnalyticsQueryOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -242,11 +242,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.loggingSavedQuery.LoggingSavedQueryTimeouts",
-		reflect.TypeOf((*LoggingSavedQueryTimeouts)(nil)).Elem(),
+		reflect.TypeFor[LoggingSavedQueryTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.loggingSavedQuery.LoggingSavedQueryTimeoutsOutputReference",
-		reflect.TypeOf((*LoggingSavedQueryTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LoggingSavedQueryTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -279,7 +279,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LoggingSavedQueryTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

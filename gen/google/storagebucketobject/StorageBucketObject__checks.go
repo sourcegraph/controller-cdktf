@@ -19,7 +19,7 @@ func (s *jsiiProxy_StorageBucketObject) validateAddMoveTargetParameters(moveTarg
 	return nil
 }
 
-func (s *jsiiProxy_StorageBucketObject) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_StorageBucketObject) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_StorageBucketObject) validateMoveFromIdParameters(id *string)
 	return nil
 }
 
-func (s *jsiiProxy_StorageBucketObject) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_StorageBucketObject) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -264,7 +264,7 @@ func validateStorageBucketObject_GenerateConfigForImportParameters(scope constru
 	return nil
 }
 
-func validateStorageBucketObject_IsConstructParameters(x interface{}) error {
+func validateStorageBucketObject_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -272,7 +272,7 @@ func validateStorageBucketObject_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateStorageBucketObject_IsTerraformElementParameters(x interface{}) error {
+func validateStorageBucketObject_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -280,7 +280,7 @@ func validateStorageBucketObject_IsTerraformElementParameters(x interface{}) err
 	return nil
 }
 
-func validateStorageBucketObject_IsTerraformResourceParameters(x interface{}) error {
+func validateStorageBucketObject_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -304,7 +304,7 @@ func (j *jsiiProxy_StorageBucketObject) validateSetCacheControlParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_StorageBucketObject) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_StorageBucketObject) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -377,7 +377,7 @@ func (j *jsiiProxy_StorageBucketObject) validateSetContentTypeParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_StorageBucketObject) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_StorageBucketObject) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -450,7 +450,7 @@ func (j *jsiiProxy_StorageBucketObject) validateSetDetectMd5HashParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_StorageBucketObject) validateSetEventBasedHoldParameters(val interface{}) error {
+func (j *jsiiProxy_StorageBucketObject) validateSetEventBasedHoldParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -470,7 +470,7 @@ func (j *jsiiProxy_StorageBucketObject) validateSetEventBasedHoldParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_StorageBucketObject) validateSetForceEmptyContentTypeParameters(val interface{}) error {
+func (j *jsiiProxy_StorageBucketObject) validateSetForceEmptyContentTypeParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -530,7 +530,7 @@ func (j *jsiiProxy_StorageBucketObject) validateSetNameParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_StorageBucketObject) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_StorageBucketObject) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -600,7 +600,7 @@ func (j *jsiiProxy_StorageBucketObject) validateSetStorageClassParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_StorageBucketObject) validateSetTemporaryHoldParameters(val interface{}) error {
+func (j *jsiiProxy_StorageBucketObject) validateSetTemporaryHoldParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -638,4 +638,3 @@ func validateNewStorageBucketObjectParameters(scope constructs.Construct, id *st
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.spannerBackupSchedule.SpannerBackupSchedule",
-		reflect.TypeOf((*SpannerBackupSchedule)(nil)).Elem(),
+		reflect.TypeFor[SpannerBackupSchedule](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -88,7 +88,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SpannerBackupSchedule{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -96,15 +96,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.spannerBackupSchedule.SpannerBackupScheduleConfig",
-		reflect.TypeOf((*SpannerBackupScheduleConfig)(nil)).Elem(),
+		reflect.TypeFor[SpannerBackupScheduleConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.spannerBackupSchedule.SpannerBackupScheduleEncryptionConfig",
-		reflect.TypeOf((*SpannerBackupScheduleEncryptionConfig)(nil)).Elem(),
+		reflect.TypeFor[SpannerBackupScheduleEncryptionConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.spannerBackupSchedule.SpannerBackupScheduleEncryptionConfigOutputReference",
-		reflect.TypeOf((*SpannerBackupScheduleEncryptionConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SpannerBackupScheduleEncryptionConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -136,7 +136,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SpannerBackupScheduleEncryptionConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -144,11 +144,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.spannerBackupSchedule.SpannerBackupScheduleFullBackupSpec",
-		reflect.TypeOf((*SpannerBackupScheduleFullBackupSpec)(nil)).Elem(),
+		reflect.TypeFor[SpannerBackupScheduleFullBackupSpec](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.spannerBackupSchedule.SpannerBackupScheduleFullBackupSpecOutputReference",
-		reflect.TypeOf((*SpannerBackupScheduleFullBackupSpecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SpannerBackupScheduleFullBackupSpecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -172,7 +172,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SpannerBackupScheduleFullBackupSpecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -180,11 +180,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.spannerBackupSchedule.SpannerBackupScheduleIncrementalBackupSpec",
-		reflect.TypeOf((*SpannerBackupScheduleIncrementalBackupSpec)(nil)).Elem(),
+		reflect.TypeFor[SpannerBackupScheduleIncrementalBackupSpec](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.spannerBackupSchedule.SpannerBackupScheduleIncrementalBackupSpecOutputReference",
-		reflect.TypeOf((*SpannerBackupScheduleIncrementalBackupSpecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SpannerBackupScheduleIncrementalBackupSpecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -208,7 +208,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SpannerBackupScheduleIncrementalBackupSpecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -216,15 +216,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.spannerBackupSchedule.SpannerBackupScheduleSpec",
-		reflect.TypeOf((*SpannerBackupScheduleSpec)(nil)).Elem(),
+		reflect.TypeFor[SpannerBackupScheduleSpec](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.spannerBackupSchedule.SpannerBackupScheduleSpecCronSpec",
-		reflect.TypeOf((*SpannerBackupScheduleSpecCronSpec)(nil)).Elem(),
+		reflect.TypeFor[SpannerBackupScheduleSpecCronSpec](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.spannerBackupSchedule.SpannerBackupScheduleSpecCronSpecOutputReference",
-		reflect.TypeOf((*SpannerBackupScheduleSpecCronSpecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SpannerBackupScheduleSpecCronSpecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -251,7 +251,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "textInput", GoGetter: "TextInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SpannerBackupScheduleSpecCronSpecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -259,7 +259,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.spannerBackupSchedule.SpannerBackupScheduleSpecOutputReference",
-		reflect.TypeOf((*SpannerBackupScheduleSpecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SpannerBackupScheduleSpecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -287,7 +287,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SpannerBackupScheduleSpecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -295,11 +295,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.spannerBackupSchedule.SpannerBackupScheduleTimeouts",
-		reflect.TypeOf((*SpannerBackupScheduleTimeouts)(nil)).Elem(),
+		reflect.TypeFor[SpannerBackupScheduleTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.spannerBackupSchedule.SpannerBackupScheduleTimeoutsOutputReference",
-		reflect.TypeOf((*SpannerBackupScheduleTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SpannerBackupScheduleTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -332,7 +332,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SpannerBackupScheduleTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

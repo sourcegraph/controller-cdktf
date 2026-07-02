@@ -15,11 +15,11 @@ type DataGoogleVmwareengineSubnet interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -57,13 +57,13 @@ type DataGoogleVmwareengineSubnet interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	StandardConfig() cdktf.IResolvable
 	State() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Type() *string
@@ -71,9 +71,9 @@ type DataGoogleVmwareengineSubnet interface {
 	UpdateTime() *string
 	VlanId() *float64
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -99,18 +99,18 @@ type DataGoogleVmwareengineSubnet interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataGoogleVmwareengineSubnet
@@ -128,8 +128,8 @@ func (j *jsiiProxy_DataGoogleVmwareengineSubnet) CdktfStack() cdktf.TerraformSta
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleVmwareengineSubnet) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleVmwareengineSubnet) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -138,8 +138,8 @@ func (j *jsiiProxy_DataGoogleVmwareengineSubnet) ConstructNodeMetadata() *map[st
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleVmwareengineSubnet) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleVmwareengineSubnet) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -328,8 +328,8 @@ func (j *jsiiProxy_DataGoogleVmwareengineSubnet) Provider() cdktf.TerraformProvi
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleVmwareengineSubnet) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleVmwareengineSubnet) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -368,8 +368,8 @@ func (j *jsiiProxy_DataGoogleVmwareengineSubnet) TerraformGeneratorMetadata() *c
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleVmwareengineSubnet) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleVmwareengineSubnet) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -428,7 +428,6 @@ func (j *jsiiProxy_DataGoogleVmwareengineSubnet) VlanId() *float64 {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/vmwareengine_subnet google_vmwareengine_subnet} Data Source.
 func NewDataGoogleVmwareengineSubnet(scope constructs.Construct, id *string, config *DataGoogleVmwareengineSubnetConfig) DataGoogleVmwareengineSubnet {
 	_init_.Initialize()
@@ -440,7 +439,7 @@ func NewDataGoogleVmwareengineSubnet(scope constructs.Construct, id *string, con
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleVmwareengineSubnet.DataGoogleVmwareengineSubnet",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -453,12 +452,12 @@ func NewDataGoogleVmwareengineSubnet_Override(d DataGoogleVmwareengineSubnet, sc
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleVmwareengineSubnet.DataGoogleVmwareengineSubnet",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataGoogleVmwareengineSubnet)SetCount(val interface{}) {
+func (j *jsiiProxy_DataGoogleVmwareengineSubnet) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -469,7 +468,7 @@ func (j *jsiiProxy_DataGoogleVmwareengineSubnet)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleVmwareengineSubnet)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataGoogleVmwareengineSubnet) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -477,7 +476,7 @@ func (j *jsiiProxy_DataGoogleVmwareengineSubnet)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleVmwareengineSubnet)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGoogleVmwareengineSubnet) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -485,7 +484,7 @@ func (j *jsiiProxy_DataGoogleVmwareengineSubnet)SetForEach(val cdktf.ITerraformI
 	)
 }
 
-func (j *jsiiProxy_DataGoogleVmwareengineSubnet)SetId(val *string) {
+func (j *jsiiProxy_DataGoogleVmwareengineSubnet) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -496,7 +495,7 @@ func (j *jsiiProxy_DataGoogleVmwareengineSubnet)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleVmwareengineSubnet)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGoogleVmwareengineSubnet) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -507,7 +506,7 @@ func (j *jsiiProxy_DataGoogleVmwareengineSubnet)SetLifecycle(val *cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_DataGoogleVmwareengineSubnet)SetName(val *string) {
+func (j *jsiiProxy_DataGoogleVmwareengineSubnet) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -518,7 +517,7 @@ func (j *jsiiProxy_DataGoogleVmwareengineSubnet)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleVmwareengineSubnet)SetParent(val *string) {
+func (j *jsiiProxy_DataGoogleVmwareengineSubnet) SetParent(val *string) {
 	if err := j.validateSetParentParameters(val); err != nil {
 		panic(err)
 	}
@@ -529,7 +528,7 @@ func (j *jsiiProxy_DataGoogleVmwareengineSubnet)SetParent(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleVmwareengineSubnet)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGoogleVmwareengineSubnet) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -549,7 +548,7 @@ func DataGoogleVmwareengineSubnet_GenerateConfigForImport(scope constructs.Const
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleVmwareengineSubnet.DataGoogleVmwareengineSubnet",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -573,7 +572,7 @@ func DataGoogleVmwareengineSubnet_GenerateConfigForImport(scope constructs.Const
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataGoogleVmwareengineSubnet_IsConstruct(x interface{}) *bool {
+func DataGoogleVmwareengineSubnet_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleVmwareengineSubnet_IsConstructParameters(x); err != nil {
@@ -584,7 +583,7 @@ func DataGoogleVmwareengineSubnet_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleVmwareengineSubnet.DataGoogleVmwareengineSubnet",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -592,7 +591,7 @@ func DataGoogleVmwareengineSubnet_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGoogleVmwareengineSubnet_IsTerraformDataSource(x interface{}) *bool {
+func DataGoogleVmwareengineSubnet_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleVmwareengineSubnet_IsTerraformDataSourceParameters(x); err != nil {
@@ -603,7 +602,7 @@ func DataGoogleVmwareengineSubnet_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleVmwareengineSubnet.DataGoogleVmwareengineSubnet",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -611,7 +610,7 @@ func DataGoogleVmwareengineSubnet_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGoogleVmwareengineSubnet_IsTerraformElement(x interface{}) *bool {
+func DataGoogleVmwareengineSubnet_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleVmwareengineSubnet_IsTerraformElementParameters(x); err != nil {
@@ -622,7 +621,7 @@ func DataGoogleVmwareengineSubnet_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleVmwareengineSubnet.DataGoogleVmwareengineSubnet",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -640,27 +639,27 @@ func DataGoogleVmwareengineSubnet_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleVmwareengineSubnet) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataGoogleVmwareengineSubnet) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataGoogleVmwareengineSubnet) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataGoogleVmwareengineSubnet) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -676,7 +675,7 @@ func (d *jsiiProxy_DataGoogleVmwareengineSubnet) GetBooleanAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -692,7 +691,7 @@ func (d *jsiiProxy_DataGoogleVmwareengineSubnet) GetBooleanMapAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -708,7 +707,7 @@ func (d *jsiiProxy_DataGoogleVmwareengineSubnet) GetListAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -724,7 +723,7 @@ func (d *jsiiProxy_DataGoogleVmwareengineSubnet) GetNumberAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -740,7 +739,7 @@ func (d *jsiiProxy_DataGoogleVmwareengineSubnet) GetNumberListAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -756,7 +755,7 @@ func (d *jsiiProxy_DataGoogleVmwareengineSubnet) GetNumberMapAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -772,7 +771,7 @@ func (d *jsiiProxy_DataGoogleVmwareengineSubnet) GetStringAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -788,7 +787,7 @@ func (d *jsiiProxy_DataGoogleVmwareengineSubnet) GetStringMapAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -804,7 +803,7 @@ func (d *jsiiProxy_DataGoogleVmwareengineSubnet) InterpolationForAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -818,7 +817,7 @@ func (d *jsiiProxy_DataGoogleVmwareengineSubnet) OverrideLogicalId(newLogicalId 
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -838,8 +837,8 @@ func (d *jsiiProxy_DataGoogleVmwareengineSubnet) ResetOverrideLogicalId() {
 	)
 }
 
-func (d *jsiiProxy_DataGoogleVmwareengineSubnet) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleVmwareengineSubnet) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -851,8 +850,8 @@ func (d *jsiiProxy_DataGoogleVmwareengineSubnet) SynthesizeAttributes() *map[str
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleVmwareengineSubnet) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleVmwareengineSubnet) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -864,8 +863,8 @@ func (d *jsiiProxy_DataGoogleVmwareengineSubnet) SynthesizeHclAttributes() *map[
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleVmwareengineSubnet) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleVmwareengineSubnet) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -877,8 +876,8 @@ func (d *jsiiProxy_DataGoogleVmwareengineSubnet) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleVmwareengineSubnet) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleVmwareengineSubnet) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -903,8 +902,8 @@ func (d *jsiiProxy_DataGoogleVmwareengineSubnet) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleVmwareengineSubnet) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleVmwareengineSubnet) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -915,4 +914,3 @@ func (d *jsiiProxy_DataGoogleVmwareengineSubnet) ToTerraform() interface{} {
 
 	return returns
 }
-

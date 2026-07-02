@@ -1,11 +1,10 @@
 package cestool
 
-
 type CesToolDataStoreToolModalityConfigsSummarizationConfig struct {
 	// Whether summarization is disabled.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_tool#disabled CesTool#disabled}
-	Disabled interface{} `field:"optional" json:"disabled" yaml:"disabled"`
+	Disabled any `field:"optional" json:"disabled" yaml:"disabled"`
 	// model_settings block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_tool#model_settings CesTool#model_settings}
@@ -15,4 +14,3 @@ type CesToolDataStoreToolModalityConfigsSummarizationConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_tool#prompt CesTool#prompt}
 	Prompt *string `field:"optional" json:"prompt" yaml:"prompt"`
 }
-

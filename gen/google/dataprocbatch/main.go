@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocBatch.DataprocBatch",
-		reflect.TypeOf((*DataprocBatch)(nil)).Elem(),
+		reflect.TypeFor[DataprocBatch](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -108,7 +108,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "uuid", GoGetter: "Uuid"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocBatch{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -116,23 +116,23 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocBatch.DataprocBatchConfig",
-		reflect.TypeOf((*DataprocBatchConfig)(nil)).Elem(),
+		reflect.TypeFor[DataprocBatchConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocBatch.DataprocBatchEnvironmentConfig",
-		reflect.TypeOf((*DataprocBatchEnvironmentConfig)(nil)).Elem(),
+		reflect.TypeFor[DataprocBatchEnvironmentConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocBatch.DataprocBatchEnvironmentConfigExecutionConfig",
-		reflect.TypeOf((*DataprocBatchEnvironmentConfigExecutionConfig)(nil)).Elem(),
+		reflect.TypeFor[DataprocBatchEnvironmentConfigExecutionConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocBatch.DataprocBatchEnvironmentConfigExecutionConfigAuthenticationConfig",
-		reflect.TypeOf((*DataprocBatchEnvironmentConfigExecutionConfigAuthenticationConfig)(nil)).Elem(),
+		reflect.TypeFor[DataprocBatchEnvironmentConfigExecutionConfigAuthenticationConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocBatch.DataprocBatchEnvironmentConfigExecutionConfigAuthenticationConfigOutputReference",
-		reflect.TypeOf((*DataprocBatchEnvironmentConfigExecutionConfigAuthenticationConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocBatchEnvironmentConfigExecutionConfigAuthenticationConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -159,7 +159,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userWorkloadAuthenticationType", GoGetter: "UserWorkloadAuthenticationType"},
 			_jsii_.MemberProperty{JsiiProperty: "userWorkloadAuthenticationTypeInput", GoGetter: "UserWorkloadAuthenticationTypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocBatchEnvironmentConfigExecutionConfigAuthenticationConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -167,7 +167,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocBatch.DataprocBatchEnvironmentConfigExecutionConfigOutputReference",
-		reflect.TypeOf((*DataprocBatchEnvironmentConfigExecutionConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocBatchEnvironmentConfigExecutionConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authenticationConfig", GoGetter: "AuthenticationConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "authenticationConfigInput", GoGetter: "AuthenticationConfigInput"},
@@ -216,7 +216,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "ttl", GoGetter: "Ttl"},
 			_jsii_.MemberProperty{JsiiProperty: "ttlInput", GoGetter: "TtlInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocBatchEnvironmentConfigExecutionConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -224,7 +224,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocBatch.DataprocBatchEnvironmentConfigOutputReference",
-		reflect.TypeOf((*DataprocBatchEnvironmentConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocBatchEnvironmentConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -256,7 +256,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocBatchEnvironmentConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -264,11 +264,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocBatch.DataprocBatchEnvironmentConfigPeripheralsConfig",
-		reflect.TypeOf((*DataprocBatchEnvironmentConfigPeripheralsConfig)(nil)).Elem(),
+		reflect.TypeFor[DataprocBatchEnvironmentConfigPeripheralsConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocBatch.DataprocBatchEnvironmentConfigPeripheralsConfigOutputReference",
-		reflect.TypeOf((*DataprocBatchEnvironmentConfigPeripheralsConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocBatchEnvironmentConfigPeripheralsConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -299,7 +299,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocBatchEnvironmentConfigPeripheralsConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -307,11 +307,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocBatch.DataprocBatchEnvironmentConfigPeripheralsConfigSparkHistoryServerConfig",
-		reflect.TypeOf((*DataprocBatchEnvironmentConfigPeripheralsConfigSparkHistoryServerConfig)(nil)).Elem(),
+		reflect.TypeFor[DataprocBatchEnvironmentConfigPeripheralsConfigSparkHistoryServerConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocBatch.DataprocBatchEnvironmentConfigPeripheralsConfigSparkHistoryServerConfigOutputReference",
-		reflect.TypeOf((*DataprocBatchEnvironmentConfigPeripheralsConfigSparkHistoryServerConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocBatchEnvironmentConfigPeripheralsConfigSparkHistoryServerConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -338,7 +338,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocBatchEnvironmentConfigPeripheralsConfigSparkHistoryServerConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -346,11 +346,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocBatch.DataprocBatchPysparkBatch",
-		reflect.TypeOf((*DataprocBatchPysparkBatch)(nil)).Elem(),
+		reflect.TypeFor[DataprocBatchPysparkBatch](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocBatch.DataprocBatchPysparkBatchOutputReference",
-		reflect.TypeOf((*DataprocBatchPysparkBatchOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocBatchPysparkBatchOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "archiveUris", GoGetter: "ArchiveUris"},
 			_jsii_.MemberProperty{JsiiProperty: "archiveUrisInput", GoGetter: "ArchiveUrisInput"},
@@ -392,7 +392,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocBatchPysparkBatchOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -400,15 +400,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocBatch.DataprocBatchRuntimeConfig",
-		reflect.TypeOf((*DataprocBatchRuntimeConfig)(nil)).Elem(),
+		reflect.TypeFor[DataprocBatchRuntimeConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocBatch.DataprocBatchRuntimeConfigAutotuningConfig",
-		reflect.TypeOf((*DataprocBatchRuntimeConfigAutotuningConfig)(nil)).Elem(),
+		reflect.TypeFor[DataprocBatchRuntimeConfigAutotuningConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocBatch.DataprocBatchRuntimeConfigAutotuningConfigOutputReference",
-		reflect.TypeOf((*DataprocBatchRuntimeConfigAutotuningConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocBatchRuntimeConfigAutotuningConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -435,7 +435,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocBatchRuntimeConfigAutotuningConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -443,7 +443,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocBatch.DataprocBatchRuntimeConfigOutputReference",
-		reflect.TypeOf((*DataprocBatchRuntimeConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocBatchRuntimeConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "autotuningConfig", GoGetter: "AutotuningConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "autotuningConfigInput", GoGetter: "AutotuningConfigInput"},
@@ -484,7 +484,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 			_jsii_.MemberProperty{JsiiProperty: "versionInput", GoGetter: "VersionInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocBatchRuntimeConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -492,15 +492,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocBatch.DataprocBatchRuntimeInfo",
-		reflect.TypeOf((*DataprocBatchRuntimeInfo)(nil)).Elem(),
+		reflect.TypeFor[DataprocBatchRuntimeInfo](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocBatch.DataprocBatchRuntimeInfoApproximateUsage",
-		reflect.TypeOf((*DataprocBatchRuntimeInfoApproximateUsage)(nil)).Elem(),
+		reflect.TypeFor[DataprocBatchRuntimeInfoApproximateUsage](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocBatch.DataprocBatchRuntimeInfoApproximateUsageList",
-		reflect.TypeOf((*DataprocBatchRuntimeInfoApproximateUsageList)(nil)).Elem(),
+		reflect.TypeFor[DataprocBatchRuntimeInfoApproximateUsageList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -513,7 +513,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocBatchRuntimeInfoApproximateUsageList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -521,7 +521,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocBatch.DataprocBatchRuntimeInfoApproximateUsageOutputReference",
-		reflect.TypeOf((*DataprocBatchRuntimeInfoApproximateUsageOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocBatchRuntimeInfoApproximateUsageOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "acceleratorType", GoGetter: "AcceleratorType"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -549,7 +549,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocBatchRuntimeInfoApproximateUsageOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -557,11 +557,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocBatch.DataprocBatchRuntimeInfoCurrentUsage",
-		reflect.TypeOf((*DataprocBatchRuntimeInfoCurrentUsage)(nil)).Elem(),
+		reflect.TypeFor[DataprocBatchRuntimeInfoCurrentUsage](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocBatch.DataprocBatchRuntimeInfoCurrentUsageList",
-		reflect.TypeOf((*DataprocBatchRuntimeInfoCurrentUsageList)(nil)).Elem(),
+		reflect.TypeFor[DataprocBatchRuntimeInfoCurrentUsageList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -574,7 +574,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocBatchRuntimeInfoCurrentUsageList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -582,7 +582,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocBatch.DataprocBatchRuntimeInfoCurrentUsageOutputReference",
-		reflect.TypeOf((*DataprocBatchRuntimeInfoCurrentUsageOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocBatchRuntimeInfoCurrentUsageOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "acceleratorType", GoGetter: "AcceleratorType"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -613,7 +613,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocBatchRuntimeInfoCurrentUsageOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -621,7 +621,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocBatch.DataprocBatchRuntimeInfoList",
-		reflect.TypeOf((*DataprocBatchRuntimeInfoList)(nil)).Elem(),
+		reflect.TypeFor[DataprocBatchRuntimeInfoList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -634,7 +634,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocBatchRuntimeInfoList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -642,7 +642,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocBatch.DataprocBatchRuntimeInfoOutputReference",
-		reflect.TypeOf((*DataprocBatchRuntimeInfoOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocBatchRuntimeInfoOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "approximateUsage", GoGetter: "ApproximateUsage"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -671,7 +671,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocBatchRuntimeInfoOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -679,11 +679,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocBatch.DataprocBatchSparkBatch",
-		reflect.TypeOf((*DataprocBatchSparkBatch)(nil)).Elem(),
+		reflect.TypeFor[DataprocBatchSparkBatch](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocBatch.DataprocBatchSparkBatchOutputReference",
-		reflect.TypeOf((*DataprocBatchSparkBatchOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocBatchSparkBatchOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "archiveUris", GoGetter: "ArchiveUris"},
 			_jsii_.MemberProperty{JsiiProperty: "archiveUrisInput", GoGetter: "ArchiveUrisInput"},
@@ -725,7 +725,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocBatchSparkBatchOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -733,11 +733,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocBatch.DataprocBatchSparkRBatch",
-		reflect.TypeOf((*DataprocBatchSparkRBatch)(nil)).Elem(),
+		reflect.TypeFor[DataprocBatchSparkRBatch](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocBatch.DataprocBatchSparkRBatchOutputReference",
-		reflect.TypeOf((*DataprocBatchSparkRBatchOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocBatchSparkRBatchOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "archiveUris", GoGetter: "ArchiveUris"},
 			_jsii_.MemberProperty{JsiiProperty: "archiveUrisInput", GoGetter: "ArchiveUrisInput"},
@@ -773,7 +773,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocBatchSparkRBatchOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -781,11 +781,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocBatch.DataprocBatchSparkSqlBatch",
-		reflect.TypeOf((*DataprocBatchSparkSqlBatch)(nil)).Elem(),
+		reflect.TypeFor[DataprocBatchSparkSqlBatch](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocBatch.DataprocBatchSparkSqlBatchOutputReference",
-		reflect.TypeOf((*DataprocBatchSparkSqlBatchOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocBatchSparkSqlBatchOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -818,7 +818,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocBatchSparkSqlBatchOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -826,11 +826,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocBatch.DataprocBatchStateHistory",
-		reflect.TypeOf((*DataprocBatchStateHistory)(nil)).Elem(),
+		reflect.TypeFor[DataprocBatchStateHistory](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocBatch.DataprocBatchStateHistoryList",
-		reflect.TypeOf((*DataprocBatchStateHistoryList)(nil)).Elem(),
+		reflect.TypeFor[DataprocBatchStateHistoryList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -843,7 +843,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocBatchStateHistoryList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -851,7 +851,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocBatch.DataprocBatchStateHistoryOutputReference",
-		reflect.TypeOf((*DataprocBatchStateHistoryOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocBatchStateHistoryOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -878,7 +878,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocBatchStateHistoryOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -886,11 +886,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocBatch.DataprocBatchTimeouts",
-		reflect.TypeOf((*DataprocBatchTimeouts)(nil)).Elem(),
+		reflect.TypeFor[DataprocBatchTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocBatch.DataprocBatchTimeoutsOutputReference",
-		reflect.TypeOf((*DataprocBatchTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocBatchTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -923,7 +923,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocBatchTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

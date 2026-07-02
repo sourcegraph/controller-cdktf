@@ -98,7 +98,7 @@ func (i *jsiiProxy_IapWebTypeComputeIamMemberConditionOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_IapWebTypeComputeIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IapWebTypeComputeIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewIapWebTypeComputeIamMemberConditionOutputReferenceParameters(ter
 
 	return nil
 }
-

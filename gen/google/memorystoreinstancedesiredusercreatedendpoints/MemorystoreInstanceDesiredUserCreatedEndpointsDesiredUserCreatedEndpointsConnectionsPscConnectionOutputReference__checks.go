@@ -98,7 +98,7 @@ func (m *jsiiProxy_MemorystoreInstanceDesiredUserCreatedEndpointsDesiredUserCrea
 	return nil
 }
 
-func (j *jsiiProxy_MemorystoreInstanceDesiredUserCreatedEndpointsDesiredUserCreatedEndpointsConnectionsPscConnectionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MemorystoreInstanceDesiredUserCreatedEndpointsDesiredUserCreatedEndpointsConnectionsPscConnectionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -246,4 +246,3 @@ func validateNewMemorystoreInstanceDesiredUserCreatedEndpointsDesiredUserCreated
 
 	return nil
 }
-

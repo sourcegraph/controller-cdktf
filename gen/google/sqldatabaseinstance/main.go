@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstance",
-		reflect.TypeOf((*SqlDatabaseInstance)(nil)).Elem(),
+		reflect.TypeFor[SqlDatabaseInstance](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -143,7 +143,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SqlDatabaseInstance{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -151,11 +151,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceClone",
-		reflect.TypeOf((*SqlDatabaseInstanceClone)(nil)).Elem(),
+		reflect.TypeFor[SqlDatabaseInstanceClone](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceCloneOutputReference",
-		reflect.TypeOf((*SqlDatabaseInstanceCloneOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SqlDatabaseInstanceCloneOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allocatedIpRange", GoGetter: "AllocatedIpRange"},
 			_jsii_.MemberProperty{JsiiProperty: "allocatedIpRangeInput", GoGetter: "AllocatedIpRangeInput"},
@@ -199,7 +199,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SqlDatabaseInstanceCloneOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -207,15 +207,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceConfig",
-		reflect.TypeOf((*SqlDatabaseInstanceConfig)(nil)).Elem(),
+		reflect.TypeFor[SqlDatabaseInstanceConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceDnsNames",
-		reflect.TypeOf((*SqlDatabaseInstanceDnsNames)(nil)).Elem(),
+		reflect.TypeFor[SqlDatabaseInstanceDnsNames](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceDnsNamesList",
-		reflect.TypeOf((*SqlDatabaseInstanceDnsNamesList)(nil)).Elem(),
+		reflect.TypeFor[SqlDatabaseInstanceDnsNamesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -228,7 +228,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SqlDatabaseInstanceDnsNamesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -236,7 +236,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceDnsNamesOutputReference",
-		reflect.TypeOf((*SqlDatabaseInstanceDnsNamesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SqlDatabaseInstanceDnsNamesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -263,7 +263,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SqlDatabaseInstanceDnsNamesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -271,11 +271,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceIpAddress",
-		reflect.TypeOf((*SqlDatabaseInstanceIpAddress)(nil)).Elem(),
+		reflect.TypeFor[SqlDatabaseInstanceIpAddress](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceIpAddressList",
-		reflect.TypeOf((*SqlDatabaseInstanceIpAddressList)(nil)).Elem(),
+		reflect.TypeFor[SqlDatabaseInstanceIpAddressList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -288,7 +288,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SqlDatabaseInstanceIpAddressList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -296,7 +296,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceIpAddressOutputReference",
-		reflect.TypeOf((*SqlDatabaseInstanceIpAddressOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SqlDatabaseInstanceIpAddressOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -323,7 +323,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SqlDatabaseInstanceIpAddressOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -331,11 +331,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContext",
-		reflect.TypeOf((*SqlDatabaseInstancePointInTimeRestoreContext)(nil)).Elem(),
+		reflect.TypeFor[SqlDatabaseInstancePointInTimeRestoreContext](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference",
-		reflect.TypeOf((*SqlDatabaseInstancePointInTimeRestoreContextOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SqlDatabaseInstancePointInTimeRestoreContextOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allocatedIpRange", GoGetter: "AllocatedIpRange"},
 			_jsii_.MemberProperty{JsiiProperty: "allocatedIpRangeInput", GoGetter: "AllocatedIpRangeInput"},
@@ -376,7 +376,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SqlDatabaseInstancePointInTimeRestoreContextOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -384,11 +384,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceReplicaConfiguration",
-		reflect.TypeOf((*SqlDatabaseInstanceReplicaConfiguration)(nil)).Elem(),
+		reflect.TypeFor[SqlDatabaseInstanceReplicaConfiguration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceReplicaConfigurationOutputReference",
-		reflect.TypeOf((*SqlDatabaseInstanceReplicaConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SqlDatabaseInstanceReplicaConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "caCertificate", GoGetter: "CaCertificate"},
 			_jsii_.MemberProperty{JsiiProperty: "caCertificateInput", GoGetter: "CaCertificateInput"},
@@ -448,7 +448,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "verifyServerCertificate", GoGetter: "VerifyServerCertificate"},
 			_jsii_.MemberProperty{JsiiProperty: "verifyServerCertificateInput", GoGetter: "VerifyServerCertificateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SqlDatabaseInstanceReplicaConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -456,11 +456,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceReplicationCluster",
-		reflect.TypeOf((*SqlDatabaseInstanceReplicationCluster)(nil)).Elem(),
+		reflect.TypeFor[SqlDatabaseInstanceReplicationCluster](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceReplicationClusterOutputReference",
-		reflect.TypeOf((*SqlDatabaseInstanceReplicationClusterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SqlDatabaseInstanceReplicationClusterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -491,7 +491,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SqlDatabaseInstanceReplicationClusterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -499,11 +499,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceRestoreBackupContext",
-		reflect.TypeOf((*SqlDatabaseInstanceRestoreBackupContext)(nil)).Elem(),
+		reflect.TypeFor[SqlDatabaseInstanceRestoreBackupContext](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceRestoreBackupContextOutputReference",
-		reflect.TypeOf((*SqlDatabaseInstanceRestoreBackupContextOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SqlDatabaseInstanceRestoreBackupContextOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "backupRunId", GoGetter: "BackupRunId"},
 			_jsii_.MemberProperty{JsiiProperty: "backupRunIdInput", GoGetter: "BackupRunIdInput"},
@@ -535,7 +535,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SqlDatabaseInstanceRestoreBackupContextOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -543,11 +543,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceServerCaCert",
-		reflect.TypeOf((*SqlDatabaseInstanceServerCaCert)(nil)).Elem(),
+		reflect.TypeFor[SqlDatabaseInstanceServerCaCert](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceServerCaCertList",
-		reflect.TypeOf((*SqlDatabaseInstanceServerCaCertList)(nil)).Elem(),
+		reflect.TypeFor[SqlDatabaseInstanceServerCaCertList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -560,7 +560,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SqlDatabaseInstanceServerCaCertList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -568,7 +568,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceServerCaCertOutputReference",
-		reflect.TypeOf((*SqlDatabaseInstanceServerCaCertOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SqlDatabaseInstanceServerCaCertOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cert", GoGetter: "Cert"},
 			_jsii_.MemberProperty{JsiiProperty: "commonName", GoGetter: "CommonName"},
@@ -597,7 +597,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SqlDatabaseInstanceServerCaCertOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -605,15 +605,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettings",
-		reflect.TypeOf((*SqlDatabaseInstanceSettings)(nil)).Elem(),
+		reflect.TypeFor[SqlDatabaseInstanceSettings](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsActiveDirectoryConfig",
-		reflect.TypeOf((*SqlDatabaseInstanceSettingsActiveDirectoryConfig)(nil)).Elem(),
+		reflect.TypeFor[SqlDatabaseInstanceSettingsActiveDirectoryConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsActiveDirectoryConfigOutputReference",
-		reflect.TypeOf((*SqlDatabaseInstanceSettingsActiveDirectoryConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SqlDatabaseInstanceSettingsActiveDirectoryConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -639,7 +639,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SqlDatabaseInstanceSettingsActiveDirectoryConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -647,11 +647,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsAdvancedMachineFeatures",
-		reflect.TypeOf((*SqlDatabaseInstanceSettingsAdvancedMachineFeatures)(nil)).Elem(),
+		reflect.TypeFor[SqlDatabaseInstanceSettingsAdvancedMachineFeatures](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsAdvancedMachineFeaturesOutputReference",
-		reflect.TypeOf((*SqlDatabaseInstanceSettingsAdvancedMachineFeaturesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SqlDatabaseInstanceSettingsAdvancedMachineFeaturesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -678,7 +678,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "threadsPerCoreInput", GoGetter: "ThreadsPerCoreInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SqlDatabaseInstanceSettingsAdvancedMachineFeaturesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -686,15 +686,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsBackupConfiguration",
-		reflect.TypeOf((*SqlDatabaseInstanceSettingsBackupConfiguration)(nil)).Elem(),
+		reflect.TypeFor[SqlDatabaseInstanceSettingsBackupConfiguration](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsBackupConfigurationBackupRetentionSettings",
-		reflect.TypeOf((*SqlDatabaseInstanceSettingsBackupConfigurationBackupRetentionSettings)(nil)).Elem(),
+		reflect.TypeFor[SqlDatabaseInstanceSettingsBackupConfigurationBackupRetentionSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsBackupConfigurationBackupRetentionSettingsOutputReference",
-		reflect.TypeOf((*SqlDatabaseInstanceSettingsBackupConfigurationBackupRetentionSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SqlDatabaseInstanceSettingsBackupConfigurationBackupRetentionSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -723,7 +723,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationBackupRetentionSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -731,7 +731,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsBackupConfigurationOutputReference",
-		reflect.TypeOf((*SqlDatabaseInstanceSettingsBackupConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SqlDatabaseInstanceSettingsBackupConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "backupRetentionSettings", GoGetter: "BackupRetentionSettings"},
 			_jsii_.MemberProperty{JsiiProperty: "backupRetentionSettingsInput", GoGetter: "BackupRetentionSettingsInput"},
@@ -778,7 +778,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "transactionLogRetentionDays", GoGetter: "TransactionLogRetentionDays"},
 			_jsii_.MemberProperty{JsiiProperty: "transactionLogRetentionDaysInput", GoGetter: "TransactionLogRetentionDaysInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -786,15 +786,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfig",
-		reflect.TypeOf((*SqlDatabaseInstanceSettingsConnectionPoolConfig)(nil)).Elem(),
+		reflect.TypeFor[SqlDatabaseInstanceSettingsConnectionPoolConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfigFlags",
-		reflect.TypeOf((*SqlDatabaseInstanceSettingsConnectionPoolConfigFlags)(nil)).Elem(),
+		reflect.TypeFor[SqlDatabaseInstanceSettingsConnectionPoolConfigFlags](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfigFlagsList",
-		reflect.TypeOf((*SqlDatabaseInstanceSettingsConnectionPoolConfigFlagsList)(nil)).Elem(),
+		reflect.TypeFor[SqlDatabaseInstanceSettingsConnectionPoolConfigFlagsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -808,7 +808,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SqlDatabaseInstanceSettingsConnectionPoolConfigFlagsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -816,7 +816,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfigFlagsOutputReference",
-		reflect.TypeOf((*SqlDatabaseInstanceSettingsConnectionPoolConfigFlagsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SqlDatabaseInstanceSettingsConnectionPoolConfigFlagsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -844,7 +844,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SqlDatabaseInstanceSettingsConnectionPoolConfigFlagsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -852,7 +852,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfigList",
-		reflect.TypeOf((*SqlDatabaseInstanceSettingsConnectionPoolConfigList)(nil)).Elem(),
+		reflect.TypeFor[SqlDatabaseInstanceSettingsConnectionPoolConfigList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -866,7 +866,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SqlDatabaseInstanceSettingsConnectionPoolConfigList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -874,7 +874,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfigOutputReference",
-		reflect.TypeOf((*SqlDatabaseInstanceSettingsConnectionPoolConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SqlDatabaseInstanceSettingsConnectionPoolConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -905,7 +905,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SqlDatabaseInstanceSettingsConnectionPoolConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -913,11 +913,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDataCacheConfig",
-		reflect.TypeOf((*SqlDatabaseInstanceSettingsDataCacheConfig)(nil)).Elem(),
+		reflect.TypeFor[SqlDatabaseInstanceSettingsDataCacheConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDataCacheConfigOutputReference",
-		reflect.TypeOf((*SqlDatabaseInstanceSettingsDataCacheConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SqlDatabaseInstanceSettingsDataCacheConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -944,7 +944,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SqlDatabaseInstanceSettingsDataCacheConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -952,11 +952,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDatabaseFlags",
-		reflect.TypeOf((*SqlDatabaseInstanceSettingsDatabaseFlags)(nil)).Elem(),
+		reflect.TypeFor[SqlDatabaseInstanceSettingsDatabaseFlags](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDatabaseFlagsList",
-		reflect.TypeOf((*SqlDatabaseInstanceSettingsDatabaseFlagsList)(nil)).Elem(),
+		reflect.TypeFor[SqlDatabaseInstanceSettingsDatabaseFlagsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -970,7 +970,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SqlDatabaseInstanceSettingsDatabaseFlagsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -978,7 +978,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDatabaseFlagsOutputReference",
-		reflect.TypeOf((*SqlDatabaseInstanceSettingsDatabaseFlagsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SqlDatabaseInstanceSettingsDatabaseFlagsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1006,7 +1006,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SqlDatabaseInstanceSettingsDatabaseFlagsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1014,11 +1014,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDenyMaintenancePeriod",
-		reflect.TypeOf((*SqlDatabaseInstanceSettingsDenyMaintenancePeriod)(nil)).Elem(),
+		reflect.TypeFor[SqlDatabaseInstanceSettingsDenyMaintenancePeriod](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDenyMaintenancePeriodOutputReference",
-		reflect.TypeOf((*SqlDatabaseInstanceSettingsDenyMaintenancePeriodOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SqlDatabaseInstanceSettingsDenyMaintenancePeriodOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1048,7 +1048,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "timeInput", GoGetter: "TimeInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SqlDatabaseInstanceSettingsDenyMaintenancePeriodOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1056,11 +1056,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsEntraidConfig",
-		reflect.TypeOf((*SqlDatabaseInstanceSettingsEntraidConfig)(nil)).Elem(),
+		reflect.TypeFor[SqlDatabaseInstanceSettingsEntraidConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsEntraidConfigOutputReference",
-		reflect.TypeOf((*SqlDatabaseInstanceSettingsEntraidConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SqlDatabaseInstanceSettingsEntraidConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "applicationId", GoGetter: "ApplicationId"},
 			_jsii_.MemberProperty{JsiiProperty: "applicationIdInput", GoGetter: "ApplicationIdInput"},
@@ -1090,7 +1090,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SqlDatabaseInstanceSettingsEntraidConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1098,11 +1098,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsFinalBackupConfig",
-		reflect.TypeOf((*SqlDatabaseInstanceSettingsFinalBackupConfig)(nil)).Elem(),
+		reflect.TypeFor[SqlDatabaseInstanceSettingsFinalBackupConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsFinalBackupConfigOutputReference",
-		reflect.TypeOf((*SqlDatabaseInstanceSettingsFinalBackupConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SqlDatabaseInstanceSettingsFinalBackupConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1132,7 +1132,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SqlDatabaseInstanceSettingsFinalBackupConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1140,11 +1140,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsInsightsConfig",
-		reflect.TypeOf((*SqlDatabaseInstanceSettingsInsightsConfig)(nil)).Elem(),
+		reflect.TypeFor[SqlDatabaseInstanceSettingsInsightsConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsInsightsConfigOutputReference",
-		reflect.TypeOf((*SqlDatabaseInstanceSettingsInsightsConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SqlDatabaseInstanceSettingsInsightsConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1186,7 +1186,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1194,15 +1194,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfiguration",
-		reflect.TypeOf((*SqlDatabaseInstanceSettingsIpConfiguration)(nil)).Elem(),
+		reflect.TypeFor[SqlDatabaseInstanceSettingsIpConfiguration](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks",
-		reflect.TypeOf((*SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks)(nil)).Elem(),
+		reflect.TypeFor[SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksList",
-		reflect.TypeOf((*SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksList)(nil)).Elem(),
+		reflect.TypeFor[SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1216,7 +1216,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1224,7 +1224,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksOutputReference",
-		reflect.TypeOf((*SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1256,7 +1256,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1264,7 +1264,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationOutputReference",
-		reflect.TypeOf((*SqlDatabaseInstanceSettingsIpConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SqlDatabaseInstanceSettingsIpConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allocatedIpRange", GoGetter: "AllocatedIpRange"},
 			_jsii_.MemberProperty{JsiiProperty: "allocatedIpRangeInput", GoGetter: "AllocatedIpRangeInput"},
@@ -1323,7 +1323,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1331,11 +1331,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfig",
-		reflect.TypeOf((*SqlDatabaseInstanceSettingsIpConfigurationPscConfig)(nil)).Elem(),
+		reflect.TypeFor[SqlDatabaseInstanceSettingsIpConfigurationPscConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigList",
-		reflect.TypeOf((*SqlDatabaseInstanceSettingsIpConfigurationPscConfigList)(nil)).Elem(),
+		reflect.TypeFor[SqlDatabaseInstanceSettingsIpConfigurationPscConfigList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1349,7 +1349,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationPscConfigList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1357,7 +1357,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigOutputReference",
-		reflect.TypeOf((*SqlDatabaseInstanceSettingsIpConfigurationPscConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SqlDatabaseInstanceSettingsIpConfigurationPscConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedConsumerProjects", GoGetter: "AllowedConsumerProjects"},
 			_jsii_.MemberProperty{JsiiProperty: "allowedConsumerProjectsInput", GoGetter: "AllowedConsumerProjectsInput"},
@@ -1394,7 +1394,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationPscConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1402,11 +1402,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnections",
-		reflect.TypeOf((*SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnections)(nil)).Elem(),
+		reflect.TypeFor[SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnections](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsList",
-		reflect.TypeOf((*SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsList)(nil)).Elem(),
+		reflect.TypeFor[SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1420,7 +1420,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1428,7 +1428,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsOutputReference",
-		reflect.TypeOf((*SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1460,7 +1460,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1468,11 +1468,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsLocationPreference",
-		reflect.TypeOf((*SqlDatabaseInstanceSettingsLocationPreference)(nil)).Elem(),
+		reflect.TypeFor[SqlDatabaseInstanceSettingsLocationPreference](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsLocationPreferenceOutputReference",
-		reflect.TypeOf((*SqlDatabaseInstanceSettingsLocationPreferenceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SqlDatabaseInstanceSettingsLocationPreferenceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1505,7 +1505,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zone", GoGetter: "Zone"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneInput", GoGetter: "ZoneInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SqlDatabaseInstanceSettingsLocationPreferenceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1513,11 +1513,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsMaintenanceWindow",
-		reflect.TypeOf((*SqlDatabaseInstanceSettingsMaintenanceWindow)(nil)).Elem(),
+		reflect.TypeFor[SqlDatabaseInstanceSettingsMaintenanceWindow](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsMaintenanceWindowOutputReference",
-		reflect.TypeOf((*SqlDatabaseInstanceSettingsMaintenanceWindowOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SqlDatabaseInstanceSettingsMaintenanceWindowOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1550,7 +1550,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "updateTrack", GoGetter: "UpdateTrack"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTrackInput", GoGetter: "UpdateTrackInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SqlDatabaseInstanceSettingsMaintenanceWindowOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1558,7 +1558,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference",
-		reflect.TypeOf((*SqlDatabaseInstanceSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SqlDatabaseInstanceSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "activationPolicy", GoGetter: "ActivationPolicy"},
 			_jsii_.MemberProperty{JsiiProperty: "activationPolicyInput", GoGetter: "ActivationPolicyInput"},
@@ -1704,7 +1704,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userLabelsInput", GoGetter: "UserLabelsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SqlDatabaseInstanceSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1712,11 +1712,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsPasswordValidationPolicy",
-		reflect.TypeOf((*SqlDatabaseInstanceSettingsPasswordValidationPolicy)(nil)).Elem(),
+		reflect.TypeFor[SqlDatabaseInstanceSettingsPasswordValidationPolicy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsPasswordValidationPolicyOutputReference",
-		reflect.TypeOf((*SqlDatabaseInstanceSettingsPasswordValidationPolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SqlDatabaseInstanceSettingsPasswordValidationPolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexity", GoGetter: "Complexity"},
 			_jsii_.MemberProperty{JsiiProperty: "complexityInput", GoGetter: "ComplexityInput"},
@@ -1757,7 +1757,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SqlDatabaseInstanceSettingsPasswordValidationPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1765,11 +1765,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfig",
-		reflect.TypeOf((*SqlDatabaseInstanceSettingsReadPoolAutoScaleConfig)(nil)).Elem(),
+		reflect.TypeFor[SqlDatabaseInstanceSettingsReadPoolAutoScaleConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference",
-		reflect.TypeOf((*SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1815,7 +1815,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1823,11 +1823,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetrics",
-		reflect.TypeOf((*SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetrics)(nil)).Elem(),
+		reflect.TypeFor[SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetrics](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsList",
-		reflect.TypeOf((*SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsList)(nil)).Elem(),
+		reflect.TypeFor[SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1841,7 +1841,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1849,7 +1849,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsOutputReference",
-		reflect.TypeOf((*SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1879,7 +1879,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1887,11 +1887,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsSqlServerAuditConfig",
-		reflect.TypeOf((*SqlDatabaseInstanceSettingsSqlServerAuditConfig)(nil)).Elem(),
+		reflect.TypeFor[SqlDatabaseInstanceSettingsSqlServerAuditConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsSqlServerAuditConfigOutputReference",
-		reflect.TypeOf((*SqlDatabaseInstanceSettingsSqlServerAuditConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SqlDatabaseInstanceSettingsSqlServerAuditConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucket", GoGetter: "Bucket"},
 			_jsii_.MemberProperty{JsiiProperty: "bucketInput", GoGetter: "BucketInput"},
@@ -1924,7 +1924,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uploadInterval", GoGetter: "UploadInterval"},
 			_jsii_.MemberProperty{JsiiProperty: "uploadIntervalInput", GoGetter: "UploadIntervalInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SqlDatabaseInstanceSettingsSqlServerAuditConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1932,11 +1932,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceTimeouts",
-		reflect.TypeOf((*SqlDatabaseInstanceTimeouts)(nil)).Elem(),
+		reflect.TypeFor[SqlDatabaseInstanceTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceTimeoutsOutputReference",
-		reflect.TypeOf((*SqlDatabaseInstanceTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SqlDatabaseInstanceTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1969,7 +1969,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SqlDatabaseInstanceTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -34,7 +34,7 @@ func (b *jsiiProxy_BiglakeIcebergTableSchemaFieldsList) validateResolveParameter
 	return nil
 }
 
-func (j *jsiiProxy_BiglakeIcebergTableSchemaFieldsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_BiglakeIcebergTableSchemaFieldsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewBiglakeIcebergTableSchemaFieldsListParameters(terraformResource 
 
 	return nil
 }
-

@@ -12,9 +12,9 @@ type IdentityPlatformConfigSignInPhoneNumberOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,9 +25,9 @@ type IdentityPlatformConfigSignInPhoneNumberOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *IdentityPlatformConfigSignInPhoneNumber
@@ -46,7 +46,7 @@ type IdentityPlatformConfigSignInPhoneNumberOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -70,7 +70,7 @@ type IdentityPlatformConfigSignInPhoneNumberOutputReference interface {
 	ResetTestPhoneNumbers()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,8 +83,8 @@ type jsiiProxy_IdentityPlatformConfigSignInPhoneNumberOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_IdentityPlatformConfigSignInPhoneNumberOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IdentityPlatformConfigSignInPhoneNumberOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -113,8 +113,8 @@ func (j *jsiiProxy_IdentityPlatformConfigSignInPhoneNumberOutputReference) Creat
 	return returns
 }
 
-func (j *jsiiProxy_IdentityPlatformConfigSignInPhoneNumberOutputReference) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IdentityPlatformConfigSignInPhoneNumberOutputReference) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -123,8 +123,8 @@ func (j *jsiiProxy_IdentityPlatformConfigSignInPhoneNumberOutputReference) Enabl
 	return returns
 }
 
-func (j *jsiiProxy_IdentityPlatformConfigSignInPhoneNumberOutputReference) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IdentityPlatformConfigSignInPhoneNumberOutputReference) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -193,7 +193,6 @@ func (j *jsiiProxy_IdentityPlatformConfigSignInPhoneNumberOutputReference) TestP
 	return returns
 }
 
-
 func NewIdentityPlatformConfigSignInPhoneNumberOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) IdentityPlatformConfigSignInPhoneNumberOutputReference {
 	_init_.Initialize()
 
@@ -204,7 +203,7 @@ func NewIdentityPlatformConfigSignInPhoneNumberOutputReference(terraformResource
 
 	_jsii_.Create(
 		"@cdktf/provider-google.identityPlatformConfig.IdentityPlatformConfigSignInPhoneNumberOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -216,12 +215,12 @@ func NewIdentityPlatformConfigSignInPhoneNumberOutputReference_Override(i Identi
 
 	_jsii_.Create(
 		"@cdktf/provider-google.identityPlatformConfig.IdentityPlatformConfigSignInPhoneNumberOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		i,
 	)
 }
 
-func (j *jsiiProxy_IdentityPlatformConfigSignInPhoneNumberOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_IdentityPlatformConfigSignInPhoneNumberOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -232,7 +231,7 @@ func (j *jsiiProxy_IdentityPlatformConfigSignInPhoneNumberOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_IdentityPlatformConfigSignInPhoneNumberOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_IdentityPlatformConfigSignInPhoneNumberOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -243,7 +242,7 @@ func (j *jsiiProxy_IdentityPlatformConfigSignInPhoneNumberOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_IdentityPlatformConfigSignInPhoneNumberOutputReference)SetEnabled(val interface{}) {
+func (j *jsiiProxy_IdentityPlatformConfigSignInPhoneNumberOutputReference) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_IdentityPlatformConfigSignInPhoneNumberOutputReference)SetEna
 	)
 }
 
-func (j *jsiiProxy_IdentityPlatformConfigSignInPhoneNumberOutputReference)SetInternalValue(val *IdentityPlatformConfigSignInPhoneNumber) {
+func (j *jsiiProxy_IdentityPlatformConfigSignInPhoneNumberOutputReference) SetInternalValue(val *IdentityPlatformConfigSignInPhoneNumber) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_IdentityPlatformConfigSignInPhoneNumberOutputReference)SetInt
 	)
 }
 
-func (j *jsiiProxy_IdentityPlatformConfigSignInPhoneNumberOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_IdentityPlatformConfigSignInPhoneNumberOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_IdentityPlatformConfigSignInPhoneNumberOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_IdentityPlatformConfigSignInPhoneNumberOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_IdentityPlatformConfigSignInPhoneNumberOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,7 +286,7 @@ func (j *jsiiProxy_IdentityPlatformConfigSignInPhoneNumberOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_IdentityPlatformConfigSignInPhoneNumberOutputReference)SetTestPhoneNumbers(val *map[string]*string) {
+func (j *jsiiProxy_IdentityPlatformConfigSignInPhoneNumberOutputReference) SetTestPhoneNumbers(val *map[string]*string) {
 	if err := j.validateSetTestPhoneNumbersParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,16 +310,16 @@ func (i *jsiiProxy_IdentityPlatformConfigSignInPhoneNumberOutputReference) Compu
 	return returns
 }
 
-func (i *jsiiProxy_IdentityPlatformConfigSignInPhoneNumberOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_IdentityPlatformConfigSignInPhoneNumberOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -336,7 +335,7 @@ func (i *jsiiProxy_IdentityPlatformConfigSignInPhoneNumberOutputReference) GetBo
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -352,7 +351,7 @@ func (i *jsiiProxy_IdentityPlatformConfigSignInPhoneNumberOutputReference) GetBo
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -368,7 +367,7 @@ func (i *jsiiProxy_IdentityPlatformConfigSignInPhoneNumberOutputReference) GetLi
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -384,7 +383,7 @@ func (i *jsiiProxy_IdentityPlatformConfigSignInPhoneNumberOutputReference) GetNu
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -400,7 +399,7 @@ func (i *jsiiProxy_IdentityPlatformConfigSignInPhoneNumberOutputReference) GetNu
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -416,7 +415,7 @@ func (i *jsiiProxy_IdentityPlatformConfigSignInPhoneNumberOutputReference) GetNu
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -432,7 +431,7 @@ func (i *jsiiProxy_IdentityPlatformConfigSignInPhoneNumberOutputReference) GetSt
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -448,7 +447,7 @@ func (i *jsiiProxy_IdentityPlatformConfigSignInPhoneNumberOutputReference) GetSt
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -477,7 +476,7 @@ func (i *jsiiProxy_IdentityPlatformConfigSignInPhoneNumberOutputReference) Inter
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -492,16 +491,16 @@ func (i *jsiiProxy_IdentityPlatformConfigSignInPhoneNumberOutputReference) Reset
 	)
 }
 
-func (i *jsiiProxy_IdentityPlatformConfigSignInPhoneNumberOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (i *jsiiProxy_IdentityPlatformConfigSignInPhoneNumberOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := i.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -520,4 +519,3 @@ func (i *jsiiProxy_IdentityPlatformConfigSignInPhoneNumberOutputReference) ToStr
 
 	return returns
 }
-

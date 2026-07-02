@@ -12,9 +12,9 @@ type ComputeImageShieldedInstanceInitialStateOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -26,15 +26,15 @@ type ComputeImageShieldedInstanceInitialStateOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	Dbs() ComputeImageShieldedInstanceInitialStateDbsList
-	DbsInput() interface{}
+	DbsInput() any
 	Dbxs() ComputeImageShieldedInstanceInitialStateDbxsList
-	DbxsInput() interface{}
+	DbxsInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *ComputeImageShieldedInstanceInitialState
 	SetInternalValue(val *ComputeImageShieldedInstanceInitialState)
 	Keks() ComputeImageShieldedInstanceInitialStateKeksList
-	KeksInput() interface{}
+	KeksInput() any
 	Pk() ComputeImageShieldedInstanceInitialStatePkOutputReference
 	PkInput() *ComputeImageShieldedInstanceInitialStatePk
 	// Experimental.
@@ -48,7 +48,7 @@ type ComputeImageShieldedInstanceInitialStateOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -69,9 +69,9 @@ type ComputeImageShieldedInstanceInitialStateOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutDbs(value interface{})
-	PutDbxs(value interface{})
-	PutKeks(value interface{})
+	PutDbs(value any)
+	PutDbxs(value any)
+	PutKeks(value any)
 	PutPk(value *ComputeImageShieldedInstanceInitialStatePk)
 	ResetDbs()
 	ResetDbxs()
@@ -79,7 +79,7 @@ type ComputeImageShieldedInstanceInitialStateOutputReference interface {
 	ResetPk()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,8 +92,8 @@ type jsiiProxy_ComputeImageShieldedInstanceInitialStateOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ComputeImageShieldedInstanceInitialStateOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeImageShieldedInstanceInitialStateOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -132,8 +132,8 @@ func (j *jsiiProxy_ComputeImageShieldedInstanceInitialStateOutputReference) Dbs(
 	return returns
 }
 
-func (j *jsiiProxy_ComputeImageShieldedInstanceInitialStateOutputReference) DbsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeImageShieldedInstanceInitialStateOutputReference) DbsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"dbsInput",
@@ -152,8 +152,8 @@ func (j *jsiiProxy_ComputeImageShieldedInstanceInitialStateOutputReference) Dbxs
 	return returns
 }
 
-func (j *jsiiProxy_ComputeImageShieldedInstanceInitialStateOutputReference) DbxsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeImageShieldedInstanceInitialStateOutputReference) DbxsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"dbxsInput",
@@ -192,8 +192,8 @@ func (j *jsiiProxy_ComputeImageShieldedInstanceInitialStateOutputReference) Keks
 	return returns
 }
 
-func (j *jsiiProxy_ComputeImageShieldedInstanceInitialStateOutputReference) KeksInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeImageShieldedInstanceInitialStateOutputReference) KeksInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"keksInput",
@@ -242,7 +242,6 @@ func (j *jsiiProxy_ComputeImageShieldedInstanceInitialStateOutputReference) Terr
 	return returns
 }
 
-
 func NewComputeImageShieldedInstanceInitialStateOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ComputeImageShieldedInstanceInitialStateOutputReference {
 	_init_.Initialize()
 
@@ -253,7 +252,7 @@ func NewComputeImageShieldedInstanceInitialStateOutputReference(terraformResourc
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeImage.ComputeImageShieldedInstanceInitialStateOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -265,12 +264,12 @@ func NewComputeImageShieldedInstanceInitialStateOutputReference_Override(c Compu
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeImage.ComputeImageShieldedInstanceInitialStateOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputeImageShieldedInstanceInitialStateOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ComputeImageShieldedInstanceInitialStateOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,7 +280,7 @@ func (j *jsiiProxy_ComputeImageShieldedInstanceInitialStateOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_ComputeImageShieldedInstanceInitialStateOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ComputeImageShieldedInstanceInitialStateOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,7 +291,7 @@ func (j *jsiiProxy_ComputeImageShieldedInstanceInitialStateOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_ComputeImageShieldedInstanceInitialStateOutputReference)SetInternalValue(val *ComputeImageShieldedInstanceInitialState) {
+func (j *jsiiProxy_ComputeImageShieldedInstanceInitialStateOutputReference) SetInternalValue(val *ComputeImageShieldedInstanceInitialState) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_ComputeImageShieldedInstanceInitialStateOutputReference)SetIn
 	)
 }
 
-func (j *jsiiProxy_ComputeImageShieldedInstanceInitialStateOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ComputeImageShieldedInstanceInitialStateOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_ComputeImageShieldedInstanceInitialStateOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_ComputeImageShieldedInstanceInitialStateOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeImageShieldedInstanceInitialStateOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,16 +337,16 @@ func (c *jsiiProxy_ComputeImageShieldedInstanceInitialStateOutputReference) Comp
 	return returns
 }
 
-func (c *jsiiProxy_ComputeImageShieldedInstanceInitialStateOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComputeImageShieldedInstanceInitialStateOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -363,7 +362,7 @@ func (c *jsiiProxy_ComputeImageShieldedInstanceInitialStateOutputReference) GetB
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -379,7 +378,7 @@ func (c *jsiiProxy_ComputeImageShieldedInstanceInitialStateOutputReference) GetB
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -395,7 +394,7 @@ func (c *jsiiProxy_ComputeImageShieldedInstanceInitialStateOutputReference) GetL
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -411,7 +410,7 @@ func (c *jsiiProxy_ComputeImageShieldedInstanceInitialStateOutputReference) GetN
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -427,7 +426,7 @@ func (c *jsiiProxy_ComputeImageShieldedInstanceInitialStateOutputReference) GetN
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -443,7 +442,7 @@ func (c *jsiiProxy_ComputeImageShieldedInstanceInitialStateOutputReference) GetN
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -459,7 +458,7 @@ func (c *jsiiProxy_ComputeImageShieldedInstanceInitialStateOutputReference) GetS
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -475,7 +474,7 @@ func (c *jsiiProxy_ComputeImageShieldedInstanceInitialStateOutputReference) GetS
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -504,43 +503,43 @@ func (c *jsiiProxy_ComputeImageShieldedInstanceInitialStateOutputReference) Inte
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ComputeImageShieldedInstanceInitialStateOutputReference) PutDbs(value interface{}) {
+func (c *jsiiProxy_ComputeImageShieldedInstanceInitialStateOutputReference) PutDbs(value any) {
 	if err := c.validatePutDbsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putDbs",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_ComputeImageShieldedInstanceInitialStateOutputReference) PutDbxs(value interface{}) {
+func (c *jsiiProxy_ComputeImageShieldedInstanceInitialStateOutputReference) PutDbxs(value any) {
 	if err := c.validatePutDbxsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putDbxs",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_ComputeImageShieldedInstanceInitialStateOutputReference) PutKeks(value interface{}) {
+func (c *jsiiProxy_ComputeImageShieldedInstanceInitialStateOutputReference) PutKeks(value any) {
 	if err := c.validatePutKeksParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putKeks",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -551,7 +550,7 @@ func (c *jsiiProxy_ComputeImageShieldedInstanceInitialStateOutputReference) PutP
 	_jsii_.InvokeVoid(
 		c,
 		"putPk",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -587,16 +586,16 @@ func (c *jsiiProxy_ComputeImageShieldedInstanceInitialStateOutputReference) Rese
 	)
 }
 
-func (c *jsiiProxy_ComputeImageShieldedInstanceInitialStateOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ComputeImageShieldedInstanceInitialStateOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -615,4 +614,3 @@ func (c *jsiiProxy_ComputeImageShieldedInstanceInitialStateOutputReference) ToSt
 
 	return returns
 }
-

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GkeonpremVmwareClusterStatusConditionsOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_GkeonpremVmwareClusterStatusConditionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GkeonpremVmwareClusterStatusConditionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGkeonpremVmwareClusterStatusConditionsOutputReferenceParameters(
 
 	return nil
 }
-

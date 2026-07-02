@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeHubMembership.GkeHubMembership",
-		reflect.TypeOf((*GkeHubMembership)(nil)).Elem(),
+		reflect.TypeFor[GkeHubMembership](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -82,7 +82,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeHubMembership{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -90,11 +90,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.gkeHubMembership.GkeHubMembershipAuthority",
-		reflect.TypeOf((*GkeHubMembershipAuthority)(nil)).Elem(),
+		reflect.TypeFor[GkeHubMembershipAuthority](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeHubMembership.GkeHubMembershipAuthorityOutputReference",
-		reflect.TypeOf((*GkeHubMembershipAuthorityOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GkeHubMembershipAuthorityOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -120,7 +120,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeHubMembershipAuthorityOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -128,19 +128,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.gkeHubMembership.GkeHubMembershipConfig",
-		reflect.TypeOf((*GkeHubMembershipConfig)(nil)).Elem(),
+		reflect.TypeFor[GkeHubMembershipConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.gkeHubMembership.GkeHubMembershipEndpoint",
-		reflect.TypeOf((*GkeHubMembershipEndpoint)(nil)).Elem(),
+		reflect.TypeFor[GkeHubMembershipEndpoint](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.gkeHubMembership.GkeHubMembershipEndpointGkeCluster",
-		reflect.TypeOf((*GkeHubMembershipEndpointGkeCluster)(nil)).Elem(),
+		reflect.TypeFor[GkeHubMembershipEndpointGkeCluster](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeHubMembership.GkeHubMembershipEndpointGkeClusterOutputReference",
-		reflect.TypeOf((*GkeHubMembershipEndpointGkeClusterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GkeHubMembershipEndpointGkeClusterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -166,7 +166,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeHubMembershipEndpointGkeClusterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -174,7 +174,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeHubMembership.GkeHubMembershipEndpointOutputReference",
-		reflect.TypeOf((*GkeHubMembershipEndpointOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GkeHubMembershipEndpointOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -202,7 +202,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeHubMembershipEndpointOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -210,11 +210,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.gkeHubMembership.GkeHubMembershipTimeouts",
-		reflect.TypeOf((*GkeHubMembershipTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GkeHubMembershipTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeHubMembership.GkeHubMembershipTimeoutsOutputReference",
-		reflect.TypeOf((*GkeHubMembershipTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GkeHubMembershipTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -247,7 +247,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeHubMembershipTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

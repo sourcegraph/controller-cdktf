@@ -142,7 +142,7 @@ func (c *jsiiProxy_CesExampleMessagesChunksOutputReference) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_CesExampleMessagesChunksOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CesExampleMessagesChunksOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -207,7 +207,7 @@ func (j *jsiiProxy_CesExampleMessagesChunksOutputReference) validateSetComplexOb
 	return nil
 }
 
-func (j *jsiiProxy_CesExampleMessagesChunksOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CesExampleMessagesChunksOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -282,4 +282,3 @@ func validateNewCesExampleMessagesChunksOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

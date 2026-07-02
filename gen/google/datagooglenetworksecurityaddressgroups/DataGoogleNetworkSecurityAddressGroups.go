@@ -16,11 +16,11 @@ type DataGoogleNetworkSecurityAddressGroups interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -56,17 +56,17 @@ type DataGoogleNetworkSecurityAddressGroups interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -94,18 +94,18 @@ type DataGoogleNetworkSecurityAddressGroups interface {
 	ResetOverrideLogicalId()
 	ResetParent()
 	ResetProject()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataGoogleNetworkSecurityAddressGroups
@@ -133,8 +133,8 @@ func (j *jsiiProxy_DataGoogleNetworkSecurityAddressGroups) CdktfStack() cdktf.Te
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleNetworkSecurityAddressGroups) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleNetworkSecurityAddressGroups) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -143,8 +143,8 @@ func (j *jsiiProxy_DataGoogleNetworkSecurityAddressGroups) ConstructNodeMetadata
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleNetworkSecurityAddressGroups) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleNetworkSecurityAddressGroups) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -303,8 +303,8 @@ func (j *jsiiProxy_DataGoogleNetworkSecurityAddressGroups) Provider() cdktf.Terr
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleNetworkSecurityAddressGroups) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleNetworkSecurityAddressGroups) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -323,8 +323,8 @@ func (j *jsiiProxy_DataGoogleNetworkSecurityAddressGroups) TerraformGeneratorMet
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleNetworkSecurityAddressGroups) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleNetworkSecurityAddressGroups) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -343,7 +343,6 @@ func (j *jsiiProxy_DataGoogleNetworkSecurityAddressGroups) TerraformResourceType
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/network_security_address_groups google_network_security_address_groups} Data Source.
 func NewDataGoogleNetworkSecurityAddressGroups(scope constructs.Construct, id *string, config *DataGoogleNetworkSecurityAddressGroupsConfig) DataGoogleNetworkSecurityAddressGroups {
 	_init_.Initialize()
@@ -355,7 +354,7 @@ func NewDataGoogleNetworkSecurityAddressGroups(scope constructs.Construct, id *s
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleNetworkSecurityAddressGroups.DataGoogleNetworkSecurityAddressGroups",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -368,12 +367,12 @@ func NewDataGoogleNetworkSecurityAddressGroups_Override(d DataGoogleNetworkSecur
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleNetworkSecurityAddressGroups.DataGoogleNetworkSecurityAddressGroups",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataGoogleNetworkSecurityAddressGroups)SetCount(val interface{}) {
+func (j *jsiiProxy_DataGoogleNetworkSecurityAddressGroups) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -384,7 +383,7 @@ func (j *jsiiProxy_DataGoogleNetworkSecurityAddressGroups)SetCount(val interface
 	)
 }
 
-func (j *jsiiProxy_DataGoogleNetworkSecurityAddressGroups)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataGoogleNetworkSecurityAddressGroups) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -392,7 +391,7 @@ func (j *jsiiProxy_DataGoogleNetworkSecurityAddressGroups)SetDependsOn(val *[]*s
 	)
 }
 
-func (j *jsiiProxy_DataGoogleNetworkSecurityAddressGroups)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGoogleNetworkSecurityAddressGroups) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -400,7 +399,7 @@ func (j *jsiiProxy_DataGoogleNetworkSecurityAddressGroups)SetForEach(val cdktf.I
 	)
 }
 
-func (j *jsiiProxy_DataGoogleNetworkSecurityAddressGroups)SetId(val *string) {
+func (j *jsiiProxy_DataGoogleNetworkSecurityAddressGroups) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -411,7 +410,7 @@ func (j *jsiiProxy_DataGoogleNetworkSecurityAddressGroups)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleNetworkSecurityAddressGroups)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGoogleNetworkSecurityAddressGroups) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -422,7 +421,7 @@ func (j *jsiiProxy_DataGoogleNetworkSecurityAddressGroups)SetLifecycle(val *cdkt
 	)
 }
 
-func (j *jsiiProxy_DataGoogleNetworkSecurityAddressGroups)SetLocation(val *string) {
+func (j *jsiiProxy_DataGoogleNetworkSecurityAddressGroups) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -433,7 +432,7 @@ func (j *jsiiProxy_DataGoogleNetworkSecurityAddressGroups)SetLocation(val *strin
 	)
 }
 
-func (j *jsiiProxy_DataGoogleNetworkSecurityAddressGroups)SetParent(val *string) {
+func (j *jsiiProxy_DataGoogleNetworkSecurityAddressGroups) SetParent(val *string) {
 	if err := j.validateSetParentParameters(val); err != nil {
 		panic(err)
 	}
@@ -444,7 +443,7 @@ func (j *jsiiProxy_DataGoogleNetworkSecurityAddressGroups)SetParent(val *string)
 	)
 }
 
-func (j *jsiiProxy_DataGoogleNetworkSecurityAddressGroups)SetProject(val *string) {
+func (j *jsiiProxy_DataGoogleNetworkSecurityAddressGroups) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -455,7 +454,7 @@ func (j *jsiiProxy_DataGoogleNetworkSecurityAddressGroups)SetProject(val *string
 	)
 }
 
-func (j *jsiiProxy_DataGoogleNetworkSecurityAddressGroups)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGoogleNetworkSecurityAddressGroups) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -475,7 +474,7 @@ func DataGoogleNetworkSecurityAddressGroups_GenerateConfigForImport(scope constr
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleNetworkSecurityAddressGroups.DataGoogleNetworkSecurityAddressGroups",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -499,7 +498,7 @@ func DataGoogleNetworkSecurityAddressGroups_GenerateConfigForImport(scope constr
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataGoogleNetworkSecurityAddressGroups_IsConstruct(x interface{}) *bool {
+func DataGoogleNetworkSecurityAddressGroups_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleNetworkSecurityAddressGroups_IsConstructParameters(x); err != nil {
@@ -510,7 +509,7 @@ func DataGoogleNetworkSecurityAddressGroups_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleNetworkSecurityAddressGroups.DataGoogleNetworkSecurityAddressGroups",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -518,7 +517,7 @@ func DataGoogleNetworkSecurityAddressGroups_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGoogleNetworkSecurityAddressGroups_IsTerraformDataSource(x interface{}) *bool {
+func DataGoogleNetworkSecurityAddressGroups_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleNetworkSecurityAddressGroups_IsTerraformDataSourceParameters(x); err != nil {
@@ -529,7 +528,7 @@ func DataGoogleNetworkSecurityAddressGroups_IsTerraformDataSource(x interface{})
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleNetworkSecurityAddressGroups.DataGoogleNetworkSecurityAddressGroups",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -537,7 +536,7 @@ func DataGoogleNetworkSecurityAddressGroups_IsTerraformDataSource(x interface{})
 }
 
 // Experimental.
-func DataGoogleNetworkSecurityAddressGroups_IsTerraformElement(x interface{}) *bool {
+func DataGoogleNetworkSecurityAddressGroups_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleNetworkSecurityAddressGroups_IsTerraformElementParameters(x); err != nil {
@@ -548,7 +547,7 @@ func DataGoogleNetworkSecurityAddressGroups_IsTerraformElement(x interface{}) *b
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleNetworkSecurityAddressGroups.DataGoogleNetworkSecurityAddressGroups",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -566,27 +565,27 @@ func DataGoogleNetworkSecurityAddressGroups_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleNetworkSecurityAddressGroups) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataGoogleNetworkSecurityAddressGroups) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataGoogleNetworkSecurityAddressGroups) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataGoogleNetworkSecurityAddressGroups) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -602,7 +601,7 @@ func (d *jsiiProxy_DataGoogleNetworkSecurityAddressGroups) GetBooleanAttribute(t
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -618,7 +617,7 @@ func (d *jsiiProxy_DataGoogleNetworkSecurityAddressGroups) GetBooleanMapAttribut
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -634,7 +633,7 @@ func (d *jsiiProxy_DataGoogleNetworkSecurityAddressGroups) GetListAttribute(terr
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -650,7 +649,7 @@ func (d *jsiiProxy_DataGoogleNetworkSecurityAddressGroups) GetNumberAttribute(te
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -666,7 +665,7 @@ func (d *jsiiProxy_DataGoogleNetworkSecurityAddressGroups) GetNumberListAttribut
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -682,7 +681,7 @@ func (d *jsiiProxy_DataGoogleNetworkSecurityAddressGroups) GetNumberMapAttribute
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -698,7 +697,7 @@ func (d *jsiiProxy_DataGoogleNetworkSecurityAddressGroups) GetStringAttribute(te
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -714,7 +713,7 @@ func (d *jsiiProxy_DataGoogleNetworkSecurityAddressGroups) GetStringMapAttribute
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -730,7 +729,7 @@ func (d *jsiiProxy_DataGoogleNetworkSecurityAddressGroups) InterpolationForAttri
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -744,7 +743,7 @@ func (d *jsiiProxy_DataGoogleNetworkSecurityAddressGroups) OverrideLogicalId(new
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -780,8 +779,8 @@ func (d *jsiiProxy_DataGoogleNetworkSecurityAddressGroups) ResetProject() {
 	)
 }
 
-func (d *jsiiProxy_DataGoogleNetworkSecurityAddressGroups) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleNetworkSecurityAddressGroups) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -793,8 +792,8 @@ func (d *jsiiProxy_DataGoogleNetworkSecurityAddressGroups) SynthesizeAttributes(
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleNetworkSecurityAddressGroups) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleNetworkSecurityAddressGroups) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -806,8 +805,8 @@ func (d *jsiiProxy_DataGoogleNetworkSecurityAddressGroups) SynthesizeHclAttribut
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleNetworkSecurityAddressGroups) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleNetworkSecurityAddressGroups) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -819,8 +818,8 @@ func (d *jsiiProxy_DataGoogleNetworkSecurityAddressGroups) ToHclTerraform() inte
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleNetworkSecurityAddressGroups) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleNetworkSecurityAddressGroups) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -845,8 +844,8 @@ func (d *jsiiProxy_DataGoogleNetworkSecurityAddressGroups) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleNetworkSecurityAddressGroups) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleNetworkSecurityAddressGroups) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -857,4 +856,3 @@ func (d *jsiiProxy_DataGoogleNetworkSecurityAddressGroups) ToTerraform() interfa
 
 	return returns
 }
-

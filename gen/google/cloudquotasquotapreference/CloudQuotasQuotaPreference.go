@@ -15,18 +15,18 @@ type CloudQuotasQuotaPreference interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	ContactEmail() *string
 	SetContactEmail(val *string)
 	ContactEmailInput() *string
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -70,16 +70,16 @@ type CloudQuotasQuotaPreference interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	QuotaConfig() CloudQuotasQuotaPreferenceQuotaConfigOutputReference
 	QuotaConfigInput() *CloudQuotasQuotaPreferenceQuotaConfig
 	QuotaId() *string
 	SetQuotaId(val *string)
 	QuotaIdInput() *string
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Reconciling() cdktf.IResolvable
 	Service() *string
 	SetService(val *string)
@@ -87,19 +87,19 @@ type CloudQuotasQuotaPreference interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() CloudQuotasQuotaPreferenceTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -117,7 +117,7 @@ type CloudQuotasQuotaPreference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -129,7 +129,7 @@ type CloudQuotasQuotaPreference interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -151,17 +151,17 @@ type CloudQuotasQuotaPreference interface {
 	ResetQuotaId()
 	ResetService()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for CloudQuotasQuotaPreference
@@ -179,8 +179,8 @@ func (j *jsiiProxy_CloudQuotasQuotaPreference) CdktfStack() cdktf.TerraformStack
 	return returns
 }
 
-func (j *jsiiProxy_CloudQuotasQuotaPreference) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudQuotasQuotaPreference) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -189,8 +189,8 @@ func (j *jsiiProxy_CloudQuotasQuotaPreference) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CloudQuotasQuotaPreference) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CloudQuotasQuotaPreference) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -219,8 +219,8 @@ func (j *jsiiProxy_CloudQuotasQuotaPreference) ContactEmailInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CloudQuotasQuotaPreference) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudQuotasQuotaPreference) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -439,8 +439,8 @@ func (j *jsiiProxy_CloudQuotasQuotaPreference) Provider() cdktf.TerraformProvide
 	return returns
 }
 
-func (j *jsiiProxy_CloudQuotasQuotaPreference) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_CloudQuotasQuotaPreference) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -489,8 +489,8 @@ func (j *jsiiProxy_CloudQuotasQuotaPreference) QuotaIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CloudQuotasQuotaPreference) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudQuotasQuotaPreference) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -539,8 +539,8 @@ func (j *jsiiProxy_CloudQuotasQuotaPreference) TerraformGeneratorMetadata() *cdk
 	return returns
 }
 
-func (j *jsiiProxy_CloudQuotasQuotaPreference) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CloudQuotasQuotaPreference) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -569,8 +569,8 @@ func (j *jsiiProxy_CloudQuotasQuotaPreference) Timeouts() CloudQuotasQuotaPrefer
 	return returns
 }
 
-func (j *jsiiProxy_CloudQuotasQuotaPreference) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudQuotasQuotaPreference) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -589,7 +589,6 @@ func (j *jsiiProxy_CloudQuotasQuotaPreference) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_quotas_quota_preference google_cloud_quotas_quota_preference} Resource.
 func NewCloudQuotasQuotaPreference(scope constructs.Construct, id *string, config *CloudQuotasQuotaPreferenceConfig) CloudQuotasQuotaPreference {
 	_init_.Initialize()
@@ -601,7 +600,7 @@ func NewCloudQuotasQuotaPreference(scope constructs.Construct, id *string, confi
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cloudQuotasQuotaPreference.CloudQuotasQuotaPreference",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -614,12 +613,12 @@ func NewCloudQuotasQuotaPreference_Override(c CloudQuotasQuotaPreference, scope 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cloudQuotasQuotaPreference.CloudQuotasQuotaPreference",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CloudQuotasQuotaPreference)SetConnection(val interface{}) {
+func (j *jsiiProxy_CloudQuotasQuotaPreference) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -630,7 +629,7 @@ func (j *jsiiProxy_CloudQuotasQuotaPreference)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudQuotasQuotaPreference)SetContactEmail(val *string) {
+func (j *jsiiProxy_CloudQuotasQuotaPreference) SetContactEmail(val *string) {
 	if err := j.validateSetContactEmailParameters(val); err != nil {
 		panic(err)
 	}
@@ -641,7 +640,7 @@ func (j *jsiiProxy_CloudQuotasQuotaPreference)SetContactEmail(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudQuotasQuotaPreference)SetCount(val interface{}) {
+func (j *jsiiProxy_CloudQuotasQuotaPreference) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -652,7 +651,7 @@ func (j *jsiiProxy_CloudQuotasQuotaPreference)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudQuotasQuotaPreference)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_CloudQuotasQuotaPreference) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -660,7 +659,7 @@ func (j *jsiiProxy_CloudQuotasQuotaPreference)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CloudQuotasQuotaPreference)SetDimensions(val *map[string]*string) {
+func (j *jsiiProxy_CloudQuotasQuotaPreference) SetDimensions(val *map[string]*string) {
 	if err := j.validateSetDimensionsParameters(val); err != nil {
 		panic(err)
 	}
@@ -671,7 +670,7 @@ func (j *jsiiProxy_CloudQuotasQuotaPreference)SetDimensions(val *map[string]*str
 	)
 }
 
-func (j *jsiiProxy_CloudQuotasQuotaPreference)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_CloudQuotasQuotaPreference) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -679,7 +678,7 @@ func (j *jsiiProxy_CloudQuotasQuotaPreference)SetForEach(val cdktf.ITerraformIte
 	)
 }
 
-func (j *jsiiProxy_CloudQuotasQuotaPreference)SetId(val *string) {
+func (j *jsiiProxy_CloudQuotasQuotaPreference) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -690,7 +689,7 @@ func (j *jsiiProxy_CloudQuotasQuotaPreference)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudQuotasQuotaPreference)SetIgnoreSafetyChecks(val *string) {
+func (j *jsiiProxy_CloudQuotasQuotaPreference) SetIgnoreSafetyChecks(val *string) {
 	if err := j.validateSetIgnoreSafetyChecksParameters(val); err != nil {
 		panic(err)
 	}
@@ -701,7 +700,7 @@ func (j *jsiiProxy_CloudQuotasQuotaPreference)SetIgnoreSafetyChecks(val *string)
 	)
 }
 
-func (j *jsiiProxy_CloudQuotasQuotaPreference)SetJustification(val *string) {
+func (j *jsiiProxy_CloudQuotasQuotaPreference) SetJustification(val *string) {
 	if err := j.validateSetJustificationParameters(val); err != nil {
 		panic(err)
 	}
@@ -712,7 +711,7 @@ func (j *jsiiProxy_CloudQuotasQuotaPreference)SetJustification(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudQuotasQuotaPreference)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_CloudQuotasQuotaPreference) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -723,7 +722,7 @@ func (j *jsiiProxy_CloudQuotasQuotaPreference)SetLifecycle(val *cdktf.TerraformR
 	)
 }
 
-func (j *jsiiProxy_CloudQuotasQuotaPreference)SetName(val *string) {
+func (j *jsiiProxy_CloudQuotasQuotaPreference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -734,7 +733,7 @@ func (j *jsiiProxy_CloudQuotasQuotaPreference)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudQuotasQuotaPreference)SetParent(val *string) {
+func (j *jsiiProxy_CloudQuotasQuotaPreference) SetParent(val *string) {
 	if err := j.validateSetParentParameters(val); err != nil {
 		panic(err)
 	}
@@ -745,7 +744,7 @@ func (j *jsiiProxy_CloudQuotasQuotaPreference)SetParent(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudQuotasQuotaPreference)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_CloudQuotasQuotaPreference) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -753,7 +752,7 @@ func (j *jsiiProxy_CloudQuotasQuotaPreference)SetProvider(val cdktf.TerraformPro
 	)
 }
 
-func (j *jsiiProxy_CloudQuotasQuotaPreference)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_CloudQuotasQuotaPreference) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -764,7 +763,7 @@ func (j *jsiiProxy_CloudQuotasQuotaPreference)SetProvisioners(val *[]interface{}
 	)
 }
 
-func (j *jsiiProxy_CloudQuotasQuotaPreference)SetQuotaId(val *string) {
+func (j *jsiiProxy_CloudQuotasQuotaPreference) SetQuotaId(val *string) {
 	if err := j.validateSetQuotaIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -775,7 +774,7 @@ func (j *jsiiProxy_CloudQuotasQuotaPreference)SetQuotaId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudQuotasQuotaPreference)SetService(val *string) {
+func (j *jsiiProxy_CloudQuotasQuotaPreference) SetService(val *string) {
 	if err := j.validateSetServiceParameters(val); err != nil {
 		panic(err)
 	}
@@ -798,7 +797,7 @@ func CloudQuotasQuotaPreference_GenerateConfigForImport(scope constructs.Constru
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.cloudQuotasQuotaPreference.CloudQuotasQuotaPreference",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -822,7 +821,7 @@ func CloudQuotasQuotaPreference_GenerateConfigForImport(scope constructs.Constru
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func CloudQuotasQuotaPreference_IsConstruct(x interface{}) *bool {
+func CloudQuotasQuotaPreference_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCloudQuotasQuotaPreference_IsConstructParameters(x); err != nil {
@@ -833,7 +832,7 @@ func CloudQuotasQuotaPreference_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.cloudQuotasQuotaPreference.CloudQuotasQuotaPreference",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -841,7 +840,7 @@ func CloudQuotasQuotaPreference_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func CloudQuotasQuotaPreference_IsTerraformElement(x interface{}) *bool {
+func CloudQuotasQuotaPreference_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCloudQuotasQuotaPreference_IsTerraformElementParameters(x); err != nil {
@@ -852,7 +851,7 @@ func CloudQuotasQuotaPreference_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.cloudQuotasQuotaPreference.CloudQuotasQuotaPreference",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -860,7 +859,7 @@ func CloudQuotasQuotaPreference_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func CloudQuotasQuotaPreference_IsTerraformResource(x interface{}) *bool {
+func CloudQuotasQuotaPreference_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCloudQuotasQuotaPreference_IsTerraformResourceParameters(x); err != nil {
@@ -871,7 +870,7 @@ func CloudQuotasQuotaPreference_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.cloudQuotasQuotaPreference.CloudQuotasQuotaPreference",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -896,31 +895,31 @@ func (c *jsiiProxy_CloudQuotasQuotaPreference) AddMoveTarget(moveTarget *string)
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_CloudQuotasQuotaPreference) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_CloudQuotasQuotaPreference) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_CloudQuotasQuotaPreference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CloudQuotasQuotaPreference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -936,7 +935,7 @@ func (c *jsiiProxy_CloudQuotasQuotaPreference) GetBooleanAttribute(terraformAttr
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -952,7 +951,7 @@ func (c *jsiiProxy_CloudQuotasQuotaPreference) GetBooleanMapAttribute(terraformA
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -968,7 +967,7 @@ func (c *jsiiProxy_CloudQuotasQuotaPreference) GetListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -984,7 +983,7 @@ func (c *jsiiProxy_CloudQuotasQuotaPreference) GetNumberAttribute(terraformAttri
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1000,7 +999,7 @@ func (c *jsiiProxy_CloudQuotasQuotaPreference) GetNumberListAttribute(terraformA
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1016,7 +1015,7 @@ func (c *jsiiProxy_CloudQuotasQuotaPreference) GetNumberMapAttribute(terraformAt
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1032,7 +1031,7 @@ func (c *jsiiProxy_CloudQuotasQuotaPreference) GetStringAttribute(terraformAttri
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1048,15 +1047,15 @@ func (c *jsiiProxy_CloudQuotasQuotaPreference) GetStringMapAttribute(terraformAt
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_CloudQuotasQuotaPreference) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudQuotasQuotaPreference) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1075,7 +1074,7 @@ func (c *jsiiProxy_CloudQuotasQuotaPreference) ImportFrom(id *string, provider c
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1088,7 +1087,7 @@ func (c *jsiiProxy_CloudQuotasQuotaPreference) InterpolationForAttribute(terrafo
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1102,18 +1101,18 @@ func (c *jsiiProxy_CloudQuotasQuotaPreference) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_CloudQuotasQuotaPreference) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_CloudQuotasQuotaPreference) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1124,7 +1123,7 @@ func (c *jsiiProxy_CloudQuotasQuotaPreference) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1135,7 +1134,7 @@ func (c *jsiiProxy_CloudQuotasQuotaPreference) OverrideLogicalId(newLogicalId *s
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1146,7 +1145,7 @@ func (c *jsiiProxy_CloudQuotasQuotaPreference) PutQuotaConfig(value *CloudQuotas
 	_jsii_.InvokeVoid(
 		c,
 		"putQuotaConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1157,7 +1156,7 @@ func (c *jsiiProxy_CloudQuotasQuotaPreference) PutTimeouts(value *CloudQuotasQuo
 	_jsii_.InvokeVoid(
 		c,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1249,8 +1248,8 @@ func (c *jsiiProxy_CloudQuotasQuotaPreference) ResetTimeouts() {
 	)
 }
 
-func (c *jsiiProxy_CloudQuotasQuotaPreference) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CloudQuotasQuotaPreference) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1262,8 +1261,8 @@ func (c *jsiiProxy_CloudQuotasQuotaPreference) SynthesizeAttributes() *map[strin
 	return returns
 }
 
-func (c *jsiiProxy_CloudQuotasQuotaPreference) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CloudQuotasQuotaPreference) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1275,8 +1274,8 @@ func (c *jsiiProxy_CloudQuotasQuotaPreference) SynthesizeHclAttributes() *map[st
 	return returns
 }
 
-func (c *jsiiProxy_CloudQuotasQuotaPreference) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudQuotasQuotaPreference) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1288,8 +1287,8 @@ func (c *jsiiProxy_CloudQuotasQuotaPreference) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_CloudQuotasQuotaPreference) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudQuotasQuotaPreference) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1314,8 +1313,8 @@ func (c *jsiiProxy_CloudQuotasQuotaPreference) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_CloudQuotasQuotaPreference) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudQuotasQuotaPreference) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1326,4 +1325,3 @@ func (c *jsiiProxy_CloudQuotasQuotaPreference) ToTerraform() interface{} {
 
 	return returns
 }
-

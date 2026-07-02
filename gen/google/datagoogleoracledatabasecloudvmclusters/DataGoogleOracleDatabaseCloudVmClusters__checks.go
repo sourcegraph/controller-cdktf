@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataGoogleOracleDatabaseCloudVmClusters) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataGoogleOracleDatabaseCloudVmClusters) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataGoogleOracleDatabaseCloudVmClusters_GenerateConfigForImportPara
 	return nil
 }
 
-func validateDataGoogleOracleDatabaseCloudVmClusters_IsConstructParameters(x interface{}) error {
+func validateDataGoogleOracleDatabaseCloudVmClusters_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataGoogleOracleDatabaseCloudVmClusters_IsConstructParameters(x int
 	return nil
 }
 
-func validateDataGoogleOracleDatabaseCloudVmClusters_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataGoogleOracleDatabaseCloudVmClusters_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataGoogleOracleDatabaseCloudVmClusters_IsTerraformDataSourceParame
 	return nil
 }
 
-func validateDataGoogleOracleDatabaseCloudVmClusters_IsTerraformElementParameters(x interface{}) error {
+func validateDataGoogleOracleDatabaseCloudVmClusters_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func validateDataGoogleOracleDatabaseCloudVmClusters_IsTerraformElementParameter
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleOracleDatabaseCloudVmClusters) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleOracleDatabaseCloudVmClusters) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -258,4 +258,3 @@ func validateNewDataGoogleOracleDatabaseCloudVmClustersParameters(scope construc
 
 	return nil
 }
-

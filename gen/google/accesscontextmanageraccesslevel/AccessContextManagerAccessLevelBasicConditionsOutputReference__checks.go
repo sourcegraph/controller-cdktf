@@ -101,7 +101,7 @@ func (a *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsOutputReference
 	return nil
 }
 
-func (a *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsOutputReference) validatePutVpcNetworkSourcesParameters(value interface{}) error {
+func (a *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsOutputReference) validatePutVpcNetworkSourcesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -140,7 +140,7 @@ func (a *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -205,7 +205,7 @@ func (j *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -245,7 +245,7 @@ func (j *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsOutputReference) validateSetNegateParameters(val interface{}) error {
+func (j *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsOutputReference) validateSetNegateParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -316,4 +316,3 @@ func validateNewAccessContextManagerAccessLevelBasicConditionsOutputReferencePar
 
 	return nil
 }
-

@@ -117,7 +117,7 @@ func (j *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigHumanAg
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigDialogflowQuerySourceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsQueryConfigDialogflowQuerySourceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -217,4 +217,3 @@ func validateNewDialogflowConversationProfileHumanAgentAssistantConfigHumanAgent
 
 	return nil
 }
-

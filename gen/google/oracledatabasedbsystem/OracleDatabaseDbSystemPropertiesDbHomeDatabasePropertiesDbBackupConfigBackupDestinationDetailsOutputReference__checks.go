@@ -98,7 +98,7 @@ func (o *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesDbBac
 	return nil
 }
 
-func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesDbBackupConfigBackupDestinationDetailsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesDbBackupConfigBackupDestinationDetailsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesDbBac
 	return nil
 }
 
-func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesDbBackupConfigBackupDestinationDetailsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesDbBackupConfigBackupDestinationDetailsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewOracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesDbBackup
 
 	return nil
 }
-

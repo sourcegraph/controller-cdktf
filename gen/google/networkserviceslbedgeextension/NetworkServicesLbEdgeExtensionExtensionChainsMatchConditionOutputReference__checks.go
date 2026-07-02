@@ -106,7 +106,7 @@ func (j *jsiiProxy_NetworkServicesLbEdgeExtensionExtensionChainsMatchConditionOu
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesLbEdgeExtensionExtensionChainsMatchConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkServicesLbEdgeExtensionExtensionChainsMatchConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewNetworkServicesLbEdgeExtensionExtensionChainsMatchConditionOutpu
 
 	return nil
 }
-

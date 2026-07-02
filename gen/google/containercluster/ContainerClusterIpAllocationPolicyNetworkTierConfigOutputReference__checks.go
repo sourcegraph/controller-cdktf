@@ -98,7 +98,7 @@ func (c *jsiiProxy_ContainerClusterIpAllocationPolicyNetworkTierConfigOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterIpAllocationPolicyNetworkTierConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterIpAllocationPolicyNetworkTierConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewContainerClusterIpAllocationPolicyNetworkTierConfigOutputReferen
 
 	return nil
 }
-

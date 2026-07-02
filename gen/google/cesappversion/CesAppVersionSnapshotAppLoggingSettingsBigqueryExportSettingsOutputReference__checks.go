@@ -98,7 +98,7 @@ func (c *jsiiProxy_CesAppVersionSnapshotAppLoggingSettingsBigqueryExportSettings
 	return nil
 }
 
-func (j *jsiiProxy_CesAppVersionSnapshotAppLoggingSettingsBigqueryExportSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CesAppVersionSnapshotAppLoggingSettingsBigqueryExportSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewCesAppVersionSnapshotAppLoggingSettingsBigqueryExportSettingsOut
 
 	return nil
 }
-

@@ -15,9 +15,9 @@ type ComputeBackendServiceTlsSettingsOutputReference interface {
 	AuthenticationConfigInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -36,7 +36,7 @@ type ComputeBackendServiceTlsSettingsOutputReference interface {
 	SetSni(val *string)
 	SniInput() *string
 	SubjectAltNames() ComputeBackendServiceTlsSettingsSubjectAltNamesList
-	SubjectAltNamesInput() interface{}
+	SubjectAltNamesInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -48,7 +48,7 @@ type ComputeBackendServiceTlsSettingsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -69,13 +69,13 @@ type ComputeBackendServiceTlsSettingsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutSubjectAltNames(value interface{})
+	PutSubjectAltNames(value any)
 	ResetAuthenticationConfig()
 	ResetSni()
 	ResetSubjectAltNames()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -108,8 +108,8 @@ func (j *jsiiProxy_ComputeBackendServiceTlsSettingsOutputReference) Authenticati
 	return returns
 }
 
-func (j *jsiiProxy_ComputeBackendServiceTlsSettingsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeBackendServiceTlsSettingsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -188,8 +188,8 @@ func (j *jsiiProxy_ComputeBackendServiceTlsSettingsOutputReference) SubjectAltNa
 	return returns
 }
 
-func (j *jsiiProxy_ComputeBackendServiceTlsSettingsOutputReference) SubjectAltNamesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeBackendServiceTlsSettingsOutputReference) SubjectAltNamesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"subjectAltNamesInput",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_ComputeBackendServiceTlsSettingsOutputReference) TerraformRes
 	return returns
 }
 
-
 func NewComputeBackendServiceTlsSettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ComputeBackendServiceTlsSettingsOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewComputeBackendServiceTlsSettingsOutputReference(terraformResource cdktf.
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceTlsSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewComputeBackendServiceTlsSettingsOutputReference_Override(c ComputeBacken
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceTlsSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputeBackendServiceTlsSettingsOutputReference)SetAuthenticationConfig(val *string) {
+func (j *jsiiProxy_ComputeBackendServiceTlsSettingsOutputReference) SetAuthenticationConfig(val *string) {
 	if err := j.validateSetAuthenticationConfigParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_ComputeBackendServiceTlsSettingsOutputReference)SetAuthentica
 	)
 }
 
-func (j *jsiiProxy_ComputeBackendServiceTlsSettingsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ComputeBackendServiceTlsSettingsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_ComputeBackendServiceTlsSettingsOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_ComputeBackendServiceTlsSettingsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ComputeBackendServiceTlsSettingsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_ComputeBackendServiceTlsSettingsOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_ComputeBackendServiceTlsSettingsOutputReference)SetInternalValue(val *ComputeBackendServiceTlsSettings) {
+func (j *jsiiProxy_ComputeBackendServiceTlsSettingsOutputReference) SetInternalValue(val *ComputeBackendServiceTlsSettings) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_ComputeBackendServiceTlsSettingsOutputReference)SetInternalVa
 	)
 }
 
-func (j *jsiiProxy_ComputeBackendServiceTlsSettingsOutputReference)SetSni(val *string) {
+func (j *jsiiProxy_ComputeBackendServiceTlsSettingsOutputReference) SetSni(val *string) {
 	if err := j.validateSetSniParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_ComputeBackendServiceTlsSettingsOutputReference)SetSni(val *s
 	)
 }
 
-func (j *jsiiProxy_ComputeBackendServiceTlsSettingsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ComputeBackendServiceTlsSettingsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_ComputeBackendServiceTlsSettingsOutputReference)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_ComputeBackendServiceTlsSettingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeBackendServiceTlsSettingsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,16 +335,16 @@ func (c *jsiiProxy_ComputeBackendServiceTlsSettingsOutputReference) ComputeFqn()
 	return returns
 }
 
-func (c *jsiiProxy_ComputeBackendServiceTlsSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComputeBackendServiceTlsSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -361,7 +360,7 @@ func (c *jsiiProxy_ComputeBackendServiceTlsSettingsOutputReference) GetBooleanAt
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -377,7 +376,7 @@ func (c *jsiiProxy_ComputeBackendServiceTlsSettingsOutputReference) GetBooleanMa
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -393,7 +392,7 @@ func (c *jsiiProxy_ComputeBackendServiceTlsSettingsOutputReference) GetListAttri
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -409,7 +408,7 @@ func (c *jsiiProxy_ComputeBackendServiceTlsSettingsOutputReference) GetNumberAtt
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -425,7 +424,7 @@ func (c *jsiiProxy_ComputeBackendServiceTlsSettingsOutputReference) GetNumberLis
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -441,7 +440,7 @@ func (c *jsiiProxy_ComputeBackendServiceTlsSettingsOutputReference) GetNumberMap
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -457,7 +456,7 @@ func (c *jsiiProxy_ComputeBackendServiceTlsSettingsOutputReference) GetStringAtt
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -473,7 +472,7 @@ func (c *jsiiProxy_ComputeBackendServiceTlsSettingsOutputReference) GetStringMap
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -502,21 +501,21 @@ func (c *jsiiProxy_ComputeBackendServiceTlsSettingsOutputReference) Interpolatio
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ComputeBackendServiceTlsSettingsOutputReference) PutSubjectAltNames(value interface{}) {
+func (c *jsiiProxy_ComputeBackendServiceTlsSettingsOutputReference) PutSubjectAltNames(value any) {
 	if err := c.validatePutSubjectAltNamesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putSubjectAltNames",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -544,16 +543,16 @@ func (c *jsiiProxy_ComputeBackendServiceTlsSettingsOutputReference) ResetSubject
 	)
 }
 
-func (c *jsiiProxy_ComputeBackendServiceTlsSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ComputeBackendServiceTlsSettingsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (c *jsiiProxy_ComputeBackendServiceTlsSettingsOutputReference) ToString() *
 
 	return returns
 }
-

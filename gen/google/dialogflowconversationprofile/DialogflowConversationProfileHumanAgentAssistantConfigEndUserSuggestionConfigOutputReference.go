@@ -12,9 +12,9 @@ type DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConf
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,19 +25,19 @@ type DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConf
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	DisableHighLatencyFeaturesSyncDelivery() interface{}
-	SetDisableHighLatencyFeaturesSyncDelivery(val interface{})
-	DisableHighLatencyFeaturesSyncDeliveryInput() interface{}
+	DisableHighLatencyFeaturesSyncDelivery() any
+	SetDisableHighLatencyFeaturesSyncDelivery(val any)
+	DisableHighLatencyFeaturesSyncDeliveryInput() any
 	FeatureConfigs() DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsList
-	FeatureConfigsInput() interface{}
+	FeatureConfigsInput() any
 	// Experimental.
 	Fqn() *string
 	Generators() *[]*string
 	SetGenerators(val *[]*string)
 	GeneratorsInput() *[]*string
-	GroupSuggestionResponses() interface{}
-	SetGroupSuggestionResponses(val interface{})
-	GroupSuggestionResponsesInput() interface{}
+	GroupSuggestionResponses() any
+	SetGroupSuggestionResponses(val any)
+	GroupSuggestionResponsesInput() any
 	InternalValue() *DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfig
 	SetInternalValue(val *DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfig)
 	// Experimental.
@@ -51,7 +51,7 @@ type DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConf
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -72,14 +72,14 @@ type DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConf
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutFeatureConfigs(value interface{})
+	PutFeatureConfigs(value any)
 	ResetDisableHighLatencyFeaturesSyncDelivery()
 	ResetFeatureConfigs()
 	ResetGenerators()
 	ResetGroupSuggestionResponses()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,8 +92,8 @@ type jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigEndUserSugg
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -122,8 +122,8 @@ func (j *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigEndUser
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigOutputReference) DisableHighLatencyFeaturesSyncDelivery() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigOutputReference) DisableHighLatencyFeaturesSyncDelivery() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableHighLatencyFeaturesSyncDelivery",
@@ -132,8 +132,8 @@ func (j *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigEndUser
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigOutputReference) DisableHighLatencyFeaturesSyncDeliveryInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigOutputReference) DisableHighLatencyFeaturesSyncDeliveryInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableHighLatencyFeaturesSyncDeliveryInput",
@@ -152,8 +152,8 @@ func (j *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigEndUser
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigOutputReference) FeatureConfigsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigOutputReference) FeatureConfigsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"featureConfigsInput",
@@ -192,8 +192,8 @@ func (j *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigEndUser
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigOutputReference) GroupSuggestionResponses() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigOutputReference) GroupSuggestionResponses() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"groupSuggestionResponses",
@@ -202,8 +202,8 @@ func (j *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigEndUser
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigOutputReference) GroupSuggestionResponsesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigOutputReference) GroupSuggestionResponsesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"groupSuggestionResponsesInput",
@@ -242,7 +242,6 @@ func (j *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigEndUser
 	return returns
 }
 
-
 func NewDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigOutputReference {
 	_init_.Initialize()
 
@@ -253,7 +252,7 @@ func NewDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionC
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -265,12 +264,12 @@ func NewDialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionC
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,7 +280,7 @@ func (j *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigEndUser
 	)
 }
 
-func (j *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,7 +291,7 @@ func (j *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigEndUser
 	)
 }
 
-func (j *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigOutputReference)SetDisableHighLatencyFeaturesSyncDelivery(val interface{}) {
+func (j *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigOutputReference) SetDisableHighLatencyFeaturesSyncDelivery(val any) {
 	if err := j.validateSetDisableHighLatencyFeaturesSyncDeliveryParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigEndUser
 	)
 }
 
-func (j *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigOutputReference)SetGenerators(val *[]*string) {
+func (j *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigOutputReference) SetGenerators(val *[]*string) {
 	if err := j.validateSetGeneratorsParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigEndUser
 	)
 }
 
-func (j *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigOutputReference)SetGroupSuggestionResponses(val interface{}) {
+func (j *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigOutputReference) SetGroupSuggestionResponses(val any) {
 	if err := j.validateSetGroupSuggestionResponsesParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigEndUser
 	)
 }
 
-func (j *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigOutputReference)SetInternalValue(val *DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfig) {
+func (j *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigOutputReference) SetInternalValue(val *DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigEndUser
 	)
 }
 
-func (j *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigEndUser
 	)
 }
 
-func (j *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,16 +370,16 @@ func (d *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigEndUser
 	return returns
 }
 
-func (d *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -396,7 +395,7 @@ func (d *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigEndUser
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -412,7 +411,7 @@ func (d *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigEndUser
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -428,7 +427,7 @@ func (d *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigEndUser
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -444,7 +443,7 @@ func (d *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigEndUser
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -460,7 +459,7 @@ func (d *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigEndUser
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -476,7 +475,7 @@ func (d *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigEndUser
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -492,7 +491,7 @@ func (d *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigEndUser
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -508,7 +507,7 @@ func (d *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigEndUser
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -537,21 +536,21 @@ func (d *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigEndUser
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigOutputReference) PutFeatureConfigs(value interface{}) {
+func (d *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigOutputReference) PutFeatureConfigs(value any) {
 	if err := d.validatePutFeatureConfigsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putFeatureConfigs",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -587,16 +586,16 @@ func (d *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigEndUser
 	)
 }
 
-func (d *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -615,4 +614,3 @@ func (d *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigEndUser
 
 	return returns
 }
-

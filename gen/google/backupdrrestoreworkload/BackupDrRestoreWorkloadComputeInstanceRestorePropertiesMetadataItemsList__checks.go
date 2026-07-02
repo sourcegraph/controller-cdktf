@@ -34,7 +34,7 @@ func (b *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesMetada
 	return nil
 }
 
-func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesMetadataItemsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesMetadataItemsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewBackupDrRestoreWorkloadComputeInstanceRestorePropertiesMetadataI
 
 	return nil
 }
-

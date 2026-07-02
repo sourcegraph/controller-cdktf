@@ -34,7 +34,7 @@ func (s *jsiiProxy_SecurityposturePosturePolicySetsPoliciesComplianceStandardsLi
 	return nil
 }
 
-func (j *jsiiProxy_SecurityposturePosturePolicySetsPoliciesComplianceStandardsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SecurityposturePosturePolicySetsPoliciesComplianceStandardsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewSecurityposturePosturePolicySetsPoliciesComplianceStandardsListP
 
 	return nil
 }
-

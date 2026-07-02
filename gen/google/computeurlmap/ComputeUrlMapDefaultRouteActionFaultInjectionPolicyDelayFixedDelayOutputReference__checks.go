@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeUrlMapDefaultRouteActionFaultInjectionPolicyDelayFixed
 	return nil
 }
 
-func (j *jsiiProxy_ComputeUrlMapDefaultRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeUrlMapDefaultRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewComputeUrlMapDefaultRouteActionFaultInjectionPolicyDelayFixedDel
 
 	return nil
 }
-

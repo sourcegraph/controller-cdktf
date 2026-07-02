@@ -34,7 +34,7 @@ func (b *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesSchedu
 	return nil
 }
 
-func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesSchedulingNodeAffinitiesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesSchedulingNodeAffinitiesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewBackupDrRestoreWorkloadComputeInstanceRestorePropertiesSchedulin
 
 	return nil
 }
-

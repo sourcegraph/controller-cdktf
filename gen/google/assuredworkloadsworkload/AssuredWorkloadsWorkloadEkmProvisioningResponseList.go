@@ -36,7 +36,7 @@ type AssuredWorkloadsWorkloadEkmProvisioningResponseList interface {
 	Get(index *float64) AssuredWorkloadsWorkloadEkmProvisioningResponseOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,7 +99,6 @@ func (j *jsiiProxy_AssuredWorkloadsWorkloadEkmProvisioningResponseList) WrapsSet
 	return returns
 }
 
-
 func NewAssuredWorkloadsWorkloadEkmProvisioningResponseList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AssuredWorkloadsWorkloadEkmProvisioningResponseList {
 	_init_.Initialize()
 
@@ -110,7 +109,7 @@ func NewAssuredWorkloadsWorkloadEkmProvisioningResponseList(terraformResource cd
 
 	_jsii_.Create(
 		"@cdktf/provider-google.assuredWorkloadsWorkload.AssuredWorkloadsWorkloadEkmProvisioningResponseList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -122,12 +121,12 @@ func NewAssuredWorkloadsWorkloadEkmProvisioningResponseList_Override(a AssuredWo
 
 	_jsii_.Create(
 		"@cdktf/provider-google.assuredWorkloadsWorkload.AssuredWorkloadsWorkloadEkmProvisioningResponseList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AssuredWorkloadsWorkloadEkmProvisioningResponseList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AssuredWorkloadsWorkloadEkmProvisioningResponseList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -138,7 +137,7 @@ func (j *jsiiProxy_AssuredWorkloadsWorkloadEkmProvisioningResponseList)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_AssuredWorkloadsWorkloadEkmProvisioningResponseList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AssuredWorkloadsWorkloadEkmProvisioningResponseList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -149,7 +148,7 @@ func (j *jsiiProxy_AssuredWorkloadsWorkloadEkmProvisioningResponseList)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_AssuredWorkloadsWorkloadEkmProvisioningResponseList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_AssuredWorkloadsWorkloadEkmProvisioningResponseList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -169,7 +168,7 @@ func (a *jsiiProxy_AssuredWorkloadsWorkloadEkmProvisioningResponseList) AllWithM
 	_jsii_.Invoke(
 		a,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -198,23 +197,23 @@ func (a *jsiiProxy_AssuredWorkloadsWorkloadEkmProvisioningResponseList) Get(inde
 	_jsii_.Invoke(
 		a,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_AssuredWorkloadsWorkloadEkmProvisioningResponseList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AssuredWorkloadsWorkloadEkmProvisioningResponseList) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -233,4 +232,3 @@ func (a *jsiiProxy_AssuredWorkloadsWorkloadEkmProvisioningResponseList) ToString
 
 	return returns
 }
-

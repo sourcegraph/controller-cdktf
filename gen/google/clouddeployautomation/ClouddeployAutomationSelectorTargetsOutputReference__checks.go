@@ -98,7 +98,7 @@ func (c *jsiiProxy_ClouddeployAutomationSelectorTargetsOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_ClouddeployAutomationSelectorTargetsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ClouddeployAutomationSelectorTargetsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_ClouddeployAutomationSelectorTargetsOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_ClouddeployAutomationSelectorTargetsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ClouddeployAutomationSelectorTargetsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewClouddeployAutomationSelectorTargetsOutputReferenceParameters(te
 
 	return nil
 }
-

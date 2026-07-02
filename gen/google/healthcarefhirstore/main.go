@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.healthcareFhirStore.HealthcareFhirStore",
-		reflect.TypeOf((*HealthcareFhirStore)(nil)).Elem(),
+		reflect.TypeFor[HealthcareFhirStore](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -106,7 +106,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 			_jsii_.MemberProperty{JsiiProperty: "versionInput", GoGetter: "VersionInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HealthcareFhirStore{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -114,15 +114,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.healthcareFhirStore.HealthcareFhirStoreConfig",
-		reflect.TypeOf((*HealthcareFhirStoreConfig)(nil)).Elem(),
+		reflect.TypeFor[HealthcareFhirStoreConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.healthcareFhirStore.HealthcareFhirStoreNotificationConfig",
-		reflect.TypeOf((*HealthcareFhirStoreNotificationConfig)(nil)).Elem(),
+		reflect.TypeFor[HealthcareFhirStoreNotificationConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.healthcareFhirStore.HealthcareFhirStoreNotificationConfigOutputReference",
-		reflect.TypeOf((*HealthcareFhirStoreNotificationConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HealthcareFhirStoreNotificationConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -148,7 +148,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HealthcareFhirStoreNotificationConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -156,11 +156,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.healthcareFhirStore.HealthcareFhirStoreNotificationConfigs",
-		reflect.TypeOf((*HealthcareFhirStoreNotificationConfigs)(nil)).Elem(),
+		reflect.TypeFor[HealthcareFhirStoreNotificationConfigs](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.healthcareFhirStore.HealthcareFhirStoreNotificationConfigsList",
-		reflect.TypeOf((*HealthcareFhirStoreNotificationConfigsList)(nil)).Elem(),
+		reflect.TypeFor[HealthcareFhirStoreNotificationConfigsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -174,7 +174,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HealthcareFhirStoreNotificationConfigsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -182,7 +182,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.healthcareFhirStore.HealthcareFhirStoreNotificationConfigsOutputReference",
-		reflect.TypeOf((*HealthcareFhirStoreNotificationConfigsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HealthcareFhirStoreNotificationConfigsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -214,7 +214,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HealthcareFhirStoreNotificationConfigsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -222,15 +222,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigs",
-		reflect.TypeOf((*HealthcareFhirStoreStreamConfigs)(nil)).Elem(),
+		reflect.TypeFor[HealthcareFhirStoreStreamConfigs](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigsBigqueryDestination",
-		reflect.TypeOf((*HealthcareFhirStoreStreamConfigsBigqueryDestination)(nil)).Elem(),
+		reflect.TypeFor[HealthcareFhirStoreStreamConfigsBigqueryDestination](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigsBigqueryDestinationOutputReference",
-		reflect.TypeOf((*HealthcareFhirStoreStreamConfigsBigqueryDestinationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HealthcareFhirStoreStreamConfigsBigqueryDestinationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -259,7 +259,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HealthcareFhirStoreStreamConfigsBigqueryDestinationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -267,15 +267,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfig",
-		reflect.TypeOf((*HealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfig)(nil)).Elem(),
+		reflect.TypeFor[HealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfigLastUpdatedPartitionConfig",
-		reflect.TypeOf((*HealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfigLastUpdatedPartitionConfig)(nil)).Elem(),
+		reflect.TypeFor[HealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfigLastUpdatedPartitionConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfigLastUpdatedPartitionConfigOutputReference",
-		reflect.TypeOf((*HealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfigLastUpdatedPartitionConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfigLastUpdatedPartitionConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -304,7 +304,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfigLastUpdatedPartitionConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -312,7 +312,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfigOutputReference",
-		reflect.TypeOf((*HealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -345,7 +345,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -353,7 +353,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigsList",
-		reflect.TypeOf((*HealthcareFhirStoreStreamConfigsList)(nil)).Elem(),
+		reflect.TypeFor[HealthcareFhirStoreStreamConfigsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -367,7 +367,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HealthcareFhirStoreStreamConfigsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -375,7 +375,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigsOutputReference",
-		reflect.TypeOf((*HealthcareFhirStoreStreamConfigsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HealthcareFhirStoreStreamConfigsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bigqueryDestination", GoGetter: "BigqueryDestination"},
 			_jsii_.MemberProperty{JsiiProperty: "bigqueryDestinationInput", GoGetter: "BigqueryDestinationInput"},
@@ -405,7 +405,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HealthcareFhirStoreStreamConfigsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -413,11 +413,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.healthcareFhirStore.HealthcareFhirStoreTimeouts",
-		reflect.TypeOf((*HealthcareFhirStoreTimeouts)(nil)).Elem(),
+		reflect.TypeFor[HealthcareFhirStoreTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.healthcareFhirStore.HealthcareFhirStoreTimeoutsOutputReference",
-		reflect.TypeOf((*HealthcareFhirStoreTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HealthcareFhirStoreTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -450,7 +450,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HealthcareFhirStoreTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -458,11 +458,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfig",
-		reflect.TypeOf((*HealthcareFhirStoreValidationConfig)(nil)).Elem(),
+		reflect.TypeFor[HealthcareFhirStoreValidationConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfigOutputReference",
-		reflect.TypeOf((*HealthcareFhirStoreValidationConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HealthcareFhirStoreValidationConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -501,7 +501,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

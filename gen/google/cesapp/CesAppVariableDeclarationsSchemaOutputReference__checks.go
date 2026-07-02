@@ -114,7 +114,7 @@ func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference) validateSetA
 	return nil
 }
 
-func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -227,7 +227,7 @@ func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference) validateSetI
 	return nil
 }
 
-func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference) validateSetNullableParameters(val interface{}) error {
+func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference) validateSetNullableParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -311,7 +311,7 @@ func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference) validateSetUniqueItemsParameters(val interface{}) error {
+func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference) validateSetUniqueItemsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -342,4 +342,3 @@ func validateNewCesAppVariableDeclarationsSchemaOutputReferenceParameters(terraf
 
 	return nil
 }
-

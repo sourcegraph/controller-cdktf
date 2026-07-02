@@ -19,7 +19,7 @@ func (a *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) validateAddMoveTargetPa
 	return nil
 }
 
-func (a *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) validateAddOverrideParameters(path *string, value interface{}) error {
+func (a *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (a *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) validateMoveFromIdParam
 	return nil
 }
 
-func (a *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (a *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -253,7 +253,7 @@ func validateApigeeKeystoresAliasesSelfSignedCert_GenerateConfigForImportParamet
 	return nil
 }
 
-func validateApigeeKeystoresAliasesSelfSignedCert_IsConstructParameters(x interface{}) error {
+func validateApigeeKeystoresAliasesSelfSignedCert_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -261,7 +261,7 @@ func validateApigeeKeystoresAliasesSelfSignedCert_IsConstructParameters(x interf
 	return nil
 }
 
-func validateApigeeKeystoresAliasesSelfSignedCert_IsTerraformElementParameters(x interface{}) error {
+func validateApigeeKeystoresAliasesSelfSignedCert_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -269,7 +269,7 @@ func validateApigeeKeystoresAliasesSelfSignedCert_IsTerraformElementParameters(x
 	return nil
 }
 
-func validateApigeeKeystoresAliasesSelfSignedCert_IsTerraformResourceParameters(x interface{}) error {
+func validateApigeeKeystoresAliasesSelfSignedCert_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -293,7 +293,7 @@ func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) validateSetCertValidity
 	return nil
 }
 
-func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -326,7 +326,7 @@ func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) validateSetConnectionPa
 	return nil
 }
 
-func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -431,7 +431,7 @@ func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) validateSetOrgIdParamet
 	return nil
 }
 
-func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -503,4 +503,3 @@ func validateNewApigeeKeystoresAliasesSelfSignedCertParameters(scope constructs.
 
 	return nil
 }
-

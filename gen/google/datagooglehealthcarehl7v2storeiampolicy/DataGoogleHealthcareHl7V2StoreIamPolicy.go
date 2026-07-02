@@ -15,11 +15,11 @@ type DataGoogleHealthcareHl7V2StoreIamPolicy interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -51,17 +51,17 @@ type DataGoogleHealthcareHl7V2StoreIamPolicy interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -87,18 +87,18 @@ type DataGoogleHealthcareHl7V2StoreIamPolicy interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataGoogleHealthcareHl7V2StoreIamPolicy
@@ -116,8 +116,8 @@ func (j *jsiiProxy_DataGoogleHealthcareHl7V2StoreIamPolicy) CdktfStack() cdktf.T
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleHealthcareHl7V2StoreIamPolicy) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleHealthcareHl7V2StoreIamPolicy) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -126,8 +126,8 @@ func (j *jsiiProxy_DataGoogleHealthcareHl7V2StoreIamPolicy) ConstructNodeMetadat
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleHealthcareHl7V2StoreIamPolicy) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleHealthcareHl7V2StoreIamPolicy) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -266,8 +266,8 @@ func (j *jsiiProxy_DataGoogleHealthcareHl7V2StoreIamPolicy) Provider() cdktf.Ter
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleHealthcareHl7V2StoreIamPolicy) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleHealthcareHl7V2StoreIamPolicy) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -286,8 +286,8 @@ func (j *jsiiProxy_DataGoogleHealthcareHl7V2StoreIamPolicy) TerraformGeneratorMe
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleHealthcareHl7V2StoreIamPolicy) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleHealthcareHl7V2StoreIamPolicy) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -306,7 +306,6 @@ func (j *jsiiProxy_DataGoogleHealthcareHl7V2StoreIamPolicy) TerraformResourceTyp
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/healthcare_hl7_v2_store_iam_policy google_healthcare_hl7_v2_store_iam_policy} Data Source.
 func NewDataGoogleHealthcareHl7V2StoreIamPolicy(scope constructs.Construct, id *string, config *DataGoogleHealthcareHl7V2StoreIamPolicyConfig) DataGoogleHealthcareHl7V2StoreIamPolicy {
 	_init_.Initialize()
@@ -318,7 +317,7 @@ func NewDataGoogleHealthcareHl7V2StoreIamPolicy(scope constructs.Construct, id *
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleHealthcareHl7V2StoreIamPolicy.DataGoogleHealthcareHl7V2StoreIamPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -331,12 +330,12 @@ func NewDataGoogleHealthcareHl7V2StoreIamPolicy_Override(d DataGoogleHealthcareH
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleHealthcareHl7V2StoreIamPolicy.DataGoogleHealthcareHl7V2StoreIamPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataGoogleHealthcareHl7V2StoreIamPolicy)SetCount(val interface{}) {
+func (j *jsiiProxy_DataGoogleHealthcareHl7V2StoreIamPolicy) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_DataGoogleHealthcareHl7V2StoreIamPolicy)SetCount(val interfac
 	)
 }
 
-func (j *jsiiProxy_DataGoogleHealthcareHl7V2StoreIamPolicy)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataGoogleHealthcareHl7V2StoreIamPolicy) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -355,7 +354,7 @@ func (j *jsiiProxy_DataGoogleHealthcareHl7V2StoreIamPolicy)SetDependsOn(val *[]*
 	)
 }
 
-func (j *jsiiProxy_DataGoogleHealthcareHl7V2StoreIamPolicy)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGoogleHealthcareHl7V2StoreIamPolicy) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -363,7 +362,7 @@ func (j *jsiiProxy_DataGoogleHealthcareHl7V2StoreIamPolicy)SetForEach(val cdktf.
 	)
 }
 
-func (j *jsiiProxy_DataGoogleHealthcareHl7V2StoreIamPolicy)SetHl7V2StoreId(val *string) {
+func (j *jsiiProxy_DataGoogleHealthcareHl7V2StoreIamPolicy) SetHl7V2StoreId(val *string) {
 	if err := j.validateSetHl7V2StoreIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -374,7 +373,7 @@ func (j *jsiiProxy_DataGoogleHealthcareHl7V2StoreIamPolicy)SetHl7V2StoreId(val *
 	)
 }
 
-func (j *jsiiProxy_DataGoogleHealthcareHl7V2StoreIamPolicy)SetId(val *string) {
+func (j *jsiiProxy_DataGoogleHealthcareHl7V2StoreIamPolicy) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -385,7 +384,7 @@ func (j *jsiiProxy_DataGoogleHealthcareHl7V2StoreIamPolicy)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleHealthcareHl7V2StoreIamPolicy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGoogleHealthcareHl7V2StoreIamPolicy) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -396,7 +395,7 @@ func (j *jsiiProxy_DataGoogleHealthcareHl7V2StoreIamPolicy)SetLifecycle(val *cdk
 	)
 }
 
-func (j *jsiiProxy_DataGoogleHealthcareHl7V2StoreIamPolicy)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGoogleHealthcareHl7V2StoreIamPolicy) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -416,7 +415,7 @@ func DataGoogleHealthcareHl7V2StoreIamPolicy_GenerateConfigForImport(scope const
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleHealthcareHl7V2StoreIamPolicy.DataGoogleHealthcareHl7V2StoreIamPolicy",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -440,7 +439,7 @@ func DataGoogleHealthcareHl7V2StoreIamPolicy_GenerateConfigForImport(scope const
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataGoogleHealthcareHl7V2StoreIamPolicy_IsConstruct(x interface{}) *bool {
+func DataGoogleHealthcareHl7V2StoreIamPolicy_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleHealthcareHl7V2StoreIamPolicy_IsConstructParameters(x); err != nil {
@@ -451,7 +450,7 @@ func DataGoogleHealthcareHl7V2StoreIamPolicy_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleHealthcareHl7V2StoreIamPolicy.DataGoogleHealthcareHl7V2StoreIamPolicy",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -459,7 +458,7 @@ func DataGoogleHealthcareHl7V2StoreIamPolicy_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGoogleHealthcareHl7V2StoreIamPolicy_IsTerraformDataSource(x interface{}) *bool {
+func DataGoogleHealthcareHl7V2StoreIamPolicy_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleHealthcareHl7V2StoreIamPolicy_IsTerraformDataSourceParameters(x); err != nil {
@@ -470,7 +469,7 @@ func DataGoogleHealthcareHl7V2StoreIamPolicy_IsTerraformDataSource(x interface{}
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleHealthcareHl7V2StoreIamPolicy.DataGoogleHealthcareHl7V2StoreIamPolicy",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func DataGoogleHealthcareHl7V2StoreIamPolicy_IsTerraformDataSource(x interface{}
 }
 
 // Experimental.
-func DataGoogleHealthcareHl7V2StoreIamPolicy_IsTerraformElement(x interface{}) *bool {
+func DataGoogleHealthcareHl7V2StoreIamPolicy_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleHealthcareHl7V2StoreIamPolicy_IsTerraformElementParameters(x); err != nil {
@@ -489,7 +488,7 @@ func DataGoogleHealthcareHl7V2StoreIamPolicy_IsTerraformElement(x interface{}) *
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleHealthcareHl7V2StoreIamPolicy.DataGoogleHealthcareHl7V2StoreIamPolicy",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -507,27 +506,27 @@ func DataGoogleHealthcareHl7V2StoreIamPolicy_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleHealthcareHl7V2StoreIamPolicy) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataGoogleHealthcareHl7V2StoreIamPolicy) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataGoogleHealthcareHl7V2StoreIamPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataGoogleHealthcareHl7V2StoreIamPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -543,7 +542,7 @@ func (d *jsiiProxy_DataGoogleHealthcareHl7V2StoreIamPolicy) GetBooleanAttribute(
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -559,7 +558,7 @@ func (d *jsiiProxy_DataGoogleHealthcareHl7V2StoreIamPolicy) GetBooleanMapAttribu
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -575,7 +574,7 @@ func (d *jsiiProxy_DataGoogleHealthcareHl7V2StoreIamPolicy) GetListAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -591,7 +590,7 @@ func (d *jsiiProxy_DataGoogleHealthcareHl7V2StoreIamPolicy) GetNumberAttribute(t
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -607,7 +606,7 @@ func (d *jsiiProxy_DataGoogleHealthcareHl7V2StoreIamPolicy) GetNumberListAttribu
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -623,7 +622,7 @@ func (d *jsiiProxy_DataGoogleHealthcareHl7V2StoreIamPolicy) GetNumberMapAttribut
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -639,7 +638,7 @@ func (d *jsiiProxy_DataGoogleHealthcareHl7V2StoreIamPolicy) GetStringAttribute(t
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -655,7 +654,7 @@ func (d *jsiiProxy_DataGoogleHealthcareHl7V2StoreIamPolicy) GetStringMapAttribut
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -671,7 +670,7 @@ func (d *jsiiProxy_DataGoogleHealthcareHl7V2StoreIamPolicy) InterpolationForAttr
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -685,7 +684,7 @@ func (d *jsiiProxy_DataGoogleHealthcareHl7V2StoreIamPolicy) OverrideLogicalId(ne
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -705,8 +704,8 @@ func (d *jsiiProxy_DataGoogleHealthcareHl7V2StoreIamPolicy) ResetOverrideLogical
 	)
 }
 
-func (d *jsiiProxy_DataGoogleHealthcareHl7V2StoreIamPolicy) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleHealthcareHl7V2StoreIamPolicy) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -718,8 +717,8 @@ func (d *jsiiProxy_DataGoogleHealthcareHl7V2StoreIamPolicy) SynthesizeAttributes
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleHealthcareHl7V2StoreIamPolicy) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleHealthcareHl7V2StoreIamPolicy) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -731,8 +730,8 @@ func (d *jsiiProxy_DataGoogleHealthcareHl7V2StoreIamPolicy) SynthesizeHclAttribu
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleHealthcareHl7V2StoreIamPolicy) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleHealthcareHl7V2StoreIamPolicy) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -744,8 +743,8 @@ func (d *jsiiProxy_DataGoogleHealthcareHl7V2StoreIamPolicy) ToHclTerraform() int
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleHealthcareHl7V2StoreIamPolicy) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleHealthcareHl7V2StoreIamPolicy) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -770,8 +769,8 @@ func (d *jsiiProxy_DataGoogleHealthcareHl7V2StoreIamPolicy) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleHealthcareHl7V2StoreIamPolicy) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleHealthcareHl7V2StoreIamPolicy) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -782,4 +781,3 @@ func (d *jsiiProxy_DataGoogleHealthcareHl7V2StoreIamPolicy) ToTerraform() interf
 
 	return returns
 }
-

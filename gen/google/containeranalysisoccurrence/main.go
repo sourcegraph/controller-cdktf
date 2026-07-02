@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrence",
-		reflect.TypeOf((*ContainerAnalysisOccurrence)(nil)).Elem(),
+		reflect.TypeFor[ContainerAnalysisOccurrence](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,7 +77,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ContainerAnalysisOccurrence{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -85,11 +85,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrenceAttestation",
-		reflect.TypeOf((*ContainerAnalysisOccurrenceAttestation)(nil)).Elem(),
+		reflect.TypeFor[ContainerAnalysisOccurrenceAttestation](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrenceAttestationOutputReference",
-		reflect.TypeOf((*ContainerAnalysisOccurrenceAttestationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ContainerAnalysisOccurrenceAttestationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -118,7 +118,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ContainerAnalysisOccurrenceAttestationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -126,11 +126,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrenceAttestationSignatures",
-		reflect.TypeOf((*ContainerAnalysisOccurrenceAttestationSignatures)(nil)).Elem(),
+		reflect.TypeFor[ContainerAnalysisOccurrenceAttestationSignatures](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrenceAttestationSignaturesList",
-		reflect.TypeOf((*ContainerAnalysisOccurrenceAttestationSignaturesList)(nil)).Elem(),
+		reflect.TypeFor[ContainerAnalysisOccurrenceAttestationSignaturesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -144,7 +144,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ContainerAnalysisOccurrenceAttestationSignaturesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -152,7 +152,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrenceAttestationSignaturesOutputReference",
-		reflect.TypeOf((*ContainerAnalysisOccurrenceAttestationSignaturesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ContainerAnalysisOccurrenceAttestationSignaturesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -181,7 +181,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ContainerAnalysisOccurrenceAttestationSignaturesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -189,15 +189,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrenceConfig",
-		reflect.TypeOf((*ContainerAnalysisOccurrenceConfig)(nil)).Elem(),
+		reflect.TypeFor[ContainerAnalysisOccurrenceConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrenceTimeouts",
-		reflect.TypeOf((*ContainerAnalysisOccurrenceTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ContainerAnalysisOccurrenceTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrenceTimeoutsOutputReference",
-		reflect.TypeOf((*ContainerAnalysisOccurrenceTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ContainerAnalysisOccurrenceTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -230,7 +230,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ContainerAnalysisOccurrenceTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

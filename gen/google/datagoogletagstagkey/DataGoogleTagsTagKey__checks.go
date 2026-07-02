@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataGoogleTagsTagKey) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataGoogleTagsTagKey) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataGoogleTagsTagKey_GenerateConfigForImportParameters(scope constr
 	return nil
 }
 
-func validateDataGoogleTagsTagKey_IsConstructParameters(x interface{}) error {
+func validateDataGoogleTagsTagKey_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataGoogleTagsTagKey_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateDataGoogleTagsTagKey_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataGoogleTagsTagKey_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataGoogleTagsTagKey_IsTerraformDataSourceParameters(x interface{})
 	return nil
 }
 
-func validateDataGoogleTagsTagKey_IsTerraformElementParameters(x interface{}) error {
+func validateDataGoogleTagsTagKey_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func validateDataGoogleTagsTagKey_IsTerraformElementParameters(x interface{}) er
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleTagsTagKey) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleTagsTagKey) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -250,4 +250,3 @@ func validateNewDataGoogleTagsTagKeyParameters(scope constructs.Construct, id *s
 
 	return nil
 }
-

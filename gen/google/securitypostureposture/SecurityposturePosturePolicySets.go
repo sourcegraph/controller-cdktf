@@ -1,11 +1,10 @@
 package securitypostureposture
 
-
 type SecurityposturePosturePolicySets struct {
 	// policies block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/securityposture_posture#policies SecurityposturePosture#policies}
-	Policies interface{} `field:"required" json:"policies" yaml:"policies"`
+	Policies any `field:"required" json:"policies" yaml:"policies"`
 	// ID of the policy set.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/securityposture_posture#policy_set_id SecurityposturePosture#policy_set_id}
@@ -15,4 +14,3 @@ type SecurityposturePosturePolicySets struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/securityposture_posture#description SecurityposturePosture#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 }
-

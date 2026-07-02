@@ -98,7 +98,7 @@ func (b *jsiiProxy_BigqueryTableExternalDataConfigurationAvroOptionsOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryTableExternalDataConfigurationAvroOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryTableExternalDataConfigurationAvroOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -187,7 +187,7 @@ func (j *jsiiProxy_BigqueryTableExternalDataConfigurationAvroOptionsOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryTableExternalDataConfigurationAvroOptionsOutputReference) validateSetUseAvroLogicalTypesParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryTableExternalDataConfigurationAvroOptionsOutputReference) validateSetUseAvroLogicalTypesParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -218,4 +218,3 @@ func validateNewBigqueryTableExternalDataConfigurationAvroOptionsOutputReference
 
 	return nil
 }
-

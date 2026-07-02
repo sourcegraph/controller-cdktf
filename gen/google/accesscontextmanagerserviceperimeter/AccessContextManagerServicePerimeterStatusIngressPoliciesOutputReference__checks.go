@@ -120,7 +120,7 @@ func (a *jsiiProxy_AccessContextManagerServicePerimeterStatusIngressPoliciesOutp
 	return nil
 }
 
-func (j *jsiiProxy_AccessContextManagerServicePerimeterStatusIngressPoliciesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AccessContextManagerServicePerimeterStatusIngressPoliciesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -185,7 +185,7 @@ func (j *jsiiProxy_AccessContextManagerServicePerimeterStatusIngressPoliciesOutp
 	return nil
 }
 
-func (j *jsiiProxy_AccessContextManagerServicePerimeterStatusIngressPoliciesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AccessContextManagerServicePerimeterStatusIngressPoliciesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -252,4 +252,3 @@ func validateNewAccessContextManagerServicePerimeterStatusIngressPoliciesOutputR
 
 	return nil
 }
-

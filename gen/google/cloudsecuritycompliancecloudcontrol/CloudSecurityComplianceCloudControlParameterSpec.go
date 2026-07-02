@@ -1,11 +1,10 @@
 package cloudsecuritycompliancecloudcontrol
 
-
 type CloudSecurityComplianceCloudControlParameterSpec struct {
 	// if the parameter is required.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#is_required CloudSecurityComplianceCloudControl#is_required}
-	IsRequired interface{} `field:"required" json:"isRequired" yaml:"isRequired"`
+	IsRequired any `field:"required" json:"isRequired" yaml:"isRequired"`
 	// The name of the parameter.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#name CloudSecurityComplianceCloudControl#name}
@@ -29,14 +28,13 @@ type CloudSecurityComplianceCloudControlParameterSpec struct {
 	// sub_parameters block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#sub_parameters CloudSecurityComplianceCloudControl#sub_parameters}
-	SubParameters interface{} `field:"optional" json:"subParameters" yaml:"subParameters"`
+	SubParameters any `field:"optional" json:"subParameters" yaml:"subParameters"`
 	// substitution_rules block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#substitution_rules CloudSecurityComplianceCloudControl#substitution_rules}
-	SubstitutionRules interface{} `field:"optional" json:"substitutionRules" yaml:"substitutionRules"`
+	SubstitutionRules any `field:"optional" json:"substitutionRules" yaml:"substitutionRules"`
 	// validation block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_cloud_control#validation CloudSecurityComplianceCloudControl#validation}
 	Validation *CloudSecurityComplianceCloudControlParameterSpecValidation `field:"optional" json:"validation" yaml:"validation"`
 }
-

@@ -1,6 +1,5 @@
 package kmsekmconnection
 
-
 type KmsEkmConnectionServiceResolvers struct {
 	// Required. The hostname of the EKM replica used at TLS and HTTP layers.
 	//
@@ -9,7 +8,7 @@ type KmsEkmConnectionServiceResolvers struct {
 	// server_certificates block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_ekm_connection#server_certificates KmsEkmConnection#server_certificates}
-	ServerCertificates interface{} `field:"required" json:"serverCertificates" yaml:"serverCertificates"`
+	ServerCertificates any `field:"required" json:"serverCertificates" yaml:"serverCertificates"`
 	// Required.
 	//
 	// The resource name of the Service Directory service pointing to an EKM replica, in the format projects/* /locations/* /namespaces/* /services/*
@@ -25,4 +24,3 @@ type KmsEkmConnectionServiceResolvers struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_ekm_connection#endpoint_filter KmsEkmConnection#endpoint_filter}
 	EndpointFilter *string `field:"optional" json:"endpointFilter" yaml:"endpointFilter"`
 }
-

@@ -15,9 +15,9 @@ type PubsubSubscriptionPushConfigOutputReference interface {
 	AttributesInput() *map[string]*string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -50,7 +50,7 @@ type PubsubSubscriptionPushConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -78,7 +78,7 @@ type PubsubSubscriptionPushConfigOutputReference interface {
 	ResetOidcToken()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -111,8 +111,8 @@ func (j *jsiiProxy_PubsubSubscriptionPushConfigOutputReference) AttributesInput(
 	return returns
 }
 
-func (j *jsiiProxy_PubsubSubscriptionPushConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PubsubSubscriptionPushConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -241,7 +241,6 @@ func (j *jsiiProxy_PubsubSubscriptionPushConfigOutputReference) TerraformResourc
 	return returns
 }
 
-
 func NewPubsubSubscriptionPushConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PubsubSubscriptionPushConfigOutputReference {
 	_init_.Initialize()
 
@@ -252,7 +251,7 @@ func NewPubsubSubscriptionPushConfigOutputReference(terraformResource cdktf.IInt
 
 	_jsii_.Create(
 		"@cdktf/provider-google.pubsubSubscription.PubsubSubscriptionPushConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -264,12 +263,12 @@ func NewPubsubSubscriptionPushConfigOutputReference_Override(p PubsubSubscriptio
 
 	_jsii_.Create(
 		"@cdktf/provider-google.pubsubSubscription.PubsubSubscriptionPushConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PubsubSubscriptionPushConfigOutputReference)SetAttributes(val *map[string]*string) {
+func (j *jsiiProxy_PubsubSubscriptionPushConfigOutputReference) SetAttributes(val *map[string]*string) {
 	if err := j.validateSetAttributesParameters(val); err != nil {
 		panic(err)
 	}
@@ -280,7 +279,7 @@ func (j *jsiiProxy_PubsubSubscriptionPushConfigOutputReference)SetAttributes(val
 	)
 }
 
-func (j *jsiiProxy_PubsubSubscriptionPushConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_PubsubSubscriptionPushConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -291,7 +290,7 @@ func (j *jsiiProxy_PubsubSubscriptionPushConfigOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_PubsubSubscriptionPushConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_PubsubSubscriptionPushConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -302,7 +301,7 @@ func (j *jsiiProxy_PubsubSubscriptionPushConfigOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_PubsubSubscriptionPushConfigOutputReference)SetInternalValue(val *PubsubSubscriptionPushConfig) {
+func (j *jsiiProxy_PubsubSubscriptionPushConfigOutputReference) SetInternalValue(val *PubsubSubscriptionPushConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -313,7 +312,7 @@ func (j *jsiiProxy_PubsubSubscriptionPushConfigOutputReference)SetInternalValue(
 	)
 }
 
-func (j *jsiiProxy_PubsubSubscriptionPushConfigOutputReference)SetPushEndpoint(val *string) {
+func (j *jsiiProxy_PubsubSubscriptionPushConfigOutputReference) SetPushEndpoint(val *string) {
 	if err := j.validateSetPushEndpointParameters(val); err != nil {
 		panic(err)
 	}
@@ -324,7 +323,7 @@ func (j *jsiiProxy_PubsubSubscriptionPushConfigOutputReference)SetPushEndpoint(v
 	)
 }
 
-func (j *jsiiProxy_PubsubSubscriptionPushConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_PubsubSubscriptionPushConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -335,7 +334,7 @@ func (j *jsiiProxy_PubsubSubscriptionPushConfigOutputReference)SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_PubsubSubscriptionPushConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PubsubSubscriptionPushConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -359,16 +358,16 @@ func (p *jsiiProxy_PubsubSubscriptionPushConfigOutputReference) ComputeFqn() *st
 	return returns
 }
 
-func (p *jsiiProxy_PubsubSubscriptionPushConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_PubsubSubscriptionPushConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -384,7 +383,7 @@ func (p *jsiiProxy_PubsubSubscriptionPushConfigOutputReference) GetBooleanAttrib
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -400,7 +399,7 @@ func (p *jsiiProxy_PubsubSubscriptionPushConfigOutputReference) GetBooleanMapAtt
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -416,7 +415,7 @@ func (p *jsiiProxy_PubsubSubscriptionPushConfigOutputReference) GetListAttribute
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -432,7 +431,7 @@ func (p *jsiiProxy_PubsubSubscriptionPushConfigOutputReference) GetNumberAttribu
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -448,7 +447,7 @@ func (p *jsiiProxy_PubsubSubscriptionPushConfigOutputReference) GetNumberListAtt
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -464,7 +463,7 @@ func (p *jsiiProxy_PubsubSubscriptionPushConfigOutputReference) GetNumberMapAttr
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -480,7 +479,7 @@ func (p *jsiiProxy_PubsubSubscriptionPushConfigOutputReference) GetStringAttribu
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -496,7 +495,7 @@ func (p *jsiiProxy_PubsubSubscriptionPushConfigOutputReference) GetStringMapAttr
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -525,7 +524,7 @@ func (p *jsiiProxy_PubsubSubscriptionPushConfigOutputReference) InterpolationFor
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -539,7 +538,7 @@ func (p *jsiiProxy_PubsubSubscriptionPushConfigOutputReference) PutNoWrapper(val
 	_jsii_.InvokeVoid(
 		p,
 		"putNoWrapper",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -550,7 +549,7 @@ func (p *jsiiProxy_PubsubSubscriptionPushConfigOutputReference) PutOidcToken(val
 	_jsii_.InvokeVoid(
 		p,
 		"putOidcToken",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -578,16 +577,16 @@ func (p *jsiiProxy_PubsubSubscriptionPushConfigOutputReference) ResetOidcToken()
 	)
 }
 
-func (p *jsiiProxy_PubsubSubscriptionPushConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PubsubSubscriptionPushConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := p.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -606,4 +605,3 @@ func (p *jsiiProxy_PubsubSubscriptionPushConfigOutputReference) ToString() *stri
 
 	return returns
 }
-

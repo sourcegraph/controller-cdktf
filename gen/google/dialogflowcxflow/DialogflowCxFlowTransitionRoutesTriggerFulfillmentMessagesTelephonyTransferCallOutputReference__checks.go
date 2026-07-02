@@ -98,7 +98,7 @@ func (d *jsiiProxy_DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesTel
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesTelephonyTransferCallOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesTelephonyTransferCallOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesTeleph
 
 	return nil
 }
-

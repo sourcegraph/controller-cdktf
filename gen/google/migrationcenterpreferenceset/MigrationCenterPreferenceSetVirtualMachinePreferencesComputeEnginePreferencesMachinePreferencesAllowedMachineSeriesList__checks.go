@@ -34,7 +34,7 @@ func (m *jsiiProxy_MigrationCenterPreferenceSetVirtualMachinePreferencesComputeE
 	return nil
 }
 
-func (j *jsiiProxy_MigrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePreferencesMachinePreferencesAllowedMachineSeriesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_MigrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePreferencesMachinePreferencesAllowedMachineSeriesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewMigrationCenterPreferenceSetVirtualMachinePreferencesComputeEngi
 
 	return nil
 }
-

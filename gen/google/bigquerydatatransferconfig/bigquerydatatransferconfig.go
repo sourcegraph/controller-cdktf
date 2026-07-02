@@ -15,15 +15,15 @@ type BigqueryDataTransferConfig interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DataRefreshWindowDays() *float64
 	SetDataRefreshWindowDays(val *float64)
 	DataRefreshWindowDaysInput() *float64
@@ -37,9 +37,9 @@ type BigqueryDataTransferConfig interface {
 	DestinationDatasetId() *string
 	SetDestinationDatasetId(val *string)
 	DestinationDatasetIdInput() *string
-	Disabled() interface{}
-	SetDisabled(val interface{})
-	DisabledInput() interface{}
+	Disabled() any
+	SetDisabled(val any)
+	DisabledInput() any
 	DisplayName() *string
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
@@ -82,11 +82,11 @@ type BigqueryDataTransferConfig interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Schedule() *string
 	SetSchedule(val *string)
 	ScheduleInput() *string
@@ -100,18 +100,18 @@ type BigqueryDataTransferConfig interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() BigqueryDataTransferConfigTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -129,7 +129,7 @@ type BigqueryDataTransferConfig interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -141,7 +141,7 @@ type BigqueryDataTransferConfig interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -170,17 +170,17 @@ type BigqueryDataTransferConfig interface {
 	ResetSensitiveParams()
 	ResetServiceAccountName()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for BigqueryDataTransferConfig
@@ -198,8 +198,8 @@ func (j *jsiiProxy_BigqueryDataTransferConfig) CdktfStack() cdktf.TerraformStack
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryDataTransferConfig) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigqueryDataTransferConfig) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -208,8 +208,8 @@ func (j *jsiiProxy_BigqueryDataTransferConfig) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryDataTransferConfig) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_BigqueryDataTransferConfig) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -218,8 +218,8 @@ func (j *jsiiProxy_BigqueryDataTransferConfig) ConstructNodeMetadata() *map[stri
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryDataTransferConfig) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigqueryDataTransferConfig) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -298,8 +298,8 @@ func (j *jsiiProxy_BigqueryDataTransferConfig) DestinationDatasetIdInput() *stri
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryDataTransferConfig) Disabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigqueryDataTransferConfig) Disabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disabled",
@@ -308,8 +308,8 @@ func (j *jsiiProxy_BigqueryDataTransferConfig) Disabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryDataTransferConfig) DisabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigqueryDataTransferConfig) DisabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disabledInput",
@@ -548,8 +548,8 @@ func (j *jsiiProxy_BigqueryDataTransferConfig) Provider() cdktf.TerraformProvide
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryDataTransferConfig) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_BigqueryDataTransferConfig) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -558,8 +558,8 @@ func (j *jsiiProxy_BigqueryDataTransferConfig) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryDataTransferConfig) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigqueryDataTransferConfig) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -658,8 +658,8 @@ func (j *jsiiProxy_BigqueryDataTransferConfig) TerraformGeneratorMetadata() *cdk
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryDataTransferConfig) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_BigqueryDataTransferConfig) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -688,8 +688,8 @@ func (j *jsiiProxy_BigqueryDataTransferConfig) Timeouts() BigqueryDataTransferCo
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryDataTransferConfig) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigqueryDataTransferConfig) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -697,7 +697,6 @@ func (j *jsiiProxy_BigqueryDataTransferConfig) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_data_transfer_config google_bigquery_data_transfer_config} Resource.
 func NewBigqueryDataTransferConfig(scope constructs.Construct, id *string, config *BigqueryDataTransferConfigConfig) BigqueryDataTransferConfig {
@@ -710,7 +709,7 @@ func NewBigqueryDataTransferConfig(scope constructs.Construct, id *string, confi
 
 	_jsii_.Create(
 		"@cdktf/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfig",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -723,12 +722,12 @@ func NewBigqueryDataTransferConfig_Override(b BigqueryDataTransferConfig, scope 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfig",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		b,
 	)
 }
 
-func (j *jsiiProxy_BigqueryDataTransferConfig)SetConnection(val interface{}) {
+func (j *jsiiProxy_BigqueryDataTransferConfig) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -739,7 +738,7 @@ func (j *jsiiProxy_BigqueryDataTransferConfig)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_BigqueryDataTransferConfig)SetCount(val interface{}) {
+func (j *jsiiProxy_BigqueryDataTransferConfig) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -750,7 +749,7 @@ func (j *jsiiProxy_BigqueryDataTransferConfig)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_BigqueryDataTransferConfig)SetDataRefreshWindowDays(val *float64) {
+func (j *jsiiProxy_BigqueryDataTransferConfig) SetDataRefreshWindowDays(val *float64) {
 	if err := j.validateSetDataRefreshWindowDaysParameters(val); err != nil {
 		panic(err)
 	}
@@ -761,7 +760,7 @@ func (j *jsiiProxy_BigqueryDataTransferConfig)SetDataRefreshWindowDays(val *floa
 	)
 }
 
-func (j *jsiiProxy_BigqueryDataTransferConfig)SetDataSourceId(val *string) {
+func (j *jsiiProxy_BigqueryDataTransferConfig) SetDataSourceId(val *string) {
 	if err := j.validateSetDataSourceIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -772,7 +771,7 @@ func (j *jsiiProxy_BigqueryDataTransferConfig)SetDataSourceId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BigqueryDataTransferConfig)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_BigqueryDataTransferConfig) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -780,7 +779,7 @@ func (j *jsiiProxy_BigqueryDataTransferConfig)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_BigqueryDataTransferConfig)SetDestinationDatasetId(val *string) {
+func (j *jsiiProxy_BigqueryDataTransferConfig) SetDestinationDatasetId(val *string) {
 	if err := j.validateSetDestinationDatasetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -791,7 +790,7 @@ func (j *jsiiProxy_BigqueryDataTransferConfig)SetDestinationDatasetId(val *strin
 	)
 }
 
-func (j *jsiiProxy_BigqueryDataTransferConfig)SetDisabled(val interface{}) {
+func (j *jsiiProxy_BigqueryDataTransferConfig) SetDisabled(val any) {
 	if err := j.validateSetDisabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -802,7 +801,7 @@ func (j *jsiiProxy_BigqueryDataTransferConfig)SetDisabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_BigqueryDataTransferConfig)SetDisplayName(val *string) {
+func (j *jsiiProxy_BigqueryDataTransferConfig) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -813,7 +812,7 @@ func (j *jsiiProxy_BigqueryDataTransferConfig)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BigqueryDataTransferConfig)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_BigqueryDataTransferConfig) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -821,7 +820,7 @@ func (j *jsiiProxy_BigqueryDataTransferConfig)SetForEach(val cdktf.ITerraformIte
 	)
 }
 
-func (j *jsiiProxy_BigqueryDataTransferConfig)SetId(val *string) {
+func (j *jsiiProxy_BigqueryDataTransferConfig) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -832,7 +831,7 @@ func (j *jsiiProxy_BigqueryDataTransferConfig)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BigqueryDataTransferConfig)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_BigqueryDataTransferConfig) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -843,7 +842,7 @@ func (j *jsiiProxy_BigqueryDataTransferConfig)SetLifecycle(val *cdktf.TerraformR
 	)
 }
 
-func (j *jsiiProxy_BigqueryDataTransferConfig)SetLocation(val *string) {
+func (j *jsiiProxy_BigqueryDataTransferConfig) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -854,7 +853,7 @@ func (j *jsiiProxy_BigqueryDataTransferConfig)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BigqueryDataTransferConfig)SetNotificationPubsubTopic(val *string) {
+func (j *jsiiProxy_BigqueryDataTransferConfig) SetNotificationPubsubTopic(val *string) {
 	if err := j.validateSetNotificationPubsubTopicParameters(val); err != nil {
 		panic(err)
 	}
@@ -865,7 +864,7 @@ func (j *jsiiProxy_BigqueryDataTransferConfig)SetNotificationPubsubTopic(val *st
 	)
 }
 
-func (j *jsiiProxy_BigqueryDataTransferConfig)SetParams(val *map[string]*string) {
+func (j *jsiiProxy_BigqueryDataTransferConfig) SetParams(val *map[string]*string) {
 	if err := j.validateSetParamsParameters(val); err != nil {
 		panic(err)
 	}
@@ -876,7 +875,7 @@ func (j *jsiiProxy_BigqueryDataTransferConfig)SetParams(val *map[string]*string)
 	)
 }
 
-func (j *jsiiProxy_BigqueryDataTransferConfig)SetProject(val *string) {
+func (j *jsiiProxy_BigqueryDataTransferConfig) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -887,7 +886,7 @@ func (j *jsiiProxy_BigqueryDataTransferConfig)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BigqueryDataTransferConfig)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_BigqueryDataTransferConfig) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -895,7 +894,7 @@ func (j *jsiiProxy_BigqueryDataTransferConfig)SetProvider(val cdktf.TerraformPro
 	)
 }
 
-func (j *jsiiProxy_BigqueryDataTransferConfig)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_BigqueryDataTransferConfig) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -906,7 +905,7 @@ func (j *jsiiProxy_BigqueryDataTransferConfig)SetProvisioners(val *[]interface{}
 	)
 }
 
-func (j *jsiiProxy_BigqueryDataTransferConfig)SetSchedule(val *string) {
+func (j *jsiiProxy_BigqueryDataTransferConfig) SetSchedule(val *string) {
 	if err := j.validateSetScheduleParameters(val); err != nil {
 		panic(err)
 	}
@@ -917,7 +916,7 @@ func (j *jsiiProxy_BigqueryDataTransferConfig)SetSchedule(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BigqueryDataTransferConfig)SetServiceAccountName(val *string) {
+func (j *jsiiProxy_BigqueryDataTransferConfig) SetServiceAccountName(val *string) {
 	if err := j.validateSetServiceAccountNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -940,7 +939,7 @@ func BigqueryDataTransferConfig_GenerateConfigForImport(scope constructs.Constru
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfig",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -964,7 +963,7 @@ func BigqueryDataTransferConfig_GenerateConfigForImport(scope constructs.Constru
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func BigqueryDataTransferConfig_IsConstruct(x interface{}) *bool {
+func BigqueryDataTransferConfig_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateBigqueryDataTransferConfig_IsConstructParameters(x); err != nil {
@@ -975,7 +974,7 @@ func BigqueryDataTransferConfig_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfig",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -983,7 +982,7 @@ func BigqueryDataTransferConfig_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func BigqueryDataTransferConfig_IsTerraformElement(x interface{}) *bool {
+func BigqueryDataTransferConfig_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateBigqueryDataTransferConfig_IsTerraformElementParameters(x); err != nil {
@@ -994,7 +993,7 @@ func BigqueryDataTransferConfig_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfig",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1002,7 +1001,7 @@ func BigqueryDataTransferConfig_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func BigqueryDataTransferConfig_IsTerraformResource(x interface{}) *bool {
+func BigqueryDataTransferConfig_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateBigqueryDataTransferConfig_IsTerraformResourceParameters(x); err != nil {
@@ -1013,7 +1012,7 @@ func BigqueryDataTransferConfig_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfig",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1038,31 +1037,31 @@ func (b *jsiiProxy_BigqueryDataTransferConfig) AddMoveTarget(moveTarget *string)
 	_jsii_.InvokeVoid(
 		b,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (b *jsiiProxy_BigqueryDataTransferConfig) AddOverride(path *string, value interface{}) {
+func (b *jsiiProxy_BigqueryDataTransferConfig) AddOverride(path *string, value any) {
 	if err := b.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		b,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (b *jsiiProxy_BigqueryDataTransferConfig) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (b *jsiiProxy_BigqueryDataTransferConfig) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := b.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1078,7 +1077,7 @@ func (b *jsiiProxy_BigqueryDataTransferConfig) GetBooleanAttribute(terraformAttr
 	_jsii_.Invoke(
 		b,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1094,7 +1093,7 @@ func (b *jsiiProxy_BigqueryDataTransferConfig) GetBooleanMapAttribute(terraformA
 	_jsii_.Invoke(
 		b,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1110,7 +1109,7 @@ func (b *jsiiProxy_BigqueryDataTransferConfig) GetListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		b,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1126,7 +1125,7 @@ func (b *jsiiProxy_BigqueryDataTransferConfig) GetNumberAttribute(terraformAttri
 	_jsii_.Invoke(
 		b,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1142,7 +1141,7 @@ func (b *jsiiProxy_BigqueryDataTransferConfig) GetNumberListAttribute(terraformA
 	_jsii_.Invoke(
 		b,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1158,7 +1157,7 @@ func (b *jsiiProxy_BigqueryDataTransferConfig) GetNumberMapAttribute(terraformAt
 	_jsii_.Invoke(
 		b,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1174,7 +1173,7 @@ func (b *jsiiProxy_BigqueryDataTransferConfig) GetStringAttribute(terraformAttri
 	_jsii_.Invoke(
 		b,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1190,15 +1189,15 @@ func (b *jsiiProxy_BigqueryDataTransferConfig) GetStringMapAttribute(terraformAt
 	_jsii_.Invoke(
 		b,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryDataTransferConfig) HasResourceMove() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BigqueryDataTransferConfig) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -1217,7 +1216,7 @@ func (b *jsiiProxy_BigqueryDataTransferConfig) ImportFrom(id *string, provider c
 	_jsii_.InvokeVoid(
 		b,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1230,7 +1229,7 @@ func (b *jsiiProxy_BigqueryDataTransferConfig) InterpolationForAttribute(terrafo
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1244,18 +1243,18 @@ func (b *jsiiProxy_BigqueryDataTransferConfig) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		b,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (b *jsiiProxy_BigqueryDataTransferConfig) MoveTo(moveTarget *string, index interface{}) {
+func (b *jsiiProxy_BigqueryDataTransferConfig) MoveTo(moveTarget *string, index any) {
 	if err := b.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		b,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1266,7 +1265,7 @@ func (b *jsiiProxy_BigqueryDataTransferConfig) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		b,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1277,7 +1276,7 @@ func (b *jsiiProxy_BigqueryDataTransferConfig) OverrideLogicalId(newLogicalId *s
 	_jsii_.InvokeVoid(
 		b,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1288,7 +1287,7 @@ func (b *jsiiProxy_BigqueryDataTransferConfig) PutEmailPreferences(value *Bigque
 	_jsii_.InvokeVoid(
 		b,
 		"putEmailPreferences",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1299,7 +1298,7 @@ func (b *jsiiProxy_BigqueryDataTransferConfig) PutEncryptionConfiguration(value 
 	_jsii_.InvokeVoid(
 		b,
 		"putEncryptionConfiguration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1310,7 +1309,7 @@ func (b *jsiiProxy_BigqueryDataTransferConfig) PutScheduleOptions(value *Bigquer
 	_jsii_.InvokeVoid(
 		b,
 		"putScheduleOptions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1321,7 +1320,7 @@ func (b *jsiiProxy_BigqueryDataTransferConfig) PutSensitiveParams(value *Bigquer
 	_jsii_.InvokeVoid(
 		b,
 		"putSensitiveParams",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1332,7 +1331,7 @@ func (b *jsiiProxy_BigqueryDataTransferConfig) PutTimeouts(value *BigqueryDataTr
 	_jsii_.InvokeVoid(
 		b,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1456,8 +1455,8 @@ func (b *jsiiProxy_BigqueryDataTransferConfig) ResetTimeouts() {
 	)
 }
 
-func (b *jsiiProxy_BigqueryDataTransferConfig) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (b *jsiiProxy_BigqueryDataTransferConfig) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
@@ -1469,8 +1468,8 @@ func (b *jsiiProxy_BigqueryDataTransferConfig) SynthesizeAttributes() *map[strin
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryDataTransferConfig) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (b *jsiiProxy_BigqueryDataTransferConfig) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
@@ -1482,8 +1481,8 @@ func (b *jsiiProxy_BigqueryDataTransferConfig) SynthesizeHclAttributes() *map[st
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryDataTransferConfig) ToHclTerraform() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BigqueryDataTransferConfig) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -1495,8 +1494,8 @@ func (b *jsiiProxy_BigqueryDataTransferConfig) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryDataTransferConfig) ToMetadata() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BigqueryDataTransferConfig) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -1521,8 +1520,8 @@ func (b *jsiiProxy_BigqueryDataTransferConfig) ToString() *string {
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryDataTransferConfig) ToTerraform() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BigqueryDataTransferConfig) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -1533,4 +1532,3 @@ func (b *jsiiProxy_BigqueryDataTransferConfig) ToTerraform() interface{} {
 
 	return returns
 }
-

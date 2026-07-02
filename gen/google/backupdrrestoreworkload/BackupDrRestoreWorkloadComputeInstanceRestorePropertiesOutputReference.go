@@ -14,14 +14,14 @@ type BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference inte
 	AdvancedMachineFeaturesInput() *BackupDrRestoreWorkloadComputeInstanceRestorePropertiesAdvancedMachineFeatures
 	AllocationAffinity() BackupDrRestoreWorkloadComputeInstanceRestorePropertiesAllocationAffinityOutputReference
 	AllocationAffinityInput() *BackupDrRestoreWorkloadComputeInstanceRestorePropertiesAllocationAffinity
-	CanIpForward() interface{}
-	SetCanIpForward(val interface{})
-	CanIpForwardInput() interface{}
+	CanIpForward() any
+	SetCanIpForward(val any)
+	CanIpForwardInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -34,20 +34,20 @@ type BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference inte
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	DeletionProtection() interface{}
-	SetDeletionProtection(val interface{})
-	DeletionProtectionInput() interface{}
+	DeletionProtection() any
+	SetDeletionProtection(val any)
+	DeletionProtectionInput() any
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
 	Disks() BackupDrRestoreWorkloadComputeInstanceRestorePropertiesDisksList
-	DisksInput() interface{}
+	DisksInput() any
 	DisplayDevice() BackupDrRestoreWorkloadComputeInstanceRestorePropertiesDisplayDeviceOutputReference
 	DisplayDeviceInput() *BackupDrRestoreWorkloadComputeInstanceRestorePropertiesDisplayDevice
 	// Experimental.
 	Fqn() *string
 	GuestAccelerators() BackupDrRestoreWorkloadComputeInstanceRestorePropertiesGuestAcceleratorsList
-	GuestAcceleratorsInput() interface{}
+	GuestAcceleratorsInput() any
 	Hostname() *string
 	SetHostname(val *string)
 	HostnameInput() *string
@@ -59,7 +59,7 @@ type BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference inte
 	SetKeyRevocationActionType(val *string)
 	KeyRevocationActionTypeInput() *string
 	Labels() BackupDrRestoreWorkloadComputeInstanceRestorePropertiesLabelsList
-	LabelsInput() interface{}
+	LabelsInput() any
 	MachineType() *string
 	SetMachineType(val *string)
 	MachineTypeInput() *string
@@ -72,7 +72,7 @@ type BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference inte
 	SetName(val *string)
 	NameInput() *string
 	NetworkInterfaces() BackupDrRestoreWorkloadComputeInstanceRestorePropertiesNetworkInterfacesList
-	NetworkInterfacesInput() interface{}
+	NetworkInterfacesInput() any
 	NetworkPerformanceConfig() BackupDrRestoreWorkloadComputeInstanceRestorePropertiesNetworkPerformanceConfigOutputReference
 	NetworkPerformanceConfigInput() *BackupDrRestoreWorkloadComputeInstanceRestorePropertiesNetworkPerformanceConfig
 	Params() BackupDrRestoreWorkloadComputeInstanceRestorePropertiesParamsOutputReference
@@ -86,7 +86,7 @@ type BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference inte
 	Scheduling() BackupDrRestoreWorkloadComputeInstanceRestorePropertiesSchedulingOutputReference
 	SchedulingInput() *BackupDrRestoreWorkloadComputeInstanceRestorePropertiesScheduling
 	ServiceAccounts() BackupDrRestoreWorkloadComputeInstanceRestorePropertiesServiceAccountsList
-	ServiceAccountsInput() interface{}
+	ServiceAccountsInput() any
 	ShieldedInstanceConfig() BackupDrRestoreWorkloadComputeInstanceRestorePropertiesShieldedInstanceConfigOutputReference
 	ShieldedInstanceConfigInput() *BackupDrRestoreWorkloadComputeInstanceRestorePropertiesShieldedInstanceConfig
 	Tags() BackupDrRestoreWorkloadComputeInstanceRestorePropertiesTagsOutputReference
@@ -102,7 +102,7 @@ type BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference inte
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -126,17 +126,17 @@ type BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference inte
 	PutAdvancedMachineFeatures(value *BackupDrRestoreWorkloadComputeInstanceRestorePropertiesAdvancedMachineFeatures)
 	PutAllocationAffinity(value *BackupDrRestoreWorkloadComputeInstanceRestorePropertiesAllocationAffinity)
 	PutConfidentialInstanceConfig(value *BackupDrRestoreWorkloadComputeInstanceRestorePropertiesConfidentialInstanceConfig)
-	PutDisks(value interface{})
+	PutDisks(value any)
 	PutDisplayDevice(value *BackupDrRestoreWorkloadComputeInstanceRestorePropertiesDisplayDevice)
-	PutGuestAccelerators(value interface{})
+	PutGuestAccelerators(value any)
 	PutInstanceEncryptionKey(value *BackupDrRestoreWorkloadComputeInstanceRestorePropertiesInstanceEncryptionKey)
-	PutLabels(value interface{})
+	PutLabels(value any)
 	PutMetadata(value *BackupDrRestoreWorkloadComputeInstanceRestorePropertiesMetadata)
-	PutNetworkInterfaces(value interface{})
+	PutNetworkInterfaces(value any)
 	PutNetworkPerformanceConfig(value *BackupDrRestoreWorkloadComputeInstanceRestorePropertiesNetworkPerformanceConfig)
 	PutParams(value *BackupDrRestoreWorkloadComputeInstanceRestorePropertiesParams)
 	PutScheduling(value *BackupDrRestoreWorkloadComputeInstanceRestorePropertiesScheduling)
-	PutServiceAccounts(value interface{})
+	PutServiceAccounts(value any)
 	PutShieldedInstanceConfig(value *BackupDrRestoreWorkloadComputeInstanceRestorePropertiesShieldedInstanceConfig)
 	PutTags(value *BackupDrRestoreWorkloadComputeInstanceRestorePropertiesTags)
 	ResetAdvancedMachineFeatures()
@@ -166,7 +166,7 @@ type BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference inte
 	ResetTags()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -219,8 +219,8 @@ func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutput
 	return returns
 }
 
-func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference) CanIpForward() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference) CanIpForward() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"canIpForward",
@@ -229,8 +229,8 @@ func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutput
 	return returns
 }
 
-func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference) CanIpForwardInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference) CanIpForwardInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"canIpForwardInput",
@@ -239,8 +239,8 @@ func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutput
 	return returns
 }
 
-func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -289,8 +289,8 @@ func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutput
 	return returns
 }
 
-func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference) DeletionProtection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference) DeletionProtection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deletionProtection",
@@ -299,8 +299,8 @@ func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutput
 	return returns
 }
 
-func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference) DeletionProtectionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference) DeletionProtectionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deletionProtectionInput",
@@ -339,8 +339,8 @@ func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutput
 	return returns
 }
 
-func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference) DisksInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference) DisksInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disksInput",
@@ -389,8 +389,8 @@ func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutput
 	return returns
 }
 
-func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference) GuestAcceleratorsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference) GuestAcceleratorsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"guestAcceleratorsInput",
@@ -479,8 +479,8 @@ func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutput
 	return returns
 }
 
-func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference) LabelsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference) LabelsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"labelsInput",
@@ -579,8 +579,8 @@ func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutput
 	return returns
 }
 
-func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference) NetworkInterfacesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference) NetworkInterfacesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"networkInterfacesInput",
@@ -699,8 +699,8 @@ func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutput
 	return returns
 }
 
-func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference) ServiceAccountsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference) ServiceAccountsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"serviceAccountsInput",
@@ -769,7 +769,6 @@ func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutput
 	return returns
 }
 
-
 func NewBackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference {
 	_init_.Initialize()
 
@@ -780,7 +779,7 @@ func NewBackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference(t
 
 	_jsii_.Create(
 		"@cdktf/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -792,12 +791,12 @@ func NewBackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference_O
 
 	_jsii_.Create(
 		"@cdktf/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		b,
 	)
 }
 
-func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference)SetCanIpForward(val interface{}) {
+func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference) SetCanIpForward(val any) {
 	if err := j.validateSetCanIpForwardParameters(val); err != nil {
 		panic(err)
 	}
@@ -808,7 +807,7 @@ func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutput
 	)
 }
 
-func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -819,7 +818,7 @@ func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutput
 	)
 }
 
-func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -830,7 +829,7 @@ func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutput
 	)
 }
 
-func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference)SetDeletionProtection(val interface{}) {
+func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference) SetDeletionProtection(val any) {
 	if err := j.validateSetDeletionProtectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -841,7 +840,7 @@ func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutput
 	)
 }
 
-func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference)SetDescription(val *string) {
+func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -852,7 +851,7 @@ func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutput
 	)
 }
 
-func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference)SetHostname(val *string) {
+func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference) SetHostname(val *string) {
 	if err := j.validateSetHostnameParameters(val); err != nil {
 		panic(err)
 	}
@@ -863,7 +862,7 @@ func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutput
 	)
 }
 
-func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference)SetInternalValue(val *BackupDrRestoreWorkloadComputeInstanceRestoreProperties) {
+func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference) SetInternalValue(val *BackupDrRestoreWorkloadComputeInstanceRestoreProperties) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -874,7 +873,7 @@ func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutput
 	)
 }
 
-func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference)SetKeyRevocationActionType(val *string) {
+func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference) SetKeyRevocationActionType(val *string) {
 	if err := j.validateSetKeyRevocationActionTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -885,7 +884,7 @@ func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutput
 	)
 }
 
-func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference)SetMachineType(val *string) {
+func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference) SetMachineType(val *string) {
 	if err := j.validateSetMachineTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -896,7 +895,7 @@ func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutput
 	)
 }
 
-func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference)SetMinCpuPlatform(val *string) {
+func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference) SetMinCpuPlatform(val *string) {
 	if err := j.validateSetMinCpuPlatformParameters(val); err != nil {
 		panic(err)
 	}
@@ -907,7 +906,7 @@ func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutput
 	)
 }
 
-func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference)SetName(val *string) {
+func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -918,7 +917,7 @@ func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutput
 	)
 }
 
-func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference)SetPrivateIpv6GoogleAccess(val *string) {
+func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference) SetPrivateIpv6GoogleAccess(val *string) {
 	if err := j.validateSetPrivateIpv6GoogleAccessParameters(val); err != nil {
 		panic(err)
 	}
@@ -929,7 +928,7 @@ func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutput
 	)
 }
 
-func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference)SetResourcePolicies(val *[]*string) {
+func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference) SetResourcePolicies(val *[]*string) {
 	if err := j.validateSetResourcePoliciesParameters(val); err != nil {
 		panic(err)
 	}
@@ -940,7 +939,7 @@ func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutput
 	)
 }
 
-func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -951,7 +950,7 @@ func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutput
 	)
 }
 
-func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -975,16 +974,16 @@ func (b *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutput
 	return returns
 }
 
-func (b *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (b *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := b.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1000,7 +999,7 @@ func (b *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutput
 	_jsii_.Invoke(
 		b,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1016,7 +1015,7 @@ func (b *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutput
 	_jsii_.Invoke(
 		b,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1032,7 +1031,7 @@ func (b *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutput
 	_jsii_.Invoke(
 		b,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1048,7 +1047,7 @@ func (b *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutput
 	_jsii_.Invoke(
 		b,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1064,7 +1063,7 @@ func (b *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutput
 	_jsii_.Invoke(
 		b,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1080,7 +1079,7 @@ func (b *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutput
 	_jsii_.Invoke(
 		b,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1096,7 +1095,7 @@ func (b *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutput
 	_jsii_.Invoke(
 		b,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1112,7 +1111,7 @@ func (b *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutput
 	_jsii_.Invoke(
 		b,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1141,7 +1140,7 @@ func (b *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutput
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -1155,7 +1154,7 @@ func (b *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutput
 	_jsii_.InvokeVoid(
 		b,
 		"putAdvancedMachineFeatures",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1166,7 +1165,7 @@ func (b *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutput
 	_jsii_.InvokeVoid(
 		b,
 		"putAllocationAffinity",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1177,18 +1176,18 @@ func (b *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutput
 	_jsii_.InvokeVoid(
 		b,
 		"putConfidentialInstanceConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (b *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference) PutDisks(value interface{}) {
+func (b *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference) PutDisks(value any) {
 	if err := b.validatePutDisksParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		b,
 		"putDisks",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1199,18 +1198,18 @@ func (b *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutput
 	_jsii_.InvokeVoid(
 		b,
 		"putDisplayDevice",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (b *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference) PutGuestAccelerators(value interface{}) {
+func (b *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference) PutGuestAccelerators(value any) {
 	if err := b.validatePutGuestAcceleratorsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		b,
 		"putGuestAccelerators",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1221,18 +1220,18 @@ func (b *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutput
 	_jsii_.InvokeVoid(
 		b,
 		"putInstanceEncryptionKey",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (b *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference) PutLabels(value interface{}) {
+func (b *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference) PutLabels(value any) {
 	if err := b.validatePutLabelsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		b,
 		"putLabels",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1243,18 +1242,18 @@ func (b *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutput
 	_jsii_.InvokeVoid(
 		b,
 		"putMetadata",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (b *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference) PutNetworkInterfaces(value interface{}) {
+func (b *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference) PutNetworkInterfaces(value any) {
 	if err := b.validatePutNetworkInterfacesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		b,
 		"putNetworkInterfaces",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1265,7 +1264,7 @@ func (b *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutput
 	_jsii_.InvokeVoid(
 		b,
 		"putNetworkPerformanceConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1276,7 +1275,7 @@ func (b *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutput
 	_jsii_.InvokeVoid(
 		b,
 		"putParams",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1287,18 +1286,18 @@ func (b *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutput
 	_jsii_.InvokeVoid(
 		b,
 		"putScheduling",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (b *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference) PutServiceAccounts(value interface{}) {
+func (b *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference) PutServiceAccounts(value any) {
 	if err := b.validatePutServiceAccountsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		b,
 		"putServiceAccounts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1309,7 +1308,7 @@ func (b *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutput
 	_jsii_.InvokeVoid(
 		b,
 		"putShieldedInstanceConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1320,7 +1319,7 @@ func (b *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutput
 	_jsii_.InvokeVoid(
 		b,
 		"putTags",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1524,16 +1523,16 @@ func (b *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutput
 	)
 }
 
-func (b *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (b *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := b.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -1552,4 +1551,3 @@ func (b *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutput
 
 	return returns
 }
-

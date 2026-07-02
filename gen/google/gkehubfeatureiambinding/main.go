@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeHubFeatureIamBinding.GkeHubFeatureIamBinding",
-		reflect.TypeOf((*GkeHubFeatureIamBinding)(nil)).Elem(),
+		reflect.TypeFor[GkeHubFeatureIamBinding](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,7 +73,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeHubFeatureIamBinding{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -81,11 +81,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.gkeHubFeatureIamBinding.GkeHubFeatureIamBindingCondition",
-		reflect.TypeOf((*GkeHubFeatureIamBindingCondition)(nil)).Elem(),
+		reflect.TypeFor[GkeHubFeatureIamBindingCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeHubFeatureIamBinding.GkeHubFeatureIamBindingConditionOutputReference",
-		reflect.TypeOf((*GkeHubFeatureIamBindingConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GkeHubFeatureIamBindingConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -116,7 +116,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeHubFeatureIamBindingConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -124,6 +124,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.gkeHubFeatureIamBinding.GkeHubFeatureIamBindingConfig",
-		reflect.TypeOf((*GkeHubFeatureIamBindingConfig)(nil)).Elem(),
+		reflect.TypeFor[GkeHubFeatureIamBindingConfig](),
 	)
 }

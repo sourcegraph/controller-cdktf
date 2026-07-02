@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCatalogEntryGroupIamMemberConditionOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_DataCatalogEntryGroupIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCatalogEntryGroupIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewDataCatalogEntryGroupIamMemberConditionOutputReferenceParameters
 
 	return nil
 }
-

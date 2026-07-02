@@ -98,7 +98,7 @@ func (c *jsiiProxy_ContainerClusterNodePoolManagementOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterNodePoolManagementOutputReference) validateSetAutoRepairParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterNodePoolManagementOutputReference) validateSetAutoRepairParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -118,7 +118,7 @@ func (j *jsiiProxy_ContainerClusterNodePoolManagementOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterNodePoolManagementOutputReference) validateSetAutoUpgradeParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterNodePoolManagementOutputReference) validateSetAutoUpgradeParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -138,7 +138,7 @@ func (j *jsiiProxy_ContainerClusterNodePoolManagementOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterNodePoolManagementOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterNodePoolManagementOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -238,4 +238,3 @@ func validateNewContainerClusterNodePoolManagementOutputReferenceParameters(terr
 
 	return nil
 }
-

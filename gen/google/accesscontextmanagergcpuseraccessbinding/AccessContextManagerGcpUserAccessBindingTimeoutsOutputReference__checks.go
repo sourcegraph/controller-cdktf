@@ -98,7 +98,7 @@ func (a *jsiiProxy_AccessContextManagerGcpUserAccessBindingTimeoutsOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_AccessContextManagerGcpUserAccessBindingTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AccessContextManagerGcpUserAccessBindingTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_AccessContextManagerGcpUserAccessBindingTimeoutsOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_AccessContextManagerGcpUserAccessBindingTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AccessContextManagerGcpUserAccessBindingTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewAccessContextManagerGcpUserAccessBindingTimeoutsOutputReferenceP
 
 	return nil
 }
-

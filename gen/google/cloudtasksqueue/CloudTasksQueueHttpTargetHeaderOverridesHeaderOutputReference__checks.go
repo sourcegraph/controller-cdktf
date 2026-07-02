@@ -98,7 +98,7 @@ func (c *jsiiProxy_CloudTasksQueueHttpTargetHeaderOverridesHeaderOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_CloudTasksQueueHttpTargetHeaderOverridesHeaderOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudTasksQueueHttpTargetHeaderOverridesHeaderOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewCloudTasksQueueHttpTargetHeaderOverridesHeaderOutputReferencePar
 
 	return nil
 }
-

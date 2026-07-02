@@ -15,15 +15,15 @@ type ComputeRegionDiskResourcePolicyAttachment interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -59,29 +59,29 @@ type ComputeRegionDiskResourcePolicyAttachment interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() ComputeRegionDiskResourcePolicyAttachmentTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -99,7 +99,7 @@ type ComputeRegionDiskResourcePolicyAttachment interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -111,7 +111,7 @@ type ComputeRegionDiskResourcePolicyAttachment interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -126,17 +126,17 @@ type ComputeRegionDiskResourcePolicyAttachment interface {
 	ResetProject()
 	ResetRegion()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ComputeRegionDiskResourcePolicyAttachment
@@ -154,8 +154,8 @@ func (j *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) CdktfStack() cdktf
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -164,8 +164,8 @@ func (j *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) Connection() inter
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -174,8 +174,8 @@ func (j *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) ConstructNodeMetad
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -334,8 +334,8 @@ func (j *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) Provider() cdktf.T
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -344,8 +344,8 @@ func (j *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) Provisioners() *[]
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -384,8 +384,8 @@ func (j *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) TerraformGenerator
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -414,8 +414,8 @@ func (j *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) Timeouts() Compute
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -423,7 +423,6 @@ func (j *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) TimeoutsInput() in
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_disk_resource_policy_attachment google_compute_region_disk_resource_policy_attachment} Resource.
 func NewComputeRegionDiskResourcePolicyAttachment(scope constructs.Construct, id *string, config *ComputeRegionDiskResourcePolicyAttachmentConfig) ComputeRegionDiskResourcePolicyAttachment {
@@ -436,7 +435,7 @@ func NewComputeRegionDiskResourcePolicyAttachment(scope constructs.Construct, id
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeRegionDiskResourcePolicyAttachment.ComputeRegionDiskResourcePolicyAttachment",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -449,12 +448,12 @@ func NewComputeRegionDiskResourcePolicyAttachment_Override(c ComputeRegionDiskRe
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeRegionDiskResourcePolicyAttachment.ComputeRegionDiskResourcePolicyAttachment",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment)SetConnection(val interface{}) {
+func (j *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -465,7 +464,7 @@ func (j *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment)SetConnection(val i
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment)SetCount(val interface{}) {
+func (j *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -476,7 +475,7 @@ func (j *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment)SetCount(val interf
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -484,7 +483,7 @@ func (j *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment)SetDependsOn(val *[
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment)SetDisk(val *string) {
+func (j *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) SetDisk(val *string) {
 	if err := j.validateSetDiskParameters(val); err != nil {
 		panic(err)
 	}
@@ -495,7 +494,7 @@ func (j *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment)SetDisk(val *string
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -503,7 +502,7 @@ func (j *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment)SetForEach(val cdkt
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment)SetId(val *string) {
+func (j *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -514,7 +513,7 @@ func (j *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment)SetId(val *string) 
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -525,7 +524,7 @@ func (j *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment)SetLifecycle(val *c
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment)SetName(val *string) {
+func (j *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -536,7 +535,7 @@ func (j *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment)SetName(val *string
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment)SetProject(val *string) {
+func (j *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -547,7 +546,7 @@ func (j *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment)SetProject(val *str
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -555,7 +554,7 @@ func (j *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment)SetProvider(val cdk
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -566,7 +565,7 @@ func (j *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment)SetProvisioners(val
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment)SetRegion(val *string) {
+func (j *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) SetRegion(val *string) {
 	if err := j.validateSetRegionParameters(val); err != nil {
 		panic(err)
 	}
@@ -589,7 +588,7 @@ func ComputeRegionDiskResourcePolicyAttachment_GenerateConfigForImport(scope con
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeRegionDiskResourcePolicyAttachment.ComputeRegionDiskResourcePolicyAttachment",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -613,7 +612,7 @@ func ComputeRegionDiskResourcePolicyAttachment_GenerateConfigForImport(scope con
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ComputeRegionDiskResourcePolicyAttachment_IsConstruct(x interface{}) *bool {
+func ComputeRegionDiskResourcePolicyAttachment_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeRegionDiskResourcePolicyAttachment_IsConstructParameters(x); err != nil {
@@ -624,7 +623,7 @@ func ComputeRegionDiskResourcePolicyAttachment_IsConstruct(x interface{}) *bool 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeRegionDiskResourcePolicyAttachment.ComputeRegionDiskResourcePolicyAttachment",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -632,7 +631,7 @@ func ComputeRegionDiskResourcePolicyAttachment_IsConstruct(x interface{}) *bool 
 }
 
 // Experimental.
-func ComputeRegionDiskResourcePolicyAttachment_IsTerraformElement(x interface{}) *bool {
+func ComputeRegionDiskResourcePolicyAttachment_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeRegionDiskResourcePolicyAttachment_IsTerraformElementParameters(x); err != nil {
@@ -643,7 +642,7 @@ func ComputeRegionDiskResourcePolicyAttachment_IsTerraformElement(x interface{})
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeRegionDiskResourcePolicyAttachment.ComputeRegionDiskResourcePolicyAttachment",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -651,7 +650,7 @@ func ComputeRegionDiskResourcePolicyAttachment_IsTerraformElement(x interface{})
 }
 
 // Experimental.
-func ComputeRegionDiskResourcePolicyAttachment_IsTerraformResource(x interface{}) *bool {
+func ComputeRegionDiskResourcePolicyAttachment_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeRegionDiskResourcePolicyAttachment_IsTerraformResourceParameters(x); err != nil {
@@ -662,7 +661,7 @@ func ComputeRegionDiskResourcePolicyAttachment_IsTerraformResource(x interface{}
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeRegionDiskResourcePolicyAttachment.ComputeRegionDiskResourcePolicyAttachment",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -687,31 +686,31 @@ func (c *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) AddMoveTarget(move
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -727,7 +726,7 @@ func (c *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) GetBooleanAttribut
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -743,7 +742,7 @@ func (c *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) GetBooleanMapAttri
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -759,7 +758,7 @@ func (c *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) GetListAttribute(t
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -775,7 +774,7 @@ func (c *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) GetNumberAttribute
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -791,7 +790,7 @@ func (c *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) GetNumberListAttri
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -807,7 +806,7 @@ func (c *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) GetNumberMapAttrib
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -823,7 +822,7 @@ func (c *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) GetStringAttribute
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -839,15 +838,15 @@ func (c *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) GetStringMapAttrib
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -866,7 +865,7 @@ func (c *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) ImportFrom(id *str
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -879,7 +878,7 @@ func (c *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) InterpolationForAt
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -893,18 +892,18 @@ func (c *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) MoveFromId(id *str
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -915,7 +914,7 @@ func (c *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) MoveToId(id *strin
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -926,7 +925,7 @@ func (c *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) OverrideLogicalId(
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -937,7 +936,7 @@ func (c *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) PutTimeouts(value 
 	_jsii_.InvokeVoid(
 		c,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -981,8 +980,8 @@ func (c *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) ResetTimeouts() {
 	)
 }
 
-func (c *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -994,8 +993,8 @@ func (c *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) SynthesizeAttribut
 	return returns
 }
 
-func (c *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1007,8 +1006,8 @@ func (c *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) SynthesizeHclAttri
 	return returns
 }
 
-func (c *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1020,8 +1019,8 @@ func (c *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) ToHclTerraform() i
 	return returns
 }
 
-func (c *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1046,8 +1045,8 @@ func (c *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) ToString() *string
 	return returns
 }
 
-func (c *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1058,4 +1057,3 @@ func (c *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) ToTerraform() inte
 
 	return returns
 }
-

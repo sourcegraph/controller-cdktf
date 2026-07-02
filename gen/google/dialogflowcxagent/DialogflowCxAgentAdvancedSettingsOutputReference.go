@@ -14,9 +14,9 @@ type DialogflowCxAgentAdvancedSettingsOutputReference interface {
 	AudioExportGcsDestinationInput() *DialogflowCxAgentAdvancedSettingsAudioExportGcsDestination
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -48,7 +48,7 @@ type DialogflowCxAgentAdvancedSettingsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -79,7 +79,7 @@ type DialogflowCxAgentAdvancedSettingsOutputReference interface {
 	ResetSpeechSettings()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -112,8 +112,8 @@ func (j *jsiiProxy_DialogflowCxAgentAdvancedSettingsOutputReference) AudioExport
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowCxAgentAdvancedSettingsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowCxAgentAdvancedSettingsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -242,7 +242,6 @@ func (j *jsiiProxy_DialogflowCxAgentAdvancedSettingsOutputReference) TerraformRe
 	return returns
 }
 
-
 func NewDialogflowCxAgentAdvancedSettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DialogflowCxAgentAdvancedSettingsOutputReference {
 	_init_.Initialize()
 
@@ -253,7 +252,7 @@ func NewDialogflowCxAgentAdvancedSettingsOutputReference(terraformResource cdktf
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -265,12 +264,12 @@ func NewDialogflowCxAgentAdvancedSettingsOutputReference_Override(d DialogflowCx
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxAgentAdvancedSettingsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DialogflowCxAgentAdvancedSettingsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,7 +280,7 @@ func (j *jsiiProxy_DialogflowCxAgentAdvancedSettingsOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxAgentAdvancedSettingsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DialogflowCxAgentAdvancedSettingsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,7 +291,7 @@ func (j *jsiiProxy_DialogflowCxAgentAdvancedSettingsOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxAgentAdvancedSettingsOutputReference)SetInternalValue(val *DialogflowCxAgentAdvancedSettings) {
+func (j *jsiiProxy_DialogflowCxAgentAdvancedSettingsOutputReference) SetInternalValue(val *DialogflowCxAgentAdvancedSettings) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_DialogflowCxAgentAdvancedSettingsOutputReference)SetInternalV
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxAgentAdvancedSettingsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DialogflowCxAgentAdvancedSettingsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_DialogflowCxAgentAdvancedSettingsOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxAgentAdvancedSettingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DialogflowCxAgentAdvancedSettingsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,16 +337,16 @@ func (d *jsiiProxy_DialogflowCxAgentAdvancedSettingsOutputReference) ComputeFqn(
 	return returns
 }
 
-func (d *jsiiProxy_DialogflowCxAgentAdvancedSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DialogflowCxAgentAdvancedSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -363,7 +362,7 @@ func (d *jsiiProxy_DialogflowCxAgentAdvancedSettingsOutputReference) GetBooleanA
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -379,7 +378,7 @@ func (d *jsiiProxy_DialogflowCxAgentAdvancedSettingsOutputReference) GetBooleanM
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -395,7 +394,7 @@ func (d *jsiiProxy_DialogflowCxAgentAdvancedSettingsOutputReference) GetListAttr
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -411,7 +410,7 @@ func (d *jsiiProxy_DialogflowCxAgentAdvancedSettingsOutputReference) GetNumberAt
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -427,7 +426,7 @@ func (d *jsiiProxy_DialogflowCxAgentAdvancedSettingsOutputReference) GetNumberLi
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -443,7 +442,7 @@ func (d *jsiiProxy_DialogflowCxAgentAdvancedSettingsOutputReference) GetNumberMa
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -459,7 +458,7 @@ func (d *jsiiProxy_DialogflowCxAgentAdvancedSettingsOutputReference) GetStringAt
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -475,7 +474,7 @@ func (d *jsiiProxy_DialogflowCxAgentAdvancedSettingsOutputReference) GetStringMa
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -504,7 +503,7 @@ func (d *jsiiProxy_DialogflowCxAgentAdvancedSettingsOutputReference) Interpolati
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -518,7 +517,7 @@ func (d *jsiiProxy_DialogflowCxAgentAdvancedSettingsOutputReference) PutAudioExp
 	_jsii_.InvokeVoid(
 		d,
 		"putAudioExportGcsDestination",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -529,7 +528,7 @@ func (d *jsiiProxy_DialogflowCxAgentAdvancedSettingsOutputReference) PutDtmfSett
 	_jsii_.InvokeVoid(
 		d,
 		"putDtmfSettings",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -540,7 +539,7 @@ func (d *jsiiProxy_DialogflowCxAgentAdvancedSettingsOutputReference) PutLoggingS
 	_jsii_.InvokeVoid(
 		d,
 		"putLoggingSettings",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -551,7 +550,7 @@ func (d *jsiiProxy_DialogflowCxAgentAdvancedSettingsOutputReference) PutSpeechSe
 	_jsii_.InvokeVoid(
 		d,
 		"putSpeechSettings",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -587,16 +586,16 @@ func (d *jsiiProxy_DialogflowCxAgentAdvancedSettingsOutputReference) ResetSpeech
 	)
 }
 
-func (d *jsiiProxy_DialogflowCxAgentAdvancedSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DialogflowCxAgentAdvancedSettingsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -615,4 +614,3 @@ func (d *jsiiProxy_DialogflowCxAgentAdvancedSettingsOutputReference) ToString() 
 
 	return returns
 }
-

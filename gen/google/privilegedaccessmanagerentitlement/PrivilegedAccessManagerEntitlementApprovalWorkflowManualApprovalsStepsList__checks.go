@@ -34,7 +34,7 @@ func (p *jsiiProxy_PrivilegedAccessManagerEntitlementApprovalWorkflowManualAppro
 	return nil
 }
 
-func (j *jsiiProxy_PrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsStepsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsStepsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewPrivilegedAccessManagerEntitlementApprovalWorkflowManualApproval
 
 	return nil
 }
-

@@ -18,15 +18,15 @@ type StorageDefaultObjectAccessControl interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -64,29 +64,29 @@ type StorageDefaultObjectAccessControl interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Role() *string
 	SetRole(val *string)
 	RoleInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() StorageDefaultObjectAccessControlTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -104,7 +104,7 @@ type StorageDefaultObjectAccessControl interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -116,7 +116,7 @@ type StorageDefaultObjectAccessControl interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -130,17 +130,17 @@ type StorageDefaultObjectAccessControl interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for StorageDefaultObjectAccessControl
@@ -178,8 +178,8 @@ func (j *jsiiProxy_StorageDefaultObjectAccessControl) CdktfStack() cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_StorageDefaultObjectAccessControl) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StorageDefaultObjectAccessControl) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -188,8 +188,8 @@ func (j *jsiiProxy_StorageDefaultObjectAccessControl) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_StorageDefaultObjectAccessControl) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_StorageDefaultObjectAccessControl) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -198,8 +198,8 @@ func (j *jsiiProxy_StorageDefaultObjectAccessControl) ConstructNodeMetadata() *m
 	return returns
 }
 
-func (j *jsiiProxy_StorageDefaultObjectAccessControl) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StorageDefaultObjectAccessControl) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -388,8 +388,8 @@ func (j *jsiiProxy_StorageDefaultObjectAccessControl) Provider() cdktf.Terraform
 	return returns
 }
 
-func (j *jsiiProxy_StorageDefaultObjectAccessControl) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_StorageDefaultObjectAccessControl) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -398,8 +398,8 @@ func (j *jsiiProxy_StorageDefaultObjectAccessControl) Provisioners() *[]interfac
 	return returns
 }
 
-func (j *jsiiProxy_StorageDefaultObjectAccessControl) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StorageDefaultObjectAccessControl) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -438,8 +438,8 @@ func (j *jsiiProxy_StorageDefaultObjectAccessControl) TerraformGeneratorMetadata
 	return returns
 }
 
-func (j *jsiiProxy_StorageDefaultObjectAccessControl) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_StorageDefaultObjectAccessControl) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -468,8 +468,8 @@ func (j *jsiiProxy_StorageDefaultObjectAccessControl) Timeouts() StorageDefaultO
 	return returns
 }
 
-func (j *jsiiProxy_StorageDefaultObjectAccessControl) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StorageDefaultObjectAccessControl) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -477,7 +477,6 @@ func (j *jsiiProxy_StorageDefaultObjectAccessControl) TimeoutsInput() interface{
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_default_object_access_control google_storage_default_object_access_control} Resource.
 func NewStorageDefaultObjectAccessControl(scope constructs.Construct, id *string, config *StorageDefaultObjectAccessControlConfig) StorageDefaultObjectAccessControl {
@@ -490,7 +489,7 @@ func NewStorageDefaultObjectAccessControl(scope constructs.Construct, id *string
 
 	_jsii_.Create(
 		"@cdktf/provider-google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControl",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -503,12 +502,12 @@ func NewStorageDefaultObjectAccessControl_Override(s StorageDefaultObjectAccessC
 
 	_jsii_.Create(
 		"@cdktf/provider-google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControl",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_StorageDefaultObjectAccessControl)SetBucket(val *string) {
+func (j *jsiiProxy_StorageDefaultObjectAccessControl) SetBucket(val *string) {
 	if err := j.validateSetBucketParameters(val); err != nil {
 		panic(err)
 	}
@@ -519,7 +518,7 @@ func (j *jsiiProxy_StorageDefaultObjectAccessControl)SetBucket(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StorageDefaultObjectAccessControl)SetConnection(val interface{}) {
+func (j *jsiiProxy_StorageDefaultObjectAccessControl) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -530,7 +529,7 @@ func (j *jsiiProxy_StorageDefaultObjectAccessControl)SetConnection(val interface
 	)
 }
 
-func (j *jsiiProxy_StorageDefaultObjectAccessControl)SetCount(val interface{}) {
+func (j *jsiiProxy_StorageDefaultObjectAccessControl) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -541,7 +540,7 @@ func (j *jsiiProxy_StorageDefaultObjectAccessControl)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_StorageDefaultObjectAccessControl)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_StorageDefaultObjectAccessControl) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -549,7 +548,7 @@ func (j *jsiiProxy_StorageDefaultObjectAccessControl)SetDependsOn(val *[]*string
 	)
 }
 
-func (j *jsiiProxy_StorageDefaultObjectAccessControl)SetEntity(val *string) {
+func (j *jsiiProxy_StorageDefaultObjectAccessControl) SetEntity(val *string) {
 	if err := j.validateSetEntityParameters(val); err != nil {
 		panic(err)
 	}
@@ -560,7 +559,7 @@ func (j *jsiiProxy_StorageDefaultObjectAccessControl)SetEntity(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StorageDefaultObjectAccessControl)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_StorageDefaultObjectAccessControl) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -568,7 +567,7 @@ func (j *jsiiProxy_StorageDefaultObjectAccessControl)SetForEach(val cdktf.ITerra
 	)
 }
 
-func (j *jsiiProxy_StorageDefaultObjectAccessControl)SetId(val *string) {
+func (j *jsiiProxy_StorageDefaultObjectAccessControl) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -579,7 +578,7 @@ func (j *jsiiProxy_StorageDefaultObjectAccessControl)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StorageDefaultObjectAccessControl)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_StorageDefaultObjectAccessControl) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -590,7 +589,7 @@ func (j *jsiiProxy_StorageDefaultObjectAccessControl)SetLifecycle(val *cdktf.Ter
 	)
 }
 
-func (j *jsiiProxy_StorageDefaultObjectAccessControl)SetObject(val *string) {
+func (j *jsiiProxy_StorageDefaultObjectAccessControl) SetObject(val *string) {
 	if err := j.validateSetObjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -601,7 +600,7 @@ func (j *jsiiProxy_StorageDefaultObjectAccessControl)SetObject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StorageDefaultObjectAccessControl)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_StorageDefaultObjectAccessControl) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -609,7 +608,7 @@ func (j *jsiiProxy_StorageDefaultObjectAccessControl)SetProvider(val cdktf.Terra
 	)
 }
 
-func (j *jsiiProxy_StorageDefaultObjectAccessControl)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_StorageDefaultObjectAccessControl) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -620,7 +619,7 @@ func (j *jsiiProxy_StorageDefaultObjectAccessControl)SetProvisioners(val *[]inte
 	)
 }
 
-func (j *jsiiProxy_StorageDefaultObjectAccessControl)SetRole(val *string) {
+func (j *jsiiProxy_StorageDefaultObjectAccessControl) SetRole(val *string) {
 	if err := j.validateSetRoleParameters(val); err != nil {
 		panic(err)
 	}
@@ -643,7 +642,7 @@ func StorageDefaultObjectAccessControl_GenerateConfigForImport(scope constructs.
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControl",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -667,7 +666,7 @@ func StorageDefaultObjectAccessControl_GenerateConfigForImport(scope constructs.
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func StorageDefaultObjectAccessControl_IsConstruct(x interface{}) *bool {
+func StorageDefaultObjectAccessControl_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateStorageDefaultObjectAccessControl_IsConstructParameters(x); err != nil {
@@ -678,7 +677,7 @@ func StorageDefaultObjectAccessControl_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControl",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -686,7 +685,7 @@ func StorageDefaultObjectAccessControl_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func StorageDefaultObjectAccessControl_IsTerraformElement(x interface{}) *bool {
+func StorageDefaultObjectAccessControl_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateStorageDefaultObjectAccessControl_IsTerraformElementParameters(x); err != nil {
@@ -697,7 +696,7 @@ func StorageDefaultObjectAccessControl_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControl",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -705,7 +704,7 @@ func StorageDefaultObjectAccessControl_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func StorageDefaultObjectAccessControl_IsTerraformResource(x interface{}) *bool {
+func StorageDefaultObjectAccessControl_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateStorageDefaultObjectAccessControl_IsTerraformResourceParameters(x); err != nil {
@@ -716,7 +715,7 @@ func StorageDefaultObjectAccessControl_IsTerraformResource(x interface{}) *bool 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControl",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -741,31 +740,31 @@ func (s *jsiiProxy_StorageDefaultObjectAccessControl) AddMoveTarget(moveTarget *
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_StorageDefaultObjectAccessControl) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_StorageDefaultObjectAccessControl) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_StorageDefaultObjectAccessControl) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_StorageDefaultObjectAccessControl) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -781,7 +780,7 @@ func (s *jsiiProxy_StorageDefaultObjectAccessControl) GetBooleanAttribute(terraf
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -797,7 +796,7 @@ func (s *jsiiProxy_StorageDefaultObjectAccessControl) GetBooleanMapAttribute(ter
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -813,7 +812,7 @@ func (s *jsiiProxy_StorageDefaultObjectAccessControl) GetListAttribute(terraform
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -829,7 +828,7 @@ func (s *jsiiProxy_StorageDefaultObjectAccessControl) GetNumberAttribute(terrafo
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -845,7 +844,7 @@ func (s *jsiiProxy_StorageDefaultObjectAccessControl) GetNumberListAttribute(ter
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -861,7 +860,7 @@ func (s *jsiiProxy_StorageDefaultObjectAccessControl) GetNumberMapAttribute(terr
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -877,7 +876,7 @@ func (s *jsiiProxy_StorageDefaultObjectAccessControl) GetStringAttribute(terrafo
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -893,15 +892,15 @@ func (s *jsiiProxy_StorageDefaultObjectAccessControl) GetStringMapAttribute(terr
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_StorageDefaultObjectAccessControl) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_StorageDefaultObjectAccessControl) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -920,7 +919,7 @@ func (s *jsiiProxy_StorageDefaultObjectAccessControl) ImportFrom(id *string, pro
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -933,7 +932,7 @@ func (s *jsiiProxy_StorageDefaultObjectAccessControl) InterpolationForAttribute(
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -947,18 +946,18 @@ func (s *jsiiProxy_StorageDefaultObjectAccessControl) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_StorageDefaultObjectAccessControl) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_StorageDefaultObjectAccessControl) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -969,7 +968,7 @@ func (s *jsiiProxy_StorageDefaultObjectAccessControl) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -980,7 +979,7 @@ func (s *jsiiProxy_StorageDefaultObjectAccessControl) OverrideLogicalId(newLogic
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -991,7 +990,7 @@ func (s *jsiiProxy_StorageDefaultObjectAccessControl) PutTimeouts(value *Storage
 	_jsii_.InvokeVoid(
 		s,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1027,8 +1026,8 @@ func (s *jsiiProxy_StorageDefaultObjectAccessControl) ResetTimeouts() {
 	)
 }
 
-func (s *jsiiProxy_StorageDefaultObjectAccessControl) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_StorageDefaultObjectAccessControl) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1040,8 +1039,8 @@ func (s *jsiiProxy_StorageDefaultObjectAccessControl) SynthesizeAttributes() *ma
 	return returns
 }
 
-func (s *jsiiProxy_StorageDefaultObjectAccessControl) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_StorageDefaultObjectAccessControl) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1053,8 +1052,8 @@ func (s *jsiiProxy_StorageDefaultObjectAccessControl) SynthesizeHclAttributes() 
 	return returns
 }
 
-func (s *jsiiProxy_StorageDefaultObjectAccessControl) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_StorageDefaultObjectAccessControl) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1066,8 +1065,8 @@ func (s *jsiiProxy_StorageDefaultObjectAccessControl) ToHclTerraform() interface
 	return returns
 }
 
-func (s *jsiiProxy_StorageDefaultObjectAccessControl) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_StorageDefaultObjectAccessControl) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1092,8 +1091,8 @@ func (s *jsiiProxy_StorageDefaultObjectAccessControl) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_StorageDefaultObjectAccessControl) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_StorageDefaultObjectAccessControl) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1104,4 +1103,3 @@ func (s *jsiiProxy_StorageDefaultObjectAccessControl) ToTerraform() interface{} 
 
 	return returns
 }
-

@@ -34,7 +34,7 @@ func (c *jsiiProxy_ComposerEnvironmentConfigDataRetentionConfigTaskLogsRetention
 	return nil
 }
 
-func (j *jsiiProxy_ComposerEnvironmentConfigDataRetentionConfigTaskLogsRetentionConfigList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComposerEnvironmentConfigDataRetentionConfigTaskLogsRetentionConfigList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewComposerEnvironmentConfigDataRetentionConfigTaskLogsRetentionCon
 
 	return nil
 }
-

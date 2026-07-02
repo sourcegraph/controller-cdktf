@@ -16,11 +16,11 @@ type DataGoogleOracleDatabaseOdbSubnet interface {
 	CdktfStack() cdktf.TerraformStack
 	CidrRange() *string
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	DeletionProtection() cdktf.IResolvable
 	// Experimental.
@@ -65,19 +65,19 @@ type DataGoogleOracleDatabaseOdbSubnet interface {
 	SetProvider(val cdktf.TerraformProvider)
 	Purpose() *string
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	State() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -104,18 +104,18 @@ type DataGoogleOracleDatabaseOdbSubnet interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataGoogleOracleDatabaseOdbSubnet
@@ -143,8 +143,8 @@ func (j *jsiiProxy_DataGoogleOracleDatabaseOdbSubnet) CidrRange() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleOracleDatabaseOdbSubnet) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleOracleDatabaseOdbSubnet) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -153,8 +153,8 @@ func (j *jsiiProxy_DataGoogleOracleDatabaseOdbSubnet) ConstructNodeMetadata() *m
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleOracleDatabaseOdbSubnet) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleOracleDatabaseOdbSubnet) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -393,8 +393,8 @@ func (j *jsiiProxy_DataGoogleOracleDatabaseOdbSubnet) Purpose() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleOracleDatabaseOdbSubnet) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleOracleDatabaseOdbSubnet) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -433,8 +433,8 @@ func (j *jsiiProxy_DataGoogleOracleDatabaseOdbSubnet) TerraformLabels() cdktf.St
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleOracleDatabaseOdbSubnet) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleOracleDatabaseOdbSubnet) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -453,7 +453,6 @@ func (j *jsiiProxy_DataGoogleOracleDatabaseOdbSubnet) TerraformResourceType() *s
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/oracle_database_odb_subnet google_oracle_database_odb_subnet} Data Source.
 func NewDataGoogleOracleDatabaseOdbSubnet(scope constructs.Construct, id *string, config *DataGoogleOracleDatabaseOdbSubnetConfig) DataGoogleOracleDatabaseOdbSubnet {
 	_init_.Initialize()
@@ -465,7 +464,7 @@ func NewDataGoogleOracleDatabaseOdbSubnet(scope constructs.Construct, id *string
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleOracleDatabaseOdbSubnet.DataGoogleOracleDatabaseOdbSubnet",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -478,12 +477,12 @@ func NewDataGoogleOracleDatabaseOdbSubnet_Override(d DataGoogleOracleDatabaseOdb
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleOracleDatabaseOdbSubnet.DataGoogleOracleDatabaseOdbSubnet",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataGoogleOracleDatabaseOdbSubnet)SetCount(val interface{}) {
+func (j *jsiiProxy_DataGoogleOracleDatabaseOdbSubnet) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -494,7 +493,7 @@ func (j *jsiiProxy_DataGoogleOracleDatabaseOdbSubnet)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleOracleDatabaseOdbSubnet)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataGoogleOracleDatabaseOdbSubnet) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -502,7 +501,7 @@ func (j *jsiiProxy_DataGoogleOracleDatabaseOdbSubnet)SetDependsOn(val *[]*string
 	)
 }
 
-func (j *jsiiProxy_DataGoogleOracleDatabaseOdbSubnet)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGoogleOracleDatabaseOdbSubnet) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -510,7 +509,7 @@ func (j *jsiiProxy_DataGoogleOracleDatabaseOdbSubnet)SetForEach(val cdktf.ITerra
 	)
 }
 
-func (j *jsiiProxy_DataGoogleOracleDatabaseOdbSubnet)SetId(val *string) {
+func (j *jsiiProxy_DataGoogleOracleDatabaseOdbSubnet) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -521,7 +520,7 @@ func (j *jsiiProxy_DataGoogleOracleDatabaseOdbSubnet)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleOracleDatabaseOdbSubnet)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGoogleOracleDatabaseOdbSubnet) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -532,7 +531,7 @@ func (j *jsiiProxy_DataGoogleOracleDatabaseOdbSubnet)SetLifecycle(val *cdktf.Ter
 	)
 }
 
-func (j *jsiiProxy_DataGoogleOracleDatabaseOdbSubnet)SetLocation(val *string) {
+func (j *jsiiProxy_DataGoogleOracleDatabaseOdbSubnet) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -543,7 +542,7 @@ func (j *jsiiProxy_DataGoogleOracleDatabaseOdbSubnet)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleOracleDatabaseOdbSubnet)SetOdbnetwork(val *string) {
+func (j *jsiiProxy_DataGoogleOracleDatabaseOdbSubnet) SetOdbnetwork(val *string) {
 	if err := j.validateSetOdbnetworkParameters(val); err != nil {
 		panic(err)
 	}
@@ -554,7 +553,7 @@ func (j *jsiiProxy_DataGoogleOracleDatabaseOdbSubnet)SetOdbnetwork(val *string) 
 	)
 }
 
-func (j *jsiiProxy_DataGoogleOracleDatabaseOdbSubnet)SetOdbSubnetId(val *string) {
+func (j *jsiiProxy_DataGoogleOracleDatabaseOdbSubnet) SetOdbSubnetId(val *string) {
 	if err := j.validateSetOdbSubnetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -565,7 +564,7 @@ func (j *jsiiProxy_DataGoogleOracleDatabaseOdbSubnet)SetOdbSubnetId(val *string)
 	)
 }
 
-func (j *jsiiProxy_DataGoogleOracleDatabaseOdbSubnet)SetProject(val *string) {
+func (j *jsiiProxy_DataGoogleOracleDatabaseOdbSubnet) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -576,7 +575,7 @@ func (j *jsiiProxy_DataGoogleOracleDatabaseOdbSubnet)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleOracleDatabaseOdbSubnet)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGoogleOracleDatabaseOdbSubnet) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -596,7 +595,7 @@ func DataGoogleOracleDatabaseOdbSubnet_GenerateConfigForImport(scope constructs.
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleOracleDatabaseOdbSubnet.DataGoogleOracleDatabaseOdbSubnet",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -620,7 +619,7 @@ func DataGoogleOracleDatabaseOdbSubnet_GenerateConfigForImport(scope constructs.
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataGoogleOracleDatabaseOdbSubnet_IsConstruct(x interface{}) *bool {
+func DataGoogleOracleDatabaseOdbSubnet_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleOracleDatabaseOdbSubnet_IsConstructParameters(x); err != nil {
@@ -631,7 +630,7 @@ func DataGoogleOracleDatabaseOdbSubnet_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleOracleDatabaseOdbSubnet.DataGoogleOracleDatabaseOdbSubnet",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -639,7 +638,7 @@ func DataGoogleOracleDatabaseOdbSubnet_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGoogleOracleDatabaseOdbSubnet_IsTerraformDataSource(x interface{}) *bool {
+func DataGoogleOracleDatabaseOdbSubnet_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleOracleDatabaseOdbSubnet_IsTerraformDataSourceParameters(x); err != nil {
@@ -650,7 +649,7 @@ func DataGoogleOracleDatabaseOdbSubnet_IsTerraformDataSource(x interface{}) *boo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleOracleDatabaseOdbSubnet.DataGoogleOracleDatabaseOdbSubnet",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -658,7 +657,7 @@ func DataGoogleOracleDatabaseOdbSubnet_IsTerraformDataSource(x interface{}) *boo
 }
 
 // Experimental.
-func DataGoogleOracleDatabaseOdbSubnet_IsTerraformElement(x interface{}) *bool {
+func DataGoogleOracleDatabaseOdbSubnet_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleOracleDatabaseOdbSubnet_IsTerraformElementParameters(x); err != nil {
@@ -669,7 +668,7 @@ func DataGoogleOracleDatabaseOdbSubnet_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleOracleDatabaseOdbSubnet.DataGoogleOracleDatabaseOdbSubnet",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -687,27 +686,27 @@ func DataGoogleOracleDatabaseOdbSubnet_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleOracleDatabaseOdbSubnet) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataGoogleOracleDatabaseOdbSubnet) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataGoogleOracleDatabaseOdbSubnet) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataGoogleOracleDatabaseOdbSubnet) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -723,7 +722,7 @@ func (d *jsiiProxy_DataGoogleOracleDatabaseOdbSubnet) GetBooleanAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -739,7 +738,7 @@ func (d *jsiiProxy_DataGoogleOracleDatabaseOdbSubnet) GetBooleanMapAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -755,7 +754,7 @@ func (d *jsiiProxy_DataGoogleOracleDatabaseOdbSubnet) GetListAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -771,7 +770,7 @@ func (d *jsiiProxy_DataGoogleOracleDatabaseOdbSubnet) GetNumberAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -787,7 +786,7 @@ func (d *jsiiProxy_DataGoogleOracleDatabaseOdbSubnet) GetNumberListAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -803,7 +802,7 @@ func (d *jsiiProxy_DataGoogleOracleDatabaseOdbSubnet) GetNumberMapAttribute(terr
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -819,7 +818,7 @@ func (d *jsiiProxy_DataGoogleOracleDatabaseOdbSubnet) GetStringAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -835,7 +834,7 @@ func (d *jsiiProxy_DataGoogleOracleDatabaseOdbSubnet) GetStringMapAttribute(terr
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -851,7 +850,7 @@ func (d *jsiiProxy_DataGoogleOracleDatabaseOdbSubnet) InterpolationForAttribute(
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -865,7 +864,7 @@ func (d *jsiiProxy_DataGoogleOracleDatabaseOdbSubnet) OverrideLogicalId(newLogic
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -893,8 +892,8 @@ func (d *jsiiProxy_DataGoogleOracleDatabaseOdbSubnet) ResetProject() {
 	)
 }
 
-func (d *jsiiProxy_DataGoogleOracleDatabaseOdbSubnet) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleOracleDatabaseOdbSubnet) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -906,8 +905,8 @@ func (d *jsiiProxy_DataGoogleOracleDatabaseOdbSubnet) SynthesizeAttributes() *ma
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleOracleDatabaseOdbSubnet) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleOracleDatabaseOdbSubnet) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -919,8 +918,8 @@ func (d *jsiiProxy_DataGoogleOracleDatabaseOdbSubnet) SynthesizeHclAttributes() 
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleOracleDatabaseOdbSubnet) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleOracleDatabaseOdbSubnet) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -932,8 +931,8 @@ func (d *jsiiProxy_DataGoogleOracleDatabaseOdbSubnet) ToHclTerraform() interface
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleOracleDatabaseOdbSubnet) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleOracleDatabaseOdbSubnet) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -958,8 +957,8 @@ func (d *jsiiProxy_DataGoogleOracleDatabaseOdbSubnet) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleOracleDatabaseOdbSubnet) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleOracleDatabaseOdbSubnet) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -970,4 +969,3 @@ func (d *jsiiProxy_DataGoogleOracleDatabaseOdbSubnet) ToTerraform() interface{} 
 
 	return returns
 }
-

@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataplexTaskNotebookInfrastructureSpecVpcNetworkOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_DataplexTaskNotebookInfrastructureSpecVpcNetworkOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataplexTaskNotebookInfrastructureSpecVpcNetworkOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewDataplexTaskNotebookInfrastructureSpecVpcNetworkOutputReferenceP
 
 	return nil
 }
-

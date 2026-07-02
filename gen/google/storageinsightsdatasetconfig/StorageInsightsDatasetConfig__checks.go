@@ -19,7 +19,7 @@ func (s *jsiiProxy_StorageInsightsDatasetConfig) validateAddMoveTargetParameters
 	return nil
 }
 
-func (s *jsiiProxy_StorageInsightsDatasetConfig) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_StorageInsightsDatasetConfig) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_StorageInsightsDatasetConfig) validateMoveFromIdParameters(id
 	return nil
 }
 
-func (s *jsiiProxy_StorageInsightsDatasetConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_StorageInsightsDatasetConfig) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -308,7 +308,7 @@ func validateStorageInsightsDatasetConfig_GenerateConfigForImportParameters(scop
 	return nil
 }
 
-func validateStorageInsightsDatasetConfig_IsConstructParameters(x interface{}) error {
+func validateStorageInsightsDatasetConfig_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -316,7 +316,7 @@ func validateStorageInsightsDatasetConfig_IsConstructParameters(x interface{}) e
 	return nil
 }
 
-func validateStorageInsightsDatasetConfig_IsTerraformElementParameters(x interface{}) error {
+func validateStorageInsightsDatasetConfig_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -324,7 +324,7 @@ func validateStorageInsightsDatasetConfig_IsTerraformElementParameters(x interfa
 	return nil
 }
 
-func validateStorageInsightsDatasetConfig_IsTerraformResourceParameters(x interface{}) error {
+func validateStorageInsightsDatasetConfig_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -340,7 +340,7 @@ func (j *jsiiProxy_StorageInsightsDatasetConfig) validateSetActivityDataRetentio
 	return nil
 }
 
-func (j *jsiiProxy_StorageInsightsDatasetConfig) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_StorageInsightsDatasetConfig) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -373,7 +373,7 @@ func (j *jsiiProxy_StorageInsightsDatasetConfig) validateSetConnectionParameters
 	return nil
 }
 
-func (j *jsiiProxy_StorageInsightsDatasetConfig) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_StorageInsightsDatasetConfig) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -454,7 +454,7 @@ func (j *jsiiProxy_StorageInsightsDatasetConfig) validateSetIdParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_StorageInsightsDatasetConfig) validateSetIncludeNewlyCreatedBucketsParameters(val interface{}) error {
+func (j *jsiiProxy_StorageInsightsDatasetConfig) validateSetIncludeNewlyCreatedBucketsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -482,7 +482,7 @@ func (j *jsiiProxy_StorageInsightsDatasetConfig) validateSetLifecycleParameters(
 	return nil
 }
 
-func (j *jsiiProxy_StorageInsightsDatasetConfig) validateSetLinkDatasetParameters(val interface{}) error {
+func (j *jsiiProxy_StorageInsightsDatasetConfig) validateSetLinkDatasetParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -518,7 +518,7 @@ func (j *jsiiProxy_StorageInsightsDatasetConfig) validateSetOrganizationNumberPa
 	return nil
 }
 
-func (j *jsiiProxy_StorageInsightsDatasetConfig) validateSetOrganizationScopeParameters(val interface{}) error {
+func (j *jsiiProxy_StorageInsightsDatasetConfig) validateSetOrganizationScopeParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -546,7 +546,7 @@ func (j *jsiiProxy_StorageInsightsDatasetConfig) validateSetProjectParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_StorageInsightsDatasetConfig) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_StorageInsightsDatasetConfig) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -618,4 +618,3 @@ func validateNewStorageInsightsDatasetConfigParameters(scope constructs.Construc
 
 	return nil
 }
-

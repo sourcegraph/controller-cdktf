@@ -98,7 +98,7 @@ func (c *jsiiProxy_Cloudfunctions2FunctionTimeoutsOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_Cloudfunctions2FunctionTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_Cloudfunctions2FunctionTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_Cloudfunctions2FunctionTimeoutsOutputReference) validateSetDe
 	return nil
 }
 
-func (j *jsiiProxy_Cloudfunctions2FunctionTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_Cloudfunctions2FunctionTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewCloudfunctions2FunctionTimeoutsOutputReferenceParameters(terrafo
 
 	return nil
 }
-

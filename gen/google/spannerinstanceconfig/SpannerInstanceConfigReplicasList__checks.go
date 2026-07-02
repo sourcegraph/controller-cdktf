@@ -34,7 +34,7 @@ func (s *jsiiProxy_SpannerInstanceConfigReplicasList) validateResolveParameters(
 	return nil
 }
 
-func (j *jsiiProxy_SpannerInstanceConfigReplicasList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SpannerInstanceConfigReplicasList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewSpannerInstanceConfigReplicasListParameters(terraformResource cd
 
 	return nil
 }
-

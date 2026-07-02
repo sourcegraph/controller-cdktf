@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.serviceAccount.ServiceAccount",
-		reflect.TypeOf((*ServiceAccount)(nil)).Elem(),
+		reflect.TypeFor[ServiceAccount](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -81,7 +81,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "uniqueId", GoGetter: "UniqueId"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ServiceAccount{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -89,15 +89,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.serviceAccount.ServiceAccountConfig",
-		reflect.TypeOf((*ServiceAccountConfig)(nil)).Elem(),
+		reflect.TypeFor[ServiceAccountConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.serviceAccount.ServiceAccountTimeouts",
-		reflect.TypeOf((*ServiceAccountTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ServiceAccountTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.serviceAccount.ServiceAccountTimeoutsOutputReference",
-		reflect.TypeOf((*ServiceAccountTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ServiceAccountTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -124,7 +124,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ServiceAccountTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

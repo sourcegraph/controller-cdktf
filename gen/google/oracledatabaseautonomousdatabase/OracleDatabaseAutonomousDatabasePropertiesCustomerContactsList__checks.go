@@ -34,7 +34,7 @@ func (o *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesCustomerContactsLis
 	return nil
 }
 
-func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesCustomerContactsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesCustomerContactsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewOracleDatabaseAutonomousDatabasePropertiesCustomerContactsListPa
 
 	return nil
 }
-

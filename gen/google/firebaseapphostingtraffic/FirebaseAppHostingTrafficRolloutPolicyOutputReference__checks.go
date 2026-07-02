@@ -106,7 +106,7 @@ func (j *jsiiProxy_FirebaseAppHostingTrafficRolloutPolicyOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_FirebaseAppHostingTrafficRolloutPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_FirebaseAppHostingTrafficRolloutPolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_FirebaseAppHostingTrafficRolloutPolicyOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_FirebaseAppHostingTrafficRolloutPolicyOutputReference) validateSetDisabledParameters(val interface{}) error {
+func (j *jsiiProxy_FirebaseAppHostingTrafficRolloutPolicyOutputReference) validateSetDisabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -226,4 +226,3 @@ func validateNewFirebaseAppHostingTrafficRolloutPolicyOutputReferenceParameters(
 
 	return nil
 }
-

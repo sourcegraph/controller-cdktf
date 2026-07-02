@@ -36,7 +36,7 @@ type WorkbenchInstanceUpgradeHistoryList interface {
 	Get(index *float64) WorkbenchInstanceUpgradeHistoryOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,7 +99,6 @@ func (j *jsiiProxy_WorkbenchInstanceUpgradeHistoryList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewWorkbenchInstanceUpgradeHistoryList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkbenchInstanceUpgradeHistoryList {
 	_init_.Initialize()
 
@@ -110,7 +109,7 @@ func NewWorkbenchInstanceUpgradeHistoryList(terraformResource cdktf.IInterpolati
 
 	_jsii_.Create(
 		"@cdktf/provider-google.workbenchInstance.WorkbenchInstanceUpgradeHistoryList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -122,12 +121,12 @@ func NewWorkbenchInstanceUpgradeHistoryList_Override(w WorkbenchInstanceUpgradeH
 
 	_jsii_.Create(
 		"@cdktf/provider-google.workbenchInstance.WorkbenchInstanceUpgradeHistoryList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		w,
 	)
 }
 
-func (j *jsiiProxy_WorkbenchInstanceUpgradeHistoryList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_WorkbenchInstanceUpgradeHistoryList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -138,7 +137,7 @@ func (j *jsiiProxy_WorkbenchInstanceUpgradeHistoryList)SetTerraformAttribute(val
 	)
 }
 
-func (j *jsiiProxy_WorkbenchInstanceUpgradeHistoryList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_WorkbenchInstanceUpgradeHistoryList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -149,7 +148,7 @@ func (j *jsiiProxy_WorkbenchInstanceUpgradeHistoryList)SetTerraformResource(val 
 	)
 }
 
-func (j *jsiiProxy_WorkbenchInstanceUpgradeHistoryList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_WorkbenchInstanceUpgradeHistoryList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -169,7 +168,7 @@ func (w *jsiiProxy_WorkbenchInstanceUpgradeHistoryList) AllWithMapKey(mapKeyAttr
 	_jsii_.Invoke(
 		w,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -198,23 +197,23 @@ func (w *jsiiProxy_WorkbenchInstanceUpgradeHistoryList) Get(index *float64) Work
 	_jsii_.Invoke(
 		w,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (w *jsiiProxy_WorkbenchInstanceUpgradeHistoryList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (w *jsiiProxy_WorkbenchInstanceUpgradeHistoryList) Resolve(_context cdktf.IResolveContext) any {
 	if err := w.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		w,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -233,4 +232,3 @@ func (w *jsiiProxy_WorkbenchInstanceUpgradeHistoryList) ToString() *string {
 
 	return returns
 }
-

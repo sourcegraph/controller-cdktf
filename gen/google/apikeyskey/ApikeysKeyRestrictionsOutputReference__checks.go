@@ -101,7 +101,7 @@ func (a *jsiiProxy_ApikeysKeyRestrictionsOutputReference) validatePutAndroidKeyR
 	return nil
 }
 
-func (a *jsiiProxy_ApikeysKeyRestrictionsOutputReference) validatePutApiTargetsParameters(value interface{}) error {
+func (a *jsiiProxy_ApikeysKeyRestrictionsOutputReference) validatePutApiTargetsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -173,7 +173,7 @@ func (a *jsiiProxy_ApikeysKeyRestrictionsOutputReference) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_ApikeysKeyRestrictionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ApikeysKeyRestrictionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -273,4 +273,3 @@ func validateNewApikeysKeyRestrictionsOutputReferenceParameters(terraformResourc
 
 	return nil
 }
-

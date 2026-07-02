@@ -19,7 +19,7 @@ func (n *jsiiProxy_NetworkServicesGateway) validateAddMoveTargetParameters(moveT
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesGateway) validateAddOverrideParameters(path *string, value interface{}) error {
+func (n *jsiiProxy_NetworkServicesGateway) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (n *jsiiProxy_NetworkServicesGateway) validateMoveFromIdParameters(id *stri
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesGateway) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (n *jsiiProxy_NetworkServicesGateway) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateNetworkServicesGateway_GenerateConfigForImportParameters(scope cons
 	return nil
 }
 
-func validateNetworkServicesGateway_IsConstructParameters(x interface{}) error {
+func validateNetworkServicesGateway_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateNetworkServicesGateway_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateNetworkServicesGateway_IsTerraformElementParameters(x interface{}) error {
+func validateNetworkServicesGateway_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateNetworkServicesGateway_IsTerraformElementParameters(x interface{}) 
 	return nil
 }
 
-func validateNetworkServicesGateway_IsTerraformResourceParameters(x interface{}) error {
+func validateNetworkServicesGateway_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_NetworkServicesGateway) validateSetAddressesParameters(val *[
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesGateway) validateSetAllPortsParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkServicesGateway) validateSetAllPortsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -291,7 +291,7 @@ func (j *jsiiProxy_NetworkServicesGateway) validateSetCertificateUrlsParameters(
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesGateway) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkServicesGateway) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -324,7 +324,7 @@ func (j *jsiiProxy_NetworkServicesGateway) validateSetConnectionParameters(val i
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesGateway) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkServicesGateway) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -381,7 +381,7 @@ func (j *jsiiProxy_NetworkServicesGateway) validateSetCountParameters(val interf
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesGateway) validateSetDeleteSwgAutogenRouterOnDestroyParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkServicesGateway) validateSetDeleteSwgAutogenRouterOnDestroyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -497,7 +497,7 @@ func (j *jsiiProxy_NetworkServicesGateway) validateSetProjectParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesGateway) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_NetworkServicesGateway) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -601,4 +601,3 @@ func validateNewNetworkServicesGatewayParameters(scope constructs.Construct, id 
 
 	return nil
 }
-

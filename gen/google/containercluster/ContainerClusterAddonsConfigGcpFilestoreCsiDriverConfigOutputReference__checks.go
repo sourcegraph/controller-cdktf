@@ -98,7 +98,7 @@ func (c *jsiiProxy_ContainerClusterAddonsConfigGcpFilestoreCsiDriverConfigOutput
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterAddonsConfigGcpFilestoreCsiDriverConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterAddonsConfigGcpFilestoreCsiDriverConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ContainerClusterAddonsConfigGcpFilestoreCsiDriverConfigOutput
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterAddonsConfigGcpFilestoreCsiDriverConfigOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterAddonsConfigGcpFilestoreCsiDriverConfigOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -218,4 +218,3 @@ func validateNewContainerClusterAddonsConfigGcpFilestoreCsiDriverConfigOutputRef
 
 	return nil
 }
-

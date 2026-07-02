@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleContainerAwsVersions.DataGoogleContainerAwsVersions",
-		reflect.TypeOf((*DataGoogleContainerAwsVersions)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleContainerAwsVersions](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -56,7 +56,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "validVersions", GoGetter: "ValidVersions"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleContainerAwsVersions{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -64,6 +64,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleContainerAwsVersions.DataGoogleContainerAwsVersionsConfig",
-		reflect.TypeOf((*DataGoogleContainerAwsVersionsConfig)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleContainerAwsVersionsConfig](),
 	)
 }

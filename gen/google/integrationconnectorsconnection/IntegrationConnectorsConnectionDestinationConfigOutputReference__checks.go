@@ -90,7 +90,7 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionDestinationConfigOutputReferen
 	return nil
 }
 
-func (i *jsiiProxy_IntegrationConnectorsConnectionDestinationConfigOutputReference) validatePutDestinationParameters(value interface{}) error {
+func (i *jsiiProxy_IntegrationConnectorsConnectionDestinationConfigOutputReference) validatePutDestinationParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionDestinationConfigOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_IntegrationConnectorsConnectionDestinationConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IntegrationConnectorsConnectionDestinationConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -194,7 +194,7 @@ func (j *jsiiProxy_IntegrationConnectorsConnectionDestinationConfigOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_IntegrationConnectorsConnectionDestinationConfigOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_IntegrationConnectorsConnectionDestinationConfigOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -261,4 +261,3 @@ func validateNewIntegrationConnectorsConnectionDestinationConfigOutputReferenceP
 
 	return nil
 }
-

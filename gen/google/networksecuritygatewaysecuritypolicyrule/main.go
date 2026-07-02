@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkSecurityGatewaySecurityPolicyRule.NetworkSecurityGatewaySecurityPolicyRule",
-		reflect.TypeOf((*NetworkSecurityGatewaySecurityPolicyRule)(nil)).Elem(),
+		reflect.TypeFor[NetworkSecurityGatewaySecurityPolicyRule](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -89,7 +89,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkSecurityGatewaySecurityPolicyRule{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -97,15 +97,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkSecurityGatewaySecurityPolicyRule.NetworkSecurityGatewaySecurityPolicyRuleConfig",
-		reflect.TypeOf((*NetworkSecurityGatewaySecurityPolicyRuleConfig)(nil)).Elem(),
+		reflect.TypeFor[NetworkSecurityGatewaySecurityPolicyRuleConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkSecurityGatewaySecurityPolicyRule.NetworkSecurityGatewaySecurityPolicyRuleTimeouts",
-		reflect.TypeOf((*NetworkSecurityGatewaySecurityPolicyRuleTimeouts)(nil)).Elem(),
+		reflect.TypeFor[NetworkSecurityGatewaySecurityPolicyRuleTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkSecurityGatewaySecurityPolicyRule.NetworkSecurityGatewaySecurityPolicyRuleTimeoutsOutputReference",
-		reflect.TypeOf((*NetworkSecurityGatewaySecurityPolicyRuleTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkSecurityGatewaySecurityPolicyRuleTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -138,7 +138,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkSecurityGatewaySecurityPolicyRuleTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

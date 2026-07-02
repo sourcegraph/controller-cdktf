@@ -12,9 +12,9 @@ type ApigeeSpaceTimeoutsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,8 +33,8 @@ type ApigeeSpaceTimeoutsOutputReference interface {
 	DeleteInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -49,7 +49,7 @@ type ApigeeSpaceTimeoutsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type ApigeeSpaceTimeoutsOutputReference interface {
 	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_ApigeeSpaceTimeoutsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ApigeeSpaceTimeoutsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApigeeSpaceTimeoutsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_ApigeeSpaceTimeoutsOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ApigeeSpaceTimeoutsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApigeeSpaceTimeoutsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_ApigeeSpaceTimeoutsOutputReference) UpdateInput() *string {
 	return returns
 }
 
-
 func NewApigeeSpaceTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ApigeeSpaceTimeoutsOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewApigeeSpaceTimeoutsOutputReference(terraformResource cdktf.IInterpolatin
 
 	_jsii_.Create(
 		"@cdktf/provider-google.apigeeSpace.ApigeeSpaceTimeoutsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewApigeeSpaceTimeoutsOutputReference_Override(a ApigeeSpaceTimeoutsOutputR
 
 	_jsii_.Create(
 		"@cdktf/provider-google.apigeeSpace.ApigeeSpaceTimeoutsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		a,
 	)
 }
 
-func (j *jsiiProxy_ApigeeSpaceTimeoutsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ApigeeSpaceTimeoutsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_ApigeeSpaceTimeoutsOutputReference)SetComplexObjectIndex(val 
 	)
 }
 
-func (j *jsiiProxy_ApigeeSpaceTimeoutsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ApigeeSpaceTimeoutsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_ApigeeSpaceTimeoutsOutputReference)SetComplexObjectIsFromSet(
 	)
 }
 
-func (j *jsiiProxy_ApigeeSpaceTimeoutsOutputReference)SetCreate(val *string) {
+func (j *jsiiProxy_ApigeeSpaceTimeoutsOutputReference) SetCreate(val *string) {
 	if err := j.validateSetCreateParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_ApigeeSpaceTimeoutsOutputReference)SetCreate(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApigeeSpaceTimeoutsOutputReference)SetDelete(val *string) {
+func (j *jsiiProxy_ApigeeSpaceTimeoutsOutputReference) SetDelete(val *string) {
 	if err := j.validateSetDeleteParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_ApigeeSpaceTimeoutsOutputReference)SetDelete(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApigeeSpaceTimeoutsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ApigeeSpaceTimeoutsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_ApigeeSpaceTimeoutsOutputReference)SetInternalValue(val inter
 	)
 }
 
-func (j *jsiiProxy_ApigeeSpaceTimeoutsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ApigeeSpaceTimeoutsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_ApigeeSpaceTimeoutsOutputReference)SetTerraformAttribute(val 
 	)
 }
 
-func (j *jsiiProxy_ApigeeSpaceTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ApigeeSpaceTimeoutsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_ApigeeSpaceTimeoutsOutputReference)SetTerraformResource(val c
 	)
 }
 
-func (j *jsiiProxy_ApigeeSpaceTimeoutsOutputReference)SetUpdate(val *string) {
+func (j *jsiiProxy_ApigeeSpaceTimeoutsOutputReference) SetUpdate(val *string) {
 	if err := j.validateSetUpdateParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (a *jsiiProxy_ApigeeSpaceTimeoutsOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (a *jsiiProxy_ApigeeSpaceTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_ApigeeSpaceTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (a *jsiiProxy_ApigeeSpaceTimeoutsOutputReference) GetBooleanAttribute(terra
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (a *jsiiProxy_ApigeeSpaceTimeoutsOutputReference) GetBooleanMapAttribute(te
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (a *jsiiProxy_ApigeeSpaceTimeoutsOutputReference) GetListAttribute(terrafor
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (a *jsiiProxy_ApigeeSpaceTimeoutsOutputReference) GetNumberAttribute(terraf
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (a *jsiiProxy_ApigeeSpaceTimeoutsOutputReference) GetNumberListAttribute(te
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (a *jsiiProxy_ApigeeSpaceTimeoutsOutputReference) GetNumberMapAttribute(ter
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (a *jsiiProxy_ApigeeSpaceTimeoutsOutputReference) GetStringAttribute(terraf
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (a *jsiiProxy_ApigeeSpaceTimeoutsOutputReference) GetStringMapAttribute(ter
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (a *jsiiProxy_ApigeeSpaceTimeoutsOutputReference) InterpolationForAttribute
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (a *jsiiProxy_ApigeeSpaceTimeoutsOutputReference) ResetUpdate() {
 	)
 }
 
-func (a *jsiiProxy_ApigeeSpaceTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_ApigeeSpaceTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (a *jsiiProxy_ApigeeSpaceTimeoutsOutputReference) ToString() *string {
 
 	return returns
 }
-

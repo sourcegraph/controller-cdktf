@@ -98,7 +98,7 @@ func (e *jsiiProxy_EventarcGoogleChannelConfigTimeoutsOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_EventarcGoogleChannelConfigTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EventarcGoogleChannelConfigTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_EventarcGoogleChannelConfigTimeoutsOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_EventarcGoogleChannelConfigTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EventarcGoogleChannelConfigTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewEventarcGoogleChannelConfigTimeoutsOutputReferenceParameters(ter
 
 	return nil
 }
-

@@ -19,7 +19,7 @@ func (f *jsiiProxy_FolderIamPolicy) validateAddMoveTargetParameters(moveTarget *
 	return nil
 }
 
-func (f *jsiiProxy_FolderIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (f *jsiiProxy_FolderIamPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (f *jsiiProxy_FolderIamPolicy) validateMoveFromIdParameters(id *string) err
 	return nil
 }
 
-func (f *jsiiProxy_FolderIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (f *jsiiProxy_FolderIamPolicy) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateFolderIamPolicy_GenerateConfigForImportParameters(scope constructs.
 	return nil
 }
 
-func validateFolderIamPolicy_IsConstructParameters(x interface{}) error {
+func validateFolderIamPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateFolderIamPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateFolderIamPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateFolderIamPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateFolderIamPolicy_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateFolderIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+func validateFolderIamPolicy_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateFolderIamPolicy_IsTerraformResourceParameters(x interface{}) error 
 	return nil
 }
 
-func (j *jsiiProxy_FolderIamPolicy) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_FolderIamPolicy) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_FolderIamPolicy) validateSetConnectionParameters(val interfac
 	return nil
 }
 
-func (j *jsiiProxy_FolderIamPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_FolderIamPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -366,7 +366,7 @@ func (j *jsiiProxy_FolderIamPolicy) validateSetPolicyDataParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_FolderIamPolicy) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_FolderIamPolicy) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -430,4 +430,3 @@ func validateNewFolderIamPolicyParameters(scope constructs.Construct, id *string
 
 	return nil
 }
-

@@ -15,11 +15,11 @@ type DataGoogleStorageTransferProjectServiceAccount interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -51,18 +51,18 @@ type DataGoogleStorageTransferProjectServiceAccount interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SubjectId() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -89,18 +89,18 @@ type DataGoogleStorageTransferProjectServiceAccount interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataGoogleStorageTransferProjectServiceAccount
@@ -118,8 +118,8 @@ func (j *jsiiProxy_DataGoogleStorageTransferProjectServiceAccount) CdktfStack() 
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleStorageTransferProjectServiceAccount) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleStorageTransferProjectServiceAccount) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -128,8 +128,8 @@ func (j *jsiiProxy_DataGoogleStorageTransferProjectServiceAccount) ConstructNode
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleStorageTransferProjectServiceAccount) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleStorageTransferProjectServiceAccount) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -268,8 +268,8 @@ func (j *jsiiProxy_DataGoogleStorageTransferProjectServiceAccount) Provider() cd
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleStorageTransferProjectServiceAccount) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleStorageTransferProjectServiceAccount) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -298,8 +298,8 @@ func (j *jsiiProxy_DataGoogleStorageTransferProjectServiceAccount) TerraformGene
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleStorageTransferProjectServiceAccount) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleStorageTransferProjectServiceAccount) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -318,7 +318,6 @@ func (j *jsiiProxy_DataGoogleStorageTransferProjectServiceAccount) TerraformReso
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/storage_transfer_project_service_account google_storage_transfer_project_service_account} Data Source.
 func NewDataGoogleStorageTransferProjectServiceAccount(scope constructs.Construct, id *string, config *DataGoogleStorageTransferProjectServiceAccountConfig) DataGoogleStorageTransferProjectServiceAccount {
 	_init_.Initialize()
@@ -330,7 +329,7 @@ func NewDataGoogleStorageTransferProjectServiceAccount(scope constructs.Construc
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleStorageTransferProjectServiceAccount.DataGoogleStorageTransferProjectServiceAccount",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -343,12 +342,12 @@ func NewDataGoogleStorageTransferProjectServiceAccount_Override(d DataGoogleStor
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleStorageTransferProjectServiceAccount.DataGoogleStorageTransferProjectServiceAccount",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataGoogleStorageTransferProjectServiceAccount)SetCount(val interface{}) {
+func (j *jsiiProxy_DataGoogleStorageTransferProjectServiceAccount) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -359,7 +358,7 @@ func (j *jsiiProxy_DataGoogleStorageTransferProjectServiceAccount)SetCount(val i
 	)
 }
 
-func (j *jsiiProxy_DataGoogleStorageTransferProjectServiceAccount)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataGoogleStorageTransferProjectServiceAccount) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -367,7 +366,7 @@ func (j *jsiiProxy_DataGoogleStorageTransferProjectServiceAccount)SetDependsOn(v
 	)
 }
 
-func (j *jsiiProxy_DataGoogleStorageTransferProjectServiceAccount)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGoogleStorageTransferProjectServiceAccount) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -375,7 +374,7 @@ func (j *jsiiProxy_DataGoogleStorageTransferProjectServiceAccount)SetForEach(val
 	)
 }
 
-func (j *jsiiProxy_DataGoogleStorageTransferProjectServiceAccount)SetId(val *string) {
+func (j *jsiiProxy_DataGoogleStorageTransferProjectServiceAccount) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -386,7 +385,7 @@ func (j *jsiiProxy_DataGoogleStorageTransferProjectServiceAccount)SetId(val *str
 	)
 }
 
-func (j *jsiiProxy_DataGoogleStorageTransferProjectServiceAccount)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGoogleStorageTransferProjectServiceAccount) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -397,7 +396,7 @@ func (j *jsiiProxy_DataGoogleStorageTransferProjectServiceAccount)SetLifecycle(v
 	)
 }
 
-func (j *jsiiProxy_DataGoogleStorageTransferProjectServiceAccount)SetProject(val *string) {
+func (j *jsiiProxy_DataGoogleStorageTransferProjectServiceAccount) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -408,7 +407,7 @@ func (j *jsiiProxy_DataGoogleStorageTransferProjectServiceAccount)SetProject(val
 	)
 }
 
-func (j *jsiiProxy_DataGoogleStorageTransferProjectServiceAccount)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGoogleStorageTransferProjectServiceAccount) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -428,7 +427,7 @@ func DataGoogleStorageTransferProjectServiceAccount_GenerateConfigForImport(scop
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleStorageTransferProjectServiceAccount.DataGoogleStorageTransferProjectServiceAccount",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func DataGoogleStorageTransferProjectServiceAccount_GenerateConfigForImport(scop
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataGoogleStorageTransferProjectServiceAccount_IsConstruct(x interface{}) *bool {
+func DataGoogleStorageTransferProjectServiceAccount_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleStorageTransferProjectServiceAccount_IsConstructParameters(x); err != nil {
@@ -463,7 +462,7 @@ func DataGoogleStorageTransferProjectServiceAccount_IsConstruct(x interface{}) *
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleStorageTransferProjectServiceAccount.DataGoogleStorageTransferProjectServiceAccount",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -471,7 +470,7 @@ func DataGoogleStorageTransferProjectServiceAccount_IsConstruct(x interface{}) *
 }
 
 // Experimental.
-func DataGoogleStorageTransferProjectServiceAccount_IsTerraformDataSource(x interface{}) *bool {
+func DataGoogleStorageTransferProjectServiceAccount_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleStorageTransferProjectServiceAccount_IsTerraformDataSourceParameters(x); err != nil {
@@ -482,7 +481,7 @@ func DataGoogleStorageTransferProjectServiceAccount_IsTerraformDataSource(x inte
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleStorageTransferProjectServiceAccount.DataGoogleStorageTransferProjectServiceAccount",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -490,7 +489,7 @@ func DataGoogleStorageTransferProjectServiceAccount_IsTerraformDataSource(x inte
 }
 
 // Experimental.
-func DataGoogleStorageTransferProjectServiceAccount_IsTerraformElement(x interface{}) *bool {
+func DataGoogleStorageTransferProjectServiceAccount_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleStorageTransferProjectServiceAccount_IsTerraformElementParameters(x); err != nil {
@@ -501,7 +500,7 @@ func DataGoogleStorageTransferProjectServiceAccount_IsTerraformElement(x interfa
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleStorageTransferProjectServiceAccount.DataGoogleStorageTransferProjectServiceAccount",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -519,27 +518,27 @@ func DataGoogleStorageTransferProjectServiceAccount_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleStorageTransferProjectServiceAccount) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataGoogleStorageTransferProjectServiceAccount) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataGoogleStorageTransferProjectServiceAccount) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataGoogleStorageTransferProjectServiceAccount) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -555,7 +554,7 @@ func (d *jsiiProxy_DataGoogleStorageTransferProjectServiceAccount) GetBooleanAtt
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -571,7 +570,7 @@ func (d *jsiiProxy_DataGoogleStorageTransferProjectServiceAccount) GetBooleanMap
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -587,7 +586,7 @@ func (d *jsiiProxy_DataGoogleStorageTransferProjectServiceAccount) GetListAttrib
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -603,7 +602,7 @@ func (d *jsiiProxy_DataGoogleStorageTransferProjectServiceAccount) GetNumberAttr
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -619,7 +618,7 @@ func (d *jsiiProxy_DataGoogleStorageTransferProjectServiceAccount) GetNumberList
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -635,7 +634,7 @@ func (d *jsiiProxy_DataGoogleStorageTransferProjectServiceAccount) GetNumberMapA
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -651,7 +650,7 @@ func (d *jsiiProxy_DataGoogleStorageTransferProjectServiceAccount) GetStringAttr
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -667,7 +666,7 @@ func (d *jsiiProxy_DataGoogleStorageTransferProjectServiceAccount) GetStringMapA
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -683,7 +682,7 @@ func (d *jsiiProxy_DataGoogleStorageTransferProjectServiceAccount) Interpolation
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -697,7 +696,7 @@ func (d *jsiiProxy_DataGoogleStorageTransferProjectServiceAccount) OverrideLogic
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -725,8 +724,8 @@ func (d *jsiiProxy_DataGoogleStorageTransferProjectServiceAccount) ResetProject(
 	)
 }
 
-func (d *jsiiProxy_DataGoogleStorageTransferProjectServiceAccount) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleStorageTransferProjectServiceAccount) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -738,8 +737,8 @@ func (d *jsiiProxy_DataGoogleStorageTransferProjectServiceAccount) SynthesizeAtt
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleStorageTransferProjectServiceAccount) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleStorageTransferProjectServiceAccount) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -751,8 +750,8 @@ func (d *jsiiProxy_DataGoogleStorageTransferProjectServiceAccount) SynthesizeHcl
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleStorageTransferProjectServiceAccount) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleStorageTransferProjectServiceAccount) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -764,8 +763,8 @@ func (d *jsiiProxy_DataGoogleStorageTransferProjectServiceAccount) ToHclTerrafor
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleStorageTransferProjectServiceAccount) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleStorageTransferProjectServiceAccount) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -790,8 +789,8 @@ func (d *jsiiProxy_DataGoogleStorageTransferProjectServiceAccount) ToString() *s
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleStorageTransferProjectServiceAccount) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleStorageTransferProjectServiceAccount) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -802,4 +801,3 @@ func (d *jsiiProxy_DataGoogleStorageTransferProjectServiceAccount) ToTerraform()
 
 	return returns
 }
-

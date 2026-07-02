@@ -98,7 +98,7 @@ func (r *jsiiProxy_RedisInstanceServerCaCertsOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_RedisInstanceServerCaCertsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_RedisInstanceServerCaCertsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewRedisInstanceServerCaCertsOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

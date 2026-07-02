@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleMemcacheInstanceNodeConfigOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleMemcacheInstanceNodeConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleMemcacheInstanceNodeConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleMemcacheInstanceNodeConfigOutputReferenceParameters(te
 
 	return nil
 }
-

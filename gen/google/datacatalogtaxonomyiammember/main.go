@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataCatalogTaxonomyIamMember.DataCatalogTaxonomyIamMember",
-		reflect.TypeOf((*DataCatalogTaxonomyIamMember)(nil)).Elem(),
+		reflect.TypeFor[DataCatalogTaxonomyIamMember](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,7 +73,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCatalogTaxonomyIamMember{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -81,11 +81,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataCatalogTaxonomyIamMember.DataCatalogTaxonomyIamMemberCondition",
-		reflect.TypeOf((*DataCatalogTaxonomyIamMemberCondition)(nil)).Elem(),
+		reflect.TypeFor[DataCatalogTaxonomyIamMemberCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataCatalogTaxonomyIamMember.DataCatalogTaxonomyIamMemberConditionOutputReference",
-		reflect.TypeOf((*DataCatalogTaxonomyIamMemberConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataCatalogTaxonomyIamMemberConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -116,7 +116,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCatalogTaxonomyIamMemberConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -124,6 +124,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataCatalogTaxonomyIamMember.DataCatalogTaxonomyIamMemberConfig",
-		reflect.TypeOf((*DataCatalogTaxonomyIamMemberConfig)(nil)).Elem(),
+		reflect.TypeFor[DataCatalogTaxonomyIamMemberConfig](),
 	)
 }

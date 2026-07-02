@@ -90,7 +90,7 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMy
 	return nil
 }
 
-func (d *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesOutputReference) validatePutMysqlTablesParameters(value interface{}) error {
+func (d *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesOutputReference) validatePutMysqlTablesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMy
 	return nil
 }
 
-func (j *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -202,7 +202,7 @@ func (j *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMy
 	return nil
 }
 
-func (j *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -261,4 +261,3 @@ func validateNewDatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysql
 
 	return nil
 }
-

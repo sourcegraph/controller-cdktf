@@ -17,23 +17,23 @@ type LookerInstance interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	ConsumerNetwork() *string
 	SetConsumerNetwork(val *string)
 	ConsumerNetworkInput() *string
 	ControlledEgressConfig() LookerInstanceControlledEgressConfigOutputReference
 	ControlledEgressConfigInput() *LookerInstanceControlledEgressConfig
-	ControlledEgressEnabled() interface{}
-	SetControlledEgressEnabled(val interface{})
-	ControlledEgressEnabledInput() interface{}
+	ControlledEgressEnabled() any
+	SetControlledEgressEnabled(val any)
+	ControlledEgressEnabledInput() any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	CustomDomain() LookerInstanceCustomDomainOutputReference
 	CustomDomainInput() *LookerInstanceCustomDomain
@@ -49,9 +49,9 @@ type LookerInstance interface {
 	EgressPublicIp() *string
 	EncryptionConfig() LookerInstanceEncryptionConfigOutputReference
 	EncryptionConfigInput() *LookerInstanceEncryptionConfig
-	FipsEnabled() interface{}
-	SetFipsEnabled(val interface{})
-	FipsEnabledInput() interface{}
+	FipsEnabled() any
+	SetFipsEnabled(val any)
+	FipsEnabledInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -60,9 +60,9 @@ type LookerInstance interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
-	GeminiEnabled() interface{}
-	SetGeminiEnabled(val interface{})
-	GeminiEnabledInput() interface{}
+	GeminiEnabled() any
+	SetGeminiEnabled(val any)
+	GeminiEnabledInput() any
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -88,9 +88,9 @@ type LookerInstance interface {
 	PlatformEdition() *string
 	SetPlatformEdition(val *string)
 	PlatformEditionInput() *string
-	PrivateIpEnabled() interface{}
-	SetPrivateIpEnabled(val interface{})
-	PrivateIpEnabledInput() interface{}
+	PrivateIpEnabled() any
+	SetPrivateIpEnabled(val any)
+	PrivateIpEnabledInput() any
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -99,19 +99,19 @@ type LookerInstance interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	PscConfig() LookerInstancePscConfigOutputReference
 	PscConfigInput() *LookerInstancePscConfig
-	PscEnabled() interface{}
-	SetPscEnabled(val interface{})
-	PscEnabledInput() interface{}
-	PublicIpEnabled() interface{}
-	SetPublicIpEnabled(val interface{})
-	PublicIpEnabledInput() interface{}
+	PscEnabled() any
+	SetPscEnabled(val any)
+	PscEnabledInput() any
+	PublicIpEnabled() any
+	SetPublicIpEnabled(val any)
+	PublicIpEnabledInput() any
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
@@ -121,11 +121,11 @@ type LookerInstance interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() LookerInstanceTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UpdateTime() *string
 	UserMetadata() LookerInstanceUserMetadataOutputReference
 	UserMetadataInput() *LookerInstanceUserMetadata
@@ -133,9 +133,9 @@ type LookerInstance interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -153,7 +153,7 @@ type LookerInstance interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -165,7 +165,7 @@ type LookerInstance interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -209,17 +209,17 @@ type LookerInstance interface {
 	ResetReservedRange()
 	ResetTimeouts()
 	ResetUserMetadata()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for LookerInstance
@@ -257,8 +257,8 @@ func (j *jsiiProxy_LookerInstance) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_LookerInstance) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LookerInstance) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -267,8 +267,8 @@ func (j *jsiiProxy_LookerInstance) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LookerInstance) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_LookerInstance) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -317,8 +317,8 @@ func (j *jsiiProxy_LookerInstance) ControlledEgressConfigInput() *LookerInstance
 	return returns
 }
 
-func (j *jsiiProxy_LookerInstance) ControlledEgressEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LookerInstance) ControlledEgressEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"controlledEgressEnabled",
@@ -327,8 +327,8 @@ func (j *jsiiProxy_LookerInstance) ControlledEgressEnabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LookerInstance) ControlledEgressEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LookerInstance) ControlledEgressEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"controlledEgressEnabledInput",
@@ -337,8 +337,8 @@ func (j *jsiiProxy_LookerInstance) ControlledEgressEnabledInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LookerInstance) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LookerInstance) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -457,8 +457,8 @@ func (j *jsiiProxy_LookerInstance) EncryptionConfigInput() *LookerInstanceEncryp
 	return returns
 }
 
-func (j *jsiiProxy_LookerInstance) FipsEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LookerInstance) FipsEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"fipsEnabled",
@@ -467,8 +467,8 @@ func (j *jsiiProxy_LookerInstance) FipsEnabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LookerInstance) FipsEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LookerInstance) FipsEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"fipsEnabledInput",
@@ -507,8 +507,8 @@ func (j *jsiiProxy_LookerInstance) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_LookerInstance) GeminiEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LookerInstance) GeminiEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"geminiEnabled",
@@ -517,8 +517,8 @@ func (j *jsiiProxy_LookerInstance) GeminiEnabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LookerInstance) GeminiEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LookerInstance) GeminiEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"geminiEnabledInput",
@@ -707,8 +707,8 @@ func (j *jsiiProxy_LookerInstance) PlatformEditionInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_LookerInstance) PrivateIpEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LookerInstance) PrivateIpEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"privateIpEnabled",
@@ -717,8 +717,8 @@ func (j *jsiiProxy_LookerInstance) PrivateIpEnabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LookerInstance) PrivateIpEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LookerInstance) PrivateIpEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"privateIpEnabledInput",
@@ -757,8 +757,8 @@ func (j *jsiiProxy_LookerInstance) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_LookerInstance) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_LookerInstance) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -787,8 +787,8 @@ func (j *jsiiProxy_LookerInstance) PscConfigInput() *LookerInstancePscConfig {
 	return returns
 }
 
-func (j *jsiiProxy_LookerInstance) PscEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LookerInstance) PscEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"pscEnabled",
@@ -797,8 +797,8 @@ func (j *jsiiProxy_LookerInstance) PscEnabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LookerInstance) PscEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LookerInstance) PscEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"pscEnabledInput",
@@ -807,8 +807,8 @@ func (j *jsiiProxy_LookerInstance) PscEnabledInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LookerInstance) PublicIpEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LookerInstance) PublicIpEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"publicIpEnabled",
@@ -817,8 +817,8 @@ func (j *jsiiProxy_LookerInstance) PublicIpEnabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LookerInstance) PublicIpEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LookerInstance) PublicIpEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"publicIpEnabledInput",
@@ -827,8 +827,8 @@ func (j *jsiiProxy_LookerInstance) PublicIpEnabledInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LookerInstance) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LookerInstance) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -887,8 +887,8 @@ func (j *jsiiProxy_LookerInstance) TerraformGeneratorMetadata() *cdktf.Terraform
 	return returns
 }
 
-func (j *jsiiProxy_LookerInstance) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_LookerInstance) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -917,8 +917,8 @@ func (j *jsiiProxy_LookerInstance) Timeouts() LookerInstanceTimeoutsOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_LookerInstance) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LookerInstance) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -957,7 +957,6 @@ func (j *jsiiProxy_LookerInstance) UserMetadataInput() *LookerInstanceUserMetada
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/looker_instance google_looker_instance} Resource.
 func NewLookerInstance(scope constructs.Construct, id *string, config *LookerInstanceConfig) LookerInstance {
 	_init_.Initialize()
@@ -969,7 +968,7 @@ func NewLookerInstance(scope constructs.Construct, id *string, config *LookerIns
 
 	_jsii_.Create(
 		"@cdktf/provider-google.lookerInstance.LookerInstance",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -982,12 +981,12 @@ func NewLookerInstance_Override(l LookerInstance, scope constructs.Construct, id
 
 	_jsii_.Create(
 		"@cdktf/provider-google.lookerInstance.LookerInstance",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LookerInstance)SetConnection(val interface{}) {
+func (j *jsiiProxy_LookerInstance) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -998,7 +997,7 @@ func (j *jsiiProxy_LookerInstance)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LookerInstance)SetConsumerNetwork(val *string) {
+func (j *jsiiProxy_LookerInstance) SetConsumerNetwork(val *string) {
 	if err := j.validateSetConsumerNetworkParameters(val); err != nil {
 		panic(err)
 	}
@@ -1009,7 +1008,7 @@ func (j *jsiiProxy_LookerInstance)SetConsumerNetwork(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LookerInstance)SetControlledEgressEnabled(val interface{}) {
+func (j *jsiiProxy_LookerInstance) SetControlledEgressEnabled(val any) {
 	if err := j.validateSetControlledEgressEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -1020,7 +1019,7 @@ func (j *jsiiProxy_LookerInstance)SetControlledEgressEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LookerInstance)SetCount(val interface{}) {
+func (j *jsiiProxy_LookerInstance) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -1031,7 +1030,7 @@ func (j *jsiiProxy_LookerInstance)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LookerInstance)SetDeletionPolicy(val *string) {
+func (j *jsiiProxy_LookerInstance) SetDeletionPolicy(val *string) {
 	if err := j.validateSetDeletionPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -1042,7 +1041,7 @@ func (j *jsiiProxy_LookerInstance)SetDeletionPolicy(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LookerInstance)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_LookerInstance) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -1050,7 +1049,7 @@ func (j *jsiiProxy_LookerInstance)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_LookerInstance)SetFipsEnabled(val interface{}) {
+func (j *jsiiProxy_LookerInstance) SetFipsEnabled(val any) {
 	if err := j.validateSetFipsEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -1061,7 +1060,7 @@ func (j *jsiiProxy_LookerInstance)SetFipsEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LookerInstance)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_LookerInstance) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1069,7 +1068,7 @@ func (j *jsiiProxy_LookerInstance)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_LookerInstance)SetGeminiEnabled(val interface{}) {
+func (j *jsiiProxy_LookerInstance) SetGeminiEnabled(val any) {
 	if err := j.validateSetGeminiEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -1080,7 +1079,7 @@ func (j *jsiiProxy_LookerInstance)SetGeminiEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LookerInstance)SetId(val *string) {
+func (j *jsiiProxy_LookerInstance) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1091,7 +1090,7 @@ func (j *jsiiProxy_LookerInstance)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LookerInstance)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_LookerInstance) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1102,7 +1101,7 @@ func (j *jsiiProxy_LookerInstance)SetLifecycle(val *cdktf.TerraformResourceLifec
 	)
 }
 
-func (j *jsiiProxy_LookerInstance)SetName(val *string) {
+func (j *jsiiProxy_LookerInstance) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1113,7 +1112,7 @@ func (j *jsiiProxy_LookerInstance)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LookerInstance)SetPlatformEdition(val *string) {
+func (j *jsiiProxy_LookerInstance) SetPlatformEdition(val *string) {
 	if err := j.validateSetPlatformEditionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1124,7 +1123,7 @@ func (j *jsiiProxy_LookerInstance)SetPlatformEdition(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LookerInstance)SetPrivateIpEnabled(val interface{}) {
+func (j *jsiiProxy_LookerInstance) SetPrivateIpEnabled(val any) {
 	if err := j.validateSetPrivateIpEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -1135,7 +1134,7 @@ func (j *jsiiProxy_LookerInstance)SetPrivateIpEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LookerInstance)SetProject(val *string) {
+func (j *jsiiProxy_LookerInstance) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -1146,7 +1145,7 @@ func (j *jsiiProxy_LookerInstance)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LookerInstance)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_LookerInstance) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1154,7 +1153,7 @@ func (j *jsiiProxy_LookerInstance)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_LookerInstance)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_LookerInstance) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1165,7 +1164,7 @@ func (j *jsiiProxy_LookerInstance)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LookerInstance)SetPscEnabled(val interface{}) {
+func (j *jsiiProxy_LookerInstance) SetPscEnabled(val any) {
 	if err := j.validateSetPscEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -1176,7 +1175,7 @@ func (j *jsiiProxy_LookerInstance)SetPscEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LookerInstance)SetPublicIpEnabled(val interface{}) {
+func (j *jsiiProxy_LookerInstance) SetPublicIpEnabled(val any) {
 	if err := j.validateSetPublicIpEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -1187,7 +1186,7 @@ func (j *jsiiProxy_LookerInstance)SetPublicIpEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LookerInstance)SetRegion(val *string) {
+func (j *jsiiProxy_LookerInstance) SetRegion(val *string) {
 	if err := j.validateSetRegionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1198,7 +1197,7 @@ func (j *jsiiProxy_LookerInstance)SetRegion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LookerInstance)SetReservedRange(val *string) {
+func (j *jsiiProxy_LookerInstance) SetReservedRange(val *string) {
 	if err := j.validateSetReservedRangeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1221,7 +1220,7 @@ func LookerInstance_GenerateConfigForImport(scope constructs.Construct, importTo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.lookerInstance.LookerInstance",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1245,7 +1244,7 @@ func LookerInstance_GenerateConfigForImport(scope constructs.Construct, importTo
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func LookerInstance_IsConstruct(x interface{}) *bool {
+func LookerInstance_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLookerInstance_IsConstructParameters(x); err != nil {
@@ -1256,7 +1255,7 @@ func LookerInstance_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.lookerInstance.LookerInstance",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1264,7 +1263,7 @@ func LookerInstance_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func LookerInstance_IsTerraformElement(x interface{}) *bool {
+func LookerInstance_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLookerInstance_IsTerraformElementParameters(x); err != nil {
@@ -1275,7 +1274,7 @@ func LookerInstance_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.lookerInstance.LookerInstance",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1283,7 +1282,7 @@ func LookerInstance_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func LookerInstance_IsTerraformResource(x interface{}) *bool {
+func LookerInstance_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLookerInstance_IsTerraformResourceParameters(x); err != nil {
@@ -1294,7 +1293,7 @@ func LookerInstance_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.lookerInstance.LookerInstance",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1319,31 +1318,31 @@ func (l *jsiiProxy_LookerInstance) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (l *jsiiProxy_LookerInstance) AddOverride(path *string, value interface{}) {
+func (l *jsiiProxy_LookerInstance) AddOverride(path *string, value any) {
 	if err := l.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (l *jsiiProxy_LookerInstance) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_LookerInstance) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1359,7 +1358,7 @@ func (l *jsiiProxy_LookerInstance) GetBooleanAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1375,7 +1374,7 @@ func (l *jsiiProxy_LookerInstance) GetBooleanMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1391,7 +1390,7 @@ func (l *jsiiProxy_LookerInstance) GetListAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1407,7 +1406,7 @@ func (l *jsiiProxy_LookerInstance) GetNumberAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1423,7 +1422,7 @@ func (l *jsiiProxy_LookerInstance) GetNumberListAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1439,7 +1438,7 @@ func (l *jsiiProxy_LookerInstance) GetNumberMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1455,7 +1454,7 @@ func (l *jsiiProxy_LookerInstance) GetStringAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1471,15 +1470,15 @@ func (l *jsiiProxy_LookerInstance) GetStringMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (l *jsiiProxy_LookerInstance) HasResourceMove() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LookerInstance) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1498,7 +1497,7 @@ func (l *jsiiProxy_LookerInstance) ImportFrom(id *string, provider cdktf.Terrafo
 	_jsii_.InvokeVoid(
 		l,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1511,7 +1510,7 @@ func (l *jsiiProxy_LookerInstance) InterpolationForAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1525,18 +1524,18 @@ func (l *jsiiProxy_LookerInstance) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (l *jsiiProxy_LookerInstance) MoveTo(moveTarget *string, index interface{}) {
+func (l *jsiiProxy_LookerInstance) MoveTo(moveTarget *string, index any) {
 	if err := l.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1547,7 +1546,7 @@ func (l *jsiiProxy_LookerInstance) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1558,7 +1557,7 @@ func (l *jsiiProxy_LookerInstance) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1569,7 +1568,7 @@ func (l *jsiiProxy_LookerInstance) PutAdminSettings(value *LookerInstanceAdminSe
 	_jsii_.InvokeVoid(
 		l,
 		"putAdminSettings",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1580,7 +1579,7 @@ func (l *jsiiProxy_LookerInstance) PutControlledEgressConfig(value *LookerInstan
 	_jsii_.InvokeVoid(
 		l,
 		"putControlledEgressConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1591,7 +1590,7 @@ func (l *jsiiProxy_LookerInstance) PutCustomDomain(value *LookerInstanceCustomDo
 	_jsii_.InvokeVoid(
 		l,
 		"putCustomDomain",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1602,7 +1601,7 @@ func (l *jsiiProxy_LookerInstance) PutDenyMaintenancePeriod(value *LookerInstanc
 	_jsii_.InvokeVoid(
 		l,
 		"putDenyMaintenancePeriod",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1613,7 +1612,7 @@ func (l *jsiiProxy_LookerInstance) PutEncryptionConfig(value *LookerInstanceEncr
 	_jsii_.InvokeVoid(
 		l,
 		"putEncryptionConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1624,7 +1623,7 @@ func (l *jsiiProxy_LookerInstance) PutMaintenanceWindow(value *LookerInstanceMai
 	_jsii_.InvokeVoid(
 		l,
 		"putMaintenanceWindow",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1635,7 +1634,7 @@ func (l *jsiiProxy_LookerInstance) PutOauthConfig(value *LookerInstanceOauthConf
 	_jsii_.InvokeVoid(
 		l,
 		"putOauthConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1646,7 +1645,7 @@ func (l *jsiiProxy_LookerInstance) PutPeriodicExportConfig(value *LookerInstance
 	_jsii_.InvokeVoid(
 		l,
 		"putPeriodicExportConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1657,7 +1656,7 @@ func (l *jsiiProxy_LookerInstance) PutPscConfig(value *LookerInstancePscConfig) 
 	_jsii_.InvokeVoid(
 		l,
 		"putPscConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1668,7 +1667,7 @@ func (l *jsiiProxy_LookerInstance) PutTimeouts(value *LookerInstanceTimeouts) {
 	_jsii_.InvokeVoid(
 		l,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1679,7 +1678,7 @@ func (l *jsiiProxy_LookerInstance) PutUserMetadata(value *LookerInstanceUserMeta
 	_jsii_.InvokeVoid(
 		l,
 		"putUserMetadata",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1875,8 +1874,8 @@ func (l *jsiiProxy_LookerInstance) ResetUserMetadata() {
 	)
 }
 
-func (l *jsiiProxy_LookerInstance) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (l *jsiiProxy_LookerInstance) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
@@ -1888,8 +1887,8 @@ func (l *jsiiProxy_LookerInstance) SynthesizeAttributes() *map[string]interface{
 	return returns
 }
 
-func (l *jsiiProxy_LookerInstance) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (l *jsiiProxy_LookerInstance) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
@@ -1901,8 +1900,8 @@ func (l *jsiiProxy_LookerInstance) SynthesizeHclAttributes() *map[string]interfa
 	return returns
 }
 
-func (l *jsiiProxy_LookerInstance) ToHclTerraform() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LookerInstance) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1914,8 +1913,8 @@ func (l *jsiiProxy_LookerInstance) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (l *jsiiProxy_LookerInstance) ToMetadata() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LookerInstance) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1940,8 +1939,8 @@ func (l *jsiiProxy_LookerInstance) ToString() *string {
 	return returns
 }
 
-func (l *jsiiProxy_LookerInstance) ToTerraform() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LookerInstance) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1952,4 +1951,3 @@ func (l *jsiiProxy_LookerInstance) ToTerraform() interface{} {
 
 	return returns
 }
-

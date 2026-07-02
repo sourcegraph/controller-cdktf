@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembership",
-		reflect.TypeOf((*ComputeInstanceGroupMembership)(nil)).Elem(),
+		reflect.TypeFor[ComputeInstanceGroupMembership](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,7 +70,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zone", GoGetter: "Zone"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneInput", GoGetter: "ZoneInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeInstanceGroupMembership{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -78,15 +78,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembershipConfig",
-		reflect.TypeOf((*ComputeInstanceGroupMembershipConfig)(nil)).Elem(),
+		reflect.TypeFor[ComputeInstanceGroupMembershipConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembershipTimeouts",
-		reflect.TypeOf((*ComputeInstanceGroupMembershipTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ComputeInstanceGroupMembershipTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembershipTimeoutsOutputReference",
-		reflect.TypeOf((*ComputeInstanceGroupMembershipTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeInstanceGroupMembershipTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -116,7 +116,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeInstanceGroupMembershipTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

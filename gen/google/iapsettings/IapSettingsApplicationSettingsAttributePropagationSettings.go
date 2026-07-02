@@ -1,13 +1,12 @@
 package iapsettings
 
-
 type IapSettingsApplicationSettingsAttributePropagationSettings struct {
 	// Whether the provided attribute propagation settings should be evaluated on user requests.
 	//
 	// If set to true, attributes returned from the expression will be propagated in the set output credentials.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iap_settings#enable IapSettings#enable}
-	Enable interface{} `field:"optional" json:"enable" yaml:"enable"`
+	Enable any `field:"optional" json:"enable" yaml:"enable"`
 	// Raw string CEL expression.
 	//
 	// Must return a list of attributes. A maximum of 45 attributes can
@@ -30,4 +29,3 @@ type IapSettingsApplicationSettingsAttributePropagationSettings struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iap_settings#output_credentials IapSettings#output_credentials}
 	OutputCredentials *[]*string `field:"optional" json:"outputCredentials" yaml:"outputCredentials"`
 }
-

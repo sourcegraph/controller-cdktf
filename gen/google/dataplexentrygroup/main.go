@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataplexEntryGroup.DataplexEntryGroup",
-		reflect.TypeOf((*DataplexEntryGroup)(nil)).Elem(),
+		reflect.TypeFor[DataplexEntryGroup](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -85,7 +85,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataplexEntryGroup{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -93,15 +93,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataplexEntryGroup.DataplexEntryGroupConfig",
-		reflect.TypeOf((*DataplexEntryGroupConfig)(nil)).Elem(),
+		reflect.TypeFor[DataplexEntryGroupConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataplexEntryGroup.DataplexEntryGroupTimeouts",
-		reflect.TypeOf((*DataplexEntryGroupTimeouts)(nil)).Elem(),
+		reflect.TypeFor[DataplexEntryGroupTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataplexEntryGroup.DataplexEntryGroupTimeoutsOutputReference",
-		reflect.TypeOf((*DataplexEntryGroupTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataplexEntryGroupTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -134,7 +134,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataplexEntryGroupTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

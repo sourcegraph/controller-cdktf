@@ -1,11 +1,10 @@
 package dataproccluster
 
-
 type DataprocClusterClusterConfigWorkerConfig struct {
 	// accelerators block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_cluster#accelerators DataprocCluster#accelerators}
-	Accelerators interface{} `field:"optional" json:"accelerators" yaml:"accelerators"`
+	Accelerators any `field:"optional" json:"accelerators" yaml:"accelerators"`
 	// disk_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_cluster#disk_config DataprocCluster#disk_config}
@@ -37,4 +36,3 @@ type DataprocClusterClusterConfigWorkerConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_cluster#num_instances DataprocCluster#num_instances}
 	NumInstances *float64 `field:"optional" json:"numInstances" yaml:"numInstances"`
 }
-

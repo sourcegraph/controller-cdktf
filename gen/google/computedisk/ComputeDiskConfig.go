@@ -6,9 +6,9 @@ import (
 
 type ComputeDiskConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type ComputeDiskConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Name of the resource.
 	//
 	// Provided by the client when the resource is
@@ -55,7 +55,7 @@ type ComputeDiskConfig struct {
 	// The name of the snapshot by default will be '{{disk-name}}-YYYYMMDD-HHmm'
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_disk#create_snapshot_before_destroy ComputeDisk#create_snapshot_before_destroy}
-	CreateSnapshotBeforeDestroy interface{} `field:"optional" json:"createSnapshotBeforeDestroy" yaml:"createSnapshotBeforeDestroy"`
+	CreateSnapshotBeforeDestroy any `field:"optional" json:"createSnapshotBeforeDestroy" yaml:"createSnapshotBeforeDestroy"`
 	// This will set a custom name prefix for the snapshot that's created when the disk is deleted.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_disk#create_snapshot_before_destroy_prefix ComputeDisk#create_snapshot_before_destroy_prefix}
@@ -73,11 +73,11 @@ type ComputeDiskConfig struct {
 	// Note: Only supported on hyperdisk skus, disk_encryption_key is required when setting to true
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_disk#enable_confidential_compute ComputeDisk#enable_confidential_compute}
-	EnableConfidentialCompute interface{} `field:"optional" json:"enableConfidentialCompute" yaml:"enableConfidentialCompute"`
+	EnableConfidentialCompute any `field:"optional" json:"enableConfidentialCompute" yaml:"enableConfidentialCompute"`
 	// guest_os_features block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_disk#guest_os_features ComputeDisk#guest_os_features}
-	GuestOsFeatures interface{} `field:"optional" json:"guestOsFeatures" yaml:"guestOsFeatures"`
+	GuestOsFeatures any `field:"optional" json:"guestOsFeatures" yaml:"guestOsFeatures"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_disk#id ComputeDisk#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -237,4 +237,3 @@ type ComputeDiskConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_disk#zone ComputeDisk#zone}
 	Zone *string `field:"optional" json:"zone" yaml:"zone"`
 }
-

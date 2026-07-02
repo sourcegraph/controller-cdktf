@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.sccProjectSccBigQueryExport.SccProjectSccBigQueryExport",
-		reflect.TypeOf((*SccProjectSccBigQueryExport)(nil)).Elem(),
+		reflect.TypeFor[SccProjectSccBigQueryExport](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -79,7 +79,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SccProjectSccBigQueryExport{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -87,15 +87,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.sccProjectSccBigQueryExport.SccProjectSccBigQueryExportConfig",
-		reflect.TypeOf((*SccProjectSccBigQueryExportConfig)(nil)).Elem(),
+		reflect.TypeFor[SccProjectSccBigQueryExportConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.sccProjectSccBigQueryExport.SccProjectSccBigQueryExportTimeouts",
-		reflect.TypeOf((*SccProjectSccBigQueryExportTimeouts)(nil)).Elem(),
+		reflect.TypeFor[SccProjectSccBigQueryExportTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.sccProjectSccBigQueryExport.SccProjectSccBigQueryExportTimeoutsOutputReference",
-		reflect.TypeOf((*SccProjectSccBigQueryExportTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SccProjectSccBigQueryExportTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -128,7 +128,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SccProjectSccBigQueryExportTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

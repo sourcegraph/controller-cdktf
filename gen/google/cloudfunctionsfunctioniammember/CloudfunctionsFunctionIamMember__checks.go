@@ -19,7 +19,7 @@ func (c *jsiiProxy_CloudfunctionsFunctionIamMember) validateAddMoveTargetParamet
 	return nil
 }
 
-func (c *jsiiProxy_CloudfunctionsFunctionIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_CloudfunctionsFunctionIamMember) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_CloudfunctionsFunctionIamMember) validateMoveFromIdParameters
 	return nil
 }
 
-func (c *jsiiProxy_CloudfunctionsFunctionIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_CloudfunctionsFunctionIamMember) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateCloudfunctionsFunctionIamMember_GenerateConfigForImportParameters(s
 	return nil
 }
 
-func validateCloudfunctionsFunctionIamMember_IsConstructParameters(x interface{}) error {
+func validateCloudfunctionsFunctionIamMember_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateCloudfunctionsFunctionIamMember_IsConstructParameters(x interface{}
 	return nil
 }
 
-func validateCloudfunctionsFunctionIamMember_IsTerraformElementParameters(x interface{}) error {
+func validateCloudfunctionsFunctionIamMember_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateCloudfunctionsFunctionIamMember_IsTerraformElementParameters(x inte
 	return nil
 }
 
-func validateCloudfunctionsFunctionIamMember_IsTerraformResourceParameters(x interface{}) error {
+func validateCloudfunctionsFunctionIamMember_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_CloudfunctionsFunctionIamMember) validateSetCloudFunctionPara
 	return nil
 }
 
-func (j *jsiiProxy_CloudfunctionsFunctionIamMember) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_CloudfunctionsFunctionIamMember) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_CloudfunctionsFunctionIamMember) validateSetConnectionParamet
 	return nil
 }
 
-func (j *jsiiProxy_CloudfunctionsFunctionIamMember) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_CloudfunctionsFunctionIamMember) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -385,7 +385,7 @@ func (j *jsiiProxy_CloudfunctionsFunctionIamMember) validateSetProjectParameters
 	return nil
 }
 
-func (j *jsiiProxy_CloudfunctionsFunctionIamMember) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_CloudfunctionsFunctionIamMember) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -465,4 +465,3 @@ func validateNewCloudfunctionsFunctionIamMemberParameters(scope constructs.Const
 
 	return nil
 }
-

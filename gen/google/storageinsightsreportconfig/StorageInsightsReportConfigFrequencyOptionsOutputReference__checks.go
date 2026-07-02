@@ -120,7 +120,7 @@ func (s *jsiiProxy_StorageInsightsReportConfigFrequencyOptionsOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_StorageInsightsReportConfigFrequencyOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_StorageInsightsReportConfigFrequencyOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -228,4 +228,3 @@ func validateNewStorageInsightsReportConfigFrequencyOptionsOutputReferenceParame
 
 	return nil
 }
-

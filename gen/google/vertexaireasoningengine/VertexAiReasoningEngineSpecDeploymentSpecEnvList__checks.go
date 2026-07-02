@@ -34,7 +34,7 @@ func (v *jsiiProxy_VertexAiReasoningEngineSpecDeploymentSpecEnvList) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_VertexAiReasoningEngineSpecDeploymentSpecEnvList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_VertexAiReasoningEngineSpecDeploymentSpecEnvList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewVertexAiReasoningEngineSpecDeploymentSpecEnvListParameters(terra
 
 	return nil
 }
-

@@ -15,15 +15,15 @@ type DnsResponsePolicy interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -40,7 +40,7 @@ type DnsResponsePolicy interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	GkeClusters() DnsResponsePolicyGkeClustersList
-	GkeClustersInput() interface{}
+	GkeClustersInput() any
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -49,7 +49,7 @@ type DnsResponsePolicy interface {
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	Networks() DnsResponsePolicyNetworksList
-	NetworksInput() interface{}
+	NetworksInput() any
 	// The tree node.
 	Node() constructs.Node
 	Project() *string
@@ -60,29 +60,29 @@ type DnsResponsePolicy interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ResponsePolicyName() *string
 	SetResponsePolicyName(val *string)
 	ResponsePolicyNameInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() DnsResponsePolicyTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -100,7 +100,7 @@ type DnsResponsePolicy interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -112,15 +112,15 @@ type DnsResponsePolicy interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutGkeClusters(value interface{})
-	PutNetworks(value interface{})
+	PutGkeClusters(value any)
+	PutNetworks(value any)
 	PutTimeouts(value *DnsResponsePolicyTimeouts)
 	ResetDescription()
 	ResetGkeClusters()
@@ -131,17 +131,17 @@ type DnsResponsePolicy interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DnsResponsePolicy
@@ -159,8 +159,8 @@ func (j *jsiiProxy_DnsResponsePolicy) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DnsResponsePolicy) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DnsResponsePolicy) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -169,8 +169,8 @@ func (j *jsiiProxy_DnsResponsePolicy) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DnsResponsePolicy) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DnsResponsePolicy) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -179,8 +179,8 @@ func (j *jsiiProxy_DnsResponsePolicy) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_DnsResponsePolicy) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DnsResponsePolicy) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -259,8 +259,8 @@ func (j *jsiiProxy_DnsResponsePolicy) GkeClusters() DnsResponsePolicyGkeClusters
 	return returns
 }
 
-func (j *jsiiProxy_DnsResponsePolicy) GkeClustersInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DnsResponsePolicy) GkeClustersInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"gkeClustersInput",
@@ -309,8 +309,8 @@ func (j *jsiiProxy_DnsResponsePolicy) Networks() DnsResponsePolicyNetworksList {
 	return returns
 }
 
-func (j *jsiiProxy_DnsResponsePolicy) NetworksInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DnsResponsePolicy) NetworksInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"networksInput",
@@ -359,8 +359,8 @@ func (j *jsiiProxy_DnsResponsePolicy) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DnsResponsePolicy) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_DnsResponsePolicy) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -369,8 +369,8 @@ func (j *jsiiProxy_DnsResponsePolicy) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DnsResponsePolicy) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DnsResponsePolicy) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -409,8 +409,8 @@ func (j *jsiiProxy_DnsResponsePolicy) TerraformGeneratorMetadata() *cdktf.Terraf
 	return returns
 }
 
-func (j *jsiiProxy_DnsResponsePolicy) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DnsResponsePolicy) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -439,8 +439,8 @@ func (j *jsiiProxy_DnsResponsePolicy) Timeouts() DnsResponsePolicyTimeoutsOutput
 	return returns
 }
 
-func (j *jsiiProxy_DnsResponsePolicy) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DnsResponsePolicy) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -448,7 +448,6 @@ func (j *jsiiProxy_DnsResponsePolicy) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dns_response_policy google_dns_response_policy} Resource.
 func NewDnsResponsePolicy(scope constructs.Construct, id *string, config *DnsResponsePolicyConfig) DnsResponsePolicy {
@@ -461,7 +460,7 @@ func NewDnsResponsePolicy(scope constructs.Construct, id *string, config *DnsRes
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dnsResponsePolicy.DnsResponsePolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -474,12 +473,12 @@ func NewDnsResponsePolicy_Override(d DnsResponsePolicy, scope constructs.Constru
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dnsResponsePolicy.DnsResponsePolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DnsResponsePolicy)SetConnection(val interface{}) {
+func (j *jsiiProxy_DnsResponsePolicy) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -490,7 +489,7 @@ func (j *jsiiProxy_DnsResponsePolicy)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DnsResponsePolicy)SetCount(val interface{}) {
+func (j *jsiiProxy_DnsResponsePolicy) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -501,7 +500,7 @@ func (j *jsiiProxy_DnsResponsePolicy)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DnsResponsePolicy)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DnsResponsePolicy) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -509,7 +508,7 @@ func (j *jsiiProxy_DnsResponsePolicy)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DnsResponsePolicy)SetDescription(val *string) {
+func (j *jsiiProxy_DnsResponsePolicy) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -520,7 +519,7 @@ func (j *jsiiProxy_DnsResponsePolicy)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DnsResponsePolicy)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DnsResponsePolicy) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -528,7 +527,7 @@ func (j *jsiiProxy_DnsResponsePolicy)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_DnsResponsePolicy)SetId(val *string) {
+func (j *jsiiProxy_DnsResponsePolicy) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -539,7 +538,7 @@ func (j *jsiiProxy_DnsResponsePolicy)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DnsResponsePolicy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DnsResponsePolicy) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -550,7 +549,7 @@ func (j *jsiiProxy_DnsResponsePolicy)SetLifecycle(val *cdktf.TerraformResourceLi
 	)
 }
 
-func (j *jsiiProxy_DnsResponsePolicy)SetProject(val *string) {
+func (j *jsiiProxy_DnsResponsePolicy) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -561,7 +560,7 @@ func (j *jsiiProxy_DnsResponsePolicy)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DnsResponsePolicy)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DnsResponsePolicy) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -569,7 +568,7 @@ func (j *jsiiProxy_DnsResponsePolicy)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_DnsResponsePolicy)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_DnsResponsePolicy) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -580,7 +579,7 @@ func (j *jsiiProxy_DnsResponsePolicy)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DnsResponsePolicy)SetResponsePolicyName(val *string) {
+func (j *jsiiProxy_DnsResponsePolicy) SetResponsePolicyName(val *string) {
 	if err := j.validateSetResponsePolicyNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -603,7 +602,7 @@ func DnsResponsePolicy_GenerateConfigForImport(scope constructs.Construct, impor
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dnsResponsePolicy.DnsResponsePolicy",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -627,7 +626,7 @@ func DnsResponsePolicy_GenerateConfigForImport(scope constructs.Construct, impor
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DnsResponsePolicy_IsConstruct(x interface{}) *bool {
+func DnsResponsePolicy_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDnsResponsePolicy_IsConstructParameters(x); err != nil {
@@ -638,7 +637,7 @@ func DnsResponsePolicy_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dnsResponsePolicy.DnsResponsePolicy",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -646,7 +645,7 @@ func DnsResponsePolicy_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DnsResponsePolicy_IsTerraformElement(x interface{}) *bool {
+func DnsResponsePolicy_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDnsResponsePolicy_IsTerraformElementParameters(x); err != nil {
@@ -657,7 +656,7 @@ func DnsResponsePolicy_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dnsResponsePolicy.DnsResponsePolicy",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -665,7 +664,7 @@ func DnsResponsePolicy_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func DnsResponsePolicy_IsTerraformResource(x interface{}) *bool {
+func DnsResponsePolicy_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDnsResponsePolicy_IsTerraformResourceParameters(x); err != nil {
@@ -676,7 +675,7 @@ func DnsResponsePolicy_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dnsResponsePolicy.DnsResponsePolicy",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -701,31 +700,31 @@ func (d *jsiiProxy_DnsResponsePolicy) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (d *jsiiProxy_DnsResponsePolicy) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DnsResponsePolicy) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DnsResponsePolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DnsResponsePolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -741,7 +740,7 @@ func (d *jsiiProxy_DnsResponsePolicy) GetBooleanAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -757,7 +756,7 @@ func (d *jsiiProxy_DnsResponsePolicy) GetBooleanMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -773,7 +772,7 @@ func (d *jsiiProxy_DnsResponsePolicy) GetListAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -789,7 +788,7 @@ func (d *jsiiProxy_DnsResponsePolicy) GetNumberAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -805,7 +804,7 @@ func (d *jsiiProxy_DnsResponsePolicy) GetNumberListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -821,7 +820,7 @@ func (d *jsiiProxy_DnsResponsePolicy) GetNumberMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -837,7 +836,7 @@ func (d *jsiiProxy_DnsResponsePolicy) GetStringAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -853,15 +852,15 @@ func (d *jsiiProxy_DnsResponsePolicy) GetStringMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DnsResponsePolicy) HasResourceMove() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DnsResponsePolicy) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -880,7 +879,7 @@ func (d *jsiiProxy_DnsResponsePolicy) ImportFrom(id *string, provider cdktf.Terr
 	_jsii_.InvokeVoid(
 		d,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -893,7 +892,7 @@ func (d *jsiiProxy_DnsResponsePolicy) InterpolationForAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -907,18 +906,18 @@ func (d *jsiiProxy_DnsResponsePolicy) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (d *jsiiProxy_DnsResponsePolicy) MoveTo(moveTarget *string, index interface{}) {
+func (d *jsiiProxy_DnsResponsePolicy) MoveTo(moveTarget *string, index any) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -929,7 +928,7 @@ func (d *jsiiProxy_DnsResponsePolicy) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -940,29 +939,29 @@ func (d *jsiiProxy_DnsResponsePolicy) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (d *jsiiProxy_DnsResponsePolicy) PutGkeClusters(value interface{}) {
+func (d *jsiiProxy_DnsResponsePolicy) PutGkeClusters(value any) {
 	if err := d.validatePutGkeClustersParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putGkeClusters",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (d *jsiiProxy_DnsResponsePolicy) PutNetworks(value interface{}) {
+func (d *jsiiProxy_DnsResponsePolicy) PutNetworks(value any) {
 	if err := d.validatePutNetworksParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putNetworks",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -973,7 +972,7 @@ func (d *jsiiProxy_DnsResponsePolicy) PutTimeouts(value *DnsResponsePolicyTimeou
 	_jsii_.InvokeVoid(
 		d,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1033,8 +1032,8 @@ func (d *jsiiProxy_DnsResponsePolicy) ResetTimeouts() {
 	)
 }
 
-func (d *jsiiProxy_DnsResponsePolicy) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DnsResponsePolicy) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1046,8 +1045,8 @@ func (d *jsiiProxy_DnsResponsePolicy) SynthesizeAttributes() *map[string]interfa
 	return returns
 }
 
-func (d *jsiiProxy_DnsResponsePolicy) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DnsResponsePolicy) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1059,8 +1058,8 @@ func (d *jsiiProxy_DnsResponsePolicy) SynthesizeHclAttributes() *map[string]inte
 	return returns
 }
 
-func (d *jsiiProxy_DnsResponsePolicy) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DnsResponsePolicy) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1072,8 +1071,8 @@ func (d *jsiiProxy_DnsResponsePolicy) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DnsResponsePolicy) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DnsResponsePolicy) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1098,8 +1097,8 @@ func (d *jsiiProxy_DnsResponsePolicy) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DnsResponsePolicy) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DnsResponsePolicy) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1110,4 +1109,3 @@ func (d *jsiiProxy_DnsResponsePolicy) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -12,9 +12,9 @@ type BillingAccountIamMemberConditionOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -49,7 +49,7 @@ type BillingAccountIamMemberConditionOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -73,7 +73,7 @@ type BillingAccountIamMemberConditionOutputReference interface {
 	ResetDescription()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -86,8 +86,8 @@ type jsiiProxy_BillingAccountIamMemberConditionOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_BillingAccountIamMemberConditionOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BillingAccountIamMemberConditionOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -216,7 +216,6 @@ func (j *jsiiProxy_BillingAccountIamMemberConditionOutputReference) TitleInput()
 	return returns
 }
 
-
 func NewBillingAccountIamMemberConditionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) BillingAccountIamMemberConditionOutputReference {
 	_init_.Initialize()
 
@@ -227,7 +226,7 @@ func NewBillingAccountIamMemberConditionOutputReference(terraformResource cdktf.
 
 	_jsii_.Create(
 		"@cdktf/provider-google.billingAccountIamMember.BillingAccountIamMemberConditionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -239,12 +238,12 @@ func NewBillingAccountIamMemberConditionOutputReference_Override(b BillingAccoun
 
 	_jsii_.Create(
 		"@cdktf/provider-google.billingAccountIamMember.BillingAccountIamMemberConditionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		b,
 	)
 }
 
-func (j *jsiiProxy_BillingAccountIamMemberConditionOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_BillingAccountIamMemberConditionOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_BillingAccountIamMemberConditionOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_BillingAccountIamMemberConditionOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_BillingAccountIamMemberConditionOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_BillingAccountIamMemberConditionOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_BillingAccountIamMemberConditionOutputReference)SetDescription(val *string) {
+func (j *jsiiProxy_BillingAccountIamMemberConditionOutputReference) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_BillingAccountIamMemberConditionOutputReference)SetDescriptio
 	)
 }
 
-func (j *jsiiProxy_BillingAccountIamMemberConditionOutputReference)SetExpression(val *string) {
+func (j *jsiiProxy_BillingAccountIamMemberConditionOutputReference) SetExpression(val *string) {
 	if err := j.validateSetExpressionParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_BillingAccountIamMemberConditionOutputReference)SetExpression
 	)
 }
 
-func (j *jsiiProxy_BillingAccountIamMemberConditionOutputReference)SetInternalValue(val *BillingAccountIamMemberCondition) {
+func (j *jsiiProxy_BillingAccountIamMemberConditionOutputReference) SetInternalValue(val *BillingAccountIamMemberCondition) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -299,7 +298,7 @@ func (j *jsiiProxy_BillingAccountIamMemberConditionOutputReference)SetInternalVa
 	)
 }
 
-func (j *jsiiProxy_BillingAccountIamMemberConditionOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_BillingAccountIamMemberConditionOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -310,7 +309,7 @@ func (j *jsiiProxy_BillingAccountIamMemberConditionOutputReference)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_BillingAccountIamMemberConditionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BillingAccountIamMemberConditionOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -321,7 +320,7 @@ func (j *jsiiProxy_BillingAccountIamMemberConditionOutputReference)SetTerraformR
 	)
 }
 
-func (j *jsiiProxy_BillingAccountIamMemberConditionOutputReference)SetTitle(val *string) {
+func (j *jsiiProxy_BillingAccountIamMemberConditionOutputReference) SetTitle(val *string) {
 	if err := j.validateSetTitleParameters(val); err != nil {
 		panic(err)
 	}
@@ -345,16 +344,16 @@ func (b *jsiiProxy_BillingAccountIamMemberConditionOutputReference) ComputeFqn()
 	return returns
 }
 
-func (b *jsiiProxy_BillingAccountIamMemberConditionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (b *jsiiProxy_BillingAccountIamMemberConditionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := b.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -370,7 +369,7 @@ func (b *jsiiProxy_BillingAccountIamMemberConditionOutputReference) GetBooleanAt
 	_jsii_.Invoke(
 		b,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -386,7 +385,7 @@ func (b *jsiiProxy_BillingAccountIamMemberConditionOutputReference) GetBooleanMa
 	_jsii_.Invoke(
 		b,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -402,7 +401,7 @@ func (b *jsiiProxy_BillingAccountIamMemberConditionOutputReference) GetListAttri
 	_jsii_.Invoke(
 		b,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -418,7 +417,7 @@ func (b *jsiiProxy_BillingAccountIamMemberConditionOutputReference) GetNumberAtt
 	_jsii_.Invoke(
 		b,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -434,7 +433,7 @@ func (b *jsiiProxy_BillingAccountIamMemberConditionOutputReference) GetNumberLis
 	_jsii_.Invoke(
 		b,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -450,7 +449,7 @@ func (b *jsiiProxy_BillingAccountIamMemberConditionOutputReference) GetNumberMap
 	_jsii_.Invoke(
 		b,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -466,7 +465,7 @@ func (b *jsiiProxy_BillingAccountIamMemberConditionOutputReference) GetStringAtt
 	_jsii_.Invoke(
 		b,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -482,7 +481,7 @@ func (b *jsiiProxy_BillingAccountIamMemberConditionOutputReference) GetStringMap
 	_jsii_.Invoke(
 		b,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -511,7 +510,7 @@ func (b *jsiiProxy_BillingAccountIamMemberConditionOutputReference) Interpolatio
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -526,16 +525,16 @@ func (b *jsiiProxy_BillingAccountIamMemberConditionOutputReference) ResetDescrip
 	)
 }
 
-func (b *jsiiProxy_BillingAccountIamMemberConditionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (b *jsiiProxy_BillingAccountIamMemberConditionOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := b.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -554,4 +553,3 @@ func (b *jsiiProxy_BillingAccountIamMemberConditionOutputReference) ToString() *
 
 	return returns
 }
-

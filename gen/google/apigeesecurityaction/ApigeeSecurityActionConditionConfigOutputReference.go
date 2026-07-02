@@ -27,9 +27,9 @@ type ApigeeSecurityActionConditionConfigOutputReference interface {
 	BotReasonsInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -73,7 +73,7 @@ type ApigeeSecurityActionConditionConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -107,7 +107,7 @@ type ApigeeSecurityActionConditionConfigOutputReference interface {
 	ResetUserAgents()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -220,8 +220,8 @@ func (j *jsiiProxy_ApigeeSecurityActionConditionConfigOutputReference) BotReason
 	return returns
 }
 
-func (j *jsiiProxy_ApigeeSecurityActionConditionConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApigeeSecurityActionConditionConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -410,7 +410,6 @@ func (j *jsiiProxy_ApigeeSecurityActionConditionConfigOutputReference) UserAgent
 	return returns
 }
 
-
 func NewApigeeSecurityActionConditionConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ApigeeSecurityActionConditionConfigOutputReference {
 	_init_.Initialize()
 
@@ -421,7 +420,7 @@ func NewApigeeSecurityActionConditionConfigOutputReference(terraformResource cdk
 
 	_jsii_.Create(
 		"@cdktf/provider-google.apigeeSecurityAction.ApigeeSecurityActionConditionConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -433,12 +432,12 @@ func NewApigeeSecurityActionConditionConfigOutputReference_Override(a ApigeeSecu
 
 	_jsii_.Create(
 		"@cdktf/provider-google.apigeeSecurityAction.ApigeeSecurityActionConditionConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		a,
 	)
 }
 
-func (j *jsiiProxy_ApigeeSecurityActionConditionConfigOutputReference)SetAccessTokens(val *[]*string) {
+func (j *jsiiProxy_ApigeeSecurityActionConditionConfigOutputReference) SetAccessTokens(val *[]*string) {
 	if err := j.validateSetAccessTokensParameters(val); err != nil {
 		panic(err)
 	}
@@ -449,7 +448,7 @@ func (j *jsiiProxy_ApigeeSecurityActionConditionConfigOutputReference)SetAccessT
 	)
 }
 
-func (j *jsiiProxy_ApigeeSecurityActionConditionConfigOutputReference)SetApiKeys(val *[]*string) {
+func (j *jsiiProxy_ApigeeSecurityActionConditionConfigOutputReference) SetApiKeys(val *[]*string) {
 	if err := j.validateSetApiKeysParameters(val); err != nil {
 		panic(err)
 	}
@@ -460,7 +459,7 @@ func (j *jsiiProxy_ApigeeSecurityActionConditionConfigOutputReference)SetApiKeys
 	)
 }
 
-func (j *jsiiProxy_ApigeeSecurityActionConditionConfigOutputReference)SetApiProducts(val *[]*string) {
+func (j *jsiiProxy_ApigeeSecurityActionConditionConfigOutputReference) SetApiProducts(val *[]*string) {
 	if err := j.validateSetApiProductsParameters(val); err != nil {
 		panic(err)
 	}
@@ -471,7 +470,7 @@ func (j *jsiiProxy_ApigeeSecurityActionConditionConfigOutputReference)SetApiProd
 	)
 }
 
-func (j *jsiiProxy_ApigeeSecurityActionConditionConfigOutputReference)SetAsns(val *[]*string) {
+func (j *jsiiProxy_ApigeeSecurityActionConditionConfigOutputReference) SetAsns(val *[]*string) {
 	if err := j.validateSetAsnsParameters(val); err != nil {
 		panic(err)
 	}
@@ -482,7 +481,7 @@ func (j *jsiiProxy_ApigeeSecurityActionConditionConfigOutputReference)SetAsns(va
 	)
 }
 
-func (j *jsiiProxy_ApigeeSecurityActionConditionConfigOutputReference)SetBotReasons(val *[]*string) {
+func (j *jsiiProxy_ApigeeSecurityActionConditionConfigOutputReference) SetBotReasons(val *[]*string) {
 	if err := j.validateSetBotReasonsParameters(val); err != nil {
 		panic(err)
 	}
@@ -493,7 +492,7 @@ func (j *jsiiProxy_ApigeeSecurityActionConditionConfigOutputReference)SetBotReas
 	)
 }
 
-func (j *jsiiProxy_ApigeeSecurityActionConditionConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ApigeeSecurityActionConditionConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -504,7 +503,7 @@ func (j *jsiiProxy_ApigeeSecurityActionConditionConfigOutputReference)SetComplex
 	)
 }
 
-func (j *jsiiProxy_ApigeeSecurityActionConditionConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ApigeeSecurityActionConditionConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -515,7 +514,7 @@ func (j *jsiiProxy_ApigeeSecurityActionConditionConfigOutputReference)SetComplex
 	)
 }
 
-func (j *jsiiProxy_ApigeeSecurityActionConditionConfigOutputReference)SetDeveloperApps(val *[]*string) {
+func (j *jsiiProxy_ApigeeSecurityActionConditionConfigOutputReference) SetDeveloperApps(val *[]*string) {
 	if err := j.validateSetDeveloperAppsParameters(val); err != nil {
 		panic(err)
 	}
@@ -526,7 +525,7 @@ func (j *jsiiProxy_ApigeeSecurityActionConditionConfigOutputReference)SetDevelop
 	)
 }
 
-func (j *jsiiProxy_ApigeeSecurityActionConditionConfigOutputReference)SetDevelopers(val *[]*string) {
+func (j *jsiiProxy_ApigeeSecurityActionConditionConfigOutputReference) SetDevelopers(val *[]*string) {
 	if err := j.validateSetDevelopersParameters(val); err != nil {
 		panic(err)
 	}
@@ -537,7 +536,7 @@ func (j *jsiiProxy_ApigeeSecurityActionConditionConfigOutputReference)SetDevelop
 	)
 }
 
-func (j *jsiiProxy_ApigeeSecurityActionConditionConfigOutputReference)SetHttpMethods(val *[]*string) {
+func (j *jsiiProxy_ApigeeSecurityActionConditionConfigOutputReference) SetHttpMethods(val *[]*string) {
 	if err := j.validateSetHttpMethodsParameters(val); err != nil {
 		panic(err)
 	}
@@ -548,7 +547,7 @@ func (j *jsiiProxy_ApigeeSecurityActionConditionConfigOutputReference)SetHttpMet
 	)
 }
 
-func (j *jsiiProxy_ApigeeSecurityActionConditionConfigOutputReference)SetInternalValue(val *ApigeeSecurityActionConditionConfig) {
+func (j *jsiiProxy_ApigeeSecurityActionConditionConfigOutputReference) SetInternalValue(val *ApigeeSecurityActionConditionConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -559,7 +558,7 @@ func (j *jsiiProxy_ApigeeSecurityActionConditionConfigOutputReference)SetInterna
 	)
 }
 
-func (j *jsiiProxy_ApigeeSecurityActionConditionConfigOutputReference)SetIpAddressRanges(val *[]*string) {
+func (j *jsiiProxy_ApigeeSecurityActionConditionConfigOutputReference) SetIpAddressRanges(val *[]*string) {
 	if err := j.validateSetIpAddressRangesParameters(val); err != nil {
 		panic(err)
 	}
@@ -570,7 +569,7 @@ func (j *jsiiProxy_ApigeeSecurityActionConditionConfigOutputReference)SetIpAddre
 	)
 }
 
-func (j *jsiiProxy_ApigeeSecurityActionConditionConfigOutputReference)SetRegionCodes(val *[]*string) {
+func (j *jsiiProxy_ApigeeSecurityActionConditionConfigOutputReference) SetRegionCodes(val *[]*string) {
 	if err := j.validateSetRegionCodesParameters(val); err != nil {
 		panic(err)
 	}
@@ -581,7 +580,7 @@ func (j *jsiiProxy_ApigeeSecurityActionConditionConfigOutputReference)SetRegionC
 	)
 }
 
-func (j *jsiiProxy_ApigeeSecurityActionConditionConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ApigeeSecurityActionConditionConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -592,7 +591,7 @@ func (j *jsiiProxy_ApigeeSecurityActionConditionConfigOutputReference)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_ApigeeSecurityActionConditionConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ApigeeSecurityActionConditionConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -603,7 +602,7 @@ func (j *jsiiProxy_ApigeeSecurityActionConditionConfigOutputReference)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_ApigeeSecurityActionConditionConfigOutputReference)SetUserAgents(val *[]*string) {
+func (j *jsiiProxy_ApigeeSecurityActionConditionConfigOutputReference) SetUserAgents(val *[]*string) {
 	if err := j.validateSetUserAgentsParameters(val); err != nil {
 		panic(err)
 	}
@@ -627,16 +626,16 @@ func (a *jsiiProxy_ApigeeSecurityActionConditionConfigOutputReference) ComputeFq
 	return returns
 }
 
-func (a *jsiiProxy_ApigeeSecurityActionConditionConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_ApigeeSecurityActionConditionConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -652,7 +651,7 @@ func (a *jsiiProxy_ApigeeSecurityActionConditionConfigOutputReference) GetBoolea
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -668,7 +667,7 @@ func (a *jsiiProxy_ApigeeSecurityActionConditionConfigOutputReference) GetBoolea
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -684,7 +683,7 @@ func (a *jsiiProxy_ApigeeSecurityActionConditionConfigOutputReference) GetListAt
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -700,7 +699,7 @@ func (a *jsiiProxy_ApigeeSecurityActionConditionConfigOutputReference) GetNumber
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -716,7 +715,7 @@ func (a *jsiiProxy_ApigeeSecurityActionConditionConfigOutputReference) GetNumber
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -732,7 +731,7 @@ func (a *jsiiProxy_ApigeeSecurityActionConditionConfigOutputReference) GetNumber
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -748,7 +747,7 @@ func (a *jsiiProxy_ApigeeSecurityActionConditionConfigOutputReference) GetString
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -764,7 +763,7 @@ func (a *jsiiProxy_ApigeeSecurityActionConditionConfigOutputReference) GetString
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -793,7 +792,7 @@ func (a *jsiiProxy_ApigeeSecurityActionConditionConfigOutputReference) Interpola
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -888,16 +887,16 @@ func (a *jsiiProxy_ApigeeSecurityActionConditionConfigOutputReference) ResetUser
 	)
 }
 
-func (a *jsiiProxy_ApigeeSecurityActionConditionConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_ApigeeSecurityActionConditionConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -916,4 +915,3 @@ func (a *jsiiProxy_ApigeeSecurityActionConditionConfigOutputReference) ToString(
 
 	return returns
 }
-

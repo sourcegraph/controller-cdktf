@@ -19,7 +19,7 @@ func (b *jsiiProxy_BigtableInstanceIamBinding) validateAddMoveTargetParameters(m
 	return nil
 }
 
-func (b *jsiiProxy_BigtableInstanceIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
+func (b *jsiiProxy_BigtableInstanceIamBinding) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (b *jsiiProxy_BigtableInstanceIamBinding) validateMoveFromIdParameters(id *
 	return nil
 }
 
-func (b *jsiiProxy_BigtableInstanceIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (b *jsiiProxy_BigtableInstanceIamBinding) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateBigtableInstanceIamBinding_GenerateConfigForImportParameters(scope 
 	return nil
 }
 
-func validateBigtableInstanceIamBinding_IsConstructParameters(x interface{}) error {
+func validateBigtableInstanceIamBinding_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateBigtableInstanceIamBinding_IsConstructParameters(x interface{}) err
 	return nil
 }
 
-func validateBigtableInstanceIamBinding_IsTerraformElementParameters(x interface{}) error {
+func validateBigtableInstanceIamBinding_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateBigtableInstanceIamBinding_IsTerraformElementParameters(x interface
 	return nil
 }
 
-func validateBigtableInstanceIamBinding_IsTerraformResourceParameters(x interface{}) error {
+func validateBigtableInstanceIamBinding_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateBigtableInstanceIamBinding_IsTerraformResourceParameters(x interfac
 	return nil
 }
 
-func (j *jsiiProxy_BigtableInstanceIamBinding) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_BigtableInstanceIamBinding) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_BigtableInstanceIamBinding) validateSetConnectionParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_BigtableInstanceIamBinding) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_BigtableInstanceIamBinding) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -385,7 +385,7 @@ func (j *jsiiProxy_BigtableInstanceIamBinding) validateSetProjectParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_BigtableInstanceIamBinding) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_BigtableInstanceIamBinding) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -457,4 +457,3 @@ func validateNewBigtableInstanceIamBindingParameters(scope constructs.Construct,
 
 	return nil
 }
-

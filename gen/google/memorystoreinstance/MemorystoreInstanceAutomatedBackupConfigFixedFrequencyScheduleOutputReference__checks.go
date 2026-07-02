@@ -109,7 +109,7 @@ func (m *jsiiProxy_MemorystoreInstanceAutomatedBackupConfigFixedFrequencySchedul
 	return nil
 }
 
-func (j *jsiiProxy_MemorystoreInstanceAutomatedBackupConfigFixedFrequencyScheduleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MemorystoreInstanceAutomatedBackupConfigFixedFrequencyScheduleOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewMemorystoreInstanceAutomatedBackupConfigFixedFrequencyScheduleOu
 
 	return nil
 }
-

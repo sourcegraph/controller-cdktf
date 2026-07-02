@@ -109,7 +109,7 @@ func (d *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigLimitsMaxFindin
 	return nil
 }
 
-func (j *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigLimitsMaxFindingsPerInfoTypeInfoTypeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigLimitsMaxFindingsPerInfoTypeInfoTypeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -225,4 +225,3 @@ func validateNewDataLossPreventionInspectTemplateInspectConfigLimitsMaxFindingsP
 
 	return nil
 }
-

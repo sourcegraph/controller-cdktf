@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeNodeGroupShareSettingsProjectMapOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_ComputeNodeGroupShareSettingsProjectMapOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeNodeGroupShareSettingsProjectMapOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_ComputeNodeGroupShareSettingsProjectMapOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_ComputeNodeGroupShareSettingsProjectMapOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeNodeGroupShareSettingsProjectMapOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewComputeNodeGroupShareSettingsProjectMapOutputReferenceParameters
 
 	return nil
 }
-

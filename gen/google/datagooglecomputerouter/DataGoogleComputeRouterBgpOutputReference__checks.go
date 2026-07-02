@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleComputeRouterBgpOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeRouterBgpOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleComputeRouterBgpOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleComputeRouterBgpOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

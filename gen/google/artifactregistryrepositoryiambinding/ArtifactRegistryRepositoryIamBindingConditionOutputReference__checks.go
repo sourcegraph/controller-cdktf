@@ -98,7 +98,7 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryIamBindingConditionOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_ArtifactRegistryRepositoryIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ArtifactRegistryRepositoryIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewArtifactRegistryRepositoryIamBindingConditionOutputReferencePara
 
 	return nil
 }
-

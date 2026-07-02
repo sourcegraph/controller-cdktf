@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleArtifactRegistryTag.DataGoogleArtifactRegistryTag",
-		reflect.TypeOf((*DataGoogleArtifactRegistryTag)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleArtifactRegistryTag](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -61,7 +61,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleArtifactRegistryTag{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -69,6 +69,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleArtifactRegistryTag.DataGoogleArtifactRegistryTagConfig",
-		reflect.TypeOf((*DataGoogleArtifactRegistryTagConfig)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleArtifactRegistryTagConfig](),
 	)
 }

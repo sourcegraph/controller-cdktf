@@ -34,7 +34,7 @@ func (c *jsiiProxy_ComputeRegionUrlMapPathMatcherList) validateResolveParameters
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionUrlMapPathMatcherList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionUrlMapPathMatcherList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewComputeRegionUrlMapPathMatcherListParameters(terraformResource c
 
 	return nil
 }
-

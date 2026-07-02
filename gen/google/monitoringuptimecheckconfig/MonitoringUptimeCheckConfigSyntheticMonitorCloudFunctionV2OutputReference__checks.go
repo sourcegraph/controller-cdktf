@@ -98,7 +98,7 @@ func (m *jsiiProxy_MonitoringUptimeCheckConfigSyntheticMonitorCloudFunctionV2Out
 	return nil
 }
 
-func (j *jsiiProxy_MonitoringUptimeCheckConfigSyntheticMonitorCloudFunctionV2OutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MonitoringUptimeCheckConfigSyntheticMonitorCloudFunctionV2OutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewMonitoringUptimeCheckConfigSyntheticMonitorCloudFunctionV2Output
 
 	return nil
 }
-

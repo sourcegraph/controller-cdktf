@@ -98,7 +98,7 @@ func (s *jsiiProxy_SecurityposturePosturePolicySetsPoliciesComplianceStandardsOu
 	return nil
 }
 
-func (j *jsiiProxy_SecurityposturePosturePolicySetsPoliciesComplianceStandardsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SecurityposturePosturePolicySetsPoliciesComplianceStandardsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_SecurityposturePosturePolicySetsPoliciesComplianceStandardsOu
 	return nil
 }
 
-func (j *jsiiProxy_SecurityposturePosturePolicySetsPoliciesComplianceStandardsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SecurityposturePosturePolicySetsPoliciesComplianceStandardsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewSecurityposturePosturePolicySetsPoliciesComplianceStandardsOutpu
 
 	return nil
 }
-

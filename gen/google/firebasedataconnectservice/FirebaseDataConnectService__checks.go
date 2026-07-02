@@ -19,7 +19,7 @@ func (f *jsiiProxy_FirebaseDataConnectService) validateAddMoveTargetParameters(m
 	return nil
 }
 
-func (f *jsiiProxy_FirebaseDataConnectService) validateAddOverrideParameters(path *string, value interface{}) error {
+func (f *jsiiProxy_FirebaseDataConnectService) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (f *jsiiProxy_FirebaseDataConnectService) validateMoveFromIdParameters(id *
 	return nil
 }
 
-func (f *jsiiProxy_FirebaseDataConnectService) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (f *jsiiProxy_FirebaseDataConnectService) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateFirebaseDataConnectService_GenerateConfigForImportParameters(scope 
 	return nil
 }
 
-func validateFirebaseDataConnectService_IsConstructParameters(x interface{}) error {
+func validateFirebaseDataConnectService_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateFirebaseDataConnectService_IsConstructParameters(x interface{}) err
 	return nil
 }
 
-func validateFirebaseDataConnectService_IsTerraformElementParameters(x interface{}) error {
+func validateFirebaseDataConnectService_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateFirebaseDataConnectService_IsTerraformElementParameters(x interface
 	return nil
 }
 
-func validateFirebaseDataConnectService_IsTerraformResourceParameters(x interface{}) error {
+func validateFirebaseDataConnectService_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_FirebaseDataConnectService) validateSetAnnotationsParameters(
 	return nil
 }
 
-func (j *jsiiProxy_FirebaseDataConnectService) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_FirebaseDataConnectService) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_FirebaseDataConnectService) validateSetConnectionParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_FirebaseDataConnectService) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_FirebaseDataConnectService) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -409,7 +409,7 @@ func (j *jsiiProxy_FirebaseDataConnectService) validateSetProjectParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_FirebaseDataConnectService) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_FirebaseDataConnectService) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -481,4 +481,3 @@ func validateNewFirebaseDataConnectServiceParameters(scope constructs.Construct,
 
 	return nil
 }
-

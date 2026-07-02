@@ -1,6 +1,5 @@
 package osconfigv2policyorchestratorfororganization
 
-
 type OsConfigV2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgRpm struct {
 	// source block.
 	//
@@ -13,6 +12,5 @@ type OsConfigV2PolicyOrchestratorForOrganizationOrchestratedResourceOsPolicyAssi
 	// 'zypper -y install package.rpm'
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/os_config_v2_policy_orchestrator_for_organization#pull_deps OsConfigV2PolicyOrchestratorForOrganization#pull_deps}
-	PullDeps interface{} `field:"optional" json:"pullDeps" yaml:"pullDeps"`
+	PullDeps any `field:"optional" json:"pullDeps" yaml:"pullDeps"`
 }
-

@@ -98,7 +98,7 @@ func (e *jsiiProxy_EventarcTriggerDestinationCloudRunServiceOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_EventarcTriggerDestinationCloudRunServiceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EventarcTriggerDestinationCloudRunServiceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewEventarcTriggerDestinationCloudRunServiceOutputReferenceParamete
 
 	return nil
 }
-

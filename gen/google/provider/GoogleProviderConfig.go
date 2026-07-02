@@ -1,6 +1,5 @@
 package provider
 
-
 type GoogleProviderConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs#access_approval_custom_endpoint GoogleProvider#access_approval_custom_endpoint}.
 	AccessApprovalCustomEndpoint *string `field:"optional" json:"accessApprovalCustomEndpoint" yaml:"accessApprovalCustomEndpoint"`
@@ -11,7 +10,7 @@ type GoogleProviderConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs#active_directory_custom_endpoint GoogleProvider#active_directory_custom_endpoint}.
 	ActiveDirectoryCustomEndpoint *string `field:"optional" json:"activeDirectoryCustomEndpoint" yaml:"activeDirectoryCustomEndpoint"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs#add_terraform_attribution_label GoogleProvider#add_terraform_attribution_label}.
-	AddTerraformAttributionLabel interface{} `field:"optional" json:"addTerraformAttributionLabel" yaml:"addTerraformAttributionLabel"`
+	AddTerraformAttributionLabel any `field:"optional" json:"addTerraformAttributionLabel" yaml:"addTerraformAttributionLabel"`
 	// Alias name.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs#alias GoogleProvider#alias}
@@ -37,7 +36,7 @@ type GoogleProviderConfig struct {
 	// batching block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs#batching GoogleProvider#batching}
-	Batching interface{} `field:"optional" json:"batching" yaml:"batching"`
+	Batching any `field:"optional" json:"batching" yaml:"batching"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs#beyondcorp_custom_endpoint GoogleProvider#beyondcorp_custom_endpoint}.
 	BeyondcorpCustomEndpoint *string `field:"optional" json:"beyondcorpCustomEndpoint" yaml:"beyondcorpCustomEndpoint"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs#biglake_custom_endpoint GoogleProvider#biglake_custom_endpoint}.
@@ -187,7 +186,7 @@ type GoogleProviderConfig struct {
 	// external_credentials block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs#external_credentials GoogleProvider#external_credentials}
-	ExternalCredentials interface{} `field:"optional" json:"externalCredentials" yaml:"externalCredentials"`
+	ExternalCredentials any `field:"optional" json:"externalCredentials" yaml:"externalCredentials"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs#filestore_custom_endpoint GoogleProvider#filestore_custom_endpoint}.
 	FilestoreCustomEndpoint *string `field:"optional" json:"filestoreCustomEndpoint" yaml:"filestoreCustomEndpoint"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs#firebase_app_check_custom_endpoint GoogleProvider#firebase_app_check_custom_endpoint}.
@@ -299,9 +298,9 @@ type GoogleProviderConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs#poll_interval GoogleProvider#poll_interval}.
 	PollInterval *string `field:"optional" json:"pollInterval" yaml:"pollInterval"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs#prefer_global_endpoints GoogleProvider#prefer_global_endpoints}.
-	PreferGlobalEndpoints interface{} `field:"optional" json:"preferGlobalEndpoints" yaml:"preferGlobalEndpoints"`
+	PreferGlobalEndpoints any `field:"optional" json:"preferGlobalEndpoints" yaml:"preferGlobalEndpoints"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs#prefer_regional_endpoints GoogleProvider#prefer_regional_endpoints}.
-	PreferRegionalEndpoints interface{} `field:"optional" json:"preferRegionalEndpoints" yaml:"preferRegionalEndpoints"`
+	PreferRegionalEndpoints any `field:"optional" json:"preferRegionalEndpoints" yaml:"preferRegionalEndpoints"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs#privateca_custom_endpoint GoogleProvider#privateca_custom_endpoint}.
 	PrivatecaCustomEndpoint *string `field:"optional" json:"privatecaCustomEndpoint" yaml:"privatecaCustomEndpoint"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs#privileged_access_manager_custom_endpoint GoogleProvider#privileged_access_manager_custom_endpoint}.
@@ -383,7 +382,7 @@ type GoogleProviderConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs#universe_domain GoogleProvider#universe_domain}.
 	UniverseDomain *string `field:"optional" json:"universeDomain" yaml:"universeDomain"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs#user_project_override GoogleProvider#user_project_override}.
-	UserProjectOverride interface{} `field:"optional" json:"userProjectOverride" yaml:"userProjectOverride"`
+	UserProjectOverride any `field:"optional" json:"userProjectOverride" yaml:"userProjectOverride"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs#vector_search_custom_endpoint GoogleProvider#vector_search_custom_endpoint}.
 	VectorSearchCustomEndpoint *string `field:"optional" json:"vectorSearchCustomEndpoint" yaml:"vectorSearchCustomEndpoint"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs#vertex_ai_custom_endpoint GoogleProvider#vertex_ai_custom_endpoint}.
@@ -403,4 +402,3 @@ type GoogleProviderConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs#zone GoogleProvider#zone}.
 	Zone *string `field:"optional" json:"zone" yaml:"zone"`
 }
-

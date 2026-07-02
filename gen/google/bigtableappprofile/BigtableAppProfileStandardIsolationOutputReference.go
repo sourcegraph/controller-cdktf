@@ -12,9 +12,9 @@ type BigtableAppProfileStandardIsolationOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -43,7 +43,7 @@ type BigtableAppProfileStandardIsolationOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -66,7 +66,7 @@ type BigtableAppProfileStandardIsolationOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,8 +79,8 @@ type jsiiProxy_BigtableAppProfileStandardIsolationOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_BigtableAppProfileStandardIsolationOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigtableAppProfileStandardIsolationOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -169,7 +169,6 @@ func (j *jsiiProxy_BigtableAppProfileStandardIsolationOutputReference) Terraform
 	return returns
 }
 
-
 func NewBigtableAppProfileStandardIsolationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) BigtableAppProfileStandardIsolationOutputReference {
 	_init_.Initialize()
 
@@ -180,7 +179,7 @@ func NewBigtableAppProfileStandardIsolationOutputReference(terraformResource cdk
 
 	_jsii_.Create(
 		"@cdktf/provider-google.bigtableAppProfile.BigtableAppProfileStandardIsolationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -192,12 +191,12 @@ func NewBigtableAppProfileStandardIsolationOutputReference_Override(b BigtableAp
 
 	_jsii_.Create(
 		"@cdktf/provider-google.bigtableAppProfile.BigtableAppProfileStandardIsolationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		b,
 	)
 }
 
-func (j *jsiiProxy_BigtableAppProfileStandardIsolationOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_BigtableAppProfileStandardIsolationOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -208,7 +207,7 @@ func (j *jsiiProxy_BigtableAppProfileStandardIsolationOutputReference)SetComplex
 	)
 }
 
-func (j *jsiiProxy_BigtableAppProfileStandardIsolationOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_BigtableAppProfileStandardIsolationOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -219,7 +218,7 @@ func (j *jsiiProxy_BigtableAppProfileStandardIsolationOutputReference)SetComplex
 	)
 }
 
-func (j *jsiiProxy_BigtableAppProfileStandardIsolationOutputReference)SetInternalValue(val *BigtableAppProfileStandardIsolation) {
+func (j *jsiiProxy_BigtableAppProfileStandardIsolationOutputReference) SetInternalValue(val *BigtableAppProfileStandardIsolation) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -230,7 +229,7 @@ func (j *jsiiProxy_BigtableAppProfileStandardIsolationOutputReference)SetInterna
 	)
 }
 
-func (j *jsiiProxy_BigtableAppProfileStandardIsolationOutputReference)SetPriority(val *string) {
+func (j *jsiiProxy_BigtableAppProfileStandardIsolationOutputReference) SetPriority(val *string) {
 	if err := j.validateSetPriorityParameters(val); err != nil {
 		panic(err)
 	}
@@ -241,7 +240,7 @@ func (j *jsiiProxy_BigtableAppProfileStandardIsolationOutputReference)SetPriorit
 	)
 }
 
-func (j *jsiiProxy_BigtableAppProfileStandardIsolationOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_BigtableAppProfileStandardIsolationOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -252,7 +251,7 @@ func (j *jsiiProxy_BigtableAppProfileStandardIsolationOutputReference)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_BigtableAppProfileStandardIsolationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BigtableAppProfileStandardIsolationOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,16 +275,16 @@ func (b *jsiiProxy_BigtableAppProfileStandardIsolationOutputReference) ComputeFq
 	return returns
 }
 
-func (b *jsiiProxy_BigtableAppProfileStandardIsolationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (b *jsiiProxy_BigtableAppProfileStandardIsolationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := b.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -301,7 +300,7 @@ func (b *jsiiProxy_BigtableAppProfileStandardIsolationOutputReference) GetBoolea
 	_jsii_.Invoke(
 		b,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -317,7 +316,7 @@ func (b *jsiiProxy_BigtableAppProfileStandardIsolationOutputReference) GetBoolea
 	_jsii_.Invoke(
 		b,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -333,7 +332,7 @@ func (b *jsiiProxy_BigtableAppProfileStandardIsolationOutputReference) GetListAt
 	_jsii_.Invoke(
 		b,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -349,7 +348,7 @@ func (b *jsiiProxy_BigtableAppProfileStandardIsolationOutputReference) GetNumber
 	_jsii_.Invoke(
 		b,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -365,7 +364,7 @@ func (b *jsiiProxy_BigtableAppProfileStandardIsolationOutputReference) GetNumber
 	_jsii_.Invoke(
 		b,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -381,7 +380,7 @@ func (b *jsiiProxy_BigtableAppProfileStandardIsolationOutputReference) GetNumber
 	_jsii_.Invoke(
 		b,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -397,7 +396,7 @@ func (b *jsiiProxy_BigtableAppProfileStandardIsolationOutputReference) GetString
 	_jsii_.Invoke(
 		b,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -413,7 +412,7 @@ func (b *jsiiProxy_BigtableAppProfileStandardIsolationOutputReference) GetString
 	_jsii_.Invoke(
 		b,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -442,23 +441,23 @@ func (b *jsiiProxy_BigtableAppProfileStandardIsolationOutputReference) Interpola
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (b *jsiiProxy_BigtableAppProfileStandardIsolationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (b *jsiiProxy_BigtableAppProfileStandardIsolationOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := b.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -477,4 +476,3 @@ func (b *jsiiProxy_BigtableAppProfileStandardIsolationOutputReference) ToString(
 
 	return returns
 }
-

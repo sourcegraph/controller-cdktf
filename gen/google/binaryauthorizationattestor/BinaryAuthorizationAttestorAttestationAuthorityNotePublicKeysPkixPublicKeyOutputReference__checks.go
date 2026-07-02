@@ -98,7 +98,7 @@ func (b *jsiiProxy_BinaryAuthorizationAttestorAttestationAuthorityNotePublicKeys
 	return nil
 }
 
-func (j *jsiiProxy_BinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysPkixPublicKeyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysPkixPublicKeyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewBinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysPki
 
 	return nil
 }
-

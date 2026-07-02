@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataGoogleStorageControlOrganizationIntelligenceConfig) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataGoogleStorageControlOrganizationIntelligenceConfig) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataGoogleStorageControlOrganizationIntelligenceConfig_GenerateConf
 	return nil
 }
 
-func validateDataGoogleStorageControlOrganizationIntelligenceConfig_IsConstructParameters(x interface{}) error {
+func validateDataGoogleStorageControlOrganizationIntelligenceConfig_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataGoogleStorageControlOrganizationIntelligenceConfig_IsConstructP
 	return nil
 }
 
-func validateDataGoogleStorageControlOrganizationIntelligenceConfig_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataGoogleStorageControlOrganizationIntelligenceConfig_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataGoogleStorageControlOrganizationIntelligenceConfig_IsTerraformD
 	return nil
 }
 
-func validateDataGoogleStorageControlOrganizationIntelligenceConfig_IsTerraformElementParameters(x interface{}) error {
+func validateDataGoogleStorageControlOrganizationIntelligenceConfig_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func validateDataGoogleStorageControlOrganizationIntelligenceConfig_IsTerraformE
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleStorageControlOrganizationIntelligenceConfig) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleStorageControlOrganizationIntelligenceConfig) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -250,4 +250,3 @@ func validateNewDataGoogleStorageControlOrganizationIntelligenceConfigParameters
 
 	return nil
 }
-

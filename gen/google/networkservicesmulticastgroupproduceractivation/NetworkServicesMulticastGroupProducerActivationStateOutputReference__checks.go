@@ -98,7 +98,7 @@ func (n *jsiiProxy_NetworkServicesMulticastGroupProducerActivationStateOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastGroupProducerActivationStateOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkServicesMulticastGroupProducerActivationStateOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewNetworkServicesMulticastGroupProducerActivationStateOutputRefere
 
 	return nil
 }
-

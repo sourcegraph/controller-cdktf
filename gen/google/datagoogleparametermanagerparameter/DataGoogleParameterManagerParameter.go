@@ -15,11 +15,11 @@ type DataGoogleParameterManagerParameter interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -59,19 +59,19 @@ type DataGoogleParameterManagerParameter interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	UpdateTime() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -98,18 +98,18 @@ type DataGoogleParameterManagerParameter interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataGoogleParameterManagerParameter
@@ -127,8 +127,8 @@ func (j *jsiiProxy_DataGoogleParameterManagerParameter) CdktfStack() cdktf.Terra
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleParameterManagerParameter) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleParameterManagerParameter) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -137,8 +137,8 @@ func (j *jsiiProxy_DataGoogleParameterManagerParameter) ConstructNodeMetadata() 
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleParameterManagerParameter) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleParameterManagerParameter) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -347,8 +347,8 @@ func (j *jsiiProxy_DataGoogleParameterManagerParameter) Provider() cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleParameterManagerParameter) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleParameterManagerParameter) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -377,8 +377,8 @@ func (j *jsiiProxy_DataGoogleParameterManagerParameter) TerraformLabels() cdktf.
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleParameterManagerParameter) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleParameterManagerParameter) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -407,7 +407,6 @@ func (j *jsiiProxy_DataGoogleParameterManagerParameter) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/parameter_manager_parameter google_parameter_manager_parameter} Data Source.
 func NewDataGoogleParameterManagerParameter(scope constructs.Construct, id *string, config *DataGoogleParameterManagerParameterConfig) DataGoogleParameterManagerParameter {
 	_init_.Initialize()
@@ -419,7 +418,7 @@ func NewDataGoogleParameterManagerParameter(scope constructs.Construct, id *stri
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleParameterManagerParameter.DataGoogleParameterManagerParameter",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -432,12 +431,12 @@ func NewDataGoogleParameterManagerParameter_Override(d DataGoogleParameterManage
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleParameterManagerParameter.DataGoogleParameterManagerParameter",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataGoogleParameterManagerParameter)SetCount(val interface{}) {
+func (j *jsiiProxy_DataGoogleParameterManagerParameter) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -448,7 +447,7 @@ func (j *jsiiProxy_DataGoogleParameterManagerParameter)SetCount(val interface{})
 	)
 }
 
-func (j *jsiiProxy_DataGoogleParameterManagerParameter)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataGoogleParameterManagerParameter) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -456,7 +455,7 @@ func (j *jsiiProxy_DataGoogleParameterManagerParameter)SetDependsOn(val *[]*stri
 	)
 }
 
-func (j *jsiiProxy_DataGoogleParameterManagerParameter)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGoogleParameterManagerParameter) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -464,7 +463,7 @@ func (j *jsiiProxy_DataGoogleParameterManagerParameter)SetForEach(val cdktf.ITer
 	)
 }
 
-func (j *jsiiProxy_DataGoogleParameterManagerParameter)SetId(val *string) {
+func (j *jsiiProxy_DataGoogleParameterManagerParameter) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -475,7 +474,7 @@ func (j *jsiiProxy_DataGoogleParameterManagerParameter)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleParameterManagerParameter)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGoogleParameterManagerParameter) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -486,7 +485,7 @@ func (j *jsiiProxy_DataGoogleParameterManagerParameter)SetLifecycle(val *cdktf.T
 	)
 }
 
-func (j *jsiiProxy_DataGoogleParameterManagerParameter)SetParameterId(val *string) {
+func (j *jsiiProxy_DataGoogleParameterManagerParameter) SetParameterId(val *string) {
 	if err := j.validateSetParameterIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -497,7 +496,7 @@ func (j *jsiiProxy_DataGoogleParameterManagerParameter)SetParameterId(val *strin
 	)
 }
 
-func (j *jsiiProxy_DataGoogleParameterManagerParameter)SetProject(val *string) {
+func (j *jsiiProxy_DataGoogleParameterManagerParameter) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -508,7 +507,7 @@ func (j *jsiiProxy_DataGoogleParameterManagerParameter)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleParameterManagerParameter)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGoogleParameterManagerParameter) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -528,7 +527,7 @@ func DataGoogleParameterManagerParameter_GenerateConfigForImport(scope construct
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleParameterManagerParameter.DataGoogleParameterManagerParameter",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -552,7 +551,7 @@ func DataGoogleParameterManagerParameter_GenerateConfigForImport(scope construct
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataGoogleParameterManagerParameter_IsConstruct(x interface{}) *bool {
+func DataGoogleParameterManagerParameter_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleParameterManagerParameter_IsConstructParameters(x); err != nil {
@@ -563,7 +562,7 @@ func DataGoogleParameterManagerParameter_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleParameterManagerParameter.DataGoogleParameterManagerParameter",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -571,7 +570,7 @@ func DataGoogleParameterManagerParameter_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGoogleParameterManagerParameter_IsTerraformDataSource(x interface{}) *bool {
+func DataGoogleParameterManagerParameter_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleParameterManagerParameter_IsTerraformDataSourceParameters(x); err != nil {
@@ -582,7 +581,7 @@ func DataGoogleParameterManagerParameter_IsTerraformDataSource(x interface{}) *b
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleParameterManagerParameter.DataGoogleParameterManagerParameter",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -590,7 +589,7 @@ func DataGoogleParameterManagerParameter_IsTerraformDataSource(x interface{}) *b
 }
 
 // Experimental.
-func DataGoogleParameterManagerParameter_IsTerraformElement(x interface{}) *bool {
+func DataGoogleParameterManagerParameter_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleParameterManagerParameter_IsTerraformElementParameters(x); err != nil {
@@ -601,7 +600,7 @@ func DataGoogleParameterManagerParameter_IsTerraformElement(x interface{}) *bool
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleParameterManagerParameter.DataGoogleParameterManagerParameter",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -619,27 +618,27 @@ func DataGoogleParameterManagerParameter_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleParameterManagerParameter) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataGoogleParameterManagerParameter) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataGoogleParameterManagerParameter) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataGoogleParameterManagerParameter) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -655,7 +654,7 @@ func (d *jsiiProxy_DataGoogleParameterManagerParameter) GetBooleanAttribute(terr
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -671,7 +670,7 @@ func (d *jsiiProxy_DataGoogleParameterManagerParameter) GetBooleanMapAttribute(t
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -687,7 +686,7 @@ func (d *jsiiProxy_DataGoogleParameterManagerParameter) GetListAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -703,7 +702,7 @@ func (d *jsiiProxy_DataGoogleParameterManagerParameter) GetNumberAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -719,7 +718,7 @@ func (d *jsiiProxy_DataGoogleParameterManagerParameter) GetNumberListAttribute(t
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -735,7 +734,7 @@ func (d *jsiiProxy_DataGoogleParameterManagerParameter) GetNumberMapAttribute(te
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -751,7 +750,7 @@ func (d *jsiiProxy_DataGoogleParameterManagerParameter) GetStringAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -767,7 +766,7 @@ func (d *jsiiProxy_DataGoogleParameterManagerParameter) GetStringMapAttribute(te
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -783,7 +782,7 @@ func (d *jsiiProxy_DataGoogleParameterManagerParameter) InterpolationForAttribut
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -797,7 +796,7 @@ func (d *jsiiProxy_DataGoogleParameterManagerParameter) OverrideLogicalId(newLog
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -825,8 +824,8 @@ func (d *jsiiProxy_DataGoogleParameterManagerParameter) ResetProject() {
 	)
 }
 
-func (d *jsiiProxy_DataGoogleParameterManagerParameter) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleParameterManagerParameter) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -838,8 +837,8 @@ func (d *jsiiProxy_DataGoogleParameterManagerParameter) SynthesizeAttributes() *
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleParameterManagerParameter) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleParameterManagerParameter) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -851,8 +850,8 @@ func (d *jsiiProxy_DataGoogleParameterManagerParameter) SynthesizeHclAttributes(
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleParameterManagerParameter) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleParameterManagerParameter) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -864,8 +863,8 @@ func (d *jsiiProxy_DataGoogleParameterManagerParameter) ToHclTerraform() interfa
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleParameterManagerParameter) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleParameterManagerParameter) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -890,8 +889,8 @@ func (d *jsiiProxy_DataGoogleParameterManagerParameter) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleParameterManagerParameter) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleParameterManagerParameter) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -902,4 +901,3 @@ func (d *jsiiProxy_DataGoogleParameterManagerParameter) ToTerraform() interface{
 
 	return returns
 }
-

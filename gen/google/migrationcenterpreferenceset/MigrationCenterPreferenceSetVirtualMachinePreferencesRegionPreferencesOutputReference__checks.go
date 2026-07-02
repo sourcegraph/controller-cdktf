@@ -98,7 +98,7 @@ func (m *jsiiProxy_MigrationCenterPreferenceSetVirtualMachinePreferencesRegionPr
 	return nil
 }
 
-func (j *jsiiProxy_MigrationCenterPreferenceSetVirtualMachinePreferencesRegionPreferencesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MigrationCenterPreferenceSetVirtualMachinePreferencesRegionPreferencesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewMigrationCenterPreferenceSetVirtualMachinePreferencesRegionPrefe
 
 	return nil
 }
-

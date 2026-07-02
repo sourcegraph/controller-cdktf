@@ -34,7 +34,7 @@ func (b *jsiiProxy_BigqueryTableTableConstraintsForeignKeysList) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryTableTableConstraintsForeignKeysList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryTableTableConstraintsForeignKeysList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewBigqueryTableTableConstraintsForeignKeysListParameters(terraform
 
 	return nil
 }
-

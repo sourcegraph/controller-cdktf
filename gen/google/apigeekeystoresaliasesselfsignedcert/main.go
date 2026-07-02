@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCert",
-		reflect.TypeOf((*ApigeeKeystoresAliasesSelfSignedCert)(nil)).Elem(),
+		reflect.TypeFor[ApigeeKeystoresAliasesSelfSignedCert](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -85,7 +85,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -93,15 +93,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCertCertsInfo",
-		reflect.TypeOf((*ApigeeKeystoresAliasesSelfSignedCertCertsInfo)(nil)).Elem(),
+		reflect.TypeFor[ApigeeKeystoresAliasesSelfSignedCertCertsInfo](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCertCertsInfoCertInfo",
-		reflect.TypeOf((*ApigeeKeystoresAliasesSelfSignedCertCertsInfoCertInfo)(nil)).Elem(),
+		reflect.TypeFor[ApigeeKeystoresAliasesSelfSignedCertCertsInfoCertInfo](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCertCertsInfoCertInfoList",
-		reflect.TypeOf((*ApigeeKeystoresAliasesSelfSignedCertCertsInfoCertInfoList)(nil)).Elem(),
+		reflect.TypeFor[ApigeeKeystoresAliasesSelfSignedCertCertsInfoCertInfoList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -114,7 +114,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApigeeKeystoresAliasesSelfSignedCertCertsInfoCertInfoList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -122,7 +122,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCertCertsInfoCertInfoOutputReference",
-		reflect.TypeOf((*ApigeeKeystoresAliasesSelfSignedCertCertsInfoCertInfoOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ApigeeKeystoresAliasesSelfSignedCertCertsInfoCertInfoOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "basicConstraints", GoGetter: "BasicConstraints"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -157,7 +157,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "validFrom", GoGetter: "ValidFrom"},
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApigeeKeystoresAliasesSelfSignedCertCertsInfoCertInfoOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -165,7 +165,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCertCertsInfoList",
-		reflect.TypeOf((*ApigeeKeystoresAliasesSelfSignedCertCertsInfoList)(nil)).Elem(),
+		reflect.TypeFor[ApigeeKeystoresAliasesSelfSignedCertCertsInfoList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -178,7 +178,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApigeeKeystoresAliasesSelfSignedCertCertsInfoList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -186,7 +186,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCertCertsInfoOutputReference",
-		reflect.TypeOf((*ApigeeKeystoresAliasesSelfSignedCertCertsInfoOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ApigeeKeystoresAliasesSelfSignedCertCertsInfoOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "certInfo", GoGetter: "CertInfo"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -211,7 +211,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApigeeKeystoresAliasesSelfSignedCertCertsInfoOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -219,19 +219,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCertConfig",
-		reflect.TypeOf((*ApigeeKeystoresAliasesSelfSignedCertConfig)(nil)).Elem(),
+		reflect.TypeFor[ApigeeKeystoresAliasesSelfSignedCertConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCertSubject",
-		reflect.TypeOf((*ApigeeKeystoresAliasesSelfSignedCertSubject)(nil)).Elem(),
+		reflect.TypeFor[ApigeeKeystoresAliasesSelfSignedCertSubject](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCertSubjectAlternativeDnsNames",
-		reflect.TypeOf((*ApigeeKeystoresAliasesSelfSignedCertSubjectAlternativeDnsNames)(nil)).Elem(),
+		reflect.TypeFor[ApigeeKeystoresAliasesSelfSignedCertSubjectAlternativeDnsNames](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCertSubjectAlternativeDnsNamesOutputReference",
-		reflect.TypeOf((*ApigeeKeystoresAliasesSelfSignedCertSubjectAlternativeDnsNamesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ApigeeKeystoresAliasesSelfSignedCertSubjectAlternativeDnsNamesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -258,7 +258,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApigeeKeystoresAliasesSelfSignedCertSubjectAlternativeDnsNamesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -266,7 +266,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCertSubjectOutputReference",
-		reflect.TypeOf((*ApigeeKeystoresAliasesSelfSignedCertSubjectOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ApigeeKeystoresAliasesSelfSignedCertSubjectOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "commonName", GoGetter: "CommonName"},
 			_jsii_.MemberProperty{JsiiProperty: "commonNameInput", GoGetter: "CommonNameInput"},
@@ -311,7 +311,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApigeeKeystoresAliasesSelfSignedCertSubjectOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -319,11 +319,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCertTimeouts",
-		reflect.TypeOf((*ApigeeKeystoresAliasesSelfSignedCertTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ApigeeKeystoresAliasesSelfSignedCertTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCertTimeoutsOutputReference",
-		reflect.TypeOf((*ApigeeKeystoresAliasesSelfSignedCertTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ApigeeKeystoresAliasesSelfSignedCertTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -353,7 +353,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApigeeKeystoresAliasesSelfSignedCertTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

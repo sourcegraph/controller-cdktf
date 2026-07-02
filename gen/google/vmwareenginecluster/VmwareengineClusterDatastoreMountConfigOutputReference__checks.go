@@ -117,7 +117,7 @@ func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -190,7 +190,7 @@ func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference) validateSetIgnoreColocationParameters(val interface{}) error {
+func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference) validateSetIgnoreColocationParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -210,7 +210,7 @@ func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -277,4 +277,3 @@ func validateNewVmwareengineClusterDatastoreMountConfigOutputReferenceParameters
 
 	return nil
 }
-

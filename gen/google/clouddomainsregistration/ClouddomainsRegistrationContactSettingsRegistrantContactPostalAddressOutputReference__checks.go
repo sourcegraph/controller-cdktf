@@ -114,7 +114,7 @@ func (j *jsiiProxy_ClouddomainsRegistrationContactSettingsRegistrantContactPosta
 	return nil
 }
 
-func (j *jsiiProxy_ClouddomainsRegistrationContactSettingsRegistrantContactPostalAddressOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ClouddomainsRegistrationContactSettingsRegistrantContactPostalAddressOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -254,4 +254,3 @@ func validateNewClouddomainsRegistrationContactSettingsRegistrantContactPostalAd
 
 	return nil
 }
-

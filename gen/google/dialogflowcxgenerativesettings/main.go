@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxGenerativeSettings.DialogflowCxGenerativeSettings",
-		reflect.TypeOf((*DialogflowCxGenerativeSettings)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxGenerativeSettings](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -82,7 +82,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxGenerativeSettings{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -90,15 +90,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowCxGenerativeSettings.DialogflowCxGenerativeSettingsConfig",
-		reflect.TypeOf((*DialogflowCxGenerativeSettingsConfig)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxGenerativeSettingsConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowCxGenerativeSettings.DialogflowCxGenerativeSettingsFallbackSettings",
-		reflect.TypeOf((*DialogflowCxGenerativeSettingsFallbackSettings)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxGenerativeSettingsFallbackSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxGenerativeSettings.DialogflowCxGenerativeSettingsFallbackSettingsOutputReference",
-		reflect.TypeOf((*DialogflowCxGenerativeSettingsFallbackSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxGenerativeSettingsFallbackSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -129,7 +129,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxGenerativeSettingsFallbackSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -137,11 +137,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowCxGenerativeSettings.DialogflowCxGenerativeSettingsFallbackSettingsPromptTemplates",
-		reflect.TypeOf((*DialogflowCxGenerativeSettingsFallbackSettingsPromptTemplates)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxGenerativeSettingsFallbackSettingsPromptTemplates](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxGenerativeSettings.DialogflowCxGenerativeSettingsFallbackSettingsPromptTemplatesList",
-		reflect.TypeOf((*DialogflowCxGenerativeSettingsFallbackSettingsPromptTemplatesList)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxGenerativeSettingsFallbackSettingsPromptTemplatesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -155,7 +155,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxGenerativeSettingsFallbackSettingsPromptTemplatesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -163,7 +163,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxGenerativeSettings.DialogflowCxGenerativeSettingsFallbackSettingsPromptTemplatesOutputReference",
-		reflect.TypeOf((*DialogflowCxGenerativeSettingsFallbackSettingsPromptTemplatesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxGenerativeSettingsFallbackSettingsPromptTemplatesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -196,7 +196,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxGenerativeSettingsFallbackSettingsPromptTemplatesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -204,15 +204,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowCxGenerativeSettings.DialogflowCxGenerativeSettingsGenerativeSafetySettings",
-		reflect.TypeOf((*DialogflowCxGenerativeSettingsGenerativeSafetySettings)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxGenerativeSettingsGenerativeSafetySettings](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowCxGenerativeSettings.DialogflowCxGenerativeSettingsGenerativeSafetySettingsBannedPhrases",
-		reflect.TypeOf((*DialogflowCxGenerativeSettingsGenerativeSafetySettingsBannedPhrases)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxGenerativeSettingsGenerativeSafetySettingsBannedPhrases](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxGenerativeSettings.DialogflowCxGenerativeSettingsGenerativeSafetySettingsBannedPhrasesList",
-		reflect.TypeOf((*DialogflowCxGenerativeSettingsGenerativeSafetySettingsBannedPhrasesList)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxGenerativeSettingsGenerativeSafetySettingsBannedPhrasesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -226,7 +226,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxGenerativeSettingsGenerativeSafetySettingsBannedPhrasesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -234,7 +234,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxGenerativeSettings.DialogflowCxGenerativeSettingsGenerativeSafetySettingsBannedPhrasesOutputReference",
-		reflect.TypeOf((*DialogflowCxGenerativeSettingsGenerativeSafetySettingsBannedPhrasesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxGenerativeSettingsGenerativeSafetySettingsBannedPhrasesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -262,7 +262,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "textInput", GoGetter: "TextInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxGenerativeSettingsGenerativeSafetySettingsBannedPhrasesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -270,7 +270,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxGenerativeSettings.DialogflowCxGenerativeSettingsGenerativeSafetySettingsOutputReference",
-		reflect.TypeOf((*DialogflowCxGenerativeSettingsGenerativeSafetySettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxGenerativeSettingsGenerativeSafetySettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bannedPhrases", GoGetter: "BannedPhrases"},
 			_jsii_.MemberProperty{JsiiProperty: "bannedPhrasesInput", GoGetter: "BannedPhrasesInput"},
@@ -301,7 +301,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxGenerativeSettingsGenerativeSafetySettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -309,11 +309,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowCxGenerativeSettings.DialogflowCxGenerativeSettingsKnowledgeConnectorSettings",
-		reflect.TypeOf((*DialogflowCxGenerativeSettingsKnowledgeConnectorSettings)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxGenerativeSettingsKnowledgeConnectorSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxGenerativeSettings.DialogflowCxGenerativeSettingsKnowledgeConnectorSettingsOutputReference",
-		reflect.TypeOf((*DialogflowCxGenerativeSettingsKnowledgeConnectorSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxGenerativeSettingsKnowledgeConnectorSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "agent", GoGetter: "Agent"},
 			_jsii_.MemberProperty{JsiiProperty: "agentIdentity", GoGetter: "AgentIdentity"},
@@ -355,7 +355,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxGenerativeSettingsKnowledgeConnectorSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -363,11 +363,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowCxGenerativeSettings.DialogflowCxGenerativeSettingsLlmModelSettings",
-		reflect.TypeOf((*DialogflowCxGenerativeSettingsLlmModelSettings)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxGenerativeSettingsLlmModelSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxGenerativeSettings.DialogflowCxGenerativeSettingsLlmModelSettingsOutputReference",
-		reflect.TypeOf((*DialogflowCxGenerativeSettingsLlmModelSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxGenerativeSettingsLlmModelSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -397,7 +397,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxGenerativeSettingsLlmModelSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -405,11 +405,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowCxGenerativeSettings.DialogflowCxGenerativeSettingsTimeouts",
-		reflect.TypeOf((*DialogflowCxGenerativeSettingsTimeouts)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxGenerativeSettingsTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxGenerativeSettings.DialogflowCxGenerativeSettingsTimeoutsOutputReference",
-		reflect.TypeOf((*DialogflowCxGenerativeSettingsTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxGenerativeSettingsTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -442,7 +442,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxGenerativeSettingsTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

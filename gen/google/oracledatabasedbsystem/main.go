@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.oracleDatabaseDbSystem.OracleDatabaseDbSystem",
-		reflect.TypeOf((*OracleDatabaseDbSystem)(nil)).Elem(),
+		reflect.TypeFor[OracleDatabaseDbSystem](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -93,7 +93,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_OracleDatabaseDbSystem{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -101,19 +101,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.oracleDatabaseDbSystem.OracleDatabaseDbSystemConfig",
-		reflect.TypeOf((*OracleDatabaseDbSystemConfig)(nil)).Elem(),
+		reflect.TypeFor[OracleDatabaseDbSystemConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.oracleDatabaseDbSystem.OracleDatabaseDbSystemProperties",
-		reflect.TypeOf((*OracleDatabaseDbSystemProperties)(nil)).Elem(),
+		reflect.TypeFor[OracleDatabaseDbSystemProperties](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.oracleDatabaseDbSystem.OracleDatabaseDbSystemPropertiesDataCollectionOptions",
-		reflect.TypeOf((*OracleDatabaseDbSystemPropertiesDataCollectionOptions)(nil)).Elem(),
+		reflect.TypeFor[OracleDatabaseDbSystemPropertiesDataCollectionOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.oracleDatabaseDbSystem.OracleDatabaseDbSystemPropertiesDataCollectionOptionsOutputReference",
-		reflect.TypeOf((*OracleDatabaseDbSystemPropertiesDataCollectionOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[OracleDatabaseDbSystemPropertiesDataCollectionOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -143,7 +143,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_OracleDatabaseDbSystemPropertiesDataCollectionOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -151,15 +151,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.oracleDatabaseDbSystem.OracleDatabaseDbSystemPropertiesDbHome",
-		reflect.TypeOf((*OracleDatabaseDbSystemPropertiesDbHome)(nil)).Elem(),
+		reflect.TypeFor[OracleDatabaseDbSystemPropertiesDbHome](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.oracleDatabaseDbSystem.OracleDatabaseDbSystemPropertiesDbHomeDatabase",
-		reflect.TypeOf((*OracleDatabaseDbSystemPropertiesDbHomeDatabase)(nil)).Elem(),
+		reflect.TypeFor[OracleDatabaseDbSystemPropertiesDbHomeDatabase](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.oracleDatabaseDbSystem.OracleDatabaseDbSystemPropertiesDbHomeDatabaseOutputReference",
-		reflect.TypeOf((*OracleDatabaseDbSystemPropertiesDbHomeDatabaseOutputReference)(nil)).Elem(),
+		reflect.TypeFor[OracleDatabaseDbSystemPropertiesDbHomeDatabaseOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "adminPassword", GoGetter: "AdminPassword"},
 			_jsii_.MemberProperty{JsiiProperty: "adminPasswordInput", GoGetter: "AdminPasswordInput"},
@@ -222,7 +222,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeDatabaseOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -230,15 +230,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.oracleDatabaseDbSystem.OracleDatabaseDbSystemPropertiesDbHomeDatabaseProperties",
-		reflect.TypeOf((*OracleDatabaseDbSystemPropertiesDbHomeDatabaseProperties)(nil)).Elem(),
+		reflect.TypeFor[OracleDatabaseDbSystemPropertiesDbHomeDatabaseProperties](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.oracleDatabaseDbSystem.OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesDatabaseManagementConfig",
-		reflect.TypeOf((*OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesDatabaseManagementConfig)(nil)).Elem(),
+		reflect.TypeFor[OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesDatabaseManagementConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.oracleDatabaseDbSystem.OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesDatabaseManagementConfigOutputReference",
-		reflect.TypeOf((*OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesDatabaseManagementConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesDatabaseManagementConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -264,7 +264,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesDatabaseManagementConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -272,15 +272,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.oracleDatabaseDbSystem.OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesDbBackupConfig",
-		reflect.TypeOf((*OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesDbBackupConfig)(nil)).Elem(),
+		reflect.TypeFor[OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesDbBackupConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.oracleDatabaseDbSystem.OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesDbBackupConfigBackupDestinationDetails",
-		reflect.TypeOf((*OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesDbBackupConfigBackupDestinationDetails)(nil)).Elem(),
+		reflect.TypeFor[OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesDbBackupConfigBackupDestinationDetails](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.oracleDatabaseDbSystem.OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesDbBackupConfigBackupDestinationDetailsList",
-		reflect.TypeOf((*OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesDbBackupConfigBackupDestinationDetailsList)(nil)).Elem(),
+		reflect.TypeFor[OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesDbBackupConfigBackupDestinationDetailsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -294,7 +294,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesDbBackupConfigBackupDestinationDetailsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -302,7 +302,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.oracleDatabaseDbSystem.OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesDbBackupConfigBackupDestinationDetailsOutputReference",
-		reflect.TypeOf((*OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesDbBackupConfigBackupDestinationDetailsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesDbBackupConfigBackupDestinationDetailsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -329,7 +329,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesDbBackupConfigBackupDestinationDetailsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -337,7 +337,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.oracleDatabaseDbSystem.OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesDbBackupConfigOutputReference",
-		reflect.TypeOf((*OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesDbBackupConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesDbBackupConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "autoBackupEnabled", GoGetter: "AutoBackupEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "autoBackupEnabledInput", GoGetter: "AutoBackupEnabledInput"},
@@ -383,7 +383,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesDbBackupConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -391,7 +391,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.oracleDatabaseDbSystem.OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesOutputReference",
-		reflect.TypeOf((*OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -426,7 +426,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -434,7 +434,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.oracleDatabaseDbSystem.OracleDatabaseDbSystemPropertiesDbHomeOutputReference",
-		reflect.TypeOf((*OracleDatabaseDbSystemPropertiesDbHomeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[OracleDatabaseDbSystemPropertiesDbHomeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -469,7 +469,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -477,11 +477,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.oracleDatabaseDbSystem.OracleDatabaseDbSystemPropertiesDbSystemOptions",
-		reflect.TypeOf((*OracleDatabaseDbSystemPropertiesDbSystemOptions)(nil)).Elem(),
+		reflect.TypeFor[OracleDatabaseDbSystemPropertiesDbSystemOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.oracleDatabaseDbSystem.OracleDatabaseDbSystemPropertiesDbSystemOptionsOutputReference",
-		reflect.TypeOf((*OracleDatabaseDbSystemPropertiesDbSystemOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[OracleDatabaseDbSystemPropertiesDbSystemOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -508,7 +508,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_OracleDatabaseDbSystemPropertiesDbSystemOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -516,7 +516,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.oracleDatabaseDbSystem.OracleDatabaseDbSystemPropertiesOutputReference",
-		reflect.TypeOf((*OracleDatabaseDbSystemPropertiesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[OracleDatabaseDbSystemPropertiesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -595,7 +595,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "timeZoneInput", GoGetter: "TimeZoneInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_OracleDatabaseDbSystemPropertiesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -603,11 +603,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.oracleDatabaseDbSystem.OracleDatabaseDbSystemPropertiesTimeZone",
-		reflect.TypeOf((*OracleDatabaseDbSystemPropertiesTimeZone)(nil)).Elem(),
+		reflect.TypeFor[OracleDatabaseDbSystemPropertiesTimeZone](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.oracleDatabaseDbSystem.OracleDatabaseDbSystemPropertiesTimeZoneOutputReference",
-		reflect.TypeOf((*OracleDatabaseDbSystemPropertiesTimeZoneOutputReference)(nil)).Elem(),
+		reflect.TypeFor[OracleDatabaseDbSystemPropertiesTimeZoneOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -634,7 +634,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_OracleDatabaseDbSystemPropertiesTimeZoneOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -642,11 +642,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.oracleDatabaseDbSystem.OracleDatabaseDbSystemTimeouts",
-		reflect.TypeOf((*OracleDatabaseDbSystemTimeouts)(nil)).Elem(),
+		reflect.TypeFor[OracleDatabaseDbSystemTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.oracleDatabaseDbSystem.OracleDatabaseDbSystemTimeoutsOutputReference",
-		reflect.TypeOf((*OracleDatabaseDbSystemTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[OracleDatabaseDbSystemTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -679,7 +679,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_OracleDatabaseDbSystemTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

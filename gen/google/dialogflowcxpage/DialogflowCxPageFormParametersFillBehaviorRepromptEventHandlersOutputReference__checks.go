@@ -109,7 +109,7 @@ func (d *jsiiProxy_DialogflowCxPageFormParametersFillBehaviorRepromptEventHandle
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -182,7 +182,7 @@ func (j *jsiiProxy_DialogflowCxPageFormParametersFillBehaviorRepromptEventHandle
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -257,4 +257,3 @@ func validateNewDialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersO
 
 	return nil
 }
-

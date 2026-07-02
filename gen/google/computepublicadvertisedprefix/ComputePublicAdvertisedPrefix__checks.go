@@ -19,7 +19,7 @@ func (c *jsiiProxy_ComputePublicAdvertisedPrefix) validateAddMoveTargetParameter
 	return nil
 }
 
-func (c *jsiiProxy_ComputePublicAdvertisedPrefix) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_ComputePublicAdvertisedPrefix) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_ComputePublicAdvertisedPrefix) validateMoveFromIdParameters(i
 	return nil
 }
 
-func (c *jsiiProxy_ComputePublicAdvertisedPrefix) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_ComputePublicAdvertisedPrefix) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateComputePublicAdvertisedPrefix_GenerateConfigForImportParameters(sco
 	return nil
 }
 
-func validateComputePublicAdvertisedPrefix_IsConstructParameters(x interface{}) error {
+func validateComputePublicAdvertisedPrefix_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateComputePublicAdvertisedPrefix_IsConstructParameters(x interface{}) 
 	return nil
 }
 
-func validateComputePublicAdvertisedPrefix_IsTerraformElementParameters(x interface{}) error {
+func validateComputePublicAdvertisedPrefix_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateComputePublicAdvertisedPrefix_IsTerraformElementParameters(x interf
 	return nil
 }
 
-func validateComputePublicAdvertisedPrefix_IsTerraformResourceParameters(x interface{}) error {
+func validateComputePublicAdvertisedPrefix_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateComputePublicAdvertisedPrefix_IsTerraformResourceParameters(x inter
 	return nil
 }
 
-func (j *jsiiProxy_ComputePublicAdvertisedPrefix) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ComputePublicAdvertisedPrefix) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_ComputePublicAdvertisedPrefix) validateSetConnectionParameter
 	return nil
 }
 
-func (j *jsiiProxy_ComputePublicAdvertisedPrefix) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ComputePublicAdvertisedPrefix) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -417,7 +417,7 @@ func (j *jsiiProxy_ComputePublicAdvertisedPrefix) validateSetProjectParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_ComputePublicAdvertisedPrefix) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ComputePublicAdvertisedPrefix) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -481,4 +481,3 @@ func validateNewComputePublicAdvertisedPrefixParameters(scope constructs.Constru
 
 	return nil
 }
-

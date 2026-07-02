@@ -98,7 +98,7 @@ func (p *jsiiProxy_PubsubLiteReservationTimeoutsOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_PubsubLiteReservationTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PubsubLiteReservationTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_PubsubLiteReservationTimeoutsOutputReference) validateSetDele
 	return nil
 }
 
-func (j *jsiiProxy_PubsubLiteReservationTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PubsubLiteReservationTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewPubsubLiteReservationTimeoutsOutputReferenceParameters(terraform
 
 	return nil
 }
-

@@ -15,9 +15,9 @@ type PubsubTopicMessageStoragePolicyOutputReference interface {
 	AllowedPersistenceRegionsInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -28,9 +28,9 @@ type PubsubTopicMessageStoragePolicyOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	EnforceInTransit() interface{}
-	SetEnforceInTransit(val interface{})
-	EnforceInTransitInput() interface{}
+	EnforceInTransit() any
+	SetEnforceInTransit(val any)
+	EnforceInTransitInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *PubsubTopicMessageStoragePolicy
@@ -46,7 +46,7 @@ type PubsubTopicMessageStoragePolicyOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -70,7 +70,7 @@ type PubsubTopicMessageStoragePolicyOutputReference interface {
 	ResetEnforceInTransit()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -103,8 +103,8 @@ func (j *jsiiProxy_PubsubTopicMessageStoragePolicyOutputReference) AllowedPersis
 	return returns
 }
 
-func (j *jsiiProxy_PubsubTopicMessageStoragePolicyOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PubsubTopicMessageStoragePolicyOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -133,8 +133,8 @@ func (j *jsiiProxy_PubsubTopicMessageStoragePolicyOutputReference) CreationStack
 	return returns
 }
 
-func (j *jsiiProxy_PubsubTopicMessageStoragePolicyOutputReference) EnforceInTransit() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PubsubTopicMessageStoragePolicyOutputReference) EnforceInTransit() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enforceInTransit",
@@ -143,8 +143,8 @@ func (j *jsiiProxy_PubsubTopicMessageStoragePolicyOutputReference) EnforceInTran
 	return returns
 }
 
-func (j *jsiiProxy_PubsubTopicMessageStoragePolicyOutputReference) EnforceInTransitInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PubsubTopicMessageStoragePolicyOutputReference) EnforceInTransitInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enforceInTransitInput",
@@ -193,7 +193,6 @@ func (j *jsiiProxy_PubsubTopicMessageStoragePolicyOutputReference) TerraformReso
 	return returns
 }
 
-
 func NewPubsubTopicMessageStoragePolicyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PubsubTopicMessageStoragePolicyOutputReference {
 	_init_.Initialize()
 
@@ -204,7 +203,7 @@ func NewPubsubTopicMessageStoragePolicyOutputReference(terraformResource cdktf.I
 
 	_jsii_.Create(
 		"@cdktf/provider-google.pubsubTopic.PubsubTopicMessageStoragePolicyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -216,12 +215,12 @@ func NewPubsubTopicMessageStoragePolicyOutputReference_Override(p PubsubTopicMes
 
 	_jsii_.Create(
 		"@cdktf/provider-google.pubsubTopic.PubsubTopicMessageStoragePolicyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PubsubTopicMessageStoragePolicyOutputReference)SetAllowedPersistenceRegions(val *[]*string) {
+func (j *jsiiProxy_PubsubTopicMessageStoragePolicyOutputReference) SetAllowedPersistenceRegions(val *[]*string) {
 	if err := j.validateSetAllowedPersistenceRegionsParameters(val); err != nil {
 		panic(err)
 	}
@@ -232,7 +231,7 @@ func (j *jsiiProxy_PubsubTopicMessageStoragePolicyOutputReference)SetAllowedPers
 	)
 }
 
-func (j *jsiiProxy_PubsubTopicMessageStoragePolicyOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_PubsubTopicMessageStoragePolicyOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -243,7 +242,7 @@ func (j *jsiiProxy_PubsubTopicMessageStoragePolicyOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_PubsubTopicMessageStoragePolicyOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_PubsubTopicMessageStoragePolicyOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_PubsubTopicMessageStoragePolicyOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_PubsubTopicMessageStoragePolicyOutputReference)SetEnforceInTransit(val interface{}) {
+func (j *jsiiProxy_PubsubTopicMessageStoragePolicyOutputReference) SetEnforceInTransit(val any) {
 	if err := j.validateSetEnforceInTransitParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_PubsubTopicMessageStoragePolicyOutputReference)SetEnforceInTr
 	)
 }
 
-func (j *jsiiProxy_PubsubTopicMessageStoragePolicyOutputReference)SetInternalValue(val *PubsubTopicMessageStoragePolicy) {
+func (j *jsiiProxy_PubsubTopicMessageStoragePolicyOutputReference) SetInternalValue(val *PubsubTopicMessageStoragePolicy) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_PubsubTopicMessageStoragePolicyOutputReference)SetInternalVal
 	)
 }
 
-func (j *jsiiProxy_PubsubTopicMessageStoragePolicyOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_PubsubTopicMessageStoragePolicyOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,7 +286,7 @@ func (j *jsiiProxy_PubsubTopicMessageStoragePolicyOutputReference)SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_PubsubTopicMessageStoragePolicyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PubsubTopicMessageStoragePolicyOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,16 +310,16 @@ func (p *jsiiProxy_PubsubTopicMessageStoragePolicyOutputReference) ComputeFqn() 
 	return returns
 }
 
-func (p *jsiiProxy_PubsubTopicMessageStoragePolicyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_PubsubTopicMessageStoragePolicyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -336,7 +335,7 @@ func (p *jsiiProxy_PubsubTopicMessageStoragePolicyOutputReference) GetBooleanAtt
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -352,7 +351,7 @@ func (p *jsiiProxy_PubsubTopicMessageStoragePolicyOutputReference) GetBooleanMap
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -368,7 +367,7 @@ func (p *jsiiProxy_PubsubTopicMessageStoragePolicyOutputReference) GetListAttrib
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -384,7 +383,7 @@ func (p *jsiiProxy_PubsubTopicMessageStoragePolicyOutputReference) GetNumberAttr
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -400,7 +399,7 @@ func (p *jsiiProxy_PubsubTopicMessageStoragePolicyOutputReference) GetNumberList
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -416,7 +415,7 @@ func (p *jsiiProxy_PubsubTopicMessageStoragePolicyOutputReference) GetNumberMapA
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -432,7 +431,7 @@ func (p *jsiiProxy_PubsubTopicMessageStoragePolicyOutputReference) GetStringAttr
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -448,7 +447,7 @@ func (p *jsiiProxy_PubsubTopicMessageStoragePolicyOutputReference) GetStringMapA
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -477,7 +476,7 @@ func (p *jsiiProxy_PubsubTopicMessageStoragePolicyOutputReference) Interpolation
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -492,16 +491,16 @@ func (p *jsiiProxy_PubsubTopicMessageStoragePolicyOutputReference) ResetEnforceI
 	)
 }
 
-func (p *jsiiProxy_PubsubTopicMessageStoragePolicyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PubsubTopicMessageStoragePolicyOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := p.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -520,4 +519,3 @@ func (p *jsiiProxy_PubsubTopicMessageStoragePolicyOutputReference) ToString() *s
 
 	return returns
 }
-

@@ -1,6 +1,5 @@
 package computeregionautoscaler
 
-
 type ComputeRegionAutoscalerAutoscalingPolicy struct {
 	// The maximum number of instances that the autoscaler can scale up to.
 	//
@@ -43,7 +42,7 @@ type ComputeRegionAutoscalerAutoscalingPolicy struct {
 	// metric block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_autoscaler#metric ComputeRegionAutoscaler#metric}
-	Metric interface{} `field:"optional" json:"metric" yaml:"metric"`
+	Metric any `field:"optional" json:"metric" yaml:"metric"`
 	// Defines operating mode for this policy.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_autoscaler#mode ComputeRegionAutoscaler#mode}
@@ -55,6 +54,5 @@ type ComputeRegionAutoscalerAutoscalingPolicy struct {
 	// scaling_schedules block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_autoscaler#scaling_schedules ComputeRegionAutoscaler#scaling_schedules}
-	ScalingSchedules interface{} `field:"optional" json:"scalingSchedules" yaml:"scalingSchedules"`
+	ScalingSchedules any `field:"optional" json:"scalingSchedules" yaml:"scalingSchedules"`
 }
-

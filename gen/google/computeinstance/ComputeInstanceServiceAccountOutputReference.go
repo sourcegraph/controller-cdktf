@@ -12,9 +12,9 @@ type ComputeInstanceServiceAccountOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -46,7 +46,7 @@ type ComputeInstanceServiceAccountOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -70,7 +70,7 @@ type ComputeInstanceServiceAccountOutputReference interface {
 	ResetEmail()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,8 +83,8 @@ type jsiiProxy_ComputeInstanceServiceAccountOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ComputeInstanceServiceAccountOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeInstanceServiceAccountOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -193,7 +193,6 @@ func (j *jsiiProxy_ComputeInstanceServiceAccountOutputReference) TerraformResour
 	return returns
 }
 
-
 func NewComputeInstanceServiceAccountOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ComputeInstanceServiceAccountOutputReference {
 	_init_.Initialize()
 
@@ -204,7 +203,7 @@ func NewComputeInstanceServiceAccountOutputReference(terraformResource cdktf.IIn
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeInstance.ComputeInstanceServiceAccountOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -216,12 +215,12 @@ func NewComputeInstanceServiceAccountOutputReference_Override(c ComputeInstanceS
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeInstance.ComputeInstanceServiceAccountOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceServiceAccountOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ComputeInstanceServiceAccountOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -232,7 +231,7 @@ func (j *jsiiProxy_ComputeInstanceServiceAccountOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceServiceAccountOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ComputeInstanceServiceAccountOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -243,7 +242,7 @@ func (j *jsiiProxy_ComputeInstanceServiceAccountOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceServiceAccountOutputReference)SetEmail(val *string) {
+func (j *jsiiProxy_ComputeInstanceServiceAccountOutputReference) SetEmail(val *string) {
 	if err := j.validateSetEmailParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_ComputeInstanceServiceAccountOutputReference)SetEmail(val *st
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceServiceAccountOutputReference)SetInternalValue(val *ComputeInstanceServiceAccount) {
+func (j *jsiiProxy_ComputeInstanceServiceAccountOutputReference) SetInternalValue(val *ComputeInstanceServiceAccount) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_ComputeInstanceServiceAccountOutputReference)SetInternalValue
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceServiceAccountOutputReference)SetScopes(val *[]*string) {
+func (j *jsiiProxy_ComputeInstanceServiceAccountOutputReference) SetScopes(val *[]*string) {
 	if err := j.validateSetScopesParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_ComputeInstanceServiceAccountOutputReference)SetScopes(val *[
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceServiceAccountOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ComputeInstanceServiceAccountOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,7 +286,7 @@ func (j *jsiiProxy_ComputeInstanceServiceAccountOutputReference)SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceServiceAccountOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeInstanceServiceAccountOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,16 +310,16 @@ func (c *jsiiProxy_ComputeInstanceServiceAccountOutputReference) ComputeFqn() *s
 	return returns
 }
 
-func (c *jsiiProxy_ComputeInstanceServiceAccountOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComputeInstanceServiceAccountOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -336,7 +335,7 @@ func (c *jsiiProxy_ComputeInstanceServiceAccountOutputReference) GetBooleanAttri
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -352,7 +351,7 @@ func (c *jsiiProxy_ComputeInstanceServiceAccountOutputReference) GetBooleanMapAt
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -368,7 +367,7 @@ func (c *jsiiProxy_ComputeInstanceServiceAccountOutputReference) GetListAttribut
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -384,7 +383,7 @@ func (c *jsiiProxy_ComputeInstanceServiceAccountOutputReference) GetNumberAttrib
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -400,7 +399,7 @@ func (c *jsiiProxy_ComputeInstanceServiceAccountOutputReference) GetNumberListAt
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -416,7 +415,7 @@ func (c *jsiiProxy_ComputeInstanceServiceAccountOutputReference) GetNumberMapAtt
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -432,7 +431,7 @@ func (c *jsiiProxy_ComputeInstanceServiceAccountOutputReference) GetStringAttrib
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -448,7 +447,7 @@ func (c *jsiiProxy_ComputeInstanceServiceAccountOutputReference) GetStringMapAtt
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -477,7 +476,7 @@ func (c *jsiiProxy_ComputeInstanceServiceAccountOutputReference) InterpolationFo
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -492,16 +491,16 @@ func (c *jsiiProxy_ComputeInstanceServiceAccountOutputReference) ResetEmail() {
 	)
 }
 
-func (c *jsiiProxy_ComputeInstanceServiceAccountOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ComputeInstanceServiceAccountOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -520,4 +519,3 @@ func (c *jsiiProxy_ComputeInstanceServiceAccountOutputReference) ToString() *str
 
 	return returns
 }
-

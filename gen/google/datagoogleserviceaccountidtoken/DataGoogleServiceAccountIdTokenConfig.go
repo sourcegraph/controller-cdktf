@@ -6,9 +6,9 @@ import (
 
 type DataGoogleServiceAccountIdTokenConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type DataGoogleServiceAccountIdTokenConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/service_account_id_token#target_audience DataGoogleServiceAccountIdToken#target_audience}.
 	TargetAudience *string `field:"required" json:"targetAudience" yaml:"targetAudience"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/service_account_id_token#delegates DataGoogleServiceAccountIdToken#delegates}.
@@ -29,8 +29,7 @@ type DataGoogleServiceAccountIdTokenConfig struct {
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/service_account_id_token#include_email DataGoogleServiceAccountIdToken#include_email}.
-	IncludeEmail interface{} `field:"optional" json:"includeEmail" yaml:"includeEmail"`
+	IncludeEmail any `field:"optional" json:"includeEmail" yaml:"includeEmail"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/service_account_id_token#target_service_account DataGoogleServiceAccountIdToken#target_service_account}.
 	TargetServiceAccount *string `field:"optional" json:"targetServiceAccount" yaml:"targetServiceAccount"`
 }
-

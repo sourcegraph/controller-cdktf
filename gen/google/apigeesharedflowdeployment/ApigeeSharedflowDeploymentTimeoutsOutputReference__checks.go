@@ -98,7 +98,7 @@ func (a *jsiiProxy_ApigeeSharedflowDeploymentTimeoutsOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_ApigeeSharedflowDeploymentTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ApigeeSharedflowDeploymentTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_ApigeeSharedflowDeploymentTimeoutsOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_ApigeeSharedflowDeploymentTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ApigeeSharedflowDeploymentTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewApigeeSharedflowDeploymentTimeoutsOutputReferenceParameters(terr
 
 	return nil
 }
-

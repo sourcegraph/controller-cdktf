@@ -1,6 +1,5 @@
 package networksecurityauthzpolicy
 
-
 type NetworkSecurityAuthzPolicyHttpRulesToOperationsMcpMethods struct {
 	// The MCP method to match against.
 	//
@@ -15,6 +14,5 @@ type NetworkSecurityAuthzPolicyHttpRulesToOperationsMcpMethods struct {
 	// params block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_authz_policy#params NetworkSecurityAuthzPolicy#params}
-	Params interface{} `field:"optional" json:"params" yaml:"params"`
+	Params any `field:"optional" json:"params" yaml:"params"`
 }
-

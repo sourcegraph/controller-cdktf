@@ -98,7 +98,7 @@ func (p *jsiiProxy_ProjectUsageExportBucketTimeoutsOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_ProjectUsageExportBucketTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ProjectUsageExportBucketTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_ProjectUsageExportBucketTimeoutsOutputReference) validateSetD
 	return nil
 }
 
-func (j *jsiiProxy_ProjectUsageExportBucketTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ProjectUsageExportBucketTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewProjectUsageExportBucketTimeoutsOutputReferenceParameters(terraf
 
 	return nil
 }
-

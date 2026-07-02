@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (g *jsiiProxy_GoogleProvider) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleProvider) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -47,7 +47,7 @@ func validateGoogleProvider_GenerateConfigForImportParameters(scope constructs.C
 	return nil
 }
 
-func validateGoogleProvider_IsConstructParameters(x interface{}) error {
+func validateGoogleProvider_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -55,7 +55,7 @@ func validateGoogleProvider_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateGoogleProvider_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleProvider_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -63,7 +63,7 @@ func validateGoogleProvider_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateGoogleProvider_IsTerraformProviderParameters(x interface{}) error {
+func validateGoogleProvider_IsTerraformProviderParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -71,7 +71,7 @@ func validateGoogleProvider_IsTerraformProviderParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_GoogleProvider) validateSetAddTerraformAttributionLabelParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleProvider) validateSetAddTerraformAttributionLabelParameters(val any) error {
 	switch val.(type) {
 	case *bool:
 		// ok
@@ -88,7 +88,7 @@ func (j *jsiiProxy_GoogleProvider) validateSetAddTerraformAttributionLabelParame
 	return nil
 }
 
-func (j *jsiiProxy_GoogleProvider) validateSetBatchingParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleProvider) validateSetBatchingParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -116,7 +116,7 @@ func (j *jsiiProxy_GoogleProvider) validateSetBatchingParameters(val interface{}
 	return nil
 }
 
-func (j *jsiiProxy_GoogleProvider) validateSetExternalCredentialsParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleProvider) validateSetExternalCredentialsParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -144,7 +144,7 @@ func (j *jsiiProxy_GoogleProvider) validateSetExternalCredentialsParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleProvider) validateSetPreferGlobalEndpointsParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleProvider) validateSetPreferGlobalEndpointsParameters(val any) error {
 	switch val.(type) {
 	case *bool:
 		// ok
@@ -161,7 +161,7 @@ func (j *jsiiProxy_GoogleProvider) validateSetPreferGlobalEndpointsParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleProvider) validateSetPreferRegionalEndpointsParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleProvider) validateSetPreferRegionalEndpointsParameters(val any) error {
 	switch val.(type) {
 	case *bool:
 		// ok
@@ -178,7 +178,7 @@ func (j *jsiiProxy_GoogleProvider) validateSetPreferRegionalEndpointsParameters(
 	return nil
 }
 
-func (j *jsiiProxy_GoogleProvider) validateSetUserProjectOverrideParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleProvider) validateSetUserProjectOverrideParameters(val any) error {
 	switch val.(type) {
 	case *bool:
 		// ok
@@ -210,4 +210,3 @@ func validateNewGoogleProviderParameters(scope constructs.Construct, id *string,
 
 	return nil
 }
-

@@ -6,9 +6,9 @@ import (
 
 type ChronicleReferenceListConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type ChronicleReferenceListConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Required. A user-provided description of the reference list.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_reference_list#description ChronicleReferenceList#description}
@@ -26,7 +26,7 @@ type ChronicleReferenceListConfig struct {
 	// entries block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_reference_list#entries ChronicleReferenceList#entries}
-	Entries interface{} `field:"required" json:"entries" yaml:"entries"`
+	Entries any `field:"required" json:"entries" yaml:"entries"`
 	// The unique identifier for the Chronicle instance, which is the same as the customer ID.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_reference_list#instance ChronicleReferenceList#instance}
@@ -68,4 +68,3 @@ type ChronicleReferenceListConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_reference_list#timeouts ChronicleReferenceList#timeouts}
 	Timeouts *ChronicleReferenceListTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

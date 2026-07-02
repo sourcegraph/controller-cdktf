@@ -98,7 +98,7 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupShieldedInstanceConfigOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_WorkbenchInstanceGceSetupShieldedInstanceConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_WorkbenchInstanceGceSetupShieldedInstanceConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_WorkbenchInstanceGceSetupShieldedInstanceConfigOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_WorkbenchInstanceGceSetupShieldedInstanceConfigOutputReference) validateSetEnableIntegrityMonitoringParameters(val interface{}) error {
+func (j *jsiiProxy_WorkbenchInstanceGceSetupShieldedInstanceConfigOutputReference) validateSetEnableIntegrityMonitoringParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (j *jsiiProxy_WorkbenchInstanceGceSetupShieldedInstanceConfigOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_WorkbenchInstanceGceSetupShieldedInstanceConfigOutputReference) validateSetEnableSecureBootParameters(val interface{}) error {
+func (j *jsiiProxy_WorkbenchInstanceGceSetupShieldedInstanceConfigOutputReference) validateSetEnableSecureBootParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -203,7 +203,7 @@ func (j *jsiiProxy_WorkbenchInstanceGceSetupShieldedInstanceConfigOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_WorkbenchInstanceGceSetupShieldedInstanceConfigOutputReference) validateSetEnableVtpmParameters(val interface{}) error {
+func (j *jsiiProxy_WorkbenchInstanceGceSetupShieldedInstanceConfigOutputReference) validateSetEnableVtpmParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -258,4 +258,3 @@ func validateNewWorkbenchInstanceGceSetupShieldedInstanceConfigOutputReferencePa
 
 	return nil
 }
-

@@ -109,7 +109,7 @@ func (p *jsiiProxy_PubsubLiteTopicPartitionConfigOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_PubsubLiteTopicPartitionConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PubsubLiteTopicPartitionConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -217,4 +217,3 @@ func validateNewPubsubLiteTopicPartitionConfigOutputReferenceParameters(terrafor
 
 	return nil
 }
-

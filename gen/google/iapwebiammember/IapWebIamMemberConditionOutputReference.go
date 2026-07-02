@@ -12,9 +12,9 @@ type IapWebIamMemberConditionOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -49,7 +49,7 @@ type IapWebIamMemberConditionOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -73,7 +73,7 @@ type IapWebIamMemberConditionOutputReference interface {
 	ResetDescription()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -86,8 +86,8 @@ type jsiiProxy_IapWebIamMemberConditionOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_IapWebIamMemberConditionOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IapWebIamMemberConditionOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -216,7 +216,6 @@ func (j *jsiiProxy_IapWebIamMemberConditionOutputReference) TitleInput() *string
 	return returns
 }
 
-
 func NewIapWebIamMemberConditionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) IapWebIamMemberConditionOutputReference {
 	_init_.Initialize()
 
@@ -227,7 +226,7 @@ func NewIapWebIamMemberConditionOutputReference(terraformResource cdktf.IInterpo
 
 	_jsii_.Create(
 		"@cdktf/provider-google.iapWebIamMember.IapWebIamMemberConditionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -239,12 +238,12 @@ func NewIapWebIamMemberConditionOutputReference_Override(i IapWebIamMemberCondit
 
 	_jsii_.Create(
 		"@cdktf/provider-google.iapWebIamMember.IapWebIamMemberConditionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		i,
 	)
 }
 
-func (j *jsiiProxy_IapWebIamMemberConditionOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_IapWebIamMemberConditionOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_IapWebIamMemberConditionOutputReference)SetComplexObjectIndex
 	)
 }
 
-func (j *jsiiProxy_IapWebIamMemberConditionOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_IapWebIamMemberConditionOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_IapWebIamMemberConditionOutputReference)SetComplexObjectIsFro
 	)
 }
 
-func (j *jsiiProxy_IapWebIamMemberConditionOutputReference)SetDescription(val *string) {
+func (j *jsiiProxy_IapWebIamMemberConditionOutputReference) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_IapWebIamMemberConditionOutputReference)SetDescription(val *s
 	)
 }
 
-func (j *jsiiProxy_IapWebIamMemberConditionOutputReference)SetExpression(val *string) {
+func (j *jsiiProxy_IapWebIamMemberConditionOutputReference) SetExpression(val *string) {
 	if err := j.validateSetExpressionParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_IapWebIamMemberConditionOutputReference)SetExpression(val *st
 	)
 }
 
-func (j *jsiiProxy_IapWebIamMemberConditionOutputReference)SetInternalValue(val *IapWebIamMemberCondition) {
+func (j *jsiiProxy_IapWebIamMemberConditionOutputReference) SetInternalValue(val *IapWebIamMemberCondition) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -299,7 +298,7 @@ func (j *jsiiProxy_IapWebIamMemberConditionOutputReference)SetInternalValue(val 
 	)
 }
 
-func (j *jsiiProxy_IapWebIamMemberConditionOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_IapWebIamMemberConditionOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -310,7 +309,7 @@ func (j *jsiiProxy_IapWebIamMemberConditionOutputReference)SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_IapWebIamMemberConditionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_IapWebIamMemberConditionOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -321,7 +320,7 @@ func (j *jsiiProxy_IapWebIamMemberConditionOutputReference)SetTerraformResource(
 	)
 }
 
-func (j *jsiiProxy_IapWebIamMemberConditionOutputReference)SetTitle(val *string) {
+func (j *jsiiProxy_IapWebIamMemberConditionOutputReference) SetTitle(val *string) {
 	if err := j.validateSetTitleParameters(val); err != nil {
 		panic(err)
 	}
@@ -345,16 +344,16 @@ func (i *jsiiProxy_IapWebIamMemberConditionOutputReference) ComputeFqn() *string
 	return returns
 }
 
-func (i *jsiiProxy_IapWebIamMemberConditionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_IapWebIamMemberConditionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -370,7 +369,7 @@ func (i *jsiiProxy_IapWebIamMemberConditionOutputReference) GetBooleanAttribute(
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -386,7 +385,7 @@ func (i *jsiiProxy_IapWebIamMemberConditionOutputReference) GetBooleanMapAttribu
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -402,7 +401,7 @@ func (i *jsiiProxy_IapWebIamMemberConditionOutputReference) GetListAttribute(ter
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -418,7 +417,7 @@ func (i *jsiiProxy_IapWebIamMemberConditionOutputReference) GetNumberAttribute(t
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -434,7 +433,7 @@ func (i *jsiiProxy_IapWebIamMemberConditionOutputReference) GetNumberListAttribu
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -450,7 +449,7 @@ func (i *jsiiProxy_IapWebIamMemberConditionOutputReference) GetNumberMapAttribut
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -466,7 +465,7 @@ func (i *jsiiProxy_IapWebIamMemberConditionOutputReference) GetStringAttribute(t
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -482,7 +481,7 @@ func (i *jsiiProxy_IapWebIamMemberConditionOutputReference) GetStringMapAttribut
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -511,7 +510,7 @@ func (i *jsiiProxy_IapWebIamMemberConditionOutputReference) InterpolationForAttr
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -526,16 +525,16 @@ func (i *jsiiProxy_IapWebIamMemberConditionOutputReference) ResetDescription() {
 	)
 }
 
-func (i *jsiiProxy_IapWebIamMemberConditionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (i *jsiiProxy_IapWebIamMemberConditionOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := i.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -554,4 +553,3 @@ func (i *jsiiProxy_IapWebIamMemberConditionOutputReference) ToString() *string {
 
 	return returns
 }
-

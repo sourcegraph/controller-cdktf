@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.appEngineApplication.AppEngineApplication",
-		reflect.TypeOf((*AppEngineApplication)(nil)).Elem(),
+		reflect.TypeFor[AppEngineApplication](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -92,7 +92,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "urlDispatchRule", GoGetter: "UrlDispatchRule"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppEngineApplication{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -100,15 +100,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.appEngineApplication.AppEngineApplicationConfig",
-		reflect.TypeOf((*AppEngineApplicationConfig)(nil)).Elem(),
+		reflect.TypeFor[AppEngineApplicationConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.appEngineApplication.AppEngineApplicationFeatureSettings",
-		reflect.TypeOf((*AppEngineApplicationFeatureSettings)(nil)).Elem(),
+		reflect.TypeFor[AppEngineApplicationFeatureSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.appEngineApplication.AppEngineApplicationFeatureSettingsOutputReference",
-		reflect.TypeOf((*AppEngineApplicationFeatureSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppEngineApplicationFeatureSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -134,7 +134,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppEngineApplicationFeatureSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -142,11 +142,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.appEngineApplication.AppEngineApplicationIap",
-		reflect.TypeOf((*AppEngineApplicationIap)(nil)).Elem(),
+		reflect.TypeFor[AppEngineApplicationIap](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.appEngineApplication.AppEngineApplicationIapOutputReference",
-		reflect.TypeOf((*AppEngineApplicationIapOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppEngineApplicationIapOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -178,7 +178,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppEngineApplicationIapOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -186,11 +186,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.appEngineApplication.AppEngineApplicationTimeouts",
-		reflect.TypeOf((*AppEngineApplicationTimeouts)(nil)).Elem(),
+		reflect.TypeFor[AppEngineApplicationTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.appEngineApplication.AppEngineApplicationTimeoutsOutputReference",
-		reflect.TypeOf((*AppEngineApplicationTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppEngineApplicationTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -220,7 +220,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppEngineApplicationTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -228,11 +228,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.appEngineApplication.AppEngineApplicationUrlDispatchRule",
-		reflect.TypeOf((*AppEngineApplicationUrlDispatchRule)(nil)).Elem(),
+		reflect.TypeFor[AppEngineApplicationUrlDispatchRule](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.appEngineApplication.AppEngineApplicationUrlDispatchRuleList",
-		reflect.TypeOf((*AppEngineApplicationUrlDispatchRuleList)(nil)).Elem(),
+		reflect.TypeFor[AppEngineApplicationUrlDispatchRuleList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -245,7 +245,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppEngineApplicationUrlDispatchRuleList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -253,7 +253,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.appEngineApplication.AppEngineApplicationUrlDispatchRuleOutputReference",
-		reflect.TypeOf((*AppEngineApplicationUrlDispatchRuleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppEngineApplicationUrlDispatchRuleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -280,7 +280,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppEngineApplicationUrlDispatchRuleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

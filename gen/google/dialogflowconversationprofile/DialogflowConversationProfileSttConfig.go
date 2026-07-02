@@ -1,6 +1,5 @@
 package dialogflowconversationprofile
 
-
 type DialogflowConversationProfileSttConfig struct {
 	// Audio encoding of the audio content to process. Possible values: ["AUDIO_ENCODING_UNSPECIFIED", "AUDIO_ENCODING_LINEAR_16", "AUDIO_ENCODING_FLAC", "AUDIO_ENCODING_MULAW", "AUDIO_ENCODING_AMR", "AUDIO_ENCODING_AMR_WB", "AUDIO_ENCODING_OGG_OPUS", "AUDIOENCODING_SPEEX_WITH_HEADER_BYTE"].
 	//
@@ -9,7 +8,7 @@ type DialogflowConversationProfileSttConfig struct {
 	// If true, Dialogflow returns SpeechWordInfo in StreamingRecognitionResult with information about the recognized speech words.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_conversation_profile#enable_word_info DialogflowConversationProfile#enable_word_info}
-	EnableWordInfo interface{} `field:"optional" json:"enableWordInfo" yaml:"enableWordInfo"`
+	EnableWordInfo any `field:"optional" json:"enableWordInfo" yaml:"enableWordInfo"`
 	// The language of the supplied audio.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_conversation_profile#language_code DialogflowConversationProfile#language_code}
@@ -29,6 +28,5 @@ type DialogflowConversationProfileSttConfig struct {
 	// Use timeout based endpointing, interpreting endpointer sensitivy as seconds of timeout value.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_conversation_profile#use_timeout_based_endpointing DialogflowConversationProfile#use_timeout_based_endpointing}
-	UseTimeoutBasedEndpointing interface{} `field:"optional" json:"useTimeoutBasedEndpointing" yaml:"useTimeoutBasedEndpointing"`
+	UseTimeoutBasedEndpointing any `field:"optional" json:"useTimeoutBasedEndpointing" yaml:"useTimeoutBasedEndpointing"`
 }
-

@@ -15,15 +15,15 @@ type NetworkServicesServiceBinding interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -64,11 +64,11 @@ type NetworkServicesServiceBinding interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Service() *string
 	SetService(val *string)
 	ServiceInput() *string
@@ -76,19 +76,19 @@ type NetworkServicesServiceBinding interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() NetworkServicesServiceBindingTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -106,7 +106,7 @@ type NetworkServicesServiceBinding interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -118,7 +118,7 @@ type NetworkServicesServiceBinding interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -134,17 +134,17 @@ type NetworkServicesServiceBinding interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for NetworkServicesServiceBinding
@@ -162,8 +162,8 @@ func (j *jsiiProxy_NetworkServicesServiceBinding) CdktfStack() cdktf.TerraformSt
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesServiceBinding) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkServicesServiceBinding) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -172,8 +172,8 @@ func (j *jsiiProxy_NetworkServicesServiceBinding) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesServiceBinding) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_NetworkServicesServiceBinding) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -182,8 +182,8 @@ func (j *jsiiProxy_NetworkServicesServiceBinding) ConstructNodeMetadata() *map[s
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesServiceBinding) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkServicesServiceBinding) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -382,8 +382,8 @@ func (j *jsiiProxy_NetworkServicesServiceBinding) Provider() cdktf.TerraformProv
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesServiceBinding) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_NetworkServicesServiceBinding) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -392,8 +392,8 @@ func (j *jsiiProxy_NetworkServicesServiceBinding) Provisioners() *[]interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesServiceBinding) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkServicesServiceBinding) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -442,8 +442,8 @@ func (j *jsiiProxy_NetworkServicesServiceBinding) TerraformLabels() cdktf.String
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesServiceBinding) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_NetworkServicesServiceBinding) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -472,8 +472,8 @@ func (j *jsiiProxy_NetworkServicesServiceBinding) Timeouts() NetworkServicesServ
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesServiceBinding) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkServicesServiceBinding) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -492,7 +492,6 @@ func (j *jsiiProxy_NetworkServicesServiceBinding) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_service_binding google_network_services_service_binding} Resource.
 func NewNetworkServicesServiceBinding(scope constructs.Construct, id *string, config *NetworkServicesServiceBindingConfig) NetworkServicesServiceBinding {
 	_init_.Initialize()
@@ -504,7 +503,7 @@ func NewNetworkServicesServiceBinding(scope constructs.Construct, id *string, co
 
 	_jsii_.Create(
 		"@cdktf/provider-google.networkServicesServiceBinding.NetworkServicesServiceBinding",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -517,12 +516,12 @@ func NewNetworkServicesServiceBinding_Override(n NetworkServicesServiceBinding, 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.networkServicesServiceBinding.NetworkServicesServiceBinding",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesServiceBinding)SetConnection(val interface{}) {
+func (j *jsiiProxy_NetworkServicesServiceBinding) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -533,7 +532,7 @@ func (j *jsiiProxy_NetworkServicesServiceBinding)SetConnection(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesServiceBinding)SetCount(val interface{}) {
+func (j *jsiiProxy_NetworkServicesServiceBinding) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -544,7 +543,7 @@ func (j *jsiiProxy_NetworkServicesServiceBinding)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesServiceBinding)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_NetworkServicesServiceBinding) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -552,7 +551,7 @@ func (j *jsiiProxy_NetworkServicesServiceBinding)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesServiceBinding)SetDescription(val *string) {
+func (j *jsiiProxy_NetworkServicesServiceBinding) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -563,7 +562,7 @@ func (j *jsiiProxy_NetworkServicesServiceBinding)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesServiceBinding)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_NetworkServicesServiceBinding) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -571,7 +570,7 @@ func (j *jsiiProxy_NetworkServicesServiceBinding)SetForEach(val cdktf.ITerraform
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesServiceBinding)SetId(val *string) {
+func (j *jsiiProxy_NetworkServicesServiceBinding) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -582,7 +581,7 @@ func (j *jsiiProxy_NetworkServicesServiceBinding)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesServiceBinding)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_NetworkServicesServiceBinding) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -593,7 +592,7 @@ func (j *jsiiProxy_NetworkServicesServiceBinding)SetLabels(val *map[string]*stri
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesServiceBinding)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_NetworkServicesServiceBinding) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -604,7 +603,7 @@ func (j *jsiiProxy_NetworkServicesServiceBinding)SetLifecycle(val *cdktf.Terrafo
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesServiceBinding)SetName(val *string) {
+func (j *jsiiProxy_NetworkServicesServiceBinding) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -615,7 +614,7 @@ func (j *jsiiProxy_NetworkServicesServiceBinding)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesServiceBinding)SetProject(val *string) {
+func (j *jsiiProxy_NetworkServicesServiceBinding) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -626,7 +625,7 @@ func (j *jsiiProxy_NetworkServicesServiceBinding)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesServiceBinding)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_NetworkServicesServiceBinding) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -634,7 +633,7 @@ func (j *jsiiProxy_NetworkServicesServiceBinding)SetProvider(val cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesServiceBinding)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_NetworkServicesServiceBinding) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -645,7 +644,7 @@ func (j *jsiiProxy_NetworkServicesServiceBinding)SetProvisioners(val *[]interfac
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesServiceBinding)SetService(val *string) {
+func (j *jsiiProxy_NetworkServicesServiceBinding) SetService(val *string) {
 	if err := j.validateSetServiceParameters(val); err != nil {
 		panic(err)
 	}
@@ -668,7 +667,7 @@ func NetworkServicesServiceBinding_GenerateConfigForImport(scope constructs.Cons
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.networkServicesServiceBinding.NetworkServicesServiceBinding",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -692,7 +691,7 @@ func NetworkServicesServiceBinding_GenerateConfigForImport(scope constructs.Cons
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func NetworkServicesServiceBinding_IsConstruct(x interface{}) *bool {
+func NetworkServicesServiceBinding_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetworkServicesServiceBinding_IsConstructParameters(x); err != nil {
@@ -703,7 +702,7 @@ func NetworkServicesServiceBinding_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.networkServicesServiceBinding.NetworkServicesServiceBinding",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -711,7 +710,7 @@ func NetworkServicesServiceBinding_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func NetworkServicesServiceBinding_IsTerraformElement(x interface{}) *bool {
+func NetworkServicesServiceBinding_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetworkServicesServiceBinding_IsTerraformElementParameters(x); err != nil {
@@ -722,7 +721,7 @@ func NetworkServicesServiceBinding_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.networkServicesServiceBinding.NetworkServicesServiceBinding",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -730,7 +729,7 @@ func NetworkServicesServiceBinding_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func NetworkServicesServiceBinding_IsTerraformResource(x interface{}) *bool {
+func NetworkServicesServiceBinding_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetworkServicesServiceBinding_IsTerraformResourceParameters(x); err != nil {
@@ -741,7 +740,7 @@ func NetworkServicesServiceBinding_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.networkServicesServiceBinding.NetworkServicesServiceBinding",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -766,31 +765,31 @@ func (n *jsiiProxy_NetworkServicesServiceBinding) AddMoveTarget(moveTarget *stri
 	_jsii_.InvokeVoid(
 		n,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (n *jsiiProxy_NetworkServicesServiceBinding) AddOverride(path *string, value interface{}) {
+func (n *jsiiProxy_NetworkServicesServiceBinding) AddOverride(path *string, value any) {
 	if err := n.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (n *jsiiProxy_NetworkServicesServiceBinding) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (n *jsiiProxy_NetworkServicesServiceBinding) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -806,7 +805,7 @@ func (n *jsiiProxy_NetworkServicesServiceBinding) GetBooleanAttribute(terraformA
 	_jsii_.Invoke(
 		n,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -822,7 +821,7 @@ func (n *jsiiProxy_NetworkServicesServiceBinding) GetBooleanMapAttribute(terrafo
 	_jsii_.Invoke(
 		n,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -838,7 +837,7 @@ func (n *jsiiProxy_NetworkServicesServiceBinding) GetListAttribute(terraformAttr
 	_jsii_.Invoke(
 		n,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -854,7 +853,7 @@ func (n *jsiiProxy_NetworkServicesServiceBinding) GetNumberAttribute(terraformAt
 	_jsii_.Invoke(
 		n,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -870,7 +869,7 @@ func (n *jsiiProxy_NetworkServicesServiceBinding) GetNumberListAttribute(terrafo
 	_jsii_.Invoke(
 		n,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -886,7 +885,7 @@ func (n *jsiiProxy_NetworkServicesServiceBinding) GetNumberMapAttribute(terrafor
 	_jsii_.Invoke(
 		n,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -902,7 +901,7 @@ func (n *jsiiProxy_NetworkServicesServiceBinding) GetStringAttribute(terraformAt
 	_jsii_.Invoke(
 		n,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -918,15 +917,15 @@ func (n *jsiiProxy_NetworkServicesServiceBinding) GetStringMapAttribute(terrafor
 	_jsii_.Invoke(
 		n,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (n *jsiiProxy_NetworkServicesServiceBinding) HasResourceMove() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkServicesServiceBinding) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -945,7 +944,7 @@ func (n *jsiiProxy_NetworkServicesServiceBinding) ImportFrom(id *string, provide
 	_jsii_.InvokeVoid(
 		n,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -958,7 +957,7 @@ func (n *jsiiProxy_NetworkServicesServiceBinding) InterpolationForAttribute(terr
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -972,18 +971,18 @@ func (n *jsiiProxy_NetworkServicesServiceBinding) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (n *jsiiProxy_NetworkServicesServiceBinding) MoveTo(moveTarget *string, index interface{}) {
+func (n *jsiiProxy_NetworkServicesServiceBinding) MoveTo(moveTarget *string, index any) {
 	if err := n.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -994,7 +993,7 @@ func (n *jsiiProxy_NetworkServicesServiceBinding) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1005,7 +1004,7 @@ func (n *jsiiProxy_NetworkServicesServiceBinding) OverrideLogicalId(newLogicalId
 	_jsii_.InvokeVoid(
 		n,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1016,7 +1015,7 @@ func (n *jsiiProxy_NetworkServicesServiceBinding) PutTimeouts(value *NetworkServ
 	_jsii_.InvokeVoid(
 		n,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1068,8 +1067,8 @@ func (n *jsiiProxy_NetworkServicesServiceBinding) ResetTimeouts() {
 	)
 }
 
-func (n *jsiiProxy_NetworkServicesServiceBinding) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (n *jsiiProxy_NetworkServicesServiceBinding) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
@@ -1081,8 +1080,8 @@ func (n *jsiiProxy_NetworkServicesServiceBinding) SynthesizeAttributes() *map[st
 	return returns
 }
 
-func (n *jsiiProxy_NetworkServicesServiceBinding) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (n *jsiiProxy_NetworkServicesServiceBinding) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
@@ -1094,8 +1093,8 @@ func (n *jsiiProxy_NetworkServicesServiceBinding) SynthesizeHclAttributes() *map
 	return returns
 }
 
-func (n *jsiiProxy_NetworkServicesServiceBinding) ToHclTerraform() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkServicesServiceBinding) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1107,8 +1106,8 @@ func (n *jsiiProxy_NetworkServicesServiceBinding) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (n *jsiiProxy_NetworkServicesServiceBinding) ToMetadata() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkServicesServiceBinding) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1133,8 +1132,8 @@ func (n *jsiiProxy_NetworkServicesServiceBinding) ToString() *string {
 	return returns
 }
 
-func (n *jsiiProxy_NetworkServicesServiceBinding) ToTerraform() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkServicesServiceBinding) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1145,4 +1144,3 @@ func (n *jsiiProxy_NetworkServicesServiceBinding) ToTerraform() interface{} {
 
 	return returns
 }
-

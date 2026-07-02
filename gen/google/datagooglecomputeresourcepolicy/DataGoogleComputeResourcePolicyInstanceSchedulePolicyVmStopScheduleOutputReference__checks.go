@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleComputeResourcePolicyInstanceSchedulePolicyVmStopSc
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeResourcePolicyInstanceSchedulePolicyVmStopScheduleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleComputeResourcePolicyInstanceSchedulePolicyVmStopScheduleOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleComputeResourcePolicyInstanceSchedulePolicyVmStopSched
 
 	return nil
 }
-

@@ -1,6 +1,5 @@
 package gkehubfeature
 
-
 type GkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfigDeploymentConfigs struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_hub_feature#component GkeHubFeature#component}.
 	Component *string `field:"required" json:"component" yaml:"component"`
@@ -15,10 +14,9 @@ type GkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubCon
 	// pod_toleration block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_hub_feature#pod_toleration GkeHubFeature#pod_toleration}
-	PodToleration interface{} `field:"optional" json:"podToleration" yaml:"podToleration"`
+	PodToleration any `field:"optional" json:"podToleration" yaml:"podToleration"`
 	// Pod replica count.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_hub_feature#replica_count GkeHubFeature#replica_count}
 	ReplicaCount *float64 `field:"optional" json:"replicaCount" yaml:"replicaCount"`
 }
-

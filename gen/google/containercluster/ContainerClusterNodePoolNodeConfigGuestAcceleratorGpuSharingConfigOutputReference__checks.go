@@ -98,7 +98,7 @@ func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigGuestAcceleratorGpuSharingC
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigGuestAcceleratorGpuSharingConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigGuestAcceleratorGpuSharingConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewContainerClusterNodePoolNodeConfigGuestAcceleratorGpuSharingConf
 
 	return nil
 }
-

@@ -90,7 +90,7 @@ func (i *jsiiProxy_IamPrincipalAccessBoundaryPolicyDetailsOutputReference) valid
 	return nil
 }
 
-func (i *jsiiProxy_IamPrincipalAccessBoundaryPolicyDetailsOutputReference) validatePutRulesParameters(value interface{}) error {
+func (i *jsiiProxy_IamPrincipalAccessBoundaryPolicyDetailsOutputReference) validatePutRulesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (i *jsiiProxy_IamPrincipalAccessBoundaryPolicyDetailsOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_IamPrincipalAccessBoundaryPolicyDetailsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IamPrincipalAccessBoundaryPolicyDetailsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -237,4 +237,3 @@ func validateNewIamPrincipalAccessBoundaryPolicyDetailsOutputReferenceParameters
 
 	return nil
 }
-

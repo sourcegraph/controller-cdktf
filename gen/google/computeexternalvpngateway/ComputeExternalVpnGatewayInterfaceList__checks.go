@@ -34,7 +34,7 @@ func (c *jsiiProxy_ComputeExternalVpnGatewayInterfaceList) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_ComputeExternalVpnGatewayInterfaceList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeExternalVpnGatewayInterfaceList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewComputeExternalVpnGatewayInterfaceListParameters(terraformResour
 
 	return nil
 }
-

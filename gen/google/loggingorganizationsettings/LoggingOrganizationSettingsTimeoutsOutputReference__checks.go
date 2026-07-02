@@ -98,7 +98,7 @@ func (l *jsiiProxy_LoggingOrganizationSettingsTimeoutsOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_LoggingOrganizationSettingsTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LoggingOrganizationSettingsTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_LoggingOrganizationSettingsTimeoutsOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_LoggingOrganizationSettingsTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LoggingOrganizationSettingsTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewLoggingOrganizationSettingsTimeoutsOutputReferenceParameters(ter
 
 	return nil
 }
-

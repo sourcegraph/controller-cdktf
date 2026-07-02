@@ -120,7 +120,7 @@ func (c *jsiiProxy_ClouddeployDeployPolicySelectorsOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_ClouddeployDeployPolicySelectorsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ClouddeployDeployPolicySelectorsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -185,7 +185,7 @@ func (j *jsiiProxy_ClouddeployDeployPolicySelectorsOutputReference) validateSetC
 	return nil
 }
 
-func (j *jsiiProxy_ClouddeployDeployPolicySelectorsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ClouddeployDeployPolicySelectorsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -244,4 +244,3 @@ func validateNewClouddeployDeployPolicySelectorsOutputReferenceParameters(terraf
 
 	return nil
 }
-

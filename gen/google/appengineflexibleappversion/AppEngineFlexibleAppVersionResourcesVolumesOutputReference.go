@@ -12,9 +12,9 @@ type AppEngineFlexibleAppVersionResourcesVolumesOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,8 +27,8 @@ type AppEngineFlexibleAppVersionResourcesVolumesOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -49,7 +49,7 @@ type AppEngineFlexibleAppVersionResourcesVolumesOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -72,7 +72,7 @@ type AppEngineFlexibleAppVersionResourcesVolumesOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,8 +85,8 @@ type jsiiProxy_AppEngineFlexibleAppVersionResourcesVolumesOutputReference struct
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_AppEngineFlexibleAppVersionResourcesVolumesOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppEngineFlexibleAppVersionResourcesVolumesOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -125,8 +125,8 @@ func (j *jsiiProxy_AppEngineFlexibleAppVersionResourcesVolumesOutputReference) F
 	return returns
 }
 
-func (j *jsiiProxy_AppEngineFlexibleAppVersionResourcesVolumesOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppEngineFlexibleAppVersionResourcesVolumesOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -215,7 +215,6 @@ func (j *jsiiProxy_AppEngineFlexibleAppVersionResourcesVolumesOutputReference) V
 	return returns
 }
 
-
 func NewAppEngineFlexibleAppVersionResourcesVolumesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AppEngineFlexibleAppVersionResourcesVolumesOutputReference {
 	_init_.Initialize()
 
@@ -226,7 +225,7 @@ func NewAppEngineFlexibleAppVersionResourcesVolumesOutputReference(terraformReso
 
 	_jsii_.Create(
 		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionResourcesVolumesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -238,12 +237,12 @@ func NewAppEngineFlexibleAppVersionResourcesVolumesOutputReference_Override(a Ap
 
 	_jsii_.Create(
 		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionResourcesVolumesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AppEngineFlexibleAppVersionResourcesVolumesOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AppEngineFlexibleAppVersionResourcesVolumesOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_AppEngineFlexibleAppVersionResourcesVolumesOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_AppEngineFlexibleAppVersionResourcesVolumesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AppEngineFlexibleAppVersionResourcesVolumesOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_AppEngineFlexibleAppVersionResourcesVolumesOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_AppEngineFlexibleAppVersionResourcesVolumesOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AppEngineFlexibleAppVersionResourcesVolumesOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_AppEngineFlexibleAppVersionResourcesVolumesOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_AppEngineFlexibleAppVersionResourcesVolumesOutputReference)SetName(val *string) {
+func (j *jsiiProxy_AppEngineFlexibleAppVersionResourcesVolumesOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,7 +286,7 @@ func (j *jsiiProxy_AppEngineFlexibleAppVersionResourcesVolumesOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_AppEngineFlexibleAppVersionResourcesVolumesOutputReference)SetSizeGb(val *float64) {
+func (j *jsiiProxy_AppEngineFlexibleAppVersionResourcesVolumesOutputReference) SetSizeGb(val *float64) {
 	if err := j.validateSetSizeGbParameters(val); err != nil {
 		panic(err)
 	}
@@ -298,7 +297,7 @@ func (j *jsiiProxy_AppEngineFlexibleAppVersionResourcesVolumesOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_AppEngineFlexibleAppVersionResourcesVolumesOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AppEngineFlexibleAppVersionResourcesVolumesOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -309,7 +308,7 @@ func (j *jsiiProxy_AppEngineFlexibleAppVersionResourcesVolumesOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_AppEngineFlexibleAppVersionResourcesVolumesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AppEngineFlexibleAppVersionResourcesVolumesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -320,7 +319,7 @@ func (j *jsiiProxy_AppEngineFlexibleAppVersionResourcesVolumesOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_AppEngineFlexibleAppVersionResourcesVolumesOutputReference)SetVolumeType(val *string) {
+func (j *jsiiProxy_AppEngineFlexibleAppVersionResourcesVolumesOutputReference) SetVolumeType(val *string) {
 	if err := j.validateSetVolumeTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -344,16 +343,16 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionResourcesVolumesOutputReference) C
 	return returns
 }
 
-func (a *jsiiProxy_AppEngineFlexibleAppVersionResourcesVolumesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AppEngineFlexibleAppVersionResourcesVolumesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionResourcesVolumesOutputReference) G
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionResourcesVolumesOutputReference) G
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionResourcesVolumesOutputReference) G
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionResourcesVolumesOutputReference) G
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionResourcesVolumesOutputReference) G
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionResourcesVolumesOutputReference) G
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -465,7 +464,7 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionResourcesVolumesOutputReference) G
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -481,7 +480,7 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionResourcesVolumesOutputReference) G
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -510,23 +509,23 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionResourcesVolumesOutputReference) I
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_AppEngineFlexibleAppVersionResourcesVolumesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AppEngineFlexibleAppVersionResourcesVolumesOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -545,4 +544,3 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionResourcesVolumesOutputReference) T
 
 	return returns
 }
-

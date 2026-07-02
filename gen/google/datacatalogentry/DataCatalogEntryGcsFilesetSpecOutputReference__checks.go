@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCatalogEntryGcsFilesetSpecOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_DataCatalogEntryGcsFilesetSpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCatalogEntryGcsFilesetSpecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataCatalogEntryGcsFilesetSpecOutputReferenceParameters(terrafor
 
 	return nil
 }
-

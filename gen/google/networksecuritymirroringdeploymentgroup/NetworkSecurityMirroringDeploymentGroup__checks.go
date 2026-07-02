@@ -19,7 +19,7 @@ func (n *jsiiProxy_NetworkSecurityMirroringDeploymentGroup) validateAddMoveTarge
 	return nil
 }
 
-func (n *jsiiProxy_NetworkSecurityMirroringDeploymentGroup) validateAddOverrideParameters(path *string, value interface{}) error {
+func (n *jsiiProxy_NetworkSecurityMirroringDeploymentGroup) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (n *jsiiProxy_NetworkSecurityMirroringDeploymentGroup) validateMoveFromIdPa
 	return nil
 }
 
-func (n *jsiiProxy_NetworkSecurityMirroringDeploymentGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (n *jsiiProxy_NetworkSecurityMirroringDeploymentGroup) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateNetworkSecurityMirroringDeploymentGroup_GenerateConfigForImportPara
 	return nil
 }
 
-func validateNetworkSecurityMirroringDeploymentGroup_IsConstructParameters(x interface{}) error {
+func validateNetworkSecurityMirroringDeploymentGroup_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateNetworkSecurityMirroringDeploymentGroup_IsConstructParameters(x int
 	return nil
 }
 
-func validateNetworkSecurityMirroringDeploymentGroup_IsTerraformElementParameters(x interface{}) error {
+func validateNetworkSecurityMirroringDeploymentGroup_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateNetworkSecurityMirroringDeploymentGroup_IsTerraformElementParameter
 	return nil
 }
 
-func validateNetworkSecurityMirroringDeploymentGroup_IsTerraformResourceParameters(x interface{}) error {
+func validateNetworkSecurityMirroringDeploymentGroup_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateNetworkSecurityMirroringDeploymentGroup_IsTerraformResourceParamete
 	return nil
 }
 
-func (j *jsiiProxy_NetworkSecurityMirroringDeploymentGroup) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkSecurityMirroringDeploymentGroup) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_NetworkSecurityMirroringDeploymentGroup) validateSetConnectio
 	return nil
 }
 
-func (j *jsiiProxy_NetworkSecurityMirroringDeploymentGroup) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkSecurityMirroringDeploymentGroup) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -409,7 +409,7 @@ func (j *jsiiProxy_NetworkSecurityMirroringDeploymentGroup) validateSetProjectPa
 	return nil
 }
 
-func (j *jsiiProxy_NetworkSecurityMirroringDeploymentGroup) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_NetworkSecurityMirroringDeploymentGroup) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -473,4 +473,3 @@ func validateNewNetworkSecurityMirroringDeploymentGroupParameters(scope construc
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (b *jsiiProxy_BillingAccountIamMemberConditionOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_BillingAccountIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BillingAccountIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewBillingAccountIamMemberConditionOutputReferenceParameters(terraf
 
 	return nil
 }
-

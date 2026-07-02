@@ -98,7 +98,7 @@ func (f *jsiiProxy_FirebaseRemoteConfigRemoteConfigTimeoutsOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfigTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfigTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfigTimeoutsOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfigTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfigTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewFirebaseRemoteConfigRemoteConfigTimeoutsOutputReferenceParameter
 
 	return nil
 }
-

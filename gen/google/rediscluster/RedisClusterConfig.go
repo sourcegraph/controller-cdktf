@@ -6,9 +6,9 @@ import (
 
 type RedisClusterConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type RedisClusterConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Required. Number of shards for the Redis cluster.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/redis_cluster#shard_count RedisCluster#shard_count}
@@ -44,7 +44,7 @@ type RedisClusterConfig struct {
 	// Default value is true.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/redis_cluster#deletion_protection_enabled RedisCluster#deletion_protection_enabled}
-	DeletionProtectionEnabled interface{} `field:"optional" json:"deletionProtectionEnabled" yaml:"deletionProtectionEnabled"`
+	DeletionProtectionEnabled any `field:"optional" json:"deletionProtectionEnabled" yaml:"deletionProtectionEnabled"`
 	// gcs_source block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/redis_cluster#gcs_source RedisCluster#gcs_source}
@@ -99,7 +99,7 @@ type RedisClusterConfig struct {
 	// psc_configs block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/redis_cluster#psc_configs RedisCluster#psc_configs}
-	PscConfigs interface{} `field:"optional" json:"pscConfigs" yaml:"pscConfigs"`
+	PscConfigs any `field:"optional" json:"pscConfigs" yaml:"pscConfigs"`
 	// Configure Redis Cluster behavior using a subset of native Redis configuration parameters.
 	//
 	// Please check Memorystore documentation for the list of supported parameters:
@@ -141,4 +141,3 @@ type RedisClusterConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/redis_cluster#zone_distribution_config RedisCluster#zone_distribution_config}
 	ZoneDistributionConfig *RedisClusterZoneDistributionConfig `field:"optional" json:"zoneDistributionConfig" yaml:"zoneDistributionConfig"`
 }
-

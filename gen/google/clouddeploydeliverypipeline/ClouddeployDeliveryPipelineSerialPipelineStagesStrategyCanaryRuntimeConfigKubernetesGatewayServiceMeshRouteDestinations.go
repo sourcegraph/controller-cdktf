@@ -1,6 +1,5 @@
 package clouddeploydeliverypipeline
 
-
 type ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigKubernetesGatewayServiceMeshRouteDestinations struct {
 	// Required.
 	//
@@ -13,6 +12,5 @@ type ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigK
 	// Whether to propagate the Kubernetes Service to the route destination clusters. The Service will always be deployed to the Target cluster even if the HTTPRoute is not. This option may be used to facilitiate successful DNS lookup in the route destination clusters. Can only be set to true if destinations are specified.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_delivery_pipeline#propagate_service ClouddeployDeliveryPipeline#propagate_service}
-	PropagateService interface{} `field:"optional" json:"propagateService" yaml:"propagateService"`
+	PropagateService any `field:"optional" json:"propagateService" yaml:"propagateService"`
 }
-

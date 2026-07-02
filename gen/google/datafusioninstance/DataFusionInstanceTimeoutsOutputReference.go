@@ -12,9 +12,9 @@ type DataFusionInstanceTimeoutsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,8 +33,8 @@ type DataFusionInstanceTimeoutsOutputReference interface {
 	DeleteInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -49,7 +49,7 @@ type DataFusionInstanceTimeoutsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type DataFusionInstanceTimeoutsOutputReference interface {
 	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_DataFusionInstanceTimeoutsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DataFusionInstanceTimeoutsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataFusionInstanceTimeoutsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_DataFusionInstanceTimeoutsOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataFusionInstanceTimeoutsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataFusionInstanceTimeoutsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_DataFusionInstanceTimeoutsOutputReference) UpdateInput() *str
 	return returns
 }
 
-
 func NewDataFusionInstanceTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataFusionInstanceTimeoutsOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewDataFusionInstanceTimeoutsOutputReference(terraformResource cdktf.IInter
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataFusionInstance.DataFusionInstanceTimeoutsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewDataFusionInstanceTimeoutsOutputReference_Override(d DataFusionInstanceT
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataFusionInstance.DataFusionInstanceTimeoutsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataFusionInstanceTimeoutsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataFusionInstanceTimeoutsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_DataFusionInstanceTimeoutsOutputReference)SetComplexObjectInd
 	)
 }
 
-func (j *jsiiProxy_DataFusionInstanceTimeoutsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataFusionInstanceTimeoutsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_DataFusionInstanceTimeoutsOutputReference)SetComplexObjectIsF
 	)
 }
 
-func (j *jsiiProxy_DataFusionInstanceTimeoutsOutputReference)SetCreate(val *string) {
+func (j *jsiiProxy_DataFusionInstanceTimeoutsOutputReference) SetCreate(val *string) {
 	if err := j.validateSetCreateParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_DataFusionInstanceTimeoutsOutputReference)SetCreate(val *stri
 	)
 }
 
-func (j *jsiiProxy_DataFusionInstanceTimeoutsOutputReference)SetDelete(val *string) {
+func (j *jsiiProxy_DataFusionInstanceTimeoutsOutputReference) SetDelete(val *string) {
 	if err := j.validateSetDeleteParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_DataFusionInstanceTimeoutsOutputReference)SetDelete(val *stri
 	)
 }
 
-func (j *jsiiProxy_DataFusionInstanceTimeoutsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataFusionInstanceTimeoutsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_DataFusionInstanceTimeoutsOutputReference)SetInternalValue(va
 	)
 }
 
-func (j *jsiiProxy_DataFusionInstanceTimeoutsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataFusionInstanceTimeoutsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_DataFusionInstanceTimeoutsOutputReference)SetTerraformAttribu
 	)
 }
 
-func (j *jsiiProxy_DataFusionInstanceTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataFusionInstanceTimeoutsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_DataFusionInstanceTimeoutsOutputReference)SetTerraformResourc
 	)
 }
 
-func (j *jsiiProxy_DataFusionInstanceTimeoutsOutputReference)SetUpdate(val *string) {
+func (j *jsiiProxy_DataFusionInstanceTimeoutsOutputReference) SetUpdate(val *string) {
 	if err := j.validateSetUpdateParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (d *jsiiProxy_DataFusionInstanceTimeoutsOutputReference) ComputeFqn() *stri
 	return returns
 }
 
-func (d *jsiiProxy_DataFusionInstanceTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataFusionInstanceTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (d *jsiiProxy_DataFusionInstanceTimeoutsOutputReference) GetBooleanAttribut
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (d *jsiiProxy_DataFusionInstanceTimeoutsOutputReference) GetBooleanMapAttri
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (d *jsiiProxy_DataFusionInstanceTimeoutsOutputReference) GetListAttribute(t
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (d *jsiiProxy_DataFusionInstanceTimeoutsOutputReference) GetNumberAttribute
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (d *jsiiProxy_DataFusionInstanceTimeoutsOutputReference) GetNumberListAttri
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (d *jsiiProxy_DataFusionInstanceTimeoutsOutputReference) GetNumberMapAttrib
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (d *jsiiProxy_DataFusionInstanceTimeoutsOutputReference) GetStringAttribute
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (d *jsiiProxy_DataFusionInstanceTimeoutsOutputReference) GetStringMapAttrib
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (d *jsiiProxy_DataFusionInstanceTimeoutsOutputReference) InterpolationForAt
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (d *jsiiProxy_DataFusionInstanceTimeoutsOutputReference) ResetUpdate() {
 	)
 }
 
-func (d *jsiiProxy_DataFusionInstanceTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataFusionInstanceTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (d *jsiiProxy_DataFusionInstanceTimeoutsOutputReference) ToString() *string
 
 	return returns
 }
-

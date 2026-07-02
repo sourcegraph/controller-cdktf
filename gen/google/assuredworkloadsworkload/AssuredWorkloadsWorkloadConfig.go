@@ -6,9 +6,9 @@ import (
 
 type AssuredWorkloadsWorkloadConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type AssuredWorkloadsWorkloadConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Required.
 	//
 	// Immutable. Compliance Regime associated with this workload. Possible values: COMPLIANCE_REGIME_UNSPECIFIED, IL4, CJIS, FEDRAMP_HIGH, FEDRAMP_MODERATE, US_REGIONAL_ACCESS, HIPAA, HITRUST, EU_REGIONS_AND_SUPPORT, CA_REGIONS_AND_SUPPORT, ITAR, AU_REGIONS_AND_US_SUPPORT, ASSURED_WORKLOADS_FOR_PARTNERS, ISR_REGIONS, ISR_REGIONS_AND_SUPPORT, CA_PROTECTED_B, IL5, IL2, JP_REGIONS_AND_SUPPORT, KSA_REGIONS_AND_SUPPORT_WITH_SOVEREIGNTY_CONTROLS, REGIONAL_CONTROLS, HEALTHCARE_AND_LIFE_SCIENCES_CONTROLS, HEALTHCARE_AND_LIFE_SCIENCES_CONTROLS_US_SUPPORT, IRS_1075
@@ -48,7 +48,7 @@ type AssuredWorkloadsWorkloadConfig struct {
 	// Optional. Indicates the sovereignty status of the given workload. Currently meant to be used by Europe/Canada customers.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/assured_workloads_workload#enable_sovereign_controls AssuredWorkloadsWorkload#enable_sovereign_controls}
-	EnableSovereignControls interface{} `field:"optional" json:"enableSovereignControls" yaml:"enableSovereignControls"`
+	EnableSovereignControls any `field:"optional" json:"enableSovereignControls" yaml:"enableSovereignControls"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/assured_workloads_workload#id AssuredWorkloadsWorkload#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -88,7 +88,7 @@ type AssuredWorkloadsWorkloadConfig struct {
 	// resource_settings block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/assured_workloads_workload#resource_settings AssuredWorkloadsWorkload#resource_settings}
-	ResourceSettings interface{} `field:"optional" json:"resourceSettings" yaml:"resourceSettings"`
+	ResourceSettings any `field:"optional" json:"resourceSettings" yaml:"resourceSettings"`
 	// timeouts block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/assured_workloads_workload#timeouts AssuredWorkloadsWorkload#timeouts}
@@ -98,10 +98,9 @@ type AssuredWorkloadsWorkloadConfig struct {
 	// Indicates whether the e-mail notification for a violation is enabled for a workload. This value will be by default True, and if not present will be considered as true. This should only be updated via updateWorkload call. Any Changes to this field during the createWorkload call will not be honored. This will always be true while creating the workload.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/assured_workloads_workload#violation_notifications_enabled AssuredWorkloadsWorkload#violation_notifications_enabled}
-	ViolationNotificationsEnabled interface{} `field:"optional" json:"violationNotificationsEnabled" yaml:"violationNotificationsEnabled"`
+	ViolationNotificationsEnabled any `field:"optional" json:"violationNotificationsEnabled" yaml:"violationNotificationsEnabled"`
 	// workload_options block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/assured_workloads_workload#workload_options AssuredWorkloadsWorkload#workload_options}
 	WorkloadOptions *AssuredWorkloadsWorkloadWorkloadOptions `field:"optional" json:"workloadOptions" yaml:"workloadOptions"`
 }
-

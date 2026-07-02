@@ -90,7 +90,7 @@ func (b *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesNetwor
 	return nil
 }
 
-func (b *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesNetworkInterfacesOutputReference) validatePutAccessConfigsParameters(value interface{}) error {
+func (b *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesNetworkInterfacesOutputReference) validatePutAccessConfigsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (b *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesNetwor
 	return nil
 }
 
-func (b *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesNetworkInterfacesOutputReference) validatePutAliasIpRangesParameters(value interface{}) error {
+func (b *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesNetworkInterfacesOutputReference) validatePutAliasIpRangesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -152,7 +152,7 @@ func (b *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesNetwor
 	return nil
 }
 
-func (b *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesNetworkInterfacesOutputReference) validatePutIpv6AccessConfigsParameters(value interface{}) error {
+func (b *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesNetworkInterfacesOutputReference) validatePutIpv6AccessConfigsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -191,7 +191,7 @@ func (b *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesNetwor
 	return nil
 }
 
-func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesNetworkInterfacesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesNetworkInterfacesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -264,7 +264,7 @@ func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesNetwor
 	return nil
 }
 
-func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesNetworkInterfacesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesNetworkInterfacesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -395,4 +395,3 @@ func validateNewBackupDrRestoreWorkloadComputeInstanceRestorePropertiesNetworkIn
 
 	return nil
 }
-

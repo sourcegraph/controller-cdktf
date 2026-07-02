@@ -10,14 +10,14 @@ import (
 
 type CloudSecurityComplianceFrameworkCloudControlDetailsParametersParameterValueOutputReference interface {
 	cdktf.ComplexObject
-	BoolValue() interface{}
-	SetBoolValue(val interface{})
-	BoolValueInput() interface{}
+	BoolValue() any
+	SetBoolValue(val any)
+	BoolValueInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -53,7 +53,7 @@ type CloudSecurityComplianceFrameworkCloudControlDetailsParametersParameterValue
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -83,7 +83,7 @@ type CloudSecurityComplianceFrameworkCloudControlDetailsParametersParameterValue
 	ResetStringValue()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -96,8 +96,8 @@ type jsiiProxy_CloudSecurityComplianceFrameworkCloudControlDetailsParametersPara
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_CloudSecurityComplianceFrameworkCloudControlDetailsParametersParameterValueOutputReference) BoolValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudSecurityComplianceFrameworkCloudControlDetailsParametersParameterValueOutputReference) BoolValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"boolValue",
@@ -106,8 +106,8 @@ func (j *jsiiProxy_CloudSecurityComplianceFrameworkCloudControlDetailsParameters
 	return returns
 }
 
-func (j *jsiiProxy_CloudSecurityComplianceFrameworkCloudControlDetailsParametersParameterValueOutputReference) BoolValueInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudSecurityComplianceFrameworkCloudControlDetailsParametersParameterValueOutputReference) BoolValueInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"boolValueInput",
@@ -116,8 +116,8 @@ func (j *jsiiProxy_CloudSecurityComplianceFrameworkCloudControlDetailsParameters
 	return returns
 }
 
-func (j *jsiiProxy_CloudSecurityComplianceFrameworkCloudControlDetailsParametersParameterValueOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudSecurityComplianceFrameworkCloudControlDetailsParametersParameterValueOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -266,7 +266,6 @@ func (j *jsiiProxy_CloudSecurityComplianceFrameworkCloudControlDetailsParameters
 	return returns
 }
 
-
 func NewCloudSecurityComplianceFrameworkCloudControlDetailsParametersParameterValueOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CloudSecurityComplianceFrameworkCloudControlDetailsParametersParameterValueOutputReference {
 	_init_.Initialize()
 
@@ -277,7 +276,7 @@ func NewCloudSecurityComplianceFrameworkCloudControlDetailsParametersParameterVa
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cloudSecurityComplianceFramework.CloudSecurityComplianceFrameworkCloudControlDetailsParametersParameterValueOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -289,12 +288,12 @@ func NewCloudSecurityComplianceFrameworkCloudControlDetailsParametersParameterVa
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cloudSecurityComplianceFramework.CloudSecurityComplianceFrameworkCloudControlDetailsParametersParameterValueOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CloudSecurityComplianceFrameworkCloudControlDetailsParametersParameterValueOutputReference)SetBoolValue(val interface{}) {
+func (j *jsiiProxy_CloudSecurityComplianceFrameworkCloudControlDetailsParametersParameterValueOutputReference) SetBoolValue(val any) {
 	if err := j.validateSetBoolValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -305,7 +304,7 @@ func (j *jsiiProxy_CloudSecurityComplianceFrameworkCloudControlDetailsParameters
 	)
 }
 
-func (j *jsiiProxy_CloudSecurityComplianceFrameworkCloudControlDetailsParametersParameterValueOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CloudSecurityComplianceFrameworkCloudControlDetailsParametersParameterValueOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -316,7 +315,7 @@ func (j *jsiiProxy_CloudSecurityComplianceFrameworkCloudControlDetailsParameters
 	)
 }
 
-func (j *jsiiProxy_CloudSecurityComplianceFrameworkCloudControlDetailsParametersParameterValueOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CloudSecurityComplianceFrameworkCloudControlDetailsParametersParameterValueOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,7 +326,7 @@ func (j *jsiiProxy_CloudSecurityComplianceFrameworkCloudControlDetailsParameters
 	)
 }
 
-func (j *jsiiProxy_CloudSecurityComplianceFrameworkCloudControlDetailsParametersParameterValueOutputReference)SetInternalValue(val *CloudSecurityComplianceFrameworkCloudControlDetailsParametersParameterValue) {
+func (j *jsiiProxy_CloudSecurityComplianceFrameworkCloudControlDetailsParametersParameterValueOutputReference) SetInternalValue(val *CloudSecurityComplianceFrameworkCloudControlDetailsParametersParameterValue) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,7 +337,7 @@ func (j *jsiiProxy_CloudSecurityComplianceFrameworkCloudControlDetailsParameters
 	)
 }
 
-func (j *jsiiProxy_CloudSecurityComplianceFrameworkCloudControlDetailsParametersParameterValueOutputReference)SetNumberValue(val *float64) {
+func (j *jsiiProxy_CloudSecurityComplianceFrameworkCloudControlDetailsParametersParameterValueOutputReference) SetNumberValue(val *float64) {
 	if err := j.validateSetNumberValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,7 +348,7 @@ func (j *jsiiProxy_CloudSecurityComplianceFrameworkCloudControlDetailsParameters
 	)
 }
 
-func (j *jsiiProxy_CloudSecurityComplianceFrameworkCloudControlDetailsParametersParameterValueOutputReference)SetStringValue(val *string) {
+func (j *jsiiProxy_CloudSecurityComplianceFrameworkCloudControlDetailsParametersParameterValueOutputReference) SetStringValue(val *string) {
 	if err := j.validateSetStringValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,7 +359,7 @@ func (j *jsiiProxy_CloudSecurityComplianceFrameworkCloudControlDetailsParameters
 	)
 }
 
-func (j *jsiiProxy_CloudSecurityComplianceFrameworkCloudControlDetailsParametersParameterValueOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CloudSecurityComplianceFrameworkCloudControlDetailsParametersParameterValueOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,7 +370,7 @@ func (j *jsiiProxy_CloudSecurityComplianceFrameworkCloudControlDetailsParameters
 	)
 }
 
-func (j *jsiiProxy_CloudSecurityComplianceFrameworkCloudControlDetailsParametersParameterValueOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CloudSecurityComplianceFrameworkCloudControlDetailsParametersParameterValueOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -395,16 +394,16 @@ func (c *jsiiProxy_CloudSecurityComplianceFrameworkCloudControlDetailsParameters
 	return returns
 }
 
-func (c *jsiiProxy_CloudSecurityComplianceFrameworkCloudControlDetailsParametersParameterValueOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CloudSecurityComplianceFrameworkCloudControlDetailsParametersParameterValueOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (c *jsiiProxy_CloudSecurityComplianceFrameworkCloudControlDetailsParameters
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (c *jsiiProxy_CloudSecurityComplianceFrameworkCloudControlDetailsParameters
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (c *jsiiProxy_CloudSecurityComplianceFrameworkCloudControlDetailsParameters
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (c *jsiiProxy_CloudSecurityComplianceFrameworkCloudControlDetailsParameters
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (c *jsiiProxy_CloudSecurityComplianceFrameworkCloudControlDetailsParameters
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -500,7 +499,7 @@ func (c *jsiiProxy_CloudSecurityComplianceFrameworkCloudControlDetailsParameters
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -516,7 +515,7 @@ func (c *jsiiProxy_CloudSecurityComplianceFrameworkCloudControlDetailsParameters
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -532,7 +531,7 @@ func (c *jsiiProxy_CloudSecurityComplianceFrameworkCloudControlDetailsParameters
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -561,7 +560,7 @@ func (c *jsiiProxy_CloudSecurityComplianceFrameworkCloudControlDetailsParameters
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -575,7 +574,7 @@ func (c *jsiiProxy_CloudSecurityComplianceFrameworkCloudControlDetailsParameters
 	_jsii_.InvokeVoid(
 		c,
 		"putOneofValue",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -586,7 +585,7 @@ func (c *jsiiProxy_CloudSecurityComplianceFrameworkCloudControlDetailsParameters
 	_jsii_.InvokeVoid(
 		c,
 		"putStringListValue",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -630,16 +629,16 @@ func (c *jsiiProxy_CloudSecurityComplianceFrameworkCloudControlDetailsParameters
 	)
 }
 
-func (c *jsiiProxy_CloudSecurityComplianceFrameworkCloudControlDetailsParametersParameterValueOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_CloudSecurityComplianceFrameworkCloudControlDetailsParametersParameterValueOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -658,4 +657,3 @@ func (c *jsiiProxy_CloudSecurityComplianceFrameworkCloudControlDetailsParameters
 
 	return returns
 }
-

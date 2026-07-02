@@ -98,7 +98,7 @@ func (a *jsiiProxy_AppEngineApplicationUrlDispatchRulesDispatchRulesOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_AppEngineApplicationUrlDispatchRulesDispatchRulesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppEngineApplicationUrlDispatchRulesDispatchRulesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_AppEngineApplicationUrlDispatchRulesDispatchRulesOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_AppEngineApplicationUrlDispatchRulesDispatchRulesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AppEngineApplicationUrlDispatchRulesDispatchRulesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewAppEngineApplicationUrlDispatchRulesDispatchRulesOutputReference
 
 	return nil
 }
-

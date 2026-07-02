@@ -18,11 +18,11 @@ type DataGoogleComputeBackendBucket interface {
 	CdnPolicy() DataGoogleComputeBackendBucketCdnPolicyList
 	CompressionMode() *string
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreationTimestamp() *string
 	CustomResponseHeaders() *[]*string
 	// Experimental.
@@ -62,18 +62,18 @@ type DataGoogleComputeBackendBucket interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SelfLink() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -100,18 +100,18 @@ type DataGoogleComputeBackendBucket interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataGoogleComputeBackendBucket
@@ -159,8 +159,8 @@ func (j *jsiiProxy_DataGoogleComputeBackendBucket) CompressionMode() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleComputeBackendBucket) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleComputeBackendBucket) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -169,8 +169,8 @@ func (j *jsiiProxy_DataGoogleComputeBackendBucket) ConstructNodeMetadata() *map[
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleComputeBackendBucket) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleComputeBackendBucket) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -379,8 +379,8 @@ func (j *jsiiProxy_DataGoogleComputeBackendBucket) Provider() cdktf.TerraformPro
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleComputeBackendBucket) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleComputeBackendBucket) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -409,8 +409,8 @@ func (j *jsiiProxy_DataGoogleComputeBackendBucket) TerraformGeneratorMetadata() 
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleComputeBackendBucket) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleComputeBackendBucket) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -429,7 +429,6 @@ func (j *jsiiProxy_DataGoogleComputeBackendBucket) TerraformResourceType() *stri
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/compute_backend_bucket google_compute_backend_bucket} Data Source.
 func NewDataGoogleComputeBackendBucket(scope constructs.Construct, id *string, config *DataGoogleComputeBackendBucketConfig) DataGoogleComputeBackendBucket {
 	_init_.Initialize()
@@ -441,7 +440,7 @@ func NewDataGoogleComputeBackendBucket(scope constructs.Construct, id *string, c
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleComputeBackendBucket.DataGoogleComputeBackendBucket",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -454,12 +453,12 @@ func NewDataGoogleComputeBackendBucket_Override(d DataGoogleComputeBackendBucket
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleComputeBackendBucket.DataGoogleComputeBackendBucket",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeBackendBucket)SetCount(val interface{}) {
+func (j *jsiiProxy_DataGoogleComputeBackendBucket) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -470,7 +469,7 @@ func (j *jsiiProxy_DataGoogleComputeBackendBucket)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeBackendBucket)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataGoogleComputeBackendBucket) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -478,7 +477,7 @@ func (j *jsiiProxy_DataGoogleComputeBackendBucket)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeBackendBucket)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGoogleComputeBackendBucket) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -486,7 +485,7 @@ func (j *jsiiProxy_DataGoogleComputeBackendBucket)SetForEach(val cdktf.ITerrafor
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeBackendBucket)SetId(val *string) {
+func (j *jsiiProxy_DataGoogleComputeBackendBucket) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -497,7 +496,7 @@ func (j *jsiiProxy_DataGoogleComputeBackendBucket)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeBackendBucket)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGoogleComputeBackendBucket) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -508,7 +507,7 @@ func (j *jsiiProxy_DataGoogleComputeBackendBucket)SetLifecycle(val *cdktf.Terraf
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeBackendBucket)SetName(val *string) {
+func (j *jsiiProxy_DataGoogleComputeBackendBucket) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -519,7 +518,7 @@ func (j *jsiiProxy_DataGoogleComputeBackendBucket)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeBackendBucket)SetProject(val *string) {
+func (j *jsiiProxy_DataGoogleComputeBackendBucket) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -530,7 +529,7 @@ func (j *jsiiProxy_DataGoogleComputeBackendBucket)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeBackendBucket)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGoogleComputeBackendBucket) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -550,7 +549,7 @@ func DataGoogleComputeBackendBucket_GenerateConfigForImport(scope constructs.Con
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleComputeBackendBucket.DataGoogleComputeBackendBucket",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -574,7 +573,7 @@ func DataGoogleComputeBackendBucket_GenerateConfigForImport(scope constructs.Con
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataGoogleComputeBackendBucket_IsConstruct(x interface{}) *bool {
+func DataGoogleComputeBackendBucket_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleComputeBackendBucket_IsConstructParameters(x); err != nil {
@@ -585,7 +584,7 @@ func DataGoogleComputeBackendBucket_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleComputeBackendBucket.DataGoogleComputeBackendBucket",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -593,7 +592,7 @@ func DataGoogleComputeBackendBucket_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGoogleComputeBackendBucket_IsTerraformDataSource(x interface{}) *bool {
+func DataGoogleComputeBackendBucket_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleComputeBackendBucket_IsTerraformDataSourceParameters(x); err != nil {
@@ -604,7 +603,7 @@ func DataGoogleComputeBackendBucket_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleComputeBackendBucket.DataGoogleComputeBackendBucket",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -612,7 +611,7 @@ func DataGoogleComputeBackendBucket_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGoogleComputeBackendBucket_IsTerraformElement(x interface{}) *bool {
+func DataGoogleComputeBackendBucket_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleComputeBackendBucket_IsTerraformElementParameters(x); err != nil {
@@ -623,7 +622,7 @@ func DataGoogleComputeBackendBucket_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleComputeBackendBucket.DataGoogleComputeBackendBucket",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -641,27 +640,27 @@ func DataGoogleComputeBackendBucket_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleComputeBackendBucket) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataGoogleComputeBackendBucket) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataGoogleComputeBackendBucket) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataGoogleComputeBackendBucket) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -677,7 +676,7 @@ func (d *jsiiProxy_DataGoogleComputeBackendBucket) GetBooleanAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -693,7 +692,7 @@ func (d *jsiiProxy_DataGoogleComputeBackendBucket) GetBooleanMapAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -709,7 +708,7 @@ func (d *jsiiProxy_DataGoogleComputeBackendBucket) GetListAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -725,7 +724,7 @@ func (d *jsiiProxy_DataGoogleComputeBackendBucket) GetNumberAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -741,7 +740,7 @@ func (d *jsiiProxy_DataGoogleComputeBackendBucket) GetNumberListAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -757,7 +756,7 @@ func (d *jsiiProxy_DataGoogleComputeBackendBucket) GetNumberMapAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -773,7 +772,7 @@ func (d *jsiiProxy_DataGoogleComputeBackendBucket) GetStringAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -789,7 +788,7 @@ func (d *jsiiProxy_DataGoogleComputeBackendBucket) GetStringMapAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -805,7 +804,7 @@ func (d *jsiiProxy_DataGoogleComputeBackendBucket) InterpolationForAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -819,7 +818,7 @@ func (d *jsiiProxy_DataGoogleComputeBackendBucket) OverrideLogicalId(newLogicalI
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -847,8 +846,8 @@ func (d *jsiiProxy_DataGoogleComputeBackendBucket) ResetProject() {
 	)
 }
 
-func (d *jsiiProxy_DataGoogleComputeBackendBucket) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleComputeBackendBucket) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -860,8 +859,8 @@ func (d *jsiiProxy_DataGoogleComputeBackendBucket) SynthesizeAttributes() *map[s
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleComputeBackendBucket) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleComputeBackendBucket) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -873,8 +872,8 @@ func (d *jsiiProxy_DataGoogleComputeBackendBucket) SynthesizeHclAttributes() *ma
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleComputeBackendBucket) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleComputeBackendBucket) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -886,8 +885,8 @@ func (d *jsiiProxy_DataGoogleComputeBackendBucket) ToHclTerraform() interface{} 
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleComputeBackendBucket) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleComputeBackendBucket) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -912,8 +911,8 @@ func (d *jsiiProxy_DataGoogleComputeBackendBucket) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleComputeBackendBucket) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleComputeBackendBucket) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -924,4 +923,3 @@ func (d *jsiiProxy_DataGoogleComputeBackendBucket) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -15,9 +15,9 @@ type DataprocMetastoreServiceScheduledBackupOutputReference interface {
 	BackupLocationInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -31,9 +31,9 @@ type DataprocMetastoreServiceScheduledBackupOutputReference interface {
 	CronSchedule() *string
 	SetCronSchedule(val *string)
 	CronScheduleInput() *string
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataprocMetastoreServiceScheduledBackup
@@ -52,7 +52,7 @@ type DataprocMetastoreServiceScheduledBackupOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -78,7 +78,7 @@ type DataprocMetastoreServiceScheduledBackupOutputReference interface {
 	ResetTimeZone()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -111,8 +111,8 @@ func (j *jsiiProxy_DataprocMetastoreServiceScheduledBackupOutputReference) Backu
 	return returns
 }
 
-func (j *jsiiProxy_DataprocMetastoreServiceScheduledBackupOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataprocMetastoreServiceScheduledBackupOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -161,8 +161,8 @@ func (j *jsiiProxy_DataprocMetastoreServiceScheduledBackupOutputReference) CronS
 	return returns
 }
 
-func (j *jsiiProxy_DataprocMetastoreServiceScheduledBackupOutputReference) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataprocMetastoreServiceScheduledBackupOutputReference) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -171,8 +171,8 @@ func (j *jsiiProxy_DataprocMetastoreServiceScheduledBackupOutputReference) Enabl
 	return returns
 }
 
-func (j *jsiiProxy_DataprocMetastoreServiceScheduledBackupOutputReference) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataprocMetastoreServiceScheduledBackupOutputReference) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -241,7 +241,6 @@ func (j *jsiiProxy_DataprocMetastoreServiceScheduledBackupOutputReference) TimeZ
 	return returns
 }
 
-
 func NewDataprocMetastoreServiceScheduledBackupOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataprocMetastoreServiceScheduledBackupOutputReference {
 	_init_.Initialize()
 
@@ -252,7 +251,7 @@ func NewDataprocMetastoreServiceScheduledBackupOutputReference(terraformResource
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataprocMetastoreService.DataprocMetastoreServiceScheduledBackupOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -264,12 +263,12 @@ func NewDataprocMetastoreServiceScheduledBackupOutputReference_Override(d Datapr
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataprocMetastoreService.DataprocMetastoreServiceScheduledBackupOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataprocMetastoreServiceScheduledBackupOutputReference)SetBackupLocation(val *string) {
+func (j *jsiiProxy_DataprocMetastoreServiceScheduledBackupOutputReference) SetBackupLocation(val *string) {
 	if err := j.validateSetBackupLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -280,7 +279,7 @@ func (j *jsiiProxy_DataprocMetastoreServiceScheduledBackupOutputReference)SetBac
 	)
 }
 
-func (j *jsiiProxy_DataprocMetastoreServiceScheduledBackupOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataprocMetastoreServiceScheduledBackupOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -291,7 +290,7 @@ func (j *jsiiProxy_DataprocMetastoreServiceScheduledBackupOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_DataprocMetastoreServiceScheduledBackupOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataprocMetastoreServiceScheduledBackupOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -302,7 +301,7 @@ func (j *jsiiProxy_DataprocMetastoreServiceScheduledBackupOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_DataprocMetastoreServiceScheduledBackupOutputReference)SetCronSchedule(val *string) {
+func (j *jsiiProxy_DataprocMetastoreServiceScheduledBackupOutputReference) SetCronSchedule(val *string) {
 	if err := j.validateSetCronScheduleParameters(val); err != nil {
 		panic(err)
 	}
@@ -313,7 +312,7 @@ func (j *jsiiProxy_DataprocMetastoreServiceScheduledBackupOutputReference)SetCro
 	)
 }
 
-func (j *jsiiProxy_DataprocMetastoreServiceScheduledBackupOutputReference)SetEnabled(val interface{}) {
+func (j *jsiiProxy_DataprocMetastoreServiceScheduledBackupOutputReference) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -324,7 +323,7 @@ func (j *jsiiProxy_DataprocMetastoreServiceScheduledBackupOutputReference)SetEna
 	)
 }
 
-func (j *jsiiProxy_DataprocMetastoreServiceScheduledBackupOutputReference)SetInternalValue(val *DataprocMetastoreServiceScheduledBackup) {
+func (j *jsiiProxy_DataprocMetastoreServiceScheduledBackupOutputReference) SetInternalValue(val *DataprocMetastoreServiceScheduledBackup) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -335,7 +334,7 @@ func (j *jsiiProxy_DataprocMetastoreServiceScheduledBackupOutputReference)SetInt
 	)
 }
 
-func (j *jsiiProxy_DataprocMetastoreServiceScheduledBackupOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataprocMetastoreServiceScheduledBackupOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -346,7 +345,7 @@ func (j *jsiiProxy_DataprocMetastoreServiceScheduledBackupOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_DataprocMetastoreServiceScheduledBackupOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataprocMetastoreServiceScheduledBackupOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -357,7 +356,7 @@ func (j *jsiiProxy_DataprocMetastoreServiceScheduledBackupOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_DataprocMetastoreServiceScheduledBackupOutputReference)SetTimeZone(val *string) {
+func (j *jsiiProxy_DataprocMetastoreServiceScheduledBackupOutputReference) SetTimeZone(val *string) {
 	if err := j.validateSetTimeZoneParameters(val); err != nil {
 		panic(err)
 	}
@@ -381,16 +380,16 @@ func (d *jsiiProxy_DataprocMetastoreServiceScheduledBackupOutputReference) Compu
 	return returns
 }
 
-func (d *jsiiProxy_DataprocMetastoreServiceScheduledBackupOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataprocMetastoreServiceScheduledBackupOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -406,7 +405,7 @@ func (d *jsiiProxy_DataprocMetastoreServiceScheduledBackupOutputReference) GetBo
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -422,7 +421,7 @@ func (d *jsiiProxy_DataprocMetastoreServiceScheduledBackupOutputReference) GetBo
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -438,7 +437,7 @@ func (d *jsiiProxy_DataprocMetastoreServiceScheduledBackupOutputReference) GetLi
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -454,7 +453,7 @@ func (d *jsiiProxy_DataprocMetastoreServiceScheduledBackupOutputReference) GetNu
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -470,7 +469,7 @@ func (d *jsiiProxy_DataprocMetastoreServiceScheduledBackupOutputReference) GetNu
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -486,7 +485,7 @@ func (d *jsiiProxy_DataprocMetastoreServiceScheduledBackupOutputReference) GetNu
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -502,7 +501,7 @@ func (d *jsiiProxy_DataprocMetastoreServiceScheduledBackupOutputReference) GetSt
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -518,7 +517,7 @@ func (d *jsiiProxy_DataprocMetastoreServiceScheduledBackupOutputReference) GetSt
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -547,7 +546,7 @@ func (d *jsiiProxy_DataprocMetastoreServiceScheduledBackupOutputReference) Inter
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -578,16 +577,16 @@ func (d *jsiiProxy_DataprocMetastoreServiceScheduledBackupOutputReference) Reset
 	)
 }
 
-func (d *jsiiProxy_DataprocMetastoreServiceScheduledBackupOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataprocMetastoreServiceScheduledBackupOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -606,4 +605,3 @@ func (d *jsiiProxy_DataprocMetastoreServiceScheduledBackupOutputReference) ToStr
 
 	return returns
 }
-

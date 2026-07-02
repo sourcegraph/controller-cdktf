@@ -98,7 +98,7 @@ func (t *jsiiProxy_TranscoderJobConfigEncryptionsMpegCencOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_TranscoderJobConfigEncryptionsMpegCencOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_TranscoderJobConfigEncryptionsMpegCencOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewTranscoderJobConfigEncryptionsMpegCencOutputReferenceParameters(
 
 	return nil
 }
-

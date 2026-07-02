@@ -90,7 +90,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsConnectionPoolConfigOutputReferenc
 	return nil
 }
 
-func (s *jsiiProxy_SqlDatabaseInstanceSettingsConnectionPoolConfigOutputReference) validatePutFlagsParameters(value interface{}) error {
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsConnectionPoolConfigOutputReference) validatePutFlagsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsConnectionPoolConfigOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsConnectionPoolConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsConnectionPoolConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -194,7 +194,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsConnectionPoolConfigOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsConnectionPoolConfigOutputReference) validateSetConnectionPoolingEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsConnectionPoolConfigOutputReference) validateSetConnectionPoolingEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -214,7 +214,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsConnectionPoolConfigOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsConnectionPoolConfigOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsConnectionPoolConfigOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -273,4 +273,3 @@ func validateNewSqlDatabaseInstanceSettingsConnectionPoolConfigOutputReferencePa
 
 	return nil
 }
-

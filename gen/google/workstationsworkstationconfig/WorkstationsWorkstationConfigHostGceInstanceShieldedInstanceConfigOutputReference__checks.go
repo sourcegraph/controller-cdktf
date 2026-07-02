@@ -98,7 +98,7 @@ func (w *jsiiProxy_WorkstationsWorkstationConfigHostGceInstanceShieldedInstanceC
 	return nil
 }
 
-func (j *jsiiProxy_WorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_WorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_WorkstationsWorkstationConfigHostGceInstanceShieldedInstanceC
 	return nil
 }
 
-func (j *jsiiProxy_WorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfigOutputReference) validateSetEnableIntegrityMonitoringParameters(val interface{}) error {
+func (j *jsiiProxy_WorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfigOutputReference) validateSetEnableIntegrityMonitoringParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (j *jsiiProxy_WorkstationsWorkstationConfigHostGceInstanceShieldedInstanceC
 	return nil
 }
 
-func (j *jsiiProxy_WorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfigOutputReference) validateSetEnableSecureBootParameters(val interface{}) error {
+func (j *jsiiProxy_WorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfigOutputReference) validateSetEnableSecureBootParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -203,7 +203,7 @@ func (j *jsiiProxy_WorkstationsWorkstationConfigHostGceInstanceShieldedInstanceC
 	return nil
 }
 
-func (j *jsiiProxy_WorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfigOutputReference) validateSetEnableVtpmParameters(val interface{}) error {
+func (j *jsiiProxy_WorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfigOutputReference) validateSetEnableVtpmParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -258,4 +258,3 @@ func validateNewWorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConf
 
 	return nil
 }
-

@@ -11,7 +11,7 @@ import (
 type IntegrationConnectorsConnectionEventingConfigAuthConfigOutputReference interface {
 	cdktf.ComplexObject
 	AdditionalVariable() IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableList
-	AdditionalVariableInput() interface{}
+	AdditionalVariableInput() any
 	AuthKey() *string
 	SetAuthKey(val *string)
 	AuthKeyInput() *string
@@ -20,9 +20,9 @@ type IntegrationConnectorsConnectionEventingConfigAuthConfigOutputReference inte
 	AuthTypeInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -50,7 +50,7 @@ type IntegrationConnectorsConnectionEventingConfigAuthConfigOutputReference inte
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,13 +71,13 @@ type IntegrationConnectorsConnectionEventingConfigAuthConfigOutputReference inte
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutAdditionalVariable(value interface{})
+	PutAdditionalVariable(value any)
 	PutUserPassword(value *IntegrationConnectorsConnectionEventingConfigAuthConfigUserPassword)
 	ResetAdditionalVariable()
 	ResetAuthKey()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -100,8 +100,8 @@ func (j *jsiiProxy_IntegrationConnectorsConnectionEventingConfigAuthConfigOutput
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationConnectorsConnectionEventingConfigAuthConfigOutputReference) AdditionalVariableInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IntegrationConnectorsConnectionEventingConfigAuthConfigOutputReference) AdditionalVariableInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"additionalVariableInput",
@@ -150,8 +150,8 @@ func (j *jsiiProxy_IntegrationConnectorsConnectionEventingConfigAuthConfigOutput
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationConnectorsConnectionEventingConfigAuthConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IntegrationConnectorsConnectionEventingConfigAuthConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -240,7 +240,6 @@ func (j *jsiiProxy_IntegrationConnectorsConnectionEventingConfigAuthConfigOutput
 	return returns
 }
 
-
 func NewIntegrationConnectorsConnectionEventingConfigAuthConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) IntegrationConnectorsConnectionEventingConfigAuthConfigOutputReference {
 	_init_.Initialize()
 
@@ -251,7 +250,7 @@ func NewIntegrationConnectorsConnectionEventingConfigAuthConfigOutputReference(t
 
 	_jsii_.Create(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -263,12 +262,12 @@ func NewIntegrationConnectorsConnectionEventingConfigAuthConfigOutputReference_O
 
 	_jsii_.Create(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		i,
 	)
 }
 
-func (j *jsiiProxy_IntegrationConnectorsConnectionEventingConfigAuthConfigOutputReference)SetAuthKey(val *string) {
+func (j *jsiiProxy_IntegrationConnectorsConnectionEventingConfigAuthConfigOutputReference) SetAuthKey(val *string) {
 	if err := j.validateSetAuthKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_IntegrationConnectorsConnectionEventingConfigAuthConfigOutput
 	)
 }
 
-func (j *jsiiProxy_IntegrationConnectorsConnectionEventingConfigAuthConfigOutputReference)SetAuthType(val *string) {
+func (j *jsiiProxy_IntegrationConnectorsConnectionEventingConfigAuthConfigOutputReference) SetAuthType(val *string) {
 	if err := j.validateSetAuthTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_IntegrationConnectorsConnectionEventingConfigAuthConfigOutput
 	)
 }
 
-func (j *jsiiProxy_IntegrationConnectorsConnectionEventingConfigAuthConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_IntegrationConnectorsConnectionEventingConfigAuthConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_IntegrationConnectorsConnectionEventingConfigAuthConfigOutput
 	)
 }
 
-func (j *jsiiProxy_IntegrationConnectorsConnectionEventingConfigAuthConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_IntegrationConnectorsConnectionEventingConfigAuthConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_IntegrationConnectorsConnectionEventingConfigAuthConfigOutput
 	)
 }
 
-func (j *jsiiProxy_IntegrationConnectorsConnectionEventingConfigAuthConfigOutputReference)SetInternalValue(val *IntegrationConnectorsConnectionEventingConfigAuthConfig) {
+func (j *jsiiProxy_IntegrationConnectorsConnectionEventingConfigAuthConfigOutputReference) SetInternalValue(val *IntegrationConnectorsConnectionEventingConfigAuthConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_IntegrationConnectorsConnectionEventingConfigAuthConfigOutput
 	)
 }
 
-func (j *jsiiProxy_IntegrationConnectorsConnectionEventingConfigAuthConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_IntegrationConnectorsConnectionEventingConfigAuthConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -334,7 +333,7 @@ func (j *jsiiProxy_IntegrationConnectorsConnectionEventingConfigAuthConfigOutput
 	)
 }
 
-func (j *jsiiProxy_IntegrationConnectorsConnectionEventingConfigAuthConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_IntegrationConnectorsConnectionEventingConfigAuthConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -358,16 +357,16 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionEventingConfigAuthConfigOutput
 	return returns
 }
 
-func (i *jsiiProxy_IntegrationConnectorsConnectionEventingConfigAuthConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_IntegrationConnectorsConnectionEventingConfigAuthConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -383,7 +382,7 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionEventingConfigAuthConfigOutput
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -399,7 +398,7 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionEventingConfigAuthConfigOutput
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -415,7 +414,7 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionEventingConfigAuthConfigOutput
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -431,7 +430,7 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionEventingConfigAuthConfigOutput
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -447,7 +446,7 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionEventingConfigAuthConfigOutput
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -463,7 +462,7 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionEventingConfigAuthConfigOutput
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -479,7 +478,7 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionEventingConfigAuthConfigOutput
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -495,7 +494,7 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionEventingConfigAuthConfigOutput
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -524,21 +523,21 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionEventingConfigAuthConfigOutput
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (i *jsiiProxy_IntegrationConnectorsConnectionEventingConfigAuthConfigOutputReference) PutAdditionalVariable(value interface{}) {
+func (i *jsiiProxy_IntegrationConnectorsConnectionEventingConfigAuthConfigOutputReference) PutAdditionalVariable(value any) {
 	if err := i.validatePutAdditionalVariableParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"putAdditionalVariable",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -549,7 +548,7 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionEventingConfigAuthConfigOutput
 	_jsii_.InvokeVoid(
 		i,
 		"putUserPassword",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -569,16 +568,16 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionEventingConfigAuthConfigOutput
 	)
 }
 
-func (i *jsiiProxy_IntegrationConnectorsConnectionEventingConfigAuthConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (i *jsiiProxy_IntegrationConnectorsConnectionEventingConfigAuthConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := i.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -597,4 +596,3 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionEventingConfigAuthConfigOutput
 
 	return returns
 }
-

@@ -1,6 +1,5 @@
 package computeurlmap
 
-
 type ComputeUrlMapPathMatcher struct {
 	// The name to which this PathMatcher is referred by the HostRule.
 	//
@@ -33,10 +32,9 @@ type ComputeUrlMapPathMatcher struct {
 	// path_rule block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_url_map#path_rule ComputeUrlMap#path_rule}
-	PathRule interface{} `field:"optional" json:"pathRule" yaml:"pathRule"`
+	PathRule any `field:"optional" json:"pathRule" yaml:"pathRule"`
 	// route_rules block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_url_map#route_rules ComputeUrlMap#route_rules}
-	RouteRules interface{} `field:"optional" json:"routeRules" yaml:"routeRules"`
+	RouteRules any `field:"optional" json:"routeRules" yaml:"routeRules"`
 }
-

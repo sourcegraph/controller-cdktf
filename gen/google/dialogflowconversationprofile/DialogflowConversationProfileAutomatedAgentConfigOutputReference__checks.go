@@ -106,7 +106,7 @@ func (j *jsiiProxy_DialogflowConversationProfileAutomatedAgentConfigOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowConversationProfileAutomatedAgentConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowConversationProfileAutomatedAgentConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewDialogflowConversationProfileAutomatedAgentConfigOutputReference
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (p *jsiiProxy_PubsubSubscriptionExpirationPolicyOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_PubsubSubscriptionExpirationPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PubsubSubscriptionExpirationPolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewPubsubSubscriptionExpirationPolicyOutputReferenceParameters(terr
 
 	return nil
 }
-

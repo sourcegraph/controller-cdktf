@@ -19,7 +19,7 @@ func (o *jsiiProxy_OracleDatabaseOdbSubnet) validateAddMoveTargetParameters(move
 	return nil
 }
 
-func (o *jsiiProxy_OracleDatabaseOdbSubnet) validateAddOverrideParameters(path *string, value interface{}) error {
+func (o *jsiiProxy_OracleDatabaseOdbSubnet) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (o *jsiiProxy_OracleDatabaseOdbSubnet) validateMoveFromIdParameters(id *str
 	return nil
 }
 
-func (o *jsiiProxy_OracleDatabaseOdbSubnet) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (o *jsiiProxy_OracleDatabaseOdbSubnet) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateOracleDatabaseOdbSubnet_GenerateConfigForImportParameters(scope con
 	return nil
 }
 
-func validateOracleDatabaseOdbSubnet_IsConstructParameters(x interface{}) error {
+func validateOracleDatabaseOdbSubnet_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateOracleDatabaseOdbSubnet_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
-func validateOracleDatabaseOdbSubnet_IsTerraformElementParameters(x interface{}) error {
+func validateOracleDatabaseOdbSubnet_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateOracleDatabaseOdbSubnet_IsTerraformElementParameters(x interface{})
 	return nil
 }
 
-func validateOracleDatabaseOdbSubnet_IsTerraformResourceParameters(x interface{}) error {
+func validateOracleDatabaseOdbSubnet_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_OracleDatabaseOdbSubnet) validateSetCidrRangeParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_OracleDatabaseOdbSubnet) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_OracleDatabaseOdbSubnet) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_OracleDatabaseOdbSubnet) validateSetConnectionParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_OracleDatabaseOdbSubnet) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_OracleDatabaseOdbSubnet) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -353,7 +353,7 @@ func (j *jsiiProxy_OracleDatabaseOdbSubnet) validateSetCountParameters(val inter
 	return nil
 }
 
-func (j *jsiiProxy_OracleDatabaseOdbSubnet) validateSetDeletionProtectionParameters(val interface{}) error {
+func (j *jsiiProxy_OracleDatabaseOdbSubnet) validateSetDeletionProtectionParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -429,7 +429,7 @@ func (j *jsiiProxy_OracleDatabaseOdbSubnet) validateSetProjectParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_OracleDatabaseOdbSubnet) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_OracleDatabaseOdbSubnet) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -501,4 +501,3 @@ func validateNewOracleDatabaseOdbSubnetParameters(scope constructs.Construct, id
 
 	return nil
 }
-

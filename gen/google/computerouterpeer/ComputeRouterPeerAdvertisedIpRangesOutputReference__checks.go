@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeRouterPeerAdvertisedIpRangesOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRouterPeerAdvertisedIpRangesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRouterPeerAdvertisedIpRangesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_ComputeRouterPeerAdvertisedIpRangesOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRouterPeerAdvertisedIpRangesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRouterPeerAdvertisedIpRangesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewComputeRouterPeerAdvertisedIpRangesOutputReferenceParameters(ter
 
 	return nil
 }
-

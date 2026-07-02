@@ -18,9 +18,9 @@ type Cloudfunctions2FunctionBuildConfigSourceRepoSourceOutputReference interface
 	CommitShaInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -38,9 +38,9 @@ type Cloudfunctions2FunctionBuildConfigSourceRepoSourceOutputReference interface
 	Fqn() *string
 	InternalValue() *Cloudfunctions2FunctionBuildConfigSourceRepoSource
 	SetInternalValue(val *Cloudfunctions2FunctionBuildConfigSourceRepoSource)
-	InvertRegex() interface{}
-	SetInvertRegex(val interface{})
-	InvertRegexInput() interface{}
+	InvertRegex() any
+	SetInvertRegex(val any)
+	InvertRegexInput() any
 	ProjectId() *string
 	SetProjectId(val *string)
 	ProjectIdInput() *string
@@ -61,7 +61,7 @@ type Cloudfunctions2FunctionBuildConfigSourceRepoSourceOutputReference interface
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -91,7 +91,7 @@ type Cloudfunctions2FunctionBuildConfigSourceRepoSourceOutputReference interface
 	ResetTagName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -144,8 +144,8 @@ func (j *jsiiProxy_Cloudfunctions2FunctionBuildConfigSourceRepoSourceOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_Cloudfunctions2FunctionBuildConfigSourceRepoSourceOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Cloudfunctions2FunctionBuildConfigSourceRepoSourceOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -214,8 +214,8 @@ func (j *jsiiProxy_Cloudfunctions2FunctionBuildConfigSourceRepoSourceOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_Cloudfunctions2FunctionBuildConfigSourceRepoSourceOutputReference) InvertRegex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Cloudfunctions2FunctionBuildConfigSourceRepoSourceOutputReference) InvertRegex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"invertRegex",
@@ -224,8 +224,8 @@ func (j *jsiiProxy_Cloudfunctions2FunctionBuildConfigSourceRepoSourceOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_Cloudfunctions2FunctionBuildConfigSourceRepoSourceOutputReference) InvertRegexInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Cloudfunctions2FunctionBuildConfigSourceRepoSourceOutputReference) InvertRegexInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"invertRegexInput",
@@ -314,7 +314,6 @@ func (j *jsiiProxy_Cloudfunctions2FunctionBuildConfigSourceRepoSourceOutputRefer
 	return returns
 }
 
-
 func NewCloudfunctions2FunctionBuildConfigSourceRepoSourceOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) Cloudfunctions2FunctionBuildConfigSourceRepoSourceOutputReference {
 	_init_.Initialize()
 
@@ -325,7 +324,7 @@ func NewCloudfunctions2FunctionBuildConfigSourceRepoSourceOutputReference(terraf
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionBuildConfigSourceRepoSourceOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -337,12 +336,12 @@ func NewCloudfunctions2FunctionBuildConfigSourceRepoSourceOutputReference_Overri
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionBuildConfigSourceRepoSourceOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_Cloudfunctions2FunctionBuildConfigSourceRepoSourceOutputReference)SetBranchName(val *string) {
+func (j *jsiiProxy_Cloudfunctions2FunctionBuildConfigSourceRepoSourceOutputReference) SetBranchName(val *string) {
 	if err := j.validateSetBranchNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -353,7 +352,7 @@ func (j *jsiiProxy_Cloudfunctions2FunctionBuildConfigSourceRepoSourceOutputRefer
 	)
 }
 
-func (j *jsiiProxy_Cloudfunctions2FunctionBuildConfigSourceRepoSourceOutputReference)SetCommitSha(val *string) {
+func (j *jsiiProxy_Cloudfunctions2FunctionBuildConfigSourceRepoSourceOutputReference) SetCommitSha(val *string) {
 	if err := j.validateSetCommitShaParameters(val); err != nil {
 		panic(err)
 	}
@@ -364,7 +363,7 @@ func (j *jsiiProxy_Cloudfunctions2FunctionBuildConfigSourceRepoSourceOutputRefer
 	)
 }
 
-func (j *jsiiProxy_Cloudfunctions2FunctionBuildConfigSourceRepoSourceOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_Cloudfunctions2FunctionBuildConfigSourceRepoSourceOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -375,7 +374,7 @@ func (j *jsiiProxy_Cloudfunctions2FunctionBuildConfigSourceRepoSourceOutputRefer
 	)
 }
 
-func (j *jsiiProxy_Cloudfunctions2FunctionBuildConfigSourceRepoSourceOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_Cloudfunctions2FunctionBuildConfigSourceRepoSourceOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -386,7 +385,7 @@ func (j *jsiiProxy_Cloudfunctions2FunctionBuildConfigSourceRepoSourceOutputRefer
 	)
 }
 
-func (j *jsiiProxy_Cloudfunctions2FunctionBuildConfigSourceRepoSourceOutputReference)SetDir(val *string) {
+func (j *jsiiProxy_Cloudfunctions2FunctionBuildConfigSourceRepoSourceOutputReference) SetDir(val *string) {
 	if err := j.validateSetDirParameters(val); err != nil {
 		panic(err)
 	}
@@ -397,7 +396,7 @@ func (j *jsiiProxy_Cloudfunctions2FunctionBuildConfigSourceRepoSourceOutputRefer
 	)
 }
 
-func (j *jsiiProxy_Cloudfunctions2FunctionBuildConfigSourceRepoSourceOutputReference)SetInternalValue(val *Cloudfunctions2FunctionBuildConfigSourceRepoSource) {
+func (j *jsiiProxy_Cloudfunctions2FunctionBuildConfigSourceRepoSourceOutputReference) SetInternalValue(val *Cloudfunctions2FunctionBuildConfigSourceRepoSource) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -408,7 +407,7 @@ func (j *jsiiProxy_Cloudfunctions2FunctionBuildConfigSourceRepoSourceOutputRefer
 	)
 }
 
-func (j *jsiiProxy_Cloudfunctions2FunctionBuildConfigSourceRepoSourceOutputReference)SetInvertRegex(val interface{}) {
+func (j *jsiiProxy_Cloudfunctions2FunctionBuildConfigSourceRepoSourceOutputReference) SetInvertRegex(val any) {
 	if err := j.validateSetInvertRegexParameters(val); err != nil {
 		panic(err)
 	}
@@ -419,7 +418,7 @@ func (j *jsiiProxy_Cloudfunctions2FunctionBuildConfigSourceRepoSourceOutputRefer
 	)
 }
 
-func (j *jsiiProxy_Cloudfunctions2FunctionBuildConfigSourceRepoSourceOutputReference)SetProjectId(val *string) {
+func (j *jsiiProxy_Cloudfunctions2FunctionBuildConfigSourceRepoSourceOutputReference) SetProjectId(val *string) {
 	if err := j.validateSetProjectIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -430,7 +429,7 @@ func (j *jsiiProxy_Cloudfunctions2FunctionBuildConfigSourceRepoSourceOutputRefer
 	)
 }
 
-func (j *jsiiProxy_Cloudfunctions2FunctionBuildConfigSourceRepoSourceOutputReference)SetRepoName(val *string) {
+func (j *jsiiProxy_Cloudfunctions2FunctionBuildConfigSourceRepoSourceOutputReference) SetRepoName(val *string) {
 	if err := j.validateSetRepoNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -441,7 +440,7 @@ func (j *jsiiProxy_Cloudfunctions2FunctionBuildConfigSourceRepoSourceOutputRefer
 	)
 }
 
-func (j *jsiiProxy_Cloudfunctions2FunctionBuildConfigSourceRepoSourceOutputReference)SetTagName(val *string) {
+func (j *jsiiProxy_Cloudfunctions2FunctionBuildConfigSourceRepoSourceOutputReference) SetTagName(val *string) {
 	if err := j.validateSetTagNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,7 +451,7 @@ func (j *jsiiProxy_Cloudfunctions2FunctionBuildConfigSourceRepoSourceOutputRefer
 	)
 }
 
-func (j *jsiiProxy_Cloudfunctions2FunctionBuildConfigSourceRepoSourceOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_Cloudfunctions2FunctionBuildConfigSourceRepoSourceOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -463,7 +462,7 @@ func (j *jsiiProxy_Cloudfunctions2FunctionBuildConfigSourceRepoSourceOutputRefer
 	)
 }
 
-func (j *jsiiProxy_Cloudfunctions2FunctionBuildConfigSourceRepoSourceOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_Cloudfunctions2FunctionBuildConfigSourceRepoSourceOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -487,16 +486,16 @@ func (c *jsiiProxy_Cloudfunctions2FunctionBuildConfigSourceRepoSourceOutputRefer
 	return returns
 }
 
-func (c *jsiiProxy_Cloudfunctions2FunctionBuildConfigSourceRepoSourceOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_Cloudfunctions2FunctionBuildConfigSourceRepoSourceOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -512,7 +511,7 @@ func (c *jsiiProxy_Cloudfunctions2FunctionBuildConfigSourceRepoSourceOutputRefer
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -528,7 +527,7 @@ func (c *jsiiProxy_Cloudfunctions2FunctionBuildConfigSourceRepoSourceOutputRefer
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -544,7 +543,7 @@ func (c *jsiiProxy_Cloudfunctions2FunctionBuildConfigSourceRepoSourceOutputRefer
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -560,7 +559,7 @@ func (c *jsiiProxy_Cloudfunctions2FunctionBuildConfigSourceRepoSourceOutputRefer
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -576,7 +575,7 @@ func (c *jsiiProxy_Cloudfunctions2FunctionBuildConfigSourceRepoSourceOutputRefer
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -592,7 +591,7 @@ func (c *jsiiProxy_Cloudfunctions2FunctionBuildConfigSourceRepoSourceOutputRefer
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -608,7 +607,7 @@ func (c *jsiiProxy_Cloudfunctions2FunctionBuildConfigSourceRepoSourceOutputRefer
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -624,7 +623,7 @@ func (c *jsiiProxy_Cloudfunctions2FunctionBuildConfigSourceRepoSourceOutputRefer
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -653,7 +652,7 @@ func (c *jsiiProxy_Cloudfunctions2FunctionBuildConfigSourceRepoSourceOutputRefer
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -716,16 +715,16 @@ func (c *jsiiProxy_Cloudfunctions2FunctionBuildConfigSourceRepoSourceOutputRefer
 	)
 }
 
-func (c *jsiiProxy_Cloudfunctions2FunctionBuildConfigSourceRepoSourceOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_Cloudfunctions2FunctionBuildConfigSourceRepoSourceOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -744,4 +743,3 @@ func (c *jsiiProxy_Cloudfunctions2FunctionBuildConfigSourceRepoSourceOutputRefer
 
 	return returns
 }
-

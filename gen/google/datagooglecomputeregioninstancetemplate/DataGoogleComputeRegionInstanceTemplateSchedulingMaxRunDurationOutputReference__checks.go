@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleComputeRegionInstanceTemplateSchedulingMaxRunDurati
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplateSchedulingMaxRunDurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplateSchedulingMaxRunDurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleComputeRegionInstanceTemplateSchedulingMaxRunDurationO
 
 	return nil
 }
-

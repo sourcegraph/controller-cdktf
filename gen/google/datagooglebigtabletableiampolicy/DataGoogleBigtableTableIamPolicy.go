@@ -15,11 +15,11 @@ type DataGoogleBigtableTableIamPolicy interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -54,20 +54,20 @@ type DataGoogleBigtableTableIamPolicy interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Table() *string
 	SetTable(val *string)
 	TableInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -94,18 +94,18 @@ type DataGoogleBigtableTableIamPolicy interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataGoogleBigtableTableIamPolicy
@@ -123,8 +123,8 @@ func (j *jsiiProxy_DataGoogleBigtableTableIamPolicy) CdktfStack() cdktf.Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleBigtableTableIamPolicy) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleBigtableTableIamPolicy) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -133,8 +133,8 @@ func (j *jsiiProxy_DataGoogleBigtableTableIamPolicy) ConstructNodeMetadata() *ma
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleBigtableTableIamPolicy) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleBigtableTableIamPolicy) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -293,8 +293,8 @@ func (j *jsiiProxy_DataGoogleBigtableTableIamPolicy) Provider() cdktf.TerraformP
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleBigtableTableIamPolicy) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleBigtableTableIamPolicy) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -333,8 +333,8 @@ func (j *jsiiProxy_DataGoogleBigtableTableIamPolicy) TerraformGeneratorMetadata(
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleBigtableTableIamPolicy) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleBigtableTableIamPolicy) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -353,7 +353,6 @@ func (j *jsiiProxy_DataGoogleBigtableTableIamPolicy) TerraformResourceType() *st
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/bigtable_table_iam_policy google_bigtable_table_iam_policy} Data Source.
 func NewDataGoogleBigtableTableIamPolicy(scope constructs.Construct, id *string, config *DataGoogleBigtableTableIamPolicyConfig) DataGoogleBigtableTableIamPolicy {
 	_init_.Initialize()
@@ -365,7 +364,7 @@ func NewDataGoogleBigtableTableIamPolicy(scope constructs.Construct, id *string,
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleBigtableTableIamPolicy.DataGoogleBigtableTableIamPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -378,12 +377,12 @@ func NewDataGoogleBigtableTableIamPolicy_Override(d DataGoogleBigtableTableIamPo
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleBigtableTableIamPolicy.DataGoogleBigtableTableIamPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataGoogleBigtableTableIamPolicy)SetCount(val interface{}) {
+func (j *jsiiProxy_DataGoogleBigtableTableIamPolicy) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -394,7 +393,7 @@ func (j *jsiiProxy_DataGoogleBigtableTableIamPolicy)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleBigtableTableIamPolicy)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataGoogleBigtableTableIamPolicy) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -402,7 +401,7 @@ func (j *jsiiProxy_DataGoogleBigtableTableIamPolicy)SetDependsOn(val *[]*string)
 	)
 }
 
-func (j *jsiiProxy_DataGoogleBigtableTableIamPolicy)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGoogleBigtableTableIamPolicy) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -410,7 +409,7 @@ func (j *jsiiProxy_DataGoogleBigtableTableIamPolicy)SetForEach(val cdktf.ITerraf
 	)
 }
 
-func (j *jsiiProxy_DataGoogleBigtableTableIamPolicy)SetId(val *string) {
+func (j *jsiiProxy_DataGoogleBigtableTableIamPolicy) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -421,7 +420,7 @@ func (j *jsiiProxy_DataGoogleBigtableTableIamPolicy)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleBigtableTableIamPolicy)SetInstanceName(val *string) {
+func (j *jsiiProxy_DataGoogleBigtableTableIamPolicy) SetInstanceName(val *string) {
 	if err := j.validateSetInstanceNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -432,7 +431,7 @@ func (j *jsiiProxy_DataGoogleBigtableTableIamPolicy)SetInstanceName(val *string)
 	)
 }
 
-func (j *jsiiProxy_DataGoogleBigtableTableIamPolicy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGoogleBigtableTableIamPolicy) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -443,7 +442,7 @@ func (j *jsiiProxy_DataGoogleBigtableTableIamPolicy)SetLifecycle(val *cdktf.Terr
 	)
 }
 
-func (j *jsiiProxy_DataGoogleBigtableTableIamPolicy)SetProject(val *string) {
+func (j *jsiiProxy_DataGoogleBigtableTableIamPolicy) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -454,7 +453,7 @@ func (j *jsiiProxy_DataGoogleBigtableTableIamPolicy)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleBigtableTableIamPolicy)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGoogleBigtableTableIamPolicy) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -462,7 +461,7 @@ func (j *jsiiProxy_DataGoogleBigtableTableIamPolicy)SetProvider(val cdktf.Terraf
 	)
 }
 
-func (j *jsiiProxy_DataGoogleBigtableTableIamPolicy)SetTable(val *string) {
+func (j *jsiiProxy_DataGoogleBigtableTableIamPolicy) SetTable(val *string) {
 	if err := j.validateSetTableParameters(val); err != nil {
 		panic(err)
 	}
@@ -485,7 +484,7 @@ func DataGoogleBigtableTableIamPolicy_GenerateConfigForImport(scope constructs.C
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleBigtableTableIamPolicy.DataGoogleBigtableTableIamPolicy",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -509,7 +508,7 @@ func DataGoogleBigtableTableIamPolicy_GenerateConfigForImport(scope constructs.C
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataGoogleBigtableTableIamPolicy_IsConstruct(x interface{}) *bool {
+func DataGoogleBigtableTableIamPolicy_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleBigtableTableIamPolicy_IsConstructParameters(x); err != nil {
@@ -520,7 +519,7 @@ func DataGoogleBigtableTableIamPolicy_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleBigtableTableIamPolicy.DataGoogleBigtableTableIamPolicy",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -528,7 +527,7 @@ func DataGoogleBigtableTableIamPolicy_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGoogleBigtableTableIamPolicy_IsTerraformDataSource(x interface{}) *bool {
+func DataGoogleBigtableTableIamPolicy_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleBigtableTableIamPolicy_IsTerraformDataSourceParameters(x); err != nil {
@@ -539,7 +538,7 @@ func DataGoogleBigtableTableIamPolicy_IsTerraformDataSource(x interface{}) *bool
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleBigtableTableIamPolicy.DataGoogleBigtableTableIamPolicy",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -547,7 +546,7 @@ func DataGoogleBigtableTableIamPolicy_IsTerraformDataSource(x interface{}) *bool
 }
 
 // Experimental.
-func DataGoogleBigtableTableIamPolicy_IsTerraformElement(x interface{}) *bool {
+func DataGoogleBigtableTableIamPolicy_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleBigtableTableIamPolicy_IsTerraformElementParameters(x); err != nil {
@@ -558,7 +557,7 @@ func DataGoogleBigtableTableIamPolicy_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleBigtableTableIamPolicy.DataGoogleBigtableTableIamPolicy",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -576,27 +575,27 @@ func DataGoogleBigtableTableIamPolicy_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleBigtableTableIamPolicy) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataGoogleBigtableTableIamPolicy) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataGoogleBigtableTableIamPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataGoogleBigtableTableIamPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -612,7 +611,7 @@ func (d *jsiiProxy_DataGoogleBigtableTableIamPolicy) GetBooleanAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -628,7 +627,7 @@ func (d *jsiiProxy_DataGoogleBigtableTableIamPolicy) GetBooleanMapAttribute(terr
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -644,7 +643,7 @@ func (d *jsiiProxy_DataGoogleBigtableTableIamPolicy) GetListAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -660,7 +659,7 @@ func (d *jsiiProxy_DataGoogleBigtableTableIamPolicy) GetNumberAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -676,7 +675,7 @@ func (d *jsiiProxy_DataGoogleBigtableTableIamPolicy) GetNumberListAttribute(terr
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -692,7 +691,7 @@ func (d *jsiiProxy_DataGoogleBigtableTableIamPolicy) GetNumberMapAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -708,7 +707,7 @@ func (d *jsiiProxy_DataGoogleBigtableTableIamPolicy) GetStringAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -724,7 +723,7 @@ func (d *jsiiProxy_DataGoogleBigtableTableIamPolicy) GetStringMapAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -740,7 +739,7 @@ func (d *jsiiProxy_DataGoogleBigtableTableIamPolicy) InterpolationForAttribute(t
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -754,7 +753,7 @@ func (d *jsiiProxy_DataGoogleBigtableTableIamPolicy) OverrideLogicalId(newLogica
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -782,8 +781,8 @@ func (d *jsiiProxy_DataGoogleBigtableTableIamPolicy) ResetProject() {
 	)
 }
 
-func (d *jsiiProxy_DataGoogleBigtableTableIamPolicy) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleBigtableTableIamPolicy) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -795,8 +794,8 @@ func (d *jsiiProxy_DataGoogleBigtableTableIamPolicy) SynthesizeAttributes() *map
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleBigtableTableIamPolicy) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleBigtableTableIamPolicy) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -808,8 +807,8 @@ func (d *jsiiProxy_DataGoogleBigtableTableIamPolicy) SynthesizeHclAttributes() *
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleBigtableTableIamPolicy) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleBigtableTableIamPolicy) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -821,8 +820,8 @@ func (d *jsiiProxy_DataGoogleBigtableTableIamPolicy) ToHclTerraform() interface{
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleBigtableTableIamPolicy) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleBigtableTableIamPolicy) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -847,8 +846,8 @@ func (d *jsiiProxy_DataGoogleBigtableTableIamPolicy) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleBigtableTableIamPolicy) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleBigtableTableIamPolicy) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -859,4 +858,3 @@ func (d *jsiiProxy_DataGoogleBigtableTableIamPolicy) ToTerraform() interface{} {
 
 	return returns
 }
-

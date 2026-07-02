@@ -34,7 +34,7 @@ func (d *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentConditional
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentConditionalCasesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentConditionalCasesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDialogflowCxPageTransitionRoutesTriggerFulfillmentConditionalCas
 
 	return nil
 }
-

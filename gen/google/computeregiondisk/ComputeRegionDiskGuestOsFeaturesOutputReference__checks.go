@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeRegionDiskGuestOsFeaturesOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionDiskGuestOsFeaturesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionDiskGuestOsFeaturesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ComputeRegionDiskGuestOsFeaturesOutputReference) validateSetC
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionDiskGuestOsFeaturesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionDiskGuestOsFeaturesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewComputeRegionDiskGuestOsFeaturesOutputReferenceParameters(terraf
 
 	return nil
 }
-

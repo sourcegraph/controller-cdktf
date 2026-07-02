@@ -90,7 +90,7 @@ func (a *jsiiProxy_AccessContextManagerServicePerimeterDryRunEgressPolicyEgressF
 	return nil
 }
 
-func (a *jsiiProxy_AccessContextManagerServicePerimeterDryRunEgressPolicyEgressFromOutputReference) validatePutSourcesParameters(value interface{}) error {
+func (a *jsiiProxy_AccessContextManagerServicePerimeterDryRunEgressPolicyEgressFromOutputReference) validatePutSourcesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (a *jsiiProxy_AccessContextManagerServicePerimeterDryRunEgressPolicyEgressF
 	return nil
 }
 
-func (j *jsiiProxy_AccessContextManagerServicePerimeterDryRunEgressPolicyEgressFromOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AccessContextManagerServicePerimeterDryRunEgressPolicyEgressFromOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -253,4 +253,3 @@ func validateNewAccessContextManagerServicePerimeterDryRunEgressPolicyEgressFrom
 
 	return nil
 }
-

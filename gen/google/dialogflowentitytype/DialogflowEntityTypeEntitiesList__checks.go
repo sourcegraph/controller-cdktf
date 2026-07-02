@@ -34,7 +34,7 @@ func (d *jsiiProxy_DialogflowEntityTypeEntitiesList) validateResolveParameters(_
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowEntityTypeEntitiesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowEntityTypeEntitiesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDialogflowEntityTypeEntitiesListParameters(terraformResource cdk
 
 	return nil
 }
-

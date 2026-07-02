@@ -6,9 +6,9 @@ import (
 
 type LoggingOrganizationSettingsConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type LoggingOrganizationSettingsConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The organization for which to retrieve or configure settings.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_organization_settings#organization LoggingOrganizationSettings#organization}
@@ -28,7 +28,7 @@ type LoggingOrganizationSettingsConfig struct {
 	// This can be used to automatically disable log storage if there is already an aggregated sink configured in the hierarchy. The _Default sink can be re-enabled manually if needed.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_organization_settings#disable_default_sink LoggingOrganizationSettings#disable_default_sink}
-	DisableDefaultSink interface{} `field:"optional" json:"disableDefaultSink" yaml:"disableDefaultSink"`
+	DisableDefaultSink any `field:"optional" json:"disableDefaultSink" yaml:"disableDefaultSink"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_organization_settings#id LoggingOrganizationSettings#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -47,4 +47,3 @@ type LoggingOrganizationSettingsConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_organization_settings#timeouts LoggingOrganizationSettings#timeouts}
 	Timeouts *LoggingOrganizationSettingsTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

@@ -17,8 +17,8 @@ type FirebaseAppHostingTrafficTargetSplitsList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type FirebaseAppHostingTrafficTargetSplitsList interface {
 	Get(index *float64) FirebaseAppHostingTrafficTargetSplitsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_FirebaseAppHostingTrafficTargetSplitsList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_FirebaseAppHostingTrafficTargetSplitsList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FirebaseAppHostingTrafficTargetSplitsList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_FirebaseAppHostingTrafficTargetSplitsList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewFirebaseAppHostingTrafficTargetSplitsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FirebaseAppHostingTrafficTargetSplitsList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewFirebaseAppHostingTrafficTargetSplitsList(terraformResource cdktf.IInter
 
 	_jsii_.Create(
 		"@cdktf/provider-google.firebaseAppHostingTraffic.FirebaseAppHostingTrafficTargetSplitsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewFirebaseAppHostingTrafficTargetSplitsList_Override(f FirebaseAppHostingT
 
 	_jsii_.Create(
 		"@cdktf/provider-google.firebaseAppHostingTraffic.FirebaseAppHostingTrafficTargetSplitsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		f,
 	)
 }
 
-func (j *jsiiProxy_FirebaseAppHostingTrafficTargetSplitsList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_FirebaseAppHostingTrafficTargetSplitsList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_FirebaseAppHostingTrafficTargetSplitsList)SetInternalValue(va
 	)
 }
 
-func (j *jsiiProxy_FirebaseAppHostingTrafficTargetSplitsList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_FirebaseAppHostingTrafficTargetSplitsList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_FirebaseAppHostingTrafficTargetSplitsList)SetTerraformAttribu
 	)
 }
 
-func (j *jsiiProxy_FirebaseAppHostingTrafficTargetSplitsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_FirebaseAppHostingTrafficTargetSplitsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_FirebaseAppHostingTrafficTargetSplitsList)SetTerraformResourc
 	)
 }
 
-func (j *jsiiProxy_FirebaseAppHostingTrafficTargetSplitsList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_FirebaseAppHostingTrafficTargetSplitsList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (f *jsiiProxy_FirebaseAppHostingTrafficTargetSplitsList) AllWithMapKey(mapK
 	_jsii_.Invoke(
 		f,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (f *jsiiProxy_FirebaseAppHostingTrafficTargetSplitsList) Get(index *float64
 	_jsii_.Invoke(
 		f,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (f *jsiiProxy_FirebaseAppHostingTrafficTargetSplitsList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (f *jsiiProxy_FirebaseAppHostingTrafficTargetSplitsList) Resolve(_context cdktf.IResolveContext) any {
 	if err := f.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		f,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (f *jsiiProxy_FirebaseAppHostingTrafficTargetSplitsList) ToString() *string
 
 	return returns
 }
-

@@ -98,7 +98,7 @@ func (c *jsiiProxy_CloudRunV2WorkerPoolInstanceSplitStatusesOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_CloudRunV2WorkerPoolInstanceSplitStatusesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudRunV2WorkerPoolInstanceSplitStatusesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewCloudRunV2WorkerPoolInstanceSplitStatusesOutputReferenceParamete
 
 	return nil
 }
-

@@ -120,7 +120,7 @@ func (d *jsiiProxy_DataprocWorkflowTemplateParametersValidationOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_DataprocWorkflowTemplateParametersValidationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocWorkflowTemplateParametersValidationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -220,4 +220,3 @@ func validateNewDataprocWorkflowTemplateParametersValidationOutputReferenceParam
 
 	return nil
 }
-

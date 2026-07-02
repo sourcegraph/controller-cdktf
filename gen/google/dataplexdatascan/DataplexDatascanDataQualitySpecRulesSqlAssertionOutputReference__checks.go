@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataplexDatascanDataQualitySpecRulesSqlAssertionOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_DataplexDatascanDataQualitySpecRulesSqlAssertionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataplexDatascanDataQualitySpecRulesSqlAssertionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataplexDatascanDataQualitySpecRulesSqlAssertionOutputReferenceP
 
 	return nil
 }
-

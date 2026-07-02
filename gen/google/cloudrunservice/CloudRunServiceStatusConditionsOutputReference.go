@@ -12,9 +12,9 @@ type CloudRunServiceStatusConditionsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -44,7 +44,7 @@ type CloudRunServiceStatusConditionsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -67,7 +67,7 @@ type CloudRunServiceStatusConditionsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,8 +80,8 @@ type jsiiProxy_CloudRunServiceStatusConditionsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_CloudRunServiceStatusConditionsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudRunServiceStatusConditionsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -190,7 +190,6 @@ func (j *jsiiProxy_CloudRunServiceStatusConditionsOutputReference) Type() *strin
 	return returns
 }
 
-
 func NewCloudRunServiceStatusConditionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) CloudRunServiceStatusConditionsOutputReference {
 	_init_.Initialize()
 
@@ -201,7 +200,7 @@ func NewCloudRunServiceStatusConditionsOutputReference(terraformResource cdktf.I
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cloudRunService.CloudRunServiceStatusConditionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -213,12 +212,12 @@ func NewCloudRunServiceStatusConditionsOutputReference_Override(c CloudRunServic
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cloudRunService.CloudRunServiceStatusConditionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CloudRunServiceStatusConditionsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CloudRunServiceStatusConditionsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -229,7 +228,7 @@ func (j *jsiiProxy_CloudRunServiceStatusConditionsOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_CloudRunServiceStatusConditionsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CloudRunServiceStatusConditionsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -240,7 +239,7 @@ func (j *jsiiProxy_CloudRunServiceStatusConditionsOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_CloudRunServiceStatusConditionsOutputReference)SetInternalValue(val *CloudRunServiceStatusConditions) {
+func (j *jsiiProxy_CloudRunServiceStatusConditionsOutputReference) SetInternalValue(val *CloudRunServiceStatusConditions) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -251,7 +250,7 @@ func (j *jsiiProxy_CloudRunServiceStatusConditionsOutputReference)SetInternalVal
 	)
 }
 
-func (j *jsiiProxy_CloudRunServiceStatusConditionsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CloudRunServiceStatusConditionsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -262,7 +261,7 @@ func (j *jsiiProxy_CloudRunServiceStatusConditionsOutputReference)SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_CloudRunServiceStatusConditionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CloudRunServiceStatusConditionsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -286,16 +285,16 @@ func (c *jsiiProxy_CloudRunServiceStatusConditionsOutputReference) ComputeFqn() 
 	return returns
 }
 
-func (c *jsiiProxy_CloudRunServiceStatusConditionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CloudRunServiceStatusConditionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -311,7 +310,7 @@ func (c *jsiiProxy_CloudRunServiceStatusConditionsOutputReference) GetBooleanAtt
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -327,7 +326,7 @@ func (c *jsiiProxy_CloudRunServiceStatusConditionsOutputReference) GetBooleanMap
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -343,7 +342,7 @@ func (c *jsiiProxy_CloudRunServiceStatusConditionsOutputReference) GetListAttrib
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -359,7 +358,7 @@ func (c *jsiiProxy_CloudRunServiceStatusConditionsOutputReference) GetNumberAttr
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -375,7 +374,7 @@ func (c *jsiiProxy_CloudRunServiceStatusConditionsOutputReference) GetNumberList
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -391,7 +390,7 @@ func (c *jsiiProxy_CloudRunServiceStatusConditionsOutputReference) GetNumberMapA
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -407,7 +406,7 @@ func (c *jsiiProxy_CloudRunServiceStatusConditionsOutputReference) GetStringAttr
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -423,7 +422,7 @@ func (c *jsiiProxy_CloudRunServiceStatusConditionsOutputReference) GetStringMapA
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,23 +451,23 @@ func (c *jsiiProxy_CloudRunServiceStatusConditionsOutputReference) Interpolation
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_CloudRunServiceStatusConditionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_CloudRunServiceStatusConditionsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -487,4 +486,3 @@ func (c *jsiiProxy_CloudRunServiceStatusConditionsOutputReference) ToString() *s
 
 	return returns
 }
-

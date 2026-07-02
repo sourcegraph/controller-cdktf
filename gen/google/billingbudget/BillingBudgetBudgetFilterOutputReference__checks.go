@@ -117,7 +117,7 @@ func (j *jsiiProxy_BillingBudgetBudgetFilterOutputReference) validateSetCalendar
 	return nil
 }
 
-func (j *jsiiProxy_BillingBudgetBudgetFilterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BillingBudgetBudgetFilterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -273,4 +273,3 @@ func validateNewBillingBudgetBudgetFilterOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

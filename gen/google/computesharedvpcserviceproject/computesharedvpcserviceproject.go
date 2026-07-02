@@ -15,15 +15,15 @@ type ComputeSharedVpcServiceProject interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DeletionPolicy() *string
 	SetDeletionPolicy(val *string)
 	DeletionPolicyInput() *string
@@ -56,29 +56,29 @@ type ComputeSharedVpcServiceProject interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ServiceProject() *string
 	SetServiceProject(val *string)
 	ServiceProjectInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() ComputeSharedVpcServiceProjectTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -96,7 +96,7 @@ type ComputeSharedVpcServiceProject interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -108,7 +108,7 @@ type ComputeSharedVpcServiceProject interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -122,17 +122,17 @@ type ComputeSharedVpcServiceProject interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ComputeSharedVpcServiceProject
@@ -150,8 +150,8 @@ func (j *jsiiProxy_ComputeSharedVpcServiceProject) CdktfStack() cdktf.TerraformS
 	return returns
 }
 
-func (j *jsiiProxy_ComputeSharedVpcServiceProject) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeSharedVpcServiceProject) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -160,8 +160,8 @@ func (j *jsiiProxy_ComputeSharedVpcServiceProject) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeSharedVpcServiceProject) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ComputeSharedVpcServiceProject) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -170,8 +170,8 @@ func (j *jsiiProxy_ComputeSharedVpcServiceProject) ConstructNodeMetadata() *map[
 	return returns
 }
 
-func (j *jsiiProxy_ComputeSharedVpcServiceProject) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeSharedVpcServiceProject) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -310,8 +310,8 @@ func (j *jsiiProxy_ComputeSharedVpcServiceProject) Provider() cdktf.TerraformPro
 	return returns
 }
 
-func (j *jsiiProxy_ComputeSharedVpcServiceProject) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ComputeSharedVpcServiceProject) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -320,8 +320,8 @@ func (j *jsiiProxy_ComputeSharedVpcServiceProject) Provisioners() *[]interface{}
 	return returns
 }
 
-func (j *jsiiProxy_ComputeSharedVpcServiceProject) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeSharedVpcServiceProject) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -360,8 +360,8 @@ func (j *jsiiProxy_ComputeSharedVpcServiceProject) TerraformGeneratorMetadata() 
 	return returns
 }
 
-func (j *jsiiProxy_ComputeSharedVpcServiceProject) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ComputeSharedVpcServiceProject) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -390,8 +390,8 @@ func (j *jsiiProxy_ComputeSharedVpcServiceProject) Timeouts() ComputeSharedVpcSe
 	return returns
 }
 
-func (j *jsiiProxy_ComputeSharedVpcServiceProject) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeSharedVpcServiceProject) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -399,7 +399,6 @@ func (j *jsiiProxy_ComputeSharedVpcServiceProject) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_shared_vpc_service_project google_compute_shared_vpc_service_project} Resource.
 func NewComputeSharedVpcServiceProject(scope constructs.Construct, id *string, config *ComputeSharedVpcServiceProjectConfig) ComputeSharedVpcServiceProject {
@@ -412,7 +411,7 @@ func NewComputeSharedVpcServiceProject(scope constructs.Construct, id *string, c
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeSharedVpcServiceProject.ComputeSharedVpcServiceProject",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -425,12 +424,12 @@ func NewComputeSharedVpcServiceProject_Override(c ComputeSharedVpcServiceProject
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeSharedVpcServiceProject.ComputeSharedVpcServiceProject",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputeSharedVpcServiceProject)SetConnection(val interface{}) {
+func (j *jsiiProxy_ComputeSharedVpcServiceProject) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -441,7 +440,7 @@ func (j *jsiiProxy_ComputeSharedVpcServiceProject)SetConnection(val interface{})
 	)
 }
 
-func (j *jsiiProxy_ComputeSharedVpcServiceProject)SetCount(val interface{}) {
+func (j *jsiiProxy_ComputeSharedVpcServiceProject) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,7 +451,7 @@ func (j *jsiiProxy_ComputeSharedVpcServiceProject)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeSharedVpcServiceProject)SetDeletionPolicy(val *string) {
+func (j *jsiiProxy_ComputeSharedVpcServiceProject) SetDeletionPolicy(val *string) {
 	if err := j.validateSetDeletionPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -463,7 +462,7 @@ func (j *jsiiProxy_ComputeSharedVpcServiceProject)SetDeletionPolicy(val *string)
 	)
 }
 
-func (j *jsiiProxy_ComputeSharedVpcServiceProject)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ComputeSharedVpcServiceProject) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -471,7 +470,7 @@ func (j *jsiiProxy_ComputeSharedVpcServiceProject)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeSharedVpcServiceProject)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ComputeSharedVpcServiceProject) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -479,7 +478,7 @@ func (j *jsiiProxy_ComputeSharedVpcServiceProject)SetForEach(val cdktf.ITerrafor
 	)
 }
 
-func (j *jsiiProxy_ComputeSharedVpcServiceProject)SetHostProject(val *string) {
+func (j *jsiiProxy_ComputeSharedVpcServiceProject) SetHostProject(val *string) {
 	if err := j.validateSetHostProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -490,7 +489,7 @@ func (j *jsiiProxy_ComputeSharedVpcServiceProject)SetHostProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeSharedVpcServiceProject)SetId(val *string) {
+func (j *jsiiProxy_ComputeSharedVpcServiceProject) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -501,7 +500,7 @@ func (j *jsiiProxy_ComputeSharedVpcServiceProject)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeSharedVpcServiceProject)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ComputeSharedVpcServiceProject) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -512,7 +511,7 @@ func (j *jsiiProxy_ComputeSharedVpcServiceProject)SetLifecycle(val *cdktf.Terraf
 	)
 }
 
-func (j *jsiiProxy_ComputeSharedVpcServiceProject)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ComputeSharedVpcServiceProject) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -520,7 +519,7 @@ func (j *jsiiProxy_ComputeSharedVpcServiceProject)SetProvider(val cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_ComputeSharedVpcServiceProject)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ComputeSharedVpcServiceProject) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -531,7 +530,7 @@ func (j *jsiiProxy_ComputeSharedVpcServiceProject)SetProvisioners(val *[]interfa
 	)
 }
 
-func (j *jsiiProxy_ComputeSharedVpcServiceProject)SetServiceProject(val *string) {
+func (j *jsiiProxy_ComputeSharedVpcServiceProject) SetServiceProject(val *string) {
 	if err := j.validateSetServiceProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -554,7 +553,7 @@ func ComputeSharedVpcServiceProject_GenerateConfigForImport(scope constructs.Con
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeSharedVpcServiceProject.ComputeSharedVpcServiceProject",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -578,7 +577,7 @@ func ComputeSharedVpcServiceProject_GenerateConfigForImport(scope constructs.Con
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ComputeSharedVpcServiceProject_IsConstruct(x interface{}) *bool {
+func ComputeSharedVpcServiceProject_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeSharedVpcServiceProject_IsConstructParameters(x); err != nil {
@@ -589,7 +588,7 @@ func ComputeSharedVpcServiceProject_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeSharedVpcServiceProject.ComputeSharedVpcServiceProject",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -597,7 +596,7 @@ func ComputeSharedVpcServiceProject_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ComputeSharedVpcServiceProject_IsTerraformElement(x interface{}) *bool {
+func ComputeSharedVpcServiceProject_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeSharedVpcServiceProject_IsTerraformElementParameters(x); err != nil {
@@ -608,7 +607,7 @@ func ComputeSharedVpcServiceProject_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeSharedVpcServiceProject.ComputeSharedVpcServiceProject",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -616,7 +615,7 @@ func ComputeSharedVpcServiceProject_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ComputeSharedVpcServiceProject_IsTerraformResource(x interface{}) *bool {
+func ComputeSharedVpcServiceProject_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeSharedVpcServiceProject_IsTerraformResourceParameters(x); err != nil {
@@ -627,7 +626,7 @@ func ComputeSharedVpcServiceProject_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeSharedVpcServiceProject.ComputeSharedVpcServiceProject",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -652,31 +651,31 @@ func (c *jsiiProxy_ComputeSharedVpcServiceProject) AddMoveTarget(moveTarget *str
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_ComputeSharedVpcServiceProject) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_ComputeSharedVpcServiceProject) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_ComputeSharedVpcServiceProject) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComputeSharedVpcServiceProject) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -692,7 +691,7 @@ func (c *jsiiProxy_ComputeSharedVpcServiceProject) GetBooleanAttribute(terraform
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -708,7 +707,7 @@ func (c *jsiiProxy_ComputeSharedVpcServiceProject) GetBooleanMapAttribute(terraf
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -724,7 +723,7 @@ func (c *jsiiProxy_ComputeSharedVpcServiceProject) GetListAttribute(terraformAtt
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -740,7 +739,7 @@ func (c *jsiiProxy_ComputeSharedVpcServiceProject) GetNumberAttribute(terraformA
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -756,7 +755,7 @@ func (c *jsiiProxy_ComputeSharedVpcServiceProject) GetNumberListAttribute(terraf
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -772,7 +771,7 @@ func (c *jsiiProxy_ComputeSharedVpcServiceProject) GetNumberMapAttribute(terrafo
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -788,7 +787,7 @@ func (c *jsiiProxy_ComputeSharedVpcServiceProject) GetStringAttribute(terraformA
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -804,15 +803,15 @@ func (c *jsiiProxy_ComputeSharedVpcServiceProject) GetStringMapAttribute(terrafo
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ComputeSharedVpcServiceProject) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeSharedVpcServiceProject) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -831,7 +830,7 @@ func (c *jsiiProxy_ComputeSharedVpcServiceProject) ImportFrom(id *string, provid
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -844,7 +843,7 @@ func (c *jsiiProxy_ComputeSharedVpcServiceProject) InterpolationForAttribute(ter
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -858,18 +857,18 @@ func (c *jsiiProxy_ComputeSharedVpcServiceProject) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_ComputeSharedVpcServiceProject) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_ComputeSharedVpcServiceProject) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -880,7 +879,7 @@ func (c *jsiiProxy_ComputeSharedVpcServiceProject) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -891,7 +890,7 @@ func (c *jsiiProxy_ComputeSharedVpcServiceProject) OverrideLogicalId(newLogicalI
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -902,7 +901,7 @@ func (c *jsiiProxy_ComputeSharedVpcServiceProject) PutTimeouts(value *ComputeSha
 	_jsii_.InvokeVoid(
 		c,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -938,8 +937,8 @@ func (c *jsiiProxy_ComputeSharedVpcServiceProject) ResetTimeouts() {
 	)
 }
 
-func (c *jsiiProxy_ComputeSharedVpcServiceProject) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ComputeSharedVpcServiceProject) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -951,8 +950,8 @@ func (c *jsiiProxy_ComputeSharedVpcServiceProject) SynthesizeAttributes() *map[s
 	return returns
 }
 
-func (c *jsiiProxy_ComputeSharedVpcServiceProject) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ComputeSharedVpcServiceProject) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -964,8 +963,8 @@ func (c *jsiiProxy_ComputeSharedVpcServiceProject) SynthesizeHclAttributes() *ma
 	return returns
 }
 
-func (c *jsiiProxy_ComputeSharedVpcServiceProject) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeSharedVpcServiceProject) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -977,8 +976,8 @@ func (c *jsiiProxy_ComputeSharedVpcServiceProject) ToHclTerraform() interface{} 
 	return returns
 }
 
-func (c *jsiiProxy_ComputeSharedVpcServiceProject) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeSharedVpcServiceProject) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1003,8 +1002,8 @@ func (c *jsiiProxy_ComputeSharedVpcServiceProject) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_ComputeSharedVpcServiceProject) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeSharedVpcServiceProject) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1015,4 +1014,3 @@ func (c *jsiiProxy_ComputeSharedVpcServiceProject) ToTerraform() interface{} {
 
 	return returns
 }
-

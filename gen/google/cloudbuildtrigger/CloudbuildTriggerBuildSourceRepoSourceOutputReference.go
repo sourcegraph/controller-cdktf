@@ -18,9 +18,9 @@ type CloudbuildTriggerBuildSourceRepoSourceOutputReference interface {
 	CommitShaInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -38,9 +38,9 @@ type CloudbuildTriggerBuildSourceRepoSourceOutputReference interface {
 	Fqn() *string
 	InternalValue() *CloudbuildTriggerBuildSourceRepoSource
 	SetInternalValue(val *CloudbuildTriggerBuildSourceRepoSource)
-	InvertRegex() interface{}
-	SetInvertRegex(val interface{})
-	InvertRegexInput() interface{}
+	InvertRegex() any
+	SetInvertRegex(val any)
+	InvertRegexInput() any
 	ProjectId() *string
 	SetProjectId(val *string)
 	ProjectIdInput() *string
@@ -64,7 +64,7 @@ type CloudbuildTriggerBuildSourceRepoSourceOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -94,7 +94,7 @@ type CloudbuildTriggerBuildSourceRepoSourceOutputReference interface {
 	ResetTagName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -147,8 +147,8 @@ func (j *jsiiProxy_CloudbuildTriggerBuildSourceRepoSourceOutputReference) Commit
 	return returns
 }
 
-func (j *jsiiProxy_CloudbuildTriggerBuildSourceRepoSourceOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudbuildTriggerBuildSourceRepoSourceOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -217,8 +217,8 @@ func (j *jsiiProxy_CloudbuildTriggerBuildSourceRepoSourceOutputReference) Intern
 	return returns
 }
 
-func (j *jsiiProxy_CloudbuildTriggerBuildSourceRepoSourceOutputReference) InvertRegex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudbuildTriggerBuildSourceRepoSourceOutputReference) InvertRegex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"invertRegex",
@@ -227,8 +227,8 @@ func (j *jsiiProxy_CloudbuildTriggerBuildSourceRepoSourceOutputReference) Invert
 	return returns
 }
 
-func (j *jsiiProxy_CloudbuildTriggerBuildSourceRepoSourceOutputReference) InvertRegexInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudbuildTriggerBuildSourceRepoSourceOutputReference) InvertRegexInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"invertRegexInput",
@@ -337,7 +337,6 @@ func (j *jsiiProxy_CloudbuildTriggerBuildSourceRepoSourceOutputReference) Terraf
 	return returns
 }
 
-
 func NewCloudbuildTriggerBuildSourceRepoSourceOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CloudbuildTriggerBuildSourceRepoSourceOutputReference {
 	_init_.Initialize()
 
@@ -348,7 +347,7 @@ func NewCloudbuildTriggerBuildSourceRepoSourceOutputReference(terraformResource 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSourceRepoSourceOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -360,12 +359,12 @@ func NewCloudbuildTriggerBuildSourceRepoSourceOutputReference_Override(c Cloudbu
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSourceRepoSourceOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CloudbuildTriggerBuildSourceRepoSourceOutputReference)SetBranchName(val *string) {
+func (j *jsiiProxy_CloudbuildTriggerBuildSourceRepoSourceOutputReference) SetBranchName(val *string) {
 	if err := j.validateSetBranchNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -376,7 +375,7 @@ func (j *jsiiProxy_CloudbuildTriggerBuildSourceRepoSourceOutputReference)SetBran
 	)
 }
 
-func (j *jsiiProxy_CloudbuildTriggerBuildSourceRepoSourceOutputReference)SetCommitSha(val *string) {
+func (j *jsiiProxy_CloudbuildTriggerBuildSourceRepoSourceOutputReference) SetCommitSha(val *string) {
 	if err := j.validateSetCommitShaParameters(val); err != nil {
 		panic(err)
 	}
@@ -387,7 +386,7 @@ func (j *jsiiProxy_CloudbuildTriggerBuildSourceRepoSourceOutputReference)SetComm
 	)
 }
 
-func (j *jsiiProxy_CloudbuildTriggerBuildSourceRepoSourceOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CloudbuildTriggerBuildSourceRepoSourceOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -398,7 +397,7 @@ func (j *jsiiProxy_CloudbuildTriggerBuildSourceRepoSourceOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_CloudbuildTriggerBuildSourceRepoSourceOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CloudbuildTriggerBuildSourceRepoSourceOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -409,7 +408,7 @@ func (j *jsiiProxy_CloudbuildTriggerBuildSourceRepoSourceOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_CloudbuildTriggerBuildSourceRepoSourceOutputReference)SetDir(val *string) {
+func (j *jsiiProxy_CloudbuildTriggerBuildSourceRepoSourceOutputReference) SetDir(val *string) {
 	if err := j.validateSetDirParameters(val); err != nil {
 		panic(err)
 	}
@@ -420,7 +419,7 @@ func (j *jsiiProxy_CloudbuildTriggerBuildSourceRepoSourceOutputReference)SetDir(
 	)
 }
 
-func (j *jsiiProxy_CloudbuildTriggerBuildSourceRepoSourceOutputReference)SetInternalValue(val *CloudbuildTriggerBuildSourceRepoSource) {
+func (j *jsiiProxy_CloudbuildTriggerBuildSourceRepoSourceOutputReference) SetInternalValue(val *CloudbuildTriggerBuildSourceRepoSource) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -431,7 +430,7 @@ func (j *jsiiProxy_CloudbuildTriggerBuildSourceRepoSourceOutputReference)SetInte
 	)
 }
 
-func (j *jsiiProxy_CloudbuildTriggerBuildSourceRepoSourceOutputReference)SetInvertRegex(val interface{}) {
+func (j *jsiiProxy_CloudbuildTriggerBuildSourceRepoSourceOutputReference) SetInvertRegex(val any) {
 	if err := j.validateSetInvertRegexParameters(val); err != nil {
 		panic(err)
 	}
@@ -442,7 +441,7 @@ func (j *jsiiProxy_CloudbuildTriggerBuildSourceRepoSourceOutputReference)SetInve
 	)
 }
 
-func (j *jsiiProxy_CloudbuildTriggerBuildSourceRepoSourceOutputReference)SetProjectId(val *string) {
+func (j *jsiiProxy_CloudbuildTriggerBuildSourceRepoSourceOutputReference) SetProjectId(val *string) {
 	if err := j.validateSetProjectIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -453,7 +452,7 @@ func (j *jsiiProxy_CloudbuildTriggerBuildSourceRepoSourceOutputReference)SetProj
 	)
 }
 
-func (j *jsiiProxy_CloudbuildTriggerBuildSourceRepoSourceOutputReference)SetRepoName(val *string) {
+func (j *jsiiProxy_CloudbuildTriggerBuildSourceRepoSourceOutputReference) SetRepoName(val *string) {
 	if err := j.validateSetRepoNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -464,7 +463,7 @@ func (j *jsiiProxy_CloudbuildTriggerBuildSourceRepoSourceOutputReference)SetRepo
 	)
 }
 
-func (j *jsiiProxy_CloudbuildTriggerBuildSourceRepoSourceOutputReference)SetSubstitutions(val *map[string]*string) {
+func (j *jsiiProxy_CloudbuildTriggerBuildSourceRepoSourceOutputReference) SetSubstitutions(val *map[string]*string) {
 	if err := j.validateSetSubstitutionsParameters(val); err != nil {
 		panic(err)
 	}
@@ -475,7 +474,7 @@ func (j *jsiiProxy_CloudbuildTriggerBuildSourceRepoSourceOutputReference)SetSubs
 	)
 }
 
-func (j *jsiiProxy_CloudbuildTriggerBuildSourceRepoSourceOutputReference)SetTagName(val *string) {
+func (j *jsiiProxy_CloudbuildTriggerBuildSourceRepoSourceOutputReference) SetTagName(val *string) {
 	if err := j.validateSetTagNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -486,7 +485,7 @@ func (j *jsiiProxy_CloudbuildTriggerBuildSourceRepoSourceOutputReference)SetTagN
 	)
 }
 
-func (j *jsiiProxy_CloudbuildTriggerBuildSourceRepoSourceOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CloudbuildTriggerBuildSourceRepoSourceOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -497,7 +496,7 @@ func (j *jsiiProxy_CloudbuildTriggerBuildSourceRepoSourceOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_CloudbuildTriggerBuildSourceRepoSourceOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CloudbuildTriggerBuildSourceRepoSourceOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -521,16 +520,16 @@ func (c *jsiiProxy_CloudbuildTriggerBuildSourceRepoSourceOutputReference) Comput
 	return returns
 }
 
-func (c *jsiiProxy_CloudbuildTriggerBuildSourceRepoSourceOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CloudbuildTriggerBuildSourceRepoSourceOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -546,7 +545,7 @@ func (c *jsiiProxy_CloudbuildTriggerBuildSourceRepoSourceOutputReference) GetBoo
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -562,7 +561,7 @@ func (c *jsiiProxy_CloudbuildTriggerBuildSourceRepoSourceOutputReference) GetBoo
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -578,7 +577,7 @@ func (c *jsiiProxy_CloudbuildTriggerBuildSourceRepoSourceOutputReference) GetLis
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -594,7 +593,7 @@ func (c *jsiiProxy_CloudbuildTriggerBuildSourceRepoSourceOutputReference) GetNum
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -610,7 +609,7 @@ func (c *jsiiProxy_CloudbuildTriggerBuildSourceRepoSourceOutputReference) GetNum
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -626,7 +625,7 @@ func (c *jsiiProxy_CloudbuildTriggerBuildSourceRepoSourceOutputReference) GetNum
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -642,7 +641,7 @@ func (c *jsiiProxy_CloudbuildTriggerBuildSourceRepoSourceOutputReference) GetStr
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -658,7 +657,7 @@ func (c *jsiiProxy_CloudbuildTriggerBuildSourceRepoSourceOutputReference) GetStr
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -687,7 +686,7 @@ func (c *jsiiProxy_CloudbuildTriggerBuildSourceRepoSourceOutputReference) Interp
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -750,16 +749,16 @@ func (c *jsiiProxy_CloudbuildTriggerBuildSourceRepoSourceOutputReference) ResetT
 	)
 }
 
-func (c *jsiiProxy_CloudbuildTriggerBuildSourceRepoSourceOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_CloudbuildTriggerBuildSourceRepoSourceOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -778,4 +777,3 @@ func (c *jsiiProxy_CloudbuildTriggerBuildSourceRepoSourceOutputReference) ToStri
 
 	return returns
 }
-

@@ -6,9 +6,9 @@ import (
 
 type ContactCenterInsightsAutoLabelingRuleConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type ContactCenterInsightsAutoLabelingRuleConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Location of the resource.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/contact_center_insights_auto_labeling_rule#location ContactCenterInsightsAutoLabelingRule#location}
@@ -26,7 +26,7 @@ type ContactCenterInsightsAutoLabelingRuleConfig struct {
 	// Whether the rule is active.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/contact_center_insights_auto_labeling_rule#active ContactCenterInsightsAutoLabelingRule#active}
-	Active interface{} `field:"optional" json:"active" yaml:"active"`
+	Active any `field:"optional" json:"active" yaml:"active"`
 	// A unique ID for the new AutoLabelingRule.
 	//
 	// This ID will become the final
@@ -41,7 +41,7 @@ type ContactCenterInsightsAutoLabelingRuleConfig struct {
 	// conditions block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/contact_center_insights_auto_labeling_rule#conditions ContactCenterInsightsAutoLabelingRule#conditions}
-	Conditions interface{} `field:"optional" json:"conditions" yaml:"conditions"`
+	Conditions any `field:"optional" json:"conditions" yaml:"conditions"`
 	// The description of the rule.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/contact_center_insights_auto_labeling_rule#description ContactCenterInsightsAutoLabelingRule#description}
@@ -70,4 +70,3 @@ type ContactCenterInsightsAutoLabelingRuleConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/contact_center_insights_auto_labeling_rule#timeouts ContactCenterInsightsAutoLabelingRule#timeouts}
 	Timeouts *ContactCenterInsightsAutoLabelingRuleTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

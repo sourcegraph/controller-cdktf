@@ -19,7 +19,7 @@ func (a *jsiiProxy_ApigeeKeystoresAliasesPkcs12) validateAddMoveTargetParameters
 	return nil
 }
 
-func (a *jsiiProxy_ApigeeKeystoresAliasesPkcs12) validateAddOverrideParameters(path *string, value interface{}) error {
+func (a *jsiiProxy_ApigeeKeystoresAliasesPkcs12) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (a *jsiiProxy_ApigeeKeystoresAliasesPkcs12) validateMoveFromIdParameters(id
 	return nil
 }
 
-func (a *jsiiProxy_ApigeeKeystoresAliasesPkcs12) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (a *jsiiProxy_ApigeeKeystoresAliasesPkcs12) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateApigeeKeystoresAliasesPkcs12_GenerateConfigForImportParameters(scop
 	return nil
 }
 
-func validateApigeeKeystoresAliasesPkcs12_IsConstructParameters(x interface{}) error {
+func validateApigeeKeystoresAliasesPkcs12_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateApigeeKeystoresAliasesPkcs12_IsConstructParameters(x interface{}) e
 	return nil
 }
 
-func validateApigeeKeystoresAliasesPkcs12_IsTerraformElementParameters(x interface{}) error {
+func validateApigeeKeystoresAliasesPkcs12_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateApigeeKeystoresAliasesPkcs12_IsTerraformElementParameters(x interfa
 	return nil
 }
 
-func validateApigeeKeystoresAliasesPkcs12_IsTerraformResourceParameters(x interface{}) error {
+func validateApigeeKeystoresAliasesPkcs12_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_ApigeeKeystoresAliasesPkcs12) validateSetAliasParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_ApigeeKeystoresAliasesPkcs12) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ApigeeKeystoresAliasesPkcs12) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_ApigeeKeystoresAliasesPkcs12) validateSetConnectionParameters
 	return nil
 }
 
-func (j *jsiiProxy_ApigeeKeystoresAliasesPkcs12) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ApigeeKeystoresAliasesPkcs12) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -417,7 +417,7 @@ func (j *jsiiProxy_ApigeeKeystoresAliasesPkcs12) validateSetPasswordParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_ApigeeKeystoresAliasesPkcs12) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ApigeeKeystoresAliasesPkcs12) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -481,4 +481,3 @@ func validateNewApigeeKeystoresAliasesPkcs12Parameters(scope constructs.Construc
 
 	return nil
 }
-

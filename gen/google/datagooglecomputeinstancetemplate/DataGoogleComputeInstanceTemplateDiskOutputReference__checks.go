@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleComputeInstanceTemplateDiskOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeInstanceTemplateDiskOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleComputeInstanceTemplateDiskOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleComputeInstanceTemplateDiskOutputReferenceParameters(t
 
 	return nil
 }
-

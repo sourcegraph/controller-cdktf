@@ -101,7 +101,7 @@ func (i *jsiiProxy_IdentityPlatformConfigBlockingFunctionsOutputReference) valid
 	return nil
 }
 
-func (i *jsiiProxy_IdentityPlatformConfigBlockingFunctionsOutputReference) validatePutTriggersParameters(value interface{}) error {
+func (i *jsiiProxy_IdentityPlatformConfigBlockingFunctionsOutputReference) validatePutTriggersParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -140,7 +140,7 @@ func (i *jsiiProxy_IdentityPlatformConfigBlockingFunctionsOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_IdentityPlatformConfigBlockingFunctionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IdentityPlatformConfigBlockingFunctionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -240,4 +240,3 @@ func validateNewIdentityPlatformConfigBlockingFunctionsOutputReferenceParameters
 
 	return nil
 }
-

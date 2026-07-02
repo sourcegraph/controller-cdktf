@@ -12,9 +12,9 @@ type CesToolClientFunctionOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -50,7 +50,7 @@ type CesToolClientFunctionOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -78,7 +78,7 @@ type CesToolClientFunctionOutputReference interface {
 	ResetResponse()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -91,8 +91,8 @@ type jsiiProxy_CesToolClientFunctionOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_CesToolClientFunctionOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CesToolClientFunctionOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -241,7 +241,6 @@ func (j *jsiiProxy_CesToolClientFunctionOutputReference) TerraformResource() cdk
 	return returns
 }
 
-
 func NewCesToolClientFunctionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CesToolClientFunctionOutputReference {
 	_init_.Initialize()
 
@@ -252,7 +251,7 @@ func NewCesToolClientFunctionOutputReference(terraformResource cdktf.IInterpolat
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cesTool.CesToolClientFunctionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -264,12 +263,12 @@ func NewCesToolClientFunctionOutputReference_Override(c CesToolClientFunctionOut
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cesTool.CesToolClientFunctionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CesToolClientFunctionOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CesToolClientFunctionOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -280,7 +279,7 @@ func (j *jsiiProxy_CesToolClientFunctionOutputReference)SetComplexObjectIndex(va
 	)
 }
 
-func (j *jsiiProxy_CesToolClientFunctionOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CesToolClientFunctionOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -291,7 +290,7 @@ func (j *jsiiProxy_CesToolClientFunctionOutputReference)SetComplexObjectIsFromSe
 	)
 }
 
-func (j *jsiiProxy_CesToolClientFunctionOutputReference)SetDescription(val *string) {
+func (j *jsiiProxy_CesToolClientFunctionOutputReference) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -302,7 +301,7 @@ func (j *jsiiProxy_CesToolClientFunctionOutputReference)SetDescription(val *stri
 	)
 }
 
-func (j *jsiiProxy_CesToolClientFunctionOutputReference)SetInternalValue(val *CesToolClientFunction) {
+func (j *jsiiProxy_CesToolClientFunctionOutputReference) SetInternalValue(val *CesToolClientFunction) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -313,7 +312,7 @@ func (j *jsiiProxy_CesToolClientFunctionOutputReference)SetInternalValue(val *Ce
 	)
 }
 
-func (j *jsiiProxy_CesToolClientFunctionOutputReference)SetName(val *string) {
+func (j *jsiiProxy_CesToolClientFunctionOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -324,7 +323,7 @@ func (j *jsiiProxy_CesToolClientFunctionOutputReference)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CesToolClientFunctionOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CesToolClientFunctionOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -335,7 +334,7 @@ func (j *jsiiProxy_CesToolClientFunctionOutputReference)SetTerraformAttribute(va
 	)
 }
 
-func (j *jsiiProxy_CesToolClientFunctionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CesToolClientFunctionOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -359,16 +358,16 @@ func (c *jsiiProxy_CesToolClientFunctionOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (c *jsiiProxy_CesToolClientFunctionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CesToolClientFunctionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -384,7 +383,7 @@ func (c *jsiiProxy_CesToolClientFunctionOutputReference) GetBooleanAttribute(ter
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -400,7 +399,7 @@ func (c *jsiiProxy_CesToolClientFunctionOutputReference) GetBooleanMapAttribute(
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -416,7 +415,7 @@ func (c *jsiiProxy_CesToolClientFunctionOutputReference) GetListAttribute(terraf
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -432,7 +431,7 @@ func (c *jsiiProxy_CesToolClientFunctionOutputReference) GetNumberAttribute(terr
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -448,7 +447,7 @@ func (c *jsiiProxy_CesToolClientFunctionOutputReference) GetNumberListAttribute(
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -464,7 +463,7 @@ func (c *jsiiProxy_CesToolClientFunctionOutputReference) GetNumberMapAttribute(t
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -480,7 +479,7 @@ func (c *jsiiProxy_CesToolClientFunctionOutputReference) GetStringAttribute(terr
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -496,7 +495,7 @@ func (c *jsiiProxy_CesToolClientFunctionOutputReference) GetStringMapAttribute(t
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -525,7 +524,7 @@ func (c *jsiiProxy_CesToolClientFunctionOutputReference) InterpolationForAttribu
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -539,7 +538,7 @@ func (c *jsiiProxy_CesToolClientFunctionOutputReference) PutParameters(value *Ce
 	_jsii_.InvokeVoid(
 		c,
 		"putParameters",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -550,7 +549,7 @@ func (c *jsiiProxy_CesToolClientFunctionOutputReference) PutResponse(value *CesT
 	_jsii_.InvokeVoid(
 		c,
 		"putResponse",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -578,16 +577,16 @@ func (c *jsiiProxy_CesToolClientFunctionOutputReference) ResetResponse() {
 	)
 }
 
-func (c *jsiiProxy_CesToolClientFunctionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_CesToolClientFunctionOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -606,4 +605,3 @@ func (c *jsiiProxy_CesToolClientFunctionOutputReference) ToString() *string {
 
 	return returns
 }
-

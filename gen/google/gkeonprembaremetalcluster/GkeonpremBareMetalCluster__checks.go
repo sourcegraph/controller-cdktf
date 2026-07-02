@@ -19,7 +19,7 @@ func (g *jsiiProxy_GkeonpremBareMetalCluster) validateAddMoveTargetParameters(mo
 	return nil
 }
 
-func (g *jsiiProxy_GkeonpremBareMetalCluster) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GkeonpremBareMetalCluster) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GkeonpremBareMetalCluster) validateMoveFromIdParameters(id *s
 	return nil
 }
 
-func (g *jsiiProxy_GkeonpremBareMetalCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GkeonpremBareMetalCluster) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -374,7 +374,7 @@ func validateGkeonpremBareMetalCluster_GenerateConfigForImportParameters(scope c
 	return nil
 }
 
-func validateGkeonpremBareMetalCluster_IsConstructParameters(x interface{}) error {
+func validateGkeonpremBareMetalCluster_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -382,7 +382,7 @@ func validateGkeonpremBareMetalCluster_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
-func validateGkeonpremBareMetalCluster_IsTerraformElementParameters(x interface{}) error {
+func validateGkeonpremBareMetalCluster_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -390,7 +390,7 @@ func validateGkeonpremBareMetalCluster_IsTerraformElementParameters(x interface{
 	return nil
 }
 
-func validateGkeonpremBareMetalCluster_IsTerraformResourceParameters(x interface{}) error {
+func validateGkeonpremBareMetalCluster_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -422,7 +422,7 @@ func (j *jsiiProxy_GkeonpremBareMetalCluster) validateSetBareMetalVersionParamet
 	return nil
 }
 
-func (j *jsiiProxy_GkeonpremBareMetalCluster) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GkeonpremBareMetalCluster) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -455,7 +455,7 @@ func (j *jsiiProxy_GkeonpremBareMetalCluster) validateSetConnectionParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_GkeonpremBareMetalCluster) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GkeonpremBareMetalCluster) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -560,7 +560,7 @@ func (j *jsiiProxy_GkeonpremBareMetalCluster) validateSetProjectParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_GkeonpremBareMetalCluster) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GkeonpremBareMetalCluster) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -624,4 +624,3 @@ func validateNewGkeonpremBareMetalClusterParameters(scope constructs.Construct, 
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (a *jsiiProxy_ApihubPluginInstanceAuthConfigGoogleServiceAccountConfigOutpu
 	return nil
 }
 
-func (j *jsiiProxy_ApihubPluginInstanceAuthConfigGoogleServiceAccountConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ApihubPluginInstanceAuthConfigGoogleServiceAccountConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewApihubPluginInstanceAuthConfigGoogleServiceAccountConfigOutputRe
 
 	return nil
 }
-

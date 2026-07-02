@@ -101,7 +101,7 @@ func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmOutputReference) v
 	return nil
 }
 
-func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmOutputReference) validatePutNodeSetsParameters(value interface{}) error {
+func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmOutputReference) validatePutNodeSetsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -132,7 +132,7 @@ func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmOutputReference) v
 	return nil
 }
 
-func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmOutputReference) validatePutPartitionsParameters(value interface{}) error {
+func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmOutputReference) validatePutPartitionsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -171,7 +171,7 @@ func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -295,4 +295,3 @@ func validateNewHypercomputeclusterClusterOrchestratorSlurmOutputReferenceParame
 
 	return nil
 }
-

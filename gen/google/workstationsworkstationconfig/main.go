@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigA",
-		reflect.TypeOf((*WorkstationsWorkstationConfigA)(nil)).Elem(),
+		reflect.TypeFor[WorkstationsWorkstationConfigA](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -133,7 +133,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workstationConfigId", GoGetter: "WorkstationConfigId"},
 			_jsii_.MemberProperty{JsiiProperty: "workstationConfigIdInput", GoGetter: "WorkstationConfigIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkstationsWorkstationConfigA{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -141,15 +141,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigAConfig",
-		reflect.TypeOf((*WorkstationsWorkstationConfigAConfig)(nil)).Elem(),
+		reflect.TypeFor[WorkstationsWorkstationConfigAConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigAllowedPorts",
-		reflect.TypeOf((*WorkstationsWorkstationConfigAllowedPorts)(nil)).Elem(),
+		reflect.TypeFor[WorkstationsWorkstationConfigAllowedPorts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigAllowedPortsList",
-		reflect.TypeOf((*WorkstationsWorkstationConfigAllowedPortsList)(nil)).Elem(),
+		reflect.TypeFor[WorkstationsWorkstationConfigAllowedPortsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -163,7 +163,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkstationsWorkstationConfigAllowedPortsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -171,7 +171,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigAllowedPortsOutputReference",
-		reflect.TypeOf((*WorkstationsWorkstationConfigAllowedPortsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[WorkstationsWorkstationConfigAllowedPortsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -201,7 +201,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkstationsWorkstationConfigAllowedPortsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -209,11 +209,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigConditions",
-		reflect.TypeOf((*WorkstationsWorkstationConfigConditions)(nil)).Elem(),
+		reflect.TypeFor[WorkstationsWorkstationConfigConditions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigConditionsList",
-		reflect.TypeOf((*WorkstationsWorkstationConfigConditionsList)(nil)).Elem(),
+		reflect.TypeFor[WorkstationsWorkstationConfigConditionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -226,7 +226,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkstationsWorkstationConfigConditionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -234,7 +234,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigConditionsOutputReference",
-		reflect.TypeOf((*WorkstationsWorkstationConfigConditionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[WorkstationsWorkstationConfigConditionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "code", GoGetter: "Code"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -261,7 +261,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkstationsWorkstationConfigConditionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -269,11 +269,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigContainer",
-		reflect.TypeOf((*WorkstationsWorkstationConfigContainer)(nil)).Elem(),
+		reflect.TypeFor[WorkstationsWorkstationConfigContainer](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigContainerOutputReference",
-		reflect.TypeOf((*WorkstationsWorkstationConfigContainerOutputReference)(nil)).Elem(),
+		reflect.TypeFor[WorkstationsWorkstationConfigContainerOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "args", GoGetter: "Args"},
 			_jsii_.MemberProperty{JsiiProperty: "argsInput", GoGetter: "ArgsInput"},
@@ -315,7 +315,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workingDir", GoGetter: "WorkingDir"},
 			_jsii_.MemberProperty{JsiiProperty: "workingDirInput", GoGetter: "WorkingDirInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkstationsWorkstationConfigContainerOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -323,11 +323,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigEncryptionKey",
-		reflect.TypeOf((*WorkstationsWorkstationConfigEncryptionKey)(nil)).Elem(),
+		reflect.TypeFor[WorkstationsWorkstationConfigEncryptionKey](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigEncryptionKeyOutputReference",
-		reflect.TypeOf((*WorkstationsWorkstationConfigEncryptionKeyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[WorkstationsWorkstationConfigEncryptionKeyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -355,7 +355,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkstationsWorkstationConfigEncryptionKeyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -363,15 +363,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigEphemeralDirectories",
-		reflect.TypeOf((*WorkstationsWorkstationConfigEphemeralDirectories)(nil)).Elem(),
+		reflect.TypeFor[WorkstationsWorkstationConfigEphemeralDirectories](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigEphemeralDirectoriesGcePd",
-		reflect.TypeOf((*WorkstationsWorkstationConfigEphemeralDirectoriesGcePd)(nil)).Elem(),
+		reflect.TypeFor[WorkstationsWorkstationConfigEphemeralDirectoriesGcePd](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigEphemeralDirectoriesGcePdOutputReference",
-		reflect.TypeOf((*WorkstationsWorkstationConfigEphemeralDirectoriesGcePdOutputReference)(nil)).Elem(),
+		reflect.TypeFor[WorkstationsWorkstationConfigEphemeralDirectoriesGcePdOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -407,7 +407,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkstationsWorkstationConfigEphemeralDirectoriesGcePdOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -415,7 +415,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigEphemeralDirectoriesList",
-		reflect.TypeOf((*WorkstationsWorkstationConfigEphemeralDirectoriesList)(nil)).Elem(),
+		reflect.TypeFor[WorkstationsWorkstationConfigEphemeralDirectoriesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -429,7 +429,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkstationsWorkstationConfigEphemeralDirectoriesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -437,7 +437,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigEphemeralDirectoriesOutputReference",
-		reflect.TypeOf((*WorkstationsWorkstationConfigEphemeralDirectoriesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[WorkstationsWorkstationConfigEphemeralDirectoriesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -468,7 +468,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkstationsWorkstationConfigEphemeralDirectoriesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -476,19 +476,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigHost",
-		reflect.TypeOf((*WorkstationsWorkstationConfigHost)(nil)).Elem(),
+		reflect.TypeFor[WorkstationsWorkstationConfigHost](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigHostGceInstance",
-		reflect.TypeOf((*WorkstationsWorkstationConfigHostGceInstance)(nil)).Elem(),
+		reflect.TypeFor[WorkstationsWorkstationConfigHostGceInstance](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigHostGceInstanceAccelerators",
-		reflect.TypeOf((*WorkstationsWorkstationConfigHostGceInstanceAccelerators)(nil)).Elem(),
+		reflect.TypeFor[WorkstationsWorkstationConfigHostGceInstanceAccelerators](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigHostGceInstanceAcceleratorsList",
-		reflect.TypeOf((*WorkstationsWorkstationConfigHostGceInstanceAcceleratorsList)(nil)).Elem(),
+		reflect.TypeFor[WorkstationsWorkstationConfigHostGceInstanceAcceleratorsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -502,7 +502,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkstationsWorkstationConfigHostGceInstanceAcceleratorsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -510,7 +510,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigHostGceInstanceAcceleratorsOutputReference",
-		reflect.TypeOf((*WorkstationsWorkstationConfigHostGceInstanceAcceleratorsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[WorkstationsWorkstationConfigHostGceInstanceAcceleratorsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -538,7 +538,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkstationsWorkstationConfigHostGceInstanceAcceleratorsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -546,15 +546,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigHostGceInstanceBoostConfigs",
-		reflect.TypeOf((*WorkstationsWorkstationConfigHostGceInstanceBoostConfigs)(nil)).Elem(),
+		reflect.TypeFor[WorkstationsWorkstationConfigHostGceInstanceBoostConfigs](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigHostGceInstanceBoostConfigsAccelerators",
-		reflect.TypeOf((*WorkstationsWorkstationConfigHostGceInstanceBoostConfigsAccelerators)(nil)).Elem(),
+		reflect.TypeFor[WorkstationsWorkstationConfigHostGceInstanceBoostConfigsAccelerators](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigHostGceInstanceBoostConfigsAcceleratorsList",
-		reflect.TypeOf((*WorkstationsWorkstationConfigHostGceInstanceBoostConfigsAcceleratorsList)(nil)).Elem(),
+		reflect.TypeFor[WorkstationsWorkstationConfigHostGceInstanceBoostConfigsAcceleratorsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -568,7 +568,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkstationsWorkstationConfigHostGceInstanceBoostConfigsAcceleratorsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -576,7 +576,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigHostGceInstanceBoostConfigsAcceleratorsOutputReference",
-		reflect.TypeOf((*WorkstationsWorkstationConfigHostGceInstanceBoostConfigsAcceleratorsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[WorkstationsWorkstationConfigHostGceInstanceBoostConfigsAcceleratorsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -604,7 +604,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkstationsWorkstationConfigHostGceInstanceBoostConfigsAcceleratorsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -612,7 +612,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigHostGceInstanceBoostConfigsList",
-		reflect.TypeOf((*WorkstationsWorkstationConfigHostGceInstanceBoostConfigsList)(nil)).Elem(),
+		reflect.TypeFor[WorkstationsWorkstationConfigHostGceInstanceBoostConfigsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -626,7 +626,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkstationsWorkstationConfigHostGceInstanceBoostConfigsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -634,7 +634,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigHostGceInstanceBoostConfigsOutputReference",
-		reflect.TypeOf((*WorkstationsWorkstationConfigHostGceInstanceBoostConfigsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[WorkstationsWorkstationConfigHostGceInstanceBoostConfigsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accelerators", GoGetter: "Accelerators"},
 			_jsii_.MemberProperty{JsiiProperty: "acceleratorsInput", GoGetter: "AcceleratorsInput"},
@@ -676,7 +676,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkstationsWorkstationConfigHostGceInstanceBoostConfigsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -684,11 +684,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigHostGceInstanceConfidentialInstanceConfig",
-		reflect.TypeOf((*WorkstationsWorkstationConfigHostGceInstanceConfidentialInstanceConfig)(nil)).Elem(),
+		reflect.TypeFor[WorkstationsWorkstationConfigHostGceInstanceConfidentialInstanceConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigHostGceInstanceConfidentialInstanceConfigOutputReference",
-		reflect.TypeOf((*WorkstationsWorkstationConfigHostGceInstanceConfidentialInstanceConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[WorkstationsWorkstationConfigHostGceInstanceConfidentialInstanceConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -715,7 +715,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkstationsWorkstationConfigHostGceInstanceConfidentialInstanceConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -723,7 +723,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigHostGceInstanceOutputReference",
-		reflect.TypeOf((*WorkstationsWorkstationConfigHostGceInstanceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[WorkstationsWorkstationConfigHostGceInstanceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accelerators", GoGetter: "Accelerators"},
 			_jsii_.MemberProperty{JsiiProperty: "acceleratorsInput", GoGetter: "AcceleratorsInput"},
@@ -793,7 +793,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vmTags", GoGetter: "VmTags"},
 			_jsii_.MemberProperty{JsiiProperty: "vmTagsInput", GoGetter: "VmTagsInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkstationsWorkstationConfigHostGceInstanceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -801,11 +801,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfig",
-		reflect.TypeOf((*WorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfig)(nil)).Elem(),
+		reflect.TypeFor[WorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfigOutputReference",
-		reflect.TypeOf((*WorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[WorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -838,7 +838,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -846,7 +846,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigHostOutputReference",
-		reflect.TypeOf((*WorkstationsWorkstationConfigHostOutputReference)(nil)).Elem(),
+		reflect.TypeFor[WorkstationsWorkstationConfigHostOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -874,7 +874,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkstationsWorkstationConfigHostOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -882,15 +882,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigPersistentDirectories",
-		reflect.TypeOf((*WorkstationsWorkstationConfigPersistentDirectories)(nil)).Elem(),
+		reflect.TypeFor[WorkstationsWorkstationConfigPersistentDirectories](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigPersistentDirectoriesGceHd",
-		reflect.TypeOf((*WorkstationsWorkstationConfigPersistentDirectoriesGceHd)(nil)).Elem(),
+		reflect.TypeFor[WorkstationsWorkstationConfigPersistentDirectoriesGceHd](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigPersistentDirectoriesGceHdOutputReference",
-		reflect.TypeOf((*WorkstationsWorkstationConfigPersistentDirectoriesGceHdOutputReference)(nil)).Elem(),
+		reflect.TypeFor[WorkstationsWorkstationConfigPersistentDirectoriesGceHdOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "archiveTimeout", GoGetter: "ArchiveTimeout"},
 			_jsii_.MemberProperty{JsiiProperty: "archiveTimeoutInput", GoGetter: "ArchiveTimeoutInput"},
@@ -926,7 +926,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkstationsWorkstationConfigPersistentDirectoriesGceHdOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -934,11 +934,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigPersistentDirectoriesGcePd",
-		reflect.TypeOf((*WorkstationsWorkstationConfigPersistentDirectoriesGcePd)(nil)).Elem(),
+		reflect.TypeFor[WorkstationsWorkstationConfigPersistentDirectoriesGcePd](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigPersistentDirectoriesGcePdOutputReference",
-		reflect.TypeOf((*WorkstationsWorkstationConfigPersistentDirectoriesGcePdOutputReference)(nil)).Elem(),
+		reflect.TypeFor[WorkstationsWorkstationConfigPersistentDirectoriesGcePdOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -977,7 +977,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkstationsWorkstationConfigPersistentDirectoriesGcePdOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -985,7 +985,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigPersistentDirectoriesList",
-		reflect.TypeOf((*WorkstationsWorkstationConfigPersistentDirectoriesList)(nil)).Elem(),
+		reflect.TypeFor[WorkstationsWorkstationConfigPersistentDirectoriesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -999,7 +999,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkstationsWorkstationConfigPersistentDirectoriesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1007,7 +1007,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigPersistentDirectoriesOutputReference",
-		reflect.TypeOf((*WorkstationsWorkstationConfigPersistentDirectoriesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[WorkstationsWorkstationConfigPersistentDirectoriesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1042,7 +1042,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkstationsWorkstationConfigPersistentDirectoriesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1050,11 +1050,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigReadinessChecks",
-		reflect.TypeOf((*WorkstationsWorkstationConfigReadinessChecks)(nil)).Elem(),
+		reflect.TypeFor[WorkstationsWorkstationConfigReadinessChecks](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigReadinessChecksList",
-		reflect.TypeOf((*WorkstationsWorkstationConfigReadinessChecksList)(nil)).Elem(),
+		reflect.TypeFor[WorkstationsWorkstationConfigReadinessChecksList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1068,7 +1068,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkstationsWorkstationConfigReadinessChecksList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1076,7 +1076,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigReadinessChecksOutputReference",
-		reflect.TypeOf((*WorkstationsWorkstationConfigReadinessChecksOutputReference)(nil)).Elem(),
+		reflect.TypeFor[WorkstationsWorkstationConfigReadinessChecksOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1104,7 +1104,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkstationsWorkstationConfigReadinessChecksOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1112,11 +1112,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigTimeouts",
-		reflect.TypeOf((*WorkstationsWorkstationConfigTimeouts)(nil)).Elem(),
+		reflect.TypeFor[WorkstationsWorkstationConfigTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigTimeoutsOutputReference",
-		reflect.TypeOf((*WorkstationsWorkstationConfigTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[WorkstationsWorkstationConfigTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1149,7 +1149,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkstationsWorkstationConfigTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

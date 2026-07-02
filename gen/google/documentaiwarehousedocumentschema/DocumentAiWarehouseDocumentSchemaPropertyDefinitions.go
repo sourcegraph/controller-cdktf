@@ -1,6 +1,5 @@
 package documentaiwarehousedocumentschema
 
-
 type DocumentAiWarehouseDocumentSchemaPropertyDefinitions struct {
 	// The name of the metadata property.
 	//
@@ -29,23 +28,23 @@ type DocumentAiWarehouseDocumentSchemaPropertyDefinitions struct {
 	// Whether the property can be filtered. If this is a sub-property, all the parent properties must be marked filterable.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/document_ai_warehouse_document_schema#is_filterable DocumentAiWarehouseDocumentSchema#is_filterable}
-	IsFilterable interface{} `field:"optional" json:"isFilterable" yaml:"isFilterable"`
+	IsFilterable any `field:"optional" json:"isFilterable" yaml:"isFilterable"`
 	// Whether the property is user supplied metadata.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/document_ai_warehouse_document_schema#is_metadata DocumentAiWarehouseDocumentSchema#is_metadata}
-	IsMetadata interface{} `field:"optional" json:"isMetadata" yaml:"isMetadata"`
+	IsMetadata any `field:"optional" json:"isMetadata" yaml:"isMetadata"`
 	// Whether the property can have multiple values.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/document_ai_warehouse_document_schema#is_repeatable DocumentAiWarehouseDocumentSchema#is_repeatable}
-	IsRepeatable interface{} `field:"optional" json:"isRepeatable" yaml:"isRepeatable"`
+	IsRepeatable any `field:"optional" json:"isRepeatable" yaml:"isRepeatable"`
 	// Whether the property is mandatory.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/document_ai_warehouse_document_schema#is_required DocumentAiWarehouseDocumentSchema#is_required}
-	IsRequired interface{} `field:"optional" json:"isRequired" yaml:"isRequired"`
+	IsRequired any `field:"optional" json:"isRequired" yaml:"isRequired"`
 	// Indicates that the property should be included in a global search.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/document_ai_warehouse_document_schema#is_searchable DocumentAiWarehouseDocumentSchema#is_searchable}
-	IsSearchable interface{} `field:"optional" json:"isSearchable" yaml:"isSearchable"`
+	IsSearchable any `field:"optional" json:"isSearchable" yaml:"isSearchable"`
 	// map_type_options block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/document_ai_warehouse_document_schema#map_type_options DocumentAiWarehouseDocumentSchema#map_type_options}
@@ -61,7 +60,7 @@ type DocumentAiWarehouseDocumentSchemaPropertyDefinitions struct {
 	// schema_sources block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/document_ai_warehouse_document_schema#schema_sources DocumentAiWarehouseDocumentSchema#schema_sources}
-	SchemaSources interface{} `field:"optional" json:"schemaSources" yaml:"schemaSources"`
+	SchemaSources any `field:"optional" json:"schemaSources" yaml:"schemaSources"`
 	// text_type_options block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/document_ai_warehouse_document_schema#text_type_options DocumentAiWarehouseDocumentSchema#text_type_options}
@@ -71,4 +70,3 @@ type DocumentAiWarehouseDocumentSchemaPropertyDefinitions struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/document_ai_warehouse_document_schema#timestamp_type_options DocumentAiWarehouseDocumentSchema#timestamp_type_options}
 	TimestampTypeOptions *DocumentAiWarehouseDocumentSchemaPropertyDefinitionsTimestampTypeOptions `field:"optional" json:"timestampTypeOptions" yaml:"timestampTypeOptions"`
 }
-

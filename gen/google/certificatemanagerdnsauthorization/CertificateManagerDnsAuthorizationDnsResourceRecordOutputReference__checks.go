@@ -98,7 +98,7 @@ func (c *jsiiProxy_CertificateManagerDnsAuthorizationDnsResourceRecordOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_CertificateManagerDnsAuthorizationDnsResourceRecordOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CertificateManagerDnsAuthorizationDnsResourceRecordOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewCertificateManagerDnsAuthorizationDnsResourceRecordOutputReferen
 
 	return nil
 }
-

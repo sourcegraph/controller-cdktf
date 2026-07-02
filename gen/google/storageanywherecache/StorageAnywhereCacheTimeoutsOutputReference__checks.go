@@ -98,7 +98,7 @@ func (s *jsiiProxy_StorageAnywhereCacheTimeoutsOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_StorageAnywhereCacheTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_StorageAnywhereCacheTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_StorageAnywhereCacheTimeoutsOutputReference) validateSetDelet
 	return nil
 }
 
-func (j *jsiiProxy_StorageAnywhereCacheTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_StorageAnywhereCacheTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewStorageAnywhereCacheTimeoutsOutputReferenceParameters(terraformR
 
 	return nil
 }
-

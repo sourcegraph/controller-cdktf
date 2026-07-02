@@ -98,7 +98,7 @@ func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigMemoryManagerO
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigMemoryManagerOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigMemoryManagerOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewContainerClusterNodePoolNodeConfigKubeletConfigMemoryManagerOutp
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItem",
-		reflect.TypeOf((*ComputeProjectMetadataItem)(nil)).Elem(),
+		reflect.TypeFor[ComputeProjectMetadataItem](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -67,7 +67,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeProjectMetadataItem{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -75,15 +75,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItemConfig",
-		reflect.TypeOf((*ComputeProjectMetadataItemConfig)(nil)).Elem(),
+		reflect.TypeFor[ComputeProjectMetadataItemConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItemTimeouts",
-		reflect.TypeOf((*ComputeProjectMetadataItemTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ComputeProjectMetadataItemTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItemTimeoutsOutputReference",
-		reflect.TypeOf((*ComputeProjectMetadataItemTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeProjectMetadataItemTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -116,7 +116,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeProjectMetadataItemTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

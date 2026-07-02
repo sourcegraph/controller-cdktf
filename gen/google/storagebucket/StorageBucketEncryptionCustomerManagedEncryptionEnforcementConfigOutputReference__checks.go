@@ -98,7 +98,7 @@ func (s *jsiiProxy_StorageBucketEncryptionCustomerManagedEncryptionEnforcementCo
 	return nil
 }
 
-func (j *jsiiProxy_StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewStorageBucketEncryptionCustomerManagedEncryptionEnforcementConfi
 
 	return nil
 }
-

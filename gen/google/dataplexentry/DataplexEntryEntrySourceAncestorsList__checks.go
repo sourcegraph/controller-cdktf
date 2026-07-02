@@ -34,7 +34,7 @@ func (d *jsiiProxy_DataplexEntryEntrySourceAncestorsList) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_DataplexEntryEntrySourceAncestorsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataplexEntryEntrySourceAncestorsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDataplexEntryEntrySourceAncestorsListParameters(terraformResourc
 
 	return nil
 }
-

@@ -18,9 +18,9 @@ type StorageTransferJobTransferSpecOutputReference interface {
 	AzureBlobStorageDataSourceInput() *StorageTransferJobTransferSpecAzureBlobStorageDataSource
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -70,7 +70,7 @@ type StorageTransferJobTransferSpecOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -119,7 +119,7 @@ type StorageTransferJobTransferSpecOutputReference interface {
 	ResetTransferOptions()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -192,8 +192,8 @@ func (j *jsiiProxy_StorageTransferJobTransferSpecOutputReference) AzureBlobStora
 	return returns
 }
 
-func (j *jsiiProxy_StorageTransferJobTransferSpecOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StorageTransferJobTransferSpecOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -482,7 +482,6 @@ func (j *jsiiProxy_StorageTransferJobTransferSpecOutputReference) TransferOption
 	return returns
 }
 
-
 func NewStorageTransferJobTransferSpecOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) StorageTransferJobTransferSpecOutputReference {
 	_init_.Initialize()
 
@@ -493,7 +492,7 @@ func NewStorageTransferJobTransferSpecOutputReference(terraformResource cdktf.II
 
 	_jsii_.Create(
 		"@cdktf/provider-google.storageTransferJob.StorageTransferJobTransferSpecOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -505,12 +504,12 @@ func NewStorageTransferJobTransferSpecOutputReference_Override(s StorageTransfer
 
 	_jsii_.Create(
 		"@cdktf/provider-google.storageTransferJob.StorageTransferJobTransferSpecOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		s,
 	)
 }
 
-func (j *jsiiProxy_StorageTransferJobTransferSpecOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_StorageTransferJobTransferSpecOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -521,7 +520,7 @@ func (j *jsiiProxy_StorageTransferJobTransferSpecOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_StorageTransferJobTransferSpecOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_StorageTransferJobTransferSpecOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -532,7 +531,7 @@ func (j *jsiiProxy_StorageTransferJobTransferSpecOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_StorageTransferJobTransferSpecOutputReference)SetInternalValue(val *StorageTransferJobTransferSpec) {
+func (j *jsiiProxy_StorageTransferJobTransferSpecOutputReference) SetInternalValue(val *StorageTransferJobTransferSpec) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -543,7 +542,7 @@ func (j *jsiiProxy_StorageTransferJobTransferSpecOutputReference)SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_StorageTransferJobTransferSpecOutputReference)SetSinkAgentPoolName(val *string) {
+func (j *jsiiProxy_StorageTransferJobTransferSpecOutputReference) SetSinkAgentPoolName(val *string) {
 	if err := j.validateSetSinkAgentPoolNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -554,7 +553,7 @@ func (j *jsiiProxy_StorageTransferJobTransferSpecOutputReference)SetSinkAgentPoo
 	)
 }
 
-func (j *jsiiProxy_StorageTransferJobTransferSpecOutputReference)SetSourceAgentPoolName(val *string) {
+func (j *jsiiProxy_StorageTransferJobTransferSpecOutputReference) SetSourceAgentPoolName(val *string) {
 	if err := j.validateSetSourceAgentPoolNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -565,7 +564,7 @@ func (j *jsiiProxy_StorageTransferJobTransferSpecOutputReference)SetSourceAgentP
 	)
 }
 
-func (j *jsiiProxy_StorageTransferJobTransferSpecOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_StorageTransferJobTransferSpecOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -576,7 +575,7 @@ func (j *jsiiProxy_StorageTransferJobTransferSpecOutputReference)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_StorageTransferJobTransferSpecOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_StorageTransferJobTransferSpecOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -600,16 +599,16 @@ func (s *jsiiProxy_StorageTransferJobTransferSpecOutputReference) ComputeFqn() *
 	return returns
 }
 
-func (s *jsiiProxy_StorageTransferJobTransferSpecOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_StorageTransferJobTransferSpecOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -625,7 +624,7 @@ func (s *jsiiProxy_StorageTransferJobTransferSpecOutputReference) GetBooleanAttr
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -641,7 +640,7 @@ func (s *jsiiProxy_StorageTransferJobTransferSpecOutputReference) GetBooleanMapA
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -657,7 +656,7 @@ func (s *jsiiProxy_StorageTransferJobTransferSpecOutputReference) GetListAttribu
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -673,7 +672,7 @@ func (s *jsiiProxy_StorageTransferJobTransferSpecOutputReference) GetNumberAttri
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -689,7 +688,7 @@ func (s *jsiiProxy_StorageTransferJobTransferSpecOutputReference) GetNumberListA
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -705,7 +704,7 @@ func (s *jsiiProxy_StorageTransferJobTransferSpecOutputReference) GetNumberMapAt
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -721,7 +720,7 @@ func (s *jsiiProxy_StorageTransferJobTransferSpecOutputReference) GetStringAttri
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -737,7 +736,7 @@ func (s *jsiiProxy_StorageTransferJobTransferSpecOutputReference) GetStringMapAt
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -766,7 +765,7 @@ func (s *jsiiProxy_StorageTransferJobTransferSpecOutputReference) InterpolationF
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -780,7 +779,7 @@ func (s *jsiiProxy_StorageTransferJobTransferSpecOutputReference) PutAwsS3Compat
 	_jsii_.InvokeVoid(
 		s,
 		"putAwsS3CompatibleDataSource",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -791,7 +790,7 @@ func (s *jsiiProxy_StorageTransferJobTransferSpecOutputReference) PutAwsS3DataSo
 	_jsii_.InvokeVoid(
 		s,
 		"putAwsS3DataSource",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -802,7 +801,7 @@ func (s *jsiiProxy_StorageTransferJobTransferSpecOutputReference) PutAzureBlobSt
 	_jsii_.InvokeVoid(
 		s,
 		"putAzureBlobStorageDataSource",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -813,7 +812,7 @@ func (s *jsiiProxy_StorageTransferJobTransferSpecOutputReference) PutGcsDataSink
 	_jsii_.InvokeVoid(
 		s,
 		"putGcsDataSink",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -824,7 +823,7 @@ func (s *jsiiProxy_StorageTransferJobTransferSpecOutputReference) PutGcsDataSour
 	_jsii_.InvokeVoid(
 		s,
 		"putGcsDataSource",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -835,7 +834,7 @@ func (s *jsiiProxy_StorageTransferJobTransferSpecOutputReference) PutHdfsDataSou
 	_jsii_.InvokeVoid(
 		s,
 		"putHdfsDataSource",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -846,7 +845,7 @@ func (s *jsiiProxy_StorageTransferJobTransferSpecOutputReference) PutHttpDataSou
 	_jsii_.InvokeVoid(
 		s,
 		"putHttpDataSource",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -857,7 +856,7 @@ func (s *jsiiProxy_StorageTransferJobTransferSpecOutputReference) PutObjectCondi
 	_jsii_.InvokeVoid(
 		s,
 		"putObjectConditions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -868,7 +867,7 @@ func (s *jsiiProxy_StorageTransferJobTransferSpecOutputReference) PutPosixDataSi
 	_jsii_.InvokeVoid(
 		s,
 		"putPosixDataSink",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -879,7 +878,7 @@ func (s *jsiiProxy_StorageTransferJobTransferSpecOutputReference) PutPosixDataSo
 	_jsii_.InvokeVoid(
 		s,
 		"putPosixDataSource",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -890,7 +889,7 @@ func (s *jsiiProxy_StorageTransferJobTransferSpecOutputReference) PutTransferMan
 	_jsii_.InvokeVoid(
 		s,
 		"putTransferManifest",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -901,7 +900,7 @@ func (s *jsiiProxy_StorageTransferJobTransferSpecOutputReference) PutTransferOpt
 	_jsii_.InvokeVoid(
 		s,
 		"putTransferOptions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1017,16 +1016,16 @@ func (s *jsiiProxy_StorageTransferJobTransferSpecOutputReference) ResetTransferO
 	)
 }
 
-func (s *jsiiProxy_StorageTransferJobTransferSpecOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_StorageTransferJobTransferSpecOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -1045,4 +1044,3 @@ func (s *jsiiProxy_StorageTransferJobTransferSpecOutputReference) ToString() *st
 
 	return returns
 }
-

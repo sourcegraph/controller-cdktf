@@ -90,7 +90,7 @@ func (d *jsiiProxy_DataLineageConfigIngestionOutputReference) validateInterpolat
 	return nil
 }
 
-func (d *jsiiProxy_DataLineageConfigIngestionOutputReference) validatePutRuleParameters(value interface{}) error {
+func (d *jsiiProxy_DataLineageConfigIngestionOutputReference) validatePutRuleParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (d *jsiiProxy_DataLineageConfigIngestionOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_DataLineageConfigIngestionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataLineageConfigIngestionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -229,4 +229,3 @@ func validateNewDataLineageConfigIngestionOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

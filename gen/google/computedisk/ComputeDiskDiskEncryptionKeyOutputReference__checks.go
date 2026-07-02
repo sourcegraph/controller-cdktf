@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeDiskDiskEncryptionKeyOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_ComputeDiskDiskEncryptionKeyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeDiskDiskEncryptionKeyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewComputeDiskDiskEncryptionKeyOutputReferenceParameters(terraformR
 
 	return nil
 }
-

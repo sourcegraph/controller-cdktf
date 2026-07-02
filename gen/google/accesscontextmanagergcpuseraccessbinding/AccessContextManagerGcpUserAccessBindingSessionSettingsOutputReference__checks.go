@@ -98,7 +98,7 @@ func (a *jsiiProxy_AccessContextManagerGcpUserAccessBindingSessionSettingsOutput
 	return nil
 }
 
-func (j *jsiiProxy_AccessContextManagerGcpUserAccessBindingSessionSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AccessContextManagerGcpUserAccessBindingSessionSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -187,7 +187,7 @@ func (j *jsiiProxy_AccessContextManagerGcpUserAccessBindingSessionSettingsOutput
 	return nil
 }
 
-func (j *jsiiProxy_AccessContextManagerGcpUserAccessBindingSessionSettingsOutputReference) validateSetSessionLengthEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_AccessContextManagerGcpUserAccessBindingSessionSettingsOutputReference) validateSetSessionLengthEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func (j *jsiiProxy_AccessContextManagerGcpUserAccessBindingSessionSettingsOutput
 	return nil
 }
 
-func (j *jsiiProxy_AccessContextManagerGcpUserAccessBindingSessionSettingsOutputReference) validateSetUseOidcMaxAgeParameters(val interface{}) error {
+func (j *jsiiProxy_AccessContextManagerGcpUserAccessBindingSessionSettingsOutputReference) validateSetUseOidcMaxAgeParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -262,4 +262,3 @@ func validateNewAccessContextManagerGcpUserAccessBindingSessionSettingsOutputRef
 
 	return nil
 }
-

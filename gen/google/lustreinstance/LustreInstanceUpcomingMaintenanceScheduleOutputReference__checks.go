@@ -98,7 +98,7 @@ func (l *jsiiProxy_LustreInstanceUpcomingMaintenanceScheduleOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_LustreInstanceUpcomingMaintenanceScheduleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LustreInstanceUpcomingMaintenanceScheduleOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewLustreInstanceUpcomingMaintenanceScheduleOutputReferenceParamete
 
 	return nil
 }
-

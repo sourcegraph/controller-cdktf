@@ -98,7 +98,7 @@ func (b *jsiiProxy_BigqueryTableExternalDataConfigurationBigtableOptionsColumnFa
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_BigqueryTableExternalDataConfigurationBigtableOptionsColumnFa
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -203,7 +203,7 @@ func (j *jsiiProxy_BigqueryTableExternalDataConfigurationBigtableOptionsColumnFa
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnOutputReference) validateSetOnlyReadLatestParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnOutputReference) validateSetOnlyReadLatestParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -282,4 +282,3 @@ func validateNewBigqueryTableExternalDataConfigurationBigtableOptionsColumnFamil
 
 	return nil
 }
-

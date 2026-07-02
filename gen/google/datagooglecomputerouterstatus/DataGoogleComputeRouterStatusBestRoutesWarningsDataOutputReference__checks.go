@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleComputeRouterStatusBestRoutesWarningsDataOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeRouterStatusBestRoutesWarningsDataOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleComputeRouterStatusBestRoutesWarningsDataOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleComputeRouterStatusBestRoutesWarningsDataOutputReferen
 
 	return nil
 }
-

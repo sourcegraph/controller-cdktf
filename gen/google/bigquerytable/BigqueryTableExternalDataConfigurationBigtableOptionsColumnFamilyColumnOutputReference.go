@@ -12,9 +12,9 @@ type BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnOutp
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,11 +33,11 @@ type BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnOutp
 	FieldNameInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
-	OnlyReadLatest() interface{}
-	SetOnlyReadLatest(val interface{})
-	OnlyReadLatestInput() interface{}
+	InternalValue() any
+	SetInternalValue(val any)
+	OnlyReadLatest() any
+	SetOnlyReadLatest(val any)
+	OnlyReadLatestInput() any
 	QualifierEncoded() *string
 	SetQualifierEncoded(val *string)
 	QualifierEncodedInput() *string
@@ -58,7 +58,7 @@ type BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnOutp
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -87,7 +87,7 @@ type BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnOutp
 	ResetType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -100,8 +100,8 @@ type jsiiProxy_BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamily
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -180,8 +180,8 @@ func (j *jsiiProxy_BigqueryTableExternalDataConfigurationBigtableOptionsColumnFa
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -190,8 +190,8 @@ func (j *jsiiProxy_BigqueryTableExternalDataConfigurationBigtableOptionsColumnFa
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnOutputReference) OnlyReadLatest() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnOutputReference) OnlyReadLatest() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"onlyReadLatest",
@@ -200,8 +200,8 @@ func (j *jsiiProxy_BigqueryTableExternalDataConfigurationBigtableOptionsColumnFa
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnOutputReference) OnlyReadLatestInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnOutputReference) OnlyReadLatestInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"onlyReadLatestInput",
@@ -290,7 +290,6 @@ func (j *jsiiProxy_BigqueryTableExternalDataConfigurationBigtableOptionsColumnFa
 	return returns
 }
 
-
 func NewBigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnOutputReference {
 	_init_.Initialize()
 
@@ -301,7 +300,7 @@ func NewBigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnO
 
 	_jsii_.Create(
 		"@cdktf/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -313,12 +312,12 @@ func NewBigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnO
 
 	_jsii_.Create(
 		"@cdktf/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		b,
 	)
 }
 
-func (j *jsiiProxy_BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -329,7 +328,7 @@ func (j *jsiiProxy_BigqueryTableExternalDataConfigurationBigtableOptionsColumnFa
 	)
 }
 
-func (j *jsiiProxy_BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -340,7 +339,7 @@ func (j *jsiiProxy_BigqueryTableExternalDataConfigurationBigtableOptionsColumnFa
 	)
 }
 
-func (j *jsiiProxy_BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnOutputReference)SetEncoding(val *string) {
+func (j *jsiiProxy_BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnOutputReference) SetEncoding(val *string) {
 	if err := j.validateSetEncodingParameters(val); err != nil {
 		panic(err)
 	}
@@ -351,7 +350,7 @@ func (j *jsiiProxy_BigqueryTableExternalDataConfigurationBigtableOptionsColumnFa
 	)
 }
 
-func (j *jsiiProxy_BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnOutputReference)SetFieldName(val *string) {
+func (j *jsiiProxy_BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnOutputReference) SetFieldName(val *string) {
 	if err := j.validateSetFieldNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -362,7 +361,7 @@ func (j *jsiiProxy_BigqueryTableExternalDataConfigurationBigtableOptionsColumnFa
 	)
 }
 
-func (j *jsiiProxy_BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -373,7 +372,7 @@ func (j *jsiiProxy_BigqueryTableExternalDataConfigurationBigtableOptionsColumnFa
 	)
 }
 
-func (j *jsiiProxy_BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnOutputReference)SetOnlyReadLatest(val interface{}) {
+func (j *jsiiProxy_BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnOutputReference) SetOnlyReadLatest(val any) {
 	if err := j.validateSetOnlyReadLatestParameters(val); err != nil {
 		panic(err)
 	}
@@ -384,7 +383,7 @@ func (j *jsiiProxy_BigqueryTableExternalDataConfigurationBigtableOptionsColumnFa
 	)
 }
 
-func (j *jsiiProxy_BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnOutputReference)SetQualifierEncoded(val *string) {
+func (j *jsiiProxy_BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnOutputReference) SetQualifierEncoded(val *string) {
 	if err := j.validateSetQualifierEncodedParameters(val); err != nil {
 		panic(err)
 	}
@@ -395,7 +394,7 @@ func (j *jsiiProxy_BigqueryTableExternalDataConfigurationBigtableOptionsColumnFa
 	)
 }
 
-func (j *jsiiProxy_BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnOutputReference)SetQualifierString(val *string) {
+func (j *jsiiProxy_BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnOutputReference) SetQualifierString(val *string) {
 	if err := j.validateSetQualifierStringParameters(val); err != nil {
 		panic(err)
 	}
@@ -406,7 +405,7 @@ func (j *jsiiProxy_BigqueryTableExternalDataConfigurationBigtableOptionsColumnFa
 	)
 }
 
-func (j *jsiiProxy_BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,7 +416,7 @@ func (j *jsiiProxy_BigqueryTableExternalDataConfigurationBigtableOptionsColumnFa
 	)
 }
 
-func (j *jsiiProxy_BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -428,7 +427,7 @@ func (j *jsiiProxy_BigqueryTableExternalDataConfigurationBigtableOptionsColumnFa
 	)
 }
 
-func (j *jsiiProxy_BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnOutputReference)SetType(val *string) {
+func (j *jsiiProxy_BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnOutputReference) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,16 +451,16 @@ func (b *jsiiProxy_BigqueryTableExternalDataConfigurationBigtableOptionsColumnFa
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (b *jsiiProxy_BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := b.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -477,7 +476,7 @@ func (b *jsiiProxy_BigqueryTableExternalDataConfigurationBigtableOptionsColumnFa
 	_jsii_.Invoke(
 		b,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -493,7 +492,7 @@ func (b *jsiiProxy_BigqueryTableExternalDataConfigurationBigtableOptionsColumnFa
 	_jsii_.Invoke(
 		b,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -509,7 +508,7 @@ func (b *jsiiProxy_BigqueryTableExternalDataConfigurationBigtableOptionsColumnFa
 	_jsii_.Invoke(
 		b,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -525,7 +524,7 @@ func (b *jsiiProxy_BigqueryTableExternalDataConfigurationBigtableOptionsColumnFa
 	_jsii_.Invoke(
 		b,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -541,7 +540,7 @@ func (b *jsiiProxy_BigqueryTableExternalDataConfigurationBigtableOptionsColumnFa
 	_jsii_.Invoke(
 		b,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -557,7 +556,7 @@ func (b *jsiiProxy_BigqueryTableExternalDataConfigurationBigtableOptionsColumnFa
 	_jsii_.Invoke(
 		b,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -573,7 +572,7 @@ func (b *jsiiProxy_BigqueryTableExternalDataConfigurationBigtableOptionsColumnFa
 	_jsii_.Invoke(
 		b,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -589,7 +588,7 @@ func (b *jsiiProxy_BigqueryTableExternalDataConfigurationBigtableOptionsColumnFa
 	_jsii_.Invoke(
 		b,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -618,7 +617,7 @@ func (b *jsiiProxy_BigqueryTableExternalDataConfigurationBigtableOptionsColumnFa
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -673,16 +672,16 @@ func (b *jsiiProxy_BigqueryTableExternalDataConfigurationBigtableOptionsColumnFa
 	)
 }
 
-func (b *jsiiProxy_BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (b *jsiiProxy_BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := b.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -701,4 +700,3 @@ func (b *jsiiProxy_BigqueryTableExternalDataConfigurationBigtableOptionsColumnFa
 
 	return returns
 }
-

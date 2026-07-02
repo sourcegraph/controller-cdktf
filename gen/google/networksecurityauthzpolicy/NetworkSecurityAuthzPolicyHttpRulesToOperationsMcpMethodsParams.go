@@ -1,6 +1,5 @@
 package networksecurityauthzpolicy
 
-
 type NetworkSecurityAuthzPolicyHttpRulesToOperationsMcpMethodsParams struct {
 	// A substring match on the MCP method parameter name.
 	//
@@ -13,7 +12,7 @@ type NetworkSecurityAuthzPolicyHttpRulesToOperationsMcpMethodsParams struct {
 	// Specifies that the string match should be case insensitive.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_authz_policy#ignore_case NetworkSecurityAuthzPolicy#ignore_case}
-	IgnoreCase interface{} `field:"optional" json:"ignoreCase" yaml:"ignoreCase"`
+	IgnoreCase any `field:"optional" json:"ignoreCase" yaml:"ignoreCase"`
 	// A prefix match on the MCP method parameter name.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_authz_policy#prefix NetworkSecurityAuthzPolicy#prefix}
@@ -23,4 +22,3 @@ type NetworkSecurityAuthzPolicyHttpRulesToOperationsMcpMethodsParams struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_authz_policy#suffix NetworkSecurityAuthzPolicy#suffix}
 	Suffix *string `field:"optional" json:"suffix" yaml:"suffix"`
 }
-

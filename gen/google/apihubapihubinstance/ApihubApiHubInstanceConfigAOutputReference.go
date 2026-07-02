@@ -15,9 +15,9 @@ type ApihubApiHubInstanceConfigAOutputReference interface {
 	CmekKeyNameInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -28,9 +28,9 @@ type ApihubApiHubInstanceConfigAOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	DisableSearch() interface{}
-	SetDisableSearch(val interface{})
-	DisableSearchInput() interface{}
+	DisableSearch() any
+	SetDisableSearch(val any)
+	DisableSearchInput() any
 	EncryptionType() *string
 	SetEncryptionType(val *string)
 	EncryptionTypeInput() *string
@@ -52,7 +52,7 @@ type ApihubApiHubInstanceConfigAOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -79,7 +79,7 @@ type ApihubApiHubInstanceConfigAOutputReference interface {
 	ResetVertexLocation()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -112,8 +112,8 @@ func (j *jsiiProxy_ApihubApiHubInstanceConfigAOutputReference) CmekKeyNameInput(
 	return returns
 }
 
-func (j *jsiiProxy_ApihubApiHubInstanceConfigAOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApihubApiHubInstanceConfigAOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -142,8 +142,8 @@ func (j *jsiiProxy_ApihubApiHubInstanceConfigAOutputReference) CreationStack() *
 	return returns
 }
 
-func (j *jsiiProxy_ApihubApiHubInstanceConfigAOutputReference) DisableSearch() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApihubApiHubInstanceConfigAOutputReference) DisableSearch() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableSearch",
@@ -152,8 +152,8 @@ func (j *jsiiProxy_ApihubApiHubInstanceConfigAOutputReference) DisableSearch() i
 	return returns
 }
 
-func (j *jsiiProxy_ApihubApiHubInstanceConfigAOutputReference) DisableSearchInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApihubApiHubInstanceConfigAOutputReference) DisableSearchInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableSearchInput",
@@ -242,7 +242,6 @@ func (j *jsiiProxy_ApihubApiHubInstanceConfigAOutputReference) VertexLocationInp
 	return returns
 }
 
-
 func NewApihubApiHubInstanceConfigAOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ApihubApiHubInstanceConfigAOutputReference {
 	_init_.Initialize()
 
@@ -253,7 +252,7 @@ func NewApihubApiHubInstanceConfigAOutputReference(terraformResource cdktf.IInte
 
 	_jsii_.Create(
 		"@cdktf/provider-google.apihubApiHubInstance.ApihubApiHubInstanceConfigAOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -265,12 +264,12 @@ func NewApihubApiHubInstanceConfigAOutputReference_Override(a ApihubApiHubInstan
 
 	_jsii_.Create(
 		"@cdktf/provider-google.apihubApiHubInstance.ApihubApiHubInstanceConfigAOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		a,
 	)
 }
 
-func (j *jsiiProxy_ApihubApiHubInstanceConfigAOutputReference)SetCmekKeyName(val *string) {
+func (j *jsiiProxy_ApihubApiHubInstanceConfigAOutputReference) SetCmekKeyName(val *string) {
 	if err := j.validateSetCmekKeyNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,7 +280,7 @@ func (j *jsiiProxy_ApihubApiHubInstanceConfigAOutputReference)SetCmekKeyName(val
 	)
 }
 
-func (j *jsiiProxy_ApihubApiHubInstanceConfigAOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ApihubApiHubInstanceConfigAOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,7 +291,7 @@ func (j *jsiiProxy_ApihubApiHubInstanceConfigAOutputReference)SetComplexObjectIn
 	)
 }
 
-func (j *jsiiProxy_ApihubApiHubInstanceConfigAOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ApihubApiHubInstanceConfigAOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_ApihubApiHubInstanceConfigAOutputReference)SetComplexObjectIs
 	)
 }
 
-func (j *jsiiProxy_ApihubApiHubInstanceConfigAOutputReference)SetDisableSearch(val interface{}) {
+func (j *jsiiProxy_ApihubApiHubInstanceConfigAOutputReference) SetDisableSearch(val any) {
 	if err := j.validateSetDisableSearchParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_ApihubApiHubInstanceConfigAOutputReference)SetDisableSearch(v
 	)
 }
 
-func (j *jsiiProxy_ApihubApiHubInstanceConfigAOutputReference)SetEncryptionType(val *string) {
+func (j *jsiiProxy_ApihubApiHubInstanceConfigAOutputReference) SetEncryptionType(val *string) {
 	if err := j.validateSetEncryptionTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_ApihubApiHubInstanceConfigAOutputReference)SetEncryptionType(
 	)
 }
 
-func (j *jsiiProxy_ApihubApiHubInstanceConfigAOutputReference)SetInternalValue(val *ApihubApiHubInstanceConfigA) {
+func (j *jsiiProxy_ApihubApiHubInstanceConfigAOutputReference) SetInternalValue(val *ApihubApiHubInstanceConfigA) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_ApihubApiHubInstanceConfigAOutputReference)SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_ApihubApiHubInstanceConfigAOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ApihubApiHubInstanceConfigAOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_ApihubApiHubInstanceConfigAOutputReference)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_ApihubApiHubInstanceConfigAOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ApihubApiHubInstanceConfigAOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -358,7 +357,7 @@ func (j *jsiiProxy_ApihubApiHubInstanceConfigAOutputReference)SetTerraformResour
 	)
 }
 
-func (j *jsiiProxy_ApihubApiHubInstanceConfigAOutputReference)SetVertexLocation(val *string) {
+func (j *jsiiProxy_ApihubApiHubInstanceConfigAOutputReference) SetVertexLocation(val *string) {
 	if err := j.validateSetVertexLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,16 +381,16 @@ func (a *jsiiProxy_ApihubApiHubInstanceConfigAOutputReference) ComputeFqn() *str
 	return returns
 }
 
-func (a *jsiiProxy_ApihubApiHubInstanceConfigAOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_ApihubApiHubInstanceConfigAOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -407,7 +406,7 @@ func (a *jsiiProxy_ApihubApiHubInstanceConfigAOutputReference) GetBooleanAttribu
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -423,7 +422,7 @@ func (a *jsiiProxy_ApihubApiHubInstanceConfigAOutputReference) GetBooleanMapAttr
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -439,7 +438,7 @@ func (a *jsiiProxy_ApihubApiHubInstanceConfigAOutputReference) GetListAttribute(
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -455,7 +454,7 @@ func (a *jsiiProxy_ApihubApiHubInstanceConfigAOutputReference) GetNumberAttribut
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -471,7 +470,7 @@ func (a *jsiiProxy_ApihubApiHubInstanceConfigAOutputReference) GetNumberListAttr
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -487,7 +486,7 @@ func (a *jsiiProxy_ApihubApiHubInstanceConfigAOutputReference) GetNumberMapAttri
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -503,7 +502,7 @@ func (a *jsiiProxy_ApihubApiHubInstanceConfigAOutputReference) GetStringAttribut
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -519,7 +518,7 @@ func (a *jsiiProxy_ApihubApiHubInstanceConfigAOutputReference) GetStringMapAttri
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -548,7 +547,7 @@ func (a *jsiiProxy_ApihubApiHubInstanceConfigAOutputReference) InterpolationForA
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -587,16 +586,16 @@ func (a *jsiiProxy_ApihubApiHubInstanceConfigAOutputReference) ResetVertexLocati
 	)
 }
 
-func (a *jsiiProxy_ApihubApiHubInstanceConfigAOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_ApihubApiHubInstanceConfigAOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -615,4 +614,3 @@ func (a *jsiiProxy_ApihubApiHubInstanceConfigAOutputReference) ToString() *strin
 
 	return returns
 }
-

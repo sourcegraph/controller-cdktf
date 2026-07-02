@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.identityPlatformTenant.IdentityPlatformTenant",
-		reflect.TypeOf((*IdentityPlatformTenant)(nil)).Elem(),
+		reflect.TypeFor[IdentityPlatformTenant](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -79,7 +79,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IdentityPlatformTenant{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -87,11 +87,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.identityPlatformTenant.IdentityPlatformTenantClient",
-		reflect.TypeOf((*IdentityPlatformTenantClient)(nil)).Elem(),
+		reflect.TypeFor[IdentityPlatformTenantClient](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.identityPlatformTenant.IdentityPlatformTenantClientOutputReference",
-		reflect.TypeOf((*IdentityPlatformTenantClientOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IdentityPlatformTenantClientOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -119,7 +119,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IdentityPlatformTenantClientOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -127,11 +127,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.identityPlatformTenant.IdentityPlatformTenantClientPermissions",
-		reflect.TypeOf((*IdentityPlatformTenantClientPermissions)(nil)).Elem(),
+		reflect.TypeFor[IdentityPlatformTenantClientPermissions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.identityPlatformTenant.IdentityPlatformTenantClientPermissionsOutputReference",
-		reflect.TypeOf((*IdentityPlatformTenantClientPermissionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IdentityPlatformTenantClientPermissionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -161,7 +161,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IdentityPlatformTenantClientPermissionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -169,15 +169,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.identityPlatformTenant.IdentityPlatformTenantConfig",
-		reflect.TypeOf((*IdentityPlatformTenantConfig)(nil)).Elem(),
+		reflect.TypeFor[IdentityPlatformTenantConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.identityPlatformTenant.IdentityPlatformTenantTimeouts",
-		reflect.TypeOf((*IdentityPlatformTenantTimeouts)(nil)).Elem(),
+		reflect.TypeFor[IdentityPlatformTenantTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.identityPlatformTenant.IdentityPlatformTenantTimeoutsOutputReference",
-		reflect.TypeOf((*IdentityPlatformTenantTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IdentityPlatformTenantTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -210,7 +210,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IdentityPlatformTenantTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

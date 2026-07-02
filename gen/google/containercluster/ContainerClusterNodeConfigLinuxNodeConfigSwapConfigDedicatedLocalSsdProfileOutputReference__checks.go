@@ -98,7 +98,7 @@ func (c *jsiiProxy_ContainerClusterNodeConfigLinuxNodeConfigSwapConfigDedicatedL
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterNodeConfigLinuxNodeConfigSwapConfigDedicatedLocalSsdProfileOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterNodeConfigLinuxNodeConfigSwapConfigDedicatedLocalSsdProfileOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewContainerClusterNodeConfigLinuxNodeConfigSwapConfigDedicatedLoca
 
 	return nil
 }
-

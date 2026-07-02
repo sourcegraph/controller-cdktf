@@ -18,15 +18,15 @@ type FirebaseDataConnectService interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	DeletionPolicy() *string
 	SetDeletionPolicy(val *string)
@@ -73,11 +73,11 @@ type FirebaseDataConnectService interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Reconciling() cdktf.IResolvable
 	ServiceId() *string
 	SetServiceId(val *string)
@@ -86,20 +86,20 @@ type FirebaseDataConnectService interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() FirebaseDataConnectServiceTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Uid() *string
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -117,7 +117,7 @@ type FirebaseDataConnectService interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -129,7 +129,7 @@ type FirebaseDataConnectService interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -147,17 +147,17 @@ type FirebaseDataConnectService interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for FirebaseDataConnectService
@@ -195,8 +195,8 @@ func (j *jsiiProxy_FirebaseDataConnectService) CdktfStack() cdktf.TerraformStack
 	return returns
 }
 
-func (j *jsiiProxy_FirebaseDataConnectService) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FirebaseDataConnectService) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -205,8 +205,8 @@ func (j *jsiiProxy_FirebaseDataConnectService) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_FirebaseDataConnectService) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_FirebaseDataConnectService) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -215,8 +215,8 @@ func (j *jsiiProxy_FirebaseDataConnectService) ConstructNodeMetadata() *map[stri
 	return returns
 }
 
-func (j *jsiiProxy_FirebaseDataConnectService) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FirebaseDataConnectService) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -465,8 +465,8 @@ func (j *jsiiProxy_FirebaseDataConnectService) Provider() cdktf.TerraformProvide
 	return returns
 }
 
-func (j *jsiiProxy_FirebaseDataConnectService) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_FirebaseDataConnectService) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -475,8 +475,8 @@ func (j *jsiiProxy_FirebaseDataConnectService) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_FirebaseDataConnectService) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FirebaseDataConnectService) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -535,8 +535,8 @@ func (j *jsiiProxy_FirebaseDataConnectService) TerraformLabels() cdktf.StringMap
 	return returns
 }
 
-func (j *jsiiProxy_FirebaseDataConnectService) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_FirebaseDataConnectService) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -565,8 +565,8 @@ func (j *jsiiProxy_FirebaseDataConnectService) Timeouts() FirebaseDataConnectSer
 	return returns
 }
 
-func (j *jsiiProxy_FirebaseDataConnectService) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FirebaseDataConnectService) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -595,7 +595,6 @@ func (j *jsiiProxy_FirebaseDataConnectService) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebase_data_connect_service google_firebase_data_connect_service} Resource.
 func NewFirebaseDataConnectService(scope constructs.Construct, id *string, config *FirebaseDataConnectServiceConfig) FirebaseDataConnectService {
 	_init_.Initialize()
@@ -607,7 +606,7 @@ func NewFirebaseDataConnectService(scope constructs.Construct, id *string, confi
 
 	_jsii_.Create(
 		"@cdktf/provider-google.firebaseDataConnectService.FirebaseDataConnectService",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -620,12 +619,12 @@ func NewFirebaseDataConnectService_Override(f FirebaseDataConnectService, scope 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.firebaseDataConnectService.FirebaseDataConnectService",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		f,
 	)
 }
 
-func (j *jsiiProxy_FirebaseDataConnectService)SetAnnotations(val *map[string]*string) {
+func (j *jsiiProxy_FirebaseDataConnectService) SetAnnotations(val *map[string]*string) {
 	if err := j.validateSetAnnotationsParameters(val); err != nil {
 		panic(err)
 	}
@@ -636,7 +635,7 @@ func (j *jsiiProxy_FirebaseDataConnectService)SetAnnotations(val *map[string]*st
 	)
 }
 
-func (j *jsiiProxy_FirebaseDataConnectService)SetConnection(val interface{}) {
+func (j *jsiiProxy_FirebaseDataConnectService) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -647,7 +646,7 @@ func (j *jsiiProxy_FirebaseDataConnectService)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_FirebaseDataConnectService)SetCount(val interface{}) {
+func (j *jsiiProxy_FirebaseDataConnectService) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -658,7 +657,7 @@ func (j *jsiiProxy_FirebaseDataConnectService)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_FirebaseDataConnectService)SetDeletionPolicy(val *string) {
+func (j *jsiiProxy_FirebaseDataConnectService) SetDeletionPolicy(val *string) {
 	if err := j.validateSetDeletionPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -669,7 +668,7 @@ func (j *jsiiProxy_FirebaseDataConnectService)SetDeletionPolicy(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FirebaseDataConnectService)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_FirebaseDataConnectService) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -677,7 +676,7 @@ func (j *jsiiProxy_FirebaseDataConnectService)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_FirebaseDataConnectService)SetDisplayName(val *string) {
+func (j *jsiiProxy_FirebaseDataConnectService) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -688,7 +687,7 @@ func (j *jsiiProxy_FirebaseDataConnectService)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FirebaseDataConnectService)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_FirebaseDataConnectService) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -696,7 +695,7 @@ func (j *jsiiProxy_FirebaseDataConnectService)SetForEach(val cdktf.ITerraformIte
 	)
 }
 
-func (j *jsiiProxy_FirebaseDataConnectService)SetId(val *string) {
+func (j *jsiiProxy_FirebaseDataConnectService) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -707,7 +706,7 @@ func (j *jsiiProxy_FirebaseDataConnectService)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FirebaseDataConnectService)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_FirebaseDataConnectService) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -718,7 +717,7 @@ func (j *jsiiProxy_FirebaseDataConnectService)SetLabels(val *map[string]*string)
 	)
 }
 
-func (j *jsiiProxy_FirebaseDataConnectService)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_FirebaseDataConnectService) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -729,7 +728,7 @@ func (j *jsiiProxy_FirebaseDataConnectService)SetLifecycle(val *cdktf.TerraformR
 	)
 }
 
-func (j *jsiiProxy_FirebaseDataConnectService)SetLocation(val *string) {
+func (j *jsiiProxy_FirebaseDataConnectService) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -740,7 +739,7 @@ func (j *jsiiProxy_FirebaseDataConnectService)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FirebaseDataConnectService)SetProject(val *string) {
+func (j *jsiiProxy_FirebaseDataConnectService) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -751,7 +750,7 @@ func (j *jsiiProxy_FirebaseDataConnectService)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FirebaseDataConnectService)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_FirebaseDataConnectService) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -759,7 +758,7 @@ func (j *jsiiProxy_FirebaseDataConnectService)SetProvider(val cdktf.TerraformPro
 	)
 }
 
-func (j *jsiiProxy_FirebaseDataConnectService)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_FirebaseDataConnectService) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -770,7 +769,7 @@ func (j *jsiiProxy_FirebaseDataConnectService)SetProvisioners(val *[]interface{}
 	)
 }
 
-func (j *jsiiProxy_FirebaseDataConnectService)SetServiceId(val *string) {
+func (j *jsiiProxy_FirebaseDataConnectService) SetServiceId(val *string) {
 	if err := j.validateSetServiceIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -793,7 +792,7 @@ func FirebaseDataConnectService_GenerateConfigForImport(scope constructs.Constru
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.firebaseDataConnectService.FirebaseDataConnectService",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -817,7 +816,7 @@ func FirebaseDataConnectService_GenerateConfigForImport(scope constructs.Constru
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func FirebaseDataConnectService_IsConstruct(x interface{}) *bool {
+func FirebaseDataConnectService_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateFirebaseDataConnectService_IsConstructParameters(x); err != nil {
@@ -828,7 +827,7 @@ func FirebaseDataConnectService_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.firebaseDataConnectService.FirebaseDataConnectService",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -836,7 +835,7 @@ func FirebaseDataConnectService_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func FirebaseDataConnectService_IsTerraformElement(x interface{}) *bool {
+func FirebaseDataConnectService_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateFirebaseDataConnectService_IsTerraformElementParameters(x); err != nil {
@@ -847,7 +846,7 @@ func FirebaseDataConnectService_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.firebaseDataConnectService.FirebaseDataConnectService",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -855,7 +854,7 @@ func FirebaseDataConnectService_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func FirebaseDataConnectService_IsTerraformResource(x interface{}) *bool {
+func FirebaseDataConnectService_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateFirebaseDataConnectService_IsTerraformResourceParameters(x); err != nil {
@@ -866,7 +865,7 @@ func FirebaseDataConnectService_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.firebaseDataConnectService.FirebaseDataConnectService",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -891,31 +890,31 @@ func (f *jsiiProxy_FirebaseDataConnectService) AddMoveTarget(moveTarget *string)
 	_jsii_.InvokeVoid(
 		f,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (f *jsiiProxy_FirebaseDataConnectService) AddOverride(path *string, value interface{}) {
+func (f *jsiiProxy_FirebaseDataConnectService) AddOverride(path *string, value any) {
 	if err := f.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		f,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (f *jsiiProxy_FirebaseDataConnectService) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (f *jsiiProxy_FirebaseDataConnectService) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := f.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -931,7 +930,7 @@ func (f *jsiiProxy_FirebaseDataConnectService) GetBooleanAttribute(terraformAttr
 	_jsii_.Invoke(
 		f,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -947,7 +946,7 @@ func (f *jsiiProxy_FirebaseDataConnectService) GetBooleanMapAttribute(terraformA
 	_jsii_.Invoke(
 		f,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -963,7 +962,7 @@ func (f *jsiiProxy_FirebaseDataConnectService) GetListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		f,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -979,7 +978,7 @@ func (f *jsiiProxy_FirebaseDataConnectService) GetNumberAttribute(terraformAttri
 	_jsii_.Invoke(
 		f,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -995,7 +994,7 @@ func (f *jsiiProxy_FirebaseDataConnectService) GetNumberListAttribute(terraformA
 	_jsii_.Invoke(
 		f,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1011,7 +1010,7 @@ func (f *jsiiProxy_FirebaseDataConnectService) GetNumberMapAttribute(terraformAt
 	_jsii_.Invoke(
 		f,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1027,7 +1026,7 @@ func (f *jsiiProxy_FirebaseDataConnectService) GetStringAttribute(terraformAttri
 	_jsii_.Invoke(
 		f,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1043,15 +1042,15 @@ func (f *jsiiProxy_FirebaseDataConnectService) GetStringMapAttribute(terraformAt
 	_jsii_.Invoke(
 		f,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (f *jsiiProxy_FirebaseDataConnectService) HasResourceMove() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FirebaseDataConnectService) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -1070,7 +1069,7 @@ func (f *jsiiProxy_FirebaseDataConnectService) ImportFrom(id *string, provider c
 	_jsii_.InvokeVoid(
 		f,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1083,7 +1082,7 @@ func (f *jsiiProxy_FirebaseDataConnectService) InterpolationForAttribute(terrafo
 	_jsii_.Invoke(
 		f,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1097,18 +1096,18 @@ func (f *jsiiProxy_FirebaseDataConnectService) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		f,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (f *jsiiProxy_FirebaseDataConnectService) MoveTo(moveTarget *string, index interface{}) {
+func (f *jsiiProxy_FirebaseDataConnectService) MoveTo(moveTarget *string, index any) {
 	if err := f.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		f,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1119,7 +1118,7 @@ func (f *jsiiProxy_FirebaseDataConnectService) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		f,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1130,7 +1129,7 @@ func (f *jsiiProxy_FirebaseDataConnectService) OverrideLogicalId(newLogicalId *s
 	_jsii_.InvokeVoid(
 		f,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1141,7 +1140,7 @@ func (f *jsiiProxy_FirebaseDataConnectService) PutTimeouts(value *FirebaseDataCo
 	_jsii_.InvokeVoid(
 		f,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1209,8 +1208,8 @@ func (f *jsiiProxy_FirebaseDataConnectService) ResetTimeouts() {
 	)
 }
 
-func (f *jsiiProxy_FirebaseDataConnectService) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (f *jsiiProxy_FirebaseDataConnectService) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
@@ -1222,8 +1221,8 @@ func (f *jsiiProxy_FirebaseDataConnectService) SynthesizeAttributes() *map[strin
 	return returns
 }
 
-func (f *jsiiProxy_FirebaseDataConnectService) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (f *jsiiProxy_FirebaseDataConnectService) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
@@ -1235,8 +1234,8 @@ func (f *jsiiProxy_FirebaseDataConnectService) SynthesizeHclAttributes() *map[st
 	return returns
 }
 
-func (f *jsiiProxy_FirebaseDataConnectService) ToHclTerraform() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FirebaseDataConnectService) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -1248,8 +1247,8 @@ func (f *jsiiProxy_FirebaseDataConnectService) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (f *jsiiProxy_FirebaseDataConnectService) ToMetadata() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FirebaseDataConnectService) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -1274,8 +1273,8 @@ func (f *jsiiProxy_FirebaseDataConnectService) ToString() *string {
 	return returns
 }
 
-func (f *jsiiProxy_FirebaseDataConnectService) ToTerraform() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FirebaseDataConnectService) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -1286,4 +1285,3 @@ func (f *jsiiProxy_FirebaseDataConnectService) ToTerraform() interface{} {
 
 	return returns
 }
-

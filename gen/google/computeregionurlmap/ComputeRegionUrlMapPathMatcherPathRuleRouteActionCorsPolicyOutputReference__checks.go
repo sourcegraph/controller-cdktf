@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicyOu
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicyOutputReference) validateSetAllowCredentialsParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicyOutputReference) validateSetAllowCredentialsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -150,7 +150,7 @@ func (j *jsiiProxy_ComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicyOu
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -215,7 +215,7 @@ func (j *jsiiProxy_ComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicyOu
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicyOutputReference) validateSetDisabledParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicyOutputReference) validateSetDisabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -286,4 +286,3 @@ func validateNewComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicyOutpu
 
 	return nil
 }
-

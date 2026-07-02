@@ -1,6 +1,5 @@
 package containercluster
 
-
 type ContainerClusterNodeConfig struct {
 	// advanced_machine_features block.
 	//
@@ -33,7 +32,7 @@ type ContainerClusterNodeConfig struct {
 	// If enabled boot disks are configured with confidential mode.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#enable_confidential_storage ContainerCluster#enable_confidential_storage}
-	EnableConfidentialStorage interface{} `field:"optional" json:"enableConfidentialStorage" yaml:"enableConfidentialStorage"`
+	EnableConfidentialStorage any `field:"optional" json:"enableConfidentialStorage" yaml:"enableConfidentialStorage"`
 	// ephemeral_storage_local_ssd_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#ephemeral_storage_local_ssd_config ContainerCluster#ephemeral_storage_local_ssd_config}
@@ -45,7 +44,7 @@ type ContainerClusterNodeConfig struct {
 	// Enables Flex Start provisioning model for the node pool.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#flex_start ContainerCluster#flex_start}
-	FlexStart interface{} `field:"optional" json:"flexStart" yaml:"flexStart"`
+	FlexStart any `field:"optional" json:"flexStart" yaml:"flexStart"`
 	// gcfs_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#gcfs_config ContainerCluster#gcfs_config}
@@ -53,7 +52,7 @@ type ContainerClusterNodeConfig struct {
 	// guest_accelerator block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#guest_accelerator ContainerCluster#guest_accelerator}
-	GuestAccelerator interface{} `field:"optional" json:"guestAccelerator" yaml:"guestAccelerator"`
+	GuestAccelerator any `field:"optional" json:"guestAccelerator" yaml:"guestAccelerator"`
 	// gvnic block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#gvnic ContainerCluster#gvnic}
@@ -131,7 +130,7 @@ type ContainerClusterNodeConfig struct {
 	// Whether the nodes are created as preemptible VM instances.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#preemptible ContainerCluster#preemptible}
-	Preemptible interface{} `field:"optional" json:"preemptible" yaml:"preemptible"`
+	Preemptible any `field:"optional" json:"preemptible" yaml:"preemptible"`
 	// reservation_affinity block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#reservation_affinity ContainerCluster#reservation_affinity}
@@ -153,7 +152,7 @@ type ContainerClusterNodeConfig struct {
 	// secondary_boot_disks block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#secondary_boot_disks ContainerCluster#secondary_boot_disks}
-	SecondaryBootDisks interface{} `field:"optional" json:"secondaryBootDisks" yaml:"secondaryBootDisks"`
+	SecondaryBootDisks any `field:"optional" json:"secondaryBootDisks" yaml:"secondaryBootDisks"`
 	// The Google Cloud Platform Service Account to be used by the node VMs.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#service_account ContainerCluster#service_account}
@@ -169,7 +168,7 @@ type ContainerClusterNodeConfig struct {
 	// Whether the nodes are created as spot VM instances.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#spot ContainerCluster#spot}
-	Spot interface{} `field:"optional" json:"spot" yaml:"spot"`
+	Spot any `field:"optional" json:"spot" yaml:"spot"`
 	// The list of Storage Pools where boot disks are provisioned.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#storage_pools ContainerCluster#storage_pools}
@@ -181,7 +180,7 @@ type ContainerClusterNodeConfig struct {
 	// taint block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#taint ContainerCluster#taint}
-	Taint interface{} `field:"optional" json:"taint" yaml:"taint"`
+	Taint any `field:"optional" json:"taint" yaml:"taint"`
 	// windows_node_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#windows_node_config ContainerCluster#windows_node_config}
@@ -191,4 +190,3 @@ type ContainerClusterNodeConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#workload_metadata_config ContainerCluster#workload_metadata_config}
 	WorkloadMetadataConfig *ContainerClusterNodeConfigWorkloadMetadataConfig `field:"optional" json:"workloadMetadataConfig" yaml:"workloadMetadataConfig"`
 }
-

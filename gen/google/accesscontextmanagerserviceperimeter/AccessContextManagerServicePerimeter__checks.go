@@ -19,7 +19,7 @@ func (a *jsiiProxy_AccessContextManagerServicePerimeter) validateAddMoveTargetPa
 	return nil
 }
 
-func (a *jsiiProxy_AccessContextManagerServicePerimeter) validateAddOverrideParameters(path *string, value interface{}) error {
+func (a *jsiiProxy_AccessContextManagerServicePerimeter) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (a *jsiiProxy_AccessContextManagerServicePerimeter) validateMoveFromIdParam
 	return nil
 }
 
-func (a *jsiiProxy_AccessContextManagerServicePerimeter) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (a *jsiiProxy_AccessContextManagerServicePerimeter) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -253,7 +253,7 @@ func validateAccessContextManagerServicePerimeter_GenerateConfigForImportParamet
 	return nil
 }
 
-func validateAccessContextManagerServicePerimeter_IsConstructParameters(x interface{}) error {
+func validateAccessContextManagerServicePerimeter_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -261,7 +261,7 @@ func validateAccessContextManagerServicePerimeter_IsConstructParameters(x interf
 	return nil
 }
 
-func validateAccessContextManagerServicePerimeter_IsTerraformElementParameters(x interface{}) error {
+func validateAccessContextManagerServicePerimeter_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -269,7 +269,7 @@ func validateAccessContextManagerServicePerimeter_IsTerraformElementParameters(x
 	return nil
 }
 
-func validateAccessContextManagerServicePerimeter_IsTerraformResourceParameters(x interface{}) error {
+func validateAccessContextManagerServicePerimeter_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -277,7 +277,7 @@ func validateAccessContextManagerServicePerimeter_IsTerraformResourceParameters(
 	return nil
 }
 
-func (j *jsiiProxy_AccessContextManagerServicePerimeter) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_AccessContextManagerServicePerimeter) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -310,7 +310,7 @@ func (j *jsiiProxy_AccessContextManagerServicePerimeter) validateSetConnectionPa
 	return nil
 }
 
-func (j *jsiiProxy_AccessContextManagerServicePerimeter) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_AccessContextManagerServicePerimeter) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -415,7 +415,7 @@ func (j *jsiiProxy_AccessContextManagerServicePerimeter) validateSetPerimeterTyp
 	return nil
 }
 
-func (j *jsiiProxy_AccessContextManagerServicePerimeter) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_AccessContextManagerServicePerimeter) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -469,7 +469,7 @@ func (j *jsiiProxy_AccessContextManagerServicePerimeter) validateSetTitleParamet
 	return nil
 }
 
-func (j *jsiiProxy_AccessContextManagerServicePerimeter) validateSetUseExplicitDryRunSpecParameters(val interface{}) error {
+func (j *jsiiProxy_AccessContextManagerServicePerimeter) validateSetUseExplicitDryRunSpecParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -507,4 +507,3 @@ func validateNewAccessContextManagerServicePerimeterParameters(scope constructs.
 
 	return nil
 }
-

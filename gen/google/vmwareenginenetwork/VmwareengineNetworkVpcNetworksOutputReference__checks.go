@@ -98,7 +98,7 @@ func (v *jsiiProxy_VmwareengineNetworkVpcNetworksOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_VmwareengineNetworkVpcNetworksOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_VmwareengineNetworkVpcNetworksOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewVmwareengineNetworkVpcNetworksOutputReferenceParameters(terrafor
 
 	return nil
 }
-

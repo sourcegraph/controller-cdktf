@@ -98,7 +98,7 @@ func (c *jsiiProxy_ClouddeployCustomTargetTypeTimeoutsOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_ClouddeployCustomTargetTypeTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ClouddeployCustomTargetTypeTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_ClouddeployCustomTargetTypeTimeoutsOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_ClouddeployCustomTargetTypeTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ClouddeployCustomTargetTypeTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewClouddeployCustomTargetTypeTimeoutsOutputReferenceParameters(ter
 
 	return nil
 }
-

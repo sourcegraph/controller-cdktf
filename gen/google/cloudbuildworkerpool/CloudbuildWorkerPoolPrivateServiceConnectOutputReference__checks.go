@@ -98,7 +98,7 @@ func (c *jsiiProxy_CloudbuildWorkerPoolPrivateServiceConnectOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_CloudbuildWorkerPoolPrivateServiceConnectOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudbuildWorkerPoolPrivateServiceConnectOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_CloudbuildWorkerPoolPrivateServiceConnectOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_CloudbuildWorkerPoolPrivateServiceConnectOutputReference) validateSetRouteAllTrafficParameters(val interface{}) error {
+func (j *jsiiProxy_CloudbuildWorkerPoolPrivateServiceConnectOutputReference) validateSetRouteAllTrafficParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -226,4 +226,3 @@ func validateNewCloudbuildWorkerPoolPrivateServiceConnectOutputReferenceParamete
 
 	return nil
 }
-

@@ -106,7 +106,7 @@ func (j *jsiiProxy_ComposerEnvironmentConfigMasterAuthorizedNetworksConfigCidrBl
 	return nil
 }
 
-func (j *jsiiProxy_ComposerEnvironmentConfigMasterAuthorizedNetworksConfigCidrBlocksOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComposerEnvironmentConfigMasterAuthorizedNetworksConfigCidrBlocksOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_ComposerEnvironmentConfigMasterAuthorizedNetworksConfigCidrBl
 	return nil
 }
 
-func (j *jsiiProxy_ComposerEnvironmentConfigMasterAuthorizedNetworksConfigCidrBlocksOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComposerEnvironmentConfigMasterAuthorizedNetworksConfigCidrBlocksOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewComposerEnvironmentConfigMasterAuthorizedNetworksConfigCidrBlock
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesSettingsReadPoolAutoSc
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesSettingsReadPoolAutoScaleConfigTargetMetricsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesSettingsReadPoolAutoScaleConfigTargetMetricsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleSqlDatabaseInstancesInstancesSettingsReadPoolAutoScale
 
 	return nil
 }
-

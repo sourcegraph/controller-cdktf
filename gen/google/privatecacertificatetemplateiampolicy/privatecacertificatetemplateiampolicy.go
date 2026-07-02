@@ -18,15 +18,15 @@ type PrivatecaCertificateTemplateIamPolicy interface {
 	SetCertificateTemplate(val *string)
 	CertificateTemplateInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -63,24 +63,24 @@ type PrivatecaCertificateTemplateIamPolicy interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -98,7 +98,7 @@ type PrivatecaCertificateTemplateIamPolicy interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -110,7 +110,7 @@ type PrivatecaCertificateTemplateIamPolicy interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -123,17 +123,17 @@ type PrivatecaCertificateTemplateIamPolicy interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for PrivatecaCertificateTemplateIamPolicy
@@ -171,8 +171,8 @@ func (j *jsiiProxy_PrivatecaCertificateTemplateIamPolicy) CertificateTemplateInp
 	return returns
 }
 
-func (j *jsiiProxy_PrivatecaCertificateTemplateIamPolicy) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PrivatecaCertificateTemplateIamPolicy) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -181,8 +181,8 @@ func (j *jsiiProxy_PrivatecaCertificateTemplateIamPolicy) Connection() interface
 	return returns
 }
 
-func (j *jsiiProxy_PrivatecaCertificateTemplateIamPolicy) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_PrivatecaCertificateTemplateIamPolicy) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -191,8 +191,8 @@ func (j *jsiiProxy_PrivatecaCertificateTemplateIamPolicy) ConstructNodeMetadata(
 	return returns
 }
 
-func (j *jsiiProxy_PrivatecaCertificateTemplateIamPolicy) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PrivatecaCertificateTemplateIamPolicy) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -361,8 +361,8 @@ func (j *jsiiProxy_PrivatecaCertificateTemplateIamPolicy) Provider() cdktf.Terra
 	return returns
 }
 
-func (j *jsiiProxy_PrivatecaCertificateTemplateIamPolicy) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_PrivatecaCertificateTemplateIamPolicy) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -371,8 +371,8 @@ func (j *jsiiProxy_PrivatecaCertificateTemplateIamPolicy) Provisioners() *[]inte
 	return returns
 }
 
-func (j *jsiiProxy_PrivatecaCertificateTemplateIamPolicy) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PrivatecaCertificateTemplateIamPolicy) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -391,8 +391,8 @@ func (j *jsiiProxy_PrivatecaCertificateTemplateIamPolicy) TerraformGeneratorMeta
 	return returns
 }
 
-func (j *jsiiProxy_PrivatecaCertificateTemplateIamPolicy) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_PrivatecaCertificateTemplateIamPolicy) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -411,7 +411,6 @@ func (j *jsiiProxy_PrivatecaCertificateTemplateIamPolicy) TerraformResourceType(
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/privateca_certificate_template_iam_policy google_privateca_certificate_template_iam_policy} Resource.
 func NewPrivatecaCertificateTemplateIamPolicy(scope constructs.Construct, id *string, config *PrivatecaCertificateTemplateIamPolicyConfig) PrivatecaCertificateTemplateIamPolicy {
 	_init_.Initialize()
@@ -423,7 +422,7 @@ func NewPrivatecaCertificateTemplateIamPolicy(scope constructs.Construct, id *st
 
 	_jsii_.Create(
 		"@cdktf/provider-google.privatecaCertificateTemplateIamPolicy.PrivatecaCertificateTemplateIamPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -436,12 +435,12 @@ func NewPrivatecaCertificateTemplateIamPolicy_Override(p PrivatecaCertificateTem
 
 	_jsii_.Create(
 		"@cdktf/provider-google.privatecaCertificateTemplateIamPolicy.PrivatecaCertificateTemplateIamPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCertificateTemplateIamPolicy)SetCertificateTemplate(val *string) {
+func (j *jsiiProxy_PrivatecaCertificateTemplateIamPolicy) SetCertificateTemplate(val *string) {
 	if err := j.validateSetCertificateTemplateParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,7 +451,7 @@ func (j *jsiiProxy_PrivatecaCertificateTemplateIamPolicy)SetCertificateTemplate(
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCertificateTemplateIamPolicy)SetConnection(val interface{}) {
+func (j *jsiiProxy_PrivatecaCertificateTemplateIamPolicy) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -463,7 +462,7 @@ func (j *jsiiProxy_PrivatecaCertificateTemplateIamPolicy)SetConnection(val inter
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCertificateTemplateIamPolicy)SetCount(val interface{}) {
+func (j *jsiiProxy_PrivatecaCertificateTemplateIamPolicy) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -474,7 +473,7 @@ func (j *jsiiProxy_PrivatecaCertificateTemplateIamPolicy)SetCount(val interface{
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCertificateTemplateIamPolicy)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_PrivatecaCertificateTemplateIamPolicy) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -482,7 +481,7 @@ func (j *jsiiProxy_PrivatecaCertificateTemplateIamPolicy)SetDependsOn(val *[]*st
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCertificateTemplateIamPolicy)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_PrivatecaCertificateTemplateIamPolicy) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -490,7 +489,7 @@ func (j *jsiiProxy_PrivatecaCertificateTemplateIamPolicy)SetForEach(val cdktf.IT
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCertificateTemplateIamPolicy)SetId(val *string) {
+func (j *jsiiProxy_PrivatecaCertificateTemplateIamPolicy) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -501,7 +500,7 @@ func (j *jsiiProxy_PrivatecaCertificateTemplateIamPolicy)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCertificateTemplateIamPolicy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_PrivatecaCertificateTemplateIamPolicy) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -512,7 +511,7 @@ func (j *jsiiProxy_PrivatecaCertificateTemplateIamPolicy)SetLifecycle(val *cdktf
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCertificateTemplateIamPolicy)SetLocation(val *string) {
+func (j *jsiiProxy_PrivatecaCertificateTemplateIamPolicy) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -523,7 +522,7 @@ func (j *jsiiProxy_PrivatecaCertificateTemplateIamPolicy)SetLocation(val *string
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCertificateTemplateIamPolicy)SetPolicyData(val *string) {
+func (j *jsiiProxy_PrivatecaCertificateTemplateIamPolicy) SetPolicyData(val *string) {
 	if err := j.validateSetPolicyDataParameters(val); err != nil {
 		panic(err)
 	}
@@ -534,7 +533,7 @@ func (j *jsiiProxy_PrivatecaCertificateTemplateIamPolicy)SetPolicyData(val *stri
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCertificateTemplateIamPolicy)SetProject(val *string) {
+func (j *jsiiProxy_PrivatecaCertificateTemplateIamPolicy) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -545,7 +544,7 @@ func (j *jsiiProxy_PrivatecaCertificateTemplateIamPolicy)SetProject(val *string)
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCertificateTemplateIamPolicy)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_PrivatecaCertificateTemplateIamPolicy) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -553,7 +552,7 @@ func (j *jsiiProxy_PrivatecaCertificateTemplateIamPolicy)SetProvider(val cdktf.T
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCertificateTemplateIamPolicy)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_PrivatecaCertificateTemplateIamPolicy) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -576,7 +575,7 @@ func PrivatecaCertificateTemplateIamPolicy_GenerateConfigForImport(scope constru
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.privatecaCertificateTemplateIamPolicy.PrivatecaCertificateTemplateIamPolicy",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -600,7 +599,7 @@ func PrivatecaCertificateTemplateIamPolicy_GenerateConfigForImport(scope constru
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func PrivatecaCertificateTemplateIamPolicy_IsConstruct(x interface{}) *bool {
+func PrivatecaCertificateTemplateIamPolicy_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePrivatecaCertificateTemplateIamPolicy_IsConstructParameters(x); err != nil {
@@ -611,7 +610,7 @@ func PrivatecaCertificateTemplateIamPolicy_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.privatecaCertificateTemplateIamPolicy.PrivatecaCertificateTemplateIamPolicy",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -619,7 +618,7 @@ func PrivatecaCertificateTemplateIamPolicy_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func PrivatecaCertificateTemplateIamPolicy_IsTerraformElement(x interface{}) *bool {
+func PrivatecaCertificateTemplateIamPolicy_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePrivatecaCertificateTemplateIamPolicy_IsTerraformElementParameters(x); err != nil {
@@ -630,7 +629,7 @@ func PrivatecaCertificateTemplateIamPolicy_IsTerraformElement(x interface{}) *bo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.privatecaCertificateTemplateIamPolicy.PrivatecaCertificateTemplateIamPolicy",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -638,7 +637,7 @@ func PrivatecaCertificateTemplateIamPolicy_IsTerraformElement(x interface{}) *bo
 }
 
 // Experimental.
-func PrivatecaCertificateTemplateIamPolicy_IsTerraformResource(x interface{}) *bool {
+func PrivatecaCertificateTemplateIamPolicy_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePrivatecaCertificateTemplateIamPolicy_IsTerraformResourceParameters(x); err != nil {
@@ -649,7 +648,7 @@ func PrivatecaCertificateTemplateIamPolicy_IsTerraformResource(x interface{}) *b
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.privatecaCertificateTemplateIamPolicy.PrivatecaCertificateTemplateIamPolicy",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -674,31 +673,31 @@ func (p *jsiiProxy_PrivatecaCertificateTemplateIamPolicy) AddMoveTarget(moveTarg
 	_jsii_.InvokeVoid(
 		p,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (p *jsiiProxy_PrivatecaCertificateTemplateIamPolicy) AddOverride(path *string, value interface{}) {
+func (p *jsiiProxy_PrivatecaCertificateTemplateIamPolicy) AddOverride(path *string, value any) {
 	if err := p.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (p *jsiiProxy_PrivatecaCertificateTemplateIamPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_PrivatecaCertificateTemplateIamPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -714,7 +713,7 @@ func (p *jsiiProxy_PrivatecaCertificateTemplateIamPolicy) GetBooleanAttribute(te
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -730,7 +729,7 @@ func (p *jsiiProxy_PrivatecaCertificateTemplateIamPolicy) GetBooleanMapAttribute
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -746,7 +745,7 @@ func (p *jsiiProxy_PrivatecaCertificateTemplateIamPolicy) GetListAttribute(terra
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -762,7 +761,7 @@ func (p *jsiiProxy_PrivatecaCertificateTemplateIamPolicy) GetNumberAttribute(ter
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -778,7 +777,7 @@ func (p *jsiiProxy_PrivatecaCertificateTemplateIamPolicy) GetNumberListAttribute
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -794,7 +793,7 @@ func (p *jsiiProxy_PrivatecaCertificateTemplateIamPolicy) GetNumberMapAttribute(
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -810,7 +809,7 @@ func (p *jsiiProxy_PrivatecaCertificateTemplateIamPolicy) GetStringAttribute(ter
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -826,15 +825,15 @@ func (p *jsiiProxy_PrivatecaCertificateTemplateIamPolicy) GetStringMapAttribute(
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (p *jsiiProxy_PrivatecaCertificateTemplateIamPolicy) HasResourceMove() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PrivatecaCertificateTemplateIamPolicy) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -853,7 +852,7 @@ func (p *jsiiProxy_PrivatecaCertificateTemplateIamPolicy) ImportFrom(id *string,
 	_jsii_.InvokeVoid(
 		p,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -866,7 +865,7 @@ func (p *jsiiProxy_PrivatecaCertificateTemplateIamPolicy) InterpolationForAttrib
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -880,18 +879,18 @@ func (p *jsiiProxy_PrivatecaCertificateTemplateIamPolicy) MoveFromId(id *string)
 	_jsii_.InvokeVoid(
 		p,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (p *jsiiProxy_PrivatecaCertificateTemplateIamPolicy) MoveTo(moveTarget *string, index interface{}) {
+func (p *jsiiProxy_PrivatecaCertificateTemplateIamPolicy) MoveTo(moveTarget *string, index any) {
 	if err := p.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -902,7 +901,7 @@ func (p *jsiiProxy_PrivatecaCertificateTemplateIamPolicy) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -913,7 +912,7 @@ func (p *jsiiProxy_PrivatecaCertificateTemplateIamPolicy) OverrideLogicalId(newL
 	_jsii_.InvokeVoid(
 		p,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -949,8 +948,8 @@ func (p *jsiiProxy_PrivatecaCertificateTemplateIamPolicy) ResetProject() {
 	)
 }
 
-func (p *jsiiProxy_PrivatecaCertificateTemplateIamPolicy) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (p *jsiiProxy_PrivatecaCertificateTemplateIamPolicy) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
@@ -962,8 +961,8 @@ func (p *jsiiProxy_PrivatecaCertificateTemplateIamPolicy) SynthesizeAttributes()
 	return returns
 }
 
-func (p *jsiiProxy_PrivatecaCertificateTemplateIamPolicy) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (p *jsiiProxy_PrivatecaCertificateTemplateIamPolicy) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
@@ -975,8 +974,8 @@ func (p *jsiiProxy_PrivatecaCertificateTemplateIamPolicy) SynthesizeHclAttribute
 	return returns
 }
 
-func (p *jsiiProxy_PrivatecaCertificateTemplateIamPolicy) ToHclTerraform() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PrivatecaCertificateTemplateIamPolicy) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -988,8 +987,8 @@ func (p *jsiiProxy_PrivatecaCertificateTemplateIamPolicy) ToHclTerraform() inter
 	return returns
 }
 
-func (p *jsiiProxy_PrivatecaCertificateTemplateIamPolicy) ToMetadata() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PrivatecaCertificateTemplateIamPolicy) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1014,8 +1013,8 @@ func (p *jsiiProxy_PrivatecaCertificateTemplateIamPolicy) ToString() *string {
 	return returns
 }
 
-func (p *jsiiProxy_PrivatecaCertificateTemplateIamPolicy) ToTerraform() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PrivatecaCertificateTemplateIamPolicy) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1026,4 +1025,3 @@ func (p *jsiiProxy_PrivatecaCertificateTemplateIamPolicy) ToTerraform() interfac
 
 	return returns
 }
-

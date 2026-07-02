@@ -1,6 +1,5 @@
 package networksecurityauthzpolicy
 
-
 type NetworkSecurityAuthzPolicyHttpRulesToNotOperations struct {
 	// header_set block.
 	//
@@ -9,7 +8,7 @@ type NetworkSecurityAuthzPolicyHttpRulesToNotOperations struct {
 	// hosts block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_authz_policy#hosts NetworkSecurityAuthzPolicy#hosts}
-	Hosts interface{} `field:"optional" json:"hosts" yaml:"hosts"`
+	Hosts any `field:"optional" json:"hosts" yaml:"hosts"`
 	// A list of HTTP methods to match against.
 	//
 	// Each entry must be a valid HTTP method name (GET, PUT, POST, HEAD, PATCH, DELETE, OPTIONS). It only allows exact match and is always case sensitive.
@@ -19,6 +18,5 @@ type NetworkSecurityAuthzPolicyHttpRulesToNotOperations struct {
 	// paths block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_authz_policy#paths NetworkSecurityAuthzPolicy#paths}
-	Paths interface{} `field:"optional" json:"paths" yaml:"paths"`
+	Paths any `field:"optional" json:"paths" yaml:"paths"`
 }
-

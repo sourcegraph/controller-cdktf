@@ -19,7 +19,7 @@ func (c *jsiiProxy_ClouddomainsRegistration) validateAddMoveTargetParameters(mov
 	return nil
 }
 
-func (c *jsiiProxy_ClouddomainsRegistration) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_ClouddomainsRegistration) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_ClouddomainsRegistration) validateMoveFromIdParameters(id *st
 	return nil
 }
 
-func (c *jsiiProxy_ClouddomainsRegistration) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_ClouddomainsRegistration) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -275,7 +275,7 @@ func validateClouddomainsRegistration_GenerateConfigForImportParameters(scope co
 	return nil
 }
 
-func validateClouddomainsRegistration_IsConstructParameters(x interface{}) error {
+func validateClouddomainsRegistration_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -283,7 +283,7 @@ func validateClouddomainsRegistration_IsConstructParameters(x interface{}) error
 	return nil
 }
 
-func validateClouddomainsRegistration_IsTerraformElementParameters(x interface{}) error {
+func validateClouddomainsRegistration_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -291,7 +291,7 @@ func validateClouddomainsRegistration_IsTerraformElementParameters(x interface{}
 	return nil
 }
 
-func validateClouddomainsRegistration_IsTerraformResourceParameters(x interface{}) error {
+func validateClouddomainsRegistration_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -299,7 +299,7 @@ func validateClouddomainsRegistration_IsTerraformResourceParameters(x interface{
 	return nil
 }
 
-func (j *jsiiProxy_ClouddomainsRegistration) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ClouddomainsRegistration) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -340,7 +340,7 @@ func (j *jsiiProxy_ClouddomainsRegistration) validateSetContactNoticesParameters
 	return nil
 }
 
-func (j *jsiiProxy_ClouddomainsRegistration) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ClouddomainsRegistration) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -453,7 +453,7 @@ func (j *jsiiProxy_ClouddomainsRegistration) validateSetProjectParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_ClouddomainsRegistration) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ClouddomainsRegistration) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -517,4 +517,3 @@ func validateNewClouddomainsRegistrationParameters(scope constructs.Construct, i
 
 	return nil
 }
-

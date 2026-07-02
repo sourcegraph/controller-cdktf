@@ -12,9 +12,9 @@ type DialogflowEnvironmentTextToSpeechSettingsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,9 +25,9 @@ type DialogflowEnvironmentTextToSpeechSettingsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	EnableTextToSpeech() interface{}
-	SetEnableTextToSpeech(val interface{})
-	EnableTextToSpeechInput() interface{}
+	EnableTextToSpeech() any
+	SetEnableTextToSpeech(val any)
+	EnableTextToSpeechInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DialogflowEnvironmentTextToSpeechSettings
@@ -39,7 +39,7 @@ type DialogflowEnvironmentTextToSpeechSettingsOutputReference interface {
 	SetSampleRateHertz(val *float64)
 	SampleRateHertzInput() *float64
 	SynthesizeSpeechConfigs() DialogflowEnvironmentTextToSpeechSettingsSynthesizeSpeechConfigsList
-	SynthesizeSpeechConfigsInput() interface{}
+	SynthesizeSpeechConfigsInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -51,7 +51,7 @@ type DialogflowEnvironmentTextToSpeechSettingsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -72,14 +72,14 @@ type DialogflowEnvironmentTextToSpeechSettingsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutSynthesizeSpeechConfigs(value interface{})
+	PutSynthesizeSpeechConfigs(value any)
 	ResetEnableTextToSpeech()
 	ResetOutputAudioEncoding()
 	ResetSampleRateHertz()
 	ResetSynthesizeSpeechConfigs()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,8 +92,8 @@ type jsiiProxy_DialogflowEnvironmentTextToSpeechSettingsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DialogflowEnvironmentTextToSpeechSettingsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowEnvironmentTextToSpeechSettingsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -122,8 +122,8 @@ func (j *jsiiProxy_DialogflowEnvironmentTextToSpeechSettingsOutputReference) Cre
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowEnvironmentTextToSpeechSettingsOutputReference) EnableTextToSpeech() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowEnvironmentTextToSpeechSettingsOutputReference) EnableTextToSpeech() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableTextToSpeech",
@@ -132,8 +132,8 @@ func (j *jsiiProxy_DialogflowEnvironmentTextToSpeechSettingsOutputReference) Ena
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowEnvironmentTextToSpeechSettingsOutputReference) EnableTextToSpeechInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowEnvironmentTextToSpeechSettingsOutputReference) EnableTextToSpeechInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableTextToSpeechInput",
@@ -212,8 +212,8 @@ func (j *jsiiProxy_DialogflowEnvironmentTextToSpeechSettingsOutputReference) Syn
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowEnvironmentTextToSpeechSettingsOutputReference) SynthesizeSpeechConfigsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowEnvironmentTextToSpeechSettingsOutputReference) SynthesizeSpeechConfigsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"synthesizeSpeechConfigsInput",
@@ -242,7 +242,6 @@ func (j *jsiiProxy_DialogflowEnvironmentTextToSpeechSettingsOutputReference) Ter
 	return returns
 }
 
-
 func NewDialogflowEnvironmentTextToSpeechSettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DialogflowEnvironmentTextToSpeechSettingsOutputReference {
 	_init_.Initialize()
 
@@ -253,7 +252,7 @@ func NewDialogflowEnvironmentTextToSpeechSettingsOutputReference(terraformResour
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dialogflowEnvironment.DialogflowEnvironmentTextToSpeechSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -265,12 +264,12 @@ func NewDialogflowEnvironmentTextToSpeechSettingsOutputReference_Override(d Dial
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dialogflowEnvironment.DialogflowEnvironmentTextToSpeechSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DialogflowEnvironmentTextToSpeechSettingsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DialogflowEnvironmentTextToSpeechSettingsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,7 +280,7 @@ func (j *jsiiProxy_DialogflowEnvironmentTextToSpeechSettingsOutputReference)SetC
 	)
 }
 
-func (j *jsiiProxy_DialogflowEnvironmentTextToSpeechSettingsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DialogflowEnvironmentTextToSpeechSettingsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,7 +291,7 @@ func (j *jsiiProxy_DialogflowEnvironmentTextToSpeechSettingsOutputReference)SetC
 	)
 }
 
-func (j *jsiiProxy_DialogflowEnvironmentTextToSpeechSettingsOutputReference)SetEnableTextToSpeech(val interface{}) {
+func (j *jsiiProxy_DialogflowEnvironmentTextToSpeechSettingsOutputReference) SetEnableTextToSpeech(val any) {
 	if err := j.validateSetEnableTextToSpeechParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_DialogflowEnvironmentTextToSpeechSettingsOutputReference)SetE
 	)
 }
 
-func (j *jsiiProxy_DialogflowEnvironmentTextToSpeechSettingsOutputReference)SetInternalValue(val *DialogflowEnvironmentTextToSpeechSettings) {
+func (j *jsiiProxy_DialogflowEnvironmentTextToSpeechSettingsOutputReference) SetInternalValue(val *DialogflowEnvironmentTextToSpeechSettings) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_DialogflowEnvironmentTextToSpeechSettingsOutputReference)SetI
 	)
 }
 
-func (j *jsiiProxy_DialogflowEnvironmentTextToSpeechSettingsOutputReference)SetOutputAudioEncoding(val *string) {
+func (j *jsiiProxy_DialogflowEnvironmentTextToSpeechSettingsOutputReference) SetOutputAudioEncoding(val *string) {
 	if err := j.validateSetOutputAudioEncodingParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_DialogflowEnvironmentTextToSpeechSettingsOutputReference)SetO
 	)
 }
 
-func (j *jsiiProxy_DialogflowEnvironmentTextToSpeechSettingsOutputReference)SetSampleRateHertz(val *float64) {
+func (j *jsiiProxy_DialogflowEnvironmentTextToSpeechSettingsOutputReference) SetSampleRateHertz(val *float64) {
 	if err := j.validateSetSampleRateHertzParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_DialogflowEnvironmentTextToSpeechSettingsOutputReference)SetS
 	)
 }
 
-func (j *jsiiProxy_DialogflowEnvironmentTextToSpeechSettingsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DialogflowEnvironmentTextToSpeechSettingsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_DialogflowEnvironmentTextToSpeechSettingsOutputReference)SetT
 	)
 }
 
-func (j *jsiiProxy_DialogflowEnvironmentTextToSpeechSettingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DialogflowEnvironmentTextToSpeechSettingsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,16 +370,16 @@ func (d *jsiiProxy_DialogflowEnvironmentTextToSpeechSettingsOutputReference) Com
 	return returns
 }
 
-func (d *jsiiProxy_DialogflowEnvironmentTextToSpeechSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DialogflowEnvironmentTextToSpeechSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -396,7 +395,7 @@ func (d *jsiiProxy_DialogflowEnvironmentTextToSpeechSettingsOutputReference) Get
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -412,7 +411,7 @@ func (d *jsiiProxy_DialogflowEnvironmentTextToSpeechSettingsOutputReference) Get
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -428,7 +427,7 @@ func (d *jsiiProxy_DialogflowEnvironmentTextToSpeechSettingsOutputReference) Get
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -444,7 +443,7 @@ func (d *jsiiProxy_DialogflowEnvironmentTextToSpeechSettingsOutputReference) Get
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -460,7 +459,7 @@ func (d *jsiiProxy_DialogflowEnvironmentTextToSpeechSettingsOutputReference) Get
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -476,7 +475,7 @@ func (d *jsiiProxy_DialogflowEnvironmentTextToSpeechSettingsOutputReference) Get
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -492,7 +491,7 @@ func (d *jsiiProxy_DialogflowEnvironmentTextToSpeechSettingsOutputReference) Get
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -508,7 +507,7 @@ func (d *jsiiProxy_DialogflowEnvironmentTextToSpeechSettingsOutputReference) Get
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -537,21 +536,21 @@ func (d *jsiiProxy_DialogflowEnvironmentTextToSpeechSettingsOutputReference) Int
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DialogflowEnvironmentTextToSpeechSettingsOutputReference) PutSynthesizeSpeechConfigs(value interface{}) {
+func (d *jsiiProxy_DialogflowEnvironmentTextToSpeechSettingsOutputReference) PutSynthesizeSpeechConfigs(value any) {
 	if err := d.validatePutSynthesizeSpeechConfigsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putSynthesizeSpeechConfigs",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -587,16 +586,16 @@ func (d *jsiiProxy_DialogflowEnvironmentTextToSpeechSettingsOutputReference) Res
 	)
 }
 
-func (d *jsiiProxy_DialogflowEnvironmentTextToSpeechSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DialogflowEnvironmentTextToSpeechSettingsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -615,4 +614,3 @@ func (d *jsiiProxy_DialogflowEnvironmentTextToSpeechSettingsOutputReference) ToS
 
 	return returns
 }
-

@@ -15,15 +15,15 @@ type VertexAiRagEngineConfig interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -54,31 +54,31 @@ type VertexAiRagEngineConfig interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	RagManagedDbConfig() VertexAiRagEngineConfigRagManagedDbConfigOutputReference
 	RagManagedDbConfigInput() *VertexAiRagEngineConfigRagManagedDbConfig
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() VertexAiRagEngineConfigTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -96,7 +96,7 @@ type VertexAiRagEngineConfig interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -108,7 +108,7 @@ type VertexAiRagEngineConfig interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -124,17 +124,17 @@ type VertexAiRagEngineConfig interface {
 	ResetProject()
 	ResetRegion()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for VertexAiRagEngineConfig
@@ -152,8 +152,8 @@ func (j *jsiiProxy_VertexAiRagEngineConfig) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_VertexAiRagEngineConfig) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VertexAiRagEngineConfig) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -162,8 +162,8 @@ func (j *jsiiProxy_VertexAiRagEngineConfig) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_VertexAiRagEngineConfig) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_VertexAiRagEngineConfig) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -172,8 +172,8 @@ func (j *jsiiProxy_VertexAiRagEngineConfig) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_VertexAiRagEngineConfig) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VertexAiRagEngineConfig) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -302,8 +302,8 @@ func (j *jsiiProxy_VertexAiRagEngineConfig) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_VertexAiRagEngineConfig) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_VertexAiRagEngineConfig) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -332,8 +332,8 @@ func (j *jsiiProxy_VertexAiRagEngineConfig) RagManagedDbConfigInput() *VertexAiR
 	return returns
 }
 
-func (j *jsiiProxy_VertexAiRagEngineConfig) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VertexAiRagEngineConfig) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -372,8 +372,8 @@ func (j *jsiiProxy_VertexAiRagEngineConfig) TerraformGeneratorMetadata() *cdktf.
 	return returns
 }
 
-func (j *jsiiProxy_VertexAiRagEngineConfig) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_VertexAiRagEngineConfig) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -402,8 +402,8 @@ func (j *jsiiProxy_VertexAiRagEngineConfig) Timeouts() VertexAiRagEngineConfigTi
 	return returns
 }
 
-func (j *jsiiProxy_VertexAiRagEngineConfig) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VertexAiRagEngineConfig) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -411,7 +411,6 @@ func (j *jsiiProxy_VertexAiRagEngineConfig) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_rag_engine_config google_vertex_ai_rag_engine_config} Resource.
 func NewVertexAiRagEngineConfig(scope constructs.Construct, id *string, config *VertexAiRagEngineConfigConfig) VertexAiRagEngineConfig {
@@ -424,7 +423,7 @@ func NewVertexAiRagEngineConfig(scope constructs.Construct, id *string, config *
 
 	_jsii_.Create(
 		"@cdktf/provider-google.vertexAiRagEngineConfig.VertexAiRagEngineConfig",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -437,12 +436,12 @@ func NewVertexAiRagEngineConfig_Override(v VertexAiRagEngineConfig, scope constr
 
 	_jsii_.Create(
 		"@cdktf/provider-google.vertexAiRagEngineConfig.VertexAiRagEngineConfig",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		v,
 	)
 }
 
-func (j *jsiiProxy_VertexAiRagEngineConfig)SetConnection(val interface{}) {
+func (j *jsiiProxy_VertexAiRagEngineConfig) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -453,7 +452,7 @@ func (j *jsiiProxy_VertexAiRagEngineConfig)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VertexAiRagEngineConfig)SetCount(val interface{}) {
+func (j *jsiiProxy_VertexAiRagEngineConfig) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -464,7 +463,7 @@ func (j *jsiiProxy_VertexAiRagEngineConfig)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VertexAiRagEngineConfig)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_VertexAiRagEngineConfig) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -472,7 +471,7 @@ func (j *jsiiProxy_VertexAiRagEngineConfig)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_VertexAiRagEngineConfig)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_VertexAiRagEngineConfig) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -480,7 +479,7 @@ func (j *jsiiProxy_VertexAiRagEngineConfig)SetForEach(val cdktf.ITerraformIterat
 	)
 }
 
-func (j *jsiiProxy_VertexAiRagEngineConfig)SetId(val *string) {
+func (j *jsiiProxy_VertexAiRagEngineConfig) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -491,7 +490,7 @@ func (j *jsiiProxy_VertexAiRagEngineConfig)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VertexAiRagEngineConfig)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_VertexAiRagEngineConfig) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -502,7 +501,7 @@ func (j *jsiiProxy_VertexAiRagEngineConfig)SetLifecycle(val *cdktf.TerraformReso
 	)
 }
 
-func (j *jsiiProxy_VertexAiRagEngineConfig)SetProject(val *string) {
+func (j *jsiiProxy_VertexAiRagEngineConfig) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -513,7 +512,7 @@ func (j *jsiiProxy_VertexAiRagEngineConfig)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VertexAiRagEngineConfig)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_VertexAiRagEngineConfig) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -521,7 +520,7 @@ func (j *jsiiProxy_VertexAiRagEngineConfig)SetProvider(val cdktf.TerraformProvid
 	)
 }
 
-func (j *jsiiProxy_VertexAiRagEngineConfig)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_VertexAiRagEngineConfig) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -532,7 +531,7 @@ func (j *jsiiProxy_VertexAiRagEngineConfig)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VertexAiRagEngineConfig)SetRegion(val *string) {
+func (j *jsiiProxy_VertexAiRagEngineConfig) SetRegion(val *string) {
 	if err := j.validateSetRegionParameters(val); err != nil {
 		panic(err)
 	}
@@ -555,7 +554,7 @@ func VertexAiRagEngineConfig_GenerateConfigForImport(scope constructs.Construct,
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.vertexAiRagEngineConfig.VertexAiRagEngineConfig",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -579,7 +578,7 @@ func VertexAiRagEngineConfig_GenerateConfigForImport(scope constructs.Construct,
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func VertexAiRagEngineConfig_IsConstruct(x interface{}) *bool {
+func VertexAiRagEngineConfig_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateVertexAiRagEngineConfig_IsConstructParameters(x); err != nil {
@@ -590,7 +589,7 @@ func VertexAiRagEngineConfig_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.vertexAiRagEngineConfig.VertexAiRagEngineConfig",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -598,7 +597,7 @@ func VertexAiRagEngineConfig_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func VertexAiRagEngineConfig_IsTerraformElement(x interface{}) *bool {
+func VertexAiRagEngineConfig_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateVertexAiRagEngineConfig_IsTerraformElementParameters(x); err != nil {
@@ -609,7 +608,7 @@ func VertexAiRagEngineConfig_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.vertexAiRagEngineConfig.VertexAiRagEngineConfig",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -617,7 +616,7 @@ func VertexAiRagEngineConfig_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func VertexAiRagEngineConfig_IsTerraformResource(x interface{}) *bool {
+func VertexAiRagEngineConfig_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateVertexAiRagEngineConfig_IsTerraformResourceParameters(x); err != nil {
@@ -628,7 +627,7 @@ func VertexAiRagEngineConfig_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.vertexAiRagEngineConfig.VertexAiRagEngineConfig",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -653,31 +652,31 @@ func (v *jsiiProxy_VertexAiRagEngineConfig) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		v,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (v *jsiiProxy_VertexAiRagEngineConfig) AddOverride(path *string, value interface{}) {
+func (v *jsiiProxy_VertexAiRagEngineConfig) AddOverride(path *string, value any) {
 	if err := v.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		v,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (v *jsiiProxy_VertexAiRagEngineConfig) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (v *jsiiProxy_VertexAiRagEngineConfig) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := v.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		v,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -693,7 +692,7 @@ func (v *jsiiProxy_VertexAiRagEngineConfig) GetBooleanAttribute(terraformAttribu
 	_jsii_.Invoke(
 		v,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -709,7 +708,7 @@ func (v *jsiiProxy_VertexAiRagEngineConfig) GetBooleanMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		v,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -725,7 +724,7 @@ func (v *jsiiProxy_VertexAiRagEngineConfig) GetListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		v,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -741,7 +740,7 @@ func (v *jsiiProxy_VertexAiRagEngineConfig) GetNumberAttribute(terraformAttribut
 	_jsii_.Invoke(
 		v,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -757,7 +756,7 @@ func (v *jsiiProxy_VertexAiRagEngineConfig) GetNumberListAttribute(terraformAttr
 	_jsii_.Invoke(
 		v,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -773,7 +772,7 @@ func (v *jsiiProxy_VertexAiRagEngineConfig) GetNumberMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		v,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -789,7 +788,7 @@ func (v *jsiiProxy_VertexAiRagEngineConfig) GetStringAttribute(terraformAttribut
 	_jsii_.Invoke(
 		v,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -805,15 +804,15 @@ func (v *jsiiProxy_VertexAiRagEngineConfig) GetStringMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		v,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (v *jsiiProxy_VertexAiRagEngineConfig) HasResourceMove() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_VertexAiRagEngineConfig) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -832,7 +831,7 @@ func (v *jsiiProxy_VertexAiRagEngineConfig) ImportFrom(id *string, provider cdkt
 	_jsii_.InvokeVoid(
 		v,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -845,7 +844,7 @@ func (v *jsiiProxy_VertexAiRagEngineConfig) InterpolationForAttribute(terraformA
 	_jsii_.Invoke(
 		v,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -859,18 +858,18 @@ func (v *jsiiProxy_VertexAiRagEngineConfig) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		v,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (v *jsiiProxy_VertexAiRagEngineConfig) MoveTo(moveTarget *string, index interface{}) {
+func (v *jsiiProxy_VertexAiRagEngineConfig) MoveTo(moveTarget *string, index any) {
 	if err := v.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		v,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -881,7 +880,7 @@ func (v *jsiiProxy_VertexAiRagEngineConfig) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		v,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -892,7 +891,7 @@ func (v *jsiiProxy_VertexAiRagEngineConfig) OverrideLogicalId(newLogicalId *stri
 	_jsii_.InvokeVoid(
 		v,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -903,7 +902,7 @@ func (v *jsiiProxy_VertexAiRagEngineConfig) PutRagManagedDbConfig(value *VertexA
 	_jsii_.InvokeVoid(
 		v,
 		"putRagManagedDbConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -914,7 +913,7 @@ func (v *jsiiProxy_VertexAiRagEngineConfig) PutTimeouts(value *VertexAiRagEngine
 	_jsii_.InvokeVoid(
 		v,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -958,8 +957,8 @@ func (v *jsiiProxy_VertexAiRagEngineConfig) ResetTimeouts() {
 	)
 }
 
-func (v *jsiiProxy_VertexAiRagEngineConfig) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (v *jsiiProxy_VertexAiRagEngineConfig) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		v,
@@ -971,8 +970,8 @@ func (v *jsiiProxy_VertexAiRagEngineConfig) SynthesizeAttributes() *map[string]i
 	return returns
 }
 
-func (v *jsiiProxy_VertexAiRagEngineConfig) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (v *jsiiProxy_VertexAiRagEngineConfig) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		v,
@@ -984,8 +983,8 @@ func (v *jsiiProxy_VertexAiRagEngineConfig) SynthesizeHclAttributes() *map[strin
 	return returns
 }
 
-func (v *jsiiProxy_VertexAiRagEngineConfig) ToHclTerraform() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_VertexAiRagEngineConfig) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -997,8 +996,8 @@ func (v *jsiiProxy_VertexAiRagEngineConfig) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (v *jsiiProxy_VertexAiRagEngineConfig) ToMetadata() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_VertexAiRagEngineConfig) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -1023,8 +1022,8 @@ func (v *jsiiProxy_VertexAiRagEngineConfig) ToString() *string {
 	return returns
 }
 
-func (v *jsiiProxy_VertexAiRagEngineConfig) ToTerraform() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_VertexAiRagEngineConfig) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -1035,4 +1034,3 @@ func (v *jsiiProxy_VertexAiRagEngineConfig) ToTerraform() interface{} {
 
 	return returns
 }
-

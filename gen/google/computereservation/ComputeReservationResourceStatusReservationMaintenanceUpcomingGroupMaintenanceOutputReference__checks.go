@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeReservationResourceStatusReservationMaintenanceUpcomin
 	return nil
 }
 
-func (j *jsiiProxy_ComputeReservationResourceStatusReservationMaintenanceUpcomingGroupMaintenanceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeReservationResourceStatusReservationMaintenanceUpcomingGroupMaintenanceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewComputeReservationResourceStatusReservationMaintenanceUpcomingGr
 
 	return nil
 }
-

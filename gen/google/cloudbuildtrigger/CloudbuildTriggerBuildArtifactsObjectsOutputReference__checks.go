@@ -98,7 +98,7 @@ func (c *jsiiProxy_CloudbuildTriggerBuildArtifactsObjectsOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_CloudbuildTriggerBuildArtifactsObjectsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudbuildTriggerBuildArtifactsObjectsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewCloudbuildTriggerBuildArtifactsObjectsOutputReferenceParameters(
 
 	return nil
 }
-

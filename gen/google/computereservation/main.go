@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeReservation.ComputeReservation",
-		reflect.TypeOf((*ComputeReservation)(nil)).Elem(),
+		reflect.TypeFor[ComputeReservation](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -99,7 +99,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zone", GoGetter: "Zone"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneInput", GoGetter: "ZoneInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeReservation{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -107,15 +107,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeReservation.ComputeReservationConfig",
-		reflect.TypeOf((*ComputeReservationConfig)(nil)).Elem(),
+		reflect.TypeFor[ComputeReservationConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeReservation.ComputeReservationDeleteAfterDuration",
-		reflect.TypeOf((*ComputeReservationDeleteAfterDuration)(nil)).Elem(),
+		reflect.TypeFor[ComputeReservationDeleteAfterDuration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeReservation.ComputeReservationDeleteAfterDurationOutputReference",
-		reflect.TypeOf((*ComputeReservationDeleteAfterDurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeReservationDeleteAfterDurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -145,7 +145,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeReservationDeleteAfterDurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -153,11 +153,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeReservation.ComputeReservationReservationSharingPolicy",
-		reflect.TypeOf((*ComputeReservationReservationSharingPolicy)(nil)).Elem(),
+		reflect.TypeFor[ComputeReservationReservationSharingPolicy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeReservation.ComputeReservationReservationSharingPolicyOutputReference",
-		reflect.TypeOf((*ComputeReservationReservationSharingPolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeReservationReservationSharingPolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -184,7 +184,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeReservationReservationSharingPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -192,15 +192,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeReservation.ComputeReservationResourceStatus",
-		reflect.TypeOf((*ComputeReservationResourceStatus)(nil)).Elem(),
+		reflect.TypeFor[ComputeReservationResourceStatus](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeReservation.ComputeReservationResourceStatusHealthInfo",
-		reflect.TypeOf((*ComputeReservationResourceStatusHealthInfo)(nil)).Elem(),
+		reflect.TypeFor[ComputeReservationResourceStatusHealthInfo](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeReservation.ComputeReservationResourceStatusHealthInfoList",
-		reflect.TypeOf((*ComputeReservationResourceStatusHealthInfoList)(nil)).Elem(),
+		reflect.TypeFor[ComputeReservationResourceStatusHealthInfoList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -213,7 +213,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeReservationResourceStatusHealthInfoList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -221,7 +221,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeReservation.ComputeReservationResourceStatusHealthInfoOutputReference",
-		reflect.TypeOf((*ComputeReservationResourceStatusHealthInfoOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeReservationResourceStatusHealthInfoOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -248,7 +248,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeReservationResourceStatusHealthInfoOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -256,7 +256,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeReservation.ComputeReservationResourceStatusList",
-		reflect.TypeOf((*ComputeReservationResourceStatusList)(nil)).Elem(),
+		reflect.TypeFor[ComputeReservationResourceStatusList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -269,7 +269,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeReservationResourceStatusList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -277,7 +277,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeReservation.ComputeReservationResourceStatusOutputReference",
-		reflect.TypeOf((*ComputeReservationResourceStatusOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeReservationResourceStatusOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -305,7 +305,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeReservationResourceStatusOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -313,11 +313,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeReservation.ComputeReservationResourceStatusReservationMaintenance",
-		reflect.TypeOf((*ComputeReservationResourceStatusReservationMaintenance)(nil)).Elem(),
+		reflect.TypeFor[ComputeReservationResourceStatusReservationMaintenance](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeReservation.ComputeReservationResourceStatusReservationMaintenanceList",
-		reflect.TypeOf((*ComputeReservationResourceStatusReservationMaintenanceList)(nil)).Elem(),
+		reflect.TypeFor[ComputeReservationResourceStatusReservationMaintenanceList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -330,7 +330,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeReservationResourceStatusReservationMaintenanceList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -338,7 +338,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeReservation.ComputeReservationResourceStatusReservationMaintenanceOutputReference",
-		reflect.TypeOf((*ComputeReservationResourceStatusReservationMaintenanceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeReservationResourceStatusReservationMaintenanceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -370,7 +370,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "upcomingGroupMaintenance", GoGetter: "UpcomingGroupMaintenance"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeReservationResourceStatusReservationMaintenanceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -378,11 +378,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeReservation.ComputeReservationResourceStatusReservationMaintenanceUpcomingGroupMaintenance",
-		reflect.TypeOf((*ComputeReservationResourceStatusReservationMaintenanceUpcomingGroupMaintenance)(nil)).Elem(),
+		reflect.TypeFor[ComputeReservationResourceStatusReservationMaintenanceUpcomingGroupMaintenance](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeReservation.ComputeReservationResourceStatusReservationMaintenanceUpcomingGroupMaintenanceList",
-		reflect.TypeOf((*ComputeReservationResourceStatusReservationMaintenanceUpcomingGroupMaintenanceList)(nil)).Elem(),
+		reflect.TypeFor[ComputeReservationResourceStatusReservationMaintenanceUpcomingGroupMaintenanceList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -395,7 +395,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeReservationResourceStatusReservationMaintenanceUpcomingGroupMaintenanceList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -403,7 +403,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeReservation.ComputeReservationResourceStatusReservationMaintenanceUpcomingGroupMaintenanceOutputReference",
-		reflect.TypeOf((*ComputeReservationResourceStatusReservationMaintenanceUpcomingGroupMaintenanceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeReservationResourceStatusReservationMaintenanceUpcomingGroupMaintenanceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "canReschedule", GoGetter: "CanReschedule"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -435,7 +435,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "windowEndTime", GoGetter: "WindowEndTime"},
 			_jsii_.MemberProperty{JsiiProperty: "windowStartTime", GoGetter: "WindowStartTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeReservationResourceStatusReservationMaintenanceUpcomingGroupMaintenanceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -443,11 +443,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeReservation.ComputeReservationResourceStatusSpecificSkuAllocation",
-		reflect.TypeOf((*ComputeReservationResourceStatusSpecificSkuAllocation)(nil)).Elem(),
+		reflect.TypeFor[ComputeReservationResourceStatusSpecificSkuAllocation](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeReservation.ComputeReservationResourceStatusSpecificSkuAllocationList",
-		reflect.TypeOf((*ComputeReservationResourceStatusSpecificSkuAllocationList)(nil)).Elem(),
+		reflect.TypeFor[ComputeReservationResourceStatusSpecificSkuAllocationList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -460,7 +460,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeReservationResourceStatusSpecificSkuAllocationList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -468,7 +468,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeReservation.ComputeReservationResourceStatusSpecificSkuAllocationOutputReference",
-		reflect.TypeOf((*ComputeReservationResourceStatusSpecificSkuAllocationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeReservationResourceStatusSpecificSkuAllocationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -494,7 +494,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "utilizations", GoGetter: "Utilizations"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeReservationResourceStatusSpecificSkuAllocationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -502,11 +502,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeReservation.ComputeReservationShareSettings",
-		reflect.TypeOf((*ComputeReservationShareSettings)(nil)).Elem(),
+		reflect.TypeFor[ComputeReservationShareSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeReservation.ComputeReservationShareSettingsOutputReference",
-		reflect.TypeOf((*ComputeReservationShareSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeReservationShareSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -537,7 +537,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeReservationShareSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -545,11 +545,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeReservation.ComputeReservationShareSettingsProjectMap",
-		reflect.TypeOf((*ComputeReservationShareSettingsProjectMap)(nil)).Elem(),
+		reflect.TypeFor[ComputeReservationShareSettingsProjectMap](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeReservation.ComputeReservationShareSettingsProjectMapList",
-		reflect.TypeOf((*ComputeReservationShareSettingsProjectMapList)(nil)).Elem(),
+		reflect.TypeFor[ComputeReservationShareSettingsProjectMapList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -563,7 +563,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeReservationShareSettingsProjectMapList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -571,7 +571,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeReservation.ComputeReservationShareSettingsProjectMapOutputReference",
-		reflect.TypeOf((*ComputeReservationShareSettingsProjectMapOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeReservationShareSettingsProjectMapOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -600,7 +600,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeReservationShareSettingsProjectMapOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -608,19 +608,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeReservation.ComputeReservationSpecificReservation",
-		reflect.TypeOf((*ComputeReservationSpecificReservation)(nil)).Elem(),
+		reflect.TypeFor[ComputeReservationSpecificReservation](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeReservation.ComputeReservationSpecificReservationInstanceProperties",
-		reflect.TypeOf((*ComputeReservationSpecificReservationInstanceProperties)(nil)).Elem(),
+		reflect.TypeFor[ComputeReservationSpecificReservationInstanceProperties](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeReservation.ComputeReservationSpecificReservationInstancePropertiesGuestAccelerators",
-		reflect.TypeOf((*ComputeReservationSpecificReservationInstancePropertiesGuestAccelerators)(nil)).Elem(),
+		reflect.TypeFor[ComputeReservationSpecificReservationInstancePropertiesGuestAccelerators](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeReservation.ComputeReservationSpecificReservationInstancePropertiesGuestAcceleratorsList",
-		reflect.TypeOf((*ComputeReservationSpecificReservationInstancePropertiesGuestAcceleratorsList)(nil)).Elem(),
+		reflect.TypeFor[ComputeReservationSpecificReservationInstancePropertiesGuestAcceleratorsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -634,7 +634,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeReservationSpecificReservationInstancePropertiesGuestAcceleratorsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -642,7 +642,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeReservation.ComputeReservationSpecificReservationInstancePropertiesGuestAcceleratorsOutputReference",
-		reflect.TypeOf((*ComputeReservationSpecificReservationInstancePropertiesGuestAcceleratorsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeReservationSpecificReservationInstancePropertiesGuestAcceleratorsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "acceleratorCount", GoGetter: "AcceleratorCount"},
 			_jsii_.MemberProperty{JsiiProperty: "acceleratorCountInput", GoGetter: "AcceleratorCountInput"},
@@ -670,7 +670,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeReservationSpecificReservationInstancePropertiesGuestAcceleratorsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -678,11 +678,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeReservation.ComputeReservationSpecificReservationInstancePropertiesLocalSsds",
-		reflect.TypeOf((*ComputeReservationSpecificReservationInstancePropertiesLocalSsds)(nil)).Elem(),
+		reflect.TypeFor[ComputeReservationSpecificReservationInstancePropertiesLocalSsds](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeReservation.ComputeReservationSpecificReservationInstancePropertiesLocalSsdsList",
-		reflect.TypeOf((*ComputeReservationSpecificReservationInstancePropertiesLocalSsdsList)(nil)).Elem(),
+		reflect.TypeFor[ComputeReservationSpecificReservationInstancePropertiesLocalSsdsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -696,7 +696,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeReservationSpecificReservationInstancePropertiesLocalSsdsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -704,7 +704,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeReservation.ComputeReservationSpecificReservationInstancePropertiesLocalSsdsOutputReference",
-		reflect.TypeOf((*ComputeReservationSpecificReservationInstancePropertiesLocalSsdsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeReservationSpecificReservationInstancePropertiesLocalSsdsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -733,7 +733,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeReservationSpecificReservationInstancePropertiesLocalSsdsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -741,7 +741,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeReservation.ComputeReservationSpecificReservationInstancePropertiesOutputReference",
-		reflect.TypeOf((*ComputeReservationSpecificReservationInstancePropertiesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeReservationSpecificReservationInstancePropertiesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -779,7 +779,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeReservationSpecificReservationInstancePropertiesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -787,7 +787,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeReservation.ComputeReservationSpecificReservationOutputReference",
-		reflect.TypeOf((*ComputeReservationSpecificReservationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeReservationSpecificReservationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "assuredCount", GoGetter: "AssuredCount"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -822,7 +822,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeReservationSpecificReservationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -830,11 +830,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeReservation.ComputeReservationTimeouts",
-		reflect.TypeOf((*ComputeReservationTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ComputeReservationTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeReservation.ComputeReservationTimeoutsOutputReference",
-		reflect.TypeOf((*ComputeReservationTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeReservationTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -867,7 +867,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeReservationTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

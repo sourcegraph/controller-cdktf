@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeUrlMapPathMatcherPathRuleRouteActionCachePolicyMaxTtlO
 	return nil
 }
 
-func (j *jsiiProxy_ComputeUrlMapPathMatcherPathRuleRouteActionCachePolicyMaxTtlOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeUrlMapPathMatcherPathRuleRouteActionCachePolicyMaxTtlOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewComputeUrlMapPathMatcherPathRuleRouteActionCachePolicyMaxTtlOutp
 
 	return nil
 }
-

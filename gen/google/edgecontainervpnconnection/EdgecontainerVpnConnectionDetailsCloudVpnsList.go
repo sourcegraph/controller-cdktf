@@ -36,7 +36,7 @@ type EdgecontainerVpnConnectionDetailsCloudVpnsList interface {
 	Get(index *float64) EdgecontainerVpnConnectionDetailsCloudVpnsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,7 +99,6 @@ func (j *jsiiProxy_EdgecontainerVpnConnectionDetailsCloudVpnsList) WrapsSet() *b
 	return returns
 }
 
-
 func NewEdgecontainerVpnConnectionDetailsCloudVpnsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EdgecontainerVpnConnectionDetailsCloudVpnsList {
 	_init_.Initialize()
 
@@ -110,7 +109,7 @@ func NewEdgecontainerVpnConnectionDetailsCloudVpnsList(terraformResource cdktf.I
 
 	_jsii_.Create(
 		"@cdktf/provider-google.edgecontainerVpnConnection.EdgecontainerVpnConnectionDetailsCloudVpnsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -122,12 +121,12 @@ func NewEdgecontainerVpnConnectionDetailsCloudVpnsList_Override(e EdgecontainerV
 
 	_jsii_.Create(
 		"@cdktf/provider-google.edgecontainerVpnConnection.EdgecontainerVpnConnectionDetailsCloudVpnsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)
 }
 
-func (j *jsiiProxy_EdgecontainerVpnConnectionDetailsCloudVpnsList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_EdgecontainerVpnConnectionDetailsCloudVpnsList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -138,7 +137,7 @@ func (j *jsiiProxy_EdgecontainerVpnConnectionDetailsCloudVpnsList)SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_EdgecontainerVpnConnectionDetailsCloudVpnsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EdgecontainerVpnConnectionDetailsCloudVpnsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -149,7 +148,7 @@ func (j *jsiiProxy_EdgecontainerVpnConnectionDetailsCloudVpnsList)SetTerraformRe
 	)
 }
 
-func (j *jsiiProxy_EdgecontainerVpnConnectionDetailsCloudVpnsList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_EdgecontainerVpnConnectionDetailsCloudVpnsList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -169,7 +168,7 @@ func (e *jsiiProxy_EdgecontainerVpnConnectionDetailsCloudVpnsList) AllWithMapKey
 	_jsii_.Invoke(
 		e,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -198,23 +197,23 @@ func (e *jsiiProxy_EdgecontainerVpnConnectionDetailsCloudVpnsList) Get(index *fl
 	_jsii_.Invoke(
 		e,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (e *jsiiProxy_EdgecontainerVpnConnectionDetailsCloudVpnsList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (e *jsiiProxy_EdgecontainerVpnConnectionDetailsCloudVpnsList) Resolve(_context cdktf.IResolveContext) any {
 	if err := e.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -233,4 +232,3 @@ func (e *jsiiProxy_EdgecontainerVpnConnectionDetailsCloudVpnsList) ToString() *s
 
 	return returns
 }
-

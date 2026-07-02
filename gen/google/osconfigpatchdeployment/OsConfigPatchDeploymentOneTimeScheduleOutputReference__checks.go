@@ -98,7 +98,7 @@ func (o *jsiiProxy_OsConfigPatchDeploymentOneTimeScheduleOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_OsConfigPatchDeploymentOneTimeScheduleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_OsConfigPatchDeploymentOneTimeScheduleOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewOsConfigPatchDeploymentOneTimeScheduleOutputReferenceParameters(
 
 	return nil
 }
-

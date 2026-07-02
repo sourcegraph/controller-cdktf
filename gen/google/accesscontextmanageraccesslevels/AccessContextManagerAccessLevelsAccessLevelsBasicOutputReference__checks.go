@@ -90,7 +90,7 @@ func (a *jsiiProxy_AccessContextManagerAccessLevelsAccessLevelsBasicOutputRefere
 	return nil
 }
 
-func (a *jsiiProxy_AccessContextManagerAccessLevelsAccessLevelsBasicOutputReference) validatePutConditionsParameters(value interface{}) error {
+func (a *jsiiProxy_AccessContextManagerAccessLevelsAccessLevelsBasicOutputReference) validatePutConditionsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -137,7 +137,7 @@ func (j *jsiiProxy_AccessContextManagerAccessLevelsAccessLevelsBasicOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_AccessContextManagerAccessLevelsAccessLevelsBasicOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AccessContextManagerAccessLevelsAccessLevelsBasicOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -237,4 +237,3 @@ func validateNewAccessContextManagerAccessLevelsAccessLevelsBasicOutputReference
 
 	return nil
 }
-

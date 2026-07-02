@@ -6,9 +6,9 @@ import (
 
 type ClouddeployTargetConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type ClouddeployTargetConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The location for the resource.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_target#location ClouddeployTarget#location}
@@ -43,7 +43,7 @@ type ClouddeployTargetConfig struct {
 	// associated_entities block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_target#associated_entities ClouddeployTarget#associated_entities}
-	AssociatedEntities interface{} `field:"optional" json:"associatedEntities" yaml:"associatedEntities"`
+	AssociatedEntities any `field:"optional" json:"associatedEntities" yaml:"associatedEntities"`
 	// custom_target block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_target#custom_target ClouddeployTarget#custom_target}
@@ -59,7 +59,7 @@ type ClouddeployTargetConfig struct {
 	// execution_configs block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_target#execution_configs ClouddeployTarget#execution_configs}
-	ExecutionConfigs interface{} `field:"optional" json:"executionConfigs" yaml:"executionConfigs"`
+	ExecutionConfigs any `field:"optional" json:"executionConfigs" yaml:"executionConfigs"`
 	// gke block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_target#gke ClouddeployTarget#gke}
@@ -89,7 +89,7 @@ type ClouddeployTargetConfig struct {
 	// Optional. Whether or not the `Target` requires approval.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_target#require_approval ClouddeployTarget#require_approval}
-	RequireApproval interface{} `field:"optional" json:"requireApproval" yaml:"requireApproval"`
+	RequireApproval any `field:"optional" json:"requireApproval" yaml:"requireApproval"`
 	// run block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_target#run ClouddeployTarget#run}
@@ -99,4 +99,3 @@ type ClouddeployTargetConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_target#timeouts ClouddeployTarget#timeouts}
 	Timeouts *ClouddeployTargetTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

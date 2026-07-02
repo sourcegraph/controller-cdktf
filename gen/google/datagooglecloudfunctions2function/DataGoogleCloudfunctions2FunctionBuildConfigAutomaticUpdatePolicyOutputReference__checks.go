@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleCloudfunctions2FunctionBuildConfigAutomaticUpdatePo
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleCloudfunctions2FunctionBuildConfigAutomaticUpdatePolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleCloudfunctions2FunctionBuildConfigAutomaticUpdatePolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleCloudfunctions2FunctionBuildConfigAutomaticUpdatePolic
 
 	return nil
 }
-

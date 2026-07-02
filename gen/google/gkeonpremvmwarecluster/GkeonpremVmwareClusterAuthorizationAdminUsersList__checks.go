@@ -34,7 +34,7 @@ func (g *jsiiProxy_GkeonpremVmwareClusterAuthorizationAdminUsersList) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_GkeonpremVmwareClusterAuthorizationAdminUsersList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GkeonpremVmwareClusterAuthorizationAdminUsersList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGkeonpremVmwareClusterAuthorizationAdminUsersListParameters(terr
 
 	return nil
 }
-

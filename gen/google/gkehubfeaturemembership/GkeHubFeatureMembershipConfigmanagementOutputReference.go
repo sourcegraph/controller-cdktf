@@ -12,9 +12,9 @@ type GkeHubFeatureMembershipConfigmanagementOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -52,7 +52,7 @@ type GkeHubFeatureMembershipConfigmanagementOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -83,7 +83,7 @@ type GkeHubFeatureMembershipConfigmanagementOutputReference interface {
 	ResetVersion()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -96,8 +96,8 @@ type jsiiProxy_GkeHubFeatureMembershipConfigmanagementOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -266,7 +266,6 @@ func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementOutputReference) Versi
 	return returns
 }
 
-
 func NewGkeHubFeatureMembershipConfigmanagementOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GkeHubFeatureMembershipConfigmanagementOutputReference {
 	_init_.Initialize()
 
@@ -277,7 +276,7 @@ func NewGkeHubFeatureMembershipConfigmanagementOutputReference(terraformResource
 
 	_jsii_.Create(
 		"@cdktf/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipConfigmanagementOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -289,12 +288,12 @@ func NewGkeHubFeatureMembershipConfigmanagementOutputReference_Override(g GkeHub
 
 	_jsii_.Create(
 		"@cdktf/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipConfigmanagementOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -305,7 +304,7 @@ func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -316,7 +315,7 @@ func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementOutputReference)SetInternalValue(val *GkeHubFeatureMembershipConfigmanagement) {
+func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementOutputReference) SetInternalValue(val *GkeHubFeatureMembershipConfigmanagement) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,7 +326,7 @@ func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementOutputReference)SetInt
 	)
 }
 
-func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementOutputReference)SetManagement(val *string) {
+func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementOutputReference) SetManagement(val *string) {
 	if err := j.validateSetManagementParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,7 +337,7 @@ func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementOutputReference)SetMan
 	)
 }
 
-func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,7 +348,7 @@ func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,7 +359,7 @@ func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementOutputReference)SetVersion(val *string) {
+func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementOutputReference) SetVersion(val *string) {
 	if err := j.validateSetVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -384,16 +383,16 @@ func (g *jsiiProxy_GkeHubFeatureMembershipConfigmanagementOutputReference) Compu
 	return returns
 }
 
-func (g *jsiiProxy_GkeHubFeatureMembershipConfigmanagementOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GkeHubFeatureMembershipConfigmanagementOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -409,7 +408,7 @@ func (g *jsiiProxy_GkeHubFeatureMembershipConfigmanagementOutputReference) GetBo
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -425,7 +424,7 @@ func (g *jsiiProxy_GkeHubFeatureMembershipConfigmanagementOutputReference) GetBo
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -441,7 +440,7 @@ func (g *jsiiProxy_GkeHubFeatureMembershipConfigmanagementOutputReference) GetLi
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -457,7 +456,7 @@ func (g *jsiiProxy_GkeHubFeatureMembershipConfigmanagementOutputReference) GetNu
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -473,7 +472,7 @@ func (g *jsiiProxy_GkeHubFeatureMembershipConfigmanagementOutputReference) GetNu
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -489,7 +488,7 @@ func (g *jsiiProxy_GkeHubFeatureMembershipConfigmanagementOutputReference) GetNu
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -505,7 +504,7 @@ func (g *jsiiProxy_GkeHubFeatureMembershipConfigmanagementOutputReference) GetSt
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -521,7 +520,7 @@ func (g *jsiiProxy_GkeHubFeatureMembershipConfigmanagementOutputReference) GetSt
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -550,7 +549,7 @@ func (g *jsiiProxy_GkeHubFeatureMembershipConfigmanagementOutputReference) Inter
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -564,7 +563,7 @@ func (g *jsiiProxy_GkeHubFeatureMembershipConfigmanagementOutputReference) PutCo
 	_jsii_.InvokeVoid(
 		g,
 		"putConfigSync",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -575,7 +574,7 @@ func (g *jsiiProxy_GkeHubFeatureMembershipConfigmanagementOutputReference) PutHi
 	_jsii_.InvokeVoid(
 		g,
 		"putHierarchyController",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -586,7 +585,7 @@ func (g *jsiiProxy_GkeHubFeatureMembershipConfigmanagementOutputReference) PutPo
 	_jsii_.InvokeVoid(
 		g,
 		"putPolicyController",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -630,16 +629,16 @@ func (g *jsiiProxy_GkeHubFeatureMembershipConfigmanagementOutputReference) Reset
 	)
 }
 
-func (g *jsiiProxy_GkeHubFeatureMembershipConfigmanagementOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GkeHubFeatureMembershipConfigmanagementOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -658,4 +657,3 @@ func (g *jsiiProxy_GkeHubFeatureMembershipConfigmanagementOutputReference) ToStr
 
 	return returns
 }
-

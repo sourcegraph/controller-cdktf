@@ -120,7 +120,7 @@ func (m *jsiiProxy_MonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPe
 	return nil
 }
 
-func (j *jsiiProxy_MonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -244,4 +244,3 @@ func validateNewMonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerfo
 
 	return nil
 }
-

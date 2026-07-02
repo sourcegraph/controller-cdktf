@@ -98,7 +98,7 @@ func (i *jsiiProxy_IamWorkloadIdentityPoolProviderSamlOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_IamWorkloadIdentityPoolProviderSamlOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IamWorkloadIdentityPoolProviderSamlOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewIamWorkloadIdentityPoolProviderSamlOutputReferenceParameters(ter
 
 	return nil
 }
-

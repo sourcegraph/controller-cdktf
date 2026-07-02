@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.iamOauthClientCredential.IamOauthClientCredential",
-		reflect.TypeOf((*IamOauthClientCredential)(nil)).Elem(),
+		reflect.TypeFor[IamOauthClientCredential](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,7 +77,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IamOauthClientCredential{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -85,15 +85,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.iamOauthClientCredential.IamOauthClientCredentialConfig",
-		reflect.TypeOf((*IamOauthClientCredentialConfig)(nil)).Elem(),
+		reflect.TypeFor[IamOauthClientCredentialConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.iamOauthClientCredential.IamOauthClientCredentialTimeouts",
-		reflect.TypeOf((*IamOauthClientCredentialTimeouts)(nil)).Elem(),
+		reflect.TypeFor[IamOauthClientCredentialTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.iamOauthClientCredential.IamOauthClientCredentialTimeoutsOutputReference",
-		reflect.TypeOf((*IamOauthClientCredentialTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IamOauthClientCredentialTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -126,7 +126,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IamOauthClientCredentialTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

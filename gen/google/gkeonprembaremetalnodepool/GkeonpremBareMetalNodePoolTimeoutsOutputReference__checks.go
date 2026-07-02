@@ -98,7 +98,7 @@ func (g *jsiiProxy_GkeonpremBareMetalNodePoolTimeoutsOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_GkeonpremBareMetalNodePoolTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GkeonpremBareMetalNodePoolTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GkeonpremBareMetalNodePoolTimeoutsOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_GkeonpremBareMetalNodePoolTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GkeonpremBareMetalNodePoolTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGkeonpremBareMetalNodePoolTimeoutsOutputReferenceParameters(terr
 
 	return nil
 }
-

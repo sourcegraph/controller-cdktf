@@ -109,7 +109,7 @@ func (d *jsiiProxy_DiscoveryEngineAssistantGenerationConfigOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineAssistantGenerationConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DiscoveryEngineAssistantGenerationConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -217,4 +217,3 @@ func validateNewDiscoveryEngineAssistantGenerationConfigOutputReferenceParameter
 
 	return nil
 }
-

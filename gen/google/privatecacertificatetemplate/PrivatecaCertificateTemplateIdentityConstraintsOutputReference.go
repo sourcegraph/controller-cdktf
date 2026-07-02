@@ -10,19 +10,19 @@ import (
 
 type PrivatecaCertificateTemplateIdentityConstraintsOutputReference interface {
 	cdktf.ComplexObject
-	AllowSubjectAltNamesPassthrough() interface{}
-	SetAllowSubjectAltNamesPassthrough(val interface{})
-	AllowSubjectAltNamesPassthroughInput() interface{}
-	AllowSubjectPassthrough() interface{}
-	SetAllowSubjectPassthrough(val interface{})
-	AllowSubjectPassthroughInput() interface{}
+	AllowSubjectAltNamesPassthrough() any
+	SetAllowSubjectAltNamesPassthrough(val any)
+	AllowSubjectAltNamesPassthroughInput() any
+	AllowSubjectPassthrough() any
+	SetAllowSubjectPassthrough(val any)
+	AllowSubjectPassthroughInput() any
 	CelExpression() PrivatecaCertificateTemplateIdentityConstraintsCelExpressionOutputReference
 	CelExpressionInput() *PrivatecaCertificateTemplateIdentityConstraintsCelExpression
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -48,7 +48,7 @@ type PrivatecaCertificateTemplateIdentityConstraintsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -73,7 +73,7 @@ type PrivatecaCertificateTemplateIdentityConstraintsOutputReference interface {
 	ResetCelExpression()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -86,8 +86,8 @@ type jsiiProxy_PrivatecaCertificateTemplateIdentityConstraintsOutputReference st
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_PrivatecaCertificateTemplateIdentityConstraintsOutputReference) AllowSubjectAltNamesPassthrough() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PrivatecaCertificateTemplateIdentityConstraintsOutputReference) AllowSubjectAltNamesPassthrough() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowSubjectAltNamesPassthrough",
@@ -96,8 +96,8 @@ func (j *jsiiProxy_PrivatecaCertificateTemplateIdentityConstraintsOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_PrivatecaCertificateTemplateIdentityConstraintsOutputReference) AllowSubjectAltNamesPassthroughInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PrivatecaCertificateTemplateIdentityConstraintsOutputReference) AllowSubjectAltNamesPassthroughInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowSubjectAltNamesPassthroughInput",
@@ -106,8 +106,8 @@ func (j *jsiiProxy_PrivatecaCertificateTemplateIdentityConstraintsOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_PrivatecaCertificateTemplateIdentityConstraintsOutputReference) AllowSubjectPassthrough() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PrivatecaCertificateTemplateIdentityConstraintsOutputReference) AllowSubjectPassthrough() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowSubjectPassthrough",
@@ -116,8 +116,8 @@ func (j *jsiiProxy_PrivatecaCertificateTemplateIdentityConstraintsOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_PrivatecaCertificateTemplateIdentityConstraintsOutputReference) AllowSubjectPassthroughInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PrivatecaCertificateTemplateIdentityConstraintsOutputReference) AllowSubjectPassthroughInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowSubjectPassthroughInput",
@@ -146,8 +146,8 @@ func (j *jsiiProxy_PrivatecaCertificateTemplateIdentityConstraintsOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_PrivatecaCertificateTemplateIdentityConstraintsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PrivatecaCertificateTemplateIdentityConstraintsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -216,7 +216,6 @@ func (j *jsiiProxy_PrivatecaCertificateTemplateIdentityConstraintsOutputReferenc
 	return returns
 }
 
-
 func NewPrivatecaCertificateTemplateIdentityConstraintsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PrivatecaCertificateTemplateIdentityConstraintsOutputReference {
 	_init_.Initialize()
 
@@ -227,7 +226,7 @@ func NewPrivatecaCertificateTemplateIdentityConstraintsOutputReference(terraform
 
 	_jsii_.Create(
 		"@cdktf/provider-google.privatecaCertificateTemplate.PrivatecaCertificateTemplateIdentityConstraintsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -239,12 +238,12 @@ func NewPrivatecaCertificateTemplateIdentityConstraintsOutputReference_Override(
 
 	_jsii_.Create(
 		"@cdktf/provider-google.privatecaCertificateTemplate.PrivatecaCertificateTemplateIdentityConstraintsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCertificateTemplateIdentityConstraintsOutputReference)SetAllowSubjectAltNamesPassthrough(val interface{}) {
+func (j *jsiiProxy_PrivatecaCertificateTemplateIdentityConstraintsOutputReference) SetAllowSubjectAltNamesPassthrough(val any) {
 	if err := j.validateSetAllowSubjectAltNamesPassthroughParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_PrivatecaCertificateTemplateIdentityConstraintsOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCertificateTemplateIdentityConstraintsOutputReference)SetAllowSubjectPassthrough(val interface{}) {
+func (j *jsiiProxy_PrivatecaCertificateTemplateIdentityConstraintsOutputReference) SetAllowSubjectPassthrough(val any) {
 	if err := j.validateSetAllowSubjectPassthroughParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_PrivatecaCertificateTemplateIdentityConstraintsOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCertificateTemplateIdentityConstraintsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_PrivatecaCertificateTemplateIdentityConstraintsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_PrivatecaCertificateTemplateIdentityConstraintsOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCertificateTemplateIdentityConstraintsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_PrivatecaCertificateTemplateIdentityConstraintsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_PrivatecaCertificateTemplateIdentityConstraintsOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCertificateTemplateIdentityConstraintsOutputReference)SetInternalValue(val *PrivatecaCertificateTemplateIdentityConstraints) {
+func (j *jsiiProxy_PrivatecaCertificateTemplateIdentityConstraintsOutputReference) SetInternalValue(val *PrivatecaCertificateTemplateIdentityConstraints) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -299,7 +298,7 @@ func (j *jsiiProxy_PrivatecaCertificateTemplateIdentityConstraintsOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCertificateTemplateIdentityConstraintsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_PrivatecaCertificateTemplateIdentityConstraintsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -310,7 +309,7 @@ func (j *jsiiProxy_PrivatecaCertificateTemplateIdentityConstraintsOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCertificateTemplateIdentityConstraintsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PrivatecaCertificateTemplateIdentityConstraintsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -334,16 +333,16 @@ func (p *jsiiProxy_PrivatecaCertificateTemplateIdentityConstraintsOutputReferenc
 	return returns
 }
 
-func (p *jsiiProxy_PrivatecaCertificateTemplateIdentityConstraintsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_PrivatecaCertificateTemplateIdentityConstraintsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -359,7 +358,7 @@ func (p *jsiiProxy_PrivatecaCertificateTemplateIdentityConstraintsOutputReferenc
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -375,7 +374,7 @@ func (p *jsiiProxy_PrivatecaCertificateTemplateIdentityConstraintsOutputReferenc
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -391,7 +390,7 @@ func (p *jsiiProxy_PrivatecaCertificateTemplateIdentityConstraintsOutputReferenc
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -407,7 +406,7 @@ func (p *jsiiProxy_PrivatecaCertificateTemplateIdentityConstraintsOutputReferenc
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -423,7 +422,7 @@ func (p *jsiiProxy_PrivatecaCertificateTemplateIdentityConstraintsOutputReferenc
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -439,7 +438,7 @@ func (p *jsiiProxy_PrivatecaCertificateTemplateIdentityConstraintsOutputReferenc
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -455,7 +454,7 @@ func (p *jsiiProxy_PrivatecaCertificateTemplateIdentityConstraintsOutputReferenc
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -471,7 +470,7 @@ func (p *jsiiProxy_PrivatecaCertificateTemplateIdentityConstraintsOutputReferenc
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -500,7 +499,7 @@ func (p *jsiiProxy_PrivatecaCertificateTemplateIdentityConstraintsOutputReferenc
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -514,7 +513,7 @@ func (p *jsiiProxy_PrivatecaCertificateTemplateIdentityConstraintsOutputReferenc
 	_jsii_.InvokeVoid(
 		p,
 		"putCelExpression",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -526,16 +525,16 @@ func (p *jsiiProxy_PrivatecaCertificateTemplateIdentityConstraintsOutputReferenc
 	)
 }
 
-func (p *jsiiProxy_PrivatecaCertificateTemplateIdentityConstraintsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PrivatecaCertificateTemplateIdentityConstraintsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := p.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -554,4 +553,3 @@ func (p *jsiiProxy_PrivatecaCertificateTemplateIdentityConstraintsOutputReferenc
 
 	return returns
 }
-

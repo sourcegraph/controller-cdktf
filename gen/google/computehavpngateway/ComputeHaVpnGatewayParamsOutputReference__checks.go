@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeHaVpnGatewayParamsOutputReference) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_ComputeHaVpnGatewayParamsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeHaVpnGatewayParamsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewComputeHaVpnGatewayParamsOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

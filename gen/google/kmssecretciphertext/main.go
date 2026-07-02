@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.kmsSecretCiphertext.KmsSecretCiphertext",
-		reflect.TypeOf((*KmsSecretCiphertext)(nil)).Elem(),
+		reflect.TypeFor[KmsSecretCiphertext](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "additionalAuthenticatedData", GoGetter: "AdditionalAuthenticatedData"},
 			_jsii_.MemberProperty{JsiiProperty: "additionalAuthenticatedDataInput", GoGetter: "AdditionalAuthenticatedDataInput"},
@@ -68,7 +68,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_KmsSecretCiphertext{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -76,15 +76,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.kmsSecretCiphertext.KmsSecretCiphertextConfig",
-		reflect.TypeOf((*KmsSecretCiphertextConfig)(nil)).Elem(),
+		reflect.TypeFor[KmsSecretCiphertextConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.kmsSecretCiphertext.KmsSecretCiphertextTimeouts",
-		reflect.TypeOf((*KmsSecretCiphertextTimeouts)(nil)).Elem(),
+		reflect.TypeFor[KmsSecretCiphertextTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.kmsSecretCiphertext.KmsSecretCiphertextTimeoutsOutputReference",
-		reflect.TypeOf((*KmsSecretCiphertextTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[KmsSecretCiphertextTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -114,7 +114,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_KmsSecretCiphertextTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

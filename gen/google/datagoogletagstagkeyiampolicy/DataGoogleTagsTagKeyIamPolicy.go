@@ -15,11 +15,11 @@ type DataGoogleTagsTagKeyIamPolicy interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -48,20 +48,20 @@ type DataGoogleTagsTagKeyIamPolicy interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	TagKey() *string
 	SetTagKey(val *string)
 	TagKeyInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -87,18 +87,18 @@ type DataGoogleTagsTagKeyIamPolicy interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataGoogleTagsTagKeyIamPolicy
@@ -116,8 +116,8 @@ func (j *jsiiProxy_DataGoogleTagsTagKeyIamPolicy) CdktfStack() cdktf.TerraformSt
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleTagsTagKeyIamPolicy) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleTagsTagKeyIamPolicy) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -126,8 +126,8 @@ func (j *jsiiProxy_DataGoogleTagsTagKeyIamPolicy) ConstructNodeMetadata() *map[s
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleTagsTagKeyIamPolicy) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleTagsTagKeyIamPolicy) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -246,8 +246,8 @@ func (j *jsiiProxy_DataGoogleTagsTagKeyIamPolicy) Provider() cdktf.TerraformProv
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleTagsTagKeyIamPolicy) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleTagsTagKeyIamPolicy) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -286,8 +286,8 @@ func (j *jsiiProxy_DataGoogleTagsTagKeyIamPolicy) TerraformGeneratorMetadata() *
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleTagsTagKeyIamPolicy) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleTagsTagKeyIamPolicy) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -306,7 +306,6 @@ func (j *jsiiProxy_DataGoogleTagsTagKeyIamPolicy) TerraformResourceType() *strin
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/tags_tag_key_iam_policy google_tags_tag_key_iam_policy} Data Source.
 func NewDataGoogleTagsTagKeyIamPolicy(scope constructs.Construct, id *string, config *DataGoogleTagsTagKeyIamPolicyConfig) DataGoogleTagsTagKeyIamPolicy {
 	_init_.Initialize()
@@ -318,7 +317,7 @@ func NewDataGoogleTagsTagKeyIamPolicy(scope constructs.Construct, id *string, co
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleTagsTagKeyIamPolicy.DataGoogleTagsTagKeyIamPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -331,12 +330,12 @@ func NewDataGoogleTagsTagKeyIamPolicy_Override(d DataGoogleTagsTagKeyIamPolicy, 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleTagsTagKeyIamPolicy.DataGoogleTagsTagKeyIamPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataGoogleTagsTagKeyIamPolicy)SetCount(val interface{}) {
+func (j *jsiiProxy_DataGoogleTagsTagKeyIamPolicy) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_DataGoogleTagsTagKeyIamPolicy)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleTagsTagKeyIamPolicy)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataGoogleTagsTagKeyIamPolicy) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -355,7 +354,7 @@ func (j *jsiiProxy_DataGoogleTagsTagKeyIamPolicy)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleTagsTagKeyIamPolicy)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGoogleTagsTagKeyIamPolicy) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -363,7 +362,7 @@ func (j *jsiiProxy_DataGoogleTagsTagKeyIamPolicy)SetForEach(val cdktf.ITerraform
 	)
 }
 
-func (j *jsiiProxy_DataGoogleTagsTagKeyIamPolicy)SetId(val *string) {
+func (j *jsiiProxy_DataGoogleTagsTagKeyIamPolicy) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -374,7 +373,7 @@ func (j *jsiiProxy_DataGoogleTagsTagKeyIamPolicy)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleTagsTagKeyIamPolicy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGoogleTagsTagKeyIamPolicy) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -385,7 +384,7 @@ func (j *jsiiProxy_DataGoogleTagsTagKeyIamPolicy)SetLifecycle(val *cdktf.Terrafo
 	)
 }
 
-func (j *jsiiProxy_DataGoogleTagsTagKeyIamPolicy)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGoogleTagsTagKeyIamPolicy) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -393,7 +392,7 @@ func (j *jsiiProxy_DataGoogleTagsTagKeyIamPolicy)SetProvider(val cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_DataGoogleTagsTagKeyIamPolicy)SetTagKey(val *string) {
+func (j *jsiiProxy_DataGoogleTagsTagKeyIamPolicy) SetTagKey(val *string) {
 	if err := j.validateSetTagKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -416,7 +415,7 @@ func DataGoogleTagsTagKeyIamPolicy_GenerateConfigForImport(scope constructs.Cons
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleTagsTagKeyIamPolicy.DataGoogleTagsTagKeyIamPolicy",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -440,7 +439,7 @@ func DataGoogleTagsTagKeyIamPolicy_GenerateConfigForImport(scope constructs.Cons
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataGoogleTagsTagKeyIamPolicy_IsConstruct(x interface{}) *bool {
+func DataGoogleTagsTagKeyIamPolicy_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleTagsTagKeyIamPolicy_IsConstructParameters(x); err != nil {
@@ -451,7 +450,7 @@ func DataGoogleTagsTagKeyIamPolicy_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleTagsTagKeyIamPolicy.DataGoogleTagsTagKeyIamPolicy",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -459,7 +458,7 @@ func DataGoogleTagsTagKeyIamPolicy_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGoogleTagsTagKeyIamPolicy_IsTerraformDataSource(x interface{}) *bool {
+func DataGoogleTagsTagKeyIamPolicy_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleTagsTagKeyIamPolicy_IsTerraformDataSourceParameters(x); err != nil {
@@ -470,7 +469,7 @@ func DataGoogleTagsTagKeyIamPolicy_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleTagsTagKeyIamPolicy.DataGoogleTagsTagKeyIamPolicy",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func DataGoogleTagsTagKeyIamPolicy_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGoogleTagsTagKeyIamPolicy_IsTerraformElement(x interface{}) *bool {
+func DataGoogleTagsTagKeyIamPolicy_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleTagsTagKeyIamPolicy_IsTerraformElementParameters(x); err != nil {
@@ -489,7 +488,7 @@ func DataGoogleTagsTagKeyIamPolicy_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleTagsTagKeyIamPolicy.DataGoogleTagsTagKeyIamPolicy",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -507,27 +506,27 @@ func DataGoogleTagsTagKeyIamPolicy_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleTagsTagKeyIamPolicy) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataGoogleTagsTagKeyIamPolicy) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataGoogleTagsTagKeyIamPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataGoogleTagsTagKeyIamPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -543,7 +542,7 @@ func (d *jsiiProxy_DataGoogleTagsTagKeyIamPolicy) GetBooleanAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -559,7 +558,7 @@ func (d *jsiiProxy_DataGoogleTagsTagKeyIamPolicy) GetBooleanMapAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -575,7 +574,7 @@ func (d *jsiiProxy_DataGoogleTagsTagKeyIamPolicy) GetListAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -591,7 +590,7 @@ func (d *jsiiProxy_DataGoogleTagsTagKeyIamPolicy) GetNumberAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -607,7 +606,7 @@ func (d *jsiiProxy_DataGoogleTagsTagKeyIamPolicy) GetNumberListAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -623,7 +622,7 @@ func (d *jsiiProxy_DataGoogleTagsTagKeyIamPolicy) GetNumberMapAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -639,7 +638,7 @@ func (d *jsiiProxy_DataGoogleTagsTagKeyIamPolicy) GetStringAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -655,7 +654,7 @@ func (d *jsiiProxy_DataGoogleTagsTagKeyIamPolicy) GetStringMapAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -671,7 +670,7 @@ func (d *jsiiProxy_DataGoogleTagsTagKeyIamPolicy) InterpolationForAttribute(terr
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -685,7 +684,7 @@ func (d *jsiiProxy_DataGoogleTagsTagKeyIamPolicy) OverrideLogicalId(newLogicalId
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -705,8 +704,8 @@ func (d *jsiiProxy_DataGoogleTagsTagKeyIamPolicy) ResetOverrideLogicalId() {
 	)
 }
 
-func (d *jsiiProxy_DataGoogleTagsTagKeyIamPolicy) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleTagsTagKeyIamPolicy) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -718,8 +717,8 @@ func (d *jsiiProxy_DataGoogleTagsTagKeyIamPolicy) SynthesizeAttributes() *map[st
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleTagsTagKeyIamPolicy) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleTagsTagKeyIamPolicy) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -731,8 +730,8 @@ func (d *jsiiProxy_DataGoogleTagsTagKeyIamPolicy) SynthesizeHclAttributes() *map
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleTagsTagKeyIamPolicy) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleTagsTagKeyIamPolicy) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -744,8 +743,8 @@ func (d *jsiiProxy_DataGoogleTagsTagKeyIamPolicy) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleTagsTagKeyIamPolicy) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleTagsTagKeyIamPolicy) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -770,8 +769,8 @@ func (d *jsiiProxy_DataGoogleTagsTagKeyIamPolicy) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleTagsTagKeyIamPolicy) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleTagsTagKeyIamPolicy) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -782,4 +781,3 @@ func (d *jsiiProxy_DataGoogleTagsTagKeyIamPolicy) ToTerraform() interface{} {
 
 	return returns
 }
-

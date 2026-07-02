@@ -98,7 +98,7 @@ func (t *jsiiProxy_TranscoderJobConfigInputsOutputReference) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_TranscoderJobConfigInputsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_TranscoderJobConfigInputsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_TranscoderJobConfigInputsOutputReference) validateSetComplexO
 	return nil
 }
 
-func (j *jsiiProxy_TranscoderJobConfigInputsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_TranscoderJobConfigInputsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewTranscoderJobConfigInputsOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.oracleDatabaseCloudExadataInfrastructure.OracleDatabaseCloudExadataInfrastructure",
-		reflect.TypeOf((*OracleDatabaseCloudExadataInfrastructure)(nil)).Elem(),
+		reflect.TypeFor[OracleDatabaseCloudExadataInfrastructure](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -88,7 +88,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_OracleDatabaseCloudExadataInfrastructure{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -96,19 +96,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.oracleDatabaseCloudExadataInfrastructure.OracleDatabaseCloudExadataInfrastructureConfig",
-		reflect.TypeOf((*OracleDatabaseCloudExadataInfrastructureConfig)(nil)).Elem(),
+		reflect.TypeFor[OracleDatabaseCloudExadataInfrastructureConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.oracleDatabaseCloudExadataInfrastructure.OracleDatabaseCloudExadataInfrastructureProperties",
-		reflect.TypeOf((*OracleDatabaseCloudExadataInfrastructureProperties)(nil)).Elem(),
+		reflect.TypeFor[OracleDatabaseCloudExadataInfrastructureProperties](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.oracleDatabaseCloudExadataInfrastructure.OracleDatabaseCloudExadataInfrastructurePropertiesCustomerContacts",
-		reflect.TypeOf((*OracleDatabaseCloudExadataInfrastructurePropertiesCustomerContacts)(nil)).Elem(),
+		reflect.TypeFor[OracleDatabaseCloudExadataInfrastructurePropertiesCustomerContacts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.oracleDatabaseCloudExadataInfrastructure.OracleDatabaseCloudExadataInfrastructurePropertiesCustomerContactsList",
-		reflect.TypeOf((*OracleDatabaseCloudExadataInfrastructurePropertiesCustomerContactsList)(nil)).Elem(),
+		reflect.TypeFor[OracleDatabaseCloudExadataInfrastructurePropertiesCustomerContactsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -122,7 +122,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesCustomerContactsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -130,7 +130,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.oracleDatabaseCloudExadataInfrastructure.OracleDatabaseCloudExadataInfrastructurePropertiesCustomerContactsOutputReference",
-		reflect.TypeOf((*OracleDatabaseCloudExadataInfrastructurePropertiesCustomerContactsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[OracleDatabaseCloudExadataInfrastructurePropertiesCustomerContactsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -156,7 +156,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesCustomerContactsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -164,11 +164,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.oracleDatabaseCloudExadataInfrastructure.OracleDatabaseCloudExadataInfrastructurePropertiesMaintenanceWindow",
-		reflect.TypeOf((*OracleDatabaseCloudExadataInfrastructurePropertiesMaintenanceWindow)(nil)).Elem(),
+		reflect.TypeFor[OracleDatabaseCloudExadataInfrastructurePropertiesMaintenanceWindow](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.oracleDatabaseCloudExadataInfrastructure.OracleDatabaseCloudExadataInfrastructurePropertiesMaintenanceWindowOutputReference",
-		reflect.TypeOf((*OracleDatabaseCloudExadataInfrastructurePropertiesMaintenanceWindowOutputReference)(nil)).Elem(),
+		reflect.TypeFor[OracleDatabaseCloudExadataInfrastructurePropertiesMaintenanceWindowOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -219,7 +219,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "weeksOfMonth", GoGetter: "WeeksOfMonth"},
 			_jsii_.MemberProperty{JsiiProperty: "weeksOfMonthInput", GoGetter: "WeeksOfMonthInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesMaintenanceWindowOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -227,7 +227,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.oracleDatabaseCloudExadataInfrastructure.OracleDatabaseCloudExadataInfrastructurePropertiesOutputReference",
-		reflect.TypeOf((*OracleDatabaseCloudExadataInfrastructurePropertiesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[OracleDatabaseCloudExadataInfrastructurePropertiesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "activatedStorageCount", GoGetter: "ActivatedStorageCount"},
 			_jsii_.MemberProperty{JsiiProperty: "additionalStorageCount", GoGetter: "AdditionalStorageCount"},
@@ -291,7 +291,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "totalStorageSizeGb", GoGetter: "TotalStorageSizeGb"},
 			_jsii_.MemberProperty{JsiiProperty: "totalStorageSizeGbInput", GoGetter: "TotalStorageSizeGbInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -299,11 +299,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.oracleDatabaseCloudExadataInfrastructure.OracleDatabaseCloudExadataInfrastructureTimeouts",
-		reflect.TypeOf((*OracleDatabaseCloudExadataInfrastructureTimeouts)(nil)).Elem(),
+		reflect.TypeFor[OracleDatabaseCloudExadataInfrastructureTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.oracleDatabaseCloudExadataInfrastructure.OracleDatabaseCloudExadataInfrastructureTimeoutsOutputReference",
-		reflect.TypeOf((*OracleDatabaseCloudExadataInfrastructureTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[OracleDatabaseCloudExadataInfrastructureTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -336,7 +336,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_OracleDatabaseCloudExadataInfrastructureTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -98,7 +98,7 @@ func (b *jsiiProxy_BigqueryJobCopyDestinationTableOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryJobCopyDestinationTableOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryJobCopyDestinationTableOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewBigqueryJobCopyDestinationTableOutputReferenceParameters(terrafo
 
 	return nil
 }
-

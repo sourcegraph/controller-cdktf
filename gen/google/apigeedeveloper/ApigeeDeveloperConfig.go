@@ -6,9 +6,9 @@ import (
 
 type ApigeeDeveloperConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type ApigeeDeveloperConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Email address of the developer.
 	//
 	// This value is used to uniquely identify the developer in Apigee hybrid. Note that the email address has to be in lowercase only..
@@ -44,7 +44,7 @@ type ApigeeDeveloperConfig struct {
 	// attributes block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_developer#attributes ApigeeDeveloper#attributes}
-	Attributes interface{} `field:"optional" json:"attributes" yaml:"attributes"`
+	Attributes any `field:"optional" json:"attributes" yaml:"attributes"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_developer#id ApigeeDeveloper#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -55,4 +55,3 @@ type ApigeeDeveloperConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_developer#timeouts ApigeeDeveloper#timeouts}
 	Timeouts *ApigeeDeveloperTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

@@ -18,17 +18,17 @@ type MonitoringUptimeCheckConfig interface {
 	SetCheckerType(val *string)
 	CheckerTypeInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	ContentMatchers() MonitoringUptimeCheckConfigContentMatchersList
-	ContentMatchersInput() interface{}
+	ContentMatchersInput() any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -53,9 +53,9 @@ type MonitoringUptimeCheckConfig interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
-	LogCheckFailures() interface{}
-	SetLogCheckFailures(val interface{})
-	LogCheckFailuresInput() interface{}
+	LogCheckFailures() any
+	SetLogCheckFailures(val any)
+	LogCheckFailuresInput() any
 	MonitoredResource() MonitoringUptimeCheckConfigMonitoredResourceOutputReference
 	MonitoredResourceInput() *MonitoringUptimeCheckConfigMonitoredResource
 	Name() *string
@@ -72,11 +72,11 @@ type MonitoringUptimeCheckConfig interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ResourceGroup() MonitoringUptimeCheckConfigResourceGroupOutputReference
 	ResourceGroupInput() *MonitoringUptimeCheckConfigResourceGroup
 	SelectedRegions() *[]*string
@@ -89,14 +89,14 @@ type MonitoringUptimeCheckConfig interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeout() *string
 	SetTimeout(val *string)
 	TimeoutInput() *string
 	Timeouts() MonitoringUptimeCheckConfigTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UptimeCheckId() *string
 	UserLabels() *map[string]*string
 	SetUserLabels(val *map[string]*string)
@@ -105,9 +105,9 @@ type MonitoringUptimeCheckConfig interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -125,7 +125,7 @@ type MonitoringUptimeCheckConfig interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -137,14 +137,14 @@ type MonitoringUptimeCheckConfig interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutContentMatchers(value interface{})
+	PutContentMatchers(value any)
 	PutHttpCheck(value *MonitoringUptimeCheckConfigHttpCheck)
 	PutMonitoredResource(value *MonitoringUptimeCheckConfigMonitoredResource)
 	PutResourceGroup(value *MonitoringUptimeCheckConfigResourceGroup)
@@ -168,17 +168,17 @@ type MonitoringUptimeCheckConfig interface {
 	ResetTcpCheck()
 	ResetTimeouts()
 	ResetUserLabels()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for MonitoringUptimeCheckConfig
@@ -216,8 +216,8 @@ func (j *jsiiProxy_MonitoringUptimeCheckConfig) CheckerTypeInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_MonitoringUptimeCheckConfig) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MonitoringUptimeCheckConfig) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -226,8 +226,8 @@ func (j *jsiiProxy_MonitoringUptimeCheckConfig) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_MonitoringUptimeCheckConfig) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_MonitoringUptimeCheckConfig) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -246,8 +246,8 @@ func (j *jsiiProxy_MonitoringUptimeCheckConfig) ContentMatchers() MonitoringUpti
 	return returns
 }
 
-func (j *jsiiProxy_MonitoringUptimeCheckConfig) ContentMatchersInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MonitoringUptimeCheckConfig) ContentMatchersInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"contentMatchersInput",
@@ -256,8 +256,8 @@ func (j *jsiiProxy_MonitoringUptimeCheckConfig) ContentMatchersInput() interface
 	return returns
 }
 
-func (j *jsiiProxy_MonitoringUptimeCheckConfig) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MonitoringUptimeCheckConfig) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -376,8 +376,8 @@ func (j *jsiiProxy_MonitoringUptimeCheckConfig) Lifecycle() *cdktf.TerraformReso
 	return returns
 }
 
-func (j *jsiiProxy_MonitoringUptimeCheckConfig) LogCheckFailures() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MonitoringUptimeCheckConfig) LogCheckFailures() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"logCheckFailures",
@@ -386,8 +386,8 @@ func (j *jsiiProxy_MonitoringUptimeCheckConfig) LogCheckFailures() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_MonitoringUptimeCheckConfig) LogCheckFailuresInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MonitoringUptimeCheckConfig) LogCheckFailuresInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"logCheckFailuresInput",
@@ -486,8 +486,8 @@ func (j *jsiiProxy_MonitoringUptimeCheckConfig) Provider() cdktf.TerraformProvid
 	return returns
 }
 
-func (j *jsiiProxy_MonitoringUptimeCheckConfig) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_MonitoringUptimeCheckConfig) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -496,8 +496,8 @@ func (j *jsiiProxy_MonitoringUptimeCheckConfig) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_MonitoringUptimeCheckConfig) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MonitoringUptimeCheckConfig) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -596,8 +596,8 @@ func (j *jsiiProxy_MonitoringUptimeCheckConfig) TerraformGeneratorMetadata() *cd
 	return returns
 }
 
-func (j *jsiiProxy_MonitoringUptimeCheckConfig) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_MonitoringUptimeCheckConfig) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -646,8 +646,8 @@ func (j *jsiiProxy_MonitoringUptimeCheckConfig) Timeouts() MonitoringUptimeCheck
 	return returns
 }
 
-func (j *jsiiProxy_MonitoringUptimeCheckConfig) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MonitoringUptimeCheckConfig) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -686,7 +686,6 @@ func (j *jsiiProxy_MonitoringUptimeCheckConfig) UserLabelsInput() *map[string]*s
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_uptime_check_config google_monitoring_uptime_check_config} Resource.
 func NewMonitoringUptimeCheckConfig(scope constructs.Construct, id *string, config *MonitoringUptimeCheckConfigConfig) MonitoringUptimeCheckConfig {
 	_init_.Initialize()
@@ -698,7 +697,7 @@ func NewMonitoringUptimeCheckConfig(scope constructs.Construct, id *string, conf
 
 	_jsii_.Create(
 		"@cdktf/provider-google.monitoringUptimeCheckConfig.MonitoringUptimeCheckConfig",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -711,12 +710,12 @@ func NewMonitoringUptimeCheckConfig_Override(m MonitoringUptimeCheckConfig, scop
 
 	_jsii_.Create(
 		"@cdktf/provider-google.monitoringUptimeCheckConfig.MonitoringUptimeCheckConfig",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		m,
 	)
 }
 
-func (j *jsiiProxy_MonitoringUptimeCheckConfig)SetCheckerType(val *string) {
+func (j *jsiiProxy_MonitoringUptimeCheckConfig) SetCheckerType(val *string) {
 	if err := j.validateSetCheckerTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -727,7 +726,7 @@ func (j *jsiiProxy_MonitoringUptimeCheckConfig)SetCheckerType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MonitoringUptimeCheckConfig)SetConnection(val interface{}) {
+func (j *jsiiProxy_MonitoringUptimeCheckConfig) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -738,7 +737,7 @@ func (j *jsiiProxy_MonitoringUptimeCheckConfig)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MonitoringUptimeCheckConfig)SetCount(val interface{}) {
+func (j *jsiiProxy_MonitoringUptimeCheckConfig) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -749,7 +748,7 @@ func (j *jsiiProxy_MonitoringUptimeCheckConfig)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MonitoringUptimeCheckConfig)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_MonitoringUptimeCheckConfig) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -757,7 +756,7 @@ func (j *jsiiProxy_MonitoringUptimeCheckConfig)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_MonitoringUptimeCheckConfig)SetDisplayName(val *string) {
+func (j *jsiiProxy_MonitoringUptimeCheckConfig) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -768,7 +767,7 @@ func (j *jsiiProxy_MonitoringUptimeCheckConfig)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MonitoringUptimeCheckConfig)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_MonitoringUptimeCheckConfig) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -776,7 +775,7 @@ func (j *jsiiProxy_MonitoringUptimeCheckConfig)SetForEach(val cdktf.ITerraformIt
 	)
 }
 
-func (j *jsiiProxy_MonitoringUptimeCheckConfig)SetId(val *string) {
+func (j *jsiiProxy_MonitoringUptimeCheckConfig) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -787,7 +786,7 @@ func (j *jsiiProxy_MonitoringUptimeCheckConfig)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MonitoringUptimeCheckConfig)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_MonitoringUptimeCheckConfig) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -798,7 +797,7 @@ func (j *jsiiProxy_MonitoringUptimeCheckConfig)SetLifecycle(val *cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_MonitoringUptimeCheckConfig)SetLogCheckFailures(val interface{}) {
+func (j *jsiiProxy_MonitoringUptimeCheckConfig) SetLogCheckFailures(val any) {
 	if err := j.validateSetLogCheckFailuresParameters(val); err != nil {
 		panic(err)
 	}
@@ -809,7 +808,7 @@ func (j *jsiiProxy_MonitoringUptimeCheckConfig)SetLogCheckFailures(val interface
 	)
 }
 
-func (j *jsiiProxy_MonitoringUptimeCheckConfig)SetPeriod(val *string) {
+func (j *jsiiProxy_MonitoringUptimeCheckConfig) SetPeriod(val *string) {
 	if err := j.validateSetPeriodParameters(val); err != nil {
 		panic(err)
 	}
@@ -820,7 +819,7 @@ func (j *jsiiProxy_MonitoringUptimeCheckConfig)SetPeriod(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MonitoringUptimeCheckConfig)SetProject(val *string) {
+func (j *jsiiProxy_MonitoringUptimeCheckConfig) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -831,7 +830,7 @@ func (j *jsiiProxy_MonitoringUptimeCheckConfig)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MonitoringUptimeCheckConfig)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_MonitoringUptimeCheckConfig) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -839,7 +838,7 @@ func (j *jsiiProxy_MonitoringUptimeCheckConfig)SetProvider(val cdktf.TerraformPr
 	)
 }
 
-func (j *jsiiProxy_MonitoringUptimeCheckConfig)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_MonitoringUptimeCheckConfig) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -850,7 +849,7 @@ func (j *jsiiProxy_MonitoringUptimeCheckConfig)SetProvisioners(val *[]interface{
 	)
 }
 
-func (j *jsiiProxy_MonitoringUptimeCheckConfig)SetSelectedRegions(val *[]*string) {
+func (j *jsiiProxy_MonitoringUptimeCheckConfig) SetSelectedRegions(val *[]*string) {
 	if err := j.validateSetSelectedRegionsParameters(val); err != nil {
 		panic(err)
 	}
@@ -861,7 +860,7 @@ func (j *jsiiProxy_MonitoringUptimeCheckConfig)SetSelectedRegions(val *[]*string
 	)
 }
 
-func (j *jsiiProxy_MonitoringUptimeCheckConfig)SetTimeout(val *string) {
+func (j *jsiiProxy_MonitoringUptimeCheckConfig) SetTimeout(val *string) {
 	if err := j.validateSetTimeoutParameters(val); err != nil {
 		panic(err)
 	}
@@ -872,7 +871,7 @@ func (j *jsiiProxy_MonitoringUptimeCheckConfig)SetTimeout(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MonitoringUptimeCheckConfig)SetUserLabels(val *map[string]*string) {
+func (j *jsiiProxy_MonitoringUptimeCheckConfig) SetUserLabels(val *map[string]*string) {
 	if err := j.validateSetUserLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -895,7 +894,7 @@ func MonitoringUptimeCheckConfig_GenerateConfigForImport(scope constructs.Constr
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.monitoringUptimeCheckConfig.MonitoringUptimeCheckConfig",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -919,7 +918,7 @@ func MonitoringUptimeCheckConfig_GenerateConfigForImport(scope constructs.Constr
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func MonitoringUptimeCheckConfig_IsConstruct(x interface{}) *bool {
+func MonitoringUptimeCheckConfig_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateMonitoringUptimeCheckConfig_IsConstructParameters(x); err != nil {
@@ -930,7 +929,7 @@ func MonitoringUptimeCheckConfig_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.monitoringUptimeCheckConfig.MonitoringUptimeCheckConfig",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -938,7 +937,7 @@ func MonitoringUptimeCheckConfig_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func MonitoringUptimeCheckConfig_IsTerraformElement(x interface{}) *bool {
+func MonitoringUptimeCheckConfig_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateMonitoringUptimeCheckConfig_IsTerraformElementParameters(x); err != nil {
@@ -949,7 +948,7 @@ func MonitoringUptimeCheckConfig_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.monitoringUptimeCheckConfig.MonitoringUptimeCheckConfig",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -957,7 +956,7 @@ func MonitoringUptimeCheckConfig_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func MonitoringUptimeCheckConfig_IsTerraformResource(x interface{}) *bool {
+func MonitoringUptimeCheckConfig_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateMonitoringUptimeCheckConfig_IsTerraformResourceParameters(x); err != nil {
@@ -968,7 +967,7 @@ func MonitoringUptimeCheckConfig_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.monitoringUptimeCheckConfig.MonitoringUptimeCheckConfig",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -993,31 +992,31 @@ func (m *jsiiProxy_MonitoringUptimeCheckConfig) AddMoveTarget(moveTarget *string
 	_jsii_.InvokeVoid(
 		m,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (m *jsiiProxy_MonitoringUptimeCheckConfig) AddOverride(path *string, value interface{}) {
+func (m *jsiiProxy_MonitoringUptimeCheckConfig) AddOverride(path *string, value any) {
 	if err := m.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (m *jsiiProxy_MonitoringUptimeCheckConfig) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (m *jsiiProxy_MonitoringUptimeCheckConfig) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1033,7 +1032,7 @@ func (m *jsiiProxy_MonitoringUptimeCheckConfig) GetBooleanAttribute(terraformAtt
 	_jsii_.Invoke(
 		m,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1049,7 +1048,7 @@ func (m *jsiiProxy_MonitoringUptimeCheckConfig) GetBooleanMapAttribute(terraform
 	_jsii_.Invoke(
 		m,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1065,7 +1064,7 @@ func (m *jsiiProxy_MonitoringUptimeCheckConfig) GetListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		m,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1081,7 +1080,7 @@ func (m *jsiiProxy_MonitoringUptimeCheckConfig) GetNumberAttribute(terraformAttr
 	_jsii_.Invoke(
 		m,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1097,7 +1096,7 @@ func (m *jsiiProxy_MonitoringUptimeCheckConfig) GetNumberListAttribute(terraform
 	_jsii_.Invoke(
 		m,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1113,7 +1112,7 @@ func (m *jsiiProxy_MonitoringUptimeCheckConfig) GetNumberMapAttribute(terraformA
 	_jsii_.Invoke(
 		m,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1129,7 +1128,7 @@ func (m *jsiiProxy_MonitoringUptimeCheckConfig) GetStringAttribute(terraformAttr
 	_jsii_.Invoke(
 		m,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1145,15 +1144,15 @@ func (m *jsiiProxy_MonitoringUptimeCheckConfig) GetStringMapAttribute(terraformA
 	_jsii_.Invoke(
 		m,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (m *jsiiProxy_MonitoringUptimeCheckConfig) HasResourceMove() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MonitoringUptimeCheckConfig) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1172,7 +1171,7 @@ func (m *jsiiProxy_MonitoringUptimeCheckConfig) ImportFrom(id *string, provider 
 	_jsii_.InvokeVoid(
 		m,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1185,7 +1184,7 @@ func (m *jsiiProxy_MonitoringUptimeCheckConfig) InterpolationForAttribute(terraf
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1199,18 +1198,18 @@ func (m *jsiiProxy_MonitoringUptimeCheckConfig) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (m *jsiiProxy_MonitoringUptimeCheckConfig) MoveTo(moveTarget *string, index interface{}) {
+func (m *jsiiProxy_MonitoringUptimeCheckConfig) MoveTo(moveTarget *string, index any) {
 	if err := m.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1221,7 +1220,7 @@ func (m *jsiiProxy_MonitoringUptimeCheckConfig) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1232,18 +1231,18 @@ func (m *jsiiProxy_MonitoringUptimeCheckConfig) OverrideLogicalId(newLogicalId *
 	_jsii_.InvokeVoid(
 		m,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (m *jsiiProxy_MonitoringUptimeCheckConfig) PutContentMatchers(value interface{}) {
+func (m *jsiiProxy_MonitoringUptimeCheckConfig) PutContentMatchers(value any) {
 	if err := m.validatePutContentMatchersParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
 		"putContentMatchers",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1254,7 +1253,7 @@ func (m *jsiiProxy_MonitoringUptimeCheckConfig) PutHttpCheck(value *MonitoringUp
 	_jsii_.InvokeVoid(
 		m,
 		"putHttpCheck",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1265,7 +1264,7 @@ func (m *jsiiProxy_MonitoringUptimeCheckConfig) PutMonitoredResource(value *Moni
 	_jsii_.InvokeVoid(
 		m,
 		"putMonitoredResource",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1276,7 +1275,7 @@ func (m *jsiiProxy_MonitoringUptimeCheckConfig) PutResourceGroup(value *Monitori
 	_jsii_.InvokeVoid(
 		m,
 		"putResourceGroup",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1287,7 +1286,7 @@ func (m *jsiiProxy_MonitoringUptimeCheckConfig) PutSyntheticMonitor(value *Monit
 	_jsii_.InvokeVoid(
 		m,
 		"putSyntheticMonitor",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1298,7 +1297,7 @@ func (m *jsiiProxy_MonitoringUptimeCheckConfig) PutTcpCheck(value *MonitoringUpt
 	_jsii_.InvokeVoid(
 		m,
 		"putTcpCheck",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1309,7 +1308,7 @@ func (m *jsiiProxy_MonitoringUptimeCheckConfig) PutTimeouts(value *MonitoringUpt
 	_jsii_.InvokeVoid(
 		m,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1433,8 +1432,8 @@ func (m *jsiiProxy_MonitoringUptimeCheckConfig) ResetUserLabels() {
 	)
 }
 
-func (m *jsiiProxy_MonitoringUptimeCheckConfig) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (m *jsiiProxy_MonitoringUptimeCheckConfig) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
@@ -1446,8 +1445,8 @@ func (m *jsiiProxy_MonitoringUptimeCheckConfig) SynthesizeAttributes() *map[stri
 	return returns
 }
 
-func (m *jsiiProxy_MonitoringUptimeCheckConfig) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (m *jsiiProxy_MonitoringUptimeCheckConfig) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
@@ -1459,8 +1458,8 @@ func (m *jsiiProxy_MonitoringUptimeCheckConfig) SynthesizeHclAttributes() *map[s
 	return returns
 }
 
-func (m *jsiiProxy_MonitoringUptimeCheckConfig) ToHclTerraform() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MonitoringUptimeCheckConfig) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1472,8 +1471,8 @@ func (m *jsiiProxy_MonitoringUptimeCheckConfig) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (m *jsiiProxy_MonitoringUptimeCheckConfig) ToMetadata() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MonitoringUptimeCheckConfig) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1498,8 +1497,8 @@ func (m *jsiiProxy_MonitoringUptimeCheckConfig) ToString() *string {
 	return returns
 }
 
-func (m *jsiiProxy_MonitoringUptimeCheckConfig) ToTerraform() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MonitoringUptimeCheckConfig) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1510,4 +1509,3 @@ func (m *jsiiProxy_MonitoringUptimeCheckConfig) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeRouterRoutePolicyTermsMatchOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRouterRoutePolicyTermsMatchOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRouterRoutePolicyTermsMatchOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewComputeRouterRoutePolicyTermsMatchOutputReferenceParameters(terr
 
 	return nil
 }
-

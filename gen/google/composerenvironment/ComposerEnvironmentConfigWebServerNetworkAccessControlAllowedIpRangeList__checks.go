@@ -34,7 +34,7 @@ func (c *jsiiProxy_ComposerEnvironmentConfigWebServerNetworkAccessControlAllowed
 	return nil
 }
 
-func (j *jsiiProxy_ComposerEnvironmentConfigWebServerNetworkAccessControlAllowedIpRangeList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComposerEnvironmentConfigWebServerNetworkAccessControlAllowedIpRangeList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewComposerEnvironmentConfigWebServerNetworkAccessControlAllowedIpR
 
 	return nil
 }
-

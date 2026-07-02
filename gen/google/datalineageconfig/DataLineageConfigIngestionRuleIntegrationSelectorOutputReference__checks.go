@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataLineageConfigIngestionRuleIntegrationSelectorOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_DataLineageConfigIngestionRuleIntegrationSelectorOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataLineageConfigIngestionRuleIntegrationSelectorOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataLineageConfigIngestionRuleIntegrationSelectorOutputReference
 
 	return nil
 }
-

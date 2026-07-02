@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleLustreInstanceAccessRulesOptionsOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleLustreInstanceAccessRulesOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleLustreInstanceAccessRulesOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleLustreInstanceAccessRulesOptionsOutputReferenceParamet
 
 	return nil
 }
-

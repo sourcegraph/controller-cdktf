@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleSecretManagerSecretsSecretsReplicationAutoCustomerM
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleSecretManagerSecretsSecretsReplicationAutoCustomerManagedEncryptionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleSecretManagerSecretsSecretsReplicationAutoCustomerManagedEncryptionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleSecretManagerSecretsSecretsReplicationAutoCustomerMana
 
 	return nil
 }
-

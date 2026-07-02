@@ -34,7 +34,7 @@ func (d *jsiiProxy_DataprocMetastoreFederationBackendMetastoresList) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_DataprocMetastoreFederationBackendMetastoresList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocMetastoreFederationBackendMetastoresList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDataprocMetastoreFederationBackendMetastoresListParameters(terra
 
 	return nil
 }
-

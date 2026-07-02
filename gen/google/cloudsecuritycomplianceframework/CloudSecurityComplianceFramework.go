@@ -16,17 +16,17 @@ type CloudSecurityComplianceFramework interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	CloudControlDetails() CloudSecurityComplianceFrameworkCloudControlDetailsList
-	CloudControlDetailsInput() interface{}
+	CloudControlDetailsInput() any
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -70,30 +70,30 @@ type CloudSecurityComplianceFramework interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SupportedCloudProviders() *[]*string
 	SupportedEnforcementModes() *[]*string
 	SupportedTargetResourceTypes() *[]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() CloudSecurityComplianceFrameworkTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Type() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -111,7 +111,7 @@ type CloudSecurityComplianceFramework interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -123,14 +123,14 @@ type CloudSecurityComplianceFramework interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutCloudControlDetails(value interface{})
+	PutCloudControlDetails(value any)
 	PutTimeouts(value *CloudSecurityComplianceFrameworkTimeouts)
 	ResetCloudControlDetails()
 	ResetDescription()
@@ -140,17 +140,17 @@ type CloudSecurityComplianceFramework interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for CloudSecurityComplianceFramework
@@ -188,8 +188,8 @@ func (j *jsiiProxy_CloudSecurityComplianceFramework) CloudControlDetails() Cloud
 	return returns
 }
 
-func (j *jsiiProxy_CloudSecurityComplianceFramework) CloudControlDetailsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudSecurityComplianceFramework) CloudControlDetailsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"cloudControlDetailsInput",
@@ -198,8 +198,8 @@ func (j *jsiiProxy_CloudSecurityComplianceFramework) CloudControlDetailsInput() 
 	return returns
 }
 
-func (j *jsiiProxy_CloudSecurityComplianceFramework) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudSecurityComplianceFramework) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -208,8 +208,8 @@ func (j *jsiiProxy_CloudSecurityComplianceFramework) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CloudSecurityComplianceFramework) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CloudSecurityComplianceFramework) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -218,8 +218,8 @@ func (j *jsiiProxy_CloudSecurityComplianceFramework) ConstructNodeMetadata() *ma
 	return returns
 }
 
-func (j *jsiiProxy_CloudSecurityComplianceFramework) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudSecurityComplianceFramework) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -438,8 +438,8 @@ func (j *jsiiProxy_CloudSecurityComplianceFramework) Provider() cdktf.TerraformP
 	return returns
 }
 
-func (j *jsiiProxy_CloudSecurityComplianceFramework) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_CloudSecurityComplianceFramework) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -448,8 +448,8 @@ func (j *jsiiProxy_CloudSecurityComplianceFramework) Provisioners() *[]interface
 	return returns
 }
 
-func (j *jsiiProxy_CloudSecurityComplianceFramework) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudSecurityComplianceFramework) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -498,8 +498,8 @@ func (j *jsiiProxy_CloudSecurityComplianceFramework) TerraformGeneratorMetadata(
 	return returns
 }
 
-func (j *jsiiProxy_CloudSecurityComplianceFramework) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CloudSecurityComplianceFramework) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -528,8 +528,8 @@ func (j *jsiiProxy_CloudSecurityComplianceFramework) Timeouts() CloudSecurityCom
 	return returns
 }
 
-func (j *jsiiProxy_CloudSecurityComplianceFramework) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudSecurityComplianceFramework) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -548,7 +548,6 @@ func (j *jsiiProxy_CloudSecurityComplianceFramework) Type() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_security_compliance_framework google_cloud_security_compliance_framework} Resource.
 func NewCloudSecurityComplianceFramework(scope constructs.Construct, id *string, config *CloudSecurityComplianceFrameworkConfig) CloudSecurityComplianceFramework {
 	_init_.Initialize()
@@ -560,7 +559,7 @@ func NewCloudSecurityComplianceFramework(scope constructs.Construct, id *string,
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cloudSecurityComplianceFramework.CloudSecurityComplianceFramework",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -573,12 +572,12 @@ func NewCloudSecurityComplianceFramework_Override(c CloudSecurityComplianceFrame
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cloudSecurityComplianceFramework.CloudSecurityComplianceFramework",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CloudSecurityComplianceFramework)SetConnection(val interface{}) {
+func (j *jsiiProxy_CloudSecurityComplianceFramework) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -589,7 +588,7 @@ func (j *jsiiProxy_CloudSecurityComplianceFramework)SetConnection(val interface{
 	)
 }
 
-func (j *jsiiProxy_CloudSecurityComplianceFramework)SetCount(val interface{}) {
+func (j *jsiiProxy_CloudSecurityComplianceFramework) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -600,7 +599,7 @@ func (j *jsiiProxy_CloudSecurityComplianceFramework)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudSecurityComplianceFramework)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_CloudSecurityComplianceFramework) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -608,7 +607,7 @@ func (j *jsiiProxy_CloudSecurityComplianceFramework)SetDependsOn(val *[]*string)
 	)
 }
 
-func (j *jsiiProxy_CloudSecurityComplianceFramework)SetDescription(val *string) {
+func (j *jsiiProxy_CloudSecurityComplianceFramework) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -619,7 +618,7 @@ func (j *jsiiProxy_CloudSecurityComplianceFramework)SetDescription(val *string) 
 	)
 }
 
-func (j *jsiiProxy_CloudSecurityComplianceFramework)SetDisplayName(val *string) {
+func (j *jsiiProxy_CloudSecurityComplianceFramework) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -630,7 +629,7 @@ func (j *jsiiProxy_CloudSecurityComplianceFramework)SetDisplayName(val *string) 
 	)
 }
 
-func (j *jsiiProxy_CloudSecurityComplianceFramework)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_CloudSecurityComplianceFramework) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -638,7 +637,7 @@ func (j *jsiiProxy_CloudSecurityComplianceFramework)SetForEach(val cdktf.ITerraf
 	)
 }
 
-func (j *jsiiProxy_CloudSecurityComplianceFramework)SetFrameworkId(val *string) {
+func (j *jsiiProxy_CloudSecurityComplianceFramework) SetFrameworkId(val *string) {
 	if err := j.validateSetFrameworkIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -649,7 +648,7 @@ func (j *jsiiProxy_CloudSecurityComplianceFramework)SetFrameworkId(val *string) 
 	)
 }
 
-func (j *jsiiProxy_CloudSecurityComplianceFramework)SetId(val *string) {
+func (j *jsiiProxy_CloudSecurityComplianceFramework) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -660,7 +659,7 @@ func (j *jsiiProxy_CloudSecurityComplianceFramework)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudSecurityComplianceFramework)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_CloudSecurityComplianceFramework) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -671,7 +670,7 @@ func (j *jsiiProxy_CloudSecurityComplianceFramework)SetLifecycle(val *cdktf.Terr
 	)
 }
 
-func (j *jsiiProxy_CloudSecurityComplianceFramework)SetLocation(val *string) {
+func (j *jsiiProxy_CloudSecurityComplianceFramework) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -682,7 +681,7 @@ func (j *jsiiProxy_CloudSecurityComplianceFramework)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudSecurityComplianceFramework)SetOrganization(val *string) {
+func (j *jsiiProxy_CloudSecurityComplianceFramework) SetOrganization(val *string) {
 	if err := j.validateSetOrganizationParameters(val); err != nil {
 		panic(err)
 	}
@@ -693,7 +692,7 @@ func (j *jsiiProxy_CloudSecurityComplianceFramework)SetOrganization(val *string)
 	)
 }
 
-func (j *jsiiProxy_CloudSecurityComplianceFramework)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_CloudSecurityComplianceFramework) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -701,7 +700,7 @@ func (j *jsiiProxy_CloudSecurityComplianceFramework)SetProvider(val cdktf.Terraf
 	)
 }
 
-func (j *jsiiProxy_CloudSecurityComplianceFramework)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_CloudSecurityComplianceFramework) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -724,7 +723,7 @@ func CloudSecurityComplianceFramework_GenerateConfigForImport(scope constructs.C
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.cloudSecurityComplianceFramework.CloudSecurityComplianceFramework",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -748,7 +747,7 @@ func CloudSecurityComplianceFramework_GenerateConfigForImport(scope constructs.C
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func CloudSecurityComplianceFramework_IsConstruct(x interface{}) *bool {
+func CloudSecurityComplianceFramework_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCloudSecurityComplianceFramework_IsConstructParameters(x); err != nil {
@@ -759,7 +758,7 @@ func CloudSecurityComplianceFramework_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.cloudSecurityComplianceFramework.CloudSecurityComplianceFramework",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -767,7 +766,7 @@ func CloudSecurityComplianceFramework_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func CloudSecurityComplianceFramework_IsTerraformElement(x interface{}) *bool {
+func CloudSecurityComplianceFramework_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCloudSecurityComplianceFramework_IsTerraformElementParameters(x); err != nil {
@@ -778,7 +777,7 @@ func CloudSecurityComplianceFramework_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.cloudSecurityComplianceFramework.CloudSecurityComplianceFramework",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -786,7 +785,7 @@ func CloudSecurityComplianceFramework_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func CloudSecurityComplianceFramework_IsTerraformResource(x interface{}) *bool {
+func CloudSecurityComplianceFramework_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCloudSecurityComplianceFramework_IsTerraformResourceParameters(x); err != nil {
@@ -797,7 +796,7 @@ func CloudSecurityComplianceFramework_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.cloudSecurityComplianceFramework.CloudSecurityComplianceFramework",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -822,31 +821,31 @@ func (c *jsiiProxy_CloudSecurityComplianceFramework) AddMoveTarget(moveTarget *s
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_CloudSecurityComplianceFramework) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_CloudSecurityComplianceFramework) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_CloudSecurityComplianceFramework) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CloudSecurityComplianceFramework) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -862,7 +861,7 @@ func (c *jsiiProxy_CloudSecurityComplianceFramework) GetBooleanAttribute(terrafo
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -878,7 +877,7 @@ func (c *jsiiProxy_CloudSecurityComplianceFramework) GetBooleanMapAttribute(terr
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -894,7 +893,7 @@ func (c *jsiiProxy_CloudSecurityComplianceFramework) GetListAttribute(terraformA
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -910,7 +909,7 @@ func (c *jsiiProxy_CloudSecurityComplianceFramework) GetNumberAttribute(terrafor
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -926,7 +925,7 @@ func (c *jsiiProxy_CloudSecurityComplianceFramework) GetNumberListAttribute(terr
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -942,7 +941,7 @@ func (c *jsiiProxy_CloudSecurityComplianceFramework) GetNumberMapAttribute(terra
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -958,7 +957,7 @@ func (c *jsiiProxy_CloudSecurityComplianceFramework) GetStringAttribute(terrafor
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -974,15 +973,15 @@ func (c *jsiiProxy_CloudSecurityComplianceFramework) GetStringMapAttribute(terra
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_CloudSecurityComplianceFramework) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudSecurityComplianceFramework) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1001,7 +1000,7 @@ func (c *jsiiProxy_CloudSecurityComplianceFramework) ImportFrom(id *string, prov
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1014,7 +1013,7 @@ func (c *jsiiProxy_CloudSecurityComplianceFramework) InterpolationForAttribute(t
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1028,18 +1027,18 @@ func (c *jsiiProxy_CloudSecurityComplianceFramework) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_CloudSecurityComplianceFramework) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_CloudSecurityComplianceFramework) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1050,7 +1049,7 @@ func (c *jsiiProxy_CloudSecurityComplianceFramework) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1061,18 +1060,18 @@ func (c *jsiiProxy_CloudSecurityComplianceFramework) OverrideLogicalId(newLogica
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (c *jsiiProxy_CloudSecurityComplianceFramework) PutCloudControlDetails(value interface{}) {
+func (c *jsiiProxy_CloudSecurityComplianceFramework) PutCloudControlDetails(value any) {
 	if err := c.validatePutCloudControlDetailsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putCloudControlDetails",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1083,7 +1082,7 @@ func (c *jsiiProxy_CloudSecurityComplianceFramework) PutTimeouts(value *CloudSec
 	_jsii_.InvokeVoid(
 		c,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1135,8 +1134,8 @@ func (c *jsiiProxy_CloudSecurityComplianceFramework) ResetTimeouts() {
 	)
 }
 
-func (c *jsiiProxy_CloudSecurityComplianceFramework) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CloudSecurityComplianceFramework) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1148,8 +1147,8 @@ func (c *jsiiProxy_CloudSecurityComplianceFramework) SynthesizeAttributes() *map
 	return returns
 }
 
-func (c *jsiiProxy_CloudSecurityComplianceFramework) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CloudSecurityComplianceFramework) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1161,8 +1160,8 @@ func (c *jsiiProxy_CloudSecurityComplianceFramework) SynthesizeHclAttributes() *
 	return returns
 }
 
-func (c *jsiiProxy_CloudSecurityComplianceFramework) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudSecurityComplianceFramework) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1174,8 +1173,8 @@ func (c *jsiiProxy_CloudSecurityComplianceFramework) ToHclTerraform() interface{
 	return returns
 }
 
-func (c *jsiiProxy_CloudSecurityComplianceFramework) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudSecurityComplianceFramework) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1200,8 +1199,8 @@ func (c *jsiiProxy_CloudSecurityComplianceFramework) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_CloudSecurityComplianceFramework) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudSecurityComplianceFramework) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1212,4 +1211,3 @@ func (c *jsiiProxy_CloudSecurityComplianceFramework) ToTerraform() interface{} {
 
 	return returns
 }
-

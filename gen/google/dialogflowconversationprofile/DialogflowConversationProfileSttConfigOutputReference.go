@@ -15,9 +15,9 @@ type DialogflowConversationProfileSttConfigOutputReference interface {
 	AudioEncodingInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -28,9 +28,9 @@ type DialogflowConversationProfileSttConfigOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	EnableWordInfo() interface{}
-	SetEnableWordInfo(val interface{})
-	EnableWordInfoInput() interface{}
+	EnableWordInfo() any
+	SetEnableWordInfo(val any)
+	EnableWordInfoInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DialogflowConversationProfileSttConfig
@@ -55,13 +55,13 @@ type DialogflowConversationProfileSttConfigOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	UseTimeoutBasedEndpointing() interface{}
-	SetUseTimeoutBasedEndpointing(val interface{})
-	UseTimeoutBasedEndpointingInput() interface{}
+	UseTimeoutBasedEndpointing() any
+	SetUseTimeoutBasedEndpointing(val any)
+	UseTimeoutBasedEndpointingInput() any
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -91,7 +91,7 @@ type DialogflowConversationProfileSttConfigOutputReference interface {
 	ResetUseTimeoutBasedEndpointing()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -124,8 +124,8 @@ func (j *jsiiProxy_DialogflowConversationProfileSttConfigOutputReference) AudioE
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowConversationProfileSttConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowConversationProfileSttConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -154,8 +154,8 @@ func (j *jsiiProxy_DialogflowConversationProfileSttConfigOutputReference) Creati
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowConversationProfileSttConfigOutputReference) EnableWordInfo() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowConversationProfileSttConfigOutputReference) EnableWordInfo() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableWordInfo",
@@ -164,8 +164,8 @@ func (j *jsiiProxy_DialogflowConversationProfileSttConfigOutputReference) Enable
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowConversationProfileSttConfigOutputReference) EnableWordInfoInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowConversationProfileSttConfigOutputReference) EnableWordInfoInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableWordInfoInput",
@@ -294,8 +294,8 @@ func (j *jsiiProxy_DialogflowConversationProfileSttConfigOutputReference) Terraf
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowConversationProfileSttConfigOutputReference) UseTimeoutBasedEndpointing() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowConversationProfileSttConfigOutputReference) UseTimeoutBasedEndpointing() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"useTimeoutBasedEndpointing",
@@ -304,8 +304,8 @@ func (j *jsiiProxy_DialogflowConversationProfileSttConfigOutputReference) UseTim
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowConversationProfileSttConfigOutputReference) UseTimeoutBasedEndpointingInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowConversationProfileSttConfigOutputReference) UseTimeoutBasedEndpointingInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"useTimeoutBasedEndpointingInput",
@@ -313,7 +313,6 @@ func (j *jsiiProxy_DialogflowConversationProfileSttConfigOutputReference) UseTim
 	)
 	return returns
 }
-
 
 func NewDialogflowConversationProfileSttConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DialogflowConversationProfileSttConfigOutputReference {
 	_init_.Initialize()
@@ -325,7 +324,7 @@ func NewDialogflowConversationProfileSttConfigOutputReference(terraformResource 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -337,12 +336,12 @@ func NewDialogflowConversationProfileSttConfigOutputReference_Override(d Dialogf
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DialogflowConversationProfileSttConfigOutputReference)SetAudioEncoding(val *string) {
+func (j *jsiiProxy_DialogflowConversationProfileSttConfigOutputReference) SetAudioEncoding(val *string) {
 	if err := j.validateSetAudioEncodingParameters(val); err != nil {
 		panic(err)
 	}
@@ -353,7 +352,7 @@ func (j *jsiiProxy_DialogflowConversationProfileSttConfigOutputReference)SetAudi
 	)
 }
 
-func (j *jsiiProxy_DialogflowConversationProfileSttConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DialogflowConversationProfileSttConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -364,7 +363,7 @@ func (j *jsiiProxy_DialogflowConversationProfileSttConfigOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_DialogflowConversationProfileSttConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DialogflowConversationProfileSttConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -375,7 +374,7 @@ func (j *jsiiProxy_DialogflowConversationProfileSttConfigOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_DialogflowConversationProfileSttConfigOutputReference)SetEnableWordInfo(val interface{}) {
+func (j *jsiiProxy_DialogflowConversationProfileSttConfigOutputReference) SetEnableWordInfo(val any) {
 	if err := j.validateSetEnableWordInfoParameters(val); err != nil {
 		panic(err)
 	}
@@ -386,7 +385,7 @@ func (j *jsiiProxy_DialogflowConversationProfileSttConfigOutputReference)SetEnab
 	)
 }
 
-func (j *jsiiProxy_DialogflowConversationProfileSttConfigOutputReference)SetInternalValue(val *DialogflowConversationProfileSttConfig) {
+func (j *jsiiProxy_DialogflowConversationProfileSttConfigOutputReference) SetInternalValue(val *DialogflowConversationProfileSttConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -397,7 +396,7 @@ func (j *jsiiProxy_DialogflowConversationProfileSttConfigOutputReference)SetInte
 	)
 }
 
-func (j *jsiiProxy_DialogflowConversationProfileSttConfigOutputReference)SetLanguageCode(val *string) {
+func (j *jsiiProxy_DialogflowConversationProfileSttConfigOutputReference) SetLanguageCode(val *string) {
 	if err := j.validateSetLanguageCodeParameters(val); err != nil {
 		panic(err)
 	}
@@ -408,7 +407,7 @@ func (j *jsiiProxy_DialogflowConversationProfileSttConfigOutputReference)SetLang
 	)
 }
 
-func (j *jsiiProxy_DialogflowConversationProfileSttConfigOutputReference)SetModel(val *string) {
+func (j *jsiiProxy_DialogflowConversationProfileSttConfigOutputReference) SetModel(val *string) {
 	if err := j.validateSetModelParameters(val); err != nil {
 		panic(err)
 	}
@@ -419,7 +418,7 @@ func (j *jsiiProxy_DialogflowConversationProfileSttConfigOutputReference)SetMode
 	)
 }
 
-func (j *jsiiProxy_DialogflowConversationProfileSttConfigOutputReference)SetSampleRateHertz(val *float64) {
+func (j *jsiiProxy_DialogflowConversationProfileSttConfigOutputReference) SetSampleRateHertz(val *float64) {
 	if err := j.validateSetSampleRateHertzParameters(val); err != nil {
 		panic(err)
 	}
@@ -430,7 +429,7 @@ func (j *jsiiProxy_DialogflowConversationProfileSttConfigOutputReference)SetSamp
 	)
 }
 
-func (j *jsiiProxy_DialogflowConversationProfileSttConfigOutputReference)SetSpeechModelVariant(val *string) {
+func (j *jsiiProxy_DialogflowConversationProfileSttConfigOutputReference) SetSpeechModelVariant(val *string) {
 	if err := j.validateSetSpeechModelVariantParameters(val); err != nil {
 		panic(err)
 	}
@@ -441,7 +440,7 @@ func (j *jsiiProxy_DialogflowConversationProfileSttConfigOutputReference)SetSpee
 	)
 }
 
-func (j *jsiiProxy_DialogflowConversationProfileSttConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DialogflowConversationProfileSttConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,7 +451,7 @@ func (j *jsiiProxy_DialogflowConversationProfileSttConfigOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_DialogflowConversationProfileSttConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DialogflowConversationProfileSttConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -463,7 +462,7 @@ func (j *jsiiProxy_DialogflowConversationProfileSttConfigOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_DialogflowConversationProfileSttConfigOutputReference)SetUseTimeoutBasedEndpointing(val interface{}) {
+func (j *jsiiProxy_DialogflowConversationProfileSttConfigOutputReference) SetUseTimeoutBasedEndpointing(val any) {
 	if err := j.validateSetUseTimeoutBasedEndpointingParameters(val); err != nil {
 		panic(err)
 	}
@@ -487,16 +486,16 @@ func (d *jsiiProxy_DialogflowConversationProfileSttConfigOutputReference) Comput
 	return returns
 }
 
-func (d *jsiiProxy_DialogflowConversationProfileSttConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DialogflowConversationProfileSttConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -512,7 +511,7 @@ func (d *jsiiProxy_DialogflowConversationProfileSttConfigOutputReference) GetBoo
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -528,7 +527,7 @@ func (d *jsiiProxy_DialogflowConversationProfileSttConfigOutputReference) GetBoo
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -544,7 +543,7 @@ func (d *jsiiProxy_DialogflowConversationProfileSttConfigOutputReference) GetLis
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -560,7 +559,7 @@ func (d *jsiiProxy_DialogflowConversationProfileSttConfigOutputReference) GetNum
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -576,7 +575,7 @@ func (d *jsiiProxy_DialogflowConversationProfileSttConfigOutputReference) GetNum
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -592,7 +591,7 @@ func (d *jsiiProxy_DialogflowConversationProfileSttConfigOutputReference) GetNum
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -608,7 +607,7 @@ func (d *jsiiProxy_DialogflowConversationProfileSttConfigOutputReference) GetStr
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -624,7 +623,7 @@ func (d *jsiiProxy_DialogflowConversationProfileSttConfigOutputReference) GetStr
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -653,7 +652,7 @@ func (d *jsiiProxy_DialogflowConversationProfileSttConfigOutputReference) Interp
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -716,16 +715,16 @@ func (d *jsiiProxy_DialogflowConversationProfileSttConfigOutputReference) ResetU
 	)
 }
 
-func (d *jsiiProxy_DialogflowConversationProfileSttConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DialogflowConversationProfileSttConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -744,4 +743,3 @@ func (d *jsiiProxy_DialogflowConversationProfileSttConfigOutputReference) ToStri
 
 	return returns
 }
-

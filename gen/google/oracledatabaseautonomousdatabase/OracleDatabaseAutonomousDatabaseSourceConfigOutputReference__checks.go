@@ -98,7 +98,7 @@ func (o *jsiiProxy_OracleDatabaseAutonomousDatabaseSourceConfigOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_OracleDatabaseAutonomousDatabaseSourceConfigOutputReference) validateSetAutomaticBackupsReplicationEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_OracleDatabaseAutonomousDatabaseSourceConfigOutputReference) validateSetAutomaticBackupsReplicationEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -126,7 +126,7 @@ func (j *jsiiProxy_OracleDatabaseAutonomousDatabaseSourceConfigOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_OracleDatabaseAutonomousDatabaseSourceConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_OracleDatabaseAutonomousDatabaseSourceConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -226,4 +226,3 @@ func validateNewOracleDatabaseAutonomousDatabaseSourceConfigOutputReferenceParam
 
 	return nil
 }
-

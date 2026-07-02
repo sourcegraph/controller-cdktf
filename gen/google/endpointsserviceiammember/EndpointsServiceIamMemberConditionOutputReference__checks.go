@@ -98,7 +98,7 @@ func (e *jsiiProxy_EndpointsServiceIamMemberConditionOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_EndpointsServiceIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EndpointsServiceIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewEndpointsServiceIamMemberConditionOutputReferenceParameters(terr
 
 	return nil
 }
-

@@ -12,9 +12,9 @@ type NetworkServicesEdgeCacheKeysetPublicKeyOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,11 +30,11 @@ type NetworkServicesEdgeCacheKeysetPublicKeyOutputReference interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
-	Managed() interface{}
-	SetManaged(val interface{})
-	ManagedInput() interface{}
+	InternalValue() any
+	SetInternalValue(val any)
+	Managed() any
+	SetManaged(val any)
+	ManagedInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -49,7 +49,7 @@ type NetworkServicesEdgeCacheKeysetPublicKeyOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -74,7 +74,7 @@ type NetworkServicesEdgeCacheKeysetPublicKeyOutputReference interface {
 	ResetValue()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -87,8 +87,8 @@ type jsiiProxy_NetworkServicesEdgeCacheKeysetPublicKeyOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_NetworkServicesEdgeCacheKeysetPublicKeyOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkServicesEdgeCacheKeysetPublicKeyOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -147,8 +147,8 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheKeysetPublicKeyOutputReference) IdInp
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesEdgeCacheKeysetPublicKeyOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkServicesEdgeCacheKeysetPublicKeyOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -157,8 +157,8 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheKeysetPublicKeyOutputReference) Inter
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesEdgeCacheKeysetPublicKeyOutputReference) Managed() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkServicesEdgeCacheKeysetPublicKeyOutputReference) Managed() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"managed",
@@ -167,8 +167,8 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheKeysetPublicKeyOutputReference) Manag
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesEdgeCacheKeysetPublicKeyOutputReference) ManagedInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkServicesEdgeCacheKeysetPublicKeyOutputReference) ManagedInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"managedInput",
@@ -217,7 +217,6 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheKeysetPublicKeyOutputReference) Value
 	return returns
 }
 
-
 func NewNetworkServicesEdgeCacheKeysetPublicKeyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) NetworkServicesEdgeCacheKeysetPublicKeyOutputReference {
 	_init_.Initialize()
 
@@ -228,7 +227,7 @@ func NewNetworkServicesEdgeCacheKeysetPublicKeyOutputReference(terraformResource
 
 	_jsii_.Create(
 		"@cdktf/provider-google.networkServicesEdgeCacheKeyset.NetworkServicesEdgeCacheKeysetPublicKeyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -240,12 +239,12 @@ func NewNetworkServicesEdgeCacheKeysetPublicKeyOutputReference_Override(n Networ
 
 	_jsii_.Create(
 		"@cdktf/provider-google.networkServicesEdgeCacheKeyset.NetworkServicesEdgeCacheKeysetPublicKeyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesEdgeCacheKeysetPublicKeyOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_NetworkServicesEdgeCacheKeysetPublicKeyOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -256,7 +255,7 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheKeysetPublicKeyOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesEdgeCacheKeysetPublicKeyOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_NetworkServicesEdgeCacheKeysetPublicKeyOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -267,7 +266,7 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheKeysetPublicKeyOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesEdgeCacheKeysetPublicKeyOutputReference)SetId(val *string) {
+func (j *jsiiProxy_NetworkServicesEdgeCacheKeysetPublicKeyOutputReference) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -278,7 +277,7 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheKeysetPublicKeyOutputReference)SetId(
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesEdgeCacheKeysetPublicKeyOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_NetworkServicesEdgeCacheKeysetPublicKeyOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -289,7 +288,7 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheKeysetPublicKeyOutputReference)SetInt
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesEdgeCacheKeysetPublicKeyOutputReference)SetManaged(val interface{}) {
+func (j *jsiiProxy_NetworkServicesEdgeCacheKeysetPublicKeyOutputReference) SetManaged(val any) {
 	if err := j.validateSetManagedParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,7 +299,7 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheKeysetPublicKeyOutputReference)SetMan
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesEdgeCacheKeysetPublicKeyOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_NetworkServicesEdgeCacheKeysetPublicKeyOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,7 +310,7 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheKeysetPublicKeyOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesEdgeCacheKeysetPublicKeyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NetworkServicesEdgeCacheKeysetPublicKeyOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -322,7 +321,7 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheKeysetPublicKeyOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesEdgeCacheKeysetPublicKeyOutputReference)SetValue(val *string) {
+func (j *jsiiProxy_NetworkServicesEdgeCacheKeysetPublicKeyOutputReference) SetValue(val *string) {
 	if err := j.validateSetValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -346,16 +345,16 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheKeysetPublicKeyOutputReference) Compu
 	return returns
 }
 
-func (n *jsiiProxy_NetworkServicesEdgeCacheKeysetPublicKeyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (n *jsiiProxy_NetworkServicesEdgeCacheKeysetPublicKeyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -371,7 +370,7 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheKeysetPublicKeyOutputReference) GetBo
 	_jsii_.Invoke(
 		n,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -387,7 +386,7 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheKeysetPublicKeyOutputReference) GetBo
 	_jsii_.Invoke(
 		n,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -403,7 +402,7 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheKeysetPublicKeyOutputReference) GetLi
 	_jsii_.Invoke(
 		n,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -419,7 +418,7 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheKeysetPublicKeyOutputReference) GetNu
 	_jsii_.Invoke(
 		n,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -435,7 +434,7 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheKeysetPublicKeyOutputReference) GetNu
 	_jsii_.Invoke(
 		n,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -451,7 +450,7 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheKeysetPublicKeyOutputReference) GetNu
 	_jsii_.Invoke(
 		n,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -467,7 +466,7 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheKeysetPublicKeyOutputReference) GetSt
 	_jsii_.Invoke(
 		n,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -483,7 +482,7 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheKeysetPublicKeyOutputReference) GetSt
 	_jsii_.Invoke(
 		n,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -512,7 +511,7 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheKeysetPublicKeyOutputReference) Inter
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -535,16 +534,16 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheKeysetPublicKeyOutputReference) Reset
 	)
 }
 
-func (n *jsiiProxy_NetworkServicesEdgeCacheKeysetPublicKeyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (n *jsiiProxy_NetworkServicesEdgeCacheKeysetPublicKeyOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := n.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		n,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -563,4 +562,3 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheKeysetPublicKeyOutputReference) ToStr
 
 	return returns
 }
-

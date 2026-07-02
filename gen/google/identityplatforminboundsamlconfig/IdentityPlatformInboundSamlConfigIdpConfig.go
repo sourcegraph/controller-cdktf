@@ -1,11 +1,10 @@
 package identityplatforminboundsamlconfig
 
-
 type IdentityPlatformInboundSamlConfigIdpConfig struct {
 	// idp_certificates block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/identity_platform_inbound_saml_config#idp_certificates IdentityPlatformInboundSamlConfig#idp_certificates}
-	IdpCertificates interface{} `field:"required" json:"idpCertificates" yaml:"idpCertificates"`
+	IdpCertificates any `field:"required" json:"idpCertificates" yaml:"idpCertificates"`
 	// Unique identifier for all SAML entities.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/identity_platform_inbound_saml_config#idp_entity_id IdentityPlatformInboundSamlConfig#idp_entity_id}
@@ -17,6 +16,5 @@ type IdentityPlatformInboundSamlConfigIdpConfig struct {
 	// Indicates if outbounding SAMLRequest should be signed.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/identity_platform_inbound_saml_config#sign_request IdentityPlatformInboundSamlConfig#sign_request}
-	SignRequest interface{} `field:"optional" json:"signRequest" yaml:"signRequest"`
+	SignRequest any `field:"optional" json:"signRequest" yaml:"signRequest"`
 }
-

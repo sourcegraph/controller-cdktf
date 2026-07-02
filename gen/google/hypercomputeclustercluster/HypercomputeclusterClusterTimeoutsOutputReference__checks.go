@@ -98,7 +98,7 @@ func (h *jsiiProxy_HypercomputeclusterClusterTimeoutsOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_HypercomputeclusterClusterTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_HypercomputeclusterClusterTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_HypercomputeclusterClusterTimeoutsOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_HypercomputeclusterClusterTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_HypercomputeclusterClusterTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewHypercomputeclusterClusterTimeoutsOutputReferenceParameters(terr
 
 	return nil
 }
-

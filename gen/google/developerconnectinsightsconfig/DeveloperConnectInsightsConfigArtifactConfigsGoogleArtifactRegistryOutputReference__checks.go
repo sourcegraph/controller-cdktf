@@ -106,7 +106,7 @@ func (j *jsiiProxy_DeveloperConnectInsightsConfigArtifactConfigsGoogleArtifactRe
 	return nil
 }
 
-func (j *jsiiProxy_DeveloperConnectInsightsConfigArtifactConfigsGoogleArtifactRegistryOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DeveloperConnectInsightsConfigArtifactConfigsGoogleArtifactRegistryOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewDeveloperConnectInsightsConfigArtifactConfigsGoogleArtifactRegis
 
 	return nil
 }
-

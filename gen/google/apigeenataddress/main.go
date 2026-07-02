@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.apigeeNatAddress.ApigeeNatAddress",
-		reflect.TypeOf((*ApigeeNatAddress)(nil)).Elem(),
+		reflect.TypeFor[ApigeeNatAddress](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "activate", GoGetter: "Activate"},
 			_jsii_.MemberProperty{JsiiProperty: "activateInput", GoGetter: "ActivateInput"},
@@ -69,7 +69,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApigeeNatAddress{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -77,15 +77,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.apigeeNatAddress.ApigeeNatAddressConfig",
-		reflect.TypeOf((*ApigeeNatAddressConfig)(nil)).Elem(),
+		reflect.TypeFor[ApigeeNatAddressConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.apigeeNatAddress.ApigeeNatAddressTimeouts",
-		reflect.TypeOf((*ApigeeNatAddressTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ApigeeNatAddressTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.apigeeNatAddress.ApigeeNatAddressTimeoutsOutputReference",
-		reflect.TypeOf((*ApigeeNatAddressTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ApigeeNatAddressTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -118,7 +118,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApigeeNatAddressTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

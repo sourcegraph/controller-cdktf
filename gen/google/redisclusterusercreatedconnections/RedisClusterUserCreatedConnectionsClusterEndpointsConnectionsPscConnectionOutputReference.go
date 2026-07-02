@@ -15,9 +15,9 @@ type RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnectionO
 	AddressInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -60,7 +60,7 @@ type RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnectionO
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -84,7 +84,7 @@ type RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnectionO
 	ResetProjectId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -117,8 +117,8 @@ func (j *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnections
 	return returns
 }
 
-func (j *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnectionOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnectionOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -307,7 +307,6 @@ func (j *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnections
 	return returns
 }
 
-
 func NewRedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnectionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnectionOutputReference {
 	_init_.Initialize()
 
@@ -318,7 +317,7 @@ func NewRedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnecti
 
 	_jsii_.Create(
 		"@cdktf/provider-google.redisClusterUserCreatedConnections.RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnectionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -330,12 +329,12 @@ func NewRedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnecti
 
 	_jsii_.Create(
 		"@cdktf/provider-google.redisClusterUserCreatedConnections.RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnectionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		r,
 	)
 }
 
-func (j *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnectionOutputReference)SetAddress(val *string) {
+func (j *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnectionOutputReference) SetAddress(val *string) {
 	if err := j.validateSetAddressParameters(val); err != nil {
 		panic(err)
 	}
@@ -346,7 +345,7 @@ func (j *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnections
 	)
 }
 
-func (j *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnectionOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnectionOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -357,7 +356,7 @@ func (j *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnections
 	)
 }
 
-func (j *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnectionOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnectionOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -368,7 +367,7 @@ func (j *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnections
 	)
 }
 
-func (j *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnectionOutputReference)SetForwardingRule(val *string) {
+func (j *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnectionOutputReference) SetForwardingRule(val *string) {
 	if err := j.validateSetForwardingRuleParameters(val); err != nil {
 		panic(err)
 	}
@@ -379,7 +378,7 @@ func (j *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnections
 	)
 }
 
-func (j *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnectionOutputReference)SetInternalValue(val *RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnection) {
+func (j *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnectionOutputReference) SetInternalValue(val *RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnection) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -390,7 +389,7 @@ func (j *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnections
 	)
 }
 
-func (j *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnectionOutputReference)SetNetwork(val *string) {
+func (j *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnectionOutputReference) SetNetwork(val *string) {
 	if err := j.validateSetNetworkParameters(val); err != nil {
 		panic(err)
 	}
@@ -401,7 +400,7 @@ func (j *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnections
 	)
 }
 
-func (j *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnectionOutputReference)SetProjectId(val *string) {
+func (j *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnectionOutputReference) SetProjectId(val *string) {
 	if err := j.validateSetProjectIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -412,7 +411,7 @@ func (j *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnections
 	)
 }
 
-func (j *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnectionOutputReference)SetPscConnectionId(val *string) {
+func (j *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnectionOutputReference) SetPscConnectionId(val *string) {
 	if err := j.validateSetPscConnectionIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -423,7 +422,7 @@ func (j *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnections
 	)
 }
 
-func (j *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnectionOutputReference)SetServiceAttachment(val *string) {
+func (j *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnectionOutputReference) SetServiceAttachment(val *string) {
 	if err := j.validateSetServiceAttachmentParameters(val); err != nil {
 		panic(err)
 	}
@@ -434,7 +433,7 @@ func (j *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnections
 	)
 }
 
-func (j *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnectionOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnectionOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -445,7 +444,7 @@ func (j *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnections
 	)
 }
 
-func (j *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnectionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnectionOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -469,16 +468,16 @@ func (r *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnections
 	return returns
 }
 
-func (r *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnectionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnectionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -494,7 +493,7 @@ func (r *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnections
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -510,7 +509,7 @@ func (r *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnections
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -526,7 +525,7 @@ func (r *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnections
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -542,7 +541,7 @@ func (r *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnections
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -558,7 +557,7 @@ func (r *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnections
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -574,7 +573,7 @@ func (r *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnections
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -590,7 +589,7 @@ func (r *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnections
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -606,7 +605,7 @@ func (r *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnections
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -635,7 +634,7 @@ func (r *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnections
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -650,16 +649,16 @@ func (r *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnections
 	)
 }
 
-func (r *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnectionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (r *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnectionOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := r.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -678,4 +677,3 @@ func (r *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnections
 
 	return returns
 }
-

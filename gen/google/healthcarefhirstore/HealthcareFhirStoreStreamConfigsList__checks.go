@@ -34,7 +34,7 @@ func (h *jsiiProxy_HealthcareFhirStoreStreamConfigsList) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_HealthcareFhirStoreStreamConfigsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_HealthcareFhirStoreStreamConfigsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewHealthcareFhirStoreStreamConfigsListParameters(terraformResource
 
 	return nil
 }
-

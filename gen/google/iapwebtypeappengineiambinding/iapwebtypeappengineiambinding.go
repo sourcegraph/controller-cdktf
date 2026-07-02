@@ -20,15 +20,15 @@ type IapWebTypeAppEngineIamBinding interface {
 	Condition() IapWebTypeAppEngineIamBindingConditionOutputReference
 	ConditionInput() *IapWebTypeAppEngineIamBindingCondition
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -62,27 +62,27 @@ type IapWebTypeAppEngineIamBinding interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Role() *string
 	SetRole(val *string)
 	RoleInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -100,7 +100,7 @@ type IapWebTypeAppEngineIamBinding interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -112,7 +112,7 @@ type IapWebTypeAppEngineIamBinding interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -126,17 +126,17 @@ type IapWebTypeAppEngineIamBinding interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for IapWebTypeAppEngineIamBinding
@@ -194,8 +194,8 @@ func (j *jsiiProxy_IapWebTypeAppEngineIamBinding) ConditionInput() *IapWebTypeAp
 	return returns
 }
 
-func (j *jsiiProxy_IapWebTypeAppEngineIamBinding) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IapWebTypeAppEngineIamBinding) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -204,8 +204,8 @@ func (j *jsiiProxy_IapWebTypeAppEngineIamBinding) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IapWebTypeAppEngineIamBinding) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_IapWebTypeAppEngineIamBinding) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -214,8 +214,8 @@ func (j *jsiiProxy_IapWebTypeAppEngineIamBinding) ConstructNodeMetadata() *map[s
 	return returns
 }
 
-func (j *jsiiProxy_IapWebTypeAppEngineIamBinding) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IapWebTypeAppEngineIamBinding) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -364,8 +364,8 @@ func (j *jsiiProxy_IapWebTypeAppEngineIamBinding) Provider() cdktf.TerraformProv
 	return returns
 }
 
-func (j *jsiiProxy_IapWebTypeAppEngineIamBinding) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_IapWebTypeAppEngineIamBinding) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -374,8 +374,8 @@ func (j *jsiiProxy_IapWebTypeAppEngineIamBinding) Provisioners() *[]interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_IapWebTypeAppEngineIamBinding) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IapWebTypeAppEngineIamBinding) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -414,8 +414,8 @@ func (j *jsiiProxy_IapWebTypeAppEngineIamBinding) TerraformGeneratorMetadata() *
 	return returns
 }
 
-func (j *jsiiProxy_IapWebTypeAppEngineIamBinding) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_IapWebTypeAppEngineIamBinding) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -434,7 +434,6 @@ func (j *jsiiProxy_IapWebTypeAppEngineIamBinding) TerraformResourceType() *strin
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iap_web_type_app_engine_iam_binding google_iap_web_type_app_engine_iam_binding} Resource.
 func NewIapWebTypeAppEngineIamBinding(scope constructs.Construct, id *string, config *IapWebTypeAppEngineIamBindingConfig) IapWebTypeAppEngineIamBinding {
 	_init_.Initialize()
@@ -446,7 +445,7 @@ func NewIapWebTypeAppEngineIamBinding(scope constructs.Construct, id *string, co
 
 	_jsii_.Create(
 		"@cdktf/provider-google.iapWebTypeAppEngineIamBinding.IapWebTypeAppEngineIamBinding",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -459,12 +458,12 @@ func NewIapWebTypeAppEngineIamBinding_Override(i IapWebTypeAppEngineIamBinding, 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.iapWebTypeAppEngineIamBinding.IapWebTypeAppEngineIamBinding",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		i,
 	)
 }
 
-func (j *jsiiProxy_IapWebTypeAppEngineIamBinding)SetAppId(val *string) {
+func (j *jsiiProxy_IapWebTypeAppEngineIamBinding) SetAppId(val *string) {
 	if err := j.validateSetAppIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -475,7 +474,7 @@ func (j *jsiiProxy_IapWebTypeAppEngineIamBinding)SetAppId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IapWebTypeAppEngineIamBinding)SetConnection(val interface{}) {
+func (j *jsiiProxy_IapWebTypeAppEngineIamBinding) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -486,7 +485,7 @@ func (j *jsiiProxy_IapWebTypeAppEngineIamBinding)SetConnection(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_IapWebTypeAppEngineIamBinding)SetCount(val interface{}) {
+func (j *jsiiProxy_IapWebTypeAppEngineIamBinding) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -497,7 +496,7 @@ func (j *jsiiProxy_IapWebTypeAppEngineIamBinding)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IapWebTypeAppEngineIamBinding)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_IapWebTypeAppEngineIamBinding) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -505,7 +504,7 @@ func (j *jsiiProxy_IapWebTypeAppEngineIamBinding)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_IapWebTypeAppEngineIamBinding)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_IapWebTypeAppEngineIamBinding) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -513,7 +512,7 @@ func (j *jsiiProxy_IapWebTypeAppEngineIamBinding)SetForEach(val cdktf.ITerraform
 	)
 }
 
-func (j *jsiiProxy_IapWebTypeAppEngineIamBinding)SetId(val *string) {
+func (j *jsiiProxy_IapWebTypeAppEngineIamBinding) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -524,7 +523,7 @@ func (j *jsiiProxy_IapWebTypeAppEngineIamBinding)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IapWebTypeAppEngineIamBinding)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_IapWebTypeAppEngineIamBinding) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -535,7 +534,7 @@ func (j *jsiiProxy_IapWebTypeAppEngineIamBinding)SetLifecycle(val *cdktf.Terrafo
 	)
 }
 
-func (j *jsiiProxy_IapWebTypeAppEngineIamBinding)SetMembers(val *[]*string) {
+func (j *jsiiProxy_IapWebTypeAppEngineIamBinding) SetMembers(val *[]*string) {
 	if err := j.validateSetMembersParameters(val); err != nil {
 		panic(err)
 	}
@@ -546,7 +545,7 @@ func (j *jsiiProxy_IapWebTypeAppEngineIamBinding)SetMembers(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_IapWebTypeAppEngineIamBinding)SetProject(val *string) {
+func (j *jsiiProxy_IapWebTypeAppEngineIamBinding) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -557,7 +556,7 @@ func (j *jsiiProxy_IapWebTypeAppEngineIamBinding)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IapWebTypeAppEngineIamBinding)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_IapWebTypeAppEngineIamBinding) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -565,7 +564,7 @@ func (j *jsiiProxy_IapWebTypeAppEngineIamBinding)SetProvider(val cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_IapWebTypeAppEngineIamBinding)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_IapWebTypeAppEngineIamBinding) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -576,7 +575,7 @@ func (j *jsiiProxy_IapWebTypeAppEngineIamBinding)SetProvisioners(val *[]interfac
 	)
 }
 
-func (j *jsiiProxy_IapWebTypeAppEngineIamBinding)SetRole(val *string) {
+func (j *jsiiProxy_IapWebTypeAppEngineIamBinding) SetRole(val *string) {
 	if err := j.validateSetRoleParameters(val); err != nil {
 		panic(err)
 	}
@@ -599,7 +598,7 @@ func IapWebTypeAppEngineIamBinding_GenerateConfigForImport(scope constructs.Cons
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.iapWebTypeAppEngineIamBinding.IapWebTypeAppEngineIamBinding",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -623,7 +622,7 @@ func IapWebTypeAppEngineIamBinding_GenerateConfigForImport(scope constructs.Cons
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func IapWebTypeAppEngineIamBinding_IsConstruct(x interface{}) *bool {
+func IapWebTypeAppEngineIamBinding_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIapWebTypeAppEngineIamBinding_IsConstructParameters(x); err != nil {
@@ -634,7 +633,7 @@ func IapWebTypeAppEngineIamBinding_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.iapWebTypeAppEngineIamBinding.IapWebTypeAppEngineIamBinding",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -642,7 +641,7 @@ func IapWebTypeAppEngineIamBinding_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func IapWebTypeAppEngineIamBinding_IsTerraformElement(x interface{}) *bool {
+func IapWebTypeAppEngineIamBinding_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIapWebTypeAppEngineIamBinding_IsTerraformElementParameters(x); err != nil {
@@ -653,7 +652,7 @@ func IapWebTypeAppEngineIamBinding_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.iapWebTypeAppEngineIamBinding.IapWebTypeAppEngineIamBinding",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -661,7 +660,7 @@ func IapWebTypeAppEngineIamBinding_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func IapWebTypeAppEngineIamBinding_IsTerraformResource(x interface{}) *bool {
+func IapWebTypeAppEngineIamBinding_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIapWebTypeAppEngineIamBinding_IsTerraformResourceParameters(x); err != nil {
@@ -672,7 +671,7 @@ func IapWebTypeAppEngineIamBinding_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.iapWebTypeAppEngineIamBinding.IapWebTypeAppEngineIamBinding",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -697,31 +696,31 @@ func (i *jsiiProxy_IapWebTypeAppEngineIamBinding) AddMoveTarget(moveTarget *stri
 	_jsii_.InvokeVoid(
 		i,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (i *jsiiProxy_IapWebTypeAppEngineIamBinding) AddOverride(path *string, value interface{}) {
+func (i *jsiiProxy_IapWebTypeAppEngineIamBinding) AddOverride(path *string, value any) {
 	if err := i.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (i *jsiiProxy_IapWebTypeAppEngineIamBinding) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_IapWebTypeAppEngineIamBinding) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -737,7 +736,7 @@ func (i *jsiiProxy_IapWebTypeAppEngineIamBinding) GetBooleanAttribute(terraformA
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -753,7 +752,7 @@ func (i *jsiiProxy_IapWebTypeAppEngineIamBinding) GetBooleanMapAttribute(terrafo
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -769,7 +768,7 @@ func (i *jsiiProxy_IapWebTypeAppEngineIamBinding) GetListAttribute(terraformAttr
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -785,7 +784,7 @@ func (i *jsiiProxy_IapWebTypeAppEngineIamBinding) GetNumberAttribute(terraformAt
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -801,7 +800,7 @@ func (i *jsiiProxy_IapWebTypeAppEngineIamBinding) GetNumberListAttribute(terrafo
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -817,7 +816,7 @@ func (i *jsiiProxy_IapWebTypeAppEngineIamBinding) GetNumberMapAttribute(terrafor
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -833,7 +832,7 @@ func (i *jsiiProxy_IapWebTypeAppEngineIamBinding) GetStringAttribute(terraformAt
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -849,15 +848,15 @@ func (i *jsiiProxy_IapWebTypeAppEngineIamBinding) GetStringMapAttribute(terrafor
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (i *jsiiProxy_IapWebTypeAppEngineIamBinding) HasResourceMove() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IapWebTypeAppEngineIamBinding) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -876,7 +875,7 @@ func (i *jsiiProxy_IapWebTypeAppEngineIamBinding) ImportFrom(id *string, provide
 	_jsii_.InvokeVoid(
 		i,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -889,7 +888,7 @@ func (i *jsiiProxy_IapWebTypeAppEngineIamBinding) InterpolationForAttribute(terr
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -903,18 +902,18 @@ func (i *jsiiProxy_IapWebTypeAppEngineIamBinding) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (i *jsiiProxy_IapWebTypeAppEngineIamBinding) MoveTo(moveTarget *string, index interface{}) {
+func (i *jsiiProxy_IapWebTypeAppEngineIamBinding) MoveTo(moveTarget *string, index any) {
 	if err := i.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -925,7 +924,7 @@ func (i *jsiiProxy_IapWebTypeAppEngineIamBinding) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -936,7 +935,7 @@ func (i *jsiiProxy_IapWebTypeAppEngineIamBinding) OverrideLogicalId(newLogicalId
 	_jsii_.InvokeVoid(
 		i,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -947,7 +946,7 @@ func (i *jsiiProxy_IapWebTypeAppEngineIamBinding) PutCondition(value *IapWebType
 	_jsii_.InvokeVoid(
 		i,
 		"putCondition",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -983,8 +982,8 @@ func (i *jsiiProxy_IapWebTypeAppEngineIamBinding) ResetProject() {
 	)
 }
 
-func (i *jsiiProxy_IapWebTypeAppEngineIamBinding) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (i *jsiiProxy_IapWebTypeAppEngineIamBinding) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
@@ -996,8 +995,8 @@ func (i *jsiiProxy_IapWebTypeAppEngineIamBinding) SynthesizeAttributes() *map[st
 	return returns
 }
 
-func (i *jsiiProxy_IapWebTypeAppEngineIamBinding) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (i *jsiiProxy_IapWebTypeAppEngineIamBinding) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
@@ -1009,8 +1008,8 @@ func (i *jsiiProxy_IapWebTypeAppEngineIamBinding) SynthesizeHclAttributes() *map
 	return returns
 }
 
-func (i *jsiiProxy_IapWebTypeAppEngineIamBinding) ToHclTerraform() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IapWebTypeAppEngineIamBinding) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -1022,8 +1021,8 @@ func (i *jsiiProxy_IapWebTypeAppEngineIamBinding) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (i *jsiiProxy_IapWebTypeAppEngineIamBinding) ToMetadata() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IapWebTypeAppEngineIamBinding) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -1048,8 +1047,8 @@ func (i *jsiiProxy_IapWebTypeAppEngineIamBinding) ToString() *string {
 	return returns
 }
 
-func (i *jsiiProxy_IapWebTypeAppEngineIamBinding) ToTerraform() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IapWebTypeAppEngineIamBinding) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -1060,4 +1059,3 @@ func (i *jsiiProxy_IapWebTypeAppEngineIamBinding) ToTerraform() interface{} {
 
 	return returns
 }
-

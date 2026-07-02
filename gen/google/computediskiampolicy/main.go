@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeDiskIamPolicy.ComputeDiskIamPolicy",
-		reflect.TypeOf((*ComputeDiskIamPolicy)(nil)).Elem(),
+		reflect.TypeFor[ComputeDiskIamPolicy](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -67,7 +67,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zone", GoGetter: "Zone"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneInput", GoGetter: "ZoneInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeDiskIamPolicy{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -75,6 +75,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeDiskIamPolicy.ComputeDiskIamPolicyConfig",
-		reflect.TypeOf((*ComputeDiskIamPolicyConfig)(nil)).Elem(),
+		reflect.TypeFor[ComputeDiskIamPolicyConfig](),
 	)
 }

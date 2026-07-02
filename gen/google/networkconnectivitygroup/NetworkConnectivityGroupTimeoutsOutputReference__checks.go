@@ -98,7 +98,7 @@ func (n *jsiiProxy_NetworkConnectivityGroupTimeoutsOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_NetworkConnectivityGroupTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkConnectivityGroupTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_NetworkConnectivityGroupTimeoutsOutputReference) validateSetD
 	return nil
 }
 
-func (j *jsiiProxy_NetworkConnectivityGroupTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkConnectivityGroupTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewNetworkConnectivityGroupTimeoutsOutputReferenceParameters(terraf
 
 	return nil
 }
-

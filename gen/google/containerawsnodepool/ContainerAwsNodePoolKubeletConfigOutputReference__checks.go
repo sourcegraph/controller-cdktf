@@ -98,7 +98,7 @@ func (c *jsiiProxy_ContainerAwsNodePoolKubeletConfigOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_ContainerAwsNodePoolKubeletConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerAwsNodePoolKubeletConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ContainerAwsNodePoolKubeletConfigOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_ContainerAwsNodePoolKubeletConfigOutputReference) validateSetCpuCfsQuotaParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerAwsNodePoolKubeletConfigOutputReference) validateSetCpuCfsQuotaParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -242,4 +242,3 @@ func validateNewContainerAwsNodePoolKubeletConfigOutputReferenceParameters(terra
 
 	return nil
 }
-

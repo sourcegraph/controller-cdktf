@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vmwareengineDatastore.VmwareengineDatastore",
-		reflect.TypeOf((*VmwareengineDatastore)(nil)).Elem(),
+		reflect.TypeFor[VmwareengineDatastore](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -78,7 +78,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VmwareengineDatastore{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -86,19 +86,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vmwareengineDatastore.VmwareengineDatastoreConfig",
-		reflect.TypeOf((*VmwareengineDatastoreConfig)(nil)).Elem(),
+		reflect.TypeFor[VmwareengineDatastoreConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vmwareengineDatastore.VmwareengineDatastoreNfsDatastore",
-		reflect.TypeOf((*VmwareengineDatastoreNfsDatastore)(nil)).Elem(),
+		reflect.TypeFor[VmwareengineDatastoreNfsDatastore](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vmwareengineDatastore.VmwareengineDatastoreNfsDatastoreGoogleFileService",
-		reflect.TypeOf((*VmwareengineDatastoreNfsDatastoreGoogleFileService)(nil)).Elem(),
+		reflect.TypeFor[VmwareengineDatastoreNfsDatastoreGoogleFileService](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vmwareengineDatastore.VmwareengineDatastoreNfsDatastoreGoogleFileServiceOutputReference",
-		reflect.TypeOf((*VmwareengineDatastoreNfsDatastoreGoogleFileServiceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VmwareengineDatastoreNfsDatastoreGoogleFileServiceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -128,7 +128,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VmwareengineDatastoreNfsDatastoreGoogleFileServiceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -136,7 +136,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vmwareengineDatastore.VmwareengineDatastoreNfsDatastoreOutputReference",
-		reflect.TypeOf((*VmwareengineDatastoreNfsDatastoreOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VmwareengineDatastoreNfsDatastoreOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -168,7 +168,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "thirdPartyFileServiceInput", GoGetter: "ThirdPartyFileServiceInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VmwareengineDatastoreNfsDatastoreOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -176,11 +176,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vmwareengineDatastore.VmwareengineDatastoreNfsDatastoreThirdPartyFileService",
-		reflect.TypeOf((*VmwareengineDatastoreNfsDatastoreThirdPartyFileService)(nil)).Elem(),
+		reflect.TypeFor[VmwareengineDatastoreNfsDatastoreThirdPartyFileService](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vmwareengineDatastore.VmwareengineDatastoreNfsDatastoreThirdPartyFileServiceOutputReference",
-		reflect.TypeOf((*VmwareengineDatastoreNfsDatastoreThirdPartyFileServiceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VmwareengineDatastoreNfsDatastoreThirdPartyFileServiceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -210,7 +210,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VmwareengineDatastoreNfsDatastoreThirdPartyFileServiceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -218,11 +218,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vmwareengineDatastore.VmwareengineDatastoreTimeouts",
-		reflect.TypeOf((*VmwareengineDatastoreTimeouts)(nil)).Elem(),
+		reflect.TypeFor[VmwareengineDatastoreTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vmwareengineDatastore.VmwareengineDatastoreTimeoutsOutputReference",
-		reflect.TypeOf((*VmwareengineDatastoreTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VmwareengineDatastoreTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -255,7 +255,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VmwareengineDatastoreTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

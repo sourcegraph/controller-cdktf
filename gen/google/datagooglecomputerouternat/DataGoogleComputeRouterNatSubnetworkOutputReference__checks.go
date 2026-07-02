@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleComputeRouterNatSubnetworkOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeRouterNatSubnetworkOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleComputeRouterNatSubnetworkOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleComputeRouterNatSubnetworkOutputReferenceParameters(te
 
 	return nil
 }
-

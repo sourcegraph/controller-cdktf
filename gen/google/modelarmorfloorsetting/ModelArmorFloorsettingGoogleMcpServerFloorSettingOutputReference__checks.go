@@ -98,7 +98,7 @@ func (m *jsiiProxy_ModelArmorFloorsettingGoogleMcpServerFloorSettingOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_ModelArmorFloorsettingGoogleMcpServerFloorSettingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ModelArmorFloorsettingGoogleMcpServerFloorSettingOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ModelArmorFloorsettingGoogleMcpServerFloorSettingOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_ModelArmorFloorsettingGoogleMcpServerFloorSettingOutputReference) validateSetEnableCloudLoggingParameters(val interface{}) error {
+func (j *jsiiProxy_ModelArmorFloorsettingGoogleMcpServerFloorSettingOutputReference) validateSetEnableCloudLoggingParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (j *jsiiProxy_ModelArmorFloorsettingGoogleMcpServerFloorSettingOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_ModelArmorFloorsettingGoogleMcpServerFloorSettingOutputReference) validateSetInspectAndBlockParameters(val interface{}) error {
+func (j *jsiiProxy_ModelArmorFloorsettingGoogleMcpServerFloorSettingOutputReference) validateSetInspectAndBlockParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -203,7 +203,7 @@ func (j *jsiiProxy_ModelArmorFloorsettingGoogleMcpServerFloorSettingOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_ModelArmorFloorsettingGoogleMcpServerFloorSettingOutputReference) validateSetInspectOnlyParameters(val interface{}) error {
+func (j *jsiiProxy_ModelArmorFloorsettingGoogleMcpServerFloorSettingOutputReference) validateSetInspectOnlyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -258,4 +258,3 @@ func validateNewModelArmorFloorsettingGoogleMcpServerFloorSettingOutputReference
 
 	return nil
 }
-

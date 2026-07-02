@@ -12,9 +12,9 @@ type EventarcPipelineLoggingConfigOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -43,7 +43,7 @@ type EventarcPipelineLoggingConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -67,7 +67,7 @@ type EventarcPipelineLoggingConfigOutputReference interface {
 	ResetLogSeverity()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,8 +80,8 @@ type jsiiProxy_EventarcPipelineLoggingConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_EventarcPipelineLoggingConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EventarcPipelineLoggingConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -170,7 +170,6 @@ func (j *jsiiProxy_EventarcPipelineLoggingConfigOutputReference) TerraformResour
 	return returns
 }
 
-
 func NewEventarcPipelineLoggingConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) EventarcPipelineLoggingConfigOutputReference {
 	_init_.Initialize()
 
@@ -181,7 +180,7 @@ func NewEventarcPipelineLoggingConfigOutputReference(terraformResource cdktf.IIn
 
 	_jsii_.Create(
 		"@cdktf/provider-google.eventarcPipeline.EventarcPipelineLoggingConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -193,12 +192,12 @@ func NewEventarcPipelineLoggingConfigOutputReference_Override(e EventarcPipeline
 
 	_jsii_.Create(
 		"@cdktf/provider-google.eventarcPipeline.EventarcPipelineLoggingConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		e,
 	)
 }
 
-func (j *jsiiProxy_EventarcPipelineLoggingConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_EventarcPipelineLoggingConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -209,7 +208,7 @@ func (j *jsiiProxy_EventarcPipelineLoggingConfigOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_EventarcPipelineLoggingConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_EventarcPipelineLoggingConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -220,7 +219,7 @@ func (j *jsiiProxy_EventarcPipelineLoggingConfigOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_EventarcPipelineLoggingConfigOutputReference)SetInternalValue(val *EventarcPipelineLoggingConfig) {
+func (j *jsiiProxy_EventarcPipelineLoggingConfigOutputReference) SetInternalValue(val *EventarcPipelineLoggingConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_EventarcPipelineLoggingConfigOutputReference)SetInternalValue
 	)
 }
 
-func (j *jsiiProxy_EventarcPipelineLoggingConfigOutputReference)SetLogSeverity(val *string) {
+func (j *jsiiProxy_EventarcPipelineLoggingConfigOutputReference) SetLogSeverity(val *string) {
 	if err := j.validateSetLogSeverityParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_EventarcPipelineLoggingConfigOutputReference)SetLogSeverity(v
 	)
 }
 
-func (j *jsiiProxy_EventarcPipelineLoggingConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_EventarcPipelineLoggingConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_EventarcPipelineLoggingConfigOutputReference)SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_EventarcPipelineLoggingConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EventarcPipelineLoggingConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,16 +276,16 @@ func (e *jsiiProxy_EventarcPipelineLoggingConfigOutputReference) ComputeFqn() *s
 	return returns
 }
 
-func (e *jsiiProxy_EventarcPipelineLoggingConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_EventarcPipelineLoggingConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -302,7 +301,7 @@ func (e *jsiiProxy_EventarcPipelineLoggingConfigOutputReference) GetBooleanAttri
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -318,7 +317,7 @@ func (e *jsiiProxy_EventarcPipelineLoggingConfigOutputReference) GetBooleanMapAt
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -334,7 +333,7 @@ func (e *jsiiProxy_EventarcPipelineLoggingConfigOutputReference) GetListAttribut
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -350,7 +349,7 @@ func (e *jsiiProxy_EventarcPipelineLoggingConfigOutputReference) GetNumberAttrib
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -366,7 +365,7 @@ func (e *jsiiProxy_EventarcPipelineLoggingConfigOutputReference) GetNumberListAt
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -382,7 +381,7 @@ func (e *jsiiProxy_EventarcPipelineLoggingConfigOutputReference) GetNumberMapAtt
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -398,7 +397,7 @@ func (e *jsiiProxy_EventarcPipelineLoggingConfigOutputReference) GetStringAttrib
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -414,7 +413,7 @@ func (e *jsiiProxy_EventarcPipelineLoggingConfigOutputReference) GetStringMapAtt
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -443,7 +442,7 @@ func (e *jsiiProxy_EventarcPipelineLoggingConfigOutputReference) InterpolationFo
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -458,16 +457,16 @@ func (e *jsiiProxy_EventarcPipelineLoggingConfigOutputReference) ResetLogSeverit
 	)
 }
 
-func (e *jsiiProxy_EventarcPipelineLoggingConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (e *jsiiProxy_EventarcPipelineLoggingConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := e.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -486,4 +485,3 @@ func (e *jsiiProxy_EventarcPipelineLoggingConfigOutputReference) ToString() *str
 
 	return returns
 }
-

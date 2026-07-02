@@ -128,7 +128,7 @@ func (j *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesOutputReference) validateSetAll
 	return nil
 }
 
-func (j *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,7 +209,7 @@ func (j *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesOutputReference) validateSetEnf
 	return nil
 }
 
-func (j *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -276,4 +276,3 @@ func validateNewOrgPolicyPolicyDryRunSpecRulesOutputReferenceParameters(terrafor
 
 	return nil
 }
-

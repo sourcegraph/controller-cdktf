@@ -6,9 +6,9 @@ import (
 
 type PrivilegedAccessManagerEntitlementConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,11 +18,11 @@ type PrivilegedAccessManagerEntitlementConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// eligible_users block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/privileged_access_manager_entitlement#eligible_users PrivilegedAccessManagerEntitlement#eligible_users}
-	EligibleUsers interface{} `field:"required" json:"eligibleUsers" yaml:"eligibleUsers"`
+	EligibleUsers any `field:"required" json:"eligibleUsers" yaml:"eligibleUsers"`
 	// The ID to use for this Entitlement.
 	//
 	// This will become the last part of the resource name.
@@ -72,4 +72,3 @@ type PrivilegedAccessManagerEntitlementConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/privileged_access_manager_entitlement#timeouts PrivilegedAccessManagerEntitlement#timeouts}
 	Timeouts *PrivilegedAccessManagerEntitlementTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

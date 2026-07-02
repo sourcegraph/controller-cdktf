@@ -98,7 +98,7 @@ func (d *jsiiProxy_DialogflowCxFlowEventHandlersTriggerFulfillmentSetParameterAc
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxFlowEventHandlersTriggerFulfillmentSetParameterActionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxFlowEventHandlersTriggerFulfillmentSetParameterActionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DialogflowCxFlowEventHandlersTriggerFulfillmentSetParameterAc
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxFlowEventHandlersTriggerFulfillmentSetParameterActionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxFlowEventHandlersTriggerFulfillmentSetParameterActionsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewDialogflowCxFlowEventHandlersTriggerFulfillmentSetParameterActio
 
 	return nil
 }
-

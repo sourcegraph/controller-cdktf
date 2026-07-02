@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vertexAiTensorboard.VertexAiTensorboard",
-		reflect.TypeOf((*VertexAiTensorboard)(nil)).Elem(),
+		reflect.TypeFor[VertexAiTensorboard](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -85,7 +85,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VertexAiTensorboard{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -93,15 +93,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vertexAiTensorboard.VertexAiTensorboardConfig",
-		reflect.TypeOf((*VertexAiTensorboardConfig)(nil)).Elem(),
+		reflect.TypeFor[VertexAiTensorboardConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vertexAiTensorboard.VertexAiTensorboardEncryptionSpec",
-		reflect.TypeOf((*VertexAiTensorboardEncryptionSpec)(nil)).Elem(),
+		reflect.TypeFor[VertexAiTensorboardEncryptionSpec](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vertexAiTensorboard.VertexAiTensorboardEncryptionSpecOutputReference",
-		reflect.TypeOf((*VertexAiTensorboardEncryptionSpecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VertexAiTensorboardEncryptionSpecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -127,7 +127,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VertexAiTensorboardEncryptionSpecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -135,11 +135,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vertexAiTensorboard.VertexAiTensorboardTimeouts",
-		reflect.TypeOf((*VertexAiTensorboardTimeouts)(nil)).Elem(),
+		reflect.TypeFor[VertexAiTensorboardTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vertexAiTensorboard.VertexAiTensorboardTimeoutsOutputReference",
-		reflect.TypeOf((*VertexAiTensorboardTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VertexAiTensorboardTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -172,7 +172,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VertexAiTensorboardTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

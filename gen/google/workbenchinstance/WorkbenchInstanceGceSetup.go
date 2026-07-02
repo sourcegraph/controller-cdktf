@@ -1,11 +1,10 @@
 package workbenchinstance
 
-
 type WorkbenchInstanceGceSetup struct {
 	// accelerator_configs block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workbench_instance#accelerator_configs WorkbenchInstance#accelerator_configs}
-	AcceleratorConfigs interface{} `field:"optional" json:"acceleratorConfigs" yaml:"acceleratorConfigs"`
+	AcceleratorConfigs any `field:"optional" json:"acceleratorConfigs" yaml:"acceleratorConfigs"`
 	// boot_disk block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workbench_instance#boot_disk WorkbenchInstance#boot_disk}
@@ -25,11 +24,11 @@ type WorkbenchInstanceGceSetup struct {
 	// Optional. If true, no external IP will be assigned to this VM instance.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workbench_instance#disable_public_ip WorkbenchInstance#disable_public_ip}
-	DisablePublicIp interface{} `field:"optional" json:"disablePublicIp" yaml:"disablePublicIp"`
+	DisablePublicIp any `field:"optional" json:"disablePublicIp" yaml:"disablePublicIp"`
 	// Optional. Flag to enable ip forwarding or not, default false/off. https://cloud.google.com/vpc/docs/using-routes#canipforward.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workbench_instance#enable_ip_forwarding WorkbenchInstance#enable_ip_forwarding}
-	EnableIpForwarding interface{} `field:"optional" json:"enableIpForwarding" yaml:"enableIpForwarding"`
+	EnableIpForwarding any `field:"optional" json:"enableIpForwarding" yaml:"enableIpForwarding"`
 	// Optional. The machine type of the VM instance. https://cloud.google.com/compute/docs/machine-resource.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workbench_instance#machine_type WorkbenchInstance#machine_type}
@@ -41,7 +40,7 @@ type WorkbenchInstanceGceSetup struct {
 	// network_interfaces block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workbench_instance#network_interfaces WorkbenchInstance#network_interfaces}
-	NetworkInterfaces interface{} `field:"optional" json:"networkInterfaces" yaml:"networkInterfaces"`
+	NetworkInterfaces any `field:"optional" json:"networkInterfaces" yaml:"networkInterfaces"`
 	// reservation_affinity block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workbench_instance#reservation_affinity WorkbenchInstance#reservation_affinity}
@@ -49,7 +48,7 @@ type WorkbenchInstanceGceSetup struct {
 	// service_accounts block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workbench_instance#service_accounts WorkbenchInstance#service_accounts}
-	ServiceAccounts interface{} `field:"optional" json:"serviceAccounts" yaml:"serviceAccounts"`
+	ServiceAccounts any `field:"optional" json:"serviceAccounts" yaml:"serviceAccounts"`
 	// shielded_instance_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workbench_instance#shielded_instance_config WorkbenchInstance#shielded_instance_config}
@@ -63,4 +62,3 @@ type WorkbenchInstanceGceSetup struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workbench_instance#vm_image WorkbenchInstance#vm_image}
 	VmImage *WorkbenchInstanceGceSetupVmImage `field:"optional" json:"vmImage" yaml:"vmImage"`
 }
-

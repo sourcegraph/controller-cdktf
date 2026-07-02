@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudRunDomainMapping.CloudRunDomainMapping",
-		reflect.TypeOf((*CloudRunDomainMapping)(nil)).Elem(),
+		reflect.TypeFor[CloudRunDomainMapping](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -75,7 +75,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudRunDomainMapping{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -83,15 +83,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cloudRunDomainMapping.CloudRunDomainMappingConfig",
-		reflect.TypeOf((*CloudRunDomainMappingConfig)(nil)).Elem(),
+		reflect.TypeFor[CloudRunDomainMappingConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cloudRunDomainMapping.CloudRunDomainMappingMetadata",
-		reflect.TypeOf((*CloudRunDomainMappingMetadata)(nil)).Elem(),
+		reflect.TypeFor[CloudRunDomainMappingMetadata](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudRunDomainMapping.CloudRunDomainMappingMetadataOutputReference",
-		reflect.TypeOf((*CloudRunDomainMappingMetadataOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudRunDomainMappingMetadataOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "annotations", GoGetter: "Annotations"},
 			_jsii_.MemberProperty{JsiiProperty: "annotationsInput", GoGetter: "AnnotationsInput"},
@@ -130,7 +130,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudRunDomainMappingMetadataOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -138,11 +138,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cloudRunDomainMapping.CloudRunDomainMappingSpec",
-		reflect.TypeOf((*CloudRunDomainMappingSpec)(nil)).Elem(),
+		reflect.TypeFor[CloudRunDomainMappingSpec](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudRunDomainMapping.CloudRunDomainMappingSpecOutputReference",
-		reflect.TypeOf((*CloudRunDomainMappingSpecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudRunDomainMappingSpecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "certificateMode", GoGetter: "CertificateMode"},
 			_jsii_.MemberProperty{JsiiProperty: "certificateModeInput", GoGetter: "CertificateModeInput"},
@@ -174,7 +174,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudRunDomainMappingSpecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -182,15 +182,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cloudRunDomainMapping.CloudRunDomainMappingStatus",
-		reflect.TypeOf((*CloudRunDomainMappingStatus)(nil)).Elem(),
+		reflect.TypeFor[CloudRunDomainMappingStatus](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cloudRunDomainMapping.CloudRunDomainMappingStatusConditions",
-		reflect.TypeOf((*CloudRunDomainMappingStatusConditions)(nil)).Elem(),
+		reflect.TypeFor[CloudRunDomainMappingStatusConditions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudRunDomainMapping.CloudRunDomainMappingStatusConditionsList",
-		reflect.TypeOf((*CloudRunDomainMappingStatusConditionsList)(nil)).Elem(),
+		reflect.TypeFor[CloudRunDomainMappingStatusConditionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -203,7 +203,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudRunDomainMappingStatusConditionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -211,7 +211,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudRunDomainMapping.CloudRunDomainMappingStatusConditionsOutputReference",
-		reflect.TypeOf((*CloudRunDomainMappingStatusConditionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudRunDomainMappingStatusConditionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -239,7 +239,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudRunDomainMappingStatusConditionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -247,7 +247,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudRunDomainMapping.CloudRunDomainMappingStatusList",
-		reflect.TypeOf((*CloudRunDomainMappingStatusList)(nil)).Elem(),
+		reflect.TypeFor[CloudRunDomainMappingStatusList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -260,7 +260,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudRunDomainMappingStatusList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -268,7 +268,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudRunDomainMapping.CloudRunDomainMappingStatusOutputReference",
-		reflect.TypeOf((*CloudRunDomainMappingStatusOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudRunDomainMappingStatusOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -296,7 +296,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudRunDomainMappingStatusOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -304,11 +304,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cloudRunDomainMapping.CloudRunDomainMappingStatusResourceRecords",
-		reflect.TypeOf((*CloudRunDomainMappingStatusResourceRecords)(nil)).Elem(),
+		reflect.TypeFor[CloudRunDomainMappingStatusResourceRecords](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudRunDomainMapping.CloudRunDomainMappingStatusResourceRecordsList",
-		reflect.TypeOf((*CloudRunDomainMappingStatusResourceRecordsList)(nil)).Elem(),
+		reflect.TypeFor[CloudRunDomainMappingStatusResourceRecordsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -321,7 +321,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudRunDomainMappingStatusResourceRecordsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -329,7 +329,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudRunDomainMapping.CloudRunDomainMappingStatusResourceRecordsOutputReference",
-		reflect.TypeOf((*CloudRunDomainMappingStatusResourceRecordsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudRunDomainMappingStatusResourceRecordsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -356,7 +356,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudRunDomainMappingStatusResourceRecordsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -364,11 +364,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cloudRunDomainMapping.CloudRunDomainMappingTimeouts",
-		reflect.TypeOf((*CloudRunDomainMappingTimeouts)(nil)).Elem(),
+		reflect.TypeFor[CloudRunDomainMappingTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudRunDomainMapping.CloudRunDomainMappingTimeoutsOutputReference",
-		reflect.TypeOf((*CloudRunDomainMappingTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudRunDomainMappingTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -398,7 +398,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudRunDomainMappingTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

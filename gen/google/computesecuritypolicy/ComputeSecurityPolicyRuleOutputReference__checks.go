@@ -161,7 +161,7 @@ func (j *jsiiProxy_ComputeSecurityPolicyRuleOutputReference) validateSetActionPa
 	return nil
 }
 
-func (j *jsiiProxy_ComputeSecurityPolicyRuleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeSecurityPolicyRuleOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -234,7 +234,7 @@ func (j *jsiiProxy_ComputeSecurityPolicyRuleOutputReference) validateSetDescript
 	return nil
 }
 
-func (j *jsiiProxy_ComputeSecurityPolicyRuleOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeSecurityPolicyRuleOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -258,7 +258,7 @@ func (j *jsiiProxy_ComputeSecurityPolicyRuleOutputReference) validateSetInternal
 	return nil
 }
 
-func (j *jsiiProxy_ComputeSecurityPolicyRuleOutputReference) validateSetPreviewParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeSecurityPolicyRuleOutputReference) validateSetPreviewParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -321,4 +321,3 @@ func validateNewComputeSecurityPolicyRuleOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

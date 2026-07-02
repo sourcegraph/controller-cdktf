@@ -19,7 +19,7 @@ func (a *jsiiProxy_ApigeeEnvironmentAddonsConfig) validateAddMoveTargetParameter
 	return nil
 }
 
-func (a *jsiiProxy_ApigeeEnvironmentAddonsConfig) validateAddOverrideParameters(path *string, value interface{}) error {
+func (a *jsiiProxy_ApigeeEnvironmentAddonsConfig) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (a *jsiiProxy_ApigeeEnvironmentAddonsConfig) validateMoveFromIdParameters(i
 	return nil
 }
 
-func (a *jsiiProxy_ApigeeEnvironmentAddonsConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (a *jsiiProxy_ApigeeEnvironmentAddonsConfig) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateApigeeEnvironmentAddonsConfig_GenerateConfigForImportParameters(sco
 	return nil
 }
 
-func validateApigeeEnvironmentAddonsConfig_IsConstructParameters(x interface{}) error {
+func validateApigeeEnvironmentAddonsConfig_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateApigeeEnvironmentAddonsConfig_IsConstructParameters(x interface{}) 
 	return nil
 }
 
-func validateApigeeEnvironmentAddonsConfig_IsTerraformElementParameters(x interface{}) error {
+func validateApigeeEnvironmentAddonsConfig_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateApigeeEnvironmentAddonsConfig_IsTerraformElementParameters(x interf
 	return nil
 }
 
-func validateApigeeEnvironmentAddonsConfig_IsTerraformResourceParameters(x interface{}) error {
+func validateApigeeEnvironmentAddonsConfig_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateApigeeEnvironmentAddonsConfig_IsTerraformResourceParameters(x inter
 	return nil
 }
 
-func (j *jsiiProxy_ApigeeEnvironmentAddonsConfig) validateSetAnalyticsEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_ApigeeEnvironmentAddonsConfig) validateSetAnalyticsEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -275,7 +275,7 @@ func (j *jsiiProxy_ApigeeEnvironmentAddonsConfig) validateSetAnalyticsEnabledPar
 	return nil
 }
 
-func (j *jsiiProxy_ApigeeEnvironmentAddonsConfig) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ApigeeEnvironmentAddonsConfig) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -308,7 +308,7 @@ func (j *jsiiProxy_ApigeeEnvironmentAddonsConfig) validateSetConnectionParameter
 	return nil
 }
 
-func (j *jsiiProxy_ApigeeEnvironmentAddonsConfig) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ApigeeEnvironmentAddonsConfig) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -389,7 +389,7 @@ func (j *jsiiProxy_ApigeeEnvironmentAddonsConfig) validateSetLifecycleParameters
 	return nil
 }
 
-func (j *jsiiProxy_ApigeeEnvironmentAddonsConfig) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ApigeeEnvironmentAddonsConfig) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -453,4 +453,3 @@ func validateNewApigeeEnvironmentAddonsConfigParameters(scope constructs.Constru
 
 	return nil
 }
-

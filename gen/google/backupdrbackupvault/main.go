@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.backupDrBackupVault.BackupDrBackupVault",
-		reflect.TypeOf((*BackupDrBackupVault)(nil)).Elem(),
+		reflect.TypeFor[BackupDrBackupVault](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessRestriction", GoGetter: "AccessRestriction"},
 			_jsii_.MemberProperty{JsiiProperty: "accessRestrictionInput", GoGetter: "AccessRestrictionInput"},
@@ -119,7 +119,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BackupDrBackupVault{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -127,15 +127,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.backupDrBackupVault.BackupDrBackupVaultConfig",
-		reflect.TypeOf((*BackupDrBackupVaultConfig)(nil)).Elem(),
+		reflect.TypeFor[BackupDrBackupVaultConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.backupDrBackupVault.BackupDrBackupVaultEncryptionConfig",
-		reflect.TypeOf((*BackupDrBackupVaultEncryptionConfig)(nil)).Elem(),
+		reflect.TypeFor[BackupDrBackupVaultEncryptionConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.backupDrBackupVault.BackupDrBackupVaultEncryptionConfigOutputReference",
-		reflect.TypeOf((*BackupDrBackupVaultEncryptionConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BackupDrBackupVaultEncryptionConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -162,7 +162,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BackupDrBackupVaultEncryptionConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -170,11 +170,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.backupDrBackupVault.BackupDrBackupVaultTimeouts",
-		reflect.TypeOf((*BackupDrBackupVaultTimeouts)(nil)).Elem(),
+		reflect.TypeFor[BackupDrBackupVaultTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.backupDrBackupVault.BackupDrBackupVaultTimeoutsOutputReference",
-		reflect.TypeOf((*BackupDrBackupVaultTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BackupDrBackupVaultTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -207,7 +207,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BackupDrBackupVaultTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

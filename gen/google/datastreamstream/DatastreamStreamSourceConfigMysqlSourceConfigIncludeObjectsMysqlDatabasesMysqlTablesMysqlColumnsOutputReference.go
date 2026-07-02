@@ -18,9 +18,9 @@ type DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMy
 	ColumnInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -36,18 +36,18 @@ type DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMy
 	DataTypeInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Length() *float64
-	Nullable() interface{}
-	SetNullable(val interface{})
-	NullableInput() interface{}
+	Nullable() any
+	SetNullable(val any)
+	NullableInput() any
 	OrdinalPosition() *float64
 	SetOrdinalPosition(val *float64)
 	OrdinalPositionInput() *float64
-	PrimaryKey() interface{}
-	SetPrimaryKey(val interface{})
-	PrimaryKeyInput() interface{}
+	PrimaryKey() any
+	SetPrimaryKey(val any)
+	PrimaryKeyInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -59,7 +59,7 @@ type DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMy
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -88,7 +88,7 @@ type DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMy
 	ResetPrimaryKey()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -141,8 +141,8 @@ func (j *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMy
 	return returns
 }
 
-func (j *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -201,8 +201,8 @@ func (j *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMy
 	return returns
 }
 
-func (j *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -221,8 +221,8 @@ func (j *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMy
 	return returns
 }
 
-func (j *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference) Nullable() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference) Nullable() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"nullable",
@@ -231,8 +231,8 @@ func (j *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMy
 	return returns
 }
 
-func (j *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference) NullableInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference) NullableInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"nullableInput",
@@ -261,8 +261,8 @@ func (j *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMy
 	return returns
 }
 
-func (j *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference) PrimaryKey() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference) PrimaryKey() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"primaryKey",
@@ -271,8 +271,8 @@ func (j *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMy
 	return returns
 }
 
-func (j *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference) PrimaryKeyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference) PrimaryKeyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"primaryKeyInput",
@@ -301,7 +301,6 @@ func (j *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMy
 	return returns
 }
 
-
 func NewDatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference {
 	_init_.Initialize()
 
@@ -312,7 +311,7 @@ func NewDatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabase
 
 	_jsii_.Create(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -324,12 +323,12 @@ func NewDatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabase
 
 	_jsii_.Create(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference)SetCollation(val *string) {
+func (j *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference) SetCollation(val *string) {
 	if err := j.validateSetCollationParameters(val); err != nil {
 		panic(err)
 	}
@@ -340,7 +339,7 @@ func (j *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMy
 	)
 }
 
-func (j *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference)SetColumn(val *string) {
+func (j *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference) SetColumn(val *string) {
 	if err := j.validateSetColumnParameters(val); err != nil {
 		panic(err)
 	}
@@ -351,7 +350,7 @@ func (j *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMy
 	)
 }
 
-func (j *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -362,7 +361,7 @@ func (j *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMy
 	)
 }
 
-func (j *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -373,7 +372,7 @@ func (j *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMy
 	)
 }
 
-func (j *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference)SetDataType(val *string) {
+func (j *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference) SetDataType(val *string) {
 	if err := j.validateSetDataTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -384,7 +383,7 @@ func (j *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMy
 	)
 }
 
-func (j *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -395,7 +394,7 @@ func (j *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMy
 	)
 }
 
-func (j *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference)SetNullable(val interface{}) {
+func (j *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference) SetNullable(val any) {
 	if err := j.validateSetNullableParameters(val); err != nil {
 		panic(err)
 	}
@@ -406,7 +405,7 @@ func (j *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMy
 	)
 }
 
-func (j *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference)SetOrdinalPosition(val *float64) {
+func (j *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference) SetOrdinalPosition(val *float64) {
 	if err := j.validateSetOrdinalPositionParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,7 +416,7 @@ func (j *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMy
 	)
 }
 
-func (j *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference)SetPrimaryKey(val interface{}) {
+func (j *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference) SetPrimaryKey(val any) {
 	if err := j.validateSetPrimaryKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -428,7 +427,7 @@ func (j *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMy
 	)
 }
 
-func (j *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -439,7 +438,7 @@ func (j *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMy
 	)
 }
 
-func (j *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -463,16 +462,16 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMy
 	return returns
 }
 
-func (d *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -488,7 +487,7 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMy
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -504,7 +503,7 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMy
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -520,7 +519,7 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMy
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -536,7 +535,7 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMy
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -552,7 +551,7 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMy
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -568,7 +567,7 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMy
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -584,7 +583,7 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMy
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -600,7 +599,7 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMy
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -629,7 +628,7 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMy
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -684,16 +683,16 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMy
 	)
 }
 
-func (d *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -712,4 +711,3 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMy
 
 	return returns
 }
-

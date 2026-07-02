@@ -17,8 +17,8 @@ type DialogflowCxIntentParametersList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type DialogflowCxIntentParametersList interface {
 	Get(index *float64) DialogflowCxIntentParametersOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_DialogflowCxIntentParametersList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowCxIntentParametersList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowCxIntentParametersList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_DialogflowCxIntentParametersList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewDialogflowCxIntentParametersList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DialogflowCxIntentParametersList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewDialogflowCxIntentParametersList(terraformResource cdktf.IInterpolatingP
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dialogflowCxIntent.DialogflowCxIntentParametersList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewDialogflowCxIntentParametersList_Override(d DialogflowCxIntentParameters
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dialogflowCxIntent.DialogflowCxIntentParametersList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxIntentParametersList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DialogflowCxIntentParametersList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_DialogflowCxIntentParametersList)SetInternalValue(val interfa
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxIntentParametersList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DialogflowCxIntentParametersList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_DialogflowCxIntentParametersList)SetTerraformAttribute(val *s
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxIntentParametersList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DialogflowCxIntentParametersList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_DialogflowCxIntentParametersList)SetTerraformResource(val cdk
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxIntentParametersList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DialogflowCxIntentParametersList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (d *jsiiProxy_DialogflowCxIntentParametersList) AllWithMapKey(mapKeyAttribu
 	_jsii_.Invoke(
 		d,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (d *jsiiProxy_DialogflowCxIntentParametersList) Get(index *float64) Dialogf
 	_jsii_.Invoke(
 		d,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DialogflowCxIntentParametersList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DialogflowCxIntentParametersList) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (d *jsiiProxy_DialogflowCxIntentParametersList) ToString() *string {
 
 	return returns
 }
-

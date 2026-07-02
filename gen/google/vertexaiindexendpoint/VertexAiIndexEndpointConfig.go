@@ -6,9 +6,9 @@ import (
 
 type VertexAiIndexEndpointConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type VertexAiIndexEndpointConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The display name of the Index.
 	//
 	// The name can be up to 128 characters long and can consist of any UTF-8 characters.
@@ -58,7 +58,7 @@ type VertexAiIndexEndpointConfig struct {
 	// If true, the deployed index will be accessible through public endpoint.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_index_endpoint#public_endpoint_enabled VertexAiIndexEndpoint#public_endpoint_enabled}
-	PublicEndpointEnabled interface{} `field:"optional" json:"publicEndpointEnabled" yaml:"publicEndpointEnabled"`
+	PublicEndpointEnabled any `field:"optional" json:"publicEndpointEnabled" yaml:"publicEndpointEnabled"`
 	// The region of the index endpoint. eg us-central1.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_index_endpoint#region VertexAiIndexEndpoint#region}
@@ -68,4 +68,3 @@ type VertexAiIndexEndpointConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_index_endpoint#timeouts VertexAiIndexEndpoint#timeouts}
 	Timeouts *VertexAiIndexEndpointTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

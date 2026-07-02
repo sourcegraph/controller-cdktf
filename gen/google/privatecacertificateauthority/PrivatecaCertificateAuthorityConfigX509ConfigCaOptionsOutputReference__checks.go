@@ -98,7 +98,7 @@ func (p *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigCaOptionsOutputR
 	return nil
 }
 
-func (j *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigCaOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigCaOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigCaOptionsOutputR
 	return nil
 }
 
-func (j *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigCaOptionsOutputReference) validateSetIsCaParameters(val interface{}) error {
+func (j *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigCaOptionsOutputReference) validateSetIsCaParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -199,7 +199,7 @@ func (j *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigCaOptionsOutputR
 	return nil
 }
 
-func (j *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigCaOptionsOutputReference) validateSetNonCaParameters(val interface{}) error {
+func (j *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigCaOptionsOutputReference) validateSetNonCaParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -235,7 +235,7 @@ func (j *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigCaOptionsOutputR
 	return nil
 }
 
-func (j *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigCaOptionsOutputReference) validateSetZeroMaxIssuerPathLengthParameters(val interface{}) error {
+func (j *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigCaOptionsOutputReference) validateSetZeroMaxIssuerPathLengthParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -266,4 +266,3 @@ func validateNewPrivatecaCertificateAuthorityConfigX509ConfigCaOptionsOutputRefe
 
 	return nil
 }
-

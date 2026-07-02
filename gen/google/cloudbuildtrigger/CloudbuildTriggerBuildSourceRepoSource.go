@@ -1,6 +1,5 @@
 package cloudbuildtrigger
 
-
 type CloudbuildTriggerBuildSourceRepoSource struct {
 	// Name of the Cloud Source Repository.
 	//
@@ -28,7 +27,7 @@ type CloudbuildTriggerBuildSourceRepoSource struct {
 	// Only trigger a build if the revision regex does NOT match the revision regex.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuild_trigger#invert_regex CloudbuildTrigger#invert_regex}
-	InvertRegex interface{} `field:"optional" json:"invertRegex" yaml:"invertRegex"`
+	InvertRegex any `field:"optional" json:"invertRegex" yaml:"invertRegex"`
 	// ID of the project that owns the Cloud Source Repository. If omitted, the project ID requesting the build is assumed.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuild_trigger#project_id CloudbuildTrigger#project_id}
@@ -46,4 +45,3 @@ type CloudbuildTriggerBuildSourceRepoSource struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuild_trigger#tag_name CloudbuildTrigger#tag_name}
 	TagName *string `field:"optional" json:"tagName" yaml:"tagName"`
 }
-

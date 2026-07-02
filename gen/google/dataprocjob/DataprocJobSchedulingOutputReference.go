@@ -12,9 +12,9 @@ type DataprocJobSchedulingOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -46,7 +46,7 @@ type DataprocJobSchedulingOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -69,7 +69,7 @@ type DataprocJobSchedulingOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -82,8 +82,8 @@ type jsiiProxy_DataprocJobSchedulingOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DataprocJobSchedulingOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataprocJobSchedulingOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -192,7 +192,6 @@ func (j *jsiiProxy_DataprocJobSchedulingOutputReference) TerraformResource() cdk
 	return returns
 }
 
-
 func NewDataprocJobSchedulingOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataprocJobSchedulingOutputReference {
 	_init_.Initialize()
 
@@ -203,7 +202,7 @@ func NewDataprocJobSchedulingOutputReference(terraformResource cdktf.IInterpolat
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataprocJob.DataprocJobSchedulingOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -215,12 +214,12 @@ func NewDataprocJobSchedulingOutputReference_Override(d DataprocJobSchedulingOut
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataprocJob.DataprocJobSchedulingOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataprocJobSchedulingOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataprocJobSchedulingOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_DataprocJobSchedulingOutputReference)SetComplexObjectIndex(va
 	)
 }
 
-func (j *jsiiProxy_DataprocJobSchedulingOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataprocJobSchedulingOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_DataprocJobSchedulingOutputReference)SetComplexObjectIsFromSe
 	)
 }
 
-func (j *jsiiProxy_DataprocJobSchedulingOutputReference)SetInternalValue(val *DataprocJobScheduling) {
+func (j *jsiiProxy_DataprocJobSchedulingOutputReference) SetInternalValue(val *DataprocJobScheduling) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_DataprocJobSchedulingOutputReference)SetInternalValue(val *Da
 	)
 }
 
-func (j *jsiiProxy_DataprocJobSchedulingOutputReference)SetMaxFailuresPerHour(val *float64) {
+func (j *jsiiProxy_DataprocJobSchedulingOutputReference) SetMaxFailuresPerHour(val *float64) {
 	if err := j.validateSetMaxFailuresPerHourParameters(val); err != nil {
 		panic(err)
 	}
@@ -264,7 +263,7 @@ func (j *jsiiProxy_DataprocJobSchedulingOutputReference)SetMaxFailuresPerHour(va
 	)
 }
 
-func (j *jsiiProxy_DataprocJobSchedulingOutputReference)SetMaxFailuresTotal(val *float64) {
+func (j *jsiiProxy_DataprocJobSchedulingOutputReference) SetMaxFailuresTotal(val *float64) {
 	if err := j.validateSetMaxFailuresTotalParameters(val); err != nil {
 		panic(err)
 	}
@@ -275,7 +274,7 @@ func (j *jsiiProxy_DataprocJobSchedulingOutputReference)SetMaxFailuresTotal(val 
 	)
 }
 
-func (j *jsiiProxy_DataprocJobSchedulingOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataprocJobSchedulingOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -286,7 +285,7 @@ func (j *jsiiProxy_DataprocJobSchedulingOutputReference)SetTerraformAttribute(va
 	)
 }
 
-func (j *jsiiProxy_DataprocJobSchedulingOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataprocJobSchedulingOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -310,16 +309,16 @@ func (d *jsiiProxy_DataprocJobSchedulingOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataprocJobSchedulingOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataprocJobSchedulingOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -335,7 +334,7 @@ func (d *jsiiProxy_DataprocJobSchedulingOutputReference) GetBooleanAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -351,7 +350,7 @@ func (d *jsiiProxy_DataprocJobSchedulingOutputReference) GetBooleanMapAttribute(
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -367,7 +366,7 @@ func (d *jsiiProxy_DataprocJobSchedulingOutputReference) GetListAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -383,7 +382,7 @@ func (d *jsiiProxy_DataprocJobSchedulingOutputReference) GetNumberAttribute(terr
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -399,7 +398,7 @@ func (d *jsiiProxy_DataprocJobSchedulingOutputReference) GetNumberListAttribute(
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -415,7 +414,7 @@ func (d *jsiiProxy_DataprocJobSchedulingOutputReference) GetNumberMapAttribute(t
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -431,7 +430,7 @@ func (d *jsiiProxy_DataprocJobSchedulingOutputReference) GetStringAttribute(terr
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -447,7 +446,7 @@ func (d *jsiiProxy_DataprocJobSchedulingOutputReference) GetStringMapAttribute(t
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -476,23 +475,23 @@ func (d *jsiiProxy_DataprocJobSchedulingOutputReference) InterpolationForAttribu
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataprocJobSchedulingOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataprocJobSchedulingOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -511,4 +510,3 @@ func (d *jsiiProxy_DataprocJobSchedulingOutputReference) ToString() *string {
 
 	return returns
 }
-

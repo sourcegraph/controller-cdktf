@@ -109,7 +109,7 @@ func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToNotOperationsHeaderSetHe
 	return nil
 }
 
-func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToNotOperationsHeaderSetHeadersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToNotOperationsHeaderSetHeadersOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -174,7 +174,7 @@ func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToNotOperationsHeaderSetHe
 	return nil
 }
 
-func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToNotOperationsHeaderSetHeadersOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToNotOperationsHeaderSetHeadersOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -241,4 +241,3 @@ func validateNewNetworkSecurityAuthzPolicyHttpRulesToNotOperationsHeaderSetHeade
 
 	return nil
 }
-

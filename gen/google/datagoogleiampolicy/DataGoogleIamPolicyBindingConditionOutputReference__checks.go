@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleIamPolicyBindingConditionOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleIamPolicyBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleIamPolicyBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewDataGoogleIamPolicyBindingConditionOutputReferenceParameters(ter
 
 	return nil
 }
-

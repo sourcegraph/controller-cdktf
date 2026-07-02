@@ -98,7 +98,7 @@ func (e *jsiiProxy_EventarcPipelineInputPayloadFormatJsonOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_EventarcPipelineInputPayloadFormatJsonOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EventarcPipelineInputPayloadFormatJsonOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewEventarcPipelineInputPayloadFormatJsonOutputReferenceParameters(
 
 	return nil
 }
-

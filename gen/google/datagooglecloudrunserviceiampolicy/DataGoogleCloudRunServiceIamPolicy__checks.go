@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataGoogleCloudRunServiceIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataGoogleCloudRunServiceIamPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataGoogleCloudRunServiceIamPolicy_GenerateConfigForImportParameter
 	return nil
 }
 
-func validateDataGoogleCloudRunServiceIamPolicy_IsConstructParameters(x interface{}) error {
+func validateDataGoogleCloudRunServiceIamPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataGoogleCloudRunServiceIamPolicy_IsConstructParameters(x interfac
 	return nil
 }
 
-func validateDataGoogleCloudRunServiceIamPolicy_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataGoogleCloudRunServiceIamPolicy_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataGoogleCloudRunServiceIamPolicy_IsTerraformDataSourceParameters(
 	return nil
 }
 
-func validateDataGoogleCloudRunServiceIamPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateDataGoogleCloudRunServiceIamPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func validateDataGoogleCloudRunServiceIamPolicy_IsTerraformElementParameters(x i
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleCloudRunServiceIamPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleCloudRunServiceIamPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -266,4 +266,3 @@ func validateNewDataGoogleCloudRunServiceIamPolicyParameters(scope constructs.Co
 
 	return nil
 }
-

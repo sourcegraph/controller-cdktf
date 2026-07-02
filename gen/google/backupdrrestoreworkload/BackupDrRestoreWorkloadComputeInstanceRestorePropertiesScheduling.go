@@ -1,9 +1,8 @@
 package backupdrrestoreworkload
 
-
 type BackupDrRestoreWorkloadComputeInstanceRestorePropertiesScheduling struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_restore_workload#automatic_restart BackupDrRestoreWorkload#automatic_restart}.
-	AutomaticRestart interface{} `field:"optional" json:"automaticRestart" yaml:"automaticRestart"`
+	AutomaticRestart any `field:"optional" json:"automaticRestart" yaml:"automaticRestart"`
 	// Possible values: ["INSTANCE_TERMINATION_ACTION_UNSPECIFIED", "DELETE", "STOP"].
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_restore_workload#instance_termination_action BackupDrRestoreWorkload#instance_termination_action}
@@ -21,13 +20,13 @@ type BackupDrRestoreWorkloadComputeInstanceRestorePropertiesScheduling struct {
 	// node_affinities block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_restore_workload#node_affinities BackupDrRestoreWorkload#node_affinities}
-	NodeAffinities interface{} `field:"optional" json:"nodeAffinities" yaml:"nodeAffinities"`
+	NodeAffinities any `field:"optional" json:"nodeAffinities" yaml:"nodeAffinities"`
 	// Possible values: ["ON_HOST_MAINTENANCE_UNSPECIFIED", "TERMINATE", "MIGRATE"].
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_restore_workload#on_host_maintenance BackupDrRestoreWorkload#on_host_maintenance}
 	OnHostMaintenance *string `field:"optional" json:"onHostMaintenance" yaml:"onHostMaintenance"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_restore_workload#preemptible BackupDrRestoreWorkload#preemptible}.
-	Preemptible interface{} `field:"optional" json:"preemptible" yaml:"preemptible"`
+	Preemptible any `field:"optional" json:"preemptible" yaml:"preemptible"`
 	// Possible values: ["PROVISIONING_MODEL_UNSPECIFIED", "STANDARD", "SPOT"].
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_restore_workload#provisioning_model BackupDrRestoreWorkload#provisioning_model}
@@ -35,4 +34,3 @@ type BackupDrRestoreWorkloadComputeInstanceRestorePropertiesScheduling struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_restore_workload#termination_time BackupDrRestoreWorkload#termination_time}.
 	TerminationTime *string `field:"optional" json:"terminationTime" yaml:"terminationTime"`
 }
-

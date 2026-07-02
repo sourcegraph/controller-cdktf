@@ -142,7 +142,7 @@ func (b *jsiiProxy_BigqueryDatasetAccessOutputReference) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryDatasetAccessOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryDatasetAccessOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -231,7 +231,7 @@ func (j *jsiiProxy_BigqueryDatasetAccessOutputReference) validateSetIamMemberPar
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryDatasetAccessOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryDatasetAccessOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -314,4 +314,3 @@ func validateNewBigqueryDatasetAccessOutputReferenceParameters(terraformResource
 
 	return nil
 }
-

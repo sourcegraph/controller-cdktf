@@ -12,9 +12,9 @@ type ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference interface
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -37,33 +37,33 @@ type ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference interface
 	PhraseMatchersInput() *[]*string
 	QaConfig() ContactCenterInsightsAnalysisRuleAnnotatorSelectorQaConfigOutputReference
 	QaConfigInput() *ContactCenterInsightsAnalysisRuleAnnotatorSelectorQaConfig
-	RunEntityAnnotator() interface{}
-	SetRunEntityAnnotator(val interface{})
-	RunEntityAnnotatorInput() interface{}
-	RunIntentAnnotator() interface{}
-	SetRunIntentAnnotator(val interface{})
-	RunIntentAnnotatorInput() interface{}
-	RunInterruptionAnnotator() interface{}
-	SetRunInterruptionAnnotator(val interface{})
-	RunInterruptionAnnotatorInput() interface{}
-	RunIssueModelAnnotator() interface{}
-	SetRunIssueModelAnnotator(val interface{})
-	RunIssueModelAnnotatorInput() interface{}
-	RunPhraseMatcherAnnotator() interface{}
-	SetRunPhraseMatcherAnnotator(val interface{})
-	RunPhraseMatcherAnnotatorInput() interface{}
-	RunQaAnnotator() interface{}
-	SetRunQaAnnotator(val interface{})
-	RunQaAnnotatorInput() interface{}
-	RunSentimentAnnotator() interface{}
-	SetRunSentimentAnnotator(val interface{})
-	RunSentimentAnnotatorInput() interface{}
-	RunSilenceAnnotator() interface{}
-	SetRunSilenceAnnotator(val interface{})
-	RunSilenceAnnotatorInput() interface{}
-	RunSummarizationAnnotator() interface{}
-	SetRunSummarizationAnnotator(val interface{})
-	RunSummarizationAnnotatorInput() interface{}
+	RunEntityAnnotator() any
+	SetRunEntityAnnotator(val any)
+	RunEntityAnnotatorInput() any
+	RunIntentAnnotator() any
+	SetRunIntentAnnotator(val any)
+	RunIntentAnnotatorInput() any
+	RunInterruptionAnnotator() any
+	SetRunInterruptionAnnotator(val any)
+	RunInterruptionAnnotatorInput() any
+	RunIssueModelAnnotator() any
+	SetRunIssueModelAnnotator(val any)
+	RunIssueModelAnnotatorInput() any
+	RunPhraseMatcherAnnotator() any
+	SetRunPhraseMatcherAnnotator(val any)
+	RunPhraseMatcherAnnotatorInput() any
+	RunQaAnnotator() any
+	SetRunQaAnnotator(val any)
+	RunQaAnnotatorInput() any
+	RunSentimentAnnotator() any
+	SetRunSentimentAnnotator(val any)
+	RunSentimentAnnotatorInput() any
+	RunSilenceAnnotator() any
+	SetRunSilenceAnnotator(val any)
+	RunSilenceAnnotatorInput() any
+	RunSummarizationAnnotator() any
+	SetRunSummarizationAnnotator(val any)
+	RunSummarizationAnnotatorInput() any
 	SummarizationConfig() ContactCenterInsightsAnalysisRuleAnnotatorSelectorSummarizationConfigOutputReference
 	SummarizationConfigInput() *ContactCenterInsightsAnalysisRuleAnnotatorSelectorSummarizationConfig
 	// Experimental.
@@ -77,7 +77,7 @@ type ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference interface
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -115,7 +115,7 @@ type ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference interface
 	ResetSummarizationConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -128,8 +128,8 @@ type jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -238,8 +238,8 @@ func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) RunEntityAnnotator() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) RunEntityAnnotator() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"runEntityAnnotator",
@@ -248,8 +248,8 @@ func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) RunEntityAnnotatorInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) RunEntityAnnotatorInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"runEntityAnnotatorInput",
@@ -258,8 +258,8 @@ func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) RunIntentAnnotator() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) RunIntentAnnotator() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"runIntentAnnotator",
@@ -268,8 +268,8 @@ func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) RunIntentAnnotatorInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) RunIntentAnnotatorInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"runIntentAnnotatorInput",
@@ -278,8 +278,8 @@ func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) RunInterruptionAnnotator() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) RunInterruptionAnnotator() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"runInterruptionAnnotator",
@@ -288,8 +288,8 @@ func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) RunInterruptionAnnotatorInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) RunInterruptionAnnotatorInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"runInterruptionAnnotatorInput",
@@ -298,8 +298,8 @@ func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) RunIssueModelAnnotator() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) RunIssueModelAnnotator() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"runIssueModelAnnotator",
@@ -308,8 +308,8 @@ func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) RunIssueModelAnnotatorInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) RunIssueModelAnnotatorInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"runIssueModelAnnotatorInput",
@@ -318,8 +318,8 @@ func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) RunPhraseMatcherAnnotator() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) RunPhraseMatcherAnnotator() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"runPhraseMatcherAnnotator",
@@ -328,8 +328,8 @@ func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) RunPhraseMatcherAnnotatorInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) RunPhraseMatcherAnnotatorInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"runPhraseMatcherAnnotatorInput",
@@ -338,8 +338,8 @@ func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) RunQaAnnotator() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) RunQaAnnotator() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"runQaAnnotator",
@@ -348,8 +348,8 @@ func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) RunQaAnnotatorInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) RunQaAnnotatorInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"runQaAnnotatorInput",
@@ -358,8 +358,8 @@ func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) RunSentimentAnnotator() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) RunSentimentAnnotator() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"runSentimentAnnotator",
@@ -368,8 +368,8 @@ func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) RunSentimentAnnotatorInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) RunSentimentAnnotatorInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"runSentimentAnnotatorInput",
@@ -378,8 +378,8 @@ func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) RunSilenceAnnotator() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) RunSilenceAnnotator() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"runSilenceAnnotator",
@@ -388,8 +388,8 @@ func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) RunSilenceAnnotatorInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) RunSilenceAnnotatorInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"runSilenceAnnotatorInput",
@@ -398,8 +398,8 @@ func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) RunSummarizationAnnotator() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) RunSummarizationAnnotator() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"runSummarizationAnnotator",
@@ -408,8 +408,8 @@ func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) RunSummarizationAnnotatorInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) RunSummarizationAnnotatorInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"runSummarizationAnnotatorInput",
@@ -458,7 +458,6 @@ func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputRefer
 	return returns
 }
 
-
 func NewContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference {
 	_init_.Initialize()
 
@@ -469,7 +468,7 @@ func NewContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference(terraf
 
 	_jsii_.Create(
 		"@cdktf/provider-google.contactCenterInsightsAnalysisRule.ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -481,12 +480,12 @@ func NewContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference_Overri
 
 	_jsii_.Create(
 		"@cdktf/provider-google.contactCenterInsightsAnalysisRule.ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -497,7 +496,7 @@ func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputRefer
 	)
 }
 
-func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -508,7 +507,7 @@ func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputRefer
 	)
 }
 
-func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference)SetInternalValue(val *ContactCenterInsightsAnalysisRuleAnnotatorSelector) {
+func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) SetInternalValue(val *ContactCenterInsightsAnalysisRuleAnnotatorSelector) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -519,7 +518,7 @@ func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputRefer
 	)
 }
 
-func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference)SetIssueModels(val *[]*string) {
+func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) SetIssueModels(val *[]*string) {
 	if err := j.validateSetIssueModelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -530,7 +529,7 @@ func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputRefer
 	)
 }
 
-func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference)SetPhraseMatchers(val *[]*string) {
+func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) SetPhraseMatchers(val *[]*string) {
 	if err := j.validateSetPhraseMatchersParameters(val); err != nil {
 		panic(err)
 	}
@@ -541,7 +540,7 @@ func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputRefer
 	)
 }
 
-func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference)SetRunEntityAnnotator(val interface{}) {
+func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) SetRunEntityAnnotator(val any) {
 	if err := j.validateSetRunEntityAnnotatorParameters(val); err != nil {
 		panic(err)
 	}
@@ -552,7 +551,7 @@ func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputRefer
 	)
 }
 
-func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference)SetRunIntentAnnotator(val interface{}) {
+func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) SetRunIntentAnnotator(val any) {
 	if err := j.validateSetRunIntentAnnotatorParameters(val); err != nil {
 		panic(err)
 	}
@@ -563,7 +562,7 @@ func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputRefer
 	)
 }
 
-func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference)SetRunInterruptionAnnotator(val interface{}) {
+func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) SetRunInterruptionAnnotator(val any) {
 	if err := j.validateSetRunInterruptionAnnotatorParameters(val); err != nil {
 		panic(err)
 	}
@@ -574,7 +573,7 @@ func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputRefer
 	)
 }
 
-func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference)SetRunIssueModelAnnotator(val interface{}) {
+func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) SetRunIssueModelAnnotator(val any) {
 	if err := j.validateSetRunIssueModelAnnotatorParameters(val); err != nil {
 		panic(err)
 	}
@@ -585,7 +584,7 @@ func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputRefer
 	)
 }
 
-func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference)SetRunPhraseMatcherAnnotator(val interface{}) {
+func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) SetRunPhraseMatcherAnnotator(val any) {
 	if err := j.validateSetRunPhraseMatcherAnnotatorParameters(val); err != nil {
 		panic(err)
 	}
@@ -596,7 +595,7 @@ func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputRefer
 	)
 }
 
-func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference)SetRunQaAnnotator(val interface{}) {
+func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) SetRunQaAnnotator(val any) {
 	if err := j.validateSetRunQaAnnotatorParameters(val); err != nil {
 		panic(err)
 	}
@@ -607,7 +606,7 @@ func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputRefer
 	)
 }
 
-func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference)SetRunSentimentAnnotator(val interface{}) {
+func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) SetRunSentimentAnnotator(val any) {
 	if err := j.validateSetRunSentimentAnnotatorParameters(val); err != nil {
 		panic(err)
 	}
@@ -618,7 +617,7 @@ func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputRefer
 	)
 }
 
-func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference)SetRunSilenceAnnotator(val interface{}) {
+func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) SetRunSilenceAnnotator(val any) {
 	if err := j.validateSetRunSilenceAnnotatorParameters(val); err != nil {
 		panic(err)
 	}
@@ -629,7 +628,7 @@ func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputRefer
 	)
 }
 
-func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference)SetRunSummarizationAnnotator(val interface{}) {
+func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) SetRunSummarizationAnnotator(val any) {
 	if err := j.validateSetRunSummarizationAnnotatorParameters(val); err != nil {
 		panic(err)
 	}
@@ -640,7 +639,7 @@ func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputRefer
 	)
 }
 
-func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -651,7 +650,7 @@ func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputRefer
 	)
 }
 
-func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -675,16 +674,16 @@ func (c *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputRefer
 	return returns
 }
 
-func (c *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -700,7 +699,7 @@ func (c *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputRefer
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -716,7 +715,7 @@ func (c *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputRefer
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -732,7 +731,7 @@ func (c *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputRefer
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -748,7 +747,7 @@ func (c *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputRefer
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -764,7 +763,7 @@ func (c *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputRefer
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -780,7 +779,7 @@ func (c *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputRefer
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -796,7 +795,7 @@ func (c *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputRefer
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -812,7 +811,7 @@ func (c *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputRefer
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -841,7 +840,7 @@ func (c *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputRefer
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -855,7 +854,7 @@ func (c *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputRefer
 	_jsii_.InvokeVoid(
 		c,
 		"putQaConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -866,7 +865,7 @@ func (c *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputRefer
 	_jsii_.InvokeVoid(
 		c,
 		"putSummarizationConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -974,16 +973,16 @@ func (c *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputRefer
 	)
 }
 
-func (c *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -1002,4 +1001,3 @@ func (c *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputRefer
 
 	return returns
 }
-

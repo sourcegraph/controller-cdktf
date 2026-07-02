@@ -101,7 +101,7 @@ func (b *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference) 
 	return nil
 }
 
-func (b *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference) validatePutGuestOsFeatureParameters(value interface{}) error {
+func (b *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference) validatePutGuestOsFeatureParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -132,7 +132,7 @@ func (b *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference) 
 	return nil
 }
 
-func (b *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference) validatePutLabelsParameters(value interface{}) error {
+func (b *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference) validatePutLabelsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -163,7 +163,7 @@ func (b *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference) 
 	return nil
 }
 
-func (b *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference) validatePutResourceManagerTagsParameters(value interface{}) error {
+func (b *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference) validatePutResourceManagerTagsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -218,7 +218,7 @@ func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -291,7 +291,7 @@ func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference) validateSetEnableConfidentialComputeParameters(val interface{}) error {
+func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference) validateSetEnableConfidentialComputeParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -418,4 +418,3 @@ func validateNewBackupDrRestoreWorkloadDiskRestorePropertiesOutputReferenceParam
 
 	return nil
 }
-

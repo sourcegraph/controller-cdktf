@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeSnapshot.ComputeSnapshot",
-		reflect.TypeOf((*ComputeSnapshot)(nil)).Elem(),
+		reflect.TypeFor[ComputeSnapshot](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -106,7 +106,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zone", GoGetter: "Zone"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneInput", GoGetter: "ZoneInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeSnapshot{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -114,15 +114,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeSnapshot.ComputeSnapshotConfig",
-		reflect.TypeOf((*ComputeSnapshotConfig)(nil)).Elem(),
+		reflect.TypeFor[ComputeSnapshotConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeSnapshot.ComputeSnapshotSnapshotEncryptionKey",
-		reflect.TypeOf((*ComputeSnapshotSnapshotEncryptionKey)(nil)).Elem(),
+		reflect.TypeFor[ComputeSnapshotSnapshotEncryptionKey](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeSnapshot.ComputeSnapshotSnapshotEncryptionKeyOutputReference",
-		reflect.TypeOf((*ComputeSnapshotSnapshotEncryptionKeyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeSnapshotSnapshotEncryptionKeyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -159,7 +159,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeSnapshotSnapshotEncryptionKeyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -167,11 +167,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeSnapshot.ComputeSnapshotSourceDiskEncryptionKey",
-		reflect.TypeOf((*ComputeSnapshotSourceDiskEncryptionKey)(nil)).Elem(),
+		reflect.TypeFor[ComputeSnapshotSourceDiskEncryptionKey](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeSnapshot.ComputeSnapshotSourceDiskEncryptionKeyOutputReference",
-		reflect.TypeOf((*ComputeSnapshotSourceDiskEncryptionKeyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeSnapshotSourceDiskEncryptionKeyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -207,7 +207,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeSnapshotSourceDiskEncryptionKeyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -215,11 +215,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeSnapshot.ComputeSnapshotTimeouts",
-		reflect.TypeOf((*ComputeSnapshotTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ComputeSnapshotTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeSnapshot.ComputeSnapshotTimeoutsOutputReference",
-		reflect.TypeOf((*ComputeSnapshotTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeSnapshotTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -252,7 +252,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeSnapshotTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

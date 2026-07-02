@@ -1,6 +1,5 @@
 package backupdrrestoreworkload
 
-
 type BackupDrRestoreWorkloadDiskRestoreProperties struct {
 	// Required. Name of the disk.
 	//
@@ -33,15 +32,15 @@ type BackupDrRestoreWorkloadDiskRestoreProperties struct {
 	// Optional. Indicates whether this disk is using confidential compute mode.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_restore_workload#enable_confidential_compute BackupDrRestoreWorkload#enable_confidential_compute}
-	EnableConfidentialCompute interface{} `field:"optional" json:"enableConfidentialCompute" yaml:"enableConfidentialCompute"`
+	EnableConfidentialCompute any `field:"optional" json:"enableConfidentialCompute" yaml:"enableConfidentialCompute"`
 	// guest_os_feature block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_restore_workload#guest_os_feature BackupDrRestoreWorkload#guest_os_feature}
-	GuestOsFeature interface{} `field:"optional" json:"guestOsFeature" yaml:"guestOsFeature"`
+	GuestOsFeature any `field:"optional" json:"guestOsFeature" yaml:"guestOsFeature"`
 	// labels block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_restore_workload#labels BackupDrRestoreWorkload#labels}
-	Labels interface{} `field:"optional" json:"labels" yaml:"labels"`
+	Labels any `field:"optional" json:"labels" yaml:"labels"`
 	// Optional. A list of publicly available licenses that are applicable to this backup.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_restore_workload#licenses BackupDrRestoreWorkload#licenses}
@@ -61,7 +60,7 @@ type BackupDrRestoreWorkloadDiskRestoreProperties struct {
 	// resource_manager_tags block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_restore_workload#resource_manager_tags BackupDrRestoreWorkload#resource_manager_tags}
-	ResourceManagerTags interface{} `field:"optional" json:"resourceManagerTags" yaml:"resourceManagerTags"`
+	ResourceManagerTags any `field:"optional" json:"resourceManagerTags" yaml:"resourceManagerTags"`
 	// Optional. Resource policies applied to this disk.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_restore_workload#resource_policy BackupDrRestoreWorkload#resource_policy}
@@ -71,4 +70,3 @@ type BackupDrRestoreWorkloadDiskRestoreProperties struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_restore_workload#storage_pool BackupDrRestoreWorkload#storage_pool}
 	StoragePool *string `field:"optional" json:"storagePool" yaml:"storagePool"`
 }
-

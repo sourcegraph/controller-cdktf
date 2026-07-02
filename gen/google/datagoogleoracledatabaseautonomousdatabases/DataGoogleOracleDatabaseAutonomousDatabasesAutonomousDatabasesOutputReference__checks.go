@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabasesAutonomousDatabase
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabasesAutonomousDatabasesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabasesAutonomousDatabasesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleOracleDatabaseAutonomousDatabasesAutonomousDatabasesOu
 
 	return nil
 }
-

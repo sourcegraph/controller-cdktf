@@ -19,7 +19,7 @@ func (c *jsiiProxy_ContactCenterInsightsAnalysisRule) validateAddMoveTargetParam
 	return nil
 }
 
-func (c *jsiiProxy_ContactCenterInsightsAnalysisRule) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_ContactCenterInsightsAnalysisRule) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_ContactCenterInsightsAnalysisRule) validateMoveFromIdParamete
 	return nil
 }
 
-func (c *jsiiProxy_ContactCenterInsightsAnalysisRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_ContactCenterInsightsAnalysisRule) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateContactCenterInsightsAnalysisRule_GenerateConfigForImportParameters
 	return nil
 }
 
-func validateContactCenterInsightsAnalysisRule_IsConstructParameters(x interface{}) error {
+func validateContactCenterInsightsAnalysisRule_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateContactCenterInsightsAnalysisRule_IsConstructParameters(x interface
 	return nil
 }
 
-func validateContactCenterInsightsAnalysisRule_IsTerraformElementParameters(x interface{}) error {
+func validateContactCenterInsightsAnalysisRule_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateContactCenterInsightsAnalysisRule_IsTerraformElementParameters(x in
 	return nil
 }
 
-func validateContactCenterInsightsAnalysisRule_IsTerraformResourceParameters(x interface{}) error {
+func validateContactCenterInsightsAnalysisRule_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func validateContactCenterInsightsAnalysisRule_IsTerraformResourceParameters(x i
 	return nil
 }
 
-func (j *jsiiProxy_ContactCenterInsightsAnalysisRule) validateSetActiveParameters(val interface{}) error {
+func (j *jsiiProxy_ContactCenterInsightsAnalysisRule) validateSetActiveParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -294,7 +294,7 @@ func (j *jsiiProxy_ContactCenterInsightsAnalysisRule) validateSetAnalysisPercent
 	return nil
 }
 
-func (j *jsiiProxy_ContactCenterInsightsAnalysisRule) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ContactCenterInsightsAnalysisRule) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -335,7 +335,7 @@ func (j *jsiiProxy_ContactCenterInsightsAnalysisRule) validateSetConversationFil
 	return nil
 }
 
-func (j *jsiiProxy_ContactCenterInsightsAnalysisRule) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ContactCenterInsightsAnalysisRule) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -432,7 +432,7 @@ func (j *jsiiProxy_ContactCenterInsightsAnalysisRule) validateSetProjectParamete
 	return nil
 }
 
-func (j *jsiiProxy_ContactCenterInsightsAnalysisRule) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ContactCenterInsightsAnalysisRule) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -496,4 +496,3 @@ func validateNewContactCenterInsightsAnalysisRuleParameters(scope constructs.Con
 
 	return nil
 }
-

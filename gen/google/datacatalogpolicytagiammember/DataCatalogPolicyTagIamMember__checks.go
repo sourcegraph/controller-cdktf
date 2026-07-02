@@ -19,7 +19,7 @@ func (d *jsiiProxy_DataCatalogPolicyTagIamMember) validateAddMoveTargetParameter
 	return nil
 }
 
-func (d *jsiiProxy_DataCatalogPolicyTagIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataCatalogPolicyTagIamMember) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (d *jsiiProxy_DataCatalogPolicyTagIamMember) validateMoveFromIdParameters(i
 	return nil
 }
 
-func (d *jsiiProxy_DataCatalogPolicyTagIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (d *jsiiProxy_DataCatalogPolicyTagIamMember) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateDataCatalogPolicyTagIamMember_GenerateConfigForImportParameters(sco
 	return nil
 }
 
-func validateDataCatalogPolicyTagIamMember_IsConstructParameters(x interface{}) error {
+func validateDataCatalogPolicyTagIamMember_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateDataCatalogPolicyTagIamMember_IsConstructParameters(x interface{}) 
 	return nil
 }
 
-func validateDataCatalogPolicyTagIamMember_IsTerraformElementParameters(x interface{}) error {
+func validateDataCatalogPolicyTagIamMember_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateDataCatalogPolicyTagIamMember_IsTerraformElementParameters(x interf
 	return nil
 }
 
-func validateDataCatalogPolicyTagIamMember_IsTerraformResourceParameters(x interface{}) error {
+func validateDataCatalogPolicyTagIamMember_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateDataCatalogPolicyTagIamMember_IsTerraformResourceParameters(x inter
 	return nil
 }
 
-func (j *jsiiProxy_DataCatalogPolicyTagIamMember) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_DataCatalogPolicyTagIamMember) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_DataCatalogPolicyTagIamMember) validateSetConnectionParameter
 	return nil
 }
 
-func (j *jsiiProxy_DataCatalogPolicyTagIamMember) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataCatalogPolicyTagIamMember) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -377,7 +377,7 @@ func (j *jsiiProxy_DataCatalogPolicyTagIamMember) validateSetPolicyTagParameters
 	return nil
 }
 
-func (j *jsiiProxy_DataCatalogPolicyTagIamMember) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_DataCatalogPolicyTagIamMember) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -449,4 +449,3 @@ func validateNewDataCatalogPolicyTagIamMemberParameters(scope constructs.Constru
 
 	return nil
 }
-

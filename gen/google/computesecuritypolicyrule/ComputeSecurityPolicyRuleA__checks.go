@@ -19,7 +19,7 @@ func (c *jsiiProxy_ComputeSecurityPolicyRuleA) validateAddMoveTargetParameters(m
 	return nil
 }
 
-func (c *jsiiProxy_ComputeSecurityPolicyRuleA) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_ComputeSecurityPolicyRuleA) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_ComputeSecurityPolicyRuleA) validateMoveFromIdParameters(id *
 	return nil
 }
 
-func (c *jsiiProxy_ComputeSecurityPolicyRuleA) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_ComputeSecurityPolicyRuleA) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -286,7 +286,7 @@ func validateComputeSecurityPolicyRuleA_GenerateConfigForImportParameters(scope 
 	return nil
 }
 
-func validateComputeSecurityPolicyRuleA_IsConstructParameters(x interface{}) error {
+func validateComputeSecurityPolicyRuleA_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -294,7 +294,7 @@ func validateComputeSecurityPolicyRuleA_IsConstructParameters(x interface{}) err
 	return nil
 }
 
-func validateComputeSecurityPolicyRuleA_IsTerraformElementParameters(x interface{}) error {
+func validateComputeSecurityPolicyRuleA_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -302,7 +302,7 @@ func validateComputeSecurityPolicyRuleA_IsTerraformElementParameters(x interface
 	return nil
 }
 
-func validateComputeSecurityPolicyRuleA_IsTerraformResourceParameters(x interface{}) error {
+func validateComputeSecurityPolicyRuleA_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -318,7 +318,7 @@ func (j *jsiiProxy_ComputeSecurityPolicyRuleA) validateSetActionParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_ComputeSecurityPolicyRuleA) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeSecurityPolicyRuleA) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -351,7 +351,7 @@ func (j *jsiiProxy_ComputeSecurityPolicyRuleA) validateSetConnectionParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_ComputeSecurityPolicyRuleA) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeSecurityPolicyRuleA) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -432,7 +432,7 @@ func (j *jsiiProxy_ComputeSecurityPolicyRuleA) validateSetLifecycleParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_ComputeSecurityPolicyRuleA) validateSetPreviewParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeSecurityPolicyRuleA) validateSetPreviewParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -468,7 +468,7 @@ func (j *jsiiProxy_ComputeSecurityPolicyRuleA) validateSetProjectParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_ComputeSecurityPolicyRuleA) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ComputeSecurityPolicyRuleA) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -540,4 +540,3 @@ func validateNewComputeSecurityPolicyRuleAParameters(scope constructs.Construct,
 
 	return nil
 }
-

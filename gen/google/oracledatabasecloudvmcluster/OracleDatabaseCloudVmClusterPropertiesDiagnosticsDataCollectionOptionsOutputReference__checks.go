@@ -98,7 +98,7 @@ func (o *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCollecti
 	return nil
 }
 
-func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCollectionOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCollectionOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCollecti
 	return nil
 }
 
-func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCollectionOptionsOutputReference) validateSetDiagnosticsEventsEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCollectionOptionsOutputReference) validateSetDiagnosticsEventsEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCollecti
 	return nil
 }
 
-func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCollectionOptionsOutputReference) validateSetHealthMonitoringEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCollectionOptionsOutputReference) validateSetHealthMonitoringEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -203,7 +203,7 @@ func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCollecti
 	return nil
 }
 
-func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCollectionOptionsOutputReference) validateSetIncidentLogsEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCollectionOptionsOutputReference) validateSetIncidentLogsEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -258,4 +258,3 @@ func validateNewOracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCollectionO
 
 	return nil
 }
-

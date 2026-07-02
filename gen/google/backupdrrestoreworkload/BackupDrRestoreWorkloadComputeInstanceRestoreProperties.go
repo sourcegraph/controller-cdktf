@@ -1,6 +1,5 @@
 package backupdrrestoreworkload
 
-
 type BackupDrRestoreWorkloadComputeInstanceRestoreProperties struct {
 	// Required. Name of the compute instance.
 	//
@@ -17,7 +16,7 @@ type BackupDrRestoreWorkloadComputeInstanceRestoreProperties struct {
 	// Optional. Allows this instance to send and receive packets with non-matching destination or source IPs.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_restore_workload#can_ip_forward BackupDrRestoreWorkload#can_ip_forward}
-	CanIpForward interface{} `field:"optional" json:"canIpForward" yaml:"canIpForward"`
+	CanIpForward any `field:"optional" json:"canIpForward" yaml:"canIpForward"`
 	// confidential_instance_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_restore_workload#confidential_instance_config BackupDrRestoreWorkload#confidential_instance_config}
@@ -25,7 +24,7 @@ type BackupDrRestoreWorkloadComputeInstanceRestoreProperties struct {
 	// Optional. Whether the resource should be protected against deletion.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_restore_workload#deletion_protection BackupDrRestoreWorkload#deletion_protection}
-	DeletionProtection interface{} `field:"optional" json:"deletionProtection" yaml:"deletionProtection"`
+	DeletionProtection any `field:"optional" json:"deletionProtection" yaml:"deletionProtection"`
 	// Optional. An optional description of this resource.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_restore_workload#description BackupDrRestoreWorkload#description}
@@ -33,7 +32,7 @@ type BackupDrRestoreWorkloadComputeInstanceRestoreProperties struct {
 	// disks block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_restore_workload#disks BackupDrRestoreWorkload#disks}
-	Disks interface{} `field:"optional" json:"disks" yaml:"disks"`
+	Disks any `field:"optional" json:"disks" yaml:"disks"`
 	// display_device block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_restore_workload#display_device BackupDrRestoreWorkload#display_device}
@@ -41,7 +40,7 @@ type BackupDrRestoreWorkloadComputeInstanceRestoreProperties struct {
 	// guest_accelerators block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_restore_workload#guest_accelerators BackupDrRestoreWorkload#guest_accelerators}
-	GuestAccelerators interface{} `field:"optional" json:"guestAccelerators" yaml:"guestAccelerators"`
+	GuestAccelerators any `field:"optional" json:"guestAccelerators" yaml:"guestAccelerators"`
 	// Optional. Specifies the hostname of the instance.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_restore_workload#hostname BackupDrRestoreWorkload#hostname}
@@ -57,7 +56,7 @@ type BackupDrRestoreWorkloadComputeInstanceRestoreProperties struct {
 	// labels block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_restore_workload#labels BackupDrRestoreWorkload#labels}
-	Labels interface{} `field:"optional" json:"labels" yaml:"labels"`
+	Labels any `field:"optional" json:"labels" yaml:"labels"`
 	// Optional. Full or partial URL of the machine type resource to use for this instance.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_restore_workload#machine_type BackupDrRestoreWorkload#machine_type}
@@ -73,7 +72,7 @@ type BackupDrRestoreWorkloadComputeInstanceRestoreProperties struct {
 	// network_interfaces block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_restore_workload#network_interfaces BackupDrRestoreWorkload#network_interfaces}
-	NetworkInterfaces interface{} `field:"optional" json:"networkInterfaces" yaml:"networkInterfaces"`
+	NetworkInterfaces any `field:"optional" json:"networkInterfaces" yaml:"networkInterfaces"`
 	// network_performance_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_restore_workload#network_performance_config BackupDrRestoreWorkload#network_performance_config}
@@ -97,7 +96,7 @@ type BackupDrRestoreWorkloadComputeInstanceRestoreProperties struct {
 	// service_accounts block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_restore_workload#service_accounts BackupDrRestoreWorkload#service_accounts}
-	ServiceAccounts interface{} `field:"optional" json:"serviceAccounts" yaml:"serviceAccounts"`
+	ServiceAccounts any `field:"optional" json:"serviceAccounts" yaml:"serviceAccounts"`
 	// shielded_instance_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_restore_workload#shielded_instance_config BackupDrRestoreWorkload#shielded_instance_config}
@@ -107,4 +106,3 @@ type BackupDrRestoreWorkloadComputeInstanceRestoreProperties struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_restore_workload#tags BackupDrRestoreWorkload#tags}
 	Tags *BackupDrRestoreWorkloadComputeInstanceRestorePropertiesTags `field:"optional" json:"tags" yaml:"tags"`
 }
-

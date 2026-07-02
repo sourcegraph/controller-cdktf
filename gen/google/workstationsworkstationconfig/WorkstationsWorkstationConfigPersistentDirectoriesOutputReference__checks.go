@@ -120,7 +120,7 @@ func (w *jsiiProxy_WorkstationsWorkstationConfigPersistentDirectoriesOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_WorkstationsWorkstationConfigPersistentDirectoriesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_WorkstationsWorkstationConfigPersistentDirectoriesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -185,7 +185,7 @@ func (j *jsiiProxy_WorkstationsWorkstationConfigPersistentDirectoriesOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_WorkstationsWorkstationConfigPersistentDirectoriesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_WorkstationsWorkstationConfigPersistentDirectoriesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -252,4 +252,3 @@ func validateNewWorkstationsWorkstationConfigPersistentDirectoriesOutputReferenc
 
 	return nil
 }
-

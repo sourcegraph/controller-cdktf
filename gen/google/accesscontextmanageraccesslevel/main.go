@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.accessContextManagerAccessLevel.AccessContextManagerAccessLevel",
-		reflect.TypeOf((*AccessContextManagerAccessLevel)(nil)).Elem(),
+		reflect.TypeFor[AccessContextManagerAccessLevel](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,7 +77,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessContextManagerAccessLevel{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -85,23 +85,23 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelBasic",
-		reflect.TypeOf((*AccessContextManagerAccessLevelBasic)(nil)).Elem(),
+		reflect.TypeFor[AccessContextManagerAccessLevelBasic](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelBasicConditions",
-		reflect.TypeOf((*AccessContextManagerAccessLevelBasicConditions)(nil)).Elem(),
+		reflect.TypeFor[AccessContextManagerAccessLevelBasicConditions](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelBasicConditionsDevicePolicy",
-		reflect.TypeOf((*AccessContextManagerAccessLevelBasicConditionsDevicePolicy)(nil)).Elem(),
+		reflect.TypeFor[AccessContextManagerAccessLevelBasicConditionsDevicePolicy](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelBasicConditionsDevicePolicyOsConstraints",
-		reflect.TypeOf((*AccessContextManagerAccessLevelBasicConditionsDevicePolicyOsConstraints)(nil)).Elem(),
+		reflect.TypeFor[AccessContextManagerAccessLevelBasicConditionsDevicePolicyOsConstraints](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelBasicConditionsDevicePolicyOsConstraintsList",
-		reflect.TypeOf((*AccessContextManagerAccessLevelBasicConditionsDevicePolicyOsConstraintsList)(nil)).Elem(),
+		reflect.TypeFor[AccessContextManagerAccessLevelBasicConditionsDevicePolicyOsConstraintsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -115,7 +115,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessContextManagerAccessLevelBasicConditionsDevicePolicyOsConstraintsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -123,7 +123,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelBasicConditionsDevicePolicyOsConstraintsOutputReference",
-		reflect.TypeOf((*AccessContextManagerAccessLevelBasicConditionsDevicePolicyOsConstraintsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AccessContextManagerAccessLevelBasicConditionsDevicePolicyOsConstraintsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -155,7 +155,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessContextManagerAccessLevelBasicConditionsDevicePolicyOsConstraintsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -163,7 +163,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelBasicConditionsDevicePolicyOutputReference",
-		reflect.TypeOf((*AccessContextManagerAccessLevelBasicConditionsDevicePolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AccessContextManagerAccessLevelBasicConditionsDevicePolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedDeviceManagementLevels", GoGetter: "AllowedDeviceManagementLevels"},
 			_jsii_.MemberProperty{JsiiProperty: "allowedDeviceManagementLevelsInput", GoGetter: "AllowedDeviceManagementLevelsInput"},
@@ -206,7 +206,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessContextManagerAccessLevelBasicConditionsDevicePolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -214,7 +214,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelBasicConditionsList",
-		reflect.TypeOf((*AccessContextManagerAccessLevelBasicConditionsList)(nil)).Elem(),
+		reflect.TypeFor[AccessContextManagerAccessLevelBasicConditionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -228,7 +228,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessContextManagerAccessLevelBasicConditionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -236,7 +236,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelBasicConditionsOutputReference",
-		reflect.TypeOf((*AccessContextManagerAccessLevelBasicConditionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AccessContextManagerAccessLevelBasicConditionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -283,7 +283,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpcNetworkSources", GoGetter: "VpcNetworkSources"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcNetworkSourcesInput", GoGetter: "VpcNetworkSourcesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessContextManagerAccessLevelBasicConditionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -291,11 +291,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelBasicConditionsVpcNetworkSources",
-		reflect.TypeOf((*AccessContextManagerAccessLevelBasicConditionsVpcNetworkSources)(nil)).Elem(),
+		reflect.TypeFor[AccessContextManagerAccessLevelBasicConditionsVpcNetworkSources](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelBasicConditionsVpcNetworkSourcesList",
-		reflect.TypeOf((*AccessContextManagerAccessLevelBasicConditionsVpcNetworkSourcesList)(nil)).Elem(),
+		reflect.TypeFor[AccessContextManagerAccessLevelBasicConditionsVpcNetworkSourcesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -309,7 +309,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessContextManagerAccessLevelBasicConditionsVpcNetworkSourcesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -317,7 +317,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelBasicConditionsVpcNetworkSourcesOutputReference",
-		reflect.TypeOf((*AccessContextManagerAccessLevelBasicConditionsVpcNetworkSourcesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AccessContextManagerAccessLevelBasicConditionsVpcNetworkSourcesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -345,7 +345,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpcSubnetwork", GoGetter: "VpcSubnetwork"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcSubnetworkInput", GoGetter: "VpcSubnetworkInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessContextManagerAccessLevelBasicConditionsVpcNetworkSourcesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -353,11 +353,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelBasicConditionsVpcNetworkSourcesVpcSubnetwork",
-		reflect.TypeOf((*AccessContextManagerAccessLevelBasicConditionsVpcNetworkSourcesVpcSubnetwork)(nil)).Elem(),
+		reflect.TypeFor[AccessContextManagerAccessLevelBasicConditionsVpcNetworkSourcesVpcSubnetwork](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelBasicConditionsVpcNetworkSourcesVpcSubnetworkOutputReference",
-		reflect.TypeOf((*AccessContextManagerAccessLevelBasicConditionsVpcNetworkSourcesVpcSubnetworkOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AccessContextManagerAccessLevelBasicConditionsVpcNetworkSourcesVpcSubnetworkOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -386,7 +386,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpcIpSubnetworks", GoGetter: "VpcIpSubnetworks"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcIpSubnetworksInput", GoGetter: "VpcIpSubnetworksInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessContextManagerAccessLevelBasicConditionsVpcNetworkSourcesVpcSubnetworkOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -394,7 +394,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelBasicOutputReference",
-		reflect.TypeOf((*AccessContextManagerAccessLevelBasicOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AccessContextManagerAccessLevelBasicOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "combiningFunction", GoGetter: "CombiningFunction"},
 			_jsii_.MemberProperty{JsiiProperty: "combiningFunctionInput", GoGetter: "CombiningFunctionInput"},
@@ -424,7 +424,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessContextManagerAccessLevelBasicOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -432,19 +432,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelConfig",
-		reflect.TypeOf((*AccessContextManagerAccessLevelConfig)(nil)).Elem(),
+		reflect.TypeFor[AccessContextManagerAccessLevelConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelCustom",
-		reflect.TypeOf((*AccessContextManagerAccessLevelCustom)(nil)).Elem(),
+		reflect.TypeFor[AccessContextManagerAccessLevelCustom](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelCustomExpr",
-		reflect.TypeOf((*AccessContextManagerAccessLevelCustomExpr)(nil)).Elem(),
+		reflect.TypeFor[AccessContextManagerAccessLevelCustomExpr](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelCustomExprOutputReference",
-		reflect.TypeOf((*AccessContextManagerAccessLevelCustomExprOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AccessContextManagerAccessLevelCustomExprOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -479,7 +479,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessContextManagerAccessLevelCustomExprOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -487,7 +487,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelCustomOutputReference",
-		reflect.TypeOf((*AccessContextManagerAccessLevelCustomOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AccessContextManagerAccessLevelCustomOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -514,7 +514,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessContextManagerAccessLevelCustomOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -522,11 +522,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelTimeouts",
-		reflect.TypeOf((*AccessContextManagerAccessLevelTimeouts)(nil)).Elem(),
+		reflect.TypeFor[AccessContextManagerAccessLevelTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelTimeoutsOutputReference",
-		reflect.TypeOf((*AccessContextManagerAccessLevelTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AccessContextManagerAccessLevelTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -559,7 +559,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessContextManagerAccessLevelTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

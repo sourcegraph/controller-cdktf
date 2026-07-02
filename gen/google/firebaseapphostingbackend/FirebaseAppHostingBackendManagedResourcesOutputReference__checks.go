@@ -98,7 +98,7 @@ func (f *jsiiProxy_FirebaseAppHostingBackendManagedResourcesOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_FirebaseAppHostingBackendManagedResourcesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_FirebaseAppHostingBackendManagedResourcesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewFirebaseAppHostingBackendManagedResourcesOutputReferenceParamete
 
 	return nil
 }
-

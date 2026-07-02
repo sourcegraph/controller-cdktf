@@ -36,7 +36,7 @@ type MonitoringAlertPolicyCreationRecordList interface {
 	Get(index *float64) MonitoringAlertPolicyCreationRecordOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,7 +99,6 @@ func (j *jsiiProxy_MonitoringAlertPolicyCreationRecordList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewMonitoringAlertPolicyCreationRecordList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MonitoringAlertPolicyCreationRecordList {
 	_init_.Initialize()
 
@@ -110,7 +109,7 @@ func NewMonitoringAlertPolicyCreationRecordList(terraformResource cdktf.IInterpo
 
 	_jsii_.Create(
 		"@cdktf/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyCreationRecordList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -122,12 +121,12 @@ func NewMonitoringAlertPolicyCreationRecordList_Override(m MonitoringAlertPolicy
 
 	_jsii_.Create(
 		"@cdktf/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyCreationRecordList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		m,
 	)
 }
 
-func (j *jsiiProxy_MonitoringAlertPolicyCreationRecordList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MonitoringAlertPolicyCreationRecordList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -138,7 +137,7 @@ func (j *jsiiProxy_MonitoringAlertPolicyCreationRecordList)SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_MonitoringAlertPolicyCreationRecordList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MonitoringAlertPolicyCreationRecordList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -149,7 +148,7 @@ func (j *jsiiProxy_MonitoringAlertPolicyCreationRecordList)SetTerraformResource(
 	)
 }
 
-func (j *jsiiProxy_MonitoringAlertPolicyCreationRecordList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_MonitoringAlertPolicyCreationRecordList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -169,7 +168,7 @@ func (m *jsiiProxy_MonitoringAlertPolicyCreationRecordList) AllWithMapKey(mapKey
 	_jsii_.Invoke(
 		m,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -198,23 +197,23 @@ func (m *jsiiProxy_MonitoringAlertPolicyCreationRecordList) Get(index *float64) 
 	_jsii_.Invoke(
 		m,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (m *jsiiProxy_MonitoringAlertPolicyCreationRecordList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_MonitoringAlertPolicyCreationRecordList) Resolve(_context cdktf.IResolveContext) any {
 	if err := m.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -233,4 +232,3 @@ func (m *jsiiProxy_MonitoringAlertPolicyCreationRecordList) ToString() *string {
 
 	return returns
 }
-

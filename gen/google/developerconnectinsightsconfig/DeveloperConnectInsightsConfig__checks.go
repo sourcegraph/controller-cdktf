@@ -19,7 +19,7 @@ func (d *jsiiProxy_DeveloperConnectInsightsConfig) validateAddMoveTargetParamete
 	return nil
 }
 
-func (d *jsiiProxy_DeveloperConnectInsightsConfig) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DeveloperConnectInsightsConfig) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (d *jsiiProxy_DeveloperConnectInsightsConfig) validateMoveFromIdParameters(
 	return nil
 }
 
-func (d *jsiiProxy_DeveloperConnectInsightsConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (d *jsiiProxy_DeveloperConnectInsightsConfig) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (d *jsiiProxy_DeveloperConnectInsightsConfig) validateOverrideLogicalIdPara
 	return nil
 }
 
-func (d *jsiiProxy_DeveloperConnectInsightsConfig) validatePutArtifactConfigsParameters(value interface{}) error {
+func (d *jsiiProxy_DeveloperConnectInsightsConfig) validatePutArtifactConfigsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -273,7 +273,7 @@ func validateDeveloperConnectInsightsConfig_GenerateConfigForImportParameters(sc
 	return nil
 }
 
-func validateDeveloperConnectInsightsConfig_IsConstructParameters(x interface{}) error {
+func validateDeveloperConnectInsightsConfig_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -281,7 +281,7 @@ func validateDeveloperConnectInsightsConfig_IsConstructParameters(x interface{})
 	return nil
 }
 
-func validateDeveloperConnectInsightsConfig_IsTerraformElementParameters(x interface{}) error {
+func validateDeveloperConnectInsightsConfig_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -289,7 +289,7 @@ func validateDeveloperConnectInsightsConfig_IsTerraformElementParameters(x inter
 	return nil
 }
 
-func validateDeveloperConnectInsightsConfig_IsTerraformResourceParameters(x interface{}) error {
+func validateDeveloperConnectInsightsConfig_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -313,7 +313,7 @@ func (j *jsiiProxy_DeveloperConnectInsightsConfig) validateSetAppHubApplicationP
 	return nil
 }
 
-func (j *jsiiProxy_DeveloperConnectInsightsConfig) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_DeveloperConnectInsightsConfig) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -346,7 +346,7 @@ func (j *jsiiProxy_DeveloperConnectInsightsConfig) validateSetConnectionParamete
 	return nil
 }
 
-func (j *jsiiProxy_DeveloperConnectInsightsConfig) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DeveloperConnectInsightsConfig) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -451,7 +451,7 @@ func (j *jsiiProxy_DeveloperConnectInsightsConfig) validateSetProjectParameters(
 	return nil
 }
 
-func (j *jsiiProxy_DeveloperConnectInsightsConfig) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_DeveloperConnectInsightsConfig) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -515,4 +515,3 @@ func validateNewDeveloperConnectInsightsConfigParameters(scope constructs.Constr
 
 	return nil
 }
-

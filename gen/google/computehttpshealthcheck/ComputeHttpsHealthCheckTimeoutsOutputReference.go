@@ -12,9 +12,9 @@ type ComputeHttpsHealthCheckTimeoutsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,8 +33,8 @@ type ComputeHttpsHealthCheckTimeoutsOutputReference interface {
 	DeleteInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -49,7 +49,7 @@ type ComputeHttpsHealthCheckTimeoutsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type ComputeHttpsHealthCheckTimeoutsOutputReference interface {
 	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_ComputeHttpsHealthCheckTimeoutsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ComputeHttpsHealthCheckTimeoutsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeHttpsHealthCheckTimeoutsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_ComputeHttpsHealthCheckTimeoutsOutputReference) Fqn() *string
 	return returns
 }
 
-func (j *jsiiProxy_ComputeHttpsHealthCheckTimeoutsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeHttpsHealthCheckTimeoutsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_ComputeHttpsHealthCheckTimeoutsOutputReference) UpdateInput()
 	return returns
 }
 
-
 func NewComputeHttpsHealthCheckTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ComputeHttpsHealthCheckTimeoutsOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewComputeHttpsHealthCheckTimeoutsOutputReference(terraformResource cdktf.I
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeHttpsHealthCheck.ComputeHttpsHealthCheckTimeoutsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewComputeHttpsHealthCheckTimeoutsOutputReference_Override(c ComputeHttpsHe
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeHttpsHealthCheck.ComputeHttpsHealthCheckTimeoutsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputeHttpsHealthCheckTimeoutsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ComputeHttpsHealthCheckTimeoutsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_ComputeHttpsHealthCheckTimeoutsOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_ComputeHttpsHealthCheckTimeoutsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ComputeHttpsHealthCheckTimeoutsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_ComputeHttpsHealthCheckTimeoutsOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_ComputeHttpsHealthCheckTimeoutsOutputReference)SetCreate(val *string) {
+func (j *jsiiProxy_ComputeHttpsHealthCheckTimeoutsOutputReference) SetCreate(val *string) {
 	if err := j.validateSetCreateParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_ComputeHttpsHealthCheckTimeoutsOutputReference)SetCreate(val 
 	)
 }
 
-func (j *jsiiProxy_ComputeHttpsHealthCheckTimeoutsOutputReference)SetDelete(val *string) {
+func (j *jsiiProxy_ComputeHttpsHealthCheckTimeoutsOutputReference) SetDelete(val *string) {
 	if err := j.validateSetDeleteParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_ComputeHttpsHealthCheckTimeoutsOutputReference)SetDelete(val 
 	)
 }
 
-func (j *jsiiProxy_ComputeHttpsHealthCheckTimeoutsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ComputeHttpsHealthCheckTimeoutsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_ComputeHttpsHealthCheckTimeoutsOutputReference)SetInternalVal
 	)
 }
 
-func (j *jsiiProxy_ComputeHttpsHealthCheckTimeoutsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ComputeHttpsHealthCheckTimeoutsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_ComputeHttpsHealthCheckTimeoutsOutputReference)SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_ComputeHttpsHealthCheckTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeHttpsHealthCheckTimeoutsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_ComputeHttpsHealthCheckTimeoutsOutputReference)SetTerraformRe
 	)
 }
 
-func (j *jsiiProxy_ComputeHttpsHealthCheckTimeoutsOutputReference)SetUpdate(val *string) {
+func (j *jsiiProxy_ComputeHttpsHealthCheckTimeoutsOutputReference) SetUpdate(val *string) {
 	if err := j.validateSetUpdateParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (c *jsiiProxy_ComputeHttpsHealthCheckTimeoutsOutputReference) ComputeFqn() 
 	return returns
 }
 
-func (c *jsiiProxy_ComputeHttpsHealthCheckTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComputeHttpsHealthCheckTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (c *jsiiProxy_ComputeHttpsHealthCheckTimeoutsOutputReference) GetBooleanAtt
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (c *jsiiProxy_ComputeHttpsHealthCheckTimeoutsOutputReference) GetBooleanMap
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (c *jsiiProxy_ComputeHttpsHealthCheckTimeoutsOutputReference) GetListAttrib
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (c *jsiiProxy_ComputeHttpsHealthCheckTimeoutsOutputReference) GetNumberAttr
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (c *jsiiProxy_ComputeHttpsHealthCheckTimeoutsOutputReference) GetNumberList
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (c *jsiiProxy_ComputeHttpsHealthCheckTimeoutsOutputReference) GetNumberMapA
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (c *jsiiProxy_ComputeHttpsHealthCheckTimeoutsOutputReference) GetStringAttr
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (c *jsiiProxy_ComputeHttpsHealthCheckTimeoutsOutputReference) GetStringMapA
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (c *jsiiProxy_ComputeHttpsHealthCheckTimeoutsOutputReference) Interpolation
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (c *jsiiProxy_ComputeHttpsHealthCheckTimeoutsOutputReference) ResetUpdate()
 	)
 }
 
-func (c *jsiiProxy_ComputeHttpsHealthCheckTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ComputeHttpsHealthCheckTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (c *jsiiProxy_ComputeHttpsHealthCheckTimeoutsOutputReference) ToString() *s
 
 	return returns
 }
-

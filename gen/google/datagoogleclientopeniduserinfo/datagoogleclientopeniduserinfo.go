@@ -15,11 +15,11 @@ type DataGoogleClientOpenidUserinfo interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -45,17 +45,17 @@ type DataGoogleClientOpenidUserinfo interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -80,18 +80,18 @@ type DataGoogleClientOpenidUserinfo interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataGoogleClientOpenidUserinfo
@@ -109,8 +109,8 @@ func (j *jsiiProxy_DataGoogleClientOpenidUserinfo) CdktfStack() cdktf.TerraformS
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleClientOpenidUserinfo) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleClientOpenidUserinfo) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -119,8 +119,8 @@ func (j *jsiiProxy_DataGoogleClientOpenidUserinfo) ConstructNodeMetadata() *map[
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleClientOpenidUserinfo) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleClientOpenidUserinfo) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -219,8 +219,8 @@ func (j *jsiiProxy_DataGoogleClientOpenidUserinfo) Provider() cdktf.TerraformPro
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleClientOpenidUserinfo) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleClientOpenidUserinfo) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -239,8 +239,8 @@ func (j *jsiiProxy_DataGoogleClientOpenidUserinfo) TerraformGeneratorMetadata() 
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleClientOpenidUserinfo) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleClientOpenidUserinfo) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -259,7 +259,6 @@ func (j *jsiiProxy_DataGoogleClientOpenidUserinfo) TerraformResourceType() *stri
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/client_openid_userinfo google_client_openid_userinfo} Data Source.
 func NewDataGoogleClientOpenidUserinfo(scope constructs.Construct, id *string, config *DataGoogleClientOpenidUserinfoConfig) DataGoogleClientOpenidUserinfo {
 	_init_.Initialize()
@@ -271,7 +270,7 @@ func NewDataGoogleClientOpenidUserinfo(scope constructs.Construct, id *string, c
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleClientOpenidUserinfo.DataGoogleClientOpenidUserinfo",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -284,12 +283,12 @@ func NewDataGoogleClientOpenidUserinfo_Override(d DataGoogleClientOpenidUserinfo
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleClientOpenidUserinfo.DataGoogleClientOpenidUserinfo",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataGoogleClientOpenidUserinfo)SetCount(val interface{}) {
+func (j *jsiiProxy_DataGoogleClientOpenidUserinfo) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,7 +299,7 @@ func (j *jsiiProxy_DataGoogleClientOpenidUserinfo)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleClientOpenidUserinfo)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataGoogleClientOpenidUserinfo) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -308,7 +307,7 @@ func (j *jsiiProxy_DataGoogleClientOpenidUserinfo)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleClientOpenidUserinfo)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGoogleClientOpenidUserinfo) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -316,7 +315,7 @@ func (j *jsiiProxy_DataGoogleClientOpenidUserinfo)SetForEach(val cdktf.ITerrafor
 	)
 }
 
-func (j *jsiiProxy_DataGoogleClientOpenidUserinfo)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGoogleClientOpenidUserinfo) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,7 +326,7 @@ func (j *jsiiProxy_DataGoogleClientOpenidUserinfo)SetLifecycle(val *cdktf.Terraf
 	)
 }
 
-func (j *jsiiProxy_DataGoogleClientOpenidUserinfo)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGoogleClientOpenidUserinfo) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -347,7 +346,7 @@ func DataGoogleClientOpenidUserinfo_GenerateConfigForImport(scope constructs.Con
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleClientOpenidUserinfo.DataGoogleClientOpenidUserinfo",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -371,7 +370,7 @@ func DataGoogleClientOpenidUserinfo_GenerateConfigForImport(scope constructs.Con
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataGoogleClientOpenidUserinfo_IsConstruct(x interface{}) *bool {
+func DataGoogleClientOpenidUserinfo_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleClientOpenidUserinfo_IsConstructParameters(x); err != nil {
@@ -382,7 +381,7 @@ func DataGoogleClientOpenidUserinfo_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleClientOpenidUserinfo.DataGoogleClientOpenidUserinfo",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -390,7 +389,7 @@ func DataGoogleClientOpenidUserinfo_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGoogleClientOpenidUserinfo_IsTerraformDataSource(x interface{}) *bool {
+func DataGoogleClientOpenidUserinfo_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleClientOpenidUserinfo_IsTerraformDataSourceParameters(x); err != nil {
@@ -401,7 +400,7 @@ func DataGoogleClientOpenidUserinfo_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleClientOpenidUserinfo.DataGoogleClientOpenidUserinfo",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -409,7 +408,7 @@ func DataGoogleClientOpenidUserinfo_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGoogleClientOpenidUserinfo_IsTerraformElement(x interface{}) *bool {
+func DataGoogleClientOpenidUserinfo_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleClientOpenidUserinfo_IsTerraformElementParameters(x); err != nil {
@@ -420,7 +419,7 @@ func DataGoogleClientOpenidUserinfo_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleClientOpenidUserinfo.DataGoogleClientOpenidUserinfo",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -438,27 +437,27 @@ func DataGoogleClientOpenidUserinfo_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleClientOpenidUserinfo) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataGoogleClientOpenidUserinfo) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataGoogleClientOpenidUserinfo) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataGoogleClientOpenidUserinfo) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -474,7 +473,7 @@ func (d *jsiiProxy_DataGoogleClientOpenidUserinfo) GetBooleanAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -490,7 +489,7 @@ func (d *jsiiProxy_DataGoogleClientOpenidUserinfo) GetBooleanMapAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -506,7 +505,7 @@ func (d *jsiiProxy_DataGoogleClientOpenidUserinfo) GetListAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -522,7 +521,7 @@ func (d *jsiiProxy_DataGoogleClientOpenidUserinfo) GetNumberAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -538,7 +537,7 @@ func (d *jsiiProxy_DataGoogleClientOpenidUserinfo) GetNumberListAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -554,7 +553,7 @@ func (d *jsiiProxy_DataGoogleClientOpenidUserinfo) GetNumberMapAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -570,7 +569,7 @@ func (d *jsiiProxy_DataGoogleClientOpenidUserinfo) GetStringAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -586,7 +585,7 @@ func (d *jsiiProxy_DataGoogleClientOpenidUserinfo) GetStringMapAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -602,7 +601,7 @@ func (d *jsiiProxy_DataGoogleClientOpenidUserinfo) InterpolationForAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -616,7 +615,7 @@ func (d *jsiiProxy_DataGoogleClientOpenidUserinfo) OverrideLogicalId(newLogicalI
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -628,8 +627,8 @@ func (d *jsiiProxy_DataGoogleClientOpenidUserinfo) ResetOverrideLogicalId() {
 	)
 }
 
-func (d *jsiiProxy_DataGoogleClientOpenidUserinfo) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleClientOpenidUserinfo) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -641,8 +640,8 @@ func (d *jsiiProxy_DataGoogleClientOpenidUserinfo) SynthesizeAttributes() *map[s
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleClientOpenidUserinfo) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleClientOpenidUserinfo) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -654,8 +653,8 @@ func (d *jsiiProxy_DataGoogleClientOpenidUserinfo) SynthesizeHclAttributes() *ma
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleClientOpenidUserinfo) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleClientOpenidUserinfo) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -667,8 +666,8 @@ func (d *jsiiProxy_DataGoogleClientOpenidUserinfo) ToHclTerraform() interface{} 
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleClientOpenidUserinfo) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleClientOpenidUserinfo) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -693,8 +692,8 @@ func (d *jsiiProxy_DataGoogleClientOpenidUserinfo) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleClientOpenidUserinfo) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleClientOpenidUserinfo) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -705,4 +704,3 @@ func (d *jsiiProxy_DataGoogleClientOpenidUserinfo) ToTerraform() interface{} {
 
 	return returns
 }
-

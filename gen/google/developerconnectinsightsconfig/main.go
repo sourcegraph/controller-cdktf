@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfig",
-		reflect.TypeOf((*DeveloperConnectInsightsConfig)(nil)).Elem(),
+		reflect.TypeFor[DeveloperConnectInsightsConfig](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -94,7 +94,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DeveloperConnectInsightsConfig{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -102,15 +102,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigArtifactConfigs",
-		reflect.TypeOf((*DeveloperConnectInsightsConfigArtifactConfigs)(nil)).Elem(),
+		reflect.TypeFor[DeveloperConnectInsightsConfigArtifactConfigs](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigArtifactConfigsGoogleArtifactAnalysis",
-		reflect.TypeOf((*DeveloperConnectInsightsConfigArtifactConfigsGoogleArtifactAnalysis)(nil)).Elem(),
+		reflect.TypeFor[DeveloperConnectInsightsConfigArtifactConfigsGoogleArtifactAnalysis](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigArtifactConfigsGoogleArtifactAnalysisOutputReference",
-		reflect.TypeOf((*DeveloperConnectInsightsConfigArtifactConfigsGoogleArtifactAnalysisOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DeveloperConnectInsightsConfigArtifactConfigsGoogleArtifactAnalysisOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -136,7 +136,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DeveloperConnectInsightsConfigArtifactConfigsGoogleArtifactAnalysisOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -144,11 +144,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigArtifactConfigsGoogleArtifactRegistry",
-		reflect.TypeOf((*DeveloperConnectInsightsConfigArtifactConfigsGoogleArtifactRegistry)(nil)).Elem(),
+		reflect.TypeFor[DeveloperConnectInsightsConfigArtifactConfigsGoogleArtifactRegistry](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigArtifactConfigsGoogleArtifactRegistryOutputReference",
-		reflect.TypeOf((*DeveloperConnectInsightsConfigArtifactConfigsGoogleArtifactRegistryOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DeveloperConnectInsightsConfigArtifactConfigsGoogleArtifactRegistryOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "artifactRegistryPackage", GoGetter: "ArtifactRegistryPackage"},
 			_jsii_.MemberProperty{JsiiProperty: "artifactRegistryPackageInput", GoGetter: "ArtifactRegistryPackageInput"},
@@ -176,7 +176,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DeveloperConnectInsightsConfigArtifactConfigsGoogleArtifactRegistryOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -184,7 +184,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigArtifactConfigsList",
-		reflect.TypeOf((*DeveloperConnectInsightsConfigArtifactConfigsList)(nil)).Elem(),
+		reflect.TypeFor[DeveloperConnectInsightsConfigArtifactConfigsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -198,7 +198,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DeveloperConnectInsightsConfigArtifactConfigsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -206,7 +206,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigArtifactConfigsOutputReference",
-		reflect.TypeOf((*DeveloperConnectInsightsConfigArtifactConfigsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DeveloperConnectInsightsConfigArtifactConfigsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -241,7 +241,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uri", GoGetter: "Uri"},
 			_jsii_.MemberProperty{JsiiProperty: "uriInput", GoGetter: "UriInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DeveloperConnectInsightsConfigArtifactConfigsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -249,19 +249,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigConfig",
-		reflect.TypeOf((*DeveloperConnectInsightsConfigConfig)(nil)).Elem(),
+		reflect.TypeFor[DeveloperConnectInsightsConfigConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigErrors",
-		reflect.TypeOf((*DeveloperConnectInsightsConfigErrors)(nil)).Elem(),
+		reflect.TypeFor[DeveloperConnectInsightsConfigErrors](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigErrorsDetails",
-		reflect.TypeOf((*DeveloperConnectInsightsConfigErrorsDetails)(nil)).Elem(),
+		reflect.TypeFor[DeveloperConnectInsightsConfigErrorsDetails](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigErrorsDetailsList",
-		reflect.TypeOf((*DeveloperConnectInsightsConfigErrorsDetailsList)(nil)).Elem(),
+		reflect.TypeFor[DeveloperConnectInsightsConfigErrorsDetailsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -274,7 +274,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DeveloperConnectInsightsConfigErrorsDetailsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -282,7 +282,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigErrorsDetailsOutputReference",
-		reflect.TypeOf((*DeveloperConnectInsightsConfigErrorsDetailsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DeveloperConnectInsightsConfigErrorsDetailsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -307,7 +307,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DeveloperConnectInsightsConfigErrorsDetailsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -315,7 +315,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigErrorsList",
-		reflect.TypeOf((*DeveloperConnectInsightsConfigErrorsList)(nil)).Elem(),
+		reflect.TypeFor[DeveloperConnectInsightsConfigErrorsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -328,7 +328,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DeveloperConnectInsightsConfigErrorsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -336,7 +336,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigErrorsOutputReference",
-		reflect.TypeOf((*DeveloperConnectInsightsConfigErrorsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DeveloperConnectInsightsConfigErrorsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "code", GoGetter: "Code"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -363,7 +363,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DeveloperConnectInsightsConfigErrorsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -371,15 +371,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigRuntimeConfigs",
-		reflect.TypeOf((*DeveloperConnectInsightsConfigRuntimeConfigs)(nil)).Elem(),
+		reflect.TypeFor[DeveloperConnectInsightsConfigRuntimeConfigs](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigRuntimeConfigsAppHubWorkload",
-		reflect.TypeOf((*DeveloperConnectInsightsConfigRuntimeConfigsAppHubWorkload)(nil)).Elem(),
+		reflect.TypeFor[DeveloperConnectInsightsConfigRuntimeConfigsAppHubWorkload](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigRuntimeConfigsAppHubWorkloadList",
-		reflect.TypeOf((*DeveloperConnectInsightsConfigRuntimeConfigsAppHubWorkloadList)(nil)).Elem(),
+		reflect.TypeFor[DeveloperConnectInsightsConfigRuntimeConfigsAppHubWorkloadList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -392,7 +392,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DeveloperConnectInsightsConfigRuntimeConfigsAppHubWorkloadList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -400,7 +400,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigRuntimeConfigsAppHubWorkloadOutputReference",
-		reflect.TypeOf((*DeveloperConnectInsightsConfigRuntimeConfigsAppHubWorkloadOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DeveloperConnectInsightsConfigRuntimeConfigsAppHubWorkloadOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -427,7 +427,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "workload", GoGetter: "Workload"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DeveloperConnectInsightsConfigRuntimeConfigsAppHubWorkloadOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -435,11 +435,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigRuntimeConfigsGkeWorkload",
-		reflect.TypeOf((*DeveloperConnectInsightsConfigRuntimeConfigsGkeWorkload)(nil)).Elem(),
+		reflect.TypeFor[DeveloperConnectInsightsConfigRuntimeConfigsGkeWorkload](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigRuntimeConfigsGkeWorkloadList",
-		reflect.TypeOf((*DeveloperConnectInsightsConfigRuntimeConfigsGkeWorkloadList)(nil)).Elem(),
+		reflect.TypeFor[DeveloperConnectInsightsConfigRuntimeConfigsGkeWorkloadList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -452,7 +452,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DeveloperConnectInsightsConfigRuntimeConfigsGkeWorkloadList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -460,7 +460,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigRuntimeConfigsGkeWorkloadOutputReference",
-		reflect.TypeOf((*DeveloperConnectInsightsConfigRuntimeConfigsGkeWorkloadOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DeveloperConnectInsightsConfigRuntimeConfigsGkeWorkloadOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cluster", GoGetter: "Cluster"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -486,7 +486,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DeveloperConnectInsightsConfigRuntimeConfigsGkeWorkloadOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -494,7 +494,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigRuntimeConfigsList",
-		reflect.TypeOf((*DeveloperConnectInsightsConfigRuntimeConfigsList)(nil)).Elem(),
+		reflect.TypeFor[DeveloperConnectInsightsConfigRuntimeConfigsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -507,7 +507,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DeveloperConnectInsightsConfigRuntimeConfigsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -515,7 +515,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigRuntimeConfigsOutputReference",
-		reflect.TypeOf((*DeveloperConnectInsightsConfigRuntimeConfigsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DeveloperConnectInsightsConfigRuntimeConfigsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "appHubWorkload", GoGetter: "AppHubWorkload"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -543,7 +543,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "uri", GoGetter: "Uri"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DeveloperConnectInsightsConfigRuntimeConfigsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -551,11 +551,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTargetProjects",
-		reflect.TypeOf((*DeveloperConnectInsightsConfigTargetProjects)(nil)).Elem(),
+		reflect.TypeFor[DeveloperConnectInsightsConfigTargetProjects](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTargetProjectsOutputReference",
-		reflect.TypeOf((*DeveloperConnectInsightsConfigTargetProjectsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DeveloperConnectInsightsConfigTargetProjectsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -582,7 +582,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DeveloperConnectInsightsConfigTargetProjectsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -590,11 +590,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTimeouts",
-		reflect.TypeOf((*DeveloperConnectInsightsConfigTimeouts)(nil)).Elem(),
+		reflect.TypeFor[DeveloperConnectInsightsConfigTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTimeoutsOutputReference",
-		reflect.TypeOf((*DeveloperConnectInsightsConfigTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DeveloperConnectInsightsConfigTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -627,7 +627,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DeveloperConnectInsightsConfigTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

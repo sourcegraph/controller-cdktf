@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule",
-		reflect.TypeOf((*ComputeGlobalForwardingRule)(nil)).Elem(),
+		reflect.TypeFor[ComputeGlobalForwardingRule](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -125,7 +125,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeGlobalForwardingRule{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -133,19 +133,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleConfig",
-		reflect.TypeOf((*ComputeGlobalForwardingRuleConfig)(nil)).Elem(),
+		reflect.TypeFor[ComputeGlobalForwardingRuleConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFilters",
-		reflect.TypeOf((*ComputeGlobalForwardingRuleMetadataFilters)(nil)).Elem(),
+		reflect.TypeFor[ComputeGlobalForwardingRuleMetadataFilters](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersFilterLabels",
-		reflect.TypeOf((*ComputeGlobalForwardingRuleMetadataFiltersFilterLabels)(nil)).Elem(),
+		reflect.TypeFor[ComputeGlobalForwardingRuleMetadataFiltersFilterLabels](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersFilterLabelsList",
-		reflect.TypeOf((*ComputeGlobalForwardingRuleMetadataFiltersFilterLabelsList)(nil)).Elem(),
+		reflect.TypeFor[ComputeGlobalForwardingRuleMetadataFiltersFilterLabelsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -159,7 +159,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeGlobalForwardingRuleMetadataFiltersFilterLabelsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -167,7 +167,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersFilterLabelsOutputReference",
-		reflect.TypeOf((*ComputeGlobalForwardingRuleMetadataFiltersFilterLabelsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeGlobalForwardingRuleMetadataFiltersFilterLabelsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -195,7 +195,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeGlobalForwardingRuleMetadataFiltersFilterLabelsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -203,7 +203,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersList",
-		reflect.TypeOf((*ComputeGlobalForwardingRuleMetadataFiltersList)(nil)).Elem(),
+		reflect.TypeFor[ComputeGlobalForwardingRuleMetadataFiltersList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -217,7 +217,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeGlobalForwardingRuleMetadataFiltersList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -225,7 +225,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersOutputReference",
-		reflect.TypeOf((*ComputeGlobalForwardingRuleMetadataFiltersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeGlobalForwardingRuleMetadataFiltersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -254,7 +254,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeGlobalForwardingRuleMetadataFiltersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -262,11 +262,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleServiceDirectoryRegistrations",
-		reflect.TypeOf((*ComputeGlobalForwardingRuleServiceDirectoryRegistrations)(nil)).Elem(),
+		reflect.TypeFor[ComputeGlobalForwardingRuleServiceDirectoryRegistrations](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleServiceDirectoryRegistrationsOutputReference",
-		reflect.TypeOf((*ComputeGlobalForwardingRuleServiceDirectoryRegistrationsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeGlobalForwardingRuleServiceDirectoryRegistrationsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -296,7 +296,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeGlobalForwardingRuleServiceDirectoryRegistrationsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -304,11 +304,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleTimeouts",
-		reflect.TypeOf((*ComputeGlobalForwardingRuleTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ComputeGlobalForwardingRuleTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleTimeoutsOutputReference",
-		reflect.TypeOf((*ComputeGlobalForwardingRuleTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeGlobalForwardingRuleTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -341,7 +341,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeGlobalForwardingRuleTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

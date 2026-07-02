@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesExample.CesExample",
-		reflect.TypeOf((*CesExample)(nil)).Elem(),
+		reflect.TypeFor[CesExample](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -86,7 +86,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesExample{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -94,23 +94,23 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesExample.CesExampleConfig",
-		reflect.TypeOf((*CesExampleConfig)(nil)).Elem(),
+		reflect.TypeFor[CesExampleConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesExample.CesExampleMessages",
-		reflect.TypeOf((*CesExampleMessages)(nil)).Elem(),
+		reflect.TypeFor[CesExampleMessages](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesExample.CesExampleMessagesChunks",
-		reflect.TypeOf((*CesExampleMessagesChunks)(nil)).Elem(),
+		reflect.TypeFor[CesExampleMessagesChunks](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesExample.CesExampleMessagesChunksAgentTransfer",
-		reflect.TypeOf((*CesExampleMessagesChunksAgentTransfer)(nil)).Elem(),
+		reflect.TypeFor[CesExampleMessagesChunksAgentTransfer](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesExample.CesExampleMessagesChunksAgentTransferOutputReference",
-		reflect.TypeOf((*CesExampleMessagesChunksAgentTransferOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesExampleMessagesChunksAgentTransferOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -137,7 +137,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesExampleMessagesChunksAgentTransferOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -145,11 +145,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesExample.CesExampleMessagesChunksImage",
-		reflect.TypeOf((*CesExampleMessagesChunksImage)(nil)).Elem(),
+		reflect.TypeFor[CesExampleMessagesChunksImage](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesExample.CesExampleMessagesChunksImageOutputReference",
-		reflect.TypeOf((*CesExampleMessagesChunksImageOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesExampleMessagesChunksImageOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -177,7 +177,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesExampleMessagesChunksImageOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -185,7 +185,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesExample.CesExampleMessagesChunksList",
-		reflect.TypeOf((*CesExampleMessagesChunksList)(nil)).Elem(),
+		reflect.TypeFor[CesExampleMessagesChunksList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -199,7 +199,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesExampleMessagesChunksList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -207,7 +207,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesExample.CesExampleMessagesChunksOutputReference",
-		reflect.TypeOf((*CesExampleMessagesChunksOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesExampleMessagesChunksOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "agentTransfer", GoGetter: "AgentTransfer"},
 			_jsii_.MemberProperty{JsiiProperty: "agentTransferInput", GoGetter: "AgentTransferInput"},
@@ -253,7 +253,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "updatedVariables", GoGetter: "UpdatedVariables"},
 			_jsii_.MemberProperty{JsiiProperty: "updatedVariablesInput", GoGetter: "UpdatedVariablesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesExampleMessagesChunksOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -261,11 +261,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesExample.CesExampleMessagesChunksToolCall",
-		reflect.TypeOf((*CesExampleMessagesChunksToolCall)(nil)).Elem(),
+		reflect.TypeFor[CesExampleMessagesChunksToolCall](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesExample.CesExampleMessagesChunksToolCallOutputReference",
-		reflect.TypeOf((*CesExampleMessagesChunksToolCallOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesExampleMessagesChunksToolCallOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "args", GoGetter: "Args"},
 			_jsii_.MemberProperty{JsiiProperty: "argsInput", GoGetter: "ArgsInput"},
@@ -303,7 +303,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "toolsetToolInput", GoGetter: "ToolsetToolInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesExampleMessagesChunksToolCallOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -311,11 +311,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesExample.CesExampleMessagesChunksToolCallToolsetTool",
-		reflect.TypeOf((*CesExampleMessagesChunksToolCallToolsetTool)(nil)).Elem(),
+		reflect.TypeFor[CesExampleMessagesChunksToolCallToolsetTool](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesExample.CesExampleMessagesChunksToolCallToolsetToolOutputReference",
-		reflect.TypeOf((*CesExampleMessagesChunksToolCallToolsetToolOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesExampleMessagesChunksToolCallToolsetToolOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -344,7 +344,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "toolsetInput", GoGetter: "ToolsetInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesExampleMessagesChunksToolCallToolsetToolOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -352,11 +352,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesExample.CesExampleMessagesChunksToolResponse",
-		reflect.TypeOf((*CesExampleMessagesChunksToolResponse)(nil)).Elem(),
+		reflect.TypeFor[CesExampleMessagesChunksToolResponse](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesExample.CesExampleMessagesChunksToolResponseOutputReference",
-		reflect.TypeOf((*CesExampleMessagesChunksToolResponseOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesExampleMessagesChunksToolResponseOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -393,7 +393,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "toolsetToolInput", GoGetter: "ToolsetToolInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesExampleMessagesChunksToolResponseOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -401,11 +401,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesExample.CesExampleMessagesChunksToolResponseToolsetTool",
-		reflect.TypeOf((*CesExampleMessagesChunksToolResponseToolsetTool)(nil)).Elem(),
+		reflect.TypeFor[CesExampleMessagesChunksToolResponseToolsetTool](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesExample.CesExampleMessagesChunksToolResponseToolsetToolOutputReference",
-		reflect.TypeOf((*CesExampleMessagesChunksToolResponseToolsetToolOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesExampleMessagesChunksToolResponseToolsetToolOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -434,7 +434,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "toolsetInput", GoGetter: "ToolsetInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesExampleMessagesChunksToolResponseToolsetToolOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -442,7 +442,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesExample.CesExampleMessagesList",
-		reflect.TypeOf((*CesExampleMessagesList)(nil)).Elem(),
+		reflect.TypeFor[CesExampleMessagesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -456,7 +456,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesExampleMessagesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -464,7 +464,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesExample.CesExampleMessagesOutputReference",
-		reflect.TypeOf((*CesExampleMessagesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesExampleMessagesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "chunks", GoGetter: "Chunks"},
 			_jsii_.MemberProperty{JsiiProperty: "chunksInput", GoGetter: "ChunksInput"},
@@ -495,7 +495,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesExampleMessagesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -503,11 +503,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesExample.CesExampleTimeouts",
-		reflect.TypeOf((*CesExampleTimeouts)(nil)).Elem(),
+		reflect.TypeFor[CesExampleTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesExample.CesExampleTimeoutsOutputReference",
-		reflect.TypeOf((*CesExampleTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesExampleTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -540,7 +540,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesExampleTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

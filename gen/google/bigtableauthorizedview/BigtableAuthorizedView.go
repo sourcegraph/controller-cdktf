@@ -15,15 +15,15 @@ type BigtableAuthorizedView interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DeletionProtection() *string
 	SetDeletionProtection(val *string)
 	DeletionProtectionInput() *string
@@ -62,11 +62,11 @@ type BigtableAuthorizedView interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SubsetView() BigtableAuthorizedViewSubsetViewOutputReference
 	SubsetViewInput() *BigtableAuthorizedViewSubsetView
 	TableName() *string
@@ -75,18 +75,18 @@ type BigtableAuthorizedView interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() BigtableAuthorizedViewTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -104,7 +104,7 @@ type BigtableAuthorizedView interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -116,7 +116,7 @@ type BigtableAuthorizedView interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -133,17 +133,17 @@ type BigtableAuthorizedView interface {
 	ResetProject()
 	ResetSubsetView()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for BigtableAuthorizedView
@@ -161,8 +161,8 @@ func (j *jsiiProxy_BigtableAuthorizedView) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_BigtableAuthorizedView) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigtableAuthorizedView) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -171,8 +171,8 @@ func (j *jsiiProxy_BigtableAuthorizedView) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_BigtableAuthorizedView) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_BigtableAuthorizedView) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -181,8 +181,8 @@ func (j *jsiiProxy_BigtableAuthorizedView) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_BigtableAuthorizedView) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigtableAuthorizedView) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -361,8 +361,8 @@ func (j *jsiiProxy_BigtableAuthorizedView) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_BigtableAuthorizedView) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_BigtableAuthorizedView) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -371,8 +371,8 @@ func (j *jsiiProxy_BigtableAuthorizedView) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_BigtableAuthorizedView) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigtableAuthorizedView) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -431,8 +431,8 @@ func (j *jsiiProxy_BigtableAuthorizedView) TerraformGeneratorMetadata() *cdktf.T
 	return returns
 }
 
-func (j *jsiiProxy_BigtableAuthorizedView) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_BigtableAuthorizedView) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -461,8 +461,8 @@ func (j *jsiiProxy_BigtableAuthorizedView) Timeouts() BigtableAuthorizedViewTime
 	return returns
 }
 
-func (j *jsiiProxy_BigtableAuthorizedView) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigtableAuthorizedView) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -470,7 +470,6 @@ func (j *jsiiProxy_BigtableAuthorizedView) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigtable_authorized_view google_bigtable_authorized_view} Resource.
 func NewBigtableAuthorizedView(scope constructs.Construct, id *string, config *BigtableAuthorizedViewConfig) BigtableAuthorizedView {
@@ -483,7 +482,7 @@ func NewBigtableAuthorizedView(scope constructs.Construct, id *string, config *B
 
 	_jsii_.Create(
 		"@cdktf/provider-google.bigtableAuthorizedView.BigtableAuthorizedView",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -496,12 +495,12 @@ func NewBigtableAuthorizedView_Override(b BigtableAuthorizedView, scope construc
 
 	_jsii_.Create(
 		"@cdktf/provider-google.bigtableAuthorizedView.BigtableAuthorizedView",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		b,
 	)
 }
 
-func (j *jsiiProxy_BigtableAuthorizedView)SetConnection(val interface{}) {
+func (j *jsiiProxy_BigtableAuthorizedView) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -512,7 +511,7 @@ func (j *jsiiProxy_BigtableAuthorizedView)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_BigtableAuthorizedView)SetCount(val interface{}) {
+func (j *jsiiProxy_BigtableAuthorizedView) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -523,7 +522,7 @@ func (j *jsiiProxy_BigtableAuthorizedView)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_BigtableAuthorizedView)SetDeletionProtection(val *string) {
+func (j *jsiiProxy_BigtableAuthorizedView) SetDeletionProtection(val *string) {
 	if err := j.validateSetDeletionProtectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -534,7 +533,7 @@ func (j *jsiiProxy_BigtableAuthorizedView)SetDeletionProtection(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BigtableAuthorizedView)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_BigtableAuthorizedView) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -542,7 +541,7 @@ func (j *jsiiProxy_BigtableAuthorizedView)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_BigtableAuthorizedView)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_BigtableAuthorizedView) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -550,7 +549,7 @@ func (j *jsiiProxy_BigtableAuthorizedView)SetForEach(val cdktf.ITerraformIterato
 	)
 }
 
-func (j *jsiiProxy_BigtableAuthorizedView)SetId(val *string) {
+func (j *jsiiProxy_BigtableAuthorizedView) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -561,7 +560,7 @@ func (j *jsiiProxy_BigtableAuthorizedView)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BigtableAuthorizedView)SetInstanceName(val *string) {
+func (j *jsiiProxy_BigtableAuthorizedView) SetInstanceName(val *string) {
 	if err := j.validateSetInstanceNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -572,7 +571,7 @@ func (j *jsiiProxy_BigtableAuthorizedView)SetInstanceName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BigtableAuthorizedView)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_BigtableAuthorizedView) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -583,7 +582,7 @@ func (j *jsiiProxy_BigtableAuthorizedView)SetLifecycle(val *cdktf.TerraformResou
 	)
 }
 
-func (j *jsiiProxy_BigtableAuthorizedView)SetName(val *string) {
+func (j *jsiiProxy_BigtableAuthorizedView) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -594,7 +593,7 @@ func (j *jsiiProxy_BigtableAuthorizedView)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BigtableAuthorizedView)SetProject(val *string) {
+func (j *jsiiProxy_BigtableAuthorizedView) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -605,7 +604,7 @@ func (j *jsiiProxy_BigtableAuthorizedView)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BigtableAuthorizedView)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_BigtableAuthorizedView) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -613,7 +612,7 @@ func (j *jsiiProxy_BigtableAuthorizedView)SetProvider(val cdktf.TerraformProvide
 	)
 }
 
-func (j *jsiiProxy_BigtableAuthorizedView)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_BigtableAuthorizedView) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -624,7 +623,7 @@ func (j *jsiiProxy_BigtableAuthorizedView)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_BigtableAuthorizedView)SetTableName(val *string) {
+func (j *jsiiProxy_BigtableAuthorizedView) SetTableName(val *string) {
 	if err := j.validateSetTableNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -647,7 +646,7 @@ func BigtableAuthorizedView_GenerateConfigForImport(scope constructs.Construct, 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.bigtableAuthorizedView.BigtableAuthorizedView",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -671,7 +670,7 @@ func BigtableAuthorizedView_GenerateConfigForImport(scope constructs.Construct, 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func BigtableAuthorizedView_IsConstruct(x interface{}) *bool {
+func BigtableAuthorizedView_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateBigtableAuthorizedView_IsConstructParameters(x); err != nil {
@@ -682,7 +681,7 @@ func BigtableAuthorizedView_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.bigtableAuthorizedView.BigtableAuthorizedView",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -690,7 +689,7 @@ func BigtableAuthorizedView_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func BigtableAuthorizedView_IsTerraformElement(x interface{}) *bool {
+func BigtableAuthorizedView_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateBigtableAuthorizedView_IsTerraformElementParameters(x); err != nil {
@@ -701,7 +700,7 @@ func BigtableAuthorizedView_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.bigtableAuthorizedView.BigtableAuthorizedView",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -709,7 +708,7 @@ func BigtableAuthorizedView_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func BigtableAuthorizedView_IsTerraformResource(x interface{}) *bool {
+func BigtableAuthorizedView_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateBigtableAuthorizedView_IsTerraformResourceParameters(x); err != nil {
@@ -720,7 +719,7 @@ func BigtableAuthorizedView_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.bigtableAuthorizedView.BigtableAuthorizedView",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -745,31 +744,31 @@ func (b *jsiiProxy_BigtableAuthorizedView) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		b,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (b *jsiiProxy_BigtableAuthorizedView) AddOverride(path *string, value interface{}) {
+func (b *jsiiProxy_BigtableAuthorizedView) AddOverride(path *string, value any) {
 	if err := b.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		b,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (b *jsiiProxy_BigtableAuthorizedView) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (b *jsiiProxy_BigtableAuthorizedView) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := b.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -785,7 +784,7 @@ func (b *jsiiProxy_BigtableAuthorizedView) GetBooleanAttribute(terraformAttribut
 	_jsii_.Invoke(
 		b,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -801,7 +800,7 @@ func (b *jsiiProxy_BigtableAuthorizedView) GetBooleanMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		b,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -817,7 +816,7 @@ func (b *jsiiProxy_BigtableAuthorizedView) GetListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		b,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -833,7 +832,7 @@ func (b *jsiiProxy_BigtableAuthorizedView) GetNumberAttribute(terraformAttribute
 	_jsii_.Invoke(
 		b,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -849,7 +848,7 @@ func (b *jsiiProxy_BigtableAuthorizedView) GetNumberListAttribute(terraformAttri
 	_jsii_.Invoke(
 		b,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -865,7 +864,7 @@ func (b *jsiiProxy_BigtableAuthorizedView) GetNumberMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		b,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -881,7 +880,7 @@ func (b *jsiiProxy_BigtableAuthorizedView) GetStringAttribute(terraformAttribute
 	_jsii_.Invoke(
 		b,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -897,15 +896,15 @@ func (b *jsiiProxy_BigtableAuthorizedView) GetStringMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		b,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (b *jsiiProxy_BigtableAuthorizedView) HasResourceMove() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BigtableAuthorizedView) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -924,7 +923,7 @@ func (b *jsiiProxy_BigtableAuthorizedView) ImportFrom(id *string, provider cdktf
 	_jsii_.InvokeVoid(
 		b,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -937,7 +936,7 @@ func (b *jsiiProxy_BigtableAuthorizedView) InterpolationForAttribute(terraformAt
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -951,18 +950,18 @@ func (b *jsiiProxy_BigtableAuthorizedView) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		b,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (b *jsiiProxy_BigtableAuthorizedView) MoveTo(moveTarget *string, index interface{}) {
+func (b *jsiiProxy_BigtableAuthorizedView) MoveTo(moveTarget *string, index any) {
 	if err := b.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		b,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -973,7 +972,7 @@ func (b *jsiiProxy_BigtableAuthorizedView) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		b,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -984,7 +983,7 @@ func (b *jsiiProxy_BigtableAuthorizedView) OverrideLogicalId(newLogicalId *strin
 	_jsii_.InvokeVoid(
 		b,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -995,7 +994,7 @@ func (b *jsiiProxy_BigtableAuthorizedView) PutSubsetView(value *BigtableAuthoriz
 	_jsii_.InvokeVoid(
 		b,
 		"putSubsetView",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1006,7 +1005,7 @@ func (b *jsiiProxy_BigtableAuthorizedView) PutTimeouts(value *BigtableAuthorized
 	_jsii_.InvokeVoid(
 		b,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1058,8 +1057,8 @@ func (b *jsiiProxy_BigtableAuthorizedView) ResetTimeouts() {
 	)
 }
 
-func (b *jsiiProxy_BigtableAuthorizedView) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (b *jsiiProxy_BigtableAuthorizedView) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
@@ -1071,8 +1070,8 @@ func (b *jsiiProxy_BigtableAuthorizedView) SynthesizeAttributes() *map[string]in
 	return returns
 }
 
-func (b *jsiiProxy_BigtableAuthorizedView) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (b *jsiiProxy_BigtableAuthorizedView) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
@@ -1084,8 +1083,8 @@ func (b *jsiiProxy_BigtableAuthorizedView) SynthesizeHclAttributes() *map[string
 	return returns
 }
 
-func (b *jsiiProxy_BigtableAuthorizedView) ToHclTerraform() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BigtableAuthorizedView) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -1097,8 +1096,8 @@ func (b *jsiiProxy_BigtableAuthorizedView) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (b *jsiiProxy_BigtableAuthorizedView) ToMetadata() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BigtableAuthorizedView) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -1123,8 +1122,8 @@ func (b *jsiiProxy_BigtableAuthorizedView) ToString() *string {
 	return returns
 }
 
-func (b *jsiiProxy_BigtableAuthorizedView) ToTerraform() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BigtableAuthorizedView) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -1135,4 +1134,3 @@ func (b *jsiiProxy_BigtableAuthorizedView) ToTerraform() interface{} {
 
 	return returns
 }
-

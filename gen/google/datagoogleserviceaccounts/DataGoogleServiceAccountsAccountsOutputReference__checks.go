@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleServiceAccountsAccountsOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleServiceAccountsAccountsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleServiceAccountsAccountsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleServiceAccountsAccountsOutputReferenceParameters(terra
 
 	return nil
 }
-

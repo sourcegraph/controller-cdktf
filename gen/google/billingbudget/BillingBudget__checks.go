@@ -19,7 +19,7 @@ func (b *jsiiProxy_BillingBudget) validateAddMoveTargetParameters(moveTarget *st
 	return nil
 }
 
-func (b *jsiiProxy_BillingBudget) validateAddOverrideParameters(path *string, value interface{}) error {
+func (b *jsiiProxy_BillingBudget) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (b *jsiiProxy_BillingBudget) validateMoveFromIdParameters(id *string) error
 	return nil
 }
 
-func (b *jsiiProxy_BillingBudget) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (b *jsiiProxy_BillingBudget) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -237,7 +237,7 @@ func (b *jsiiProxy_BillingBudget) validatePutBudgetFilterParameters(value *Billi
 	return nil
 }
 
-func (b *jsiiProxy_BillingBudget) validatePutThresholdRulesParameters(value interface{}) error {
+func (b *jsiiProxy_BillingBudget) validatePutThresholdRulesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -295,7 +295,7 @@ func validateBillingBudget_GenerateConfigForImportParameters(scope constructs.Co
 	return nil
 }
 
-func validateBillingBudget_IsConstructParameters(x interface{}) error {
+func validateBillingBudget_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -303,7 +303,7 @@ func validateBillingBudget_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateBillingBudget_IsTerraformElementParameters(x interface{}) error {
+func validateBillingBudget_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -311,7 +311,7 @@ func validateBillingBudget_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateBillingBudget_IsTerraformResourceParameters(x interface{}) error {
+func validateBillingBudget_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -327,7 +327,7 @@ func (j *jsiiProxy_BillingBudget) validateSetBillingAccountParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_BillingBudget) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_BillingBudget) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -360,7 +360,7 @@ func (j *jsiiProxy_BillingBudget) validateSetConnectionParameters(val interface{
 	return nil
 }
 
-func (j *jsiiProxy_BillingBudget) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_BillingBudget) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -449,7 +449,7 @@ func (j *jsiiProxy_BillingBudget) validateSetOwnershipScopeParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_BillingBudget) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_BillingBudget) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -513,4 +513,3 @@ func validateNewBillingBudgetParameters(scope constructs.Construct, id *string, 
 
 	return nil
 }
-

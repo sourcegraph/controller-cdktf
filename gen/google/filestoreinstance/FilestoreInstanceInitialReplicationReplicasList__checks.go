@@ -34,7 +34,7 @@ func (f *jsiiProxy_FilestoreInstanceInitialReplicationReplicasList) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_FilestoreInstanceInitialReplicationReplicasList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_FilestoreInstanceInitialReplicationReplicasList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewFilestoreInstanceInitialReplicationReplicasListParameters(terraf
 
 	return nil
 }
-

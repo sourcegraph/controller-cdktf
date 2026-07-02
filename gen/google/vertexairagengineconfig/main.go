@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vertexAiRagEngineConfig.VertexAiRagEngineConfig",
-		reflect.TypeOf((*VertexAiRagEngineConfig)(nil)).Elem(),
+		reflect.TypeFor[VertexAiRagEngineConfig](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,7 +70,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VertexAiRagEngineConfig{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -78,19 +78,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vertexAiRagEngineConfig.VertexAiRagEngineConfigConfig",
-		reflect.TypeOf((*VertexAiRagEngineConfigConfig)(nil)).Elem(),
+		reflect.TypeFor[VertexAiRagEngineConfigConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vertexAiRagEngineConfig.VertexAiRagEngineConfigRagManagedDbConfig",
-		reflect.TypeOf((*VertexAiRagEngineConfigRagManagedDbConfig)(nil)).Elem(),
+		reflect.TypeFor[VertexAiRagEngineConfigRagManagedDbConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vertexAiRagEngineConfig.VertexAiRagEngineConfigRagManagedDbConfigBasic",
-		reflect.TypeOf((*VertexAiRagEngineConfigRagManagedDbConfigBasic)(nil)).Elem(),
+		reflect.TypeFor[VertexAiRagEngineConfigRagManagedDbConfigBasic](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vertexAiRagEngineConfig.VertexAiRagEngineConfigRagManagedDbConfigBasicOutputReference",
-		reflect.TypeOf((*VertexAiRagEngineConfigRagManagedDbConfigBasicOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VertexAiRagEngineConfigRagManagedDbConfigBasicOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -114,7 +114,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VertexAiRagEngineConfigRagManagedDbConfigBasicOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -122,7 +122,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vertexAiRagEngineConfig.VertexAiRagEngineConfigRagManagedDbConfigOutputReference",
-		reflect.TypeOf((*VertexAiRagEngineConfigRagManagedDbConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VertexAiRagEngineConfigRagManagedDbConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "basic", GoGetter: "Basic"},
 			_jsii_.MemberProperty{JsiiProperty: "basicInput", GoGetter: "BasicInput"},
@@ -158,7 +158,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "unprovisioned", GoGetter: "Unprovisioned"},
 			_jsii_.MemberProperty{JsiiProperty: "unprovisionedInput", GoGetter: "UnprovisionedInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VertexAiRagEngineConfigRagManagedDbConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -166,11 +166,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vertexAiRagEngineConfig.VertexAiRagEngineConfigRagManagedDbConfigScaled",
-		reflect.TypeOf((*VertexAiRagEngineConfigRagManagedDbConfigScaled)(nil)).Elem(),
+		reflect.TypeFor[VertexAiRagEngineConfigRagManagedDbConfigScaled](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vertexAiRagEngineConfig.VertexAiRagEngineConfigRagManagedDbConfigScaledOutputReference",
-		reflect.TypeOf((*VertexAiRagEngineConfigRagManagedDbConfigScaledOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VertexAiRagEngineConfigRagManagedDbConfigScaledOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -194,7 +194,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VertexAiRagEngineConfigRagManagedDbConfigScaledOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -202,11 +202,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vertexAiRagEngineConfig.VertexAiRagEngineConfigRagManagedDbConfigUnprovisioned",
-		reflect.TypeOf((*VertexAiRagEngineConfigRagManagedDbConfigUnprovisioned)(nil)).Elem(),
+		reflect.TypeFor[VertexAiRagEngineConfigRagManagedDbConfigUnprovisioned](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vertexAiRagEngineConfig.VertexAiRagEngineConfigRagManagedDbConfigUnprovisionedOutputReference",
-		reflect.TypeOf((*VertexAiRagEngineConfigRagManagedDbConfigUnprovisionedOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VertexAiRagEngineConfigRagManagedDbConfigUnprovisionedOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -230,7 +230,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VertexAiRagEngineConfigRagManagedDbConfigUnprovisionedOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -238,11 +238,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vertexAiRagEngineConfig.VertexAiRagEngineConfigTimeouts",
-		reflect.TypeOf((*VertexAiRagEngineConfigTimeouts)(nil)).Elem(),
+		reflect.TypeFor[VertexAiRagEngineConfigTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vertexAiRagEngineConfig.VertexAiRagEngineConfigTimeoutsOutputReference",
-		reflect.TypeOf((*VertexAiRagEngineConfigTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VertexAiRagEngineConfigTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -275,7 +275,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VertexAiRagEngineConfigTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

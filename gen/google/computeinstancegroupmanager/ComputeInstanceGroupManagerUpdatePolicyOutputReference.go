@@ -12,9 +12,9 @@ type ComputeInstanceGroupManagerUpdatePolicyOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -64,7 +64,7 @@ type ComputeInstanceGroupManagerUpdatePolicyOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -93,7 +93,7 @@ type ComputeInstanceGroupManagerUpdatePolicyOutputReference interface {
 	ResetReplacementMethod()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -106,8 +106,8 @@ type jsiiProxy_ComputeInstanceGroupManagerUpdatePolicyOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ComputeInstanceGroupManagerUpdatePolicyOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeInstanceGroupManagerUpdatePolicyOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -336,7 +336,6 @@ func (j *jsiiProxy_ComputeInstanceGroupManagerUpdatePolicyOutputReference) TypeI
 	return returns
 }
 
-
 func NewComputeInstanceGroupManagerUpdatePolicyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ComputeInstanceGroupManagerUpdatePolicyOutputReference {
 	_init_.Initialize()
 
@@ -347,7 +346,7 @@ func NewComputeInstanceGroupManagerUpdatePolicyOutputReference(terraformResource
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerUpdatePolicyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -359,12 +358,12 @@ func NewComputeInstanceGroupManagerUpdatePolicyOutputReference_Override(c Comput
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerUpdatePolicyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceGroupManagerUpdatePolicyOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ComputeInstanceGroupManagerUpdatePolicyOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -375,7 +374,7 @@ func (j *jsiiProxy_ComputeInstanceGroupManagerUpdatePolicyOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceGroupManagerUpdatePolicyOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ComputeInstanceGroupManagerUpdatePolicyOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -386,7 +385,7 @@ func (j *jsiiProxy_ComputeInstanceGroupManagerUpdatePolicyOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceGroupManagerUpdatePolicyOutputReference)SetInternalValue(val *ComputeInstanceGroupManagerUpdatePolicy) {
+func (j *jsiiProxy_ComputeInstanceGroupManagerUpdatePolicyOutputReference) SetInternalValue(val *ComputeInstanceGroupManagerUpdatePolicy) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -397,7 +396,7 @@ func (j *jsiiProxy_ComputeInstanceGroupManagerUpdatePolicyOutputReference)SetInt
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceGroupManagerUpdatePolicyOutputReference)SetMaxSurgeFixed(val *float64) {
+func (j *jsiiProxy_ComputeInstanceGroupManagerUpdatePolicyOutputReference) SetMaxSurgeFixed(val *float64) {
 	if err := j.validateSetMaxSurgeFixedParameters(val); err != nil {
 		panic(err)
 	}
@@ -408,7 +407,7 @@ func (j *jsiiProxy_ComputeInstanceGroupManagerUpdatePolicyOutputReference)SetMax
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceGroupManagerUpdatePolicyOutputReference)SetMaxSurgePercent(val *float64) {
+func (j *jsiiProxy_ComputeInstanceGroupManagerUpdatePolicyOutputReference) SetMaxSurgePercent(val *float64) {
 	if err := j.validateSetMaxSurgePercentParameters(val); err != nil {
 		panic(err)
 	}
@@ -419,7 +418,7 @@ func (j *jsiiProxy_ComputeInstanceGroupManagerUpdatePolicyOutputReference)SetMax
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceGroupManagerUpdatePolicyOutputReference)SetMaxUnavailableFixed(val *float64) {
+func (j *jsiiProxy_ComputeInstanceGroupManagerUpdatePolicyOutputReference) SetMaxUnavailableFixed(val *float64) {
 	if err := j.validateSetMaxUnavailableFixedParameters(val); err != nil {
 		panic(err)
 	}
@@ -430,7 +429,7 @@ func (j *jsiiProxy_ComputeInstanceGroupManagerUpdatePolicyOutputReference)SetMax
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceGroupManagerUpdatePolicyOutputReference)SetMaxUnavailablePercent(val *float64) {
+func (j *jsiiProxy_ComputeInstanceGroupManagerUpdatePolicyOutputReference) SetMaxUnavailablePercent(val *float64) {
 	if err := j.validateSetMaxUnavailablePercentParameters(val); err != nil {
 		panic(err)
 	}
@@ -441,7 +440,7 @@ func (j *jsiiProxy_ComputeInstanceGroupManagerUpdatePolicyOutputReference)SetMax
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceGroupManagerUpdatePolicyOutputReference)SetMinimalAction(val *string) {
+func (j *jsiiProxy_ComputeInstanceGroupManagerUpdatePolicyOutputReference) SetMinimalAction(val *string) {
 	if err := j.validateSetMinimalActionParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,7 +451,7 @@ func (j *jsiiProxy_ComputeInstanceGroupManagerUpdatePolicyOutputReference)SetMin
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceGroupManagerUpdatePolicyOutputReference)SetMostDisruptiveAllowedAction(val *string) {
+func (j *jsiiProxy_ComputeInstanceGroupManagerUpdatePolicyOutputReference) SetMostDisruptiveAllowedAction(val *string) {
 	if err := j.validateSetMostDisruptiveAllowedActionParameters(val); err != nil {
 		panic(err)
 	}
@@ -463,7 +462,7 @@ func (j *jsiiProxy_ComputeInstanceGroupManagerUpdatePolicyOutputReference)SetMos
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceGroupManagerUpdatePolicyOutputReference)SetReplacementMethod(val *string) {
+func (j *jsiiProxy_ComputeInstanceGroupManagerUpdatePolicyOutputReference) SetReplacementMethod(val *string) {
 	if err := j.validateSetReplacementMethodParameters(val); err != nil {
 		panic(err)
 	}
@@ -474,7 +473,7 @@ func (j *jsiiProxy_ComputeInstanceGroupManagerUpdatePolicyOutputReference)SetRep
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceGroupManagerUpdatePolicyOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ComputeInstanceGroupManagerUpdatePolicyOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -485,7 +484,7 @@ func (j *jsiiProxy_ComputeInstanceGroupManagerUpdatePolicyOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceGroupManagerUpdatePolicyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeInstanceGroupManagerUpdatePolicyOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -496,7 +495,7 @@ func (j *jsiiProxy_ComputeInstanceGroupManagerUpdatePolicyOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceGroupManagerUpdatePolicyOutputReference)SetType(val *string) {
+func (j *jsiiProxy_ComputeInstanceGroupManagerUpdatePolicyOutputReference) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -520,16 +519,16 @@ func (c *jsiiProxy_ComputeInstanceGroupManagerUpdatePolicyOutputReference) Compu
 	return returns
 }
 
-func (c *jsiiProxy_ComputeInstanceGroupManagerUpdatePolicyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComputeInstanceGroupManagerUpdatePolicyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -545,7 +544,7 @@ func (c *jsiiProxy_ComputeInstanceGroupManagerUpdatePolicyOutputReference) GetBo
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -561,7 +560,7 @@ func (c *jsiiProxy_ComputeInstanceGroupManagerUpdatePolicyOutputReference) GetBo
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -577,7 +576,7 @@ func (c *jsiiProxy_ComputeInstanceGroupManagerUpdatePolicyOutputReference) GetLi
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -593,7 +592,7 @@ func (c *jsiiProxy_ComputeInstanceGroupManagerUpdatePolicyOutputReference) GetNu
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -609,7 +608,7 @@ func (c *jsiiProxy_ComputeInstanceGroupManagerUpdatePolicyOutputReference) GetNu
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -625,7 +624,7 @@ func (c *jsiiProxy_ComputeInstanceGroupManagerUpdatePolicyOutputReference) GetNu
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -641,7 +640,7 @@ func (c *jsiiProxy_ComputeInstanceGroupManagerUpdatePolicyOutputReference) GetSt
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -657,7 +656,7 @@ func (c *jsiiProxy_ComputeInstanceGroupManagerUpdatePolicyOutputReference) GetSt
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -686,7 +685,7 @@ func (c *jsiiProxy_ComputeInstanceGroupManagerUpdatePolicyOutputReference) Inter
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -741,16 +740,16 @@ func (c *jsiiProxy_ComputeInstanceGroupManagerUpdatePolicyOutputReference) Reset
 	)
 }
 
-func (c *jsiiProxy_ComputeInstanceGroupManagerUpdatePolicyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ComputeInstanceGroupManagerUpdatePolicyOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -769,4 +768,3 @@ func (c *jsiiProxy_ComputeInstanceGroupManagerUpdatePolicyOutputReference) ToStr
 
 	return returns
 }
-

@@ -90,7 +90,7 @@ func (c *jsiiProxy_ComputeRegionInstanceTemplateSchedulingOutputReference) valid
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionInstanceTemplateSchedulingOutputReference) validatePutLocalSsdRecoveryTimeoutParameters(value interface{}) error {
+func (c *jsiiProxy_ComputeRegionInstanceTemplateSchedulingOutputReference) validatePutLocalSsdRecoveryTimeoutParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -132,7 +132,7 @@ func (c *jsiiProxy_ComputeRegionInstanceTemplateSchedulingOutputReference) valid
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionInstanceTemplateSchedulingOutputReference) validatePutNodeAffinitiesParameters(value interface{}) error {
+func (c *jsiiProxy_ComputeRegionInstanceTemplateSchedulingOutputReference) validatePutNodeAffinitiesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -182,7 +182,7 @@ func (c *jsiiProxy_ComputeRegionInstanceTemplateSchedulingOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionInstanceTemplateSchedulingOutputReference) validateSetAutomaticRestartParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionInstanceTemplateSchedulingOutputReference) validateSetAutomaticRestartParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -210,7 +210,7 @@ func (j *jsiiProxy_ComputeRegionInstanceTemplateSchedulingOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionInstanceTemplateSchedulingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionInstanceTemplateSchedulingOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -307,7 +307,7 @@ func (j *jsiiProxy_ComputeRegionInstanceTemplateSchedulingOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionInstanceTemplateSchedulingOutputReference) validateSetPreemptibleParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionInstanceTemplateSchedulingOutputReference) validateSetPreemptibleParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -370,4 +370,3 @@ func validateNewComputeRegionInstanceTemplateSchedulingOutputReferenceParameters
 
 	return nil
 }
-

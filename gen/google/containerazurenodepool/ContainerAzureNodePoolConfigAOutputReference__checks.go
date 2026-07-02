@@ -131,7 +131,7 @@ func (c *jsiiProxy_ContainerAzureNodePoolConfigAOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_ContainerAzureNodePoolConfigAOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerAzureNodePoolConfigAOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -255,4 +255,3 @@ func validateNewContainerAzureNodePoolConfigAOutputReferenceParameters(terraform
 
 	return nil
 }
-

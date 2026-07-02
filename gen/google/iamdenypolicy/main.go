@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.iamDenyPolicy.IamDenyPolicy",
-		reflect.TypeOf((*IamDenyPolicy)(nil)).Elem(),
+		reflect.TypeFor[IamDenyPolicy](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -71,7 +71,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IamDenyPolicy{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -79,23 +79,23 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.iamDenyPolicy.IamDenyPolicyConfig",
-		reflect.TypeOf((*IamDenyPolicyConfig)(nil)).Elem(),
+		reflect.TypeFor[IamDenyPolicyConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.iamDenyPolicy.IamDenyPolicyRules",
-		reflect.TypeOf((*IamDenyPolicyRules)(nil)).Elem(),
+		reflect.TypeFor[IamDenyPolicyRules](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.iamDenyPolicy.IamDenyPolicyRulesDenyRule",
-		reflect.TypeOf((*IamDenyPolicyRulesDenyRule)(nil)).Elem(),
+		reflect.TypeFor[IamDenyPolicyRulesDenyRule](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.iamDenyPolicy.IamDenyPolicyRulesDenyRuleDenialCondition",
-		reflect.TypeOf((*IamDenyPolicyRulesDenyRuleDenialCondition)(nil)).Elem(),
+		reflect.TypeFor[IamDenyPolicyRulesDenyRuleDenialCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.iamDenyPolicy.IamDenyPolicyRulesDenyRuleDenialConditionOutputReference",
-		reflect.TypeOf((*IamDenyPolicyRulesDenyRuleDenialConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IamDenyPolicyRulesDenyRuleDenialConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -130,7 +130,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IamDenyPolicyRulesDenyRuleDenialConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -138,7 +138,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.iamDenyPolicy.IamDenyPolicyRulesDenyRuleOutputReference",
-		reflect.TypeOf((*IamDenyPolicyRulesDenyRuleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IamDenyPolicyRulesDenyRuleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -178,7 +178,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IamDenyPolicyRulesDenyRuleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -186,7 +186,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.iamDenyPolicy.IamDenyPolicyRulesList",
-		reflect.TypeOf((*IamDenyPolicyRulesList)(nil)).Elem(),
+		reflect.TypeFor[IamDenyPolicyRulesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -200,7 +200,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IamDenyPolicyRulesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -208,7 +208,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.iamDenyPolicy.IamDenyPolicyRulesOutputReference",
-		reflect.TypeOf((*IamDenyPolicyRulesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IamDenyPolicyRulesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -239,7 +239,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IamDenyPolicyRulesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -247,11 +247,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.iamDenyPolicy.IamDenyPolicyTimeouts",
-		reflect.TypeOf((*IamDenyPolicyTimeouts)(nil)).Elem(),
+		reflect.TypeFor[IamDenyPolicyTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.iamDenyPolicy.IamDenyPolicyTimeoutsOutputReference",
-		reflect.TypeOf((*IamDenyPolicyTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IamDenyPolicyTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -284,7 +284,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IamDenyPolicyTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

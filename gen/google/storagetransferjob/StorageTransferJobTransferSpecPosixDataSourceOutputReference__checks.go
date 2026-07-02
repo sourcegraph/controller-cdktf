@@ -98,7 +98,7 @@ func (s *jsiiProxy_StorageTransferJobTransferSpecPosixDataSourceOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_StorageTransferJobTransferSpecPosixDataSourceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_StorageTransferJobTransferSpecPosixDataSourceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewStorageTransferJobTransferSpecPosixDataSourceOutputReferencePara
 
 	return nil
 }
-

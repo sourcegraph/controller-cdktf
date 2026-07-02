@@ -98,7 +98,7 @@ func (a *jsiiProxy_ApihubPluginConfigTemplateAdditionalConfigTemplateMultiSelect
 	return nil
 }
 
-func (j *jsiiProxy_ApihubPluginConfigTemplateAdditionalConfigTemplateMultiSelectOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ApihubPluginConfigTemplateAdditionalConfigTemplateMultiSelectOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -187,7 +187,7 @@ func (j *jsiiProxy_ApihubPluginConfigTemplateAdditionalConfigTemplateMultiSelect
 	return nil
 }
 
-func (j *jsiiProxy_ApihubPluginConfigTemplateAdditionalConfigTemplateMultiSelectOptionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ApihubPluginConfigTemplateAdditionalConfigTemplateMultiSelectOptionsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewApihubPluginConfigTemplateAdditionalConfigTemplateMultiSelectOpt
 
 	return nil
 }
-

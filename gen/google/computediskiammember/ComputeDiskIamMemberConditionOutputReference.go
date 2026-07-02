@@ -12,9 +12,9 @@ type ComputeDiskIamMemberConditionOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -49,7 +49,7 @@ type ComputeDiskIamMemberConditionOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -73,7 +73,7 @@ type ComputeDiskIamMemberConditionOutputReference interface {
 	ResetDescription()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -86,8 +86,8 @@ type jsiiProxy_ComputeDiskIamMemberConditionOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ComputeDiskIamMemberConditionOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeDiskIamMemberConditionOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -216,7 +216,6 @@ func (j *jsiiProxy_ComputeDiskIamMemberConditionOutputReference) TitleInput() *s
 	return returns
 }
 
-
 func NewComputeDiskIamMemberConditionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ComputeDiskIamMemberConditionOutputReference {
 	_init_.Initialize()
 
@@ -227,7 +226,7 @@ func NewComputeDiskIamMemberConditionOutputReference(terraformResource cdktf.IIn
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeDiskIamMember.ComputeDiskIamMemberConditionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -239,12 +238,12 @@ func NewComputeDiskIamMemberConditionOutputReference_Override(c ComputeDiskIamMe
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeDiskIamMember.ComputeDiskIamMemberConditionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputeDiskIamMemberConditionOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ComputeDiskIamMemberConditionOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_ComputeDiskIamMemberConditionOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_ComputeDiskIamMemberConditionOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ComputeDiskIamMemberConditionOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_ComputeDiskIamMemberConditionOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_ComputeDiskIamMemberConditionOutputReference)SetDescription(val *string) {
+func (j *jsiiProxy_ComputeDiskIamMemberConditionOutputReference) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_ComputeDiskIamMemberConditionOutputReference)SetDescription(v
 	)
 }
 
-func (j *jsiiProxy_ComputeDiskIamMemberConditionOutputReference)SetExpression(val *string) {
+func (j *jsiiProxy_ComputeDiskIamMemberConditionOutputReference) SetExpression(val *string) {
 	if err := j.validateSetExpressionParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_ComputeDiskIamMemberConditionOutputReference)SetExpression(va
 	)
 }
 
-func (j *jsiiProxy_ComputeDiskIamMemberConditionOutputReference)SetInternalValue(val *ComputeDiskIamMemberCondition) {
+func (j *jsiiProxy_ComputeDiskIamMemberConditionOutputReference) SetInternalValue(val *ComputeDiskIamMemberCondition) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -299,7 +298,7 @@ func (j *jsiiProxy_ComputeDiskIamMemberConditionOutputReference)SetInternalValue
 	)
 }
 
-func (j *jsiiProxy_ComputeDiskIamMemberConditionOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ComputeDiskIamMemberConditionOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -310,7 +309,7 @@ func (j *jsiiProxy_ComputeDiskIamMemberConditionOutputReference)SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_ComputeDiskIamMemberConditionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeDiskIamMemberConditionOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -321,7 +320,7 @@ func (j *jsiiProxy_ComputeDiskIamMemberConditionOutputReference)SetTerraformReso
 	)
 }
 
-func (j *jsiiProxy_ComputeDiskIamMemberConditionOutputReference)SetTitle(val *string) {
+func (j *jsiiProxy_ComputeDiskIamMemberConditionOutputReference) SetTitle(val *string) {
 	if err := j.validateSetTitleParameters(val); err != nil {
 		panic(err)
 	}
@@ -345,16 +344,16 @@ func (c *jsiiProxy_ComputeDiskIamMemberConditionOutputReference) ComputeFqn() *s
 	return returns
 }
 
-func (c *jsiiProxy_ComputeDiskIamMemberConditionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComputeDiskIamMemberConditionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -370,7 +369,7 @@ func (c *jsiiProxy_ComputeDiskIamMemberConditionOutputReference) GetBooleanAttri
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -386,7 +385,7 @@ func (c *jsiiProxy_ComputeDiskIamMemberConditionOutputReference) GetBooleanMapAt
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -402,7 +401,7 @@ func (c *jsiiProxy_ComputeDiskIamMemberConditionOutputReference) GetListAttribut
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -418,7 +417,7 @@ func (c *jsiiProxy_ComputeDiskIamMemberConditionOutputReference) GetNumberAttrib
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -434,7 +433,7 @@ func (c *jsiiProxy_ComputeDiskIamMemberConditionOutputReference) GetNumberListAt
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -450,7 +449,7 @@ func (c *jsiiProxy_ComputeDiskIamMemberConditionOutputReference) GetNumberMapAtt
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -466,7 +465,7 @@ func (c *jsiiProxy_ComputeDiskIamMemberConditionOutputReference) GetStringAttrib
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -482,7 +481,7 @@ func (c *jsiiProxy_ComputeDiskIamMemberConditionOutputReference) GetStringMapAtt
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -511,7 +510,7 @@ func (c *jsiiProxy_ComputeDiskIamMemberConditionOutputReference) InterpolationFo
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -526,16 +525,16 @@ func (c *jsiiProxy_ComputeDiskIamMemberConditionOutputReference) ResetDescriptio
 	)
 }
 
-func (c *jsiiProxy_ComputeDiskIamMemberConditionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ComputeDiskIamMemberConditionOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -554,4 +553,3 @@ func (c *jsiiProxy_ComputeDiskIamMemberConditionOutputReference) ToString() *str
 
 	return returns
 }
-

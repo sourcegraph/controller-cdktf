@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComposerEnvironmentConfigEncryptionConfigOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_ComposerEnvironmentConfigEncryptionConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComposerEnvironmentConfigEncryptionConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewComposerEnvironmentConfigEncryptionConfigOutputReferenceParamete
 
 	return nil
 }
-

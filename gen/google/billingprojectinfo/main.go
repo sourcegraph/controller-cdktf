@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.billingProjectInfo.BillingProjectInfo",
-		reflect.TypeOf((*BillingProjectInfo)(nil)).Elem(),
+		reflect.TypeFor[BillingProjectInfo](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -65,7 +65,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BillingProjectInfo{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -73,15 +73,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.billingProjectInfo.BillingProjectInfoConfig",
-		reflect.TypeOf((*BillingProjectInfoConfig)(nil)).Elem(),
+		reflect.TypeFor[BillingProjectInfoConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.billingProjectInfo.BillingProjectInfoTimeouts",
-		reflect.TypeOf((*BillingProjectInfoTimeouts)(nil)).Elem(),
+		reflect.TypeFor[BillingProjectInfoTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.billingProjectInfo.BillingProjectInfoTimeoutsOutputReference",
-		reflect.TypeOf((*BillingProjectInfoTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BillingProjectInfoTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -114,7 +114,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BillingProjectInfoTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -98,7 +98,7 @@ func (b *jsiiProxy_BigtableInstanceIamBindingConditionOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_BigtableInstanceIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BigtableInstanceIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewBigtableInstanceIamBindingConditionOutputReferenceParameters(ter
 
 	return nil
 }
-

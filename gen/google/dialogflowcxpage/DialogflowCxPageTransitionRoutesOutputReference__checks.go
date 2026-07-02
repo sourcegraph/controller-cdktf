@@ -109,7 +109,7 @@ func (d *jsiiProxy_DialogflowCxPageTransitionRoutesOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxPageTransitionRoutesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxPageTransitionRoutesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -190,7 +190,7 @@ func (j *jsiiProxy_DialogflowCxPageTransitionRoutesOutputReference) validateSetI
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxPageTransitionRoutesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxPageTransitionRoutesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -265,4 +265,3 @@ func validateNewDialogflowCxPageTransitionRoutesOutputReferenceParameters(terraf
 
 	return nil
 }
-

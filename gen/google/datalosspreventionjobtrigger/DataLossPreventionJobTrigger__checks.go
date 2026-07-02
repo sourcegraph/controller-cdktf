@@ -19,7 +19,7 @@ func (d *jsiiProxy_DataLossPreventionJobTrigger) validateAddMoveTargetParameters
 	return nil
 }
 
-func (d *jsiiProxy_DataLossPreventionJobTrigger) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataLossPreventionJobTrigger) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (d *jsiiProxy_DataLossPreventionJobTrigger) validateMoveFromIdParameters(id
 	return nil
 }
 
-func (d *jsiiProxy_DataLossPreventionJobTrigger) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (d *jsiiProxy_DataLossPreventionJobTrigger) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -226,7 +226,7 @@ func (d *jsiiProxy_DataLossPreventionJobTrigger) validatePutTimeoutsParameters(v
 	return nil
 }
 
-func (d *jsiiProxy_DataLossPreventionJobTrigger) validatePutTriggersParameters(value interface{}) error {
+func (d *jsiiProxy_DataLossPreventionJobTrigger) validatePutTriggersParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -273,7 +273,7 @@ func validateDataLossPreventionJobTrigger_GenerateConfigForImportParameters(scop
 	return nil
 }
 
-func validateDataLossPreventionJobTrigger_IsConstructParameters(x interface{}) error {
+func validateDataLossPreventionJobTrigger_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -281,7 +281,7 @@ func validateDataLossPreventionJobTrigger_IsConstructParameters(x interface{}) e
 	return nil
 }
 
-func validateDataLossPreventionJobTrigger_IsTerraformElementParameters(x interface{}) error {
+func validateDataLossPreventionJobTrigger_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -289,7 +289,7 @@ func validateDataLossPreventionJobTrigger_IsTerraformElementParameters(x interfa
 	return nil
 }
 
-func validateDataLossPreventionJobTrigger_IsTerraformResourceParameters(x interface{}) error {
+func validateDataLossPreventionJobTrigger_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -297,7 +297,7 @@ func validateDataLossPreventionJobTrigger_IsTerraformResourceParameters(x interf
 	return nil
 }
 
-func (j *jsiiProxy_DataLossPreventionJobTrigger) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_DataLossPreventionJobTrigger) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -330,7 +330,7 @@ func (j *jsiiProxy_DataLossPreventionJobTrigger) validateSetConnectionParameters
 	return nil
 }
 
-func (j *jsiiProxy_DataLossPreventionJobTrigger) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataLossPreventionJobTrigger) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -427,7 +427,7 @@ func (j *jsiiProxy_DataLossPreventionJobTrigger) validateSetParentParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_DataLossPreventionJobTrigger) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_DataLossPreventionJobTrigger) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -507,4 +507,3 @@ func validateNewDataLossPreventionJobTriggerParameters(scope constructs.Construc
 
 	return nil
 }
-

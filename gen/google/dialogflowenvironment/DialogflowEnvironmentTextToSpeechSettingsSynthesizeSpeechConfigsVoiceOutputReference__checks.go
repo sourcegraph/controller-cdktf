@@ -98,7 +98,7 @@ func (d *jsiiProxy_DialogflowEnvironmentTextToSpeechSettingsSynthesizeSpeechConf
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowEnvironmentTextToSpeechSettingsSynthesizeSpeechConfigsVoiceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowEnvironmentTextToSpeechSettingsSynthesizeSpeechConfigsVoiceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewDialogflowEnvironmentTextToSpeechSettingsSynthesizeSpeechConfigs
 
 	return nil
 }
-

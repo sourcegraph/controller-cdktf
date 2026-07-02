@@ -34,7 +34,7 @@ func (c *jsiiProxy_ComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklySche
 	return nil
 }
 
-func (j *jsiiProxy_ComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleDayOfWeeksList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleDayOfWeeksList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklySchedul
 
 	return nil
 }
-

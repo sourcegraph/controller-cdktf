@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.artifactRegistryRule.ArtifactRegistryRule",
-		reflect.TypeOf((*ArtifactRegistryRule)(nil)).Elem(),
+		reflect.TypeFor[ArtifactRegistryRule](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
 			_jsii_.MemberProperty{JsiiProperty: "actionInput", GoGetter: "ActionInput"},
@@ -84,7 +84,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ArtifactRegistryRule{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -92,11 +92,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.artifactRegistryRule.ArtifactRegistryRuleCondition",
-		reflect.TypeOf((*ArtifactRegistryRuleCondition)(nil)).Elem(),
+		reflect.TypeFor[ArtifactRegistryRuleCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.artifactRegistryRule.ArtifactRegistryRuleConditionOutputReference",
-		reflect.TypeOf((*ArtifactRegistryRuleConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ArtifactRegistryRuleConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -131,7 +131,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ArtifactRegistryRuleConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -139,15 +139,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.artifactRegistryRule.ArtifactRegistryRuleConfig",
-		reflect.TypeOf((*ArtifactRegistryRuleConfig)(nil)).Elem(),
+		reflect.TypeFor[ArtifactRegistryRuleConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.artifactRegistryRule.ArtifactRegistryRuleTimeouts",
-		reflect.TypeOf((*ArtifactRegistryRuleTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ArtifactRegistryRuleTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.artifactRegistryRule.ArtifactRegistryRuleTimeoutsOutputReference",
-		reflect.TypeOf((*ArtifactRegistryRuleTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ArtifactRegistryRuleTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -180,7 +180,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ArtifactRegistryRuleTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

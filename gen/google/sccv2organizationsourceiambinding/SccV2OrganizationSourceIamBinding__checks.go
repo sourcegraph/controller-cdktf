@@ -19,7 +19,7 @@ func (s *jsiiProxy_SccV2OrganizationSourceIamBinding) validateAddMoveTargetParam
 	return nil
 }
 
-func (s *jsiiProxy_SccV2OrganizationSourceIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_SccV2OrganizationSourceIamBinding) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_SccV2OrganizationSourceIamBinding) validateMoveFromIdParamete
 	return nil
 }
 
-func (s *jsiiProxy_SccV2OrganizationSourceIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_SccV2OrganizationSourceIamBinding) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateSccV2OrganizationSourceIamBinding_GenerateConfigForImportParameters
 	return nil
 }
 
-func validateSccV2OrganizationSourceIamBinding_IsConstructParameters(x interface{}) error {
+func validateSccV2OrganizationSourceIamBinding_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateSccV2OrganizationSourceIamBinding_IsConstructParameters(x interface
 	return nil
 }
 
-func validateSccV2OrganizationSourceIamBinding_IsTerraformElementParameters(x interface{}) error {
+func validateSccV2OrganizationSourceIamBinding_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateSccV2OrganizationSourceIamBinding_IsTerraformElementParameters(x in
 	return nil
 }
 
-func validateSccV2OrganizationSourceIamBinding_IsTerraformResourceParameters(x interface{}) error {
+func validateSccV2OrganizationSourceIamBinding_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateSccV2OrganizationSourceIamBinding_IsTerraformResourceParameters(x i
 	return nil
 }
 
-func (j *jsiiProxy_SccV2OrganizationSourceIamBinding) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_SccV2OrganizationSourceIamBinding) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_SccV2OrganizationSourceIamBinding) validateSetConnectionParam
 	return nil
 }
 
-func (j *jsiiProxy_SccV2OrganizationSourceIamBinding) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_SccV2OrganizationSourceIamBinding) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -377,7 +377,7 @@ func (j *jsiiProxy_SccV2OrganizationSourceIamBinding) validateSetOrganizationPar
 	return nil
 }
 
-func (j *jsiiProxy_SccV2OrganizationSourceIamBinding) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_SccV2OrganizationSourceIamBinding) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -457,4 +457,3 @@ func validateNewSccV2OrganizationSourceIamBindingParameters(scope constructs.Con
 
 	return nil
 }
-

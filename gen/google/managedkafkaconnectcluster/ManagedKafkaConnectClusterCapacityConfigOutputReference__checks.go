@@ -98,7 +98,7 @@ func (m *jsiiProxy_ManagedKafkaConnectClusterCapacityConfigOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_ManagedKafkaConnectClusterCapacityConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ManagedKafkaConnectClusterCapacityConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewManagedKafkaConnectClusterCapacityConfigOutputReferenceParameter
 
 	return nil
 }
-

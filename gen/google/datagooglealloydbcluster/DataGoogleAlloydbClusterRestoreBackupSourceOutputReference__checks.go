@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleAlloydbClusterRestoreBackupSourceOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleAlloydbClusterRestoreBackupSourceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleAlloydbClusterRestoreBackupSourceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleAlloydbClusterRestoreBackupSourceOutputReferenceParame
 
 	return nil
 }
-

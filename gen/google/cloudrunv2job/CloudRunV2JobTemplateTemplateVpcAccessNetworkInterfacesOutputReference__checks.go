@@ -98,7 +98,7 @@ func (c *jsiiProxy_CloudRunV2JobTemplateTemplateVpcAccessNetworkInterfacesOutput
 	return nil
 }
 
-func (j *jsiiProxy_CloudRunV2JobTemplateTemplateVpcAccessNetworkInterfacesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudRunV2JobTemplateTemplateVpcAccessNetworkInterfacesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_CloudRunV2JobTemplateTemplateVpcAccessNetworkInterfacesOutput
 	return nil
 }
 
-func (j *jsiiProxy_CloudRunV2JobTemplateTemplateVpcAccessNetworkInterfacesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CloudRunV2JobTemplateTemplateVpcAccessNetworkInterfacesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewCloudRunV2JobTemplateTemplateVpcAccessNetworkInterfacesOutputRef
 
 	return nil
 }
-

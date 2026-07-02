@@ -6,9 +6,9 @@ import (
 
 type BigtableAppProfileConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type BigtableAppProfileConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The unique name of the app profile in the form '[_a-zA-Z0-9][-_.a-zA-Z0-9]*'.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigtable_app_profile#app_profile_id BigtableAppProfile#app_profile_id}
@@ -39,7 +39,7 @@ type BigtableAppProfileConfig struct {
 	// If true, ignore safety checks when deleting/updating the app profile.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigtable_app_profile#ignore_warnings BigtableAppProfile#ignore_warnings}
-	IgnoreWarnings interface{} `field:"optional" json:"ignoreWarnings" yaml:"ignoreWarnings"`
+	IgnoreWarnings any `field:"optional" json:"ignoreWarnings" yaml:"ignoreWarnings"`
 	// The name of the instance to create the app profile within.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigtable_app_profile#instance BigtableAppProfile#instance}
@@ -56,7 +56,7 @@ type BigtableAppProfileConfig struct {
 	// consistency to improve availability.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigtable_app_profile#multi_cluster_routing_use_any BigtableAppProfile#multi_cluster_routing_use_any}
-	MultiClusterRoutingUseAny interface{} `field:"optional" json:"multiClusterRoutingUseAny" yaml:"multiClusterRoutingUseAny"`
+	MultiClusterRoutingUseAny any `field:"optional" json:"multiClusterRoutingUseAny" yaml:"multiClusterRoutingUseAny"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigtable_app_profile#project BigtableAppProfile#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// Must be used with multi-cluster routing.
@@ -64,7 +64,7 @@ type BigtableAppProfileConfig struct {
 	// If true, then this app profile will use row affinity sticky routing. With row affinity, Bigtable will route single row key requests based on the row key, rather than randomly. Instead, each row key will be assigned to a cluster by Cloud Bigtable, and will stick to that cluster. Choosing this option improves read-your-writes consistency for most requests under most circumstances, without sacrificing availability. Consistency is not guaranteed, as requests may still fail over between clusters in the event of errors or latency.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigtable_app_profile#row_affinity BigtableAppProfile#row_affinity}
-	RowAffinity interface{} `field:"optional" json:"rowAffinity" yaml:"rowAffinity"`
+	RowAffinity any `field:"optional" json:"rowAffinity" yaml:"rowAffinity"`
 	// single_cluster_routing block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigtable_app_profile#single_cluster_routing BigtableAppProfile#single_cluster_routing}
@@ -78,4 +78,3 @@ type BigtableAppProfileConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigtable_app_profile#timeouts BigtableAppProfile#timeouts}
 	Timeouts *BigtableAppProfileTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

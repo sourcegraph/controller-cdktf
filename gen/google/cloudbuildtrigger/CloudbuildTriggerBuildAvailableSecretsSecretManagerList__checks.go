@@ -34,7 +34,7 @@ func (c *jsiiProxy_CloudbuildTriggerBuildAvailableSecretsSecretManagerList) vali
 	return nil
 }
 
-func (j *jsiiProxy_CloudbuildTriggerBuildAvailableSecretsSecretManagerList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CloudbuildTriggerBuildAvailableSecretsSecretManagerList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewCloudbuildTriggerBuildAvailableSecretsSecretManagerListParameter
 
 	return nil
 }
-

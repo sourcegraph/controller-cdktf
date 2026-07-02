@@ -106,7 +106,7 @@ func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCertSubjectOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCertSubjectOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCertSubjectOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -254,4 +254,3 @@ func validateNewApigeeKeystoresAliasesSelfSignedCertSubjectOutputReferenceParame
 
 	return nil
 }
-

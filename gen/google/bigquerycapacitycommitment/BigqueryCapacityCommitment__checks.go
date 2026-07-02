@@ -19,7 +19,7 @@ func (b *jsiiProxy_BigqueryCapacityCommitment) validateAddMoveTargetParameters(m
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryCapacityCommitment) validateAddOverrideParameters(path *string, value interface{}) error {
+func (b *jsiiProxy_BigqueryCapacityCommitment) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (b *jsiiProxy_BigqueryCapacityCommitment) validateMoveFromIdParameters(id *
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryCapacityCommitment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (b *jsiiProxy_BigqueryCapacityCommitment) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateBigqueryCapacityCommitment_GenerateConfigForImportParameters(scope 
 	return nil
 }
 
-func validateBigqueryCapacityCommitment_IsConstructParameters(x interface{}) error {
+func validateBigqueryCapacityCommitment_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateBigqueryCapacityCommitment_IsConstructParameters(x interface{}) err
 	return nil
 }
 
-func validateBigqueryCapacityCommitment_IsTerraformElementParameters(x interface{}) error {
+func validateBigqueryCapacityCommitment_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateBigqueryCapacityCommitment_IsTerraformElementParameters(x interface
 	return nil
 }
 
-func validateBigqueryCapacityCommitment_IsTerraformResourceParameters(x interface{}) error {
+func validateBigqueryCapacityCommitment_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_BigqueryCapacityCommitment) validateSetCapacityCommitmentIdPa
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryCapacityCommitment) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryCapacityCommitment) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_BigqueryCapacityCommitment) validateSetConnectionParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryCapacityCommitment) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryCapacityCommitment) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -409,7 +409,7 @@ func (j *jsiiProxy_BigqueryCapacityCommitment) validateSetProjectParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryCapacityCommitment) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_BigqueryCapacityCommitment) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -489,4 +489,3 @@ func validateNewBigqueryCapacityCommitmentParameters(scope constructs.Construct,
 
 	return nil
 }
-

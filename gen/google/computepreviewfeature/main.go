@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computePreviewFeature.ComputePreviewFeature",
-		reflect.TypeOf((*ComputePreviewFeature)(nil)).Elem(),
+		reflect.TypeFor[ComputePreviewFeature](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "activationStatus", GoGetter: "ActivationStatus"},
 			_jsii_.MemberProperty{JsiiProperty: "activationStatusInput", GoGetter: "ActivationStatusInput"},
@@ -71,7 +71,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputePreviewFeature{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -79,15 +79,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computePreviewFeature.ComputePreviewFeatureConfig",
-		reflect.TypeOf((*ComputePreviewFeatureConfig)(nil)).Elem(),
+		reflect.TypeFor[ComputePreviewFeatureConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computePreviewFeature.ComputePreviewFeatureRolloutOperation",
-		reflect.TypeOf((*ComputePreviewFeatureRolloutOperation)(nil)).Elem(),
+		reflect.TypeFor[ComputePreviewFeatureRolloutOperation](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computePreviewFeature.ComputePreviewFeatureRolloutOperationOutputReference",
-		reflect.TypeOf((*ComputePreviewFeatureRolloutOperationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputePreviewFeatureRolloutOperationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -115,7 +115,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputePreviewFeatureRolloutOperationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -123,11 +123,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computePreviewFeature.ComputePreviewFeatureRolloutOperationRolloutInput",
-		reflect.TypeOf((*ComputePreviewFeatureRolloutOperationRolloutInput)(nil)).Elem(),
+		reflect.TypeFor[ComputePreviewFeatureRolloutOperationRolloutInput](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computePreviewFeature.ComputePreviewFeatureRolloutOperationRolloutInputOutputReference",
-		reflect.TypeOf((*ComputePreviewFeatureRolloutOperationRolloutInputOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputePreviewFeatureRolloutOperationRolloutInputOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -153,7 +153,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputePreviewFeatureRolloutOperationRolloutInputOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -161,11 +161,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computePreviewFeature.ComputePreviewFeatureTimeouts",
-		reflect.TypeOf((*ComputePreviewFeatureTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ComputePreviewFeatureTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computePreviewFeature.ComputePreviewFeatureTimeoutsOutputReference",
-		reflect.TypeOf((*ComputePreviewFeatureTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputePreviewFeatureTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -198,7 +198,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputePreviewFeatureTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

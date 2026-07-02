@@ -109,7 +109,7 @@ func (d *jsiiProxy_DiscoveryEngineAclConfigIdpConfigOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineAclConfigIdpConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DiscoveryEngineAclConfigIdpConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -217,4 +217,3 @@ func validateNewDiscoveryEngineAclConfigIdpConfigOutputReferenceParameters(terra
 
 	return nil
 }
-

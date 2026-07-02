@@ -12,9 +12,9 @@ type DataGoogleCloudRunV2WorkerPoolConditionsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -48,7 +48,7 @@ type DataGoogleCloudRunV2WorkerPoolConditionsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type DataGoogleCloudRunV2WorkerPoolConditionsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_DataGoogleCloudRunV2WorkerPoolConditionsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPoolConditionsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPoolConditionsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -234,7 +234,6 @@ func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPoolConditionsOutputReference) Type
 	return returns
 }
 
-
 func NewDataGoogleCloudRunV2WorkerPoolConditionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataGoogleCloudRunV2WorkerPoolConditionsOutputReference {
 	_init_.Initialize()
 
@@ -245,7 +244,7 @@ func NewDataGoogleCloudRunV2WorkerPoolConditionsOutputReference(terraformResourc
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleCloudRunV2WorkerPool.DataGoogleCloudRunV2WorkerPoolConditionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -257,12 +256,12 @@ func NewDataGoogleCloudRunV2WorkerPoolConditionsOutputReference_Override(d DataG
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleCloudRunV2WorkerPool.DataGoogleCloudRunV2WorkerPoolConditionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPoolConditionsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPoolConditionsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -273,7 +272,7 @@ func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPoolConditionsOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPoolConditionsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPoolConditionsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -284,7 +283,7 @@ func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPoolConditionsOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPoolConditionsOutputReference)SetInternalValue(val *DataGoogleCloudRunV2WorkerPoolConditions) {
+func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPoolConditionsOutputReference) SetInternalValue(val *DataGoogleCloudRunV2WorkerPoolConditions) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -295,7 +294,7 @@ func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPoolConditionsOutputReference)SetIn
 	)
 }
 
-func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPoolConditionsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPoolConditionsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -306,7 +305,7 @@ func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPoolConditionsOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPoolConditionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPoolConditionsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -330,16 +329,16 @@ func (d *jsiiProxy_DataGoogleCloudRunV2WorkerPoolConditionsOutputReference) Comp
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleCloudRunV2WorkerPoolConditionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataGoogleCloudRunV2WorkerPoolConditionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -355,7 +354,7 @@ func (d *jsiiProxy_DataGoogleCloudRunV2WorkerPoolConditionsOutputReference) GetB
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -371,7 +370,7 @@ func (d *jsiiProxy_DataGoogleCloudRunV2WorkerPoolConditionsOutputReference) GetB
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -387,7 +386,7 @@ func (d *jsiiProxy_DataGoogleCloudRunV2WorkerPoolConditionsOutputReference) GetL
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -403,7 +402,7 @@ func (d *jsiiProxy_DataGoogleCloudRunV2WorkerPoolConditionsOutputReference) GetN
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -419,7 +418,7 @@ func (d *jsiiProxy_DataGoogleCloudRunV2WorkerPoolConditionsOutputReference) GetN
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -435,7 +434,7 @@ func (d *jsiiProxy_DataGoogleCloudRunV2WorkerPoolConditionsOutputReference) GetN
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -451,7 +450,7 @@ func (d *jsiiProxy_DataGoogleCloudRunV2WorkerPoolConditionsOutputReference) GetS
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -467,7 +466,7 @@ func (d *jsiiProxy_DataGoogleCloudRunV2WorkerPoolConditionsOutputReference) GetS
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -496,23 +495,23 @@ func (d *jsiiProxy_DataGoogleCloudRunV2WorkerPoolConditionsOutputReference) Inte
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleCloudRunV2WorkerPoolConditionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataGoogleCloudRunV2WorkerPoolConditionsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -531,4 +530,3 @@ func (d *jsiiProxy_DataGoogleCloudRunV2WorkerPoolConditionsOutputReference) ToSt
 
 	return returns
 }
-

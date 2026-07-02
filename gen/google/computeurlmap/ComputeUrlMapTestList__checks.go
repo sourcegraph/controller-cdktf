@@ -34,7 +34,7 @@ func (c *jsiiProxy_ComputeUrlMapTestList) validateResolveParameters(_context cdk
 	return nil
 }
 
-func (j *jsiiProxy_ComputeUrlMapTestList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeUrlMapTestList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewComputeUrlMapTestListParameters(terraformResource cdktf.IInterpo
 
 	return nil
 }
-

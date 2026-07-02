@@ -98,7 +98,7 @@ func (f *jsiiProxy_FirestoreBackupScheduleDailyRecurrenceOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_FirestoreBackupScheduleDailyRecurrenceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_FirestoreBackupScheduleDailyRecurrenceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewFirestoreBackupScheduleDailyRecurrenceOutputReferenceParameters(
 
 	return nil
 }
-

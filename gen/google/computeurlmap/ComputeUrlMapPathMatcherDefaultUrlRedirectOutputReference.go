@@ -12,9 +12,9 @@ type ComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,9 +30,9 @@ type ComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference interface {
 	HostRedirect() *string
 	SetHostRedirect(val *string)
 	HostRedirectInput() *string
-	HttpsRedirect() interface{}
-	SetHttpsRedirect(val interface{})
-	HttpsRedirectInput() interface{}
+	HttpsRedirect() any
+	SetHttpsRedirect(val any)
+	HttpsRedirectInput() any
 	InternalValue() *ComputeUrlMapPathMatcherDefaultUrlRedirect
 	SetInternalValue(val *ComputeUrlMapPathMatcherDefaultUrlRedirect)
 	PathRedirect() *string
@@ -44,9 +44,9 @@ type ComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference interface {
 	RedirectResponseCode() *string
 	SetRedirectResponseCode(val *string)
 	RedirectResponseCodeInput() *string
-	StripQuery() interface{}
-	SetStripQuery(val interface{})
-	StripQueryInput() interface{}
+	StripQuery() any
+	SetStripQuery(val any)
+	StripQueryInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -58,7 +58,7 @@ type ComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -86,7 +86,7 @@ type ComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference interface {
 	ResetRedirectResponseCode()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,8 +99,8 @@ type jsiiProxy_ComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference struct 
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -159,8 +159,8 @@ func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference) Ho
 	return returns
 }
 
-func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference) HttpsRedirect() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference) HttpsRedirect() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"httpsRedirect",
@@ -169,8 +169,8 @@ func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference) Ht
 	return returns
 }
 
-func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference) HttpsRedirectInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference) HttpsRedirectInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"httpsRedirectInput",
@@ -249,8 +249,8 @@ func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference) Re
 	return returns
 }
 
-func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference) StripQuery() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference) StripQuery() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"stripQuery",
@@ -259,8 +259,8 @@ func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference) St
 	return returns
 }
 
-func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference) StripQueryInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference) StripQueryInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"stripQueryInput",
@@ -289,7 +289,6 @@ func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference) Te
 	return returns
 }
 
-
 func NewComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference {
 	_init_.Initialize()
 
@@ -300,7 +299,7 @@ func NewComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference(terraformResou
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeUrlMap.ComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -312,12 +311,12 @@ func NewComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference_Override(c Com
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeUrlMap.ComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -328,7 +327,7 @@ func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -339,7 +338,7 @@ func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference)SetHostRedirect(val *string) {
+func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference) SetHostRedirect(val *string) {
 	if err := j.validateSetHostRedirectParameters(val); err != nil {
 		panic(err)
 	}
@@ -350,7 +349,7 @@ func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference)SetHttpsRedirect(val interface{}) {
+func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference) SetHttpsRedirect(val any) {
 	if err := j.validateSetHttpsRedirectParameters(val); err != nil {
 		panic(err)
 	}
@@ -361,7 +360,7 @@ func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference)SetInternalValue(val *ComputeUrlMapPathMatcherDefaultUrlRedirect) {
+func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference) SetInternalValue(val *ComputeUrlMapPathMatcherDefaultUrlRedirect) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -372,7 +371,7 @@ func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference)SetPathRedirect(val *string) {
+func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference) SetPathRedirect(val *string) {
 	if err := j.validateSetPathRedirectParameters(val); err != nil {
 		panic(err)
 	}
@@ -383,7 +382,7 @@ func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference)SetPrefixRedirect(val *string) {
+func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference) SetPrefixRedirect(val *string) {
 	if err := j.validateSetPrefixRedirectParameters(val); err != nil {
 		panic(err)
 	}
@@ -394,7 +393,7 @@ func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference)SetRedirectResponseCode(val *string) {
+func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference) SetRedirectResponseCode(val *string) {
 	if err := j.validateSetRedirectResponseCodeParameters(val); err != nil {
 		panic(err)
 	}
@@ -405,7 +404,7 @@ func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference)SetStripQuery(val interface{}) {
+func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference) SetStripQuery(val any) {
 	if err := j.validateSetStripQueryParameters(val); err != nil {
 		panic(err)
 	}
@@ -416,7 +415,7 @@ func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -427,7 +426,7 @@ func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -451,16 +450,16 @@ func (c *jsiiProxy_ComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference) Co
 	return returns
 }
 
-func (c *jsiiProxy_ComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -476,7 +475,7 @@ func (c *jsiiProxy_ComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference) Ge
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -492,7 +491,7 @@ func (c *jsiiProxy_ComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference) Ge
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -508,7 +507,7 @@ func (c *jsiiProxy_ComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference) Ge
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -524,7 +523,7 @@ func (c *jsiiProxy_ComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference) Ge
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -540,7 +539,7 @@ func (c *jsiiProxy_ComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference) Ge
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -556,7 +555,7 @@ func (c *jsiiProxy_ComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference) Ge
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -572,7 +571,7 @@ func (c *jsiiProxy_ComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference) Ge
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -588,7 +587,7 @@ func (c *jsiiProxy_ComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference) Ge
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -617,7 +616,7 @@ func (c *jsiiProxy_ComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference) In
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -664,16 +663,16 @@ func (c *jsiiProxy_ComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference) Re
 	)
 }
 
-func (c *jsiiProxy_ComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -692,4 +691,3 @@ func (c *jsiiProxy_ComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference) To
 
 	return returns
 }
-

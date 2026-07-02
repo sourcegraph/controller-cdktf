@@ -98,7 +98,7 @@ func (d *jsiiProxy_DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFi
 	return nil
 }
 
-func (j *jsiiProxy_DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFieldsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFieldsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFi
 	return nil
 }
 
-func (j *jsiiProxy_DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFieldsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFieldsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewDatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsField
 
 	return nil
 }
-

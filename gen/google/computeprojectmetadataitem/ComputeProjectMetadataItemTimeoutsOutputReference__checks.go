@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeProjectMetadataItemTimeoutsOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_ComputeProjectMetadataItemTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeProjectMetadataItemTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_ComputeProjectMetadataItemTimeoutsOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_ComputeProjectMetadataItemTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeProjectMetadataItemTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewComputeProjectMetadataItemTimeoutsOutputReferenceParameters(terr
 
 	return nil
 }
-

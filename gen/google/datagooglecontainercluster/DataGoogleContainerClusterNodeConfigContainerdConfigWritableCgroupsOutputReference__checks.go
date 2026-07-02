@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleContainerClusterNodeConfigContainerdConfigWritableC
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigContainerdConfigWritableCgroupsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigContainerdConfigWritableCgroupsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleContainerClusterNodeConfigContainerdConfigWritableCgro
 
 	return nil
 }
-

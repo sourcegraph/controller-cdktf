@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.eventarcChannel.EventarcChannel",
-		reflect.TypeOf((*EventarcChannel)(nil)).Elem(),
+		reflect.TypeFor[EventarcChannel](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "activationToken", GoGetter: "ActivationToken"},
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -84,7 +84,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EventarcChannel{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -92,15 +92,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.eventarcChannel.EventarcChannelConfig",
-		reflect.TypeOf((*EventarcChannelConfig)(nil)).Elem(),
+		reflect.TypeFor[EventarcChannelConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.eventarcChannel.EventarcChannelTimeouts",
-		reflect.TypeOf((*EventarcChannelTimeouts)(nil)).Elem(),
+		reflect.TypeFor[EventarcChannelTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.eventarcChannel.EventarcChannelTimeoutsOutputReference",
-		reflect.TypeOf((*EventarcChannelTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EventarcChannelTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -133,7 +133,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EventarcChannelTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

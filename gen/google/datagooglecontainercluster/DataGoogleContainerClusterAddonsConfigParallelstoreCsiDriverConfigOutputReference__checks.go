@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleContainerClusterAddonsConfigParallelstoreCsiDriverC
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleContainerClusterAddonsConfigParallelstoreCsiDriverConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleContainerClusterAddonsConfigParallelstoreCsiDriverConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleContainerClusterAddonsConfigParallelstoreCsiDriverConf
 
 	return nil
 }
-

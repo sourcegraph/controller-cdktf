@@ -15,9 +15,9 @@ type CloudRunDomainMappingMetadataOutputReference interface {
 	AnnotationsInput() *map[string]*string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -56,7 +56,7 @@ type CloudRunDomainMappingMetadataOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -81,7 +81,7 @@ type CloudRunDomainMappingMetadataOutputReference interface {
 	ResetLabels()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -114,8 +114,8 @@ func (j *jsiiProxy_CloudRunDomainMappingMetadataOutputReference) AnnotationsInpu
 	return returns
 }
 
-func (j *jsiiProxy_CloudRunDomainMappingMetadataOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudRunDomainMappingMetadataOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -294,7 +294,6 @@ func (j *jsiiProxy_CloudRunDomainMappingMetadataOutputReference) Uid() *string {
 	return returns
 }
 
-
 func NewCloudRunDomainMappingMetadataOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CloudRunDomainMappingMetadataOutputReference {
 	_init_.Initialize()
 
@@ -305,7 +304,7 @@ func NewCloudRunDomainMappingMetadataOutputReference(terraformResource cdktf.IIn
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cloudRunDomainMapping.CloudRunDomainMappingMetadataOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -317,12 +316,12 @@ func NewCloudRunDomainMappingMetadataOutputReference_Override(c CloudRunDomainMa
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cloudRunDomainMapping.CloudRunDomainMappingMetadataOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CloudRunDomainMappingMetadataOutputReference)SetAnnotations(val *map[string]*string) {
+func (j *jsiiProxy_CloudRunDomainMappingMetadataOutputReference) SetAnnotations(val *map[string]*string) {
 	if err := j.validateSetAnnotationsParameters(val); err != nil {
 		panic(err)
 	}
@@ -333,7 +332,7 @@ func (j *jsiiProxy_CloudRunDomainMappingMetadataOutputReference)SetAnnotations(v
 	)
 }
 
-func (j *jsiiProxy_CloudRunDomainMappingMetadataOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CloudRunDomainMappingMetadataOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -344,7 +343,7 @@ func (j *jsiiProxy_CloudRunDomainMappingMetadataOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_CloudRunDomainMappingMetadataOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CloudRunDomainMappingMetadataOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -355,7 +354,7 @@ func (j *jsiiProxy_CloudRunDomainMappingMetadataOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_CloudRunDomainMappingMetadataOutputReference)SetInternalValue(val *CloudRunDomainMappingMetadata) {
+func (j *jsiiProxy_CloudRunDomainMappingMetadataOutputReference) SetInternalValue(val *CloudRunDomainMappingMetadata) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -366,7 +365,7 @@ func (j *jsiiProxy_CloudRunDomainMappingMetadataOutputReference)SetInternalValue
 	)
 }
 
-func (j *jsiiProxy_CloudRunDomainMappingMetadataOutputReference)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_CloudRunDomainMappingMetadataOutputReference) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -377,7 +376,7 @@ func (j *jsiiProxy_CloudRunDomainMappingMetadataOutputReference)SetLabels(val *m
 	)
 }
 
-func (j *jsiiProxy_CloudRunDomainMappingMetadataOutputReference)SetNamespace(val *string) {
+func (j *jsiiProxy_CloudRunDomainMappingMetadataOutputReference) SetNamespace(val *string) {
 	if err := j.validateSetNamespaceParameters(val); err != nil {
 		panic(err)
 	}
@@ -388,7 +387,7 @@ func (j *jsiiProxy_CloudRunDomainMappingMetadataOutputReference)SetNamespace(val
 	)
 }
 
-func (j *jsiiProxy_CloudRunDomainMappingMetadataOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CloudRunDomainMappingMetadataOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -399,7 +398,7 @@ func (j *jsiiProxy_CloudRunDomainMappingMetadataOutputReference)SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_CloudRunDomainMappingMetadataOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CloudRunDomainMappingMetadataOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -423,16 +422,16 @@ func (c *jsiiProxy_CloudRunDomainMappingMetadataOutputReference) ComputeFqn() *s
 	return returns
 }
 
-func (c *jsiiProxy_CloudRunDomainMappingMetadataOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CloudRunDomainMappingMetadataOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -448,7 +447,7 @@ func (c *jsiiProxy_CloudRunDomainMappingMetadataOutputReference) GetBooleanAttri
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -464,7 +463,7 @@ func (c *jsiiProxy_CloudRunDomainMappingMetadataOutputReference) GetBooleanMapAt
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -480,7 +479,7 @@ func (c *jsiiProxy_CloudRunDomainMappingMetadataOutputReference) GetListAttribut
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -496,7 +495,7 @@ func (c *jsiiProxy_CloudRunDomainMappingMetadataOutputReference) GetNumberAttrib
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -512,7 +511,7 @@ func (c *jsiiProxy_CloudRunDomainMappingMetadataOutputReference) GetNumberListAt
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -528,7 +527,7 @@ func (c *jsiiProxy_CloudRunDomainMappingMetadataOutputReference) GetNumberMapAtt
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -544,7 +543,7 @@ func (c *jsiiProxy_CloudRunDomainMappingMetadataOutputReference) GetStringAttrib
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -560,7 +559,7 @@ func (c *jsiiProxy_CloudRunDomainMappingMetadataOutputReference) GetStringMapAtt
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -589,7 +588,7 @@ func (c *jsiiProxy_CloudRunDomainMappingMetadataOutputReference) InterpolationFo
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -612,16 +611,16 @@ func (c *jsiiProxy_CloudRunDomainMappingMetadataOutputReference) ResetLabels() {
 	)
 }
 
-func (c *jsiiProxy_CloudRunDomainMappingMetadataOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_CloudRunDomainMappingMetadataOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -640,4 +639,3 @@ func (c *jsiiProxy_CloudRunDomainMappingMetadataOutputReference) ToString() *str
 
 	return returns
 }
-

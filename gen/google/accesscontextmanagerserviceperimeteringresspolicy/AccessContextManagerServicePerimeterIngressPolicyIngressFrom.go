@@ -1,6 +1,5 @@
 package accesscontextmanagerserviceperimeteringresspolicy
 
-
 type AccessContextManagerServicePerimeterIngressPolicyIngressFrom struct {
 	// Identities can be an individual user, service account, Google group, or third-party identity.
 	//
@@ -21,6 +20,5 @@ type AccessContextManagerServicePerimeterIngressPolicyIngressFrom struct {
 	// sources block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/access_context_manager_service_perimeter_ingress_policy#sources AccessContextManagerServicePerimeterIngressPolicy#sources}
-	Sources interface{} `field:"optional" json:"sources" yaml:"sources"`
+	Sources any `field:"optional" json:"sources" yaml:"sources"`
 }
-

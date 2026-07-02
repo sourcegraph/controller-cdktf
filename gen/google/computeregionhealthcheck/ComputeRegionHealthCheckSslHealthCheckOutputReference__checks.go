@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeRegionHealthCheckSslHealthCheckOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionHealthCheckSslHealthCheckOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionHealthCheckSslHealthCheckOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -246,4 +246,3 @@ func validateNewComputeRegionHealthCheckSslHealthCheckOutputReferenceParameters(
 
 	return nil
 }
-

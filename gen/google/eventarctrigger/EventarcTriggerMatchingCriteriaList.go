@@ -17,8 +17,8 @@ type EventarcTriggerMatchingCriteriaList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type EventarcTriggerMatchingCriteriaList interface {
 	Get(index *float64) EventarcTriggerMatchingCriteriaOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_EventarcTriggerMatchingCriteriaList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_EventarcTriggerMatchingCriteriaList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EventarcTriggerMatchingCriteriaList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_EventarcTriggerMatchingCriteriaList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewEventarcTriggerMatchingCriteriaList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EventarcTriggerMatchingCriteriaList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewEventarcTriggerMatchingCriteriaList(terraformResource cdktf.IInterpolati
 
 	_jsii_.Create(
 		"@cdktf/provider-google.eventarcTrigger.EventarcTriggerMatchingCriteriaList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewEventarcTriggerMatchingCriteriaList_Override(e EventarcTriggerMatchingCr
 
 	_jsii_.Create(
 		"@cdktf/provider-google.eventarcTrigger.EventarcTriggerMatchingCriteriaList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)
 }
 
-func (j *jsiiProxy_EventarcTriggerMatchingCriteriaList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_EventarcTriggerMatchingCriteriaList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_EventarcTriggerMatchingCriteriaList)SetInternalValue(val inte
 	)
 }
 
-func (j *jsiiProxy_EventarcTriggerMatchingCriteriaList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_EventarcTriggerMatchingCriteriaList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_EventarcTriggerMatchingCriteriaList)SetTerraformAttribute(val
 	)
 }
 
-func (j *jsiiProxy_EventarcTriggerMatchingCriteriaList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EventarcTriggerMatchingCriteriaList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_EventarcTriggerMatchingCriteriaList)SetTerraformResource(val 
 	)
 }
 
-func (j *jsiiProxy_EventarcTriggerMatchingCriteriaList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_EventarcTriggerMatchingCriteriaList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (e *jsiiProxy_EventarcTriggerMatchingCriteriaList) AllWithMapKey(mapKeyAttr
 	_jsii_.Invoke(
 		e,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (e *jsiiProxy_EventarcTriggerMatchingCriteriaList) Get(index *float64) Even
 	_jsii_.Invoke(
 		e,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (e *jsiiProxy_EventarcTriggerMatchingCriteriaList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (e *jsiiProxy_EventarcTriggerMatchingCriteriaList) Resolve(_context cdktf.IResolveContext) any {
 	if err := e.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (e *jsiiProxy_EventarcTriggerMatchingCriteriaList) ToString() *string {
 
 	return returns
 }
-

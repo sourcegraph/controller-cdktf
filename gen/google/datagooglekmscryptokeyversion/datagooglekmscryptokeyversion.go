@@ -16,11 +16,11 @@ type DataGoogleKmsCryptoKeyVersion interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CryptoKey() *string
 	SetCryptoKey(val *string)
 	CryptoKeyInput() *string
@@ -53,21 +53,21 @@ type DataGoogleKmsCryptoKeyVersion interface {
 	SetProvider(val cdktf.TerraformProvider)
 	PublicKey() DataGoogleKmsCryptoKeyVersionPublicKeyList
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	State() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Version() *float64
 	SetVersion(val *float64)
 	VersionInput() *float64
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -94,18 +94,18 @@ type DataGoogleKmsCryptoKeyVersion interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetVersion()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataGoogleKmsCryptoKeyVersion
@@ -133,8 +133,8 @@ func (j *jsiiProxy_DataGoogleKmsCryptoKeyVersion) CdktfStack() cdktf.TerraformSt
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleKmsCryptoKeyVersion) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleKmsCryptoKeyVersion) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -143,8 +143,8 @@ func (j *jsiiProxy_DataGoogleKmsCryptoKeyVersion) ConstructNodeMetadata() *map[s
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleKmsCryptoKeyVersion) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleKmsCryptoKeyVersion) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -293,8 +293,8 @@ func (j *jsiiProxy_DataGoogleKmsCryptoKeyVersion) PublicKey() DataGoogleKmsCrypt
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleKmsCryptoKeyVersion) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleKmsCryptoKeyVersion) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -323,8 +323,8 @@ func (j *jsiiProxy_DataGoogleKmsCryptoKeyVersion) TerraformGeneratorMetadata() *
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleKmsCryptoKeyVersion) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleKmsCryptoKeyVersion) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -363,7 +363,6 @@ func (j *jsiiProxy_DataGoogleKmsCryptoKeyVersion) VersionInput() *float64 {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/kms_crypto_key_version google_kms_crypto_key_version} Data Source.
 func NewDataGoogleKmsCryptoKeyVersion(scope constructs.Construct, id *string, config *DataGoogleKmsCryptoKeyVersionConfig) DataGoogleKmsCryptoKeyVersion {
 	_init_.Initialize()
@@ -375,7 +374,7 @@ func NewDataGoogleKmsCryptoKeyVersion(scope constructs.Construct, id *string, co
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleKmsCryptoKeyVersion.DataGoogleKmsCryptoKeyVersion",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -388,12 +387,12 @@ func NewDataGoogleKmsCryptoKeyVersion_Override(d DataGoogleKmsCryptoKeyVersion, 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleKmsCryptoKeyVersion.DataGoogleKmsCryptoKeyVersion",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataGoogleKmsCryptoKeyVersion)SetCount(val interface{}) {
+func (j *jsiiProxy_DataGoogleKmsCryptoKeyVersion) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -404,7 +403,7 @@ func (j *jsiiProxy_DataGoogleKmsCryptoKeyVersion)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleKmsCryptoKeyVersion)SetCryptoKey(val *string) {
+func (j *jsiiProxy_DataGoogleKmsCryptoKeyVersion) SetCryptoKey(val *string) {
 	if err := j.validateSetCryptoKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -415,7 +414,7 @@ func (j *jsiiProxy_DataGoogleKmsCryptoKeyVersion)SetCryptoKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleKmsCryptoKeyVersion)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataGoogleKmsCryptoKeyVersion) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -423,7 +422,7 @@ func (j *jsiiProxy_DataGoogleKmsCryptoKeyVersion)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleKmsCryptoKeyVersion)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGoogleKmsCryptoKeyVersion) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -431,7 +430,7 @@ func (j *jsiiProxy_DataGoogleKmsCryptoKeyVersion)SetForEach(val cdktf.ITerraform
 	)
 }
 
-func (j *jsiiProxy_DataGoogleKmsCryptoKeyVersion)SetId(val *string) {
+func (j *jsiiProxy_DataGoogleKmsCryptoKeyVersion) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -442,7 +441,7 @@ func (j *jsiiProxy_DataGoogleKmsCryptoKeyVersion)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleKmsCryptoKeyVersion)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGoogleKmsCryptoKeyVersion) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -453,7 +452,7 @@ func (j *jsiiProxy_DataGoogleKmsCryptoKeyVersion)SetLifecycle(val *cdktf.Terrafo
 	)
 }
 
-func (j *jsiiProxy_DataGoogleKmsCryptoKeyVersion)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGoogleKmsCryptoKeyVersion) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -461,7 +460,7 @@ func (j *jsiiProxy_DataGoogleKmsCryptoKeyVersion)SetProvider(val cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_DataGoogleKmsCryptoKeyVersion)SetVersion(val *float64) {
+func (j *jsiiProxy_DataGoogleKmsCryptoKeyVersion) SetVersion(val *float64) {
 	if err := j.validateSetVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -484,7 +483,7 @@ func DataGoogleKmsCryptoKeyVersion_GenerateConfigForImport(scope constructs.Cons
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleKmsCryptoKeyVersion.DataGoogleKmsCryptoKeyVersion",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -508,7 +507,7 @@ func DataGoogleKmsCryptoKeyVersion_GenerateConfigForImport(scope constructs.Cons
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataGoogleKmsCryptoKeyVersion_IsConstruct(x interface{}) *bool {
+func DataGoogleKmsCryptoKeyVersion_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleKmsCryptoKeyVersion_IsConstructParameters(x); err != nil {
@@ -519,7 +518,7 @@ func DataGoogleKmsCryptoKeyVersion_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleKmsCryptoKeyVersion.DataGoogleKmsCryptoKeyVersion",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -527,7 +526,7 @@ func DataGoogleKmsCryptoKeyVersion_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGoogleKmsCryptoKeyVersion_IsTerraformDataSource(x interface{}) *bool {
+func DataGoogleKmsCryptoKeyVersion_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleKmsCryptoKeyVersion_IsTerraformDataSourceParameters(x); err != nil {
@@ -538,7 +537,7 @@ func DataGoogleKmsCryptoKeyVersion_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleKmsCryptoKeyVersion.DataGoogleKmsCryptoKeyVersion",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -546,7 +545,7 @@ func DataGoogleKmsCryptoKeyVersion_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGoogleKmsCryptoKeyVersion_IsTerraformElement(x interface{}) *bool {
+func DataGoogleKmsCryptoKeyVersion_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleKmsCryptoKeyVersion_IsTerraformElementParameters(x); err != nil {
@@ -557,7 +556,7 @@ func DataGoogleKmsCryptoKeyVersion_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleKmsCryptoKeyVersion.DataGoogleKmsCryptoKeyVersion",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -575,27 +574,27 @@ func DataGoogleKmsCryptoKeyVersion_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleKmsCryptoKeyVersion) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataGoogleKmsCryptoKeyVersion) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataGoogleKmsCryptoKeyVersion) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataGoogleKmsCryptoKeyVersion) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -611,7 +610,7 @@ func (d *jsiiProxy_DataGoogleKmsCryptoKeyVersion) GetBooleanAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -627,7 +626,7 @@ func (d *jsiiProxy_DataGoogleKmsCryptoKeyVersion) GetBooleanMapAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -643,7 +642,7 @@ func (d *jsiiProxy_DataGoogleKmsCryptoKeyVersion) GetListAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -659,7 +658,7 @@ func (d *jsiiProxy_DataGoogleKmsCryptoKeyVersion) GetNumberAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -675,7 +674,7 @@ func (d *jsiiProxy_DataGoogleKmsCryptoKeyVersion) GetNumberListAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -691,7 +690,7 @@ func (d *jsiiProxy_DataGoogleKmsCryptoKeyVersion) GetNumberMapAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -707,7 +706,7 @@ func (d *jsiiProxy_DataGoogleKmsCryptoKeyVersion) GetStringAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -723,7 +722,7 @@ func (d *jsiiProxy_DataGoogleKmsCryptoKeyVersion) GetStringMapAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -739,7 +738,7 @@ func (d *jsiiProxy_DataGoogleKmsCryptoKeyVersion) InterpolationForAttribute(terr
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -753,7 +752,7 @@ func (d *jsiiProxy_DataGoogleKmsCryptoKeyVersion) OverrideLogicalId(newLogicalId
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -781,8 +780,8 @@ func (d *jsiiProxy_DataGoogleKmsCryptoKeyVersion) ResetVersion() {
 	)
 }
 
-func (d *jsiiProxy_DataGoogleKmsCryptoKeyVersion) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleKmsCryptoKeyVersion) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -794,8 +793,8 @@ func (d *jsiiProxy_DataGoogleKmsCryptoKeyVersion) SynthesizeAttributes() *map[st
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleKmsCryptoKeyVersion) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleKmsCryptoKeyVersion) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -807,8 +806,8 @@ func (d *jsiiProxy_DataGoogleKmsCryptoKeyVersion) SynthesizeHclAttributes() *map
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleKmsCryptoKeyVersion) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleKmsCryptoKeyVersion) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -820,8 +819,8 @@ func (d *jsiiProxy_DataGoogleKmsCryptoKeyVersion) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleKmsCryptoKeyVersion) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleKmsCryptoKeyVersion) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -846,8 +845,8 @@ func (d *jsiiProxy_DataGoogleKmsCryptoKeyVersion) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleKmsCryptoKeyVersion) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleKmsCryptoKeyVersion) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -858,4 +857,3 @@ func (d *jsiiProxy_DataGoogleKmsCryptoKeyVersion) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkSecurityMirroringEndpointGroupAssociation.NetworkSecurityMirroringEndpointGroupAssociation",
-		reflect.TypeOf((*NetworkSecurityMirroringEndpointGroupAssociation)(nil)).Elem(),
+		reflect.TypeFor[NetworkSecurityMirroringEndpointGroupAssociation](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -84,7 +84,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkSecurityMirroringEndpointGroupAssociation{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -92,19 +92,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkSecurityMirroringEndpointGroupAssociation.NetworkSecurityMirroringEndpointGroupAssociationConfig",
-		reflect.TypeOf((*NetworkSecurityMirroringEndpointGroupAssociationConfig)(nil)).Elem(),
+		reflect.TypeFor[NetworkSecurityMirroringEndpointGroupAssociationConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkSecurityMirroringEndpointGroupAssociation.NetworkSecurityMirroringEndpointGroupAssociationLocations",
-		reflect.TypeOf((*NetworkSecurityMirroringEndpointGroupAssociationLocations)(nil)).Elem(),
+		reflect.TypeFor[NetworkSecurityMirroringEndpointGroupAssociationLocations](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkSecurityMirroringEndpointGroupAssociation.NetworkSecurityMirroringEndpointGroupAssociationLocationsDetails",
-		reflect.TypeOf((*NetworkSecurityMirroringEndpointGroupAssociationLocationsDetails)(nil)).Elem(),
+		reflect.TypeFor[NetworkSecurityMirroringEndpointGroupAssociationLocationsDetails](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkSecurityMirroringEndpointGroupAssociation.NetworkSecurityMirroringEndpointGroupAssociationLocationsDetailsList",
-		reflect.TypeOf((*NetworkSecurityMirroringEndpointGroupAssociationLocationsDetailsList)(nil)).Elem(),
+		reflect.TypeFor[NetworkSecurityMirroringEndpointGroupAssociationLocationsDetailsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -117,7 +117,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkSecurityMirroringEndpointGroupAssociationLocationsDetailsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -125,7 +125,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkSecurityMirroringEndpointGroupAssociation.NetworkSecurityMirroringEndpointGroupAssociationLocationsDetailsOutputReference",
-		reflect.TypeOf((*NetworkSecurityMirroringEndpointGroupAssociationLocationsDetailsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkSecurityMirroringEndpointGroupAssociationLocationsDetailsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -151,7 +151,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkSecurityMirroringEndpointGroupAssociationLocationsDetailsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -159,7 +159,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkSecurityMirroringEndpointGroupAssociation.NetworkSecurityMirroringEndpointGroupAssociationLocationsList",
-		reflect.TypeOf((*NetworkSecurityMirroringEndpointGroupAssociationLocationsList)(nil)).Elem(),
+		reflect.TypeFor[NetworkSecurityMirroringEndpointGroupAssociationLocationsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -172,7 +172,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkSecurityMirroringEndpointGroupAssociationLocationsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -180,7 +180,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkSecurityMirroringEndpointGroupAssociation.NetworkSecurityMirroringEndpointGroupAssociationLocationsOutputReference",
-		reflect.TypeOf((*NetworkSecurityMirroringEndpointGroupAssociationLocationsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkSecurityMirroringEndpointGroupAssociationLocationsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -206,7 +206,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkSecurityMirroringEndpointGroupAssociationLocationsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -214,11 +214,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkSecurityMirroringEndpointGroupAssociation.NetworkSecurityMirroringEndpointGroupAssociationTimeouts",
-		reflect.TypeOf((*NetworkSecurityMirroringEndpointGroupAssociationTimeouts)(nil)).Elem(),
+		reflect.TypeFor[NetworkSecurityMirroringEndpointGroupAssociationTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkSecurityMirroringEndpointGroupAssociation.NetworkSecurityMirroringEndpointGroupAssociationTimeoutsOutputReference",
-		reflect.TypeOf((*NetworkSecurityMirroringEndpointGroupAssociationTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkSecurityMirroringEndpointGroupAssociationTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -251,7 +251,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkSecurityMirroringEndpointGroupAssociationTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

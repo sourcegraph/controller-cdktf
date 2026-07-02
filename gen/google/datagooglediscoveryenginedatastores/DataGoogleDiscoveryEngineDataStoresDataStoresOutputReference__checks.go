@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleDiscoveryEngineDataStoresDataStoresOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleDiscoveryEngineDataStoresDataStoresOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleDiscoveryEngineDataStoresDataStoresOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleDiscoveryEngineDataStoresDataStoresOutputReferencePara
 
 	return nil
 }
-

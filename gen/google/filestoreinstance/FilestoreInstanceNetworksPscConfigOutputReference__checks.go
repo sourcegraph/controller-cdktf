@@ -98,7 +98,7 @@ func (f *jsiiProxy_FilestoreInstanceNetworksPscConfigOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_FilestoreInstanceNetworksPscConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_FilestoreInstanceNetworksPscConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewFilestoreInstanceNetworksPscConfigOutputReferenceParameters(terr
 
 	return nil
 }
-

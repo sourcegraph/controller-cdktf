@@ -34,7 +34,7 @@ func (n *jsiiProxy_NetworkServicesLbRouteExtensionExtensionChainsExtensionsList)
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesLbRouteExtensionExtensionChainsExtensionsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkServicesLbRouteExtensionExtensionChainsExtensionsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewNetworkServicesLbRouteExtensionExtensionChainsExtensionsListPara
 
 	return nil
 }
-

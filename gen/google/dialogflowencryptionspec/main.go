@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowEncryptionSpec.DialogflowEncryptionSpec",
-		reflect.TypeOf((*DialogflowEncryptionSpec)(nil)).Elem(),
+		reflect.TypeFor[DialogflowEncryptionSpec](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -68,7 +68,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowEncryptionSpec{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -76,15 +76,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowEncryptionSpec.DialogflowEncryptionSpecConfig",
-		reflect.TypeOf((*DialogflowEncryptionSpecConfig)(nil)).Elem(),
+		reflect.TypeFor[DialogflowEncryptionSpecConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowEncryptionSpec.DialogflowEncryptionSpecEncryptionSpec",
-		reflect.TypeOf((*DialogflowEncryptionSpecEncryptionSpec)(nil)).Elem(),
+		reflect.TypeFor[DialogflowEncryptionSpecEncryptionSpec](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowEncryptionSpec.DialogflowEncryptionSpecEncryptionSpecOutputReference",
-		reflect.TypeOf((*DialogflowEncryptionSpecEncryptionSpecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowEncryptionSpecEncryptionSpecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -110,7 +110,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowEncryptionSpecEncryptionSpecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -118,11 +118,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowEncryptionSpec.DialogflowEncryptionSpecTimeouts",
-		reflect.TypeOf((*DialogflowEncryptionSpecTimeouts)(nil)).Elem(),
+		reflect.TypeFor[DialogflowEncryptionSpecTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowEncryptionSpec.DialogflowEncryptionSpecTimeoutsOutputReference",
-		reflect.TypeOf((*DialogflowEncryptionSpecTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowEncryptionSpecTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -152,7 +152,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowEncryptionSpecTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkServicesMulticastGroupConsumerActivation.NetworkServicesMulticastGroupConsumerActivation",
-		reflect.TypeOf((*NetworkServicesMulticastGroupConsumerActivation)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesMulticastGroupConsumerActivation](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -88,7 +88,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uniqueId", GoGetter: "UniqueId"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkServicesMulticastGroupConsumerActivation{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -96,15 +96,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkServicesMulticastGroupConsumerActivation.NetworkServicesMulticastGroupConsumerActivationConfig",
-		reflect.TypeOf((*NetworkServicesMulticastGroupConsumerActivationConfig)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesMulticastGroupConsumerActivationConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkServicesMulticastGroupConsumerActivation.NetworkServicesMulticastGroupConsumerActivationLogConfig",
-		reflect.TypeOf((*NetworkServicesMulticastGroupConsumerActivationLogConfig)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesMulticastGroupConsumerActivationLogConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkServicesMulticastGroupConsumerActivation.NetworkServicesMulticastGroupConsumerActivationLogConfigOutputReference",
-		reflect.TypeOf((*NetworkServicesMulticastGroupConsumerActivationLogConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesMulticastGroupConsumerActivationLogConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -131,7 +131,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkServicesMulticastGroupConsumerActivationLogConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -139,11 +139,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkServicesMulticastGroupConsumerActivation.NetworkServicesMulticastGroupConsumerActivationState",
-		reflect.TypeOf((*NetworkServicesMulticastGroupConsumerActivationState)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesMulticastGroupConsumerActivationState](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkServicesMulticastGroupConsumerActivation.NetworkServicesMulticastGroupConsumerActivationStateList",
-		reflect.TypeOf((*NetworkServicesMulticastGroupConsumerActivationStateList)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesMulticastGroupConsumerActivationStateList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -156,7 +156,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkServicesMulticastGroupConsumerActivationStateList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -164,7 +164,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkServicesMulticastGroupConsumerActivation.NetworkServicesMulticastGroupConsumerActivationStateOutputReference",
-		reflect.TypeOf((*NetworkServicesMulticastGroupConsumerActivationStateOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesMulticastGroupConsumerActivationStateOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -189,7 +189,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkServicesMulticastGroupConsumerActivationStateOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -197,11 +197,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkServicesMulticastGroupConsumerActivation.NetworkServicesMulticastGroupConsumerActivationTimeouts",
-		reflect.TypeOf((*NetworkServicesMulticastGroupConsumerActivationTimeouts)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesMulticastGroupConsumerActivationTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkServicesMulticastGroupConsumerActivation.NetworkServicesMulticastGroupConsumerActivationTimeoutsOutputReference",
-		reflect.TypeOf((*NetworkServicesMulticastGroupConsumerActivationTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesMulticastGroupConsumerActivationTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -234,7 +234,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkServicesMulticastGroupConsumerActivationTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

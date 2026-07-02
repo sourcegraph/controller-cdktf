@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.secureSourceManagerRepository.SecureSourceManagerRepository",
-		reflect.TypeOf((*SecureSourceManagerRepository)(nil)).Elem(),
+		reflect.TypeFor[SecureSourceManagerRepository](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -84,7 +84,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 			_jsii_.MemberProperty{JsiiProperty: "uris", GoGetter: "Uris"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecureSourceManagerRepository{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -92,15 +92,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryConfig",
-		reflect.TypeOf((*SecureSourceManagerRepositoryConfig)(nil)).Elem(),
+		reflect.TypeFor[SecureSourceManagerRepositoryConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryInitialConfig",
-		reflect.TypeOf((*SecureSourceManagerRepositoryInitialConfig)(nil)).Elem(),
+		reflect.TypeFor[SecureSourceManagerRepositoryInitialConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryInitialConfigOutputReference",
-		reflect.TypeOf((*SecureSourceManagerRepositoryInitialConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecureSourceManagerRepositoryInitialConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -136,7 +136,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecureSourceManagerRepositoryInitialConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -144,11 +144,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryTimeouts",
-		reflect.TypeOf((*SecureSourceManagerRepositoryTimeouts)(nil)).Elem(),
+		reflect.TypeFor[SecureSourceManagerRepositoryTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryTimeoutsOutputReference",
-		reflect.TypeOf((*SecureSourceManagerRepositoryTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecureSourceManagerRepositoryTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -181,7 +181,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecureSourceManagerRepositoryTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -189,11 +189,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryUris",
-		reflect.TypeOf((*SecureSourceManagerRepositoryUris)(nil)).Elem(),
+		reflect.TypeFor[SecureSourceManagerRepositoryUris](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryUrisList",
-		reflect.TypeOf((*SecureSourceManagerRepositoryUrisList)(nil)).Elem(),
+		reflect.TypeFor[SecureSourceManagerRepositoryUrisList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -206,7 +206,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecureSourceManagerRepositoryUrisList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -214,7 +214,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryUrisOutputReference",
-		reflect.TypeOf((*SecureSourceManagerRepositoryUrisOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecureSourceManagerRepositoryUrisOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "api", GoGetter: "Api"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -241,7 +241,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecureSourceManagerRepositoryUrisOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

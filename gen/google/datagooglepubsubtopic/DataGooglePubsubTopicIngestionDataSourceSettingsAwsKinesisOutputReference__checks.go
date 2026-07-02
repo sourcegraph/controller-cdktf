@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGooglePubsubTopicIngestionDataSourceSettingsAwsKinesisOut
 	return nil
 }
 
-func (j *jsiiProxy_DataGooglePubsubTopicIngestionDataSourceSettingsAwsKinesisOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGooglePubsubTopicIngestionDataSourceSettingsAwsKinesisOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGooglePubsubTopicIngestionDataSourceSettingsAwsKinesisOutput
 
 	return nil
 }
-

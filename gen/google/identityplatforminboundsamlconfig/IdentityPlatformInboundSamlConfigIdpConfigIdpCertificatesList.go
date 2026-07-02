@@ -17,8 +17,8 @@ type IdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type IdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesList interface {
 	Get(index *float64) IdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_IdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesList
 	return returns
 }
 
-func (j *jsiiProxy_IdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_IdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesList
 	return returns
 }
 
-
 func NewIdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewIdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesList(terraformR
 
 	_jsii_.Create(
 		"@cdktf/provider-google.identityPlatformInboundSamlConfig.IdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewIdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesList_Override(i
 
 	_jsii_.Create(
 		"@cdktf/provider-google.identityPlatformInboundSamlConfig.IdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		i,
 	)
 }
 
-func (j *jsiiProxy_IdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_IdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_IdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesList
 	)
 }
 
-func (j *jsiiProxy_IdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_IdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_IdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesList
 	)
 }
 
-func (j *jsiiProxy_IdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_IdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_IdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesList
 	)
 }
 
-func (j *jsiiProxy_IdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_IdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (i *jsiiProxy_IdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesList
 	_jsii_.Invoke(
 		i,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (i *jsiiProxy_IdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesList
 	_jsii_.Invoke(
 		i,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (i *jsiiProxy_IdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (i *jsiiProxy_IdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesList) Resolve(_context cdktf.IResolveContext) any {
 	if err := i.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (i *jsiiProxy_IdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesList
 
 	return returns
 }
-

@@ -1,6 +1,5 @@
 package loggingmetric
 
-
 type LoggingMetricMetricDescriptor struct {
 	// Whether the metric records instantaneous values, changes to a value, etc.
 	//
@@ -27,7 +26,7 @@ type LoggingMetricMetricDescriptor struct {
 	// labels block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_metric#labels LoggingMetric#labels}
-	Labels interface{} `field:"optional" json:"labels" yaml:"labels"`
+	Labels any `field:"optional" json:"labels" yaml:"labels"`
 	// The unit in which the metric value is reported.
 	//
 	// It is only applicable if the valueType is
@@ -37,4 +36,3 @@ type LoggingMetricMetricDescriptor struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_metric#unit LoggingMetric#unit}
 	Unit *string `field:"optional" json:"unit" yaml:"unit"`
 }
-

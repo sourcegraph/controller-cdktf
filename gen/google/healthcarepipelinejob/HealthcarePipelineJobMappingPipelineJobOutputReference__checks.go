@@ -120,7 +120,7 @@ func (h *jsiiProxy_HealthcarePipelineJobMappingPipelineJobOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_HealthcarePipelineJobMappingPipelineJobOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_HealthcarePipelineJobMappingPipelineJobOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -201,7 +201,7 @@ func (j *jsiiProxy_HealthcarePipelineJobMappingPipelineJobOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_HealthcarePipelineJobMappingPipelineJobOutputReference) validateSetReconciliationDestinationParameters(val interface{}) error {
+func (j *jsiiProxy_HealthcarePipelineJobMappingPipelineJobOutputReference) validateSetReconciliationDestinationParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -248,4 +248,3 @@ func validateNewHealthcarePipelineJobMappingPipelineJobOutputReferenceParameters
 
 	return nil
 }
-

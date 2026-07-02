@@ -19,7 +19,7 @@ func (b *jsiiProxy_BillingAccountIamBinding) validateAddMoveTargetParameters(mov
 	return nil
 }
 
-func (b *jsiiProxy_BillingAccountIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
+func (b *jsiiProxy_BillingAccountIamBinding) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (b *jsiiProxy_BillingAccountIamBinding) validateMoveFromIdParameters(id *st
 	return nil
 }
 
-func (b *jsiiProxy_BillingAccountIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (b *jsiiProxy_BillingAccountIamBinding) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateBillingAccountIamBinding_GenerateConfigForImportParameters(scope co
 	return nil
 }
 
-func validateBillingAccountIamBinding_IsConstructParameters(x interface{}) error {
+func validateBillingAccountIamBinding_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateBillingAccountIamBinding_IsConstructParameters(x interface{}) error
 	return nil
 }
 
-func validateBillingAccountIamBinding_IsTerraformElementParameters(x interface{}) error {
+func validateBillingAccountIamBinding_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateBillingAccountIamBinding_IsTerraformElementParameters(x interface{}
 	return nil
 }
 
-func validateBillingAccountIamBinding_IsTerraformResourceParameters(x interface{}) error {
+func validateBillingAccountIamBinding_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_BillingAccountIamBinding) validateSetBillingAccountIdParamete
 	return nil
 }
 
-func (j *jsiiProxy_BillingAccountIamBinding) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_BillingAccountIamBinding) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_BillingAccountIamBinding) validateSetConnectionParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_BillingAccountIamBinding) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_BillingAccountIamBinding) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -377,7 +377,7 @@ func (j *jsiiProxy_BillingAccountIamBinding) validateSetMembersParameters(val *[
 	return nil
 }
 
-func (j *jsiiProxy_BillingAccountIamBinding) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_BillingAccountIamBinding) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -449,4 +449,3 @@ func validateNewBillingAccountIamBindingParameters(scope constructs.Construct, i
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNet
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetwor
 
 	return nil
 }
-

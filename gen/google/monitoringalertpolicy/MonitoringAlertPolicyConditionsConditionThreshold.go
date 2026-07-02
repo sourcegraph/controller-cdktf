@@ -1,6 +1,5 @@
 package monitoringalertpolicy
 
-
 type MonitoringAlertPolicyConditionsConditionThreshold struct {
 	// The comparison to apply between the time series (indicated by filter and aggregation) and the threshold (indicated by threshold_value).
 	//
@@ -33,11 +32,11 @@ type MonitoringAlertPolicyConditionsConditionThreshold struct {
 	// aggregations block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_alert_policy#aggregations MonitoringAlertPolicy#aggregations}
-	Aggregations interface{} `field:"optional" json:"aggregations" yaml:"aggregations"`
+	Aggregations any `field:"optional" json:"aggregations" yaml:"aggregations"`
 	// denominator_aggregations block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_alert_policy#denominator_aggregations MonitoringAlertPolicy#denominator_aggregations}
-	DenominatorAggregations interface{} `field:"optional" json:"denominatorAggregations" yaml:"denominatorAggregations"`
+	DenominatorAggregations any `field:"optional" json:"denominatorAggregations" yaml:"denominatorAggregations"`
 	// A filter that identifies a time series that should be used as the denominator of a ratio that will be compared with the threshold.
 	//
 	// If
@@ -77,4 +76,3 @@ type MonitoringAlertPolicyConditionsConditionThreshold struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_alert_policy#trigger MonitoringAlertPolicy#trigger}
 	Trigger *MonitoringAlertPolicyConditionsConditionThresholdTrigger `field:"optional" json:"trigger" yaml:"trigger"`
 }
-

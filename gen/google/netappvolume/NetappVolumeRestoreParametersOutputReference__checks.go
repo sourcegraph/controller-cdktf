@@ -98,7 +98,7 @@ func (n *jsiiProxy_NetappVolumeRestoreParametersOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_NetappVolumeRestoreParametersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetappVolumeRestoreParametersOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewNetappVolumeRestoreParametersOutputReferenceParameters(terraform
 
 	return nil
 }
-

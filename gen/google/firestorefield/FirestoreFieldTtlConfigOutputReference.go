@@ -12,9 +12,9 @@ type FirestoreFieldTtlConfigOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -41,7 +41,7 @@ type FirestoreFieldTtlConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -64,7 +64,7 @@ type FirestoreFieldTtlConfigOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -77,8 +77,8 @@ type jsiiProxy_FirestoreFieldTtlConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_FirestoreFieldTtlConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FirestoreFieldTtlConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -157,7 +157,6 @@ func (j *jsiiProxy_FirestoreFieldTtlConfigOutputReference) TerraformResource() c
 	return returns
 }
 
-
 func NewFirestoreFieldTtlConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) FirestoreFieldTtlConfigOutputReference {
 	_init_.Initialize()
 
@@ -168,7 +167,7 @@ func NewFirestoreFieldTtlConfigOutputReference(terraformResource cdktf.IInterpol
 
 	_jsii_.Create(
 		"@cdktf/provider-google.firestoreField.FirestoreFieldTtlConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -180,12 +179,12 @@ func NewFirestoreFieldTtlConfigOutputReference_Override(f FirestoreFieldTtlConfi
 
 	_jsii_.Create(
 		"@cdktf/provider-google.firestoreField.FirestoreFieldTtlConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		f,
 	)
 }
 
-func (j *jsiiProxy_FirestoreFieldTtlConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_FirestoreFieldTtlConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -196,7 +195,7 @@ func (j *jsiiProxy_FirestoreFieldTtlConfigOutputReference)SetComplexObjectIndex(
 	)
 }
 
-func (j *jsiiProxy_FirestoreFieldTtlConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_FirestoreFieldTtlConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -207,7 +206,7 @@ func (j *jsiiProxy_FirestoreFieldTtlConfigOutputReference)SetComplexObjectIsFrom
 	)
 }
 
-func (j *jsiiProxy_FirestoreFieldTtlConfigOutputReference)SetInternalValue(val *FirestoreFieldTtlConfig) {
+func (j *jsiiProxy_FirestoreFieldTtlConfigOutputReference) SetInternalValue(val *FirestoreFieldTtlConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -218,7 +217,7 @@ func (j *jsiiProxy_FirestoreFieldTtlConfigOutputReference)SetInternalValue(val *
 	)
 }
 
-func (j *jsiiProxy_FirestoreFieldTtlConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_FirestoreFieldTtlConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -229,7 +228,7 @@ func (j *jsiiProxy_FirestoreFieldTtlConfigOutputReference)SetTerraformAttribute(
 	)
 }
 
-func (j *jsiiProxy_FirestoreFieldTtlConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_FirestoreFieldTtlConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,16 +252,16 @@ func (f *jsiiProxy_FirestoreFieldTtlConfigOutputReference) ComputeFqn() *string 
 	return returns
 }
 
-func (f *jsiiProxy_FirestoreFieldTtlConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (f *jsiiProxy_FirestoreFieldTtlConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := f.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -278,7 +277,7 @@ func (f *jsiiProxy_FirestoreFieldTtlConfigOutputReference) GetBooleanAttribute(t
 	_jsii_.Invoke(
 		f,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -294,7 +293,7 @@ func (f *jsiiProxy_FirestoreFieldTtlConfigOutputReference) GetBooleanMapAttribut
 	_jsii_.Invoke(
 		f,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -310,7 +309,7 @@ func (f *jsiiProxy_FirestoreFieldTtlConfigOutputReference) GetListAttribute(terr
 	_jsii_.Invoke(
 		f,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -326,7 +325,7 @@ func (f *jsiiProxy_FirestoreFieldTtlConfigOutputReference) GetNumberAttribute(te
 	_jsii_.Invoke(
 		f,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -342,7 +341,7 @@ func (f *jsiiProxy_FirestoreFieldTtlConfigOutputReference) GetNumberListAttribut
 	_jsii_.Invoke(
 		f,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -358,7 +357,7 @@ func (f *jsiiProxy_FirestoreFieldTtlConfigOutputReference) GetNumberMapAttribute
 	_jsii_.Invoke(
 		f,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -374,7 +373,7 @@ func (f *jsiiProxy_FirestoreFieldTtlConfigOutputReference) GetStringAttribute(te
 	_jsii_.Invoke(
 		f,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -390,7 +389,7 @@ func (f *jsiiProxy_FirestoreFieldTtlConfigOutputReference) GetStringMapAttribute
 	_jsii_.Invoke(
 		f,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -419,23 +418,23 @@ func (f *jsiiProxy_FirestoreFieldTtlConfigOutputReference) InterpolationForAttri
 	_jsii_.Invoke(
 		f,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (f *jsiiProxy_FirestoreFieldTtlConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (f *jsiiProxy_FirestoreFieldTtlConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := f.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		f,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -454,4 +453,3 @@ func (f *jsiiProxy_FirestoreFieldTtlConfigOutputReference) ToString() *string {
 
 	return returns
 }
-

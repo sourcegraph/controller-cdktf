@@ -17,15 +17,15 @@ type EndpointsServiceIamBinding interface {
 	Condition() EndpointsServiceIamBindingConditionOutputReference
 	ConditionInput() *EndpointsServiceIamBindingCondition
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -56,11 +56,11 @@ type EndpointsServiceIamBinding interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Role() *string
 	SetRole(val *string)
 	RoleInput() *string
@@ -70,16 +70,16 @@ type EndpointsServiceIamBinding interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -97,7 +97,7 @@ type EndpointsServiceIamBinding interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -109,7 +109,7 @@ type EndpointsServiceIamBinding interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -122,17 +122,17 @@ type EndpointsServiceIamBinding interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for EndpointsServiceIamBinding
@@ -170,8 +170,8 @@ func (j *jsiiProxy_EndpointsServiceIamBinding) ConditionInput() *EndpointsServic
 	return returns
 }
 
-func (j *jsiiProxy_EndpointsServiceIamBinding) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EndpointsServiceIamBinding) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -180,8 +180,8 @@ func (j *jsiiProxy_EndpointsServiceIamBinding) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EndpointsServiceIamBinding) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_EndpointsServiceIamBinding) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -190,8 +190,8 @@ func (j *jsiiProxy_EndpointsServiceIamBinding) ConstructNodeMetadata() *map[stri
 	return returns
 }
 
-func (j *jsiiProxy_EndpointsServiceIamBinding) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EndpointsServiceIamBinding) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -320,8 +320,8 @@ func (j *jsiiProxy_EndpointsServiceIamBinding) Provider() cdktf.TerraformProvide
 	return returns
 }
 
-func (j *jsiiProxy_EndpointsServiceIamBinding) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_EndpointsServiceIamBinding) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -330,8 +330,8 @@ func (j *jsiiProxy_EndpointsServiceIamBinding) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EndpointsServiceIamBinding) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EndpointsServiceIamBinding) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -390,8 +390,8 @@ func (j *jsiiProxy_EndpointsServiceIamBinding) TerraformGeneratorMetadata() *cdk
 	return returns
 }
 
-func (j *jsiiProxy_EndpointsServiceIamBinding) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_EndpointsServiceIamBinding) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -410,7 +410,6 @@ func (j *jsiiProxy_EndpointsServiceIamBinding) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/endpoints_service_iam_binding google_endpoints_service_iam_binding} Resource.
 func NewEndpointsServiceIamBinding(scope constructs.Construct, id *string, config *EndpointsServiceIamBindingConfig) EndpointsServiceIamBinding {
 	_init_.Initialize()
@@ -422,7 +421,7 @@ func NewEndpointsServiceIamBinding(scope constructs.Construct, id *string, confi
 
 	_jsii_.Create(
 		"@cdktf/provider-google.endpointsServiceIamBinding.EndpointsServiceIamBinding",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -435,12 +434,12 @@ func NewEndpointsServiceIamBinding_Override(e EndpointsServiceIamBinding, scope 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.endpointsServiceIamBinding.EndpointsServiceIamBinding",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		e,
 	)
 }
 
-func (j *jsiiProxy_EndpointsServiceIamBinding)SetConnection(val interface{}) {
+func (j *jsiiProxy_EndpointsServiceIamBinding) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -451,7 +450,7 @@ func (j *jsiiProxy_EndpointsServiceIamBinding)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EndpointsServiceIamBinding)SetCount(val interface{}) {
+func (j *jsiiProxy_EndpointsServiceIamBinding) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -462,7 +461,7 @@ func (j *jsiiProxy_EndpointsServiceIamBinding)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EndpointsServiceIamBinding)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_EndpointsServiceIamBinding) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -470,7 +469,7 @@ func (j *jsiiProxy_EndpointsServiceIamBinding)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_EndpointsServiceIamBinding)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_EndpointsServiceIamBinding) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -478,7 +477,7 @@ func (j *jsiiProxy_EndpointsServiceIamBinding)SetForEach(val cdktf.ITerraformIte
 	)
 }
 
-func (j *jsiiProxy_EndpointsServiceIamBinding)SetId(val *string) {
+func (j *jsiiProxy_EndpointsServiceIamBinding) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -489,7 +488,7 @@ func (j *jsiiProxy_EndpointsServiceIamBinding)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EndpointsServiceIamBinding)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_EndpointsServiceIamBinding) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -500,7 +499,7 @@ func (j *jsiiProxy_EndpointsServiceIamBinding)SetLifecycle(val *cdktf.TerraformR
 	)
 }
 
-func (j *jsiiProxy_EndpointsServiceIamBinding)SetMembers(val *[]*string) {
+func (j *jsiiProxy_EndpointsServiceIamBinding) SetMembers(val *[]*string) {
 	if err := j.validateSetMembersParameters(val); err != nil {
 		panic(err)
 	}
@@ -511,7 +510,7 @@ func (j *jsiiProxy_EndpointsServiceIamBinding)SetMembers(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_EndpointsServiceIamBinding)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_EndpointsServiceIamBinding) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -519,7 +518,7 @@ func (j *jsiiProxy_EndpointsServiceIamBinding)SetProvider(val cdktf.TerraformPro
 	)
 }
 
-func (j *jsiiProxy_EndpointsServiceIamBinding)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_EndpointsServiceIamBinding) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -530,7 +529,7 @@ func (j *jsiiProxy_EndpointsServiceIamBinding)SetProvisioners(val *[]interface{}
 	)
 }
 
-func (j *jsiiProxy_EndpointsServiceIamBinding)SetRole(val *string) {
+func (j *jsiiProxy_EndpointsServiceIamBinding) SetRole(val *string) {
 	if err := j.validateSetRoleParameters(val); err != nil {
 		panic(err)
 	}
@@ -541,7 +540,7 @@ func (j *jsiiProxy_EndpointsServiceIamBinding)SetRole(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EndpointsServiceIamBinding)SetServiceName(val *string) {
+func (j *jsiiProxy_EndpointsServiceIamBinding) SetServiceName(val *string) {
 	if err := j.validateSetServiceNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -564,7 +563,7 @@ func EndpointsServiceIamBinding_GenerateConfigForImport(scope constructs.Constru
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.endpointsServiceIamBinding.EndpointsServiceIamBinding",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -588,7 +587,7 @@ func EndpointsServiceIamBinding_GenerateConfigForImport(scope constructs.Constru
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func EndpointsServiceIamBinding_IsConstruct(x interface{}) *bool {
+func EndpointsServiceIamBinding_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEndpointsServiceIamBinding_IsConstructParameters(x); err != nil {
@@ -599,7 +598,7 @@ func EndpointsServiceIamBinding_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.endpointsServiceIamBinding.EndpointsServiceIamBinding",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -607,7 +606,7 @@ func EndpointsServiceIamBinding_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func EndpointsServiceIamBinding_IsTerraformElement(x interface{}) *bool {
+func EndpointsServiceIamBinding_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEndpointsServiceIamBinding_IsTerraformElementParameters(x); err != nil {
@@ -618,7 +617,7 @@ func EndpointsServiceIamBinding_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.endpointsServiceIamBinding.EndpointsServiceIamBinding",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -626,7 +625,7 @@ func EndpointsServiceIamBinding_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func EndpointsServiceIamBinding_IsTerraformResource(x interface{}) *bool {
+func EndpointsServiceIamBinding_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEndpointsServiceIamBinding_IsTerraformResourceParameters(x); err != nil {
@@ -637,7 +636,7 @@ func EndpointsServiceIamBinding_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.endpointsServiceIamBinding.EndpointsServiceIamBinding",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -662,31 +661,31 @@ func (e *jsiiProxy_EndpointsServiceIamBinding) AddMoveTarget(moveTarget *string)
 	_jsii_.InvokeVoid(
 		e,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (e *jsiiProxy_EndpointsServiceIamBinding) AddOverride(path *string, value interface{}) {
+func (e *jsiiProxy_EndpointsServiceIamBinding) AddOverride(path *string, value any) {
 	if err := e.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (e *jsiiProxy_EndpointsServiceIamBinding) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_EndpointsServiceIamBinding) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -702,7 +701,7 @@ func (e *jsiiProxy_EndpointsServiceIamBinding) GetBooleanAttribute(terraformAttr
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -718,7 +717,7 @@ func (e *jsiiProxy_EndpointsServiceIamBinding) GetBooleanMapAttribute(terraformA
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -734,7 +733,7 @@ func (e *jsiiProxy_EndpointsServiceIamBinding) GetListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -750,7 +749,7 @@ func (e *jsiiProxy_EndpointsServiceIamBinding) GetNumberAttribute(terraformAttri
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -766,7 +765,7 @@ func (e *jsiiProxy_EndpointsServiceIamBinding) GetNumberListAttribute(terraformA
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -782,7 +781,7 @@ func (e *jsiiProxy_EndpointsServiceIamBinding) GetNumberMapAttribute(terraformAt
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -798,7 +797,7 @@ func (e *jsiiProxy_EndpointsServiceIamBinding) GetStringAttribute(terraformAttri
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -814,15 +813,15 @@ func (e *jsiiProxy_EndpointsServiceIamBinding) GetStringMapAttribute(terraformAt
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (e *jsiiProxy_EndpointsServiceIamBinding) HasResourceMove() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EndpointsServiceIamBinding) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -841,7 +840,7 @@ func (e *jsiiProxy_EndpointsServiceIamBinding) ImportFrom(id *string, provider c
 	_jsii_.InvokeVoid(
 		e,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -854,7 +853,7 @@ func (e *jsiiProxy_EndpointsServiceIamBinding) InterpolationForAttribute(terrafo
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -868,18 +867,18 @@ func (e *jsiiProxy_EndpointsServiceIamBinding) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (e *jsiiProxy_EndpointsServiceIamBinding) MoveTo(moveTarget *string, index interface{}) {
+func (e *jsiiProxy_EndpointsServiceIamBinding) MoveTo(moveTarget *string, index any) {
 	if err := e.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -890,7 +889,7 @@ func (e *jsiiProxy_EndpointsServiceIamBinding) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -901,7 +900,7 @@ func (e *jsiiProxy_EndpointsServiceIamBinding) OverrideLogicalId(newLogicalId *s
 	_jsii_.InvokeVoid(
 		e,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -912,7 +911,7 @@ func (e *jsiiProxy_EndpointsServiceIamBinding) PutCondition(value *EndpointsServ
 	_jsii_.InvokeVoid(
 		e,
 		"putCondition",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -940,8 +939,8 @@ func (e *jsiiProxy_EndpointsServiceIamBinding) ResetOverrideLogicalId() {
 	)
 }
 
-func (e *jsiiProxy_EndpointsServiceIamBinding) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_EndpointsServiceIamBinding) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -953,8 +952,8 @@ func (e *jsiiProxy_EndpointsServiceIamBinding) SynthesizeAttributes() *map[strin
 	return returns
 }
 
-func (e *jsiiProxy_EndpointsServiceIamBinding) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_EndpointsServiceIamBinding) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -966,8 +965,8 @@ func (e *jsiiProxy_EndpointsServiceIamBinding) SynthesizeHclAttributes() *map[st
 	return returns
 }
 
-func (e *jsiiProxy_EndpointsServiceIamBinding) ToHclTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EndpointsServiceIamBinding) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -979,8 +978,8 @@ func (e *jsiiProxy_EndpointsServiceIamBinding) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (e *jsiiProxy_EndpointsServiceIamBinding) ToMetadata() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EndpointsServiceIamBinding) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1005,8 +1004,8 @@ func (e *jsiiProxy_EndpointsServiceIamBinding) ToString() *string {
 	return returns
 }
 
-func (e *jsiiProxy_EndpointsServiceIamBinding) ToTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EndpointsServiceIamBinding) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1017,4 +1016,3 @@ func (e *jsiiProxy_EndpointsServiceIamBinding) ToTerraform() interface{} {
 
 	return returns
 }
-

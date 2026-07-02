@@ -12,9 +12,9 @@ type ContainerNodePoolNodeConfigGvnicOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,9 +25,9 @@ type ContainerNodePoolNodeConfigGvnicOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *ContainerNodePoolNodeConfigGvnic
@@ -43,7 +43,7 @@ type ContainerNodePoolNodeConfigGvnicOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -66,7 +66,7 @@ type ContainerNodePoolNodeConfigGvnicOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,8 +79,8 @@ type jsiiProxy_ContainerNodePoolNodeConfigGvnicOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeConfigGvnicOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerNodePoolNodeConfigGvnicOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -109,8 +109,8 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigGvnicOutputReference) CreationStac
 	return returns
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeConfigGvnicOutputReference) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerNodePoolNodeConfigGvnicOutputReference) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -119,8 +119,8 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigGvnicOutputReference) Enabled() in
 	return returns
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeConfigGvnicOutputReference) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerNodePoolNodeConfigGvnicOutputReference) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -169,7 +169,6 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigGvnicOutputReference) TerraformRes
 	return returns
 }
 
-
 func NewContainerNodePoolNodeConfigGvnicOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ContainerNodePoolNodeConfigGvnicOutputReference {
 	_init_.Initialize()
 
@@ -180,7 +179,7 @@ func NewContainerNodePoolNodeConfigGvnicOutputReference(terraformResource cdktf.
 
 	_jsii_.Create(
 		"@cdktf/provider-google.containerNodePool.ContainerNodePoolNodeConfigGvnicOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -192,12 +191,12 @@ func NewContainerNodePoolNodeConfigGvnicOutputReference_Override(c ContainerNode
 
 	_jsii_.Create(
 		"@cdktf/provider-google.containerNodePool.ContainerNodePoolNodeConfigGvnicOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeConfigGvnicOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ContainerNodePoolNodeConfigGvnicOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -208,7 +207,7 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigGvnicOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeConfigGvnicOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ContainerNodePoolNodeConfigGvnicOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -219,7 +218,7 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigGvnicOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeConfigGvnicOutputReference)SetEnabled(val interface{}) {
+func (j *jsiiProxy_ContainerNodePoolNodeConfigGvnicOutputReference) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -230,7 +229,7 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigGvnicOutputReference)SetEnabled(va
 	)
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeConfigGvnicOutputReference)SetInternalValue(val *ContainerNodePoolNodeConfigGvnic) {
+func (j *jsiiProxy_ContainerNodePoolNodeConfigGvnicOutputReference) SetInternalValue(val *ContainerNodePoolNodeConfigGvnic) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -241,7 +240,7 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigGvnicOutputReference)SetInternalVa
 	)
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeConfigGvnicOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ContainerNodePoolNodeConfigGvnicOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -252,7 +251,7 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigGvnicOutputReference)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeConfigGvnicOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ContainerNodePoolNodeConfigGvnicOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,16 +275,16 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigGvnicOutputReference) ComputeFqn()
 	return returns
 }
 
-func (c *jsiiProxy_ContainerNodePoolNodeConfigGvnicOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ContainerNodePoolNodeConfigGvnicOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -301,7 +300,7 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigGvnicOutputReference) GetBooleanAt
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -317,7 +316,7 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigGvnicOutputReference) GetBooleanMa
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -333,7 +332,7 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigGvnicOutputReference) GetListAttri
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -349,7 +348,7 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigGvnicOutputReference) GetNumberAtt
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -365,7 +364,7 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigGvnicOutputReference) GetNumberLis
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -381,7 +380,7 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigGvnicOutputReference) GetNumberMap
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -397,7 +396,7 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigGvnicOutputReference) GetStringAtt
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -413,7 +412,7 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigGvnicOutputReference) GetStringMap
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -442,23 +441,23 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigGvnicOutputReference) Interpolatio
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ContainerNodePoolNodeConfigGvnicOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ContainerNodePoolNodeConfigGvnicOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -477,4 +476,3 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigGvnicOutputReference) ToString() *
 
 	return returns
 }
-

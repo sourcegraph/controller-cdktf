@@ -6,9 +6,9 @@ import (
 
 type MonitoringUptimeCheckConfigConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type MonitoringUptimeCheckConfigConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// A human-friendly name for the uptime check configuration.
 	//
 	// The display name should be unique within a Stackdriver Workspace in order to make it easier to identify; however, uniqueness is not enforced.
@@ -40,7 +40,7 @@ type MonitoringUptimeCheckConfigConfig struct {
 	// content_matchers block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_uptime_check_config#content_matchers MonitoringUptimeCheckConfig#content_matchers}
-	ContentMatchers interface{} `field:"optional" json:"contentMatchers" yaml:"contentMatchers"`
+	ContentMatchers any `field:"optional" json:"contentMatchers" yaml:"contentMatchers"`
 	// http_check block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_uptime_check_config#http_check MonitoringUptimeCheckConfig#http_check}
@@ -53,7 +53,7 @@ type MonitoringUptimeCheckConfigConfig struct {
 	// Specifies whether to log the results of failed probes to Cloud Logging.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_uptime_check_config#log_check_failures MonitoringUptimeCheckConfig#log_check_failures}
-	LogCheckFailures interface{} `field:"optional" json:"logCheckFailures" yaml:"logCheckFailures"`
+	LogCheckFailures any `field:"optional" json:"logCheckFailures" yaml:"logCheckFailures"`
 	// monitored_resource block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_uptime_check_config#monitored_resource MonitoringUptimeCheckConfig#monitored_resource}
@@ -95,4 +95,3 @@ type MonitoringUptimeCheckConfigConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_uptime_check_config#user_labels MonitoringUptimeCheckConfig#user_labels}
 	UserLabels *map[string]*string `field:"optional" json:"userLabels" yaml:"userLabels"`
 }
-

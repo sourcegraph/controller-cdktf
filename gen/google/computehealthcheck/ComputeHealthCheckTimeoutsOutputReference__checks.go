@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeHealthCheckTimeoutsOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_ComputeHealthCheckTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeHealthCheckTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_ComputeHealthCheckTimeoutsOutputReference) validateSetDeleteP
 	return nil
 }
 
-func (j *jsiiProxy_ComputeHealthCheckTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeHealthCheckTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewComputeHealthCheckTimeoutsOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

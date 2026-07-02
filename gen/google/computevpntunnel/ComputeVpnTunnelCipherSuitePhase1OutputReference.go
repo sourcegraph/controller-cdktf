@@ -12,9 +12,9 @@ type ComputeVpnTunnelCipherSuitePhase1OutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -52,7 +52,7 @@ type ComputeVpnTunnelCipherSuitePhase1OutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -79,7 +79,7 @@ type ComputeVpnTunnelCipherSuitePhase1OutputReference interface {
 	ResetPrf()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,8 +92,8 @@ type jsiiProxy_ComputeVpnTunnelCipherSuitePhase1OutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ComputeVpnTunnelCipherSuitePhase1OutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeVpnTunnelCipherSuitePhase1OutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -242,7 +242,6 @@ func (j *jsiiProxy_ComputeVpnTunnelCipherSuitePhase1OutputReference) TerraformRe
 	return returns
 }
 
-
 func NewComputeVpnTunnelCipherSuitePhase1OutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ComputeVpnTunnelCipherSuitePhase1OutputReference {
 	_init_.Initialize()
 
@@ -253,7 +252,7 @@ func NewComputeVpnTunnelCipherSuitePhase1OutputReference(terraformResource cdktf
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1OutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -265,12 +264,12 @@ func NewComputeVpnTunnelCipherSuitePhase1OutputReference_Override(c ComputeVpnTu
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1OutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputeVpnTunnelCipherSuitePhase1OutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ComputeVpnTunnelCipherSuitePhase1OutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,7 +280,7 @@ func (j *jsiiProxy_ComputeVpnTunnelCipherSuitePhase1OutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_ComputeVpnTunnelCipherSuitePhase1OutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ComputeVpnTunnelCipherSuitePhase1OutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,7 +291,7 @@ func (j *jsiiProxy_ComputeVpnTunnelCipherSuitePhase1OutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_ComputeVpnTunnelCipherSuitePhase1OutputReference)SetDh(val *[]*string) {
+func (j *jsiiProxy_ComputeVpnTunnelCipherSuitePhase1OutputReference) SetDh(val *[]*string) {
 	if err := j.validateSetDhParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_ComputeVpnTunnelCipherSuitePhase1OutputReference)SetDh(val *[
 	)
 }
 
-func (j *jsiiProxy_ComputeVpnTunnelCipherSuitePhase1OutputReference)SetEncryption(val *[]*string) {
+func (j *jsiiProxy_ComputeVpnTunnelCipherSuitePhase1OutputReference) SetEncryption(val *[]*string) {
 	if err := j.validateSetEncryptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_ComputeVpnTunnelCipherSuitePhase1OutputReference)SetEncryptio
 	)
 }
 
-func (j *jsiiProxy_ComputeVpnTunnelCipherSuitePhase1OutputReference)SetIntegrity(val *[]*string) {
+func (j *jsiiProxy_ComputeVpnTunnelCipherSuitePhase1OutputReference) SetIntegrity(val *[]*string) {
 	if err := j.validateSetIntegrityParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_ComputeVpnTunnelCipherSuitePhase1OutputReference)SetIntegrity
 	)
 }
 
-func (j *jsiiProxy_ComputeVpnTunnelCipherSuitePhase1OutputReference)SetInternalValue(val *ComputeVpnTunnelCipherSuitePhase1) {
+func (j *jsiiProxy_ComputeVpnTunnelCipherSuitePhase1OutputReference) SetInternalValue(val *ComputeVpnTunnelCipherSuitePhase1) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_ComputeVpnTunnelCipherSuitePhase1OutputReference)SetInternalV
 	)
 }
 
-func (j *jsiiProxy_ComputeVpnTunnelCipherSuitePhase1OutputReference)SetPrf(val *[]*string) {
+func (j *jsiiProxy_ComputeVpnTunnelCipherSuitePhase1OutputReference) SetPrf(val *[]*string) {
 	if err := j.validateSetPrfParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_ComputeVpnTunnelCipherSuitePhase1OutputReference)SetPrf(val *
 	)
 }
 
-func (j *jsiiProxy_ComputeVpnTunnelCipherSuitePhase1OutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ComputeVpnTunnelCipherSuitePhase1OutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -358,7 +357,7 @@ func (j *jsiiProxy_ComputeVpnTunnelCipherSuitePhase1OutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_ComputeVpnTunnelCipherSuitePhase1OutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeVpnTunnelCipherSuitePhase1OutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,16 +381,16 @@ func (c *jsiiProxy_ComputeVpnTunnelCipherSuitePhase1OutputReference) ComputeFqn(
 	return returns
 }
 
-func (c *jsiiProxy_ComputeVpnTunnelCipherSuitePhase1OutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComputeVpnTunnelCipherSuitePhase1OutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -407,7 +406,7 @@ func (c *jsiiProxy_ComputeVpnTunnelCipherSuitePhase1OutputReference) GetBooleanA
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -423,7 +422,7 @@ func (c *jsiiProxy_ComputeVpnTunnelCipherSuitePhase1OutputReference) GetBooleanM
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -439,7 +438,7 @@ func (c *jsiiProxy_ComputeVpnTunnelCipherSuitePhase1OutputReference) GetListAttr
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -455,7 +454,7 @@ func (c *jsiiProxy_ComputeVpnTunnelCipherSuitePhase1OutputReference) GetNumberAt
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -471,7 +470,7 @@ func (c *jsiiProxy_ComputeVpnTunnelCipherSuitePhase1OutputReference) GetNumberLi
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -487,7 +486,7 @@ func (c *jsiiProxy_ComputeVpnTunnelCipherSuitePhase1OutputReference) GetNumberMa
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -503,7 +502,7 @@ func (c *jsiiProxy_ComputeVpnTunnelCipherSuitePhase1OutputReference) GetStringAt
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -519,7 +518,7 @@ func (c *jsiiProxy_ComputeVpnTunnelCipherSuitePhase1OutputReference) GetStringMa
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -548,7 +547,7 @@ func (c *jsiiProxy_ComputeVpnTunnelCipherSuitePhase1OutputReference) Interpolati
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -587,16 +586,16 @@ func (c *jsiiProxy_ComputeVpnTunnelCipherSuitePhase1OutputReference) ResetPrf() 
 	)
 }
 
-func (c *jsiiProxy_ComputeVpnTunnelCipherSuitePhase1OutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ComputeVpnTunnelCipherSuitePhase1OutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -615,4 +614,3 @@ func (c *jsiiProxy_ComputeVpnTunnelCipherSuitePhase1OutputReference) ToString() 
 
 	return returns
 }
-

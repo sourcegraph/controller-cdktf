@@ -15,15 +15,15 @@ type VmwareengineExternalAddress interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -64,29 +64,29 @@ type VmwareengineExternalAddress interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	State() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() VmwareengineExternalAddressTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Uid() *string
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -104,7 +104,7 @@ type VmwareengineExternalAddress interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -116,7 +116,7 @@ type VmwareengineExternalAddress interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -130,17 +130,17 @@ type VmwareengineExternalAddress interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for VmwareengineExternalAddress
@@ -158,8 +158,8 @@ func (j *jsiiProxy_VmwareengineExternalAddress) CdktfStack() cdktf.TerraformStac
 	return returns
 }
 
-func (j *jsiiProxy_VmwareengineExternalAddress) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VmwareengineExternalAddress) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_VmwareengineExternalAddress) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_VmwareengineExternalAddress) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_VmwareengineExternalAddress) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -178,8 +178,8 @@ func (j *jsiiProxy_VmwareengineExternalAddress) ConstructNodeMetadata() *map[str
 	return returns
 }
 
-func (j *jsiiProxy_VmwareengineExternalAddress) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VmwareengineExternalAddress) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -378,8 +378,8 @@ func (j *jsiiProxy_VmwareengineExternalAddress) Provider() cdktf.TerraformProvid
 	return returns
 }
 
-func (j *jsiiProxy_VmwareengineExternalAddress) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_VmwareengineExternalAddress) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -388,8 +388,8 @@ func (j *jsiiProxy_VmwareengineExternalAddress) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_VmwareengineExternalAddress) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VmwareengineExternalAddress) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -418,8 +418,8 @@ func (j *jsiiProxy_VmwareengineExternalAddress) TerraformGeneratorMetadata() *cd
 	return returns
 }
 
-func (j *jsiiProxy_VmwareengineExternalAddress) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_VmwareengineExternalAddress) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -448,8 +448,8 @@ func (j *jsiiProxy_VmwareengineExternalAddress) Timeouts() VmwareengineExternalA
 	return returns
 }
 
-func (j *jsiiProxy_VmwareengineExternalAddress) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VmwareengineExternalAddress) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -478,7 +478,6 @@ func (j *jsiiProxy_VmwareengineExternalAddress) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_external_address google_vmwareengine_external_address} Resource.
 func NewVmwareengineExternalAddress(scope constructs.Construct, id *string, config *VmwareengineExternalAddressConfig) VmwareengineExternalAddress {
 	_init_.Initialize()
@@ -490,7 +489,7 @@ func NewVmwareengineExternalAddress(scope constructs.Construct, id *string, conf
 
 	_jsii_.Create(
 		"@cdktf/provider-google.vmwareengineExternalAddress.VmwareengineExternalAddress",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -503,12 +502,12 @@ func NewVmwareengineExternalAddress_Override(v VmwareengineExternalAddress, scop
 
 	_jsii_.Create(
 		"@cdktf/provider-google.vmwareengineExternalAddress.VmwareengineExternalAddress",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		v,
 	)
 }
 
-func (j *jsiiProxy_VmwareengineExternalAddress)SetConnection(val interface{}) {
+func (j *jsiiProxy_VmwareengineExternalAddress) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -519,7 +518,7 @@ func (j *jsiiProxy_VmwareengineExternalAddress)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VmwareengineExternalAddress)SetCount(val interface{}) {
+func (j *jsiiProxy_VmwareengineExternalAddress) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -530,7 +529,7 @@ func (j *jsiiProxy_VmwareengineExternalAddress)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VmwareengineExternalAddress)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_VmwareengineExternalAddress) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -538,7 +537,7 @@ func (j *jsiiProxy_VmwareengineExternalAddress)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_VmwareengineExternalAddress)SetDescription(val *string) {
+func (j *jsiiProxy_VmwareengineExternalAddress) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -549,7 +548,7 @@ func (j *jsiiProxy_VmwareengineExternalAddress)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VmwareengineExternalAddress)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_VmwareengineExternalAddress) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -557,7 +556,7 @@ func (j *jsiiProxy_VmwareengineExternalAddress)SetForEach(val cdktf.ITerraformIt
 	)
 }
 
-func (j *jsiiProxy_VmwareengineExternalAddress)SetId(val *string) {
+func (j *jsiiProxy_VmwareengineExternalAddress) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -568,7 +567,7 @@ func (j *jsiiProxy_VmwareengineExternalAddress)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VmwareengineExternalAddress)SetInternalIp(val *string) {
+func (j *jsiiProxy_VmwareengineExternalAddress) SetInternalIp(val *string) {
 	if err := j.validateSetInternalIpParameters(val); err != nil {
 		panic(err)
 	}
@@ -579,7 +578,7 @@ func (j *jsiiProxy_VmwareengineExternalAddress)SetInternalIp(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VmwareengineExternalAddress)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_VmwareengineExternalAddress) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -590,7 +589,7 @@ func (j *jsiiProxy_VmwareengineExternalAddress)SetLifecycle(val *cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_VmwareengineExternalAddress)SetName(val *string) {
+func (j *jsiiProxy_VmwareengineExternalAddress) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -601,7 +600,7 @@ func (j *jsiiProxy_VmwareengineExternalAddress)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VmwareengineExternalAddress)SetParent(val *string) {
+func (j *jsiiProxy_VmwareengineExternalAddress) SetParent(val *string) {
 	if err := j.validateSetParentParameters(val); err != nil {
 		panic(err)
 	}
@@ -612,7 +611,7 @@ func (j *jsiiProxy_VmwareengineExternalAddress)SetParent(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VmwareengineExternalAddress)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_VmwareengineExternalAddress) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -620,7 +619,7 @@ func (j *jsiiProxy_VmwareengineExternalAddress)SetProvider(val cdktf.TerraformPr
 	)
 }
 
-func (j *jsiiProxy_VmwareengineExternalAddress)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_VmwareengineExternalAddress) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -643,7 +642,7 @@ func VmwareengineExternalAddress_GenerateConfigForImport(scope constructs.Constr
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.vmwareengineExternalAddress.VmwareengineExternalAddress",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -667,7 +666,7 @@ func VmwareengineExternalAddress_GenerateConfigForImport(scope constructs.Constr
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func VmwareengineExternalAddress_IsConstruct(x interface{}) *bool {
+func VmwareengineExternalAddress_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateVmwareengineExternalAddress_IsConstructParameters(x); err != nil {
@@ -678,7 +677,7 @@ func VmwareengineExternalAddress_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.vmwareengineExternalAddress.VmwareengineExternalAddress",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -686,7 +685,7 @@ func VmwareengineExternalAddress_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func VmwareengineExternalAddress_IsTerraformElement(x interface{}) *bool {
+func VmwareengineExternalAddress_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateVmwareengineExternalAddress_IsTerraformElementParameters(x); err != nil {
@@ -697,7 +696,7 @@ func VmwareengineExternalAddress_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.vmwareengineExternalAddress.VmwareengineExternalAddress",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -705,7 +704,7 @@ func VmwareengineExternalAddress_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func VmwareengineExternalAddress_IsTerraformResource(x interface{}) *bool {
+func VmwareengineExternalAddress_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateVmwareengineExternalAddress_IsTerraformResourceParameters(x); err != nil {
@@ -716,7 +715,7 @@ func VmwareengineExternalAddress_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.vmwareengineExternalAddress.VmwareengineExternalAddress",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -741,31 +740,31 @@ func (v *jsiiProxy_VmwareengineExternalAddress) AddMoveTarget(moveTarget *string
 	_jsii_.InvokeVoid(
 		v,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (v *jsiiProxy_VmwareengineExternalAddress) AddOverride(path *string, value interface{}) {
+func (v *jsiiProxy_VmwareengineExternalAddress) AddOverride(path *string, value any) {
 	if err := v.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		v,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (v *jsiiProxy_VmwareengineExternalAddress) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (v *jsiiProxy_VmwareengineExternalAddress) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := v.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		v,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -781,7 +780,7 @@ func (v *jsiiProxy_VmwareengineExternalAddress) GetBooleanAttribute(terraformAtt
 	_jsii_.Invoke(
 		v,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -797,7 +796,7 @@ func (v *jsiiProxy_VmwareengineExternalAddress) GetBooleanMapAttribute(terraform
 	_jsii_.Invoke(
 		v,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -813,7 +812,7 @@ func (v *jsiiProxy_VmwareengineExternalAddress) GetListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		v,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -829,7 +828,7 @@ func (v *jsiiProxy_VmwareengineExternalAddress) GetNumberAttribute(terraformAttr
 	_jsii_.Invoke(
 		v,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -845,7 +844,7 @@ func (v *jsiiProxy_VmwareengineExternalAddress) GetNumberListAttribute(terraform
 	_jsii_.Invoke(
 		v,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -861,7 +860,7 @@ func (v *jsiiProxy_VmwareengineExternalAddress) GetNumberMapAttribute(terraformA
 	_jsii_.Invoke(
 		v,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -877,7 +876,7 @@ func (v *jsiiProxy_VmwareengineExternalAddress) GetStringAttribute(terraformAttr
 	_jsii_.Invoke(
 		v,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -893,15 +892,15 @@ func (v *jsiiProxy_VmwareengineExternalAddress) GetStringMapAttribute(terraformA
 	_jsii_.Invoke(
 		v,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (v *jsiiProxy_VmwareengineExternalAddress) HasResourceMove() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_VmwareengineExternalAddress) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -920,7 +919,7 @@ func (v *jsiiProxy_VmwareengineExternalAddress) ImportFrom(id *string, provider 
 	_jsii_.InvokeVoid(
 		v,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -933,7 +932,7 @@ func (v *jsiiProxy_VmwareengineExternalAddress) InterpolationForAttribute(terraf
 	_jsii_.Invoke(
 		v,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -947,18 +946,18 @@ func (v *jsiiProxy_VmwareengineExternalAddress) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		v,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (v *jsiiProxy_VmwareengineExternalAddress) MoveTo(moveTarget *string, index interface{}) {
+func (v *jsiiProxy_VmwareengineExternalAddress) MoveTo(moveTarget *string, index any) {
 	if err := v.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		v,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -969,7 +968,7 @@ func (v *jsiiProxy_VmwareengineExternalAddress) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		v,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -980,7 +979,7 @@ func (v *jsiiProxy_VmwareengineExternalAddress) OverrideLogicalId(newLogicalId *
 	_jsii_.InvokeVoid(
 		v,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -991,7 +990,7 @@ func (v *jsiiProxy_VmwareengineExternalAddress) PutTimeouts(value *VmwareengineE
 	_jsii_.InvokeVoid(
 		v,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1027,8 +1026,8 @@ func (v *jsiiProxy_VmwareengineExternalAddress) ResetTimeouts() {
 	)
 }
 
-func (v *jsiiProxy_VmwareengineExternalAddress) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (v *jsiiProxy_VmwareengineExternalAddress) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		v,
@@ -1040,8 +1039,8 @@ func (v *jsiiProxy_VmwareengineExternalAddress) SynthesizeAttributes() *map[stri
 	return returns
 }
 
-func (v *jsiiProxy_VmwareengineExternalAddress) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (v *jsiiProxy_VmwareengineExternalAddress) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		v,
@@ -1053,8 +1052,8 @@ func (v *jsiiProxy_VmwareengineExternalAddress) SynthesizeHclAttributes() *map[s
 	return returns
 }
 
-func (v *jsiiProxy_VmwareengineExternalAddress) ToHclTerraform() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_VmwareengineExternalAddress) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -1066,8 +1065,8 @@ func (v *jsiiProxy_VmwareengineExternalAddress) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (v *jsiiProxy_VmwareengineExternalAddress) ToMetadata() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_VmwareengineExternalAddress) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -1092,8 +1091,8 @@ func (v *jsiiProxy_VmwareengineExternalAddress) ToString() *string {
 	return returns
 }
 
-func (v *jsiiProxy_VmwareengineExternalAddress) ToTerraform() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_VmwareengineExternalAddress) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -1104,4 +1103,3 @@ func (v *jsiiProxy_VmwareengineExternalAddress) ToTerraform() interface{} {
 
 	return returns
 }
-

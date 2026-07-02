@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.serviceNetworkingConnection.ServiceNetworkingConnection",
-		reflect.TypeOf((*ServiceNetworkingConnection)(nil)).Elem(),
+		reflect.TypeFor[ServiceNetworkingConnection](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,7 +73,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "updateOnCreationFail", GoGetter: "UpdateOnCreationFail"},
 			_jsii_.MemberProperty{JsiiProperty: "updateOnCreationFailInput", GoGetter: "UpdateOnCreationFailInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ServiceNetworkingConnection{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -81,15 +81,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.serviceNetworkingConnection.ServiceNetworkingConnectionConfig",
-		reflect.TypeOf((*ServiceNetworkingConnectionConfig)(nil)).Elem(),
+		reflect.TypeFor[ServiceNetworkingConnectionConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.serviceNetworkingConnection.ServiceNetworkingConnectionTimeouts",
-		reflect.TypeOf((*ServiceNetworkingConnectionTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ServiceNetworkingConnectionTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.serviceNetworkingConnection.ServiceNetworkingConnectionTimeoutsOutputReference",
-		reflect.TypeOf((*ServiceNetworkingConnectionTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ServiceNetworkingConnectionTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -122,7 +122,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ServiceNetworkingConnectionTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

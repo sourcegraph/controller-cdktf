@@ -12,9 +12,9 @@ type ComputeRegionInstanceTemplateTimeoutsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,8 +33,8 @@ type ComputeRegionInstanceTemplateTimeoutsOutputReference interface {
 	DeleteInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -46,7 +46,7 @@ type ComputeRegionInstanceTemplateTimeoutsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type ComputeRegionInstanceTemplateTimeoutsOutputReference interface {
 	ResetDelete()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_ComputeRegionInstanceTemplateTimeoutsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ComputeRegionInstanceTemplateTimeoutsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRegionInstanceTemplateTimeoutsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -164,8 +164,8 @@ func (j *jsiiProxy_ComputeRegionInstanceTemplateTimeoutsOutputReference) Fqn() *
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionInstanceTemplateTimeoutsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRegionInstanceTemplateTimeoutsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_ComputeRegionInstanceTemplateTimeoutsOutputReference) Terrafo
 	return returns
 }
 
-
 func NewComputeRegionInstanceTemplateTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ComputeRegionInstanceTemplateTimeoutsOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewComputeRegionInstanceTemplateTimeoutsOutputReference(terraformResource c
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeRegionInstanceTemplate.ComputeRegionInstanceTemplateTimeoutsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewComputeRegionInstanceTemplateTimeoutsOutputReference_Override(c ComputeR
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeRegionInstanceTemplate.ComputeRegionInstanceTemplateTimeoutsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionInstanceTemplateTimeoutsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ComputeRegionInstanceTemplateTimeoutsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_ComputeRegionInstanceTemplateTimeoutsOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionInstanceTemplateTimeoutsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ComputeRegionInstanceTemplateTimeoutsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_ComputeRegionInstanceTemplateTimeoutsOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionInstanceTemplateTimeoutsOutputReference)SetCreate(val *string) {
+func (j *jsiiProxy_ComputeRegionInstanceTemplateTimeoutsOutputReference) SetCreate(val *string) {
 	if err := j.validateSetCreateParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_ComputeRegionInstanceTemplateTimeoutsOutputReference)SetCreat
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionInstanceTemplateTimeoutsOutputReference)SetDelete(val *string) {
+func (j *jsiiProxy_ComputeRegionInstanceTemplateTimeoutsOutputReference) SetDelete(val *string) {
 	if err := j.validateSetDeleteParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_ComputeRegionInstanceTemplateTimeoutsOutputReference)SetDelet
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionInstanceTemplateTimeoutsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ComputeRegionInstanceTemplateTimeoutsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_ComputeRegionInstanceTemplateTimeoutsOutputReference)SetInter
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionInstanceTemplateTimeoutsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ComputeRegionInstanceTemplateTimeoutsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_ComputeRegionInstanceTemplateTimeoutsOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionInstanceTemplateTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeRegionInstanceTemplateTimeoutsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,16 +311,16 @@ func (c *jsiiProxy_ComputeRegionInstanceTemplateTimeoutsOutputReference) Compute
 	return returns
 }
 
-func (c *jsiiProxy_ComputeRegionInstanceTemplateTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComputeRegionInstanceTemplateTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -337,7 +336,7 @@ func (c *jsiiProxy_ComputeRegionInstanceTemplateTimeoutsOutputReference) GetBool
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -353,7 +352,7 @@ func (c *jsiiProxy_ComputeRegionInstanceTemplateTimeoutsOutputReference) GetBool
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (c *jsiiProxy_ComputeRegionInstanceTemplateTimeoutsOutputReference) GetList
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (c *jsiiProxy_ComputeRegionInstanceTemplateTimeoutsOutputReference) GetNumb
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (c *jsiiProxy_ComputeRegionInstanceTemplateTimeoutsOutputReference) GetNumb
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (c *jsiiProxy_ComputeRegionInstanceTemplateTimeoutsOutputReference) GetNumb
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (c *jsiiProxy_ComputeRegionInstanceTemplateTimeoutsOutputReference) GetStri
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (c *jsiiProxy_ComputeRegionInstanceTemplateTimeoutsOutputReference) GetStri
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func (c *jsiiProxy_ComputeRegionInstanceTemplateTimeoutsOutputReference) Interpo
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -501,16 +500,16 @@ func (c *jsiiProxy_ComputeRegionInstanceTemplateTimeoutsOutputReference) ResetDe
 	)
 }
 
-func (c *jsiiProxy_ComputeRegionInstanceTemplateTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ComputeRegionInstanceTemplateTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (c *jsiiProxy_ComputeRegionInstanceTemplateTimeoutsOutputReference) ToStrin
 
 	return returns
 }
-

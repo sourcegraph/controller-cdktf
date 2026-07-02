@@ -98,7 +98,7 @@ func (b *jsiiProxy_BigtableAppProfileDataBoostIsolationReadOnlyOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_BigtableAppProfileDataBoostIsolationReadOnlyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BigtableAppProfileDataBoostIsolationReadOnlyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewBigtableAppProfileDataBoostIsolationReadOnlyOutputReferenceParam
 
 	return nil
 }
-

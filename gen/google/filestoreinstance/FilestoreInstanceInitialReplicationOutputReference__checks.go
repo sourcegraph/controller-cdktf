@@ -90,7 +90,7 @@ func (f *jsiiProxy_FilestoreInstanceInitialReplicationOutputReference) validateI
 	return nil
 }
 
-func (f *jsiiProxy_FilestoreInstanceInitialReplicationOutputReference) validatePutReplicasParameters(value interface{}) error {
+func (f *jsiiProxy_FilestoreInstanceInitialReplicationOutputReference) validatePutReplicasParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (f *jsiiProxy_FilestoreInstanceInitialReplicationOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_FilestoreInstanceInitialReplicationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_FilestoreInstanceInitialReplicationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -237,4 +237,3 @@ func validateNewFilestoreInstanceInitialReplicationOutputReferenceParameters(ter
 
 	return nil
 }
-

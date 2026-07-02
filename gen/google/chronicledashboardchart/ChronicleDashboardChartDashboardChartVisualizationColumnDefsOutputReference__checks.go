@@ -98,7 +98,7 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationColumnDefsO
 	return nil
 }
 
-func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationColumnDefsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationColumnDefsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationColumnDefsO
 	return nil
 }
 
-func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationColumnDefsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationColumnDefsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewChronicleDashboardChartDashboardChartVisualizationColumnDefsOutp
 
 	return nil
 }
-

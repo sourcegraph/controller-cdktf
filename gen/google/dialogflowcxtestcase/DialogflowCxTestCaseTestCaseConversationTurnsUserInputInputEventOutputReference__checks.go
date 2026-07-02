@@ -98,7 +98,7 @@ func (d *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsUserInputInputEv
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsUserInputInputEventOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsUserInputInputEventOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDialogflowCxTestCaseTestCaseConversationTurnsUserInputInputEvent
 
 	return nil
 }
-

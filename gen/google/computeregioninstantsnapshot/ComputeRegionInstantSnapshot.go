@@ -16,15 +16,15 @@ type ComputeRegionInstantSnapshot interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreationTimestamp() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -69,11 +69,11 @@ type ComputeRegionInstantSnapshot interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
@@ -90,18 +90,18 @@ type ComputeRegionInstantSnapshot interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() ComputeRegionInstantSnapshotTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -119,7 +119,7 @@ type ComputeRegionInstantSnapshot interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -131,7 +131,7 @@ type ComputeRegionInstantSnapshot interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -150,17 +150,17 @@ type ComputeRegionInstantSnapshot interface {
 	ResetProject()
 	ResetRegion()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ComputeRegionInstantSnapshot
@@ -188,8 +188,8 @@ func (j *jsiiProxy_ComputeRegionInstantSnapshot) CdktfStack() cdktf.TerraformSta
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionInstantSnapshot) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRegionInstantSnapshot) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -198,8 +198,8 @@ func (j *jsiiProxy_ComputeRegionInstantSnapshot) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionInstantSnapshot) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ComputeRegionInstantSnapshot) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -208,8 +208,8 @@ func (j *jsiiProxy_ComputeRegionInstantSnapshot) ConstructNodeMetadata() *map[st
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionInstantSnapshot) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRegionInstantSnapshot) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -448,8 +448,8 @@ func (j *jsiiProxy_ComputeRegionInstantSnapshot) Provider() cdktf.TerraformProvi
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionInstantSnapshot) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ComputeRegionInstantSnapshot) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -458,8 +458,8 @@ func (j *jsiiProxy_ComputeRegionInstantSnapshot) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionInstantSnapshot) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRegionInstantSnapshot) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -588,8 +588,8 @@ func (j *jsiiProxy_ComputeRegionInstantSnapshot) TerraformLabels() cdktf.StringM
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionInstantSnapshot) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ComputeRegionInstantSnapshot) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -618,8 +618,8 @@ func (j *jsiiProxy_ComputeRegionInstantSnapshot) Timeouts() ComputeRegionInstant
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionInstantSnapshot) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRegionInstantSnapshot) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -627,7 +627,6 @@ func (j *jsiiProxy_ComputeRegionInstantSnapshot) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_instant_snapshot google_compute_region_instant_snapshot} Resource.
 func NewComputeRegionInstantSnapshot(scope constructs.Construct, id *string, config *ComputeRegionInstantSnapshotConfig) ComputeRegionInstantSnapshot {
@@ -640,7 +639,7 @@ func NewComputeRegionInstantSnapshot(scope constructs.Construct, id *string, con
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeRegionInstantSnapshot.ComputeRegionInstantSnapshot",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -653,12 +652,12 @@ func NewComputeRegionInstantSnapshot_Override(c ComputeRegionInstantSnapshot, sc
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeRegionInstantSnapshot.ComputeRegionInstantSnapshot",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionInstantSnapshot)SetConnection(val interface{}) {
+func (j *jsiiProxy_ComputeRegionInstantSnapshot) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -669,7 +668,7 @@ func (j *jsiiProxy_ComputeRegionInstantSnapshot)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionInstantSnapshot)SetCount(val interface{}) {
+func (j *jsiiProxy_ComputeRegionInstantSnapshot) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -680,7 +679,7 @@ func (j *jsiiProxy_ComputeRegionInstantSnapshot)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionInstantSnapshot)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ComputeRegionInstantSnapshot) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -688,7 +687,7 @@ func (j *jsiiProxy_ComputeRegionInstantSnapshot)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionInstantSnapshot)SetDescription(val *string) {
+func (j *jsiiProxy_ComputeRegionInstantSnapshot) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -699,7 +698,7 @@ func (j *jsiiProxy_ComputeRegionInstantSnapshot)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionInstantSnapshot)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ComputeRegionInstantSnapshot) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -707,7 +706,7 @@ func (j *jsiiProxy_ComputeRegionInstantSnapshot)SetForEach(val cdktf.ITerraformI
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionInstantSnapshot)SetId(val *string) {
+func (j *jsiiProxy_ComputeRegionInstantSnapshot) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -718,7 +717,7 @@ func (j *jsiiProxy_ComputeRegionInstantSnapshot)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionInstantSnapshot)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_ComputeRegionInstantSnapshot) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -729,7 +728,7 @@ func (j *jsiiProxy_ComputeRegionInstantSnapshot)SetLabels(val *map[string]*strin
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionInstantSnapshot)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ComputeRegionInstantSnapshot) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -740,7 +739,7 @@ func (j *jsiiProxy_ComputeRegionInstantSnapshot)SetLifecycle(val *cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionInstantSnapshot)SetName(val *string) {
+func (j *jsiiProxy_ComputeRegionInstantSnapshot) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -751,7 +750,7 @@ func (j *jsiiProxy_ComputeRegionInstantSnapshot)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionInstantSnapshot)SetProject(val *string) {
+func (j *jsiiProxy_ComputeRegionInstantSnapshot) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -762,7 +761,7 @@ func (j *jsiiProxy_ComputeRegionInstantSnapshot)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionInstantSnapshot)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ComputeRegionInstantSnapshot) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -770,7 +769,7 @@ func (j *jsiiProxy_ComputeRegionInstantSnapshot)SetProvider(val cdktf.TerraformP
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionInstantSnapshot)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ComputeRegionInstantSnapshot) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -781,7 +780,7 @@ func (j *jsiiProxy_ComputeRegionInstantSnapshot)SetProvisioners(val *[]interface
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionInstantSnapshot)SetRegion(val *string) {
+func (j *jsiiProxy_ComputeRegionInstantSnapshot) SetRegion(val *string) {
 	if err := j.validateSetRegionParameters(val); err != nil {
 		panic(err)
 	}
@@ -792,7 +791,7 @@ func (j *jsiiProxy_ComputeRegionInstantSnapshot)SetRegion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionInstantSnapshot)SetSourceDisk(val *string) {
+func (j *jsiiProxy_ComputeRegionInstantSnapshot) SetSourceDisk(val *string) {
 	if err := j.validateSetSourceDiskParameters(val); err != nil {
 		panic(err)
 	}
@@ -815,7 +814,7 @@ func ComputeRegionInstantSnapshot_GenerateConfigForImport(scope constructs.Const
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeRegionInstantSnapshot.ComputeRegionInstantSnapshot",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -839,7 +838,7 @@ func ComputeRegionInstantSnapshot_GenerateConfigForImport(scope constructs.Const
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ComputeRegionInstantSnapshot_IsConstruct(x interface{}) *bool {
+func ComputeRegionInstantSnapshot_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeRegionInstantSnapshot_IsConstructParameters(x); err != nil {
@@ -850,7 +849,7 @@ func ComputeRegionInstantSnapshot_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeRegionInstantSnapshot.ComputeRegionInstantSnapshot",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -858,7 +857,7 @@ func ComputeRegionInstantSnapshot_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ComputeRegionInstantSnapshot_IsTerraformElement(x interface{}) *bool {
+func ComputeRegionInstantSnapshot_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeRegionInstantSnapshot_IsTerraformElementParameters(x); err != nil {
@@ -869,7 +868,7 @@ func ComputeRegionInstantSnapshot_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeRegionInstantSnapshot.ComputeRegionInstantSnapshot",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -877,7 +876,7 @@ func ComputeRegionInstantSnapshot_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ComputeRegionInstantSnapshot_IsTerraformResource(x interface{}) *bool {
+func ComputeRegionInstantSnapshot_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeRegionInstantSnapshot_IsTerraformResourceParameters(x); err != nil {
@@ -888,7 +887,7 @@ func ComputeRegionInstantSnapshot_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeRegionInstantSnapshot.ComputeRegionInstantSnapshot",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -913,31 +912,31 @@ func (c *jsiiProxy_ComputeRegionInstantSnapshot) AddMoveTarget(moveTarget *strin
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_ComputeRegionInstantSnapshot) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_ComputeRegionInstantSnapshot) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_ComputeRegionInstantSnapshot) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComputeRegionInstantSnapshot) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -953,7 +952,7 @@ func (c *jsiiProxy_ComputeRegionInstantSnapshot) GetBooleanAttribute(terraformAt
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -969,7 +968,7 @@ func (c *jsiiProxy_ComputeRegionInstantSnapshot) GetBooleanMapAttribute(terrafor
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -985,7 +984,7 @@ func (c *jsiiProxy_ComputeRegionInstantSnapshot) GetListAttribute(terraformAttri
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1001,7 +1000,7 @@ func (c *jsiiProxy_ComputeRegionInstantSnapshot) GetNumberAttribute(terraformAtt
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1017,7 +1016,7 @@ func (c *jsiiProxy_ComputeRegionInstantSnapshot) GetNumberListAttribute(terrafor
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1033,7 +1032,7 @@ func (c *jsiiProxy_ComputeRegionInstantSnapshot) GetNumberMapAttribute(terraform
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1049,7 +1048,7 @@ func (c *jsiiProxy_ComputeRegionInstantSnapshot) GetStringAttribute(terraformAtt
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1065,15 +1064,15 @@ func (c *jsiiProxy_ComputeRegionInstantSnapshot) GetStringMapAttribute(terraform
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ComputeRegionInstantSnapshot) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeRegionInstantSnapshot) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1092,7 +1091,7 @@ func (c *jsiiProxy_ComputeRegionInstantSnapshot) ImportFrom(id *string, provider
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1105,7 +1104,7 @@ func (c *jsiiProxy_ComputeRegionInstantSnapshot) InterpolationForAttribute(terra
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1119,18 +1118,18 @@ func (c *jsiiProxy_ComputeRegionInstantSnapshot) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_ComputeRegionInstantSnapshot) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_ComputeRegionInstantSnapshot) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1141,7 +1140,7 @@ func (c *jsiiProxy_ComputeRegionInstantSnapshot) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1152,7 +1151,7 @@ func (c *jsiiProxy_ComputeRegionInstantSnapshot) OverrideLogicalId(newLogicalId 
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1163,7 +1162,7 @@ func (c *jsiiProxy_ComputeRegionInstantSnapshot) PutParams(value *ComputeRegionI
 	_jsii_.InvokeVoid(
 		c,
 		"putParams",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1174,7 +1173,7 @@ func (c *jsiiProxy_ComputeRegionInstantSnapshot) PutTimeouts(value *ComputeRegio
 	_jsii_.InvokeVoid(
 		c,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1242,8 +1241,8 @@ func (c *jsiiProxy_ComputeRegionInstantSnapshot) ResetTimeouts() {
 	)
 }
 
-func (c *jsiiProxy_ComputeRegionInstantSnapshot) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ComputeRegionInstantSnapshot) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1255,8 +1254,8 @@ func (c *jsiiProxy_ComputeRegionInstantSnapshot) SynthesizeAttributes() *map[str
 	return returns
 }
 
-func (c *jsiiProxy_ComputeRegionInstantSnapshot) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ComputeRegionInstantSnapshot) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1268,8 +1267,8 @@ func (c *jsiiProxy_ComputeRegionInstantSnapshot) SynthesizeHclAttributes() *map[
 	return returns
 }
 
-func (c *jsiiProxy_ComputeRegionInstantSnapshot) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeRegionInstantSnapshot) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1281,8 +1280,8 @@ func (c *jsiiProxy_ComputeRegionInstantSnapshot) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_ComputeRegionInstantSnapshot) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeRegionInstantSnapshot) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1307,8 +1306,8 @@ func (c *jsiiProxy_ComputeRegionInstantSnapshot) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_ComputeRegionInstantSnapshot) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeRegionInstantSnapshot) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1319,4 +1318,3 @@ func (c *jsiiProxy_ComputeRegionInstantSnapshot) ToTerraform() interface{} {
 
 	return returns
 }
-

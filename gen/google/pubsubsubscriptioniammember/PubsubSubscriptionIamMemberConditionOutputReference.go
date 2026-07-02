@@ -12,9 +12,9 @@ type PubsubSubscriptionIamMemberConditionOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -49,7 +49,7 @@ type PubsubSubscriptionIamMemberConditionOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -73,7 +73,7 @@ type PubsubSubscriptionIamMemberConditionOutputReference interface {
 	ResetDescription()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -86,8 +86,8 @@ type jsiiProxy_PubsubSubscriptionIamMemberConditionOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_PubsubSubscriptionIamMemberConditionOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PubsubSubscriptionIamMemberConditionOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -216,7 +216,6 @@ func (j *jsiiProxy_PubsubSubscriptionIamMemberConditionOutputReference) TitleInp
 	return returns
 }
 
-
 func NewPubsubSubscriptionIamMemberConditionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PubsubSubscriptionIamMemberConditionOutputReference {
 	_init_.Initialize()
 
@@ -227,7 +226,7 @@ func NewPubsubSubscriptionIamMemberConditionOutputReference(terraformResource cd
 
 	_jsii_.Create(
 		"@cdktf/provider-google.pubsubSubscriptionIamMember.PubsubSubscriptionIamMemberConditionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -239,12 +238,12 @@ func NewPubsubSubscriptionIamMemberConditionOutputReference_Override(p PubsubSub
 
 	_jsii_.Create(
 		"@cdktf/provider-google.pubsubSubscriptionIamMember.PubsubSubscriptionIamMemberConditionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PubsubSubscriptionIamMemberConditionOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_PubsubSubscriptionIamMemberConditionOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_PubsubSubscriptionIamMemberConditionOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_PubsubSubscriptionIamMemberConditionOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_PubsubSubscriptionIamMemberConditionOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_PubsubSubscriptionIamMemberConditionOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_PubsubSubscriptionIamMemberConditionOutputReference)SetDescription(val *string) {
+func (j *jsiiProxy_PubsubSubscriptionIamMemberConditionOutputReference) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_PubsubSubscriptionIamMemberConditionOutputReference)SetDescri
 	)
 }
 
-func (j *jsiiProxy_PubsubSubscriptionIamMemberConditionOutputReference)SetExpression(val *string) {
+func (j *jsiiProxy_PubsubSubscriptionIamMemberConditionOutputReference) SetExpression(val *string) {
 	if err := j.validateSetExpressionParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_PubsubSubscriptionIamMemberConditionOutputReference)SetExpres
 	)
 }
 
-func (j *jsiiProxy_PubsubSubscriptionIamMemberConditionOutputReference)SetInternalValue(val *PubsubSubscriptionIamMemberCondition) {
+func (j *jsiiProxy_PubsubSubscriptionIamMemberConditionOutputReference) SetInternalValue(val *PubsubSubscriptionIamMemberCondition) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -299,7 +298,7 @@ func (j *jsiiProxy_PubsubSubscriptionIamMemberConditionOutputReference)SetIntern
 	)
 }
 
-func (j *jsiiProxy_PubsubSubscriptionIamMemberConditionOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_PubsubSubscriptionIamMemberConditionOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -310,7 +309,7 @@ func (j *jsiiProxy_PubsubSubscriptionIamMemberConditionOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_PubsubSubscriptionIamMemberConditionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PubsubSubscriptionIamMemberConditionOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -321,7 +320,7 @@ func (j *jsiiProxy_PubsubSubscriptionIamMemberConditionOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_PubsubSubscriptionIamMemberConditionOutputReference)SetTitle(val *string) {
+func (j *jsiiProxy_PubsubSubscriptionIamMemberConditionOutputReference) SetTitle(val *string) {
 	if err := j.validateSetTitleParameters(val); err != nil {
 		panic(err)
 	}
@@ -345,16 +344,16 @@ func (p *jsiiProxy_PubsubSubscriptionIamMemberConditionOutputReference) ComputeF
 	return returns
 }
 
-func (p *jsiiProxy_PubsubSubscriptionIamMemberConditionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_PubsubSubscriptionIamMemberConditionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -370,7 +369,7 @@ func (p *jsiiProxy_PubsubSubscriptionIamMemberConditionOutputReference) GetBoole
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -386,7 +385,7 @@ func (p *jsiiProxy_PubsubSubscriptionIamMemberConditionOutputReference) GetBoole
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -402,7 +401,7 @@ func (p *jsiiProxy_PubsubSubscriptionIamMemberConditionOutputReference) GetListA
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -418,7 +417,7 @@ func (p *jsiiProxy_PubsubSubscriptionIamMemberConditionOutputReference) GetNumbe
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -434,7 +433,7 @@ func (p *jsiiProxy_PubsubSubscriptionIamMemberConditionOutputReference) GetNumbe
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -450,7 +449,7 @@ func (p *jsiiProxy_PubsubSubscriptionIamMemberConditionOutputReference) GetNumbe
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -466,7 +465,7 @@ func (p *jsiiProxy_PubsubSubscriptionIamMemberConditionOutputReference) GetStrin
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -482,7 +481,7 @@ func (p *jsiiProxy_PubsubSubscriptionIamMemberConditionOutputReference) GetStrin
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -511,7 +510,7 @@ func (p *jsiiProxy_PubsubSubscriptionIamMemberConditionOutputReference) Interpol
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -526,16 +525,16 @@ func (p *jsiiProxy_PubsubSubscriptionIamMemberConditionOutputReference) ResetDes
 	)
 }
 
-func (p *jsiiProxy_PubsubSubscriptionIamMemberConditionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PubsubSubscriptionIamMemberConditionOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := p.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -554,4 +553,3 @@ func (p *jsiiProxy_PubsubSubscriptionIamMemberConditionOutputReference) ToString
 
 	return returns
 }
-

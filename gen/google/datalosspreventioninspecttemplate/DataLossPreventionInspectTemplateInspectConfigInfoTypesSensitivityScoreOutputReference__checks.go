@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigInfoTypesSensit
 	return nil
 }
 
-func (j *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigInfoTypesSensitivityScoreOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigInfoTypesSensitivityScoreOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataLossPreventionInspectTemplateInspectConfigInfoTypesSensitivi
 
 	return nil
 }
-

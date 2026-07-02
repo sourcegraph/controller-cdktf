@@ -34,7 +34,7 @@ func (c *jsiiProxy_ComputeInstanceGroupManagerStatefulExternalIpList) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInstanceGroupManagerStatefulExternalIpList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInstanceGroupManagerStatefulExternalIpList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewComputeInstanceGroupManagerStatefulExternalIpListParameters(terr
 
 	return nil
 }
-

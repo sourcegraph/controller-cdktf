@@ -98,7 +98,7 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigBinaryLogPositio
 	return nil
 }
 
-func (j *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigBinaryLogPositionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigBinaryLogPositionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewDatastreamStreamSourceConfigMysqlSourceConfigBinaryLogPositionOu
 
 	return nil
 }
-

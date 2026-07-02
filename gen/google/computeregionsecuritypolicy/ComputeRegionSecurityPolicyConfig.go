@@ -6,9 +6,9 @@ import (
 
 type ComputeRegionSecurityPolicyConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type ComputeRegionSecurityPolicyConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Name of the resource.
 	//
 	// Provided by the client when the resource is created. The name must be 1-63 characters long, and comply with RFC1035.
@@ -54,7 +54,7 @@ type ComputeRegionSecurityPolicyConfig struct {
 	// rules block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_security_policy#rules ComputeRegionSecurityPolicy#rules}
-	Rules interface{} `field:"optional" json:"rules" yaml:"rules"`
+	Rules any `field:"optional" json:"rules" yaml:"rules"`
 	// timeouts block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_security_policy#timeouts ComputeRegionSecurityPolicy#timeouts}
@@ -71,6 +71,5 @@ type ComputeRegionSecurityPolicyConfig struct {
 	// user_defined_fields block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_security_policy#user_defined_fields ComputeRegionSecurityPolicy#user_defined_fields}
-	UserDefinedFields interface{} `field:"optional" json:"userDefinedFields" yaml:"userDefinedFields"`
+	UserDefinedFields any `field:"optional" json:"userDefinedFields" yaml:"userDefinedFields"`
 }
-

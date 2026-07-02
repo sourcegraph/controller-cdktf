@@ -12,9 +12,9 @@ type MonitoringDashboardTimeoutsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,8 +33,8 @@ type MonitoringDashboardTimeoutsOutputReference interface {
 	DeleteInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -49,7 +49,7 @@ type MonitoringDashboardTimeoutsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type MonitoringDashboardTimeoutsOutputReference interface {
 	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_MonitoringDashboardTimeoutsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_MonitoringDashboardTimeoutsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MonitoringDashboardTimeoutsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_MonitoringDashboardTimeoutsOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_MonitoringDashboardTimeoutsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MonitoringDashboardTimeoutsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_MonitoringDashboardTimeoutsOutputReference) UpdateInput() *st
 	return returns
 }
 
-
 func NewMonitoringDashboardTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MonitoringDashboardTimeoutsOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewMonitoringDashboardTimeoutsOutputReference(terraformResource cdktf.IInte
 
 	_jsii_.Create(
 		"@cdktf/provider-google.monitoringDashboard.MonitoringDashboardTimeoutsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewMonitoringDashboardTimeoutsOutputReference_Override(m MonitoringDashboar
 
 	_jsii_.Create(
 		"@cdktf/provider-google.monitoringDashboard.MonitoringDashboardTimeoutsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		m,
 	)
 }
 
-func (j *jsiiProxy_MonitoringDashboardTimeoutsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_MonitoringDashboardTimeoutsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_MonitoringDashboardTimeoutsOutputReference)SetComplexObjectIn
 	)
 }
 
-func (j *jsiiProxy_MonitoringDashboardTimeoutsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_MonitoringDashboardTimeoutsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_MonitoringDashboardTimeoutsOutputReference)SetComplexObjectIs
 	)
 }
 
-func (j *jsiiProxy_MonitoringDashboardTimeoutsOutputReference)SetCreate(val *string) {
+func (j *jsiiProxy_MonitoringDashboardTimeoutsOutputReference) SetCreate(val *string) {
 	if err := j.validateSetCreateParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_MonitoringDashboardTimeoutsOutputReference)SetCreate(val *str
 	)
 }
 
-func (j *jsiiProxy_MonitoringDashboardTimeoutsOutputReference)SetDelete(val *string) {
+func (j *jsiiProxy_MonitoringDashboardTimeoutsOutputReference) SetDelete(val *string) {
 	if err := j.validateSetDeleteParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_MonitoringDashboardTimeoutsOutputReference)SetDelete(val *str
 	)
 }
 
-func (j *jsiiProxy_MonitoringDashboardTimeoutsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_MonitoringDashboardTimeoutsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_MonitoringDashboardTimeoutsOutputReference)SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_MonitoringDashboardTimeoutsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MonitoringDashboardTimeoutsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_MonitoringDashboardTimeoutsOutputReference)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_MonitoringDashboardTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MonitoringDashboardTimeoutsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_MonitoringDashboardTimeoutsOutputReference)SetTerraformResour
 	)
 }
 
-func (j *jsiiProxy_MonitoringDashboardTimeoutsOutputReference)SetUpdate(val *string) {
+func (j *jsiiProxy_MonitoringDashboardTimeoutsOutputReference) SetUpdate(val *string) {
 	if err := j.validateSetUpdateParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (m *jsiiProxy_MonitoringDashboardTimeoutsOutputReference) ComputeFqn() *str
 	return returns
 }
 
-func (m *jsiiProxy_MonitoringDashboardTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (m *jsiiProxy_MonitoringDashboardTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (m *jsiiProxy_MonitoringDashboardTimeoutsOutputReference) GetBooleanAttribu
 	_jsii_.Invoke(
 		m,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (m *jsiiProxy_MonitoringDashboardTimeoutsOutputReference) GetBooleanMapAttr
 	_jsii_.Invoke(
 		m,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (m *jsiiProxy_MonitoringDashboardTimeoutsOutputReference) GetListAttribute(
 	_jsii_.Invoke(
 		m,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (m *jsiiProxy_MonitoringDashboardTimeoutsOutputReference) GetNumberAttribut
 	_jsii_.Invoke(
 		m,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (m *jsiiProxy_MonitoringDashboardTimeoutsOutputReference) GetNumberListAttr
 	_jsii_.Invoke(
 		m,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (m *jsiiProxy_MonitoringDashboardTimeoutsOutputReference) GetNumberMapAttri
 	_jsii_.Invoke(
 		m,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (m *jsiiProxy_MonitoringDashboardTimeoutsOutputReference) GetStringAttribut
 	_jsii_.Invoke(
 		m,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (m *jsiiProxy_MonitoringDashboardTimeoutsOutputReference) GetStringMapAttri
 	_jsii_.Invoke(
 		m,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (m *jsiiProxy_MonitoringDashboardTimeoutsOutputReference) InterpolationForA
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (m *jsiiProxy_MonitoringDashboardTimeoutsOutputReference) ResetUpdate() {
 	)
 }
 
-func (m *jsiiProxy_MonitoringDashboardTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_MonitoringDashboardTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := m.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (m *jsiiProxy_MonitoringDashboardTimeoutsOutputReference) ToString() *strin
 
 	return returns
 }
-

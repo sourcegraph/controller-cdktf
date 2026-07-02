@@ -19,7 +19,7 @@ func (l *jsiiProxy_LoggingOrganizationSink) validateAddMoveTargetParameters(move
 	return nil
 }
 
-func (l *jsiiProxy_LoggingOrganizationSink) validateAddOverrideParameters(path *string, value interface{}) error {
+func (l *jsiiProxy_LoggingOrganizationSink) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (l *jsiiProxy_LoggingOrganizationSink) validateMoveFromIdParameters(id *str
 	return nil
 }
 
-func (l *jsiiProxy_LoggingOrganizationSink) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (l *jsiiProxy_LoggingOrganizationSink) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -215,7 +215,7 @@ func (l *jsiiProxy_LoggingOrganizationSink) validatePutBigqueryOptionsParameters
 	return nil
 }
 
-func (l *jsiiProxy_LoggingOrganizationSink) validatePutExclusionsParameters(value interface{}) error {
+func (l *jsiiProxy_LoggingOrganizationSink) validatePutExclusionsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -262,7 +262,7 @@ func validateLoggingOrganizationSink_GenerateConfigForImportParameters(scope con
 	return nil
 }
 
-func validateLoggingOrganizationSink_IsConstructParameters(x interface{}) error {
+func validateLoggingOrganizationSink_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -270,7 +270,7 @@ func validateLoggingOrganizationSink_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
-func validateLoggingOrganizationSink_IsTerraformElementParameters(x interface{}) error {
+func validateLoggingOrganizationSink_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -278,7 +278,7 @@ func validateLoggingOrganizationSink_IsTerraformElementParameters(x interface{})
 	return nil
 }
 
-func validateLoggingOrganizationSink_IsTerraformResourceParameters(x interface{}) error {
+func validateLoggingOrganizationSink_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -286,7 +286,7 @@ func validateLoggingOrganizationSink_IsTerraformResourceParameters(x interface{}
 	return nil
 }
 
-func (j *jsiiProxy_LoggingOrganizationSink) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_LoggingOrganizationSink) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -319,7 +319,7 @@ func (j *jsiiProxy_LoggingOrganizationSink) validateSetConnectionParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_LoggingOrganizationSink) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_LoggingOrganizationSink) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -392,7 +392,7 @@ func (j *jsiiProxy_LoggingOrganizationSink) validateSetDestinationParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_LoggingOrganizationSink) validateSetDisabledParameters(val interface{}) error {
+func (j *jsiiProxy_LoggingOrganizationSink) validateSetDisabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -428,7 +428,7 @@ func (j *jsiiProxy_LoggingOrganizationSink) validateSetIdParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_LoggingOrganizationSink) validateSetIncludeChildrenParameters(val interface{}) error {
+func (j *jsiiProxy_LoggingOrganizationSink) validateSetIncludeChildrenParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -448,7 +448,7 @@ func (j *jsiiProxy_LoggingOrganizationSink) validateSetIncludeChildrenParameters
 	return nil
 }
 
-func (j *jsiiProxy_LoggingOrganizationSink) validateSetInterceptChildrenParameters(val interface{}) error {
+func (j *jsiiProxy_LoggingOrganizationSink) validateSetInterceptChildrenParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -492,7 +492,7 @@ func (j *jsiiProxy_LoggingOrganizationSink) validateSetOrgIdParameters(val *stri
 	return nil
 }
 
-func (j *jsiiProxy_LoggingOrganizationSink) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_LoggingOrganizationSink) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -556,4 +556,3 @@ func validateNewLoggingOrganizationSinkParameters(scope constructs.Construct, id
 
 	return nil
 }
-

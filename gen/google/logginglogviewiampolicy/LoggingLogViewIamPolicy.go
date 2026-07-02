@@ -18,15 +18,15 @@ type LoggingLogViewIamPolicy interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -66,24 +66,24 @@ type LoggingLogViewIamPolicy interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -101,7 +101,7 @@ type LoggingLogViewIamPolicy interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -113,7 +113,7 @@ type LoggingLogViewIamPolicy interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -125,17 +125,17 @@ type LoggingLogViewIamPolicy interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for LoggingLogViewIamPolicy
@@ -173,8 +173,8 @@ func (j *jsiiProxy_LoggingLogViewIamPolicy) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_LoggingLogViewIamPolicy) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoggingLogViewIamPolicy) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -183,8 +183,8 @@ func (j *jsiiProxy_LoggingLogViewIamPolicy) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LoggingLogViewIamPolicy) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_LoggingLogViewIamPolicy) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -193,8 +193,8 @@ func (j *jsiiProxy_LoggingLogViewIamPolicy) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_LoggingLogViewIamPolicy) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoggingLogViewIamPolicy) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -383,8 +383,8 @@ func (j *jsiiProxy_LoggingLogViewIamPolicy) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_LoggingLogViewIamPolicy) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_LoggingLogViewIamPolicy) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -393,8 +393,8 @@ func (j *jsiiProxy_LoggingLogViewIamPolicy) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LoggingLogViewIamPolicy) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoggingLogViewIamPolicy) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -413,8 +413,8 @@ func (j *jsiiProxy_LoggingLogViewIamPolicy) TerraformGeneratorMetadata() *cdktf.
 	return returns
 }
 
-func (j *jsiiProxy_LoggingLogViewIamPolicy) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_LoggingLogViewIamPolicy) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -433,7 +433,6 @@ func (j *jsiiProxy_LoggingLogViewIamPolicy) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_log_view_iam_policy google_logging_log_view_iam_policy} Resource.
 func NewLoggingLogViewIamPolicy(scope constructs.Construct, id *string, config *LoggingLogViewIamPolicyConfig) LoggingLogViewIamPolicy {
 	_init_.Initialize()
@@ -445,7 +444,7 @@ func NewLoggingLogViewIamPolicy(scope constructs.Construct, id *string, config *
 
 	_jsii_.Create(
 		"@cdktf/provider-google.loggingLogViewIamPolicy.LoggingLogViewIamPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -458,12 +457,12 @@ func NewLoggingLogViewIamPolicy_Override(l LoggingLogViewIamPolicy, scope constr
 
 	_jsii_.Create(
 		"@cdktf/provider-google.loggingLogViewIamPolicy.LoggingLogViewIamPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LoggingLogViewIamPolicy)SetBucket(val *string) {
+func (j *jsiiProxy_LoggingLogViewIamPolicy) SetBucket(val *string) {
 	if err := j.validateSetBucketParameters(val); err != nil {
 		panic(err)
 	}
@@ -474,7 +473,7 @@ func (j *jsiiProxy_LoggingLogViewIamPolicy)SetBucket(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LoggingLogViewIamPolicy)SetConnection(val interface{}) {
+func (j *jsiiProxy_LoggingLogViewIamPolicy) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -485,7 +484,7 @@ func (j *jsiiProxy_LoggingLogViewIamPolicy)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LoggingLogViewIamPolicy)SetCount(val interface{}) {
+func (j *jsiiProxy_LoggingLogViewIamPolicy) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -496,7 +495,7 @@ func (j *jsiiProxy_LoggingLogViewIamPolicy)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LoggingLogViewIamPolicy)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_LoggingLogViewIamPolicy) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -504,7 +503,7 @@ func (j *jsiiProxy_LoggingLogViewIamPolicy)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_LoggingLogViewIamPolicy)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_LoggingLogViewIamPolicy) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -512,7 +511,7 @@ func (j *jsiiProxy_LoggingLogViewIamPolicy)SetForEach(val cdktf.ITerraformIterat
 	)
 }
 
-func (j *jsiiProxy_LoggingLogViewIamPolicy)SetId(val *string) {
+func (j *jsiiProxy_LoggingLogViewIamPolicy) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -523,7 +522,7 @@ func (j *jsiiProxy_LoggingLogViewIamPolicy)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LoggingLogViewIamPolicy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_LoggingLogViewIamPolicy) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -534,7 +533,7 @@ func (j *jsiiProxy_LoggingLogViewIamPolicy)SetLifecycle(val *cdktf.TerraformReso
 	)
 }
 
-func (j *jsiiProxy_LoggingLogViewIamPolicy)SetLocation(val *string) {
+func (j *jsiiProxy_LoggingLogViewIamPolicy) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -545,7 +544,7 @@ func (j *jsiiProxy_LoggingLogViewIamPolicy)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LoggingLogViewIamPolicy)SetName(val *string) {
+func (j *jsiiProxy_LoggingLogViewIamPolicy) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -556,7 +555,7 @@ func (j *jsiiProxy_LoggingLogViewIamPolicy)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LoggingLogViewIamPolicy)SetParent(val *string) {
+func (j *jsiiProxy_LoggingLogViewIamPolicy) SetParent(val *string) {
 	if err := j.validateSetParentParameters(val); err != nil {
 		panic(err)
 	}
@@ -567,7 +566,7 @@ func (j *jsiiProxy_LoggingLogViewIamPolicy)SetParent(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LoggingLogViewIamPolicy)SetPolicyData(val *string) {
+func (j *jsiiProxy_LoggingLogViewIamPolicy) SetPolicyData(val *string) {
 	if err := j.validateSetPolicyDataParameters(val); err != nil {
 		panic(err)
 	}
@@ -578,7 +577,7 @@ func (j *jsiiProxy_LoggingLogViewIamPolicy)SetPolicyData(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LoggingLogViewIamPolicy)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_LoggingLogViewIamPolicy) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -586,7 +585,7 @@ func (j *jsiiProxy_LoggingLogViewIamPolicy)SetProvider(val cdktf.TerraformProvid
 	)
 }
 
-func (j *jsiiProxy_LoggingLogViewIamPolicy)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_LoggingLogViewIamPolicy) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -609,7 +608,7 @@ func LoggingLogViewIamPolicy_GenerateConfigForImport(scope constructs.Construct,
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.loggingLogViewIamPolicy.LoggingLogViewIamPolicy",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -633,7 +632,7 @@ func LoggingLogViewIamPolicy_GenerateConfigForImport(scope constructs.Construct,
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func LoggingLogViewIamPolicy_IsConstruct(x interface{}) *bool {
+func LoggingLogViewIamPolicy_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLoggingLogViewIamPolicy_IsConstructParameters(x); err != nil {
@@ -644,7 +643,7 @@ func LoggingLogViewIamPolicy_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.loggingLogViewIamPolicy.LoggingLogViewIamPolicy",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -652,7 +651,7 @@ func LoggingLogViewIamPolicy_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func LoggingLogViewIamPolicy_IsTerraformElement(x interface{}) *bool {
+func LoggingLogViewIamPolicy_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLoggingLogViewIamPolicy_IsTerraformElementParameters(x); err != nil {
@@ -663,7 +662,7 @@ func LoggingLogViewIamPolicy_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.loggingLogViewIamPolicy.LoggingLogViewIamPolicy",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -671,7 +670,7 @@ func LoggingLogViewIamPolicy_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func LoggingLogViewIamPolicy_IsTerraformResource(x interface{}) *bool {
+func LoggingLogViewIamPolicy_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLoggingLogViewIamPolicy_IsTerraformResourceParameters(x); err != nil {
@@ -682,7 +681,7 @@ func LoggingLogViewIamPolicy_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.loggingLogViewIamPolicy.LoggingLogViewIamPolicy",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -707,31 +706,31 @@ func (l *jsiiProxy_LoggingLogViewIamPolicy) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (l *jsiiProxy_LoggingLogViewIamPolicy) AddOverride(path *string, value interface{}) {
+func (l *jsiiProxy_LoggingLogViewIamPolicy) AddOverride(path *string, value any) {
 	if err := l.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (l *jsiiProxy_LoggingLogViewIamPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_LoggingLogViewIamPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -747,7 +746,7 @@ func (l *jsiiProxy_LoggingLogViewIamPolicy) GetBooleanAttribute(terraformAttribu
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -763,7 +762,7 @@ func (l *jsiiProxy_LoggingLogViewIamPolicy) GetBooleanMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -779,7 +778,7 @@ func (l *jsiiProxy_LoggingLogViewIamPolicy) GetListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -795,7 +794,7 @@ func (l *jsiiProxy_LoggingLogViewIamPolicy) GetNumberAttribute(terraformAttribut
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -811,7 +810,7 @@ func (l *jsiiProxy_LoggingLogViewIamPolicy) GetNumberListAttribute(terraformAttr
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -827,7 +826,7 @@ func (l *jsiiProxy_LoggingLogViewIamPolicy) GetNumberMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -843,7 +842,7 @@ func (l *jsiiProxy_LoggingLogViewIamPolicy) GetStringAttribute(terraformAttribut
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -859,15 +858,15 @@ func (l *jsiiProxy_LoggingLogViewIamPolicy) GetStringMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (l *jsiiProxy_LoggingLogViewIamPolicy) HasResourceMove() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LoggingLogViewIamPolicy) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -886,7 +885,7 @@ func (l *jsiiProxy_LoggingLogViewIamPolicy) ImportFrom(id *string, provider cdkt
 	_jsii_.InvokeVoid(
 		l,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -899,7 +898,7 @@ func (l *jsiiProxy_LoggingLogViewIamPolicy) InterpolationForAttribute(terraformA
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -913,18 +912,18 @@ func (l *jsiiProxy_LoggingLogViewIamPolicy) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (l *jsiiProxy_LoggingLogViewIamPolicy) MoveTo(moveTarget *string, index interface{}) {
+func (l *jsiiProxy_LoggingLogViewIamPolicy) MoveTo(moveTarget *string, index any) {
 	if err := l.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -935,7 +934,7 @@ func (l *jsiiProxy_LoggingLogViewIamPolicy) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -946,7 +945,7 @@ func (l *jsiiProxy_LoggingLogViewIamPolicy) OverrideLogicalId(newLogicalId *stri
 	_jsii_.InvokeVoid(
 		l,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -974,8 +973,8 @@ func (l *jsiiProxy_LoggingLogViewIamPolicy) ResetOverrideLogicalId() {
 	)
 }
 
-func (l *jsiiProxy_LoggingLogViewIamPolicy) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (l *jsiiProxy_LoggingLogViewIamPolicy) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
@@ -987,8 +986,8 @@ func (l *jsiiProxy_LoggingLogViewIamPolicy) SynthesizeAttributes() *map[string]i
 	return returns
 }
 
-func (l *jsiiProxy_LoggingLogViewIamPolicy) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (l *jsiiProxy_LoggingLogViewIamPolicy) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
@@ -1000,8 +999,8 @@ func (l *jsiiProxy_LoggingLogViewIamPolicy) SynthesizeHclAttributes() *map[strin
 	return returns
 }
 
-func (l *jsiiProxy_LoggingLogViewIamPolicy) ToHclTerraform() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LoggingLogViewIamPolicy) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1013,8 +1012,8 @@ func (l *jsiiProxy_LoggingLogViewIamPolicy) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (l *jsiiProxy_LoggingLogViewIamPolicy) ToMetadata() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LoggingLogViewIamPolicy) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1039,8 +1038,8 @@ func (l *jsiiProxy_LoggingLogViewIamPolicy) ToString() *string {
 	return returns
 }
 
-func (l *jsiiProxy_LoggingLogViewIamPolicy) ToTerraform() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LoggingLogViewIamPolicy) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1051,4 +1050,3 @@ func (l *jsiiProxy_LoggingLogViewIamPolicy) ToTerraform() interface{} {
 
 	return returns
 }
-

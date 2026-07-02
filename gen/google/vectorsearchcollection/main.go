@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vectorSearchCollection.VectorSearchCollection",
-		reflect.TypeOf((*VectorSearchCollection)(nil)).Elem(),
+		reflect.TypeFor[VectorSearchCollection](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -92,7 +92,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vectorSchema", GoGetter: "VectorSchema"},
 			_jsii_.MemberProperty{JsiiProperty: "vectorSchemaInput", GoGetter: "VectorSchemaInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VectorSearchCollection{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -100,15 +100,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vectorSearchCollection.VectorSearchCollectionConfig",
-		reflect.TypeOf((*VectorSearchCollectionConfig)(nil)).Elem(),
+		reflect.TypeFor[VectorSearchCollectionConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vectorSearchCollection.VectorSearchCollectionEncryptionSpec",
-		reflect.TypeOf((*VectorSearchCollectionEncryptionSpec)(nil)).Elem(),
+		reflect.TypeFor[VectorSearchCollectionEncryptionSpec](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vectorSearchCollection.VectorSearchCollectionEncryptionSpecOutputReference",
-		reflect.TypeOf((*VectorSearchCollectionEncryptionSpecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VectorSearchCollectionEncryptionSpecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -134,7 +134,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VectorSearchCollectionEncryptionSpecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -142,11 +142,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vectorSearchCollection.VectorSearchCollectionTimeouts",
-		reflect.TypeOf((*VectorSearchCollectionTimeouts)(nil)).Elem(),
+		reflect.TypeFor[VectorSearchCollectionTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vectorSearchCollection.VectorSearchCollectionTimeoutsOutputReference",
-		reflect.TypeOf((*VectorSearchCollectionTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VectorSearchCollectionTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -179,7 +179,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VectorSearchCollectionTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -187,15 +187,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vectorSearchCollection.VectorSearchCollectionVectorSchema",
-		reflect.TypeOf((*VectorSearchCollectionVectorSchema)(nil)).Elem(),
+		reflect.TypeFor[VectorSearchCollectionVectorSchema](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vectorSearchCollection.VectorSearchCollectionVectorSchemaDenseVector",
-		reflect.TypeOf((*VectorSearchCollectionVectorSchemaDenseVector)(nil)).Elem(),
+		reflect.TypeFor[VectorSearchCollectionVectorSchemaDenseVector](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vectorSearchCollection.VectorSearchCollectionVectorSchemaDenseVectorOutputReference",
-		reflect.TypeOf((*VectorSearchCollectionVectorSchemaDenseVectorOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VectorSearchCollectionVectorSchemaDenseVectorOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -226,7 +226,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vertexEmbeddingConfig", GoGetter: "VertexEmbeddingConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "vertexEmbeddingConfigInput", GoGetter: "VertexEmbeddingConfigInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VectorSearchCollectionVectorSchemaDenseVectorOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -234,11 +234,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vectorSearchCollection.VectorSearchCollectionVectorSchemaDenseVectorVertexEmbeddingConfig",
-		reflect.TypeOf((*VectorSearchCollectionVectorSchemaDenseVectorVertexEmbeddingConfig)(nil)).Elem(),
+		reflect.TypeFor[VectorSearchCollectionVectorSchemaDenseVectorVertexEmbeddingConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vectorSearchCollection.VectorSearchCollectionVectorSchemaDenseVectorVertexEmbeddingConfigOutputReference",
-		reflect.TypeOf((*VectorSearchCollectionVectorSchemaDenseVectorVertexEmbeddingConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VectorSearchCollectionVectorSchemaDenseVectorVertexEmbeddingConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -268,7 +268,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "textTemplateInput", GoGetter: "TextTemplateInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VectorSearchCollectionVectorSchemaDenseVectorVertexEmbeddingConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -276,7 +276,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vectorSearchCollection.VectorSearchCollectionVectorSchemaList",
-		reflect.TypeOf((*VectorSearchCollectionVectorSchemaList)(nil)).Elem(),
+		reflect.TypeFor[VectorSearchCollectionVectorSchemaList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -290,7 +290,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VectorSearchCollectionVectorSchemaList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -298,7 +298,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vectorSearchCollection.VectorSearchCollectionVectorSchemaOutputReference",
-		reflect.TypeOf((*VectorSearchCollectionVectorSchemaOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VectorSearchCollectionVectorSchemaOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -332,7 +332,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VectorSearchCollectionVectorSchemaOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -340,11 +340,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vectorSearchCollection.VectorSearchCollectionVectorSchemaSparseVector",
-		reflect.TypeOf((*VectorSearchCollectionVectorSchemaSparseVector)(nil)).Elem(),
+		reflect.TypeFor[VectorSearchCollectionVectorSchemaSparseVector](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vectorSearchCollection.VectorSearchCollectionVectorSchemaSparseVectorOutputReference",
-		reflect.TypeOf((*VectorSearchCollectionVectorSchemaSparseVectorOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VectorSearchCollectionVectorSchemaSparseVectorOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -368,7 +368,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VectorSearchCollectionVectorSchemaSparseVectorOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

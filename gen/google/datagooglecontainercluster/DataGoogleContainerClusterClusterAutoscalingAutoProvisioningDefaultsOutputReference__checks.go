@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleContainerClusterClusterAutoscalingAutoProvisioningD
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefa
 
 	return nil
 }
-

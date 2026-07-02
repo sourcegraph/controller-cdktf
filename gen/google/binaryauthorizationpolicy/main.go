@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicy",
-		reflect.TypeOf((*BinaryAuthorizationPolicy)(nil)).Elem(),
+		reflect.TypeFor[BinaryAuthorizationPolicy](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -80,7 +80,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BinaryAuthorizationPolicy{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -88,11 +88,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyAdmissionWhitelistPatterns",
-		reflect.TypeOf((*BinaryAuthorizationPolicyAdmissionWhitelistPatterns)(nil)).Elem(),
+		reflect.TypeFor[BinaryAuthorizationPolicyAdmissionWhitelistPatterns](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyAdmissionWhitelistPatternsList",
-		reflect.TypeOf((*BinaryAuthorizationPolicyAdmissionWhitelistPatternsList)(nil)).Elem(),
+		reflect.TypeFor[BinaryAuthorizationPolicyAdmissionWhitelistPatternsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -106,7 +106,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BinaryAuthorizationPolicyAdmissionWhitelistPatternsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -114,7 +114,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyAdmissionWhitelistPatternsOutputReference",
-		reflect.TypeOf((*BinaryAuthorizationPolicyAdmissionWhitelistPatternsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BinaryAuthorizationPolicyAdmissionWhitelistPatternsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -140,7 +140,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BinaryAuthorizationPolicyAdmissionWhitelistPatternsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -148,11 +148,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyClusterAdmissionRules",
-		reflect.TypeOf((*BinaryAuthorizationPolicyClusterAdmissionRules)(nil)).Elem(),
+		reflect.TypeFor[BinaryAuthorizationPolicyClusterAdmissionRules](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyClusterAdmissionRulesList",
-		reflect.TypeOf((*BinaryAuthorizationPolicyClusterAdmissionRulesList)(nil)).Elem(),
+		reflect.TypeFor[BinaryAuthorizationPolicyClusterAdmissionRulesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -166,7 +166,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -174,7 +174,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyClusterAdmissionRulesOutputReference",
-		reflect.TypeOf((*BinaryAuthorizationPolicyClusterAdmissionRulesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BinaryAuthorizationPolicyClusterAdmissionRulesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cluster", GoGetter: "Cluster"},
 			_jsii_.MemberProperty{JsiiProperty: "clusterInput", GoGetter: "ClusterInput"},
@@ -207,7 +207,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -215,15 +215,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyConfig",
-		reflect.TypeOf((*BinaryAuthorizationPolicyConfig)(nil)).Elem(),
+		reflect.TypeFor[BinaryAuthorizationPolicyConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyDefaultAdmissionRule",
-		reflect.TypeOf((*BinaryAuthorizationPolicyDefaultAdmissionRule)(nil)).Elem(),
+		reflect.TypeFor[BinaryAuthorizationPolicyDefaultAdmissionRule](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyDefaultAdmissionRuleOutputReference",
-		reflect.TypeOf((*BinaryAuthorizationPolicyDefaultAdmissionRuleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BinaryAuthorizationPolicyDefaultAdmissionRuleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -254,7 +254,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BinaryAuthorizationPolicyDefaultAdmissionRuleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -262,11 +262,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyTimeouts",
-		reflect.TypeOf((*BinaryAuthorizationPolicyTimeouts)(nil)).Elem(),
+		reflect.TypeFor[BinaryAuthorizationPolicyTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyTimeoutsOutputReference",
-		reflect.TypeOf((*BinaryAuthorizationPolicyTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BinaryAuthorizationPolicyTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -299,7 +299,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BinaryAuthorizationPolicyTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -12,17 +12,17 @@ type DataprocWorkflowTemplateJobsHiveJobOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
-	ContinueOnFailure() interface{}
-	SetContinueOnFailure(val interface{})
-	ContinueOnFailureInput() interface{}
+	ContinueOnFailure() any
+	SetContinueOnFailure(val any)
+	ContinueOnFailureInput() any
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -57,7 +57,7 @@ type DataprocWorkflowTemplateJobsHiveJobOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -87,7 +87,7 @@ type DataprocWorkflowTemplateJobsHiveJobOutputReference interface {
 	ResetScriptVariables()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -100,8 +100,8 @@ type jsiiProxy_DataprocWorkflowTemplateJobsHiveJobOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DataprocWorkflowTemplateJobsHiveJobOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataprocWorkflowTemplateJobsHiveJobOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -120,8 +120,8 @@ func (j *jsiiProxy_DataprocWorkflowTemplateJobsHiveJobOutputReference) ComplexOb
 	return returns
 }
 
-func (j *jsiiProxy_DataprocWorkflowTemplateJobsHiveJobOutputReference) ContinueOnFailure() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataprocWorkflowTemplateJobsHiveJobOutputReference) ContinueOnFailure() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"continueOnFailure",
@@ -130,8 +130,8 @@ func (j *jsiiProxy_DataprocWorkflowTemplateJobsHiveJobOutputReference) ContinueO
 	return returns
 }
 
-func (j *jsiiProxy_DataprocWorkflowTemplateJobsHiveJobOutputReference) ContinueOnFailureInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataprocWorkflowTemplateJobsHiveJobOutputReference) ContinueOnFailureInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"continueOnFailureInput",
@@ -290,7 +290,6 @@ func (j *jsiiProxy_DataprocWorkflowTemplateJobsHiveJobOutputReference) Terraform
 	return returns
 }
 
-
 func NewDataprocWorkflowTemplateJobsHiveJobOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataprocWorkflowTemplateJobsHiveJobOutputReference {
 	_init_.Initialize()
 
@@ -301,7 +300,7 @@ func NewDataprocWorkflowTemplateJobsHiveJobOutputReference(terraformResource cdk
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsHiveJobOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -313,12 +312,12 @@ func NewDataprocWorkflowTemplateJobsHiveJobOutputReference_Override(d DataprocWo
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsHiveJobOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataprocWorkflowTemplateJobsHiveJobOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataprocWorkflowTemplateJobsHiveJobOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -329,7 +328,7 @@ func (j *jsiiProxy_DataprocWorkflowTemplateJobsHiveJobOutputReference)SetComplex
 	)
 }
 
-func (j *jsiiProxy_DataprocWorkflowTemplateJobsHiveJobOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataprocWorkflowTemplateJobsHiveJobOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -340,7 +339,7 @@ func (j *jsiiProxy_DataprocWorkflowTemplateJobsHiveJobOutputReference)SetComplex
 	)
 }
 
-func (j *jsiiProxy_DataprocWorkflowTemplateJobsHiveJobOutputReference)SetContinueOnFailure(val interface{}) {
+func (j *jsiiProxy_DataprocWorkflowTemplateJobsHiveJobOutputReference) SetContinueOnFailure(val any) {
 	if err := j.validateSetContinueOnFailureParameters(val); err != nil {
 		panic(err)
 	}
@@ -351,7 +350,7 @@ func (j *jsiiProxy_DataprocWorkflowTemplateJobsHiveJobOutputReference)SetContinu
 	)
 }
 
-func (j *jsiiProxy_DataprocWorkflowTemplateJobsHiveJobOutputReference)SetInternalValue(val *DataprocWorkflowTemplateJobsHiveJob) {
+func (j *jsiiProxy_DataprocWorkflowTemplateJobsHiveJobOutputReference) SetInternalValue(val *DataprocWorkflowTemplateJobsHiveJob) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -362,7 +361,7 @@ func (j *jsiiProxy_DataprocWorkflowTemplateJobsHiveJobOutputReference)SetInterna
 	)
 }
 
-func (j *jsiiProxy_DataprocWorkflowTemplateJobsHiveJobOutputReference)SetJarFileUris(val *[]*string) {
+func (j *jsiiProxy_DataprocWorkflowTemplateJobsHiveJobOutputReference) SetJarFileUris(val *[]*string) {
 	if err := j.validateSetJarFileUrisParameters(val); err != nil {
 		panic(err)
 	}
@@ -373,7 +372,7 @@ func (j *jsiiProxy_DataprocWorkflowTemplateJobsHiveJobOutputReference)SetJarFile
 	)
 }
 
-func (j *jsiiProxy_DataprocWorkflowTemplateJobsHiveJobOutputReference)SetProperties(val *map[string]*string) {
+func (j *jsiiProxy_DataprocWorkflowTemplateJobsHiveJobOutputReference) SetProperties(val *map[string]*string) {
 	if err := j.validateSetPropertiesParameters(val); err != nil {
 		panic(err)
 	}
@@ -384,7 +383,7 @@ func (j *jsiiProxy_DataprocWorkflowTemplateJobsHiveJobOutputReference)SetPropert
 	)
 }
 
-func (j *jsiiProxy_DataprocWorkflowTemplateJobsHiveJobOutputReference)SetQueryFileUri(val *string) {
+func (j *jsiiProxy_DataprocWorkflowTemplateJobsHiveJobOutputReference) SetQueryFileUri(val *string) {
 	if err := j.validateSetQueryFileUriParameters(val); err != nil {
 		panic(err)
 	}
@@ -395,7 +394,7 @@ func (j *jsiiProxy_DataprocWorkflowTemplateJobsHiveJobOutputReference)SetQueryFi
 	)
 }
 
-func (j *jsiiProxy_DataprocWorkflowTemplateJobsHiveJobOutputReference)SetScriptVariables(val *map[string]*string) {
+func (j *jsiiProxy_DataprocWorkflowTemplateJobsHiveJobOutputReference) SetScriptVariables(val *map[string]*string) {
 	if err := j.validateSetScriptVariablesParameters(val); err != nil {
 		panic(err)
 	}
@@ -406,7 +405,7 @@ func (j *jsiiProxy_DataprocWorkflowTemplateJobsHiveJobOutputReference)SetScriptV
 	)
 }
 
-func (j *jsiiProxy_DataprocWorkflowTemplateJobsHiveJobOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataprocWorkflowTemplateJobsHiveJobOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,7 +416,7 @@ func (j *jsiiProxy_DataprocWorkflowTemplateJobsHiveJobOutputReference)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_DataprocWorkflowTemplateJobsHiveJobOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataprocWorkflowTemplateJobsHiveJobOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -441,16 +440,16 @@ func (d *jsiiProxy_DataprocWorkflowTemplateJobsHiveJobOutputReference) ComputeFq
 	return returns
 }
 
-func (d *jsiiProxy_DataprocWorkflowTemplateJobsHiveJobOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataprocWorkflowTemplateJobsHiveJobOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -466,7 +465,7 @@ func (d *jsiiProxy_DataprocWorkflowTemplateJobsHiveJobOutputReference) GetBoolea
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -482,7 +481,7 @@ func (d *jsiiProxy_DataprocWorkflowTemplateJobsHiveJobOutputReference) GetBoolea
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -498,7 +497,7 @@ func (d *jsiiProxy_DataprocWorkflowTemplateJobsHiveJobOutputReference) GetListAt
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -514,7 +513,7 @@ func (d *jsiiProxy_DataprocWorkflowTemplateJobsHiveJobOutputReference) GetNumber
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -530,7 +529,7 @@ func (d *jsiiProxy_DataprocWorkflowTemplateJobsHiveJobOutputReference) GetNumber
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -546,7 +545,7 @@ func (d *jsiiProxy_DataprocWorkflowTemplateJobsHiveJobOutputReference) GetNumber
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -562,7 +561,7 @@ func (d *jsiiProxy_DataprocWorkflowTemplateJobsHiveJobOutputReference) GetString
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -578,7 +577,7 @@ func (d *jsiiProxy_DataprocWorkflowTemplateJobsHiveJobOutputReference) GetString
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -607,7 +606,7 @@ func (d *jsiiProxy_DataprocWorkflowTemplateJobsHiveJobOutputReference) Interpola
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -621,7 +620,7 @@ func (d *jsiiProxy_DataprocWorkflowTemplateJobsHiveJobOutputReference) PutQueryL
 	_jsii_.InvokeVoid(
 		d,
 		"putQueryList",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -673,16 +672,16 @@ func (d *jsiiProxy_DataprocWorkflowTemplateJobsHiveJobOutputReference) ResetScri
 	)
 }
 
-func (d *jsiiProxy_DataprocWorkflowTemplateJobsHiveJobOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataprocWorkflowTemplateJobsHiveJobOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -701,4 +700,3 @@ func (d *jsiiProxy_DataprocWorkflowTemplateJobsHiveJobOutputReference) ToString(
 
 	return returns
 }
-

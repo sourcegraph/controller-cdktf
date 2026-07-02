@@ -6,9 +6,9 @@ import (
 
 type GeminiGeminiGcpEnablementSettingConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GeminiGeminiGcpEnablementSettingConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Id of the Gemini Gcp Enablement setting.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gemini_gemini_gcp_enablement_setting#gemini_gcp_enablement_setting_id GeminiGeminiGcpEnablementSetting#gemini_gcp_enablement_setting_id}
@@ -30,11 +30,11 @@ type GeminiGeminiGcpEnablementSettingConfig struct {
 	// Whether web grounding should be disabled.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gemini_gemini_gcp_enablement_setting#disable_web_grounding GeminiGeminiGcpEnablementSetting#disable_web_grounding}
-	DisableWebGrounding interface{} `field:"optional" json:"disableWebGrounding" yaml:"disableWebGrounding"`
+	DisableWebGrounding any `field:"optional" json:"disableWebGrounding" yaml:"disableWebGrounding"`
 	// Whether customer data sharing should be enabled.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gemini_gemini_gcp_enablement_setting#enable_customer_data_sharing GeminiGeminiGcpEnablementSetting#enable_customer_data_sharing}
-	EnableCustomerDataSharing interface{} `field:"optional" json:"enableCustomerDataSharing" yaml:"enableCustomerDataSharing"`
+	EnableCustomerDataSharing any `field:"optional" json:"enableCustomerDataSharing" yaml:"enableCustomerDataSharing"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gemini_gemini_gcp_enablement_setting#id GeminiGeminiGcpEnablementSetting#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -58,4 +58,3 @@ type GeminiGeminiGcpEnablementSettingConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gemini_gemini_gcp_enablement_setting#web_grounding_type GeminiGeminiGcpEnablementSetting#web_grounding_type}
 	WebGroundingType *string `field:"optional" json:"webGroundingType" yaml:"webGroundingType"`
 }
-

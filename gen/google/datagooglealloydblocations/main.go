@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleAlloydbLocations.DataGoogleAlloydbLocations",
-		reflect.TypeOf((*DataGoogleAlloydbLocations)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleAlloydbLocations](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -52,7 +52,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleAlloydbLocations{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -60,15 +60,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleAlloydbLocations.DataGoogleAlloydbLocationsConfig",
-		reflect.TypeOf((*DataGoogleAlloydbLocationsConfig)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleAlloydbLocationsConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleAlloydbLocations.DataGoogleAlloydbLocationsLocations",
-		reflect.TypeOf((*DataGoogleAlloydbLocationsLocations)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleAlloydbLocationsLocations](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleAlloydbLocations.DataGoogleAlloydbLocationsLocationsList",
-		reflect.TypeOf((*DataGoogleAlloydbLocationsLocationsList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleAlloydbLocationsLocationsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -81,7 +81,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleAlloydbLocationsLocationsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -89,7 +89,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleAlloydbLocations.DataGoogleAlloydbLocationsLocationsOutputReference",
-		reflect.TypeOf((*DataGoogleAlloydbLocationsLocationsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleAlloydbLocationsLocationsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -118,7 +118,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleAlloydbLocationsLocationsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

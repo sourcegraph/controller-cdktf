@@ -15,15 +15,15 @@ type KmsKeyRing interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -59,26 +59,26 @@ type KmsKeyRing interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() KmsKeyRingTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -96,7 +96,7 @@ type KmsKeyRing interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -108,7 +108,7 @@ type KmsKeyRing interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -122,17 +122,17 @@ type KmsKeyRing interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for KmsKeyRing
@@ -150,8 +150,8 @@ func (j *jsiiProxy_KmsKeyRing) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_KmsKeyRing) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KmsKeyRing) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -160,8 +160,8 @@ func (j *jsiiProxy_KmsKeyRing) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_KmsKeyRing) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_KmsKeyRing) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -170,8 +170,8 @@ func (j *jsiiProxy_KmsKeyRing) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_KmsKeyRing) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KmsKeyRing) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -330,8 +330,8 @@ func (j *jsiiProxy_KmsKeyRing) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_KmsKeyRing) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_KmsKeyRing) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -340,8 +340,8 @@ func (j *jsiiProxy_KmsKeyRing) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_KmsKeyRing) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KmsKeyRing) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -360,8 +360,8 @@ func (j *jsiiProxy_KmsKeyRing) TerraformGeneratorMetadata() *cdktf.TerraformProv
 	return returns
 }
 
-func (j *jsiiProxy_KmsKeyRing) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_KmsKeyRing) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -390,8 +390,8 @@ func (j *jsiiProxy_KmsKeyRing) Timeouts() KmsKeyRingTimeoutsOutputReference {
 	return returns
 }
 
-func (j *jsiiProxy_KmsKeyRing) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KmsKeyRing) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -399,7 +399,6 @@ func (j *jsiiProxy_KmsKeyRing) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_key_ring google_kms_key_ring} Resource.
 func NewKmsKeyRing(scope constructs.Construct, id *string, config *KmsKeyRingConfig) KmsKeyRing {
@@ -412,7 +411,7 @@ func NewKmsKeyRing(scope constructs.Construct, id *string, config *KmsKeyRingCon
 
 	_jsii_.Create(
 		"@cdktf/provider-google.kmsKeyRing.KmsKeyRing",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -425,12 +424,12 @@ func NewKmsKeyRing_Override(k KmsKeyRing, scope constructs.Construct, id *string
 
 	_jsii_.Create(
 		"@cdktf/provider-google.kmsKeyRing.KmsKeyRing",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		k,
 	)
 }
 
-func (j *jsiiProxy_KmsKeyRing)SetConnection(val interface{}) {
+func (j *jsiiProxy_KmsKeyRing) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -441,7 +440,7 @@ func (j *jsiiProxy_KmsKeyRing)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_KmsKeyRing)SetCount(val interface{}) {
+func (j *jsiiProxy_KmsKeyRing) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,7 +451,7 @@ func (j *jsiiProxy_KmsKeyRing)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_KmsKeyRing)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_KmsKeyRing) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -460,7 +459,7 @@ func (j *jsiiProxy_KmsKeyRing)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_KmsKeyRing)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_KmsKeyRing) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -468,7 +467,7 @@ func (j *jsiiProxy_KmsKeyRing)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_KmsKeyRing)SetId(val *string) {
+func (j *jsiiProxy_KmsKeyRing) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -479,7 +478,7 @@ func (j *jsiiProxy_KmsKeyRing)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KmsKeyRing)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_KmsKeyRing) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -490,7 +489,7 @@ func (j *jsiiProxy_KmsKeyRing)SetLifecycle(val *cdktf.TerraformResourceLifecycle
 	)
 }
 
-func (j *jsiiProxy_KmsKeyRing)SetLocation(val *string) {
+func (j *jsiiProxy_KmsKeyRing) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -501,7 +500,7 @@ func (j *jsiiProxy_KmsKeyRing)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KmsKeyRing)SetName(val *string) {
+func (j *jsiiProxy_KmsKeyRing) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -512,7 +511,7 @@ func (j *jsiiProxy_KmsKeyRing)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KmsKeyRing)SetProject(val *string) {
+func (j *jsiiProxy_KmsKeyRing) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -523,7 +522,7 @@ func (j *jsiiProxy_KmsKeyRing)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KmsKeyRing)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_KmsKeyRing) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -531,7 +530,7 @@ func (j *jsiiProxy_KmsKeyRing)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_KmsKeyRing)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_KmsKeyRing) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -554,7 +553,7 @@ func KmsKeyRing_GenerateConfigForImport(scope constructs.Construct, importToId *
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.kmsKeyRing.KmsKeyRing",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -578,7 +577,7 @@ func KmsKeyRing_GenerateConfigForImport(scope constructs.Construct, importToId *
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func KmsKeyRing_IsConstruct(x interface{}) *bool {
+func KmsKeyRing_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateKmsKeyRing_IsConstructParameters(x); err != nil {
@@ -589,7 +588,7 @@ func KmsKeyRing_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.kmsKeyRing.KmsKeyRing",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -597,7 +596,7 @@ func KmsKeyRing_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func KmsKeyRing_IsTerraformElement(x interface{}) *bool {
+func KmsKeyRing_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateKmsKeyRing_IsTerraformElementParameters(x); err != nil {
@@ -608,7 +607,7 @@ func KmsKeyRing_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.kmsKeyRing.KmsKeyRing",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -616,7 +615,7 @@ func KmsKeyRing_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func KmsKeyRing_IsTerraformResource(x interface{}) *bool {
+func KmsKeyRing_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateKmsKeyRing_IsTerraformResourceParameters(x); err != nil {
@@ -627,7 +626,7 @@ func KmsKeyRing_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.kmsKeyRing.KmsKeyRing",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -652,31 +651,31 @@ func (k *jsiiProxy_KmsKeyRing) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		k,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (k *jsiiProxy_KmsKeyRing) AddOverride(path *string, value interface{}) {
+func (k *jsiiProxy_KmsKeyRing) AddOverride(path *string, value any) {
 	if err := k.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		k,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (k *jsiiProxy_KmsKeyRing) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (k *jsiiProxy_KmsKeyRing) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := k.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		k,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -692,7 +691,7 @@ func (k *jsiiProxy_KmsKeyRing) GetBooleanAttribute(terraformAttribute *string) c
 	_jsii_.Invoke(
 		k,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -708,7 +707,7 @@ func (k *jsiiProxy_KmsKeyRing) GetBooleanMapAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		k,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -724,7 +723,7 @@ func (k *jsiiProxy_KmsKeyRing) GetListAttribute(terraformAttribute *string) *[]*
 	_jsii_.Invoke(
 		k,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -740,7 +739,7 @@ func (k *jsiiProxy_KmsKeyRing) GetNumberAttribute(terraformAttribute *string) *f
 	_jsii_.Invoke(
 		k,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -756,7 +755,7 @@ func (k *jsiiProxy_KmsKeyRing) GetNumberListAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		k,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -772,7 +771,7 @@ func (k *jsiiProxy_KmsKeyRing) GetNumberMapAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		k,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -788,7 +787,7 @@ func (k *jsiiProxy_KmsKeyRing) GetStringAttribute(terraformAttribute *string) *s
 	_jsii_.Invoke(
 		k,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -804,15 +803,15 @@ func (k *jsiiProxy_KmsKeyRing) GetStringMapAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		k,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (k *jsiiProxy_KmsKeyRing) HasResourceMove() interface{} {
-	var returns interface{}
+func (k *jsiiProxy_KmsKeyRing) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		k,
@@ -831,7 +830,7 @@ func (k *jsiiProxy_KmsKeyRing) ImportFrom(id *string, provider cdktf.TerraformPr
 	_jsii_.InvokeVoid(
 		k,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -844,7 +843,7 @@ func (k *jsiiProxy_KmsKeyRing) InterpolationForAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		k,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -858,18 +857,18 @@ func (k *jsiiProxy_KmsKeyRing) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		k,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (k *jsiiProxy_KmsKeyRing) MoveTo(moveTarget *string, index interface{}) {
+func (k *jsiiProxy_KmsKeyRing) MoveTo(moveTarget *string, index any) {
 	if err := k.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		k,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -880,7 +879,7 @@ func (k *jsiiProxy_KmsKeyRing) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		k,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -891,7 +890,7 @@ func (k *jsiiProxy_KmsKeyRing) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		k,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -902,7 +901,7 @@ func (k *jsiiProxy_KmsKeyRing) PutTimeouts(value *KmsKeyRingTimeouts) {
 	_jsii_.InvokeVoid(
 		k,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -938,8 +937,8 @@ func (k *jsiiProxy_KmsKeyRing) ResetTimeouts() {
 	)
 }
 
-func (k *jsiiProxy_KmsKeyRing) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (k *jsiiProxy_KmsKeyRing) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		k,
@@ -951,8 +950,8 @@ func (k *jsiiProxy_KmsKeyRing) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (k *jsiiProxy_KmsKeyRing) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (k *jsiiProxy_KmsKeyRing) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		k,
@@ -964,8 +963,8 @@ func (k *jsiiProxy_KmsKeyRing) SynthesizeHclAttributes() *map[string]interface{}
 	return returns
 }
 
-func (k *jsiiProxy_KmsKeyRing) ToHclTerraform() interface{} {
-	var returns interface{}
+func (k *jsiiProxy_KmsKeyRing) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		k,
@@ -977,8 +976,8 @@ func (k *jsiiProxy_KmsKeyRing) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (k *jsiiProxy_KmsKeyRing) ToMetadata() interface{} {
-	var returns interface{}
+func (k *jsiiProxy_KmsKeyRing) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		k,
@@ -1003,8 +1002,8 @@ func (k *jsiiProxy_KmsKeyRing) ToString() *string {
 	return returns
 }
 
-func (k *jsiiProxy_KmsKeyRing) ToTerraform() interface{} {
-	var returns interface{}
+func (k *jsiiProxy_KmsKeyRing) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		k,
@@ -1015,4 +1014,3 @@ func (k *jsiiProxy_KmsKeyRing) ToTerraform() interface{} {
 
 	return returns
 }
-

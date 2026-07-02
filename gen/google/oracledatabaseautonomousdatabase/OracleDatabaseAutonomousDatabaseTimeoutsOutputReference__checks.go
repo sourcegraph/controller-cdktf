@@ -98,7 +98,7 @@ func (o *jsiiProxy_OracleDatabaseAutonomousDatabaseTimeoutsOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_OracleDatabaseAutonomousDatabaseTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_OracleDatabaseAutonomousDatabaseTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_OracleDatabaseAutonomousDatabaseTimeoutsOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_OracleDatabaseAutonomousDatabaseTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_OracleDatabaseAutonomousDatabaseTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewOracleDatabaseAutonomousDatabaseTimeoutsOutputReferenceParameter
 
 	return nil
 }
-

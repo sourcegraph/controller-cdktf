@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleComputeRegionInstanceTemplateSchedulingLocalSsdReco
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplateSchedulingLocalSsdRecoveryTimeoutOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplateSchedulingLocalSsdRecoveryTimeoutOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleComputeRegionInstanceTemplateSchedulingLocalSsdRecover
 
 	return nil
 }
-

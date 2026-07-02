@@ -17,15 +17,15 @@ type ContainerAnalysisOccurrence interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -61,11 +61,11 @@ type ContainerAnalysisOccurrence interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Remediation() *string
 	SetRemediation(val *string)
 	RemediationInput() *string
@@ -75,19 +75,19 @@ type ContainerAnalysisOccurrence interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() ContainerAnalysisOccurrenceTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -105,7 +105,7 @@ type ContainerAnalysisOccurrence interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -117,7 +117,7 @@ type ContainerAnalysisOccurrence interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -133,17 +133,17 @@ type ContainerAnalysisOccurrence interface {
 	ResetProject()
 	ResetRemediation()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ContainerAnalysisOccurrence
@@ -181,8 +181,8 @@ func (j *jsiiProxy_ContainerAnalysisOccurrence) CdktfStack() cdktf.TerraformStac
 	return returns
 }
 
-func (j *jsiiProxy_ContainerAnalysisOccurrence) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerAnalysisOccurrence) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -191,8 +191,8 @@ func (j *jsiiProxy_ContainerAnalysisOccurrence) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ContainerAnalysisOccurrence) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ContainerAnalysisOccurrence) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -201,8 +201,8 @@ func (j *jsiiProxy_ContainerAnalysisOccurrence) ConstructNodeMetadata() *map[str
 	return returns
 }
 
-func (j *jsiiProxy_ContainerAnalysisOccurrence) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerAnalysisOccurrence) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -371,8 +371,8 @@ func (j *jsiiProxy_ContainerAnalysisOccurrence) Provider() cdktf.TerraformProvid
 	return returns
 }
 
-func (j *jsiiProxy_ContainerAnalysisOccurrence) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ContainerAnalysisOccurrence) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -381,8 +381,8 @@ func (j *jsiiProxy_ContainerAnalysisOccurrence) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ContainerAnalysisOccurrence) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerAnalysisOccurrence) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -441,8 +441,8 @@ func (j *jsiiProxy_ContainerAnalysisOccurrence) TerraformGeneratorMetadata() *cd
 	return returns
 }
 
-func (j *jsiiProxy_ContainerAnalysisOccurrence) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ContainerAnalysisOccurrence) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -471,8 +471,8 @@ func (j *jsiiProxy_ContainerAnalysisOccurrence) Timeouts() ContainerAnalysisOccu
 	return returns
 }
 
-func (j *jsiiProxy_ContainerAnalysisOccurrence) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerAnalysisOccurrence) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -491,7 +491,6 @@ func (j *jsiiProxy_ContainerAnalysisOccurrence) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_analysis_occurrence google_container_analysis_occurrence} Resource.
 func NewContainerAnalysisOccurrence(scope constructs.Construct, id *string, config *ContainerAnalysisOccurrenceConfig) ContainerAnalysisOccurrence {
 	_init_.Initialize()
@@ -503,7 +502,7 @@ func NewContainerAnalysisOccurrence(scope constructs.Construct, id *string, conf
 
 	_jsii_.Create(
 		"@cdktf/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrence",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -516,12 +515,12 @@ func NewContainerAnalysisOccurrence_Override(c ContainerAnalysisOccurrence, scop
 
 	_jsii_.Create(
 		"@cdktf/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrence",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ContainerAnalysisOccurrence)SetConnection(val interface{}) {
+func (j *jsiiProxy_ContainerAnalysisOccurrence) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -532,7 +531,7 @@ func (j *jsiiProxy_ContainerAnalysisOccurrence)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ContainerAnalysisOccurrence)SetCount(val interface{}) {
+func (j *jsiiProxy_ContainerAnalysisOccurrence) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -543,7 +542,7 @@ func (j *jsiiProxy_ContainerAnalysisOccurrence)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ContainerAnalysisOccurrence)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ContainerAnalysisOccurrence) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -551,7 +550,7 @@ func (j *jsiiProxy_ContainerAnalysisOccurrence)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ContainerAnalysisOccurrence)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ContainerAnalysisOccurrence) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -559,7 +558,7 @@ func (j *jsiiProxy_ContainerAnalysisOccurrence)SetForEach(val cdktf.ITerraformIt
 	)
 }
 
-func (j *jsiiProxy_ContainerAnalysisOccurrence)SetId(val *string) {
+func (j *jsiiProxy_ContainerAnalysisOccurrence) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -570,7 +569,7 @@ func (j *jsiiProxy_ContainerAnalysisOccurrence)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ContainerAnalysisOccurrence)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ContainerAnalysisOccurrence) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -581,7 +580,7 @@ func (j *jsiiProxy_ContainerAnalysisOccurrence)SetLifecycle(val *cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_ContainerAnalysisOccurrence)SetNoteName(val *string) {
+func (j *jsiiProxy_ContainerAnalysisOccurrence) SetNoteName(val *string) {
 	if err := j.validateSetNoteNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -592,7 +591,7 @@ func (j *jsiiProxy_ContainerAnalysisOccurrence)SetNoteName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ContainerAnalysisOccurrence)SetProject(val *string) {
+func (j *jsiiProxy_ContainerAnalysisOccurrence) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -603,7 +602,7 @@ func (j *jsiiProxy_ContainerAnalysisOccurrence)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ContainerAnalysisOccurrence)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ContainerAnalysisOccurrence) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -611,7 +610,7 @@ func (j *jsiiProxy_ContainerAnalysisOccurrence)SetProvider(val cdktf.TerraformPr
 	)
 }
 
-func (j *jsiiProxy_ContainerAnalysisOccurrence)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ContainerAnalysisOccurrence) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -622,7 +621,7 @@ func (j *jsiiProxy_ContainerAnalysisOccurrence)SetProvisioners(val *[]interface{
 	)
 }
 
-func (j *jsiiProxy_ContainerAnalysisOccurrence)SetRemediation(val *string) {
+func (j *jsiiProxy_ContainerAnalysisOccurrence) SetRemediation(val *string) {
 	if err := j.validateSetRemediationParameters(val); err != nil {
 		panic(err)
 	}
@@ -633,7 +632,7 @@ func (j *jsiiProxy_ContainerAnalysisOccurrence)SetRemediation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ContainerAnalysisOccurrence)SetResourceUri(val *string) {
+func (j *jsiiProxy_ContainerAnalysisOccurrence) SetResourceUri(val *string) {
 	if err := j.validateSetResourceUriParameters(val); err != nil {
 		panic(err)
 	}
@@ -656,7 +655,7 @@ func ContainerAnalysisOccurrence_GenerateConfigForImport(scope constructs.Constr
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrence",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -680,7 +679,7 @@ func ContainerAnalysisOccurrence_GenerateConfigForImport(scope constructs.Constr
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ContainerAnalysisOccurrence_IsConstruct(x interface{}) *bool {
+func ContainerAnalysisOccurrence_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateContainerAnalysisOccurrence_IsConstructParameters(x); err != nil {
@@ -691,7 +690,7 @@ func ContainerAnalysisOccurrence_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrence",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -699,7 +698,7 @@ func ContainerAnalysisOccurrence_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ContainerAnalysisOccurrence_IsTerraformElement(x interface{}) *bool {
+func ContainerAnalysisOccurrence_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateContainerAnalysisOccurrence_IsTerraformElementParameters(x); err != nil {
@@ -710,7 +709,7 @@ func ContainerAnalysisOccurrence_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrence",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -718,7 +717,7 @@ func ContainerAnalysisOccurrence_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ContainerAnalysisOccurrence_IsTerraformResource(x interface{}) *bool {
+func ContainerAnalysisOccurrence_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateContainerAnalysisOccurrence_IsTerraformResourceParameters(x); err != nil {
@@ -729,7 +728,7 @@ func ContainerAnalysisOccurrence_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrence",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -754,31 +753,31 @@ func (c *jsiiProxy_ContainerAnalysisOccurrence) AddMoveTarget(moveTarget *string
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_ContainerAnalysisOccurrence) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_ContainerAnalysisOccurrence) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_ContainerAnalysisOccurrence) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ContainerAnalysisOccurrence) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -794,7 +793,7 @@ func (c *jsiiProxy_ContainerAnalysisOccurrence) GetBooleanAttribute(terraformAtt
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -810,7 +809,7 @@ func (c *jsiiProxy_ContainerAnalysisOccurrence) GetBooleanMapAttribute(terraform
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -826,7 +825,7 @@ func (c *jsiiProxy_ContainerAnalysisOccurrence) GetListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -842,7 +841,7 @@ func (c *jsiiProxy_ContainerAnalysisOccurrence) GetNumberAttribute(terraformAttr
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -858,7 +857,7 @@ func (c *jsiiProxy_ContainerAnalysisOccurrence) GetNumberListAttribute(terraform
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -874,7 +873,7 @@ func (c *jsiiProxy_ContainerAnalysisOccurrence) GetNumberMapAttribute(terraformA
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -890,7 +889,7 @@ func (c *jsiiProxy_ContainerAnalysisOccurrence) GetStringAttribute(terraformAttr
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -906,15 +905,15 @@ func (c *jsiiProxy_ContainerAnalysisOccurrence) GetStringMapAttribute(terraformA
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ContainerAnalysisOccurrence) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ContainerAnalysisOccurrence) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -933,7 +932,7 @@ func (c *jsiiProxy_ContainerAnalysisOccurrence) ImportFrom(id *string, provider 
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -946,7 +945,7 @@ func (c *jsiiProxy_ContainerAnalysisOccurrence) InterpolationForAttribute(terraf
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -960,18 +959,18 @@ func (c *jsiiProxy_ContainerAnalysisOccurrence) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_ContainerAnalysisOccurrence) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_ContainerAnalysisOccurrence) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -982,7 +981,7 @@ func (c *jsiiProxy_ContainerAnalysisOccurrence) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -993,7 +992,7 @@ func (c *jsiiProxy_ContainerAnalysisOccurrence) OverrideLogicalId(newLogicalId *
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1004,7 +1003,7 @@ func (c *jsiiProxy_ContainerAnalysisOccurrence) PutAttestation(value *ContainerA
 	_jsii_.InvokeVoid(
 		c,
 		"putAttestation",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1015,7 +1014,7 @@ func (c *jsiiProxy_ContainerAnalysisOccurrence) PutTimeouts(value *ContainerAnal
 	_jsii_.InvokeVoid(
 		c,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1059,8 +1058,8 @@ func (c *jsiiProxy_ContainerAnalysisOccurrence) ResetTimeouts() {
 	)
 }
 
-func (c *jsiiProxy_ContainerAnalysisOccurrence) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ContainerAnalysisOccurrence) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1072,8 +1071,8 @@ func (c *jsiiProxy_ContainerAnalysisOccurrence) SynthesizeAttributes() *map[stri
 	return returns
 }
 
-func (c *jsiiProxy_ContainerAnalysisOccurrence) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ContainerAnalysisOccurrence) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1085,8 +1084,8 @@ func (c *jsiiProxy_ContainerAnalysisOccurrence) SynthesizeHclAttributes() *map[s
 	return returns
 }
 
-func (c *jsiiProxy_ContainerAnalysisOccurrence) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ContainerAnalysisOccurrence) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1098,8 +1097,8 @@ func (c *jsiiProxy_ContainerAnalysisOccurrence) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_ContainerAnalysisOccurrence) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ContainerAnalysisOccurrence) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1124,8 +1123,8 @@ func (c *jsiiProxy_ContainerAnalysisOccurrence) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_ContainerAnalysisOccurrence) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ContainerAnalysisOccurrence) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1136,4 +1135,3 @@ func (c *jsiiProxy_ContainerAnalysisOccurrence) ToTerraform() interface{} {
 
 	return returns
 }
-

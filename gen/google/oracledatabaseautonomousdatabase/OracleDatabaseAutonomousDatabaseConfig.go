@@ -6,9 +6,9 @@ import (
 
 type OracleDatabaseAutonomousDatabaseConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type OracleDatabaseAutonomousDatabaseConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The ID of the Autonomous Database to create.
 	//
 	// This value is restricted
@@ -53,7 +53,7 @@ type OracleDatabaseAutonomousDatabaseConfig struct {
 	// Unless this field is set to false in Terraform state, a terraform destroy or terraform apply that would delete the instance will fail.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/oracle_database_autonomous_database#deletion_protection OracleDatabaseAutonomousDatabase#deletion_protection}
-	DeletionProtection interface{} `field:"optional" json:"deletionProtection" yaml:"deletionProtection"`
+	DeletionProtection any `field:"optional" json:"deletionProtection" yaml:"deletionProtection"`
 	// The display name for the Autonomous Database. The name does not have to be unique within your project.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/oracle_database_autonomous_database#display_name OracleDatabaseAutonomousDatabase#display_name}
@@ -102,4 +102,3 @@ type OracleDatabaseAutonomousDatabaseConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/oracle_database_autonomous_database#timeouts OracleDatabaseAutonomousDatabase#timeouts}
 	Timeouts *OracleDatabaseAutonomousDatabaseTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

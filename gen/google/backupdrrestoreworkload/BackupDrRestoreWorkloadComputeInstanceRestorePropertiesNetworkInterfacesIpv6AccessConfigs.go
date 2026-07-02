@@ -1,6 +1,5 @@
 package backupdrrestoreworkload
 
-
 type BackupDrRestoreWorkloadComputeInstanceRestorePropertiesNetworkInterfacesIpv6AccessConfigs struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_restore_workload#external_ip BackupDrRestoreWorkload#external_ip}.
 	ExternalIp *string `field:"optional" json:"externalIp" yaml:"externalIp"`
@@ -19,10 +18,9 @@ type BackupDrRestoreWorkloadComputeInstanceRestorePropertiesNetworkInterfacesIpv
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_restore_workload#public_ptr_domain_name BackupDrRestoreWorkload#public_ptr_domain_name}.
 	PublicPtrDomainName *string `field:"optional" json:"publicPtrDomainName" yaml:"publicPtrDomainName"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_restore_workload#set_public_ptr BackupDrRestoreWorkload#set_public_ptr}.
-	SetPublicPtr interface{} `field:"optional" json:"setPublicPtr" yaml:"setPublicPtr"`
+	SetPublicPtr any `field:"optional" json:"setPublicPtr" yaml:"setPublicPtr"`
 	// Optional. The type of configuration. Possible values: ["ACCESS_TYPE_UNSPECIFIED", "ONE_TO_ONE_NAT", "DIRECT_IPV6"].
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_restore_workload#type BackupDrRestoreWorkload#type}
 	Type *string `field:"optional" json:"type" yaml:"type"`
 }
-

@@ -11,12 +11,12 @@ import (
 type NetworkSecuritySecurityProfileThreatPreventionProfileOutputReference interface {
 	cdktf.ComplexObject
 	AntivirusOverrides() NetworkSecuritySecurityProfileThreatPreventionProfileAntivirusOverridesList
-	AntivirusOverridesInput() interface{}
+	AntivirusOverridesInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -32,7 +32,7 @@ type NetworkSecuritySecurityProfileThreatPreventionProfileOutputReference interf
 	InternalValue() *NetworkSecuritySecurityProfileThreatPreventionProfile
 	SetInternalValue(val *NetworkSecuritySecurityProfileThreatPreventionProfile)
 	SeverityOverrides() NetworkSecuritySecurityProfileThreatPreventionProfileSeverityOverridesList
-	SeverityOverridesInput() interface{}
+	SeverityOverridesInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -42,11 +42,11 @@ type NetworkSecuritySecurityProfileThreatPreventionProfileOutputReference interf
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	ThreatOverrides() NetworkSecuritySecurityProfileThreatPreventionProfileThreatOverridesList
-	ThreatOverridesInput() interface{}
+	ThreatOverridesInput() any
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -67,15 +67,15 @@ type NetworkSecuritySecurityProfileThreatPreventionProfileOutputReference interf
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutAntivirusOverrides(value interface{})
-	PutSeverityOverrides(value interface{})
-	PutThreatOverrides(value interface{})
+	PutAntivirusOverrides(value any)
+	PutSeverityOverrides(value any)
+	PutThreatOverrides(value any)
 	ResetAntivirusOverrides()
 	ResetSeverityOverrides()
 	ResetThreatOverrides()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -98,8 +98,8 @@ func (j *jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileOutputReference) AntivirusOverridesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileOutputReference) AntivirusOverridesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"antivirusOverridesInput",
@@ -108,8 +108,8 @@ func (j *jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileOutputReference) SeverityOverridesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileOutputReference) SeverityOverridesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"severityOverridesInput",
@@ -208,8 +208,8 @@ func (j *jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileOutputReference) ThreatOverridesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileOutputReference) ThreatOverridesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"threatOverridesInput",
@@ -217,7 +217,6 @@ func (j *jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileOutputRe
 	)
 	return returns
 }
-
 
 func NewNetworkSecuritySecurityProfileThreatPreventionProfileOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) NetworkSecuritySecurityProfileThreatPreventionProfileOutputReference {
 	_init_.Initialize()
@@ -229,7 +228,7 @@ func NewNetworkSecuritySecurityProfileThreatPreventionProfileOutputReference(ter
 
 	_jsii_.Create(
 		"@cdktf/provider-google.networkSecuritySecurityProfile.NetworkSecuritySecurityProfileThreatPreventionProfileOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewNetworkSecuritySecurityProfileThreatPreventionProfileOutputReference_Ove
 
 	_jsii_.Create(
 		"@cdktf/provider-google.networkSecuritySecurityProfile.NetworkSecuritySecurityProfileThreatPreventionProfileOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileOutputRe
 	)
 }
 
-func (j *jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileOutputRe
 	)
 }
 
-func (j *jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileOutputReference)SetInternalValue(val *NetworkSecuritySecurityProfileThreatPreventionProfile) {
+func (j *jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileOutputReference) SetInternalValue(val *NetworkSecuritySecurityProfileThreatPreventionProfile) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileOutputRe
 	)
 }
 
-func (j *jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileOutputRe
 	)
 }
 
-func (j *jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,16 +313,16 @@ func (n *jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileOutputRe
 	return returns
 }
 
-func (n *jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (n *jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -339,7 +338,7 @@ func (n *jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileOutputRe
 	_jsii_.Invoke(
 		n,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -355,7 +354,7 @@ func (n *jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileOutputRe
 	_jsii_.Invoke(
 		n,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -371,7 +370,7 @@ func (n *jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileOutputRe
 	_jsii_.Invoke(
 		n,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -387,7 +386,7 @@ func (n *jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileOutputRe
 	_jsii_.Invoke(
 		n,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -403,7 +402,7 @@ func (n *jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileOutputRe
 	_jsii_.Invoke(
 		n,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -419,7 +418,7 @@ func (n *jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileOutputRe
 	_jsii_.Invoke(
 		n,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -435,7 +434,7 @@ func (n *jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileOutputRe
 	_jsii_.Invoke(
 		n,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -451,7 +450,7 @@ func (n *jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileOutputRe
 	_jsii_.Invoke(
 		n,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -480,43 +479,43 @@ func (n *jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileOutputRe
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (n *jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileOutputReference) PutAntivirusOverrides(value interface{}) {
+func (n *jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileOutputReference) PutAntivirusOverrides(value any) {
 	if err := n.validatePutAntivirusOverridesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"putAntivirusOverrides",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (n *jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileOutputReference) PutSeverityOverrides(value interface{}) {
+func (n *jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileOutputReference) PutSeverityOverrides(value any) {
 	if err := n.validatePutSeverityOverridesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"putSeverityOverrides",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (n *jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileOutputReference) PutThreatOverrides(value interface{}) {
+func (n *jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileOutputReference) PutThreatOverrides(value any) {
 	if err := n.validatePutThreatOverridesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"putThreatOverrides",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -544,16 +543,16 @@ func (n *jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileOutputRe
 	)
 }
 
-func (n *jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (n *jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := n.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		n,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (n *jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileOutputRe
 
 	return returns
 }
-

@@ -142,7 +142,7 @@ func (b *jsiiProxy_BigqueryConnectionConfigurationOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryConnectionConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryConnectionConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -250,4 +250,3 @@ func validateNewBigqueryConnectionConfigurationOutputReferenceParameters(terrafo
 
 	return nil
 }
-

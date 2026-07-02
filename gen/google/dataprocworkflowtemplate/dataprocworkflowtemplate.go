@@ -15,15 +15,15 @@ type DataprocWorkflowTemplate interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	DagTimeout() *string
 	SetDagTimeout(val *string)
@@ -47,7 +47,7 @@ type DataprocWorkflowTemplate interface {
 	SetId(val *string)
 	IdInput() *string
 	Jobs() DataprocWorkflowTemplateJobsList
-	JobsInput() interface{}
+	JobsInput() any
 	Labels() *map[string]*string
 	SetLabels(val *map[string]*string)
 	LabelsInput() *map[string]*string
@@ -64,7 +64,7 @@ type DataprocWorkflowTemplate interface {
 	// The tree node.
 	Node() constructs.Node
 	Parameters() DataprocWorkflowTemplateParametersList
-	ParametersInput() interface{}
+	ParametersInput() any
 	Placement() DataprocWorkflowTemplatePlacementOutputReference
 	PlacementInput() *DataprocWorkflowTemplatePlacement
 	Project() *string
@@ -75,20 +75,20 @@ type DataprocWorkflowTemplate interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() DataprocWorkflowTemplateTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UpdateTime() *string
 	Version() *float64
 	SetVersion(val *float64)
@@ -97,9 +97,9 @@ type DataprocWorkflowTemplate interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -117,7 +117,7 @@ type DataprocWorkflowTemplate interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -129,7 +129,7 @@ type DataprocWorkflowTemplate interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -137,8 +137,8 @@ type DataprocWorkflowTemplate interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutEncryptionConfig(value *DataprocWorkflowTemplateEncryptionConfig)
-	PutJobs(value interface{})
-	PutParameters(value interface{})
+	PutJobs(value any)
+	PutParameters(value any)
 	PutPlacement(value *DataprocWorkflowTemplatePlacement)
 	PutTimeouts(value *DataprocWorkflowTemplateTimeouts)
 	ResetDagTimeout()
@@ -152,17 +152,17 @@ type DataprocWorkflowTemplate interface {
 	ResetProject()
 	ResetTimeouts()
 	ResetVersion()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataprocWorkflowTemplate
@@ -180,8 +180,8 @@ func (j *jsiiProxy_DataprocWorkflowTemplate) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DataprocWorkflowTemplate) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataprocWorkflowTemplate) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -190,8 +190,8 @@ func (j *jsiiProxy_DataprocWorkflowTemplate) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataprocWorkflowTemplate) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataprocWorkflowTemplate) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -200,8 +200,8 @@ func (j *jsiiProxy_DataprocWorkflowTemplate) ConstructNodeMetadata() *map[string
 	return returns
 }
 
-func (j *jsiiProxy_DataprocWorkflowTemplate) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataprocWorkflowTemplate) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -340,8 +340,8 @@ func (j *jsiiProxy_DataprocWorkflowTemplate) Jobs() DataprocWorkflowTemplateJobs
 	return returns
 }
 
-func (j *jsiiProxy_DataprocWorkflowTemplate) JobsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataprocWorkflowTemplate) JobsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"jobsInput",
@@ -440,8 +440,8 @@ func (j *jsiiProxy_DataprocWorkflowTemplate) Parameters() DataprocWorkflowTempla
 	return returns
 }
 
-func (j *jsiiProxy_DataprocWorkflowTemplate) ParametersInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataprocWorkflowTemplate) ParametersInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"parametersInput",
@@ -500,8 +500,8 @@ func (j *jsiiProxy_DataprocWorkflowTemplate) Provider() cdktf.TerraformProvider 
 	return returns
 }
 
-func (j *jsiiProxy_DataprocWorkflowTemplate) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_DataprocWorkflowTemplate) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -510,8 +510,8 @@ func (j *jsiiProxy_DataprocWorkflowTemplate) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataprocWorkflowTemplate) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataprocWorkflowTemplate) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -540,8 +540,8 @@ func (j *jsiiProxy_DataprocWorkflowTemplate) TerraformLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_DataprocWorkflowTemplate) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataprocWorkflowTemplate) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -570,8 +570,8 @@ func (j *jsiiProxy_DataprocWorkflowTemplate) Timeouts() DataprocWorkflowTemplate
 	return returns
 }
 
-func (j *jsiiProxy_DataprocWorkflowTemplate) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataprocWorkflowTemplate) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -610,7 +610,6 @@ func (j *jsiiProxy_DataprocWorkflowTemplate) VersionInput() *float64 {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_workflow_template google_dataproc_workflow_template} Resource.
 func NewDataprocWorkflowTemplate(scope constructs.Construct, id *string, config *DataprocWorkflowTemplateConfig) DataprocWorkflowTemplate {
 	_init_.Initialize()
@@ -622,7 +621,7 @@ func NewDataprocWorkflowTemplate(scope constructs.Construct, id *string, config 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplate",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -635,12 +634,12 @@ func NewDataprocWorkflowTemplate_Override(d DataprocWorkflowTemplate, scope cons
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplate",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataprocWorkflowTemplate)SetConnection(val interface{}) {
+func (j *jsiiProxy_DataprocWorkflowTemplate) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -651,7 +650,7 @@ func (j *jsiiProxy_DataprocWorkflowTemplate)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataprocWorkflowTemplate)SetCount(val interface{}) {
+func (j *jsiiProxy_DataprocWorkflowTemplate) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -662,7 +661,7 @@ func (j *jsiiProxy_DataprocWorkflowTemplate)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataprocWorkflowTemplate)SetDagTimeout(val *string) {
+func (j *jsiiProxy_DataprocWorkflowTemplate) SetDagTimeout(val *string) {
 	if err := j.validateSetDagTimeoutParameters(val); err != nil {
 		panic(err)
 	}
@@ -673,7 +672,7 @@ func (j *jsiiProxy_DataprocWorkflowTemplate)SetDagTimeout(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataprocWorkflowTemplate)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataprocWorkflowTemplate) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -681,7 +680,7 @@ func (j *jsiiProxy_DataprocWorkflowTemplate)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataprocWorkflowTemplate)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataprocWorkflowTemplate) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -689,7 +688,7 @@ func (j *jsiiProxy_DataprocWorkflowTemplate)SetForEach(val cdktf.ITerraformItera
 	)
 }
 
-func (j *jsiiProxy_DataprocWorkflowTemplate)SetId(val *string) {
+func (j *jsiiProxy_DataprocWorkflowTemplate) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -700,7 +699,7 @@ func (j *jsiiProxy_DataprocWorkflowTemplate)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataprocWorkflowTemplate)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_DataprocWorkflowTemplate) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -711,7 +710,7 @@ func (j *jsiiProxy_DataprocWorkflowTemplate)SetLabels(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataprocWorkflowTemplate)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataprocWorkflowTemplate) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -722,7 +721,7 @@ func (j *jsiiProxy_DataprocWorkflowTemplate)SetLifecycle(val *cdktf.TerraformRes
 	)
 }
 
-func (j *jsiiProxy_DataprocWorkflowTemplate)SetLocation(val *string) {
+func (j *jsiiProxy_DataprocWorkflowTemplate) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -733,7 +732,7 @@ func (j *jsiiProxy_DataprocWorkflowTemplate)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataprocWorkflowTemplate)SetName(val *string) {
+func (j *jsiiProxy_DataprocWorkflowTemplate) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -744,7 +743,7 @@ func (j *jsiiProxy_DataprocWorkflowTemplate)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataprocWorkflowTemplate)SetProject(val *string) {
+func (j *jsiiProxy_DataprocWorkflowTemplate) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -755,7 +754,7 @@ func (j *jsiiProxy_DataprocWorkflowTemplate)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataprocWorkflowTemplate)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataprocWorkflowTemplate) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -763,7 +762,7 @@ func (j *jsiiProxy_DataprocWorkflowTemplate)SetProvider(val cdktf.TerraformProvi
 	)
 }
 
-func (j *jsiiProxy_DataprocWorkflowTemplate)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_DataprocWorkflowTemplate) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -774,7 +773,7 @@ func (j *jsiiProxy_DataprocWorkflowTemplate)SetProvisioners(val *[]interface{}) 
 	)
 }
 
-func (j *jsiiProxy_DataprocWorkflowTemplate)SetVersion(val *float64) {
+func (j *jsiiProxy_DataprocWorkflowTemplate) SetVersion(val *float64) {
 	if err := j.validateSetVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -797,7 +796,7 @@ func DataprocWorkflowTemplate_GenerateConfigForImport(scope constructs.Construct
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplate",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -821,7 +820,7 @@ func DataprocWorkflowTemplate_GenerateConfigForImport(scope constructs.Construct
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataprocWorkflowTemplate_IsConstruct(x interface{}) *bool {
+func DataprocWorkflowTemplate_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataprocWorkflowTemplate_IsConstructParameters(x); err != nil {
@@ -832,7 +831,7 @@ func DataprocWorkflowTemplate_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplate",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -840,7 +839,7 @@ func DataprocWorkflowTemplate_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataprocWorkflowTemplate_IsTerraformElement(x interface{}) *bool {
+func DataprocWorkflowTemplate_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataprocWorkflowTemplate_IsTerraformElementParameters(x); err != nil {
@@ -851,7 +850,7 @@ func DataprocWorkflowTemplate_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplate",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -859,7 +858,7 @@ func DataprocWorkflowTemplate_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func DataprocWorkflowTemplate_IsTerraformResource(x interface{}) *bool {
+func DataprocWorkflowTemplate_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataprocWorkflowTemplate_IsTerraformResourceParameters(x); err != nil {
@@ -870,7 +869,7 @@ func DataprocWorkflowTemplate_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplate",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -895,31 +894,31 @@ func (d *jsiiProxy_DataprocWorkflowTemplate) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (d *jsiiProxy_DataprocWorkflowTemplate) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataprocWorkflowTemplate) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataprocWorkflowTemplate) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataprocWorkflowTemplate) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -935,7 +934,7 @@ func (d *jsiiProxy_DataprocWorkflowTemplate) GetBooleanAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -951,7 +950,7 @@ func (d *jsiiProxy_DataprocWorkflowTemplate) GetBooleanMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -967,7 +966,7 @@ func (d *jsiiProxy_DataprocWorkflowTemplate) GetListAttribute(terraformAttribute
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -983,7 +982,7 @@ func (d *jsiiProxy_DataprocWorkflowTemplate) GetNumberAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -999,7 +998,7 @@ func (d *jsiiProxy_DataprocWorkflowTemplate) GetNumberListAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1015,7 +1014,7 @@ func (d *jsiiProxy_DataprocWorkflowTemplate) GetNumberMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1031,7 +1030,7 @@ func (d *jsiiProxy_DataprocWorkflowTemplate) GetStringAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1047,15 +1046,15 @@ func (d *jsiiProxy_DataprocWorkflowTemplate) GetStringMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataprocWorkflowTemplate) HasResourceMove() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataprocWorkflowTemplate) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1074,7 +1073,7 @@ func (d *jsiiProxy_DataprocWorkflowTemplate) ImportFrom(id *string, provider cdk
 	_jsii_.InvokeVoid(
 		d,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1087,7 +1086,7 @@ func (d *jsiiProxy_DataprocWorkflowTemplate) InterpolationForAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1101,18 +1100,18 @@ func (d *jsiiProxy_DataprocWorkflowTemplate) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (d *jsiiProxy_DataprocWorkflowTemplate) MoveTo(moveTarget *string, index interface{}) {
+func (d *jsiiProxy_DataprocWorkflowTemplate) MoveTo(moveTarget *string, index any) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1123,7 +1122,7 @@ func (d *jsiiProxy_DataprocWorkflowTemplate) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1134,7 +1133,7 @@ func (d *jsiiProxy_DataprocWorkflowTemplate) OverrideLogicalId(newLogicalId *str
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1145,29 +1144,29 @@ func (d *jsiiProxy_DataprocWorkflowTemplate) PutEncryptionConfig(value *Dataproc
 	_jsii_.InvokeVoid(
 		d,
 		"putEncryptionConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (d *jsiiProxy_DataprocWorkflowTemplate) PutJobs(value interface{}) {
+func (d *jsiiProxy_DataprocWorkflowTemplate) PutJobs(value any) {
 	if err := d.validatePutJobsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putJobs",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (d *jsiiProxy_DataprocWorkflowTemplate) PutParameters(value interface{}) {
+func (d *jsiiProxy_DataprocWorkflowTemplate) PutParameters(value any) {
 	if err := d.validatePutParametersParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putParameters",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1178,7 +1177,7 @@ func (d *jsiiProxy_DataprocWorkflowTemplate) PutPlacement(value *DataprocWorkflo
 	_jsii_.InvokeVoid(
 		d,
 		"putPlacement",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1189,7 +1188,7 @@ func (d *jsiiProxy_DataprocWorkflowTemplate) PutTimeouts(value *DataprocWorkflow
 	_jsii_.InvokeVoid(
 		d,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1265,8 +1264,8 @@ func (d *jsiiProxy_DataprocWorkflowTemplate) ResetVersion() {
 	)
 }
 
-func (d *jsiiProxy_DataprocWorkflowTemplate) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataprocWorkflowTemplate) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1278,8 +1277,8 @@ func (d *jsiiProxy_DataprocWorkflowTemplate) SynthesizeAttributes() *map[string]
 	return returns
 }
 
-func (d *jsiiProxy_DataprocWorkflowTemplate) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataprocWorkflowTemplate) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1291,8 +1290,8 @@ func (d *jsiiProxy_DataprocWorkflowTemplate) SynthesizeHclAttributes() *map[stri
 	return returns
 }
 
-func (d *jsiiProxy_DataprocWorkflowTemplate) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataprocWorkflowTemplate) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1304,8 +1303,8 @@ func (d *jsiiProxy_DataprocWorkflowTemplate) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataprocWorkflowTemplate) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataprocWorkflowTemplate) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1330,8 +1329,8 @@ func (d *jsiiProxy_DataprocWorkflowTemplate) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataprocWorkflowTemplate) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataprocWorkflowTemplate) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1342,4 +1341,3 @@ func (d *jsiiProxy_DataprocWorkflowTemplate) ToTerraform() interface{} {
 
 	return returns
 }
-

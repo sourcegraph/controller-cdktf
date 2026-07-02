@@ -19,7 +19,7 @@ func (d *jsiiProxy_DataCatalogTag) validateAddMoveTargetParameters(moveTarget *s
 	return nil
 }
 
-func (d *jsiiProxy_DataCatalogTag) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataCatalogTag) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (d *jsiiProxy_DataCatalogTag) validateMoveFromIdParameters(id *string) erro
 	return nil
 }
 
-func (d *jsiiProxy_DataCatalogTag) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (d *jsiiProxy_DataCatalogTag) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (d *jsiiProxy_DataCatalogTag) validateOverrideLogicalIdParameters(newLogica
 	return nil
 }
 
-func (d *jsiiProxy_DataCatalogTag) validatePutFieldsParameters(value interface{}) error {
+func (d *jsiiProxy_DataCatalogTag) validatePutFieldsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -262,7 +262,7 @@ func validateDataCatalogTag_GenerateConfigForImportParameters(scope constructs.C
 	return nil
 }
 
-func validateDataCatalogTag_IsConstructParameters(x interface{}) error {
+func validateDataCatalogTag_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -270,7 +270,7 @@ func validateDataCatalogTag_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateDataCatalogTag_IsTerraformElementParameters(x interface{}) error {
+func validateDataCatalogTag_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -278,7 +278,7 @@ func validateDataCatalogTag_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateDataCatalogTag_IsTerraformResourceParameters(x interface{}) error {
+func validateDataCatalogTag_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -294,7 +294,7 @@ func (j *jsiiProxy_DataCatalogTag) validateSetColumnParameters(val *string) erro
 	return nil
 }
 
-func (j *jsiiProxy_DataCatalogTag) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_DataCatalogTag) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -327,7 +327,7 @@ func (j *jsiiProxy_DataCatalogTag) validateSetConnectionParameters(val interface
 	return nil
 }
 
-func (j *jsiiProxy_DataCatalogTag) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataCatalogTag) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -408,7 +408,7 @@ func (j *jsiiProxy_DataCatalogTag) validateSetParentParameters(val *string) erro
 	return nil
 }
 
-func (j *jsiiProxy_DataCatalogTag) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_DataCatalogTag) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -480,4 +480,3 @@ func validateNewDataCatalogTagParameters(scope constructs.Construct, id *string,
 
 	return nil
 }
-

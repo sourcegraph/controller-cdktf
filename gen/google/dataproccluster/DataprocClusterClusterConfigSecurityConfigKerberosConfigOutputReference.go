@@ -12,9 +12,9 @@ type DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference int
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -37,9 +37,9 @@ type DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference int
 	CrossRealmTrustSharedPasswordUri() *string
 	SetCrossRealmTrustSharedPasswordUri(val *string)
 	CrossRealmTrustSharedPasswordUriInput() *string
-	EnableKerberos() interface{}
-	SetEnableKerberos(val interface{})
-	EnableKerberosInput() interface{}
+	EnableKerberos() any
+	SetEnableKerberos(val any)
+	EnableKerberosInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataprocClusterClusterConfigSecurityConfigKerberosConfig
@@ -85,7 +85,7 @@ type DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference int
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -121,7 +121,7 @@ type DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference int
 	ResetTruststoreUri()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -134,8 +134,8 @@ type jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputRef
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -244,8 +244,8 @@ func (j *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutpu
 	return returns
 }
 
-func (j *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference) EnableKerberos() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference) EnableKerberos() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableKerberos",
@@ -254,8 +254,8 @@ func (j *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutpu
 	return returns
 }
 
-func (j *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference) EnableKerberosInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference) EnableKerberosInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableKerberosInput",
@@ -504,7 +504,6 @@ func (j *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutpu
 	return returns
 }
 
-
 func NewDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference {
 	_init_.Initialize()
 
@@ -515,7 +514,7 @@ func NewDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference(
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataprocCluster.DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -527,12 +526,12 @@ func NewDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference_
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataprocCluster.DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -543,7 +542,7 @@ func (j *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutpu
 	)
 }
 
-func (j *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -554,7 +553,7 @@ func (j *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutpu
 	)
 }
 
-func (j *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference)SetCrossRealmTrustAdminServer(val *string) {
+func (j *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference) SetCrossRealmTrustAdminServer(val *string) {
 	if err := j.validateSetCrossRealmTrustAdminServerParameters(val); err != nil {
 		panic(err)
 	}
@@ -565,7 +564,7 @@ func (j *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutpu
 	)
 }
 
-func (j *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference)SetCrossRealmTrustKdc(val *string) {
+func (j *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference) SetCrossRealmTrustKdc(val *string) {
 	if err := j.validateSetCrossRealmTrustKdcParameters(val); err != nil {
 		panic(err)
 	}
@@ -576,7 +575,7 @@ func (j *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutpu
 	)
 }
 
-func (j *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference)SetCrossRealmTrustRealm(val *string) {
+func (j *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference) SetCrossRealmTrustRealm(val *string) {
 	if err := j.validateSetCrossRealmTrustRealmParameters(val); err != nil {
 		panic(err)
 	}
@@ -587,7 +586,7 @@ func (j *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutpu
 	)
 }
 
-func (j *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference)SetCrossRealmTrustSharedPasswordUri(val *string) {
+func (j *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference) SetCrossRealmTrustSharedPasswordUri(val *string) {
 	if err := j.validateSetCrossRealmTrustSharedPasswordUriParameters(val); err != nil {
 		panic(err)
 	}
@@ -598,7 +597,7 @@ func (j *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutpu
 	)
 }
 
-func (j *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference)SetEnableKerberos(val interface{}) {
+func (j *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference) SetEnableKerberos(val any) {
 	if err := j.validateSetEnableKerberosParameters(val); err != nil {
 		panic(err)
 	}
@@ -609,7 +608,7 @@ func (j *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutpu
 	)
 }
 
-func (j *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference)SetInternalValue(val *DataprocClusterClusterConfigSecurityConfigKerberosConfig) {
+func (j *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference) SetInternalValue(val *DataprocClusterClusterConfigSecurityConfigKerberosConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -620,7 +619,7 @@ func (j *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutpu
 	)
 }
 
-func (j *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference)SetKdcDbKeyUri(val *string) {
+func (j *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference) SetKdcDbKeyUri(val *string) {
 	if err := j.validateSetKdcDbKeyUriParameters(val); err != nil {
 		panic(err)
 	}
@@ -631,7 +630,7 @@ func (j *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutpu
 	)
 }
 
-func (j *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference)SetKeyPasswordUri(val *string) {
+func (j *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference) SetKeyPasswordUri(val *string) {
 	if err := j.validateSetKeyPasswordUriParameters(val); err != nil {
 		panic(err)
 	}
@@ -642,7 +641,7 @@ func (j *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutpu
 	)
 }
 
-func (j *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference)SetKeystorePasswordUri(val *string) {
+func (j *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference) SetKeystorePasswordUri(val *string) {
 	if err := j.validateSetKeystorePasswordUriParameters(val); err != nil {
 		panic(err)
 	}
@@ -653,7 +652,7 @@ func (j *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutpu
 	)
 }
 
-func (j *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference)SetKeystoreUri(val *string) {
+func (j *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference) SetKeystoreUri(val *string) {
 	if err := j.validateSetKeystoreUriParameters(val); err != nil {
 		panic(err)
 	}
@@ -664,7 +663,7 @@ func (j *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutpu
 	)
 }
 
-func (j *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference)SetKmsKeyUri(val *string) {
+func (j *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference) SetKmsKeyUri(val *string) {
 	if err := j.validateSetKmsKeyUriParameters(val); err != nil {
 		panic(err)
 	}
@@ -675,7 +674,7 @@ func (j *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutpu
 	)
 }
 
-func (j *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference)SetRealm(val *string) {
+func (j *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference) SetRealm(val *string) {
 	if err := j.validateSetRealmParameters(val); err != nil {
 		panic(err)
 	}
@@ -686,7 +685,7 @@ func (j *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutpu
 	)
 }
 
-func (j *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference)SetRootPrincipalPasswordUri(val *string) {
+func (j *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference) SetRootPrincipalPasswordUri(val *string) {
 	if err := j.validateSetRootPrincipalPasswordUriParameters(val); err != nil {
 		panic(err)
 	}
@@ -697,7 +696,7 @@ func (j *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutpu
 	)
 }
 
-func (j *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -708,7 +707,7 @@ func (j *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutpu
 	)
 }
 
-func (j *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -719,7 +718,7 @@ func (j *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutpu
 	)
 }
 
-func (j *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference)SetTgtLifetimeHours(val *float64) {
+func (j *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference) SetTgtLifetimeHours(val *float64) {
 	if err := j.validateSetTgtLifetimeHoursParameters(val); err != nil {
 		panic(err)
 	}
@@ -730,7 +729,7 @@ func (j *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutpu
 	)
 }
 
-func (j *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference)SetTruststorePasswordUri(val *string) {
+func (j *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference) SetTruststorePasswordUri(val *string) {
 	if err := j.validateSetTruststorePasswordUriParameters(val); err != nil {
 		panic(err)
 	}
@@ -741,7 +740,7 @@ func (j *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutpu
 	)
 }
 
-func (j *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference)SetTruststoreUri(val *string) {
+func (j *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference) SetTruststoreUri(val *string) {
 	if err := j.validateSetTruststoreUriParameters(val); err != nil {
 		panic(err)
 	}
@@ -765,16 +764,16 @@ func (d *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutpu
 	return returns
 }
 
-func (d *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -790,7 +789,7 @@ func (d *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutpu
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -806,7 +805,7 @@ func (d *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutpu
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -822,7 +821,7 @@ func (d *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutpu
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -838,7 +837,7 @@ func (d *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutpu
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -854,7 +853,7 @@ func (d *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutpu
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -870,7 +869,7 @@ func (d *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutpu
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -886,7 +885,7 @@ func (d *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutpu
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -902,7 +901,7 @@ func (d *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutpu
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -931,7 +930,7 @@ func (d *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutpu
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -1042,16 +1041,16 @@ func (d *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutpu
 	)
 }
 
-func (d *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -1070,4 +1069,3 @@ func (d *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutpu
 
 	return returns
 }
-

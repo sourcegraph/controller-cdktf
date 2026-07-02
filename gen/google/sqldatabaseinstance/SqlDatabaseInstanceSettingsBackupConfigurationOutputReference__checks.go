@@ -109,7 +109,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference) validateSetBinaryLogEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference) validateSetBinaryLogEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -194,7 +194,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -230,7 +230,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference) validateSetPointInTimeRecoveryEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference) validateSetPointInTimeRecoveryEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -293,4 +293,3 @@ func validateNewSqlDatabaseInstanceSettingsBackupConfigurationOutputReferencePar
 
 	return nil
 }
-

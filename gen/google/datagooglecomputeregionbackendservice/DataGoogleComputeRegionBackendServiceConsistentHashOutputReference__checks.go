@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleComputeRegionBackendServiceConsistentHashOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeRegionBackendServiceConsistentHashOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleComputeRegionBackendServiceConsistentHashOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleComputeRegionBackendServiceConsistentHashOutputReferen
 
 	return nil
 }
-

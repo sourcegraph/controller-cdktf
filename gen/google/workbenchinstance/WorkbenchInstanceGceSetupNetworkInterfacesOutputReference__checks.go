@@ -90,7 +90,7 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupNetworkInterfacesOutputReference) va
 	return nil
 }
 
-func (w *jsiiProxy_WorkbenchInstanceGceSetupNetworkInterfacesOutputReference) validatePutAccessConfigsParameters(value interface{}) error {
+func (w *jsiiProxy_WorkbenchInstanceGceSetupNetworkInterfacesOutputReference) validatePutAccessConfigsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupNetworkInterfacesOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_WorkbenchInstanceGceSetupNetworkInterfacesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_WorkbenchInstanceGceSetupNetworkInterfacesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -194,7 +194,7 @@ func (j *jsiiProxy_WorkbenchInstanceGceSetupNetworkInterfacesOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_WorkbenchInstanceGceSetupNetworkInterfacesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_WorkbenchInstanceGceSetupNetworkInterfacesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -277,4 +277,3 @@ func validateNewWorkbenchInstanceGceSetupNetworkInterfacesOutputReferenceParamet
 
 	return nil
 }
-

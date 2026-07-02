@@ -17,15 +17,15 @@ type ArtifactRegistryRepositoryIamMember interface {
 	Condition() ArtifactRegistryRepositoryIamMemberConditionOutputReference
 	ConditionInput() *ArtifactRegistryRepositoryIamMemberCondition
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -62,11 +62,11 @@ type ArtifactRegistryRepositoryIamMember interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Repository() *string
 	SetRepository(val *string)
 	RepositoryInput() *string
@@ -76,16 +76,16 @@ type ArtifactRegistryRepositoryIamMember interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -103,7 +103,7 @@ type ArtifactRegistryRepositoryIamMember interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -115,7 +115,7 @@ type ArtifactRegistryRepositoryIamMember interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -130,17 +130,17 @@ type ArtifactRegistryRepositoryIamMember interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ArtifactRegistryRepositoryIamMember
@@ -178,8 +178,8 @@ func (j *jsiiProxy_ArtifactRegistryRepositoryIamMember) ConditionInput() *Artifa
 	return returns
 }
 
-func (j *jsiiProxy_ArtifactRegistryRepositoryIamMember) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ArtifactRegistryRepositoryIamMember) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -188,8 +188,8 @@ func (j *jsiiProxy_ArtifactRegistryRepositoryIamMember) Connection() interface{}
 	return returns
 }
 
-func (j *jsiiProxy_ArtifactRegistryRepositoryIamMember) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ArtifactRegistryRepositoryIamMember) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -198,8 +198,8 @@ func (j *jsiiProxy_ArtifactRegistryRepositoryIamMember) ConstructNodeMetadata() 
 	return returns
 }
 
-func (j *jsiiProxy_ArtifactRegistryRepositoryIamMember) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ArtifactRegistryRepositoryIamMember) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -368,8 +368,8 @@ func (j *jsiiProxy_ArtifactRegistryRepositoryIamMember) Provider() cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_ArtifactRegistryRepositoryIamMember) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ArtifactRegistryRepositoryIamMember) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -378,8 +378,8 @@ func (j *jsiiProxy_ArtifactRegistryRepositoryIamMember) Provisioners() *[]interf
 	return returns
 }
 
-func (j *jsiiProxy_ArtifactRegistryRepositoryIamMember) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ArtifactRegistryRepositoryIamMember) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -438,8 +438,8 @@ func (j *jsiiProxy_ArtifactRegistryRepositoryIamMember) TerraformGeneratorMetada
 	return returns
 }
 
-func (j *jsiiProxy_ArtifactRegistryRepositoryIamMember) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ArtifactRegistryRepositoryIamMember) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -458,7 +458,6 @@ func (j *jsiiProxy_ArtifactRegistryRepositoryIamMember) TerraformResourceType() 
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/artifact_registry_repository_iam_member google_artifact_registry_repository_iam_member} Resource.
 func NewArtifactRegistryRepositoryIamMember(scope constructs.Construct, id *string, config *ArtifactRegistryRepositoryIamMemberConfig) ArtifactRegistryRepositoryIamMember {
 	_init_.Initialize()
@@ -470,7 +469,7 @@ func NewArtifactRegistryRepositoryIamMember(scope constructs.Construct, id *stri
 
 	_jsii_.Create(
 		"@cdktf/provider-google.artifactRegistryRepositoryIamMember.ArtifactRegistryRepositoryIamMember",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -483,12 +482,12 @@ func NewArtifactRegistryRepositoryIamMember_Override(a ArtifactRegistryRepositor
 
 	_jsii_.Create(
 		"@cdktf/provider-google.artifactRegistryRepositoryIamMember.ArtifactRegistryRepositoryIamMember",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		a,
 	)
 }
 
-func (j *jsiiProxy_ArtifactRegistryRepositoryIamMember)SetConnection(val interface{}) {
+func (j *jsiiProxy_ArtifactRegistryRepositoryIamMember) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -499,7 +498,7 @@ func (j *jsiiProxy_ArtifactRegistryRepositoryIamMember)SetConnection(val interfa
 	)
 }
 
-func (j *jsiiProxy_ArtifactRegistryRepositoryIamMember)SetCount(val interface{}) {
+func (j *jsiiProxy_ArtifactRegistryRepositoryIamMember) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -510,7 +509,7 @@ func (j *jsiiProxy_ArtifactRegistryRepositoryIamMember)SetCount(val interface{})
 	)
 }
 
-func (j *jsiiProxy_ArtifactRegistryRepositoryIamMember)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ArtifactRegistryRepositoryIamMember) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -518,7 +517,7 @@ func (j *jsiiProxy_ArtifactRegistryRepositoryIamMember)SetDependsOn(val *[]*stri
 	)
 }
 
-func (j *jsiiProxy_ArtifactRegistryRepositoryIamMember)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ArtifactRegistryRepositoryIamMember) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -526,7 +525,7 @@ func (j *jsiiProxy_ArtifactRegistryRepositoryIamMember)SetForEach(val cdktf.ITer
 	)
 }
 
-func (j *jsiiProxy_ArtifactRegistryRepositoryIamMember)SetId(val *string) {
+func (j *jsiiProxy_ArtifactRegistryRepositoryIamMember) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -537,7 +536,7 @@ func (j *jsiiProxy_ArtifactRegistryRepositoryIamMember)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ArtifactRegistryRepositoryIamMember)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ArtifactRegistryRepositoryIamMember) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -548,7 +547,7 @@ func (j *jsiiProxy_ArtifactRegistryRepositoryIamMember)SetLifecycle(val *cdktf.T
 	)
 }
 
-func (j *jsiiProxy_ArtifactRegistryRepositoryIamMember)SetLocation(val *string) {
+func (j *jsiiProxy_ArtifactRegistryRepositoryIamMember) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -559,7 +558,7 @@ func (j *jsiiProxy_ArtifactRegistryRepositoryIamMember)SetLocation(val *string) 
 	)
 }
 
-func (j *jsiiProxy_ArtifactRegistryRepositoryIamMember)SetMember(val *string) {
+func (j *jsiiProxy_ArtifactRegistryRepositoryIamMember) SetMember(val *string) {
 	if err := j.validateSetMemberParameters(val); err != nil {
 		panic(err)
 	}
@@ -570,7 +569,7 @@ func (j *jsiiProxy_ArtifactRegistryRepositoryIamMember)SetMember(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ArtifactRegistryRepositoryIamMember)SetProject(val *string) {
+func (j *jsiiProxy_ArtifactRegistryRepositoryIamMember) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -581,7 +580,7 @@ func (j *jsiiProxy_ArtifactRegistryRepositoryIamMember)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ArtifactRegistryRepositoryIamMember)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ArtifactRegistryRepositoryIamMember) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -589,7 +588,7 @@ func (j *jsiiProxy_ArtifactRegistryRepositoryIamMember)SetProvider(val cdktf.Ter
 	)
 }
 
-func (j *jsiiProxy_ArtifactRegistryRepositoryIamMember)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ArtifactRegistryRepositoryIamMember) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -600,7 +599,7 @@ func (j *jsiiProxy_ArtifactRegistryRepositoryIamMember)SetProvisioners(val *[]in
 	)
 }
 
-func (j *jsiiProxy_ArtifactRegistryRepositoryIamMember)SetRepository(val *string) {
+func (j *jsiiProxy_ArtifactRegistryRepositoryIamMember) SetRepository(val *string) {
 	if err := j.validateSetRepositoryParameters(val); err != nil {
 		panic(err)
 	}
@@ -611,7 +610,7 @@ func (j *jsiiProxy_ArtifactRegistryRepositoryIamMember)SetRepository(val *string
 	)
 }
 
-func (j *jsiiProxy_ArtifactRegistryRepositoryIamMember)SetRole(val *string) {
+func (j *jsiiProxy_ArtifactRegistryRepositoryIamMember) SetRole(val *string) {
 	if err := j.validateSetRoleParameters(val); err != nil {
 		panic(err)
 	}
@@ -634,7 +633,7 @@ func ArtifactRegistryRepositoryIamMember_GenerateConfigForImport(scope construct
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.artifactRegistryRepositoryIamMember.ArtifactRegistryRepositoryIamMember",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -658,7 +657,7 @@ func ArtifactRegistryRepositoryIamMember_GenerateConfigForImport(scope construct
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ArtifactRegistryRepositoryIamMember_IsConstruct(x interface{}) *bool {
+func ArtifactRegistryRepositoryIamMember_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateArtifactRegistryRepositoryIamMember_IsConstructParameters(x); err != nil {
@@ -669,7 +668,7 @@ func ArtifactRegistryRepositoryIamMember_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.artifactRegistryRepositoryIamMember.ArtifactRegistryRepositoryIamMember",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -677,7 +676,7 @@ func ArtifactRegistryRepositoryIamMember_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ArtifactRegistryRepositoryIamMember_IsTerraformElement(x interface{}) *bool {
+func ArtifactRegistryRepositoryIamMember_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateArtifactRegistryRepositoryIamMember_IsTerraformElementParameters(x); err != nil {
@@ -688,7 +687,7 @@ func ArtifactRegistryRepositoryIamMember_IsTerraformElement(x interface{}) *bool
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.artifactRegistryRepositoryIamMember.ArtifactRegistryRepositoryIamMember",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -696,7 +695,7 @@ func ArtifactRegistryRepositoryIamMember_IsTerraformElement(x interface{}) *bool
 }
 
 // Experimental.
-func ArtifactRegistryRepositoryIamMember_IsTerraformResource(x interface{}) *bool {
+func ArtifactRegistryRepositoryIamMember_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateArtifactRegistryRepositoryIamMember_IsTerraformResourceParameters(x); err != nil {
@@ -707,7 +706,7 @@ func ArtifactRegistryRepositoryIamMember_IsTerraformResource(x interface{}) *boo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.artifactRegistryRepositoryIamMember.ArtifactRegistryRepositoryIamMember",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -732,31 +731,31 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryIamMember) AddMoveTarget(moveTarget
 	_jsii_.InvokeVoid(
 		a,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (a *jsiiProxy_ArtifactRegistryRepositoryIamMember) AddOverride(path *string, value interface{}) {
+func (a *jsiiProxy_ArtifactRegistryRepositoryIamMember) AddOverride(path *string, value any) {
 	if err := a.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (a *jsiiProxy_ArtifactRegistryRepositoryIamMember) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_ArtifactRegistryRepositoryIamMember) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -772,7 +771,7 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryIamMember) GetBooleanAttribute(terr
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -788,7 +787,7 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryIamMember) GetBooleanMapAttribute(t
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -804,7 +803,7 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryIamMember) GetListAttribute(terrafo
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -820,7 +819,7 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryIamMember) GetNumberAttribute(terra
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -836,7 +835,7 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryIamMember) GetNumberListAttribute(t
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -852,7 +851,7 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryIamMember) GetNumberMapAttribute(te
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -868,7 +867,7 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryIamMember) GetStringAttribute(terra
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -884,15 +883,15 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryIamMember) GetStringMapAttribute(te
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_ArtifactRegistryRepositoryIamMember) HasResourceMove() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_ArtifactRegistryRepositoryIamMember) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -911,7 +910,7 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryIamMember) ImportFrom(id *string, p
 	_jsii_.InvokeVoid(
 		a,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -924,7 +923,7 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryIamMember) InterpolationForAttribut
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -938,18 +937,18 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryIamMember) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (a *jsiiProxy_ArtifactRegistryRepositoryIamMember) MoveTo(moveTarget *string, index interface{}) {
+func (a *jsiiProxy_ArtifactRegistryRepositoryIamMember) MoveTo(moveTarget *string, index any) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -960,7 +959,7 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryIamMember) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -971,7 +970,7 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryIamMember) OverrideLogicalId(newLog
 	_jsii_.InvokeVoid(
 		a,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -982,7 +981,7 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryIamMember) PutCondition(value *Arti
 	_jsii_.InvokeVoid(
 		a,
 		"putCondition",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1026,8 +1025,8 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryIamMember) ResetProject() {
 	)
 }
 
-func (a *jsiiProxy_ArtifactRegistryRepositoryIamMember) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_ArtifactRegistryRepositoryIamMember) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1039,8 +1038,8 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryIamMember) SynthesizeAttributes() *
 	return returns
 }
 
-func (a *jsiiProxy_ArtifactRegistryRepositoryIamMember) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_ArtifactRegistryRepositoryIamMember) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1052,8 +1051,8 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryIamMember) SynthesizeHclAttributes(
 	return returns
 }
 
-func (a *jsiiProxy_ArtifactRegistryRepositoryIamMember) ToHclTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_ArtifactRegistryRepositoryIamMember) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1065,8 +1064,8 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryIamMember) ToHclTerraform() interfa
 	return returns
 }
 
-func (a *jsiiProxy_ArtifactRegistryRepositoryIamMember) ToMetadata() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_ArtifactRegistryRepositoryIamMember) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1091,8 +1090,8 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryIamMember) ToString() *string {
 	return returns
 }
 
-func (a *jsiiProxy_ArtifactRegistryRepositoryIamMember) ToTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_ArtifactRegistryRepositoryIamMember) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1103,4 +1102,3 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryIamMember) ToTerraform() interface{
 
 	return returns
 }
-

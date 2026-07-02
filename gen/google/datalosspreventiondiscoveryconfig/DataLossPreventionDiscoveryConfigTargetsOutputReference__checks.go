@@ -153,7 +153,7 @@ func (d *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -218,7 +218,7 @@ func (j *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -277,4 +277,3 @@ func validateNewDataLossPreventionDiscoveryConfigTargetsOutputReferenceParameter
 
 	return nil
 }
-

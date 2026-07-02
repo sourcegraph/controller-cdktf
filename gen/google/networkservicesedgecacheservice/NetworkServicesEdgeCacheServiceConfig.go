@@ -6,9 +6,9 @@ import (
 
 type NetworkServicesEdgeCacheServiceConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type NetworkServicesEdgeCacheServiceConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Name of the resource;
 	//
 	// provided by the client when the resource is created.
@@ -42,11 +42,11 @@ type NetworkServicesEdgeCacheServiceConfig struct {
 	// Some legacy HTTP clients may have issues with HTTP/2 connections due to broken HTTP/2 implementations. Setting this to true will prevent HTTP/2 from being advertised and negotiated.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_edge_cache_service#disable_http2 NetworkServicesEdgeCacheService#disable_http2}
-	DisableHttp2 interface{} `field:"optional" json:"disableHttp2" yaml:"disableHttp2"`
+	DisableHttp2 any `field:"optional" json:"disableHttp2" yaml:"disableHttp2"`
 	// HTTP/3 (IETF QUIC) and Google QUIC are enabled by default.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_edge_cache_service#disable_quic NetworkServicesEdgeCacheService#disable_quic}
-	DisableQuic interface{} `field:"optional" json:"disableQuic" yaml:"disableQuic"`
+	DisableQuic any `field:"optional" json:"disableQuic" yaml:"disableQuic"`
 	// Resource URL that points at the Cloud Armor edge security policy that is applied on each request against the EdgeCacheService.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_edge_cache_service#edge_security_policy NetworkServicesEdgeCacheService#edge_security_policy}
@@ -81,7 +81,7 @@ type NetworkServicesEdgeCacheServiceConfig struct {
 	// You must have at least one (1) edgeSslCertificate specified to enable this.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_edge_cache_service#require_tls NetworkServicesEdgeCacheService#require_tls}
-	RequireTls interface{} `field:"optional" json:"requireTls" yaml:"requireTls"`
+	RequireTls any `field:"optional" json:"requireTls" yaml:"requireTls"`
 	// URL of the SslPolicy resource that will be associated with the EdgeCacheService.
 	//
 	// If not set, the EdgeCacheService has no SSL policy configured, and will default to the "COMPATIBLE" policy.
@@ -93,4 +93,3 @@ type NetworkServicesEdgeCacheServiceConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_edge_cache_service#timeouts NetworkServicesEdgeCacheService#timeouts}
 	Timeouts *NetworkServicesEdgeCacheServiceTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

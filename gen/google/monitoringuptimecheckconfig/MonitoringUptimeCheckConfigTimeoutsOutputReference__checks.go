@@ -98,7 +98,7 @@ func (m *jsiiProxy_MonitoringUptimeCheckConfigTimeoutsOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_MonitoringUptimeCheckConfigTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MonitoringUptimeCheckConfigTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_MonitoringUptimeCheckConfigTimeoutsOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_MonitoringUptimeCheckConfigTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_MonitoringUptimeCheckConfigTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewMonitoringUptimeCheckConfigTimeoutsOutputReferenceParameters(ter
 
 	return nil
 }
-

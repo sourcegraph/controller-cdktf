@@ -114,7 +114,7 @@ func (j *jsiiProxy_DialogflowCxToolOpenApiSpecAuthenticationOauthConfigOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxToolOpenApiSpecAuthenticationOauthConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxToolOpenApiSpecAuthenticationOauthConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -246,4 +246,3 @@ func validateNewDialogflowCxToolOpenApiSpecAuthenticationOauthConfigOutputRefere
 
 	return nil
 }
-

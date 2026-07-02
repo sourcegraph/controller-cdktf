@@ -98,7 +98,7 @@ func (a *jsiiProxy_ApigeeApiProductGraphqlOperationGroupOperationConfigsAttribut
 	return nil
 }
 
-func (j *jsiiProxy_ApigeeApiProductGraphqlOperationGroupOperationConfigsAttributesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ApigeeApiProductGraphqlOperationGroupOperationConfigsAttributesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ApigeeApiProductGraphqlOperationGroupOperationConfigsAttribut
 	return nil
 }
 
-func (j *jsiiProxy_ApigeeApiProductGraphqlOperationGroupOperationConfigsAttributesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ApigeeApiProductGraphqlOperationGroupOperationConfigsAttributesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewApigeeApiProductGraphqlOperationGroupOperationConfigsAttributesO
 
 	return nil
 }
-

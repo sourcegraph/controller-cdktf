@@ -12,9 +12,9 @@ type CloudAssetFolderFeedTimeoutsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,8 +33,8 @@ type CloudAssetFolderFeedTimeoutsOutputReference interface {
 	DeleteInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -49,7 +49,7 @@ type CloudAssetFolderFeedTimeoutsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type CloudAssetFolderFeedTimeoutsOutputReference interface {
 	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_CloudAssetFolderFeedTimeoutsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_CloudAssetFolderFeedTimeoutsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudAssetFolderFeedTimeoutsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_CloudAssetFolderFeedTimeoutsOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CloudAssetFolderFeedTimeoutsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudAssetFolderFeedTimeoutsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_CloudAssetFolderFeedTimeoutsOutputReference) UpdateInput() *s
 	return returns
 }
 
-
 func NewCloudAssetFolderFeedTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CloudAssetFolderFeedTimeoutsOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewCloudAssetFolderFeedTimeoutsOutputReference(terraformResource cdktf.IInt
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cloudAssetFolderFeed.CloudAssetFolderFeedTimeoutsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewCloudAssetFolderFeedTimeoutsOutputReference_Override(c CloudAssetFolderF
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cloudAssetFolderFeed.CloudAssetFolderFeedTimeoutsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CloudAssetFolderFeedTimeoutsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CloudAssetFolderFeedTimeoutsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_CloudAssetFolderFeedTimeoutsOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_CloudAssetFolderFeedTimeoutsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CloudAssetFolderFeedTimeoutsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_CloudAssetFolderFeedTimeoutsOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_CloudAssetFolderFeedTimeoutsOutputReference)SetCreate(val *string) {
+func (j *jsiiProxy_CloudAssetFolderFeedTimeoutsOutputReference) SetCreate(val *string) {
 	if err := j.validateSetCreateParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_CloudAssetFolderFeedTimeoutsOutputReference)SetCreate(val *st
 	)
 }
 
-func (j *jsiiProxy_CloudAssetFolderFeedTimeoutsOutputReference)SetDelete(val *string) {
+func (j *jsiiProxy_CloudAssetFolderFeedTimeoutsOutputReference) SetDelete(val *string) {
 	if err := j.validateSetDeleteParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_CloudAssetFolderFeedTimeoutsOutputReference)SetDelete(val *st
 	)
 }
 
-func (j *jsiiProxy_CloudAssetFolderFeedTimeoutsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_CloudAssetFolderFeedTimeoutsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_CloudAssetFolderFeedTimeoutsOutputReference)SetInternalValue(
 	)
 }
 
-func (j *jsiiProxy_CloudAssetFolderFeedTimeoutsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CloudAssetFolderFeedTimeoutsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_CloudAssetFolderFeedTimeoutsOutputReference)SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_CloudAssetFolderFeedTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CloudAssetFolderFeedTimeoutsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_CloudAssetFolderFeedTimeoutsOutputReference)SetTerraformResou
 	)
 }
 
-func (j *jsiiProxy_CloudAssetFolderFeedTimeoutsOutputReference)SetUpdate(val *string) {
+func (j *jsiiProxy_CloudAssetFolderFeedTimeoutsOutputReference) SetUpdate(val *string) {
 	if err := j.validateSetUpdateParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (c *jsiiProxy_CloudAssetFolderFeedTimeoutsOutputReference) ComputeFqn() *st
 	return returns
 }
 
-func (c *jsiiProxy_CloudAssetFolderFeedTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CloudAssetFolderFeedTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (c *jsiiProxy_CloudAssetFolderFeedTimeoutsOutputReference) GetBooleanAttrib
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (c *jsiiProxy_CloudAssetFolderFeedTimeoutsOutputReference) GetBooleanMapAtt
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (c *jsiiProxy_CloudAssetFolderFeedTimeoutsOutputReference) GetListAttribute
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (c *jsiiProxy_CloudAssetFolderFeedTimeoutsOutputReference) GetNumberAttribu
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (c *jsiiProxy_CloudAssetFolderFeedTimeoutsOutputReference) GetNumberListAtt
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (c *jsiiProxy_CloudAssetFolderFeedTimeoutsOutputReference) GetNumberMapAttr
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (c *jsiiProxy_CloudAssetFolderFeedTimeoutsOutputReference) GetStringAttribu
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (c *jsiiProxy_CloudAssetFolderFeedTimeoutsOutputReference) GetStringMapAttr
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (c *jsiiProxy_CloudAssetFolderFeedTimeoutsOutputReference) InterpolationFor
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (c *jsiiProxy_CloudAssetFolderFeedTimeoutsOutputReference) ResetUpdate() {
 	)
 }
 
-func (c *jsiiProxy_CloudAssetFolderFeedTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_CloudAssetFolderFeedTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (c *jsiiProxy_CloudAssetFolderFeedTimeoutsOutputReference) ToString() *stri
 
 	return returns
 }
-

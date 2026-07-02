@@ -15,11 +15,11 @@ type DataGoogleProjectIamCustomRoles interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -49,24 +49,24 @@ type DataGoogleProjectIamCustomRoles interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Roles() DataGoogleProjectIamCustomRolesRolesList
-	ShowDeleted() interface{}
-	SetShowDeleted(val interface{})
-	ShowDeletedInput() interface{}
+	ShowDeleted() any
+	SetShowDeleted(val any)
+	ShowDeletedInput() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	View() *string
 	SetView(val *string)
 	ViewInput() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -95,18 +95,18 @@ type DataGoogleProjectIamCustomRoles interface {
 	ResetProject()
 	ResetShowDeleted()
 	ResetView()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataGoogleProjectIamCustomRoles
@@ -124,8 +124,8 @@ func (j *jsiiProxy_DataGoogleProjectIamCustomRoles) CdktfStack() cdktf.Terraform
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleProjectIamCustomRoles) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleProjectIamCustomRoles) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -134,8 +134,8 @@ func (j *jsiiProxy_DataGoogleProjectIamCustomRoles) ConstructNodeMetadata() *map
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleProjectIamCustomRoles) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleProjectIamCustomRoles) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -254,8 +254,8 @@ func (j *jsiiProxy_DataGoogleProjectIamCustomRoles) Provider() cdktf.TerraformPr
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleProjectIamCustomRoles) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleProjectIamCustomRoles) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -274,8 +274,8 @@ func (j *jsiiProxy_DataGoogleProjectIamCustomRoles) Roles() DataGoogleProjectIam
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleProjectIamCustomRoles) ShowDeleted() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleProjectIamCustomRoles) ShowDeleted() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"showDeleted",
@@ -284,8 +284,8 @@ func (j *jsiiProxy_DataGoogleProjectIamCustomRoles) ShowDeleted() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleProjectIamCustomRoles) ShowDeletedInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleProjectIamCustomRoles) ShowDeletedInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"showDeletedInput",
@@ -304,8 +304,8 @@ func (j *jsiiProxy_DataGoogleProjectIamCustomRoles) TerraformGeneratorMetadata()
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleProjectIamCustomRoles) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleProjectIamCustomRoles) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -344,7 +344,6 @@ func (j *jsiiProxy_DataGoogleProjectIamCustomRoles) ViewInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/project_iam_custom_roles google_project_iam_custom_roles} Data Source.
 func NewDataGoogleProjectIamCustomRoles(scope constructs.Construct, id *string, config *DataGoogleProjectIamCustomRolesConfig) DataGoogleProjectIamCustomRoles {
 	_init_.Initialize()
@@ -356,7 +355,7 @@ func NewDataGoogleProjectIamCustomRoles(scope constructs.Construct, id *string, 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleProjectIamCustomRoles.DataGoogleProjectIamCustomRoles",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -369,12 +368,12 @@ func NewDataGoogleProjectIamCustomRoles_Override(d DataGoogleProjectIamCustomRol
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleProjectIamCustomRoles.DataGoogleProjectIamCustomRoles",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataGoogleProjectIamCustomRoles)SetCount(val interface{}) {
+func (j *jsiiProxy_DataGoogleProjectIamCustomRoles) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -385,7 +384,7 @@ func (j *jsiiProxy_DataGoogleProjectIamCustomRoles)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleProjectIamCustomRoles)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataGoogleProjectIamCustomRoles) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -393,7 +392,7 @@ func (j *jsiiProxy_DataGoogleProjectIamCustomRoles)SetDependsOn(val *[]*string) 
 	)
 }
 
-func (j *jsiiProxy_DataGoogleProjectIamCustomRoles)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGoogleProjectIamCustomRoles) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -401,7 +400,7 @@ func (j *jsiiProxy_DataGoogleProjectIamCustomRoles)SetForEach(val cdktf.ITerrafo
 	)
 }
 
-func (j *jsiiProxy_DataGoogleProjectIamCustomRoles)SetId(val *string) {
+func (j *jsiiProxy_DataGoogleProjectIamCustomRoles) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -412,7 +411,7 @@ func (j *jsiiProxy_DataGoogleProjectIamCustomRoles)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleProjectIamCustomRoles)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGoogleProjectIamCustomRoles) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -423,7 +422,7 @@ func (j *jsiiProxy_DataGoogleProjectIamCustomRoles)SetLifecycle(val *cdktf.Terra
 	)
 }
 
-func (j *jsiiProxy_DataGoogleProjectIamCustomRoles)SetProject(val *string) {
+func (j *jsiiProxy_DataGoogleProjectIamCustomRoles) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -434,7 +433,7 @@ func (j *jsiiProxy_DataGoogleProjectIamCustomRoles)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleProjectIamCustomRoles)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGoogleProjectIamCustomRoles) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -442,7 +441,7 @@ func (j *jsiiProxy_DataGoogleProjectIamCustomRoles)SetProvider(val cdktf.Terrafo
 	)
 }
 
-func (j *jsiiProxy_DataGoogleProjectIamCustomRoles)SetShowDeleted(val interface{}) {
+func (j *jsiiProxy_DataGoogleProjectIamCustomRoles) SetShowDeleted(val any) {
 	if err := j.validateSetShowDeletedParameters(val); err != nil {
 		panic(err)
 	}
@@ -453,7 +452,7 @@ func (j *jsiiProxy_DataGoogleProjectIamCustomRoles)SetShowDeleted(val interface{
 	)
 }
 
-func (j *jsiiProxy_DataGoogleProjectIamCustomRoles)SetView(val *string) {
+func (j *jsiiProxy_DataGoogleProjectIamCustomRoles) SetView(val *string) {
 	if err := j.validateSetViewParameters(val); err != nil {
 		panic(err)
 	}
@@ -476,7 +475,7 @@ func DataGoogleProjectIamCustomRoles_GenerateConfigForImport(scope constructs.Co
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleProjectIamCustomRoles.DataGoogleProjectIamCustomRoles",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -500,7 +499,7 @@ func DataGoogleProjectIamCustomRoles_GenerateConfigForImport(scope constructs.Co
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataGoogleProjectIamCustomRoles_IsConstruct(x interface{}) *bool {
+func DataGoogleProjectIamCustomRoles_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleProjectIamCustomRoles_IsConstructParameters(x); err != nil {
@@ -511,7 +510,7 @@ func DataGoogleProjectIamCustomRoles_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleProjectIamCustomRoles.DataGoogleProjectIamCustomRoles",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -519,7 +518,7 @@ func DataGoogleProjectIamCustomRoles_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGoogleProjectIamCustomRoles_IsTerraformDataSource(x interface{}) *bool {
+func DataGoogleProjectIamCustomRoles_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleProjectIamCustomRoles_IsTerraformDataSourceParameters(x); err != nil {
@@ -530,7 +529,7 @@ func DataGoogleProjectIamCustomRoles_IsTerraformDataSource(x interface{}) *bool 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleProjectIamCustomRoles.DataGoogleProjectIamCustomRoles",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -538,7 +537,7 @@ func DataGoogleProjectIamCustomRoles_IsTerraformDataSource(x interface{}) *bool 
 }
 
 // Experimental.
-func DataGoogleProjectIamCustomRoles_IsTerraformElement(x interface{}) *bool {
+func DataGoogleProjectIamCustomRoles_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleProjectIamCustomRoles_IsTerraformElementParameters(x); err != nil {
@@ -549,7 +548,7 @@ func DataGoogleProjectIamCustomRoles_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleProjectIamCustomRoles.DataGoogleProjectIamCustomRoles",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -567,27 +566,27 @@ func DataGoogleProjectIamCustomRoles_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleProjectIamCustomRoles) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataGoogleProjectIamCustomRoles) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataGoogleProjectIamCustomRoles) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataGoogleProjectIamCustomRoles) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -603,7 +602,7 @@ func (d *jsiiProxy_DataGoogleProjectIamCustomRoles) GetBooleanAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -619,7 +618,7 @@ func (d *jsiiProxy_DataGoogleProjectIamCustomRoles) GetBooleanMapAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -635,7 +634,7 @@ func (d *jsiiProxy_DataGoogleProjectIamCustomRoles) GetListAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -651,7 +650,7 @@ func (d *jsiiProxy_DataGoogleProjectIamCustomRoles) GetNumberAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -667,7 +666,7 @@ func (d *jsiiProxy_DataGoogleProjectIamCustomRoles) GetNumberListAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -683,7 +682,7 @@ func (d *jsiiProxy_DataGoogleProjectIamCustomRoles) GetNumberMapAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -699,7 +698,7 @@ func (d *jsiiProxy_DataGoogleProjectIamCustomRoles) GetStringAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -715,7 +714,7 @@ func (d *jsiiProxy_DataGoogleProjectIamCustomRoles) GetStringMapAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -731,7 +730,7 @@ func (d *jsiiProxy_DataGoogleProjectIamCustomRoles) InterpolationForAttribute(te
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -745,7 +744,7 @@ func (d *jsiiProxy_DataGoogleProjectIamCustomRoles) OverrideLogicalId(newLogical
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -789,8 +788,8 @@ func (d *jsiiProxy_DataGoogleProjectIamCustomRoles) ResetView() {
 	)
 }
 
-func (d *jsiiProxy_DataGoogleProjectIamCustomRoles) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleProjectIamCustomRoles) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -802,8 +801,8 @@ func (d *jsiiProxy_DataGoogleProjectIamCustomRoles) SynthesizeAttributes() *map[
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleProjectIamCustomRoles) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleProjectIamCustomRoles) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -815,8 +814,8 @@ func (d *jsiiProxy_DataGoogleProjectIamCustomRoles) SynthesizeHclAttributes() *m
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleProjectIamCustomRoles) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleProjectIamCustomRoles) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -828,8 +827,8 @@ func (d *jsiiProxy_DataGoogleProjectIamCustomRoles) ToHclTerraform() interface{}
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleProjectIamCustomRoles) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleProjectIamCustomRoles) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -854,8 +853,8 @@ func (d *jsiiProxy_DataGoogleProjectIamCustomRoles) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleProjectIamCustomRoles) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleProjectIamCustomRoles) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -866,4 +865,3 @@ func (d *jsiiProxy_DataGoogleProjectIamCustomRoles) ToTerraform() interface{} {
 
 	return returns
 }
-

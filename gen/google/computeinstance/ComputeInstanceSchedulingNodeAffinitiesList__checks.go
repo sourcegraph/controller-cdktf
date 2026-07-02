@@ -34,7 +34,7 @@ func (c *jsiiProxy_ComputeInstanceSchedulingNodeAffinitiesList) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInstanceSchedulingNodeAffinitiesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInstanceSchedulingNodeAffinitiesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewComputeInstanceSchedulingNodeAffinitiesListParameters(terraformR
 
 	return nil
 }
-

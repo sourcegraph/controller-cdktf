@@ -16,15 +16,15 @@ type VpcAccessConnector interface {
 	CdktfStack() cdktf.TerraformStack
 	ConnectedProjects() *[]*string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -78,11 +78,11 @@ type VpcAccessConnector interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
@@ -93,18 +93,18 @@ type VpcAccessConnector interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() VpcAccessConnectorTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -122,7 +122,7 @@ type VpcAccessConnector interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -134,7 +134,7 @@ type VpcAccessConnector interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -158,17 +158,17 @@ type VpcAccessConnector interface {
 	ResetRegion()
 	ResetSubnet()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for VpcAccessConnector
@@ -196,8 +196,8 @@ func (j *jsiiProxy_VpcAccessConnector) ConnectedProjects() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_VpcAccessConnector) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VpcAccessConnector) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -206,8 +206,8 @@ func (j *jsiiProxy_VpcAccessConnector) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_VpcAccessConnector) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_VpcAccessConnector) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -216,8 +216,8 @@ func (j *jsiiProxy_VpcAccessConnector) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_VpcAccessConnector) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VpcAccessConnector) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -496,8 +496,8 @@ func (j *jsiiProxy_VpcAccessConnector) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_VpcAccessConnector) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_VpcAccessConnector) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -506,8 +506,8 @@ func (j *jsiiProxy_VpcAccessConnector) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_VpcAccessConnector) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VpcAccessConnector) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -586,8 +586,8 @@ func (j *jsiiProxy_VpcAccessConnector) TerraformGeneratorMetadata() *cdktf.Terra
 	return returns
 }
 
-func (j *jsiiProxy_VpcAccessConnector) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_VpcAccessConnector) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -616,8 +616,8 @@ func (j *jsiiProxy_VpcAccessConnector) Timeouts() VpcAccessConnectorTimeoutsOutp
 	return returns
 }
 
-func (j *jsiiProxy_VpcAccessConnector) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VpcAccessConnector) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -625,7 +625,6 @@ func (j *jsiiProxy_VpcAccessConnector) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vpc_access_connector google_vpc_access_connector} Resource.
 func NewVpcAccessConnector(scope constructs.Construct, id *string, config *VpcAccessConnectorConfig) VpcAccessConnector {
@@ -638,7 +637,7 @@ func NewVpcAccessConnector(scope constructs.Construct, id *string, config *VpcAc
 
 	_jsii_.Create(
 		"@cdktf/provider-google.vpcAccessConnector.VpcAccessConnector",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -651,12 +650,12 @@ func NewVpcAccessConnector_Override(v VpcAccessConnector, scope constructs.Const
 
 	_jsii_.Create(
 		"@cdktf/provider-google.vpcAccessConnector.VpcAccessConnector",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		v,
 	)
 }
 
-func (j *jsiiProxy_VpcAccessConnector)SetConnection(val interface{}) {
+func (j *jsiiProxy_VpcAccessConnector) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -667,7 +666,7 @@ func (j *jsiiProxy_VpcAccessConnector)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VpcAccessConnector)SetCount(val interface{}) {
+func (j *jsiiProxy_VpcAccessConnector) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -678,7 +677,7 @@ func (j *jsiiProxy_VpcAccessConnector)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VpcAccessConnector)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_VpcAccessConnector) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -686,7 +685,7 @@ func (j *jsiiProxy_VpcAccessConnector)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_VpcAccessConnector)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_VpcAccessConnector) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -694,7 +693,7 @@ func (j *jsiiProxy_VpcAccessConnector)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_VpcAccessConnector)SetId(val *string) {
+func (j *jsiiProxy_VpcAccessConnector) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -705,7 +704,7 @@ func (j *jsiiProxy_VpcAccessConnector)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpcAccessConnector)SetIpCidrRange(val *string) {
+func (j *jsiiProxy_VpcAccessConnector) SetIpCidrRange(val *string) {
 	if err := j.validateSetIpCidrRangeParameters(val); err != nil {
 		panic(err)
 	}
@@ -716,7 +715,7 @@ func (j *jsiiProxy_VpcAccessConnector)SetIpCidrRange(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpcAccessConnector)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_VpcAccessConnector) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -727,7 +726,7 @@ func (j *jsiiProxy_VpcAccessConnector)SetLifecycle(val *cdktf.TerraformResourceL
 	)
 }
 
-func (j *jsiiProxy_VpcAccessConnector)SetMachineType(val *string) {
+func (j *jsiiProxy_VpcAccessConnector) SetMachineType(val *string) {
 	if err := j.validateSetMachineTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -738,7 +737,7 @@ func (j *jsiiProxy_VpcAccessConnector)SetMachineType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpcAccessConnector)SetMaxInstances(val *float64) {
+func (j *jsiiProxy_VpcAccessConnector) SetMaxInstances(val *float64) {
 	if err := j.validateSetMaxInstancesParameters(val); err != nil {
 		panic(err)
 	}
@@ -749,7 +748,7 @@ func (j *jsiiProxy_VpcAccessConnector)SetMaxInstances(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_VpcAccessConnector)SetMaxThroughput(val *float64) {
+func (j *jsiiProxy_VpcAccessConnector) SetMaxThroughput(val *float64) {
 	if err := j.validateSetMaxThroughputParameters(val); err != nil {
 		panic(err)
 	}
@@ -760,7 +759,7 @@ func (j *jsiiProxy_VpcAccessConnector)SetMaxThroughput(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_VpcAccessConnector)SetMinInstances(val *float64) {
+func (j *jsiiProxy_VpcAccessConnector) SetMinInstances(val *float64) {
 	if err := j.validateSetMinInstancesParameters(val); err != nil {
 		panic(err)
 	}
@@ -771,7 +770,7 @@ func (j *jsiiProxy_VpcAccessConnector)SetMinInstances(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_VpcAccessConnector)SetMinThroughput(val *float64) {
+func (j *jsiiProxy_VpcAccessConnector) SetMinThroughput(val *float64) {
 	if err := j.validateSetMinThroughputParameters(val); err != nil {
 		panic(err)
 	}
@@ -782,7 +781,7 @@ func (j *jsiiProxy_VpcAccessConnector)SetMinThroughput(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_VpcAccessConnector)SetName(val *string) {
+func (j *jsiiProxy_VpcAccessConnector) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -793,7 +792,7 @@ func (j *jsiiProxy_VpcAccessConnector)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpcAccessConnector)SetNetwork(val *string) {
+func (j *jsiiProxy_VpcAccessConnector) SetNetwork(val *string) {
 	if err := j.validateSetNetworkParameters(val); err != nil {
 		panic(err)
 	}
@@ -804,7 +803,7 @@ func (j *jsiiProxy_VpcAccessConnector)SetNetwork(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpcAccessConnector)SetProject(val *string) {
+func (j *jsiiProxy_VpcAccessConnector) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -815,7 +814,7 @@ func (j *jsiiProxy_VpcAccessConnector)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VpcAccessConnector)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_VpcAccessConnector) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -823,7 +822,7 @@ func (j *jsiiProxy_VpcAccessConnector)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_VpcAccessConnector)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_VpcAccessConnector) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -834,7 +833,7 @@ func (j *jsiiProxy_VpcAccessConnector)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VpcAccessConnector)SetRegion(val *string) {
+func (j *jsiiProxy_VpcAccessConnector) SetRegion(val *string) {
 	if err := j.validateSetRegionParameters(val); err != nil {
 		panic(err)
 	}
@@ -857,7 +856,7 @@ func VpcAccessConnector_GenerateConfigForImport(scope constructs.Construct, impo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.vpcAccessConnector.VpcAccessConnector",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -881,7 +880,7 @@ func VpcAccessConnector_GenerateConfigForImport(scope constructs.Construct, impo
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func VpcAccessConnector_IsConstruct(x interface{}) *bool {
+func VpcAccessConnector_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateVpcAccessConnector_IsConstructParameters(x); err != nil {
@@ -892,7 +891,7 @@ func VpcAccessConnector_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.vpcAccessConnector.VpcAccessConnector",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -900,7 +899,7 @@ func VpcAccessConnector_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func VpcAccessConnector_IsTerraformElement(x interface{}) *bool {
+func VpcAccessConnector_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateVpcAccessConnector_IsTerraformElementParameters(x); err != nil {
@@ -911,7 +910,7 @@ func VpcAccessConnector_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.vpcAccessConnector.VpcAccessConnector",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -919,7 +918,7 @@ func VpcAccessConnector_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func VpcAccessConnector_IsTerraformResource(x interface{}) *bool {
+func VpcAccessConnector_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateVpcAccessConnector_IsTerraformResourceParameters(x); err != nil {
@@ -930,7 +929,7 @@ func VpcAccessConnector_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.vpcAccessConnector.VpcAccessConnector",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -955,31 +954,31 @@ func (v *jsiiProxy_VpcAccessConnector) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		v,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (v *jsiiProxy_VpcAccessConnector) AddOverride(path *string, value interface{}) {
+func (v *jsiiProxy_VpcAccessConnector) AddOverride(path *string, value any) {
 	if err := v.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		v,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (v *jsiiProxy_VpcAccessConnector) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (v *jsiiProxy_VpcAccessConnector) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := v.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		v,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -995,7 +994,7 @@ func (v *jsiiProxy_VpcAccessConnector) GetBooleanAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		v,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1011,7 +1010,7 @@ func (v *jsiiProxy_VpcAccessConnector) GetBooleanMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		v,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1027,7 +1026,7 @@ func (v *jsiiProxy_VpcAccessConnector) GetListAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		v,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1043,7 +1042,7 @@ func (v *jsiiProxy_VpcAccessConnector) GetNumberAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		v,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1059,7 +1058,7 @@ func (v *jsiiProxy_VpcAccessConnector) GetNumberListAttribute(terraformAttribute
 	_jsii_.Invoke(
 		v,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1075,7 +1074,7 @@ func (v *jsiiProxy_VpcAccessConnector) GetNumberMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		v,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1091,7 +1090,7 @@ func (v *jsiiProxy_VpcAccessConnector) GetStringAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		v,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1107,15 +1106,15 @@ func (v *jsiiProxy_VpcAccessConnector) GetStringMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		v,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (v *jsiiProxy_VpcAccessConnector) HasResourceMove() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_VpcAccessConnector) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -1134,7 +1133,7 @@ func (v *jsiiProxy_VpcAccessConnector) ImportFrom(id *string, provider cdktf.Ter
 	_jsii_.InvokeVoid(
 		v,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1147,7 +1146,7 @@ func (v *jsiiProxy_VpcAccessConnector) InterpolationForAttribute(terraformAttrib
 	_jsii_.Invoke(
 		v,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1161,18 +1160,18 @@ func (v *jsiiProxy_VpcAccessConnector) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		v,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (v *jsiiProxy_VpcAccessConnector) MoveTo(moveTarget *string, index interface{}) {
+func (v *jsiiProxy_VpcAccessConnector) MoveTo(moveTarget *string, index any) {
 	if err := v.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		v,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1183,7 +1182,7 @@ func (v *jsiiProxy_VpcAccessConnector) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		v,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1194,7 +1193,7 @@ func (v *jsiiProxy_VpcAccessConnector) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		v,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1205,7 +1204,7 @@ func (v *jsiiProxy_VpcAccessConnector) PutSubnet(value *VpcAccessConnectorSubnet
 	_jsii_.InvokeVoid(
 		v,
 		"putSubnet",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1216,7 +1215,7 @@ func (v *jsiiProxy_VpcAccessConnector) PutTimeouts(value *VpcAccessConnectorTime
 	_jsii_.InvokeVoid(
 		v,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1324,8 +1323,8 @@ func (v *jsiiProxy_VpcAccessConnector) ResetTimeouts() {
 	)
 }
 
-func (v *jsiiProxy_VpcAccessConnector) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (v *jsiiProxy_VpcAccessConnector) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		v,
@@ -1337,8 +1336,8 @@ func (v *jsiiProxy_VpcAccessConnector) SynthesizeAttributes() *map[string]interf
 	return returns
 }
 
-func (v *jsiiProxy_VpcAccessConnector) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (v *jsiiProxy_VpcAccessConnector) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		v,
@@ -1350,8 +1349,8 @@ func (v *jsiiProxy_VpcAccessConnector) SynthesizeHclAttributes() *map[string]int
 	return returns
 }
 
-func (v *jsiiProxy_VpcAccessConnector) ToHclTerraform() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_VpcAccessConnector) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -1363,8 +1362,8 @@ func (v *jsiiProxy_VpcAccessConnector) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (v *jsiiProxy_VpcAccessConnector) ToMetadata() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_VpcAccessConnector) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -1389,8 +1388,8 @@ func (v *jsiiProxy_VpcAccessConnector) ToString() *string {
 	return returns
 }
 
-func (v *jsiiProxy_VpcAccessConnector) ToTerraform() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_VpcAccessConnector) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -1401,4 +1400,3 @@ func (v *jsiiProxy_VpcAccessConnector) ToTerraform() interface{} {
 
 	return returns
 }
-

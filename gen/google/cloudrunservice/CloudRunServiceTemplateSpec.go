@@ -1,6 +1,5 @@
 package cloudrunservice
 
-
 type CloudRunServiceTemplateSpec struct {
 	// ContainerConcurrency specifies the maximum allowed in-flight (concurrent) requests per container of the Revision.
 	//
@@ -12,7 +11,7 @@ type CloudRunServiceTemplateSpec struct {
 	// containers block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_service#containers CloudRunService#containers}
-	Containers interface{} `field:"optional" json:"containers" yaml:"containers"`
+	Containers any `field:"optional" json:"containers" yaml:"containers"`
 	// Node Selector describes the hardware requirements of the resources.
 	//
 	// Use the following node selector keys to configure features on a Revision:
@@ -35,6 +34,5 @@ type CloudRunServiceTemplateSpec struct {
 	// volumes block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_service#volumes CloudRunService#volumes}
-	Volumes interface{} `field:"optional" json:"volumes" yaml:"volumes"`
+	Volumes any `field:"optional" json:"volumes" yaml:"volumes"`
 }
-

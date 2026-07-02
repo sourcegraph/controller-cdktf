@@ -98,7 +98,7 @@ func (b *jsiiProxy_BigqueryJobLoadParquetOptionsOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryJobLoadParquetOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryJobLoadParquetOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_BigqueryJobLoadParquetOptionsOutputReference) validateSetComp
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryJobLoadParquetOptionsOutputReference) validateSetEnableListInferenceParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryJobLoadParquetOptionsOutputReference) validateSetEnableListInferenceParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (j *jsiiProxy_BigqueryJobLoadParquetOptionsOutputReference) validateSetEnab
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryJobLoadParquetOptionsOutputReference) validateSetEnumAsStringParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryJobLoadParquetOptionsOutputReference) validateSetEnumAsStringParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -238,4 +238,3 @@ func validateNewBigqueryJobLoadParquetOptionsOutputReferenceParameters(terraform
 
 	return nil
 }
-

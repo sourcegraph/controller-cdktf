@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeRegionAutoscalerAutoscalingPolicyLoadBalancingUtilizat
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionAutoscalerAutoscalingPolicyLoadBalancingUtilizationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionAutoscalerAutoscalingPolicyLoadBalancingUtilizationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewComputeRegionAutoscalerAutoscalingPolicyLoadBalancingUtilization
 
 	return nil
 }
-

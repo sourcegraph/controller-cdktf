@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeDiskAsyncPrimaryDiskOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_ComputeDiskAsyncPrimaryDiskOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeDiskAsyncPrimaryDiskOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewComputeDiskAsyncPrimaryDiskOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

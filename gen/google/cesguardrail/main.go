@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesGuardrail.CesGuardrail",
-		reflect.TypeOf((*CesGuardrail)(nil)).Elem(),
+		reflect.TypeFor[CesGuardrail](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
 			_jsii_.MemberProperty{JsiiProperty: "actionInput", GoGetter: "ActionInput"},
@@ -105,7 +105,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesGuardrail{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -113,15 +113,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesGuardrail.CesGuardrailAction",
-		reflect.TypeOf((*CesGuardrailAction)(nil)).Elem(),
+		reflect.TypeFor[CesGuardrailAction](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesGuardrail.CesGuardrailActionGenerativeAnswer",
-		reflect.TypeOf((*CesGuardrailActionGenerativeAnswer)(nil)).Elem(),
+		reflect.TypeFor[CesGuardrailActionGenerativeAnswer](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesGuardrail.CesGuardrailActionGenerativeAnswerOutputReference",
-		reflect.TypeOf((*CesGuardrailActionGenerativeAnswerOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesGuardrailActionGenerativeAnswerOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -147,7 +147,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesGuardrailActionGenerativeAnswerOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -155,7 +155,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesGuardrail.CesGuardrailActionOutputReference",
-		reflect.TypeOf((*CesGuardrailActionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesGuardrailActionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -191,7 +191,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "transferAgent", GoGetter: "TransferAgent"},
 			_jsii_.MemberProperty{JsiiProperty: "transferAgentInput", GoGetter: "TransferAgentInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesGuardrailActionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -199,11 +199,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesGuardrail.CesGuardrailActionRespondImmediately",
-		reflect.TypeOf((*CesGuardrailActionRespondImmediately)(nil)).Elem(),
+		reflect.TypeFor[CesGuardrailActionRespondImmediately](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesGuardrail.CesGuardrailActionRespondImmediatelyOutputReference",
-		reflect.TypeOf((*CesGuardrailActionRespondImmediatelyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesGuardrailActionRespondImmediatelyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -230,7 +230,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesGuardrailActionRespondImmediatelyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -238,11 +238,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesGuardrail.CesGuardrailActionRespondImmediatelyResponses",
-		reflect.TypeOf((*CesGuardrailActionRespondImmediatelyResponses)(nil)).Elem(),
+		reflect.TypeFor[CesGuardrailActionRespondImmediatelyResponses](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesGuardrail.CesGuardrailActionRespondImmediatelyResponsesList",
-		reflect.TypeOf((*CesGuardrailActionRespondImmediatelyResponsesList)(nil)).Elem(),
+		reflect.TypeFor[CesGuardrailActionRespondImmediatelyResponsesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -256,7 +256,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesGuardrailActionRespondImmediatelyResponsesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -264,7 +264,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesGuardrail.CesGuardrailActionRespondImmediatelyResponsesOutputReference",
-		reflect.TypeOf((*CesGuardrailActionRespondImmediatelyResponsesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesGuardrailActionRespondImmediatelyResponsesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -293,7 +293,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "textInput", GoGetter: "TextInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesGuardrailActionRespondImmediatelyResponsesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -301,11 +301,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesGuardrail.CesGuardrailActionTransferAgent",
-		reflect.TypeOf((*CesGuardrailActionTransferAgent)(nil)).Elem(),
+		reflect.TypeFor[CesGuardrailActionTransferAgent](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesGuardrail.CesGuardrailActionTransferAgentOutputReference",
-		reflect.TypeOf((*CesGuardrailActionTransferAgentOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesGuardrailActionTransferAgentOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "agent", GoGetter: "Agent"},
 			_jsii_.MemberProperty{JsiiProperty: "agentInput", GoGetter: "AgentInput"},
@@ -331,7 +331,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesGuardrailActionTransferAgentOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -339,15 +339,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesGuardrail.CesGuardrailCodeCallback",
-		reflect.TypeOf((*CesGuardrailCodeCallback)(nil)).Elem(),
+		reflect.TypeFor[CesGuardrailCodeCallback](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesGuardrail.CesGuardrailCodeCallbackAfterAgentCallback",
-		reflect.TypeOf((*CesGuardrailCodeCallbackAfterAgentCallback)(nil)).Elem(),
+		reflect.TypeFor[CesGuardrailCodeCallbackAfterAgentCallback](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesGuardrail.CesGuardrailCodeCallbackAfterAgentCallbackOutputReference",
-		reflect.TypeOf((*CesGuardrailCodeCallbackAfterAgentCallbackOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesGuardrailCodeCallbackAfterAgentCallbackOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -379,7 +379,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesGuardrailCodeCallbackAfterAgentCallbackOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -387,11 +387,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesGuardrail.CesGuardrailCodeCallbackAfterModelCallback",
-		reflect.TypeOf((*CesGuardrailCodeCallbackAfterModelCallback)(nil)).Elem(),
+		reflect.TypeFor[CesGuardrailCodeCallbackAfterModelCallback](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesGuardrail.CesGuardrailCodeCallbackAfterModelCallbackOutputReference",
-		reflect.TypeOf((*CesGuardrailCodeCallbackAfterModelCallbackOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesGuardrailCodeCallbackAfterModelCallbackOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -423,7 +423,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesGuardrailCodeCallbackAfterModelCallbackOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -431,11 +431,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesGuardrail.CesGuardrailCodeCallbackBeforeAgentCallback",
-		reflect.TypeOf((*CesGuardrailCodeCallbackBeforeAgentCallback)(nil)).Elem(),
+		reflect.TypeFor[CesGuardrailCodeCallbackBeforeAgentCallback](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesGuardrail.CesGuardrailCodeCallbackBeforeAgentCallbackOutputReference",
-		reflect.TypeOf((*CesGuardrailCodeCallbackBeforeAgentCallbackOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesGuardrailCodeCallbackBeforeAgentCallbackOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -467,7 +467,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesGuardrailCodeCallbackBeforeAgentCallbackOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -475,11 +475,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesGuardrail.CesGuardrailCodeCallbackBeforeModelCallback",
-		reflect.TypeOf((*CesGuardrailCodeCallbackBeforeModelCallback)(nil)).Elem(),
+		reflect.TypeFor[CesGuardrailCodeCallbackBeforeModelCallback](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesGuardrail.CesGuardrailCodeCallbackBeforeModelCallbackOutputReference",
-		reflect.TypeOf((*CesGuardrailCodeCallbackBeforeModelCallbackOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesGuardrailCodeCallbackBeforeModelCallbackOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -511,7 +511,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesGuardrailCodeCallbackBeforeModelCallbackOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -519,7 +519,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesGuardrail.CesGuardrailCodeCallbackOutputReference",
-		reflect.TypeOf((*CesGuardrailCodeCallbackOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesGuardrailCodeCallbackOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "afterAgentCallback", GoGetter: "AfterAgentCallback"},
 			_jsii_.MemberProperty{JsiiProperty: "afterAgentCallbackInput", GoGetter: "AfterAgentCallbackInput"},
@@ -559,7 +559,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesGuardrailCodeCallbackOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -567,15 +567,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesGuardrail.CesGuardrailConfig",
-		reflect.TypeOf((*CesGuardrailConfig)(nil)).Elem(),
+		reflect.TypeFor[CesGuardrailConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesGuardrail.CesGuardrailContentFilter",
-		reflect.TypeOf((*CesGuardrailContentFilter)(nil)).Elem(),
+		reflect.TypeFor[CesGuardrailContentFilter](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesGuardrail.CesGuardrailContentFilterOutputReference",
-		reflect.TypeOf((*CesGuardrailContentFilterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesGuardrailContentFilterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bannedContents", GoGetter: "BannedContents"},
 			_jsii_.MemberProperty{JsiiProperty: "bannedContentsInAgentResponse", GoGetter: "BannedContentsInAgentResponse"},
@@ -613,7 +613,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesGuardrailContentFilterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -621,15 +621,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesGuardrail.CesGuardrailLlmPolicy",
-		reflect.TypeOf((*CesGuardrailLlmPolicy)(nil)).Elem(),
+		reflect.TypeFor[CesGuardrailLlmPolicy](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesGuardrail.CesGuardrailLlmPolicyModelSettings",
-		reflect.TypeOf((*CesGuardrailLlmPolicyModelSettings)(nil)).Elem(),
+		reflect.TypeFor[CesGuardrailLlmPolicyModelSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesGuardrail.CesGuardrailLlmPolicyModelSettingsOutputReference",
-		reflect.TypeOf((*CesGuardrailLlmPolicyModelSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesGuardrailLlmPolicyModelSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -659,7 +659,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesGuardrailLlmPolicyModelSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -667,7 +667,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesGuardrail.CesGuardrailLlmPolicyOutputReference",
-		reflect.TypeOf((*CesGuardrailLlmPolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesGuardrailLlmPolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowShortUtterance", GoGetter: "AllowShortUtterance"},
 			_jsii_.MemberProperty{JsiiProperty: "allowShortUtteranceInput", GoGetter: "AllowShortUtteranceInput"},
@@ -708,7 +708,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesGuardrailLlmPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -716,19 +716,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesGuardrail.CesGuardrailLlmPromptSecurity",
-		reflect.TypeOf((*CesGuardrailLlmPromptSecurity)(nil)).Elem(),
+		reflect.TypeFor[CesGuardrailLlmPromptSecurity](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesGuardrail.CesGuardrailLlmPromptSecurityCustomPolicy",
-		reflect.TypeOf((*CesGuardrailLlmPromptSecurityCustomPolicy)(nil)).Elem(),
+		reflect.TypeFor[CesGuardrailLlmPromptSecurityCustomPolicy](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesGuardrail.CesGuardrailLlmPromptSecurityCustomPolicyModelSettings",
-		reflect.TypeOf((*CesGuardrailLlmPromptSecurityCustomPolicyModelSettings)(nil)).Elem(),
+		reflect.TypeFor[CesGuardrailLlmPromptSecurityCustomPolicyModelSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesGuardrail.CesGuardrailLlmPromptSecurityCustomPolicyModelSettingsOutputReference",
-		reflect.TypeOf((*CesGuardrailLlmPromptSecurityCustomPolicyModelSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesGuardrailLlmPromptSecurityCustomPolicyModelSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -758,7 +758,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesGuardrailLlmPromptSecurityCustomPolicyModelSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -766,7 +766,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesGuardrail.CesGuardrailLlmPromptSecurityCustomPolicyOutputReference",
-		reflect.TypeOf((*CesGuardrailLlmPromptSecurityCustomPolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesGuardrailLlmPromptSecurityCustomPolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowShortUtterance", GoGetter: "AllowShortUtterance"},
 			_jsii_.MemberProperty{JsiiProperty: "allowShortUtteranceInput", GoGetter: "AllowShortUtteranceInput"},
@@ -807,7 +807,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesGuardrailLlmPromptSecurityCustomPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -815,11 +815,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesGuardrail.CesGuardrailLlmPromptSecurityDefaultSettings",
-		reflect.TypeOf((*CesGuardrailLlmPromptSecurityDefaultSettings)(nil)).Elem(),
+		reflect.TypeFor[CesGuardrailLlmPromptSecurityDefaultSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesGuardrail.CesGuardrailLlmPromptSecurityDefaultSettingsOutputReference",
-		reflect.TypeOf((*CesGuardrailLlmPromptSecurityDefaultSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesGuardrailLlmPromptSecurityDefaultSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -844,7 +844,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesGuardrailLlmPromptSecurityDefaultSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -852,7 +852,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesGuardrail.CesGuardrailLlmPromptSecurityOutputReference",
-		reflect.TypeOf((*CesGuardrailLlmPromptSecurityOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesGuardrailLlmPromptSecurityOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -884,7 +884,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesGuardrailLlmPromptSecurityOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -892,11 +892,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesGuardrail.CesGuardrailModelSafety",
-		reflect.TypeOf((*CesGuardrailModelSafety)(nil)).Elem(),
+		reflect.TypeFor[CesGuardrailModelSafety](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesGuardrail.CesGuardrailModelSafetyOutputReference",
-		reflect.TypeOf((*CesGuardrailModelSafetyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesGuardrailModelSafetyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -923,7 +923,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesGuardrailModelSafetyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -931,11 +931,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesGuardrail.CesGuardrailModelSafetySafetySettings",
-		reflect.TypeOf((*CesGuardrailModelSafetySafetySettings)(nil)).Elem(),
+		reflect.TypeFor[CesGuardrailModelSafetySafetySettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesGuardrail.CesGuardrailModelSafetySafetySettingsList",
-		reflect.TypeOf((*CesGuardrailModelSafetySafetySettingsList)(nil)).Elem(),
+		reflect.TypeFor[CesGuardrailModelSafetySafetySettingsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -949,7 +949,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesGuardrailModelSafetySafetySettingsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -957,7 +957,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesGuardrail.CesGuardrailModelSafetySafetySettingsOutputReference",
-		reflect.TypeOf((*CesGuardrailModelSafetySafetySettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesGuardrailModelSafetySafetySettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "category", GoGetter: "Category"},
 			_jsii_.MemberProperty{JsiiProperty: "categoryInput", GoGetter: "CategoryInput"},
@@ -985,7 +985,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "thresholdInput", GoGetter: "ThresholdInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesGuardrailModelSafetySafetySettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -993,11 +993,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesGuardrail.CesGuardrailTimeouts",
-		reflect.TypeOf((*CesGuardrailTimeouts)(nil)).Elem(),
+		reflect.TypeFor[CesGuardrailTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesGuardrail.CesGuardrailTimeoutsOutputReference",
-		reflect.TypeOf((*CesGuardrailTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesGuardrailTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1030,7 +1030,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesGuardrailTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

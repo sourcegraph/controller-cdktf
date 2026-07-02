@@ -12,9 +12,9 @@ type BigqueryReservationGroupTimeoutsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,8 +33,8 @@ type BigqueryReservationGroupTimeoutsOutputReference interface {
 	DeleteInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -46,7 +46,7 @@ type BigqueryReservationGroupTimeoutsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type BigqueryReservationGroupTimeoutsOutputReference interface {
 	ResetDelete()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_BigqueryReservationGroupTimeoutsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_BigqueryReservationGroupTimeoutsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigqueryReservationGroupTimeoutsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -164,8 +164,8 @@ func (j *jsiiProxy_BigqueryReservationGroupTimeoutsOutputReference) Fqn() *strin
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryReservationGroupTimeoutsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigqueryReservationGroupTimeoutsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_BigqueryReservationGroupTimeoutsOutputReference) TerraformRes
 	return returns
 }
 
-
 func NewBigqueryReservationGroupTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) BigqueryReservationGroupTimeoutsOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewBigqueryReservationGroupTimeoutsOutputReference(terraformResource cdktf.
 
 	_jsii_.Create(
 		"@cdktf/provider-google.bigqueryReservationGroup.BigqueryReservationGroupTimeoutsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewBigqueryReservationGroupTimeoutsOutputReference_Override(b BigqueryReser
 
 	_jsii_.Create(
 		"@cdktf/provider-google.bigqueryReservationGroup.BigqueryReservationGroupTimeoutsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		b,
 	)
 }
 
-func (j *jsiiProxy_BigqueryReservationGroupTimeoutsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_BigqueryReservationGroupTimeoutsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_BigqueryReservationGroupTimeoutsOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_BigqueryReservationGroupTimeoutsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_BigqueryReservationGroupTimeoutsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_BigqueryReservationGroupTimeoutsOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_BigqueryReservationGroupTimeoutsOutputReference)SetCreate(val *string) {
+func (j *jsiiProxy_BigqueryReservationGroupTimeoutsOutputReference) SetCreate(val *string) {
 	if err := j.validateSetCreateParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_BigqueryReservationGroupTimeoutsOutputReference)SetCreate(val
 	)
 }
 
-func (j *jsiiProxy_BigqueryReservationGroupTimeoutsOutputReference)SetDelete(val *string) {
+func (j *jsiiProxy_BigqueryReservationGroupTimeoutsOutputReference) SetDelete(val *string) {
 	if err := j.validateSetDeleteParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_BigqueryReservationGroupTimeoutsOutputReference)SetDelete(val
 	)
 }
 
-func (j *jsiiProxy_BigqueryReservationGroupTimeoutsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_BigqueryReservationGroupTimeoutsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_BigqueryReservationGroupTimeoutsOutputReference)SetInternalVa
 	)
 }
 
-func (j *jsiiProxy_BigqueryReservationGroupTimeoutsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_BigqueryReservationGroupTimeoutsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_BigqueryReservationGroupTimeoutsOutputReference)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_BigqueryReservationGroupTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BigqueryReservationGroupTimeoutsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,16 +311,16 @@ func (b *jsiiProxy_BigqueryReservationGroupTimeoutsOutputReference) ComputeFqn()
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryReservationGroupTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (b *jsiiProxy_BigqueryReservationGroupTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := b.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -337,7 +336,7 @@ func (b *jsiiProxy_BigqueryReservationGroupTimeoutsOutputReference) GetBooleanAt
 	_jsii_.Invoke(
 		b,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -353,7 +352,7 @@ func (b *jsiiProxy_BigqueryReservationGroupTimeoutsOutputReference) GetBooleanMa
 	_jsii_.Invoke(
 		b,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (b *jsiiProxy_BigqueryReservationGroupTimeoutsOutputReference) GetListAttri
 	_jsii_.Invoke(
 		b,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (b *jsiiProxy_BigqueryReservationGroupTimeoutsOutputReference) GetNumberAtt
 	_jsii_.Invoke(
 		b,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (b *jsiiProxy_BigqueryReservationGroupTimeoutsOutputReference) GetNumberLis
 	_jsii_.Invoke(
 		b,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (b *jsiiProxy_BigqueryReservationGroupTimeoutsOutputReference) GetNumberMap
 	_jsii_.Invoke(
 		b,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (b *jsiiProxy_BigqueryReservationGroupTimeoutsOutputReference) GetStringAtt
 	_jsii_.Invoke(
 		b,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (b *jsiiProxy_BigqueryReservationGroupTimeoutsOutputReference) GetStringMap
 	_jsii_.Invoke(
 		b,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func (b *jsiiProxy_BigqueryReservationGroupTimeoutsOutputReference) Interpolatio
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -501,16 +500,16 @@ func (b *jsiiProxy_BigqueryReservationGroupTimeoutsOutputReference) ResetDelete(
 	)
 }
 
-func (b *jsiiProxy_BigqueryReservationGroupTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (b *jsiiProxy_BigqueryReservationGroupTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := b.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (b *jsiiProxy_BigqueryReservationGroupTimeoutsOutputReference) ToString() *
 
 	return returns
 }
-

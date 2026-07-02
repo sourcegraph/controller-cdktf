@@ -98,7 +98,7 @@ func (c *jsiiProxy_CloudIdentityGroupTimeoutsOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_CloudIdentityGroupTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudIdentityGroupTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_CloudIdentityGroupTimeoutsOutputReference) validateSetDeleteP
 	return nil
 }
 
-func (j *jsiiProxy_CloudIdentityGroupTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CloudIdentityGroupTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewCloudIdentityGroupTimeoutsOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

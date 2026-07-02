@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataprocJobSchedulingOutputReference) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_DataprocJobSchedulingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocJobSchedulingOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewDataprocJobSchedulingOutputReferenceParameters(terraformResource
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.apihubPluginInstance.ApihubPluginInstance",
-		reflect.TypeOf((*ApihubPluginInstance)(nil)).Elem(),
+		reflect.TypeFor[ApihubPluginInstance](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "actions", GoGetter: "Actions"},
 			_jsii_.MemberProperty{JsiiProperty: "actionsInput", GoGetter: "ActionsInput"},
@@ -87,7 +87,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApihubPluginInstance{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -95,19 +95,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.apihubPluginInstance.ApihubPluginInstanceActions",
-		reflect.TypeOf((*ApihubPluginInstanceActions)(nil)).Elem(),
+		reflect.TypeFor[ApihubPluginInstanceActions](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.apihubPluginInstance.ApihubPluginInstanceActionsCurationConfig",
-		reflect.TypeOf((*ApihubPluginInstanceActionsCurationConfig)(nil)).Elem(),
+		reflect.TypeFor[ApihubPluginInstanceActionsCurationConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.apihubPluginInstance.ApihubPluginInstanceActionsCurationConfigCustomCuration",
-		reflect.TypeOf((*ApihubPluginInstanceActionsCurationConfigCustomCuration)(nil)).Elem(),
+		reflect.TypeFor[ApihubPluginInstanceActionsCurationConfigCustomCuration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.apihubPluginInstance.ApihubPluginInstanceActionsCurationConfigCustomCurationOutputReference",
-		reflect.TypeOf((*ApihubPluginInstanceActionsCurationConfigCustomCurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ApihubPluginInstanceActionsCurationConfigCustomCurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -133,7 +133,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApihubPluginInstanceActionsCurationConfigCustomCurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -141,7 +141,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.apihubPluginInstance.ApihubPluginInstanceActionsCurationConfigOutputReference",
-		reflect.TypeOf((*ApihubPluginInstanceActionsCurationConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ApihubPluginInstanceActionsCurationConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -172,7 +172,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApihubPluginInstanceActionsCurationConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -180,15 +180,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.apihubPluginInstance.ApihubPluginInstanceActionsHubInstanceAction",
-		reflect.TypeOf((*ApihubPluginInstanceActionsHubInstanceAction)(nil)).Elem(),
+		reflect.TypeFor[ApihubPluginInstanceActionsHubInstanceAction](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.apihubPluginInstance.ApihubPluginInstanceActionsHubInstanceActionLastExecution",
-		reflect.TypeOf((*ApihubPluginInstanceActionsHubInstanceActionLastExecution)(nil)).Elem(),
+		reflect.TypeFor[ApihubPluginInstanceActionsHubInstanceActionLastExecution](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.apihubPluginInstance.ApihubPluginInstanceActionsHubInstanceActionLastExecutionList",
-		reflect.TypeOf((*ApihubPluginInstanceActionsHubInstanceActionLastExecutionList)(nil)).Elem(),
+		reflect.TypeFor[ApihubPluginInstanceActionsHubInstanceActionLastExecutionList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -201,7 +201,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApihubPluginInstanceActionsHubInstanceActionLastExecutionList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -209,7 +209,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.apihubPluginInstance.ApihubPluginInstanceActionsHubInstanceActionLastExecutionOutputReference",
-		reflect.TypeOf((*ApihubPluginInstanceActionsHubInstanceActionLastExecutionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ApihubPluginInstanceActionsHubInstanceActionLastExecutionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -237,7 +237,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApihubPluginInstanceActionsHubInstanceActionLastExecutionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -245,7 +245,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.apihubPluginInstance.ApihubPluginInstanceActionsHubInstanceActionList",
-		reflect.TypeOf((*ApihubPluginInstanceActionsHubInstanceActionList)(nil)).Elem(),
+		reflect.TypeFor[ApihubPluginInstanceActionsHubInstanceActionList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -258,7 +258,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApihubPluginInstanceActionsHubInstanceActionList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -266,7 +266,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.apihubPluginInstance.ApihubPluginInstanceActionsHubInstanceActionOutputReference",
-		reflect.TypeOf((*ApihubPluginInstanceActionsHubInstanceActionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ApihubPluginInstanceActionsHubInstanceActionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -292,7 +292,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApihubPluginInstanceActionsHubInstanceActionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -300,7 +300,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.apihubPluginInstance.ApihubPluginInstanceActionsList",
-		reflect.TypeOf((*ApihubPluginInstanceActionsList)(nil)).Elem(),
+		reflect.TypeFor[ApihubPluginInstanceActionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -314,7 +314,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApihubPluginInstanceActionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -322,7 +322,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.apihubPluginInstance.ApihubPluginInstanceActionsOutputReference",
-		reflect.TypeOf((*ApihubPluginInstanceActionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ApihubPluginInstanceActionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "actionId", GoGetter: "ActionId"},
 			_jsii_.MemberProperty{JsiiProperty: "actionIdInput", GoGetter: "ActionIdInput"},
@@ -360,7 +360,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApihubPluginInstanceActionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -368,19 +368,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.apihubPluginInstance.ApihubPluginInstanceAuthConfig",
-		reflect.TypeOf((*ApihubPluginInstanceAuthConfig)(nil)).Elem(),
+		reflect.TypeFor[ApihubPluginInstanceAuthConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.apihubPluginInstance.ApihubPluginInstanceAuthConfigApiKeyConfig",
-		reflect.TypeOf((*ApihubPluginInstanceAuthConfigApiKeyConfig)(nil)).Elem(),
+		reflect.TypeFor[ApihubPluginInstanceAuthConfigApiKeyConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.apihubPluginInstance.ApihubPluginInstanceAuthConfigApiKeyConfigApiKey",
-		reflect.TypeOf((*ApihubPluginInstanceAuthConfigApiKeyConfigApiKey)(nil)).Elem(),
+		reflect.TypeFor[ApihubPluginInstanceAuthConfigApiKeyConfigApiKey](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.apihubPluginInstance.ApihubPluginInstanceAuthConfigApiKeyConfigApiKeyOutputReference",
-		reflect.TypeOf((*ApihubPluginInstanceAuthConfigApiKeyConfigApiKeyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ApihubPluginInstanceAuthConfigApiKeyConfigApiKeyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -406,7 +406,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApihubPluginInstanceAuthConfigApiKeyConfigApiKeyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -414,7 +414,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.apihubPluginInstance.ApihubPluginInstanceAuthConfigApiKeyConfigOutputReference",
-		reflect.TypeOf((*ApihubPluginInstanceAuthConfigApiKeyConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ApihubPluginInstanceAuthConfigApiKeyConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apiKey", GoGetter: "ApiKey"},
 			_jsii_.MemberProperty{JsiiProperty: "apiKeyInput", GoGetter: "ApiKeyInput"},
@@ -445,7 +445,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApihubPluginInstanceAuthConfigApiKeyConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -453,11 +453,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.apihubPluginInstance.ApihubPluginInstanceAuthConfigGoogleServiceAccountConfig",
-		reflect.TypeOf((*ApihubPluginInstanceAuthConfigGoogleServiceAccountConfig)(nil)).Elem(),
+		reflect.TypeFor[ApihubPluginInstanceAuthConfigGoogleServiceAccountConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.apihubPluginInstance.ApihubPluginInstanceAuthConfigGoogleServiceAccountConfigOutputReference",
-		reflect.TypeOf((*ApihubPluginInstanceAuthConfigGoogleServiceAccountConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ApihubPluginInstanceAuthConfigGoogleServiceAccountConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -483,7 +483,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApihubPluginInstanceAuthConfigGoogleServiceAccountConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -491,15 +491,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.apihubPluginInstance.ApihubPluginInstanceAuthConfigOauth2ClientCredentialsConfig",
-		reflect.TypeOf((*ApihubPluginInstanceAuthConfigOauth2ClientCredentialsConfig)(nil)).Elem(),
+		reflect.TypeFor[ApihubPluginInstanceAuthConfigOauth2ClientCredentialsConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.apihubPluginInstance.ApihubPluginInstanceAuthConfigOauth2ClientCredentialsConfigClientSecret",
-		reflect.TypeOf((*ApihubPluginInstanceAuthConfigOauth2ClientCredentialsConfigClientSecret)(nil)).Elem(),
+		reflect.TypeFor[ApihubPluginInstanceAuthConfigOauth2ClientCredentialsConfigClientSecret](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.apihubPluginInstance.ApihubPluginInstanceAuthConfigOauth2ClientCredentialsConfigClientSecretOutputReference",
-		reflect.TypeOf((*ApihubPluginInstanceAuthConfigOauth2ClientCredentialsConfigClientSecretOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ApihubPluginInstanceAuthConfigOauth2ClientCredentialsConfigClientSecretOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -525,7 +525,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApihubPluginInstanceAuthConfigOauth2ClientCredentialsConfigClientSecretOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -533,7 +533,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.apihubPluginInstance.ApihubPluginInstanceAuthConfigOauth2ClientCredentialsConfigOutputReference",
-		reflect.TypeOf((*ApihubPluginInstanceAuthConfigOauth2ClientCredentialsConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ApihubPluginInstanceAuthConfigOauth2ClientCredentialsConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clientId", GoGetter: "ClientId"},
 			_jsii_.MemberProperty{JsiiProperty: "clientIdInput", GoGetter: "ClientIdInput"},
@@ -562,7 +562,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApihubPluginInstanceAuthConfigOauth2ClientCredentialsConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -570,7 +570,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.apihubPluginInstance.ApihubPluginInstanceAuthConfigOutputReference",
-		reflect.TypeOf((*ApihubPluginInstanceAuthConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ApihubPluginInstanceAuthConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apiKeyConfig", GoGetter: "ApiKeyConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "apiKeyConfigInput", GoGetter: "ApiKeyConfigInput"},
@@ -612,7 +612,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userPasswordConfig", GoGetter: "UserPasswordConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "userPasswordConfigInput", GoGetter: "UserPasswordConfigInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApihubPluginInstanceAuthConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -620,11 +620,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.apihubPluginInstance.ApihubPluginInstanceAuthConfigUserPasswordConfig",
-		reflect.TypeOf((*ApihubPluginInstanceAuthConfigUserPasswordConfig)(nil)).Elem(),
+		reflect.TypeFor[ApihubPluginInstanceAuthConfigUserPasswordConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.apihubPluginInstance.ApihubPluginInstanceAuthConfigUserPasswordConfigOutputReference",
-		reflect.TypeOf((*ApihubPluginInstanceAuthConfigUserPasswordConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ApihubPluginInstanceAuthConfigUserPasswordConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -653,7 +653,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "username", GoGetter: "Username"},
 			_jsii_.MemberProperty{JsiiProperty: "usernameInput", GoGetter: "UsernameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApihubPluginInstanceAuthConfigUserPasswordConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -661,11 +661,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.apihubPluginInstance.ApihubPluginInstanceAuthConfigUserPasswordConfigPassword",
-		reflect.TypeOf((*ApihubPluginInstanceAuthConfigUserPasswordConfigPassword)(nil)).Elem(),
+		reflect.TypeFor[ApihubPluginInstanceAuthConfigUserPasswordConfigPassword](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.apihubPluginInstance.ApihubPluginInstanceAuthConfigUserPasswordConfigPasswordOutputReference",
-		reflect.TypeOf((*ApihubPluginInstanceAuthConfigUserPasswordConfigPasswordOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ApihubPluginInstanceAuthConfigUserPasswordConfigPasswordOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -691,7 +691,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApihubPluginInstanceAuthConfigUserPasswordConfigPasswordOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -699,15 +699,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.apihubPluginInstance.ApihubPluginInstanceConfig",
-		reflect.TypeOf((*ApihubPluginInstanceConfig)(nil)).Elem(),
+		reflect.TypeFor[ApihubPluginInstanceConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.apihubPluginInstance.ApihubPluginInstanceTimeouts",
-		reflect.TypeOf((*ApihubPluginInstanceTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ApihubPluginInstanceTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.apihubPluginInstance.ApihubPluginInstanceTimeoutsOutputReference",
-		reflect.TypeOf((*ApihubPluginInstanceTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ApihubPluginInstanceTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -740,7 +740,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApihubPluginInstanceTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

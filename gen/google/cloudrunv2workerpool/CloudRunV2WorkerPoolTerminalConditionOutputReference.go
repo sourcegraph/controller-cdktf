@@ -12,9 +12,9 @@ type CloudRunV2WorkerPoolTerminalConditionOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -48,7 +48,7 @@ type CloudRunV2WorkerPoolTerminalConditionOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type CloudRunV2WorkerPoolTerminalConditionOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_CloudRunV2WorkerPoolTerminalConditionOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_CloudRunV2WorkerPoolTerminalConditionOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudRunV2WorkerPoolTerminalConditionOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -234,7 +234,6 @@ func (j *jsiiProxy_CloudRunV2WorkerPoolTerminalConditionOutputReference) Type() 
 	return returns
 }
 
-
 func NewCloudRunV2WorkerPoolTerminalConditionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) CloudRunV2WorkerPoolTerminalConditionOutputReference {
 	_init_.Initialize()
 
@@ -245,7 +244,7 @@ func NewCloudRunV2WorkerPoolTerminalConditionOutputReference(terraformResource c
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTerminalConditionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -257,12 +256,12 @@ func NewCloudRunV2WorkerPoolTerminalConditionOutputReference_Override(c CloudRun
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTerminalConditionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CloudRunV2WorkerPoolTerminalConditionOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CloudRunV2WorkerPoolTerminalConditionOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -273,7 +272,7 @@ func (j *jsiiProxy_CloudRunV2WorkerPoolTerminalConditionOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_CloudRunV2WorkerPoolTerminalConditionOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CloudRunV2WorkerPoolTerminalConditionOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -284,7 +283,7 @@ func (j *jsiiProxy_CloudRunV2WorkerPoolTerminalConditionOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_CloudRunV2WorkerPoolTerminalConditionOutputReference)SetInternalValue(val *CloudRunV2WorkerPoolTerminalCondition) {
+func (j *jsiiProxy_CloudRunV2WorkerPoolTerminalConditionOutputReference) SetInternalValue(val *CloudRunV2WorkerPoolTerminalCondition) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -295,7 +294,7 @@ func (j *jsiiProxy_CloudRunV2WorkerPoolTerminalConditionOutputReference)SetInter
 	)
 }
 
-func (j *jsiiProxy_CloudRunV2WorkerPoolTerminalConditionOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CloudRunV2WorkerPoolTerminalConditionOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -306,7 +305,7 @@ func (j *jsiiProxy_CloudRunV2WorkerPoolTerminalConditionOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_CloudRunV2WorkerPoolTerminalConditionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CloudRunV2WorkerPoolTerminalConditionOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -330,16 +329,16 @@ func (c *jsiiProxy_CloudRunV2WorkerPoolTerminalConditionOutputReference) Compute
 	return returns
 }
 
-func (c *jsiiProxy_CloudRunV2WorkerPoolTerminalConditionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CloudRunV2WorkerPoolTerminalConditionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -355,7 +354,7 @@ func (c *jsiiProxy_CloudRunV2WorkerPoolTerminalConditionOutputReference) GetBool
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -371,7 +370,7 @@ func (c *jsiiProxy_CloudRunV2WorkerPoolTerminalConditionOutputReference) GetBool
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -387,7 +386,7 @@ func (c *jsiiProxy_CloudRunV2WorkerPoolTerminalConditionOutputReference) GetList
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -403,7 +402,7 @@ func (c *jsiiProxy_CloudRunV2WorkerPoolTerminalConditionOutputReference) GetNumb
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -419,7 +418,7 @@ func (c *jsiiProxy_CloudRunV2WorkerPoolTerminalConditionOutputReference) GetNumb
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -435,7 +434,7 @@ func (c *jsiiProxy_CloudRunV2WorkerPoolTerminalConditionOutputReference) GetNumb
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -451,7 +450,7 @@ func (c *jsiiProxy_CloudRunV2WorkerPoolTerminalConditionOutputReference) GetStri
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -467,7 +466,7 @@ func (c *jsiiProxy_CloudRunV2WorkerPoolTerminalConditionOutputReference) GetStri
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -496,23 +495,23 @@ func (c *jsiiProxy_CloudRunV2WorkerPoolTerminalConditionOutputReference) Interpo
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_CloudRunV2WorkerPoolTerminalConditionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_CloudRunV2WorkerPoolTerminalConditionOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -531,4 +530,3 @@ func (c *jsiiProxy_CloudRunV2WorkerPoolTerminalConditionOutputReference) ToStrin
 
 	return returns
 }
-

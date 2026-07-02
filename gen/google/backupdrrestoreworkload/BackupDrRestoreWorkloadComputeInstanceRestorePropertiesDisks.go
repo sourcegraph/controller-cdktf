@@ -1,15 +1,14 @@
 package backupdrrestoreworkload
 
-
 type BackupDrRestoreWorkloadComputeInstanceRestorePropertiesDisks struct {
 	// Optional. Specifies whether the disk will be auto-deleted when the instance is deleted.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_restore_workload#auto_delete BackupDrRestoreWorkload#auto_delete}
-	AutoDelete interface{} `field:"optional" json:"autoDelete" yaml:"autoDelete"`
+	AutoDelete any `field:"optional" json:"autoDelete" yaml:"autoDelete"`
 	// Optional. Indicates that this is a boot disk.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_restore_workload#boot BackupDrRestoreWorkload#boot}
-	Boot interface{} `field:"optional" json:"boot" yaml:"boot"`
+	Boot any `field:"optional" json:"boot" yaml:"boot"`
 	// Optional. This is used as an identifier for the disks.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_restore_workload#device_name BackupDrRestoreWorkload#device_name}
@@ -33,7 +32,7 @@ type BackupDrRestoreWorkloadComputeInstanceRestorePropertiesDisks struct {
 	// guest_os_feature block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_restore_workload#guest_os_feature BackupDrRestoreWorkload#guest_os_feature}
-	GuestOsFeature interface{} `field:"optional" json:"guestOsFeature" yaml:"guestOsFeature"`
+	GuestOsFeature any `field:"optional" json:"guestOsFeature" yaml:"guestOsFeature"`
 	// Optional. A zero-based index to this disk, where 0 is reserved for the boot disk.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_restore_workload#index BackupDrRestoreWorkload#index}
@@ -67,4 +66,3 @@ type BackupDrRestoreWorkloadComputeInstanceRestorePropertiesDisks struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_restore_workload#type BackupDrRestoreWorkload#type}
 	Type *string `field:"optional" json:"type" yaml:"type"`
 }
-

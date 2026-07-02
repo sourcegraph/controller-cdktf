@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleComputeGlobalForwardingRuleMetadataFiltersOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeGlobalForwardingRuleMetadataFiltersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleComputeGlobalForwardingRuleMetadataFiltersOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleComputeGlobalForwardingRuleMetadataFiltersOutputRefere
 
 	return nil
 }
-

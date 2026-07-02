@@ -34,7 +34,7 @@ func (b *jsiiProxy_BinaryAuthorizationPolicyAdmissionWhitelistPatternsList) vali
 	return nil
 }
 
-func (j *jsiiProxy_BinaryAuthorizationPolicyAdmissionWhitelistPatternsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_BinaryAuthorizationPolicyAdmissionWhitelistPatternsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewBinaryAuthorizationPolicyAdmissionWhitelistPatternsListParameter
 
 	return nil
 }
-

@@ -1,6 +1,5 @@
 package notebooksruntime
 
-
 type NotebooksRuntimeVirtualMachineVirtualMachineConfig struct {
 	// data_disk block.
 	//
@@ -17,7 +16,7 @@ type NotebooksRuntimeVirtualMachineVirtualMachineConfig struct {
 	// container_images block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/notebooks_runtime#container_images NotebooksRuntime#container_images}
-	ContainerImages interface{} `field:"optional" json:"containerImages" yaml:"containerImages"`
+	ContainerImages any `field:"optional" json:"containerImages" yaml:"containerImages"`
 	// encryption_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/notebooks_runtime#encryption_config NotebooksRuntime#encryption_config}
@@ -32,7 +31,7 @@ type NotebooksRuntimeVirtualMachineVirtualMachineConfig struct {
 	// accessible without external IP addresses.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/notebooks_runtime#internal_ip_only NotebooksRuntime#internal_ip_only}
-	InternalIpOnly interface{} `field:"optional" json:"internalIpOnly" yaml:"internalIpOnly"`
+	InternalIpOnly any `field:"optional" json:"internalIpOnly" yaml:"internalIpOnly"`
 	// The labels to associate with this runtime.
 	//
 	// Label **keys** must
@@ -96,4 +95,3 @@ type NotebooksRuntimeVirtualMachineVirtualMachineConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/notebooks_runtime#tags NotebooksRuntime#tags}
 	Tags *[]*string `field:"optional" json:"tags" yaml:"tags"`
 }
-

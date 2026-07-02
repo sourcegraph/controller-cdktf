@@ -17,9 +17,9 @@ type ContainerClusterMasterAuthOutputReference interface {
 	ClusterCaCertificate() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -45,7 +45,7 @@ type ContainerClusterMasterAuthOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -69,7 +69,7 @@ type ContainerClusterMasterAuthOutputReference interface {
 	PutClientCertificateConfig(value *ContainerClusterMasterAuthClientCertificateConfig)
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -132,8 +132,8 @@ func (j *jsiiProxy_ContainerClusterMasterAuthOutputReference) ClusterCaCertifica
 	return returns
 }
 
-func (j *jsiiProxy_ContainerClusterMasterAuthOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerClusterMasterAuthOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -202,7 +202,6 @@ func (j *jsiiProxy_ContainerClusterMasterAuthOutputReference) TerraformResource(
 	return returns
 }
 
-
 func NewContainerClusterMasterAuthOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ContainerClusterMasterAuthOutputReference {
 	_init_.Initialize()
 
@@ -213,7 +212,7 @@ func NewContainerClusterMasterAuthOutputReference(terraformResource cdktf.IInter
 
 	_jsii_.Create(
 		"@cdktf/provider-google.containerCluster.ContainerClusterMasterAuthOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -225,12 +224,12 @@ func NewContainerClusterMasterAuthOutputReference_Override(c ContainerClusterMas
 
 	_jsii_.Create(
 		"@cdktf/provider-google.containerCluster.ContainerClusterMasterAuthOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterMasterAuthOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ContainerClusterMasterAuthOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -241,7 +240,7 @@ func (j *jsiiProxy_ContainerClusterMasterAuthOutputReference)SetComplexObjectInd
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterMasterAuthOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ContainerClusterMasterAuthOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -252,7 +251,7 @@ func (j *jsiiProxy_ContainerClusterMasterAuthOutputReference)SetComplexObjectIsF
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterMasterAuthOutputReference)SetInternalValue(val *ContainerClusterMasterAuth) {
+func (j *jsiiProxy_ContainerClusterMasterAuthOutputReference) SetInternalValue(val *ContainerClusterMasterAuth) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -263,7 +262,7 @@ func (j *jsiiProxy_ContainerClusterMasterAuthOutputReference)SetInternalValue(va
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterMasterAuthOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ContainerClusterMasterAuthOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -274,7 +273,7 @@ func (j *jsiiProxy_ContainerClusterMasterAuthOutputReference)SetTerraformAttribu
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterMasterAuthOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ContainerClusterMasterAuthOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -298,16 +297,16 @@ func (c *jsiiProxy_ContainerClusterMasterAuthOutputReference) ComputeFqn() *stri
 	return returns
 }
 
-func (c *jsiiProxy_ContainerClusterMasterAuthOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ContainerClusterMasterAuthOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -323,7 +322,7 @@ func (c *jsiiProxy_ContainerClusterMasterAuthOutputReference) GetBooleanAttribut
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -339,7 +338,7 @@ func (c *jsiiProxy_ContainerClusterMasterAuthOutputReference) GetBooleanMapAttri
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -355,7 +354,7 @@ func (c *jsiiProxy_ContainerClusterMasterAuthOutputReference) GetListAttribute(t
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -371,7 +370,7 @@ func (c *jsiiProxy_ContainerClusterMasterAuthOutputReference) GetNumberAttribute
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -387,7 +386,7 @@ func (c *jsiiProxy_ContainerClusterMasterAuthOutputReference) GetNumberListAttri
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -403,7 +402,7 @@ func (c *jsiiProxy_ContainerClusterMasterAuthOutputReference) GetNumberMapAttrib
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -419,7 +418,7 @@ func (c *jsiiProxy_ContainerClusterMasterAuthOutputReference) GetStringAttribute
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -435,7 +434,7 @@ func (c *jsiiProxy_ContainerClusterMasterAuthOutputReference) GetStringMapAttrib
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -464,7 +463,7 @@ func (c *jsiiProxy_ContainerClusterMasterAuthOutputReference) InterpolationForAt
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -478,20 +477,20 @@ func (c *jsiiProxy_ContainerClusterMasterAuthOutputReference) PutClientCertifica
 	_jsii_.InvokeVoid(
 		c,
 		"putClientCertificateConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_ContainerClusterMasterAuthOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ContainerClusterMasterAuthOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -510,4 +509,3 @@ func (c *jsiiProxy_ContainerClusterMasterAuthOutputReference) ToString() *string
 
 	return returns
 }
-

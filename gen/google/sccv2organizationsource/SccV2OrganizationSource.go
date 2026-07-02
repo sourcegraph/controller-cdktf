@@ -15,15 +15,15 @@ type SccV2OrganizationSource interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -60,26 +60,26 @@ type SccV2OrganizationSource interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() SccV2OrganizationSourceTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -97,7 +97,7 @@ type SccV2OrganizationSource interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -109,7 +109,7 @@ type SccV2OrganizationSource interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -123,17 +123,17 @@ type SccV2OrganizationSource interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for SccV2OrganizationSource
@@ -151,8 +151,8 @@ func (j *jsiiProxy_SccV2OrganizationSource) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_SccV2OrganizationSource) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SccV2OrganizationSource) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -161,8 +161,8 @@ func (j *jsiiProxy_SccV2OrganizationSource) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SccV2OrganizationSource) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SccV2OrganizationSource) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -171,8 +171,8 @@ func (j *jsiiProxy_SccV2OrganizationSource) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_SccV2OrganizationSource) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SccV2OrganizationSource) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -341,8 +341,8 @@ func (j *jsiiProxy_SccV2OrganizationSource) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_SccV2OrganizationSource) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_SccV2OrganizationSource) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -351,8 +351,8 @@ func (j *jsiiProxy_SccV2OrganizationSource) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SccV2OrganizationSource) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SccV2OrganizationSource) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -371,8 +371,8 @@ func (j *jsiiProxy_SccV2OrganizationSource) TerraformGeneratorMetadata() *cdktf.
 	return returns
 }
 
-func (j *jsiiProxy_SccV2OrganizationSource) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SccV2OrganizationSource) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -401,8 +401,8 @@ func (j *jsiiProxy_SccV2OrganizationSource) Timeouts() SccV2OrganizationSourceTi
 	return returns
 }
 
-func (j *jsiiProxy_SccV2OrganizationSource) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SccV2OrganizationSource) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -410,7 +410,6 @@ func (j *jsiiProxy_SccV2OrganizationSource) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_v2_organization_source google_scc_v2_organization_source} Resource.
 func NewSccV2OrganizationSource(scope constructs.Construct, id *string, config *SccV2OrganizationSourceConfig) SccV2OrganizationSource {
@@ -423,7 +422,7 @@ func NewSccV2OrganizationSource(scope constructs.Construct, id *string, config *
 
 	_jsii_.Create(
 		"@cdktf/provider-google.sccV2OrganizationSource.SccV2OrganizationSource",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -436,12 +435,12 @@ func NewSccV2OrganizationSource_Override(s SccV2OrganizationSource, scope constr
 
 	_jsii_.Create(
 		"@cdktf/provider-google.sccV2OrganizationSource.SccV2OrganizationSource",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SccV2OrganizationSource)SetConnection(val interface{}) {
+func (j *jsiiProxy_SccV2OrganizationSource) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,7 +451,7 @@ func (j *jsiiProxy_SccV2OrganizationSource)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SccV2OrganizationSource)SetCount(val interface{}) {
+func (j *jsiiProxy_SccV2OrganizationSource) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -463,7 +462,7 @@ func (j *jsiiProxy_SccV2OrganizationSource)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SccV2OrganizationSource)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_SccV2OrganizationSource) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -471,7 +470,7 @@ func (j *jsiiProxy_SccV2OrganizationSource)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SccV2OrganizationSource)SetDescription(val *string) {
+func (j *jsiiProxy_SccV2OrganizationSource) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -482,7 +481,7 @@ func (j *jsiiProxy_SccV2OrganizationSource)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SccV2OrganizationSource)SetDisplayName(val *string) {
+func (j *jsiiProxy_SccV2OrganizationSource) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -493,7 +492,7 @@ func (j *jsiiProxy_SccV2OrganizationSource)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SccV2OrganizationSource)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SccV2OrganizationSource) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -501,7 +500,7 @@ func (j *jsiiProxy_SccV2OrganizationSource)SetForEach(val cdktf.ITerraformIterat
 	)
 }
 
-func (j *jsiiProxy_SccV2OrganizationSource)SetId(val *string) {
+func (j *jsiiProxy_SccV2OrganizationSource) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -512,7 +511,7 @@ func (j *jsiiProxy_SccV2OrganizationSource)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SccV2OrganizationSource)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SccV2OrganizationSource) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -523,7 +522,7 @@ func (j *jsiiProxy_SccV2OrganizationSource)SetLifecycle(val *cdktf.TerraformReso
 	)
 }
 
-func (j *jsiiProxy_SccV2OrganizationSource)SetOrganization(val *string) {
+func (j *jsiiProxy_SccV2OrganizationSource) SetOrganization(val *string) {
 	if err := j.validateSetOrganizationParameters(val); err != nil {
 		panic(err)
 	}
@@ -534,7 +533,7 @@ func (j *jsiiProxy_SccV2OrganizationSource)SetOrganization(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SccV2OrganizationSource)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SccV2OrganizationSource) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -542,7 +541,7 @@ func (j *jsiiProxy_SccV2OrganizationSource)SetProvider(val cdktf.TerraformProvid
 	)
 }
 
-func (j *jsiiProxy_SccV2OrganizationSource)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_SccV2OrganizationSource) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -565,7 +564,7 @@ func SccV2OrganizationSource_GenerateConfigForImport(scope constructs.Construct,
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.sccV2OrganizationSource.SccV2OrganizationSource",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -589,7 +588,7 @@ func SccV2OrganizationSource_GenerateConfigForImport(scope constructs.Construct,
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func SccV2OrganizationSource_IsConstruct(x interface{}) *bool {
+func SccV2OrganizationSource_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSccV2OrganizationSource_IsConstructParameters(x); err != nil {
@@ -600,7 +599,7 @@ func SccV2OrganizationSource_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.sccV2OrganizationSource.SccV2OrganizationSource",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -608,7 +607,7 @@ func SccV2OrganizationSource_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func SccV2OrganizationSource_IsTerraformElement(x interface{}) *bool {
+func SccV2OrganizationSource_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSccV2OrganizationSource_IsTerraformElementParameters(x); err != nil {
@@ -619,7 +618,7 @@ func SccV2OrganizationSource_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.sccV2OrganizationSource.SccV2OrganizationSource",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -627,7 +626,7 @@ func SccV2OrganizationSource_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func SccV2OrganizationSource_IsTerraformResource(x interface{}) *bool {
+func SccV2OrganizationSource_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSccV2OrganizationSource_IsTerraformResourceParameters(x); err != nil {
@@ -638,7 +637,7 @@ func SccV2OrganizationSource_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.sccV2OrganizationSource.SccV2OrganizationSource",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -663,31 +662,31 @@ func (s *jsiiProxy_SccV2OrganizationSource) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_SccV2OrganizationSource) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_SccV2OrganizationSource) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_SccV2OrganizationSource) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SccV2OrganizationSource) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -703,7 +702,7 @@ func (s *jsiiProxy_SccV2OrganizationSource) GetBooleanAttribute(terraformAttribu
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -719,7 +718,7 @@ func (s *jsiiProxy_SccV2OrganizationSource) GetBooleanMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -735,7 +734,7 @@ func (s *jsiiProxy_SccV2OrganizationSource) GetListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -751,7 +750,7 @@ func (s *jsiiProxy_SccV2OrganizationSource) GetNumberAttribute(terraformAttribut
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -767,7 +766,7 @@ func (s *jsiiProxy_SccV2OrganizationSource) GetNumberListAttribute(terraformAttr
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -783,7 +782,7 @@ func (s *jsiiProxy_SccV2OrganizationSource) GetNumberMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -799,7 +798,7 @@ func (s *jsiiProxy_SccV2OrganizationSource) GetStringAttribute(terraformAttribut
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -815,15 +814,15 @@ func (s *jsiiProxy_SccV2OrganizationSource) GetStringMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SccV2OrganizationSource) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SccV2OrganizationSource) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -842,7 +841,7 @@ func (s *jsiiProxy_SccV2OrganizationSource) ImportFrom(id *string, provider cdkt
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -855,7 +854,7 @@ func (s *jsiiProxy_SccV2OrganizationSource) InterpolationForAttribute(terraformA
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -869,18 +868,18 @@ func (s *jsiiProxy_SccV2OrganizationSource) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_SccV2OrganizationSource) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_SccV2OrganizationSource) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -891,7 +890,7 @@ func (s *jsiiProxy_SccV2OrganizationSource) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -902,7 +901,7 @@ func (s *jsiiProxy_SccV2OrganizationSource) OverrideLogicalId(newLogicalId *stri
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -913,7 +912,7 @@ func (s *jsiiProxy_SccV2OrganizationSource) PutTimeouts(value *SccV2Organization
 	_jsii_.InvokeVoid(
 		s,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -949,8 +948,8 @@ func (s *jsiiProxy_SccV2OrganizationSource) ResetTimeouts() {
 	)
 }
 
-func (s *jsiiProxy_SccV2OrganizationSource) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SccV2OrganizationSource) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -962,8 +961,8 @@ func (s *jsiiProxy_SccV2OrganizationSource) SynthesizeAttributes() *map[string]i
 	return returns
 }
 
-func (s *jsiiProxy_SccV2OrganizationSource) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SccV2OrganizationSource) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -975,8 +974,8 @@ func (s *jsiiProxy_SccV2OrganizationSource) SynthesizeHclAttributes() *map[strin
 	return returns
 }
 
-func (s *jsiiProxy_SccV2OrganizationSource) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SccV2OrganizationSource) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -988,8 +987,8 @@ func (s *jsiiProxy_SccV2OrganizationSource) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_SccV2OrganizationSource) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SccV2OrganizationSource) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1014,8 +1013,8 @@ func (s *jsiiProxy_SccV2OrganizationSource) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_SccV2OrganizationSource) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SccV2OrganizationSource) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1026,4 +1025,3 @@ func (s *jsiiProxy_SccV2OrganizationSource) ToTerraform() interface{} {
 
 	return returns
 }
-

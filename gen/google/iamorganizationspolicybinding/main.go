@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.iamOrganizationsPolicyBinding.IamOrganizationsPolicyBinding",
-		reflect.TypeOf((*IamOrganizationsPolicyBinding)(nil)).Elem(),
+		reflect.TypeFor[IamOrganizationsPolicyBinding](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -91,7 +91,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IamOrganizationsPolicyBinding{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -99,11 +99,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.iamOrganizationsPolicyBinding.IamOrganizationsPolicyBindingCondition",
-		reflect.TypeOf((*IamOrganizationsPolicyBindingCondition)(nil)).Elem(),
+		reflect.TypeFor[IamOrganizationsPolicyBindingCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.iamOrganizationsPolicyBinding.IamOrganizationsPolicyBindingConditionOutputReference",
-		reflect.TypeOf((*IamOrganizationsPolicyBindingConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IamOrganizationsPolicyBindingConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -139,7 +139,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IamOrganizationsPolicyBindingConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -147,15 +147,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.iamOrganizationsPolicyBinding.IamOrganizationsPolicyBindingConfig",
-		reflect.TypeOf((*IamOrganizationsPolicyBindingConfig)(nil)).Elem(),
+		reflect.TypeFor[IamOrganizationsPolicyBindingConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.iamOrganizationsPolicyBinding.IamOrganizationsPolicyBindingTarget",
-		reflect.TypeOf((*IamOrganizationsPolicyBindingTarget)(nil)).Elem(),
+		reflect.TypeFor[IamOrganizationsPolicyBindingTarget](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.iamOrganizationsPolicyBinding.IamOrganizationsPolicyBindingTargetOutputReference",
-		reflect.TypeOf((*IamOrganizationsPolicyBindingTargetOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IamOrganizationsPolicyBindingTargetOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -182,7 +182,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IamOrganizationsPolicyBindingTargetOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -190,11 +190,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.iamOrganizationsPolicyBinding.IamOrganizationsPolicyBindingTimeouts",
-		reflect.TypeOf((*IamOrganizationsPolicyBindingTimeouts)(nil)).Elem(),
+		reflect.TypeFor[IamOrganizationsPolicyBindingTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.iamOrganizationsPolicyBinding.IamOrganizationsPolicyBindingTimeoutsOutputReference",
-		reflect.TypeOf((*IamOrganizationsPolicyBindingTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IamOrganizationsPolicyBindingTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -227,7 +227,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IamOrganizationsPolicyBindingTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

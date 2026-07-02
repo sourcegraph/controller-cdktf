@@ -98,7 +98,7 @@ func (c *jsiiProxy_ContainerClusterFleetOutputReference) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterFleetOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterFleetOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewContainerClusterFleetOutputReferenceParameters(terraformResource
 
 	return nil
 }
-

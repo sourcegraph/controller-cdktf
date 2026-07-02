@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeRegionDiskIamBindingConditionOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionDiskIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionDiskIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewComputeRegionDiskIamBindingConditionOutputReferenceParameters(te
 
 	return nil
 }
-

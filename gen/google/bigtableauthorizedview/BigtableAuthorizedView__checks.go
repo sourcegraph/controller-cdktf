@@ -19,7 +19,7 @@ func (b *jsiiProxy_BigtableAuthorizedView) validateAddMoveTargetParameters(moveT
 	return nil
 }
 
-func (b *jsiiProxy_BigtableAuthorizedView) validateAddOverrideParameters(path *string, value interface{}) error {
+func (b *jsiiProxy_BigtableAuthorizedView) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (b *jsiiProxy_BigtableAuthorizedView) validateMoveFromIdParameters(id *stri
 	return nil
 }
 
-func (b *jsiiProxy_BigtableAuthorizedView) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (b *jsiiProxy_BigtableAuthorizedView) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateBigtableAuthorizedView_GenerateConfigForImportParameters(scope cons
 	return nil
 }
 
-func validateBigtableAuthorizedView_IsConstructParameters(x interface{}) error {
+func validateBigtableAuthorizedView_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateBigtableAuthorizedView_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateBigtableAuthorizedView_IsTerraformElementParameters(x interface{}) error {
+func validateBigtableAuthorizedView_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateBigtableAuthorizedView_IsTerraformElementParameters(x interface{}) 
 	return nil
 }
 
-func validateBigtableAuthorizedView_IsTerraformResourceParameters(x interface{}) error {
+func validateBigtableAuthorizedView_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func validateBigtableAuthorizedView_IsTerraformResourceParameters(x interface{})
 	return nil
 }
 
-func (j *jsiiProxy_BigtableAuthorizedView) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_BigtableAuthorizedView) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -299,7 +299,7 @@ func (j *jsiiProxy_BigtableAuthorizedView) validateSetConnectionParameters(val i
 	return nil
 }
 
-func (j *jsiiProxy_BigtableAuthorizedView) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_BigtableAuthorizedView) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -404,7 +404,7 @@ func (j *jsiiProxy_BigtableAuthorizedView) validateSetProjectParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_BigtableAuthorizedView) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_BigtableAuthorizedView) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -476,4 +476,3 @@ func validateNewBigtableAuthorizedViewParameters(scope constructs.Construct, id 
 
 	return nil
 }
-

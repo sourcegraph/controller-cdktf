@@ -109,7 +109,7 @@ func (d *jsiiProxy_DataprocBatchEnvironmentConfigPeripheralsConfigOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_DataprocBatchEnvironmentConfigPeripheralsConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocBatchEnvironmentConfigPeripheralsConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -217,4 +217,3 @@ func validateNewDataprocBatchEnvironmentConfigPeripheralsConfigOutputReferencePa
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (n *jsiiProxy_NotebooksInstanceAcceleratorConfigOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_NotebooksInstanceAcceleratorConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NotebooksInstanceAcceleratorConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewNotebooksInstanceAcceleratorConfigOutputReferenceParameters(terr
 
 	return nil
 }
-

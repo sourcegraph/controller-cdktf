@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGooglePubsubTopicIngestionDataSourceSettingsPlatformLogsS
 	return nil
 }
 
-func (j *jsiiProxy_DataGooglePubsubTopicIngestionDataSourceSettingsPlatformLogsSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGooglePubsubTopicIngestionDataSourceSettingsPlatformLogsSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGooglePubsubTopicIngestionDataSourceSettingsPlatformLogsSett
 
 	return nil
 }
-

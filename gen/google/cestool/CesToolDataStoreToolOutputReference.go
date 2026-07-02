@@ -11,12 +11,12 @@ import (
 type CesToolDataStoreToolOutputReference interface {
 	cdktf.ComplexObject
 	BoostSpecs() CesToolDataStoreToolBoostSpecsList
-	BoostSpecsInput() interface{}
+	BoostSpecsInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -40,7 +40,7 @@ type CesToolDataStoreToolOutputReference interface {
 	SetMaxResults(val *float64)
 	MaxResultsInput() *float64
 	ModalityConfigs() CesToolDataStoreToolModalityConfigsList
-	ModalityConfigsInput() interface{}
+	ModalityConfigsInput() any
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -55,7 +55,7 @@ type CesToolDataStoreToolOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -76,9 +76,9 @@ type CesToolDataStoreToolOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutBoostSpecs(value interface{})
+	PutBoostSpecs(value any)
 	PutEngineSource(value *CesToolDataStoreToolEngineSource)
-	PutModalityConfigs(value interface{})
+	PutModalityConfigs(value any)
 	ResetBoostSpecs()
 	ResetDescription()
 	ResetEngineSource()
@@ -86,7 +86,7 @@ type CesToolDataStoreToolOutputReference interface {
 	ResetModalityConfigs()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -109,8 +109,8 @@ func (j *jsiiProxy_CesToolDataStoreToolOutputReference) BoostSpecs() CesToolData
 	return returns
 }
 
-func (j *jsiiProxy_CesToolDataStoreToolOutputReference) BoostSpecsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CesToolDataStoreToolOutputReference) BoostSpecsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"boostSpecsInput",
@@ -119,8 +119,8 @@ func (j *jsiiProxy_CesToolDataStoreToolOutputReference) BoostSpecsInput() interf
 	return returns
 }
 
-func (j *jsiiProxy_CesToolDataStoreToolOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CesToolDataStoreToolOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -239,8 +239,8 @@ func (j *jsiiProxy_CesToolDataStoreToolOutputReference) ModalityConfigs() CesToo
 	return returns
 }
 
-func (j *jsiiProxy_CesToolDataStoreToolOutputReference) ModalityConfigsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CesToolDataStoreToolOutputReference) ModalityConfigsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"modalityConfigsInput",
@@ -289,7 +289,6 @@ func (j *jsiiProxy_CesToolDataStoreToolOutputReference) TerraformResource() cdkt
 	return returns
 }
 
-
 func NewCesToolDataStoreToolOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CesToolDataStoreToolOutputReference {
 	_init_.Initialize()
 
@@ -300,7 +299,7 @@ func NewCesToolDataStoreToolOutputReference(terraformResource cdktf.IInterpolati
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cesTool.CesToolDataStoreToolOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -312,12 +311,12 @@ func NewCesToolDataStoreToolOutputReference_Override(c CesToolDataStoreToolOutpu
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cesTool.CesToolDataStoreToolOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CesToolDataStoreToolOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CesToolDataStoreToolOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -328,7 +327,7 @@ func (j *jsiiProxy_CesToolDataStoreToolOutputReference)SetComplexObjectIndex(val
 	)
 }
 
-func (j *jsiiProxy_CesToolDataStoreToolOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CesToolDataStoreToolOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -339,7 +338,7 @@ func (j *jsiiProxy_CesToolDataStoreToolOutputReference)SetComplexObjectIsFromSet
 	)
 }
 
-func (j *jsiiProxy_CesToolDataStoreToolOutputReference)SetDescription(val *string) {
+func (j *jsiiProxy_CesToolDataStoreToolOutputReference) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -350,7 +349,7 @@ func (j *jsiiProxy_CesToolDataStoreToolOutputReference)SetDescription(val *strin
 	)
 }
 
-func (j *jsiiProxy_CesToolDataStoreToolOutputReference)SetInternalValue(val *CesToolDataStoreTool) {
+func (j *jsiiProxy_CesToolDataStoreToolOutputReference) SetInternalValue(val *CesToolDataStoreTool) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -361,7 +360,7 @@ func (j *jsiiProxy_CesToolDataStoreToolOutputReference)SetInternalValue(val *Ces
 	)
 }
 
-func (j *jsiiProxy_CesToolDataStoreToolOutputReference)SetMaxResults(val *float64) {
+func (j *jsiiProxy_CesToolDataStoreToolOutputReference) SetMaxResults(val *float64) {
 	if err := j.validateSetMaxResultsParameters(val); err != nil {
 		panic(err)
 	}
@@ -372,7 +371,7 @@ func (j *jsiiProxy_CesToolDataStoreToolOutputReference)SetMaxResults(val *float6
 	)
 }
 
-func (j *jsiiProxy_CesToolDataStoreToolOutputReference)SetName(val *string) {
+func (j *jsiiProxy_CesToolDataStoreToolOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -383,7 +382,7 @@ func (j *jsiiProxy_CesToolDataStoreToolOutputReference)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CesToolDataStoreToolOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CesToolDataStoreToolOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -394,7 +393,7 @@ func (j *jsiiProxy_CesToolDataStoreToolOutputReference)SetTerraformAttribute(val
 	)
 }
 
-func (j *jsiiProxy_CesToolDataStoreToolOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CesToolDataStoreToolOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -418,16 +417,16 @@ func (c *jsiiProxy_CesToolDataStoreToolOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (c *jsiiProxy_CesToolDataStoreToolOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CesToolDataStoreToolOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -443,7 +442,7 @@ func (c *jsiiProxy_CesToolDataStoreToolOutputReference) GetBooleanAttribute(terr
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -459,7 +458,7 @@ func (c *jsiiProxy_CesToolDataStoreToolOutputReference) GetBooleanMapAttribute(t
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -475,7 +474,7 @@ func (c *jsiiProxy_CesToolDataStoreToolOutputReference) GetListAttribute(terrafo
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -491,7 +490,7 @@ func (c *jsiiProxy_CesToolDataStoreToolOutputReference) GetNumberAttribute(terra
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -507,7 +506,7 @@ func (c *jsiiProxy_CesToolDataStoreToolOutputReference) GetNumberListAttribute(t
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -523,7 +522,7 @@ func (c *jsiiProxy_CesToolDataStoreToolOutputReference) GetNumberMapAttribute(te
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -539,7 +538,7 @@ func (c *jsiiProxy_CesToolDataStoreToolOutputReference) GetStringAttribute(terra
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -555,7 +554,7 @@ func (c *jsiiProxy_CesToolDataStoreToolOutputReference) GetStringMapAttribute(te
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -584,21 +583,21 @@ func (c *jsiiProxy_CesToolDataStoreToolOutputReference) InterpolationForAttribut
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_CesToolDataStoreToolOutputReference) PutBoostSpecs(value interface{}) {
+func (c *jsiiProxy_CesToolDataStoreToolOutputReference) PutBoostSpecs(value any) {
 	if err := c.validatePutBoostSpecsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putBoostSpecs",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -609,18 +608,18 @@ func (c *jsiiProxy_CesToolDataStoreToolOutputReference) PutEngineSource(value *C
 	_jsii_.InvokeVoid(
 		c,
 		"putEngineSource",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_CesToolDataStoreToolOutputReference) PutModalityConfigs(value interface{}) {
+func (c *jsiiProxy_CesToolDataStoreToolOutputReference) PutModalityConfigs(value any) {
 	if err := c.validatePutModalityConfigsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putModalityConfigs",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -664,16 +663,16 @@ func (c *jsiiProxy_CesToolDataStoreToolOutputReference) ResetModalityConfigs() {
 	)
 }
 
-func (c *jsiiProxy_CesToolDataStoreToolOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_CesToolDataStoreToolOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -692,4 +691,3 @@ func (c *jsiiProxy_CesToolDataStoreToolOutputReference) ToString() *string {
 
 	return returns
 }
-

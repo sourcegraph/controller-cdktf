@@ -106,7 +106,7 @@ func (j *jsiiProxy_BigqueryTableTableConstraintsPrimaryKeyOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryTableTableConstraintsPrimaryKeyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryTableTableConstraintsPrimaryKeyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewBigqueryTableTableConstraintsPrimaryKeyOutputReferenceParameters
 
 	return nil
 }
-

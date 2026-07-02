@@ -15,15 +15,15 @@ type FirestoreBackupSchedule interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DailyRecurrence() FirestoreBackupScheduleDailyRecurrenceOutputReference
 	DailyRecurrenceInput() *FirestoreBackupScheduleDailyRecurrence
 	Database() *string
@@ -59,31 +59,31 @@ type FirestoreBackupSchedule interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Retention() *string
 	SetRetention(val *string)
 	RetentionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() FirestoreBackupScheduleTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	WeeklyRecurrence() FirestoreBackupScheduleWeeklyRecurrenceOutputReference
 	WeeklyRecurrenceInput() *FirestoreBackupScheduleWeeklyRecurrence
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -101,7 +101,7 @@ type FirestoreBackupSchedule interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -113,7 +113,7 @@ type FirestoreBackupSchedule interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -132,17 +132,17 @@ type FirestoreBackupSchedule interface {
 	ResetProject()
 	ResetTimeouts()
 	ResetWeeklyRecurrence()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for FirestoreBackupSchedule
@@ -160,8 +160,8 @@ func (j *jsiiProxy_FirestoreBackupSchedule) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_FirestoreBackupSchedule) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FirestoreBackupSchedule) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -170,8 +170,8 @@ func (j *jsiiProxy_FirestoreBackupSchedule) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_FirestoreBackupSchedule) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_FirestoreBackupSchedule) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -180,8 +180,8 @@ func (j *jsiiProxy_FirestoreBackupSchedule) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_FirestoreBackupSchedule) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FirestoreBackupSchedule) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -350,8 +350,8 @@ func (j *jsiiProxy_FirestoreBackupSchedule) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_FirestoreBackupSchedule) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_FirestoreBackupSchedule) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -360,8 +360,8 @@ func (j *jsiiProxy_FirestoreBackupSchedule) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_FirestoreBackupSchedule) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FirestoreBackupSchedule) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -400,8 +400,8 @@ func (j *jsiiProxy_FirestoreBackupSchedule) TerraformGeneratorMetadata() *cdktf.
 	return returns
 }
 
-func (j *jsiiProxy_FirestoreBackupSchedule) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_FirestoreBackupSchedule) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -430,8 +430,8 @@ func (j *jsiiProxy_FirestoreBackupSchedule) Timeouts() FirestoreBackupScheduleTi
 	return returns
 }
 
-func (j *jsiiProxy_FirestoreBackupSchedule) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FirestoreBackupSchedule) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -460,7 +460,6 @@ func (j *jsiiProxy_FirestoreBackupSchedule) WeeklyRecurrenceInput() *FirestoreBa
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_backup_schedule google_firestore_backup_schedule} Resource.
 func NewFirestoreBackupSchedule(scope constructs.Construct, id *string, config *FirestoreBackupScheduleConfig) FirestoreBackupSchedule {
 	_init_.Initialize()
@@ -472,7 +471,7 @@ func NewFirestoreBackupSchedule(scope constructs.Construct, id *string, config *
 
 	_jsii_.Create(
 		"@cdktf/provider-google.firestoreBackupSchedule.FirestoreBackupSchedule",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -485,12 +484,12 @@ func NewFirestoreBackupSchedule_Override(f FirestoreBackupSchedule, scope constr
 
 	_jsii_.Create(
 		"@cdktf/provider-google.firestoreBackupSchedule.FirestoreBackupSchedule",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		f,
 	)
 }
 
-func (j *jsiiProxy_FirestoreBackupSchedule)SetConnection(val interface{}) {
+func (j *jsiiProxy_FirestoreBackupSchedule) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -501,7 +500,7 @@ func (j *jsiiProxy_FirestoreBackupSchedule)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_FirestoreBackupSchedule)SetCount(val interface{}) {
+func (j *jsiiProxy_FirestoreBackupSchedule) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -512,7 +511,7 @@ func (j *jsiiProxy_FirestoreBackupSchedule)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_FirestoreBackupSchedule)SetDatabase(val *string) {
+func (j *jsiiProxy_FirestoreBackupSchedule) SetDatabase(val *string) {
 	if err := j.validateSetDatabaseParameters(val); err != nil {
 		panic(err)
 	}
@@ -523,7 +522,7 @@ func (j *jsiiProxy_FirestoreBackupSchedule)SetDatabase(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FirestoreBackupSchedule)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_FirestoreBackupSchedule) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -531,7 +530,7 @@ func (j *jsiiProxy_FirestoreBackupSchedule)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_FirestoreBackupSchedule)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_FirestoreBackupSchedule) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -539,7 +538,7 @@ func (j *jsiiProxy_FirestoreBackupSchedule)SetForEach(val cdktf.ITerraformIterat
 	)
 }
 
-func (j *jsiiProxy_FirestoreBackupSchedule)SetId(val *string) {
+func (j *jsiiProxy_FirestoreBackupSchedule) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -550,7 +549,7 @@ func (j *jsiiProxy_FirestoreBackupSchedule)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FirestoreBackupSchedule)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_FirestoreBackupSchedule) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -561,7 +560,7 @@ func (j *jsiiProxy_FirestoreBackupSchedule)SetLifecycle(val *cdktf.TerraformReso
 	)
 }
 
-func (j *jsiiProxy_FirestoreBackupSchedule)SetProject(val *string) {
+func (j *jsiiProxy_FirestoreBackupSchedule) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -572,7 +571,7 @@ func (j *jsiiProxy_FirestoreBackupSchedule)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FirestoreBackupSchedule)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_FirestoreBackupSchedule) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -580,7 +579,7 @@ func (j *jsiiProxy_FirestoreBackupSchedule)SetProvider(val cdktf.TerraformProvid
 	)
 }
 
-func (j *jsiiProxy_FirestoreBackupSchedule)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_FirestoreBackupSchedule) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -591,7 +590,7 @@ func (j *jsiiProxy_FirestoreBackupSchedule)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_FirestoreBackupSchedule)SetRetention(val *string) {
+func (j *jsiiProxy_FirestoreBackupSchedule) SetRetention(val *string) {
 	if err := j.validateSetRetentionParameters(val); err != nil {
 		panic(err)
 	}
@@ -614,7 +613,7 @@ func FirestoreBackupSchedule_GenerateConfigForImport(scope constructs.Construct,
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.firestoreBackupSchedule.FirestoreBackupSchedule",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -638,7 +637,7 @@ func FirestoreBackupSchedule_GenerateConfigForImport(scope constructs.Construct,
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func FirestoreBackupSchedule_IsConstruct(x interface{}) *bool {
+func FirestoreBackupSchedule_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateFirestoreBackupSchedule_IsConstructParameters(x); err != nil {
@@ -649,7 +648,7 @@ func FirestoreBackupSchedule_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.firestoreBackupSchedule.FirestoreBackupSchedule",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -657,7 +656,7 @@ func FirestoreBackupSchedule_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func FirestoreBackupSchedule_IsTerraformElement(x interface{}) *bool {
+func FirestoreBackupSchedule_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateFirestoreBackupSchedule_IsTerraformElementParameters(x); err != nil {
@@ -668,7 +667,7 @@ func FirestoreBackupSchedule_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.firestoreBackupSchedule.FirestoreBackupSchedule",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -676,7 +675,7 @@ func FirestoreBackupSchedule_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func FirestoreBackupSchedule_IsTerraformResource(x interface{}) *bool {
+func FirestoreBackupSchedule_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateFirestoreBackupSchedule_IsTerraformResourceParameters(x); err != nil {
@@ -687,7 +686,7 @@ func FirestoreBackupSchedule_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.firestoreBackupSchedule.FirestoreBackupSchedule",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -712,31 +711,31 @@ func (f *jsiiProxy_FirestoreBackupSchedule) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		f,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (f *jsiiProxy_FirestoreBackupSchedule) AddOverride(path *string, value interface{}) {
+func (f *jsiiProxy_FirestoreBackupSchedule) AddOverride(path *string, value any) {
 	if err := f.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		f,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (f *jsiiProxy_FirestoreBackupSchedule) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (f *jsiiProxy_FirestoreBackupSchedule) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := f.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -752,7 +751,7 @@ func (f *jsiiProxy_FirestoreBackupSchedule) GetBooleanAttribute(terraformAttribu
 	_jsii_.Invoke(
 		f,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -768,7 +767,7 @@ func (f *jsiiProxy_FirestoreBackupSchedule) GetBooleanMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		f,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -784,7 +783,7 @@ func (f *jsiiProxy_FirestoreBackupSchedule) GetListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		f,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -800,7 +799,7 @@ func (f *jsiiProxy_FirestoreBackupSchedule) GetNumberAttribute(terraformAttribut
 	_jsii_.Invoke(
 		f,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -816,7 +815,7 @@ func (f *jsiiProxy_FirestoreBackupSchedule) GetNumberListAttribute(terraformAttr
 	_jsii_.Invoke(
 		f,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -832,7 +831,7 @@ func (f *jsiiProxy_FirestoreBackupSchedule) GetNumberMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		f,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -848,7 +847,7 @@ func (f *jsiiProxy_FirestoreBackupSchedule) GetStringAttribute(terraformAttribut
 	_jsii_.Invoke(
 		f,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -864,15 +863,15 @@ func (f *jsiiProxy_FirestoreBackupSchedule) GetStringMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		f,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (f *jsiiProxy_FirestoreBackupSchedule) HasResourceMove() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FirestoreBackupSchedule) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -891,7 +890,7 @@ func (f *jsiiProxy_FirestoreBackupSchedule) ImportFrom(id *string, provider cdkt
 	_jsii_.InvokeVoid(
 		f,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -904,7 +903,7 @@ func (f *jsiiProxy_FirestoreBackupSchedule) InterpolationForAttribute(terraformA
 	_jsii_.Invoke(
 		f,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -918,18 +917,18 @@ func (f *jsiiProxy_FirestoreBackupSchedule) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		f,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (f *jsiiProxy_FirestoreBackupSchedule) MoveTo(moveTarget *string, index interface{}) {
+func (f *jsiiProxy_FirestoreBackupSchedule) MoveTo(moveTarget *string, index any) {
 	if err := f.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		f,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -940,7 +939,7 @@ func (f *jsiiProxy_FirestoreBackupSchedule) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		f,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -951,7 +950,7 @@ func (f *jsiiProxy_FirestoreBackupSchedule) OverrideLogicalId(newLogicalId *stri
 	_jsii_.InvokeVoid(
 		f,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -962,7 +961,7 @@ func (f *jsiiProxy_FirestoreBackupSchedule) PutDailyRecurrence(value *FirestoreB
 	_jsii_.InvokeVoid(
 		f,
 		"putDailyRecurrence",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -973,7 +972,7 @@ func (f *jsiiProxy_FirestoreBackupSchedule) PutTimeouts(value *FirestoreBackupSc
 	_jsii_.InvokeVoid(
 		f,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -984,7 +983,7 @@ func (f *jsiiProxy_FirestoreBackupSchedule) PutWeeklyRecurrence(value *Firestore
 	_jsii_.InvokeVoid(
 		f,
 		"putWeeklyRecurrence",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1044,8 +1043,8 @@ func (f *jsiiProxy_FirestoreBackupSchedule) ResetWeeklyRecurrence() {
 	)
 }
 
-func (f *jsiiProxy_FirestoreBackupSchedule) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (f *jsiiProxy_FirestoreBackupSchedule) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
@@ -1057,8 +1056,8 @@ func (f *jsiiProxy_FirestoreBackupSchedule) SynthesizeAttributes() *map[string]i
 	return returns
 }
 
-func (f *jsiiProxy_FirestoreBackupSchedule) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (f *jsiiProxy_FirestoreBackupSchedule) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
@@ -1070,8 +1069,8 @@ func (f *jsiiProxy_FirestoreBackupSchedule) SynthesizeHclAttributes() *map[strin
 	return returns
 }
 
-func (f *jsiiProxy_FirestoreBackupSchedule) ToHclTerraform() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FirestoreBackupSchedule) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -1083,8 +1082,8 @@ func (f *jsiiProxy_FirestoreBackupSchedule) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (f *jsiiProxy_FirestoreBackupSchedule) ToMetadata() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FirestoreBackupSchedule) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -1109,8 +1108,8 @@ func (f *jsiiProxy_FirestoreBackupSchedule) ToString() *string {
 	return returns
 }
 
-func (f *jsiiProxy_FirestoreBackupSchedule) ToTerraform() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FirestoreBackupSchedule) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -1121,4 +1120,3 @@ func (f *jsiiProxy_FirestoreBackupSchedule) ToTerraform() interface{} {
 
 	return returns
 }
-

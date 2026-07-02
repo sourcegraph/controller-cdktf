@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.firebaserulesRelease.FirebaserulesRelease",
-		reflect.TypeOf((*FirebaserulesRelease)(nil)).Elem(),
+		reflect.TypeFor[FirebaserulesRelease](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,7 +70,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FirebaserulesRelease{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -78,15 +78,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.firebaserulesRelease.FirebaserulesReleaseConfig",
-		reflect.TypeOf((*FirebaserulesReleaseConfig)(nil)).Elem(),
+		reflect.TypeFor[FirebaserulesReleaseConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.firebaserulesRelease.FirebaserulesReleaseTimeouts",
-		reflect.TypeOf((*FirebaserulesReleaseTimeouts)(nil)).Elem(),
+		reflect.TypeFor[FirebaserulesReleaseTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.firebaserulesRelease.FirebaserulesReleaseTimeoutsOutputReference",
-		reflect.TypeOf((*FirebaserulesReleaseTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FirebaserulesReleaseTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -116,7 +116,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FirebaserulesReleaseTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

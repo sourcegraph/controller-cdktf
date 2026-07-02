@@ -34,7 +34,7 @@ func (c *jsiiProxy_ChronicleDataAccessScopeDeniedDataAccessLabelsList) validateR
 	return nil
 }
 
-func (j *jsiiProxy_ChronicleDataAccessScopeDeniedDataAccessLabelsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ChronicleDataAccessScopeDeniedDataAccessLabelsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewChronicleDataAccessScopeDeniedDataAccessLabelsListParameters(ter
 
 	return nil
 }
-

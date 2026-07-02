@@ -34,7 +34,7 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigContainerdConfigPrivateRegistryAcc
 	return nil
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewContainerNodePoolNodeConfigContainerdConfigPrivateRegistryAccess
 
 	return nil
 }
-

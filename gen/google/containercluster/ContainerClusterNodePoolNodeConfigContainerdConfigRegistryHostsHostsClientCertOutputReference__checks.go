@@ -98,7 +98,7 @@ func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigContainerdConfigRegistryHos
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigContainerdConfigRegistryHostsHostsClientCertOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigContainerdConfigRegistryHostsHostsClientCertOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewContainerClusterNodePoolNodeConfigContainerdConfigRegistryHostsH
 
 	return nil
 }
-

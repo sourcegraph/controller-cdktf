@@ -98,7 +98,7 @@ func (e *jsiiProxy_EventarcPipelineRetryPolicyOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_EventarcPipelineRetryPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EventarcPipelineRetryPolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewEventarcPipelineRetryPolicyOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

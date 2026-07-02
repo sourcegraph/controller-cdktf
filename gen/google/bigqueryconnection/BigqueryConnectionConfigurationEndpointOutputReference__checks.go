@@ -98,7 +98,7 @@ func (b *jsiiProxy_BigqueryConnectionConfigurationEndpointOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryConnectionConfigurationEndpointOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryConnectionConfigurationEndpointOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewBigqueryConnectionConfigurationEndpointOutputReferenceParameters
 
 	return nil
 }
-

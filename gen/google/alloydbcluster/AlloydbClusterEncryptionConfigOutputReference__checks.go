@@ -98,7 +98,7 @@ func (a *jsiiProxy_AlloydbClusterEncryptionConfigOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_AlloydbClusterEncryptionConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AlloydbClusterEncryptionConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewAlloydbClusterEncryptionConfigOutputReferenceParameters(terrafor
 
 	return nil
 }
-

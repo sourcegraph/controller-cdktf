@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataGoogleComputeInstanceGuestAttributes) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataGoogleComputeInstanceGuestAttributes) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataGoogleComputeInstanceGuestAttributes_GenerateConfigForImportPar
 	return nil
 }
 
-func validateDataGoogleComputeInstanceGuestAttributes_IsConstructParameters(x interface{}) error {
+func validateDataGoogleComputeInstanceGuestAttributes_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataGoogleComputeInstanceGuestAttributes_IsConstructParameters(x in
 	return nil
 }
 
-func validateDataGoogleComputeInstanceGuestAttributes_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataGoogleComputeInstanceGuestAttributes_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataGoogleComputeInstanceGuestAttributes_IsTerraformDataSourceParam
 	return nil
 }
 
-func validateDataGoogleComputeInstanceGuestAttributes_IsTerraformElementParameters(x interface{}) error {
+func validateDataGoogleComputeInstanceGuestAttributes_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func validateDataGoogleComputeInstanceGuestAttributes_IsTerraformElementParamete
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeInstanceGuestAttributes) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleComputeInstanceGuestAttributes) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -290,4 +290,3 @@ func validateNewDataGoogleComputeInstanceGuestAttributesParameters(scope constru
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (c *jsiiProxy_ContainerClusterNodeConfigContainerdConfigRegistryHostsHostsH
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterNodeConfigContainerdConfigRegistryHostsHostsHeaderOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterNodeConfigContainerdConfigRegistryHostsHostsHeaderOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ContainerClusterNodeConfigContainerdConfigRegistryHostsHostsH
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterNodeConfigContainerdConfigRegistryHostsHostsHeaderOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterNodeConfigContainerdConfigRegistryHostsHostsHeaderOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewContainerClusterNodeConfigContainerdConfigRegistryHostsHostsHead
 
 	return nil
 }
-

@@ -12,9 +12,9 @@ type CloudRunServiceTemplateSpecOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -24,7 +24,7 @@ type CloudRunServiceTemplateSpecOutputReference interface {
 	SetContainerConcurrency(val *float64)
 	ContainerConcurrencyInput() *float64
 	Containers() CloudRunServiceTemplateSpecContainersList
-	ContainersInput() interface{}
+	ContainersInput() any
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -53,11 +53,11 @@ type CloudRunServiceTemplateSpecOutputReference interface {
 	SetTimeoutSeconds(val *float64)
 	TimeoutSecondsInput() *float64
 	Volumes() CloudRunServiceTemplateSpecVolumesList
-	VolumesInput() interface{}
+	VolumesInput() any
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -78,8 +78,8 @@ type CloudRunServiceTemplateSpecOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutContainers(value interface{})
-	PutVolumes(value interface{})
+	PutContainers(value any)
+	PutVolumes(value any)
 	ResetContainerConcurrency()
 	ResetContainers()
 	ResetNodeSelector()
@@ -88,7 +88,7 @@ type CloudRunServiceTemplateSpecOutputReference interface {
 	ResetVolumes()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -101,8 +101,8 @@ type jsiiProxy_CloudRunServiceTemplateSpecOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_CloudRunServiceTemplateSpecOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudRunServiceTemplateSpecOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -151,8 +151,8 @@ func (j *jsiiProxy_CloudRunServiceTemplateSpecOutputReference) Containers() Clou
 	return returns
 }
 
-func (j *jsiiProxy_CloudRunServiceTemplateSpecOutputReference) ContainersInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudRunServiceTemplateSpecOutputReference) ContainersInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"containersInput",
@@ -291,8 +291,8 @@ func (j *jsiiProxy_CloudRunServiceTemplateSpecOutputReference) Volumes() CloudRu
 	return returns
 }
 
-func (j *jsiiProxy_CloudRunServiceTemplateSpecOutputReference) VolumesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudRunServiceTemplateSpecOutputReference) VolumesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"volumesInput",
@@ -300,7 +300,6 @@ func (j *jsiiProxy_CloudRunServiceTemplateSpecOutputReference) VolumesInput() in
 	)
 	return returns
 }
-
 
 func NewCloudRunServiceTemplateSpecOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CloudRunServiceTemplateSpecOutputReference {
 	_init_.Initialize()
@@ -312,7 +311,7 @@ func NewCloudRunServiceTemplateSpecOutputReference(terraformResource cdktf.IInte
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cloudRunService.CloudRunServiceTemplateSpecOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -324,12 +323,12 @@ func NewCloudRunServiceTemplateSpecOutputReference_Override(c CloudRunServiceTem
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cloudRunService.CloudRunServiceTemplateSpecOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CloudRunServiceTemplateSpecOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CloudRunServiceTemplateSpecOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -340,7 +339,7 @@ func (j *jsiiProxy_CloudRunServiceTemplateSpecOutputReference)SetComplexObjectIn
 	)
 }
 
-func (j *jsiiProxy_CloudRunServiceTemplateSpecOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CloudRunServiceTemplateSpecOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -351,7 +350,7 @@ func (j *jsiiProxy_CloudRunServiceTemplateSpecOutputReference)SetComplexObjectIs
 	)
 }
 
-func (j *jsiiProxy_CloudRunServiceTemplateSpecOutputReference)SetContainerConcurrency(val *float64) {
+func (j *jsiiProxy_CloudRunServiceTemplateSpecOutputReference) SetContainerConcurrency(val *float64) {
 	if err := j.validateSetContainerConcurrencyParameters(val); err != nil {
 		panic(err)
 	}
@@ -362,7 +361,7 @@ func (j *jsiiProxy_CloudRunServiceTemplateSpecOutputReference)SetContainerConcur
 	)
 }
 
-func (j *jsiiProxy_CloudRunServiceTemplateSpecOutputReference)SetInternalValue(val *CloudRunServiceTemplateSpec) {
+func (j *jsiiProxy_CloudRunServiceTemplateSpecOutputReference) SetInternalValue(val *CloudRunServiceTemplateSpec) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -373,7 +372,7 @@ func (j *jsiiProxy_CloudRunServiceTemplateSpecOutputReference)SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_CloudRunServiceTemplateSpecOutputReference)SetNodeSelector(val *map[string]*string) {
+func (j *jsiiProxy_CloudRunServiceTemplateSpecOutputReference) SetNodeSelector(val *map[string]*string) {
 	if err := j.validateSetNodeSelectorParameters(val); err != nil {
 		panic(err)
 	}
@@ -384,7 +383,7 @@ func (j *jsiiProxy_CloudRunServiceTemplateSpecOutputReference)SetNodeSelector(va
 	)
 }
 
-func (j *jsiiProxy_CloudRunServiceTemplateSpecOutputReference)SetServiceAccountName(val *string) {
+func (j *jsiiProxy_CloudRunServiceTemplateSpecOutputReference) SetServiceAccountName(val *string) {
 	if err := j.validateSetServiceAccountNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -395,7 +394,7 @@ func (j *jsiiProxy_CloudRunServiceTemplateSpecOutputReference)SetServiceAccountN
 	)
 }
 
-func (j *jsiiProxy_CloudRunServiceTemplateSpecOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CloudRunServiceTemplateSpecOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -406,7 +405,7 @@ func (j *jsiiProxy_CloudRunServiceTemplateSpecOutputReference)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_CloudRunServiceTemplateSpecOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CloudRunServiceTemplateSpecOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,7 +416,7 @@ func (j *jsiiProxy_CloudRunServiceTemplateSpecOutputReference)SetTerraformResour
 	)
 }
 
-func (j *jsiiProxy_CloudRunServiceTemplateSpecOutputReference)SetTimeoutSeconds(val *float64) {
+func (j *jsiiProxy_CloudRunServiceTemplateSpecOutputReference) SetTimeoutSeconds(val *float64) {
 	if err := j.validateSetTimeoutSecondsParameters(val); err != nil {
 		panic(err)
 	}
@@ -441,16 +440,16 @@ func (c *jsiiProxy_CloudRunServiceTemplateSpecOutputReference) ComputeFqn() *str
 	return returns
 }
 
-func (c *jsiiProxy_CloudRunServiceTemplateSpecOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CloudRunServiceTemplateSpecOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -466,7 +465,7 @@ func (c *jsiiProxy_CloudRunServiceTemplateSpecOutputReference) GetBooleanAttribu
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -482,7 +481,7 @@ func (c *jsiiProxy_CloudRunServiceTemplateSpecOutputReference) GetBooleanMapAttr
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -498,7 +497,7 @@ func (c *jsiiProxy_CloudRunServiceTemplateSpecOutputReference) GetListAttribute(
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -514,7 +513,7 @@ func (c *jsiiProxy_CloudRunServiceTemplateSpecOutputReference) GetNumberAttribut
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -530,7 +529,7 @@ func (c *jsiiProxy_CloudRunServiceTemplateSpecOutputReference) GetNumberListAttr
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -546,7 +545,7 @@ func (c *jsiiProxy_CloudRunServiceTemplateSpecOutputReference) GetNumberMapAttri
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -562,7 +561,7 @@ func (c *jsiiProxy_CloudRunServiceTemplateSpecOutputReference) GetStringAttribut
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -578,7 +577,7 @@ func (c *jsiiProxy_CloudRunServiceTemplateSpecOutputReference) GetStringMapAttri
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -607,32 +606,32 @@ func (c *jsiiProxy_CloudRunServiceTemplateSpecOutputReference) InterpolationForA
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_CloudRunServiceTemplateSpecOutputReference) PutContainers(value interface{}) {
+func (c *jsiiProxy_CloudRunServiceTemplateSpecOutputReference) PutContainers(value any) {
 	if err := c.validatePutContainersParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putContainers",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_CloudRunServiceTemplateSpecOutputReference) PutVolumes(value interface{}) {
+func (c *jsiiProxy_CloudRunServiceTemplateSpecOutputReference) PutVolumes(value any) {
 	if err := c.validatePutVolumesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putVolumes",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -684,16 +683,16 @@ func (c *jsiiProxy_CloudRunServiceTemplateSpecOutputReference) ResetVolumes() {
 	)
 }
 
-func (c *jsiiProxy_CloudRunServiceTemplateSpecOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_CloudRunServiceTemplateSpecOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -712,4 +711,3 @@ func (c *jsiiProxy_CloudRunServiceTemplateSpecOutputReference) ToString() *strin
 
 	return returns
 }
-

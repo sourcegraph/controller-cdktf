@@ -98,7 +98,7 @@ func (f *jsiiProxy_FirestoreDocumentTimeoutsOutputReference) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_FirestoreDocumentTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_FirestoreDocumentTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_FirestoreDocumentTimeoutsOutputReference) validateSetDeletePa
 	return nil
 }
 
-func (j *jsiiProxy_FirestoreDocumentTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_FirestoreDocumentTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewFirestoreDocumentTimeoutsOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

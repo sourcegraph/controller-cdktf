@@ -6,9 +6,9 @@ import (
 
 type GeminiDataSharingWithGoogleSettingConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GeminiDataSharingWithGoogleSettingConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Id of the Data Sharing With Google Setting.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gemini_data_sharing_with_google_setting#data_sharing_with_google_setting_id GeminiDataSharingWithGoogleSetting#data_sharing_with_google_setting_id}
@@ -26,11 +26,11 @@ type GeminiDataSharingWithGoogleSettingConfig struct {
 	// Whether data sharing should be enabled in GA products.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gemini_data_sharing_with_google_setting#enable_data_sharing GeminiDataSharingWithGoogleSetting#enable_data_sharing}
-	EnableDataSharing interface{} `field:"optional" json:"enableDataSharing" yaml:"enableDataSharing"`
+	EnableDataSharing any `field:"optional" json:"enableDataSharing" yaml:"enableDataSharing"`
 	// Whether data sharing should be enabled in Preview products.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gemini_data_sharing_with_google_setting#enable_preview_data_sharing GeminiDataSharingWithGoogleSetting#enable_preview_data_sharing}
-	EnablePreviewDataSharing interface{} `field:"optional" json:"enablePreviewDataSharing" yaml:"enablePreviewDataSharing"`
+	EnablePreviewDataSharing any `field:"optional" json:"enablePreviewDataSharing" yaml:"enablePreviewDataSharing"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gemini_data_sharing_with_google_setting#id GeminiDataSharingWithGoogleSetting#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -54,4 +54,3 @@ type GeminiDataSharingWithGoogleSettingConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gemini_data_sharing_with_google_setting#timeouts GeminiDataSharingWithGoogleSetting#timeouts}
 	Timeouts *GeminiDataSharingWithGoogleSettingTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

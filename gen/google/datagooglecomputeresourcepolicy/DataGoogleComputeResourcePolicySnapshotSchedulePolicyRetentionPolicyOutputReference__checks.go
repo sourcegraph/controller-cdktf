@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleComputeResourcePolicySnapshotSchedulePolicyRetentio
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeResourcePolicySnapshotSchedulePolicyRetentionPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleComputeResourcePolicySnapshotSchedulePolicyRetentionPolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleComputeResourcePolicySnapshotSchedulePolicyRetentionPo
 
 	return nil
 }
-

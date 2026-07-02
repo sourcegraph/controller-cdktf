@@ -98,7 +98,7 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionDestinationConfigDestinationOu
 	return nil
 }
 
-func (j *jsiiProxy_IntegrationConnectorsConnectionDestinationConfigDestinationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IntegrationConnectorsConnectionDestinationConfigDestinationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_IntegrationConnectorsConnectionDestinationConfigDestinationOu
 	return nil
 }
 
-func (j *jsiiProxy_IntegrationConnectorsConnectionDestinationConfigDestinationOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_IntegrationConnectorsConnectionDestinationConfigDestinationOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewIntegrationConnectorsConnectionDestinationConfigDestinationOutpu
 
 	return nil
 }
-

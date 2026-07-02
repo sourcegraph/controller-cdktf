@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataprocClusterClusterConfigSoftwareConfigOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_DataprocClusterClusterConfigSoftwareConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocClusterClusterConfigSoftwareConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewDataprocClusterClusterConfigSoftwareConfigOutputReferenceParamet
 
 	return nil
 }
-

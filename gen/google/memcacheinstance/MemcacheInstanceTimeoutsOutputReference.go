@@ -12,9 +12,9 @@ type MemcacheInstanceTimeoutsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,8 +33,8 @@ type MemcacheInstanceTimeoutsOutputReference interface {
 	DeleteInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -49,7 +49,7 @@ type MemcacheInstanceTimeoutsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type MemcacheInstanceTimeoutsOutputReference interface {
 	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_MemcacheInstanceTimeoutsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_MemcacheInstanceTimeoutsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MemcacheInstanceTimeoutsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_MemcacheInstanceTimeoutsOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_MemcacheInstanceTimeoutsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MemcacheInstanceTimeoutsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_MemcacheInstanceTimeoutsOutputReference) UpdateInput() *strin
 	return returns
 }
 
-
 func NewMemcacheInstanceTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MemcacheInstanceTimeoutsOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewMemcacheInstanceTimeoutsOutputReference(terraformResource cdktf.IInterpo
 
 	_jsii_.Create(
 		"@cdktf/provider-google.memcacheInstance.MemcacheInstanceTimeoutsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewMemcacheInstanceTimeoutsOutputReference_Override(m MemcacheInstanceTimeo
 
 	_jsii_.Create(
 		"@cdktf/provider-google.memcacheInstance.MemcacheInstanceTimeoutsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		m,
 	)
 }
 
-func (j *jsiiProxy_MemcacheInstanceTimeoutsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_MemcacheInstanceTimeoutsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_MemcacheInstanceTimeoutsOutputReference)SetComplexObjectIndex
 	)
 }
 
-func (j *jsiiProxy_MemcacheInstanceTimeoutsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_MemcacheInstanceTimeoutsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_MemcacheInstanceTimeoutsOutputReference)SetComplexObjectIsFro
 	)
 }
 
-func (j *jsiiProxy_MemcacheInstanceTimeoutsOutputReference)SetCreate(val *string) {
+func (j *jsiiProxy_MemcacheInstanceTimeoutsOutputReference) SetCreate(val *string) {
 	if err := j.validateSetCreateParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_MemcacheInstanceTimeoutsOutputReference)SetCreate(val *string
 	)
 }
 
-func (j *jsiiProxy_MemcacheInstanceTimeoutsOutputReference)SetDelete(val *string) {
+func (j *jsiiProxy_MemcacheInstanceTimeoutsOutputReference) SetDelete(val *string) {
 	if err := j.validateSetDeleteParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_MemcacheInstanceTimeoutsOutputReference)SetDelete(val *string
 	)
 }
 
-func (j *jsiiProxy_MemcacheInstanceTimeoutsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_MemcacheInstanceTimeoutsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_MemcacheInstanceTimeoutsOutputReference)SetInternalValue(val 
 	)
 }
 
-func (j *jsiiProxy_MemcacheInstanceTimeoutsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MemcacheInstanceTimeoutsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_MemcacheInstanceTimeoutsOutputReference)SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_MemcacheInstanceTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MemcacheInstanceTimeoutsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_MemcacheInstanceTimeoutsOutputReference)SetTerraformResource(
 	)
 }
 
-func (j *jsiiProxy_MemcacheInstanceTimeoutsOutputReference)SetUpdate(val *string) {
+func (j *jsiiProxy_MemcacheInstanceTimeoutsOutputReference) SetUpdate(val *string) {
 	if err := j.validateSetUpdateParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (m *jsiiProxy_MemcacheInstanceTimeoutsOutputReference) ComputeFqn() *string
 	return returns
 }
 
-func (m *jsiiProxy_MemcacheInstanceTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (m *jsiiProxy_MemcacheInstanceTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (m *jsiiProxy_MemcacheInstanceTimeoutsOutputReference) GetBooleanAttribute(
 	_jsii_.Invoke(
 		m,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (m *jsiiProxy_MemcacheInstanceTimeoutsOutputReference) GetBooleanMapAttribu
 	_jsii_.Invoke(
 		m,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (m *jsiiProxy_MemcacheInstanceTimeoutsOutputReference) GetListAttribute(ter
 	_jsii_.Invoke(
 		m,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (m *jsiiProxy_MemcacheInstanceTimeoutsOutputReference) GetNumberAttribute(t
 	_jsii_.Invoke(
 		m,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (m *jsiiProxy_MemcacheInstanceTimeoutsOutputReference) GetNumberListAttribu
 	_jsii_.Invoke(
 		m,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (m *jsiiProxy_MemcacheInstanceTimeoutsOutputReference) GetNumberMapAttribut
 	_jsii_.Invoke(
 		m,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (m *jsiiProxy_MemcacheInstanceTimeoutsOutputReference) GetStringAttribute(t
 	_jsii_.Invoke(
 		m,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (m *jsiiProxy_MemcacheInstanceTimeoutsOutputReference) GetStringMapAttribut
 	_jsii_.Invoke(
 		m,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (m *jsiiProxy_MemcacheInstanceTimeoutsOutputReference) InterpolationForAttr
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (m *jsiiProxy_MemcacheInstanceTimeoutsOutputReference) ResetUpdate() {
 	)
 }
 
-func (m *jsiiProxy_MemcacheInstanceTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_MemcacheInstanceTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := m.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (m *jsiiProxy_MemcacheInstanceTimeoutsOutputReference) ToString() *string {
 
 	return returns
 }
-

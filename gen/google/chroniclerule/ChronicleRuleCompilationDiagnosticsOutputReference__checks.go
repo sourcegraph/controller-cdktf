@@ -98,7 +98,7 @@ func (c *jsiiProxy_ChronicleRuleCompilationDiagnosticsOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_ChronicleRuleCompilationDiagnosticsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ChronicleRuleCompilationDiagnosticsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewChronicleRuleCompilationDiagnosticsOutputReferenceParameters(ter
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (c *jsiiProxy_ContainerAttachedClusterOidcConfigOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_ContainerAttachedClusterOidcConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerAttachedClusterOidcConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewContainerAttachedClusterOidcConfigOutputReferenceParameters(terr
 
 	return nil
 }
-

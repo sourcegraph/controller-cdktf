@@ -98,7 +98,7 @@ func (w *jsiiProxy_WorkbenchInstanceHealthInfoOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_WorkbenchInstanceHealthInfoOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_WorkbenchInstanceHealthInfoOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewWorkbenchInstanceHealthInfoOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

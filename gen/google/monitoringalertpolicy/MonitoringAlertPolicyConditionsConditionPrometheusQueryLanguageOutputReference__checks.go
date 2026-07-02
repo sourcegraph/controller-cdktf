@@ -106,7 +106,7 @@ func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLangua
 	return nil
 }
 
-func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLangua
 	return nil
 }
 
-func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference) validateSetDisableMetricValidationParameters(val interface{}) error {
+func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference) validateSetDisableMetricValidationParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -266,4 +266,3 @@ func validateNewMonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageO
 
 	return nil
 }
-

@@ -106,7 +106,7 @@ func (j *jsiiProxy_PrivatecaCaPoolEncryptionSpecOutputReference) validateSetClou
 	return nil
 }
 
-func (j *jsiiProxy_PrivatecaCaPoolEncryptionSpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PrivatecaCaPoolEncryptionSpecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewPrivatecaCaPoolEncryptionSpecOutputReferenceParameters(terraform
 
 	return nil
 }
-

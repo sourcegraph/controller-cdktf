@@ -90,7 +90,7 @@ func (s *jsiiProxy_SpannerInstanceAutoscalingConfigOutputReference) validateInte
 	return nil
 }
 
-func (s *jsiiProxy_SpannerInstanceAutoscalingConfigOutputReference) validatePutAsymmetricAutoscalingOptionsParameters(value interface{}) error {
+func (s *jsiiProxy_SpannerInstanceAutoscalingConfigOutputReference) validatePutAsymmetricAutoscalingOptionsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func (s *jsiiProxy_SpannerInstanceAutoscalingConfigOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_SpannerInstanceAutoscalingConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SpannerInstanceAutoscalingConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -251,4 +251,3 @@ func validateNewSpannerInstanceAutoscalingConfigOutputReferenceParameters(terraf
 
 	return nil
 }
-

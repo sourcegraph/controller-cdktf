@@ -106,7 +106,7 @@ func (j *jsiiProxy_DataprocWorkflowTemplatePlacementClusterSelectorOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_DataprocWorkflowTemplatePlacementClusterSelectorOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocWorkflowTemplatePlacementClusterSelectorOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewDataprocWorkflowTemplatePlacementClusterSelectorOutputReferenceP
 
 	return nil
 }
-

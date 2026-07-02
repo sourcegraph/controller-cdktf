@@ -98,7 +98,7 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheServiceLogConfigOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesEdgeCacheServiceLogConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkServicesEdgeCacheServiceLogConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheServiceLogConfigOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesEdgeCacheServiceLogConfigOutputReference) validateSetEnableParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkServicesEdgeCacheServiceLogConfigOutputReference) validateSetEnableParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -226,4 +226,3 @@ func validateNewNetworkServicesEdgeCacheServiceLogConfigOutputReferenceParameter
 
 	return nil
 }
-

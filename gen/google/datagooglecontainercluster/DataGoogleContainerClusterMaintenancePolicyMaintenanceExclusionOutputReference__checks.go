@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleContainerClusterMaintenancePolicyMaintenanceExclusi
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleContainerClusterMaintenancePolicyMaintenanceExclusionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleContainerClusterMaintenancePolicyMaintenanceExclusionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleContainerClusterMaintenancePolicyMaintenanceExclusionO
 
 	return nil
 }
-

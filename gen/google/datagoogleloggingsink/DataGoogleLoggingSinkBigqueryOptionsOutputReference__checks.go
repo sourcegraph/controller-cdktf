@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleLoggingSinkBigqueryOptionsOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleLoggingSinkBigqueryOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleLoggingSinkBigqueryOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleLoggingSinkBigqueryOptionsOutputReferenceParameters(te
 
 	return nil
 }
-

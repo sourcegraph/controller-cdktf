@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataprocSessionTemplateRuntimeConfigOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_DataprocSessionTemplateRuntimeConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocSessionTemplateRuntimeConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewDataprocSessionTemplateRuntimeConfigOutputReferenceParameters(te
 
 	return nil
 }
-

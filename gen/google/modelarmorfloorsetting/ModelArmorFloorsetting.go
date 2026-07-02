@@ -17,23 +17,23 @@ type ModelArmorFloorsetting interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	EnableFloorSettingEnforcement() interface{}
-	SetEnableFloorSettingEnforcement(val interface{})
-	EnableFloorSettingEnforcementInput() interface{}
+	EnableFloorSettingEnforcement() any
+	SetEnableFloorSettingEnforcement(val any)
+	EnableFloorSettingEnforcementInput() any
 	FilterConfig() ModelArmorFloorsettingFilterConfigOutputReference
 	FilterConfigInput() *ModelArmorFloorsettingFilterConfig
 	FloorSettingMetadata() ModelArmorFloorsettingFloorSettingMetadataOutputReference
@@ -72,27 +72,27 @@ type ModelArmorFloorsetting interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() ModelArmorFloorsettingTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -110,7 +110,7 @@ type ModelArmorFloorsetting interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -122,7 +122,7 @@ type ModelArmorFloorsetting interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -144,17 +144,17 @@ type ModelArmorFloorsetting interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ModelArmorFloorsetting
@@ -192,8 +192,8 @@ func (j *jsiiProxy_ModelArmorFloorsetting) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_ModelArmorFloorsetting) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ModelArmorFloorsetting) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -202,8 +202,8 @@ func (j *jsiiProxy_ModelArmorFloorsetting) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ModelArmorFloorsetting) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ModelArmorFloorsetting) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -212,8 +212,8 @@ func (j *jsiiProxy_ModelArmorFloorsetting) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_ModelArmorFloorsetting) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ModelArmorFloorsetting) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -242,8 +242,8 @@ func (j *jsiiProxy_ModelArmorFloorsetting) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_ModelArmorFloorsetting) EnableFloorSettingEnforcement() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ModelArmorFloorsetting) EnableFloorSettingEnforcement() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableFloorSettingEnforcement",
@@ -252,8 +252,8 @@ func (j *jsiiProxy_ModelArmorFloorsetting) EnableFloorSettingEnforcement() inter
 	return returns
 }
 
-func (j *jsiiProxy_ModelArmorFloorsetting) EnableFloorSettingEnforcementInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ModelArmorFloorsetting) EnableFloorSettingEnforcementInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableFloorSettingEnforcementInput",
@@ -472,8 +472,8 @@ func (j *jsiiProxy_ModelArmorFloorsetting) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_ModelArmorFloorsetting) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ModelArmorFloorsetting) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -482,8 +482,8 @@ func (j *jsiiProxy_ModelArmorFloorsetting) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ModelArmorFloorsetting) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ModelArmorFloorsetting) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -502,8 +502,8 @@ func (j *jsiiProxy_ModelArmorFloorsetting) TerraformGeneratorMetadata() *cdktf.T
 	return returns
 }
 
-func (j *jsiiProxy_ModelArmorFloorsetting) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ModelArmorFloorsetting) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -532,8 +532,8 @@ func (j *jsiiProxy_ModelArmorFloorsetting) Timeouts() ModelArmorFloorsettingTime
 	return returns
 }
 
-func (j *jsiiProxy_ModelArmorFloorsetting) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ModelArmorFloorsetting) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -552,7 +552,6 @@ func (j *jsiiProxy_ModelArmorFloorsetting) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/model_armor_floorsetting google_model_armor_floorsetting} Resource.
 func NewModelArmorFloorsetting(scope constructs.Construct, id *string, config *ModelArmorFloorsettingConfig) ModelArmorFloorsetting {
 	_init_.Initialize()
@@ -564,7 +563,7 @@ func NewModelArmorFloorsetting(scope constructs.Construct, id *string, config *M
 
 	_jsii_.Create(
 		"@cdktf/provider-google.modelArmorFloorsetting.ModelArmorFloorsetting",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -577,12 +576,12 @@ func NewModelArmorFloorsetting_Override(m ModelArmorFloorsetting, scope construc
 
 	_jsii_.Create(
 		"@cdktf/provider-google.modelArmorFloorsetting.ModelArmorFloorsetting",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		m,
 	)
 }
 
-func (j *jsiiProxy_ModelArmorFloorsetting)SetConnection(val interface{}) {
+func (j *jsiiProxy_ModelArmorFloorsetting) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -593,7 +592,7 @@ func (j *jsiiProxy_ModelArmorFloorsetting)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ModelArmorFloorsetting)SetCount(val interface{}) {
+func (j *jsiiProxy_ModelArmorFloorsetting) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -604,7 +603,7 @@ func (j *jsiiProxy_ModelArmorFloorsetting)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ModelArmorFloorsetting)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ModelArmorFloorsetting) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -612,7 +611,7 @@ func (j *jsiiProxy_ModelArmorFloorsetting)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ModelArmorFloorsetting)SetEnableFloorSettingEnforcement(val interface{}) {
+func (j *jsiiProxy_ModelArmorFloorsetting) SetEnableFloorSettingEnforcement(val any) {
 	if err := j.validateSetEnableFloorSettingEnforcementParameters(val); err != nil {
 		panic(err)
 	}
@@ -623,7 +622,7 @@ func (j *jsiiProxy_ModelArmorFloorsetting)SetEnableFloorSettingEnforcement(val i
 	)
 }
 
-func (j *jsiiProxy_ModelArmorFloorsetting)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ModelArmorFloorsetting) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -631,7 +630,7 @@ func (j *jsiiProxy_ModelArmorFloorsetting)SetForEach(val cdktf.ITerraformIterato
 	)
 }
 
-func (j *jsiiProxy_ModelArmorFloorsetting)SetId(val *string) {
+func (j *jsiiProxy_ModelArmorFloorsetting) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -642,7 +641,7 @@ func (j *jsiiProxy_ModelArmorFloorsetting)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ModelArmorFloorsetting)SetIntegratedServices(val *[]*string) {
+func (j *jsiiProxy_ModelArmorFloorsetting) SetIntegratedServices(val *[]*string) {
 	if err := j.validateSetIntegratedServicesParameters(val); err != nil {
 		panic(err)
 	}
@@ -653,7 +652,7 @@ func (j *jsiiProxy_ModelArmorFloorsetting)SetIntegratedServices(val *[]*string) 
 	)
 }
 
-func (j *jsiiProxy_ModelArmorFloorsetting)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ModelArmorFloorsetting) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -664,7 +663,7 @@ func (j *jsiiProxy_ModelArmorFloorsetting)SetLifecycle(val *cdktf.TerraformResou
 	)
 }
 
-func (j *jsiiProxy_ModelArmorFloorsetting)SetLocation(val *string) {
+func (j *jsiiProxy_ModelArmorFloorsetting) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -675,7 +674,7 @@ func (j *jsiiProxy_ModelArmorFloorsetting)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ModelArmorFloorsetting)SetParent(val *string) {
+func (j *jsiiProxy_ModelArmorFloorsetting) SetParent(val *string) {
 	if err := j.validateSetParentParameters(val); err != nil {
 		panic(err)
 	}
@@ -686,7 +685,7 @@ func (j *jsiiProxy_ModelArmorFloorsetting)SetParent(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ModelArmorFloorsetting)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ModelArmorFloorsetting) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -694,7 +693,7 @@ func (j *jsiiProxy_ModelArmorFloorsetting)SetProvider(val cdktf.TerraformProvide
 	)
 }
 
-func (j *jsiiProxy_ModelArmorFloorsetting)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ModelArmorFloorsetting) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -717,7 +716,7 @@ func ModelArmorFloorsetting_GenerateConfigForImport(scope constructs.Construct, 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.modelArmorFloorsetting.ModelArmorFloorsetting",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -741,7 +740,7 @@ func ModelArmorFloorsetting_GenerateConfigForImport(scope constructs.Construct, 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ModelArmorFloorsetting_IsConstruct(x interface{}) *bool {
+func ModelArmorFloorsetting_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateModelArmorFloorsetting_IsConstructParameters(x); err != nil {
@@ -752,7 +751,7 @@ func ModelArmorFloorsetting_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.modelArmorFloorsetting.ModelArmorFloorsetting",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -760,7 +759,7 @@ func ModelArmorFloorsetting_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ModelArmorFloorsetting_IsTerraformElement(x interface{}) *bool {
+func ModelArmorFloorsetting_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateModelArmorFloorsetting_IsTerraformElementParameters(x); err != nil {
@@ -771,7 +770,7 @@ func ModelArmorFloorsetting_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.modelArmorFloorsetting.ModelArmorFloorsetting",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -779,7 +778,7 @@ func ModelArmorFloorsetting_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ModelArmorFloorsetting_IsTerraformResource(x interface{}) *bool {
+func ModelArmorFloorsetting_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateModelArmorFloorsetting_IsTerraformResourceParameters(x); err != nil {
@@ -790,7 +789,7 @@ func ModelArmorFloorsetting_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.modelArmorFloorsetting.ModelArmorFloorsetting",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -815,31 +814,31 @@ func (m *jsiiProxy_ModelArmorFloorsetting) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (m *jsiiProxy_ModelArmorFloorsetting) AddOverride(path *string, value interface{}) {
+func (m *jsiiProxy_ModelArmorFloorsetting) AddOverride(path *string, value any) {
 	if err := m.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (m *jsiiProxy_ModelArmorFloorsetting) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (m *jsiiProxy_ModelArmorFloorsetting) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -855,7 +854,7 @@ func (m *jsiiProxy_ModelArmorFloorsetting) GetBooleanAttribute(terraformAttribut
 	_jsii_.Invoke(
 		m,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -871,7 +870,7 @@ func (m *jsiiProxy_ModelArmorFloorsetting) GetBooleanMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		m,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -887,7 +886,7 @@ func (m *jsiiProxy_ModelArmorFloorsetting) GetListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		m,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -903,7 +902,7 @@ func (m *jsiiProxy_ModelArmorFloorsetting) GetNumberAttribute(terraformAttribute
 	_jsii_.Invoke(
 		m,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -919,7 +918,7 @@ func (m *jsiiProxy_ModelArmorFloorsetting) GetNumberListAttribute(terraformAttri
 	_jsii_.Invoke(
 		m,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -935,7 +934,7 @@ func (m *jsiiProxy_ModelArmorFloorsetting) GetNumberMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		m,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -951,7 +950,7 @@ func (m *jsiiProxy_ModelArmorFloorsetting) GetStringAttribute(terraformAttribute
 	_jsii_.Invoke(
 		m,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -967,15 +966,15 @@ func (m *jsiiProxy_ModelArmorFloorsetting) GetStringMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		m,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (m *jsiiProxy_ModelArmorFloorsetting) HasResourceMove() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_ModelArmorFloorsetting) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -994,7 +993,7 @@ func (m *jsiiProxy_ModelArmorFloorsetting) ImportFrom(id *string, provider cdktf
 	_jsii_.InvokeVoid(
 		m,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1007,7 +1006,7 @@ func (m *jsiiProxy_ModelArmorFloorsetting) InterpolationForAttribute(terraformAt
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1021,18 +1020,18 @@ func (m *jsiiProxy_ModelArmorFloorsetting) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (m *jsiiProxy_ModelArmorFloorsetting) MoveTo(moveTarget *string, index interface{}) {
+func (m *jsiiProxy_ModelArmorFloorsetting) MoveTo(moveTarget *string, index any) {
 	if err := m.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1043,7 +1042,7 @@ func (m *jsiiProxy_ModelArmorFloorsetting) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1054,7 +1053,7 @@ func (m *jsiiProxy_ModelArmorFloorsetting) OverrideLogicalId(newLogicalId *strin
 	_jsii_.InvokeVoid(
 		m,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1065,7 +1064,7 @@ func (m *jsiiProxy_ModelArmorFloorsetting) PutAiPlatformFloorSetting(value *Mode
 	_jsii_.InvokeVoid(
 		m,
 		"putAiPlatformFloorSetting",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1076,7 +1075,7 @@ func (m *jsiiProxy_ModelArmorFloorsetting) PutFilterConfig(value *ModelArmorFloo
 	_jsii_.InvokeVoid(
 		m,
 		"putFilterConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1087,7 +1086,7 @@ func (m *jsiiProxy_ModelArmorFloorsetting) PutFloorSettingMetadata(value *ModelA
 	_jsii_.InvokeVoid(
 		m,
 		"putFloorSettingMetadata",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1098,7 +1097,7 @@ func (m *jsiiProxy_ModelArmorFloorsetting) PutGoogleMcpServerFloorSetting(value 
 	_jsii_.InvokeVoid(
 		m,
 		"putGoogleMcpServerFloorSetting",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1109,7 +1108,7 @@ func (m *jsiiProxy_ModelArmorFloorsetting) PutTimeouts(value *ModelArmorFloorset
 	_jsii_.InvokeVoid(
 		m,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1177,8 +1176,8 @@ func (m *jsiiProxy_ModelArmorFloorsetting) ResetTimeouts() {
 	)
 }
 
-func (m *jsiiProxy_ModelArmorFloorsetting) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (m *jsiiProxy_ModelArmorFloorsetting) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
@@ -1190,8 +1189,8 @@ func (m *jsiiProxy_ModelArmorFloorsetting) SynthesizeAttributes() *map[string]in
 	return returns
 }
 
-func (m *jsiiProxy_ModelArmorFloorsetting) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (m *jsiiProxy_ModelArmorFloorsetting) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
@@ -1203,8 +1202,8 @@ func (m *jsiiProxy_ModelArmorFloorsetting) SynthesizeHclAttributes() *map[string
 	return returns
 }
 
-func (m *jsiiProxy_ModelArmorFloorsetting) ToHclTerraform() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_ModelArmorFloorsetting) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1216,8 +1215,8 @@ func (m *jsiiProxy_ModelArmorFloorsetting) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (m *jsiiProxy_ModelArmorFloorsetting) ToMetadata() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_ModelArmorFloorsetting) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1242,8 +1241,8 @@ func (m *jsiiProxy_ModelArmorFloorsetting) ToString() *string {
 	return returns
 }
 
-func (m *jsiiProxy_ModelArmorFloorsetting) ToTerraform() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_ModelArmorFloorsetting) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1254,4 +1253,3 @@ func (m *jsiiProxy_ModelArmorFloorsetting) ToTerraform() interface{} {
 
 	return returns
 }
-

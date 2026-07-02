@@ -98,7 +98,7 @@ func (i *jsiiProxy_IamFoldersPolicyBindingTimeoutsOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_IamFoldersPolicyBindingTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IamFoldersPolicyBindingTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_IamFoldersPolicyBindingTimeoutsOutputReference) validateSetDe
 	return nil
 }
 
-func (j *jsiiProxy_IamFoldersPolicyBindingTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_IamFoldersPolicyBindingTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewIamFoldersPolicyBindingTimeoutsOutputReferenceParameters(terrafo
 
 	return nil
 }
-

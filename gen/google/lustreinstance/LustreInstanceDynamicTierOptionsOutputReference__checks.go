@@ -98,7 +98,7 @@ func (l *jsiiProxy_LustreInstanceDynamicTierOptionsOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_LustreInstanceDynamicTierOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LustreInstanceDynamicTierOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewLustreInstanceDynamicTierOptionsOutputReferenceParameters(terraf
 
 	return nil
 }
-

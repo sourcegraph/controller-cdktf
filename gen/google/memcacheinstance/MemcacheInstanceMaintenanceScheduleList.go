@@ -36,7 +36,7 @@ type MemcacheInstanceMaintenanceScheduleList interface {
 	Get(index *float64) MemcacheInstanceMaintenanceScheduleOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,7 +99,6 @@ func (j *jsiiProxy_MemcacheInstanceMaintenanceScheduleList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewMemcacheInstanceMaintenanceScheduleList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MemcacheInstanceMaintenanceScheduleList {
 	_init_.Initialize()
 
@@ -110,7 +109,7 @@ func NewMemcacheInstanceMaintenanceScheduleList(terraformResource cdktf.IInterpo
 
 	_jsii_.Create(
 		"@cdktf/provider-google.memcacheInstance.MemcacheInstanceMaintenanceScheduleList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -122,12 +121,12 @@ func NewMemcacheInstanceMaintenanceScheduleList_Override(m MemcacheInstanceMaint
 
 	_jsii_.Create(
 		"@cdktf/provider-google.memcacheInstance.MemcacheInstanceMaintenanceScheduleList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		m,
 	)
 }
 
-func (j *jsiiProxy_MemcacheInstanceMaintenanceScheduleList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MemcacheInstanceMaintenanceScheduleList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -138,7 +137,7 @@ func (j *jsiiProxy_MemcacheInstanceMaintenanceScheduleList)SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_MemcacheInstanceMaintenanceScheduleList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MemcacheInstanceMaintenanceScheduleList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -149,7 +148,7 @@ func (j *jsiiProxy_MemcacheInstanceMaintenanceScheduleList)SetTerraformResource(
 	)
 }
 
-func (j *jsiiProxy_MemcacheInstanceMaintenanceScheduleList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_MemcacheInstanceMaintenanceScheduleList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -169,7 +168,7 @@ func (m *jsiiProxy_MemcacheInstanceMaintenanceScheduleList) AllWithMapKey(mapKey
 	_jsii_.Invoke(
 		m,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -198,23 +197,23 @@ func (m *jsiiProxy_MemcacheInstanceMaintenanceScheduleList) Get(index *float64) 
 	_jsii_.Invoke(
 		m,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (m *jsiiProxy_MemcacheInstanceMaintenanceScheduleList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_MemcacheInstanceMaintenanceScheduleList) Resolve(_context cdktf.IResolveContext) any {
 	if err := m.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -233,4 +232,3 @@ func (m *jsiiProxy_MemcacheInstanceMaintenanceScheduleList) ToString() *string {
 
 	return returns
 }
-

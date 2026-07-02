@@ -19,7 +19,7 @@ func (d *jsiiProxy_DiscoveryEngineControl) validateAddMoveTargetParameters(moveT
 	return nil
 }
 
-func (d *jsiiProxy_DiscoveryEngineControl) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DiscoveryEngineControl) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (d *jsiiProxy_DiscoveryEngineControl) validateMoveFromIdParameters(id *stri
 	return nil
 }
 
-func (d *jsiiProxy_DiscoveryEngineControl) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (d *jsiiProxy_DiscoveryEngineControl) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -215,7 +215,7 @@ func (d *jsiiProxy_DiscoveryEngineControl) validatePutBoostActionParameters(valu
 	return nil
 }
 
-func (d *jsiiProxy_DiscoveryEngineControl) validatePutConditionsParameters(value interface{}) error {
+func (d *jsiiProxy_DiscoveryEngineControl) validatePutConditionsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -317,7 +317,7 @@ func validateDiscoveryEngineControl_GenerateConfigForImportParameters(scope cons
 	return nil
 }
 
-func validateDiscoveryEngineControl_IsConstructParameters(x interface{}) error {
+func validateDiscoveryEngineControl_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -325,7 +325,7 @@ func validateDiscoveryEngineControl_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateDiscoveryEngineControl_IsTerraformElementParameters(x interface{}) error {
+func validateDiscoveryEngineControl_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -333,7 +333,7 @@ func validateDiscoveryEngineControl_IsTerraformElementParameters(x interface{}) 
 	return nil
 }
 
-func validateDiscoveryEngineControl_IsTerraformResourceParameters(x interface{}) error {
+func validateDiscoveryEngineControl_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -349,7 +349,7 @@ func (j *jsiiProxy_DiscoveryEngineControl) validateSetCollectionIdParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineControl) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_DiscoveryEngineControl) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -390,7 +390,7 @@ func (j *jsiiProxy_DiscoveryEngineControl) validateSetControlIdParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineControl) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DiscoveryEngineControl) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -495,7 +495,7 @@ func (j *jsiiProxy_DiscoveryEngineControl) validateSetProjectParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineControl) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_DiscoveryEngineControl) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -575,4 +575,3 @@ func validateNewDiscoveryEngineControlParameters(scope constructs.Construct, id 
 
 	return nil
 }
-

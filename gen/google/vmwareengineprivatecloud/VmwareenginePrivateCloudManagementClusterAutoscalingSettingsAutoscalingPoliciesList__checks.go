@@ -34,7 +34,7 @@ func (v *jsiiProxy_VmwareenginePrivateCloudManagementClusterAutoscalingSettingsA
 	return nil
 }
 
-func (j *jsiiProxy_VmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_VmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAuto
 
 	return nil
 }
-

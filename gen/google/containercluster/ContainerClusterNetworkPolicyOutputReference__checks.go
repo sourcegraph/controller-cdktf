@@ -98,7 +98,7 @@ func (c *jsiiProxy_ContainerClusterNetworkPolicyOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterNetworkPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterNetworkPolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ContainerClusterNetworkPolicyOutputReference) validateSetComp
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterNetworkPolicyOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterNetworkPolicyOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -226,4 +226,3 @@ func validateNewContainerClusterNetworkPolicyOutputReferenceParameters(terraform
 
 	return nil
 }
-

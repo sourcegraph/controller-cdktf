@@ -1,6 +1,5 @@
 package containernodepool
 
-
 type ContainerNodePoolNodeConfigAdvancedMachineFeatures struct {
 	// The number of threads per physical core.
 	//
@@ -11,10 +10,9 @@ type ContainerNodePoolNodeConfigAdvancedMachineFeatures struct {
 	// Whether the node should have nested virtualization enabled.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_node_pool#enable_nested_virtualization ContainerNodePool#enable_nested_virtualization}
-	EnableNestedVirtualization interface{} `field:"optional" json:"enableNestedVirtualization" yaml:"enableNestedVirtualization"`
+	EnableNestedVirtualization any `field:"optional" json:"enableNestedVirtualization" yaml:"enableNestedVirtualization"`
 	// Level of Performance Monitoring Unit (PMU) requested. If unset, no access to the PMU is assumed.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_node_pool#performance_monitoring_unit ContainerNodePool#performance_monitoring_unit}
 	PerformanceMonitoringUnit *string `field:"optional" json:"performanceMonitoringUnit" yaml:"performanceMonitoringUnit"`
 }
-

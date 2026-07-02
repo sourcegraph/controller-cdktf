@@ -142,7 +142,7 @@ func (c *jsiiProxy_ClouddeployAutomationRulesOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_ClouddeployAutomationRulesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ClouddeployAutomationRulesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -207,7 +207,7 @@ func (j *jsiiProxy_ClouddeployAutomationRulesOutputReference) validateSetComplex
 	return nil
 }
 
-func (j *jsiiProxy_ClouddeployAutomationRulesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ClouddeployAutomationRulesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -266,4 +266,3 @@ func validateNewClouddeployAutomationRulesOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

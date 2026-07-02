@@ -98,7 +98,7 @@ func (c *jsiiProxy_ContainerAzureClusterNetworkingOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_ContainerAzureClusterNetworkingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerAzureClusterNetworkingOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewContainerAzureClusterNetworkingOutputReferenceParameters(terrafo
 
 	return nil
 }
-

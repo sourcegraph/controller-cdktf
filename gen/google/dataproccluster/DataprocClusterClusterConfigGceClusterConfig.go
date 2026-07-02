@@ -1,6 +1,5 @@
 package dataproccluster
 
-
 type DataprocClusterClusterConfigGceClusterConfig struct {
 	// confidential_instance_config block.
 	//
@@ -11,7 +10,7 @@ type DataprocClusterClusterConfigGceClusterConfig struct {
 	// If set to true, all instances in the cluster will only have internal IP addresses. Note: Private Google Access (also known as privateIpGoogleAccess) must be enabled on the subnetwork that the cluster will be launched in.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_cluster#internal_ip_only DataprocCluster#internal_ip_only}
-	InternalIpOnly interface{} `field:"optional" json:"internalIpOnly" yaml:"internalIpOnly"`
+	InternalIpOnly any `field:"optional" json:"internalIpOnly" yaml:"internalIpOnly"`
 	// A map of the Compute Engine metadata entries to add to all instances.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_cluster#metadata DataprocCluster#metadata}
@@ -65,4 +64,3 @@ type DataprocClusterClusterConfigGceClusterConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_cluster#zone DataprocCluster#zone}
 	Zone *string `field:"optional" json:"zone" yaml:"zone"`
 }
-

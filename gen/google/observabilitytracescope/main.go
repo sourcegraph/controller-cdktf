@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.observabilityTraceScope.ObservabilityTraceScope",
-		reflect.TypeOf((*ObservabilityTraceScope)(nil)).Elem(),
+		reflect.TypeFor[ObservabilityTraceScope](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -75,7 +75,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "traceScopeIdInput", GoGetter: "TraceScopeIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ObservabilityTraceScope{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -83,15 +83,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.observabilityTraceScope.ObservabilityTraceScopeConfig",
-		reflect.TypeOf((*ObservabilityTraceScopeConfig)(nil)).Elem(),
+		reflect.TypeFor[ObservabilityTraceScopeConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.observabilityTraceScope.ObservabilityTraceScopeTimeouts",
-		reflect.TypeOf((*ObservabilityTraceScopeTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ObservabilityTraceScopeTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.observabilityTraceScope.ObservabilityTraceScopeTimeoutsOutputReference",
-		reflect.TypeOf((*ObservabilityTraceScopeTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ObservabilityTraceScopeTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -124,7 +124,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ObservabilityTraceScopeTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

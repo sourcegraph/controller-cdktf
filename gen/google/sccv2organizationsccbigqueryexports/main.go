@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.sccV2OrganizationSccBigQueryExports.SccV2OrganizationSccBigQueryExports",
-		reflect.TypeOf((*SccV2OrganizationSccBigQueryExports)(nil)).Elem(),
+		reflect.TypeFor[SccV2OrganizationSccBigQueryExports](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -83,7 +83,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SccV2OrganizationSccBigQueryExports{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -91,15 +91,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.sccV2OrganizationSccBigQueryExports.SccV2OrganizationSccBigQueryExportsConfig",
-		reflect.TypeOf((*SccV2OrganizationSccBigQueryExportsConfig)(nil)).Elem(),
+		reflect.TypeFor[SccV2OrganizationSccBigQueryExportsConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.sccV2OrganizationSccBigQueryExports.SccV2OrganizationSccBigQueryExportsTimeouts",
-		reflect.TypeOf((*SccV2OrganizationSccBigQueryExportsTimeouts)(nil)).Elem(),
+		reflect.TypeFor[SccV2OrganizationSccBigQueryExportsTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.sccV2OrganizationSccBigQueryExports.SccV2OrganizationSccBigQueryExportsTimeoutsOutputReference",
-		reflect.TypeOf((*SccV2OrganizationSccBigQueryExportsTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SccV2OrganizationSccBigQueryExportsTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -132,7 +132,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SccV2OrganizationSccBigQueryExportsTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

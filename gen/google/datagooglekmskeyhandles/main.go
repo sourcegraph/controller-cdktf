@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleKmsKeyHandles.DataGoogleKmsKeyHandles",
-		reflect.TypeOf((*DataGoogleKmsKeyHandles)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleKmsKeyHandles](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -56,7 +56,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleKmsKeyHandles{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -64,15 +64,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleKmsKeyHandles.DataGoogleKmsKeyHandlesConfig",
-		reflect.TypeOf((*DataGoogleKmsKeyHandlesConfig)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleKmsKeyHandlesConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleKmsKeyHandles.DataGoogleKmsKeyHandlesKeyHandles",
-		reflect.TypeOf((*DataGoogleKmsKeyHandlesKeyHandles)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleKmsKeyHandlesKeyHandles](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleKmsKeyHandles.DataGoogleKmsKeyHandlesKeyHandlesList",
-		reflect.TypeOf((*DataGoogleKmsKeyHandlesKeyHandlesList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleKmsKeyHandlesKeyHandlesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -85,7 +85,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleKmsKeyHandlesKeyHandlesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -93,7 +93,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleKmsKeyHandles.DataGoogleKmsKeyHandlesKeyHandlesOutputReference",
-		reflect.TypeOf((*DataGoogleKmsKeyHandlesKeyHandlesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleKmsKeyHandlesKeyHandlesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -120,7 +120,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleKmsKeyHandlesKeyHandlesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

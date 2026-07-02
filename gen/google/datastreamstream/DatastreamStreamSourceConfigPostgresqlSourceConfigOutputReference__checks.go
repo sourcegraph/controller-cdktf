@@ -120,7 +120,7 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigPostgresqlSourceConfigOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_DatastreamStreamSourceConfigPostgresqlSourceConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DatastreamStreamSourceConfigPostgresqlSourceConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -244,4 +244,3 @@ func validateNewDatastreamStreamSourceConfigPostgresqlSourceConfigOutputReferenc
 
 	return nil
 }
-

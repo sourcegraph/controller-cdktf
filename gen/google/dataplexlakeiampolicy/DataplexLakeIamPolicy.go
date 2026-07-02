@@ -15,15 +15,15 @@ type DataplexLakeIamPolicy interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -63,24 +63,24 @@ type DataplexLakeIamPolicy interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -98,7 +98,7 @@ type DataplexLakeIamPolicy interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -110,7 +110,7 @@ type DataplexLakeIamPolicy interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -123,17 +123,17 @@ type DataplexLakeIamPolicy interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataplexLakeIamPolicy
@@ -151,8 +151,8 @@ func (j *jsiiProxy_DataplexLakeIamPolicy) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DataplexLakeIamPolicy) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataplexLakeIamPolicy) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -161,8 +161,8 @@ func (j *jsiiProxy_DataplexLakeIamPolicy) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataplexLakeIamPolicy) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataplexLakeIamPolicy) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -171,8 +171,8 @@ func (j *jsiiProxy_DataplexLakeIamPolicy) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_DataplexLakeIamPolicy) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataplexLakeIamPolicy) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -361,8 +361,8 @@ func (j *jsiiProxy_DataplexLakeIamPolicy) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DataplexLakeIamPolicy) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_DataplexLakeIamPolicy) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -371,8 +371,8 @@ func (j *jsiiProxy_DataplexLakeIamPolicy) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataplexLakeIamPolicy) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataplexLakeIamPolicy) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -391,8 +391,8 @@ func (j *jsiiProxy_DataplexLakeIamPolicy) TerraformGeneratorMetadata() *cdktf.Te
 	return returns
 }
 
-func (j *jsiiProxy_DataplexLakeIamPolicy) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataplexLakeIamPolicy) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -411,7 +411,6 @@ func (j *jsiiProxy_DataplexLakeIamPolicy) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_lake_iam_policy google_dataplex_lake_iam_policy} Resource.
 func NewDataplexLakeIamPolicy(scope constructs.Construct, id *string, config *DataplexLakeIamPolicyConfig) DataplexLakeIamPolicy {
 	_init_.Initialize()
@@ -423,7 +422,7 @@ func NewDataplexLakeIamPolicy(scope constructs.Construct, id *string, config *Da
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataplexLakeIamPolicy.DataplexLakeIamPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -436,12 +435,12 @@ func NewDataplexLakeIamPolicy_Override(d DataplexLakeIamPolicy, scope constructs
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataplexLakeIamPolicy.DataplexLakeIamPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataplexLakeIamPolicy)SetConnection(val interface{}) {
+func (j *jsiiProxy_DataplexLakeIamPolicy) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,7 +451,7 @@ func (j *jsiiProxy_DataplexLakeIamPolicy)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataplexLakeIamPolicy)SetCount(val interface{}) {
+func (j *jsiiProxy_DataplexLakeIamPolicy) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -463,7 +462,7 @@ func (j *jsiiProxy_DataplexLakeIamPolicy)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataplexLakeIamPolicy)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataplexLakeIamPolicy) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -471,7 +470,7 @@ func (j *jsiiProxy_DataplexLakeIamPolicy)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataplexLakeIamPolicy)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataplexLakeIamPolicy) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -479,7 +478,7 @@ func (j *jsiiProxy_DataplexLakeIamPolicy)SetForEach(val cdktf.ITerraformIterator
 	)
 }
 
-func (j *jsiiProxy_DataplexLakeIamPolicy)SetId(val *string) {
+func (j *jsiiProxy_DataplexLakeIamPolicy) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -490,7 +489,7 @@ func (j *jsiiProxy_DataplexLakeIamPolicy)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataplexLakeIamPolicy)SetLake(val *string) {
+func (j *jsiiProxy_DataplexLakeIamPolicy) SetLake(val *string) {
 	if err := j.validateSetLakeParameters(val); err != nil {
 		panic(err)
 	}
@@ -501,7 +500,7 @@ func (j *jsiiProxy_DataplexLakeIamPolicy)SetLake(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataplexLakeIamPolicy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataplexLakeIamPolicy) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -512,7 +511,7 @@ func (j *jsiiProxy_DataplexLakeIamPolicy)SetLifecycle(val *cdktf.TerraformResour
 	)
 }
 
-func (j *jsiiProxy_DataplexLakeIamPolicy)SetLocation(val *string) {
+func (j *jsiiProxy_DataplexLakeIamPolicy) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -523,7 +522,7 @@ func (j *jsiiProxy_DataplexLakeIamPolicy)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataplexLakeIamPolicy)SetPolicyData(val *string) {
+func (j *jsiiProxy_DataplexLakeIamPolicy) SetPolicyData(val *string) {
 	if err := j.validateSetPolicyDataParameters(val); err != nil {
 		panic(err)
 	}
@@ -534,7 +533,7 @@ func (j *jsiiProxy_DataplexLakeIamPolicy)SetPolicyData(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataplexLakeIamPolicy)SetProject(val *string) {
+func (j *jsiiProxy_DataplexLakeIamPolicy) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -545,7 +544,7 @@ func (j *jsiiProxy_DataplexLakeIamPolicy)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataplexLakeIamPolicy)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataplexLakeIamPolicy) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -553,7 +552,7 @@ func (j *jsiiProxy_DataplexLakeIamPolicy)SetProvider(val cdktf.TerraformProvider
 	)
 }
 
-func (j *jsiiProxy_DataplexLakeIamPolicy)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_DataplexLakeIamPolicy) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -576,7 +575,7 @@ func DataplexLakeIamPolicy_GenerateConfigForImport(scope constructs.Construct, i
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataplexLakeIamPolicy.DataplexLakeIamPolicy",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -600,7 +599,7 @@ func DataplexLakeIamPolicy_GenerateConfigForImport(scope constructs.Construct, i
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataplexLakeIamPolicy_IsConstruct(x interface{}) *bool {
+func DataplexLakeIamPolicy_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataplexLakeIamPolicy_IsConstructParameters(x); err != nil {
@@ -611,7 +610,7 @@ func DataplexLakeIamPolicy_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataplexLakeIamPolicy.DataplexLakeIamPolicy",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -619,7 +618,7 @@ func DataplexLakeIamPolicy_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataplexLakeIamPolicy_IsTerraformElement(x interface{}) *bool {
+func DataplexLakeIamPolicy_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataplexLakeIamPolicy_IsTerraformElementParameters(x); err != nil {
@@ -630,7 +629,7 @@ func DataplexLakeIamPolicy_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataplexLakeIamPolicy.DataplexLakeIamPolicy",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -638,7 +637,7 @@ func DataplexLakeIamPolicy_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func DataplexLakeIamPolicy_IsTerraformResource(x interface{}) *bool {
+func DataplexLakeIamPolicy_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataplexLakeIamPolicy_IsTerraformResourceParameters(x); err != nil {
@@ -649,7 +648,7 @@ func DataplexLakeIamPolicy_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataplexLakeIamPolicy.DataplexLakeIamPolicy",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -674,31 +673,31 @@ func (d *jsiiProxy_DataplexLakeIamPolicy) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (d *jsiiProxy_DataplexLakeIamPolicy) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataplexLakeIamPolicy) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataplexLakeIamPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataplexLakeIamPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -714,7 +713,7 @@ func (d *jsiiProxy_DataplexLakeIamPolicy) GetBooleanAttribute(terraformAttribute
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -730,7 +729,7 @@ func (d *jsiiProxy_DataplexLakeIamPolicy) GetBooleanMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -746,7 +745,7 @@ func (d *jsiiProxy_DataplexLakeIamPolicy) GetListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -762,7 +761,7 @@ func (d *jsiiProxy_DataplexLakeIamPolicy) GetNumberAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -778,7 +777,7 @@ func (d *jsiiProxy_DataplexLakeIamPolicy) GetNumberListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -794,7 +793,7 @@ func (d *jsiiProxy_DataplexLakeIamPolicy) GetNumberMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -810,7 +809,7 @@ func (d *jsiiProxy_DataplexLakeIamPolicy) GetStringAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -826,15 +825,15 @@ func (d *jsiiProxy_DataplexLakeIamPolicy) GetStringMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataplexLakeIamPolicy) HasResourceMove() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataplexLakeIamPolicy) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -853,7 +852,7 @@ func (d *jsiiProxy_DataplexLakeIamPolicy) ImportFrom(id *string, provider cdktf.
 	_jsii_.InvokeVoid(
 		d,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -866,7 +865,7 @@ func (d *jsiiProxy_DataplexLakeIamPolicy) InterpolationForAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -880,18 +879,18 @@ func (d *jsiiProxy_DataplexLakeIamPolicy) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (d *jsiiProxy_DataplexLakeIamPolicy) MoveTo(moveTarget *string, index interface{}) {
+func (d *jsiiProxy_DataplexLakeIamPolicy) MoveTo(moveTarget *string, index any) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -902,7 +901,7 @@ func (d *jsiiProxy_DataplexLakeIamPolicy) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -913,7 +912,7 @@ func (d *jsiiProxy_DataplexLakeIamPolicy) OverrideLogicalId(newLogicalId *string
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -949,8 +948,8 @@ func (d *jsiiProxy_DataplexLakeIamPolicy) ResetProject() {
 	)
 }
 
-func (d *jsiiProxy_DataplexLakeIamPolicy) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataplexLakeIamPolicy) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -962,8 +961,8 @@ func (d *jsiiProxy_DataplexLakeIamPolicy) SynthesizeAttributes() *map[string]int
 	return returns
 }
 
-func (d *jsiiProxy_DataplexLakeIamPolicy) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataplexLakeIamPolicy) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -975,8 +974,8 @@ func (d *jsiiProxy_DataplexLakeIamPolicy) SynthesizeHclAttributes() *map[string]
 	return returns
 }
 
-func (d *jsiiProxy_DataplexLakeIamPolicy) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataplexLakeIamPolicy) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -988,8 +987,8 @@ func (d *jsiiProxy_DataplexLakeIamPolicy) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataplexLakeIamPolicy) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataplexLakeIamPolicy) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1014,8 +1013,8 @@ func (d *jsiiProxy_DataplexLakeIamPolicy) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataplexLakeIamPolicy) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataplexLakeIamPolicy) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1026,4 +1025,3 @@ func (d *jsiiProxy_DataplexLakeIamPolicy) ToTerraform() interface{} {
 
 	return returns
 }
-

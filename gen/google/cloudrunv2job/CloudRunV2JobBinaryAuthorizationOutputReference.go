@@ -15,9 +15,9 @@ type CloudRunV2JobBinaryAuthorizationOutputReference interface {
 	BreakglassJustificationInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -43,13 +43,13 @@ type CloudRunV2JobBinaryAuthorizationOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	UseDefault() interface{}
-	SetUseDefault(val interface{})
-	UseDefaultInput() interface{}
+	UseDefault() any
+	SetUseDefault(val any)
+	UseDefaultInput() any
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type CloudRunV2JobBinaryAuthorizationOutputReference interface {
 	ResetUseDefault()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -108,8 +108,8 @@ func (j *jsiiProxy_CloudRunV2JobBinaryAuthorizationOutputReference) BreakglassJu
 	return returns
 }
 
-func (j *jsiiProxy_CloudRunV2JobBinaryAuthorizationOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudRunV2JobBinaryAuthorizationOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -198,8 +198,8 @@ func (j *jsiiProxy_CloudRunV2JobBinaryAuthorizationOutputReference) TerraformRes
 	return returns
 }
 
-func (j *jsiiProxy_CloudRunV2JobBinaryAuthorizationOutputReference) UseDefault() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudRunV2JobBinaryAuthorizationOutputReference) UseDefault() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"useDefault",
@@ -208,8 +208,8 @@ func (j *jsiiProxy_CloudRunV2JobBinaryAuthorizationOutputReference) UseDefault()
 	return returns
 }
 
-func (j *jsiiProxy_CloudRunV2JobBinaryAuthorizationOutputReference) UseDefaultInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudRunV2JobBinaryAuthorizationOutputReference) UseDefaultInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"useDefaultInput",
@@ -217,7 +217,6 @@ func (j *jsiiProxy_CloudRunV2JobBinaryAuthorizationOutputReference) UseDefaultIn
 	)
 	return returns
 }
-
 
 func NewCloudRunV2JobBinaryAuthorizationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CloudRunV2JobBinaryAuthorizationOutputReference {
 	_init_.Initialize()
@@ -229,7 +228,7 @@ func NewCloudRunV2JobBinaryAuthorizationOutputReference(terraformResource cdktf.
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cloudRunV2Job.CloudRunV2JobBinaryAuthorizationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewCloudRunV2JobBinaryAuthorizationOutputReference_Override(c CloudRunV2Job
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cloudRunV2Job.CloudRunV2JobBinaryAuthorizationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CloudRunV2JobBinaryAuthorizationOutputReference)SetBreakglassJustification(val *string) {
+func (j *jsiiProxy_CloudRunV2JobBinaryAuthorizationOutputReference) SetBreakglassJustification(val *string) {
 	if err := j.validateSetBreakglassJustificationParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_CloudRunV2JobBinaryAuthorizationOutputReference)SetBreakglass
 	)
 }
 
-func (j *jsiiProxy_CloudRunV2JobBinaryAuthorizationOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CloudRunV2JobBinaryAuthorizationOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_CloudRunV2JobBinaryAuthorizationOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_CloudRunV2JobBinaryAuthorizationOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CloudRunV2JobBinaryAuthorizationOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_CloudRunV2JobBinaryAuthorizationOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_CloudRunV2JobBinaryAuthorizationOutputReference)SetInternalValue(val *CloudRunV2JobBinaryAuthorization) {
+func (j *jsiiProxy_CloudRunV2JobBinaryAuthorizationOutputReference) SetInternalValue(val *CloudRunV2JobBinaryAuthorization) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_CloudRunV2JobBinaryAuthorizationOutputReference)SetInternalVa
 	)
 }
 
-func (j *jsiiProxy_CloudRunV2JobBinaryAuthorizationOutputReference)SetPolicy(val *string) {
+func (j *jsiiProxy_CloudRunV2JobBinaryAuthorizationOutputReference) SetPolicy(val *string) {
 	if err := j.validateSetPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_CloudRunV2JobBinaryAuthorizationOutputReference)SetPolicy(val
 	)
 }
 
-func (j *jsiiProxy_CloudRunV2JobBinaryAuthorizationOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CloudRunV2JobBinaryAuthorizationOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_CloudRunV2JobBinaryAuthorizationOutputReference)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_CloudRunV2JobBinaryAuthorizationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CloudRunV2JobBinaryAuthorizationOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_CloudRunV2JobBinaryAuthorizationOutputReference)SetTerraformR
 	)
 }
 
-func (j *jsiiProxy_CloudRunV2JobBinaryAuthorizationOutputReference)SetUseDefault(val interface{}) {
+func (j *jsiiProxy_CloudRunV2JobBinaryAuthorizationOutputReference) SetUseDefault(val any) {
 	if err := j.validateSetUseDefaultParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (c *jsiiProxy_CloudRunV2JobBinaryAuthorizationOutputReference) ComputeFqn()
 	return returns
 }
 
-func (c *jsiiProxy_CloudRunV2JobBinaryAuthorizationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CloudRunV2JobBinaryAuthorizationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (c *jsiiProxy_CloudRunV2JobBinaryAuthorizationOutputReference) GetBooleanAt
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (c *jsiiProxy_CloudRunV2JobBinaryAuthorizationOutputReference) GetBooleanMa
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (c *jsiiProxy_CloudRunV2JobBinaryAuthorizationOutputReference) GetListAttri
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (c *jsiiProxy_CloudRunV2JobBinaryAuthorizationOutputReference) GetNumberAtt
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (c *jsiiProxy_CloudRunV2JobBinaryAuthorizationOutputReference) GetNumberLis
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (c *jsiiProxy_CloudRunV2JobBinaryAuthorizationOutputReference) GetNumberMap
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (c *jsiiProxy_CloudRunV2JobBinaryAuthorizationOutputReference) GetStringAtt
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (c *jsiiProxy_CloudRunV2JobBinaryAuthorizationOutputReference) GetStringMap
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (c *jsiiProxy_CloudRunV2JobBinaryAuthorizationOutputReference) Interpolatio
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (c *jsiiProxy_CloudRunV2JobBinaryAuthorizationOutputReference) ResetUseDefa
 	)
 }
 
-func (c *jsiiProxy_CloudRunV2JobBinaryAuthorizationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_CloudRunV2JobBinaryAuthorizationOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (c *jsiiProxy_CloudRunV2JobBinaryAuthorizationOutputReference) ToString() *
 
 	return returns
 }
-

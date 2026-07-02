@@ -109,7 +109,7 @@ func (c *jsiiProxy_ContainerAttachedClusterMonitoringConfigOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_ContainerAttachedClusterMonitoringConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerAttachedClusterMonitoringConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewContainerAttachedClusterMonitoringConfigOutputReferenceParameter
 
 	return nil
 }
-

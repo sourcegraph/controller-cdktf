@@ -109,7 +109,7 @@ func (s *jsiiProxy_SecretManagerSecretReplicationAutoOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_SecretManagerSecretReplicationAutoOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SecretManagerSecretReplicationAutoOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewSecretManagerSecretReplicationAutoOutputReferenceParameters(terr
 
 	return nil
 }
-

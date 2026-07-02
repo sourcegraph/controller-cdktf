@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleAccessContextManagerSupportedServices.DataGoogleAccessContextManagerSupportedServices",
-		reflect.TypeOf((*DataGoogleAccessContextManagerSupportedServices)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleAccessContextManagerSupportedServices](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -49,7 +49,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleAccessContextManagerSupportedServices{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -57,15 +57,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleAccessContextManagerSupportedServices.DataGoogleAccessContextManagerSupportedServicesConfig",
-		reflect.TypeOf((*DataGoogleAccessContextManagerSupportedServicesConfig)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleAccessContextManagerSupportedServicesConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleAccessContextManagerSupportedServices.DataGoogleAccessContextManagerSupportedServicesSupportedServices",
-		reflect.TypeOf((*DataGoogleAccessContextManagerSupportedServicesSupportedServices)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleAccessContextManagerSupportedServicesSupportedServices](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleAccessContextManagerSupportedServices.DataGoogleAccessContextManagerSupportedServicesSupportedServicesList",
-		reflect.TypeOf((*DataGoogleAccessContextManagerSupportedServicesSupportedServicesList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleAccessContextManagerSupportedServicesSupportedServicesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -78,7 +78,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleAccessContextManagerSupportedServicesSupportedServicesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -86,7 +86,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleAccessContextManagerSupportedServices.DataGoogleAccessContextManagerSupportedServicesSupportedServicesOutputReference",
-		reflect.TypeOf((*DataGoogleAccessContextManagerSupportedServicesSupportedServicesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleAccessContextManagerSupportedServicesSupportedServicesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "availableOnRestrictedVip", GoGetter: "AvailableOnRestrictedVip"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -116,7 +116,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "title", GoGetter: "Title"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleAccessContextManagerSupportedServicesSupportedServicesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

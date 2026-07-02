@@ -12,9 +12,9 @@ type ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodOutpu
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -58,7 +58,7 @@ type ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodOutpu
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -87,7 +87,7 @@ type ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodOutpu
 	ResetPidAvailable()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -100,8 +100,8 @@ type jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGraceP
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -290,7 +290,6 @@ func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGr
 	return returns
 }
 
-
 func NewContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference {
 	_init_.Initialize()
 
@@ -301,7 +300,7 @@ func NewContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodOu
 
 	_jsii_.Create(
 		"@cdktf/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -313,12 +312,12 @@ func NewContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodOu
 
 	_jsii_.Create(
 		"@cdktf/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -329,7 +328,7 @@ func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGr
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -340,7 +339,7 @@ func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGr
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference)SetImagefsAvailable(val *string) {
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference) SetImagefsAvailable(val *string) {
 	if err := j.validateSetImagefsAvailableParameters(val); err != nil {
 		panic(err)
 	}
@@ -351,7 +350,7 @@ func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGr
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference)SetImagefsInodesFree(val *string) {
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference) SetImagefsInodesFree(val *string) {
 	if err := j.validateSetImagefsInodesFreeParameters(val); err != nil {
 		panic(err)
 	}
@@ -362,7 +361,7 @@ func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGr
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference)SetInternalValue(val *ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriod) {
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference) SetInternalValue(val *ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriod) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -373,7 +372,7 @@ func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGr
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference)SetMemoryAvailable(val *string) {
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference) SetMemoryAvailable(val *string) {
 	if err := j.validateSetMemoryAvailableParameters(val); err != nil {
 		panic(err)
 	}
@@ -384,7 +383,7 @@ func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGr
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference)SetNodefsAvailable(val *string) {
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference) SetNodefsAvailable(val *string) {
 	if err := j.validateSetNodefsAvailableParameters(val); err != nil {
 		panic(err)
 	}
@@ -395,7 +394,7 @@ func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGr
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference)SetNodefsInodesFree(val *string) {
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference) SetNodefsInodesFree(val *string) {
 	if err := j.validateSetNodefsInodesFreeParameters(val); err != nil {
 		panic(err)
 	}
@@ -406,7 +405,7 @@ func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGr
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference)SetPidAvailable(val *string) {
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference) SetPidAvailable(val *string) {
 	if err := j.validateSetPidAvailableParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,7 +416,7 @@ func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGr
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -428,7 +427,7 @@ func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGr
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,16 +451,16 @@ func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGr
 	return returns
 }
 
-func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -477,7 +476,7 @@ func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGr
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -493,7 +492,7 @@ func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGr
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -509,7 +508,7 @@ func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGr
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -525,7 +524,7 @@ func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGr
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -541,7 +540,7 @@ func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGr
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -557,7 +556,7 @@ func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGr
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -573,7 +572,7 @@ func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGr
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -589,7 +588,7 @@ func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGr
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -618,7 +617,7 @@ func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGr
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -673,16 +672,16 @@ func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGr
 	)
 }
 
-func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -701,4 +700,3 @@ func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGr
 
 	return returns
 }
-

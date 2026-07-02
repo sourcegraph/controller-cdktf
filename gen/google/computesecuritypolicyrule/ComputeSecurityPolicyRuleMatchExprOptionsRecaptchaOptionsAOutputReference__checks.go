@@ -106,7 +106,7 @@ func (j *jsiiProxy_ComputeSecurityPolicyRuleMatchExprOptionsRecaptchaOptionsAOut
 	return nil
 }
 
-func (j *jsiiProxy_ComputeSecurityPolicyRuleMatchExprOptionsRecaptchaOptionsAOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeSecurityPolicyRuleMatchExprOptionsRecaptchaOptionsAOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewComputeSecurityPolicyRuleMatchExprOptionsRecaptchaOptionsAOutput
 
 	return nil
 }
-

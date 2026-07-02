@@ -98,7 +98,7 @@ func (a *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCertTimeoutsOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCertTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCertTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCertTimeoutsOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCertTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCertTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewApigeeKeystoresAliasesSelfSignedCertTimeoutsOutputReferenceParam
 
 	return nil
 }
-

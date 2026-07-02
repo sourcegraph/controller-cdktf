@@ -21,22 +21,22 @@ type SqlDatabaseInstance interface {
 	Clone() SqlDatabaseInstanceCloneOutputReference
 	CloneInput() *SqlDatabaseInstanceClone
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	ConnectionName() *string
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DatabaseVersion() *string
 	SetDatabaseVersion(val *string)
 	DatabaseVersionInput() *string
-	DeletionProtection() interface{}
-	SetDeletionProtection(val interface{})
-	DeletionProtectionInput() interface{}
+	DeletionProtection() any
+	SetDeletionProtection(val any)
+	DeletionProtectionInput() any
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -94,13 +94,13 @@ type SqlDatabaseInstance interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	PscServiceAttachmentLink() *string
 	PublicIpAddress() *string
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
@@ -130,18 +130,18 @@ type SqlDatabaseInstance interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() SqlDatabaseInstanceTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -159,7 +159,7 @@ type SqlDatabaseInstance interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -171,7 +171,7 @@ type SqlDatabaseInstance interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -211,17 +211,17 @@ type SqlDatabaseInstance interface {
 	ResetRootPasswordWoVersion()
 	ResetSettings()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for SqlDatabaseInstance
@@ -289,8 +289,8 @@ func (j *jsiiProxy_SqlDatabaseInstance) CloneInput() *SqlDatabaseInstanceClone {
 	return returns
 }
 
-func (j *jsiiProxy_SqlDatabaseInstance) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SqlDatabaseInstance) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -309,8 +309,8 @@ func (j *jsiiProxy_SqlDatabaseInstance) ConnectionName() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SqlDatabaseInstance) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SqlDatabaseInstance) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -319,8 +319,8 @@ func (j *jsiiProxy_SqlDatabaseInstance) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_SqlDatabaseInstance) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SqlDatabaseInstance) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -349,8 +349,8 @@ func (j *jsiiProxy_SqlDatabaseInstance) DatabaseVersionInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SqlDatabaseInstance) DeletionProtection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SqlDatabaseInstance) DeletionProtection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deletionProtection",
@@ -359,8 +359,8 @@ func (j *jsiiProxy_SqlDatabaseInstance) DeletionProtection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SqlDatabaseInstance) DeletionProtectionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SqlDatabaseInstance) DeletionProtectionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deletionProtectionInput",
@@ -689,8 +689,8 @@ func (j *jsiiProxy_SqlDatabaseInstance) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_SqlDatabaseInstance) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_SqlDatabaseInstance) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -719,8 +719,8 @@ func (j *jsiiProxy_SqlDatabaseInstance) PublicIpAddress() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SqlDatabaseInstance) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SqlDatabaseInstance) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -949,8 +949,8 @@ func (j *jsiiProxy_SqlDatabaseInstance) TerraformGeneratorMetadata() *cdktf.Terr
 	return returns
 }
 
-func (j *jsiiProxy_SqlDatabaseInstance) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SqlDatabaseInstance) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -979,8 +979,8 @@ func (j *jsiiProxy_SqlDatabaseInstance) Timeouts() SqlDatabaseInstanceTimeoutsOu
 	return returns
 }
 
-func (j *jsiiProxy_SqlDatabaseInstance) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SqlDatabaseInstance) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -988,7 +988,6 @@ func (j *jsiiProxy_SqlDatabaseInstance) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/sql_database_instance google_sql_database_instance} Resource.
 func NewSqlDatabaseInstance(scope constructs.Construct, id *string, config *SqlDatabaseInstanceConfig) SqlDatabaseInstance {
@@ -1001,7 +1000,7 @@ func NewSqlDatabaseInstance(scope constructs.Construct, id *string, config *SqlD
 
 	_jsii_.Create(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstance",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -1014,12 +1013,12 @@ func NewSqlDatabaseInstance_Override(s SqlDatabaseInstance, scope constructs.Con
 
 	_jsii_.Create(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstance",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstance)SetBackupdrBackup(val *string) {
+func (j *jsiiProxy_SqlDatabaseInstance) SetBackupdrBackup(val *string) {
 	if err := j.validateSetBackupdrBackupParameters(val); err != nil {
 		panic(err)
 	}
@@ -1030,7 +1029,7 @@ func (j *jsiiProxy_SqlDatabaseInstance)SetBackupdrBackup(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstance)SetConnection(val interface{}) {
+func (j *jsiiProxy_SqlDatabaseInstance) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1041,7 +1040,7 @@ func (j *jsiiProxy_SqlDatabaseInstance)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstance)SetCount(val interface{}) {
+func (j *jsiiProxy_SqlDatabaseInstance) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -1052,7 +1051,7 @@ func (j *jsiiProxy_SqlDatabaseInstance)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstance)SetDatabaseVersion(val *string) {
+func (j *jsiiProxy_SqlDatabaseInstance) SetDatabaseVersion(val *string) {
 	if err := j.validateSetDatabaseVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1063,7 +1062,7 @@ func (j *jsiiProxy_SqlDatabaseInstance)SetDatabaseVersion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstance)SetDeletionProtection(val interface{}) {
+func (j *jsiiProxy_SqlDatabaseInstance) SetDeletionProtection(val any) {
 	if err := j.validateSetDeletionProtectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1074,7 +1073,7 @@ func (j *jsiiProxy_SqlDatabaseInstance)SetDeletionProtection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstance)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_SqlDatabaseInstance) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -1082,7 +1081,7 @@ func (j *jsiiProxy_SqlDatabaseInstance)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstance)SetEncryptionKeyName(val *string) {
+func (j *jsiiProxy_SqlDatabaseInstance) SetEncryptionKeyName(val *string) {
 	if err := j.validateSetEncryptionKeyNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1093,7 +1092,7 @@ func (j *jsiiProxy_SqlDatabaseInstance)SetEncryptionKeyName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstance)SetFinalBackupDescription(val *string) {
+func (j *jsiiProxy_SqlDatabaseInstance) SetFinalBackupDescription(val *string) {
 	if err := j.validateSetFinalBackupDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1104,7 +1103,7 @@ func (j *jsiiProxy_SqlDatabaseInstance)SetFinalBackupDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstance)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SqlDatabaseInstance) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1112,7 +1111,7 @@ func (j *jsiiProxy_SqlDatabaseInstance)SetForEach(val cdktf.ITerraformIterator) 
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstance)SetId(val *string) {
+func (j *jsiiProxy_SqlDatabaseInstance) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1123,7 +1122,7 @@ func (j *jsiiProxy_SqlDatabaseInstance)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstance)SetInstanceType(val *string) {
+func (j *jsiiProxy_SqlDatabaseInstance) SetInstanceType(val *string) {
 	if err := j.validateSetInstanceTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1134,7 +1133,7 @@ func (j *jsiiProxy_SqlDatabaseInstance)SetInstanceType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstance)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SqlDatabaseInstance) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1145,7 +1144,7 @@ func (j *jsiiProxy_SqlDatabaseInstance)SetLifecycle(val *cdktf.TerraformResource
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstance)SetMaintenanceVersion(val *string) {
+func (j *jsiiProxy_SqlDatabaseInstance) SetMaintenanceVersion(val *string) {
 	if err := j.validateSetMaintenanceVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1156,7 +1155,7 @@ func (j *jsiiProxy_SqlDatabaseInstance)SetMaintenanceVersion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstance)SetMasterInstanceName(val *string) {
+func (j *jsiiProxy_SqlDatabaseInstance) SetMasterInstanceName(val *string) {
 	if err := j.validateSetMasterInstanceNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1167,7 +1166,7 @@ func (j *jsiiProxy_SqlDatabaseInstance)SetMasterInstanceName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstance)SetName(val *string) {
+func (j *jsiiProxy_SqlDatabaseInstance) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1178,7 +1177,7 @@ func (j *jsiiProxy_SqlDatabaseInstance)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstance)SetNodeCount(val *float64) {
+func (j *jsiiProxy_SqlDatabaseInstance) SetNodeCount(val *float64) {
 	if err := j.validateSetNodeCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -1189,7 +1188,7 @@ func (j *jsiiProxy_SqlDatabaseInstance)SetNodeCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstance)SetProject(val *string) {
+func (j *jsiiProxy_SqlDatabaseInstance) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -1200,7 +1199,7 @@ func (j *jsiiProxy_SqlDatabaseInstance)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstance)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SqlDatabaseInstance) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1208,7 +1207,7 @@ func (j *jsiiProxy_SqlDatabaseInstance)SetProvider(val cdktf.TerraformProvider) 
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstance)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_SqlDatabaseInstance) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1219,7 +1218,7 @@ func (j *jsiiProxy_SqlDatabaseInstance)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstance)SetRegion(val *string) {
+func (j *jsiiProxy_SqlDatabaseInstance) SetRegion(val *string) {
 	if err := j.validateSetRegionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1230,7 +1229,7 @@ func (j *jsiiProxy_SqlDatabaseInstance)SetRegion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstance)SetReplicaNames(val *[]*string) {
+func (j *jsiiProxy_SqlDatabaseInstance) SetReplicaNames(val *[]*string) {
 	if err := j.validateSetReplicaNamesParameters(val); err != nil {
 		panic(err)
 	}
@@ -1241,7 +1240,7 @@ func (j *jsiiProxy_SqlDatabaseInstance)SetReplicaNames(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstance)SetRootPassword(val *string) {
+func (j *jsiiProxy_SqlDatabaseInstance) SetRootPassword(val *string) {
 	if err := j.validateSetRootPasswordParameters(val); err != nil {
 		panic(err)
 	}
@@ -1252,7 +1251,7 @@ func (j *jsiiProxy_SqlDatabaseInstance)SetRootPassword(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstance)SetRootPasswordWo(val *string) {
+func (j *jsiiProxy_SqlDatabaseInstance) SetRootPasswordWo(val *string) {
 	if err := j.validateSetRootPasswordWoParameters(val); err != nil {
 		panic(err)
 	}
@@ -1263,7 +1262,7 @@ func (j *jsiiProxy_SqlDatabaseInstance)SetRootPasswordWo(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstance)SetRootPasswordWoVersion(val *string) {
+func (j *jsiiProxy_SqlDatabaseInstance) SetRootPasswordWoVersion(val *string) {
 	if err := j.validateSetRootPasswordWoVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1286,7 +1285,7 @@ func SqlDatabaseInstance_GenerateConfigForImport(scope constructs.Construct, imp
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstance",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1310,7 +1309,7 @@ func SqlDatabaseInstance_GenerateConfigForImport(scope constructs.Construct, imp
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func SqlDatabaseInstance_IsConstruct(x interface{}) *bool {
+func SqlDatabaseInstance_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSqlDatabaseInstance_IsConstructParameters(x); err != nil {
@@ -1321,7 +1320,7 @@ func SqlDatabaseInstance_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstance",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1329,7 +1328,7 @@ func SqlDatabaseInstance_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func SqlDatabaseInstance_IsTerraformElement(x interface{}) *bool {
+func SqlDatabaseInstance_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSqlDatabaseInstance_IsTerraformElementParameters(x); err != nil {
@@ -1340,7 +1339,7 @@ func SqlDatabaseInstance_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstance",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1348,7 +1347,7 @@ func SqlDatabaseInstance_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func SqlDatabaseInstance_IsTerraformResource(x interface{}) *bool {
+func SqlDatabaseInstance_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSqlDatabaseInstance_IsTerraformResourceParameters(x); err != nil {
@@ -1359,7 +1358,7 @@ func SqlDatabaseInstance_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstance",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1384,31 +1383,31 @@ func (s *jsiiProxy_SqlDatabaseInstance) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_SqlDatabaseInstance) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_SqlDatabaseInstance) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_SqlDatabaseInstance) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SqlDatabaseInstance) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1424,7 +1423,7 @@ func (s *jsiiProxy_SqlDatabaseInstance) GetBooleanAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1440,7 +1439,7 @@ func (s *jsiiProxy_SqlDatabaseInstance) GetBooleanMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1456,7 +1455,7 @@ func (s *jsiiProxy_SqlDatabaseInstance) GetListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1472,7 +1471,7 @@ func (s *jsiiProxy_SqlDatabaseInstance) GetNumberAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1488,7 +1487,7 @@ func (s *jsiiProxy_SqlDatabaseInstance) GetNumberListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1504,7 +1503,7 @@ func (s *jsiiProxy_SqlDatabaseInstance) GetNumberMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1520,7 +1519,7 @@ func (s *jsiiProxy_SqlDatabaseInstance) GetStringAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1536,15 +1535,15 @@ func (s *jsiiProxy_SqlDatabaseInstance) GetStringMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SqlDatabaseInstance) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SqlDatabaseInstance) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1563,7 +1562,7 @@ func (s *jsiiProxy_SqlDatabaseInstance) ImportFrom(id *string, provider cdktf.Te
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1576,7 +1575,7 @@ func (s *jsiiProxy_SqlDatabaseInstance) InterpolationForAttribute(terraformAttri
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1590,18 +1589,18 @@ func (s *jsiiProxy_SqlDatabaseInstance) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_SqlDatabaseInstance) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_SqlDatabaseInstance) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1612,7 +1611,7 @@ func (s *jsiiProxy_SqlDatabaseInstance) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1623,7 +1622,7 @@ func (s *jsiiProxy_SqlDatabaseInstance) OverrideLogicalId(newLogicalId *string) 
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1634,7 +1633,7 @@ func (s *jsiiProxy_SqlDatabaseInstance) PutClone(value *SqlDatabaseInstanceClone
 	_jsii_.InvokeVoid(
 		s,
 		"putClone",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1645,7 +1644,7 @@ func (s *jsiiProxy_SqlDatabaseInstance) PutPointInTimeRestoreContext(value *SqlD
 	_jsii_.InvokeVoid(
 		s,
 		"putPointInTimeRestoreContext",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1656,7 +1655,7 @@ func (s *jsiiProxy_SqlDatabaseInstance) PutReplicaConfiguration(value *SqlDataba
 	_jsii_.InvokeVoid(
 		s,
 		"putReplicaConfiguration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1667,7 +1666,7 @@ func (s *jsiiProxy_SqlDatabaseInstance) PutReplicationCluster(value *SqlDatabase
 	_jsii_.InvokeVoid(
 		s,
 		"putReplicationCluster",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1678,7 +1677,7 @@ func (s *jsiiProxy_SqlDatabaseInstance) PutRestoreBackupContext(value *SqlDataba
 	_jsii_.InvokeVoid(
 		s,
 		"putRestoreBackupContext",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1689,7 +1688,7 @@ func (s *jsiiProxy_SqlDatabaseInstance) PutSettings(value *SqlDatabaseInstanceSe
 	_jsii_.InvokeVoid(
 		s,
 		"putSettings",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1700,7 +1699,7 @@ func (s *jsiiProxy_SqlDatabaseInstance) PutTimeouts(value *SqlDatabaseInstanceTi
 	_jsii_.InvokeVoid(
 		s,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1896,8 +1895,8 @@ func (s *jsiiProxy_SqlDatabaseInstance) ResetTimeouts() {
 	)
 }
 
-func (s *jsiiProxy_SqlDatabaseInstance) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SqlDatabaseInstance) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1909,8 +1908,8 @@ func (s *jsiiProxy_SqlDatabaseInstance) SynthesizeAttributes() *map[string]inter
 	return returns
 }
 
-func (s *jsiiProxy_SqlDatabaseInstance) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SqlDatabaseInstance) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1922,8 +1921,8 @@ func (s *jsiiProxy_SqlDatabaseInstance) SynthesizeHclAttributes() *map[string]in
 	return returns
 }
 
-func (s *jsiiProxy_SqlDatabaseInstance) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SqlDatabaseInstance) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1935,8 +1934,8 @@ func (s *jsiiProxy_SqlDatabaseInstance) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_SqlDatabaseInstance) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SqlDatabaseInstance) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1961,8 +1960,8 @@ func (s *jsiiProxy_SqlDatabaseInstance) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_SqlDatabaseInstance) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SqlDatabaseInstance) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1973,4 +1972,3 @@ func (s *jsiiProxy_SqlDatabaseInstance) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataplexGlossaryTermTimeoutsOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_DataplexGlossaryTermTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataplexGlossaryTermTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_DataplexGlossaryTermTimeoutsOutputReference) validateSetDelet
 	return nil
 }
 
-func (j *jsiiProxy_DataplexGlossaryTermTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataplexGlossaryTermTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewDataplexGlossaryTermTimeoutsOutputReferenceParameters(terraformR
 
 	return nil
 }
-

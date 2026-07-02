@@ -1,6 +1,5 @@
 package computeregionbackendservice
 
-
 type ComputeRegionBackendServiceBackend struct {
 	// The fully-qualified URL of an Instance Group or Network Endpoint Group resource.
 	//
@@ -48,7 +47,7 @@ type ComputeRegionBackendServiceBackend struct {
 	// custom_metrics block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_backend_service#custom_metrics ComputeRegionBackendService#custom_metrics}
-	CustomMetrics interface{} `field:"optional" json:"customMetrics" yaml:"customMetrics"`
+	CustomMetrics any `field:"optional" json:"customMetrics" yaml:"customMetrics"`
 	// An optional description of this resource. Provide this property when you create the resource.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_backend_service#description ComputeRegionBackendService#description}
@@ -59,7 +58,7 @@ type ComputeRegionBackendServiceBackend struct {
 	// than one failover backend can be configured for a given RegionBackendService.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_backend_service#failover ComputeRegionBackendService#failover}
-	Failover interface{} `field:"optional" json:"failover" yaml:"failover"`
+	Failover any `field:"optional" json:"failover" yaml:"failover"`
 	// The max number of simultaneous connections for the group.
 	//
 	// Can
@@ -126,4 +125,3 @@ type ComputeRegionBackendServiceBackend struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_backend_service#max_utilization ComputeRegionBackendService#max_utilization}
 	MaxUtilization *float64 `field:"optional" json:"maxUtilization" yaml:"maxUtilization"`
 }
-

@@ -1,6 +1,5 @@
 package datapipelinepipeline
 
-
 type DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchParametersEnvironment struct {
 	// Additional experiment flags for the job.
 	//
@@ -17,11 +16,11 @@ type DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchParametersEn
 	// Whether to bypass the safety checks for the job's temporary directory. Use with caution.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_pipeline_pipeline#bypass_temp_dir_validation DataPipelinePipeline#bypass_temp_dir_validation}
-	BypassTempDirValidation interface{} `field:"optional" json:"bypassTempDirValidation" yaml:"bypassTempDirValidation"`
+	BypassTempDirValidation any `field:"optional" json:"bypassTempDirValidation" yaml:"bypassTempDirValidation"`
 	// Whether to enable Streaming Engine for the job.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_pipeline_pipeline#enable_streaming_engine DataPipelinePipeline#enable_streaming_engine}
-	EnableStreamingEngine interface{} `field:"optional" json:"enableStreamingEngine" yaml:"enableStreamingEngine"`
+	EnableStreamingEngine any `field:"optional" json:"enableStreamingEngine" yaml:"enableStreamingEngine"`
 	// Configuration for VM IPs. https://cloud.google.com/dataflow/docs/reference/data-pipelines/rest/v1/projects.locations.pipelines#WorkerIPAddressConfiguration Possible values: ["WORKER_IP_UNSPECIFIED", "WORKER_IP_PUBLIC", "WORKER_IP_PRIVATE"].
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_pipeline_pipeline#ip_configuration DataPipelinePipeline#ip_configuration}
@@ -75,4 +74,3 @@ type DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchParametersEn
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_pipeline_pipeline#zone DataPipelinePipeline#zone}
 	Zone *string `field:"optional" json:"zone" yaml:"zone"`
 }
-

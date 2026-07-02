@@ -19,7 +19,7 @@ func (r *jsiiProxy_RedisCluster) validateAddMoveTargetParameters(moveTarget *str
 	return nil
 }
 
-func (r *jsiiProxy_RedisCluster) validateAddOverrideParameters(path *string, value interface{}) error {
+func (r *jsiiProxy_RedisCluster) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (r *jsiiProxy_RedisCluster) validateMoveFromIdParameters(id *string) error 
 	return nil
 }
 
-func (r *jsiiProxy_RedisCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (r *jsiiProxy_RedisCluster) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -270,7 +270,7 @@ func (r *jsiiProxy_RedisCluster) validatePutPersistenceConfigParameters(value *R
 	return nil
 }
 
-func (r *jsiiProxy_RedisCluster) validatePutPscConfigsParameters(value interface{}) error {
+func (r *jsiiProxy_RedisCluster) validatePutPscConfigsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -339,7 +339,7 @@ func validateRedisCluster_GenerateConfigForImportParameters(scope constructs.Con
 	return nil
 }
 
-func validateRedisCluster_IsConstructParameters(x interface{}) error {
+func validateRedisCluster_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -347,7 +347,7 @@ func validateRedisCluster_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateRedisCluster_IsTerraformElementParameters(x interface{}) error {
+func validateRedisCluster_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -355,7 +355,7 @@ func validateRedisCluster_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateRedisCluster_IsTerraformResourceParameters(x interface{}) error {
+func validateRedisCluster_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -371,7 +371,7 @@ func (j *jsiiProxy_RedisCluster) validateSetAuthorizationModeParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_RedisCluster) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_RedisCluster) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -404,7 +404,7 @@ func (j *jsiiProxy_RedisCluster) validateSetConnectionParameters(val interface{}
 	return nil
 }
 
-func (j *jsiiProxy_RedisCluster) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_RedisCluster) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -461,7 +461,7 @@ func (j *jsiiProxy_RedisCluster) validateSetCountParameters(val interface{}) err
 	return nil
 }
 
-func (j *jsiiProxy_RedisCluster) validateSetDeletionProtectionEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_RedisCluster) validateSetDeletionProtectionEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -545,7 +545,7 @@ func (j *jsiiProxy_RedisCluster) validateSetProjectParameters(val *string) error
 	return nil
 }
 
-func (j *jsiiProxy_RedisCluster) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_RedisCluster) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -665,4 +665,3 @@ func validateNewRedisClusterParameters(scope constructs.Construct, id *string, c
 
 	return nil
 }
-

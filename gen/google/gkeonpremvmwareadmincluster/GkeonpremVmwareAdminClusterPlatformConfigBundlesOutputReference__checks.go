@@ -98,7 +98,7 @@ func (g *jsiiProxy_GkeonpremVmwareAdminClusterPlatformConfigBundlesOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_GkeonpremVmwareAdminClusterPlatformConfigBundlesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GkeonpremVmwareAdminClusterPlatformConfigBundlesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGkeonpremVmwareAdminClusterPlatformConfigBundlesOutputReferenceP
 
 	return nil
 }
-

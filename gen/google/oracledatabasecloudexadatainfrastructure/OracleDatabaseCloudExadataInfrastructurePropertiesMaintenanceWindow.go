@@ -1,6 +1,5 @@
 package oracledatabasecloudexadatainfrastructure
 
-
 type OracleDatabaseCloudExadataInfrastructurePropertiesMaintenanceWindow struct {
 	// Determines the amount of time the system will wait before the start of each database server patching operation.
 	//
@@ -28,7 +27,7 @@ type OracleDatabaseCloudExadataInfrastructurePropertiesMaintenanceWindow struct 
 	// If true, enables the configuration of a custom action timeout (waiting period) between database server patching operations.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/oracle_database_cloud_exadata_infrastructure#is_custom_action_timeout_enabled OracleDatabaseCloudExadataInfrastructure#is_custom_action_timeout_enabled}
-	IsCustomActionTimeoutEnabled interface{} `field:"optional" json:"isCustomActionTimeoutEnabled" yaml:"isCustomActionTimeoutEnabled"`
+	IsCustomActionTimeoutEnabled any `field:"optional" json:"isCustomActionTimeoutEnabled" yaml:"isCustomActionTimeoutEnabled"`
 	// Lead time window allows user to set a lead time to prepare for a down time.
 	//
 	// The lead time is in weeks and valid value is between 1 to 4.
@@ -56,4 +55,3 @@ type OracleDatabaseCloudExadataInfrastructurePropertiesMaintenanceWindow struct 
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/oracle_database_cloud_exadata_infrastructure#weeks_of_month OracleDatabaseCloudExadataInfrastructure#weeks_of_month}
 	WeeksOfMonth *[]*float64 `field:"optional" json:"weeksOfMonth" yaml:"weeksOfMonth"`
 }
-

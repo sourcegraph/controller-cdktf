@@ -98,7 +98,7 @@ func (m *jsiiProxy_MonitoringSloBasicSliLatencyOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_MonitoringSloBasicSliLatencyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MonitoringSloBasicSliLatencyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewMonitoringSloBasicSliLatencyOutputReferenceParameters(terraformR
 
 	return nil
 }
-

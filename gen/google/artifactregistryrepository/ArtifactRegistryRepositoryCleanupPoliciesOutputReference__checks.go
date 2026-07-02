@@ -128,7 +128,7 @@ func (j *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -201,7 +201,7 @@ func (j *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -260,4 +260,3 @@ func validateNewArtifactRegistryRepositoryCleanupPoliciesOutputReferenceParamete
 
 	return nil
 }
-

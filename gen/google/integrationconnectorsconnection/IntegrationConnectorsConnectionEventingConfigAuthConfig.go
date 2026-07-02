@@ -1,6 +1,5 @@
 package integrationconnectorsconnection
 
-
 type IntegrationConnectorsConnectionEventingConfigAuthConfig struct {
 	// authType of the Connection Possible values: ["USER_PASSWORD"].
 	//
@@ -13,10 +12,9 @@ type IntegrationConnectorsConnectionEventingConfigAuthConfig struct {
 	// additional_variable block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/integration_connectors_connection#additional_variable IntegrationConnectorsConnection#additional_variable}
-	AdditionalVariable interface{} `field:"optional" json:"additionalVariable" yaml:"additionalVariable"`
+	AdditionalVariable any `field:"optional" json:"additionalVariable" yaml:"additionalVariable"`
 	// The type of authentication configured.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/integration_connectors_connection#auth_key IntegrationConnectorsConnection#auth_key}
 	AuthKey *string `field:"optional" json:"authKey" yaml:"authKey"`
 }
-

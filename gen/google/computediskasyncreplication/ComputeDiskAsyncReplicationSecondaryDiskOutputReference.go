@@ -12,9 +12,9 @@ type ComputeDiskAsyncReplicationSecondaryDiskOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -44,7 +44,7 @@ type ComputeDiskAsyncReplicationSecondaryDiskOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -67,7 +67,7 @@ type ComputeDiskAsyncReplicationSecondaryDiskOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,8 +80,8 @@ type jsiiProxy_ComputeDiskAsyncReplicationSecondaryDiskOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ComputeDiskAsyncReplicationSecondaryDiskOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeDiskAsyncReplicationSecondaryDiskOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -180,7 +180,6 @@ func (j *jsiiProxy_ComputeDiskAsyncReplicationSecondaryDiskOutputReference) Terr
 	return returns
 }
 
-
 func NewComputeDiskAsyncReplicationSecondaryDiskOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ComputeDiskAsyncReplicationSecondaryDiskOutputReference {
 	_init_.Initialize()
 
@@ -191,7 +190,7 @@ func NewComputeDiskAsyncReplicationSecondaryDiskOutputReference(terraformResourc
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeDiskAsyncReplication.ComputeDiskAsyncReplicationSecondaryDiskOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -203,12 +202,12 @@ func NewComputeDiskAsyncReplicationSecondaryDiskOutputReference_Override(c Compu
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeDiskAsyncReplication.ComputeDiskAsyncReplicationSecondaryDiskOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputeDiskAsyncReplicationSecondaryDiskOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ComputeDiskAsyncReplicationSecondaryDiskOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -219,7 +218,7 @@ func (j *jsiiProxy_ComputeDiskAsyncReplicationSecondaryDiskOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_ComputeDiskAsyncReplicationSecondaryDiskOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ComputeDiskAsyncReplicationSecondaryDiskOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -230,7 +229,7 @@ func (j *jsiiProxy_ComputeDiskAsyncReplicationSecondaryDiskOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_ComputeDiskAsyncReplicationSecondaryDiskOutputReference)SetDisk(val *string) {
+func (j *jsiiProxy_ComputeDiskAsyncReplicationSecondaryDiskOutputReference) SetDisk(val *string) {
 	if err := j.validateSetDiskParameters(val); err != nil {
 		panic(err)
 	}
@@ -241,7 +240,7 @@ func (j *jsiiProxy_ComputeDiskAsyncReplicationSecondaryDiskOutputReference)SetDi
 	)
 }
 
-func (j *jsiiProxy_ComputeDiskAsyncReplicationSecondaryDiskOutputReference)SetInternalValue(val *ComputeDiskAsyncReplicationSecondaryDisk) {
+func (j *jsiiProxy_ComputeDiskAsyncReplicationSecondaryDiskOutputReference) SetInternalValue(val *ComputeDiskAsyncReplicationSecondaryDisk) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -252,7 +251,7 @@ func (j *jsiiProxy_ComputeDiskAsyncReplicationSecondaryDiskOutputReference)SetIn
 	)
 }
 
-func (j *jsiiProxy_ComputeDiskAsyncReplicationSecondaryDiskOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ComputeDiskAsyncReplicationSecondaryDiskOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -263,7 +262,7 @@ func (j *jsiiProxy_ComputeDiskAsyncReplicationSecondaryDiskOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_ComputeDiskAsyncReplicationSecondaryDiskOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeDiskAsyncReplicationSecondaryDiskOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,16 +286,16 @@ func (c *jsiiProxy_ComputeDiskAsyncReplicationSecondaryDiskOutputReference) Comp
 	return returns
 }
 
-func (c *jsiiProxy_ComputeDiskAsyncReplicationSecondaryDiskOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComputeDiskAsyncReplicationSecondaryDiskOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -312,7 +311,7 @@ func (c *jsiiProxy_ComputeDiskAsyncReplicationSecondaryDiskOutputReference) GetB
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -328,7 +327,7 @@ func (c *jsiiProxy_ComputeDiskAsyncReplicationSecondaryDiskOutputReference) GetB
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -344,7 +343,7 @@ func (c *jsiiProxy_ComputeDiskAsyncReplicationSecondaryDiskOutputReference) GetL
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -360,7 +359,7 @@ func (c *jsiiProxy_ComputeDiskAsyncReplicationSecondaryDiskOutputReference) GetN
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -376,7 +375,7 @@ func (c *jsiiProxy_ComputeDiskAsyncReplicationSecondaryDiskOutputReference) GetN
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -392,7 +391,7 @@ func (c *jsiiProxy_ComputeDiskAsyncReplicationSecondaryDiskOutputReference) GetN
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -408,7 +407,7 @@ func (c *jsiiProxy_ComputeDiskAsyncReplicationSecondaryDiskOutputReference) GetS
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -424,7 +423,7 @@ func (c *jsiiProxy_ComputeDiskAsyncReplicationSecondaryDiskOutputReference) GetS
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -453,23 +452,23 @@ func (c *jsiiProxy_ComputeDiskAsyncReplicationSecondaryDiskOutputReference) Inte
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ComputeDiskAsyncReplicationSecondaryDiskOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ComputeDiskAsyncReplicationSecondaryDiskOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -488,4 +487,3 @@ func (c *jsiiProxy_ComputeDiskAsyncReplicationSecondaryDiskOutputReference) ToSt
 
 	return returns
 }
-

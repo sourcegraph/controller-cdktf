@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleLustreInstanceMaintenancePolicyOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleLustreInstanceMaintenancePolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleLustreInstanceMaintenancePolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleLustreInstanceMaintenancePolicyOutputReferenceParamete
 
 	return nil
 }
-

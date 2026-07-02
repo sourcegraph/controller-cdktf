@@ -15,9 +15,9 @@ type GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigOutputRefer
 	AuditIntervalSecondsInput() *float64
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -32,7 +32,7 @@ type GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigOutputRefer
 	// Experimental.
 	CreationStack() *[]*string
 	DeploymentConfigs() GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigsList
-	DeploymentConfigsInput() interface{}
+	DeploymentConfigsInput() any
 	ExemptableNamespaces() *[]*string
 	SetExemptableNamespaces(val *[]*string)
 	ExemptableNamespacesInput() *[]*string
@@ -43,19 +43,19 @@ type GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigOutputRefer
 	InstallSpecInput() *string
 	InternalValue() *GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfig
 	SetInternalValue(val *GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfig)
-	LogDeniesEnabled() interface{}
-	SetLogDeniesEnabled(val interface{})
-	LogDeniesEnabledInput() interface{}
+	LogDeniesEnabled() any
+	SetLogDeniesEnabled(val any)
+	LogDeniesEnabledInput() any
 	Monitoring() GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigMonitoringOutputReference
 	MonitoringInput() *GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigMonitoring
-	MutationEnabled() interface{}
-	SetMutationEnabled(val interface{})
-	MutationEnabledInput() interface{}
+	MutationEnabled() any
+	SetMutationEnabled(val any)
+	MutationEnabledInput() any
 	PolicyContent() GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentOutputReference
 	PolicyContentInput() *GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContent
-	ReferentialRulesEnabled() interface{}
-	SetReferentialRulesEnabled(val interface{})
-	ReferentialRulesEnabledInput() interface{}
+	ReferentialRulesEnabled() any
+	SetReferentialRulesEnabled(val any)
+	ReferentialRulesEnabledInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,7 +67,7 @@ type GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigOutputRefer
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -88,7 +88,7 @@ type GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigOutputRefer
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutDeploymentConfigs(value interface{})
+	PutDeploymentConfigs(value any)
 	PutMonitoring(value *GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigMonitoring)
 	PutPolicyContent(value *GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContent)
 	ResetAuditIntervalSeconds()
@@ -103,7 +103,7 @@ type GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigOutputRefer
 	ResetReferentialRulesEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -136,8 +136,8 @@ func (j *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubCon
 	return returns
 }
 
-func (j *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -196,8 +196,8 @@ func (j *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubCon
 	return returns
 }
 
-func (j *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigOutputReference) DeploymentConfigsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigOutputReference) DeploymentConfigsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deploymentConfigsInput",
@@ -266,8 +266,8 @@ func (j *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubCon
 	return returns
 }
 
-func (j *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigOutputReference) LogDeniesEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigOutputReference) LogDeniesEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"logDeniesEnabled",
@@ -276,8 +276,8 @@ func (j *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubCon
 	return returns
 }
 
-func (j *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigOutputReference) LogDeniesEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigOutputReference) LogDeniesEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"logDeniesEnabledInput",
@@ -306,8 +306,8 @@ func (j *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubCon
 	return returns
 }
 
-func (j *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigOutputReference) MutationEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigOutputReference) MutationEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"mutationEnabled",
@@ -316,8 +316,8 @@ func (j *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubCon
 	return returns
 }
 
-func (j *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigOutputReference) MutationEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigOutputReference) MutationEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"mutationEnabledInput",
@@ -346,8 +346,8 @@ func (j *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubCon
 	return returns
 }
 
-func (j *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigOutputReference) ReferentialRulesEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigOutputReference) ReferentialRulesEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"referentialRulesEnabled",
@@ -356,8 +356,8 @@ func (j *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubCon
 	return returns
 }
 
-func (j *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigOutputReference) ReferentialRulesEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigOutputReference) ReferentialRulesEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"referentialRulesEnabledInput",
@@ -386,7 +386,6 @@ func (j *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubCon
 	return returns
 }
 
-
 func NewGkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigOutputReference {
 	_init_.Initialize()
 
@@ -397,7 +396,7 @@ func NewGkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigOutputRe
 
 	_jsii_.Create(
 		"@cdktf/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -409,12 +408,12 @@ func NewGkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigOutputRe
 
 	_jsii_.Create(
 		"@cdktf/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigOutputReference)SetAuditIntervalSeconds(val *float64) {
+func (j *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigOutputReference) SetAuditIntervalSeconds(val *float64) {
 	if err := j.validateSetAuditIntervalSecondsParameters(val); err != nil {
 		panic(err)
 	}
@@ -425,7 +424,7 @@ func (j *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubCon
 	)
 }
 
-func (j *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -436,7 +435,7 @@ func (j *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubCon
 	)
 }
 
-func (j *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -447,7 +446,7 @@ func (j *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubCon
 	)
 }
 
-func (j *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigOutputReference)SetConstraintViolationLimit(val *float64) {
+func (j *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigOutputReference) SetConstraintViolationLimit(val *float64) {
 	if err := j.validateSetConstraintViolationLimitParameters(val); err != nil {
 		panic(err)
 	}
@@ -458,7 +457,7 @@ func (j *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubCon
 	)
 }
 
-func (j *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigOutputReference)SetExemptableNamespaces(val *[]*string) {
+func (j *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigOutputReference) SetExemptableNamespaces(val *[]*string) {
 	if err := j.validateSetExemptableNamespacesParameters(val); err != nil {
 		panic(err)
 	}
@@ -469,7 +468,7 @@ func (j *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubCon
 	)
 }
 
-func (j *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigOutputReference)SetInstallSpec(val *string) {
+func (j *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigOutputReference) SetInstallSpec(val *string) {
 	if err := j.validateSetInstallSpecParameters(val); err != nil {
 		panic(err)
 	}
@@ -480,7 +479,7 @@ func (j *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubCon
 	)
 }
 
-func (j *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigOutputReference)SetInternalValue(val *GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfig) {
+func (j *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigOutputReference) SetInternalValue(val *GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -491,7 +490,7 @@ func (j *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubCon
 	)
 }
 
-func (j *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigOutputReference)SetLogDeniesEnabled(val interface{}) {
+func (j *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigOutputReference) SetLogDeniesEnabled(val any) {
 	if err := j.validateSetLogDeniesEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -502,7 +501,7 @@ func (j *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubCon
 	)
 }
 
-func (j *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigOutputReference)SetMutationEnabled(val interface{}) {
+func (j *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigOutputReference) SetMutationEnabled(val any) {
 	if err := j.validateSetMutationEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -513,7 +512,7 @@ func (j *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubCon
 	)
 }
 
-func (j *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigOutputReference)SetReferentialRulesEnabled(val interface{}) {
+func (j *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigOutputReference) SetReferentialRulesEnabled(val any) {
 	if err := j.validateSetReferentialRulesEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -524,7 +523,7 @@ func (j *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubCon
 	)
 }
 
-func (j *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -535,7 +534,7 @@ func (j *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubCon
 	)
 }
 
-func (j *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -559,16 +558,16 @@ func (g *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubCon
 	return returns
 }
 
-func (g *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -584,7 +583,7 @@ func (g *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubCon
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -600,7 +599,7 @@ func (g *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubCon
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -616,7 +615,7 @@ func (g *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubCon
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -632,7 +631,7 @@ func (g *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubCon
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -648,7 +647,7 @@ func (g *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubCon
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -664,7 +663,7 @@ func (g *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubCon
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -680,7 +679,7 @@ func (g *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubCon
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -696,7 +695,7 @@ func (g *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubCon
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -725,21 +724,21 @@ func (g *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubCon
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigOutputReference) PutDeploymentConfigs(value interface{}) {
+func (g *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigOutputReference) PutDeploymentConfigs(value any) {
 	if err := g.validatePutDeploymentConfigsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putDeploymentConfigs",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -750,7 +749,7 @@ func (g *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubCon
 	_jsii_.InvokeVoid(
 		g,
 		"putMonitoring",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -761,7 +760,7 @@ func (g *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubCon
 	_jsii_.InvokeVoid(
 		g,
 		"putPolicyContent",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -845,16 +844,16 @@ func (g *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubCon
 	)
 }
 
-func (g *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -873,4 +872,3 @@ func (g *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubCon
 
 	return returns
 }
-

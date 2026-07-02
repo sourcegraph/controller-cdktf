@@ -34,7 +34,7 @@ func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigInfoTypesL
 	return nil
 }
 
-func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigInfoTypesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigInfoTypesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDataLossPreventionJobTriggerInspectJobInspectConfigInfoTypesList
 
 	return nil
 }
-

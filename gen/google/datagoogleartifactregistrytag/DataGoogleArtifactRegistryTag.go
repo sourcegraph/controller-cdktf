@@ -15,11 +15,11 @@ type DataGoogleArtifactRegistryTag interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -56,7 +56,7 @@ type DataGoogleArtifactRegistryTag interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RepositoryId() *string
 	SetRepositoryId(val *string)
 	RepositoryIdInput() *string
@@ -66,14 +66,14 @@ type DataGoogleArtifactRegistryTag interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Version() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -100,18 +100,18 @@ type DataGoogleArtifactRegistryTag interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataGoogleArtifactRegistryTag
@@ -129,8 +129,8 @@ func (j *jsiiProxy_DataGoogleArtifactRegistryTag) CdktfStack() cdktf.TerraformSt
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleArtifactRegistryTag) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleArtifactRegistryTag) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -139,8 +139,8 @@ func (j *jsiiProxy_DataGoogleArtifactRegistryTag) ConstructNodeMetadata() *map[s
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleArtifactRegistryTag) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleArtifactRegistryTag) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -309,8 +309,8 @@ func (j *jsiiProxy_DataGoogleArtifactRegistryTag) Provider() cdktf.TerraformProv
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleArtifactRegistryTag) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleArtifactRegistryTag) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -369,8 +369,8 @@ func (j *jsiiProxy_DataGoogleArtifactRegistryTag) TerraformGeneratorMetadata() *
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleArtifactRegistryTag) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleArtifactRegistryTag) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -399,7 +399,6 @@ func (j *jsiiProxy_DataGoogleArtifactRegistryTag) Version() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/artifact_registry_tag google_artifact_registry_tag} Data Source.
 func NewDataGoogleArtifactRegistryTag(scope constructs.Construct, id *string, config *DataGoogleArtifactRegistryTagConfig) DataGoogleArtifactRegistryTag {
 	_init_.Initialize()
@@ -411,7 +410,7 @@ func NewDataGoogleArtifactRegistryTag(scope constructs.Construct, id *string, co
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleArtifactRegistryTag.DataGoogleArtifactRegistryTag",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -424,12 +423,12 @@ func NewDataGoogleArtifactRegistryTag_Override(d DataGoogleArtifactRegistryTag, 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleArtifactRegistryTag.DataGoogleArtifactRegistryTag",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataGoogleArtifactRegistryTag)SetCount(val interface{}) {
+func (j *jsiiProxy_DataGoogleArtifactRegistryTag) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -440,7 +439,7 @@ func (j *jsiiProxy_DataGoogleArtifactRegistryTag)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleArtifactRegistryTag)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataGoogleArtifactRegistryTag) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -448,7 +447,7 @@ func (j *jsiiProxy_DataGoogleArtifactRegistryTag)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleArtifactRegistryTag)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGoogleArtifactRegistryTag) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -456,7 +455,7 @@ func (j *jsiiProxy_DataGoogleArtifactRegistryTag)SetForEach(val cdktf.ITerraform
 	)
 }
 
-func (j *jsiiProxy_DataGoogleArtifactRegistryTag)SetId(val *string) {
+func (j *jsiiProxy_DataGoogleArtifactRegistryTag) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -467,7 +466,7 @@ func (j *jsiiProxy_DataGoogleArtifactRegistryTag)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleArtifactRegistryTag)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGoogleArtifactRegistryTag) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -478,7 +477,7 @@ func (j *jsiiProxy_DataGoogleArtifactRegistryTag)SetLifecycle(val *cdktf.Terrafo
 	)
 }
 
-func (j *jsiiProxy_DataGoogleArtifactRegistryTag)SetLocation(val *string) {
+func (j *jsiiProxy_DataGoogleArtifactRegistryTag) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -489,7 +488,7 @@ func (j *jsiiProxy_DataGoogleArtifactRegistryTag)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleArtifactRegistryTag)SetPackageName(val *string) {
+func (j *jsiiProxy_DataGoogleArtifactRegistryTag) SetPackageName(val *string) {
 	if err := j.validateSetPackageNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -500,7 +499,7 @@ func (j *jsiiProxy_DataGoogleArtifactRegistryTag)SetPackageName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleArtifactRegistryTag)SetProject(val *string) {
+func (j *jsiiProxy_DataGoogleArtifactRegistryTag) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -511,7 +510,7 @@ func (j *jsiiProxy_DataGoogleArtifactRegistryTag)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleArtifactRegistryTag)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGoogleArtifactRegistryTag) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -519,7 +518,7 @@ func (j *jsiiProxy_DataGoogleArtifactRegistryTag)SetProvider(val cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_DataGoogleArtifactRegistryTag)SetRepositoryId(val *string) {
+func (j *jsiiProxy_DataGoogleArtifactRegistryTag) SetRepositoryId(val *string) {
 	if err := j.validateSetRepositoryIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -530,7 +529,7 @@ func (j *jsiiProxy_DataGoogleArtifactRegistryTag)SetRepositoryId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleArtifactRegistryTag)SetTagName(val *string) {
+func (j *jsiiProxy_DataGoogleArtifactRegistryTag) SetTagName(val *string) {
 	if err := j.validateSetTagNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -553,7 +552,7 @@ func DataGoogleArtifactRegistryTag_GenerateConfigForImport(scope constructs.Cons
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleArtifactRegistryTag.DataGoogleArtifactRegistryTag",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -577,7 +576,7 @@ func DataGoogleArtifactRegistryTag_GenerateConfigForImport(scope constructs.Cons
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataGoogleArtifactRegistryTag_IsConstruct(x interface{}) *bool {
+func DataGoogleArtifactRegistryTag_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleArtifactRegistryTag_IsConstructParameters(x); err != nil {
@@ -588,7 +587,7 @@ func DataGoogleArtifactRegistryTag_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleArtifactRegistryTag.DataGoogleArtifactRegistryTag",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -596,7 +595,7 @@ func DataGoogleArtifactRegistryTag_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGoogleArtifactRegistryTag_IsTerraformDataSource(x interface{}) *bool {
+func DataGoogleArtifactRegistryTag_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleArtifactRegistryTag_IsTerraformDataSourceParameters(x); err != nil {
@@ -607,7 +606,7 @@ func DataGoogleArtifactRegistryTag_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleArtifactRegistryTag.DataGoogleArtifactRegistryTag",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -615,7 +614,7 @@ func DataGoogleArtifactRegistryTag_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGoogleArtifactRegistryTag_IsTerraformElement(x interface{}) *bool {
+func DataGoogleArtifactRegistryTag_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleArtifactRegistryTag_IsTerraformElementParameters(x); err != nil {
@@ -626,7 +625,7 @@ func DataGoogleArtifactRegistryTag_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleArtifactRegistryTag.DataGoogleArtifactRegistryTag",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -644,27 +643,27 @@ func DataGoogleArtifactRegistryTag_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleArtifactRegistryTag) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataGoogleArtifactRegistryTag) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataGoogleArtifactRegistryTag) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataGoogleArtifactRegistryTag) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -680,7 +679,7 @@ func (d *jsiiProxy_DataGoogleArtifactRegistryTag) GetBooleanAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -696,7 +695,7 @@ func (d *jsiiProxy_DataGoogleArtifactRegistryTag) GetBooleanMapAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -712,7 +711,7 @@ func (d *jsiiProxy_DataGoogleArtifactRegistryTag) GetListAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -728,7 +727,7 @@ func (d *jsiiProxy_DataGoogleArtifactRegistryTag) GetNumberAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -744,7 +743,7 @@ func (d *jsiiProxy_DataGoogleArtifactRegistryTag) GetNumberListAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -760,7 +759,7 @@ func (d *jsiiProxy_DataGoogleArtifactRegistryTag) GetNumberMapAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -776,7 +775,7 @@ func (d *jsiiProxy_DataGoogleArtifactRegistryTag) GetStringAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -792,7 +791,7 @@ func (d *jsiiProxy_DataGoogleArtifactRegistryTag) GetStringMapAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -808,7 +807,7 @@ func (d *jsiiProxy_DataGoogleArtifactRegistryTag) InterpolationForAttribute(terr
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -822,7 +821,7 @@ func (d *jsiiProxy_DataGoogleArtifactRegistryTag) OverrideLogicalId(newLogicalId
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -850,8 +849,8 @@ func (d *jsiiProxy_DataGoogleArtifactRegistryTag) ResetProject() {
 	)
 }
 
-func (d *jsiiProxy_DataGoogleArtifactRegistryTag) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleArtifactRegistryTag) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -863,8 +862,8 @@ func (d *jsiiProxy_DataGoogleArtifactRegistryTag) SynthesizeAttributes() *map[st
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleArtifactRegistryTag) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleArtifactRegistryTag) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -876,8 +875,8 @@ func (d *jsiiProxy_DataGoogleArtifactRegistryTag) SynthesizeHclAttributes() *map
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleArtifactRegistryTag) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleArtifactRegistryTag) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -889,8 +888,8 @@ func (d *jsiiProxy_DataGoogleArtifactRegistryTag) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleArtifactRegistryTag) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleArtifactRegistryTag) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -915,8 +914,8 @@ func (d *jsiiProxy_DataGoogleArtifactRegistryTag) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleArtifactRegistryTag) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleArtifactRegistryTag) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -927,4 +926,3 @@ func (d *jsiiProxy_DataGoogleArtifactRegistryTag) ToTerraform() interface{} {
 
 	return returns
 }
-

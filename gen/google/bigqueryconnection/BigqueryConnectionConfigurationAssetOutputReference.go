@@ -12,9 +12,9 @@ type BigqueryConnectionConfigurationAssetOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -46,7 +46,7 @@ type BigqueryConnectionConfigurationAssetOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type BigqueryConnectionConfigurationAssetOutputReference interface {
 	ResetGoogleCloudResource()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_BigqueryConnectionConfigurationAssetOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_BigqueryConnectionConfigurationAssetOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigqueryConnectionConfigurationAssetOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_BigqueryConnectionConfigurationAssetOutputReference) Terrafor
 	return returns
 }
 
-
 func NewBigqueryConnectionConfigurationAssetOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) BigqueryConnectionConfigurationAssetOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewBigqueryConnectionConfigurationAssetOutputReference(terraformResource cd
 
 	_jsii_.Create(
 		"@cdktf/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAssetOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewBigqueryConnectionConfigurationAssetOutputReference_Override(b BigqueryC
 
 	_jsii_.Create(
 		"@cdktf/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAssetOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		b,
 	)
 }
 
-func (j *jsiiProxy_BigqueryConnectionConfigurationAssetOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_BigqueryConnectionConfigurationAssetOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_BigqueryConnectionConfigurationAssetOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_BigqueryConnectionConfigurationAssetOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_BigqueryConnectionConfigurationAssetOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_BigqueryConnectionConfigurationAssetOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_BigqueryConnectionConfigurationAssetOutputReference)SetDatabase(val *string) {
+func (j *jsiiProxy_BigqueryConnectionConfigurationAssetOutputReference) SetDatabase(val *string) {
 	if err := j.validateSetDatabaseParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_BigqueryConnectionConfigurationAssetOutputReference)SetDataba
 	)
 }
 
-func (j *jsiiProxy_BigqueryConnectionConfigurationAssetOutputReference)SetGoogleCloudResource(val *string) {
+func (j *jsiiProxy_BigqueryConnectionConfigurationAssetOutputReference) SetGoogleCloudResource(val *string) {
 	if err := j.validateSetGoogleCloudResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_BigqueryConnectionConfigurationAssetOutputReference)SetGoogle
 	)
 }
 
-func (j *jsiiProxy_BigqueryConnectionConfigurationAssetOutputReference)SetInternalValue(val *BigqueryConnectionConfigurationAsset) {
+func (j *jsiiProxy_BigqueryConnectionConfigurationAssetOutputReference) SetInternalValue(val *BigqueryConnectionConfigurationAsset) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_BigqueryConnectionConfigurationAssetOutputReference)SetIntern
 	)
 }
 
-func (j *jsiiProxy_BigqueryConnectionConfigurationAssetOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_BigqueryConnectionConfigurationAssetOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_BigqueryConnectionConfigurationAssetOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_BigqueryConnectionConfigurationAssetOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BigqueryConnectionConfigurationAssetOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,16 +311,16 @@ func (b *jsiiProxy_BigqueryConnectionConfigurationAssetOutputReference) ComputeF
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryConnectionConfigurationAssetOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (b *jsiiProxy_BigqueryConnectionConfigurationAssetOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := b.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -337,7 +336,7 @@ func (b *jsiiProxy_BigqueryConnectionConfigurationAssetOutputReference) GetBoole
 	_jsii_.Invoke(
 		b,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -353,7 +352,7 @@ func (b *jsiiProxy_BigqueryConnectionConfigurationAssetOutputReference) GetBoole
 	_jsii_.Invoke(
 		b,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (b *jsiiProxy_BigqueryConnectionConfigurationAssetOutputReference) GetListA
 	_jsii_.Invoke(
 		b,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (b *jsiiProxy_BigqueryConnectionConfigurationAssetOutputReference) GetNumbe
 	_jsii_.Invoke(
 		b,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (b *jsiiProxy_BigqueryConnectionConfigurationAssetOutputReference) GetNumbe
 	_jsii_.Invoke(
 		b,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (b *jsiiProxy_BigqueryConnectionConfigurationAssetOutputReference) GetNumbe
 	_jsii_.Invoke(
 		b,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (b *jsiiProxy_BigqueryConnectionConfigurationAssetOutputReference) GetStrin
 	_jsii_.Invoke(
 		b,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (b *jsiiProxy_BigqueryConnectionConfigurationAssetOutputReference) GetStrin
 	_jsii_.Invoke(
 		b,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func (b *jsiiProxy_BigqueryConnectionConfigurationAssetOutputReference) Interpol
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -501,16 +500,16 @@ func (b *jsiiProxy_BigqueryConnectionConfigurationAssetOutputReference) ResetGoo
 	)
 }
 
-func (b *jsiiProxy_BigqueryConnectionConfigurationAssetOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (b *jsiiProxy_BigqueryConnectionConfigurationAssetOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := b.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (b *jsiiProxy_BigqueryConnectionConfigurationAssetOutputReference) ToString
 
 	return returns
 }
-

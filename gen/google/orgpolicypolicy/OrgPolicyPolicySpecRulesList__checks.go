@@ -34,7 +34,7 @@ func (o *jsiiProxy_OrgPolicyPolicySpecRulesList) validateResolveParameters(_cont
 	return nil
 }
 
-func (j *jsiiProxy_OrgPolicyPolicySpecRulesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_OrgPolicyPolicySpecRulesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewOrgPolicyPolicySpecRulesListParameters(terraformResource cdktf.I
 
 	return nil
 }
-

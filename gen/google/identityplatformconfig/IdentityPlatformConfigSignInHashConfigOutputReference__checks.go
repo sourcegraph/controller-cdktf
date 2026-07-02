@@ -98,7 +98,7 @@ func (i *jsiiProxy_IdentityPlatformConfigSignInHashConfigOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_IdentityPlatformConfigSignInHashConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IdentityPlatformConfigSignInHashConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewIdentityPlatformConfigSignInHashConfigOutputReferenceParameters(
 
 	return nil
 }
-

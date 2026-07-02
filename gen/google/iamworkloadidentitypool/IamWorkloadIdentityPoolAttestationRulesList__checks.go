@@ -34,7 +34,7 @@ func (i *jsiiProxy_IamWorkloadIdentityPoolAttestationRulesList) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_IamWorkloadIdentityPoolAttestationRulesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_IamWorkloadIdentityPoolAttestationRulesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewIamWorkloadIdentityPoolAttestationRulesListParameters(terraformR
 
 	return nil
 }
-

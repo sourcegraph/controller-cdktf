@@ -19,7 +19,7 @@ func (d *jsiiProxy_DataplexLake) validateAddMoveTargetParameters(moveTarget *str
 	return nil
 }
 
-func (d *jsiiProxy_DataplexLake) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataplexLake) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (d *jsiiProxy_DataplexLake) validateMoveFromIdParameters(id *string) error 
 	return nil
 }
 
-func (d *jsiiProxy_DataplexLake) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (d *jsiiProxy_DataplexLake) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateDataplexLake_GenerateConfigForImportParameters(scope constructs.Con
 	return nil
 }
 
-func validateDataplexLake_IsConstructParameters(x interface{}) error {
+func validateDataplexLake_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateDataplexLake_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateDataplexLake_IsTerraformElementParameters(x interface{}) error {
+func validateDataplexLake_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateDataplexLake_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateDataplexLake_IsTerraformResourceParameters(x interface{}) error {
+func validateDataplexLake_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func validateDataplexLake_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_DataplexLake) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_DataplexLake) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -299,7 +299,7 @@ func (j *jsiiProxy_DataplexLake) validateSetConnectionParameters(val interface{}
 	return nil
 }
 
-func (j *jsiiProxy_DataplexLake) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataplexLake) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -420,7 +420,7 @@ func (j *jsiiProxy_DataplexLake) validateSetProjectParameters(val *string) error
 	return nil
 }
 
-func (j *jsiiProxy_DataplexLake) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_DataplexLake) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -484,4 +484,3 @@ func validateNewDataplexLakeParameters(scope constructs.Construct, id *string, c
 
 	return nil
 }
-

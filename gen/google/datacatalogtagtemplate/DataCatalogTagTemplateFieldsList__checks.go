@@ -34,7 +34,7 @@ func (d *jsiiProxy_DataCatalogTagTemplateFieldsList) validateResolveParameters(_
 	return nil
 }
 
-func (j *jsiiProxy_DataCatalogTagTemplateFieldsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataCatalogTagTemplateFieldsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDataCatalogTagTemplateFieldsListParameters(terraformResource cdk
 
 	return nil
 }
-

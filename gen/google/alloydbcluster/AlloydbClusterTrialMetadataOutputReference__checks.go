@@ -98,7 +98,7 @@ func (a *jsiiProxy_AlloydbClusterTrialMetadataOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_AlloydbClusterTrialMetadataOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AlloydbClusterTrialMetadataOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewAlloydbClusterTrialMetadataOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

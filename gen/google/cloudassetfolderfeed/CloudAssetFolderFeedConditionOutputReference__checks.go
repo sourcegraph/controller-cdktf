@@ -98,7 +98,7 @@ func (c *jsiiProxy_CloudAssetFolderFeedConditionOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_CloudAssetFolderFeedConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudAssetFolderFeedConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewCloudAssetFolderFeedConditionOutputReferenceParameters(terraform
 
 	return nil
 }
-

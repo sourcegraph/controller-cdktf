@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeWireGroup.ComputeWireGroup",
-		reflect.TypeOf((*ComputeWireGroup)(nil)).Elem(),
+		reflect.TypeFor[ComputeWireGroup](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -84,7 +84,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "wirePropertiesInput", GoGetter: "WirePropertiesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "wires", GoGetter: "Wires"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeWireGroup{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -92,19 +92,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeWireGroup.ComputeWireGroupConfig",
-		reflect.TypeOf((*ComputeWireGroupConfig)(nil)).Elem(),
+		reflect.TypeFor[ComputeWireGroupConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeWireGroup.ComputeWireGroupEndpoints",
-		reflect.TypeOf((*ComputeWireGroupEndpoints)(nil)).Elem(),
+		reflect.TypeFor[ComputeWireGroupEndpoints](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeWireGroup.ComputeWireGroupEndpointsInterconnects",
-		reflect.TypeOf((*ComputeWireGroupEndpointsInterconnects)(nil)).Elem(),
+		reflect.TypeFor[ComputeWireGroupEndpointsInterconnects](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeWireGroup.ComputeWireGroupEndpointsInterconnectsList",
-		reflect.TypeOf((*ComputeWireGroupEndpointsInterconnectsList)(nil)).Elem(),
+		reflect.TypeFor[ComputeWireGroupEndpointsInterconnectsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -118,7 +118,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeWireGroupEndpointsInterconnectsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -126,7 +126,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeWireGroup.ComputeWireGroupEndpointsInterconnectsOutputReference",
-		reflect.TypeOf((*ComputeWireGroupEndpointsInterconnectsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeWireGroupEndpointsInterconnectsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -158,7 +158,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vlanTags", GoGetter: "VlanTags"},
 			_jsii_.MemberProperty{JsiiProperty: "vlanTagsInput", GoGetter: "VlanTagsInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeWireGroupEndpointsInterconnectsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -166,7 +166,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeWireGroup.ComputeWireGroupEndpointsList",
-		reflect.TypeOf((*ComputeWireGroupEndpointsList)(nil)).Elem(),
+		reflect.TypeFor[ComputeWireGroupEndpointsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -180,7 +180,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeWireGroupEndpointsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -188,7 +188,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeWireGroup.ComputeWireGroupEndpointsOutputReference",
-		reflect.TypeOf((*ComputeWireGroupEndpointsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeWireGroupEndpointsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -218,7 +218,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeWireGroupEndpointsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -226,11 +226,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeWireGroup.ComputeWireGroupTimeouts",
-		reflect.TypeOf((*ComputeWireGroupTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ComputeWireGroupTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeWireGroup.ComputeWireGroupTimeoutsOutputReference",
-		reflect.TypeOf((*ComputeWireGroupTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeWireGroupTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -263,7 +263,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeWireGroupTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -271,15 +271,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeWireGroup.ComputeWireGroupTopology",
-		reflect.TypeOf((*ComputeWireGroupTopology)(nil)).Elem(),
+		reflect.TypeFor[ComputeWireGroupTopology](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeWireGroup.ComputeWireGroupTopologyEndpoints",
-		reflect.TypeOf((*ComputeWireGroupTopologyEndpoints)(nil)).Elem(),
+		reflect.TypeFor[ComputeWireGroupTopologyEndpoints](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeWireGroup.ComputeWireGroupTopologyEndpointsList",
-		reflect.TypeOf((*ComputeWireGroupTopologyEndpointsList)(nil)).Elem(),
+		reflect.TypeFor[ComputeWireGroupTopologyEndpointsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -292,7 +292,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeWireGroupTopologyEndpointsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -300,7 +300,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeWireGroup.ComputeWireGroupTopologyEndpointsOutputReference",
-		reflect.TypeOf((*ComputeWireGroupTopologyEndpointsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeWireGroupTopologyEndpointsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "city", GoGetter: "City"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -326,7 +326,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeWireGroupTopologyEndpointsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -334,7 +334,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeWireGroup.ComputeWireGroupTopologyList",
-		reflect.TypeOf((*ComputeWireGroupTopologyList)(nil)).Elem(),
+		reflect.TypeFor[ComputeWireGroupTopologyList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -347,7 +347,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeWireGroupTopologyList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -355,7 +355,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeWireGroup.ComputeWireGroupTopologyOutputReference",
-		reflect.TypeOf((*ComputeWireGroupTopologyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeWireGroupTopologyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -380,7 +380,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeWireGroupTopologyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -388,11 +388,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeWireGroup.ComputeWireGroupWireProperties",
-		reflect.TypeOf((*ComputeWireGroupWireProperties)(nil)).Elem(),
+		reflect.TypeFor[ComputeWireGroupWireProperties](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeWireGroup.ComputeWireGroupWirePropertiesOutputReference",
-		reflect.TypeOf((*ComputeWireGroupWirePropertiesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeWireGroupWirePropertiesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bandwidthAllocation", GoGetter: "BandwidthAllocation"},
 			_jsii_.MemberProperty{JsiiProperty: "bandwidthAllocationInput", GoGetter: "BandwidthAllocationInput"},
@@ -424,7 +424,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeWireGroupWirePropertiesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -432,15 +432,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeWireGroup.ComputeWireGroupWires",
-		reflect.TypeOf((*ComputeWireGroupWires)(nil)).Elem(),
+		reflect.TypeFor[ComputeWireGroupWires](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeWireGroup.ComputeWireGroupWiresEndpoints",
-		reflect.TypeOf((*ComputeWireGroupWiresEndpoints)(nil)).Elem(),
+		reflect.TypeFor[ComputeWireGroupWiresEndpoints](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeWireGroup.ComputeWireGroupWiresEndpointsList",
-		reflect.TypeOf((*ComputeWireGroupWiresEndpointsList)(nil)).Elem(),
+		reflect.TypeFor[ComputeWireGroupWiresEndpointsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -453,7 +453,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeWireGroupWiresEndpointsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -461,7 +461,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeWireGroup.ComputeWireGroupWiresEndpointsOutputReference",
-		reflect.TypeOf((*ComputeWireGroupWiresEndpointsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeWireGroupWiresEndpointsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -487,7 +487,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "vlanTag", GoGetter: "VlanTag"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeWireGroupWiresEndpointsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -495,7 +495,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeWireGroup.ComputeWireGroupWiresList",
-		reflect.TypeOf((*ComputeWireGroupWiresList)(nil)).Elem(),
+		reflect.TypeFor[ComputeWireGroupWiresList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -508,7 +508,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeWireGroupWiresList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -516,7 +516,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeWireGroup.ComputeWireGroupWiresOutputReference",
-		reflect.TypeOf((*ComputeWireGroupWiresOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeWireGroupWiresOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "adminEnabled", GoGetter: "AdminEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -544,7 +544,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wireProperties", GoGetter: "WireProperties"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeWireGroupWiresOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -552,11 +552,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeWireGroup.ComputeWireGroupWiresWireProperties",
-		reflect.TypeOf((*ComputeWireGroupWiresWireProperties)(nil)).Elem(),
+		reflect.TypeFor[ComputeWireGroupWiresWireProperties](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeWireGroup.ComputeWireGroupWiresWirePropertiesList",
-		reflect.TypeOf((*ComputeWireGroupWiresWirePropertiesList)(nil)).Elem(),
+		reflect.TypeFor[ComputeWireGroupWiresWirePropertiesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -569,7 +569,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeWireGroupWiresWirePropertiesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -577,7 +577,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeWireGroup.ComputeWireGroupWiresWirePropertiesOutputReference",
-		reflect.TypeOf((*ComputeWireGroupWiresWirePropertiesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeWireGroupWiresWirePropertiesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bandwidthUnmetered", GoGetter: "BandwidthUnmetered"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -603,7 +603,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeWireGroupWiresWirePropertiesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

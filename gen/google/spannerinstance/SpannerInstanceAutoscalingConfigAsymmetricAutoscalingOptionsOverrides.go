@@ -1,6 +1,5 @@
 package spannerinstance
 
-
 type SpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsOverrides struct {
 	// autoscaling_limits block.
 	//
@@ -21,10 +20,9 @@ type SpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsOverrides struc
 	// If true, disables high priority CPU autoscaling for this replica and ignores high_priority_cpu_utilization_percent in the top-level autoscaling configuration.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_instance#disable_high_priority_cpu_autoscaling SpannerInstance#disable_high_priority_cpu_autoscaling}
-	DisableHighPriorityCpuAutoscaling interface{} `field:"optional" json:"disableHighPriorityCpuAutoscaling" yaml:"disableHighPriorityCpuAutoscaling"`
+	DisableHighPriorityCpuAutoscaling any `field:"optional" json:"disableHighPriorityCpuAutoscaling" yaml:"disableHighPriorityCpuAutoscaling"`
 	// If true, disables total CPU autoscaling for this replica and ignores total_cpu_utilization_percent in the top-level autoscaling configuration.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_instance#disable_total_cpu_autoscaling SpannerInstance#disable_total_cpu_autoscaling}
-	DisableTotalCpuAutoscaling interface{} `field:"optional" json:"disableTotalCpuAutoscaling" yaml:"disableTotalCpuAutoscaling"`
+	DisableTotalCpuAutoscaling any `field:"optional" json:"disableTotalCpuAutoscaling" yaml:"disableTotalCpuAutoscaling"`
 }
-

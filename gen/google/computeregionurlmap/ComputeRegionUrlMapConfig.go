@@ -6,9 +6,9 @@ import (
 
 type ComputeRegionUrlMapConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type ComputeRegionUrlMapConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Name of the resource.
 	//
 	// Provided by the client when the resource is
@@ -61,7 +61,7 @@ type ComputeRegionUrlMapConfig struct {
 	// host_rule block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_url_map#host_rule ComputeRegionUrlMap#host_rule}
-	HostRule interface{} `field:"optional" json:"hostRule" yaml:"hostRule"`
+	HostRule any `field:"optional" json:"hostRule" yaml:"hostRule"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_url_map#id ComputeRegionUrlMap#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -70,7 +70,7 @@ type ComputeRegionUrlMapConfig struct {
 	// path_matcher block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_url_map#path_matcher ComputeRegionUrlMap#path_matcher}
-	PathMatcher interface{} `field:"optional" json:"pathMatcher" yaml:"pathMatcher"`
+	PathMatcher any `field:"optional" json:"pathMatcher" yaml:"pathMatcher"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_url_map#project ComputeRegionUrlMap#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// The Region in which the url map should reside. If it is not provided, the provider region is used.
@@ -80,10 +80,9 @@ type ComputeRegionUrlMapConfig struct {
 	// test block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_url_map#test ComputeRegionUrlMap#test}
-	Test interface{} `field:"optional" json:"test" yaml:"test"`
+	Test any `field:"optional" json:"test" yaml:"test"`
 	// timeouts block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_url_map#timeouts ComputeRegionUrlMap#timeouts}
 	Timeouts *ComputeRegionUrlMapTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

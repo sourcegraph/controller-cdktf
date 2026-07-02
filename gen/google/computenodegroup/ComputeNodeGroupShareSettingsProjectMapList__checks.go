@@ -34,7 +34,7 @@ func (c *jsiiProxy_ComputeNodeGroupShareSettingsProjectMapList) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_ComputeNodeGroupShareSettingsProjectMapList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeNodeGroupShareSettingsProjectMapList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewComputeNodeGroupShareSettingsProjectMapListParameters(terraformR
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsAOut
 	return nil
 }
 
-func (j *jsiiProxy_ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsAOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsAOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsAOut
 	return nil
 }
 
-func (j *jsiiProxy_ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsAOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsAOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsAOutput
 
 	return nil
 }
-

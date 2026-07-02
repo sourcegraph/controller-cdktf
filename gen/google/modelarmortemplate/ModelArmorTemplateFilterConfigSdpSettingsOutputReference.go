@@ -16,9 +16,9 @@ type ModelArmorTemplateFilterConfigSdpSettingsOutputReference interface {
 	BasicConfigInput() *ModelArmorTemplateFilterConfigSdpSettingsBasicConfig
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -44,7 +44,7 @@ type ModelArmorTemplateFilterConfigSdpSettingsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type ModelArmorTemplateFilterConfigSdpSettingsOutputReference interface {
 	ResetBasicConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -124,8 +124,8 @@ func (j *jsiiProxy_ModelArmorTemplateFilterConfigSdpSettingsOutputReference) Bas
 	return returns
 }
 
-func (j *jsiiProxy_ModelArmorTemplateFilterConfigSdpSettingsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ModelArmorTemplateFilterConfigSdpSettingsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_ModelArmorTemplateFilterConfigSdpSettingsOutputReference) Ter
 	return returns
 }
 
-
 func NewModelArmorTemplateFilterConfigSdpSettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ModelArmorTemplateFilterConfigSdpSettingsOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewModelArmorTemplateFilterConfigSdpSettingsOutputReference(terraformResour
 
 	_jsii_.Create(
 		"@cdktf/provider-google.modelArmorTemplate.ModelArmorTemplateFilterConfigSdpSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewModelArmorTemplateFilterConfigSdpSettingsOutputReference_Override(m Mode
 
 	_jsii_.Create(
 		"@cdktf/provider-google.modelArmorTemplate.ModelArmorTemplateFilterConfigSdpSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		m,
 	)
 }
 
-func (j *jsiiProxy_ModelArmorTemplateFilterConfigSdpSettingsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ModelArmorTemplateFilterConfigSdpSettingsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_ModelArmorTemplateFilterConfigSdpSettingsOutputReference)SetC
 	)
 }
 
-func (j *jsiiProxy_ModelArmorTemplateFilterConfigSdpSettingsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ModelArmorTemplateFilterConfigSdpSettingsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_ModelArmorTemplateFilterConfigSdpSettingsOutputReference)SetC
 	)
 }
 
-func (j *jsiiProxy_ModelArmorTemplateFilterConfigSdpSettingsOutputReference)SetInternalValue(val *ModelArmorTemplateFilterConfigSdpSettings) {
+func (j *jsiiProxy_ModelArmorTemplateFilterConfigSdpSettingsOutputReference) SetInternalValue(val *ModelArmorTemplateFilterConfigSdpSettings) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_ModelArmorTemplateFilterConfigSdpSettingsOutputReference)SetI
 	)
 }
 
-func (j *jsiiProxy_ModelArmorTemplateFilterConfigSdpSettingsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ModelArmorTemplateFilterConfigSdpSettingsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_ModelArmorTemplateFilterConfigSdpSettingsOutputReference)SetT
 	)
 }
 
-func (j *jsiiProxy_ModelArmorTemplateFilterConfigSdpSettingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ModelArmorTemplateFilterConfigSdpSettingsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,16 +289,16 @@ func (m *jsiiProxy_ModelArmorTemplateFilterConfigSdpSettingsOutputReference) Com
 	return returns
 }
 
-func (m *jsiiProxy_ModelArmorTemplateFilterConfigSdpSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (m *jsiiProxy_ModelArmorTemplateFilterConfigSdpSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -315,7 +314,7 @@ func (m *jsiiProxy_ModelArmorTemplateFilterConfigSdpSettingsOutputReference) Get
 	_jsii_.Invoke(
 		m,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -331,7 +330,7 @@ func (m *jsiiProxy_ModelArmorTemplateFilterConfigSdpSettingsOutputReference) Get
 	_jsii_.Invoke(
 		m,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -347,7 +346,7 @@ func (m *jsiiProxy_ModelArmorTemplateFilterConfigSdpSettingsOutputReference) Get
 	_jsii_.Invoke(
 		m,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -363,7 +362,7 @@ func (m *jsiiProxy_ModelArmorTemplateFilterConfigSdpSettingsOutputReference) Get
 	_jsii_.Invoke(
 		m,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -379,7 +378,7 @@ func (m *jsiiProxy_ModelArmorTemplateFilterConfigSdpSettingsOutputReference) Get
 	_jsii_.Invoke(
 		m,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -395,7 +394,7 @@ func (m *jsiiProxy_ModelArmorTemplateFilterConfigSdpSettingsOutputReference) Get
 	_jsii_.Invoke(
 		m,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -411,7 +410,7 @@ func (m *jsiiProxy_ModelArmorTemplateFilterConfigSdpSettingsOutputReference) Get
 	_jsii_.Invoke(
 		m,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -427,7 +426,7 @@ func (m *jsiiProxy_ModelArmorTemplateFilterConfigSdpSettingsOutputReference) Get
 	_jsii_.Invoke(
 		m,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -456,7 +455,7 @@ func (m *jsiiProxy_ModelArmorTemplateFilterConfigSdpSettingsOutputReference) Int
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -470,7 +469,7 @@ func (m *jsiiProxy_ModelArmorTemplateFilterConfigSdpSettingsOutputReference) Put
 	_jsii_.InvokeVoid(
 		m,
 		"putAdvancedConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -481,7 +480,7 @@ func (m *jsiiProxy_ModelArmorTemplateFilterConfigSdpSettingsOutputReference) Put
 	_jsii_.InvokeVoid(
 		m,
 		"putBasicConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -501,16 +500,16 @@ func (m *jsiiProxy_ModelArmorTemplateFilterConfigSdpSettingsOutputReference) Res
 	)
 }
 
-func (m *jsiiProxy_ModelArmorTemplateFilterConfigSdpSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_ModelArmorTemplateFilterConfigSdpSettingsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := m.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (m *jsiiProxy_ModelArmorTemplateFilterConfigSdpSettingsOutputReference) ToS
 
 	return returns
 }
-

@@ -106,7 +106,7 @@ func (j *jsiiProxy_Cloudfunctions2FunctionEventTriggerEventFiltersOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_Cloudfunctions2FunctionEventTriggerEventFiltersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_Cloudfunctions2FunctionEventTriggerEventFiltersOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_Cloudfunctions2FunctionEventTriggerEventFiltersOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_Cloudfunctions2FunctionEventTriggerEventFiltersOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_Cloudfunctions2FunctionEventTriggerEventFiltersOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewCloudfunctions2FunctionEventTriggerEventFiltersOutputReferencePa
 
 	return nil
 }
-

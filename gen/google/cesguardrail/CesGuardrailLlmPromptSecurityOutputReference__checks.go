@@ -120,7 +120,7 @@ func (c *jsiiProxy_CesGuardrailLlmPromptSecurityOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_CesGuardrailLlmPromptSecurityOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CesGuardrailLlmPromptSecurityOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -220,4 +220,3 @@ func validateNewCesGuardrailLlmPromptSecurityOutputReferenceParameters(terraform
 
 	return nil
 }
-

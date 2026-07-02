@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeHubScopeIamBinding.GkeHubScopeIamBinding",
-		reflect.TypeOf((*GkeHubScopeIamBinding)(nil)).Elem(),
+		reflect.TypeFor[GkeHubScopeIamBinding](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,7 +70,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeHubScopeIamBinding{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -78,11 +78,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.gkeHubScopeIamBinding.GkeHubScopeIamBindingCondition",
-		reflect.TypeOf((*GkeHubScopeIamBindingCondition)(nil)).Elem(),
+		reflect.TypeFor[GkeHubScopeIamBindingCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeHubScopeIamBinding.GkeHubScopeIamBindingConditionOutputReference",
-		reflect.TypeOf((*GkeHubScopeIamBindingConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GkeHubScopeIamBindingConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -113,7 +113,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeHubScopeIamBindingConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -121,6 +121,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.gkeHubScopeIamBinding.GkeHubScopeIamBindingConfig",
-		reflect.TypeOf((*GkeHubScopeIamBindingConfig)(nil)).Elem(),
+		reflect.TypeFor[GkeHubScopeIamBindingConfig](),
 	)
 }

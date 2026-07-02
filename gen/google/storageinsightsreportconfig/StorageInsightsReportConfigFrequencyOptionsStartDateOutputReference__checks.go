@@ -98,7 +98,7 @@ func (s *jsiiProxy_StorageInsightsReportConfigFrequencyOptionsStartDateOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_StorageInsightsReportConfigFrequencyOptionsStartDateOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_StorageInsightsReportConfigFrequencyOptionsStartDateOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewStorageInsightsReportConfigFrequencyOptionsStartDateOutputRefere
 
 	return nil
 }
-

@@ -34,7 +34,7 @@ func (c *jsiiProxy_ComputeUrlMapPathMatcherRouteRulesMatchRulesList) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_ComputeUrlMapPathMatcherRouteRulesMatchRulesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeUrlMapPathMatcherRouteRulesMatchRulesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewComputeUrlMapPathMatcherRouteRulesMatchRulesListParameters(terra
 
 	return nil
 }
-

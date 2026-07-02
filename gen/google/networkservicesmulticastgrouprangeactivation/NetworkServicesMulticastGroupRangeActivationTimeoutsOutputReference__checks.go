@@ -98,7 +98,7 @@ func (n *jsiiProxy_NetworkServicesMulticastGroupRangeActivationTimeoutsOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastGroupRangeActivationTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkServicesMulticastGroupRangeActivationTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_NetworkServicesMulticastGroupRangeActivationTimeoutsOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastGroupRangeActivationTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkServicesMulticastGroupRangeActivationTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewNetworkServicesMulticastGroupRangeActivationTimeoutsOutputRefere
 
 	return nil
 }
-

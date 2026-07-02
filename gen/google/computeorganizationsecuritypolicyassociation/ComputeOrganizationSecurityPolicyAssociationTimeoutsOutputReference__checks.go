@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeOrganizationSecurityPolicyAssociationTimeoutsOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_ComputeOrganizationSecurityPolicyAssociationTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeOrganizationSecurityPolicyAssociationTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_ComputeOrganizationSecurityPolicyAssociationTimeoutsOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_ComputeOrganizationSecurityPolicyAssociationTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeOrganizationSecurityPolicyAssociationTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewComputeOrganizationSecurityPolicyAssociationTimeoutsOutputRefere
 
 	return nil
 }
-

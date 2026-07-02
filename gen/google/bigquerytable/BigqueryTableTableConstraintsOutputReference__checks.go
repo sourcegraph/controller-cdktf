@@ -90,7 +90,7 @@ func (b *jsiiProxy_BigqueryTableTableConstraintsOutputReference) validateInterpo
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryTableTableConstraintsOutputReference) validatePutForeignKeysParameters(value interface{}) error {
+func (b *jsiiProxy_BigqueryTableTableConstraintsOutputReference) validatePutForeignKeysParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -140,7 +140,7 @@ func (b *jsiiProxy_BigqueryTableTableConstraintsOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryTableTableConstraintsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryTableTableConstraintsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -240,4 +240,3 @@ func validateNewBigqueryTableTableConstraintsOutputReferenceParameters(terraform
 
 	return nil
 }
-

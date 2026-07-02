@@ -98,7 +98,7 @@ func (d *jsiiProxy_DialogflowCxEntityTypeEntitiesOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxEntityTypeEntitiesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxEntityTypeEntitiesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DialogflowCxEntityTypeEntitiesOutputReference) validateSetCom
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxEntityTypeEntitiesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxEntityTypeEntitiesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewDialogflowCxEntityTypeEntitiesOutputReferenceParameters(terrafor
 
 	return nil
 }
-

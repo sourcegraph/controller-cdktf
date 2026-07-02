@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.biglakeIcebergNamespace.BiglakeIcebergNamespace",
-		reflect.TypeOf((*BiglakeIcebergNamespace)(nil)).Elem(),
+		reflect.TypeFor[BiglakeIcebergNamespace](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,7 +70,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BiglakeIcebergNamespace{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -78,15 +78,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.biglakeIcebergNamespace.BiglakeIcebergNamespaceConfig",
-		reflect.TypeOf((*BiglakeIcebergNamespaceConfig)(nil)).Elem(),
+		reflect.TypeFor[BiglakeIcebergNamespaceConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.biglakeIcebergNamespace.BiglakeIcebergNamespaceTimeouts",
-		reflect.TypeOf((*BiglakeIcebergNamespaceTimeouts)(nil)).Elem(),
+		reflect.TypeFor[BiglakeIcebergNamespaceTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.biglakeIcebergNamespace.BiglakeIcebergNamespaceTimeoutsOutputReference",
-		reflect.TypeOf((*BiglakeIcebergNamespaceTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BiglakeIcebergNamespaceTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -119,7 +119,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BiglakeIcebergNamespaceTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

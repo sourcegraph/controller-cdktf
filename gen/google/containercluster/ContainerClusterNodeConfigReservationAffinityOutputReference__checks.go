@@ -98,7 +98,7 @@ func (c *jsiiProxy_ContainerClusterNodeConfigReservationAffinityOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterNodeConfigReservationAffinityOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterNodeConfigReservationAffinityOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewContainerClusterNodeConfigReservationAffinityOutputReferencePara
 
 	return nil
 }
-

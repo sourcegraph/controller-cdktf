@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocGdcApplicationEnvironment.DataprocGdcApplicationEnvironment",
-		reflect.TypeOf((*DataprocGdcApplicationEnvironment)(nil)).Elem(),
+		reflect.TypeFor[DataprocGdcApplicationEnvironment](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -93,7 +93,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocGdcApplicationEnvironment{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -101,15 +101,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocGdcApplicationEnvironment.DataprocGdcApplicationEnvironmentConfig",
-		reflect.TypeOf((*DataprocGdcApplicationEnvironmentConfig)(nil)).Elem(),
+		reflect.TypeFor[DataprocGdcApplicationEnvironmentConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocGdcApplicationEnvironment.DataprocGdcApplicationEnvironmentSparkApplicationEnvironmentConfig",
-		reflect.TypeOf((*DataprocGdcApplicationEnvironmentSparkApplicationEnvironmentConfig)(nil)).Elem(),
+		reflect.TypeFor[DataprocGdcApplicationEnvironmentSparkApplicationEnvironmentConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocGdcApplicationEnvironment.DataprocGdcApplicationEnvironmentSparkApplicationEnvironmentConfigOutputReference",
-		reflect.TypeOf((*DataprocGdcApplicationEnvironmentSparkApplicationEnvironmentConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocGdcApplicationEnvironmentSparkApplicationEnvironmentConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -139,7 +139,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocGdcApplicationEnvironmentSparkApplicationEnvironmentConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -147,11 +147,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocGdcApplicationEnvironment.DataprocGdcApplicationEnvironmentTimeouts",
-		reflect.TypeOf((*DataprocGdcApplicationEnvironmentTimeouts)(nil)).Elem(),
+		reflect.TypeFor[DataprocGdcApplicationEnvironmentTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocGdcApplicationEnvironment.DataprocGdcApplicationEnvironmentTimeoutsOutputReference",
-		reflect.TypeOf((*DataprocGdcApplicationEnvironmentTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocGdcApplicationEnvironmentTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -184,7 +184,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocGdcApplicationEnvironmentTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

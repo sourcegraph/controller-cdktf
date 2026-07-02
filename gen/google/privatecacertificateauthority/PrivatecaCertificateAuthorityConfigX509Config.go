@@ -1,6 +1,5 @@
 package privatecacertificateauthority
 
-
 type PrivatecaCertificateAuthorityConfigX509Config struct {
 	// ca_options block.
 	//
@@ -13,7 +12,7 @@ type PrivatecaCertificateAuthorityConfigX509Config struct {
 	// additional_extensions block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/privateca_certificate_authority#additional_extensions PrivatecaCertificateAuthority#additional_extensions}
-	AdditionalExtensions interface{} `field:"optional" json:"additionalExtensions" yaml:"additionalExtensions"`
+	AdditionalExtensions any `field:"optional" json:"additionalExtensions" yaml:"additionalExtensions"`
 	// Describes Online Certificate Status Protocol (OCSP) endpoint addresses that appear in the "Authority Information Access" extension in the certificate.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/privateca_certificate_authority#aia_ocsp_servers PrivatecaCertificateAuthority#aia_ocsp_servers}
@@ -25,6 +24,5 @@ type PrivatecaCertificateAuthorityConfigX509Config struct {
 	// policy_ids block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/privateca_certificate_authority#policy_ids PrivatecaCertificateAuthority#policy_ids}
-	PolicyIds interface{} `field:"optional" json:"policyIds" yaml:"policyIds"`
+	PolicyIds any `field:"optional" json:"policyIds" yaml:"policyIds"`
 }
-

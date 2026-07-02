@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager",
-		reflect.TypeOf((*ComputeInstanceGroupManager)(nil)).Elem(),
+		reflect.TypeFor[ComputeInstanceGroupManager](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -148,7 +148,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zone", GoGetter: "Zone"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneInput", GoGetter: "ZoneInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeInstanceGroupManager{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -156,11 +156,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerAllInstancesConfig",
-		reflect.TypeOf((*ComputeInstanceGroupManagerAllInstancesConfig)(nil)).Elem(),
+		reflect.TypeFor[ComputeInstanceGroupManagerAllInstancesConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerAllInstancesConfigOutputReference",
-		reflect.TypeOf((*ComputeInstanceGroupManagerAllInstancesConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeInstanceGroupManagerAllInstancesConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -190,7 +190,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeInstanceGroupManagerAllInstancesConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -198,11 +198,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerAutoHealingPolicies",
-		reflect.TypeOf((*ComputeInstanceGroupManagerAutoHealingPolicies)(nil)).Elem(),
+		reflect.TypeFor[ComputeInstanceGroupManagerAutoHealingPolicies](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerAutoHealingPoliciesOutputReference",
-		reflect.TypeOf((*ComputeInstanceGroupManagerAutoHealingPoliciesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeInstanceGroupManagerAutoHealingPoliciesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -230,7 +230,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeInstanceGroupManagerAutoHealingPoliciesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -238,15 +238,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerConfig",
-		reflect.TypeOf((*ComputeInstanceGroupManagerConfig)(nil)).Elem(),
+		reflect.TypeFor[ComputeInstanceGroupManagerConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerInstanceLifecyclePolicy",
-		reflect.TypeOf((*ComputeInstanceGroupManagerInstanceLifecyclePolicy)(nil)).Elem(),
+		reflect.TypeFor[ComputeInstanceGroupManagerInstanceLifecyclePolicy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerInstanceLifecyclePolicyOutputReference",
-		reflect.TypeOf((*ComputeInstanceGroupManagerInstanceLifecyclePolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeInstanceGroupManagerInstanceLifecyclePolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -276,7 +276,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeInstanceGroupManagerInstanceLifecyclePolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -284,11 +284,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerNamedPort",
-		reflect.TypeOf((*ComputeInstanceGroupManagerNamedPort)(nil)).Elem(),
+		reflect.TypeFor[ComputeInstanceGroupManagerNamedPort](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerNamedPortList",
-		reflect.TypeOf((*ComputeInstanceGroupManagerNamedPortList)(nil)).Elem(),
+		reflect.TypeFor[ComputeInstanceGroupManagerNamedPortList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -302,7 +302,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeInstanceGroupManagerNamedPortList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -310,7 +310,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerNamedPortOutputReference",
-		reflect.TypeOf((*ComputeInstanceGroupManagerNamedPortOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeInstanceGroupManagerNamedPortOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -338,7 +338,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeInstanceGroupManagerNamedPortOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -346,11 +346,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerResourcePolicies",
-		reflect.TypeOf((*ComputeInstanceGroupManagerResourcePolicies)(nil)).Elem(),
+		reflect.TypeFor[ComputeInstanceGroupManagerResourcePolicies](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerResourcePoliciesOutputReference",
-		reflect.TypeOf((*ComputeInstanceGroupManagerResourcePoliciesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeInstanceGroupManagerResourcePoliciesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -377,7 +377,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workloadPolicy", GoGetter: "WorkloadPolicy"},
 			_jsii_.MemberProperty{JsiiProperty: "workloadPolicyInput", GoGetter: "WorkloadPolicyInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeInstanceGroupManagerResourcePoliciesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -385,11 +385,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStandbyPolicy",
-		reflect.TypeOf((*ComputeInstanceGroupManagerStandbyPolicy)(nil)).Elem(),
+		reflect.TypeFor[ComputeInstanceGroupManagerStandbyPolicy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStandbyPolicyOutputReference",
-		reflect.TypeOf((*ComputeInstanceGroupManagerStandbyPolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeInstanceGroupManagerStandbyPolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -419,7 +419,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeInstanceGroupManagerStandbyPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -427,11 +427,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulDisk",
-		reflect.TypeOf((*ComputeInstanceGroupManagerStatefulDisk)(nil)).Elem(),
+		reflect.TypeFor[ComputeInstanceGroupManagerStatefulDisk](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulDiskList",
-		reflect.TypeOf((*ComputeInstanceGroupManagerStatefulDiskList)(nil)).Elem(),
+		reflect.TypeFor[ComputeInstanceGroupManagerStatefulDiskList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -445,7 +445,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeInstanceGroupManagerStatefulDiskList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -453,7 +453,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulDiskOutputReference",
-		reflect.TypeOf((*ComputeInstanceGroupManagerStatefulDiskOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeInstanceGroupManagerStatefulDiskOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -482,7 +482,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeInstanceGroupManagerStatefulDiskOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -490,11 +490,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulExternalIp",
-		reflect.TypeOf((*ComputeInstanceGroupManagerStatefulExternalIp)(nil)).Elem(),
+		reflect.TypeFor[ComputeInstanceGroupManagerStatefulExternalIp](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulExternalIpList",
-		reflect.TypeOf((*ComputeInstanceGroupManagerStatefulExternalIpList)(nil)).Elem(),
+		reflect.TypeFor[ComputeInstanceGroupManagerStatefulExternalIpList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -508,7 +508,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeInstanceGroupManagerStatefulExternalIpList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -516,7 +516,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulExternalIpOutputReference",
-		reflect.TypeOf((*ComputeInstanceGroupManagerStatefulExternalIpOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeInstanceGroupManagerStatefulExternalIpOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -546,7 +546,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeInstanceGroupManagerStatefulExternalIpOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -554,11 +554,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulInternalIp",
-		reflect.TypeOf((*ComputeInstanceGroupManagerStatefulInternalIp)(nil)).Elem(),
+		reflect.TypeFor[ComputeInstanceGroupManagerStatefulInternalIp](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulInternalIpList",
-		reflect.TypeOf((*ComputeInstanceGroupManagerStatefulInternalIpList)(nil)).Elem(),
+		reflect.TypeFor[ComputeInstanceGroupManagerStatefulInternalIpList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -572,7 +572,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeInstanceGroupManagerStatefulInternalIpList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -580,7 +580,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulInternalIpOutputReference",
-		reflect.TypeOf((*ComputeInstanceGroupManagerStatefulInternalIpOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeInstanceGroupManagerStatefulInternalIpOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -610,7 +610,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeInstanceGroupManagerStatefulInternalIpOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -618,15 +618,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatus",
-		reflect.TypeOf((*ComputeInstanceGroupManagerStatus)(nil)).Elem(),
+		reflect.TypeFor[ComputeInstanceGroupManagerStatus](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusAllInstancesConfig",
-		reflect.TypeOf((*ComputeInstanceGroupManagerStatusAllInstancesConfig)(nil)).Elem(),
+		reflect.TypeFor[ComputeInstanceGroupManagerStatusAllInstancesConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusAllInstancesConfigList",
-		reflect.TypeOf((*ComputeInstanceGroupManagerStatusAllInstancesConfigList)(nil)).Elem(),
+		reflect.TypeFor[ComputeInstanceGroupManagerStatusAllInstancesConfigList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -639,7 +639,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeInstanceGroupManagerStatusAllInstancesConfigList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -647,7 +647,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusAllInstancesConfigOutputReference",
-		reflect.TypeOf((*ComputeInstanceGroupManagerStatusAllInstancesConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeInstanceGroupManagerStatusAllInstancesConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -673,7 +673,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeInstanceGroupManagerStatusAllInstancesConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -681,7 +681,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusList",
-		reflect.TypeOf((*ComputeInstanceGroupManagerStatusList)(nil)).Elem(),
+		reflect.TypeFor[ComputeInstanceGroupManagerStatusList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -694,7 +694,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeInstanceGroupManagerStatusList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -702,7 +702,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusOutputReference",
-		reflect.TypeOf((*ComputeInstanceGroupManagerStatusOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeInstanceGroupManagerStatusOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allInstancesConfig", GoGetter: "AllInstancesConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -730,7 +730,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "versionTarget", GoGetter: "VersionTarget"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeInstanceGroupManagerStatusOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -738,11 +738,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusStateful",
-		reflect.TypeOf((*ComputeInstanceGroupManagerStatusStateful)(nil)).Elem(),
+		reflect.TypeFor[ComputeInstanceGroupManagerStatusStateful](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusStatefulList",
-		reflect.TypeOf((*ComputeInstanceGroupManagerStatusStatefulList)(nil)).Elem(),
+		reflect.TypeFor[ComputeInstanceGroupManagerStatusStatefulList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -755,7 +755,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeInstanceGroupManagerStatusStatefulList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -763,7 +763,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusStatefulOutputReference",
-		reflect.TypeOf((*ComputeInstanceGroupManagerStatusStatefulOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeInstanceGroupManagerStatusStatefulOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -789,7 +789,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeInstanceGroupManagerStatusStatefulOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -797,11 +797,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusStatefulPerInstanceConfigs",
-		reflect.TypeOf((*ComputeInstanceGroupManagerStatusStatefulPerInstanceConfigs)(nil)).Elem(),
+		reflect.TypeFor[ComputeInstanceGroupManagerStatusStatefulPerInstanceConfigs](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusStatefulPerInstanceConfigsList",
-		reflect.TypeOf((*ComputeInstanceGroupManagerStatusStatefulPerInstanceConfigsList)(nil)).Elem(),
+		reflect.TypeFor[ComputeInstanceGroupManagerStatusStatefulPerInstanceConfigsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -814,7 +814,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeInstanceGroupManagerStatusStatefulPerInstanceConfigsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -822,7 +822,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusStatefulPerInstanceConfigsOutputReference",
-		reflect.TypeOf((*ComputeInstanceGroupManagerStatusStatefulPerInstanceConfigsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeInstanceGroupManagerStatusStatefulPerInstanceConfigsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allEffective", GoGetter: "AllEffective"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -847,7 +847,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeInstanceGroupManagerStatusStatefulPerInstanceConfigsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -855,11 +855,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusVersionTarget",
-		reflect.TypeOf((*ComputeInstanceGroupManagerStatusVersionTarget)(nil)).Elem(),
+		reflect.TypeFor[ComputeInstanceGroupManagerStatusVersionTarget](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusVersionTargetList",
-		reflect.TypeOf((*ComputeInstanceGroupManagerStatusVersionTargetList)(nil)).Elem(),
+		reflect.TypeFor[ComputeInstanceGroupManagerStatusVersionTargetList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -872,7 +872,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeInstanceGroupManagerStatusVersionTargetList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -880,7 +880,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusVersionTargetOutputReference",
-		reflect.TypeOf((*ComputeInstanceGroupManagerStatusVersionTargetOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeInstanceGroupManagerStatusVersionTargetOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -905,7 +905,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeInstanceGroupManagerStatusVersionTargetOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -913,11 +913,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicy",
-		reflect.TypeOf((*ComputeInstanceGroupManagerTargetSizePolicy)(nil)).Elem(),
+		reflect.TypeFor[ComputeInstanceGroupManagerTargetSizePolicy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyList",
-		reflect.TypeOf((*ComputeInstanceGroupManagerTargetSizePolicyList)(nil)).Elem(),
+		reflect.TypeFor[ComputeInstanceGroupManagerTargetSizePolicyList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -931,7 +931,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeInstanceGroupManagerTargetSizePolicyList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -939,7 +939,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyOutputReference",
-		reflect.TypeOf((*ComputeInstanceGroupManagerTargetSizePolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeInstanceGroupManagerTargetSizePolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -965,7 +965,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeInstanceGroupManagerTargetSizePolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -973,11 +973,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTimeouts",
-		reflect.TypeOf((*ComputeInstanceGroupManagerTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ComputeInstanceGroupManagerTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTimeoutsOutputReference",
-		reflect.TypeOf((*ComputeInstanceGroupManagerTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeInstanceGroupManagerTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1010,7 +1010,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeInstanceGroupManagerTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1018,11 +1018,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerUpdatePolicy",
-		reflect.TypeOf((*ComputeInstanceGroupManagerUpdatePolicy)(nil)).Elem(),
+		reflect.TypeFor[ComputeInstanceGroupManagerUpdatePolicy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerUpdatePolicyOutputReference",
-		reflect.TypeOf((*ComputeInstanceGroupManagerUpdatePolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeInstanceGroupManagerUpdatePolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1068,7 +1068,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeInstanceGroupManagerUpdatePolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1076,11 +1076,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerVersion",
-		reflect.TypeOf((*ComputeInstanceGroupManagerVersion)(nil)).Elem(),
+		reflect.TypeFor[ComputeInstanceGroupManagerVersion](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerVersionList",
-		reflect.TypeOf((*ComputeInstanceGroupManagerVersionList)(nil)).Elem(),
+		reflect.TypeFor[ComputeInstanceGroupManagerVersionList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1094,7 +1094,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeInstanceGroupManagerVersionList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1102,7 +1102,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerVersionOutputReference",
-		reflect.TypeOf((*ComputeInstanceGroupManagerVersionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeInstanceGroupManagerVersionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1135,7 +1135,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeInstanceGroupManagerVersionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1143,11 +1143,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerVersionTargetSize",
-		reflect.TypeOf((*ComputeInstanceGroupManagerVersionTargetSize)(nil)).Elem(),
+		reflect.TypeFor[ComputeInstanceGroupManagerVersionTargetSize](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerVersionTargetSizeOutputReference",
-		reflect.TypeOf((*ComputeInstanceGroupManagerVersionTargetSizeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeInstanceGroupManagerVersionTargetSizeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1177,7 +1177,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeInstanceGroupManagerVersionTargetSizeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

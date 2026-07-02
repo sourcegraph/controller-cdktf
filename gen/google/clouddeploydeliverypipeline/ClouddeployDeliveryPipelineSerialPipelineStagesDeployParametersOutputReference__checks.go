@@ -98,7 +98,7 @@ func (c *jsiiProxy_ClouddeployDeliveryPipelineSerialPipelineStagesDeployParamete
 	return nil
 }
 
-func (j *jsiiProxy_ClouddeployDeliveryPipelineSerialPipelineStagesDeployParametersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ClouddeployDeliveryPipelineSerialPipelineStagesDeployParametersOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ClouddeployDeliveryPipelineSerialPipelineStagesDeployParamete
 	return nil
 }
 
-func (j *jsiiProxy_ClouddeployDeliveryPipelineSerialPipelineStagesDeployParametersOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ClouddeployDeliveryPipelineSerialPipelineStagesDeployParametersOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewClouddeployDeliveryPipelineSerialPipelineStagesDeployParametersO
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeInstanceFromTemplateScratchDiskOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInstanceFromTemplateScratchDiskOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInstanceFromTemplateScratchDiskOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_ComputeInstanceFromTemplateScratchDiskOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInstanceFromTemplateScratchDiskOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInstanceFromTemplateScratchDiskOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewComputeInstanceFromTemplateScratchDiskOutputReferenceParameters(
 
 	return nil
 }
-

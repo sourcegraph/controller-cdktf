@@ -34,7 +34,7 @@ func (t *jsiiProxy_TranscoderJobTemplateConfigMuxStreamsList) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_TranscoderJobTemplateConfigMuxStreamsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_TranscoderJobTemplateConfigMuxStreamsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewTranscoderJobTemplateConfigMuxStreamsListParameters(terraformRes
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GkeHubFeatureMembershipMeshOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_GkeHubFeatureMembershipMeshOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GkeHubFeatureMembershipMeshOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGkeHubFeatureMembershipMeshOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

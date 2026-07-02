@@ -19,7 +19,7 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayApplication) validateAddMoveTargetPa
 	return nil
 }
 
-func (b *jsiiProxy_BeyondcorpSecurityGatewayApplication) validateAddOverrideParameters(path *string, value interface{}) error {
+func (b *jsiiProxy_BeyondcorpSecurityGatewayApplication) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayApplication) validateMoveFromIdParam
 	return nil
 }
 
-func (b *jsiiProxy_BeyondcorpSecurityGatewayApplication) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (b *jsiiProxy_BeyondcorpSecurityGatewayApplication) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayApplication) validateOverrideLogical
 	return nil
 }
 
-func (b *jsiiProxy_BeyondcorpSecurityGatewayApplication) validatePutEndpointMatchersParameters(value interface{}) error {
+func (b *jsiiProxy_BeyondcorpSecurityGatewayApplication) validatePutEndpointMatchersParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -246,7 +246,7 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayApplication) validatePutTimeoutsPara
 	return nil
 }
 
-func (b *jsiiProxy_BeyondcorpSecurityGatewayApplication) validatePutUpstreamsParameters(value interface{}) error {
+func (b *jsiiProxy_BeyondcorpSecurityGatewayApplication) validatePutUpstreamsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -293,7 +293,7 @@ func validateBeyondcorpSecurityGatewayApplication_GenerateConfigForImportParamet
 	return nil
 }
 
-func validateBeyondcorpSecurityGatewayApplication_IsConstructParameters(x interface{}) error {
+func validateBeyondcorpSecurityGatewayApplication_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -301,7 +301,7 @@ func validateBeyondcorpSecurityGatewayApplication_IsConstructParameters(x interf
 	return nil
 }
 
-func validateBeyondcorpSecurityGatewayApplication_IsTerraformElementParameters(x interface{}) error {
+func validateBeyondcorpSecurityGatewayApplication_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -309,7 +309,7 @@ func validateBeyondcorpSecurityGatewayApplication_IsTerraformElementParameters(x
 	return nil
 }
 
-func validateBeyondcorpSecurityGatewayApplication_IsTerraformResourceParameters(x interface{}) error {
+func validateBeyondcorpSecurityGatewayApplication_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -325,7 +325,7 @@ func (j *jsiiProxy_BeyondcorpSecurityGatewayApplication) validateSetApplicationI
 	return nil
 }
 
-func (j *jsiiProxy_BeyondcorpSecurityGatewayApplication) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_BeyondcorpSecurityGatewayApplication) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -358,7 +358,7 @@ func (j *jsiiProxy_BeyondcorpSecurityGatewayApplication) validateSetConnectionPa
 	return nil
 }
 
-func (j *jsiiProxy_BeyondcorpSecurityGatewayApplication) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_BeyondcorpSecurityGatewayApplication) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -447,7 +447,7 @@ func (j *jsiiProxy_BeyondcorpSecurityGatewayApplication) validateSetProjectParam
 	return nil
 }
 
-func (j *jsiiProxy_BeyondcorpSecurityGatewayApplication) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_BeyondcorpSecurityGatewayApplication) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -527,4 +527,3 @@ func validateNewBeyondcorpSecurityGatewayApplicationParameters(scope constructs.
 
 	return nil
 }
-

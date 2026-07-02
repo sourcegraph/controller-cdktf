@@ -19,7 +19,7 @@ func (k *jsiiProxy_KmsKeyRing) validateAddMoveTargetParameters(moveTarget *strin
 	return nil
 }
 
-func (k *jsiiProxy_KmsKeyRing) validateAddOverrideParameters(path *string, value interface{}) error {
+func (k *jsiiProxy_KmsKeyRing) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (k *jsiiProxy_KmsKeyRing) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KmsKeyRing) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (k *jsiiProxy_KmsKeyRing) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateKmsKeyRing_GenerateConfigForImportParameters(scope constructs.Const
 	return nil
 }
 
-func validateKmsKeyRing_IsConstructParameters(x interface{}) error {
+func validateKmsKeyRing_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateKmsKeyRing_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateKmsKeyRing_IsTerraformElementParameters(x interface{}) error {
+func validateKmsKeyRing_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateKmsKeyRing_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateKmsKeyRing_IsTerraformResourceParameters(x interface{}) error {
+func validateKmsKeyRing_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateKmsKeyRing_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_KmsKeyRing) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_KmsKeyRing) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_KmsKeyRing) validateSetConnectionParameters(val interface{}) 
 	return nil
 }
 
-func (j *jsiiProxy_KmsKeyRing) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_KmsKeyRing) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -385,7 +385,7 @@ func (j *jsiiProxy_KmsKeyRing) validateSetProjectParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_KmsKeyRing) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_KmsKeyRing) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -449,4 +449,3 @@ func validateNewKmsKeyRingParameters(scope constructs.Construct, id *string, con
 
 	return nil
 }
-

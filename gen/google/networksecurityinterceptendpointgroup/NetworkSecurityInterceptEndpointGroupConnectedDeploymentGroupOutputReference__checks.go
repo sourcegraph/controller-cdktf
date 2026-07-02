@@ -98,7 +98,7 @@ func (n *jsiiProxy_NetworkSecurityInterceptEndpointGroupConnectedDeploymentGroup
 	return nil
 }
 
-func (j *jsiiProxy_NetworkSecurityInterceptEndpointGroupConnectedDeploymentGroupOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkSecurityInterceptEndpointGroupConnectedDeploymentGroupOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewNetworkSecurityInterceptEndpointGroupConnectedDeploymentGroupOut
 
 	return nil
 }
-

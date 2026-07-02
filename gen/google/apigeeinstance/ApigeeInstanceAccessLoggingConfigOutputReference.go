@@ -12,9 +12,9 @@ type ApigeeInstanceAccessLoggingConfigOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,9 +25,9 @@ type ApigeeInstanceAccessLoggingConfigOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	Filter() *string
 	SetFilter(val *string)
 	FilterInput() *string
@@ -46,7 +46,7 @@ type ApigeeInstanceAccessLoggingConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -70,7 +70,7 @@ type ApigeeInstanceAccessLoggingConfigOutputReference interface {
 	ResetFilter()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,8 +83,8 @@ type jsiiProxy_ApigeeInstanceAccessLoggingConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ApigeeInstanceAccessLoggingConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApigeeInstanceAccessLoggingConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -113,8 +113,8 @@ func (j *jsiiProxy_ApigeeInstanceAccessLoggingConfigOutputReference) CreationSta
 	return returns
 }
 
-func (j *jsiiProxy_ApigeeInstanceAccessLoggingConfigOutputReference) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApigeeInstanceAccessLoggingConfigOutputReference) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -123,8 +123,8 @@ func (j *jsiiProxy_ApigeeInstanceAccessLoggingConfigOutputReference) Enabled() i
 	return returns
 }
 
-func (j *jsiiProxy_ApigeeInstanceAccessLoggingConfigOutputReference) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApigeeInstanceAccessLoggingConfigOutputReference) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -193,7 +193,6 @@ func (j *jsiiProxy_ApigeeInstanceAccessLoggingConfigOutputReference) TerraformRe
 	return returns
 }
 
-
 func NewApigeeInstanceAccessLoggingConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ApigeeInstanceAccessLoggingConfigOutputReference {
 	_init_.Initialize()
 
@@ -204,7 +203,7 @@ func NewApigeeInstanceAccessLoggingConfigOutputReference(terraformResource cdktf
 
 	_jsii_.Create(
 		"@cdktf/provider-google.apigeeInstance.ApigeeInstanceAccessLoggingConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -216,12 +215,12 @@ func NewApigeeInstanceAccessLoggingConfigOutputReference_Override(a ApigeeInstan
 
 	_jsii_.Create(
 		"@cdktf/provider-google.apigeeInstance.ApigeeInstanceAccessLoggingConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		a,
 	)
 }
 
-func (j *jsiiProxy_ApigeeInstanceAccessLoggingConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ApigeeInstanceAccessLoggingConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -232,7 +231,7 @@ func (j *jsiiProxy_ApigeeInstanceAccessLoggingConfigOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_ApigeeInstanceAccessLoggingConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ApigeeInstanceAccessLoggingConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -243,7 +242,7 @@ func (j *jsiiProxy_ApigeeInstanceAccessLoggingConfigOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_ApigeeInstanceAccessLoggingConfigOutputReference)SetEnabled(val interface{}) {
+func (j *jsiiProxy_ApigeeInstanceAccessLoggingConfigOutputReference) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_ApigeeInstanceAccessLoggingConfigOutputReference)SetEnabled(v
 	)
 }
 
-func (j *jsiiProxy_ApigeeInstanceAccessLoggingConfigOutputReference)SetFilter(val *string) {
+func (j *jsiiProxy_ApigeeInstanceAccessLoggingConfigOutputReference) SetFilter(val *string) {
 	if err := j.validateSetFilterParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_ApigeeInstanceAccessLoggingConfigOutputReference)SetFilter(va
 	)
 }
 
-func (j *jsiiProxy_ApigeeInstanceAccessLoggingConfigOutputReference)SetInternalValue(val *ApigeeInstanceAccessLoggingConfig) {
+func (j *jsiiProxy_ApigeeInstanceAccessLoggingConfigOutputReference) SetInternalValue(val *ApigeeInstanceAccessLoggingConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_ApigeeInstanceAccessLoggingConfigOutputReference)SetInternalV
 	)
 }
 
-func (j *jsiiProxy_ApigeeInstanceAccessLoggingConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ApigeeInstanceAccessLoggingConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,7 +286,7 @@ func (j *jsiiProxy_ApigeeInstanceAccessLoggingConfigOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_ApigeeInstanceAccessLoggingConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ApigeeInstanceAccessLoggingConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,16 +310,16 @@ func (a *jsiiProxy_ApigeeInstanceAccessLoggingConfigOutputReference) ComputeFqn(
 	return returns
 }
 
-func (a *jsiiProxy_ApigeeInstanceAccessLoggingConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_ApigeeInstanceAccessLoggingConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -336,7 +335,7 @@ func (a *jsiiProxy_ApigeeInstanceAccessLoggingConfigOutputReference) GetBooleanA
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -352,7 +351,7 @@ func (a *jsiiProxy_ApigeeInstanceAccessLoggingConfigOutputReference) GetBooleanM
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -368,7 +367,7 @@ func (a *jsiiProxy_ApigeeInstanceAccessLoggingConfigOutputReference) GetListAttr
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -384,7 +383,7 @@ func (a *jsiiProxy_ApigeeInstanceAccessLoggingConfigOutputReference) GetNumberAt
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -400,7 +399,7 @@ func (a *jsiiProxy_ApigeeInstanceAccessLoggingConfigOutputReference) GetNumberLi
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -416,7 +415,7 @@ func (a *jsiiProxy_ApigeeInstanceAccessLoggingConfigOutputReference) GetNumberMa
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -432,7 +431,7 @@ func (a *jsiiProxy_ApigeeInstanceAccessLoggingConfigOutputReference) GetStringAt
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -448,7 +447,7 @@ func (a *jsiiProxy_ApigeeInstanceAccessLoggingConfigOutputReference) GetStringMa
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -477,7 +476,7 @@ func (a *jsiiProxy_ApigeeInstanceAccessLoggingConfigOutputReference) Interpolati
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -492,16 +491,16 @@ func (a *jsiiProxy_ApigeeInstanceAccessLoggingConfigOutputReference) ResetFilter
 	)
 }
 
-func (a *jsiiProxy_ApigeeInstanceAccessLoggingConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_ApigeeInstanceAccessLoggingConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -520,4 +519,3 @@ func (a *jsiiProxy_ApigeeInstanceAccessLoggingConfigOutputReference) ToString() 
 
 	return returns
 }
-

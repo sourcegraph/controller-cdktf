@@ -98,7 +98,7 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigKubeletConfigEvictionSoftOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeConfigKubeletConfigEvictionSoftOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerNodePoolNodeConfigKubeletConfigEvictionSoftOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -246,4 +246,3 @@ func validateNewContainerNodePoolNodeConfigKubeletConfigEvictionSoftOutputRefere
 
 	return nil
 }
-

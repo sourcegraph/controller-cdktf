@@ -12,9 +12,9 @@ type DataLossPreventionInspectTemplateInspectConfigOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -29,17 +29,17 @@ type DataLossPreventionInspectTemplateInspectConfigOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	CustomInfoTypes() DataLossPreventionInspectTemplateInspectConfigCustomInfoTypesList
-	CustomInfoTypesInput() interface{}
-	ExcludeInfoTypes() interface{}
-	SetExcludeInfoTypes(val interface{})
-	ExcludeInfoTypesInput() interface{}
+	CustomInfoTypesInput() any
+	ExcludeInfoTypes() any
+	SetExcludeInfoTypes(val any)
+	ExcludeInfoTypesInput() any
 	// Experimental.
 	Fqn() *string
-	IncludeQuote() interface{}
-	SetIncludeQuote(val interface{})
-	IncludeQuoteInput() interface{}
+	IncludeQuote() any
+	SetIncludeQuote(val any)
+	IncludeQuoteInput() any
 	InfoTypes() DataLossPreventionInspectTemplateInspectConfigInfoTypesList
-	InfoTypesInput() interface{}
+	InfoTypesInput() any
 	InternalValue() *DataLossPreventionInspectTemplateInspectConfig
 	SetInternalValue(val *DataLossPreventionInspectTemplateInspectConfig)
 	Limits() DataLossPreventionInspectTemplateInspectConfigLimitsOutputReference
@@ -48,7 +48,7 @@ type DataLossPreventionInspectTemplateInspectConfigOutputReference interface {
 	SetMinLikelihood(val *string)
 	MinLikelihoodInput() *string
 	RuleSet() DataLossPreventionInspectTemplateInspectConfigRuleSetList
-	RuleSetInput() interface{}
+	RuleSetInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -60,7 +60,7 @@ type DataLossPreventionInspectTemplateInspectConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -81,10 +81,10 @@ type DataLossPreventionInspectTemplateInspectConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutCustomInfoTypes(value interface{})
-	PutInfoTypes(value interface{})
+	PutCustomInfoTypes(value any)
+	PutInfoTypes(value any)
 	PutLimits(value *DataLossPreventionInspectTemplateInspectConfigLimits)
-	PutRuleSet(value interface{})
+	PutRuleSet(value any)
 	ResetContentOptions()
 	ResetCustomInfoTypes()
 	ResetExcludeInfoTypes()
@@ -95,7 +95,7 @@ type DataLossPreventionInspectTemplateInspectConfigOutputReference interface {
 	ResetRuleSet()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -108,8 +108,8 @@ type jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference str
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference
 	return returns
 }
 
-func (j *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference) CustomInfoTypesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference) CustomInfoTypesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"customInfoTypesInput",
@@ -178,8 +178,8 @@ func (j *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference
 	return returns
 }
 
-func (j *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference) ExcludeInfoTypes() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference) ExcludeInfoTypes() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"excludeInfoTypes",
@@ -188,8 +188,8 @@ func (j *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference
 	return returns
 }
 
-func (j *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference) ExcludeInfoTypesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference) ExcludeInfoTypesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"excludeInfoTypesInput",
@@ -208,8 +208,8 @@ func (j *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference
 	return returns
 }
 
-func (j *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference) IncludeQuote() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference) IncludeQuote() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeQuote",
@@ -218,8 +218,8 @@ func (j *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference
 	return returns
 }
 
-func (j *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference) IncludeQuoteInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference) IncludeQuoteInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeQuoteInput",
@@ -238,8 +238,8 @@ func (j *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference
 	return returns
 }
 
-func (j *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference) InfoTypesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference) InfoTypesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"infoTypesInput",
@@ -308,8 +308,8 @@ func (j *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference
 	return returns
 }
 
-func (j *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference) RuleSetInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference) RuleSetInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ruleSetInput",
@@ -338,7 +338,6 @@ func (j *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference
 	return returns
 }
 
-
 func NewDataLossPreventionInspectTemplateInspectConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataLossPreventionInspectTemplateInspectConfigOutputReference {
 	_init_.Initialize()
 
@@ -349,7 +348,7 @@ func NewDataLossPreventionInspectTemplateInspectConfigOutputReference(terraformR
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataLossPreventionInspectTemplate.DataLossPreventionInspectTemplateInspectConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -361,12 +360,12 @@ func NewDataLossPreventionInspectTemplateInspectConfigOutputReference_Override(d
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataLossPreventionInspectTemplate.DataLossPreventionInspectTemplateInspectConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -377,7 +376,7 @@ func (j *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference
 	)
 }
 
-func (j *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -388,7 +387,7 @@ func (j *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference
 	)
 }
 
-func (j *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference)SetContentOptions(val *[]*string) {
+func (j *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference) SetContentOptions(val *[]*string) {
 	if err := j.validateSetContentOptionsParameters(val); err != nil {
 		panic(err)
 	}
@@ -399,7 +398,7 @@ func (j *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference
 	)
 }
 
-func (j *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference)SetExcludeInfoTypes(val interface{}) {
+func (j *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference) SetExcludeInfoTypes(val any) {
 	if err := j.validateSetExcludeInfoTypesParameters(val); err != nil {
 		panic(err)
 	}
@@ -410,7 +409,7 @@ func (j *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference
 	)
 }
 
-func (j *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference)SetIncludeQuote(val interface{}) {
+func (j *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference) SetIncludeQuote(val any) {
 	if err := j.validateSetIncludeQuoteParameters(val); err != nil {
 		panic(err)
 	}
@@ -421,7 +420,7 @@ func (j *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference
 	)
 }
 
-func (j *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference)SetInternalValue(val *DataLossPreventionInspectTemplateInspectConfig) {
+func (j *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference) SetInternalValue(val *DataLossPreventionInspectTemplateInspectConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -432,7 +431,7 @@ func (j *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference
 	)
 }
 
-func (j *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference)SetMinLikelihood(val *string) {
+func (j *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference) SetMinLikelihood(val *string) {
 	if err := j.validateSetMinLikelihoodParameters(val); err != nil {
 		panic(err)
 	}
@@ -443,7 +442,7 @@ func (j *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference
 	)
 }
 
-func (j *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -454,7 +453,7 @@ func (j *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference
 	)
 }
 
-func (j *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -478,16 +477,16 @@ func (d *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference
 	return returns
 }
 
-func (d *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -503,7 +502,7 @@ func (d *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -519,7 +518,7 @@ func (d *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -535,7 +534,7 @@ func (d *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -551,7 +550,7 @@ func (d *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -567,7 +566,7 @@ func (d *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -583,7 +582,7 @@ func (d *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -599,7 +598,7 @@ func (d *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -615,7 +614,7 @@ func (d *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -644,32 +643,32 @@ func (d *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference) PutCustomInfoTypes(value interface{}) {
+func (d *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference) PutCustomInfoTypes(value any) {
 	if err := d.validatePutCustomInfoTypesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putCustomInfoTypes",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (d *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference) PutInfoTypes(value interface{}) {
+func (d *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference) PutInfoTypes(value any) {
 	if err := d.validatePutInfoTypesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putInfoTypes",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -680,18 +679,18 @@ func (d *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference
 	_jsii_.InvokeVoid(
 		d,
 		"putLimits",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (d *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference) PutRuleSet(value interface{}) {
+func (d *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference) PutRuleSet(value any) {
 	if err := d.validatePutRuleSetParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putRuleSet",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -759,16 +758,16 @@ func (d *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference
 	)
 }
 
-func (d *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -787,4 +786,3 @@ func (d *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference
 
 	return returns
 }
-

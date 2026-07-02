@@ -90,7 +90,7 @@ func (d *jsiiProxy_DataGoogleIamPolicyAuditConfigOutputReference) validateInterp
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleIamPolicyAuditConfigOutputReference) validatePutAuditLogConfigsParameters(value interface{}) error {
+func (d *jsiiProxy_DataGoogleIamPolicyAuditConfigOutputReference) validatePutAuditLogConfigsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (d *jsiiProxy_DataGoogleIamPolicyAuditConfigOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleIamPolicyAuditConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleIamPolicyAuditConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -194,7 +194,7 @@ func (j *jsiiProxy_DataGoogleIamPolicyAuditConfigOutputReference) validateSetCom
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleIamPolicyAuditConfigOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleIamPolicyAuditConfigOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -261,4 +261,3 @@ func validateNewDataGoogleIamPolicyAuditConfigOutputReferenceParameters(terrafor
 
 	return nil
 }
-

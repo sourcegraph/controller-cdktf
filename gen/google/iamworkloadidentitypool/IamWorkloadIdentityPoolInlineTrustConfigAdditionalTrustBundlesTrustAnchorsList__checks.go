@@ -34,7 +34,7 @@ func (i *jsiiProxy_IamWorkloadIdentityPoolInlineTrustConfigAdditionalTrustBundle
 	return nil
 }
 
-func (j *jsiiProxy_IamWorkloadIdentityPoolInlineTrustConfigAdditionalTrustBundlesTrustAnchorsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_IamWorkloadIdentityPoolInlineTrustConfigAdditionalTrustBundlesTrustAnchorsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewIamWorkloadIdentityPoolInlineTrustConfigAdditionalTrustBundlesTr
 
 	return nil
 }
-

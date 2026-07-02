@@ -98,7 +98,7 @@ func (m *jsiiProxy_MonitoringAlertPolicyCreationRecordOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_MonitoringAlertPolicyCreationRecordOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MonitoringAlertPolicyCreationRecordOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewMonitoringAlertPolicyCreationRecordOutputReferenceParameters(ter
 
 	return nil
 }
-

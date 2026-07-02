@@ -12,9 +12,9 @@ type ComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRuleOutputReferen
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,8 +27,8 @@ type ComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRuleOutputReferen
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	MatchResponseCodes() *[]*string
 	SetMatchResponseCodes(val *[]*string)
 	MatchResponseCodesInput() *[]*string
@@ -49,7 +49,7 @@ type ComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRuleOutputReferen
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type ComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRuleOutputReferen
 	ResetPath()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_ComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRuleOut
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRuleOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRuleOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -128,8 +128,8 @@ func (j *jsiiProxy_ComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRul
 	return returns
 }
 
-func (j *jsiiProxy_ComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRuleOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRuleOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_ComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRul
 	return returns
 }
 
-
 func NewComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRuleOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRuleOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRuleOutputRefe
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeUrlMap.ComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRuleOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRuleOutputRefe
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeUrlMap.ComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRuleOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRuleOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRuleOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_ComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRul
 	)
 }
 
-func (j *jsiiProxy_ComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRuleOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRuleOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_ComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRul
 	)
 }
 
-func (j *jsiiProxy_ComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRuleOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRuleOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_ComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRul
 	)
 }
 
-func (j *jsiiProxy_ComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRuleOutputReference)SetMatchResponseCodes(val *[]*string) {
+func (j *jsiiProxy_ComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRuleOutputReference) SetMatchResponseCodes(val *[]*string) {
 	if err := j.validateSetMatchResponseCodesParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_ComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRul
 	)
 }
 
-func (j *jsiiProxy_ComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRuleOutputReference)SetOverrideResponseCode(val *float64) {
+func (j *jsiiProxy_ComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRuleOutputReference) SetOverrideResponseCode(val *float64) {
 	if err := j.validateSetOverrideResponseCodeParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_ComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRul
 	)
 }
 
-func (j *jsiiProxy_ComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRuleOutputReference)SetPath(val *string) {
+func (j *jsiiProxy_ComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRuleOutputReference) SetPath(val *string) {
 	if err := j.validateSetPathParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_ComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRul
 	)
 }
 
-func (j *jsiiProxy_ComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRuleOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRuleOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_ComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRul
 	)
 }
 
-func (j *jsiiProxy_ComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRuleOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRuleOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (c *jsiiProxy_ComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRul
 	return returns
 }
 
-func (c *jsiiProxy_ComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRuleOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRuleOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (c *jsiiProxy_ComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRul
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (c *jsiiProxy_ComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRul
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (c *jsiiProxy_ComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRul
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (c *jsiiProxy_ComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRul
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (c *jsiiProxy_ComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRul
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (c *jsiiProxy_ComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRul
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (c *jsiiProxy_ComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRul
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (c *jsiiProxy_ComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRul
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (c *jsiiProxy_ComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRul
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (c *jsiiProxy_ComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRul
 	)
 }
 
-func (c *jsiiProxy_ComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRuleOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRuleOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (c *jsiiProxy_ComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRul
 
 	return returns
 }
-

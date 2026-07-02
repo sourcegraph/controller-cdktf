@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeReservationReservationSharingPolicyOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_ComputeReservationReservationSharingPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeReservationReservationSharingPolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewComputeReservationReservationSharingPolicyOutputReferenceParamet
 
 	return nil
 }
-

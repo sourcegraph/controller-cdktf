@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.endpointsService.EndpointsService",
-		reflect.TypeOf((*EndpointsService)(nil)).Elem(),
+		reflect.TypeFor[EndpointsService](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -78,7 +78,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EndpointsService{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -86,11 +86,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.endpointsService.EndpointsServiceApis",
-		reflect.TypeOf((*EndpointsServiceApis)(nil)).Elem(),
+		reflect.TypeFor[EndpointsServiceApis](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.endpointsService.EndpointsServiceApisList",
-		reflect.TypeOf((*EndpointsServiceApisList)(nil)).Elem(),
+		reflect.TypeFor[EndpointsServiceApisList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -103,7 +103,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EndpointsServiceApisList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -111,11 +111,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.endpointsService.EndpointsServiceApisMethods",
-		reflect.TypeOf((*EndpointsServiceApisMethods)(nil)).Elem(),
+		reflect.TypeFor[EndpointsServiceApisMethods](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.endpointsService.EndpointsServiceApisMethodsList",
-		reflect.TypeOf((*EndpointsServiceApisMethodsList)(nil)).Elem(),
+		reflect.TypeFor[EndpointsServiceApisMethodsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -128,7 +128,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EndpointsServiceApisMethodsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -136,7 +136,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.endpointsService.EndpointsServiceApisMethodsOutputReference",
-		reflect.TypeOf((*EndpointsServiceApisMethodsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EndpointsServiceApisMethodsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -164,7 +164,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EndpointsServiceApisMethodsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -172,7 +172,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.endpointsService.EndpointsServiceApisOutputReference",
-		reflect.TypeOf((*EndpointsServiceApisOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EndpointsServiceApisOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -200,7 +200,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EndpointsServiceApisOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -208,15 +208,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.endpointsService.EndpointsServiceConfig",
-		reflect.TypeOf((*EndpointsServiceConfig)(nil)).Elem(),
+		reflect.TypeFor[EndpointsServiceConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.endpointsService.EndpointsServiceEndpoints",
-		reflect.TypeOf((*EndpointsServiceEndpoints)(nil)).Elem(),
+		reflect.TypeFor[EndpointsServiceEndpoints](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.endpointsService.EndpointsServiceEndpointsList",
-		reflect.TypeOf((*EndpointsServiceEndpointsList)(nil)).Elem(),
+		reflect.TypeFor[EndpointsServiceEndpointsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -229,7 +229,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EndpointsServiceEndpointsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -237,7 +237,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.endpointsService.EndpointsServiceEndpointsOutputReference",
-		reflect.TypeOf((*EndpointsServiceEndpointsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EndpointsServiceEndpointsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "address", GoGetter: "Address"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -263,7 +263,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EndpointsServiceEndpointsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -271,11 +271,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.endpointsService.EndpointsServiceTimeouts",
-		reflect.TypeOf((*EndpointsServiceTimeouts)(nil)).Elem(),
+		reflect.TypeFor[EndpointsServiceTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.endpointsService.EndpointsServiceTimeoutsOutputReference",
-		reflect.TypeOf((*EndpointsServiceTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EndpointsServiceTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -308,7 +308,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EndpointsServiceTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

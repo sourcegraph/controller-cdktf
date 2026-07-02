@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleWatchlist.ChronicleWatchlist",
-		reflect.TypeOf((*ChronicleWatchlist)(nil)).Elem(),
+		reflect.TypeFor[ChronicleWatchlist](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -89,7 +89,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "watchlistUserPreferences", GoGetter: "WatchlistUserPreferences"},
 			_jsii_.MemberProperty{JsiiProperty: "watchlistUserPreferencesInput", GoGetter: "WatchlistUserPreferencesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleWatchlist{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -97,15 +97,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.chronicleWatchlist.ChronicleWatchlistConfig",
-		reflect.TypeOf((*ChronicleWatchlistConfig)(nil)).Elem(),
+		reflect.TypeFor[ChronicleWatchlistConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.chronicleWatchlist.ChronicleWatchlistEntityCount",
-		reflect.TypeOf((*ChronicleWatchlistEntityCount)(nil)).Elem(),
+		reflect.TypeFor[ChronicleWatchlistEntityCount](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleWatchlist.ChronicleWatchlistEntityCountList",
-		reflect.TypeOf((*ChronicleWatchlistEntityCountList)(nil)).Elem(),
+		reflect.TypeFor[ChronicleWatchlistEntityCountList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -118,7 +118,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleWatchlistEntityCountList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -126,7 +126,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleWatchlist.ChronicleWatchlistEntityCountOutputReference",
-		reflect.TypeOf((*ChronicleWatchlistEntityCountOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ChronicleWatchlistEntityCountOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "asset", GoGetter: "Asset"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -152,7 +152,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "user", GoGetter: "User"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleWatchlistEntityCountOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -160,15 +160,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.chronicleWatchlist.ChronicleWatchlistEntityPopulationMechanism",
-		reflect.TypeOf((*ChronicleWatchlistEntityPopulationMechanism)(nil)).Elem(),
+		reflect.TypeFor[ChronicleWatchlistEntityPopulationMechanism](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.chronicleWatchlist.ChronicleWatchlistEntityPopulationMechanismManual",
-		reflect.TypeOf((*ChronicleWatchlistEntityPopulationMechanismManual)(nil)).Elem(),
+		reflect.TypeFor[ChronicleWatchlistEntityPopulationMechanismManual](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleWatchlist.ChronicleWatchlistEntityPopulationMechanismManualOutputReference",
-		reflect.TypeOf((*ChronicleWatchlistEntityPopulationMechanismManualOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ChronicleWatchlistEntityPopulationMechanismManualOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -192,7 +192,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleWatchlistEntityPopulationMechanismManualOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -200,7 +200,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleWatchlist.ChronicleWatchlistEntityPopulationMechanismOutputReference",
-		reflect.TypeOf((*ChronicleWatchlistEntityPopulationMechanismOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ChronicleWatchlistEntityPopulationMechanismOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -228,7 +228,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleWatchlistEntityPopulationMechanismOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -236,11 +236,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.chronicleWatchlist.ChronicleWatchlistTimeouts",
-		reflect.TypeOf((*ChronicleWatchlistTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ChronicleWatchlistTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleWatchlist.ChronicleWatchlistTimeoutsOutputReference",
-		reflect.TypeOf((*ChronicleWatchlistTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ChronicleWatchlistTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -273,7 +273,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleWatchlistTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -281,11 +281,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.chronicleWatchlist.ChronicleWatchlistWatchlistUserPreferences",
-		reflect.TypeOf((*ChronicleWatchlistWatchlistUserPreferences)(nil)).Elem(),
+		reflect.TypeFor[ChronicleWatchlistWatchlistUserPreferences](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleWatchlist.ChronicleWatchlistWatchlistUserPreferencesOutputReference",
-		reflect.TypeOf((*ChronicleWatchlistWatchlistUserPreferencesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ChronicleWatchlistWatchlistUserPreferencesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -312,7 +312,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleWatchlistWatchlistUserPreferencesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

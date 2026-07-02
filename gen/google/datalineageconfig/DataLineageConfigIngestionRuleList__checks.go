@@ -34,7 +34,7 @@ func (d *jsiiProxy_DataLineageConfigIngestionRuleList) validateResolveParameters
 	return nil
 }
 
-func (j *jsiiProxy_DataLineageConfigIngestionRuleList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataLineageConfigIngestionRuleList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDataLineageConfigIngestionRuleListParameters(terraformResource c
 
 	return nil
 }
-

@@ -1,6 +1,5 @@
 package dialogflowcxpage
 
-
 type DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsSpeechSettings struct {
 	// Sensitivity of the speech model that detects the end of speech. Scale from 0 to 100.
 	//
@@ -20,6 +19,5 @@ type DialogflowCxPageKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSetting
 	// Use timeout based endpointing, interpreting endpointer sensitivity as seconds of timeout value.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_page#use_timeout_based_endpointing DialogflowCxPage#use_timeout_based_endpointing}
-	UseTimeoutBasedEndpointing interface{} `field:"optional" json:"useTimeoutBasedEndpointing" yaml:"useTimeoutBasedEndpointing"`
+	UseTimeoutBasedEndpointing any `field:"optional" json:"useTimeoutBasedEndpointing" yaml:"useTimeoutBasedEndpointing"`
 }
-

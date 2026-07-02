@@ -6,9 +6,9 @@ import (
 
 type ComputeNetworkEndpointsConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type ComputeNetworkEndpointsConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The network endpoint group these endpoints are part of.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_endpoints#network_endpoint_group ComputeNetworkEndpoints#network_endpoint_group}
@@ -31,7 +31,7 @@ type ComputeNetworkEndpointsConfig struct {
 	// network_endpoints block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_endpoints#network_endpoints ComputeNetworkEndpoints#network_endpoints}
-	NetworkEndpoints interface{} `field:"optional" json:"networkEndpoints" yaml:"networkEndpoints"`
+	NetworkEndpoints any `field:"optional" json:"networkEndpoints" yaml:"networkEndpoints"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_endpoints#project ComputeNetworkEndpoints#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// timeouts block.
@@ -43,4 +43,3 @@ type ComputeNetworkEndpointsConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_endpoints#zone ComputeNetworkEndpoints#zone}
 	Zone *string `field:"optional" json:"zone" yaml:"zone"`
 }
-

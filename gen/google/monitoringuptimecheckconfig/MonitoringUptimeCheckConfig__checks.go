@@ -19,7 +19,7 @@ func (m *jsiiProxy_MonitoringUptimeCheckConfig) validateAddMoveTargetParameters(
 	return nil
 }
 
-func (m *jsiiProxy_MonitoringUptimeCheckConfig) validateAddOverrideParameters(path *string, value interface{}) error {
+func (m *jsiiProxy_MonitoringUptimeCheckConfig) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (m *jsiiProxy_MonitoringUptimeCheckConfig) validateMoveFromIdParameters(id 
 	return nil
 }
 
-func (m *jsiiProxy_MonitoringUptimeCheckConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (m *jsiiProxy_MonitoringUptimeCheckConfig) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (m *jsiiProxy_MonitoringUptimeCheckConfig) validateOverrideLogicalIdParamet
 	return nil
 }
 
-func (m *jsiiProxy_MonitoringUptimeCheckConfig) validatePutContentMatchersParameters(value interface{}) error {
+func (m *jsiiProxy_MonitoringUptimeCheckConfig) validatePutContentMatchersParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -317,7 +317,7 @@ func validateMonitoringUptimeCheckConfig_GenerateConfigForImportParameters(scope
 	return nil
 }
 
-func validateMonitoringUptimeCheckConfig_IsConstructParameters(x interface{}) error {
+func validateMonitoringUptimeCheckConfig_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -325,7 +325,7 @@ func validateMonitoringUptimeCheckConfig_IsConstructParameters(x interface{}) er
 	return nil
 }
 
-func validateMonitoringUptimeCheckConfig_IsTerraformElementParameters(x interface{}) error {
+func validateMonitoringUptimeCheckConfig_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -333,7 +333,7 @@ func validateMonitoringUptimeCheckConfig_IsTerraformElementParameters(x interfac
 	return nil
 }
 
-func validateMonitoringUptimeCheckConfig_IsTerraformResourceParameters(x interface{}) error {
+func validateMonitoringUptimeCheckConfig_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -349,7 +349,7 @@ func (j *jsiiProxy_MonitoringUptimeCheckConfig) validateSetCheckerTypeParameters
 	return nil
 }
 
-func (j *jsiiProxy_MonitoringUptimeCheckConfig) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_MonitoringUptimeCheckConfig) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -382,7 +382,7 @@ func (j *jsiiProxy_MonitoringUptimeCheckConfig) validateSetConnectionParameters(
 	return nil
 }
 
-func (j *jsiiProxy_MonitoringUptimeCheckConfig) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_MonitoringUptimeCheckConfig) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -463,7 +463,7 @@ func (j *jsiiProxy_MonitoringUptimeCheckConfig) validateSetLifecycleParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_MonitoringUptimeCheckConfig) validateSetLogCheckFailuresParameters(val interface{}) error {
+func (j *jsiiProxy_MonitoringUptimeCheckConfig) validateSetLogCheckFailuresParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -499,7 +499,7 @@ func (j *jsiiProxy_MonitoringUptimeCheckConfig) validateSetProjectParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_MonitoringUptimeCheckConfig) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_MonitoringUptimeCheckConfig) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -587,4 +587,3 @@ func validateNewMonitoringUptimeCheckConfigParameters(scope constructs.Construct
 
 	return nil
 }
-

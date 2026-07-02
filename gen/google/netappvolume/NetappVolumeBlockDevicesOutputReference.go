@@ -12,9 +12,9 @@ type NetappVolumeBlockDevicesOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -31,8 +31,8 @@ type NetappVolumeBlockDevicesOutputReference interface {
 	SetHostGroups(val *[]*string)
 	HostGroupsInput() *[]*string
 	Identifier() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -51,7 +51,7 @@ type NetappVolumeBlockDevicesOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -76,7 +76,7 @@ type NetappVolumeBlockDevicesOutputReference interface {
 	ResetName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -89,8 +89,8 @@ type jsiiProxy_NetappVolumeBlockDevicesOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_NetappVolumeBlockDevicesOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetappVolumeBlockDevicesOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -159,8 +159,8 @@ func (j *jsiiProxy_NetappVolumeBlockDevicesOutputReference) Identifier() *string
 	return returns
 }
 
-func (j *jsiiProxy_NetappVolumeBlockDevicesOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetappVolumeBlockDevicesOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -239,7 +239,6 @@ func (j *jsiiProxy_NetappVolumeBlockDevicesOutputReference) TerraformResource() 
 	return returns
 }
 
-
 func NewNetappVolumeBlockDevicesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) NetappVolumeBlockDevicesOutputReference {
 	_init_.Initialize()
 
@@ -250,7 +249,7 @@ func NewNetappVolumeBlockDevicesOutputReference(terraformResource cdktf.IInterpo
 
 	_jsii_.Create(
 		"@cdktf/provider-google.netappVolume.NetappVolumeBlockDevicesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -262,12 +261,12 @@ func NewNetappVolumeBlockDevicesOutputReference_Override(n NetappVolumeBlockDevi
 
 	_jsii_.Create(
 		"@cdktf/provider-google.netappVolume.NetappVolumeBlockDevicesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NetappVolumeBlockDevicesOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_NetappVolumeBlockDevicesOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -278,7 +277,7 @@ func (j *jsiiProxy_NetappVolumeBlockDevicesOutputReference)SetComplexObjectIndex
 	)
 }
 
-func (j *jsiiProxy_NetappVolumeBlockDevicesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_NetappVolumeBlockDevicesOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -289,7 +288,7 @@ func (j *jsiiProxy_NetappVolumeBlockDevicesOutputReference)SetComplexObjectIsFro
 	)
 }
 
-func (j *jsiiProxy_NetappVolumeBlockDevicesOutputReference)SetHostGroups(val *[]*string) {
+func (j *jsiiProxy_NetappVolumeBlockDevicesOutputReference) SetHostGroups(val *[]*string) {
 	if err := j.validateSetHostGroupsParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,7 +299,7 @@ func (j *jsiiProxy_NetappVolumeBlockDevicesOutputReference)SetHostGroups(val *[]
 	)
 }
 
-func (j *jsiiProxy_NetappVolumeBlockDevicesOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_NetappVolumeBlockDevicesOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,7 +310,7 @@ func (j *jsiiProxy_NetappVolumeBlockDevicesOutputReference)SetInternalValue(val 
 	)
 }
 
-func (j *jsiiProxy_NetappVolumeBlockDevicesOutputReference)SetName(val *string) {
+func (j *jsiiProxy_NetappVolumeBlockDevicesOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -322,7 +321,7 @@ func (j *jsiiProxy_NetappVolumeBlockDevicesOutputReference)SetName(val *string) 
 	)
 }
 
-func (j *jsiiProxy_NetappVolumeBlockDevicesOutputReference)SetOsType(val *string) {
+func (j *jsiiProxy_NetappVolumeBlockDevicesOutputReference) SetOsType(val *string) {
 	if err := j.validateSetOsTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -333,7 +332,7 @@ func (j *jsiiProxy_NetappVolumeBlockDevicesOutputReference)SetOsType(val *string
 	)
 }
 
-func (j *jsiiProxy_NetappVolumeBlockDevicesOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_NetappVolumeBlockDevicesOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -344,7 +343,7 @@ func (j *jsiiProxy_NetappVolumeBlockDevicesOutputReference)SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_NetappVolumeBlockDevicesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NetappVolumeBlockDevicesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -368,16 +367,16 @@ func (n *jsiiProxy_NetappVolumeBlockDevicesOutputReference) ComputeFqn() *string
 	return returns
 }
 
-func (n *jsiiProxy_NetappVolumeBlockDevicesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (n *jsiiProxy_NetappVolumeBlockDevicesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -393,7 +392,7 @@ func (n *jsiiProxy_NetappVolumeBlockDevicesOutputReference) GetBooleanAttribute(
 	_jsii_.Invoke(
 		n,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -409,7 +408,7 @@ func (n *jsiiProxy_NetappVolumeBlockDevicesOutputReference) GetBooleanMapAttribu
 	_jsii_.Invoke(
 		n,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -425,7 +424,7 @@ func (n *jsiiProxy_NetappVolumeBlockDevicesOutputReference) GetListAttribute(ter
 	_jsii_.Invoke(
 		n,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -441,7 +440,7 @@ func (n *jsiiProxy_NetappVolumeBlockDevicesOutputReference) GetNumberAttribute(t
 	_jsii_.Invoke(
 		n,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -457,7 +456,7 @@ func (n *jsiiProxy_NetappVolumeBlockDevicesOutputReference) GetNumberListAttribu
 	_jsii_.Invoke(
 		n,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -473,7 +472,7 @@ func (n *jsiiProxy_NetappVolumeBlockDevicesOutputReference) GetNumberMapAttribut
 	_jsii_.Invoke(
 		n,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -489,7 +488,7 @@ func (n *jsiiProxy_NetappVolumeBlockDevicesOutputReference) GetStringAttribute(t
 	_jsii_.Invoke(
 		n,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -505,7 +504,7 @@ func (n *jsiiProxy_NetappVolumeBlockDevicesOutputReference) GetStringMapAttribut
 	_jsii_.Invoke(
 		n,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -534,7 +533,7 @@ func (n *jsiiProxy_NetappVolumeBlockDevicesOutputReference) InterpolationForAttr
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -557,16 +556,16 @@ func (n *jsiiProxy_NetappVolumeBlockDevicesOutputReference) ResetName() {
 	)
 }
 
-func (n *jsiiProxy_NetappVolumeBlockDevicesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (n *jsiiProxy_NetappVolumeBlockDevicesOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := n.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		n,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -585,4 +584,3 @@ func (n *jsiiProxy_NetappVolumeBlockDevicesOutputReference) ToString() *string {
 
 	return returns
 }
-

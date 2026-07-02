@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.loggingBillingAccountExclusion.LoggingBillingAccountExclusion",
-		reflect.TypeOf((*LoggingBillingAccountExclusion)(nil)).Elem(),
+		reflect.TypeFor[LoggingBillingAccountExclusion](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -68,7 +68,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LoggingBillingAccountExclusion{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -76,6 +76,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.loggingBillingAccountExclusion.LoggingBillingAccountExclusionConfig",
-		reflect.TypeOf((*LoggingBillingAccountExclusionConfig)(nil)).Elem(),
+		reflect.TypeFor[LoggingBillingAccountExclusionConfig](),
 	)
 }

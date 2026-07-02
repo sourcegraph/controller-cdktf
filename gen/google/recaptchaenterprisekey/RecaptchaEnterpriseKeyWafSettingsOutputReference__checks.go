@@ -98,7 +98,7 @@ func (r *jsiiProxy_RecaptchaEnterpriseKeyWafSettingsOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_RecaptchaEnterpriseKeyWafSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_RecaptchaEnterpriseKeyWafSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewRecaptchaEnterpriseKeyWafSettingsOutputReferenceParameters(terra
 
 	return nil
 }
-

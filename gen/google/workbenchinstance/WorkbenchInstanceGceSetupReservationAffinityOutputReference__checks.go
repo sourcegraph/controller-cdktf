@@ -98,7 +98,7 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupReservationAffinityOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_WorkbenchInstanceGceSetupReservationAffinityOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_WorkbenchInstanceGceSetupReservationAffinityOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewWorkbenchInstanceGceSetupReservationAffinityOutputReferenceParam
 
 	return nil
 }
-

@@ -1,6 +1,5 @@
 package cesapp
 
-
 type CesAppLanguageSettings struct {
 	// The default language code of the app.
 	//
@@ -9,7 +8,7 @@ type CesAppLanguageSettings struct {
 	// Enables multilingual support. If true, agents in the app will use pre-built instructions to improve handling of multilingual input.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_app#enable_multilingual_support CesApp#enable_multilingual_support}
-	EnableMultilingualSupport interface{} `field:"optional" json:"enableMultilingualSupport" yaml:"enableMultilingualSupport"`
+	EnableMultilingualSupport any `field:"optional" json:"enableMultilingualSupport" yaml:"enableMultilingualSupport"`
 	// The action to perform when an agent receives input in an unsupported language.
 	//
 	// This can be a predefined action or a custom tool call.
@@ -26,4 +25,3 @@ type CesAppLanguageSettings struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_app#supported_language_codes CesApp#supported_language_codes}
 	SupportedLanguageCodes *[]*string `field:"optional" json:"supportedLanguageCodes" yaml:"supportedLanguageCodes"`
 }
-

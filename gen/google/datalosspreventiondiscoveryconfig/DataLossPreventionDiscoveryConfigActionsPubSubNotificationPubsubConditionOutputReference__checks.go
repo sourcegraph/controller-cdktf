@@ -109,7 +109,7 @@ func (d *jsiiProxy_DataLossPreventionDiscoveryConfigActionsPubSubNotificationPub
 	return nil
 }
 
-func (j *jsiiProxy_DataLossPreventionDiscoveryConfigActionsPubSubNotificationPubsubConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataLossPreventionDiscoveryConfigActionsPubSubNotificationPubsubConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewDataLossPreventionDiscoveryConfigActionsPubSubNotificationPubsub
 
 	return nil
 }
-

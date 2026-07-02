@@ -15,11 +15,11 @@ type DataGoogleComputeNetworkEndpointGroups interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -53,20 +53,20 @@ type DataGoogleComputeNetworkEndpointGroups interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Zone() *string
 	SetZone(val *string)
 	ZoneInput() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -95,18 +95,18 @@ type DataGoogleComputeNetworkEndpointGroups interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetZone()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataGoogleComputeNetworkEndpointGroups
@@ -124,8 +124,8 @@ func (j *jsiiProxy_DataGoogleComputeNetworkEndpointGroups) CdktfStack() cdktf.Te
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleComputeNetworkEndpointGroups) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleComputeNetworkEndpointGroups) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -134,8 +134,8 @@ func (j *jsiiProxy_DataGoogleComputeNetworkEndpointGroups) ConstructNodeMetadata
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleComputeNetworkEndpointGroups) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleComputeNetworkEndpointGroups) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -284,8 +284,8 @@ func (j *jsiiProxy_DataGoogleComputeNetworkEndpointGroups) Provider() cdktf.Terr
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleComputeNetworkEndpointGroups) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleComputeNetworkEndpointGroups) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -304,8 +304,8 @@ func (j *jsiiProxy_DataGoogleComputeNetworkEndpointGroups) TerraformGeneratorMet
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleComputeNetworkEndpointGroups) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleComputeNetworkEndpointGroups) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -344,7 +344,6 @@ func (j *jsiiProxy_DataGoogleComputeNetworkEndpointGroups) ZoneInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/compute_network_endpoint_groups google_compute_network_endpoint_groups} Data Source.
 func NewDataGoogleComputeNetworkEndpointGroups(scope constructs.Construct, id *string, config *DataGoogleComputeNetworkEndpointGroupsConfig) DataGoogleComputeNetworkEndpointGroups {
 	_init_.Initialize()
@@ -356,7 +355,7 @@ func NewDataGoogleComputeNetworkEndpointGroups(scope constructs.Construct, id *s
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleComputeNetworkEndpointGroups.DataGoogleComputeNetworkEndpointGroups",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -369,12 +368,12 @@ func NewDataGoogleComputeNetworkEndpointGroups_Override(d DataGoogleComputeNetwo
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleComputeNetworkEndpointGroups.DataGoogleComputeNetworkEndpointGroups",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeNetworkEndpointGroups)SetCount(val interface{}) {
+func (j *jsiiProxy_DataGoogleComputeNetworkEndpointGroups) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -385,7 +384,7 @@ func (j *jsiiProxy_DataGoogleComputeNetworkEndpointGroups)SetCount(val interface
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeNetworkEndpointGroups)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataGoogleComputeNetworkEndpointGroups) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -393,7 +392,7 @@ func (j *jsiiProxy_DataGoogleComputeNetworkEndpointGroups)SetDependsOn(val *[]*s
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeNetworkEndpointGroups)SetFilter(val *string) {
+func (j *jsiiProxy_DataGoogleComputeNetworkEndpointGroups) SetFilter(val *string) {
 	if err := j.validateSetFilterParameters(val); err != nil {
 		panic(err)
 	}
@@ -404,7 +403,7 @@ func (j *jsiiProxy_DataGoogleComputeNetworkEndpointGroups)SetFilter(val *string)
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeNetworkEndpointGroups)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGoogleComputeNetworkEndpointGroups) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -412,7 +411,7 @@ func (j *jsiiProxy_DataGoogleComputeNetworkEndpointGroups)SetForEach(val cdktf.I
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeNetworkEndpointGroups)SetId(val *string) {
+func (j *jsiiProxy_DataGoogleComputeNetworkEndpointGroups) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -423,7 +422,7 @@ func (j *jsiiProxy_DataGoogleComputeNetworkEndpointGroups)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeNetworkEndpointGroups)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGoogleComputeNetworkEndpointGroups) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -434,7 +433,7 @@ func (j *jsiiProxy_DataGoogleComputeNetworkEndpointGroups)SetLifecycle(val *cdkt
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeNetworkEndpointGroups)SetProject(val *string) {
+func (j *jsiiProxy_DataGoogleComputeNetworkEndpointGroups) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -445,7 +444,7 @@ func (j *jsiiProxy_DataGoogleComputeNetworkEndpointGroups)SetProject(val *string
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeNetworkEndpointGroups)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGoogleComputeNetworkEndpointGroups) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -453,7 +452,7 @@ func (j *jsiiProxy_DataGoogleComputeNetworkEndpointGroups)SetProvider(val cdktf.
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeNetworkEndpointGroups)SetZone(val *string) {
+func (j *jsiiProxy_DataGoogleComputeNetworkEndpointGroups) SetZone(val *string) {
 	if err := j.validateSetZoneParameters(val); err != nil {
 		panic(err)
 	}
@@ -476,7 +475,7 @@ func DataGoogleComputeNetworkEndpointGroups_GenerateConfigForImport(scope constr
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleComputeNetworkEndpointGroups.DataGoogleComputeNetworkEndpointGroups",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -500,7 +499,7 @@ func DataGoogleComputeNetworkEndpointGroups_GenerateConfigForImport(scope constr
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataGoogleComputeNetworkEndpointGroups_IsConstruct(x interface{}) *bool {
+func DataGoogleComputeNetworkEndpointGroups_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleComputeNetworkEndpointGroups_IsConstructParameters(x); err != nil {
@@ -511,7 +510,7 @@ func DataGoogleComputeNetworkEndpointGroups_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleComputeNetworkEndpointGroups.DataGoogleComputeNetworkEndpointGroups",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -519,7 +518,7 @@ func DataGoogleComputeNetworkEndpointGroups_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGoogleComputeNetworkEndpointGroups_IsTerraformDataSource(x interface{}) *bool {
+func DataGoogleComputeNetworkEndpointGroups_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleComputeNetworkEndpointGroups_IsTerraformDataSourceParameters(x); err != nil {
@@ -530,7 +529,7 @@ func DataGoogleComputeNetworkEndpointGroups_IsTerraformDataSource(x interface{})
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleComputeNetworkEndpointGroups.DataGoogleComputeNetworkEndpointGroups",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -538,7 +537,7 @@ func DataGoogleComputeNetworkEndpointGroups_IsTerraformDataSource(x interface{})
 }
 
 // Experimental.
-func DataGoogleComputeNetworkEndpointGroups_IsTerraformElement(x interface{}) *bool {
+func DataGoogleComputeNetworkEndpointGroups_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleComputeNetworkEndpointGroups_IsTerraformElementParameters(x); err != nil {
@@ -549,7 +548,7 @@ func DataGoogleComputeNetworkEndpointGroups_IsTerraformElement(x interface{}) *b
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleComputeNetworkEndpointGroups.DataGoogleComputeNetworkEndpointGroups",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -567,27 +566,27 @@ func DataGoogleComputeNetworkEndpointGroups_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleComputeNetworkEndpointGroups) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataGoogleComputeNetworkEndpointGroups) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataGoogleComputeNetworkEndpointGroups) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataGoogleComputeNetworkEndpointGroups) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -603,7 +602,7 @@ func (d *jsiiProxy_DataGoogleComputeNetworkEndpointGroups) GetBooleanAttribute(t
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -619,7 +618,7 @@ func (d *jsiiProxy_DataGoogleComputeNetworkEndpointGroups) GetBooleanMapAttribut
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -635,7 +634,7 @@ func (d *jsiiProxy_DataGoogleComputeNetworkEndpointGroups) GetListAttribute(terr
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -651,7 +650,7 @@ func (d *jsiiProxy_DataGoogleComputeNetworkEndpointGroups) GetNumberAttribute(te
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -667,7 +666,7 @@ func (d *jsiiProxy_DataGoogleComputeNetworkEndpointGroups) GetNumberListAttribut
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -683,7 +682,7 @@ func (d *jsiiProxy_DataGoogleComputeNetworkEndpointGroups) GetNumberMapAttribute
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -699,7 +698,7 @@ func (d *jsiiProxy_DataGoogleComputeNetworkEndpointGroups) GetStringAttribute(te
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -715,7 +714,7 @@ func (d *jsiiProxy_DataGoogleComputeNetworkEndpointGroups) GetStringMapAttribute
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -731,7 +730,7 @@ func (d *jsiiProxy_DataGoogleComputeNetworkEndpointGroups) InterpolationForAttri
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -745,7 +744,7 @@ func (d *jsiiProxy_DataGoogleComputeNetworkEndpointGroups) OverrideLogicalId(new
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -789,8 +788,8 @@ func (d *jsiiProxy_DataGoogleComputeNetworkEndpointGroups) ResetZone() {
 	)
 }
 
-func (d *jsiiProxy_DataGoogleComputeNetworkEndpointGroups) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleComputeNetworkEndpointGroups) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -802,8 +801,8 @@ func (d *jsiiProxy_DataGoogleComputeNetworkEndpointGroups) SynthesizeAttributes(
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleComputeNetworkEndpointGroups) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleComputeNetworkEndpointGroups) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -815,8 +814,8 @@ func (d *jsiiProxy_DataGoogleComputeNetworkEndpointGroups) SynthesizeHclAttribut
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleComputeNetworkEndpointGroups) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleComputeNetworkEndpointGroups) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -828,8 +827,8 @@ func (d *jsiiProxy_DataGoogleComputeNetworkEndpointGroups) ToHclTerraform() inte
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleComputeNetworkEndpointGroups) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleComputeNetworkEndpointGroups) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -854,8 +853,8 @@ func (d *jsiiProxy_DataGoogleComputeNetworkEndpointGroups) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleComputeNetworkEndpointGroups) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleComputeNetworkEndpointGroups) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -866,4 +865,3 @@ func (d *jsiiProxy_DataGoogleComputeNetworkEndpointGroups) ToTerraform() interfa
 
 	return returns
 }
-

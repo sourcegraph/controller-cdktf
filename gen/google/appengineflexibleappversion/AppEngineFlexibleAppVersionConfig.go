@@ -6,9 +6,9 @@ import (
 
 type AppEngineFlexibleAppVersionConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type AppEngineFlexibleAppVersionConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// liveness_check block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/app_engine_flexible_app_version#liveness_check AppEngineFlexibleAppVersion#liveness_check}
@@ -56,7 +56,7 @@ type AppEngineFlexibleAppVersionConfig struct {
 	// If set to 'true', the service will be deleted if it is the last version.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/app_engine_flexible_app_version#delete_service_on_destroy AppEngineFlexibleAppVersion#delete_service_on_destroy}
-	DeleteServiceOnDestroy interface{} `field:"optional" json:"deleteServiceOnDestroy" yaml:"deleteServiceOnDestroy"`
+	DeleteServiceOnDestroy any `field:"optional" json:"deleteServiceOnDestroy" yaml:"deleteServiceOnDestroy"`
 	// deployment block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/app_engine_flexible_app_version#deployment AppEngineFlexibleAppVersion#deployment}
@@ -82,7 +82,7 @@ type AppEngineFlexibleAppVersionConfig struct {
 	// handlers block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/app_engine_flexible_app_version#handlers AppEngineFlexibleAppVersion#handlers}
-	Handlers interface{} `field:"optional" json:"handlers" yaml:"handlers"`
+	Handlers any `field:"optional" json:"handlers" yaml:"handlers"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/app_engine_flexible_app_version#id AppEngineFlexibleAppVersion#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -118,7 +118,7 @@ type AppEngineFlexibleAppVersionConfig struct {
 	// If set to 'true', the application version will not be deleted.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/app_engine_flexible_app_version#noop_on_destroy AppEngineFlexibleAppVersion#noop_on_destroy}
-	NoopOnDestroy interface{} `field:"optional" json:"noopOnDestroy" yaml:"noopOnDestroy"`
+	NoopOnDestroy any `field:"optional" json:"noopOnDestroy" yaml:"noopOnDestroy"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/app_engine_flexible_app_version#project AppEngineFlexibleAppVersion#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// resources block.
@@ -169,4 +169,3 @@ type AppEngineFlexibleAppVersionConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/app_engine_flexible_app_version#vpc_access_connector AppEngineFlexibleAppVersion#vpc_access_connector}
 	VpcAccessConnector *AppEngineFlexibleAppVersionVpcAccessConnector `field:"optional" json:"vpcAccessConnector" yaml:"vpcAccessConnector"`
 }
-

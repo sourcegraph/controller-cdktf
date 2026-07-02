@@ -34,7 +34,7 @@ func (a *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersStatusE
 	return nil
 }
 
-func (j *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewAccessContextManagerServicePerimetersServicePerimetersStatusEgre
 
 	return nil
 }
-

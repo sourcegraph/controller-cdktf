@@ -106,7 +106,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsPasswordValidationPolicyOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsPasswordValidationPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsPasswordValidationPolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsPasswordValidationPolicyOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsPasswordValidationPolicyOutputReference) validateSetDisallowUsernameSubstringParameters(val interface{}) error {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsPasswordValidationPolicyOutputReference) validateSetDisallowUsernameSubstringParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -191,7 +191,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsPasswordValidationPolicyOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsPasswordValidationPolicyOutputReference) validateSetEnablePasswordPolicyParameters(val interface{}) error {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsPasswordValidationPolicyOutputReference) validateSetEnablePasswordPolicyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -270,4 +270,3 @@ func validateNewSqlDatabaseInstanceSettingsPasswordValidationPolicyOutputReferen
 
 	return nil
 }
-

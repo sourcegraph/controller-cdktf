@@ -98,7 +98,7 @@ func (v *jsiiProxy_VertexAiReasoningEngineSpecDeploymentSpecSecretEnvSecretRefOu
 	return nil
 }
 
-func (j *jsiiProxy_VertexAiReasoningEngineSpecDeploymentSpecSecretEnvSecretRefOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_VertexAiReasoningEngineSpecDeploymentSpecSecretEnvSecretRefOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewVertexAiReasoningEngineSpecDeploymentSpecSecretEnvSecretRefOutpu
 
 	return nil
 }
-

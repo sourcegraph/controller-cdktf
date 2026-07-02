@@ -109,7 +109,7 @@ func (c *jsiiProxy_CloudSecurityComplianceCloudControlRulesCelExpressionOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_CloudSecurityComplianceCloudControlRulesCelExpressionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudSecurityComplianceCloudControlRulesCelExpressionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -217,4 +217,3 @@ func validateNewCloudSecurityComplianceCloudControlRulesCelExpressionOutputRefer
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionNetworkEndpointGroup.ComputeRegionNetworkEndpointGroup",
-		reflect.TypeOf((*ComputeRegionNetworkEndpointGroup)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionNetworkEndpointGroup](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -99,7 +99,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionNetworkEndpointGroup{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -107,11 +107,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionNetworkEndpointGroup.ComputeRegionNetworkEndpointGroupAppEngine",
-		reflect.TypeOf((*ComputeRegionNetworkEndpointGroupAppEngine)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionNetworkEndpointGroupAppEngine](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionNetworkEndpointGroup.ComputeRegionNetworkEndpointGroupAppEngineOutputReference",
-		reflect.TypeOf((*ComputeRegionNetworkEndpointGroupAppEngineOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionNetworkEndpointGroupAppEngineOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -144,7 +144,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 			_jsii_.MemberProperty{JsiiProperty: "versionInput", GoGetter: "VersionInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionNetworkEndpointGroupAppEngineOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -152,11 +152,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionNetworkEndpointGroup.ComputeRegionNetworkEndpointGroupCloudFunction",
-		reflect.TypeOf((*ComputeRegionNetworkEndpointGroupCloudFunction)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionNetworkEndpointGroupCloudFunction](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionNetworkEndpointGroup.ComputeRegionNetworkEndpointGroupCloudFunctionOutputReference",
-		reflect.TypeOf((*ComputeRegionNetworkEndpointGroupCloudFunctionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionNetworkEndpointGroupCloudFunctionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -186,7 +186,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "urlMask", GoGetter: "UrlMask"},
 			_jsii_.MemberProperty{JsiiProperty: "urlMaskInput", GoGetter: "UrlMaskInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionNetworkEndpointGroupCloudFunctionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -194,11 +194,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionNetworkEndpointGroup.ComputeRegionNetworkEndpointGroupCloudRun",
-		reflect.TypeOf((*ComputeRegionNetworkEndpointGroupCloudRun)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionNetworkEndpointGroupCloudRun](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionNetworkEndpointGroup.ComputeRegionNetworkEndpointGroupCloudRunOutputReference",
-		reflect.TypeOf((*ComputeRegionNetworkEndpointGroupCloudRunOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionNetworkEndpointGroupCloudRunOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -231,7 +231,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "urlMask", GoGetter: "UrlMask"},
 			_jsii_.MemberProperty{JsiiProperty: "urlMaskInput", GoGetter: "UrlMaskInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionNetworkEndpointGroupCloudRunOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -239,15 +239,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionNetworkEndpointGroup.ComputeRegionNetworkEndpointGroupConfig",
-		reflect.TypeOf((*ComputeRegionNetworkEndpointGroupConfig)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionNetworkEndpointGroupConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionNetworkEndpointGroup.ComputeRegionNetworkEndpointGroupPscData",
-		reflect.TypeOf((*ComputeRegionNetworkEndpointGroupPscData)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionNetworkEndpointGroupPscData](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionNetworkEndpointGroup.ComputeRegionNetworkEndpointGroupPscDataOutputReference",
-		reflect.TypeOf((*ComputeRegionNetworkEndpointGroupPscDataOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionNetworkEndpointGroupPscDataOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -274,7 +274,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionNetworkEndpointGroupPscDataOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -282,11 +282,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionNetworkEndpointGroup.ComputeRegionNetworkEndpointGroupTimeouts",
-		reflect.TypeOf((*ComputeRegionNetworkEndpointGroupTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionNetworkEndpointGroupTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionNetworkEndpointGroup.ComputeRegionNetworkEndpointGroupTimeoutsOutputReference",
-		reflect.TypeOf((*ComputeRegionNetworkEndpointGroupTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionNetworkEndpointGroupTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -316,7 +316,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionNetworkEndpointGroupTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

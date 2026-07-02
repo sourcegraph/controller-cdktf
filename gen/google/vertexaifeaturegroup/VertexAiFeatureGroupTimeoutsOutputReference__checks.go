@@ -98,7 +98,7 @@ func (v *jsiiProxy_VertexAiFeatureGroupTimeoutsOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_VertexAiFeatureGroupTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_VertexAiFeatureGroupTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_VertexAiFeatureGroupTimeoutsOutputReference) validateSetDelet
 	return nil
 }
 
-func (j *jsiiProxy_VertexAiFeatureGroupTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_VertexAiFeatureGroupTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewVertexAiFeatureGroupTimeoutsOutputReferenceParameters(terraformR
 
 	return nil
 }
-

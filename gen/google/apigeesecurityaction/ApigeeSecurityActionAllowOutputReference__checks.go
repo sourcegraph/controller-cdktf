@@ -98,7 +98,7 @@ func (a *jsiiProxy_ApigeeSecurityActionAllowOutputReference) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_ApigeeSecurityActionAllowOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ApigeeSecurityActionAllowOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewApigeeSecurityActionAllowOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

@@ -106,7 +106,7 @@ func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeMonitoringConfigImportFeaturesA
 	return nil
 }
 
-func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeMonitoringConfigImportFeaturesAnalysisOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeMonitoringConfigImportFeaturesAnalysisOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewVertexAiFeaturestoreEntitytypeMonitoringConfigImportFeaturesAnal
 
 	return nil
 }
-

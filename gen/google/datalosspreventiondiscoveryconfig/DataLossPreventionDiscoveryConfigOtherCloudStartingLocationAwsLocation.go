@@ -1,6 +1,5 @@
 package datalosspreventiondiscoveryconfig
 
-
 type DataLossPreventionDiscoveryConfigOtherCloudStartingLocationAwsLocation struct {
 	// The AWS account ID that this discovery config applies to.
 	//
@@ -11,6 +10,5 @@ type DataLossPreventionDiscoveryConfigOtherCloudStartingLocationAwsLocation stru
 	// All AWS assets stored in Asset Inventory that didn't match other AWS discovery configs.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_loss_prevention_discovery_config#all_asset_inventory_assets DataLossPreventionDiscoveryConfig#all_asset_inventory_assets}
-	AllAssetInventoryAssets interface{} `field:"optional" json:"allAssetInventoryAssets" yaml:"allAssetInventoryAssets"`
+	AllAssetInventoryAssets any `field:"optional" json:"allAssetInventoryAssets" yaml:"allAssetInventoryAssets"`
 }
-

@@ -34,7 +34,7 @@ func (c *jsiiProxy_ContainerClusterNodeConfigContainerdConfigRegistryHostsHostsH
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterNodeConfigContainerdConfigRegistryHostsHostsHeaderList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterNodeConfigContainerdConfigRegistryHostsHostsHeaderList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewContainerClusterNodeConfigContainerdConfigRegistryHostsHostsHead
 
 	return nil
 }
-

@@ -6,9 +6,9 @@ import (
 
 type ComputeInterconnectConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type ComputeInterconnectConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Type of interconnect.
 	//
 	// Note that a value IT_PRIVATE has been deprecated in favor of DEDICATED.
@@ -63,7 +63,7 @@ type ComputeInterconnectConfig struct {
 	// interconnect and no BGP routes are exchanged over it. By default, the status is set to true.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect#admin_enabled ComputeInterconnect#admin_enabled}
-	AdminEnabled interface{} `field:"optional" json:"adminEnabled" yaml:"adminEnabled"`
+	AdminEnabled any `field:"optional" json:"adminEnabled" yaml:"adminEnabled"`
 	// Customer name, to put in the Letter of Authorization as the party authorized to request a crossconnect.
 	//
 	// This field is required for Dedicated and Partner Interconnect, should not be specified
@@ -98,7 +98,7 @@ type ComputeInterconnectConfig struct {
 	// Enable or disable MACsec on this Interconnect connection. MACsec enablement fails if the MACsec object is not specified.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect#macsec_enabled ComputeInterconnect#macsec_enabled}
-	MacsecEnabled interface{} `field:"optional" json:"macsecEnabled" yaml:"macsecEnabled"`
+	MacsecEnabled any `field:"optional" json:"macsecEnabled" yaml:"macsecEnabled"`
 	// Email address to contact the customer NOC for operations and maintenance notifications regarding this Interconnect.
 	//
 	// If specified, this will be used for notifications in addition to
@@ -137,4 +137,3 @@ type ComputeInterconnectConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect#timeouts ComputeInterconnect#timeouts}
 	Timeouts *ComputeInterconnectTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

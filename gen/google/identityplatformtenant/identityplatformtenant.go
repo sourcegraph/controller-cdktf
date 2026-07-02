@@ -12,36 +12,36 @@ import (
 // Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/identity_platform_tenant google_identity_platform_tenant}.
 type IdentityPlatformTenant interface {
 	cdktf.TerraformResource
-	AllowPasswordSignup() interface{}
-	SetAllowPasswordSignup(val interface{})
-	AllowPasswordSignupInput() interface{}
+	AllowPasswordSignup() any
+	SetAllowPasswordSignup(val any)
+	AllowPasswordSignupInput() any
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Client() IdentityPlatformTenantClientOutputReference
 	ClientInput() *IdentityPlatformTenantClient
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	DisableAuth() interface{}
-	SetDisableAuth(val interface{})
-	DisableAuthInput() interface{}
+	DisableAuth() any
+	SetDisableAuth(val any)
+	DisableAuthInput() any
 	DisplayName() *string
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
-	EnableEmailLinkSignin() interface{}
-	SetEnableEmailLinkSignin(val interface{})
-	EnableEmailLinkSigninInput() interface{}
+	EnableEmailLinkSignin() any
+	SetEnableEmailLinkSignin(val any)
+	EnableEmailLinkSigninInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -68,26 +68,26 @@ type IdentityPlatformTenant interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() IdentityPlatformTenantTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -105,7 +105,7 @@ type IdentityPlatformTenant interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -117,7 +117,7 @@ type IdentityPlatformTenant interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -136,17 +136,17 @@ type IdentityPlatformTenant interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for IdentityPlatformTenant
@@ -154,8 +154,8 @@ type jsiiProxy_IdentityPlatformTenant struct {
 	internal.Type__cdktfTerraformResource
 }
 
-func (j *jsiiProxy_IdentityPlatformTenant) AllowPasswordSignup() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IdentityPlatformTenant) AllowPasswordSignup() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowPasswordSignup",
@@ -164,8 +164,8 @@ func (j *jsiiProxy_IdentityPlatformTenant) AllowPasswordSignup() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IdentityPlatformTenant) AllowPasswordSignupInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IdentityPlatformTenant) AllowPasswordSignupInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowPasswordSignupInput",
@@ -204,8 +204,8 @@ func (j *jsiiProxy_IdentityPlatformTenant) ClientInput() *IdentityPlatformTenant
 	return returns
 }
 
-func (j *jsiiProxy_IdentityPlatformTenant) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IdentityPlatformTenant) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -214,8 +214,8 @@ func (j *jsiiProxy_IdentityPlatformTenant) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IdentityPlatformTenant) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_IdentityPlatformTenant) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -224,8 +224,8 @@ func (j *jsiiProxy_IdentityPlatformTenant) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_IdentityPlatformTenant) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IdentityPlatformTenant) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -244,8 +244,8 @@ func (j *jsiiProxy_IdentityPlatformTenant) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_IdentityPlatformTenant) DisableAuth() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IdentityPlatformTenant) DisableAuth() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableAuth",
@@ -254,8 +254,8 @@ func (j *jsiiProxy_IdentityPlatformTenant) DisableAuth() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IdentityPlatformTenant) DisableAuthInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IdentityPlatformTenant) DisableAuthInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableAuthInput",
@@ -284,8 +284,8 @@ func (j *jsiiProxy_IdentityPlatformTenant) DisplayNameInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_IdentityPlatformTenant) EnableEmailLinkSignin() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IdentityPlatformTenant) EnableEmailLinkSignin() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableEmailLinkSignin",
@@ -294,8 +294,8 @@ func (j *jsiiProxy_IdentityPlatformTenant) EnableEmailLinkSignin() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IdentityPlatformTenant) EnableEmailLinkSigninInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IdentityPlatformTenant) EnableEmailLinkSigninInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableEmailLinkSigninInput",
@@ -414,8 +414,8 @@ func (j *jsiiProxy_IdentityPlatformTenant) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_IdentityPlatformTenant) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_IdentityPlatformTenant) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -424,8 +424,8 @@ func (j *jsiiProxy_IdentityPlatformTenant) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IdentityPlatformTenant) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IdentityPlatformTenant) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -444,8 +444,8 @@ func (j *jsiiProxy_IdentityPlatformTenant) TerraformGeneratorMetadata() *cdktf.T
 	return returns
 }
 
-func (j *jsiiProxy_IdentityPlatformTenant) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_IdentityPlatformTenant) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -474,8 +474,8 @@ func (j *jsiiProxy_IdentityPlatformTenant) Timeouts() IdentityPlatformTenantTime
 	return returns
 }
 
-func (j *jsiiProxy_IdentityPlatformTenant) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IdentityPlatformTenant) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -483,7 +483,6 @@ func (j *jsiiProxy_IdentityPlatformTenant) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/identity_platform_tenant google_identity_platform_tenant} Resource.
 func NewIdentityPlatformTenant(scope constructs.Construct, id *string, config *IdentityPlatformTenantConfig) IdentityPlatformTenant {
@@ -496,7 +495,7 @@ func NewIdentityPlatformTenant(scope constructs.Construct, id *string, config *I
 
 	_jsii_.Create(
 		"@cdktf/provider-google.identityPlatformTenant.IdentityPlatformTenant",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -509,12 +508,12 @@ func NewIdentityPlatformTenant_Override(i IdentityPlatformTenant, scope construc
 
 	_jsii_.Create(
 		"@cdktf/provider-google.identityPlatformTenant.IdentityPlatformTenant",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		i,
 	)
 }
 
-func (j *jsiiProxy_IdentityPlatformTenant)SetAllowPasswordSignup(val interface{}) {
+func (j *jsiiProxy_IdentityPlatformTenant) SetAllowPasswordSignup(val any) {
 	if err := j.validateSetAllowPasswordSignupParameters(val); err != nil {
 		panic(err)
 	}
@@ -525,7 +524,7 @@ func (j *jsiiProxy_IdentityPlatformTenant)SetAllowPasswordSignup(val interface{}
 	)
 }
 
-func (j *jsiiProxy_IdentityPlatformTenant)SetConnection(val interface{}) {
+func (j *jsiiProxy_IdentityPlatformTenant) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -536,7 +535,7 @@ func (j *jsiiProxy_IdentityPlatformTenant)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IdentityPlatformTenant)SetCount(val interface{}) {
+func (j *jsiiProxy_IdentityPlatformTenant) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -547,7 +546,7 @@ func (j *jsiiProxy_IdentityPlatformTenant)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IdentityPlatformTenant)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_IdentityPlatformTenant) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -555,7 +554,7 @@ func (j *jsiiProxy_IdentityPlatformTenant)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_IdentityPlatformTenant)SetDisableAuth(val interface{}) {
+func (j *jsiiProxy_IdentityPlatformTenant) SetDisableAuth(val any) {
 	if err := j.validateSetDisableAuthParameters(val); err != nil {
 		panic(err)
 	}
@@ -566,7 +565,7 @@ func (j *jsiiProxy_IdentityPlatformTenant)SetDisableAuth(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IdentityPlatformTenant)SetDisplayName(val *string) {
+func (j *jsiiProxy_IdentityPlatformTenant) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -577,7 +576,7 @@ func (j *jsiiProxy_IdentityPlatformTenant)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IdentityPlatformTenant)SetEnableEmailLinkSignin(val interface{}) {
+func (j *jsiiProxy_IdentityPlatformTenant) SetEnableEmailLinkSignin(val any) {
 	if err := j.validateSetEnableEmailLinkSigninParameters(val); err != nil {
 		panic(err)
 	}
@@ -588,7 +587,7 @@ func (j *jsiiProxy_IdentityPlatformTenant)SetEnableEmailLinkSignin(val interface
 	)
 }
 
-func (j *jsiiProxy_IdentityPlatformTenant)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_IdentityPlatformTenant) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -596,7 +595,7 @@ func (j *jsiiProxy_IdentityPlatformTenant)SetForEach(val cdktf.ITerraformIterato
 	)
 }
 
-func (j *jsiiProxy_IdentityPlatformTenant)SetId(val *string) {
+func (j *jsiiProxy_IdentityPlatformTenant) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -607,7 +606,7 @@ func (j *jsiiProxy_IdentityPlatformTenant)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IdentityPlatformTenant)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_IdentityPlatformTenant) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -618,7 +617,7 @@ func (j *jsiiProxy_IdentityPlatformTenant)SetLifecycle(val *cdktf.TerraformResou
 	)
 }
 
-func (j *jsiiProxy_IdentityPlatformTenant)SetProject(val *string) {
+func (j *jsiiProxy_IdentityPlatformTenant) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -629,7 +628,7 @@ func (j *jsiiProxy_IdentityPlatformTenant)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IdentityPlatformTenant)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_IdentityPlatformTenant) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -637,7 +636,7 @@ func (j *jsiiProxy_IdentityPlatformTenant)SetProvider(val cdktf.TerraformProvide
 	)
 }
 
-func (j *jsiiProxy_IdentityPlatformTenant)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_IdentityPlatformTenant) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -660,7 +659,7 @@ func IdentityPlatformTenant_GenerateConfigForImport(scope constructs.Construct, 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.identityPlatformTenant.IdentityPlatformTenant",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -684,7 +683,7 @@ func IdentityPlatformTenant_GenerateConfigForImport(scope constructs.Construct, 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func IdentityPlatformTenant_IsConstruct(x interface{}) *bool {
+func IdentityPlatformTenant_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIdentityPlatformTenant_IsConstructParameters(x); err != nil {
@@ -695,7 +694,7 @@ func IdentityPlatformTenant_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.identityPlatformTenant.IdentityPlatformTenant",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -703,7 +702,7 @@ func IdentityPlatformTenant_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func IdentityPlatformTenant_IsTerraformElement(x interface{}) *bool {
+func IdentityPlatformTenant_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIdentityPlatformTenant_IsTerraformElementParameters(x); err != nil {
@@ -714,7 +713,7 @@ func IdentityPlatformTenant_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.identityPlatformTenant.IdentityPlatformTenant",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -722,7 +721,7 @@ func IdentityPlatformTenant_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func IdentityPlatformTenant_IsTerraformResource(x interface{}) *bool {
+func IdentityPlatformTenant_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIdentityPlatformTenant_IsTerraformResourceParameters(x); err != nil {
@@ -733,7 +732,7 @@ func IdentityPlatformTenant_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.identityPlatformTenant.IdentityPlatformTenant",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -758,31 +757,31 @@ func (i *jsiiProxy_IdentityPlatformTenant) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (i *jsiiProxy_IdentityPlatformTenant) AddOverride(path *string, value interface{}) {
+func (i *jsiiProxy_IdentityPlatformTenant) AddOverride(path *string, value any) {
 	if err := i.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (i *jsiiProxy_IdentityPlatformTenant) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_IdentityPlatformTenant) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -798,7 +797,7 @@ func (i *jsiiProxy_IdentityPlatformTenant) GetBooleanAttribute(terraformAttribut
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -814,7 +813,7 @@ func (i *jsiiProxy_IdentityPlatformTenant) GetBooleanMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -830,7 +829,7 @@ func (i *jsiiProxy_IdentityPlatformTenant) GetListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -846,7 +845,7 @@ func (i *jsiiProxy_IdentityPlatformTenant) GetNumberAttribute(terraformAttribute
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -862,7 +861,7 @@ func (i *jsiiProxy_IdentityPlatformTenant) GetNumberListAttribute(terraformAttri
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -878,7 +877,7 @@ func (i *jsiiProxy_IdentityPlatformTenant) GetNumberMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -894,7 +893,7 @@ func (i *jsiiProxy_IdentityPlatformTenant) GetStringAttribute(terraformAttribute
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -910,15 +909,15 @@ func (i *jsiiProxy_IdentityPlatformTenant) GetStringMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (i *jsiiProxy_IdentityPlatformTenant) HasResourceMove() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IdentityPlatformTenant) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -937,7 +936,7 @@ func (i *jsiiProxy_IdentityPlatformTenant) ImportFrom(id *string, provider cdktf
 	_jsii_.InvokeVoid(
 		i,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -950,7 +949,7 @@ func (i *jsiiProxy_IdentityPlatformTenant) InterpolationForAttribute(terraformAt
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -964,18 +963,18 @@ func (i *jsiiProxy_IdentityPlatformTenant) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (i *jsiiProxy_IdentityPlatformTenant) MoveTo(moveTarget *string, index interface{}) {
+func (i *jsiiProxy_IdentityPlatformTenant) MoveTo(moveTarget *string, index any) {
 	if err := i.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -986,7 +985,7 @@ func (i *jsiiProxy_IdentityPlatformTenant) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -997,7 +996,7 @@ func (i *jsiiProxy_IdentityPlatformTenant) OverrideLogicalId(newLogicalId *strin
 	_jsii_.InvokeVoid(
 		i,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1008,7 +1007,7 @@ func (i *jsiiProxy_IdentityPlatformTenant) PutClient(value *IdentityPlatformTena
 	_jsii_.InvokeVoid(
 		i,
 		"putClient",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1019,7 +1018,7 @@ func (i *jsiiProxy_IdentityPlatformTenant) PutTimeouts(value *IdentityPlatformTe
 	_jsii_.InvokeVoid(
 		i,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1087,8 +1086,8 @@ func (i *jsiiProxy_IdentityPlatformTenant) ResetTimeouts() {
 	)
 }
 
-func (i *jsiiProxy_IdentityPlatformTenant) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (i *jsiiProxy_IdentityPlatformTenant) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
@@ -1100,8 +1099,8 @@ func (i *jsiiProxy_IdentityPlatformTenant) SynthesizeAttributes() *map[string]in
 	return returns
 }
 
-func (i *jsiiProxy_IdentityPlatformTenant) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (i *jsiiProxy_IdentityPlatformTenant) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
@@ -1113,8 +1112,8 @@ func (i *jsiiProxy_IdentityPlatformTenant) SynthesizeHclAttributes() *map[string
 	return returns
 }
 
-func (i *jsiiProxy_IdentityPlatformTenant) ToHclTerraform() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IdentityPlatformTenant) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -1126,8 +1125,8 @@ func (i *jsiiProxy_IdentityPlatformTenant) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (i *jsiiProxy_IdentityPlatformTenant) ToMetadata() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IdentityPlatformTenant) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -1152,8 +1151,8 @@ func (i *jsiiProxy_IdentityPlatformTenant) ToString() *string {
 	return returns
 }
 
-func (i *jsiiProxy_IdentityPlatformTenant) ToTerraform() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IdentityPlatformTenant) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -1164,4 +1163,3 @@ func (i *jsiiProxy_IdentityPlatformTenant) ToTerraform() interface{} {
 
 	return returns
 }
-

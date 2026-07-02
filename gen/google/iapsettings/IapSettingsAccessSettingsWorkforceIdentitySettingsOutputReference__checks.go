@@ -109,7 +109,7 @@ func (i *jsiiProxy_IapSettingsAccessSettingsWorkforceIdentitySettingsOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_IapSettingsAccessSettingsWorkforceIdentitySettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IapSettingsAccessSettingsWorkforceIdentitySettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -217,4 +217,3 @@ func validateNewIapSettingsAccessSettingsWorkforceIdentitySettingsOutputReferenc
 
 	return nil
 }
-

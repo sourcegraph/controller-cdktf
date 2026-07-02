@@ -6,9 +6,9 @@ import (
 
 type ApigeeSecurityProfileV2Config struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type ApigeeSecurityProfileV2Config struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The Apigee Organization associated with the Apigee Security Profile V2, in the format 'organizations/{{org_name}}'.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_security_profile_v2#org_id ApigeeSecurityProfileV2#org_id}
@@ -26,7 +26,7 @@ type ApigeeSecurityProfileV2Config struct {
 	// profile_assessment_configs block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_security_profile_v2#profile_assessment_configs ApigeeSecurityProfileV2#profile_assessment_configs}
-	ProfileAssessmentConfigs interface{} `field:"required" json:"profileAssessmentConfigs" yaml:"profileAssessmentConfigs"`
+	ProfileAssessmentConfigs any `field:"required" json:"profileAssessmentConfigs" yaml:"profileAssessmentConfigs"`
 	// Resource ID of the security profile.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_security_profile_v2#profile_id ApigeeSecurityProfileV2#profile_id}
@@ -45,4 +45,3 @@ type ApigeeSecurityProfileV2Config struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_security_profile_v2#timeouts ApigeeSecurityProfileV2#timeouts}
 	Timeouts *ApigeeSecurityProfileV2Timeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

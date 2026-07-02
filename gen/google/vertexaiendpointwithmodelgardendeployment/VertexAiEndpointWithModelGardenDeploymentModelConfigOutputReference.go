@@ -10,14 +10,14 @@ import (
 
 type VertexAiEndpointWithModelGardenDeploymentModelConfigOutputReference interface {
 	cdktf.ComplexObject
-	AcceptEula() interface{}
-	SetAcceptEula(val interface{})
-	AcceptEulaInput() interface{}
+	AcceptEula() any
+	SetAcceptEula(val any)
+	AcceptEulaInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -35,9 +35,9 @@ type VertexAiEndpointWithModelGardenDeploymentModelConfigOutputReference interfa
 	HuggingFaceAccessToken() *string
 	SetHuggingFaceAccessToken(val *string)
 	HuggingFaceAccessTokenInput() *string
-	HuggingFaceCacheEnabled() interface{}
-	SetHuggingFaceCacheEnabled(val interface{})
-	HuggingFaceCacheEnabledInput() interface{}
+	HuggingFaceCacheEnabled() any
+	SetHuggingFaceCacheEnabled(val any)
+	HuggingFaceCacheEnabledInput() any
 	InternalValue() *VertexAiEndpointWithModelGardenDeploymentModelConfig
 	SetInternalValue(val *VertexAiEndpointWithModelGardenDeploymentModelConfig)
 	ModelDisplayName() *string
@@ -54,7 +54,7 @@ type VertexAiEndpointWithModelGardenDeploymentModelConfigOutputReference interfa
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -83,7 +83,7 @@ type VertexAiEndpointWithModelGardenDeploymentModelConfigOutputReference interfa
 	ResetModelDisplayName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -96,8 +96,8 @@ type jsiiProxy_VertexAiEndpointWithModelGardenDeploymentModelConfigOutputReferen
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeploymentModelConfigOutputReference) AcceptEula() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeploymentModelConfigOutputReference) AcceptEula() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"acceptEula",
@@ -106,8 +106,8 @@ func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeploymentModelConfigOutputRef
 	return returns
 }
 
-func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeploymentModelConfigOutputReference) AcceptEulaInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeploymentModelConfigOutputReference) AcceptEulaInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"acceptEulaInput",
@@ -116,8 +116,8 @@ func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeploymentModelConfigOutputRef
 	return returns
 }
 
-func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeploymentModelConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeploymentModelConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -196,8 +196,8 @@ func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeploymentModelConfigOutputRef
 	return returns
 }
 
-func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeploymentModelConfigOutputReference) HuggingFaceCacheEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeploymentModelConfigOutputReference) HuggingFaceCacheEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"huggingFaceCacheEnabled",
@@ -206,8 +206,8 @@ func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeploymentModelConfigOutputRef
 	return returns
 }
 
-func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeploymentModelConfigOutputReference) HuggingFaceCacheEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeploymentModelConfigOutputReference) HuggingFaceCacheEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"huggingFaceCacheEnabledInput",
@@ -266,7 +266,6 @@ func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeploymentModelConfigOutputRef
 	return returns
 }
 
-
 func NewVertexAiEndpointWithModelGardenDeploymentModelConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) VertexAiEndpointWithModelGardenDeploymentModelConfigOutputReference {
 	_init_.Initialize()
 
@@ -277,7 +276,7 @@ func NewVertexAiEndpointWithModelGardenDeploymentModelConfigOutputReference(terr
 
 	_jsii_.Create(
 		"@cdktf/provider-google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -289,12 +288,12 @@ func NewVertexAiEndpointWithModelGardenDeploymentModelConfigOutputReference_Over
 
 	_jsii_.Create(
 		"@cdktf/provider-google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		v,
 	)
 }
 
-func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeploymentModelConfigOutputReference)SetAcceptEula(val interface{}) {
+func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeploymentModelConfigOutputReference) SetAcceptEula(val any) {
 	if err := j.validateSetAcceptEulaParameters(val); err != nil {
 		panic(err)
 	}
@@ -305,7 +304,7 @@ func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeploymentModelConfigOutputRef
 	)
 }
 
-func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeploymentModelConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeploymentModelConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -316,7 +315,7 @@ func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeploymentModelConfigOutputRef
 	)
 }
 
-func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeploymentModelConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeploymentModelConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,7 +326,7 @@ func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeploymentModelConfigOutputRef
 	)
 }
 
-func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeploymentModelConfigOutputReference)SetHuggingFaceAccessToken(val *string) {
+func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeploymentModelConfigOutputReference) SetHuggingFaceAccessToken(val *string) {
 	if err := j.validateSetHuggingFaceAccessTokenParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,7 +337,7 @@ func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeploymentModelConfigOutputRef
 	)
 }
 
-func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeploymentModelConfigOutputReference)SetHuggingFaceCacheEnabled(val interface{}) {
+func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeploymentModelConfigOutputReference) SetHuggingFaceCacheEnabled(val any) {
 	if err := j.validateSetHuggingFaceCacheEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,7 +348,7 @@ func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeploymentModelConfigOutputRef
 	)
 }
 
-func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeploymentModelConfigOutputReference)SetInternalValue(val *VertexAiEndpointWithModelGardenDeploymentModelConfig) {
+func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeploymentModelConfigOutputReference) SetInternalValue(val *VertexAiEndpointWithModelGardenDeploymentModelConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,7 +359,7 @@ func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeploymentModelConfigOutputRef
 	)
 }
 
-func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeploymentModelConfigOutputReference)SetModelDisplayName(val *string) {
+func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeploymentModelConfigOutputReference) SetModelDisplayName(val *string) {
 	if err := j.validateSetModelDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,7 +370,7 @@ func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeploymentModelConfigOutputRef
 	)
 }
 
-func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeploymentModelConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeploymentModelConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,7 +381,7 @@ func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeploymentModelConfigOutputRef
 	)
 }
 
-func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeploymentModelConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeploymentModelConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -406,16 +405,16 @@ func (v *jsiiProxy_VertexAiEndpointWithModelGardenDeploymentModelConfigOutputRef
 	return returns
 }
 
-func (v *jsiiProxy_VertexAiEndpointWithModelGardenDeploymentModelConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (v *jsiiProxy_VertexAiEndpointWithModelGardenDeploymentModelConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := v.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		v,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -431,7 +430,7 @@ func (v *jsiiProxy_VertexAiEndpointWithModelGardenDeploymentModelConfigOutputRef
 	_jsii_.Invoke(
 		v,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -447,7 +446,7 @@ func (v *jsiiProxy_VertexAiEndpointWithModelGardenDeploymentModelConfigOutputRef
 	_jsii_.Invoke(
 		v,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -463,7 +462,7 @@ func (v *jsiiProxy_VertexAiEndpointWithModelGardenDeploymentModelConfigOutputRef
 	_jsii_.Invoke(
 		v,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -479,7 +478,7 @@ func (v *jsiiProxy_VertexAiEndpointWithModelGardenDeploymentModelConfigOutputRef
 	_jsii_.Invoke(
 		v,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -495,7 +494,7 @@ func (v *jsiiProxy_VertexAiEndpointWithModelGardenDeploymentModelConfigOutputRef
 	_jsii_.Invoke(
 		v,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -511,7 +510,7 @@ func (v *jsiiProxy_VertexAiEndpointWithModelGardenDeploymentModelConfigOutputRef
 	_jsii_.Invoke(
 		v,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -527,7 +526,7 @@ func (v *jsiiProxy_VertexAiEndpointWithModelGardenDeploymentModelConfigOutputRef
 	_jsii_.Invoke(
 		v,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -543,7 +542,7 @@ func (v *jsiiProxy_VertexAiEndpointWithModelGardenDeploymentModelConfigOutputRef
 	_jsii_.Invoke(
 		v,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -572,7 +571,7 @@ func (v *jsiiProxy_VertexAiEndpointWithModelGardenDeploymentModelConfigOutputRef
 	_jsii_.Invoke(
 		v,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -586,7 +585,7 @@ func (v *jsiiProxy_VertexAiEndpointWithModelGardenDeploymentModelConfigOutputRef
 	_jsii_.InvokeVoid(
 		v,
 		"putContainerSpec",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -630,16 +629,16 @@ func (v *jsiiProxy_VertexAiEndpointWithModelGardenDeploymentModelConfigOutputRef
 	)
 }
 
-func (v *jsiiProxy_VertexAiEndpointWithModelGardenDeploymentModelConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (v *jsiiProxy_VertexAiEndpointWithModelGardenDeploymentModelConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := v.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		v,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -658,4 +657,3 @@ func (v *jsiiProxy_VertexAiEndpointWithModelGardenDeploymentModelConfigOutputRef
 
 	return returns
 }
-

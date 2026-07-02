@@ -109,7 +109,7 @@ func (d *jsiiProxy_DataprocMetastoreServiceHiveMetastoreConfigKerberosConfigOutp
 	return nil
 }
 
-func (j *jsiiProxy_DataprocMetastoreServiceHiveMetastoreConfigKerberosConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocMetastoreServiceHiveMetastoreConfigKerberosConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -225,4 +225,3 @@ func validateNewDataprocMetastoreServiceHiveMetastoreConfigKerberosConfigOutputR
 
 	return nil
 }
-

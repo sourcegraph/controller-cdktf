@@ -34,7 +34,7 @@ func (d *jsiiProxy_DnsManagedZoneDnssecConfigDefaultKeySpecsList) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_DnsManagedZoneDnssecConfigDefaultKeySpecsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DnsManagedZoneDnssecConfigDefaultKeySpecsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDnsManagedZoneDnssecConfigDefaultKeySpecsListParameters(terrafor
 
 	return nil
 }
-

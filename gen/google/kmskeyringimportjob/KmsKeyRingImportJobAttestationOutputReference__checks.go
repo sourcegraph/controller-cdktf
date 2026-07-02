@@ -98,7 +98,7 @@ func (k *jsiiProxy_KmsKeyRingImportJobAttestationOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_KmsKeyRingImportJobAttestationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_KmsKeyRingImportJobAttestationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewKmsKeyRingImportJobAttestationOutputReferenceParameters(terrafor
 
 	return nil
 }
-

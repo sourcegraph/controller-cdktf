@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleClientConfig.DataGoogleClientConfig",
-		reflect.TypeOf((*DataGoogleClientConfig)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleClientConfig](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessToken", GoGetter: "AccessToken"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -51,7 +51,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "zone", GoGetter: "Zone"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleClientConfig{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -59,6 +59,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleClientConfig.DataGoogleClientConfigConfig",
-		reflect.TypeOf((*DataGoogleClientConfigConfig)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleClientConfigConfig](),
 	)
 }

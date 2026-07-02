@@ -106,7 +106,7 @@ func (j *jsiiProxy_GkeonpremBareMetalAdminClusterLoadBalancerBgpLbConfigBgpPeerC
 	return nil
 }
 
-func (j *jsiiProxy_GkeonpremBareMetalAdminClusterLoadBalancerBgpLbConfigBgpPeerConfigsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GkeonpremBareMetalAdminClusterLoadBalancerBgpLbConfigBgpPeerConfigsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GkeonpremBareMetalAdminClusterLoadBalancerBgpLbConfigBgpPeerC
 	return nil
 }
 
-func (j *jsiiProxy_GkeonpremBareMetalAdminClusterLoadBalancerBgpLbConfigBgpPeerConfigsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GkeonpremBareMetalAdminClusterLoadBalancerBgpLbConfigBgpPeerConfigsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewGkeonpremBareMetalAdminClusterLoadBalancerBgpLbConfigBgpPeerConf
 
 	return nil
 }
-

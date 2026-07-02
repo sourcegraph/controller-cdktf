@@ -1,6 +1,5 @@
 package vmwareenginecluster
 
-
 type VmwareengineClusterDatastoreMountConfig struct {
 	// The resource name of the datastore to unmount.
 	//
@@ -29,10 +28,9 @@ type VmwareengineClusterDatastoreMountConfig struct {
 	// same region/zone of datastore.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_cluster#ignore_colocation VmwareengineCluster#ignore_colocation}
-	IgnoreColocation interface{} `field:"optional" json:"ignoreColocation" yaml:"ignoreColocation"`
+	IgnoreColocation any `field:"optional" json:"ignoreColocation" yaml:"ignoreColocation"`
 	// Optional. The NFS protocol supported by the NFS volume. Default value used will be NFS_V3 Possible values: NFS_V3.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_cluster#nfs_version VmwareengineCluster#nfs_version}
 	NfsVersion *string `field:"optional" json:"nfsVersion" yaml:"nfsVersion"`
 }
-

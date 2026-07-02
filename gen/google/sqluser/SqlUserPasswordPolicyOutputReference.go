@@ -15,9 +15,9 @@ type SqlUserPasswordPolicyOutputReference interface {
 	AllowedFailedAttemptsInput() *float64
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -28,12 +28,12 @@ type SqlUserPasswordPolicyOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	EnableFailedAttemptsCheck() interface{}
-	SetEnableFailedAttemptsCheck(val interface{})
-	EnableFailedAttemptsCheckInput() interface{}
-	EnablePasswordVerification() interface{}
-	SetEnablePasswordVerification(val interface{})
-	EnablePasswordVerificationInput() interface{}
+	EnableFailedAttemptsCheck() any
+	SetEnableFailedAttemptsCheck(val any)
+	EnableFailedAttemptsCheckInput() any
+	EnablePasswordVerification() any
+	SetEnablePasswordVerification(val any)
+	EnablePasswordVerificationInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *SqlUserPasswordPolicy
@@ -53,7 +53,7 @@ type SqlUserPasswordPolicyOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -80,7 +80,7 @@ type SqlUserPasswordPolicyOutputReference interface {
 	ResetPasswordExpirationDuration()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -113,8 +113,8 @@ func (j *jsiiProxy_SqlUserPasswordPolicyOutputReference) AllowedFailedAttemptsIn
 	return returns
 }
 
-func (j *jsiiProxy_SqlUserPasswordPolicyOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SqlUserPasswordPolicyOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -143,8 +143,8 @@ func (j *jsiiProxy_SqlUserPasswordPolicyOutputReference) CreationStack() *[]*str
 	return returns
 }
 
-func (j *jsiiProxy_SqlUserPasswordPolicyOutputReference) EnableFailedAttemptsCheck() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SqlUserPasswordPolicyOutputReference) EnableFailedAttemptsCheck() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableFailedAttemptsCheck",
@@ -153,8 +153,8 @@ func (j *jsiiProxy_SqlUserPasswordPolicyOutputReference) EnableFailedAttemptsChe
 	return returns
 }
 
-func (j *jsiiProxy_SqlUserPasswordPolicyOutputReference) EnableFailedAttemptsCheckInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SqlUserPasswordPolicyOutputReference) EnableFailedAttemptsCheckInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableFailedAttemptsCheckInput",
@@ -163,8 +163,8 @@ func (j *jsiiProxy_SqlUserPasswordPolicyOutputReference) EnableFailedAttemptsChe
 	return returns
 }
 
-func (j *jsiiProxy_SqlUserPasswordPolicyOutputReference) EnablePasswordVerification() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SqlUserPasswordPolicyOutputReference) EnablePasswordVerification() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enablePasswordVerification",
@@ -173,8 +173,8 @@ func (j *jsiiProxy_SqlUserPasswordPolicyOutputReference) EnablePasswordVerificat
 	return returns
 }
 
-func (j *jsiiProxy_SqlUserPasswordPolicyOutputReference) EnablePasswordVerificationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SqlUserPasswordPolicyOutputReference) EnablePasswordVerificationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enablePasswordVerificationInput",
@@ -253,7 +253,6 @@ func (j *jsiiProxy_SqlUserPasswordPolicyOutputReference) TerraformResource() cdk
 	return returns
 }
 
-
 func NewSqlUserPasswordPolicyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) SqlUserPasswordPolicyOutputReference {
 	_init_.Initialize()
 
@@ -264,7 +263,7 @@ func NewSqlUserPasswordPolicyOutputReference(terraformResource cdktf.IInterpolat
 
 	_jsii_.Create(
 		"@cdktf/provider-google.sqlUser.SqlUserPasswordPolicyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -276,12 +275,12 @@ func NewSqlUserPasswordPolicyOutputReference_Override(s SqlUserPasswordPolicyOut
 
 	_jsii_.Create(
 		"@cdktf/provider-google.sqlUser.SqlUserPasswordPolicyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SqlUserPasswordPolicyOutputReference)SetAllowedFailedAttempts(val *float64) {
+func (j *jsiiProxy_SqlUserPasswordPolicyOutputReference) SetAllowedFailedAttempts(val *float64) {
 	if err := j.validateSetAllowedFailedAttemptsParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,7 +291,7 @@ func (j *jsiiProxy_SqlUserPasswordPolicyOutputReference)SetAllowedFailedAttempts
 	)
 }
 
-func (j *jsiiProxy_SqlUserPasswordPolicyOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_SqlUserPasswordPolicyOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_SqlUserPasswordPolicyOutputReference)SetComplexObjectIndex(va
 	)
 }
 
-func (j *jsiiProxy_SqlUserPasswordPolicyOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_SqlUserPasswordPolicyOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_SqlUserPasswordPolicyOutputReference)SetComplexObjectIsFromSe
 	)
 }
 
-func (j *jsiiProxy_SqlUserPasswordPolicyOutputReference)SetEnableFailedAttemptsCheck(val interface{}) {
+func (j *jsiiProxy_SqlUserPasswordPolicyOutputReference) SetEnableFailedAttemptsCheck(val any) {
 	if err := j.validateSetEnableFailedAttemptsCheckParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_SqlUserPasswordPolicyOutputReference)SetEnableFailedAttemptsC
 	)
 }
 
-func (j *jsiiProxy_SqlUserPasswordPolicyOutputReference)SetEnablePasswordVerification(val interface{}) {
+func (j *jsiiProxy_SqlUserPasswordPolicyOutputReference) SetEnablePasswordVerification(val any) {
 	if err := j.validateSetEnablePasswordVerificationParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_SqlUserPasswordPolicyOutputReference)SetEnablePasswordVerific
 	)
 }
 
-func (j *jsiiProxy_SqlUserPasswordPolicyOutputReference)SetInternalValue(val *SqlUserPasswordPolicy) {
+func (j *jsiiProxy_SqlUserPasswordPolicyOutputReference) SetInternalValue(val *SqlUserPasswordPolicy) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_SqlUserPasswordPolicyOutputReference)SetInternalValue(val *Sq
 	)
 }
 
-func (j *jsiiProxy_SqlUserPasswordPolicyOutputReference)SetPasswordExpirationDuration(val *string) {
+func (j *jsiiProxy_SqlUserPasswordPolicyOutputReference) SetPasswordExpirationDuration(val *string) {
 	if err := j.validateSetPasswordExpirationDurationParameters(val); err != nil {
 		panic(err)
 	}
@@ -358,7 +357,7 @@ func (j *jsiiProxy_SqlUserPasswordPolicyOutputReference)SetPasswordExpirationDur
 	)
 }
 
-func (j *jsiiProxy_SqlUserPasswordPolicyOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SqlUserPasswordPolicyOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -369,7 +368,7 @@ func (j *jsiiProxy_SqlUserPasswordPolicyOutputReference)SetTerraformAttribute(va
 	)
 }
 
-func (j *jsiiProxy_SqlUserPasswordPolicyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SqlUserPasswordPolicyOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,16 +392,16 @@ func (s *jsiiProxy_SqlUserPasswordPolicyOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (s *jsiiProxy_SqlUserPasswordPolicyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SqlUserPasswordPolicyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -418,7 +417,7 @@ func (s *jsiiProxy_SqlUserPasswordPolicyOutputReference) GetBooleanAttribute(ter
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -434,7 +433,7 @@ func (s *jsiiProxy_SqlUserPasswordPolicyOutputReference) GetBooleanMapAttribute(
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -450,7 +449,7 @@ func (s *jsiiProxy_SqlUserPasswordPolicyOutputReference) GetListAttribute(terraf
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -466,7 +465,7 @@ func (s *jsiiProxy_SqlUserPasswordPolicyOutputReference) GetNumberAttribute(terr
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -482,7 +481,7 @@ func (s *jsiiProxy_SqlUserPasswordPolicyOutputReference) GetNumberListAttribute(
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -498,7 +497,7 @@ func (s *jsiiProxy_SqlUserPasswordPolicyOutputReference) GetNumberMapAttribute(t
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -514,7 +513,7 @@ func (s *jsiiProxy_SqlUserPasswordPolicyOutputReference) GetStringAttribute(terr
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -530,7 +529,7 @@ func (s *jsiiProxy_SqlUserPasswordPolicyOutputReference) GetStringMapAttribute(t
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -559,7 +558,7 @@ func (s *jsiiProxy_SqlUserPasswordPolicyOutputReference) InterpolationForAttribu
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -598,16 +597,16 @@ func (s *jsiiProxy_SqlUserPasswordPolicyOutputReference) ResetPasswordExpiration
 	)
 }
 
-func (s *jsiiProxy_SqlUserPasswordPolicyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_SqlUserPasswordPolicyOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -626,4 +625,3 @@ func (s *jsiiProxy_SqlUserPasswordPolicyOutputReference) ToString() *string {
 
 	return returns
 }
-

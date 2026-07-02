@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkServicesMulticastConsumerAssociation.NetworkServicesMulticastConsumerAssociation",
-		reflect.TypeOf((*NetworkServicesMulticastConsumerAssociation)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesMulticastConsumerAssociation](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -85,7 +85,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uniqueId", GoGetter: "UniqueId"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkServicesMulticastConsumerAssociation{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -93,15 +93,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkServicesMulticastConsumerAssociation.NetworkServicesMulticastConsumerAssociationConfig",
-		reflect.TypeOf((*NetworkServicesMulticastConsumerAssociationConfig)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesMulticastConsumerAssociationConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkServicesMulticastConsumerAssociation.NetworkServicesMulticastConsumerAssociationState",
-		reflect.TypeOf((*NetworkServicesMulticastConsumerAssociationState)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesMulticastConsumerAssociationState](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkServicesMulticastConsumerAssociation.NetworkServicesMulticastConsumerAssociationStateList",
-		reflect.TypeOf((*NetworkServicesMulticastConsumerAssociationStateList)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesMulticastConsumerAssociationStateList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -114,7 +114,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkServicesMulticastConsumerAssociationStateList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -122,7 +122,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkServicesMulticastConsumerAssociation.NetworkServicesMulticastConsumerAssociationStateOutputReference",
-		reflect.TypeOf((*NetworkServicesMulticastConsumerAssociationStateOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesMulticastConsumerAssociationStateOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -147,7 +147,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkServicesMulticastConsumerAssociationStateOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -155,11 +155,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkServicesMulticastConsumerAssociation.NetworkServicesMulticastConsumerAssociationTimeouts",
-		reflect.TypeOf((*NetworkServicesMulticastConsumerAssociationTimeouts)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesMulticastConsumerAssociationTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkServicesMulticastConsumerAssociation.NetworkServicesMulticastConsumerAssociationTimeoutsOutputReference",
-		reflect.TypeOf((*NetworkServicesMulticastConsumerAssociationTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesMulticastConsumerAssociationTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -192,7 +192,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkServicesMulticastConsumerAssociationTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

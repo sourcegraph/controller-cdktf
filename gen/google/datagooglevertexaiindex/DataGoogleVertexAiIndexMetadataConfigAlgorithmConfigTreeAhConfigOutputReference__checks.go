@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleVertexAiIndexMetadataConfigAlgorithmConfigTreeAhCon
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleVertexAiIndexMetadataConfigAlgorithmConfigTreeAhConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleVertexAiIndexMetadataConfigAlgorithmConfigTreeAhConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleVertexAiIndexMetadataConfigAlgorithmConfigTreeAhConfig
 
 	return nil
 }
-

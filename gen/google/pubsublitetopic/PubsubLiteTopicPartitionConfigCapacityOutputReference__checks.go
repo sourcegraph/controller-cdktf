@@ -98,7 +98,7 @@ func (p *jsiiProxy_PubsubLiteTopicPartitionConfigCapacityOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_PubsubLiteTopicPartitionConfigCapacityOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PubsubLiteTopicPartitionConfigCapacityOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewPubsubLiteTopicPartitionConfigCapacityOutputReferenceParameters(
 
 	return nil
 }
-

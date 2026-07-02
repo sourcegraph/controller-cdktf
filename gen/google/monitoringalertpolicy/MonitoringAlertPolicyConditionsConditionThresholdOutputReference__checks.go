@@ -90,7 +90,7 @@ func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionThresholdOutputRefere
 	return nil
 }
 
-func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionThresholdOutputReference) validatePutAggregationsParameters(value interface{}) error {
+func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionThresholdOutputReference) validatePutAggregationsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionThresholdOutputRefere
 	return nil
 }
 
-func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionThresholdOutputReference) validatePutDenominatorAggregationsParameters(value interface{}) error {
+func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionThresholdOutputReference) validatePutDenominatorAggregationsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -190,7 +190,7 @@ func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionThresholdOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionThresholdOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionThresholdOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -330,4 +330,3 @@ func validateNewMonitoringAlertPolicyConditionsConditionThresholdOutputReference
 
 	return nil
 }
-

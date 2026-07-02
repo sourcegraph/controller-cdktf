@@ -1,6 +1,5 @@
 package computeurlmap
 
-
 type ComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd struct {
 	// The name of the header to add.
 	//
@@ -15,6 +14,5 @@ type ComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActi
 	// If true, headerValue is set for the header, discarding any values that were set for that header.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_url_map#replace ComputeUrlMap#replace}
-	Replace interface{} `field:"optional" json:"replace" yaml:"replace"`
+	Replace any `field:"optional" json:"replace" yaml:"replace"`
 }
-

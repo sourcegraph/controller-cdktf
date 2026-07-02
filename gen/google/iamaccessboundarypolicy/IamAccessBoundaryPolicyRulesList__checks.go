@@ -34,7 +34,7 @@ func (i *jsiiProxy_IamAccessBoundaryPolicyRulesList) validateResolveParameters(_
 	return nil
 }
 
-func (j *jsiiProxy_IamAccessBoundaryPolicyRulesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_IamAccessBoundaryPolicyRulesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewIamAccessBoundaryPolicyRulesListParameters(terraformResource cdk
 
 	return nil
 }
-

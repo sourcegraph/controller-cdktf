@@ -90,7 +90,7 @@ func (c *jsiiProxy_CloudRunV2JobTemplateTemplateOutputReference) validateInterpo
 	return nil
 }
 
-func (c *jsiiProxy_CloudRunV2JobTemplateTemplateOutputReference) validatePutContainersParameters(value interface{}) error {
+func (c *jsiiProxy_CloudRunV2JobTemplateTemplateOutputReference) validatePutContainersParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -132,7 +132,7 @@ func (c *jsiiProxy_CloudRunV2JobTemplateTemplateOutputReference) validatePutNode
 	return nil
 }
 
-func (c *jsiiProxy_CloudRunV2JobTemplateTemplateOutputReference) validatePutVolumesParameters(value interface{}) error {
+func (c *jsiiProxy_CloudRunV2JobTemplateTemplateOutputReference) validatePutVolumesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -182,7 +182,7 @@ func (c *jsiiProxy_CloudRunV2JobTemplateTemplateOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_CloudRunV2JobTemplateTemplateOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudRunV2JobTemplateTemplateOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -263,7 +263,7 @@ func (j *jsiiProxy_CloudRunV2JobTemplateTemplateOutputReference) validateSetExec
 	return nil
 }
 
-func (j *jsiiProxy_CloudRunV2JobTemplateTemplateOutputReference) validateSetGpuZonalRedundancyDisabledParameters(val interface{}) error {
+func (j *jsiiProxy_CloudRunV2JobTemplateTemplateOutputReference) validateSetGpuZonalRedundancyDisabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -342,4 +342,3 @@ func validateNewCloudRunV2JobTemplateTemplateOutputReferenceParameters(terraform
 
 	return nil
 }
-

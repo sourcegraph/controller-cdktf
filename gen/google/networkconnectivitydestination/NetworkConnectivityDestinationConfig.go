@@ -6,9 +6,9 @@ import (
 
 type NetworkConnectivityDestinationConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,11 +18,11 @@ type NetworkConnectivityDestinationConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// endpoints block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_connectivity_destination#endpoints NetworkConnectivityDestination#endpoints}
-	Endpoints interface{} `field:"required" json:"endpoints" yaml:"endpoints"`
+	Endpoints any `field:"required" json:"endpoints" yaml:"endpoints"`
 	// The IP prefix that represents your workload on another CSP.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_connectivity_destination#ip_prefix NetworkConnectivityDestination#ip_prefix}
@@ -62,4 +62,3 @@ type NetworkConnectivityDestinationConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_connectivity_destination#timeouts NetworkConnectivityDestination#timeouts}
 	Timeouts *NetworkConnectivityDestinationTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

@@ -120,7 +120,7 @@ func (b *jsiiProxy_BillingBudgetBudgetFilterCustomPeriodOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_BillingBudgetBudgetFilterCustomPeriodOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BillingBudgetBudgetFilterCustomPeriodOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -220,4 +220,3 @@ func validateNewBillingBudgetBudgetFilterCustomPeriodOutputReferenceParameters(t
 
 	return nil
 }
-

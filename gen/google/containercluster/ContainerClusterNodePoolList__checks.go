@@ -34,7 +34,7 @@ func (c *jsiiProxy_ContainerClusterNodePoolList) validateResolveParameters(_cont
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterNodePoolList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterNodePoolList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewContainerClusterNodePoolListParameters(terraformResource cdktf.I
 
 	return nil
 }
-

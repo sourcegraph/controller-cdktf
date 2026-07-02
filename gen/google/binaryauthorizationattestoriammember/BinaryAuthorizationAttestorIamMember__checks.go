@@ -19,7 +19,7 @@ func (b *jsiiProxy_BinaryAuthorizationAttestorIamMember) validateAddMoveTargetPa
 	return nil
 }
 
-func (b *jsiiProxy_BinaryAuthorizationAttestorIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
+func (b *jsiiProxy_BinaryAuthorizationAttestorIamMember) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (b *jsiiProxy_BinaryAuthorizationAttestorIamMember) validateMoveFromIdParam
 	return nil
 }
 
-func (b *jsiiProxy_BinaryAuthorizationAttestorIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (b *jsiiProxy_BinaryAuthorizationAttestorIamMember) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateBinaryAuthorizationAttestorIamMember_GenerateConfigForImportParamet
 	return nil
 }
 
-func validateBinaryAuthorizationAttestorIamMember_IsConstructParameters(x interface{}) error {
+func validateBinaryAuthorizationAttestorIamMember_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateBinaryAuthorizationAttestorIamMember_IsConstructParameters(x interf
 	return nil
 }
 
-func validateBinaryAuthorizationAttestorIamMember_IsTerraformElementParameters(x interface{}) error {
+func validateBinaryAuthorizationAttestorIamMember_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateBinaryAuthorizationAttestorIamMember_IsTerraformElementParameters(x
 	return nil
 }
 
-func validateBinaryAuthorizationAttestorIamMember_IsTerraformResourceParameters(x interface{}) error {
+func validateBinaryAuthorizationAttestorIamMember_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_BinaryAuthorizationAttestorIamMember) validateSetAttestorPara
 	return nil
 }
 
-func (j *jsiiProxy_BinaryAuthorizationAttestorIamMember) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_BinaryAuthorizationAttestorIamMember) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_BinaryAuthorizationAttestorIamMember) validateSetConnectionPa
 	return nil
 }
 
-func (j *jsiiProxy_BinaryAuthorizationAttestorIamMember) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_BinaryAuthorizationAttestorIamMember) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -385,7 +385,7 @@ func (j *jsiiProxy_BinaryAuthorizationAttestorIamMember) validateSetProjectParam
 	return nil
 }
 
-func (j *jsiiProxy_BinaryAuthorizationAttestorIamMember) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_BinaryAuthorizationAttestorIamMember) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -457,4 +457,3 @@ func validateNewBinaryAuthorizationAttestorIamMemberParameters(scope constructs.
 
 	return nil
 }
-

@@ -109,7 +109,7 @@ func (m *jsiiProxy_ManagedKafkaClusterTlsConfigOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_ManagedKafkaClusterTlsConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ManagedKafkaClusterTlsConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -217,4 +217,3 @@ func validateNewManagedKafkaClusterTlsConfigOutputReferenceParameters(terraformR
 
 	return nil
 }
-

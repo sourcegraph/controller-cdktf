@@ -109,7 +109,7 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayHubsOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_BeyondcorpSecurityGatewayHubsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BeyondcorpSecurityGatewayHubsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -174,7 +174,7 @@ func (j *jsiiProxy_BeyondcorpSecurityGatewayHubsOutputReference) validateSetComp
 	return nil
 }
 
-func (j *jsiiProxy_BeyondcorpSecurityGatewayHubsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_BeyondcorpSecurityGatewayHubsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -241,4 +241,3 @@ func validateNewBeyondcorpSecurityGatewayHubsOutputReferenceParameters(terraform
 
 	return nil
 }
-

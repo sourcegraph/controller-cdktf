@@ -106,7 +106,7 @@ func (j *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetFil
 	return nil
 }
 
-func (j *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetFilterCloudStorageResourceReferenceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsCloudStorageTargetFilterCloudStorageResourceReferenceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewDataLossPreventionDiscoveryConfigTargetsCloudStorageTargetFilter
 
 	return nil
 }
-

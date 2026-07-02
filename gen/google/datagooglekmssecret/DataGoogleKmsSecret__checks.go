@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataGoogleKmsSecret) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataGoogleKmsSecret) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataGoogleKmsSecret_GenerateConfigForImportParameters(scope constru
 	return nil
 }
 
-func validateDataGoogleKmsSecret_IsConstructParameters(x interface{}) error {
+func validateDataGoogleKmsSecret_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataGoogleKmsSecret_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateDataGoogleKmsSecret_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataGoogleKmsSecret_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataGoogleKmsSecret_IsTerraformDataSourceParameters(x interface{}) 
 	return nil
 }
 
-func validateDataGoogleKmsSecret_IsTerraformElementParameters(x interface{}) error {
+func validateDataGoogleKmsSecret_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -167,7 +167,7 @@ func (j *jsiiProxy_DataGoogleKmsSecret) validateSetCiphertextParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleKmsSecret) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleKmsSecret) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -266,4 +266,3 @@ func validateNewDataGoogleKmsSecretParameters(scope constructs.Construct, id *st
 
 	return nil
 }
-

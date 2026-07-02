@@ -17,8 +17,8 @@ type DialogflowCxFlowTransitionRoutesList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type DialogflowCxFlowTransitionRoutesList interface {
 	Get(index *float64) DialogflowCxFlowTransitionRoutesOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_DialogflowCxFlowTransitionRoutesList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowCxFlowTransitionRoutesList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowCxFlowTransitionRoutesList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_DialogflowCxFlowTransitionRoutesList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewDialogflowCxFlowTransitionRoutesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DialogflowCxFlowTransitionRoutesList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewDialogflowCxFlowTransitionRoutesList(terraformResource cdktf.IInterpolat
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dialogflowCxFlow.DialogflowCxFlowTransitionRoutesList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewDialogflowCxFlowTransitionRoutesList_Override(d DialogflowCxFlowTransiti
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dialogflowCxFlow.DialogflowCxFlowTransitionRoutesList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxFlowTransitionRoutesList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DialogflowCxFlowTransitionRoutesList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_DialogflowCxFlowTransitionRoutesList)SetInternalValue(val int
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxFlowTransitionRoutesList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DialogflowCxFlowTransitionRoutesList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_DialogflowCxFlowTransitionRoutesList)SetTerraformAttribute(va
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxFlowTransitionRoutesList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DialogflowCxFlowTransitionRoutesList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_DialogflowCxFlowTransitionRoutesList)SetTerraformResource(val
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxFlowTransitionRoutesList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DialogflowCxFlowTransitionRoutesList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (d *jsiiProxy_DialogflowCxFlowTransitionRoutesList) AllWithMapKey(mapKeyAtt
 	_jsii_.Invoke(
 		d,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (d *jsiiProxy_DialogflowCxFlowTransitionRoutesList) Get(index *float64) Dia
 	_jsii_.Invoke(
 		d,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DialogflowCxFlowTransitionRoutesList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DialogflowCxFlowTransitionRoutesList) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (d *jsiiProxy_DialogflowCxFlowTransitionRoutesList) ToString() *string {
 
 	return returns
 }
-

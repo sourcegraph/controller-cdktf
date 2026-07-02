@@ -98,7 +98,7 @@ func (s *jsiiProxy_SccFolderSccBigQueryExportTimeoutsOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_SccFolderSccBigQueryExportTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SccFolderSccBigQueryExportTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_SccFolderSccBigQueryExportTimeoutsOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_SccFolderSccBigQueryExportTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SccFolderSccBigQueryExportTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewSccFolderSccBigQueryExportTimeoutsOutputReferenceParameters(terr
 
 	return nil
 }
-

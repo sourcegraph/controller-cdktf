@@ -1,6 +1,5 @@
 package firebaseremoteconfigremoteconfig
 
-
 type FirebaseRemoteConfigRemoteConfigParameterGroups struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebase_remote_config_remote_config#parameter_group_name FirebaseRemoteConfigRemoteConfig#parameter_group_name}.
 	ParameterGroupName *string `field:"required" json:"parameterGroupName" yaml:"parameterGroupName"`
@@ -14,6 +13,5 @@ type FirebaseRemoteConfigRemoteConfigParameterGroups struct {
 	// parameters block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebase_remote_config_remote_config#parameters FirebaseRemoteConfigRemoteConfig#parameters}
-	Parameters interface{} `field:"optional" json:"parameters" yaml:"parameters"`
+	Parameters any `field:"optional" json:"parameters" yaml:"parameters"`
 }
-

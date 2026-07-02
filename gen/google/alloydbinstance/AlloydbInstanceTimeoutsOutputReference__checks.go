@@ -98,7 +98,7 @@ func (a *jsiiProxy_AlloydbInstanceTimeoutsOutputReference) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_AlloydbInstanceTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AlloydbInstanceTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_AlloydbInstanceTimeoutsOutputReference) validateSetDeletePara
 	return nil
 }
 
-func (j *jsiiProxy_AlloydbInstanceTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AlloydbInstanceTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewAlloydbInstanceTimeoutsOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

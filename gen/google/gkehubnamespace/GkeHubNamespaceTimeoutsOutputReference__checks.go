@@ -98,7 +98,7 @@ func (g *jsiiProxy_GkeHubNamespaceTimeoutsOutputReference) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_GkeHubNamespaceTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GkeHubNamespaceTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GkeHubNamespaceTimeoutsOutputReference) validateSetDeletePara
 	return nil
 }
 
-func (j *jsiiProxy_GkeHubNamespaceTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GkeHubNamespaceTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGkeHubNamespaceTimeoutsOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

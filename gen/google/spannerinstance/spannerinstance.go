@@ -20,15 +20,15 @@ type SpannerInstance interface {
 	SetConfig(val *string)
 	ConfigInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DefaultBackupScheduleType() *string
 	SetDefaultBackupScheduleType(val *string)
 	DefaultBackupScheduleTypeInput() *string
@@ -43,9 +43,9 @@ type SpannerInstance interface {
 	SetEdition(val *string)
 	EditionInput() *string
 	EffectiveLabels() cdktf.StringMap
-	ForceDestroy() interface{}
-	SetForceDestroy(val interface{})
-	ForceDestroyInput() interface{}
+	ForceDestroy() any
+	SetForceDestroy(val any)
+	ForceDestroyInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -86,28 +86,28 @@ type SpannerInstance interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	State() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() SpannerInstanceTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -125,7 +125,7 @@ type SpannerInstance interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -137,7 +137,7 @@ type SpannerInstance interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -161,17 +161,17 @@ type SpannerInstance interface {
 	ResetProcessingUnits()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for SpannerInstance
@@ -229,8 +229,8 @@ func (j *jsiiProxy_SpannerInstance) ConfigInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SpannerInstance) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SpannerInstance) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -239,8 +239,8 @@ func (j *jsiiProxy_SpannerInstance) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SpannerInstance) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SpannerInstance) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -249,8 +249,8 @@ func (j *jsiiProxy_SpannerInstance) ConstructNodeMetadata() *map[string]interfac
 	return returns
 }
 
-func (j *jsiiProxy_SpannerInstance) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SpannerInstance) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -339,8 +339,8 @@ func (j *jsiiProxy_SpannerInstance) EffectiveLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_SpannerInstance) ForceDestroy() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SpannerInstance) ForceDestroy() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"forceDestroy",
@@ -349,8 +349,8 @@ func (j *jsiiProxy_SpannerInstance) ForceDestroy() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SpannerInstance) ForceDestroyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SpannerInstance) ForceDestroyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"forceDestroyInput",
@@ -559,8 +559,8 @@ func (j *jsiiProxy_SpannerInstance) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_SpannerInstance) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_SpannerInstance) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -569,8 +569,8 @@ func (j *jsiiProxy_SpannerInstance) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SpannerInstance) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SpannerInstance) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -609,8 +609,8 @@ func (j *jsiiProxy_SpannerInstance) TerraformLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_SpannerInstance) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SpannerInstance) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -639,8 +639,8 @@ func (j *jsiiProxy_SpannerInstance) Timeouts() SpannerInstanceTimeoutsOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_SpannerInstance) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SpannerInstance) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -648,7 +648,6 @@ func (j *jsiiProxy_SpannerInstance) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_instance google_spanner_instance} Resource.
 func NewSpannerInstance(scope constructs.Construct, id *string, config *SpannerInstanceConfig) SpannerInstance {
@@ -661,7 +660,7 @@ func NewSpannerInstance(scope constructs.Construct, id *string, config *SpannerI
 
 	_jsii_.Create(
 		"@cdktf/provider-google.spannerInstance.SpannerInstance",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -674,12 +673,12 @@ func NewSpannerInstance_Override(s SpannerInstance, scope constructs.Construct, 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.spannerInstance.SpannerInstance",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SpannerInstance)SetConfig(val *string) {
+func (j *jsiiProxy_SpannerInstance) SetConfig(val *string) {
 	if err := j.validateSetConfigParameters(val); err != nil {
 		panic(err)
 	}
@@ -690,7 +689,7 @@ func (j *jsiiProxy_SpannerInstance)SetConfig(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SpannerInstance)SetConnection(val interface{}) {
+func (j *jsiiProxy_SpannerInstance) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -701,7 +700,7 @@ func (j *jsiiProxy_SpannerInstance)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SpannerInstance)SetCount(val interface{}) {
+func (j *jsiiProxy_SpannerInstance) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -712,7 +711,7 @@ func (j *jsiiProxy_SpannerInstance)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SpannerInstance)SetDefaultBackupScheduleType(val *string) {
+func (j *jsiiProxy_SpannerInstance) SetDefaultBackupScheduleType(val *string) {
 	if err := j.validateSetDefaultBackupScheduleTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -723,7 +722,7 @@ func (j *jsiiProxy_SpannerInstance)SetDefaultBackupScheduleType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SpannerInstance)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_SpannerInstance) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -731,7 +730,7 @@ func (j *jsiiProxy_SpannerInstance)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SpannerInstance)SetDisplayName(val *string) {
+func (j *jsiiProxy_SpannerInstance) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -742,7 +741,7 @@ func (j *jsiiProxy_SpannerInstance)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SpannerInstance)SetEdition(val *string) {
+func (j *jsiiProxy_SpannerInstance) SetEdition(val *string) {
 	if err := j.validateSetEditionParameters(val); err != nil {
 		panic(err)
 	}
@@ -753,7 +752,7 @@ func (j *jsiiProxy_SpannerInstance)SetEdition(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SpannerInstance)SetForceDestroy(val interface{}) {
+func (j *jsiiProxy_SpannerInstance) SetForceDestroy(val any) {
 	if err := j.validateSetForceDestroyParameters(val); err != nil {
 		panic(err)
 	}
@@ -764,7 +763,7 @@ func (j *jsiiProxy_SpannerInstance)SetForceDestroy(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SpannerInstance)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SpannerInstance) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -772,7 +771,7 @@ func (j *jsiiProxy_SpannerInstance)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_SpannerInstance)SetId(val *string) {
+func (j *jsiiProxy_SpannerInstance) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -783,7 +782,7 @@ func (j *jsiiProxy_SpannerInstance)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SpannerInstance)SetInstanceType(val *string) {
+func (j *jsiiProxy_SpannerInstance) SetInstanceType(val *string) {
 	if err := j.validateSetInstanceTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -794,7 +793,7 @@ func (j *jsiiProxy_SpannerInstance)SetInstanceType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SpannerInstance)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_SpannerInstance) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -805,7 +804,7 @@ func (j *jsiiProxy_SpannerInstance)SetLabels(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_SpannerInstance)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SpannerInstance) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -816,7 +815,7 @@ func (j *jsiiProxy_SpannerInstance)SetLifecycle(val *cdktf.TerraformResourceLife
 	)
 }
 
-func (j *jsiiProxy_SpannerInstance)SetName(val *string) {
+func (j *jsiiProxy_SpannerInstance) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -827,7 +826,7 @@ func (j *jsiiProxy_SpannerInstance)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SpannerInstance)SetNumNodes(val *float64) {
+func (j *jsiiProxy_SpannerInstance) SetNumNodes(val *float64) {
 	if err := j.validateSetNumNodesParameters(val); err != nil {
 		panic(err)
 	}
@@ -838,7 +837,7 @@ func (j *jsiiProxy_SpannerInstance)SetNumNodes(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_SpannerInstance)SetProcessingUnits(val *float64) {
+func (j *jsiiProxy_SpannerInstance) SetProcessingUnits(val *float64) {
 	if err := j.validateSetProcessingUnitsParameters(val); err != nil {
 		panic(err)
 	}
@@ -849,7 +848,7 @@ func (j *jsiiProxy_SpannerInstance)SetProcessingUnits(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_SpannerInstance)SetProject(val *string) {
+func (j *jsiiProxy_SpannerInstance) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -860,7 +859,7 @@ func (j *jsiiProxy_SpannerInstance)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SpannerInstance)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SpannerInstance) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -868,7 +867,7 @@ func (j *jsiiProxy_SpannerInstance)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_SpannerInstance)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_SpannerInstance) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -891,7 +890,7 @@ func SpannerInstance_GenerateConfigForImport(scope constructs.Construct, importT
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.spannerInstance.SpannerInstance",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -915,7 +914,7 @@ func SpannerInstance_GenerateConfigForImport(scope constructs.Construct, importT
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func SpannerInstance_IsConstruct(x interface{}) *bool {
+func SpannerInstance_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSpannerInstance_IsConstructParameters(x); err != nil {
@@ -926,7 +925,7 @@ func SpannerInstance_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.spannerInstance.SpannerInstance",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -934,7 +933,7 @@ func SpannerInstance_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func SpannerInstance_IsTerraformElement(x interface{}) *bool {
+func SpannerInstance_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSpannerInstance_IsTerraformElementParameters(x); err != nil {
@@ -945,7 +944,7 @@ func SpannerInstance_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.spannerInstance.SpannerInstance",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -953,7 +952,7 @@ func SpannerInstance_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func SpannerInstance_IsTerraformResource(x interface{}) *bool {
+func SpannerInstance_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSpannerInstance_IsTerraformResourceParameters(x); err != nil {
@@ -964,7 +963,7 @@ func SpannerInstance_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.spannerInstance.SpannerInstance",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -989,31 +988,31 @@ func (s *jsiiProxy_SpannerInstance) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_SpannerInstance) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_SpannerInstance) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_SpannerInstance) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SpannerInstance) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1029,7 +1028,7 @@ func (s *jsiiProxy_SpannerInstance) GetBooleanAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1045,7 +1044,7 @@ func (s *jsiiProxy_SpannerInstance) GetBooleanMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1061,7 +1060,7 @@ func (s *jsiiProxy_SpannerInstance) GetListAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1077,7 +1076,7 @@ func (s *jsiiProxy_SpannerInstance) GetNumberAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1093,7 +1092,7 @@ func (s *jsiiProxy_SpannerInstance) GetNumberListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1109,7 +1108,7 @@ func (s *jsiiProxy_SpannerInstance) GetNumberMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1125,7 +1124,7 @@ func (s *jsiiProxy_SpannerInstance) GetStringAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1141,15 +1140,15 @@ func (s *jsiiProxy_SpannerInstance) GetStringMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SpannerInstance) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SpannerInstance) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1168,7 +1167,7 @@ func (s *jsiiProxy_SpannerInstance) ImportFrom(id *string, provider cdktf.Terraf
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1181,7 +1180,7 @@ func (s *jsiiProxy_SpannerInstance) InterpolationForAttribute(terraformAttribute
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1195,18 +1194,18 @@ func (s *jsiiProxy_SpannerInstance) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_SpannerInstance) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_SpannerInstance) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1217,7 +1216,7 @@ func (s *jsiiProxy_SpannerInstance) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1228,7 +1227,7 @@ func (s *jsiiProxy_SpannerInstance) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1239,7 +1238,7 @@ func (s *jsiiProxy_SpannerInstance) PutAutoscalingConfig(value *SpannerInstanceA
 	_jsii_.InvokeVoid(
 		s,
 		"putAutoscalingConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1250,7 +1249,7 @@ func (s *jsiiProxy_SpannerInstance) PutTimeouts(value *SpannerInstanceTimeouts) 
 	_jsii_.InvokeVoid(
 		s,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1358,8 +1357,8 @@ func (s *jsiiProxy_SpannerInstance) ResetTimeouts() {
 	)
 }
 
-func (s *jsiiProxy_SpannerInstance) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SpannerInstance) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1371,8 +1370,8 @@ func (s *jsiiProxy_SpannerInstance) SynthesizeAttributes() *map[string]interface
 	return returns
 }
 
-func (s *jsiiProxy_SpannerInstance) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SpannerInstance) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1384,8 +1383,8 @@ func (s *jsiiProxy_SpannerInstance) SynthesizeHclAttributes() *map[string]interf
 	return returns
 }
 
-func (s *jsiiProxy_SpannerInstance) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SpannerInstance) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1397,8 +1396,8 @@ func (s *jsiiProxy_SpannerInstance) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_SpannerInstance) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SpannerInstance) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1423,8 +1422,8 @@ func (s *jsiiProxy_SpannerInstance) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_SpannerInstance) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SpannerInstance) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1435,4 +1434,3 @@ func (s *jsiiProxy_SpannerInstance) ToTerraform() interface{} {
 
 	return returns
 }
-

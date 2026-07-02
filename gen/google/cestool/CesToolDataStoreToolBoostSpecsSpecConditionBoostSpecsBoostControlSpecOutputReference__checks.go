@@ -90,7 +90,7 @@ func (c *jsiiProxy_CesToolDataStoreToolBoostSpecsSpecConditionBoostSpecsBoostCon
 	return nil
 }
 
-func (c *jsiiProxy_CesToolDataStoreToolBoostSpecsSpecConditionBoostSpecsBoostControlSpecOutputReference) validatePutControlPointsParameters(value interface{}) error {
+func (c *jsiiProxy_CesToolDataStoreToolBoostSpecsSpecConditionBoostSpecsBoostControlSpecOutputReference) validatePutControlPointsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -137,7 +137,7 @@ func (j *jsiiProxy_CesToolDataStoreToolBoostSpecsSpecConditionBoostSpecsBoostCon
 	return nil
 }
 
-func (j *jsiiProxy_CesToolDataStoreToolBoostSpecsSpecConditionBoostSpecsBoostControlSpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CesToolDataStoreToolBoostSpecsSpecConditionBoostSpecsBoostControlSpecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -253,4 +253,3 @@ func validateNewCesToolDataStoreToolBoostSpecsSpecConditionBoostSpecsBoostContro
 
 	return nil
 }
-

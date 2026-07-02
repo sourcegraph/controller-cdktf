@@ -98,7 +98,7 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupBootDiskOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_WorkbenchInstanceGceSetupBootDiskOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_WorkbenchInstanceGceSetupBootDiskOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewWorkbenchInstanceGceSetupBootDiskOutputReferenceParameters(terra
 
 	return nil
 }
-

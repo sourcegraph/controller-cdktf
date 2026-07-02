@@ -1,6 +1,5 @@
 package computeurlmap
 
-
 type ComputeUrlMapPathMatcherRouteRulesRouteActionCachePolicy struct {
 	// Bypass the cache when the specified request headers are matched by name, e.g. Pragma or Authorization headers. Values are case-insensitive. Up to 5 header names can be specified. The cache is bypassed for all cacheMode values.
 	//
@@ -47,21 +46,20 @@ type ComputeUrlMapPathMatcherRouteRulesRouteActionCachePolicy struct {
 	// specified, Cloud CDN applies negative caching by default.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_url_map#negative_caching ComputeUrlMap#negative_caching}
-	NegativeCaching interface{} `field:"optional" json:"negativeCaching" yaml:"negativeCaching"`
+	NegativeCaching any `field:"optional" json:"negativeCaching" yaml:"negativeCaching"`
 	// negative_caching_policy block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_url_map#negative_caching_policy ComputeUrlMap#negative_caching_policy}
-	NegativeCachingPolicy interface{} `field:"optional" json:"negativeCachingPolicy" yaml:"negativeCachingPolicy"`
+	NegativeCachingPolicy any `field:"optional" json:"negativeCachingPolicy" yaml:"negativeCachingPolicy"`
 	// If true then Cloud CDN will combine multiple concurrent cache fill requests into a small number of requests to the origin.
 	//
 	// If not specified,
 	// Cloud CDN applies request coalescing by default.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_url_map#request_coalescing ComputeUrlMap#request_coalescing}
-	RequestCoalescing interface{} `field:"optional" json:"requestCoalescing" yaml:"requestCoalescing"`
+	RequestCoalescing any `field:"optional" json:"requestCoalescing" yaml:"requestCoalescing"`
 	// serve_while_stale block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_url_map#serve_while_stale ComputeUrlMap#serve_while_stale}
 	ServeWhileStale *ComputeUrlMapPathMatcherRouteRulesRouteActionCachePolicyServeWhileStale `field:"optional" json:"serveWhileStale" yaml:"serveWhileStale"`
 }
-

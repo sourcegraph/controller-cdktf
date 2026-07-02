@@ -1,6 +1,5 @@
 package containerazurecluster
 
-
 type ContainerAzureClusterControlPlane struct {
 	// ssh_config block.
 	//
@@ -29,7 +28,7 @@ type ContainerAzureClusterControlPlane struct {
 	// replica_placements block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_azure_cluster#replica_placements ContainerAzureCluster#replica_placements}
-	ReplicaPlacements interface{} `field:"optional" json:"replicaPlacements" yaml:"replicaPlacements"`
+	ReplicaPlacements any `field:"optional" json:"replicaPlacements" yaml:"replicaPlacements"`
 	// root_volume block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_azure_cluster#root_volume ContainerAzureCluster#root_volume}
@@ -45,4 +44,3 @@ type ContainerAzureClusterControlPlane struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_azure_cluster#vm_size ContainerAzureCluster#vm_size}
 	VmSize *string `field:"optional" json:"vmSize" yaml:"vmSize"`
 }
-

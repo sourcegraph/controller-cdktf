@@ -15,11 +15,11 @@ type DataGoogleDataprocMetastoreFederationIamPolicy interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -57,17 +57,17 @@ type DataGoogleDataprocMetastoreFederationIamPolicy interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -95,18 +95,18 @@ type DataGoogleDataprocMetastoreFederationIamPolicy interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataGoogleDataprocMetastoreFederationIamPolicy
@@ -124,8 +124,8 @@ func (j *jsiiProxy_DataGoogleDataprocMetastoreFederationIamPolicy) CdktfStack() 
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleDataprocMetastoreFederationIamPolicy) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleDataprocMetastoreFederationIamPolicy) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -134,8 +134,8 @@ func (j *jsiiProxy_DataGoogleDataprocMetastoreFederationIamPolicy) ConstructNode
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleDataprocMetastoreFederationIamPolicy) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleDataprocMetastoreFederationIamPolicy) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -314,8 +314,8 @@ func (j *jsiiProxy_DataGoogleDataprocMetastoreFederationIamPolicy) Provider() cd
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleDataprocMetastoreFederationIamPolicy) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleDataprocMetastoreFederationIamPolicy) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -334,8 +334,8 @@ func (j *jsiiProxy_DataGoogleDataprocMetastoreFederationIamPolicy) TerraformGene
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleDataprocMetastoreFederationIamPolicy) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleDataprocMetastoreFederationIamPolicy) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -354,7 +354,6 @@ func (j *jsiiProxy_DataGoogleDataprocMetastoreFederationIamPolicy) TerraformReso
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/dataproc_metastore_federation_iam_policy google_dataproc_metastore_federation_iam_policy} Data Source.
 func NewDataGoogleDataprocMetastoreFederationIamPolicy(scope constructs.Construct, id *string, config *DataGoogleDataprocMetastoreFederationIamPolicyConfig) DataGoogleDataprocMetastoreFederationIamPolicy {
 	_init_.Initialize()
@@ -366,7 +365,7 @@ func NewDataGoogleDataprocMetastoreFederationIamPolicy(scope constructs.Construc
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleDataprocMetastoreFederationIamPolicy.DataGoogleDataprocMetastoreFederationIamPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -379,12 +378,12 @@ func NewDataGoogleDataprocMetastoreFederationIamPolicy_Override(d DataGoogleData
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleDataprocMetastoreFederationIamPolicy.DataGoogleDataprocMetastoreFederationIamPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataGoogleDataprocMetastoreFederationIamPolicy)SetCount(val interface{}) {
+func (j *jsiiProxy_DataGoogleDataprocMetastoreFederationIamPolicy) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -395,7 +394,7 @@ func (j *jsiiProxy_DataGoogleDataprocMetastoreFederationIamPolicy)SetCount(val i
 	)
 }
 
-func (j *jsiiProxy_DataGoogleDataprocMetastoreFederationIamPolicy)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataGoogleDataprocMetastoreFederationIamPolicy) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -403,7 +402,7 @@ func (j *jsiiProxy_DataGoogleDataprocMetastoreFederationIamPolicy)SetDependsOn(v
 	)
 }
 
-func (j *jsiiProxy_DataGoogleDataprocMetastoreFederationIamPolicy)SetFederationId(val *string) {
+func (j *jsiiProxy_DataGoogleDataprocMetastoreFederationIamPolicy) SetFederationId(val *string) {
 	if err := j.validateSetFederationIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -414,7 +413,7 @@ func (j *jsiiProxy_DataGoogleDataprocMetastoreFederationIamPolicy)SetFederationI
 	)
 }
 
-func (j *jsiiProxy_DataGoogleDataprocMetastoreFederationIamPolicy)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGoogleDataprocMetastoreFederationIamPolicy) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -422,7 +421,7 @@ func (j *jsiiProxy_DataGoogleDataprocMetastoreFederationIamPolicy)SetForEach(val
 	)
 }
 
-func (j *jsiiProxy_DataGoogleDataprocMetastoreFederationIamPolicy)SetId(val *string) {
+func (j *jsiiProxy_DataGoogleDataprocMetastoreFederationIamPolicy) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -433,7 +432,7 @@ func (j *jsiiProxy_DataGoogleDataprocMetastoreFederationIamPolicy)SetId(val *str
 	)
 }
 
-func (j *jsiiProxy_DataGoogleDataprocMetastoreFederationIamPolicy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGoogleDataprocMetastoreFederationIamPolicy) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -444,7 +443,7 @@ func (j *jsiiProxy_DataGoogleDataprocMetastoreFederationIamPolicy)SetLifecycle(v
 	)
 }
 
-func (j *jsiiProxy_DataGoogleDataprocMetastoreFederationIamPolicy)SetLocation(val *string) {
+func (j *jsiiProxy_DataGoogleDataprocMetastoreFederationIamPolicy) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -455,7 +454,7 @@ func (j *jsiiProxy_DataGoogleDataprocMetastoreFederationIamPolicy)SetLocation(va
 	)
 }
 
-func (j *jsiiProxy_DataGoogleDataprocMetastoreFederationIamPolicy)SetProject(val *string) {
+func (j *jsiiProxy_DataGoogleDataprocMetastoreFederationIamPolicy) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -466,7 +465,7 @@ func (j *jsiiProxy_DataGoogleDataprocMetastoreFederationIamPolicy)SetProject(val
 	)
 }
 
-func (j *jsiiProxy_DataGoogleDataprocMetastoreFederationIamPolicy)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGoogleDataprocMetastoreFederationIamPolicy) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -486,7 +485,7 @@ func DataGoogleDataprocMetastoreFederationIamPolicy_GenerateConfigForImport(scop
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleDataprocMetastoreFederationIamPolicy.DataGoogleDataprocMetastoreFederationIamPolicy",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -510,7 +509,7 @@ func DataGoogleDataprocMetastoreFederationIamPolicy_GenerateConfigForImport(scop
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataGoogleDataprocMetastoreFederationIamPolicy_IsConstruct(x interface{}) *bool {
+func DataGoogleDataprocMetastoreFederationIamPolicy_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleDataprocMetastoreFederationIamPolicy_IsConstructParameters(x); err != nil {
@@ -521,7 +520,7 @@ func DataGoogleDataprocMetastoreFederationIamPolicy_IsConstruct(x interface{}) *
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleDataprocMetastoreFederationIamPolicy.DataGoogleDataprocMetastoreFederationIamPolicy",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -529,7 +528,7 @@ func DataGoogleDataprocMetastoreFederationIamPolicy_IsConstruct(x interface{}) *
 }
 
 // Experimental.
-func DataGoogleDataprocMetastoreFederationIamPolicy_IsTerraformDataSource(x interface{}) *bool {
+func DataGoogleDataprocMetastoreFederationIamPolicy_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleDataprocMetastoreFederationIamPolicy_IsTerraformDataSourceParameters(x); err != nil {
@@ -540,7 +539,7 @@ func DataGoogleDataprocMetastoreFederationIamPolicy_IsTerraformDataSource(x inte
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleDataprocMetastoreFederationIamPolicy.DataGoogleDataprocMetastoreFederationIamPolicy",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -548,7 +547,7 @@ func DataGoogleDataprocMetastoreFederationIamPolicy_IsTerraformDataSource(x inte
 }
 
 // Experimental.
-func DataGoogleDataprocMetastoreFederationIamPolicy_IsTerraformElement(x interface{}) *bool {
+func DataGoogleDataprocMetastoreFederationIamPolicy_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleDataprocMetastoreFederationIamPolicy_IsTerraformElementParameters(x); err != nil {
@@ -559,7 +558,7 @@ func DataGoogleDataprocMetastoreFederationIamPolicy_IsTerraformElement(x interfa
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleDataprocMetastoreFederationIamPolicy.DataGoogleDataprocMetastoreFederationIamPolicy",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -577,27 +576,27 @@ func DataGoogleDataprocMetastoreFederationIamPolicy_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleDataprocMetastoreFederationIamPolicy) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataGoogleDataprocMetastoreFederationIamPolicy) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataGoogleDataprocMetastoreFederationIamPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataGoogleDataprocMetastoreFederationIamPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -613,7 +612,7 @@ func (d *jsiiProxy_DataGoogleDataprocMetastoreFederationIamPolicy) GetBooleanAtt
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -629,7 +628,7 @@ func (d *jsiiProxy_DataGoogleDataprocMetastoreFederationIamPolicy) GetBooleanMap
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -645,7 +644,7 @@ func (d *jsiiProxy_DataGoogleDataprocMetastoreFederationIamPolicy) GetListAttrib
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -661,7 +660,7 @@ func (d *jsiiProxy_DataGoogleDataprocMetastoreFederationIamPolicy) GetNumberAttr
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -677,7 +676,7 @@ func (d *jsiiProxy_DataGoogleDataprocMetastoreFederationIamPolicy) GetNumberList
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -693,7 +692,7 @@ func (d *jsiiProxy_DataGoogleDataprocMetastoreFederationIamPolicy) GetNumberMapA
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -709,7 +708,7 @@ func (d *jsiiProxy_DataGoogleDataprocMetastoreFederationIamPolicy) GetStringAttr
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -725,7 +724,7 @@ func (d *jsiiProxy_DataGoogleDataprocMetastoreFederationIamPolicy) GetStringMapA
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -741,7 +740,7 @@ func (d *jsiiProxy_DataGoogleDataprocMetastoreFederationIamPolicy) Interpolation
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -755,7 +754,7 @@ func (d *jsiiProxy_DataGoogleDataprocMetastoreFederationIamPolicy) OverrideLogic
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -791,8 +790,8 @@ func (d *jsiiProxy_DataGoogleDataprocMetastoreFederationIamPolicy) ResetProject(
 	)
 }
 
-func (d *jsiiProxy_DataGoogleDataprocMetastoreFederationIamPolicy) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleDataprocMetastoreFederationIamPolicy) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -804,8 +803,8 @@ func (d *jsiiProxy_DataGoogleDataprocMetastoreFederationIamPolicy) SynthesizeAtt
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleDataprocMetastoreFederationIamPolicy) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleDataprocMetastoreFederationIamPolicy) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -817,8 +816,8 @@ func (d *jsiiProxy_DataGoogleDataprocMetastoreFederationIamPolicy) SynthesizeHcl
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleDataprocMetastoreFederationIamPolicy) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleDataprocMetastoreFederationIamPolicy) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -830,8 +829,8 @@ func (d *jsiiProxy_DataGoogleDataprocMetastoreFederationIamPolicy) ToHclTerrafor
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleDataprocMetastoreFederationIamPolicy) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleDataprocMetastoreFederationIamPolicy) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -856,8 +855,8 @@ func (d *jsiiProxy_DataGoogleDataprocMetastoreFederationIamPolicy) ToString() *s
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleDataprocMetastoreFederationIamPolicy) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleDataprocMetastoreFederationIamPolicy) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -868,4 +867,3 @@ func (d *jsiiProxy_DataGoogleDataprocMetastoreFederationIamPolicy) ToTerraform()
 
 	return returns
 }
-

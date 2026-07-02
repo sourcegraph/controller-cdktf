@@ -12,9 +12,9 @@ type IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParams
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -26,7 +26,7 @@ type IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParams
 	// Experimental.
 	CreationStack() *[]*string
 	Entries() IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntriesList
-	EntriesInput() interface{}
+	EntriesInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParams
@@ -42,7 +42,7 @@ type IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParams
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -63,11 +63,11 @@ type IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParams
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutEntries(value interface{})
+	PutEntries(value any)
 	ResetEntries()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,8 +80,8 @@ type jsiiProxy_IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsT
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -120,8 +120,8 @@ func (j *jsiiProxy_IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredenti
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsOutputReference) EntriesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsOutputReference) EntriesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"entriesInput",
@@ -170,7 +170,6 @@ func (j *jsiiProxy_IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredenti
 	return returns
 }
 
-
 func NewIntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsOutputReference {
 	_init_.Initialize()
 
@@ -181,7 +180,7 @@ func NewIntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenPar
 
 	_jsii_.Create(
 		"@cdktf/provider-google.integrationsAuthConfig.IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -193,12 +192,12 @@ func NewIntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenPar
 
 	_jsii_.Create(
 		"@cdktf/provider-google.integrationsAuthConfig.IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		i,
 	)
 }
 
-func (j *jsiiProxy_IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -209,7 +208,7 @@ func (j *jsiiProxy_IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredenti
 	)
 }
 
-func (j *jsiiProxy_IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -220,7 +219,7 @@ func (j *jsiiProxy_IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredenti
 	)
 }
 
-func (j *jsiiProxy_IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsOutputReference)SetInternalValue(val *IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParams) {
+func (j *jsiiProxy_IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsOutputReference) SetInternalValue(val *IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParams) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredenti
 	)
 }
 
-func (j *jsiiProxy_IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredenti
 	)
 }
 
-func (j *jsiiProxy_IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,16 +265,16 @@ func (i *jsiiProxy_IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredenti
 	return returns
 }
 
-func (i *jsiiProxy_IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -291,7 +290,7 @@ func (i *jsiiProxy_IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredenti
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -307,7 +306,7 @@ func (i *jsiiProxy_IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredenti
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -323,7 +322,7 @@ func (i *jsiiProxy_IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredenti
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -339,7 +338,7 @@ func (i *jsiiProxy_IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredenti
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -355,7 +354,7 @@ func (i *jsiiProxy_IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredenti
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -371,7 +370,7 @@ func (i *jsiiProxy_IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredenti
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -387,7 +386,7 @@ func (i *jsiiProxy_IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredenti
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -403,7 +402,7 @@ func (i *jsiiProxy_IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredenti
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -432,21 +431,21 @@ func (i *jsiiProxy_IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredenti
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (i *jsiiProxy_IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsOutputReference) PutEntries(value interface{}) {
+func (i *jsiiProxy_IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsOutputReference) PutEntries(value any) {
 	if err := i.validatePutEntriesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"putEntries",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -458,16 +457,16 @@ func (i *jsiiProxy_IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredenti
 	)
 }
 
-func (i *jsiiProxy_IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (i *jsiiProxy_IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := i.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -486,4 +485,3 @@ func (i *jsiiProxy_IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredenti
 
 	return returns
 }
-

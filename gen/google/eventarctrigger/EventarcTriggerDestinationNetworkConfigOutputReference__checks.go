@@ -98,7 +98,7 @@ func (e *jsiiProxy_EventarcTriggerDestinationNetworkConfigOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_EventarcTriggerDestinationNetworkConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EventarcTriggerDestinationNetworkConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewEventarcTriggerDestinationNetworkConfigOutputReferenceParameters
 
 	return nil
 }
-

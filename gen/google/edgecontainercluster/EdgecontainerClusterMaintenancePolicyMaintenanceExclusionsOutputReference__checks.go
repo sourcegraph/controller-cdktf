@@ -109,7 +109,7 @@ func (e *jsiiProxy_EdgecontainerClusterMaintenancePolicyMaintenanceExclusionsOut
 	return nil
 }
 
-func (j *jsiiProxy_EdgecontainerClusterMaintenancePolicyMaintenanceExclusionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EdgecontainerClusterMaintenancePolicyMaintenanceExclusionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -182,7 +182,7 @@ func (j *jsiiProxy_EdgecontainerClusterMaintenancePolicyMaintenanceExclusionsOut
 	return nil
 }
 
-func (j *jsiiProxy_EdgecontainerClusterMaintenancePolicyMaintenanceExclusionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EdgecontainerClusterMaintenancePolicyMaintenanceExclusionsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -241,4 +241,3 @@ func validateNewEdgecontainerClusterMaintenancePolicyMaintenanceExclusionsOutput
 
 	return nil
 }
-

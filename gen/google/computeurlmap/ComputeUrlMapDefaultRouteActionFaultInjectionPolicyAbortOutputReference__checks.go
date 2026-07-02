@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeUrlMapDefaultRouteActionFaultInjectionPolicyAbortOutpu
 	return nil
 }
 
-func (j *jsiiProxy_ComputeUrlMapDefaultRouteActionFaultInjectionPolicyAbortOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeUrlMapDefaultRouteActionFaultInjectionPolicyAbortOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewComputeUrlMapDefaultRouteActionFaultInjectionPolicyAbortOutputRe
 
 	return nil
 }
-

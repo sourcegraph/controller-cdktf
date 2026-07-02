@@ -98,7 +98,7 @@ func (w *jsiiProxy_WorkstationsWorkstationConfigEncryptionKeyOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_WorkstationsWorkstationConfigEncryptionKeyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_WorkstationsWorkstationConfigEncryptionKeyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewWorkstationsWorkstationConfigEncryptionKeyOutputReferenceParamet
 
 	return nil
 }
-

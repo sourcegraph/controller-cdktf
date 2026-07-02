@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsRateLimitThresholdOu
 	return nil
 }
 
-func (j *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsRateLimitThresholdOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsRateLimitThresholdOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewComputeSecurityPolicyRuleRateLimitOptionsRateLimitThresholdOutpu
 
 	return nil
 }
-

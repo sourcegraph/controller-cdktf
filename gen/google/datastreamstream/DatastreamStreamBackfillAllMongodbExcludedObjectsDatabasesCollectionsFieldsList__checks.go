@@ -34,7 +34,7 @@ func (d *jsiiProxy_DatastreamStreamBackfillAllMongodbExcludedObjectsDatabasesCol
 	return nil
 }
 
-func (j *jsiiProxy_DatastreamStreamBackfillAllMongodbExcludedObjectsDatabasesCollectionsFieldsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DatastreamStreamBackfillAllMongodbExcludedObjectsDatabasesCollectionsFieldsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDatastreamStreamBackfillAllMongodbExcludedObjectsDatabasesCollec
 
 	return nil
 }
-

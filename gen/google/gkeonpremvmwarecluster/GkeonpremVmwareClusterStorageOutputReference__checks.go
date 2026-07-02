@@ -98,7 +98,7 @@ func (g *jsiiProxy_GkeonpremVmwareClusterStorageOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_GkeonpremVmwareClusterStorageOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GkeonpremVmwareClusterStorageOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -187,7 +187,7 @@ func (j *jsiiProxy_GkeonpremVmwareClusterStorageOutputReference) validateSetTerr
 	return nil
 }
 
-func (j *jsiiProxy_GkeonpremVmwareClusterStorageOutputReference) validateSetVsphereCsiDisabledParameters(val interface{}) error {
+func (j *jsiiProxy_GkeonpremVmwareClusterStorageOutputReference) validateSetVsphereCsiDisabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -218,4 +218,3 @@ func validateNewGkeonpremVmwareClusterStorageOutputReferenceParameters(terraform
 
 	return nil
 }
-

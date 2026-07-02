@@ -98,7 +98,7 @@ func (o *jsiiProxy_OsConfigOsPolicyAssignmentRolloutDisruptionBudgetOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_OsConfigOsPolicyAssignmentRolloutDisruptionBudgetOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_OsConfigOsPolicyAssignmentRolloutDisruptionBudgetOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewOsConfigOsPolicyAssignmentRolloutDisruptionBudgetOutputReference
 
 	return nil
 }
-

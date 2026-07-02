@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleDataprocMetastoreServiceScheduledBackupOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleDataprocMetastoreServiceScheduledBackupOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleDataprocMetastoreServiceScheduledBackupOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleDataprocMetastoreServiceScheduledBackupOutputReference
 
 	return nil
 }
-

@@ -6,9 +6,9 @@ import (
 
 type ContainerClusterConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type ContainerClusterConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name of the cluster, unique within the project and location.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#name ContainerCluster#name}
@@ -30,7 +30,7 @@ type ContainerClusterConfig struct {
 	// Enable NET_ADMIN for this cluster.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#allow_net_admin ContainerCluster#allow_net_admin}
-	AllowNetAdmin interface{} `field:"optional" json:"allowNetAdmin" yaml:"allowNetAdmin"`
+	AllowNetAdmin any `field:"optional" json:"allowNetAdmin" yaml:"allowNetAdmin"`
 	// anonymous_authentication_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#anonymous_authentication_config ContainerCluster#anonymous_authentication_config}
@@ -96,7 +96,7 @@ type ContainerClusterConfig struct {
 	// When the field is set to false, deleting the cluster is allowed.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#deletion_protection ContainerCluster#deletion_protection}
-	DeletionProtection interface{} `field:"optional" json:"deletionProtection" yaml:"deletionProtection"`
+	DeletionProtection any `field:"optional" json:"deletionProtection" yaml:"deletionProtection"`
 	// Description of the cluster.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#description ContainerCluster#description}
@@ -104,7 +104,7 @@ type ContainerClusterConfig struct {
 	// Disable L4 load balancer VPC firewalls to enable firewall policies.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#disable_l4_lb_firewall_reconciliation ContainerCluster#disable_l4_lb_firewall_reconciliation}
-	DisableL4LbFirewallReconciliation interface{} `field:"optional" json:"disableL4LbFirewallReconciliation" yaml:"disableL4LbFirewallReconciliation"`
+	DisableL4LbFirewallReconciliation any `field:"optional" json:"disableL4LbFirewallReconciliation" yaml:"disableL4LbFirewallReconciliation"`
 	// dns_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#dns_config ContainerCluster#dns_config}
@@ -112,21 +112,21 @@ type ContainerClusterConfig struct {
 	// Enable Autopilot for this cluster.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#enable_autopilot ContainerCluster#enable_autopilot}
-	EnableAutopilot interface{} `field:"optional" json:"enableAutopilot" yaml:"enableAutopilot"`
+	EnableAutopilot any `field:"optional" json:"enableAutopilot" yaml:"enableAutopilot"`
 	// Whether Cilium cluster-wide network policy is enabled on this cluster.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#enable_cilium_clusterwide_network_policy ContainerCluster#enable_cilium_clusterwide_network_policy}
-	EnableCiliumClusterwideNetworkPolicy interface{} `field:"optional" json:"enableCiliumClusterwideNetworkPolicy" yaml:"enableCiliumClusterwideNetworkPolicy"`
+	EnableCiliumClusterwideNetworkPolicy any `field:"optional" json:"enableCiliumClusterwideNetworkPolicy" yaml:"enableCiliumClusterwideNetworkPolicy"`
 	// Whether FQDN Network Policy is enabled on this cluster.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#enable_fqdn_network_policy ContainerCluster#enable_fqdn_network_policy}
-	EnableFqdnNetworkPolicy interface{} `field:"optional" json:"enableFqdnNetworkPolicy" yaml:"enableFqdnNetworkPolicy"`
+	EnableFqdnNetworkPolicy any `field:"optional" json:"enableFqdnNetworkPolicy" yaml:"enableFqdnNetworkPolicy"`
 	// Whether Intra-node visibility is enabled for this cluster.
 	//
 	// This makes same node pod to pod traffic visible for VPC network.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#enable_intranode_visibility ContainerCluster#enable_intranode_visibility}
-	EnableIntranodeVisibility interface{} `field:"optional" json:"enableIntranodeVisibility" yaml:"enableIntranodeVisibility"`
+	EnableIntranodeVisibility any `field:"optional" json:"enableIntranodeVisibility" yaml:"enableIntranodeVisibility"`
 	// enable_k8s_beta_apis block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#enable_k8s_beta_apis ContainerCluster#enable_k8s_beta_apis}
@@ -136,29 +136,29 @@ type ContainerClusterConfig struct {
 	// Note that when this option is enabled, the cluster cannot be upgraded and will be automatically deleted after 30 days.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#enable_kubernetes_alpha ContainerCluster#enable_kubernetes_alpha}
-	EnableKubernetesAlpha interface{} `field:"optional" json:"enableKubernetesAlpha" yaml:"enableKubernetesAlpha"`
+	EnableKubernetesAlpha any `field:"optional" json:"enableKubernetesAlpha" yaml:"enableKubernetesAlpha"`
 	// Whether L4ILB Subsetting is enabled for this cluster.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#enable_l4_ilb_subsetting ContainerCluster#enable_l4_ilb_subsetting}
-	EnableL4IlbSubsetting interface{} `field:"optional" json:"enableL4IlbSubsetting" yaml:"enableL4IlbSubsetting"`
+	EnableL4IlbSubsetting any `field:"optional" json:"enableL4IlbSubsetting" yaml:"enableL4IlbSubsetting"`
 	// Whether the ABAC authorizer is enabled for this cluster.
 	//
 	// When enabled, identities in the system, including service accounts, nodes, and controllers, will have statically granted permissions beyond those provided by the RBAC configuration or IAM. Defaults to false.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#enable_legacy_abac ContainerCluster#enable_legacy_abac}
-	EnableLegacyAbac interface{} `field:"optional" json:"enableLegacyAbac" yaml:"enableLegacyAbac"`
+	EnableLegacyAbac any `field:"optional" json:"enableLegacyAbac" yaml:"enableLegacyAbac"`
 	// Whether multi-networking is enabled for this cluster.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#enable_multi_networking ContainerCluster#enable_multi_networking}
-	EnableMultiNetworking interface{} `field:"optional" json:"enableMultiNetworking" yaml:"enableMultiNetworking"`
+	EnableMultiNetworking any `field:"optional" json:"enableMultiNetworking" yaml:"enableMultiNetworking"`
 	// Enable Shielded Nodes features on all nodes in this cluster. Defaults to true.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#enable_shielded_nodes ContainerCluster#enable_shielded_nodes}
-	EnableShieldedNodes interface{} `field:"optional" json:"enableShieldedNodes" yaml:"enableShieldedNodes"`
+	EnableShieldedNodes any `field:"optional" json:"enableShieldedNodes" yaml:"enableShieldedNodes"`
 	// Whether to enable Cloud TPU resources in this cluster.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#enable_tpu ContainerCluster#enable_tpu}
-	EnableTpu interface{} `field:"optional" json:"enableTpu" yaml:"enableTpu"`
+	EnableTpu any `field:"optional" json:"enableTpu" yaml:"enableTpu"`
 	// enterprise_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#enterprise_config ContainerCluster#enterprise_config}
@@ -279,7 +279,7 @@ type ContainerClusterConfig struct {
 	// node_pool block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#node_pool ContainerCluster#node_pool}
-	NodePool interface{} `field:"optional" json:"nodePool" yaml:"nodePool"`
+	NodePool any `field:"optional" json:"nodePool" yaml:"nodePool"`
 	// node_pool_auto_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#node_pool_auto_config ContainerCluster#node_pool_auto_config}
@@ -331,7 +331,7 @@ type ContainerClusterConfig struct {
 	// If you're using google_container_node_pool resources with no default node pool, this should be set to true, alongside setting initial_node_count to at least 1.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#remove_default_node_pool ContainerCluster#remove_default_node_pool}
-	RemoveDefaultNodePool interface{} `field:"optional" json:"removeDefaultNodePool" yaml:"removeDefaultNodePool"`
+	RemoveDefaultNodePool any `field:"optional" json:"removeDefaultNodePool" yaml:"removeDefaultNodePool"`
 	// The GCE resource labels (a map of key/value pairs) to be applied to the cluster.
 	//
 	// **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
@@ -376,4 +376,3 @@ type ContainerClusterConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#workload_identity_config ContainerCluster#workload_identity_config}
 	WorkloadIdentityConfig *ContainerClusterWorkloadIdentityConfig `field:"optional" json:"workloadIdentityConfig" yaml:"workloadIdentityConfig"`
 }
-

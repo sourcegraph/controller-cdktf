@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2Service",
-		reflect.TypeOf((*CloudRunV2Service)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2Service](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -147,7 +147,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uri", GoGetter: "Uri"},
 			_jsii_.MemberProperty{JsiiProperty: "urls", GoGetter: "Urls"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudRunV2Service{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -155,11 +155,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceBinaryAuthorization",
-		reflect.TypeOf((*CloudRunV2ServiceBinaryAuthorization)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceBinaryAuthorization](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceBinaryAuthorizationOutputReference",
-		reflect.TypeOf((*CloudRunV2ServiceBinaryAuthorizationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceBinaryAuthorizationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "breakglassJustification", GoGetter: "BreakglassJustification"},
 			_jsii_.MemberProperty{JsiiProperty: "breakglassJustificationInput", GoGetter: "BreakglassJustificationInput"},
@@ -192,7 +192,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "useDefault", GoGetter: "UseDefault"},
 			_jsii_.MemberProperty{JsiiProperty: "useDefaultInput", GoGetter: "UseDefaultInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudRunV2ServiceBinaryAuthorizationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -200,11 +200,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceBuildConfig",
-		reflect.TypeOf((*CloudRunV2ServiceBuildConfig)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceBuildConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceBuildConfigOutputReference",
-		reflect.TypeOf((*CloudRunV2ServiceBuildConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceBuildConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "baseImage", GoGetter: "BaseImage"},
 			_jsii_.MemberProperty{JsiiProperty: "baseImageInput", GoGetter: "BaseImageInput"},
@@ -253,7 +253,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workerPool", GoGetter: "WorkerPool"},
 			_jsii_.MemberProperty{JsiiProperty: "workerPoolInput", GoGetter: "WorkerPoolInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudRunV2ServiceBuildConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -261,11 +261,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceConditions",
-		reflect.TypeOf((*CloudRunV2ServiceConditions)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceConditions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceConditionsList",
-		reflect.TypeOf((*CloudRunV2ServiceConditionsList)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceConditionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -278,7 +278,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudRunV2ServiceConditionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -286,7 +286,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceConditionsOutputReference",
-		reflect.TypeOf((*CloudRunV2ServiceConditionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceConditionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -318,7 +318,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudRunV2ServiceConditionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -326,15 +326,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceConfig",
-		reflect.TypeOf((*CloudRunV2ServiceConfig)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceMultiRegionSettings",
-		reflect.TypeOf((*CloudRunV2ServiceMultiRegionSettings)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceMultiRegionSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceMultiRegionSettingsOutputReference",
-		reflect.TypeOf((*CloudRunV2ServiceMultiRegionSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceMultiRegionSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -362,7 +362,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudRunV2ServiceMultiRegionSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -370,11 +370,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceScaling",
-		reflect.TypeOf((*CloudRunV2ServiceScaling)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceScaling](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceScalingOutputReference",
-		reflect.TypeOf((*CloudRunV2ServiceScalingOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceScalingOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -410,7 +410,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudRunV2ServiceScalingOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -418,19 +418,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplate",
-		reflect.TypeOf((*CloudRunV2ServiceTemplate)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTemplate](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainers",
-		reflect.TypeOf((*CloudRunV2ServiceTemplateContainers)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTemplateContainers](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersBuildInfo",
-		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersBuildInfo)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTemplateContainersBuildInfo](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersBuildInfoList",
-		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersBuildInfoList)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTemplateContainersBuildInfoList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -443,7 +443,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudRunV2ServiceTemplateContainersBuildInfoList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -451,7 +451,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersBuildInfoOutputReference",
-		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersBuildInfoOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTemplateContainersBuildInfoOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -477,7 +477,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudRunV2ServiceTemplateContainersBuildInfoOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -485,11 +485,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersEnv",
-		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersEnv)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTemplateContainersEnv](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersEnvList",
-		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersEnvList)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTemplateContainersEnvList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -503,7 +503,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudRunV2ServiceTemplateContainersEnvList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -511,7 +511,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersEnvOutputReference",
-		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersEnvOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTemplateContainersEnvOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -544,7 +544,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "valueSource", GoGetter: "ValueSource"},
 			_jsii_.MemberProperty{JsiiProperty: "valueSourceInput", GoGetter: "ValueSourceInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudRunV2ServiceTemplateContainersEnvOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -552,11 +552,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersEnvValueSource",
-		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersEnvValueSource)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTemplateContainersEnvValueSource](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersEnvValueSourceOutputReference",
-		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersEnvValueSourceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTemplateContainersEnvValueSourceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -584,7 +584,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudRunV2ServiceTemplateContainersEnvValueSourceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -592,11 +592,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersEnvValueSourceSecretKeyRef",
-		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersEnvValueSourceSecretKeyRef)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTemplateContainersEnvValueSourceSecretKeyRef](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersEnvValueSourceSecretKeyRefOutputReference",
-		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersEnvValueSourceSecretKeyRefOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTemplateContainersEnvValueSourceSecretKeyRefOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -625,7 +625,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 			_jsii_.MemberProperty{JsiiProperty: "versionInput", GoGetter: "VersionInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudRunV2ServiceTemplateContainersEnvValueSourceSecretKeyRefOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -633,7 +633,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersList",
-		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersList)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTemplateContainersList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -647,7 +647,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudRunV2ServiceTemplateContainersList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -655,15 +655,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersLivenessProbe",
-		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersLivenessProbe)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTemplateContainersLivenessProbe](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersLivenessProbeGrpc",
-		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersLivenessProbeGrpc)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTemplateContainersLivenessProbeGrpc](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference",
-		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -693,7 +693,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -701,15 +701,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersLivenessProbeHttpGet",
-		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersLivenessProbeHttpGet)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTemplateContainersLivenessProbeHttpGet](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersLivenessProbeHttpGetHttpHeaders",
-		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersLivenessProbeHttpGetHttpHeaders)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTemplateContainersLivenessProbeHttpGetHttpHeaders](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersLivenessProbeHttpGetHttpHeadersList",
-		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersLivenessProbeHttpGetHttpHeadersList)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTemplateContainersLivenessProbeHttpGetHttpHeadersList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -723,7 +723,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudRunV2ServiceTemplateContainersLivenessProbeHttpGetHttpHeadersList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -731,7 +731,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersLivenessProbeHttpGetHttpHeadersOutputReference",
-		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersLivenessProbeHttpGetHttpHeadersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTemplateContainersLivenessProbeHttpGetHttpHeadersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -760,7 +760,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudRunV2ServiceTemplateContainersLivenessProbeHttpGetHttpHeadersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -768,7 +768,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersLivenessProbeHttpGetOutputReference",
-		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersLivenessProbeHttpGetOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTemplateContainersLivenessProbeHttpGetOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -802,7 +802,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudRunV2ServiceTemplateContainersLivenessProbeHttpGetOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -810,7 +810,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersLivenessProbeOutputReference",
-		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersLivenessProbeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTemplateContainersLivenessProbeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -858,7 +858,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "timeoutSecondsInput", GoGetter: "TimeoutSecondsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudRunV2ServiceTemplateContainersLivenessProbeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -866,11 +866,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersLivenessProbeTcpSocket",
-		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersLivenessProbeTcpSocket)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTemplateContainersLivenessProbeTcpSocket](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersLivenessProbeTcpSocketOutputReference",
-		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersLivenessProbeTcpSocketOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTemplateContainersLivenessProbeTcpSocketOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -896,7 +896,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudRunV2ServiceTemplateContainersLivenessProbeTcpSocketOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -904,7 +904,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersOutputReference",
-		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTemplateContainersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "args", GoGetter: "Args"},
 			_jsii_.MemberProperty{JsiiProperty: "argsInput", GoGetter: "ArgsInput"},
@@ -977,7 +977,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workingDir", GoGetter: "WorkingDir"},
 			_jsii_.MemberProperty{JsiiProperty: "workingDirInput", GoGetter: "WorkingDirInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudRunV2ServiceTemplateContainersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -985,11 +985,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersPorts",
-		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersPorts)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTemplateContainersPorts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersPortsOutputReference",
-		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersPortsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTemplateContainersPortsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1019,7 +1019,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudRunV2ServiceTemplateContainersPortsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1027,15 +1027,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbe",
-		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersReadinessProbe)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTemplateContainersReadinessProbe](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeGrpc",
-		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersReadinessProbeGrpc)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTemplateContainersReadinessProbeGrpc](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeGrpcOutputReference",
-		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersReadinessProbeGrpcOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTemplateContainersReadinessProbeGrpcOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1065,7 +1065,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudRunV2ServiceTemplateContainersReadinessProbeGrpcOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1073,11 +1073,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeHttpGet",
-		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersReadinessProbeHttpGet)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTemplateContainersReadinessProbeHttpGet](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeHttpGetOutputReference",
-		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersReadinessProbeHttpGetOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTemplateContainersReadinessProbeHttpGetOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1107,7 +1107,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudRunV2ServiceTemplateContainersReadinessProbeHttpGetOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1115,7 +1115,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference",
-		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1159,7 +1159,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "timeoutSecondsInput", GoGetter: "TimeoutSecondsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1167,11 +1167,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersResources",
-		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersResources)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTemplateContainersResources](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersResourcesOutputReference",
-		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersResourcesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTemplateContainersResourcesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1204,7 +1204,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudRunV2ServiceTemplateContainersResourcesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1212,15 +1212,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersStartupProbe",
-		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersStartupProbe)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTemplateContainersStartupProbe](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersStartupProbeGrpc",
-		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersStartupProbeGrpc)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTemplateContainersStartupProbeGrpc](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference",
-		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1250,7 +1250,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1258,15 +1258,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersStartupProbeHttpGet",
-		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersStartupProbeHttpGet)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTemplateContainersStartupProbeHttpGet](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersStartupProbeHttpGetHttpHeaders",
-		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersStartupProbeHttpGetHttpHeaders)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTemplateContainersStartupProbeHttpGetHttpHeaders](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersStartupProbeHttpGetHttpHeadersList",
-		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersStartupProbeHttpGetHttpHeadersList)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTemplateContainersStartupProbeHttpGetHttpHeadersList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1280,7 +1280,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudRunV2ServiceTemplateContainersStartupProbeHttpGetHttpHeadersList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1288,7 +1288,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersStartupProbeHttpGetHttpHeadersOutputReference",
-		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersStartupProbeHttpGetHttpHeadersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTemplateContainersStartupProbeHttpGetHttpHeadersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1317,7 +1317,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudRunV2ServiceTemplateContainersStartupProbeHttpGetHttpHeadersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1325,7 +1325,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersStartupProbeHttpGetOutputReference",
-		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersStartupProbeHttpGetOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTemplateContainersStartupProbeHttpGetOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1359,7 +1359,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudRunV2ServiceTemplateContainersStartupProbeHttpGetOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1367,7 +1367,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersStartupProbeOutputReference",
-		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersStartupProbeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTemplateContainersStartupProbeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1415,7 +1415,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "timeoutSecondsInput", GoGetter: "TimeoutSecondsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudRunV2ServiceTemplateContainersStartupProbeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1423,11 +1423,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersStartupProbeTcpSocket",
-		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersStartupProbeTcpSocket)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTemplateContainersStartupProbeTcpSocket](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersStartupProbeTcpSocketOutputReference",
-		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersStartupProbeTcpSocketOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTemplateContainersStartupProbeTcpSocketOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1454,7 +1454,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudRunV2ServiceTemplateContainersStartupProbeTcpSocketOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1462,11 +1462,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersVolumeMounts",
-		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersVolumeMounts)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTemplateContainersVolumeMounts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersVolumeMountsList",
-		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersVolumeMountsList)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTemplateContainersVolumeMountsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1480,7 +1480,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudRunV2ServiceTemplateContainersVolumeMountsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1488,7 +1488,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersVolumeMountsOutputReference",
-		reflect.TypeOf((*CloudRunV2ServiceTemplateContainersVolumeMountsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTemplateContainersVolumeMountsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1519,7 +1519,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudRunV2ServiceTemplateContainersVolumeMountsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1527,11 +1527,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateNodeSelector",
-		reflect.TypeOf((*CloudRunV2ServiceTemplateNodeSelector)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTemplateNodeSelector](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateNodeSelectorOutputReference",
-		reflect.TypeOf((*CloudRunV2ServiceTemplateNodeSelectorOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTemplateNodeSelectorOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accelerator", GoGetter: "Accelerator"},
 			_jsii_.MemberProperty{JsiiProperty: "acceleratorInput", GoGetter: "AcceleratorInput"},
@@ -1557,7 +1557,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudRunV2ServiceTemplateNodeSelectorOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1565,7 +1565,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateOutputReference",
-		reflect.TypeOf((*CloudRunV2ServiceTemplateOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTemplateOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "annotations", GoGetter: "Annotations"},
 			_jsii_.MemberProperty{JsiiProperty: "annotationsInput", GoGetter: "AnnotationsInput"},
@@ -1642,7 +1642,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpcAccess", GoGetter: "VpcAccess"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcAccessInput", GoGetter: "VpcAccessInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudRunV2ServiceTemplateOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1650,11 +1650,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateScaling",
-		reflect.TypeOf((*CloudRunV2ServiceTemplateScaling)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTemplateScaling](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateScalingOutputReference",
-		reflect.TypeOf((*CloudRunV2ServiceTemplateScalingOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTemplateScalingOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1684,7 +1684,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudRunV2ServiceTemplateScalingOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1692,15 +1692,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumes",
-		reflect.TypeOf((*CloudRunV2ServiceTemplateVolumes)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTemplateVolumes](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumesCloudSqlInstance",
-		reflect.TypeOf((*CloudRunV2ServiceTemplateVolumesCloudSqlInstance)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTemplateVolumesCloudSqlInstance](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumesCloudSqlInstanceOutputReference",
-		reflect.TypeOf((*CloudRunV2ServiceTemplateVolumesCloudSqlInstanceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTemplateVolumesCloudSqlInstanceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1727,7 +1727,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudRunV2ServiceTemplateVolumesCloudSqlInstanceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1735,11 +1735,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumesEmptyDir",
-		reflect.TypeOf((*CloudRunV2ServiceTemplateVolumesEmptyDir)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTemplateVolumesEmptyDir](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumesEmptyDirOutputReference",
-		reflect.TypeOf((*CloudRunV2ServiceTemplateVolumesEmptyDirOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTemplateVolumesEmptyDirOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1769,7 +1769,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudRunV2ServiceTemplateVolumesEmptyDirOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1777,11 +1777,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumesGcs",
-		reflect.TypeOf((*CloudRunV2ServiceTemplateVolumesGcs)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTemplateVolumesGcs](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumesGcsOutputReference",
-		reflect.TypeOf((*CloudRunV2ServiceTemplateVolumesGcsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTemplateVolumesGcsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucket", GoGetter: "Bucket"},
 			_jsii_.MemberProperty{JsiiProperty: "bucketInput", GoGetter: "BucketInput"},
@@ -1813,7 +1813,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudRunV2ServiceTemplateVolumesGcsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1821,7 +1821,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumesList",
-		reflect.TypeOf((*CloudRunV2ServiceTemplateVolumesList)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTemplateVolumesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1835,7 +1835,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudRunV2ServiceTemplateVolumesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1843,11 +1843,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumesNfs",
-		reflect.TypeOf((*CloudRunV2ServiceTemplateVolumesNfs)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTemplateVolumesNfs](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumesNfsOutputReference",
-		reflect.TypeOf((*CloudRunV2ServiceTemplateVolumesNfsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTemplateVolumesNfsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1878,7 +1878,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudRunV2ServiceTemplateVolumesNfsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1886,7 +1886,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumesOutputReference",
-		reflect.TypeOf((*CloudRunV2ServiceTemplateVolumesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTemplateVolumesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cloudSqlInstance", GoGetter: "CloudSqlInstance"},
 			_jsii_.MemberProperty{JsiiProperty: "cloudSqlInstanceInput", GoGetter: "CloudSqlInstanceInput"},
@@ -1932,7 +1932,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudRunV2ServiceTemplateVolumesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1940,15 +1940,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumesSecret",
-		reflect.TypeOf((*CloudRunV2ServiceTemplateVolumesSecret)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTemplateVolumesSecret](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumesSecretItems",
-		reflect.TypeOf((*CloudRunV2ServiceTemplateVolumesSecretItems)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTemplateVolumesSecretItems](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumesSecretItemsList",
-		reflect.TypeOf((*CloudRunV2ServiceTemplateVolumesSecretItemsList)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTemplateVolumesSecretItemsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1962,7 +1962,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudRunV2ServiceTemplateVolumesSecretItemsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1970,7 +1970,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumesSecretItemsOutputReference",
-		reflect.TypeOf((*CloudRunV2ServiceTemplateVolumesSecretItemsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTemplateVolumesSecretItemsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2002,7 +2002,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 			_jsii_.MemberProperty{JsiiProperty: "versionInput", GoGetter: "VersionInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudRunV2ServiceTemplateVolumesSecretItemsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2010,7 +2010,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumesSecretOutputReference",
-		reflect.TypeOf((*CloudRunV2ServiceTemplateVolumesSecretOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTemplateVolumesSecretOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2043,7 +2043,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudRunV2ServiceTemplateVolumesSecretOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2051,15 +2051,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVpcAccess",
-		reflect.TypeOf((*CloudRunV2ServiceTemplateVpcAccess)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTemplateVpcAccess](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVpcAccessNetworkInterfaces",
-		reflect.TypeOf((*CloudRunV2ServiceTemplateVpcAccessNetworkInterfaces)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTemplateVpcAccessNetworkInterfaces](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVpcAccessNetworkInterfacesList",
-		reflect.TypeOf((*CloudRunV2ServiceTemplateVpcAccessNetworkInterfacesList)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTemplateVpcAccessNetworkInterfacesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2073,7 +2073,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudRunV2ServiceTemplateVpcAccessNetworkInterfacesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2081,7 +2081,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVpcAccessNetworkInterfacesOutputReference",
-		reflect.TypeOf((*CloudRunV2ServiceTemplateVpcAccessNetworkInterfacesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTemplateVpcAccessNetworkInterfacesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2114,7 +2114,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudRunV2ServiceTemplateVpcAccessNetworkInterfacesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2122,7 +2122,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVpcAccessOutputReference",
-		reflect.TypeOf((*CloudRunV2ServiceTemplateVpcAccessOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTemplateVpcAccessOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2156,7 +2156,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudRunV2ServiceTemplateVpcAccessOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2164,11 +2164,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTerminalCondition",
-		reflect.TypeOf((*CloudRunV2ServiceTerminalCondition)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTerminalCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTerminalConditionList",
-		reflect.TypeOf((*CloudRunV2ServiceTerminalConditionList)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTerminalConditionList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2181,7 +2181,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudRunV2ServiceTerminalConditionList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2189,7 +2189,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTerminalConditionOutputReference",
-		reflect.TypeOf((*CloudRunV2ServiceTerminalConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTerminalConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2221,7 +2221,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudRunV2ServiceTerminalConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2229,11 +2229,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTimeouts",
-		reflect.TypeOf((*CloudRunV2ServiceTimeouts)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTimeoutsOutputReference",
-		reflect.TypeOf((*CloudRunV2ServiceTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2266,7 +2266,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudRunV2ServiceTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2274,11 +2274,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTraffic",
-		reflect.TypeOf((*CloudRunV2ServiceTraffic)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTraffic](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTrafficList",
-		reflect.TypeOf((*CloudRunV2ServiceTrafficList)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTrafficList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2292,7 +2292,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudRunV2ServiceTrafficList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2300,7 +2300,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTrafficOutputReference",
-		reflect.TypeOf((*CloudRunV2ServiceTrafficOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTrafficOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2336,7 +2336,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudRunV2ServiceTrafficOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2344,11 +2344,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTrafficStatuses",
-		reflect.TypeOf((*CloudRunV2ServiceTrafficStatuses)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTrafficStatuses](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTrafficStatusesList",
-		reflect.TypeOf((*CloudRunV2ServiceTrafficStatusesList)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTrafficStatusesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2361,7 +2361,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudRunV2ServiceTrafficStatusesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2369,7 +2369,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTrafficStatusesOutputReference",
-		reflect.TypeOf((*CloudRunV2ServiceTrafficStatusesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2ServiceTrafficStatusesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2398,7 +2398,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "uri", GoGetter: "Uri"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudRunV2ServiceTrafficStatusesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

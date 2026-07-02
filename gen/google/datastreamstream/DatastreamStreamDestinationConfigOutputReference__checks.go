@@ -120,7 +120,7 @@ func (d *jsiiProxy_DatastreamStreamDestinationConfigOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_DatastreamStreamDestinationConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DatastreamStreamDestinationConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -228,4 +228,3 @@ func validateNewDatastreamStreamDestinationConfigOutputReferenceParameters(terra
 
 	return nil
 }
-

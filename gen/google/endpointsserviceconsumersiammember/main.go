@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.endpointsServiceConsumersIamMember.EndpointsServiceConsumersIamMember",
-		reflect.TypeOf((*EndpointsServiceConsumersIamMember)(nil)).Elem(),
+		reflect.TypeFor[EndpointsServiceConsumersIamMember](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -69,7 +69,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EndpointsServiceConsumersIamMember{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -77,11 +77,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.endpointsServiceConsumersIamMember.EndpointsServiceConsumersIamMemberCondition",
-		reflect.TypeOf((*EndpointsServiceConsumersIamMemberCondition)(nil)).Elem(),
+		reflect.TypeFor[EndpointsServiceConsumersIamMemberCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.endpointsServiceConsumersIamMember.EndpointsServiceConsumersIamMemberConditionOutputReference",
-		reflect.TypeOf((*EndpointsServiceConsumersIamMemberConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EndpointsServiceConsumersIamMemberConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -112,7 +112,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EndpointsServiceConsumersIamMemberConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -120,6 +120,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.endpointsServiceConsumersIamMember.EndpointsServiceConsumersIamMemberConfig",
-		reflect.TypeOf((*EndpointsServiceConsumersIamMemberConfig)(nil)).Elem(),
+		reflect.TypeFor[EndpointsServiceConsumersIamMemberConfig](),
 	)
 }

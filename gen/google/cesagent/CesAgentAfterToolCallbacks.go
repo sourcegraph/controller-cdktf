@@ -1,6 +1,5 @@
 package cesagent
 
-
 type CesAgentAfterToolCallbacks struct {
 	// The python code to execute for the callback.
 	//
@@ -13,6 +12,5 @@ type CesAgentAfterToolCallbacks struct {
 	// Whether the callback is disabled. Disabled callbacks are ignored by the agent.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_agent#disabled CesAgent#disabled}
-	Disabled interface{} `field:"optional" json:"disabled" yaml:"disabled"`
+	Disabled any `field:"optional" json:"disabled" yaml:"disabled"`
 }
-

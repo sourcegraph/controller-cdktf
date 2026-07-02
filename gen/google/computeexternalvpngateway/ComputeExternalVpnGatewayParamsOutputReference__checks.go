@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeExternalVpnGatewayParamsOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_ComputeExternalVpnGatewayParamsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeExternalVpnGatewayParamsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewComputeExternalVpnGatewayParamsOutputReferenceParameters(terrafo
 
 	return nil
 }
-

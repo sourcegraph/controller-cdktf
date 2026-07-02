@@ -12,9 +12,9 @@ type NetworkSecurityAuthzPolicyHttpRulesToNotOperationsOutputReference interface
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,14 +30,14 @@ type NetworkSecurityAuthzPolicyHttpRulesToNotOperationsOutputReference interface
 	HeaderSet() NetworkSecurityAuthzPolicyHttpRulesToNotOperationsHeaderSetOutputReference
 	HeaderSetInput() *NetworkSecurityAuthzPolicyHttpRulesToNotOperationsHeaderSet
 	Hosts() NetworkSecurityAuthzPolicyHttpRulesToNotOperationsHostsList
-	HostsInput() interface{}
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	HostsInput() any
+	InternalValue() any
+	SetInternalValue(val any)
 	Methods() *[]*string
 	SetMethods(val *[]*string)
 	MethodsInput() *[]*string
 	Paths() NetworkSecurityAuthzPolicyHttpRulesToNotOperationsPathsList
-	PathsInput() interface{}
+	PathsInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -49,7 +49,7 @@ type NetworkSecurityAuthzPolicyHttpRulesToNotOperationsOutputReference interface
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,15 +71,15 @@ type NetworkSecurityAuthzPolicyHttpRulesToNotOperationsOutputReference interface
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutHeaderSet(value *NetworkSecurityAuthzPolicyHttpRulesToNotOperationsHeaderSet)
-	PutHosts(value interface{})
-	PutPaths(value interface{})
+	PutHosts(value any)
+	PutPaths(value any)
 	ResetHeaderSet()
 	ResetHosts()
 	ResetMethods()
 	ResetPaths()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,8 +92,8 @@ type jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToNotOperationsOutputReference
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToNotOperationsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToNotOperationsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -162,8 +162,8 @@ func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToNotOperationsOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToNotOperationsOutputReference) HostsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToNotOperationsOutputReference) HostsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"hostsInput",
@@ -172,8 +172,8 @@ func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToNotOperationsOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToNotOperationsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToNotOperationsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -212,8 +212,8 @@ func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToNotOperationsOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToNotOperationsOutputReference) PathsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToNotOperationsOutputReference) PathsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"pathsInput",
@@ -242,7 +242,6 @@ func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToNotOperationsOutputRefer
 	return returns
 }
 
-
 func NewNetworkSecurityAuthzPolicyHttpRulesToNotOperationsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) NetworkSecurityAuthzPolicyHttpRulesToNotOperationsOutputReference {
 	_init_.Initialize()
 
@@ -253,7 +252,7 @@ func NewNetworkSecurityAuthzPolicyHttpRulesToNotOperationsOutputReference(terraf
 
 	_jsii_.Create(
 		"@cdktf/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyHttpRulesToNotOperationsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -265,12 +264,12 @@ func NewNetworkSecurityAuthzPolicyHttpRulesToNotOperationsOutputReference_Overri
 
 	_jsii_.Create(
 		"@cdktf/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyHttpRulesToNotOperationsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToNotOperationsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToNotOperationsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,7 +280,7 @@ func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToNotOperationsOutputRefer
 	)
 }
 
-func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToNotOperationsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToNotOperationsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,7 +291,7 @@ func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToNotOperationsOutputRefer
 	)
 }
 
-func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToNotOperationsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToNotOperationsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToNotOperationsOutputRefer
 	)
 }
 
-func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToNotOperationsOutputReference)SetMethods(val *[]*string) {
+func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToNotOperationsOutputReference) SetMethods(val *[]*string) {
 	if err := j.validateSetMethodsParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToNotOperationsOutputRefer
 	)
 }
 
-func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToNotOperationsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToNotOperationsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToNotOperationsOutputRefer
 	)
 }
 
-func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToNotOperationsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToNotOperationsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,16 +348,16 @@ func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToNotOperationsOutputRefer
 	return returns
 }
 
-func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToNotOperationsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToNotOperationsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -374,7 +373,7 @@ func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToNotOperationsOutputRefer
 	_jsii_.Invoke(
 		n,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -390,7 +389,7 @@ func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToNotOperationsOutputRefer
 	_jsii_.Invoke(
 		n,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -406,7 +405,7 @@ func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToNotOperationsOutputRefer
 	_jsii_.Invoke(
 		n,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -422,7 +421,7 @@ func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToNotOperationsOutputRefer
 	_jsii_.Invoke(
 		n,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -438,7 +437,7 @@ func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToNotOperationsOutputRefer
 	_jsii_.Invoke(
 		n,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -454,7 +453,7 @@ func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToNotOperationsOutputRefer
 	_jsii_.Invoke(
 		n,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -470,7 +469,7 @@ func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToNotOperationsOutputRefer
 	_jsii_.Invoke(
 		n,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -486,7 +485,7 @@ func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToNotOperationsOutputRefer
 	_jsii_.Invoke(
 		n,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -515,7 +514,7 @@ func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToNotOperationsOutputRefer
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -529,29 +528,29 @@ func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToNotOperationsOutputRefer
 	_jsii_.InvokeVoid(
 		n,
 		"putHeaderSet",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToNotOperationsOutputReference) PutHosts(value interface{}) {
+func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToNotOperationsOutputReference) PutHosts(value any) {
 	if err := n.validatePutHostsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"putHosts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToNotOperationsOutputReference) PutPaths(value interface{}) {
+func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToNotOperationsOutputReference) PutPaths(value any) {
 	if err := n.validatePutPathsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"putPaths",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -587,16 +586,16 @@ func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToNotOperationsOutputRefer
 	)
 }
 
-func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToNotOperationsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToNotOperationsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := n.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		n,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -615,4 +614,3 @@ func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToNotOperationsOutputRefer
 
 	return returns
 }
-

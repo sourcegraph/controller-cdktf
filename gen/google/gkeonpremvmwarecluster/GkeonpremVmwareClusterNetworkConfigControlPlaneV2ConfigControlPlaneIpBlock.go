@@ -1,6 +1,5 @@
 package gkeonpremvmwarecluster
 
-
 type GkeonpremVmwareClusterNetworkConfigControlPlaneV2ConfigControlPlaneIpBlock struct {
 	// The network gateway used by the VMware User Cluster.
 	//
@@ -9,10 +8,9 @@ type GkeonpremVmwareClusterNetworkConfigControlPlaneV2ConfigControlPlaneIpBlock 
 	// ips block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gkeonprem_vmware_cluster#ips GkeonpremVmwareCluster#ips}
-	Ips interface{} `field:"optional" json:"ips" yaml:"ips"`
+	Ips any `field:"optional" json:"ips" yaml:"ips"`
 	// The netmask used by the VMware User Cluster.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gkeonprem_vmware_cluster#netmask GkeonpremVmwareCluster#netmask}
 	Netmask *string `field:"optional" json:"netmask" yaml:"netmask"`
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.edgenetworkInterconnectAttachment.EdgenetworkInterconnectAttachment",
-		reflect.TypeOf((*EdgenetworkInterconnectAttachment)(nil)).Elem(),
+		reflect.TypeFor[EdgenetworkInterconnectAttachment](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -89,7 +89,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zone", GoGetter: "Zone"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneInput", GoGetter: "ZoneInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EdgenetworkInterconnectAttachment{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -97,15 +97,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.edgenetworkInterconnectAttachment.EdgenetworkInterconnectAttachmentConfig",
-		reflect.TypeOf((*EdgenetworkInterconnectAttachmentConfig)(nil)).Elem(),
+		reflect.TypeFor[EdgenetworkInterconnectAttachmentConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.edgenetworkInterconnectAttachment.EdgenetworkInterconnectAttachmentTimeouts",
-		reflect.TypeOf((*EdgenetworkInterconnectAttachmentTimeouts)(nil)).Elem(),
+		reflect.TypeFor[EdgenetworkInterconnectAttachmentTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.edgenetworkInterconnectAttachment.EdgenetworkInterconnectAttachmentTimeoutsOutputReference",
-		reflect.TypeOf((*EdgenetworkInterconnectAttachmentTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EdgenetworkInterconnectAttachmentTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -138,7 +138,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EdgenetworkInterconnectAttachmentTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

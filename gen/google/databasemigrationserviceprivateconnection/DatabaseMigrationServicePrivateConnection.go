@@ -15,18 +15,18 @@ type DatabaseMigrationServicePrivateConnection interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
-	CreateWithoutValidation() interface{}
-	SetCreateWithoutValidation(val interface{})
-	CreateWithoutValidationInput() interface{}
+	SetCount(val any)
+	CreateWithoutValidation() any
+	SetCreateWithoutValidation(val any)
+	CreateWithoutValidationInput() any
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -71,30 +71,30 @@ type DatabaseMigrationServicePrivateConnection interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	State() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() DatabaseMigrationServicePrivateConnectionTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	VpcPeeringConfig() DatabaseMigrationServicePrivateConnectionVpcPeeringConfigOutputReference
 	VpcPeeringConfigInput() *DatabaseMigrationServicePrivateConnectionVpcPeeringConfig
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -112,7 +112,7 @@ type DatabaseMigrationServicePrivateConnection interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -124,7 +124,7 @@ type DatabaseMigrationServicePrivateConnection interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -142,17 +142,17 @@ type DatabaseMigrationServicePrivateConnection interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DatabaseMigrationServicePrivateConnection
@@ -170,8 +170,8 @@ func (j *jsiiProxy_DatabaseMigrationServicePrivateConnection) CdktfStack() cdktf
 	return returns
 }
 
-func (j *jsiiProxy_DatabaseMigrationServicePrivateConnection) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DatabaseMigrationServicePrivateConnection) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -180,8 +180,8 @@ func (j *jsiiProxy_DatabaseMigrationServicePrivateConnection) Connection() inter
 	return returns
 }
 
-func (j *jsiiProxy_DatabaseMigrationServicePrivateConnection) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DatabaseMigrationServicePrivateConnection) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -190,8 +190,8 @@ func (j *jsiiProxy_DatabaseMigrationServicePrivateConnection) ConstructNodeMetad
 	return returns
 }
 
-func (j *jsiiProxy_DatabaseMigrationServicePrivateConnection) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DatabaseMigrationServicePrivateConnection) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -200,8 +200,8 @@ func (j *jsiiProxy_DatabaseMigrationServicePrivateConnection) Count() interface{
 	return returns
 }
 
-func (j *jsiiProxy_DatabaseMigrationServicePrivateConnection) CreateWithoutValidation() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DatabaseMigrationServicePrivateConnection) CreateWithoutValidation() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"createWithoutValidation",
@@ -210,8 +210,8 @@ func (j *jsiiProxy_DatabaseMigrationServicePrivateConnection) CreateWithoutValid
 	return returns
 }
 
-func (j *jsiiProxy_DatabaseMigrationServicePrivateConnection) CreateWithoutValidationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DatabaseMigrationServicePrivateConnection) CreateWithoutValidationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"createWithoutValidationInput",
@@ -440,8 +440,8 @@ func (j *jsiiProxy_DatabaseMigrationServicePrivateConnection) Provider() cdktf.T
 	return returns
 }
 
-func (j *jsiiProxy_DatabaseMigrationServicePrivateConnection) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_DatabaseMigrationServicePrivateConnection) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -450,8 +450,8 @@ func (j *jsiiProxy_DatabaseMigrationServicePrivateConnection) Provisioners() *[]
 	return returns
 }
 
-func (j *jsiiProxy_DatabaseMigrationServicePrivateConnection) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DatabaseMigrationServicePrivateConnection) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -490,8 +490,8 @@ func (j *jsiiProxy_DatabaseMigrationServicePrivateConnection) TerraformLabels() 
 	return returns
 }
 
-func (j *jsiiProxy_DatabaseMigrationServicePrivateConnection) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DatabaseMigrationServicePrivateConnection) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -520,8 +520,8 @@ func (j *jsiiProxy_DatabaseMigrationServicePrivateConnection) Timeouts() Databas
 	return returns
 }
 
-func (j *jsiiProxy_DatabaseMigrationServicePrivateConnection) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DatabaseMigrationServicePrivateConnection) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -550,7 +550,6 @@ func (j *jsiiProxy_DatabaseMigrationServicePrivateConnection) VpcPeeringConfigIn
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/database_migration_service_private_connection google_database_migration_service_private_connection} Resource.
 func NewDatabaseMigrationServicePrivateConnection(scope constructs.Construct, id *string, config *DatabaseMigrationServicePrivateConnectionConfig) DatabaseMigrationServicePrivateConnection {
 	_init_.Initialize()
@@ -562,7 +561,7 @@ func NewDatabaseMigrationServicePrivateConnection(scope constructs.Construct, id
 
 	_jsii_.Create(
 		"@cdktf/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnection",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -575,12 +574,12 @@ func NewDatabaseMigrationServicePrivateConnection_Override(d DatabaseMigrationSe
 
 	_jsii_.Create(
 		"@cdktf/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnection",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DatabaseMigrationServicePrivateConnection)SetConnection(val interface{}) {
+func (j *jsiiProxy_DatabaseMigrationServicePrivateConnection) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -591,7 +590,7 @@ func (j *jsiiProxy_DatabaseMigrationServicePrivateConnection)SetConnection(val i
 	)
 }
 
-func (j *jsiiProxy_DatabaseMigrationServicePrivateConnection)SetCount(val interface{}) {
+func (j *jsiiProxy_DatabaseMigrationServicePrivateConnection) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -602,7 +601,7 @@ func (j *jsiiProxy_DatabaseMigrationServicePrivateConnection)SetCount(val interf
 	)
 }
 
-func (j *jsiiProxy_DatabaseMigrationServicePrivateConnection)SetCreateWithoutValidation(val interface{}) {
+func (j *jsiiProxy_DatabaseMigrationServicePrivateConnection) SetCreateWithoutValidation(val any) {
 	if err := j.validateSetCreateWithoutValidationParameters(val); err != nil {
 		panic(err)
 	}
@@ -613,7 +612,7 @@ func (j *jsiiProxy_DatabaseMigrationServicePrivateConnection)SetCreateWithoutVal
 	)
 }
 
-func (j *jsiiProxy_DatabaseMigrationServicePrivateConnection)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DatabaseMigrationServicePrivateConnection) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -621,7 +620,7 @@ func (j *jsiiProxy_DatabaseMigrationServicePrivateConnection)SetDependsOn(val *[
 	)
 }
 
-func (j *jsiiProxy_DatabaseMigrationServicePrivateConnection)SetDisplayName(val *string) {
+func (j *jsiiProxy_DatabaseMigrationServicePrivateConnection) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -632,7 +631,7 @@ func (j *jsiiProxy_DatabaseMigrationServicePrivateConnection)SetDisplayName(val 
 	)
 }
 
-func (j *jsiiProxy_DatabaseMigrationServicePrivateConnection)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DatabaseMigrationServicePrivateConnection) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -640,7 +639,7 @@ func (j *jsiiProxy_DatabaseMigrationServicePrivateConnection)SetForEach(val cdkt
 	)
 }
 
-func (j *jsiiProxy_DatabaseMigrationServicePrivateConnection)SetId(val *string) {
+func (j *jsiiProxy_DatabaseMigrationServicePrivateConnection) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -651,7 +650,7 @@ func (j *jsiiProxy_DatabaseMigrationServicePrivateConnection)SetId(val *string) 
 	)
 }
 
-func (j *jsiiProxy_DatabaseMigrationServicePrivateConnection)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_DatabaseMigrationServicePrivateConnection) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -662,7 +661,7 @@ func (j *jsiiProxy_DatabaseMigrationServicePrivateConnection)SetLabels(val *map[
 	)
 }
 
-func (j *jsiiProxy_DatabaseMigrationServicePrivateConnection)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DatabaseMigrationServicePrivateConnection) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -673,7 +672,7 @@ func (j *jsiiProxy_DatabaseMigrationServicePrivateConnection)SetLifecycle(val *c
 	)
 }
 
-func (j *jsiiProxy_DatabaseMigrationServicePrivateConnection)SetLocation(val *string) {
+func (j *jsiiProxy_DatabaseMigrationServicePrivateConnection) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -684,7 +683,7 @@ func (j *jsiiProxy_DatabaseMigrationServicePrivateConnection)SetLocation(val *st
 	)
 }
 
-func (j *jsiiProxy_DatabaseMigrationServicePrivateConnection)SetPrivateConnectionId(val *string) {
+func (j *jsiiProxy_DatabaseMigrationServicePrivateConnection) SetPrivateConnectionId(val *string) {
 	if err := j.validateSetPrivateConnectionIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -695,7 +694,7 @@ func (j *jsiiProxy_DatabaseMigrationServicePrivateConnection)SetPrivateConnectio
 	)
 }
 
-func (j *jsiiProxy_DatabaseMigrationServicePrivateConnection)SetProject(val *string) {
+func (j *jsiiProxy_DatabaseMigrationServicePrivateConnection) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -706,7 +705,7 @@ func (j *jsiiProxy_DatabaseMigrationServicePrivateConnection)SetProject(val *str
 	)
 }
 
-func (j *jsiiProxy_DatabaseMigrationServicePrivateConnection)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DatabaseMigrationServicePrivateConnection) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -714,7 +713,7 @@ func (j *jsiiProxy_DatabaseMigrationServicePrivateConnection)SetProvider(val cdk
 	)
 }
 
-func (j *jsiiProxy_DatabaseMigrationServicePrivateConnection)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_DatabaseMigrationServicePrivateConnection) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -737,7 +736,7 @@ func DatabaseMigrationServicePrivateConnection_GenerateConfigForImport(scope con
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnection",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -761,7 +760,7 @@ func DatabaseMigrationServicePrivateConnection_GenerateConfigForImport(scope con
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DatabaseMigrationServicePrivateConnection_IsConstruct(x interface{}) *bool {
+func DatabaseMigrationServicePrivateConnection_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDatabaseMigrationServicePrivateConnection_IsConstructParameters(x); err != nil {
@@ -772,7 +771,7 @@ func DatabaseMigrationServicePrivateConnection_IsConstruct(x interface{}) *bool 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnection",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -780,7 +779,7 @@ func DatabaseMigrationServicePrivateConnection_IsConstruct(x interface{}) *bool 
 }
 
 // Experimental.
-func DatabaseMigrationServicePrivateConnection_IsTerraformElement(x interface{}) *bool {
+func DatabaseMigrationServicePrivateConnection_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDatabaseMigrationServicePrivateConnection_IsTerraformElementParameters(x); err != nil {
@@ -791,7 +790,7 @@ func DatabaseMigrationServicePrivateConnection_IsTerraformElement(x interface{})
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnection",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -799,7 +798,7 @@ func DatabaseMigrationServicePrivateConnection_IsTerraformElement(x interface{})
 }
 
 // Experimental.
-func DatabaseMigrationServicePrivateConnection_IsTerraformResource(x interface{}) *bool {
+func DatabaseMigrationServicePrivateConnection_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDatabaseMigrationServicePrivateConnection_IsTerraformResourceParameters(x); err != nil {
@@ -810,7 +809,7 @@ func DatabaseMigrationServicePrivateConnection_IsTerraformResource(x interface{}
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnection",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -835,31 +834,31 @@ func (d *jsiiProxy_DatabaseMigrationServicePrivateConnection) AddMoveTarget(move
 	_jsii_.InvokeVoid(
 		d,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (d *jsiiProxy_DatabaseMigrationServicePrivateConnection) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DatabaseMigrationServicePrivateConnection) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DatabaseMigrationServicePrivateConnection) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DatabaseMigrationServicePrivateConnection) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -875,7 +874,7 @@ func (d *jsiiProxy_DatabaseMigrationServicePrivateConnection) GetBooleanAttribut
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -891,7 +890,7 @@ func (d *jsiiProxy_DatabaseMigrationServicePrivateConnection) GetBooleanMapAttri
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -907,7 +906,7 @@ func (d *jsiiProxy_DatabaseMigrationServicePrivateConnection) GetListAttribute(t
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -923,7 +922,7 @@ func (d *jsiiProxy_DatabaseMigrationServicePrivateConnection) GetNumberAttribute
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -939,7 +938,7 @@ func (d *jsiiProxy_DatabaseMigrationServicePrivateConnection) GetNumberListAttri
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -955,7 +954,7 @@ func (d *jsiiProxy_DatabaseMigrationServicePrivateConnection) GetNumberMapAttrib
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -971,7 +970,7 @@ func (d *jsiiProxy_DatabaseMigrationServicePrivateConnection) GetStringAttribute
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -987,15 +986,15 @@ func (d *jsiiProxy_DatabaseMigrationServicePrivateConnection) GetStringMapAttrib
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DatabaseMigrationServicePrivateConnection) HasResourceMove() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DatabaseMigrationServicePrivateConnection) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1014,7 +1013,7 @@ func (d *jsiiProxy_DatabaseMigrationServicePrivateConnection) ImportFrom(id *str
 	_jsii_.InvokeVoid(
 		d,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1027,7 +1026,7 @@ func (d *jsiiProxy_DatabaseMigrationServicePrivateConnection) InterpolationForAt
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1041,18 +1040,18 @@ func (d *jsiiProxy_DatabaseMigrationServicePrivateConnection) MoveFromId(id *str
 	_jsii_.InvokeVoid(
 		d,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (d *jsiiProxy_DatabaseMigrationServicePrivateConnection) MoveTo(moveTarget *string, index interface{}) {
+func (d *jsiiProxy_DatabaseMigrationServicePrivateConnection) MoveTo(moveTarget *string, index any) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1063,7 +1062,7 @@ func (d *jsiiProxy_DatabaseMigrationServicePrivateConnection) MoveToId(id *strin
 	_jsii_.InvokeVoid(
 		d,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1074,7 +1073,7 @@ func (d *jsiiProxy_DatabaseMigrationServicePrivateConnection) OverrideLogicalId(
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1085,7 +1084,7 @@ func (d *jsiiProxy_DatabaseMigrationServicePrivateConnection) PutTimeouts(value 
 	_jsii_.InvokeVoid(
 		d,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1096,7 +1095,7 @@ func (d *jsiiProxy_DatabaseMigrationServicePrivateConnection) PutVpcPeeringConfi
 	_jsii_.InvokeVoid(
 		d,
 		"putVpcPeeringConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1156,8 +1155,8 @@ func (d *jsiiProxy_DatabaseMigrationServicePrivateConnection) ResetTimeouts() {
 	)
 }
 
-func (d *jsiiProxy_DatabaseMigrationServicePrivateConnection) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DatabaseMigrationServicePrivateConnection) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1169,8 +1168,8 @@ func (d *jsiiProxy_DatabaseMigrationServicePrivateConnection) SynthesizeAttribut
 	return returns
 }
 
-func (d *jsiiProxy_DatabaseMigrationServicePrivateConnection) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DatabaseMigrationServicePrivateConnection) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1182,8 +1181,8 @@ func (d *jsiiProxy_DatabaseMigrationServicePrivateConnection) SynthesizeHclAttri
 	return returns
 }
 
-func (d *jsiiProxy_DatabaseMigrationServicePrivateConnection) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DatabaseMigrationServicePrivateConnection) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1195,8 +1194,8 @@ func (d *jsiiProxy_DatabaseMigrationServicePrivateConnection) ToHclTerraform() i
 	return returns
 }
 
-func (d *jsiiProxy_DatabaseMigrationServicePrivateConnection) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DatabaseMigrationServicePrivateConnection) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1221,8 +1220,8 @@ func (d *jsiiProxy_DatabaseMigrationServicePrivateConnection) ToString() *string
 	return returns
 }
 
-func (d *jsiiProxy_DatabaseMigrationServicePrivateConnection) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DatabaseMigrationServicePrivateConnection) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1233,4 +1232,3 @@ func (d *jsiiProxy_DatabaseMigrationServicePrivateConnection) ToTerraform() inte
 
 	return returns
 }
-

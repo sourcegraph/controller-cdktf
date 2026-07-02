@@ -98,7 +98,7 @@ func (a *jsiiProxy_AppEngineServiceNetworkSettingsNetworkSettingsOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_AppEngineServiceNetworkSettingsNetworkSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppEngineServiceNetworkSettingsNetworkSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewAppEngineServiceNetworkSettingsNetworkSettingsOutputReferencePar
 
 	return nil
 }
-

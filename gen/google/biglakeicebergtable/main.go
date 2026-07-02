@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.biglakeIcebergTable.BiglakeIcebergTable",
-		reflect.TypeOf((*BiglakeIcebergTable)(nil)).Elem(),
+		reflect.TypeFor[BiglakeIcebergTable](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -82,7 +82,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BiglakeIcebergTable{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -90,19 +90,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.biglakeIcebergTable.BiglakeIcebergTableConfig",
-		reflect.TypeOf((*BiglakeIcebergTableConfig)(nil)).Elem(),
+		reflect.TypeFor[BiglakeIcebergTableConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.biglakeIcebergTable.BiglakeIcebergTablePartitionSpec",
-		reflect.TypeOf((*BiglakeIcebergTablePartitionSpec)(nil)).Elem(),
+		reflect.TypeFor[BiglakeIcebergTablePartitionSpec](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.biglakeIcebergTable.BiglakeIcebergTablePartitionSpecFields",
-		reflect.TypeOf((*BiglakeIcebergTablePartitionSpecFields)(nil)).Elem(),
+		reflect.TypeFor[BiglakeIcebergTablePartitionSpecFields](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.biglakeIcebergTable.BiglakeIcebergTablePartitionSpecFieldsList",
-		reflect.TypeOf((*BiglakeIcebergTablePartitionSpecFieldsList)(nil)).Elem(),
+		reflect.TypeFor[BiglakeIcebergTablePartitionSpecFieldsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -116,7 +116,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BiglakeIcebergTablePartitionSpecFieldsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -124,7 +124,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.biglakeIcebergTable.BiglakeIcebergTablePartitionSpecFieldsOutputReference",
-		reflect.TypeOf((*BiglakeIcebergTablePartitionSpecFieldsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BiglakeIcebergTablePartitionSpecFieldsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -155,7 +155,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "transform", GoGetter: "Transform"},
 			_jsii_.MemberProperty{JsiiProperty: "transformInput", GoGetter: "TransformInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BiglakeIcebergTablePartitionSpecFieldsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -163,7 +163,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.biglakeIcebergTable.BiglakeIcebergTablePartitionSpecOutputReference",
-		reflect.TypeOf((*BiglakeIcebergTablePartitionSpecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BiglakeIcebergTablePartitionSpecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -191,7 +191,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BiglakeIcebergTablePartitionSpecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -199,15 +199,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.biglakeIcebergTable.BiglakeIcebergTableSchema",
-		reflect.TypeOf((*BiglakeIcebergTableSchema)(nil)).Elem(),
+		reflect.TypeFor[BiglakeIcebergTableSchema](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.biglakeIcebergTable.BiglakeIcebergTableSchemaFields",
-		reflect.TypeOf((*BiglakeIcebergTableSchemaFields)(nil)).Elem(),
+		reflect.TypeFor[BiglakeIcebergTableSchemaFields](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.biglakeIcebergTable.BiglakeIcebergTableSchemaFieldsList",
-		reflect.TypeOf((*BiglakeIcebergTableSchemaFieldsList)(nil)).Elem(),
+		reflect.TypeFor[BiglakeIcebergTableSchemaFieldsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -221,7 +221,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BiglakeIcebergTableSchemaFieldsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -229,7 +229,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.biglakeIcebergTable.BiglakeIcebergTableSchemaFieldsOutputReference",
-		reflect.TypeOf((*BiglakeIcebergTableSchemaFieldsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BiglakeIcebergTableSchemaFieldsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -264,7 +264,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BiglakeIcebergTableSchemaFieldsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -272,7 +272,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.biglakeIcebergTable.BiglakeIcebergTableSchemaOutputReference",
-		reflect.TypeOf((*BiglakeIcebergTableSchemaOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BiglakeIcebergTableSchemaOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -306,7 +306,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BiglakeIcebergTableSchemaOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -314,11 +314,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.biglakeIcebergTable.BiglakeIcebergTableTimeouts",
-		reflect.TypeOf((*BiglakeIcebergTableTimeouts)(nil)).Elem(),
+		reflect.TypeFor[BiglakeIcebergTableTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.biglakeIcebergTable.BiglakeIcebergTableTimeoutsOutputReference",
-		reflect.TypeOf((*BiglakeIcebergTableTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BiglakeIcebergTableTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -351,7 +351,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BiglakeIcebergTableTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

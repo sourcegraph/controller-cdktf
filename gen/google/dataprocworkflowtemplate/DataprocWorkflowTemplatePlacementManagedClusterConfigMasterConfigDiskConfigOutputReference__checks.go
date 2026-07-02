@@ -114,7 +114,7 @@ func (j *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigMasterCo
 	return nil
 }
 
-func (j *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigDiskConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigDiskConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewDataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfi
 
 	return nil
 }
-

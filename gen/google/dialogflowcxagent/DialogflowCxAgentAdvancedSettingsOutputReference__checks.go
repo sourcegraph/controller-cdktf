@@ -142,7 +142,7 @@ func (d *jsiiProxy_DialogflowCxAgentAdvancedSettingsOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxAgentAdvancedSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxAgentAdvancedSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -242,4 +242,3 @@ func validateNewDialogflowCxAgentAdvancedSettingsOutputReferenceParameters(terra
 
 	return nil
 }
-

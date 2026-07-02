@@ -120,7 +120,7 @@ func (r *jsiiProxy_RedisClusterPersistenceConfigOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_RedisClusterPersistenceConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_RedisClusterPersistenceConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -228,4 +228,3 @@ func validateNewRedisClusterPersistenceConfigOutputReferenceParameters(terraform
 
 	return nil
 }
-

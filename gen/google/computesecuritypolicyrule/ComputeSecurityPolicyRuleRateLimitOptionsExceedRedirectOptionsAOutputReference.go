@@ -12,9 +12,9 @@ type ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptionsAOutputRefere
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -46,7 +46,7 @@ type ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptionsAOutputRefere
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptionsAOutputRefere
 	ResetType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptionsAOu
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptionsAOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptionsAOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOption
 	return returns
 }
 
-
 func NewComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptionsAOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptionsAOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptionsAOutputRef
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptionsAOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptionsAOutputRef
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptionsAOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptionsAOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptionsAOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOption
 	)
 }
 
-func (j *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptionsAOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptionsAOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOption
 	)
 }
 
-func (j *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptionsAOutputReference)SetInternalValue(val *ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptionsA) {
+func (j *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptionsAOutputReference) SetInternalValue(val *ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptionsA) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOption
 	)
 }
 
-func (j *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptionsAOutputReference)SetTarget(val *string) {
+func (j *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptionsAOutputReference) SetTarget(val *string) {
 	if err := j.validateSetTargetParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOption
 	)
 }
 
-func (j *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptionsAOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptionsAOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOption
 	)
 }
 
-func (j *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptionsAOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptionsAOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOption
 	)
 }
 
-func (j *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptionsAOutputReference)SetType(val *string) {
+func (j *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptionsAOutputReference) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,16 +311,16 @@ func (c *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOption
 	return returns
 }
 
-func (c *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptionsAOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptionsAOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -337,7 +336,7 @@ func (c *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOption
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -353,7 +352,7 @@ func (c *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOption
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (c *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOption
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (c *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOption
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (c *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOption
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (c *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOption
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (c *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOption
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (c *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOption
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func (c *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOption
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -501,16 +500,16 @@ func (c *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOption
 	)
 }
 
-func (c *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptionsAOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptionsAOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (c *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOption
 
 	return returns
 }
-

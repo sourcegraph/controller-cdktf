@@ -98,7 +98,7 @@ func (d *jsiiProxy_DialogflowCxIntentTrainingPhrasesPartsOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxIntentTrainingPhrasesPartsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxIntentTrainingPhrasesPartsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DialogflowCxIntentTrainingPhrasesPartsOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxIntentTrainingPhrasesPartsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxIntentTrainingPhrasesPartsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewDialogflowCxIntentTrainingPhrasesPartsOutputReferenceParameters(
 
 	return nil
 }
-

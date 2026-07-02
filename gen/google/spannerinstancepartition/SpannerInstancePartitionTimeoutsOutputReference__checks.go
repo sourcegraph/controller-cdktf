@@ -98,7 +98,7 @@ func (s *jsiiProxy_SpannerInstancePartitionTimeoutsOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_SpannerInstancePartitionTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SpannerInstancePartitionTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_SpannerInstancePartitionTimeoutsOutputReference) validateSetD
 	return nil
 }
 
-func (j *jsiiProxy_SpannerInstancePartitionTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SpannerInstancePartitionTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewSpannerInstancePartitionTimeoutsOutputReferenceParameters(terraf
 
 	return nil
 }
-

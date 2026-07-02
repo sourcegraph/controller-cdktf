@@ -106,7 +106,7 @@ func (j *jsiiProxy_MonitoringSloRequestBasedSliGoodTotalRatioOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_MonitoringSloRequestBasedSliGoodTotalRatioOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MonitoringSloRequestBasedSliGoodTotalRatioOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewMonitoringSloRequestBasedSliGoodTotalRatioOutputReferenceParamet
 
 	return nil
 }
-

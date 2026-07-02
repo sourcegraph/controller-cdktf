@@ -19,7 +19,7 @@ func (h *jsiiProxy_HealthcareConsentStoreIamBinding) validateAddMoveTargetParame
 	return nil
 }
 
-func (h *jsiiProxy_HealthcareConsentStoreIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
+func (h *jsiiProxy_HealthcareConsentStoreIamBinding) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (h *jsiiProxy_HealthcareConsentStoreIamBinding) validateMoveFromIdParameter
 	return nil
 }
 
-func (h *jsiiProxy_HealthcareConsentStoreIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (h *jsiiProxy_HealthcareConsentStoreIamBinding) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateHealthcareConsentStoreIamBinding_GenerateConfigForImportParameters(
 	return nil
 }
 
-func validateHealthcareConsentStoreIamBinding_IsConstructParameters(x interface{}) error {
+func validateHealthcareConsentStoreIamBinding_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateHealthcareConsentStoreIamBinding_IsConstructParameters(x interface{
 	return nil
 }
 
-func validateHealthcareConsentStoreIamBinding_IsTerraformElementParameters(x interface{}) error {
+func validateHealthcareConsentStoreIamBinding_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateHealthcareConsentStoreIamBinding_IsTerraformElementParameters(x int
 	return nil
 }
 
-func validateHealthcareConsentStoreIamBinding_IsTerraformResourceParameters(x interface{}) error {
+func validateHealthcareConsentStoreIamBinding_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateHealthcareConsentStoreIamBinding_IsTerraformResourceParameters(x in
 	return nil
 }
 
-func (j *jsiiProxy_HealthcareConsentStoreIamBinding) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_HealthcareConsentStoreIamBinding) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_HealthcareConsentStoreIamBinding) validateSetConsentStoreIdPa
 	return nil
 }
 
-func (j *jsiiProxy_HealthcareConsentStoreIamBinding) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_HealthcareConsentStoreIamBinding) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -385,7 +385,7 @@ func (j *jsiiProxy_HealthcareConsentStoreIamBinding) validateSetMembersParameter
 	return nil
 }
 
-func (j *jsiiProxy_HealthcareConsentStoreIamBinding) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_HealthcareConsentStoreIamBinding) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -457,4 +457,3 @@ func validateNewHealthcareConsentStoreIamBindingParameters(scope constructs.Cons
 
 	return nil
 }
-

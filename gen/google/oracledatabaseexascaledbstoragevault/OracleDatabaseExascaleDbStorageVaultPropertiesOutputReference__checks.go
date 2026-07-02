@@ -128,7 +128,7 @@ func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVaultPropertiesOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVaultPropertiesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVaultPropertiesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -228,4 +228,3 @@ func validateNewOracleDatabaseExascaleDbStorageVaultPropertiesOutputReferencePar
 
 	return nil
 }
-

@@ -34,7 +34,7 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayApplicationUpstreamsList) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_BeyondcorpSecurityGatewayApplicationUpstreamsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_BeyondcorpSecurityGatewayApplicationUpstreamsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewBeyondcorpSecurityGatewayApplicationUpstreamsListParameters(terr
 
 	return nil
 }
-

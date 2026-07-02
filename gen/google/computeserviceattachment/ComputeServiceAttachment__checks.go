@@ -19,7 +19,7 @@ func (c *jsiiProxy_ComputeServiceAttachment) validateAddMoveTargetParameters(mov
 	return nil
 }
 
-func (c *jsiiProxy_ComputeServiceAttachment) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_ComputeServiceAttachment) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_ComputeServiceAttachment) validateMoveFromIdParameters(id *st
 	return nil
 }
 
-func (c *jsiiProxy_ComputeServiceAttachment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_ComputeServiceAttachment) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (c *jsiiProxy_ComputeServiceAttachment) validateOverrideLogicalIdParameters
 	return nil
 }
 
-func (c *jsiiProxy_ComputeServiceAttachment) validatePutConsumerAcceptListsParameters(value interface{}) error {
+func (c *jsiiProxy_ComputeServiceAttachment) validatePutConsumerAcceptListsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -262,7 +262,7 @@ func validateComputeServiceAttachment_GenerateConfigForImportParameters(scope co
 	return nil
 }
 
-func validateComputeServiceAttachment_IsConstructParameters(x interface{}) error {
+func validateComputeServiceAttachment_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -270,7 +270,7 @@ func validateComputeServiceAttachment_IsConstructParameters(x interface{}) error
 	return nil
 }
 
-func validateComputeServiceAttachment_IsTerraformElementParameters(x interface{}) error {
+func validateComputeServiceAttachment_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -278,7 +278,7 @@ func validateComputeServiceAttachment_IsTerraformElementParameters(x interface{}
 	return nil
 }
 
-func validateComputeServiceAttachment_IsTerraformResourceParameters(x interface{}) error {
+func validateComputeServiceAttachment_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -286,7 +286,7 @@ func validateComputeServiceAttachment_IsTerraformResourceParameters(x interface{
 	return nil
 }
 
-func (j *jsiiProxy_ComputeServiceAttachment) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeServiceAttachment) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -335,7 +335,7 @@ func (j *jsiiProxy_ComputeServiceAttachment) validateSetConsumerRejectListsParam
 	return nil
 }
 
-func (j *jsiiProxy_ComputeServiceAttachment) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeServiceAttachment) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -408,7 +408,7 @@ func (j *jsiiProxy_ComputeServiceAttachment) validateSetDomainNamesParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_ComputeServiceAttachment) validateSetEnableProxyProtocolParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeServiceAttachment) validateSetEnableProxyProtocolParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -476,7 +476,7 @@ func (j *jsiiProxy_ComputeServiceAttachment) validateSetPropagatedConnectionLimi
 	return nil
 }
 
-func (j *jsiiProxy_ComputeServiceAttachment) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ComputeServiceAttachment) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -522,7 +522,7 @@ func (j *jsiiProxy_ComputeServiceAttachment) validateSetProvisionersParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_ComputeServiceAttachment) validateSetReconcileConnectionsParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeServiceAttachment) validateSetReconcileConnectionsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -550,7 +550,7 @@ func (j *jsiiProxy_ComputeServiceAttachment) validateSetRegionParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_ComputeServiceAttachment) validateSetSendPropagatedConnectionLimitIfZeroParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeServiceAttachment) validateSetSendPropagatedConnectionLimitIfZeroParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -570,7 +570,7 @@ func (j *jsiiProxy_ComputeServiceAttachment) validateSetSendPropagatedConnection
 	return nil
 }
 
-func (j *jsiiProxy_ComputeServiceAttachment) validateSetShowNatIpsParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeServiceAttachment) validateSetShowNatIpsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -616,4 +616,3 @@ func validateNewComputeServiceAttachmentParameters(scope constructs.Construct, i
 
 	return nil
 }
-

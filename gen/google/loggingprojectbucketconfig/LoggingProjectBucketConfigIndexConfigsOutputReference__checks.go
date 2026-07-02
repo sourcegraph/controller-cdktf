@@ -98,7 +98,7 @@ func (l *jsiiProxy_LoggingProjectBucketConfigIndexConfigsOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_LoggingProjectBucketConfigIndexConfigsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LoggingProjectBucketConfigIndexConfigsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_LoggingProjectBucketConfigIndexConfigsOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_LoggingProjectBucketConfigIndexConfigsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LoggingProjectBucketConfigIndexConfigsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewLoggingProjectBucketConfigIndexConfigsOutputReferenceParameters(
 
 	return nil
 }
-

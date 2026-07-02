@@ -128,7 +128,7 @@ func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -265,7 +265,7 @@ func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference) validateSetLocalBackupEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference) validateSetLocalBackupEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -309,7 +309,7 @@ func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference) validateSetSparseDiskgroupEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference) validateSetSparseDiskgroupEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -364,4 +364,3 @@ func validateNewOracleDatabaseCloudVmClusterPropertiesOutputReferenceParameters(
 
 	return nil
 }
-

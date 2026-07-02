@@ -90,7 +90,7 @@ func (d *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigEndUser
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigOutputReference) validatePutFeatureConfigsParameters(value interface{}) error {
+func (d *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigOutputReference) validatePutFeatureConfigsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (d *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigEndUser
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -194,7 +194,7 @@ func (j *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigEndUser
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigOutputReference) validateSetDisableHighLatencyFeaturesSyncDeliveryParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigOutputReference) validateSetDisableHighLatencyFeaturesSyncDeliveryParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -222,7 +222,7 @@ func (j *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigEndUser
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigOutputReference) validateSetGroupSuggestionResponsesParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigOutputReference) validateSetGroupSuggestionResponsesParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -277,4 +277,3 @@ func validateNewDialogflowConversationProfileHumanAgentAssistantConfigEndUserSug
 
 	return nil
 }
-

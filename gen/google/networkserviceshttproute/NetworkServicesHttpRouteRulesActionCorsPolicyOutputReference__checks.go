@@ -98,7 +98,7 @@ func (n *jsiiProxy_NetworkServicesHttpRouteRulesActionCorsPolicyOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesHttpRouteRulesActionCorsPolicyOutputReference) validateSetAllowCredentialsParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkServicesHttpRouteRulesActionCorsPolicyOutputReference) validateSetAllowCredentialsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -150,7 +150,7 @@ func (j *jsiiProxy_NetworkServicesHttpRouteRulesActionCorsPolicyOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesHttpRouteRulesActionCorsPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkServicesHttpRouteRulesActionCorsPolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -215,7 +215,7 @@ func (j *jsiiProxy_NetworkServicesHttpRouteRulesActionCorsPolicyOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesHttpRouteRulesActionCorsPolicyOutputReference) validateSetDisabledParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkServicesHttpRouteRulesActionCorsPolicyOutputReference) validateSetDisabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -286,4 +286,3 @@ func validateNewNetworkServicesHttpRouteRulesActionCorsPolicyOutputReferencePara
 
 	return nil
 }
-

@@ -1,6 +1,5 @@
 package sqldatabaseinstance
 
-
 type SqlDatabaseInstanceSettings struct {
 	// The machine type to use.
 	//
@@ -23,7 +22,7 @@ type SqlDatabaseInstanceSettings struct {
 	// Enables Automatic Version Upgrade feature. Can be used with MySQL only.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/sql_database_instance#auto_upgrade_enabled SqlDatabaseInstance#auto_upgrade_enabled}
-	AutoUpgradeEnabled interface{} `field:"optional" json:"autoUpgradeEnabled" yaml:"autoUpgradeEnabled"`
+	AutoUpgradeEnabled any `field:"optional" json:"autoUpgradeEnabled" yaml:"autoUpgradeEnabled"`
 	// The availability type of the Cloud SQL instance, high availability (REGIONAL) or single zone (ZONAL).
 	//
 	// For all instances, ensure that
@@ -47,7 +46,7 @@ type SqlDatabaseInstanceSettings struct {
 	// connection_pool_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/sql_database_instance#connection_pool_config SqlDatabaseInstance#connection_pool_config}
-	ConnectionPoolConfig interface{} `field:"optional" json:"connectionPoolConfig" yaml:"connectionPoolConfig"`
+	ConnectionPoolConfig any `field:"optional" json:"connectionPoolConfig" yaml:"connectionPoolConfig"`
 	// Enables the enforcement of Cloud SQL Auth Proxy or Cloud SQL connectors for all the connections.
 	//
 	// If enabled, all the direct connections are rejected.
@@ -61,7 +60,7 @@ type SqlDatabaseInstanceSettings struct {
 	// database_flags block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/sql_database_instance#database_flags SqlDatabaseInstance#database_flags}
-	DatabaseFlags interface{} `field:"optional" json:"databaseFlags" yaml:"databaseFlags"`
+	DatabaseFlags any `field:"optional" json:"databaseFlags" yaml:"databaseFlags"`
 	// data_cache_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/sql_database_instance#data_cache_config SqlDatabaseInstance#data_cache_config}
@@ -69,7 +68,7 @@ type SqlDatabaseInstanceSettings struct {
 	// Configuration to protect against accidental instance deletion.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/sql_database_instance#deletion_protection_enabled SqlDatabaseInstance#deletion_protection_enabled}
-	DeletionProtectionEnabled interface{} `field:"optional" json:"deletionProtectionEnabled" yaml:"deletionProtectionEnabled"`
+	DeletionProtectionEnabled any `field:"optional" json:"deletionProtectionEnabled" yaml:"deletionProtectionEnabled"`
 	// deny_maintenance_period block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/sql_database_instance#deny_maintenance_period SqlDatabaseInstance#deny_maintenance_period}
@@ -77,7 +76,7 @@ type SqlDatabaseInstanceSettings struct {
 	// Enables auto-resizing of the storage size. Defaults to true.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/sql_database_instance#disk_autoresize SqlDatabaseInstance#disk_autoresize}
-	DiskAutoresize interface{} `field:"optional" json:"diskAutoresize" yaml:"diskAutoresize"`
+	DiskAutoresize any `field:"optional" json:"diskAutoresize" yaml:"diskAutoresize"`
 	// The maximum size, in GB, to which storage capacity can be automatically increased.
 	//
 	// The default value is 0, which specifies that there is no limit.
@@ -101,11 +100,11 @@ type SqlDatabaseInstanceSettings struct {
 	// Enables Dataplex Integration.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/sql_database_instance#enable_dataplex_integration SqlDatabaseInstance#enable_dataplex_integration}
-	EnableDataplexIntegration interface{} `field:"optional" json:"enableDataplexIntegration" yaml:"enableDataplexIntegration"`
+	EnableDataplexIntegration any `field:"optional" json:"enableDataplexIntegration" yaml:"enableDataplexIntegration"`
 	// Enables Vertex AI Integration.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/sql_database_instance#enable_google_ml_integration SqlDatabaseInstance#enable_google_ml_integration}
-	EnableGoogleMlIntegration interface{} `field:"optional" json:"enableGoogleMlIntegration" yaml:"enableGoogleMlIntegration"`
+	EnableGoogleMlIntegration any `field:"optional" json:"enableGoogleMlIntegration" yaml:"enableGoogleMlIntegration"`
 	// entraid_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/sql_database_instance#entraid_config SqlDatabaseInstance#entraid_config}
@@ -147,7 +146,7 @@ type SqlDatabaseInstanceSettings struct {
 	// The ON_DEMAND backup will be retained until customer deletes the backup or the project. The AUTOMATED backup will be retained based on the backups retention setting.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/sql_database_instance#retain_backups_on_delete SqlDatabaseInstance#retain_backups_on_delete}
-	RetainBackupsOnDelete interface{} `field:"optional" json:"retainBackupsOnDelete" yaml:"retainBackupsOnDelete"`
+	RetainBackupsOnDelete any `field:"optional" json:"retainBackupsOnDelete" yaml:"retainBackupsOnDelete"`
 	// sql_server_audit_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/sql_database_instance#sql_server_audit_config SqlDatabaseInstance#sql_server_audit_config}
@@ -161,4 +160,3 @@ type SqlDatabaseInstanceSettings struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/sql_database_instance#user_labels SqlDatabaseInstance#user_labels}
 	UserLabels *map[string]*string `field:"optional" json:"userLabels" yaml:"userLabels"`
 }
-

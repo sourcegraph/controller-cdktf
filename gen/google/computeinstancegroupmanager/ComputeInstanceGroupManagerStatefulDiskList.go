@@ -17,8 +17,8 @@ type ComputeInstanceGroupManagerStatefulDiskList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type ComputeInstanceGroupManagerStatefulDiskList interface {
 	Get(index *float64) ComputeInstanceGroupManagerStatefulDiskOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_ComputeInstanceGroupManagerStatefulDiskList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeInstanceGroupManagerStatefulDiskList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeInstanceGroupManagerStatefulDiskList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_ComputeInstanceGroupManagerStatefulDiskList) WrapsSet() *bool
 	return returns
 }
 
-
 func NewComputeInstanceGroupManagerStatefulDiskList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeInstanceGroupManagerStatefulDiskList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewComputeInstanceGroupManagerStatefulDiskList(terraformResource cdktf.IInt
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulDiskList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewComputeInstanceGroupManagerStatefulDiskList_Override(c ComputeInstanceGr
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulDiskList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceGroupManagerStatefulDiskList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ComputeInstanceGroupManagerStatefulDiskList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_ComputeInstanceGroupManagerStatefulDiskList)SetInternalValue(
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceGroupManagerStatefulDiskList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ComputeInstanceGroupManagerStatefulDiskList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_ComputeInstanceGroupManagerStatefulDiskList)SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceGroupManagerStatefulDiskList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeInstanceGroupManagerStatefulDiskList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_ComputeInstanceGroupManagerStatefulDiskList)SetTerraformResou
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceGroupManagerStatefulDiskList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ComputeInstanceGroupManagerStatefulDiskList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (c *jsiiProxy_ComputeInstanceGroupManagerStatefulDiskList) AllWithMapKey(ma
 	_jsii_.Invoke(
 		c,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (c *jsiiProxy_ComputeInstanceGroupManagerStatefulDiskList) Get(index *float
 	_jsii_.Invoke(
 		c,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ComputeInstanceGroupManagerStatefulDiskList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ComputeInstanceGroupManagerStatefulDiskList) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (c *jsiiProxy_ComputeInstanceGroupManagerStatefulDiskList) ToString() *stri
 
 	return returns
 }
-

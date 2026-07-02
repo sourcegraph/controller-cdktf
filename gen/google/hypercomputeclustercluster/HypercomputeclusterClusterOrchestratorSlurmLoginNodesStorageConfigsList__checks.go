@@ -34,7 +34,7 @@ func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesStorageC
 	return nil
 }
 
-func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesStorageConfigsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesStorageConfigsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewHypercomputeclusterClusterOrchestratorSlurmLoginNodesStorageConf
 
 	return nil
 }
-

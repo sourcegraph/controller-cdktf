@@ -21,15 +21,15 @@ type DataprocGdcSparkApplication interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	DependencyImages() *[]*string
 	SetDependencyImages(val *[]*string)
@@ -83,13 +83,13 @@ type DataprocGdcSparkApplication interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	PysparkApplicationConfig() DataprocGdcSparkApplicationPysparkApplicationConfigOutputReference
 	PysparkApplicationConfigInput() *DataprocGdcSparkApplicationPysparkApplicationConfig
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Reconciling() cdktf.IResolvable
 	Serviceinstance() *string
 	SetServiceinstance(val *string)
@@ -109,11 +109,11 @@ type DataprocGdcSparkApplication interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() DataprocGdcSparkApplicationTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Uid() *string
 	UpdateTime() *string
 	Version() *string
@@ -123,9 +123,9 @@ type DataprocGdcSparkApplication interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -143,7 +143,7 @@ type DataprocGdcSparkApplication interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -155,7 +155,7 @@ type DataprocGdcSparkApplication interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -185,17 +185,17 @@ type DataprocGdcSparkApplication interface {
 	ResetSparkSqlApplicationConfig()
 	ResetTimeouts()
 	ResetVersion()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataprocGdcSparkApplication
@@ -253,8 +253,8 @@ func (j *jsiiProxy_DataprocGdcSparkApplication) CdktfStack() cdktf.TerraformStac
 	return returns
 }
 
-func (j *jsiiProxy_DataprocGdcSparkApplication) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataprocGdcSparkApplication) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -263,8 +263,8 @@ func (j *jsiiProxy_DataprocGdcSparkApplication) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataprocGdcSparkApplication) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataprocGdcSparkApplication) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -273,8 +273,8 @@ func (j *jsiiProxy_DataprocGdcSparkApplication) ConstructNodeMetadata() *map[str
 	return returns
 }
 
-func (j *jsiiProxy_DataprocGdcSparkApplication) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataprocGdcSparkApplication) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -573,8 +573,8 @@ func (j *jsiiProxy_DataprocGdcSparkApplication) Provider() cdktf.TerraformProvid
 	return returns
 }
 
-func (j *jsiiProxy_DataprocGdcSparkApplication) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_DataprocGdcSparkApplication) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -603,8 +603,8 @@ func (j *jsiiProxy_DataprocGdcSparkApplication) PysparkApplicationConfigInput() 
 	return returns
 }
 
-func (j *jsiiProxy_DataprocGdcSparkApplication) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataprocGdcSparkApplication) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -763,8 +763,8 @@ func (j *jsiiProxy_DataprocGdcSparkApplication) TerraformLabels() cdktf.StringMa
 	return returns
 }
 
-func (j *jsiiProxy_DataprocGdcSparkApplication) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataprocGdcSparkApplication) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -793,8 +793,8 @@ func (j *jsiiProxy_DataprocGdcSparkApplication) Timeouts() DataprocGdcSparkAppli
 	return returns
 }
 
-func (j *jsiiProxy_DataprocGdcSparkApplication) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataprocGdcSparkApplication) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -843,7 +843,6 @@ func (j *jsiiProxy_DataprocGdcSparkApplication) VersionInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_gdc_spark_application google_dataproc_gdc_spark_application} Resource.
 func NewDataprocGdcSparkApplication(scope constructs.Construct, id *string, config *DataprocGdcSparkApplicationConfig) DataprocGdcSparkApplication {
 	_init_.Initialize()
@@ -855,7 +854,7 @@ func NewDataprocGdcSparkApplication(scope constructs.Construct, id *string, conf
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataprocGdcSparkApplication.DataprocGdcSparkApplication",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -868,12 +867,12 @@ func NewDataprocGdcSparkApplication_Override(d DataprocGdcSparkApplication, scop
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataprocGdcSparkApplication.DataprocGdcSparkApplication",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataprocGdcSparkApplication)SetAnnotations(val *map[string]*string) {
+func (j *jsiiProxy_DataprocGdcSparkApplication) SetAnnotations(val *map[string]*string) {
 	if err := j.validateSetAnnotationsParameters(val); err != nil {
 		panic(err)
 	}
@@ -884,7 +883,7 @@ func (j *jsiiProxy_DataprocGdcSparkApplication)SetAnnotations(val *map[string]*s
 	)
 }
 
-func (j *jsiiProxy_DataprocGdcSparkApplication)SetApplicationEnvironment(val *string) {
+func (j *jsiiProxy_DataprocGdcSparkApplication) SetApplicationEnvironment(val *string) {
 	if err := j.validateSetApplicationEnvironmentParameters(val); err != nil {
 		panic(err)
 	}
@@ -895,7 +894,7 @@ func (j *jsiiProxy_DataprocGdcSparkApplication)SetApplicationEnvironment(val *st
 	)
 }
 
-func (j *jsiiProxy_DataprocGdcSparkApplication)SetConnection(val interface{}) {
+func (j *jsiiProxy_DataprocGdcSparkApplication) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -906,7 +905,7 @@ func (j *jsiiProxy_DataprocGdcSparkApplication)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataprocGdcSparkApplication)SetCount(val interface{}) {
+func (j *jsiiProxy_DataprocGdcSparkApplication) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -917,7 +916,7 @@ func (j *jsiiProxy_DataprocGdcSparkApplication)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataprocGdcSparkApplication)SetDependencyImages(val *[]*string) {
+func (j *jsiiProxy_DataprocGdcSparkApplication) SetDependencyImages(val *[]*string) {
 	if err := j.validateSetDependencyImagesParameters(val); err != nil {
 		panic(err)
 	}
@@ -928,7 +927,7 @@ func (j *jsiiProxy_DataprocGdcSparkApplication)SetDependencyImages(val *[]*strin
 	)
 }
 
-func (j *jsiiProxy_DataprocGdcSparkApplication)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataprocGdcSparkApplication) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -936,7 +935,7 @@ func (j *jsiiProxy_DataprocGdcSparkApplication)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataprocGdcSparkApplication)SetDisplayName(val *string) {
+func (j *jsiiProxy_DataprocGdcSparkApplication) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -947,7 +946,7 @@ func (j *jsiiProxy_DataprocGdcSparkApplication)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataprocGdcSparkApplication)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataprocGdcSparkApplication) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -955,7 +954,7 @@ func (j *jsiiProxy_DataprocGdcSparkApplication)SetForEach(val cdktf.ITerraformIt
 	)
 }
 
-func (j *jsiiProxy_DataprocGdcSparkApplication)SetId(val *string) {
+func (j *jsiiProxy_DataprocGdcSparkApplication) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -966,7 +965,7 @@ func (j *jsiiProxy_DataprocGdcSparkApplication)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataprocGdcSparkApplication)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_DataprocGdcSparkApplication) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -977,7 +976,7 @@ func (j *jsiiProxy_DataprocGdcSparkApplication)SetLabels(val *map[string]*string
 	)
 }
 
-func (j *jsiiProxy_DataprocGdcSparkApplication)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataprocGdcSparkApplication) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -988,7 +987,7 @@ func (j *jsiiProxy_DataprocGdcSparkApplication)SetLifecycle(val *cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_DataprocGdcSparkApplication)SetLocation(val *string) {
+func (j *jsiiProxy_DataprocGdcSparkApplication) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -999,7 +998,7 @@ func (j *jsiiProxy_DataprocGdcSparkApplication)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataprocGdcSparkApplication)SetNamespace(val *string) {
+func (j *jsiiProxy_DataprocGdcSparkApplication) SetNamespace(val *string) {
 	if err := j.validateSetNamespaceParameters(val); err != nil {
 		panic(err)
 	}
@@ -1010,7 +1009,7 @@ func (j *jsiiProxy_DataprocGdcSparkApplication)SetNamespace(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataprocGdcSparkApplication)SetProject(val *string) {
+func (j *jsiiProxy_DataprocGdcSparkApplication) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -1021,7 +1020,7 @@ func (j *jsiiProxy_DataprocGdcSparkApplication)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataprocGdcSparkApplication)SetProperties(val *map[string]*string) {
+func (j *jsiiProxy_DataprocGdcSparkApplication) SetProperties(val *map[string]*string) {
 	if err := j.validateSetPropertiesParameters(val); err != nil {
 		panic(err)
 	}
@@ -1032,7 +1031,7 @@ func (j *jsiiProxy_DataprocGdcSparkApplication)SetProperties(val *map[string]*st
 	)
 }
 
-func (j *jsiiProxy_DataprocGdcSparkApplication)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataprocGdcSparkApplication) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1040,7 +1039,7 @@ func (j *jsiiProxy_DataprocGdcSparkApplication)SetProvider(val cdktf.TerraformPr
 	)
 }
 
-func (j *jsiiProxy_DataprocGdcSparkApplication)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_DataprocGdcSparkApplication) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1051,7 +1050,7 @@ func (j *jsiiProxy_DataprocGdcSparkApplication)SetProvisioners(val *[]interface{
 	)
 }
 
-func (j *jsiiProxy_DataprocGdcSparkApplication)SetServiceinstance(val *string) {
+func (j *jsiiProxy_DataprocGdcSparkApplication) SetServiceinstance(val *string) {
 	if err := j.validateSetServiceinstanceParameters(val); err != nil {
 		panic(err)
 	}
@@ -1062,7 +1061,7 @@ func (j *jsiiProxy_DataprocGdcSparkApplication)SetServiceinstance(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataprocGdcSparkApplication)SetSparkApplicationId(val *string) {
+func (j *jsiiProxy_DataprocGdcSparkApplication) SetSparkApplicationId(val *string) {
 	if err := j.validateSetSparkApplicationIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1073,7 +1072,7 @@ func (j *jsiiProxy_DataprocGdcSparkApplication)SetSparkApplicationId(val *string
 	)
 }
 
-func (j *jsiiProxy_DataprocGdcSparkApplication)SetVersion(val *string) {
+func (j *jsiiProxy_DataprocGdcSparkApplication) SetVersion(val *string) {
 	if err := j.validateSetVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1096,7 +1095,7 @@ func DataprocGdcSparkApplication_GenerateConfigForImport(scope constructs.Constr
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataprocGdcSparkApplication.DataprocGdcSparkApplication",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1120,7 +1119,7 @@ func DataprocGdcSparkApplication_GenerateConfigForImport(scope constructs.Constr
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataprocGdcSparkApplication_IsConstruct(x interface{}) *bool {
+func DataprocGdcSparkApplication_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataprocGdcSparkApplication_IsConstructParameters(x); err != nil {
@@ -1131,7 +1130,7 @@ func DataprocGdcSparkApplication_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataprocGdcSparkApplication.DataprocGdcSparkApplication",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1139,7 +1138,7 @@ func DataprocGdcSparkApplication_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataprocGdcSparkApplication_IsTerraformElement(x interface{}) *bool {
+func DataprocGdcSparkApplication_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataprocGdcSparkApplication_IsTerraformElementParameters(x); err != nil {
@@ -1150,7 +1149,7 @@ func DataprocGdcSparkApplication_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataprocGdcSparkApplication.DataprocGdcSparkApplication",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1158,7 +1157,7 @@ func DataprocGdcSparkApplication_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func DataprocGdcSparkApplication_IsTerraformResource(x interface{}) *bool {
+func DataprocGdcSparkApplication_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataprocGdcSparkApplication_IsTerraformResourceParameters(x); err != nil {
@@ -1169,7 +1168,7 @@ func DataprocGdcSparkApplication_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataprocGdcSparkApplication.DataprocGdcSparkApplication",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1194,31 +1193,31 @@ func (d *jsiiProxy_DataprocGdcSparkApplication) AddMoveTarget(moveTarget *string
 	_jsii_.InvokeVoid(
 		d,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (d *jsiiProxy_DataprocGdcSparkApplication) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataprocGdcSparkApplication) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataprocGdcSparkApplication) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataprocGdcSparkApplication) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1234,7 +1233,7 @@ func (d *jsiiProxy_DataprocGdcSparkApplication) GetBooleanAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1250,7 +1249,7 @@ func (d *jsiiProxy_DataprocGdcSparkApplication) GetBooleanMapAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1266,7 +1265,7 @@ func (d *jsiiProxy_DataprocGdcSparkApplication) GetListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1282,7 +1281,7 @@ func (d *jsiiProxy_DataprocGdcSparkApplication) GetNumberAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1298,7 +1297,7 @@ func (d *jsiiProxy_DataprocGdcSparkApplication) GetNumberListAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1314,7 +1313,7 @@ func (d *jsiiProxy_DataprocGdcSparkApplication) GetNumberMapAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1330,7 +1329,7 @@ func (d *jsiiProxy_DataprocGdcSparkApplication) GetStringAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1346,15 +1345,15 @@ func (d *jsiiProxy_DataprocGdcSparkApplication) GetStringMapAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataprocGdcSparkApplication) HasResourceMove() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataprocGdcSparkApplication) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1373,7 +1372,7 @@ func (d *jsiiProxy_DataprocGdcSparkApplication) ImportFrom(id *string, provider 
 	_jsii_.InvokeVoid(
 		d,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1386,7 +1385,7 @@ func (d *jsiiProxy_DataprocGdcSparkApplication) InterpolationForAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1400,18 +1399,18 @@ func (d *jsiiProxy_DataprocGdcSparkApplication) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (d *jsiiProxy_DataprocGdcSparkApplication) MoveTo(moveTarget *string, index interface{}) {
+func (d *jsiiProxy_DataprocGdcSparkApplication) MoveTo(moveTarget *string, index any) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1422,7 +1421,7 @@ func (d *jsiiProxy_DataprocGdcSparkApplication) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1433,7 +1432,7 @@ func (d *jsiiProxy_DataprocGdcSparkApplication) OverrideLogicalId(newLogicalId *
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1444,7 +1443,7 @@ func (d *jsiiProxy_DataprocGdcSparkApplication) PutPysparkApplicationConfig(valu
 	_jsii_.InvokeVoid(
 		d,
 		"putPysparkApplicationConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1455,7 +1454,7 @@ func (d *jsiiProxy_DataprocGdcSparkApplication) PutSparkApplicationConfig(value 
 	_jsii_.InvokeVoid(
 		d,
 		"putSparkApplicationConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1466,7 +1465,7 @@ func (d *jsiiProxy_DataprocGdcSparkApplication) PutSparkRApplicationConfig(value
 	_jsii_.InvokeVoid(
 		d,
 		"putSparkRApplicationConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1477,7 +1476,7 @@ func (d *jsiiProxy_DataprocGdcSparkApplication) PutSparkSqlApplicationConfig(val
 	_jsii_.InvokeVoid(
 		d,
 		"putSparkSqlApplicationConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1488,7 +1487,7 @@ func (d *jsiiProxy_DataprocGdcSparkApplication) PutTimeouts(value *DataprocGdcSp
 	_jsii_.InvokeVoid(
 		d,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1620,8 +1619,8 @@ func (d *jsiiProxy_DataprocGdcSparkApplication) ResetVersion() {
 	)
 }
 
-func (d *jsiiProxy_DataprocGdcSparkApplication) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataprocGdcSparkApplication) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1633,8 +1632,8 @@ func (d *jsiiProxy_DataprocGdcSparkApplication) SynthesizeAttributes() *map[stri
 	return returns
 }
 
-func (d *jsiiProxy_DataprocGdcSparkApplication) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataprocGdcSparkApplication) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1646,8 +1645,8 @@ func (d *jsiiProxy_DataprocGdcSparkApplication) SynthesizeHclAttributes() *map[s
 	return returns
 }
 
-func (d *jsiiProxy_DataprocGdcSparkApplication) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataprocGdcSparkApplication) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1659,8 +1658,8 @@ func (d *jsiiProxy_DataprocGdcSparkApplication) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataprocGdcSparkApplication) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataprocGdcSparkApplication) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1685,8 +1684,8 @@ func (d *jsiiProxy_DataprocGdcSparkApplication) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataprocGdcSparkApplication) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataprocGdcSparkApplication) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1697,4 +1696,3 @@ func (d *jsiiProxy_DataprocGdcSparkApplication) ToTerraform() interface{} {
 
 	return returns
 }
-

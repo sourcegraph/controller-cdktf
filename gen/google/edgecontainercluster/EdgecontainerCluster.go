@@ -18,20 +18,20 @@ type EdgecontainerCluster interface {
 	CdktfStack() cdktf.TerraformStack
 	ClusterCaCertificate() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	ControlPlane() EdgecontainerClusterControlPlaneOutputReference
 	ControlPlaneEncryption() EdgecontainerClusterControlPlaneEncryptionOutputReference
 	ControlPlaneEncryptionInput() *EdgecontainerClusterControlPlaneEncryption
 	ControlPlaneInput() *EdgecontainerClusterControlPlane
 	ControlPlaneVersion() *string
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	DefaultMaxPodsPerNode() *float64
 	SetDefaultMaxPodsPerNode(val *float64)
@@ -88,11 +88,11 @@ type EdgecontainerCluster interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ReleaseChannel() *string
 	SetReleaseChannel(val *string)
 	ReleaseChannelInput() *string
@@ -106,19 +106,19 @@ type EdgecontainerCluster interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() EdgecontainerClusterTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -136,7 +136,7 @@ type EdgecontainerCluster interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -148,7 +148,7 @@ type EdgecontainerCluster interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -178,17 +178,17 @@ type EdgecontainerCluster interface {
 	ResetSystemAddonsConfig()
 	ResetTargetVersion()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for EdgecontainerCluster
@@ -236,8 +236,8 @@ func (j *jsiiProxy_EdgecontainerCluster) ClusterCaCertificate() *string {
 	return returns
 }
 
-func (j *jsiiProxy_EdgecontainerCluster) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EdgecontainerCluster) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -246,8 +246,8 @@ func (j *jsiiProxy_EdgecontainerCluster) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EdgecontainerCluster) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_EdgecontainerCluster) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -306,8 +306,8 @@ func (j *jsiiProxy_EdgecontainerCluster) ControlPlaneVersion() *string {
 	return returns
 }
 
-func (j *jsiiProxy_EdgecontainerCluster) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EdgecontainerCluster) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -646,8 +646,8 @@ func (j *jsiiProxy_EdgecontainerCluster) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_EdgecontainerCluster) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_EdgecontainerCluster) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -656,8 +656,8 @@ func (j *jsiiProxy_EdgecontainerCluster) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EdgecontainerCluster) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EdgecontainerCluster) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -756,8 +756,8 @@ func (j *jsiiProxy_EdgecontainerCluster) TerraformLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_EdgecontainerCluster) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_EdgecontainerCluster) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -786,8 +786,8 @@ func (j *jsiiProxy_EdgecontainerCluster) Timeouts() EdgecontainerClusterTimeouts
 	return returns
 }
 
-func (j *jsiiProxy_EdgecontainerCluster) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EdgecontainerCluster) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -806,7 +806,6 @@ func (j *jsiiProxy_EdgecontainerCluster) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/edgecontainer_cluster google_edgecontainer_cluster} Resource.
 func NewEdgecontainerCluster(scope constructs.Construct, id *string, config *EdgecontainerClusterConfig) EdgecontainerCluster {
 	_init_.Initialize()
@@ -818,7 +817,7 @@ func NewEdgecontainerCluster(scope constructs.Construct, id *string, config *Edg
 
 	_jsii_.Create(
 		"@cdktf/provider-google.edgecontainerCluster.EdgecontainerCluster",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -831,12 +830,12 @@ func NewEdgecontainerCluster_Override(e EdgecontainerCluster, scope constructs.C
 
 	_jsii_.Create(
 		"@cdktf/provider-google.edgecontainerCluster.EdgecontainerCluster",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		e,
 	)
 }
 
-func (j *jsiiProxy_EdgecontainerCluster)SetConnection(val interface{}) {
+func (j *jsiiProxy_EdgecontainerCluster) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -847,7 +846,7 @@ func (j *jsiiProxy_EdgecontainerCluster)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EdgecontainerCluster)SetCount(val interface{}) {
+func (j *jsiiProxy_EdgecontainerCluster) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -858,7 +857,7 @@ func (j *jsiiProxy_EdgecontainerCluster)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EdgecontainerCluster)SetDefaultMaxPodsPerNode(val *float64) {
+func (j *jsiiProxy_EdgecontainerCluster) SetDefaultMaxPodsPerNode(val *float64) {
 	if err := j.validateSetDefaultMaxPodsPerNodeParameters(val); err != nil {
 		panic(err)
 	}
@@ -869,7 +868,7 @@ func (j *jsiiProxy_EdgecontainerCluster)SetDefaultMaxPodsPerNode(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_EdgecontainerCluster)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_EdgecontainerCluster) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -877,7 +876,7 @@ func (j *jsiiProxy_EdgecontainerCluster)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_EdgecontainerCluster)SetExternalLoadBalancerIpv4AddressPools(val *[]*string) {
+func (j *jsiiProxy_EdgecontainerCluster) SetExternalLoadBalancerIpv4AddressPools(val *[]*string) {
 	if err := j.validateSetExternalLoadBalancerIpv4AddressPoolsParameters(val); err != nil {
 		panic(err)
 	}
@@ -888,7 +887,7 @@ func (j *jsiiProxy_EdgecontainerCluster)SetExternalLoadBalancerIpv4AddressPools(
 	)
 }
 
-func (j *jsiiProxy_EdgecontainerCluster)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_EdgecontainerCluster) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -896,7 +895,7 @@ func (j *jsiiProxy_EdgecontainerCluster)SetForEach(val cdktf.ITerraformIterator)
 	)
 }
 
-func (j *jsiiProxy_EdgecontainerCluster)SetId(val *string) {
+func (j *jsiiProxy_EdgecontainerCluster) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -907,7 +906,7 @@ func (j *jsiiProxy_EdgecontainerCluster)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EdgecontainerCluster)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_EdgecontainerCluster) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -918,7 +917,7 @@ func (j *jsiiProxy_EdgecontainerCluster)SetLabels(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_EdgecontainerCluster)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_EdgecontainerCluster) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -929,7 +928,7 @@ func (j *jsiiProxy_EdgecontainerCluster)SetLifecycle(val *cdktf.TerraformResourc
 	)
 }
 
-func (j *jsiiProxy_EdgecontainerCluster)SetLocation(val *string) {
+func (j *jsiiProxy_EdgecontainerCluster) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -940,7 +939,7 @@ func (j *jsiiProxy_EdgecontainerCluster)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EdgecontainerCluster)SetName(val *string) {
+func (j *jsiiProxy_EdgecontainerCluster) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -951,7 +950,7 @@ func (j *jsiiProxy_EdgecontainerCluster)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EdgecontainerCluster)SetProject(val *string) {
+func (j *jsiiProxy_EdgecontainerCluster) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -962,7 +961,7 @@ func (j *jsiiProxy_EdgecontainerCluster)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EdgecontainerCluster)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_EdgecontainerCluster) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -970,7 +969,7 @@ func (j *jsiiProxy_EdgecontainerCluster)SetProvider(val cdktf.TerraformProvider)
 	)
 }
 
-func (j *jsiiProxy_EdgecontainerCluster)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_EdgecontainerCluster) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -981,7 +980,7 @@ func (j *jsiiProxy_EdgecontainerCluster)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EdgecontainerCluster)SetReleaseChannel(val *string) {
+func (j *jsiiProxy_EdgecontainerCluster) SetReleaseChannel(val *string) {
 	if err := j.validateSetReleaseChannelParameters(val); err != nil {
 		panic(err)
 	}
@@ -992,7 +991,7 @@ func (j *jsiiProxy_EdgecontainerCluster)SetReleaseChannel(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EdgecontainerCluster)SetTargetVersion(val *string) {
+func (j *jsiiProxy_EdgecontainerCluster) SetTargetVersion(val *string) {
 	if err := j.validateSetTargetVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1015,7 +1014,7 @@ func EdgecontainerCluster_GenerateConfigForImport(scope constructs.Construct, im
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.edgecontainerCluster.EdgecontainerCluster",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1039,7 +1038,7 @@ func EdgecontainerCluster_GenerateConfigForImport(scope constructs.Construct, im
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func EdgecontainerCluster_IsConstruct(x interface{}) *bool {
+func EdgecontainerCluster_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEdgecontainerCluster_IsConstructParameters(x); err != nil {
@@ -1050,7 +1049,7 @@ func EdgecontainerCluster_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.edgecontainerCluster.EdgecontainerCluster",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1058,7 +1057,7 @@ func EdgecontainerCluster_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func EdgecontainerCluster_IsTerraformElement(x interface{}) *bool {
+func EdgecontainerCluster_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEdgecontainerCluster_IsTerraformElementParameters(x); err != nil {
@@ -1069,7 +1068,7 @@ func EdgecontainerCluster_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.edgecontainerCluster.EdgecontainerCluster",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1077,7 +1076,7 @@ func EdgecontainerCluster_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func EdgecontainerCluster_IsTerraformResource(x interface{}) *bool {
+func EdgecontainerCluster_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEdgecontainerCluster_IsTerraformResourceParameters(x); err != nil {
@@ -1088,7 +1087,7 @@ func EdgecontainerCluster_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.edgecontainerCluster.EdgecontainerCluster",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1113,31 +1112,31 @@ func (e *jsiiProxy_EdgecontainerCluster) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (e *jsiiProxy_EdgecontainerCluster) AddOverride(path *string, value interface{}) {
+func (e *jsiiProxy_EdgecontainerCluster) AddOverride(path *string, value any) {
 	if err := e.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (e *jsiiProxy_EdgecontainerCluster) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_EdgecontainerCluster) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1153,7 +1152,7 @@ func (e *jsiiProxy_EdgecontainerCluster) GetBooleanAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1169,7 +1168,7 @@ func (e *jsiiProxy_EdgecontainerCluster) GetBooleanMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1185,7 +1184,7 @@ func (e *jsiiProxy_EdgecontainerCluster) GetListAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1201,7 +1200,7 @@ func (e *jsiiProxy_EdgecontainerCluster) GetNumberAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1217,7 +1216,7 @@ func (e *jsiiProxy_EdgecontainerCluster) GetNumberListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1233,7 +1232,7 @@ func (e *jsiiProxy_EdgecontainerCluster) GetNumberMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1249,7 +1248,7 @@ func (e *jsiiProxy_EdgecontainerCluster) GetStringAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1265,15 +1264,15 @@ func (e *jsiiProxy_EdgecontainerCluster) GetStringMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (e *jsiiProxy_EdgecontainerCluster) HasResourceMove() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EdgecontainerCluster) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1292,7 +1291,7 @@ func (e *jsiiProxy_EdgecontainerCluster) ImportFrom(id *string, provider cdktf.T
 	_jsii_.InvokeVoid(
 		e,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1305,7 +1304,7 @@ func (e *jsiiProxy_EdgecontainerCluster) InterpolationForAttribute(terraformAttr
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1319,18 +1318,18 @@ func (e *jsiiProxy_EdgecontainerCluster) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (e *jsiiProxy_EdgecontainerCluster) MoveTo(moveTarget *string, index interface{}) {
+func (e *jsiiProxy_EdgecontainerCluster) MoveTo(moveTarget *string, index any) {
 	if err := e.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1341,7 +1340,7 @@ func (e *jsiiProxy_EdgecontainerCluster) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1352,7 +1351,7 @@ func (e *jsiiProxy_EdgecontainerCluster) OverrideLogicalId(newLogicalId *string)
 	_jsii_.InvokeVoid(
 		e,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1363,7 +1362,7 @@ func (e *jsiiProxy_EdgecontainerCluster) PutAuthorization(value *EdgecontainerCl
 	_jsii_.InvokeVoid(
 		e,
 		"putAuthorization",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1374,7 +1373,7 @@ func (e *jsiiProxy_EdgecontainerCluster) PutControlPlane(value *EdgecontainerClu
 	_jsii_.InvokeVoid(
 		e,
 		"putControlPlane",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1385,7 +1384,7 @@ func (e *jsiiProxy_EdgecontainerCluster) PutControlPlaneEncryption(value *Edgeco
 	_jsii_.InvokeVoid(
 		e,
 		"putControlPlaneEncryption",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1396,7 +1395,7 @@ func (e *jsiiProxy_EdgecontainerCluster) PutFleet(value *EdgecontainerClusterFle
 	_jsii_.InvokeVoid(
 		e,
 		"putFleet",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1407,7 +1406,7 @@ func (e *jsiiProxy_EdgecontainerCluster) PutMaintenancePolicy(value *Edgecontain
 	_jsii_.InvokeVoid(
 		e,
 		"putMaintenancePolicy",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1418,7 +1417,7 @@ func (e *jsiiProxy_EdgecontainerCluster) PutNetworking(value *EdgecontainerClust
 	_jsii_.InvokeVoid(
 		e,
 		"putNetworking",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1429,7 +1428,7 @@ func (e *jsiiProxy_EdgecontainerCluster) PutSystemAddonsConfig(value *Edgecontai
 	_jsii_.InvokeVoid(
 		e,
 		"putSystemAddonsConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1440,7 +1439,7 @@ func (e *jsiiProxy_EdgecontainerCluster) PutTimeouts(value *EdgecontainerCluster
 	_jsii_.InvokeVoid(
 		e,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1548,8 +1547,8 @@ func (e *jsiiProxy_EdgecontainerCluster) ResetTimeouts() {
 	)
 }
 
-func (e *jsiiProxy_EdgecontainerCluster) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_EdgecontainerCluster) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -1561,8 +1560,8 @@ func (e *jsiiProxy_EdgecontainerCluster) SynthesizeAttributes() *map[string]inte
 	return returns
 }
 
-func (e *jsiiProxy_EdgecontainerCluster) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_EdgecontainerCluster) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -1574,8 +1573,8 @@ func (e *jsiiProxy_EdgecontainerCluster) SynthesizeHclAttributes() *map[string]i
 	return returns
 }
 
-func (e *jsiiProxy_EdgecontainerCluster) ToHclTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EdgecontainerCluster) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1587,8 +1586,8 @@ func (e *jsiiProxy_EdgecontainerCluster) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (e *jsiiProxy_EdgecontainerCluster) ToMetadata() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EdgecontainerCluster) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1613,8 +1612,8 @@ func (e *jsiiProxy_EdgecontainerCluster) ToString() *string {
 	return returns
 }
 
-func (e *jsiiProxy_EdgecontainerCluster) ToTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EdgecontainerCluster) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1625,4 +1624,3 @@ func (e *jsiiProxy_EdgecontainerCluster) ToTerraform() interface{} {
 
 	return returns
 }
-

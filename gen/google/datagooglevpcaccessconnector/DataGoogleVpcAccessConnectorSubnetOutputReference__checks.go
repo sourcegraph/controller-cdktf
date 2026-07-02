@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleVpcAccessConnectorSubnetOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleVpcAccessConnectorSubnetOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleVpcAccessConnectorSubnetOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleVpcAccessConnectorSubnetOutputReferenceParameters(terr
 
 	return nil
 }
-

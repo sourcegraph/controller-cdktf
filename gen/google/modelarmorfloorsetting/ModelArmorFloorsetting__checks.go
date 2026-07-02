@@ -19,7 +19,7 @@ func (m *jsiiProxy_ModelArmorFloorsetting) validateAddMoveTargetParameters(moveT
 	return nil
 }
 
-func (m *jsiiProxy_ModelArmorFloorsetting) validateAddOverrideParameters(path *string, value interface{}) error {
+func (m *jsiiProxy_ModelArmorFloorsetting) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (m *jsiiProxy_ModelArmorFloorsetting) validateMoveFromIdParameters(id *stri
 	return nil
 }
 
-func (m *jsiiProxy_ModelArmorFloorsetting) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (m *jsiiProxy_ModelArmorFloorsetting) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -275,7 +275,7 @@ func validateModelArmorFloorsetting_GenerateConfigForImportParameters(scope cons
 	return nil
 }
 
-func validateModelArmorFloorsetting_IsConstructParameters(x interface{}) error {
+func validateModelArmorFloorsetting_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -283,7 +283,7 @@ func validateModelArmorFloorsetting_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateModelArmorFloorsetting_IsTerraformElementParameters(x interface{}) error {
+func validateModelArmorFloorsetting_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -291,7 +291,7 @@ func validateModelArmorFloorsetting_IsTerraformElementParameters(x interface{}) 
 	return nil
 }
 
-func validateModelArmorFloorsetting_IsTerraformResourceParameters(x interface{}) error {
+func validateModelArmorFloorsetting_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -299,7 +299,7 @@ func validateModelArmorFloorsetting_IsTerraformResourceParameters(x interface{})
 	return nil
 }
 
-func (j *jsiiProxy_ModelArmorFloorsetting) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ModelArmorFloorsetting) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -332,7 +332,7 @@ func (j *jsiiProxy_ModelArmorFloorsetting) validateSetConnectionParameters(val i
 	return nil
 }
 
-func (j *jsiiProxy_ModelArmorFloorsetting) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ModelArmorFloorsetting) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -389,7 +389,7 @@ func (j *jsiiProxy_ModelArmorFloorsetting) validateSetCountParameters(val interf
 	return nil
 }
 
-func (j *jsiiProxy_ModelArmorFloorsetting) validateSetEnableFloorSettingEnforcementParameters(val interface{}) error {
+func (j *jsiiProxy_ModelArmorFloorsetting) validateSetEnableFloorSettingEnforcementParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -449,7 +449,7 @@ func (j *jsiiProxy_ModelArmorFloorsetting) validateSetParentParameters(val *stri
 	return nil
 }
 
-func (j *jsiiProxy_ModelArmorFloorsetting) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ModelArmorFloorsetting) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -513,4 +513,3 @@ func validateNewModelArmorFloorsettingParameters(scope constructs.Construct, id 
 
 	return nil
 }
-

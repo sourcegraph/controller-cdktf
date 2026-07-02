@@ -90,7 +90,7 @@ func (b *jsiiProxy_BigqueryAnalyticsHubListingBigqueryDatasetOutputReference) va
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryAnalyticsHubListingBigqueryDatasetOutputReference) validatePutSelectedResourcesParameters(value interface{}) error {
+func (b *jsiiProxy_BigqueryAnalyticsHubListingBigqueryDatasetOutputReference) validatePutSelectedResourcesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (b *jsiiProxy_BigqueryAnalyticsHubListingBigqueryDatasetOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryAnalyticsHubListingBigqueryDatasetOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryAnalyticsHubListingBigqueryDatasetOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -245,4 +245,3 @@ func validateNewBigqueryAnalyticsHubListingBigqueryDatasetOutputReferenceParamet
 
 	return nil
 }
-

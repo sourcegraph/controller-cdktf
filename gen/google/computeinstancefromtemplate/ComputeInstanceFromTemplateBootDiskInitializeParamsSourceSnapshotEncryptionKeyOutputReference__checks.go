@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeInstanceFromTemplateBootDiskInitializeParamsSourceSnap
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInstanceFromTemplateBootDiskInitializeParamsSourceSnapshotEncryptionKeyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInstanceFromTemplateBootDiskInitializeParamsSourceSnapshotEncryptionKeyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewComputeInstanceFromTemplateBootDiskInitializeParamsSourceSnapsho
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicyWithRulesRuleMatchSrcSecure
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyWithRulesRuleMatchSrcSecureTagOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyWithRulesRuleMatchSrcSecureTagOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyWithRulesRuleMatchSrcSecure
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyWithRulesRuleMatchSrcSecureTagOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyWithRulesRuleMatchSrcSecureTagOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewComputeRegionNetworkFirewallPolicyWithRulesRuleMatchSrcSecureTag
 
 	return nil
 }
-

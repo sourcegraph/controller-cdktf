@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeFirewallPolicyWithRulesPredefinedRulesOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_ComputeFirewallPolicyWithRulesPredefinedRulesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeFirewallPolicyWithRulesPredefinedRulesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewComputeFirewallPolicyWithRulesPredefinedRulesOutputReferencePara
 
 	return nil
 }
-

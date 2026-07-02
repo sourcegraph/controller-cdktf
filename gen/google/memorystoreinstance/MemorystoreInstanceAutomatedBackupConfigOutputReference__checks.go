@@ -109,7 +109,7 @@ func (m *jsiiProxy_MemorystoreInstanceAutomatedBackupConfigOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_MemorystoreInstanceAutomatedBackupConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MemorystoreInstanceAutomatedBackupConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -217,4 +217,3 @@ func validateNewMemorystoreInstanceAutomatedBackupConfigOutputReferenceParameter
 
 	return nil
 }
-

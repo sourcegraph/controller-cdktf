@@ -19,7 +19,7 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) validateAddMoveTargetParamete
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) validateAddOverrideParameters(path *string, value interface{}) error {
+func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) validateMoveFromIdParameters(
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -286,7 +286,7 @@ func validateNetworkServicesEdgeCacheOrigin_GenerateConfigForImportParameters(sc
 	return nil
 }
 
-func validateNetworkServicesEdgeCacheOrigin_IsConstructParameters(x interface{}) error {
+func validateNetworkServicesEdgeCacheOrigin_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -294,7 +294,7 @@ func validateNetworkServicesEdgeCacheOrigin_IsConstructParameters(x interface{})
 	return nil
 }
 
-func validateNetworkServicesEdgeCacheOrigin_IsTerraformElementParameters(x interface{}) error {
+func validateNetworkServicesEdgeCacheOrigin_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -302,7 +302,7 @@ func validateNetworkServicesEdgeCacheOrigin_IsTerraformElementParameters(x inter
 	return nil
 }
 
-func validateNetworkServicesEdgeCacheOrigin_IsTerraformResourceParameters(x interface{}) error {
+func validateNetworkServicesEdgeCacheOrigin_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -310,7 +310,7 @@ func validateNetworkServicesEdgeCacheOrigin_IsTerraformResourceParameters(x inte
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -343,7 +343,7 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin) validateSetConnectionParamete
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -488,7 +488,7 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin) validateSetProtocolParameters
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -560,4 +560,3 @@ func validateNewNetworkServicesEdgeCacheOriginParameters(scope constructs.Constr
 
 	return nil
 }
-

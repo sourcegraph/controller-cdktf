@@ -19,7 +19,7 @@ func (c *jsiiProxy_ContactCenterInsightsAutoLabelingRule) validateAddMoveTargetP
 	return nil
 }
 
-func (c *jsiiProxy_ContactCenterInsightsAutoLabelingRule) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_ContactCenterInsightsAutoLabelingRule) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_ContactCenterInsightsAutoLabelingRule) validateMoveFromIdPara
 	return nil
 }
 
-func (c *jsiiProxy_ContactCenterInsightsAutoLabelingRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_ContactCenterInsightsAutoLabelingRule) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (c *jsiiProxy_ContactCenterInsightsAutoLabelingRule) validateOverrideLogica
 	return nil
 }
 
-func (c *jsiiProxy_ContactCenterInsightsAutoLabelingRule) validatePutConditionsParameters(value interface{}) error {
+func (c *jsiiProxy_ContactCenterInsightsAutoLabelingRule) validatePutConditionsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -262,7 +262,7 @@ func validateContactCenterInsightsAutoLabelingRule_GenerateConfigForImportParame
 	return nil
 }
 
-func validateContactCenterInsightsAutoLabelingRule_IsConstructParameters(x interface{}) error {
+func validateContactCenterInsightsAutoLabelingRule_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -270,7 +270,7 @@ func validateContactCenterInsightsAutoLabelingRule_IsConstructParameters(x inter
 	return nil
 }
 
-func validateContactCenterInsightsAutoLabelingRule_IsTerraformElementParameters(x interface{}) error {
+func validateContactCenterInsightsAutoLabelingRule_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -278,7 +278,7 @@ func validateContactCenterInsightsAutoLabelingRule_IsTerraformElementParameters(
 	return nil
 }
 
-func validateContactCenterInsightsAutoLabelingRule_IsTerraformResourceParameters(x interface{}) error {
+func validateContactCenterInsightsAutoLabelingRule_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -286,7 +286,7 @@ func validateContactCenterInsightsAutoLabelingRule_IsTerraformResourceParameters
 	return nil
 }
 
-func (j *jsiiProxy_ContactCenterInsightsAutoLabelingRule) validateSetActiveParameters(val interface{}) error {
+func (j *jsiiProxy_ContactCenterInsightsAutoLabelingRule) validateSetActiveParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -314,7 +314,7 @@ func (j *jsiiProxy_ContactCenterInsightsAutoLabelingRule) validateSetAutoLabelin
 	return nil
 }
 
-func (j *jsiiProxy_ContactCenterInsightsAutoLabelingRule) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ContactCenterInsightsAutoLabelingRule) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -347,7 +347,7 @@ func (j *jsiiProxy_ContactCenterInsightsAutoLabelingRule) validateSetConnectionP
 	return nil
 }
 
-func (j *jsiiProxy_ContactCenterInsightsAutoLabelingRule) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ContactCenterInsightsAutoLabelingRule) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -468,7 +468,7 @@ func (j *jsiiProxy_ContactCenterInsightsAutoLabelingRule) validateSetProjectPara
 	return nil
 }
 
-func (j *jsiiProxy_ContactCenterInsightsAutoLabelingRule) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ContactCenterInsightsAutoLabelingRule) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -532,4 +532,3 @@ func validateNewContactCenterInsightsAutoLabelingRuleParameters(scope constructs
 
 	return nil
 }
-

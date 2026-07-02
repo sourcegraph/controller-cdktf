@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.iamWorkloadIdentityPoolProvider.IamWorkloadIdentityPoolProvider",
-		reflect.TypeOf((*IamWorkloadIdentityPoolProvider)(nil)).Elem(),
+		reflect.TypeFor[IamWorkloadIdentityPoolProvider](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -100,7 +100,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "x509", GoGetter: "X509"},
 			_jsii_.MemberProperty{JsiiProperty: "x509Input", GoGetter: "X509Input"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IamWorkloadIdentityPoolProvider{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -108,11 +108,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.iamWorkloadIdentityPoolProvider.IamWorkloadIdentityPoolProviderAws",
-		reflect.TypeOf((*IamWorkloadIdentityPoolProviderAws)(nil)).Elem(),
+		reflect.TypeFor[IamWorkloadIdentityPoolProviderAws](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.iamWorkloadIdentityPoolProvider.IamWorkloadIdentityPoolProviderAwsOutputReference",
-		reflect.TypeOf((*IamWorkloadIdentityPoolProviderAwsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IamWorkloadIdentityPoolProviderAwsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -138,7 +138,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IamWorkloadIdentityPoolProviderAwsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -146,15 +146,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.iamWorkloadIdentityPoolProvider.IamWorkloadIdentityPoolProviderConfig",
-		reflect.TypeOf((*IamWorkloadIdentityPoolProviderConfig)(nil)).Elem(),
+		reflect.TypeFor[IamWorkloadIdentityPoolProviderConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.iamWorkloadIdentityPoolProvider.IamWorkloadIdentityPoolProviderOidc",
-		reflect.TypeOf((*IamWorkloadIdentityPoolProviderOidc)(nil)).Elem(),
+		reflect.TypeFor[IamWorkloadIdentityPoolProviderOidc](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.iamWorkloadIdentityPoolProvider.IamWorkloadIdentityPoolProviderOidcOutputReference",
-		reflect.TypeOf((*IamWorkloadIdentityPoolProviderOidcOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IamWorkloadIdentityPoolProviderOidcOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedAudiences", GoGetter: "AllowedAudiences"},
 			_jsii_.MemberProperty{JsiiProperty: "allowedAudiencesInput", GoGetter: "AllowedAudiencesInput"},
@@ -186,7 +186,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IamWorkloadIdentityPoolProviderOidcOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -194,11 +194,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.iamWorkloadIdentityPoolProvider.IamWorkloadIdentityPoolProviderSaml",
-		reflect.TypeOf((*IamWorkloadIdentityPoolProviderSaml)(nil)).Elem(),
+		reflect.TypeFor[IamWorkloadIdentityPoolProviderSaml](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.iamWorkloadIdentityPoolProvider.IamWorkloadIdentityPoolProviderSamlOutputReference",
-		reflect.TypeOf((*IamWorkloadIdentityPoolProviderSamlOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IamWorkloadIdentityPoolProviderSamlOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -224,7 +224,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IamWorkloadIdentityPoolProviderSamlOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -232,11 +232,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.iamWorkloadIdentityPoolProvider.IamWorkloadIdentityPoolProviderTimeouts",
-		reflect.TypeOf((*IamWorkloadIdentityPoolProviderTimeouts)(nil)).Elem(),
+		reflect.TypeFor[IamWorkloadIdentityPoolProviderTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.iamWorkloadIdentityPoolProvider.IamWorkloadIdentityPoolProviderTimeoutsOutputReference",
-		reflect.TypeOf((*IamWorkloadIdentityPoolProviderTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IamWorkloadIdentityPoolProviderTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -269,7 +269,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IamWorkloadIdentityPoolProviderTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -277,11 +277,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.iamWorkloadIdentityPoolProvider.IamWorkloadIdentityPoolProviderX509",
-		reflect.TypeOf((*IamWorkloadIdentityPoolProviderX509)(nil)).Elem(),
+		reflect.TypeFor[IamWorkloadIdentityPoolProviderX509](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.iamWorkloadIdentityPoolProvider.IamWorkloadIdentityPoolProviderX509OutputReference",
-		reflect.TypeOf((*IamWorkloadIdentityPoolProviderX509OutputReference)(nil)).Elem(),
+		reflect.TypeFor[IamWorkloadIdentityPoolProviderX509OutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -308,7 +308,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "trustStore", GoGetter: "TrustStore"},
 			_jsii_.MemberProperty{JsiiProperty: "trustStoreInput", GoGetter: "TrustStoreInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IamWorkloadIdentityPoolProviderX509OutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -316,15 +316,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.iamWorkloadIdentityPoolProvider.IamWorkloadIdentityPoolProviderX509TrustStore",
-		reflect.TypeOf((*IamWorkloadIdentityPoolProviderX509TrustStore)(nil)).Elem(),
+		reflect.TypeFor[IamWorkloadIdentityPoolProviderX509TrustStore](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.iamWorkloadIdentityPoolProvider.IamWorkloadIdentityPoolProviderX509TrustStoreIntermediateCas",
-		reflect.TypeOf((*IamWorkloadIdentityPoolProviderX509TrustStoreIntermediateCas)(nil)).Elem(),
+		reflect.TypeFor[IamWorkloadIdentityPoolProviderX509TrustStoreIntermediateCas](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.iamWorkloadIdentityPoolProvider.IamWorkloadIdentityPoolProviderX509TrustStoreIntermediateCasList",
-		reflect.TypeOf((*IamWorkloadIdentityPoolProviderX509TrustStoreIntermediateCasList)(nil)).Elem(),
+		reflect.TypeFor[IamWorkloadIdentityPoolProviderX509TrustStoreIntermediateCasList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -338,7 +338,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IamWorkloadIdentityPoolProviderX509TrustStoreIntermediateCasList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -346,7 +346,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.iamWorkloadIdentityPoolProvider.IamWorkloadIdentityPoolProviderX509TrustStoreIntermediateCasOutputReference",
-		reflect.TypeOf((*IamWorkloadIdentityPoolProviderX509TrustStoreIntermediateCasOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IamWorkloadIdentityPoolProviderX509TrustStoreIntermediateCasOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -373,7 +373,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IamWorkloadIdentityPoolProviderX509TrustStoreIntermediateCasOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -381,7 +381,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.iamWorkloadIdentityPoolProvider.IamWorkloadIdentityPoolProviderX509TrustStoreOutputReference",
-		reflect.TypeOf((*IamWorkloadIdentityPoolProviderX509TrustStoreOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IamWorkloadIdentityPoolProviderX509TrustStoreOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -412,7 +412,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "trustAnchors", GoGetter: "TrustAnchors"},
 			_jsii_.MemberProperty{JsiiProperty: "trustAnchorsInput", GoGetter: "TrustAnchorsInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IamWorkloadIdentityPoolProviderX509TrustStoreOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -420,11 +420,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.iamWorkloadIdentityPoolProvider.IamWorkloadIdentityPoolProviderX509TrustStoreTrustAnchors",
-		reflect.TypeOf((*IamWorkloadIdentityPoolProviderX509TrustStoreTrustAnchors)(nil)).Elem(),
+		reflect.TypeFor[IamWorkloadIdentityPoolProviderX509TrustStoreTrustAnchors](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.iamWorkloadIdentityPoolProvider.IamWorkloadIdentityPoolProviderX509TrustStoreTrustAnchorsList",
-		reflect.TypeOf((*IamWorkloadIdentityPoolProviderX509TrustStoreTrustAnchorsList)(nil)).Elem(),
+		reflect.TypeFor[IamWorkloadIdentityPoolProviderX509TrustStoreTrustAnchorsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -438,7 +438,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IamWorkloadIdentityPoolProviderX509TrustStoreTrustAnchorsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -446,7 +446,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.iamWorkloadIdentityPoolProvider.IamWorkloadIdentityPoolProviderX509TrustStoreTrustAnchorsOutputReference",
-		reflect.TypeOf((*IamWorkloadIdentityPoolProviderX509TrustStoreTrustAnchorsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IamWorkloadIdentityPoolProviderX509TrustStoreTrustAnchorsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -473,7 +473,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IamWorkloadIdentityPoolProviderX509TrustStoreTrustAnchorsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

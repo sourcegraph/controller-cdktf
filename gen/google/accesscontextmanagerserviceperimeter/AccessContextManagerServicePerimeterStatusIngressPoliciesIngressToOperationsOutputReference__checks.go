@@ -90,7 +90,7 @@ func (a *jsiiProxy_AccessContextManagerServicePerimeterStatusIngressPoliciesIngr
 	return nil
 }
 
-func (a *jsiiProxy_AccessContextManagerServicePerimeterStatusIngressPoliciesIngressToOperationsOutputReference) validatePutMethodSelectorsParameters(value interface{}) error {
+func (a *jsiiProxy_AccessContextManagerServicePerimeterStatusIngressPoliciesIngressToOperationsOutputReference) validatePutMethodSelectorsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (a *jsiiProxy_AccessContextManagerServicePerimeterStatusIngressPoliciesIngr
 	return nil
 }
 
-func (j *jsiiProxy_AccessContextManagerServicePerimeterStatusIngressPoliciesIngressToOperationsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AccessContextManagerServicePerimeterStatusIngressPoliciesIngressToOperationsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -194,7 +194,7 @@ func (j *jsiiProxy_AccessContextManagerServicePerimeterStatusIngressPoliciesIngr
 	return nil
 }
 
-func (j *jsiiProxy_AccessContextManagerServicePerimeterStatusIngressPoliciesIngressToOperationsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AccessContextManagerServicePerimeterStatusIngressPoliciesIngressToOperationsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -261,4 +261,3 @@ func validateNewAccessContextManagerServicePerimeterStatusIngressPoliciesIngress
 
 	return nil
 }
-

@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataGoogleIapWebRegionBackendServiceIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataGoogleIapWebRegionBackendServiceIamPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataGoogleIapWebRegionBackendServiceIamPolicy_GenerateConfigForImpo
 	return nil
 }
 
-func validateDataGoogleIapWebRegionBackendServiceIamPolicy_IsConstructParameters(x interface{}) error {
+func validateDataGoogleIapWebRegionBackendServiceIamPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataGoogleIapWebRegionBackendServiceIamPolicy_IsConstructParameters
 	return nil
 }
 
-func validateDataGoogleIapWebRegionBackendServiceIamPolicy_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataGoogleIapWebRegionBackendServiceIamPolicy_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataGoogleIapWebRegionBackendServiceIamPolicy_IsTerraformDataSource
 	return nil
 }
 
-func validateDataGoogleIapWebRegionBackendServiceIamPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateDataGoogleIapWebRegionBackendServiceIamPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func validateDataGoogleIapWebRegionBackendServiceIamPolicy_IsTerraformElementPar
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleIapWebRegionBackendServiceIamPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleIapWebRegionBackendServiceIamPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -266,4 +266,3 @@ func validateNewDataGoogleIapWebRegionBackendServiceIamPolicyParameters(scope co
 
 	return nil
 }
-

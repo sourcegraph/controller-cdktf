@@ -109,7 +109,7 @@ func (s *jsiiProxy_SccOrganizationCustomModuleCustomConfigCustomOutputProperties
 	return nil
 }
 
-func (j *jsiiProxy_SccOrganizationCustomModuleCustomConfigCustomOutputPropertiesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SccOrganizationCustomModuleCustomConfigCustomOutputPropertiesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -174,7 +174,7 @@ func (j *jsiiProxy_SccOrganizationCustomModuleCustomConfigCustomOutputProperties
 	return nil
 }
 
-func (j *jsiiProxy_SccOrganizationCustomModuleCustomConfigCustomOutputPropertiesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SccOrganizationCustomModuleCustomConfigCustomOutputPropertiesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -241,4 +241,3 @@ func validateNewSccOrganizationCustomModuleCustomConfigCustomOutputPropertiesOut
 
 	return nil
 }
-

@@ -12,9 +12,9 @@ type CloudRunV2ServiceTemplateVolumesSecretItemsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,8 +27,8 @@ type CloudRunV2ServiceTemplateVolumesSecretItemsOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Mode() *float64
 	SetMode(val *float64)
 	ModeInput() *float64
@@ -49,7 +49,7 @@ type CloudRunV2ServiceTemplateVolumesSecretItemsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -74,7 +74,7 @@ type CloudRunV2ServiceTemplateVolumesSecretItemsOutputReference interface {
 	ResetVersion()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -87,8 +87,8 @@ type jsiiProxy_CloudRunV2ServiceTemplateVolumesSecretItemsOutputReference struct
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_CloudRunV2ServiceTemplateVolumesSecretItemsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudRunV2ServiceTemplateVolumesSecretItemsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -127,8 +127,8 @@ func (j *jsiiProxy_CloudRunV2ServiceTemplateVolumesSecretItemsOutputReference) F
 	return returns
 }
 
-func (j *jsiiProxy_CloudRunV2ServiceTemplateVolumesSecretItemsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudRunV2ServiceTemplateVolumesSecretItemsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -217,7 +217,6 @@ func (j *jsiiProxy_CloudRunV2ServiceTemplateVolumesSecretItemsOutputReference) V
 	return returns
 }
 
-
 func NewCloudRunV2ServiceTemplateVolumesSecretItemsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) CloudRunV2ServiceTemplateVolumesSecretItemsOutputReference {
 	_init_.Initialize()
 
@@ -228,7 +227,7 @@ func NewCloudRunV2ServiceTemplateVolumesSecretItemsOutputReference(terraformReso
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumesSecretItemsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -240,12 +239,12 @@ func NewCloudRunV2ServiceTemplateVolumesSecretItemsOutputReference_Override(c Cl
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumesSecretItemsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CloudRunV2ServiceTemplateVolumesSecretItemsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CloudRunV2ServiceTemplateVolumesSecretItemsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -256,7 +255,7 @@ func (j *jsiiProxy_CloudRunV2ServiceTemplateVolumesSecretItemsOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_CloudRunV2ServiceTemplateVolumesSecretItemsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CloudRunV2ServiceTemplateVolumesSecretItemsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -267,7 +266,7 @@ func (j *jsiiProxy_CloudRunV2ServiceTemplateVolumesSecretItemsOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_CloudRunV2ServiceTemplateVolumesSecretItemsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_CloudRunV2ServiceTemplateVolumesSecretItemsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -278,7 +277,7 @@ func (j *jsiiProxy_CloudRunV2ServiceTemplateVolumesSecretItemsOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_CloudRunV2ServiceTemplateVolumesSecretItemsOutputReference)SetMode(val *float64) {
+func (j *jsiiProxy_CloudRunV2ServiceTemplateVolumesSecretItemsOutputReference) SetMode(val *float64) {
 	if err := j.validateSetModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -289,7 +288,7 @@ func (j *jsiiProxy_CloudRunV2ServiceTemplateVolumesSecretItemsOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_CloudRunV2ServiceTemplateVolumesSecretItemsOutputReference)SetPath(val *string) {
+func (j *jsiiProxy_CloudRunV2ServiceTemplateVolumesSecretItemsOutputReference) SetPath(val *string) {
 	if err := j.validateSetPathParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,7 +299,7 @@ func (j *jsiiProxy_CloudRunV2ServiceTemplateVolumesSecretItemsOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_CloudRunV2ServiceTemplateVolumesSecretItemsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CloudRunV2ServiceTemplateVolumesSecretItemsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,7 +310,7 @@ func (j *jsiiProxy_CloudRunV2ServiceTemplateVolumesSecretItemsOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_CloudRunV2ServiceTemplateVolumesSecretItemsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CloudRunV2ServiceTemplateVolumesSecretItemsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -322,7 +321,7 @@ func (j *jsiiProxy_CloudRunV2ServiceTemplateVolumesSecretItemsOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_CloudRunV2ServiceTemplateVolumesSecretItemsOutputReference)SetVersion(val *string) {
+func (j *jsiiProxy_CloudRunV2ServiceTemplateVolumesSecretItemsOutputReference) SetVersion(val *string) {
 	if err := j.validateSetVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -346,16 +345,16 @@ func (c *jsiiProxy_CloudRunV2ServiceTemplateVolumesSecretItemsOutputReference) C
 	return returns
 }
 
-func (c *jsiiProxy_CloudRunV2ServiceTemplateVolumesSecretItemsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CloudRunV2ServiceTemplateVolumesSecretItemsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -371,7 +370,7 @@ func (c *jsiiProxy_CloudRunV2ServiceTemplateVolumesSecretItemsOutputReference) G
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -387,7 +386,7 @@ func (c *jsiiProxy_CloudRunV2ServiceTemplateVolumesSecretItemsOutputReference) G
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -403,7 +402,7 @@ func (c *jsiiProxy_CloudRunV2ServiceTemplateVolumesSecretItemsOutputReference) G
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -419,7 +418,7 @@ func (c *jsiiProxy_CloudRunV2ServiceTemplateVolumesSecretItemsOutputReference) G
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -435,7 +434,7 @@ func (c *jsiiProxy_CloudRunV2ServiceTemplateVolumesSecretItemsOutputReference) G
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -451,7 +450,7 @@ func (c *jsiiProxy_CloudRunV2ServiceTemplateVolumesSecretItemsOutputReference) G
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -467,7 +466,7 @@ func (c *jsiiProxy_CloudRunV2ServiceTemplateVolumesSecretItemsOutputReference) G
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -483,7 +482,7 @@ func (c *jsiiProxy_CloudRunV2ServiceTemplateVolumesSecretItemsOutputReference) G
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -512,7 +511,7 @@ func (c *jsiiProxy_CloudRunV2ServiceTemplateVolumesSecretItemsOutputReference) I
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -535,16 +534,16 @@ func (c *jsiiProxy_CloudRunV2ServiceTemplateVolumesSecretItemsOutputReference) R
 	)
 }
 
-func (c *jsiiProxy_CloudRunV2ServiceTemplateVolumesSecretItemsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_CloudRunV2ServiceTemplateVolumesSecretItemsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -563,4 +562,3 @@ func (c *jsiiProxy_CloudRunV2ServiceTemplateVolumesSecretItemsOutputReference) T
 
 	return returns
 }
-

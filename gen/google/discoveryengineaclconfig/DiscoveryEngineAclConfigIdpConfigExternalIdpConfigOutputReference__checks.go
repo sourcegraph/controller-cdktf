@@ -98,7 +98,7 @@ func (d *jsiiProxy_DiscoveryEngineAclConfigIdpConfigExternalIdpConfigOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineAclConfigIdpConfigExternalIdpConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DiscoveryEngineAclConfigIdpConfigExternalIdpConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDiscoveryEngineAclConfigIdpConfigExternalIdpConfigOutputReferenc
 
 	return nil
 }
-

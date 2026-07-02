@@ -122,7 +122,7 @@ func (j *jsiiProxy_LookerInstanceUserMetadataOutputReference) validateSetAdditio
 	return nil
 }
 
-func (j *jsiiProxy_LookerInstanceUserMetadataOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LookerInstanceUserMetadataOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewLookerInstanceUserMetadataOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

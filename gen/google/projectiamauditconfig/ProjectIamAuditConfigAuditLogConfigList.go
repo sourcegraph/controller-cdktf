@@ -17,8 +17,8 @@ type ProjectIamAuditConfigAuditLogConfigList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type ProjectIamAuditConfigAuditLogConfigList interface {
 	Get(index *float64) ProjectIamAuditConfigAuditLogConfigOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_ProjectIamAuditConfigAuditLogConfigList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectIamAuditConfigAuditLogConfigList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ProjectIamAuditConfigAuditLogConfigList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_ProjectIamAuditConfigAuditLogConfigList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewProjectIamAuditConfigAuditLogConfigList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ProjectIamAuditConfigAuditLogConfigList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewProjectIamAuditConfigAuditLogConfigList(terraformResource cdktf.IInterpo
 
 	_jsii_.Create(
 		"@cdktf/provider-google.projectIamAuditConfig.ProjectIamAuditConfigAuditLogConfigList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewProjectIamAuditConfigAuditLogConfigList_Override(p ProjectIamAuditConfig
 
 	_jsii_.Create(
 		"@cdktf/provider-google.projectIamAuditConfig.ProjectIamAuditConfigAuditLogConfigList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		p,
 	)
 }
 
-func (j *jsiiProxy_ProjectIamAuditConfigAuditLogConfigList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ProjectIamAuditConfigAuditLogConfigList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_ProjectIamAuditConfigAuditLogConfigList)SetInternalValue(val 
 	)
 }
 
-func (j *jsiiProxy_ProjectIamAuditConfigAuditLogConfigList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ProjectIamAuditConfigAuditLogConfigList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_ProjectIamAuditConfigAuditLogConfigList)SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_ProjectIamAuditConfigAuditLogConfigList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ProjectIamAuditConfigAuditLogConfigList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_ProjectIamAuditConfigAuditLogConfigList)SetTerraformResource(
 	)
 }
 
-func (j *jsiiProxy_ProjectIamAuditConfigAuditLogConfigList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ProjectIamAuditConfigAuditLogConfigList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (p *jsiiProxy_ProjectIamAuditConfigAuditLogConfigList) AllWithMapKey(mapKey
 	_jsii_.Invoke(
 		p,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (p *jsiiProxy_ProjectIamAuditConfigAuditLogConfigList) Get(index *float64) 
 	_jsii_.Invoke(
 		p,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (p *jsiiProxy_ProjectIamAuditConfigAuditLogConfigList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_ProjectIamAuditConfigAuditLogConfigList) Resolve(_context cdktf.IResolveContext) any {
 	if err := p.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (p *jsiiProxy_ProjectIamAuditConfigAuditLogConfigList) ToString() *string {
 
 	return returns
 }
-

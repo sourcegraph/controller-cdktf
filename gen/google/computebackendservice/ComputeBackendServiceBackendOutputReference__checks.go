@@ -90,7 +90,7 @@ func (c *jsiiProxy_ComputeBackendServiceBackendOutputReference) validateInterpol
 	return nil
 }
 
-func (c *jsiiProxy_ComputeBackendServiceBackendOutputReference) validatePutCustomMetricsParameters(value interface{}) error {
+func (c *jsiiProxy_ComputeBackendServiceBackendOutputReference) validatePutCustomMetricsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -145,7 +145,7 @@ func (j *jsiiProxy_ComputeBackendServiceBackendOutputReference) validateSetCapac
 	return nil
 }
 
-func (j *jsiiProxy_ComputeBackendServiceBackendOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeBackendServiceBackendOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -226,7 +226,7 @@ func (j *jsiiProxy_ComputeBackendServiceBackendOutputReference) validateSetGroup
 	return nil
 }
 
-func (j *jsiiProxy_ComputeBackendServiceBackendOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeBackendServiceBackendOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -349,4 +349,3 @@ func validateNewComputeBackendServiceBackendOutputReferenceParameters(terraformR
 
 	return nil
 }
-

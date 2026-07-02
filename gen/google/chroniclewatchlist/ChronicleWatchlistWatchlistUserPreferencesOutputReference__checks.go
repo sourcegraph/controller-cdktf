@@ -98,7 +98,7 @@ func (c *jsiiProxy_ChronicleWatchlistWatchlistUserPreferencesOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_ChronicleWatchlistWatchlistUserPreferencesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ChronicleWatchlistWatchlistUserPreferencesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_ChronicleWatchlistWatchlistUserPreferencesOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_ChronicleWatchlistWatchlistUserPreferencesOutputReference) validateSetPinnedParameters(val interface{}) error {
+func (j *jsiiProxy_ChronicleWatchlistWatchlistUserPreferencesOutputReference) validateSetPinnedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -218,4 +218,3 @@ func validateNewChronicleWatchlistWatchlistUserPreferencesOutputReferenceParamet
 
 	return nil
 }
-

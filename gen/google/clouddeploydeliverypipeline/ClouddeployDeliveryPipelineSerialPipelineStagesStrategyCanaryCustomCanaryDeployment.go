@@ -1,10 +1,8 @@
 package clouddeploydeliverypipeline
 
-
 type ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeployment struct {
 	// phase_configs block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_delivery_pipeline#phase_configs ClouddeployDeliveryPipeline#phase_configs}
-	PhaseConfigs interface{} `field:"required" json:"phaseConfigs" yaml:"phaseConfigs"`
+	PhaseConfigs any `field:"required" json:"phaseConfigs" yaml:"phaseConfigs"`
 }
-

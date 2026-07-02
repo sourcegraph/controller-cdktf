@@ -34,7 +34,7 @@ func (i *jsiiProxy_IamPrincipalAccessBoundaryPolicyDetailsRulesList) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_IamPrincipalAccessBoundaryPolicyDetailsRulesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_IamPrincipalAccessBoundaryPolicyDetailsRulesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewIamPrincipalAccessBoundaryPolicyDetailsRulesListParameters(terra
 
 	return nil
 }
-

@@ -90,7 +90,7 @@ func (c *jsiiProxy_ComputeOrganizationSecurityPolicyRuleHeaderActionOutputRefere
 	return nil
 }
 
-func (c *jsiiProxy_ComputeOrganizationSecurityPolicyRuleHeaderActionOutputReference) validatePutRequestHeadersToAddsParameters(value interface{}) error {
+func (c *jsiiProxy_ComputeOrganizationSecurityPolicyRuleHeaderActionOutputReference) validatePutRequestHeadersToAddsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (c *jsiiProxy_ComputeOrganizationSecurityPolicyRuleHeaderActionOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_ComputeOrganizationSecurityPolicyRuleHeaderActionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeOrganizationSecurityPolicyRuleHeaderActionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -229,4 +229,3 @@ func validateNewComputeOrganizationSecurityPolicyRuleHeaderActionOutputReference
 
 	return nil
 }
-

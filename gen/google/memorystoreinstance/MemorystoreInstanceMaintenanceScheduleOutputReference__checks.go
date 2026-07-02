@@ -98,7 +98,7 @@ func (m *jsiiProxy_MemorystoreInstanceMaintenanceScheduleOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_MemorystoreInstanceMaintenanceScheduleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MemorystoreInstanceMaintenanceScheduleOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewMemorystoreInstanceMaintenanceScheduleOutputReferenceParameters(
 
 	return nil
 }
-

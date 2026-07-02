@@ -6,9 +6,9 @@ import (
 
 type WorkflowsWorkflowConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type WorkflowsWorkflowConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Describes the level of platform logging to apply to calls and call responses during executions of this workflow.
 	//
 	// If both the workflow and the execution specify a logging level,
@@ -42,7 +42,7 @@ type WorkflowsWorkflowConfig struct {
 	// When the field is set to false, deleting the workflow is allowed.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workflows_workflow#deletion_protection WorkflowsWorkflow#deletion_protection}
-	DeletionProtection interface{} `field:"optional" json:"deletionProtection" yaml:"deletionProtection"`
+	DeletionProtection any `field:"optional" json:"deletionProtection" yaml:"deletionProtection"`
 	// Description of the workflow provided by the user. Must be at most 1000 unicode characters long.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workflows_workflow#description WorkflowsWorkflow#description}
@@ -114,4 +114,3 @@ type WorkflowsWorkflowConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workflows_workflow#user_env_vars WorkflowsWorkflow#user_env_vars}
 	UserEnvVars *map[string]*string `field:"optional" json:"userEnvVars" yaml:"userEnvVars"`
 }
-

@@ -6,9 +6,9 @@ import (
 
 type ColabRuntimeConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type ColabRuntimeConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Required. The display name of the Runtime.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/colab_runtime#display_name ColabRuntime#display_name}
@@ -34,7 +34,7 @@ type ColabRuntimeConfig struct {
 	// Triggers an upgrade anytime the runtime is started if it is upgradable.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/colab_runtime#auto_upgrade ColabRuntime#auto_upgrade}
-	AutoUpgrade interface{} `field:"optional" json:"autoUpgrade" yaml:"autoUpgrade"`
+	AutoUpgrade any `field:"optional" json:"autoUpgrade" yaml:"autoUpgrade"`
 	// The description of the Runtime.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/colab_runtime#description ColabRuntime#description}
@@ -65,4 +65,3 @@ type ColabRuntimeConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/colab_runtime#timeouts ColabRuntime#timeouts}
 	Timeouts *ColabRuntimeTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

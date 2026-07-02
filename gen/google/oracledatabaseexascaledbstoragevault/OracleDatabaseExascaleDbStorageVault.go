@@ -15,19 +15,19 @@ type OracleDatabaseExascaleDbStorageVault interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
-	DeletionProtection() interface{}
-	SetDeletionProtection(val interface{})
-	DeletionProtectionInput() interface{}
+	DeletionProtection() any
+	SetDeletionProtection(val any)
+	DeletionProtectionInput() any
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -77,27 +77,27 @@ type OracleDatabaseExascaleDbStorageVault interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() OracleDatabaseExascaleDbStorageVaultTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -115,7 +115,7 @@ type OracleDatabaseExascaleDbStorageVault interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -127,7 +127,7 @@ type OracleDatabaseExascaleDbStorageVault interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -145,17 +145,17 @@ type OracleDatabaseExascaleDbStorageVault interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for OracleDatabaseExascaleDbStorageVault
@@ -173,8 +173,8 @@ func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVault) CdktfStack() cdktf.Terr
 	return returns
 }
 
-func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVault) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVault) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -183,8 +183,8 @@ func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVault) Connection() interface{
 	return returns
 }
 
-func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVault) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVault) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -193,8 +193,8 @@ func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVault) ConstructNodeMetadata()
 	return returns
 }
 
-func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVault) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVault) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -213,8 +213,8 @@ func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVault) CreateTime() *string {
 	return returns
 }
 
-func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVault) DeletionProtection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVault) DeletionProtection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deletionProtection",
@@ -223,8 +223,8 @@ func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVault) DeletionProtection() in
 	return returns
 }
 
-func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVault) DeletionProtectionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVault) DeletionProtectionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deletionProtectionInput",
@@ -493,8 +493,8 @@ func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVault) Provider() cdktf.Terraf
 	return returns
 }
 
-func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVault) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVault) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -503,8 +503,8 @@ func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVault) Provisioners() *[]inter
 	return returns
 }
 
-func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVault) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVault) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -533,8 +533,8 @@ func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVault) TerraformLabels() cdktf
 	return returns
 }
 
-func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVault) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVault) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -563,8 +563,8 @@ func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVault) Timeouts() OracleDataba
 	return returns
 }
 
-func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVault) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVault) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -572,7 +572,6 @@ func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVault) TimeoutsInput() interfa
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/oracle_database_exascale_db_storage_vault google_oracle_database_exascale_db_storage_vault} Resource.
 func NewOracleDatabaseExascaleDbStorageVault(scope constructs.Construct, id *string, config *OracleDatabaseExascaleDbStorageVaultConfig) OracleDatabaseExascaleDbStorageVault {
@@ -585,7 +584,7 @@ func NewOracleDatabaseExascaleDbStorageVault(scope constructs.Construct, id *str
 
 	_jsii_.Create(
 		"@cdktf/provider-google.oracleDatabaseExascaleDbStorageVault.OracleDatabaseExascaleDbStorageVault",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -598,12 +597,12 @@ func NewOracleDatabaseExascaleDbStorageVault_Override(o OracleDatabaseExascaleDb
 
 	_jsii_.Create(
 		"@cdktf/provider-google.oracleDatabaseExascaleDbStorageVault.OracleDatabaseExascaleDbStorageVault",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		o,
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVault)SetConnection(val interface{}) {
+func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVault) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -614,7 +613,7 @@ func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVault)SetConnection(val interf
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVault)SetCount(val interface{}) {
+func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVault) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -625,7 +624,7 @@ func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVault)SetCount(val interface{}
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVault)SetDeletionProtection(val interface{}) {
+func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVault) SetDeletionProtection(val any) {
 	if err := j.validateSetDeletionProtectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -636,7 +635,7 @@ func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVault)SetDeletionProtection(va
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVault)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVault) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -644,7 +643,7 @@ func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVault)SetDependsOn(val *[]*str
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVault)SetDisplayName(val *string) {
+func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVault) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -655,7 +654,7 @@ func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVault)SetDisplayName(val *stri
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVault)SetExascaleDbStorageVaultId(val *string) {
+func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVault) SetExascaleDbStorageVaultId(val *string) {
 	if err := j.validateSetExascaleDbStorageVaultIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -666,7 +665,7 @@ func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVault)SetExascaleDbStorageVaul
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVault)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVault) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -674,7 +673,7 @@ func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVault)SetForEach(val cdktf.ITe
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVault)SetGcpOracleZone(val *string) {
+func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVault) SetGcpOracleZone(val *string) {
 	if err := j.validateSetGcpOracleZoneParameters(val); err != nil {
 		panic(err)
 	}
@@ -685,7 +684,7 @@ func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVault)SetGcpOracleZone(val *st
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVault)SetId(val *string) {
+func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVault) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -696,7 +695,7 @@ func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVault)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVault)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVault) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -707,7 +706,7 @@ func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVault)SetLabels(val *map[strin
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVault)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVault) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -718,7 +717,7 @@ func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVault)SetLifecycle(val *cdktf.
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVault)SetLocation(val *string) {
+func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVault) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -729,7 +728,7 @@ func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVault)SetLocation(val *string)
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVault)SetProject(val *string) {
+func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVault) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -740,7 +739,7 @@ func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVault)SetProject(val *string) 
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVault)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVault) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -748,7 +747,7 @@ func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVault)SetProvider(val cdktf.Te
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVault)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVault) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -771,7 +770,7 @@ func OracleDatabaseExascaleDbStorageVault_GenerateConfigForImport(scope construc
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.oracleDatabaseExascaleDbStorageVault.OracleDatabaseExascaleDbStorageVault",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -795,7 +794,7 @@ func OracleDatabaseExascaleDbStorageVault_GenerateConfigForImport(scope construc
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func OracleDatabaseExascaleDbStorageVault_IsConstruct(x interface{}) *bool {
+func OracleDatabaseExascaleDbStorageVault_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateOracleDatabaseExascaleDbStorageVault_IsConstructParameters(x); err != nil {
@@ -806,7 +805,7 @@ func OracleDatabaseExascaleDbStorageVault_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.oracleDatabaseExascaleDbStorageVault.OracleDatabaseExascaleDbStorageVault",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -814,7 +813,7 @@ func OracleDatabaseExascaleDbStorageVault_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func OracleDatabaseExascaleDbStorageVault_IsTerraformElement(x interface{}) *bool {
+func OracleDatabaseExascaleDbStorageVault_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateOracleDatabaseExascaleDbStorageVault_IsTerraformElementParameters(x); err != nil {
@@ -825,7 +824,7 @@ func OracleDatabaseExascaleDbStorageVault_IsTerraformElement(x interface{}) *boo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.oracleDatabaseExascaleDbStorageVault.OracleDatabaseExascaleDbStorageVault",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -833,7 +832,7 @@ func OracleDatabaseExascaleDbStorageVault_IsTerraformElement(x interface{}) *boo
 }
 
 // Experimental.
-func OracleDatabaseExascaleDbStorageVault_IsTerraformResource(x interface{}) *bool {
+func OracleDatabaseExascaleDbStorageVault_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateOracleDatabaseExascaleDbStorageVault_IsTerraformResourceParameters(x); err != nil {
@@ -844,7 +843,7 @@ func OracleDatabaseExascaleDbStorageVault_IsTerraformResource(x interface{}) *bo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.oracleDatabaseExascaleDbStorageVault.OracleDatabaseExascaleDbStorageVault",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -869,31 +868,31 @@ func (o *jsiiProxy_OracleDatabaseExascaleDbStorageVault) AddMoveTarget(moveTarge
 	_jsii_.InvokeVoid(
 		o,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (o *jsiiProxy_OracleDatabaseExascaleDbStorageVault) AddOverride(path *string, value interface{}) {
+func (o *jsiiProxy_OracleDatabaseExascaleDbStorageVault) AddOverride(path *string, value any) {
 	if err := o.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		o,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (o *jsiiProxy_OracleDatabaseExascaleDbStorageVault) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (o *jsiiProxy_OracleDatabaseExascaleDbStorageVault) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -909,7 +908,7 @@ func (o *jsiiProxy_OracleDatabaseExascaleDbStorageVault) GetBooleanAttribute(ter
 	_jsii_.Invoke(
 		o,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -925,7 +924,7 @@ func (o *jsiiProxy_OracleDatabaseExascaleDbStorageVault) GetBooleanMapAttribute(
 	_jsii_.Invoke(
 		o,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -941,7 +940,7 @@ func (o *jsiiProxy_OracleDatabaseExascaleDbStorageVault) GetListAttribute(terraf
 	_jsii_.Invoke(
 		o,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -957,7 +956,7 @@ func (o *jsiiProxy_OracleDatabaseExascaleDbStorageVault) GetNumberAttribute(terr
 	_jsii_.Invoke(
 		o,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -973,7 +972,7 @@ func (o *jsiiProxy_OracleDatabaseExascaleDbStorageVault) GetNumberListAttribute(
 	_jsii_.Invoke(
 		o,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -989,7 +988,7 @@ func (o *jsiiProxy_OracleDatabaseExascaleDbStorageVault) GetNumberMapAttribute(t
 	_jsii_.Invoke(
 		o,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1005,7 +1004,7 @@ func (o *jsiiProxy_OracleDatabaseExascaleDbStorageVault) GetStringAttribute(terr
 	_jsii_.Invoke(
 		o,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1021,15 +1020,15 @@ func (o *jsiiProxy_OracleDatabaseExascaleDbStorageVault) GetStringMapAttribute(t
 	_jsii_.Invoke(
 		o,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (o *jsiiProxy_OracleDatabaseExascaleDbStorageVault) HasResourceMove() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OracleDatabaseExascaleDbStorageVault) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -1048,7 +1047,7 @@ func (o *jsiiProxy_OracleDatabaseExascaleDbStorageVault) ImportFrom(id *string, 
 	_jsii_.InvokeVoid(
 		o,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1061,7 +1060,7 @@ func (o *jsiiProxy_OracleDatabaseExascaleDbStorageVault) InterpolationForAttribu
 	_jsii_.Invoke(
 		o,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1075,18 +1074,18 @@ func (o *jsiiProxy_OracleDatabaseExascaleDbStorageVault) MoveFromId(id *string) 
 	_jsii_.InvokeVoid(
 		o,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (o *jsiiProxy_OracleDatabaseExascaleDbStorageVault) MoveTo(moveTarget *string, index interface{}) {
+func (o *jsiiProxy_OracleDatabaseExascaleDbStorageVault) MoveTo(moveTarget *string, index any) {
 	if err := o.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		o,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1097,7 +1096,7 @@ func (o *jsiiProxy_OracleDatabaseExascaleDbStorageVault) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		o,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1108,7 +1107,7 @@ func (o *jsiiProxy_OracleDatabaseExascaleDbStorageVault) OverrideLogicalId(newLo
 	_jsii_.InvokeVoid(
 		o,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1119,7 +1118,7 @@ func (o *jsiiProxy_OracleDatabaseExascaleDbStorageVault) PutProperties(value *Or
 	_jsii_.InvokeVoid(
 		o,
 		"putProperties",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1130,7 +1129,7 @@ func (o *jsiiProxy_OracleDatabaseExascaleDbStorageVault) PutTimeouts(value *Orac
 	_jsii_.InvokeVoid(
 		o,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1190,8 +1189,8 @@ func (o *jsiiProxy_OracleDatabaseExascaleDbStorageVault) ResetTimeouts() {
 	)
 }
 
-func (o *jsiiProxy_OracleDatabaseExascaleDbStorageVault) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (o *jsiiProxy_OracleDatabaseExascaleDbStorageVault) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
@@ -1203,8 +1202,8 @@ func (o *jsiiProxy_OracleDatabaseExascaleDbStorageVault) SynthesizeAttributes() 
 	return returns
 }
 
-func (o *jsiiProxy_OracleDatabaseExascaleDbStorageVault) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (o *jsiiProxy_OracleDatabaseExascaleDbStorageVault) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
@@ -1216,8 +1215,8 @@ func (o *jsiiProxy_OracleDatabaseExascaleDbStorageVault) SynthesizeHclAttributes
 	return returns
 }
 
-func (o *jsiiProxy_OracleDatabaseExascaleDbStorageVault) ToHclTerraform() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OracleDatabaseExascaleDbStorageVault) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -1229,8 +1228,8 @@ func (o *jsiiProxy_OracleDatabaseExascaleDbStorageVault) ToHclTerraform() interf
 	return returns
 }
 
-func (o *jsiiProxy_OracleDatabaseExascaleDbStorageVault) ToMetadata() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OracleDatabaseExascaleDbStorageVault) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -1255,8 +1254,8 @@ func (o *jsiiProxy_OracleDatabaseExascaleDbStorageVault) ToString() *string {
 	return returns
 }
 
-func (o *jsiiProxy_OracleDatabaseExascaleDbStorageVault) ToTerraform() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OracleDatabaseExascaleDbStorageVault) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -1267,4 +1266,3 @@ func (o *jsiiProxy_OracleDatabaseExascaleDbStorageVault) ToTerraform() interface
 
 	return returns
 }
-

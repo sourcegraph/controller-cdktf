@@ -98,7 +98,7 @@ func (s *jsiiProxy_SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyCo
 	return nil
 }
 
-func (j *jsiiProxy_SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConst
 
 	return nil
 }
-

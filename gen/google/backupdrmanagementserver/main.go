@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.backupDrManagementServer.BackupDrManagementServer",
-		reflect.TypeOf((*BackupDrManagementServer)(nil)).Elem(),
+		reflect.TypeFor[BackupDrManagementServer](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -76,7 +76,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BackupDrManagementServer{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -84,15 +84,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.backupDrManagementServer.BackupDrManagementServerConfig",
-		reflect.TypeOf((*BackupDrManagementServerConfig)(nil)).Elem(),
+		reflect.TypeFor[BackupDrManagementServerConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.backupDrManagementServer.BackupDrManagementServerManagementUri",
-		reflect.TypeOf((*BackupDrManagementServerManagementUri)(nil)).Elem(),
+		reflect.TypeFor[BackupDrManagementServerManagementUri](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.backupDrManagementServer.BackupDrManagementServerManagementUriList",
-		reflect.TypeOf((*BackupDrManagementServerManagementUriList)(nil)).Elem(),
+		reflect.TypeFor[BackupDrManagementServerManagementUriList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -105,7 +105,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BackupDrManagementServerManagementUriList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -113,7 +113,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.backupDrManagementServer.BackupDrManagementServerManagementUriOutputReference",
-		reflect.TypeOf((*BackupDrManagementServerManagementUriOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BackupDrManagementServerManagementUriOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "api", GoGetter: "Api"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -139,7 +139,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "webUi", GoGetter: "WebUi"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BackupDrManagementServerManagementUriOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -147,11 +147,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.backupDrManagementServer.BackupDrManagementServerNetworks",
-		reflect.TypeOf((*BackupDrManagementServerNetworks)(nil)).Elem(),
+		reflect.TypeFor[BackupDrManagementServerNetworks](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.backupDrManagementServer.BackupDrManagementServerNetworksList",
-		reflect.TypeOf((*BackupDrManagementServerNetworksList)(nil)).Elem(),
+		reflect.TypeFor[BackupDrManagementServerNetworksList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -165,7 +165,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BackupDrManagementServerNetworksList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -173,7 +173,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.backupDrManagementServer.BackupDrManagementServerNetworksOutputReference",
-		reflect.TypeOf((*BackupDrManagementServerNetworksOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BackupDrManagementServerNetworksOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -202,7 +202,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BackupDrManagementServerNetworksOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -210,11 +210,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.backupDrManagementServer.BackupDrManagementServerTimeouts",
-		reflect.TypeOf((*BackupDrManagementServerTimeouts)(nil)).Elem(),
+		reflect.TypeFor[BackupDrManagementServerTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.backupDrManagementServer.BackupDrManagementServerTimeoutsOutputReference",
-		reflect.TypeOf((*BackupDrManagementServerTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BackupDrManagementServerTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -244,7 +244,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BackupDrManagementServerTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

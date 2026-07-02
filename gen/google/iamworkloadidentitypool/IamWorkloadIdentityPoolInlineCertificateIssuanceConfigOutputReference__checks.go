@@ -106,7 +106,7 @@ func (j *jsiiProxy_IamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputR
 	return nil
 }
 
-func (j *jsiiProxy_IamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -219,7 +219,7 @@ func (j *jsiiProxy_IamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputR
 	return nil
 }
 
-func (j *jsiiProxy_IamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputReference) validateSetUseDefaultSharedCaParameters(val interface{}) error {
+func (j *jsiiProxy_IamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputReference) validateSetUseDefaultSharedCaParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -250,4 +250,3 @@ func validateNewIamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputRefe
 
 	return nil
 }
-

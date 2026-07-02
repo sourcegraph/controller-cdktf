@@ -98,7 +98,7 @@ func (a *jsiiProxy_ArtifactRegistryRuleTimeoutsOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_ArtifactRegistryRuleTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ArtifactRegistryRuleTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_ArtifactRegistryRuleTimeoutsOutputReference) validateSetDelet
 	return nil
 }
 
-func (j *jsiiProxy_ArtifactRegistryRuleTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ArtifactRegistryRuleTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewArtifactRegistryRuleTimeoutsOutputReferenceParameters(terraformR
 
 	return nil
 }
-

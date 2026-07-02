@@ -6,9 +6,9 @@ import (
 
 type OsConfigOsPolicyAssignmentConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type OsConfigOsPolicyAssignmentConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// instance_filter block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/os_config_os_policy_assignment#instance_filter OsConfigOsPolicyAssignment#instance_filter}
@@ -34,7 +34,7 @@ type OsConfigOsPolicyAssignmentConfig struct {
 	// os_policies block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/os_config_os_policy_assignment#os_policies OsConfigOsPolicyAssignment#os_policies}
-	OsPolicies interface{} `field:"required" json:"osPolicies" yaml:"osPolicies"`
+	OsPolicies any `field:"required" json:"osPolicies" yaml:"osPolicies"`
 	// rollout block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/os_config_os_policy_assignment#rollout OsConfigOsPolicyAssignment#rollout}
@@ -55,10 +55,9 @@ type OsConfigOsPolicyAssignmentConfig struct {
 	// Set to true to skip awaiting rollout during resource creation and update.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/os_config_os_policy_assignment#skip_await_rollout OsConfigOsPolicyAssignment#skip_await_rollout}
-	SkipAwaitRollout interface{} `field:"optional" json:"skipAwaitRollout" yaml:"skipAwaitRollout"`
+	SkipAwaitRollout any `field:"optional" json:"skipAwaitRollout" yaml:"skipAwaitRollout"`
 	// timeouts block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/os_config_os_policy_assignment#timeouts OsConfigOsPolicyAssignment#timeouts}
 	Timeouts *OsConfigOsPolicyAssignmentTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

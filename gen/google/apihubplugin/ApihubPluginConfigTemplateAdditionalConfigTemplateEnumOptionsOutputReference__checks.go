@@ -98,7 +98,7 @@ func (a *jsiiProxy_ApihubPluginConfigTemplateAdditionalConfigTemplateEnumOptions
 	return nil
 }
 
-func (j *jsiiProxy_ApihubPluginConfigTemplateAdditionalConfigTemplateEnumOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ApihubPluginConfigTemplateAdditionalConfigTemplateEnumOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -187,7 +187,7 @@ func (j *jsiiProxy_ApihubPluginConfigTemplateAdditionalConfigTemplateEnumOptions
 	return nil
 }
 
-func (j *jsiiProxy_ApihubPluginConfigTemplateAdditionalConfigTemplateEnumOptionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ApihubPluginConfigTemplateAdditionalConfigTemplateEnumOptionsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewApihubPluginConfigTemplateAdditionalConfigTemplateEnumOptionsOut
 
 	return nil
 }
-

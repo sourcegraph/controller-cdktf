@@ -98,7 +98,7 @@ func (c *jsiiProxy_CloudRunDomainMappingTimeoutsOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_CloudRunDomainMappingTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudRunDomainMappingTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_CloudRunDomainMappingTimeoutsOutputReference) validateSetDele
 	return nil
 }
 
-func (j *jsiiProxy_CloudRunDomainMappingTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CloudRunDomainMappingTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewCloudRunDomainMappingTimeoutsOutputReferenceParameters(terraform
 
 	return nil
 }
-

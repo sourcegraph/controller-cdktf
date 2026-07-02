@@ -19,7 +19,7 @@ func (d *jsiiProxy_DataprocMetastoreFederation) validateAddMoveTargetParameters(
 	return nil
 }
 
-func (d *jsiiProxy_DataprocMetastoreFederation) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataprocMetastoreFederation) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (d *jsiiProxy_DataprocMetastoreFederation) validateMoveFromIdParameters(id 
 	return nil
 }
 
-func (d *jsiiProxy_DataprocMetastoreFederation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (d *jsiiProxy_DataprocMetastoreFederation) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (d *jsiiProxy_DataprocMetastoreFederation) validateOverrideLogicalIdParamet
 	return nil
 }
 
-func (d *jsiiProxy_DataprocMetastoreFederation) validatePutBackendMetastoresParameters(value interface{}) error {
+func (d *jsiiProxy_DataprocMetastoreFederation) validatePutBackendMetastoresParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -262,7 +262,7 @@ func validateDataprocMetastoreFederation_GenerateConfigForImportParameters(scope
 	return nil
 }
 
-func validateDataprocMetastoreFederation_IsConstructParameters(x interface{}) error {
+func validateDataprocMetastoreFederation_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -270,7 +270,7 @@ func validateDataprocMetastoreFederation_IsConstructParameters(x interface{}) er
 	return nil
 }
 
-func validateDataprocMetastoreFederation_IsTerraformElementParameters(x interface{}) error {
+func validateDataprocMetastoreFederation_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -278,7 +278,7 @@ func validateDataprocMetastoreFederation_IsTerraformElementParameters(x interfac
 	return nil
 }
 
-func validateDataprocMetastoreFederation_IsTerraformResourceParameters(x interface{}) error {
+func validateDataprocMetastoreFederation_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -286,7 +286,7 @@ func validateDataprocMetastoreFederation_IsTerraformResourceParameters(x interfa
 	return nil
 }
 
-func (j *jsiiProxy_DataprocMetastoreFederation) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocMetastoreFederation) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -319,7 +319,7 @@ func (j *jsiiProxy_DataprocMetastoreFederation) validateSetConnectionParameters(
 	return nil
 }
 
-func (j *jsiiProxy_DataprocMetastoreFederation) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocMetastoreFederation) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -376,7 +376,7 @@ func (j *jsiiProxy_DataprocMetastoreFederation) validateSetCountParameters(val i
 	return nil
 }
 
-func (j *jsiiProxy_DataprocMetastoreFederation) validateSetDeletionProtectionParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocMetastoreFederation) validateSetDeletionProtectionParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -444,7 +444,7 @@ func (j *jsiiProxy_DataprocMetastoreFederation) validateSetProjectParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_DataprocMetastoreFederation) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_DataprocMetastoreFederation) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -524,4 +524,3 @@ func validateNewDataprocMetastoreFederationParameters(scope constructs.Construct
 
 	return nil
 }
-

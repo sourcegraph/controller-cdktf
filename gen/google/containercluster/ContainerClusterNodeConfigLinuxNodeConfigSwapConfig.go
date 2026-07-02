@@ -1,6 +1,5 @@
 package containercluster
 
-
 type ContainerClusterNodeConfigLinuxNodeConfigSwapConfig struct {
 	// boot_disk_profile block.
 	//
@@ -13,7 +12,7 @@ type ContainerClusterNodeConfigLinuxNodeConfigSwapConfig struct {
 	// Enables or disables swap for the node pool.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
-	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
+	Enabled any `field:"optional" json:"enabled" yaml:"enabled"`
 	// encryption_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#encryption_config ContainerCluster#encryption_config}
@@ -23,4 +22,3 @@ type ContainerClusterNodeConfigLinuxNodeConfigSwapConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#ephemeral_local_ssd_profile ContainerCluster#ephemeral_local_ssd_profile}
 	EphemeralLocalSsdProfile *ContainerClusterNodeConfigLinuxNodeConfigSwapConfigEphemeralLocalSsdProfile `field:"optional" json:"ephemeralLocalSsdProfile" yaml:"ephemeralLocalSsdProfile"`
 }
-

@@ -6,9 +6,9 @@ import (
 
 type ComputeTargetTcpProxyConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type ComputeTargetTcpProxyConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Name of the resource.
 	//
 	// Provided by the client when the resource is
@@ -49,7 +49,7 @@ type ComputeTargetTcpProxyConfig struct {
 	// This field only applies when the forwarding rule that references this target proxy has a loadBalancingScheme set to INTERNAL_SELF_MANAGED.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_target_tcp_proxy#proxy_bind ComputeTargetTcpProxy#proxy_bind}
-	ProxyBind interface{} `field:"optional" json:"proxyBind" yaml:"proxyBind"`
+	ProxyBind any `field:"optional" json:"proxyBind" yaml:"proxyBind"`
 	// Specifies the type of proxy header to append before sending data to the backend.
 	//
 	// Default value: "NONE" Possible values: ["NONE", "PROXY_V1"]
@@ -61,4 +61,3 @@ type ComputeTargetTcpProxyConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_target_tcp_proxy#timeouts ComputeTargetTcpProxy#timeouts}
 	Timeouts *ComputeTargetTcpProxyTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

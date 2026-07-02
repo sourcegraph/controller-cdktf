@@ -1,11 +1,10 @@
 package cloudrunv2job
 
-
 type CloudRunV2JobTemplateTemplate struct {
 	// containers block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_job#containers CloudRunV2Job#containers}
-	Containers interface{} `field:"optional" json:"containers" yaml:"containers"`
+	Containers any `field:"optional" json:"containers" yaml:"containers"`
 	// A reference to a customer managed encryption key (CMEK) to use to encrypt this container image.
 	//
 	// For more information, go to https://cloud.google.com/run/docs/securing/using-cmek
@@ -19,7 +18,7 @@ type CloudRunV2JobTemplateTemplate struct {
 	// True if GPU zonal redundancy is disabled on this execution.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_job#gpu_zonal_redundancy_disabled CloudRunV2Job#gpu_zonal_redundancy_disabled}
-	GpuZonalRedundancyDisabled interface{} `field:"optional" json:"gpuZonalRedundancyDisabled" yaml:"gpuZonalRedundancyDisabled"`
+	GpuZonalRedundancyDisabled any `field:"optional" json:"gpuZonalRedundancyDisabled" yaml:"gpuZonalRedundancyDisabled"`
 	// Number of retries allowed per Task, before marking this Task failed. Defaults to 3. Minimum value is 0.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_job#max_retries CloudRunV2Job#max_retries}
@@ -45,10 +44,9 @@ type CloudRunV2JobTemplateTemplate struct {
 	// volumes block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_job#volumes CloudRunV2Job#volumes}
-	Volumes interface{} `field:"optional" json:"volumes" yaml:"volumes"`
+	Volumes any `field:"optional" json:"volumes" yaml:"volumes"`
 	// vpc_access block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_job#vpc_access CloudRunV2Job#vpc_access}
 	VpcAccess *CloudRunV2JobTemplateTemplateVpcAccess `field:"optional" json:"vpcAccess" yaml:"vpcAccess"`
 }
-

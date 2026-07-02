@@ -98,7 +98,7 @@ func (o *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesApexDetailsOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesApexDetailsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesApexDetailsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewOracleDatabaseAutonomousDatabasePropertiesApexDetailsOutputRefer
 
 	return nil
 }
-

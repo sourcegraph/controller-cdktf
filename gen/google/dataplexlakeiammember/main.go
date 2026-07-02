@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataplexLakeIamMember.DataplexLakeIamMember",
-		reflect.TypeOf((*DataplexLakeIamMember)(nil)).Elem(),
+		reflect.TypeFor[DataplexLakeIamMember](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,7 +73,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataplexLakeIamMember{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -81,11 +81,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataplexLakeIamMember.DataplexLakeIamMemberCondition",
-		reflect.TypeOf((*DataplexLakeIamMemberCondition)(nil)).Elem(),
+		reflect.TypeFor[DataplexLakeIamMemberCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataplexLakeIamMember.DataplexLakeIamMemberConditionOutputReference",
-		reflect.TypeOf((*DataplexLakeIamMemberConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataplexLakeIamMemberConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -116,7 +116,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataplexLakeIamMemberConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -124,6 +124,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataplexLakeIamMember.DataplexLakeIamMemberConfig",
-		reflect.TypeOf((*DataplexLakeIamMemberConfig)(nil)).Elem(),
+		reflect.TypeFor[DataplexLakeIamMemberConfig](),
 	)
 }

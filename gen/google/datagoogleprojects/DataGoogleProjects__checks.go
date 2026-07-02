@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataGoogleProjects) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataGoogleProjects) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataGoogleProjects_GenerateConfigForImportParameters(scope construc
 	return nil
 }
 
-func validateDataGoogleProjects_IsConstructParameters(x interface{}) error {
+func validateDataGoogleProjects_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataGoogleProjects_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateDataGoogleProjects_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataGoogleProjects_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataGoogleProjects_IsTerraformDataSourceParameters(x interface{}) e
 	return nil
 }
 
-func validateDataGoogleProjects_IsTerraformElementParameters(x interface{}) error {
+func validateDataGoogleProjects_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func validateDataGoogleProjects_IsTerraformElementParameters(x interface{}) erro
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleProjects) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleProjects) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -250,4 +250,3 @@ func validateNewDataGoogleProjectsParameters(scope constructs.Construct, id *str
 
 	return nil
 }
-

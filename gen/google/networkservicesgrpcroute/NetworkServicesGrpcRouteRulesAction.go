@@ -1,11 +1,10 @@
 package networkservicesgrpcroute
 
-
 type NetworkServicesGrpcRouteRulesAction struct {
 	// destinations block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_grpc_route#destinations NetworkServicesGrpcRoute#destinations}
-	Destinations interface{} `field:"optional" json:"destinations" yaml:"destinations"`
+	Destinations any `field:"optional" json:"destinations" yaml:"destinations"`
 	// fault_injection_policy block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_grpc_route#fault_injection_policy NetworkServicesGrpcRoute#fault_injection_policy}
@@ -19,4 +18,3 @@ type NetworkServicesGrpcRouteRulesAction struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_grpc_route#timeout NetworkServicesGrpcRoute#timeout}
 	Timeout *string `field:"optional" json:"timeout" yaml:"timeout"`
 }
-

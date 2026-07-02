@@ -90,7 +90,7 @@ func (p *jsiiProxy_PrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAcces
 	return nil
 }
 
-func (p *jsiiProxy_PrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessOutputReference) validatePutRoleBindingsParameters(value interface{}) error {
+func (p *jsiiProxy_PrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessOutputReference) validatePutRoleBindingsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (p *jsiiProxy_PrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAcces
 	return nil
 }
 
-func (j *jsiiProxy_PrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -245,4 +245,3 @@ func validateNewPrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessOu
 
 	return nil
 }
-

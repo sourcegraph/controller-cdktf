@@ -98,7 +98,7 @@ func (l *jsiiProxy_LoggingFolderSettingsTimeoutsOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_LoggingFolderSettingsTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LoggingFolderSettingsTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_LoggingFolderSettingsTimeoutsOutputReference) validateSetDele
 	return nil
 }
 
-func (j *jsiiProxy_LoggingFolderSettingsTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LoggingFolderSettingsTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewLoggingFolderSettingsTimeoutsOutputReferenceParameters(terraform
 
 	return nil
 }
-

@@ -19,7 +19,7 @@ func (b *jsiiProxy_BigtableGcPolicy) validateAddMoveTargetParameters(moveTarget 
 	return nil
 }
 
-func (b *jsiiProxy_BigtableGcPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (b *jsiiProxy_BigtableGcPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (b *jsiiProxy_BigtableGcPolicy) validateMoveFromIdParameters(id *string) er
 	return nil
 }
 
-func (b *jsiiProxy_BigtableGcPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (b *jsiiProxy_BigtableGcPolicy) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -215,7 +215,7 @@ func (b *jsiiProxy_BigtableGcPolicy) validatePutMaxAgeParameters(value *Bigtable
 	return nil
 }
 
-func (b *jsiiProxy_BigtableGcPolicy) validatePutMaxVersionParameters(value interface{}) error {
+func (b *jsiiProxy_BigtableGcPolicy) validatePutMaxVersionParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -273,7 +273,7 @@ func validateBigtableGcPolicy_GenerateConfigForImportParameters(scope constructs
 	return nil
 }
 
-func validateBigtableGcPolicy_IsConstructParameters(x interface{}) error {
+func validateBigtableGcPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -281,7 +281,7 @@ func validateBigtableGcPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateBigtableGcPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateBigtableGcPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -289,7 +289,7 @@ func validateBigtableGcPolicy_IsTerraformElementParameters(x interface{}) error 
 	return nil
 }
 
-func validateBigtableGcPolicy_IsTerraformResourceParameters(x interface{}) error {
+func validateBigtableGcPolicy_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -305,7 +305,7 @@ func (j *jsiiProxy_BigtableGcPolicy) validateSetColumnFamilyParameters(val *stri
 	return nil
 }
 
-func (j *jsiiProxy_BigtableGcPolicy) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_BigtableGcPolicy) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -338,7 +338,7 @@ func (j *jsiiProxy_BigtableGcPolicy) validateSetConnectionParameters(val interfa
 	return nil
 }
 
-func (j *jsiiProxy_BigtableGcPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_BigtableGcPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -419,7 +419,7 @@ func (j *jsiiProxy_BigtableGcPolicy) validateSetIdParameters(val *string) error 
 	return nil
 }
 
-func (j *jsiiProxy_BigtableGcPolicy) validateSetIgnoreWarningsParameters(val interface{}) error {
+func (j *jsiiProxy_BigtableGcPolicy) validateSetIgnoreWarningsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -471,7 +471,7 @@ func (j *jsiiProxy_BigtableGcPolicy) validateSetProjectParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_BigtableGcPolicy) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_BigtableGcPolicy) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -543,4 +543,3 @@ func validateNewBigtableGcPolicyParameters(scope constructs.Construct, id *strin
 
 	return nil
 }
-

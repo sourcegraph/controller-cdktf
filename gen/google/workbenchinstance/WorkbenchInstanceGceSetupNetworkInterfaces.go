@@ -1,11 +1,10 @@
 package workbenchinstance
 
-
 type WorkbenchInstanceGceSetupNetworkInterfaces struct {
 	// access_configs block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workbench_instance#access_configs WorkbenchInstance#access_configs}
-	AccessConfigs interface{} `field:"optional" json:"accessConfigs" yaml:"accessConfigs"`
+	AccessConfigs any `field:"optional" json:"accessConfigs" yaml:"accessConfigs"`
 	// Optional. The name of the VPC that this VM instance is in.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workbench_instance#network WorkbenchInstance#network}
@@ -22,4 +21,3 @@ type WorkbenchInstanceGceSetupNetworkInterfaces struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workbench_instance#subnet WorkbenchInstance#subnet}
 	Subnet *string `field:"optional" json:"subnet" yaml:"subnet"`
 }
-

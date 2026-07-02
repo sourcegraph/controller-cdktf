@@ -19,7 +19,7 @@ func (v *jsiiProxy_VertexAiEndpoint) validateAddMoveTargetParameters(moveTarget 
 	return nil
 }
 
-func (v *jsiiProxy_VertexAiEndpoint) validateAddOverrideParameters(path *string, value interface{}) error {
+func (v *jsiiProxy_VertexAiEndpoint) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (v *jsiiProxy_VertexAiEndpoint) validateMoveFromIdParameters(id *string) er
 	return nil
 }
 
-func (v *jsiiProxy_VertexAiEndpoint) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (v *jsiiProxy_VertexAiEndpoint) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -264,7 +264,7 @@ func validateVertexAiEndpoint_GenerateConfigForImportParameters(scope constructs
 	return nil
 }
 
-func validateVertexAiEndpoint_IsConstructParameters(x interface{}) error {
+func validateVertexAiEndpoint_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -272,7 +272,7 @@ func validateVertexAiEndpoint_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateVertexAiEndpoint_IsTerraformElementParameters(x interface{}) error {
+func validateVertexAiEndpoint_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -280,7 +280,7 @@ func validateVertexAiEndpoint_IsTerraformElementParameters(x interface{}) error 
 	return nil
 }
 
-func validateVertexAiEndpoint_IsTerraformResourceParameters(x interface{}) error {
+func validateVertexAiEndpoint_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -288,7 +288,7 @@ func validateVertexAiEndpoint_IsTerraformResourceParameters(x interface{}) error
 	return nil
 }
 
-func (j *jsiiProxy_VertexAiEndpoint) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_VertexAiEndpoint) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -321,7 +321,7 @@ func (j *jsiiProxy_VertexAiEndpoint) validateSetConnectionParameters(val interfa
 	return nil
 }
 
-func (j *jsiiProxy_VertexAiEndpoint) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_VertexAiEndpoint) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -378,7 +378,7 @@ func (j *jsiiProxy_VertexAiEndpoint) validateSetCountParameters(val interface{})
 	return nil
 }
 
-func (j *jsiiProxy_VertexAiEndpoint) validateSetDedicatedEndpointEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_VertexAiEndpoint) validateSetDedicatedEndpointEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -470,7 +470,7 @@ func (j *jsiiProxy_VertexAiEndpoint) validateSetProjectParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_VertexAiEndpoint) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_VertexAiEndpoint) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -550,4 +550,3 @@ func validateNewVertexAiEndpointParameters(scope constructs.Construct, id *strin
 
 	return nil
 }
-

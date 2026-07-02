@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsOtherCloudTargetDataS
 	return nil
 }
 
-func (j *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsOtherCloudTargetDataSourceTypeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsOtherCloudTargetDataSourceTypeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataLossPreventionDiscoveryConfigTargetsOtherCloudTargetDataSour
 
 	return nil
 }
-

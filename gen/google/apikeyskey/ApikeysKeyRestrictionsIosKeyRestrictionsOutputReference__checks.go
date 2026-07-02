@@ -106,7 +106,7 @@ func (j *jsiiProxy_ApikeysKeyRestrictionsIosKeyRestrictionsOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_ApikeysKeyRestrictionsIosKeyRestrictionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ApikeysKeyRestrictionsIosKeyRestrictionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewApikeysKeyRestrictionsIosKeyRestrictionsOutputReferenceParameter
 
 	return nil
 }
-

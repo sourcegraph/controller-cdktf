@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.bigqueryReservation.BigqueryReservation",
-		reflect.TypeOf((*BigqueryReservation)(nil)).Elem(),
+		reflect.TypeFor[BigqueryReservation](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -92,7 +92,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BigqueryReservation{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -100,11 +100,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.bigqueryReservation.BigqueryReservationAutoscale",
-		reflect.TypeOf((*BigqueryReservationAutoscale)(nil)).Elem(),
+		reflect.TypeFor[BigqueryReservationAutoscale](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.bigqueryReservation.BigqueryReservationAutoscaleOutputReference",
-		reflect.TypeOf((*BigqueryReservationAutoscaleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BigqueryReservationAutoscaleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -132,7 +132,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BigqueryReservationAutoscaleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -140,19 +140,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.bigqueryReservation.BigqueryReservationConfig",
-		reflect.TypeOf((*BigqueryReservationConfig)(nil)).Elem(),
+		reflect.TypeFor[BigqueryReservationConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.bigqueryReservation.BigqueryReservationReplicationStatus",
-		reflect.TypeOf((*BigqueryReservationReplicationStatus)(nil)).Elem(),
+		reflect.TypeFor[BigqueryReservationReplicationStatus](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.bigqueryReservation.BigqueryReservationReplicationStatusError",
-		reflect.TypeOf((*BigqueryReservationReplicationStatusError)(nil)).Elem(),
+		reflect.TypeFor[BigqueryReservationReplicationStatusError](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.bigqueryReservation.BigqueryReservationReplicationStatusErrorList",
-		reflect.TypeOf((*BigqueryReservationReplicationStatusErrorList)(nil)).Elem(),
+		reflect.TypeFor[BigqueryReservationReplicationStatusErrorList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -165,7 +165,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BigqueryReservationReplicationStatusErrorList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -173,7 +173,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.bigqueryReservation.BigqueryReservationReplicationStatusErrorOutputReference",
-		reflect.TypeOf((*BigqueryReservationReplicationStatusErrorOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BigqueryReservationReplicationStatusErrorOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "code", GoGetter: "Code"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -199,7 +199,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BigqueryReservationReplicationStatusErrorOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -207,7 +207,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.bigqueryReservation.BigqueryReservationReplicationStatusList",
-		reflect.TypeOf((*BigqueryReservationReplicationStatusList)(nil)).Elem(),
+		reflect.TypeFor[BigqueryReservationReplicationStatusList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -220,7 +220,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BigqueryReservationReplicationStatusList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -228,7 +228,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.bigqueryReservation.BigqueryReservationReplicationStatusOutputReference",
-		reflect.TypeOf((*BigqueryReservationReplicationStatusOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BigqueryReservationReplicationStatusOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -255,7 +255,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BigqueryReservationReplicationStatusOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -263,11 +263,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.bigqueryReservation.BigqueryReservationTimeouts",
-		reflect.TypeOf((*BigqueryReservationTimeouts)(nil)).Elem(),
+		reflect.TypeFor[BigqueryReservationTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.bigqueryReservation.BigqueryReservationTimeoutsOutputReference",
-		reflect.TypeOf((*BigqueryReservationTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BigqueryReservationTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -300,7 +300,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BigqueryReservationTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

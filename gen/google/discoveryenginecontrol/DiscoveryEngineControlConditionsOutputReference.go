@@ -11,12 +11,12 @@ import (
 type DiscoveryEngineControlConditionsOutputReference interface {
 	cdktf.ComplexObject
 	ActiveTimeRange() DiscoveryEngineControlConditionsActiveTimeRangeList
-	ActiveTimeRangeInput() interface{}
+	ActiveTimeRangeInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -29,13 +29,13 @@ type DiscoveryEngineControlConditionsOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	QueryRegex() *string
 	SetQueryRegex(val *string)
 	QueryRegexInput() *string
 	QueryTerms() DiscoveryEngineControlConditionsQueryTermsList
-	QueryTermsInput() interface{}
+	QueryTermsInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -47,7 +47,7 @@ type DiscoveryEngineControlConditionsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -68,14 +68,14 @@ type DiscoveryEngineControlConditionsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutActiveTimeRange(value interface{})
-	PutQueryTerms(value interface{})
+	PutActiveTimeRange(value any)
+	PutQueryTerms(value any)
 	ResetActiveTimeRange()
 	ResetQueryRegex()
 	ResetQueryTerms()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -98,8 +98,8 @@ func (j *jsiiProxy_DiscoveryEngineControlConditionsOutputReference) ActiveTimeRa
 	return returns
 }
 
-func (j *jsiiProxy_DiscoveryEngineControlConditionsOutputReference) ActiveTimeRangeInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DiscoveryEngineControlConditionsOutputReference) ActiveTimeRangeInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"activeTimeRangeInput",
@@ -108,8 +108,8 @@ func (j *jsiiProxy_DiscoveryEngineControlConditionsOutputReference) ActiveTimeRa
 	return returns
 }
 
-func (j *jsiiProxy_DiscoveryEngineControlConditionsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DiscoveryEngineControlConditionsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -148,8 +148,8 @@ func (j *jsiiProxy_DiscoveryEngineControlConditionsOutputReference) Fqn() *strin
 	return returns
 }
 
-func (j *jsiiProxy_DiscoveryEngineControlConditionsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DiscoveryEngineControlConditionsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -188,8 +188,8 @@ func (j *jsiiProxy_DiscoveryEngineControlConditionsOutputReference) QueryTerms()
 	return returns
 }
 
-func (j *jsiiProxy_DiscoveryEngineControlConditionsOutputReference) QueryTermsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DiscoveryEngineControlConditionsOutputReference) QueryTermsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"queryTermsInput",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_DiscoveryEngineControlConditionsOutputReference) TerraformRes
 	return returns
 }
 
-
 func NewDiscoveryEngineControlConditionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DiscoveryEngineControlConditionsOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewDiscoveryEngineControlConditionsOutputReference(terraformResource cdktf.
 
 	_jsii_.Create(
 		"@cdktf/provider-google.discoveryEngineControl.DiscoveryEngineControlConditionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewDiscoveryEngineControlConditionsOutputReference_Override(d DiscoveryEngi
 
 	_jsii_.Create(
 		"@cdktf/provider-google.discoveryEngineControl.DiscoveryEngineControlConditionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineControlConditionsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DiscoveryEngineControlConditionsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_DiscoveryEngineControlConditionsOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineControlConditionsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DiscoveryEngineControlConditionsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_DiscoveryEngineControlConditionsOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineControlConditionsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DiscoveryEngineControlConditionsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_DiscoveryEngineControlConditionsOutputReference)SetInternalVa
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineControlConditionsOutputReference)SetQueryRegex(val *string) {
+func (j *jsiiProxy_DiscoveryEngineControlConditionsOutputReference) SetQueryRegex(val *string) {
 	if err := j.validateSetQueryRegexParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_DiscoveryEngineControlConditionsOutputReference)SetQueryRegex
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineControlConditionsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DiscoveryEngineControlConditionsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_DiscoveryEngineControlConditionsOutputReference)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineControlConditionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DiscoveryEngineControlConditionsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,16 +324,16 @@ func (d *jsiiProxy_DiscoveryEngineControlConditionsOutputReference) ComputeFqn()
 	return returns
 }
 
-func (d *jsiiProxy_DiscoveryEngineControlConditionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DiscoveryEngineControlConditionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -350,7 +349,7 @@ func (d *jsiiProxy_DiscoveryEngineControlConditionsOutputReference) GetBooleanAt
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -366,7 +365,7 @@ func (d *jsiiProxy_DiscoveryEngineControlConditionsOutputReference) GetBooleanMa
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -382,7 +381,7 @@ func (d *jsiiProxy_DiscoveryEngineControlConditionsOutputReference) GetListAttri
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -398,7 +397,7 @@ func (d *jsiiProxy_DiscoveryEngineControlConditionsOutputReference) GetNumberAtt
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -414,7 +413,7 @@ func (d *jsiiProxy_DiscoveryEngineControlConditionsOutputReference) GetNumberLis
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -430,7 +429,7 @@ func (d *jsiiProxy_DiscoveryEngineControlConditionsOutputReference) GetNumberMap
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -446,7 +445,7 @@ func (d *jsiiProxy_DiscoveryEngineControlConditionsOutputReference) GetStringAtt
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -462,7 +461,7 @@ func (d *jsiiProxy_DiscoveryEngineControlConditionsOutputReference) GetStringMap
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -491,32 +490,32 @@ func (d *jsiiProxy_DiscoveryEngineControlConditionsOutputReference) Interpolatio
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DiscoveryEngineControlConditionsOutputReference) PutActiveTimeRange(value interface{}) {
+func (d *jsiiProxy_DiscoveryEngineControlConditionsOutputReference) PutActiveTimeRange(value any) {
 	if err := d.validatePutActiveTimeRangeParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putActiveTimeRange",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (d *jsiiProxy_DiscoveryEngineControlConditionsOutputReference) PutQueryTerms(value interface{}) {
+func (d *jsiiProxy_DiscoveryEngineControlConditionsOutputReference) PutQueryTerms(value any) {
 	if err := d.validatePutQueryTermsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putQueryTerms",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -544,16 +543,16 @@ func (d *jsiiProxy_DiscoveryEngineControlConditionsOutputReference) ResetQueryTe
 	)
 }
 
-func (d *jsiiProxy_DiscoveryEngineControlConditionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DiscoveryEngineControlConditionsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (d *jsiiProxy_DiscoveryEngineControlConditionsOutputReference) ToString() *
 
 	return returns
 }
-

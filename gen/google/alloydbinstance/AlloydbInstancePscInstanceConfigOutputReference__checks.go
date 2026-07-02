@@ -90,7 +90,7 @@ func (a *jsiiProxy_AlloydbInstancePscInstanceConfigOutputReference) validateInte
 	return nil
 }
 
-func (a *jsiiProxy_AlloydbInstancePscInstanceConfigOutputReference) validatePutPscAutoConnectionsParameters(value interface{}) error {
+func (a *jsiiProxy_AlloydbInstancePscInstanceConfigOutputReference) validatePutPscAutoConnectionsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (a *jsiiProxy_AlloydbInstancePscInstanceConfigOutputReference) validatePutP
 	return nil
 }
 
-func (a *jsiiProxy_AlloydbInstancePscInstanceConfigOutputReference) validatePutPscInterfaceConfigsParameters(value interface{}) error {
+func (a *jsiiProxy_AlloydbInstancePscInstanceConfigOutputReference) validatePutPscInterfaceConfigsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -168,7 +168,7 @@ func (j *jsiiProxy_AlloydbInstancePscInstanceConfigOutputReference) validateSetA
 	return nil
 }
 
-func (j *jsiiProxy_AlloydbInstancePscInstanceConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AlloydbInstancePscInstanceConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -268,4 +268,3 @@ func validateNewAlloydbInstancePscInstanceConfigOutputReferenceParameters(terraf
 
 	return nil
 }
-

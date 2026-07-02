@@ -98,7 +98,7 @@ func (c *jsiiProxy_CloudTasksQueueRetryConfigOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_CloudTasksQueueRetryConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudTasksQueueRetryConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -238,4 +238,3 @@ func validateNewCloudTasksQueueRetryConfigOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

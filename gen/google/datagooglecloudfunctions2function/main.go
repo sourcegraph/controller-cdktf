@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleCloudfunctions2Function.DataGoogleCloudfunctions2Function",
-		reflect.TypeOf((*DataGoogleCloudfunctions2Function)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudfunctions2Function](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "buildConfig", GoGetter: "BuildConfig"},
@@ -67,7 +67,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudfunctions2Function{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -75,15 +75,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleCloudfunctions2Function.DataGoogleCloudfunctions2FunctionBuildConfig",
-		reflect.TypeOf((*DataGoogleCloudfunctions2FunctionBuildConfig)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudfunctions2FunctionBuildConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleCloudfunctions2Function.DataGoogleCloudfunctions2FunctionBuildConfigAutomaticUpdatePolicy",
-		reflect.TypeOf((*DataGoogleCloudfunctions2FunctionBuildConfigAutomaticUpdatePolicy)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudfunctions2FunctionBuildConfigAutomaticUpdatePolicy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleCloudfunctions2Function.DataGoogleCloudfunctions2FunctionBuildConfigAutomaticUpdatePolicyList",
-		reflect.TypeOf((*DataGoogleCloudfunctions2FunctionBuildConfigAutomaticUpdatePolicyList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudfunctions2FunctionBuildConfigAutomaticUpdatePolicyList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -96,7 +96,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudfunctions2FunctionBuildConfigAutomaticUpdatePolicyList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -104,7 +104,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleCloudfunctions2Function.DataGoogleCloudfunctions2FunctionBuildConfigAutomaticUpdatePolicyOutputReference",
-		reflect.TypeOf((*DataGoogleCloudfunctions2FunctionBuildConfigAutomaticUpdatePolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudfunctions2FunctionBuildConfigAutomaticUpdatePolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -128,7 +128,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudfunctions2FunctionBuildConfigAutomaticUpdatePolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -136,7 +136,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleCloudfunctions2Function.DataGoogleCloudfunctions2FunctionBuildConfigList",
-		reflect.TypeOf((*DataGoogleCloudfunctions2FunctionBuildConfigList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudfunctions2FunctionBuildConfigList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -149,7 +149,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudfunctions2FunctionBuildConfigList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -157,11 +157,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleCloudfunctions2Function.DataGoogleCloudfunctions2FunctionBuildConfigOnDeployUpdatePolicy",
-		reflect.TypeOf((*DataGoogleCloudfunctions2FunctionBuildConfigOnDeployUpdatePolicy)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudfunctions2FunctionBuildConfigOnDeployUpdatePolicy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleCloudfunctions2Function.DataGoogleCloudfunctions2FunctionBuildConfigOnDeployUpdatePolicyList",
-		reflect.TypeOf((*DataGoogleCloudfunctions2FunctionBuildConfigOnDeployUpdatePolicyList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudfunctions2FunctionBuildConfigOnDeployUpdatePolicyList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -174,7 +174,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudfunctions2FunctionBuildConfigOnDeployUpdatePolicyList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -182,7 +182,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleCloudfunctions2Function.DataGoogleCloudfunctions2FunctionBuildConfigOnDeployUpdatePolicyOutputReference",
-		reflect.TypeOf((*DataGoogleCloudfunctions2FunctionBuildConfigOnDeployUpdatePolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudfunctions2FunctionBuildConfigOnDeployUpdatePolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -207,7 +207,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudfunctions2FunctionBuildConfigOnDeployUpdatePolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -215,7 +215,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleCloudfunctions2Function.DataGoogleCloudfunctions2FunctionBuildConfigOutputReference",
-		reflect.TypeOf((*DataGoogleCloudfunctions2FunctionBuildConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudfunctions2FunctionBuildConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "automaticUpdatePolicy", GoGetter: "AutomaticUpdatePolicy"},
 			_jsii_.MemberProperty{JsiiProperty: "buildAttribute", GoGetter: "BuildAttribute"},
@@ -249,7 +249,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "workerPool", GoGetter: "WorkerPool"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudfunctions2FunctionBuildConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -257,11 +257,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleCloudfunctions2Function.DataGoogleCloudfunctions2FunctionBuildConfigSource",
-		reflect.TypeOf((*DataGoogleCloudfunctions2FunctionBuildConfigSource)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudfunctions2FunctionBuildConfigSource](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleCloudfunctions2Function.DataGoogleCloudfunctions2FunctionBuildConfigSourceList",
-		reflect.TypeOf((*DataGoogleCloudfunctions2FunctionBuildConfigSourceList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudfunctions2FunctionBuildConfigSourceList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -274,7 +274,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudfunctions2FunctionBuildConfigSourceList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -282,7 +282,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleCloudfunctions2Function.DataGoogleCloudfunctions2FunctionBuildConfigSourceOutputReference",
-		reflect.TypeOf((*DataGoogleCloudfunctions2FunctionBuildConfigSourceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudfunctions2FunctionBuildConfigSourceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -308,7 +308,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudfunctions2FunctionBuildConfigSourceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -316,11 +316,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleCloudfunctions2Function.DataGoogleCloudfunctions2FunctionBuildConfigSourceRepoSource",
-		reflect.TypeOf((*DataGoogleCloudfunctions2FunctionBuildConfigSourceRepoSource)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudfunctions2FunctionBuildConfigSourceRepoSource](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleCloudfunctions2Function.DataGoogleCloudfunctions2FunctionBuildConfigSourceRepoSourceList",
-		reflect.TypeOf((*DataGoogleCloudfunctions2FunctionBuildConfigSourceRepoSourceList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudfunctions2FunctionBuildConfigSourceRepoSourceList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -333,7 +333,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudfunctions2FunctionBuildConfigSourceRepoSourceList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -341,7 +341,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleCloudfunctions2Function.DataGoogleCloudfunctions2FunctionBuildConfigSourceRepoSourceOutputReference",
-		reflect.TypeOf((*DataGoogleCloudfunctions2FunctionBuildConfigSourceRepoSourceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudfunctions2FunctionBuildConfigSourceRepoSourceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "branchName", GoGetter: "BranchName"},
 			_jsii_.MemberProperty{JsiiProperty: "commitSha", GoGetter: "CommitSha"},
@@ -372,7 +372,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudfunctions2FunctionBuildConfigSourceRepoSourceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -380,11 +380,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleCloudfunctions2Function.DataGoogleCloudfunctions2FunctionBuildConfigSourceStorageSource",
-		reflect.TypeOf((*DataGoogleCloudfunctions2FunctionBuildConfigSourceStorageSource)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudfunctions2FunctionBuildConfigSourceStorageSource](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleCloudfunctions2Function.DataGoogleCloudfunctions2FunctionBuildConfigSourceStorageSourceList",
-		reflect.TypeOf((*DataGoogleCloudfunctions2FunctionBuildConfigSourceStorageSourceList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudfunctions2FunctionBuildConfigSourceStorageSourceList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -397,7 +397,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudfunctions2FunctionBuildConfigSourceStorageSourceList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -405,7 +405,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleCloudfunctions2Function.DataGoogleCloudfunctions2FunctionBuildConfigSourceStorageSourceOutputReference",
-		reflect.TypeOf((*DataGoogleCloudfunctions2FunctionBuildConfigSourceStorageSourceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudfunctions2FunctionBuildConfigSourceStorageSourceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucket", GoGetter: "Bucket"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -432,7 +432,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudfunctions2FunctionBuildConfigSourceStorageSourceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -440,19 +440,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleCloudfunctions2Function.DataGoogleCloudfunctions2FunctionConfig",
-		reflect.TypeOf((*DataGoogleCloudfunctions2FunctionConfig)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudfunctions2FunctionConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleCloudfunctions2Function.DataGoogleCloudfunctions2FunctionEventTrigger",
-		reflect.TypeOf((*DataGoogleCloudfunctions2FunctionEventTrigger)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudfunctions2FunctionEventTrigger](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleCloudfunctions2Function.DataGoogleCloudfunctions2FunctionEventTriggerEventFilters",
-		reflect.TypeOf((*DataGoogleCloudfunctions2FunctionEventTriggerEventFilters)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudfunctions2FunctionEventTriggerEventFilters](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleCloudfunctions2Function.DataGoogleCloudfunctions2FunctionEventTriggerEventFiltersList",
-		reflect.TypeOf((*DataGoogleCloudfunctions2FunctionEventTriggerEventFiltersList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudfunctions2FunctionEventTriggerEventFiltersList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -465,7 +465,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudfunctions2FunctionEventTriggerEventFiltersList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -473,7 +473,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleCloudfunctions2Function.DataGoogleCloudfunctions2FunctionEventTriggerEventFiltersOutputReference",
-		reflect.TypeOf((*DataGoogleCloudfunctions2FunctionEventTriggerEventFiltersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudfunctions2FunctionEventTriggerEventFiltersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "attribute", GoGetter: "Attribute"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -500,7 +500,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudfunctions2FunctionEventTriggerEventFiltersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -508,7 +508,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleCloudfunctions2Function.DataGoogleCloudfunctions2FunctionEventTriggerList",
-		reflect.TypeOf((*DataGoogleCloudfunctions2FunctionEventTriggerList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudfunctions2FunctionEventTriggerList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -521,7 +521,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudfunctions2FunctionEventTriggerList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -529,7 +529,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleCloudfunctions2Function.DataGoogleCloudfunctions2FunctionEventTriggerOutputReference",
-		reflect.TypeOf((*DataGoogleCloudfunctions2FunctionEventTriggerOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudfunctions2FunctionEventTriggerOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -560,7 +560,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "trigger", GoGetter: "Trigger"},
 			_jsii_.MemberProperty{JsiiProperty: "triggerRegion", GoGetter: "TriggerRegion"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudfunctions2FunctionEventTriggerOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -568,15 +568,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleCloudfunctions2Function.DataGoogleCloudfunctions2FunctionServiceConfig",
-		reflect.TypeOf((*DataGoogleCloudfunctions2FunctionServiceConfig)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudfunctions2FunctionServiceConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleCloudfunctions2Function.DataGoogleCloudfunctions2FunctionServiceConfigDirectVpcNetworkInterface",
-		reflect.TypeOf((*DataGoogleCloudfunctions2FunctionServiceConfigDirectVpcNetworkInterface)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudfunctions2FunctionServiceConfigDirectVpcNetworkInterface](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleCloudfunctions2Function.DataGoogleCloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceList",
-		reflect.TypeOf((*DataGoogleCloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -589,7 +589,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -597,7 +597,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleCloudfunctions2Function.DataGoogleCloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference",
-		reflect.TypeOf((*DataGoogleCloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -624,7 +624,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -632,7 +632,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleCloudfunctions2Function.DataGoogleCloudfunctions2FunctionServiceConfigList",
-		reflect.TypeOf((*DataGoogleCloudfunctions2FunctionServiceConfigList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudfunctions2FunctionServiceConfigList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -645,7 +645,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudfunctions2FunctionServiceConfigList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -653,7 +653,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleCloudfunctions2Function.DataGoogleCloudfunctions2FunctionServiceConfigOutputReference",
-		reflect.TypeOf((*DataGoogleCloudfunctions2FunctionServiceConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudfunctions2FunctionServiceConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allTrafficOnLatestRevision", GoGetter: "AllTrafficOnLatestRevision"},
 			_jsii_.MemberProperty{JsiiProperty: "availableCpu", GoGetter: "AvailableCpu"},
@@ -697,7 +697,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpcConnector", GoGetter: "VpcConnector"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcConnectorEgressSettings", GoGetter: "VpcConnectorEgressSettings"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudfunctions2FunctionServiceConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -705,11 +705,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleCloudfunctions2Function.DataGoogleCloudfunctions2FunctionServiceConfigSecretEnvironmentVariables",
-		reflect.TypeOf((*DataGoogleCloudfunctions2FunctionServiceConfigSecretEnvironmentVariables)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudfunctions2FunctionServiceConfigSecretEnvironmentVariables](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleCloudfunctions2Function.DataGoogleCloudfunctions2FunctionServiceConfigSecretEnvironmentVariablesList",
-		reflect.TypeOf((*DataGoogleCloudfunctions2FunctionServiceConfigSecretEnvironmentVariablesList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudfunctions2FunctionServiceConfigSecretEnvironmentVariablesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -722,7 +722,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudfunctions2FunctionServiceConfigSecretEnvironmentVariablesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -730,7 +730,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleCloudfunctions2Function.DataGoogleCloudfunctions2FunctionServiceConfigSecretEnvironmentVariablesOutputReference",
-		reflect.TypeOf((*DataGoogleCloudfunctions2FunctionServiceConfigSecretEnvironmentVariablesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudfunctions2FunctionServiceConfigSecretEnvironmentVariablesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -758,7 +758,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudfunctions2FunctionServiceConfigSecretEnvironmentVariablesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -766,11 +766,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleCloudfunctions2Function.DataGoogleCloudfunctions2FunctionServiceConfigSecretVolumes",
-		reflect.TypeOf((*DataGoogleCloudfunctions2FunctionServiceConfigSecretVolumes)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudfunctions2FunctionServiceConfigSecretVolumes](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleCloudfunctions2Function.DataGoogleCloudfunctions2FunctionServiceConfigSecretVolumesList",
-		reflect.TypeOf((*DataGoogleCloudfunctions2FunctionServiceConfigSecretVolumesList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudfunctions2FunctionServiceConfigSecretVolumesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -783,7 +783,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudfunctions2FunctionServiceConfigSecretVolumesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -791,7 +791,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleCloudfunctions2Function.DataGoogleCloudfunctions2FunctionServiceConfigSecretVolumesOutputReference",
-		reflect.TypeOf((*DataGoogleCloudfunctions2FunctionServiceConfigSecretVolumesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudfunctions2FunctionServiceConfigSecretVolumesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -819,7 +819,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "versions", GoGetter: "Versions"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudfunctions2FunctionServiceConfigSecretVolumesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -827,11 +827,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleCloudfunctions2Function.DataGoogleCloudfunctions2FunctionServiceConfigSecretVolumesVersions",
-		reflect.TypeOf((*DataGoogleCloudfunctions2FunctionServiceConfigSecretVolumesVersions)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudfunctions2FunctionServiceConfigSecretVolumesVersions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleCloudfunctions2Function.DataGoogleCloudfunctions2FunctionServiceConfigSecretVolumesVersionsList",
-		reflect.TypeOf((*DataGoogleCloudfunctions2FunctionServiceConfigSecretVolumesVersionsList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudfunctions2FunctionServiceConfigSecretVolumesVersionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -844,7 +844,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudfunctions2FunctionServiceConfigSecretVolumesVersionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -852,7 +852,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleCloudfunctions2Function.DataGoogleCloudfunctions2FunctionServiceConfigSecretVolumesVersionsOutputReference",
-		reflect.TypeOf((*DataGoogleCloudfunctions2FunctionServiceConfigSecretVolumesVersionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleCloudfunctions2FunctionServiceConfigSecretVolumesVersionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -878,7 +878,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleCloudfunctions2FunctionServiceConfigSecretVolumesVersionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

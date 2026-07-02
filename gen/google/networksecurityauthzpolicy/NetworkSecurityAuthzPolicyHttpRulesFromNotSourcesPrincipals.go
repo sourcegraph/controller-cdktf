@@ -1,6 +1,5 @@
 package networksecurityauthzpolicy
 
-
 type NetworkSecurityAuthzPolicyHttpRulesFromNotSourcesPrincipals struct {
 	// The input string must have the substring specified here.
 	//
@@ -19,7 +18,7 @@ type NetworkSecurityAuthzPolicyHttpRulesFromNotSourcesPrincipals struct {
 	// For example, the matcher data will match both input string Data and data if set to true.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_authz_policy#ignore_case NetworkSecurityAuthzPolicy#ignore_case}
-	IgnoreCase interface{} `field:"optional" json:"ignoreCase" yaml:"ignoreCase"`
+	IgnoreCase any `field:"optional" json:"ignoreCase" yaml:"ignoreCase"`
 	// The input string must have the prefix specified here.
 	//
 	// Note: empty prefix is not allowed, please use regex instead.
@@ -47,4 +46,3 @@ type NetworkSecurityAuthzPolicyHttpRulesFromNotSourcesPrincipals struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_authz_policy#suffix NetworkSecurityAuthzPolicy#suffix}
 	Suffix *string `field:"optional" json:"suffix" yaml:"suffix"`
 }
-

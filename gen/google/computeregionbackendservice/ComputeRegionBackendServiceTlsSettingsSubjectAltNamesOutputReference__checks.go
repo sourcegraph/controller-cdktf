@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputRefer
 
 	return nil
 }
-

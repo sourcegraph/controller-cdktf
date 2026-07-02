@@ -98,7 +98,7 @@ func (n *jsiiProxy_NetworkSecurityServerTlsPolicyServerCertificateGrpcEndpointOu
 	return nil
 }
 
-func (j *jsiiProxy_NetworkSecurityServerTlsPolicyServerCertificateGrpcEndpointOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkSecurityServerTlsPolicyServerCertificateGrpcEndpointOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewNetworkSecurityServerTlsPolicyServerCertificateGrpcEndpointOutpu
 
 	return nil
 }
-

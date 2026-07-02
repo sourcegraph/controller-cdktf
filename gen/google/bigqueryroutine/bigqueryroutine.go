@@ -13,19 +13,19 @@ import (
 type BigqueryRoutine interface {
 	cdktf.TerraformResource
 	Arguments() BigqueryRoutineArgumentsList
-	ArgumentsInput() interface{}
+	ArgumentsInput() any
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreationTime() *float64
 	DataGovernanceType() *string
 	SetDataGovernanceType(val *string)
@@ -78,11 +78,11 @@ type BigqueryRoutine interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RemoteFunctionOptions() BigqueryRoutineRemoteFunctionOptionsOutputReference
 	RemoteFunctionOptionsInput() *BigqueryRoutineRemoteFunctionOptions
 	ReturnTableType() *string
@@ -105,18 +105,18 @@ type BigqueryRoutine interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() BigqueryRoutineTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -134,7 +134,7 @@ type BigqueryRoutine interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -146,14 +146,14 @@ type BigqueryRoutine interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutArguments(value interface{})
+	PutArguments(value any)
 	PutRemoteFunctionOptions(value *BigqueryRoutineRemoteFunctionOptions)
 	PutSparkOptions(value *BigqueryRoutineSparkOptions)
 	PutTimeouts(value *BigqueryRoutineTimeouts)
@@ -174,17 +174,17 @@ type BigqueryRoutine interface {
 	ResetSecurityMode()
 	ResetSparkOptions()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for BigqueryRoutine
@@ -202,8 +202,8 @@ func (j *jsiiProxy_BigqueryRoutine) Arguments() BigqueryRoutineArgumentsList {
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryRoutine) ArgumentsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigqueryRoutine) ArgumentsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"argumentsInput",
@@ -222,8 +222,8 @@ func (j *jsiiProxy_BigqueryRoutine) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryRoutine) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigqueryRoutine) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -232,8 +232,8 @@ func (j *jsiiProxy_BigqueryRoutine) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryRoutine) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_BigqueryRoutine) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -242,8 +242,8 @@ func (j *jsiiProxy_BigqueryRoutine) ConstructNodeMetadata() *map[string]interfac
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryRoutine) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigqueryRoutine) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -522,8 +522,8 @@ func (j *jsiiProxy_BigqueryRoutine) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryRoutine) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_BigqueryRoutine) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -532,8 +532,8 @@ func (j *jsiiProxy_BigqueryRoutine) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryRoutine) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigqueryRoutine) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -692,8 +692,8 @@ func (j *jsiiProxy_BigqueryRoutine) TerraformGeneratorMetadata() *cdktf.Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryRoutine) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_BigqueryRoutine) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -722,8 +722,8 @@ func (j *jsiiProxy_BigqueryRoutine) Timeouts() BigqueryRoutineTimeoutsOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryRoutine) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigqueryRoutine) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -731,7 +731,6 @@ func (j *jsiiProxy_BigqueryRoutine) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_routine google_bigquery_routine} Resource.
 func NewBigqueryRoutine(scope constructs.Construct, id *string, config *BigqueryRoutineConfig) BigqueryRoutine {
@@ -744,7 +743,7 @@ func NewBigqueryRoutine(scope constructs.Construct, id *string, config *Bigquery
 
 	_jsii_.Create(
 		"@cdktf/provider-google.bigqueryRoutine.BigqueryRoutine",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -757,12 +756,12 @@ func NewBigqueryRoutine_Override(b BigqueryRoutine, scope constructs.Construct, 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.bigqueryRoutine.BigqueryRoutine",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		b,
 	)
 }
 
-func (j *jsiiProxy_BigqueryRoutine)SetConnection(val interface{}) {
+func (j *jsiiProxy_BigqueryRoutine) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -773,7 +772,7 @@ func (j *jsiiProxy_BigqueryRoutine)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_BigqueryRoutine)SetCount(val interface{}) {
+func (j *jsiiProxy_BigqueryRoutine) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -784,7 +783,7 @@ func (j *jsiiProxy_BigqueryRoutine)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_BigqueryRoutine)SetDataGovernanceType(val *string) {
+func (j *jsiiProxy_BigqueryRoutine) SetDataGovernanceType(val *string) {
 	if err := j.validateSetDataGovernanceTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -795,7 +794,7 @@ func (j *jsiiProxy_BigqueryRoutine)SetDataGovernanceType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BigqueryRoutine)SetDatasetId(val *string) {
+func (j *jsiiProxy_BigqueryRoutine) SetDatasetId(val *string) {
 	if err := j.validateSetDatasetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -806,7 +805,7 @@ func (j *jsiiProxy_BigqueryRoutine)SetDatasetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BigqueryRoutine)SetDefinitionBody(val *string) {
+func (j *jsiiProxy_BigqueryRoutine) SetDefinitionBody(val *string) {
 	if err := j.validateSetDefinitionBodyParameters(val); err != nil {
 		panic(err)
 	}
@@ -817,7 +816,7 @@ func (j *jsiiProxy_BigqueryRoutine)SetDefinitionBody(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BigqueryRoutine)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_BigqueryRoutine) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -825,7 +824,7 @@ func (j *jsiiProxy_BigqueryRoutine)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_BigqueryRoutine)SetDescription(val *string) {
+func (j *jsiiProxy_BigqueryRoutine) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -836,7 +835,7 @@ func (j *jsiiProxy_BigqueryRoutine)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BigqueryRoutine)SetDeterminismLevel(val *string) {
+func (j *jsiiProxy_BigqueryRoutine) SetDeterminismLevel(val *string) {
 	if err := j.validateSetDeterminismLevelParameters(val); err != nil {
 		panic(err)
 	}
@@ -847,7 +846,7 @@ func (j *jsiiProxy_BigqueryRoutine)SetDeterminismLevel(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BigqueryRoutine)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_BigqueryRoutine) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -855,7 +854,7 @@ func (j *jsiiProxy_BigqueryRoutine)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_BigqueryRoutine)SetId(val *string) {
+func (j *jsiiProxy_BigqueryRoutine) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -866,7 +865,7 @@ func (j *jsiiProxy_BigqueryRoutine)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BigqueryRoutine)SetImportedLibraries(val *[]*string) {
+func (j *jsiiProxy_BigqueryRoutine) SetImportedLibraries(val *[]*string) {
 	if err := j.validateSetImportedLibrariesParameters(val); err != nil {
 		panic(err)
 	}
@@ -877,7 +876,7 @@ func (j *jsiiProxy_BigqueryRoutine)SetImportedLibraries(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_BigqueryRoutine)SetLanguage(val *string) {
+func (j *jsiiProxy_BigqueryRoutine) SetLanguage(val *string) {
 	if err := j.validateSetLanguageParameters(val); err != nil {
 		panic(err)
 	}
@@ -888,7 +887,7 @@ func (j *jsiiProxy_BigqueryRoutine)SetLanguage(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BigqueryRoutine)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_BigqueryRoutine) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -899,7 +898,7 @@ func (j *jsiiProxy_BigqueryRoutine)SetLifecycle(val *cdktf.TerraformResourceLife
 	)
 }
 
-func (j *jsiiProxy_BigqueryRoutine)SetProject(val *string) {
+func (j *jsiiProxy_BigqueryRoutine) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -910,7 +909,7 @@ func (j *jsiiProxy_BigqueryRoutine)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BigqueryRoutine)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_BigqueryRoutine) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -918,7 +917,7 @@ func (j *jsiiProxy_BigqueryRoutine)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_BigqueryRoutine)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_BigqueryRoutine) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -929,7 +928,7 @@ func (j *jsiiProxy_BigqueryRoutine)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_BigqueryRoutine)SetReturnTableType(val *string) {
+func (j *jsiiProxy_BigqueryRoutine) SetReturnTableType(val *string) {
 	if err := j.validateSetReturnTableTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -940,7 +939,7 @@ func (j *jsiiProxy_BigqueryRoutine)SetReturnTableType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BigqueryRoutine)SetReturnType(val *string) {
+func (j *jsiiProxy_BigqueryRoutine) SetReturnType(val *string) {
 	if err := j.validateSetReturnTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -951,7 +950,7 @@ func (j *jsiiProxy_BigqueryRoutine)SetReturnType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BigqueryRoutine)SetRoutineId(val *string) {
+func (j *jsiiProxy_BigqueryRoutine) SetRoutineId(val *string) {
 	if err := j.validateSetRoutineIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -962,7 +961,7 @@ func (j *jsiiProxy_BigqueryRoutine)SetRoutineId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BigqueryRoutine)SetRoutineType(val *string) {
+func (j *jsiiProxy_BigqueryRoutine) SetRoutineType(val *string) {
 	if err := j.validateSetRoutineTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -973,7 +972,7 @@ func (j *jsiiProxy_BigqueryRoutine)SetRoutineType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BigqueryRoutine)SetSecurityMode(val *string) {
+func (j *jsiiProxy_BigqueryRoutine) SetSecurityMode(val *string) {
 	if err := j.validateSetSecurityModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -996,7 +995,7 @@ func BigqueryRoutine_GenerateConfigForImport(scope constructs.Construct, importT
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.bigqueryRoutine.BigqueryRoutine",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1020,7 +1019,7 @@ func BigqueryRoutine_GenerateConfigForImport(scope constructs.Construct, importT
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func BigqueryRoutine_IsConstruct(x interface{}) *bool {
+func BigqueryRoutine_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateBigqueryRoutine_IsConstructParameters(x); err != nil {
@@ -1031,7 +1030,7 @@ func BigqueryRoutine_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.bigqueryRoutine.BigqueryRoutine",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1039,7 +1038,7 @@ func BigqueryRoutine_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func BigqueryRoutine_IsTerraformElement(x interface{}) *bool {
+func BigqueryRoutine_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateBigqueryRoutine_IsTerraformElementParameters(x); err != nil {
@@ -1050,7 +1049,7 @@ func BigqueryRoutine_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.bigqueryRoutine.BigqueryRoutine",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1058,7 +1057,7 @@ func BigqueryRoutine_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func BigqueryRoutine_IsTerraformResource(x interface{}) *bool {
+func BigqueryRoutine_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateBigqueryRoutine_IsTerraformResourceParameters(x); err != nil {
@@ -1069,7 +1068,7 @@ func BigqueryRoutine_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.bigqueryRoutine.BigqueryRoutine",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1094,31 +1093,31 @@ func (b *jsiiProxy_BigqueryRoutine) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		b,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (b *jsiiProxy_BigqueryRoutine) AddOverride(path *string, value interface{}) {
+func (b *jsiiProxy_BigqueryRoutine) AddOverride(path *string, value any) {
 	if err := b.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		b,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (b *jsiiProxy_BigqueryRoutine) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (b *jsiiProxy_BigqueryRoutine) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := b.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1134,7 +1133,7 @@ func (b *jsiiProxy_BigqueryRoutine) GetBooleanAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		b,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1150,7 +1149,7 @@ func (b *jsiiProxy_BigqueryRoutine) GetBooleanMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		b,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1166,7 +1165,7 @@ func (b *jsiiProxy_BigqueryRoutine) GetListAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		b,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1182,7 +1181,7 @@ func (b *jsiiProxy_BigqueryRoutine) GetNumberAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		b,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1198,7 +1197,7 @@ func (b *jsiiProxy_BigqueryRoutine) GetNumberListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		b,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1214,7 +1213,7 @@ func (b *jsiiProxy_BigqueryRoutine) GetNumberMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		b,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1230,7 +1229,7 @@ func (b *jsiiProxy_BigqueryRoutine) GetStringAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		b,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1246,15 +1245,15 @@ func (b *jsiiProxy_BigqueryRoutine) GetStringMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		b,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryRoutine) HasResourceMove() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BigqueryRoutine) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -1273,7 +1272,7 @@ func (b *jsiiProxy_BigqueryRoutine) ImportFrom(id *string, provider cdktf.Terraf
 	_jsii_.InvokeVoid(
 		b,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1286,7 +1285,7 @@ func (b *jsiiProxy_BigqueryRoutine) InterpolationForAttribute(terraformAttribute
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1300,18 +1299,18 @@ func (b *jsiiProxy_BigqueryRoutine) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		b,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (b *jsiiProxy_BigqueryRoutine) MoveTo(moveTarget *string, index interface{}) {
+func (b *jsiiProxy_BigqueryRoutine) MoveTo(moveTarget *string, index any) {
 	if err := b.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		b,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1322,7 +1321,7 @@ func (b *jsiiProxy_BigqueryRoutine) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		b,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1333,18 +1332,18 @@ func (b *jsiiProxy_BigqueryRoutine) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		b,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (b *jsiiProxy_BigqueryRoutine) PutArguments(value interface{}) {
+func (b *jsiiProxy_BigqueryRoutine) PutArguments(value any) {
 	if err := b.validatePutArgumentsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		b,
 		"putArguments",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1355,7 +1354,7 @@ func (b *jsiiProxy_BigqueryRoutine) PutRemoteFunctionOptions(value *BigqueryRout
 	_jsii_.InvokeVoid(
 		b,
 		"putRemoteFunctionOptions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1366,7 +1365,7 @@ func (b *jsiiProxy_BigqueryRoutine) PutSparkOptions(value *BigqueryRoutineSparkO
 	_jsii_.InvokeVoid(
 		b,
 		"putSparkOptions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1377,7 +1376,7 @@ func (b *jsiiProxy_BigqueryRoutine) PutTimeouts(value *BigqueryRoutineTimeouts) 
 	_jsii_.InvokeVoid(
 		b,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1501,8 +1500,8 @@ func (b *jsiiProxy_BigqueryRoutine) ResetTimeouts() {
 	)
 }
 
-func (b *jsiiProxy_BigqueryRoutine) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (b *jsiiProxy_BigqueryRoutine) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
@@ -1514,8 +1513,8 @@ func (b *jsiiProxy_BigqueryRoutine) SynthesizeAttributes() *map[string]interface
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryRoutine) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (b *jsiiProxy_BigqueryRoutine) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
@@ -1527,8 +1526,8 @@ func (b *jsiiProxy_BigqueryRoutine) SynthesizeHclAttributes() *map[string]interf
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryRoutine) ToHclTerraform() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BigqueryRoutine) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -1540,8 +1539,8 @@ func (b *jsiiProxy_BigqueryRoutine) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryRoutine) ToMetadata() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BigqueryRoutine) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -1566,8 +1565,8 @@ func (b *jsiiProxy_BigqueryRoutine) ToString() *string {
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryRoutine) ToTerraform() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BigqueryRoutine) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -1578,4 +1577,3 @@ func (b *jsiiProxy_BigqueryRoutine) ToTerraform() interface{} {
 
 	return returns
 }
-

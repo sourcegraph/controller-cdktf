@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.kmsKeyRingImportJob.KmsKeyRingImportJob",
-		reflect.TypeOf((*KmsKeyRingImportJob)(nil)).Elem(),
+		reflect.TypeFor[KmsKeyRingImportJob](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,7 +73,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_KmsKeyRingImportJob{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -81,11 +81,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.kmsKeyRingImportJob.KmsKeyRingImportJobAttestation",
-		reflect.TypeOf((*KmsKeyRingImportJobAttestation)(nil)).Elem(),
+		reflect.TypeFor[KmsKeyRingImportJobAttestation](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.kmsKeyRingImportJob.KmsKeyRingImportJobAttestationList",
-		reflect.TypeOf((*KmsKeyRingImportJobAttestationList)(nil)).Elem(),
+		reflect.TypeFor[KmsKeyRingImportJobAttestationList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -98,7 +98,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_KmsKeyRingImportJobAttestationList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -106,7 +106,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.kmsKeyRingImportJob.KmsKeyRingImportJobAttestationOutputReference",
-		reflect.TypeOf((*KmsKeyRingImportJobAttestationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[KmsKeyRingImportJobAttestationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -132,7 +132,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_KmsKeyRingImportJobAttestationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -140,15 +140,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.kmsKeyRingImportJob.KmsKeyRingImportJobConfig",
-		reflect.TypeOf((*KmsKeyRingImportJobConfig)(nil)).Elem(),
+		reflect.TypeFor[KmsKeyRingImportJobConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.kmsKeyRingImportJob.KmsKeyRingImportJobPublicKey",
-		reflect.TypeOf((*KmsKeyRingImportJobPublicKey)(nil)).Elem(),
+		reflect.TypeFor[KmsKeyRingImportJobPublicKey](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.kmsKeyRingImportJob.KmsKeyRingImportJobPublicKeyList",
-		reflect.TypeOf((*KmsKeyRingImportJobPublicKeyList)(nil)).Elem(),
+		reflect.TypeFor[KmsKeyRingImportJobPublicKeyList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -161,7 +161,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_KmsKeyRingImportJobPublicKeyList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -169,7 +169,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.kmsKeyRingImportJob.KmsKeyRingImportJobPublicKeyOutputReference",
-		reflect.TypeOf((*KmsKeyRingImportJobPublicKeyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[KmsKeyRingImportJobPublicKeyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -194,7 +194,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_KmsKeyRingImportJobPublicKeyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -202,11 +202,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.kmsKeyRingImportJob.KmsKeyRingImportJobTimeouts",
-		reflect.TypeOf((*KmsKeyRingImportJobTimeouts)(nil)).Elem(),
+		reflect.TypeFor[KmsKeyRingImportJobTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.kmsKeyRingImportJob.KmsKeyRingImportJobTimeoutsOutputReference",
-		reflect.TypeOf((*KmsKeyRingImportJobTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[KmsKeyRingImportJobTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -236,7 +236,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_KmsKeyRingImportJobTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

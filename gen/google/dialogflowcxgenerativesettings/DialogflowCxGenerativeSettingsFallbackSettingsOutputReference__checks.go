@@ -90,7 +90,7 @@ func (d *jsiiProxy_DialogflowCxGenerativeSettingsFallbackSettingsOutputReference
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxGenerativeSettingsFallbackSettingsOutputReference) validatePutPromptTemplatesParameters(value interface{}) error {
+func (d *jsiiProxy_DialogflowCxGenerativeSettingsFallbackSettingsOutputReference) validatePutPromptTemplatesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (d *jsiiProxy_DialogflowCxGenerativeSettingsFallbackSettingsOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxGenerativeSettingsFallbackSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxGenerativeSettingsFallbackSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -237,4 +237,3 @@ func validateNewDialogflowCxGenerativeSettingsFallbackSettingsOutputReferencePar
 
 	return nil
 }
-

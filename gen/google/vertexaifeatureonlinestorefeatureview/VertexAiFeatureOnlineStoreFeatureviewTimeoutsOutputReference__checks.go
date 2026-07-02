@@ -98,7 +98,7 @@ func (v *jsiiProxy_VertexAiFeatureOnlineStoreFeatureviewTimeoutsOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_VertexAiFeatureOnlineStoreFeatureviewTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_VertexAiFeatureOnlineStoreFeatureviewTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_VertexAiFeatureOnlineStoreFeatureviewTimeoutsOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_VertexAiFeatureOnlineStoreFeatureviewTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_VertexAiFeatureOnlineStoreFeatureviewTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewVertexAiFeatureOnlineStoreFeatureviewTimeoutsOutputReferencePara
 
 	return nil
 }
-

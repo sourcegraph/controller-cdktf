@@ -19,7 +19,7 @@ func (s *jsiiProxy_SccManagementOrganizationSecurityHealthAnalyticsCustomModule)
 	return nil
 }
 
-func (s *jsiiProxy_SccManagementOrganizationSecurityHealthAnalyticsCustomModule) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_SccManagementOrganizationSecurityHealthAnalyticsCustomModule) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_SccManagementOrganizationSecurityHealthAnalyticsCustomModule)
 	return nil
 }
 
-func (s *jsiiProxy_SccManagementOrganizationSecurityHealthAnalyticsCustomModule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_SccManagementOrganizationSecurityHealthAnalyticsCustomModule) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateSccManagementOrganizationSecurityHealthAnalyticsCustomModule_Genera
 	return nil
 }
 
-func validateSccManagementOrganizationSecurityHealthAnalyticsCustomModule_IsConstructParameters(x interface{}) error {
+func validateSccManagementOrganizationSecurityHealthAnalyticsCustomModule_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateSccManagementOrganizationSecurityHealthAnalyticsCustomModule_IsCons
 	return nil
 }
 
-func validateSccManagementOrganizationSecurityHealthAnalyticsCustomModule_IsTerraformElementParameters(x interface{}) error {
+func validateSccManagementOrganizationSecurityHealthAnalyticsCustomModule_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateSccManagementOrganizationSecurityHealthAnalyticsCustomModule_IsTerr
 	return nil
 }
 
-func validateSccManagementOrganizationSecurityHealthAnalyticsCustomModule_IsTerraformResourceParameters(x interface{}) error {
+func validateSccManagementOrganizationSecurityHealthAnalyticsCustomModule_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func validateSccManagementOrganizationSecurityHealthAnalyticsCustomModule_IsTerr
 	return nil
 }
 
-func (j *jsiiProxy_SccManagementOrganizationSecurityHealthAnalyticsCustomModule) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_SccManagementOrganizationSecurityHealthAnalyticsCustomModule) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -299,7 +299,7 @@ func (j *jsiiProxy_SccManagementOrganizationSecurityHealthAnalyticsCustomModule)
 	return nil
 }
 
-func (j *jsiiProxy_SccManagementOrganizationSecurityHealthAnalyticsCustomModule) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_SccManagementOrganizationSecurityHealthAnalyticsCustomModule) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -404,7 +404,7 @@ func (j *jsiiProxy_SccManagementOrganizationSecurityHealthAnalyticsCustomModule)
 	return nil
 }
 
-func (j *jsiiProxy_SccManagementOrganizationSecurityHealthAnalyticsCustomModule) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_SccManagementOrganizationSecurityHealthAnalyticsCustomModule) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -468,4 +468,3 @@ func validateNewSccManagementOrganizationSecurityHealthAnalyticsCustomModulePara
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisCluster",
-		reflect.TypeOf((*DataGoogleRedisCluster)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisCluster](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "authorizationMode", GoGetter: "AuthorizationMode"},
@@ -92,7 +92,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneDistributionConfig", GoGetter: "ZoneDistributionConfig"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleRedisCluster{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -100,15 +100,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterAutomatedBackupConfig",
-		reflect.TypeOf((*DataGoogleRedisClusterAutomatedBackupConfig)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterAutomatedBackupConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterAutomatedBackupConfigFixedFrequencySchedule",
-		reflect.TypeOf((*DataGoogleRedisClusterAutomatedBackupConfigFixedFrequencySchedule)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterAutomatedBackupConfigFixedFrequencySchedule](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterAutomatedBackupConfigFixedFrequencyScheduleList",
-		reflect.TypeOf((*DataGoogleRedisClusterAutomatedBackupConfigFixedFrequencyScheduleList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterAutomatedBackupConfigFixedFrequencyScheduleList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -121,7 +121,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleRedisClusterAutomatedBackupConfigFixedFrequencyScheduleList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -129,7 +129,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterAutomatedBackupConfigFixedFrequencyScheduleOutputReference",
-		reflect.TypeOf((*DataGoogleRedisClusterAutomatedBackupConfigFixedFrequencyScheduleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterAutomatedBackupConfigFixedFrequencyScheduleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -154,7 +154,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleRedisClusterAutomatedBackupConfigFixedFrequencyScheduleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -162,11 +162,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterAutomatedBackupConfigFixedFrequencyScheduleStartTime",
-		reflect.TypeOf((*DataGoogleRedisClusterAutomatedBackupConfigFixedFrequencyScheduleStartTime)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterAutomatedBackupConfigFixedFrequencyScheduleStartTime](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterAutomatedBackupConfigFixedFrequencyScheduleStartTimeList",
-		reflect.TypeOf((*DataGoogleRedisClusterAutomatedBackupConfigFixedFrequencyScheduleStartTimeList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterAutomatedBackupConfigFixedFrequencyScheduleStartTimeList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -179,7 +179,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleRedisClusterAutomatedBackupConfigFixedFrequencyScheduleStartTimeList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -187,7 +187,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterAutomatedBackupConfigFixedFrequencyScheduleStartTimeOutputReference",
-		reflect.TypeOf((*DataGoogleRedisClusterAutomatedBackupConfigFixedFrequencyScheduleStartTimeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterAutomatedBackupConfigFixedFrequencyScheduleStartTimeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -212,7 +212,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleRedisClusterAutomatedBackupConfigFixedFrequencyScheduleStartTimeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -220,7 +220,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterAutomatedBackupConfigList",
-		reflect.TypeOf((*DataGoogleRedisClusterAutomatedBackupConfigList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterAutomatedBackupConfigList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -233,7 +233,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleRedisClusterAutomatedBackupConfigList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -241,7 +241,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterAutomatedBackupConfigOutputReference",
-		reflect.TypeOf((*DataGoogleRedisClusterAutomatedBackupConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterAutomatedBackupConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -267,7 +267,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleRedisClusterAutomatedBackupConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -275,15 +275,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterConfig",
-		reflect.TypeOf((*DataGoogleRedisClusterConfig)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterCrossClusterReplicationConfig",
-		reflect.TypeOf((*DataGoogleRedisClusterCrossClusterReplicationConfig)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterCrossClusterReplicationConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterCrossClusterReplicationConfigList",
-		reflect.TypeOf((*DataGoogleRedisClusterCrossClusterReplicationConfigList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterCrossClusterReplicationConfigList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -296,7 +296,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleRedisClusterCrossClusterReplicationConfigList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -304,11 +304,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterCrossClusterReplicationConfigMembership",
-		reflect.TypeOf((*DataGoogleRedisClusterCrossClusterReplicationConfigMembership)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterCrossClusterReplicationConfigMembership](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterCrossClusterReplicationConfigMembershipList",
-		reflect.TypeOf((*DataGoogleRedisClusterCrossClusterReplicationConfigMembershipList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterCrossClusterReplicationConfigMembershipList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -321,7 +321,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleRedisClusterCrossClusterReplicationConfigMembershipList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -329,7 +329,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterCrossClusterReplicationConfigMembershipOutputReference",
-		reflect.TypeOf((*DataGoogleRedisClusterCrossClusterReplicationConfigMembershipOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterCrossClusterReplicationConfigMembershipOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -355,7 +355,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleRedisClusterCrossClusterReplicationConfigMembershipOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -363,11 +363,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterCrossClusterReplicationConfigMembershipPrimaryCluster",
-		reflect.TypeOf((*DataGoogleRedisClusterCrossClusterReplicationConfigMembershipPrimaryCluster)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterCrossClusterReplicationConfigMembershipPrimaryCluster](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterCrossClusterReplicationConfigMembershipPrimaryClusterList",
-		reflect.TypeOf((*DataGoogleRedisClusterCrossClusterReplicationConfigMembershipPrimaryClusterList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterCrossClusterReplicationConfigMembershipPrimaryClusterList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -380,7 +380,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleRedisClusterCrossClusterReplicationConfigMembershipPrimaryClusterList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -388,7 +388,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterCrossClusterReplicationConfigMembershipPrimaryClusterOutputReference",
-		reflect.TypeOf((*DataGoogleRedisClusterCrossClusterReplicationConfigMembershipPrimaryClusterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterCrossClusterReplicationConfigMembershipPrimaryClusterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cluster", GoGetter: "Cluster"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -414,7 +414,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleRedisClusterCrossClusterReplicationConfigMembershipPrimaryClusterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -422,11 +422,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterCrossClusterReplicationConfigMembershipSecondaryClusters",
-		reflect.TypeOf((*DataGoogleRedisClusterCrossClusterReplicationConfigMembershipSecondaryClusters)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterCrossClusterReplicationConfigMembershipSecondaryClusters](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterCrossClusterReplicationConfigMembershipSecondaryClustersList",
-		reflect.TypeOf((*DataGoogleRedisClusterCrossClusterReplicationConfigMembershipSecondaryClustersList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterCrossClusterReplicationConfigMembershipSecondaryClustersList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -439,7 +439,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleRedisClusterCrossClusterReplicationConfigMembershipSecondaryClustersList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -447,7 +447,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterCrossClusterReplicationConfigMembershipSecondaryClustersOutputReference",
-		reflect.TypeOf((*DataGoogleRedisClusterCrossClusterReplicationConfigMembershipSecondaryClustersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterCrossClusterReplicationConfigMembershipSecondaryClustersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cluster", GoGetter: "Cluster"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -473,7 +473,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleRedisClusterCrossClusterReplicationConfigMembershipSecondaryClustersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -481,7 +481,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterCrossClusterReplicationConfigOutputReference",
-		reflect.TypeOf((*DataGoogleRedisClusterCrossClusterReplicationConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterCrossClusterReplicationConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clusterRole", GoGetter: "ClusterRole"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -510,7 +510,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleRedisClusterCrossClusterReplicationConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -518,11 +518,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterCrossClusterReplicationConfigPrimaryCluster",
-		reflect.TypeOf((*DataGoogleRedisClusterCrossClusterReplicationConfigPrimaryCluster)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterCrossClusterReplicationConfigPrimaryCluster](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterCrossClusterReplicationConfigPrimaryClusterList",
-		reflect.TypeOf((*DataGoogleRedisClusterCrossClusterReplicationConfigPrimaryClusterList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterCrossClusterReplicationConfigPrimaryClusterList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -535,7 +535,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleRedisClusterCrossClusterReplicationConfigPrimaryClusterList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -543,7 +543,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterCrossClusterReplicationConfigPrimaryClusterOutputReference",
-		reflect.TypeOf((*DataGoogleRedisClusterCrossClusterReplicationConfigPrimaryClusterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterCrossClusterReplicationConfigPrimaryClusterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cluster", GoGetter: "Cluster"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -569,7 +569,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleRedisClusterCrossClusterReplicationConfigPrimaryClusterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -577,11 +577,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterCrossClusterReplicationConfigSecondaryClusters",
-		reflect.TypeOf((*DataGoogleRedisClusterCrossClusterReplicationConfigSecondaryClusters)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterCrossClusterReplicationConfigSecondaryClusters](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterCrossClusterReplicationConfigSecondaryClustersList",
-		reflect.TypeOf((*DataGoogleRedisClusterCrossClusterReplicationConfigSecondaryClustersList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterCrossClusterReplicationConfigSecondaryClustersList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -594,7 +594,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleRedisClusterCrossClusterReplicationConfigSecondaryClustersList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -602,7 +602,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterCrossClusterReplicationConfigSecondaryClustersOutputReference",
-		reflect.TypeOf((*DataGoogleRedisClusterCrossClusterReplicationConfigSecondaryClustersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterCrossClusterReplicationConfigSecondaryClustersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cluster", GoGetter: "Cluster"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -628,7 +628,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleRedisClusterCrossClusterReplicationConfigSecondaryClustersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -636,11 +636,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterDiscoveryEndpoints",
-		reflect.TypeOf((*DataGoogleRedisClusterDiscoveryEndpoints)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterDiscoveryEndpoints](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterDiscoveryEndpointsList",
-		reflect.TypeOf((*DataGoogleRedisClusterDiscoveryEndpointsList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterDiscoveryEndpointsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -653,7 +653,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleRedisClusterDiscoveryEndpointsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -661,7 +661,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterDiscoveryEndpointsOutputReference",
-		reflect.TypeOf((*DataGoogleRedisClusterDiscoveryEndpointsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterDiscoveryEndpointsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "address", GoGetter: "Address"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -688,7 +688,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleRedisClusterDiscoveryEndpointsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -696,11 +696,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterDiscoveryEndpointsPscConfig",
-		reflect.TypeOf((*DataGoogleRedisClusterDiscoveryEndpointsPscConfig)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterDiscoveryEndpointsPscConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterDiscoveryEndpointsPscConfigList",
-		reflect.TypeOf((*DataGoogleRedisClusterDiscoveryEndpointsPscConfigList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterDiscoveryEndpointsPscConfigList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -713,7 +713,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleRedisClusterDiscoveryEndpointsPscConfigList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -721,7 +721,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterDiscoveryEndpointsPscConfigOutputReference",
-		reflect.TypeOf((*DataGoogleRedisClusterDiscoveryEndpointsPscConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterDiscoveryEndpointsPscConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -746,7 +746,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleRedisClusterDiscoveryEndpointsPscConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -754,11 +754,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterGcsSource",
-		reflect.TypeOf((*DataGoogleRedisClusterGcsSource)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterGcsSource](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterGcsSourceList",
-		reflect.TypeOf((*DataGoogleRedisClusterGcsSourceList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterGcsSourceList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -771,7 +771,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleRedisClusterGcsSourceList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -779,7 +779,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterGcsSourceOutputReference",
-		reflect.TypeOf((*DataGoogleRedisClusterGcsSourceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterGcsSourceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -804,7 +804,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "uris", GoGetter: "Uris"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleRedisClusterGcsSourceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -812,11 +812,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterMaintenancePolicy",
-		reflect.TypeOf((*DataGoogleRedisClusterMaintenancePolicy)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterMaintenancePolicy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterMaintenancePolicyList",
-		reflect.TypeOf((*DataGoogleRedisClusterMaintenancePolicyList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterMaintenancePolicyList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -829,7 +829,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleRedisClusterMaintenancePolicyList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -837,7 +837,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterMaintenancePolicyOutputReference",
-		reflect.TypeOf((*DataGoogleRedisClusterMaintenancePolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterMaintenancePolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -864,7 +864,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 			_jsii_.MemberProperty{JsiiProperty: "weeklyMaintenanceWindow", GoGetter: "WeeklyMaintenanceWindow"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleRedisClusterMaintenancePolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -872,11 +872,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterMaintenancePolicyWeeklyMaintenanceWindow",
-		reflect.TypeOf((*DataGoogleRedisClusterMaintenancePolicyWeeklyMaintenanceWindow)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterMaintenancePolicyWeeklyMaintenanceWindow](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterMaintenancePolicyWeeklyMaintenanceWindowList",
-		reflect.TypeOf((*DataGoogleRedisClusterMaintenancePolicyWeeklyMaintenanceWindowList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterMaintenancePolicyWeeklyMaintenanceWindowList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -889,7 +889,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleRedisClusterMaintenancePolicyWeeklyMaintenanceWindowList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -897,7 +897,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterMaintenancePolicyWeeklyMaintenanceWindowOutputReference",
-		reflect.TypeOf((*DataGoogleRedisClusterMaintenancePolicyWeeklyMaintenanceWindowOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterMaintenancePolicyWeeklyMaintenanceWindowOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -924,7 +924,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleRedisClusterMaintenancePolicyWeeklyMaintenanceWindowOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -932,11 +932,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterMaintenancePolicyWeeklyMaintenanceWindowStartTime",
-		reflect.TypeOf((*DataGoogleRedisClusterMaintenancePolicyWeeklyMaintenanceWindowStartTime)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterMaintenancePolicyWeeklyMaintenanceWindowStartTime](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterMaintenancePolicyWeeklyMaintenanceWindowStartTimeList",
-		reflect.TypeOf((*DataGoogleRedisClusterMaintenancePolicyWeeklyMaintenanceWindowStartTimeList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterMaintenancePolicyWeeklyMaintenanceWindowStartTimeList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -949,7 +949,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleRedisClusterMaintenancePolicyWeeklyMaintenanceWindowStartTimeList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -957,7 +957,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterMaintenancePolicyWeeklyMaintenanceWindowStartTimeOutputReference",
-		reflect.TypeOf((*DataGoogleRedisClusterMaintenancePolicyWeeklyMaintenanceWindowStartTimeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterMaintenancePolicyWeeklyMaintenanceWindowStartTimeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -985,7 +985,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleRedisClusterMaintenancePolicyWeeklyMaintenanceWindowStartTimeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -993,11 +993,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterMaintenanceSchedule",
-		reflect.TypeOf((*DataGoogleRedisClusterMaintenanceSchedule)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterMaintenanceSchedule](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterMaintenanceScheduleList",
-		reflect.TypeOf((*DataGoogleRedisClusterMaintenanceScheduleList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterMaintenanceScheduleList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1010,7 +1010,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleRedisClusterMaintenanceScheduleList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1018,7 +1018,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterMaintenanceScheduleOutputReference",
-		reflect.TypeOf((*DataGoogleRedisClusterMaintenanceScheduleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterMaintenanceScheduleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1045,7 +1045,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleRedisClusterMaintenanceScheduleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1053,11 +1053,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterManagedBackupSource",
-		reflect.TypeOf((*DataGoogleRedisClusterManagedBackupSource)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterManagedBackupSource](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterManagedBackupSourceList",
-		reflect.TypeOf((*DataGoogleRedisClusterManagedBackupSourceList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterManagedBackupSourceList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1070,7 +1070,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleRedisClusterManagedBackupSourceList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1078,7 +1078,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterManagedBackupSourceOutputReference",
-		reflect.TypeOf((*DataGoogleRedisClusterManagedBackupSourceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterManagedBackupSourceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "backup", GoGetter: "Backup"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1103,7 +1103,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleRedisClusterManagedBackupSourceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1111,15 +1111,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterManagedServerCa",
-		reflect.TypeOf((*DataGoogleRedisClusterManagedServerCa)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterManagedServerCa](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterManagedServerCaCaCerts",
-		reflect.TypeOf((*DataGoogleRedisClusterManagedServerCaCaCerts)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterManagedServerCaCaCerts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterManagedServerCaCaCertsList",
-		reflect.TypeOf((*DataGoogleRedisClusterManagedServerCaCaCertsList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterManagedServerCaCaCertsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1132,7 +1132,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleRedisClusterManagedServerCaCaCertsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1140,7 +1140,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterManagedServerCaCaCertsOutputReference",
-		reflect.TypeOf((*DataGoogleRedisClusterManagedServerCaCaCertsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterManagedServerCaCaCertsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "certificates", GoGetter: "Certificates"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1165,7 +1165,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleRedisClusterManagedServerCaCaCertsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1173,7 +1173,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterManagedServerCaList",
-		reflect.TypeOf((*DataGoogleRedisClusterManagedServerCaList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterManagedServerCaList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1186,7 +1186,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleRedisClusterManagedServerCaList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1194,7 +1194,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterManagedServerCaOutputReference",
-		reflect.TypeOf((*DataGoogleRedisClusterManagedServerCaOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterManagedServerCaOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "caCerts", GoGetter: "CaCerts"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1219,7 +1219,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleRedisClusterManagedServerCaOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1227,15 +1227,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterPersistenceConfig",
-		reflect.TypeOf((*DataGoogleRedisClusterPersistenceConfig)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterPersistenceConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterPersistenceConfigAofConfig",
-		reflect.TypeOf((*DataGoogleRedisClusterPersistenceConfigAofConfig)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterPersistenceConfigAofConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterPersistenceConfigAofConfigList",
-		reflect.TypeOf((*DataGoogleRedisClusterPersistenceConfigAofConfigList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterPersistenceConfigAofConfigList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1248,7 +1248,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleRedisClusterPersistenceConfigAofConfigList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1256,7 +1256,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterPersistenceConfigAofConfigOutputReference",
-		reflect.TypeOf((*DataGoogleRedisClusterPersistenceConfigAofConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterPersistenceConfigAofConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "appendFsync", GoGetter: "AppendFsync"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1281,7 +1281,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleRedisClusterPersistenceConfigAofConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1289,7 +1289,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterPersistenceConfigList",
-		reflect.TypeOf((*DataGoogleRedisClusterPersistenceConfigList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterPersistenceConfigList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1302,7 +1302,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleRedisClusterPersistenceConfigList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1310,7 +1310,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterPersistenceConfigOutputReference",
-		reflect.TypeOf((*DataGoogleRedisClusterPersistenceConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterPersistenceConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aofConfig", GoGetter: "AofConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1337,7 +1337,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleRedisClusterPersistenceConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1345,11 +1345,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterPersistenceConfigRdbConfig",
-		reflect.TypeOf((*DataGoogleRedisClusterPersistenceConfigRdbConfig)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterPersistenceConfigRdbConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterPersistenceConfigRdbConfigList",
-		reflect.TypeOf((*DataGoogleRedisClusterPersistenceConfigRdbConfigList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterPersistenceConfigRdbConfigList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1362,7 +1362,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleRedisClusterPersistenceConfigRdbConfigList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1370,7 +1370,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterPersistenceConfigRdbConfigOutputReference",
-		reflect.TypeOf((*DataGoogleRedisClusterPersistenceConfigRdbConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterPersistenceConfigRdbConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1396,7 +1396,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleRedisClusterPersistenceConfigRdbConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1404,11 +1404,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterPscConfigs",
-		reflect.TypeOf((*DataGoogleRedisClusterPscConfigs)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterPscConfigs](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterPscConfigsList",
-		reflect.TypeOf((*DataGoogleRedisClusterPscConfigsList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterPscConfigsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1421,7 +1421,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleRedisClusterPscConfigsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1429,7 +1429,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterPscConfigsOutputReference",
-		reflect.TypeOf((*DataGoogleRedisClusterPscConfigsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterPscConfigsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1454,7 +1454,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleRedisClusterPscConfigsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1462,11 +1462,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterPscConnections",
-		reflect.TypeOf((*DataGoogleRedisClusterPscConnections)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterPscConnections](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterPscConnectionsList",
-		reflect.TypeOf((*DataGoogleRedisClusterPscConnectionsList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterPscConnectionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1479,7 +1479,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleRedisClusterPscConnectionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1487,7 +1487,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterPscConnectionsOutputReference",
-		reflect.TypeOf((*DataGoogleRedisClusterPscConnectionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterPscConnectionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "address", GoGetter: "Address"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1516,7 +1516,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleRedisClusterPscConnectionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1524,11 +1524,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterPscServiceAttachments",
-		reflect.TypeOf((*DataGoogleRedisClusterPscServiceAttachments)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterPscServiceAttachments](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterPscServiceAttachmentsList",
-		reflect.TypeOf((*DataGoogleRedisClusterPscServiceAttachmentsList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterPscServiceAttachmentsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1541,7 +1541,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleRedisClusterPscServiceAttachmentsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1549,7 +1549,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterPscServiceAttachmentsOutputReference",
-		reflect.TypeOf((*DataGoogleRedisClusterPscServiceAttachmentsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterPscServiceAttachmentsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1575,7 +1575,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleRedisClusterPscServiceAttachmentsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1583,11 +1583,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterStateInfo",
-		reflect.TypeOf((*DataGoogleRedisClusterStateInfo)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterStateInfo](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterStateInfoList",
-		reflect.TypeOf((*DataGoogleRedisClusterStateInfoList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterStateInfoList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1600,7 +1600,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleRedisClusterStateInfoList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1608,7 +1608,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterStateInfoOutputReference",
-		reflect.TypeOf((*DataGoogleRedisClusterStateInfoOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterStateInfoOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1633,7 +1633,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInfo", GoGetter: "UpdateInfo"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleRedisClusterStateInfoOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1641,11 +1641,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterStateInfoUpdateInfo",
-		reflect.TypeOf((*DataGoogleRedisClusterStateInfoUpdateInfo)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterStateInfoUpdateInfo](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterStateInfoUpdateInfoList",
-		reflect.TypeOf((*DataGoogleRedisClusterStateInfoUpdateInfoList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterStateInfoUpdateInfoList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1658,7 +1658,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleRedisClusterStateInfoUpdateInfoList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1666,7 +1666,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterStateInfoUpdateInfoOutputReference",
-		reflect.TypeOf((*DataGoogleRedisClusterStateInfoUpdateInfoOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterStateInfoUpdateInfoOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1692,7 +1692,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleRedisClusterStateInfoUpdateInfoOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1700,11 +1700,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterZoneDistributionConfig",
-		reflect.TypeOf((*DataGoogleRedisClusterZoneDistributionConfig)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterZoneDistributionConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterZoneDistributionConfigList",
-		reflect.TypeOf((*DataGoogleRedisClusterZoneDistributionConfigList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterZoneDistributionConfigList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1717,7 +1717,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleRedisClusterZoneDistributionConfigList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1725,7 +1725,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterZoneDistributionConfigOutputReference",
-		reflect.TypeOf((*DataGoogleRedisClusterZoneDistributionConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleRedisClusterZoneDistributionConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1751,7 +1751,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "zone", GoGetter: "Zone"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleRedisClusterZoneDistributionConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

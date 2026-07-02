@@ -19,7 +19,7 @@ func (s *jsiiProxy_ServiceNetworkingConnection) validateAddMoveTargetParameters(
 	return nil
 }
 
-func (s *jsiiProxy_ServiceNetworkingConnection) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_ServiceNetworkingConnection) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_ServiceNetworkingConnection) validateMoveFromIdParameters(id 
 	return nil
 }
 
-func (s *jsiiProxy_ServiceNetworkingConnection) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_ServiceNetworkingConnection) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateServiceNetworkingConnection_GenerateConfigForImportParameters(scope
 	return nil
 }
 
-func validateServiceNetworkingConnection_IsConstructParameters(x interface{}) error {
+func validateServiceNetworkingConnection_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateServiceNetworkingConnection_IsConstructParameters(x interface{}) er
 	return nil
 }
 
-func validateServiceNetworkingConnection_IsTerraformElementParameters(x interface{}) error {
+func validateServiceNetworkingConnection_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateServiceNetworkingConnection_IsTerraformElementParameters(x interfac
 	return nil
 }
 
-func validateServiceNetworkingConnection_IsTerraformResourceParameters(x interface{}) error {
+func validateServiceNetworkingConnection_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateServiceNetworkingConnection_IsTerraformResourceParameters(x interfa
 	return nil
 }
 
-func (j *jsiiProxy_ServiceNetworkingConnection) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ServiceNetworkingConnection) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_ServiceNetworkingConnection) validateSetConnectionParameters(
 	return nil
 }
 
-func (j *jsiiProxy_ServiceNetworkingConnection) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ServiceNetworkingConnection) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -377,7 +377,7 @@ func (j *jsiiProxy_ServiceNetworkingConnection) validateSetNetworkParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_ServiceNetworkingConnection) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ServiceNetworkingConnection) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -439,7 +439,7 @@ func (j *jsiiProxy_ServiceNetworkingConnection) validateSetServiceParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_ServiceNetworkingConnection) validateSetUpdateOnCreationFailParameters(val interface{}) error {
+func (j *jsiiProxy_ServiceNetworkingConnection) validateSetUpdateOnCreationFailParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -477,4 +477,3 @@ func validateNewServiceNetworkingConnectionParameters(scope constructs.Construct
 
 	return nil
 }
-

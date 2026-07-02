@@ -12,9 +12,9 @@ type IamProjectsPolicyBindingTargetOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -43,7 +43,7 @@ type IamProjectsPolicyBindingTargetOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -67,7 +67,7 @@ type IamProjectsPolicyBindingTargetOutputReference interface {
 	ResetPrincipalSet()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,8 +80,8 @@ type jsiiProxy_IamProjectsPolicyBindingTargetOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_IamProjectsPolicyBindingTargetOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IamProjectsPolicyBindingTargetOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -170,7 +170,6 @@ func (j *jsiiProxy_IamProjectsPolicyBindingTargetOutputReference) TerraformResou
 	return returns
 }
 
-
 func NewIamProjectsPolicyBindingTargetOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) IamProjectsPolicyBindingTargetOutputReference {
 	_init_.Initialize()
 
@@ -181,7 +180,7 @@ func NewIamProjectsPolicyBindingTargetOutputReference(terraformResource cdktf.II
 
 	_jsii_.Create(
 		"@cdktf/provider-google.iamProjectsPolicyBinding.IamProjectsPolicyBindingTargetOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -193,12 +192,12 @@ func NewIamProjectsPolicyBindingTargetOutputReference_Override(i IamProjectsPoli
 
 	_jsii_.Create(
 		"@cdktf/provider-google.iamProjectsPolicyBinding.IamProjectsPolicyBindingTargetOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		i,
 	)
 }
 
-func (j *jsiiProxy_IamProjectsPolicyBindingTargetOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_IamProjectsPolicyBindingTargetOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -209,7 +208,7 @@ func (j *jsiiProxy_IamProjectsPolicyBindingTargetOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_IamProjectsPolicyBindingTargetOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_IamProjectsPolicyBindingTargetOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -220,7 +219,7 @@ func (j *jsiiProxy_IamProjectsPolicyBindingTargetOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_IamProjectsPolicyBindingTargetOutputReference)SetInternalValue(val *IamProjectsPolicyBindingTarget) {
+func (j *jsiiProxy_IamProjectsPolicyBindingTargetOutputReference) SetInternalValue(val *IamProjectsPolicyBindingTarget) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_IamProjectsPolicyBindingTargetOutputReference)SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_IamProjectsPolicyBindingTargetOutputReference)SetPrincipalSet(val *string) {
+func (j *jsiiProxy_IamProjectsPolicyBindingTargetOutputReference) SetPrincipalSet(val *string) {
 	if err := j.validateSetPrincipalSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_IamProjectsPolicyBindingTargetOutputReference)SetPrincipalSet
 	)
 }
 
-func (j *jsiiProxy_IamProjectsPolicyBindingTargetOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_IamProjectsPolicyBindingTargetOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_IamProjectsPolicyBindingTargetOutputReference)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_IamProjectsPolicyBindingTargetOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_IamProjectsPolicyBindingTargetOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,16 +276,16 @@ func (i *jsiiProxy_IamProjectsPolicyBindingTargetOutputReference) ComputeFqn() *
 	return returns
 }
 
-func (i *jsiiProxy_IamProjectsPolicyBindingTargetOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_IamProjectsPolicyBindingTargetOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -302,7 +301,7 @@ func (i *jsiiProxy_IamProjectsPolicyBindingTargetOutputReference) GetBooleanAttr
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -318,7 +317,7 @@ func (i *jsiiProxy_IamProjectsPolicyBindingTargetOutputReference) GetBooleanMapA
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -334,7 +333,7 @@ func (i *jsiiProxy_IamProjectsPolicyBindingTargetOutputReference) GetListAttribu
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -350,7 +349,7 @@ func (i *jsiiProxy_IamProjectsPolicyBindingTargetOutputReference) GetNumberAttri
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -366,7 +365,7 @@ func (i *jsiiProxy_IamProjectsPolicyBindingTargetOutputReference) GetNumberListA
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -382,7 +381,7 @@ func (i *jsiiProxy_IamProjectsPolicyBindingTargetOutputReference) GetNumberMapAt
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -398,7 +397,7 @@ func (i *jsiiProxy_IamProjectsPolicyBindingTargetOutputReference) GetStringAttri
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -414,7 +413,7 @@ func (i *jsiiProxy_IamProjectsPolicyBindingTargetOutputReference) GetStringMapAt
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -443,7 +442,7 @@ func (i *jsiiProxy_IamProjectsPolicyBindingTargetOutputReference) InterpolationF
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -458,16 +457,16 @@ func (i *jsiiProxy_IamProjectsPolicyBindingTargetOutputReference) ResetPrincipal
 	)
 }
 
-func (i *jsiiProxy_IamProjectsPolicyBindingTargetOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (i *jsiiProxy_IamProjectsPolicyBindingTargetOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := i.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -486,4 +485,3 @@ func (i *jsiiProxy_IamProjectsPolicyBindingTargetOutputReference) ToString() *st
 
 	return returns
 }
-

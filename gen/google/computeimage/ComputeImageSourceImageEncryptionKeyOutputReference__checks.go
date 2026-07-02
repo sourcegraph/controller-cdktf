@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeImageSourceImageEncryptionKeyOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_ComputeImageSourceImageEncryptionKeyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeImageSourceImageEncryptionKeyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewComputeImageSourceImageEncryptionKeyOutputReferenceParameters(te
 
 	return nil
 }
-

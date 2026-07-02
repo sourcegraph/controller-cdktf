@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.siteVerificationOwner.SiteVerificationOwner",
-		reflect.TypeOf((*SiteVerificationOwner)(nil)).Elem(),
+		reflect.TypeFor[SiteVerificationOwner](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -64,7 +64,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "webResourceId", GoGetter: "WebResourceId"},
 			_jsii_.MemberProperty{JsiiProperty: "webResourceIdInput", GoGetter: "WebResourceIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SiteVerificationOwner{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -72,15 +72,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.siteVerificationOwner.SiteVerificationOwnerConfig",
-		reflect.TypeOf((*SiteVerificationOwnerConfig)(nil)).Elem(),
+		reflect.TypeFor[SiteVerificationOwnerConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.siteVerificationOwner.SiteVerificationOwnerTimeouts",
-		reflect.TypeOf((*SiteVerificationOwnerTimeouts)(nil)).Elem(),
+		reflect.TypeFor[SiteVerificationOwnerTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.siteVerificationOwner.SiteVerificationOwnerTimeoutsOutputReference",
-		reflect.TypeOf((*SiteVerificationOwnerTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SiteVerificationOwnerTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -110,7 +110,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SiteVerificationOwnerTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

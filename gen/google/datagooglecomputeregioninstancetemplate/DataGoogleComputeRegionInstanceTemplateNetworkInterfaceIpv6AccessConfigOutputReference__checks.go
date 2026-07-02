@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleComputeRegionInstanceTemplateNetworkInterfaceIpv6Ac
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplateNetworkInterfaceIpv6AccessConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplateNetworkInterfaceIpv6AccessConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleComputeRegionInstanceTemplateNetworkInterfaceIpv6Acces
 
 	return nil
 }
-

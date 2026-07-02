@@ -1,15 +1,14 @@
 package sqldatabaseinstance
 
-
 type SqlDatabaseInstanceSettingsInsightsConfig struct {
 	// True if Enhanced Query Insights feature is enabled.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/sql_database_instance#enhanced_query_insights_enabled SqlDatabaseInstance#enhanced_query_insights_enabled}
-	EnhancedQueryInsightsEnabled interface{} `field:"optional" json:"enhancedQueryInsightsEnabled" yaml:"enhancedQueryInsightsEnabled"`
+	EnhancedQueryInsightsEnabled any `field:"optional" json:"enhancedQueryInsightsEnabled" yaml:"enhancedQueryInsightsEnabled"`
 	// True if Query Insights feature is enabled.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/sql_database_instance#query_insights_enabled SqlDatabaseInstance#query_insights_enabled}
-	QueryInsightsEnabled interface{} `field:"optional" json:"queryInsightsEnabled" yaml:"queryInsightsEnabled"`
+	QueryInsightsEnabled any `field:"optional" json:"queryInsightsEnabled" yaml:"queryInsightsEnabled"`
 	// Number of query execution plans captured by Insights per minute for all queries combined.
 	//
 	// Between 0 and 20. Default to 5. For Enterprise Plus instances, from 0 to 200.
@@ -25,10 +24,9 @@ type SqlDatabaseInstanceSettingsInsightsConfig struct {
 	// True if Query Insights will record application tags from query when enabled.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/sql_database_instance#record_application_tags SqlDatabaseInstance#record_application_tags}
-	RecordApplicationTags interface{} `field:"optional" json:"recordApplicationTags" yaml:"recordApplicationTags"`
+	RecordApplicationTags any `field:"optional" json:"recordApplicationTags" yaml:"recordApplicationTags"`
 	// True if Query Insights will record client address when enabled.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/sql_database_instance#record_client_address SqlDatabaseInstance#record_client_address}
-	RecordClientAddress interface{} `field:"optional" json:"recordClientAddress" yaml:"recordClientAddress"`
+	RecordClientAddress any `field:"optional" json:"recordClientAddress" yaml:"recordClientAddress"`
 }
-

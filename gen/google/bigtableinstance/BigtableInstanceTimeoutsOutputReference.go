@@ -12,9 +12,9 @@ type BigtableInstanceTimeoutsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,8 +30,8 @@ type BigtableInstanceTimeoutsOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Read() *string
 	SetRead(val *string)
 	ReadInput() *string
@@ -49,7 +49,7 @@ type BigtableInstanceTimeoutsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type BigtableInstanceTimeoutsOutputReference interface {
 	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_BigtableInstanceTimeoutsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_BigtableInstanceTimeoutsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigtableInstanceTimeoutsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -148,8 +148,8 @@ func (j *jsiiProxy_BigtableInstanceTimeoutsOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_BigtableInstanceTimeoutsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigtableInstanceTimeoutsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_BigtableInstanceTimeoutsOutputReference) UpdateInput() *strin
 	return returns
 }
 
-
 func NewBigtableInstanceTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) BigtableInstanceTimeoutsOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewBigtableInstanceTimeoutsOutputReference(terraformResource cdktf.IInterpo
 
 	_jsii_.Create(
 		"@cdktf/provider-google.bigtableInstance.BigtableInstanceTimeoutsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewBigtableInstanceTimeoutsOutputReference_Override(b BigtableInstanceTimeo
 
 	_jsii_.Create(
 		"@cdktf/provider-google.bigtableInstance.BigtableInstanceTimeoutsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		b,
 	)
 }
 
-func (j *jsiiProxy_BigtableInstanceTimeoutsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_BigtableInstanceTimeoutsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_BigtableInstanceTimeoutsOutputReference)SetComplexObjectIndex
 	)
 }
 
-func (j *jsiiProxy_BigtableInstanceTimeoutsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_BigtableInstanceTimeoutsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_BigtableInstanceTimeoutsOutputReference)SetComplexObjectIsFro
 	)
 }
 
-func (j *jsiiProxy_BigtableInstanceTimeoutsOutputReference)SetCreate(val *string) {
+func (j *jsiiProxy_BigtableInstanceTimeoutsOutputReference) SetCreate(val *string) {
 	if err := j.validateSetCreateParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_BigtableInstanceTimeoutsOutputReference)SetCreate(val *string
 	)
 }
 
-func (j *jsiiProxy_BigtableInstanceTimeoutsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_BigtableInstanceTimeoutsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_BigtableInstanceTimeoutsOutputReference)SetInternalValue(val 
 	)
 }
 
-func (j *jsiiProxy_BigtableInstanceTimeoutsOutputReference)SetRead(val *string) {
+func (j *jsiiProxy_BigtableInstanceTimeoutsOutputReference) SetRead(val *string) {
 	if err := j.validateSetReadParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_BigtableInstanceTimeoutsOutputReference)SetRead(val *string) 
 	)
 }
 
-func (j *jsiiProxy_BigtableInstanceTimeoutsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_BigtableInstanceTimeoutsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_BigtableInstanceTimeoutsOutputReference)SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_BigtableInstanceTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BigtableInstanceTimeoutsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_BigtableInstanceTimeoutsOutputReference)SetTerraformResource(
 	)
 }
 
-func (j *jsiiProxy_BigtableInstanceTimeoutsOutputReference)SetUpdate(val *string) {
+func (j *jsiiProxy_BigtableInstanceTimeoutsOutputReference) SetUpdate(val *string) {
 	if err := j.validateSetUpdateParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (b *jsiiProxy_BigtableInstanceTimeoutsOutputReference) ComputeFqn() *string
 	return returns
 }
 
-func (b *jsiiProxy_BigtableInstanceTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (b *jsiiProxy_BigtableInstanceTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := b.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (b *jsiiProxy_BigtableInstanceTimeoutsOutputReference) GetBooleanAttribute(
 	_jsii_.Invoke(
 		b,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (b *jsiiProxy_BigtableInstanceTimeoutsOutputReference) GetBooleanMapAttribu
 	_jsii_.Invoke(
 		b,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (b *jsiiProxy_BigtableInstanceTimeoutsOutputReference) GetListAttribute(ter
 	_jsii_.Invoke(
 		b,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (b *jsiiProxy_BigtableInstanceTimeoutsOutputReference) GetNumberAttribute(t
 	_jsii_.Invoke(
 		b,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (b *jsiiProxy_BigtableInstanceTimeoutsOutputReference) GetNumberListAttribu
 	_jsii_.Invoke(
 		b,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (b *jsiiProxy_BigtableInstanceTimeoutsOutputReference) GetNumberMapAttribut
 	_jsii_.Invoke(
 		b,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (b *jsiiProxy_BigtableInstanceTimeoutsOutputReference) GetStringAttribute(t
 	_jsii_.Invoke(
 		b,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (b *jsiiProxy_BigtableInstanceTimeoutsOutputReference) GetStringMapAttribut
 	_jsii_.Invoke(
 		b,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (b *jsiiProxy_BigtableInstanceTimeoutsOutputReference) InterpolationForAttr
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (b *jsiiProxy_BigtableInstanceTimeoutsOutputReference) ResetUpdate() {
 	)
 }
 
-func (b *jsiiProxy_BigtableInstanceTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (b *jsiiProxy_BigtableInstanceTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := b.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (b *jsiiProxy_BigtableInstanceTimeoutsOutputReference) ToString() *string {
 
 	return returns
 }
-

@@ -90,7 +90,7 @@ func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOp
 	return nil
 }
 
-func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsOutputReference) validatePutExcludedFieldsParameters(value interface{}) error {
+func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsOutputReference) validatePutExcludedFieldsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOp
 	return nil
 }
 
-func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsOutputReference) validatePutIdentifyingFieldsParameters(value interface{}) error {
+func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsOutputReference) validatePutIdentifyingFieldsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -152,7 +152,7 @@ func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOp
 	return nil
 }
 
-func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsOutputReference) validatePutIncludedFieldsParameters(value interface{}) error {
+func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsOutputReference) validatePutIncludedFieldsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -202,7 +202,7 @@ func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOp
 	return nil
 }
 
-func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -326,4 +326,3 @@ func validateNewDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptio
 
 	return nil
 }
-

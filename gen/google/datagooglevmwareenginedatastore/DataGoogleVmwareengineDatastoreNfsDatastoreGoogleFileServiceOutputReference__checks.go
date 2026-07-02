@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleVmwareengineDatastoreNfsDatastoreGoogleFileServiceO
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleVmwareengineDatastoreNfsDatastoreGoogleFileServiceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleVmwareengineDatastoreNfsDatastoreGoogleFileServiceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleVmwareengineDatastoreNfsDatastoreGoogleFileServiceOutp
 
 	return nil
 }
-

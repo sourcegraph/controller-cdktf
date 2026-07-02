@@ -98,7 +98,7 @@ func (c *jsiiProxy_CloudbuildTriggerBuildAvailableSecretsSecretManagerOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_CloudbuildTriggerBuildAvailableSecretsSecretManagerOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudbuildTriggerBuildAvailableSecretsSecretManagerOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_CloudbuildTriggerBuildAvailableSecretsSecretManagerOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_CloudbuildTriggerBuildAvailableSecretsSecretManagerOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CloudbuildTriggerBuildAvailableSecretsSecretManagerOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewCloudbuildTriggerBuildAvailableSecretsSecretManagerOutputReferen
 
 	return nil
 }
-

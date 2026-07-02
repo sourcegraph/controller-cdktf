@@ -98,7 +98,7 @@ func (v *jsiiProxy_VertexAiReasoningEngineSpecSourceCodeSpecPythonSpecOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_VertexAiReasoningEngineSpecSourceCodeSpecPythonSpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_VertexAiReasoningEngineSpecSourceCodeSpecPythonSpecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewVertexAiReasoningEngineSpecSourceCodeSpecPythonSpecOutputReferen
 
 	return nil
 }
-

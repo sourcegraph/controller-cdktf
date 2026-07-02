@@ -34,7 +34,7 @@ func (c *jsiiProxy_ComputeRegionCommitmentResourcesList) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionCommitmentResourcesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionCommitmentResourcesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewComputeRegionCommitmentResourcesListParameters(terraformResource
 
 	return nil
 }
-

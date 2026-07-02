@@ -98,7 +98,7 @@ func (c *jsiiProxy_CloudAssetOrganizationFeedConditionOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_CloudAssetOrganizationFeedConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudAssetOrganizationFeedConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewCloudAssetOrganizationFeedConditionOutputReferenceParameters(ter
 
 	return nil
 }
-

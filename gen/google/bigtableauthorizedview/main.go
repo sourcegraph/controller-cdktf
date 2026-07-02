@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.bigtableAuthorizedView.BigtableAuthorizedView",
-		reflect.TypeOf((*BigtableAuthorizedView)(nil)).Elem(),
+		reflect.TypeFor[BigtableAuthorizedView](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -76,7 +76,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BigtableAuthorizedView{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -84,19 +84,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewConfig",
-		reflect.TypeOf((*BigtableAuthorizedViewConfig)(nil)).Elem(),
+		reflect.TypeFor[BigtableAuthorizedViewConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewSubsetView",
-		reflect.TypeOf((*BigtableAuthorizedViewSubsetView)(nil)).Elem(),
+		reflect.TypeFor[BigtableAuthorizedViewSubsetView](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewSubsetViewFamilySubsets",
-		reflect.TypeOf((*BigtableAuthorizedViewSubsetViewFamilySubsets)(nil)).Elem(),
+		reflect.TypeFor[BigtableAuthorizedViewSubsetViewFamilySubsets](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewSubsetViewFamilySubsetsList",
-		reflect.TypeOf((*BigtableAuthorizedViewSubsetViewFamilySubsetsList)(nil)).Elem(),
+		reflect.TypeFor[BigtableAuthorizedViewSubsetViewFamilySubsetsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -110,7 +110,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BigtableAuthorizedViewSubsetViewFamilySubsetsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -118,7 +118,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewSubsetViewFamilySubsetsOutputReference",
-		reflect.TypeOf((*BigtableAuthorizedViewSubsetViewFamilySubsetsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BigtableAuthorizedViewSubsetViewFamilySubsetsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -150,7 +150,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BigtableAuthorizedViewSubsetViewFamilySubsetsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -158,7 +158,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewSubsetViewOutputReference",
-		reflect.TypeOf((*BigtableAuthorizedViewSubsetViewOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BigtableAuthorizedViewSubsetViewOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -189,7 +189,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BigtableAuthorizedViewSubsetViewOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -197,11 +197,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewTimeouts",
-		reflect.TypeOf((*BigtableAuthorizedViewTimeouts)(nil)).Elem(),
+		reflect.TypeFor[BigtableAuthorizedViewTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewTimeoutsOutputReference",
-		reflect.TypeOf((*BigtableAuthorizedViewTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BigtableAuthorizedViewTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -231,7 +231,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BigtableAuthorizedViewTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

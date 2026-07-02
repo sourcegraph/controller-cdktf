@@ -34,7 +34,7 @@ func (d *jsiiProxy_DialogflowCxToolVersionToolOpenApiSpecTlsConfigCaCertsList) v
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxToolVersionToolOpenApiSpecTlsConfigCaCertsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxToolVersionToolOpenApiSpecTlsConfigCaCertsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDialogflowCxToolVersionToolOpenApiSpecTlsConfigCaCertsListParame
 
 	return nil
 }
-

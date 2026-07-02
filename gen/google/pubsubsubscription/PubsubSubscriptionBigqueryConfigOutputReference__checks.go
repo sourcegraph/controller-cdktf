@@ -98,7 +98,7 @@ func (p *jsiiProxy_PubsubSubscriptionBigqueryConfigOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_PubsubSubscriptionBigqueryConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PubsubSubscriptionBigqueryConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_PubsubSubscriptionBigqueryConfigOutputReference) validateSetC
 	return nil
 }
 
-func (j *jsiiProxy_PubsubSubscriptionBigqueryConfigOutputReference) validateSetDropUnknownFieldsParameters(val interface{}) error {
+func (j *jsiiProxy_PubsubSubscriptionBigqueryConfigOutputReference) validateSetDropUnknownFieldsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -223,7 +223,7 @@ func (j *jsiiProxy_PubsubSubscriptionBigqueryConfigOutputReference) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_PubsubSubscriptionBigqueryConfigOutputReference) validateSetUseTableSchemaParameters(val interface{}) error {
+func (j *jsiiProxy_PubsubSubscriptionBigqueryConfigOutputReference) validateSetUseTableSchemaParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -243,7 +243,7 @@ func (j *jsiiProxy_PubsubSubscriptionBigqueryConfigOutputReference) validateSetU
 	return nil
 }
 
-func (j *jsiiProxy_PubsubSubscriptionBigqueryConfigOutputReference) validateSetUseTopicSchemaParameters(val interface{}) error {
+func (j *jsiiProxy_PubsubSubscriptionBigqueryConfigOutputReference) validateSetUseTopicSchemaParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_PubsubSubscriptionBigqueryConfigOutputReference) validateSetU
 	return nil
 }
 
-func (j *jsiiProxy_PubsubSubscriptionBigqueryConfigOutputReference) validateSetWriteMetadataParameters(val interface{}) error {
+func (j *jsiiProxy_PubsubSubscriptionBigqueryConfigOutputReference) validateSetWriteMetadataParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -294,4 +294,3 @@ func validateNewPubsubSubscriptionBigqueryConfigOutputReferenceParameters(terraf
 
 	return nil
 }
-

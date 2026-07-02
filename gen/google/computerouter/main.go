@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRouter.ComputeRouter",
-		reflect.TypeOf((*ComputeRouter)(nil)).Elem(),
+		reflect.TypeFor[ComputeRouter](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -91,7 +91,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRouter{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -99,15 +99,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRouter.ComputeRouterBgp",
-		reflect.TypeOf((*ComputeRouterBgp)(nil)).Elem(),
+		reflect.TypeFor[ComputeRouterBgp](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRouter.ComputeRouterBgpAdvertisedIpRanges",
-		reflect.TypeOf((*ComputeRouterBgpAdvertisedIpRanges)(nil)).Elem(),
+		reflect.TypeFor[ComputeRouterBgpAdvertisedIpRanges](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRouter.ComputeRouterBgpAdvertisedIpRangesList",
-		reflect.TypeOf((*ComputeRouterBgpAdvertisedIpRangesList)(nil)).Elem(),
+		reflect.TypeFor[ComputeRouterBgpAdvertisedIpRangesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -121,7 +121,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRouterBgpAdvertisedIpRangesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -129,7 +129,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRouter.ComputeRouterBgpAdvertisedIpRangesOutputReference",
-		reflect.TypeOf((*ComputeRouterBgpAdvertisedIpRangesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRouterBgpAdvertisedIpRangesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -158,7 +158,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRouterBgpAdvertisedIpRangesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -166,7 +166,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRouter.ComputeRouterBgpOutputReference",
-		reflect.TypeOf((*ComputeRouterBgpOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRouterBgpOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "advertisedGroups", GoGetter: "AdvertisedGroups"},
 			_jsii_.MemberProperty{JsiiProperty: "advertisedGroupsInput", GoGetter: "AdvertisedGroupsInput"},
@@ -208,7 +208,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRouterBgpOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -216,15 +216,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRouter.ComputeRouterConfig",
-		reflect.TypeOf((*ComputeRouterConfig)(nil)).Elem(),
+		reflect.TypeFor[ComputeRouterConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRouter.ComputeRouterMd5AuthenticationKeys",
-		reflect.TypeOf((*ComputeRouterMd5AuthenticationKeys)(nil)).Elem(),
+		reflect.TypeFor[ComputeRouterMd5AuthenticationKeys](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRouter.ComputeRouterMd5AuthenticationKeysOutputReference",
-		reflect.TypeOf((*ComputeRouterMd5AuthenticationKeysOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRouterMd5AuthenticationKeysOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -252,7 +252,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRouterMd5AuthenticationKeysOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -260,11 +260,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRouter.ComputeRouterParams",
-		reflect.TypeOf((*ComputeRouterParams)(nil)).Elem(),
+		reflect.TypeFor[ComputeRouterParams](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRouter.ComputeRouterParamsOutputReference",
-		reflect.TypeOf((*ComputeRouterParamsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRouterParamsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -291,7 +291,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRouterParamsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -299,11 +299,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRouter.ComputeRouterTimeouts",
-		reflect.TypeOf((*ComputeRouterTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ComputeRouterTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRouter.ComputeRouterTimeoutsOutputReference",
-		reflect.TypeOf((*ComputeRouterTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRouterTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -336,7 +336,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRouterTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

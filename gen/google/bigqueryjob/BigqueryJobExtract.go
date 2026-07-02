@@ -1,6 +1,5 @@
 package bigqueryjob
 
-
 type BigqueryJobExtract struct {
 	// A list of fully-qualified Google Cloud Storage URIs where the extracted table should be written.
 	//
@@ -30,7 +29,7 @@ type BigqueryJobExtract struct {
 	// Whether to print out a header row in the results. Default is true.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_job#print_header BigqueryJob#print_header}
-	PrintHeader interface{} `field:"optional" json:"printHeader" yaml:"printHeader"`
+	PrintHeader any `field:"optional" json:"printHeader" yaml:"printHeader"`
 	// source_model block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_job#source_model BigqueryJob#source_model}
@@ -42,6 +41,5 @@ type BigqueryJobExtract struct {
 	// Whether to use logical types when extracting to AVRO format.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_job#use_avro_logical_types BigqueryJob#use_avro_logical_types}
-	UseAvroLogicalTypes interface{} `field:"optional" json:"useAvroLogicalTypes" yaml:"useAvroLogicalTypes"`
+	UseAvroLogicalTypes any `field:"optional" json:"useAvroLogicalTypes" yaml:"useAvroLogicalTypes"`
 }
-

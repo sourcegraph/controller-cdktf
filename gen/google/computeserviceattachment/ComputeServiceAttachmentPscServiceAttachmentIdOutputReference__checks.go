@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeServiceAttachmentPscServiceAttachmentIdOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_ComputeServiceAttachmentPscServiceAttachmentIdOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeServiceAttachmentPscServiceAttachmentIdOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewComputeServiceAttachmentPscServiceAttachmentIdOutputReferencePar
 
 	return nil
 }
-

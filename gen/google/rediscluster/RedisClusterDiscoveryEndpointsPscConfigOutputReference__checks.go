@@ -98,7 +98,7 @@ func (r *jsiiProxy_RedisClusterDiscoveryEndpointsPscConfigOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_RedisClusterDiscoveryEndpointsPscConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_RedisClusterDiscoveryEndpointsPscConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewRedisClusterDiscoveryEndpointsPscConfigOutputReferenceParameters
 
 	return nil
 }
-

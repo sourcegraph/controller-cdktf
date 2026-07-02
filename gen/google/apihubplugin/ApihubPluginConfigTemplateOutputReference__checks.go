@@ -90,7 +90,7 @@ func (a *jsiiProxy_ApihubPluginConfigTemplateOutputReference) validateInterpolat
 	return nil
 }
 
-func (a *jsiiProxy_ApihubPluginConfigTemplateOutputReference) validatePutAdditionalConfigTemplateParameters(value interface{}) error {
+func (a *jsiiProxy_ApihubPluginConfigTemplateOutputReference) validatePutAdditionalConfigTemplateParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -140,7 +140,7 @@ func (a *jsiiProxy_ApihubPluginConfigTemplateOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_ApihubPluginConfigTemplateOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ApihubPluginConfigTemplateOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -240,4 +240,3 @@ func validateNewApihubPluginConfigTemplateOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

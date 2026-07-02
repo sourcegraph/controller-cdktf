@@ -19,7 +19,7 @@ func (c *jsiiProxy_ContainerCluster) validateAddMoveTargetParameters(moveTarget 
 	return nil
 }
 
-func (c *jsiiProxy_ContainerCluster) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_ContainerCluster) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_ContainerCluster) validateMoveFromIdParameters(id *string) er
 	return nil
 }
 
-func (c *jsiiProxy_ContainerCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_ContainerCluster) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -512,7 +512,7 @@ func (c *jsiiProxy_ContainerCluster) validatePutNodeConfigParameters(value *Cont
 	return nil
 }
 
-func (c *jsiiProxy_ContainerCluster) validatePutNodePoolParameters(value interface{}) error {
+func (c *jsiiProxy_ContainerCluster) validatePutNodePoolParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -724,7 +724,7 @@ func validateContainerCluster_GenerateConfigForImportParameters(scope constructs
 	return nil
 }
 
-func validateContainerCluster_IsConstructParameters(x interface{}) error {
+func validateContainerCluster_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -732,7 +732,7 @@ func validateContainerCluster_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateContainerCluster_IsTerraformElementParameters(x interface{}) error {
+func validateContainerCluster_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -740,7 +740,7 @@ func validateContainerCluster_IsTerraformElementParameters(x interface{}) error 
 	return nil
 }
 
-func validateContainerCluster_IsTerraformResourceParameters(x interface{}) error {
+func validateContainerCluster_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -748,7 +748,7 @@ func validateContainerCluster_IsTerraformResourceParameters(x interface{}) error
 	return nil
 }
 
-func (j *jsiiProxy_ContainerCluster) validateSetAllowNetAdminParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerCluster) validateSetAllowNetAdminParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -784,7 +784,7 @@ func (j *jsiiProxy_ContainerCluster) validateSetClusterIpv4CidrParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_ContainerCluster) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerCluster) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -817,7 +817,7 @@ func (j *jsiiProxy_ContainerCluster) validateSetConnectionParameters(val interfa
 	return nil
 }
 
-func (j *jsiiProxy_ContainerCluster) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerCluster) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -890,7 +890,7 @@ func (j *jsiiProxy_ContainerCluster) validateSetDefaultMaxPodsPerNodeParameters(
 	return nil
 }
 
-func (j *jsiiProxy_ContainerCluster) validateSetDeletionProtectionParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerCluster) validateSetDeletionProtectionParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -918,7 +918,7 @@ func (j *jsiiProxy_ContainerCluster) validateSetDescriptionParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_ContainerCluster) validateSetDisableL4LbFirewallReconciliationParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerCluster) validateSetDisableL4LbFirewallReconciliationParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -938,7 +938,7 @@ func (j *jsiiProxy_ContainerCluster) validateSetDisableL4LbFirewallReconciliatio
 	return nil
 }
 
-func (j *jsiiProxy_ContainerCluster) validateSetEnableAutopilotParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerCluster) validateSetEnableAutopilotParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -958,7 +958,7 @@ func (j *jsiiProxy_ContainerCluster) validateSetEnableAutopilotParameters(val in
 	return nil
 }
 
-func (j *jsiiProxy_ContainerCluster) validateSetEnableCiliumClusterwideNetworkPolicyParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerCluster) validateSetEnableCiliumClusterwideNetworkPolicyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -978,7 +978,7 @@ func (j *jsiiProxy_ContainerCluster) validateSetEnableCiliumClusterwideNetworkPo
 	return nil
 }
 
-func (j *jsiiProxy_ContainerCluster) validateSetEnableFqdnNetworkPolicyParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerCluster) validateSetEnableFqdnNetworkPolicyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -998,7 +998,7 @@ func (j *jsiiProxy_ContainerCluster) validateSetEnableFqdnNetworkPolicyParameter
 	return nil
 }
 
-func (j *jsiiProxy_ContainerCluster) validateSetEnableIntranodeVisibilityParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerCluster) validateSetEnableIntranodeVisibilityParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -1018,7 +1018,7 @@ func (j *jsiiProxy_ContainerCluster) validateSetEnableIntranodeVisibilityParamet
 	return nil
 }
 
-func (j *jsiiProxy_ContainerCluster) validateSetEnableKubernetesAlphaParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerCluster) validateSetEnableKubernetesAlphaParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -1038,7 +1038,7 @@ func (j *jsiiProxy_ContainerCluster) validateSetEnableKubernetesAlphaParameters(
 	return nil
 }
 
-func (j *jsiiProxy_ContainerCluster) validateSetEnableL4IlbSubsettingParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerCluster) validateSetEnableL4IlbSubsettingParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -1058,7 +1058,7 @@ func (j *jsiiProxy_ContainerCluster) validateSetEnableL4IlbSubsettingParameters(
 	return nil
 }
 
-func (j *jsiiProxy_ContainerCluster) validateSetEnableLegacyAbacParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerCluster) validateSetEnableLegacyAbacParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -1078,7 +1078,7 @@ func (j *jsiiProxy_ContainerCluster) validateSetEnableLegacyAbacParameters(val i
 	return nil
 }
 
-func (j *jsiiProxy_ContainerCluster) validateSetEnableMultiNetworkingParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerCluster) validateSetEnableMultiNetworkingParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -1098,7 +1098,7 @@ func (j *jsiiProxy_ContainerCluster) validateSetEnableMultiNetworkingParameters(
 	return nil
 }
 
-func (j *jsiiProxy_ContainerCluster) validateSetEnableShieldedNodesParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerCluster) validateSetEnableShieldedNodesParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -1118,7 +1118,7 @@ func (j *jsiiProxy_ContainerCluster) validateSetEnableShieldedNodesParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_ContainerCluster) validateSetEnableTpuParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerCluster) validateSetEnableTpuParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -1258,7 +1258,7 @@ func (j *jsiiProxy_ContainerCluster) validateSetProjectParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_ContainerCluster) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ContainerCluster) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -1304,7 +1304,7 @@ func (j *jsiiProxy_ContainerCluster) validateSetProvisionersParameters(val *[]in
 	return nil
 }
 
-func (j *jsiiProxy_ContainerCluster) validateSetRemoveDefaultNodePoolParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerCluster) validateSetRemoveDefaultNodePoolParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -1358,4 +1358,3 @@ func validateNewContainerClusterParameters(scope constructs.Construct, id *strin
 
 	return nil
 }
-

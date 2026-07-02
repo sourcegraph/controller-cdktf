@@ -98,7 +98,7 @@ func (b *jsiiProxy_BiglakeIcebergCatalogReplicasOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_BiglakeIcebergCatalogReplicasOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BiglakeIcebergCatalogReplicasOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewBiglakeIcebergCatalogReplicasOutputReferenceParameters(terraform
 
 	return nil
 }
-

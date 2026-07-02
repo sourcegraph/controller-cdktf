@@ -34,7 +34,7 @@ func (a *jsiiProxy_ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplicatio
 	return nil
 }
 
-func (j *jsiiProxy_ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplicationsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplicationsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplicationsL
 
 	return nil
 }
-

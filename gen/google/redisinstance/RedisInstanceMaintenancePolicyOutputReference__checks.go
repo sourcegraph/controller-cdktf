@@ -90,7 +90,7 @@ func (r *jsiiProxy_RedisInstanceMaintenancePolicyOutputReference) validateInterp
 	return nil
 }
 
-func (r *jsiiProxy_RedisInstanceMaintenancePolicyOutputReference) validatePutWeeklyMaintenanceWindowParameters(value interface{}) error {
+func (r *jsiiProxy_RedisInstanceMaintenancePolicyOutputReference) validatePutWeeklyMaintenanceWindowParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (r *jsiiProxy_RedisInstanceMaintenancePolicyOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_RedisInstanceMaintenancePolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_RedisInstanceMaintenancePolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -237,4 +237,3 @@ func validateNewRedisInstanceMaintenancePolicyOutputReferenceParameters(terrafor
 
 	return nil
 }
-

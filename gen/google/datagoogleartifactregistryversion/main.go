@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleArtifactRegistryVersion.DataGoogleArtifactRegistryVersion",
-		reflect.TypeOf((*DataGoogleArtifactRegistryVersion)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleArtifactRegistryVersion](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "annotations", GoGetter: "Annotations"},
@@ -68,7 +68,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "view", GoGetter: "View"},
 			_jsii_.MemberProperty{JsiiProperty: "viewInput", GoGetter: "ViewInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleArtifactRegistryVersion{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -76,15 +76,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleArtifactRegistryVersion.DataGoogleArtifactRegistryVersionConfig",
-		reflect.TypeOf((*DataGoogleArtifactRegistryVersionConfig)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleArtifactRegistryVersionConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleArtifactRegistryVersion.DataGoogleArtifactRegistryVersionRelatedTags",
-		reflect.TypeOf((*DataGoogleArtifactRegistryVersionRelatedTags)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleArtifactRegistryVersionRelatedTags](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleArtifactRegistryVersion.DataGoogleArtifactRegistryVersionRelatedTagsList",
-		reflect.TypeOf((*DataGoogleArtifactRegistryVersionRelatedTagsList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleArtifactRegistryVersionRelatedTagsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -97,7 +97,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleArtifactRegistryVersionRelatedTagsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -105,7 +105,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleArtifactRegistryVersion.DataGoogleArtifactRegistryVersionRelatedTagsOutputReference",
-		reflect.TypeOf((*DataGoogleArtifactRegistryVersionRelatedTagsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleArtifactRegistryVersionRelatedTagsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -131,7 +131,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleArtifactRegistryVersionRelatedTagsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -98,7 +98,7 @@ func (n *jsiiProxy_NetworkServicesMulticastConsumerAssociationTimeoutsOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastConsumerAssociationTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkServicesMulticastConsumerAssociationTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_NetworkServicesMulticastConsumerAssociationTimeoutsOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastConsumerAssociationTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkServicesMulticastConsumerAssociationTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewNetworkServicesMulticastConsumerAssociationTimeoutsOutputReferen
 
 	return nil
 }
-

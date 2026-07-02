@@ -15,15 +15,15 @@ type PrivatecaCertificateTemplate interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -76,28 +76,28 @@ type PrivatecaCertificateTemplate interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() PrivatecaCertificateTemplateTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -115,7 +115,7 @@ type PrivatecaCertificateTemplate interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -127,7 +127,7 @@ type PrivatecaCertificateTemplate interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -150,17 +150,17 @@ type PrivatecaCertificateTemplate interface {
 	ResetPredefinedValues()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for PrivatecaCertificateTemplate
@@ -178,8 +178,8 @@ func (j *jsiiProxy_PrivatecaCertificateTemplate) CdktfStack() cdktf.TerraformSta
 	return returns
 }
 
-func (j *jsiiProxy_PrivatecaCertificateTemplate) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PrivatecaCertificateTemplate) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -188,8 +188,8 @@ func (j *jsiiProxy_PrivatecaCertificateTemplate) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PrivatecaCertificateTemplate) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_PrivatecaCertificateTemplate) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -198,8 +198,8 @@ func (j *jsiiProxy_PrivatecaCertificateTemplate) ConstructNodeMetadata() *map[st
 	return returns
 }
 
-func (j *jsiiProxy_PrivatecaCertificateTemplate) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PrivatecaCertificateTemplate) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -498,8 +498,8 @@ func (j *jsiiProxy_PrivatecaCertificateTemplate) Provider() cdktf.TerraformProvi
 	return returns
 }
 
-func (j *jsiiProxy_PrivatecaCertificateTemplate) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_PrivatecaCertificateTemplate) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -508,8 +508,8 @@ func (j *jsiiProxy_PrivatecaCertificateTemplate) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PrivatecaCertificateTemplate) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PrivatecaCertificateTemplate) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -538,8 +538,8 @@ func (j *jsiiProxy_PrivatecaCertificateTemplate) TerraformLabels() cdktf.StringM
 	return returns
 }
 
-func (j *jsiiProxy_PrivatecaCertificateTemplate) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_PrivatecaCertificateTemplate) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -568,8 +568,8 @@ func (j *jsiiProxy_PrivatecaCertificateTemplate) Timeouts() PrivatecaCertificate
 	return returns
 }
 
-func (j *jsiiProxy_PrivatecaCertificateTemplate) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PrivatecaCertificateTemplate) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -588,7 +588,6 @@ func (j *jsiiProxy_PrivatecaCertificateTemplate) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/privateca_certificate_template google_privateca_certificate_template} Resource.
 func NewPrivatecaCertificateTemplate(scope constructs.Construct, id *string, config *PrivatecaCertificateTemplateConfig) PrivatecaCertificateTemplate {
 	_init_.Initialize()
@@ -600,7 +599,7 @@ func NewPrivatecaCertificateTemplate(scope constructs.Construct, id *string, con
 
 	_jsii_.Create(
 		"@cdktf/provider-google.privatecaCertificateTemplate.PrivatecaCertificateTemplate",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -613,12 +612,12 @@ func NewPrivatecaCertificateTemplate_Override(p PrivatecaCertificateTemplate, sc
 
 	_jsii_.Create(
 		"@cdktf/provider-google.privatecaCertificateTemplate.PrivatecaCertificateTemplate",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCertificateTemplate)SetConnection(val interface{}) {
+func (j *jsiiProxy_PrivatecaCertificateTemplate) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -629,7 +628,7 @@ func (j *jsiiProxy_PrivatecaCertificateTemplate)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCertificateTemplate)SetCount(val interface{}) {
+func (j *jsiiProxy_PrivatecaCertificateTemplate) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -640,7 +639,7 @@ func (j *jsiiProxy_PrivatecaCertificateTemplate)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCertificateTemplate)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_PrivatecaCertificateTemplate) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -648,7 +647,7 @@ func (j *jsiiProxy_PrivatecaCertificateTemplate)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCertificateTemplate)SetDescription(val *string) {
+func (j *jsiiProxy_PrivatecaCertificateTemplate) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -659,7 +658,7 @@ func (j *jsiiProxy_PrivatecaCertificateTemplate)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCertificateTemplate)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_PrivatecaCertificateTemplate) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -667,7 +666,7 @@ func (j *jsiiProxy_PrivatecaCertificateTemplate)SetForEach(val cdktf.ITerraformI
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCertificateTemplate)SetId(val *string) {
+func (j *jsiiProxy_PrivatecaCertificateTemplate) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -678,7 +677,7 @@ func (j *jsiiProxy_PrivatecaCertificateTemplate)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCertificateTemplate)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_PrivatecaCertificateTemplate) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -689,7 +688,7 @@ func (j *jsiiProxy_PrivatecaCertificateTemplate)SetLabels(val *map[string]*strin
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCertificateTemplate)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_PrivatecaCertificateTemplate) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -700,7 +699,7 @@ func (j *jsiiProxy_PrivatecaCertificateTemplate)SetLifecycle(val *cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCertificateTemplate)SetLocation(val *string) {
+func (j *jsiiProxy_PrivatecaCertificateTemplate) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -711,7 +710,7 @@ func (j *jsiiProxy_PrivatecaCertificateTemplate)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCertificateTemplate)SetMaximumLifetime(val *string) {
+func (j *jsiiProxy_PrivatecaCertificateTemplate) SetMaximumLifetime(val *string) {
 	if err := j.validateSetMaximumLifetimeParameters(val); err != nil {
 		panic(err)
 	}
@@ -722,7 +721,7 @@ func (j *jsiiProxy_PrivatecaCertificateTemplate)SetMaximumLifetime(val *string) 
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCertificateTemplate)SetName(val *string) {
+func (j *jsiiProxy_PrivatecaCertificateTemplate) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -733,7 +732,7 @@ func (j *jsiiProxy_PrivatecaCertificateTemplate)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCertificateTemplate)SetProject(val *string) {
+func (j *jsiiProxy_PrivatecaCertificateTemplate) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -744,7 +743,7 @@ func (j *jsiiProxy_PrivatecaCertificateTemplate)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCertificateTemplate)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_PrivatecaCertificateTemplate) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -752,7 +751,7 @@ func (j *jsiiProxy_PrivatecaCertificateTemplate)SetProvider(val cdktf.TerraformP
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCertificateTemplate)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_PrivatecaCertificateTemplate) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -775,7 +774,7 @@ func PrivatecaCertificateTemplate_GenerateConfigForImport(scope constructs.Const
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.privatecaCertificateTemplate.PrivatecaCertificateTemplate",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -799,7 +798,7 @@ func PrivatecaCertificateTemplate_GenerateConfigForImport(scope constructs.Const
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func PrivatecaCertificateTemplate_IsConstruct(x interface{}) *bool {
+func PrivatecaCertificateTemplate_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePrivatecaCertificateTemplate_IsConstructParameters(x); err != nil {
@@ -810,7 +809,7 @@ func PrivatecaCertificateTemplate_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.privatecaCertificateTemplate.PrivatecaCertificateTemplate",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -818,7 +817,7 @@ func PrivatecaCertificateTemplate_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func PrivatecaCertificateTemplate_IsTerraformElement(x interface{}) *bool {
+func PrivatecaCertificateTemplate_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePrivatecaCertificateTemplate_IsTerraformElementParameters(x); err != nil {
@@ -829,7 +828,7 @@ func PrivatecaCertificateTemplate_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.privatecaCertificateTemplate.PrivatecaCertificateTemplate",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -837,7 +836,7 @@ func PrivatecaCertificateTemplate_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func PrivatecaCertificateTemplate_IsTerraformResource(x interface{}) *bool {
+func PrivatecaCertificateTemplate_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePrivatecaCertificateTemplate_IsTerraformResourceParameters(x); err != nil {
@@ -848,7 +847,7 @@ func PrivatecaCertificateTemplate_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.privatecaCertificateTemplate.PrivatecaCertificateTemplate",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -873,31 +872,31 @@ func (p *jsiiProxy_PrivatecaCertificateTemplate) AddMoveTarget(moveTarget *strin
 	_jsii_.InvokeVoid(
 		p,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (p *jsiiProxy_PrivatecaCertificateTemplate) AddOverride(path *string, value interface{}) {
+func (p *jsiiProxy_PrivatecaCertificateTemplate) AddOverride(path *string, value any) {
 	if err := p.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (p *jsiiProxy_PrivatecaCertificateTemplate) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_PrivatecaCertificateTemplate) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -913,7 +912,7 @@ func (p *jsiiProxy_PrivatecaCertificateTemplate) GetBooleanAttribute(terraformAt
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -929,7 +928,7 @@ func (p *jsiiProxy_PrivatecaCertificateTemplate) GetBooleanMapAttribute(terrafor
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -945,7 +944,7 @@ func (p *jsiiProxy_PrivatecaCertificateTemplate) GetListAttribute(terraformAttri
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -961,7 +960,7 @@ func (p *jsiiProxy_PrivatecaCertificateTemplate) GetNumberAttribute(terraformAtt
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -977,7 +976,7 @@ func (p *jsiiProxy_PrivatecaCertificateTemplate) GetNumberListAttribute(terrafor
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -993,7 +992,7 @@ func (p *jsiiProxy_PrivatecaCertificateTemplate) GetNumberMapAttribute(terraform
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1009,7 +1008,7 @@ func (p *jsiiProxy_PrivatecaCertificateTemplate) GetStringAttribute(terraformAtt
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1025,15 +1024,15 @@ func (p *jsiiProxy_PrivatecaCertificateTemplate) GetStringMapAttribute(terraform
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (p *jsiiProxy_PrivatecaCertificateTemplate) HasResourceMove() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PrivatecaCertificateTemplate) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1052,7 +1051,7 @@ func (p *jsiiProxy_PrivatecaCertificateTemplate) ImportFrom(id *string, provider
 	_jsii_.InvokeVoid(
 		p,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1065,7 +1064,7 @@ func (p *jsiiProxy_PrivatecaCertificateTemplate) InterpolationForAttribute(terra
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1079,18 +1078,18 @@ func (p *jsiiProxy_PrivatecaCertificateTemplate) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (p *jsiiProxy_PrivatecaCertificateTemplate) MoveTo(moveTarget *string, index interface{}) {
+func (p *jsiiProxy_PrivatecaCertificateTemplate) MoveTo(moveTarget *string, index any) {
 	if err := p.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1101,7 +1100,7 @@ func (p *jsiiProxy_PrivatecaCertificateTemplate) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1112,7 +1111,7 @@ func (p *jsiiProxy_PrivatecaCertificateTemplate) OverrideLogicalId(newLogicalId 
 	_jsii_.InvokeVoid(
 		p,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1123,7 +1122,7 @@ func (p *jsiiProxy_PrivatecaCertificateTemplate) PutIdentityConstraints(value *P
 	_jsii_.InvokeVoid(
 		p,
 		"putIdentityConstraints",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1134,7 +1133,7 @@ func (p *jsiiProxy_PrivatecaCertificateTemplate) PutPassthroughExtensions(value 
 	_jsii_.InvokeVoid(
 		p,
 		"putPassthroughExtensions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1145,7 +1144,7 @@ func (p *jsiiProxy_PrivatecaCertificateTemplate) PutPredefinedValues(value *Priv
 	_jsii_.InvokeVoid(
 		p,
 		"putPredefinedValues",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1156,7 +1155,7 @@ func (p *jsiiProxy_PrivatecaCertificateTemplate) PutTimeouts(value *PrivatecaCer
 	_jsii_.InvokeVoid(
 		p,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1240,8 +1239,8 @@ func (p *jsiiProxy_PrivatecaCertificateTemplate) ResetTimeouts() {
 	)
 }
 
-func (p *jsiiProxy_PrivatecaCertificateTemplate) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (p *jsiiProxy_PrivatecaCertificateTemplate) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
@@ -1253,8 +1252,8 @@ func (p *jsiiProxy_PrivatecaCertificateTemplate) SynthesizeAttributes() *map[str
 	return returns
 }
 
-func (p *jsiiProxy_PrivatecaCertificateTemplate) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (p *jsiiProxy_PrivatecaCertificateTemplate) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
@@ -1266,8 +1265,8 @@ func (p *jsiiProxy_PrivatecaCertificateTemplate) SynthesizeHclAttributes() *map[
 	return returns
 }
 
-func (p *jsiiProxy_PrivatecaCertificateTemplate) ToHclTerraform() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PrivatecaCertificateTemplate) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1279,8 +1278,8 @@ func (p *jsiiProxy_PrivatecaCertificateTemplate) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (p *jsiiProxy_PrivatecaCertificateTemplate) ToMetadata() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PrivatecaCertificateTemplate) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1305,8 +1304,8 @@ func (p *jsiiProxy_PrivatecaCertificateTemplate) ToString() *string {
 	return returns
 }
 
-func (p *jsiiProxy_PrivatecaCertificateTemplate) ToTerraform() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PrivatecaCertificateTemplate) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1317,4 +1316,3 @@ func (p *jsiiProxy_PrivatecaCertificateTemplate) ToTerraform() interface{} {
 
 	return returns
 }
-

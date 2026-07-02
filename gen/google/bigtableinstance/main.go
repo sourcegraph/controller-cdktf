@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.bigtableInstance.BigtableInstance",
-		reflect.TypeOf((*BigtableInstance)(nil)).Elem(),
+		reflect.TypeFor[BigtableInstance](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -89,7 +89,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BigtableInstance{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -97,15 +97,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.bigtableInstance.BigtableInstanceCluster",
-		reflect.TypeOf((*BigtableInstanceCluster)(nil)).Elem(),
+		reflect.TypeFor[BigtableInstanceCluster](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.bigtableInstance.BigtableInstanceClusterAutoscalingConfig",
-		reflect.TypeOf((*BigtableInstanceClusterAutoscalingConfig)(nil)).Elem(),
+		reflect.TypeFor[BigtableInstanceClusterAutoscalingConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.bigtableInstance.BigtableInstanceClusterAutoscalingConfigOutputReference",
-		reflect.TypeOf((*BigtableInstanceClusterAutoscalingConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BigtableInstanceClusterAutoscalingConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -138,7 +138,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BigtableInstanceClusterAutoscalingConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -146,7 +146,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.bigtableInstance.BigtableInstanceClusterList",
-		reflect.TypeOf((*BigtableInstanceClusterList)(nil)).Elem(),
+		reflect.TypeFor[BigtableInstanceClusterList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -160,7 +160,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BigtableInstanceClusterList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -168,7 +168,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.bigtableInstance.BigtableInstanceClusterOutputReference",
-		reflect.TypeOf((*BigtableInstanceClusterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BigtableInstanceClusterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "autoscalingConfig", GoGetter: "AutoscalingConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "autoscalingConfigInput", GoGetter: "AutoscalingConfigInput"},
@@ -214,7 +214,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zone", GoGetter: "Zone"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneInput", GoGetter: "ZoneInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BigtableInstanceClusterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -222,15 +222,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.bigtableInstance.BigtableInstanceConfig",
-		reflect.TypeOf((*BigtableInstanceConfig)(nil)).Elem(),
+		reflect.TypeFor[BigtableInstanceConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.bigtableInstance.BigtableInstanceTimeouts",
-		reflect.TypeOf((*BigtableInstanceTimeouts)(nil)).Elem(),
+		reflect.TypeFor[BigtableInstanceTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.bigtableInstance.BigtableInstanceTimeoutsOutputReference",
-		reflect.TypeOf((*BigtableInstanceTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BigtableInstanceTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -263,7 +263,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BigtableInstanceTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

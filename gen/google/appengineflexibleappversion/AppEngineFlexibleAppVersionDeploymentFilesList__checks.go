@@ -34,7 +34,7 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionDeploymentFilesList) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_AppEngineFlexibleAppVersionDeploymentFilesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AppEngineFlexibleAppVersionDeploymentFilesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewAppEngineFlexibleAppVersionDeploymentFilesListParameters(terrafo
 
 	return nil
 }
-

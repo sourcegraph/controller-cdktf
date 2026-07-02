@@ -14,9 +14,9 @@ type ProjectOrganizationPolicyListPolicyOutputReference interface {
 	AllowInput() *ProjectOrganizationPolicyListPolicyAllow
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -31,9 +31,9 @@ type ProjectOrganizationPolicyListPolicyOutputReference interface {
 	DenyInput() *ProjectOrganizationPolicyListPolicyDeny
 	// Experimental.
 	Fqn() *string
-	InheritFromParent() interface{}
-	SetInheritFromParent(val interface{})
-	InheritFromParentInput() interface{}
+	InheritFromParent() any
+	SetInheritFromParent(val any)
+	InheritFromParentInput() any
 	InternalValue() *ProjectOrganizationPolicyListPolicy
 	SetInternalValue(val *ProjectOrganizationPolicyListPolicy)
 	SuggestedValue() *string
@@ -50,7 +50,7 @@ type ProjectOrganizationPolicyListPolicyOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -79,7 +79,7 @@ type ProjectOrganizationPolicyListPolicyOutputReference interface {
 	ResetSuggestedValue()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -112,8 +112,8 @@ func (j *jsiiProxy_ProjectOrganizationPolicyListPolicyOutputReference) AllowInpu
 	return returns
 }
 
-func (j *jsiiProxy_ProjectOrganizationPolicyListPolicyOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ProjectOrganizationPolicyListPolicyOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -172,8 +172,8 @@ func (j *jsiiProxy_ProjectOrganizationPolicyListPolicyOutputReference) Fqn() *st
 	return returns
 }
 
-func (j *jsiiProxy_ProjectOrganizationPolicyListPolicyOutputReference) InheritFromParent() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ProjectOrganizationPolicyListPolicyOutputReference) InheritFromParent() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"inheritFromParent",
@@ -182,8 +182,8 @@ func (j *jsiiProxy_ProjectOrganizationPolicyListPolicyOutputReference) InheritFr
 	return returns
 }
 
-func (j *jsiiProxy_ProjectOrganizationPolicyListPolicyOutputReference) InheritFromParentInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ProjectOrganizationPolicyListPolicyOutputReference) InheritFromParentInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"inheritFromParentInput",
@@ -242,7 +242,6 @@ func (j *jsiiProxy_ProjectOrganizationPolicyListPolicyOutputReference) Terraform
 	return returns
 }
 
-
 func NewProjectOrganizationPolicyListPolicyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ProjectOrganizationPolicyListPolicyOutputReference {
 	_init_.Initialize()
 
@@ -253,7 +252,7 @@ func NewProjectOrganizationPolicyListPolicyOutputReference(terraformResource cdk
 
 	_jsii_.Create(
 		"@cdktf/provider-google.projectOrganizationPolicy.ProjectOrganizationPolicyListPolicyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -265,12 +264,12 @@ func NewProjectOrganizationPolicyListPolicyOutputReference_Override(p ProjectOrg
 
 	_jsii_.Create(
 		"@cdktf/provider-google.projectOrganizationPolicy.ProjectOrganizationPolicyListPolicyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		p,
 	)
 }
 
-func (j *jsiiProxy_ProjectOrganizationPolicyListPolicyOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ProjectOrganizationPolicyListPolicyOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,7 +280,7 @@ func (j *jsiiProxy_ProjectOrganizationPolicyListPolicyOutputReference)SetComplex
 	)
 }
 
-func (j *jsiiProxy_ProjectOrganizationPolicyListPolicyOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ProjectOrganizationPolicyListPolicyOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,7 +291,7 @@ func (j *jsiiProxy_ProjectOrganizationPolicyListPolicyOutputReference)SetComplex
 	)
 }
 
-func (j *jsiiProxy_ProjectOrganizationPolicyListPolicyOutputReference)SetInheritFromParent(val interface{}) {
+func (j *jsiiProxy_ProjectOrganizationPolicyListPolicyOutputReference) SetInheritFromParent(val any) {
 	if err := j.validateSetInheritFromParentParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_ProjectOrganizationPolicyListPolicyOutputReference)SetInherit
 	)
 }
 
-func (j *jsiiProxy_ProjectOrganizationPolicyListPolicyOutputReference)SetInternalValue(val *ProjectOrganizationPolicyListPolicy) {
+func (j *jsiiProxy_ProjectOrganizationPolicyListPolicyOutputReference) SetInternalValue(val *ProjectOrganizationPolicyListPolicy) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_ProjectOrganizationPolicyListPolicyOutputReference)SetInterna
 	)
 }
 
-func (j *jsiiProxy_ProjectOrganizationPolicyListPolicyOutputReference)SetSuggestedValue(val *string) {
+func (j *jsiiProxy_ProjectOrganizationPolicyListPolicyOutputReference) SetSuggestedValue(val *string) {
 	if err := j.validateSetSuggestedValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_ProjectOrganizationPolicyListPolicyOutputReference)SetSuggest
 	)
 }
 
-func (j *jsiiProxy_ProjectOrganizationPolicyListPolicyOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ProjectOrganizationPolicyListPolicyOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_ProjectOrganizationPolicyListPolicyOutputReference)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_ProjectOrganizationPolicyListPolicyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ProjectOrganizationPolicyListPolicyOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,16 +359,16 @@ func (p *jsiiProxy_ProjectOrganizationPolicyListPolicyOutputReference) ComputeFq
 	return returns
 }
 
-func (p *jsiiProxy_ProjectOrganizationPolicyListPolicyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_ProjectOrganizationPolicyListPolicyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (p *jsiiProxy_ProjectOrganizationPolicyListPolicyOutputReference) GetBoolea
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (p *jsiiProxy_ProjectOrganizationPolicyListPolicyOutputReference) GetBoolea
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (p *jsiiProxy_ProjectOrganizationPolicyListPolicyOutputReference) GetListAt
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (p *jsiiProxy_ProjectOrganizationPolicyListPolicyOutputReference) GetNumber
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (p *jsiiProxy_ProjectOrganizationPolicyListPolicyOutputReference) GetNumber
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -465,7 +464,7 @@ func (p *jsiiProxy_ProjectOrganizationPolicyListPolicyOutputReference) GetNumber
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -481,7 +480,7 @@ func (p *jsiiProxy_ProjectOrganizationPolicyListPolicyOutputReference) GetString
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -497,7 +496,7 @@ func (p *jsiiProxy_ProjectOrganizationPolicyListPolicyOutputReference) GetString
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -526,7 +525,7 @@ func (p *jsiiProxy_ProjectOrganizationPolicyListPolicyOutputReference) Interpola
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -540,7 +539,7 @@ func (p *jsiiProxy_ProjectOrganizationPolicyListPolicyOutputReference) PutAllow(
 	_jsii_.InvokeVoid(
 		p,
 		"putAllow",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -551,7 +550,7 @@ func (p *jsiiProxy_ProjectOrganizationPolicyListPolicyOutputReference) PutDeny(v
 	_jsii_.InvokeVoid(
 		p,
 		"putDeny",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -587,16 +586,16 @@ func (p *jsiiProxy_ProjectOrganizationPolicyListPolicyOutputReference) ResetSugg
 	)
 }
 
-func (p *jsiiProxy_ProjectOrganizationPolicyListPolicyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_ProjectOrganizationPolicyListPolicyOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := p.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -615,4 +614,3 @@ func (p *jsiiProxy_ProjectOrganizationPolicyListPolicyOutputReference) ToString(
 
 	return returns
 }
-

@@ -98,7 +98,7 @@ func (a *jsiiProxy_AccessContextManagerAccessLevelCustomExprOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_AccessContextManagerAccessLevelCustomExprOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AccessContextManagerAccessLevelCustomExprOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewAccessContextManagerAccessLevelCustomExprOutputReferenceParamete
 
 	return nil
 }
-

@@ -19,7 +19,7 @@ func (c *jsiiProxy_CloudRunV2ServiceIamBinding) validateAddMoveTargetParameters(
 	return nil
 }
 
-func (c *jsiiProxy_CloudRunV2ServiceIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_CloudRunV2ServiceIamBinding) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_CloudRunV2ServiceIamBinding) validateMoveFromIdParameters(id 
 	return nil
 }
 
-func (c *jsiiProxy_CloudRunV2ServiceIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_CloudRunV2ServiceIamBinding) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateCloudRunV2ServiceIamBinding_GenerateConfigForImportParameters(scope
 	return nil
 }
 
-func validateCloudRunV2ServiceIamBinding_IsConstructParameters(x interface{}) error {
+func validateCloudRunV2ServiceIamBinding_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateCloudRunV2ServiceIamBinding_IsConstructParameters(x interface{}) er
 	return nil
 }
 
-func validateCloudRunV2ServiceIamBinding_IsTerraformElementParameters(x interface{}) error {
+func validateCloudRunV2ServiceIamBinding_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateCloudRunV2ServiceIamBinding_IsTerraformElementParameters(x interfac
 	return nil
 }
 
-func validateCloudRunV2ServiceIamBinding_IsTerraformResourceParameters(x interface{}) error {
+func validateCloudRunV2ServiceIamBinding_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateCloudRunV2ServiceIamBinding_IsTerraformResourceParameters(x interfa
 	return nil
 }
 
-func (j *jsiiProxy_CloudRunV2ServiceIamBinding) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_CloudRunV2ServiceIamBinding) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_CloudRunV2ServiceIamBinding) validateSetConnectionParameters(
 	return nil
 }
 
-func (j *jsiiProxy_CloudRunV2ServiceIamBinding) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_CloudRunV2ServiceIamBinding) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -393,7 +393,7 @@ func (j *jsiiProxy_CloudRunV2ServiceIamBinding) validateSetProjectParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_CloudRunV2ServiceIamBinding) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_CloudRunV2ServiceIamBinding) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -465,4 +465,3 @@ func validateNewCloudRunV2ServiceIamBindingParameters(scope constructs.Construct
 
 	return nil
 }
-

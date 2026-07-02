@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeRegionInstanceGroupManagerStandbyPolicyOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionInstanceGroupManagerStandbyPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionInstanceGroupManagerStandbyPolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewComputeRegionInstanceGroupManagerStandbyPolicyOutputReferencePar
 
 	return nil
 }
-

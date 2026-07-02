@@ -98,7 +98,7 @@ func (c *jsiiProxy_CloudbuildTriggerWebhookConfigOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_CloudbuildTriggerWebhookConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudbuildTriggerWebhookConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewCloudbuildTriggerWebhookConfigOutputReferenceParameters(terrafor
 
 	return nil
 }
-

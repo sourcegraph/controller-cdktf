@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataprocMetastoreServiceTelemetryConfigOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_DataprocMetastoreServiceTelemetryConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocMetastoreServiceTelemetryConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataprocMetastoreServiceTelemetryConfigOutputReferenceParameters
 
 	return nil
 }
-

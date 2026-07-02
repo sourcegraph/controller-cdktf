@@ -98,7 +98,7 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupAcceleratorConfigsOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_WorkbenchInstanceGceSetupAcceleratorConfigsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_WorkbenchInstanceGceSetupAcceleratorConfigsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_WorkbenchInstanceGceSetupAcceleratorConfigsOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_WorkbenchInstanceGceSetupAcceleratorConfigsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_WorkbenchInstanceGceSetupAcceleratorConfigsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewWorkbenchInstanceGceSetupAcceleratorConfigsOutputReferenceParame
 
 	return nil
 }
-

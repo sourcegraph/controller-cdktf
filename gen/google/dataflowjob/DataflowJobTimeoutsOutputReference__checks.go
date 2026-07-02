@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataflowJobTimeoutsOutputReference) validateResolveParameters
 	return nil
 }
 
-func (j *jsiiProxy_DataflowJobTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataflowJobTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DataflowJobTimeoutsOutputReference) validateSetComplexObjectI
 	return nil
 }
 
-func (j *jsiiProxy_DataflowJobTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataflowJobTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -222,4 +222,3 @@ func validateNewDataflowJobTimeoutsOutputReferenceParameters(terraformResource c
 
 	return nil
 }
-

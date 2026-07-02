@@ -1,6 +1,5 @@
 package networkservicestlsroute
 
-
 type NetworkServicesTlsRouteRules struct {
 	// action block.
 	//
@@ -9,6 +8,5 @@ type NetworkServicesTlsRouteRules struct {
 	// matches block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_tls_route#matches NetworkServicesTlsRoute#matches}
-	Matches interface{} `field:"required" json:"matches" yaml:"matches"`
+	Matches any `field:"required" json:"matches" yaml:"matches"`
 }
-

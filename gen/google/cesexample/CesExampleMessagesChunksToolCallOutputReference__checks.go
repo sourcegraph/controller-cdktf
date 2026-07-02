@@ -117,7 +117,7 @@ func (j *jsiiProxy_CesExampleMessagesChunksToolCallOutputReference) validateSetA
 	return nil
 }
 
-func (j *jsiiProxy_CesExampleMessagesChunksToolCallOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CesExampleMessagesChunksToolCallOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -233,4 +233,3 @@ func validateNewCesExampleMessagesChunksToolCallOutputReferenceParameters(terraf
 
 	return nil
 }
-

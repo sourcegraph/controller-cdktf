@@ -98,7 +98,7 @@ func (i *jsiiProxy_IapWebIamBindingConditionOutputReference) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_IapWebIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IapWebIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewIapWebIamBindingConditionOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

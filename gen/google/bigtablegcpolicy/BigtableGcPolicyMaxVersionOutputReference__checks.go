@@ -98,7 +98,7 @@ func (b *jsiiProxy_BigtableGcPolicyMaxVersionOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_BigtableGcPolicyMaxVersionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BigtableGcPolicyMaxVersionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_BigtableGcPolicyMaxVersionOutputReference) validateSetComplex
 	return nil
 }
 
-func (j *jsiiProxy_BigtableGcPolicyMaxVersionOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_BigtableGcPolicyMaxVersionOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewBigtableGcPolicyMaxVersionOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

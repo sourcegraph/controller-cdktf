@@ -98,7 +98,7 @@ func (c *jsiiProxy_CloudbuildWorkerPoolTimeoutsOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_CloudbuildWorkerPoolTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudbuildWorkerPoolTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_CloudbuildWorkerPoolTimeoutsOutputReference) validateSetDelet
 	return nil
 }
 
-func (j *jsiiProxy_CloudbuildWorkerPoolTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CloudbuildWorkerPoolTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewCloudbuildWorkerPoolTimeoutsOutputReferenceParameters(terraformR
 
 	return nil
 }
-

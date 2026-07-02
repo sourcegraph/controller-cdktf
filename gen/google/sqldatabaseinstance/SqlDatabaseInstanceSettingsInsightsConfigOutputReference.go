@@ -12,9 +12,9 @@ type SqlDatabaseInstanceSettingsInsightsConfigOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,28 +25,28 @@ type SqlDatabaseInstanceSettingsInsightsConfigOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	EnhancedQueryInsightsEnabled() interface{}
-	SetEnhancedQueryInsightsEnabled(val interface{})
-	EnhancedQueryInsightsEnabledInput() interface{}
+	EnhancedQueryInsightsEnabled() any
+	SetEnhancedQueryInsightsEnabled(val any)
+	EnhancedQueryInsightsEnabledInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *SqlDatabaseInstanceSettingsInsightsConfig
 	SetInternalValue(val *SqlDatabaseInstanceSettingsInsightsConfig)
-	QueryInsightsEnabled() interface{}
-	SetQueryInsightsEnabled(val interface{})
-	QueryInsightsEnabledInput() interface{}
+	QueryInsightsEnabled() any
+	SetQueryInsightsEnabled(val any)
+	QueryInsightsEnabledInput() any
 	QueryPlansPerMinute() *float64
 	SetQueryPlansPerMinute(val *float64)
 	QueryPlansPerMinuteInput() *float64
 	QueryStringLength() *float64
 	SetQueryStringLength(val *float64)
 	QueryStringLengthInput() *float64
-	RecordApplicationTags() interface{}
-	SetRecordApplicationTags(val interface{})
-	RecordApplicationTagsInput() interface{}
-	RecordClientAddress() interface{}
-	SetRecordClientAddress(val interface{})
-	RecordClientAddressInput() interface{}
+	RecordApplicationTags() any
+	SetRecordApplicationTags(val any)
+	RecordApplicationTagsInput() any
+	RecordClientAddress() any
+	SetRecordClientAddress(val any)
+	RecordClientAddressInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -58,7 +58,7 @@ type SqlDatabaseInstanceSettingsInsightsConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -87,7 +87,7 @@ type SqlDatabaseInstanceSettingsInsightsConfigOutputReference interface {
 	ResetRecordClientAddress()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -100,8 +100,8 @@ type jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -130,8 +130,8 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) Cre
 	return returns
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) EnhancedQueryInsightsEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) EnhancedQueryInsightsEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enhancedQueryInsightsEnabled",
@@ -140,8 +140,8 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) Enh
 	return returns
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) EnhancedQueryInsightsEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) EnhancedQueryInsightsEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enhancedQueryInsightsEnabledInput",
@@ -170,8 +170,8 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) Int
 	return returns
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) QueryInsightsEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) QueryInsightsEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"queryInsightsEnabled",
@@ -180,8 +180,8 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) Que
 	return returns
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) QueryInsightsEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) QueryInsightsEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"queryInsightsEnabledInput",
@@ -230,8 +230,8 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) Que
 	return returns
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) RecordApplicationTags() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) RecordApplicationTags() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"recordApplicationTags",
@@ -240,8 +240,8 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) Rec
 	return returns
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) RecordApplicationTagsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) RecordApplicationTagsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"recordApplicationTagsInput",
@@ -250,8 +250,8 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) Rec
 	return returns
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) RecordClientAddress() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) RecordClientAddress() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"recordClientAddress",
@@ -260,8 +260,8 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) Rec
 	return returns
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) RecordClientAddressInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) RecordClientAddressInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"recordClientAddressInput",
@@ -290,7 +290,6 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) Ter
 	return returns
 }
 
-
 func NewSqlDatabaseInstanceSettingsInsightsConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) SqlDatabaseInstanceSettingsInsightsConfigOutputReference {
 	_init_.Initialize()
 
@@ -301,7 +300,7 @@ func NewSqlDatabaseInstanceSettingsInsightsConfigOutputReference(terraformResour
 
 	_jsii_.Create(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsInsightsConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -313,12 +312,12 @@ func NewSqlDatabaseInstanceSettingsInsightsConfigOutputReference_Override(s SqlD
 
 	_jsii_.Create(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsInsightsConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -329,7 +328,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference)SetC
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -340,7 +339,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference)SetC
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference)SetEnhancedQueryInsightsEnabled(val interface{}) {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) SetEnhancedQueryInsightsEnabled(val any) {
 	if err := j.validateSetEnhancedQueryInsightsEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -351,7 +350,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference)SetE
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference)SetInternalValue(val *SqlDatabaseInstanceSettingsInsightsConfig) {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) SetInternalValue(val *SqlDatabaseInstanceSettingsInsightsConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -362,7 +361,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference)SetI
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference)SetQueryInsightsEnabled(val interface{}) {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) SetQueryInsightsEnabled(val any) {
 	if err := j.validateSetQueryInsightsEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -373,7 +372,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference)SetQ
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference)SetQueryPlansPerMinute(val *float64) {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) SetQueryPlansPerMinute(val *float64) {
 	if err := j.validateSetQueryPlansPerMinuteParameters(val); err != nil {
 		panic(err)
 	}
@@ -384,7 +383,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference)SetQ
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference)SetQueryStringLength(val *float64) {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) SetQueryStringLength(val *float64) {
 	if err := j.validateSetQueryStringLengthParameters(val); err != nil {
 		panic(err)
 	}
@@ -395,7 +394,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference)SetQ
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference)SetRecordApplicationTags(val interface{}) {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) SetRecordApplicationTags(val any) {
 	if err := j.validateSetRecordApplicationTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -406,7 +405,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference)SetR
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference)SetRecordClientAddress(val interface{}) {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) SetRecordClientAddress(val any) {
 	if err := j.validateSetRecordClientAddressParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,7 +416,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference)SetR
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -428,7 +427,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference)SetT
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,16 +451,16 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) Com
 	return returns
 }
 
-func (s *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -477,7 +476,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) Get
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -493,7 +492,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) Get
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -509,7 +508,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) Get
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -525,7 +524,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) Get
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -541,7 +540,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) Get
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -557,7 +556,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) Get
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -573,7 +572,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) Get
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -589,7 +588,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) Get
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -618,7 +617,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) Int
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -673,16 +672,16 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) Res
 	)
 }
 
-func (s *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -701,4 +700,3 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) ToS
 
 	return returns
 }
-

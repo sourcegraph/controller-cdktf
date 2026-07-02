@@ -14,9 +14,9 @@ type ContainerAwsNodePoolConfigAOutputReference interface {
 	AutoscalingMetricsCollectionInput() *ContainerAwsNodePoolConfigAutoscalingMetricsCollection
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -55,7 +55,7 @@ type ContainerAwsNodePoolConfigAOutputReference interface {
 	SetTags(val *map[string]*string)
 	TagsInput() *map[string]*string
 	Taints() ContainerAwsNodePoolConfigTaintsList
-	TaintsInput() interface{}
+	TaintsInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,7 +67,7 @@ type ContainerAwsNodePoolConfigAOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -93,7 +93,7 @@ type ContainerAwsNodePoolConfigAOutputReference interface {
 	PutProxyConfig(value *ContainerAwsNodePoolConfigProxyConfig)
 	PutRootVolume(value *ContainerAwsNodePoolConfigRootVolume)
 	PutSshConfig(value *ContainerAwsNodePoolConfigSshConfig)
-	PutTaints(value interface{})
+	PutTaints(value any)
 	ResetAutoscalingMetricsCollection()
 	ResetInstanceType()
 	ResetLabels()
@@ -105,7 +105,7 @@ type ContainerAwsNodePoolConfigAOutputReference interface {
 	ResetTaints()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -138,8 +138,8 @@ func (j *jsiiProxy_ContainerAwsNodePoolConfigAOutputReference) AutoscalingMetric
 	return returns
 }
 
-func (j *jsiiProxy_ContainerAwsNodePoolConfigAOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerAwsNodePoolConfigAOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -378,8 +378,8 @@ func (j *jsiiProxy_ContainerAwsNodePoolConfigAOutputReference) Taints() Containe
 	return returns
 }
 
-func (j *jsiiProxy_ContainerAwsNodePoolConfigAOutputReference) TaintsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerAwsNodePoolConfigAOutputReference) TaintsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"taintsInput",
@@ -408,7 +408,6 @@ func (j *jsiiProxy_ContainerAwsNodePoolConfigAOutputReference) TerraformResource
 	return returns
 }
 
-
 func NewContainerAwsNodePoolConfigAOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ContainerAwsNodePoolConfigAOutputReference {
 	_init_.Initialize()
 
@@ -419,7 +418,7 @@ func NewContainerAwsNodePoolConfigAOutputReference(terraformResource cdktf.IInte
 
 	_jsii_.Create(
 		"@cdktf/provider-google.containerAwsNodePool.ContainerAwsNodePoolConfigAOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -431,12 +430,12 @@ func NewContainerAwsNodePoolConfigAOutputReference_Override(c ContainerAwsNodePo
 
 	_jsii_.Create(
 		"@cdktf/provider-google.containerAwsNodePool.ContainerAwsNodePoolConfigAOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ContainerAwsNodePoolConfigAOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ContainerAwsNodePoolConfigAOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -447,7 +446,7 @@ func (j *jsiiProxy_ContainerAwsNodePoolConfigAOutputReference)SetComplexObjectIn
 	)
 }
 
-func (j *jsiiProxy_ContainerAwsNodePoolConfigAOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ContainerAwsNodePoolConfigAOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -458,7 +457,7 @@ func (j *jsiiProxy_ContainerAwsNodePoolConfigAOutputReference)SetComplexObjectIs
 	)
 }
 
-func (j *jsiiProxy_ContainerAwsNodePoolConfigAOutputReference)SetIamInstanceProfile(val *string) {
+func (j *jsiiProxy_ContainerAwsNodePoolConfigAOutputReference) SetIamInstanceProfile(val *string) {
 	if err := j.validateSetIamInstanceProfileParameters(val); err != nil {
 		panic(err)
 	}
@@ -469,7 +468,7 @@ func (j *jsiiProxy_ContainerAwsNodePoolConfigAOutputReference)SetIamInstanceProf
 	)
 }
 
-func (j *jsiiProxy_ContainerAwsNodePoolConfigAOutputReference)SetInstanceType(val *string) {
+func (j *jsiiProxy_ContainerAwsNodePoolConfigAOutputReference) SetInstanceType(val *string) {
 	if err := j.validateSetInstanceTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -480,7 +479,7 @@ func (j *jsiiProxy_ContainerAwsNodePoolConfigAOutputReference)SetInstanceType(va
 	)
 }
 
-func (j *jsiiProxy_ContainerAwsNodePoolConfigAOutputReference)SetInternalValue(val *ContainerAwsNodePoolConfigA) {
+func (j *jsiiProxy_ContainerAwsNodePoolConfigAOutputReference) SetInternalValue(val *ContainerAwsNodePoolConfigA) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -491,7 +490,7 @@ func (j *jsiiProxy_ContainerAwsNodePoolConfigAOutputReference)SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_ContainerAwsNodePoolConfigAOutputReference)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_ContainerAwsNodePoolConfigAOutputReference) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -502,7 +501,7 @@ func (j *jsiiProxy_ContainerAwsNodePoolConfigAOutputReference)SetLabels(val *map
 	)
 }
 
-func (j *jsiiProxy_ContainerAwsNodePoolConfigAOutputReference)SetSecurityGroupIds(val *[]*string) {
+func (j *jsiiProxy_ContainerAwsNodePoolConfigAOutputReference) SetSecurityGroupIds(val *[]*string) {
 	if err := j.validateSetSecurityGroupIdsParameters(val); err != nil {
 		panic(err)
 	}
@@ -513,7 +512,7 @@ func (j *jsiiProxy_ContainerAwsNodePoolConfigAOutputReference)SetSecurityGroupId
 	)
 }
 
-func (j *jsiiProxy_ContainerAwsNodePoolConfigAOutputReference)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_ContainerAwsNodePoolConfigAOutputReference) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -524,7 +523,7 @@ func (j *jsiiProxy_ContainerAwsNodePoolConfigAOutputReference)SetTags(val *map[s
 	)
 }
 
-func (j *jsiiProxy_ContainerAwsNodePoolConfigAOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ContainerAwsNodePoolConfigAOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -535,7 +534,7 @@ func (j *jsiiProxy_ContainerAwsNodePoolConfigAOutputReference)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_ContainerAwsNodePoolConfigAOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ContainerAwsNodePoolConfigAOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -559,16 +558,16 @@ func (c *jsiiProxy_ContainerAwsNodePoolConfigAOutputReference) ComputeFqn() *str
 	return returns
 }
 
-func (c *jsiiProxy_ContainerAwsNodePoolConfigAOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ContainerAwsNodePoolConfigAOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -584,7 +583,7 @@ func (c *jsiiProxy_ContainerAwsNodePoolConfigAOutputReference) GetBooleanAttribu
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -600,7 +599,7 @@ func (c *jsiiProxy_ContainerAwsNodePoolConfigAOutputReference) GetBooleanMapAttr
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -616,7 +615,7 @@ func (c *jsiiProxy_ContainerAwsNodePoolConfigAOutputReference) GetListAttribute(
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -632,7 +631,7 @@ func (c *jsiiProxy_ContainerAwsNodePoolConfigAOutputReference) GetNumberAttribut
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -648,7 +647,7 @@ func (c *jsiiProxy_ContainerAwsNodePoolConfigAOutputReference) GetNumberListAttr
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -664,7 +663,7 @@ func (c *jsiiProxy_ContainerAwsNodePoolConfigAOutputReference) GetNumberMapAttri
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -680,7 +679,7 @@ func (c *jsiiProxy_ContainerAwsNodePoolConfigAOutputReference) GetStringAttribut
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -696,7 +695,7 @@ func (c *jsiiProxy_ContainerAwsNodePoolConfigAOutputReference) GetStringMapAttri
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -725,7 +724,7 @@ func (c *jsiiProxy_ContainerAwsNodePoolConfigAOutputReference) InterpolationForA
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -739,7 +738,7 @@ func (c *jsiiProxy_ContainerAwsNodePoolConfigAOutputReference) PutAutoscalingMet
 	_jsii_.InvokeVoid(
 		c,
 		"putAutoscalingMetricsCollection",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -750,7 +749,7 @@ func (c *jsiiProxy_ContainerAwsNodePoolConfigAOutputReference) PutConfigEncrypti
 	_jsii_.InvokeVoid(
 		c,
 		"putConfigEncryption",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -761,7 +760,7 @@ func (c *jsiiProxy_ContainerAwsNodePoolConfigAOutputReference) PutProxyConfig(va
 	_jsii_.InvokeVoid(
 		c,
 		"putProxyConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -772,7 +771,7 @@ func (c *jsiiProxy_ContainerAwsNodePoolConfigAOutputReference) PutRootVolume(val
 	_jsii_.InvokeVoid(
 		c,
 		"putRootVolume",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -783,18 +782,18 @@ func (c *jsiiProxy_ContainerAwsNodePoolConfigAOutputReference) PutSshConfig(valu
 	_jsii_.InvokeVoid(
 		c,
 		"putSshConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_ContainerAwsNodePoolConfigAOutputReference) PutTaints(value interface{}) {
+func (c *jsiiProxy_ContainerAwsNodePoolConfigAOutputReference) PutTaints(value any) {
 	if err := c.validatePutTaintsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putTaints",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -870,16 +869,16 @@ func (c *jsiiProxy_ContainerAwsNodePoolConfigAOutputReference) ResetTaints() {
 	)
 }
 
-func (c *jsiiProxy_ContainerAwsNodePoolConfigAOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ContainerAwsNodePoolConfigAOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -898,4 +897,3 @@ func (c *jsiiProxy_ContainerAwsNodePoolConfigAOutputReference) ToString() *strin
 
 	return returns
 }
-

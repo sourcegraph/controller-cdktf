@@ -1,6 +1,5 @@
 package integrationconnectorsconnection
 
-
 type IntegrationConnectorsConnectionSslConfigAdditionalVariable struct {
 	// Key for the configVariable.
 	//
@@ -9,7 +8,7 @@ type IntegrationConnectorsConnectionSslConfigAdditionalVariable struct {
 	// Boolean Value of configVariable.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/integration_connectors_connection#boolean_value IntegrationConnectorsConnection#boolean_value}
-	BooleanValue interface{} `field:"optional" json:"booleanValue" yaml:"booleanValue"`
+	BooleanValue any `field:"optional" json:"booleanValue" yaml:"booleanValue"`
 	// encryption_key_value block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/integration_connectors_connection#encryption_key_value IntegrationConnectorsConnection#encryption_key_value}
@@ -27,4 +26,3 @@ type IntegrationConnectorsConnectionSslConfigAdditionalVariable struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/integration_connectors_connection#string_value IntegrationConnectorsConnection#string_value}
 	StringValue *string `field:"optional" json:"stringValue" yaml:"stringValue"`
 }
-

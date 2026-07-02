@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.notebooksInstance.NotebooksInstance",
-		reflect.TypeOf((*NotebooksInstance)(nil)).Elem(),
+		reflect.TypeFor[NotebooksInstance](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "acceleratorConfig", GoGetter: "AcceleratorConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "acceleratorConfigInput", GoGetter: "AcceleratorConfigInput"},
@@ -165,7 +165,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vmImage", GoGetter: "VmImage"},
 			_jsii_.MemberProperty{JsiiProperty: "vmImageInput", GoGetter: "VmImageInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NotebooksInstance{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -173,11 +173,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.notebooksInstance.NotebooksInstanceAcceleratorConfig",
-		reflect.TypeOf((*NotebooksInstanceAcceleratorConfig)(nil)).Elem(),
+		reflect.TypeFor[NotebooksInstanceAcceleratorConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.notebooksInstance.NotebooksInstanceAcceleratorConfigOutputReference",
-		reflect.TypeOf((*NotebooksInstanceAcceleratorConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NotebooksInstanceAcceleratorConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -205,7 +205,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NotebooksInstanceAcceleratorConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -213,15 +213,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.notebooksInstance.NotebooksInstanceConfig",
-		reflect.TypeOf((*NotebooksInstanceConfig)(nil)).Elem(),
+		reflect.TypeFor[NotebooksInstanceConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.notebooksInstance.NotebooksInstanceContainerImage",
-		reflect.TypeOf((*NotebooksInstanceContainerImage)(nil)).Elem(),
+		reflect.TypeFor[NotebooksInstanceContainerImage](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.notebooksInstance.NotebooksInstanceContainerImageOutputReference",
-		reflect.TypeOf((*NotebooksInstanceContainerImageOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NotebooksInstanceContainerImageOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -250,7 +250,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NotebooksInstanceContainerImageOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -258,11 +258,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.notebooksInstance.NotebooksInstanceReservationAffinity",
-		reflect.TypeOf((*NotebooksInstanceReservationAffinity)(nil)).Elem(),
+		reflect.TypeFor[NotebooksInstanceReservationAffinity](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.notebooksInstance.NotebooksInstanceReservationAffinityOutputReference",
-		reflect.TypeOf((*NotebooksInstanceReservationAffinityOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NotebooksInstanceReservationAffinityOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -294,7 +294,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NotebooksInstanceReservationAffinityOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -302,11 +302,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.notebooksInstance.NotebooksInstanceShieldedInstanceConfig",
-		reflect.TypeOf((*NotebooksInstanceShieldedInstanceConfig)(nil)).Elem(),
+		reflect.TypeFor[NotebooksInstanceShieldedInstanceConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.notebooksInstance.NotebooksInstanceShieldedInstanceConfigOutputReference",
-		reflect.TypeOf((*NotebooksInstanceShieldedInstanceConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NotebooksInstanceShieldedInstanceConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -339,7 +339,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NotebooksInstanceShieldedInstanceConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -347,11 +347,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.notebooksInstance.NotebooksInstanceTimeouts",
-		reflect.TypeOf((*NotebooksInstanceTimeouts)(nil)).Elem(),
+		reflect.TypeFor[NotebooksInstanceTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.notebooksInstance.NotebooksInstanceTimeoutsOutputReference",
-		reflect.TypeOf((*NotebooksInstanceTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NotebooksInstanceTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -384,7 +384,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NotebooksInstanceTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -392,11 +392,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.notebooksInstance.NotebooksInstanceVmImage",
-		reflect.TypeOf((*NotebooksInstanceVmImage)(nil)).Elem(),
+		reflect.TypeFor[NotebooksInstanceVmImage](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.notebooksInstance.NotebooksInstanceVmImageOutputReference",
-		reflect.TypeOf((*NotebooksInstanceVmImageOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NotebooksInstanceVmImageOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -428,7 +428,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NotebooksInstanceVmImageOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

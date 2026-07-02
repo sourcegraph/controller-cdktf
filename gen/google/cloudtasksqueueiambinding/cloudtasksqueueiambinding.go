@@ -17,15 +17,15 @@ type CloudTasksQueueIamBinding interface {
 	Condition() CloudTasksQueueIamBindingConditionOutputReference
 	ConditionInput() *CloudTasksQueueIamBindingCondition
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -65,27 +65,27 @@ type CloudTasksQueueIamBinding interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Role() *string
 	SetRole(val *string)
 	RoleInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -103,7 +103,7 @@ type CloudTasksQueueIamBinding interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -115,7 +115,7 @@ type CloudTasksQueueIamBinding interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -130,17 +130,17 @@ type CloudTasksQueueIamBinding interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for CloudTasksQueueIamBinding
@@ -178,8 +178,8 @@ func (j *jsiiProxy_CloudTasksQueueIamBinding) ConditionInput() *CloudTasksQueueI
 	return returns
 }
 
-func (j *jsiiProxy_CloudTasksQueueIamBinding) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudTasksQueueIamBinding) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -188,8 +188,8 @@ func (j *jsiiProxy_CloudTasksQueueIamBinding) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CloudTasksQueueIamBinding) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CloudTasksQueueIamBinding) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -198,8 +198,8 @@ func (j *jsiiProxy_CloudTasksQueueIamBinding) ConstructNodeMetadata() *map[strin
 	return returns
 }
 
-func (j *jsiiProxy_CloudTasksQueueIamBinding) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudTasksQueueIamBinding) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -388,8 +388,8 @@ func (j *jsiiProxy_CloudTasksQueueIamBinding) Provider() cdktf.TerraformProvider
 	return returns
 }
 
-func (j *jsiiProxy_CloudTasksQueueIamBinding) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_CloudTasksQueueIamBinding) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -398,8 +398,8 @@ func (j *jsiiProxy_CloudTasksQueueIamBinding) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CloudTasksQueueIamBinding) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudTasksQueueIamBinding) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -438,8 +438,8 @@ func (j *jsiiProxy_CloudTasksQueueIamBinding) TerraformGeneratorMetadata() *cdkt
 	return returns
 }
 
-func (j *jsiiProxy_CloudTasksQueueIamBinding) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CloudTasksQueueIamBinding) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -458,7 +458,6 @@ func (j *jsiiProxy_CloudTasksQueueIamBinding) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_tasks_queue_iam_binding google_cloud_tasks_queue_iam_binding} Resource.
 func NewCloudTasksQueueIamBinding(scope constructs.Construct, id *string, config *CloudTasksQueueIamBindingConfig) CloudTasksQueueIamBinding {
 	_init_.Initialize()
@@ -470,7 +469,7 @@ func NewCloudTasksQueueIamBinding(scope constructs.Construct, id *string, config
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cloudTasksQueueIamBinding.CloudTasksQueueIamBinding",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -483,12 +482,12 @@ func NewCloudTasksQueueIamBinding_Override(c CloudTasksQueueIamBinding, scope co
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cloudTasksQueueIamBinding.CloudTasksQueueIamBinding",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CloudTasksQueueIamBinding)SetConnection(val interface{}) {
+func (j *jsiiProxy_CloudTasksQueueIamBinding) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -499,7 +498,7 @@ func (j *jsiiProxy_CloudTasksQueueIamBinding)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudTasksQueueIamBinding)SetCount(val interface{}) {
+func (j *jsiiProxy_CloudTasksQueueIamBinding) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -510,7 +509,7 @@ func (j *jsiiProxy_CloudTasksQueueIamBinding)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudTasksQueueIamBinding)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_CloudTasksQueueIamBinding) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -518,7 +517,7 @@ func (j *jsiiProxy_CloudTasksQueueIamBinding)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CloudTasksQueueIamBinding)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_CloudTasksQueueIamBinding) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -526,7 +525,7 @@ func (j *jsiiProxy_CloudTasksQueueIamBinding)SetForEach(val cdktf.ITerraformIter
 	)
 }
 
-func (j *jsiiProxy_CloudTasksQueueIamBinding)SetId(val *string) {
+func (j *jsiiProxy_CloudTasksQueueIamBinding) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -537,7 +536,7 @@ func (j *jsiiProxy_CloudTasksQueueIamBinding)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudTasksQueueIamBinding)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_CloudTasksQueueIamBinding) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -548,7 +547,7 @@ func (j *jsiiProxy_CloudTasksQueueIamBinding)SetLifecycle(val *cdktf.TerraformRe
 	)
 }
 
-func (j *jsiiProxy_CloudTasksQueueIamBinding)SetLocation(val *string) {
+func (j *jsiiProxy_CloudTasksQueueIamBinding) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -559,7 +558,7 @@ func (j *jsiiProxy_CloudTasksQueueIamBinding)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudTasksQueueIamBinding)SetMembers(val *[]*string) {
+func (j *jsiiProxy_CloudTasksQueueIamBinding) SetMembers(val *[]*string) {
 	if err := j.validateSetMembersParameters(val); err != nil {
 		panic(err)
 	}
@@ -570,7 +569,7 @@ func (j *jsiiProxy_CloudTasksQueueIamBinding)SetMembers(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CloudTasksQueueIamBinding)SetName(val *string) {
+func (j *jsiiProxy_CloudTasksQueueIamBinding) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -581,7 +580,7 @@ func (j *jsiiProxy_CloudTasksQueueIamBinding)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudTasksQueueIamBinding)SetProject(val *string) {
+func (j *jsiiProxy_CloudTasksQueueIamBinding) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -592,7 +591,7 @@ func (j *jsiiProxy_CloudTasksQueueIamBinding)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudTasksQueueIamBinding)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_CloudTasksQueueIamBinding) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -600,7 +599,7 @@ func (j *jsiiProxy_CloudTasksQueueIamBinding)SetProvider(val cdktf.TerraformProv
 	)
 }
 
-func (j *jsiiProxy_CloudTasksQueueIamBinding)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_CloudTasksQueueIamBinding) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -611,7 +610,7 @@ func (j *jsiiProxy_CloudTasksQueueIamBinding)SetProvisioners(val *[]interface{})
 	)
 }
 
-func (j *jsiiProxy_CloudTasksQueueIamBinding)SetRole(val *string) {
+func (j *jsiiProxy_CloudTasksQueueIamBinding) SetRole(val *string) {
 	if err := j.validateSetRoleParameters(val); err != nil {
 		panic(err)
 	}
@@ -634,7 +633,7 @@ func CloudTasksQueueIamBinding_GenerateConfigForImport(scope constructs.Construc
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.cloudTasksQueueIamBinding.CloudTasksQueueIamBinding",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -658,7 +657,7 @@ func CloudTasksQueueIamBinding_GenerateConfigForImport(scope constructs.Construc
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func CloudTasksQueueIamBinding_IsConstruct(x interface{}) *bool {
+func CloudTasksQueueIamBinding_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCloudTasksQueueIamBinding_IsConstructParameters(x); err != nil {
@@ -669,7 +668,7 @@ func CloudTasksQueueIamBinding_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.cloudTasksQueueIamBinding.CloudTasksQueueIamBinding",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -677,7 +676,7 @@ func CloudTasksQueueIamBinding_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func CloudTasksQueueIamBinding_IsTerraformElement(x interface{}) *bool {
+func CloudTasksQueueIamBinding_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCloudTasksQueueIamBinding_IsTerraformElementParameters(x); err != nil {
@@ -688,7 +687,7 @@ func CloudTasksQueueIamBinding_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.cloudTasksQueueIamBinding.CloudTasksQueueIamBinding",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -696,7 +695,7 @@ func CloudTasksQueueIamBinding_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func CloudTasksQueueIamBinding_IsTerraformResource(x interface{}) *bool {
+func CloudTasksQueueIamBinding_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCloudTasksQueueIamBinding_IsTerraformResourceParameters(x); err != nil {
@@ -707,7 +706,7 @@ func CloudTasksQueueIamBinding_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.cloudTasksQueueIamBinding.CloudTasksQueueIamBinding",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -732,31 +731,31 @@ func (c *jsiiProxy_CloudTasksQueueIamBinding) AddMoveTarget(moveTarget *string) 
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_CloudTasksQueueIamBinding) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_CloudTasksQueueIamBinding) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_CloudTasksQueueIamBinding) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CloudTasksQueueIamBinding) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -772,7 +771,7 @@ func (c *jsiiProxy_CloudTasksQueueIamBinding) GetBooleanAttribute(terraformAttri
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -788,7 +787,7 @@ func (c *jsiiProxy_CloudTasksQueueIamBinding) GetBooleanMapAttribute(terraformAt
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -804,7 +803,7 @@ func (c *jsiiProxy_CloudTasksQueueIamBinding) GetListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -820,7 +819,7 @@ func (c *jsiiProxy_CloudTasksQueueIamBinding) GetNumberAttribute(terraformAttrib
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -836,7 +835,7 @@ func (c *jsiiProxy_CloudTasksQueueIamBinding) GetNumberListAttribute(terraformAt
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -852,7 +851,7 @@ func (c *jsiiProxy_CloudTasksQueueIamBinding) GetNumberMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -868,7 +867,7 @@ func (c *jsiiProxy_CloudTasksQueueIamBinding) GetStringAttribute(terraformAttrib
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -884,15 +883,15 @@ func (c *jsiiProxy_CloudTasksQueueIamBinding) GetStringMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_CloudTasksQueueIamBinding) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudTasksQueueIamBinding) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -911,7 +910,7 @@ func (c *jsiiProxy_CloudTasksQueueIamBinding) ImportFrom(id *string, provider cd
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -924,7 +923,7 @@ func (c *jsiiProxy_CloudTasksQueueIamBinding) InterpolationForAttribute(terrafor
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -938,18 +937,18 @@ func (c *jsiiProxy_CloudTasksQueueIamBinding) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_CloudTasksQueueIamBinding) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_CloudTasksQueueIamBinding) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -960,7 +959,7 @@ func (c *jsiiProxy_CloudTasksQueueIamBinding) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -971,7 +970,7 @@ func (c *jsiiProxy_CloudTasksQueueIamBinding) OverrideLogicalId(newLogicalId *st
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -982,7 +981,7 @@ func (c *jsiiProxy_CloudTasksQueueIamBinding) PutCondition(value *CloudTasksQueu
 	_jsii_.InvokeVoid(
 		c,
 		"putCondition",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1026,8 +1025,8 @@ func (c *jsiiProxy_CloudTasksQueueIamBinding) ResetProject() {
 	)
 }
 
-func (c *jsiiProxy_CloudTasksQueueIamBinding) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CloudTasksQueueIamBinding) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1039,8 +1038,8 @@ func (c *jsiiProxy_CloudTasksQueueIamBinding) SynthesizeAttributes() *map[string
 	return returns
 }
 
-func (c *jsiiProxy_CloudTasksQueueIamBinding) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CloudTasksQueueIamBinding) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1052,8 +1051,8 @@ func (c *jsiiProxy_CloudTasksQueueIamBinding) SynthesizeHclAttributes() *map[str
 	return returns
 }
 
-func (c *jsiiProxy_CloudTasksQueueIamBinding) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudTasksQueueIamBinding) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1065,8 +1064,8 @@ func (c *jsiiProxy_CloudTasksQueueIamBinding) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_CloudTasksQueueIamBinding) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudTasksQueueIamBinding) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1091,8 +1090,8 @@ func (c *jsiiProxy_CloudTasksQueueIamBinding) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_CloudTasksQueueIamBinding) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudTasksQueueIamBinding) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1103,4 +1102,3 @@ func (c *jsiiProxy_CloudTasksQueueIamBinding) ToTerraform() interface{} {
 
 	return returns
 }
-

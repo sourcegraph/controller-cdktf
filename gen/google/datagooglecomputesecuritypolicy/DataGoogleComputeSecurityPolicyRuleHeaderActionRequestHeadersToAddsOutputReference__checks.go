@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleComputeSecurityPolicyRuleHeaderActionRequestHeaders
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleComputeSecurityPolicyRuleHeaderActionRequestHeadersToA
 
 	return nil
 }
-

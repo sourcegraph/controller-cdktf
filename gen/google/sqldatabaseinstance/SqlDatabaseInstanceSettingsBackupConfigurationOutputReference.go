@@ -13,14 +13,14 @@ type SqlDatabaseInstanceSettingsBackupConfigurationOutputReference interface {
 	BackupRetentionSettings() SqlDatabaseInstanceSettingsBackupConfigurationBackupRetentionSettingsOutputReference
 	BackupRetentionSettingsInput() *SqlDatabaseInstanceSettingsBackupConfigurationBackupRetentionSettings
 	BackupTier() *string
-	BinaryLogEnabled() interface{}
-	SetBinaryLogEnabled(val interface{})
-	BinaryLogEnabledInput() interface{}
+	BinaryLogEnabled() any
+	SetBinaryLogEnabled(val any)
+	BinaryLogEnabledInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -31,9 +31,9 @@ type SqlDatabaseInstanceSettingsBackupConfigurationOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *SqlDatabaseInstanceSettingsBackupConfiguration
@@ -41,9 +41,9 @@ type SqlDatabaseInstanceSettingsBackupConfigurationOutputReference interface {
 	Location() *string
 	SetLocation(val *string)
 	LocationInput() *string
-	PointInTimeRecoveryEnabled() interface{}
-	SetPointInTimeRecoveryEnabled(val interface{})
-	PointInTimeRecoveryEnabledInput() interface{}
+	PointInTimeRecoveryEnabled() any
+	SetPointInTimeRecoveryEnabled(val any)
+	PointInTimeRecoveryEnabledInput() any
 	StartTime() *string
 	SetStartTime(val *string)
 	StartTimeInput() *string
@@ -61,7 +61,7 @@ type SqlDatabaseInstanceSettingsBackupConfigurationOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -92,7 +92,7 @@ type SqlDatabaseInstanceSettingsBackupConfigurationOutputReference interface {
 	ResetTransactionLogRetentionDays()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -135,8 +135,8 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference
 	return returns
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference) BinaryLogEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference) BinaryLogEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"binaryLogEnabled",
@@ -145,8 +145,8 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference
 	return returns
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference) BinaryLogEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference) BinaryLogEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"binaryLogEnabledInput",
@@ -155,8 +155,8 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference
 	return returns
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -185,8 +185,8 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference
 	return returns
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -195,8 +195,8 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference
 	return returns
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -245,8 +245,8 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference
 	return returns
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference) PointInTimeRecoveryEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference) PointInTimeRecoveryEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"pointInTimeRecoveryEnabled",
@@ -255,8 +255,8 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference
 	return returns
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference) PointInTimeRecoveryEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference) PointInTimeRecoveryEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"pointInTimeRecoveryEnabledInput",
@@ -325,7 +325,6 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference
 	return returns
 }
 
-
 func NewSqlDatabaseInstanceSettingsBackupConfigurationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) SqlDatabaseInstanceSettingsBackupConfigurationOutputReference {
 	_init_.Initialize()
 
@@ -336,7 +335,7 @@ func NewSqlDatabaseInstanceSettingsBackupConfigurationOutputReference(terraformR
 
 	_jsii_.Create(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsBackupConfigurationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -348,12 +347,12 @@ func NewSqlDatabaseInstanceSettingsBackupConfigurationOutputReference_Override(s
 
 	_jsii_.Create(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsBackupConfigurationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference)SetBinaryLogEnabled(val interface{}) {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference) SetBinaryLogEnabled(val any) {
 	if err := j.validateSetBinaryLogEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -364,7 +363,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -375,7 +374,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -386,7 +385,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference)SetEnabled(val interface{}) {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -397,7 +396,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference)SetInternalValue(val *SqlDatabaseInstanceSettingsBackupConfiguration) {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference) SetInternalValue(val *SqlDatabaseInstanceSettingsBackupConfiguration) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -408,7 +407,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference)SetLocation(val *string) {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -419,7 +418,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference)SetPointInTimeRecoveryEnabled(val interface{}) {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference) SetPointInTimeRecoveryEnabled(val any) {
 	if err := j.validateSetPointInTimeRecoveryEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -430,7 +429,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference)SetStartTime(val *string) {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference) SetStartTime(val *string) {
 	if err := j.validateSetStartTimeParameters(val); err != nil {
 		panic(err)
 	}
@@ -441,7 +440,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,7 +451,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -463,7 +462,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference)SetTransactionLogRetentionDays(val *float64) {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference) SetTransactionLogRetentionDays(val *float64) {
 	if err := j.validateSetTransactionLogRetentionDaysParameters(val); err != nil {
 		panic(err)
 	}
@@ -487,16 +486,16 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference
 	return returns
 }
 
-func (s *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -512,7 +511,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -528,7 +527,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -544,7 +543,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -560,7 +559,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -576,7 +575,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -592,7 +591,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -608,7 +607,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -624,7 +623,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -653,7 +652,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -667,7 +666,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference
 	_jsii_.InvokeVoid(
 		s,
 		"putBackupRetentionSettings",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -727,16 +726,16 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference
 	)
 }
 
-func (s *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -755,4 +754,3 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference
 
 	return returns
 }
-

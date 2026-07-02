@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.privatecaCaPoolIamMember.PrivatecaCaPoolIamMember",
-		reflect.TypeOf((*PrivatecaCaPoolIamMember)(nil)).Elem(),
+		reflect.TypeFor[PrivatecaCaPoolIamMember](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,7 +73,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PrivatecaCaPoolIamMember{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -81,11 +81,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.privatecaCaPoolIamMember.PrivatecaCaPoolIamMemberCondition",
-		reflect.TypeOf((*PrivatecaCaPoolIamMemberCondition)(nil)).Elem(),
+		reflect.TypeFor[PrivatecaCaPoolIamMemberCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.privatecaCaPoolIamMember.PrivatecaCaPoolIamMemberConditionOutputReference",
-		reflect.TypeOf((*PrivatecaCaPoolIamMemberConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PrivatecaCaPoolIamMemberConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -116,7 +116,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PrivatecaCaPoolIamMemberConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -124,6 +124,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.privatecaCaPoolIamMember.PrivatecaCaPoolIamMemberConfig",
-		reflect.TypeOf((*PrivatecaCaPoolIamMemberConfig)(nil)).Elem(),
+		reflect.TypeFor[PrivatecaCaPoolIamMemberConfig](),
 	)
 }

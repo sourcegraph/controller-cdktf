@@ -98,7 +98,7 @@ func (h *jsiiProxy_HealthcareDatasetEncryptionSpecOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_HealthcareDatasetEncryptionSpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_HealthcareDatasetEncryptionSpecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewHealthcareDatasetEncryptionSpecOutputReferenceParameters(terrafo
 
 	return nil
 }
-

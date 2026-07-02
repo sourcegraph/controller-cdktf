@@ -19,7 +19,7 @@ func (c *jsiiProxy_ComputeRegionHealthSource) validateAddMoveTargetParameters(mo
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionHealthSource) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_ComputeRegionHealthSource) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_ComputeRegionHealthSource) validateMoveFromIdParameters(id *s
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionHealthSource) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_ComputeRegionHealthSource) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateComputeRegionHealthSource_GenerateConfigForImportParameters(scope c
 	return nil
 }
 
-func validateComputeRegionHealthSource_IsConstructParameters(x interface{}) error {
+func validateComputeRegionHealthSource_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateComputeRegionHealthSource_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
-func validateComputeRegionHealthSource_IsTerraformElementParameters(x interface{}) error {
+func validateComputeRegionHealthSource_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateComputeRegionHealthSource_IsTerraformElementParameters(x interface{
 	return nil
 }
 
-func validateComputeRegionHealthSource_IsTerraformResourceParameters(x interface{}) error {
+func validateComputeRegionHealthSource_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateComputeRegionHealthSource_IsTerraformResourceParameters(x interface
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionHealthSource) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionHealthSource) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_ComputeRegionHealthSource) validateSetConnectionParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionHealthSource) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionHealthSource) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -385,7 +385,7 @@ func (j *jsiiProxy_ComputeRegionHealthSource) validateSetProjectParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionHealthSource) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ComputeRegionHealthSource) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -473,4 +473,3 @@ func validateNewComputeRegionHealthSourceParameters(scope constructs.Construct, 
 
 	return nil
 }
-

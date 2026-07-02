@@ -98,7 +98,7 @@ func (c *jsiiProxy_ContainerNodePoolNetworkConfigAdditionalNodeNetworkConfigsOut
 	return nil
 }
 
-func (j *jsiiProxy_ContainerNodePoolNetworkConfigAdditionalNodeNetworkConfigsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerNodePoolNetworkConfigAdditionalNodeNetworkConfigsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ContainerNodePoolNetworkConfigAdditionalNodeNetworkConfigsOut
 	return nil
 }
 
-func (j *jsiiProxy_ContainerNodePoolNetworkConfigAdditionalNodeNetworkConfigsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerNodePoolNetworkConfigAdditionalNodeNetworkConfigsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewContainerNodePoolNetworkConfigAdditionalNodeNetworkConfigsOutput
 
 	return nil
 }
-

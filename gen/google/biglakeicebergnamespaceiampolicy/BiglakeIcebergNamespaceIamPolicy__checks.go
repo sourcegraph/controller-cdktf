@@ -19,7 +19,7 @@ func (b *jsiiProxy_BiglakeIcebergNamespaceIamPolicy) validateAddMoveTargetParame
 	return nil
 }
 
-func (b *jsiiProxy_BiglakeIcebergNamespaceIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (b *jsiiProxy_BiglakeIcebergNamespaceIamPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (b *jsiiProxy_BiglakeIcebergNamespaceIamPolicy) validateMoveFromIdParameter
 	return nil
 }
 
-func (b *jsiiProxy_BiglakeIcebergNamespaceIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (b *jsiiProxy_BiglakeIcebergNamespaceIamPolicy) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateBiglakeIcebergNamespaceIamPolicy_GenerateConfigForImportParameters(
 	return nil
 }
 
-func validateBiglakeIcebergNamespaceIamPolicy_IsConstructParameters(x interface{}) error {
+func validateBiglakeIcebergNamespaceIamPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateBiglakeIcebergNamespaceIamPolicy_IsConstructParameters(x interface{
 	return nil
 }
 
-func validateBiglakeIcebergNamespaceIamPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateBiglakeIcebergNamespaceIamPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateBiglakeIcebergNamespaceIamPolicy_IsTerraformElementParameters(x int
 	return nil
 }
 
-func validateBiglakeIcebergNamespaceIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+func validateBiglakeIcebergNamespaceIamPolicy_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -252,7 +252,7 @@ func (j *jsiiProxy_BiglakeIcebergNamespaceIamPolicy) validateSetCatalogParameter
 	return nil
 }
 
-func (j *jsiiProxy_BiglakeIcebergNamespaceIamPolicy) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_BiglakeIcebergNamespaceIamPolicy) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -285,7 +285,7 @@ func (j *jsiiProxy_BiglakeIcebergNamespaceIamPolicy) validateSetConnectionParame
 	return nil
 }
 
-func (j *jsiiProxy_BiglakeIcebergNamespaceIamPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_BiglakeIcebergNamespaceIamPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -382,7 +382,7 @@ func (j *jsiiProxy_BiglakeIcebergNamespaceIamPolicy) validateSetProjectParameter
 	return nil
 }
 
-func (j *jsiiProxy_BiglakeIcebergNamespaceIamPolicy) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_BiglakeIcebergNamespaceIamPolicy) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -446,4 +446,3 @@ func validateNewBiglakeIcebergNamespaceIamPolicyParameters(scope constructs.Cons
 
 	return nil
 }
-

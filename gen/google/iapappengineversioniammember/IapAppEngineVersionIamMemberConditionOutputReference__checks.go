@@ -98,7 +98,7 @@ func (i *jsiiProxy_IapAppEngineVersionIamMemberConditionOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_IapAppEngineVersionIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IapAppEngineVersionIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewIapAppEngineVersionIamMemberConditionOutputReferenceParameters(t
 
 	return nil
 }
-

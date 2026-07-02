@@ -1,6 +1,5 @@
 package bigquerytable
 
-
 type BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumn struct {
 	// The encoding of the values when the type is not STRING.
 	//
@@ -17,7 +16,7 @@ type BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumn str
 	// 'onlyReadLatest' can also be set at the column family level. However, the setting at this level takes precedence if 'onlyReadLatest' is set at both levels.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_table#only_read_latest BigqueryTable#only_read_latest}
-	OnlyReadLatest interface{} `field:"optional" json:"onlyReadLatest" yaml:"onlyReadLatest"`
+	OnlyReadLatest any `field:"optional" json:"onlyReadLatest" yaml:"onlyReadLatest"`
 	// Qualifier of the column.
 	//
 	// Columns in the parent column family that has this exact qualifier are exposed as . field. If the qualifier is valid UTF-8 string, it can be specified in the qualifierString field. Otherwise, a base-64 encoded value must be set to qualifierEncoded. The column field name is the same as the column qualifier. However, if the qualifier is not a valid BigQuery field identifier i.e. does not match [a-zA-Z][a-zA-Z0-9_]*, a valid identifier must be provided as fieldName.
@@ -35,4 +34,3 @@ type BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumn str
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_table#type BigqueryTable#type}
 	Type *string `field:"optional" json:"type" yaml:"type"`
 }
-

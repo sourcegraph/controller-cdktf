@@ -19,7 +19,7 @@ func (g *jsiiProxy_GeminiLoggingSetting) validateAddMoveTargetParameters(moveTar
 	return nil
 }
 
-func (g *jsiiProxy_GeminiLoggingSetting) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GeminiLoggingSetting) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GeminiLoggingSetting) validateMoveFromIdParameters(id *string
 	return nil
 }
 
-func (g *jsiiProxy_GeminiLoggingSetting) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GeminiLoggingSetting) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGeminiLoggingSetting_GenerateConfigForImportParameters(scope constr
 	return nil
 }
 
-func validateGeminiLoggingSetting_IsConstructParameters(x interface{}) error {
+func validateGeminiLoggingSetting_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGeminiLoggingSetting_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateGeminiLoggingSetting_IsTerraformElementParameters(x interface{}) error {
+func validateGeminiLoggingSetting_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGeminiLoggingSetting_IsTerraformElementParameters(x interface{}) er
 	return nil
 }
 
-func validateGeminiLoggingSetting_IsTerraformResourceParameters(x interface{}) error {
+func validateGeminiLoggingSetting_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateGeminiLoggingSetting_IsTerraformResourceParameters(x interface{}) e
 	return nil
 }
 
-func (j *jsiiProxy_GeminiLoggingSetting) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GeminiLoggingSetting) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_GeminiLoggingSetting) validateSetConnectionParameters(val int
 	return nil
 }
 
-func (j *jsiiProxy_GeminiLoggingSetting) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GeminiLoggingSetting) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -385,7 +385,7 @@ func (j *jsiiProxy_GeminiLoggingSetting) validateSetLoggingSettingIdParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_GeminiLoggingSetting) validateSetLogMetadataParameters(val interface{}) error {
+func (j *jsiiProxy_GeminiLoggingSetting) validateSetLogMetadataParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -405,7 +405,7 @@ func (j *jsiiProxy_GeminiLoggingSetting) validateSetLogMetadataParameters(val in
 	return nil
 }
 
-func (j *jsiiProxy_GeminiLoggingSetting) validateSetLogPromptsAndResponsesParameters(val interface{}) error {
+func (j *jsiiProxy_GeminiLoggingSetting) validateSetLogPromptsAndResponsesParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -433,7 +433,7 @@ func (j *jsiiProxy_GeminiLoggingSetting) validateSetProjectParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_GeminiLoggingSetting) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GeminiLoggingSetting) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -497,4 +497,3 @@ func validateNewGeminiLoggingSettingParameters(scope constructs.Construct, id *s
 
 	return nil
 }
-

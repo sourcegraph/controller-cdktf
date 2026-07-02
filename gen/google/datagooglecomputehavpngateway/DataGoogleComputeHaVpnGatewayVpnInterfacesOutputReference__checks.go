@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleComputeHaVpnGatewayVpnInterfacesOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeHaVpnGatewayVpnInterfacesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleComputeHaVpnGatewayVpnInterfacesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleComputeHaVpnGatewayVpnInterfacesOutputReferenceParamet
 
 	return nil
 }
-

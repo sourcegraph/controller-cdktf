@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleContainerClusterAddonsConfigRayOperatorConfigOutput
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleContainerClusterAddonsConfigRayOperatorConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleContainerClusterAddonsConfigRayOperatorConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleContainerClusterAddonsConfigRayOperatorConfigOutputRef
 
 	return nil
 }
-

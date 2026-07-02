@@ -6,9 +6,9 @@ import (
 
 type ClouddeployDeployPolicyConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type ClouddeployDeployPolicyConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The location for the resource.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_deploy_policy#location ClouddeployDeployPolicy#location}
@@ -30,11 +30,11 @@ type ClouddeployDeployPolicyConfig struct {
 	// rules block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_deploy_policy#rules ClouddeployDeployPolicy#rules}
-	Rules interface{} `field:"required" json:"rules" yaml:"rules"`
+	Rules any `field:"required" json:"rules" yaml:"rules"`
 	// selectors block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_deploy_policy#selectors ClouddeployDeployPolicy#selectors}
-	Selectors interface{} `field:"required" json:"selectors" yaml:"selectors"`
+	Selectors any `field:"required" json:"selectors" yaml:"selectors"`
 	// User annotations.
 	//
 	// These attributes can only be set and used by the user, and not by Cloud Deploy. Annotations must meet the following constraints: * Annotations are key/value pairs. * Valid annotation keys have two segments: an optional prefix and name, separated by a slash ('/'). * The name segment is required and must be 63 characters or less, beginning and ending with an alphanumeric character ('[a-z0-9A-Z]') with dashes ('-'), underscores ('_'), dots ('.'), and alphanumerics between. * The prefix is optional. If specified, the prefix must be a DNS subdomain: a series of DNS labels separated by dots('.'), not longer than 253 characters in total, followed by a slash ('/'). See https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/#syntax-and-character-set for more details.
@@ -67,10 +67,9 @@ type ClouddeployDeployPolicyConfig struct {
 	// When suspended, the policy will not prevent actions from occurring, even if the action violates the policy.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_deploy_policy#suspended ClouddeployDeployPolicy#suspended}
-	Suspended interface{} `field:"optional" json:"suspended" yaml:"suspended"`
+	Suspended any `field:"optional" json:"suspended" yaml:"suspended"`
 	// timeouts block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_deploy_policy#timeouts ClouddeployDeployPolicy#timeouts}
 	Timeouts *ClouddeployDeployPolicyTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

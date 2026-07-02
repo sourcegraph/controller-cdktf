@@ -34,7 +34,7 @@ func (c *jsiiProxy_ContainerAzureClusterControlPlaneReplicaPlacementsList) valid
 	return nil
 }
 
-func (j *jsiiProxy_ContainerAzureClusterControlPlaneReplicaPlacementsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerAzureClusterControlPlaneReplicaPlacementsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewContainerAzureClusterControlPlaneReplicaPlacementsListParameters
 
 	return nil
 }
-

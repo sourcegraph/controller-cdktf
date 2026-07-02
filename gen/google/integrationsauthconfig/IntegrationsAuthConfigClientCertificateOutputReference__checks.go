@@ -98,7 +98,7 @@ func (i *jsiiProxy_IntegrationsAuthConfigClientCertificateOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_IntegrationsAuthConfigClientCertificateOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IntegrationsAuthConfigClientCertificateOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewIntegrationsAuthConfigClientCertificateOutputReferenceParameters
 
 	return nil
 }
-

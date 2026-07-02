@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeRegionHealthCheckLogConfigOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionHealthCheckLogConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionHealthCheckLogConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ComputeRegionHealthCheckLogConfigOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionHealthCheckLogConfigOutputReference) validateSetEnableParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionHealthCheckLogConfigOutputReference) validateSetEnableParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -218,4 +218,3 @@ func validateNewComputeRegionHealthCheckLogConfigOutputReferenceParameters(terra
 
 	return nil
 }
-

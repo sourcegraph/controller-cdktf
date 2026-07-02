@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeHaVpnGatewayTimeoutsOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_ComputeHaVpnGatewayTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeHaVpnGatewayTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_ComputeHaVpnGatewayTimeoutsOutputReference) validateSetDelete
 	return nil
 }
 
-func (j *jsiiProxy_ComputeHaVpnGatewayTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeHaVpnGatewayTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewComputeHaVpnGatewayTimeoutsOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

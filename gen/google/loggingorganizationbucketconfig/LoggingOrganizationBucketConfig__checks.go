@@ -19,7 +19,7 @@ func (l *jsiiProxy_LoggingOrganizationBucketConfig) validateAddMoveTargetParamet
 	return nil
 }
 
-func (l *jsiiProxy_LoggingOrganizationBucketConfig) validateAddOverrideParameters(path *string, value interface{}) error {
+func (l *jsiiProxy_LoggingOrganizationBucketConfig) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (l *jsiiProxy_LoggingOrganizationBucketConfig) validateMoveFromIdParameters
 	return nil
 }
 
-func (l *jsiiProxy_LoggingOrganizationBucketConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (l *jsiiProxy_LoggingOrganizationBucketConfig) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -215,7 +215,7 @@ func (l *jsiiProxy_LoggingOrganizationBucketConfig) validatePutCmekSettingsParam
 	return nil
 }
 
-func (l *jsiiProxy_LoggingOrganizationBucketConfig) validatePutIndexConfigsParameters(value interface{}) error {
+func (l *jsiiProxy_LoggingOrganizationBucketConfig) validatePutIndexConfigsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -262,7 +262,7 @@ func validateLoggingOrganizationBucketConfig_GenerateConfigForImportParameters(s
 	return nil
 }
 
-func validateLoggingOrganizationBucketConfig_IsConstructParameters(x interface{}) error {
+func validateLoggingOrganizationBucketConfig_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -270,7 +270,7 @@ func validateLoggingOrganizationBucketConfig_IsConstructParameters(x interface{}
 	return nil
 }
 
-func validateLoggingOrganizationBucketConfig_IsTerraformElementParameters(x interface{}) error {
+func validateLoggingOrganizationBucketConfig_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -278,7 +278,7 @@ func validateLoggingOrganizationBucketConfig_IsTerraformElementParameters(x inte
 	return nil
 }
 
-func validateLoggingOrganizationBucketConfig_IsTerraformResourceParameters(x interface{}) error {
+func validateLoggingOrganizationBucketConfig_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -294,7 +294,7 @@ func (j *jsiiProxy_LoggingOrganizationBucketConfig) validateSetBucketIdParameter
 	return nil
 }
 
-func (j *jsiiProxy_LoggingOrganizationBucketConfig) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_LoggingOrganizationBucketConfig) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -327,7 +327,7 @@ func (j *jsiiProxy_LoggingOrganizationBucketConfig) validateSetConnectionParamet
 	return nil
 }
 
-func (j *jsiiProxy_LoggingOrganizationBucketConfig) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_LoggingOrganizationBucketConfig) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -424,7 +424,7 @@ func (j *jsiiProxy_LoggingOrganizationBucketConfig) validateSetOrganizationParam
 	return nil
 }
 
-func (j *jsiiProxy_LoggingOrganizationBucketConfig) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_LoggingOrganizationBucketConfig) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -496,4 +496,3 @@ func validateNewLoggingOrganizationBucketConfigParameters(scope constructs.Const
 
 	return nil
 }
-

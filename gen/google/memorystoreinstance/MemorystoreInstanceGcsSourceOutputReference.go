@@ -12,9 +12,9 @@ type MemorystoreInstanceGcsSourceOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -43,7 +43,7 @@ type MemorystoreInstanceGcsSourceOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -66,7 +66,7 @@ type MemorystoreInstanceGcsSourceOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,8 +79,8 @@ type jsiiProxy_MemorystoreInstanceGcsSourceOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_MemorystoreInstanceGcsSourceOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MemorystoreInstanceGcsSourceOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -169,7 +169,6 @@ func (j *jsiiProxy_MemorystoreInstanceGcsSourceOutputReference) UrisInput() *[]*
 	return returns
 }
 
-
 func NewMemorystoreInstanceGcsSourceOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MemorystoreInstanceGcsSourceOutputReference {
 	_init_.Initialize()
 
@@ -180,7 +179,7 @@ func NewMemorystoreInstanceGcsSourceOutputReference(terraformResource cdktf.IInt
 
 	_jsii_.Create(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceGcsSourceOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -192,12 +191,12 @@ func NewMemorystoreInstanceGcsSourceOutputReference_Override(m MemorystoreInstan
 
 	_jsii_.Create(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceGcsSourceOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		m,
 	)
 }
 
-func (j *jsiiProxy_MemorystoreInstanceGcsSourceOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_MemorystoreInstanceGcsSourceOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -208,7 +207,7 @@ func (j *jsiiProxy_MemorystoreInstanceGcsSourceOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_MemorystoreInstanceGcsSourceOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_MemorystoreInstanceGcsSourceOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -219,7 +218,7 @@ func (j *jsiiProxy_MemorystoreInstanceGcsSourceOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_MemorystoreInstanceGcsSourceOutputReference)SetInternalValue(val *MemorystoreInstanceGcsSource) {
+func (j *jsiiProxy_MemorystoreInstanceGcsSourceOutputReference) SetInternalValue(val *MemorystoreInstanceGcsSource) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -230,7 +229,7 @@ func (j *jsiiProxy_MemorystoreInstanceGcsSourceOutputReference)SetInternalValue(
 	)
 }
 
-func (j *jsiiProxy_MemorystoreInstanceGcsSourceOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MemorystoreInstanceGcsSourceOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -241,7 +240,7 @@ func (j *jsiiProxy_MemorystoreInstanceGcsSourceOutputReference)SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_MemorystoreInstanceGcsSourceOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MemorystoreInstanceGcsSourceOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -252,7 +251,7 @@ func (j *jsiiProxy_MemorystoreInstanceGcsSourceOutputReference)SetTerraformResou
 	)
 }
 
-func (j *jsiiProxy_MemorystoreInstanceGcsSourceOutputReference)SetUris(val *[]*string) {
+func (j *jsiiProxy_MemorystoreInstanceGcsSourceOutputReference) SetUris(val *[]*string) {
 	if err := j.validateSetUrisParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,16 +275,16 @@ func (m *jsiiProxy_MemorystoreInstanceGcsSourceOutputReference) ComputeFqn() *st
 	return returns
 }
 
-func (m *jsiiProxy_MemorystoreInstanceGcsSourceOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (m *jsiiProxy_MemorystoreInstanceGcsSourceOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -301,7 +300,7 @@ func (m *jsiiProxy_MemorystoreInstanceGcsSourceOutputReference) GetBooleanAttrib
 	_jsii_.Invoke(
 		m,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -317,7 +316,7 @@ func (m *jsiiProxy_MemorystoreInstanceGcsSourceOutputReference) GetBooleanMapAtt
 	_jsii_.Invoke(
 		m,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -333,7 +332,7 @@ func (m *jsiiProxy_MemorystoreInstanceGcsSourceOutputReference) GetListAttribute
 	_jsii_.Invoke(
 		m,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -349,7 +348,7 @@ func (m *jsiiProxy_MemorystoreInstanceGcsSourceOutputReference) GetNumberAttribu
 	_jsii_.Invoke(
 		m,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -365,7 +364,7 @@ func (m *jsiiProxy_MemorystoreInstanceGcsSourceOutputReference) GetNumberListAtt
 	_jsii_.Invoke(
 		m,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -381,7 +380,7 @@ func (m *jsiiProxy_MemorystoreInstanceGcsSourceOutputReference) GetNumberMapAttr
 	_jsii_.Invoke(
 		m,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -397,7 +396,7 @@ func (m *jsiiProxy_MemorystoreInstanceGcsSourceOutputReference) GetStringAttribu
 	_jsii_.Invoke(
 		m,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -413,7 +412,7 @@ func (m *jsiiProxy_MemorystoreInstanceGcsSourceOutputReference) GetStringMapAttr
 	_jsii_.Invoke(
 		m,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -442,23 +441,23 @@ func (m *jsiiProxy_MemorystoreInstanceGcsSourceOutputReference) InterpolationFor
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (m *jsiiProxy_MemorystoreInstanceGcsSourceOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_MemorystoreInstanceGcsSourceOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := m.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -477,4 +476,3 @@ func (m *jsiiProxy_MemorystoreInstanceGcsSourceOutputReference) ToString() *stri
 
 	return returns
 }
-

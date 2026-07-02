@@ -18,15 +18,15 @@ type DataprocBatch interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	Creator() *string
 	// Experimental.
@@ -69,13 +69,13 @@ type DataprocBatch interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	PysparkBatch() DataprocBatchPysparkBatchOutputReference
 	PysparkBatchInput() *DataprocBatchPysparkBatch
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RuntimeConfig() DataprocBatchRuntimeConfigOutputReference
 	RuntimeConfigInput() *DataprocBatchRuntimeConfig
 	RuntimeInfo() DataprocBatchRuntimeInfoList
@@ -93,19 +93,19 @@ type DataprocBatch interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() DataprocBatchTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Uuid() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -123,7 +123,7 @@ type DataprocBatch interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -135,7 +135,7 @@ type DataprocBatch interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -164,17 +164,17 @@ type DataprocBatch interface {
 	ResetSparkRBatch()
 	ResetSparkSqlBatch()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataprocBatch
@@ -212,8 +212,8 @@ func (j *jsiiProxy_DataprocBatch) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DataprocBatch) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataprocBatch) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -222,8 +222,8 @@ func (j *jsiiProxy_DataprocBatch) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataprocBatch) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataprocBatch) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -232,8 +232,8 @@ func (j *jsiiProxy_DataprocBatch) ConstructNodeMetadata() *map[string]interface{
 	return returns
 }
 
-func (j *jsiiProxy_DataprocBatch) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataprocBatch) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -462,8 +462,8 @@ func (j *jsiiProxy_DataprocBatch) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DataprocBatch) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_DataprocBatch) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -492,8 +492,8 @@ func (j *jsiiProxy_DataprocBatch) PysparkBatchInput() *DataprocBatchPysparkBatch
 	return returns
 }
 
-func (j *jsiiProxy_DataprocBatch) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataprocBatch) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -652,8 +652,8 @@ func (j *jsiiProxy_DataprocBatch) TerraformLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_DataprocBatch) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataprocBatch) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -682,8 +682,8 @@ func (j *jsiiProxy_DataprocBatch) Timeouts() DataprocBatchTimeoutsOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_DataprocBatch) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataprocBatch) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -702,7 +702,6 @@ func (j *jsiiProxy_DataprocBatch) Uuid() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_batch google_dataproc_batch} Resource.
 func NewDataprocBatch(scope constructs.Construct, id *string, config *DataprocBatchConfig) DataprocBatch {
 	_init_.Initialize()
@@ -714,7 +713,7 @@ func NewDataprocBatch(scope constructs.Construct, id *string, config *DataprocBa
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataprocBatch.DataprocBatch",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -727,12 +726,12 @@ func NewDataprocBatch_Override(d DataprocBatch, scope constructs.Construct, id *
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataprocBatch.DataprocBatch",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataprocBatch)SetBatchId(val *string) {
+func (j *jsiiProxy_DataprocBatch) SetBatchId(val *string) {
 	if err := j.validateSetBatchIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -743,7 +742,7 @@ func (j *jsiiProxy_DataprocBatch)SetBatchId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataprocBatch)SetConnection(val interface{}) {
+func (j *jsiiProxy_DataprocBatch) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -754,7 +753,7 @@ func (j *jsiiProxy_DataprocBatch)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataprocBatch)SetCount(val interface{}) {
+func (j *jsiiProxy_DataprocBatch) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -765,7 +764,7 @@ func (j *jsiiProxy_DataprocBatch)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataprocBatch)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataprocBatch) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -773,7 +772,7 @@ func (j *jsiiProxy_DataprocBatch)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataprocBatch)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataprocBatch) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -781,7 +780,7 @@ func (j *jsiiProxy_DataprocBatch)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_DataprocBatch)SetId(val *string) {
+func (j *jsiiProxy_DataprocBatch) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -792,7 +791,7 @@ func (j *jsiiProxy_DataprocBatch)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataprocBatch)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_DataprocBatch) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -803,7 +802,7 @@ func (j *jsiiProxy_DataprocBatch)SetLabels(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataprocBatch)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataprocBatch) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -814,7 +813,7 @@ func (j *jsiiProxy_DataprocBatch)SetLifecycle(val *cdktf.TerraformResourceLifecy
 	)
 }
 
-func (j *jsiiProxy_DataprocBatch)SetLocation(val *string) {
+func (j *jsiiProxy_DataprocBatch) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -825,7 +824,7 @@ func (j *jsiiProxy_DataprocBatch)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataprocBatch)SetProject(val *string) {
+func (j *jsiiProxy_DataprocBatch) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -836,7 +835,7 @@ func (j *jsiiProxy_DataprocBatch)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataprocBatch)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataprocBatch) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -844,7 +843,7 @@ func (j *jsiiProxy_DataprocBatch)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_DataprocBatch)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_DataprocBatch) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -867,7 +866,7 @@ func DataprocBatch_GenerateConfigForImport(scope constructs.Construct, importToI
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataprocBatch.DataprocBatch",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -891,7 +890,7 @@ func DataprocBatch_GenerateConfigForImport(scope constructs.Construct, importToI
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataprocBatch_IsConstruct(x interface{}) *bool {
+func DataprocBatch_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataprocBatch_IsConstructParameters(x); err != nil {
@@ -902,7 +901,7 @@ func DataprocBatch_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataprocBatch.DataprocBatch",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -910,7 +909,7 @@ func DataprocBatch_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataprocBatch_IsTerraformElement(x interface{}) *bool {
+func DataprocBatch_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataprocBatch_IsTerraformElementParameters(x); err != nil {
@@ -921,7 +920,7 @@ func DataprocBatch_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataprocBatch.DataprocBatch",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -929,7 +928,7 @@ func DataprocBatch_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func DataprocBatch_IsTerraformResource(x interface{}) *bool {
+func DataprocBatch_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataprocBatch_IsTerraformResourceParameters(x); err != nil {
@@ -940,7 +939,7 @@ func DataprocBatch_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataprocBatch.DataprocBatch",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -965,31 +964,31 @@ func (d *jsiiProxy_DataprocBatch) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (d *jsiiProxy_DataprocBatch) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataprocBatch) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataprocBatch) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataprocBatch) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1005,7 +1004,7 @@ func (d *jsiiProxy_DataprocBatch) GetBooleanAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1021,7 +1020,7 @@ func (d *jsiiProxy_DataprocBatch) GetBooleanMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1037,7 +1036,7 @@ func (d *jsiiProxy_DataprocBatch) GetListAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1053,7 +1052,7 @@ func (d *jsiiProxy_DataprocBatch) GetNumberAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1069,7 +1068,7 @@ func (d *jsiiProxy_DataprocBatch) GetNumberListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1085,7 +1084,7 @@ func (d *jsiiProxy_DataprocBatch) GetNumberMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1101,7 +1100,7 @@ func (d *jsiiProxy_DataprocBatch) GetStringAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1117,15 +1116,15 @@ func (d *jsiiProxy_DataprocBatch) GetStringMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataprocBatch) HasResourceMove() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataprocBatch) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1144,7 +1143,7 @@ func (d *jsiiProxy_DataprocBatch) ImportFrom(id *string, provider cdktf.Terrafor
 	_jsii_.InvokeVoid(
 		d,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1157,7 +1156,7 @@ func (d *jsiiProxy_DataprocBatch) InterpolationForAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1171,18 +1170,18 @@ func (d *jsiiProxy_DataprocBatch) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (d *jsiiProxy_DataprocBatch) MoveTo(moveTarget *string, index interface{}) {
+func (d *jsiiProxy_DataprocBatch) MoveTo(moveTarget *string, index any) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1193,7 +1192,7 @@ func (d *jsiiProxy_DataprocBatch) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1204,7 +1203,7 @@ func (d *jsiiProxy_DataprocBatch) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1215,7 +1214,7 @@ func (d *jsiiProxy_DataprocBatch) PutEnvironmentConfig(value *DataprocBatchEnvir
 	_jsii_.InvokeVoid(
 		d,
 		"putEnvironmentConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1226,7 +1225,7 @@ func (d *jsiiProxy_DataprocBatch) PutPysparkBatch(value *DataprocBatchPysparkBat
 	_jsii_.InvokeVoid(
 		d,
 		"putPysparkBatch",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1237,7 +1236,7 @@ func (d *jsiiProxy_DataprocBatch) PutRuntimeConfig(value *DataprocBatchRuntimeCo
 	_jsii_.InvokeVoid(
 		d,
 		"putRuntimeConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1248,7 +1247,7 @@ func (d *jsiiProxy_DataprocBatch) PutSparkBatch(value *DataprocBatchSparkBatch) 
 	_jsii_.InvokeVoid(
 		d,
 		"putSparkBatch",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1259,7 +1258,7 @@ func (d *jsiiProxy_DataprocBatch) PutSparkRBatch(value *DataprocBatchSparkRBatch
 	_jsii_.InvokeVoid(
 		d,
 		"putSparkRBatch",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1270,7 +1269,7 @@ func (d *jsiiProxy_DataprocBatch) PutSparkSqlBatch(value *DataprocBatchSparkSqlB
 	_jsii_.InvokeVoid(
 		d,
 		"putSparkSqlBatch",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1281,7 +1280,7 @@ func (d *jsiiProxy_DataprocBatch) PutTimeouts(value *DataprocBatchTimeouts) {
 	_jsii_.InvokeVoid(
 		d,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1389,8 +1388,8 @@ func (d *jsiiProxy_DataprocBatch) ResetTimeouts() {
 	)
 }
 
-func (d *jsiiProxy_DataprocBatch) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataprocBatch) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1402,8 +1401,8 @@ func (d *jsiiProxy_DataprocBatch) SynthesizeAttributes() *map[string]interface{}
 	return returns
 }
 
-func (d *jsiiProxy_DataprocBatch) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataprocBatch) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1415,8 +1414,8 @@ func (d *jsiiProxy_DataprocBatch) SynthesizeHclAttributes() *map[string]interfac
 	return returns
 }
 
-func (d *jsiiProxy_DataprocBatch) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataprocBatch) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1428,8 +1427,8 @@ func (d *jsiiProxy_DataprocBatch) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataprocBatch) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataprocBatch) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1454,8 +1453,8 @@ func (d *jsiiProxy_DataprocBatch) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataprocBatch) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataprocBatch) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1466,4 +1465,3 @@ func (d *jsiiProxy_DataprocBatch) ToTerraform() interface{} {
 
 	return returns
 }
-

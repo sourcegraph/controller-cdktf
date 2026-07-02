@@ -98,7 +98,7 @@ func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileTimeoutsOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfileTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfileTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfileTimeoutsOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfileTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfileTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewDatabaseMigrationServiceConnectionProfileTimeoutsOutputReference
 
 	return nil
 }
-

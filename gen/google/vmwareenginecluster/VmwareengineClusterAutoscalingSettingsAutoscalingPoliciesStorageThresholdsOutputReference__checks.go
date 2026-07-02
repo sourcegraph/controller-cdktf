@@ -98,7 +98,7 @@ func (v *jsiiProxy_VmwareengineClusterAutoscalingSettingsAutoscalingPoliciesStor
 	return nil
 }
 
-func (j *jsiiProxy_VmwareengineClusterAutoscalingSettingsAutoscalingPoliciesStorageThresholdsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_VmwareengineClusterAutoscalingSettingsAutoscalingPoliciesStorageThresholdsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewVmwareengineClusterAutoscalingSettingsAutoscalingPoliciesStorage
 
 	return nil
 }
-

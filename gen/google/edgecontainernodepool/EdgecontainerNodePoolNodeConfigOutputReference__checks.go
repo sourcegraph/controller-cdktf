@@ -98,7 +98,7 @@ func (e *jsiiProxy_EdgecontainerNodePoolNodeConfigOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_EdgecontainerNodePoolNodeConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EdgecontainerNodePoolNodeConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewEdgecontainerNodePoolNodeConfigOutputReferenceParameters(terrafo
 
 	return nil
 }
-

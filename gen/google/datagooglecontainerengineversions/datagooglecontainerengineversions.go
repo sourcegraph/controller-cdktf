@@ -15,11 +15,11 @@ type DataGoogleContainerEngineVersions interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DefaultClusterVersion() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -55,14 +55,14 @@ type DataGoogleContainerEngineVersions interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ReleaseChannelDefaultVersion() cdktf.StringMap
 	ReleaseChannelLatestVersion() cdktf.StringMap
 	ReleaseChannelUpgradeTargetVersion() cdktf.StringMap
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	ValidMasterVersions() *[]*string
@@ -71,9 +71,9 @@ type DataGoogleContainerEngineVersions interface {
 	SetVersionPrefix(val *string)
 	VersionPrefixInput() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -102,18 +102,18 @@ type DataGoogleContainerEngineVersions interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetVersionPrefix()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataGoogleContainerEngineVersions
@@ -131,8 +131,8 @@ func (j *jsiiProxy_DataGoogleContainerEngineVersions) CdktfStack() cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleContainerEngineVersions) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleContainerEngineVersions) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -141,8 +141,8 @@ func (j *jsiiProxy_DataGoogleContainerEngineVersions) ConstructNodeMetadata() *m
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleContainerEngineVersions) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleContainerEngineVersions) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -311,8 +311,8 @@ func (j *jsiiProxy_DataGoogleContainerEngineVersions) Provider() cdktf.Terraform
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleContainerEngineVersions) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleContainerEngineVersions) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -361,8 +361,8 @@ func (j *jsiiProxy_DataGoogleContainerEngineVersions) TerraformGeneratorMetadata
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleContainerEngineVersions) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleContainerEngineVersions) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -421,7 +421,6 @@ func (j *jsiiProxy_DataGoogleContainerEngineVersions) VersionPrefixInput() *stri
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/container_engine_versions google_container_engine_versions} Data Source.
 func NewDataGoogleContainerEngineVersions(scope constructs.Construct, id *string, config *DataGoogleContainerEngineVersionsConfig) DataGoogleContainerEngineVersions {
 	_init_.Initialize()
@@ -433,7 +432,7 @@ func NewDataGoogleContainerEngineVersions(scope constructs.Construct, id *string
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleContainerEngineVersions.DataGoogleContainerEngineVersions",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -446,12 +445,12 @@ func NewDataGoogleContainerEngineVersions_Override(d DataGoogleContainerEngineVe
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleContainerEngineVersions.DataGoogleContainerEngineVersions",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataGoogleContainerEngineVersions)SetCount(val interface{}) {
+func (j *jsiiProxy_DataGoogleContainerEngineVersions) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -462,7 +461,7 @@ func (j *jsiiProxy_DataGoogleContainerEngineVersions)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleContainerEngineVersions)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataGoogleContainerEngineVersions) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -470,7 +469,7 @@ func (j *jsiiProxy_DataGoogleContainerEngineVersions)SetDependsOn(val *[]*string
 	)
 }
 
-func (j *jsiiProxy_DataGoogleContainerEngineVersions)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGoogleContainerEngineVersions) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -478,7 +477,7 @@ func (j *jsiiProxy_DataGoogleContainerEngineVersions)SetForEach(val cdktf.ITerra
 	)
 }
 
-func (j *jsiiProxy_DataGoogleContainerEngineVersions)SetId(val *string) {
+func (j *jsiiProxy_DataGoogleContainerEngineVersions) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -489,7 +488,7 @@ func (j *jsiiProxy_DataGoogleContainerEngineVersions)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleContainerEngineVersions)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGoogleContainerEngineVersions) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -500,7 +499,7 @@ func (j *jsiiProxy_DataGoogleContainerEngineVersions)SetLifecycle(val *cdktf.Ter
 	)
 }
 
-func (j *jsiiProxy_DataGoogleContainerEngineVersions)SetLocation(val *string) {
+func (j *jsiiProxy_DataGoogleContainerEngineVersions) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -511,7 +510,7 @@ func (j *jsiiProxy_DataGoogleContainerEngineVersions)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleContainerEngineVersions)SetProject(val *string) {
+func (j *jsiiProxy_DataGoogleContainerEngineVersions) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -522,7 +521,7 @@ func (j *jsiiProxy_DataGoogleContainerEngineVersions)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleContainerEngineVersions)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGoogleContainerEngineVersions) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -530,7 +529,7 @@ func (j *jsiiProxy_DataGoogleContainerEngineVersions)SetProvider(val cdktf.Terra
 	)
 }
 
-func (j *jsiiProxy_DataGoogleContainerEngineVersions)SetVersionPrefix(val *string) {
+func (j *jsiiProxy_DataGoogleContainerEngineVersions) SetVersionPrefix(val *string) {
 	if err := j.validateSetVersionPrefixParameters(val); err != nil {
 		panic(err)
 	}
@@ -553,7 +552,7 @@ func DataGoogleContainerEngineVersions_GenerateConfigForImport(scope constructs.
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleContainerEngineVersions.DataGoogleContainerEngineVersions",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -577,7 +576,7 @@ func DataGoogleContainerEngineVersions_GenerateConfigForImport(scope constructs.
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataGoogleContainerEngineVersions_IsConstruct(x interface{}) *bool {
+func DataGoogleContainerEngineVersions_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleContainerEngineVersions_IsConstructParameters(x); err != nil {
@@ -588,7 +587,7 @@ func DataGoogleContainerEngineVersions_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleContainerEngineVersions.DataGoogleContainerEngineVersions",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -596,7 +595,7 @@ func DataGoogleContainerEngineVersions_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGoogleContainerEngineVersions_IsTerraformDataSource(x interface{}) *bool {
+func DataGoogleContainerEngineVersions_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleContainerEngineVersions_IsTerraformDataSourceParameters(x); err != nil {
@@ -607,7 +606,7 @@ func DataGoogleContainerEngineVersions_IsTerraformDataSource(x interface{}) *boo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleContainerEngineVersions.DataGoogleContainerEngineVersions",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -615,7 +614,7 @@ func DataGoogleContainerEngineVersions_IsTerraformDataSource(x interface{}) *boo
 }
 
 // Experimental.
-func DataGoogleContainerEngineVersions_IsTerraformElement(x interface{}) *bool {
+func DataGoogleContainerEngineVersions_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleContainerEngineVersions_IsTerraformElementParameters(x); err != nil {
@@ -626,7 +625,7 @@ func DataGoogleContainerEngineVersions_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleContainerEngineVersions.DataGoogleContainerEngineVersions",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -644,27 +643,27 @@ func DataGoogleContainerEngineVersions_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleContainerEngineVersions) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataGoogleContainerEngineVersions) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataGoogleContainerEngineVersions) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataGoogleContainerEngineVersions) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -680,7 +679,7 @@ func (d *jsiiProxy_DataGoogleContainerEngineVersions) GetBooleanAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -696,7 +695,7 @@ func (d *jsiiProxy_DataGoogleContainerEngineVersions) GetBooleanMapAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -712,7 +711,7 @@ func (d *jsiiProxy_DataGoogleContainerEngineVersions) GetListAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -728,7 +727,7 @@ func (d *jsiiProxy_DataGoogleContainerEngineVersions) GetNumberAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -744,7 +743,7 @@ func (d *jsiiProxy_DataGoogleContainerEngineVersions) GetNumberListAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -760,7 +759,7 @@ func (d *jsiiProxy_DataGoogleContainerEngineVersions) GetNumberMapAttribute(terr
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -776,7 +775,7 @@ func (d *jsiiProxy_DataGoogleContainerEngineVersions) GetStringAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -792,7 +791,7 @@ func (d *jsiiProxy_DataGoogleContainerEngineVersions) GetStringMapAttribute(terr
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -808,7 +807,7 @@ func (d *jsiiProxy_DataGoogleContainerEngineVersions) InterpolationForAttribute(
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -822,7 +821,7 @@ func (d *jsiiProxy_DataGoogleContainerEngineVersions) OverrideLogicalId(newLogic
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -866,8 +865,8 @@ func (d *jsiiProxy_DataGoogleContainerEngineVersions) ResetVersionPrefix() {
 	)
 }
 
-func (d *jsiiProxy_DataGoogleContainerEngineVersions) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleContainerEngineVersions) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -879,8 +878,8 @@ func (d *jsiiProxy_DataGoogleContainerEngineVersions) SynthesizeAttributes() *ma
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleContainerEngineVersions) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleContainerEngineVersions) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -892,8 +891,8 @@ func (d *jsiiProxy_DataGoogleContainerEngineVersions) SynthesizeHclAttributes() 
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleContainerEngineVersions) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleContainerEngineVersions) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -905,8 +904,8 @@ func (d *jsiiProxy_DataGoogleContainerEngineVersions) ToHclTerraform() interface
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleContainerEngineVersions) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleContainerEngineVersions) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -931,8 +930,8 @@ func (d *jsiiProxy_DataGoogleContainerEngineVersions) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleContainerEngineVersions) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleContainerEngineVersions) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -943,4 +942,3 @@ func (d *jsiiProxy_DataGoogleContainerEngineVersions) ToTerraform() interface{} 
 
 	return returns
 }
-

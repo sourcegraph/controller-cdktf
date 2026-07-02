@@ -1,6 +1,5 @@
 package dialogflowconversationprofile
 
-
 type DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigs struct {
 	// conversation_model_config block.
 	//
@@ -16,26 +15,26 @@ type DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConf
 	// This feature is only supported for types: KNOWLEDGE_SEARCH.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_conversation_profile#disable_agent_query_logging DialogflowConversationProfile#disable_agent_query_logging}
-	DisableAgentQueryLogging interface{} `field:"optional" json:"disableAgentQueryLogging" yaml:"disableAgentQueryLogging"`
+	DisableAgentQueryLogging any `field:"optional" json:"disableAgentQueryLogging" yaml:"disableAgentQueryLogging"`
 	// Enable including conversation context during query answer generation. This feature is only supported for types: KNOWLEDGE_SEARCH.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_conversation_profile#enable_conversation_augmented_query DialogflowConversationProfile#enable_conversation_augmented_query}
-	EnableConversationAugmentedQuery interface{} `field:"optional" json:"enableConversationAugmentedQuery" yaml:"enableConversationAugmentedQuery"`
+	EnableConversationAugmentedQuery any `field:"optional" json:"enableConversationAugmentedQuery" yaml:"enableConversationAugmentedQuery"`
 	// Automatically iterates all participants and tries to compile suggestions. This feature is only supported for types: ARTICLE_SUGGESTION, FAQ, DIALOGFLOW_ASSIST, KNOWLEDGE_ASSIST.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_conversation_profile#enable_event_based_suggestion DialogflowConversationProfile#enable_event_based_suggestion}
-	EnableEventBasedSuggestion interface{} `field:"optional" json:"enableEventBasedSuggestion" yaml:"enableEventBasedSuggestion"`
+	EnableEventBasedSuggestion any `field:"optional" json:"enableEventBasedSuggestion" yaml:"enableEventBasedSuggestion"`
 	// Enable query suggestion only. This feature is only supported for types: KNOWLEDGE_ASSIST.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_conversation_profile#enable_query_suggestion_only DialogflowConversationProfile#enable_query_suggestion_only}
-	EnableQuerySuggestionOnly interface{} `field:"optional" json:"enableQuerySuggestionOnly" yaml:"enableQuerySuggestionOnly"`
+	EnableQuerySuggestionOnly any `field:"optional" json:"enableQuerySuggestionOnly" yaml:"enableQuerySuggestionOnly"`
 	// Enable query suggestion even if we can't find its answer.
 	//
 	// By default, queries are suggested only if we find its answer.
 	// This feature is only supported for types: KNOWLEDGE_ASSIST.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_conversation_profile#enable_query_suggestion_when_no_answer DialogflowConversationProfile#enable_query_suggestion_when_no_answer}
-	EnableQuerySuggestionWhenNoAnswer interface{} `field:"optional" json:"enableQuerySuggestionWhenNoAnswer" yaml:"enableQuerySuggestionWhenNoAnswer"`
+	EnableQuerySuggestionWhenNoAnswer any `field:"optional" json:"enableQuerySuggestionWhenNoAnswer" yaml:"enableQuerySuggestionWhenNoAnswer"`
 	// query_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_conversation_profile#query_config DialogflowConversationProfile#query_config}
@@ -49,4 +48,3 @@ type DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConf
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_conversation_profile#suggestion_trigger_settings DialogflowConversationProfile#suggestion_trigger_settings}
 	SuggestionTriggerSettings *DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConfigFeatureConfigsSuggestionTriggerSettings `field:"optional" json:"suggestionTriggerSettings" yaml:"suggestionTriggerSettings"`
 }
-

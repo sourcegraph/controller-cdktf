@@ -17,8 +17,8 @@ type BinaryAuthorizationPolicyClusterAdmissionRulesList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type BinaryAuthorizationPolicyClusterAdmissionRulesList interface {
 	Get(index *float64) BinaryAuthorizationPolicyClusterAdmissionRulesOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesList) Fqn() *st
 	return returns
 }
 
-func (j *jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesList) WrapsSet(
 	return returns
 }
 
-
 func NewBinaryAuthorizationPolicyClusterAdmissionRulesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BinaryAuthorizationPolicyClusterAdmissionRulesList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewBinaryAuthorizationPolicyClusterAdmissionRulesList(terraformResource cdk
 
 	_jsii_.Create(
 		"@cdktf/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyClusterAdmissionRulesList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewBinaryAuthorizationPolicyClusterAdmissionRulesList_Override(b BinaryAuth
 
 	_jsii_.Create(
 		"@cdktf/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyClusterAdmissionRulesList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		b,
 	)
 }
 
-func (j *jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesList)SetInterna
 	)
 }
 
-func (j *jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesList)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesList)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (b *jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesList) AllWithMa
 	_jsii_.Invoke(
 		b,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (b *jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesList) Get(index
 	_jsii_.Invoke(
 		b,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (b *jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (b *jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesList) Resolve(_context cdktf.IResolveContext) any {
 	if err := b.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (b *jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesList) ToString(
 
 	return returns
 }
-

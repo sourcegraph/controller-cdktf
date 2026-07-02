@@ -106,7 +106,7 @@ func (j *jsiiProxy_CloudRunServiceMetadataOutputReference) validateSetAnnotation
 	return nil
 }
 
-func (j *jsiiProxy_CloudRunServiceMetadataOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudRunServiceMetadataOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewCloudRunServiceMetadataOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

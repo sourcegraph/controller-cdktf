@@ -131,7 +131,7 @@ func (c *jsiiProxy_CloudSecurityComplianceCloudControlParameterSpecValidationOut
 	return nil
 }
 
-func (j *jsiiProxy_CloudSecurityComplianceCloudControlParameterSpecValidationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudSecurityComplianceCloudControlParameterSpecValidationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -231,4 +231,3 @@ func validateNewCloudSecurityComplianceCloudControlParameterSpecValidationOutput
 
 	return nil
 }
-

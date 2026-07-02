@@ -106,7 +106,7 @@ func (j *jsiiProxy_DiscoveryEngineChatEngineCommonConfigOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineChatEngineCommonConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DiscoveryEngineChatEngineCommonConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDiscoveryEngineChatEngineCommonConfigOutputReferenceParameters(t
 
 	return nil
 }
-

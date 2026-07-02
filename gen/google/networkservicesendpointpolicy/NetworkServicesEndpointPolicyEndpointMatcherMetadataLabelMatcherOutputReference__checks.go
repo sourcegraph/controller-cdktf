@@ -90,7 +90,7 @@ func (n *jsiiProxy_NetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatc
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcherOutputReference) validatePutMetadataLabelsParameters(value interface{}) error {
+func (n *jsiiProxy_NetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcherOutputReference) validatePutMetadataLabelsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (n *jsiiProxy_NetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatc
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcherOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcherOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -237,4 +237,3 @@ func validateNewNetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcher
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (a *jsiiProxy_ApihubPluginInstanceAuthConfigOauth2ClientCredentialsConfigCl
 	return nil
 }
 
-func (j *jsiiProxy_ApihubPluginInstanceAuthConfigOauth2ClientCredentialsConfigClientSecretOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ApihubPluginInstanceAuthConfigOauth2ClientCredentialsConfigClientSecretOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewApihubPluginInstanceAuthConfigOauth2ClientCredentialsConfigClien
 
 	return nil
 }
-

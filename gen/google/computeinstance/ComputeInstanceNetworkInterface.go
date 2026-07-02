@@ -1,15 +1,14 @@
 package computeinstance
 
-
 type ComputeInstanceNetworkInterface struct {
 	// access_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_instance#access_config ComputeInstance#access_config}
-	AccessConfig interface{} `field:"optional" json:"accessConfig" yaml:"accessConfig"`
+	AccessConfig any `field:"optional" json:"accessConfig" yaml:"accessConfig"`
 	// alias_ip_range block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_instance#alias_ip_range ComputeInstance#alias_ip_range}
-	AliasIpRange interface{} `field:"optional" json:"aliasIpRange" yaml:"aliasIpRange"`
+	AliasIpRange any `field:"optional" json:"aliasIpRange" yaml:"aliasIpRange"`
 	// Indicates whether igmp query is enabled on the network interface or not.
 	//
 	// If enabled, also indicates the version of IGMP supported.
@@ -23,7 +22,7 @@ type ComputeInstanceNetworkInterface struct {
 	// ipv6_access_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_instance#ipv6_access_config ComputeInstance#ipv6_access_config}
-	Ipv6AccessConfig interface{} `field:"optional" json:"ipv6AccessConfig" yaml:"ipv6AccessConfig"`
+	Ipv6AccessConfig any `field:"optional" json:"ipv6AccessConfig" yaml:"ipv6AccessConfig"`
 	// An IPv6 internal network address for this network interface.
 	//
 	// If not specified, Google Cloud will automatically assign an internal IPv6 address from the instance's subnetwork.
@@ -71,4 +70,3 @@ type ComputeInstanceNetworkInterface struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_instance#vlan ComputeInstance#vlan}
 	Vlan *float64 `field:"optional" json:"vlan" yaml:"vlan"`
 }
-

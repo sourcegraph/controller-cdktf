@@ -98,7 +98,7 @@ func (f *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfigTimeoutsOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfigTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfigTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfigTimeoutsOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfigTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfigTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewFirebaseAppCheckRecaptchaEnterpriseConfigTimeoutsOutputReference
 
 	return nil
 }
-

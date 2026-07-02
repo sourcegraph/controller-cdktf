@@ -106,7 +106,7 @@ func (j *jsiiProxy_CesToolsetOpenApiToolsetTlsConfigCaCertsOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_CesToolsetOpenApiToolsetTlsConfigCaCertsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CesToolsetOpenApiToolsetTlsConfigCaCertsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_CesToolsetOpenApiToolsetTlsConfigCaCertsOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_CesToolsetOpenApiToolsetTlsConfigCaCertsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CesToolsetOpenApiToolsetTlsConfigCaCertsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewCesToolsetOpenApiToolsetTlsConfigCaCertsOutputReferenceParameter
 
 	return nil
 }
-

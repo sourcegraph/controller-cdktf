@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataprocJobReferenceOutputReference) validateResolveParameter
 	return nil
 }
 
-func (j *jsiiProxy_DataprocJobReferenceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocJobReferenceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataprocJobReferenceOutputReferenceParameters(terraformResource 
 
 	return nil
 }
-

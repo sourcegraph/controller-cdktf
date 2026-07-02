@@ -98,7 +98,7 @@ func (p *jsiiProxy_PubsubLiteTopicTimeoutsOutputReference) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_PubsubLiteTopicTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PubsubLiteTopicTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_PubsubLiteTopicTimeoutsOutputReference) validateSetDeletePara
 	return nil
 }
 
-func (j *jsiiProxy_PubsubLiteTopicTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PubsubLiteTopicTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewPubsubLiteTopicTimeoutsOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

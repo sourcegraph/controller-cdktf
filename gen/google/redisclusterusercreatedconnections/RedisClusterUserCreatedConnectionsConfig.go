@@ -6,9 +6,9 @@ import (
 
 type RedisClusterUserCreatedConnectionsConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type RedisClusterUserCreatedConnectionsConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name of the Redis cluster these endpoints should be added to.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/redis_cluster_user_created_connections#name RedisClusterUserCreatedConnections#name}
@@ -30,7 +30,7 @@ type RedisClusterUserCreatedConnectionsConfig struct {
 	// cluster_endpoints block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/redis_cluster_user_created_connections#cluster_endpoints RedisClusterUserCreatedConnections#cluster_endpoints}
-	ClusterEndpoints interface{} `field:"optional" json:"clusterEndpoints" yaml:"clusterEndpoints"`
+	ClusterEndpoints any `field:"optional" json:"clusterEndpoints" yaml:"clusterEndpoints"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/redis_cluster_user_created_connections#id RedisClusterUserCreatedConnections#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -43,4 +43,3 @@ type RedisClusterUserCreatedConnectionsConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/redis_cluster_user_created_connections#timeouts RedisClusterUserCreatedConnections#timeouts}
 	Timeouts *RedisClusterUserCreatedConnectionsTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

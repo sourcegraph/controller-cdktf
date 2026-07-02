@@ -98,7 +98,7 @@ func (b *jsiiProxy_BigtableTableColumnFamilyOutputReference) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_BigtableTableColumnFamilyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BigtableTableColumnFamilyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_BigtableTableColumnFamilyOutputReference) validateSetFamilyPa
 	return nil
 }
 
-func (j *jsiiProxy_BigtableTableColumnFamilyOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_BigtableTableColumnFamilyOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewBigtableTableColumnFamilyOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

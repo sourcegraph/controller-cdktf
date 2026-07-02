@@ -12,9 +12,9 @@ type LookerInstanceControlledEgressConfigOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -32,9 +32,9 @@ type LookerInstanceControlledEgressConfigOutputReference interface {
 	Fqn() *string
 	InternalValue() *LookerInstanceControlledEgressConfig
 	SetInternalValue(val *LookerInstanceControlledEgressConfig)
-	MarketplaceEnabled() interface{}
-	SetMarketplaceEnabled(val interface{})
-	MarketplaceEnabledInput() interface{}
+	MarketplaceEnabled() any
+	SetMarketplaceEnabled(val any)
+	MarketplaceEnabledInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -46,7 +46,7 @@ type LookerInstanceControlledEgressConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type LookerInstanceControlledEgressConfigOutputReference interface {
 	ResetMarketplaceEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_LookerInstanceControlledEgressConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_LookerInstanceControlledEgressConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LookerInstanceControlledEgressConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -154,8 +154,8 @@ func (j *jsiiProxy_LookerInstanceControlledEgressConfigOutputReference) Internal
 	return returns
 }
 
-func (j *jsiiProxy_LookerInstanceControlledEgressConfigOutputReference) MarketplaceEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LookerInstanceControlledEgressConfigOutputReference) MarketplaceEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"marketplaceEnabled",
@@ -164,8 +164,8 @@ func (j *jsiiProxy_LookerInstanceControlledEgressConfigOutputReference) Marketpl
 	return returns
 }
 
-func (j *jsiiProxy_LookerInstanceControlledEgressConfigOutputReference) MarketplaceEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LookerInstanceControlledEgressConfigOutputReference) MarketplaceEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"marketplaceEnabledInput",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_LookerInstanceControlledEgressConfigOutputReference) Terrafor
 	return returns
 }
 
-
 func NewLookerInstanceControlledEgressConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) LookerInstanceControlledEgressConfigOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewLookerInstanceControlledEgressConfigOutputReference(terraformResource cd
 
 	_jsii_.Create(
 		"@cdktf/provider-google.lookerInstance.LookerInstanceControlledEgressConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewLookerInstanceControlledEgressConfigOutputReference_Override(l LookerIns
 
 	_jsii_.Create(
 		"@cdktf/provider-google.lookerInstance.LookerInstanceControlledEgressConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LookerInstanceControlledEgressConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_LookerInstanceControlledEgressConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_LookerInstanceControlledEgressConfigOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_LookerInstanceControlledEgressConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_LookerInstanceControlledEgressConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_LookerInstanceControlledEgressConfigOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_LookerInstanceControlledEgressConfigOutputReference)SetEgressFqdns(val *[]*string) {
+func (j *jsiiProxy_LookerInstanceControlledEgressConfigOutputReference) SetEgressFqdns(val *[]*string) {
 	if err := j.validateSetEgressFqdnsParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_LookerInstanceControlledEgressConfigOutputReference)SetEgress
 	)
 }
 
-func (j *jsiiProxy_LookerInstanceControlledEgressConfigOutputReference)SetInternalValue(val *LookerInstanceControlledEgressConfig) {
+func (j *jsiiProxy_LookerInstanceControlledEgressConfigOutputReference) SetInternalValue(val *LookerInstanceControlledEgressConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_LookerInstanceControlledEgressConfigOutputReference)SetIntern
 	)
 }
 
-func (j *jsiiProxy_LookerInstanceControlledEgressConfigOutputReference)SetMarketplaceEnabled(val interface{}) {
+func (j *jsiiProxy_LookerInstanceControlledEgressConfigOutputReference) SetMarketplaceEnabled(val any) {
 	if err := j.validateSetMarketplaceEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_LookerInstanceControlledEgressConfigOutputReference)SetMarket
 	)
 }
 
-func (j *jsiiProxy_LookerInstanceControlledEgressConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_LookerInstanceControlledEgressConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_LookerInstanceControlledEgressConfigOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_LookerInstanceControlledEgressConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LookerInstanceControlledEgressConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,16 +311,16 @@ func (l *jsiiProxy_LookerInstanceControlledEgressConfigOutputReference) ComputeF
 	return returns
 }
 
-func (l *jsiiProxy_LookerInstanceControlledEgressConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_LookerInstanceControlledEgressConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -337,7 +336,7 @@ func (l *jsiiProxy_LookerInstanceControlledEgressConfigOutputReference) GetBoole
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -353,7 +352,7 @@ func (l *jsiiProxy_LookerInstanceControlledEgressConfigOutputReference) GetBoole
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (l *jsiiProxy_LookerInstanceControlledEgressConfigOutputReference) GetListA
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (l *jsiiProxy_LookerInstanceControlledEgressConfigOutputReference) GetNumbe
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (l *jsiiProxy_LookerInstanceControlledEgressConfigOutputReference) GetNumbe
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (l *jsiiProxy_LookerInstanceControlledEgressConfigOutputReference) GetNumbe
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (l *jsiiProxy_LookerInstanceControlledEgressConfigOutputReference) GetStrin
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (l *jsiiProxy_LookerInstanceControlledEgressConfigOutputReference) GetStrin
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func (l *jsiiProxy_LookerInstanceControlledEgressConfigOutputReference) Interpol
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -501,16 +500,16 @@ func (l *jsiiProxy_LookerInstanceControlledEgressConfigOutputReference) ResetMar
 	)
 }
 
-func (l *jsiiProxy_LookerInstanceControlledEgressConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (l *jsiiProxy_LookerInstanceControlledEgressConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := l.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (l *jsiiProxy_LookerInstanceControlledEgressConfigOutputReference) ToString
 
 	return returns
 }
-

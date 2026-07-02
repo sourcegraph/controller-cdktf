@@ -98,7 +98,7 @@ func (c *jsiiProxy_ChronicleRuleSeverityOutputReference) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_ChronicleRuleSeverityOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ChronicleRuleSeverityOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewChronicleRuleSeverityOutputReferenceParameters(terraformResource
 
 	return nil
 }
-

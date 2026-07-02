@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeDiskIamBinding.ComputeDiskIamBinding",
-		reflect.TypeOf((*ComputeDiskIamBinding)(nil)).Elem(),
+		reflect.TypeFor[ComputeDiskIamBinding](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,7 +73,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zone", GoGetter: "Zone"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneInput", GoGetter: "ZoneInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeDiskIamBinding{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -81,11 +81,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeDiskIamBinding.ComputeDiskIamBindingCondition",
-		reflect.TypeOf((*ComputeDiskIamBindingCondition)(nil)).Elem(),
+		reflect.TypeFor[ComputeDiskIamBindingCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeDiskIamBinding.ComputeDiskIamBindingConditionOutputReference",
-		reflect.TypeOf((*ComputeDiskIamBindingConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeDiskIamBindingConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -116,7 +116,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeDiskIamBindingConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -124,6 +124,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeDiskIamBinding.ComputeDiskIamBindingConfig",
-		reflect.TypeOf((*ComputeDiskIamBindingConfig)(nil)).Elem(),
+		reflect.TypeFor[ComputeDiskIamBindingConfig](),
 	)
 }

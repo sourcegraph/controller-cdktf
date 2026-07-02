@@ -34,7 +34,7 @@ func (c *jsiiProxy_ComputeUrlMapDefaultRouteActionCachePolicyNegativeCachingPoli
 	return nil
 }
 
-func (j *jsiiProxy_ComputeUrlMapDefaultRouteActionCachePolicyNegativeCachingPolicyList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeUrlMapDefaultRouteActionCachePolicyNegativeCachingPolicyList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewComputeUrlMapDefaultRouteActionCachePolicyNegativeCachingPolicyL
 
 	return nil
 }
-

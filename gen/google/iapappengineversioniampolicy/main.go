@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.iapAppEngineVersionIamPolicy.IapAppEngineVersionIamPolicy",
-		reflect.TypeOf((*IapAppEngineVersionIamPolicy)(nil)).Elem(),
+		reflect.TypeFor[IapAppEngineVersionIamPolicy](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -68,7 +68,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "versionId", GoGetter: "VersionId"},
 			_jsii_.MemberProperty{JsiiProperty: "versionIdInput", GoGetter: "VersionIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IapAppEngineVersionIamPolicy{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -76,6 +76,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.iapAppEngineVersionIamPolicy.IapAppEngineVersionIamPolicyConfig",
-		reflect.TypeOf((*IapAppEngineVersionIamPolicyConfig)(nil)).Elem(),
+		reflect.TypeFor[IapAppEngineVersionIamPolicyConfig](),
 	)
 }

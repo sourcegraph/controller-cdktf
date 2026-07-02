@@ -34,7 +34,7 @@ func (l *jsiiProxy_LoggingOrganizationSinkExclusionsList) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_LoggingOrganizationSinkExclusionsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LoggingOrganizationSinkExclusionsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewLoggingOrganizationSinkExclusionsListParameters(terraformResourc
 
 	return nil
 }
-

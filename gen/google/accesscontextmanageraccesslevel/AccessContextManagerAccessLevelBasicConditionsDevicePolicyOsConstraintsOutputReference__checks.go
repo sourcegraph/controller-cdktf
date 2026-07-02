@@ -98,7 +98,7 @@ func (a *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsDevicePolicyOsC
 	return nil
 }
 
-func (j *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsDevicePolicyOsConstraintsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsDevicePolicyOsConstraintsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsDevicePolicyOsC
 	return nil
 }
 
-func (j *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsDevicePolicyOsConstraintsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsDevicePolicyOsConstraintsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case *AccessContextManagerAccessLevelBasicConditionsDevicePolicyOsConstraints:
 		val := val.(*AccessContextManagerAccessLevelBasicConditionsDevicePolicyOsConstraints)
@@ -203,7 +203,7 @@ func (j *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsDevicePolicyOsC
 	return nil
 }
 
-func (j *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsDevicePolicyOsConstraintsOutputReference) validateSetRequireVerifiedChromeOsParameters(val interface{}) error {
+func (j *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsDevicePolicyOsConstraintsOutputReference) validateSetRequireVerifiedChromeOsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -258,4 +258,3 @@ func validateNewAccessContextManagerAccessLevelBasicConditionsDevicePolicyOsCons
 
 	return nil
 }
-

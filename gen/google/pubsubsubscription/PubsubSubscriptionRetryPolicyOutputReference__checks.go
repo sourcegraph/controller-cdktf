@@ -98,7 +98,7 @@ func (p *jsiiProxy_PubsubSubscriptionRetryPolicyOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_PubsubSubscriptionRetryPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PubsubSubscriptionRetryPolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewPubsubSubscriptionRetryPolicyOutputReferenceParameters(terraform
 
 	return nil
 }
-

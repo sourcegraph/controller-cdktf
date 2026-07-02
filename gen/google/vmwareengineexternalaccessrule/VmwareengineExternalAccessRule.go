@@ -18,15 +18,15 @@ type VmwareengineExternalAccessRule interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -36,7 +36,7 @@ type VmwareengineExternalAccessRule interface {
 	SetDescription(val *string)
 	DescriptionInput() *string
 	DestinationIpRanges() VmwareengineExternalAccessRuleDestinationIpRangesList
-	DestinationIpRangesInput() interface{}
+	DestinationIpRangesInput() any
 	DestinationPorts() *[]*string
 	SetDestinationPorts(val *[]*string)
 	DestinationPortsInput() *[]*string
@@ -74,13 +74,13 @@ type VmwareengineExternalAccessRule interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SourceIpRanges() VmwareengineExternalAccessRuleSourceIpRangesList
-	SourceIpRangesInput() interface{}
+	SourceIpRangesInput() any
 	SourcePorts() *[]*string
 	SetSourcePorts(val *[]*string)
 	SourcePortsInput() *[]*string
@@ -88,20 +88,20 @@ type VmwareengineExternalAccessRule interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() VmwareengineExternalAccessRuleTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Uid() *string
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -119,7 +119,7 @@ type VmwareengineExternalAccessRule interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -131,15 +131,15 @@ type VmwareengineExternalAccessRule interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutDestinationIpRanges(value interface{})
-	PutSourceIpRanges(value interface{})
+	PutDestinationIpRanges(value any)
+	PutSourceIpRanges(value any)
 	PutTimeouts(value *VmwareengineExternalAccessRuleTimeouts)
 	ResetDescription()
 	ResetId()
@@ -147,17 +147,17 @@ type VmwareengineExternalAccessRule interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for VmwareengineExternalAccessRule
@@ -195,8 +195,8 @@ func (j *jsiiProxy_VmwareengineExternalAccessRule) CdktfStack() cdktf.TerraformS
 	return returns
 }
 
-func (j *jsiiProxy_VmwareengineExternalAccessRule) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VmwareengineExternalAccessRule) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -205,8 +205,8 @@ func (j *jsiiProxy_VmwareengineExternalAccessRule) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_VmwareengineExternalAccessRule) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_VmwareengineExternalAccessRule) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -215,8 +215,8 @@ func (j *jsiiProxy_VmwareengineExternalAccessRule) ConstructNodeMetadata() *map[
 	return returns
 }
 
-func (j *jsiiProxy_VmwareengineExternalAccessRule) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VmwareengineExternalAccessRule) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -275,8 +275,8 @@ func (j *jsiiProxy_VmwareengineExternalAccessRule) DestinationIpRanges() Vmwaree
 	return returns
 }
 
-func (j *jsiiProxy_VmwareengineExternalAccessRule) DestinationIpRangesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VmwareengineExternalAccessRule) DestinationIpRangesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"destinationIpRangesInput",
@@ -465,8 +465,8 @@ func (j *jsiiProxy_VmwareengineExternalAccessRule) Provider() cdktf.TerraformPro
 	return returns
 }
 
-func (j *jsiiProxy_VmwareengineExternalAccessRule) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_VmwareengineExternalAccessRule) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -475,8 +475,8 @@ func (j *jsiiProxy_VmwareengineExternalAccessRule) Provisioners() *[]interface{}
 	return returns
 }
 
-func (j *jsiiProxy_VmwareengineExternalAccessRule) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VmwareengineExternalAccessRule) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -495,8 +495,8 @@ func (j *jsiiProxy_VmwareengineExternalAccessRule) SourceIpRanges() Vmwareengine
 	return returns
 }
 
-func (j *jsiiProxy_VmwareengineExternalAccessRule) SourceIpRangesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VmwareengineExternalAccessRule) SourceIpRangesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"sourceIpRangesInput",
@@ -545,8 +545,8 @@ func (j *jsiiProxy_VmwareengineExternalAccessRule) TerraformGeneratorMetadata() 
 	return returns
 }
 
-func (j *jsiiProxy_VmwareengineExternalAccessRule) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_VmwareengineExternalAccessRule) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -575,8 +575,8 @@ func (j *jsiiProxy_VmwareengineExternalAccessRule) Timeouts() VmwareengineExtern
 	return returns
 }
 
-func (j *jsiiProxy_VmwareengineExternalAccessRule) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VmwareengineExternalAccessRule) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -605,7 +605,6 @@ func (j *jsiiProxy_VmwareengineExternalAccessRule) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_external_access_rule google_vmwareengine_external_access_rule} Resource.
 func NewVmwareengineExternalAccessRule(scope constructs.Construct, id *string, config *VmwareengineExternalAccessRuleConfig) VmwareengineExternalAccessRule {
 	_init_.Initialize()
@@ -617,7 +616,7 @@ func NewVmwareengineExternalAccessRule(scope constructs.Construct, id *string, c
 
 	_jsii_.Create(
 		"@cdktf/provider-google.vmwareengineExternalAccessRule.VmwareengineExternalAccessRule",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -630,12 +629,12 @@ func NewVmwareengineExternalAccessRule_Override(v VmwareengineExternalAccessRule
 
 	_jsii_.Create(
 		"@cdktf/provider-google.vmwareengineExternalAccessRule.VmwareengineExternalAccessRule",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		v,
 	)
 }
 
-func (j *jsiiProxy_VmwareengineExternalAccessRule)SetAction(val *string) {
+func (j *jsiiProxy_VmwareengineExternalAccessRule) SetAction(val *string) {
 	if err := j.validateSetActionParameters(val); err != nil {
 		panic(err)
 	}
@@ -646,7 +645,7 @@ func (j *jsiiProxy_VmwareengineExternalAccessRule)SetAction(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VmwareengineExternalAccessRule)SetConnection(val interface{}) {
+func (j *jsiiProxy_VmwareengineExternalAccessRule) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -657,7 +656,7 @@ func (j *jsiiProxy_VmwareengineExternalAccessRule)SetConnection(val interface{})
 	)
 }
 
-func (j *jsiiProxy_VmwareengineExternalAccessRule)SetCount(val interface{}) {
+func (j *jsiiProxy_VmwareengineExternalAccessRule) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -668,7 +667,7 @@ func (j *jsiiProxy_VmwareengineExternalAccessRule)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VmwareengineExternalAccessRule)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_VmwareengineExternalAccessRule) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -676,7 +675,7 @@ func (j *jsiiProxy_VmwareengineExternalAccessRule)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_VmwareengineExternalAccessRule)SetDescription(val *string) {
+func (j *jsiiProxy_VmwareengineExternalAccessRule) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -687,7 +686,7 @@ func (j *jsiiProxy_VmwareengineExternalAccessRule)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VmwareengineExternalAccessRule)SetDestinationPorts(val *[]*string) {
+func (j *jsiiProxy_VmwareengineExternalAccessRule) SetDestinationPorts(val *[]*string) {
 	if err := j.validateSetDestinationPortsParameters(val); err != nil {
 		panic(err)
 	}
@@ -698,7 +697,7 @@ func (j *jsiiProxy_VmwareengineExternalAccessRule)SetDestinationPorts(val *[]*st
 	)
 }
 
-func (j *jsiiProxy_VmwareengineExternalAccessRule)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_VmwareengineExternalAccessRule) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -706,7 +705,7 @@ func (j *jsiiProxy_VmwareengineExternalAccessRule)SetForEach(val cdktf.ITerrafor
 	)
 }
 
-func (j *jsiiProxy_VmwareengineExternalAccessRule)SetId(val *string) {
+func (j *jsiiProxy_VmwareengineExternalAccessRule) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -717,7 +716,7 @@ func (j *jsiiProxy_VmwareengineExternalAccessRule)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VmwareengineExternalAccessRule)SetIpProtocol(val *string) {
+func (j *jsiiProxy_VmwareengineExternalAccessRule) SetIpProtocol(val *string) {
 	if err := j.validateSetIpProtocolParameters(val); err != nil {
 		panic(err)
 	}
@@ -728,7 +727,7 @@ func (j *jsiiProxy_VmwareengineExternalAccessRule)SetIpProtocol(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VmwareengineExternalAccessRule)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_VmwareengineExternalAccessRule) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -739,7 +738,7 @@ func (j *jsiiProxy_VmwareengineExternalAccessRule)SetLifecycle(val *cdktf.Terraf
 	)
 }
 
-func (j *jsiiProxy_VmwareengineExternalAccessRule)SetName(val *string) {
+func (j *jsiiProxy_VmwareengineExternalAccessRule) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -750,7 +749,7 @@ func (j *jsiiProxy_VmwareengineExternalAccessRule)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VmwareengineExternalAccessRule)SetParent(val *string) {
+func (j *jsiiProxy_VmwareengineExternalAccessRule) SetParent(val *string) {
 	if err := j.validateSetParentParameters(val); err != nil {
 		panic(err)
 	}
@@ -761,7 +760,7 @@ func (j *jsiiProxy_VmwareengineExternalAccessRule)SetParent(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VmwareengineExternalAccessRule)SetPriority(val *float64) {
+func (j *jsiiProxy_VmwareengineExternalAccessRule) SetPriority(val *float64) {
 	if err := j.validateSetPriorityParameters(val); err != nil {
 		panic(err)
 	}
@@ -772,7 +771,7 @@ func (j *jsiiProxy_VmwareengineExternalAccessRule)SetPriority(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_VmwareengineExternalAccessRule)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_VmwareengineExternalAccessRule) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -780,7 +779,7 @@ func (j *jsiiProxy_VmwareengineExternalAccessRule)SetProvider(val cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_VmwareengineExternalAccessRule)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_VmwareengineExternalAccessRule) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -791,7 +790,7 @@ func (j *jsiiProxy_VmwareengineExternalAccessRule)SetProvisioners(val *[]interfa
 	)
 }
 
-func (j *jsiiProxy_VmwareengineExternalAccessRule)SetSourcePorts(val *[]*string) {
+func (j *jsiiProxy_VmwareengineExternalAccessRule) SetSourcePorts(val *[]*string) {
 	if err := j.validateSetSourcePortsParameters(val); err != nil {
 		panic(err)
 	}
@@ -814,7 +813,7 @@ func VmwareengineExternalAccessRule_GenerateConfigForImport(scope constructs.Con
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.vmwareengineExternalAccessRule.VmwareengineExternalAccessRule",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -838,7 +837,7 @@ func VmwareengineExternalAccessRule_GenerateConfigForImport(scope constructs.Con
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func VmwareengineExternalAccessRule_IsConstruct(x interface{}) *bool {
+func VmwareengineExternalAccessRule_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateVmwareengineExternalAccessRule_IsConstructParameters(x); err != nil {
@@ -849,7 +848,7 @@ func VmwareengineExternalAccessRule_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.vmwareengineExternalAccessRule.VmwareengineExternalAccessRule",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -857,7 +856,7 @@ func VmwareengineExternalAccessRule_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func VmwareengineExternalAccessRule_IsTerraformElement(x interface{}) *bool {
+func VmwareengineExternalAccessRule_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateVmwareengineExternalAccessRule_IsTerraformElementParameters(x); err != nil {
@@ -868,7 +867,7 @@ func VmwareengineExternalAccessRule_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.vmwareengineExternalAccessRule.VmwareengineExternalAccessRule",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -876,7 +875,7 @@ func VmwareengineExternalAccessRule_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func VmwareengineExternalAccessRule_IsTerraformResource(x interface{}) *bool {
+func VmwareengineExternalAccessRule_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateVmwareengineExternalAccessRule_IsTerraformResourceParameters(x); err != nil {
@@ -887,7 +886,7 @@ func VmwareengineExternalAccessRule_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.vmwareengineExternalAccessRule.VmwareengineExternalAccessRule",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -912,31 +911,31 @@ func (v *jsiiProxy_VmwareengineExternalAccessRule) AddMoveTarget(moveTarget *str
 	_jsii_.InvokeVoid(
 		v,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (v *jsiiProxy_VmwareengineExternalAccessRule) AddOverride(path *string, value interface{}) {
+func (v *jsiiProxy_VmwareengineExternalAccessRule) AddOverride(path *string, value any) {
 	if err := v.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		v,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (v *jsiiProxy_VmwareengineExternalAccessRule) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (v *jsiiProxy_VmwareengineExternalAccessRule) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := v.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		v,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -952,7 +951,7 @@ func (v *jsiiProxy_VmwareengineExternalAccessRule) GetBooleanAttribute(terraform
 	_jsii_.Invoke(
 		v,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -968,7 +967,7 @@ func (v *jsiiProxy_VmwareengineExternalAccessRule) GetBooleanMapAttribute(terraf
 	_jsii_.Invoke(
 		v,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -984,7 +983,7 @@ func (v *jsiiProxy_VmwareengineExternalAccessRule) GetListAttribute(terraformAtt
 	_jsii_.Invoke(
 		v,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1000,7 +999,7 @@ func (v *jsiiProxy_VmwareengineExternalAccessRule) GetNumberAttribute(terraformA
 	_jsii_.Invoke(
 		v,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1016,7 +1015,7 @@ func (v *jsiiProxy_VmwareengineExternalAccessRule) GetNumberListAttribute(terraf
 	_jsii_.Invoke(
 		v,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1032,7 +1031,7 @@ func (v *jsiiProxy_VmwareengineExternalAccessRule) GetNumberMapAttribute(terrafo
 	_jsii_.Invoke(
 		v,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1048,7 +1047,7 @@ func (v *jsiiProxy_VmwareengineExternalAccessRule) GetStringAttribute(terraformA
 	_jsii_.Invoke(
 		v,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1064,15 +1063,15 @@ func (v *jsiiProxy_VmwareengineExternalAccessRule) GetStringMapAttribute(terrafo
 	_jsii_.Invoke(
 		v,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (v *jsiiProxy_VmwareengineExternalAccessRule) HasResourceMove() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_VmwareengineExternalAccessRule) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -1091,7 +1090,7 @@ func (v *jsiiProxy_VmwareengineExternalAccessRule) ImportFrom(id *string, provid
 	_jsii_.InvokeVoid(
 		v,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1104,7 +1103,7 @@ func (v *jsiiProxy_VmwareengineExternalAccessRule) InterpolationForAttribute(ter
 	_jsii_.Invoke(
 		v,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1118,18 +1117,18 @@ func (v *jsiiProxy_VmwareengineExternalAccessRule) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		v,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (v *jsiiProxy_VmwareengineExternalAccessRule) MoveTo(moveTarget *string, index interface{}) {
+func (v *jsiiProxy_VmwareengineExternalAccessRule) MoveTo(moveTarget *string, index any) {
 	if err := v.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		v,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1140,7 +1139,7 @@ func (v *jsiiProxy_VmwareengineExternalAccessRule) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		v,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1151,29 +1150,29 @@ func (v *jsiiProxy_VmwareengineExternalAccessRule) OverrideLogicalId(newLogicalI
 	_jsii_.InvokeVoid(
 		v,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (v *jsiiProxy_VmwareengineExternalAccessRule) PutDestinationIpRanges(value interface{}) {
+func (v *jsiiProxy_VmwareengineExternalAccessRule) PutDestinationIpRanges(value any) {
 	if err := v.validatePutDestinationIpRangesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		v,
 		"putDestinationIpRanges",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (v *jsiiProxy_VmwareengineExternalAccessRule) PutSourceIpRanges(value interface{}) {
+func (v *jsiiProxy_VmwareengineExternalAccessRule) PutSourceIpRanges(value any) {
 	if err := v.validatePutSourceIpRangesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		v,
 		"putSourceIpRanges",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1184,7 +1183,7 @@ func (v *jsiiProxy_VmwareengineExternalAccessRule) PutTimeouts(value *Vmwareengi
 	_jsii_.InvokeVoid(
 		v,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1220,8 +1219,8 @@ func (v *jsiiProxy_VmwareengineExternalAccessRule) ResetTimeouts() {
 	)
 }
 
-func (v *jsiiProxy_VmwareengineExternalAccessRule) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (v *jsiiProxy_VmwareengineExternalAccessRule) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		v,
@@ -1233,8 +1232,8 @@ func (v *jsiiProxy_VmwareengineExternalAccessRule) SynthesizeAttributes() *map[s
 	return returns
 }
 
-func (v *jsiiProxy_VmwareengineExternalAccessRule) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (v *jsiiProxy_VmwareengineExternalAccessRule) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		v,
@@ -1246,8 +1245,8 @@ func (v *jsiiProxy_VmwareengineExternalAccessRule) SynthesizeHclAttributes() *ma
 	return returns
 }
 
-func (v *jsiiProxy_VmwareengineExternalAccessRule) ToHclTerraform() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_VmwareengineExternalAccessRule) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -1259,8 +1258,8 @@ func (v *jsiiProxy_VmwareengineExternalAccessRule) ToHclTerraform() interface{} 
 	return returns
 }
 
-func (v *jsiiProxy_VmwareengineExternalAccessRule) ToMetadata() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_VmwareengineExternalAccessRule) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -1285,8 +1284,8 @@ func (v *jsiiProxy_VmwareengineExternalAccessRule) ToString() *string {
 	return returns
 }
 
-func (v *jsiiProxy_VmwareengineExternalAccessRule) ToTerraform() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_VmwareengineExternalAccessRule) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -1297,4 +1296,3 @@ func (v *jsiiProxy_VmwareengineExternalAccessRule) ToTerraform() interface{} {
 
 	return returns
 }
-

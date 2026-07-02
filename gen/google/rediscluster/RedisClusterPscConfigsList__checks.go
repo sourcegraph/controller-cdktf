@@ -34,7 +34,7 @@ func (r *jsiiProxy_RedisClusterPscConfigsList) validateResolveParameters(_contex
 	return nil
 }
 
-func (j *jsiiProxy_RedisClusterPscConfigsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_RedisClusterPscConfigsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewRedisClusterPscConfigsListParameters(terraformResource cdktf.IIn
 
 	return nil
 }
-

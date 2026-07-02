@@ -98,7 +98,7 @@ func (c *jsiiProxy_ContainerAwsNodePoolConfigAutoscalingMetricsCollectionOutputR
 	return nil
 }
 
-func (j *jsiiProxy_ContainerAwsNodePoolConfigAutoscalingMetricsCollectionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerAwsNodePoolConfigAutoscalingMetricsCollectionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewContainerAwsNodePoolConfigAutoscalingMetricsCollectionOutputRefe
 
 	return nil
 }
-

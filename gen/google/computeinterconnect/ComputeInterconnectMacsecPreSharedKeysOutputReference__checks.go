@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeInterconnectMacsecPreSharedKeysOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInterconnectMacsecPreSharedKeysOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInterconnectMacsecPreSharedKeysOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ComputeInterconnectMacsecPreSharedKeysOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInterconnectMacsecPreSharedKeysOutputReference) validateSetFailOpenParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInterconnectMacsecPreSharedKeysOutputReference) validateSetFailOpenParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (j *jsiiProxy_ComputeInterconnectMacsecPreSharedKeysOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInterconnectMacsecPreSharedKeysOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInterconnectMacsecPreSharedKeysOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -258,4 +258,3 @@ func validateNewComputeInterconnectMacsecPreSharedKeysOutputReferenceParameters(
 
 	return nil
 }
-

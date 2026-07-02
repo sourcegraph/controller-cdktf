@@ -34,7 +34,7 @@ func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesFromNotSourcesPrincipalsLi
 	return nil
 }
 
-func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesFromNotSourcesPrincipalsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesFromNotSourcesPrincipalsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewNetworkSecurityAuthzPolicyHttpRulesFromNotSourcesPrincipalsListP
 
 	return nil
 }
-

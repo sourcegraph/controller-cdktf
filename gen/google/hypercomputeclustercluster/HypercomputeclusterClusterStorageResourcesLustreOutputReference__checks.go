@@ -98,7 +98,7 @@ func (h *jsiiProxy_HypercomputeclusterClusterStorageResourcesLustreOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_HypercomputeclusterClusterStorageResourcesLustreOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_HypercomputeclusterClusterStorageResourcesLustreOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewHypercomputeclusterClusterStorageResourcesLustreOutputReferenceP
 
 	return nil
 }
-

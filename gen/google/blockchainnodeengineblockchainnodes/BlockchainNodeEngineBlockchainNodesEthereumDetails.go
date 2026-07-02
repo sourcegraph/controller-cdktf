@@ -1,15 +1,14 @@
 package blockchainnodeengineblockchainnodes
 
-
 type BlockchainNodeEngineBlockchainNodesEthereumDetails struct {
 	// Enables JSON-RPC access to functions in the admin namespace. Defaults to false.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/blockchain_node_engine_blockchain_nodes#api_enable_admin BlockchainNodeEngineBlockchainNodes#api_enable_admin}
-	ApiEnableAdmin interface{} `field:"optional" json:"apiEnableAdmin" yaml:"apiEnableAdmin"`
+	ApiEnableAdmin any `field:"optional" json:"apiEnableAdmin" yaml:"apiEnableAdmin"`
 	// Enables JSON-RPC access to functions in the debug namespace. Defaults to false.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/blockchain_node_engine_blockchain_nodes#api_enable_debug BlockchainNodeEngineBlockchainNodes#api_enable_debug}
-	ApiEnableDebug interface{} `field:"optional" json:"apiEnableDebug" yaml:"apiEnableDebug"`
+	ApiEnableDebug any `field:"optional" json:"apiEnableDebug" yaml:"apiEnableDebug"`
 	// The consensus client Possible values: ["CONSENSUS_CLIENT_UNSPECIFIED", "LIGHTHOUSE"].
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/blockchain_node_engine_blockchain_nodes#consensus_client BlockchainNodeEngineBlockchainNodes#consensus_client}
@@ -35,4 +34,3 @@ type BlockchainNodeEngineBlockchainNodesEthereumDetails struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/blockchain_node_engine_blockchain_nodes#validator_config BlockchainNodeEngineBlockchainNodes#validator_config}
 	ValidatorConfig *BlockchainNodeEngineBlockchainNodesEthereumDetailsValidatorConfig `field:"optional" json:"validatorConfig" yaml:"validatorConfig"`
 }
-

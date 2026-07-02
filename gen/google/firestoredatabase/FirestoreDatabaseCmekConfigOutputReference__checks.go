@@ -98,7 +98,7 @@ func (f *jsiiProxy_FirestoreDatabaseCmekConfigOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_FirestoreDatabaseCmekConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_FirestoreDatabaseCmekConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewFirestoreDatabaseCmekConfigOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

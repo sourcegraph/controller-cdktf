@@ -131,7 +131,7 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeaders
 	return nil
 }
 
-func (j *jsiiProxy_BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -239,4 +239,3 @@ func validateNewBeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersOut
 
 	return nil
 }
-

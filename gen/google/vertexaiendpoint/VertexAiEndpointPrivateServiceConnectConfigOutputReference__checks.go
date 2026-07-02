@@ -90,7 +90,7 @@ func (v *jsiiProxy_VertexAiEndpointPrivateServiceConnectConfigOutputReference) v
 	return nil
 }
 
-func (v *jsiiProxy_VertexAiEndpointPrivateServiceConnectConfigOutputReference) validatePutPscAutomationConfigsParameters(value interface{}) error {
+func (v *jsiiProxy_VertexAiEndpointPrivateServiceConnectConfigOutputReference) validatePutPscAutomationConfigsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (v *jsiiProxy_VertexAiEndpointPrivateServiceConnectConfigOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_VertexAiEndpointPrivateServiceConnectConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_VertexAiEndpointPrivateServiceConnectConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -194,7 +194,7 @@ func (j *jsiiProxy_VertexAiEndpointPrivateServiceConnectConfigOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_VertexAiEndpointPrivateServiceConnectConfigOutputReference) validateSetEnablePrivateServiceConnectParameters(val interface{}) error {
+func (j *jsiiProxy_VertexAiEndpointPrivateServiceConnectConfigOutputReference) validateSetEnablePrivateServiceConnectParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -257,4 +257,3 @@ func validateNewVertexAiEndpointPrivateServiceConnectConfigOutputReferenceParame
 
 	return nil
 }
-

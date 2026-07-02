@@ -98,7 +98,7 @@ func (l *jsiiProxy_LoggingLinkedDatasetBigqueryDatasetOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_LoggingLinkedDatasetBigqueryDatasetOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LoggingLinkedDatasetBigqueryDatasetOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_LoggingLinkedDatasetBigqueryDatasetOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_LoggingLinkedDatasetBigqueryDatasetOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LoggingLinkedDatasetBigqueryDatasetOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -222,4 +222,3 @@ func validateNewLoggingLinkedDatasetBigqueryDatasetOutputReferenceParameters(ter
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.iamWorkforcePoolIamMember.IamWorkforcePoolIamMember",
-		reflect.TypeOf((*IamWorkforcePoolIamMember)(nil)).Elem(),
+		reflect.TypeFor[IamWorkforcePoolIamMember](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,7 +70,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workforcePoolId", GoGetter: "WorkforcePoolId"},
 			_jsii_.MemberProperty{JsiiProperty: "workforcePoolIdInput", GoGetter: "WorkforcePoolIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IamWorkforcePoolIamMember{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -78,11 +78,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.iamWorkforcePoolIamMember.IamWorkforcePoolIamMemberCondition",
-		reflect.TypeOf((*IamWorkforcePoolIamMemberCondition)(nil)).Elem(),
+		reflect.TypeFor[IamWorkforcePoolIamMemberCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.iamWorkforcePoolIamMember.IamWorkforcePoolIamMemberConditionOutputReference",
-		reflect.TypeOf((*IamWorkforcePoolIamMemberConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IamWorkforcePoolIamMemberConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -113,7 +113,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IamWorkforcePoolIamMemberConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -121,6 +121,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.iamWorkforcePoolIamMember.IamWorkforcePoolIamMemberConfig",
-		reflect.TypeOf((*IamWorkforcePoolIamMemberConfig)(nil)).Elem(),
+		reflect.TypeFor[IamWorkforcePoolIamMemberConfig](),
 	)
 }

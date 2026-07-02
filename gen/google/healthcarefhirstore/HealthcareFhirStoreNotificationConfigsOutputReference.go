@@ -12,9 +12,9 @@ type HealthcareFhirStoreNotificationConfigsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,17 +27,17 @@ type HealthcareFhirStoreNotificationConfigsOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	PubsubTopic() *string
 	SetPubsubTopic(val *string)
 	PubsubTopicInput() *string
-	SendFullResource() interface{}
-	SetSendFullResource(val interface{})
-	SendFullResourceInput() interface{}
-	SendPreviousResourceOnDelete() interface{}
-	SetSendPreviousResourceOnDelete(val interface{})
-	SendPreviousResourceOnDeleteInput() interface{}
+	SendFullResource() any
+	SetSendFullResource(val any)
+	SendFullResourceInput() any
+	SendPreviousResourceOnDelete() any
+	SetSendPreviousResourceOnDelete(val any)
+	SendPreviousResourceOnDeleteInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -49,7 +49,7 @@ type HealthcareFhirStoreNotificationConfigsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -74,7 +74,7 @@ type HealthcareFhirStoreNotificationConfigsOutputReference interface {
 	ResetSendPreviousResourceOnDelete()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -87,8 +87,8 @@ type jsiiProxy_HealthcareFhirStoreNotificationConfigsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_HealthcareFhirStoreNotificationConfigsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HealthcareFhirStoreNotificationConfigsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -127,8 +127,8 @@ func (j *jsiiProxy_HealthcareFhirStoreNotificationConfigsOutputReference) Fqn() 
 	return returns
 }
 
-func (j *jsiiProxy_HealthcareFhirStoreNotificationConfigsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HealthcareFhirStoreNotificationConfigsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -157,8 +157,8 @@ func (j *jsiiProxy_HealthcareFhirStoreNotificationConfigsOutputReference) Pubsub
 	return returns
 }
 
-func (j *jsiiProxy_HealthcareFhirStoreNotificationConfigsOutputReference) SendFullResource() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HealthcareFhirStoreNotificationConfigsOutputReference) SendFullResource() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"sendFullResource",
@@ -167,8 +167,8 @@ func (j *jsiiProxy_HealthcareFhirStoreNotificationConfigsOutputReference) SendFu
 	return returns
 }
 
-func (j *jsiiProxy_HealthcareFhirStoreNotificationConfigsOutputReference) SendFullResourceInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HealthcareFhirStoreNotificationConfigsOutputReference) SendFullResourceInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"sendFullResourceInput",
@@ -177,8 +177,8 @@ func (j *jsiiProxy_HealthcareFhirStoreNotificationConfigsOutputReference) SendFu
 	return returns
 }
 
-func (j *jsiiProxy_HealthcareFhirStoreNotificationConfigsOutputReference) SendPreviousResourceOnDelete() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HealthcareFhirStoreNotificationConfigsOutputReference) SendPreviousResourceOnDelete() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"sendPreviousResourceOnDelete",
@@ -187,8 +187,8 @@ func (j *jsiiProxy_HealthcareFhirStoreNotificationConfigsOutputReference) SendPr
 	return returns
 }
 
-func (j *jsiiProxy_HealthcareFhirStoreNotificationConfigsOutputReference) SendPreviousResourceOnDeleteInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HealthcareFhirStoreNotificationConfigsOutputReference) SendPreviousResourceOnDeleteInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"sendPreviousResourceOnDeleteInput",
@@ -217,7 +217,6 @@ func (j *jsiiProxy_HealthcareFhirStoreNotificationConfigsOutputReference) Terraf
 	return returns
 }
 
-
 func NewHealthcareFhirStoreNotificationConfigsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) HealthcareFhirStoreNotificationConfigsOutputReference {
 	_init_.Initialize()
 
@@ -228,7 +227,7 @@ func NewHealthcareFhirStoreNotificationConfigsOutputReference(terraformResource 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.healthcareFhirStore.HealthcareFhirStoreNotificationConfigsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -240,12 +239,12 @@ func NewHealthcareFhirStoreNotificationConfigsOutputReference_Override(h Healthc
 
 	_jsii_.Create(
 		"@cdktf/provider-google.healthcareFhirStore.HealthcareFhirStoreNotificationConfigsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		h,
 	)
 }
 
-func (j *jsiiProxy_HealthcareFhirStoreNotificationConfigsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_HealthcareFhirStoreNotificationConfigsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -256,7 +255,7 @@ func (j *jsiiProxy_HealthcareFhirStoreNotificationConfigsOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_HealthcareFhirStoreNotificationConfigsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_HealthcareFhirStoreNotificationConfigsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -267,7 +266,7 @@ func (j *jsiiProxy_HealthcareFhirStoreNotificationConfigsOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_HealthcareFhirStoreNotificationConfigsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_HealthcareFhirStoreNotificationConfigsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -278,7 +277,7 @@ func (j *jsiiProxy_HealthcareFhirStoreNotificationConfigsOutputReference)SetInte
 	)
 }
 
-func (j *jsiiProxy_HealthcareFhirStoreNotificationConfigsOutputReference)SetPubsubTopic(val *string) {
+func (j *jsiiProxy_HealthcareFhirStoreNotificationConfigsOutputReference) SetPubsubTopic(val *string) {
 	if err := j.validateSetPubsubTopicParameters(val); err != nil {
 		panic(err)
 	}
@@ -289,7 +288,7 @@ func (j *jsiiProxy_HealthcareFhirStoreNotificationConfigsOutputReference)SetPubs
 	)
 }
 
-func (j *jsiiProxy_HealthcareFhirStoreNotificationConfigsOutputReference)SetSendFullResource(val interface{}) {
+func (j *jsiiProxy_HealthcareFhirStoreNotificationConfigsOutputReference) SetSendFullResource(val any) {
 	if err := j.validateSetSendFullResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,7 +299,7 @@ func (j *jsiiProxy_HealthcareFhirStoreNotificationConfigsOutputReference)SetSend
 	)
 }
 
-func (j *jsiiProxy_HealthcareFhirStoreNotificationConfigsOutputReference)SetSendPreviousResourceOnDelete(val interface{}) {
+func (j *jsiiProxy_HealthcareFhirStoreNotificationConfigsOutputReference) SetSendPreviousResourceOnDelete(val any) {
 	if err := j.validateSetSendPreviousResourceOnDeleteParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,7 +310,7 @@ func (j *jsiiProxy_HealthcareFhirStoreNotificationConfigsOutputReference)SetSend
 	)
 }
 
-func (j *jsiiProxy_HealthcareFhirStoreNotificationConfigsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_HealthcareFhirStoreNotificationConfigsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -322,7 +321,7 @@ func (j *jsiiProxy_HealthcareFhirStoreNotificationConfigsOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_HealthcareFhirStoreNotificationConfigsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_HealthcareFhirStoreNotificationConfigsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -346,16 +345,16 @@ func (h *jsiiProxy_HealthcareFhirStoreNotificationConfigsOutputReference) Comput
 	return returns
 }
 
-func (h *jsiiProxy_HealthcareFhirStoreNotificationConfigsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (h *jsiiProxy_HealthcareFhirStoreNotificationConfigsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := h.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		h,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -371,7 +370,7 @@ func (h *jsiiProxy_HealthcareFhirStoreNotificationConfigsOutputReference) GetBoo
 	_jsii_.Invoke(
 		h,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -387,7 +386,7 @@ func (h *jsiiProxy_HealthcareFhirStoreNotificationConfigsOutputReference) GetBoo
 	_jsii_.Invoke(
 		h,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -403,7 +402,7 @@ func (h *jsiiProxy_HealthcareFhirStoreNotificationConfigsOutputReference) GetLis
 	_jsii_.Invoke(
 		h,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -419,7 +418,7 @@ func (h *jsiiProxy_HealthcareFhirStoreNotificationConfigsOutputReference) GetNum
 	_jsii_.Invoke(
 		h,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -435,7 +434,7 @@ func (h *jsiiProxy_HealthcareFhirStoreNotificationConfigsOutputReference) GetNum
 	_jsii_.Invoke(
 		h,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -451,7 +450,7 @@ func (h *jsiiProxy_HealthcareFhirStoreNotificationConfigsOutputReference) GetNum
 	_jsii_.Invoke(
 		h,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -467,7 +466,7 @@ func (h *jsiiProxy_HealthcareFhirStoreNotificationConfigsOutputReference) GetStr
 	_jsii_.Invoke(
 		h,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -483,7 +482,7 @@ func (h *jsiiProxy_HealthcareFhirStoreNotificationConfigsOutputReference) GetStr
 	_jsii_.Invoke(
 		h,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -512,7 +511,7 @@ func (h *jsiiProxy_HealthcareFhirStoreNotificationConfigsOutputReference) Interp
 	_jsii_.Invoke(
 		h,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -535,16 +534,16 @@ func (h *jsiiProxy_HealthcareFhirStoreNotificationConfigsOutputReference) ResetS
 	)
 }
 
-func (h *jsiiProxy_HealthcareFhirStoreNotificationConfigsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (h *jsiiProxy_HealthcareFhirStoreNotificationConfigsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := h.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		h,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -563,4 +562,3 @@ func (h *jsiiProxy_HealthcareFhirStoreNotificationConfigsOutputReference) ToStri
 
 	return returns
 }
-

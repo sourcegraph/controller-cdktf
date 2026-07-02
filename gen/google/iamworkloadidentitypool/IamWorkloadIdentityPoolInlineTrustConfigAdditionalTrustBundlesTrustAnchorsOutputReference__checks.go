@@ -98,7 +98,7 @@ func (i *jsiiProxy_IamWorkloadIdentityPoolInlineTrustConfigAdditionalTrustBundle
 	return nil
 }
 
-func (j *jsiiProxy_IamWorkloadIdentityPoolInlineTrustConfigAdditionalTrustBundlesTrustAnchorsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IamWorkloadIdentityPoolInlineTrustConfigAdditionalTrustBundlesTrustAnchorsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_IamWorkloadIdentityPoolInlineTrustConfigAdditionalTrustBundle
 	return nil
 }
 
-func (j *jsiiProxy_IamWorkloadIdentityPoolInlineTrustConfigAdditionalTrustBundlesTrustAnchorsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_IamWorkloadIdentityPoolInlineTrustConfigAdditionalTrustBundlesTrustAnchorsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewIamWorkloadIdentityPoolInlineTrustConfigAdditionalTrustBundlesTr
 
 	return nil
 }
-

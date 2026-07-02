@@ -18,15 +18,15 @@ type IapWebCloudRunServiceIamPolicy interface {
 	SetCloudRunServiceName(val *string)
 	CloudRunServiceNameInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -63,24 +63,24 @@ type IapWebCloudRunServiceIamPolicy interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -98,7 +98,7 @@ type IapWebCloudRunServiceIamPolicy interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -110,7 +110,7 @@ type IapWebCloudRunServiceIamPolicy interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -123,17 +123,17 @@ type IapWebCloudRunServiceIamPolicy interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for IapWebCloudRunServiceIamPolicy
@@ -171,8 +171,8 @@ func (j *jsiiProxy_IapWebCloudRunServiceIamPolicy) CloudRunServiceNameInput() *s
 	return returns
 }
 
-func (j *jsiiProxy_IapWebCloudRunServiceIamPolicy) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IapWebCloudRunServiceIamPolicy) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -181,8 +181,8 @@ func (j *jsiiProxy_IapWebCloudRunServiceIamPolicy) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IapWebCloudRunServiceIamPolicy) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_IapWebCloudRunServiceIamPolicy) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -191,8 +191,8 @@ func (j *jsiiProxy_IapWebCloudRunServiceIamPolicy) ConstructNodeMetadata() *map[
 	return returns
 }
 
-func (j *jsiiProxy_IapWebCloudRunServiceIamPolicy) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IapWebCloudRunServiceIamPolicy) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -361,8 +361,8 @@ func (j *jsiiProxy_IapWebCloudRunServiceIamPolicy) Provider() cdktf.TerraformPro
 	return returns
 }
 
-func (j *jsiiProxy_IapWebCloudRunServiceIamPolicy) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_IapWebCloudRunServiceIamPolicy) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -371,8 +371,8 @@ func (j *jsiiProxy_IapWebCloudRunServiceIamPolicy) Provisioners() *[]interface{}
 	return returns
 }
 
-func (j *jsiiProxy_IapWebCloudRunServiceIamPolicy) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IapWebCloudRunServiceIamPolicy) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -391,8 +391,8 @@ func (j *jsiiProxy_IapWebCloudRunServiceIamPolicy) TerraformGeneratorMetadata() 
 	return returns
 }
 
-func (j *jsiiProxy_IapWebCloudRunServiceIamPolicy) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_IapWebCloudRunServiceIamPolicy) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -411,7 +411,6 @@ func (j *jsiiProxy_IapWebCloudRunServiceIamPolicy) TerraformResourceType() *stri
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iap_web_cloud_run_service_iam_policy google_iap_web_cloud_run_service_iam_policy} Resource.
 func NewIapWebCloudRunServiceIamPolicy(scope constructs.Construct, id *string, config *IapWebCloudRunServiceIamPolicyConfig) IapWebCloudRunServiceIamPolicy {
 	_init_.Initialize()
@@ -423,7 +422,7 @@ func NewIapWebCloudRunServiceIamPolicy(scope constructs.Construct, id *string, c
 
 	_jsii_.Create(
 		"@cdktf/provider-google.iapWebCloudRunServiceIamPolicy.IapWebCloudRunServiceIamPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -436,12 +435,12 @@ func NewIapWebCloudRunServiceIamPolicy_Override(i IapWebCloudRunServiceIamPolicy
 
 	_jsii_.Create(
 		"@cdktf/provider-google.iapWebCloudRunServiceIamPolicy.IapWebCloudRunServiceIamPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		i,
 	)
 }
 
-func (j *jsiiProxy_IapWebCloudRunServiceIamPolicy)SetCloudRunServiceName(val *string) {
+func (j *jsiiProxy_IapWebCloudRunServiceIamPolicy) SetCloudRunServiceName(val *string) {
 	if err := j.validateSetCloudRunServiceNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,7 +451,7 @@ func (j *jsiiProxy_IapWebCloudRunServiceIamPolicy)SetCloudRunServiceName(val *st
 	)
 }
 
-func (j *jsiiProxy_IapWebCloudRunServiceIamPolicy)SetConnection(val interface{}) {
+func (j *jsiiProxy_IapWebCloudRunServiceIamPolicy) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -463,7 +462,7 @@ func (j *jsiiProxy_IapWebCloudRunServiceIamPolicy)SetConnection(val interface{})
 	)
 }
 
-func (j *jsiiProxy_IapWebCloudRunServiceIamPolicy)SetCount(val interface{}) {
+func (j *jsiiProxy_IapWebCloudRunServiceIamPolicy) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -474,7 +473,7 @@ func (j *jsiiProxy_IapWebCloudRunServiceIamPolicy)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IapWebCloudRunServiceIamPolicy)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_IapWebCloudRunServiceIamPolicy) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -482,7 +481,7 @@ func (j *jsiiProxy_IapWebCloudRunServiceIamPolicy)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_IapWebCloudRunServiceIamPolicy)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_IapWebCloudRunServiceIamPolicy) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -490,7 +489,7 @@ func (j *jsiiProxy_IapWebCloudRunServiceIamPolicy)SetForEach(val cdktf.ITerrafor
 	)
 }
 
-func (j *jsiiProxy_IapWebCloudRunServiceIamPolicy)SetId(val *string) {
+func (j *jsiiProxy_IapWebCloudRunServiceIamPolicy) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -501,7 +500,7 @@ func (j *jsiiProxy_IapWebCloudRunServiceIamPolicy)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IapWebCloudRunServiceIamPolicy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_IapWebCloudRunServiceIamPolicy) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -512,7 +511,7 @@ func (j *jsiiProxy_IapWebCloudRunServiceIamPolicy)SetLifecycle(val *cdktf.Terraf
 	)
 }
 
-func (j *jsiiProxy_IapWebCloudRunServiceIamPolicy)SetLocation(val *string) {
+func (j *jsiiProxy_IapWebCloudRunServiceIamPolicy) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -523,7 +522,7 @@ func (j *jsiiProxy_IapWebCloudRunServiceIamPolicy)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IapWebCloudRunServiceIamPolicy)SetPolicyData(val *string) {
+func (j *jsiiProxy_IapWebCloudRunServiceIamPolicy) SetPolicyData(val *string) {
 	if err := j.validateSetPolicyDataParameters(val); err != nil {
 		panic(err)
 	}
@@ -534,7 +533,7 @@ func (j *jsiiProxy_IapWebCloudRunServiceIamPolicy)SetPolicyData(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IapWebCloudRunServiceIamPolicy)SetProject(val *string) {
+func (j *jsiiProxy_IapWebCloudRunServiceIamPolicy) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -545,7 +544,7 @@ func (j *jsiiProxy_IapWebCloudRunServiceIamPolicy)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IapWebCloudRunServiceIamPolicy)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_IapWebCloudRunServiceIamPolicy) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -553,7 +552,7 @@ func (j *jsiiProxy_IapWebCloudRunServiceIamPolicy)SetProvider(val cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_IapWebCloudRunServiceIamPolicy)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_IapWebCloudRunServiceIamPolicy) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -576,7 +575,7 @@ func IapWebCloudRunServiceIamPolicy_GenerateConfigForImport(scope constructs.Con
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.iapWebCloudRunServiceIamPolicy.IapWebCloudRunServiceIamPolicy",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -600,7 +599,7 @@ func IapWebCloudRunServiceIamPolicy_GenerateConfigForImport(scope constructs.Con
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func IapWebCloudRunServiceIamPolicy_IsConstruct(x interface{}) *bool {
+func IapWebCloudRunServiceIamPolicy_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIapWebCloudRunServiceIamPolicy_IsConstructParameters(x); err != nil {
@@ -611,7 +610,7 @@ func IapWebCloudRunServiceIamPolicy_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.iapWebCloudRunServiceIamPolicy.IapWebCloudRunServiceIamPolicy",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -619,7 +618,7 @@ func IapWebCloudRunServiceIamPolicy_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func IapWebCloudRunServiceIamPolicy_IsTerraformElement(x interface{}) *bool {
+func IapWebCloudRunServiceIamPolicy_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIapWebCloudRunServiceIamPolicy_IsTerraformElementParameters(x); err != nil {
@@ -630,7 +629,7 @@ func IapWebCloudRunServiceIamPolicy_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.iapWebCloudRunServiceIamPolicy.IapWebCloudRunServiceIamPolicy",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -638,7 +637,7 @@ func IapWebCloudRunServiceIamPolicy_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func IapWebCloudRunServiceIamPolicy_IsTerraformResource(x interface{}) *bool {
+func IapWebCloudRunServiceIamPolicy_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIapWebCloudRunServiceIamPolicy_IsTerraformResourceParameters(x); err != nil {
@@ -649,7 +648,7 @@ func IapWebCloudRunServiceIamPolicy_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.iapWebCloudRunServiceIamPolicy.IapWebCloudRunServiceIamPolicy",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -674,31 +673,31 @@ func (i *jsiiProxy_IapWebCloudRunServiceIamPolicy) AddMoveTarget(moveTarget *str
 	_jsii_.InvokeVoid(
 		i,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (i *jsiiProxy_IapWebCloudRunServiceIamPolicy) AddOverride(path *string, value interface{}) {
+func (i *jsiiProxy_IapWebCloudRunServiceIamPolicy) AddOverride(path *string, value any) {
 	if err := i.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (i *jsiiProxy_IapWebCloudRunServiceIamPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_IapWebCloudRunServiceIamPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -714,7 +713,7 @@ func (i *jsiiProxy_IapWebCloudRunServiceIamPolicy) GetBooleanAttribute(terraform
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -730,7 +729,7 @@ func (i *jsiiProxy_IapWebCloudRunServiceIamPolicy) GetBooleanMapAttribute(terraf
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -746,7 +745,7 @@ func (i *jsiiProxy_IapWebCloudRunServiceIamPolicy) GetListAttribute(terraformAtt
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -762,7 +761,7 @@ func (i *jsiiProxy_IapWebCloudRunServiceIamPolicy) GetNumberAttribute(terraformA
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -778,7 +777,7 @@ func (i *jsiiProxy_IapWebCloudRunServiceIamPolicy) GetNumberListAttribute(terraf
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -794,7 +793,7 @@ func (i *jsiiProxy_IapWebCloudRunServiceIamPolicy) GetNumberMapAttribute(terrafo
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -810,7 +809,7 @@ func (i *jsiiProxy_IapWebCloudRunServiceIamPolicy) GetStringAttribute(terraformA
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -826,15 +825,15 @@ func (i *jsiiProxy_IapWebCloudRunServiceIamPolicy) GetStringMapAttribute(terrafo
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (i *jsiiProxy_IapWebCloudRunServiceIamPolicy) HasResourceMove() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IapWebCloudRunServiceIamPolicy) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -853,7 +852,7 @@ func (i *jsiiProxy_IapWebCloudRunServiceIamPolicy) ImportFrom(id *string, provid
 	_jsii_.InvokeVoid(
 		i,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -866,7 +865,7 @@ func (i *jsiiProxy_IapWebCloudRunServiceIamPolicy) InterpolationForAttribute(ter
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -880,18 +879,18 @@ func (i *jsiiProxy_IapWebCloudRunServiceIamPolicy) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (i *jsiiProxy_IapWebCloudRunServiceIamPolicy) MoveTo(moveTarget *string, index interface{}) {
+func (i *jsiiProxy_IapWebCloudRunServiceIamPolicy) MoveTo(moveTarget *string, index any) {
 	if err := i.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -902,7 +901,7 @@ func (i *jsiiProxy_IapWebCloudRunServiceIamPolicy) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -913,7 +912,7 @@ func (i *jsiiProxy_IapWebCloudRunServiceIamPolicy) OverrideLogicalId(newLogicalI
 	_jsii_.InvokeVoid(
 		i,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -949,8 +948,8 @@ func (i *jsiiProxy_IapWebCloudRunServiceIamPolicy) ResetProject() {
 	)
 }
 
-func (i *jsiiProxy_IapWebCloudRunServiceIamPolicy) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (i *jsiiProxy_IapWebCloudRunServiceIamPolicy) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
@@ -962,8 +961,8 @@ func (i *jsiiProxy_IapWebCloudRunServiceIamPolicy) SynthesizeAttributes() *map[s
 	return returns
 }
 
-func (i *jsiiProxy_IapWebCloudRunServiceIamPolicy) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (i *jsiiProxy_IapWebCloudRunServiceIamPolicy) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
@@ -975,8 +974,8 @@ func (i *jsiiProxy_IapWebCloudRunServiceIamPolicy) SynthesizeHclAttributes() *ma
 	return returns
 }
 
-func (i *jsiiProxy_IapWebCloudRunServiceIamPolicy) ToHclTerraform() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IapWebCloudRunServiceIamPolicy) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -988,8 +987,8 @@ func (i *jsiiProxy_IapWebCloudRunServiceIamPolicy) ToHclTerraform() interface{} 
 	return returns
 }
 
-func (i *jsiiProxy_IapWebCloudRunServiceIamPolicy) ToMetadata() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IapWebCloudRunServiceIamPolicy) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -1014,8 +1013,8 @@ func (i *jsiiProxy_IapWebCloudRunServiceIamPolicy) ToString() *string {
 	return returns
 }
 
-func (i *jsiiProxy_IapWebCloudRunServiceIamPolicy) ToTerraform() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IapWebCloudRunServiceIamPolicy) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -1026,4 +1025,3 @@ func (i *jsiiProxy_IapWebCloudRunServiceIamPolicy) ToTerraform() interface{} {
 
 	return returns
 }
-

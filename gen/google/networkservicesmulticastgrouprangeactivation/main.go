@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkServicesMulticastGroupRangeActivation.NetworkServicesMulticastGroupRangeActivation",
-		reflect.TypeOf((*NetworkServicesMulticastGroupRangeActivation)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesMulticastGroupRangeActivation](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -90,7 +90,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uniqueId", GoGetter: "UniqueId"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkServicesMulticastGroupRangeActivation{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -98,15 +98,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkServicesMulticastGroupRangeActivation.NetworkServicesMulticastGroupRangeActivationConfig",
-		reflect.TypeOf((*NetworkServicesMulticastGroupRangeActivationConfig)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesMulticastGroupRangeActivationConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkServicesMulticastGroupRangeActivation.NetworkServicesMulticastGroupRangeActivationLogConfig",
-		reflect.TypeOf((*NetworkServicesMulticastGroupRangeActivationLogConfig)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesMulticastGroupRangeActivationLogConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkServicesMulticastGroupRangeActivation.NetworkServicesMulticastGroupRangeActivationLogConfigOutputReference",
-		reflect.TypeOf((*NetworkServicesMulticastGroupRangeActivationLogConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesMulticastGroupRangeActivationLogConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -133,7 +133,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkServicesMulticastGroupRangeActivationLogConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -141,11 +141,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkServicesMulticastGroupRangeActivation.NetworkServicesMulticastGroupRangeActivationState",
-		reflect.TypeOf((*NetworkServicesMulticastGroupRangeActivationState)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesMulticastGroupRangeActivationState](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkServicesMulticastGroupRangeActivation.NetworkServicesMulticastGroupRangeActivationStateList",
-		reflect.TypeOf((*NetworkServicesMulticastGroupRangeActivationStateList)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesMulticastGroupRangeActivationStateList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -158,7 +158,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkServicesMulticastGroupRangeActivationStateList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -166,7 +166,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkServicesMulticastGroupRangeActivation.NetworkServicesMulticastGroupRangeActivationStateOutputReference",
-		reflect.TypeOf((*NetworkServicesMulticastGroupRangeActivationStateOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesMulticastGroupRangeActivationStateOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -191,7 +191,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkServicesMulticastGroupRangeActivationStateOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -199,11 +199,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkServicesMulticastGroupRangeActivation.NetworkServicesMulticastGroupRangeActivationTimeouts",
-		reflect.TypeOf((*NetworkServicesMulticastGroupRangeActivationTimeouts)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesMulticastGroupRangeActivationTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkServicesMulticastGroupRangeActivation.NetworkServicesMulticastGroupRangeActivationTimeoutsOutputReference",
-		reflect.TypeOf((*NetworkServicesMulticastGroupRangeActivationTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesMulticastGroupRangeActivationTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -236,7 +236,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkServicesMulticastGroupRangeActivationTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

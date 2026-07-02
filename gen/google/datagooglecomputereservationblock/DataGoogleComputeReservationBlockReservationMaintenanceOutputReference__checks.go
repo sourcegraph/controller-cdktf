@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleComputeReservationBlockReservationMaintenanceOutput
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeReservationBlockReservationMaintenanceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleComputeReservationBlockReservationMaintenanceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleComputeReservationBlockReservationMaintenanceOutputRef
 
 	return nil
 }
-

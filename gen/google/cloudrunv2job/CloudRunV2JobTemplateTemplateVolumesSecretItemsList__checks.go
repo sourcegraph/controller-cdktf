@@ -34,7 +34,7 @@ func (c *jsiiProxy_CloudRunV2JobTemplateTemplateVolumesSecretItemsList) validate
 	return nil
 }
 
-func (j *jsiiProxy_CloudRunV2JobTemplateTemplateVolumesSecretItemsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CloudRunV2JobTemplateTemplateVolumesSecretItemsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewCloudRunV2JobTemplateTemplateVolumesSecretItemsListParameters(te
 
 	return nil
 }
-

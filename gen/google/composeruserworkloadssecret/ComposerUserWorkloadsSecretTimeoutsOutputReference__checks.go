@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComposerUserWorkloadsSecretTimeoutsOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_ComposerUserWorkloadsSecretTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComposerUserWorkloadsSecretTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_ComposerUserWorkloadsSecretTimeoutsOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_ComposerUserWorkloadsSecretTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComposerUserWorkloadsSecretTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewComposerUserWorkloadsSecretTimeoutsOutputReferenceParameters(ter
 
 	return nil
 }
-

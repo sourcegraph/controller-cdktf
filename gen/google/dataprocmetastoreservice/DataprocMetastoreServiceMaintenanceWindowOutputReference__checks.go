@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataprocMetastoreServiceMaintenanceWindowOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_DataprocMetastoreServiceMaintenanceWindowOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocMetastoreServiceMaintenanceWindowOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewDataprocMetastoreServiceMaintenanceWindowOutputReferenceParamete
 
 	return nil
 }
-

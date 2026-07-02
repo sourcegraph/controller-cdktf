@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.firebaseAppCheckResourcePolicy.FirebaseAppCheckResourcePolicy",
-		reflect.TypeOf((*FirebaseAppCheckResourcePolicy)(nil)).Elem(),
+		reflect.TypeFor[FirebaseAppCheckResourcePolicy](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,7 +73,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FirebaseAppCheckResourcePolicy{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -81,15 +81,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.firebaseAppCheckResourcePolicy.FirebaseAppCheckResourcePolicyConfig",
-		reflect.TypeOf((*FirebaseAppCheckResourcePolicyConfig)(nil)).Elem(),
+		reflect.TypeFor[FirebaseAppCheckResourcePolicyConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.firebaseAppCheckResourcePolicy.FirebaseAppCheckResourcePolicyTimeouts",
-		reflect.TypeOf((*FirebaseAppCheckResourcePolicyTimeouts)(nil)).Elem(),
+		reflect.TypeFor[FirebaseAppCheckResourcePolicyTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.firebaseAppCheckResourcePolicy.FirebaseAppCheckResourcePolicyTimeoutsOutputReference",
-		reflect.TypeOf((*FirebaseAppCheckResourcePolicyTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FirebaseAppCheckResourcePolicyTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -122,7 +122,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FirebaseAppCheckResourcePolicyTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

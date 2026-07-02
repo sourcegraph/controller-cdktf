@@ -19,7 +19,7 @@ func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicyAssociation) validateAddMov
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicyAssociation) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicyAssociation) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicyAssociation) validateMoveFr
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicyAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicyAssociation) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateComputeRegionNetworkFirewallPolicyAssociation_GenerateConfigForImpo
 	return nil
 }
 
-func validateComputeRegionNetworkFirewallPolicyAssociation_IsConstructParameters(x interface{}) error {
+func validateComputeRegionNetworkFirewallPolicyAssociation_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateComputeRegionNetworkFirewallPolicyAssociation_IsConstructParameters
 	return nil
 }
 
-func validateComputeRegionNetworkFirewallPolicyAssociation_IsTerraformElementParameters(x interface{}) error {
+func validateComputeRegionNetworkFirewallPolicyAssociation_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateComputeRegionNetworkFirewallPolicyAssociation_IsTerraformElementPar
 	return nil
 }
 
-func validateComputeRegionNetworkFirewallPolicyAssociation_IsTerraformResourceParameters(x interface{}) error {
+func validateComputeRegionNetworkFirewallPolicyAssociation_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyAssociation) validateSetAtt
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyAssociation) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyAssociation) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyAssociation) validateSetCon
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyAssociation) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyAssociation) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -393,7 +393,7 @@ func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyAssociation) validateSetPro
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyAssociation) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyAssociation) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -465,4 +465,3 @@ func validateNewComputeRegionNetworkFirewallPolicyAssociationParameters(scope co
 
 	return nil
 }
-

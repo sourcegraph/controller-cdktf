@@ -98,7 +98,7 @@ func (c *jsiiProxy_ContainerAwsNodePoolTimeoutsOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_ContainerAwsNodePoolTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerAwsNodePoolTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_ContainerAwsNodePoolTimeoutsOutputReference) validateSetDelet
 	return nil
 }
 
-func (j *jsiiProxy_ContainerAwsNodePoolTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerAwsNodePoolTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewContainerAwsNodePoolTimeoutsOutputReferenceParameters(terraformR
 
 	return nil
 }
-

@@ -19,7 +19,7 @@ func (s *jsiiProxy_SecurityposturePosture) validateAddMoveTargetParameters(moveT
 	return nil
 }
 
-func (s *jsiiProxy_SecurityposturePosture) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_SecurityposturePosture) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_SecurityposturePosture) validateMoveFromIdParameters(id *stri
 	return nil
 }
 
-func (s *jsiiProxy_SecurityposturePosture) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_SecurityposturePosture) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (s *jsiiProxy_SecurityposturePosture) validateOverrideLogicalIdParameters(n
 	return nil
 }
 
-func (s *jsiiProxy_SecurityposturePosture) validatePutPolicySetsParameters(value interface{}) error {
+func (s *jsiiProxy_SecurityposturePosture) validatePutPolicySetsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -262,7 +262,7 @@ func validateSecurityposturePosture_GenerateConfigForImportParameters(scope cons
 	return nil
 }
 
-func validateSecurityposturePosture_IsConstructParameters(x interface{}) error {
+func validateSecurityposturePosture_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -270,7 +270,7 @@ func validateSecurityposturePosture_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateSecurityposturePosture_IsTerraformElementParameters(x interface{}) error {
+func validateSecurityposturePosture_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -278,7 +278,7 @@ func validateSecurityposturePosture_IsTerraformElementParameters(x interface{}) 
 	return nil
 }
 
-func validateSecurityposturePosture_IsTerraformResourceParameters(x interface{}) error {
+func validateSecurityposturePosture_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -286,7 +286,7 @@ func validateSecurityposturePosture_IsTerraformResourceParameters(x interface{})
 	return nil
 }
 
-func (j *jsiiProxy_SecurityposturePosture) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_SecurityposturePosture) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -319,7 +319,7 @@ func (j *jsiiProxy_SecurityposturePosture) validateSetConnectionParameters(val i
 	return nil
 }
 
-func (j *jsiiProxy_SecurityposturePosture) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_SecurityposturePosture) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -424,7 +424,7 @@ func (j *jsiiProxy_SecurityposturePosture) validateSetPostureIdParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_SecurityposturePosture) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_SecurityposturePosture) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -496,4 +496,3 @@ func validateNewSecurityposturePostureParameters(scope constructs.Construct, id 
 
 	return nil
 }
-

@@ -15,11 +15,11 @@ type DataGoogleCloudRunV2WorkerPoolIamPolicy interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -57,17 +57,17 @@ type DataGoogleCloudRunV2WorkerPoolIamPolicy interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -95,18 +95,18 @@ type DataGoogleCloudRunV2WorkerPoolIamPolicy interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataGoogleCloudRunV2WorkerPoolIamPolicy
@@ -124,8 +124,8 @@ func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPoolIamPolicy) CdktfStack() cdktf.T
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPoolIamPolicy) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPoolIamPolicy) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -134,8 +134,8 @@ func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPoolIamPolicy) ConstructNodeMetadat
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPoolIamPolicy) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPoolIamPolicy) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -314,8 +314,8 @@ func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPoolIamPolicy) Provider() cdktf.Ter
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPoolIamPolicy) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPoolIamPolicy) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -334,8 +334,8 @@ func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPoolIamPolicy) TerraformGeneratorMe
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPoolIamPolicy) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPoolIamPolicy) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -354,7 +354,6 @@ func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPoolIamPolicy) TerraformResourceTyp
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/cloud_run_v2_worker_pool_iam_policy google_cloud_run_v2_worker_pool_iam_policy} Data Source.
 func NewDataGoogleCloudRunV2WorkerPoolIamPolicy(scope constructs.Construct, id *string, config *DataGoogleCloudRunV2WorkerPoolIamPolicyConfig) DataGoogleCloudRunV2WorkerPoolIamPolicy {
 	_init_.Initialize()
@@ -366,7 +365,7 @@ func NewDataGoogleCloudRunV2WorkerPoolIamPolicy(scope constructs.Construct, id *
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleCloudRunV2WorkerPoolIamPolicy.DataGoogleCloudRunV2WorkerPoolIamPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -379,12 +378,12 @@ func NewDataGoogleCloudRunV2WorkerPoolIamPolicy_Override(d DataGoogleCloudRunV2W
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleCloudRunV2WorkerPoolIamPolicy.DataGoogleCloudRunV2WorkerPoolIamPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPoolIamPolicy)SetCount(val interface{}) {
+func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPoolIamPolicy) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -395,7 +394,7 @@ func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPoolIamPolicy)SetCount(val interfac
 	)
 }
 
-func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPoolIamPolicy)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPoolIamPolicy) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -403,7 +402,7 @@ func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPoolIamPolicy)SetDependsOn(val *[]*
 	)
 }
 
-func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPoolIamPolicy)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPoolIamPolicy) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -411,7 +410,7 @@ func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPoolIamPolicy)SetForEach(val cdktf.
 	)
 }
 
-func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPoolIamPolicy)SetId(val *string) {
+func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPoolIamPolicy) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -422,7 +421,7 @@ func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPoolIamPolicy)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPoolIamPolicy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPoolIamPolicy) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -433,7 +432,7 @@ func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPoolIamPolicy)SetLifecycle(val *cdk
 	)
 }
 
-func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPoolIamPolicy)SetLocation(val *string) {
+func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPoolIamPolicy) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -444,7 +443,7 @@ func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPoolIamPolicy)SetLocation(val *stri
 	)
 }
 
-func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPoolIamPolicy)SetName(val *string) {
+func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPoolIamPolicy) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -455,7 +454,7 @@ func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPoolIamPolicy)SetName(val *string) 
 	)
 }
 
-func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPoolIamPolicy)SetProject(val *string) {
+func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPoolIamPolicy) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -466,7 +465,7 @@ func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPoolIamPolicy)SetProject(val *strin
 	)
 }
 
-func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPoolIamPolicy)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPoolIamPolicy) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -486,7 +485,7 @@ func DataGoogleCloudRunV2WorkerPoolIamPolicy_GenerateConfigForImport(scope const
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleCloudRunV2WorkerPoolIamPolicy.DataGoogleCloudRunV2WorkerPoolIamPolicy",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -510,7 +509,7 @@ func DataGoogleCloudRunV2WorkerPoolIamPolicy_GenerateConfigForImport(scope const
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataGoogleCloudRunV2WorkerPoolIamPolicy_IsConstruct(x interface{}) *bool {
+func DataGoogleCloudRunV2WorkerPoolIamPolicy_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleCloudRunV2WorkerPoolIamPolicy_IsConstructParameters(x); err != nil {
@@ -521,7 +520,7 @@ func DataGoogleCloudRunV2WorkerPoolIamPolicy_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleCloudRunV2WorkerPoolIamPolicy.DataGoogleCloudRunV2WorkerPoolIamPolicy",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -529,7 +528,7 @@ func DataGoogleCloudRunV2WorkerPoolIamPolicy_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGoogleCloudRunV2WorkerPoolIamPolicy_IsTerraformDataSource(x interface{}) *bool {
+func DataGoogleCloudRunV2WorkerPoolIamPolicy_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleCloudRunV2WorkerPoolIamPolicy_IsTerraformDataSourceParameters(x); err != nil {
@@ -540,7 +539,7 @@ func DataGoogleCloudRunV2WorkerPoolIamPolicy_IsTerraformDataSource(x interface{}
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleCloudRunV2WorkerPoolIamPolicy.DataGoogleCloudRunV2WorkerPoolIamPolicy",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -548,7 +547,7 @@ func DataGoogleCloudRunV2WorkerPoolIamPolicy_IsTerraformDataSource(x interface{}
 }
 
 // Experimental.
-func DataGoogleCloudRunV2WorkerPoolIamPolicy_IsTerraformElement(x interface{}) *bool {
+func DataGoogleCloudRunV2WorkerPoolIamPolicy_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleCloudRunV2WorkerPoolIamPolicy_IsTerraformElementParameters(x); err != nil {
@@ -559,7 +558,7 @@ func DataGoogleCloudRunV2WorkerPoolIamPolicy_IsTerraformElement(x interface{}) *
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleCloudRunV2WorkerPoolIamPolicy.DataGoogleCloudRunV2WorkerPoolIamPolicy",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -577,27 +576,27 @@ func DataGoogleCloudRunV2WorkerPoolIamPolicy_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleCloudRunV2WorkerPoolIamPolicy) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataGoogleCloudRunV2WorkerPoolIamPolicy) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataGoogleCloudRunV2WorkerPoolIamPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataGoogleCloudRunV2WorkerPoolIamPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -613,7 +612,7 @@ func (d *jsiiProxy_DataGoogleCloudRunV2WorkerPoolIamPolicy) GetBooleanAttribute(
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -629,7 +628,7 @@ func (d *jsiiProxy_DataGoogleCloudRunV2WorkerPoolIamPolicy) GetBooleanMapAttribu
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -645,7 +644,7 @@ func (d *jsiiProxy_DataGoogleCloudRunV2WorkerPoolIamPolicy) GetListAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -661,7 +660,7 @@ func (d *jsiiProxy_DataGoogleCloudRunV2WorkerPoolIamPolicy) GetNumberAttribute(t
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -677,7 +676,7 @@ func (d *jsiiProxy_DataGoogleCloudRunV2WorkerPoolIamPolicy) GetNumberListAttribu
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -693,7 +692,7 @@ func (d *jsiiProxy_DataGoogleCloudRunV2WorkerPoolIamPolicy) GetNumberMapAttribut
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -709,7 +708,7 @@ func (d *jsiiProxy_DataGoogleCloudRunV2WorkerPoolIamPolicy) GetStringAttribute(t
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -725,7 +724,7 @@ func (d *jsiiProxy_DataGoogleCloudRunV2WorkerPoolIamPolicy) GetStringMapAttribut
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -741,7 +740,7 @@ func (d *jsiiProxy_DataGoogleCloudRunV2WorkerPoolIamPolicy) InterpolationForAttr
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -755,7 +754,7 @@ func (d *jsiiProxy_DataGoogleCloudRunV2WorkerPoolIamPolicy) OverrideLogicalId(ne
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -791,8 +790,8 @@ func (d *jsiiProxy_DataGoogleCloudRunV2WorkerPoolIamPolicy) ResetProject() {
 	)
 }
 
-func (d *jsiiProxy_DataGoogleCloudRunV2WorkerPoolIamPolicy) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleCloudRunV2WorkerPoolIamPolicy) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -804,8 +803,8 @@ func (d *jsiiProxy_DataGoogleCloudRunV2WorkerPoolIamPolicy) SynthesizeAttributes
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleCloudRunV2WorkerPoolIamPolicy) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleCloudRunV2WorkerPoolIamPolicy) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -817,8 +816,8 @@ func (d *jsiiProxy_DataGoogleCloudRunV2WorkerPoolIamPolicy) SynthesizeHclAttribu
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleCloudRunV2WorkerPoolIamPolicy) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleCloudRunV2WorkerPoolIamPolicy) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -830,8 +829,8 @@ func (d *jsiiProxy_DataGoogleCloudRunV2WorkerPoolIamPolicy) ToHclTerraform() int
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleCloudRunV2WorkerPoolIamPolicy) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleCloudRunV2WorkerPoolIamPolicy) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -856,8 +855,8 @@ func (d *jsiiProxy_DataGoogleCloudRunV2WorkerPoolIamPolicy) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleCloudRunV2WorkerPoolIamPolicy) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleCloudRunV2WorkerPoolIamPolicy) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -868,4 +867,3 @@ func (d *jsiiProxy_DataGoogleCloudRunV2WorkerPoolIamPolicy) ToTerraform() interf
 
 	return returns
 }
-

@@ -98,7 +98,7 @@ func (d *jsiiProxy_DialogflowCxToolVersionToolDataStoreSpecDataStoreConnectionsO
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxToolVersionToolDataStoreSpecDataStoreConnectionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxToolVersionToolDataStoreSpecDataStoreConnectionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -187,7 +187,7 @@ func (j *jsiiProxy_DialogflowCxToolVersionToolDataStoreSpecDataStoreConnectionsO
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxToolVersionToolDataStoreSpecDataStoreConnectionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxToolVersionToolDataStoreSpecDataStoreConnectionsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewDialogflowCxToolVersionToolDataStoreSpecDataStoreConnectionsOutp
 
 	return nil
 }
-

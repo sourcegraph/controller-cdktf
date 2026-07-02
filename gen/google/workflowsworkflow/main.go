@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.workflowsWorkflow.WorkflowsWorkflow",
-		reflect.TypeOf((*WorkflowsWorkflow)(nil)).Elem(),
+		reflect.TypeFor[WorkflowsWorkflow](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -108,7 +108,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userEnvVars", GoGetter: "UserEnvVars"},
 			_jsii_.MemberProperty{JsiiProperty: "userEnvVarsInput", GoGetter: "UserEnvVarsInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkflowsWorkflow{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -116,15 +116,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.workflowsWorkflow.WorkflowsWorkflowConfig",
-		reflect.TypeOf((*WorkflowsWorkflowConfig)(nil)).Elem(),
+		reflect.TypeFor[WorkflowsWorkflowConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.workflowsWorkflow.WorkflowsWorkflowTimeouts",
-		reflect.TypeOf((*WorkflowsWorkflowTimeouts)(nil)).Elem(),
+		reflect.TypeFor[WorkflowsWorkflowTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.workflowsWorkflow.WorkflowsWorkflowTimeoutsOutputReference",
-		reflect.TypeOf((*WorkflowsWorkflowTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[WorkflowsWorkflowTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -157,7 +157,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkflowsWorkflowTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

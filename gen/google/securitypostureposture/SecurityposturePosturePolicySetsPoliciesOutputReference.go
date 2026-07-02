@@ -12,16 +12,16 @@ type SecurityposturePosturePolicySetsPoliciesOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
 	ComplianceStandards() SecurityposturePosturePolicySetsPoliciesComplianceStandardsList
-	ComplianceStandardsInput() interface{}
+	ComplianceStandardsInput() any
 	Constraint() SecurityposturePosturePolicySetsPoliciesConstraintOutputReference
 	ConstraintInput() *SecurityposturePosturePolicySetsPoliciesConstraint
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
@@ -34,8 +34,8 @@ type SecurityposturePosturePolicySetsPoliciesOutputReference interface {
 	DescriptionInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	PolicyId() *string
 	SetPolicyId(val *string)
 	PolicyIdInput() *string
@@ -50,7 +50,7 @@ type SecurityposturePosturePolicySetsPoliciesOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,13 +71,13 @@ type SecurityposturePosturePolicySetsPoliciesOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutComplianceStandards(value interface{})
+	PutComplianceStandards(value any)
 	PutConstraint(value *SecurityposturePosturePolicySetsPoliciesConstraint)
 	ResetComplianceStandards()
 	ResetDescription()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -90,8 +90,8 @@ type jsiiProxy_SecurityposturePosturePolicySetsPoliciesOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_SecurityposturePosturePolicySetsPoliciesOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SecurityposturePosturePolicySetsPoliciesOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -120,8 +120,8 @@ func (j *jsiiProxy_SecurityposturePosturePolicySetsPoliciesOutputReference) Comp
 	return returns
 }
 
-func (j *jsiiProxy_SecurityposturePosturePolicySetsPoliciesOutputReference) ComplianceStandardsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SecurityposturePosturePolicySetsPoliciesOutputReference) ComplianceStandardsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complianceStandardsInput",
@@ -190,8 +190,8 @@ func (j *jsiiProxy_SecurityposturePosturePolicySetsPoliciesOutputReference) Fqn(
 	return returns
 }
 
-func (j *jsiiProxy_SecurityposturePosturePolicySetsPoliciesOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SecurityposturePosturePolicySetsPoliciesOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -240,7 +240,6 @@ func (j *jsiiProxy_SecurityposturePosturePolicySetsPoliciesOutputReference) Terr
 	return returns
 }
 
-
 func NewSecurityposturePosturePolicySetsPoliciesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SecurityposturePosturePolicySetsPoliciesOutputReference {
 	_init_.Initialize()
 
@@ -251,7 +250,7 @@ func NewSecurityposturePosturePolicySetsPoliciesOutputReference(terraformResourc
 
 	_jsii_.Create(
 		"@cdktf/provider-google.securityposturePosture.SecurityposturePosturePolicySetsPoliciesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -263,12 +262,12 @@ func NewSecurityposturePosturePolicySetsPoliciesOutputReference_Override(s Secur
 
 	_jsii_.Create(
 		"@cdktf/provider-google.securityposturePosture.SecurityposturePosturePolicySetsPoliciesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SecurityposturePosturePolicySetsPoliciesOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_SecurityposturePosturePolicySetsPoliciesOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_SecurityposturePosturePolicySetsPoliciesOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_SecurityposturePosturePolicySetsPoliciesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_SecurityposturePosturePolicySetsPoliciesOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_SecurityposturePosturePolicySetsPoliciesOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_SecurityposturePosturePolicySetsPoliciesOutputReference)SetDescription(val *string) {
+func (j *jsiiProxy_SecurityposturePosturePolicySetsPoliciesOutputReference) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_SecurityposturePosturePolicySetsPoliciesOutputReference)SetDe
 	)
 }
 
-func (j *jsiiProxy_SecurityposturePosturePolicySetsPoliciesOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_SecurityposturePosturePolicySetsPoliciesOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_SecurityposturePosturePolicySetsPoliciesOutputReference)SetIn
 	)
 }
 
-func (j *jsiiProxy_SecurityposturePosturePolicySetsPoliciesOutputReference)SetPolicyId(val *string) {
+func (j *jsiiProxy_SecurityposturePosturePolicySetsPoliciesOutputReference) SetPolicyId(val *string) {
 	if err := j.validateSetPolicyIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_SecurityposturePosturePolicySetsPoliciesOutputReference)SetPo
 	)
 }
 
-func (j *jsiiProxy_SecurityposturePosturePolicySetsPoliciesOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SecurityposturePosturePolicySetsPoliciesOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -334,7 +333,7 @@ func (j *jsiiProxy_SecurityposturePosturePolicySetsPoliciesOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_SecurityposturePosturePolicySetsPoliciesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SecurityposturePosturePolicySetsPoliciesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -358,16 +357,16 @@ func (s *jsiiProxy_SecurityposturePosturePolicySetsPoliciesOutputReference) Comp
 	return returns
 }
 
-func (s *jsiiProxy_SecurityposturePosturePolicySetsPoliciesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SecurityposturePosturePolicySetsPoliciesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -383,7 +382,7 @@ func (s *jsiiProxy_SecurityposturePosturePolicySetsPoliciesOutputReference) GetB
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -399,7 +398,7 @@ func (s *jsiiProxy_SecurityposturePosturePolicySetsPoliciesOutputReference) GetB
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -415,7 +414,7 @@ func (s *jsiiProxy_SecurityposturePosturePolicySetsPoliciesOutputReference) GetL
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -431,7 +430,7 @@ func (s *jsiiProxy_SecurityposturePosturePolicySetsPoliciesOutputReference) GetN
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -447,7 +446,7 @@ func (s *jsiiProxy_SecurityposturePosturePolicySetsPoliciesOutputReference) GetN
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -463,7 +462,7 @@ func (s *jsiiProxy_SecurityposturePosturePolicySetsPoliciesOutputReference) GetN
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -479,7 +478,7 @@ func (s *jsiiProxy_SecurityposturePosturePolicySetsPoliciesOutputReference) GetS
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -495,7 +494,7 @@ func (s *jsiiProxy_SecurityposturePosturePolicySetsPoliciesOutputReference) GetS
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -524,21 +523,21 @@ func (s *jsiiProxy_SecurityposturePosturePolicySetsPoliciesOutputReference) Inte
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SecurityposturePosturePolicySetsPoliciesOutputReference) PutComplianceStandards(value interface{}) {
+func (s *jsiiProxy_SecurityposturePosturePolicySetsPoliciesOutputReference) PutComplianceStandards(value any) {
 	if err := s.validatePutComplianceStandardsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putComplianceStandards",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -549,7 +548,7 @@ func (s *jsiiProxy_SecurityposturePosturePolicySetsPoliciesOutputReference) PutC
 	_jsii_.InvokeVoid(
 		s,
 		"putConstraint",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -569,16 +568,16 @@ func (s *jsiiProxy_SecurityposturePosturePolicySetsPoliciesOutputReference) Rese
 	)
 }
 
-func (s *jsiiProxy_SecurityposturePosturePolicySetsPoliciesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_SecurityposturePosturePolicySetsPoliciesOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -597,4 +596,3 @@ func (s *jsiiProxy_SecurityposturePosturePolicySetsPoliciesOutputReference) ToSt
 
 	return returns
 }
-

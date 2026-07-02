@@ -98,7 +98,7 @@ func (t *jsiiProxy_TranscoderJobTemplateConfigEncryptionsSecretManagerKeySourceO
 	return nil
 }
 
-func (j *jsiiProxy_TranscoderJobTemplateConfigEncryptionsSecretManagerKeySourceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_TranscoderJobTemplateConfigEncryptionsSecretManagerKeySourceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewTranscoderJobTemplateConfigEncryptionsSecretManagerKeySourceOutp
 
 	return nil
 }
-

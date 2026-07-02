@@ -98,7 +98,7 @@ func (c *jsiiProxy_CesToolSystemToolOutputReference) validateResolveParameters(_
 	return nil
 }
 
-func (j *jsiiProxy_CesToolSystemToolOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CesToolSystemToolOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewCesToolSystemToolOutputReferenceParameters(terraformResource cdk
 
 	return nil
 }
-

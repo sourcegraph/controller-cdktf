@@ -21,15 +21,15 @@ type DataprocGdcApplicationEnvironment interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -75,11 +75,11 @@ type DataprocGdcApplicationEnvironment interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Serviceinstance() *string
 	SetServiceinstance(val *string)
 	ServiceinstanceInput() *string
@@ -89,20 +89,20 @@ type DataprocGdcApplicationEnvironment interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() DataprocGdcApplicationEnvironmentTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Uid() *string
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -120,7 +120,7 @@ type DataprocGdcApplicationEnvironment interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -132,7 +132,7 @@ type DataprocGdcApplicationEnvironment interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -153,17 +153,17 @@ type DataprocGdcApplicationEnvironment interface {
 	ResetProject()
 	ResetSparkApplicationEnvironmentConfig()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataprocGdcApplicationEnvironment
@@ -221,8 +221,8 @@ func (j *jsiiProxy_DataprocGdcApplicationEnvironment) CdktfStack() cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_DataprocGdcApplicationEnvironment) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataprocGdcApplicationEnvironment) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -231,8 +231,8 @@ func (j *jsiiProxy_DataprocGdcApplicationEnvironment) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataprocGdcApplicationEnvironment) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataprocGdcApplicationEnvironment) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -241,8 +241,8 @@ func (j *jsiiProxy_DataprocGdcApplicationEnvironment) ConstructNodeMetadata() *m
 	return returns
 }
 
-func (j *jsiiProxy_DataprocGdcApplicationEnvironment) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataprocGdcApplicationEnvironment) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -481,8 +481,8 @@ func (j *jsiiProxy_DataprocGdcApplicationEnvironment) Provider() cdktf.Terraform
 	return returns
 }
 
-func (j *jsiiProxy_DataprocGdcApplicationEnvironment) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_DataprocGdcApplicationEnvironment) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -491,8 +491,8 @@ func (j *jsiiProxy_DataprocGdcApplicationEnvironment) Provisioners() *[]interfac
 	return returns
 }
 
-func (j *jsiiProxy_DataprocGdcApplicationEnvironment) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataprocGdcApplicationEnvironment) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -561,8 +561,8 @@ func (j *jsiiProxy_DataprocGdcApplicationEnvironment) TerraformLabels() cdktf.St
 	return returns
 }
 
-func (j *jsiiProxy_DataprocGdcApplicationEnvironment) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataprocGdcApplicationEnvironment) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -591,8 +591,8 @@ func (j *jsiiProxy_DataprocGdcApplicationEnvironment) Timeouts() DataprocGdcAppl
 	return returns
 }
 
-func (j *jsiiProxy_DataprocGdcApplicationEnvironment) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataprocGdcApplicationEnvironment) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -621,7 +621,6 @@ func (j *jsiiProxy_DataprocGdcApplicationEnvironment) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_gdc_application_environment google_dataproc_gdc_application_environment} Resource.
 func NewDataprocGdcApplicationEnvironment(scope constructs.Construct, id *string, config *DataprocGdcApplicationEnvironmentConfig) DataprocGdcApplicationEnvironment {
 	_init_.Initialize()
@@ -633,7 +632,7 @@ func NewDataprocGdcApplicationEnvironment(scope constructs.Construct, id *string
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataprocGdcApplicationEnvironment.DataprocGdcApplicationEnvironment",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -646,12 +645,12 @@ func NewDataprocGdcApplicationEnvironment_Override(d DataprocGdcApplicationEnvir
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataprocGdcApplicationEnvironment.DataprocGdcApplicationEnvironment",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataprocGdcApplicationEnvironment)SetAnnotations(val *map[string]*string) {
+func (j *jsiiProxy_DataprocGdcApplicationEnvironment) SetAnnotations(val *map[string]*string) {
 	if err := j.validateSetAnnotationsParameters(val); err != nil {
 		panic(err)
 	}
@@ -662,7 +661,7 @@ func (j *jsiiProxy_DataprocGdcApplicationEnvironment)SetAnnotations(val *map[str
 	)
 }
 
-func (j *jsiiProxy_DataprocGdcApplicationEnvironment)SetApplicationEnvironmentId(val *string) {
+func (j *jsiiProxy_DataprocGdcApplicationEnvironment) SetApplicationEnvironmentId(val *string) {
 	if err := j.validateSetApplicationEnvironmentIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -673,7 +672,7 @@ func (j *jsiiProxy_DataprocGdcApplicationEnvironment)SetApplicationEnvironmentId
 	)
 }
 
-func (j *jsiiProxy_DataprocGdcApplicationEnvironment)SetConnection(val interface{}) {
+func (j *jsiiProxy_DataprocGdcApplicationEnvironment) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -684,7 +683,7 @@ func (j *jsiiProxy_DataprocGdcApplicationEnvironment)SetConnection(val interface
 	)
 }
 
-func (j *jsiiProxy_DataprocGdcApplicationEnvironment)SetCount(val interface{}) {
+func (j *jsiiProxy_DataprocGdcApplicationEnvironment) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -695,7 +694,7 @@ func (j *jsiiProxy_DataprocGdcApplicationEnvironment)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataprocGdcApplicationEnvironment)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataprocGdcApplicationEnvironment) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -703,7 +702,7 @@ func (j *jsiiProxy_DataprocGdcApplicationEnvironment)SetDependsOn(val *[]*string
 	)
 }
 
-func (j *jsiiProxy_DataprocGdcApplicationEnvironment)SetDisplayName(val *string) {
+func (j *jsiiProxy_DataprocGdcApplicationEnvironment) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -714,7 +713,7 @@ func (j *jsiiProxy_DataprocGdcApplicationEnvironment)SetDisplayName(val *string)
 	)
 }
 
-func (j *jsiiProxy_DataprocGdcApplicationEnvironment)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataprocGdcApplicationEnvironment) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -722,7 +721,7 @@ func (j *jsiiProxy_DataprocGdcApplicationEnvironment)SetForEach(val cdktf.ITerra
 	)
 }
 
-func (j *jsiiProxy_DataprocGdcApplicationEnvironment)SetId(val *string) {
+func (j *jsiiProxy_DataprocGdcApplicationEnvironment) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -733,7 +732,7 @@ func (j *jsiiProxy_DataprocGdcApplicationEnvironment)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataprocGdcApplicationEnvironment)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_DataprocGdcApplicationEnvironment) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -744,7 +743,7 @@ func (j *jsiiProxy_DataprocGdcApplicationEnvironment)SetLabels(val *map[string]*
 	)
 }
 
-func (j *jsiiProxy_DataprocGdcApplicationEnvironment)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataprocGdcApplicationEnvironment) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -755,7 +754,7 @@ func (j *jsiiProxy_DataprocGdcApplicationEnvironment)SetLifecycle(val *cdktf.Ter
 	)
 }
 
-func (j *jsiiProxy_DataprocGdcApplicationEnvironment)SetLocation(val *string) {
+func (j *jsiiProxy_DataprocGdcApplicationEnvironment) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -766,7 +765,7 @@ func (j *jsiiProxy_DataprocGdcApplicationEnvironment)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataprocGdcApplicationEnvironment)SetNamespace(val *string) {
+func (j *jsiiProxy_DataprocGdcApplicationEnvironment) SetNamespace(val *string) {
 	if err := j.validateSetNamespaceParameters(val); err != nil {
 		panic(err)
 	}
@@ -777,7 +776,7 @@ func (j *jsiiProxy_DataprocGdcApplicationEnvironment)SetNamespace(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataprocGdcApplicationEnvironment)SetProject(val *string) {
+func (j *jsiiProxy_DataprocGdcApplicationEnvironment) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -788,7 +787,7 @@ func (j *jsiiProxy_DataprocGdcApplicationEnvironment)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataprocGdcApplicationEnvironment)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataprocGdcApplicationEnvironment) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -796,7 +795,7 @@ func (j *jsiiProxy_DataprocGdcApplicationEnvironment)SetProvider(val cdktf.Terra
 	)
 }
 
-func (j *jsiiProxy_DataprocGdcApplicationEnvironment)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_DataprocGdcApplicationEnvironment) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -807,7 +806,7 @@ func (j *jsiiProxy_DataprocGdcApplicationEnvironment)SetProvisioners(val *[]inte
 	)
 }
 
-func (j *jsiiProxy_DataprocGdcApplicationEnvironment)SetServiceinstance(val *string) {
+func (j *jsiiProxy_DataprocGdcApplicationEnvironment) SetServiceinstance(val *string) {
 	if err := j.validateSetServiceinstanceParameters(val); err != nil {
 		panic(err)
 	}
@@ -830,7 +829,7 @@ func DataprocGdcApplicationEnvironment_GenerateConfigForImport(scope constructs.
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataprocGdcApplicationEnvironment.DataprocGdcApplicationEnvironment",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -854,7 +853,7 @@ func DataprocGdcApplicationEnvironment_GenerateConfigForImport(scope constructs.
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataprocGdcApplicationEnvironment_IsConstruct(x interface{}) *bool {
+func DataprocGdcApplicationEnvironment_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataprocGdcApplicationEnvironment_IsConstructParameters(x); err != nil {
@@ -865,7 +864,7 @@ func DataprocGdcApplicationEnvironment_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataprocGdcApplicationEnvironment.DataprocGdcApplicationEnvironment",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -873,7 +872,7 @@ func DataprocGdcApplicationEnvironment_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataprocGdcApplicationEnvironment_IsTerraformElement(x interface{}) *bool {
+func DataprocGdcApplicationEnvironment_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataprocGdcApplicationEnvironment_IsTerraformElementParameters(x); err != nil {
@@ -884,7 +883,7 @@ func DataprocGdcApplicationEnvironment_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataprocGdcApplicationEnvironment.DataprocGdcApplicationEnvironment",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -892,7 +891,7 @@ func DataprocGdcApplicationEnvironment_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func DataprocGdcApplicationEnvironment_IsTerraformResource(x interface{}) *bool {
+func DataprocGdcApplicationEnvironment_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataprocGdcApplicationEnvironment_IsTerraformResourceParameters(x); err != nil {
@@ -903,7 +902,7 @@ func DataprocGdcApplicationEnvironment_IsTerraformResource(x interface{}) *bool 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataprocGdcApplicationEnvironment.DataprocGdcApplicationEnvironment",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -928,31 +927,31 @@ func (d *jsiiProxy_DataprocGdcApplicationEnvironment) AddMoveTarget(moveTarget *
 	_jsii_.InvokeVoid(
 		d,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (d *jsiiProxy_DataprocGdcApplicationEnvironment) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataprocGdcApplicationEnvironment) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataprocGdcApplicationEnvironment) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataprocGdcApplicationEnvironment) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -968,7 +967,7 @@ func (d *jsiiProxy_DataprocGdcApplicationEnvironment) GetBooleanAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -984,7 +983,7 @@ func (d *jsiiProxy_DataprocGdcApplicationEnvironment) GetBooleanMapAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1000,7 +999,7 @@ func (d *jsiiProxy_DataprocGdcApplicationEnvironment) GetListAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1016,7 +1015,7 @@ func (d *jsiiProxy_DataprocGdcApplicationEnvironment) GetNumberAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1032,7 +1031,7 @@ func (d *jsiiProxy_DataprocGdcApplicationEnvironment) GetNumberListAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1048,7 +1047,7 @@ func (d *jsiiProxy_DataprocGdcApplicationEnvironment) GetNumberMapAttribute(terr
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1064,7 +1063,7 @@ func (d *jsiiProxy_DataprocGdcApplicationEnvironment) GetStringAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1080,15 +1079,15 @@ func (d *jsiiProxy_DataprocGdcApplicationEnvironment) GetStringMapAttribute(terr
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataprocGdcApplicationEnvironment) HasResourceMove() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataprocGdcApplicationEnvironment) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1107,7 +1106,7 @@ func (d *jsiiProxy_DataprocGdcApplicationEnvironment) ImportFrom(id *string, pro
 	_jsii_.InvokeVoid(
 		d,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1120,7 +1119,7 @@ func (d *jsiiProxy_DataprocGdcApplicationEnvironment) InterpolationForAttribute(
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1134,18 +1133,18 @@ func (d *jsiiProxy_DataprocGdcApplicationEnvironment) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (d *jsiiProxy_DataprocGdcApplicationEnvironment) MoveTo(moveTarget *string, index interface{}) {
+func (d *jsiiProxy_DataprocGdcApplicationEnvironment) MoveTo(moveTarget *string, index any) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1156,7 +1155,7 @@ func (d *jsiiProxy_DataprocGdcApplicationEnvironment) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1167,7 +1166,7 @@ func (d *jsiiProxy_DataprocGdcApplicationEnvironment) OverrideLogicalId(newLogic
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1178,7 +1177,7 @@ func (d *jsiiProxy_DataprocGdcApplicationEnvironment) PutSparkApplicationEnviron
 	_jsii_.InvokeVoid(
 		d,
 		"putSparkApplicationEnvironmentConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1189,7 +1188,7 @@ func (d *jsiiProxy_DataprocGdcApplicationEnvironment) PutTimeouts(value *Datapro
 	_jsii_.InvokeVoid(
 		d,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1273,8 +1272,8 @@ func (d *jsiiProxy_DataprocGdcApplicationEnvironment) ResetTimeouts() {
 	)
 }
 
-func (d *jsiiProxy_DataprocGdcApplicationEnvironment) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataprocGdcApplicationEnvironment) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1286,8 +1285,8 @@ func (d *jsiiProxy_DataprocGdcApplicationEnvironment) SynthesizeAttributes() *ma
 	return returns
 }
 
-func (d *jsiiProxy_DataprocGdcApplicationEnvironment) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataprocGdcApplicationEnvironment) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1299,8 +1298,8 @@ func (d *jsiiProxy_DataprocGdcApplicationEnvironment) SynthesizeHclAttributes() 
 	return returns
 }
 
-func (d *jsiiProxy_DataprocGdcApplicationEnvironment) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataprocGdcApplicationEnvironment) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1312,8 +1311,8 @@ func (d *jsiiProxy_DataprocGdcApplicationEnvironment) ToHclTerraform() interface
 	return returns
 }
 
-func (d *jsiiProxy_DataprocGdcApplicationEnvironment) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataprocGdcApplicationEnvironment) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1338,8 +1337,8 @@ func (d *jsiiProxy_DataprocGdcApplicationEnvironment) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataprocGdcApplicationEnvironment) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataprocGdcApplicationEnvironment) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1350,4 +1349,3 @@ func (d *jsiiProxy_DataprocGdcApplicationEnvironment) ToTerraform() interface{} 
 
 	return returns
 }
-

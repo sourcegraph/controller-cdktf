@@ -138,7 +138,7 @@ func (j *jsiiProxy_DialogflowCxGenerativeSettingsKnowledgeConnectorSettingsOutpu
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxGenerativeSettingsKnowledgeConnectorSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxGenerativeSettingsKnowledgeConnectorSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -203,7 +203,7 @@ func (j *jsiiProxy_DialogflowCxGenerativeSettingsKnowledgeConnectorSettingsOutpu
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxGenerativeSettingsKnowledgeConnectorSettingsOutputReference) validateSetDisableDataStoreFallbackParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxGenerativeSettingsKnowledgeConnectorSettingsOutputReference) validateSetDisableDataStoreFallbackParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -258,4 +258,3 @@ func validateNewDialogflowCxGenerativeSettingsKnowledgeConnectorSettingsOutputRe
 
 	return nil
 }
-

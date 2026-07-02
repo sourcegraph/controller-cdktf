@@ -98,7 +98,7 @@ func (s *jsiiProxy_SecretManagerSecretRotationOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_SecretManagerSecretRotationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SecretManagerSecretRotationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewSecretManagerSecretRotationOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

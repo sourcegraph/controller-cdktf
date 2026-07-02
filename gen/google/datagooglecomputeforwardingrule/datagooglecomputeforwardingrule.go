@@ -20,11 +20,11 @@ type DataGoogleComputeForwardingRule interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreationTimestamp() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -76,7 +76,7 @@ type DataGoogleComputeForwardingRule interface {
 	PscConnectionId() *string
 	PscConnectionStatus() *string
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RecreateClosedPsc() cdktf.IResolvable
 	Region() *string
 	SetRegion(val *string)
@@ -92,13 +92,13 @@ type DataGoogleComputeForwardingRule interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -126,18 +126,18 @@ type DataGoogleComputeForwardingRule interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetRegion()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataGoogleComputeForwardingRule
@@ -205,8 +205,8 @@ func (j *jsiiProxy_DataGoogleComputeForwardingRule) CdktfStack() cdktf.Terraform
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleComputeForwardingRule) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleComputeForwardingRule) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -215,8 +215,8 @@ func (j *jsiiProxy_DataGoogleComputeForwardingRule) ConstructNodeMetadata() *map
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleComputeForwardingRule) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleComputeForwardingRule) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -545,8 +545,8 @@ func (j *jsiiProxy_DataGoogleComputeForwardingRule) PscConnectionStatus() *strin
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleComputeForwardingRule) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleComputeForwardingRule) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -675,8 +675,8 @@ func (j *jsiiProxy_DataGoogleComputeForwardingRule) TerraformLabels() cdktf.Stri
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleComputeForwardingRule) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleComputeForwardingRule) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -695,7 +695,6 @@ func (j *jsiiProxy_DataGoogleComputeForwardingRule) TerraformResourceType() *str
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/compute_forwarding_rule google_compute_forwarding_rule} Data Source.
 func NewDataGoogleComputeForwardingRule(scope constructs.Construct, id *string, config *DataGoogleComputeForwardingRuleConfig) DataGoogleComputeForwardingRule {
 	_init_.Initialize()
@@ -707,7 +706,7 @@ func NewDataGoogleComputeForwardingRule(scope constructs.Construct, id *string, 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleComputeForwardingRule.DataGoogleComputeForwardingRule",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -720,12 +719,12 @@ func NewDataGoogleComputeForwardingRule_Override(d DataGoogleComputeForwardingRu
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleComputeForwardingRule.DataGoogleComputeForwardingRule",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeForwardingRule)SetCount(val interface{}) {
+func (j *jsiiProxy_DataGoogleComputeForwardingRule) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -736,7 +735,7 @@ func (j *jsiiProxy_DataGoogleComputeForwardingRule)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeForwardingRule)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataGoogleComputeForwardingRule) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -744,7 +743,7 @@ func (j *jsiiProxy_DataGoogleComputeForwardingRule)SetDependsOn(val *[]*string) 
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeForwardingRule)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGoogleComputeForwardingRule) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -752,7 +751,7 @@ func (j *jsiiProxy_DataGoogleComputeForwardingRule)SetForEach(val cdktf.ITerrafo
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeForwardingRule)SetId(val *string) {
+func (j *jsiiProxy_DataGoogleComputeForwardingRule) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -763,7 +762,7 @@ func (j *jsiiProxy_DataGoogleComputeForwardingRule)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeForwardingRule)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGoogleComputeForwardingRule) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -774,7 +773,7 @@ func (j *jsiiProxy_DataGoogleComputeForwardingRule)SetLifecycle(val *cdktf.Terra
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeForwardingRule)SetName(val *string) {
+func (j *jsiiProxy_DataGoogleComputeForwardingRule) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -785,7 +784,7 @@ func (j *jsiiProxy_DataGoogleComputeForwardingRule)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeForwardingRule)SetProject(val *string) {
+func (j *jsiiProxy_DataGoogleComputeForwardingRule) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -796,7 +795,7 @@ func (j *jsiiProxy_DataGoogleComputeForwardingRule)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeForwardingRule)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGoogleComputeForwardingRule) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -804,7 +803,7 @@ func (j *jsiiProxy_DataGoogleComputeForwardingRule)SetProvider(val cdktf.Terrafo
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeForwardingRule)SetRegion(val *string) {
+func (j *jsiiProxy_DataGoogleComputeForwardingRule) SetRegion(val *string) {
 	if err := j.validateSetRegionParameters(val); err != nil {
 		panic(err)
 	}
@@ -827,7 +826,7 @@ func DataGoogleComputeForwardingRule_GenerateConfigForImport(scope constructs.Co
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleComputeForwardingRule.DataGoogleComputeForwardingRule",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -851,7 +850,7 @@ func DataGoogleComputeForwardingRule_GenerateConfigForImport(scope constructs.Co
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataGoogleComputeForwardingRule_IsConstruct(x interface{}) *bool {
+func DataGoogleComputeForwardingRule_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleComputeForwardingRule_IsConstructParameters(x); err != nil {
@@ -862,7 +861,7 @@ func DataGoogleComputeForwardingRule_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleComputeForwardingRule.DataGoogleComputeForwardingRule",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -870,7 +869,7 @@ func DataGoogleComputeForwardingRule_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGoogleComputeForwardingRule_IsTerraformDataSource(x interface{}) *bool {
+func DataGoogleComputeForwardingRule_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleComputeForwardingRule_IsTerraformDataSourceParameters(x); err != nil {
@@ -881,7 +880,7 @@ func DataGoogleComputeForwardingRule_IsTerraformDataSource(x interface{}) *bool 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleComputeForwardingRule.DataGoogleComputeForwardingRule",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -889,7 +888,7 @@ func DataGoogleComputeForwardingRule_IsTerraformDataSource(x interface{}) *bool 
 }
 
 // Experimental.
-func DataGoogleComputeForwardingRule_IsTerraformElement(x interface{}) *bool {
+func DataGoogleComputeForwardingRule_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleComputeForwardingRule_IsTerraformElementParameters(x); err != nil {
@@ -900,7 +899,7 @@ func DataGoogleComputeForwardingRule_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleComputeForwardingRule.DataGoogleComputeForwardingRule",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -918,27 +917,27 @@ func DataGoogleComputeForwardingRule_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleComputeForwardingRule) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataGoogleComputeForwardingRule) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataGoogleComputeForwardingRule) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataGoogleComputeForwardingRule) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -954,7 +953,7 @@ func (d *jsiiProxy_DataGoogleComputeForwardingRule) GetBooleanAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -970,7 +969,7 @@ func (d *jsiiProxy_DataGoogleComputeForwardingRule) GetBooleanMapAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -986,7 +985,7 @@ func (d *jsiiProxy_DataGoogleComputeForwardingRule) GetListAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1002,7 +1001,7 @@ func (d *jsiiProxy_DataGoogleComputeForwardingRule) GetNumberAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1018,7 +1017,7 @@ func (d *jsiiProxy_DataGoogleComputeForwardingRule) GetNumberListAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1034,7 +1033,7 @@ func (d *jsiiProxy_DataGoogleComputeForwardingRule) GetNumberMapAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1050,7 +1049,7 @@ func (d *jsiiProxy_DataGoogleComputeForwardingRule) GetStringAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1066,7 +1065,7 @@ func (d *jsiiProxy_DataGoogleComputeForwardingRule) GetStringMapAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1082,7 +1081,7 @@ func (d *jsiiProxy_DataGoogleComputeForwardingRule) InterpolationForAttribute(te
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1096,7 +1095,7 @@ func (d *jsiiProxy_DataGoogleComputeForwardingRule) OverrideLogicalId(newLogical
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1132,8 +1131,8 @@ func (d *jsiiProxy_DataGoogleComputeForwardingRule) ResetRegion() {
 	)
 }
 
-func (d *jsiiProxy_DataGoogleComputeForwardingRule) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleComputeForwardingRule) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1145,8 +1144,8 @@ func (d *jsiiProxy_DataGoogleComputeForwardingRule) SynthesizeAttributes() *map[
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleComputeForwardingRule) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleComputeForwardingRule) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1158,8 +1157,8 @@ func (d *jsiiProxy_DataGoogleComputeForwardingRule) SynthesizeHclAttributes() *m
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleComputeForwardingRule) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleComputeForwardingRule) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1171,8 +1170,8 @@ func (d *jsiiProxy_DataGoogleComputeForwardingRule) ToHclTerraform() interface{}
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleComputeForwardingRule) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleComputeForwardingRule) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1197,8 +1196,8 @@ func (d *jsiiProxy_DataGoogleComputeForwardingRule) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleComputeForwardingRule) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleComputeForwardingRule) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1209,4 +1208,3 @@ func (d *jsiiProxy_DataGoogleComputeForwardingRule) ToTerraform() interface{} {
 
 	return returns
 }
-

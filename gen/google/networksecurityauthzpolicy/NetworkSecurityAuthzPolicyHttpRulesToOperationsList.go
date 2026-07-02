@@ -17,8 +17,8 @@ type NetworkSecurityAuthzPolicyHttpRulesToOperationsList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type NetworkSecurityAuthzPolicyHttpRulesToOperationsList interface {
 	Get(index *float64) NetworkSecurityAuthzPolicyHttpRulesToOperationsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToOperationsList) Fqn() *s
 	return returns
 }
 
-func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToOperationsList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToOperationsList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToOperationsList) WrapsSet
 	return returns
 }
 
-
 func NewNetworkSecurityAuthzPolicyHttpRulesToOperationsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkSecurityAuthzPolicyHttpRulesToOperationsList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewNetworkSecurityAuthzPolicyHttpRulesToOperationsList(terraformResource cd
 
 	_jsii_.Create(
 		"@cdktf/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyHttpRulesToOperationsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewNetworkSecurityAuthzPolicyHttpRulesToOperationsList_Override(n NetworkSe
 
 	_jsii_.Create(
 		"@cdktf/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyHttpRulesToOperationsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToOperationsList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToOperationsList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToOperationsList)SetIntern
 	)
 }
 
-func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToOperationsList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToOperationsList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToOperationsList)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToOperationsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToOperationsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToOperationsList)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToOperationsList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToOperationsList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToOperationsList) AllWithM
 	_jsii_.Invoke(
 		n,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToOperationsList) Get(inde
 	_jsii_.Invoke(
 		n,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToOperationsList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToOperationsList) Resolve(_context cdktf.IResolveContext) any {
 	if err := n.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		n,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToOperationsList) ToString
 
 	return returns
 }
-

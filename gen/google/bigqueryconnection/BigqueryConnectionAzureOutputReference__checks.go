@@ -98,7 +98,7 @@ func (b *jsiiProxy_BigqueryConnectionAzureOutputReference) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryConnectionAzureOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryConnectionAzureOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewBigqueryConnectionAzureOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

@@ -6,9 +6,9 @@ import (
 
 type SpannerInstanceConfigAConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type SpannerInstanceConfigAConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name of this instance configuration as it appears in UIs.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_instance_config#display_name SpannerInstanceConfigA#display_name}
@@ -26,7 +26,7 @@ type SpannerInstanceConfigAConfig struct {
 	// replicas block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_instance_config#replicas SpannerInstanceConfigA#replicas}
-	Replicas interface{} `field:"required" json:"replicas" yaml:"replicas"`
+	Replicas any `field:"required" json:"replicas" yaml:"replicas"`
 	// Base configuration name, e.g. nam3, based on which this configuration is created. Only set for user managed configurations. baseConfig must refer to a configuration of type GOOGLE_MANAGED in the same project as this configuration.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_instance_config#base_config SpannerInstanceConfigA#base_config}
@@ -54,4 +54,3 @@ type SpannerInstanceConfigAConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_instance_config#timeouts SpannerInstanceConfigA#timeouts}
 	Timeouts *SpannerInstanceConfigTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

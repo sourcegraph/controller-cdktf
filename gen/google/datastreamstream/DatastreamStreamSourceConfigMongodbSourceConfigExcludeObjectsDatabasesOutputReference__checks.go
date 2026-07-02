@@ -90,7 +90,7 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigMongodbSourceConfigExcludeObjects
 	return nil
 }
 
-func (d *jsiiProxy_DatastreamStreamSourceConfigMongodbSourceConfigExcludeObjectsDatabasesOutputReference) validatePutCollectionsParameters(value interface{}) error {
+func (d *jsiiProxy_DatastreamStreamSourceConfigMongodbSourceConfigExcludeObjectsDatabasesOutputReference) validatePutCollectionsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigMongodbSourceConfigExcludeObjects
 	return nil
 }
 
-func (j *jsiiProxy_DatastreamStreamSourceConfigMongodbSourceConfigExcludeObjectsDatabasesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DatastreamStreamSourceConfigMongodbSourceConfigExcludeObjectsDatabasesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -202,7 +202,7 @@ func (j *jsiiProxy_DatastreamStreamSourceConfigMongodbSourceConfigExcludeObjects
 	return nil
 }
 
-func (j *jsiiProxy_DatastreamStreamSourceConfigMongodbSourceConfigExcludeObjectsDatabasesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DatastreamStreamSourceConfigMongodbSourceConfigExcludeObjectsDatabasesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -261,4 +261,3 @@ func validateNewDatastreamStreamSourceConfigMongodbSourceConfigExcludeObjectsDat
 
 	return nil
 }
-

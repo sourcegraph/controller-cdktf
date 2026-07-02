@@ -34,7 +34,7 @@ func (r *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsList) valid
 	return nil
 }
 
-func (j *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewRedisClusterUserCreatedConnectionsClusterEndpointsListParameters
 
 	return nil
 }
-

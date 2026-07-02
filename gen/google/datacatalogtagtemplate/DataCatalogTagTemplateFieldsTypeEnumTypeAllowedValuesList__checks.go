@@ -34,7 +34,7 @@ func (d *jsiiProxy_DataCatalogTagTemplateFieldsTypeEnumTypeAllowedValuesList) va
 	return nil
 }
 
-func (j *jsiiProxy_DataCatalogTagTemplateFieldsTypeEnumTypeAllowedValuesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataCatalogTagTemplateFieldsTypeEnumTypeAllowedValuesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDataCatalogTagTemplateFieldsTypeEnumTypeAllowedValuesListParamet
 
 	return nil
 }
-

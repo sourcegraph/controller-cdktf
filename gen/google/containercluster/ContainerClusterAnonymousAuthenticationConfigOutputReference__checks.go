@@ -98,7 +98,7 @@ func (c *jsiiProxy_ContainerClusterAnonymousAuthenticationConfigOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterAnonymousAuthenticationConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterAnonymousAuthenticationConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewContainerClusterAnonymousAuthenticationConfigOutputReferencePara
 
 	return nil
 }
-

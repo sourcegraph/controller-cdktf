@@ -6,9 +6,9 @@ import (
 
 type KmsCryptoKeyConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type KmsCryptoKeyConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The KeyRing that this key belongs to. Format: ''projects/{{project}}/locations/{{location}}/keyRings/{{keyRing}}''.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_crypto_key#key_ring KmsCryptoKey#key_ring}
@@ -49,7 +49,7 @@ type KmsCryptoKeyConfig struct {
 	// Whether this key may contain imported versions only.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_crypto_key#import_only KmsCryptoKey#import_only}
-	ImportOnly interface{} `field:"optional" json:"importOnly" yaml:"importOnly"`
+	ImportOnly any `field:"optional" json:"importOnly" yaml:"importOnly"`
 	// Labels with user-defined metadata to apply to this resource.
 	//
 	// **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
@@ -76,7 +76,7 @@ type KmsCryptoKeyConfig struct {
 	// This field is only applicable during initial CryptoKey creation.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_crypto_key#skip_initial_version_creation KmsCryptoKey#skip_initial_version_creation}
-	SkipInitialVersionCreation interface{} `field:"optional" json:"skipInitialVersionCreation" yaml:"skipInitialVersionCreation"`
+	SkipInitialVersionCreation any `field:"optional" json:"skipInitialVersionCreation" yaml:"skipInitialVersionCreation"`
 	// timeouts block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_crypto_key#timeouts KmsCryptoKey#timeouts}
@@ -86,4 +86,3 @@ type KmsCryptoKeyConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_crypto_key#version_template KmsCryptoKey#version_template}
 	VersionTemplate *KmsCryptoKeyVersionTemplate `field:"optional" json:"versionTemplate" yaml:"versionTemplate"`
 }
-

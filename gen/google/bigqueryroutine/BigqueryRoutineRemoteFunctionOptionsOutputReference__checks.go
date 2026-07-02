@@ -98,7 +98,7 @@ func (b *jsiiProxy_BigqueryRoutineRemoteFunctionOptionsOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryRoutineRemoteFunctionOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryRoutineRemoteFunctionOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewBigqueryRoutineRemoteFunctionOptionsOutputReferenceParameters(te
 
 	return nil
 }
-

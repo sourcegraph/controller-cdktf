@@ -106,7 +106,7 @@ func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -254,4 +254,3 @@ func validateNewPubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputRefere
 
 	return nil
 }
-

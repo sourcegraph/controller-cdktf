@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCatalogTagFieldsOutputReference) validateResolveParameter
 	return nil
 }
 
-func (j *jsiiProxy_DataCatalogTagFieldsOutputReference) validateSetBoolValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataCatalogTagFieldsOutputReference) validateSetBoolValueParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -118,7 +118,7 @@ func (j *jsiiProxy_DataCatalogTagFieldsOutputReference) validateSetBoolValuePara
 	return nil
 }
 
-func (j *jsiiProxy_DataCatalogTagFieldsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCatalogTagFieldsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -207,7 +207,7 @@ func (j *jsiiProxy_DataCatalogTagFieldsOutputReference) validateSetFieldNamePara
 	return nil
 }
 
-func (j *jsiiProxy_DataCatalogTagFieldsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataCatalogTagFieldsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -282,4 +282,3 @@ func validateNewDataCatalogTagFieldsOutputReferenceParameters(terraformResource 
 
 	return nil
 }
-

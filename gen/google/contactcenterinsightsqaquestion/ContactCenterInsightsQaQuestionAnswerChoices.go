@@ -1,11 +1,10 @@
 package contactcenterinsightsqaquestion
 
-
 type ContactCenterInsightsQaQuestionAnswerChoices struct {
 	// Boolean value.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/contact_center_insights_qa_question#bool_value ContactCenterInsightsQaQuestion#bool_value}
-	BoolValue interface{} `field:"optional" json:"boolValue" yaml:"boolValue"`
+	BoolValue any `field:"optional" json:"boolValue" yaml:"boolValue"`
 	// A short string used as an identifier.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/contact_center_insights_qa_question#key ContactCenterInsightsQaQuestion#key}
@@ -17,7 +16,7 @@ type ContactCenterInsightsQaQuestionAnswerChoices struct {
 	// excluded from any score calculations.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/contact_center_insights_qa_question#na_value ContactCenterInsightsQaQuestion#na_value}
-	NaValue interface{} `field:"optional" json:"naValue" yaml:"naValue"`
+	NaValue any `field:"optional" json:"naValue" yaml:"naValue"`
 	// Numerical value.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/contact_center_insights_qa_question#num_value ContactCenterInsightsQaQuestion#num_value}
@@ -33,4 +32,3 @@ type ContactCenterInsightsQaQuestionAnswerChoices struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/contact_center_insights_qa_question#str_value ContactCenterInsightsQaQuestion#str_value}
 	StrValue *string `field:"optional" json:"strValue" yaml:"strValue"`
 }
-

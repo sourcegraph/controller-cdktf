@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleMemorystoreInstanceCrossInstanceReplicationConfigPr
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleMemorystoreInstanceCrossInstanceReplicationConfigPrimaryInstanceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleMemorystoreInstanceCrossInstanceReplicationConfigPrimaryInstanceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleMemorystoreInstanceCrossInstanceReplicationConfigPrima
 
 	return nil
 }
-

@@ -19,7 +19,7 @@ func (c *jsiiProxy_ComputeNetwork) validateAddMoveTargetParameters(moveTarget *s
 	return nil
 }
 
-func (c *jsiiProxy_ComputeNetwork) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_ComputeNetwork) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_ComputeNetwork) validateMoveFromIdParameters(id *string) erro
 	return nil
 }
 
-func (c *jsiiProxy_ComputeNetwork) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_ComputeNetwork) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateComputeNetwork_GenerateConfigForImportParameters(scope constructs.C
 	return nil
 }
 
-func validateComputeNetwork_IsConstructParameters(x interface{}) error {
+func validateComputeNetwork_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateComputeNetwork_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateComputeNetwork_IsTerraformElementParameters(x interface{}) error {
+func validateComputeNetwork_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateComputeNetwork_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateComputeNetwork_IsTerraformResourceParameters(x interface{}) error {
+func validateComputeNetwork_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func validateComputeNetwork_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_ComputeNetwork) validateSetAutoCreateSubnetworksParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeNetwork) validateSetAutoCreateSubnetworksParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -286,7 +286,7 @@ func (j *jsiiProxy_ComputeNetwork) validateSetAutoCreateSubnetworksParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_ComputeNetwork) validateSetBgpAlwaysCompareMedParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeNetwork) validateSetBgpAlwaysCompareMedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -322,7 +322,7 @@ func (j *jsiiProxy_ComputeNetwork) validateSetBgpInterRegionCostParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_ComputeNetwork) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeNetwork) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -355,7 +355,7 @@ func (j *jsiiProxy_ComputeNetwork) validateSetConnectionParameters(val interface
 	return nil
 }
 
-func (j *jsiiProxy_ComputeNetwork) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeNetwork) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -412,7 +412,7 @@ func (j *jsiiProxy_ComputeNetwork) validateSetCountParameters(val interface{}) e
 	return nil
 }
 
-func (j *jsiiProxy_ComputeNetwork) validateSetDeleteBgpAlwaysCompareMedParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeNetwork) validateSetDeleteBgpAlwaysCompareMedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -432,7 +432,7 @@ func (j *jsiiProxy_ComputeNetwork) validateSetDeleteBgpAlwaysCompareMedParameter
 	return nil
 }
 
-func (j *jsiiProxy_ComputeNetwork) validateSetDeleteDefaultRoutesOnCreateParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeNetwork) validateSetDeleteDefaultRoutesOnCreateParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -460,7 +460,7 @@ func (j *jsiiProxy_ComputeNetwork) validateSetDescriptionParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_ComputeNetwork) validateSetEnableUlaInternalIpv6Parameters(val interface{}) error {
+func (j *jsiiProxy_ComputeNetwork) validateSetEnableUlaInternalIpv6Parameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -544,7 +544,7 @@ func (j *jsiiProxy_ComputeNetwork) validateSetProjectParameters(val *string) err
 	return nil
 }
 
-func (j *jsiiProxy_ComputeNetwork) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ComputeNetwork) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -616,4 +616,3 @@ func validateNewComputeNetworkParameters(scope constructs.Construct, id *string,
 
 	return nil
 }
-

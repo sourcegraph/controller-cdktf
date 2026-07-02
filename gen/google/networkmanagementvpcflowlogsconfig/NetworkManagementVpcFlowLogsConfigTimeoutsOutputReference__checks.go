@@ -98,7 +98,7 @@ func (n *jsiiProxy_NetworkManagementVpcFlowLogsConfigTimeoutsOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_NetworkManagementVpcFlowLogsConfigTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkManagementVpcFlowLogsConfigTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_NetworkManagementVpcFlowLogsConfigTimeoutsOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_NetworkManagementVpcFlowLogsConfigTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkManagementVpcFlowLogsConfigTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewNetworkManagementVpcFlowLogsConfigTimeoutsOutputReferenceParamet
 
 	return nil
 }
-

@@ -12,9 +12,9 @@ type ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputReference inter
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,9 +25,9 @@ type ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputReference inter
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	ExpiresAt() *string
 	// Experimental.
 	Fqn() *string
@@ -44,7 +44,7 @@ type ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputReference inter
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -68,7 +68,7 @@ type ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputReference inter
 	ResetEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,8 +81,8 @@ type jsiiProxy_ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputRefer
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -111,8 +111,8 @@ func (j *jsiiProxy_ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputR
 	return returns
 }
 
-func (j *jsiiProxy_ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputReference) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputReference) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -121,8 +121,8 @@ func (j *jsiiProxy_ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputR
 	return returns
 }
 
-func (j *jsiiProxy_ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputReference) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputReference) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -181,7 +181,6 @@ func (j *jsiiProxy_ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputR
 	return returns
 }
 
-
 func NewApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputReference {
 	_init_.Initialize()
 
@@ -192,7 +191,7 @@ func NewApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputReference(te
 
 	_jsii_.Create(
 		"@cdktf/provider-google.apigeeAddonsConfig.ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -204,12 +203,12 @@ func NewApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputReference_Ov
 
 	_jsii_.Create(
 		"@cdktf/provider-google.apigeeAddonsConfig.ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		a,
 	)
 }
 
-func (j *jsiiProxy_ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -220,7 +219,7 @@ func (j *jsiiProxy_ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputR
 	)
 }
 
-func (j *jsiiProxy_ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputR
 	)
 }
 
-func (j *jsiiProxy_ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputReference)SetEnabled(val interface{}) {
+func (j *jsiiProxy_ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputReference) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputR
 	)
 }
 
-func (j *jsiiProxy_ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputReference)SetInternalValue(val *ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfig) {
+func (j *jsiiProxy_ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputReference) SetInternalValue(val *ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputR
 	)
 }
 
-func (j *jsiiProxy_ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -264,7 +263,7 @@ func (j *jsiiProxy_ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputR
 	)
 }
 
-func (j *jsiiProxy_ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,16 +287,16 @@ func (a *jsiiProxy_ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputR
 	return returns
 }
 
-func (a *jsiiProxy_ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -313,7 +312,7 @@ func (a *jsiiProxy_ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputR
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -329,7 +328,7 @@ func (a *jsiiProxy_ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputR
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -345,7 +344,7 @@ func (a *jsiiProxy_ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputR
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -361,7 +360,7 @@ func (a *jsiiProxy_ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputR
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -377,7 +376,7 @@ func (a *jsiiProxy_ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputR
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -393,7 +392,7 @@ func (a *jsiiProxy_ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputR
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -409,7 +408,7 @@ func (a *jsiiProxy_ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputR
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -425,7 +424,7 @@ func (a *jsiiProxy_ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputR
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -454,7 +453,7 @@ func (a *jsiiProxy_ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputR
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -469,16 +468,16 @@ func (a *jsiiProxy_ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputR
 	)
 }
 
-func (a *jsiiProxy_ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -497,4 +496,3 @@ func (a *jsiiProxy_ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputR
 
 	return returns
 }
-

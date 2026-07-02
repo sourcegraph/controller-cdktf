@@ -12,9 +12,9 @@ type NetworkServicesTcpRouteTimeoutsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,8 +33,8 @@ type NetworkServicesTcpRouteTimeoutsOutputReference interface {
 	DeleteInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -49,7 +49,7 @@ type NetworkServicesTcpRouteTimeoutsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type NetworkServicesTcpRouteTimeoutsOutputReference interface {
 	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_NetworkServicesTcpRouteTimeoutsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_NetworkServicesTcpRouteTimeoutsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkServicesTcpRouteTimeoutsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_NetworkServicesTcpRouteTimeoutsOutputReference) Fqn() *string
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesTcpRouteTimeoutsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkServicesTcpRouteTimeoutsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_NetworkServicesTcpRouteTimeoutsOutputReference) UpdateInput()
 	return returns
 }
 
-
 func NewNetworkServicesTcpRouteTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) NetworkServicesTcpRouteTimeoutsOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewNetworkServicesTcpRouteTimeoutsOutputReference(terraformResource cdktf.I
 
 	_jsii_.Create(
 		"@cdktf/provider-google.networkServicesTcpRoute.NetworkServicesTcpRouteTimeoutsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewNetworkServicesTcpRouteTimeoutsOutputReference_Override(n NetworkService
 
 	_jsii_.Create(
 		"@cdktf/provider-google.networkServicesTcpRoute.NetworkServicesTcpRouteTimeoutsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesTcpRouteTimeoutsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_NetworkServicesTcpRouteTimeoutsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_NetworkServicesTcpRouteTimeoutsOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesTcpRouteTimeoutsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_NetworkServicesTcpRouteTimeoutsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_NetworkServicesTcpRouteTimeoutsOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesTcpRouteTimeoutsOutputReference)SetCreate(val *string) {
+func (j *jsiiProxy_NetworkServicesTcpRouteTimeoutsOutputReference) SetCreate(val *string) {
 	if err := j.validateSetCreateParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_NetworkServicesTcpRouteTimeoutsOutputReference)SetCreate(val 
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesTcpRouteTimeoutsOutputReference)SetDelete(val *string) {
+func (j *jsiiProxy_NetworkServicesTcpRouteTimeoutsOutputReference) SetDelete(val *string) {
 	if err := j.validateSetDeleteParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_NetworkServicesTcpRouteTimeoutsOutputReference)SetDelete(val 
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesTcpRouteTimeoutsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_NetworkServicesTcpRouteTimeoutsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_NetworkServicesTcpRouteTimeoutsOutputReference)SetInternalVal
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesTcpRouteTimeoutsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_NetworkServicesTcpRouteTimeoutsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_NetworkServicesTcpRouteTimeoutsOutputReference)SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesTcpRouteTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NetworkServicesTcpRouteTimeoutsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_NetworkServicesTcpRouteTimeoutsOutputReference)SetTerraformRe
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesTcpRouteTimeoutsOutputReference)SetUpdate(val *string) {
+func (j *jsiiProxy_NetworkServicesTcpRouteTimeoutsOutputReference) SetUpdate(val *string) {
 	if err := j.validateSetUpdateParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (n *jsiiProxy_NetworkServicesTcpRouteTimeoutsOutputReference) ComputeFqn() 
 	return returns
 }
 
-func (n *jsiiProxy_NetworkServicesTcpRouteTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (n *jsiiProxy_NetworkServicesTcpRouteTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (n *jsiiProxy_NetworkServicesTcpRouteTimeoutsOutputReference) GetBooleanAtt
 	_jsii_.Invoke(
 		n,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (n *jsiiProxy_NetworkServicesTcpRouteTimeoutsOutputReference) GetBooleanMap
 	_jsii_.Invoke(
 		n,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (n *jsiiProxy_NetworkServicesTcpRouteTimeoutsOutputReference) GetListAttrib
 	_jsii_.Invoke(
 		n,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (n *jsiiProxy_NetworkServicesTcpRouteTimeoutsOutputReference) GetNumberAttr
 	_jsii_.Invoke(
 		n,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (n *jsiiProxy_NetworkServicesTcpRouteTimeoutsOutputReference) GetNumberList
 	_jsii_.Invoke(
 		n,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (n *jsiiProxy_NetworkServicesTcpRouteTimeoutsOutputReference) GetNumberMapA
 	_jsii_.Invoke(
 		n,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (n *jsiiProxy_NetworkServicesTcpRouteTimeoutsOutputReference) GetStringAttr
 	_jsii_.Invoke(
 		n,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (n *jsiiProxy_NetworkServicesTcpRouteTimeoutsOutputReference) GetStringMapA
 	_jsii_.Invoke(
 		n,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (n *jsiiProxy_NetworkServicesTcpRouteTimeoutsOutputReference) Interpolation
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (n *jsiiProxy_NetworkServicesTcpRouteTimeoutsOutputReference) ResetUpdate()
 	)
 }
 
-func (n *jsiiProxy_NetworkServicesTcpRouteTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (n *jsiiProxy_NetworkServicesTcpRouteTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := n.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		n,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (n *jsiiProxy_NetworkServicesTcpRouteTimeoutsOutputReference) ToString() *s
 
 	return returns
 }
-

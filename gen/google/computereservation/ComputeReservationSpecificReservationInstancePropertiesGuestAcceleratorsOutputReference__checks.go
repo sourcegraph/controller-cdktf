@@ -114,7 +114,7 @@ func (j *jsiiProxy_ComputeReservationSpecificReservationInstancePropertiesGuestA
 	return nil
 }
 
-func (j *jsiiProxy_ComputeReservationSpecificReservationInstancePropertiesGuestAcceleratorsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeReservationSpecificReservationInstancePropertiesGuestAcceleratorsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_ComputeReservationSpecificReservationInstancePropertiesGuestA
 	return nil
 }
 
-func (j *jsiiProxy_ComputeReservationSpecificReservationInstancePropertiesGuestAcceleratorsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeReservationSpecificReservationInstancePropertiesGuestAcceleratorsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewComputeReservationSpecificReservationInstancePropertiesGuestAcce
 
 	return nil
 }
-

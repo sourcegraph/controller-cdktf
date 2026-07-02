@@ -1,11 +1,10 @@
 package healthcarehl7v2store
 
-
 type HealthcareHl7V2StoreParserConfig struct {
 	// Determines whether messages with no header are allowed.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_hl7_v2_store#allow_null_header HealthcareHl7V2Store#allow_null_header}
-	AllowNullHeader interface{} `field:"optional" json:"allowNullHeader" yaml:"allowNullHeader"`
+	AllowNullHeader any `field:"optional" json:"allowNullHeader" yaml:"allowNullHeader"`
 	// JSON encoded string for schemas used to parse messages in this store if schematized parsing is desired.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_hl7_v2_store#schema HealthcareHl7V2Store#schema}
@@ -23,4 +22,3 @@ type HealthcareHl7V2StoreParserConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_hl7_v2_store#version HealthcareHl7V2Store#version}
 	Version *string `field:"optional" json:"version" yaml:"version"`
 }
-

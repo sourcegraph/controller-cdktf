@@ -109,7 +109,7 @@ func (n *jsiiProxy_NetworkServicesHttpRouteRulesMatchesHeadersOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesHttpRouteRulesMatchesHeadersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkServicesHttpRouteRulesMatchesHeadersOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -190,7 +190,7 @@ func (j *jsiiProxy_NetworkServicesHttpRouteRulesMatchesHeadersOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesHttpRouteRulesMatchesHeadersOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkServicesHttpRouteRulesMatchesHeadersOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -214,7 +214,7 @@ func (j *jsiiProxy_NetworkServicesHttpRouteRulesMatchesHeadersOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesHttpRouteRulesMatchesHeadersOutputReference) validateSetInvertMatchParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkServicesHttpRouteRulesMatchesHeadersOutputReference) validateSetInvertMatchParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func (j *jsiiProxy_NetworkServicesHttpRouteRulesMatchesHeadersOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesHttpRouteRulesMatchesHeadersOutputReference) validateSetPresentMatchParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkServicesHttpRouteRulesMatchesHeadersOutputReference) validateSetPresentMatchParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -313,4 +313,3 @@ func validateNewNetworkServicesHttpRouteRulesMatchesHeadersOutputReferenceParame
 
 	return nil
 }
-

@@ -12,9 +12,9 @@ type GkeonpremVmwareAdminClusterStatusOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -42,7 +42,7 @@ type GkeonpremVmwareAdminClusterStatusOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -65,7 +65,7 @@ type GkeonpremVmwareAdminClusterStatusOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -78,8 +78,8 @@ type jsiiProxy_GkeonpremVmwareAdminClusterStatusOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GkeonpremVmwareAdminClusterStatusOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeonpremVmwareAdminClusterStatusOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -168,7 +168,6 @@ func (j *jsiiProxy_GkeonpremVmwareAdminClusterStatusOutputReference) TerraformRe
 	return returns
 }
 
-
 func NewGkeonpremVmwareAdminClusterStatusOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GkeonpremVmwareAdminClusterStatusOutputReference {
 	_init_.Initialize()
 
@@ -179,7 +178,7 @@ func NewGkeonpremVmwareAdminClusterStatusOutputReference(terraformResource cdktf
 
 	_jsii_.Create(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterStatusOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -191,12 +190,12 @@ func NewGkeonpremVmwareAdminClusterStatusOutputReference_Override(g GkeonpremVmw
 
 	_jsii_.Create(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterStatusOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareAdminClusterStatusOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GkeonpremVmwareAdminClusterStatusOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -207,7 +206,7 @@ func (j *jsiiProxy_GkeonpremVmwareAdminClusterStatusOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareAdminClusterStatusOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GkeonpremVmwareAdminClusterStatusOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -218,7 +217,7 @@ func (j *jsiiProxy_GkeonpremVmwareAdminClusterStatusOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareAdminClusterStatusOutputReference)SetInternalValue(val *GkeonpremVmwareAdminClusterStatus) {
+func (j *jsiiProxy_GkeonpremVmwareAdminClusterStatusOutputReference) SetInternalValue(val *GkeonpremVmwareAdminClusterStatus) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -229,7 +228,7 @@ func (j *jsiiProxy_GkeonpremVmwareAdminClusterStatusOutputReference)SetInternalV
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareAdminClusterStatusOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GkeonpremVmwareAdminClusterStatusOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -240,7 +239,7 @@ func (j *jsiiProxy_GkeonpremVmwareAdminClusterStatusOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareAdminClusterStatusOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GkeonpremVmwareAdminClusterStatusOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -264,16 +263,16 @@ func (g *jsiiProxy_GkeonpremVmwareAdminClusterStatusOutputReference) ComputeFqn(
 	return returns
 }
 
-func (g *jsiiProxy_GkeonpremVmwareAdminClusterStatusOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GkeonpremVmwareAdminClusterStatusOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -289,7 +288,7 @@ func (g *jsiiProxy_GkeonpremVmwareAdminClusterStatusOutputReference) GetBooleanA
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -305,7 +304,7 @@ func (g *jsiiProxy_GkeonpremVmwareAdminClusterStatusOutputReference) GetBooleanM
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -321,7 +320,7 @@ func (g *jsiiProxy_GkeonpremVmwareAdminClusterStatusOutputReference) GetListAttr
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -337,7 +336,7 @@ func (g *jsiiProxy_GkeonpremVmwareAdminClusterStatusOutputReference) GetNumberAt
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -353,7 +352,7 @@ func (g *jsiiProxy_GkeonpremVmwareAdminClusterStatusOutputReference) GetNumberLi
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (g *jsiiProxy_GkeonpremVmwareAdminClusterStatusOutputReference) GetNumberMa
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (g *jsiiProxy_GkeonpremVmwareAdminClusterStatusOutputReference) GetStringAt
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (g *jsiiProxy_GkeonpremVmwareAdminClusterStatusOutputReference) GetStringMa
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -430,23 +429,23 @@ func (g *jsiiProxy_GkeonpremVmwareAdminClusterStatusOutputReference) Interpolati
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GkeonpremVmwareAdminClusterStatusOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GkeonpremVmwareAdminClusterStatusOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -465,4 +464,3 @@ func (g *jsiiProxy_GkeonpremVmwareAdminClusterStatusOutputReference) ToString() 
 
 	return returns
 }
-

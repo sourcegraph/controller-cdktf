@@ -34,7 +34,7 @@ func (v *jsiiProxy_VmwareengineClusterNodeTypeConfigsList) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_VmwareengineClusterNodeTypeConfigsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_VmwareengineClusterNodeTypeConfigsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewVmwareengineClusterNodeTypeConfigsListParameters(terraformResour
 
 	return nil
 }
-

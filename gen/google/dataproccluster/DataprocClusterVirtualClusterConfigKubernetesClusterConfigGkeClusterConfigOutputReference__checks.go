@@ -90,7 +90,7 @@ func (d *jsiiProxy_DataprocClusterVirtualClusterConfigKubernetesClusterConfigGke
 	return nil
 }
 
-func (d *jsiiProxy_DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference) validatePutNodePoolTargetParameters(value interface{}) error {
+func (d *jsiiProxy_DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference) validatePutNodePoolTargetParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (d *jsiiProxy_DataprocClusterVirtualClusterConfigKubernetesClusterConfigGke
 	return nil
 }
 
-func (j *jsiiProxy_DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -237,4 +237,3 @@ func validateNewDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClu
 
 	return nil
 }
-

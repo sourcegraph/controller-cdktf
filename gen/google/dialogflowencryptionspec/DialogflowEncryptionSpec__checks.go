@@ -19,7 +19,7 @@ func (d *jsiiProxy_DialogflowEncryptionSpec) validateAddMoveTargetParameters(mov
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowEncryptionSpec) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DialogflowEncryptionSpec) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (d *jsiiProxy_DialogflowEncryptionSpec) validateMoveFromIdParameters(id *st
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowEncryptionSpec) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (d *jsiiProxy_DialogflowEncryptionSpec) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateDialogflowEncryptionSpec_GenerateConfigForImportParameters(scope co
 	return nil
 }
 
-func validateDialogflowEncryptionSpec_IsConstructParameters(x interface{}) error {
+func validateDialogflowEncryptionSpec_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateDialogflowEncryptionSpec_IsConstructParameters(x interface{}) error
 	return nil
 }
 
-func validateDialogflowEncryptionSpec_IsTerraformElementParameters(x interface{}) error {
+func validateDialogflowEncryptionSpec_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateDialogflowEncryptionSpec_IsTerraformElementParameters(x interface{}
 	return nil
 }
 
-func validateDialogflowEncryptionSpec_IsTerraformResourceParameters(x interface{}) error {
+func validateDialogflowEncryptionSpec_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func validateDialogflowEncryptionSpec_IsTerraformResourceParameters(x interface{
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowEncryptionSpec) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowEncryptionSpec) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -299,7 +299,7 @@ func (j *jsiiProxy_DialogflowEncryptionSpec) validateSetConnectionParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowEncryptionSpec) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowEncryptionSpec) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -388,7 +388,7 @@ func (j *jsiiProxy_DialogflowEncryptionSpec) validateSetProjectParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowEncryptionSpec) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_DialogflowEncryptionSpec) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -452,4 +452,3 @@ func validateNewDialogflowEncryptionSpecParameters(scope constructs.Construct, i
 
 	return nil
 }
-

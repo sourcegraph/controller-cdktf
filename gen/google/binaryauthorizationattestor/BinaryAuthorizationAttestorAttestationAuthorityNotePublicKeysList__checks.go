@@ -34,7 +34,7 @@ func (b *jsiiProxy_BinaryAuthorizationAttestorAttestationAuthorityNotePublicKeys
 	return nil
 }
 
-func (j *jsiiProxy_BinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_BinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewBinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysLis
 
 	return nil
 }
-

@@ -90,7 +90,7 @@ func (d *jsiiProxy_DatastreamStreamBackfillAllOracleExcludedObjectsOutputReferen
 	return nil
 }
 
-func (d *jsiiProxy_DatastreamStreamBackfillAllOracleExcludedObjectsOutputReference) validatePutOracleSchemasParameters(value interface{}) error {
+func (d *jsiiProxy_DatastreamStreamBackfillAllOracleExcludedObjectsOutputReference) validatePutOracleSchemasParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (d *jsiiProxy_DatastreamStreamBackfillAllOracleExcludedObjectsOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_DatastreamStreamBackfillAllOracleExcludedObjectsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DatastreamStreamBackfillAllOracleExcludedObjectsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -229,4 +229,3 @@ func validateNewDatastreamStreamBackfillAllOracleExcludedObjectsOutputReferenceP
 
 	return nil
 }
-

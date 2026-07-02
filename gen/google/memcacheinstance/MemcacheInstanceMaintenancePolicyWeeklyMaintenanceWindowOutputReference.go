@@ -12,9 +12,9 @@ type MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference int
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,8 +33,8 @@ type MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference int
 	DurationInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	StartTime() MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeOutputReference
 	StartTimeInput() *MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTime
 	// Experimental.
@@ -48,7 +48,7 @@ type MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference int
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -72,7 +72,7 @@ type MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference int
 	PutStartTime(value *MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTime)
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,8 +85,8 @@ type jsiiProxy_MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputRef
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -165,8 +165,8 @@ func (j *jsiiProxy_MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutpu
 	return returns
 }
 
-func (j *jsiiProxy_MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -215,7 +215,6 @@ func (j *jsiiProxy_MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutpu
 	return returns
 }
 
-
 func NewMemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference {
 	_init_.Initialize()
 
@@ -226,7 +225,7 @@ func NewMemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference(
 
 	_jsii_.Create(
 		"@cdktf/provider-google.memcacheInstance.MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -238,12 +237,12 @@ func NewMemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference_
 
 	_jsii_.Create(
 		"@cdktf/provider-google.memcacheInstance.MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		m,
 	)
 }
 
-func (j *jsiiProxy_MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutpu
 	)
 }
 
-func (j *jsiiProxy_MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutpu
 	)
 }
 
-func (j *jsiiProxy_MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference)SetDay(val *string) {
+func (j *jsiiProxy_MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference) SetDay(val *string) {
 	if err := j.validateSetDayParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutpu
 	)
 }
 
-func (j *jsiiProxy_MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference)SetDuration(val *string) {
+func (j *jsiiProxy_MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference) SetDuration(val *string) {
 	if err := j.validateSetDurationParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,7 +286,7 @@ func (j *jsiiProxy_MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutpu
 	)
 }
 
-func (j *jsiiProxy_MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -298,7 +297,7 @@ func (j *jsiiProxy_MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutpu
 	)
 }
 
-func (j *jsiiProxy_MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -309,7 +308,7 @@ func (j *jsiiProxy_MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutpu
 	)
 }
 
-func (j *jsiiProxy_MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -333,16 +332,16 @@ func (m *jsiiProxy_MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutpu
 	return returns
 }
 
-func (m *jsiiProxy_MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (m *jsiiProxy_MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -358,7 +357,7 @@ func (m *jsiiProxy_MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutpu
 	_jsii_.Invoke(
 		m,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -374,7 +373,7 @@ func (m *jsiiProxy_MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutpu
 	_jsii_.Invoke(
 		m,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -390,7 +389,7 @@ func (m *jsiiProxy_MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutpu
 	_jsii_.Invoke(
 		m,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -406,7 +405,7 @@ func (m *jsiiProxy_MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutpu
 	_jsii_.Invoke(
 		m,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -422,7 +421,7 @@ func (m *jsiiProxy_MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutpu
 	_jsii_.Invoke(
 		m,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -438,7 +437,7 @@ func (m *jsiiProxy_MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutpu
 	_jsii_.Invoke(
 		m,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -454,7 +453,7 @@ func (m *jsiiProxy_MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutpu
 	_jsii_.Invoke(
 		m,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -470,7 +469,7 @@ func (m *jsiiProxy_MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutpu
 	_jsii_.Invoke(
 		m,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -499,7 +498,7 @@ func (m *jsiiProxy_MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutpu
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -513,20 +512,20 @@ func (m *jsiiProxy_MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutpu
 	_jsii_.InvokeVoid(
 		m,
 		"putStartTime",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (m *jsiiProxy_MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := m.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -545,4 +544,3 @@ func (m *jsiiProxy_MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutpu
 
 	return returns
 }
-

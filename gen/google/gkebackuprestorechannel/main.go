@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeBackupRestoreChannel.GkeBackupRestoreChannel",
-		reflect.TypeOf((*GkeBackupRestoreChannel)(nil)).Elem(),
+		reflect.TypeFor[GkeBackupRestoreChannel](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -80,7 +80,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeBackupRestoreChannel{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -88,15 +88,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.gkeBackupRestoreChannel.GkeBackupRestoreChannelConfig",
-		reflect.TypeOf((*GkeBackupRestoreChannelConfig)(nil)).Elem(),
+		reflect.TypeFor[GkeBackupRestoreChannelConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.gkeBackupRestoreChannel.GkeBackupRestoreChannelTimeouts",
-		reflect.TypeOf((*GkeBackupRestoreChannelTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GkeBackupRestoreChannelTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeBackupRestoreChannel.GkeBackupRestoreChannelTimeoutsOutputReference",
-		reflect.TypeOf((*GkeBackupRestoreChannelTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GkeBackupRestoreChannelTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -129,7 +129,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeBackupRestoreChannelTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

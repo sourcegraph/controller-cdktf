@@ -106,7 +106,7 @@ func (j *jsiiProxy_ContainerAzureClusterControlPlaneSshConfigOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_ContainerAzureClusterControlPlaneSshConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerAzureClusterControlPlaneSshConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewContainerAzureClusterControlPlaneSshConfigOutputReferenceParamet
 
 	return nil
 }
-

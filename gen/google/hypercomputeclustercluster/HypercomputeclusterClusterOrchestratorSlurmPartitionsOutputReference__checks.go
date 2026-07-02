@@ -98,7 +98,7 @@ func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmPartitionsOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmPartitionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmPartitionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmPartitionsOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmPartitionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmPartitionsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewHypercomputeclusterClusterOrchestratorSlurmPartitionsOutputRefer
 
 	return nil
 }
-

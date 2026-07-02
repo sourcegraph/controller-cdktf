@@ -17,9 +17,9 @@ type IamWorkforcePoolProviderOidcOutputReference interface {
 	ClientSecretInput() *IamWorkforcePoolProviderOidcClientSecret
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -53,7 +53,7 @@ type IamWorkforcePoolProviderOidcOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -81,7 +81,7 @@ type IamWorkforcePoolProviderOidcOutputReference interface {
 	ResetWebSsoConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -134,8 +134,8 @@ func (j *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference) ClientSecretInpu
 	return returns
 }
 
-func (j *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -264,7 +264,6 @@ func (j *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference) WebSsoConfigInpu
 	return returns
 }
 
-
 func NewIamWorkforcePoolProviderOidcOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) IamWorkforcePoolProviderOidcOutputReference {
 	_init_.Initialize()
 
@@ -275,7 +274,7 @@ func NewIamWorkforcePoolProviderOidcOutputReference(terraformResource cdktf.IInt
 
 	_jsii_.Create(
 		"@cdktf/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderOidcOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -287,12 +286,12 @@ func NewIamWorkforcePoolProviderOidcOutputReference_Override(i IamWorkforcePoolP
 
 	_jsii_.Create(
 		"@cdktf/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderOidcOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		i,
 	)
 }
 
-func (j *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference)SetClientId(val *string) {
+func (j *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference) SetClientId(val *string) {
 	if err := j.validateSetClientIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference)SetClientId(val *
 	)
 }
 
-func (j *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference)SetInternalValue(val *IamWorkforcePoolProviderOidc) {
+func (j *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference) SetInternalValue(val *IamWorkforcePoolProviderOidc) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference)SetInternalValue(
 	)
 }
 
-func (j *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference)SetIssuerUri(val *string) {
+func (j *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference) SetIssuerUri(val *string) {
 	if err := j.validateSetIssuerUriParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference)SetIssuerUri(val 
 	)
 }
 
-func (j *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference)SetJwksJson(val *string) {
+func (j *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference) SetJwksJson(val *string) {
 	if err := j.validateSetJwksJsonParameters(val); err != nil {
 		panic(err)
 	}
@@ -358,7 +357,7 @@ func (j *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference)SetJwksJson(val *
 	)
 }
 
-func (j *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -369,7 +368,7 @@ func (j *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference)SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,16 +392,16 @@ func (i *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference) ComputeFqn() *st
 	return returns
 }
 
-func (i *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -418,7 +417,7 @@ func (i *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference) GetBooleanAttrib
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -434,7 +433,7 @@ func (i *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference) GetBooleanMapAtt
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -450,7 +449,7 @@ func (i *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference) GetListAttribute
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -466,7 +465,7 @@ func (i *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference) GetNumberAttribu
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -482,7 +481,7 @@ func (i *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference) GetNumberListAtt
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -498,7 +497,7 @@ func (i *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference) GetNumberMapAttr
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -514,7 +513,7 @@ func (i *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference) GetStringAttribu
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -530,7 +529,7 @@ func (i *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference) GetStringMapAttr
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -559,7 +558,7 @@ func (i *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference) InterpolationFor
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -573,7 +572,7 @@ func (i *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference) PutClientSecret(
 	_jsii_.InvokeVoid(
 		i,
 		"putClientSecret",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -584,7 +583,7 @@ func (i *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference) PutWebSsoConfig(
 	_jsii_.InvokeVoid(
 		i,
 		"putWebSsoConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -612,16 +611,16 @@ func (i *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference) ResetWebSsoConfi
 	)
 }
 
-func (i *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (i *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := i.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -640,4 +639,3 @@ func (i *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference) ToString() *stri
 
 	return returns
 }
-

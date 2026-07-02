@@ -153,7 +153,7 @@ func (d *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigHumanAg
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -218,7 +218,7 @@ func (j *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigHumanAg
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsOutputReference) validateSetDisableAgentQueryLoggingParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsOutputReference) validateSetDisableAgentQueryLoggingParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -238,7 +238,7 @@ func (j *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigHumanAg
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsOutputReference) validateSetEnableConversationAugmentedQueryParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsOutputReference) validateSetEnableConversationAugmentedQueryParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func (j *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigHumanAg
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsOutputReference) validateSetEnableEventBasedSuggestionParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsOutputReference) validateSetEnableEventBasedSuggestionParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -278,7 +278,7 @@ func (j *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigHumanAg
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsOutputReference) validateSetEnableQuerySuggestionOnlyParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsOutputReference) validateSetEnableQuerySuggestionOnlyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -298,7 +298,7 @@ func (j *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigHumanAg
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsOutputReference) validateSetEnableQuerySuggestionWhenNoAnswerParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsOutputReference) validateSetEnableQuerySuggestionWhenNoAnswerParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -318,7 +318,7 @@ func (j *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigHumanAg
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionConfigFeatureConfigsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -377,4 +377,3 @@ func validateNewDialogflowConversationProfileHumanAgentAssistantConfigHumanAgent
 
 	return nil
 }
-

@@ -20,11 +20,11 @@ type DataGoogleRedisInstance interface {
 	CdktfStack() cdktf.TerraformStack
 	ConnectMode() *string
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	CurrentLocationId() *string
 	CustomerManagedKey() *string
@@ -75,7 +75,7 @@ type DataGoogleRedisInstance interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ReadEndpoint() *string
 	ReadEndpointPort() *float64
 	ReadReplicasMode() *string
@@ -92,15 +92,15 @@ type DataGoogleRedisInstance interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Tier() *string
 	TransitEncryptionMode() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -128,18 +128,18 @@ type DataGoogleRedisInstance interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetRegion()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataGoogleRedisInstance
@@ -207,8 +207,8 @@ func (j *jsiiProxy_DataGoogleRedisInstance) ConnectMode() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleRedisInstance) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleRedisInstance) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -217,8 +217,8 @@ func (j *jsiiProxy_DataGoogleRedisInstance) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleRedisInstance) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleRedisInstance) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -537,8 +537,8 @@ func (j *jsiiProxy_DataGoogleRedisInstance) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleRedisInstance) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleRedisInstance) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -677,8 +677,8 @@ func (j *jsiiProxy_DataGoogleRedisInstance) TerraformLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleRedisInstance) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleRedisInstance) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -717,7 +717,6 @@ func (j *jsiiProxy_DataGoogleRedisInstance) TransitEncryptionMode() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/redis_instance google_redis_instance} Data Source.
 func NewDataGoogleRedisInstance(scope constructs.Construct, id *string, config *DataGoogleRedisInstanceConfig) DataGoogleRedisInstance {
 	_init_.Initialize()
@@ -729,7 +728,7 @@ func NewDataGoogleRedisInstance(scope constructs.Construct, id *string, config *
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleRedisInstance.DataGoogleRedisInstance",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -742,12 +741,12 @@ func NewDataGoogleRedisInstance_Override(d DataGoogleRedisInstance, scope constr
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleRedisInstance.DataGoogleRedisInstance",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataGoogleRedisInstance)SetCount(val interface{}) {
+func (j *jsiiProxy_DataGoogleRedisInstance) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -758,7 +757,7 @@ func (j *jsiiProxy_DataGoogleRedisInstance)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleRedisInstance)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataGoogleRedisInstance) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -766,7 +765,7 @@ func (j *jsiiProxy_DataGoogleRedisInstance)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleRedisInstance)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGoogleRedisInstance) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -774,7 +773,7 @@ func (j *jsiiProxy_DataGoogleRedisInstance)SetForEach(val cdktf.ITerraformIterat
 	)
 }
 
-func (j *jsiiProxy_DataGoogleRedisInstance)SetId(val *string) {
+func (j *jsiiProxy_DataGoogleRedisInstance) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -785,7 +784,7 @@ func (j *jsiiProxy_DataGoogleRedisInstance)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleRedisInstance)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGoogleRedisInstance) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -796,7 +795,7 @@ func (j *jsiiProxy_DataGoogleRedisInstance)SetLifecycle(val *cdktf.TerraformReso
 	)
 }
 
-func (j *jsiiProxy_DataGoogleRedisInstance)SetName(val *string) {
+func (j *jsiiProxy_DataGoogleRedisInstance) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -807,7 +806,7 @@ func (j *jsiiProxy_DataGoogleRedisInstance)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleRedisInstance)SetProject(val *string) {
+func (j *jsiiProxy_DataGoogleRedisInstance) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -818,7 +817,7 @@ func (j *jsiiProxy_DataGoogleRedisInstance)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleRedisInstance)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGoogleRedisInstance) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -826,7 +825,7 @@ func (j *jsiiProxy_DataGoogleRedisInstance)SetProvider(val cdktf.TerraformProvid
 	)
 }
 
-func (j *jsiiProxy_DataGoogleRedisInstance)SetRegion(val *string) {
+func (j *jsiiProxy_DataGoogleRedisInstance) SetRegion(val *string) {
 	if err := j.validateSetRegionParameters(val); err != nil {
 		panic(err)
 	}
@@ -849,7 +848,7 @@ func DataGoogleRedisInstance_GenerateConfigForImport(scope constructs.Construct,
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleRedisInstance.DataGoogleRedisInstance",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -873,7 +872,7 @@ func DataGoogleRedisInstance_GenerateConfigForImport(scope constructs.Construct,
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataGoogleRedisInstance_IsConstruct(x interface{}) *bool {
+func DataGoogleRedisInstance_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleRedisInstance_IsConstructParameters(x); err != nil {
@@ -884,7 +883,7 @@ func DataGoogleRedisInstance_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleRedisInstance.DataGoogleRedisInstance",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -892,7 +891,7 @@ func DataGoogleRedisInstance_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGoogleRedisInstance_IsTerraformDataSource(x interface{}) *bool {
+func DataGoogleRedisInstance_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleRedisInstance_IsTerraformDataSourceParameters(x); err != nil {
@@ -903,7 +902,7 @@ func DataGoogleRedisInstance_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleRedisInstance.DataGoogleRedisInstance",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -911,7 +910,7 @@ func DataGoogleRedisInstance_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGoogleRedisInstance_IsTerraformElement(x interface{}) *bool {
+func DataGoogleRedisInstance_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleRedisInstance_IsTerraformElementParameters(x); err != nil {
@@ -922,7 +921,7 @@ func DataGoogleRedisInstance_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleRedisInstance.DataGoogleRedisInstance",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -940,27 +939,27 @@ func DataGoogleRedisInstance_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleRedisInstance) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataGoogleRedisInstance) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataGoogleRedisInstance) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataGoogleRedisInstance) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -976,7 +975,7 @@ func (d *jsiiProxy_DataGoogleRedisInstance) GetBooleanAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -992,7 +991,7 @@ func (d *jsiiProxy_DataGoogleRedisInstance) GetBooleanMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1008,7 +1007,7 @@ func (d *jsiiProxy_DataGoogleRedisInstance) GetListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1024,7 +1023,7 @@ func (d *jsiiProxy_DataGoogleRedisInstance) GetNumberAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1040,7 +1039,7 @@ func (d *jsiiProxy_DataGoogleRedisInstance) GetNumberListAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1056,7 +1055,7 @@ func (d *jsiiProxy_DataGoogleRedisInstance) GetNumberMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1072,7 +1071,7 @@ func (d *jsiiProxy_DataGoogleRedisInstance) GetStringAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1088,7 +1087,7 @@ func (d *jsiiProxy_DataGoogleRedisInstance) GetStringMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1104,7 +1103,7 @@ func (d *jsiiProxy_DataGoogleRedisInstance) InterpolationForAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1118,7 +1117,7 @@ func (d *jsiiProxy_DataGoogleRedisInstance) OverrideLogicalId(newLogicalId *stri
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1154,8 +1153,8 @@ func (d *jsiiProxy_DataGoogleRedisInstance) ResetRegion() {
 	)
 }
 
-func (d *jsiiProxy_DataGoogleRedisInstance) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleRedisInstance) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1167,8 +1166,8 @@ func (d *jsiiProxy_DataGoogleRedisInstance) SynthesizeAttributes() *map[string]i
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleRedisInstance) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleRedisInstance) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1180,8 +1179,8 @@ func (d *jsiiProxy_DataGoogleRedisInstance) SynthesizeHclAttributes() *map[strin
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleRedisInstance) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleRedisInstance) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1193,8 +1192,8 @@ func (d *jsiiProxy_DataGoogleRedisInstance) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleRedisInstance) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleRedisInstance) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1219,8 +1218,8 @@ func (d *jsiiProxy_DataGoogleRedisInstance) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleRedisInstance) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleRedisInstance) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1231,4 +1230,3 @@ func (d *jsiiProxy_DataGoogleRedisInstance) ToTerraform() interface{} {
 
 	return returns
 }
-

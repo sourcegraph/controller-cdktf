@@ -12,9 +12,9 @@ type EdgecontainerClusterSystemAddonsConfigIngressOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,9 +25,9 @@ type EdgecontainerClusterSystemAddonsConfigIngressOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Disabled() interface{}
-	SetDisabled(val interface{})
-	DisabledInput() interface{}
+	Disabled() any
+	SetDisabled(val any)
+	DisabledInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *EdgecontainerClusterSystemAddonsConfigIngress
@@ -46,7 +46,7 @@ type EdgecontainerClusterSystemAddonsConfigIngressOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type EdgecontainerClusterSystemAddonsConfigIngressOutputReference interface {
 	ResetIpv4Vip()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_EdgecontainerClusterSystemAddonsConfigIngressOutputReference stru
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_EdgecontainerClusterSystemAddonsConfigIngressOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EdgecontainerClusterSystemAddonsConfigIngressOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -114,8 +114,8 @@ func (j *jsiiProxy_EdgecontainerClusterSystemAddonsConfigIngressOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_EdgecontainerClusterSystemAddonsConfigIngressOutputReference) Disabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EdgecontainerClusterSystemAddonsConfigIngressOutputReference) Disabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disabled",
@@ -124,8 +124,8 @@ func (j *jsiiProxy_EdgecontainerClusterSystemAddonsConfigIngressOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_EdgecontainerClusterSystemAddonsConfigIngressOutputReference) DisabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EdgecontainerClusterSystemAddonsConfigIngressOutputReference) DisabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disabledInput",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_EdgecontainerClusterSystemAddonsConfigIngressOutputReference)
 	return returns
 }
 
-
 func NewEdgecontainerClusterSystemAddonsConfigIngressOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) EdgecontainerClusterSystemAddonsConfigIngressOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewEdgecontainerClusterSystemAddonsConfigIngressOutputReference(terraformRe
 
 	_jsii_.Create(
 		"@cdktf/provider-google.edgecontainerCluster.EdgecontainerClusterSystemAddonsConfigIngressOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewEdgecontainerClusterSystemAddonsConfigIngressOutputReference_Override(e 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.edgecontainerCluster.EdgecontainerClusterSystemAddonsConfigIngressOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		e,
 	)
 }
 
-func (j *jsiiProxy_EdgecontainerClusterSystemAddonsConfigIngressOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_EdgecontainerClusterSystemAddonsConfigIngressOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_EdgecontainerClusterSystemAddonsConfigIngressOutputReference)
 	)
 }
 
-func (j *jsiiProxy_EdgecontainerClusterSystemAddonsConfigIngressOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_EdgecontainerClusterSystemAddonsConfigIngressOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_EdgecontainerClusterSystemAddonsConfigIngressOutputReference)
 	)
 }
 
-func (j *jsiiProxy_EdgecontainerClusterSystemAddonsConfigIngressOutputReference)SetDisabled(val interface{}) {
+func (j *jsiiProxy_EdgecontainerClusterSystemAddonsConfigIngressOutputReference) SetDisabled(val any) {
 	if err := j.validateSetDisabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_EdgecontainerClusterSystemAddonsConfigIngressOutputReference)
 	)
 }
 
-func (j *jsiiProxy_EdgecontainerClusterSystemAddonsConfigIngressOutputReference)SetInternalValue(val *EdgecontainerClusterSystemAddonsConfigIngress) {
+func (j *jsiiProxy_EdgecontainerClusterSystemAddonsConfigIngressOutputReference) SetInternalValue(val *EdgecontainerClusterSystemAddonsConfigIngress) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_EdgecontainerClusterSystemAddonsConfigIngressOutputReference)
 	)
 }
 
-func (j *jsiiProxy_EdgecontainerClusterSystemAddonsConfigIngressOutputReference)SetIpv4Vip(val *string) {
+func (j *jsiiProxy_EdgecontainerClusterSystemAddonsConfigIngressOutputReference) SetIpv4Vip(val *string) {
 	if err := j.validateSetIpv4VipParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_EdgecontainerClusterSystemAddonsConfigIngressOutputReference)
 	)
 }
 
-func (j *jsiiProxy_EdgecontainerClusterSystemAddonsConfigIngressOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_EdgecontainerClusterSystemAddonsConfigIngressOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_EdgecontainerClusterSystemAddonsConfigIngressOutputReference)
 	)
 }
 
-func (j *jsiiProxy_EdgecontainerClusterSystemAddonsConfigIngressOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EdgecontainerClusterSystemAddonsConfigIngressOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,16 +311,16 @@ func (e *jsiiProxy_EdgecontainerClusterSystemAddonsConfigIngressOutputReference)
 	return returns
 }
 
-func (e *jsiiProxy_EdgecontainerClusterSystemAddonsConfigIngressOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_EdgecontainerClusterSystemAddonsConfigIngressOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -337,7 +336,7 @@ func (e *jsiiProxy_EdgecontainerClusterSystemAddonsConfigIngressOutputReference)
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -353,7 +352,7 @@ func (e *jsiiProxy_EdgecontainerClusterSystemAddonsConfigIngressOutputReference)
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (e *jsiiProxy_EdgecontainerClusterSystemAddonsConfigIngressOutputReference)
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (e *jsiiProxy_EdgecontainerClusterSystemAddonsConfigIngressOutputReference)
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (e *jsiiProxy_EdgecontainerClusterSystemAddonsConfigIngressOutputReference)
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (e *jsiiProxy_EdgecontainerClusterSystemAddonsConfigIngressOutputReference)
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (e *jsiiProxy_EdgecontainerClusterSystemAddonsConfigIngressOutputReference)
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (e *jsiiProxy_EdgecontainerClusterSystemAddonsConfigIngressOutputReference)
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func (e *jsiiProxy_EdgecontainerClusterSystemAddonsConfigIngressOutputReference)
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -501,16 +500,16 @@ func (e *jsiiProxy_EdgecontainerClusterSystemAddonsConfigIngressOutputReference)
 	)
 }
 
-func (e *jsiiProxy_EdgecontainerClusterSystemAddonsConfigIngressOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (e *jsiiProxy_EdgecontainerClusterSystemAddonsConfigIngressOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := e.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (e *jsiiProxy_EdgecontainerClusterSystemAddonsConfigIngressOutputReference)
 
 	return returns
 }
-

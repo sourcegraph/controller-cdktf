@@ -34,7 +34,7 @@ func (c *jsiiProxy_ContainerClusterMaintenancePolicyMaintenanceExclusionList) va
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterMaintenancePolicyMaintenanceExclusionList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterMaintenancePolicyMaintenanceExclusionList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewContainerClusterMaintenancePolicyMaintenanceExclusionListParamet
 
 	return nil
 }
-

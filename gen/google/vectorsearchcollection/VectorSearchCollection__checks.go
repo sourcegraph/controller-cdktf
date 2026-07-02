@@ -19,7 +19,7 @@ func (v *jsiiProxy_VectorSearchCollection) validateAddMoveTargetParameters(moveT
 	return nil
 }
 
-func (v *jsiiProxy_VectorSearchCollection) validateAddOverrideParameters(path *string, value interface{}) error {
+func (v *jsiiProxy_VectorSearchCollection) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (v *jsiiProxy_VectorSearchCollection) validateMoveFromIdParameters(id *stri
 	return nil
 }
 
-func (v *jsiiProxy_VectorSearchCollection) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (v *jsiiProxy_VectorSearchCollection) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -226,7 +226,7 @@ func (v *jsiiProxy_VectorSearchCollection) validatePutTimeoutsParameters(value *
 	return nil
 }
 
-func (v *jsiiProxy_VectorSearchCollection) validatePutVectorSchemaParameters(value interface{}) error {
+func (v *jsiiProxy_VectorSearchCollection) validatePutVectorSchemaParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -273,7 +273,7 @@ func validateVectorSearchCollection_GenerateConfigForImportParameters(scope cons
 	return nil
 }
 
-func validateVectorSearchCollection_IsConstructParameters(x interface{}) error {
+func validateVectorSearchCollection_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -281,7 +281,7 @@ func validateVectorSearchCollection_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateVectorSearchCollection_IsTerraformElementParameters(x interface{}) error {
+func validateVectorSearchCollection_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -289,7 +289,7 @@ func validateVectorSearchCollection_IsTerraformElementParameters(x interface{}) 
 	return nil
 }
 
-func validateVectorSearchCollection_IsTerraformResourceParameters(x interface{}) error {
+func validateVectorSearchCollection_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -305,7 +305,7 @@ func (j *jsiiProxy_VectorSearchCollection) validateSetCollectionIdParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_VectorSearchCollection) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_VectorSearchCollection) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -338,7 +338,7 @@ func (j *jsiiProxy_VectorSearchCollection) validateSetConnectionParameters(val i
 	return nil
 }
 
-func (j *jsiiProxy_VectorSearchCollection) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_VectorSearchCollection) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -459,7 +459,7 @@ func (j *jsiiProxy_VectorSearchCollection) validateSetProjectParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_VectorSearchCollection) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_VectorSearchCollection) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -523,4 +523,3 @@ func validateNewVectorSearchCollectionParameters(scope constructs.Construct, id 
 
 	return nil
 }
-

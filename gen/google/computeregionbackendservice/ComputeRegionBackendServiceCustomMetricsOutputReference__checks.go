@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeRegionBackendServiceCustomMetricsOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceCustomMetricsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionBackendServiceCustomMetricsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ComputeRegionBackendServiceCustomMetricsOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceCustomMetricsOutputReference) validateSetDryRunParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionBackendServiceCustomMetricsOutputReference) validateSetDryRunParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (j *jsiiProxy_ComputeRegionBackendServiceCustomMetricsOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceCustomMetricsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionBackendServiceCustomMetricsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -250,4 +250,3 @@ func validateNewComputeRegionBackendServiceCustomMetricsOutputReferenceParameter
 
 	return nil
 }
-

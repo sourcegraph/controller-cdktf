@@ -12,9 +12,9 @@ type NetworkConnectivityServiceConnectionPolicyPscConnectionsOutputReference int
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -49,7 +49,7 @@ type NetworkConnectivityServiceConnectionPolicyPscConnectionsOutputReference int
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -72,7 +72,7 @@ type NetworkConnectivityServiceConnectionPolicyPscConnectionsOutputReference int
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,8 +85,8 @@ type jsiiProxy_NetworkConnectivityServiceConnectionPolicyPscConnectionsOutputRef
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_NetworkConnectivityServiceConnectionPolicyPscConnectionsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkConnectivityServiceConnectionPolicyPscConnectionsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -245,7 +245,6 @@ func (j *jsiiProxy_NetworkConnectivityServiceConnectionPolicyPscConnectionsOutpu
 	return returns
 }
 
-
 func NewNetworkConnectivityServiceConnectionPolicyPscConnectionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) NetworkConnectivityServiceConnectionPolicyPscConnectionsOutputReference {
 	_init_.Initialize()
 
@@ -256,7 +255,7 @@ func NewNetworkConnectivityServiceConnectionPolicyPscConnectionsOutputReference(
 
 	_jsii_.Create(
 		"@cdktf/provider-google.networkConnectivityServiceConnectionPolicy.NetworkConnectivityServiceConnectionPolicyPscConnectionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -268,12 +267,12 @@ func NewNetworkConnectivityServiceConnectionPolicyPscConnectionsOutputReference_
 
 	_jsii_.Create(
 		"@cdktf/provider-google.networkConnectivityServiceConnectionPolicy.NetworkConnectivityServiceConnectionPolicyPscConnectionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivityServiceConnectionPolicyPscConnectionsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_NetworkConnectivityServiceConnectionPolicyPscConnectionsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -284,7 +283,7 @@ func (j *jsiiProxy_NetworkConnectivityServiceConnectionPolicyPscConnectionsOutpu
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivityServiceConnectionPolicyPscConnectionsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_NetworkConnectivityServiceConnectionPolicyPscConnectionsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -295,7 +294,7 @@ func (j *jsiiProxy_NetworkConnectivityServiceConnectionPolicyPscConnectionsOutpu
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivityServiceConnectionPolicyPscConnectionsOutputReference)SetInternalValue(val *NetworkConnectivityServiceConnectionPolicyPscConnections) {
+func (j *jsiiProxy_NetworkConnectivityServiceConnectionPolicyPscConnectionsOutputReference) SetInternalValue(val *NetworkConnectivityServiceConnectionPolicyPscConnections) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -306,7 +305,7 @@ func (j *jsiiProxy_NetworkConnectivityServiceConnectionPolicyPscConnectionsOutpu
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivityServiceConnectionPolicyPscConnectionsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_NetworkConnectivityServiceConnectionPolicyPscConnectionsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -317,7 +316,7 @@ func (j *jsiiProxy_NetworkConnectivityServiceConnectionPolicyPscConnectionsOutpu
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivityServiceConnectionPolicyPscConnectionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NetworkConnectivityServiceConnectionPolicyPscConnectionsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -341,16 +340,16 @@ func (n *jsiiProxy_NetworkConnectivityServiceConnectionPolicyPscConnectionsOutpu
 	return returns
 }
 
-func (n *jsiiProxy_NetworkConnectivityServiceConnectionPolicyPscConnectionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (n *jsiiProxy_NetworkConnectivityServiceConnectionPolicyPscConnectionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -366,7 +365,7 @@ func (n *jsiiProxy_NetworkConnectivityServiceConnectionPolicyPscConnectionsOutpu
 	_jsii_.Invoke(
 		n,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -382,7 +381,7 @@ func (n *jsiiProxy_NetworkConnectivityServiceConnectionPolicyPscConnectionsOutpu
 	_jsii_.Invoke(
 		n,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -398,7 +397,7 @@ func (n *jsiiProxy_NetworkConnectivityServiceConnectionPolicyPscConnectionsOutpu
 	_jsii_.Invoke(
 		n,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -414,7 +413,7 @@ func (n *jsiiProxy_NetworkConnectivityServiceConnectionPolicyPscConnectionsOutpu
 	_jsii_.Invoke(
 		n,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -430,7 +429,7 @@ func (n *jsiiProxy_NetworkConnectivityServiceConnectionPolicyPscConnectionsOutpu
 	_jsii_.Invoke(
 		n,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -446,7 +445,7 @@ func (n *jsiiProxy_NetworkConnectivityServiceConnectionPolicyPscConnectionsOutpu
 	_jsii_.Invoke(
 		n,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -462,7 +461,7 @@ func (n *jsiiProxy_NetworkConnectivityServiceConnectionPolicyPscConnectionsOutpu
 	_jsii_.Invoke(
 		n,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func (n *jsiiProxy_NetworkConnectivityServiceConnectionPolicyPscConnectionsOutpu
 	_jsii_.Invoke(
 		n,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -507,23 +506,23 @@ func (n *jsiiProxy_NetworkConnectivityServiceConnectionPolicyPscConnectionsOutpu
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (n *jsiiProxy_NetworkConnectivityServiceConnectionPolicyPscConnectionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (n *jsiiProxy_NetworkConnectivityServiceConnectionPolicyPscConnectionsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := n.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		n,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -542,4 +541,3 @@ func (n *jsiiProxy_NetworkConnectivityServiceConnectionPolicyPscConnectionsOutpu
 
 	return returns
 }
-

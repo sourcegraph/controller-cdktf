@@ -109,7 +109,7 @@ func (d *jsiiProxy_DatabaseMigrationServiceMigrationJobObjectsConfigOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_DatabaseMigrationServiceMigrationJobObjectsConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DatabaseMigrationServiceMigrationJobObjectsConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewDatabaseMigrationServiceMigrationJobObjectsConfigOutputReference
 
 	return nil
 }
-

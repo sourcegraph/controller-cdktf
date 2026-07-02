@@ -120,7 +120,7 @@ func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobStorageConfigDatastoreO
 	return nil
 }
 
-func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobStorageConfigDatastoreOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobStorageConfigDatastoreOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -220,4 +220,3 @@ func validateNewDataLossPreventionJobTriggerInspectJobStorageConfigDatastoreOpti
 
 	return nil
 }
-

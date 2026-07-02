@@ -98,7 +98,7 @@ func (n *jsiiProxy_NetworkConnectivityDestinationStateTimelineStatesOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_NetworkConnectivityDestinationStateTimelineStatesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkConnectivityDestinationStateTimelineStatesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewNetworkConnectivityDestinationStateTimelineStatesOutputReference
 
 	return nil
 }
-

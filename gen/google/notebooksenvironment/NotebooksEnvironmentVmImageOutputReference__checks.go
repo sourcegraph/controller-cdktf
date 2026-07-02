@@ -98,7 +98,7 @@ func (n *jsiiProxy_NotebooksEnvironmentVmImageOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_NotebooksEnvironmentVmImageOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NotebooksEnvironmentVmImageOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewNotebooksEnvironmentVmImageOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

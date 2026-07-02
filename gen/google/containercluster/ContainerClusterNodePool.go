@@ -1,6 +1,5 @@
 package containercluster
 
-
 type ContainerClusterNodePool struct {
 	// autoscaling block.
 	//
@@ -47,7 +46,7 @@ type ContainerClusterNodePool struct {
 	// node_drain_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#node_drain_config ContainerCluster#node_drain_config}
-	NodeDrainConfig interface{} `field:"optional" json:"nodeDrainConfig" yaml:"nodeDrainConfig"`
+	NodeDrainConfig any `field:"optional" json:"nodeDrainConfig" yaml:"nodeDrainConfig"`
 	// The list of zones in which the node pool's nodes should be located.
 	//
 	// Nodes must be in the region of their regional cluster or in the same region as their cluster's zone for zonal clusters. If unspecified, the cluster-level node_locations will be used.
@@ -73,4 +72,3 @@ type ContainerClusterNodePool struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#version ContainerCluster#version}
 	Version *string `field:"optional" json:"version" yaml:"version"`
 }
-

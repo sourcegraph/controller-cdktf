@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesDnsNamesOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesDnsNamesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesDnsNamesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleSqlDatabaseInstancesInstancesDnsNamesOutputReferencePa
 
 	return nil
 }
-

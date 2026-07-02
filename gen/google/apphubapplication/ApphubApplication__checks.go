@@ -19,7 +19,7 @@ func (a *jsiiProxy_ApphubApplication) validateAddMoveTargetParameters(moveTarget
 	return nil
 }
 
-func (a *jsiiProxy_ApphubApplication) validateAddOverrideParameters(path *string, value interface{}) error {
+func (a *jsiiProxy_ApphubApplication) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (a *jsiiProxy_ApphubApplication) validateMoveFromIdParameters(id *string) e
 	return nil
 }
 
-func (a *jsiiProxy_ApphubApplication) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (a *jsiiProxy_ApphubApplication) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -253,7 +253,7 @@ func validateApphubApplication_GenerateConfigForImportParameters(scope construct
 	return nil
 }
 
-func validateApphubApplication_IsConstructParameters(x interface{}) error {
+func validateApphubApplication_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -261,7 +261,7 @@ func validateApphubApplication_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateApphubApplication_IsTerraformElementParameters(x interface{}) error {
+func validateApphubApplication_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -269,7 +269,7 @@ func validateApphubApplication_IsTerraformElementParameters(x interface{}) error
 	return nil
 }
 
-func validateApphubApplication_IsTerraformResourceParameters(x interface{}) error {
+func validateApphubApplication_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -285,7 +285,7 @@ func (j *jsiiProxy_ApphubApplication) validateSetApplicationIdParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_ApphubApplication) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ApphubApplication) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -318,7 +318,7 @@ func (j *jsiiProxy_ApphubApplication) validateSetConnectionParameters(val interf
 	return nil
 }
 
-func (j *jsiiProxy_ApphubApplication) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ApphubApplication) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -423,7 +423,7 @@ func (j *jsiiProxy_ApphubApplication) validateSetProjectParameters(val *string) 
 	return nil
 }
 
-func (j *jsiiProxy_ApphubApplication) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ApphubApplication) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -487,4 +487,3 @@ func validateNewApphubApplicationParameters(scope constructs.Construct, id *stri
 
 	return nil
 }
-

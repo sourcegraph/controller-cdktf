@@ -12,9 +12,9 @@ type OracleDatabaseDbSystemPropertiesDbHomeOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -37,9 +37,9 @@ type OracleDatabaseDbSystemPropertiesDbHomeOutputReference interface {
 	Fqn() *string
 	InternalValue() *OracleDatabaseDbSystemPropertiesDbHome
 	SetInternalValue(val *OracleDatabaseDbSystemPropertiesDbHome)
-	IsUnifiedAuditingEnabled() interface{}
-	SetIsUnifiedAuditingEnabled(val interface{})
-	IsUnifiedAuditingEnabledInput() interface{}
+	IsUnifiedAuditingEnabled() any
+	SetIsUnifiedAuditingEnabled(val any)
+	IsUnifiedAuditingEnabledInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -51,7 +51,7 @@ type OracleDatabaseDbSystemPropertiesDbHomeOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -77,7 +77,7 @@ type OracleDatabaseDbSystemPropertiesDbHomeOutputReference interface {
 	ResetIsUnifiedAuditingEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -90,8 +90,8 @@ type jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -200,8 +200,8 @@ func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeOutputReference) Intern
 	return returns
 }
 
-func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeOutputReference) IsUnifiedAuditingEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeOutputReference) IsUnifiedAuditingEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isUnifiedAuditingEnabled",
@@ -210,8 +210,8 @@ func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeOutputReference) IsUnif
 	return returns
 }
 
-func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeOutputReference) IsUnifiedAuditingEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeOutputReference) IsUnifiedAuditingEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isUnifiedAuditingEnabledInput",
@@ -240,7 +240,6 @@ func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeOutputReference) Terraf
 	return returns
 }
 
-
 func NewOracleDatabaseDbSystemPropertiesDbHomeOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) OracleDatabaseDbSystemPropertiesDbHomeOutputReference {
 	_init_.Initialize()
 
@@ -251,7 +250,7 @@ func NewOracleDatabaseDbSystemPropertiesDbHomeOutputReference(terraformResource 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.oracleDatabaseDbSystem.OracleDatabaseDbSystemPropertiesDbHomeOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -263,12 +262,12 @@ func NewOracleDatabaseDbSystemPropertiesDbHomeOutputReference_Override(o OracleD
 
 	_jsii_.Create(
 		"@cdktf/provider-google.oracleDatabaseDbSystem.OracleDatabaseDbSystemPropertiesDbHomeOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		o,
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeOutputReference)SetDbVersion(val *string) {
+func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeOutputReference) SetDbVersion(val *string) {
 	if err := j.validateSetDbVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeOutputReference)SetDbVe
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeOutputReference)SetDisplayName(val *string) {
+func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeOutputReference) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeOutputReference)SetDisp
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeOutputReference)SetInternalValue(val *OracleDatabaseDbSystemPropertiesDbHome) {
+func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeOutputReference) SetInternalValue(val *OracleDatabaseDbSystemPropertiesDbHome) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeOutputReference)SetInte
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeOutputReference)SetIsUnifiedAuditingEnabled(val interface{}) {
+func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeOutputReference) SetIsUnifiedAuditingEnabled(val any) {
 	if err := j.validateSetIsUnifiedAuditingEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -334,7 +333,7 @@ func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeOutputReference)SetIsUn
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -345,7 +344,7 @@ func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -369,16 +368,16 @@ func (o *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeOutputReference) Comput
 	return returns
 }
 
-func (o *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (o *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -394,7 +393,7 @@ func (o *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeOutputReference) GetBoo
 	_jsii_.Invoke(
 		o,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -410,7 +409,7 @@ func (o *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeOutputReference) GetBoo
 	_jsii_.Invoke(
 		o,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -426,7 +425,7 @@ func (o *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeOutputReference) GetLis
 	_jsii_.Invoke(
 		o,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -442,7 +441,7 @@ func (o *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeOutputReference) GetNum
 	_jsii_.Invoke(
 		o,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -458,7 +457,7 @@ func (o *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeOutputReference) GetNum
 	_jsii_.Invoke(
 		o,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -474,7 +473,7 @@ func (o *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeOutputReference) GetNum
 	_jsii_.Invoke(
 		o,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -490,7 +489,7 @@ func (o *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeOutputReference) GetStr
 	_jsii_.Invoke(
 		o,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -506,7 +505,7 @@ func (o *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeOutputReference) GetStr
 	_jsii_.Invoke(
 		o,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -535,7 +534,7 @@ func (o *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeOutputReference) Interp
 	_jsii_.Invoke(
 		o,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -549,7 +548,7 @@ func (o *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeOutputReference) PutDat
 	_jsii_.InvokeVoid(
 		o,
 		"putDatabase",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -569,16 +568,16 @@ func (o *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeOutputReference) ResetI
 	)
 }
 
-func (o *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (o *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := o.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		o,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -597,4 +596,3 @@ func (o *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeOutputReference) ToStri
 
 	return returns
 }
-

@@ -12,9 +12,9 @@ type HealthcareDatasetEncryptionSpecOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -43,7 +43,7 @@ type HealthcareDatasetEncryptionSpecOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -67,7 +67,7 @@ type HealthcareDatasetEncryptionSpecOutputReference interface {
 	ResetKmsKeyName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,8 +80,8 @@ type jsiiProxy_HealthcareDatasetEncryptionSpecOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_HealthcareDatasetEncryptionSpecOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HealthcareDatasetEncryptionSpecOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -170,7 +170,6 @@ func (j *jsiiProxy_HealthcareDatasetEncryptionSpecOutputReference) TerraformReso
 	return returns
 }
 
-
 func NewHealthcareDatasetEncryptionSpecOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) HealthcareDatasetEncryptionSpecOutputReference {
 	_init_.Initialize()
 
@@ -181,7 +180,7 @@ func NewHealthcareDatasetEncryptionSpecOutputReference(terraformResource cdktf.I
 
 	_jsii_.Create(
 		"@cdktf/provider-google.healthcareDataset.HealthcareDatasetEncryptionSpecOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -193,12 +192,12 @@ func NewHealthcareDatasetEncryptionSpecOutputReference_Override(h HealthcareData
 
 	_jsii_.Create(
 		"@cdktf/provider-google.healthcareDataset.HealthcareDatasetEncryptionSpecOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		h,
 	)
 }
 
-func (j *jsiiProxy_HealthcareDatasetEncryptionSpecOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_HealthcareDatasetEncryptionSpecOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -209,7 +208,7 @@ func (j *jsiiProxy_HealthcareDatasetEncryptionSpecOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_HealthcareDatasetEncryptionSpecOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_HealthcareDatasetEncryptionSpecOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -220,7 +219,7 @@ func (j *jsiiProxy_HealthcareDatasetEncryptionSpecOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_HealthcareDatasetEncryptionSpecOutputReference)SetInternalValue(val *HealthcareDatasetEncryptionSpec) {
+func (j *jsiiProxy_HealthcareDatasetEncryptionSpecOutputReference) SetInternalValue(val *HealthcareDatasetEncryptionSpec) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_HealthcareDatasetEncryptionSpecOutputReference)SetInternalVal
 	)
 }
 
-func (j *jsiiProxy_HealthcareDatasetEncryptionSpecOutputReference)SetKmsKeyName(val *string) {
+func (j *jsiiProxy_HealthcareDatasetEncryptionSpecOutputReference) SetKmsKeyName(val *string) {
 	if err := j.validateSetKmsKeyNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_HealthcareDatasetEncryptionSpecOutputReference)SetKmsKeyName(
 	)
 }
 
-func (j *jsiiProxy_HealthcareDatasetEncryptionSpecOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_HealthcareDatasetEncryptionSpecOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_HealthcareDatasetEncryptionSpecOutputReference)SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_HealthcareDatasetEncryptionSpecOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_HealthcareDatasetEncryptionSpecOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,16 +276,16 @@ func (h *jsiiProxy_HealthcareDatasetEncryptionSpecOutputReference) ComputeFqn() 
 	return returns
 }
 
-func (h *jsiiProxy_HealthcareDatasetEncryptionSpecOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (h *jsiiProxy_HealthcareDatasetEncryptionSpecOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := h.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		h,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -302,7 +301,7 @@ func (h *jsiiProxy_HealthcareDatasetEncryptionSpecOutputReference) GetBooleanAtt
 	_jsii_.Invoke(
 		h,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -318,7 +317,7 @@ func (h *jsiiProxy_HealthcareDatasetEncryptionSpecOutputReference) GetBooleanMap
 	_jsii_.Invoke(
 		h,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -334,7 +333,7 @@ func (h *jsiiProxy_HealthcareDatasetEncryptionSpecOutputReference) GetListAttrib
 	_jsii_.Invoke(
 		h,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -350,7 +349,7 @@ func (h *jsiiProxy_HealthcareDatasetEncryptionSpecOutputReference) GetNumberAttr
 	_jsii_.Invoke(
 		h,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -366,7 +365,7 @@ func (h *jsiiProxy_HealthcareDatasetEncryptionSpecOutputReference) GetNumberList
 	_jsii_.Invoke(
 		h,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -382,7 +381,7 @@ func (h *jsiiProxy_HealthcareDatasetEncryptionSpecOutputReference) GetNumberMapA
 	_jsii_.Invoke(
 		h,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -398,7 +397,7 @@ func (h *jsiiProxy_HealthcareDatasetEncryptionSpecOutputReference) GetStringAttr
 	_jsii_.Invoke(
 		h,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -414,7 +413,7 @@ func (h *jsiiProxy_HealthcareDatasetEncryptionSpecOutputReference) GetStringMapA
 	_jsii_.Invoke(
 		h,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -443,7 +442,7 @@ func (h *jsiiProxy_HealthcareDatasetEncryptionSpecOutputReference) Interpolation
 	_jsii_.Invoke(
 		h,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -458,16 +457,16 @@ func (h *jsiiProxy_HealthcareDatasetEncryptionSpecOutputReference) ResetKmsKeyNa
 	)
 }
 
-func (h *jsiiProxy_HealthcareDatasetEncryptionSpecOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (h *jsiiProxy_HealthcareDatasetEncryptionSpecOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := h.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		h,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -486,4 +485,3 @@ func (h *jsiiProxy_HealthcareDatasetEncryptionSpecOutputReference) ToString() *s
 
 	return returns
 }
-

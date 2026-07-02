@@ -98,7 +98,7 @@ func (d *jsiiProxy_DnsPolicyDns64ConfigScopeOutputReference) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_DnsPolicyDns64ConfigScopeOutputReference) validateSetAllQueriesParameters(val interface{}) error {
+func (j *jsiiProxy_DnsPolicyDns64ConfigScopeOutputReference) validateSetAllQueriesParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -118,7 +118,7 @@ func (j *jsiiProxy_DnsPolicyDns64ConfigScopeOutputReference) validateSetAllQueri
 	return nil
 }
 
-func (j *jsiiProxy_DnsPolicyDns64ConfigScopeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DnsPolicyDns64ConfigScopeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -218,4 +218,3 @@ func validateNewDnsPolicyDns64ConfigScopeOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

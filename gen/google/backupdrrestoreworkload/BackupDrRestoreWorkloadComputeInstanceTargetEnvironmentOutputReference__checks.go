@@ -98,7 +98,7 @@ func (b *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceTargetEnvironmentOutput
 	return nil
 }
 
-func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceTargetEnvironmentOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceTargetEnvironmentOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewBackupDrRestoreWorkloadComputeInstanceTargetEnvironmentOutputRef
 
 	return nil
 }
-

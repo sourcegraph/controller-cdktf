@@ -109,7 +109,7 @@ func (c *jsiiProxy_CesAppVariableDeclarationsOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_CesAppVariableDeclarationsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CesAppVariableDeclarationsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -182,7 +182,7 @@ func (j *jsiiProxy_CesAppVariableDeclarationsOutputReference) validateSetDescrip
 	return nil
 }
 
-func (j *jsiiProxy_CesAppVariableDeclarationsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CesAppVariableDeclarationsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -249,4 +249,3 @@ func validateNewCesAppVariableDeclarationsOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

@@ -1,13 +1,12 @@
 package dataprocworkflowtemplate
 
-
 type DataprocWorkflowTemplateJobsHiveJob struct {
 	// Optional.
 	//
 	// Whether to continue executing queries if a query fails. The default value is `false`. Setting to `true` can be useful when executing independent parallel queries.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_workflow_template#continue_on_failure DataprocWorkflowTemplate#continue_on_failure}
-	ContinueOnFailure interface{} `field:"optional" json:"continueOnFailure" yaml:"continueOnFailure"`
+	ContinueOnFailure any `field:"optional" json:"continueOnFailure" yaml:"continueOnFailure"`
 	// Optional.
 	//
 	// HCFS URIs of jar files to add to the CLASSPATH of the Hive server and Hadoop MapReduce (MR) tasks. Can contain Hive SerDes and UDFs.
@@ -33,4 +32,3 @@ type DataprocWorkflowTemplateJobsHiveJob struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_workflow_template#script_variables DataprocWorkflowTemplate#script_variables}
 	ScriptVariables *map[string]*string `field:"optional" json:"scriptVariables" yaml:"scriptVariables"`
 }
-

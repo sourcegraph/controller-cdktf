@@ -98,7 +98,7 @@ func (d *jsiiProxy_DiscoveryEngineLicenseConfigStartDateOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineLicenseConfigStartDateOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DiscoveryEngineLicenseConfigStartDateOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewDiscoveryEngineLicenseConfigStartDateOutputReferenceParameters(t
 
 	return nil
 }
-

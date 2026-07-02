@@ -98,7 +98,7 @@ func (a *jsiiProxy_ApigeeEndpointAttachmentTimeoutsOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_ApigeeEndpointAttachmentTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ApigeeEndpointAttachmentTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_ApigeeEndpointAttachmentTimeoutsOutputReference) validateSetD
 	return nil
 }
 
-func (j *jsiiProxy_ApigeeEndpointAttachmentTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ApigeeEndpointAttachmentTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewApigeeEndpointAttachmentTimeoutsOutputReferenceParameters(terraf
 
 	return nil
 }
-

@@ -15,24 +15,24 @@ type NetappActiveDirectory interface {
 	Administrators() *[]*string
 	SetAdministrators(val *[]*string)
 	AdministratorsInput() *[]*string
-	AesEncryption() interface{}
-	SetAesEncryption(val interface{})
-	AesEncryptionInput() interface{}
+	AesEncryption() any
+	SetAesEncryption(val any)
+	AesEncryptionInput() any
 	BackupOperators() *[]*string
 	SetBackupOperators(val *[]*string)
 	BackupOperatorsInput() *[]*string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -48,9 +48,9 @@ type NetappActiveDirectory interface {
 	SetDomain(val *string)
 	DomainInput() *string
 	EffectiveLabels() cdktf.StringMap
-	EncryptDcConnections() interface{}
-	SetEncryptDcConnections(val interface{})
-	EncryptDcConnectionsInput() interface{}
+	EncryptDcConnections() any
+	SetEncryptDcConnections(val any)
+	EncryptDcConnectionsInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -71,9 +71,9 @@ type NetappActiveDirectory interface {
 	Labels() *map[string]*string
 	SetLabels(val *map[string]*string)
 	LabelsInput() *map[string]*string
-	LdapSigning() interface{}
-	SetLdapSigning(val interface{})
-	LdapSigningInput() interface{}
+	LdapSigning() any
+	SetLdapSigning(val any)
+	LdapSigningInput() any
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -87,9 +87,9 @@ type NetappActiveDirectory interface {
 	NetBiosPrefix() *string
 	SetNetBiosPrefix(val *string)
 	NetBiosPrefixInput() *string
-	NfsUsersWithLdap() interface{}
-	SetNfsUsersWithLdap(val interface{})
-	NfsUsersWithLdapInput() interface{}
+	NfsUsersWithLdap() any
+	SetNfsUsersWithLdap(val any)
+	NfsUsersWithLdapInput() any
 	// The tree node.
 	Node() constructs.Node
 	OrganizationalUnit() *string
@@ -106,11 +106,11 @@ type NetappActiveDirectory interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SecurityOperators() *[]*string
 	SetSecurityOperators(val *[]*string)
 	SecurityOperatorsInput() *[]*string
@@ -123,11 +123,11 @@ type NetappActiveDirectory interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() NetappActiveDirectoryTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Username() *string
 	SetUsername(val *string)
 	UsernameInput() *string
@@ -135,9 +135,9 @@ type NetappActiveDirectory interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -155,7 +155,7 @@ type NetappActiveDirectory interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -167,7 +167,7 @@ type NetappActiveDirectory interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -194,17 +194,17 @@ type NetappActiveDirectory interface {
 	ResetSecurityOperators()
 	ResetSite()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for NetappActiveDirectory
@@ -232,8 +232,8 @@ func (j *jsiiProxy_NetappActiveDirectory) AdministratorsInput() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_NetappActiveDirectory) AesEncryption() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetappActiveDirectory) AesEncryption() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"aesEncryption",
@@ -242,8 +242,8 @@ func (j *jsiiProxy_NetappActiveDirectory) AesEncryption() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NetappActiveDirectory) AesEncryptionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetappActiveDirectory) AesEncryptionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"aesEncryptionInput",
@@ -282,8 +282,8 @@ func (j *jsiiProxy_NetappActiveDirectory) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_NetappActiveDirectory) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetappActiveDirectory) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -292,8 +292,8 @@ func (j *jsiiProxy_NetappActiveDirectory) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NetappActiveDirectory) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_NetappActiveDirectory) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -302,8 +302,8 @@ func (j *jsiiProxy_NetappActiveDirectory) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_NetappActiveDirectory) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetappActiveDirectory) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -402,8 +402,8 @@ func (j *jsiiProxy_NetappActiveDirectory) EffectiveLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_NetappActiveDirectory) EncryptDcConnections() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetappActiveDirectory) EncryptDcConnections() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"encryptDcConnections",
@@ -412,8 +412,8 @@ func (j *jsiiProxy_NetappActiveDirectory) EncryptDcConnections() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NetappActiveDirectory) EncryptDcConnectionsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetappActiveDirectory) EncryptDcConnectionsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"encryptDcConnectionsInput",
@@ -532,8 +532,8 @@ func (j *jsiiProxy_NetappActiveDirectory) LabelsInput() *map[string]*string {
 	return returns
 }
 
-func (j *jsiiProxy_NetappActiveDirectory) LdapSigning() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetappActiveDirectory) LdapSigning() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ldapSigning",
@@ -542,8 +542,8 @@ func (j *jsiiProxy_NetappActiveDirectory) LdapSigning() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NetappActiveDirectory) LdapSigningInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetappActiveDirectory) LdapSigningInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ldapSigningInput",
@@ -622,8 +622,8 @@ func (j *jsiiProxy_NetappActiveDirectory) NetBiosPrefixInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_NetappActiveDirectory) NfsUsersWithLdap() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetappActiveDirectory) NfsUsersWithLdap() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"nfsUsersWithLdap",
@@ -632,8 +632,8 @@ func (j *jsiiProxy_NetappActiveDirectory) NfsUsersWithLdap() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NetappActiveDirectory) NfsUsersWithLdapInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetappActiveDirectory) NfsUsersWithLdapInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"nfsUsersWithLdapInput",
@@ -722,8 +722,8 @@ func (j *jsiiProxy_NetappActiveDirectory) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_NetappActiveDirectory) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_NetappActiveDirectory) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -732,8 +732,8 @@ func (j *jsiiProxy_NetappActiveDirectory) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NetappActiveDirectory) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetappActiveDirectory) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -822,8 +822,8 @@ func (j *jsiiProxy_NetappActiveDirectory) TerraformLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_NetappActiveDirectory) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_NetappActiveDirectory) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -852,8 +852,8 @@ func (j *jsiiProxy_NetappActiveDirectory) Timeouts() NetappActiveDirectoryTimeou
 	return returns
 }
 
-func (j *jsiiProxy_NetappActiveDirectory) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetappActiveDirectory) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -882,7 +882,6 @@ func (j *jsiiProxy_NetappActiveDirectory) UsernameInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_active_directory google_netapp_active_directory} Resource.
 func NewNetappActiveDirectory(scope constructs.Construct, id *string, config *NetappActiveDirectoryConfig) NetappActiveDirectory {
 	_init_.Initialize()
@@ -894,7 +893,7 @@ func NewNetappActiveDirectory(scope constructs.Construct, id *string, config *Ne
 
 	_jsii_.Create(
 		"@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -907,12 +906,12 @@ func NewNetappActiveDirectory_Override(n NetappActiveDirectory, scope constructs
 
 	_jsii_.Create(
 		"@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NetappActiveDirectory)SetAdministrators(val *[]*string) {
+func (j *jsiiProxy_NetappActiveDirectory) SetAdministrators(val *[]*string) {
 	if err := j.validateSetAdministratorsParameters(val); err != nil {
 		panic(err)
 	}
@@ -923,7 +922,7 @@ func (j *jsiiProxy_NetappActiveDirectory)SetAdministrators(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_NetappActiveDirectory)SetAesEncryption(val interface{}) {
+func (j *jsiiProxy_NetappActiveDirectory) SetAesEncryption(val any) {
 	if err := j.validateSetAesEncryptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -934,7 +933,7 @@ func (j *jsiiProxy_NetappActiveDirectory)SetAesEncryption(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NetappActiveDirectory)SetBackupOperators(val *[]*string) {
+func (j *jsiiProxy_NetappActiveDirectory) SetBackupOperators(val *[]*string) {
 	if err := j.validateSetBackupOperatorsParameters(val); err != nil {
 		panic(err)
 	}
@@ -945,7 +944,7 @@ func (j *jsiiProxy_NetappActiveDirectory)SetBackupOperators(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_NetappActiveDirectory)SetConnection(val interface{}) {
+func (j *jsiiProxy_NetappActiveDirectory) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -956,7 +955,7 @@ func (j *jsiiProxy_NetappActiveDirectory)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NetappActiveDirectory)SetCount(val interface{}) {
+func (j *jsiiProxy_NetappActiveDirectory) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -967,7 +966,7 @@ func (j *jsiiProxy_NetappActiveDirectory)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NetappActiveDirectory)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_NetappActiveDirectory) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -975,7 +974,7 @@ func (j *jsiiProxy_NetappActiveDirectory)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_NetappActiveDirectory)SetDescription(val *string) {
+func (j *jsiiProxy_NetappActiveDirectory) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -986,7 +985,7 @@ func (j *jsiiProxy_NetappActiveDirectory)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetappActiveDirectory)SetDns(val *string) {
+func (j *jsiiProxy_NetappActiveDirectory) SetDns(val *string) {
 	if err := j.validateSetDnsParameters(val); err != nil {
 		panic(err)
 	}
@@ -997,7 +996,7 @@ func (j *jsiiProxy_NetappActiveDirectory)SetDns(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetappActiveDirectory)SetDomain(val *string) {
+func (j *jsiiProxy_NetappActiveDirectory) SetDomain(val *string) {
 	if err := j.validateSetDomainParameters(val); err != nil {
 		panic(err)
 	}
@@ -1008,7 +1007,7 @@ func (j *jsiiProxy_NetappActiveDirectory)SetDomain(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetappActiveDirectory)SetEncryptDcConnections(val interface{}) {
+func (j *jsiiProxy_NetappActiveDirectory) SetEncryptDcConnections(val any) {
 	if err := j.validateSetEncryptDcConnectionsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1019,7 +1018,7 @@ func (j *jsiiProxy_NetappActiveDirectory)SetEncryptDcConnections(val interface{}
 	)
 }
 
-func (j *jsiiProxy_NetappActiveDirectory)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_NetappActiveDirectory) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1027,7 +1026,7 @@ func (j *jsiiProxy_NetappActiveDirectory)SetForEach(val cdktf.ITerraformIterator
 	)
 }
 
-func (j *jsiiProxy_NetappActiveDirectory)SetId(val *string) {
+func (j *jsiiProxy_NetappActiveDirectory) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1038,7 +1037,7 @@ func (j *jsiiProxy_NetappActiveDirectory)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetappActiveDirectory)SetKdcHostname(val *string) {
+func (j *jsiiProxy_NetappActiveDirectory) SetKdcHostname(val *string) {
 	if err := j.validateSetKdcHostnameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1049,7 +1048,7 @@ func (j *jsiiProxy_NetappActiveDirectory)SetKdcHostname(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetappActiveDirectory)SetKdcIp(val *string) {
+func (j *jsiiProxy_NetappActiveDirectory) SetKdcIp(val *string) {
 	if err := j.validateSetKdcIpParameters(val); err != nil {
 		panic(err)
 	}
@@ -1060,7 +1059,7 @@ func (j *jsiiProxy_NetappActiveDirectory)SetKdcIp(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetappActiveDirectory)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_NetappActiveDirectory) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1071,7 +1070,7 @@ func (j *jsiiProxy_NetappActiveDirectory)SetLabels(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_NetappActiveDirectory)SetLdapSigning(val interface{}) {
+func (j *jsiiProxy_NetappActiveDirectory) SetLdapSigning(val any) {
 	if err := j.validateSetLdapSigningParameters(val); err != nil {
 		panic(err)
 	}
@@ -1082,7 +1081,7 @@ func (j *jsiiProxy_NetappActiveDirectory)SetLdapSigning(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NetappActiveDirectory)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_NetappActiveDirectory) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1093,7 +1092,7 @@ func (j *jsiiProxy_NetappActiveDirectory)SetLifecycle(val *cdktf.TerraformResour
 	)
 }
 
-func (j *jsiiProxy_NetappActiveDirectory)SetLocation(val *string) {
+func (j *jsiiProxy_NetappActiveDirectory) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -1104,7 +1103,7 @@ func (j *jsiiProxy_NetappActiveDirectory)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetappActiveDirectory)SetName(val *string) {
+func (j *jsiiProxy_NetappActiveDirectory) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1115,7 +1114,7 @@ func (j *jsiiProxy_NetappActiveDirectory)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetappActiveDirectory)SetNetBiosPrefix(val *string) {
+func (j *jsiiProxy_NetappActiveDirectory) SetNetBiosPrefix(val *string) {
 	if err := j.validateSetNetBiosPrefixParameters(val); err != nil {
 		panic(err)
 	}
@@ -1126,7 +1125,7 @@ func (j *jsiiProxy_NetappActiveDirectory)SetNetBiosPrefix(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetappActiveDirectory)SetNfsUsersWithLdap(val interface{}) {
+func (j *jsiiProxy_NetappActiveDirectory) SetNfsUsersWithLdap(val any) {
 	if err := j.validateSetNfsUsersWithLdapParameters(val); err != nil {
 		panic(err)
 	}
@@ -1137,7 +1136,7 @@ func (j *jsiiProxy_NetappActiveDirectory)SetNfsUsersWithLdap(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NetappActiveDirectory)SetOrganizationalUnit(val *string) {
+func (j *jsiiProxy_NetappActiveDirectory) SetOrganizationalUnit(val *string) {
 	if err := j.validateSetOrganizationalUnitParameters(val); err != nil {
 		panic(err)
 	}
@@ -1148,7 +1147,7 @@ func (j *jsiiProxy_NetappActiveDirectory)SetOrganizationalUnit(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetappActiveDirectory)SetPassword(val *string) {
+func (j *jsiiProxy_NetappActiveDirectory) SetPassword(val *string) {
 	if err := j.validateSetPasswordParameters(val); err != nil {
 		panic(err)
 	}
@@ -1159,7 +1158,7 @@ func (j *jsiiProxy_NetappActiveDirectory)SetPassword(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetappActiveDirectory)SetProject(val *string) {
+func (j *jsiiProxy_NetappActiveDirectory) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -1170,7 +1169,7 @@ func (j *jsiiProxy_NetappActiveDirectory)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetappActiveDirectory)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_NetappActiveDirectory) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1178,7 +1177,7 @@ func (j *jsiiProxy_NetappActiveDirectory)SetProvider(val cdktf.TerraformProvider
 	)
 }
 
-func (j *jsiiProxy_NetappActiveDirectory)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_NetappActiveDirectory) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1189,7 +1188,7 @@ func (j *jsiiProxy_NetappActiveDirectory)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NetappActiveDirectory)SetSecurityOperators(val *[]*string) {
+func (j *jsiiProxy_NetappActiveDirectory) SetSecurityOperators(val *[]*string) {
 	if err := j.validateSetSecurityOperatorsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1200,7 +1199,7 @@ func (j *jsiiProxy_NetappActiveDirectory)SetSecurityOperators(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_NetappActiveDirectory)SetSite(val *string) {
+func (j *jsiiProxy_NetappActiveDirectory) SetSite(val *string) {
 	if err := j.validateSetSiteParameters(val); err != nil {
 		panic(err)
 	}
@@ -1211,7 +1210,7 @@ func (j *jsiiProxy_NetappActiveDirectory)SetSite(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetappActiveDirectory)SetUsername(val *string) {
+func (j *jsiiProxy_NetappActiveDirectory) SetUsername(val *string) {
 	if err := j.validateSetUsernameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1234,7 +1233,7 @@ func NetappActiveDirectory_GenerateConfigForImport(scope constructs.Construct, i
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1258,7 +1257,7 @@ func NetappActiveDirectory_GenerateConfigForImport(scope constructs.Construct, i
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func NetappActiveDirectory_IsConstruct(x interface{}) *bool {
+func NetappActiveDirectory_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetappActiveDirectory_IsConstructParameters(x); err != nil {
@@ -1269,7 +1268,7 @@ func NetappActiveDirectory_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1277,7 +1276,7 @@ func NetappActiveDirectory_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func NetappActiveDirectory_IsTerraformElement(x interface{}) *bool {
+func NetappActiveDirectory_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetappActiveDirectory_IsTerraformElementParameters(x); err != nil {
@@ -1288,7 +1287,7 @@ func NetappActiveDirectory_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1296,7 +1295,7 @@ func NetappActiveDirectory_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func NetappActiveDirectory_IsTerraformResource(x interface{}) *bool {
+func NetappActiveDirectory_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetappActiveDirectory_IsTerraformResourceParameters(x); err != nil {
@@ -1307,7 +1306,7 @@ func NetappActiveDirectory_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1332,31 +1331,31 @@ func (n *jsiiProxy_NetappActiveDirectory) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (n *jsiiProxy_NetappActiveDirectory) AddOverride(path *string, value interface{}) {
+func (n *jsiiProxy_NetappActiveDirectory) AddOverride(path *string, value any) {
 	if err := n.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (n *jsiiProxy_NetappActiveDirectory) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (n *jsiiProxy_NetappActiveDirectory) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1372,7 +1371,7 @@ func (n *jsiiProxy_NetappActiveDirectory) GetBooleanAttribute(terraformAttribute
 	_jsii_.Invoke(
 		n,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1388,7 +1387,7 @@ func (n *jsiiProxy_NetappActiveDirectory) GetBooleanMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		n,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1404,7 +1403,7 @@ func (n *jsiiProxy_NetappActiveDirectory) GetListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		n,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1420,7 +1419,7 @@ func (n *jsiiProxy_NetappActiveDirectory) GetNumberAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		n,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1436,7 +1435,7 @@ func (n *jsiiProxy_NetappActiveDirectory) GetNumberListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		n,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1452,7 +1451,7 @@ func (n *jsiiProxy_NetappActiveDirectory) GetNumberMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		n,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1468,7 +1467,7 @@ func (n *jsiiProxy_NetappActiveDirectory) GetStringAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		n,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1484,15 +1483,15 @@ func (n *jsiiProxy_NetappActiveDirectory) GetStringMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		n,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (n *jsiiProxy_NetappActiveDirectory) HasResourceMove() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetappActiveDirectory) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1511,7 +1510,7 @@ func (n *jsiiProxy_NetappActiveDirectory) ImportFrom(id *string, provider cdktf.
 	_jsii_.InvokeVoid(
 		n,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1524,7 +1523,7 @@ func (n *jsiiProxy_NetappActiveDirectory) InterpolationForAttribute(terraformAtt
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1538,18 +1537,18 @@ func (n *jsiiProxy_NetappActiveDirectory) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (n *jsiiProxy_NetappActiveDirectory) MoveTo(moveTarget *string, index interface{}) {
+func (n *jsiiProxy_NetappActiveDirectory) MoveTo(moveTarget *string, index any) {
 	if err := n.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1560,7 +1559,7 @@ func (n *jsiiProxy_NetappActiveDirectory) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1571,7 +1570,7 @@ func (n *jsiiProxy_NetappActiveDirectory) OverrideLogicalId(newLogicalId *string
 	_jsii_.InvokeVoid(
 		n,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1582,7 +1581,7 @@ func (n *jsiiProxy_NetappActiveDirectory) PutTimeouts(value *NetappActiveDirecto
 	_jsii_.InvokeVoid(
 		n,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1722,8 +1721,8 @@ func (n *jsiiProxy_NetappActiveDirectory) ResetTimeouts() {
 	)
 }
 
-func (n *jsiiProxy_NetappActiveDirectory) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (n *jsiiProxy_NetappActiveDirectory) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
@@ -1735,8 +1734,8 @@ func (n *jsiiProxy_NetappActiveDirectory) SynthesizeAttributes() *map[string]int
 	return returns
 }
 
-func (n *jsiiProxy_NetappActiveDirectory) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (n *jsiiProxy_NetappActiveDirectory) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
@@ -1748,8 +1747,8 @@ func (n *jsiiProxy_NetappActiveDirectory) SynthesizeHclAttributes() *map[string]
 	return returns
 }
 
-func (n *jsiiProxy_NetappActiveDirectory) ToHclTerraform() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetappActiveDirectory) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1761,8 +1760,8 @@ func (n *jsiiProxy_NetappActiveDirectory) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (n *jsiiProxy_NetappActiveDirectory) ToMetadata() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetappActiveDirectory) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1787,8 +1786,8 @@ func (n *jsiiProxy_NetappActiveDirectory) ToString() *string {
 	return returns
 }
 
-func (n *jsiiProxy_NetappActiveDirectory) ToTerraform() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetappActiveDirectory) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1799,4 +1798,3 @@ func (n *jsiiProxy_NetappActiveDirectory) ToTerraform() interface{} {
 
 	return returns
 }
-

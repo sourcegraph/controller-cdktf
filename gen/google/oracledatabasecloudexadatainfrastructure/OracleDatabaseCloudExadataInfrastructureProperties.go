@@ -1,6 +1,5 @@
 package oracledatabasecloudexadatainfrastructure
 
-
 type OracleDatabaseCloudExadataInfrastructureProperties struct {
 	// The shape of the Exadata Infrastructure.
 	//
@@ -16,7 +15,7 @@ type OracleDatabaseCloudExadataInfrastructureProperties struct {
 	// customer_contacts block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/oracle_database_cloud_exadata_infrastructure#customer_contacts OracleDatabaseCloudExadataInfrastructure#customer_contacts}
-	CustomerContacts interface{} `field:"optional" json:"customerContacts" yaml:"customerContacts"`
+	CustomerContacts any `field:"optional" json:"customerContacts" yaml:"customerContacts"`
 	// maintenance_window block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/oracle_database_cloud_exadata_infrastructure#maintenance_window OracleDatabaseCloudExadataInfrastructure#maintenance_window}
@@ -30,4 +29,3 @@ type OracleDatabaseCloudExadataInfrastructureProperties struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/oracle_database_cloud_exadata_infrastructure#total_storage_size_gb OracleDatabaseCloudExadataInfrastructure#total_storage_size_gb}
 	TotalStorageSizeGb *float64 `field:"optional" json:"totalStorageSizeGb" yaml:"totalStorageSizeGb"`
 }
-

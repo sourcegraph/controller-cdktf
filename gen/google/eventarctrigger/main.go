@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.eventarcTrigger.EventarcTrigger",
-		reflect.TypeOf((*EventarcTrigger)(nil)).Elem(),
+		reflect.TypeFor[EventarcTrigger](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -100,7 +100,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EventarcTrigger{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -108,19 +108,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.eventarcTrigger.EventarcTriggerConfig",
-		reflect.TypeOf((*EventarcTriggerConfig)(nil)).Elem(),
+		reflect.TypeFor[EventarcTriggerConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.eventarcTrigger.EventarcTriggerDestination",
-		reflect.TypeOf((*EventarcTriggerDestination)(nil)).Elem(),
+		reflect.TypeFor[EventarcTriggerDestination](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.eventarcTrigger.EventarcTriggerDestinationCloudRunService",
-		reflect.TypeOf((*EventarcTriggerDestinationCloudRunService)(nil)).Elem(),
+		reflect.TypeFor[EventarcTriggerDestinationCloudRunService](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.eventarcTrigger.EventarcTriggerDestinationCloudRunServiceOutputReference",
-		reflect.TypeOf((*EventarcTriggerDestinationCloudRunServiceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EventarcTriggerDestinationCloudRunServiceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -152,7 +152,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EventarcTriggerDestinationCloudRunServiceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -160,11 +160,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.eventarcTrigger.EventarcTriggerDestinationGke",
-		reflect.TypeOf((*EventarcTriggerDestinationGke)(nil)).Elem(),
+		reflect.TypeFor[EventarcTriggerDestinationGke](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.eventarcTrigger.EventarcTriggerDestinationGkeOutputReference",
-		reflect.TypeOf((*EventarcTriggerDestinationGkeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EventarcTriggerDestinationGkeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cluster", GoGetter: "Cluster"},
 			_jsii_.MemberProperty{JsiiProperty: "clusterInput", GoGetter: "ClusterInput"},
@@ -199,7 +199,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EventarcTriggerDestinationGkeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -207,11 +207,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.eventarcTrigger.EventarcTriggerDestinationHttpEndpoint",
-		reflect.TypeOf((*EventarcTriggerDestinationHttpEndpoint)(nil)).Elem(),
+		reflect.TypeFor[EventarcTriggerDestinationHttpEndpoint](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.eventarcTrigger.EventarcTriggerDestinationHttpEndpointOutputReference",
-		reflect.TypeOf((*EventarcTriggerDestinationHttpEndpointOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EventarcTriggerDestinationHttpEndpointOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -237,7 +237,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uri", GoGetter: "Uri"},
 			_jsii_.MemberProperty{JsiiProperty: "uriInput", GoGetter: "UriInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EventarcTriggerDestinationHttpEndpointOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -245,11 +245,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.eventarcTrigger.EventarcTriggerDestinationNetworkConfig",
-		reflect.TypeOf((*EventarcTriggerDestinationNetworkConfig)(nil)).Elem(),
+		reflect.TypeFor[EventarcTriggerDestinationNetworkConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.eventarcTrigger.EventarcTriggerDestinationNetworkConfigOutputReference",
-		reflect.TypeOf((*EventarcTriggerDestinationNetworkConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EventarcTriggerDestinationNetworkConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -275,7 +275,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EventarcTriggerDestinationNetworkConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -283,7 +283,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.eventarcTrigger.EventarcTriggerDestinationOutputReference",
-		reflect.TypeOf((*EventarcTriggerDestinationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EventarcTriggerDestinationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cloudFunction", GoGetter: "CloudFunction"},
 			_jsii_.MemberProperty{JsiiProperty: "cloudRunService", GoGetter: "CloudRunService"},
@@ -327,7 +327,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workflow", GoGetter: "Workflow"},
 			_jsii_.MemberProperty{JsiiProperty: "workflowInput", GoGetter: "WorkflowInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EventarcTriggerDestinationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -335,11 +335,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.eventarcTrigger.EventarcTriggerMatchingCriteria",
-		reflect.TypeOf((*EventarcTriggerMatchingCriteria)(nil)).Elem(),
+		reflect.TypeFor[EventarcTriggerMatchingCriteria](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.eventarcTrigger.EventarcTriggerMatchingCriteriaList",
-		reflect.TypeOf((*EventarcTriggerMatchingCriteriaList)(nil)).Elem(),
+		reflect.TypeFor[EventarcTriggerMatchingCriteriaList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -353,7 +353,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EventarcTriggerMatchingCriteriaList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -361,7 +361,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.eventarcTrigger.EventarcTriggerMatchingCriteriaOutputReference",
-		reflect.TypeOf((*EventarcTriggerMatchingCriteriaOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EventarcTriggerMatchingCriteriaOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "attribute", GoGetter: "Attribute"},
 			_jsii_.MemberProperty{JsiiProperty: "attributeInput", GoGetter: "AttributeInput"},
@@ -392,7 +392,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EventarcTriggerMatchingCriteriaOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -400,11 +400,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.eventarcTrigger.EventarcTriggerRetryPolicy",
-		reflect.TypeOf((*EventarcTriggerRetryPolicy)(nil)).Elem(),
+		reflect.TypeFor[EventarcTriggerRetryPolicy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.eventarcTrigger.EventarcTriggerRetryPolicyOutputReference",
-		reflect.TypeOf((*EventarcTriggerRetryPolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EventarcTriggerRetryPolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -431,7 +431,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EventarcTriggerRetryPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -439,11 +439,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.eventarcTrigger.EventarcTriggerTimeouts",
-		reflect.TypeOf((*EventarcTriggerTimeouts)(nil)).Elem(),
+		reflect.TypeFor[EventarcTriggerTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.eventarcTrigger.EventarcTriggerTimeoutsOutputReference",
-		reflect.TypeOf((*EventarcTriggerTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EventarcTriggerTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -476,7 +476,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EventarcTriggerTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -484,11 +484,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.eventarcTrigger.EventarcTriggerTransport",
-		reflect.TypeOf((*EventarcTriggerTransport)(nil)).Elem(),
+		reflect.TypeFor[EventarcTriggerTransport](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.eventarcTrigger.EventarcTriggerTransportOutputReference",
-		reflect.TypeOf((*EventarcTriggerTransportOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EventarcTriggerTransportOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -516,7 +516,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EventarcTriggerTransportOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -524,11 +524,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.eventarcTrigger.EventarcTriggerTransportPubsub",
-		reflect.TypeOf((*EventarcTriggerTransportPubsub)(nil)).Elem(),
+		reflect.TypeFor[EventarcTriggerTransportPubsub](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.eventarcTrigger.EventarcTriggerTransportPubsubOutputReference",
-		reflect.TypeOf((*EventarcTriggerTransportPubsubOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EventarcTriggerTransportPubsubOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -556,7 +556,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "topicInput", GoGetter: "TopicInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EventarcTriggerTransportPubsubOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

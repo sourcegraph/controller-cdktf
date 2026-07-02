@@ -98,7 +98,7 @@ func (s *jsiiProxy_StorageBucketObjectContextsCustomOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_StorageBucketObjectContextsCustomOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_StorageBucketObjectContextsCustomOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_StorageBucketObjectContextsCustomOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_StorageBucketObjectContextsCustomOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_StorageBucketObjectContextsCustomOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewStorageBucketObjectContextsCustomOutputReferenceParameters(terra
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (p *jsiiProxy_PrivatecaCertificateAuthorityTimeoutsOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_PrivatecaCertificateAuthorityTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PrivatecaCertificateAuthorityTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_PrivatecaCertificateAuthorityTimeoutsOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_PrivatecaCertificateAuthorityTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PrivatecaCertificateAuthorityTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewPrivatecaCertificateAuthorityTimeoutsOutputReferenceParameters(t
 
 	return nil
 }
-

@@ -15,15 +15,15 @@ type NetappHostGroup interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -73,21 +73,21 @@ type NetappHostGroup interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	State() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() NetappHostGroupTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
@@ -95,9 +95,9 @@ type NetappHostGroup interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -115,7 +115,7 @@ type NetappHostGroup interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -127,7 +127,7 @@ type NetappHostGroup interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -143,17 +143,17 @@ type NetappHostGroup interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for NetappHostGroup
@@ -171,8 +171,8 @@ func (j *jsiiProxy_NetappHostGroup) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_NetappHostGroup) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetappHostGroup) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -181,8 +181,8 @@ func (j *jsiiProxy_NetappHostGroup) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NetappHostGroup) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_NetappHostGroup) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -191,8 +191,8 @@ func (j *jsiiProxy_NetappHostGroup) ConstructNodeMetadata() *map[string]interfac
 	return returns
 }
 
-func (j *jsiiProxy_NetappHostGroup) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetappHostGroup) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -451,8 +451,8 @@ func (j *jsiiProxy_NetappHostGroup) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_NetappHostGroup) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_NetappHostGroup) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -461,8 +461,8 @@ func (j *jsiiProxy_NetappHostGroup) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NetappHostGroup) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetappHostGroup) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -501,8 +501,8 @@ func (j *jsiiProxy_NetappHostGroup) TerraformLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_NetappHostGroup) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_NetappHostGroup) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -531,8 +531,8 @@ func (j *jsiiProxy_NetappHostGroup) Timeouts() NetappHostGroupTimeoutsOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_NetappHostGroup) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetappHostGroup) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -561,7 +561,6 @@ func (j *jsiiProxy_NetappHostGroup) TypeInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_host_group google_netapp_host_group} Resource.
 func NewNetappHostGroup(scope constructs.Construct, id *string, config *NetappHostGroupConfig) NetappHostGroup {
 	_init_.Initialize()
@@ -573,7 +572,7 @@ func NewNetappHostGroup(scope constructs.Construct, id *string, config *NetappHo
 
 	_jsii_.Create(
 		"@cdktf/provider-google.netappHostGroup.NetappHostGroup",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -586,12 +585,12 @@ func NewNetappHostGroup_Override(n NetappHostGroup, scope constructs.Construct, 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.netappHostGroup.NetappHostGroup",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NetappHostGroup)SetConnection(val interface{}) {
+func (j *jsiiProxy_NetappHostGroup) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -602,7 +601,7 @@ func (j *jsiiProxy_NetappHostGroup)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NetappHostGroup)SetCount(val interface{}) {
+func (j *jsiiProxy_NetappHostGroup) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -613,7 +612,7 @@ func (j *jsiiProxy_NetappHostGroup)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NetappHostGroup)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_NetappHostGroup) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -621,7 +620,7 @@ func (j *jsiiProxy_NetappHostGroup)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_NetappHostGroup)SetDescription(val *string) {
+func (j *jsiiProxy_NetappHostGroup) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -632,7 +631,7 @@ func (j *jsiiProxy_NetappHostGroup)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetappHostGroup)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_NetappHostGroup) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -640,7 +639,7 @@ func (j *jsiiProxy_NetappHostGroup)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_NetappHostGroup)SetHosts(val *[]*string) {
+func (j *jsiiProxy_NetappHostGroup) SetHosts(val *[]*string) {
 	if err := j.validateSetHostsParameters(val); err != nil {
 		panic(err)
 	}
@@ -651,7 +650,7 @@ func (j *jsiiProxy_NetappHostGroup)SetHosts(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_NetappHostGroup)SetId(val *string) {
+func (j *jsiiProxy_NetappHostGroup) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -662,7 +661,7 @@ func (j *jsiiProxy_NetappHostGroup)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetappHostGroup)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_NetappHostGroup) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -673,7 +672,7 @@ func (j *jsiiProxy_NetappHostGroup)SetLabels(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_NetappHostGroup)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_NetappHostGroup) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -684,7 +683,7 @@ func (j *jsiiProxy_NetappHostGroup)SetLifecycle(val *cdktf.TerraformResourceLife
 	)
 }
 
-func (j *jsiiProxy_NetappHostGroup)SetLocation(val *string) {
+func (j *jsiiProxy_NetappHostGroup) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -695,7 +694,7 @@ func (j *jsiiProxy_NetappHostGroup)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetappHostGroup)SetName(val *string) {
+func (j *jsiiProxy_NetappHostGroup) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -706,7 +705,7 @@ func (j *jsiiProxy_NetappHostGroup)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetappHostGroup)SetOsType(val *string) {
+func (j *jsiiProxy_NetappHostGroup) SetOsType(val *string) {
 	if err := j.validateSetOsTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -717,7 +716,7 @@ func (j *jsiiProxy_NetappHostGroup)SetOsType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetappHostGroup)SetProject(val *string) {
+func (j *jsiiProxy_NetappHostGroup) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -728,7 +727,7 @@ func (j *jsiiProxy_NetappHostGroup)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetappHostGroup)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_NetappHostGroup) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -736,7 +735,7 @@ func (j *jsiiProxy_NetappHostGroup)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_NetappHostGroup)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_NetappHostGroup) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -747,7 +746,7 @@ func (j *jsiiProxy_NetappHostGroup)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NetappHostGroup)SetType(val *string) {
+func (j *jsiiProxy_NetappHostGroup) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -770,7 +769,7 @@ func NetappHostGroup_GenerateConfigForImport(scope constructs.Construct, importT
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.netappHostGroup.NetappHostGroup",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -794,7 +793,7 @@ func NetappHostGroup_GenerateConfigForImport(scope constructs.Construct, importT
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func NetappHostGroup_IsConstruct(x interface{}) *bool {
+func NetappHostGroup_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetappHostGroup_IsConstructParameters(x); err != nil {
@@ -805,7 +804,7 @@ func NetappHostGroup_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.netappHostGroup.NetappHostGroup",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -813,7 +812,7 @@ func NetappHostGroup_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func NetappHostGroup_IsTerraformElement(x interface{}) *bool {
+func NetappHostGroup_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetappHostGroup_IsTerraformElementParameters(x); err != nil {
@@ -824,7 +823,7 @@ func NetappHostGroup_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.netappHostGroup.NetappHostGroup",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -832,7 +831,7 @@ func NetappHostGroup_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func NetappHostGroup_IsTerraformResource(x interface{}) *bool {
+func NetappHostGroup_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetappHostGroup_IsTerraformResourceParameters(x); err != nil {
@@ -843,7 +842,7 @@ func NetappHostGroup_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.netappHostGroup.NetappHostGroup",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -868,31 +867,31 @@ func (n *jsiiProxy_NetappHostGroup) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (n *jsiiProxy_NetappHostGroup) AddOverride(path *string, value interface{}) {
+func (n *jsiiProxy_NetappHostGroup) AddOverride(path *string, value any) {
 	if err := n.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (n *jsiiProxy_NetappHostGroup) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (n *jsiiProxy_NetappHostGroup) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -908,7 +907,7 @@ func (n *jsiiProxy_NetappHostGroup) GetBooleanAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		n,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -924,7 +923,7 @@ func (n *jsiiProxy_NetappHostGroup) GetBooleanMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		n,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -940,7 +939,7 @@ func (n *jsiiProxy_NetappHostGroup) GetListAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		n,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -956,7 +955,7 @@ func (n *jsiiProxy_NetappHostGroup) GetNumberAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		n,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -972,7 +971,7 @@ func (n *jsiiProxy_NetappHostGroup) GetNumberListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		n,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -988,7 +987,7 @@ func (n *jsiiProxy_NetappHostGroup) GetNumberMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		n,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1004,7 +1003,7 @@ func (n *jsiiProxy_NetappHostGroup) GetStringAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		n,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1020,15 +1019,15 @@ func (n *jsiiProxy_NetappHostGroup) GetStringMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		n,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (n *jsiiProxy_NetappHostGroup) HasResourceMove() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetappHostGroup) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1047,7 +1046,7 @@ func (n *jsiiProxy_NetappHostGroup) ImportFrom(id *string, provider cdktf.Terraf
 	_jsii_.InvokeVoid(
 		n,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1060,7 +1059,7 @@ func (n *jsiiProxy_NetappHostGroup) InterpolationForAttribute(terraformAttribute
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1074,18 +1073,18 @@ func (n *jsiiProxy_NetappHostGroup) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (n *jsiiProxy_NetappHostGroup) MoveTo(moveTarget *string, index interface{}) {
+func (n *jsiiProxy_NetappHostGroup) MoveTo(moveTarget *string, index any) {
 	if err := n.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1096,7 +1095,7 @@ func (n *jsiiProxy_NetappHostGroup) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1107,7 +1106,7 @@ func (n *jsiiProxy_NetappHostGroup) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1118,7 +1117,7 @@ func (n *jsiiProxy_NetappHostGroup) PutTimeouts(value *NetappHostGroupTimeouts) 
 	_jsii_.InvokeVoid(
 		n,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1170,8 +1169,8 @@ func (n *jsiiProxy_NetappHostGroup) ResetTimeouts() {
 	)
 }
 
-func (n *jsiiProxy_NetappHostGroup) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (n *jsiiProxy_NetappHostGroup) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
@@ -1183,8 +1182,8 @@ func (n *jsiiProxy_NetappHostGroup) SynthesizeAttributes() *map[string]interface
 	return returns
 }
 
-func (n *jsiiProxy_NetappHostGroup) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (n *jsiiProxy_NetappHostGroup) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
@@ -1196,8 +1195,8 @@ func (n *jsiiProxy_NetappHostGroup) SynthesizeHclAttributes() *map[string]interf
 	return returns
 }
 
-func (n *jsiiProxy_NetappHostGroup) ToHclTerraform() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetappHostGroup) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1209,8 +1208,8 @@ func (n *jsiiProxy_NetappHostGroup) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (n *jsiiProxy_NetappHostGroup) ToMetadata() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetappHostGroup) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1235,8 +1234,8 @@ func (n *jsiiProxy_NetappHostGroup) ToString() *string {
 	return returns
 }
 
-func (n *jsiiProxy_NetappHostGroup) ToTerraform() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetappHostGroup) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1247,4 +1246,3 @@ func (n *jsiiProxy_NetappHostGroup) ToTerraform() interface{} {
 
 	return returns
 }
-

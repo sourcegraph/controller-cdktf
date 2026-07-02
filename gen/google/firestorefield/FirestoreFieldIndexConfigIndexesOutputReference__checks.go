@@ -106,7 +106,7 @@ func (j *jsiiProxy_FirestoreFieldIndexConfigIndexesOutputReference) validateSetA
 	return nil
 }
 
-func (j *jsiiProxy_FirestoreFieldIndexConfigIndexesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_FirestoreFieldIndexConfigIndexesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_FirestoreFieldIndexConfigIndexesOutputReference) validateSetC
 	return nil
 }
 
-func (j *jsiiProxy_FirestoreFieldIndexConfigIndexesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_FirestoreFieldIndexConfigIndexesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewFirestoreFieldIndexConfigIndexesOutputReferenceParameters(terraf
 
 	return nil
 }
-

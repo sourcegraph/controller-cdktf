@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComposerEnvironmentConfigDataRetentionConfigAirflowMetadataRe
 	return nil
 }
 
-func (j *jsiiProxy_ComposerEnvironmentConfigDataRetentionConfigAirflowMetadataRetentionConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComposerEnvironmentConfigDataRetentionConfigAirflowMetadataRetentionConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ComposerEnvironmentConfigDataRetentionConfigAirflowMetadataRe
 	return nil
 }
 
-func (j *jsiiProxy_ComposerEnvironmentConfigDataRetentionConfigAirflowMetadataRetentionConfigOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComposerEnvironmentConfigDataRetentionConfigAirflowMetadataRetentionConfigOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewComposerEnvironmentConfigDataRetentionConfigAirflowMetadataReten
 
 	return nil
 }
-

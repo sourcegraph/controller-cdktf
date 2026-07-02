@@ -106,7 +106,7 @@ func (j *jsiiProxy_NetworkServicesHttpRouteRulesActionResponseHeaderModifierOutp
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesHttpRouteRulesActionResponseHeaderModifierOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkServicesHttpRouteRulesActionResponseHeaderModifierOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewNetworkServicesHttpRouteRulesActionResponseHeaderModifierOutputR
 
 	return nil
 }
-

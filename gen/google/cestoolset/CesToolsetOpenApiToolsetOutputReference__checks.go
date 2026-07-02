@@ -131,7 +131,7 @@ func (c *jsiiProxy_CesToolsetOpenApiToolsetOutputReference) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_CesToolsetOpenApiToolsetOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CesToolsetOpenApiToolsetOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -196,7 +196,7 @@ func (j *jsiiProxy_CesToolsetOpenApiToolsetOutputReference) validateSetComplexOb
 	return nil
 }
 
-func (j *jsiiProxy_CesToolsetOpenApiToolsetOutputReference) validateSetIgnoreUnknownFieldsParameters(val interface{}) error {
+func (j *jsiiProxy_CesToolsetOpenApiToolsetOutputReference) validateSetIgnoreUnknownFieldsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -259,4 +259,3 @@ func validateNewCesToolsetOpenApiToolsetOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

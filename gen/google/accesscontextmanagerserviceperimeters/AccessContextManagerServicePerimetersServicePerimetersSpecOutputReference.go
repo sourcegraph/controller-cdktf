@@ -15,9 +15,9 @@ type AccessContextManagerServicePerimetersServicePerimetersSpecOutputReference i
 	AccessLevelsInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -29,11 +29,11 @@ type AccessContextManagerServicePerimetersServicePerimetersSpecOutputReference i
 	// Experimental.
 	CreationStack() *[]*string
 	EgressPolicies() AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesList
-	EgressPoliciesInput() interface{}
+	EgressPoliciesInput() any
 	// Experimental.
 	Fqn() *string
 	IngressPolicies() AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesList
-	IngressPoliciesInput() interface{}
+	IngressPoliciesInput() any
 	InternalValue() *AccessContextManagerServicePerimetersServicePerimetersSpec
 	SetInternalValue(val *AccessContextManagerServicePerimetersServicePerimetersSpec)
 	Resources() *[]*string
@@ -55,7 +55,7 @@ type AccessContextManagerServicePerimetersServicePerimetersSpecOutputReference i
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -76,8 +76,8 @@ type AccessContextManagerServicePerimetersServicePerimetersSpecOutputReference i
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutEgressPolicies(value interface{})
-	PutIngressPolicies(value interface{})
+	PutEgressPolicies(value any)
+	PutIngressPolicies(value any)
 	PutVpcAccessibleServices(value *AccessContextManagerServicePerimetersServicePerimetersSpecVpcAccessibleServices)
 	ResetAccessLevels()
 	ResetEgressPolicies()
@@ -87,7 +87,7 @@ type AccessContextManagerServicePerimetersServicePerimetersSpecOutputReference i
 	ResetVpcAccessibleServices()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -120,8 +120,8 @@ func (j *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersSpecOut
 	return returns
 }
 
-func (j *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersSpecOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersSpecOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -160,8 +160,8 @@ func (j *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersSpecOut
 	return returns
 }
 
-func (j *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersSpecOutputReference) EgressPoliciesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersSpecOutputReference) EgressPoliciesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"egressPoliciesInput",
@@ -190,8 +190,8 @@ func (j *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersSpecOut
 	return returns
 }
 
-func (j *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersSpecOutputReference) IngressPoliciesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersSpecOutputReference) IngressPoliciesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ingressPoliciesInput",
@@ -290,7 +290,6 @@ func (j *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersSpecOut
 	return returns
 }
 
-
 func NewAccessContextManagerServicePerimetersServicePerimetersSpecOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AccessContextManagerServicePerimetersServicePerimetersSpecOutputReference {
 	_init_.Initialize()
 
@@ -301,7 +300,7 @@ func NewAccessContextManagerServicePerimetersServicePerimetersSpecOutputReferenc
 
 	_jsii_.Create(
 		"@cdktf/provider-google.accessContextManagerServicePerimeters.AccessContextManagerServicePerimetersServicePerimetersSpecOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -313,12 +312,12 @@ func NewAccessContextManagerServicePerimetersServicePerimetersSpecOutputReferenc
 
 	_jsii_.Create(
 		"@cdktf/provider-google.accessContextManagerServicePerimeters.AccessContextManagerServicePerimetersServicePerimetersSpecOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersSpecOutputReference)SetAccessLevels(val *[]*string) {
+func (j *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersSpecOutputReference) SetAccessLevels(val *[]*string) {
 	if err := j.validateSetAccessLevelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -329,7 +328,7 @@ func (j *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersSpecOut
 	)
 }
 
-func (j *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersSpecOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersSpecOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -340,7 +339,7 @@ func (j *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersSpecOut
 	)
 }
 
-func (j *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersSpecOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersSpecOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -351,7 +350,7 @@ func (j *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersSpecOut
 	)
 }
 
-func (j *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersSpecOutputReference)SetInternalValue(val *AccessContextManagerServicePerimetersServicePerimetersSpec) {
+func (j *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersSpecOutputReference) SetInternalValue(val *AccessContextManagerServicePerimetersServicePerimetersSpec) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -362,7 +361,7 @@ func (j *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersSpecOut
 	)
 }
 
-func (j *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersSpecOutputReference)SetResources(val *[]*string) {
+func (j *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersSpecOutputReference) SetResources(val *[]*string) {
 	if err := j.validateSetResourcesParameters(val); err != nil {
 		panic(err)
 	}
@@ -373,7 +372,7 @@ func (j *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersSpecOut
 	)
 }
 
-func (j *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersSpecOutputReference)SetRestrictedServices(val *[]*string) {
+func (j *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersSpecOutputReference) SetRestrictedServices(val *[]*string) {
 	if err := j.validateSetRestrictedServicesParameters(val); err != nil {
 		panic(err)
 	}
@@ -384,7 +383,7 @@ func (j *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersSpecOut
 	)
 }
 
-func (j *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersSpecOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersSpecOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -395,7 +394,7 @@ func (j *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersSpecOut
 	)
 }
 
-func (j *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersSpecOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersSpecOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -419,16 +418,16 @@ func (a *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersSpecOut
 	return returns
 }
 
-func (a *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersSpecOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersSpecOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -444,7 +443,7 @@ func (a *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersSpecOut
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -460,7 +459,7 @@ func (a *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersSpecOut
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -476,7 +475,7 @@ func (a *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersSpecOut
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -492,7 +491,7 @@ func (a *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersSpecOut
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -508,7 +507,7 @@ func (a *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersSpecOut
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -524,7 +523,7 @@ func (a *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersSpecOut
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -540,7 +539,7 @@ func (a *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersSpecOut
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -556,7 +555,7 @@ func (a *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersSpecOut
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -585,32 +584,32 @@ func (a *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersSpecOut
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersSpecOutputReference) PutEgressPolicies(value interface{}) {
+func (a *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersSpecOutputReference) PutEgressPolicies(value any) {
 	if err := a.validatePutEgressPoliciesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"putEgressPolicies",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (a *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersSpecOutputReference) PutIngressPolicies(value interface{}) {
+func (a *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersSpecOutputReference) PutIngressPolicies(value any) {
 	if err := a.validatePutIngressPoliciesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"putIngressPolicies",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -621,7 +620,7 @@ func (a *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersSpecOut
 	_jsii_.InvokeVoid(
 		a,
 		"putVpcAccessibleServices",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -673,16 +672,16 @@ func (a *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersSpecOut
 	)
 }
 
-func (a *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersSpecOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersSpecOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -701,4 +700,3 @@ func (a *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersSpecOut
 
 	return returns
 }
-

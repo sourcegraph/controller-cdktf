@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.loggingLinkedDataset.LoggingLinkedDataset",
-		reflect.TypeOf((*LoggingLinkedDataset)(nil)).Elem(),
+		reflect.TypeFor[LoggingLinkedDataset](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -80,7 +80,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LoggingLinkedDataset{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -88,11 +88,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.loggingLinkedDataset.LoggingLinkedDatasetBigqueryDataset",
-		reflect.TypeOf((*LoggingLinkedDatasetBigqueryDataset)(nil)).Elem(),
+		reflect.TypeFor[LoggingLinkedDatasetBigqueryDataset](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.loggingLinkedDataset.LoggingLinkedDatasetBigqueryDatasetList",
-		reflect.TypeOf((*LoggingLinkedDatasetBigqueryDatasetList)(nil)).Elem(),
+		reflect.TypeFor[LoggingLinkedDatasetBigqueryDatasetList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -106,7 +106,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LoggingLinkedDatasetBigqueryDatasetList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -114,7 +114,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.loggingLinkedDataset.LoggingLinkedDatasetBigqueryDatasetOutputReference",
-		reflect.TypeOf((*LoggingLinkedDatasetBigqueryDatasetOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LoggingLinkedDatasetBigqueryDatasetOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -139,7 +139,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LoggingLinkedDatasetBigqueryDatasetOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -147,15 +147,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.loggingLinkedDataset.LoggingLinkedDatasetConfig",
-		reflect.TypeOf((*LoggingLinkedDatasetConfig)(nil)).Elem(),
+		reflect.TypeFor[LoggingLinkedDatasetConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.loggingLinkedDataset.LoggingLinkedDatasetTimeouts",
-		reflect.TypeOf((*LoggingLinkedDatasetTimeouts)(nil)).Elem(),
+		reflect.TypeFor[LoggingLinkedDatasetTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.loggingLinkedDataset.LoggingLinkedDatasetTimeoutsOutputReference",
-		reflect.TypeOf((*LoggingLinkedDatasetTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LoggingLinkedDatasetTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -185,7 +185,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LoggingLinkedDatasetTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

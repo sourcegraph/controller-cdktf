@@ -98,7 +98,7 @@ func (f *jsiiProxy_FilestoreInstanceEffectiveReplicationOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_FilestoreInstanceEffectiveReplicationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_FilestoreInstanceEffectiveReplicationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewFilestoreInstanceEffectiveReplicationOutputReferenceParameters(t
 
 	return nil
 }
-

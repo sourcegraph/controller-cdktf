@@ -98,7 +98,7 @@ func (b *jsiiProxy_BigqueryConnectionConfigurationNetworkPrivateServiceConnectOu
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewBigqueryConnectionConfigurationNetworkPrivateServiceConnectOutpu
 
 	return nil
 }
-

@@ -10,14 +10,14 @@ import (
 
 type NetappVolumeCacheParametersCacheConfigOutputReference interface {
 	cdktf.ComplexObject
-	CifsChangeNotifyEnabled() interface{}
-	SetCifsChangeNotifyEnabled(val interface{})
-	CifsChangeNotifyEnabledInput() interface{}
+	CifsChangeNotifyEnabled() any
+	SetCifsChangeNotifyEnabled(val any)
+	CifsChangeNotifyEnabledInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -43,7 +43,7 @@ type NetappVolumeCacheParametersCacheConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -67,7 +67,7 @@ type NetappVolumeCacheParametersCacheConfigOutputReference interface {
 	ResetCifsChangeNotifyEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,8 +80,8 @@ type jsiiProxy_NetappVolumeCacheParametersCacheConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_NetappVolumeCacheParametersCacheConfigOutputReference) CifsChangeNotifyEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetappVolumeCacheParametersCacheConfigOutputReference) CifsChangeNotifyEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"cifsChangeNotifyEnabled",
@@ -90,8 +90,8 @@ func (j *jsiiProxy_NetappVolumeCacheParametersCacheConfigOutputReference) CifsCh
 	return returns
 }
 
-func (j *jsiiProxy_NetappVolumeCacheParametersCacheConfigOutputReference) CifsChangeNotifyEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetappVolumeCacheParametersCacheConfigOutputReference) CifsChangeNotifyEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"cifsChangeNotifyEnabledInput",
@@ -100,8 +100,8 @@ func (j *jsiiProxy_NetappVolumeCacheParametersCacheConfigOutputReference) CifsCh
 	return returns
 }
 
-func (j *jsiiProxy_NetappVolumeCacheParametersCacheConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetappVolumeCacheParametersCacheConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -170,7 +170,6 @@ func (j *jsiiProxy_NetappVolumeCacheParametersCacheConfigOutputReference) Terraf
 	return returns
 }
 
-
 func NewNetappVolumeCacheParametersCacheConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) NetappVolumeCacheParametersCacheConfigOutputReference {
 	_init_.Initialize()
 
@@ -181,7 +180,7 @@ func NewNetappVolumeCacheParametersCacheConfigOutputReference(terraformResource 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.netappVolume.NetappVolumeCacheParametersCacheConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -193,12 +192,12 @@ func NewNetappVolumeCacheParametersCacheConfigOutputReference_Override(n NetappV
 
 	_jsii_.Create(
 		"@cdktf/provider-google.netappVolume.NetappVolumeCacheParametersCacheConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NetappVolumeCacheParametersCacheConfigOutputReference)SetCifsChangeNotifyEnabled(val interface{}) {
+func (j *jsiiProxy_NetappVolumeCacheParametersCacheConfigOutputReference) SetCifsChangeNotifyEnabled(val any) {
 	if err := j.validateSetCifsChangeNotifyEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -209,7 +208,7 @@ func (j *jsiiProxy_NetappVolumeCacheParametersCacheConfigOutputReference)SetCifs
 	)
 }
 
-func (j *jsiiProxy_NetappVolumeCacheParametersCacheConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_NetappVolumeCacheParametersCacheConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -220,7 +219,7 @@ func (j *jsiiProxy_NetappVolumeCacheParametersCacheConfigOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_NetappVolumeCacheParametersCacheConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_NetappVolumeCacheParametersCacheConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_NetappVolumeCacheParametersCacheConfigOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_NetappVolumeCacheParametersCacheConfigOutputReference)SetInternalValue(val *NetappVolumeCacheParametersCacheConfig) {
+func (j *jsiiProxy_NetappVolumeCacheParametersCacheConfigOutputReference) SetInternalValue(val *NetappVolumeCacheParametersCacheConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_NetappVolumeCacheParametersCacheConfigOutputReference)SetInte
 	)
 }
 
-func (j *jsiiProxy_NetappVolumeCacheParametersCacheConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_NetappVolumeCacheParametersCacheConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_NetappVolumeCacheParametersCacheConfigOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_NetappVolumeCacheParametersCacheConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NetappVolumeCacheParametersCacheConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,16 +276,16 @@ func (n *jsiiProxy_NetappVolumeCacheParametersCacheConfigOutputReference) Comput
 	return returns
 }
 
-func (n *jsiiProxy_NetappVolumeCacheParametersCacheConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (n *jsiiProxy_NetappVolumeCacheParametersCacheConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -302,7 +301,7 @@ func (n *jsiiProxy_NetappVolumeCacheParametersCacheConfigOutputReference) GetBoo
 	_jsii_.Invoke(
 		n,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -318,7 +317,7 @@ func (n *jsiiProxy_NetappVolumeCacheParametersCacheConfigOutputReference) GetBoo
 	_jsii_.Invoke(
 		n,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -334,7 +333,7 @@ func (n *jsiiProxy_NetappVolumeCacheParametersCacheConfigOutputReference) GetLis
 	_jsii_.Invoke(
 		n,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -350,7 +349,7 @@ func (n *jsiiProxy_NetappVolumeCacheParametersCacheConfigOutputReference) GetNum
 	_jsii_.Invoke(
 		n,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -366,7 +365,7 @@ func (n *jsiiProxy_NetappVolumeCacheParametersCacheConfigOutputReference) GetNum
 	_jsii_.Invoke(
 		n,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -382,7 +381,7 @@ func (n *jsiiProxy_NetappVolumeCacheParametersCacheConfigOutputReference) GetNum
 	_jsii_.Invoke(
 		n,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -398,7 +397,7 @@ func (n *jsiiProxy_NetappVolumeCacheParametersCacheConfigOutputReference) GetStr
 	_jsii_.Invoke(
 		n,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -414,7 +413,7 @@ func (n *jsiiProxy_NetappVolumeCacheParametersCacheConfigOutputReference) GetStr
 	_jsii_.Invoke(
 		n,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -443,7 +442,7 @@ func (n *jsiiProxy_NetappVolumeCacheParametersCacheConfigOutputReference) Interp
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -458,16 +457,16 @@ func (n *jsiiProxy_NetappVolumeCacheParametersCacheConfigOutputReference) ResetC
 	)
 }
 
-func (n *jsiiProxy_NetappVolumeCacheParametersCacheConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (n *jsiiProxy_NetappVolumeCacheParametersCacheConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := n.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		n,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -486,4 +485,3 @@ func (n *jsiiProxy_NetappVolumeCacheParametersCacheConfigOutputReference) ToStri
 
 	return returns
 }
-

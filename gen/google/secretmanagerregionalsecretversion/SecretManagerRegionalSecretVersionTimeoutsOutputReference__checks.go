@@ -98,7 +98,7 @@ func (s *jsiiProxy_SecretManagerRegionalSecretVersionTimeoutsOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_SecretManagerRegionalSecretVersionTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SecretManagerRegionalSecretVersionTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_SecretManagerRegionalSecretVersionTimeoutsOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_SecretManagerRegionalSecretVersionTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SecretManagerRegionalSecretVersionTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewSecretManagerRegionalSecretVersionTimeoutsOutputReferenceParamet
 
 	return nil
 }
-

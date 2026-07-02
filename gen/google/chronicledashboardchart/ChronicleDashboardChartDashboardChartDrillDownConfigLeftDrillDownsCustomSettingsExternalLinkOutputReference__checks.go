@@ -98,7 +98,7 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartDrillDownConfigLeftDrill
 	return nil
 }
 
-func (j *jsiiProxy_ChronicleDashboardChartDashboardChartDrillDownConfigLeftDrillDownsCustomSettingsExternalLinkOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ChronicleDashboardChartDashboardChartDrillDownConfigLeftDrillDownsCustomSettingsExternalLinkOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewChronicleDashboardChartDashboardChartDrillDownConfigLeftDrillDow
 
 	return nil
 }
-

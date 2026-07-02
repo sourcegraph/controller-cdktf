@@ -98,7 +98,7 @@ func (o *jsiiProxy_OrganizationIamMemberConditionOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_OrganizationIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_OrganizationIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewOrganizationIamMemberConditionOutputReferenceParameters(terrafor
 
 	return nil
 }
-

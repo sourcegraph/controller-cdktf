@@ -98,7 +98,7 @@ func (c *jsiiProxy_ContainerAttachedClusterProxyConfigKubernetesSecretOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_ContainerAttachedClusterProxyConfigKubernetesSecretOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerAttachedClusterProxyConfigKubernetesSecretOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewContainerAttachedClusterProxyConfigKubernetesSecretOutputReferen
 
 	return nil
 }
-

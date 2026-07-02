@@ -98,7 +98,7 @@ func (a *jsiiProxy_ApihubPluginTimeoutsOutputReference) validateResolveParameter
 	return nil
 }
 
-func (j *jsiiProxy_ApihubPluginTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ApihubPluginTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_ApihubPluginTimeoutsOutputReference) validateSetDeleteParamet
 	return nil
 }
 
-func (j *jsiiProxy_ApihubPluginTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ApihubPluginTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewApihubPluginTimeoutsOutputReferenceParameters(terraformResource 
 
 	return nil
 }
-

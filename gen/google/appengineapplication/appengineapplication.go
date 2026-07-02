@@ -20,15 +20,15 @@ type AppEngineApplication interface {
 	CdktfStack() cdktf.TerraformStack
 	CodeBucket() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DatabaseType() *string
 	SetDatabaseType(val *string)
 	DatabaseTypeInput() *string
@@ -72,11 +72,11 @@ type AppEngineApplication interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ServingStatus() *string
 	SetServingStatus(val *string)
 	ServingStatusInput() *string
@@ -86,19 +86,19 @@ type AppEngineApplication interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() AppEngineApplicationTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UrlDispatchRule() AppEngineApplicationUrlDispatchRuleList
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -116,7 +116,7 @@ type AppEngineApplication interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -128,7 +128,7 @@ type AppEngineApplication interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -150,17 +150,17 @@ type AppEngineApplication interface {
 	ResetServingStatus()
 	ResetSslPolicy()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for AppEngineApplication
@@ -218,8 +218,8 @@ func (j *jsiiProxy_AppEngineApplication) CodeBucket() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AppEngineApplication) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppEngineApplication) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -228,8 +228,8 @@ func (j *jsiiProxy_AppEngineApplication) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AppEngineApplication) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AppEngineApplication) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -238,8 +238,8 @@ func (j *jsiiProxy_AppEngineApplication) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_AppEngineApplication) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppEngineApplication) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -478,8 +478,8 @@ func (j *jsiiProxy_AppEngineApplication) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_AppEngineApplication) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_AppEngineApplication) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -488,8 +488,8 @@ func (j *jsiiProxy_AppEngineApplication) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AppEngineApplication) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppEngineApplication) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -548,8 +548,8 @@ func (j *jsiiProxy_AppEngineApplication) TerraformGeneratorMetadata() *cdktf.Ter
 	return returns
 }
 
-func (j *jsiiProxy_AppEngineApplication) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AppEngineApplication) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -578,8 +578,8 @@ func (j *jsiiProxy_AppEngineApplication) Timeouts() AppEngineApplicationTimeouts
 	return returns
 }
 
-func (j *jsiiProxy_AppEngineApplication) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppEngineApplication) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -598,7 +598,6 @@ func (j *jsiiProxy_AppEngineApplication) UrlDispatchRule() AppEngineApplicationU
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/app_engine_application google_app_engine_application} Resource.
 func NewAppEngineApplication(scope constructs.Construct, id *string, config *AppEngineApplicationConfig) AppEngineApplication {
 	_init_.Initialize()
@@ -610,7 +609,7 @@ func NewAppEngineApplication(scope constructs.Construct, id *string, config *App
 
 	_jsii_.Create(
 		"@cdktf/provider-google.appEngineApplication.AppEngineApplication",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -623,12 +622,12 @@ func NewAppEngineApplication_Override(a AppEngineApplication, scope constructs.C
 
 	_jsii_.Create(
 		"@cdktf/provider-google.appEngineApplication.AppEngineApplication",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AppEngineApplication)SetAuthDomain(val *string) {
+func (j *jsiiProxy_AppEngineApplication) SetAuthDomain(val *string) {
 	if err := j.validateSetAuthDomainParameters(val); err != nil {
 		panic(err)
 	}
@@ -639,7 +638,7 @@ func (j *jsiiProxy_AppEngineApplication)SetAuthDomain(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppEngineApplication)SetConnection(val interface{}) {
+func (j *jsiiProxy_AppEngineApplication) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -650,7 +649,7 @@ func (j *jsiiProxy_AppEngineApplication)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppEngineApplication)SetCount(val interface{}) {
+func (j *jsiiProxy_AppEngineApplication) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -661,7 +660,7 @@ func (j *jsiiProxy_AppEngineApplication)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppEngineApplication)SetDatabaseType(val *string) {
+func (j *jsiiProxy_AppEngineApplication) SetDatabaseType(val *string) {
 	if err := j.validateSetDatabaseTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -672,7 +671,7 @@ func (j *jsiiProxy_AppEngineApplication)SetDatabaseType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppEngineApplication)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_AppEngineApplication) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -680,7 +679,7 @@ func (j *jsiiProxy_AppEngineApplication)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AppEngineApplication)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_AppEngineApplication) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -688,7 +687,7 @@ func (j *jsiiProxy_AppEngineApplication)SetForEach(val cdktf.ITerraformIterator)
 	)
 }
 
-func (j *jsiiProxy_AppEngineApplication)SetId(val *string) {
+func (j *jsiiProxy_AppEngineApplication) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -699,7 +698,7 @@ func (j *jsiiProxy_AppEngineApplication)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppEngineApplication)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_AppEngineApplication) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -710,7 +709,7 @@ func (j *jsiiProxy_AppEngineApplication)SetLifecycle(val *cdktf.TerraformResourc
 	)
 }
 
-func (j *jsiiProxy_AppEngineApplication)SetLocationId(val *string) {
+func (j *jsiiProxy_AppEngineApplication) SetLocationId(val *string) {
 	if err := j.validateSetLocationIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -721,7 +720,7 @@ func (j *jsiiProxy_AppEngineApplication)SetLocationId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppEngineApplication)SetProject(val *string) {
+func (j *jsiiProxy_AppEngineApplication) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -732,7 +731,7 @@ func (j *jsiiProxy_AppEngineApplication)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppEngineApplication)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_AppEngineApplication) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -740,7 +739,7 @@ func (j *jsiiProxy_AppEngineApplication)SetProvider(val cdktf.TerraformProvider)
 	)
 }
 
-func (j *jsiiProxy_AppEngineApplication)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_AppEngineApplication) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -751,7 +750,7 @@ func (j *jsiiProxy_AppEngineApplication)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppEngineApplication)SetServingStatus(val *string) {
+func (j *jsiiProxy_AppEngineApplication) SetServingStatus(val *string) {
 	if err := j.validateSetServingStatusParameters(val); err != nil {
 		panic(err)
 	}
@@ -762,7 +761,7 @@ func (j *jsiiProxy_AppEngineApplication)SetServingStatus(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppEngineApplication)SetSslPolicy(val *string) {
+func (j *jsiiProxy_AppEngineApplication) SetSslPolicy(val *string) {
 	if err := j.validateSetSslPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -785,7 +784,7 @@ func AppEngineApplication_GenerateConfigForImport(scope constructs.Construct, im
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.appEngineApplication.AppEngineApplication",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -809,7 +808,7 @@ func AppEngineApplication_GenerateConfigForImport(scope constructs.Construct, im
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func AppEngineApplication_IsConstruct(x interface{}) *bool {
+func AppEngineApplication_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAppEngineApplication_IsConstructParameters(x); err != nil {
@@ -820,7 +819,7 @@ func AppEngineApplication_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.appEngineApplication.AppEngineApplication",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -828,7 +827,7 @@ func AppEngineApplication_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func AppEngineApplication_IsTerraformElement(x interface{}) *bool {
+func AppEngineApplication_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAppEngineApplication_IsTerraformElementParameters(x); err != nil {
@@ -839,7 +838,7 @@ func AppEngineApplication_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.appEngineApplication.AppEngineApplication",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -847,7 +846,7 @@ func AppEngineApplication_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func AppEngineApplication_IsTerraformResource(x interface{}) *bool {
+func AppEngineApplication_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAppEngineApplication_IsTerraformResourceParameters(x); err != nil {
@@ -858,7 +857,7 @@ func AppEngineApplication_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.appEngineApplication.AppEngineApplication",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -883,31 +882,31 @@ func (a *jsiiProxy_AppEngineApplication) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (a *jsiiProxy_AppEngineApplication) AddOverride(path *string, value interface{}) {
+func (a *jsiiProxy_AppEngineApplication) AddOverride(path *string, value any) {
 	if err := a.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (a *jsiiProxy_AppEngineApplication) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AppEngineApplication) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -923,7 +922,7 @@ func (a *jsiiProxy_AppEngineApplication) GetBooleanAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -939,7 +938,7 @@ func (a *jsiiProxy_AppEngineApplication) GetBooleanMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -955,7 +954,7 @@ func (a *jsiiProxy_AppEngineApplication) GetListAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -971,7 +970,7 @@ func (a *jsiiProxy_AppEngineApplication) GetNumberAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -987,7 +986,7 @@ func (a *jsiiProxy_AppEngineApplication) GetNumberListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1003,7 +1002,7 @@ func (a *jsiiProxy_AppEngineApplication) GetNumberMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1019,7 +1018,7 @@ func (a *jsiiProxy_AppEngineApplication) GetStringAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1035,15 +1034,15 @@ func (a *jsiiProxy_AppEngineApplication) GetStringMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_AppEngineApplication) HasResourceMove() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AppEngineApplication) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1062,7 +1061,7 @@ func (a *jsiiProxy_AppEngineApplication) ImportFrom(id *string, provider cdktf.T
 	_jsii_.InvokeVoid(
 		a,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1075,7 +1074,7 @@ func (a *jsiiProxy_AppEngineApplication) InterpolationForAttribute(terraformAttr
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1089,18 +1088,18 @@ func (a *jsiiProxy_AppEngineApplication) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (a *jsiiProxy_AppEngineApplication) MoveTo(moveTarget *string, index interface{}) {
+func (a *jsiiProxy_AppEngineApplication) MoveTo(moveTarget *string, index any) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1111,7 +1110,7 @@ func (a *jsiiProxy_AppEngineApplication) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1122,7 +1121,7 @@ func (a *jsiiProxy_AppEngineApplication) OverrideLogicalId(newLogicalId *string)
 	_jsii_.InvokeVoid(
 		a,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1133,7 +1132,7 @@ func (a *jsiiProxy_AppEngineApplication) PutFeatureSettings(value *AppEngineAppl
 	_jsii_.InvokeVoid(
 		a,
 		"putFeatureSettings",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1144,7 +1143,7 @@ func (a *jsiiProxy_AppEngineApplication) PutIap(value *AppEngineApplicationIap) 
 	_jsii_.InvokeVoid(
 		a,
 		"putIap",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1155,7 +1154,7 @@ func (a *jsiiProxy_AppEngineApplication) PutTimeouts(value *AppEngineApplication
 	_jsii_.InvokeVoid(
 		a,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1239,8 +1238,8 @@ func (a *jsiiProxy_AppEngineApplication) ResetTimeouts() {
 	)
 }
 
-func (a *jsiiProxy_AppEngineApplication) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AppEngineApplication) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1252,8 +1251,8 @@ func (a *jsiiProxy_AppEngineApplication) SynthesizeAttributes() *map[string]inte
 	return returns
 }
 
-func (a *jsiiProxy_AppEngineApplication) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AppEngineApplication) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1265,8 +1264,8 @@ func (a *jsiiProxy_AppEngineApplication) SynthesizeHclAttributes() *map[string]i
 	return returns
 }
 
-func (a *jsiiProxy_AppEngineApplication) ToHclTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AppEngineApplication) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1278,8 +1277,8 @@ func (a *jsiiProxy_AppEngineApplication) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_AppEngineApplication) ToMetadata() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AppEngineApplication) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1304,8 +1303,8 @@ func (a *jsiiProxy_AppEngineApplication) ToString() *string {
 	return returns
 }
 
-func (a *jsiiProxy_AppEngineApplication) ToTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AppEngineApplication) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1316,4 +1315,3 @@ func (a *jsiiProxy_AppEngineApplication) ToTerraform() interface{} {
 
 	return returns
 }
-

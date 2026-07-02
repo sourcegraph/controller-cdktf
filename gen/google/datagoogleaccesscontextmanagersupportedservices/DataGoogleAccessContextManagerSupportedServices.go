@@ -15,11 +15,11 @@ type DataGoogleAccessContextManagerSupportedServices interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -46,18 +46,18 @@ type DataGoogleAccessContextManagerSupportedServices interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SupportedServices() DataGoogleAccessContextManagerSupportedServicesSupportedServicesList
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -83,18 +83,18 @@ type DataGoogleAccessContextManagerSupportedServices interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataGoogleAccessContextManagerSupportedServices
@@ -112,8 +112,8 @@ func (j *jsiiProxy_DataGoogleAccessContextManagerSupportedServices) CdktfStack()
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleAccessContextManagerSupportedServices) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleAccessContextManagerSupportedServices) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -122,8 +122,8 @@ func (j *jsiiProxy_DataGoogleAccessContextManagerSupportedServices) ConstructNod
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleAccessContextManagerSupportedServices) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleAccessContextManagerSupportedServices) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -222,8 +222,8 @@ func (j *jsiiProxy_DataGoogleAccessContextManagerSupportedServices) Provider() c
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleAccessContextManagerSupportedServices) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleAccessContextManagerSupportedServices) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -252,8 +252,8 @@ func (j *jsiiProxy_DataGoogleAccessContextManagerSupportedServices) TerraformGen
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleAccessContextManagerSupportedServices) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleAccessContextManagerSupportedServices) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -272,7 +272,6 @@ func (j *jsiiProxy_DataGoogleAccessContextManagerSupportedServices) TerraformRes
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/access_context_manager_supported_services google_access_context_manager_supported_services} Data Source.
 func NewDataGoogleAccessContextManagerSupportedServices(scope constructs.Construct, id *string, config *DataGoogleAccessContextManagerSupportedServicesConfig) DataGoogleAccessContextManagerSupportedServices {
 	_init_.Initialize()
@@ -284,7 +283,7 @@ func NewDataGoogleAccessContextManagerSupportedServices(scope constructs.Constru
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleAccessContextManagerSupportedServices.DataGoogleAccessContextManagerSupportedServices",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -297,12 +296,12 @@ func NewDataGoogleAccessContextManagerSupportedServices_Override(d DataGoogleAcc
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleAccessContextManagerSupportedServices.DataGoogleAccessContextManagerSupportedServices",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataGoogleAccessContextManagerSupportedServices)SetCount(val interface{}) {
+func (j *jsiiProxy_DataGoogleAccessContextManagerSupportedServices) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -313,7 +312,7 @@ func (j *jsiiProxy_DataGoogleAccessContextManagerSupportedServices)SetCount(val 
 	)
 }
 
-func (j *jsiiProxy_DataGoogleAccessContextManagerSupportedServices)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataGoogleAccessContextManagerSupportedServices) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -321,7 +320,7 @@ func (j *jsiiProxy_DataGoogleAccessContextManagerSupportedServices)SetDependsOn(
 	)
 }
 
-func (j *jsiiProxy_DataGoogleAccessContextManagerSupportedServices)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGoogleAccessContextManagerSupportedServices) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -329,7 +328,7 @@ func (j *jsiiProxy_DataGoogleAccessContextManagerSupportedServices)SetForEach(va
 	)
 }
 
-func (j *jsiiProxy_DataGoogleAccessContextManagerSupportedServices)SetId(val *string) {
+func (j *jsiiProxy_DataGoogleAccessContextManagerSupportedServices) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -340,7 +339,7 @@ func (j *jsiiProxy_DataGoogleAccessContextManagerSupportedServices)SetId(val *st
 	)
 }
 
-func (j *jsiiProxy_DataGoogleAccessContextManagerSupportedServices)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGoogleAccessContextManagerSupportedServices) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -351,7 +350,7 @@ func (j *jsiiProxy_DataGoogleAccessContextManagerSupportedServices)SetLifecycle(
 	)
 }
 
-func (j *jsiiProxy_DataGoogleAccessContextManagerSupportedServices)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGoogleAccessContextManagerSupportedServices) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -371,7 +370,7 @@ func DataGoogleAccessContextManagerSupportedServices_GenerateConfigForImport(sco
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleAccessContextManagerSupportedServices.DataGoogleAccessContextManagerSupportedServices",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -395,7 +394,7 @@ func DataGoogleAccessContextManagerSupportedServices_GenerateConfigForImport(sco
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataGoogleAccessContextManagerSupportedServices_IsConstruct(x interface{}) *bool {
+func DataGoogleAccessContextManagerSupportedServices_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleAccessContextManagerSupportedServices_IsConstructParameters(x); err != nil {
@@ -406,7 +405,7 @@ func DataGoogleAccessContextManagerSupportedServices_IsConstruct(x interface{}) 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleAccessContextManagerSupportedServices.DataGoogleAccessContextManagerSupportedServices",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -414,7 +413,7 @@ func DataGoogleAccessContextManagerSupportedServices_IsConstruct(x interface{}) 
 }
 
 // Experimental.
-func DataGoogleAccessContextManagerSupportedServices_IsTerraformDataSource(x interface{}) *bool {
+func DataGoogleAccessContextManagerSupportedServices_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleAccessContextManagerSupportedServices_IsTerraformDataSourceParameters(x); err != nil {
@@ -425,7 +424,7 @@ func DataGoogleAccessContextManagerSupportedServices_IsTerraformDataSource(x int
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleAccessContextManagerSupportedServices.DataGoogleAccessContextManagerSupportedServices",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func DataGoogleAccessContextManagerSupportedServices_IsTerraformDataSource(x int
 }
 
 // Experimental.
-func DataGoogleAccessContextManagerSupportedServices_IsTerraformElement(x interface{}) *bool {
+func DataGoogleAccessContextManagerSupportedServices_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleAccessContextManagerSupportedServices_IsTerraformElementParameters(x); err != nil {
@@ -444,7 +443,7 @@ func DataGoogleAccessContextManagerSupportedServices_IsTerraformElement(x interf
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleAccessContextManagerSupportedServices.DataGoogleAccessContextManagerSupportedServices",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -462,27 +461,27 @@ func DataGoogleAccessContextManagerSupportedServices_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleAccessContextManagerSupportedServices) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataGoogleAccessContextManagerSupportedServices) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataGoogleAccessContextManagerSupportedServices) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataGoogleAccessContextManagerSupportedServices) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -498,7 +497,7 @@ func (d *jsiiProxy_DataGoogleAccessContextManagerSupportedServices) GetBooleanAt
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -514,7 +513,7 @@ func (d *jsiiProxy_DataGoogleAccessContextManagerSupportedServices) GetBooleanMa
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -530,7 +529,7 @@ func (d *jsiiProxy_DataGoogleAccessContextManagerSupportedServices) GetListAttri
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -546,7 +545,7 @@ func (d *jsiiProxy_DataGoogleAccessContextManagerSupportedServices) GetNumberAtt
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -562,7 +561,7 @@ func (d *jsiiProxy_DataGoogleAccessContextManagerSupportedServices) GetNumberLis
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -578,7 +577,7 @@ func (d *jsiiProxy_DataGoogleAccessContextManagerSupportedServices) GetNumberMap
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -594,7 +593,7 @@ func (d *jsiiProxy_DataGoogleAccessContextManagerSupportedServices) GetStringAtt
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -610,7 +609,7 @@ func (d *jsiiProxy_DataGoogleAccessContextManagerSupportedServices) GetStringMap
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -626,7 +625,7 @@ func (d *jsiiProxy_DataGoogleAccessContextManagerSupportedServices) Interpolatio
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -640,7 +639,7 @@ func (d *jsiiProxy_DataGoogleAccessContextManagerSupportedServices) OverrideLogi
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -660,8 +659,8 @@ func (d *jsiiProxy_DataGoogleAccessContextManagerSupportedServices) ResetOverrid
 	)
 }
 
-func (d *jsiiProxy_DataGoogleAccessContextManagerSupportedServices) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleAccessContextManagerSupportedServices) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -673,8 +672,8 @@ func (d *jsiiProxy_DataGoogleAccessContextManagerSupportedServices) SynthesizeAt
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleAccessContextManagerSupportedServices) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleAccessContextManagerSupportedServices) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -686,8 +685,8 @@ func (d *jsiiProxy_DataGoogleAccessContextManagerSupportedServices) SynthesizeHc
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleAccessContextManagerSupportedServices) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleAccessContextManagerSupportedServices) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -699,8 +698,8 @@ func (d *jsiiProxy_DataGoogleAccessContextManagerSupportedServices) ToHclTerrafo
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleAccessContextManagerSupportedServices) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleAccessContextManagerSupportedServices) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -725,8 +724,8 @@ func (d *jsiiProxy_DataGoogleAccessContextManagerSupportedServices) ToString() *
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleAccessContextManagerSupportedServices) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleAccessContextManagerSupportedServices) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -737,4 +736,3 @@ func (d *jsiiProxy_DataGoogleAccessContextManagerSupportedServices) ToTerraform(
 
 	return returns
 }
-

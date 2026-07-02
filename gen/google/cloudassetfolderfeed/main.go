@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudAssetFolderFeed.CloudAssetFolderFeed",
-		reflect.TypeOf((*CloudAssetFolderFeed)(nil)).Elem(),
+		reflect.TypeFor[CloudAssetFolderFeed](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -84,7 +84,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudAssetFolderFeed{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -92,11 +92,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cloudAssetFolderFeed.CloudAssetFolderFeedCondition",
-		reflect.TypeOf((*CloudAssetFolderFeedCondition)(nil)).Elem(),
+		reflect.TypeFor[CloudAssetFolderFeedCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudAssetFolderFeed.CloudAssetFolderFeedConditionOutputReference",
-		reflect.TypeOf((*CloudAssetFolderFeedConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudAssetFolderFeedConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -131,7 +131,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudAssetFolderFeedConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -139,15 +139,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cloudAssetFolderFeed.CloudAssetFolderFeedConfig",
-		reflect.TypeOf((*CloudAssetFolderFeedConfig)(nil)).Elem(),
+		reflect.TypeFor[CloudAssetFolderFeedConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cloudAssetFolderFeed.CloudAssetFolderFeedFeedOutputConfig",
-		reflect.TypeOf((*CloudAssetFolderFeedFeedOutputConfig)(nil)).Elem(),
+		reflect.TypeFor[CloudAssetFolderFeedFeedOutputConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudAssetFolderFeed.CloudAssetFolderFeedFeedOutputConfigOutputReference",
-		reflect.TypeOf((*CloudAssetFolderFeedFeedOutputConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudAssetFolderFeedFeedOutputConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -174,7 +174,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudAssetFolderFeedFeedOutputConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -182,11 +182,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cloudAssetFolderFeed.CloudAssetFolderFeedFeedOutputConfigPubsubDestination",
-		reflect.TypeOf((*CloudAssetFolderFeedFeedOutputConfigPubsubDestination)(nil)).Elem(),
+		reflect.TypeFor[CloudAssetFolderFeedFeedOutputConfigPubsubDestination](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudAssetFolderFeed.CloudAssetFolderFeedFeedOutputConfigPubsubDestinationOutputReference",
-		reflect.TypeOf((*CloudAssetFolderFeedFeedOutputConfigPubsubDestinationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudAssetFolderFeedFeedOutputConfigPubsubDestinationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -212,7 +212,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "topicInput", GoGetter: "TopicInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudAssetFolderFeedFeedOutputConfigPubsubDestinationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -220,11 +220,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cloudAssetFolderFeed.CloudAssetFolderFeedTimeouts",
-		reflect.TypeOf((*CloudAssetFolderFeedTimeouts)(nil)).Elem(),
+		reflect.TypeFor[CloudAssetFolderFeedTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudAssetFolderFeed.CloudAssetFolderFeedTimeoutsOutputReference",
-		reflect.TypeOf((*CloudAssetFolderFeedTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudAssetFolderFeedTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -257,7 +257,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudAssetFolderFeedTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

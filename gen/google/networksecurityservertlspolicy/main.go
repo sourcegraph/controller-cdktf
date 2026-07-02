@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkSecurityServerTlsPolicy.NetworkSecurityServerTlsPolicy",
-		reflect.TypeOf((*NetworkSecurityServerTlsPolicy)(nil)).Elem(),
+		reflect.TypeFor[NetworkSecurityServerTlsPolicy](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -89,7 +89,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkSecurityServerTlsPolicy{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -97,23 +97,23 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkSecurityServerTlsPolicy.NetworkSecurityServerTlsPolicyConfig",
-		reflect.TypeOf((*NetworkSecurityServerTlsPolicyConfig)(nil)).Elem(),
+		reflect.TypeFor[NetworkSecurityServerTlsPolicyConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkSecurityServerTlsPolicy.NetworkSecurityServerTlsPolicyMtlsPolicy",
-		reflect.TypeOf((*NetworkSecurityServerTlsPolicyMtlsPolicy)(nil)).Elem(),
+		reflect.TypeFor[NetworkSecurityServerTlsPolicyMtlsPolicy](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkSecurityServerTlsPolicy.NetworkSecurityServerTlsPolicyMtlsPolicyClientValidationCa",
-		reflect.TypeOf((*NetworkSecurityServerTlsPolicyMtlsPolicyClientValidationCa)(nil)).Elem(),
+		reflect.TypeFor[NetworkSecurityServerTlsPolicyMtlsPolicyClientValidationCa](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkSecurityServerTlsPolicy.NetworkSecurityServerTlsPolicyMtlsPolicyClientValidationCaCertificateProviderInstance",
-		reflect.TypeOf((*NetworkSecurityServerTlsPolicyMtlsPolicyClientValidationCaCertificateProviderInstance)(nil)).Elem(),
+		reflect.TypeFor[NetworkSecurityServerTlsPolicyMtlsPolicyClientValidationCaCertificateProviderInstance](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkSecurityServerTlsPolicy.NetworkSecurityServerTlsPolicyMtlsPolicyClientValidationCaCertificateProviderInstanceOutputReference",
-		reflect.TypeOf((*NetworkSecurityServerTlsPolicyMtlsPolicyClientValidationCaCertificateProviderInstanceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkSecurityServerTlsPolicyMtlsPolicyClientValidationCaCertificateProviderInstanceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -139,7 +139,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkSecurityServerTlsPolicyMtlsPolicyClientValidationCaCertificateProviderInstanceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -147,11 +147,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkSecurityServerTlsPolicy.NetworkSecurityServerTlsPolicyMtlsPolicyClientValidationCaGrpcEndpoint",
-		reflect.TypeOf((*NetworkSecurityServerTlsPolicyMtlsPolicyClientValidationCaGrpcEndpoint)(nil)).Elem(),
+		reflect.TypeFor[NetworkSecurityServerTlsPolicyMtlsPolicyClientValidationCaGrpcEndpoint](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkSecurityServerTlsPolicy.NetworkSecurityServerTlsPolicyMtlsPolicyClientValidationCaGrpcEndpointOutputReference",
-		reflect.TypeOf((*NetworkSecurityServerTlsPolicyMtlsPolicyClientValidationCaGrpcEndpointOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkSecurityServerTlsPolicyMtlsPolicyClientValidationCaGrpcEndpointOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -177,7 +177,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkSecurityServerTlsPolicyMtlsPolicyClientValidationCaGrpcEndpointOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -185,7 +185,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkSecurityServerTlsPolicy.NetworkSecurityServerTlsPolicyMtlsPolicyClientValidationCaList",
-		reflect.TypeOf((*NetworkSecurityServerTlsPolicyMtlsPolicyClientValidationCaList)(nil)).Elem(),
+		reflect.TypeFor[NetworkSecurityServerTlsPolicyMtlsPolicyClientValidationCaList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -199,7 +199,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkSecurityServerTlsPolicyMtlsPolicyClientValidationCaList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -207,7 +207,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkSecurityServerTlsPolicy.NetworkSecurityServerTlsPolicyMtlsPolicyClientValidationCaOutputReference",
-		reflect.TypeOf((*NetworkSecurityServerTlsPolicyMtlsPolicyClientValidationCaOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkSecurityServerTlsPolicyMtlsPolicyClientValidationCaOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "certificateProviderInstance", GoGetter: "CertificateProviderInstance"},
 			_jsii_.MemberProperty{JsiiProperty: "certificateProviderInstanceInput", GoGetter: "CertificateProviderInstanceInput"},
@@ -239,7 +239,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkSecurityServerTlsPolicyMtlsPolicyClientValidationCaOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -247,7 +247,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkSecurityServerTlsPolicy.NetworkSecurityServerTlsPolicyMtlsPolicyOutputReference",
-		reflect.TypeOf((*NetworkSecurityServerTlsPolicyMtlsPolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkSecurityServerTlsPolicyMtlsPolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clientValidationCa", GoGetter: "ClientValidationCa"},
 			_jsii_.MemberProperty{JsiiProperty: "clientValidationCaInput", GoGetter: "ClientValidationCaInput"},
@@ -281,7 +281,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkSecurityServerTlsPolicyMtlsPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -289,15 +289,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkSecurityServerTlsPolicy.NetworkSecurityServerTlsPolicyServerCertificate",
-		reflect.TypeOf((*NetworkSecurityServerTlsPolicyServerCertificate)(nil)).Elem(),
+		reflect.TypeFor[NetworkSecurityServerTlsPolicyServerCertificate](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkSecurityServerTlsPolicy.NetworkSecurityServerTlsPolicyServerCertificateCertificateProviderInstance",
-		reflect.TypeOf((*NetworkSecurityServerTlsPolicyServerCertificateCertificateProviderInstance)(nil)).Elem(),
+		reflect.TypeFor[NetworkSecurityServerTlsPolicyServerCertificateCertificateProviderInstance](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkSecurityServerTlsPolicy.NetworkSecurityServerTlsPolicyServerCertificateCertificateProviderInstanceOutputReference",
-		reflect.TypeOf((*NetworkSecurityServerTlsPolicyServerCertificateCertificateProviderInstanceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkSecurityServerTlsPolicyServerCertificateCertificateProviderInstanceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -323,7 +323,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkSecurityServerTlsPolicyServerCertificateCertificateProviderInstanceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -331,11 +331,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkSecurityServerTlsPolicy.NetworkSecurityServerTlsPolicyServerCertificateGrpcEndpoint",
-		reflect.TypeOf((*NetworkSecurityServerTlsPolicyServerCertificateGrpcEndpoint)(nil)).Elem(),
+		reflect.TypeFor[NetworkSecurityServerTlsPolicyServerCertificateGrpcEndpoint](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkSecurityServerTlsPolicy.NetworkSecurityServerTlsPolicyServerCertificateGrpcEndpointOutputReference",
-		reflect.TypeOf((*NetworkSecurityServerTlsPolicyServerCertificateGrpcEndpointOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkSecurityServerTlsPolicyServerCertificateGrpcEndpointOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -361,7 +361,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkSecurityServerTlsPolicyServerCertificateGrpcEndpointOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -369,7 +369,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkSecurityServerTlsPolicy.NetworkSecurityServerTlsPolicyServerCertificateOutputReference",
-		reflect.TypeOf((*NetworkSecurityServerTlsPolicyServerCertificateOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkSecurityServerTlsPolicyServerCertificateOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "certificateProviderInstance", GoGetter: "CertificateProviderInstance"},
 			_jsii_.MemberProperty{JsiiProperty: "certificateProviderInstanceInput", GoGetter: "CertificateProviderInstanceInput"},
@@ -401,7 +401,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkSecurityServerTlsPolicyServerCertificateOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -409,11 +409,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkSecurityServerTlsPolicy.NetworkSecurityServerTlsPolicyTimeouts",
-		reflect.TypeOf((*NetworkSecurityServerTlsPolicyTimeouts)(nil)).Elem(),
+		reflect.TypeFor[NetworkSecurityServerTlsPolicyTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkSecurityServerTlsPolicy.NetworkSecurityServerTlsPolicyTimeoutsOutputReference",
-		reflect.TypeOf((*NetworkSecurityServerTlsPolicyTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkSecurityServerTlsPolicyTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -446,7 +446,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkSecurityServerTlsPolicyTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

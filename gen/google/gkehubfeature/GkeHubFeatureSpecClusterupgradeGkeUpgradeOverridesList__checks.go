@@ -34,7 +34,7 @@ func (g *jsiiProxy_GkeHubFeatureSpecClusterupgradeGkeUpgradeOverridesList) valid
 	return nil
 }
 
-func (j *jsiiProxy_GkeHubFeatureSpecClusterupgradeGkeUpgradeOverridesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GkeHubFeatureSpecClusterupgradeGkeUpgradeOverridesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGkeHubFeatureSpecClusterupgradeGkeUpgradeOverridesListParameters
 
 	return nil
 }
-

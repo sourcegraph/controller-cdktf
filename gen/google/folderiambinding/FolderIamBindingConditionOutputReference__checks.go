@@ -98,7 +98,7 @@ func (f *jsiiProxy_FolderIamBindingConditionOutputReference) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_FolderIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_FolderIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewFolderIamBindingConditionOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

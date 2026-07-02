@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeInstanceServiceAccountOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInstanceServiceAccountOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInstanceServiceAccountOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewComputeInstanceServiceAccountOutputReferenceParameters(terraform
 
 	return nil
 }
-

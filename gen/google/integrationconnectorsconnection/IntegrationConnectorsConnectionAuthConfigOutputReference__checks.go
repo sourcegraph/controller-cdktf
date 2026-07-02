@@ -90,7 +90,7 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionAuthConfigOutputReference) val
 	return nil
 }
 
-func (i *jsiiProxy_IntegrationConnectorsConnectionAuthConfigOutputReference) validatePutAdditionalVariableParameters(value interface{}) error {
+func (i *jsiiProxy_IntegrationConnectorsConnectionAuthConfigOutputReference) validatePutAdditionalVariableParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -200,7 +200,7 @@ func (j *jsiiProxy_IntegrationConnectorsConnectionAuthConfigOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_IntegrationConnectorsConnectionAuthConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IntegrationConnectorsConnectionAuthConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -300,4 +300,3 @@ func validateNewIntegrationConnectorsConnectionAuthConfigOutputReferenceParamete
 
 	return nil
 }
-

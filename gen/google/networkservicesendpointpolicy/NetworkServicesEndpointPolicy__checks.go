@@ -19,7 +19,7 @@ func (n *jsiiProxy_NetworkServicesEndpointPolicy) validateAddMoveTargetParameter
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesEndpointPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (n *jsiiProxy_NetworkServicesEndpointPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (n *jsiiProxy_NetworkServicesEndpointPolicy) validateMoveFromIdParameters(i
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesEndpointPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (n *jsiiProxy_NetworkServicesEndpointPolicy) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -253,7 +253,7 @@ func validateNetworkServicesEndpointPolicy_GenerateConfigForImportParameters(sco
 	return nil
 }
 
-func validateNetworkServicesEndpointPolicy_IsConstructParameters(x interface{}) error {
+func validateNetworkServicesEndpointPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -261,7 +261,7 @@ func validateNetworkServicesEndpointPolicy_IsConstructParameters(x interface{}) 
 	return nil
 }
 
-func validateNetworkServicesEndpointPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateNetworkServicesEndpointPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -269,7 +269,7 @@ func validateNetworkServicesEndpointPolicy_IsTerraformElementParameters(x interf
 	return nil
 }
 
-func validateNetworkServicesEndpointPolicy_IsTerraformResourceParameters(x interface{}) error {
+func validateNetworkServicesEndpointPolicy_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -293,7 +293,7 @@ func (j *jsiiProxy_NetworkServicesEndpointPolicy) validateSetClientTlsPolicyPara
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesEndpointPolicy) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkServicesEndpointPolicy) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -326,7 +326,7 @@ func (j *jsiiProxy_NetworkServicesEndpointPolicy) validateSetConnectionParameter
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesEndpointPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkServicesEndpointPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -431,7 +431,7 @@ func (j *jsiiProxy_NetworkServicesEndpointPolicy) validateSetProjectParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesEndpointPolicy) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_NetworkServicesEndpointPolicy) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -511,4 +511,3 @@ func validateNewNetworkServicesEndpointPolicyParameters(scope constructs.Constru
 
 	return nil
 }
-

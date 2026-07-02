@@ -90,7 +90,7 @@ func (c *jsiiProxy_ComputeInstanceNetworkInterfaceOutputReference) validateInter
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInstanceNetworkInterfaceOutputReference) validatePutAccessConfigParameters(value interface{}) error {
+func (c *jsiiProxy_ComputeInstanceNetworkInterfaceOutputReference) validatePutAccessConfigParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (c *jsiiProxy_ComputeInstanceNetworkInterfaceOutputReference) validatePutAc
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInstanceNetworkInterfaceOutputReference) validatePutAliasIpRangeParameters(value interface{}) error {
+func (c *jsiiProxy_ComputeInstanceNetworkInterfaceOutputReference) validatePutAliasIpRangeParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -152,7 +152,7 @@ func (c *jsiiProxy_ComputeInstanceNetworkInterfaceOutputReference) validatePutAl
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInstanceNetworkInterfaceOutputReference) validatePutIpv6AccessConfigParameters(value interface{}) error {
+func (c *jsiiProxy_ComputeInstanceNetworkInterfaceOutputReference) validatePutIpv6AccessConfigParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -191,7 +191,7 @@ func (c *jsiiProxy_ComputeInstanceNetworkInterfaceOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInstanceNetworkInterfaceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInstanceNetworkInterfaceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -272,7 +272,7 @@ func (j *jsiiProxy_ComputeInstanceNetworkInterfaceOutputReference) validateSetIn
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInstanceNetworkInterfaceOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInstanceNetworkInterfaceOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -411,4 +411,3 @@ func validateNewComputeInstanceNetworkInterfaceOutputReferenceParameters(terrafo
 
 	return nil
 }
-

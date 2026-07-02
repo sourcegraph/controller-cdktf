@@ -1,11 +1,10 @@
 package dataplexdatascan
 
-
 type DataplexDatascanDataProfileSpec struct {
 	// If set, the latest DataScan job result will be published to Dataplex Catalog.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_datascan#catalog_publishing_enabled DataplexDatascan#catalog_publishing_enabled}
-	CatalogPublishingEnabled interface{} `field:"optional" json:"catalogPublishingEnabled" yaml:"catalogPublishingEnabled"`
+	CatalogPublishingEnabled any `field:"optional" json:"catalogPublishingEnabled" yaml:"catalogPublishingEnabled"`
 	// exclude_fields block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_datascan#exclude_fields DataplexDatascan#exclude_fields}
@@ -32,4 +31,3 @@ type DataplexDatascanDataProfileSpec struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_datascan#sampling_percent DataplexDatascan#sampling_percent}
 	SamplingPercent *float64 `field:"optional" json:"samplingPercent" yaml:"samplingPercent"`
 }
-

@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataplexDatascanIamMemberConditionOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_DataplexDatascanIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataplexDatascanIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewDataplexDatascanIamMemberConditionOutputReferenceParameters(terr
 
 	return nil
 }
-

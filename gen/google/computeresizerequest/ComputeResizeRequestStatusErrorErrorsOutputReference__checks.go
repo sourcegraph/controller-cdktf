@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeResizeRequestStatusErrorErrorsOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_ComputeResizeRequestStatusErrorErrorsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeResizeRequestStatusErrorErrorsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewComputeResizeRequestStatusErrorErrorsOutputReferenceParameters(t
 
 	return nil
 }
-

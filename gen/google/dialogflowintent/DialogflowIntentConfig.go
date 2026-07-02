@@ -6,9 +6,9 @@ import (
 
 type DialogflowIntentConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type DialogflowIntentConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name of this intent to be displayed on the console.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_intent#display_name DialogflowIntent#display_name}
@@ -51,14 +51,14 @@ type DialogflowIntentConfig struct {
 	// Indicates whether this is a fallback intent.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_intent#is_fallback DialogflowIntent#is_fallback}
-	IsFallback interface{} `field:"optional" json:"isFallback" yaml:"isFallback"`
+	IsFallback any `field:"optional" json:"isFallback" yaml:"isFallback"`
 	// Indicates whether Machine Learning is disabled for the intent.
 	//
 	// Note: If mlDisabled setting is set to true, then this intent is not taken into account during inference in ML
 	// ONLY match mode. Also, auto-markup in the UI is turned off.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_intent#ml_disabled DialogflowIntent#ml_disabled}
-	MlDisabled interface{} `field:"optional" json:"mlDisabled" yaml:"mlDisabled"`
+	MlDisabled any `field:"optional" json:"mlDisabled" yaml:"mlDisabled"`
 	// The unique identifier of the parent intent in the chain of followup intents. Format: projects/<Project ID>/agent/intents/<Intent ID>.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_intent#parent_followup_intent_name DialogflowIntent#parent_followup_intent_name}
@@ -77,7 +77,7 @@ type DialogflowIntentConfig struct {
 	// Indicates whether to delete all contexts in the current session when this intent is matched.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_intent#reset_contexts DialogflowIntent#reset_contexts}
-	ResetContexts interface{} `field:"optional" json:"resetContexts" yaml:"resetContexts"`
+	ResetContexts any `field:"optional" json:"resetContexts" yaml:"resetContexts"`
 	// timeouts block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_intent#timeouts DialogflowIntent#timeouts}
@@ -91,4 +91,3 @@ type DialogflowIntentConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_intent#webhook_state DialogflowIntent#webhook_state}
 	WebhookState *string `field:"optional" json:"webhookState" yaml:"webhookState"`
 }
-

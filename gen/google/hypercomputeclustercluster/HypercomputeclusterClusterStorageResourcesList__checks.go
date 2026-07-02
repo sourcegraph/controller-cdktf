@@ -34,7 +34,7 @@ func (h *jsiiProxy_HypercomputeclusterClusterStorageResourcesList) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_HypercomputeclusterClusterStorageResourcesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_HypercomputeclusterClusterStorageResourcesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewHypercomputeclusterClusterStorageResourcesListParameters(terrafo
 
 	return nil
 }
-

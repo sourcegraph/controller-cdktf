@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkServicesLbEdgeExtension.NetworkServicesLbEdgeExtension",
-		reflect.TypeOf((*NetworkServicesLbEdgeExtension)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesLbEdgeExtension](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -82,7 +82,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkServicesLbEdgeExtension{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -90,19 +90,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkServicesLbEdgeExtension.NetworkServicesLbEdgeExtensionConfig",
-		reflect.TypeOf((*NetworkServicesLbEdgeExtensionConfig)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesLbEdgeExtensionConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkServicesLbEdgeExtension.NetworkServicesLbEdgeExtensionExtensionChains",
-		reflect.TypeOf((*NetworkServicesLbEdgeExtensionExtensionChains)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesLbEdgeExtensionExtensionChains](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkServicesLbEdgeExtension.NetworkServicesLbEdgeExtensionExtensionChainsExtensions",
-		reflect.TypeOf((*NetworkServicesLbEdgeExtensionExtensionChainsExtensions)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesLbEdgeExtensionExtensionChainsExtensions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkServicesLbEdgeExtension.NetworkServicesLbEdgeExtensionExtensionChainsExtensionsList",
-		reflect.TypeOf((*NetworkServicesLbEdgeExtensionExtensionChainsExtensionsList)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesLbEdgeExtensionExtensionChainsExtensionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -116,7 +116,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkServicesLbEdgeExtensionExtensionChainsExtensionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -124,7 +124,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkServicesLbEdgeExtension.NetworkServicesLbEdgeExtensionExtensionChainsExtensionsOutputReference",
-		reflect.TypeOf((*NetworkServicesLbEdgeExtensionExtensionChainsExtensionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesLbEdgeExtensionExtensionChainsExtensionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -161,7 +161,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkServicesLbEdgeExtensionExtensionChainsExtensionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -169,7 +169,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkServicesLbEdgeExtension.NetworkServicesLbEdgeExtensionExtensionChainsList",
-		reflect.TypeOf((*NetworkServicesLbEdgeExtensionExtensionChainsList)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesLbEdgeExtensionExtensionChainsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -183,7 +183,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkServicesLbEdgeExtensionExtensionChainsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -191,11 +191,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkServicesLbEdgeExtension.NetworkServicesLbEdgeExtensionExtensionChainsMatchCondition",
-		reflect.TypeOf((*NetworkServicesLbEdgeExtensionExtensionChainsMatchCondition)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesLbEdgeExtensionExtensionChainsMatchCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkServicesLbEdgeExtension.NetworkServicesLbEdgeExtensionExtensionChainsMatchConditionOutputReference",
-		reflect.TypeOf((*NetworkServicesLbEdgeExtensionExtensionChainsMatchConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesLbEdgeExtensionExtensionChainsMatchConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "celExpression", GoGetter: "CelExpression"},
 			_jsii_.MemberProperty{JsiiProperty: "celExpressionInput", GoGetter: "CelExpressionInput"},
@@ -221,7 +221,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkServicesLbEdgeExtensionExtensionChainsMatchConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -229,7 +229,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkServicesLbEdgeExtension.NetworkServicesLbEdgeExtensionExtensionChainsOutputReference",
-		reflect.TypeOf((*NetworkServicesLbEdgeExtensionExtensionChainsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesLbEdgeExtensionExtensionChainsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -261,7 +261,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkServicesLbEdgeExtensionExtensionChainsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -269,11 +269,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkServicesLbEdgeExtension.NetworkServicesLbEdgeExtensionTimeouts",
-		reflect.TypeOf((*NetworkServicesLbEdgeExtensionTimeouts)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesLbEdgeExtensionTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkServicesLbEdgeExtension.NetworkServicesLbEdgeExtensionTimeoutsOutputReference",
-		reflect.TypeOf((*NetworkServicesLbEdgeExtensionTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesLbEdgeExtensionTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -306,7 +306,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkServicesLbEdgeExtensionTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

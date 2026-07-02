@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleComputeAddresses.DataGoogleComputeAddresses",
-		reflect.TypeOf((*DataGoogleComputeAddresses)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleComputeAddresses](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "addresses", GoGetter: "Addresses"},
@@ -58,7 +58,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleComputeAddresses{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -66,11 +66,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleComputeAddresses.DataGoogleComputeAddressesAddresses",
-		reflect.TypeOf((*DataGoogleComputeAddressesAddresses)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleComputeAddressesAddresses](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleComputeAddresses.DataGoogleComputeAddressesAddressesList",
-		reflect.TypeOf((*DataGoogleComputeAddressesAddressesList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleComputeAddressesAddressesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -83,7 +83,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleComputeAddressesAddressesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -91,7 +91,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleComputeAddresses.DataGoogleComputeAddressesAddressesOutputReference",
-		reflect.TypeOf((*DataGoogleComputeAddressesAddressesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleComputeAddressesAddressesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "address", GoGetter: "Address"},
 			_jsii_.MemberProperty{JsiiProperty: "addressType", GoGetter: "AddressType"},
@@ -123,7 +123,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleComputeAddressesAddressesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -131,6 +131,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleComputeAddresses.DataGoogleComputeAddressesConfig",
-		reflect.TypeOf((*DataGoogleComputeAddressesConfig)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleComputeAddressesConfig](),
 	)
 }

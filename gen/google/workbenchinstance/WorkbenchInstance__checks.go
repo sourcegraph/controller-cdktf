@@ -19,7 +19,7 @@ func (w *jsiiProxy_WorkbenchInstance) validateAddMoveTargetParameters(moveTarget
 	return nil
 }
 
-func (w *jsiiProxy_WorkbenchInstance) validateAddOverrideParameters(path *string, value interface{}) error {
+func (w *jsiiProxy_WorkbenchInstance) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (w *jsiiProxy_WorkbenchInstance) validateMoveFromIdParameters(id *string) e
 	return nil
 }
 
-func (w *jsiiProxy_WorkbenchInstance) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (w *jsiiProxy_WorkbenchInstance) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateWorkbenchInstance_GenerateConfigForImportParameters(scope construct
 	return nil
 }
 
-func validateWorkbenchInstance_IsConstructParameters(x interface{}) error {
+func validateWorkbenchInstance_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateWorkbenchInstance_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateWorkbenchInstance_IsTerraformElementParameters(x interface{}) error {
+func validateWorkbenchInstance_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateWorkbenchInstance_IsTerraformElementParameters(x interface{}) error
 	return nil
 }
 
-func validateWorkbenchInstance_IsTerraformResourceParameters(x interface{}) error {
+func validateWorkbenchInstance_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func validateWorkbenchInstance_IsTerraformResourceParameters(x interface{}) erro
 	return nil
 }
 
-func (j *jsiiProxy_WorkbenchInstance) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_WorkbenchInstance) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -299,7 +299,7 @@ func (j *jsiiProxy_WorkbenchInstance) validateSetConnectionParameters(val interf
 	return nil
 }
 
-func (j *jsiiProxy_WorkbenchInstance) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_WorkbenchInstance) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -364,7 +364,7 @@ func (j *jsiiProxy_WorkbenchInstance) validateSetDesiredStateParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_WorkbenchInstance) validateSetDisableProxyAccessParameters(val interface{}) error {
+func (j *jsiiProxy_WorkbenchInstance) validateSetDisableProxyAccessParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -384,7 +384,7 @@ func (j *jsiiProxy_WorkbenchInstance) validateSetDisableProxyAccessParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_WorkbenchInstance) validateSetEnableManagedEucParameters(val interface{}) error {
+func (j *jsiiProxy_WorkbenchInstance) validateSetEnableManagedEucParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -404,7 +404,7 @@ func (j *jsiiProxy_WorkbenchInstance) validateSetEnableManagedEucParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_WorkbenchInstance) validateSetEnableThirdPartyIdentityParameters(val interface{}) error {
+func (j *jsiiProxy_WorkbenchInstance) validateSetEnableThirdPartyIdentityParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -488,7 +488,7 @@ func (j *jsiiProxy_WorkbenchInstance) validateSetProjectParameters(val *string) 
 	return nil
 }
 
-func (j *jsiiProxy_WorkbenchInstance) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_WorkbenchInstance) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -552,4 +552,3 @@ func validateNewWorkbenchInstanceParameters(scope constructs.Construct, id *stri
 
 	return nil
 }
-

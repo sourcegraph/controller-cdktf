@@ -90,7 +90,7 @@ func (c *jsiiProxy_ComputeBackendServiceTlsSettingsOutputReference) validateInte
 	return nil
 }
 
-func (c *jsiiProxy_ComputeBackendServiceTlsSettingsOutputReference) validatePutSubjectAltNamesParameters(value interface{}) error {
+func (c *jsiiProxy_ComputeBackendServiceTlsSettingsOutputReference) validatePutSubjectAltNamesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -137,7 +137,7 @@ func (j *jsiiProxy_ComputeBackendServiceTlsSettingsOutputReference) validateSetA
 	return nil
 }
 
-func (j *jsiiProxy_ComputeBackendServiceTlsSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeBackendServiceTlsSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -245,4 +245,3 @@ func validateNewComputeBackendServiceTlsSettingsOutputReferenceParameters(terraf
 
 	return nil
 }
-

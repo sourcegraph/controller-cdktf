@@ -98,7 +98,7 @@ func (c *jsiiProxy_CesAppVersionSnapshotAppAudioProcessingConfigOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_CesAppVersionSnapshotAppAudioProcessingConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CesAppVersionSnapshotAppAudioProcessingConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewCesAppVersionSnapshotAppAudioProcessingConfigOutputReferencePara
 
 	return nil
 }
-

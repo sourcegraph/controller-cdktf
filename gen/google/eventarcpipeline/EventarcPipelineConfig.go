@@ -6,9 +6,9 @@ import (
 
 type EventarcPipelineConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,11 +18,11 @@ type EventarcPipelineConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// destinations block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/eventarc_pipeline#destinations EventarcPipeline#destinations}
-	Destinations interface{} `field:"required" json:"destinations" yaml:"destinations"`
+	Destinations any `field:"required" json:"destinations" yaml:"destinations"`
 	// Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/eventarc_pipeline#location EventarcPipeline#location}
@@ -76,7 +76,7 @@ type EventarcPipelineConfig struct {
 	// mediations block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/eventarc_pipeline#mediations EventarcPipeline#mediations}
-	Mediations interface{} `field:"optional" json:"mediations" yaml:"mediations"`
+	Mediations any `field:"optional" json:"mediations" yaml:"mediations"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/eventarc_pipeline#project EventarcPipeline#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// retry_policy block.
@@ -88,4 +88,3 @@ type EventarcPipelineConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/eventarc_pipeline#timeouts EventarcPipeline#timeouts}
 	Timeouts *EventarcPipelineTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

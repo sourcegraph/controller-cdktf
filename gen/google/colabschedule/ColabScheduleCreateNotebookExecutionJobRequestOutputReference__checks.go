@@ -109,7 +109,7 @@ func (c *jsiiProxy_ColabScheduleCreateNotebookExecutionJobRequestOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_ColabScheduleCreateNotebookExecutionJobRequestOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ColabScheduleCreateNotebookExecutionJobRequestOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewColabScheduleCreateNotebookExecutionJobRequestOutputReferencePar
 
 	return nil
 }
-

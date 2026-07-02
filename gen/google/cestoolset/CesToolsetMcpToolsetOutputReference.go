@@ -14,9 +14,9 @@ type CesToolsetMcpToolsetOutputReference interface {
 	ApiAuthenticationInput() *CesToolsetMcpToolsetApiAuthentication
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -52,7 +52,7 @@ type CesToolsetMcpToolsetOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -82,7 +82,7 @@ type CesToolsetMcpToolsetOutputReference interface {
 	ResetTlsConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -115,8 +115,8 @@ func (j *jsiiProxy_CesToolsetMcpToolsetOutputReference) ApiAuthenticationInput()
 	return returns
 }
 
-func (j *jsiiProxy_CesToolsetMcpToolsetOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CesToolsetMcpToolsetOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -265,7 +265,6 @@ func (j *jsiiProxy_CesToolsetMcpToolsetOutputReference) TlsConfigInput() *CesToo
 	return returns
 }
 
-
 func NewCesToolsetMcpToolsetOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CesToolsetMcpToolsetOutputReference {
 	_init_.Initialize()
 
@@ -276,7 +275,7 @@ func NewCesToolsetMcpToolsetOutputReference(terraformResource cdktf.IInterpolati
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cesToolset.CesToolsetMcpToolsetOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -288,12 +287,12 @@ func NewCesToolsetMcpToolsetOutputReference_Override(c CesToolsetMcpToolsetOutpu
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cesToolset.CesToolsetMcpToolsetOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CesToolsetMcpToolsetOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CesToolsetMcpToolsetOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -304,7 +303,7 @@ func (j *jsiiProxy_CesToolsetMcpToolsetOutputReference)SetComplexObjectIndex(val
 	)
 }
 
-func (j *jsiiProxy_CesToolsetMcpToolsetOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CesToolsetMcpToolsetOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -315,7 +314,7 @@ func (j *jsiiProxy_CesToolsetMcpToolsetOutputReference)SetComplexObjectIsFromSet
 	)
 }
 
-func (j *jsiiProxy_CesToolsetMcpToolsetOutputReference)SetCustomHeaders(val *map[string]*string) {
+func (j *jsiiProxy_CesToolsetMcpToolsetOutputReference) SetCustomHeaders(val *map[string]*string) {
 	if err := j.validateSetCustomHeadersParameters(val); err != nil {
 		panic(err)
 	}
@@ -326,7 +325,7 @@ func (j *jsiiProxy_CesToolsetMcpToolsetOutputReference)SetCustomHeaders(val *map
 	)
 }
 
-func (j *jsiiProxy_CesToolsetMcpToolsetOutputReference)SetInternalValue(val *CesToolsetMcpToolset) {
+func (j *jsiiProxy_CesToolsetMcpToolsetOutputReference) SetInternalValue(val *CesToolsetMcpToolset) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -337,7 +336,7 @@ func (j *jsiiProxy_CesToolsetMcpToolsetOutputReference)SetInternalValue(val *Ces
 	)
 }
 
-func (j *jsiiProxy_CesToolsetMcpToolsetOutputReference)SetServerAddress(val *string) {
+func (j *jsiiProxy_CesToolsetMcpToolsetOutputReference) SetServerAddress(val *string) {
 	if err := j.validateSetServerAddressParameters(val); err != nil {
 		panic(err)
 	}
@@ -348,7 +347,7 @@ func (j *jsiiProxy_CesToolsetMcpToolsetOutputReference)SetServerAddress(val *str
 	)
 }
 
-func (j *jsiiProxy_CesToolsetMcpToolsetOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CesToolsetMcpToolsetOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -359,7 +358,7 @@ func (j *jsiiProxy_CesToolsetMcpToolsetOutputReference)SetTerraformAttribute(val
 	)
 }
 
-func (j *jsiiProxy_CesToolsetMcpToolsetOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CesToolsetMcpToolsetOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -383,16 +382,16 @@ func (c *jsiiProxy_CesToolsetMcpToolsetOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (c *jsiiProxy_CesToolsetMcpToolsetOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CesToolsetMcpToolsetOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -408,7 +407,7 @@ func (c *jsiiProxy_CesToolsetMcpToolsetOutputReference) GetBooleanAttribute(terr
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -424,7 +423,7 @@ func (c *jsiiProxy_CesToolsetMcpToolsetOutputReference) GetBooleanMapAttribute(t
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -440,7 +439,7 @@ func (c *jsiiProxy_CesToolsetMcpToolsetOutputReference) GetListAttribute(terrafo
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -456,7 +455,7 @@ func (c *jsiiProxy_CesToolsetMcpToolsetOutputReference) GetNumberAttribute(terra
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -472,7 +471,7 @@ func (c *jsiiProxy_CesToolsetMcpToolsetOutputReference) GetNumberListAttribute(t
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -488,7 +487,7 @@ func (c *jsiiProxy_CesToolsetMcpToolsetOutputReference) GetNumberMapAttribute(te
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -504,7 +503,7 @@ func (c *jsiiProxy_CesToolsetMcpToolsetOutputReference) GetStringAttribute(terra
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -520,7 +519,7 @@ func (c *jsiiProxy_CesToolsetMcpToolsetOutputReference) GetStringMapAttribute(te
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -549,7 +548,7 @@ func (c *jsiiProxy_CesToolsetMcpToolsetOutputReference) InterpolationForAttribut
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -563,7 +562,7 @@ func (c *jsiiProxy_CesToolsetMcpToolsetOutputReference) PutApiAuthentication(val
 	_jsii_.InvokeVoid(
 		c,
 		"putApiAuthentication",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -574,7 +573,7 @@ func (c *jsiiProxy_CesToolsetMcpToolsetOutputReference) PutServiceDirectoryConfi
 	_jsii_.InvokeVoid(
 		c,
 		"putServiceDirectoryConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -585,7 +584,7 @@ func (c *jsiiProxy_CesToolsetMcpToolsetOutputReference) PutTlsConfig(value *CesT
 	_jsii_.InvokeVoid(
 		c,
 		"putTlsConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -621,16 +620,16 @@ func (c *jsiiProxy_CesToolsetMcpToolsetOutputReference) ResetTlsConfig() {
 	)
 }
 
-func (c *jsiiProxy_CesToolsetMcpToolsetOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_CesToolsetMcpToolsetOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -649,4 +648,3 @@ func (c *jsiiProxy_CesToolsetMcpToolsetOutputReference) ToString() *string {
 
 	return returns
 }
-

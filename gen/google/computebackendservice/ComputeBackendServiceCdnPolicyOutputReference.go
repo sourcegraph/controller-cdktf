@@ -11,7 +11,7 @@ import (
 type ComputeBackendServiceCdnPolicyOutputReference interface {
 	cdktf.ComplexObject
 	BypassCacheOnRequestHeaders() ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeadersList
-	BypassCacheOnRequestHeadersInput() interface{}
+	BypassCacheOnRequestHeadersInput() any
 	CacheKeyPolicy() ComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference
 	CacheKeyPolicyInput() *ComputeBackendServiceCdnPolicyCacheKeyPolicy
 	CacheMode() *string
@@ -22,9 +22,9 @@ type ComputeBackendServiceCdnPolicyOutputReference interface {
 	ClientTtlInput() *float64
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -45,14 +45,14 @@ type ComputeBackendServiceCdnPolicyOutputReference interface {
 	MaxTtl() *float64
 	SetMaxTtl(val *float64)
 	MaxTtlInput() *float64
-	NegativeCaching() interface{}
-	SetNegativeCaching(val interface{})
-	NegativeCachingInput() interface{}
+	NegativeCaching() any
+	SetNegativeCaching(val any)
+	NegativeCachingInput() any
 	NegativeCachingPolicy() ComputeBackendServiceCdnPolicyNegativeCachingPolicyList
-	NegativeCachingPolicyInput() interface{}
-	RequestCoalescing() interface{}
-	SetRequestCoalescing(val interface{})
-	RequestCoalescingInput() interface{}
+	NegativeCachingPolicyInput() any
+	RequestCoalescing() any
+	SetRequestCoalescing(val any)
+	RequestCoalescingInput() any
 	ServeWhileStale() *float64
 	SetServeWhileStale(val *float64)
 	ServeWhileStaleInput() *float64
@@ -70,7 +70,7 @@ type ComputeBackendServiceCdnPolicyOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -91,9 +91,9 @@ type ComputeBackendServiceCdnPolicyOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutBypassCacheOnRequestHeaders(value interface{})
+	PutBypassCacheOnRequestHeaders(value any)
 	PutCacheKeyPolicy(value *ComputeBackendServiceCdnPolicyCacheKeyPolicy)
-	PutNegativeCachingPolicy(value interface{})
+	PutNegativeCachingPolicy(value any)
 	ResetBypassCacheOnRequestHeaders()
 	ResetCacheKeyPolicy()
 	ResetCacheMode()
@@ -107,7 +107,7 @@ type ComputeBackendServiceCdnPolicyOutputReference interface {
 	ResetSignedUrlCacheMaxAgeSec()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -130,8 +130,8 @@ func (j *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) BypassCacheOnR
 	return returns
 }
 
-func (j *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) BypassCacheOnRequestHeadersInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) BypassCacheOnRequestHeadersInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"bypassCacheOnRequestHeadersInput",
@@ -200,8 +200,8 @@ func (j *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) ClientTtlInput
 	return returns
 }
 
-func (j *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -290,8 +290,8 @@ func (j *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) MaxTtlInput() 
 	return returns
 }
 
-func (j *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) NegativeCaching() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) NegativeCaching() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"negativeCaching",
@@ -300,8 +300,8 @@ func (j *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) NegativeCachin
 	return returns
 }
 
-func (j *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) NegativeCachingInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) NegativeCachingInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"negativeCachingInput",
@@ -320,8 +320,8 @@ func (j *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) NegativeCachin
 	return returns
 }
 
-func (j *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) NegativeCachingPolicyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) NegativeCachingPolicyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"negativeCachingPolicyInput",
@@ -330,8 +330,8 @@ func (j *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) NegativeCachin
 	return returns
 }
 
-func (j *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) RequestCoalescing() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) RequestCoalescing() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requestCoalescing",
@@ -340,8 +340,8 @@ func (j *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) RequestCoalesc
 	return returns
 }
 
-func (j *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) RequestCoalescingInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) RequestCoalescingInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requestCoalescingInput",
@@ -410,7 +410,6 @@ func (j *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) TerraformResou
 	return returns
 }
 
-
 func NewComputeBackendServiceCdnPolicyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ComputeBackendServiceCdnPolicyOutputReference {
 	_init_.Initialize()
 
@@ -421,7 +420,7 @@ func NewComputeBackendServiceCdnPolicyOutputReference(terraformResource cdktf.II
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -433,12 +432,12 @@ func NewComputeBackendServiceCdnPolicyOutputReference_Override(c ComputeBackendS
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference)SetCacheMode(val *string) {
+func (j *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) SetCacheMode(val *string) {
 	if err := j.validateSetCacheModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -449,7 +448,7 @@ func (j *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference)SetCacheMode(va
 	)
 }
 
-func (j *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference)SetClientTtl(val *float64) {
+func (j *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) SetClientTtl(val *float64) {
 	if err := j.validateSetClientTtlParameters(val); err != nil {
 		panic(err)
 	}
@@ -460,7 +459,7 @@ func (j *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference)SetClientTtl(va
 	)
 }
 
-func (j *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -471,7 +470,7 @@ func (j *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -482,7 +481,7 @@ func (j *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference)SetDefaultTtl(val *float64) {
+func (j *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) SetDefaultTtl(val *float64) {
 	if err := j.validateSetDefaultTtlParameters(val); err != nil {
 		panic(err)
 	}
@@ -493,7 +492,7 @@ func (j *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference)SetDefaultTtl(v
 	)
 }
 
-func (j *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference)SetInternalValue(val *ComputeBackendServiceCdnPolicy) {
+func (j *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) SetInternalValue(val *ComputeBackendServiceCdnPolicy) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -504,7 +503,7 @@ func (j *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference)SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference)SetMaxTtl(val *float64) {
+func (j *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) SetMaxTtl(val *float64) {
 	if err := j.validateSetMaxTtlParameters(val); err != nil {
 		panic(err)
 	}
@@ -515,7 +514,7 @@ func (j *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference)SetMaxTtl(val *
 	)
 }
 
-func (j *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference)SetNegativeCaching(val interface{}) {
+func (j *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) SetNegativeCaching(val any) {
 	if err := j.validateSetNegativeCachingParameters(val); err != nil {
 		panic(err)
 	}
@@ -526,7 +525,7 @@ func (j *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference)SetNegativeCach
 	)
 }
 
-func (j *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference)SetRequestCoalescing(val interface{}) {
+func (j *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) SetRequestCoalescing(val any) {
 	if err := j.validateSetRequestCoalescingParameters(val); err != nil {
 		panic(err)
 	}
@@ -537,7 +536,7 @@ func (j *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference)SetRequestCoale
 	)
 }
 
-func (j *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference)SetServeWhileStale(val *float64) {
+func (j *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) SetServeWhileStale(val *float64) {
 	if err := j.validateSetServeWhileStaleParameters(val); err != nil {
 		panic(err)
 	}
@@ -548,7 +547,7 @@ func (j *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference)SetServeWhileSt
 	)
 }
 
-func (j *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference)SetSignedUrlCacheMaxAgeSec(val *float64) {
+func (j *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) SetSignedUrlCacheMaxAgeSec(val *float64) {
 	if err := j.validateSetSignedUrlCacheMaxAgeSecParameters(val); err != nil {
 		panic(err)
 	}
@@ -559,7 +558,7 @@ func (j *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference)SetSignedUrlCac
 	)
 }
 
-func (j *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -570,7 +569,7 @@ func (j *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -594,16 +593,16 @@ func (c *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) ComputeFqn() *
 	return returns
 }
 
-func (c *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -619,7 +618,7 @@ func (c *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) GetBooleanAttr
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -635,7 +634,7 @@ func (c *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) GetBooleanMapA
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -651,7 +650,7 @@ func (c *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) GetListAttribu
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -667,7 +666,7 @@ func (c *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) GetNumberAttri
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -683,7 +682,7 @@ func (c *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) GetNumberListA
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -699,7 +698,7 @@ func (c *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) GetNumberMapAt
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -715,7 +714,7 @@ func (c *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) GetStringAttri
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -731,7 +730,7 @@ func (c *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) GetStringMapAt
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -760,21 +759,21 @@ func (c *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) InterpolationF
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) PutBypassCacheOnRequestHeaders(value interface{}) {
+func (c *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) PutBypassCacheOnRequestHeaders(value any) {
 	if err := c.validatePutBypassCacheOnRequestHeadersParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putBypassCacheOnRequestHeaders",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -785,18 +784,18 @@ func (c *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) PutCacheKeyPol
 	_jsii_.InvokeVoid(
 		c,
 		"putCacheKeyPolicy",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) PutNegativeCachingPolicy(value interface{}) {
+func (c *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) PutNegativeCachingPolicy(value any) {
 	if err := c.validatePutNegativeCachingPolicyParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putNegativeCachingPolicy",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -888,16 +887,16 @@ func (c *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) ResetSignedUrl
 	)
 }
 
-func (c *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -916,4 +915,3 @@ func (c *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) ToString() *st
 
 	return returns
 }
-

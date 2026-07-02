@@ -98,7 +98,7 @@ func (c *jsiiProxy_CesGuardrailLlmPolicyModelSettingsOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_CesGuardrailLlmPolicyModelSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CesGuardrailLlmPolicyModelSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewCesGuardrailLlmPolicyModelSettingsOutputReferenceParameters(terr
 
 	return nil
 }
-

@@ -34,7 +34,7 @@ func (c *jsiiProxy_ComputeHaVpnGatewayVpnInterfacesList) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_ComputeHaVpnGatewayVpnInterfacesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeHaVpnGatewayVpnInterfacesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewComputeHaVpnGatewayVpnInterfacesListParameters(terraformResource
 
 	return nil
 }
-

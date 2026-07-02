@@ -90,7 +90,7 @@ func (g *jsiiProxy_GkeBackupBackupPlanBackupConfigSelectedNamespaceLabelsOutputR
 	return nil
 }
 
-func (g *jsiiProxy_GkeBackupBackupPlanBackupConfigSelectedNamespaceLabelsOutputReference) validatePutResourceLabelsParameters(value interface{}) error {
+func (g *jsiiProxy_GkeBackupBackupPlanBackupConfigSelectedNamespaceLabelsOutputReference) validatePutResourceLabelsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (g *jsiiProxy_GkeBackupBackupPlanBackupConfigSelectedNamespaceLabelsOutputR
 	return nil
 }
 
-func (j *jsiiProxy_GkeBackupBackupPlanBackupConfigSelectedNamespaceLabelsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GkeBackupBackupPlanBackupConfigSelectedNamespaceLabelsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -229,4 +229,3 @@ func validateNewGkeBackupBackupPlanBackupConfigSelectedNamespaceLabelsOutputRefe
 
 	return nil
 }
-

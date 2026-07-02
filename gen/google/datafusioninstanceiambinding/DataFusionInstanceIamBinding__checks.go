@@ -19,7 +19,7 @@ func (d *jsiiProxy_DataFusionInstanceIamBinding) validateAddMoveTargetParameters
 	return nil
 }
 
-func (d *jsiiProxy_DataFusionInstanceIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataFusionInstanceIamBinding) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (d *jsiiProxy_DataFusionInstanceIamBinding) validateMoveFromIdParameters(id
 	return nil
 }
 
-func (d *jsiiProxy_DataFusionInstanceIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (d *jsiiProxy_DataFusionInstanceIamBinding) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateDataFusionInstanceIamBinding_GenerateConfigForImportParameters(scop
 	return nil
 }
 
-func validateDataFusionInstanceIamBinding_IsConstructParameters(x interface{}) error {
+func validateDataFusionInstanceIamBinding_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateDataFusionInstanceIamBinding_IsConstructParameters(x interface{}) e
 	return nil
 }
 
-func validateDataFusionInstanceIamBinding_IsTerraformElementParameters(x interface{}) error {
+func validateDataFusionInstanceIamBinding_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateDataFusionInstanceIamBinding_IsTerraformElementParameters(x interfa
 	return nil
 }
 
-func validateDataFusionInstanceIamBinding_IsTerraformResourceParameters(x interface{}) error {
+func validateDataFusionInstanceIamBinding_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateDataFusionInstanceIamBinding_IsTerraformResourceParameters(x interf
 	return nil
 }
 
-func (j *jsiiProxy_DataFusionInstanceIamBinding) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_DataFusionInstanceIamBinding) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_DataFusionInstanceIamBinding) validateSetConnectionParameters
 	return nil
 }
 
-func (j *jsiiProxy_DataFusionInstanceIamBinding) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataFusionInstanceIamBinding) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -385,7 +385,7 @@ func (j *jsiiProxy_DataFusionInstanceIamBinding) validateSetProjectParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_DataFusionInstanceIamBinding) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_DataFusionInstanceIamBinding) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -465,4 +465,3 @@ func validateNewDataFusionInstanceIamBindingParameters(scope constructs.Construc
 
 	return nil
 }
-

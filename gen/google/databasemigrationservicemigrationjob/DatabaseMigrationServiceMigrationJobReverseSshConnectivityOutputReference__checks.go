@@ -98,7 +98,7 @@ func (d *jsiiProxy_DatabaseMigrationServiceMigrationJobReverseSshConnectivityOut
 	return nil
 }
 
-func (j *jsiiProxy_DatabaseMigrationServiceMigrationJobReverseSshConnectivityOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DatabaseMigrationServiceMigrationJobReverseSshConnectivityOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewDatabaseMigrationServiceMigrationJobReverseSshConnectivityOutput
 
 	return nil
 }
-

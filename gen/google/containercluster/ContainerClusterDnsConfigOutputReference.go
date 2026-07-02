@@ -24,9 +24,9 @@ type ContainerClusterDnsConfigOutputReference interface {
 	ClusterDnsScopeInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -52,7 +52,7 @@ type ContainerClusterDnsConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -79,7 +79,7 @@ type ContainerClusterDnsConfigOutputReference interface {
 	ResetClusterDnsScope()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -172,8 +172,8 @@ func (j *jsiiProxy_ContainerClusterDnsConfigOutputReference) ClusterDnsScopeInpu
 	return returns
 }
 
-func (j *jsiiProxy_ContainerClusterDnsConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerClusterDnsConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -242,7 +242,6 @@ func (j *jsiiProxy_ContainerClusterDnsConfigOutputReference) TerraformResource()
 	return returns
 }
 
-
 func NewContainerClusterDnsConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ContainerClusterDnsConfigOutputReference {
 	_init_.Initialize()
 
@@ -253,7 +252,7 @@ func NewContainerClusterDnsConfigOutputReference(terraformResource cdktf.IInterp
 
 	_jsii_.Create(
 		"@cdktf/provider-google.containerCluster.ContainerClusterDnsConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -265,12 +264,12 @@ func NewContainerClusterDnsConfigOutputReference_Override(c ContainerClusterDnsC
 
 	_jsii_.Create(
 		"@cdktf/provider-google.containerCluster.ContainerClusterDnsConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterDnsConfigOutputReference)SetAdditiveVpcScopeDnsDomain(val *string) {
+func (j *jsiiProxy_ContainerClusterDnsConfigOutputReference) SetAdditiveVpcScopeDnsDomain(val *string) {
 	if err := j.validateSetAdditiveVpcScopeDnsDomainParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,7 +280,7 @@ func (j *jsiiProxy_ContainerClusterDnsConfigOutputReference)SetAdditiveVpcScopeD
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterDnsConfigOutputReference)SetClusterDns(val *string) {
+func (j *jsiiProxy_ContainerClusterDnsConfigOutputReference) SetClusterDns(val *string) {
 	if err := j.validateSetClusterDnsParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,7 +291,7 @@ func (j *jsiiProxy_ContainerClusterDnsConfigOutputReference)SetClusterDns(val *s
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterDnsConfigOutputReference)SetClusterDnsDomain(val *string) {
+func (j *jsiiProxy_ContainerClusterDnsConfigOutputReference) SetClusterDnsDomain(val *string) {
 	if err := j.validateSetClusterDnsDomainParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_ContainerClusterDnsConfigOutputReference)SetClusterDnsDomain(
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterDnsConfigOutputReference)SetClusterDnsScope(val *string) {
+func (j *jsiiProxy_ContainerClusterDnsConfigOutputReference) SetClusterDnsScope(val *string) {
 	if err := j.validateSetClusterDnsScopeParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_ContainerClusterDnsConfigOutputReference)SetClusterDnsScope(v
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterDnsConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ContainerClusterDnsConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_ContainerClusterDnsConfigOutputReference)SetComplexObjectInde
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterDnsConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ContainerClusterDnsConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_ContainerClusterDnsConfigOutputReference)SetComplexObjectIsFr
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterDnsConfigOutputReference)SetInternalValue(val *ContainerClusterDnsConfig) {
+func (j *jsiiProxy_ContainerClusterDnsConfigOutputReference) SetInternalValue(val *ContainerClusterDnsConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_ContainerClusterDnsConfigOutputReference)SetInternalValue(val
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterDnsConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ContainerClusterDnsConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -358,7 +357,7 @@ func (j *jsiiProxy_ContainerClusterDnsConfigOutputReference)SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterDnsConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ContainerClusterDnsConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,16 +381,16 @@ func (c *jsiiProxy_ContainerClusterDnsConfigOutputReference) ComputeFqn() *strin
 	return returns
 }
 
-func (c *jsiiProxy_ContainerClusterDnsConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ContainerClusterDnsConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -407,7 +406,7 @@ func (c *jsiiProxy_ContainerClusterDnsConfigOutputReference) GetBooleanAttribute
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -423,7 +422,7 @@ func (c *jsiiProxy_ContainerClusterDnsConfigOutputReference) GetBooleanMapAttrib
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -439,7 +438,7 @@ func (c *jsiiProxy_ContainerClusterDnsConfigOutputReference) GetListAttribute(te
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -455,7 +454,7 @@ func (c *jsiiProxy_ContainerClusterDnsConfigOutputReference) GetNumberAttribute(
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -471,7 +470,7 @@ func (c *jsiiProxy_ContainerClusterDnsConfigOutputReference) GetNumberListAttrib
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -487,7 +486,7 @@ func (c *jsiiProxy_ContainerClusterDnsConfigOutputReference) GetNumberMapAttribu
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -503,7 +502,7 @@ func (c *jsiiProxy_ContainerClusterDnsConfigOutputReference) GetStringAttribute(
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -519,7 +518,7 @@ func (c *jsiiProxy_ContainerClusterDnsConfigOutputReference) GetStringMapAttribu
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -548,7 +547,7 @@ func (c *jsiiProxy_ContainerClusterDnsConfigOutputReference) InterpolationForAtt
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -587,16 +586,16 @@ func (c *jsiiProxy_ContainerClusterDnsConfigOutputReference) ResetClusterDnsScop
 	)
 }
 
-func (c *jsiiProxy_ContainerClusterDnsConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ContainerClusterDnsConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -615,4 +614,3 @@ func (c *jsiiProxy_ContainerClusterDnsConfigOutputReference) ToString() *string 
 
 	return returns
 }
-

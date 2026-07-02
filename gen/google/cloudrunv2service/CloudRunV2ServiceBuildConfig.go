@@ -1,6 +1,5 @@
 package cloudrunv2service
 
-
 type CloudRunV2ServiceBuildConfig struct {
 	// The base image used to build the function.
 	//
@@ -9,7 +8,7 @@ type CloudRunV2ServiceBuildConfig struct {
 	// Sets whether the function will receive automatic base image updates.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#enable_automatic_updates CloudRunV2Service#enable_automatic_updates}
-	EnableAutomaticUpdates interface{} `field:"optional" json:"enableAutomaticUpdates" yaml:"enableAutomaticUpdates"`
+	EnableAutomaticUpdates any `field:"optional" json:"enableAutomaticUpdates" yaml:"enableAutomaticUpdates"`
 	// User-provided build-time environment variables for the function.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#environment_variables CloudRunV2Service#environment_variables}
@@ -39,4 +38,3 @@ type CloudRunV2ServiceBuildConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#worker_pool CloudRunV2Service#worker_pool}
 	WorkerPool *string `field:"optional" json:"workerPool" yaml:"workerPool"`
 }
-

@@ -12,9 +12,9 @@ type DialogflowCxTestCaseTestCaseConversationTurnsUserInputOutputReference inter
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,9 +25,9 @@ type DialogflowCxTestCaseTestCaseConversationTurnsUserInputOutputReference inter
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	EnableSentimentAnalysis() interface{}
-	SetEnableSentimentAnalysis(val interface{})
-	EnableSentimentAnalysisInput() interface{}
+	EnableSentimentAnalysis() any
+	SetEnableSentimentAnalysis(val any)
+	EnableSentimentAnalysisInput() any
 	// Experimental.
 	Fqn() *string
 	InjectedParameters() *string
@@ -37,9 +37,9 @@ type DialogflowCxTestCaseTestCaseConversationTurnsUserInputOutputReference inter
 	InputInput() *DialogflowCxTestCaseTestCaseConversationTurnsUserInputInput
 	InternalValue() *DialogflowCxTestCaseTestCaseConversationTurnsUserInput
 	SetInternalValue(val *DialogflowCxTestCaseTestCaseConversationTurnsUserInput)
-	IsWebhookEnabled() interface{}
-	SetIsWebhookEnabled(val interface{})
-	IsWebhookEnabledInput() interface{}
+	IsWebhookEnabled() any
+	SetIsWebhookEnabled(val any)
+	IsWebhookEnabledInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -51,7 +51,7 @@ type DialogflowCxTestCaseTestCaseConversationTurnsUserInputOutputReference inter
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -79,7 +79,7 @@ type DialogflowCxTestCaseTestCaseConversationTurnsUserInputOutputReference inter
 	ResetIsWebhookEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,8 +92,8 @@ type jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsUserInputOutputRefer
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsUserInputOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsUserInputOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -122,8 +122,8 @@ func (j *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsUserInputOutputR
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsUserInputOutputReference) EnableSentimentAnalysis() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsUserInputOutputReference) EnableSentimentAnalysis() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableSentimentAnalysis",
@@ -132,8 +132,8 @@ func (j *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsUserInputOutputR
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsUserInputOutputReference) EnableSentimentAnalysisInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsUserInputOutputReference) EnableSentimentAnalysisInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableSentimentAnalysisInput",
@@ -202,8 +202,8 @@ func (j *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsUserInputOutputR
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsUserInputOutputReference) IsWebhookEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsUserInputOutputReference) IsWebhookEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isWebhookEnabled",
@@ -212,8 +212,8 @@ func (j *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsUserInputOutputR
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsUserInputOutputReference) IsWebhookEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsUserInputOutputReference) IsWebhookEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isWebhookEnabledInput",
@@ -242,7 +242,6 @@ func (j *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsUserInputOutputR
 	return returns
 }
 
-
 func NewDialogflowCxTestCaseTestCaseConversationTurnsUserInputOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DialogflowCxTestCaseTestCaseConversationTurnsUserInputOutputReference {
 	_init_.Initialize()
 
@@ -253,7 +252,7 @@ func NewDialogflowCxTestCaseTestCaseConversationTurnsUserInputOutputReference(te
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseTestCaseConversationTurnsUserInputOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -265,12 +264,12 @@ func NewDialogflowCxTestCaseTestCaseConversationTurnsUserInputOutputReference_Ov
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseTestCaseConversationTurnsUserInputOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsUserInputOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsUserInputOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,7 +280,7 @@ func (j *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsUserInputOutputR
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsUserInputOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsUserInputOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,7 +291,7 @@ func (j *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsUserInputOutputR
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsUserInputOutputReference)SetEnableSentimentAnalysis(val interface{}) {
+func (j *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsUserInputOutputReference) SetEnableSentimentAnalysis(val any) {
 	if err := j.validateSetEnableSentimentAnalysisParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsUserInputOutputR
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsUserInputOutputReference)SetInjectedParameters(val *string) {
+func (j *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsUserInputOutputReference) SetInjectedParameters(val *string) {
 	if err := j.validateSetInjectedParametersParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsUserInputOutputR
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsUserInputOutputReference)SetInternalValue(val *DialogflowCxTestCaseTestCaseConversationTurnsUserInput) {
+func (j *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsUserInputOutputReference) SetInternalValue(val *DialogflowCxTestCaseTestCaseConversationTurnsUserInput) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsUserInputOutputR
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsUserInputOutputReference)SetIsWebhookEnabled(val interface{}) {
+func (j *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsUserInputOutputReference) SetIsWebhookEnabled(val any) {
 	if err := j.validateSetIsWebhookEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsUserInputOutputR
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsUserInputOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsUserInputOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsUserInputOutputR
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsUserInputOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsUserInputOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,16 +370,16 @@ func (d *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsUserInputOutputR
 	return returns
 }
 
-func (d *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsUserInputOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsUserInputOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -396,7 +395,7 @@ func (d *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsUserInputOutputR
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -412,7 +411,7 @@ func (d *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsUserInputOutputR
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -428,7 +427,7 @@ func (d *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsUserInputOutputR
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -444,7 +443,7 @@ func (d *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsUserInputOutputR
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -460,7 +459,7 @@ func (d *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsUserInputOutputR
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -476,7 +475,7 @@ func (d *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsUserInputOutputR
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -492,7 +491,7 @@ func (d *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsUserInputOutputR
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -508,7 +507,7 @@ func (d *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsUserInputOutputR
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -537,7 +536,7 @@ func (d *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsUserInputOutputR
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -551,7 +550,7 @@ func (d *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsUserInputOutputR
 	_jsii_.InvokeVoid(
 		d,
 		"putInput",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -587,16 +586,16 @@ func (d *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsUserInputOutputR
 	)
 }
 
-func (d *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsUserInputOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsUserInputOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -615,4 +614,3 @@ func (d *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsUserInputOutputR
 
 	return returns
 }
-

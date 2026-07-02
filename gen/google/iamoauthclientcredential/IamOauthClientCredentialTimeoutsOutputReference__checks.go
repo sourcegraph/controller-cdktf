@@ -98,7 +98,7 @@ func (i *jsiiProxy_IamOauthClientCredentialTimeoutsOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_IamOauthClientCredentialTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IamOauthClientCredentialTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_IamOauthClientCredentialTimeoutsOutputReference) validateSetD
 	return nil
 }
 
-func (j *jsiiProxy_IamOauthClientCredentialTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_IamOauthClientCredentialTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewIamOauthClientCredentialTimeoutsOutputReferenceParameters(terraf
 
 	return nil
 }
-

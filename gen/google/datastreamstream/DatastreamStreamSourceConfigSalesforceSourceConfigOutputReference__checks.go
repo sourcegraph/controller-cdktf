@@ -120,7 +120,7 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigSalesforceSourceConfigOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_DatastreamStreamSourceConfigSalesforceSourceConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DatastreamStreamSourceConfigSalesforceSourceConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -228,4 +228,3 @@ func validateNewDatastreamStreamSourceConfigSalesforceSourceConfigOutputReferenc
 
 	return nil
 }
-

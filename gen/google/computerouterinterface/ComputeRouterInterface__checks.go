@@ -19,7 +19,7 @@ func (c *jsiiProxy_ComputeRouterInterface) validateAddMoveTargetParameters(moveT
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRouterInterface) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_ComputeRouterInterface) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_ComputeRouterInterface) validateMoveFromIdParameters(id *stri
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRouterInterface) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_ComputeRouterInterface) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateComputeRouterInterface_GenerateConfigForImportParameters(scope cons
 	return nil
 }
 
-func validateComputeRouterInterface_IsConstructParameters(x interface{}) error {
+func validateComputeRouterInterface_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateComputeRouterInterface_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateComputeRouterInterface_IsTerraformElementParameters(x interface{}) error {
+func validateComputeRouterInterface_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateComputeRouterInterface_IsTerraformElementParameters(x interface{}) 
 	return nil
 }
 
-func validateComputeRouterInterface_IsTerraformResourceParameters(x interface{}) error {
+func validateComputeRouterInterface_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateComputeRouterInterface_IsTerraformResourceParameters(x interface{})
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRouterInterface) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRouterInterface) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_ComputeRouterInterface) validateSetConnectionParameters(val i
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRouterInterface) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRouterInterface) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -409,7 +409,7 @@ func (j *jsiiProxy_ComputeRouterInterface) validateSetProjectParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRouterInterface) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ComputeRouterInterface) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -513,4 +513,3 @@ func validateNewComputeRouterInterfaceParameters(scope constructs.Construct, id 
 
 	return nil
 }
-

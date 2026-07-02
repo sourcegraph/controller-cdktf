@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMap",
-		reflect.TypeOf((*ComputeRegionUrlMap)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMap](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -102,7 +102,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMap{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -110,19 +110,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapConfig",
-		reflect.TypeOf((*ComputeRegionUrlMapConfig)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteAction",
-		reflect.TypeOf((*ComputeRegionUrlMapDefaultRouteAction)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapDefaultRouteAction](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionCorsPolicy",
-		reflect.TypeOf((*ComputeRegionUrlMapDefaultRouteActionCorsPolicy)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapDefaultRouteActionCorsPolicy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowCredentials", GoGetter: "AllowCredentials"},
 			_jsii_.MemberProperty{JsiiProperty: "allowCredentialsInput", GoGetter: "AllowCredentialsInput"},
@@ -170,7 +170,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -178,15 +178,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicy",
-		reflect.TypeOf((*ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicy)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicy](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyAbort",
-		reflect.TypeOf((*ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyAbort)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyAbort](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyAbortOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyAbortOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyAbortOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -216,7 +216,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyAbortOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -224,15 +224,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelay",
-		reflect.TypeOf((*ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelay)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelay](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelayFixedDelay",
-		reflect.TypeOf((*ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelayFixedDelay)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelayFixedDelay](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -262,7 +262,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -270,7 +270,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelayOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelayOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelayOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -301,7 +301,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelayOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -309,7 +309,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "abort", GoGetter: "Abort"},
 			_jsii_.MemberProperty{JsiiProperty: "abortInput", GoGetter: "AbortInput"},
@@ -341,7 +341,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -349,7 +349,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapDefaultRouteActionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapDefaultRouteActionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -401,7 +401,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "weightedBackendServices", GoGetter: "WeightedBackendServices"},
 			_jsii_.MemberProperty{JsiiProperty: "weightedBackendServicesInput", GoGetter: "WeightedBackendServicesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapDefaultRouteActionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -409,11 +409,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionRequestMirrorPolicy",
-		reflect.TypeOf((*ComputeRegionUrlMapDefaultRouteActionRequestMirrorPolicy)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapDefaultRouteActionRequestMirrorPolicy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionRequestMirrorPolicyOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapDefaultRouteActionRequestMirrorPolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapDefaultRouteActionRequestMirrorPolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "backendService", GoGetter: "BackendService"},
 			_jsii_.MemberProperty{JsiiProperty: "backendServiceInput", GoGetter: "BackendServiceInput"},
@@ -440,7 +440,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapDefaultRouteActionRequestMirrorPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -448,11 +448,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionRetryPolicy",
-		reflect.TypeOf((*ComputeRegionUrlMapDefaultRouteActionRetryPolicy)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapDefaultRouteActionRetryPolicy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionRetryPolicyOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapDefaultRouteActionRetryPolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapDefaultRouteActionRetryPolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -486,7 +486,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapDefaultRouteActionRetryPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -494,11 +494,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionRetryPolicyPerTryTimeout",
-		reflect.TypeOf((*ComputeRegionUrlMapDefaultRouteActionRetryPolicyPerTryTimeout)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapDefaultRouteActionRetryPolicyPerTryTimeout](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionRetryPolicyPerTryTimeoutOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapDefaultRouteActionRetryPolicyPerTryTimeoutOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapDefaultRouteActionRetryPolicyPerTryTimeoutOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -528,7 +528,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapDefaultRouteActionRetryPolicyPerTryTimeoutOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -536,11 +536,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionTimeout",
-		reflect.TypeOf((*ComputeRegionUrlMapDefaultRouteActionTimeout)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapDefaultRouteActionTimeout](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionTimeoutOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapDefaultRouteActionTimeoutOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapDefaultRouteActionTimeoutOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -570,7 +570,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapDefaultRouteActionTimeoutOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -578,11 +578,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionUrlRewrite",
-		reflect.TypeOf((*ComputeRegionUrlMapDefaultRouteActionUrlRewrite)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapDefaultRouteActionUrlRewrite](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionUrlRewriteOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapDefaultRouteActionUrlRewriteOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapDefaultRouteActionUrlRewriteOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -612,7 +612,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapDefaultRouteActionUrlRewriteOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -620,15 +620,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServices",
-		reflect.TypeOf((*ComputeRegionUrlMapDefaultRouteActionWeightedBackendServices)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapDefaultRouteActionWeightedBackendServices](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderAction",
-		reflect.TypeOf((*ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderAction)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderAction](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -666,7 +666,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -674,11 +674,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd",
-		reflect.TypeOf((*ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList",
-		reflect.TypeOf((*ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -692,7 +692,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -700,7 +700,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -733,7 +733,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -741,11 +741,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd",
-		reflect.TypeOf((*ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList",
-		reflect.TypeOf((*ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -759,7 +759,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -767,7 +767,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -800,7 +800,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -808,7 +808,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesList",
-		reflect.TypeOf((*ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesList)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -822,7 +822,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -830,7 +830,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "backendService", GoGetter: "BackendService"},
 			_jsii_.MemberProperty{JsiiProperty: "backendServiceInput", GoGetter: "BackendServiceInput"},
@@ -864,7 +864,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "weight", GoGetter: "Weight"},
 			_jsii_.MemberProperty{JsiiProperty: "weightInput", GoGetter: "WeightInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -872,11 +872,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultUrlRedirect",
-		reflect.TypeOf((*ComputeRegionUrlMapDefaultUrlRedirect)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapDefaultUrlRedirect](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultUrlRedirectOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapDefaultUrlRedirectOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapDefaultUrlRedirectOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -917,7 +917,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapDefaultUrlRedirectOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -925,11 +925,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapHeaderAction",
-		reflect.TypeOf((*ComputeRegionUrlMapHeaderAction)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapHeaderAction](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapHeaderActionOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapHeaderActionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapHeaderActionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -967,7 +967,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapHeaderActionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -975,11 +975,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapHeaderActionRequestHeadersToAdd",
-		reflect.TypeOf((*ComputeRegionUrlMapHeaderActionRequestHeadersToAdd)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapHeaderActionRequestHeadersToAdd](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapHeaderActionRequestHeadersToAddList",
-		reflect.TypeOf((*ComputeRegionUrlMapHeaderActionRequestHeadersToAddList)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapHeaderActionRequestHeadersToAddList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -993,7 +993,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapHeaderActionRequestHeadersToAddList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1001,7 +1001,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapHeaderActionRequestHeadersToAddOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapHeaderActionRequestHeadersToAddOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapHeaderActionRequestHeadersToAddOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1034,7 +1034,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapHeaderActionRequestHeadersToAddOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1042,11 +1042,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapHeaderActionResponseHeadersToAdd",
-		reflect.TypeOf((*ComputeRegionUrlMapHeaderActionResponseHeadersToAdd)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapHeaderActionResponseHeadersToAdd](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapHeaderActionResponseHeadersToAddList",
-		reflect.TypeOf((*ComputeRegionUrlMapHeaderActionResponseHeadersToAddList)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapHeaderActionResponseHeadersToAddList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1060,7 +1060,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapHeaderActionResponseHeadersToAddList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1068,7 +1068,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapHeaderActionResponseHeadersToAddOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapHeaderActionResponseHeadersToAddOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapHeaderActionResponseHeadersToAddOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1101,7 +1101,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapHeaderActionResponseHeadersToAddOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1109,11 +1109,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapHostRule",
-		reflect.TypeOf((*ComputeRegionUrlMapHostRule)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapHostRule](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapHostRuleList",
-		reflect.TypeOf((*ComputeRegionUrlMapHostRuleList)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapHostRuleList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1127,7 +1127,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapHostRuleList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1135,7 +1135,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapHostRuleOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapHostRuleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapHostRuleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1166,7 +1166,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapHostRuleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1174,19 +1174,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcher",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcher)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcher](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteAction",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherDefaultRouteAction)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherDefaultRouteAction](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionCorsPolicy",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherDefaultRouteActionCorsPolicy)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherDefaultRouteActionCorsPolicy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionCorsPolicyOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherDefaultRouteActionCorsPolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherDefaultRouteActionCorsPolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowCredentials", GoGetter: "AllowCredentials"},
 			_jsii_.MemberProperty{JsiiProperty: "allowCredentialsInput", GoGetter: "AllowCredentialsInput"},
@@ -1234,7 +1234,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherDefaultRouteActionCorsPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1242,15 +1242,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicy",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicy)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicy](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyAbort",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyAbort)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyAbort](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyAbortOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyAbortOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyAbortOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1280,7 +1280,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyAbortOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1288,15 +1288,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyDelay",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyDelay)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyDelay](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyDelayFixedDelay",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyDelayFixedDelay)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyDelayFixedDelay](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1326,7 +1326,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1334,7 +1334,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyDelayOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyDelayOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyDelayOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1365,7 +1365,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyDelayOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1373,7 +1373,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "abort", GoGetter: "Abort"},
 			_jsii_.MemberProperty{JsiiProperty: "abortInput", GoGetter: "AbortInput"},
@@ -1405,7 +1405,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1413,11 +1413,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionMaxStreamDuration",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherDefaultRouteActionMaxStreamDuration)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherDefaultRouteActionMaxStreamDuration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionMaxStreamDurationOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherDefaultRouteActionMaxStreamDurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherDefaultRouteActionMaxStreamDurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1446,7 +1446,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherDefaultRouteActionMaxStreamDurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1454,7 +1454,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherDefaultRouteActionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherDefaultRouteActionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1510,7 +1510,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "weightedBackendServices", GoGetter: "WeightedBackendServices"},
 			_jsii_.MemberProperty{JsiiProperty: "weightedBackendServicesInput", GoGetter: "WeightedBackendServicesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherDefaultRouteActionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1518,11 +1518,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionRequestMirrorPolicy",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherDefaultRouteActionRequestMirrorPolicy)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherDefaultRouteActionRequestMirrorPolicy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionRequestMirrorPolicyOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherDefaultRouteActionRequestMirrorPolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherDefaultRouteActionRequestMirrorPolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "backendService", GoGetter: "BackendService"},
 			_jsii_.MemberProperty{JsiiProperty: "backendServiceInput", GoGetter: "BackendServiceInput"},
@@ -1548,7 +1548,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherDefaultRouteActionRequestMirrorPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1556,11 +1556,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionRetryPolicy",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherDefaultRouteActionRetryPolicy)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherDefaultRouteActionRetryPolicy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionRetryPolicyOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherDefaultRouteActionRetryPolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherDefaultRouteActionRetryPolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1594,7 +1594,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherDefaultRouteActionRetryPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1602,11 +1602,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionRetryPolicyPerTryTimeout",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherDefaultRouteActionRetryPolicyPerTryTimeout)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherDefaultRouteActionRetryPolicyPerTryTimeout](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionRetryPolicyPerTryTimeoutOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherDefaultRouteActionRetryPolicyPerTryTimeoutOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherDefaultRouteActionRetryPolicyPerTryTimeoutOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1636,7 +1636,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherDefaultRouteActionRetryPolicyPerTryTimeoutOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1644,11 +1644,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionTimeout",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherDefaultRouteActionTimeout)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherDefaultRouteActionTimeout](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionTimeoutOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherDefaultRouteActionTimeoutOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherDefaultRouteActionTimeoutOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1678,7 +1678,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherDefaultRouteActionTimeoutOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1686,11 +1686,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionUrlRewrite",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherDefaultRouteActionUrlRewrite)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherDefaultRouteActionUrlRewrite](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionUrlRewriteOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherDefaultRouteActionUrlRewriteOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherDefaultRouteActionUrlRewriteOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1723,7 +1723,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherDefaultRouteActionUrlRewriteOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1731,15 +1731,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServices",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServices)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServices](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderAction",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderAction)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderAction](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1777,7 +1777,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1785,11 +1785,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1803,7 +1803,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1811,7 +1811,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1844,7 +1844,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1852,11 +1852,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1870,7 +1870,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1878,7 +1878,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1911,7 +1911,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1919,7 +1919,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesList",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesList)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1933,7 +1933,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1941,7 +1941,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "backendService", GoGetter: "BackendService"},
 			_jsii_.MemberProperty{JsiiProperty: "backendServiceInput", GoGetter: "BackendServiceInput"},
@@ -1975,7 +1975,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "weight", GoGetter: "Weight"},
 			_jsii_.MemberProperty{JsiiProperty: "weightInput", GoGetter: "WeightInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1983,11 +1983,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultUrlRedirect",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherDefaultUrlRedirect)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherDefaultUrlRedirect](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultUrlRedirectOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherDefaultUrlRedirectOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherDefaultUrlRedirectOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2028,7 +2028,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherDefaultUrlRedirectOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2036,11 +2036,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherHeaderAction",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherHeaderAction)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherHeaderAction](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherHeaderActionOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherHeaderActionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherHeaderActionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2078,7 +2078,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherHeaderActionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2086,11 +2086,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherHeaderActionRequestHeadersToAdd",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherHeaderActionRequestHeadersToAdd)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherHeaderActionRequestHeadersToAdd](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherHeaderActionRequestHeadersToAddList",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherHeaderActionRequestHeadersToAddList)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherHeaderActionRequestHeadersToAddList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2104,7 +2104,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherHeaderActionRequestHeadersToAddList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2112,7 +2112,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherHeaderActionRequestHeadersToAddOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherHeaderActionRequestHeadersToAddOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherHeaderActionRequestHeadersToAddOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2145,7 +2145,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherHeaderActionRequestHeadersToAddOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2153,11 +2153,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherHeaderActionResponseHeadersToAdd",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherHeaderActionResponseHeadersToAdd)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherHeaderActionResponseHeadersToAdd](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherHeaderActionResponseHeadersToAddList",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherHeaderActionResponseHeadersToAddList)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherHeaderActionResponseHeadersToAddList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2171,7 +2171,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherHeaderActionResponseHeadersToAddList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2179,7 +2179,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherHeaderActionResponseHeadersToAddOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherHeaderActionResponseHeadersToAddOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherHeaderActionResponseHeadersToAddOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2212,7 +2212,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherHeaderActionResponseHeadersToAddOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2220,7 +2220,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherList",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherList)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2234,7 +2234,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2242,7 +2242,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2294,7 +2294,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2302,11 +2302,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRule",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherPathRule)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherPathRule](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleList",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherPathRuleList)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherPathRuleList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2320,7 +2320,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherPathRuleList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2328,7 +2328,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherPathRuleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherPathRuleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2365,7 +2365,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "urlRedirect", GoGetter: "UrlRedirect"},
 			_jsii_.MemberProperty{JsiiProperty: "urlRedirectInput", GoGetter: "UrlRedirectInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherPathRuleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2373,15 +2373,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteAction",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherPathRuleRouteAction)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherPathRuleRouteAction](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicy",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicy)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicyOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowCredentials", GoGetter: "AllowCredentials"},
 			_jsii_.MemberProperty{JsiiProperty: "allowCredentialsInput", GoGetter: "AllowCredentialsInput"},
@@ -2428,7 +2428,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2436,15 +2436,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicy",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicy)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicy](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyAbort",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyAbort)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyAbort](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyAbortOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyAbortOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyAbortOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2472,7 +2472,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyAbortOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2480,15 +2480,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyDelay",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyDelay)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyDelay](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyDelayFixedDelay",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyDelayFixedDelay)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyDelayFixedDelay](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2517,7 +2517,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2525,7 +2525,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyDelayOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyDelayOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyDelayOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2554,7 +2554,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyDelayOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2562,7 +2562,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "abort", GoGetter: "Abort"},
 			_jsii_.MemberProperty{JsiiProperty: "abortInput", GoGetter: "AbortInput"},
@@ -2594,7 +2594,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2602,7 +2602,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherPathRuleRouteActionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherPathRuleRouteActionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2654,7 +2654,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "weightedBackendServices", GoGetter: "WeightedBackendServices"},
 			_jsii_.MemberProperty{JsiiProperty: "weightedBackendServicesInput", GoGetter: "WeightedBackendServicesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherPathRuleRouteActionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2662,11 +2662,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionRequestMirrorPolicy",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherPathRuleRouteActionRequestMirrorPolicy)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherPathRuleRouteActionRequestMirrorPolicy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionRequestMirrorPolicyOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherPathRuleRouteActionRequestMirrorPolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherPathRuleRouteActionRequestMirrorPolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "backendService", GoGetter: "BackendService"},
 			_jsii_.MemberProperty{JsiiProperty: "backendServiceInput", GoGetter: "BackendServiceInput"},
@@ -2692,7 +2692,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherPathRuleRouteActionRequestMirrorPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2700,11 +2700,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicy",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicy)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicyOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2738,7 +2738,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2746,11 +2746,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicyPerTryTimeout",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicyPerTryTimeout)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicyPerTryTimeout](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicyPerTryTimeoutOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicyPerTryTimeoutOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicyPerTryTimeoutOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2779,7 +2779,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicyPerTryTimeoutOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2787,11 +2787,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionTimeout",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherPathRuleRouteActionTimeout)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherPathRuleRouteActionTimeout](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionTimeoutOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherPathRuleRouteActionTimeoutOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherPathRuleRouteActionTimeoutOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2820,7 +2820,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherPathRuleRouteActionTimeoutOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2828,11 +2828,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionUrlRewrite",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherPathRuleRouteActionUrlRewrite)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherPathRuleRouteActionUrlRewrite](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionUrlRewriteOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherPathRuleRouteActionUrlRewriteOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherPathRuleRouteActionUrlRewriteOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2862,7 +2862,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherPathRuleRouteActionUrlRewriteOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2870,15 +2870,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderAction",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderAction)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderAction](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2916,7 +2916,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2924,11 +2924,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2942,7 +2942,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2950,7 +2950,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2980,7 +2980,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2988,11 +2988,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3006,7 +3006,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3014,7 +3014,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3044,7 +3044,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3052,7 +3052,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesList",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesList)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3066,7 +3066,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3074,7 +3074,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "backendService", GoGetter: "BackendService"},
 			_jsii_.MemberProperty{JsiiProperty: "backendServiceInput", GoGetter: "BackendServiceInput"},
@@ -3106,7 +3106,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "weight", GoGetter: "Weight"},
 			_jsii_.MemberProperty{JsiiProperty: "weightInput", GoGetter: "WeightInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3114,11 +3114,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleUrlRedirect",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherPathRuleUrlRedirect)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherPathRuleUrlRedirect](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleUrlRedirectOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherPathRuleUrlRedirectOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherPathRuleUrlRedirectOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3159,7 +3159,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherPathRuleUrlRedirectOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3167,15 +3167,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRules",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRules)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherRouteRules](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderAction",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesHeaderAction)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherRouteRulesHeaderAction](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3213,7 +3213,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3221,11 +3221,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddList",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddList)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3239,7 +3239,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3247,7 +3247,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3277,7 +3277,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3285,11 +3285,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddList",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddList)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3303,7 +3303,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3311,7 +3311,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3341,7 +3341,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3349,7 +3349,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesList",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesList)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherRouteRulesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3363,7 +3363,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherRouteRulesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3371,15 +3371,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRules",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesMatchRules)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherRouteRulesMatchRules](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesList",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesList)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3393,7 +3393,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3401,7 +3401,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3449,7 +3449,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3457,11 +3457,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesRangeMatch",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesRangeMatch)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesRangeMatch](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesRangeMatchOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesRangeMatchOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesRangeMatchOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3489,7 +3489,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesRangeMatchOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3497,7 +3497,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesList",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesList)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3511,7 +3511,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3519,15 +3519,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabelsList",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabelsList)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabelsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3541,7 +3541,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabelsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3549,7 +3549,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabelsOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabelsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabelsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3577,7 +3577,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabelsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3585,7 +3585,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersList",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersList)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3599,7 +3599,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3607,7 +3607,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3636,7 +3636,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3644,7 +3644,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3695,7 +3695,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3703,11 +3703,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesList",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesList)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3721,7 +3721,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3729,7 +3729,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3764,7 +3764,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3772,7 +3772,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherRouteRulesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3817,7 +3817,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "urlRedirect", GoGetter: "UrlRedirect"},
 			_jsii_.MemberProperty{JsiiProperty: "urlRedirectInput", GoGetter: "UrlRedirectInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherRouteRulesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3825,15 +3825,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteAction",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesRouteAction)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherRouteRulesRouteAction](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionCorsPolicy",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesRouteActionCorsPolicy)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherRouteRulesRouteActionCorsPolicy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionCorsPolicyOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesRouteActionCorsPolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherRouteRulesRouteActionCorsPolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowCredentials", GoGetter: "AllowCredentials"},
 			_jsii_.MemberProperty{JsiiProperty: "allowCredentialsInput", GoGetter: "AllowCredentialsInput"},
@@ -3881,7 +3881,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherRouteRulesRouteActionCorsPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3889,15 +3889,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicy",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicy)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicy](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyAbort",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyAbort)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyAbort](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyAbortOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyAbortOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyAbortOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3927,7 +3927,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyAbortOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3935,15 +3935,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelay",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelay)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelay](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelayFixedDelay",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelayFixedDelay)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelayFixedDelay](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3972,7 +3972,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3980,7 +3980,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelayOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelayOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelayOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4011,7 +4011,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelayOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4019,7 +4019,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "abort", GoGetter: "Abort"},
 			_jsii_.MemberProperty{JsiiProperty: "abortInput", GoGetter: "AbortInput"},
@@ -4051,7 +4051,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4059,7 +4059,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesRouteActionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherRouteRulesRouteActionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4111,7 +4111,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "weightedBackendServices", GoGetter: "WeightedBackendServices"},
 			_jsii_.MemberProperty{JsiiProperty: "weightedBackendServicesInput", GoGetter: "WeightedBackendServicesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherRouteRulesRouteActionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4119,11 +4119,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRequestMirrorPolicy",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRequestMirrorPolicy)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRequestMirrorPolicy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRequestMirrorPolicyOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRequestMirrorPolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRequestMirrorPolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "backendService", GoGetter: "BackendService"},
 			_jsii_.MemberProperty{JsiiProperty: "backendServiceInput", GoGetter: "BackendServiceInput"},
@@ -4149,7 +4149,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRequestMirrorPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4157,11 +4157,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicy",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicy)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicyOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4194,7 +4194,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4202,11 +4202,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicyPerTryTimeout",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicyPerTryTimeout)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicyPerTryTimeout](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicyPerTryTimeoutOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicyPerTryTimeoutOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicyPerTryTimeoutOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4235,7 +4235,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicyPerTryTimeoutOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4243,11 +4243,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionTimeout",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesRouteActionTimeout)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherRouteRulesRouteActionTimeout](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionTimeoutOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesRouteActionTimeoutOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherRouteRulesRouteActionTimeoutOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4276,7 +4276,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherRouteRulesRouteActionTimeoutOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4284,11 +4284,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionUrlRewrite",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesRouteActionUrlRewrite)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherRouteRulesRouteActionUrlRewrite](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionUrlRewriteOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesRouteActionUrlRewriteOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherRouteRulesRouteActionUrlRewriteOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4321,7 +4321,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherRouteRulesRouteActionUrlRewriteOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4329,15 +4329,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderAction",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderAction)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderAction](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4375,7 +4375,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4383,11 +4383,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4401,7 +4401,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4409,7 +4409,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4439,7 +4439,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4447,11 +4447,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4465,7 +4465,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4473,7 +4473,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4503,7 +4503,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4511,7 +4511,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesList",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesList)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4525,7 +4525,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4533,7 +4533,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "backendService", GoGetter: "BackendService"},
 			_jsii_.MemberProperty{JsiiProperty: "backendServiceInput", GoGetter: "BackendServiceInput"},
@@ -4565,7 +4565,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "weight", GoGetter: "Weight"},
 			_jsii_.MemberProperty{JsiiProperty: "weightInput", GoGetter: "WeightInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4573,11 +4573,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesUrlRedirect",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesUrlRedirect)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherRouteRulesUrlRedirect](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesUrlRedirectOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesUrlRedirectOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapPathMatcherRouteRulesUrlRedirectOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4619,7 +4619,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapPathMatcherRouteRulesUrlRedirectOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4627,11 +4627,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapTest",
-		reflect.TypeOf((*ComputeRegionUrlMapTest)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapTest](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapTestList",
-		reflect.TypeOf((*ComputeRegionUrlMapTestList)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapTestList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4645,7 +4645,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapTestList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4653,7 +4653,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapTestOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapTestOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapTestOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4686,7 +4686,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapTestOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4694,11 +4694,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapTimeouts",
-		reflect.TypeOf((*ComputeRegionUrlMapTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapTimeoutsOutputReference",
-		reflect.TypeOf((*ComputeRegionUrlMapTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionUrlMapTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4731,7 +4731,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionUrlMapTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

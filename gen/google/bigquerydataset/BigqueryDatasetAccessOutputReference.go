@@ -12,9 +12,9 @@ type BigqueryDatasetAccessOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -40,8 +40,8 @@ type BigqueryDatasetAccessOutputReference interface {
 	IamMember() *string
 	SetIamMember(val *string)
 	IamMemberInput() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Role() *string
 	SetRole(val *string)
 	RoleInput() *string
@@ -66,7 +66,7 @@ type BigqueryDatasetAccessOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -103,7 +103,7 @@ type BigqueryDatasetAccessOutputReference interface {
 	ResetView()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -116,8 +116,8 @@ type jsiiProxy_BigqueryDatasetAccessOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_BigqueryDatasetAccessOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigqueryDatasetAccessOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -256,8 +256,8 @@ func (j *jsiiProxy_BigqueryDatasetAccessOutputReference) IamMemberInput() *strin
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryDatasetAccessOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigqueryDatasetAccessOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -386,7 +386,6 @@ func (j *jsiiProxy_BigqueryDatasetAccessOutputReference) ViewInput() *BigqueryDa
 	return returns
 }
 
-
 func NewBigqueryDatasetAccessOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) BigqueryDatasetAccessOutputReference {
 	_init_.Initialize()
 
@@ -397,7 +396,7 @@ func NewBigqueryDatasetAccessOutputReference(terraformResource cdktf.IInterpolat
 
 	_jsii_.Create(
 		"@cdktf/provider-google.bigqueryDataset.BigqueryDatasetAccessOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -409,12 +408,12 @@ func NewBigqueryDatasetAccessOutputReference_Override(b BigqueryDatasetAccessOut
 
 	_jsii_.Create(
 		"@cdktf/provider-google.bigqueryDataset.BigqueryDatasetAccessOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		b,
 	)
 }
 
-func (j *jsiiProxy_BigqueryDatasetAccessOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_BigqueryDatasetAccessOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -425,7 +424,7 @@ func (j *jsiiProxy_BigqueryDatasetAccessOutputReference)SetComplexObjectIndex(va
 	)
 }
 
-func (j *jsiiProxy_BigqueryDatasetAccessOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_BigqueryDatasetAccessOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -436,7 +435,7 @@ func (j *jsiiProxy_BigqueryDatasetAccessOutputReference)SetComplexObjectIsFromSe
 	)
 }
 
-func (j *jsiiProxy_BigqueryDatasetAccessOutputReference)SetDomain(val *string) {
+func (j *jsiiProxy_BigqueryDatasetAccessOutputReference) SetDomain(val *string) {
 	if err := j.validateSetDomainParameters(val); err != nil {
 		panic(err)
 	}
@@ -447,7 +446,7 @@ func (j *jsiiProxy_BigqueryDatasetAccessOutputReference)SetDomain(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BigqueryDatasetAccessOutputReference)SetGroupByEmail(val *string) {
+func (j *jsiiProxy_BigqueryDatasetAccessOutputReference) SetGroupByEmail(val *string) {
 	if err := j.validateSetGroupByEmailParameters(val); err != nil {
 		panic(err)
 	}
@@ -458,7 +457,7 @@ func (j *jsiiProxy_BigqueryDatasetAccessOutputReference)SetGroupByEmail(val *str
 	)
 }
 
-func (j *jsiiProxy_BigqueryDatasetAccessOutputReference)SetIamMember(val *string) {
+func (j *jsiiProxy_BigqueryDatasetAccessOutputReference) SetIamMember(val *string) {
 	if err := j.validateSetIamMemberParameters(val); err != nil {
 		panic(err)
 	}
@@ -469,7 +468,7 @@ func (j *jsiiProxy_BigqueryDatasetAccessOutputReference)SetIamMember(val *string
 	)
 }
 
-func (j *jsiiProxy_BigqueryDatasetAccessOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_BigqueryDatasetAccessOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -480,7 +479,7 @@ func (j *jsiiProxy_BigqueryDatasetAccessOutputReference)SetInternalValue(val int
 	)
 }
 
-func (j *jsiiProxy_BigqueryDatasetAccessOutputReference)SetRole(val *string) {
+func (j *jsiiProxy_BigqueryDatasetAccessOutputReference) SetRole(val *string) {
 	if err := j.validateSetRoleParameters(val); err != nil {
 		panic(err)
 	}
@@ -491,7 +490,7 @@ func (j *jsiiProxy_BigqueryDatasetAccessOutputReference)SetRole(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BigqueryDatasetAccessOutputReference)SetSpecialGroup(val *string) {
+func (j *jsiiProxy_BigqueryDatasetAccessOutputReference) SetSpecialGroup(val *string) {
 	if err := j.validateSetSpecialGroupParameters(val); err != nil {
 		panic(err)
 	}
@@ -502,7 +501,7 @@ func (j *jsiiProxy_BigqueryDatasetAccessOutputReference)SetSpecialGroup(val *str
 	)
 }
 
-func (j *jsiiProxy_BigqueryDatasetAccessOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_BigqueryDatasetAccessOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -513,7 +512,7 @@ func (j *jsiiProxy_BigqueryDatasetAccessOutputReference)SetTerraformAttribute(va
 	)
 }
 
-func (j *jsiiProxy_BigqueryDatasetAccessOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BigqueryDatasetAccessOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -524,7 +523,7 @@ func (j *jsiiProxy_BigqueryDatasetAccessOutputReference)SetTerraformResource(val
 	)
 }
 
-func (j *jsiiProxy_BigqueryDatasetAccessOutputReference)SetUserByEmail(val *string) {
+func (j *jsiiProxy_BigqueryDatasetAccessOutputReference) SetUserByEmail(val *string) {
 	if err := j.validateSetUserByEmailParameters(val); err != nil {
 		panic(err)
 	}
@@ -548,16 +547,16 @@ func (b *jsiiProxy_BigqueryDatasetAccessOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryDatasetAccessOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (b *jsiiProxy_BigqueryDatasetAccessOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := b.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -573,7 +572,7 @@ func (b *jsiiProxy_BigqueryDatasetAccessOutputReference) GetBooleanAttribute(ter
 	_jsii_.Invoke(
 		b,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -589,7 +588,7 @@ func (b *jsiiProxy_BigqueryDatasetAccessOutputReference) GetBooleanMapAttribute(
 	_jsii_.Invoke(
 		b,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -605,7 +604,7 @@ func (b *jsiiProxy_BigqueryDatasetAccessOutputReference) GetListAttribute(terraf
 	_jsii_.Invoke(
 		b,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -621,7 +620,7 @@ func (b *jsiiProxy_BigqueryDatasetAccessOutputReference) GetNumberAttribute(terr
 	_jsii_.Invoke(
 		b,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -637,7 +636,7 @@ func (b *jsiiProxy_BigqueryDatasetAccessOutputReference) GetNumberListAttribute(
 	_jsii_.Invoke(
 		b,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -653,7 +652,7 @@ func (b *jsiiProxy_BigqueryDatasetAccessOutputReference) GetNumberMapAttribute(t
 	_jsii_.Invoke(
 		b,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -669,7 +668,7 @@ func (b *jsiiProxy_BigqueryDatasetAccessOutputReference) GetStringAttribute(terr
 	_jsii_.Invoke(
 		b,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -685,7 +684,7 @@ func (b *jsiiProxy_BigqueryDatasetAccessOutputReference) GetStringMapAttribute(t
 	_jsii_.Invoke(
 		b,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -714,7 +713,7 @@ func (b *jsiiProxy_BigqueryDatasetAccessOutputReference) InterpolationForAttribu
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -728,7 +727,7 @@ func (b *jsiiProxy_BigqueryDatasetAccessOutputReference) PutCondition(value *Big
 	_jsii_.InvokeVoid(
 		b,
 		"putCondition",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -739,7 +738,7 @@ func (b *jsiiProxy_BigqueryDatasetAccessOutputReference) PutDataset(value *Bigqu
 	_jsii_.InvokeVoid(
 		b,
 		"putDataset",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -750,7 +749,7 @@ func (b *jsiiProxy_BigqueryDatasetAccessOutputReference) PutRoutine(value *Bigqu
 	_jsii_.InvokeVoid(
 		b,
 		"putRoutine",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -761,7 +760,7 @@ func (b *jsiiProxy_BigqueryDatasetAccessOutputReference) PutView(value *Bigquery
 	_jsii_.InvokeVoid(
 		b,
 		"putView",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -845,16 +844,16 @@ func (b *jsiiProxy_BigqueryDatasetAccessOutputReference) ResetView() {
 	)
 }
 
-func (b *jsiiProxy_BigqueryDatasetAccessOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (b *jsiiProxy_BigqueryDatasetAccessOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := b.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -873,4 +872,3 @@ func (b *jsiiProxy_BigqueryDatasetAccessOutputReference) ToString() *string {
 
 	return returns
 }
-

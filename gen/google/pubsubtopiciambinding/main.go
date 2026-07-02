@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.pubsubTopicIamBinding.PubsubTopicIamBinding",
-		reflect.TypeOf((*PubsubTopicIamBinding)(nil)).Elem(),
+		reflect.TypeFor[PubsubTopicIamBinding](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,7 +70,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PubsubTopicIamBinding{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -78,11 +78,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.pubsubTopicIamBinding.PubsubTopicIamBindingCondition",
-		reflect.TypeOf((*PubsubTopicIamBindingCondition)(nil)).Elem(),
+		reflect.TypeFor[PubsubTopicIamBindingCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.pubsubTopicIamBinding.PubsubTopicIamBindingConditionOutputReference",
-		reflect.TypeOf((*PubsubTopicIamBindingConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PubsubTopicIamBindingConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -113,7 +113,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PubsubTopicIamBindingConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -121,6 +121,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.pubsubTopicIamBinding.PubsubTopicIamBindingConfig",
-		reflect.TypeOf((*PubsubTopicIamBindingConfig)(nil)).Elem(),
+		reflect.TypeFor[PubsubTopicIamBindingConfig](),
 	)
 }

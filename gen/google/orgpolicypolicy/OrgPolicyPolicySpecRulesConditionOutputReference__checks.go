@@ -98,7 +98,7 @@ func (o *jsiiProxy_OrgPolicyPolicySpecRulesConditionOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_OrgPolicyPolicySpecRulesConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_OrgPolicyPolicySpecRulesConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewOrgPolicyPolicySpecRulesConditionOutputReferenceParameters(terra
 
 	return nil
 }
-

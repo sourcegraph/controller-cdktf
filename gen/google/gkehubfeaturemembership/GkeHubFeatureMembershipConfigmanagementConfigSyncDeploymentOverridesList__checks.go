@@ -34,7 +34,7 @@ func (g *jsiiProxy_GkeHubFeatureMembershipConfigmanagementConfigSyncDeploymentOv
 	return nil
 }
 
-func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementConfigSyncDeploymentOverridesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementConfigSyncDeploymentOverridesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGkeHubFeatureMembershipConfigmanagementConfigSyncDeploymentOverr
 
 	return nil
 }
-

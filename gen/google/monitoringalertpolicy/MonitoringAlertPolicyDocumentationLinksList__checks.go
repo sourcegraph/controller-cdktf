@@ -34,7 +34,7 @@ func (m *jsiiProxy_MonitoringAlertPolicyDocumentationLinksList) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_MonitoringAlertPolicyDocumentationLinksList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_MonitoringAlertPolicyDocumentationLinksList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewMonitoringAlertPolicyDocumentationLinksListParameters(terraformR
 
 	return nil
 }
-

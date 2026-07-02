@@ -17,15 +17,15 @@ type GkeHubScopeIamBinding interface {
 	Condition() GkeHubScopeIamBindingConditionOutputReference
 	ConditionInput() *GkeHubScopeIamBindingCondition
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -59,11 +59,11 @@ type GkeHubScopeIamBinding interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Role() *string
 	SetRole(val *string)
 	RoleInput() *string
@@ -73,16 +73,16 @@ type GkeHubScopeIamBinding interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -100,7 +100,7 @@ type GkeHubScopeIamBinding interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -112,7 +112,7 @@ type GkeHubScopeIamBinding interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -126,17 +126,17 @@ type GkeHubScopeIamBinding interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GkeHubScopeIamBinding
@@ -174,8 +174,8 @@ func (j *jsiiProxy_GkeHubScopeIamBinding) ConditionInput() *GkeHubScopeIamBindin
 	return returns
 }
 
-func (j *jsiiProxy_GkeHubScopeIamBinding) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeHubScopeIamBinding) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -184,8 +184,8 @@ func (j *jsiiProxy_GkeHubScopeIamBinding) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GkeHubScopeIamBinding) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GkeHubScopeIamBinding) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -194,8 +194,8 @@ func (j *jsiiProxy_GkeHubScopeIamBinding) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_GkeHubScopeIamBinding) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeHubScopeIamBinding) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -344,8 +344,8 @@ func (j *jsiiProxy_GkeHubScopeIamBinding) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_GkeHubScopeIamBinding) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GkeHubScopeIamBinding) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -354,8 +354,8 @@ func (j *jsiiProxy_GkeHubScopeIamBinding) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GkeHubScopeIamBinding) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeHubScopeIamBinding) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -414,8 +414,8 @@ func (j *jsiiProxy_GkeHubScopeIamBinding) TerraformGeneratorMetadata() *cdktf.Te
 	return returns
 }
 
-func (j *jsiiProxy_GkeHubScopeIamBinding) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GkeHubScopeIamBinding) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -434,7 +434,6 @@ func (j *jsiiProxy_GkeHubScopeIamBinding) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_hub_scope_iam_binding google_gke_hub_scope_iam_binding} Resource.
 func NewGkeHubScopeIamBinding(scope constructs.Construct, id *string, config *GkeHubScopeIamBindingConfig) GkeHubScopeIamBinding {
 	_init_.Initialize()
@@ -446,7 +445,7 @@ func NewGkeHubScopeIamBinding(scope constructs.Construct, id *string, config *Gk
 
 	_jsii_.Create(
 		"@cdktf/provider-google.gkeHubScopeIamBinding.GkeHubScopeIamBinding",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -459,12 +458,12 @@ func NewGkeHubScopeIamBinding_Override(g GkeHubScopeIamBinding, scope constructs
 
 	_jsii_.Create(
 		"@cdktf/provider-google.gkeHubScopeIamBinding.GkeHubScopeIamBinding",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GkeHubScopeIamBinding)SetConnection(val interface{}) {
+func (j *jsiiProxy_GkeHubScopeIamBinding) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -475,7 +474,7 @@ func (j *jsiiProxy_GkeHubScopeIamBinding)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GkeHubScopeIamBinding)SetCount(val interface{}) {
+func (j *jsiiProxy_GkeHubScopeIamBinding) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -486,7 +485,7 @@ func (j *jsiiProxy_GkeHubScopeIamBinding)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GkeHubScopeIamBinding)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GkeHubScopeIamBinding) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -494,7 +493,7 @@ func (j *jsiiProxy_GkeHubScopeIamBinding)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GkeHubScopeIamBinding)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GkeHubScopeIamBinding) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -502,7 +501,7 @@ func (j *jsiiProxy_GkeHubScopeIamBinding)SetForEach(val cdktf.ITerraformIterator
 	)
 }
 
-func (j *jsiiProxy_GkeHubScopeIamBinding)SetId(val *string) {
+func (j *jsiiProxy_GkeHubScopeIamBinding) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -513,7 +512,7 @@ func (j *jsiiProxy_GkeHubScopeIamBinding)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GkeHubScopeIamBinding)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GkeHubScopeIamBinding) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -524,7 +523,7 @@ func (j *jsiiProxy_GkeHubScopeIamBinding)SetLifecycle(val *cdktf.TerraformResour
 	)
 }
 
-func (j *jsiiProxy_GkeHubScopeIamBinding)SetMembers(val *[]*string) {
+func (j *jsiiProxy_GkeHubScopeIamBinding) SetMembers(val *[]*string) {
 	if err := j.validateSetMembersParameters(val); err != nil {
 		panic(err)
 	}
@@ -535,7 +534,7 @@ func (j *jsiiProxy_GkeHubScopeIamBinding)SetMembers(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GkeHubScopeIamBinding)SetProject(val *string) {
+func (j *jsiiProxy_GkeHubScopeIamBinding) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -546,7 +545,7 @@ func (j *jsiiProxy_GkeHubScopeIamBinding)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GkeHubScopeIamBinding)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GkeHubScopeIamBinding) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -554,7 +553,7 @@ func (j *jsiiProxy_GkeHubScopeIamBinding)SetProvider(val cdktf.TerraformProvider
 	)
 }
 
-func (j *jsiiProxy_GkeHubScopeIamBinding)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GkeHubScopeIamBinding) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -565,7 +564,7 @@ func (j *jsiiProxy_GkeHubScopeIamBinding)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GkeHubScopeIamBinding)SetRole(val *string) {
+func (j *jsiiProxy_GkeHubScopeIamBinding) SetRole(val *string) {
 	if err := j.validateSetRoleParameters(val); err != nil {
 		panic(err)
 	}
@@ -576,7 +575,7 @@ func (j *jsiiProxy_GkeHubScopeIamBinding)SetRole(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GkeHubScopeIamBinding)SetScopeId(val *string) {
+func (j *jsiiProxy_GkeHubScopeIamBinding) SetScopeId(val *string) {
 	if err := j.validateSetScopeIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -599,7 +598,7 @@ func GkeHubScopeIamBinding_GenerateConfigForImport(scope constructs.Construct, i
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.gkeHubScopeIamBinding.GkeHubScopeIamBinding",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -623,7 +622,7 @@ func GkeHubScopeIamBinding_GenerateConfigForImport(scope constructs.Construct, i
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GkeHubScopeIamBinding_IsConstruct(x interface{}) *bool {
+func GkeHubScopeIamBinding_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGkeHubScopeIamBinding_IsConstructParameters(x); err != nil {
@@ -634,7 +633,7 @@ func GkeHubScopeIamBinding_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.gkeHubScopeIamBinding.GkeHubScopeIamBinding",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -642,7 +641,7 @@ func GkeHubScopeIamBinding_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GkeHubScopeIamBinding_IsTerraformElement(x interface{}) *bool {
+func GkeHubScopeIamBinding_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGkeHubScopeIamBinding_IsTerraformElementParameters(x); err != nil {
@@ -653,7 +652,7 @@ func GkeHubScopeIamBinding_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.gkeHubScopeIamBinding.GkeHubScopeIamBinding",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -661,7 +660,7 @@ func GkeHubScopeIamBinding_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GkeHubScopeIamBinding_IsTerraformResource(x interface{}) *bool {
+func GkeHubScopeIamBinding_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGkeHubScopeIamBinding_IsTerraformResourceParameters(x); err != nil {
@@ -672,7 +671,7 @@ func GkeHubScopeIamBinding_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.gkeHubScopeIamBinding.GkeHubScopeIamBinding",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -697,31 +696,31 @@ func (g *jsiiProxy_GkeHubScopeIamBinding) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GkeHubScopeIamBinding) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GkeHubScopeIamBinding) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GkeHubScopeIamBinding) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GkeHubScopeIamBinding) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -737,7 +736,7 @@ func (g *jsiiProxy_GkeHubScopeIamBinding) GetBooleanAttribute(terraformAttribute
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -753,7 +752,7 @@ func (g *jsiiProxy_GkeHubScopeIamBinding) GetBooleanMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -769,7 +768,7 @@ func (g *jsiiProxy_GkeHubScopeIamBinding) GetListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -785,7 +784,7 @@ func (g *jsiiProxy_GkeHubScopeIamBinding) GetNumberAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -801,7 +800,7 @@ func (g *jsiiProxy_GkeHubScopeIamBinding) GetNumberListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -817,7 +816,7 @@ func (g *jsiiProxy_GkeHubScopeIamBinding) GetNumberMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -833,7 +832,7 @@ func (g *jsiiProxy_GkeHubScopeIamBinding) GetStringAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -849,15 +848,15 @@ func (g *jsiiProxy_GkeHubScopeIamBinding) GetStringMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GkeHubScopeIamBinding) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GkeHubScopeIamBinding) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -876,7 +875,7 @@ func (g *jsiiProxy_GkeHubScopeIamBinding) ImportFrom(id *string, provider cdktf.
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -889,7 +888,7 @@ func (g *jsiiProxy_GkeHubScopeIamBinding) InterpolationForAttribute(terraformAtt
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -903,18 +902,18 @@ func (g *jsiiProxy_GkeHubScopeIamBinding) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GkeHubScopeIamBinding) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GkeHubScopeIamBinding) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -925,7 +924,7 @@ func (g *jsiiProxy_GkeHubScopeIamBinding) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -936,7 +935,7 @@ func (g *jsiiProxy_GkeHubScopeIamBinding) OverrideLogicalId(newLogicalId *string
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -947,7 +946,7 @@ func (g *jsiiProxy_GkeHubScopeIamBinding) PutCondition(value *GkeHubScopeIamBind
 	_jsii_.InvokeVoid(
 		g,
 		"putCondition",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -983,8 +982,8 @@ func (g *jsiiProxy_GkeHubScopeIamBinding) ResetProject() {
 	)
 }
 
-func (g *jsiiProxy_GkeHubScopeIamBinding) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GkeHubScopeIamBinding) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -996,8 +995,8 @@ func (g *jsiiProxy_GkeHubScopeIamBinding) SynthesizeAttributes() *map[string]int
 	return returns
 }
 
-func (g *jsiiProxy_GkeHubScopeIamBinding) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GkeHubScopeIamBinding) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1009,8 +1008,8 @@ func (g *jsiiProxy_GkeHubScopeIamBinding) SynthesizeHclAttributes() *map[string]
 	return returns
 }
 
-func (g *jsiiProxy_GkeHubScopeIamBinding) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GkeHubScopeIamBinding) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1022,8 +1021,8 @@ func (g *jsiiProxy_GkeHubScopeIamBinding) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GkeHubScopeIamBinding) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GkeHubScopeIamBinding) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1048,8 +1047,8 @@ func (g *jsiiProxy_GkeHubScopeIamBinding) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GkeHubScopeIamBinding) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GkeHubScopeIamBinding) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1060,4 +1059,3 @@ func (g *jsiiProxy_GkeHubScopeIamBinding) ToTerraform() interface{} {
 
 	return returns
 }
-

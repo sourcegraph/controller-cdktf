@@ -120,7 +120,7 @@ func (d *jsiiProxy_DataplexAssetDiscoverySpecOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_DataplexAssetDiscoverySpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataplexAssetDiscoverySpecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -185,7 +185,7 @@ func (j *jsiiProxy_DataplexAssetDiscoverySpecOutputReference) validateSetComplex
 	return nil
 }
 
-func (j *jsiiProxy_DataplexAssetDiscoverySpecOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_DataplexAssetDiscoverySpecOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -264,4 +264,3 @@ func validateNewDataplexAssetDiscoverySpecOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

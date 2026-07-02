@@ -109,7 +109,7 @@ func (c *jsiiProxy_ComputeSecurityPolicyRuleMatchExprOptionsOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_ComputeSecurityPolicyRuleMatchExprOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeSecurityPolicyRuleMatchExprOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewComputeSecurityPolicyRuleMatchExprOptionsOutputReferenceParamete
 
 	return nil
 }
-

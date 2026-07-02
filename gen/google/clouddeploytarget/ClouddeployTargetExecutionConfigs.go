@@ -1,6 +1,5 @@
 package clouddeploytarget
 
-
 type ClouddeployTargetExecutionConfigs struct {
 	// Required. Usages when this configuration should be applied.
 	//
@@ -33,7 +32,7 @@ type ClouddeployTargetExecutionConfigs struct {
 	// Optional. If true, additional logging will be enabled when running builds in this execution environment.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_target#verbose ClouddeployTarget#verbose}
-	Verbose interface{} `field:"optional" json:"verbose" yaml:"verbose"`
+	Verbose any `field:"optional" json:"verbose" yaml:"verbose"`
 	// Optional.
 	//
 	// The resource name of the `WorkerPool`, with the format `projects/{project}/locations/{location}/workerPools/{worker_pool}`. If this optional field is unspecified, the default Cloud Build pool will be used.
@@ -41,4 +40,3 @@ type ClouddeployTargetExecutionConfigs struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_target#worker_pool ClouddeployTarget#worker_pool}
 	WorkerPool *string `field:"optional" json:"workerPool" yaml:"workerPool"`
 }
-

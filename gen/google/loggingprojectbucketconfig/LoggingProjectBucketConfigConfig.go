@@ -6,9 +6,9 @@ import (
 
 type LoggingProjectBucketConfigConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type LoggingProjectBucketConfigConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name of the logging bucket. Logging automatically creates two log buckets: _Required and _Default.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_project_bucket_config#bucket_id LoggingProjectBucketConfig#bucket_id}
@@ -42,7 +42,7 @@ type LoggingProjectBucketConfigConfig struct {
 	// Enable log analytics for the bucket. Cannot be disabled once enabled.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_project_bucket_config#enable_analytics LoggingProjectBucketConfig#enable_analytics}
-	EnableAnalytics interface{} `field:"optional" json:"enableAnalytics" yaml:"enableAnalytics"`
+	EnableAnalytics any `field:"optional" json:"enableAnalytics" yaml:"enableAnalytics"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_project_bucket_config#id LoggingProjectBucketConfig#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -51,13 +51,13 @@ type LoggingProjectBucketConfigConfig struct {
 	// index_configs block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_project_bucket_config#index_configs LoggingProjectBucketConfig#index_configs}
-	IndexConfigs interface{} `field:"optional" json:"indexConfigs" yaml:"indexConfigs"`
+	IndexConfigs any `field:"optional" json:"indexConfigs" yaml:"indexConfigs"`
 	// Whether the bucket is locked.
 	//
 	// The retention period on a locked bucket cannot be changed. Locked buckets may only be deleted if they are empty.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_project_bucket_config#locked LoggingProjectBucketConfig#locked}
-	Locked interface{} `field:"optional" json:"locked" yaml:"locked"`
+	Locked any `field:"optional" json:"locked" yaml:"locked"`
 	// Logs will be retained by default for this amount of time, after which they will automatically be deleted.
 	//
 	// The minimum retention period is 1 day. If this value is set to zero at bucket creation time, the default time of 30 days will be used.
@@ -65,4 +65,3 @@ type LoggingProjectBucketConfigConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_project_bucket_config#retention_days LoggingProjectBucketConfig#retention_days}
 	RetentionDays *float64 `field:"optional" json:"retentionDays" yaml:"retentionDays"`
 }
-

@@ -15,14 +15,14 @@ type DataGoogleEndpointsServiceConsumersIamPolicy interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	ConsumerProject() *string
 	SetConsumerProject(val *string)
 	ConsumerProjectInput() *string
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -51,20 +51,20 @@ type DataGoogleEndpointsServiceConsumersIamPolicy interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ServiceName() *string
 	SetServiceName(val *string)
 	ServiceNameInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -90,18 +90,18 @@ type DataGoogleEndpointsServiceConsumersIamPolicy interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataGoogleEndpointsServiceConsumersIamPolicy
@@ -119,8 +119,8 @@ func (j *jsiiProxy_DataGoogleEndpointsServiceConsumersIamPolicy) CdktfStack() cd
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleEndpointsServiceConsumersIamPolicy) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleEndpointsServiceConsumersIamPolicy) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -149,8 +149,8 @@ func (j *jsiiProxy_DataGoogleEndpointsServiceConsumersIamPolicy) ConsumerProject
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleEndpointsServiceConsumersIamPolicy) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleEndpointsServiceConsumersIamPolicy) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -269,8 +269,8 @@ func (j *jsiiProxy_DataGoogleEndpointsServiceConsumersIamPolicy) Provider() cdkt
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleEndpointsServiceConsumersIamPolicy) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleEndpointsServiceConsumersIamPolicy) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -309,8 +309,8 @@ func (j *jsiiProxy_DataGoogleEndpointsServiceConsumersIamPolicy) TerraformGenera
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleEndpointsServiceConsumersIamPolicy) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleEndpointsServiceConsumersIamPolicy) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -329,7 +329,6 @@ func (j *jsiiProxy_DataGoogleEndpointsServiceConsumersIamPolicy) TerraformResour
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/endpoints_service_consumers_iam_policy google_endpoints_service_consumers_iam_policy} Data Source.
 func NewDataGoogleEndpointsServiceConsumersIamPolicy(scope constructs.Construct, id *string, config *DataGoogleEndpointsServiceConsumersIamPolicyConfig) DataGoogleEndpointsServiceConsumersIamPolicy {
 	_init_.Initialize()
@@ -341,7 +340,7 @@ func NewDataGoogleEndpointsServiceConsumersIamPolicy(scope constructs.Construct,
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleEndpointsServiceConsumersIamPolicy.DataGoogleEndpointsServiceConsumersIamPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -354,12 +353,12 @@ func NewDataGoogleEndpointsServiceConsumersIamPolicy_Override(d DataGoogleEndpoi
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleEndpointsServiceConsumersIamPolicy.DataGoogleEndpointsServiceConsumersIamPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataGoogleEndpointsServiceConsumersIamPolicy)SetConsumerProject(val *string) {
+func (j *jsiiProxy_DataGoogleEndpointsServiceConsumersIamPolicy) SetConsumerProject(val *string) {
 	if err := j.validateSetConsumerProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -370,7 +369,7 @@ func (j *jsiiProxy_DataGoogleEndpointsServiceConsumersIamPolicy)SetConsumerProje
 	)
 }
 
-func (j *jsiiProxy_DataGoogleEndpointsServiceConsumersIamPolicy)SetCount(val interface{}) {
+func (j *jsiiProxy_DataGoogleEndpointsServiceConsumersIamPolicy) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -381,7 +380,7 @@ func (j *jsiiProxy_DataGoogleEndpointsServiceConsumersIamPolicy)SetCount(val int
 	)
 }
 
-func (j *jsiiProxy_DataGoogleEndpointsServiceConsumersIamPolicy)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataGoogleEndpointsServiceConsumersIamPolicy) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -389,7 +388,7 @@ func (j *jsiiProxy_DataGoogleEndpointsServiceConsumersIamPolicy)SetDependsOn(val
 	)
 }
 
-func (j *jsiiProxy_DataGoogleEndpointsServiceConsumersIamPolicy)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGoogleEndpointsServiceConsumersIamPolicy) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -397,7 +396,7 @@ func (j *jsiiProxy_DataGoogleEndpointsServiceConsumersIamPolicy)SetForEach(val c
 	)
 }
 
-func (j *jsiiProxy_DataGoogleEndpointsServiceConsumersIamPolicy)SetId(val *string) {
+func (j *jsiiProxy_DataGoogleEndpointsServiceConsumersIamPolicy) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -408,7 +407,7 @@ func (j *jsiiProxy_DataGoogleEndpointsServiceConsumersIamPolicy)SetId(val *strin
 	)
 }
 
-func (j *jsiiProxy_DataGoogleEndpointsServiceConsumersIamPolicy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGoogleEndpointsServiceConsumersIamPolicy) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -419,7 +418,7 @@ func (j *jsiiProxy_DataGoogleEndpointsServiceConsumersIamPolicy)SetLifecycle(val
 	)
 }
 
-func (j *jsiiProxy_DataGoogleEndpointsServiceConsumersIamPolicy)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGoogleEndpointsServiceConsumersIamPolicy) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -427,7 +426,7 @@ func (j *jsiiProxy_DataGoogleEndpointsServiceConsumersIamPolicy)SetProvider(val 
 	)
 }
 
-func (j *jsiiProxy_DataGoogleEndpointsServiceConsumersIamPolicy)SetServiceName(val *string) {
+func (j *jsiiProxy_DataGoogleEndpointsServiceConsumersIamPolicy) SetServiceName(val *string) {
 	if err := j.validateSetServiceNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -450,7 +449,7 @@ func DataGoogleEndpointsServiceConsumersIamPolicy_GenerateConfigForImport(scope 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleEndpointsServiceConsumersIamPolicy.DataGoogleEndpointsServiceConsumersIamPolicy",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -474,7 +473,7 @@ func DataGoogleEndpointsServiceConsumersIamPolicy_GenerateConfigForImport(scope 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataGoogleEndpointsServiceConsumersIamPolicy_IsConstruct(x interface{}) *bool {
+func DataGoogleEndpointsServiceConsumersIamPolicy_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleEndpointsServiceConsumersIamPolicy_IsConstructParameters(x); err != nil {
@@ -485,7 +484,7 @@ func DataGoogleEndpointsServiceConsumersIamPolicy_IsConstruct(x interface{}) *bo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleEndpointsServiceConsumersIamPolicy.DataGoogleEndpointsServiceConsumersIamPolicy",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -493,7 +492,7 @@ func DataGoogleEndpointsServiceConsumersIamPolicy_IsConstruct(x interface{}) *bo
 }
 
 // Experimental.
-func DataGoogleEndpointsServiceConsumersIamPolicy_IsTerraformDataSource(x interface{}) *bool {
+func DataGoogleEndpointsServiceConsumersIamPolicy_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleEndpointsServiceConsumersIamPolicy_IsTerraformDataSourceParameters(x); err != nil {
@@ -504,7 +503,7 @@ func DataGoogleEndpointsServiceConsumersIamPolicy_IsTerraformDataSource(x interf
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleEndpointsServiceConsumersIamPolicy.DataGoogleEndpointsServiceConsumersIamPolicy",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -512,7 +511,7 @@ func DataGoogleEndpointsServiceConsumersIamPolicy_IsTerraformDataSource(x interf
 }
 
 // Experimental.
-func DataGoogleEndpointsServiceConsumersIamPolicy_IsTerraformElement(x interface{}) *bool {
+func DataGoogleEndpointsServiceConsumersIamPolicy_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleEndpointsServiceConsumersIamPolicy_IsTerraformElementParameters(x); err != nil {
@@ -523,7 +522,7 @@ func DataGoogleEndpointsServiceConsumersIamPolicy_IsTerraformElement(x interface
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleEndpointsServiceConsumersIamPolicy.DataGoogleEndpointsServiceConsumersIamPolicy",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -541,27 +540,27 @@ func DataGoogleEndpointsServiceConsumersIamPolicy_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleEndpointsServiceConsumersIamPolicy) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataGoogleEndpointsServiceConsumersIamPolicy) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataGoogleEndpointsServiceConsumersIamPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataGoogleEndpointsServiceConsumersIamPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -577,7 +576,7 @@ func (d *jsiiProxy_DataGoogleEndpointsServiceConsumersIamPolicy) GetBooleanAttri
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -593,7 +592,7 @@ func (d *jsiiProxy_DataGoogleEndpointsServiceConsumersIamPolicy) GetBooleanMapAt
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -609,7 +608,7 @@ func (d *jsiiProxy_DataGoogleEndpointsServiceConsumersIamPolicy) GetListAttribut
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -625,7 +624,7 @@ func (d *jsiiProxy_DataGoogleEndpointsServiceConsumersIamPolicy) GetNumberAttrib
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -641,7 +640,7 @@ func (d *jsiiProxy_DataGoogleEndpointsServiceConsumersIamPolicy) GetNumberListAt
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -657,7 +656,7 @@ func (d *jsiiProxy_DataGoogleEndpointsServiceConsumersIamPolicy) GetNumberMapAtt
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -673,7 +672,7 @@ func (d *jsiiProxy_DataGoogleEndpointsServiceConsumersIamPolicy) GetStringAttrib
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -689,7 +688,7 @@ func (d *jsiiProxy_DataGoogleEndpointsServiceConsumersIamPolicy) GetStringMapAtt
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -705,7 +704,7 @@ func (d *jsiiProxy_DataGoogleEndpointsServiceConsumersIamPolicy) InterpolationFo
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -719,7 +718,7 @@ func (d *jsiiProxy_DataGoogleEndpointsServiceConsumersIamPolicy) OverrideLogical
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -739,8 +738,8 @@ func (d *jsiiProxy_DataGoogleEndpointsServiceConsumersIamPolicy) ResetOverrideLo
 	)
 }
 
-func (d *jsiiProxy_DataGoogleEndpointsServiceConsumersIamPolicy) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleEndpointsServiceConsumersIamPolicy) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -752,8 +751,8 @@ func (d *jsiiProxy_DataGoogleEndpointsServiceConsumersIamPolicy) SynthesizeAttri
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleEndpointsServiceConsumersIamPolicy) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleEndpointsServiceConsumersIamPolicy) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -765,8 +764,8 @@ func (d *jsiiProxy_DataGoogleEndpointsServiceConsumersIamPolicy) SynthesizeHclAt
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleEndpointsServiceConsumersIamPolicy) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleEndpointsServiceConsumersIamPolicy) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -778,8 +777,8 @@ func (d *jsiiProxy_DataGoogleEndpointsServiceConsumersIamPolicy) ToHclTerraform(
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleEndpointsServiceConsumersIamPolicy) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleEndpointsServiceConsumersIamPolicy) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -804,8 +803,8 @@ func (d *jsiiProxy_DataGoogleEndpointsServiceConsumersIamPolicy) ToString() *str
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleEndpointsServiceConsumersIamPolicy) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleEndpointsServiceConsumersIamPolicy) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -816,4 +815,3 @@ func (d *jsiiProxy_DataGoogleEndpointsServiceConsumersIamPolicy) ToTerraform() i
 
 	return returns
 }
-

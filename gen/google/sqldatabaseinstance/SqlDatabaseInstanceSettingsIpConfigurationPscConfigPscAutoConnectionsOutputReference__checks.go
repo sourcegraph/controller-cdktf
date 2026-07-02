@@ -98,7 +98,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoCon
 	return nil
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoCon
 	return nil
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewSqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnec
 
 	return nil
 }
-

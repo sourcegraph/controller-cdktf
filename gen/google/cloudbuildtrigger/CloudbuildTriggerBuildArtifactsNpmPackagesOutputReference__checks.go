@@ -98,7 +98,7 @@ func (c *jsiiProxy_CloudbuildTriggerBuildArtifactsNpmPackagesOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_CloudbuildTriggerBuildArtifactsNpmPackagesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudbuildTriggerBuildArtifactsNpmPackagesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_CloudbuildTriggerBuildArtifactsNpmPackagesOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_CloudbuildTriggerBuildArtifactsNpmPackagesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CloudbuildTriggerBuildArtifactsNpmPackagesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewCloudbuildTriggerBuildArtifactsNpmPackagesOutputReferenceParamet
 
 	return nil
 }
-

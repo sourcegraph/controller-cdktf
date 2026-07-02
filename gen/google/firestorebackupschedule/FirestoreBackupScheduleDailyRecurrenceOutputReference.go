@@ -12,9 +12,9 @@ type FirestoreBackupScheduleDailyRecurrenceOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -40,7 +40,7 @@ type FirestoreBackupScheduleDailyRecurrenceOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -63,7 +63,7 @@ type FirestoreBackupScheduleDailyRecurrenceOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -76,8 +76,8 @@ type jsiiProxy_FirestoreBackupScheduleDailyRecurrenceOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_FirestoreBackupScheduleDailyRecurrenceOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FirestoreBackupScheduleDailyRecurrenceOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -146,7 +146,6 @@ func (j *jsiiProxy_FirestoreBackupScheduleDailyRecurrenceOutputReference) Terraf
 	return returns
 }
 
-
 func NewFirestoreBackupScheduleDailyRecurrenceOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) FirestoreBackupScheduleDailyRecurrenceOutputReference {
 	_init_.Initialize()
 
@@ -157,7 +156,7 @@ func NewFirestoreBackupScheduleDailyRecurrenceOutputReference(terraformResource 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.firestoreBackupSchedule.FirestoreBackupScheduleDailyRecurrenceOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -169,12 +168,12 @@ func NewFirestoreBackupScheduleDailyRecurrenceOutputReference_Override(f Firesto
 
 	_jsii_.Create(
 		"@cdktf/provider-google.firestoreBackupSchedule.FirestoreBackupScheduleDailyRecurrenceOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		f,
 	)
 }
 
-func (j *jsiiProxy_FirestoreBackupScheduleDailyRecurrenceOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_FirestoreBackupScheduleDailyRecurrenceOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -185,7 +184,7 @@ func (j *jsiiProxy_FirestoreBackupScheduleDailyRecurrenceOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_FirestoreBackupScheduleDailyRecurrenceOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_FirestoreBackupScheduleDailyRecurrenceOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -196,7 +195,7 @@ func (j *jsiiProxy_FirestoreBackupScheduleDailyRecurrenceOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_FirestoreBackupScheduleDailyRecurrenceOutputReference)SetInternalValue(val *FirestoreBackupScheduleDailyRecurrence) {
+func (j *jsiiProxy_FirestoreBackupScheduleDailyRecurrenceOutputReference) SetInternalValue(val *FirestoreBackupScheduleDailyRecurrence) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -207,7 +206,7 @@ func (j *jsiiProxy_FirestoreBackupScheduleDailyRecurrenceOutputReference)SetInte
 	)
 }
 
-func (j *jsiiProxy_FirestoreBackupScheduleDailyRecurrenceOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_FirestoreBackupScheduleDailyRecurrenceOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -218,7 +217,7 @@ func (j *jsiiProxy_FirestoreBackupScheduleDailyRecurrenceOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_FirestoreBackupScheduleDailyRecurrenceOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_FirestoreBackupScheduleDailyRecurrenceOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,16 +241,16 @@ func (f *jsiiProxy_FirestoreBackupScheduleDailyRecurrenceOutputReference) Comput
 	return returns
 }
 
-func (f *jsiiProxy_FirestoreBackupScheduleDailyRecurrenceOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (f *jsiiProxy_FirestoreBackupScheduleDailyRecurrenceOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := f.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -267,7 +266,7 @@ func (f *jsiiProxy_FirestoreBackupScheduleDailyRecurrenceOutputReference) GetBoo
 	_jsii_.Invoke(
 		f,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -283,7 +282,7 @@ func (f *jsiiProxy_FirestoreBackupScheduleDailyRecurrenceOutputReference) GetBoo
 	_jsii_.Invoke(
 		f,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -299,7 +298,7 @@ func (f *jsiiProxy_FirestoreBackupScheduleDailyRecurrenceOutputReference) GetLis
 	_jsii_.Invoke(
 		f,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -315,7 +314,7 @@ func (f *jsiiProxy_FirestoreBackupScheduleDailyRecurrenceOutputReference) GetNum
 	_jsii_.Invoke(
 		f,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -331,7 +330,7 @@ func (f *jsiiProxy_FirestoreBackupScheduleDailyRecurrenceOutputReference) GetNum
 	_jsii_.Invoke(
 		f,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -347,7 +346,7 @@ func (f *jsiiProxy_FirestoreBackupScheduleDailyRecurrenceOutputReference) GetNum
 	_jsii_.Invoke(
 		f,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -363,7 +362,7 @@ func (f *jsiiProxy_FirestoreBackupScheduleDailyRecurrenceOutputReference) GetStr
 	_jsii_.Invoke(
 		f,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -379,7 +378,7 @@ func (f *jsiiProxy_FirestoreBackupScheduleDailyRecurrenceOutputReference) GetStr
 	_jsii_.Invoke(
 		f,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -408,23 +407,23 @@ func (f *jsiiProxy_FirestoreBackupScheduleDailyRecurrenceOutputReference) Interp
 	_jsii_.Invoke(
 		f,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (f *jsiiProxy_FirestoreBackupScheduleDailyRecurrenceOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (f *jsiiProxy_FirestoreBackupScheduleDailyRecurrenceOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := f.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		f,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -443,4 +442,3 @@ func (f *jsiiProxy_FirestoreBackupScheduleDailyRecurrenceOutputReference) ToStri
 
 	return returns
 }
-

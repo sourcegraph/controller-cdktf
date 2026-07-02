@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleComputeInstanceParamsOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeInstanceParamsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleComputeInstanceParamsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleComputeInstanceParamsOutputReferenceParameters(terrafo
 
 	return nil
 }
-

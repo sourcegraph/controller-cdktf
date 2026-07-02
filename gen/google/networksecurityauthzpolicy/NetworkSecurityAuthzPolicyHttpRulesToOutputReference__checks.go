@@ -90,7 +90,7 @@ func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToOutputReference) validat
 	return nil
 }
 
-func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToOutputReference) validatePutNotOperationsParameters(value interface{}) error {
+func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToOutputReference) validatePutNotOperationsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToOutputReference) validat
 	return nil
 }
 
-func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToOutputReference) validatePutOperationsParameters(value interface{}) error {
+func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToOutputReference) validatePutOperationsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -160,7 +160,7 @@ func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -260,4 +260,3 @@ func validateNewNetworkSecurityAuthzPolicyHttpRulesToOutputReferenceParameters(t
 
 	return nil
 }
-

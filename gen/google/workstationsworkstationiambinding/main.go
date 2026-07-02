@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.workstationsWorkstationIamBinding.WorkstationsWorkstationIamBinding",
-		reflect.TypeOf((*WorkstationsWorkstationIamBinding)(nil)).Elem(),
+		reflect.TypeFor[WorkstationsWorkstationIamBinding](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,7 +77,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workstationId", GoGetter: "WorkstationId"},
 			_jsii_.MemberProperty{JsiiProperty: "workstationIdInput", GoGetter: "WorkstationIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkstationsWorkstationIamBinding{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -85,11 +85,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.workstationsWorkstationIamBinding.WorkstationsWorkstationIamBindingCondition",
-		reflect.TypeOf((*WorkstationsWorkstationIamBindingCondition)(nil)).Elem(),
+		reflect.TypeFor[WorkstationsWorkstationIamBindingCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.workstationsWorkstationIamBinding.WorkstationsWorkstationIamBindingConditionOutputReference",
-		reflect.TypeOf((*WorkstationsWorkstationIamBindingConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[WorkstationsWorkstationIamBindingConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -120,7 +120,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkstationsWorkstationIamBindingConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -128,6 +128,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.workstationsWorkstationIamBinding.WorkstationsWorkstationIamBindingConfig",
-		reflect.TypeOf((*WorkstationsWorkstationIamBindingConfig)(nil)).Elem(),
+		reflect.TypeFor[WorkstationsWorkstationIamBindingConfig](),
 	)
 }

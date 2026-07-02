@@ -34,7 +34,7 @@ func (f *jsiiProxy_FirebaseRemoteConfigRemoteConfigConditionsList) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfigConditionsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfigConditionsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewFirebaseRemoteConfigRemoteConfigConditionsListParameters(terrafo
 
 	return nil
 }
-

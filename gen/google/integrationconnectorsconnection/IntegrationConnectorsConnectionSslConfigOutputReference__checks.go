@@ -90,7 +90,7 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionSslConfigOutputReference) vali
 	return nil
 }
 
-func (i *jsiiProxy_IntegrationConnectorsConnectionSslConfigOutputReference) validatePutAdditionalVariableParameters(value interface{}) error {
+func (i *jsiiProxy_IntegrationConnectorsConnectionSslConfigOutputReference) validatePutAdditionalVariableParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -181,7 +181,7 @@ func (j *jsiiProxy_IntegrationConnectorsConnectionSslConfigOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_IntegrationConnectorsConnectionSslConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IntegrationConnectorsConnectionSslConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -294,7 +294,7 @@ func (j *jsiiProxy_IntegrationConnectorsConnectionSslConfigOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_IntegrationConnectorsConnectionSslConfigOutputReference) validateSetUseSslParameters(val interface{}) error {
+func (j *jsiiProxy_IntegrationConnectorsConnectionSslConfigOutputReference) validateSetUseSslParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -325,4 +325,3 @@ func validateNewIntegrationConnectorsConnectionSslConfigOutputReferenceParameter
 
 	return nil
 }
-

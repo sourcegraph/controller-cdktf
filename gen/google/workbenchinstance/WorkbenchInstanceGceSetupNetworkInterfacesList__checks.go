@@ -34,7 +34,7 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupNetworkInterfacesList) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_WorkbenchInstanceGceSetupNetworkInterfacesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_WorkbenchInstanceGceSetupNetworkInterfacesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewWorkbenchInstanceGceSetupNetworkInterfacesListParameters(terrafo
 
 	return nil
 }
-

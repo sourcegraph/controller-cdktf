@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmCluster",
-		reflect.TypeOf((*OracleDatabaseExadbVmCluster)(nil)).Elem(),
+		reflect.TypeFor[OracleDatabaseExadbVmCluster](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -91,7 +91,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_OracleDatabaseExadbVmCluster{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -99,19 +99,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmClusterConfig",
-		reflect.TypeOf((*OracleDatabaseExadbVmClusterConfig)(nil)).Elem(),
+		reflect.TypeFor[OracleDatabaseExadbVmClusterConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmClusterProperties",
-		reflect.TypeOf((*OracleDatabaseExadbVmClusterProperties)(nil)).Elem(),
+		reflect.TypeFor[OracleDatabaseExadbVmClusterProperties](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmClusterPropertiesDataCollectionOptions",
-		reflect.TypeOf((*OracleDatabaseExadbVmClusterPropertiesDataCollectionOptions)(nil)).Elem(),
+		reflect.TypeFor[OracleDatabaseExadbVmClusterPropertiesDataCollectionOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmClusterPropertiesDataCollectionOptionsOutputReference",
-		reflect.TypeOf((*OracleDatabaseExadbVmClusterPropertiesDataCollectionOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[OracleDatabaseExadbVmClusterPropertiesDataCollectionOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -144,7 +144,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_OracleDatabaseExadbVmClusterPropertiesDataCollectionOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -152,7 +152,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmClusterPropertiesOutputReference",
-		reflect.TypeOf((*OracleDatabaseExadbVmClusterPropertiesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[OracleDatabaseExadbVmClusterPropertiesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "additionalEcpuCountPerNode", GoGetter: "AdditionalEcpuCountPerNode"},
 			_jsii_.MemberProperty{JsiiProperty: "additionalEcpuCountPerNodeInput", GoGetter: "AdditionalEcpuCountPerNodeInput"},
@@ -218,7 +218,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vmFileSystemStorage", GoGetter: "VmFileSystemStorage"},
 			_jsii_.MemberProperty{JsiiProperty: "vmFileSystemStorageInput", GoGetter: "VmFileSystemStorageInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_OracleDatabaseExadbVmClusterPropertiesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -226,11 +226,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmClusterPropertiesTimeZone",
-		reflect.TypeOf((*OracleDatabaseExadbVmClusterPropertiesTimeZone)(nil)).Elem(),
+		reflect.TypeFor[OracleDatabaseExadbVmClusterPropertiesTimeZone](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmClusterPropertiesTimeZoneOutputReference",
-		reflect.TypeOf((*OracleDatabaseExadbVmClusterPropertiesTimeZoneOutputReference)(nil)).Elem(),
+		reflect.TypeFor[OracleDatabaseExadbVmClusterPropertiesTimeZoneOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -260,7 +260,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 			_jsii_.MemberProperty{JsiiProperty: "versionInput", GoGetter: "VersionInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_OracleDatabaseExadbVmClusterPropertiesTimeZoneOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -268,11 +268,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmClusterPropertiesVmFileSystemStorage",
-		reflect.TypeOf((*OracleDatabaseExadbVmClusterPropertiesVmFileSystemStorage)(nil)).Elem(),
+		reflect.TypeFor[OracleDatabaseExadbVmClusterPropertiesVmFileSystemStorage](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmClusterPropertiesVmFileSystemStorageOutputReference",
-		reflect.TypeOf((*OracleDatabaseExadbVmClusterPropertiesVmFileSystemStorageOutputReference)(nil)).Elem(),
+		reflect.TypeFor[OracleDatabaseExadbVmClusterPropertiesVmFileSystemStorageOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -298,7 +298,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_OracleDatabaseExadbVmClusterPropertiesVmFileSystemStorageOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -306,11 +306,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmClusterTimeouts",
-		reflect.TypeOf((*OracleDatabaseExadbVmClusterTimeouts)(nil)).Elem(),
+		reflect.TypeFor[OracleDatabaseExadbVmClusterTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmClusterTimeoutsOutputReference",
-		reflect.TypeOf((*OracleDatabaseExadbVmClusterTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[OracleDatabaseExadbVmClusterTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -343,7 +343,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_OracleDatabaseExadbVmClusterTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

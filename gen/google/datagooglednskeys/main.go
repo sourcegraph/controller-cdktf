@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleDnsKeys.DataGoogleDnsKeys",
-		reflect.TypeOf((*DataGoogleDnsKeys)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleDnsKeys](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -55,7 +55,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneSigningKeys", GoGetter: "ZoneSigningKeys"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleDnsKeys{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -63,19 +63,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleDnsKeys.DataGoogleDnsKeysConfig",
-		reflect.TypeOf((*DataGoogleDnsKeysConfig)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleDnsKeysConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleDnsKeys.DataGoogleDnsKeysKeySigningKeys",
-		reflect.TypeOf((*DataGoogleDnsKeysKeySigningKeys)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleDnsKeysKeySigningKeys](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleDnsKeys.DataGoogleDnsKeysKeySigningKeysDigests",
-		reflect.TypeOf((*DataGoogleDnsKeysKeySigningKeysDigests)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleDnsKeysKeySigningKeysDigests](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleDnsKeys.DataGoogleDnsKeysKeySigningKeysDigestsList",
-		reflect.TypeOf((*DataGoogleDnsKeysKeySigningKeysDigestsList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleDnsKeysKeySigningKeysDigestsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -88,7 +88,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleDnsKeysKeySigningKeysDigestsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -96,7 +96,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleDnsKeys.DataGoogleDnsKeysKeySigningKeysDigestsOutputReference",
-		reflect.TypeOf((*DataGoogleDnsKeysKeySigningKeysDigestsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleDnsKeysKeySigningKeysDigestsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -122,7 +122,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleDnsKeysKeySigningKeysDigestsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -130,7 +130,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleDnsKeys.DataGoogleDnsKeysKeySigningKeysList",
-		reflect.TypeOf((*DataGoogleDnsKeysKeySigningKeysList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleDnsKeysKeySigningKeysList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -143,7 +143,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleDnsKeysKeySigningKeysList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -151,7 +151,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleDnsKeys.DataGoogleDnsKeysKeySigningKeysOutputReference",
-		reflect.TypeOf((*DataGoogleDnsKeysKeySigningKeysOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleDnsKeysKeySigningKeysOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "algorithm", GoGetter: "Algorithm"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -185,7 +185,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleDnsKeysKeySigningKeysOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -193,15 +193,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleDnsKeys.DataGoogleDnsKeysZoneSigningKeys",
-		reflect.TypeOf((*DataGoogleDnsKeysZoneSigningKeys)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleDnsKeysZoneSigningKeys](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleDnsKeys.DataGoogleDnsKeysZoneSigningKeysDigests",
-		reflect.TypeOf((*DataGoogleDnsKeysZoneSigningKeysDigests)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleDnsKeysZoneSigningKeysDigests](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleDnsKeys.DataGoogleDnsKeysZoneSigningKeysDigestsList",
-		reflect.TypeOf((*DataGoogleDnsKeysZoneSigningKeysDigestsList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleDnsKeysZoneSigningKeysDigestsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -214,7 +214,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleDnsKeysZoneSigningKeysDigestsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -222,7 +222,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleDnsKeys.DataGoogleDnsKeysZoneSigningKeysDigestsOutputReference",
-		reflect.TypeOf((*DataGoogleDnsKeysZoneSigningKeysDigestsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleDnsKeysZoneSigningKeysDigestsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -248,7 +248,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleDnsKeysZoneSigningKeysDigestsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -256,7 +256,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleDnsKeys.DataGoogleDnsKeysZoneSigningKeysList",
-		reflect.TypeOf((*DataGoogleDnsKeysZoneSigningKeysList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleDnsKeysZoneSigningKeysList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -269,7 +269,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleDnsKeysZoneSigningKeysList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -277,7 +277,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleDnsKeys.DataGoogleDnsKeysZoneSigningKeysOutputReference",
-		reflect.TypeOf((*DataGoogleDnsKeysZoneSigningKeysOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleDnsKeysZoneSigningKeysOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "algorithm", GoGetter: "Algorithm"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -310,7 +310,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleDnsKeysZoneSigningKeysOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

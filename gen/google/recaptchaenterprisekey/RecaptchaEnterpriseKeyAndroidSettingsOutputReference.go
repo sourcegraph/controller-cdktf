@@ -10,17 +10,17 @@ import (
 
 type RecaptchaEnterpriseKeyAndroidSettingsOutputReference interface {
 	cdktf.ComplexObject
-	AllowAllPackageNames() interface{}
-	SetAllowAllPackageNames(val interface{})
-	AllowAllPackageNamesInput() interface{}
+	AllowAllPackageNames() any
+	SetAllowAllPackageNames(val any)
+	AllowAllPackageNamesInput() any
 	AllowedPackageNames() *[]*string
 	SetAllowedPackageNames(val *[]*string)
 	AllowedPackageNamesInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -46,7 +46,7 @@ type RecaptchaEnterpriseKeyAndroidSettingsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type RecaptchaEnterpriseKeyAndroidSettingsOutputReference interface {
 	ResetAllowedPackageNames()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_RecaptchaEnterpriseKeyAndroidSettingsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_RecaptchaEnterpriseKeyAndroidSettingsOutputReference) AllowAllPackageNames() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RecaptchaEnterpriseKeyAndroidSettingsOutputReference) AllowAllPackageNames() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowAllPackageNames",
@@ -94,8 +94,8 @@ func (j *jsiiProxy_RecaptchaEnterpriseKeyAndroidSettingsOutputReference) AllowAl
 	return returns
 }
 
-func (j *jsiiProxy_RecaptchaEnterpriseKeyAndroidSettingsOutputReference) AllowAllPackageNamesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RecaptchaEnterpriseKeyAndroidSettingsOutputReference) AllowAllPackageNamesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowAllPackageNamesInput",
@@ -124,8 +124,8 @@ func (j *jsiiProxy_RecaptchaEnterpriseKeyAndroidSettingsOutputReference) Allowed
 	return returns
 }
 
-func (j *jsiiProxy_RecaptchaEnterpriseKeyAndroidSettingsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RecaptchaEnterpriseKeyAndroidSettingsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_RecaptchaEnterpriseKeyAndroidSettingsOutputReference) Terrafo
 	return returns
 }
 
-
 func NewRecaptchaEnterpriseKeyAndroidSettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) RecaptchaEnterpriseKeyAndroidSettingsOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewRecaptchaEnterpriseKeyAndroidSettingsOutputReference(terraformResource c
 
 	_jsii_.Create(
 		"@cdktf/provider-google.recaptchaEnterpriseKey.RecaptchaEnterpriseKeyAndroidSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewRecaptchaEnterpriseKeyAndroidSettingsOutputReference_Override(r Recaptch
 
 	_jsii_.Create(
 		"@cdktf/provider-google.recaptchaEnterpriseKey.RecaptchaEnterpriseKeyAndroidSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		r,
 	)
 }
 
-func (j *jsiiProxy_RecaptchaEnterpriseKeyAndroidSettingsOutputReference)SetAllowAllPackageNames(val interface{}) {
+func (j *jsiiProxy_RecaptchaEnterpriseKeyAndroidSettingsOutputReference) SetAllowAllPackageNames(val any) {
 	if err := j.validateSetAllowAllPackageNamesParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_RecaptchaEnterpriseKeyAndroidSettingsOutputReference)SetAllow
 	)
 }
 
-func (j *jsiiProxy_RecaptchaEnterpriseKeyAndroidSettingsOutputReference)SetAllowedPackageNames(val *[]*string) {
+func (j *jsiiProxy_RecaptchaEnterpriseKeyAndroidSettingsOutputReference) SetAllowedPackageNames(val *[]*string) {
 	if err := j.validateSetAllowedPackageNamesParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_RecaptchaEnterpriseKeyAndroidSettingsOutputReference)SetAllow
 	)
 }
 
-func (j *jsiiProxy_RecaptchaEnterpriseKeyAndroidSettingsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_RecaptchaEnterpriseKeyAndroidSettingsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_RecaptchaEnterpriseKeyAndroidSettingsOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_RecaptchaEnterpriseKeyAndroidSettingsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_RecaptchaEnterpriseKeyAndroidSettingsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_RecaptchaEnterpriseKeyAndroidSettingsOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_RecaptchaEnterpriseKeyAndroidSettingsOutputReference)SetInternalValue(val *RecaptchaEnterpriseKeyAndroidSettings) {
+func (j *jsiiProxy_RecaptchaEnterpriseKeyAndroidSettingsOutputReference) SetInternalValue(val *RecaptchaEnterpriseKeyAndroidSettings) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_RecaptchaEnterpriseKeyAndroidSettingsOutputReference)SetInter
 	)
 }
 
-func (j *jsiiProxy_RecaptchaEnterpriseKeyAndroidSettingsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_RecaptchaEnterpriseKeyAndroidSettingsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_RecaptchaEnterpriseKeyAndroidSettingsOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_RecaptchaEnterpriseKeyAndroidSettingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_RecaptchaEnterpriseKeyAndroidSettingsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,16 +311,16 @@ func (r *jsiiProxy_RecaptchaEnterpriseKeyAndroidSettingsOutputReference) Compute
 	return returns
 }
 
-func (r *jsiiProxy_RecaptchaEnterpriseKeyAndroidSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_RecaptchaEnterpriseKeyAndroidSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -337,7 +336,7 @@ func (r *jsiiProxy_RecaptchaEnterpriseKeyAndroidSettingsOutputReference) GetBool
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -353,7 +352,7 @@ func (r *jsiiProxy_RecaptchaEnterpriseKeyAndroidSettingsOutputReference) GetBool
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (r *jsiiProxy_RecaptchaEnterpriseKeyAndroidSettingsOutputReference) GetList
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (r *jsiiProxy_RecaptchaEnterpriseKeyAndroidSettingsOutputReference) GetNumb
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (r *jsiiProxy_RecaptchaEnterpriseKeyAndroidSettingsOutputReference) GetNumb
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (r *jsiiProxy_RecaptchaEnterpriseKeyAndroidSettingsOutputReference) GetNumb
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (r *jsiiProxy_RecaptchaEnterpriseKeyAndroidSettingsOutputReference) GetStri
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (r *jsiiProxy_RecaptchaEnterpriseKeyAndroidSettingsOutputReference) GetStri
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func (r *jsiiProxy_RecaptchaEnterpriseKeyAndroidSettingsOutputReference) Interpo
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -501,16 +500,16 @@ func (r *jsiiProxy_RecaptchaEnterpriseKeyAndroidSettingsOutputReference) ResetAl
 	)
 }
 
-func (r *jsiiProxy_RecaptchaEnterpriseKeyAndroidSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (r *jsiiProxy_RecaptchaEnterpriseKeyAndroidSettingsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := r.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (r *jsiiProxy_RecaptchaEnterpriseKeyAndroidSettingsOutputReference) ToStrin
 
 	return returns
 }
-

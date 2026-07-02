@@ -34,7 +34,7 @@ func (n *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigContainerIm
 	return nil
 }
 
-func (j *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigContainerImagesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigContainerImagesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewNotebooksRuntimeVirtualMachineVirtualMachineConfigContainerImage
 
 	return nil
 }
-

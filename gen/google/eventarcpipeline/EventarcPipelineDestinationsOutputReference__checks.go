@@ -142,7 +142,7 @@ func (e *jsiiProxy_EventarcPipelineDestinationsOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_EventarcPipelineDestinationsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EventarcPipelineDestinationsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -207,7 +207,7 @@ func (j *jsiiProxy_EventarcPipelineDestinationsOutputReference) validateSetCompl
 	return nil
 }
 
-func (j *jsiiProxy_EventarcPipelineDestinationsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EventarcPipelineDestinationsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -290,4 +290,3 @@ func validateNewEventarcPipelineDestinationsOutputReferenceParameters(terraformR
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleArtifactRegistryDockerImage.DataGoogleArtifactRegistryDockerImage",
-		reflect.TypeOf((*DataGoogleArtifactRegistryDockerImage)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleArtifactRegistryDockerImage](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "buildTime", GoGetter: "BuildTime"},
@@ -65,7 +65,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 			_jsii_.MemberProperty{JsiiProperty: "uploadTime", GoGetter: "UploadTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleArtifactRegistryDockerImage{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -73,6 +73,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleArtifactRegistryDockerImage.DataGoogleArtifactRegistryDockerImageConfig",
-		reflect.TypeOf((*DataGoogleArtifactRegistryDockerImageConfig)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleArtifactRegistryDockerImageConfig](),
 	)
 }

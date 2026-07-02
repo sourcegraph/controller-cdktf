@@ -98,7 +98,7 @@ func (d *jsiiProxy_DnsManagedZonePrivateVisibilityConfigGkeClustersOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_DnsManagedZonePrivateVisibilityConfigGkeClustersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DnsManagedZonePrivateVisibilityConfigGkeClustersOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_DnsManagedZonePrivateVisibilityConfigGkeClustersOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_DnsManagedZonePrivateVisibilityConfigGkeClustersOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DnsManagedZonePrivateVisibilityConfigGkeClustersOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewDnsManagedZonePrivateVisibilityConfigGkeClustersOutputReferenceP
 
 	return nil
 }
-

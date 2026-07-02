@@ -98,7 +98,7 @@ func (m *jsiiProxy_MemorystoreInstanceCrossInstanceReplicationConfigMembershipPr
 	return nil
 }
 
-func (j *jsiiProxy_MemorystoreInstanceCrossInstanceReplicationConfigMembershipPrimaryInstanceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MemorystoreInstanceCrossInstanceReplicationConfigMembershipPrimaryInstanceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewMemorystoreInstanceCrossInstanceReplicationConfigMembershipPrima
 
 	return nil
 }
-

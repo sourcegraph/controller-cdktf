@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocClusterIamBinding.DataprocClusterIamBinding",
-		reflect.TypeOf((*DataprocClusterIamBinding)(nil)).Elem(),
+		reflect.TypeFor[DataprocClusterIamBinding](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,7 +73,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocClusterIamBinding{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -81,11 +81,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocClusterIamBinding.DataprocClusterIamBindingCondition",
-		reflect.TypeOf((*DataprocClusterIamBindingCondition)(nil)).Elem(),
+		reflect.TypeFor[DataprocClusterIamBindingCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocClusterIamBinding.DataprocClusterIamBindingConditionOutputReference",
-		reflect.TypeOf((*DataprocClusterIamBindingConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocClusterIamBindingConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -116,7 +116,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocClusterIamBindingConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -124,6 +124,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocClusterIamBinding.DataprocClusterIamBindingConfig",
-		reflect.TypeOf((*DataprocClusterIamBindingConfig)(nil)).Elem(),
+		reflect.TypeFor[DataprocClusterIamBindingConfig](),
 	)
 }

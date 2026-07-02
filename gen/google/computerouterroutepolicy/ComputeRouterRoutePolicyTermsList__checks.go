@@ -34,7 +34,7 @@ func (c *jsiiProxy_ComputeRouterRoutePolicyTermsList) validateResolveParameters(
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRouterRoutePolicyTermsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRouterRoutePolicyTermsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewComputeRouterRoutePolicyTermsListParameters(terraformResource cd
 
 	return nil
 }
-

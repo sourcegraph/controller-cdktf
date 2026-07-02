@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.loggingBillingAccountSink.LoggingBillingAccountSink",
-		reflect.TypeOf((*LoggingBillingAccountSink)(nil)).Elem(),
+		reflect.TypeFor[LoggingBillingAccountSink](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -80,7 +80,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "writerIdentity", GoGetter: "WriterIdentity"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LoggingBillingAccountSink{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -88,11 +88,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.loggingBillingAccountSink.LoggingBillingAccountSinkBigqueryOptions",
-		reflect.TypeOf((*LoggingBillingAccountSinkBigqueryOptions)(nil)).Elem(),
+		reflect.TypeFor[LoggingBillingAccountSinkBigqueryOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.loggingBillingAccountSink.LoggingBillingAccountSinkBigqueryOptionsOutputReference",
-		reflect.TypeOf((*LoggingBillingAccountSinkBigqueryOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LoggingBillingAccountSinkBigqueryOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -118,7 +118,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "usePartitionedTables", GoGetter: "UsePartitionedTables"},
 			_jsii_.MemberProperty{JsiiProperty: "usePartitionedTablesInput", GoGetter: "UsePartitionedTablesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LoggingBillingAccountSinkBigqueryOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -126,15 +126,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.loggingBillingAccountSink.LoggingBillingAccountSinkConfig",
-		reflect.TypeOf((*LoggingBillingAccountSinkConfig)(nil)).Elem(),
+		reflect.TypeFor[LoggingBillingAccountSinkConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.loggingBillingAccountSink.LoggingBillingAccountSinkExclusions",
-		reflect.TypeOf((*LoggingBillingAccountSinkExclusions)(nil)).Elem(),
+		reflect.TypeFor[LoggingBillingAccountSinkExclusions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.loggingBillingAccountSink.LoggingBillingAccountSinkExclusionsList",
-		reflect.TypeOf((*LoggingBillingAccountSinkExclusionsList)(nil)).Elem(),
+		reflect.TypeFor[LoggingBillingAccountSinkExclusionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -148,7 +148,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LoggingBillingAccountSinkExclusionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -156,7 +156,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.loggingBillingAccountSink.LoggingBillingAccountSinkExclusionsOutputReference",
-		reflect.TypeOf((*LoggingBillingAccountSinkExclusionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LoggingBillingAccountSinkExclusionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -190,7 +190,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LoggingBillingAccountSinkExclusionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

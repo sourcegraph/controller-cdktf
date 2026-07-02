@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.composerUserWorkloadsSecret.ComposerUserWorkloadsSecret",
-		reflect.TypeOf((*ComposerUserWorkloadsSecret)(nil)).Elem(),
+		reflect.TypeFor[ComposerUserWorkloadsSecret](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,7 +73,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComposerUserWorkloadsSecret{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -81,15 +81,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.composerUserWorkloadsSecret.ComposerUserWorkloadsSecretConfig",
-		reflect.TypeOf((*ComposerUserWorkloadsSecretConfig)(nil)).Elem(),
+		reflect.TypeFor[ComposerUserWorkloadsSecretConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.composerUserWorkloadsSecret.ComposerUserWorkloadsSecretTimeouts",
-		reflect.TypeOf((*ComposerUserWorkloadsSecretTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ComposerUserWorkloadsSecretTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.composerUserWorkloadsSecret.ComposerUserWorkloadsSecretTimeoutsOutputReference",
-		reflect.TypeOf((*ComposerUserWorkloadsSecretTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComposerUserWorkloadsSecretTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -122,7 +122,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComposerUserWorkloadsSecretTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

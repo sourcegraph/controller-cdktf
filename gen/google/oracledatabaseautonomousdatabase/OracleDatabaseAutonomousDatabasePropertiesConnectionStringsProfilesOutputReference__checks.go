@@ -98,7 +98,7 @@ func (o *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesConnectionStringsPr
 	return nil
 }
 
-func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesConnectionStringsProfilesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesConnectionStringsProfilesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewOracleDatabaseAutonomousDatabasePropertiesConnectionStringsProfi
 
 	return nil
 }
-

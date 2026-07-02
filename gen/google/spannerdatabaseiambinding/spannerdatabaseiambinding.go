@@ -17,15 +17,15 @@ type SpannerDatabaseIamBinding interface {
 	Condition() SpannerDatabaseIamBindingConditionOutputReference
 	ConditionInput() *SpannerDatabaseIamBindingCondition
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	Database() *string
 	SetDatabase(val *string)
 	DatabaseInput() *string
@@ -65,27 +65,27 @@ type SpannerDatabaseIamBinding interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Role() *string
 	SetRole(val *string)
 	RoleInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -103,7 +103,7 @@ type SpannerDatabaseIamBinding interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -115,7 +115,7 @@ type SpannerDatabaseIamBinding interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -129,17 +129,17 @@ type SpannerDatabaseIamBinding interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for SpannerDatabaseIamBinding
@@ -177,8 +177,8 @@ func (j *jsiiProxy_SpannerDatabaseIamBinding) ConditionInput() *SpannerDatabaseI
 	return returns
 }
 
-func (j *jsiiProxy_SpannerDatabaseIamBinding) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SpannerDatabaseIamBinding) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -187,8 +187,8 @@ func (j *jsiiProxy_SpannerDatabaseIamBinding) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SpannerDatabaseIamBinding) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SpannerDatabaseIamBinding) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -197,8 +197,8 @@ func (j *jsiiProxy_SpannerDatabaseIamBinding) ConstructNodeMetadata() *map[strin
 	return returns
 }
 
-func (j *jsiiProxy_SpannerDatabaseIamBinding) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SpannerDatabaseIamBinding) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -387,8 +387,8 @@ func (j *jsiiProxy_SpannerDatabaseIamBinding) Provider() cdktf.TerraformProvider
 	return returns
 }
 
-func (j *jsiiProxy_SpannerDatabaseIamBinding) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_SpannerDatabaseIamBinding) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -397,8 +397,8 @@ func (j *jsiiProxy_SpannerDatabaseIamBinding) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SpannerDatabaseIamBinding) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SpannerDatabaseIamBinding) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -437,8 +437,8 @@ func (j *jsiiProxy_SpannerDatabaseIamBinding) TerraformGeneratorMetadata() *cdkt
 	return returns
 }
 
-func (j *jsiiProxy_SpannerDatabaseIamBinding) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SpannerDatabaseIamBinding) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -457,7 +457,6 @@ func (j *jsiiProxy_SpannerDatabaseIamBinding) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_database_iam_binding google_spanner_database_iam_binding} Resource.
 func NewSpannerDatabaseIamBinding(scope constructs.Construct, id *string, config *SpannerDatabaseIamBindingConfig) SpannerDatabaseIamBinding {
 	_init_.Initialize()
@@ -469,7 +468,7 @@ func NewSpannerDatabaseIamBinding(scope constructs.Construct, id *string, config
 
 	_jsii_.Create(
 		"@cdktf/provider-google.spannerDatabaseIamBinding.SpannerDatabaseIamBinding",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -482,12 +481,12 @@ func NewSpannerDatabaseIamBinding_Override(s SpannerDatabaseIamBinding, scope co
 
 	_jsii_.Create(
 		"@cdktf/provider-google.spannerDatabaseIamBinding.SpannerDatabaseIamBinding",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SpannerDatabaseIamBinding)SetConnection(val interface{}) {
+func (j *jsiiProxy_SpannerDatabaseIamBinding) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -498,7 +497,7 @@ func (j *jsiiProxy_SpannerDatabaseIamBinding)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SpannerDatabaseIamBinding)SetCount(val interface{}) {
+func (j *jsiiProxy_SpannerDatabaseIamBinding) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -509,7 +508,7 @@ func (j *jsiiProxy_SpannerDatabaseIamBinding)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SpannerDatabaseIamBinding)SetDatabase(val *string) {
+func (j *jsiiProxy_SpannerDatabaseIamBinding) SetDatabase(val *string) {
 	if err := j.validateSetDatabaseParameters(val); err != nil {
 		panic(err)
 	}
@@ -520,7 +519,7 @@ func (j *jsiiProxy_SpannerDatabaseIamBinding)SetDatabase(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SpannerDatabaseIamBinding)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_SpannerDatabaseIamBinding) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -528,7 +527,7 @@ func (j *jsiiProxy_SpannerDatabaseIamBinding)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SpannerDatabaseIamBinding)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SpannerDatabaseIamBinding) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -536,7 +535,7 @@ func (j *jsiiProxy_SpannerDatabaseIamBinding)SetForEach(val cdktf.ITerraformIter
 	)
 }
 
-func (j *jsiiProxy_SpannerDatabaseIamBinding)SetId(val *string) {
+func (j *jsiiProxy_SpannerDatabaseIamBinding) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -547,7 +546,7 @@ func (j *jsiiProxy_SpannerDatabaseIamBinding)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SpannerDatabaseIamBinding)SetInstance(val *string) {
+func (j *jsiiProxy_SpannerDatabaseIamBinding) SetInstance(val *string) {
 	if err := j.validateSetInstanceParameters(val); err != nil {
 		panic(err)
 	}
@@ -558,7 +557,7 @@ func (j *jsiiProxy_SpannerDatabaseIamBinding)SetInstance(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SpannerDatabaseIamBinding)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SpannerDatabaseIamBinding) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -569,7 +568,7 @@ func (j *jsiiProxy_SpannerDatabaseIamBinding)SetLifecycle(val *cdktf.TerraformRe
 	)
 }
 
-func (j *jsiiProxy_SpannerDatabaseIamBinding)SetMembers(val *[]*string) {
+func (j *jsiiProxy_SpannerDatabaseIamBinding) SetMembers(val *[]*string) {
 	if err := j.validateSetMembersParameters(val); err != nil {
 		panic(err)
 	}
@@ -580,7 +579,7 @@ func (j *jsiiProxy_SpannerDatabaseIamBinding)SetMembers(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SpannerDatabaseIamBinding)SetProject(val *string) {
+func (j *jsiiProxy_SpannerDatabaseIamBinding) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -591,7 +590,7 @@ func (j *jsiiProxy_SpannerDatabaseIamBinding)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SpannerDatabaseIamBinding)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SpannerDatabaseIamBinding) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -599,7 +598,7 @@ func (j *jsiiProxy_SpannerDatabaseIamBinding)SetProvider(val cdktf.TerraformProv
 	)
 }
 
-func (j *jsiiProxy_SpannerDatabaseIamBinding)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_SpannerDatabaseIamBinding) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -610,7 +609,7 @@ func (j *jsiiProxy_SpannerDatabaseIamBinding)SetProvisioners(val *[]interface{})
 	)
 }
 
-func (j *jsiiProxy_SpannerDatabaseIamBinding)SetRole(val *string) {
+func (j *jsiiProxy_SpannerDatabaseIamBinding) SetRole(val *string) {
 	if err := j.validateSetRoleParameters(val); err != nil {
 		panic(err)
 	}
@@ -633,7 +632,7 @@ func SpannerDatabaseIamBinding_GenerateConfigForImport(scope constructs.Construc
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.spannerDatabaseIamBinding.SpannerDatabaseIamBinding",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -657,7 +656,7 @@ func SpannerDatabaseIamBinding_GenerateConfigForImport(scope constructs.Construc
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func SpannerDatabaseIamBinding_IsConstruct(x interface{}) *bool {
+func SpannerDatabaseIamBinding_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSpannerDatabaseIamBinding_IsConstructParameters(x); err != nil {
@@ -668,7 +667,7 @@ func SpannerDatabaseIamBinding_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.spannerDatabaseIamBinding.SpannerDatabaseIamBinding",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -676,7 +675,7 @@ func SpannerDatabaseIamBinding_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func SpannerDatabaseIamBinding_IsTerraformElement(x interface{}) *bool {
+func SpannerDatabaseIamBinding_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSpannerDatabaseIamBinding_IsTerraformElementParameters(x); err != nil {
@@ -687,7 +686,7 @@ func SpannerDatabaseIamBinding_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.spannerDatabaseIamBinding.SpannerDatabaseIamBinding",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -695,7 +694,7 @@ func SpannerDatabaseIamBinding_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func SpannerDatabaseIamBinding_IsTerraformResource(x interface{}) *bool {
+func SpannerDatabaseIamBinding_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSpannerDatabaseIamBinding_IsTerraformResourceParameters(x); err != nil {
@@ -706,7 +705,7 @@ func SpannerDatabaseIamBinding_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.spannerDatabaseIamBinding.SpannerDatabaseIamBinding",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -731,31 +730,31 @@ func (s *jsiiProxy_SpannerDatabaseIamBinding) AddMoveTarget(moveTarget *string) 
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_SpannerDatabaseIamBinding) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_SpannerDatabaseIamBinding) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_SpannerDatabaseIamBinding) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SpannerDatabaseIamBinding) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -771,7 +770,7 @@ func (s *jsiiProxy_SpannerDatabaseIamBinding) GetBooleanAttribute(terraformAttri
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -787,7 +786,7 @@ func (s *jsiiProxy_SpannerDatabaseIamBinding) GetBooleanMapAttribute(terraformAt
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -803,7 +802,7 @@ func (s *jsiiProxy_SpannerDatabaseIamBinding) GetListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -819,7 +818,7 @@ func (s *jsiiProxy_SpannerDatabaseIamBinding) GetNumberAttribute(terraformAttrib
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -835,7 +834,7 @@ func (s *jsiiProxy_SpannerDatabaseIamBinding) GetNumberListAttribute(terraformAt
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -851,7 +850,7 @@ func (s *jsiiProxy_SpannerDatabaseIamBinding) GetNumberMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -867,7 +866,7 @@ func (s *jsiiProxy_SpannerDatabaseIamBinding) GetStringAttribute(terraformAttrib
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -883,15 +882,15 @@ func (s *jsiiProxy_SpannerDatabaseIamBinding) GetStringMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SpannerDatabaseIamBinding) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SpannerDatabaseIamBinding) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -910,7 +909,7 @@ func (s *jsiiProxy_SpannerDatabaseIamBinding) ImportFrom(id *string, provider cd
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -923,7 +922,7 @@ func (s *jsiiProxy_SpannerDatabaseIamBinding) InterpolationForAttribute(terrafor
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -937,18 +936,18 @@ func (s *jsiiProxy_SpannerDatabaseIamBinding) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_SpannerDatabaseIamBinding) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_SpannerDatabaseIamBinding) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -959,7 +958,7 @@ func (s *jsiiProxy_SpannerDatabaseIamBinding) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -970,7 +969,7 @@ func (s *jsiiProxy_SpannerDatabaseIamBinding) OverrideLogicalId(newLogicalId *st
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -981,7 +980,7 @@ func (s *jsiiProxy_SpannerDatabaseIamBinding) PutCondition(value *SpannerDatabas
 	_jsii_.InvokeVoid(
 		s,
 		"putCondition",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1017,8 +1016,8 @@ func (s *jsiiProxy_SpannerDatabaseIamBinding) ResetProject() {
 	)
 }
 
-func (s *jsiiProxy_SpannerDatabaseIamBinding) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SpannerDatabaseIamBinding) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1030,8 +1029,8 @@ func (s *jsiiProxy_SpannerDatabaseIamBinding) SynthesizeAttributes() *map[string
 	return returns
 }
 
-func (s *jsiiProxy_SpannerDatabaseIamBinding) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SpannerDatabaseIamBinding) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1043,8 +1042,8 @@ func (s *jsiiProxy_SpannerDatabaseIamBinding) SynthesizeHclAttributes() *map[str
 	return returns
 }
 
-func (s *jsiiProxy_SpannerDatabaseIamBinding) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SpannerDatabaseIamBinding) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1056,8 +1055,8 @@ func (s *jsiiProxy_SpannerDatabaseIamBinding) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_SpannerDatabaseIamBinding) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SpannerDatabaseIamBinding) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1082,8 +1081,8 @@ func (s *jsiiProxy_SpannerDatabaseIamBinding) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_SpannerDatabaseIamBinding) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SpannerDatabaseIamBinding) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1094,4 +1093,3 @@ func (s *jsiiProxy_SpannerDatabaseIamBinding) ToTerraform() interface{} {
 
 	return returns
 }
-

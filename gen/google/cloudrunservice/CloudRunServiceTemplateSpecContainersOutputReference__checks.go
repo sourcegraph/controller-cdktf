@@ -90,7 +90,7 @@ func (c *jsiiProxy_CloudRunServiceTemplateSpecContainersOutputReference) validat
 	return nil
 }
 
-func (c *jsiiProxy_CloudRunServiceTemplateSpecContainersOutputReference) validatePutEnvParameters(value interface{}) error {
+func (c *jsiiProxy_CloudRunServiceTemplateSpecContainersOutputReference) validatePutEnvParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (c *jsiiProxy_CloudRunServiceTemplateSpecContainersOutputReference) validat
 	return nil
 }
 
-func (c *jsiiProxy_CloudRunServiceTemplateSpecContainersOutputReference) validatePutEnvFromParameters(value interface{}) error {
+func (c *jsiiProxy_CloudRunServiceTemplateSpecContainersOutputReference) validatePutEnvFromParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -163,7 +163,7 @@ func (c *jsiiProxy_CloudRunServiceTemplateSpecContainersOutputReference) validat
 	return nil
 }
 
-func (c *jsiiProxy_CloudRunServiceTemplateSpecContainersOutputReference) validatePutPortsParameters(value interface{}) error {
+func (c *jsiiProxy_CloudRunServiceTemplateSpecContainersOutputReference) validatePutPortsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -227,7 +227,7 @@ func (c *jsiiProxy_CloudRunServiceTemplateSpecContainersOutputReference) validat
 	return nil
 }
 
-func (c *jsiiProxy_CloudRunServiceTemplateSpecContainersOutputReference) validatePutVolumeMountsParameters(value interface{}) error {
+func (c *jsiiProxy_CloudRunServiceTemplateSpecContainersOutputReference) validatePutVolumeMountsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -282,7 +282,7 @@ func (j *jsiiProxy_CloudRunServiceTemplateSpecContainersOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_CloudRunServiceTemplateSpecContainersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudRunServiceTemplateSpecContainersOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -355,7 +355,7 @@ func (j *jsiiProxy_CloudRunServiceTemplateSpecContainersOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_CloudRunServiceTemplateSpecContainersOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CloudRunServiceTemplateSpecContainersOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -430,4 +430,3 @@ func validateNewCloudRunServiceTemplateSpecContainersOutputReferenceParameters(t
 
 	return nil
 }
-

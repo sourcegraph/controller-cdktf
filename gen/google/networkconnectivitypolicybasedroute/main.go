@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkConnectivityPolicyBasedRoute.NetworkConnectivityPolicyBasedRoute",
-		reflect.TypeOf((*NetworkConnectivityPolicyBasedRoute)(nil)).Elem(),
+		reflect.TypeFor[NetworkConnectivityPolicyBasedRoute](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -99,7 +99,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "virtualMachineInput", GoGetter: "VirtualMachineInput"},
 			_jsii_.MemberProperty{JsiiProperty: "warnings", GoGetter: "Warnings"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkConnectivityPolicyBasedRoute{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -107,15 +107,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkConnectivityPolicyBasedRoute.NetworkConnectivityPolicyBasedRouteConfig",
-		reflect.TypeOf((*NetworkConnectivityPolicyBasedRouteConfig)(nil)).Elem(),
+		reflect.TypeFor[NetworkConnectivityPolicyBasedRouteConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkConnectivityPolicyBasedRoute.NetworkConnectivityPolicyBasedRouteFilter",
-		reflect.TypeOf((*NetworkConnectivityPolicyBasedRouteFilter)(nil)).Elem(),
+		reflect.TypeFor[NetworkConnectivityPolicyBasedRouteFilter](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkConnectivityPolicyBasedRoute.NetworkConnectivityPolicyBasedRouteFilterOutputReference",
-		reflect.TypeOf((*NetworkConnectivityPolicyBasedRouteFilterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkConnectivityPolicyBasedRouteFilterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -150,7 +150,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkConnectivityPolicyBasedRouteFilterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -158,11 +158,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkConnectivityPolicyBasedRoute.NetworkConnectivityPolicyBasedRouteInterconnectAttachment",
-		reflect.TypeOf((*NetworkConnectivityPolicyBasedRouteInterconnectAttachment)(nil)).Elem(),
+		reflect.TypeFor[NetworkConnectivityPolicyBasedRouteInterconnectAttachment](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkConnectivityPolicyBasedRoute.NetworkConnectivityPolicyBasedRouteInterconnectAttachmentOutputReference",
-		reflect.TypeOf((*NetworkConnectivityPolicyBasedRouteInterconnectAttachmentOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkConnectivityPolicyBasedRouteInterconnectAttachmentOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -188,7 +188,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkConnectivityPolicyBasedRouteInterconnectAttachmentOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -196,11 +196,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkConnectivityPolicyBasedRoute.NetworkConnectivityPolicyBasedRouteTimeouts",
-		reflect.TypeOf((*NetworkConnectivityPolicyBasedRouteTimeouts)(nil)).Elem(),
+		reflect.TypeFor[NetworkConnectivityPolicyBasedRouteTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkConnectivityPolicyBasedRoute.NetworkConnectivityPolicyBasedRouteTimeoutsOutputReference",
-		reflect.TypeOf((*NetworkConnectivityPolicyBasedRouteTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkConnectivityPolicyBasedRouteTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -233,7 +233,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkConnectivityPolicyBasedRouteTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -241,11 +241,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkConnectivityPolicyBasedRoute.NetworkConnectivityPolicyBasedRouteVirtualMachine",
-		reflect.TypeOf((*NetworkConnectivityPolicyBasedRouteVirtualMachine)(nil)).Elem(),
+		reflect.TypeFor[NetworkConnectivityPolicyBasedRouteVirtualMachine](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkConnectivityPolicyBasedRoute.NetworkConnectivityPolicyBasedRouteVirtualMachineOutputReference",
-		reflect.TypeOf((*NetworkConnectivityPolicyBasedRouteVirtualMachineOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkConnectivityPolicyBasedRouteVirtualMachineOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -271,7 +271,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkConnectivityPolicyBasedRouteVirtualMachineOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -279,11 +279,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkConnectivityPolicyBasedRoute.NetworkConnectivityPolicyBasedRouteWarnings",
-		reflect.TypeOf((*NetworkConnectivityPolicyBasedRouteWarnings)(nil)).Elem(),
+		reflect.TypeFor[NetworkConnectivityPolicyBasedRouteWarnings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkConnectivityPolicyBasedRoute.NetworkConnectivityPolicyBasedRouteWarningsList",
-		reflect.TypeOf((*NetworkConnectivityPolicyBasedRouteWarningsList)(nil)).Elem(),
+		reflect.TypeFor[NetworkConnectivityPolicyBasedRouteWarningsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -296,7 +296,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkConnectivityPolicyBasedRouteWarningsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -304,7 +304,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkConnectivityPolicyBasedRoute.NetworkConnectivityPolicyBasedRouteWarningsOutputReference",
-		reflect.TypeOf((*NetworkConnectivityPolicyBasedRouteWarningsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkConnectivityPolicyBasedRouteWarningsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "code", GoGetter: "Code"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -331,7 +331,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "warningMessage", GoGetter: "WarningMessage"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkConnectivityPolicyBasedRouteWarningsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

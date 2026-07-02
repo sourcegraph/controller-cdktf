@@ -98,7 +98,7 @@ func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesBootDisk
 	return nil
 }
 
-func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesBootDiskOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesBootDiskOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewHypercomputeclusterClusterOrchestratorSlurmLoginNodesBootDiskOut
 
 	return nil
 }
-

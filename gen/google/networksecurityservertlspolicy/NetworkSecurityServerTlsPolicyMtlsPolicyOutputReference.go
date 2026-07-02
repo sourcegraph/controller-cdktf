@@ -11,7 +11,7 @@ import (
 type NetworkSecurityServerTlsPolicyMtlsPolicyOutputReference interface {
 	cdktf.ComplexObject
 	ClientValidationCa() NetworkSecurityServerTlsPolicyMtlsPolicyClientValidationCaList
-	ClientValidationCaInput() interface{}
+	ClientValidationCaInput() any
 	ClientValidationMode() *string
 	SetClientValidationMode(val *string)
 	ClientValidationModeInput() *string
@@ -20,9 +20,9 @@ type NetworkSecurityServerTlsPolicyMtlsPolicyOutputReference interface {
 	ClientValidationTrustConfigInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -48,7 +48,7 @@ type NetworkSecurityServerTlsPolicyMtlsPolicyOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -69,13 +69,13 @@ type NetworkSecurityServerTlsPolicyMtlsPolicyOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutClientValidationCa(value interface{})
+	PutClientValidationCa(value any)
 	ResetClientValidationCa()
 	ResetClientValidationMode()
 	ResetClientValidationTrustConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -98,8 +98,8 @@ func (j *jsiiProxy_NetworkSecurityServerTlsPolicyMtlsPolicyOutputReference) Clie
 	return returns
 }
 
-func (j *jsiiProxy_NetworkSecurityServerTlsPolicyMtlsPolicyOutputReference) ClientValidationCaInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkSecurityServerTlsPolicyMtlsPolicyOutputReference) ClientValidationCaInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"clientValidationCaInput",
@@ -148,8 +148,8 @@ func (j *jsiiProxy_NetworkSecurityServerTlsPolicyMtlsPolicyOutputReference) Clie
 	return returns
 }
 
-func (j *jsiiProxy_NetworkSecurityServerTlsPolicyMtlsPolicyOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkSecurityServerTlsPolicyMtlsPolicyOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_NetworkSecurityServerTlsPolicyMtlsPolicyOutputReference) Terr
 	return returns
 }
 
-
 func NewNetworkSecurityServerTlsPolicyMtlsPolicyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) NetworkSecurityServerTlsPolicyMtlsPolicyOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewNetworkSecurityServerTlsPolicyMtlsPolicyOutputReference(terraformResourc
 
 	_jsii_.Create(
 		"@cdktf/provider-google.networkSecurityServerTlsPolicy.NetworkSecurityServerTlsPolicyMtlsPolicyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewNetworkSecurityServerTlsPolicyMtlsPolicyOutputReference_Override(n Netwo
 
 	_jsii_.Create(
 		"@cdktf/provider-google.networkSecurityServerTlsPolicy.NetworkSecurityServerTlsPolicyMtlsPolicyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NetworkSecurityServerTlsPolicyMtlsPolicyOutputReference)SetClientValidationMode(val *string) {
+func (j *jsiiProxy_NetworkSecurityServerTlsPolicyMtlsPolicyOutputReference) SetClientValidationMode(val *string) {
 	if err := j.validateSetClientValidationModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_NetworkSecurityServerTlsPolicyMtlsPolicyOutputReference)SetCl
 	)
 }
 
-func (j *jsiiProxy_NetworkSecurityServerTlsPolicyMtlsPolicyOutputReference)SetClientValidationTrustConfig(val *string) {
+func (j *jsiiProxy_NetworkSecurityServerTlsPolicyMtlsPolicyOutputReference) SetClientValidationTrustConfig(val *string) {
 	if err := j.validateSetClientValidationTrustConfigParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_NetworkSecurityServerTlsPolicyMtlsPolicyOutputReference)SetCl
 	)
 }
 
-func (j *jsiiProxy_NetworkSecurityServerTlsPolicyMtlsPolicyOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_NetworkSecurityServerTlsPolicyMtlsPolicyOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_NetworkSecurityServerTlsPolicyMtlsPolicyOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_NetworkSecurityServerTlsPolicyMtlsPolicyOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_NetworkSecurityServerTlsPolicyMtlsPolicyOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_NetworkSecurityServerTlsPolicyMtlsPolicyOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_NetworkSecurityServerTlsPolicyMtlsPolicyOutputReference)SetInternalValue(val *NetworkSecurityServerTlsPolicyMtlsPolicy) {
+func (j *jsiiProxy_NetworkSecurityServerTlsPolicyMtlsPolicyOutputReference) SetInternalValue(val *NetworkSecurityServerTlsPolicyMtlsPolicy) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_NetworkSecurityServerTlsPolicyMtlsPolicyOutputReference)SetIn
 	)
 }
 
-func (j *jsiiProxy_NetworkSecurityServerTlsPolicyMtlsPolicyOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_NetworkSecurityServerTlsPolicyMtlsPolicyOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_NetworkSecurityServerTlsPolicyMtlsPolicyOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_NetworkSecurityServerTlsPolicyMtlsPolicyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NetworkSecurityServerTlsPolicyMtlsPolicyOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,16 +335,16 @@ func (n *jsiiProxy_NetworkSecurityServerTlsPolicyMtlsPolicyOutputReference) Comp
 	return returns
 }
 
-func (n *jsiiProxy_NetworkSecurityServerTlsPolicyMtlsPolicyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (n *jsiiProxy_NetworkSecurityServerTlsPolicyMtlsPolicyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -361,7 +360,7 @@ func (n *jsiiProxy_NetworkSecurityServerTlsPolicyMtlsPolicyOutputReference) GetB
 	_jsii_.Invoke(
 		n,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -377,7 +376,7 @@ func (n *jsiiProxy_NetworkSecurityServerTlsPolicyMtlsPolicyOutputReference) GetB
 	_jsii_.Invoke(
 		n,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -393,7 +392,7 @@ func (n *jsiiProxy_NetworkSecurityServerTlsPolicyMtlsPolicyOutputReference) GetL
 	_jsii_.Invoke(
 		n,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -409,7 +408,7 @@ func (n *jsiiProxy_NetworkSecurityServerTlsPolicyMtlsPolicyOutputReference) GetN
 	_jsii_.Invoke(
 		n,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -425,7 +424,7 @@ func (n *jsiiProxy_NetworkSecurityServerTlsPolicyMtlsPolicyOutputReference) GetN
 	_jsii_.Invoke(
 		n,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -441,7 +440,7 @@ func (n *jsiiProxy_NetworkSecurityServerTlsPolicyMtlsPolicyOutputReference) GetN
 	_jsii_.Invoke(
 		n,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -457,7 +456,7 @@ func (n *jsiiProxy_NetworkSecurityServerTlsPolicyMtlsPolicyOutputReference) GetS
 	_jsii_.Invoke(
 		n,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -473,7 +472,7 @@ func (n *jsiiProxy_NetworkSecurityServerTlsPolicyMtlsPolicyOutputReference) GetS
 	_jsii_.Invoke(
 		n,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -502,21 +501,21 @@ func (n *jsiiProxy_NetworkSecurityServerTlsPolicyMtlsPolicyOutputReference) Inte
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (n *jsiiProxy_NetworkSecurityServerTlsPolicyMtlsPolicyOutputReference) PutClientValidationCa(value interface{}) {
+func (n *jsiiProxy_NetworkSecurityServerTlsPolicyMtlsPolicyOutputReference) PutClientValidationCa(value any) {
 	if err := n.validatePutClientValidationCaParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"putClientValidationCa",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -544,16 +543,16 @@ func (n *jsiiProxy_NetworkSecurityServerTlsPolicyMtlsPolicyOutputReference) Rese
 	)
 }
 
-func (n *jsiiProxy_NetworkSecurityServerTlsPolicyMtlsPolicyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (n *jsiiProxy_NetworkSecurityServerTlsPolicyMtlsPolicyOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := n.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		n,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (n *jsiiProxy_NetworkSecurityServerTlsPolicyMtlsPolicyOutputReference) ToSt
 
 	return returns
 }
-

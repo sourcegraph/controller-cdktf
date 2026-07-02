@@ -1,6 +1,5 @@
 package discoveryenginecontrol
 
-
 type DiscoveryEngineControlPromoteActionSearchLinkPromotion struct {
 	// The title of the promoted link.
 	//
@@ -17,7 +16,7 @@ type DiscoveryEngineControlPromoteActionSearchLinkPromotion struct {
 	// Return promotions for basic site search.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_control#enabled DiscoveryEngineControl#enabled}
-	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
+	Enabled any `field:"optional" json:"enabled" yaml:"enabled"`
 	// The image URI of the promoted link.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_control#image_uri DiscoveryEngineControl#image_uri}
@@ -27,4 +26,3 @@ type DiscoveryEngineControlPromoteActionSearchLinkPromotion struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_control#uri DiscoveryEngineControl#uri}
 	Uri *string `field:"optional" json:"uri" yaml:"uri"`
 }
-

@@ -98,7 +98,7 @@ func (b *jsiiProxy_BackupDrRestoreWorkloadTimeoutsOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_BackupDrRestoreWorkloadTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BackupDrRestoreWorkloadTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_BackupDrRestoreWorkloadTimeoutsOutputReference) validateSetDe
 	return nil
 }
 
-func (j *jsiiProxy_BackupDrRestoreWorkloadTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_BackupDrRestoreWorkloadTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewBackupDrRestoreWorkloadTimeoutsOutputReferenceParameters(terrafo
 
 	return nil
 }
-

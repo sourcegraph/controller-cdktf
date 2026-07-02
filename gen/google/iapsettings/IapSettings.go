@@ -19,15 +19,15 @@ type IapSettings interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -57,26 +57,26 @@ type IapSettings interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() IapSettingsTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -94,7 +94,7 @@ type IapSettings interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -106,7 +106,7 @@ type IapSettings interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -123,17 +123,17 @@ type IapSettings interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for IapSettings
@@ -191,8 +191,8 @@ func (j *jsiiProxy_IapSettings) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_IapSettings) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IapSettings) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -201,8 +201,8 @@ func (j *jsiiProxy_IapSettings) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IapSettings) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_IapSettings) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -211,8 +211,8 @@ func (j *jsiiProxy_IapSettings) ConstructNodeMetadata() *map[string]interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_IapSettings) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IapSettings) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -331,8 +331,8 @@ func (j *jsiiProxy_IapSettings) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_IapSettings) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_IapSettings) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -341,8 +341,8 @@ func (j *jsiiProxy_IapSettings) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IapSettings) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IapSettings) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -361,8 +361,8 @@ func (j *jsiiProxy_IapSettings) TerraformGeneratorMetadata() *cdktf.TerraformPro
 	return returns
 }
 
-func (j *jsiiProxy_IapSettings) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_IapSettings) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -391,8 +391,8 @@ func (j *jsiiProxy_IapSettings) Timeouts() IapSettingsTimeoutsOutputReference {
 	return returns
 }
 
-func (j *jsiiProxy_IapSettings) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IapSettings) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -400,7 +400,6 @@ func (j *jsiiProxy_IapSettings) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iap_settings google_iap_settings} Resource.
 func NewIapSettings(scope constructs.Construct, id *string, config *IapSettingsConfig) IapSettings {
@@ -413,7 +412,7 @@ func NewIapSettings(scope constructs.Construct, id *string, config *IapSettingsC
 
 	_jsii_.Create(
 		"@cdktf/provider-google.iapSettings.IapSettings",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -426,12 +425,12 @@ func NewIapSettings_Override(i IapSettings, scope constructs.Construct, id *stri
 
 	_jsii_.Create(
 		"@cdktf/provider-google.iapSettings.IapSettings",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		i,
 	)
 }
 
-func (j *jsiiProxy_IapSettings)SetConnection(val interface{}) {
+func (j *jsiiProxy_IapSettings) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -442,7 +441,7 @@ func (j *jsiiProxy_IapSettings)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IapSettings)SetCount(val interface{}) {
+func (j *jsiiProxy_IapSettings) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -453,7 +452,7 @@ func (j *jsiiProxy_IapSettings)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IapSettings)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_IapSettings) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -461,7 +460,7 @@ func (j *jsiiProxy_IapSettings)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_IapSettings)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_IapSettings) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -469,7 +468,7 @@ func (j *jsiiProxy_IapSettings)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_IapSettings)SetId(val *string) {
+func (j *jsiiProxy_IapSettings) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -480,7 +479,7 @@ func (j *jsiiProxy_IapSettings)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IapSettings)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_IapSettings) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -491,7 +490,7 @@ func (j *jsiiProxy_IapSettings)SetLifecycle(val *cdktf.TerraformResourceLifecycl
 	)
 }
 
-func (j *jsiiProxy_IapSettings)SetName(val *string) {
+func (j *jsiiProxy_IapSettings) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -502,7 +501,7 @@ func (j *jsiiProxy_IapSettings)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IapSettings)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_IapSettings) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -510,7 +509,7 @@ func (j *jsiiProxy_IapSettings)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_IapSettings)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_IapSettings) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -533,7 +532,7 @@ func IapSettings_GenerateConfigForImport(scope constructs.Construct, importToId 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.iapSettings.IapSettings",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -557,7 +556,7 @@ func IapSettings_GenerateConfigForImport(scope constructs.Construct, importToId 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func IapSettings_IsConstruct(x interface{}) *bool {
+func IapSettings_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIapSettings_IsConstructParameters(x); err != nil {
@@ -568,7 +567,7 @@ func IapSettings_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.iapSettings.IapSettings",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -576,7 +575,7 @@ func IapSettings_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func IapSettings_IsTerraformElement(x interface{}) *bool {
+func IapSettings_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIapSettings_IsTerraformElementParameters(x); err != nil {
@@ -587,7 +586,7 @@ func IapSettings_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.iapSettings.IapSettings",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -595,7 +594,7 @@ func IapSettings_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func IapSettings_IsTerraformResource(x interface{}) *bool {
+func IapSettings_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIapSettings_IsTerraformResourceParameters(x); err != nil {
@@ -606,7 +605,7 @@ func IapSettings_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.iapSettings.IapSettings",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -631,31 +630,31 @@ func (i *jsiiProxy_IapSettings) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (i *jsiiProxy_IapSettings) AddOverride(path *string, value interface{}) {
+func (i *jsiiProxy_IapSettings) AddOverride(path *string, value any) {
 	if err := i.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (i *jsiiProxy_IapSettings) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_IapSettings) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -671,7 +670,7 @@ func (i *jsiiProxy_IapSettings) GetBooleanAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -687,7 +686,7 @@ func (i *jsiiProxy_IapSettings) GetBooleanMapAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -703,7 +702,7 @@ func (i *jsiiProxy_IapSettings) GetListAttribute(terraformAttribute *string) *[]
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -719,7 +718,7 @@ func (i *jsiiProxy_IapSettings) GetNumberAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -735,7 +734,7 @@ func (i *jsiiProxy_IapSettings) GetNumberListAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -751,7 +750,7 @@ func (i *jsiiProxy_IapSettings) GetNumberMapAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -767,7 +766,7 @@ func (i *jsiiProxy_IapSettings) GetStringAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -783,15 +782,15 @@ func (i *jsiiProxy_IapSettings) GetStringMapAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (i *jsiiProxy_IapSettings) HasResourceMove() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IapSettings) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -810,7 +809,7 @@ func (i *jsiiProxy_IapSettings) ImportFrom(id *string, provider cdktf.TerraformP
 	_jsii_.InvokeVoid(
 		i,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -823,7 +822,7 @@ func (i *jsiiProxy_IapSettings) InterpolationForAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -837,18 +836,18 @@ func (i *jsiiProxy_IapSettings) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (i *jsiiProxy_IapSettings) MoveTo(moveTarget *string, index interface{}) {
+func (i *jsiiProxy_IapSettings) MoveTo(moveTarget *string, index any) {
 	if err := i.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -859,7 +858,7 @@ func (i *jsiiProxy_IapSettings) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -870,7 +869,7 @@ func (i *jsiiProxy_IapSettings) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -881,7 +880,7 @@ func (i *jsiiProxy_IapSettings) PutAccessSettings(value *IapSettingsAccessSettin
 	_jsii_.InvokeVoid(
 		i,
 		"putAccessSettings",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -892,7 +891,7 @@ func (i *jsiiProxy_IapSettings) PutApplicationSettings(value *IapSettingsApplica
 	_jsii_.InvokeVoid(
 		i,
 		"putApplicationSettings",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -903,7 +902,7 @@ func (i *jsiiProxy_IapSettings) PutTimeouts(value *IapSettingsTimeouts) {
 	_jsii_.InvokeVoid(
 		i,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -947,8 +946,8 @@ func (i *jsiiProxy_IapSettings) ResetTimeouts() {
 	)
 }
 
-func (i *jsiiProxy_IapSettings) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (i *jsiiProxy_IapSettings) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
@@ -960,8 +959,8 @@ func (i *jsiiProxy_IapSettings) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (i *jsiiProxy_IapSettings) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (i *jsiiProxy_IapSettings) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
@@ -973,8 +972,8 @@ func (i *jsiiProxy_IapSettings) SynthesizeHclAttributes() *map[string]interface{
 	return returns
 }
 
-func (i *jsiiProxy_IapSettings) ToHclTerraform() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IapSettings) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -986,8 +985,8 @@ func (i *jsiiProxy_IapSettings) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (i *jsiiProxy_IapSettings) ToMetadata() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IapSettings) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -1012,8 +1011,8 @@ func (i *jsiiProxy_IapSettings) ToString() *string {
 	return returns
 }
 
-func (i *jsiiProxy_IapSettings) ToTerraform() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IapSettings) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -1024,4 +1023,3 @@ func (i *jsiiProxy_IapSettings) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.memcacheInstance.MemcacheInstance",
-		reflect.TypeOf((*MemcacheInstance)(nil)).Elem(),
+		reflect.TypeFor[MemcacheInstance](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -109,7 +109,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zones", GoGetter: "Zones"},
 			_jsii_.MemberProperty{JsiiProperty: "zonesInput", GoGetter: "ZonesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MemcacheInstance{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -117,15 +117,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.memcacheInstance.MemcacheInstanceConfig",
-		reflect.TypeOf((*MemcacheInstanceConfig)(nil)).Elem(),
+		reflect.TypeFor[MemcacheInstanceConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.memcacheInstance.MemcacheInstanceMaintenancePolicy",
-		reflect.TypeOf((*MemcacheInstanceMaintenancePolicy)(nil)).Elem(),
+		reflect.TypeFor[MemcacheInstanceMaintenancePolicy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.memcacheInstance.MemcacheInstanceMaintenancePolicyOutputReference",
-		reflect.TypeOf((*MemcacheInstanceMaintenancePolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MemcacheInstanceMaintenancePolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -157,7 +157,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "weeklyMaintenanceWindow", GoGetter: "WeeklyMaintenanceWindow"},
 			_jsii_.MemberProperty{JsiiProperty: "weeklyMaintenanceWindowInput", GoGetter: "WeeklyMaintenanceWindowInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MemcacheInstanceMaintenancePolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -165,11 +165,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.memcacheInstance.MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindow",
-		reflect.TypeOf((*MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindow)(nil)).Elem(),
+		reflect.TypeFor[MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindow](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.memcacheInstance.MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowList",
-		reflect.TypeOf((*MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowList)(nil)).Elem(),
+		reflect.TypeFor[MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -183,7 +183,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -191,7 +191,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.memcacheInstance.MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference",
-		reflect.TypeOf((*MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -222,7 +222,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -230,11 +230,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.memcacheInstance.MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTime",
-		reflect.TypeOf((*MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTime)(nil)).Elem(),
+		reflect.TypeFor[MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTime](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.memcacheInstance.MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeOutputReference",
-		reflect.TypeOf((*MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -270,7 +270,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -278,11 +278,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.memcacheInstance.MemcacheInstanceMaintenanceSchedule",
-		reflect.TypeOf((*MemcacheInstanceMaintenanceSchedule)(nil)).Elem(),
+		reflect.TypeFor[MemcacheInstanceMaintenanceSchedule](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.memcacheInstance.MemcacheInstanceMaintenanceScheduleList",
-		reflect.TypeOf((*MemcacheInstanceMaintenanceScheduleList)(nil)).Elem(),
+		reflect.TypeFor[MemcacheInstanceMaintenanceScheduleList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -295,7 +295,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MemcacheInstanceMaintenanceScheduleList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -303,7 +303,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.memcacheInstance.MemcacheInstanceMaintenanceScheduleOutputReference",
-		reflect.TypeOf((*MemcacheInstanceMaintenanceScheduleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MemcacheInstanceMaintenanceScheduleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -330,7 +330,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MemcacheInstanceMaintenanceScheduleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -338,11 +338,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.memcacheInstance.MemcacheInstanceMemcacheNodes",
-		reflect.TypeOf((*MemcacheInstanceMemcacheNodes)(nil)).Elem(),
+		reflect.TypeFor[MemcacheInstanceMemcacheNodes](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.memcacheInstance.MemcacheInstanceMemcacheNodesList",
-		reflect.TypeOf((*MemcacheInstanceMemcacheNodesList)(nil)).Elem(),
+		reflect.TypeFor[MemcacheInstanceMemcacheNodesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -355,7 +355,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MemcacheInstanceMemcacheNodesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -363,7 +363,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.memcacheInstance.MemcacheInstanceMemcacheNodesOutputReference",
-		reflect.TypeOf((*MemcacheInstanceMemcacheNodesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MemcacheInstanceMemcacheNodesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -392,7 +392,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "zone", GoGetter: "Zone"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MemcacheInstanceMemcacheNodesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -400,11 +400,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.memcacheInstance.MemcacheInstanceMemcacheParameters",
-		reflect.TypeOf((*MemcacheInstanceMemcacheParameters)(nil)).Elem(),
+		reflect.TypeFor[MemcacheInstanceMemcacheParameters](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.memcacheInstance.MemcacheInstanceMemcacheParametersOutputReference",
-		reflect.TypeOf((*MemcacheInstanceMemcacheParametersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MemcacheInstanceMemcacheParametersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -432,7 +432,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MemcacheInstanceMemcacheParametersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -440,11 +440,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.memcacheInstance.MemcacheInstanceNodeConfig",
-		reflect.TypeOf((*MemcacheInstanceNodeConfig)(nil)).Elem(),
+		reflect.TypeFor[MemcacheInstanceNodeConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.memcacheInstance.MemcacheInstanceNodeConfigOutputReference",
-		reflect.TypeOf((*MemcacheInstanceNodeConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MemcacheInstanceNodeConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -472,7 +472,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MemcacheInstanceNodeConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -480,11 +480,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.memcacheInstance.MemcacheInstanceTimeouts",
-		reflect.TypeOf((*MemcacheInstanceTimeouts)(nil)).Elem(),
+		reflect.TypeFor[MemcacheInstanceTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.memcacheInstance.MemcacheInstanceTimeoutsOutputReference",
-		reflect.TypeOf((*MemcacheInstanceTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MemcacheInstanceTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -517,7 +517,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MemcacheInstanceTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -98,7 +98,7 @@ func (b *jsiiProxy_BackupDrBackupVaultEncryptionConfigOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_BackupDrBackupVaultEncryptionConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BackupDrBackupVaultEncryptionConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewBackupDrBackupVaultEncryptionConfigOutputReferenceParameters(ter
 
 	return nil
 }
-

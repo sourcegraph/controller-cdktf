@@ -1,6 +1,5 @@
 package computeurlmap
 
-
 type ComputeUrlMapPathMatcherRouteRules struct {
 	// For routeRules within a given pathMatcher, priority determines the order in which load balancer will interpret routeRules.
 	//
@@ -32,7 +31,7 @@ type ComputeUrlMapPathMatcherRouteRules struct {
 	// match_rules block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_url_map#match_rules ComputeUrlMap#match_rules}
-	MatchRules interface{} `field:"optional" json:"matchRules" yaml:"matchRules"`
+	MatchRules any `field:"optional" json:"matchRules" yaml:"matchRules"`
 	// route_action block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_url_map#route_action ComputeUrlMap#route_action}
@@ -53,4 +52,3 @@ type ComputeUrlMapPathMatcherRouteRules struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_url_map#url_redirect ComputeUrlMap#url_redirect}
 	UrlRedirect *ComputeUrlMapPathMatcherRouteRulesUrlRedirect `field:"optional" json:"urlRedirect" yaml:"urlRedirect"`
 }
-

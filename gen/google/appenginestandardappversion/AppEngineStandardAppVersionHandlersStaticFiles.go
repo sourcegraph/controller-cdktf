@@ -1,6 +1,5 @@
 package appenginestandardappversion
 
-
 type AppEngineStandardAppVersionHandlersStaticFiles struct {
 	// Whether files should also be uploaded as code data.
 	//
@@ -9,7 +8,7 @@ type AppEngineStandardAppVersionHandlersStaticFiles struct {
 	// against both your code and static data storage resource quotas.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/app_engine_standard_app_version#application_readable AppEngineStandardAppVersion#application_readable}
-	ApplicationReadable interface{} `field:"optional" json:"applicationReadable" yaml:"applicationReadable"`
+	ApplicationReadable any `field:"optional" json:"applicationReadable" yaml:"applicationReadable"`
 	// Time a static file served by this handler should be cached by web proxies and browsers.
 	//
 	// A duration in seconds with up to nine fractional digits, terminated by 's'. Example "3.5s".
@@ -35,10 +34,9 @@ type AppEngineStandardAppVersionHandlersStaticFiles struct {
 	// Whether this handler should match the request if the file referenced by the handler does not exist.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/app_engine_standard_app_version#require_matching_file AppEngineStandardAppVersion#require_matching_file}
-	RequireMatchingFile interface{} `field:"optional" json:"requireMatchingFile" yaml:"requireMatchingFile"`
+	RequireMatchingFile any `field:"optional" json:"requireMatchingFile" yaml:"requireMatchingFile"`
 	// Regular expression that matches the file paths for all files that should be referenced by this handler.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/app_engine_standard_app_version#upload_path_regex AppEngineStandardAppVersion#upload_path_regex}
 	UploadPathRegex *string `field:"optional" json:"uploadPathRegex" yaml:"uploadPathRegex"`
 }
-

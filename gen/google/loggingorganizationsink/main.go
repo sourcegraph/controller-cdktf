@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.loggingOrganizationSink.LoggingOrganizationSink",
-		reflect.TypeOf((*LoggingOrganizationSink)(nil)).Elem(),
+		reflect.TypeFor[LoggingOrganizationSink](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -86,7 +86,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "writerIdentity", GoGetter: "WriterIdentity"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LoggingOrganizationSink{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -94,11 +94,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.loggingOrganizationSink.LoggingOrganizationSinkBigqueryOptions",
-		reflect.TypeOf((*LoggingOrganizationSinkBigqueryOptions)(nil)).Elem(),
+		reflect.TypeFor[LoggingOrganizationSinkBigqueryOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.loggingOrganizationSink.LoggingOrganizationSinkBigqueryOptionsOutputReference",
-		reflect.TypeOf((*LoggingOrganizationSinkBigqueryOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LoggingOrganizationSinkBigqueryOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -124,7 +124,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "usePartitionedTables", GoGetter: "UsePartitionedTables"},
 			_jsii_.MemberProperty{JsiiProperty: "usePartitionedTablesInput", GoGetter: "UsePartitionedTablesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LoggingOrganizationSinkBigqueryOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -132,15 +132,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.loggingOrganizationSink.LoggingOrganizationSinkConfig",
-		reflect.TypeOf((*LoggingOrganizationSinkConfig)(nil)).Elem(),
+		reflect.TypeFor[LoggingOrganizationSinkConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.loggingOrganizationSink.LoggingOrganizationSinkExclusions",
-		reflect.TypeOf((*LoggingOrganizationSinkExclusions)(nil)).Elem(),
+		reflect.TypeFor[LoggingOrganizationSinkExclusions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.loggingOrganizationSink.LoggingOrganizationSinkExclusionsList",
-		reflect.TypeOf((*LoggingOrganizationSinkExclusionsList)(nil)).Elem(),
+		reflect.TypeFor[LoggingOrganizationSinkExclusionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -154,7 +154,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LoggingOrganizationSinkExclusionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -162,7 +162,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.loggingOrganizationSink.LoggingOrganizationSinkExclusionsOutputReference",
-		reflect.TypeOf((*LoggingOrganizationSinkExclusionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LoggingOrganizationSinkExclusionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -196,7 +196,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LoggingOrganizationSinkExclusionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -98,7 +98,7 @@ func (t *jsiiProxy_TranscoderJobTemplateConfigOverlaysImageOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_TranscoderJobTemplateConfigOverlaysImageOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_TranscoderJobTemplateConfigOverlaysImageOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewTranscoderJobTemplateConfigOverlaysImageOutputReferenceParameter
 
 	return nil
 }
-

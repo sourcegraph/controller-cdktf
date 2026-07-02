@@ -34,7 +34,7 @@ func (d *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigLimitsMaxFindin
 	return nil
 }
 
-func (j *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigLimitsMaxFindingsPerInfoTypeList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigLimitsMaxFindingsPerInfoTypeList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDataLossPreventionInspectTemplateInspectConfigLimitsMaxFindingsP
 
 	return nil
 }
-

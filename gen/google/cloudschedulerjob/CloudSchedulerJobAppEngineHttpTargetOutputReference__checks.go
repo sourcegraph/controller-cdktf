@@ -117,7 +117,7 @@ func (j *jsiiProxy_CloudSchedulerJobAppEngineHttpTargetOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_CloudSchedulerJobAppEngineHttpTargetOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudSchedulerJobAppEngineHttpTargetOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -241,4 +241,3 @@ func validateNewCloudSchedulerJobAppEngineHttpTargetOutputReferenceParameters(te
 
 	return nil
 }
-

@@ -19,7 +19,7 @@ func (c *jsiiProxy_ComputeDiskIamPolicy) validateAddMoveTargetParameters(moveTar
 	return nil
 }
 
-func (c *jsiiProxy_ComputeDiskIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_ComputeDiskIamPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_ComputeDiskIamPolicy) validateMoveFromIdParameters(id *string
 	return nil
 }
 
-func (c *jsiiProxy_ComputeDiskIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_ComputeDiskIamPolicy) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateComputeDiskIamPolicy_GenerateConfigForImportParameters(scope constr
 	return nil
 }
 
-func validateComputeDiskIamPolicy_IsConstructParameters(x interface{}) error {
+func validateComputeDiskIamPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateComputeDiskIamPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateComputeDiskIamPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateComputeDiskIamPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateComputeDiskIamPolicy_IsTerraformElementParameters(x interface{}) er
 	return nil
 }
 
-func validateComputeDiskIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+func validateComputeDiskIamPolicy_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateComputeDiskIamPolicy_IsTerraformResourceParameters(x interface{}) e
 	return nil
 }
 
-func (j *jsiiProxy_ComputeDiskIamPolicy) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeDiskIamPolicy) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_ComputeDiskIamPolicy) validateSetConnectionParameters(val int
 	return nil
 }
 
-func (j *jsiiProxy_ComputeDiskIamPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeDiskIamPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -374,7 +374,7 @@ func (j *jsiiProxy_ComputeDiskIamPolicy) validateSetProjectParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_ComputeDiskIamPolicy) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ComputeDiskIamPolicy) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -446,4 +446,3 @@ func validateNewComputeDiskIamPolicyParameters(scope constructs.Construct, id *s
 
 	return nil
 }
-

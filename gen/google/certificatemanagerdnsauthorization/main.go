@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.certificateManagerDnsAuthorization.CertificateManagerDnsAuthorization",
-		reflect.TypeOf((*CertificateManagerDnsAuthorization)(nil)).Elem(),
+		reflect.TypeFor[CertificateManagerDnsAuthorization](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -82,7 +82,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CertificateManagerDnsAuthorization{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -90,15 +90,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.certificateManagerDnsAuthorization.CertificateManagerDnsAuthorizationConfig",
-		reflect.TypeOf((*CertificateManagerDnsAuthorizationConfig)(nil)).Elem(),
+		reflect.TypeFor[CertificateManagerDnsAuthorizationConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.certificateManagerDnsAuthorization.CertificateManagerDnsAuthorizationDnsResourceRecord",
-		reflect.TypeOf((*CertificateManagerDnsAuthorizationDnsResourceRecord)(nil)).Elem(),
+		reflect.TypeFor[CertificateManagerDnsAuthorizationDnsResourceRecord](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.certificateManagerDnsAuthorization.CertificateManagerDnsAuthorizationDnsResourceRecordList",
-		reflect.TypeOf((*CertificateManagerDnsAuthorizationDnsResourceRecordList)(nil)).Elem(),
+		reflect.TypeFor[CertificateManagerDnsAuthorizationDnsResourceRecordList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -111,7 +111,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CertificateManagerDnsAuthorizationDnsResourceRecordList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -119,7 +119,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.certificateManagerDnsAuthorization.CertificateManagerDnsAuthorizationDnsResourceRecordOutputReference",
-		reflect.TypeOf((*CertificateManagerDnsAuthorizationDnsResourceRecordOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CertificateManagerDnsAuthorizationDnsResourceRecordOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -146,7 +146,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CertificateManagerDnsAuthorizationDnsResourceRecordOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -154,11 +154,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.certificateManagerDnsAuthorization.CertificateManagerDnsAuthorizationTimeouts",
-		reflect.TypeOf((*CertificateManagerDnsAuthorizationTimeouts)(nil)).Elem(),
+		reflect.TypeFor[CertificateManagerDnsAuthorizationTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.certificateManagerDnsAuthorization.CertificateManagerDnsAuthorizationTimeoutsOutputReference",
-		reflect.TypeOf((*CertificateManagerDnsAuthorizationTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CertificateManagerDnsAuthorizationTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -191,7 +191,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CertificateManagerDnsAuthorizationTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

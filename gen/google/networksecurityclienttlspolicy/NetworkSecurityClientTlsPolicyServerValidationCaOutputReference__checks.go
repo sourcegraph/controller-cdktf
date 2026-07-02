@@ -120,7 +120,7 @@ func (n *jsiiProxy_NetworkSecurityClientTlsPolicyServerValidationCaOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_NetworkSecurityClientTlsPolicyServerValidationCaOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkSecurityClientTlsPolicyServerValidationCaOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -185,7 +185,7 @@ func (j *jsiiProxy_NetworkSecurityClientTlsPolicyServerValidationCaOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_NetworkSecurityClientTlsPolicyServerValidationCaOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkSecurityClientTlsPolicyServerValidationCaOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -244,4 +244,3 @@ func validateNewNetworkSecurityClientTlsPolicyServerValidationCaOutputReferenceP
 
 	return nil
 }
-

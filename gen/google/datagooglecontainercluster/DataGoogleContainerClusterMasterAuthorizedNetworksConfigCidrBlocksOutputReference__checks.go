@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleContainerClusterMasterAuthorizedNetworksConfigCidrB
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleContainerClusterMasterAuthorizedNetworksConfigCidrBlocksOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleContainerClusterMasterAuthorizedNetworksConfigCidrBlocksOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleContainerClusterMasterAuthorizedNetworksConfigCidrBloc
 
 	return nil
 }
-

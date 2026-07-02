@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGooglePubsubTopicMessageStoragePolicyOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_DataGooglePubsubTopicMessageStoragePolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGooglePubsubTopicMessageStoragePolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGooglePubsubTopicMessageStoragePolicyOutputReferenceParamete
 
 	return nil
 }
-

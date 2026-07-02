@@ -18,11 +18,11 @@ type DataGoogleComputeRegionInstanceTemplate interface {
 	CdktfStack() cdktf.TerraformStack
 	ConfidentialInstanceConfig() DataGoogleComputeRegionInstanceTemplateConfidentialInstanceConfigList
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreationTimestamp() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -58,9 +58,9 @@ type DataGoogleComputeRegionInstanceTemplate interface {
 	MetadataFingerprint() *string
 	MetadataStartupScript() *string
 	MinCpuPlatform() *string
-	MostRecent() interface{}
-	SetMostRecent(val interface{})
-	MostRecentInput() interface{}
+	MostRecent() any
+	SetMostRecent(val any)
+	MostRecentInput() any
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -78,7 +78,7 @@ type DataGoogleComputeRegionInstanceTemplate interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
@@ -95,13 +95,13 @@ type DataGoogleComputeRegionInstanceTemplate interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -132,18 +132,18 @@ type DataGoogleComputeRegionInstanceTemplate interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetRegion()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataGoogleComputeRegionInstanceTemplate
@@ -191,8 +191,8 @@ func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplate) ConfidentialInstance
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplate) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplate) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -201,8 +201,8 @@ func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplate) ConstructNodeMetadat
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplate) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplate) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -431,8 +431,8 @@ func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplate) MinCpuPlatform() *st
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplate) MostRecent() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplate) MostRecent() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"mostRecent",
@@ -441,8 +441,8 @@ func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplate) MostRecent() interfa
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplate) MostRecentInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplate) MostRecentInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"mostRecentInput",
@@ -551,8 +551,8 @@ func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplate) Provider() cdktf.Ter
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplate) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplate) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -691,8 +691,8 @@ func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplate) TerraformLabels() cd
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplate) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplate) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -711,7 +711,6 @@ func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplate) TerraformResourceTyp
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/compute_region_instance_template google_compute_region_instance_template} Data Source.
 func NewDataGoogleComputeRegionInstanceTemplate(scope constructs.Construct, id *string, config *DataGoogleComputeRegionInstanceTemplateConfig) DataGoogleComputeRegionInstanceTemplate {
 	_init_.Initialize()
@@ -723,7 +722,7 @@ func NewDataGoogleComputeRegionInstanceTemplate(scope constructs.Construct, id *
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleComputeRegionInstanceTemplate.DataGoogleComputeRegionInstanceTemplate",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -736,12 +735,12 @@ func NewDataGoogleComputeRegionInstanceTemplate_Override(d DataGoogleComputeRegi
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleComputeRegionInstanceTemplate.DataGoogleComputeRegionInstanceTemplate",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplate)SetCount(val interface{}) {
+func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplate) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -752,7 +751,7 @@ func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplate)SetCount(val interfac
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplate)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplate) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -760,7 +759,7 @@ func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplate)SetDependsOn(val *[]*
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplate)SetFilter(val *string) {
+func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplate) SetFilter(val *string) {
 	if err := j.validateSetFilterParameters(val); err != nil {
 		panic(err)
 	}
@@ -771,7 +770,7 @@ func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplate)SetFilter(val *string
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplate)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplate) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -779,7 +778,7 @@ func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplate)SetForEach(val cdktf.
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplate)SetId(val *string) {
+func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplate) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -790,7 +789,7 @@ func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplate)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplate)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplate) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -801,7 +800,7 @@ func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplate)SetLifecycle(val *cdk
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplate)SetMostRecent(val interface{}) {
+func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplate) SetMostRecent(val any) {
 	if err := j.validateSetMostRecentParameters(val); err != nil {
 		panic(err)
 	}
@@ -812,7 +811,7 @@ func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplate)SetMostRecent(val int
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplate)SetName(val *string) {
+func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplate) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -823,7 +822,7 @@ func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplate)SetName(val *string) 
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplate)SetProject(val *string) {
+func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplate) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -834,7 +833,7 @@ func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplate)SetProject(val *strin
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplate)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplate) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -842,7 +841,7 @@ func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplate)SetProvider(val cdktf
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplate)SetRegion(val *string) {
+func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplate) SetRegion(val *string) {
 	if err := j.validateSetRegionParameters(val); err != nil {
 		panic(err)
 	}
@@ -865,7 +864,7 @@ func DataGoogleComputeRegionInstanceTemplate_GenerateConfigForImport(scope const
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleComputeRegionInstanceTemplate.DataGoogleComputeRegionInstanceTemplate",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -889,7 +888,7 @@ func DataGoogleComputeRegionInstanceTemplate_GenerateConfigForImport(scope const
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataGoogleComputeRegionInstanceTemplate_IsConstruct(x interface{}) *bool {
+func DataGoogleComputeRegionInstanceTemplate_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleComputeRegionInstanceTemplate_IsConstructParameters(x); err != nil {
@@ -900,7 +899,7 @@ func DataGoogleComputeRegionInstanceTemplate_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleComputeRegionInstanceTemplate.DataGoogleComputeRegionInstanceTemplate",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -908,7 +907,7 @@ func DataGoogleComputeRegionInstanceTemplate_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGoogleComputeRegionInstanceTemplate_IsTerraformDataSource(x interface{}) *bool {
+func DataGoogleComputeRegionInstanceTemplate_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleComputeRegionInstanceTemplate_IsTerraformDataSourceParameters(x); err != nil {
@@ -919,7 +918,7 @@ func DataGoogleComputeRegionInstanceTemplate_IsTerraformDataSource(x interface{}
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleComputeRegionInstanceTemplate.DataGoogleComputeRegionInstanceTemplate",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -927,7 +926,7 @@ func DataGoogleComputeRegionInstanceTemplate_IsTerraformDataSource(x interface{}
 }
 
 // Experimental.
-func DataGoogleComputeRegionInstanceTemplate_IsTerraformElement(x interface{}) *bool {
+func DataGoogleComputeRegionInstanceTemplate_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleComputeRegionInstanceTemplate_IsTerraformElementParameters(x); err != nil {
@@ -938,7 +937,7 @@ func DataGoogleComputeRegionInstanceTemplate_IsTerraformElement(x interface{}) *
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleComputeRegionInstanceTemplate.DataGoogleComputeRegionInstanceTemplate",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -956,27 +955,27 @@ func DataGoogleComputeRegionInstanceTemplate_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleComputeRegionInstanceTemplate) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataGoogleComputeRegionInstanceTemplate) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataGoogleComputeRegionInstanceTemplate) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataGoogleComputeRegionInstanceTemplate) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -992,7 +991,7 @@ func (d *jsiiProxy_DataGoogleComputeRegionInstanceTemplate) GetBooleanAttribute(
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1008,7 +1007,7 @@ func (d *jsiiProxy_DataGoogleComputeRegionInstanceTemplate) GetBooleanMapAttribu
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1024,7 +1023,7 @@ func (d *jsiiProxy_DataGoogleComputeRegionInstanceTemplate) GetListAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1040,7 +1039,7 @@ func (d *jsiiProxy_DataGoogleComputeRegionInstanceTemplate) GetNumberAttribute(t
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1056,7 +1055,7 @@ func (d *jsiiProxy_DataGoogleComputeRegionInstanceTemplate) GetNumberListAttribu
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1072,7 +1071,7 @@ func (d *jsiiProxy_DataGoogleComputeRegionInstanceTemplate) GetNumberMapAttribut
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1088,7 +1087,7 @@ func (d *jsiiProxy_DataGoogleComputeRegionInstanceTemplate) GetStringAttribute(t
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1104,7 +1103,7 @@ func (d *jsiiProxy_DataGoogleComputeRegionInstanceTemplate) GetStringMapAttribut
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1120,7 +1119,7 @@ func (d *jsiiProxy_DataGoogleComputeRegionInstanceTemplate) InterpolationForAttr
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1134,7 +1133,7 @@ func (d *jsiiProxy_DataGoogleComputeRegionInstanceTemplate) OverrideLogicalId(ne
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1194,8 +1193,8 @@ func (d *jsiiProxy_DataGoogleComputeRegionInstanceTemplate) ResetRegion() {
 	)
 }
 
-func (d *jsiiProxy_DataGoogleComputeRegionInstanceTemplate) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleComputeRegionInstanceTemplate) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1207,8 +1206,8 @@ func (d *jsiiProxy_DataGoogleComputeRegionInstanceTemplate) SynthesizeAttributes
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleComputeRegionInstanceTemplate) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleComputeRegionInstanceTemplate) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1220,8 +1219,8 @@ func (d *jsiiProxy_DataGoogleComputeRegionInstanceTemplate) SynthesizeHclAttribu
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleComputeRegionInstanceTemplate) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleComputeRegionInstanceTemplate) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1233,8 +1232,8 @@ func (d *jsiiProxy_DataGoogleComputeRegionInstanceTemplate) ToHclTerraform() int
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleComputeRegionInstanceTemplate) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleComputeRegionInstanceTemplate) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1259,8 +1258,8 @@ func (d *jsiiProxy_DataGoogleComputeRegionInstanceTemplate) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleComputeRegionInstanceTemplate) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleComputeRegionInstanceTemplate) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1271,4 +1270,3 @@ func (d *jsiiProxy_DataGoogleComputeRegionInstanceTemplate) ToTerraform() interf
 
 	return returns
 }
-

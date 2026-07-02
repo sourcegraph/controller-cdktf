@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.biglakeTable.BiglakeTable",
-		reflect.TypeOf((*BiglakeTable)(nil)).Elem(),
+		reflect.TypeFor[BiglakeTable](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,7 +77,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BiglakeTable{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -85,15 +85,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.biglakeTable.BiglakeTableConfig",
-		reflect.TypeOf((*BiglakeTableConfig)(nil)).Elem(),
+		reflect.TypeFor[BiglakeTableConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptions",
-		reflect.TypeOf((*BiglakeTableHiveOptions)(nil)).Elem(),
+		reflect.TypeFor[BiglakeTableHiveOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference",
-		reflect.TypeOf((*BiglakeTableHiveOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BiglakeTableHiveOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -127,7 +127,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BiglakeTableHiveOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -135,11 +135,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptor",
-		reflect.TypeOf((*BiglakeTableHiveOptionsStorageDescriptor)(nil)).Elem(),
+		reflect.TypeFor[BiglakeTableHiveOptionsStorageDescriptor](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference",
-		reflect.TypeOf((*BiglakeTableHiveOptionsStorageDescriptorOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BiglakeTableHiveOptionsStorageDescriptorOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -172,7 +172,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BiglakeTableHiveOptionsStorageDescriptorOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -180,11 +180,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.biglakeTable.BiglakeTableTimeouts",
-		reflect.TypeOf((*BiglakeTableTimeouts)(nil)).Elem(),
+		reflect.TypeFor[BiglakeTableTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference",
-		reflect.TypeOf((*BiglakeTableTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BiglakeTableTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -217,7 +217,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BiglakeTableTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

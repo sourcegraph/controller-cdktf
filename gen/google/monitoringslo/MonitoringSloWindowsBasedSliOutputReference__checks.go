@@ -131,7 +131,7 @@ func (m *jsiiProxy_MonitoringSloWindowsBasedSliOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_MonitoringSloWindowsBasedSliOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MonitoringSloWindowsBasedSliOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -247,4 +247,3 @@ func validateNewMonitoringSloWindowsBasedSliOutputReferenceParameters(terraformR
 
 	return nil
 }
-

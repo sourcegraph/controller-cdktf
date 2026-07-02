@@ -139,7 +139,7 @@ func (j *jsiiProxy_VmwareenginePrivateCloudManagementClusterAutoscalingSettingsA
 	return nil
 }
 
-func (j *jsiiProxy_VmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_VmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -204,7 +204,7 @@ func (j *jsiiProxy_VmwareenginePrivateCloudManagementClusterAutoscalingSettingsA
 	return nil
 }
 
-func (j *jsiiProxy_VmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_VmwareenginePrivateCloudManagementClusterAutoscalingSettingsAutoscalingPoliciesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -279,4 +279,3 @@ func validateNewVmwareenginePrivateCloudManagementClusterAutoscalingSettingsAuto
 
 	return nil
 }
-

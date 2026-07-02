@@ -1,6 +1,5 @@
 package computeregionurlmap
 
-
 type ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches struct {
 	// The name of the HTTP header to match.
 	//
@@ -23,7 +22,7 @@ type ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches struct {
 	// match criteria above are NOT met. Defaults to false.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_url_map#invert_match ComputeRegionUrlMap#invert_match}
-	InvertMatch interface{} `field:"optional" json:"invertMatch" yaml:"invertMatch"`
+	InvertMatch any `field:"optional" json:"invertMatch" yaml:"invertMatch"`
 	// The value of the header must start with the contents of prefixMatch.
 	//
 	// Only one of
@@ -39,7 +38,7 @@ type ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches struct {
 	// prefixMatch, suffixMatch, regexMatch, presentMatch or rangeMatch must be set.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_url_map#present_match ComputeRegionUrlMap#present_match}
-	PresentMatch interface{} `field:"optional" json:"presentMatch" yaml:"presentMatch"`
+	PresentMatch any `field:"optional" json:"presentMatch" yaml:"presentMatch"`
 	// range_match block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_url_map#range_match ComputeRegionUrlMap#range_match}
@@ -64,4 +63,3 @@ type ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_url_map#suffix_match ComputeRegionUrlMap#suffix_match}
 	SuffixMatch *string `field:"optional" json:"suffixMatch" yaml:"suffixMatch"`
 }
-

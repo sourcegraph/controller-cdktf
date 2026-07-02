@@ -98,7 +98,7 @@ func (m *jsiiProxy_ModelArmorFloorsettingFilterConfigPiAndJailbreakFilterSetting
 	return nil
 }
 
-func (j *jsiiProxy_ModelArmorFloorsettingFilterConfigPiAndJailbreakFilterSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ModelArmorFloorsettingFilterConfigPiAndJailbreakFilterSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewModelArmorFloorsettingFilterConfigPiAndJailbreakFilterSettingsOu
 
 	return nil
 }
-

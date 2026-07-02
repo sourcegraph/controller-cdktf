@@ -12,9 +12,9 @@ type BigqueryTableTableReplicationInfoOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -52,7 +52,7 @@ type BigqueryTableTableReplicationInfoOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -76,7 +76,7 @@ type BigqueryTableTableReplicationInfoOutputReference interface {
 	ResetReplicationIntervalMs()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -89,8 +89,8 @@ type jsiiProxy_BigqueryTableTableReplicationInfoOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_BigqueryTableTableReplicationInfoOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigqueryTableTableReplicationInfoOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -239,7 +239,6 @@ func (j *jsiiProxy_BigqueryTableTableReplicationInfoOutputReference) TerraformRe
 	return returns
 }
 
-
 func NewBigqueryTableTableReplicationInfoOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) BigqueryTableTableReplicationInfoOutputReference {
 	_init_.Initialize()
 
@@ -250,7 +249,7 @@ func NewBigqueryTableTableReplicationInfoOutputReference(terraformResource cdktf
 
 	_jsii_.Create(
 		"@cdktf/provider-google.bigqueryTable.BigqueryTableTableReplicationInfoOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -262,12 +261,12 @@ func NewBigqueryTableTableReplicationInfoOutputReference_Override(b BigqueryTabl
 
 	_jsii_.Create(
 		"@cdktf/provider-google.bigqueryTable.BigqueryTableTableReplicationInfoOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		b,
 	)
 }
 
-func (j *jsiiProxy_BigqueryTableTableReplicationInfoOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_BigqueryTableTableReplicationInfoOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -278,7 +277,7 @@ func (j *jsiiProxy_BigqueryTableTableReplicationInfoOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_BigqueryTableTableReplicationInfoOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_BigqueryTableTableReplicationInfoOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -289,7 +288,7 @@ func (j *jsiiProxy_BigqueryTableTableReplicationInfoOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_BigqueryTableTableReplicationInfoOutputReference)SetInternalValue(val *BigqueryTableTableReplicationInfo) {
+func (j *jsiiProxy_BigqueryTableTableReplicationInfoOutputReference) SetInternalValue(val *BigqueryTableTableReplicationInfo) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,7 +299,7 @@ func (j *jsiiProxy_BigqueryTableTableReplicationInfoOutputReference)SetInternalV
 	)
 }
 
-func (j *jsiiProxy_BigqueryTableTableReplicationInfoOutputReference)SetReplicationIntervalMs(val *float64) {
+func (j *jsiiProxy_BigqueryTableTableReplicationInfoOutputReference) SetReplicationIntervalMs(val *float64) {
 	if err := j.validateSetReplicationIntervalMsParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,7 +310,7 @@ func (j *jsiiProxy_BigqueryTableTableReplicationInfoOutputReference)SetReplicati
 	)
 }
 
-func (j *jsiiProxy_BigqueryTableTableReplicationInfoOutputReference)SetSourceDatasetId(val *string) {
+func (j *jsiiProxy_BigqueryTableTableReplicationInfoOutputReference) SetSourceDatasetId(val *string) {
 	if err := j.validateSetSourceDatasetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -322,7 +321,7 @@ func (j *jsiiProxy_BigqueryTableTableReplicationInfoOutputReference)SetSourceDat
 	)
 }
 
-func (j *jsiiProxy_BigqueryTableTableReplicationInfoOutputReference)SetSourceProjectId(val *string) {
+func (j *jsiiProxy_BigqueryTableTableReplicationInfoOutputReference) SetSourceProjectId(val *string) {
 	if err := j.validateSetSourceProjectIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -333,7 +332,7 @@ func (j *jsiiProxy_BigqueryTableTableReplicationInfoOutputReference)SetSourcePro
 	)
 }
 
-func (j *jsiiProxy_BigqueryTableTableReplicationInfoOutputReference)SetSourceTableId(val *string) {
+func (j *jsiiProxy_BigqueryTableTableReplicationInfoOutputReference) SetSourceTableId(val *string) {
 	if err := j.validateSetSourceTableIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -344,7 +343,7 @@ func (j *jsiiProxy_BigqueryTableTableReplicationInfoOutputReference)SetSourceTab
 	)
 }
 
-func (j *jsiiProxy_BigqueryTableTableReplicationInfoOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_BigqueryTableTableReplicationInfoOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -355,7 +354,7 @@ func (j *jsiiProxy_BigqueryTableTableReplicationInfoOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_BigqueryTableTableReplicationInfoOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BigqueryTableTableReplicationInfoOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -379,16 +378,16 @@ func (b *jsiiProxy_BigqueryTableTableReplicationInfoOutputReference) ComputeFqn(
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryTableTableReplicationInfoOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (b *jsiiProxy_BigqueryTableTableReplicationInfoOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := b.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (b *jsiiProxy_BigqueryTableTableReplicationInfoOutputReference) GetBooleanA
 	_jsii_.Invoke(
 		b,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (b *jsiiProxy_BigqueryTableTableReplicationInfoOutputReference) GetBooleanM
 	_jsii_.Invoke(
 		b,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (b *jsiiProxy_BigqueryTableTableReplicationInfoOutputReference) GetListAttr
 	_jsii_.Invoke(
 		b,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (b *jsiiProxy_BigqueryTableTableReplicationInfoOutputReference) GetNumberAt
 	_jsii_.Invoke(
 		b,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (b *jsiiProxy_BigqueryTableTableReplicationInfoOutputReference) GetNumberLi
 	_jsii_.Invoke(
 		b,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (b *jsiiProxy_BigqueryTableTableReplicationInfoOutputReference) GetNumberMa
 	_jsii_.Invoke(
 		b,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -500,7 +499,7 @@ func (b *jsiiProxy_BigqueryTableTableReplicationInfoOutputReference) GetStringAt
 	_jsii_.Invoke(
 		b,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -516,7 +515,7 @@ func (b *jsiiProxy_BigqueryTableTableReplicationInfoOutputReference) GetStringMa
 	_jsii_.Invoke(
 		b,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -545,7 +544,7 @@ func (b *jsiiProxy_BigqueryTableTableReplicationInfoOutputReference) Interpolati
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -560,16 +559,16 @@ func (b *jsiiProxy_BigqueryTableTableReplicationInfoOutputReference) ResetReplic
 	)
 }
 
-func (b *jsiiProxy_BigqueryTableTableReplicationInfoOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (b *jsiiProxy_BigqueryTableTableReplicationInfoOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := b.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -588,4 +587,3 @@ func (b *jsiiProxy_BigqueryTableTableReplicationInfoOutputReference) ToString() 
 
 	return returns
 }
-

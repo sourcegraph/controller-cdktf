@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBinding",
-		reflect.TypeOf((*AccessContextManagerGcpUserAccessBinding)(nil)).Elem(),
+		reflect.TypeFor[AccessContextManagerGcpUserAccessBinding](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessLevels", GoGetter: "AccessLevels"},
 			_jsii_.MemberProperty{JsiiProperty: "accessLevelsInput", GoGetter: "AccessLevelsInput"},
@@ -76,7 +76,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessContextManagerGcpUserAccessBinding{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -84,19 +84,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingConfig",
-		reflect.TypeOf((*AccessContextManagerGcpUserAccessBindingConfig)(nil)).Elem(),
+		reflect.TypeFor[AccessContextManagerGcpUserAccessBindingConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingScopedAccessSettings",
-		reflect.TypeOf((*AccessContextManagerGcpUserAccessBindingScopedAccessSettings)(nil)).Elem(),
+		reflect.TypeFor[AccessContextManagerGcpUserAccessBindingScopedAccessSettings](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingScopedAccessSettingsActiveSettings",
-		reflect.TypeOf((*AccessContextManagerGcpUserAccessBindingScopedAccessSettingsActiveSettings)(nil)).Elem(),
+		reflect.TypeFor[AccessContextManagerGcpUserAccessBindingScopedAccessSettingsActiveSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingScopedAccessSettingsActiveSettingsOutputReference",
-		reflect.TypeOf((*AccessContextManagerGcpUserAccessBindingScopedAccessSettingsActiveSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AccessContextManagerGcpUserAccessBindingScopedAccessSettingsActiveSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessLevels", GoGetter: "AccessLevels"},
 			_jsii_.MemberProperty{JsiiProperty: "accessLevelsInput", GoGetter: "AccessLevelsInput"},
@@ -127,7 +127,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessContextManagerGcpUserAccessBindingScopedAccessSettingsActiveSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -135,11 +135,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingScopedAccessSettingsActiveSettingsSessionSettings",
-		reflect.TypeOf((*AccessContextManagerGcpUserAccessBindingScopedAccessSettingsActiveSettingsSessionSettings)(nil)).Elem(),
+		reflect.TypeFor[AccessContextManagerGcpUserAccessBindingScopedAccessSettingsActiveSettingsSessionSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingScopedAccessSettingsActiveSettingsSessionSettingsOutputReference",
-		reflect.TypeOf((*AccessContextManagerGcpUserAccessBindingScopedAccessSettingsActiveSettingsSessionSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AccessContextManagerGcpUserAccessBindingScopedAccessSettingsActiveSettingsSessionSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -178,7 +178,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "useOidcMaxAge", GoGetter: "UseOidcMaxAge"},
 			_jsii_.MemberProperty{JsiiProperty: "useOidcMaxAgeInput", GoGetter: "UseOidcMaxAgeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessContextManagerGcpUserAccessBindingScopedAccessSettingsActiveSettingsSessionSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -186,11 +186,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingScopedAccessSettingsDryRunSettings",
-		reflect.TypeOf((*AccessContextManagerGcpUserAccessBindingScopedAccessSettingsDryRunSettings)(nil)).Elem(),
+		reflect.TypeFor[AccessContextManagerGcpUserAccessBindingScopedAccessSettingsDryRunSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingScopedAccessSettingsDryRunSettingsOutputReference",
-		reflect.TypeOf((*AccessContextManagerGcpUserAccessBindingScopedAccessSettingsDryRunSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AccessContextManagerGcpUserAccessBindingScopedAccessSettingsDryRunSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessLevels", GoGetter: "AccessLevels"},
 			_jsii_.MemberProperty{JsiiProperty: "accessLevelsInput", GoGetter: "AccessLevelsInput"},
@@ -217,7 +217,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessContextManagerGcpUserAccessBindingScopedAccessSettingsDryRunSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -225,7 +225,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingScopedAccessSettingsList",
-		reflect.TypeOf((*AccessContextManagerGcpUserAccessBindingScopedAccessSettingsList)(nil)).Elem(),
+		reflect.TypeFor[AccessContextManagerGcpUserAccessBindingScopedAccessSettingsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -239,7 +239,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessContextManagerGcpUserAccessBindingScopedAccessSettingsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -247,7 +247,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingScopedAccessSettingsOutputReference",
-		reflect.TypeOf((*AccessContextManagerGcpUserAccessBindingScopedAccessSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AccessContextManagerGcpUserAccessBindingScopedAccessSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "activeSettings", GoGetter: "ActiveSettings"},
 			_jsii_.MemberProperty{JsiiProperty: "activeSettingsInput", GoGetter: "ActiveSettingsInput"},
@@ -283,7 +283,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessContextManagerGcpUserAccessBindingScopedAccessSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -291,15 +291,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingScopedAccessSettingsScope",
-		reflect.TypeOf((*AccessContextManagerGcpUserAccessBindingScopedAccessSettingsScope)(nil)).Elem(),
+		reflect.TypeFor[AccessContextManagerGcpUserAccessBindingScopedAccessSettingsScope](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingScopedAccessSettingsScopeClientScope",
-		reflect.TypeOf((*AccessContextManagerGcpUserAccessBindingScopedAccessSettingsScopeClientScope)(nil)).Elem(),
+		reflect.TypeFor[AccessContextManagerGcpUserAccessBindingScopedAccessSettingsScopeClientScope](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingScopedAccessSettingsScopeClientScopeOutputReference",
-		reflect.TypeOf((*AccessContextManagerGcpUserAccessBindingScopedAccessSettingsScopeClientScopeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AccessContextManagerGcpUserAccessBindingScopedAccessSettingsScopeClientScopeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -327,7 +327,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessContextManagerGcpUserAccessBindingScopedAccessSettingsScopeClientScopeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -335,11 +335,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingScopedAccessSettingsScopeClientScopeRestrictedClientApplication",
-		reflect.TypeOf((*AccessContextManagerGcpUserAccessBindingScopedAccessSettingsScopeClientScopeRestrictedClientApplication)(nil)).Elem(),
+		reflect.TypeFor[AccessContextManagerGcpUserAccessBindingScopedAccessSettingsScopeClientScopeRestrictedClientApplication](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingScopedAccessSettingsScopeClientScopeRestrictedClientApplicationOutputReference",
-		reflect.TypeOf((*AccessContextManagerGcpUserAccessBindingScopedAccessSettingsScopeClientScopeRestrictedClientApplicationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AccessContextManagerGcpUserAccessBindingScopedAccessSettingsScopeClientScopeRestrictedClientApplicationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clientId", GoGetter: "ClientId"},
 			_jsii_.MemberProperty{JsiiProperty: "clientIdInput", GoGetter: "ClientIdInput"},
@@ -369,7 +369,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessContextManagerGcpUserAccessBindingScopedAccessSettingsScopeClientScopeRestrictedClientApplicationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -377,7 +377,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingScopedAccessSettingsScopeOutputReference",
-		reflect.TypeOf((*AccessContextManagerGcpUserAccessBindingScopedAccessSettingsScopeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AccessContextManagerGcpUserAccessBindingScopedAccessSettingsScopeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clientScope", GoGetter: "ClientScope"},
 			_jsii_.MemberProperty{JsiiProperty: "clientScopeInput", GoGetter: "ClientScopeInput"},
@@ -405,7 +405,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessContextManagerGcpUserAccessBindingScopedAccessSettingsScopeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -413,11 +413,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingSessionSettings",
-		reflect.TypeOf((*AccessContextManagerGcpUserAccessBindingSessionSettings)(nil)).Elem(),
+		reflect.TypeFor[AccessContextManagerGcpUserAccessBindingSessionSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingSessionSettingsOutputReference",
-		reflect.TypeOf((*AccessContextManagerGcpUserAccessBindingSessionSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AccessContextManagerGcpUserAccessBindingSessionSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -456,7 +456,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "useOidcMaxAge", GoGetter: "UseOidcMaxAge"},
 			_jsii_.MemberProperty{JsiiProperty: "useOidcMaxAgeInput", GoGetter: "UseOidcMaxAgeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessContextManagerGcpUserAccessBindingSessionSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -464,11 +464,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingTimeouts",
-		reflect.TypeOf((*AccessContextManagerGcpUserAccessBindingTimeouts)(nil)).Elem(),
+		reflect.TypeFor[AccessContextManagerGcpUserAccessBindingTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingTimeoutsOutputReference",
-		reflect.TypeOf((*AccessContextManagerGcpUserAccessBindingTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AccessContextManagerGcpUserAccessBindingTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -501,7 +501,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessContextManagerGcpUserAccessBindingTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

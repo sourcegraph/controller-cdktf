@@ -18,15 +18,15 @@ type ComputePublicDelegatedPrefix interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -50,9 +50,9 @@ type ComputePublicDelegatedPrefix interface {
 	SetIpCidrRange(val *string)
 	IpCidrRangeInput() *string
 	Ipv6AccessType() *string
-	IsLiveMigration() interface{}
-	SetIsLiveMigration(val interface{})
-	IsLiveMigrationInput() interface{}
+	IsLiveMigration() any
+	SetIsLiveMigration(val any)
+	IsLiveMigrationInput() any
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -76,12 +76,12 @@ type ComputePublicDelegatedPrefix interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	PublicDelegatedSubPrefixs() ComputePublicDelegatedPrefixPublicDelegatedSubPrefixsList
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
@@ -89,18 +89,18 @@ type ComputePublicDelegatedPrefix interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() ComputePublicDelegatedPrefixTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -118,7 +118,7 @@ type ComputePublicDelegatedPrefix interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -130,7 +130,7 @@ type ComputePublicDelegatedPrefix interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -148,17 +148,17 @@ type ComputePublicDelegatedPrefix interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ComputePublicDelegatedPrefix
@@ -196,8 +196,8 @@ func (j *jsiiProxy_ComputePublicDelegatedPrefix) CdktfStack() cdktf.TerraformSta
 	return returns
 }
 
-func (j *jsiiProxy_ComputePublicDelegatedPrefix) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputePublicDelegatedPrefix) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -206,8 +206,8 @@ func (j *jsiiProxy_ComputePublicDelegatedPrefix) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ComputePublicDelegatedPrefix) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ComputePublicDelegatedPrefix) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -216,8 +216,8 @@ func (j *jsiiProxy_ComputePublicDelegatedPrefix) ConstructNodeMetadata() *map[st
 	return returns
 }
 
-func (j *jsiiProxy_ComputePublicDelegatedPrefix) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputePublicDelegatedPrefix) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -346,8 +346,8 @@ func (j *jsiiProxy_ComputePublicDelegatedPrefix) Ipv6AccessType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ComputePublicDelegatedPrefix) IsLiveMigration() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputePublicDelegatedPrefix) IsLiveMigration() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isLiveMigration",
@@ -356,8 +356,8 @@ func (j *jsiiProxy_ComputePublicDelegatedPrefix) IsLiveMigration() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ComputePublicDelegatedPrefix) IsLiveMigrationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputePublicDelegatedPrefix) IsLiveMigrationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isLiveMigrationInput",
@@ -476,8 +476,8 @@ func (j *jsiiProxy_ComputePublicDelegatedPrefix) Provider() cdktf.TerraformProvi
 	return returns
 }
 
-func (j *jsiiProxy_ComputePublicDelegatedPrefix) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ComputePublicDelegatedPrefix) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -496,8 +496,8 @@ func (j *jsiiProxy_ComputePublicDelegatedPrefix) PublicDelegatedSubPrefixs() Com
 	return returns
 }
 
-func (j *jsiiProxy_ComputePublicDelegatedPrefix) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputePublicDelegatedPrefix) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -546,8 +546,8 @@ func (j *jsiiProxy_ComputePublicDelegatedPrefix) TerraformGeneratorMetadata() *c
 	return returns
 }
 
-func (j *jsiiProxy_ComputePublicDelegatedPrefix) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ComputePublicDelegatedPrefix) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -576,8 +576,8 @@ func (j *jsiiProxy_ComputePublicDelegatedPrefix) Timeouts() ComputePublicDelegat
 	return returns
 }
 
-func (j *jsiiProxy_ComputePublicDelegatedPrefix) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputePublicDelegatedPrefix) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -585,7 +585,6 @@ func (j *jsiiProxy_ComputePublicDelegatedPrefix) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_public_delegated_prefix google_compute_public_delegated_prefix} Resource.
 func NewComputePublicDelegatedPrefix(scope constructs.Construct, id *string, config *ComputePublicDelegatedPrefixConfig) ComputePublicDelegatedPrefix {
@@ -598,7 +597,7 @@ func NewComputePublicDelegatedPrefix(scope constructs.Construct, id *string, con
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computePublicDelegatedPrefix.ComputePublicDelegatedPrefix",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -611,12 +610,12 @@ func NewComputePublicDelegatedPrefix_Override(c ComputePublicDelegatedPrefix, sc
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computePublicDelegatedPrefix.ComputePublicDelegatedPrefix",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputePublicDelegatedPrefix)SetAllocatablePrefixLength(val *float64) {
+func (j *jsiiProxy_ComputePublicDelegatedPrefix) SetAllocatablePrefixLength(val *float64) {
 	if err := j.validateSetAllocatablePrefixLengthParameters(val); err != nil {
 		panic(err)
 	}
@@ -627,7 +626,7 @@ func (j *jsiiProxy_ComputePublicDelegatedPrefix)SetAllocatablePrefixLength(val *
 	)
 }
 
-func (j *jsiiProxy_ComputePublicDelegatedPrefix)SetConnection(val interface{}) {
+func (j *jsiiProxy_ComputePublicDelegatedPrefix) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -638,7 +637,7 @@ func (j *jsiiProxy_ComputePublicDelegatedPrefix)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputePublicDelegatedPrefix)SetCount(val interface{}) {
+func (j *jsiiProxy_ComputePublicDelegatedPrefix) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -649,7 +648,7 @@ func (j *jsiiProxy_ComputePublicDelegatedPrefix)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputePublicDelegatedPrefix)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ComputePublicDelegatedPrefix) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -657,7 +656,7 @@ func (j *jsiiProxy_ComputePublicDelegatedPrefix)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ComputePublicDelegatedPrefix)SetDescription(val *string) {
+func (j *jsiiProxy_ComputePublicDelegatedPrefix) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -668,7 +667,7 @@ func (j *jsiiProxy_ComputePublicDelegatedPrefix)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputePublicDelegatedPrefix)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ComputePublicDelegatedPrefix) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -676,7 +675,7 @@ func (j *jsiiProxy_ComputePublicDelegatedPrefix)SetForEach(val cdktf.ITerraformI
 	)
 }
 
-func (j *jsiiProxy_ComputePublicDelegatedPrefix)SetId(val *string) {
+func (j *jsiiProxy_ComputePublicDelegatedPrefix) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -687,7 +686,7 @@ func (j *jsiiProxy_ComputePublicDelegatedPrefix)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputePublicDelegatedPrefix)SetIpCidrRange(val *string) {
+func (j *jsiiProxy_ComputePublicDelegatedPrefix) SetIpCidrRange(val *string) {
 	if err := j.validateSetIpCidrRangeParameters(val); err != nil {
 		panic(err)
 	}
@@ -698,7 +697,7 @@ func (j *jsiiProxy_ComputePublicDelegatedPrefix)SetIpCidrRange(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputePublicDelegatedPrefix)SetIsLiveMigration(val interface{}) {
+func (j *jsiiProxy_ComputePublicDelegatedPrefix) SetIsLiveMigration(val any) {
 	if err := j.validateSetIsLiveMigrationParameters(val); err != nil {
 		panic(err)
 	}
@@ -709,7 +708,7 @@ func (j *jsiiProxy_ComputePublicDelegatedPrefix)SetIsLiveMigration(val interface
 	)
 }
 
-func (j *jsiiProxy_ComputePublicDelegatedPrefix)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ComputePublicDelegatedPrefix) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -720,7 +719,7 @@ func (j *jsiiProxy_ComputePublicDelegatedPrefix)SetLifecycle(val *cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_ComputePublicDelegatedPrefix)SetMode(val *string) {
+func (j *jsiiProxy_ComputePublicDelegatedPrefix) SetMode(val *string) {
 	if err := j.validateSetModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -731,7 +730,7 @@ func (j *jsiiProxy_ComputePublicDelegatedPrefix)SetMode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputePublicDelegatedPrefix)SetName(val *string) {
+func (j *jsiiProxy_ComputePublicDelegatedPrefix) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -742,7 +741,7 @@ func (j *jsiiProxy_ComputePublicDelegatedPrefix)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputePublicDelegatedPrefix)SetParentPrefix(val *string) {
+func (j *jsiiProxy_ComputePublicDelegatedPrefix) SetParentPrefix(val *string) {
 	if err := j.validateSetParentPrefixParameters(val); err != nil {
 		panic(err)
 	}
@@ -753,7 +752,7 @@ func (j *jsiiProxy_ComputePublicDelegatedPrefix)SetParentPrefix(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputePublicDelegatedPrefix)SetProject(val *string) {
+func (j *jsiiProxy_ComputePublicDelegatedPrefix) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -764,7 +763,7 @@ func (j *jsiiProxy_ComputePublicDelegatedPrefix)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputePublicDelegatedPrefix)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ComputePublicDelegatedPrefix) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -772,7 +771,7 @@ func (j *jsiiProxy_ComputePublicDelegatedPrefix)SetProvider(val cdktf.TerraformP
 	)
 }
 
-func (j *jsiiProxy_ComputePublicDelegatedPrefix)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ComputePublicDelegatedPrefix) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -783,7 +782,7 @@ func (j *jsiiProxy_ComputePublicDelegatedPrefix)SetProvisioners(val *[]interface
 	)
 }
 
-func (j *jsiiProxy_ComputePublicDelegatedPrefix)SetRegion(val *string) {
+func (j *jsiiProxy_ComputePublicDelegatedPrefix) SetRegion(val *string) {
 	if err := j.validateSetRegionParameters(val); err != nil {
 		panic(err)
 	}
@@ -806,7 +805,7 @@ func ComputePublicDelegatedPrefix_GenerateConfigForImport(scope constructs.Const
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computePublicDelegatedPrefix.ComputePublicDelegatedPrefix",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -830,7 +829,7 @@ func ComputePublicDelegatedPrefix_GenerateConfigForImport(scope constructs.Const
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ComputePublicDelegatedPrefix_IsConstruct(x interface{}) *bool {
+func ComputePublicDelegatedPrefix_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputePublicDelegatedPrefix_IsConstructParameters(x); err != nil {
@@ -841,7 +840,7 @@ func ComputePublicDelegatedPrefix_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computePublicDelegatedPrefix.ComputePublicDelegatedPrefix",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -849,7 +848,7 @@ func ComputePublicDelegatedPrefix_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ComputePublicDelegatedPrefix_IsTerraformElement(x interface{}) *bool {
+func ComputePublicDelegatedPrefix_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputePublicDelegatedPrefix_IsTerraformElementParameters(x); err != nil {
@@ -860,7 +859,7 @@ func ComputePublicDelegatedPrefix_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computePublicDelegatedPrefix.ComputePublicDelegatedPrefix",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -868,7 +867,7 @@ func ComputePublicDelegatedPrefix_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ComputePublicDelegatedPrefix_IsTerraformResource(x interface{}) *bool {
+func ComputePublicDelegatedPrefix_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputePublicDelegatedPrefix_IsTerraformResourceParameters(x); err != nil {
@@ -879,7 +878,7 @@ func ComputePublicDelegatedPrefix_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computePublicDelegatedPrefix.ComputePublicDelegatedPrefix",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -904,31 +903,31 @@ func (c *jsiiProxy_ComputePublicDelegatedPrefix) AddMoveTarget(moveTarget *strin
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_ComputePublicDelegatedPrefix) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_ComputePublicDelegatedPrefix) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_ComputePublicDelegatedPrefix) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComputePublicDelegatedPrefix) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -944,7 +943,7 @@ func (c *jsiiProxy_ComputePublicDelegatedPrefix) GetBooleanAttribute(terraformAt
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -960,7 +959,7 @@ func (c *jsiiProxy_ComputePublicDelegatedPrefix) GetBooleanMapAttribute(terrafor
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -976,7 +975,7 @@ func (c *jsiiProxy_ComputePublicDelegatedPrefix) GetListAttribute(terraformAttri
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -992,7 +991,7 @@ func (c *jsiiProxy_ComputePublicDelegatedPrefix) GetNumberAttribute(terraformAtt
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1008,7 +1007,7 @@ func (c *jsiiProxy_ComputePublicDelegatedPrefix) GetNumberListAttribute(terrafor
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1024,7 +1023,7 @@ func (c *jsiiProxy_ComputePublicDelegatedPrefix) GetNumberMapAttribute(terraform
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1040,7 +1039,7 @@ func (c *jsiiProxy_ComputePublicDelegatedPrefix) GetStringAttribute(terraformAtt
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1056,15 +1055,15 @@ func (c *jsiiProxy_ComputePublicDelegatedPrefix) GetStringMapAttribute(terraform
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ComputePublicDelegatedPrefix) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputePublicDelegatedPrefix) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1083,7 +1082,7 @@ func (c *jsiiProxy_ComputePublicDelegatedPrefix) ImportFrom(id *string, provider
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1096,7 +1095,7 @@ func (c *jsiiProxy_ComputePublicDelegatedPrefix) InterpolationForAttribute(terra
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1110,18 +1109,18 @@ func (c *jsiiProxy_ComputePublicDelegatedPrefix) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_ComputePublicDelegatedPrefix) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_ComputePublicDelegatedPrefix) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1132,7 +1131,7 @@ func (c *jsiiProxy_ComputePublicDelegatedPrefix) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1143,7 +1142,7 @@ func (c *jsiiProxy_ComputePublicDelegatedPrefix) OverrideLogicalId(newLogicalId 
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1154,7 +1153,7 @@ func (c *jsiiProxy_ComputePublicDelegatedPrefix) PutTimeouts(value *ComputePubli
 	_jsii_.InvokeVoid(
 		c,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1222,8 +1221,8 @@ func (c *jsiiProxy_ComputePublicDelegatedPrefix) ResetTimeouts() {
 	)
 }
 
-func (c *jsiiProxy_ComputePublicDelegatedPrefix) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ComputePublicDelegatedPrefix) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1235,8 +1234,8 @@ func (c *jsiiProxy_ComputePublicDelegatedPrefix) SynthesizeAttributes() *map[str
 	return returns
 }
 
-func (c *jsiiProxy_ComputePublicDelegatedPrefix) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ComputePublicDelegatedPrefix) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1248,8 +1247,8 @@ func (c *jsiiProxy_ComputePublicDelegatedPrefix) SynthesizeHclAttributes() *map[
 	return returns
 }
 
-func (c *jsiiProxy_ComputePublicDelegatedPrefix) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputePublicDelegatedPrefix) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1261,8 +1260,8 @@ func (c *jsiiProxy_ComputePublicDelegatedPrefix) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_ComputePublicDelegatedPrefix) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputePublicDelegatedPrefix) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1287,8 +1286,8 @@ func (c *jsiiProxy_ComputePublicDelegatedPrefix) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_ComputePublicDelegatedPrefix) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputePublicDelegatedPrefix) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1299,4 +1298,3 @@ func (c *jsiiProxy_ComputePublicDelegatedPrefix) ToTerraform() interface{} {
 
 	return returns
 }
-

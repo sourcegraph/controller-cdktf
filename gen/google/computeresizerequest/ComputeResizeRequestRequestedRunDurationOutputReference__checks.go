@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeResizeRequestRequestedRunDurationOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_ComputeResizeRequestRequestedRunDurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeResizeRequestRequestedRunDurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewComputeResizeRequestRequestedRunDurationOutputReferenceParameter
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (n *jsiiProxy_NetappVolumeQuotaRuleTimeoutsOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_NetappVolumeQuotaRuleTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetappVolumeQuotaRuleTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_NetappVolumeQuotaRuleTimeoutsOutputReference) validateSetDele
 	return nil
 }
 
-func (j *jsiiProxy_NetappVolumeQuotaRuleTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NetappVolumeQuotaRuleTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewNetappVolumeQuotaRuleTimeoutsOutputReferenceParameters(terraform
 
 	return nil
 }
-

@@ -19,7 +19,7 @@ func (b *jsiiProxy_BigqueryConnection) validateAddMoveTargetParameters(moveTarge
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryConnection) validateAddOverrideParameters(path *string, value interface{}) error {
+func (b *jsiiProxy_BigqueryConnection) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (b *jsiiProxy_BigqueryConnection) validateMoveFromIdParameters(id *string) 
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryConnection) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (b *jsiiProxy_BigqueryConnection) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -308,7 +308,7 @@ func validateBigqueryConnection_GenerateConfigForImportParameters(scope construc
 	return nil
 }
 
-func validateBigqueryConnection_IsConstructParameters(x interface{}) error {
+func validateBigqueryConnection_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -316,7 +316,7 @@ func validateBigqueryConnection_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateBigqueryConnection_IsTerraformElementParameters(x interface{}) error {
+func validateBigqueryConnection_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -324,7 +324,7 @@ func validateBigqueryConnection_IsTerraformElementParameters(x interface{}) erro
 	return nil
 }
 
-func validateBigqueryConnection_IsTerraformResourceParameters(x interface{}) error {
+func validateBigqueryConnection_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -332,7 +332,7 @@ func validateBigqueryConnection_IsTerraformResourceParameters(x interface{}) err
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryConnection) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryConnection) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -373,7 +373,7 @@ func (j *jsiiProxy_BigqueryConnection) validateSetConnectionIdParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryConnection) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryConnection) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -486,7 +486,7 @@ func (j *jsiiProxy_BigqueryConnection) validateSetProjectParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryConnection) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_BigqueryConnection) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -547,4 +547,3 @@ func validateNewBigqueryConnectionParameters(scope constructs.Construct, id *str
 
 	return nil
 }
-

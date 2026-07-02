@@ -19,7 +19,7 @@ func (v *jsiiProxy_VertexAiDataset) validateAddMoveTargetParameters(moveTarget *
 	return nil
 }
 
-func (v *jsiiProxy_VertexAiDataset) validateAddOverrideParameters(path *string, value interface{}) error {
+func (v *jsiiProxy_VertexAiDataset) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (v *jsiiProxy_VertexAiDataset) validateMoveFromIdParameters(id *string) err
 	return nil
 }
 
-func (v *jsiiProxy_VertexAiDataset) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (v *jsiiProxy_VertexAiDataset) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateVertexAiDataset_GenerateConfigForImportParameters(scope constructs.
 	return nil
 }
 
-func validateVertexAiDataset_IsConstructParameters(x interface{}) error {
+func validateVertexAiDataset_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateVertexAiDataset_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateVertexAiDataset_IsTerraformElementParameters(x interface{}) error {
+func validateVertexAiDataset_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateVertexAiDataset_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateVertexAiDataset_IsTerraformResourceParameters(x interface{}) error {
+func validateVertexAiDataset_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func validateVertexAiDataset_IsTerraformResourceParameters(x interface{}) error 
 	return nil
 }
 
-func (j *jsiiProxy_VertexAiDataset) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_VertexAiDataset) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -299,7 +299,7 @@ func (j *jsiiProxy_VertexAiDataset) validateSetConnectionParameters(val interfac
 	return nil
 }
 
-func (j *jsiiProxy_VertexAiDataset) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_VertexAiDataset) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -404,7 +404,7 @@ func (j *jsiiProxy_VertexAiDataset) validateSetProjectParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_VertexAiDataset) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_VertexAiDataset) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -476,4 +476,3 @@ func validateNewVertexAiDatasetParameters(scope constructs.Construct, id *string
 
 	return nil
 }
-

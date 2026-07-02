@@ -34,7 +34,7 @@ func (l *jsiiProxy_LoggingBillingAccountSinkExclusionsList) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_LoggingBillingAccountSinkExclusionsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LoggingBillingAccountSinkExclusionsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewLoggingBillingAccountSinkExclusionsListParameters(terraformResou
 
 	return nil
 }
-

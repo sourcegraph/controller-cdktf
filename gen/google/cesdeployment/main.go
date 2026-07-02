@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesDeployment.CesDeployment",
-		reflect.TypeOf((*CesDeployment)(nil)).Elem(),
+		reflect.TypeFor[CesDeployment](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -78,7 +78,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesDeployment{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -86,11 +86,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesDeployment.CesDeploymentChannelProfile",
-		reflect.TypeOf((*CesDeploymentChannelProfile)(nil)).Elem(),
+		reflect.TypeFor[CesDeploymentChannelProfile](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesDeployment.CesDeploymentChannelProfileOutputReference",
-		reflect.TypeOf((*CesDeploymentChannelProfileOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesDeploymentChannelProfileOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "channelType", GoGetter: "ChannelType"},
 			_jsii_.MemberProperty{JsiiProperty: "channelTypeInput", GoGetter: "ChannelTypeInput"},
@@ -134,7 +134,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "webWidgetConfig", GoGetter: "WebWidgetConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "webWidgetConfigInput", GoGetter: "WebWidgetConfigInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesDeploymentChannelProfileOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -142,11 +142,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesDeployment.CesDeploymentChannelProfilePersonaProperty",
-		reflect.TypeOf((*CesDeploymentChannelProfilePersonaProperty)(nil)).Elem(),
+		reflect.TypeFor[CesDeploymentChannelProfilePersonaProperty](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesDeployment.CesDeploymentChannelProfilePersonaPropertyOutputReference",
-		reflect.TypeOf((*CesDeploymentChannelProfilePersonaPropertyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesDeploymentChannelProfilePersonaPropertyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -173,7 +173,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesDeploymentChannelProfilePersonaPropertyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -181,11 +181,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesDeployment.CesDeploymentChannelProfileWebWidgetConfig",
-		reflect.TypeOf((*CesDeploymentChannelProfileWebWidgetConfig)(nil)).Elem(),
+		reflect.TypeFor[CesDeploymentChannelProfileWebWidgetConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesDeployment.CesDeploymentChannelProfileWebWidgetConfigOutputReference",
-		reflect.TypeOf((*CesDeploymentChannelProfileWebWidgetConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesDeploymentChannelProfileWebWidgetConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -218,7 +218,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "webWidgetTitle", GoGetter: "WebWidgetTitle"},
 			_jsii_.MemberProperty{JsiiProperty: "webWidgetTitleInput", GoGetter: "WebWidgetTitleInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesDeploymentChannelProfileWebWidgetConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -226,15 +226,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesDeployment.CesDeploymentConfig",
-		reflect.TypeOf((*CesDeploymentConfig)(nil)).Elem(),
+		reflect.TypeFor[CesDeploymentConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesDeployment.CesDeploymentTimeouts",
-		reflect.TypeOf((*CesDeploymentTimeouts)(nil)).Elem(),
+		reflect.TypeFor[CesDeploymentTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesDeployment.CesDeploymentTimeoutsOutputReference",
-		reflect.TypeOf((*CesDeploymentTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesDeploymentTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -267,7 +267,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesDeploymentTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

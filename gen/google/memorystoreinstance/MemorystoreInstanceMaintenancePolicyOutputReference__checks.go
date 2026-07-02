@@ -90,7 +90,7 @@ func (m *jsiiProxy_MemorystoreInstanceMaintenancePolicyOutputReference) validate
 	return nil
 }
 
-func (m *jsiiProxy_MemorystoreInstanceMaintenancePolicyOutputReference) validatePutWeeklyMaintenanceWindowParameters(value interface{}) error {
+func (m *jsiiProxy_MemorystoreInstanceMaintenancePolicyOutputReference) validatePutWeeklyMaintenanceWindowParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (m *jsiiProxy_MemorystoreInstanceMaintenancePolicyOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_MemorystoreInstanceMaintenancePolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MemorystoreInstanceMaintenancePolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -229,4 +229,3 @@ func validateNewMemorystoreInstanceMaintenancePolicyOutputReferenceParameters(te
 
 	return nil
 }
-

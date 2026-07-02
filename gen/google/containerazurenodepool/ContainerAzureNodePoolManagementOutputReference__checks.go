@@ -98,7 +98,7 @@ func (c *jsiiProxy_ContainerAzureNodePoolManagementOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_ContainerAzureNodePoolManagementOutputReference) validateSetAutoRepairParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerAzureNodePoolManagementOutputReference) validateSetAutoRepairParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -118,7 +118,7 @@ func (j *jsiiProxy_ContainerAzureNodePoolManagementOutputReference) validateSetA
 	return nil
 }
 
-func (j *jsiiProxy_ContainerAzureNodePoolManagementOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerAzureNodePoolManagementOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -218,4 +218,3 @@ func validateNewContainerAzureNodePoolManagementOutputReferenceParameters(terraf
 
 	return nil
 }
-

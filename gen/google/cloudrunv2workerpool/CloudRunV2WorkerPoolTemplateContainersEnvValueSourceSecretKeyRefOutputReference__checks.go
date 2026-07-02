@@ -98,7 +98,7 @@ func (c *jsiiProxy_CloudRunV2WorkerPoolTemplateContainersEnvValueSourceSecretKey
 	return nil
 }
 
-func (j *jsiiProxy_CloudRunV2WorkerPoolTemplateContainersEnvValueSourceSecretKeyRefOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudRunV2WorkerPoolTemplateContainersEnvValueSourceSecretKeyRefOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewCloudRunV2WorkerPoolTemplateContainersEnvValueSourceSecretKeyRef
 
 	return nil
 }
-

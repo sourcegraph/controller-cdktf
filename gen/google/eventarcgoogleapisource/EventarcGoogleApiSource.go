@@ -18,15 +18,15 @@ type EventarcGoogleApiSource interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	CryptoKeyName() *string
 	SetCryptoKeyName(val *string)
@@ -81,29 +81,29 @@ type EventarcGoogleApiSource interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() EventarcGoogleApiSourceTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Uid() *string
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -121,7 +121,7 @@ type EventarcGoogleApiSource interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -133,7 +133,7 @@ type EventarcGoogleApiSource interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -153,17 +153,17 @@ type EventarcGoogleApiSource interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for EventarcGoogleApiSource
@@ -201,8 +201,8 @@ func (j *jsiiProxy_EventarcGoogleApiSource) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_EventarcGoogleApiSource) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EventarcGoogleApiSource) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -211,8 +211,8 @@ func (j *jsiiProxy_EventarcGoogleApiSource) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EventarcGoogleApiSource) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_EventarcGoogleApiSource) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -221,8 +221,8 @@ func (j *jsiiProxy_EventarcGoogleApiSource) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_EventarcGoogleApiSource) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EventarcGoogleApiSource) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -531,8 +531,8 @@ func (j *jsiiProxy_EventarcGoogleApiSource) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_EventarcGoogleApiSource) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_EventarcGoogleApiSource) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -541,8 +541,8 @@ func (j *jsiiProxy_EventarcGoogleApiSource) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EventarcGoogleApiSource) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EventarcGoogleApiSource) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -571,8 +571,8 @@ func (j *jsiiProxy_EventarcGoogleApiSource) TerraformLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_EventarcGoogleApiSource) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_EventarcGoogleApiSource) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -601,8 +601,8 @@ func (j *jsiiProxy_EventarcGoogleApiSource) Timeouts() EventarcGoogleApiSourceTi
 	return returns
 }
 
-func (j *jsiiProxy_EventarcGoogleApiSource) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EventarcGoogleApiSource) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -631,7 +631,6 @@ func (j *jsiiProxy_EventarcGoogleApiSource) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/eventarc_google_api_source google_eventarc_google_api_source} Resource.
 func NewEventarcGoogleApiSource(scope constructs.Construct, id *string, config *EventarcGoogleApiSourceConfig) EventarcGoogleApiSource {
 	_init_.Initialize()
@@ -643,7 +642,7 @@ func NewEventarcGoogleApiSource(scope constructs.Construct, id *string, config *
 
 	_jsii_.Create(
 		"@cdktf/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSource",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -656,12 +655,12 @@ func NewEventarcGoogleApiSource_Override(e EventarcGoogleApiSource, scope constr
 
 	_jsii_.Create(
 		"@cdktf/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSource",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		e,
 	)
 }
 
-func (j *jsiiProxy_EventarcGoogleApiSource)SetAnnotations(val *map[string]*string) {
+func (j *jsiiProxy_EventarcGoogleApiSource) SetAnnotations(val *map[string]*string) {
 	if err := j.validateSetAnnotationsParameters(val); err != nil {
 		panic(err)
 	}
@@ -672,7 +671,7 @@ func (j *jsiiProxy_EventarcGoogleApiSource)SetAnnotations(val *map[string]*strin
 	)
 }
 
-func (j *jsiiProxy_EventarcGoogleApiSource)SetConnection(val interface{}) {
+func (j *jsiiProxy_EventarcGoogleApiSource) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -683,7 +682,7 @@ func (j *jsiiProxy_EventarcGoogleApiSource)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EventarcGoogleApiSource)SetCount(val interface{}) {
+func (j *jsiiProxy_EventarcGoogleApiSource) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -694,7 +693,7 @@ func (j *jsiiProxy_EventarcGoogleApiSource)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EventarcGoogleApiSource)SetCryptoKeyName(val *string) {
+func (j *jsiiProxy_EventarcGoogleApiSource) SetCryptoKeyName(val *string) {
 	if err := j.validateSetCryptoKeyNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -705,7 +704,7 @@ func (j *jsiiProxy_EventarcGoogleApiSource)SetCryptoKeyName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EventarcGoogleApiSource)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_EventarcGoogleApiSource) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -713,7 +712,7 @@ func (j *jsiiProxy_EventarcGoogleApiSource)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_EventarcGoogleApiSource)SetDestination(val *string) {
+func (j *jsiiProxy_EventarcGoogleApiSource) SetDestination(val *string) {
 	if err := j.validateSetDestinationParameters(val); err != nil {
 		panic(err)
 	}
@@ -724,7 +723,7 @@ func (j *jsiiProxy_EventarcGoogleApiSource)SetDestination(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EventarcGoogleApiSource)SetDisplayName(val *string) {
+func (j *jsiiProxy_EventarcGoogleApiSource) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -735,7 +734,7 @@ func (j *jsiiProxy_EventarcGoogleApiSource)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EventarcGoogleApiSource)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_EventarcGoogleApiSource) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -743,7 +742,7 @@ func (j *jsiiProxy_EventarcGoogleApiSource)SetForEach(val cdktf.ITerraformIterat
 	)
 }
 
-func (j *jsiiProxy_EventarcGoogleApiSource)SetGoogleApiSourceId(val *string) {
+func (j *jsiiProxy_EventarcGoogleApiSource) SetGoogleApiSourceId(val *string) {
 	if err := j.validateSetGoogleApiSourceIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -754,7 +753,7 @@ func (j *jsiiProxy_EventarcGoogleApiSource)SetGoogleApiSourceId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EventarcGoogleApiSource)SetId(val *string) {
+func (j *jsiiProxy_EventarcGoogleApiSource) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -765,7 +764,7 @@ func (j *jsiiProxy_EventarcGoogleApiSource)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EventarcGoogleApiSource)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_EventarcGoogleApiSource) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -776,7 +775,7 @@ func (j *jsiiProxy_EventarcGoogleApiSource)SetLabels(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_EventarcGoogleApiSource)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_EventarcGoogleApiSource) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -787,7 +786,7 @@ func (j *jsiiProxy_EventarcGoogleApiSource)SetLifecycle(val *cdktf.TerraformReso
 	)
 }
 
-func (j *jsiiProxy_EventarcGoogleApiSource)SetLocation(val *string) {
+func (j *jsiiProxy_EventarcGoogleApiSource) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -798,7 +797,7 @@ func (j *jsiiProxy_EventarcGoogleApiSource)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EventarcGoogleApiSource)SetProject(val *string) {
+func (j *jsiiProxy_EventarcGoogleApiSource) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -809,7 +808,7 @@ func (j *jsiiProxy_EventarcGoogleApiSource)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EventarcGoogleApiSource)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_EventarcGoogleApiSource) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -817,7 +816,7 @@ func (j *jsiiProxy_EventarcGoogleApiSource)SetProvider(val cdktf.TerraformProvid
 	)
 }
 
-func (j *jsiiProxy_EventarcGoogleApiSource)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_EventarcGoogleApiSource) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -840,7 +839,7 @@ func EventarcGoogleApiSource_GenerateConfigForImport(scope constructs.Construct,
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSource",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -864,7 +863,7 @@ func EventarcGoogleApiSource_GenerateConfigForImport(scope constructs.Construct,
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func EventarcGoogleApiSource_IsConstruct(x interface{}) *bool {
+func EventarcGoogleApiSource_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEventarcGoogleApiSource_IsConstructParameters(x); err != nil {
@@ -875,7 +874,7 @@ func EventarcGoogleApiSource_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSource",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -883,7 +882,7 @@ func EventarcGoogleApiSource_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func EventarcGoogleApiSource_IsTerraformElement(x interface{}) *bool {
+func EventarcGoogleApiSource_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEventarcGoogleApiSource_IsTerraformElementParameters(x); err != nil {
@@ -894,7 +893,7 @@ func EventarcGoogleApiSource_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSource",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -902,7 +901,7 @@ func EventarcGoogleApiSource_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func EventarcGoogleApiSource_IsTerraformResource(x interface{}) *bool {
+func EventarcGoogleApiSource_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEventarcGoogleApiSource_IsTerraformResourceParameters(x); err != nil {
@@ -913,7 +912,7 @@ func EventarcGoogleApiSource_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSource",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -938,31 +937,31 @@ func (e *jsiiProxy_EventarcGoogleApiSource) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (e *jsiiProxy_EventarcGoogleApiSource) AddOverride(path *string, value interface{}) {
+func (e *jsiiProxy_EventarcGoogleApiSource) AddOverride(path *string, value any) {
 	if err := e.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (e *jsiiProxy_EventarcGoogleApiSource) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_EventarcGoogleApiSource) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -978,7 +977,7 @@ func (e *jsiiProxy_EventarcGoogleApiSource) GetBooleanAttribute(terraformAttribu
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -994,7 +993,7 @@ func (e *jsiiProxy_EventarcGoogleApiSource) GetBooleanMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1010,7 +1009,7 @@ func (e *jsiiProxy_EventarcGoogleApiSource) GetListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1026,7 +1025,7 @@ func (e *jsiiProxy_EventarcGoogleApiSource) GetNumberAttribute(terraformAttribut
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1042,7 +1041,7 @@ func (e *jsiiProxy_EventarcGoogleApiSource) GetNumberListAttribute(terraformAttr
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1058,7 +1057,7 @@ func (e *jsiiProxy_EventarcGoogleApiSource) GetNumberMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1074,7 +1073,7 @@ func (e *jsiiProxy_EventarcGoogleApiSource) GetStringAttribute(terraformAttribut
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1090,15 +1089,15 @@ func (e *jsiiProxy_EventarcGoogleApiSource) GetStringMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (e *jsiiProxy_EventarcGoogleApiSource) HasResourceMove() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EventarcGoogleApiSource) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1117,7 +1116,7 @@ func (e *jsiiProxy_EventarcGoogleApiSource) ImportFrom(id *string, provider cdkt
 	_jsii_.InvokeVoid(
 		e,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1130,7 +1129,7 @@ func (e *jsiiProxy_EventarcGoogleApiSource) InterpolationForAttribute(terraformA
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1144,18 +1143,18 @@ func (e *jsiiProxy_EventarcGoogleApiSource) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (e *jsiiProxy_EventarcGoogleApiSource) MoveTo(moveTarget *string, index interface{}) {
+func (e *jsiiProxy_EventarcGoogleApiSource) MoveTo(moveTarget *string, index any) {
 	if err := e.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1166,7 +1165,7 @@ func (e *jsiiProxy_EventarcGoogleApiSource) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1177,7 +1176,7 @@ func (e *jsiiProxy_EventarcGoogleApiSource) OverrideLogicalId(newLogicalId *stri
 	_jsii_.InvokeVoid(
 		e,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1188,7 +1187,7 @@ func (e *jsiiProxy_EventarcGoogleApiSource) PutLoggingConfig(value *EventarcGoog
 	_jsii_.InvokeVoid(
 		e,
 		"putLoggingConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1199,7 +1198,7 @@ func (e *jsiiProxy_EventarcGoogleApiSource) PutTimeouts(value *EventarcGoogleApi
 	_jsii_.InvokeVoid(
 		e,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1275,8 +1274,8 @@ func (e *jsiiProxy_EventarcGoogleApiSource) ResetTimeouts() {
 	)
 }
 
-func (e *jsiiProxy_EventarcGoogleApiSource) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_EventarcGoogleApiSource) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -1288,8 +1287,8 @@ func (e *jsiiProxy_EventarcGoogleApiSource) SynthesizeAttributes() *map[string]i
 	return returns
 }
 
-func (e *jsiiProxy_EventarcGoogleApiSource) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_EventarcGoogleApiSource) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -1301,8 +1300,8 @@ func (e *jsiiProxy_EventarcGoogleApiSource) SynthesizeHclAttributes() *map[strin
 	return returns
 }
 
-func (e *jsiiProxy_EventarcGoogleApiSource) ToHclTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EventarcGoogleApiSource) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1314,8 +1313,8 @@ func (e *jsiiProxy_EventarcGoogleApiSource) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (e *jsiiProxy_EventarcGoogleApiSource) ToMetadata() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EventarcGoogleApiSource) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1340,8 +1339,8 @@ func (e *jsiiProxy_EventarcGoogleApiSource) ToString() *string {
 	return returns
 }
 
-func (e *jsiiProxy_EventarcGoogleApiSource) ToTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EventarcGoogleApiSource) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1352,4 +1351,3 @@ func (e *jsiiProxy_EventarcGoogleApiSource) ToTerraform() interface{} {
 
 	return returns
 }
-

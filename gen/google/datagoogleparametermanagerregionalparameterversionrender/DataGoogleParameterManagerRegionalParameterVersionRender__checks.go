@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataGoogleParameterManagerRegionalParameterVersionRender) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataGoogleParameterManagerRegionalParameterVersionRender) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataGoogleParameterManagerRegionalParameterVersionRender_GenerateCo
 	return nil
 }
 
-func validateDataGoogleParameterManagerRegionalParameterVersionRender_IsConstructParameters(x interface{}) error {
+func validateDataGoogleParameterManagerRegionalParameterVersionRender_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataGoogleParameterManagerRegionalParameterVersionRender_IsConstruc
 	return nil
 }
 
-func validateDataGoogleParameterManagerRegionalParameterVersionRender_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataGoogleParameterManagerRegionalParameterVersionRender_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataGoogleParameterManagerRegionalParameterVersionRender_IsTerrafor
 	return nil
 }
 
-func validateDataGoogleParameterManagerRegionalParameterVersionRender_IsTerraformElementParameters(x interface{}) error {
+func validateDataGoogleParameterManagerRegionalParameterVersionRender_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func validateDataGoogleParameterManagerRegionalParameterVersionRender_IsTerrafor
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleParameterManagerRegionalParameterVersionRender) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleParameterManagerRegionalParameterVersionRender) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -274,4 +274,3 @@ func validateNewDataGoogleParameterManagerRegionalParameterVersionRenderParamete
 
 	return nil
 }
-

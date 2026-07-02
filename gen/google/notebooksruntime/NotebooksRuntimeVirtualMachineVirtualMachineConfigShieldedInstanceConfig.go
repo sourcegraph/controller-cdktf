@@ -1,6 +1,5 @@
 package notebooksruntime
 
-
 type NotebooksRuntimeVirtualMachineVirtualMachineConfigShieldedInstanceConfig struct {
 	// Defines whether the instance has integrity monitoring enabled.
 	//
@@ -11,14 +10,13 @@ type NotebooksRuntimeVirtualMachineVirtualMachineConfigShieldedInstanceConfig st
 	// created. Enabled by default.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/notebooks_runtime#enable_integrity_monitoring NotebooksRuntime#enable_integrity_monitoring}
-	EnableIntegrityMonitoring interface{} `field:"optional" json:"enableIntegrityMonitoring" yaml:"enableIntegrityMonitoring"`
+	EnableIntegrityMonitoring any `field:"optional" json:"enableIntegrityMonitoring" yaml:"enableIntegrityMonitoring"`
 	// Defines whether the instance has Secure Boot enabled.Secure Boot helps ensure that the system only runs authentic software by verifying the digital signature of all boot components, and halting the boot process if signature verification fails. Disabled by default.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/notebooks_runtime#enable_secure_boot NotebooksRuntime#enable_secure_boot}
-	EnableSecureBoot interface{} `field:"optional" json:"enableSecureBoot" yaml:"enableSecureBoot"`
+	EnableSecureBoot any `field:"optional" json:"enableSecureBoot" yaml:"enableSecureBoot"`
 	// Defines whether the instance has the vTPM enabled. Enabled by default.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/notebooks_runtime#enable_vtpm NotebooksRuntime#enable_vtpm}
-	EnableVtpm interface{} `field:"optional" json:"enableVtpm" yaml:"enableVtpm"`
+	EnableVtpm any `field:"optional" json:"enableVtpm" yaml:"enableVtpm"`
 }
-

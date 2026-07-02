@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabasePropertiesCustomerC
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabasePropertiesCustomerContactsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabasePropertiesCustomerContactsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleOracleDatabaseAutonomousDatabasePropertiesCustomerCont
 
 	return nil
 }
-

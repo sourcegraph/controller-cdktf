@@ -98,7 +98,7 @@ func (f *jsiiProxy_FirebaserulesRulesetSourceFilesOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_FirebaserulesRulesetSourceFilesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_FirebaserulesRulesetSourceFilesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_FirebaserulesRulesetSourceFilesOutputReference) validateSetFi
 	return nil
 }
 
-func (j *jsiiProxy_FirebaserulesRulesetSourceFilesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_FirebaserulesRulesetSourceFilesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewFirebaserulesRulesetSourceFilesOutputReferenceParameters(terrafo
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.iamWorkforcePoolProviderScimTenant.IamWorkforcePoolProviderScimTenant",
-		reflect.TypeOf((*IamWorkforcePoolProviderScimTenant)(nil)).Elem(),
+		reflect.TypeFor[IamWorkforcePoolProviderScimTenant](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -85,7 +85,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workforcePoolId", GoGetter: "WorkforcePoolId"},
 			_jsii_.MemberProperty{JsiiProperty: "workforcePoolIdInput", GoGetter: "WorkforcePoolIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IamWorkforcePoolProviderScimTenant{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -93,15 +93,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.iamWorkforcePoolProviderScimTenant.IamWorkforcePoolProviderScimTenantConfig",
-		reflect.TypeOf((*IamWorkforcePoolProviderScimTenantConfig)(nil)).Elem(),
+		reflect.TypeFor[IamWorkforcePoolProviderScimTenantConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.iamWorkforcePoolProviderScimTenant.IamWorkforcePoolProviderScimTenantTimeouts",
-		reflect.TypeOf((*IamWorkforcePoolProviderScimTenantTimeouts)(nil)).Elem(),
+		reflect.TypeFor[IamWorkforcePoolProviderScimTenantTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.iamWorkforcePoolProviderScimTenant.IamWorkforcePoolProviderScimTenantTimeoutsOutputReference",
-		reflect.TypeOf((*IamWorkforcePoolProviderScimTenantTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IamWorkforcePoolProviderScimTenantTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -134,7 +134,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IamWorkforcePoolProviderScimTenantTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

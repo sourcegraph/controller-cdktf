@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeInterconnectGroupConfiguredTopologyCapabilityIntendedC
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInterconnectGroupConfiguredTopologyCapabilityIntendedCapabilityBlockersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInterconnectGroupConfiguredTopologyCapabilityIntendedCapabilityBlockersOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewComputeInterconnectGroupConfiguredTopologyCapabilityIntendedCapa
 
 	return nil
 }
-

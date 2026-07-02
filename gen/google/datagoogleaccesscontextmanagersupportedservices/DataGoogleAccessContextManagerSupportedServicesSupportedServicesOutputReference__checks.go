@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleAccessContextManagerSupportedServicesSupportedServi
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleAccessContextManagerSupportedServicesSupportedServicesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleAccessContextManagerSupportedServicesSupportedServicesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleAccessContextManagerSupportedServicesSupportedServices
 
 	return nil
 }
-

@@ -90,7 +90,7 @@ func (g *jsiiProxy_GkeonpremBareMetalClusterControlPlaneControlPlaneNodePoolConf
 	return nil
 }
 
-func (g *jsiiProxy_GkeonpremBareMetalClusterControlPlaneControlPlaneNodePoolConfigNodePoolConfigOutputReference) validatePutNodeConfigsParameters(value interface{}) error {
+func (g *jsiiProxy_GkeonpremBareMetalClusterControlPlaneControlPlaneNodePoolConfigNodePoolConfigOutputReference) validatePutNodeConfigsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (g *jsiiProxy_GkeonpremBareMetalClusterControlPlaneControlPlaneNodePoolConf
 	return nil
 }
 
-func (g *jsiiProxy_GkeonpremBareMetalClusterControlPlaneControlPlaneNodePoolConfigNodePoolConfigOutputReference) validatePutTaintsParameters(value interface{}) error {
+func (g *jsiiProxy_GkeonpremBareMetalClusterControlPlaneControlPlaneNodePoolConfigNodePoolConfigOutputReference) validatePutTaintsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -160,7 +160,7 @@ func (g *jsiiProxy_GkeonpremBareMetalClusterControlPlaneControlPlaneNodePoolConf
 	return nil
 }
 
-func (j *jsiiProxy_GkeonpremBareMetalClusterControlPlaneControlPlaneNodePoolConfigNodePoolConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GkeonpremBareMetalClusterControlPlaneControlPlaneNodePoolConfigNodePoolConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -276,4 +276,3 @@ func validateNewGkeonpremBareMetalClusterControlPlaneControlPlaneNodePoolConfigN
 
 	return nil
 }
-

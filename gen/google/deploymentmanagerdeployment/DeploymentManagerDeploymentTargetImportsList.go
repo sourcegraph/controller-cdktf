@@ -17,8 +17,8 @@ type DeploymentManagerDeploymentTargetImportsList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type DeploymentManagerDeploymentTargetImportsList interface {
 	Get(index *float64) DeploymentManagerDeploymentTargetImportsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_DeploymentManagerDeploymentTargetImportsList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DeploymentManagerDeploymentTargetImportsList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DeploymentManagerDeploymentTargetImportsList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_DeploymentManagerDeploymentTargetImportsList) WrapsSet() *boo
 	return returns
 }
 
-
 func NewDeploymentManagerDeploymentTargetImportsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentManagerDeploymentTargetImportsList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewDeploymentManagerDeploymentTargetImportsList(terraformResource cdktf.IIn
 
 	_jsii_.Create(
 		"@cdktf/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetImportsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewDeploymentManagerDeploymentTargetImportsList_Override(d DeploymentManage
 
 	_jsii_.Create(
 		"@cdktf/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetImportsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DeploymentManagerDeploymentTargetImportsList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DeploymentManagerDeploymentTargetImportsList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_DeploymentManagerDeploymentTargetImportsList)SetInternalValue
 	)
 }
 
-func (j *jsiiProxy_DeploymentManagerDeploymentTargetImportsList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DeploymentManagerDeploymentTargetImportsList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_DeploymentManagerDeploymentTargetImportsList)SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_DeploymentManagerDeploymentTargetImportsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DeploymentManagerDeploymentTargetImportsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_DeploymentManagerDeploymentTargetImportsList)SetTerraformReso
 	)
 }
 
-func (j *jsiiProxy_DeploymentManagerDeploymentTargetImportsList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DeploymentManagerDeploymentTargetImportsList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (d *jsiiProxy_DeploymentManagerDeploymentTargetImportsList) AllWithMapKey(m
 	_jsii_.Invoke(
 		d,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (d *jsiiProxy_DeploymentManagerDeploymentTargetImportsList) Get(index *floa
 	_jsii_.Invoke(
 		d,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DeploymentManagerDeploymentTargetImportsList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DeploymentManagerDeploymentTargetImportsList) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (d *jsiiProxy_DeploymentManagerDeploymentTargetImportsList) ToString() *str
 
 	return returns
 }
-

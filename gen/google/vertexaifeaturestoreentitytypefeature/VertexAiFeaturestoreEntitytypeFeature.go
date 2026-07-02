@@ -15,15 +15,15 @@ type VertexAiFeaturestoreEntitytypeFeature interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -65,21 +65,21 @@ type VertexAiFeaturestoreEntitytypeFeature interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Region() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() VertexAiFeaturestoreEntitytypeFeatureTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UpdateTime() *string
 	ValueType() *string
 	SetValueType(val *string)
@@ -88,9 +88,9 @@ type VertexAiFeaturestoreEntitytypeFeature interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -108,7 +108,7 @@ type VertexAiFeaturestoreEntitytypeFeature interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -120,7 +120,7 @@ type VertexAiFeaturestoreEntitytypeFeature interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -136,17 +136,17 @@ type VertexAiFeaturestoreEntitytypeFeature interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for VertexAiFeaturestoreEntitytypeFeature
@@ -164,8 +164,8 @@ func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) CdktfStack() cdktf.Ter
 	return returns
 }
 
-func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -174,8 +174,8 @@ func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) Connection() interface
 	return returns
 }
 
-func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -184,8 +184,8 @@ func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) ConstructNodeMetadata(
 	return returns
 }
 
-func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -394,8 +394,8 @@ func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) Provider() cdktf.Terra
 	return returns
 }
 
-func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -404,8 +404,8 @@ func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) Provisioners() *[]inte
 	return returns
 }
 
-func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -444,8 +444,8 @@ func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) TerraformLabels() cdkt
 	return returns
 }
 
-func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -474,8 +474,8 @@ func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) Timeouts() VertexAiFea
 	return returns
 }
 
-func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -514,7 +514,6 @@ func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) ValueTypeInput() *stri
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_featurestore_entitytype_feature google_vertex_ai_featurestore_entitytype_feature} Resource.
 func NewVertexAiFeaturestoreEntitytypeFeature(scope constructs.Construct, id *string, config *VertexAiFeaturestoreEntitytypeFeatureConfig) VertexAiFeaturestoreEntitytypeFeature {
 	_init_.Initialize()
@@ -526,7 +525,7 @@ func NewVertexAiFeaturestoreEntitytypeFeature(scope constructs.Construct, id *st
 
 	_jsii_.Create(
 		"@cdktf/provider-google.vertexAiFeaturestoreEntitytypeFeature.VertexAiFeaturestoreEntitytypeFeature",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -539,12 +538,12 @@ func NewVertexAiFeaturestoreEntitytypeFeature_Override(v VertexAiFeaturestoreEnt
 
 	_jsii_.Create(
 		"@cdktf/provider-google.vertexAiFeaturestoreEntitytypeFeature.VertexAiFeaturestoreEntitytypeFeature",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		v,
 	)
 }
 
-func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature)SetConnection(val interface{}) {
+func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -555,7 +554,7 @@ func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature)SetConnection(val inter
 	)
 }
 
-func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature)SetCount(val interface{}) {
+func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -566,7 +565,7 @@ func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature)SetCount(val interface{
 	)
 }
 
-func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -574,7 +573,7 @@ func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature)SetDependsOn(val *[]*st
 	)
 }
 
-func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature)SetDescription(val *string) {
+func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -585,7 +584,7 @@ func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature)SetDescription(val *str
 	)
 }
 
-func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature)SetEntitytype(val *string) {
+func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) SetEntitytype(val *string) {
 	if err := j.validateSetEntitytypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -596,7 +595,7 @@ func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature)SetEntitytype(val *stri
 	)
 }
 
-func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -604,7 +603,7 @@ func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature)SetForEach(val cdktf.IT
 	)
 }
 
-func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature)SetId(val *string) {
+func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -615,7 +614,7 @@ func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -626,7 +625,7 @@ func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature)SetLabels(val *map[stri
 	)
 }
 
-func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -637,7 +636,7 @@ func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature)SetLifecycle(val *cdktf
 	)
 }
 
-func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature)SetName(val *string) {
+func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -648,7 +647,7 @@ func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -656,7 +655,7 @@ func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature)SetProvider(val cdktf.T
 	)
 }
 
-func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -667,7 +666,7 @@ func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature)SetProvisioners(val *[]
 	)
 }
 
-func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature)SetValueType(val *string) {
+func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) SetValueType(val *string) {
 	if err := j.validateSetValueTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -690,7 +689,7 @@ func VertexAiFeaturestoreEntitytypeFeature_GenerateConfigForImport(scope constru
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.vertexAiFeaturestoreEntitytypeFeature.VertexAiFeaturestoreEntitytypeFeature",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -714,7 +713,7 @@ func VertexAiFeaturestoreEntitytypeFeature_GenerateConfigForImport(scope constru
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func VertexAiFeaturestoreEntitytypeFeature_IsConstruct(x interface{}) *bool {
+func VertexAiFeaturestoreEntitytypeFeature_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateVertexAiFeaturestoreEntitytypeFeature_IsConstructParameters(x); err != nil {
@@ -725,7 +724,7 @@ func VertexAiFeaturestoreEntitytypeFeature_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.vertexAiFeaturestoreEntitytypeFeature.VertexAiFeaturestoreEntitytypeFeature",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -733,7 +732,7 @@ func VertexAiFeaturestoreEntitytypeFeature_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func VertexAiFeaturestoreEntitytypeFeature_IsTerraformElement(x interface{}) *bool {
+func VertexAiFeaturestoreEntitytypeFeature_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateVertexAiFeaturestoreEntitytypeFeature_IsTerraformElementParameters(x); err != nil {
@@ -744,7 +743,7 @@ func VertexAiFeaturestoreEntitytypeFeature_IsTerraformElement(x interface{}) *bo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.vertexAiFeaturestoreEntitytypeFeature.VertexAiFeaturestoreEntitytypeFeature",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -752,7 +751,7 @@ func VertexAiFeaturestoreEntitytypeFeature_IsTerraformElement(x interface{}) *bo
 }
 
 // Experimental.
-func VertexAiFeaturestoreEntitytypeFeature_IsTerraformResource(x interface{}) *bool {
+func VertexAiFeaturestoreEntitytypeFeature_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateVertexAiFeaturestoreEntitytypeFeature_IsTerraformResourceParameters(x); err != nil {
@@ -763,7 +762,7 @@ func VertexAiFeaturestoreEntitytypeFeature_IsTerraformResource(x interface{}) *b
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.vertexAiFeaturestoreEntitytypeFeature.VertexAiFeaturestoreEntitytypeFeature",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -788,31 +787,31 @@ func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) AddMoveTarget(moveTarg
 	_jsii_.InvokeVoid(
 		v,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) AddOverride(path *string, value interface{}) {
+func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) AddOverride(path *string, value any) {
 	if err := v.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		v,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := v.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		v,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -828,7 +827,7 @@ func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) GetBooleanAttribute(te
 	_jsii_.Invoke(
 		v,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -844,7 +843,7 @@ func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) GetBooleanMapAttribute
 	_jsii_.Invoke(
 		v,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -860,7 +859,7 @@ func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) GetListAttribute(terra
 	_jsii_.Invoke(
 		v,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -876,7 +875,7 @@ func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) GetNumberAttribute(ter
 	_jsii_.Invoke(
 		v,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -892,7 +891,7 @@ func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) GetNumberListAttribute
 	_jsii_.Invoke(
 		v,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -908,7 +907,7 @@ func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) GetNumberMapAttribute(
 	_jsii_.Invoke(
 		v,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -924,7 +923,7 @@ func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) GetStringAttribute(ter
 	_jsii_.Invoke(
 		v,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -940,15 +939,15 @@ func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) GetStringMapAttribute(
 	_jsii_.Invoke(
 		v,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) HasResourceMove() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -967,7 +966,7 @@ func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) ImportFrom(id *string,
 	_jsii_.InvokeVoid(
 		v,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -980,7 +979,7 @@ func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) InterpolationForAttrib
 	_jsii_.Invoke(
 		v,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -994,18 +993,18 @@ func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) MoveFromId(id *string)
 	_jsii_.InvokeVoid(
 		v,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) MoveTo(moveTarget *string, index interface{}) {
+func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) MoveTo(moveTarget *string, index any) {
 	if err := v.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		v,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1016,7 +1015,7 @@ func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		v,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1027,7 +1026,7 @@ func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) OverrideLogicalId(newL
 	_jsii_.InvokeVoid(
 		v,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1038,7 +1037,7 @@ func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) PutTimeouts(value *Ver
 	_jsii_.InvokeVoid(
 		v,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1090,8 +1089,8 @@ func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) ResetTimeouts() {
 	)
 }
 
-func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		v,
@@ -1103,8 +1102,8 @@ func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) SynthesizeAttributes()
 	return returns
 }
 
-func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		v,
@@ -1116,8 +1115,8 @@ func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) SynthesizeHclAttribute
 	return returns
 }
 
-func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) ToHclTerraform() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -1129,8 +1128,8 @@ func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) ToHclTerraform() inter
 	return returns
 }
 
-func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) ToMetadata() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -1155,8 +1154,8 @@ func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) ToString() *string {
 	return returns
 }
 
-func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) ToTerraform() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -1167,4 +1166,3 @@ func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) ToTerraform() interfac
 
 	return returns
 }
-

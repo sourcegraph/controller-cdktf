@@ -1,6 +1,5 @@
 package datastreamstream
 
-
 type DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemas struct {
 	// Schema name.
 	//
@@ -9,6 +8,5 @@ type DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemas s
 	// oracle_tables block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/datastream_stream#oracle_tables DatastreamStream#oracle_tables}
-	OracleTables interface{} `field:"optional" json:"oracleTables" yaml:"oracleTables"`
+	OracleTables any `field:"optional" json:"oracleTables" yaml:"oracleTables"`
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.healthcareDataset.HealthcareDataset",
-		reflect.TypeOf((*HealthcareDataset)(nil)).Elem(),
+		reflect.TypeFor[HealthcareDataset](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -75,7 +75,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HealthcareDataset{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -83,15 +83,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.healthcareDataset.HealthcareDatasetConfig",
-		reflect.TypeOf((*HealthcareDatasetConfig)(nil)).Elem(),
+		reflect.TypeFor[HealthcareDatasetConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.healthcareDataset.HealthcareDatasetEncryptionSpec",
-		reflect.TypeOf((*HealthcareDatasetEncryptionSpec)(nil)).Elem(),
+		reflect.TypeFor[HealthcareDatasetEncryptionSpec](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.healthcareDataset.HealthcareDatasetEncryptionSpecOutputReference",
-		reflect.TypeOf((*HealthcareDatasetEncryptionSpecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HealthcareDatasetEncryptionSpecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -118,7 +118,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HealthcareDatasetEncryptionSpecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -126,11 +126,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.healthcareDataset.HealthcareDatasetTimeouts",
-		reflect.TypeOf((*HealthcareDatasetTimeouts)(nil)).Elem(),
+		reflect.TypeFor[HealthcareDatasetTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.healthcareDataset.HealthcareDatasetTimeoutsOutputReference",
-		reflect.TypeOf((*HealthcareDatasetTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HealthcareDatasetTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -163,7 +163,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HealthcareDatasetTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

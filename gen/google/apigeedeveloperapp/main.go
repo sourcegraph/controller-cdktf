@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.apigeeDeveloperApp.ApigeeDeveloperApp",
-		reflect.TypeOf((*ApigeeDeveloperApp)(nil)).Elem(),
+		reflect.TypeFor[ApigeeDeveloperApp](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -92,7 +92,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApigeeDeveloperApp{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -100,11 +100,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.apigeeDeveloperApp.ApigeeDeveloperAppAttributes",
-		reflect.TypeOf((*ApigeeDeveloperAppAttributes)(nil)).Elem(),
+		reflect.TypeFor[ApigeeDeveloperAppAttributes](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.apigeeDeveloperApp.ApigeeDeveloperAppAttributesList",
-		reflect.TypeOf((*ApigeeDeveloperAppAttributesList)(nil)).Elem(),
+		reflect.TypeFor[ApigeeDeveloperAppAttributesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -118,7 +118,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApigeeDeveloperAppAttributesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -126,7 +126,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.apigeeDeveloperApp.ApigeeDeveloperAppAttributesOutputReference",
-		reflect.TypeOf((*ApigeeDeveloperAppAttributesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ApigeeDeveloperAppAttributesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -156,7 +156,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApigeeDeveloperAppAttributesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -164,19 +164,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.apigeeDeveloperApp.ApigeeDeveloperAppConfig",
-		reflect.TypeOf((*ApigeeDeveloperAppConfig)(nil)).Elem(),
+		reflect.TypeFor[ApigeeDeveloperAppConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.apigeeDeveloperApp.ApigeeDeveloperAppCredentials",
-		reflect.TypeOf((*ApigeeDeveloperAppCredentials)(nil)).Elem(),
+		reflect.TypeFor[ApigeeDeveloperAppCredentials](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.apigeeDeveloperApp.ApigeeDeveloperAppCredentialsApiProducts",
-		reflect.TypeOf((*ApigeeDeveloperAppCredentialsApiProducts)(nil)).Elem(),
+		reflect.TypeFor[ApigeeDeveloperAppCredentialsApiProducts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.apigeeDeveloperApp.ApigeeDeveloperAppCredentialsApiProductsList",
-		reflect.TypeOf((*ApigeeDeveloperAppCredentialsApiProductsList)(nil)).Elem(),
+		reflect.TypeFor[ApigeeDeveloperAppCredentialsApiProductsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -189,7 +189,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApigeeDeveloperAppCredentialsApiProductsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -197,7 +197,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.apigeeDeveloperApp.ApigeeDeveloperAppCredentialsApiProductsOutputReference",
-		reflect.TypeOf((*ApigeeDeveloperAppCredentialsApiProductsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ApigeeDeveloperAppCredentialsApiProductsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apiproduct", GoGetter: "Apiproduct"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -223,7 +223,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApigeeDeveloperAppCredentialsApiProductsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -231,11 +231,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.apigeeDeveloperApp.ApigeeDeveloperAppCredentialsAttributes",
-		reflect.TypeOf((*ApigeeDeveloperAppCredentialsAttributes)(nil)).Elem(),
+		reflect.TypeFor[ApigeeDeveloperAppCredentialsAttributes](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.apigeeDeveloperApp.ApigeeDeveloperAppCredentialsAttributesList",
-		reflect.TypeOf((*ApigeeDeveloperAppCredentialsAttributesList)(nil)).Elem(),
+		reflect.TypeFor[ApigeeDeveloperAppCredentialsAttributesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -248,7 +248,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApigeeDeveloperAppCredentialsAttributesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -256,7 +256,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.apigeeDeveloperApp.ApigeeDeveloperAppCredentialsAttributesOutputReference",
-		reflect.TypeOf((*ApigeeDeveloperAppCredentialsAttributesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ApigeeDeveloperAppCredentialsAttributesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -282,7 +282,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApigeeDeveloperAppCredentialsAttributesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -290,7 +290,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.apigeeDeveloperApp.ApigeeDeveloperAppCredentialsList",
-		reflect.TypeOf((*ApigeeDeveloperAppCredentialsList)(nil)).Elem(),
+		reflect.TypeFor[ApigeeDeveloperAppCredentialsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -303,7 +303,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApigeeDeveloperAppCredentialsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -311,7 +311,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.apigeeDeveloperApp.ApigeeDeveloperAppCredentialsOutputReference",
-		reflect.TypeOf((*ApigeeDeveloperAppCredentialsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ApigeeDeveloperAppCredentialsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apiProducts", GoGetter: "ApiProducts"},
 			_jsii_.MemberProperty{JsiiProperty: "attributes", GoGetter: "Attributes"},
@@ -343,7 +343,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApigeeDeveloperAppCredentialsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -351,11 +351,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.apigeeDeveloperApp.ApigeeDeveloperAppTimeouts",
-		reflect.TypeOf((*ApigeeDeveloperAppTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ApigeeDeveloperAppTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.apigeeDeveloperApp.ApigeeDeveloperAppTimeoutsOutputReference",
-		reflect.TypeOf((*ApigeeDeveloperAppTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ApigeeDeveloperAppTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -388,7 +388,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApigeeDeveloperAppTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

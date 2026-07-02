@@ -12,9 +12,9 @@ type NetworkConnectivityPolicyBasedRouteFilterOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -52,7 +52,7 @@ type NetworkConnectivityPolicyBasedRouteFilterOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -78,7 +78,7 @@ type NetworkConnectivityPolicyBasedRouteFilterOutputReference interface {
 	ResetSrcRange()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -91,8 +91,8 @@ type jsiiProxy_NetworkConnectivityPolicyBasedRouteFilterOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_NetworkConnectivityPolicyBasedRouteFilterOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkConnectivityPolicyBasedRouteFilterOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -241,7 +241,6 @@ func (j *jsiiProxy_NetworkConnectivityPolicyBasedRouteFilterOutputReference) Ter
 	return returns
 }
 
-
 func NewNetworkConnectivityPolicyBasedRouteFilterOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) NetworkConnectivityPolicyBasedRouteFilterOutputReference {
 	_init_.Initialize()
 
@@ -252,7 +251,7 @@ func NewNetworkConnectivityPolicyBasedRouteFilterOutputReference(terraformResour
 
 	_jsii_.Create(
 		"@cdktf/provider-google.networkConnectivityPolicyBasedRoute.NetworkConnectivityPolicyBasedRouteFilterOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -264,12 +263,12 @@ func NewNetworkConnectivityPolicyBasedRouteFilterOutputReference_Override(n Netw
 
 	_jsii_.Create(
 		"@cdktf/provider-google.networkConnectivityPolicyBasedRoute.NetworkConnectivityPolicyBasedRouteFilterOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivityPolicyBasedRouteFilterOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_NetworkConnectivityPolicyBasedRouteFilterOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -280,7 +279,7 @@ func (j *jsiiProxy_NetworkConnectivityPolicyBasedRouteFilterOutputReference)SetC
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivityPolicyBasedRouteFilterOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_NetworkConnectivityPolicyBasedRouteFilterOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -291,7 +290,7 @@ func (j *jsiiProxy_NetworkConnectivityPolicyBasedRouteFilterOutputReference)SetC
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivityPolicyBasedRouteFilterOutputReference)SetDestRange(val *string) {
+func (j *jsiiProxy_NetworkConnectivityPolicyBasedRouteFilterOutputReference) SetDestRange(val *string) {
 	if err := j.validateSetDestRangeParameters(val); err != nil {
 		panic(err)
 	}
@@ -302,7 +301,7 @@ func (j *jsiiProxy_NetworkConnectivityPolicyBasedRouteFilterOutputReference)SetD
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivityPolicyBasedRouteFilterOutputReference)SetInternalValue(val *NetworkConnectivityPolicyBasedRouteFilter) {
+func (j *jsiiProxy_NetworkConnectivityPolicyBasedRouteFilterOutputReference) SetInternalValue(val *NetworkConnectivityPolicyBasedRouteFilter) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -313,7 +312,7 @@ func (j *jsiiProxy_NetworkConnectivityPolicyBasedRouteFilterOutputReference)SetI
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivityPolicyBasedRouteFilterOutputReference)SetIpProtocol(val *string) {
+func (j *jsiiProxy_NetworkConnectivityPolicyBasedRouteFilterOutputReference) SetIpProtocol(val *string) {
 	if err := j.validateSetIpProtocolParameters(val); err != nil {
 		panic(err)
 	}
@@ -324,7 +323,7 @@ func (j *jsiiProxy_NetworkConnectivityPolicyBasedRouteFilterOutputReference)SetI
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivityPolicyBasedRouteFilterOutputReference)SetProtocolVersion(val *string) {
+func (j *jsiiProxy_NetworkConnectivityPolicyBasedRouteFilterOutputReference) SetProtocolVersion(val *string) {
 	if err := j.validateSetProtocolVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -335,7 +334,7 @@ func (j *jsiiProxy_NetworkConnectivityPolicyBasedRouteFilterOutputReference)SetP
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivityPolicyBasedRouteFilterOutputReference)SetSrcRange(val *string) {
+func (j *jsiiProxy_NetworkConnectivityPolicyBasedRouteFilterOutputReference) SetSrcRange(val *string) {
 	if err := j.validateSetSrcRangeParameters(val); err != nil {
 		panic(err)
 	}
@@ -346,7 +345,7 @@ func (j *jsiiProxy_NetworkConnectivityPolicyBasedRouteFilterOutputReference)SetS
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivityPolicyBasedRouteFilterOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_NetworkConnectivityPolicyBasedRouteFilterOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -357,7 +356,7 @@ func (j *jsiiProxy_NetworkConnectivityPolicyBasedRouteFilterOutputReference)SetT
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivityPolicyBasedRouteFilterOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NetworkConnectivityPolicyBasedRouteFilterOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -381,16 +380,16 @@ func (n *jsiiProxy_NetworkConnectivityPolicyBasedRouteFilterOutputReference) Com
 	return returns
 }
 
-func (n *jsiiProxy_NetworkConnectivityPolicyBasedRouteFilterOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (n *jsiiProxy_NetworkConnectivityPolicyBasedRouteFilterOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -406,7 +405,7 @@ func (n *jsiiProxy_NetworkConnectivityPolicyBasedRouteFilterOutputReference) Get
 	_jsii_.Invoke(
 		n,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -422,7 +421,7 @@ func (n *jsiiProxy_NetworkConnectivityPolicyBasedRouteFilterOutputReference) Get
 	_jsii_.Invoke(
 		n,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -438,7 +437,7 @@ func (n *jsiiProxy_NetworkConnectivityPolicyBasedRouteFilterOutputReference) Get
 	_jsii_.Invoke(
 		n,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -454,7 +453,7 @@ func (n *jsiiProxy_NetworkConnectivityPolicyBasedRouteFilterOutputReference) Get
 	_jsii_.Invoke(
 		n,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -470,7 +469,7 @@ func (n *jsiiProxy_NetworkConnectivityPolicyBasedRouteFilterOutputReference) Get
 	_jsii_.Invoke(
 		n,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -486,7 +485,7 @@ func (n *jsiiProxy_NetworkConnectivityPolicyBasedRouteFilterOutputReference) Get
 	_jsii_.Invoke(
 		n,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -502,7 +501,7 @@ func (n *jsiiProxy_NetworkConnectivityPolicyBasedRouteFilterOutputReference) Get
 	_jsii_.Invoke(
 		n,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -518,7 +517,7 @@ func (n *jsiiProxy_NetworkConnectivityPolicyBasedRouteFilterOutputReference) Get
 	_jsii_.Invoke(
 		n,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -547,7 +546,7 @@ func (n *jsiiProxy_NetworkConnectivityPolicyBasedRouteFilterOutputReference) Int
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -578,16 +577,16 @@ func (n *jsiiProxy_NetworkConnectivityPolicyBasedRouteFilterOutputReference) Res
 	)
 }
 
-func (n *jsiiProxy_NetworkConnectivityPolicyBasedRouteFilterOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (n *jsiiProxy_NetworkConnectivityPolicyBasedRouteFilterOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := n.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		n,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -606,4 +605,3 @@ func (n *jsiiProxy_NetworkConnectivityPolicyBasedRouteFilterOutputReference) ToS
 
 	return returns
 }
-

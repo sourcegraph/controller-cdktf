@@ -15,9 +15,9 @@ type TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264OutputReference 
 	BitrateBpsInput() *float64
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -83,7 +83,7 @@ type TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264OutputReference 
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -121,7 +121,7 @@ type TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264OutputReference 
 	ResetWidthPixels()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -154,8 +154,8 @@ func (j *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264Ou
 	return returns
 }
 
-func (j *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264OutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264OutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -504,7 +504,6 @@ func (j *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264Ou
 	return returns
 }
 
-
 func NewTranscoderJobTemplateConfigElementaryStreamsVideoStreamH264OutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264OutputReference {
 	_init_.Initialize()
 
@@ -515,7 +514,7 @@ func NewTranscoderJobTemplateConfigElementaryStreamsVideoStreamH264OutputReferen
 
 	_jsii_.Create(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264OutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -527,12 +526,12 @@ func NewTranscoderJobTemplateConfigElementaryStreamsVideoStreamH264OutputReferen
 
 	_jsii_.Create(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264OutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		t,
 	)
 }
 
-func (j *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264OutputReference)SetBitrateBps(val *float64) {
+func (j *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264OutputReference) SetBitrateBps(val *float64) {
 	if err := j.validateSetBitrateBpsParameters(val); err != nil {
 		panic(err)
 	}
@@ -543,7 +542,7 @@ func (j *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264Ou
 	)
 }
 
-func (j *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264OutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264OutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -554,7 +553,7 @@ func (j *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264Ou
 	)
 }
 
-func (j *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264OutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264OutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -565,7 +564,7 @@ func (j *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264Ou
 	)
 }
 
-func (j *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264OutputReference)SetCrfLevel(val *float64) {
+func (j *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264OutputReference) SetCrfLevel(val *float64) {
 	if err := j.validateSetCrfLevelParameters(val); err != nil {
 		panic(err)
 	}
@@ -576,7 +575,7 @@ func (j *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264Ou
 	)
 }
 
-func (j *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264OutputReference)SetEntropyCoder(val *string) {
+func (j *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264OutputReference) SetEntropyCoder(val *string) {
 	if err := j.validateSetEntropyCoderParameters(val); err != nil {
 		panic(err)
 	}
@@ -587,7 +586,7 @@ func (j *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264Ou
 	)
 }
 
-func (j *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264OutputReference)SetFrameRate(val *float64) {
+func (j *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264OutputReference) SetFrameRate(val *float64) {
 	if err := j.validateSetFrameRateParameters(val); err != nil {
 		panic(err)
 	}
@@ -598,7 +597,7 @@ func (j *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264Ou
 	)
 }
 
-func (j *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264OutputReference)SetGopDuration(val *string) {
+func (j *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264OutputReference) SetGopDuration(val *string) {
 	if err := j.validateSetGopDurationParameters(val); err != nil {
 		panic(err)
 	}
@@ -609,7 +608,7 @@ func (j *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264Ou
 	)
 }
 
-func (j *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264OutputReference)SetHeightPixels(val *float64) {
+func (j *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264OutputReference) SetHeightPixels(val *float64) {
 	if err := j.validateSetHeightPixelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -620,7 +619,7 @@ func (j *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264Ou
 	)
 }
 
-func (j *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264OutputReference)SetInternalValue(val *TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264) {
+func (j *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264OutputReference) SetInternalValue(val *TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -631,7 +630,7 @@ func (j *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264Ou
 	)
 }
 
-func (j *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264OutputReference)SetPixelFormat(val *string) {
+func (j *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264OutputReference) SetPixelFormat(val *string) {
 	if err := j.validateSetPixelFormatParameters(val); err != nil {
 		panic(err)
 	}
@@ -642,7 +641,7 @@ func (j *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264Ou
 	)
 }
 
-func (j *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264OutputReference)SetPreset(val *string) {
+func (j *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264OutputReference) SetPreset(val *string) {
 	if err := j.validateSetPresetParameters(val); err != nil {
 		panic(err)
 	}
@@ -653,7 +652,7 @@ func (j *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264Ou
 	)
 }
 
-func (j *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264OutputReference)SetProfile(val *string) {
+func (j *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264OutputReference) SetProfile(val *string) {
 	if err := j.validateSetProfileParameters(val); err != nil {
 		panic(err)
 	}
@@ -664,7 +663,7 @@ func (j *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264Ou
 	)
 }
 
-func (j *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264OutputReference)SetRateControlMode(val *string) {
+func (j *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264OutputReference) SetRateControlMode(val *string) {
 	if err := j.validateSetRateControlModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -675,7 +674,7 @@ func (j *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264Ou
 	)
 }
 
-func (j *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264OutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264OutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -686,7 +685,7 @@ func (j *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264Ou
 	)
 }
 
-func (j *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264OutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264OutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -697,7 +696,7 @@ func (j *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264Ou
 	)
 }
 
-func (j *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264OutputReference)SetVbvFullnessBits(val *float64) {
+func (j *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264OutputReference) SetVbvFullnessBits(val *float64) {
 	if err := j.validateSetVbvFullnessBitsParameters(val); err != nil {
 		panic(err)
 	}
@@ -708,7 +707,7 @@ func (j *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264Ou
 	)
 }
 
-func (j *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264OutputReference)SetVbvSizeBits(val *float64) {
+func (j *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264OutputReference) SetVbvSizeBits(val *float64) {
 	if err := j.validateSetVbvSizeBitsParameters(val); err != nil {
 		panic(err)
 	}
@@ -719,7 +718,7 @@ func (j *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264Ou
 	)
 }
 
-func (j *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264OutputReference)SetWidthPixels(val *float64) {
+func (j *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264OutputReference) SetWidthPixels(val *float64) {
 	if err := j.validateSetWidthPixelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -743,16 +742,16 @@ func (t *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264Ou
 	return returns
 }
 
-func (t *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264OutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (t *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264OutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := t.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		t,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -768,7 +767,7 @@ func (t *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264Ou
 	_jsii_.Invoke(
 		t,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -784,7 +783,7 @@ func (t *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264Ou
 	_jsii_.Invoke(
 		t,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -800,7 +799,7 @@ func (t *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264Ou
 	_jsii_.Invoke(
 		t,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -816,7 +815,7 @@ func (t *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264Ou
 	_jsii_.Invoke(
 		t,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -832,7 +831,7 @@ func (t *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264Ou
 	_jsii_.Invoke(
 		t,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -848,7 +847,7 @@ func (t *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264Ou
 	_jsii_.Invoke(
 		t,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -864,7 +863,7 @@ func (t *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264Ou
 	_jsii_.Invoke(
 		t,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -880,7 +879,7 @@ func (t *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264Ou
 	_jsii_.Invoke(
 		t,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -909,7 +908,7 @@ func (t *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264Ou
 	_jsii_.Invoke(
 		t,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -923,7 +922,7 @@ func (t *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264Ou
 	_jsii_.InvokeVoid(
 		t,
 		"putHlg",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -934,7 +933,7 @@ func (t *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264Ou
 	_jsii_.InvokeVoid(
 		t,
 		"putSdr",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1042,16 +1041,16 @@ func (t *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264Ou
 	)
 }
 
-func (t *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264OutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (t *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264OutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := t.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		t,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -1070,4 +1069,3 @@ func (t *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264Ou
 
 	return returns
 }
-

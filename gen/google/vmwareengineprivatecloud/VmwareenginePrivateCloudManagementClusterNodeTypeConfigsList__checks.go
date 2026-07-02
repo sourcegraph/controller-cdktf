@@ -34,7 +34,7 @@ func (v *jsiiProxy_VmwareenginePrivateCloudManagementClusterNodeTypeConfigsList)
 	return nil
 }
 
-func (j *jsiiProxy_VmwareenginePrivateCloudManagementClusterNodeTypeConfigsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_VmwareenginePrivateCloudManagementClusterNodeTypeConfigsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewVmwareenginePrivateCloudManagementClusterNodeTypeConfigsListPara
 
 	return nil
 }
-

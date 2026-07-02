@@ -90,7 +90,7 @@ func (f *jsiiProxy_FirebaserulesRulesetSourceOutputReference) validateInterpolat
 	return nil
 }
 
-func (f *jsiiProxy_FirebaserulesRulesetSourceOutputReference) validatePutFilesParameters(value interface{}) error {
+func (f *jsiiProxy_FirebaserulesRulesetSourceOutputReference) validatePutFilesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (f *jsiiProxy_FirebaserulesRulesetSourceOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_FirebaserulesRulesetSourceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_FirebaserulesRulesetSourceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -237,4 +237,3 @@ func validateNewFirebaserulesRulesetSourceOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

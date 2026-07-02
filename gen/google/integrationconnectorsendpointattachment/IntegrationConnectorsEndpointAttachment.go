@@ -15,15 +15,15 @@ type IntegrationConnectorsEndpointAttachment interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -33,9 +33,9 @@ type IntegrationConnectorsEndpointAttachment interface {
 	SetDescription(val *string)
 	DescriptionInput() *string
 	EffectiveLabels() cdktf.StringMap
-	EndpointGlobalAccess() interface{}
-	SetEndpointGlobalAccess(val interface{})
-	EndpointGlobalAccessInput() interface{}
+	EndpointGlobalAccess() any
+	SetEndpointGlobalAccess(val any)
+	EndpointGlobalAccessInput() any
 	EndpointIp() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -71,11 +71,11 @@ type IntegrationConnectorsEndpointAttachment interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ServiceAttachment() *string
 	SetServiceAttachment(val *string)
 	ServiceAttachmentInput() *string
@@ -83,19 +83,19 @@ type IntegrationConnectorsEndpointAttachment interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() IntegrationConnectorsEndpointAttachmentTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -113,7 +113,7 @@ type IntegrationConnectorsEndpointAttachment interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -125,7 +125,7 @@ type IntegrationConnectorsEndpointAttachment interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -142,17 +142,17 @@ type IntegrationConnectorsEndpointAttachment interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for IntegrationConnectorsEndpointAttachment
@@ -170,8 +170,8 @@ func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment) CdktfStack() cdktf.T
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -180,8 +180,8 @@ func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment) Connection() interfa
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -190,8 +190,8 @@ func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment) ConstructNodeMetadat
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -250,8 +250,8 @@ func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment) EffectiveLabels() cd
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment) EndpointGlobalAccess() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment) EndpointGlobalAccess() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"endpointGlobalAccess",
@@ -260,8 +260,8 @@ func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment) EndpointGlobalAccess
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment) EndpointGlobalAccessInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment) EndpointGlobalAccessInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"endpointGlobalAccessInput",
@@ -440,8 +440,8 @@ func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment) Provider() cdktf.Ter
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -450,8 +450,8 @@ func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment) Provisioners() *[]in
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -500,8 +500,8 @@ func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment) TerraformLabels() cd
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -530,8 +530,8 @@ func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment) Timeouts() Integrati
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -550,7 +550,6 @@ func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment) UpdateTime() *string
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/integration_connectors_endpoint_attachment google_integration_connectors_endpoint_attachment} Resource.
 func NewIntegrationConnectorsEndpointAttachment(scope constructs.Construct, id *string, config *IntegrationConnectorsEndpointAttachmentConfig) IntegrationConnectorsEndpointAttachment {
 	_init_.Initialize()
@@ -562,7 +561,7 @@ func NewIntegrationConnectorsEndpointAttachment(scope constructs.Construct, id *
 
 	_jsii_.Create(
 		"@cdktf/provider-google.integrationConnectorsEndpointAttachment.IntegrationConnectorsEndpointAttachment",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -575,12 +574,12 @@ func NewIntegrationConnectorsEndpointAttachment_Override(i IntegrationConnectors
 
 	_jsii_.Create(
 		"@cdktf/provider-google.integrationConnectorsEndpointAttachment.IntegrationConnectorsEndpointAttachment",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		i,
 	)
 }
 
-func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment)SetConnection(val interface{}) {
+func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -591,7 +590,7 @@ func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment)SetConnection(val int
 	)
 }
 
-func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment)SetCount(val interface{}) {
+func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -602,7 +601,7 @@ func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment)SetCount(val interfac
 	)
 }
 
-func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -610,7 +609,7 @@ func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment)SetDependsOn(val *[]*
 	)
 }
 
-func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment)SetDescription(val *string) {
+func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -621,7 +620,7 @@ func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment)SetDescription(val *s
 	)
 }
 
-func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment)SetEndpointGlobalAccess(val interface{}) {
+func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment) SetEndpointGlobalAccess(val any) {
 	if err := j.validateSetEndpointGlobalAccessParameters(val); err != nil {
 		panic(err)
 	}
@@ -632,7 +631,7 @@ func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment)SetEndpointGlobalAcce
 	)
 }
 
-func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -640,7 +639,7 @@ func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment)SetForEach(val cdktf.
 	)
 }
 
-func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment)SetId(val *string) {
+func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -651,7 +650,7 @@ func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -662,7 +661,7 @@ func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment)SetLabels(val *map[st
 	)
 }
 
-func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -673,7 +672,7 @@ func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment)SetLifecycle(val *cdk
 	)
 }
 
-func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment)SetLocation(val *string) {
+func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -684,7 +683,7 @@ func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment)SetLocation(val *stri
 	)
 }
 
-func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment)SetName(val *string) {
+func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -695,7 +694,7 @@ func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment)SetName(val *string) 
 	)
 }
 
-func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment)SetProject(val *string) {
+func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -706,7 +705,7 @@ func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment)SetProject(val *strin
 	)
 }
 
-func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -714,7 +713,7 @@ func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment)SetProvider(val cdktf
 	)
 }
 
-func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -725,7 +724,7 @@ func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment)SetProvisioners(val *
 	)
 }
 
-func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment)SetServiceAttachment(val *string) {
+func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment) SetServiceAttachment(val *string) {
 	if err := j.validateSetServiceAttachmentParameters(val); err != nil {
 		panic(err)
 	}
@@ -748,7 +747,7 @@ func IntegrationConnectorsEndpointAttachment_GenerateConfigForImport(scope const
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.integrationConnectorsEndpointAttachment.IntegrationConnectorsEndpointAttachment",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -772,7 +771,7 @@ func IntegrationConnectorsEndpointAttachment_GenerateConfigForImport(scope const
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func IntegrationConnectorsEndpointAttachment_IsConstruct(x interface{}) *bool {
+func IntegrationConnectorsEndpointAttachment_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIntegrationConnectorsEndpointAttachment_IsConstructParameters(x); err != nil {
@@ -783,7 +782,7 @@ func IntegrationConnectorsEndpointAttachment_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.integrationConnectorsEndpointAttachment.IntegrationConnectorsEndpointAttachment",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -791,7 +790,7 @@ func IntegrationConnectorsEndpointAttachment_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func IntegrationConnectorsEndpointAttachment_IsTerraformElement(x interface{}) *bool {
+func IntegrationConnectorsEndpointAttachment_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIntegrationConnectorsEndpointAttachment_IsTerraformElementParameters(x); err != nil {
@@ -802,7 +801,7 @@ func IntegrationConnectorsEndpointAttachment_IsTerraformElement(x interface{}) *
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.integrationConnectorsEndpointAttachment.IntegrationConnectorsEndpointAttachment",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -810,7 +809,7 @@ func IntegrationConnectorsEndpointAttachment_IsTerraformElement(x interface{}) *
 }
 
 // Experimental.
-func IntegrationConnectorsEndpointAttachment_IsTerraformResource(x interface{}) *bool {
+func IntegrationConnectorsEndpointAttachment_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIntegrationConnectorsEndpointAttachment_IsTerraformResourceParameters(x); err != nil {
@@ -821,7 +820,7 @@ func IntegrationConnectorsEndpointAttachment_IsTerraformResource(x interface{}) 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.integrationConnectorsEndpointAttachment.IntegrationConnectorsEndpointAttachment",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -846,31 +845,31 @@ func (i *jsiiProxy_IntegrationConnectorsEndpointAttachment) AddMoveTarget(moveTa
 	_jsii_.InvokeVoid(
 		i,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (i *jsiiProxy_IntegrationConnectorsEndpointAttachment) AddOverride(path *string, value interface{}) {
+func (i *jsiiProxy_IntegrationConnectorsEndpointAttachment) AddOverride(path *string, value any) {
 	if err := i.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (i *jsiiProxy_IntegrationConnectorsEndpointAttachment) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_IntegrationConnectorsEndpointAttachment) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -886,7 +885,7 @@ func (i *jsiiProxy_IntegrationConnectorsEndpointAttachment) GetBooleanAttribute(
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -902,7 +901,7 @@ func (i *jsiiProxy_IntegrationConnectorsEndpointAttachment) GetBooleanMapAttribu
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -918,7 +917,7 @@ func (i *jsiiProxy_IntegrationConnectorsEndpointAttachment) GetListAttribute(ter
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -934,7 +933,7 @@ func (i *jsiiProxy_IntegrationConnectorsEndpointAttachment) GetNumberAttribute(t
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -950,7 +949,7 @@ func (i *jsiiProxy_IntegrationConnectorsEndpointAttachment) GetNumberListAttribu
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -966,7 +965,7 @@ func (i *jsiiProxy_IntegrationConnectorsEndpointAttachment) GetNumberMapAttribut
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -982,7 +981,7 @@ func (i *jsiiProxy_IntegrationConnectorsEndpointAttachment) GetStringAttribute(t
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -998,15 +997,15 @@ func (i *jsiiProxy_IntegrationConnectorsEndpointAttachment) GetStringMapAttribut
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (i *jsiiProxy_IntegrationConnectorsEndpointAttachment) HasResourceMove() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IntegrationConnectorsEndpointAttachment) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -1025,7 +1024,7 @@ func (i *jsiiProxy_IntegrationConnectorsEndpointAttachment) ImportFrom(id *strin
 	_jsii_.InvokeVoid(
 		i,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1038,7 +1037,7 @@ func (i *jsiiProxy_IntegrationConnectorsEndpointAttachment) InterpolationForAttr
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1052,18 +1051,18 @@ func (i *jsiiProxy_IntegrationConnectorsEndpointAttachment) MoveFromId(id *strin
 	_jsii_.InvokeVoid(
 		i,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (i *jsiiProxy_IntegrationConnectorsEndpointAttachment) MoveTo(moveTarget *string, index interface{}) {
+func (i *jsiiProxy_IntegrationConnectorsEndpointAttachment) MoveTo(moveTarget *string, index any) {
 	if err := i.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1074,7 +1073,7 @@ func (i *jsiiProxy_IntegrationConnectorsEndpointAttachment) MoveToId(id *string)
 	_jsii_.InvokeVoid(
 		i,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1085,7 +1084,7 @@ func (i *jsiiProxy_IntegrationConnectorsEndpointAttachment) OverrideLogicalId(ne
 	_jsii_.InvokeVoid(
 		i,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1096,7 +1095,7 @@ func (i *jsiiProxy_IntegrationConnectorsEndpointAttachment) PutTimeouts(value *I
 	_jsii_.InvokeVoid(
 		i,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1156,8 +1155,8 @@ func (i *jsiiProxy_IntegrationConnectorsEndpointAttachment) ResetTimeouts() {
 	)
 }
 
-func (i *jsiiProxy_IntegrationConnectorsEndpointAttachment) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (i *jsiiProxy_IntegrationConnectorsEndpointAttachment) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
@@ -1169,8 +1168,8 @@ func (i *jsiiProxy_IntegrationConnectorsEndpointAttachment) SynthesizeAttributes
 	return returns
 }
 
-func (i *jsiiProxy_IntegrationConnectorsEndpointAttachment) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (i *jsiiProxy_IntegrationConnectorsEndpointAttachment) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
@@ -1182,8 +1181,8 @@ func (i *jsiiProxy_IntegrationConnectorsEndpointAttachment) SynthesizeHclAttribu
 	return returns
 }
 
-func (i *jsiiProxy_IntegrationConnectorsEndpointAttachment) ToHclTerraform() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IntegrationConnectorsEndpointAttachment) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -1195,8 +1194,8 @@ func (i *jsiiProxy_IntegrationConnectorsEndpointAttachment) ToHclTerraform() int
 	return returns
 }
 
-func (i *jsiiProxy_IntegrationConnectorsEndpointAttachment) ToMetadata() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IntegrationConnectorsEndpointAttachment) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -1221,8 +1220,8 @@ func (i *jsiiProxy_IntegrationConnectorsEndpointAttachment) ToString() *string {
 	return returns
 }
 
-func (i *jsiiProxy_IntegrationConnectorsEndpointAttachment) ToTerraform() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IntegrationConnectorsEndpointAttachment) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -1233,4 +1232,3 @@ func (i *jsiiProxy_IntegrationConnectorsEndpointAttachment) ToTerraform() interf
 
 	return returns
 }
-

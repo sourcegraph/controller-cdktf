@@ -15,11 +15,11 @@ type DataGoogleSecretManagerRegionalSecretIamPolicy interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -54,20 +54,20 @@ type DataGoogleSecretManagerRegionalSecretIamPolicy interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SecretId() *string
 	SetSecretId(val *string)
 	SecretIdInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -95,18 +95,18 @@ type DataGoogleSecretManagerRegionalSecretIamPolicy interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataGoogleSecretManagerRegionalSecretIamPolicy
@@ -124,8 +124,8 @@ func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretIamPolicy) CdktfStack() 
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretIamPolicy) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretIamPolicy) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -134,8 +134,8 @@ func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretIamPolicy) ConstructNode
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretIamPolicy) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretIamPolicy) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -294,8 +294,8 @@ func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretIamPolicy) Provider() cd
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretIamPolicy) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretIamPolicy) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -334,8 +334,8 @@ func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretIamPolicy) TerraformGene
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretIamPolicy) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretIamPolicy) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -354,7 +354,6 @@ func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretIamPolicy) TerraformReso
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/secret_manager_regional_secret_iam_policy google_secret_manager_regional_secret_iam_policy} Data Source.
 func NewDataGoogleSecretManagerRegionalSecretIamPolicy(scope constructs.Construct, id *string, config *DataGoogleSecretManagerRegionalSecretIamPolicyConfig) DataGoogleSecretManagerRegionalSecretIamPolicy {
 	_init_.Initialize()
@@ -366,7 +365,7 @@ func NewDataGoogleSecretManagerRegionalSecretIamPolicy(scope constructs.Construc
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleSecretManagerRegionalSecretIamPolicy.DataGoogleSecretManagerRegionalSecretIamPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -379,12 +378,12 @@ func NewDataGoogleSecretManagerRegionalSecretIamPolicy_Override(d DataGoogleSecr
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleSecretManagerRegionalSecretIamPolicy.DataGoogleSecretManagerRegionalSecretIamPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretIamPolicy)SetCount(val interface{}) {
+func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretIamPolicy) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -395,7 +394,7 @@ func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretIamPolicy)SetCount(val i
 	)
 }
 
-func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretIamPolicy)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretIamPolicy) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -403,7 +402,7 @@ func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretIamPolicy)SetDependsOn(v
 	)
 }
 
-func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretIamPolicy)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretIamPolicy) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -411,7 +410,7 @@ func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretIamPolicy)SetForEach(val
 	)
 }
 
-func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretIamPolicy)SetId(val *string) {
+func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretIamPolicy) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -422,7 +421,7 @@ func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretIamPolicy)SetId(val *str
 	)
 }
 
-func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretIamPolicy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretIamPolicy) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -433,7 +432,7 @@ func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretIamPolicy)SetLifecycle(v
 	)
 }
 
-func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretIamPolicy)SetLocation(val *string) {
+func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretIamPolicy) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -444,7 +443,7 @@ func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretIamPolicy)SetLocation(va
 	)
 }
 
-func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretIamPolicy)SetProject(val *string) {
+func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretIamPolicy) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -455,7 +454,7 @@ func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretIamPolicy)SetProject(val
 	)
 }
 
-func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretIamPolicy)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretIamPolicy) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -463,7 +462,7 @@ func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretIamPolicy)SetProvider(va
 	)
 }
 
-func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretIamPolicy)SetSecretId(val *string) {
+func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretIamPolicy) SetSecretId(val *string) {
 	if err := j.validateSetSecretIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -486,7 +485,7 @@ func DataGoogleSecretManagerRegionalSecretIamPolicy_GenerateConfigForImport(scop
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleSecretManagerRegionalSecretIamPolicy.DataGoogleSecretManagerRegionalSecretIamPolicy",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -510,7 +509,7 @@ func DataGoogleSecretManagerRegionalSecretIamPolicy_GenerateConfigForImport(scop
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataGoogleSecretManagerRegionalSecretIamPolicy_IsConstruct(x interface{}) *bool {
+func DataGoogleSecretManagerRegionalSecretIamPolicy_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleSecretManagerRegionalSecretIamPolicy_IsConstructParameters(x); err != nil {
@@ -521,7 +520,7 @@ func DataGoogleSecretManagerRegionalSecretIamPolicy_IsConstruct(x interface{}) *
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleSecretManagerRegionalSecretIamPolicy.DataGoogleSecretManagerRegionalSecretIamPolicy",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -529,7 +528,7 @@ func DataGoogleSecretManagerRegionalSecretIamPolicy_IsConstruct(x interface{}) *
 }
 
 // Experimental.
-func DataGoogleSecretManagerRegionalSecretIamPolicy_IsTerraformDataSource(x interface{}) *bool {
+func DataGoogleSecretManagerRegionalSecretIamPolicy_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleSecretManagerRegionalSecretIamPolicy_IsTerraformDataSourceParameters(x); err != nil {
@@ -540,7 +539,7 @@ func DataGoogleSecretManagerRegionalSecretIamPolicy_IsTerraformDataSource(x inte
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleSecretManagerRegionalSecretIamPolicy.DataGoogleSecretManagerRegionalSecretIamPolicy",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -548,7 +547,7 @@ func DataGoogleSecretManagerRegionalSecretIamPolicy_IsTerraformDataSource(x inte
 }
 
 // Experimental.
-func DataGoogleSecretManagerRegionalSecretIamPolicy_IsTerraformElement(x interface{}) *bool {
+func DataGoogleSecretManagerRegionalSecretIamPolicy_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleSecretManagerRegionalSecretIamPolicy_IsTerraformElementParameters(x); err != nil {
@@ -559,7 +558,7 @@ func DataGoogleSecretManagerRegionalSecretIamPolicy_IsTerraformElement(x interfa
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleSecretManagerRegionalSecretIamPolicy.DataGoogleSecretManagerRegionalSecretIamPolicy",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -577,27 +576,27 @@ func DataGoogleSecretManagerRegionalSecretIamPolicy_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleSecretManagerRegionalSecretIamPolicy) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataGoogleSecretManagerRegionalSecretIamPolicy) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataGoogleSecretManagerRegionalSecretIamPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataGoogleSecretManagerRegionalSecretIamPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -613,7 +612,7 @@ func (d *jsiiProxy_DataGoogleSecretManagerRegionalSecretIamPolicy) GetBooleanAtt
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -629,7 +628,7 @@ func (d *jsiiProxy_DataGoogleSecretManagerRegionalSecretIamPolicy) GetBooleanMap
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -645,7 +644,7 @@ func (d *jsiiProxy_DataGoogleSecretManagerRegionalSecretIamPolicy) GetListAttrib
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -661,7 +660,7 @@ func (d *jsiiProxy_DataGoogleSecretManagerRegionalSecretIamPolicy) GetNumberAttr
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -677,7 +676,7 @@ func (d *jsiiProxy_DataGoogleSecretManagerRegionalSecretIamPolicy) GetNumberList
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -693,7 +692,7 @@ func (d *jsiiProxy_DataGoogleSecretManagerRegionalSecretIamPolicy) GetNumberMapA
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -709,7 +708,7 @@ func (d *jsiiProxy_DataGoogleSecretManagerRegionalSecretIamPolicy) GetStringAttr
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -725,7 +724,7 @@ func (d *jsiiProxy_DataGoogleSecretManagerRegionalSecretIamPolicy) GetStringMapA
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -741,7 +740,7 @@ func (d *jsiiProxy_DataGoogleSecretManagerRegionalSecretIamPolicy) Interpolation
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -755,7 +754,7 @@ func (d *jsiiProxy_DataGoogleSecretManagerRegionalSecretIamPolicy) OverrideLogic
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -791,8 +790,8 @@ func (d *jsiiProxy_DataGoogleSecretManagerRegionalSecretIamPolicy) ResetProject(
 	)
 }
 
-func (d *jsiiProxy_DataGoogleSecretManagerRegionalSecretIamPolicy) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleSecretManagerRegionalSecretIamPolicy) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -804,8 +803,8 @@ func (d *jsiiProxy_DataGoogleSecretManagerRegionalSecretIamPolicy) SynthesizeAtt
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleSecretManagerRegionalSecretIamPolicy) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleSecretManagerRegionalSecretIamPolicy) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -817,8 +816,8 @@ func (d *jsiiProxy_DataGoogleSecretManagerRegionalSecretIamPolicy) SynthesizeHcl
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleSecretManagerRegionalSecretIamPolicy) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleSecretManagerRegionalSecretIamPolicy) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -830,8 +829,8 @@ func (d *jsiiProxy_DataGoogleSecretManagerRegionalSecretIamPolicy) ToHclTerrafor
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleSecretManagerRegionalSecretIamPolicy) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleSecretManagerRegionalSecretIamPolicy) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -856,8 +855,8 @@ func (d *jsiiProxy_DataGoogleSecretManagerRegionalSecretIamPolicy) ToString() *s
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleSecretManagerRegionalSecretIamPolicy) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleSecretManagerRegionalSecretIamPolicy) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -868,4 +867,3 @@ func (d *jsiiProxy_DataGoogleSecretManagerRegionalSecretIamPolicy) ToTerraform()
 
 	return returns
 }
-

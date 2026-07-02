@@ -19,7 +19,7 @@ func (d *jsiiProxy_DataprocMetastoreFederationIamBinding) validateAddMoveTargetP
 	return nil
 }
 
-func (d *jsiiProxy_DataprocMetastoreFederationIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataprocMetastoreFederationIamBinding) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (d *jsiiProxy_DataprocMetastoreFederationIamBinding) validateMoveFromIdPara
 	return nil
 }
 
-func (d *jsiiProxy_DataprocMetastoreFederationIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (d *jsiiProxy_DataprocMetastoreFederationIamBinding) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateDataprocMetastoreFederationIamBinding_GenerateConfigForImportParame
 	return nil
 }
 
-func validateDataprocMetastoreFederationIamBinding_IsConstructParameters(x interface{}) error {
+func validateDataprocMetastoreFederationIamBinding_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateDataprocMetastoreFederationIamBinding_IsConstructParameters(x inter
 	return nil
 }
 
-func validateDataprocMetastoreFederationIamBinding_IsTerraformElementParameters(x interface{}) error {
+func validateDataprocMetastoreFederationIamBinding_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateDataprocMetastoreFederationIamBinding_IsTerraformElementParameters(
 	return nil
 }
 
-func validateDataprocMetastoreFederationIamBinding_IsTerraformResourceParameters(x interface{}) error {
+func validateDataprocMetastoreFederationIamBinding_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateDataprocMetastoreFederationIamBinding_IsTerraformResourceParameters
 	return nil
 }
 
-func (j *jsiiProxy_DataprocMetastoreFederationIamBinding) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocMetastoreFederationIamBinding) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_DataprocMetastoreFederationIamBinding) validateSetConnectionP
 	return nil
 }
 
-func (j *jsiiProxy_DataprocMetastoreFederationIamBinding) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocMetastoreFederationIamBinding) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -393,7 +393,7 @@ func (j *jsiiProxy_DataprocMetastoreFederationIamBinding) validateSetProjectPara
 	return nil
 }
 
-func (j *jsiiProxy_DataprocMetastoreFederationIamBinding) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_DataprocMetastoreFederationIamBinding) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -465,4 +465,3 @@ func validateNewDataprocMetastoreFederationIamBindingParameters(scope constructs
 
 	return nil
 }
-

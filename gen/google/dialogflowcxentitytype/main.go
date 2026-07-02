@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxEntityType.DialogflowCxEntityType",
-		reflect.TypeOf((*DialogflowCxEntityType)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxEntityType](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -87,7 +87,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxEntityType{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -95,15 +95,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowCxEntityType.DialogflowCxEntityTypeConfig",
-		reflect.TypeOf((*DialogflowCxEntityTypeConfig)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxEntityTypeConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowCxEntityType.DialogflowCxEntityTypeEntities",
-		reflect.TypeOf((*DialogflowCxEntityTypeEntities)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxEntityTypeEntities](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxEntityType.DialogflowCxEntityTypeEntitiesList",
-		reflect.TypeOf((*DialogflowCxEntityTypeEntitiesList)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxEntityTypeEntitiesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -117,7 +117,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxEntityTypeEntitiesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -125,7 +125,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxEntityType.DialogflowCxEntityTypeEntitiesOutputReference",
-		reflect.TypeOf((*DialogflowCxEntityTypeEntitiesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxEntityTypeEntitiesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -155,7 +155,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxEntityTypeEntitiesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -163,11 +163,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowCxEntityType.DialogflowCxEntityTypeExcludedPhrases",
-		reflect.TypeOf((*DialogflowCxEntityTypeExcludedPhrases)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxEntityTypeExcludedPhrases](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxEntityType.DialogflowCxEntityTypeExcludedPhrasesList",
-		reflect.TypeOf((*DialogflowCxEntityTypeExcludedPhrasesList)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxEntityTypeExcludedPhrasesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -181,7 +181,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxEntityTypeExcludedPhrasesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -189,7 +189,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxEntityType.DialogflowCxEntityTypeExcludedPhrasesOutputReference",
-		reflect.TypeOf((*DialogflowCxEntityTypeExcludedPhrasesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxEntityTypeExcludedPhrasesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -216,7 +216,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxEntityTypeExcludedPhrasesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -224,11 +224,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowCxEntityType.DialogflowCxEntityTypeTimeouts",
-		reflect.TypeOf((*DialogflowCxEntityTypeTimeouts)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxEntityTypeTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxEntityType.DialogflowCxEntityTypeTimeoutsOutputReference",
-		reflect.TypeOf((*DialogflowCxEntityTypeTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxEntityTypeTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -261,7 +261,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxEntityTypeTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

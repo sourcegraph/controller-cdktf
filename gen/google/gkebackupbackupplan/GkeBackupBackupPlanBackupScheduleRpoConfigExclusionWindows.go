@@ -1,6 +1,5 @@
 package gkebackupbackupplan
 
-
 type GkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindows struct {
 	// Specifies duration of the window in seconds with up to nine fractional digits, terminated by 's'.
 	//
@@ -24,7 +23,7 @@ type GkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindows struct {
 	// Only one of singleOccurrenceDate, daily and daysOfWeek may be set.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_backup_backup_plan#daily GkeBackupBackupPlan#daily}
-	Daily interface{} `field:"optional" json:"daily" yaml:"daily"`
+	Daily any `field:"optional" json:"daily" yaml:"daily"`
 	// days_of_week block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_backup_backup_plan#days_of_week GkeBackupBackupPlan#days_of_week}
@@ -34,4 +33,3 @@ type GkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindows struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_backup_backup_plan#single_occurrence_date GkeBackupBackupPlan#single_occurrence_date}
 	SingleOccurrenceDate *GkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindowsSingleOccurrenceDate `field:"optional" json:"singleOccurrenceDate" yaml:"singleOccurrenceDate"`
 }
-

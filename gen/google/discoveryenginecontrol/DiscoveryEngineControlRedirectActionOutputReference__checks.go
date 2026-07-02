@@ -98,7 +98,7 @@ func (d *jsiiProxy_DiscoveryEngineControlRedirectActionOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineControlRedirectActionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DiscoveryEngineControlRedirectActionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDiscoveryEngineControlRedirectActionOutputReferenceParameters(te
 
 	return nil
 }
-

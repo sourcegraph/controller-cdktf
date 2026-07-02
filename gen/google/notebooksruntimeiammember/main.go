@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.notebooksRuntimeIamMember.NotebooksRuntimeIamMember",
-		reflect.TypeOf((*NotebooksRuntimeIamMember)(nil)).Elem(),
+		reflect.TypeFor[NotebooksRuntimeIamMember](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,7 +73,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NotebooksRuntimeIamMember{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -81,11 +81,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.notebooksRuntimeIamMember.NotebooksRuntimeIamMemberCondition",
-		reflect.TypeOf((*NotebooksRuntimeIamMemberCondition)(nil)).Elem(),
+		reflect.TypeFor[NotebooksRuntimeIamMemberCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.notebooksRuntimeIamMember.NotebooksRuntimeIamMemberConditionOutputReference",
-		reflect.TypeOf((*NotebooksRuntimeIamMemberConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NotebooksRuntimeIamMemberConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -116,7 +116,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NotebooksRuntimeIamMemberConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -124,6 +124,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.notebooksRuntimeIamMember.NotebooksRuntimeIamMemberConfig",
-		reflect.TypeOf((*NotebooksRuntimeIamMemberConfig)(nil)).Elem(),
+		reflect.TypeFor[NotebooksRuntimeIamMemberConfig](),
 	)
 }

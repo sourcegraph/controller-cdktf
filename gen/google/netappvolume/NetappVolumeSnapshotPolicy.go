@@ -1,6 +1,5 @@
 package netappvolume
 
-
 type NetappVolumeSnapshotPolicy struct {
 	// daily_schedule block.
 	//
@@ -12,7 +11,7 @@ type NetappVolumeSnapshotPolicy struct {
 	// To disable automatic snapshot creation you have to remove the whole snapshot_policy block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume#enabled NetappVolume#enabled}
-	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
+	Enabled any `field:"optional" json:"enabled" yaml:"enabled"`
 	// hourly_schedule block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume#hourly_schedule NetappVolume#hourly_schedule}
@@ -26,4 +25,3 @@ type NetappVolumeSnapshotPolicy struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume#weekly_schedule NetappVolume#weekly_schedule}
 	WeeklySchedule *NetappVolumeSnapshotPolicyWeeklySchedule `field:"optional" json:"weeklySchedule" yaml:"weeklySchedule"`
 }
-

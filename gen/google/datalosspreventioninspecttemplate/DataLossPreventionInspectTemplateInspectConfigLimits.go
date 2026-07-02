@@ -1,6 +1,5 @@
 package datalosspreventioninspecttemplate
 
-
 type DataLossPreventionInspectTemplateInspectConfigLimits struct {
 	// Max number of findings that will be returned for each item scanned. The maximum returned is 2000.
 	//
@@ -13,6 +12,5 @@ type DataLossPreventionInspectTemplateInspectConfigLimits struct {
 	// max_findings_per_info_type block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_loss_prevention_inspect_template#max_findings_per_info_type DataLossPreventionInspectTemplate#max_findings_per_info_type}
-	MaxFindingsPerInfoType interface{} `field:"optional" json:"maxFindingsPerInfoType" yaml:"maxFindingsPerInfoType"`
+	MaxFindingsPerInfoType any `field:"optional" json:"maxFindingsPerInfoType" yaml:"maxFindingsPerInfoType"`
 }
-

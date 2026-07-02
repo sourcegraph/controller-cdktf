@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataLossPreventionStoredInfoTypeLargeCustomDictionaryOutputPa
 	return nil
 }
 
-func (j *jsiiProxy_DataLossPreventionStoredInfoTypeLargeCustomDictionaryOutputPathOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataLossPreventionStoredInfoTypeLargeCustomDictionaryOutputPathOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataLossPreventionStoredInfoTypeLargeCustomDictionaryOutputPathO
 
 	return nil
 }
-

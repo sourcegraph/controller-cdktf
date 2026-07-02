@@ -98,7 +98,7 @@ func (g *jsiiProxy_GkeHubFeatureResourceStateOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_GkeHubFeatureResourceStateOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GkeHubFeatureResourceStateOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGkeHubFeatureResourceStateOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

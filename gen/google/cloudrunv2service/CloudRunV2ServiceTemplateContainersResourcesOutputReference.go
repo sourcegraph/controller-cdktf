@@ -12,17 +12,17 @@ type CloudRunV2ServiceTemplateContainersResourcesOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
-	CpuIdle() interface{}
-	SetCpuIdle(val interface{})
-	CpuIdleInput() interface{}
+	CpuIdle() any
+	SetCpuIdle(val any)
+	CpuIdleInput() any
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -35,9 +35,9 @@ type CloudRunV2ServiceTemplateContainersResourcesOutputReference interface {
 	Limits() *map[string]*string
 	SetLimits(val *map[string]*string)
 	LimitsInput() *map[string]*string
-	StartupCpuBoost() interface{}
-	SetStartupCpuBoost(val interface{})
-	StartupCpuBoostInput() interface{}
+	StartupCpuBoost() any
+	SetStartupCpuBoost(val any)
+	StartupCpuBoostInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -49,7 +49,7 @@ type CloudRunV2ServiceTemplateContainersResourcesOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type CloudRunV2ServiceTemplateContainersResourcesOutputReference interface {
 	ResetStartupCpuBoost()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_CloudRunV2ServiceTemplateContainersResourcesOutputReference struc
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersResourcesOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersResourcesOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -108,8 +108,8 @@ func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersResourcesOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersResourcesOutputReference) CpuIdle() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersResourcesOutputReference) CpuIdle() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"cpuIdle",
@@ -118,8 +118,8 @@ func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersResourcesOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersResourcesOutputReference) CpuIdleInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersResourcesOutputReference) CpuIdleInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"cpuIdleInput",
@@ -178,8 +178,8 @@ func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersResourcesOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersResourcesOutputReference) StartupCpuBoost() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersResourcesOutputReference) StartupCpuBoost() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"startupCpuBoost",
@@ -188,8 +188,8 @@ func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersResourcesOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersResourcesOutputReference) StartupCpuBoostInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersResourcesOutputReference) StartupCpuBoostInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"startupCpuBoostInput",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersResourcesOutputReference) 
 	return returns
 }
 
-
 func NewCloudRunV2ServiceTemplateContainersResourcesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CloudRunV2ServiceTemplateContainersResourcesOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewCloudRunV2ServiceTemplateContainersResourcesOutputReference(terraformRes
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersResourcesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewCloudRunV2ServiceTemplateContainersResourcesOutputReference_Override(c C
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersResourcesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersResourcesOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersResourcesOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersResourcesOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersResourcesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersResourcesOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersResourcesOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersResourcesOutputReference)SetCpuIdle(val interface{}) {
+func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersResourcesOutputReference) SetCpuIdle(val any) {
 	if err := j.validateSetCpuIdleParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersResourcesOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersResourcesOutputReference)SetInternalValue(val *CloudRunV2ServiceTemplateContainersResources) {
+func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersResourcesOutputReference) SetInternalValue(val *CloudRunV2ServiceTemplateContainersResources) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersResourcesOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersResourcesOutputReference)SetLimits(val *map[string]*string) {
+func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersResourcesOutputReference) SetLimits(val *map[string]*string) {
 	if err := j.validateSetLimitsParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersResourcesOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersResourcesOutputReference)SetStartupCpuBoost(val interface{}) {
+func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersResourcesOutputReference) SetStartupCpuBoost(val any) {
 	if err := j.validateSetStartupCpuBoostParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersResourcesOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersResourcesOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersResourcesOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersResourcesOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersResourcesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersResourcesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersResourcesOutputReference) 
 	return returns
 }
 
-func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersResourcesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersResourcesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersResourcesOutputReference) 
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersResourcesOutputReference) 
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersResourcesOutputReference) 
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersResourcesOutputReference) 
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersResourcesOutputReference) 
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersResourcesOutputReference) 
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersResourcesOutputReference) 
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersResourcesOutputReference) 
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersResourcesOutputReference) 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersResourcesOutputReference) 
 	)
 }
 
-func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersResourcesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersResourcesOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersResourcesOutputReference) 
 
 	return returns
 }
-

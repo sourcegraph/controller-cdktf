@@ -98,7 +98,7 @@ func (s *jsiiProxy_SpannerDatabaseIamBindingConditionOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_SpannerDatabaseIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SpannerDatabaseIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewSpannerDatabaseIamBindingConditionOutputReferenceParameters(terr
 
 	return nil
 }
-

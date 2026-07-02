@@ -6,9 +6,9 @@ import (
 
 type DataGoogleComputeImageConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type DataGoogleComputeImageConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/compute_image#family DataGoogleComputeImage#family}.
 	Family *string `field:"optional" json:"family" yaml:"family"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/compute_image#filter DataGoogleComputeImage#filter}.
@@ -29,10 +29,9 @@ type DataGoogleComputeImageConfig struct {
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/compute_image#most_recent DataGoogleComputeImage#most_recent}.
-	MostRecent interface{} `field:"optional" json:"mostRecent" yaml:"mostRecent"`
+	MostRecent any `field:"optional" json:"mostRecent" yaml:"mostRecent"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/compute_image#name DataGoogleComputeImage#name}.
 	Name *string `field:"optional" json:"name" yaml:"name"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/compute_image#project DataGoogleComputeImage#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 }
-

@@ -13,19 +13,19 @@ import (
 type OrganizationIamAuditConfig interface {
 	cdktf.TerraformResource
 	AuditLogConfig() OrganizationIamAuditConfigAuditLogConfigList
-	AuditLogConfigInput() interface{}
+	AuditLogConfigInput() any
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -56,27 +56,27 @@ type OrganizationIamAuditConfig interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Service() *string
 	SetService(val *string)
 	ServiceInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -94,7 +94,7 @@ type OrganizationIamAuditConfig interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -106,29 +106,29 @@ type OrganizationIamAuditConfig interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutAuditLogConfig(value interface{})
+	PutAuditLogConfig(value any)
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for OrganizationIamAuditConfig
@@ -146,8 +146,8 @@ func (j *jsiiProxy_OrganizationIamAuditConfig) AuditLogConfig() OrganizationIamA
 	return returns
 }
 
-func (j *jsiiProxy_OrganizationIamAuditConfig) AuditLogConfigInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OrganizationIamAuditConfig) AuditLogConfigInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"auditLogConfigInput",
@@ -166,8 +166,8 @@ func (j *jsiiProxy_OrganizationIamAuditConfig) CdktfStack() cdktf.TerraformStack
 	return returns
 }
 
-func (j *jsiiProxy_OrganizationIamAuditConfig) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OrganizationIamAuditConfig) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -176,8 +176,8 @@ func (j *jsiiProxy_OrganizationIamAuditConfig) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_OrganizationIamAuditConfig) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_OrganizationIamAuditConfig) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -186,8 +186,8 @@ func (j *jsiiProxy_OrganizationIamAuditConfig) ConstructNodeMetadata() *map[stri
 	return returns
 }
 
-func (j *jsiiProxy_OrganizationIamAuditConfig) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OrganizationIamAuditConfig) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -316,8 +316,8 @@ func (j *jsiiProxy_OrganizationIamAuditConfig) Provider() cdktf.TerraformProvide
 	return returns
 }
 
-func (j *jsiiProxy_OrganizationIamAuditConfig) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_OrganizationIamAuditConfig) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -326,8 +326,8 @@ func (j *jsiiProxy_OrganizationIamAuditConfig) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_OrganizationIamAuditConfig) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OrganizationIamAuditConfig) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -366,8 +366,8 @@ func (j *jsiiProxy_OrganizationIamAuditConfig) TerraformGeneratorMetadata() *cdk
 	return returns
 }
 
-func (j *jsiiProxy_OrganizationIamAuditConfig) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_OrganizationIamAuditConfig) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -386,7 +386,6 @@ func (j *jsiiProxy_OrganizationIamAuditConfig) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/organization_iam_audit_config google_organization_iam_audit_config} Resource.
 func NewOrganizationIamAuditConfig(scope constructs.Construct, id *string, config *OrganizationIamAuditConfigConfig) OrganizationIamAuditConfig {
 	_init_.Initialize()
@@ -398,7 +397,7 @@ func NewOrganizationIamAuditConfig(scope constructs.Construct, id *string, confi
 
 	_jsii_.Create(
 		"@cdktf/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfig",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -411,12 +410,12 @@ func NewOrganizationIamAuditConfig_Override(o OrganizationIamAuditConfig, scope 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfig",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		o,
 	)
 }
 
-func (j *jsiiProxy_OrganizationIamAuditConfig)SetConnection(val interface{}) {
+func (j *jsiiProxy_OrganizationIamAuditConfig) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -427,7 +426,7 @@ func (j *jsiiProxy_OrganizationIamAuditConfig)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OrganizationIamAuditConfig)SetCount(val interface{}) {
+func (j *jsiiProxy_OrganizationIamAuditConfig) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -438,7 +437,7 @@ func (j *jsiiProxy_OrganizationIamAuditConfig)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OrganizationIamAuditConfig)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_OrganizationIamAuditConfig) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -446,7 +445,7 @@ func (j *jsiiProxy_OrganizationIamAuditConfig)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_OrganizationIamAuditConfig)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_OrganizationIamAuditConfig) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -454,7 +453,7 @@ func (j *jsiiProxy_OrganizationIamAuditConfig)SetForEach(val cdktf.ITerraformIte
 	)
 }
 
-func (j *jsiiProxy_OrganizationIamAuditConfig)SetId(val *string) {
+func (j *jsiiProxy_OrganizationIamAuditConfig) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -465,7 +464,7 @@ func (j *jsiiProxy_OrganizationIamAuditConfig)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OrganizationIamAuditConfig)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_OrganizationIamAuditConfig) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -476,7 +475,7 @@ func (j *jsiiProxy_OrganizationIamAuditConfig)SetLifecycle(val *cdktf.TerraformR
 	)
 }
 
-func (j *jsiiProxy_OrganizationIamAuditConfig)SetOrgId(val *string) {
+func (j *jsiiProxy_OrganizationIamAuditConfig) SetOrgId(val *string) {
 	if err := j.validateSetOrgIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -487,7 +486,7 @@ func (j *jsiiProxy_OrganizationIamAuditConfig)SetOrgId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OrganizationIamAuditConfig)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_OrganizationIamAuditConfig) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -495,7 +494,7 @@ func (j *jsiiProxy_OrganizationIamAuditConfig)SetProvider(val cdktf.TerraformPro
 	)
 }
 
-func (j *jsiiProxy_OrganizationIamAuditConfig)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_OrganizationIamAuditConfig) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -506,7 +505,7 @@ func (j *jsiiProxy_OrganizationIamAuditConfig)SetProvisioners(val *[]interface{}
 	)
 }
 
-func (j *jsiiProxy_OrganizationIamAuditConfig)SetService(val *string) {
+func (j *jsiiProxy_OrganizationIamAuditConfig) SetService(val *string) {
 	if err := j.validateSetServiceParameters(val); err != nil {
 		panic(err)
 	}
@@ -529,7 +528,7 @@ func OrganizationIamAuditConfig_GenerateConfigForImport(scope constructs.Constru
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfig",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -553,7 +552,7 @@ func OrganizationIamAuditConfig_GenerateConfigForImport(scope constructs.Constru
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func OrganizationIamAuditConfig_IsConstruct(x interface{}) *bool {
+func OrganizationIamAuditConfig_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateOrganizationIamAuditConfig_IsConstructParameters(x); err != nil {
@@ -564,7 +563,7 @@ func OrganizationIamAuditConfig_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfig",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -572,7 +571,7 @@ func OrganizationIamAuditConfig_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func OrganizationIamAuditConfig_IsTerraformElement(x interface{}) *bool {
+func OrganizationIamAuditConfig_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateOrganizationIamAuditConfig_IsTerraformElementParameters(x); err != nil {
@@ -583,7 +582,7 @@ func OrganizationIamAuditConfig_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfig",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -591,7 +590,7 @@ func OrganizationIamAuditConfig_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func OrganizationIamAuditConfig_IsTerraformResource(x interface{}) *bool {
+func OrganizationIamAuditConfig_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateOrganizationIamAuditConfig_IsTerraformResourceParameters(x); err != nil {
@@ -602,7 +601,7 @@ func OrganizationIamAuditConfig_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfig",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -627,31 +626,31 @@ func (o *jsiiProxy_OrganizationIamAuditConfig) AddMoveTarget(moveTarget *string)
 	_jsii_.InvokeVoid(
 		o,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (o *jsiiProxy_OrganizationIamAuditConfig) AddOverride(path *string, value interface{}) {
+func (o *jsiiProxy_OrganizationIamAuditConfig) AddOverride(path *string, value any) {
 	if err := o.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		o,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (o *jsiiProxy_OrganizationIamAuditConfig) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (o *jsiiProxy_OrganizationIamAuditConfig) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -667,7 +666,7 @@ func (o *jsiiProxy_OrganizationIamAuditConfig) GetBooleanAttribute(terraformAttr
 	_jsii_.Invoke(
 		o,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -683,7 +682,7 @@ func (o *jsiiProxy_OrganizationIamAuditConfig) GetBooleanMapAttribute(terraformA
 	_jsii_.Invoke(
 		o,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -699,7 +698,7 @@ func (o *jsiiProxy_OrganizationIamAuditConfig) GetListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		o,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -715,7 +714,7 @@ func (o *jsiiProxy_OrganizationIamAuditConfig) GetNumberAttribute(terraformAttri
 	_jsii_.Invoke(
 		o,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -731,7 +730,7 @@ func (o *jsiiProxy_OrganizationIamAuditConfig) GetNumberListAttribute(terraformA
 	_jsii_.Invoke(
 		o,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -747,7 +746,7 @@ func (o *jsiiProxy_OrganizationIamAuditConfig) GetNumberMapAttribute(terraformAt
 	_jsii_.Invoke(
 		o,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -763,7 +762,7 @@ func (o *jsiiProxy_OrganizationIamAuditConfig) GetStringAttribute(terraformAttri
 	_jsii_.Invoke(
 		o,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -779,15 +778,15 @@ func (o *jsiiProxy_OrganizationIamAuditConfig) GetStringMapAttribute(terraformAt
 	_jsii_.Invoke(
 		o,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (o *jsiiProxy_OrganizationIamAuditConfig) HasResourceMove() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OrganizationIamAuditConfig) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -806,7 +805,7 @@ func (o *jsiiProxy_OrganizationIamAuditConfig) ImportFrom(id *string, provider c
 	_jsii_.InvokeVoid(
 		o,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -819,7 +818,7 @@ func (o *jsiiProxy_OrganizationIamAuditConfig) InterpolationForAttribute(terrafo
 	_jsii_.Invoke(
 		o,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -833,18 +832,18 @@ func (o *jsiiProxy_OrganizationIamAuditConfig) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		o,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (o *jsiiProxy_OrganizationIamAuditConfig) MoveTo(moveTarget *string, index interface{}) {
+func (o *jsiiProxy_OrganizationIamAuditConfig) MoveTo(moveTarget *string, index any) {
 	if err := o.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		o,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -855,7 +854,7 @@ func (o *jsiiProxy_OrganizationIamAuditConfig) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		o,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -866,18 +865,18 @@ func (o *jsiiProxy_OrganizationIamAuditConfig) OverrideLogicalId(newLogicalId *s
 	_jsii_.InvokeVoid(
 		o,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (o *jsiiProxy_OrganizationIamAuditConfig) PutAuditLogConfig(value interface{}) {
+func (o *jsiiProxy_OrganizationIamAuditConfig) PutAuditLogConfig(value any) {
 	if err := o.validatePutAuditLogConfigParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		o,
 		"putAuditLogConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -897,8 +896,8 @@ func (o *jsiiProxy_OrganizationIamAuditConfig) ResetOverrideLogicalId() {
 	)
 }
 
-func (o *jsiiProxy_OrganizationIamAuditConfig) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (o *jsiiProxy_OrganizationIamAuditConfig) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
@@ -910,8 +909,8 @@ func (o *jsiiProxy_OrganizationIamAuditConfig) SynthesizeAttributes() *map[strin
 	return returns
 }
 
-func (o *jsiiProxy_OrganizationIamAuditConfig) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (o *jsiiProxy_OrganizationIamAuditConfig) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
@@ -923,8 +922,8 @@ func (o *jsiiProxy_OrganizationIamAuditConfig) SynthesizeHclAttributes() *map[st
 	return returns
 }
 
-func (o *jsiiProxy_OrganizationIamAuditConfig) ToHclTerraform() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OrganizationIamAuditConfig) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -936,8 +935,8 @@ func (o *jsiiProxy_OrganizationIamAuditConfig) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (o *jsiiProxy_OrganizationIamAuditConfig) ToMetadata() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OrganizationIamAuditConfig) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -962,8 +961,8 @@ func (o *jsiiProxy_OrganizationIamAuditConfig) ToString() *string {
 	return returns
 }
 
-func (o *jsiiProxy_OrganizationIamAuditConfig) ToTerraform() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OrganizationIamAuditConfig) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -974,4 +973,3 @@ func (o *jsiiProxy_OrganizationIamAuditConfig) ToTerraform() interface{} {
 
 	return returns
 }
-

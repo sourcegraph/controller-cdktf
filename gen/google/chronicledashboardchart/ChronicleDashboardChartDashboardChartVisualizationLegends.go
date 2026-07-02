@@ -1,6 +1,5 @@
 package chronicledashboardchart
 
-
 type ChronicleDashboardChartDashboardChartVisualizationLegends struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_dashboard_chart#bottom ChronicleDashboardChart#bottom}.
 	Bottom *float64 `field:"optional" json:"bottom" yaml:"bottom"`
@@ -24,7 +23,7 @@ type ChronicleDashboardChartDashboardChartVisualizationLegends struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_dashboard_chart#right ChronicleDashboardChart#right}.
 	Right *float64 `field:"optional" json:"right" yaml:"right"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_dashboard_chart#show ChronicleDashboardChart#show}.
-	Show interface{} `field:"optional" json:"show" yaml:"show"`
+	Show any `field:"optional" json:"show" yaml:"show"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_dashboard_chart#top ChronicleDashboardChart#top}.
 	Top *float64 `field:"optional" json:"top" yaml:"top"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_dashboard_chart#z ChronicleDashboardChart#z}.
@@ -32,4 +31,3 @@ type ChronicleDashboardChartDashboardChartVisualizationLegends struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_dashboard_chart#z_level ChronicleDashboardChart#z_level}.
 	ZLevel *float64 `field:"optional" json:"zLevel" yaml:"zLevel"`
 }
-

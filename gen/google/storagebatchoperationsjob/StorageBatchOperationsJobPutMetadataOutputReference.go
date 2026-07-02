@@ -15,9 +15,9 @@ type StorageBatchOperationsJobPutMetadataOutputReference interface {
 	CacheControlInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -61,7 +61,7 @@ type StorageBatchOperationsJobPutMetadataOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -91,7 +91,7 @@ type StorageBatchOperationsJobPutMetadataOutputReference interface {
 	ResetCustomTime()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -124,8 +124,8 @@ func (j *jsiiProxy_StorageBatchOperationsJobPutMetadataOutputReference) CacheCon
 	return returns
 }
 
-func (j *jsiiProxy_StorageBatchOperationsJobPutMetadataOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StorageBatchOperationsJobPutMetadataOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -314,7 +314,6 @@ func (j *jsiiProxy_StorageBatchOperationsJobPutMetadataOutputReference) Terrafor
 	return returns
 }
 
-
 func NewStorageBatchOperationsJobPutMetadataOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) StorageBatchOperationsJobPutMetadataOutputReference {
 	_init_.Initialize()
 
@@ -325,7 +324,7 @@ func NewStorageBatchOperationsJobPutMetadataOutputReference(terraformResource cd
 
 	_jsii_.Create(
 		"@cdktf/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobPutMetadataOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -337,12 +336,12 @@ func NewStorageBatchOperationsJobPutMetadataOutputReference_Override(s StorageBa
 
 	_jsii_.Create(
 		"@cdktf/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobPutMetadataOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		s,
 	)
 }
 
-func (j *jsiiProxy_StorageBatchOperationsJobPutMetadataOutputReference)SetCacheControl(val *string) {
+func (j *jsiiProxy_StorageBatchOperationsJobPutMetadataOutputReference) SetCacheControl(val *string) {
 	if err := j.validateSetCacheControlParameters(val); err != nil {
 		panic(err)
 	}
@@ -353,7 +352,7 @@ func (j *jsiiProxy_StorageBatchOperationsJobPutMetadataOutputReference)SetCacheC
 	)
 }
 
-func (j *jsiiProxy_StorageBatchOperationsJobPutMetadataOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_StorageBatchOperationsJobPutMetadataOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -364,7 +363,7 @@ func (j *jsiiProxy_StorageBatchOperationsJobPutMetadataOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_StorageBatchOperationsJobPutMetadataOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_StorageBatchOperationsJobPutMetadataOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -375,7 +374,7 @@ func (j *jsiiProxy_StorageBatchOperationsJobPutMetadataOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_StorageBatchOperationsJobPutMetadataOutputReference)SetContentDisposition(val *string) {
+func (j *jsiiProxy_StorageBatchOperationsJobPutMetadataOutputReference) SetContentDisposition(val *string) {
 	if err := j.validateSetContentDispositionParameters(val); err != nil {
 		panic(err)
 	}
@@ -386,7 +385,7 @@ func (j *jsiiProxy_StorageBatchOperationsJobPutMetadataOutputReference)SetConten
 	)
 }
 
-func (j *jsiiProxy_StorageBatchOperationsJobPutMetadataOutputReference)SetContentEncoding(val *string) {
+func (j *jsiiProxy_StorageBatchOperationsJobPutMetadataOutputReference) SetContentEncoding(val *string) {
 	if err := j.validateSetContentEncodingParameters(val); err != nil {
 		panic(err)
 	}
@@ -397,7 +396,7 @@ func (j *jsiiProxy_StorageBatchOperationsJobPutMetadataOutputReference)SetConten
 	)
 }
 
-func (j *jsiiProxy_StorageBatchOperationsJobPutMetadataOutputReference)SetContentLanguage(val *string) {
+func (j *jsiiProxy_StorageBatchOperationsJobPutMetadataOutputReference) SetContentLanguage(val *string) {
 	if err := j.validateSetContentLanguageParameters(val); err != nil {
 		panic(err)
 	}
@@ -408,7 +407,7 @@ func (j *jsiiProxy_StorageBatchOperationsJobPutMetadataOutputReference)SetConten
 	)
 }
 
-func (j *jsiiProxy_StorageBatchOperationsJobPutMetadataOutputReference)SetContentType(val *string) {
+func (j *jsiiProxy_StorageBatchOperationsJobPutMetadataOutputReference) SetContentType(val *string) {
 	if err := j.validateSetContentTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -419,7 +418,7 @@ func (j *jsiiProxy_StorageBatchOperationsJobPutMetadataOutputReference)SetConten
 	)
 }
 
-func (j *jsiiProxy_StorageBatchOperationsJobPutMetadataOutputReference)SetCustomMetadata(val *map[string]*string) {
+func (j *jsiiProxy_StorageBatchOperationsJobPutMetadataOutputReference) SetCustomMetadata(val *map[string]*string) {
 	if err := j.validateSetCustomMetadataParameters(val); err != nil {
 		panic(err)
 	}
@@ -430,7 +429,7 @@ func (j *jsiiProxy_StorageBatchOperationsJobPutMetadataOutputReference)SetCustom
 	)
 }
 
-func (j *jsiiProxy_StorageBatchOperationsJobPutMetadataOutputReference)SetCustomTime(val *string) {
+func (j *jsiiProxy_StorageBatchOperationsJobPutMetadataOutputReference) SetCustomTime(val *string) {
 	if err := j.validateSetCustomTimeParameters(val); err != nil {
 		panic(err)
 	}
@@ -441,7 +440,7 @@ func (j *jsiiProxy_StorageBatchOperationsJobPutMetadataOutputReference)SetCustom
 	)
 }
 
-func (j *jsiiProxy_StorageBatchOperationsJobPutMetadataOutputReference)SetInternalValue(val *StorageBatchOperationsJobPutMetadata) {
+func (j *jsiiProxy_StorageBatchOperationsJobPutMetadataOutputReference) SetInternalValue(val *StorageBatchOperationsJobPutMetadata) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,7 +451,7 @@ func (j *jsiiProxy_StorageBatchOperationsJobPutMetadataOutputReference)SetIntern
 	)
 }
 
-func (j *jsiiProxy_StorageBatchOperationsJobPutMetadataOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_StorageBatchOperationsJobPutMetadataOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -463,7 +462,7 @@ func (j *jsiiProxy_StorageBatchOperationsJobPutMetadataOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_StorageBatchOperationsJobPutMetadataOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_StorageBatchOperationsJobPutMetadataOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -487,16 +486,16 @@ func (s *jsiiProxy_StorageBatchOperationsJobPutMetadataOutputReference) ComputeF
 	return returns
 }
 
-func (s *jsiiProxy_StorageBatchOperationsJobPutMetadataOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_StorageBatchOperationsJobPutMetadataOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -512,7 +511,7 @@ func (s *jsiiProxy_StorageBatchOperationsJobPutMetadataOutputReference) GetBoole
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -528,7 +527,7 @@ func (s *jsiiProxy_StorageBatchOperationsJobPutMetadataOutputReference) GetBoole
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -544,7 +543,7 @@ func (s *jsiiProxy_StorageBatchOperationsJobPutMetadataOutputReference) GetListA
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -560,7 +559,7 @@ func (s *jsiiProxy_StorageBatchOperationsJobPutMetadataOutputReference) GetNumbe
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -576,7 +575,7 @@ func (s *jsiiProxy_StorageBatchOperationsJobPutMetadataOutputReference) GetNumbe
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -592,7 +591,7 @@ func (s *jsiiProxy_StorageBatchOperationsJobPutMetadataOutputReference) GetNumbe
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -608,7 +607,7 @@ func (s *jsiiProxy_StorageBatchOperationsJobPutMetadataOutputReference) GetStrin
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -624,7 +623,7 @@ func (s *jsiiProxy_StorageBatchOperationsJobPutMetadataOutputReference) GetStrin
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -653,7 +652,7 @@ func (s *jsiiProxy_StorageBatchOperationsJobPutMetadataOutputReference) Interpol
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -716,16 +715,16 @@ func (s *jsiiProxy_StorageBatchOperationsJobPutMetadataOutputReference) ResetCus
 	)
 }
 
-func (s *jsiiProxy_StorageBatchOperationsJobPutMetadataOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_StorageBatchOperationsJobPutMetadataOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -744,4 +743,3 @@ func (s *jsiiProxy_StorageBatchOperationsJobPutMetadataOutputReference) ToString
 
 	return returns
 }
-

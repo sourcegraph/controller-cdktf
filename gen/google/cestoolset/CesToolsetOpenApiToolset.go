@@ -1,6 +1,5 @@
 package cestoolset
 
-
 type CesToolsetOpenApiToolset struct {
 	// The OpenAPI schema of the toolset.
 	//
@@ -13,7 +12,7 @@ type CesToolsetOpenApiToolset struct {
 	// If true, the agent will ignore unknown fields in the API response for all operations defined in the OpenAPI schema.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_toolset#ignore_unknown_fields CesToolset#ignore_unknown_fields}
-	IgnoreUnknownFields interface{} `field:"optional" json:"ignoreUnknownFields" yaml:"ignoreUnknownFields"`
+	IgnoreUnknownFields any `field:"optional" json:"ignoreUnknownFields" yaml:"ignoreUnknownFields"`
 	// service_directory_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_toolset#service_directory_config CesToolset#service_directory_config}
@@ -23,4 +22,3 @@ type CesToolsetOpenApiToolset struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_toolset#tls_config CesToolset#tls_config}
 	TlsConfig *CesToolsetOpenApiToolsetTlsConfig `field:"optional" json:"tlsConfig" yaml:"tlsConfig"`
 }
-

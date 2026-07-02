@@ -19,7 +19,7 @@ func (p *jsiiProxy_PublicCaExternalAccountKey) validateAddMoveTargetParameters(m
 	return nil
 }
 
-func (p *jsiiProxy_PublicCaExternalAccountKey) validateAddOverrideParameters(path *string, value interface{}) error {
+func (p *jsiiProxy_PublicCaExternalAccountKey) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (p *jsiiProxy_PublicCaExternalAccountKey) validateMoveFromIdParameters(id *
 	return nil
 }
 
-func (p *jsiiProxy_PublicCaExternalAccountKey) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (p *jsiiProxy_PublicCaExternalAccountKey) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validatePublicCaExternalAccountKey_GenerateConfigForImportParameters(scope 
 	return nil
 }
 
-func validatePublicCaExternalAccountKey_IsConstructParameters(x interface{}) error {
+func validatePublicCaExternalAccountKey_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validatePublicCaExternalAccountKey_IsConstructParameters(x interface{}) err
 	return nil
 }
 
-func validatePublicCaExternalAccountKey_IsTerraformElementParameters(x interface{}) error {
+func validatePublicCaExternalAccountKey_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validatePublicCaExternalAccountKey_IsTerraformElementParameters(x interface
 	return nil
 }
 
-func validatePublicCaExternalAccountKey_IsTerraformResourceParameters(x interface{}) error {
+func validatePublicCaExternalAccountKey_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validatePublicCaExternalAccountKey_IsTerraformResourceParameters(x interfac
 	return nil
 }
 
-func (j *jsiiProxy_PublicCaExternalAccountKey) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_PublicCaExternalAccountKey) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_PublicCaExternalAccountKey) validateSetConnectionParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_PublicCaExternalAccountKey) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_PublicCaExternalAccountKey) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -377,7 +377,7 @@ func (j *jsiiProxy_PublicCaExternalAccountKey) validateSetProjectParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_PublicCaExternalAccountKey) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_PublicCaExternalAccountKey) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -438,4 +438,3 @@ func validateNewPublicCaExternalAccountKeyParameters(scope constructs.Construct,
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowVersion.DialogflowVersion",
-		reflect.TypeOf((*DialogflowVersion)(nil)).Elem(),
+		reflect.TypeFor[DialogflowVersion](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -69,7 +69,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "versionNumber", GoGetter: "VersionNumber"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowVersion{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -77,15 +77,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowVersion.DialogflowVersionConfig",
-		reflect.TypeOf((*DialogflowVersionConfig)(nil)).Elem(),
+		reflect.TypeFor[DialogflowVersionConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowVersion.DialogflowVersionTimeouts",
-		reflect.TypeOf((*DialogflowVersionTimeouts)(nil)).Elem(),
+		reflect.TypeFor[DialogflowVersionTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowVersion.DialogflowVersionTimeoutsOutputReference",
-		reflect.TypeOf((*DialogflowVersionTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowVersionTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -118,7 +118,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowVersionTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

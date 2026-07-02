@@ -117,7 +117,7 @@ func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) validateSetCiphersP
 	return nil
 }
 
-func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) validateSetClientAuthEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) validateSetClientAuthEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -137,7 +137,7 @@ func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) validateSetClientAu
 	return nil
 }
 
-func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -202,7 +202,7 @@ func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) validateSetComplexO
 	return nil
 }
 
-func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -222,7 +222,7 @@ func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) validateSetEnabledP
 	return nil
 }
 
-func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) validateSetEnforceParameters(val interface{}) error {
+func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) validateSetEnforceParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) validateSetEnforceP
 	return nil
 }
 
-func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) validateSetIgnoreValidationErrorsParameters(val interface{}) error {
+func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) validateSetIgnoreValidationErrorsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -329,4 +329,3 @@ func validateNewApigeeTargetServerSSlInfoOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

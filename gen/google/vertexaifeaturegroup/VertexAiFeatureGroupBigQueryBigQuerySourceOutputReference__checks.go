@@ -98,7 +98,7 @@ func (v *jsiiProxy_VertexAiFeatureGroupBigQueryBigQuerySourceOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_VertexAiFeatureGroupBigQueryBigQuerySourceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_VertexAiFeatureGroupBigQueryBigQuerySourceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewVertexAiFeatureGroupBigQueryBigQuerySourceOutputReferenceParamet
 
 	return nil
 }
-

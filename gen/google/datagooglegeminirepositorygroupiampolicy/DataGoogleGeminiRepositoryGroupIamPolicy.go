@@ -18,11 +18,11 @@ type DataGoogleGeminiRepositoryGroupIamPolicy interface {
 	SetCodeRepositoryIndex(val *string)
 	CodeRepositoryIndexInput() *string
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -57,20 +57,20 @@ type DataGoogleGeminiRepositoryGroupIamPolicy interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RepositoryGroupId() *string
 	SetRepositoryGroupId(val *string)
 	RepositoryGroupIdInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -98,18 +98,18 @@ type DataGoogleGeminiRepositoryGroupIamPolicy interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataGoogleGeminiRepositoryGroupIamPolicy
@@ -147,8 +147,8 @@ func (j *jsiiProxy_DataGoogleGeminiRepositoryGroupIamPolicy) CodeRepositoryIndex
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleGeminiRepositoryGroupIamPolicy) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleGeminiRepositoryGroupIamPolicy) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -157,8 +157,8 @@ func (j *jsiiProxy_DataGoogleGeminiRepositoryGroupIamPolicy) ConstructNodeMetada
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleGeminiRepositoryGroupIamPolicy) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleGeminiRepositoryGroupIamPolicy) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -317,8 +317,8 @@ func (j *jsiiProxy_DataGoogleGeminiRepositoryGroupIamPolicy) Provider() cdktf.Te
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleGeminiRepositoryGroupIamPolicy) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleGeminiRepositoryGroupIamPolicy) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -357,8 +357,8 @@ func (j *jsiiProxy_DataGoogleGeminiRepositoryGroupIamPolicy) TerraformGeneratorM
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleGeminiRepositoryGroupIamPolicy) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleGeminiRepositoryGroupIamPolicy) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -377,7 +377,6 @@ func (j *jsiiProxy_DataGoogleGeminiRepositoryGroupIamPolicy) TerraformResourceTy
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/gemini_repository_group_iam_policy google_gemini_repository_group_iam_policy} Data Source.
 func NewDataGoogleGeminiRepositoryGroupIamPolicy(scope constructs.Construct, id *string, config *DataGoogleGeminiRepositoryGroupIamPolicyConfig) DataGoogleGeminiRepositoryGroupIamPolicy {
 	_init_.Initialize()
@@ -389,7 +388,7 @@ func NewDataGoogleGeminiRepositoryGroupIamPolicy(scope constructs.Construct, id 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleGeminiRepositoryGroupIamPolicy.DataGoogleGeminiRepositoryGroupIamPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -402,12 +401,12 @@ func NewDataGoogleGeminiRepositoryGroupIamPolicy_Override(d DataGoogleGeminiRepo
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleGeminiRepositoryGroupIamPolicy.DataGoogleGeminiRepositoryGroupIamPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataGoogleGeminiRepositoryGroupIamPolicy)SetCodeRepositoryIndex(val *string) {
+func (j *jsiiProxy_DataGoogleGeminiRepositoryGroupIamPolicy) SetCodeRepositoryIndex(val *string) {
 	if err := j.validateSetCodeRepositoryIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -418,7 +417,7 @@ func (j *jsiiProxy_DataGoogleGeminiRepositoryGroupIamPolicy)SetCodeRepositoryInd
 	)
 }
 
-func (j *jsiiProxy_DataGoogleGeminiRepositoryGroupIamPolicy)SetCount(val interface{}) {
+func (j *jsiiProxy_DataGoogleGeminiRepositoryGroupIamPolicy) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -429,7 +428,7 @@ func (j *jsiiProxy_DataGoogleGeminiRepositoryGroupIamPolicy)SetCount(val interfa
 	)
 }
 
-func (j *jsiiProxy_DataGoogleGeminiRepositoryGroupIamPolicy)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataGoogleGeminiRepositoryGroupIamPolicy) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -437,7 +436,7 @@ func (j *jsiiProxy_DataGoogleGeminiRepositoryGroupIamPolicy)SetDependsOn(val *[]
 	)
 }
 
-func (j *jsiiProxy_DataGoogleGeminiRepositoryGroupIamPolicy)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGoogleGeminiRepositoryGroupIamPolicy) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -445,7 +444,7 @@ func (j *jsiiProxy_DataGoogleGeminiRepositoryGroupIamPolicy)SetForEach(val cdktf
 	)
 }
 
-func (j *jsiiProxy_DataGoogleGeminiRepositoryGroupIamPolicy)SetId(val *string) {
+func (j *jsiiProxy_DataGoogleGeminiRepositoryGroupIamPolicy) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -456,7 +455,7 @@ func (j *jsiiProxy_DataGoogleGeminiRepositoryGroupIamPolicy)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleGeminiRepositoryGroupIamPolicy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGoogleGeminiRepositoryGroupIamPolicy) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -467,7 +466,7 @@ func (j *jsiiProxy_DataGoogleGeminiRepositoryGroupIamPolicy)SetLifecycle(val *cd
 	)
 }
 
-func (j *jsiiProxy_DataGoogleGeminiRepositoryGroupIamPolicy)SetLocation(val *string) {
+func (j *jsiiProxy_DataGoogleGeminiRepositoryGroupIamPolicy) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -478,7 +477,7 @@ func (j *jsiiProxy_DataGoogleGeminiRepositoryGroupIamPolicy)SetLocation(val *str
 	)
 }
 
-func (j *jsiiProxy_DataGoogleGeminiRepositoryGroupIamPolicy)SetProject(val *string) {
+func (j *jsiiProxy_DataGoogleGeminiRepositoryGroupIamPolicy) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -489,7 +488,7 @@ func (j *jsiiProxy_DataGoogleGeminiRepositoryGroupIamPolicy)SetProject(val *stri
 	)
 }
 
-func (j *jsiiProxy_DataGoogleGeminiRepositoryGroupIamPolicy)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGoogleGeminiRepositoryGroupIamPolicy) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -497,7 +496,7 @@ func (j *jsiiProxy_DataGoogleGeminiRepositoryGroupIamPolicy)SetProvider(val cdkt
 	)
 }
 
-func (j *jsiiProxy_DataGoogleGeminiRepositoryGroupIamPolicy)SetRepositoryGroupId(val *string) {
+func (j *jsiiProxy_DataGoogleGeminiRepositoryGroupIamPolicy) SetRepositoryGroupId(val *string) {
 	if err := j.validateSetRepositoryGroupIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -520,7 +519,7 @@ func DataGoogleGeminiRepositoryGroupIamPolicy_GenerateConfigForImport(scope cons
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleGeminiRepositoryGroupIamPolicy.DataGoogleGeminiRepositoryGroupIamPolicy",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -544,7 +543,7 @@ func DataGoogleGeminiRepositoryGroupIamPolicy_GenerateConfigForImport(scope cons
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataGoogleGeminiRepositoryGroupIamPolicy_IsConstruct(x interface{}) *bool {
+func DataGoogleGeminiRepositoryGroupIamPolicy_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleGeminiRepositoryGroupIamPolicy_IsConstructParameters(x); err != nil {
@@ -555,7 +554,7 @@ func DataGoogleGeminiRepositoryGroupIamPolicy_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleGeminiRepositoryGroupIamPolicy.DataGoogleGeminiRepositoryGroupIamPolicy",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -563,7 +562,7 @@ func DataGoogleGeminiRepositoryGroupIamPolicy_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGoogleGeminiRepositoryGroupIamPolicy_IsTerraformDataSource(x interface{}) *bool {
+func DataGoogleGeminiRepositoryGroupIamPolicy_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleGeminiRepositoryGroupIamPolicy_IsTerraformDataSourceParameters(x); err != nil {
@@ -574,7 +573,7 @@ func DataGoogleGeminiRepositoryGroupIamPolicy_IsTerraformDataSource(x interface{
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleGeminiRepositoryGroupIamPolicy.DataGoogleGeminiRepositoryGroupIamPolicy",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -582,7 +581,7 @@ func DataGoogleGeminiRepositoryGroupIamPolicy_IsTerraformDataSource(x interface{
 }
 
 // Experimental.
-func DataGoogleGeminiRepositoryGroupIamPolicy_IsTerraformElement(x interface{}) *bool {
+func DataGoogleGeminiRepositoryGroupIamPolicy_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleGeminiRepositoryGroupIamPolicy_IsTerraformElementParameters(x); err != nil {
@@ -593,7 +592,7 @@ func DataGoogleGeminiRepositoryGroupIamPolicy_IsTerraformElement(x interface{}) 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleGeminiRepositoryGroupIamPolicy.DataGoogleGeminiRepositoryGroupIamPolicy",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -611,27 +610,27 @@ func DataGoogleGeminiRepositoryGroupIamPolicy_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleGeminiRepositoryGroupIamPolicy) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataGoogleGeminiRepositoryGroupIamPolicy) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataGoogleGeminiRepositoryGroupIamPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataGoogleGeminiRepositoryGroupIamPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -647,7 +646,7 @@ func (d *jsiiProxy_DataGoogleGeminiRepositoryGroupIamPolicy) GetBooleanAttribute
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -663,7 +662,7 @@ func (d *jsiiProxy_DataGoogleGeminiRepositoryGroupIamPolicy) GetBooleanMapAttrib
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -679,7 +678,7 @@ func (d *jsiiProxy_DataGoogleGeminiRepositoryGroupIamPolicy) GetListAttribute(te
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -695,7 +694,7 @@ func (d *jsiiProxy_DataGoogleGeminiRepositoryGroupIamPolicy) GetNumberAttribute(
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -711,7 +710,7 @@ func (d *jsiiProxy_DataGoogleGeminiRepositoryGroupIamPolicy) GetNumberListAttrib
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -727,7 +726,7 @@ func (d *jsiiProxy_DataGoogleGeminiRepositoryGroupIamPolicy) GetNumberMapAttribu
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -743,7 +742,7 @@ func (d *jsiiProxy_DataGoogleGeminiRepositoryGroupIamPolicy) GetStringAttribute(
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -759,7 +758,7 @@ func (d *jsiiProxy_DataGoogleGeminiRepositoryGroupIamPolicy) GetStringMapAttribu
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -775,7 +774,7 @@ func (d *jsiiProxy_DataGoogleGeminiRepositoryGroupIamPolicy) InterpolationForAtt
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -789,7 +788,7 @@ func (d *jsiiProxy_DataGoogleGeminiRepositoryGroupIamPolicy) OverrideLogicalId(n
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -825,8 +824,8 @@ func (d *jsiiProxy_DataGoogleGeminiRepositoryGroupIamPolicy) ResetProject() {
 	)
 }
 
-func (d *jsiiProxy_DataGoogleGeminiRepositoryGroupIamPolicy) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleGeminiRepositoryGroupIamPolicy) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -838,8 +837,8 @@ func (d *jsiiProxy_DataGoogleGeminiRepositoryGroupIamPolicy) SynthesizeAttribute
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleGeminiRepositoryGroupIamPolicy) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleGeminiRepositoryGroupIamPolicy) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -851,8 +850,8 @@ func (d *jsiiProxy_DataGoogleGeminiRepositoryGroupIamPolicy) SynthesizeHclAttrib
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleGeminiRepositoryGroupIamPolicy) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleGeminiRepositoryGroupIamPolicy) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -864,8 +863,8 @@ func (d *jsiiProxy_DataGoogleGeminiRepositoryGroupIamPolicy) ToHclTerraform() in
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleGeminiRepositoryGroupIamPolicy) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleGeminiRepositoryGroupIamPolicy) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -890,8 +889,8 @@ func (d *jsiiProxy_DataGoogleGeminiRepositoryGroupIamPolicy) ToString() *string 
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleGeminiRepositoryGroupIamPolicy) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleGeminiRepositoryGroupIamPolicy) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -902,4 +901,3 @@ func (d *jsiiProxy_DataGoogleGeminiRepositoryGroupIamPolicy) ToTerraform() inter
 
 	return returns
 }
-

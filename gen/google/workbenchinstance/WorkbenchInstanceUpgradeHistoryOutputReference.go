@@ -13,9 +13,9 @@ type WorkbenchInstanceUpgradeHistoryOutputReference interface {
 	Action() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -49,7 +49,7 @@ type WorkbenchInstanceUpgradeHistoryOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -72,7 +72,7 @@ type WorkbenchInstanceUpgradeHistoryOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -95,8 +95,8 @@ func (j *jsiiProxy_WorkbenchInstanceUpgradeHistoryOutputReference) Action() *str
 	return returns
 }
 
-func (j *jsiiProxy_WorkbenchInstanceUpgradeHistoryOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkbenchInstanceUpgradeHistoryOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -245,7 +245,6 @@ func (j *jsiiProxy_WorkbenchInstanceUpgradeHistoryOutputReference) VmImage() *st
 	return returns
 }
 
-
 func NewWorkbenchInstanceUpgradeHistoryOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) WorkbenchInstanceUpgradeHistoryOutputReference {
 	_init_.Initialize()
 
@@ -256,7 +255,7 @@ func NewWorkbenchInstanceUpgradeHistoryOutputReference(terraformResource cdktf.I
 
 	_jsii_.Create(
 		"@cdktf/provider-google.workbenchInstance.WorkbenchInstanceUpgradeHistoryOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -268,12 +267,12 @@ func NewWorkbenchInstanceUpgradeHistoryOutputReference_Override(w WorkbenchInsta
 
 	_jsii_.Create(
 		"@cdktf/provider-google.workbenchInstance.WorkbenchInstanceUpgradeHistoryOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		w,
 	)
 }
 
-func (j *jsiiProxy_WorkbenchInstanceUpgradeHistoryOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_WorkbenchInstanceUpgradeHistoryOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -284,7 +283,7 @@ func (j *jsiiProxy_WorkbenchInstanceUpgradeHistoryOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_WorkbenchInstanceUpgradeHistoryOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_WorkbenchInstanceUpgradeHistoryOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -295,7 +294,7 @@ func (j *jsiiProxy_WorkbenchInstanceUpgradeHistoryOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_WorkbenchInstanceUpgradeHistoryOutputReference)SetInternalValue(val *WorkbenchInstanceUpgradeHistory) {
+func (j *jsiiProxy_WorkbenchInstanceUpgradeHistoryOutputReference) SetInternalValue(val *WorkbenchInstanceUpgradeHistory) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -306,7 +305,7 @@ func (j *jsiiProxy_WorkbenchInstanceUpgradeHistoryOutputReference)SetInternalVal
 	)
 }
 
-func (j *jsiiProxy_WorkbenchInstanceUpgradeHistoryOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_WorkbenchInstanceUpgradeHistoryOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -317,7 +316,7 @@ func (j *jsiiProxy_WorkbenchInstanceUpgradeHistoryOutputReference)SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_WorkbenchInstanceUpgradeHistoryOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_WorkbenchInstanceUpgradeHistoryOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -341,16 +340,16 @@ func (w *jsiiProxy_WorkbenchInstanceUpgradeHistoryOutputReference) ComputeFqn() 
 	return returns
 }
 
-func (w *jsiiProxy_WorkbenchInstanceUpgradeHistoryOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (w *jsiiProxy_WorkbenchInstanceUpgradeHistoryOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := w.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -366,7 +365,7 @@ func (w *jsiiProxy_WorkbenchInstanceUpgradeHistoryOutputReference) GetBooleanAtt
 	_jsii_.Invoke(
 		w,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -382,7 +381,7 @@ func (w *jsiiProxy_WorkbenchInstanceUpgradeHistoryOutputReference) GetBooleanMap
 	_jsii_.Invoke(
 		w,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -398,7 +397,7 @@ func (w *jsiiProxy_WorkbenchInstanceUpgradeHistoryOutputReference) GetListAttrib
 	_jsii_.Invoke(
 		w,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -414,7 +413,7 @@ func (w *jsiiProxy_WorkbenchInstanceUpgradeHistoryOutputReference) GetNumberAttr
 	_jsii_.Invoke(
 		w,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -430,7 +429,7 @@ func (w *jsiiProxy_WorkbenchInstanceUpgradeHistoryOutputReference) GetNumberList
 	_jsii_.Invoke(
 		w,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -446,7 +445,7 @@ func (w *jsiiProxy_WorkbenchInstanceUpgradeHistoryOutputReference) GetNumberMapA
 	_jsii_.Invoke(
 		w,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -462,7 +461,7 @@ func (w *jsiiProxy_WorkbenchInstanceUpgradeHistoryOutputReference) GetStringAttr
 	_jsii_.Invoke(
 		w,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func (w *jsiiProxy_WorkbenchInstanceUpgradeHistoryOutputReference) GetStringMapA
 	_jsii_.Invoke(
 		w,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -507,23 +506,23 @@ func (w *jsiiProxy_WorkbenchInstanceUpgradeHistoryOutputReference) Interpolation
 	_jsii_.Invoke(
 		w,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (w *jsiiProxy_WorkbenchInstanceUpgradeHistoryOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (w *jsiiProxy_WorkbenchInstanceUpgradeHistoryOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := w.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		w,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -542,4 +541,3 @@ func (w *jsiiProxy_WorkbenchInstanceUpgradeHistoryOutputReference) ToString() *s
 
 	return returns
 }
-

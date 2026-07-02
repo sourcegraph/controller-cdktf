@@ -98,7 +98,7 @@ func (b *jsiiProxy_BigtableTableIamMemberConditionOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_BigtableTableIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BigtableTableIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewBigtableTableIamMemberConditionOutputReferenceParameters(terrafo
 
 	return nil
 }
-

@@ -106,7 +106,7 @@ func (j *jsiiProxy_ComputeResourcePolicySnapshotSchedulePolicySnapshotProperties
 	return nil
 }
 
-func (j *jsiiProxy_ComputeResourcePolicySnapshotSchedulePolicySnapshotPropertiesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeResourcePolicySnapshotSchedulePolicySnapshotPropertiesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_ComputeResourcePolicySnapshotSchedulePolicySnapshotProperties
 	return nil
 }
 
-func (j *jsiiProxy_ComputeResourcePolicySnapshotSchedulePolicySnapshotPropertiesOutputReference) validateSetGuestFlushParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeResourcePolicySnapshotSchedulePolicySnapshotPropertiesOutputReference) validateSetGuestFlushParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -242,4 +242,3 @@ func validateNewComputeResourcePolicySnapshotSchedulePolicySnapshotPropertiesOut
 
 	return nil
 }
-

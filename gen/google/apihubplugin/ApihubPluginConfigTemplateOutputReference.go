@@ -11,14 +11,14 @@ import (
 type ApihubPluginConfigTemplateOutputReference interface {
 	cdktf.ComplexObject
 	AdditionalConfigTemplate() ApihubPluginConfigTemplateAdditionalConfigTemplateList
-	AdditionalConfigTemplateInput() interface{}
+	AdditionalConfigTemplateInput() any
 	AuthConfigTemplate() ApihubPluginConfigTemplateAuthConfigTemplateOutputReference
 	AuthConfigTemplateInput() *ApihubPluginConfigTemplateAuthConfigTemplate
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -44,7 +44,7 @@ type ApihubPluginConfigTemplateOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -65,13 +65,13 @@ type ApihubPluginConfigTemplateOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutAdditionalConfigTemplate(value interface{})
+	PutAdditionalConfigTemplate(value any)
 	PutAuthConfigTemplate(value *ApihubPluginConfigTemplateAuthConfigTemplate)
 	ResetAdditionalConfigTemplate()
 	ResetAuthConfigTemplate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -94,8 +94,8 @@ func (j *jsiiProxy_ApihubPluginConfigTemplateOutputReference) AdditionalConfigTe
 	return returns
 }
 
-func (j *jsiiProxy_ApihubPluginConfigTemplateOutputReference) AdditionalConfigTemplateInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApihubPluginConfigTemplateOutputReference) AdditionalConfigTemplateInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"additionalConfigTemplateInput",
@@ -124,8 +124,8 @@ func (j *jsiiProxy_ApihubPluginConfigTemplateOutputReference) AuthConfigTemplate
 	return returns
 }
 
-func (j *jsiiProxy_ApihubPluginConfigTemplateOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApihubPluginConfigTemplateOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_ApihubPluginConfigTemplateOutputReference) TerraformResource(
 	return returns
 }
 
-
 func NewApihubPluginConfigTemplateOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ApihubPluginConfigTemplateOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewApihubPluginConfigTemplateOutputReference(terraformResource cdktf.IInter
 
 	_jsii_.Create(
 		"@cdktf/provider-google.apihubPlugin.ApihubPluginConfigTemplateOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewApihubPluginConfigTemplateOutputReference_Override(a ApihubPluginConfigT
 
 	_jsii_.Create(
 		"@cdktf/provider-google.apihubPlugin.ApihubPluginConfigTemplateOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		a,
 	)
 }
 
-func (j *jsiiProxy_ApihubPluginConfigTemplateOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ApihubPluginConfigTemplateOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_ApihubPluginConfigTemplateOutputReference)SetComplexObjectInd
 	)
 }
 
-func (j *jsiiProxy_ApihubPluginConfigTemplateOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ApihubPluginConfigTemplateOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_ApihubPluginConfigTemplateOutputReference)SetComplexObjectIsF
 	)
 }
 
-func (j *jsiiProxy_ApihubPluginConfigTemplateOutputReference)SetInternalValue(val *ApihubPluginConfigTemplate) {
+func (j *jsiiProxy_ApihubPluginConfigTemplateOutputReference) SetInternalValue(val *ApihubPluginConfigTemplate) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_ApihubPluginConfigTemplateOutputReference)SetInternalValue(va
 	)
 }
 
-func (j *jsiiProxy_ApihubPluginConfigTemplateOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ApihubPluginConfigTemplateOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_ApihubPluginConfigTemplateOutputReference)SetTerraformAttribu
 	)
 }
 
-func (j *jsiiProxy_ApihubPluginConfigTemplateOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ApihubPluginConfigTemplateOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,16 +289,16 @@ func (a *jsiiProxy_ApihubPluginConfigTemplateOutputReference) ComputeFqn() *stri
 	return returns
 }
 
-func (a *jsiiProxy_ApihubPluginConfigTemplateOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_ApihubPluginConfigTemplateOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -315,7 +314,7 @@ func (a *jsiiProxy_ApihubPluginConfigTemplateOutputReference) GetBooleanAttribut
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -331,7 +330,7 @@ func (a *jsiiProxy_ApihubPluginConfigTemplateOutputReference) GetBooleanMapAttri
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -347,7 +346,7 @@ func (a *jsiiProxy_ApihubPluginConfigTemplateOutputReference) GetListAttribute(t
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -363,7 +362,7 @@ func (a *jsiiProxy_ApihubPluginConfigTemplateOutputReference) GetNumberAttribute
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -379,7 +378,7 @@ func (a *jsiiProxy_ApihubPluginConfigTemplateOutputReference) GetNumberListAttri
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -395,7 +394,7 @@ func (a *jsiiProxy_ApihubPluginConfigTemplateOutputReference) GetNumberMapAttrib
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -411,7 +410,7 @@ func (a *jsiiProxy_ApihubPluginConfigTemplateOutputReference) GetStringAttribute
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -427,7 +426,7 @@ func (a *jsiiProxy_ApihubPluginConfigTemplateOutputReference) GetStringMapAttrib
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -456,21 +455,21 @@ func (a *jsiiProxy_ApihubPluginConfigTemplateOutputReference) InterpolationForAt
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_ApihubPluginConfigTemplateOutputReference) PutAdditionalConfigTemplate(value interface{}) {
+func (a *jsiiProxy_ApihubPluginConfigTemplateOutputReference) PutAdditionalConfigTemplate(value any) {
 	if err := a.validatePutAdditionalConfigTemplateParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"putAdditionalConfigTemplate",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -481,7 +480,7 @@ func (a *jsiiProxy_ApihubPluginConfigTemplateOutputReference) PutAuthConfigTempl
 	_jsii_.InvokeVoid(
 		a,
 		"putAuthConfigTemplate",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -501,16 +500,16 @@ func (a *jsiiProxy_ApihubPluginConfigTemplateOutputReference) ResetAuthConfigTem
 	)
 }
 
-func (a *jsiiProxy_ApihubPluginConfigTemplateOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_ApihubPluginConfigTemplateOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (a *jsiiProxy_ApihubPluginConfigTemplateOutputReference) ToString() *string
 
 	return returns
 }
-

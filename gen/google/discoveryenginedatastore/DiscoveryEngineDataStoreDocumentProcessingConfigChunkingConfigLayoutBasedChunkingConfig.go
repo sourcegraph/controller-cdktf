@@ -1,6 +1,5 @@
 package discoveryenginedatastore
 
-
 type DiscoveryEngineDataStoreDocumentProcessingConfigChunkingConfigLayoutBasedChunkingConfig struct {
 	// The token size limit for each chunk. Supported values: 100-500 (inclusive). Default value: 500.
 	//
@@ -11,6 +10,5 @@ type DiscoveryEngineDataStoreDocumentProcessingConfigChunkingConfigLayoutBasedCh
 	// Default value: False.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_data_store#include_ancestor_headings DiscoveryEngineDataStore#include_ancestor_headings}
-	IncludeAncestorHeadings interface{} `field:"optional" json:"includeAncestorHeadings" yaml:"includeAncestorHeadings"`
+	IncludeAncestorHeadings any `field:"optional" json:"includeAncestorHeadings" yaml:"includeAncestorHeadings"`
 }
-

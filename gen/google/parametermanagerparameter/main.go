@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.parameterManagerParameter.ParameterManagerParameter",
-		reflect.TypeOf((*ParameterManagerParameter)(nil)).Elem(),
+		reflect.TypeFor[ParameterManagerParameter](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -80,7 +80,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ParameterManagerParameter{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -88,15 +88,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.parameterManagerParameter.ParameterManagerParameterConfig",
-		reflect.TypeOf((*ParameterManagerParameterConfig)(nil)).Elem(),
+		reflect.TypeFor[ParameterManagerParameterConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.parameterManagerParameter.ParameterManagerParameterPolicyMember",
-		reflect.TypeOf((*ParameterManagerParameterPolicyMember)(nil)).Elem(),
+		reflect.TypeFor[ParameterManagerParameterPolicyMember](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.parameterManagerParameter.ParameterManagerParameterPolicyMemberList",
-		reflect.TypeOf((*ParameterManagerParameterPolicyMemberList)(nil)).Elem(),
+		reflect.TypeFor[ParameterManagerParameterPolicyMemberList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -109,7 +109,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ParameterManagerParameterPolicyMemberList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -117,7 +117,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.parameterManagerParameter.ParameterManagerParameterPolicyMemberOutputReference",
-		reflect.TypeOf((*ParameterManagerParameterPolicyMemberOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ParameterManagerParameterPolicyMemberOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -143,7 +143,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ParameterManagerParameterPolicyMemberOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -151,11 +151,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.parameterManagerParameter.ParameterManagerParameterTimeouts",
-		reflect.TypeOf((*ParameterManagerParameterTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ParameterManagerParameterTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.parameterManagerParameter.ParameterManagerParameterTimeoutsOutputReference",
-		reflect.TypeOf((*ParameterManagerParameterTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ParameterManagerParameterTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -188,7 +188,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ParameterManagerParameterTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

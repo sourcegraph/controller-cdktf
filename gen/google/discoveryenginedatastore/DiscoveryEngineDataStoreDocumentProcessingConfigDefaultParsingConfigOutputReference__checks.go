@@ -131,7 +131,7 @@ func (d *jsiiProxy_DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsin
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -231,4 +231,3 @@ func validateNewDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingCo
 
 	return nil
 }
-

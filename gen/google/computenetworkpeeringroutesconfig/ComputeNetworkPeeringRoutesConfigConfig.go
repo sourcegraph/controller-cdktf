@@ -6,9 +6,9 @@ import (
 
 type ComputeNetworkPeeringRoutesConfigConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,15 +18,15 @@ type ComputeNetworkPeeringRoutesConfigConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Whether to export the custom routes to the peer network.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_peering_routes_config#export_custom_routes ComputeNetworkPeeringRoutesConfig#export_custom_routes}
-	ExportCustomRoutes interface{} `field:"required" json:"exportCustomRoutes" yaml:"exportCustomRoutes"`
+	ExportCustomRoutes any `field:"required" json:"exportCustomRoutes" yaml:"exportCustomRoutes"`
 	// Whether to import the custom routes to the peer network.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_peering_routes_config#import_custom_routes ComputeNetworkPeeringRoutesConfig#import_custom_routes}
-	ImportCustomRoutes interface{} `field:"required" json:"importCustomRoutes" yaml:"importCustomRoutes"`
+	ImportCustomRoutes any `field:"required" json:"importCustomRoutes" yaml:"importCustomRoutes"`
 	// The name of the primary network for the peering.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_peering_routes_config#network ComputeNetworkPeeringRoutesConfig#network}
@@ -41,7 +41,7 @@ type ComputeNetworkPeeringRoutesConfigConfig struct {
 	// are not controlled by this field.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_peering_routes_config#export_subnet_routes_with_public_ip ComputeNetworkPeeringRoutesConfig#export_subnet_routes_with_public_ip}
-	ExportSubnetRoutesWithPublicIp interface{} `field:"optional" json:"exportSubnetRoutesWithPublicIp" yaml:"exportSubnetRoutesWithPublicIp"`
+	ExportSubnetRoutesWithPublicIp any `field:"optional" json:"exportSubnetRoutesWithPublicIp" yaml:"exportSubnetRoutesWithPublicIp"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_peering_routes_config#id ComputeNetworkPeeringRoutesConfig#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -53,7 +53,7 @@ type ComputeNetworkPeeringRoutesConfigConfig struct {
 	// are not controlled by this field.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_peering_routes_config#import_subnet_routes_with_public_ip ComputeNetworkPeeringRoutesConfig#import_subnet_routes_with_public_ip}
-	ImportSubnetRoutesWithPublicIp interface{} `field:"optional" json:"importSubnetRoutesWithPublicIp" yaml:"importSubnetRoutesWithPublicIp"`
+	ImportSubnetRoutesWithPublicIp any `field:"optional" json:"importSubnetRoutesWithPublicIp" yaml:"importSubnetRoutesWithPublicIp"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_peering_routes_config#project ComputeNetworkPeeringRoutesConfig#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// timeouts block.
@@ -61,4 +61,3 @@ type ComputeNetworkPeeringRoutesConfigConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_peering_routes_config#timeouts ComputeNetworkPeeringRoutesConfig#timeouts}
 	Timeouts *ComputeNetworkPeeringRoutesConfigTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

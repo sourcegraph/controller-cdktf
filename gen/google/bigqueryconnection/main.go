@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.bigqueryConnection.BigqueryConnection",
-		reflect.TypeOf((*BigqueryConnection)(nil)).Elem(),
+		reflect.TypeFor[BigqueryConnection](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -108,7 +108,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BigqueryConnection{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -116,15 +116,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.bigqueryConnection.BigqueryConnectionAws",
-		reflect.TypeOf((*BigqueryConnectionAws)(nil)).Elem(),
+		reflect.TypeFor[BigqueryConnectionAws](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.bigqueryConnection.BigqueryConnectionAwsAccessRole",
-		reflect.TypeOf((*BigqueryConnectionAwsAccessRole)(nil)).Elem(),
+		reflect.TypeFor[BigqueryConnectionAwsAccessRole](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.bigqueryConnection.BigqueryConnectionAwsAccessRoleOutputReference",
-		reflect.TypeOf((*BigqueryConnectionAwsAccessRoleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BigqueryConnectionAwsAccessRoleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -151,7 +151,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BigqueryConnectionAwsAccessRoleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -159,7 +159,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.bigqueryConnection.BigqueryConnectionAwsOutputReference",
-		reflect.TypeOf((*BigqueryConnectionAwsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BigqueryConnectionAwsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessRole", GoGetter: "AccessRole"},
 			_jsii_.MemberProperty{JsiiProperty: "accessRoleInput", GoGetter: "AccessRoleInput"},
@@ -186,7 +186,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BigqueryConnectionAwsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -194,11 +194,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.bigqueryConnection.BigqueryConnectionAzure",
-		reflect.TypeOf((*BigqueryConnectionAzure)(nil)).Elem(),
+		reflect.TypeFor[BigqueryConnectionAzure](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.bigqueryConnection.BigqueryConnectionAzureOutputReference",
-		reflect.TypeOf((*BigqueryConnectionAzureOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BigqueryConnectionAzureOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "application", GoGetter: "Application"},
 			_jsii_.MemberProperty{JsiiProperty: "clientId", GoGetter: "ClientId"},
@@ -232,7 +232,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BigqueryConnectionAzureOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -240,11 +240,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.bigqueryConnection.BigqueryConnectionCloudResource",
-		reflect.TypeOf((*BigqueryConnectionCloudResource)(nil)).Elem(),
+		reflect.TypeFor[BigqueryConnectionCloudResource](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.bigqueryConnection.BigqueryConnectionCloudResourceOutputReference",
-		reflect.TypeOf((*BigqueryConnectionCloudResourceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BigqueryConnectionCloudResourceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -269,7 +269,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BigqueryConnectionCloudResourceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -277,11 +277,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.bigqueryConnection.BigqueryConnectionCloudSpanner",
-		reflect.TypeOf((*BigqueryConnectionCloudSpanner)(nil)).Elem(),
+		reflect.TypeFor[BigqueryConnectionCloudSpanner](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.bigqueryConnection.BigqueryConnectionCloudSpannerOutputReference",
-		reflect.TypeOf((*BigqueryConnectionCloudSpannerOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BigqueryConnectionCloudSpannerOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -322,7 +322,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "useServerlessAnalytics", GoGetter: "UseServerlessAnalytics"},
 			_jsii_.MemberProperty{JsiiProperty: "useServerlessAnalyticsInput", GoGetter: "UseServerlessAnalyticsInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BigqueryConnectionCloudSpannerOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -330,15 +330,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.bigqueryConnection.BigqueryConnectionCloudSql",
-		reflect.TypeOf((*BigqueryConnectionCloudSql)(nil)).Elem(),
+		reflect.TypeFor[BigqueryConnectionCloudSql](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.bigqueryConnection.BigqueryConnectionCloudSqlCredential",
-		reflect.TypeOf((*BigqueryConnectionCloudSqlCredential)(nil)).Elem(),
+		reflect.TypeFor[BigqueryConnectionCloudSqlCredential](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.bigqueryConnection.BigqueryConnectionCloudSqlCredentialOutputReference",
-		reflect.TypeOf((*BigqueryConnectionCloudSqlCredentialOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BigqueryConnectionCloudSqlCredentialOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -366,7 +366,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "username", GoGetter: "Username"},
 			_jsii_.MemberProperty{JsiiProperty: "usernameInput", GoGetter: "UsernameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BigqueryConnectionCloudSqlCredentialOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -374,7 +374,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.bigqueryConnection.BigqueryConnectionCloudSqlOutputReference",
-		reflect.TypeOf((*BigqueryConnectionCloudSqlOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BigqueryConnectionCloudSqlOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -408,7 +408,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BigqueryConnectionCloudSqlOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -416,19 +416,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.bigqueryConnection.BigqueryConnectionConfig",
-		reflect.TypeOf((*BigqueryConnectionConfig)(nil)).Elem(),
+		reflect.TypeFor[BigqueryConnectionConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.bigqueryConnection.BigqueryConnectionConfiguration",
-		reflect.TypeOf((*BigqueryConnectionConfiguration)(nil)).Elem(),
+		reflect.TypeFor[BigqueryConnectionConfiguration](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAsset",
-		reflect.TypeOf((*BigqueryConnectionConfigurationAsset)(nil)).Elem(),
+		reflect.TypeFor[BigqueryConnectionConfigurationAsset](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAssetOutputReference",
-		reflect.TypeOf((*BigqueryConnectionConfigurationAssetOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BigqueryConnectionConfigurationAssetOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -458,7 +458,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BigqueryConnectionConfigurationAssetOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -466,11 +466,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthentication",
-		reflect.TypeOf((*BigqueryConnectionConfigurationAuthentication)(nil)).Elem(),
+		reflect.TypeFor[BigqueryConnectionConfigurationAuthentication](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationOutputReference",
-		reflect.TypeOf((*BigqueryConnectionConfigurationAuthenticationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BigqueryConnectionConfigurationAuthenticationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -499,7 +499,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "usernamePassword", GoGetter: "UsernamePassword"},
 			_jsii_.MemberProperty{JsiiProperty: "usernamePasswordInput", GoGetter: "UsernamePasswordInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BigqueryConnectionConfigurationAuthenticationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -507,11 +507,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePassword",
-		reflect.TypeOf((*BigqueryConnectionConfigurationAuthenticationUsernamePassword)(nil)).Elem(),
+		reflect.TypeFor[BigqueryConnectionConfigurationAuthenticationUsernamePassword](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordOutputReference",
-		reflect.TypeOf((*BigqueryConnectionConfigurationAuthenticationUsernamePasswordOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BigqueryConnectionConfigurationAuthenticationUsernamePasswordOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -540,7 +540,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "username", GoGetter: "Username"},
 			_jsii_.MemberProperty{JsiiProperty: "usernameInput", GoGetter: "UsernameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BigqueryConnectionConfigurationAuthenticationUsernamePasswordOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -548,11 +548,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordPassword",
-		reflect.TypeOf((*BigqueryConnectionConfigurationAuthenticationUsernamePasswordPassword)(nil)).Elem(),
+		reflect.TypeFor[BigqueryConnectionConfigurationAuthenticationUsernamePasswordPassword](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordPasswordOutputReference",
-		reflect.TypeOf((*BigqueryConnectionConfigurationAuthenticationUsernamePasswordPasswordOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BigqueryConnectionConfigurationAuthenticationUsernamePasswordPasswordOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -579,7 +579,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BigqueryConnectionConfigurationAuthenticationUsernamePasswordPasswordOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -587,11 +587,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.bigqueryConnection.BigqueryConnectionConfigurationEndpoint",
-		reflect.TypeOf((*BigqueryConnectionConfigurationEndpoint)(nil)).Elem(),
+		reflect.TypeFor[BigqueryConnectionConfigurationEndpoint](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.bigqueryConnection.BigqueryConnectionConfigurationEndpointOutputReference",
-		reflect.TypeOf((*BigqueryConnectionConfigurationEndpointOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BigqueryConnectionConfigurationEndpointOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -618,7 +618,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BigqueryConnectionConfigurationEndpointOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -626,11 +626,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetwork",
-		reflect.TypeOf((*BigqueryConnectionConfigurationNetwork)(nil)).Elem(),
+		reflect.TypeFor[BigqueryConnectionConfigurationNetwork](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkOutputReference",
-		reflect.TypeOf((*BigqueryConnectionConfigurationNetworkOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BigqueryConnectionConfigurationNetworkOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -658,7 +658,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BigqueryConnectionConfigurationNetworkOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -666,11 +666,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkPrivateServiceConnect",
-		reflect.TypeOf((*BigqueryConnectionConfigurationNetworkPrivateServiceConnect)(nil)).Elem(),
+		reflect.TypeFor[BigqueryConnectionConfigurationNetworkPrivateServiceConnect](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference",
-		reflect.TypeOf((*BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -696,7 +696,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -704,7 +704,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference",
-		reflect.TypeOf((*BigqueryConnectionConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BigqueryConnectionConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "asset", GoGetter: "Asset"},
 			_jsii_.MemberProperty{JsiiProperty: "assetInput", GoGetter: "AssetInput"},
@@ -745,7 +745,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BigqueryConnectionConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -753,15 +753,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.bigqueryConnection.BigqueryConnectionSpark",
-		reflect.TypeOf((*BigqueryConnectionSpark)(nil)).Elem(),
+		reflect.TypeFor[BigqueryConnectionSpark](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.bigqueryConnection.BigqueryConnectionSparkMetastoreServiceConfig",
-		reflect.TypeOf((*BigqueryConnectionSparkMetastoreServiceConfig)(nil)).Elem(),
+		reflect.TypeFor[BigqueryConnectionSparkMetastoreServiceConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.bigqueryConnection.BigqueryConnectionSparkMetastoreServiceConfigOutputReference",
-		reflect.TypeOf((*BigqueryConnectionSparkMetastoreServiceConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BigqueryConnectionSparkMetastoreServiceConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -788,7 +788,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BigqueryConnectionSparkMetastoreServiceConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -796,7 +796,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.bigqueryConnection.BigqueryConnectionSparkOutputReference",
-		reflect.TypeOf((*BigqueryConnectionSparkOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BigqueryConnectionSparkOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -829,7 +829,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BigqueryConnectionSparkOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -837,11 +837,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.bigqueryConnection.BigqueryConnectionSparkSparkHistoryServerConfig",
-		reflect.TypeOf((*BigqueryConnectionSparkSparkHistoryServerConfig)(nil)).Elem(),
+		reflect.TypeFor[BigqueryConnectionSparkSparkHistoryServerConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.bigqueryConnection.BigqueryConnectionSparkSparkHistoryServerConfigOutputReference",
-		reflect.TypeOf((*BigqueryConnectionSparkSparkHistoryServerConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BigqueryConnectionSparkSparkHistoryServerConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -868,7 +868,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BigqueryConnectionSparkSparkHistoryServerConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -876,11 +876,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.bigqueryConnection.BigqueryConnectionTimeouts",
-		reflect.TypeOf((*BigqueryConnectionTimeouts)(nil)).Elem(),
+		reflect.TypeFor[BigqueryConnectionTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.bigqueryConnection.BigqueryConnectionTimeoutsOutputReference",
-		reflect.TypeOf((*BigqueryConnectionTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BigqueryConnectionTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -913,7 +913,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BigqueryConnectionTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

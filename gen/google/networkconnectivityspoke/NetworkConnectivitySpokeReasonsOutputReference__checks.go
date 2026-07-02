@@ -98,7 +98,7 @@ func (n *jsiiProxy_NetworkConnectivitySpokeReasonsOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_NetworkConnectivitySpokeReasonsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkConnectivitySpokeReasonsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewNetworkConnectivitySpokeReasonsOutputReferenceParameters(terrafo
 
 	return nil
 }
-

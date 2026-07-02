@@ -130,7 +130,7 @@ func (j *jsiiProxy_ContainerClusterDnsConfigOutputReference) validateSetClusterD
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterDnsConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterDnsConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewContainerClusterDnsConfigOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

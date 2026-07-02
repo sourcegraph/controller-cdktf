@@ -90,7 +90,7 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionEventingConfigRegistrationDest
 	return nil
 }
 
-func (i *jsiiProxy_IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigOutputReference) validatePutDestinationParameters(value interface{}) error {
+func (i *jsiiProxy_IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigOutputReference) validatePutDestinationParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionEventingConfigRegistrationDest
 	return nil
 }
 
-func (j *jsiiProxy_IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -237,4 +237,3 @@ func validateNewIntegrationConnectorsConnectionEventingConfigRegistrationDestina
 
 	return nil
 }
-

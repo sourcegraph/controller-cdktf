@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeRegionCommitmentParamsOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionCommitmentParamsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionCommitmentParamsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewComputeRegionCommitmentParamsOutputReferenceParameters(terraform
 
 	return nil
 }
-

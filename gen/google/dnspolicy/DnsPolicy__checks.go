@@ -19,7 +19,7 @@ func (d *jsiiProxy_DnsPolicy) validateAddMoveTargetParameters(moveTarget *string
 	return nil
 }
 
-func (d *jsiiProxy_DnsPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DnsPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (d *jsiiProxy_DnsPolicy) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DnsPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (d *jsiiProxy_DnsPolicy) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -226,7 +226,7 @@ func (d *jsiiProxy_DnsPolicy) validatePutDns64ConfigParameters(value *DnsPolicyD
 	return nil
 }
 
-func (d *jsiiProxy_DnsPolicy) validatePutNetworksParameters(value interface{}) error {
+func (d *jsiiProxy_DnsPolicy) validatePutNetworksParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -284,7 +284,7 @@ func validateDnsPolicy_GenerateConfigForImportParameters(scope constructs.Constr
 	return nil
 }
 
-func validateDnsPolicy_IsConstructParameters(x interface{}) error {
+func validateDnsPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -292,7 +292,7 @@ func validateDnsPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateDnsPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateDnsPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -300,7 +300,7 @@ func validateDnsPolicy_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateDnsPolicy_IsTerraformResourceParameters(x interface{}) error {
+func validateDnsPolicy_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -308,7 +308,7 @@ func validateDnsPolicy_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_DnsPolicy) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_DnsPolicy) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -341,7 +341,7 @@ func (j *jsiiProxy_DnsPolicy) validateSetConnectionParameters(val interface{}) e
 	return nil
 }
 
-func (j *jsiiProxy_DnsPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DnsPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -406,7 +406,7 @@ func (j *jsiiProxy_DnsPolicy) validateSetDescriptionParameters(val *string) erro
 	return nil
 }
 
-func (j *jsiiProxy_DnsPolicy) validateSetEnableInboundForwardingParameters(val interface{}) error {
+func (j *jsiiProxy_DnsPolicy) validateSetEnableInboundForwardingParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -426,7 +426,7 @@ func (j *jsiiProxy_DnsPolicy) validateSetEnableInboundForwardingParameters(val i
 	return nil
 }
 
-func (j *jsiiProxy_DnsPolicy) validateSetEnableLoggingParameters(val interface{}) error {
+func (j *jsiiProxy_DnsPolicy) validateSetEnableLoggingParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -478,7 +478,7 @@ func (j *jsiiProxy_DnsPolicy) validateSetProjectParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_DnsPolicy) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_DnsPolicy) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -542,4 +542,3 @@ func validateNewDnsPolicyParameters(scope constructs.Construct, id *string, conf
 
 	return nil
 }
-

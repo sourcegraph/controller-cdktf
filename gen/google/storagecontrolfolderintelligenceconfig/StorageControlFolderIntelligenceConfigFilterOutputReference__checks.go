@@ -142,7 +142,7 @@ func (s *jsiiProxy_StorageControlFolderIntelligenceConfigFilterOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_StorageControlFolderIntelligenceConfigFilterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_StorageControlFolderIntelligenceConfigFilterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -242,4 +242,3 @@ func validateNewStorageControlFolderIntelligenceConfigFilterOutputReferenceParam
 
 	return nil
 }
-

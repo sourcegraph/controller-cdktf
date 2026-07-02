@@ -18,15 +18,15 @@ type CloudbuildWorkerPool interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	DeleteTime() *string
 	// Experimental.
@@ -72,20 +72,20 @@ type CloudbuildWorkerPool interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	State() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() CloudbuildWorkerPoolTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Uid() *string
 	UpdateTime() *string
 	WorkerConfig() CloudbuildWorkerPoolWorkerConfigOutputReference
@@ -94,9 +94,9 @@ type CloudbuildWorkerPool interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -114,7 +114,7 @@ type CloudbuildWorkerPool interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -126,7 +126,7 @@ type CloudbuildWorkerPool interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -148,17 +148,17 @@ type CloudbuildWorkerPool interface {
 	ResetProject()
 	ResetTimeouts()
 	ResetWorkerConfig()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for CloudbuildWorkerPool
@@ -196,8 +196,8 @@ func (j *jsiiProxy_CloudbuildWorkerPool) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_CloudbuildWorkerPool) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudbuildWorkerPool) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -206,8 +206,8 @@ func (j *jsiiProxy_CloudbuildWorkerPool) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CloudbuildWorkerPool) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CloudbuildWorkerPool) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -216,8 +216,8 @@ func (j *jsiiProxy_CloudbuildWorkerPool) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_CloudbuildWorkerPool) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudbuildWorkerPool) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -466,8 +466,8 @@ func (j *jsiiProxy_CloudbuildWorkerPool) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_CloudbuildWorkerPool) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_CloudbuildWorkerPool) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -476,8 +476,8 @@ func (j *jsiiProxy_CloudbuildWorkerPool) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CloudbuildWorkerPool) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudbuildWorkerPool) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -506,8 +506,8 @@ func (j *jsiiProxy_CloudbuildWorkerPool) TerraformGeneratorMetadata() *cdktf.Ter
 	return returns
 }
 
-func (j *jsiiProxy_CloudbuildWorkerPool) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CloudbuildWorkerPool) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -536,8 +536,8 @@ func (j *jsiiProxy_CloudbuildWorkerPool) Timeouts() CloudbuildWorkerPoolTimeouts
 	return returns
 }
 
-func (j *jsiiProxy_CloudbuildWorkerPool) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudbuildWorkerPool) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -586,7 +586,6 @@ func (j *jsiiProxy_CloudbuildWorkerPool) WorkerConfigInput() *CloudbuildWorkerPo
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuild_worker_pool google_cloudbuild_worker_pool} Resource.
 func NewCloudbuildWorkerPool(scope constructs.Construct, id *string, config *CloudbuildWorkerPoolConfig) CloudbuildWorkerPool {
 	_init_.Initialize()
@@ -598,7 +597,7 @@ func NewCloudbuildWorkerPool(scope constructs.Construct, id *string, config *Clo
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPool",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -611,12 +610,12 @@ func NewCloudbuildWorkerPool_Override(c CloudbuildWorkerPool, scope constructs.C
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPool",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CloudbuildWorkerPool)SetAnnotations(val *map[string]*string) {
+func (j *jsiiProxy_CloudbuildWorkerPool) SetAnnotations(val *map[string]*string) {
 	if err := j.validateSetAnnotationsParameters(val); err != nil {
 		panic(err)
 	}
@@ -627,7 +626,7 @@ func (j *jsiiProxy_CloudbuildWorkerPool)SetAnnotations(val *map[string]*string) 
 	)
 }
 
-func (j *jsiiProxy_CloudbuildWorkerPool)SetConnection(val interface{}) {
+func (j *jsiiProxy_CloudbuildWorkerPool) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -638,7 +637,7 @@ func (j *jsiiProxy_CloudbuildWorkerPool)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudbuildWorkerPool)SetCount(val interface{}) {
+func (j *jsiiProxy_CloudbuildWorkerPool) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -649,7 +648,7 @@ func (j *jsiiProxy_CloudbuildWorkerPool)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudbuildWorkerPool)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_CloudbuildWorkerPool) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -657,7 +656,7 @@ func (j *jsiiProxy_CloudbuildWorkerPool)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CloudbuildWorkerPool)SetDisplayName(val *string) {
+func (j *jsiiProxy_CloudbuildWorkerPool) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -668,7 +667,7 @@ func (j *jsiiProxy_CloudbuildWorkerPool)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudbuildWorkerPool)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_CloudbuildWorkerPool) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -676,7 +675,7 @@ func (j *jsiiProxy_CloudbuildWorkerPool)SetForEach(val cdktf.ITerraformIterator)
 	)
 }
 
-func (j *jsiiProxy_CloudbuildWorkerPool)SetId(val *string) {
+func (j *jsiiProxy_CloudbuildWorkerPool) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -687,7 +686,7 @@ func (j *jsiiProxy_CloudbuildWorkerPool)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudbuildWorkerPool)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_CloudbuildWorkerPool) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -698,7 +697,7 @@ func (j *jsiiProxy_CloudbuildWorkerPool)SetLifecycle(val *cdktf.TerraformResourc
 	)
 }
 
-func (j *jsiiProxy_CloudbuildWorkerPool)SetLocation(val *string) {
+func (j *jsiiProxy_CloudbuildWorkerPool) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -709,7 +708,7 @@ func (j *jsiiProxy_CloudbuildWorkerPool)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudbuildWorkerPool)SetName(val *string) {
+func (j *jsiiProxy_CloudbuildWorkerPool) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -720,7 +719,7 @@ func (j *jsiiProxy_CloudbuildWorkerPool)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudbuildWorkerPool)SetProject(val *string) {
+func (j *jsiiProxy_CloudbuildWorkerPool) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -731,7 +730,7 @@ func (j *jsiiProxy_CloudbuildWorkerPool)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudbuildWorkerPool)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_CloudbuildWorkerPool) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -739,7 +738,7 @@ func (j *jsiiProxy_CloudbuildWorkerPool)SetProvider(val cdktf.TerraformProvider)
 	)
 }
 
-func (j *jsiiProxy_CloudbuildWorkerPool)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_CloudbuildWorkerPool) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -762,7 +761,7 @@ func CloudbuildWorkerPool_GenerateConfigForImport(scope constructs.Construct, im
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPool",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -786,7 +785,7 @@ func CloudbuildWorkerPool_GenerateConfigForImport(scope constructs.Construct, im
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func CloudbuildWorkerPool_IsConstruct(x interface{}) *bool {
+func CloudbuildWorkerPool_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCloudbuildWorkerPool_IsConstructParameters(x); err != nil {
@@ -797,7 +796,7 @@ func CloudbuildWorkerPool_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPool",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -805,7 +804,7 @@ func CloudbuildWorkerPool_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func CloudbuildWorkerPool_IsTerraformElement(x interface{}) *bool {
+func CloudbuildWorkerPool_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCloudbuildWorkerPool_IsTerraformElementParameters(x); err != nil {
@@ -816,7 +815,7 @@ func CloudbuildWorkerPool_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPool",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -824,7 +823,7 @@ func CloudbuildWorkerPool_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func CloudbuildWorkerPool_IsTerraformResource(x interface{}) *bool {
+func CloudbuildWorkerPool_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCloudbuildWorkerPool_IsTerraformResourceParameters(x); err != nil {
@@ -835,7 +834,7 @@ func CloudbuildWorkerPool_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPool",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -860,31 +859,31 @@ func (c *jsiiProxy_CloudbuildWorkerPool) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_CloudbuildWorkerPool) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_CloudbuildWorkerPool) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_CloudbuildWorkerPool) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CloudbuildWorkerPool) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -900,7 +899,7 @@ func (c *jsiiProxy_CloudbuildWorkerPool) GetBooleanAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -916,7 +915,7 @@ func (c *jsiiProxy_CloudbuildWorkerPool) GetBooleanMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -932,7 +931,7 @@ func (c *jsiiProxy_CloudbuildWorkerPool) GetListAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -948,7 +947,7 @@ func (c *jsiiProxy_CloudbuildWorkerPool) GetNumberAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -964,7 +963,7 @@ func (c *jsiiProxy_CloudbuildWorkerPool) GetNumberListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -980,7 +979,7 @@ func (c *jsiiProxy_CloudbuildWorkerPool) GetNumberMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -996,7 +995,7 @@ func (c *jsiiProxy_CloudbuildWorkerPool) GetStringAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1012,15 +1011,15 @@ func (c *jsiiProxy_CloudbuildWorkerPool) GetStringMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_CloudbuildWorkerPool) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudbuildWorkerPool) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1039,7 +1038,7 @@ func (c *jsiiProxy_CloudbuildWorkerPool) ImportFrom(id *string, provider cdktf.T
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1052,7 +1051,7 @@ func (c *jsiiProxy_CloudbuildWorkerPool) InterpolationForAttribute(terraformAttr
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1066,18 +1065,18 @@ func (c *jsiiProxy_CloudbuildWorkerPool) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_CloudbuildWorkerPool) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_CloudbuildWorkerPool) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1088,7 +1087,7 @@ func (c *jsiiProxy_CloudbuildWorkerPool) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1099,7 +1098,7 @@ func (c *jsiiProxy_CloudbuildWorkerPool) OverrideLogicalId(newLogicalId *string)
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1110,7 +1109,7 @@ func (c *jsiiProxy_CloudbuildWorkerPool) PutNetworkConfig(value *CloudbuildWorke
 	_jsii_.InvokeVoid(
 		c,
 		"putNetworkConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1121,7 +1120,7 @@ func (c *jsiiProxy_CloudbuildWorkerPool) PutPrivateServiceConnect(value *Cloudbu
 	_jsii_.InvokeVoid(
 		c,
 		"putPrivateServiceConnect",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1132,7 +1131,7 @@ func (c *jsiiProxy_CloudbuildWorkerPool) PutTimeouts(value *CloudbuildWorkerPool
 	_jsii_.InvokeVoid(
 		c,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1143,7 +1142,7 @@ func (c *jsiiProxy_CloudbuildWorkerPool) PutWorkerConfig(value *CloudbuildWorker
 	_jsii_.InvokeVoid(
 		c,
 		"putWorkerConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1219,8 +1218,8 @@ func (c *jsiiProxy_CloudbuildWorkerPool) ResetWorkerConfig() {
 	)
 }
 
-func (c *jsiiProxy_CloudbuildWorkerPool) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CloudbuildWorkerPool) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1232,8 +1231,8 @@ func (c *jsiiProxy_CloudbuildWorkerPool) SynthesizeAttributes() *map[string]inte
 	return returns
 }
 
-func (c *jsiiProxy_CloudbuildWorkerPool) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CloudbuildWorkerPool) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1245,8 +1244,8 @@ func (c *jsiiProxy_CloudbuildWorkerPool) SynthesizeHclAttributes() *map[string]i
 	return returns
 }
 
-func (c *jsiiProxy_CloudbuildWorkerPool) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudbuildWorkerPool) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1258,8 +1257,8 @@ func (c *jsiiProxy_CloudbuildWorkerPool) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_CloudbuildWorkerPool) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudbuildWorkerPool) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1284,8 +1283,8 @@ func (c *jsiiProxy_CloudbuildWorkerPool) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_CloudbuildWorkerPool) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudbuildWorkerPool) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1296,4 +1295,3 @@ func (c *jsiiProxy_CloudbuildWorkerPool) ToTerraform() interface{} {
 
 	return returns
 }
-

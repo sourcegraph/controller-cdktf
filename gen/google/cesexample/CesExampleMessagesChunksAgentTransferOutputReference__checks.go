@@ -98,7 +98,7 @@ func (c *jsiiProxy_CesExampleMessagesChunksAgentTransferOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_CesExampleMessagesChunksAgentTransferOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CesExampleMessagesChunksAgentTransferOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewCesExampleMessagesChunksAgentTransferOutputReferenceParameters(t
 
 	return nil
 }
-

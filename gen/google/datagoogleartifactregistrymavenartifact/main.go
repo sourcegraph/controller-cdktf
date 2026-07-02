@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleArtifactRegistryMavenArtifact.DataGoogleArtifactRegistryMavenArtifact",
-		reflect.TypeOf((*DataGoogleArtifactRegistryMavenArtifact)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleArtifactRegistryMavenArtifact](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "artifactId", GoGetter: "ArtifactId"},
@@ -64,7 +64,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleArtifactRegistryMavenArtifact{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -72,6 +72,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleArtifactRegistryMavenArtifact.DataGoogleArtifactRegistryMavenArtifactConfig",
-		reflect.TypeOf((*DataGoogleArtifactRegistryMavenArtifactConfig)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleArtifactRegistryMavenArtifactConfig](),
 	)
 }

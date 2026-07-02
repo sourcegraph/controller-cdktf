@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOrigin",
-		reflect.TypeOf((*NetworkServicesEdgeCacheOrigin)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesEdgeCacheOrigin](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -110,7 +110,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkServicesEdgeCacheOrigin{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -118,11 +118,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOriginAwsV4Authentication",
-		reflect.TypeOf((*NetworkServicesEdgeCacheOriginAwsV4Authentication)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesEdgeCacheOriginAwsV4Authentication](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOriginAwsV4AuthenticationOutputReference",
-		reflect.TypeOf((*NetworkServicesEdgeCacheOriginAwsV4AuthenticationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesEdgeCacheOriginAwsV4AuthenticationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessKeyId", GoGetter: "AccessKeyId"},
 			_jsii_.MemberProperty{JsiiProperty: "accessKeyIdInput", GoGetter: "AccessKeyIdInput"},
@@ -152,7 +152,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkServicesEdgeCacheOriginAwsV4AuthenticationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -160,15 +160,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOriginConfig",
-		reflect.TypeOf((*NetworkServicesEdgeCacheOriginConfig)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesEdgeCacheOriginConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOriginFlexShielding",
-		reflect.TypeOf((*NetworkServicesEdgeCacheOriginFlexShielding)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesEdgeCacheOriginFlexShielding](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOriginFlexShieldingOutputReference",
-		reflect.TypeOf((*NetworkServicesEdgeCacheOriginFlexShieldingOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesEdgeCacheOriginFlexShieldingOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -195,7 +195,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkServicesEdgeCacheOriginFlexShieldingOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -203,15 +203,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOriginOriginOverrideAction",
-		reflect.TypeOf((*NetworkServicesEdgeCacheOriginOriginOverrideAction)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesEdgeCacheOriginOriginOverrideAction](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOriginOriginOverrideActionHeaderAction",
-		reflect.TypeOf((*NetworkServicesEdgeCacheOriginOriginOverrideActionHeaderAction)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesEdgeCacheOriginOriginOverrideActionHeaderAction](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionOutputReference",
-		reflect.TypeOf((*NetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -239,7 +239,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -247,11 +247,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionRequestHeadersToAdd",
-		reflect.TypeOf((*NetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionRequestHeadersToAdd)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionRequestHeadersToAdd](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionRequestHeadersToAddList",
-		reflect.TypeOf((*NetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionRequestHeadersToAddList)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionRequestHeadersToAddList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -265,7 +265,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionRequestHeadersToAddList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -273,7 +273,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionRequestHeadersToAddOutputReference",
-		reflect.TypeOf((*NetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionRequestHeadersToAddOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionRequestHeadersToAddOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -304,7 +304,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionRequestHeadersToAddOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -312,7 +312,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOriginOriginOverrideActionOutputReference",
-		reflect.TypeOf((*NetworkServicesEdgeCacheOriginOriginOverrideActionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesEdgeCacheOriginOriginOverrideActionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -344,7 +344,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "urlRewrite", GoGetter: "UrlRewrite"},
 			_jsii_.MemberProperty{JsiiProperty: "urlRewriteInput", GoGetter: "UrlRewriteInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkServicesEdgeCacheOriginOriginOverrideActionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -352,11 +352,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOriginOriginOverrideActionUrlRewrite",
-		reflect.TypeOf((*NetworkServicesEdgeCacheOriginOriginOverrideActionUrlRewrite)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesEdgeCacheOriginOriginOverrideActionUrlRewrite](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOriginOriginOverrideActionUrlRewriteOutputReference",
-		reflect.TypeOf((*NetworkServicesEdgeCacheOriginOriginOverrideActionUrlRewriteOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesEdgeCacheOriginOriginOverrideActionUrlRewriteOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -383,7 +383,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkServicesEdgeCacheOriginOriginOverrideActionUrlRewriteOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -391,11 +391,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOriginOriginRedirect",
-		reflect.TypeOf((*NetworkServicesEdgeCacheOriginOriginRedirect)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesEdgeCacheOriginOriginRedirect](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOriginOriginRedirectOutputReference",
-		reflect.TypeOf((*NetworkServicesEdgeCacheOriginOriginRedirectOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesEdgeCacheOriginOriginRedirectOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -422,7 +422,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkServicesEdgeCacheOriginOriginRedirectOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -430,11 +430,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOriginTimeout",
-		reflect.TypeOf((*NetworkServicesEdgeCacheOriginTimeout)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesEdgeCacheOriginTimeout](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOriginTimeoutOutputReference",
-		reflect.TypeOf((*NetworkServicesEdgeCacheOriginTimeoutOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesEdgeCacheOriginTimeoutOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -470,7 +470,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkServicesEdgeCacheOriginTimeoutOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -478,11 +478,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOriginTimeouts",
-		reflect.TypeOf((*NetworkServicesEdgeCacheOriginTimeouts)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesEdgeCacheOriginTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOriginTimeoutsOutputReference",
-		reflect.TypeOf((*NetworkServicesEdgeCacheOriginTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesEdgeCacheOriginTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -515,7 +515,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkServicesEdgeCacheOriginTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

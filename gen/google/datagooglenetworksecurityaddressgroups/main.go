@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleNetworkSecurityAddressGroups.DataGoogleNetworkSecurityAddressGroups",
-		reflect.TypeOf((*DataGoogleNetworkSecurityAddressGroups)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleNetworkSecurityAddressGroups](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "addressGroups", GoGetter: "AddressGroups"},
@@ -57,7 +57,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleNetworkSecurityAddressGroups{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -65,11 +65,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleNetworkSecurityAddressGroups.DataGoogleNetworkSecurityAddressGroupsAddressGroups",
-		reflect.TypeOf((*DataGoogleNetworkSecurityAddressGroupsAddressGroups)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleNetworkSecurityAddressGroupsAddressGroups](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleNetworkSecurityAddressGroups.DataGoogleNetworkSecurityAddressGroupsAddressGroupsList",
-		reflect.TypeOf((*DataGoogleNetworkSecurityAddressGroupsAddressGroupsList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleNetworkSecurityAddressGroupsAddressGroupsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -82,7 +82,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleNetworkSecurityAddressGroupsAddressGroupsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -90,7 +90,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleNetworkSecurityAddressGroups.DataGoogleNetworkSecurityAddressGroupsAddressGroupsOutputReference",
-		reflect.TypeOf((*DataGoogleNetworkSecurityAddressGroupsAddressGroupsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleNetworkSecurityAddressGroupsAddressGroupsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "capacity", GoGetter: "Capacity"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -118,7 +118,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleNetworkSecurityAddressGroupsAddressGroupsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -126,6 +126,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleNetworkSecurityAddressGroups.DataGoogleNetworkSecurityAddressGroupsConfig",
-		reflect.TypeOf((*DataGoogleNetworkSecurityAddressGroupsConfig)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleNetworkSecurityAddressGroupsConfig](),
 	)
 }

@@ -90,7 +90,7 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartDrillDownConfigRightDril
 	return nil
 }
 
-func (c *jsiiProxy_ChronicleDashboardChartDashboardChartDrillDownConfigRightDrillDownsCustomSettingsFilterOutputReference) validatePutDashboardFiltersParameters(value interface{}) error {
+func (c *jsiiProxy_ChronicleDashboardChartDashboardChartDrillDownConfigRightDrillDownsCustomSettingsFilterOutputReference) validatePutDashboardFiltersParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartDrillDownConfigRightDril
 	return nil
 }
 
-func (j *jsiiProxy_ChronicleDashboardChartDashboardChartDrillDownConfigRightDrillDownsCustomSettingsFilterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ChronicleDashboardChartDashboardChartDrillDownConfigRightDrillDownsCustomSettingsFilterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -229,4 +229,3 @@ func validateNewChronicleDashboardChartDashboardChartDrillDownConfigRightDrillDo
 
 	return nil
 }
-

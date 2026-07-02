@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeInstanceGroupManagerVersionTargetSizeOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInstanceGroupManagerVersionTargetSizeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInstanceGroupManagerVersionTargetSizeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewComputeInstanceGroupManagerVersionTargetSizeOutputReferenceParam
 
 	return nil
 }
-

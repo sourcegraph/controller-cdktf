@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataplexAssetIamMember.DataplexAssetIamMember",
-		reflect.TypeOf((*DataplexAssetIamMember)(nil)).Elem(),
+		reflect.TypeFor[DataplexAssetIamMember](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,7 +77,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataplexAssetIamMember{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -85,11 +85,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataplexAssetIamMember.DataplexAssetIamMemberCondition",
-		reflect.TypeOf((*DataplexAssetIamMemberCondition)(nil)).Elem(),
+		reflect.TypeFor[DataplexAssetIamMemberCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataplexAssetIamMember.DataplexAssetIamMemberConditionOutputReference",
-		reflect.TypeOf((*DataplexAssetIamMemberConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataplexAssetIamMemberConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -120,7 +120,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataplexAssetIamMemberConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -128,6 +128,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataplexAssetIamMember.DataplexAssetIamMemberConfig",
-		reflect.TypeOf((*DataplexAssetIamMemberConfig)(nil)).Elem(),
+		reflect.TypeFor[DataplexAssetIamMemberConfig](),
 	)
 }

@@ -98,7 +98,7 @@ func (c *jsiiProxy_ContainerNodePoolNodeDrainConfigOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeDrainConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerNodePoolNodeDrainConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ContainerNodePoolNodeDrainConfigOutputReference) validateSetC
 	return nil
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeDrainConfigOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerNodePoolNodeDrainConfigOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -187,7 +187,7 @@ func (j *jsiiProxy_ContainerNodePoolNodeDrainConfigOutputReference) validateSetI
 	return nil
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeDrainConfigOutputReference) validateSetRespectPdbDuringNodePoolDeletionParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerNodePoolNodeDrainConfigOutputReference) validateSetRespectPdbDuringNodePoolDeletionParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -242,4 +242,3 @@ func validateNewContainerNodePoolNodeDrainConfigOutputReferenceParameters(terraf
 
 	return nil
 }
-

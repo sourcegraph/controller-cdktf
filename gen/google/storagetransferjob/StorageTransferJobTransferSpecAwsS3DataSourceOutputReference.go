@@ -20,9 +20,9 @@ type StorageTransferJobTransferSpecAwsS3DataSourceOutputReference interface {
 	CloudfrontDomainInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -40,9 +40,9 @@ type StorageTransferJobTransferSpecAwsS3DataSourceOutputReference interface {
 	Fqn() *string
 	InternalValue() *StorageTransferJobTransferSpecAwsS3DataSource
 	SetInternalValue(val *StorageTransferJobTransferSpecAwsS3DataSource)
-	ManagedPrivateNetwork() interface{}
-	SetManagedPrivateNetwork(val interface{})
-	ManagedPrivateNetworkInput() interface{}
+	ManagedPrivateNetwork() any
+	SetManagedPrivateNetwork(val any)
+	ManagedPrivateNetworkInput() any
 	Path() *string
 	SetPath(val *string)
 	PathInput() *string
@@ -60,7 +60,7 @@ type StorageTransferJobTransferSpecAwsS3DataSourceOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -90,7 +90,7 @@ type StorageTransferJobTransferSpecAwsS3DataSourceOutputReference interface {
 	ResetRoleArn()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -163,8 +163,8 @@ func (j *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -233,8 +233,8 @@ func (j *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference) ManagedPrivateNetwork() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference) ManagedPrivateNetwork() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"managedPrivateNetwork",
@@ -243,8 +243,8 @@ func (j *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference) ManagedPrivateNetworkInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference) ManagedPrivateNetworkInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"managedPrivateNetworkInput",
@@ -313,7 +313,6 @@ func (j *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference)
 	return returns
 }
 
-
 func NewStorageTransferJobTransferSpecAwsS3DataSourceOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) StorageTransferJobTransferSpecAwsS3DataSourceOutputReference {
 	_init_.Initialize()
 
@@ -324,7 +323,7 @@ func NewStorageTransferJobTransferSpecAwsS3DataSourceOutputReference(terraformRe
 
 	_jsii_.Create(
 		"@cdktf/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3DataSourceOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -336,12 +335,12 @@ func NewStorageTransferJobTransferSpecAwsS3DataSourceOutputReference_Override(s 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3DataSourceOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		s,
 	)
 }
 
-func (j *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference)SetBucketName(val *string) {
+func (j *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference) SetBucketName(val *string) {
 	if err := j.validateSetBucketNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -352,7 +351,7 @@ func (j *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference)
 	)
 }
 
-func (j *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference)SetCloudfrontDomain(val *string) {
+func (j *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference) SetCloudfrontDomain(val *string) {
 	if err := j.validateSetCloudfrontDomainParameters(val); err != nil {
 		panic(err)
 	}
@@ -363,7 +362,7 @@ func (j *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference)
 	)
 }
 
-func (j *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -374,7 +373,7 @@ func (j *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference)
 	)
 }
 
-func (j *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -385,7 +384,7 @@ func (j *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference)
 	)
 }
 
-func (j *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference)SetCredentialsSecret(val *string) {
+func (j *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference) SetCredentialsSecret(val *string) {
 	if err := j.validateSetCredentialsSecretParameters(val); err != nil {
 		panic(err)
 	}
@@ -396,7 +395,7 @@ func (j *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference)
 	)
 }
 
-func (j *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference)SetInternalValue(val *StorageTransferJobTransferSpecAwsS3DataSource) {
+func (j *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference) SetInternalValue(val *StorageTransferJobTransferSpecAwsS3DataSource) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -407,7 +406,7 @@ func (j *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference)
 	)
 }
 
-func (j *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference)SetManagedPrivateNetwork(val interface{}) {
+func (j *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference) SetManagedPrivateNetwork(val any) {
 	if err := j.validateSetManagedPrivateNetworkParameters(val); err != nil {
 		panic(err)
 	}
@@ -418,7 +417,7 @@ func (j *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference)
 	)
 }
 
-func (j *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference)SetPath(val *string) {
+func (j *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference) SetPath(val *string) {
 	if err := j.validateSetPathParameters(val); err != nil {
 		panic(err)
 	}
@@ -429,7 +428,7 @@ func (j *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference)
 	)
 }
 
-func (j *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference)SetRoleArn(val *string) {
+func (j *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference) SetRoleArn(val *string) {
 	if err := j.validateSetRoleArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -440,7 +439,7 @@ func (j *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference)
 	)
 }
 
-func (j *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -451,7 +450,7 @@ func (j *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference)
 	)
 }
 
-func (j *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -475,16 +474,16 @@ func (s *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference)
 	return returns
 }
 
-func (s *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -500,7 +499,7 @@ func (s *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference)
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -516,7 +515,7 @@ func (s *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference)
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -532,7 +531,7 @@ func (s *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference)
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -548,7 +547,7 @@ func (s *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference)
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -564,7 +563,7 @@ func (s *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference)
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -580,7 +579,7 @@ func (s *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference)
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -596,7 +595,7 @@ func (s *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference)
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -612,7 +611,7 @@ func (s *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference)
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -641,7 +640,7 @@ func (s *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference)
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -655,7 +654,7 @@ func (s *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference)
 	_jsii_.InvokeVoid(
 		s,
 		"putAwsAccessKey",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -707,16 +706,16 @@ func (s *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference)
 	)
 }
 
-func (s *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -735,4 +734,3 @@ func (s *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference)
 
 	return returns
 }
-

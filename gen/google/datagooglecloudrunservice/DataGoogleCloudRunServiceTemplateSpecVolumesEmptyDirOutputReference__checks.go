@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleCloudRunServiceTemplateSpecVolumesEmptyDirOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleCloudRunServiceTemplateSpecVolumesEmptyDirOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleCloudRunServiceTemplateSpecVolumesEmptyDirOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleCloudRunServiceTemplateSpecVolumesEmptyDirOutputRefere
 
 	return nil
 }
-

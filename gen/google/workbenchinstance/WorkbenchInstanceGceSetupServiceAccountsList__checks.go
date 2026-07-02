@@ -34,7 +34,7 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupServiceAccountsList) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_WorkbenchInstanceGceSetupServiceAccountsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_WorkbenchInstanceGceSetupServiceAccountsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewWorkbenchInstanceGceSetupServiceAccountsListParameters(terraform
 
 	return nil
 }
-

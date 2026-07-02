@@ -109,7 +109,7 @@ func (r *jsiiProxy_RecaptchaEnterpriseKeyWebSettingsOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_RecaptchaEnterpriseKeyWebSettingsOutputReference) validateSetAllowAllDomainsParameters(val interface{}) error {
+func (j *jsiiProxy_RecaptchaEnterpriseKeyWebSettingsOutputReference) validateSetAllowAllDomainsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (j *jsiiProxy_RecaptchaEnterpriseKeyWebSettingsOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_RecaptchaEnterpriseKeyWebSettingsOutputReference) validateSetAllowAmpTrafficParameters(val interface{}) error {
+func (j *jsiiProxy_RecaptchaEnterpriseKeyWebSettingsOutputReference) validateSetAllowAmpTrafficParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -165,7 +165,7 @@ func (j *jsiiProxy_RecaptchaEnterpriseKeyWebSettingsOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_RecaptchaEnterpriseKeyWebSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_RecaptchaEnterpriseKeyWebSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -273,4 +273,3 @@ func validateNewRecaptchaEnterpriseKeyWebSettingsOutputReferenceParameters(terra
 
 	return nil
 }
-

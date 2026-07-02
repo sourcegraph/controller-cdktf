@@ -90,7 +90,7 @@ func (o *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesDbBac
 	return nil
 }
 
-func (o *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesDbBackupConfigOutputReference) validatePutBackupDestinationDetailsParameters(value interface{}) error {
+func (o *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesDbBackupConfigOutputReference) validatePutBackupDestinationDetailsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (o *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesDbBac
 	return nil
 }
 
-func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesDbBackupConfigOutputReference) validateSetAutoBackupEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesDbBackupConfigOutputReference) validateSetAutoBackupEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -181,7 +181,7 @@ func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesDbBac
 	return nil
 }
 
-func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesDbBackupConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesDbBackupConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -289,4 +289,3 @@ func validateNewOracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesDbBackup
 
 	return nil
 }
-

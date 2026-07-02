@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeRouterRoutePolicyTimeoutsOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRouterRoutePolicyTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRouterRoutePolicyTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_ComputeRouterRoutePolicyTimeoutsOutputReference) validateSetD
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRouterRoutePolicyTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRouterRoutePolicyTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewComputeRouterRoutePolicyTimeoutsOutputReferenceParameters(terraf
 
 	return nil
 }
-

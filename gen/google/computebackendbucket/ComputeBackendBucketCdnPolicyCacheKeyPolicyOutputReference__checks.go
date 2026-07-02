@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeBackendBucketCdnPolicyCacheKeyPolicyOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_ComputeBackendBucketCdnPolicyCacheKeyPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeBackendBucketCdnPolicyCacheKeyPolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewComputeBackendBucketCdnPolicyCacheKeyPolicyOutputReferenceParame
 
 	return nil
 }
-

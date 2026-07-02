@@ -12,9 +12,9 @@ type KmsKeyRingImportJobAttestationOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -42,7 +42,7 @@ type KmsKeyRingImportJobAttestationOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -65,7 +65,7 @@ type KmsKeyRingImportJobAttestationOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -78,8 +78,8 @@ type jsiiProxy_KmsKeyRingImportJobAttestationOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_KmsKeyRingImportJobAttestationOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KmsKeyRingImportJobAttestationOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -168,7 +168,6 @@ func (j *jsiiProxy_KmsKeyRingImportJobAttestationOutputReference) TerraformResou
 	return returns
 }
 
-
 func NewKmsKeyRingImportJobAttestationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) KmsKeyRingImportJobAttestationOutputReference {
 	_init_.Initialize()
 
@@ -179,7 +178,7 @@ func NewKmsKeyRingImportJobAttestationOutputReference(terraformResource cdktf.II
 
 	_jsii_.Create(
 		"@cdktf/provider-google.kmsKeyRingImportJob.KmsKeyRingImportJobAttestationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -191,12 +190,12 @@ func NewKmsKeyRingImportJobAttestationOutputReference_Override(k KmsKeyRingImpor
 
 	_jsii_.Create(
 		"@cdktf/provider-google.kmsKeyRingImportJob.KmsKeyRingImportJobAttestationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		k,
 	)
 }
 
-func (j *jsiiProxy_KmsKeyRingImportJobAttestationOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_KmsKeyRingImportJobAttestationOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -207,7 +206,7 @@ func (j *jsiiProxy_KmsKeyRingImportJobAttestationOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_KmsKeyRingImportJobAttestationOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_KmsKeyRingImportJobAttestationOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -218,7 +217,7 @@ func (j *jsiiProxy_KmsKeyRingImportJobAttestationOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_KmsKeyRingImportJobAttestationOutputReference)SetInternalValue(val *KmsKeyRingImportJobAttestation) {
+func (j *jsiiProxy_KmsKeyRingImportJobAttestationOutputReference) SetInternalValue(val *KmsKeyRingImportJobAttestation) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -229,7 +228,7 @@ func (j *jsiiProxy_KmsKeyRingImportJobAttestationOutputReference)SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_KmsKeyRingImportJobAttestationOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_KmsKeyRingImportJobAttestationOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -240,7 +239,7 @@ func (j *jsiiProxy_KmsKeyRingImportJobAttestationOutputReference)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_KmsKeyRingImportJobAttestationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_KmsKeyRingImportJobAttestationOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -264,16 +263,16 @@ func (k *jsiiProxy_KmsKeyRingImportJobAttestationOutputReference) ComputeFqn() *
 	return returns
 }
 
-func (k *jsiiProxy_KmsKeyRingImportJobAttestationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (k *jsiiProxy_KmsKeyRingImportJobAttestationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := k.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		k,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -289,7 +288,7 @@ func (k *jsiiProxy_KmsKeyRingImportJobAttestationOutputReference) GetBooleanAttr
 	_jsii_.Invoke(
 		k,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -305,7 +304,7 @@ func (k *jsiiProxy_KmsKeyRingImportJobAttestationOutputReference) GetBooleanMapA
 	_jsii_.Invoke(
 		k,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -321,7 +320,7 @@ func (k *jsiiProxy_KmsKeyRingImportJobAttestationOutputReference) GetListAttribu
 	_jsii_.Invoke(
 		k,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -337,7 +336,7 @@ func (k *jsiiProxy_KmsKeyRingImportJobAttestationOutputReference) GetNumberAttri
 	_jsii_.Invoke(
 		k,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -353,7 +352,7 @@ func (k *jsiiProxy_KmsKeyRingImportJobAttestationOutputReference) GetNumberListA
 	_jsii_.Invoke(
 		k,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (k *jsiiProxy_KmsKeyRingImportJobAttestationOutputReference) GetNumberMapAt
 	_jsii_.Invoke(
 		k,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (k *jsiiProxy_KmsKeyRingImportJobAttestationOutputReference) GetStringAttri
 	_jsii_.Invoke(
 		k,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (k *jsiiProxy_KmsKeyRingImportJobAttestationOutputReference) GetStringMapAt
 	_jsii_.Invoke(
 		k,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -430,23 +429,23 @@ func (k *jsiiProxy_KmsKeyRingImportJobAttestationOutputReference) InterpolationF
 	_jsii_.Invoke(
 		k,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (k *jsiiProxy_KmsKeyRingImportJobAttestationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (k *jsiiProxy_KmsKeyRingImportJobAttestationOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := k.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		k,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -465,4 +464,3 @@ func (k *jsiiProxy_KmsKeyRingImportJobAttestationOutputReference) ToString() *st
 
 	return returns
 }
-

@@ -15,15 +15,15 @@ type NetworkSecurityMirroringDeployment interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -74,30 +74,30 @@ type NetworkSecurityMirroringDeployment interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Reconciling() cdktf.IResolvable
 	State() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() NetworkSecurityMirroringDeploymentTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -115,7 +115,7 @@ type NetworkSecurityMirroringDeployment interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -127,7 +127,7 @@ type NetworkSecurityMirroringDeployment interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -143,17 +143,17 @@ type NetworkSecurityMirroringDeployment interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for NetworkSecurityMirroringDeployment
@@ -171,8 +171,8 @@ func (j *jsiiProxy_NetworkSecurityMirroringDeployment) CdktfStack() cdktf.Terraf
 	return returns
 }
 
-func (j *jsiiProxy_NetworkSecurityMirroringDeployment) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkSecurityMirroringDeployment) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -181,8 +181,8 @@ func (j *jsiiProxy_NetworkSecurityMirroringDeployment) Connection() interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_NetworkSecurityMirroringDeployment) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_NetworkSecurityMirroringDeployment) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -191,8 +191,8 @@ func (j *jsiiProxy_NetworkSecurityMirroringDeployment) ConstructNodeMetadata() *
 	return returns
 }
 
-func (j *jsiiProxy_NetworkSecurityMirroringDeployment) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkSecurityMirroringDeployment) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -461,8 +461,8 @@ func (j *jsiiProxy_NetworkSecurityMirroringDeployment) Provider() cdktf.Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_NetworkSecurityMirroringDeployment) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_NetworkSecurityMirroringDeployment) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -471,8 +471,8 @@ func (j *jsiiProxy_NetworkSecurityMirroringDeployment) Provisioners() *[]interfa
 	return returns
 }
 
-func (j *jsiiProxy_NetworkSecurityMirroringDeployment) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkSecurityMirroringDeployment) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -521,8 +521,8 @@ func (j *jsiiProxy_NetworkSecurityMirroringDeployment) TerraformLabels() cdktf.S
 	return returns
 }
 
-func (j *jsiiProxy_NetworkSecurityMirroringDeployment) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_NetworkSecurityMirroringDeployment) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -551,8 +551,8 @@ func (j *jsiiProxy_NetworkSecurityMirroringDeployment) Timeouts() NetworkSecurit
 	return returns
 }
 
-func (j *jsiiProxy_NetworkSecurityMirroringDeployment) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkSecurityMirroringDeployment) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -571,7 +571,6 @@ func (j *jsiiProxy_NetworkSecurityMirroringDeployment) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_mirroring_deployment google_network_security_mirroring_deployment} Resource.
 func NewNetworkSecurityMirroringDeployment(scope constructs.Construct, id *string, config *NetworkSecurityMirroringDeploymentConfig) NetworkSecurityMirroringDeployment {
 	_init_.Initialize()
@@ -583,7 +582,7 @@ func NewNetworkSecurityMirroringDeployment(scope constructs.Construct, id *strin
 
 	_jsii_.Create(
 		"@cdktf/provider-google.networkSecurityMirroringDeployment.NetworkSecurityMirroringDeployment",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -596,12 +595,12 @@ func NewNetworkSecurityMirroringDeployment_Override(n NetworkSecurityMirroringDe
 
 	_jsii_.Create(
 		"@cdktf/provider-google.networkSecurityMirroringDeployment.NetworkSecurityMirroringDeployment",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NetworkSecurityMirroringDeployment)SetConnection(val interface{}) {
+func (j *jsiiProxy_NetworkSecurityMirroringDeployment) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -612,7 +611,7 @@ func (j *jsiiProxy_NetworkSecurityMirroringDeployment)SetConnection(val interfac
 	)
 }
 
-func (j *jsiiProxy_NetworkSecurityMirroringDeployment)SetCount(val interface{}) {
+func (j *jsiiProxy_NetworkSecurityMirroringDeployment) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -623,7 +622,7 @@ func (j *jsiiProxy_NetworkSecurityMirroringDeployment)SetCount(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_NetworkSecurityMirroringDeployment)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_NetworkSecurityMirroringDeployment) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -631,7 +630,7 @@ func (j *jsiiProxy_NetworkSecurityMirroringDeployment)SetDependsOn(val *[]*strin
 	)
 }
 
-func (j *jsiiProxy_NetworkSecurityMirroringDeployment)SetDescription(val *string) {
+func (j *jsiiProxy_NetworkSecurityMirroringDeployment) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -642,7 +641,7 @@ func (j *jsiiProxy_NetworkSecurityMirroringDeployment)SetDescription(val *string
 	)
 }
 
-func (j *jsiiProxy_NetworkSecurityMirroringDeployment)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_NetworkSecurityMirroringDeployment) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -650,7 +649,7 @@ func (j *jsiiProxy_NetworkSecurityMirroringDeployment)SetForEach(val cdktf.ITerr
 	)
 }
 
-func (j *jsiiProxy_NetworkSecurityMirroringDeployment)SetForwardingRule(val *string) {
+func (j *jsiiProxy_NetworkSecurityMirroringDeployment) SetForwardingRule(val *string) {
 	if err := j.validateSetForwardingRuleParameters(val); err != nil {
 		panic(err)
 	}
@@ -661,7 +660,7 @@ func (j *jsiiProxy_NetworkSecurityMirroringDeployment)SetForwardingRule(val *str
 	)
 }
 
-func (j *jsiiProxy_NetworkSecurityMirroringDeployment)SetId(val *string) {
+func (j *jsiiProxy_NetworkSecurityMirroringDeployment) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -672,7 +671,7 @@ func (j *jsiiProxy_NetworkSecurityMirroringDeployment)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkSecurityMirroringDeployment)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_NetworkSecurityMirroringDeployment) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -683,7 +682,7 @@ func (j *jsiiProxy_NetworkSecurityMirroringDeployment)SetLabels(val *map[string]
 	)
 }
 
-func (j *jsiiProxy_NetworkSecurityMirroringDeployment)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_NetworkSecurityMirroringDeployment) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -694,7 +693,7 @@ func (j *jsiiProxy_NetworkSecurityMirroringDeployment)SetLifecycle(val *cdktf.Te
 	)
 }
 
-func (j *jsiiProxy_NetworkSecurityMirroringDeployment)SetLocation(val *string) {
+func (j *jsiiProxy_NetworkSecurityMirroringDeployment) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -705,7 +704,7 @@ func (j *jsiiProxy_NetworkSecurityMirroringDeployment)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkSecurityMirroringDeployment)SetMirroringDeploymentGroup(val *string) {
+func (j *jsiiProxy_NetworkSecurityMirroringDeployment) SetMirroringDeploymentGroup(val *string) {
 	if err := j.validateSetMirroringDeploymentGroupParameters(val); err != nil {
 		panic(err)
 	}
@@ -716,7 +715,7 @@ func (j *jsiiProxy_NetworkSecurityMirroringDeployment)SetMirroringDeploymentGrou
 	)
 }
 
-func (j *jsiiProxy_NetworkSecurityMirroringDeployment)SetMirroringDeploymentId(val *string) {
+func (j *jsiiProxy_NetworkSecurityMirroringDeployment) SetMirroringDeploymentId(val *string) {
 	if err := j.validateSetMirroringDeploymentIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -727,7 +726,7 @@ func (j *jsiiProxy_NetworkSecurityMirroringDeployment)SetMirroringDeploymentId(v
 	)
 }
 
-func (j *jsiiProxy_NetworkSecurityMirroringDeployment)SetProject(val *string) {
+func (j *jsiiProxy_NetworkSecurityMirroringDeployment) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -738,7 +737,7 @@ func (j *jsiiProxy_NetworkSecurityMirroringDeployment)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkSecurityMirroringDeployment)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_NetworkSecurityMirroringDeployment) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -746,7 +745,7 @@ func (j *jsiiProxy_NetworkSecurityMirroringDeployment)SetProvider(val cdktf.Terr
 	)
 }
 
-func (j *jsiiProxy_NetworkSecurityMirroringDeployment)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_NetworkSecurityMirroringDeployment) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -769,7 +768,7 @@ func NetworkSecurityMirroringDeployment_GenerateConfigForImport(scope constructs
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.networkSecurityMirroringDeployment.NetworkSecurityMirroringDeployment",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -793,7 +792,7 @@ func NetworkSecurityMirroringDeployment_GenerateConfigForImport(scope constructs
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func NetworkSecurityMirroringDeployment_IsConstruct(x interface{}) *bool {
+func NetworkSecurityMirroringDeployment_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetworkSecurityMirroringDeployment_IsConstructParameters(x); err != nil {
@@ -804,7 +803,7 @@ func NetworkSecurityMirroringDeployment_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.networkSecurityMirroringDeployment.NetworkSecurityMirroringDeployment",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -812,7 +811,7 @@ func NetworkSecurityMirroringDeployment_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func NetworkSecurityMirroringDeployment_IsTerraformElement(x interface{}) *bool {
+func NetworkSecurityMirroringDeployment_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetworkSecurityMirroringDeployment_IsTerraformElementParameters(x); err != nil {
@@ -823,7 +822,7 @@ func NetworkSecurityMirroringDeployment_IsTerraformElement(x interface{}) *bool 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.networkSecurityMirroringDeployment.NetworkSecurityMirroringDeployment",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -831,7 +830,7 @@ func NetworkSecurityMirroringDeployment_IsTerraformElement(x interface{}) *bool 
 }
 
 // Experimental.
-func NetworkSecurityMirroringDeployment_IsTerraformResource(x interface{}) *bool {
+func NetworkSecurityMirroringDeployment_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetworkSecurityMirroringDeployment_IsTerraformResourceParameters(x); err != nil {
@@ -842,7 +841,7 @@ func NetworkSecurityMirroringDeployment_IsTerraformResource(x interface{}) *bool
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.networkSecurityMirroringDeployment.NetworkSecurityMirroringDeployment",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -867,31 +866,31 @@ func (n *jsiiProxy_NetworkSecurityMirroringDeployment) AddMoveTarget(moveTarget 
 	_jsii_.InvokeVoid(
 		n,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (n *jsiiProxy_NetworkSecurityMirroringDeployment) AddOverride(path *string, value interface{}) {
+func (n *jsiiProxy_NetworkSecurityMirroringDeployment) AddOverride(path *string, value any) {
 	if err := n.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (n *jsiiProxy_NetworkSecurityMirroringDeployment) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (n *jsiiProxy_NetworkSecurityMirroringDeployment) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -907,7 +906,7 @@ func (n *jsiiProxy_NetworkSecurityMirroringDeployment) GetBooleanAttribute(terra
 	_jsii_.Invoke(
 		n,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -923,7 +922,7 @@ func (n *jsiiProxy_NetworkSecurityMirroringDeployment) GetBooleanMapAttribute(te
 	_jsii_.Invoke(
 		n,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -939,7 +938,7 @@ func (n *jsiiProxy_NetworkSecurityMirroringDeployment) GetListAttribute(terrafor
 	_jsii_.Invoke(
 		n,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -955,7 +954,7 @@ func (n *jsiiProxy_NetworkSecurityMirroringDeployment) GetNumberAttribute(terraf
 	_jsii_.Invoke(
 		n,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -971,7 +970,7 @@ func (n *jsiiProxy_NetworkSecurityMirroringDeployment) GetNumberListAttribute(te
 	_jsii_.Invoke(
 		n,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -987,7 +986,7 @@ func (n *jsiiProxy_NetworkSecurityMirroringDeployment) GetNumberMapAttribute(ter
 	_jsii_.Invoke(
 		n,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1003,7 +1002,7 @@ func (n *jsiiProxy_NetworkSecurityMirroringDeployment) GetStringAttribute(terraf
 	_jsii_.Invoke(
 		n,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1019,15 +1018,15 @@ func (n *jsiiProxy_NetworkSecurityMirroringDeployment) GetStringMapAttribute(ter
 	_jsii_.Invoke(
 		n,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (n *jsiiProxy_NetworkSecurityMirroringDeployment) HasResourceMove() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkSecurityMirroringDeployment) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1046,7 +1045,7 @@ func (n *jsiiProxy_NetworkSecurityMirroringDeployment) ImportFrom(id *string, pr
 	_jsii_.InvokeVoid(
 		n,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1059,7 +1058,7 @@ func (n *jsiiProxy_NetworkSecurityMirroringDeployment) InterpolationForAttribute
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1073,18 +1072,18 @@ func (n *jsiiProxy_NetworkSecurityMirroringDeployment) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (n *jsiiProxy_NetworkSecurityMirroringDeployment) MoveTo(moveTarget *string, index interface{}) {
+func (n *jsiiProxy_NetworkSecurityMirroringDeployment) MoveTo(moveTarget *string, index any) {
 	if err := n.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1095,7 +1094,7 @@ func (n *jsiiProxy_NetworkSecurityMirroringDeployment) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1106,7 +1105,7 @@ func (n *jsiiProxy_NetworkSecurityMirroringDeployment) OverrideLogicalId(newLogi
 	_jsii_.InvokeVoid(
 		n,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1117,7 +1116,7 @@ func (n *jsiiProxy_NetworkSecurityMirroringDeployment) PutTimeouts(value *Networ
 	_jsii_.InvokeVoid(
 		n,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1169,8 +1168,8 @@ func (n *jsiiProxy_NetworkSecurityMirroringDeployment) ResetTimeouts() {
 	)
 }
 
-func (n *jsiiProxy_NetworkSecurityMirroringDeployment) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (n *jsiiProxy_NetworkSecurityMirroringDeployment) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
@@ -1182,8 +1181,8 @@ func (n *jsiiProxy_NetworkSecurityMirroringDeployment) SynthesizeAttributes() *m
 	return returns
 }
 
-func (n *jsiiProxy_NetworkSecurityMirroringDeployment) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (n *jsiiProxy_NetworkSecurityMirroringDeployment) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
@@ -1195,8 +1194,8 @@ func (n *jsiiProxy_NetworkSecurityMirroringDeployment) SynthesizeHclAttributes()
 	return returns
 }
 
-func (n *jsiiProxy_NetworkSecurityMirroringDeployment) ToHclTerraform() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkSecurityMirroringDeployment) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1208,8 +1207,8 @@ func (n *jsiiProxy_NetworkSecurityMirroringDeployment) ToHclTerraform() interfac
 	return returns
 }
 
-func (n *jsiiProxy_NetworkSecurityMirroringDeployment) ToMetadata() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkSecurityMirroringDeployment) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1234,8 +1233,8 @@ func (n *jsiiProxy_NetworkSecurityMirroringDeployment) ToString() *string {
 	return returns
 }
 
-func (n *jsiiProxy_NetworkSecurityMirroringDeployment) ToTerraform() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkSecurityMirroringDeployment) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1246,4 +1245,3 @@ func (n *jsiiProxy_NetworkSecurityMirroringDeployment) ToTerraform() interface{}
 
 	return returns
 }
-

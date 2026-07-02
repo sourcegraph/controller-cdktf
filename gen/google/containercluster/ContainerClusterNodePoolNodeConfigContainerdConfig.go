@@ -1,6 +1,5 @@
 package containercluster
 
-
 type ContainerClusterNodePoolNodeConfigContainerdConfig struct {
 	// private_registry_access_config block.
 	//
@@ -9,10 +8,9 @@ type ContainerClusterNodePoolNodeConfigContainerdConfig struct {
 	// registry_hosts block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#registry_hosts ContainerCluster#registry_hosts}
-	RegistryHosts interface{} `field:"optional" json:"registryHosts" yaml:"registryHosts"`
+	RegistryHosts any `field:"optional" json:"registryHosts" yaml:"registryHosts"`
 	// writable_cgroups block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#writable_cgroups ContainerCluster#writable_cgroups}
 	WritableCgroups *ContainerClusterNodePoolNodeConfigContainerdConfigWritableCgroups `field:"optional" json:"writableCgroups" yaml:"writableCgroups"`
 }
-

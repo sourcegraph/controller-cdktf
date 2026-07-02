@@ -19,7 +19,7 @@ func (d *jsiiProxy_DocumentAiWarehouseDocumentSchema) validateAddMoveTargetParam
 	return nil
 }
 
-func (d *jsiiProxy_DocumentAiWarehouseDocumentSchema) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DocumentAiWarehouseDocumentSchema) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (d *jsiiProxy_DocumentAiWarehouseDocumentSchema) validateMoveFromIdParamete
 	return nil
 }
 
-func (d *jsiiProxy_DocumentAiWarehouseDocumentSchema) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (d *jsiiProxy_DocumentAiWarehouseDocumentSchema) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (d *jsiiProxy_DocumentAiWarehouseDocumentSchema) validateOverrideLogicalIdP
 	return nil
 }
 
-func (d *jsiiProxy_DocumentAiWarehouseDocumentSchema) validatePutPropertyDefinitionsParameters(value interface{}) error {
+func (d *jsiiProxy_DocumentAiWarehouseDocumentSchema) validatePutPropertyDefinitionsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -262,7 +262,7 @@ func validateDocumentAiWarehouseDocumentSchema_GenerateConfigForImportParameters
 	return nil
 }
 
-func validateDocumentAiWarehouseDocumentSchema_IsConstructParameters(x interface{}) error {
+func validateDocumentAiWarehouseDocumentSchema_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -270,7 +270,7 @@ func validateDocumentAiWarehouseDocumentSchema_IsConstructParameters(x interface
 	return nil
 }
 
-func validateDocumentAiWarehouseDocumentSchema_IsTerraformElementParameters(x interface{}) error {
+func validateDocumentAiWarehouseDocumentSchema_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -278,7 +278,7 @@ func validateDocumentAiWarehouseDocumentSchema_IsTerraformElementParameters(x in
 	return nil
 }
 
-func validateDocumentAiWarehouseDocumentSchema_IsTerraformResourceParameters(x interface{}) error {
+func validateDocumentAiWarehouseDocumentSchema_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -286,7 +286,7 @@ func validateDocumentAiWarehouseDocumentSchema_IsTerraformResourceParameters(x i
 	return nil
 }
 
-func (j *jsiiProxy_DocumentAiWarehouseDocumentSchema) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_DocumentAiWarehouseDocumentSchema) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -319,7 +319,7 @@ func (j *jsiiProxy_DocumentAiWarehouseDocumentSchema) validateSetConnectionParam
 	return nil
 }
 
-func (j *jsiiProxy_DocumentAiWarehouseDocumentSchema) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DocumentAiWarehouseDocumentSchema) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -384,7 +384,7 @@ func (j *jsiiProxy_DocumentAiWarehouseDocumentSchema) validateSetDisplayNamePara
 	return nil
 }
 
-func (j *jsiiProxy_DocumentAiWarehouseDocumentSchema) validateSetDocumentIsFolderParameters(val interface{}) error {
+func (j *jsiiProxy_DocumentAiWarehouseDocumentSchema) validateSetDocumentIsFolderParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -436,7 +436,7 @@ func (j *jsiiProxy_DocumentAiWarehouseDocumentSchema) validateSetProjectNumberPa
 	return nil
 }
 
-func (j *jsiiProxy_DocumentAiWarehouseDocumentSchema) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_DocumentAiWarehouseDocumentSchema) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -500,4 +500,3 @@ func validateNewDocumentAiWarehouseDocumentSchemaParameters(scope constructs.Con
 
 	return nil
 }
-

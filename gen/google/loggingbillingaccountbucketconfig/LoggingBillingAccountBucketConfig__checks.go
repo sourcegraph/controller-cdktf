@@ -19,7 +19,7 @@ func (l *jsiiProxy_LoggingBillingAccountBucketConfig) validateAddMoveTargetParam
 	return nil
 }
 
-func (l *jsiiProxy_LoggingBillingAccountBucketConfig) validateAddOverrideParameters(path *string, value interface{}) error {
+func (l *jsiiProxy_LoggingBillingAccountBucketConfig) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (l *jsiiProxy_LoggingBillingAccountBucketConfig) validateMoveFromIdParamete
 	return nil
 }
 
-func (l *jsiiProxy_LoggingBillingAccountBucketConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (l *jsiiProxy_LoggingBillingAccountBucketConfig) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -215,7 +215,7 @@ func (l *jsiiProxy_LoggingBillingAccountBucketConfig) validatePutCmekSettingsPar
 	return nil
 }
 
-func (l *jsiiProxy_LoggingBillingAccountBucketConfig) validatePutIndexConfigsParameters(value interface{}) error {
+func (l *jsiiProxy_LoggingBillingAccountBucketConfig) validatePutIndexConfigsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -262,7 +262,7 @@ func validateLoggingBillingAccountBucketConfig_GenerateConfigForImportParameters
 	return nil
 }
 
-func validateLoggingBillingAccountBucketConfig_IsConstructParameters(x interface{}) error {
+func validateLoggingBillingAccountBucketConfig_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -270,7 +270,7 @@ func validateLoggingBillingAccountBucketConfig_IsConstructParameters(x interface
 	return nil
 }
 
-func validateLoggingBillingAccountBucketConfig_IsTerraformElementParameters(x interface{}) error {
+func validateLoggingBillingAccountBucketConfig_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -278,7 +278,7 @@ func validateLoggingBillingAccountBucketConfig_IsTerraformElementParameters(x in
 	return nil
 }
 
-func validateLoggingBillingAccountBucketConfig_IsTerraformResourceParameters(x interface{}) error {
+func validateLoggingBillingAccountBucketConfig_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -302,7 +302,7 @@ func (j *jsiiProxy_LoggingBillingAccountBucketConfig) validateSetBucketIdParamet
 	return nil
 }
 
-func (j *jsiiProxy_LoggingBillingAccountBucketConfig) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_LoggingBillingAccountBucketConfig) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -335,7 +335,7 @@ func (j *jsiiProxy_LoggingBillingAccountBucketConfig) validateSetConnectionParam
 	return nil
 }
 
-func (j *jsiiProxy_LoggingBillingAccountBucketConfig) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_LoggingBillingAccountBucketConfig) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -424,7 +424,7 @@ func (j *jsiiProxy_LoggingBillingAccountBucketConfig) validateSetLocationParamet
 	return nil
 }
 
-func (j *jsiiProxy_LoggingBillingAccountBucketConfig) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_LoggingBillingAccountBucketConfig) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -496,4 +496,3 @@ func validateNewLoggingBillingAccountBucketConfigParameters(scope constructs.Con
 
 	return nil
 }
-

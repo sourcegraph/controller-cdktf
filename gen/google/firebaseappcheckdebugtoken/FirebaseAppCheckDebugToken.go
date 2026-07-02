@@ -18,15 +18,15 @@ type FirebaseAppCheckDebugToken interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DebugTokenId() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -60,19 +60,19 @@ type FirebaseAppCheckDebugToken interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() FirebaseAppCheckDebugTokenTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Token() *string
 	SetToken(val *string)
 	TokenInput() *string
@@ -80,9 +80,9 @@ type FirebaseAppCheckDebugToken interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -100,7 +100,7 @@ type FirebaseAppCheckDebugToken interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -112,7 +112,7 @@ type FirebaseAppCheckDebugToken interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -126,17 +126,17 @@ type FirebaseAppCheckDebugToken interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for FirebaseAppCheckDebugToken
@@ -174,8 +174,8 @@ func (j *jsiiProxy_FirebaseAppCheckDebugToken) CdktfStack() cdktf.TerraformStack
 	return returns
 }
 
-func (j *jsiiProxy_FirebaseAppCheckDebugToken) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FirebaseAppCheckDebugToken) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -184,8 +184,8 @@ func (j *jsiiProxy_FirebaseAppCheckDebugToken) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_FirebaseAppCheckDebugToken) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_FirebaseAppCheckDebugToken) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -194,8 +194,8 @@ func (j *jsiiProxy_FirebaseAppCheckDebugToken) ConstructNodeMetadata() *map[stri
 	return returns
 }
 
-func (j *jsiiProxy_FirebaseAppCheckDebugToken) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FirebaseAppCheckDebugToken) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -344,8 +344,8 @@ func (j *jsiiProxy_FirebaseAppCheckDebugToken) Provider() cdktf.TerraformProvide
 	return returns
 }
 
-func (j *jsiiProxy_FirebaseAppCheckDebugToken) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_FirebaseAppCheckDebugToken) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -354,8 +354,8 @@ func (j *jsiiProxy_FirebaseAppCheckDebugToken) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_FirebaseAppCheckDebugToken) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FirebaseAppCheckDebugToken) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -374,8 +374,8 @@ func (j *jsiiProxy_FirebaseAppCheckDebugToken) TerraformGeneratorMetadata() *cdk
 	return returns
 }
 
-func (j *jsiiProxy_FirebaseAppCheckDebugToken) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_FirebaseAppCheckDebugToken) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -404,8 +404,8 @@ func (j *jsiiProxy_FirebaseAppCheckDebugToken) Timeouts() FirebaseAppCheckDebugT
 	return returns
 }
 
-func (j *jsiiProxy_FirebaseAppCheckDebugToken) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FirebaseAppCheckDebugToken) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -434,7 +434,6 @@ func (j *jsiiProxy_FirebaseAppCheckDebugToken) TokenInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebase_app_check_debug_token google_firebase_app_check_debug_token} Resource.
 func NewFirebaseAppCheckDebugToken(scope constructs.Construct, id *string, config *FirebaseAppCheckDebugTokenConfig) FirebaseAppCheckDebugToken {
 	_init_.Initialize()
@@ -446,7 +445,7 @@ func NewFirebaseAppCheckDebugToken(scope constructs.Construct, id *string, confi
 
 	_jsii_.Create(
 		"@cdktf/provider-google.firebaseAppCheckDebugToken.FirebaseAppCheckDebugToken",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -459,12 +458,12 @@ func NewFirebaseAppCheckDebugToken_Override(f FirebaseAppCheckDebugToken, scope 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.firebaseAppCheckDebugToken.FirebaseAppCheckDebugToken",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		f,
 	)
 }
 
-func (j *jsiiProxy_FirebaseAppCheckDebugToken)SetAppId(val *string) {
+func (j *jsiiProxy_FirebaseAppCheckDebugToken) SetAppId(val *string) {
 	if err := j.validateSetAppIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -475,7 +474,7 @@ func (j *jsiiProxy_FirebaseAppCheckDebugToken)SetAppId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FirebaseAppCheckDebugToken)SetConnection(val interface{}) {
+func (j *jsiiProxy_FirebaseAppCheckDebugToken) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -486,7 +485,7 @@ func (j *jsiiProxy_FirebaseAppCheckDebugToken)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_FirebaseAppCheckDebugToken)SetCount(val interface{}) {
+func (j *jsiiProxy_FirebaseAppCheckDebugToken) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -497,7 +496,7 @@ func (j *jsiiProxy_FirebaseAppCheckDebugToken)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_FirebaseAppCheckDebugToken)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_FirebaseAppCheckDebugToken) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -505,7 +504,7 @@ func (j *jsiiProxy_FirebaseAppCheckDebugToken)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_FirebaseAppCheckDebugToken)SetDisplayName(val *string) {
+func (j *jsiiProxy_FirebaseAppCheckDebugToken) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -516,7 +515,7 @@ func (j *jsiiProxy_FirebaseAppCheckDebugToken)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FirebaseAppCheckDebugToken)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_FirebaseAppCheckDebugToken) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -524,7 +523,7 @@ func (j *jsiiProxy_FirebaseAppCheckDebugToken)SetForEach(val cdktf.ITerraformIte
 	)
 }
 
-func (j *jsiiProxy_FirebaseAppCheckDebugToken)SetId(val *string) {
+func (j *jsiiProxy_FirebaseAppCheckDebugToken) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -535,7 +534,7 @@ func (j *jsiiProxy_FirebaseAppCheckDebugToken)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FirebaseAppCheckDebugToken)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_FirebaseAppCheckDebugToken) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -546,7 +545,7 @@ func (j *jsiiProxy_FirebaseAppCheckDebugToken)SetLifecycle(val *cdktf.TerraformR
 	)
 }
 
-func (j *jsiiProxy_FirebaseAppCheckDebugToken)SetProject(val *string) {
+func (j *jsiiProxy_FirebaseAppCheckDebugToken) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -557,7 +556,7 @@ func (j *jsiiProxy_FirebaseAppCheckDebugToken)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FirebaseAppCheckDebugToken)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_FirebaseAppCheckDebugToken) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -565,7 +564,7 @@ func (j *jsiiProxy_FirebaseAppCheckDebugToken)SetProvider(val cdktf.TerraformPro
 	)
 }
 
-func (j *jsiiProxy_FirebaseAppCheckDebugToken)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_FirebaseAppCheckDebugToken) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -576,7 +575,7 @@ func (j *jsiiProxy_FirebaseAppCheckDebugToken)SetProvisioners(val *[]interface{}
 	)
 }
 
-func (j *jsiiProxy_FirebaseAppCheckDebugToken)SetToken(val *string) {
+func (j *jsiiProxy_FirebaseAppCheckDebugToken) SetToken(val *string) {
 	if err := j.validateSetTokenParameters(val); err != nil {
 		panic(err)
 	}
@@ -599,7 +598,7 @@ func FirebaseAppCheckDebugToken_GenerateConfigForImport(scope constructs.Constru
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.firebaseAppCheckDebugToken.FirebaseAppCheckDebugToken",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -623,7 +622,7 @@ func FirebaseAppCheckDebugToken_GenerateConfigForImport(scope constructs.Constru
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func FirebaseAppCheckDebugToken_IsConstruct(x interface{}) *bool {
+func FirebaseAppCheckDebugToken_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateFirebaseAppCheckDebugToken_IsConstructParameters(x); err != nil {
@@ -634,7 +633,7 @@ func FirebaseAppCheckDebugToken_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.firebaseAppCheckDebugToken.FirebaseAppCheckDebugToken",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -642,7 +641,7 @@ func FirebaseAppCheckDebugToken_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func FirebaseAppCheckDebugToken_IsTerraformElement(x interface{}) *bool {
+func FirebaseAppCheckDebugToken_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateFirebaseAppCheckDebugToken_IsTerraformElementParameters(x); err != nil {
@@ -653,7 +652,7 @@ func FirebaseAppCheckDebugToken_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.firebaseAppCheckDebugToken.FirebaseAppCheckDebugToken",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -661,7 +660,7 @@ func FirebaseAppCheckDebugToken_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func FirebaseAppCheckDebugToken_IsTerraformResource(x interface{}) *bool {
+func FirebaseAppCheckDebugToken_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateFirebaseAppCheckDebugToken_IsTerraformResourceParameters(x); err != nil {
@@ -672,7 +671,7 @@ func FirebaseAppCheckDebugToken_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.firebaseAppCheckDebugToken.FirebaseAppCheckDebugToken",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -697,31 +696,31 @@ func (f *jsiiProxy_FirebaseAppCheckDebugToken) AddMoveTarget(moveTarget *string)
 	_jsii_.InvokeVoid(
 		f,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (f *jsiiProxy_FirebaseAppCheckDebugToken) AddOverride(path *string, value interface{}) {
+func (f *jsiiProxy_FirebaseAppCheckDebugToken) AddOverride(path *string, value any) {
 	if err := f.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		f,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (f *jsiiProxy_FirebaseAppCheckDebugToken) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (f *jsiiProxy_FirebaseAppCheckDebugToken) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := f.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -737,7 +736,7 @@ func (f *jsiiProxy_FirebaseAppCheckDebugToken) GetBooleanAttribute(terraformAttr
 	_jsii_.Invoke(
 		f,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -753,7 +752,7 @@ func (f *jsiiProxy_FirebaseAppCheckDebugToken) GetBooleanMapAttribute(terraformA
 	_jsii_.Invoke(
 		f,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -769,7 +768,7 @@ func (f *jsiiProxy_FirebaseAppCheckDebugToken) GetListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		f,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -785,7 +784,7 @@ func (f *jsiiProxy_FirebaseAppCheckDebugToken) GetNumberAttribute(terraformAttri
 	_jsii_.Invoke(
 		f,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -801,7 +800,7 @@ func (f *jsiiProxy_FirebaseAppCheckDebugToken) GetNumberListAttribute(terraformA
 	_jsii_.Invoke(
 		f,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -817,7 +816,7 @@ func (f *jsiiProxy_FirebaseAppCheckDebugToken) GetNumberMapAttribute(terraformAt
 	_jsii_.Invoke(
 		f,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -833,7 +832,7 @@ func (f *jsiiProxy_FirebaseAppCheckDebugToken) GetStringAttribute(terraformAttri
 	_jsii_.Invoke(
 		f,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -849,15 +848,15 @@ func (f *jsiiProxy_FirebaseAppCheckDebugToken) GetStringMapAttribute(terraformAt
 	_jsii_.Invoke(
 		f,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (f *jsiiProxy_FirebaseAppCheckDebugToken) HasResourceMove() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FirebaseAppCheckDebugToken) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -876,7 +875,7 @@ func (f *jsiiProxy_FirebaseAppCheckDebugToken) ImportFrom(id *string, provider c
 	_jsii_.InvokeVoid(
 		f,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -889,7 +888,7 @@ func (f *jsiiProxy_FirebaseAppCheckDebugToken) InterpolationForAttribute(terrafo
 	_jsii_.Invoke(
 		f,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -903,18 +902,18 @@ func (f *jsiiProxy_FirebaseAppCheckDebugToken) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		f,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (f *jsiiProxy_FirebaseAppCheckDebugToken) MoveTo(moveTarget *string, index interface{}) {
+func (f *jsiiProxy_FirebaseAppCheckDebugToken) MoveTo(moveTarget *string, index any) {
 	if err := f.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		f,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -925,7 +924,7 @@ func (f *jsiiProxy_FirebaseAppCheckDebugToken) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		f,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -936,7 +935,7 @@ func (f *jsiiProxy_FirebaseAppCheckDebugToken) OverrideLogicalId(newLogicalId *s
 	_jsii_.InvokeVoid(
 		f,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -947,7 +946,7 @@ func (f *jsiiProxy_FirebaseAppCheckDebugToken) PutTimeouts(value *FirebaseAppChe
 	_jsii_.InvokeVoid(
 		f,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -983,8 +982,8 @@ func (f *jsiiProxy_FirebaseAppCheckDebugToken) ResetTimeouts() {
 	)
 }
 
-func (f *jsiiProxy_FirebaseAppCheckDebugToken) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (f *jsiiProxy_FirebaseAppCheckDebugToken) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
@@ -996,8 +995,8 @@ func (f *jsiiProxy_FirebaseAppCheckDebugToken) SynthesizeAttributes() *map[strin
 	return returns
 }
 
-func (f *jsiiProxy_FirebaseAppCheckDebugToken) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (f *jsiiProxy_FirebaseAppCheckDebugToken) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
@@ -1009,8 +1008,8 @@ func (f *jsiiProxy_FirebaseAppCheckDebugToken) SynthesizeHclAttributes() *map[st
 	return returns
 }
 
-func (f *jsiiProxy_FirebaseAppCheckDebugToken) ToHclTerraform() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FirebaseAppCheckDebugToken) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -1022,8 +1021,8 @@ func (f *jsiiProxy_FirebaseAppCheckDebugToken) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (f *jsiiProxy_FirebaseAppCheckDebugToken) ToMetadata() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FirebaseAppCheckDebugToken) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -1048,8 +1047,8 @@ func (f *jsiiProxy_FirebaseAppCheckDebugToken) ToString() *string {
 	return returns
 }
 
-func (f *jsiiProxy_FirebaseAppCheckDebugToken) ToTerraform() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FirebaseAppCheckDebugToken) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -1060,4 +1059,3 @@ func (f *jsiiProxy_FirebaseAppCheckDebugToken) ToTerraform() interface{} {
 
 	return returns
 }
-

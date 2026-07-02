@@ -6,9 +6,9 @@ import (
 
 type CesAgentConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type CesAgentConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_agent#app CesAgent#app}
@@ -34,15 +34,15 @@ type CesAgentConfig struct {
 	// after_agent_callbacks block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_agent#after_agent_callbacks CesAgent#after_agent_callbacks}
-	AfterAgentCallbacks interface{} `field:"optional" json:"afterAgentCallbacks" yaml:"afterAgentCallbacks"`
+	AfterAgentCallbacks any `field:"optional" json:"afterAgentCallbacks" yaml:"afterAgentCallbacks"`
 	// after_model_callbacks block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_agent#after_model_callbacks CesAgent#after_model_callbacks}
-	AfterModelCallbacks interface{} `field:"optional" json:"afterModelCallbacks" yaml:"afterModelCallbacks"`
+	AfterModelCallbacks any `field:"optional" json:"afterModelCallbacks" yaml:"afterModelCallbacks"`
 	// after_tool_callbacks block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_agent#after_tool_callbacks CesAgent#after_tool_callbacks}
-	AfterToolCallbacks interface{} `field:"optional" json:"afterToolCallbacks" yaml:"afterToolCallbacks"`
+	AfterToolCallbacks any `field:"optional" json:"afterToolCallbacks" yaml:"afterToolCallbacks"`
 	// The ID to use for the agent, which will become the final component of the agent's resource name.
 	//
 	// If not provided, a unique ID will be
@@ -53,15 +53,15 @@ type CesAgentConfig struct {
 	// before_agent_callbacks block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_agent#before_agent_callbacks CesAgent#before_agent_callbacks}
-	BeforeAgentCallbacks interface{} `field:"optional" json:"beforeAgentCallbacks" yaml:"beforeAgentCallbacks"`
+	BeforeAgentCallbacks any `field:"optional" json:"beforeAgentCallbacks" yaml:"beforeAgentCallbacks"`
 	// before_model_callbacks block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_agent#before_model_callbacks CesAgent#before_model_callbacks}
-	BeforeModelCallbacks interface{} `field:"optional" json:"beforeModelCallbacks" yaml:"beforeModelCallbacks"`
+	BeforeModelCallbacks any `field:"optional" json:"beforeModelCallbacks" yaml:"beforeModelCallbacks"`
 	// before_tool_callbacks block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_agent#before_tool_callbacks CesAgent#before_tool_callbacks}
-	BeforeToolCallbacks interface{} `field:"optional" json:"beforeToolCallbacks" yaml:"beforeToolCallbacks"`
+	BeforeToolCallbacks any `field:"optional" json:"beforeToolCallbacks" yaml:"beforeToolCallbacks"`
 	// List of child agents in the agent tree. Format: 'projects/{project}/locations/{location}/apps/{app}/agents/{agent}'.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_agent#child_agents CesAgent#child_agents}
@@ -108,6 +108,5 @@ type CesAgentConfig struct {
 	// toolsets block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_agent#toolsets CesAgent#toolsets}
-	Toolsets interface{} `field:"optional" json:"toolsets" yaml:"toolsets"`
+	Toolsets any `field:"optional" json:"toolsets" yaml:"toolsets"`
 }
-

@@ -98,7 +98,7 @@ func (n *jsiiProxy_NetworkConnectivityHubIamMemberConditionOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_NetworkConnectivityHubIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkConnectivityHubIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewNetworkConnectivityHubIamMemberConditionOutputReferenceParameter
 
 	return nil
 }
-

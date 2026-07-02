@@ -34,7 +34,7 @@ func (g *jsiiProxy_GkeonpremBareMetalAdminClusterControlPlaneApiServerArgsList) 
 	return nil
 }
 
-func (j *jsiiProxy_GkeonpremBareMetalAdminClusterControlPlaneApiServerArgsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GkeonpremBareMetalAdminClusterControlPlaneApiServerArgsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGkeonpremBareMetalAdminClusterControlPlaneApiServerArgsListParam
 
 	return nil
 }
-

@@ -21,9 +21,9 @@ type LookerInstanceUserMetadataOutputReference interface {
 	AdditionalViewerUserCountInput() *float64
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -49,7 +49,7 @@ type LookerInstanceUserMetadataOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type LookerInstanceUserMetadataOutputReference interface {
 	ResetAdditionalViewerUserCount()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -148,8 +148,8 @@ func (j *jsiiProxy_LookerInstanceUserMetadataOutputReference) AdditionalViewerUs
 	return returns
 }
 
-func (j *jsiiProxy_LookerInstanceUserMetadataOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LookerInstanceUserMetadataOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_LookerInstanceUserMetadataOutputReference) TerraformResource(
 	return returns
 }
 
-
 func NewLookerInstanceUserMetadataOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) LookerInstanceUserMetadataOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewLookerInstanceUserMetadataOutputReference(terraformResource cdktf.IInter
 
 	_jsii_.Create(
 		"@cdktf/provider-google.lookerInstance.LookerInstanceUserMetadataOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewLookerInstanceUserMetadataOutputReference_Override(l LookerInstanceUserM
 
 	_jsii_.Create(
 		"@cdktf/provider-google.lookerInstance.LookerInstanceUserMetadataOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LookerInstanceUserMetadataOutputReference)SetAdditionalDeveloperUserCount(val *float64) {
+func (j *jsiiProxy_LookerInstanceUserMetadataOutputReference) SetAdditionalDeveloperUserCount(val *float64) {
 	if err := j.validateSetAdditionalDeveloperUserCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_LookerInstanceUserMetadataOutputReference)SetAdditionalDevelo
 	)
 }
 
-func (j *jsiiProxy_LookerInstanceUserMetadataOutputReference)SetAdditionalStandardUserCount(val *float64) {
+func (j *jsiiProxy_LookerInstanceUserMetadataOutputReference) SetAdditionalStandardUserCount(val *float64) {
 	if err := j.validateSetAdditionalStandardUserCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_LookerInstanceUserMetadataOutputReference)SetAdditionalStanda
 	)
 }
 
-func (j *jsiiProxy_LookerInstanceUserMetadataOutputReference)SetAdditionalViewerUserCount(val *float64) {
+func (j *jsiiProxy_LookerInstanceUserMetadataOutputReference) SetAdditionalViewerUserCount(val *float64) {
 	if err := j.validateSetAdditionalViewerUserCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_LookerInstanceUserMetadataOutputReference)SetAdditionalViewer
 	)
 }
 
-func (j *jsiiProxy_LookerInstanceUserMetadataOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_LookerInstanceUserMetadataOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_LookerInstanceUserMetadataOutputReference)SetComplexObjectInd
 	)
 }
 
-func (j *jsiiProxy_LookerInstanceUserMetadataOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_LookerInstanceUserMetadataOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_LookerInstanceUserMetadataOutputReference)SetComplexObjectIsF
 	)
 }
 
-func (j *jsiiProxy_LookerInstanceUserMetadataOutputReference)SetInternalValue(val *LookerInstanceUserMetadata) {
+func (j *jsiiProxy_LookerInstanceUserMetadataOutputReference) SetInternalValue(val *LookerInstanceUserMetadata) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_LookerInstanceUserMetadataOutputReference)SetInternalValue(va
 	)
 }
 
-func (j *jsiiProxy_LookerInstanceUserMetadataOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_LookerInstanceUserMetadataOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_LookerInstanceUserMetadataOutputReference)SetTerraformAttribu
 	)
 }
 
-func (j *jsiiProxy_LookerInstanceUserMetadataOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LookerInstanceUserMetadataOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (l *jsiiProxy_LookerInstanceUserMetadataOutputReference) ComputeFqn() *stri
 	return returns
 }
 
-func (l *jsiiProxy_LookerInstanceUserMetadataOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_LookerInstanceUserMetadataOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (l *jsiiProxy_LookerInstanceUserMetadataOutputReference) GetBooleanAttribut
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (l *jsiiProxy_LookerInstanceUserMetadataOutputReference) GetBooleanMapAttri
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (l *jsiiProxy_LookerInstanceUserMetadataOutputReference) GetListAttribute(t
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (l *jsiiProxy_LookerInstanceUserMetadataOutputReference) GetNumberAttribute
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (l *jsiiProxy_LookerInstanceUserMetadataOutputReference) GetNumberListAttri
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (l *jsiiProxy_LookerInstanceUserMetadataOutputReference) GetNumberMapAttrib
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (l *jsiiProxy_LookerInstanceUserMetadataOutputReference) GetStringAttribute
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (l *jsiiProxy_LookerInstanceUserMetadataOutputReference) GetStringMapAttrib
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (l *jsiiProxy_LookerInstanceUserMetadataOutputReference) InterpolationForAt
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (l *jsiiProxy_LookerInstanceUserMetadataOutputReference) ResetAdditionalVie
 	)
 }
 
-func (l *jsiiProxy_LookerInstanceUserMetadataOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (l *jsiiProxy_LookerInstanceUserMetadataOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := l.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (l *jsiiProxy_LookerInstanceUserMetadataOutputReference) ToString() *string
 
 	return returns
 }
-

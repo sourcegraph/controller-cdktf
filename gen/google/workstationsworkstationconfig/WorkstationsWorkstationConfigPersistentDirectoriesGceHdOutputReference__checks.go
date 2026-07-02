@@ -106,7 +106,7 @@ func (j *jsiiProxy_WorkstationsWorkstationConfigPersistentDirectoriesGceHdOutput
 	return nil
 }
 
-func (j *jsiiProxy_WorkstationsWorkstationConfigPersistentDirectoriesGceHdOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_WorkstationsWorkstationConfigPersistentDirectoriesGceHdOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewWorkstationsWorkstationConfigPersistentDirectoriesGceHdOutputRef
 
 	return nil
 }
-

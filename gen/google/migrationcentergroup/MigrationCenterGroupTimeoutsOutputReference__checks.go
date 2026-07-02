@@ -98,7 +98,7 @@ func (m *jsiiProxy_MigrationCenterGroupTimeoutsOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_MigrationCenterGroupTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MigrationCenterGroupTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_MigrationCenterGroupTimeoutsOutputReference) validateSetDelet
 	return nil
 }
 
-func (j *jsiiProxy_MigrationCenterGroupTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_MigrationCenterGroupTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewMigrationCenterGroupTimeoutsOutputReferenceParameters(terraformR
 
 	return nil
 }
-

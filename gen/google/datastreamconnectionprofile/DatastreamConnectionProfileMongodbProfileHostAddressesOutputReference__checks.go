@@ -98,7 +98,7 @@ func (d *jsiiProxy_DatastreamConnectionProfileMongodbProfileHostAddressesOutputR
 	return nil
 }
 
-func (j *jsiiProxy_DatastreamConnectionProfileMongodbProfileHostAddressesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DatastreamConnectionProfileMongodbProfileHostAddressesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_DatastreamConnectionProfileMongodbProfileHostAddressesOutputR
 	return nil
 }
 
-func (j *jsiiProxy_DatastreamConnectionProfileMongodbProfileHostAddressesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DatastreamConnectionProfileMongodbProfileHostAddressesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewDatastreamConnectionProfileMongodbProfileHostAddressesOutputRefe
 
 	return nil
 }
-

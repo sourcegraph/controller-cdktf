@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleComputeRegionBackendServiceHaPolicyLeaderOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeRegionBackendServiceHaPolicyLeaderOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleComputeRegionBackendServiceHaPolicyLeaderOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleComputeRegionBackendServiceHaPolicyLeaderOutputReferen
 
 	return nil
 }
-

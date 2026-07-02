@@ -19,7 +19,7 @@ func (s *jsiiProxy_SecretManagerSecretIamBinding) validateAddMoveTargetParameter
 	return nil
 }
 
-func (s *jsiiProxy_SecretManagerSecretIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_SecretManagerSecretIamBinding) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_SecretManagerSecretIamBinding) validateMoveFromIdParameters(i
 	return nil
 }
 
-func (s *jsiiProxy_SecretManagerSecretIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_SecretManagerSecretIamBinding) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateSecretManagerSecretIamBinding_GenerateConfigForImportParameters(sco
 	return nil
 }
 
-func validateSecretManagerSecretIamBinding_IsConstructParameters(x interface{}) error {
+func validateSecretManagerSecretIamBinding_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateSecretManagerSecretIamBinding_IsConstructParameters(x interface{}) 
 	return nil
 }
 
-func validateSecretManagerSecretIamBinding_IsTerraformElementParameters(x interface{}) error {
+func validateSecretManagerSecretIamBinding_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateSecretManagerSecretIamBinding_IsTerraformElementParameters(x interf
 	return nil
 }
 
-func validateSecretManagerSecretIamBinding_IsTerraformResourceParameters(x interface{}) error {
+func validateSecretManagerSecretIamBinding_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateSecretManagerSecretIamBinding_IsTerraformResourceParameters(x inter
 	return nil
 }
 
-func (j *jsiiProxy_SecretManagerSecretIamBinding) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_SecretManagerSecretIamBinding) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_SecretManagerSecretIamBinding) validateSetConnectionParameter
 	return nil
 }
 
-func (j *jsiiProxy_SecretManagerSecretIamBinding) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_SecretManagerSecretIamBinding) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -377,7 +377,7 @@ func (j *jsiiProxy_SecretManagerSecretIamBinding) validateSetProjectParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_SecretManagerSecretIamBinding) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_SecretManagerSecretIamBinding) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -457,4 +457,3 @@ func validateNewSecretManagerSecretIamBindingParameters(scope constructs.Constru
 
 	return nil
 }
-

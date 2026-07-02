@@ -36,7 +36,7 @@ type WorkstationsWorkstationClusterConditionsList interface {
 	Get(index *float64) WorkstationsWorkstationClusterConditionsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,7 +99,6 @@ func (j *jsiiProxy_WorkstationsWorkstationClusterConditionsList) WrapsSet() *boo
 	return returns
 }
 
-
 func NewWorkstationsWorkstationClusterConditionsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkstationsWorkstationClusterConditionsList {
 	_init_.Initialize()
 
@@ -110,7 +109,7 @@ func NewWorkstationsWorkstationClusterConditionsList(terraformResource cdktf.IIn
 
 	_jsii_.Create(
 		"@cdktf/provider-google.workstationsWorkstationCluster.WorkstationsWorkstationClusterConditionsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -122,12 +121,12 @@ func NewWorkstationsWorkstationClusterConditionsList_Override(w WorkstationsWork
 
 	_jsii_.Create(
 		"@cdktf/provider-google.workstationsWorkstationCluster.WorkstationsWorkstationClusterConditionsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		w,
 	)
 }
 
-func (j *jsiiProxy_WorkstationsWorkstationClusterConditionsList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_WorkstationsWorkstationClusterConditionsList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -138,7 +137,7 @@ func (j *jsiiProxy_WorkstationsWorkstationClusterConditionsList)SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_WorkstationsWorkstationClusterConditionsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_WorkstationsWorkstationClusterConditionsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -149,7 +148,7 @@ func (j *jsiiProxy_WorkstationsWorkstationClusterConditionsList)SetTerraformReso
 	)
 }
 
-func (j *jsiiProxy_WorkstationsWorkstationClusterConditionsList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_WorkstationsWorkstationClusterConditionsList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -169,7 +168,7 @@ func (w *jsiiProxy_WorkstationsWorkstationClusterConditionsList) AllWithMapKey(m
 	_jsii_.Invoke(
 		w,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -198,23 +197,23 @@ func (w *jsiiProxy_WorkstationsWorkstationClusterConditionsList) Get(index *floa
 	_jsii_.Invoke(
 		w,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (w *jsiiProxy_WorkstationsWorkstationClusterConditionsList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (w *jsiiProxy_WorkstationsWorkstationClusterConditionsList) Resolve(_context cdktf.IResolveContext) any {
 	if err := w.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		w,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -233,4 +232,3 @@ func (w *jsiiProxy_WorkstationsWorkstationClusterConditionsList) ToString() *str
 
 	return returns
 }
-

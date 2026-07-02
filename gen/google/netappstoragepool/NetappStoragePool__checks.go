@@ -19,7 +19,7 @@ func (n *jsiiProxy_NetappStoragePool) validateAddMoveTargetParameters(moveTarget
 	return nil
 }
 
-func (n *jsiiProxy_NetappStoragePool) validateAddOverrideParameters(path *string, value interface{}) error {
+func (n *jsiiProxy_NetappStoragePool) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (n *jsiiProxy_NetappStoragePool) validateMoveFromIdParameters(id *string) e
 	return nil
 }
 
-func (n *jsiiProxy_NetappStoragePool) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (n *jsiiProxy_NetappStoragePool) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateNetappStoragePool_GenerateConfigForImportParameters(scope construct
 	return nil
 }
 
-func validateNetappStoragePool_IsConstructParameters(x interface{}) error {
+func validateNetappStoragePool_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateNetappStoragePool_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateNetappStoragePool_IsTerraformElementParameters(x interface{}) error {
+func validateNetappStoragePool_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateNetappStoragePool_IsTerraformElementParameters(x interface{}) error
 	return nil
 }
 
-func validateNetappStoragePool_IsTerraformResourceParameters(x interface{}) error {
+func validateNetappStoragePool_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_NetappStoragePool) validateSetActiveDirectoryParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_NetappStoragePool) validateSetAllowAutoTieringParameters(val interface{}) error {
+func (j *jsiiProxy_NetappStoragePool) validateSetAllowAutoTieringParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -291,7 +291,7 @@ func (j *jsiiProxy_NetappStoragePool) validateSetCapacityGibParameters(val *stri
 	return nil
 }
 
-func (j *jsiiProxy_NetappStoragePool) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_NetappStoragePool) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -324,7 +324,7 @@ func (j *jsiiProxy_NetappStoragePool) validateSetConnectionParameters(val interf
 	return nil
 }
 
-func (j *jsiiProxy_NetappStoragePool) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_NetappStoragePool) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -381,7 +381,7 @@ func (j *jsiiProxy_NetappStoragePool) validateSetCountParameters(val interface{}
 	return nil
 }
 
-func (j *jsiiProxy_NetappStoragePool) validateSetCustomPerformanceEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_NetappStoragePool) validateSetCustomPerformanceEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -409,7 +409,7 @@ func (j *jsiiProxy_NetappStoragePool) validateSetDescriptionParameters(val *stri
 	return nil
 }
 
-func (j *jsiiProxy_NetappStoragePool) validateSetEnableHotTierAutoResizeParameters(val interface{}) error {
+func (j *jsiiProxy_NetappStoragePool) validateSetEnableHotTierAutoResizeParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -461,7 +461,7 @@ func (j *jsiiProxy_NetappStoragePool) validateSetLabelsParameters(val *map[strin
 	return nil
 }
 
-func (j *jsiiProxy_NetappStoragePool) validateSetLdapEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_NetappStoragePool) validateSetLdapEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -529,7 +529,7 @@ func (j *jsiiProxy_NetappStoragePool) validateSetProjectParameters(val *string) 
 	return nil
 }
 
-func (j *jsiiProxy_NetappStoragePool) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_NetappStoragePool) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -657,4 +657,3 @@ func validateNewNetappStoragePoolParameters(scope constructs.Construct, id *stri
 
 	return nil
 }
-

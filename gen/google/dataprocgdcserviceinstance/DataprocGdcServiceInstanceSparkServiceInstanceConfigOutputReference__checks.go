@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataprocGdcServiceInstanceSparkServiceInstanceConfigOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_DataprocGdcServiceInstanceSparkServiceInstanceConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocGdcServiceInstanceSparkServiceInstanceConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewDataprocGdcServiceInstanceSparkServiceInstanceConfigOutputRefere
 
 	return nil
 }
-

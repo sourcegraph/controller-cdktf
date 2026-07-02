@@ -36,7 +36,7 @@ type ChronicleWatchlistEntityCountList interface {
 	Get(index *float64) ChronicleWatchlistEntityCountOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,7 +99,6 @@ func (j *jsiiProxy_ChronicleWatchlistEntityCountList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewChronicleWatchlistEntityCountList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ChronicleWatchlistEntityCountList {
 	_init_.Initialize()
 
@@ -110,7 +109,7 @@ func NewChronicleWatchlistEntityCountList(terraformResource cdktf.IInterpolating
 
 	_jsii_.Create(
 		"@cdktf/provider-google.chronicleWatchlist.ChronicleWatchlistEntityCountList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -122,12 +121,12 @@ func NewChronicleWatchlistEntityCountList_Override(c ChronicleWatchlistEntityCou
 
 	_jsii_.Create(
 		"@cdktf/provider-google.chronicleWatchlist.ChronicleWatchlistEntityCountList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ChronicleWatchlistEntityCountList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ChronicleWatchlistEntityCountList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -138,7 +137,7 @@ func (j *jsiiProxy_ChronicleWatchlistEntityCountList)SetTerraformAttribute(val *
 	)
 }
 
-func (j *jsiiProxy_ChronicleWatchlistEntityCountList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ChronicleWatchlistEntityCountList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -149,7 +148,7 @@ func (j *jsiiProxy_ChronicleWatchlistEntityCountList)SetTerraformResource(val cd
 	)
 }
 
-func (j *jsiiProxy_ChronicleWatchlistEntityCountList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ChronicleWatchlistEntityCountList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -169,7 +168,7 @@ func (c *jsiiProxy_ChronicleWatchlistEntityCountList) AllWithMapKey(mapKeyAttrib
 	_jsii_.Invoke(
 		c,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -198,23 +197,23 @@ func (c *jsiiProxy_ChronicleWatchlistEntityCountList) Get(index *float64) Chroni
 	_jsii_.Invoke(
 		c,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ChronicleWatchlistEntityCountList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ChronicleWatchlistEntityCountList) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -233,4 +232,3 @@ func (c *jsiiProxy_ChronicleWatchlistEntityCountList) ToString() *string {
 
 	return returns
 }
-

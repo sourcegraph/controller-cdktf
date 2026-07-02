@@ -19,7 +19,7 @@ func (c *jsiiProxy_ComputeRegionCompositeHealthCheck) validateAddMoveTargetParam
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionCompositeHealthCheck) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_ComputeRegionCompositeHealthCheck) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_ComputeRegionCompositeHealthCheck) validateMoveFromIdParamete
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionCompositeHealthCheck) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_ComputeRegionCompositeHealthCheck) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateComputeRegionCompositeHealthCheck_GenerateConfigForImportParameters
 	return nil
 }
 
-func validateComputeRegionCompositeHealthCheck_IsConstructParameters(x interface{}) error {
+func validateComputeRegionCompositeHealthCheck_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateComputeRegionCompositeHealthCheck_IsConstructParameters(x interface
 	return nil
 }
 
-func validateComputeRegionCompositeHealthCheck_IsTerraformElementParameters(x interface{}) error {
+func validateComputeRegionCompositeHealthCheck_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateComputeRegionCompositeHealthCheck_IsTerraformElementParameters(x in
 	return nil
 }
 
-func validateComputeRegionCompositeHealthCheck_IsTerraformResourceParameters(x interface{}) error {
+func validateComputeRegionCompositeHealthCheck_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateComputeRegionCompositeHealthCheck_IsTerraformResourceParameters(x i
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionCompositeHealthCheck) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionCompositeHealthCheck) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_ComputeRegionCompositeHealthCheck) validateSetConnectionParam
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionCompositeHealthCheck) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionCompositeHealthCheck) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -393,7 +393,7 @@ func (j *jsiiProxy_ComputeRegionCompositeHealthCheck) validateSetProjectParamete
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionCompositeHealthCheck) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ComputeRegionCompositeHealthCheck) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -465,4 +465,3 @@ func validateNewComputeRegionCompositeHealthCheckParameters(scope constructs.Con
 
 	return nil
 }
-

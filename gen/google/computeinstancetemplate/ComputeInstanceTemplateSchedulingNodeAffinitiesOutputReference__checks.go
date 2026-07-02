@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeInstanceTemplateSchedulingNodeAffinitiesOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateSchedulingNodeAffinitiesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInstanceTemplateSchedulingNodeAffinitiesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ComputeInstanceTemplateSchedulingNodeAffinitiesOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateSchedulingNodeAffinitiesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInstanceTemplateSchedulingNodeAffinitiesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewComputeInstanceTemplateSchedulingNodeAffinitiesOutputReferencePa
 
 	return nil
 }
-

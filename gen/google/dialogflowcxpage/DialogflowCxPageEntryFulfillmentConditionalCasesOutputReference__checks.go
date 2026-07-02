@@ -106,7 +106,7 @@ func (j *jsiiProxy_DialogflowCxPageEntryFulfillmentConditionalCasesOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxPageEntryFulfillmentConditionalCasesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxPageEntryFulfillmentConditionalCasesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_DialogflowCxPageEntryFulfillmentConditionalCasesOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxPageEntryFulfillmentConditionalCasesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxPageEntryFulfillmentConditionalCasesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewDialogflowCxPageEntryFulfillmentConditionalCasesOutputReferenceP
 
 	return nil
 }
-

@@ -90,7 +90,7 @@ func (c *jsiiProxy_CloudfunctionsFunctionSecretVolumesOutputReference) validateI
 	return nil
 }
 
-func (c *jsiiProxy_CloudfunctionsFunctionSecretVolumesOutputReference) validatePutVersionsParameters(value interface{}) error {
+func (c *jsiiProxy_CloudfunctionsFunctionSecretVolumesOutputReference) validatePutVersionsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (c *jsiiProxy_CloudfunctionsFunctionSecretVolumesOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_CloudfunctionsFunctionSecretVolumesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudfunctionsFunctionSecretVolumesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -194,7 +194,7 @@ func (j *jsiiProxy_CloudfunctionsFunctionSecretVolumesOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_CloudfunctionsFunctionSecretVolumesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CloudfunctionsFunctionSecretVolumesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -277,4 +277,3 @@ func validateNewCloudfunctionsFunctionSecretVolumesOutputReferenceParameters(ter
 
 	return nil
 }
-

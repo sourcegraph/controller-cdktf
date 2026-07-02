@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dnsResponsePolicyRule.DnsResponsePolicyRule",
-		reflect.TypeOf((*DnsResponsePolicyRule)(nil)).Elem(),
+		reflect.TypeFor[DnsResponsePolicyRule](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,7 +73,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DnsResponsePolicyRule{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -81,19 +81,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dnsResponsePolicyRule.DnsResponsePolicyRuleConfig",
-		reflect.TypeOf((*DnsResponsePolicyRuleConfig)(nil)).Elem(),
+		reflect.TypeFor[DnsResponsePolicyRuleConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dnsResponsePolicyRule.DnsResponsePolicyRuleLocalData",
-		reflect.TypeOf((*DnsResponsePolicyRuleLocalData)(nil)).Elem(),
+		reflect.TypeFor[DnsResponsePolicyRuleLocalData](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dnsResponsePolicyRule.DnsResponsePolicyRuleLocalDataLocalDatas",
-		reflect.TypeOf((*DnsResponsePolicyRuleLocalDataLocalDatas)(nil)).Elem(),
+		reflect.TypeFor[DnsResponsePolicyRuleLocalDataLocalDatas](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dnsResponsePolicyRule.DnsResponsePolicyRuleLocalDataLocalDatasList",
-		reflect.TypeOf((*DnsResponsePolicyRuleLocalDataLocalDatasList)(nil)).Elem(),
+		reflect.TypeFor[DnsResponsePolicyRuleLocalDataLocalDatasList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -107,7 +107,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DnsResponsePolicyRuleLocalDataLocalDatasList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -115,7 +115,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dnsResponsePolicyRule.DnsResponsePolicyRuleLocalDataLocalDatasOutputReference",
-		reflect.TypeOf((*DnsResponsePolicyRuleLocalDataLocalDatasOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DnsResponsePolicyRuleLocalDataLocalDatasOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -149,7 +149,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DnsResponsePolicyRuleLocalDataLocalDatasOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -157,7 +157,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dnsResponsePolicyRule.DnsResponsePolicyRuleLocalDataOutputReference",
-		reflect.TypeOf((*DnsResponsePolicyRuleLocalDataOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DnsResponsePolicyRuleLocalDataOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -184,7 +184,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DnsResponsePolicyRuleLocalDataOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -192,11 +192,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dnsResponsePolicyRule.DnsResponsePolicyRuleTimeouts",
-		reflect.TypeOf((*DnsResponsePolicyRuleTimeouts)(nil)).Elem(),
+		reflect.TypeFor[DnsResponsePolicyRuleTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dnsResponsePolicyRule.DnsResponsePolicyRuleTimeoutsOutputReference",
-		reflect.TypeOf((*DnsResponsePolicyRuleTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DnsResponsePolicyRuleTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -229,7 +229,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DnsResponsePolicyRuleTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -12,9 +12,9 @@ type PrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsOutputReference
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,9 +25,9 @@ type PrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsOutputReference
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Critical() interface{}
-	SetCritical(val interface{})
-	CriticalInput() interface{}
+	Critical() any
+	SetCritical(val any)
+	CriticalInput() any
 	ExcludedDnsNames() *[]*string
 	SetExcludedDnsNames(val *[]*string)
 	ExcludedDnsNamesInput() *[]*string
@@ -67,7 +67,7 @@ type PrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsOutputReference
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -98,7 +98,7 @@ type PrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsOutputReference
 	ResetPermittedUris()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -111,8 +111,8 @@ type jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsOutpu
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -141,8 +141,8 @@ func (j *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsO
 	return returns
 }
 
-func (j *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsOutputReference) Critical() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsOutputReference) Critical() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"critical",
@@ -151,8 +151,8 @@ func (j *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsO
 	return returns
 }
 
-func (j *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsOutputReference) CriticalInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsOutputReference) CriticalInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"criticalInput",
@@ -361,7 +361,6 @@ func (j *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsO
 	return returns
 }
 
-
 func NewPrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsOutputReference {
 	_init_.Initialize()
 
@@ -372,7 +371,7 @@ func NewPrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsOutputRefere
 
 	_jsii_.Create(
 		"@cdktf/provider-google.privatecaCertificateAuthority.PrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -384,12 +383,12 @@ func NewPrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsOutputRefere
 
 	_jsii_.Create(
 		"@cdktf/provider-google.privatecaCertificateAuthority.PrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -400,7 +399,7 @@ func (j *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsO
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -411,7 +410,7 @@ func (j *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsO
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsOutputReference)SetCritical(val interface{}) {
+func (j *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsOutputReference) SetCritical(val any) {
 	if err := j.validateSetCriticalParameters(val); err != nil {
 		panic(err)
 	}
@@ -422,7 +421,7 @@ func (j *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsO
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsOutputReference)SetExcludedDnsNames(val *[]*string) {
+func (j *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsOutputReference) SetExcludedDnsNames(val *[]*string) {
 	if err := j.validateSetExcludedDnsNamesParameters(val); err != nil {
 		panic(err)
 	}
@@ -433,7 +432,7 @@ func (j *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsO
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsOutputReference)SetExcludedEmailAddresses(val *[]*string) {
+func (j *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsOutputReference) SetExcludedEmailAddresses(val *[]*string) {
 	if err := j.validateSetExcludedEmailAddressesParameters(val); err != nil {
 		panic(err)
 	}
@@ -444,7 +443,7 @@ func (j *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsO
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsOutputReference)SetExcludedIpRanges(val *[]*string) {
+func (j *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsOutputReference) SetExcludedIpRanges(val *[]*string) {
 	if err := j.validateSetExcludedIpRangesParameters(val); err != nil {
 		panic(err)
 	}
@@ -455,7 +454,7 @@ func (j *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsO
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsOutputReference)SetExcludedUris(val *[]*string) {
+func (j *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsOutputReference) SetExcludedUris(val *[]*string) {
 	if err := j.validateSetExcludedUrisParameters(val); err != nil {
 		panic(err)
 	}
@@ -466,7 +465,7 @@ func (j *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsO
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsOutputReference)SetInternalValue(val *PrivatecaCertificateAuthorityConfigX509ConfigNameConstraints) {
+func (j *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsOutputReference) SetInternalValue(val *PrivatecaCertificateAuthorityConfigX509ConfigNameConstraints) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -477,7 +476,7 @@ func (j *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsO
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsOutputReference)SetPermittedDnsNames(val *[]*string) {
+func (j *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsOutputReference) SetPermittedDnsNames(val *[]*string) {
 	if err := j.validateSetPermittedDnsNamesParameters(val); err != nil {
 		panic(err)
 	}
@@ -488,7 +487,7 @@ func (j *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsO
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsOutputReference)SetPermittedEmailAddresses(val *[]*string) {
+func (j *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsOutputReference) SetPermittedEmailAddresses(val *[]*string) {
 	if err := j.validateSetPermittedEmailAddressesParameters(val); err != nil {
 		panic(err)
 	}
@@ -499,7 +498,7 @@ func (j *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsO
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsOutputReference)SetPermittedIpRanges(val *[]*string) {
+func (j *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsOutputReference) SetPermittedIpRanges(val *[]*string) {
 	if err := j.validateSetPermittedIpRangesParameters(val); err != nil {
 		panic(err)
 	}
@@ -510,7 +509,7 @@ func (j *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsO
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsOutputReference)SetPermittedUris(val *[]*string) {
+func (j *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsOutputReference) SetPermittedUris(val *[]*string) {
 	if err := j.validateSetPermittedUrisParameters(val); err != nil {
 		panic(err)
 	}
@@ -521,7 +520,7 @@ func (j *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsO
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -532,7 +531,7 @@ func (j *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsO
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -556,16 +555,16 @@ func (p *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsO
 	return returns
 }
 
-func (p *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -581,7 +580,7 @@ func (p *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsO
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -597,7 +596,7 @@ func (p *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsO
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -613,7 +612,7 @@ func (p *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsO
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -629,7 +628,7 @@ func (p *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsO
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -645,7 +644,7 @@ func (p *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsO
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -661,7 +660,7 @@ func (p *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsO
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -677,7 +676,7 @@ func (p *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsO
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -693,7 +692,7 @@ func (p *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsO
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -722,7 +721,7 @@ func (p *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsO
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -793,16 +792,16 @@ func (p *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsO
 	)
 }
 
-func (p *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := p.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -821,4 +820,3 @@ func (p *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsO
 
 	return returns
 }
-

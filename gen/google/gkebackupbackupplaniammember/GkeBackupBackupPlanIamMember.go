@@ -17,15 +17,15 @@ type GkeBackupBackupPlanIamMember interface {
 	Condition() GkeBackupBackupPlanIamMemberConditionOutputReference
 	ConditionInput() *GkeBackupBackupPlanIamMemberCondition
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -65,27 +65,27 @@ type GkeBackupBackupPlanIamMember interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Role() *string
 	SetRole(val *string)
 	RoleInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -103,7 +103,7 @@ type GkeBackupBackupPlanIamMember interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -115,7 +115,7 @@ type GkeBackupBackupPlanIamMember interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -130,17 +130,17 @@ type GkeBackupBackupPlanIamMember interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GkeBackupBackupPlanIamMember
@@ -178,8 +178,8 @@ func (j *jsiiProxy_GkeBackupBackupPlanIamMember) ConditionInput() *GkeBackupBack
 	return returns
 }
 
-func (j *jsiiProxy_GkeBackupBackupPlanIamMember) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeBackupBackupPlanIamMember) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -188,8 +188,8 @@ func (j *jsiiProxy_GkeBackupBackupPlanIamMember) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GkeBackupBackupPlanIamMember) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GkeBackupBackupPlanIamMember) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -198,8 +198,8 @@ func (j *jsiiProxy_GkeBackupBackupPlanIamMember) ConstructNodeMetadata() *map[st
 	return returns
 }
 
-func (j *jsiiProxy_GkeBackupBackupPlanIamMember) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeBackupBackupPlanIamMember) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -388,8 +388,8 @@ func (j *jsiiProxy_GkeBackupBackupPlanIamMember) Provider() cdktf.TerraformProvi
 	return returns
 }
 
-func (j *jsiiProxy_GkeBackupBackupPlanIamMember) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GkeBackupBackupPlanIamMember) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -398,8 +398,8 @@ func (j *jsiiProxy_GkeBackupBackupPlanIamMember) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GkeBackupBackupPlanIamMember) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeBackupBackupPlanIamMember) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -438,8 +438,8 @@ func (j *jsiiProxy_GkeBackupBackupPlanIamMember) TerraformGeneratorMetadata() *c
 	return returns
 }
 
-func (j *jsiiProxy_GkeBackupBackupPlanIamMember) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GkeBackupBackupPlanIamMember) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -458,7 +458,6 @@ func (j *jsiiProxy_GkeBackupBackupPlanIamMember) TerraformResourceType() *string
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_backup_backup_plan_iam_member google_gke_backup_backup_plan_iam_member} Resource.
 func NewGkeBackupBackupPlanIamMember(scope constructs.Construct, id *string, config *GkeBackupBackupPlanIamMemberConfig) GkeBackupBackupPlanIamMember {
 	_init_.Initialize()
@@ -470,7 +469,7 @@ func NewGkeBackupBackupPlanIamMember(scope constructs.Construct, id *string, con
 
 	_jsii_.Create(
 		"@cdktf/provider-google.gkeBackupBackupPlanIamMember.GkeBackupBackupPlanIamMember",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -483,12 +482,12 @@ func NewGkeBackupBackupPlanIamMember_Override(g GkeBackupBackupPlanIamMember, sc
 
 	_jsii_.Create(
 		"@cdktf/provider-google.gkeBackupBackupPlanIamMember.GkeBackupBackupPlanIamMember",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GkeBackupBackupPlanIamMember)SetConnection(val interface{}) {
+func (j *jsiiProxy_GkeBackupBackupPlanIamMember) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -499,7 +498,7 @@ func (j *jsiiProxy_GkeBackupBackupPlanIamMember)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GkeBackupBackupPlanIamMember)SetCount(val interface{}) {
+func (j *jsiiProxy_GkeBackupBackupPlanIamMember) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -510,7 +509,7 @@ func (j *jsiiProxy_GkeBackupBackupPlanIamMember)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GkeBackupBackupPlanIamMember)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GkeBackupBackupPlanIamMember) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -518,7 +517,7 @@ func (j *jsiiProxy_GkeBackupBackupPlanIamMember)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GkeBackupBackupPlanIamMember)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GkeBackupBackupPlanIamMember) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -526,7 +525,7 @@ func (j *jsiiProxy_GkeBackupBackupPlanIamMember)SetForEach(val cdktf.ITerraformI
 	)
 }
 
-func (j *jsiiProxy_GkeBackupBackupPlanIamMember)SetId(val *string) {
+func (j *jsiiProxy_GkeBackupBackupPlanIamMember) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -537,7 +536,7 @@ func (j *jsiiProxy_GkeBackupBackupPlanIamMember)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GkeBackupBackupPlanIamMember)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GkeBackupBackupPlanIamMember) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -548,7 +547,7 @@ func (j *jsiiProxy_GkeBackupBackupPlanIamMember)SetLifecycle(val *cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_GkeBackupBackupPlanIamMember)SetLocation(val *string) {
+func (j *jsiiProxy_GkeBackupBackupPlanIamMember) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -559,7 +558,7 @@ func (j *jsiiProxy_GkeBackupBackupPlanIamMember)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GkeBackupBackupPlanIamMember)SetMember(val *string) {
+func (j *jsiiProxy_GkeBackupBackupPlanIamMember) SetMember(val *string) {
 	if err := j.validateSetMemberParameters(val); err != nil {
 		panic(err)
 	}
@@ -570,7 +569,7 @@ func (j *jsiiProxy_GkeBackupBackupPlanIamMember)SetMember(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GkeBackupBackupPlanIamMember)SetName(val *string) {
+func (j *jsiiProxy_GkeBackupBackupPlanIamMember) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -581,7 +580,7 @@ func (j *jsiiProxy_GkeBackupBackupPlanIamMember)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GkeBackupBackupPlanIamMember)SetProject(val *string) {
+func (j *jsiiProxy_GkeBackupBackupPlanIamMember) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -592,7 +591,7 @@ func (j *jsiiProxy_GkeBackupBackupPlanIamMember)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GkeBackupBackupPlanIamMember)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GkeBackupBackupPlanIamMember) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -600,7 +599,7 @@ func (j *jsiiProxy_GkeBackupBackupPlanIamMember)SetProvider(val cdktf.TerraformP
 	)
 }
 
-func (j *jsiiProxy_GkeBackupBackupPlanIamMember)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GkeBackupBackupPlanIamMember) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -611,7 +610,7 @@ func (j *jsiiProxy_GkeBackupBackupPlanIamMember)SetProvisioners(val *[]interface
 	)
 }
 
-func (j *jsiiProxy_GkeBackupBackupPlanIamMember)SetRole(val *string) {
+func (j *jsiiProxy_GkeBackupBackupPlanIamMember) SetRole(val *string) {
 	if err := j.validateSetRoleParameters(val); err != nil {
 		panic(err)
 	}
@@ -634,7 +633,7 @@ func GkeBackupBackupPlanIamMember_GenerateConfigForImport(scope constructs.Const
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.gkeBackupBackupPlanIamMember.GkeBackupBackupPlanIamMember",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -658,7 +657,7 @@ func GkeBackupBackupPlanIamMember_GenerateConfigForImport(scope constructs.Const
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GkeBackupBackupPlanIamMember_IsConstruct(x interface{}) *bool {
+func GkeBackupBackupPlanIamMember_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGkeBackupBackupPlanIamMember_IsConstructParameters(x); err != nil {
@@ -669,7 +668,7 @@ func GkeBackupBackupPlanIamMember_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.gkeBackupBackupPlanIamMember.GkeBackupBackupPlanIamMember",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -677,7 +676,7 @@ func GkeBackupBackupPlanIamMember_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GkeBackupBackupPlanIamMember_IsTerraformElement(x interface{}) *bool {
+func GkeBackupBackupPlanIamMember_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGkeBackupBackupPlanIamMember_IsTerraformElementParameters(x); err != nil {
@@ -688,7 +687,7 @@ func GkeBackupBackupPlanIamMember_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.gkeBackupBackupPlanIamMember.GkeBackupBackupPlanIamMember",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -696,7 +695,7 @@ func GkeBackupBackupPlanIamMember_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GkeBackupBackupPlanIamMember_IsTerraformResource(x interface{}) *bool {
+func GkeBackupBackupPlanIamMember_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGkeBackupBackupPlanIamMember_IsTerraformResourceParameters(x); err != nil {
@@ -707,7 +706,7 @@ func GkeBackupBackupPlanIamMember_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.gkeBackupBackupPlanIamMember.GkeBackupBackupPlanIamMember",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -732,31 +731,31 @@ func (g *jsiiProxy_GkeBackupBackupPlanIamMember) AddMoveTarget(moveTarget *strin
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GkeBackupBackupPlanIamMember) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GkeBackupBackupPlanIamMember) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GkeBackupBackupPlanIamMember) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GkeBackupBackupPlanIamMember) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -772,7 +771,7 @@ func (g *jsiiProxy_GkeBackupBackupPlanIamMember) GetBooleanAttribute(terraformAt
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -788,7 +787,7 @@ func (g *jsiiProxy_GkeBackupBackupPlanIamMember) GetBooleanMapAttribute(terrafor
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -804,7 +803,7 @@ func (g *jsiiProxy_GkeBackupBackupPlanIamMember) GetListAttribute(terraformAttri
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -820,7 +819,7 @@ func (g *jsiiProxy_GkeBackupBackupPlanIamMember) GetNumberAttribute(terraformAtt
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -836,7 +835,7 @@ func (g *jsiiProxy_GkeBackupBackupPlanIamMember) GetNumberListAttribute(terrafor
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -852,7 +851,7 @@ func (g *jsiiProxy_GkeBackupBackupPlanIamMember) GetNumberMapAttribute(terraform
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -868,7 +867,7 @@ func (g *jsiiProxy_GkeBackupBackupPlanIamMember) GetStringAttribute(terraformAtt
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -884,15 +883,15 @@ func (g *jsiiProxy_GkeBackupBackupPlanIamMember) GetStringMapAttribute(terraform
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GkeBackupBackupPlanIamMember) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GkeBackupBackupPlanIamMember) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -911,7 +910,7 @@ func (g *jsiiProxy_GkeBackupBackupPlanIamMember) ImportFrom(id *string, provider
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -924,7 +923,7 @@ func (g *jsiiProxy_GkeBackupBackupPlanIamMember) InterpolationForAttribute(terra
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -938,18 +937,18 @@ func (g *jsiiProxy_GkeBackupBackupPlanIamMember) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GkeBackupBackupPlanIamMember) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GkeBackupBackupPlanIamMember) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -960,7 +959,7 @@ func (g *jsiiProxy_GkeBackupBackupPlanIamMember) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -971,7 +970,7 @@ func (g *jsiiProxy_GkeBackupBackupPlanIamMember) OverrideLogicalId(newLogicalId 
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -982,7 +981,7 @@ func (g *jsiiProxy_GkeBackupBackupPlanIamMember) PutCondition(value *GkeBackupBa
 	_jsii_.InvokeVoid(
 		g,
 		"putCondition",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1026,8 +1025,8 @@ func (g *jsiiProxy_GkeBackupBackupPlanIamMember) ResetProject() {
 	)
 }
 
-func (g *jsiiProxy_GkeBackupBackupPlanIamMember) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GkeBackupBackupPlanIamMember) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1039,8 +1038,8 @@ func (g *jsiiProxy_GkeBackupBackupPlanIamMember) SynthesizeAttributes() *map[str
 	return returns
 }
 
-func (g *jsiiProxy_GkeBackupBackupPlanIamMember) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GkeBackupBackupPlanIamMember) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1052,8 +1051,8 @@ func (g *jsiiProxy_GkeBackupBackupPlanIamMember) SynthesizeHclAttributes() *map[
 	return returns
 }
 
-func (g *jsiiProxy_GkeBackupBackupPlanIamMember) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GkeBackupBackupPlanIamMember) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1065,8 +1064,8 @@ func (g *jsiiProxy_GkeBackupBackupPlanIamMember) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GkeBackupBackupPlanIamMember) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GkeBackupBackupPlanIamMember) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1091,8 +1090,8 @@ func (g *jsiiProxy_GkeBackupBackupPlanIamMember) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GkeBackupBackupPlanIamMember) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GkeBackupBackupPlanIamMember) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1103,4 +1102,3 @@ func (g *jsiiProxy_GkeBackupBackupPlanIamMember) ToTerraform() interface{} {
 
 	return returns
 }
-

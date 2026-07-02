@@ -1,6 +1,5 @@
 package containernodepool
 
-
 type ContainerNodePoolNetworkConfig struct {
 	// The accelerator network profile to use for this node pool.
 	//
@@ -9,21 +8,21 @@ type ContainerNodePoolNetworkConfig struct {
 	// additional_node_network_configs block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_node_pool#additional_node_network_configs ContainerNodePool#additional_node_network_configs}
-	AdditionalNodeNetworkConfigs interface{} `field:"optional" json:"additionalNodeNetworkConfigs" yaml:"additionalNodeNetworkConfigs"`
+	AdditionalNodeNetworkConfigs any `field:"optional" json:"additionalNodeNetworkConfigs" yaml:"additionalNodeNetworkConfigs"`
 	// additional_pod_network_configs block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_node_pool#additional_pod_network_configs ContainerNodePool#additional_pod_network_configs}
-	AdditionalPodNetworkConfigs interface{} `field:"optional" json:"additionalPodNetworkConfigs" yaml:"additionalPodNetworkConfigs"`
+	AdditionalPodNetworkConfigs any `field:"optional" json:"additionalPodNetworkConfigs" yaml:"additionalPodNetworkConfigs"`
 	// Whether to create a new range for pod IPs in this node pool.
 	//
 	// Defaults are provided for pod_range and pod_ipv4_cidr_block if they are not specified.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_node_pool#create_pod_range ContainerNodePool#create_pod_range}
-	CreatePodRange interface{} `field:"optional" json:"createPodRange" yaml:"createPodRange"`
+	CreatePodRange any `field:"optional" json:"createPodRange" yaml:"createPodRange"`
 	// Whether nodes have internal IP addresses only.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_node_pool#enable_private_nodes ContainerNodePool#enable_private_nodes}
-	EnablePrivateNodes interface{} `field:"optional" json:"enablePrivateNodes" yaml:"enablePrivateNodes"`
+	EnablePrivateNodes any `field:"optional" json:"enablePrivateNodes" yaml:"enablePrivateNodes"`
 	// network_performance_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_node_pool#network_performance_config ContainerNodePool#network_performance_config}
@@ -51,4 +50,3 @@ type ContainerNodePoolNetworkConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_node_pool#subnetwork ContainerNodePool#subnetwork}
 	Subnetwork *string `field:"optional" json:"subnetwork" yaml:"subnetwork"`
 }
-

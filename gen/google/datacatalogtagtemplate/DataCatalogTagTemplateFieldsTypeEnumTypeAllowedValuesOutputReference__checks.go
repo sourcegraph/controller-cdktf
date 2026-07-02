@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCatalogTagTemplateFieldsTypeEnumTypeAllowedValuesOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_DataCatalogTagTemplateFieldsTypeEnumTypeAllowedValuesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCatalogTagTemplateFieldsTypeEnumTypeAllowedValuesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_DataCatalogTagTemplateFieldsTypeEnumTypeAllowedValuesOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_DataCatalogTagTemplateFieldsTypeEnumTypeAllowedValuesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataCatalogTagTemplateFieldsTypeEnumTypeAllowedValuesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewDataCatalogTagTemplateFieldsTypeEnumTypeAllowedValuesOutputRefer
 
 	return nil
 }
-

@@ -18,15 +18,15 @@ type EventarcMessageBus interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	CryptoKeyName() *string
 	SetCryptoKeyName(val *string)
@@ -78,29 +78,29 @@ type EventarcMessageBus interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() EventarcMessageBusTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Uid() *string
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -118,7 +118,7 @@ type EventarcMessageBus interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -130,7 +130,7 @@ type EventarcMessageBus interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -150,17 +150,17 @@ type EventarcMessageBus interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for EventarcMessageBus
@@ -198,8 +198,8 @@ func (j *jsiiProxy_EventarcMessageBus) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_EventarcMessageBus) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EventarcMessageBus) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -208,8 +208,8 @@ func (j *jsiiProxy_EventarcMessageBus) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EventarcMessageBus) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_EventarcMessageBus) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -218,8 +218,8 @@ func (j *jsiiProxy_EventarcMessageBus) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_EventarcMessageBus) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EventarcMessageBus) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -508,8 +508,8 @@ func (j *jsiiProxy_EventarcMessageBus) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_EventarcMessageBus) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_EventarcMessageBus) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -518,8 +518,8 @@ func (j *jsiiProxy_EventarcMessageBus) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EventarcMessageBus) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EventarcMessageBus) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -548,8 +548,8 @@ func (j *jsiiProxy_EventarcMessageBus) TerraformLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_EventarcMessageBus) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_EventarcMessageBus) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -578,8 +578,8 @@ func (j *jsiiProxy_EventarcMessageBus) Timeouts() EventarcMessageBusTimeoutsOutp
 	return returns
 }
 
-func (j *jsiiProxy_EventarcMessageBus) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EventarcMessageBus) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -608,7 +608,6 @@ func (j *jsiiProxy_EventarcMessageBus) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/eventarc_message_bus google_eventarc_message_bus} Resource.
 func NewEventarcMessageBus(scope constructs.Construct, id *string, config *EventarcMessageBusConfig) EventarcMessageBus {
 	_init_.Initialize()
@@ -620,7 +619,7 @@ func NewEventarcMessageBus(scope constructs.Construct, id *string, config *Event
 
 	_jsii_.Create(
 		"@cdktf/provider-google.eventarcMessageBus.EventarcMessageBus",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -633,12 +632,12 @@ func NewEventarcMessageBus_Override(e EventarcMessageBus, scope constructs.Const
 
 	_jsii_.Create(
 		"@cdktf/provider-google.eventarcMessageBus.EventarcMessageBus",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		e,
 	)
 }
 
-func (j *jsiiProxy_EventarcMessageBus)SetAnnotations(val *map[string]*string) {
+func (j *jsiiProxy_EventarcMessageBus) SetAnnotations(val *map[string]*string) {
 	if err := j.validateSetAnnotationsParameters(val); err != nil {
 		panic(err)
 	}
@@ -649,7 +648,7 @@ func (j *jsiiProxy_EventarcMessageBus)SetAnnotations(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_EventarcMessageBus)SetConnection(val interface{}) {
+func (j *jsiiProxy_EventarcMessageBus) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -660,7 +659,7 @@ func (j *jsiiProxy_EventarcMessageBus)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EventarcMessageBus)SetCount(val interface{}) {
+func (j *jsiiProxy_EventarcMessageBus) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -671,7 +670,7 @@ func (j *jsiiProxy_EventarcMessageBus)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EventarcMessageBus)SetCryptoKeyName(val *string) {
+func (j *jsiiProxy_EventarcMessageBus) SetCryptoKeyName(val *string) {
 	if err := j.validateSetCryptoKeyNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -682,7 +681,7 @@ func (j *jsiiProxy_EventarcMessageBus)SetCryptoKeyName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EventarcMessageBus)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_EventarcMessageBus) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -690,7 +689,7 @@ func (j *jsiiProxy_EventarcMessageBus)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_EventarcMessageBus)SetDisplayName(val *string) {
+func (j *jsiiProxy_EventarcMessageBus) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -701,7 +700,7 @@ func (j *jsiiProxy_EventarcMessageBus)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EventarcMessageBus)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_EventarcMessageBus) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -709,7 +708,7 @@ func (j *jsiiProxy_EventarcMessageBus)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_EventarcMessageBus)SetId(val *string) {
+func (j *jsiiProxy_EventarcMessageBus) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -720,7 +719,7 @@ func (j *jsiiProxy_EventarcMessageBus)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EventarcMessageBus)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_EventarcMessageBus) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -731,7 +730,7 @@ func (j *jsiiProxy_EventarcMessageBus)SetLabels(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_EventarcMessageBus)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_EventarcMessageBus) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -742,7 +741,7 @@ func (j *jsiiProxy_EventarcMessageBus)SetLifecycle(val *cdktf.TerraformResourceL
 	)
 }
 
-func (j *jsiiProxy_EventarcMessageBus)SetLocation(val *string) {
+func (j *jsiiProxy_EventarcMessageBus) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -753,7 +752,7 @@ func (j *jsiiProxy_EventarcMessageBus)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EventarcMessageBus)SetMessageBusId(val *string) {
+func (j *jsiiProxy_EventarcMessageBus) SetMessageBusId(val *string) {
 	if err := j.validateSetMessageBusIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -764,7 +763,7 @@ func (j *jsiiProxy_EventarcMessageBus)SetMessageBusId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EventarcMessageBus)SetProject(val *string) {
+func (j *jsiiProxy_EventarcMessageBus) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -775,7 +774,7 @@ func (j *jsiiProxy_EventarcMessageBus)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EventarcMessageBus)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_EventarcMessageBus) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -783,7 +782,7 @@ func (j *jsiiProxy_EventarcMessageBus)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_EventarcMessageBus)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_EventarcMessageBus) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -806,7 +805,7 @@ func EventarcMessageBus_GenerateConfigForImport(scope constructs.Construct, impo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.eventarcMessageBus.EventarcMessageBus",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -830,7 +829,7 @@ func EventarcMessageBus_GenerateConfigForImport(scope constructs.Construct, impo
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func EventarcMessageBus_IsConstruct(x interface{}) *bool {
+func EventarcMessageBus_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEventarcMessageBus_IsConstructParameters(x); err != nil {
@@ -841,7 +840,7 @@ func EventarcMessageBus_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.eventarcMessageBus.EventarcMessageBus",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -849,7 +848,7 @@ func EventarcMessageBus_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func EventarcMessageBus_IsTerraformElement(x interface{}) *bool {
+func EventarcMessageBus_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEventarcMessageBus_IsTerraformElementParameters(x); err != nil {
@@ -860,7 +859,7 @@ func EventarcMessageBus_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.eventarcMessageBus.EventarcMessageBus",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -868,7 +867,7 @@ func EventarcMessageBus_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func EventarcMessageBus_IsTerraformResource(x interface{}) *bool {
+func EventarcMessageBus_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEventarcMessageBus_IsTerraformResourceParameters(x); err != nil {
@@ -879,7 +878,7 @@ func EventarcMessageBus_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.eventarcMessageBus.EventarcMessageBus",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -904,31 +903,31 @@ func (e *jsiiProxy_EventarcMessageBus) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (e *jsiiProxy_EventarcMessageBus) AddOverride(path *string, value interface{}) {
+func (e *jsiiProxy_EventarcMessageBus) AddOverride(path *string, value any) {
 	if err := e.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (e *jsiiProxy_EventarcMessageBus) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_EventarcMessageBus) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -944,7 +943,7 @@ func (e *jsiiProxy_EventarcMessageBus) GetBooleanAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -960,7 +959,7 @@ func (e *jsiiProxy_EventarcMessageBus) GetBooleanMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -976,7 +975,7 @@ func (e *jsiiProxy_EventarcMessageBus) GetListAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -992,7 +991,7 @@ func (e *jsiiProxy_EventarcMessageBus) GetNumberAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1008,7 +1007,7 @@ func (e *jsiiProxy_EventarcMessageBus) GetNumberListAttribute(terraformAttribute
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1024,7 +1023,7 @@ func (e *jsiiProxy_EventarcMessageBus) GetNumberMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1040,7 +1039,7 @@ func (e *jsiiProxy_EventarcMessageBus) GetStringAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1056,15 +1055,15 @@ func (e *jsiiProxy_EventarcMessageBus) GetStringMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (e *jsiiProxy_EventarcMessageBus) HasResourceMove() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EventarcMessageBus) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1083,7 +1082,7 @@ func (e *jsiiProxy_EventarcMessageBus) ImportFrom(id *string, provider cdktf.Ter
 	_jsii_.InvokeVoid(
 		e,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1096,7 +1095,7 @@ func (e *jsiiProxy_EventarcMessageBus) InterpolationForAttribute(terraformAttrib
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1110,18 +1109,18 @@ func (e *jsiiProxy_EventarcMessageBus) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (e *jsiiProxy_EventarcMessageBus) MoveTo(moveTarget *string, index interface{}) {
+func (e *jsiiProxy_EventarcMessageBus) MoveTo(moveTarget *string, index any) {
 	if err := e.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1132,7 +1131,7 @@ func (e *jsiiProxy_EventarcMessageBus) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1143,7 +1142,7 @@ func (e *jsiiProxy_EventarcMessageBus) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1154,7 +1153,7 @@ func (e *jsiiProxy_EventarcMessageBus) PutLoggingConfig(value *EventarcMessageBu
 	_jsii_.InvokeVoid(
 		e,
 		"putLoggingConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1165,7 +1164,7 @@ func (e *jsiiProxy_EventarcMessageBus) PutTimeouts(value *EventarcMessageBusTime
 	_jsii_.InvokeVoid(
 		e,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1241,8 +1240,8 @@ func (e *jsiiProxy_EventarcMessageBus) ResetTimeouts() {
 	)
 }
 
-func (e *jsiiProxy_EventarcMessageBus) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_EventarcMessageBus) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -1254,8 +1253,8 @@ func (e *jsiiProxy_EventarcMessageBus) SynthesizeAttributes() *map[string]interf
 	return returns
 }
 
-func (e *jsiiProxy_EventarcMessageBus) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_EventarcMessageBus) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -1267,8 +1266,8 @@ func (e *jsiiProxy_EventarcMessageBus) SynthesizeHclAttributes() *map[string]int
 	return returns
 }
 
-func (e *jsiiProxy_EventarcMessageBus) ToHclTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EventarcMessageBus) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1280,8 +1279,8 @@ func (e *jsiiProxy_EventarcMessageBus) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (e *jsiiProxy_EventarcMessageBus) ToMetadata() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EventarcMessageBus) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1306,8 +1305,8 @@ func (e *jsiiProxy_EventarcMessageBus) ToString() *string {
 	return returns
 }
 
-func (e *jsiiProxy_EventarcMessageBus) ToTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EventarcMessageBus) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1318,4 +1317,3 @@ func (e *jsiiProxy_EventarcMessageBus) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -90,7 +90,7 @@ func (c *jsiiProxy_ComputeInterconnectMacsecOutputReference) validateInterpolati
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInterconnectMacsecOutputReference) validatePutPreSharedKeysParameters(value interface{}) error {
+func (c *jsiiProxy_ComputeInterconnectMacsecOutputReference) validatePutPreSharedKeysParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (c *jsiiProxy_ComputeInterconnectMacsecOutputReference) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInterconnectMacsecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInterconnectMacsecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -194,7 +194,7 @@ func (j *jsiiProxy_ComputeInterconnectMacsecOutputReference) validateSetComplexO
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInterconnectMacsecOutputReference) validateSetFailOpenParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInterconnectMacsecOutputReference) validateSetFailOpenParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -249,4 +249,3 @@ func validateNewComputeInterconnectMacsecOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

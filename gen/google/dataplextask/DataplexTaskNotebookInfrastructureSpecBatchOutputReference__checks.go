@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataplexTaskNotebookInfrastructureSpecBatchOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_DataplexTaskNotebookInfrastructureSpecBatchOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataplexTaskNotebookInfrastructureSpecBatchOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewDataplexTaskNotebookInfrastructureSpecBatchOutputReferenceParame
 
 	return nil
 }
-

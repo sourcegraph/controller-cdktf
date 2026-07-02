@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataGoogleParameterManagerParameterVersionRender) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataGoogleParameterManagerParameterVersionRender) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataGoogleParameterManagerParameterVersionRender_GenerateConfigForI
 	return nil
 }
 
-func validateDataGoogleParameterManagerParameterVersionRender_IsConstructParameters(x interface{}) error {
+func validateDataGoogleParameterManagerParameterVersionRender_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataGoogleParameterManagerParameterVersionRender_IsConstructParamet
 	return nil
 }
 
-func validateDataGoogleParameterManagerParameterVersionRender_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataGoogleParameterManagerParameterVersionRender_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataGoogleParameterManagerParameterVersionRender_IsTerraformDataSou
 	return nil
 }
 
-func validateDataGoogleParameterManagerParameterVersionRender_IsTerraformElementParameters(x interface{}) error {
+func validateDataGoogleParameterManagerParameterVersionRender_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func validateDataGoogleParameterManagerParameterVersionRender_IsTerraformElement
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleParameterManagerParameterVersionRender) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleParameterManagerParameterVersionRender) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -266,4 +266,3 @@ func validateNewDataGoogleParameterManagerParameterVersionRenderParameters(scope
 
 	return nil
 }
-

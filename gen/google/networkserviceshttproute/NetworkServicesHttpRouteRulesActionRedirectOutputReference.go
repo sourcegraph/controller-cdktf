@@ -12,9 +12,9 @@ type NetworkServicesHttpRouteRulesActionRedirectOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,9 +30,9 @@ type NetworkServicesHttpRouteRulesActionRedirectOutputReference interface {
 	HostRedirect() *string
 	SetHostRedirect(val *string)
 	HostRedirectInput() *string
-	HttpsRedirect() interface{}
-	SetHttpsRedirect(val interface{})
-	HttpsRedirectInput() interface{}
+	HttpsRedirect() any
+	SetHttpsRedirect(val any)
+	HttpsRedirectInput() any
 	InternalValue() *NetworkServicesHttpRouteRulesActionRedirect
 	SetInternalValue(val *NetworkServicesHttpRouteRulesActionRedirect)
 	PathRedirect() *string
@@ -47,9 +47,9 @@ type NetworkServicesHttpRouteRulesActionRedirectOutputReference interface {
 	ResponseCode() *string
 	SetResponseCode(val *string)
 	ResponseCodeInput() *string
-	StripQuery() interface{}
-	SetStripQuery(val interface{})
-	StripQueryInput() interface{}
+	StripQuery() any
+	SetStripQuery(val any)
+	StripQueryInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -61,7 +61,7 @@ type NetworkServicesHttpRouteRulesActionRedirectOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -91,7 +91,7 @@ type NetworkServicesHttpRouteRulesActionRedirectOutputReference interface {
 	ResetStripQuery()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -104,8 +104,8 @@ type jsiiProxy_NetworkServicesHttpRouteRulesActionRedirectOutputReference struct
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_NetworkServicesHttpRouteRulesActionRedirectOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkServicesHttpRouteRulesActionRedirectOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -164,8 +164,8 @@ func (j *jsiiProxy_NetworkServicesHttpRouteRulesActionRedirectOutputReference) H
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesHttpRouteRulesActionRedirectOutputReference) HttpsRedirect() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkServicesHttpRouteRulesActionRedirectOutputReference) HttpsRedirect() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"httpsRedirect",
@@ -174,8 +174,8 @@ func (j *jsiiProxy_NetworkServicesHttpRouteRulesActionRedirectOutputReference) H
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesHttpRouteRulesActionRedirectOutputReference) HttpsRedirectInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkServicesHttpRouteRulesActionRedirectOutputReference) HttpsRedirectInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"httpsRedirectInput",
@@ -274,8 +274,8 @@ func (j *jsiiProxy_NetworkServicesHttpRouteRulesActionRedirectOutputReference) R
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesHttpRouteRulesActionRedirectOutputReference) StripQuery() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkServicesHttpRouteRulesActionRedirectOutputReference) StripQuery() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"stripQuery",
@@ -284,8 +284,8 @@ func (j *jsiiProxy_NetworkServicesHttpRouteRulesActionRedirectOutputReference) S
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesHttpRouteRulesActionRedirectOutputReference) StripQueryInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkServicesHttpRouteRulesActionRedirectOutputReference) StripQueryInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"stripQueryInput",
@@ -314,7 +314,6 @@ func (j *jsiiProxy_NetworkServicesHttpRouteRulesActionRedirectOutputReference) T
 	return returns
 }
 
-
 func NewNetworkServicesHttpRouteRulesActionRedirectOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) NetworkServicesHttpRouteRulesActionRedirectOutputReference {
 	_init_.Initialize()
 
@@ -325,7 +324,7 @@ func NewNetworkServicesHttpRouteRulesActionRedirectOutputReference(terraformReso
 
 	_jsii_.Create(
 		"@cdktf/provider-google.networkServicesHttpRoute.NetworkServicesHttpRouteRulesActionRedirectOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -337,12 +336,12 @@ func NewNetworkServicesHttpRouteRulesActionRedirectOutputReference_Override(n Ne
 
 	_jsii_.Create(
 		"@cdktf/provider-google.networkServicesHttpRoute.NetworkServicesHttpRouteRulesActionRedirectOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesHttpRouteRulesActionRedirectOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_NetworkServicesHttpRouteRulesActionRedirectOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -353,7 +352,7 @@ func (j *jsiiProxy_NetworkServicesHttpRouteRulesActionRedirectOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesHttpRouteRulesActionRedirectOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_NetworkServicesHttpRouteRulesActionRedirectOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -364,7 +363,7 @@ func (j *jsiiProxy_NetworkServicesHttpRouteRulesActionRedirectOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesHttpRouteRulesActionRedirectOutputReference)SetHostRedirect(val *string) {
+func (j *jsiiProxy_NetworkServicesHttpRouteRulesActionRedirectOutputReference) SetHostRedirect(val *string) {
 	if err := j.validateSetHostRedirectParameters(val); err != nil {
 		panic(err)
 	}
@@ -375,7 +374,7 @@ func (j *jsiiProxy_NetworkServicesHttpRouteRulesActionRedirectOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesHttpRouteRulesActionRedirectOutputReference)SetHttpsRedirect(val interface{}) {
+func (j *jsiiProxy_NetworkServicesHttpRouteRulesActionRedirectOutputReference) SetHttpsRedirect(val any) {
 	if err := j.validateSetHttpsRedirectParameters(val); err != nil {
 		panic(err)
 	}
@@ -386,7 +385,7 @@ func (j *jsiiProxy_NetworkServicesHttpRouteRulesActionRedirectOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesHttpRouteRulesActionRedirectOutputReference)SetInternalValue(val *NetworkServicesHttpRouteRulesActionRedirect) {
+func (j *jsiiProxy_NetworkServicesHttpRouteRulesActionRedirectOutputReference) SetInternalValue(val *NetworkServicesHttpRouteRulesActionRedirect) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -397,7 +396,7 @@ func (j *jsiiProxy_NetworkServicesHttpRouteRulesActionRedirectOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesHttpRouteRulesActionRedirectOutputReference)SetPathRedirect(val *string) {
+func (j *jsiiProxy_NetworkServicesHttpRouteRulesActionRedirectOutputReference) SetPathRedirect(val *string) {
 	if err := j.validateSetPathRedirectParameters(val); err != nil {
 		panic(err)
 	}
@@ -408,7 +407,7 @@ func (j *jsiiProxy_NetworkServicesHttpRouteRulesActionRedirectOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesHttpRouteRulesActionRedirectOutputReference)SetPortRedirect(val *float64) {
+func (j *jsiiProxy_NetworkServicesHttpRouteRulesActionRedirectOutputReference) SetPortRedirect(val *float64) {
 	if err := j.validateSetPortRedirectParameters(val); err != nil {
 		panic(err)
 	}
@@ -419,7 +418,7 @@ func (j *jsiiProxy_NetworkServicesHttpRouteRulesActionRedirectOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesHttpRouteRulesActionRedirectOutputReference)SetPrefixRewrite(val *string) {
+func (j *jsiiProxy_NetworkServicesHttpRouteRulesActionRedirectOutputReference) SetPrefixRewrite(val *string) {
 	if err := j.validateSetPrefixRewriteParameters(val); err != nil {
 		panic(err)
 	}
@@ -430,7 +429,7 @@ func (j *jsiiProxy_NetworkServicesHttpRouteRulesActionRedirectOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesHttpRouteRulesActionRedirectOutputReference)SetResponseCode(val *string) {
+func (j *jsiiProxy_NetworkServicesHttpRouteRulesActionRedirectOutputReference) SetResponseCode(val *string) {
 	if err := j.validateSetResponseCodeParameters(val); err != nil {
 		panic(err)
 	}
@@ -441,7 +440,7 @@ func (j *jsiiProxy_NetworkServicesHttpRouteRulesActionRedirectOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesHttpRouteRulesActionRedirectOutputReference)SetStripQuery(val interface{}) {
+func (j *jsiiProxy_NetworkServicesHttpRouteRulesActionRedirectOutputReference) SetStripQuery(val any) {
 	if err := j.validateSetStripQueryParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,7 +451,7 @@ func (j *jsiiProxy_NetworkServicesHttpRouteRulesActionRedirectOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesHttpRouteRulesActionRedirectOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_NetworkServicesHttpRouteRulesActionRedirectOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -463,7 +462,7 @@ func (j *jsiiProxy_NetworkServicesHttpRouteRulesActionRedirectOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesHttpRouteRulesActionRedirectOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NetworkServicesHttpRouteRulesActionRedirectOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -487,16 +486,16 @@ func (n *jsiiProxy_NetworkServicesHttpRouteRulesActionRedirectOutputReference) C
 	return returns
 }
 
-func (n *jsiiProxy_NetworkServicesHttpRouteRulesActionRedirectOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (n *jsiiProxy_NetworkServicesHttpRouteRulesActionRedirectOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -512,7 +511,7 @@ func (n *jsiiProxy_NetworkServicesHttpRouteRulesActionRedirectOutputReference) G
 	_jsii_.Invoke(
 		n,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -528,7 +527,7 @@ func (n *jsiiProxy_NetworkServicesHttpRouteRulesActionRedirectOutputReference) G
 	_jsii_.Invoke(
 		n,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -544,7 +543,7 @@ func (n *jsiiProxy_NetworkServicesHttpRouteRulesActionRedirectOutputReference) G
 	_jsii_.Invoke(
 		n,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -560,7 +559,7 @@ func (n *jsiiProxy_NetworkServicesHttpRouteRulesActionRedirectOutputReference) G
 	_jsii_.Invoke(
 		n,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -576,7 +575,7 @@ func (n *jsiiProxy_NetworkServicesHttpRouteRulesActionRedirectOutputReference) G
 	_jsii_.Invoke(
 		n,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -592,7 +591,7 @@ func (n *jsiiProxy_NetworkServicesHttpRouteRulesActionRedirectOutputReference) G
 	_jsii_.Invoke(
 		n,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -608,7 +607,7 @@ func (n *jsiiProxy_NetworkServicesHttpRouteRulesActionRedirectOutputReference) G
 	_jsii_.Invoke(
 		n,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -624,7 +623,7 @@ func (n *jsiiProxy_NetworkServicesHttpRouteRulesActionRedirectOutputReference) G
 	_jsii_.Invoke(
 		n,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -653,7 +652,7 @@ func (n *jsiiProxy_NetworkServicesHttpRouteRulesActionRedirectOutputReference) I
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -716,16 +715,16 @@ func (n *jsiiProxy_NetworkServicesHttpRouteRulesActionRedirectOutputReference) R
 	)
 }
 
-func (n *jsiiProxy_NetworkServicesHttpRouteRulesActionRedirectOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (n *jsiiProxy_NetworkServicesHttpRouteRulesActionRedirectOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := n.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		n,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -744,4 +743,3 @@ func (n *jsiiProxy_NetworkServicesHttpRouteRulesActionRedirectOutputReference) T
 
 	return returns
 }
-

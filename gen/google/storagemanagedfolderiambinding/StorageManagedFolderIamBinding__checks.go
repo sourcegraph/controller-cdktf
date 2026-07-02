@@ -19,7 +19,7 @@ func (s *jsiiProxy_StorageManagedFolderIamBinding) validateAddMoveTargetParamete
 	return nil
 }
 
-func (s *jsiiProxy_StorageManagedFolderIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_StorageManagedFolderIamBinding) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_StorageManagedFolderIamBinding) validateMoveFromIdParameters(
 	return nil
 }
 
-func (s *jsiiProxy_StorageManagedFolderIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_StorageManagedFolderIamBinding) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateStorageManagedFolderIamBinding_GenerateConfigForImportParameters(sc
 	return nil
 }
 
-func validateStorageManagedFolderIamBinding_IsConstructParameters(x interface{}) error {
+func validateStorageManagedFolderIamBinding_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateStorageManagedFolderIamBinding_IsConstructParameters(x interface{})
 	return nil
 }
 
-func validateStorageManagedFolderIamBinding_IsTerraformElementParameters(x interface{}) error {
+func validateStorageManagedFolderIamBinding_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateStorageManagedFolderIamBinding_IsTerraformElementParameters(x inter
 	return nil
 }
 
-func validateStorageManagedFolderIamBinding_IsTerraformResourceParameters(x interface{}) error {
+func validateStorageManagedFolderIamBinding_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_StorageManagedFolderIamBinding) validateSetBucketParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_StorageManagedFolderIamBinding) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_StorageManagedFolderIamBinding) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_StorageManagedFolderIamBinding) validateSetConnectionParamete
 	return nil
 }
 
-func (j *jsiiProxy_StorageManagedFolderIamBinding) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_StorageManagedFolderIamBinding) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -385,7 +385,7 @@ func (j *jsiiProxy_StorageManagedFolderIamBinding) validateSetMembersParameters(
 	return nil
 }
 
-func (j *jsiiProxy_StorageManagedFolderIamBinding) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_StorageManagedFolderIamBinding) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -457,4 +457,3 @@ func validateNewStorageManagedFolderIamBindingParameters(scope constructs.Constr
 
 	return nil
 }
-

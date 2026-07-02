@@ -34,7 +34,7 @@ func (e *jsiiProxy_EventarcPipelineDestinationsList) validateResolveParameters(_
 	return nil
 }
 
-func (j *jsiiProxy_EventarcPipelineDestinationsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EventarcPipelineDestinationsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewEventarcPipelineDestinationsListParameters(terraformResource cdk
 
 	return nil
 }
-

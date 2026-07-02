@@ -98,7 +98,7 @@ func (m *jsiiProxy_MemorystoreInstanceStateInfoOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_MemorystoreInstanceStateInfoOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MemorystoreInstanceStateInfoOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewMemorystoreInstanceStateInfoOutputReferenceParameters(terraformR
 
 	return nil
 }
-

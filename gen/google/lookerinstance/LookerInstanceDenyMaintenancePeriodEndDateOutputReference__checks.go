@@ -98,7 +98,7 @@ func (l *jsiiProxy_LookerInstanceDenyMaintenancePeriodEndDateOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_LookerInstanceDenyMaintenancePeriodEndDateOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LookerInstanceDenyMaintenancePeriodEndDateOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewLookerInstanceDenyMaintenancePeriodEndDateOutputReferenceParamet
 
 	return nil
 }
-

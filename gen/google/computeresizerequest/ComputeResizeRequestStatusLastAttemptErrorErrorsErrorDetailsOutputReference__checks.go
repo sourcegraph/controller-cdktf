@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsO
 	return nil
 }
 
-func (j *jsiiProxy_ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewComputeResizeRequestStatusLastAttemptErrorErrorsErrorDetailsOutp
 
 	return nil
 }
-

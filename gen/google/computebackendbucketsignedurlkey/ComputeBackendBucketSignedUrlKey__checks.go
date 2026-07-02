@@ -19,7 +19,7 @@ func (c *jsiiProxy_ComputeBackendBucketSignedUrlKey) validateAddMoveTargetParame
 	return nil
 }
 
-func (c *jsiiProxy_ComputeBackendBucketSignedUrlKey) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_ComputeBackendBucketSignedUrlKey) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_ComputeBackendBucketSignedUrlKey) validateMoveFromIdParameter
 	return nil
 }
 
-func (c *jsiiProxy_ComputeBackendBucketSignedUrlKey) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_ComputeBackendBucketSignedUrlKey) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateComputeBackendBucketSignedUrlKey_GenerateConfigForImportParameters(
 	return nil
 }
 
-func validateComputeBackendBucketSignedUrlKey_IsConstructParameters(x interface{}) error {
+func validateComputeBackendBucketSignedUrlKey_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateComputeBackendBucketSignedUrlKey_IsConstructParameters(x interface{
 	return nil
 }
 
-func validateComputeBackendBucketSignedUrlKey_IsTerraformElementParameters(x interface{}) error {
+func validateComputeBackendBucketSignedUrlKey_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateComputeBackendBucketSignedUrlKey_IsTerraformElementParameters(x int
 	return nil
 }
 
-func validateComputeBackendBucketSignedUrlKey_IsTerraformResourceParameters(x interface{}) error {
+func validateComputeBackendBucketSignedUrlKey_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_ComputeBackendBucketSignedUrlKey) validateSetBackendBucketPar
 	return nil
 }
 
-func (j *jsiiProxy_ComputeBackendBucketSignedUrlKey) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeBackendBucketSignedUrlKey) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_ComputeBackendBucketSignedUrlKey) validateSetConnectionParame
 	return nil
 }
 
-func (j *jsiiProxy_ComputeBackendBucketSignedUrlKey) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeBackendBucketSignedUrlKey) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -393,7 +393,7 @@ func (j *jsiiProxy_ComputeBackendBucketSignedUrlKey) validateSetProjectParameter
 	return nil
 }
 
-func (j *jsiiProxy_ComputeBackendBucketSignedUrlKey) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ComputeBackendBucketSignedUrlKey) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -457,4 +457,3 @@ func validateNewComputeBackendBucketSignedUrlKeyParameters(scope constructs.Cons
 
 	return nil
 }
-

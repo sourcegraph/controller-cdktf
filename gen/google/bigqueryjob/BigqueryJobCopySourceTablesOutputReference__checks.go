@@ -98,7 +98,7 @@ func (b *jsiiProxy_BigqueryJobCopySourceTablesOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryJobCopySourceTablesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryJobCopySourceTablesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_BigqueryJobCopySourceTablesOutputReference) validateSetDatase
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryJobCopySourceTablesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryJobCopySourceTablesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewBigqueryJobCopySourceTablesOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

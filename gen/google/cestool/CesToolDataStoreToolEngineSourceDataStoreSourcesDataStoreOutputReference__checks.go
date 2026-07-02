@@ -98,7 +98,7 @@ func (c *jsiiProxy_CesToolDataStoreToolEngineSourceDataStoreSourcesDataStoreOutp
 	return nil
 }
 
-func (j *jsiiProxy_CesToolDataStoreToolEngineSourceDataStoreSourcesDataStoreOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CesToolDataStoreToolEngineSourceDataStoreSourcesDataStoreOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewCesToolDataStoreToolEngineSourceDataStoreSourcesDataStoreOutputR
 
 	return nil
 }
-

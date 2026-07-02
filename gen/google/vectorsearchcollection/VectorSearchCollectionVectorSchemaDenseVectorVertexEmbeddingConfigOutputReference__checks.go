@@ -98,7 +98,7 @@ func (v *jsiiProxy_VectorSearchCollectionVectorSchemaDenseVectorVertexEmbeddingC
 	return nil
 }
 
-func (j *jsiiProxy_VectorSearchCollectionVectorSchemaDenseVectorVertexEmbeddingConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_VectorSearchCollectionVectorSchemaDenseVectorVertexEmbeddingConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewVectorSearchCollectionVectorSchemaDenseVectorVertexEmbeddingConf
 
 	return nil
 }
-

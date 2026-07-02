@@ -12,9 +12,9 @@ type ClouddeployAutomationRulesRepairRolloutRuleOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -39,7 +39,7 @@ type ClouddeployAutomationRulesRepairRolloutRuleOutputReference interface {
 	SetPhases(val *[]*string)
 	PhasesInput() *[]*string
 	RepairPhases() ClouddeployAutomationRulesRepairRolloutRuleRepairPhasesList
-	RepairPhasesInput() interface{}
+	RepairPhasesInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -51,7 +51,7 @@ type ClouddeployAutomationRulesRepairRolloutRuleOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -72,13 +72,13 @@ type ClouddeployAutomationRulesRepairRolloutRuleOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutRepairPhases(value interface{})
+	PutRepairPhases(value any)
 	ResetJobs()
 	ResetPhases()
 	ResetRepairPhases()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -91,8 +91,8 @@ type jsiiProxy_ClouddeployAutomationRulesRepairRolloutRuleOutputReference struct
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ClouddeployAutomationRulesRepairRolloutRuleOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ClouddeployAutomationRulesRepairRolloutRuleOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -211,8 +211,8 @@ func (j *jsiiProxy_ClouddeployAutomationRulesRepairRolloutRuleOutputReference) R
 	return returns
 }
 
-func (j *jsiiProxy_ClouddeployAutomationRulesRepairRolloutRuleOutputReference) RepairPhasesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ClouddeployAutomationRulesRepairRolloutRuleOutputReference) RepairPhasesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"repairPhasesInput",
@@ -241,7 +241,6 @@ func (j *jsiiProxy_ClouddeployAutomationRulesRepairRolloutRuleOutputReference) T
 	return returns
 }
 
-
 func NewClouddeployAutomationRulesRepairRolloutRuleOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ClouddeployAutomationRulesRepairRolloutRuleOutputReference {
 	_init_.Initialize()
 
@@ -252,7 +251,7 @@ func NewClouddeployAutomationRulesRepairRolloutRuleOutputReference(terraformReso
 
 	_jsii_.Create(
 		"@cdktf/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -264,12 +263,12 @@ func NewClouddeployAutomationRulesRepairRolloutRuleOutputReference_Override(c Cl
 
 	_jsii_.Create(
 		"@cdktf/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ClouddeployAutomationRulesRepairRolloutRuleOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ClouddeployAutomationRulesRepairRolloutRuleOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -280,7 +279,7 @@ func (j *jsiiProxy_ClouddeployAutomationRulesRepairRolloutRuleOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ClouddeployAutomationRulesRepairRolloutRuleOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ClouddeployAutomationRulesRepairRolloutRuleOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -291,7 +290,7 @@ func (j *jsiiProxy_ClouddeployAutomationRulesRepairRolloutRuleOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ClouddeployAutomationRulesRepairRolloutRuleOutputReference)SetId(val *string) {
+func (j *jsiiProxy_ClouddeployAutomationRulesRepairRolloutRuleOutputReference) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -302,7 +301,7 @@ func (j *jsiiProxy_ClouddeployAutomationRulesRepairRolloutRuleOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ClouddeployAutomationRulesRepairRolloutRuleOutputReference)SetInternalValue(val *ClouddeployAutomationRulesRepairRolloutRule) {
+func (j *jsiiProxy_ClouddeployAutomationRulesRepairRolloutRuleOutputReference) SetInternalValue(val *ClouddeployAutomationRulesRepairRolloutRule) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -313,7 +312,7 @@ func (j *jsiiProxy_ClouddeployAutomationRulesRepairRolloutRuleOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ClouddeployAutomationRulesRepairRolloutRuleOutputReference)SetJobs(val *[]*string) {
+func (j *jsiiProxy_ClouddeployAutomationRulesRepairRolloutRuleOutputReference) SetJobs(val *[]*string) {
 	if err := j.validateSetJobsParameters(val); err != nil {
 		panic(err)
 	}
@@ -324,7 +323,7 @@ func (j *jsiiProxy_ClouddeployAutomationRulesRepairRolloutRuleOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ClouddeployAutomationRulesRepairRolloutRuleOutputReference)SetPhases(val *[]*string) {
+func (j *jsiiProxy_ClouddeployAutomationRulesRepairRolloutRuleOutputReference) SetPhases(val *[]*string) {
 	if err := j.validateSetPhasesParameters(val); err != nil {
 		panic(err)
 	}
@@ -335,7 +334,7 @@ func (j *jsiiProxy_ClouddeployAutomationRulesRepairRolloutRuleOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ClouddeployAutomationRulesRepairRolloutRuleOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ClouddeployAutomationRulesRepairRolloutRuleOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -346,7 +345,7 @@ func (j *jsiiProxy_ClouddeployAutomationRulesRepairRolloutRuleOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ClouddeployAutomationRulesRepairRolloutRuleOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ClouddeployAutomationRulesRepairRolloutRuleOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -370,16 +369,16 @@ func (c *jsiiProxy_ClouddeployAutomationRulesRepairRolloutRuleOutputReference) C
 	return returns
 }
 
-func (c *jsiiProxy_ClouddeployAutomationRulesRepairRolloutRuleOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ClouddeployAutomationRulesRepairRolloutRuleOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -395,7 +394,7 @@ func (c *jsiiProxy_ClouddeployAutomationRulesRepairRolloutRuleOutputReference) G
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -411,7 +410,7 @@ func (c *jsiiProxy_ClouddeployAutomationRulesRepairRolloutRuleOutputReference) G
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -427,7 +426,7 @@ func (c *jsiiProxy_ClouddeployAutomationRulesRepairRolloutRuleOutputReference) G
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -443,7 +442,7 @@ func (c *jsiiProxy_ClouddeployAutomationRulesRepairRolloutRuleOutputReference) G
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -459,7 +458,7 @@ func (c *jsiiProxy_ClouddeployAutomationRulesRepairRolloutRuleOutputReference) G
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -475,7 +474,7 @@ func (c *jsiiProxy_ClouddeployAutomationRulesRepairRolloutRuleOutputReference) G
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -491,7 +490,7 @@ func (c *jsiiProxy_ClouddeployAutomationRulesRepairRolloutRuleOutputReference) G
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -507,7 +506,7 @@ func (c *jsiiProxy_ClouddeployAutomationRulesRepairRolloutRuleOutputReference) G
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -536,21 +535,21 @@ func (c *jsiiProxy_ClouddeployAutomationRulesRepairRolloutRuleOutputReference) I
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ClouddeployAutomationRulesRepairRolloutRuleOutputReference) PutRepairPhases(value interface{}) {
+func (c *jsiiProxy_ClouddeployAutomationRulesRepairRolloutRuleOutputReference) PutRepairPhases(value any) {
 	if err := c.validatePutRepairPhasesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putRepairPhases",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -578,16 +577,16 @@ func (c *jsiiProxy_ClouddeployAutomationRulesRepairRolloutRuleOutputReference) R
 	)
 }
 
-func (c *jsiiProxy_ClouddeployAutomationRulesRepairRolloutRuleOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ClouddeployAutomationRulesRepairRolloutRuleOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -606,4 +605,3 @@ func (c *jsiiProxy_ClouddeployAutomationRulesRepairRolloutRuleOutputReference) T
 
 	return returns
 }
-

@@ -19,7 +19,7 @@ func (m *jsiiProxy_MonitoringNotificationChannel) validateAddMoveTargetParameter
 	return nil
 }
 
-func (m *jsiiProxy_MonitoringNotificationChannel) validateAddOverrideParameters(path *string, value interface{}) error {
+func (m *jsiiProxy_MonitoringNotificationChannel) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (m *jsiiProxy_MonitoringNotificationChannel) validateMoveFromIdParameters(i
 	return nil
 }
 
-func (m *jsiiProxy_MonitoringNotificationChannel) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (m *jsiiProxy_MonitoringNotificationChannel) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateMonitoringNotificationChannel_GenerateConfigForImportParameters(sco
 	return nil
 }
 
-func validateMonitoringNotificationChannel_IsConstructParameters(x interface{}) error {
+func validateMonitoringNotificationChannel_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateMonitoringNotificationChannel_IsConstructParameters(x interface{}) 
 	return nil
 }
 
-func validateMonitoringNotificationChannel_IsTerraformElementParameters(x interface{}) error {
+func validateMonitoringNotificationChannel_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateMonitoringNotificationChannel_IsTerraformElementParameters(x interf
 	return nil
 }
 
-func validateMonitoringNotificationChannel_IsTerraformResourceParameters(x interface{}) error {
+func validateMonitoringNotificationChannel_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func validateMonitoringNotificationChannel_IsTerraformResourceParameters(x inter
 	return nil
 }
 
-func (j *jsiiProxy_MonitoringNotificationChannel) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_MonitoringNotificationChannel) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -299,7 +299,7 @@ func (j *jsiiProxy_MonitoringNotificationChannel) validateSetConnectionParameter
 	return nil
 }
 
-func (j *jsiiProxy_MonitoringNotificationChannel) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_MonitoringNotificationChannel) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -372,7 +372,7 @@ func (j *jsiiProxy_MonitoringNotificationChannel) validateSetDisplayNameParamete
 	return nil
 }
 
-func (j *jsiiProxy_MonitoringNotificationChannel) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_MonitoringNotificationChannel) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -392,7 +392,7 @@ func (j *jsiiProxy_MonitoringNotificationChannel) validateSetEnabledParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_MonitoringNotificationChannel) validateSetForceDeleteParameters(val interface{}) error {
+func (j *jsiiProxy_MonitoringNotificationChannel) validateSetForceDeleteParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -444,7 +444,7 @@ func (j *jsiiProxy_MonitoringNotificationChannel) validateSetProjectParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_MonitoringNotificationChannel) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_MonitoringNotificationChannel) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -524,4 +524,3 @@ func validateNewMonitoringNotificationChannelParameters(scope constructs.Constru
 
 	return nil
 }
-

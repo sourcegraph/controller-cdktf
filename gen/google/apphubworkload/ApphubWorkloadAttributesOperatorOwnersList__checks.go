@@ -34,7 +34,7 @@ func (a *jsiiProxy_ApphubWorkloadAttributesOperatorOwnersList) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_ApphubWorkloadAttributesOperatorOwnersList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ApphubWorkloadAttributesOperatorOwnersList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewApphubWorkloadAttributesOperatorOwnersListParameters(terraformRe
 
 	return nil
 }
-

@@ -6,9 +6,9 @@ import (
 
 type GkeBackupBackupChannelConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GkeBackupBackupChannelConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The project where Backups are allowed to be stored. The format is 'projects/{project}'. {project} can be project number or project id.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_backup_backup_channel#destination_project GkeBackupBackupChannel#destination_project}
@@ -58,4 +58,3 @@ type GkeBackupBackupChannelConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_backup_backup_channel#timeouts GkeBackupBackupChannel#timeouts}
 	Timeouts *GkeBackupBackupChannelTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

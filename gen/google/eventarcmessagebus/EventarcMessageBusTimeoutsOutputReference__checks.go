@@ -98,7 +98,7 @@ func (e *jsiiProxy_EventarcMessageBusTimeoutsOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_EventarcMessageBusTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EventarcMessageBusTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_EventarcMessageBusTimeoutsOutputReference) validateSetDeleteP
 	return nil
 }
 
-func (j *jsiiProxy_EventarcMessageBusTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EventarcMessageBusTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewEventarcMessageBusTimeoutsOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

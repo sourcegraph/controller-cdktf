@@ -1,6 +1,5 @@
 package networkservicesedgecacheservice
 
-
 type NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleUrlRedirect struct {
 	// The host that will be used in the redirect response instead of the one that was supplied in the request.
 	//
@@ -13,7 +12,7 @@ type NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleUrlRedirect struc
 	// This can only be set if there is at least one (1) edgeSslCertificate set on the service.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_edge_cache_service#https_redirect NetworkServicesEdgeCacheService#https_redirect}
-	HttpsRedirect interface{} `field:"optional" json:"httpsRedirect" yaml:"httpsRedirect"`
+	HttpsRedirect any `field:"optional" json:"httpsRedirect" yaml:"httpsRedirect"`
 	// The path that will be used in the redirect response instead of the one that was supplied in the request.
 	//
 	// pathRedirect cannot be supplied together with prefixRedirect. Supply one alone or neither. If neither is supplied, the path of the original request will be used for the redirect.
@@ -45,6 +44,5 @@ type NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleUrlRedirect struc
 	// If set to false, the query portion of the original URL is retained.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_edge_cache_service#strip_query NetworkServicesEdgeCacheService#strip_query}
-	StripQuery interface{} `field:"optional" json:"stripQuery" yaml:"stripQuery"`
+	StripQuery any `field:"optional" json:"stripQuery" yaml:"stripQuery"`
 }
-

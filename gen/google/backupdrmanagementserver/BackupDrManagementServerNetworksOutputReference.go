@@ -12,9 +12,9 @@ type BackupDrManagementServerNetworksOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,8 +27,8 @@ type BackupDrManagementServerNetworksOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Network() *string
 	SetNetwork(val *string)
 	NetworkInput() *string
@@ -46,7 +46,7 @@ type BackupDrManagementServerNetworksOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -70,7 +70,7 @@ type BackupDrManagementServerNetworksOutputReference interface {
 	ResetPeeringMode()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,8 +83,8 @@ type jsiiProxy_BackupDrManagementServerNetworksOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_BackupDrManagementServerNetworksOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BackupDrManagementServerNetworksOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -123,8 +123,8 @@ func (j *jsiiProxy_BackupDrManagementServerNetworksOutputReference) Fqn() *strin
 	return returns
 }
 
-func (j *jsiiProxy_BackupDrManagementServerNetworksOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BackupDrManagementServerNetworksOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -193,7 +193,6 @@ func (j *jsiiProxy_BackupDrManagementServerNetworksOutputReference) TerraformRes
 	return returns
 }
 
-
 func NewBackupDrManagementServerNetworksOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) BackupDrManagementServerNetworksOutputReference {
 	_init_.Initialize()
 
@@ -204,7 +203,7 @@ func NewBackupDrManagementServerNetworksOutputReference(terraformResource cdktf.
 
 	_jsii_.Create(
 		"@cdktf/provider-google.backupDrManagementServer.BackupDrManagementServerNetworksOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -216,12 +215,12 @@ func NewBackupDrManagementServerNetworksOutputReference_Override(b BackupDrManag
 
 	_jsii_.Create(
 		"@cdktf/provider-google.backupDrManagementServer.BackupDrManagementServerNetworksOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		b,
 	)
 }
 
-func (j *jsiiProxy_BackupDrManagementServerNetworksOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_BackupDrManagementServerNetworksOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -232,7 +231,7 @@ func (j *jsiiProxy_BackupDrManagementServerNetworksOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_BackupDrManagementServerNetworksOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_BackupDrManagementServerNetworksOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -243,7 +242,7 @@ func (j *jsiiProxy_BackupDrManagementServerNetworksOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_BackupDrManagementServerNetworksOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_BackupDrManagementServerNetworksOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_BackupDrManagementServerNetworksOutputReference)SetInternalVa
 	)
 }
 
-func (j *jsiiProxy_BackupDrManagementServerNetworksOutputReference)SetNetwork(val *string) {
+func (j *jsiiProxy_BackupDrManagementServerNetworksOutputReference) SetNetwork(val *string) {
 	if err := j.validateSetNetworkParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_BackupDrManagementServerNetworksOutputReference)SetNetwork(va
 	)
 }
 
-func (j *jsiiProxy_BackupDrManagementServerNetworksOutputReference)SetPeeringMode(val *string) {
+func (j *jsiiProxy_BackupDrManagementServerNetworksOutputReference) SetPeeringMode(val *string) {
 	if err := j.validateSetPeeringModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_BackupDrManagementServerNetworksOutputReference)SetPeeringMod
 	)
 }
 
-func (j *jsiiProxy_BackupDrManagementServerNetworksOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_BackupDrManagementServerNetworksOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,7 +286,7 @@ func (j *jsiiProxy_BackupDrManagementServerNetworksOutputReference)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_BackupDrManagementServerNetworksOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BackupDrManagementServerNetworksOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,16 +310,16 @@ func (b *jsiiProxy_BackupDrManagementServerNetworksOutputReference) ComputeFqn()
 	return returns
 }
 
-func (b *jsiiProxy_BackupDrManagementServerNetworksOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (b *jsiiProxy_BackupDrManagementServerNetworksOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := b.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -336,7 +335,7 @@ func (b *jsiiProxy_BackupDrManagementServerNetworksOutputReference) GetBooleanAt
 	_jsii_.Invoke(
 		b,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -352,7 +351,7 @@ func (b *jsiiProxy_BackupDrManagementServerNetworksOutputReference) GetBooleanMa
 	_jsii_.Invoke(
 		b,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -368,7 +367,7 @@ func (b *jsiiProxy_BackupDrManagementServerNetworksOutputReference) GetListAttri
 	_jsii_.Invoke(
 		b,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -384,7 +383,7 @@ func (b *jsiiProxy_BackupDrManagementServerNetworksOutputReference) GetNumberAtt
 	_jsii_.Invoke(
 		b,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -400,7 +399,7 @@ func (b *jsiiProxy_BackupDrManagementServerNetworksOutputReference) GetNumberLis
 	_jsii_.Invoke(
 		b,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -416,7 +415,7 @@ func (b *jsiiProxy_BackupDrManagementServerNetworksOutputReference) GetNumberMap
 	_jsii_.Invoke(
 		b,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -432,7 +431,7 @@ func (b *jsiiProxy_BackupDrManagementServerNetworksOutputReference) GetStringAtt
 	_jsii_.Invoke(
 		b,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -448,7 +447,7 @@ func (b *jsiiProxy_BackupDrManagementServerNetworksOutputReference) GetStringMap
 	_jsii_.Invoke(
 		b,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -477,7 +476,7 @@ func (b *jsiiProxy_BackupDrManagementServerNetworksOutputReference) Interpolatio
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -492,16 +491,16 @@ func (b *jsiiProxy_BackupDrManagementServerNetworksOutputReference) ResetPeering
 	)
 }
 
-func (b *jsiiProxy_BackupDrManagementServerNetworksOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (b *jsiiProxy_BackupDrManagementServerNetworksOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := b.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -520,4 +519,3 @@ func (b *jsiiProxy_BackupDrManagementServerNetworksOutputReference) ToString() *
 
 	return returns
 }
-

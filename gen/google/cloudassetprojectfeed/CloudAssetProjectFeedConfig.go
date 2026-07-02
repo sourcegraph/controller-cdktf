@@ -6,9 +6,9 @@ import (
 
 type CloudAssetProjectFeedConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type CloudAssetProjectFeedConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// This is the client-assigned asset feed identifier and it needs to be unique under a specific parent.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_asset_project_feed#feed_id CloudAssetProjectFeed#feed_id}
@@ -76,4 +76,3 @@ type CloudAssetProjectFeedConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_asset_project_feed#timeouts CloudAssetProjectFeed#timeouts}
 	Timeouts *CloudAssetProjectFeedTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

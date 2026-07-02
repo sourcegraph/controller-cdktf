@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeRegionBackendServiceConnectionTrackingPolicyOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceConnectionTrackingPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionBackendServiceConnectionTrackingPolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_ComputeRegionBackendServiceConnectionTrackingPolicyOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceConnectionTrackingPolicyOutputReference) validateSetEnableStrongAffinityParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionBackendServiceConnectionTrackingPolicyOutputReference) validateSetEnableStrongAffinityParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -242,4 +242,3 @@ func validateNewComputeRegionBackendServiceConnectionTrackingPolicyOutputReferen
 
 	return nil
 }
-

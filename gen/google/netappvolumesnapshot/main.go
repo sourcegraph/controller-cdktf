@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.netappVolumeSnapshot.NetappVolumeSnapshot",
-		reflect.TypeOf((*NetappVolumeSnapshot)(nil)).Elem(),
+		reflect.TypeFor[NetappVolumeSnapshot](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -78,7 +78,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "volumeName", GoGetter: "VolumeName"},
 			_jsii_.MemberProperty{JsiiProperty: "volumeNameInput", GoGetter: "VolumeNameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetappVolumeSnapshot{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -86,15 +86,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.netappVolumeSnapshot.NetappVolumeSnapshotConfig",
-		reflect.TypeOf((*NetappVolumeSnapshotConfig)(nil)).Elem(),
+		reflect.TypeFor[NetappVolumeSnapshotConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.netappVolumeSnapshot.NetappVolumeSnapshotTimeouts",
-		reflect.TypeOf((*NetappVolumeSnapshotTimeouts)(nil)).Elem(),
+		reflect.TypeFor[NetappVolumeSnapshotTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.netappVolumeSnapshot.NetappVolumeSnapshotTimeoutsOutputReference",
-		reflect.TypeOf((*NetappVolumeSnapshotTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetappVolumeSnapshotTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -127,7 +127,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetappVolumeSnapshotTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

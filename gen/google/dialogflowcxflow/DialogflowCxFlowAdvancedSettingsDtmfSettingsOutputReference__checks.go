@@ -98,7 +98,7 @@ func (d *jsiiProxy_DialogflowCxFlowAdvancedSettingsDtmfSettingsOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxFlowAdvancedSettingsDtmfSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxFlowAdvancedSettingsDtmfSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DialogflowCxFlowAdvancedSettingsDtmfSettingsOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxFlowAdvancedSettingsDtmfSettingsOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxFlowAdvancedSettingsDtmfSettingsOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -234,4 +234,3 @@ func validateNewDialogflowCxFlowAdvancedSettingsDtmfSettingsOutputReferenceParam
 
 	return nil
 }
-

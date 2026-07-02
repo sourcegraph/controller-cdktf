@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.pubsubLiteTopic.PubsubLiteTopic",
-		reflect.TypeOf((*PubsubLiteTopic)(nil)).Elem(),
+		reflect.TypeFor[PubsubLiteTopic](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -83,7 +83,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zone", GoGetter: "Zone"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneInput", GoGetter: "ZoneInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PubsubLiteTopic{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -91,19 +91,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.pubsubLiteTopic.PubsubLiteTopicConfig",
-		reflect.TypeOf((*PubsubLiteTopicConfig)(nil)).Elem(),
+		reflect.TypeFor[PubsubLiteTopicConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.pubsubLiteTopic.PubsubLiteTopicPartitionConfig",
-		reflect.TypeOf((*PubsubLiteTopicPartitionConfig)(nil)).Elem(),
+		reflect.TypeFor[PubsubLiteTopicPartitionConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.pubsubLiteTopic.PubsubLiteTopicPartitionConfigCapacity",
-		reflect.TypeOf((*PubsubLiteTopicPartitionConfigCapacity)(nil)).Elem(),
+		reflect.TypeFor[PubsubLiteTopicPartitionConfigCapacity](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.pubsubLiteTopic.PubsubLiteTopicPartitionConfigCapacityOutputReference",
-		reflect.TypeOf((*PubsubLiteTopicPartitionConfigCapacityOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PubsubLiteTopicPartitionConfigCapacityOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -131,7 +131,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PubsubLiteTopicPartitionConfigCapacityOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -139,7 +139,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.pubsubLiteTopic.PubsubLiteTopicPartitionConfigOutputReference",
-		reflect.TypeOf((*PubsubLiteTopicPartitionConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PubsubLiteTopicPartitionConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "capacity", GoGetter: "Capacity"},
 			_jsii_.MemberProperty{JsiiProperty: "capacityInput", GoGetter: "CapacityInput"},
@@ -169,7 +169,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PubsubLiteTopicPartitionConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -177,11 +177,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.pubsubLiteTopic.PubsubLiteTopicReservationConfig",
-		reflect.TypeOf((*PubsubLiteTopicReservationConfig)(nil)).Elem(),
+		reflect.TypeFor[PubsubLiteTopicReservationConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.pubsubLiteTopic.PubsubLiteTopicReservationConfigOutputReference",
-		reflect.TypeOf((*PubsubLiteTopicReservationConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PubsubLiteTopicReservationConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -208,7 +208,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "throughputReservationInput", GoGetter: "ThroughputReservationInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PubsubLiteTopicReservationConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -216,11 +216,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.pubsubLiteTopic.PubsubLiteTopicRetentionConfig",
-		reflect.TypeOf((*PubsubLiteTopicRetentionConfig)(nil)).Elem(),
+		reflect.TypeFor[PubsubLiteTopicRetentionConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.pubsubLiteTopic.PubsubLiteTopicRetentionConfigOutputReference",
-		reflect.TypeOf((*PubsubLiteTopicRetentionConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PubsubLiteTopicRetentionConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -249,7 +249,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PubsubLiteTopicRetentionConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -257,11 +257,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.pubsubLiteTopic.PubsubLiteTopicTimeouts",
-		reflect.TypeOf((*PubsubLiteTopicTimeouts)(nil)).Elem(),
+		reflect.TypeFor[PubsubLiteTopicTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.pubsubLiteTopic.PubsubLiteTopicTimeoutsOutputReference",
-		reflect.TypeOf((*PubsubLiteTopicTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PubsubLiteTopicTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -294,7 +294,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PubsubLiteTopicTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

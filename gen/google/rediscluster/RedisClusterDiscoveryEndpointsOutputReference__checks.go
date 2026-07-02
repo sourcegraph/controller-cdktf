@@ -98,7 +98,7 @@ func (r *jsiiProxy_RedisClusterDiscoveryEndpointsOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_RedisClusterDiscoveryEndpointsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_RedisClusterDiscoveryEndpointsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewRedisClusterDiscoveryEndpointsOutputReferenceParameters(terrafor
 
 	return nil
 }
-

@@ -34,7 +34,7 @@ func (f *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsList) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewFilestoreInstanceFileSharesNfsExportOptionsListParameters(terraf
 
 	return nil
 }
-

@@ -90,7 +90,7 @@ func (i *jsiiProxy_IamWorkloadIdentityPoolInlineTrustConfigOutputReference) vali
 	return nil
 }
 
-func (i *jsiiProxy_IamWorkloadIdentityPoolInlineTrustConfigOutputReference) validatePutAdditionalTrustBundlesParameters(value interface{}) error {
+func (i *jsiiProxy_IamWorkloadIdentityPoolInlineTrustConfigOutputReference) validatePutAdditionalTrustBundlesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (i *jsiiProxy_IamWorkloadIdentityPoolInlineTrustConfigOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_IamWorkloadIdentityPoolInlineTrustConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IamWorkloadIdentityPoolInlineTrustConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -229,4 +229,3 @@ func validateNewIamWorkloadIdentityPoolInlineTrustConfigOutputReferenceParameter
 
 	return nil
 }
-

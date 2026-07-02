@@ -18,15 +18,15 @@ type ComputeRegionSecurityPolicyRule interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -57,9 +57,9 @@ type ComputeRegionSecurityPolicyRule interface {
 	Node() constructs.Node
 	PreconfiguredWafConfig() ComputeRegionSecurityPolicyRulePreconfiguredWafConfigOutputReference
 	PreconfiguredWafConfigInput() *ComputeRegionSecurityPolicyRulePreconfiguredWafConfig
-	Preview() interface{}
-	SetPreview(val interface{})
-	PreviewInput() interface{}
+	Preview() any
+	SetPreview(val any)
+	PreviewInput() any
 	Priority() *float64
 	SetPriority(val *float64)
 	PriorityInput() *float64
@@ -71,13 +71,13 @@ type ComputeRegionSecurityPolicyRule interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	RateLimitOptions() ComputeRegionSecurityPolicyRuleRateLimitOptionsOutputReference
 	RateLimitOptionsInput() *ComputeRegionSecurityPolicyRuleRateLimitOptions
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
@@ -87,18 +87,18 @@ type ComputeRegionSecurityPolicyRule interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() ComputeRegionSecurityPolicyRuleTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -116,7 +116,7 @@ type ComputeRegionSecurityPolicyRule interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -128,7 +128,7 @@ type ComputeRegionSecurityPolicyRule interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -152,17 +152,17 @@ type ComputeRegionSecurityPolicyRule interface {
 	ResetProject()
 	ResetRateLimitOptions()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ComputeRegionSecurityPolicyRule
@@ -200,8 +200,8 @@ func (j *jsiiProxy_ComputeRegionSecurityPolicyRule) CdktfStack() cdktf.Terraform
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionSecurityPolicyRule) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRegionSecurityPolicyRule) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -210,8 +210,8 @@ func (j *jsiiProxy_ComputeRegionSecurityPolicyRule) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionSecurityPolicyRule) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ComputeRegionSecurityPolicyRule) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -220,8 +220,8 @@ func (j *jsiiProxy_ComputeRegionSecurityPolicyRule) ConstructNodeMetadata() *map
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionSecurityPolicyRule) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRegionSecurityPolicyRule) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -390,8 +390,8 @@ func (j *jsiiProxy_ComputeRegionSecurityPolicyRule) PreconfiguredWafConfigInput(
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionSecurityPolicyRule) Preview() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRegionSecurityPolicyRule) Preview() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"preview",
@@ -400,8 +400,8 @@ func (j *jsiiProxy_ComputeRegionSecurityPolicyRule) Preview() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionSecurityPolicyRule) PreviewInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRegionSecurityPolicyRule) PreviewInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"previewInput",
@@ -460,8 +460,8 @@ func (j *jsiiProxy_ComputeRegionSecurityPolicyRule) Provider() cdktf.TerraformPr
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionSecurityPolicyRule) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ComputeRegionSecurityPolicyRule) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -490,8 +490,8 @@ func (j *jsiiProxy_ComputeRegionSecurityPolicyRule) RateLimitOptionsInput() *Com
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionSecurityPolicyRule) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRegionSecurityPolicyRule) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -550,8 +550,8 @@ func (j *jsiiProxy_ComputeRegionSecurityPolicyRule) TerraformGeneratorMetadata()
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionSecurityPolicyRule) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ComputeRegionSecurityPolicyRule) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -580,8 +580,8 @@ func (j *jsiiProxy_ComputeRegionSecurityPolicyRule) Timeouts() ComputeRegionSecu
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionSecurityPolicyRule) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRegionSecurityPolicyRule) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -589,7 +589,6 @@ func (j *jsiiProxy_ComputeRegionSecurityPolicyRule) TimeoutsInput() interface{} 
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_security_policy_rule google_compute_region_security_policy_rule} Resource.
 func NewComputeRegionSecurityPolicyRule(scope constructs.Construct, id *string, config *ComputeRegionSecurityPolicyRuleConfig) ComputeRegionSecurityPolicyRule {
@@ -602,7 +601,7 @@ func NewComputeRegionSecurityPolicyRule(scope constructs.Construct, id *string, 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeRegionSecurityPolicyRule.ComputeRegionSecurityPolicyRule",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -615,12 +614,12 @@ func NewComputeRegionSecurityPolicyRule_Override(c ComputeRegionSecurityPolicyRu
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeRegionSecurityPolicyRule.ComputeRegionSecurityPolicyRule",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionSecurityPolicyRule)SetAction(val *string) {
+func (j *jsiiProxy_ComputeRegionSecurityPolicyRule) SetAction(val *string) {
 	if err := j.validateSetActionParameters(val); err != nil {
 		panic(err)
 	}
@@ -631,7 +630,7 @@ func (j *jsiiProxy_ComputeRegionSecurityPolicyRule)SetAction(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionSecurityPolicyRule)SetConnection(val interface{}) {
+func (j *jsiiProxy_ComputeRegionSecurityPolicyRule) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -642,7 +641,7 @@ func (j *jsiiProxy_ComputeRegionSecurityPolicyRule)SetConnection(val interface{}
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionSecurityPolicyRule)SetCount(val interface{}) {
+func (j *jsiiProxy_ComputeRegionSecurityPolicyRule) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -653,7 +652,7 @@ func (j *jsiiProxy_ComputeRegionSecurityPolicyRule)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionSecurityPolicyRule)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ComputeRegionSecurityPolicyRule) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -661,7 +660,7 @@ func (j *jsiiProxy_ComputeRegionSecurityPolicyRule)SetDependsOn(val *[]*string) 
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionSecurityPolicyRule)SetDescription(val *string) {
+func (j *jsiiProxy_ComputeRegionSecurityPolicyRule) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -672,7 +671,7 @@ func (j *jsiiProxy_ComputeRegionSecurityPolicyRule)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionSecurityPolicyRule)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ComputeRegionSecurityPolicyRule) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -680,7 +679,7 @@ func (j *jsiiProxy_ComputeRegionSecurityPolicyRule)SetForEach(val cdktf.ITerrafo
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionSecurityPolicyRule)SetId(val *string) {
+func (j *jsiiProxy_ComputeRegionSecurityPolicyRule) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -691,7 +690,7 @@ func (j *jsiiProxy_ComputeRegionSecurityPolicyRule)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionSecurityPolicyRule)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ComputeRegionSecurityPolicyRule) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -702,7 +701,7 @@ func (j *jsiiProxy_ComputeRegionSecurityPolicyRule)SetLifecycle(val *cdktf.Terra
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionSecurityPolicyRule)SetPreview(val interface{}) {
+func (j *jsiiProxy_ComputeRegionSecurityPolicyRule) SetPreview(val any) {
 	if err := j.validateSetPreviewParameters(val); err != nil {
 		panic(err)
 	}
@@ -713,7 +712,7 @@ func (j *jsiiProxy_ComputeRegionSecurityPolicyRule)SetPreview(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionSecurityPolicyRule)SetPriority(val *float64) {
+func (j *jsiiProxy_ComputeRegionSecurityPolicyRule) SetPriority(val *float64) {
 	if err := j.validateSetPriorityParameters(val); err != nil {
 		panic(err)
 	}
@@ -724,7 +723,7 @@ func (j *jsiiProxy_ComputeRegionSecurityPolicyRule)SetPriority(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionSecurityPolicyRule)SetProject(val *string) {
+func (j *jsiiProxy_ComputeRegionSecurityPolicyRule) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -735,7 +734,7 @@ func (j *jsiiProxy_ComputeRegionSecurityPolicyRule)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionSecurityPolicyRule)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ComputeRegionSecurityPolicyRule) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -743,7 +742,7 @@ func (j *jsiiProxy_ComputeRegionSecurityPolicyRule)SetProvider(val cdktf.Terrafo
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionSecurityPolicyRule)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ComputeRegionSecurityPolicyRule) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -754,7 +753,7 @@ func (j *jsiiProxy_ComputeRegionSecurityPolicyRule)SetProvisioners(val *[]interf
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionSecurityPolicyRule)SetRegion(val *string) {
+func (j *jsiiProxy_ComputeRegionSecurityPolicyRule) SetRegion(val *string) {
 	if err := j.validateSetRegionParameters(val); err != nil {
 		panic(err)
 	}
@@ -765,7 +764,7 @@ func (j *jsiiProxy_ComputeRegionSecurityPolicyRule)SetRegion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionSecurityPolicyRule)SetSecurityPolicy(val *string) {
+func (j *jsiiProxy_ComputeRegionSecurityPolicyRule) SetSecurityPolicy(val *string) {
 	if err := j.validateSetSecurityPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -788,7 +787,7 @@ func ComputeRegionSecurityPolicyRule_GenerateConfigForImport(scope constructs.Co
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeRegionSecurityPolicyRule.ComputeRegionSecurityPolicyRule",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -812,7 +811,7 @@ func ComputeRegionSecurityPolicyRule_GenerateConfigForImport(scope constructs.Co
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ComputeRegionSecurityPolicyRule_IsConstruct(x interface{}) *bool {
+func ComputeRegionSecurityPolicyRule_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeRegionSecurityPolicyRule_IsConstructParameters(x); err != nil {
@@ -823,7 +822,7 @@ func ComputeRegionSecurityPolicyRule_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeRegionSecurityPolicyRule.ComputeRegionSecurityPolicyRule",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -831,7 +830,7 @@ func ComputeRegionSecurityPolicyRule_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ComputeRegionSecurityPolicyRule_IsTerraformElement(x interface{}) *bool {
+func ComputeRegionSecurityPolicyRule_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeRegionSecurityPolicyRule_IsTerraformElementParameters(x); err != nil {
@@ -842,7 +841,7 @@ func ComputeRegionSecurityPolicyRule_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeRegionSecurityPolicyRule.ComputeRegionSecurityPolicyRule",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -850,7 +849,7 @@ func ComputeRegionSecurityPolicyRule_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ComputeRegionSecurityPolicyRule_IsTerraformResource(x interface{}) *bool {
+func ComputeRegionSecurityPolicyRule_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeRegionSecurityPolicyRule_IsTerraformResourceParameters(x); err != nil {
@@ -861,7 +860,7 @@ func ComputeRegionSecurityPolicyRule_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeRegionSecurityPolicyRule.ComputeRegionSecurityPolicyRule",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -886,31 +885,31 @@ func (c *jsiiProxy_ComputeRegionSecurityPolicyRule) AddMoveTarget(moveTarget *st
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_ComputeRegionSecurityPolicyRule) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_ComputeRegionSecurityPolicyRule) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_ComputeRegionSecurityPolicyRule) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComputeRegionSecurityPolicyRule) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -926,7 +925,7 @@ func (c *jsiiProxy_ComputeRegionSecurityPolicyRule) GetBooleanAttribute(terrafor
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -942,7 +941,7 @@ func (c *jsiiProxy_ComputeRegionSecurityPolicyRule) GetBooleanMapAttribute(terra
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -958,7 +957,7 @@ func (c *jsiiProxy_ComputeRegionSecurityPolicyRule) GetListAttribute(terraformAt
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -974,7 +973,7 @@ func (c *jsiiProxy_ComputeRegionSecurityPolicyRule) GetNumberAttribute(terraform
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -990,7 +989,7 @@ func (c *jsiiProxy_ComputeRegionSecurityPolicyRule) GetNumberListAttribute(terra
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1006,7 +1005,7 @@ func (c *jsiiProxy_ComputeRegionSecurityPolicyRule) GetNumberMapAttribute(terraf
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1022,7 +1021,7 @@ func (c *jsiiProxy_ComputeRegionSecurityPolicyRule) GetStringAttribute(terraform
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1038,15 +1037,15 @@ func (c *jsiiProxy_ComputeRegionSecurityPolicyRule) GetStringMapAttribute(terraf
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ComputeRegionSecurityPolicyRule) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeRegionSecurityPolicyRule) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1065,7 +1064,7 @@ func (c *jsiiProxy_ComputeRegionSecurityPolicyRule) ImportFrom(id *string, provi
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1078,7 +1077,7 @@ func (c *jsiiProxy_ComputeRegionSecurityPolicyRule) InterpolationForAttribute(te
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1092,18 +1091,18 @@ func (c *jsiiProxy_ComputeRegionSecurityPolicyRule) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_ComputeRegionSecurityPolicyRule) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_ComputeRegionSecurityPolicyRule) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1114,7 +1113,7 @@ func (c *jsiiProxy_ComputeRegionSecurityPolicyRule) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1125,7 +1124,7 @@ func (c *jsiiProxy_ComputeRegionSecurityPolicyRule) OverrideLogicalId(newLogical
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1136,7 +1135,7 @@ func (c *jsiiProxy_ComputeRegionSecurityPolicyRule) PutMatch(value *ComputeRegio
 	_jsii_.InvokeVoid(
 		c,
 		"putMatch",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1147,7 +1146,7 @@ func (c *jsiiProxy_ComputeRegionSecurityPolicyRule) PutNetworkMatch(value *Compu
 	_jsii_.InvokeVoid(
 		c,
 		"putNetworkMatch",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1158,7 +1157,7 @@ func (c *jsiiProxy_ComputeRegionSecurityPolicyRule) PutPreconfiguredWafConfig(va
 	_jsii_.InvokeVoid(
 		c,
 		"putPreconfiguredWafConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1169,7 +1168,7 @@ func (c *jsiiProxy_ComputeRegionSecurityPolicyRule) PutRateLimitOptions(value *C
 	_jsii_.InvokeVoid(
 		c,
 		"putRateLimitOptions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1180,7 +1179,7 @@ func (c *jsiiProxy_ComputeRegionSecurityPolicyRule) PutTimeouts(value *ComputeRe
 	_jsii_.InvokeVoid(
 		c,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1264,8 +1263,8 @@ func (c *jsiiProxy_ComputeRegionSecurityPolicyRule) ResetTimeouts() {
 	)
 }
 
-func (c *jsiiProxy_ComputeRegionSecurityPolicyRule) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ComputeRegionSecurityPolicyRule) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1277,8 +1276,8 @@ func (c *jsiiProxy_ComputeRegionSecurityPolicyRule) SynthesizeAttributes() *map[
 	return returns
 }
 
-func (c *jsiiProxy_ComputeRegionSecurityPolicyRule) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ComputeRegionSecurityPolicyRule) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1290,8 +1289,8 @@ func (c *jsiiProxy_ComputeRegionSecurityPolicyRule) SynthesizeHclAttributes() *m
 	return returns
 }
 
-func (c *jsiiProxy_ComputeRegionSecurityPolicyRule) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeRegionSecurityPolicyRule) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1303,8 +1302,8 @@ func (c *jsiiProxy_ComputeRegionSecurityPolicyRule) ToHclTerraform() interface{}
 	return returns
 }
 
-func (c *jsiiProxy_ComputeRegionSecurityPolicyRule) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeRegionSecurityPolicyRule) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1329,8 +1328,8 @@ func (c *jsiiProxy_ComputeRegionSecurityPolicyRule) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_ComputeRegionSecurityPolicyRule) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeRegionSecurityPolicyRule) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1341,4 +1340,3 @@ func (c *jsiiProxy_ComputeRegionSecurityPolicyRule) ToTerraform() interface{} {
 
 	return returns
 }
-

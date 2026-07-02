@@ -98,7 +98,7 @@ func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyBaselineValuesCaOptionsOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyBaselineValuesCaOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyBaselineValuesCaOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyBaselineValuesCaOptionsOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyBaselineValuesCaOptionsOutputReference) validateSetIsCaParameters(val interface{}) error {
+func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyBaselineValuesCaOptionsOutputReference) validateSetIsCaParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -199,7 +199,7 @@ func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyBaselineValuesCaOptionsOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyBaselineValuesCaOptionsOutputReference) validateSetNonCaParameters(val interface{}) error {
+func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyBaselineValuesCaOptionsOutputReference) validateSetNonCaParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -235,7 +235,7 @@ func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyBaselineValuesCaOptionsOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyBaselineValuesCaOptionsOutputReference) validateSetZeroMaxIssuerPathLengthParameters(val interface{}) error {
+func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyBaselineValuesCaOptionsOutputReference) validateSetZeroMaxIssuerPathLengthParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -266,4 +266,3 @@ func validateNewPrivatecaCaPoolIssuancePolicyBaselineValuesCaOptionsOutputRefere
 
 	return nil
 }
-

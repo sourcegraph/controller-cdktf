@@ -18,15 +18,15 @@ type BigtableAppProfile interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DataBoostIsolationReadOnly() BigtableAppProfileDataBoostIsolationReadOnlyOutputReference
 	DataBoostIsolationReadOnlyInput() *BigtableAppProfileDataBoostIsolationReadOnly
 	// Experimental.
@@ -47,9 +47,9 @@ type BigtableAppProfile interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	IgnoreWarnings() interface{}
-	SetIgnoreWarnings(val interface{})
-	IgnoreWarningsInput() interface{}
+	IgnoreWarnings() any
+	SetIgnoreWarnings(val any)
+	IgnoreWarningsInput() any
 	Instance() *string
 	SetInstance(val *string)
 	InstanceInput() *string
@@ -60,9 +60,9 @@ type BigtableAppProfile interface {
 	MultiClusterRoutingClusterIds() *[]*string
 	SetMultiClusterRoutingClusterIds(val *[]*string)
 	MultiClusterRoutingClusterIdsInput() *[]*string
-	MultiClusterRoutingUseAny() interface{}
-	SetMultiClusterRoutingUseAny(val interface{})
-	MultiClusterRoutingUseAnyInput() interface{}
+	MultiClusterRoutingUseAny() any
+	SetMultiClusterRoutingUseAny(val any)
+	MultiClusterRoutingUseAnyInput() any
 	Name() *string
 	// The tree node.
 	Node() constructs.Node
@@ -74,14 +74,14 @@ type BigtableAppProfile interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
-	RowAffinity() interface{}
-	SetRowAffinity(val interface{})
-	RowAffinityInput() interface{}
+	RawOverrides() any
+	RowAffinity() any
+	SetRowAffinity(val any)
+	RowAffinityInput() any
 	SingleClusterRouting() BigtableAppProfileSingleClusterRoutingOutputReference
 	SingleClusterRoutingInput() *BigtableAppProfileSingleClusterRouting
 	StandardIsolation() BigtableAppProfileStandardIsolationOutputReference
@@ -89,18 +89,18 @@ type BigtableAppProfile interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() BigtableAppProfileTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -118,7 +118,7 @@ type BigtableAppProfile interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -130,7 +130,7 @@ type BigtableAppProfile interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -156,17 +156,17 @@ type BigtableAppProfile interface {
 	ResetSingleClusterRouting()
 	ResetStandardIsolation()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for BigtableAppProfile
@@ -204,8 +204,8 @@ func (j *jsiiProxy_BigtableAppProfile) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_BigtableAppProfile) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigtableAppProfile) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -214,8 +214,8 @@ func (j *jsiiProxy_BigtableAppProfile) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_BigtableAppProfile) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_BigtableAppProfile) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -224,8 +224,8 @@ func (j *jsiiProxy_BigtableAppProfile) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_BigtableAppProfile) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigtableAppProfile) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -334,8 +334,8 @@ func (j *jsiiProxy_BigtableAppProfile) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_BigtableAppProfile) IgnoreWarnings() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigtableAppProfile) IgnoreWarnings() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ignoreWarnings",
@@ -344,8 +344,8 @@ func (j *jsiiProxy_BigtableAppProfile) IgnoreWarnings() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_BigtableAppProfile) IgnoreWarningsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigtableAppProfile) IgnoreWarningsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ignoreWarningsInput",
@@ -404,8 +404,8 @@ func (j *jsiiProxy_BigtableAppProfile) MultiClusterRoutingClusterIdsInput() *[]*
 	return returns
 }
 
-func (j *jsiiProxy_BigtableAppProfile) MultiClusterRoutingUseAny() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigtableAppProfile) MultiClusterRoutingUseAny() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"multiClusterRoutingUseAny",
@@ -414,8 +414,8 @@ func (j *jsiiProxy_BigtableAppProfile) MultiClusterRoutingUseAny() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_BigtableAppProfile) MultiClusterRoutingUseAnyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigtableAppProfile) MultiClusterRoutingUseAnyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"multiClusterRoutingUseAnyInput",
@@ -474,8 +474,8 @@ func (j *jsiiProxy_BigtableAppProfile) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_BigtableAppProfile) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_BigtableAppProfile) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -484,8 +484,8 @@ func (j *jsiiProxy_BigtableAppProfile) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_BigtableAppProfile) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigtableAppProfile) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -494,8 +494,8 @@ func (j *jsiiProxy_BigtableAppProfile) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_BigtableAppProfile) RowAffinity() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigtableAppProfile) RowAffinity() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rowAffinity",
@@ -504,8 +504,8 @@ func (j *jsiiProxy_BigtableAppProfile) RowAffinity() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_BigtableAppProfile) RowAffinityInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigtableAppProfile) RowAffinityInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rowAffinityInput",
@@ -564,8 +564,8 @@ func (j *jsiiProxy_BigtableAppProfile) TerraformGeneratorMetadata() *cdktf.Terra
 	return returns
 }
 
-func (j *jsiiProxy_BigtableAppProfile) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_BigtableAppProfile) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -594,8 +594,8 @@ func (j *jsiiProxy_BigtableAppProfile) Timeouts() BigtableAppProfileTimeoutsOutp
 	return returns
 }
 
-func (j *jsiiProxy_BigtableAppProfile) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigtableAppProfile) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -603,7 +603,6 @@ func (j *jsiiProxy_BigtableAppProfile) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigtable_app_profile google_bigtable_app_profile} Resource.
 func NewBigtableAppProfile(scope constructs.Construct, id *string, config *BigtableAppProfileConfig) BigtableAppProfile {
@@ -616,7 +615,7 @@ func NewBigtableAppProfile(scope constructs.Construct, id *string, config *Bigta
 
 	_jsii_.Create(
 		"@cdktf/provider-google.bigtableAppProfile.BigtableAppProfile",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -629,12 +628,12 @@ func NewBigtableAppProfile_Override(b BigtableAppProfile, scope constructs.Const
 
 	_jsii_.Create(
 		"@cdktf/provider-google.bigtableAppProfile.BigtableAppProfile",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		b,
 	)
 }
 
-func (j *jsiiProxy_BigtableAppProfile)SetAppProfileId(val *string) {
+func (j *jsiiProxy_BigtableAppProfile) SetAppProfileId(val *string) {
 	if err := j.validateSetAppProfileIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -645,7 +644,7 @@ func (j *jsiiProxy_BigtableAppProfile)SetAppProfileId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BigtableAppProfile)SetConnection(val interface{}) {
+func (j *jsiiProxy_BigtableAppProfile) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -656,7 +655,7 @@ func (j *jsiiProxy_BigtableAppProfile)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_BigtableAppProfile)SetCount(val interface{}) {
+func (j *jsiiProxy_BigtableAppProfile) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -667,7 +666,7 @@ func (j *jsiiProxy_BigtableAppProfile)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_BigtableAppProfile)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_BigtableAppProfile) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -675,7 +674,7 @@ func (j *jsiiProxy_BigtableAppProfile)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_BigtableAppProfile)SetDescription(val *string) {
+func (j *jsiiProxy_BigtableAppProfile) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -686,7 +685,7 @@ func (j *jsiiProxy_BigtableAppProfile)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BigtableAppProfile)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_BigtableAppProfile) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -694,7 +693,7 @@ func (j *jsiiProxy_BigtableAppProfile)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_BigtableAppProfile)SetId(val *string) {
+func (j *jsiiProxy_BigtableAppProfile) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -705,7 +704,7 @@ func (j *jsiiProxy_BigtableAppProfile)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BigtableAppProfile)SetIgnoreWarnings(val interface{}) {
+func (j *jsiiProxy_BigtableAppProfile) SetIgnoreWarnings(val any) {
 	if err := j.validateSetIgnoreWarningsParameters(val); err != nil {
 		panic(err)
 	}
@@ -716,7 +715,7 @@ func (j *jsiiProxy_BigtableAppProfile)SetIgnoreWarnings(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_BigtableAppProfile)SetInstance(val *string) {
+func (j *jsiiProxy_BigtableAppProfile) SetInstance(val *string) {
 	if err := j.validateSetInstanceParameters(val); err != nil {
 		panic(err)
 	}
@@ -727,7 +726,7 @@ func (j *jsiiProxy_BigtableAppProfile)SetInstance(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BigtableAppProfile)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_BigtableAppProfile) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -738,7 +737,7 @@ func (j *jsiiProxy_BigtableAppProfile)SetLifecycle(val *cdktf.TerraformResourceL
 	)
 }
 
-func (j *jsiiProxy_BigtableAppProfile)SetMultiClusterRoutingClusterIds(val *[]*string) {
+func (j *jsiiProxy_BigtableAppProfile) SetMultiClusterRoutingClusterIds(val *[]*string) {
 	if err := j.validateSetMultiClusterRoutingClusterIdsParameters(val); err != nil {
 		panic(err)
 	}
@@ -749,7 +748,7 @@ func (j *jsiiProxy_BigtableAppProfile)SetMultiClusterRoutingClusterIds(val *[]*s
 	)
 }
 
-func (j *jsiiProxy_BigtableAppProfile)SetMultiClusterRoutingUseAny(val interface{}) {
+func (j *jsiiProxy_BigtableAppProfile) SetMultiClusterRoutingUseAny(val any) {
 	if err := j.validateSetMultiClusterRoutingUseAnyParameters(val); err != nil {
 		panic(err)
 	}
@@ -760,7 +759,7 @@ func (j *jsiiProxy_BigtableAppProfile)SetMultiClusterRoutingUseAny(val interface
 	)
 }
 
-func (j *jsiiProxy_BigtableAppProfile)SetProject(val *string) {
+func (j *jsiiProxy_BigtableAppProfile) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -771,7 +770,7 @@ func (j *jsiiProxy_BigtableAppProfile)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BigtableAppProfile)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_BigtableAppProfile) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -779,7 +778,7 @@ func (j *jsiiProxy_BigtableAppProfile)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_BigtableAppProfile)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_BigtableAppProfile) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -790,7 +789,7 @@ func (j *jsiiProxy_BigtableAppProfile)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_BigtableAppProfile)SetRowAffinity(val interface{}) {
+func (j *jsiiProxy_BigtableAppProfile) SetRowAffinity(val any) {
 	if err := j.validateSetRowAffinityParameters(val); err != nil {
 		panic(err)
 	}
@@ -813,7 +812,7 @@ func BigtableAppProfile_GenerateConfigForImport(scope constructs.Construct, impo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.bigtableAppProfile.BigtableAppProfile",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -837,7 +836,7 @@ func BigtableAppProfile_GenerateConfigForImport(scope constructs.Construct, impo
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func BigtableAppProfile_IsConstruct(x interface{}) *bool {
+func BigtableAppProfile_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateBigtableAppProfile_IsConstructParameters(x); err != nil {
@@ -848,7 +847,7 @@ func BigtableAppProfile_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.bigtableAppProfile.BigtableAppProfile",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -856,7 +855,7 @@ func BigtableAppProfile_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func BigtableAppProfile_IsTerraformElement(x interface{}) *bool {
+func BigtableAppProfile_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateBigtableAppProfile_IsTerraformElementParameters(x); err != nil {
@@ -867,7 +866,7 @@ func BigtableAppProfile_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.bigtableAppProfile.BigtableAppProfile",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -875,7 +874,7 @@ func BigtableAppProfile_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func BigtableAppProfile_IsTerraformResource(x interface{}) *bool {
+func BigtableAppProfile_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateBigtableAppProfile_IsTerraformResourceParameters(x); err != nil {
@@ -886,7 +885,7 @@ func BigtableAppProfile_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.bigtableAppProfile.BigtableAppProfile",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -911,31 +910,31 @@ func (b *jsiiProxy_BigtableAppProfile) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		b,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (b *jsiiProxy_BigtableAppProfile) AddOverride(path *string, value interface{}) {
+func (b *jsiiProxy_BigtableAppProfile) AddOverride(path *string, value any) {
 	if err := b.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		b,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (b *jsiiProxy_BigtableAppProfile) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (b *jsiiProxy_BigtableAppProfile) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := b.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -951,7 +950,7 @@ func (b *jsiiProxy_BigtableAppProfile) GetBooleanAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		b,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -967,7 +966,7 @@ func (b *jsiiProxy_BigtableAppProfile) GetBooleanMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		b,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -983,7 +982,7 @@ func (b *jsiiProxy_BigtableAppProfile) GetListAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		b,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -999,7 +998,7 @@ func (b *jsiiProxy_BigtableAppProfile) GetNumberAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		b,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1015,7 +1014,7 @@ func (b *jsiiProxy_BigtableAppProfile) GetNumberListAttribute(terraformAttribute
 	_jsii_.Invoke(
 		b,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1031,7 +1030,7 @@ func (b *jsiiProxy_BigtableAppProfile) GetNumberMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		b,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1047,7 +1046,7 @@ func (b *jsiiProxy_BigtableAppProfile) GetStringAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		b,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1063,15 +1062,15 @@ func (b *jsiiProxy_BigtableAppProfile) GetStringMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		b,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (b *jsiiProxy_BigtableAppProfile) HasResourceMove() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BigtableAppProfile) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -1090,7 +1089,7 @@ func (b *jsiiProxy_BigtableAppProfile) ImportFrom(id *string, provider cdktf.Ter
 	_jsii_.InvokeVoid(
 		b,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1103,7 +1102,7 @@ func (b *jsiiProxy_BigtableAppProfile) InterpolationForAttribute(terraformAttrib
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1117,18 +1116,18 @@ func (b *jsiiProxy_BigtableAppProfile) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		b,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (b *jsiiProxy_BigtableAppProfile) MoveTo(moveTarget *string, index interface{}) {
+func (b *jsiiProxy_BigtableAppProfile) MoveTo(moveTarget *string, index any) {
 	if err := b.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		b,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1139,7 +1138,7 @@ func (b *jsiiProxy_BigtableAppProfile) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		b,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1150,7 +1149,7 @@ func (b *jsiiProxy_BigtableAppProfile) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		b,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1161,7 +1160,7 @@ func (b *jsiiProxy_BigtableAppProfile) PutDataBoostIsolationReadOnly(value *Bigt
 	_jsii_.InvokeVoid(
 		b,
 		"putDataBoostIsolationReadOnly",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1172,7 +1171,7 @@ func (b *jsiiProxy_BigtableAppProfile) PutSingleClusterRouting(value *BigtableAp
 	_jsii_.InvokeVoid(
 		b,
 		"putSingleClusterRouting",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1183,7 +1182,7 @@ func (b *jsiiProxy_BigtableAppProfile) PutStandardIsolation(value *BigtableAppPr
 	_jsii_.InvokeVoid(
 		b,
 		"putStandardIsolation",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1194,7 +1193,7 @@ func (b *jsiiProxy_BigtableAppProfile) PutTimeouts(value *BigtableAppProfileTime
 	_jsii_.InvokeVoid(
 		b,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1302,8 +1301,8 @@ func (b *jsiiProxy_BigtableAppProfile) ResetTimeouts() {
 	)
 }
 
-func (b *jsiiProxy_BigtableAppProfile) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (b *jsiiProxy_BigtableAppProfile) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
@@ -1315,8 +1314,8 @@ func (b *jsiiProxy_BigtableAppProfile) SynthesizeAttributes() *map[string]interf
 	return returns
 }
 
-func (b *jsiiProxy_BigtableAppProfile) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (b *jsiiProxy_BigtableAppProfile) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
@@ -1328,8 +1327,8 @@ func (b *jsiiProxy_BigtableAppProfile) SynthesizeHclAttributes() *map[string]int
 	return returns
 }
 
-func (b *jsiiProxy_BigtableAppProfile) ToHclTerraform() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BigtableAppProfile) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -1341,8 +1340,8 @@ func (b *jsiiProxy_BigtableAppProfile) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (b *jsiiProxy_BigtableAppProfile) ToMetadata() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BigtableAppProfile) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -1367,8 +1366,8 @@ func (b *jsiiProxy_BigtableAppProfile) ToString() *string {
 	return returns
 }
 
-func (b *jsiiProxy_BigtableAppProfile) ToTerraform() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BigtableAppProfile) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -1379,4 +1378,3 @@ func (b *jsiiProxy_BigtableAppProfile) ToTerraform() interface{} {
 
 	return returns
 }
-

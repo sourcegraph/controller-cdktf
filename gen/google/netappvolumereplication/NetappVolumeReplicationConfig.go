@@ -6,9 +6,9 @@ import (
 
 type NetappVolumeReplicationConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type NetappVolumeReplicationConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Name of region for this resource. The resource needs to be created in the region of the destination volume.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume_replication#location NetappVolumeReplication#location}
@@ -46,7 +46,7 @@ type NetappVolumeReplicationConfig struct {
 	// deletion. Handle with care. Default is false.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume_replication#delete_destination_volume NetappVolumeReplication#delete_destination_volume}
-	DeleteDestinationVolume interface{} `field:"optional" json:"deleteDestinationVolume" yaml:"deleteDestinationVolume"`
+	DeleteDestinationVolume any `field:"optional" json:"deleteDestinationVolume" yaml:"deleteDestinationVolume"`
 	// An description of this resource.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume_replication#description NetappVolumeReplication#description}
@@ -63,7 +63,7 @@ type NetappVolumeReplicationConfig struct {
 	// volume will remain at the state of the last successful update. Default is false.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume_replication#force_stopping NetappVolumeReplication#force_stopping}
-	ForceStopping interface{} `field:"optional" json:"forceStopping" yaml:"forceStopping"`
+	ForceStopping any `field:"optional" json:"forceStopping" yaml:"forceStopping"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume_replication#id NetappVolumeReplication#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -86,7 +86,7 @@ type NetappVolumeReplicationConfig struct {
 	// done to the destination volume with the content of the source volume.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume_replication#replication_enabled NetappVolumeReplication#replication_enabled}
-	ReplicationEnabled interface{} `field:"optional" json:"replicationEnabled" yaml:"replicationEnabled"`
+	ReplicationEnabled any `field:"optional" json:"replicationEnabled" yaml:"replicationEnabled"`
 	// timeouts block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume_replication#timeouts NetappVolumeReplication#timeouts}
@@ -98,6 +98,5 @@ type NetappVolumeReplicationConfig struct {
 	// create/stop/resume operations, set this parameter to true. Default is false.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume_replication#wait_for_mirror NetappVolumeReplication#wait_for_mirror}
-	WaitForMirror interface{} `field:"optional" json:"waitForMirror" yaml:"waitForMirror"`
+	WaitForMirror any `field:"optional" json:"waitForMirror" yaml:"waitForMirror"`
 }
-

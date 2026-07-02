@@ -34,7 +34,7 @@ func (a *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsList) validateR
 	return nil
 }
 
-func (j *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewAccessContextManagerAccessLevelBasicConditionsListParameters(ter
 
 	return nil
 }
-

@@ -34,7 +34,7 @@ func (a *jsiiProxy_AlloydbInstanceNetworkConfigAuthorizedExternalNetworksList) v
 	return nil
 }
 
-func (j *jsiiProxy_AlloydbInstanceNetworkConfigAuthorizedExternalNetworksList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AlloydbInstanceNetworkConfigAuthorizedExternalNetworksList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewAlloydbInstanceNetworkConfigAuthorizedExternalNetworksListParame
 
 	return nil
 }
-

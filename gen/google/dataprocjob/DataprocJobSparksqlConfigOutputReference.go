@@ -12,9 +12,9 @@ type DataprocJobSparksqlConfigOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -57,7 +57,7 @@ type DataprocJobSparksqlConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -87,7 +87,7 @@ type DataprocJobSparksqlConfigOutputReference interface {
 	ResetScriptVariables()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -100,8 +100,8 @@ type jsiiProxy_DataprocJobSparksqlConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DataprocJobSparksqlConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataprocJobSparksqlConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -290,7 +290,6 @@ func (j *jsiiProxy_DataprocJobSparksqlConfigOutputReference) TerraformResource()
 	return returns
 }
 
-
 func NewDataprocJobSparksqlConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataprocJobSparksqlConfigOutputReference {
 	_init_.Initialize()
 
@@ -301,7 +300,7 @@ func NewDataprocJobSparksqlConfigOutputReference(terraformResource cdktf.IInterp
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataprocJob.DataprocJobSparksqlConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -313,12 +312,12 @@ func NewDataprocJobSparksqlConfigOutputReference_Override(d DataprocJobSparksqlC
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataprocJob.DataprocJobSparksqlConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataprocJobSparksqlConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataprocJobSparksqlConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -329,7 +328,7 @@ func (j *jsiiProxy_DataprocJobSparksqlConfigOutputReference)SetComplexObjectInde
 	)
 }
 
-func (j *jsiiProxy_DataprocJobSparksqlConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataprocJobSparksqlConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -340,7 +339,7 @@ func (j *jsiiProxy_DataprocJobSparksqlConfigOutputReference)SetComplexObjectIsFr
 	)
 }
 
-func (j *jsiiProxy_DataprocJobSparksqlConfigOutputReference)SetInternalValue(val *DataprocJobSparksqlConfig) {
+func (j *jsiiProxy_DataprocJobSparksqlConfigOutputReference) SetInternalValue(val *DataprocJobSparksqlConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -351,7 +350,7 @@ func (j *jsiiProxy_DataprocJobSparksqlConfigOutputReference)SetInternalValue(val
 	)
 }
 
-func (j *jsiiProxy_DataprocJobSparksqlConfigOutputReference)SetJarFileUris(val *[]*string) {
+func (j *jsiiProxy_DataprocJobSparksqlConfigOutputReference) SetJarFileUris(val *[]*string) {
 	if err := j.validateSetJarFileUrisParameters(val); err != nil {
 		panic(err)
 	}
@@ -362,7 +361,7 @@ func (j *jsiiProxy_DataprocJobSparksqlConfigOutputReference)SetJarFileUris(val *
 	)
 }
 
-func (j *jsiiProxy_DataprocJobSparksqlConfigOutputReference)SetProperties(val *map[string]*string) {
+func (j *jsiiProxy_DataprocJobSparksqlConfigOutputReference) SetProperties(val *map[string]*string) {
 	if err := j.validateSetPropertiesParameters(val); err != nil {
 		panic(err)
 	}
@@ -373,7 +372,7 @@ func (j *jsiiProxy_DataprocJobSparksqlConfigOutputReference)SetProperties(val *m
 	)
 }
 
-func (j *jsiiProxy_DataprocJobSparksqlConfigOutputReference)SetQueryFileUri(val *string) {
+func (j *jsiiProxy_DataprocJobSparksqlConfigOutputReference) SetQueryFileUri(val *string) {
 	if err := j.validateSetQueryFileUriParameters(val); err != nil {
 		panic(err)
 	}
@@ -384,7 +383,7 @@ func (j *jsiiProxy_DataprocJobSparksqlConfigOutputReference)SetQueryFileUri(val 
 	)
 }
 
-func (j *jsiiProxy_DataprocJobSparksqlConfigOutputReference)SetQueryList(val *[]*string) {
+func (j *jsiiProxy_DataprocJobSparksqlConfigOutputReference) SetQueryList(val *[]*string) {
 	if err := j.validateSetQueryListParameters(val); err != nil {
 		panic(err)
 	}
@@ -395,7 +394,7 @@ func (j *jsiiProxy_DataprocJobSparksqlConfigOutputReference)SetQueryList(val *[]
 	)
 }
 
-func (j *jsiiProxy_DataprocJobSparksqlConfigOutputReference)SetScriptVariables(val *map[string]*string) {
+func (j *jsiiProxy_DataprocJobSparksqlConfigOutputReference) SetScriptVariables(val *map[string]*string) {
 	if err := j.validateSetScriptVariablesParameters(val); err != nil {
 		panic(err)
 	}
@@ -406,7 +405,7 @@ func (j *jsiiProxy_DataprocJobSparksqlConfigOutputReference)SetScriptVariables(v
 	)
 }
 
-func (j *jsiiProxy_DataprocJobSparksqlConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataprocJobSparksqlConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,7 +416,7 @@ func (j *jsiiProxy_DataprocJobSparksqlConfigOutputReference)SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_DataprocJobSparksqlConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataprocJobSparksqlConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -441,16 +440,16 @@ func (d *jsiiProxy_DataprocJobSparksqlConfigOutputReference) ComputeFqn() *strin
 	return returns
 }
 
-func (d *jsiiProxy_DataprocJobSparksqlConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataprocJobSparksqlConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -466,7 +465,7 @@ func (d *jsiiProxy_DataprocJobSparksqlConfigOutputReference) GetBooleanAttribute
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -482,7 +481,7 @@ func (d *jsiiProxy_DataprocJobSparksqlConfigOutputReference) GetBooleanMapAttrib
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -498,7 +497,7 @@ func (d *jsiiProxy_DataprocJobSparksqlConfigOutputReference) GetListAttribute(te
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -514,7 +513,7 @@ func (d *jsiiProxy_DataprocJobSparksqlConfigOutputReference) GetNumberAttribute(
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -530,7 +529,7 @@ func (d *jsiiProxy_DataprocJobSparksqlConfigOutputReference) GetNumberListAttrib
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -546,7 +545,7 @@ func (d *jsiiProxy_DataprocJobSparksqlConfigOutputReference) GetNumberMapAttribu
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -562,7 +561,7 @@ func (d *jsiiProxy_DataprocJobSparksqlConfigOutputReference) GetStringAttribute(
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -578,7 +577,7 @@ func (d *jsiiProxy_DataprocJobSparksqlConfigOutputReference) GetStringMapAttribu
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -607,7 +606,7 @@ func (d *jsiiProxy_DataprocJobSparksqlConfigOutputReference) InterpolationForAtt
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -621,7 +620,7 @@ func (d *jsiiProxy_DataprocJobSparksqlConfigOutputReference) PutLoggingConfig(va
 	_jsii_.InvokeVoid(
 		d,
 		"putLoggingConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -673,16 +672,16 @@ func (d *jsiiProxy_DataprocJobSparksqlConfigOutputReference) ResetScriptVariable
 	)
 }
 
-func (d *jsiiProxy_DataprocJobSparksqlConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataprocJobSparksqlConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -701,4 +700,3 @@ func (d *jsiiProxy_DataprocJobSparksqlConfigOutputReference) ToString() *string 
 
 	return returns
 }
-

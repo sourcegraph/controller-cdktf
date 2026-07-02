@@ -18,11 +18,11 @@ type DataGoogleOracleDatabaseCloudExadataInfrastructure interface {
 	SetCloudExadataInfrastructureId(val *string)
 	CloudExadataInfrastructureIdInput() *string
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	DeletionProtection() cdktf.IResolvable
 	// Experimental.
@@ -64,18 +64,18 @@ type DataGoogleOracleDatabaseCloudExadataInfrastructure interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -102,18 +102,18 @@ type DataGoogleOracleDatabaseCloudExadataInfrastructure interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataGoogleOracleDatabaseCloudExadataInfrastructure
@@ -151,8 +151,8 @@ func (j *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructure) CloudExad
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructure) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructure) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -161,8 +161,8 @@ func (j *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructure) Construct
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructure) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructure) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -391,8 +391,8 @@ func (j *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructure) Provider(
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructure) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructure) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -421,8 +421,8 @@ func (j *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructure) Terraform
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructure) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructure) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -441,7 +441,6 @@ func (j *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructure) Terraform
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/oracle_database_cloud_exadata_infrastructure google_oracle_database_cloud_exadata_infrastructure} Data Source.
 func NewDataGoogleOracleDatabaseCloudExadataInfrastructure(scope constructs.Construct, id *string, config *DataGoogleOracleDatabaseCloudExadataInfrastructureConfig) DataGoogleOracleDatabaseCloudExadataInfrastructure {
 	_init_.Initialize()
@@ -453,7 +452,7 @@ func NewDataGoogleOracleDatabaseCloudExadataInfrastructure(scope constructs.Cons
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleOracleDatabaseCloudExadataInfrastructure.DataGoogleOracleDatabaseCloudExadataInfrastructure",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -466,12 +465,12 @@ func NewDataGoogleOracleDatabaseCloudExadataInfrastructure_Override(d DataGoogle
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleOracleDatabaseCloudExadataInfrastructure.DataGoogleOracleDatabaseCloudExadataInfrastructure",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructure)SetCloudExadataInfrastructureId(val *string) {
+func (j *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructure) SetCloudExadataInfrastructureId(val *string) {
 	if err := j.validateSetCloudExadataInfrastructureIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -482,7 +481,7 @@ func (j *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructure)SetCloudEx
 	)
 }
 
-func (j *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructure)SetCount(val interface{}) {
+func (j *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructure) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -493,7 +492,7 @@ func (j *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructure)SetCount(v
 	)
 }
 
-func (j *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructure)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructure) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -501,7 +500,7 @@ func (j *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructure)SetDepends
 	)
 }
 
-func (j *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructure)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructure) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -509,7 +508,7 @@ func (j *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructure)SetForEach
 	)
 }
 
-func (j *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructure)SetId(val *string) {
+func (j *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructure) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -520,7 +519,7 @@ func (j *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructure)SetId(val 
 	)
 }
 
-func (j *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructure)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructure) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -531,7 +530,7 @@ func (j *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructure)SetLifecyc
 	)
 }
 
-func (j *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructure)SetLocation(val *string) {
+func (j *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructure) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -542,7 +541,7 @@ func (j *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructure)SetLocatio
 	)
 }
 
-func (j *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructure)SetProject(val *string) {
+func (j *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructure) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -553,7 +552,7 @@ func (j *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructure)SetProject
 	)
 }
 
-func (j *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructure)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructure) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -573,7 +572,7 @@ func DataGoogleOracleDatabaseCloudExadataInfrastructure_GenerateConfigForImport(
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleOracleDatabaseCloudExadataInfrastructure.DataGoogleOracleDatabaseCloudExadataInfrastructure",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -597,7 +596,7 @@ func DataGoogleOracleDatabaseCloudExadataInfrastructure_GenerateConfigForImport(
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataGoogleOracleDatabaseCloudExadataInfrastructure_IsConstruct(x interface{}) *bool {
+func DataGoogleOracleDatabaseCloudExadataInfrastructure_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleOracleDatabaseCloudExadataInfrastructure_IsConstructParameters(x); err != nil {
@@ -608,7 +607,7 @@ func DataGoogleOracleDatabaseCloudExadataInfrastructure_IsConstruct(x interface{
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleOracleDatabaseCloudExadataInfrastructure.DataGoogleOracleDatabaseCloudExadataInfrastructure",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -616,7 +615,7 @@ func DataGoogleOracleDatabaseCloudExadataInfrastructure_IsConstruct(x interface{
 }
 
 // Experimental.
-func DataGoogleOracleDatabaseCloudExadataInfrastructure_IsTerraformDataSource(x interface{}) *bool {
+func DataGoogleOracleDatabaseCloudExadataInfrastructure_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleOracleDatabaseCloudExadataInfrastructure_IsTerraformDataSourceParameters(x); err != nil {
@@ -627,7 +626,7 @@ func DataGoogleOracleDatabaseCloudExadataInfrastructure_IsTerraformDataSource(x 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleOracleDatabaseCloudExadataInfrastructure.DataGoogleOracleDatabaseCloudExadataInfrastructure",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -635,7 +634,7 @@ func DataGoogleOracleDatabaseCloudExadataInfrastructure_IsTerraformDataSource(x 
 }
 
 // Experimental.
-func DataGoogleOracleDatabaseCloudExadataInfrastructure_IsTerraformElement(x interface{}) *bool {
+func DataGoogleOracleDatabaseCloudExadataInfrastructure_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleOracleDatabaseCloudExadataInfrastructure_IsTerraformElementParameters(x); err != nil {
@@ -646,7 +645,7 @@ func DataGoogleOracleDatabaseCloudExadataInfrastructure_IsTerraformElement(x int
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleOracleDatabaseCloudExadataInfrastructure.DataGoogleOracleDatabaseCloudExadataInfrastructure",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -664,27 +663,27 @@ func DataGoogleOracleDatabaseCloudExadataInfrastructure_TfResourceType() *string
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructure) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructure) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructure) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructure) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -700,7 +699,7 @@ func (d *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructure) GetBoolea
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -716,7 +715,7 @@ func (d *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructure) GetBoolea
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -732,7 +731,7 @@ func (d *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructure) GetListAt
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -748,7 +747,7 @@ func (d *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructure) GetNumber
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -764,7 +763,7 @@ func (d *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructure) GetNumber
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -780,7 +779,7 @@ func (d *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructure) GetNumber
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -796,7 +795,7 @@ func (d *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructure) GetString
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -812,7 +811,7 @@ func (d *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructure) GetString
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -828,7 +827,7 @@ func (d *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructure) Interpola
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -842,7 +841,7 @@ func (d *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructure) OverrideL
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -870,8 +869,8 @@ func (d *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructure) ResetProj
 	)
 }
 
-func (d *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructure) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructure) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -883,8 +882,8 @@ func (d *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructure) Synthesiz
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructure) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructure) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -896,8 +895,8 @@ func (d *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructure) Synthesiz
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructure) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructure) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -909,8 +908,8 @@ func (d *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructure) ToHclTerr
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructure) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructure) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -935,8 +934,8 @@ func (d *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructure) ToString(
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructure) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructure) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -947,4 +946,3 @@ func (d *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructure) ToTerrafo
 
 	return returns
 }
-

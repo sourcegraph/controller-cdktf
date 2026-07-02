@@ -98,7 +98,7 @@ func (a *jsiiProxy_ApigeeApiProductGrpcOperationGroupOperationConfigsQuotaOutput
 	return nil
 }
 
-func (j *jsiiProxy_ApigeeApiProductGrpcOperationGroupOperationConfigsQuotaOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ApigeeApiProductGrpcOperationGroupOperationConfigsQuotaOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewApigeeApiProductGrpcOperationGroupOperationConfigsQuotaOutputRef
 
 	return nil
 }
-

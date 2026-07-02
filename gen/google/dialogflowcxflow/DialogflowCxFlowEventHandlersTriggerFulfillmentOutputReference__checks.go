@@ -90,7 +90,7 @@ func (d *jsiiProxy_DialogflowCxFlowEventHandlersTriggerFulfillmentOutputReferenc
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxFlowEventHandlersTriggerFulfillmentOutputReference) validatePutConditionalCasesParameters(value interface{}) error {
+func (d *jsiiProxy_DialogflowCxFlowEventHandlersTriggerFulfillmentOutputReference) validatePutConditionalCasesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (d *jsiiProxy_DialogflowCxFlowEventHandlersTriggerFulfillmentOutputReferenc
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxFlowEventHandlersTriggerFulfillmentOutputReference) validatePutMessagesParameters(value interface{}) error {
+func (d *jsiiProxy_DialogflowCxFlowEventHandlersTriggerFulfillmentOutputReference) validatePutMessagesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -152,7 +152,7 @@ func (d *jsiiProxy_DialogflowCxFlowEventHandlersTriggerFulfillmentOutputReferenc
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxFlowEventHandlersTriggerFulfillmentOutputReference) validatePutSetParameterActionsParameters(value interface{}) error {
+func (d *jsiiProxy_DialogflowCxFlowEventHandlersTriggerFulfillmentOutputReference) validatePutSetParameterActionsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -191,7 +191,7 @@ func (d *jsiiProxy_DialogflowCxFlowEventHandlersTriggerFulfillmentOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxFlowEventHandlersTriggerFulfillmentOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxFlowEventHandlersTriggerFulfillmentOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -256,7 +256,7 @@ func (j *jsiiProxy_DialogflowCxFlowEventHandlersTriggerFulfillmentOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxFlowEventHandlersTriggerFulfillmentOutputReference) validateSetEnableGenerativeFallbackParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxFlowEventHandlersTriggerFulfillmentOutputReference) validateSetEnableGenerativeFallbackParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -284,7 +284,7 @@ func (j *jsiiProxy_DialogflowCxFlowEventHandlersTriggerFulfillmentOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxFlowEventHandlersTriggerFulfillmentOutputReference) validateSetReturnPartialResponsesParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxFlowEventHandlersTriggerFulfillmentOutputReference) validateSetReturnPartialResponsesParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -347,4 +347,3 @@ func validateNewDialogflowCxFlowEventHandlersTriggerFulfillmentOutputReferencePa
 
 	return nil
 }
-

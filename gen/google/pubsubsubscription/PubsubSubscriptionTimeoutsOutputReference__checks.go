@@ -98,7 +98,7 @@ func (p *jsiiProxy_PubsubSubscriptionTimeoutsOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_PubsubSubscriptionTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PubsubSubscriptionTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_PubsubSubscriptionTimeoutsOutputReference) validateSetDeleteP
 	return nil
 }
 
-func (j *jsiiProxy_PubsubSubscriptionTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PubsubSubscriptionTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewPubsubSubscriptionTimeoutsOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

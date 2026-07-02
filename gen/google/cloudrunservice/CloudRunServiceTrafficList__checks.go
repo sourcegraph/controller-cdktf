@@ -34,7 +34,7 @@ func (c *jsiiProxy_CloudRunServiceTrafficList) validateResolveParameters(_contex
 	return nil
 }
 
-func (j *jsiiProxy_CloudRunServiceTrafficList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CloudRunServiceTrafficList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewCloudRunServiceTrafficListParameters(terraformResource cdktf.IIn
 
 	return nil
 }
-

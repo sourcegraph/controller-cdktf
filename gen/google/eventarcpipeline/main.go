@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.eventarcPipeline.EventarcPipeline",
-		reflect.TypeOf((*EventarcPipeline)(nil)).Elem(),
+		reflect.TypeFor[EventarcPipeline](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -106,7 +106,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EventarcPipeline{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -114,23 +114,23 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.eventarcPipeline.EventarcPipelineConfig",
-		reflect.TypeOf((*EventarcPipelineConfig)(nil)).Elem(),
+		reflect.TypeFor[EventarcPipelineConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.eventarcPipeline.EventarcPipelineDestinations",
-		reflect.TypeOf((*EventarcPipelineDestinations)(nil)).Elem(),
+		reflect.TypeFor[EventarcPipelineDestinations](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.eventarcPipeline.EventarcPipelineDestinationsAuthenticationConfig",
-		reflect.TypeOf((*EventarcPipelineDestinationsAuthenticationConfig)(nil)).Elem(),
+		reflect.TypeFor[EventarcPipelineDestinationsAuthenticationConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.eventarcPipeline.EventarcPipelineDestinationsAuthenticationConfigGoogleOidc",
-		reflect.TypeOf((*EventarcPipelineDestinationsAuthenticationConfigGoogleOidc)(nil)).Elem(),
+		reflect.TypeFor[EventarcPipelineDestinationsAuthenticationConfigGoogleOidc](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.eventarcPipeline.EventarcPipelineDestinationsAuthenticationConfigGoogleOidcOutputReference",
-		reflect.TypeOf((*EventarcPipelineDestinationsAuthenticationConfigGoogleOidcOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EventarcPipelineDestinationsAuthenticationConfigGoogleOidcOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "audience", GoGetter: "Audience"},
 			_jsii_.MemberProperty{JsiiProperty: "audienceInput", GoGetter: "AudienceInput"},
@@ -159,7 +159,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EventarcPipelineDestinationsAuthenticationConfigGoogleOidcOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -167,11 +167,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.eventarcPipeline.EventarcPipelineDestinationsAuthenticationConfigOauthToken",
-		reflect.TypeOf((*EventarcPipelineDestinationsAuthenticationConfigOauthToken)(nil)).Elem(),
+		reflect.TypeFor[EventarcPipelineDestinationsAuthenticationConfigOauthToken](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.eventarcPipeline.EventarcPipelineDestinationsAuthenticationConfigOauthTokenOutputReference",
-		reflect.TypeOf((*EventarcPipelineDestinationsAuthenticationConfigOauthTokenOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EventarcPipelineDestinationsAuthenticationConfigOauthTokenOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -200,7 +200,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EventarcPipelineDestinationsAuthenticationConfigOauthTokenOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -208,7 +208,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.eventarcPipeline.EventarcPipelineDestinationsAuthenticationConfigOutputReference",
-		reflect.TypeOf((*EventarcPipelineDestinationsAuthenticationConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EventarcPipelineDestinationsAuthenticationConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -240,7 +240,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EventarcPipelineDestinationsAuthenticationConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -248,11 +248,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.eventarcPipeline.EventarcPipelineDestinationsHttpEndpoint",
-		reflect.TypeOf((*EventarcPipelineDestinationsHttpEndpoint)(nil)).Elem(),
+		reflect.TypeFor[EventarcPipelineDestinationsHttpEndpoint](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.eventarcPipeline.EventarcPipelineDestinationsHttpEndpointOutputReference",
-		reflect.TypeOf((*EventarcPipelineDestinationsHttpEndpointOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EventarcPipelineDestinationsHttpEndpointOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -281,7 +281,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uri", GoGetter: "Uri"},
 			_jsii_.MemberProperty{JsiiProperty: "uriInput", GoGetter: "UriInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EventarcPipelineDestinationsHttpEndpointOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -289,7 +289,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.eventarcPipeline.EventarcPipelineDestinationsList",
-		reflect.TypeOf((*EventarcPipelineDestinationsList)(nil)).Elem(),
+		reflect.TypeFor[EventarcPipelineDestinationsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -303,7 +303,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EventarcPipelineDestinationsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -311,11 +311,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.eventarcPipeline.EventarcPipelineDestinationsNetworkConfig",
-		reflect.TypeOf((*EventarcPipelineDestinationsNetworkConfig)(nil)).Elem(),
+		reflect.TypeFor[EventarcPipelineDestinationsNetworkConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.eventarcPipeline.EventarcPipelineDestinationsNetworkConfigOutputReference",
-		reflect.TypeOf((*EventarcPipelineDestinationsNetworkConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EventarcPipelineDestinationsNetworkConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -342,7 +342,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EventarcPipelineDestinationsNetworkConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -350,15 +350,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.eventarcPipeline.EventarcPipelineDestinationsOutputPayloadFormat",
-		reflect.TypeOf((*EventarcPipelineDestinationsOutputPayloadFormat)(nil)).Elem(),
+		reflect.TypeFor[EventarcPipelineDestinationsOutputPayloadFormat](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.eventarcPipeline.EventarcPipelineDestinationsOutputPayloadFormatAvro",
-		reflect.TypeOf((*EventarcPipelineDestinationsOutputPayloadFormatAvro)(nil)).Elem(),
+		reflect.TypeFor[EventarcPipelineDestinationsOutputPayloadFormatAvro](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.eventarcPipeline.EventarcPipelineDestinationsOutputPayloadFormatAvroOutputReference",
-		reflect.TypeOf((*EventarcPipelineDestinationsOutputPayloadFormatAvroOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EventarcPipelineDestinationsOutputPayloadFormatAvroOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -385,7 +385,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EventarcPipelineDestinationsOutputPayloadFormatAvroOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -393,11 +393,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.eventarcPipeline.EventarcPipelineDestinationsOutputPayloadFormatJson",
-		reflect.TypeOf((*EventarcPipelineDestinationsOutputPayloadFormatJson)(nil)).Elem(),
+		reflect.TypeFor[EventarcPipelineDestinationsOutputPayloadFormatJson](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.eventarcPipeline.EventarcPipelineDestinationsOutputPayloadFormatJsonOutputReference",
-		reflect.TypeOf((*EventarcPipelineDestinationsOutputPayloadFormatJsonOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EventarcPipelineDestinationsOutputPayloadFormatJsonOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -421,7 +421,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EventarcPipelineDestinationsOutputPayloadFormatJsonOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -429,7 +429,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.eventarcPipeline.EventarcPipelineDestinationsOutputPayloadFormatOutputReference",
-		reflect.TypeOf((*EventarcPipelineDestinationsOutputPayloadFormatOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EventarcPipelineDestinationsOutputPayloadFormatOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "avro", GoGetter: "Avro"},
 			_jsii_.MemberProperty{JsiiProperty: "avroInput", GoGetter: "AvroInput"},
@@ -465,7 +465,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EventarcPipelineDestinationsOutputPayloadFormatOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -473,11 +473,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.eventarcPipeline.EventarcPipelineDestinationsOutputPayloadFormatProtobuf",
-		reflect.TypeOf((*EventarcPipelineDestinationsOutputPayloadFormatProtobuf)(nil)).Elem(),
+		reflect.TypeFor[EventarcPipelineDestinationsOutputPayloadFormatProtobuf](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.eventarcPipeline.EventarcPipelineDestinationsOutputPayloadFormatProtobufOutputReference",
-		reflect.TypeOf((*EventarcPipelineDestinationsOutputPayloadFormatProtobufOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EventarcPipelineDestinationsOutputPayloadFormatProtobufOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -504,7 +504,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EventarcPipelineDestinationsOutputPayloadFormatProtobufOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -512,7 +512,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.eventarcPipeline.EventarcPipelineDestinationsOutputReference",
-		reflect.TypeOf((*EventarcPipelineDestinationsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EventarcPipelineDestinationsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authenticationConfig", GoGetter: "AuthenticationConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "authenticationConfigInput", GoGetter: "AuthenticationConfigInput"},
@@ -561,7 +561,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workflow", GoGetter: "Workflow"},
 			_jsii_.MemberProperty{JsiiProperty: "workflowInput", GoGetter: "WorkflowInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EventarcPipelineDestinationsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -569,15 +569,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.eventarcPipeline.EventarcPipelineInputPayloadFormat",
-		reflect.TypeOf((*EventarcPipelineInputPayloadFormat)(nil)).Elem(),
+		reflect.TypeFor[EventarcPipelineInputPayloadFormat](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.eventarcPipeline.EventarcPipelineInputPayloadFormatAvro",
-		reflect.TypeOf((*EventarcPipelineInputPayloadFormatAvro)(nil)).Elem(),
+		reflect.TypeFor[EventarcPipelineInputPayloadFormatAvro](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.eventarcPipeline.EventarcPipelineInputPayloadFormatAvroOutputReference",
-		reflect.TypeOf((*EventarcPipelineInputPayloadFormatAvroOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EventarcPipelineInputPayloadFormatAvroOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -604,7 +604,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EventarcPipelineInputPayloadFormatAvroOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -612,11 +612,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.eventarcPipeline.EventarcPipelineInputPayloadFormatJson",
-		reflect.TypeOf((*EventarcPipelineInputPayloadFormatJson)(nil)).Elem(),
+		reflect.TypeFor[EventarcPipelineInputPayloadFormatJson](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.eventarcPipeline.EventarcPipelineInputPayloadFormatJsonOutputReference",
-		reflect.TypeOf((*EventarcPipelineInputPayloadFormatJsonOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EventarcPipelineInputPayloadFormatJsonOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -640,7 +640,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EventarcPipelineInputPayloadFormatJsonOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -648,7 +648,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.eventarcPipeline.EventarcPipelineInputPayloadFormatOutputReference",
-		reflect.TypeOf((*EventarcPipelineInputPayloadFormatOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EventarcPipelineInputPayloadFormatOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "avro", GoGetter: "Avro"},
 			_jsii_.MemberProperty{JsiiProperty: "avroInput", GoGetter: "AvroInput"},
@@ -684,7 +684,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EventarcPipelineInputPayloadFormatOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -692,11 +692,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.eventarcPipeline.EventarcPipelineInputPayloadFormatProtobuf",
-		reflect.TypeOf((*EventarcPipelineInputPayloadFormatProtobuf)(nil)).Elem(),
+		reflect.TypeFor[EventarcPipelineInputPayloadFormatProtobuf](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.eventarcPipeline.EventarcPipelineInputPayloadFormatProtobufOutputReference",
-		reflect.TypeOf((*EventarcPipelineInputPayloadFormatProtobufOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EventarcPipelineInputPayloadFormatProtobufOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -723,7 +723,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EventarcPipelineInputPayloadFormatProtobufOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -731,11 +731,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.eventarcPipeline.EventarcPipelineLoggingConfig",
-		reflect.TypeOf((*EventarcPipelineLoggingConfig)(nil)).Elem(),
+		reflect.TypeFor[EventarcPipelineLoggingConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.eventarcPipeline.EventarcPipelineLoggingConfigOutputReference",
-		reflect.TypeOf((*EventarcPipelineLoggingConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EventarcPipelineLoggingConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -762,7 +762,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EventarcPipelineLoggingConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -770,11 +770,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.eventarcPipeline.EventarcPipelineMediations",
-		reflect.TypeOf((*EventarcPipelineMediations)(nil)).Elem(),
+		reflect.TypeFor[EventarcPipelineMediations](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.eventarcPipeline.EventarcPipelineMediationsList",
-		reflect.TypeOf((*EventarcPipelineMediationsList)(nil)).Elem(),
+		reflect.TypeFor[EventarcPipelineMediationsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -788,7 +788,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EventarcPipelineMediationsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -796,7 +796,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.eventarcPipeline.EventarcPipelineMediationsOutputReference",
-		reflect.TypeOf((*EventarcPipelineMediationsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EventarcPipelineMediationsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -824,7 +824,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "transformation", GoGetter: "Transformation"},
 			_jsii_.MemberProperty{JsiiProperty: "transformationInput", GoGetter: "TransformationInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EventarcPipelineMediationsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -832,11 +832,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.eventarcPipeline.EventarcPipelineMediationsTransformation",
-		reflect.TypeOf((*EventarcPipelineMediationsTransformation)(nil)).Elem(),
+		reflect.TypeFor[EventarcPipelineMediationsTransformation](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.eventarcPipeline.EventarcPipelineMediationsTransformationOutputReference",
-		reflect.TypeOf((*EventarcPipelineMediationsTransformationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EventarcPipelineMediationsTransformationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -863,7 +863,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "transformationTemplate", GoGetter: "TransformationTemplate"},
 			_jsii_.MemberProperty{JsiiProperty: "transformationTemplateInput", GoGetter: "TransformationTemplateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EventarcPipelineMediationsTransformationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -871,11 +871,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.eventarcPipeline.EventarcPipelineRetryPolicy",
-		reflect.TypeOf((*EventarcPipelineRetryPolicy)(nil)).Elem(),
+		reflect.TypeFor[EventarcPipelineRetryPolicy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.eventarcPipeline.EventarcPipelineRetryPolicyOutputReference",
-		reflect.TypeOf((*EventarcPipelineRetryPolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EventarcPipelineRetryPolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -908,7 +908,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EventarcPipelineRetryPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -916,11 +916,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.eventarcPipeline.EventarcPipelineTimeouts",
-		reflect.TypeOf((*EventarcPipelineTimeouts)(nil)).Elem(),
+		reflect.TypeFor[EventarcPipelineTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.eventarcPipeline.EventarcPipelineTimeoutsOutputReference",
-		reflect.TypeOf((*EventarcPipelineTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EventarcPipelineTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -953,7 +953,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EventarcPipelineTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

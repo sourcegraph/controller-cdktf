@@ -150,7 +150,7 @@ func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigLinuxNodeConfigOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigLinuxNodeConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigLinuxNodeConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -274,4 +274,3 @@ func validateNewContainerClusterNodePoolNodeConfigLinuxNodeConfigOutputReference
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (n *jsiiProxy_NetappVolumeTimeoutsOutputReference) validateResolveParameter
 	return nil
 }
 
-func (j *jsiiProxy_NetappVolumeTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetappVolumeTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_NetappVolumeTimeoutsOutputReference) validateSetDeleteParamet
 	return nil
 }
 
-func (j *jsiiProxy_NetappVolumeTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NetappVolumeTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewNetappVolumeTimeoutsOutputReferenceParameters(terraformResource 
 
 	return nil
 }
-

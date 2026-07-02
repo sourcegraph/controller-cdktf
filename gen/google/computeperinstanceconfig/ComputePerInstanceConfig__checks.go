@@ -19,7 +19,7 @@ func (c *jsiiProxy_ComputePerInstanceConfig) validateAddMoveTargetParameters(mov
 	return nil
 }
 
-func (c *jsiiProxy_ComputePerInstanceConfig) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_ComputePerInstanceConfig) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_ComputePerInstanceConfig) validateMoveFromIdParameters(id *st
 	return nil
 }
 
-func (c *jsiiProxy_ComputePerInstanceConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_ComputePerInstanceConfig) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateComputePerInstanceConfig_GenerateConfigForImportParameters(scope co
 	return nil
 }
 
-func validateComputePerInstanceConfig_IsConstructParameters(x interface{}) error {
+func validateComputePerInstanceConfig_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateComputePerInstanceConfig_IsConstructParameters(x interface{}) error
 	return nil
 }
 
-func validateComputePerInstanceConfig_IsTerraformElementParameters(x interface{}) error {
+func validateComputePerInstanceConfig_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateComputePerInstanceConfig_IsTerraformElementParameters(x interface{}
 	return nil
 }
 
-func validateComputePerInstanceConfig_IsTerraformResourceParameters(x interface{}) error {
+func validateComputePerInstanceConfig_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func validateComputePerInstanceConfig_IsTerraformResourceParameters(x interface{
 	return nil
 }
 
-func (j *jsiiProxy_ComputePerInstanceConfig) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ComputePerInstanceConfig) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -299,7 +299,7 @@ func (j *jsiiProxy_ComputePerInstanceConfig) validateSetConnectionParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_ComputePerInstanceConfig) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ComputePerInstanceConfig) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -412,7 +412,7 @@ func (j *jsiiProxy_ComputePerInstanceConfig) validateSetProjectParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_ComputePerInstanceConfig) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ComputePerInstanceConfig) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -458,7 +458,7 @@ func (j *jsiiProxy_ComputePerInstanceConfig) validateSetProvisionersParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_ComputePerInstanceConfig) validateSetRemoveInstanceOnDestroyParameters(val interface{}) error {
+func (j *jsiiProxy_ComputePerInstanceConfig) validateSetRemoveInstanceOnDestroyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -478,7 +478,7 @@ func (j *jsiiProxy_ComputePerInstanceConfig) validateSetRemoveInstanceOnDestroyP
 	return nil
 }
 
-func (j *jsiiProxy_ComputePerInstanceConfig) validateSetRemoveInstanceStateOnDestroyParameters(val interface{}) error {
+func (j *jsiiProxy_ComputePerInstanceConfig) validateSetRemoveInstanceStateOnDestroyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -524,4 +524,3 @@ func validateNewComputePerInstanceConfigParameters(scope constructs.Construct, i
 
 	return nil
 }
-

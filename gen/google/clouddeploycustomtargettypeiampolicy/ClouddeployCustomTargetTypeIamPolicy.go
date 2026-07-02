@@ -15,15 +15,15 @@ type ClouddeployCustomTargetTypeIamPolicy interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -63,24 +63,24 @@ type ClouddeployCustomTargetTypeIamPolicy interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -98,7 +98,7 @@ type ClouddeployCustomTargetTypeIamPolicy interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -110,7 +110,7 @@ type ClouddeployCustomTargetTypeIamPolicy interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -123,17 +123,17 @@ type ClouddeployCustomTargetTypeIamPolicy interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ClouddeployCustomTargetTypeIamPolicy
@@ -151,8 +151,8 @@ func (j *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy) CdktfStack() cdktf.Terr
 	return returns
 }
 
-func (j *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -161,8 +161,8 @@ func (j *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy) Connection() interface{
 	return returns
 }
 
-func (j *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -171,8 +171,8 @@ func (j *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy) ConstructNodeMetadata()
 	return returns
 }
 
-func (j *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -361,8 +361,8 @@ func (j *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy) Provider() cdktf.Terraf
 	return returns
 }
 
-func (j *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -371,8 +371,8 @@ func (j *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy) Provisioners() *[]inter
 	return returns
 }
 
-func (j *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -391,8 +391,8 @@ func (j *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy) TerraformGeneratorMetad
 	return returns
 }
 
-func (j *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -411,7 +411,6 @@ func (j *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy) TerraformResourceType()
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_custom_target_type_iam_policy google_clouddeploy_custom_target_type_iam_policy} Resource.
 func NewClouddeployCustomTargetTypeIamPolicy(scope constructs.Construct, id *string, config *ClouddeployCustomTargetTypeIamPolicyConfig) ClouddeployCustomTargetTypeIamPolicy {
 	_init_.Initialize()
@@ -423,7 +422,7 @@ func NewClouddeployCustomTargetTypeIamPolicy(scope constructs.Construct, id *str
 
 	_jsii_.Create(
 		"@cdktf/provider-google.clouddeployCustomTargetTypeIamPolicy.ClouddeployCustomTargetTypeIamPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -436,12 +435,12 @@ func NewClouddeployCustomTargetTypeIamPolicy_Override(c ClouddeployCustomTargetT
 
 	_jsii_.Create(
 		"@cdktf/provider-google.clouddeployCustomTargetTypeIamPolicy.ClouddeployCustomTargetTypeIamPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy)SetConnection(val interface{}) {
+func (j *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,7 +451,7 @@ func (j *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy)SetConnection(val interf
 	)
 }
 
-func (j *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy)SetCount(val interface{}) {
+func (j *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -463,7 +462,7 @@ func (j *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy)SetCount(val interface{}
 	)
 }
 
-func (j *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -471,7 +470,7 @@ func (j *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy)SetDependsOn(val *[]*str
 	)
 }
 
-func (j *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -479,7 +478,7 @@ func (j *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy)SetForEach(val cdktf.ITe
 	)
 }
 
-func (j *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy)SetId(val *string) {
+func (j *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -490,7 +489,7 @@ func (j *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -501,7 +500,7 @@ func (j *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy)SetLifecycle(val *cdktf.
 	)
 }
 
-func (j *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy)SetLocation(val *string) {
+func (j *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -512,7 +511,7 @@ func (j *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy)SetLocation(val *string)
 	)
 }
 
-func (j *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy)SetName(val *string) {
+func (j *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -523,7 +522,7 @@ func (j *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy)SetPolicyData(val *string) {
+func (j *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy) SetPolicyData(val *string) {
 	if err := j.validateSetPolicyDataParameters(val); err != nil {
 		panic(err)
 	}
@@ -534,7 +533,7 @@ func (j *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy)SetPolicyData(val *strin
 	)
 }
 
-func (j *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy)SetProject(val *string) {
+func (j *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -545,7 +544,7 @@ func (j *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy)SetProject(val *string) 
 	)
 }
 
-func (j *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -553,7 +552,7 @@ func (j *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy)SetProvider(val cdktf.Te
 	)
 }
 
-func (j *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -576,7 +575,7 @@ func ClouddeployCustomTargetTypeIamPolicy_GenerateConfigForImport(scope construc
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.clouddeployCustomTargetTypeIamPolicy.ClouddeployCustomTargetTypeIamPolicy",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -600,7 +599,7 @@ func ClouddeployCustomTargetTypeIamPolicy_GenerateConfigForImport(scope construc
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ClouddeployCustomTargetTypeIamPolicy_IsConstruct(x interface{}) *bool {
+func ClouddeployCustomTargetTypeIamPolicy_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateClouddeployCustomTargetTypeIamPolicy_IsConstructParameters(x); err != nil {
@@ -611,7 +610,7 @@ func ClouddeployCustomTargetTypeIamPolicy_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.clouddeployCustomTargetTypeIamPolicy.ClouddeployCustomTargetTypeIamPolicy",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -619,7 +618,7 @@ func ClouddeployCustomTargetTypeIamPolicy_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ClouddeployCustomTargetTypeIamPolicy_IsTerraformElement(x interface{}) *bool {
+func ClouddeployCustomTargetTypeIamPolicy_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateClouddeployCustomTargetTypeIamPolicy_IsTerraformElementParameters(x); err != nil {
@@ -630,7 +629,7 @@ func ClouddeployCustomTargetTypeIamPolicy_IsTerraformElement(x interface{}) *boo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.clouddeployCustomTargetTypeIamPolicy.ClouddeployCustomTargetTypeIamPolicy",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -638,7 +637,7 @@ func ClouddeployCustomTargetTypeIamPolicy_IsTerraformElement(x interface{}) *boo
 }
 
 // Experimental.
-func ClouddeployCustomTargetTypeIamPolicy_IsTerraformResource(x interface{}) *bool {
+func ClouddeployCustomTargetTypeIamPolicy_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateClouddeployCustomTargetTypeIamPolicy_IsTerraformResourceParameters(x); err != nil {
@@ -649,7 +648,7 @@ func ClouddeployCustomTargetTypeIamPolicy_IsTerraformResource(x interface{}) *bo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.clouddeployCustomTargetTypeIamPolicy.ClouddeployCustomTargetTypeIamPolicy",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -674,31 +673,31 @@ func (c *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy) AddMoveTarget(moveTarge
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -714,7 +713,7 @@ func (c *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy) GetBooleanAttribute(ter
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -730,7 +729,7 @@ func (c *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy) GetBooleanMapAttribute(
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -746,7 +745,7 @@ func (c *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy) GetListAttribute(terraf
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -762,7 +761,7 @@ func (c *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy) GetNumberAttribute(terr
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -778,7 +777,7 @@ func (c *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy) GetNumberListAttribute(
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -794,7 +793,7 @@ func (c *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy) GetNumberMapAttribute(t
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -810,7 +809,7 @@ func (c *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy) GetStringAttribute(terr
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -826,15 +825,15 @@ func (c *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy) GetStringMapAttribute(t
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -853,7 +852,7 @@ func (c *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy) ImportFrom(id *string, 
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -866,7 +865,7 @@ func (c *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy) InterpolationForAttribu
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -880,18 +879,18 @@ func (c *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy) MoveFromId(id *string) 
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -902,7 +901,7 @@ func (c *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -913,7 +912,7 @@ func (c *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy) OverrideLogicalId(newLo
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -949,8 +948,8 @@ func (c *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy) ResetProject() {
 	)
 }
 
-func (c *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -962,8 +961,8 @@ func (c *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy) SynthesizeAttributes() 
 	return returns
 }
 
-func (c *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -975,8 +974,8 @@ func (c *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy) SynthesizeHclAttributes
 	return returns
 }
 
-func (c *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -988,8 +987,8 @@ func (c *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy) ToHclTerraform() interf
 	return returns
 }
 
-func (c *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1014,8 +1013,8 @@ func (c *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1026,4 +1025,3 @@ func (c *jsiiProxy_ClouddeployCustomTargetTypeIamPolicy) ToTerraform() interface
 
 	return returns
 }
-

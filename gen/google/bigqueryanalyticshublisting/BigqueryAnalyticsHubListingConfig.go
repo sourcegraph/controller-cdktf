@@ -6,9 +6,9 @@ import (
 
 type BigqueryAnalyticsHubListingConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type BigqueryAnalyticsHubListingConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The ID of the data exchange.
 	//
 	// Must contain only Unicode letters, numbers (0-9), underscores (_). Should not use characters that require URL-escaping, or characters outside of ASCII, spaces.
@@ -44,7 +44,7 @@ type BigqueryAnalyticsHubListingConfig struct {
 	// If true, the listing is only available to get the resource metadata. Listing is non subscribable.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_analytics_hub_listing#allow_only_metadata_sharing BigqueryAnalyticsHubListing#allow_only_metadata_sharing}
-	AllowOnlyMetadataSharing interface{} `field:"optional" json:"allowOnlyMetadataSharing" yaml:"allowOnlyMetadataSharing"`
+	AllowOnlyMetadataSharing any `field:"optional" json:"allowOnlyMetadataSharing" yaml:"allowOnlyMetadataSharing"`
 	// bigquery_dataset block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_analytics_hub_listing#bigquery_dataset BigqueryAnalyticsHubListing#bigquery_dataset}
@@ -62,7 +62,7 @@ type BigqueryAnalyticsHubListingConfig struct {
 	// This acts as a safety guard to avoid deleting commercial listings accidentally.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_analytics_hub_listing#delete_commercial BigqueryAnalyticsHubListing#delete_commercial}
-	DeleteCommercial interface{} `field:"optional" json:"deleteCommercial" yaml:"deleteCommercial"`
+	DeleteCommercial any `field:"optional" json:"deleteCommercial" yaml:"deleteCommercial"`
 	// Short description of the listing.
 	//
 	// The description must not contain Unicode non-characters and C0 and C1 control codes except tabs (HT), new lines (LF), carriage returns (CR), and page breaks (FF).
@@ -93,7 +93,7 @@ type BigqueryAnalyticsHubListingConfig struct {
 	// Once enabled, this setting cannot be turned off.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_analytics_hub_listing#log_linked_dataset_query_user_email BigqueryAnalyticsHubListing#log_linked_dataset_query_user_email}
-	LogLinkedDatasetQueryUserEmail interface{} `field:"optional" json:"logLinkedDatasetQueryUserEmail" yaml:"logLinkedDatasetQueryUserEmail"`
+	LogLinkedDatasetQueryUserEmail any `field:"optional" json:"logLinkedDatasetQueryUserEmail" yaml:"logLinkedDatasetQueryUserEmail"`
 	// Email or URL of the primary point of contact of the listing.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_analytics_hub_listing#primary_contact BigqueryAnalyticsHubListing#primary_contact}
@@ -121,4 +121,3 @@ type BigqueryAnalyticsHubListingConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_analytics_hub_listing#timeouts BigqueryAnalyticsHubListing#timeouts}
 	Timeouts *BigqueryAnalyticsHubListingTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

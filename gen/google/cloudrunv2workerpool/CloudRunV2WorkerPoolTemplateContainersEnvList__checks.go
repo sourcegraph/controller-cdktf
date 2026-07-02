@@ -34,7 +34,7 @@ func (c *jsiiProxy_CloudRunV2WorkerPoolTemplateContainersEnvList) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_CloudRunV2WorkerPoolTemplateContainersEnvList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CloudRunV2WorkerPoolTemplateContainersEnvList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewCloudRunV2WorkerPoolTemplateContainersEnvListParameters(terrafor
 
 	return nil
 }
-

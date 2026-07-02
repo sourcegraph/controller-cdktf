@@ -98,7 +98,7 @@ func (m *jsiiProxy_MonitoringMetricDescriptorMetadataOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_MonitoringMetricDescriptorMetadataOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MonitoringMetricDescriptorMetadataOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewMonitoringMetricDescriptorMetadataOutputReferenceParameters(terr
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleMonitoringAppEngineService.DataGoogleMonitoringAppEngineService",
-		reflect.TypeOf((*DataGoogleMonitoringAppEngineService)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleMonitoringAppEngineService](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -58,7 +58,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "userLabels", GoGetter: "UserLabels"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleMonitoringAppEngineService{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -66,15 +66,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleMonitoringAppEngineService.DataGoogleMonitoringAppEngineServiceConfig",
-		reflect.TypeOf((*DataGoogleMonitoringAppEngineServiceConfig)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleMonitoringAppEngineServiceConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleMonitoringAppEngineService.DataGoogleMonitoringAppEngineServiceTelemetry",
-		reflect.TypeOf((*DataGoogleMonitoringAppEngineServiceTelemetry)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleMonitoringAppEngineServiceTelemetry](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleMonitoringAppEngineService.DataGoogleMonitoringAppEngineServiceTelemetryList",
-		reflect.TypeOf((*DataGoogleMonitoringAppEngineServiceTelemetryList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleMonitoringAppEngineServiceTelemetryList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -87,7 +87,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleMonitoringAppEngineServiceTelemetryList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -95,7 +95,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleMonitoringAppEngineService.DataGoogleMonitoringAppEngineServiceTelemetryOutputReference",
-		reflect.TypeOf((*DataGoogleMonitoringAppEngineServiceTelemetryOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleMonitoringAppEngineServiceTelemetryOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -120,7 +120,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleMonitoringAppEngineServiceTelemetryOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -90,7 +90,7 @@ func (c *jsiiProxy_CloudSecurityComplianceFrameworkCloudControlDetailsOutputRefe
 	return nil
 }
 
-func (c *jsiiProxy_CloudSecurityComplianceFrameworkCloudControlDetailsOutputReference) validatePutParametersParameters(value interface{}) error {
+func (c *jsiiProxy_CloudSecurityComplianceFrameworkCloudControlDetailsOutputReference) validatePutParametersParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (c *jsiiProxy_CloudSecurityComplianceFrameworkCloudControlDetailsOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_CloudSecurityComplianceFrameworkCloudControlDetailsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudSecurityComplianceFrameworkCloudControlDetailsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -194,7 +194,7 @@ func (j *jsiiProxy_CloudSecurityComplianceFrameworkCloudControlDetailsOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_CloudSecurityComplianceFrameworkCloudControlDetailsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CloudSecurityComplianceFrameworkCloudControlDetailsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -269,4 +269,3 @@ func validateNewCloudSecurityComplianceFrameworkCloudControlDetailsOutputReferen
 
 	return nil
 }
-

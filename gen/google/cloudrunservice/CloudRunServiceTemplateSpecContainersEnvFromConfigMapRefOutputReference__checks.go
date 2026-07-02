@@ -109,7 +109,7 @@ func (c *jsiiProxy_CloudRunServiceTemplateSpecContainersEnvFromConfigMapRefOutpu
 	return nil
 }
 
-func (j *jsiiProxy_CloudRunServiceTemplateSpecContainersEnvFromConfigMapRefOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudRunServiceTemplateSpecContainersEnvFromConfigMapRefOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -182,7 +182,7 @@ func (j *jsiiProxy_CloudRunServiceTemplateSpecContainersEnvFromConfigMapRefOutpu
 	return nil
 }
 
-func (j *jsiiProxy_CloudRunServiceTemplateSpecContainersEnvFromConfigMapRefOutputReference) validateSetOptionalParameters(val interface{}) error {
+func (j *jsiiProxy_CloudRunServiceTemplateSpecContainersEnvFromConfigMapRefOutputReference) validateSetOptionalParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -229,4 +229,3 @@ func validateNewCloudRunServiceTemplateSpecContainersEnvFromConfigMapRefOutputRe
 
 	return nil
 }
-

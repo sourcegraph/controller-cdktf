@@ -98,7 +98,7 @@ func (c *jsiiProxy_ContainerAzureClusterControlPlaneMainVolumeOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_ContainerAzureClusterControlPlaneMainVolumeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerAzureClusterControlPlaneMainVolumeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewContainerAzureClusterControlPlaneMainVolumeOutputReferenceParame
 
 	return nil
 }
-

@@ -1,6 +1,5 @@
 package pubsubsubscription
 
-
 type PubsubSubscriptionPushConfigNoWrapper struct {
 	// When true, writes the Pub/Sub message metadata to 'x-goog-pubsub-<KEY>:<VAL>' headers of the HTTP request.
 	//
@@ -8,6 +7,5 @@ type PubsubSubscriptionPushConfigNoWrapper struct {
 	// Pub/Sub message attributes to '<KEY>:<VAL>' headers of the HTTP request.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_subscription#write_metadata PubsubSubscription#write_metadata}
-	WriteMetadata interface{} `field:"required" json:"writeMetadata" yaml:"writeMetadata"`
+	WriteMetadata any `field:"required" json:"writeMetadata" yaml:"writeMetadata"`
 }
-

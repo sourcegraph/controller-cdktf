@@ -98,7 +98,7 @@ func (s *jsiiProxy_SpannerInstanceAutoscalingConfigAutoscalingLimitsOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_SpannerInstanceAutoscalingConfigAutoscalingLimitsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SpannerInstanceAutoscalingConfigAutoscalingLimitsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewSpannerInstanceAutoscalingConfigAutoscalingLimitsOutputReference
 
 	return nil
 }
-

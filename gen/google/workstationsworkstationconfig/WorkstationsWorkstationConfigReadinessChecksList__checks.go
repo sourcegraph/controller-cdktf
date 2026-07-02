@@ -34,7 +34,7 @@ func (w *jsiiProxy_WorkstationsWorkstationConfigReadinessChecksList) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_WorkstationsWorkstationConfigReadinessChecksList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_WorkstationsWorkstationConfigReadinessChecksList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewWorkstationsWorkstationConfigReadinessChecksListParameters(terra
 
 	return nil
 }
-

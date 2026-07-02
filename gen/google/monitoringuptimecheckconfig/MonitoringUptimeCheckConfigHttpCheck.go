@@ -1,11 +1,10 @@
 package monitoringuptimecheckconfig
 
-
 type MonitoringUptimeCheckConfigHttpCheck struct {
 	// accepted_response_status_codes block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_uptime_check_config#accepted_response_status_codes MonitoringUptimeCheckConfig#accepted_response_status_codes}
-	AcceptedResponseStatusCodes interface{} `field:"optional" json:"acceptedResponseStatusCodes" yaml:"acceptedResponseStatusCodes"`
+	AcceptedResponseStatusCodes any `field:"optional" json:"acceptedResponseStatusCodes" yaml:"acceptedResponseStatusCodes"`
 	// auth_info block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_uptime_check_config#auth_info MonitoringUptimeCheckConfig#auth_info}
@@ -37,7 +36,7 @@ type MonitoringUptimeCheckConfigHttpCheck struct {
 	// Encryption should be specified for any headers related to authentication that you do not wish to be seen when retrieving the configuration. The server will be responsible for encrypting the headers. On Get/List calls, if 'mask_headers' is set to 'true' then the headers will be obscured with '******'.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_uptime_check_config#mask_headers MonitoringUptimeCheckConfig#mask_headers}
-	MaskHeaders interface{} `field:"optional" json:"maskHeaders" yaml:"maskHeaders"`
+	MaskHeaders any `field:"optional" json:"maskHeaders" yaml:"maskHeaders"`
 	// The path to the page to run the check against.
 	//
 	// Will be combined with the host (specified within the MonitoredResource) and port to construct the full URL. If the provided path does not begin with '/', a '/' will be prepended automatically. Optional (defaults to '/').
@@ -67,12 +66,11 @@ type MonitoringUptimeCheckConfigHttpCheck struct {
 	// If true, use HTTPS instead of HTTP to run the check.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_uptime_check_config#use_ssl MonitoringUptimeCheckConfig#use_ssl}
-	UseSsl interface{} `field:"optional" json:"useSsl" yaml:"useSsl"`
+	UseSsl any `field:"optional" json:"useSsl" yaml:"useSsl"`
 	// Boolean specifying whether to include SSL certificate validation as a part of the Uptime check.
 	//
 	// Only applies to checks where 'monitored_resource' is set to 'uptime_url'. If 'use_ssl' is 'false', setting 'validate_ssl' to 'true' has no effect.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_uptime_check_config#validate_ssl MonitoringUptimeCheckConfig#validate_ssl}
-	ValidateSsl interface{} `field:"optional" json:"validateSsl" yaml:"validateSsl"`
+	ValidateSsl any `field:"optional" json:"validateSsl" yaml:"validateSsl"`
 }
-

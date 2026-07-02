@@ -1,6 +1,5 @@
 package computesecuritypolicy
 
-
 type ComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigThresholdConfigsTrafficGranularityConfigs struct {
 	// Type of this configuration.
 	//
@@ -11,10 +10,9 @@ type ComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigThresho
 	// It can only be set to true if value is empty.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_security_policy#enable_each_unique_value ComputeSecurityPolicy#enable_each_unique_value}
-	EnableEachUniqueValue interface{} `field:"optional" json:"enableEachUniqueValue" yaml:"enableEachUniqueValue"`
+	EnableEachUniqueValue any `field:"optional" json:"enableEachUniqueValue" yaml:"enableEachUniqueValue"`
 	// Requests that match this value constitute a granular traffic unit.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_security_policy#value ComputeSecurityPolicy#value}
 	Value *string `field:"optional" json:"value" yaml:"value"`
 }
-

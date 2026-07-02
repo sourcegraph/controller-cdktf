@@ -164,7 +164,7 @@ func (i *jsiiProxy_IapSettingsAccessSettingsOutputReference) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_IapSettingsAccessSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IapSettingsAccessSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -272,4 +272,3 @@ func validateNewIapSettingsAccessSettingsOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (k *jsiiProxy_KmsKeyRingImportJobTimeoutsOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_KmsKeyRingImportJobTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_KmsKeyRingImportJobTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_KmsKeyRingImportJobTimeoutsOutputReference) validateSetDelete
 	return nil
 }
 
-func (j *jsiiProxy_KmsKeyRingImportJobTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_KmsKeyRingImportJobTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewKmsKeyRingImportJobTimeoutsOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

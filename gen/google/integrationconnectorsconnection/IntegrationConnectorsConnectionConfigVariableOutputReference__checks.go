@@ -120,7 +120,7 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionConfigVariableOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_IntegrationConnectorsConnectionConfigVariableOutputReference) validateSetBooleanValueParameters(val interface{}) error {
+func (j *jsiiProxy_IntegrationConnectorsConnectionConfigVariableOutputReference) validateSetBooleanValueParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -140,7 +140,7 @@ func (j *jsiiProxy_IntegrationConnectorsConnectionConfigVariableOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_IntegrationConnectorsConnectionConfigVariableOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IntegrationConnectorsConnectionConfigVariableOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -213,7 +213,7 @@ func (j *jsiiProxy_IntegrationConnectorsConnectionConfigVariableOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_IntegrationConnectorsConnectionConfigVariableOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_IntegrationConnectorsConnectionConfigVariableOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -288,4 +288,3 @@ func validateNewIntegrationConnectorsConnectionConfigVariableOutputReferencePara
 
 	return nil
 }
-

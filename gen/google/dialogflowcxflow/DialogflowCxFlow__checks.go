@@ -19,7 +19,7 @@ func (d *jsiiProxy_DialogflowCxFlow) validateAddMoveTargetParameters(moveTarget 
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxFlow) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DialogflowCxFlow) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (d *jsiiProxy_DialogflowCxFlow) validateMoveFromIdParameters(id *string) er
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxFlow) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (d *jsiiProxy_DialogflowCxFlow) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -215,7 +215,7 @@ func (d *jsiiProxy_DialogflowCxFlow) validatePutAdvancedSettingsParameters(value
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxFlow) validatePutEventHandlersParameters(value interface{}) error {
+func (d *jsiiProxy_DialogflowCxFlow) validatePutEventHandlersParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -279,7 +279,7 @@ func (d *jsiiProxy_DialogflowCxFlow) validatePutTimeoutsParameters(value *Dialog
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxFlow) validatePutTransitionRoutesParameters(value interface{}) error {
+func (d *jsiiProxy_DialogflowCxFlow) validatePutTransitionRoutesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -326,7 +326,7 @@ func validateDialogflowCxFlow_GenerateConfigForImportParameters(scope constructs
 	return nil
 }
 
-func validateDialogflowCxFlow_IsConstructParameters(x interface{}) error {
+func validateDialogflowCxFlow_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -334,7 +334,7 @@ func validateDialogflowCxFlow_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateDialogflowCxFlow_IsTerraformElementParameters(x interface{}) error {
+func validateDialogflowCxFlow_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -342,7 +342,7 @@ func validateDialogflowCxFlow_IsTerraformElementParameters(x interface{}) error 
 	return nil
 }
 
-func validateDialogflowCxFlow_IsTerraformResourceParameters(x interface{}) error {
+func validateDialogflowCxFlow_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -350,7 +350,7 @@ func validateDialogflowCxFlow_IsTerraformResourceParameters(x interface{}) error
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxFlow) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxFlow) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -383,7 +383,7 @@ func (j *jsiiProxy_DialogflowCxFlow) validateSetConnectionParameters(val interfa
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxFlow) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxFlow) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -464,7 +464,7 @@ func (j *jsiiProxy_DialogflowCxFlow) validateSetIdParameters(val *string) error 
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxFlow) validateSetIsDefaultStartFlowParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxFlow) validateSetIsDefaultStartFlowParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -508,7 +508,7 @@ func (j *jsiiProxy_DialogflowCxFlow) validateSetParentParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxFlow) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_DialogflowCxFlow) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -580,4 +580,3 @@ func validateNewDialogflowCxFlowParameters(scope constructs.Construct, id *strin
 
 	return nil
 }
-

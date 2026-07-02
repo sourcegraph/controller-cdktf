@@ -98,7 +98,7 @@ func (a *jsiiProxy_AppEngineStandardAppVersionAutomaticScalingStandardSchedulerS
 	return nil
 }
 
-func (j *jsiiProxy_AppEngineStandardAppVersionAutomaticScalingStandardSchedulerSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppEngineStandardAppVersionAutomaticScalingStandardSchedulerSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewAppEngineStandardAppVersionAutomaticScalingStandardSchedulerSett
 
 	return nil
 }
-

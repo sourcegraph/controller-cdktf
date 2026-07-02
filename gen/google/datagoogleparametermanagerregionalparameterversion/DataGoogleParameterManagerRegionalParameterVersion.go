@@ -15,11 +15,11 @@ type DataGoogleParameterManagerRegionalParameterVersion interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -63,18 +63,18 @@ type DataGoogleParameterManagerRegionalParameterVersion interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	UpdateTime() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -102,18 +102,18 @@ type DataGoogleParameterManagerRegionalParameterVersion interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataGoogleParameterManagerRegionalParameterVersion
@@ -131,8 +131,8 @@ func (j *jsiiProxy_DataGoogleParameterManagerRegionalParameterVersion) CdktfStac
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleParameterManagerRegionalParameterVersion) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleParameterManagerRegionalParameterVersion) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -141,8 +141,8 @@ func (j *jsiiProxy_DataGoogleParameterManagerRegionalParameterVersion) Construct
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleParameterManagerRegionalParameterVersion) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleParameterManagerRegionalParameterVersion) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -371,8 +371,8 @@ func (j *jsiiProxy_DataGoogleParameterManagerRegionalParameterVersion) Provider(
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleParameterManagerRegionalParameterVersion) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleParameterManagerRegionalParameterVersion) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -391,8 +391,8 @@ func (j *jsiiProxy_DataGoogleParameterManagerRegionalParameterVersion) Terraform
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleParameterManagerRegionalParameterVersion) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleParameterManagerRegionalParameterVersion) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -421,7 +421,6 @@ func (j *jsiiProxy_DataGoogleParameterManagerRegionalParameterVersion) UpdateTim
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/parameter_manager_regional_parameter_version google_parameter_manager_regional_parameter_version} Data Source.
 func NewDataGoogleParameterManagerRegionalParameterVersion(scope constructs.Construct, id *string, config *DataGoogleParameterManagerRegionalParameterVersionConfig) DataGoogleParameterManagerRegionalParameterVersion {
 	_init_.Initialize()
@@ -433,7 +432,7 @@ func NewDataGoogleParameterManagerRegionalParameterVersion(scope constructs.Cons
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleParameterManagerRegionalParameterVersion.DataGoogleParameterManagerRegionalParameterVersion",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -446,12 +445,12 @@ func NewDataGoogleParameterManagerRegionalParameterVersion_Override(d DataGoogle
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleParameterManagerRegionalParameterVersion.DataGoogleParameterManagerRegionalParameterVersion",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataGoogleParameterManagerRegionalParameterVersion)SetCount(val interface{}) {
+func (j *jsiiProxy_DataGoogleParameterManagerRegionalParameterVersion) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -462,7 +461,7 @@ func (j *jsiiProxy_DataGoogleParameterManagerRegionalParameterVersion)SetCount(v
 	)
 }
 
-func (j *jsiiProxy_DataGoogleParameterManagerRegionalParameterVersion)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataGoogleParameterManagerRegionalParameterVersion) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -470,7 +469,7 @@ func (j *jsiiProxy_DataGoogleParameterManagerRegionalParameterVersion)SetDepends
 	)
 }
 
-func (j *jsiiProxy_DataGoogleParameterManagerRegionalParameterVersion)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGoogleParameterManagerRegionalParameterVersion) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -478,7 +477,7 @@ func (j *jsiiProxy_DataGoogleParameterManagerRegionalParameterVersion)SetForEach
 	)
 }
 
-func (j *jsiiProxy_DataGoogleParameterManagerRegionalParameterVersion)SetId(val *string) {
+func (j *jsiiProxy_DataGoogleParameterManagerRegionalParameterVersion) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -489,7 +488,7 @@ func (j *jsiiProxy_DataGoogleParameterManagerRegionalParameterVersion)SetId(val 
 	)
 }
 
-func (j *jsiiProxy_DataGoogleParameterManagerRegionalParameterVersion)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGoogleParameterManagerRegionalParameterVersion) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -500,7 +499,7 @@ func (j *jsiiProxy_DataGoogleParameterManagerRegionalParameterVersion)SetLifecyc
 	)
 }
 
-func (j *jsiiProxy_DataGoogleParameterManagerRegionalParameterVersion)SetLocation(val *string) {
+func (j *jsiiProxy_DataGoogleParameterManagerRegionalParameterVersion) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -511,7 +510,7 @@ func (j *jsiiProxy_DataGoogleParameterManagerRegionalParameterVersion)SetLocatio
 	)
 }
 
-func (j *jsiiProxy_DataGoogleParameterManagerRegionalParameterVersion)SetParameter(val *string) {
+func (j *jsiiProxy_DataGoogleParameterManagerRegionalParameterVersion) SetParameter(val *string) {
 	if err := j.validateSetParameterParameters(val); err != nil {
 		panic(err)
 	}
@@ -522,7 +521,7 @@ func (j *jsiiProxy_DataGoogleParameterManagerRegionalParameterVersion)SetParamet
 	)
 }
 
-func (j *jsiiProxy_DataGoogleParameterManagerRegionalParameterVersion)SetParameterVersionId(val *string) {
+func (j *jsiiProxy_DataGoogleParameterManagerRegionalParameterVersion) SetParameterVersionId(val *string) {
 	if err := j.validateSetParameterVersionIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -533,7 +532,7 @@ func (j *jsiiProxy_DataGoogleParameterManagerRegionalParameterVersion)SetParamet
 	)
 }
 
-func (j *jsiiProxy_DataGoogleParameterManagerRegionalParameterVersion)SetProject(val *string) {
+func (j *jsiiProxy_DataGoogleParameterManagerRegionalParameterVersion) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -544,7 +543,7 @@ func (j *jsiiProxy_DataGoogleParameterManagerRegionalParameterVersion)SetProject
 	)
 }
 
-func (j *jsiiProxy_DataGoogleParameterManagerRegionalParameterVersion)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGoogleParameterManagerRegionalParameterVersion) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -564,7 +563,7 @@ func DataGoogleParameterManagerRegionalParameterVersion_GenerateConfigForImport(
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleParameterManagerRegionalParameterVersion.DataGoogleParameterManagerRegionalParameterVersion",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -588,7 +587,7 @@ func DataGoogleParameterManagerRegionalParameterVersion_GenerateConfigForImport(
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataGoogleParameterManagerRegionalParameterVersion_IsConstruct(x interface{}) *bool {
+func DataGoogleParameterManagerRegionalParameterVersion_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleParameterManagerRegionalParameterVersion_IsConstructParameters(x); err != nil {
@@ -599,7 +598,7 @@ func DataGoogleParameterManagerRegionalParameterVersion_IsConstruct(x interface{
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleParameterManagerRegionalParameterVersion.DataGoogleParameterManagerRegionalParameterVersion",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -607,7 +606,7 @@ func DataGoogleParameterManagerRegionalParameterVersion_IsConstruct(x interface{
 }
 
 // Experimental.
-func DataGoogleParameterManagerRegionalParameterVersion_IsTerraformDataSource(x interface{}) *bool {
+func DataGoogleParameterManagerRegionalParameterVersion_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleParameterManagerRegionalParameterVersion_IsTerraformDataSourceParameters(x); err != nil {
@@ -618,7 +617,7 @@ func DataGoogleParameterManagerRegionalParameterVersion_IsTerraformDataSource(x 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleParameterManagerRegionalParameterVersion.DataGoogleParameterManagerRegionalParameterVersion",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -626,7 +625,7 @@ func DataGoogleParameterManagerRegionalParameterVersion_IsTerraformDataSource(x 
 }
 
 // Experimental.
-func DataGoogleParameterManagerRegionalParameterVersion_IsTerraformElement(x interface{}) *bool {
+func DataGoogleParameterManagerRegionalParameterVersion_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleParameterManagerRegionalParameterVersion_IsTerraformElementParameters(x); err != nil {
@@ -637,7 +636,7 @@ func DataGoogleParameterManagerRegionalParameterVersion_IsTerraformElement(x int
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleParameterManagerRegionalParameterVersion.DataGoogleParameterManagerRegionalParameterVersion",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -655,27 +654,27 @@ func DataGoogleParameterManagerRegionalParameterVersion_TfResourceType() *string
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleParameterManagerRegionalParameterVersion) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataGoogleParameterManagerRegionalParameterVersion) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataGoogleParameterManagerRegionalParameterVersion) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataGoogleParameterManagerRegionalParameterVersion) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -691,7 +690,7 @@ func (d *jsiiProxy_DataGoogleParameterManagerRegionalParameterVersion) GetBoolea
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -707,7 +706,7 @@ func (d *jsiiProxy_DataGoogleParameterManagerRegionalParameterVersion) GetBoolea
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -723,7 +722,7 @@ func (d *jsiiProxy_DataGoogleParameterManagerRegionalParameterVersion) GetListAt
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -739,7 +738,7 @@ func (d *jsiiProxy_DataGoogleParameterManagerRegionalParameterVersion) GetNumber
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -755,7 +754,7 @@ func (d *jsiiProxy_DataGoogleParameterManagerRegionalParameterVersion) GetNumber
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -771,7 +770,7 @@ func (d *jsiiProxy_DataGoogleParameterManagerRegionalParameterVersion) GetNumber
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -787,7 +786,7 @@ func (d *jsiiProxy_DataGoogleParameterManagerRegionalParameterVersion) GetString
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -803,7 +802,7 @@ func (d *jsiiProxy_DataGoogleParameterManagerRegionalParameterVersion) GetString
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -819,7 +818,7 @@ func (d *jsiiProxy_DataGoogleParameterManagerRegionalParameterVersion) Interpola
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -833,7 +832,7 @@ func (d *jsiiProxy_DataGoogleParameterManagerRegionalParameterVersion) OverrideL
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -869,8 +868,8 @@ func (d *jsiiProxy_DataGoogleParameterManagerRegionalParameterVersion) ResetProj
 	)
 }
 
-func (d *jsiiProxy_DataGoogleParameterManagerRegionalParameterVersion) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleParameterManagerRegionalParameterVersion) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -882,8 +881,8 @@ func (d *jsiiProxy_DataGoogleParameterManagerRegionalParameterVersion) Synthesiz
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleParameterManagerRegionalParameterVersion) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleParameterManagerRegionalParameterVersion) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -895,8 +894,8 @@ func (d *jsiiProxy_DataGoogleParameterManagerRegionalParameterVersion) Synthesiz
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleParameterManagerRegionalParameterVersion) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleParameterManagerRegionalParameterVersion) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -908,8 +907,8 @@ func (d *jsiiProxy_DataGoogleParameterManagerRegionalParameterVersion) ToHclTerr
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleParameterManagerRegionalParameterVersion) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleParameterManagerRegionalParameterVersion) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -934,8 +933,8 @@ func (d *jsiiProxy_DataGoogleParameterManagerRegionalParameterVersion) ToString(
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleParameterManagerRegionalParameterVersion) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleParameterManagerRegionalParameterVersion) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -946,4 +945,3 @@ func (d *jsiiProxy_DataGoogleParameterManagerRegionalParameterVersion) ToTerrafo
 
 	return returns
 }
-

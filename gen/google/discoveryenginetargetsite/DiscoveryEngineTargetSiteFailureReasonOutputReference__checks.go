@@ -98,7 +98,7 @@ func (d *jsiiProxy_DiscoveryEngineTargetSiteFailureReasonOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineTargetSiteFailureReasonOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DiscoveryEngineTargetSiteFailureReasonOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDiscoveryEngineTargetSiteFailureReasonOutputReferenceParameters(
 
 	return nil
 }
-

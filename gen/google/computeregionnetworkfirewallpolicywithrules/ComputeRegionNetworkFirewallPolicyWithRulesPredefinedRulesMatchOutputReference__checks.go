@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesMat
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesMatchOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesMatchOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesMatchO
 
 	return nil
 }
-

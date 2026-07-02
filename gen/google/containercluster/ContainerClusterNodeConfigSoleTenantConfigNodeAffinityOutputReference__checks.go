@@ -98,7 +98,7 @@ func (c *jsiiProxy_ContainerClusterNodeConfigSoleTenantConfigNodeAffinityOutputR
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterNodeConfigSoleTenantConfigNodeAffinityOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterNodeConfigSoleTenantConfigNodeAffinityOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ContainerClusterNodeConfigSoleTenantConfigNodeAffinityOutputR
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterNodeConfigSoleTenantConfigNodeAffinityOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterNodeConfigSoleTenantConfigNodeAffinityOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewContainerClusterNodeConfigSoleTenantConfigNodeAffinityOutputRefe
 
 	return nil
 }
-

@@ -22,29 +22,29 @@ type MemorystoreInstance interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	CrossInstanceReplicationConfig() MemorystoreInstanceCrossInstanceReplicationConfigOutputReference
 	CrossInstanceReplicationConfigInput() *MemorystoreInstanceCrossInstanceReplicationConfig
-	DeletionProtectionEnabled() interface{}
-	SetDeletionProtectionEnabled(val interface{})
-	DeletionProtectionEnabledInput() interface{}
+	DeletionProtectionEnabled() any
+	SetDeletionProtectionEnabled(val any)
+	DeletionProtectionEnabledInput() any
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	DesiredAutoCreatedEndpoints() MemorystoreInstanceDesiredAutoCreatedEndpointsList
-	DesiredAutoCreatedEndpointsInput() interface{}
+	DesiredAutoCreatedEndpointsInput() any
 	DesiredPscAutoConnections() MemorystoreInstanceDesiredPscAutoConnectionsList
-	DesiredPscAutoConnectionsInput() interface{}
+	DesiredPscAutoConnectionsInput() any
 	DiscoveryEndpoints() MemorystoreInstanceDiscoveryEndpointsList
 	EffectiveLabels() cdktf.StringMap
 	EffectiveMaintenanceVersion() *string
@@ -113,13 +113,13 @@ type MemorystoreInstance interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	PscAttachmentDetails() MemorystoreInstancePscAttachmentDetailsList
 	PscAutoConnections() MemorystoreInstancePscAutoConnectionsList
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ReplicaCount() *float64
 	SetReplicaCount(val *float64)
 	ReplicaCountInput() *float64
@@ -138,11 +138,11 @@ type MemorystoreInstance interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() MemorystoreInstanceTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	TransitEncryptionMode() *string
 	SetTransitEncryptionMode(val *string)
 	TransitEncryptionModeInput() *string
@@ -154,9 +154,9 @@ type MemorystoreInstance interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -174,7 +174,7 @@ type MemorystoreInstance interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -186,7 +186,7 @@ type MemorystoreInstance interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -195,8 +195,8 @@ type MemorystoreInstance interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutAutomatedBackupConfig(value *MemorystoreInstanceAutomatedBackupConfig)
 	PutCrossInstanceReplicationConfig(value *MemorystoreInstanceCrossInstanceReplicationConfig)
-	PutDesiredAutoCreatedEndpoints(value interface{})
-	PutDesiredPscAutoConnections(value interface{})
+	PutDesiredAutoCreatedEndpoints(value any)
+	PutDesiredPscAutoConnections(value any)
 	PutGcsSource(value *MemorystoreInstanceGcsSource)
 	PutMaintenancePolicy(value *MemorystoreInstanceMaintenancePolicy)
 	PutManagedBackupSource(value *MemorystoreInstanceManagedBackupSource)
@@ -231,17 +231,17 @@ type MemorystoreInstance interface {
 	ResetTimeouts()
 	ResetTransitEncryptionMode()
 	ResetZoneDistributionConfig()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for MemorystoreInstance
@@ -319,8 +319,8 @@ func (j *jsiiProxy_MemorystoreInstance) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_MemorystoreInstance) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MemorystoreInstance) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -329,8 +329,8 @@ func (j *jsiiProxy_MemorystoreInstance) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_MemorystoreInstance) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_MemorystoreInstance) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -339,8 +339,8 @@ func (j *jsiiProxy_MemorystoreInstance) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_MemorystoreInstance) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MemorystoreInstance) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -379,8 +379,8 @@ func (j *jsiiProxy_MemorystoreInstance) CrossInstanceReplicationConfigInput() *M
 	return returns
 }
 
-func (j *jsiiProxy_MemorystoreInstance) DeletionProtectionEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MemorystoreInstance) DeletionProtectionEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deletionProtectionEnabled",
@@ -389,8 +389,8 @@ func (j *jsiiProxy_MemorystoreInstance) DeletionProtectionEnabled() interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_MemorystoreInstance) DeletionProtectionEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MemorystoreInstance) DeletionProtectionEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deletionProtectionEnabledInput",
@@ -419,8 +419,8 @@ func (j *jsiiProxy_MemorystoreInstance) DesiredAutoCreatedEndpoints() Memorystor
 	return returns
 }
 
-func (j *jsiiProxy_MemorystoreInstance) DesiredAutoCreatedEndpointsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MemorystoreInstance) DesiredAutoCreatedEndpointsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"desiredAutoCreatedEndpointsInput",
@@ -439,8 +439,8 @@ func (j *jsiiProxy_MemorystoreInstance) DesiredPscAutoConnections() MemorystoreI
 	return returns
 }
 
-func (j *jsiiProxy_MemorystoreInstance) DesiredPscAutoConnectionsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MemorystoreInstance) DesiredPscAutoConnectionsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"desiredPscAutoConnectionsInput",
@@ -889,8 +889,8 @@ func (j *jsiiProxy_MemorystoreInstance) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_MemorystoreInstance) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_MemorystoreInstance) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -919,8 +919,8 @@ func (j *jsiiProxy_MemorystoreInstance) PscAutoConnections() MemorystoreInstance
 	return returns
 }
 
-func (j *jsiiProxy_MemorystoreInstance) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MemorystoreInstance) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -1049,8 +1049,8 @@ func (j *jsiiProxy_MemorystoreInstance) TerraformLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_MemorystoreInstance) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_MemorystoreInstance) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -1079,8 +1079,8 @@ func (j *jsiiProxy_MemorystoreInstance) Timeouts() MemorystoreInstanceTimeoutsOu
 	return returns
 }
 
-func (j *jsiiProxy_MemorystoreInstance) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MemorystoreInstance) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -1149,7 +1149,6 @@ func (j *jsiiProxy_MemorystoreInstance) ZoneDistributionConfigInput() *Memorysto
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/memorystore_instance google_memorystore_instance} Resource.
 func NewMemorystoreInstance(scope constructs.Construct, id *string, config *MemorystoreInstanceConfig) MemorystoreInstance {
 	_init_.Initialize()
@@ -1161,7 +1160,7 @@ func NewMemorystoreInstance(scope constructs.Construct, id *string, config *Memo
 
 	_jsii_.Create(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstance",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -1174,12 +1173,12 @@ func NewMemorystoreInstance_Override(m MemorystoreInstance, scope constructs.Con
 
 	_jsii_.Create(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstance",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		m,
 	)
 }
 
-func (j *jsiiProxy_MemorystoreInstance)SetAuthorizationMode(val *string) {
+func (j *jsiiProxy_MemorystoreInstance) SetAuthorizationMode(val *string) {
 	if err := j.validateSetAuthorizationModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1190,7 +1189,7 @@ func (j *jsiiProxy_MemorystoreInstance)SetAuthorizationMode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MemorystoreInstance)SetConnection(val interface{}) {
+func (j *jsiiProxy_MemorystoreInstance) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1201,7 +1200,7 @@ func (j *jsiiProxy_MemorystoreInstance)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MemorystoreInstance)SetCount(val interface{}) {
+func (j *jsiiProxy_MemorystoreInstance) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -1212,7 +1211,7 @@ func (j *jsiiProxy_MemorystoreInstance)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MemorystoreInstance)SetDeletionProtectionEnabled(val interface{}) {
+func (j *jsiiProxy_MemorystoreInstance) SetDeletionProtectionEnabled(val any) {
 	if err := j.validateSetDeletionProtectionEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -1223,7 +1222,7 @@ func (j *jsiiProxy_MemorystoreInstance)SetDeletionProtectionEnabled(val interfac
 	)
 }
 
-func (j *jsiiProxy_MemorystoreInstance)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_MemorystoreInstance) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -1231,7 +1230,7 @@ func (j *jsiiProxy_MemorystoreInstance)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_MemorystoreInstance)SetEngineConfigs(val *map[string]*string) {
+func (j *jsiiProxy_MemorystoreInstance) SetEngineConfigs(val *map[string]*string) {
 	if err := j.validateSetEngineConfigsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1242,7 +1241,7 @@ func (j *jsiiProxy_MemorystoreInstance)SetEngineConfigs(val *map[string]*string)
 	)
 }
 
-func (j *jsiiProxy_MemorystoreInstance)SetEngineVersion(val *string) {
+func (j *jsiiProxy_MemorystoreInstance) SetEngineVersion(val *string) {
 	if err := j.validateSetEngineVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1253,7 +1252,7 @@ func (j *jsiiProxy_MemorystoreInstance)SetEngineVersion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MemorystoreInstance)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_MemorystoreInstance) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1261,7 +1260,7 @@ func (j *jsiiProxy_MemorystoreInstance)SetForEach(val cdktf.ITerraformIterator) 
 	)
 }
 
-func (j *jsiiProxy_MemorystoreInstance)SetId(val *string) {
+func (j *jsiiProxy_MemorystoreInstance) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1272,7 +1271,7 @@ func (j *jsiiProxy_MemorystoreInstance)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MemorystoreInstance)SetInstanceId(val *string) {
+func (j *jsiiProxy_MemorystoreInstance) SetInstanceId(val *string) {
 	if err := j.validateSetInstanceIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1283,7 +1282,7 @@ func (j *jsiiProxy_MemorystoreInstance)SetInstanceId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MemorystoreInstance)SetKmsKey(val *string) {
+func (j *jsiiProxy_MemorystoreInstance) SetKmsKey(val *string) {
 	if err := j.validateSetKmsKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -1294,7 +1293,7 @@ func (j *jsiiProxy_MemorystoreInstance)SetKmsKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MemorystoreInstance)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_MemorystoreInstance) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1305,7 +1304,7 @@ func (j *jsiiProxy_MemorystoreInstance)SetLabels(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_MemorystoreInstance)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_MemorystoreInstance) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1316,7 +1315,7 @@ func (j *jsiiProxy_MemorystoreInstance)SetLifecycle(val *cdktf.TerraformResource
 	)
 }
 
-func (j *jsiiProxy_MemorystoreInstance)SetLocation(val *string) {
+func (j *jsiiProxy_MemorystoreInstance) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -1327,7 +1326,7 @@ func (j *jsiiProxy_MemorystoreInstance)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MemorystoreInstance)SetMaintenanceVersion(val *string) {
+func (j *jsiiProxy_MemorystoreInstance) SetMaintenanceVersion(val *string) {
 	if err := j.validateSetMaintenanceVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1338,7 +1337,7 @@ func (j *jsiiProxy_MemorystoreInstance)SetMaintenanceVersion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MemorystoreInstance)SetMode(val *string) {
+func (j *jsiiProxy_MemorystoreInstance) SetMode(val *string) {
 	if err := j.validateSetModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1349,7 +1348,7 @@ func (j *jsiiProxy_MemorystoreInstance)SetMode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MemorystoreInstance)SetNodeType(val *string) {
+func (j *jsiiProxy_MemorystoreInstance) SetNodeType(val *string) {
 	if err := j.validateSetNodeTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1360,7 +1359,7 @@ func (j *jsiiProxy_MemorystoreInstance)SetNodeType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MemorystoreInstance)SetProject(val *string) {
+func (j *jsiiProxy_MemorystoreInstance) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -1371,7 +1370,7 @@ func (j *jsiiProxy_MemorystoreInstance)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MemorystoreInstance)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_MemorystoreInstance) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1379,7 +1378,7 @@ func (j *jsiiProxy_MemorystoreInstance)SetProvider(val cdktf.TerraformProvider) 
 	)
 }
 
-func (j *jsiiProxy_MemorystoreInstance)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_MemorystoreInstance) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1390,7 +1389,7 @@ func (j *jsiiProxy_MemorystoreInstance)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MemorystoreInstance)SetReplicaCount(val *float64) {
+func (j *jsiiProxy_MemorystoreInstance) SetReplicaCount(val *float64) {
 	if err := j.validateSetReplicaCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -1401,7 +1400,7 @@ func (j *jsiiProxy_MemorystoreInstance)SetReplicaCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_MemorystoreInstance)SetServerCaMode(val *string) {
+func (j *jsiiProxy_MemorystoreInstance) SetServerCaMode(val *string) {
 	if err := j.validateSetServerCaModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1412,7 +1411,7 @@ func (j *jsiiProxy_MemorystoreInstance)SetServerCaMode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MemorystoreInstance)SetServerCaPool(val *string) {
+func (j *jsiiProxy_MemorystoreInstance) SetServerCaPool(val *string) {
 	if err := j.validateSetServerCaPoolParameters(val); err != nil {
 		panic(err)
 	}
@@ -1423,7 +1422,7 @@ func (j *jsiiProxy_MemorystoreInstance)SetServerCaPool(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MemorystoreInstance)SetShardCount(val *float64) {
+func (j *jsiiProxy_MemorystoreInstance) SetShardCount(val *float64) {
 	if err := j.validateSetShardCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -1434,7 +1433,7 @@ func (j *jsiiProxy_MemorystoreInstance)SetShardCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_MemorystoreInstance)SetTransitEncryptionMode(val *string) {
+func (j *jsiiProxy_MemorystoreInstance) SetTransitEncryptionMode(val *string) {
 	if err := j.validateSetTransitEncryptionModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1457,7 +1456,7 @@ func MemorystoreInstance_GenerateConfigForImport(scope constructs.Construct, imp
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstance",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1481,7 +1480,7 @@ func MemorystoreInstance_GenerateConfigForImport(scope constructs.Construct, imp
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func MemorystoreInstance_IsConstruct(x interface{}) *bool {
+func MemorystoreInstance_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateMemorystoreInstance_IsConstructParameters(x); err != nil {
@@ -1492,7 +1491,7 @@ func MemorystoreInstance_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstance",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1500,7 +1499,7 @@ func MemorystoreInstance_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func MemorystoreInstance_IsTerraformElement(x interface{}) *bool {
+func MemorystoreInstance_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateMemorystoreInstance_IsTerraformElementParameters(x); err != nil {
@@ -1511,7 +1510,7 @@ func MemorystoreInstance_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstance",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1519,7 +1518,7 @@ func MemorystoreInstance_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func MemorystoreInstance_IsTerraformResource(x interface{}) *bool {
+func MemorystoreInstance_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateMemorystoreInstance_IsTerraformResourceParameters(x); err != nil {
@@ -1530,7 +1529,7 @@ func MemorystoreInstance_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstance",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1555,31 +1554,31 @@ func (m *jsiiProxy_MemorystoreInstance) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (m *jsiiProxy_MemorystoreInstance) AddOverride(path *string, value interface{}) {
+func (m *jsiiProxy_MemorystoreInstance) AddOverride(path *string, value any) {
 	if err := m.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (m *jsiiProxy_MemorystoreInstance) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (m *jsiiProxy_MemorystoreInstance) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1595,7 +1594,7 @@ func (m *jsiiProxy_MemorystoreInstance) GetBooleanAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		m,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1611,7 +1610,7 @@ func (m *jsiiProxy_MemorystoreInstance) GetBooleanMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		m,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1627,7 +1626,7 @@ func (m *jsiiProxy_MemorystoreInstance) GetListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		m,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1643,7 +1642,7 @@ func (m *jsiiProxy_MemorystoreInstance) GetNumberAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		m,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1659,7 +1658,7 @@ func (m *jsiiProxy_MemorystoreInstance) GetNumberListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		m,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1675,7 +1674,7 @@ func (m *jsiiProxy_MemorystoreInstance) GetNumberMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		m,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1691,7 +1690,7 @@ func (m *jsiiProxy_MemorystoreInstance) GetStringAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		m,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1707,15 +1706,15 @@ func (m *jsiiProxy_MemorystoreInstance) GetStringMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		m,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (m *jsiiProxy_MemorystoreInstance) HasResourceMove() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MemorystoreInstance) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1734,7 +1733,7 @@ func (m *jsiiProxy_MemorystoreInstance) ImportFrom(id *string, provider cdktf.Te
 	_jsii_.InvokeVoid(
 		m,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1747,7 +1746,7 @@ func (m *jsiiProxy_MemorystoreInstance) InterpolationForAttribute(terraformAttri
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1761,18 +1760,18 @@ func (m *jsiiProxy_MemorystoreInstance) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (m *jsiiProxy_MemorystoreInstance) MoveTo(moveTarget *string, index interface{}) {
+func (m *jsiiProxy_MemorystoreInstance) MoveTo(moveTarget *string, index any) {
 	if err := m.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1783,7 +1782,7 @@ func (m *jsiiProxy_MemorystoreInstance) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1794,7 +1793,7 @@ func (m *jsiiProxy_MemorystoreInstance) OverrideLogicalId(newLogicalId *string) 
 	_jsii_.InvokeVoid(
 		m,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1805,7 +1804,7 @@ func (m *jsiiProxy_MemorystoreInstance) PutAutomatedBackupConfig(value *Memoryst
 	_jsii_.InvokeVoid(
 		m,
 		"putAutomatedBackupConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1816,29 +1815,29 @@ func (m *jsiiProxy_MemorystoreInstance) PutCrossInstanceReplicationConfig(value 
 	_jsii_.InvokeVoid(
 		m,
 		"putCrossInstanceReplicationConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (m *jsiiProxy_MemorystoreInstance) PutDesiredAutoCreatedEndpoints(value interface{}) {
+func (m *jsiiProxy_MemorystoreInstance) PutDesiredAutoCreatedEndpoints(value any) {
 	if err := m.validatePutDesiredAutoCreatedEndpointsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
 		"putDesiredAutoCreatedEndpoints",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (m *jsiiProxy_MemorystoreInstance) PutDesiredPscAutoConnections(value interface{}) {
+func (m *jsiiProxy_MemorystoreInstance) PutDesiredPscAutoConnections(value any) {
 	if err := m.validatePutDesiredPscAutoConnectionsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
 		"putDesiredPscAutoConnections",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1849,7 +1848,7 @@ func (m *jsiiProxy_MemorystoreInstance) PutGcsSource(value *MemorystoreInstanceG
 	_jsii_.InvokeVoid(
 		m,
 		"putGcsSource",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1860,7 +1859,7 @@ func (m *jsiiProxy_MemorystoreInstance) PutMaintenancePolicy(value *MemorystoreI
 	_jsii_.InvokeVoid(
 		m,
 		"putMaintenancePolicy",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1871,7 +1870,7 @@ func (m *jsiiProxy_MemorystoreInstance) PutManagedBackupSource(value *Memorystor
 	_jsii_.InvokeVoid(
 		m,
 		"putManagedBackupSource",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1882,7 +1881,7 @@ func (m *jsiiProxy_MemorystoreInstance) PutPersistenceConfig(value *MemorystoreI
 	_jsii_.InvokeVoid(
 		m,
 		"putPersistenceConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1893,7 +1892,7 @@ func (m *jsiiProxy_MemorystoreInstance) PutTimeouts(value *MemorystoreInstanceTi
 	_jsii_.InvokeVoid(
 		m,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1904,7 +1903,7 @@ func (m *jsiiProxy_MemorystoreInstance) PutZoneDistributionConfig(value *Memorys
 	_jsii_.InvokeVoid(
 		m,
 		"putZoneDistributionConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -2116,8 +2115,8 @@ func (m *jsiiProxy_MemorystoreInstance) ResetZoneDistributionConfig() {
 	)
 }
 
-func (m *jsiiProxy_MemorystoreInstance) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (m *jsiiProxy_MemorystoreInstance) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
@@ -2129,8 +2128,8 @@ func (m *jsiiProxy_MemorystoreInstance) SynthesizeAttributes() *map[string]inter
 	return returns
 }
 
-func (m *jsiiProxy_MemorystoreInstance) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (m *jsiiProxy_MemorystoreInstance) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
@@ -2142,8 +2141,8 @@ func (m *jsiiProxy_MemorystoreInstance) SynthesizeHclAttributes() *map[string]in
 	return returns
 }
 
-func (m *jsiiProxy_MemorystoreInstance) ToHclTerraform() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MemorystoreInstance) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -2155,8 +2154,8 @@ func (m *jsiiProxy_MemorystoreInstance) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (m *jsiiProxy_MemorystoreInstance) ToMetadata() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MemorystoreInstance) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -2181,8 +2180,8 @@ func (m *jsiiProxy_MemorystoreInstance) ToString() *string {
 	return returns
 }
 
-func (m *jsiiProxy_MemorystoreInstance) ToTerraform() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MemorystoreInstance) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -2193,4 +2192,3 @@ func (m *jsiiProxy_MemorystoreInstance) ToTerraform() interface{} {
 
 	return returns
 }
-

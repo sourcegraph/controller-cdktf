@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vertexAiDeploymentResourcePool.VertexAiDeploymentResourcePool",
-		reflect.TypeOf((*VertexAiDeploymentResourcePool)(nil)).Elem(),
+		reflect.TypeFor[VertexAiDeploymentResourcePool](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,7 +73,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VertexAiDeploymentResourcePool{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -81,19 +81,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vertexAiDeploymentResourcePool.VertexAiDeploymentResourcePoolConfig",
-		reflect.TypeOf((*VertexAiDeploymentResourcePoolConfig)(nil)).Elem(),
+		reflect.TypeFor[VertexAiDeploymentResourcePoolConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vertexAiDeploymentResourcePool.VertexAiDeploymentResourcePoolDedicatedResources",
-		reflect.TypeOf((*VertexAiDeploymentResourcePoolDedicatedResources)(nil)).Elem(),
+		reflect.TypeFor[VertexAiDeploymentResourcePoolDedicatedResources](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vertexAiDeploymentResourcePool.VertexAiDeploymentResourcePoolDedicatedResourcesAutoscalingMetricSpecs",
-		reflect.TypeOf((*VertexAiDeploymentResourcePoolDedicatedResourcesAutoscalingMetricSpecs)(nil)).Elem(),
+		reflect.TypeFor[VertexAiDeploymentResourcePoolDedicatedResourcesAutoscalingMetricSpecs](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vertexAiDeploymentResourcePool.VertexAiDeploymentResourcePoolDedicatedResourcesAutoscalingMetricSpecsList",
-		reflect.TypeOf((*VertexAiDeploymentResourcePoolDedicatedResourcesAutoscalingMetricSpecsList)(nil)).Elem(),
+		reflect.TypeFor[VertexAiDeploymentResourcePoolDedicatedResourcesAutoscalingMetricSpecsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -107,7 +107,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VertexAiDeploymentResourcePoolDedicatedResourcesAutoscalingMetricSpecsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -115,7 +115,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vertexAiDeploymentResourcePool.VertexAiDeploymentResourcePoolDedicatedResourcesAutoscalingMetricSpecsOutputReference",
-		reflect.TypeOf((*VertexAiDeploymentResourcePoolDedicatedResourcesAutoscalingMetricSpecsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VertexAiDeploymentResourcePoolDedicatedResourcesAutoscalingMetricSpecsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -144,7 +144,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VertexAiDeploymentResourcePoolDedicatedResourcesAutoscalingMetricSpecsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -152,11 +152,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vertexAiDeploymentResourcePool.VertexAiDeploymentResourcePoolDedicatedResourcesMachineSpec",
-		reflect.TypeOf((*VertexAiDeploymentResourcePoolDedicatedResourcesMachineSpec)(nil)).Elem(),
+		reflect.TypeFor[VertexAiDeploymentResourcePoolDedicatedResourcesMachineSpec](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vertexAiDeploymentResourcePool.VertexAiDeploymentResourcePoolDedicatedResourcesMachineSpecOutputReference",
-		reflect.TypeOf((*VertexAiDeploymentResourcePoolDedicatedResourcesMachineSpecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VertexAiDeploymentResourcePoolDedicatedResourcesMachineSpecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "acceleratorCount", GoGetter: "AcceleratorCount"},
 			_jsii_.MemberProperty{JsiiProperty: "acceleratorCountInput", GoGetter: "AcceleratorCountInput"},
@@ -189,7 +189,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VertexAiDeploymentResourcePoolDedicatedResourcesMachineSpecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -197,7 +197,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vertexAiDeploymentResourcePool.VertexAiDeploymentResourcePoolDedicatedResourcesOutputReference",
-		reflect.TypeOf((*VertexAiDeploymentResourcePoolDedicatedResourcesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VertexAiDeploymentResourcePoolDedicatedResourcesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "autoscalingMetricSpecs", GoGetter: "AutoscalingMetricSpecs"},
 			_jsii_.MemberProperty{JsiiProperty: "autoscalingMetricSpecsInput", GoGetter: "AutoscalingMetricSpecsInput"},
@@ -233,7 +233,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VertexAiDeploymentResourcePoolDedicatedResourcesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -241,11 +241,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vertexAiDeploymentResourcePool.VertexAiDeploymentResourcePoolTimeouts",
-		reflect.TypeOf((*VertexAiDeploymentResourcePoolTimeouts)(nil)).Elem(),
+		reflect.TypeFor[VertexAiDeploymentResourcePoolTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vertexAiDeploymentResourcePool.VertexAiDeploymentResourcePoolTimeoutsOutputReference",
-		reflect.TypeOf((*VertexAiDeploymentResourcePoolTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VertexAiDeploymentResourcePoolTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -275,7 +275,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VertexAiDeploymentResourcePoolTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

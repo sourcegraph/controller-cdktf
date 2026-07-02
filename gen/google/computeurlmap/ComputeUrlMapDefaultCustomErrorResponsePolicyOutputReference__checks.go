@@ -90,7 +90,7 @@ func (c *jsiiProxy_ComputeUrlMapDefaultCustomErrorResponsePolicyOutputReference)
 	return nil
 }
 
-func (c *jsiiProxy_ComputeUrlMapDefaultCustomErrorResponsePolicyOutputReference) validatePutErrorResponseRuleParameters(value interface{}) error {
+func (c *jsiiProxy_ComputeUrlMapDefaultCustomErrorResponsePolicyOutputReference) validatePutErrorResponseRuleParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (c *jsiiProxy_ComputeUrlMapDefaultCustomErrorResponsePolicyOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_ComputeUrlMapDefaultCustomErrorResponsePolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeUrlMapDefaultCustomErrorResponsePolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -237,4 +237,3 @@ func validateNewComputeUrlMapDefaultCustomErrorResponsePolicyOutputReferencePara
 
 	return nil
 }
-

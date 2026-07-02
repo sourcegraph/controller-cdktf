@@ -6,9 +6,9 @@ import (
 
 type SecurityposturePostureConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type SecurityposturePostureConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Location of the resource, eg: global.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/securityposture_posture#location SecurityposturePosture#location}
@@ -30,7 +30,7 @@ type SecurityposturePostureConfig struct {
 	// policy_sets block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/securityposture_posture#policy_sets SecurityposturePosture#policy_sets}
-	PolicySets interface{} `field:"required" json:"policySets" yaml:"policySets"`
+	PolicySets any `field:"required" json:"policySets" yaml:"policySets"`
 	// Id of the posture. It is an immutable field.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/securityposture_posture#posture_id SecurityposturePosture#posture_id}
@@ -56,4 +56,3 @@ type SecurityposturePostureConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/securityposture_posture#timeouts SecurityposturePosture#timeouts}
 	Timeouts *SecurityposturePostureTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

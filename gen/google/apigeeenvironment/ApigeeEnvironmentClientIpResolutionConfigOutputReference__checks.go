@@ -109,7 +109,7 @@ func (a *jsiiProxy_ApigeeEnvironmentClientIpResolutionConfigOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_ApigeeEnvironmentClientIpResolutionConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ApigeeEnvironmentClientIpResolutionConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewApigeeEnvironmentClientIpResolutionConfigOutputReferenceParamete
 
 	return nil
 }
-

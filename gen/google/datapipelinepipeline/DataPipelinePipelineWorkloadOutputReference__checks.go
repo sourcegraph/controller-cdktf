@@ -120,7 +120,7 @@ func (d *jsiiProxy_DataPipelinePipelineWorkloadOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_DataPipelinePipelineWorkloadOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataPipelinePipelineWorkloadOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -220,4 +220,3 @@ func validateNewDataPipelinePipelineWorkloadOutputReferenceParameters(terraformR
 
 	return nil
 }
-

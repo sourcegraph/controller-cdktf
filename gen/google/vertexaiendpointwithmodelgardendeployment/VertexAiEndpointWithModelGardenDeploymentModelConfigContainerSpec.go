@@ -1,6 +1,5 @@
 package vertexaiendpointwithmodelgardendeployment
 
-
 type VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpec struct {
 	// URI of the Docker image to be used as the custom container for serving predictions.
 	//
@@ -106,11 +105,11 @@ type VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpec struct {
 	// env block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#env VertexAiEndpointWithModelGardenDeployment#env}
-	Env interface{} `field:"optional" json:"env" yaml:"env"`
+	Env any `field:"optional" json:"env" yaml:"env"`
 	// grpc_ports block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#grpc_ports VertexAiEndpointWithModelGardenDeployment#grpc_ports}
-	GrpcPorts interface{} `field:"optional" json:"grpcPorts" yaml:"grpcPorts"`
+	GrpcPorts any `field:"optional" json:"grpcPorts" yaml:"grpcPorts"`
 	// health_probe block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#health_probe VertexAiEndpointWithModelGardenDeployment#health_probe}
@@ -152,7 +151,7 @@ type VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpec struct {
 	// ports block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#ports VertexAiEndpointWithModelGardenDeployment#ports}
-	Ports interface{} `field:"optional" json:"ports" yaml:"ports"`
+	Ports any `field:"optional" json:"ports" yaml:"ports"`
 	// HTTP path on the container to send prediction requests to.
 	//
 	// Vertex AI
@@ -193,4 +192,3 @@ type VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpec struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#startup_probe VertexAiEndpointWithModelGardenDeployment#startup_probe}
 	StartupProbe *VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbe `field:"optional" json:"startupProbe" yaml:"startupProbe"`
 }
-

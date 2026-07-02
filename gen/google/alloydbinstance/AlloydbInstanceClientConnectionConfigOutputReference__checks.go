@@ -109,7 +109,7 @@ func (a *jsiiProxy_AlloydbInstanceClientConnectionConfigOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_AlloydbInstanceClientConnectionConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AlloydbInstanceClientConnectionConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -182,7 +182,7 @@ func (j *jsiiProxy_AlloydbInstanceClientConnectionConfigOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_AlloydbInstanceClientConnectionConfigOutputReference) validateSetRequireConnectorsParameters(val interface{}) error {
+func (j *jsiiProxy_AlloydbInstanceClientConnectionConfigOutputReference) validateSetRequireConnectorsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -229,4 +229,3 @@ func validateNewAlloydbInstanceClientConnectionConfigOutputReferenceParameters(t
 
 	return nil
 }
-

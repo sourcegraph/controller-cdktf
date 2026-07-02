@@ -12,9 +12,9 @@ type StorageBucketIamMemberConditionOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -49,7 +49,7 @@ type StorageBucketIamMemberConditionOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -73,7 +73,7 @@ type StorageBucketIamMemberConditionOutputReference interface {
 	ResetDescription()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -86,8 +86,8 @@ type jsiiProxy_StorageBucketIamMemberConditionOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_StorageBucketIamMemberConditionOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StorageBucketIamMemberConditionOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -216,7 +216,6 @@ func (j *jsiiProxy_StorageBucketIamMemberConditionOutputReference) TitleInput() 
 	return returns
 }
 
-
 func NewStorageBucketIamMemberConditionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) StorageBucketIamMemberConditionOutputReference {
 	_init_.Initialize()
 
@@ -227,7 +226,7 @@ func NewStorageBucketIamMemberConditionOutputReference(terraformResource cdktf.I
 
 	_jsii_.Create(
 		"@cdktf/provider-google.storageBucketIamMember.StorageBucketIamMemberConditionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -239,12 +238,12 @@ func NewStorageBucketIamMemberConditionOutputReference_Override(s StorageBucketI
 
 	_jsii_.Create(
 		"@cdktf/provider-google.storageBucketIamMember.StorageBucketIamMemberConditionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		s,
 	)
 }
 
-func (j *jsiiProxy_StorageBucketIamMemberConditionOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_StorageBucketIamMemberConditionOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_StorageBucketIamMemberConditionOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_StorageBucketIamMemberConditionOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_StorageBucketIamMemberConditionOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_StorageBucketIamMemberConditionOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_StorageBucketIamMemberConditionOutputReference)SetDescription(val *string) {
+func (j *jsiiProxy_StorageBucketIamMemberConditionOutputReference) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_StorageBucketIamMemberConditionOutputReference)SetDescription
 	)
 }
 
-func (j *jsiiProxy_StorageBucketIamMemberConditionOutputReference)SetExpression(val *string) {
+func (j *jsiiProxy_StorageBucketIamMemberConditionOutputReference) SetExpression(val *string) {
 	if err := j.validateSetExpressionParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_StorageBucketIamMemberConditionOutputReference)SetExpression(
 	)
 }
 
-func (j *jsiiProxy_StorageBucketIamMemberConditionOutputReference)SetInternalValue(val *StorageBucketIamMemberCondition) {
+func (j *jsiiProxy_StorageBucketIamMemberConditionOutputReference) SetInternalValue(val *StorageBucketIamMemberCondition) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -299,7 +298,7 @@ func (j *jsiiProxy_StorageBucketIamMemberConditionOutputReference)SetInternalVal
 	)
 }
 
-func (j *jsiiProxy_StorageBucketIamMemberConditionOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_StorageBucketIamMemberConditionOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -310,7 +309,7 @@ func (j *jsiiProxy_StorageBucketIamMemberConditionOutputReference)SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_StorageBucketIamMemberConditionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_StorageBucketIamMemberConditionOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -321,7 +320,7 @@ func (j *jsiiProxy_StorageBucketIamMemberConditionOutputReference)SetTerraformRe
 	)
 }
 
-func (j *jsiiProxy_StorageBucketIamMemberConditionOutputReference)SetTitle(val *string) {
+func (j *jsiiProxy_StorageBucketIamMemberConditionOutputReference) SetTitle(val *string) {
 	if err := j.validateSetTitleParameters(val); err != nil {
 		panic(err)
 	}
@@ -345,16 +344,16 @@ func (s *jsiiProxy_StorageBucketIamMemberConditionOutputReference) ComputeFqn() 
 	return returns
 }
 
-func (s *jsiiProxy_StorageBucketIamMemberConditionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_StorageBucketIamMemberConditionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -370,7 +369,7 @@ func (s *jsiiProxy_StorageBucketIamMemberConditionOutputReference) GetBooleanAtt
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -386,7 +385,7 @@ func (s *jsiiProxy_StorageBucketIamMemberConditionOutputReference) GetBooleanMap
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -402,7 +401,7 @@ func (s *jsiiProxy_StorageBucketIamMemberConditionOutputReference) GetListAttrib
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -418,7 +417,7 @@ func (s *jsiiProxy_StorageBucketIamMemberConditionOutputReference) GetNumberAttr
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -434,7 +433,7 @@ func (s *jsiiProxy_StorageBucketIamMemberConditionOutputReference) GetNumberList
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -450,7 +449,7 @@ func (s *jsiiProxy_StorageBucketIamMemberConditionOutputReference) GetNumberMapA
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -466,7 +465,7 @@ func (s *jsiiProxy_StorageBucketIamMemberConditionOutputReference) GetStringAttr
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -482,7 +481,7 @@ func (s *jsiiProxy_StorageBucketIamMemberConditionOutputReference) GetStringMapA
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -511,7 +510,7 @@ func (s *jsiiProxy_StorageBucketIamMemberConditionOutputReference) Interpolation
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -526,16 +525,16 @@ func (s *jsiiProxy_StorageBucketIamMemberConditionOutputReference) ResetDescript
 	)
 }
 
-func (s *jsiiProxy_StorageBucketIamMemberConditionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_StorageBucketIamMemberConditionOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -554,4 +553,3 @@ func (s *jsiiProxy_StorageBucketIamMemberConditionOutputReference) ToString() *s
 
 	return returns
 }
-

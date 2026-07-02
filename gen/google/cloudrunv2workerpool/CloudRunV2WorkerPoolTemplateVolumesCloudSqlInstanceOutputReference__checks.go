@@ -98,7 +98,7 @@ func (c *jsiiProxy_CloudRunV2WorkerPoolTemplateVolumesCloudSqlInstanceOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_CloudRunV2WorkerPoolTemplateVolumesCloudSqlInstanceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudRunV2WorkerPoolTemplateVolumesCloudSqlInstanceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewCloudRunV2WorkerPoolTemplateVolumesCloudSqlInstanceOutputReferen
 
 	return nil
 }
-

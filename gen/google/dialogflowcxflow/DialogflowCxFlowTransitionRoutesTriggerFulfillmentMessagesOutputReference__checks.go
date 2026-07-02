@@ -172,7 +172,7 @@ func (j *jsiiProxy_DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesOut
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -237,7 +237,7 @@ func (j *jsiiProxy_DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesOut
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -304,4 +304,3 @@ func validateNewDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesOutput
 
 	return nil
 }
-

@@ -1,6 +1,5 @@
 package networkserviceslbedgeextension
 
-
 type NetworkServicesLbEdgeExtensionExtensionChainsExtensions struct {
 	// The name for this extension.
 	//
@@ -27,7 +26,7 @@ type NetworkServicesLbEdgeExtensionExtensionChainsExtensions struct {
 	// configuring a custom error response in the load balancer.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_lb_edge_extension#fail_open NetworkServicesLbEdgeExtension#fail_open}
-	FailOpen interface{} `field:"optional" json:"failOpen" yaml:"failOpen"`
+	FailOpen any `field:"optional" json:"failOpen" yaml:"failOpen"`
 	// List of the HTTP headers to forward to the extension (from the client or backend).
 	//
 	// If omitted, all headers are sent. Each element is a string indicating the header name.
@@ -41,4 +40,3 @@ type NetworkServicesLbEdgeExtensionExtensionChainsExtensions struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_lb_edge_extension#supported_events NetworkServicesLbEdgeExtension#supported_events}
 	SupportedEvents *[]*string `field:"optional" json:"supportedEvents" yaml:"supportedEvents"`
 }
-

@@ -19,7 +19,7 @@ func (o *jsiiProxy_OracleDatabaseCloudExadataInfrastructure) validateAddMoveTarg
 	return nil
 }
 
-func (o *jsiiProxy_OracleDatabaseCloudExadataInfrastructure) validateAddOverrideParameters(path *string, value interface{}) error {
+func (o *jsiiProxy_OracleDatabaseCloudExadataInfrastructure) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (o *jsiiProxy_OracleDatabaseCloudExadataInfrastructure) validateMoveFromIdP
 	return nil
 }
 
-func (o *jsiiProxy_OracleDatabaseCloudExadataInfrastructure) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (o *jsiiProxy_OracleDatabaseCloudExadataInfrastructure) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateOracleDatabaseCloudExadataInfrastructure_GenerateConfigForImportPar
 	return nil
 }
 
-func validateOracleDatabaseCloudExadataInfrastructure_IsConstructParameters(x interface{}) error {
+func validateOracleDatabaseCloudExadataInfrastructure_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateOracleDatabaseCloudExadataInfrastructure_IsConstructParameters(x in
 	return nil
 }
 
-func validateOracleDatabaseCloudExadataInfrastructure_IsTerraformElementParameters(x interface{}) error {
+func validateOracleDatabaseCloudExadataInfrastructure_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateOracleDatabaseCloudExadataInfrastructure_IsTerraformElementParamete
 	return nil
 }
 
-func validateOracleDatabaseCloudExadataInfrastructure_IsTerraformResourceParameters(x interface{}) error {
+func validateOracleDatabaseCloudExadataInfrastructure_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -274,7 +274,7 @@ func (j *jsiiProxy_OracleDatabaseCloudExadataInfrastructure) validateSetCloudExa
 	return nil
 }
 
-func (j *jsiiProxy_OracleDatabaseCloudExadataInfrastructure) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_OracleDatabaseCloudExadataInfrastructure) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -307,7 +307,7 @@ func (j *jsiiProxy_OracleDatabaseCloudExadataInfrastructure) validateSetConnecti
 	return nil
 }
 
-func (j *jsiiProxy_OracleDatabaseCloudExadataInfrastructure) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_OracleDatabaseCloudExadataInfrastructure) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -364,7 +364,7 @@ func (j *jsiiProxy_OracleDatabaseCloudExadataInfrastructure) validateSetCountPar
 	return nil
 }
 
-func (j *jsiiProxy_OracleDatabaseCloudExadataInfrastructure) validateSetDeletionProtectionParameters(val interface{}) error {
+func (j *jsiiProxy_OracleDatabaseCloudExadataInfrastructure) validateSetDeletionProtectionParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -440,7 +440,7 @@ func (j *jsiiProxy_OracleDatabaseCloudExadataInfrastructure) validateSetProjectP
 	return nil
 }
 
-func (j *jsiiProxy_OracleDatabaseCloudExadataInfrastructure) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_OracleDatabaseCloudExadataInfrastructure) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -504,4 +504,3 @@ func validateNewOracleDatabaseCloudExadataInfrastructureParameters(scope constru
 
 	return nil
 }
-

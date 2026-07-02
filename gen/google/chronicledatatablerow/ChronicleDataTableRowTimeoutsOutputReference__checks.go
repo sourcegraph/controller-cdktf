@@ -98,7 +98,7 @@ func (c *jsiiProxy_ChronicleDataTableRowTimeoutsOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_ChronicleDataTableRowTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ChronicleDataTableRowTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_ChronicleDataTableRowTimeoutsOutputReference) validateSetDele
 	return nil
 }
 
-func (j *jsiiProxy_ChronicleDataTableRowTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ChronicleDataTableRowTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewChronicleDataTableRowTimeoutsOutputReferenceParameters(terraform
 
 	return nil
 }
-

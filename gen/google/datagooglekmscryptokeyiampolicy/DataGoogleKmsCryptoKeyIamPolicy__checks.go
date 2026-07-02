@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataGoogleKmsCryptoKeyIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataGoogleKmsCryptoKeyIamPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataGoogleKmsCryptoKeyIamPolicy_GenerateConfigForImportParameters(s
 	return nil
 }
 
-func validateDataGoogleKmsCryptoKeyIamPolicy_IsConstructParameters(x interface{}) error {
+func validateDataGoogleKmsCryptoKeyIamPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataGoogleKmsCryptoKeyIamPolicy_IsConstructParameters(x interface{}
 	return nil
 }
 
-func validateDataGoogleKmsCryptoKeyIamPolicy_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataGoogleKmsCryptoKeyIamPolicy_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataGoogleKmsCryptoKeyIamPolicy_IsTerraformDataSourceParameters(x i
 	return nil
 }
 
-func validateDataGoogleKmsCryptoKeyIamPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateDataGoogleKmsCryptoKeyIamPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func validateDataGoogleKmsCryptoKeyIamPolicy_IsTerraformElementParameters(x inte
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleKmsCryptoKeyIamPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleKmsCryptoKeyIamPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -250,4 +250,3 @@ func validateNewDataGoogleKmsCryptoKeyIamPolicyParameters(scope constructs.Const
 
 	return nil
 }
-

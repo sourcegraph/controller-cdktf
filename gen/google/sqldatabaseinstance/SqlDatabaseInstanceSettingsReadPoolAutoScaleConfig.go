@@ -1,15 +1,14 @@
 package sqldatabaseinstance
 
-
 type SqlDatabaseInstanceSettingsReadPoolAutoScaleConfig struct {
 	// True if auto scale in is disabled.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/sql_database_instance#disable_scale_in SqlDatabaseInstance#disable_scale_in}
-	DisableScaleIn interface{} `field:"optional" json:"disableScaleIn" yaml:"disableScaleIn"`
+	DisableScaleIn any `field:"optional" json:"disableScaleIn" yaml:"disableScaleIn"`
 	// True if Read Pool Auto Scale is enabled.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/sql_database_instance#enabled SqlDatabaseInstance#enabled}
-	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
+	Enabled any `field:"optional" json:"enabled" yaml:"enabled"`
 	// Maximum number of nodes in the read pool.
 	//
 	// If set to lower than current node count, node count will be updated.
@@ -33,6 +32,5 @@ type SqlDatabaseInstanceSettingsReadPoolAutoScaleConfig struct {
 	// target_metrics block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/sql_database_instance#target_metrics SqlDatabaseInstance#target_metrics}
-	TargetMetrics interface{} `field:"optional" json:"targetMetrics" yaml:"targetMetrics"`
+	TargetMetrics any `field:"optional" json:"targetMetrics" yaml:"targetMetrics"`
 }
-

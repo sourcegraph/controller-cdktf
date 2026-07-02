@@ -34,7 +34,7 @@ func (c *jsiiProxy_ComputeWireGroupEndpointsInterconnectsList) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_ComputeWireGroupEndpointsInterconnectsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeWireGroupEndpointsInterconnectsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewComputeWireGroupEndpointsInterconnectsListParameters(terraformRe
 
 	return nil
 }
-

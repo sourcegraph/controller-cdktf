@@ -98,7 +98,7 @@ func (i *jsiiProxy_IdentityPlatformConfigBlockingFunctionsForwardInboundCredenti
 	return nil
 }
 
-func (j *jsiiProxy_IdentityPlatformConfigBlockingFunctionsForwardInboundCredentialsOutputReference) validateSetAccessTokenParameters(val interface{}) error {
+func (j *jsiiProxy_IdentityPlatformConfigBlockingFunctionsForwardInboundCredentialsOutputReference) validateSetAccessTokenParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -118,7 +118,7 @@ func (j *jsiiProxy_IdentityPlatformConfigBlockingFunctionsForwardInboundCredenti
 	return nil
 }
 
-func (j *jsiiProxy_IdentityPlatformConfigBlockingFunctionsForwardInboundCredentialsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IdentityPlatformConfigBlockingFunctionsForwardInboundCredentialsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -183,7 +183,7 @@ func (j *jsiiProxy_IdentityPlatformConfigBlockingFunctionsForwardInboundCredenti
 	return nil
 }
 
-func (j *jsiiProxy_IdentityPlatformConfigBlockingFunctionsForwardInboundCredentialsOutputReference) validateSetIdTokenParameters(val interface{}) error {
+func (j *jsiiProxy_IdentityPlatformConfigBlockingFunctionsForwardInboundCredentialsOutputReference) validateSetIdTokenParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -211,7 +211,7 @@ func (j *jsiiProxy_IdentityPlatformConfigBlockingFunctionsForwardInboundCredenti
 	return nil
 }
 
-func (j *jsiiProxy_IdentityPlatformConfigBlockingFunctionsForwardInboundCredentialsOutputReference) validateSetRefreshTokenParameters(val interface{}) error {
+func (j *jsiiProxy_IdentityPlatformConfigBlockingFunctionsForwardInboundCredentialsOutputReference) validateSetRefreshTokenParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -258,4 +258,3 @@ func validateNewIdentityPlatformConfigBlockingFunctionsForwardInboundCredentials
 
 	return nil
 }
-

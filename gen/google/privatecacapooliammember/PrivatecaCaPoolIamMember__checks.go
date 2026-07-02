@@ -19,7 +19,7 @@ func (p *jsiiProxy_PrivatecaCaPoolIamMember) validateAddMoveTargetParameters(mov
 	return nil
 }
 
-func (p *jsiiProxy_PrivatecaCaPoolIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
+func (p *jsiiProxy_PrivatecaCaPoolIamMember) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (p *jsiiProxy_PrivatecaCaPoolIamMember) validateMoveFromIdParameters(id *st
 	return nil
 }
 
-func (p *jsiiProxy_PrivatecaCaPoolIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (p *jsiiProxy_PrivatecaCaPoolIamMember) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validatePrivatecaCaPoolIamMember_GenerateConfigForImportParameters(scope co
 	return nil
 }
 
-func validatePrivatecaCaPoolIamMember_IsConstructParameters(x interface{}) error {
+func validatePrivatecaCaPoolIamMember_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validatePrivatecaCaPoolIamMember_IsConstructParameters(x interface{}) error
 	return nil
 }
 
-func validatePrivatecaCaPoolIamMember_IsTerraformElementParameters(x interface{}) error {
+func validatePrivatecaCaPoolIamMember_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validatePrivatecaCaPoolIamMember_IsTerraformElementParameters(x interface{}
 	return nil
 }
 
-func validatePrivatecaCaPoolIamMember_IsTerraformResourceParameters(x interface{}) error {
+func validatePrivatecaCaPoolIamMember_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_PrivatecaCaPoolIamMember) validateSetCaPoolParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_PrivatecaCaPoolIamMember) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_PrivatecaCaPoolIamMember) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_PrivatecaCaPoolIamMember) validateSetConnectionParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_PrivatecaCaPoolIamMember) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_PrivatecaCaPoolIamMember) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -393,7 +393,7 @@ func (j *jsiiProxy_PrivatecaCaPoolIamMember) validateSetProjectParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_PrivatecaCaPoolIamMember) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_PrivatecaCaPoolIamMember) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -465,4 +465,3 @@ func validateNewPrivatecaCaPoolIamMemberParameters(scope constructs.Construct, i
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeInstanceGroupManagerResourcePoliciesOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInstanceGroupManagerResourcePoliciesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInstanceGroupManagerResourcePoliciesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewComputeInstanceGroupManagerResourcePoliciesOutputReferenceParame
 
 	return nil
 }
-

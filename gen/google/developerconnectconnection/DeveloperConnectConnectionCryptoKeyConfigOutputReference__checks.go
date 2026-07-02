@@ -98,7 +98,7 @@ func (d *jsiiProxy_DeveloperConnectConnectionCryptoKeyConfigOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_DeveloperConnectConnectionCryptoKeyConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DeveloperConnectConnectionCryptoKeyConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDeveloperConnectConnectionCryptoKeyConfigOutputReferenceParamete
 
 	return nil
 }
-

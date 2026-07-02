@@ -98,7 +98,7 @@ func (i *jsiiProxy_IapWebCloudRunServiceIamMemberConditionOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_IapWebCloudRunServiceIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IapWebCloudRunServiceIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewIapWebCloudRunServiceIamMemberConditionOutputReferenceParameters
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeInstanceTemplateDiskSourceImageEncryptionKeyOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateDiskSourceImageEncryptionKeyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInstanceTemplateDiskSourceImageEncryptionKeyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewComputeInstanceTemplateDiskSourceImageEncryptionKeyOutputReferen
 
 	return nil
 }
-

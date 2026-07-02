@@ -21,17 +21,17 @@ type CloudbuildBitbucketServerConfig interface {
 	SetConfigId(val *string)
 	ConfigIdInput() *string
 	ConnectedRepositories() CloudbuildBitbucketServerConfigConnectedRepositoriesList
-	ConnectedRepositoriesInput() interface{}
+	ConnectedRepositoriesInput() any
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -71,11 +71,11 @@ type CloudbuildBitbucketServerConfig interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Secrets() CloudbuildBitbucketServerConfigSecretsOutputReference
 	SecretsInput() *CloudbuildBitbucketServerConfigSecrets
 	SslCa() *string
@@ -84,11 +84,11 @@ type CloudbuildBitbucketServerConfig interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() CloudbuildBitbucketServerConfigTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Username() *string
 	SetUsername(val *string)
 	UsernameInput() *string
@@ -97,9 +97,9 @@ type CloudbuildBitbucketServerConfig interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -117,7 +117,7 @@ type CloudbuildBitbucketServerConfig interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -129,14 +129,14 @@ type CloudbuildBitbucketServerConfig interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutConnectedRepositories(value interface{})
+	PutConnectedRepositories(value any)
 	PutSecrets(value *CloudbuildBitbucketServerConfigSecrets)
 	PutTimeouts(value *CloudbuildBitbucketServerConfigTimeouts)
 	ResetConnectedRepositories()
@@ -148,17 +148,17 @@ type CloudbuildBitbucketServerConfig interface {
 	ResetProject()
 	ResetSslCa()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for CloudbuildBitbucketServerConfig
@@ -226,8 +226,8 @@ func (j *jsiiProxy_CloudbuildBitbucketServerConfig) ConnectedRepositories() Clou
 	return returns
 }
 
-func (j *jsiiProxy_CloudbuildBitbucketServerConfig) ConnectedRepositoriesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudbuildBitbucketServerConfig) ConnectedRepositoriesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connectedRepositoriesInput",
@@ -236,8 +236,8 @@ func (j *jsiiProxy_CloudbuildBitbucketServerConfig) ConnectedRepositoriesInput()
 	return returns
 }
 
-func (j *jsiiProxy_CloudbuildBitbucketServerConfig) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudbuildBitbucketServerConfig) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -246,8 +246,8 @@ func (j *jsiiProxy_CloudbuildBitbucketServerConfig) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CloudbuildBitbucketServerConfig) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CloudbuildBitbucketServerConfig) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -256,8 +256,8 @@ func (j *jsiiProxy_CloudbuildBitbucketServerConfig) ConstructNodeMetadata() *map
 	return returns
 }
 
-func (j *jsiiProxy_CloudbuildBitbucketServerConfig) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudbuildBitbucketServerConfig) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -446,8 +446,8 @@ func (j *jsiiProxy_CloudbuildBitbucketServerConfig) Provider() cdktf.TerraformPr
 	return returns
 }
 
-func (j *jsiiProxy_CloudbuildBitbucketServerConfig) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_CloudbuildBitbucketServerConfig) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -456,8 +456,8 @@ func (j *jsiiProxy_CloudbuildBitbucketServerConfig) Provisioners() *[]interface{
 	return returns
 }
 
-func (j *jsiiProxy_CloudbuildBitbucketServerConfig) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudbuildBitbucketServerConfig) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -516,8 +516,8 @@ func (j *jsiiProxy_CloudbuildBitbucketServerConfig) TerraformGeneratorMetadata()
 	return returns
 }
 
-func (j *jsiiProxy_CloudbuildBitbucketServerConfig) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CloudbuildBitbucketServerConfig) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -546,8 +546,8 @@ func (j *jsiiProxy_CloudbuildBitbucketServerConfig) Timeouts() CloudbuildBitbuck
 	return returns
 }
 
-func (j *jsiiProxy_CloudbuildBitbucketServerConfig) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudbuildBitbucketServerConfig) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -586,7 +586,6 @@ func (j *jsiiProxy_CloudbuildBitbucketServerConfig) WebhookKey() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuild_bitbucket_server_config google_cloudbuild_bitbucket_server_config} Resource.
 func NewCloudbuildBitbucketServerConfig(scope constructs.Construct, id *string, config *CloudbuildBitbucketServerConfigConfig) CloudbuildBitbucketServerConfig {
 	_init_.Initialize()
@@ -598,7 +597,7 @@ func NewCloudbuildBitbucketServerConfig(scope constructs.Construct, id *string, 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cloudbuildBitbucketServerConfig.CloudbuildBitbucketServerConfig",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -611,12 +610,12 @@ func NewCloudbuildBitbucketServerConfig_Override(c CloudbuildBitbucketServerConf
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cloudbuildBitbucketServerConfig.CloudbuildBitbucketServerConfig",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CloudbuildBitbucketServerConfig)SetApiKey(val *string) {
+func (j *jsiiProxy_CloudbuildBitbucketServerConfig) SetApiKey(val *string) {
 	if err := j.validateSetApiKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -627,7 +626,7 @@ func (j *jsiiProxy_CloudbuildBitbucketServerConfig)SetApiKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudbuildBitbucketServerConfig)SetConfigId(val *string) {
+func (j *jsiiProxy_CloudbuildBitbucketServerConfig) SetConfigId(val *string) {
 	if err := j.validateSetConfigIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -638,7 +637,7 @@ func (j *jsiiProxy_CloudbuildBitbucketServerConfig)SetConfigId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudbuildBitbucketServerConfig)SetConnection(val interface{}) {
+func (j *jsiiProxy_CloudbuildBitbucketServerConfig) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -649,7 +648,7 @@ func (j *jsiiProxy_CloudbuildBitbucketServerConfig)SetConnection(val interface{}
 	)
 }
 
-func (j *jsiiProxy_CloudbuildBitbucketServerConfig)SetCount(val interface{}) {
+func (j *jsiiProxy_CloudbuildBitbucketServerConfig) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -660,7 +659,7 @@ func (j *jsiiProxy_CloudbuildBitbucketServerConfig)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudbuildBitbucketServerConfig)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_CloudbuildBitbucketServerConfig) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -668,7 +667,7 @@ func (j *jsiiProxy_CloudbuildBitbucketServerConfig)SetDependsOn(val *[]*string) 
 	)
 }
 
-func (j *jsiiProxy_CloudbuildBitbucketServerConfig)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_CloudbuildBitbucketServerConfig) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -676,7 +675,7 @@ func (j *jsiiProxy_CloudbuildBitbucketServerConfig)SetForEach(val cdktf.ITerrafo
 	)
 }
 
-func (j *jsiiProxy_CloudbuildBitbucketServerConfig)SetHostUri(val *string) {
+func (j *jsiiProxy_CloudbuildBitbucketServerConfig) SetHostUri(val *string) {
 	if err := j.validateSetHostUriParameters(val); err != nil {
 		panic(err)
 	}
@@ -687,7 +686,7 @@ func (j *jsiiProxy_CloudbuildBitbucketServerConfig)SetHostUri(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudbuildBitbucketServerConfig)SetId(val *string) {
+func (j *jsiiProxy_CloudbuildBitbucketServerConfig) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -698,7 +697,7 @@ func (j *jsiiProxy_CloudbuildBitbucketServerConfig)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudbuildBitbucketServerConfig)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_CloudbuildBitbucketServerConfig) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -709,7 +708,7 @@ func (j *jsiiProxy_CloudbuildBitbucketServerConfig)SetLifecycle(val *cdktf.Terra
 	)
 }
 
-func (j *jsiiProxy_CloudbuildBitbucketServerConfig)SetLocation(val *string) {
+func (j *jsiiProxy_CloudbuildBitbucketServerConfig) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -720,7 +719,7 @@ func (j *jsiiProxy_CloudbuildBitbucketServerConfig)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudbuildBitbucketServerConfig)SetPeeredNetwork(val *string) {
+func (j *jsiiProxy_CloudbuildBitbucketServerConfig) SetPeeredNetwork(val *string) {
 	if err := j.validateSetPeeredNetworkParameters(val); err != nil {
 		panic(err)
 	}
@@ -731,7 +730,7 @@ func (j *jsiiProxy_CloudbuildBitbucketServerConfig)SetPeeredNetwork(val *string)
 	)
 }
 
-func (j *jsiiProxy_CloudbuildBitbucketServerConfig)SetProject(val *string) {
+func (j *jsiiProxy_CloudbuildBitbucketServerConfig) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -742,7 +741,7 @@ func (j *jsiiProxy_CloudbuildBitbucketServerConfig)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudbuildBitbucketServerConfig)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_CloudbuildBitbucketServerConfig) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -750,7 +749,7 @@ func (j *jsiiProxy_CloudbuildBitbucketServerConfig)SetProvider(val cdktf.Terrafo
 	)
 }
 
-func (j *jsiiProxy_CloudbuildBitbucketServerConfig)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_CloudbuildBitbucketServerConfig) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -761,7 +760,7 @@ func (j *jsiiProxy_CloudbuildBitbucketServerConfig)SetProvisioners(val *[]interf
 	)
 }
 
-func (j *jsiiProxy_CloudbuildBitbucketServerConfig)SetSslCa(val *string) {
+func (j *jsiiProxy_CloudbuildBitbucketServerConfig) SetSslCa(val *string) {
 	if err := j.validateSetSslCaParameters(val); err != nil {
 		panic(err)
 	}
@@ -772,7 +771,7 @@ func (j *jsiiProxy_CloudbuildBitbucketServerConfig)SetSslCa(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudbuildBitbucketServerConfig)SetUsername(val *string) {
+func (j *jsiiProxy_CloudbuildBitbucketServerConfig) SetUsername(val *string) {
 	if err := j.validateSetUsernameParameters(val); err != nil {
 		panic(err)
 	}
@@ -795,7 +794,7 @@ func CloudbuildBitbucketServerConfig_GenerateConfigForImport(scope constructs.Co
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.cloudbuildBitbucketServerConfig.CloudbuildBitbucketServerConfig",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -819,7 +818,7 @@ func CloudbuildBitbucketServerConfig_GenerateConfigForImport(scope constructs.Co
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func CloudbuildBitbucketServerConfig_IsConstruct(x interface{}) *bool {
+func CloudbuildBitbucketServerConfig_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCloudbuildBitbucketServerConfig_IsConstructParameters(x); err != nil {
@@ -830,7 +829,7 @@ func CloudbuildBitbucketServerConfig_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.cloudbuildBitbucketServerConfig.CloudbuildBitbucketServerConfig",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -838,7 +837,7 @@ func CloudbuildBitbucketServerConfig_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func CloudbuildBitbucketServerConfig_IsTerraformElement(x interface{}) *bool {
+func CloudbuildBitbucketServerConfig_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCloudbuildBitbucketServerConfig_IsTerraformElementParameters(x); err != nil {
@@ -849,7 +848,7 @@ func CloudbuildBitbucketServerConfig_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.cloudbuildBitbucketServerConfig.CloudbuildBitbucketServerConfig",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -857,7 +856,7 @@ func CloudbuildBitbucketServerConfig_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func CloudbuildBitbucketServerConfig_IsTerraformResource(x interface{}) *bool {
+func CloudbuildBitbucketServerConfig_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCloudbuildBitbucketServerConfig_IsTerraformResourceParameters(x); err != nil {
@@ -868,7 +867,7 @@ func CloudbuildBitbucketServerConfig_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.cloudbuildBitbucketServerConfig.CloudbuildBitbucketServerConfig",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -893,31 +892,31 @@ func (c *jsiiProxy_CloudbuildBitbucketServerConfig) AddMoveTarget(moveTarget *st
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_CloudbuildBitbucketServerConfig) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_CloudbuildBitbucketServerConfig) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_CloudbuildBitbucketServerConfig) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CloudbuildBitbucketServerConfig) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -933,7 +932,7 @@ func (c *jsiiProxy_CloudbuildBitbucketServerConfig) GetBooleanAttribute(terrafor
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -949,7 +948,7 @@ func (c *jsiiProxy_CloudbuildBitbucketServerConfig) GetBooleanMapAttribute(terra
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -965,7 +964,7 @@ func (c *jsiiProxy_CloudbuildBitbucketServerConfig) GetListAttribute(terraformAt
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -981,7 +980,7 @@ func (c *jsiiProxy_CloudbuildBitbucketServerConfig) GetNumberAttribute(terraform
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -997,7 +996,7 @@ func (c *jsiiProxy_CloudbuildBitbucketServerConfig) GetNumberListAttribute(terra
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1013,7 +1012,7 @@ func (c *jsiiProxy_CloudbuildBitbucketServerConfig) GetNumberMapAttribute(terraf
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1029,7 +1028,7 @@ func (c *jsiiProxy_CloudbuildBitbucketServerConfig) GetStringAttribute(terraform
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1045,15 +1044,15 @@ func (c *jsiiProxy_CloudbuildBitbucketServerConfig) GetStringMapAttribute(terraf
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_CloudbuildBitbucketServerConfig) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudbuildBitbucketServerConfig) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1072,7 +1071,7 @@ func (c *jsiiProxy_CloudbuildBitbucketServerConfig) ImportFrom(id *string, provi
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1085,7 +1084,7 @@ func (c *jsiiProxy_CloudbuildBitbucketServerConfig) InterpolationForAttribute(te
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1099,18 +1098,18 @@ func (c *jsiiProxy_CloudbuildBitbucketServerConfig) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_CloudbuildBitbucketServerConfig) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_CloudbuildBitbucketServerConfig) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1121,7 +1120,7 @@ func (c *jsiiProxy_CloudbuildBitbucketServerConfig) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1132,18 +1131,18 @@ func (c *jsiiProxy_CloudbuildBitbucketServerConfig) OverrideLogicalId(newLogical
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (c *jsiiProxy_CloudbuildBitbucketServerConfig) PutConnectedRepositories(value interface{}) {
+func (c *jsiiProxy_CloudbuildBitbucketServerConfig) PutConnectedRepositories(value any) {
 	if err := c.validatePutConnectedRepositoriesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putConnectedRepositories",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1154,7 +1153,7 @@ func (c *jsiiProxy_CloudbuildBitbucketServerConfig) PutSecrets(value *Cloudbuild
 	_jsii_.InvokeVoid(
 		c,
 		"putSecrets",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1165,7 +1164,7 @@ func (c *jsiiProxy_CloudbuildBitbucketServerConfig) PutTimeouts(value *Cloudbuil
 	_jsii_.InvokeVoid(
 		c,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1225,8 +1224,8 @@ func (c *jsiiProxy_CloudbuildBitbucketServerConfig) ResetTimeouts() {
 	)
 }
 
-func (c *jsiiProxy_CloudbuildBitbucketServerConfig) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CloudbuildBitbucketServerConfig) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1238,8 +1237,8 @@ func (c *jsiiProxy_CloudbuildBitbucketServerConfig) SynthesizeAttributes() *map[
 	return returns
 }
 
-func (c *jsiiProxy_CloudbuildBitbucketServerConfig) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CloudbuildBitbucketServerConfig) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1251,8 +1250,8 @@ func (c *jsiiProxy_CloudbuildBitbucketServerConfig) SynthesizeHclAttributes() *m
 	return returns
 }
 
-func (c *jsiiProxy_CloudbuildBitbucketServerConfig) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudbuildBitbucketServerConfig) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1264,8 +1263,8 @@ func (c *jsiiProxy_CloudbuildBitbucketServerConfig) ToHclTerraform() interface{}
 	return returns
 }
 
-func (c *jsiiProxy_CloudbuildBitbucketServerConfig) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudbuildBitbucketServerConfig) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1290,8 +1289,8 @@ func (c *jsiiProxy_CloudbuildBitbucketServerConfig) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_CloudbuildBitbucketServerConfig) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudbuildBitbucketServerConfig) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1302,4 +1301,3 @@ func (c *jsiiProxy_CloudbuildBitbucketServerConfig) ToTerraform() interface{} {
 
 	return returns
 }
-

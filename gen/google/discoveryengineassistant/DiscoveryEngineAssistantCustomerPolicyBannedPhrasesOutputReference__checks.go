@@ -98,7 +98,7 @@ func (d *jsiiProxy_DiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputReference) validateSetIgnoreDiacriticsParameters(val interface{}) error {
+func (j *jsiiProxy_DiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputReference) validateSetIgnoreDiacriticsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (j *jsiiProxy_DiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -258,4 +258,3 @@ func validateNewDiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputReferen
 
 	return nil
 }
-

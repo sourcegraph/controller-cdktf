@@ -98,7 +98,7 @@ func (i *jsiiProxy_IamAccessBoundaryPolicyRulesAccessBoundaryRuleAvailabilityCon
 	return nil
 }
 
-func (j *jsiiProxy_IamAccessBoundaryPolicyRulesAccessBoundaryRuleAvailabilityConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IamAccessBoundaryPolicyRulesAccessBoundaryRuleAvailabilityConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewIamAccessBoundaryPolicyRulesAccessBoundaryRuleAvailabilityCondit
 
 	return nil
 }
-

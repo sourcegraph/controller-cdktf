@@ -15,9 +15,9 @@ type ComputeRegionPerInstanceConfigPreservedStateExternalIpOutputReference inter
 	AutoDeleteInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,8 +33,8 @@ type ComputeRegionPerInstanceConfigPreservedStateExternalIpOutputReference inter
 	InterfaceName() *string
 	SetInterfaceName(val *string)
 	InterfaceNameInput() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	IpAddress() ComputeRegionPerInstanceConfigPreservedStateExternalIpIpAddressOutputReference
 	IpAddressInput() *ComputeRegionPerInstanceConfigPreservedStateExternalIpIpAddress
 	// Experimental.
@@ -48,7 +48,7 @@ type ComputeRegionPerInstanceConfigPreservedStateExternalIpOutputReference inter
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -74,7 +74,7 @@ type ComputeRegionPerInstanceConfigPreservedStateExternalIpOutputReference inter
 	ResetIpAddress()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -107,8 +107,8 @@ func (j *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateExternalIpOutputR
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateExternalIpOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateExternalIpOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -167,8 +167,8 @@ func (j *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateExternalIpOutputR
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateExternalIpOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateExternalIpOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -217,7 +217,6 @@ func (j *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateExternalIpOutputR
 	return returns
 }
 
-
 func NewComputeRegionPerInstanceConfigPreservedStateExternalIpOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ComputeRegionPerInstanceConfigPreservedStateExternalIpOutputReference {
 	_init_.Initialize()
 
@@ -228,7 +227,7 @@ func NewComputeRegionPerInstanceConfigPreservedStateExternalIpOutputReference(te
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeRegionPerInstanceConfig.ComputeRegionPerInstanceConfigPreservedStateExternalIpOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -240,12 +239,12 @@ func NewComputeRegionPerInstanceConfigPreservedStateExternalIpOutputReference_Ov
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeRegionPerInstanceConfig.ComputeRegionPerInstanceConfigPreservedStateExternalIpOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateExternalIpOutputReference)SetAutoDelete(val *string) {
+func (j *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateExternalIpOutputReference) SetAutoDelete(val *string) {
 	if err := j.validateSetAutoDeleteParameters(val); err != nil {
 		panic(err)
 	}
@@ -256,7 +255,7 @@ func (j *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateExternalIpOutputR
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateExternalIpOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateExternalIpOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -267,7 +266,7 @@ func (j *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateExternalIpOutputR
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateExternalIpOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateExternalIpOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -278,7 +277,7 @@ func (j *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateExternalIpOutputR
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateExternalIpOutputReference)SetInterfaceName(val *string) {
+func (j *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateExternalIpOutputReference) SetInterfaceName(val *string) {
 	if err := j.validateSetInterfaceNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -289,7 +288,7 @@ func (j *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateExternalIpOutputR
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateExternalIpOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateExternalIpOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,7 +299,7 @@ func (j *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateExternalIpOutputR
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateExternalIpOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateExternalIpOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,7 +310,7 @@ func (j *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateExternalIpOutputR
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateExternalIpOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateExternalIpOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -335,16 +334,16 @@ func (c *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateExternalIpOutputR
 	return returns
 }
 
-func (c *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateExternalIpOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateExternalIpOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -360,7 +359,7 @@ func (c *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateExternalIpOutputR
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -376,7 +375,7 @@ func (c *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateExternalIpOutputR
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -392,7 +391,7 @@ func (c *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateExternalIpOutputR
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -408,7 +407,7 @@ func (c *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateExternalIpOutputR
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -424,7 +423,7 @@ func (c *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateExternalIpOutputR
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -440,7 +439,7 @@ func (c *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateExternalIpOutputR
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -456,7 +455,7 @@ func (c *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateExternalIpOutputR
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -472,7 +471,7 @@ func (c *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateExternalIpOutputR
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -501,7 +500,7 @@ func (c *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateExternalIpOutputR
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -515,7 +514,7 @@ func (c *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateExternalIpOutputR
 	_jsii_.InvokeVoid(
 		c,
 		"putIpAddress",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -535,16 +534,16 @@ func (c *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateExternalIpOutputR
 	)
 }
 
-func (c *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateExternalIpOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateExternalIpOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -563,4 +562,3 @@ func (c *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateExternalIpOutputR
 
 	return returns
 }
-

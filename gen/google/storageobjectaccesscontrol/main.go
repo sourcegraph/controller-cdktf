@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.storageObjectAccessControl.StorageObjectAccessControl",
-		reflect.TypeOf((*StorageObjectAccessControl)(nil)).Elem(),
+		reflect.TypeFor[StorageObjectAccessControl](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,7 +73,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StorageObjectAccessControl{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -81,15 +81,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.storageObjectAccessControl.StorageObjectAccessControlConfig",
-		reflect.TypeOf((*StorageObjectAccessControlConfig)(nil)).Elem(),
+		reflect.TypeFor[StorageObjectAccessControlConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.storageObjectAccessControl.StorageObjectAccessControlProjectTeam",
-		reflect.TypeOf((*StorageObjectAccessControlProjectTeam)(nil)).Elem(),
+		reflect.TypeFor[StorageObjectAccessControlProjectTeam](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.storageObjectAccessControl.StorageObjectAccessControlProjectTeamList",
-		reflect.TypeOf((*StorageObjectAccessControlProjectTeamList)(nil)).Elem(),
+		reflect.TypeFor[StorageObjectAccessControlProjectTeamList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -102,7 +102,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StorageObjectAccessControlProjectTeamList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -110,7 +110,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.storageObjectAccessControl.StorageObjectAccessControlProjectTeamOutputReference",
-		reflect.TypeOf((*StorageObjectAccessControlProjectTeamOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StorageObjectAccessControlProjectTeamOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -136,7 +136,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StorageObjectAccessControlProjectTeamOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -144,11 +144,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.storageObjectAccessControl.StorageObjectAccessControlTimeouts",
-		reflect.TypeOf((*StorageObjectAccessControlTimeouts)(nil)).Elem(),
+		reflect.TypeFor[StorageObjectAccessControlTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.storageObjectAccessControl.StorageObjectAccessControlTimeoutsOutputReference",
-		reflect.TypeOf((*StorageObjectAccessControlTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StorageObjectAccessControlTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -181,7 +181,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StorageObjectAccessControlTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

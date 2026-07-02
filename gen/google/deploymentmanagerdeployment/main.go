@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment",
-		reflect.TypeOf((*DeploymentManagerDeployment)(nil)).Elem(),
+		reflect.TypeFor[DeploymentManagerDeployment](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -87,7 +87,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DeploymentManagerDeployment{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -95,15 +95,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentConfig",
-		reflect.TypeOf((*DeploymentManagerDeploymentConfig)(nil)).Elem(),
+		reflect.TypeFor[DeploymentManagerDeploymentConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentLabels",
-		reflect.TypeOf((*DeploymentManagerDeploymentLabels)(nil)).Elem(),
+		reflect.TypeFor[DeploymentManagerDeploymentLabels](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentLabelsList",
-		reflect.TypeOf((*DeploymentManagerDeploymentLabelsList)(nil)).Elem(),
+		reflect.TypeFor[DeploymentManagerDeploymentLabelsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -117,7 +117,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DeploymentManagerDeploymentLabelsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -125,7 +125,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentLabelsOutputReference",
-		reflect.TypeOf((*DeploymentManagerDeploymentLabelsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DeploymentManagerDeploymentLabelsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -155,7 +155,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DeploymentManagerDeploymentLabelsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -163,15 +163,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTarget",
-		reflect.TypeOf((*DeploymentManagerDeploymentTarget)(nil)).Elem(),
+		reflect.TypeFor[DeploymentManagerDeploymentTarget](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetConfig",
-		reflect.TypeOf((*DeploymentManagerDeploymentTargetConfig)(nil)).Elem(),
+		reflect.TypeFor[DeploymentManagerDeploymentTargetConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetConfigOutputReference",
-		reflect.TypeOf((*DeploymentManagerDeploymentTargetConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DeploymentManagerDeploymentTargetConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -197,7 +197,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DeploymentManagerDeploymentTargetConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -205,11 +205,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetImports",
-		reflect.TypeOf((*DeploymentManagerDeploymentTargetImports)(nil)).Elem(),
+		reflect.TypeFor[DeploymentManagerDeploymentTargetImports](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetImportsList",
-		reflect.TypeOf((*DeploymentManagerDeploymentTargetImportsList)(nil)).Elem(),
+		reflect.TypeFor[DeploymentManagerDeploymentTargetImportsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -223,7 +223,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DeploymentManagerDeploymentTargetImportsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -231,7 +231,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetImportsOutputReference",
-		reflect.TypeOf((*DeploymentManagerDeploymentTargetImportsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DeploymentManagerDeploymentTargetImportsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -261,7 +261,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DeploymentManagerDeploymentTargetImportsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -269,7 +269,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetOutputReference",
-		reflect.TypeOf((*DeploymentManagerDeploymentTargetOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DeploymentManagerDeploymentTargetOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -300,7 +300,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DeploymentManagerDeploymentTargetOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -308,11 +308,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTimeouts",
-		reflect.TypeOf((*DeploymentManagerDeploymentTimeouts)(nil)).Elem(),
+		reflect.TypeFor[DeploymentManagerDeploymentTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTimeoutsOutputReference",
-		reflect.TypeOf((*DeploymentManagerDeploymentTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DeploymentManagerDeploymentTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -345,7 +345,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DeploymentManagerDeploymentTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

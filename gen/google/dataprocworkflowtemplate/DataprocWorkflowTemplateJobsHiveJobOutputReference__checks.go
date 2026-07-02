@@ -109,7 +109,7 @@ func (d *jsiiProxy_DataprocWorkflowTemplateJobsHiveJobOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_DataprocWorkflowTemplateJobsHiveJobOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocWorkflowTemplateJobsHiveJobOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -174,7 +174,7 @@ func (j *jsiiProxy_DataprocWorkflowTemplateJobsHiveJobOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_DataprocWorkflowTemplateJobsHiveJobOutputReference) validateSetContinueOnFailureParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocWorkflowTemplateJobsHiveJobOutputReference) validateSetContinueOnFailureParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -261,4 +261,3 @@ func validateNewDataprocWorkflowTemplateJobsHiveJobOutputReferenceParameters(ter
 
 	return nil
 }
-

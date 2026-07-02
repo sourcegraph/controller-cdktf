@@ -19,7 +19,7 @@ func (a *jsiiProxy_AppEngineStandardAppVersion) validateAddMoveTargetParameters(
 	return nil
 }
 
-func (a *jsiiProxy_AppEngineStandardAppVersion) validateAddOverrideParameters(path *string, value interface{}) error {
+func (a *jsiiProxy_AppEngineStandardAppVersion) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (a *jsiiProxy_AppEngineStandardAppVersion) validateMoveFromIdParameters(id 
 	return nil
 }
 
-func (a *jsiiProxy_AppEngineStandardAppVersion) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (a *jsiiProxy_AppEngineStandardAppVersion) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -248,7 +248,7 @@ func (a *jsiiProxy_AppEngineStandardAppVersion) validatePutEntrypointParameters(
 	return nil
 }
 
-func (a *jsiiProxy_AppEngineStandardAppVersion) validatePutHandlersParameters(value interface{}) error {
+func (a *jsiiProxy_AppEngineStandardAppVersion) validatePutHandlersParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -279,7 +279,7 @@ func (a *jsiiProxy_AppEngineStandardAppVersion) validatePutHandlersParameters(va
 	return nil
 }
 
-func (a *jsiiProxy_AppEngineStandardAppVersion) validatePutLibrariesParameters(value interface{}) error {
+func (a *jsiiProxy_AppEngineStandardAppVersion) validatePutLibrariesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -359,7 +359,7 @@ func validateAppEngineStandardAppVersion_GenerateConfigForImportParameters(scope
 	return nil
 }
 
-func validateAppEngineStandardAppVersion_IsConstructParameters(x interface{}) error {
+func validateAppEngineStandardAppVersion_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -367,7 +367,7 @@ func validateAppEngineStandardAppVersion_IsConstructParameters(x interface{}) er
 	return nil
 }
 
-func validateAppEngineStandardAppVersion_IsTerraformElementParameters(x interface{}) error {
+func validateAppEngineStandardAppVersion_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -375,7 +375,7 @@ func validateAppEngineStandardAppVersion_IsTerraformElementParameters(x interfac
 	return nil
 }
 
-func validateAppEngineStandardAppVersion_IsTerraformResourceParameters(x interface{}) error {
+func validateAppEngineStandardAppVersion_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -383,7 +383,7 @@ func validateAppEngineStandardAppVersion_IsTerraformResourceParameters(x interfa
 	return nil
 }
 
-func (j *jsiiProxy_AppEngineStandardAppVersion) validateSetAppEngineApisParameters(val interface{}) error {
+func (j *jsiiProxy_AppEngineStandardAppVersion) validateSetAppEngineApisParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -403,7 +403,7 @@ func (j *jsiiProxy_AppEngineStandardAppVersion) validateSetAppEngineApisParamete
 	return nil
 }
 
-func (j *jsiiProxy_AppEngineStandardAppVersion) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_AppEngineStandardAppVersion) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -436,7 +436,7 @@ func (j *jsiiProxy_AppEngineStandardAppVersion) validateSetConnectionParameters(
 	return nil
 }
 
-func (j *jsiiProxy_AppEngineStandardAppVersion) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_AppEngineStandardAppVersion) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -493,7 +493,7 @@ func (j *jsiiProxy_AppEngineStandardAppVersion) validateSetCountParameters(val i
 	return nil
 }
 
-func (j *jsiiProxy_AppEngineStandardAppVersion) validateSetDeleteServiceOnDestroyParameters(val interface{}) error {
+func (j *jsiiProxy_AppEngineStandardAppVersion) validateSetDeleteServiceOnDestroyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -553,7 +553,7 @@ func (j *jsiiProxy_AppEngineStandardAppVersion) validateSetLifecycleParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_AppEngineStandardAppVersion) validateSetNoopOnDestroyParameters(val interface{}) error {
+func (j *jsiiProxy_AppEngineStandardAppVersion) validateSetNoopOnDestroyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -581,7 +581,7 @@ func (j *jsiiProxy_AppEngineStandardAppVersion) validateSetProjectParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_AppEngineStandardAppVersion) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_AppEngineStandardAppVersion) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -659,7 +659,7 @@ func (j *jsiiProxy_AppEngineStandardAppVersion) validateSetServiceAccountParamet
 	return nil
 }
 
-func (j *jsiiProxy_AppEngineStandardAppVersion) validateSetThreadsafeParameters(val interface{}) error {
+func (j *jsiiProxy_AppEngineStandardAppVersion) validateSetThreadsafeParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -705,4 +705,3 @@ func validateNewAppEngineStandardAppVersionParameters(scope constructs.Construct
 
 	return nil
 }
-

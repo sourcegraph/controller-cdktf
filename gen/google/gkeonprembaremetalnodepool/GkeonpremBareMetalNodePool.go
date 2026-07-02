@@ -21,15 +21,15 @@ type GkeonpremBareMetalNodePool interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	DeleteTime() *string
 	// Experimental.
@@ -74,31 +74,31 @@ type GkeonpremBareMetalNodePool interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Reconciling() cdktf.IResolvable
 	State() *string
 	Status() GkeonpremBareMetalNodePoolStatusList
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GkeonpremBareMetalNodePoolTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Uid() *string
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -116,7 +116,7 @@ type GkeonpremBareMetalNodePool interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -128,7 +128,7 @@ type GkeonpremBareMetalNodePool interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -145,17 +145,17 @@ type GkeonpremBareMetalNodePool interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GkeonpremBareMetalNodePool
@@ -213,8 +213,8 @@ func (j *jsiiProxy_GkeonpremBareMetalNodePool) CdktfStack() cdktf.TerraformStack
 	return returns
 }
 
-func (j *jsiiProxy_GkeonpremBareMetalNodePool) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeonpremBareMetalNodePool) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -223,8 +223,8 @@ func (j *jsiiProxy_GkeonpremBareMetalNodePool) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GkeonpremBareMetalNodePool) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GkeonpremBareMetalNodePool) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -233,8 +233,8 @@ func (j *jsiiProxy_GkeonpremBareMetalNodePool) ConstructNodeMetadata() *map[stri
 	return returns
 }
 
-func (j *jsiiProxy_GkeonpremBareMetalNodePool) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeonpremBareMetalNodePool) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -473,8 +473,8 @@ func (j *jsiiProxy_GkeonpremBareMetalNodePool) Provider() cdktf.TerraformProvide
 	return returns
 }
 
-func (j *jsiiProxy_GkeonpremBareMetalNodePool) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GkeonpremBareMetalNodePool) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -483,8 +483,8 @@ func (j *jsiiProxy_GkeonpremBareMetalNodePool) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GkeonpremBareMetalNodePool) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeonpremBareMetalNodePool) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -533,8 +533,8 @@ func (j *jsiiProxy_GkeonpremBareMetalNodePool) TerraformGeneratorMetadata() *cdk
 	return returns
 }
 
-func (j *jsiiProxy_GkeonpremBareMetalNodePool) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GkeonpremBareMetalNodePool) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -563,8 +563,8 @@ func (j *jsiiProxy_GkeonpremBareMetalNodePool) Timeouts() GkeonpremBareMetalNode
 	return returns
 }
 
-func (j *jsiiProxy_GkeonpremBareMetalNodePool) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeonpremBareMetalNodePool) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -593,7 +593,6 @@ func (j *jsiiProxy_GkeonpremBareMetalNodePool) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gkeonprem_bare_metal_node_pool google_gkeonprem_bare_metal_node_pool} Resource.
 func NewGkeonpremBareMetalNodePool(scope constructs.Construct, id *string, config *GkeonpremBareMetalNodePoolConfig) GkeonpremBareMetalNodePool {
 	_init_.Initialize()
@@ -605,7 +604,7 @@ func NewGkeonpremBareMetalNodePool(scope constructs.Construct, id *string, confi
 
 	_jsii_.Create(
 		"@cdktf/provider-google.gkeonpremBareMetalNodePool.GkeonpremBareMetalNodePool",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -618,12 +617,12 @@ func NewGkeonpremBareMetalNodePool_Override(g GkeonpremBareMetalNodePool, scope 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.gkeonpremBareMetalNodePool.GkeonpremBareMetalNodePool",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GkeonpremBareMetalNodePool)SetAnnotations(val *map[string]*string) {
+func (j *jsiiProxy_GkeonpremBareMetalNodePool) SetAnnotations(val *map[string]*string) {
 	if err := j.validateSetAnnotationsParameters(val); err != nil {
 		panic(err)
 	}
@@ -634,7 +633,7 @@ func (j *jsiiProxy_GkeonpremBareMetalNodePool)SetAnnotations(val *map[string]*st
 	)
 }
 
-func (j *jsiiProxy_GkeonpremBareMetalNodePool)SetBareMetalCluster(val *string) {
+func (j *jsiiProxy_GkeonpremBareMetalNodePool) SetBareMetalCluster(val *string) {
 	if err := j.validateSetBareMetalClusterParameters(val); err != nil {
 		panic(err)
 	}
@@ -645,7 +644,7 @@ func (j *jsiiProxy_GkeonpremBareMetalNodePool)SetBareMetalCluster(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GkeonpremBareMetalNodePool)SetConnection(val interface{}) {
+func (j *jsiiProxy_GkeonpremBareMetalNodePool) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -656,7 +655,7 @@ func (j *jsiiProxy_GkeonpremBareMetalNodePool)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GkeonpremBareMetalNodePool)SetCount(val interface{}) {
+func (j *jsiiProxy_GkeonpremBareMetalNodePool) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -667,7 +666,7 @@ func (j *jsiiProxy_GkeonpremBareMetalNodePool)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GkeonpremBareMetalNodePool)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GkeonpremBareMetalNodePool) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -675,7 +674,7 @@ func (j *jsiiProxy_GkeonpremBareMetalNodePool)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GkeonpremBareMetalNodePool)SetDisplayName(val *string) {
+func (j *jsiiProxy_GkeonpremBareMetalNodePool) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -686,7 +685,7 @@ func (j *jsiiProxy_GkeonpremBareMetalNodePool)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GkeonpremBareMetalNodePool)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GkeonpremBareMetalNodePool) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -694,7 +693,7 @@ func (j *jsiiProxy_GkeonpremBareMetalNodePool)SetForEach(val cdktf.ITerraformIte
 	)
 }
 
-func (j *jsiiProxy_GkeonpremBareMetalNodePool)SetId(val *string) {
+func (j *jsiiProxy_GkeonpremBareMetalNodePool) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -705,7 +704,7 @@ func (j *jsiiProxy_GkeonpremBareMetalNodePool)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GkeonpremBareMetalNodePool)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GkeonpremBareMetalNodePool) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -716,7 +715,7 @@ func (j *jsiiProxy_GkeonpremBareMetalNodePool)SetLifecycle(val *cdktf.TerraformR
 	)
 }
 
-func (j *jsiiProxy_GkeonpremBareMetalNodePool)SetLocation(val *string) {
+func (j *jsiiProxy_GkeonpremBareMetalNodePool) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -727,7 +726,7 @@ func (j *jsiiProxy_GkeonpremBareMetalNodePool)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GkeonpremBareMetalNodePool)SetName(val *string) {
+func (j *jsiiProxy_GkeonpremBareMetalNodePool) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -738,7 +737,7 @@ func (j *jsiiProxy_GkeonpremBareMetalNodePool)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GkeonpremBareMetalNodePool)SetProject(val *string) {
+func (j *jsiiProxy_GkeonpremBareMetalNodePool) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -749,7 +748,7 @@ func (j *jsiiProxy_GkeonpremBareMetalNodePool)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GkeonpremBareMetalNodePool)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GkeonpremBareMetalNodePool) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -757,7 +756,7 @@ func (j *jsiiProxy_GkeonpremBareMetalNodePool)SetProvider(val cdktf.TerraformPro
 	)
 }
 
-func (j *jsiiProxy_GkeonpremBareMetalNodePool)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GkeonpremBareMetalNodePool) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -780,7 +779,7 @@ func GkeonpremBareMetalNodePool_GenerateConfigForImport(scope constructs.Constru
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.gkeonpremBareMetalNodePool.GkeonpremBareMetalNodePool",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -804,7 +803,7 @@ func GkeonpremBareMetalNodePool_GenerateConfigForImport(scope constructs.Constru
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GkeonpremBareMetalNodePool_IsConstruct(x interface{}) *bool {
+func GkeonpremBareMetalNodePool_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGkeonpremBareMetalNodePool_IsConstructParameters(x); err != nil {
@@ -815,7 +814,7 @@ func GkeonpremBareMetalNodePool_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.gkeonpremBareMetalNodePool.GkeonpremBareMetalNodePool",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -823,7 +822,7 @@ func GkeonpremBareMetalNodePool_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GkeonpremBareMetalNodePool_IsTerraformElement(x interface{}) *bool {
+func GkeonpremBareMetalNodePool_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGkeonpremBareMetalNodePool_IsTerraformElementParameters(x); err != nil {
@@ -834,7 +833,7 @@ func GkeonpremBareMetalNodePool_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.gkeonpremBareMetalNodePool.GkeonpremBareMetalNodePool",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -842,7 +841,7 @@ func GkeonpremBareMetalNodePool_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GkeonpremBareMetalNodePool_IsTerraformResource(x interface{}) *bool {
+func GkeonpremBareMetalNodePool_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGkeonpremBareMetalNodePool_IsTerraformResourceParameters(x); err != nil {
@@ -853,7 +852,7 @@ func GkeonpremBareMetalNodePool_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.gkeonpremBareMetalNodePool.GkeonpremBareMetalNodePool",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -878,31 +877,31 @@ func (g *jsiiProxy_GkeonpremBareMetalNodePool) AddMoveTarget(moveTarget *string)
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GkeonpremBareMetalNodePool) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GkeonpremBareMetalNodePool) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GkeonpremBareMetalNodePool) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GkeonpremBareMetalNodePool) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -918,7 +917,7 @@ func (g *jsiiProxy_GkeonpremBareMetalNodePool) GetBooleanAttribute(terraformAttr
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -934,7 +933,7 @@ func (g *jsiiProxy_GkeonpremBareMetalNodePool) GetBooleanMapAttribute(terraformA
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -950,7 +949,7 @@ func (g *jsiiProxy_GkeonpremBareMetalNodePool) GetListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -966,7 +965,7 @@ func (g *jsiiProxy_GkeonpremBareMetalNodePool) GetNumberAttribute(terraformAttri
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -982,7 +981,7 @@ func (g *jsiiProxy_GkeonpremBareMetalNodePool) GetNumberListAttribute(terraformA
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -998,7 +997,7 @@ func (g *jsiiProxy_GkeonpremBareMetalNodePool) GetNumberMapAttribute(terraformAt
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1014,7 +1013,7 @@ func (g *jsiiProxy_GkeonpremBareMetalNodePool) GetStringAttribute(terraformAttri
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1030,15 +1029,15 @@ func (g *jsiiProxy_GkeonpremBareMetalNodePool) GetStringMapAttribute(terraformAt
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GkeonpremBareMetalNodePool) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GkeonpremBareMetalNodePool) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1057,7 +1056,7 @@ func (g *jsiiProxy_GkeonpremBareMetalNodePool) ImportFrom(id *string, provider c
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1070,7 +1069,7 @@ func (g *jsiiProxy_GkeonpremBareMetalNodePool) InterpolationForAttribute(terrafo
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1084,18 +1083,18 @@ func (g *jsiiProxy_GkeonpremBareMetalNodePool) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GkeonpremBareMetalNodePool) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GkeonpremBareMetalNodePool) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1106,7 +1105,7 @@ func (g *jsiiProxy_GkeonpremBareMetalNodePool) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1117,7 +1116,7 @@ func (g *jsiiProxy_GkeonpremBareMetalNodePool) OverrideLogicalId(newLogicalId *s
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1128,7 +1127,7 @@ func (g *jsiiProxy_GkeonpremBareMetalNodePool) PutNodePoolConfig(value *Gkeonpre
 	_jsii_.InvokeVoid(
 		g,
 		"putNodePoolConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1139,7 +1138,7 @@ func (g *jsiiProxy_GkeonpremBareMetalNodePool) PutTimeouts(value *GkeonpremBareM
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1191,8 +1190,8 @@ func (g *jsiiProxy_GkeonpremBareMetalNodePool) ResetTimeouts() {
 	)
 }
 
-func (g *jsiiProxy_GkeonpremBareMetalNodePool) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GkeonpremBareMetalNodePool) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1204,8 +1203,8 @@ func (g *jsiiProxy_GkeonpremBareMetalNodePool) SynthesizeAttributes() *map[strin
 	return returns
 }
 
-func (g *jsiiProxy_GkeonpremBareMetalNodePool) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GkeonpremBareMetalNodePool) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1217,8 +1216,8 @@ func (g *jsiiProxy_GkeonpremBareMetalNodePool) SynthesizeHclAttributes() *map[st
 	return returns
 }
 
-func (g *jsiiProxy_GkeonpremBareMetalNodePool) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GkeonpremBareMetalNodePool) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1230,8 +1229,8 @@ func (g *jsiiProxy_GkeonpremBareMetalNodePool) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GkeonpremBareMetalNodePool) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GkeonpremBareMetalNodePool) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1256,8 +1255,8 @@ func (g *jsiiProxy_GkeonpremBareMetalNodePool) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GkeonpremBareMetalNodePool) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GkeonpremBareMetalNodePool) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1268,4 +1267,3 @@ func (g *jsiiProxy_GkeonpremBareMetalNodePool) ToTerraform() interface{} {
 
 	return returns
 }
-

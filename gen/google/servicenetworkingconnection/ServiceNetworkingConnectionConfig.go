@@ -6,9 +6,9 @@ import (
 
 type ServiceNetworkingConnectionConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type ServiceNetworkingConnectionConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Name of VPC network connected with service producers using VPC peering.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/service_networking_connection#network ServiceNetworkingConnection#network}
@@ -53,6 +53,5 @@ type ServiceNetworkingConnectionConfig struct {
 	// When set to true, enforce an update of the reserved peering ranges on the existing service networking connection in case of a new connection creation failure.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/service_networking_connection#update_on_creation_fail ServiceNetworkingConnection#update_on_creation_fail}
-	UpdateOnCreationFail interface{} `field:"optional" json:"updateOnCreationFail" yaml:"updateOnCreationFail"`
+	UpdateOnCreationFail any `field:"optional" json:"updateOnCreationFail" yaml:"updateOnCreationFail"`
 }
-

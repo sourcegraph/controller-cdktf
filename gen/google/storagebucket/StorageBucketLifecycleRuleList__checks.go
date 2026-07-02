@@ -34,7 +34,7 @@ func (s *jsiiProxy_StorageBucketLifecycleRuleList) validateResolveParameters(_co
 	return nil
 }
 
-func (j *jsiiProxy_StorageBucketLifecycleRuleList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_StorageBucketLifecycleRuleList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewStorageBucketLifecycleRuleListParameters(terraformResource cdktf
 
 	return nil
 }
-

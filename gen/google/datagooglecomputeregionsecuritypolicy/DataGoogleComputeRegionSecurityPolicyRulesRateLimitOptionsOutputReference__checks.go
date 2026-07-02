@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleComputeRegionSecurityPolicyRulesRateLimitOptionsOut
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeRegionSecurityPolicyRulesRateLimitOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleComputeRegionSecurityPolicyRulesRateLimitOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleComputeRegionSecurityPolicyRulesRateLimitOptionsOutput
 
 	return nil
 }
-

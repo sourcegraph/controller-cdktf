@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleVpcAccessConnector.DataGoogleVpcAccessConnector",
-		reflect.TypeOf((*DataGoogleVpcAccessConnector)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleVpcAccessConnector](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -67,7 +67,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleVpcAccessConnector{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -75,15 +75,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleVpcAccessConnector.DataGoogleVpcAccessConnectorConfig",
-		reflect.TypeOf((*DataGoogleVpcAccessConnectorConfig)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleVpcAccessConnectorConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleVpcAccessConnector.DataGoogleVpcAccessConnectorSubnet",
-		reflect.TypeOf((*DataGoogleVpcAccessConnectorSubnet)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleVpcAccessConnectorSubnet](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleVpcAccessConnector.DataGoogleVpcAccessConnectorSubnetList",
-		reflect.TypeOf((*DataGoogleVpcAccessConnectorSubnetList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleVpcAccessConnectorSubnetList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -96,7 +96,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleVpcAccessConnectorSubnetList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -104,7 +104,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleVpcAccessConnector.DataGoogleVpcAccessConnectorSubnetOutputReference",
-		reflect.TypeOf((*DataGoogleVpcAccessConnectorSubnetOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleVpcAccessConnectorSubnetOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -130,7 +130,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleVpcAccessConnectorSubnetOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

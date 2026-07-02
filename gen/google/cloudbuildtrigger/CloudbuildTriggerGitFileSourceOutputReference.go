@@ -15,9 +15,9 @@ type CloudbuildTriggerGitFileSourceOutputReference interface {
 	BitbucketServerConfigInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -61,7 +61,7 @@ type CloudbuildTriggerGitFileSourceOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -89,7 +89,7 @@ type CloudbuildTriggerGitFileSourceOutputReference interface {
 	ResetUri()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -122,8 +122,8 @@ func (j *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference) BitbucketServe
 	return returns
 }
 
-func (j *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -312,7 +312,6 @@ func (j *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference) UriInput() *st
 	return returns
 }
 
-
 func NewCloudbuildTriggerGitFileSourceOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CloudbuildTriggerGitFileSourceOutputReference {
 	_init_.Initialize()
 
@@ -323,7 +322,7 @@ func NewCloudbuildTriggerGitFileSourceOutputReference(terraformResource cdktf.II
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerGitFileSourceOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -335,12 +334,12 @@ func NewCloudbuildTriggerGitFileSourceOutputReference_Override(c CloudbuildTrigg
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerGitFileSourceOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference)SetBitbucketServerConfig(val *string) {
+func (j *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference) SetBitbucketServerConfig(val *string) {
 	if err := j.validateSetBitbucketServerConfigParameters(val); err != nil {
 		panic(err)
 	}
@@ -351,7 +350,7 @@ func (j *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference)SetBitbucketSer
 	)
 }
 
-func (j *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -362,7 +361,7 @@ func (j *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -373,7 +372,7 @@ func (j *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference)SetGithubEnterpriseConfig(val *string) {
+func (j *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference) SetGithubEnterpriseConfig(val *string) {
 	if err := j.validateSetGithubEnterpriseConfigParameters(val); err != nil {
 		panic(err)
 	}
@@ -384,7 +383,7 @@ func (j *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference)SetGithubEnterp
 	)
 }
 
-func (j *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference)SetInternalValue(val *CloudbuildTriggerGitFileSource) {
+func (j *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference) SetInternalValue(val *CloudbuildTriggerGitFileSource) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -395,7 +394,7 @@ func (j *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference)SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference)SetPath(val *string) {
+func (j *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference) SetPath(val *string) {
 	if err := j.validateSetPathParameters(val); err != nil {
 		panic(err)
 	}
@@ -406,7 +405,7 @@ func (j *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference)SetPath(val *st
 	)
 }
 
-func (j *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference)SetRepository(val *string) {
+func (j *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference) SetRepository(val *string) {
 	if err := j.validateSetRepositoryParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,7 +416,7 @@ func (j *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference)SetRepository(v
 	)
 }
 
-func (j *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference)SetRepoType(val *string) {
+func (j *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference) SetRepoType(val *string) {
 	if err := j.validateSetRepoTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -428,7 +427,7 @@ func (j *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference)SetRepoType(val
 	)
 }
 
-func (j *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference)SetRevision(val *string) {
+func (j *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference) SetRevision(val *string) {
 	if err := j.validateSetRevisionParameters(val); err != nil {
 		panic(err)
 	}
@@ -439,7 +438,7 @@ func (j *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference)SetRevision(val
 	)
 }
 
-func (j *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -450,7 +449,7 @@ func (j *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -461,7 +460,7 @@ func (j *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference)SetTerraformRes
 	)
 }
 
-func (j *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference)SetUri(val *string) {
+func (j *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference) SetUri(val *string) {
 	if err := j.validateSetUriParameters(val); err != nil {
 		panic(err)
 	}
@@ -485,16 +484,16 @@ func (c *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference) ComputeFqn() *
 	return returns
 }
 
-func (c *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -510,7 +509,7 @@ func (c *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference) GetBooleanAttr
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -526,7 +525,7 @@ func (c *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference) GetBooleanMapA
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -542,7 +541,7 @@ func (c *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference) GetListAttribu
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -558,7 +557,7 @@ func (c *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference) GetNumberAttri
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -574,7 +573,7 @@ func (c *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference) GetNumberListA
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -590,7 +589,7 @@ func (c *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference) GetNumberMapAt
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -606,7 +605,7 @@ func (c *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference) GetStringAttri
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -622,7 +621,7 @@ func (c *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference) GetStringMapAt
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -651,7 +650,7 @@ func (c *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference) InterpolationF
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -698,16 +697,16 @@ func (c *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference) ResetUri() {
 	)
 }
 
-func (c *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -726,4 +725,3 @@ func (c *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference) ToString() *st
 
 	return returns
 }
-

@@ -109,7 +109,7 @@ func (c *jsiiProxy_ContainerClusterPrivateClusterConfigOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterPrivateClusterConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterPrivateClusterConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -174,7 +174,7 @@ func (j *jsiiProxy_ContainerClusterPrivateClusterConfigOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterPrivateClusterConfigOutputReference) validateSetEnablePrivateEndpointParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterPrivateClusterConfigOutputReference) validateSetEnablePrivateEndpointParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -194,7 +194,7 @@ func (j *jsiiProxy_ContainerClusterPrivateClusterConfigOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterPrivateClusterConfigOutputReference) validateSetEnablePrivateNodesParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterPrivateClusterConfigOutputReference) validateSetEnablePrivateNodesParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -265,4 +265,3 @@ func validateNewContainerClusterPrivateClusterConfigOutputReferenceParameters(te
 
 	return nil
 }
-

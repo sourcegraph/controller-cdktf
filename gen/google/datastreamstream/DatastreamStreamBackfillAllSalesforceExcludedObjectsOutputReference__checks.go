@@ -90,7 +90,7 @@ func (d *jsiiProxy_DatastreamStreamBackfillAllSalesforceExcludedObjectsOutputRef
 	return nil
 }
 
-func (d *jsiiProxy_DatastreamStreamBackfillAllSalesforceExcludedObjectsOutputReference) validatePutObjectsParameters(value interface{}) error {
+func (d *jsiiProxy_DatastreamStreamBackfillAllSalesforceExcludedObjectsOutputReference) validatePutObjectsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (d *jsiiProxy_DatastreamStreamBackfillAllSalesforceExcludedObjectsOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_DatastreamStreamBackfillAllSalesforceExcludedObjectsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DatastreamStreamBackfillAllSalesforceExcludedObjectsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -229,4 +229,3 @@ func validateNewDatastreamStreamBackfillAllSalesforceExcludedObjectsOutputRefere
 
 	return nil
 }
-

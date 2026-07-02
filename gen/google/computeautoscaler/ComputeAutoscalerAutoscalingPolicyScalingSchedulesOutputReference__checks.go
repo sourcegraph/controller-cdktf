@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeAutoscalerAutoscalingPolicyScalingSchedulesOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_ComputeAutoscalerAutoscalingPolicyScalingSchedulesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeAutoscalerAutoscalingPolicyScalingSchedulesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_ComputeAutoscalerAutoscalingPolicyScalingSchedulesOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_ComputeAutoscalerAutoscalingPolicyScalingSchedulesOutputReference) validateSetDisabledParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeAutoscalerAutoscalingPolicyScalingSchedulesOutputReference) validateSetDisabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -199,7 +199,7 @@ func (j *jsiiProxy_ComputeAutoscalerAutoscalingPolicyScalingSchedulesOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_ComputeAutoscalerAutoscalingPolicyScalingSchedulesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeAutoscalerAutoscalingPolicyScalingSchedulesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -290,4 +290,3 @@ func validateNewComputeAutoscalerAutoscalingPolicyScalingSchedulesOutputReferenc
 
 	return nil
 }
-

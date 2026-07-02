@@ -98,7 +98,7 @@ func (s *jsiiProxy_StorageBucketLifecycleRuleActionOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_StorageBucketLifecycleRuleActionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_StorageBucketLifecycleRuleActionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewStorageBucketLifecycleRuleActionOutputReferenceParameters(terraf
 
 	return nil
 }
-

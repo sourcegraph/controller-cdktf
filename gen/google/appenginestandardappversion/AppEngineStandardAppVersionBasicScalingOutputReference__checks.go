@@ -98,7 +98,7 @@ func (a *jsiiProxy_AppEngineStandardAppVersionBasicScalingOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_AppEngineStandardAppVersionBasicScalingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppEngineStandardAppVersionBasicScalingOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewAppEngineStandardAppVersionBasicScalingOutputReferenceParameters
 
 	return nil
 }
-

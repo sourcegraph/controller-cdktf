@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.netappVolume.NetappVolume",
-		reflect.TypeOf((*NetappVolume)(nil)).Elem(),
+		reflect.TypeFor[NetappVolume](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "activeDirectory", GoGetter: "ActiveDirectory"},
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -167,7 +167,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "usedGib", GoGetter: "UsedGib"},
 			_jsii_.MemberProperty{JsiiProperty: "zone", GoGetter: "Zone"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetappVolume{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -175,11 +175,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.netappVolume.NetappVolumeBackupConfig",
-		reflect.TypeOf((*NetappVolumeBackupConfig)(nil)).Elem(),
+		reflect.TypeFor[NetappVolumeBackupConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.netappVolume.NetappVolumeBackupConfigOutputReference",
-		reflect.TypeOf((*NetappVolumeBackupConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetappVolumeBackupConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "backupPolicies", GoGetter: "BackupPolicies"},
 			_jsii_.MemberProperty{JsiiProperty: "backupPoliciesInput", GoGetter: "BackupPoliciesInput"},
@@ -212,7 +212,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetappVolumeBackupConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -220,11 +220,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.netappVolume.NetappVolumeBlockDevices",
-		reflect.TypeOf((*NetappVolumeBlockDevices)(nil)).Elem(),
+		reflect.TypeFor[NetappVolumeBlockDevices](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.netappVolume.NetappVolumeBlockDevicesList",
-		reflect.TypeOf((*NetappVolumeBlockDevicesList)(nil)).Elem(),
+		reflect.TypeFor[NetappVolumeBlockDevicesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -238,7 +238,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetappVolumeBlockDevicesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -246,7 +246,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.netappVolume.NetappVolumeBlockDevicesOutputReference",
-		reflect.TypeOf((*NetappVolumeBlockDevicesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetappVolumeBlockDevicesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -280,7 +280,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetappVolumeBlockDevicesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -288,15 +288,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.netappVolume.NetappVolumeCacheParameters",
-		reflect.TypeOf((*NetappVolumeCacheParameters)(nil)).Elem(),
+		reflect.TypeFor[NetappVolumeCacheParameters](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.netappVolume.NetappVolumeCacheParametersCacheConfig",
-		reflect.TypeOf((*NetappVolumeCacheParametersCacheConfig)(nil)).Elem(),
+		reflect.TypeFor[NetappVolumeCacheParametersCacheConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.netappVolume.NetappVolumeCacheParametersCacheConfigOutputReference",
-		reflect.TypeOf((*NetappVolumeCacheParametersCacheConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetappVolumeCacheParametersCacheConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cifsChangeNotifyEnabled", GoGetter: "CifsChangeNotifyEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "cifsChangeNotifyEnabledInput", GoGetter: "CifsChangeNotifyEnabledInput"},
@@ -323,7 +323,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetappVolumeCacheParametersCacheConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -331,7 +331,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference",
-		reflect.TypeOf((*NetappVolumeCacheParametersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetappVolumeCacheParametersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cacheConfig", GoGetter: "CacheConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "cacheConfigInput", GoGetter: "CacheConfigInput"},
@@ -381,7 +381,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetappVolumeCacheParametersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -389,15 +389,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.netappVolume.NetappVolumeConfig",
-		reflect.TypeOf((*NetappVolumeConfig)(nil)).Elem(),
+		reflect.TypeFor[NetappVolumeConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.netappVolume.NetappVolumeExportPolicy",
-		reflect.TypeOf((*NetappVolumeExportPolicy)(nil)).Elem(),
+		reflect.TypeFor[NetappVolumeExportPolicy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.netappVolume.NetappVolumeExportPolicyOutputReference",
-		reflect.TypeOf((*NetappVolumeExportPolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetappVolumeExportPolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -424,7 +424,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetappVolumeExportPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -432,11 +432,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.netappVolume.NetappVolumeExportPolicyRules",
-		reflect.TypeOf((*NetappVolumeExportPolicyRules)(nil)).Elem(),
+		reflect.TypeFor[NetappVolumeExportPolicyRules](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.netappVolume.NetappVolumeExportPolicyRulesList",
-		reflect.TypeOf((*NetappVolumeExportPolicyRulesList)(nil)).Elem(),
+		reflect.TypeFor[NetappVolumeExportPolicyRulesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -450,7 +450,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetappVolumeExportPolicyRulesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -458,7 +458,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference",
-		reflect.TypeOf((*NetappVolumeExportPolicyRulesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetappVolumeExportPolicyRulesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessType", GoGetter: "AccessType"},
 			_jsii_.MemberProperty{JsiiProperty: "accessTypeInput", GoGetter: "AccessTypeInput"},
@@ -521,7 +521,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetappVolumeExportPolicyRulesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -529,11 +529,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.netappVolume.NetappVolumeHybridReplicationParameters",
-		reflect.TypeOf((*NetappVolumeHybridReplicationParameters)(nil)).Elem(),
+		reflect.TypeFor[NetappVolumeHybridReplicationParameters](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.netappVolume.NetappVolumeHybridReplicationParametersOutputReference",
-		reflect.TypeOf((*NetappVolumeHybridReplicationParametersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetappVolumeHybridReplicationParametersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clusterLocation", GoGetter: "ClusterLocation"},
 			_jsii_.MemberProperty{JsiiProperty: "clusterLocationInput", GoGetter: "ClusterLocationInput"},
@@ -590,7 +590,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -598,11 +598,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.netappVolume.NetappVolumeLargeCapacityConfig",
-		reflect.TypeOf((*NetappVolumeLargeCapacityConfig)(nil)).Elem(),
+		reflect.TypeFor[NetappVolumeLargeCapacityConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.netappVolume.NetappVolumeLargeCapacityConfigOutputReference",
-		reflect.TypeOf((*NetappVolumeLargeCapacityConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetappVolumeLargeCapacityConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -629,7 +629,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetappVolumeLargeCapacityConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -637,11 +637,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.netappVolume.NetappVolumeMountOptions",
-		reflect.TypeOf((*NetappVolumeMountOptions)(nil)).Elem(),
+		reflect.TypeFor[NetappVolumeMountOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.netappVolume.NetappVolumeMountOptionsList",
-		reflect.TypeOf((*NetappVolumeMountOptionsList)(nil)).Elem(),
+		reflect.TypeFor[NetappVolumeMountOptionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -654,7 +654,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetappVolumeMountOptionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -662,7 +662,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.netappVolume.NetappVolumeMountOptionsOutputReference",
-		reflect.TypeOf((*NetappVolumeMountOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetappVolumeMountOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -691,7 +691,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetappVolumeMountOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -699,11 +699,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.netappVolume.NetappVolumeRestoreParameters",
-		reflect.TypeOf((*NetappVolumeRestoreParameters)(nil)).Elem(),
+		reflect.TypeFor[NetappVolumeRestoreParameters](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.netappVolume.NetappVolumeRestoreParametersOutputReference",
-		reflect.TypeOf((*NetappVolumeRestoreParametersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetappVolumeRestoreParametersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -733,7 +733,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetappVolumeRestoreParametersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -741,15 +741,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.netappVolume.NetappVolumeSnapshotPolicy",
-		reflect.TypeOf((*NetappVolumeSnapshotPolicy)(nil)).Elem(),
+		reflect.TypeFor[NetappVolumeSnapshotPolicy](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.netappVolume.NetappVolumeSnapshotPolicyDailySchedule",
-		reflect.TypeOf((*NetappVolumeSnapshotPolicyDailySchedule)(nil)).Elem(),
+		reflect.TypeFor[NetappVolumeSnapshotPolicyDailySchedule](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.netappVolume.NetappVolumeSnapshotPolicyDailyScheduleOutputReference",
-		reflect.TypeOf((*NetappVolumeSnapshotPolicyDailyScheduleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetappVolumeSnapshotPolicyDailyScheduleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -781,7 +781,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetappVolumeSnapshotPolicyDailyScheduleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -789,11 +789,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.netappVolume.NetappVolumeSnapshotPolicyHourlySchedule",
-		reflect.TypeOf((*NetappVolumeSnapshotPolicyHourlySchedule)(nil)).Elem(),
+		reflect.TypeFor[NetappVolumeSnapshotPolicyHourlySchedule](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.netappVolume.NetappVolumeSnapshotPolicyHourlyScheduleOutputReference",
-		reflect.TypeOf((*NetappVolumeSnapshotPolicyHourlyScheduleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetappVolumeSnapshotPolicyHourlyScheduleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -822,7 +822,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetappVolumeSnapshotPolicyHourlyScheduleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -830,11 +830,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.netappVolume.NetappVolumeSnapshotPolicyMonthlySchedule",
-		reflect.TypeOf((*NetappVolumeSnapshotPolicyMonthlySchedule)(nil)).Elem(),
+		reflect.TypeFor[NetappVolumeSnapshotPolicyMonthlySchedule](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.netappVolume.NetappVolumeSnapshotPolicyMonthlyScheduleOutputReference",
-		reflect.TypeOf((*NetappVolumeSnapshotPolicyMonthlyScheduleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetappVolumeSnapshotPolicyMonthlyScheduleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -869,7 +869,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetappVolumeSnapshotPolicyMonthlyScheduleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -877,7 +877,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.netappVolume.NetappVolumeSnapshotPolicyOutputReference",
-		reflect.TypeOf((*NetappVolumeSnapshotPolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetappVolumeSnapshotPolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -920,7 +920,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "weeklySchedule", GoGetter: "WeeklySchedule"},
 			_jsii_.MemberProperty{JsiiProperty: "weeklyScheduleInput", GoGetter: "WeeklyScheduleInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetappVolumeSnapshotPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -928,11 +928,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.netappVolume.NetappVolumeSnapshotPolicyWeeklySchedule",
-		reflect.TypeOf((*NetappVolumeSnapshotPolicyWeeklySchedule)(nil)).Elem(),
+		reflect.TypeFor[NetappVolumeSnapshotPolicyWeeklySchedule](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.netappVolume.NetappVolumeSnapshotPolicyWeeklyScheduleOutputReference",
-		reflect.TypeOf((*NetappVolumeSnapshotPolicyWeeklyScheduleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetappVolumeSnapshotPolicyWeeklyScheduleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -967,7 +967,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetappVolumeSnapshotPolicyWeeklyScheduleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -975,11 +975,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.netappVolume.NetappVolumeTieringPolicy",
-		reflect.TypeOf((*NetappVolumeTieringPolicy)(nil)).Elem(),
+		reflect.TypeFor[NetappVolumeTieringPolicy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.netappVolume.NetappVolumeTieringPolicyOutputReference",
-		reflect.TypeOf((*NetappVolumeTieringPolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetappVolumeTieringPolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1012,7 +1012,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "tierActionInput", GoGetter: "TierActionInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetappVolumeTieringPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1020,11 +1020,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.netappVolume.NetappVolumeTimeouts",
-		reflect.TypeOf((*NetappVolumeTimeouts)(nil)).Elem(),
+		reflect.TypeFor[NetappVolumeTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.netappVolume.NetappVolumeTimeoutsOutputReference",
-		reflect.TypeOf((*NetappVolumeTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetappVolumeTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1057,7 +1057,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetappVolumeTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

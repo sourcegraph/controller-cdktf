@@ -15,15 +15,15 @@ type ComputeRegionUrlMap interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreationTimestamp() *string
 	DefaultRouteAction() ComputeRegionUrlMapDefaultRouteActionOutputReference
 	DefaultRouteActionInput() *ComputeRegionUrlMapDefaultRouteAction
@@ -51,7 +51,7 @@ type ComputeRegionUrlMap interface {
 	HeaderAction() ComputeRegionUrlMapHeaderActionOutputReference
 	HeaderActionInput() *ComputeRegionUrlMapHeaderAction
 	HostRule() ComputeRegionUrlMapHostRuleList
-	HostRuleInput() interface{}
+	HostRuleInput() any
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -66,7 +66,7 @@ type ComputeRegionUrlMap interface {
 	// The tree node.
 	Node() constructs.Node
 	PathMatcher() ComputeRegionUrlMapPathMatcherList
-	PathMatcherInput() interface{}
+	PathMatcherInput() any
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -75,11 +75,11 @@ type ComputeRegionUrlMap interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
@@ -87,20 +87,20 @@ type ComputeRegionUrlMap interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Test() ComputeRegionUrlMapTestList
-	TestInput() interface{}
+	TestInput() any
 	Timeouts() ComputeRegionUrlMapTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -118,7 +118,7 @@ type ComputeRegionUrlMap interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -130,7 +130,7 @@ type ComputeRegionUrlMap interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -140,9 +140,9 @@ type ComputeRegionUrlMap interface {
 	PutDefaultRouteAction(value *ComputeRegionUrlMapDefaultRouteAction)
 	PutDefaultUrlRedirect(value *ComputeRegionUrlMapDefaultUrlRedirect)
 	PutHeaderAction(value *ComputeRegionUrlMapHeaderAction)
-	PutHostRule(value interface{})
-	PutPathMatcher(value interface{})
-	PutTest(value interface{})
+	PutHostRule(value any)
+	PutPathMatcher(value any)
+	PutTest(value any)
 	PutTimeouts(value *ComputeRegionUrlMapTimeouts)
 	ResetDefaultRouteAction()
 	ResetDefaultService()
@@ -159,17 +159,17 @@ type ComputeRegionUrlMap interface {
 	ResetRegion()
 	ResetTest()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ComputeRegionUrlMap
@@ -187,8 +187,8 @@ func (j *jsiiProxy_ComputeRegionUrlMap) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionUrlMap) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRegionUrlMap) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -197,8 +197,8 @@ func (j *jsiiProxy_ComputeRegionUrlMap) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionUrlMap) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ComputeRegionUrlMap) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -207,8 +207,8 @@ func (j *jsiiProxy_ComputeRegionUrlMap) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionUrlMap) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRegionUrlMap) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -387,8 +387,8 @@ func (j *jsiiProxy_ComputeRegionUrlMap) HostRule() ComputeRegionUrlMapHostRuleLi
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionUrlMap) HostRuleInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRegionUrlMap) HostRuleInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"hostRuleInput",
@@ -477,8 +477,8 @@ func (j *jsiiProxy_ComputeRegionUrlMap) PathMatcher() ComputeRegionUrlMapPathMat
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionUrlMap) PathMatcherInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRegionUrlMap) PathMatcherInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"pathMatcherInput",
@@ -517,8 +517,8 @@ func (j *jsiiProxy_ComputeRegionUrlMap) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionUrlMap) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ComputeRegionUrlMap) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -527,8 +527,8 @@ func (j *jsiiProxy_ComputeRegionUrlMap) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionUrlMap) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRegionUrlMap) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -577,8 +577,8 @@ func (j *jsiiProxy_ComputeRegionUrlMap) TerraformGeneratorMetadata() *cdktf.Terr
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionUrlMap) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ComputeRegionUrlMap) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -607,8 +607,8 @@ func (j *jsiiProxy_ComputeRegionUrlMap) Test() ComputeRegionUrlMapTestList {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionUrlMap) TestInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRegionUrlMap) TestInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"testInput",
@@ -627,8 +627,8 @@ func (j *jsiiProxy_ComputeRegionUrlMap) Timeouts() ComputeRegionUrlMapTimeoutsOu
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionUrlMap) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRegionUrlMap) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -636,7 +636,6 @@ func (j *jsiiProxy_ComputeRegionUrlMap) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_url_map google_compute_region_url_map} Resource.
 func NewComputeRegionUrlMap(scope constructs.Construct, id *string, config *ComputeRegionUrlMapConfig) ComputeRegionUrlMap {
@@ -649,7 +648,7 @@ func NewComputeRegionUrlMap(scope constructs.Construct, id *string, config *Comp
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMap",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -662,12 +661,12 @@ func NewComputeRegionUrlMap_Override(c ComputeRegionUrlMap, scope constructs.Con
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMap",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionUrlMap)SetConnection(val interface{}) {
+func (j *jsiiProxy_ComputeRegionUrlMap) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -678,7 +677,7 @@ func (j *jsiiProxy_ComputeRegionUrlMap)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionUrlMap)SetCount(val interface{}) {
+func (j *jsiiProxy_ComputeRegionUrlMap) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -689,7 +688,7 @@ func (j *jsiiProxy_ComputeRegionUrlMap)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionUrlMap)SetDefaultService(val *string) {
+func (j *jsiiProxy_ComputeRegionUrlMap) SetDefaultService(val *string) {
 	if err := j.validateSetDefaultServiceParameters(val); err != nil {
 		panic(err)
 	}
@@ -700,7 +699,7 @@ func (j *jsiiProxy_ComputeRegionUrlMap)SetDefaultService(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionUrlMap)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ComputeRegionUrlMap) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -708,7 +707,7 @@ func (j *jsiiProxy_ComputeRegionUrlMap)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionUrlMap)SetDescription(val *string) {
+func (j *jsiiProxy_ComputeRegionUrlMap) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -719,7 +718,7 @@ func (j *jsiiProxy_ComputeRegionUrlMap)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionUrlMap)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ComputeRegionUrlMap) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -727,7 +726,7 @@ func (j *jsiiProxy_ComputeRegionUrlMap)SetForEach(val cdktf.ITerraformIterator) 
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionUrlMap)SetId(val *string) {
+func (j *jsiiProxy_ComputeRegionUrlMap) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -738,7 +737,7 @@ func (j *jsiiProxy_ComputeRegionUrlMap)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionUrlMap)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ComputeRegionUrlMap) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -749,7 +748,7 @@ func (j *jsiiProxy_ComputeRegionUrlMap)SetLifecycle(val *cdktf.TerraformResource
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionUrlMap)SetName(val *string) {
+func (j *jsiiProxy_ComputeRegionUrlMap) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -760,7 +759,7 @@ func (j *jsiiProxy_ComputeRegionUrlMap)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionUrlMap)SetProject(val *string) {
+func (j *jsiiProxy_ComputeRegionUrlMap) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -771,7 +770,7 @@ func (j *jsiiProxy_ComputeRegionUrlMap)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionUrlMap)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ComputeRegionUrlMap) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -779,7 +778,7 @@ func (j *jsiiProxy_ComputeRegionUrlMap)SetProvider(val cdktf.TerraformProvider) 
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionUrlMap)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ComputeRegionUrlMap) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -790,7 +789,7 @@ func (j *jsiiProxy_ComputeRegionUrlMap)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionUrlMap)SetRegion(val *string) {
+func (j *jsiiProxy_ComputeRegionUrlMap) SetRegion(val *string) {
 	if err := j.validateSetRegionParameters(val); err != nil {
 		panic(err)
 	}
@@ -813,7 +812,7 @@ func ComputeRegionUrlMap_GenerateConfigForImport(scope constructs.Construct, imp
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMap",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -837,7 +836,7 @@ func ComputeRegionUrlMap_GenerateConfigForImport(scope constructs.Construct, imp
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ComputeRegionUrlMap_IsConstruct(x interface{}) *bool {
+func ComputeRegionUrlMap_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeRegionUrlMap_IsConstructParameters(x); err != nil {
@@ -848,7 +847,7 @@ func ComputeRegionUrlMap_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMap",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -856,7 +855,7 @@ func ComputeRegionUrlMap_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ComputeRegionUrlMap_IsTerraformElement(x interface{}) *bool {
+func ComputeRegionUrlMap_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeRegionUrlMap_IsTerraformElementParameters(x); err != nil {
@@ -867,7 +866,7 @@ func ComputeRegionUrlMap_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMap",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -875,7 +874,7 @@ func ComputeRegionUrlMap_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ComputeRegionUrlMap_IsTerraformResource(x interface{}) *bool {
+func ComputeRegionUrlMap_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeRegionUrlMap_IsTerraformResourceParameters(x); err != nil {
@@ -886,7 +885,7 @@ func ComputeRegionUrlMap_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMap",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -911,31 +910,31 @@ func (c *jsiiProxy_ComputeRegionUrlMap) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_ComputeRegionUrlMap) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_ComputeRegionUrlMap) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_ComputeRegionUrlMap) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComputeRegionUrlMap) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -951,7 +950,7 @@ func (c *jsiiProxy_ComputeRegionUrlMap) GetBooleanAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -967,7 +966,7 @@ func (c *jsiiProxy_ComputeRegionUrlMap) GetBooleanMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -983,7 +982,7 @@ func (c *jsiiProxy_ComputeRegionUrlMap) GetListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -999,7 +998,7 @@ func (c *jsiiProxy_ComputeRegionUrlMap) GetNumberAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1015,7 +1014,7 @@ func (c *jsiiProxy_ComputeRegionUrlMap) GetNumberListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1031,7 +1030,7 @@ func (c *jsiiProxy_ComputeRegionUrlMap) GetNumberMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1047,7 +1046,7 @@ func (c *jsiiProxy_ComputeRegionUrlMap) GetStringAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1063,15 +1062,15 @@ func (c *jsiiProxy_ComputeRegionUrlMap) GetStringMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ComputeRegionUrlMap) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeRegionUrlMap) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1090,7 +1089,7 @@ func (c *jsiiProxy_ComputeRegionUrlMap) ImportFrom(id *string, provider cdktf.Te
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1103,7 +1102,7 @@ func (c *jsiiProxy_ComputeRegionUrlMap) InterpolationForAttribute(terraformAttri
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1117,18 +1116,18 @@ func (c *jsiiProxy_ComputeRegionUrlMap) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_ComputeRegionUrlMap) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_ComputeRegionUrlMap) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1139,7 +1138,7 @@ func (c *jsiiProxy_ComputeRegionUrlMap) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1150,7 +1149,7 @@ func (c *jsiiProxy_ComputeRegionUrlMap) OverrideLogicalId(newLogicalId *string) 
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1161,7 +1160,7 @@ func (c *jsiiProxy_ComputeRegionUrlMap) PutDefaultRouteAction(value *ComputeRegi
 	_jsii_.InvokeVoid(
 		c,
 		"putDefaultRouteAction",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1172,7 +1171,7 @@ func (c *jsiiProxy_ComputeRegionUrlMap) PutDefaultUrlRedirect(value *ComputeRegi
 	_jsii_.InvokeVoid(
 		c,
 		"putDefaultUrlRedirect",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1183,40 +1182,40 @@ func (c *jsiiProxy_ComputeRegionUrlMap) PutHeaderAction(value *ComputeRegionUrlM
 	_jsii_.InvokeVoid(
 		c,
 		"putHeaderAction",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_ComputeRegionUrlMap) PutHostRule(value interface{}) {
+func (c *jsiiProxy_ComputeRegionUrlMap) PutHostRule(value any) {
 	if err := c.validatePutHostRuleParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putHostRule",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_ComputeRegionUrlMap) PutPathMatcher(value interface{}) {
+func (c *jsiiProxy_ComputeRegionUrlMap) PutPathMatcher(value any) {
 	if err := c.validatePutPathMatcherParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putPathMatcher",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_ComputeRegionUrlMap) PutTest(value interface{}) {
+func (c *jsiiProxy_ComputeRegionUrlMap) PutTest(value any) {
 	if err := c.validatePutTestParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putTest",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1227,7 +1226,7 @@ func (c *jsiiProxy_ComputeRegionUrlMap) PutTimeouts(value *ComputeRegionUrlMapTi
 	_jsii_.InvokeVoid(
 		c,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1335,8 +1334,8 @@ func (c *jsiiProxy_ComputeRegionUrlMap) ResetTimeouts() {
 	)
 }
 
-func (c *jsiiProxy_ComputeRegionUrlMap) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ComputeRegionUrlMap) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1348,8 +1347,8 @@ func (c *jsiiProxy_ComputeRegionUrlMap) SynthesizeAttributes() *map[string]inter
 	return returns
 }
 
-func (c *jsiiProxy_ComputeRegionUrlMap) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ComputeRegionUrlMap) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1361,8 +1360,8 @@ func (c *jsiiProxy_ComputeRegionUrlMap) SynthesizeHclAttributes() *map[string]in
 	return returns
 }
 
-func (c *jsiiProxy_ComputeRegionUrlMap) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeRegionUrlMap) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1374,8 +1373,8 @@ func (c *jsiiProxy_ComputeRegionUrlMap) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_ComputeRegionUrlMap) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeRegionUrlMap) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1400,8 +1399,8 @@ func (c *jsiiProxy_ComputeRegionUrlMap) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_ComputeRegionUrlMap) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeRegionUrlMap) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1412,4 +1411,3 @@ func (c *jsiiProxy_ComputeRegionUrlMap) ToTerraform() interface{} {
 
 	return returns
 }
-

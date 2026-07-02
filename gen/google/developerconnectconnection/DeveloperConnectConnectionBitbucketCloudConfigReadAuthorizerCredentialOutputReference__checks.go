@@ -98,7 +98,7 @@ func (d *jsiiProxy_DeveloperConnectConnectionBitbucketCloudConfigReadAuthorizerC
 	return nil
 }
 
-func (j *jsiiProxy_DeveloperConnectConnectionBitbucketCloudConfigReadAuthorizerCredentialOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DeveloperConnectConnectionBitbucketCloudConfigReadAuthorizerCredentialOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDeveloperConnectConnectionBitbucketCloudConfigReadAuthorizerCred
 
 	return nil
 }
-

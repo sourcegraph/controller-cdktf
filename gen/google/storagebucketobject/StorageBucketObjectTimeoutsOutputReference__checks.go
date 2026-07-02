@@ -98,7 +98,7 @@ func (s *jsiiProxy_StorageBucketObjectTimeoutsOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_StorageBucketObjectTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_StorageBucketObjectTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_StorageBucketObjectTimeoutsOutputReference) validateSetDelete
 	return nil
 }
 
-func (j *jsiiProxy_StorageBucketObjectTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_StorageBucketObjectTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewStorageBucketObjectTimeoutsOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

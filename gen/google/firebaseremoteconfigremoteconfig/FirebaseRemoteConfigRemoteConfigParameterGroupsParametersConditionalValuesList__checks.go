@@ -34,7 +34,7 @@ func (f *jsiiProxy_FirebaseRemoteConfigRemoteConfigParameterGroupsParametersCond
 	return nil
 }
 
-func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfigParameterGroupsParametersConditionalValuesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfigParameterGroupsParametersConditionalValuesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewFirebaseRemoteConfigRemoteConfigParameterGroupsParametersConditi
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (b *jsiiProxy_BigqueryJobQueryDefaultDatasetOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryJobQueryDefaultDatasetOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryJobQueryDefaultDatasetOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewBigqueryJobQueryDefaultDatasetOutputReferenceParameters(terrafor
 
 	return nil
 }
-

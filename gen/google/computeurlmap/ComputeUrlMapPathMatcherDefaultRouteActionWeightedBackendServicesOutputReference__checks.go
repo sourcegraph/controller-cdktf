@@ -117,7 +117,7 @@ func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServ
 	return nil
 }
 
-func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -182,7 +182,7 @@ func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServ
 	return nil
 }
 
-func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -249,4 +249,3 @@ func validateNewComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendService
 
 	return nil
 }
-

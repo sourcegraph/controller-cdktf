@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.serviceNetworkingPeeredDnsDomain.ServiceNetworkingPeeredDnsDomain",
-		reflect.TypeOf((*ServiceNetworkingPeeredDnsDomain)(nil)).Elem(),
+		reflect.TypeFor[ServiceNetworkingPeeredDnsDomain](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,7 +73,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ServiceNetworkingPeeredDnsDomain{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -81,15 +81,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.serviceNetworkingPeeredDnsDomain.ServiceNetworkingPeeredDnsDomainConfig",
-		reflect.TypeOf((*ServiceNetworkingPeeredDnsDomainConfig)(nil)).Elem(),
+		reflect.TypeFor[ServiceNetworkingPeeredDnsDomainConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.serviceNetworkingPeeredDnsDomain.ServiceNetworkingPeeredDnsDomainTimeouts",
-		reflect.TypeOf((*ServiceNetworkingPeeredDnsDomainTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ServiceNetworkingPeeredDnsDomainTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.serviceNetworkingPeeredDnsDomain.ServiceNetworkingPeeredDnsDomainTimeoutsOutputReference",
-		reflect.TypeOf((*ServiceNetworkingPeeredDnsDomainTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ServiceNetworkingPeeredDnsDomainTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -122,7 +122,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ServiceNetworkingPeeredDnsDomainTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

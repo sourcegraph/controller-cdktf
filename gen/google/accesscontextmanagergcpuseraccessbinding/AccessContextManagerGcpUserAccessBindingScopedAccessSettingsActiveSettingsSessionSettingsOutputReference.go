@@ -12,9 +12,9 @@ type AccessContextManagerGcpUserAccessBindingScopedAccessSettingsActiveSettingsS
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -34,9 +34,9 @@ type AccessContextManagerGcpUserAccessBindingScopedAccessSettingsActiveSettingsS
 	MaxInactivityInput() *string
 	SessionLength() *string
 	SetSessionLength(val *string)
-	SessionLengthEnabled() interface{}
-	SetSessionLengthEnabled(val interface{})
-	SessionLengthEnabledInput() interface{}
+	SessionLengthEnabled() any
+	SetSessionLengthEnabled(val any)
+	SessionLengthEnabledInput() any
 	SessionLengthInput() *string
 	SessionReauthMethod() *string
 	SetSessionReauthMethod(val *string)
@@ -49,13 +49,13 @@ type AccessContextManagerGcpUserAccessBindingScopedAccessSettingsActiveSettingsS
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	UseOidcMaxAge() interface{}
-	SetUseOidcMaxAge(val interface{})
-	UseOidcMaxAgeInput() interface{}
+	UseOidcMaxAge() any
+	SetUseOidcMaxAge(val any)
+	UseOidcMaxAgeInput() any
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -83,7 +83,7 @@ type AccessContextManagerGcpUserAccessBindingScopedAccessSettingsActiveSettingsS
 	ResetUseOidcMaxAge()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -96,8 +96,8 @@ type jsiiProxy_AccessContextManagerGcpUserAccessBindingScopedAccessSettingsActiv
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_AccessContextManagerGcpUserAccessBindingScopedAccessSettingsActiveSettingsSessionSettingsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccessContextManagerGcpUserAccessBindingScopedAccessSettingsActiveSettingsSessionSettingsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -176,8 +176,8 @@ func (j *jsiiProxy_AccessContextManagerGcpUserAccessBindingScopedAccessSettingsA
 	return returns
 }
 
-func (j *jsiiProxy_AccessContextManagerGcpUserAccessBindingScopedAccessSettingsActiveSettingsSessionSettingsOutputReference) SessionLengthEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccessContextManagerGcpUserAccessBindingScopedAccessSettingsActiveSettingsSessionSettingsOutputReference) SessionLengthEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"sessionLengthEnabled",
@@ -186,8 +186,8 @@ func (j *jsiiProxy_AccessContextManagerGcpUserAccessBindingScopedAccessSettingsA
 	return returns
 }
 
-func (j *jsiiProxy_AccessContextManagerGcpUserAccessBindingScopedAccessSettingsActiveSettingsSessionSettingsOutputReference) SessionLengthEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccessContextManagerGcpUserAccessBindingScopedAccessSettingsActiveSettingsSessionSettingsOutputReference) SessionLengthEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"sessionLengthEnabledInput",
@@ -246,8 +246,8 @@ func (j *jsiiProxy_AccessContextManagerGcpUserAccessBindingScopedAccessSettingsA
 	return returns
 }
 
-func (j *jsiiProxy_AccessContextManagerGcpUserAccessBindingScopedAccessSettingsActiveSettingsSessionSettingsOutputReference) UseOidcMaxAge() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccessContextManagerGcpUserAccessBindingScopedAccessSettingsActiveSettingsSessionSettingsOutputReference) UseOidcMaxAge() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"useOidcMaxAge",
@@ -256,8 +256,8 @@ func (j *jsiiProxy_AccessContextManagerGcpUserAccessBindingScopedAccessSettingsA
 	return returns
 }
 
-func (j *jsiiProxy_AccessContextManagerGcpUserAccessBindingScopedAccessSettingsActiveSettingsSessionSettingsOutputReference) UseOidcMaxAgeInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccessContextManagerGcpUserAccessBindingScopedAccessSettingsActiveSettingsSessionSettingsOutputReference) UseOidcMaxAgeInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"useOidcMaxAgeInput",
@@ -265,7 +265,6 @@ func (j *jsiiProxy_AccessContextManagerGcpUserAccessBindingScopedAccessSettingsA
 	)
 	return returns
 }
-
 
 func NewAccessContextManagerGcpUserAccessBindingScopedAccessSettingsActiveSettingsSessionSettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AccessContextManagerGcpUserAccessBindingScopedAccessSettingsActiveSettingsSessionSettingsOutputReference {
 	_init_.Initialize()
@@ -277,7 +276,7 @@ func NewAccessContextManagerGcpUserAccessBindingScopedAccessSettingsActiveSettin
 
 	_jsii_.Create(
 		"@cdktf/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingScopedAccessSettingsActiveSettingsSessionSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -289,12 +288,12 @@ func NewAccessContextManagerGcpUserAccessBindingScopedAccessSettingsActiveSettin
 
 	_jsii_.Create(
 		"@cdktf/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingScopedAccessSettingsActiveSettingsSessionSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AccessContextManagerGcpUserAccessBindingScopedAccessSettingsActiveSettingsSessionSettingsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AccessContextManagerGcpUserAccessBindingScopedAccessSettingsActiveSettingsSessionSettingsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -305,7 +304,7 @@ func (j *jsiiProxy_AccessContextManagerGcpUserAccessBindingScopedAccessSettingsA
 	)
 }
 
-func (j *jsiiProxy_AccessContextManagerGcpUserAccessBindingScopedAccessSettingsActiveSettingsSessionSettingsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AccessContextManagerGcpUserAccessBindingScopedAccessSettingsActiveSettingsSessionSettingsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -316,7 +315,7 @@ func (j *jsiiProxy_AccessContextManagerGcpUserAccessBindingScopedAccessSettingsA
 	)
 }
 
-func (j *jsiiProxy_AccessContextManagerGcpUserAccessBindingScopedAccessSettingsActiveSettingsSessionSettingsOutputReference)SetInternalValue(val *AccessContextManagerGcpUserAccessBindingScopedAccessSettingsActiveSettingsSessionSettings) {
+func (j *jsiiProxy_AccessContextManagerGcpUserAccessBindingScopedAccessSettingsActiveSettingsSessionSettingsOutputReference) SetInternalValue(val *AccessContextManagerGcpUserAccessBindingScopedAccessSettingsActiveSettingsSessionSettings) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,7 +326,7 @@ func (j *jsiiProxy_AccessContextManagerGcpUserAccessBindingScopedAccessSettingsA
 	)
 }
 
-func (j *jsiiProxy_AccessContextManagerGcpUserAccessBindingScopedAccessSettingsActiveSettingsSessionSettingsOutputReference)SetMaxInactivity(val *string) {
+func (j *jsiiProxy_AccessContextManagerGcpUserAccessBindingScopedAccessSettingsActiveSettingsSessionSettingsOutputReference) SetMaxInactivity(val *string) {
 	if err := j.validateSetMaxInactivityParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,7 +337,7 @@ func (j *jsiiProxy_AccessContextManagerGcpUserAccessBindingScopedAccessSettingsA
 	)
 }
 
-func (j *jsiiProxy_AccessContextManagerGcpUserAccessBindingScopedAccessSettingsActiveSettingsSessionSettingsOutputReference)SetSessionLength(val *string) {
+func (j *jsiiProxy_AccessContextManagerGcpUserAccessBindingScopedAccessSettingsActiveSettingsSessionSettingsOutputReference) SetSessionLength(val *string) {
 	if err := j.validateSetSessionLengthParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,7 +348,7 @@ func (j *jsiiProxy_AccessContextManagerGcpUserAccessBindingScopedAccessSettingsA
 	)
 }
 
-func (j *jsiiProxy_AccessContextManagerGcpUserAccessBindingScopedAccessSettingsActiveSettingsSessionSettingsOutputReference)SetSessionLengthEnabled(val interface{}) {
+func (j *jsiiProxy_AccessContextManagerGcpUserAccessBindingScopedAccessSettingsActiveSettingsSessionSettingsOutputReference) SetSessionLengthEnabled(val any) {
 	if err := j.validateSetSessionLengthEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,7 +359,7 @@ func (j *jsiiProxy_AccessContextManagerGcpUserAccessBindingScopedAccessSettingsA
 	)
 }
 
-func (j *jsiiProxy_AccessContextManagerGcpUserAccessBindingScopedAccessSettingsActiveSettingsSessionSettingsOutputReference)SetSessionReauthMethod(val *string) {
+func (j *jsiiProxy_AccessContextManagerGcpUserAccessBindingScopedAccessSettingsActiveSettingsSessionSettingsOutputReference) SetSessionReauthMethod(val *string) {
 	if err := j.validateSetSessionReauthMethodParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,7 +370,7 @@ func (j *jsiiProxy_AccessContextManagerGcpUserAccessBindingScopedAccessSettingsA
 	)
 }
 
-func (j *jsiiProxy_AccessContextManagerGcpUserAccessBindingScopedAccessSettingsActiveSettingsSessionSettingsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AccessContextManagerGcpUserAccessBindingScopedAccessSettingsActiveSettingsSessionSettingsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,7 +381,7 @@ func (j *jsiiProxy_AccessContextManagerGcpUserAccessBindingScopedAccessSettingsA
 	)
 }
 
-func (j *jsiiProxy_AccessContextManagerGcpUserAccessBindingScopedAccessSettingsActiveSettingsSessionSettingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AccessContextManagerGcpUserAccessBindingScopedAccessSettingsActiveSettingsSessionSettingsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,7 +392,7 @@ func (j *jsiiProxy_AccessContextManagerGcpUserAccessBindingScopedAccessSettingsA
 	)
 }
 
-func (j *jsiiProxy_AccessContextManagerGcpUserAccessBindingScopedAccessSettingsActiveSettingsSessionSettingsOutputReference)SetUseOidcMaxAge(val interface{}) {
+func (j *jsiiProxy_AccessContextManagerGcpUserAccessBindingScopedAccessSettingsActiveSettingsSessionSettingsOutputReference) SetUseOidcMaxAge(val any) {
 	if err := j.validateSetUseOidcMaxAgeParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,16 +416,16 @@ func (a *jsiiProxy_AccessContextManagerGcpUserAccessBindingScopedAccessSettingsA
 	return returns
 }
 
-func (a *jsiiProxy_AccessContextManagerGcpUserAccessBindingScopedAccessSettingsActiveSettingsSessionSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AccessContextManagerGcpUserAccessBindingScopedAccessSettingsActiveSettingsSessionSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -442,7 +441,7 @@ func (a *jsiiProxy_AccessContextManagerGcpUserAccessBindingScopedAccessSettingsA
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -458,7 +457,7 @@ func (a *jsiiProxy_AccessContextManagerGcpUserAccessBindingScopedAccessSettingsA
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -474,7 +473,7 @@ func (a *jsiiProxy_AccessContextManagerGcpUserAccessBindingScopedAccessSettingsA
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -490,7 +489,7 @@ func (a *jsiiProxy_AccessContextManagerGcpUserAccessBindingScopedAccessSettingsA
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -506,7 +505,7 @@ func (a *jsiiProxy_AccessContextManagerGcpUserAccessBindingScopedAccessSettingsA
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -522,7 +521,7 @@ func (a *jsiiProxy_AccessContextManagerGcpUserAccessBindingScopedAccessSettingsA
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -538,7 +537,7 @@ func (a *jsiiProxy_AccessContextManagerGcpUserAccessBindingScopedAccessSettingsA
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -554,7 +553,7 @@ func (a *jsiiProxy_AccessContextManagerGcpUserAccessBindingScopedAccessSettingsA
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -583,7 +582,7 @@ func (a *jsiiProxy_AccessContextManagerGcpUserAccessBindingScopedAccessSettingsA
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -630,16 +629,16 @@ func (a *jsiiProxy_AccessContextManagerGcpUserAccessBindingScopedAccessSettingsA
 	)
 }
 
-func (a *jsiiProxy_AccessContextManagerGcpUserAccessBindingScopedAccessSettingsActiveSettingsSessionSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AccessContextManagerGcpUserAccessBindingScopedAccessSettingsActiveSettingsSessionSettingsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -658,4 +657,3 @@ func (a *jsiiProxy_AccessContextManagerGcpUserAccessBindingScopedAccessSettingsA
 
 	return returns
 }
-

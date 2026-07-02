@@ -34,7 +34,7 @@ func (c *jsiiProxy_CesToolsetOpenApiToolsetTlsConfigCaCertsList) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_CesToolsetOpenApiToolsetTlsConfigCaCertsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CesToolsetOpenApiToolsetTlsConfigCaCertsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewCesToolsetOpenApiToolsetTlsConfigCaCertsListParameters(terraform
 
 	return nil
 }
-

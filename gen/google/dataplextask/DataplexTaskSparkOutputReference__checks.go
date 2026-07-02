@@ -117,7 +117,7 @@ func (j *jsiiProxy_DataplexTaskSparkOutputReference) validateSetArchiveUrisParam
 	return nil
 }
 
-func (j *jsiiProxy_DataplexTaskSparkOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataplexTaskSparkOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -265,4 +265,3 @@ func validateNewDataplexTaskSparkOutputReferenceParameters(terraformResource cdk
 
 	return nil
 }
-

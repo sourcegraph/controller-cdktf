@@ -98,7 +98,7 @@ func (f *jsiiProxy_FirebaseRemoteConfigRemoteConfigParametersDefaultValueOutputR
 	return nil
 }
 
-func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfigParametersDefaultValueOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfigParametersDefaultValueOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -187,7 +187,7 @@ func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfigParametersDefaultValueOutputR
 	return nil
 }
 
-func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfigParametersDefaultValueOutputReference) validateSetUseInAppDefaultParameters(val interface{}) error {
+func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfigParametersDefaultValueOutputReference) validateSetUseInAppDefaultParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -226,4 +226,3 @@ func validateNewFirebaseRemoteConfigRemoteConfigParametersDefaultValueOutputRefe
 
 	return nil
 }
-

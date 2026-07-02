@@ -98,7 +98,7 @@ func (c *jsiiProxy_ContainerAwsNodePoolConfigRootVolumeOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_ContainerAwsNodePoolConfigRootVolumeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerAwsNodePoolConfigRootVolumeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -238,4 +238,3 @@ func validateNewContainerAwsNodePoolConfigRootVolumeOutputReferenceParameters(te
 
 	return nil
 }
-

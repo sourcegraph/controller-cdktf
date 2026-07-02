@@ -109,7 +109,7 @@ func (c *jsiiProxy_CesGuardrailLlmPromptSecurityCustomPolicyOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_CesGuardrailLlmPromptSecurityCustomPolicyOutputReference) validateSetAllowShortUtteranceParameters(val interface{}) error {
+func (j *jsiiProxy_CesGuardrailLlmPromptSecurityCustomPolicyOutputReference) validateSetAllowShortUtteranceParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (j *jsiiProxy_CesGuardrailLlmPromptSecurityCustomPolicyOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_CesGuardrailLlmPromptSecurityCustomPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CesGuardrailLlmPromptSecurityCustomPolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -194,7 +194,7 @@ func (j *jsiiProxy_CesGuardrailLlmPromptSecurityCustomPolicyOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_CesGuardrailLlmPromptSecurityCustomPolicyOutputReference) validateSetFailOpenParameters(val interface{}) error {
+func (j *jsiiProxy_CesGuardrailLlmPromptSecurityCustomPolicyOutputReference) validateSetFailOpenParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -273,4 +273,3 @@ func validateNewCesGuardrailLlmPromptSecurityCustomPolicyOutputReferenceParamete
 
 	return nil
 }
-

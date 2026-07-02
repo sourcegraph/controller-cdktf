@@ -1,6 +1,5 @@
 package osconfigv2policyorchestrator
 
-
 type OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgMsiSource struct {
 	// Defaults to false. When false, files are subject to validations based on the file type:.
 	//
@@ -8,7 +7,7 @@ type OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1Payload
 	// Cloud Storage: An object generation number must be specified.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/os_config_v2_policy_orchestrator#allow_insecure OsConfigV2PolicyOrchestrator#allow_insecure}
-	AllowInsecure interface{} `field:"optional" json:"allowInsecure" yaml:"allowInsecure"`
+	AllowInsecure any `field:"optional" json:"allowInsecure" yaml:"allowInsecure"`
 	// gcs block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/os_config_v2_policy_orchestrator#gcs OsConfigV2PolicyOrchestrator#gcs}
@@ -22,4 +21,3 @@ type OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1Payload
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/os_config_v2_policy_orchestrator#remote OsConfigV2PolicyOrchestrator#remote}
 	Remote *OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgMsiSourceRemote `field:"optional" json:"remote" yaml:"remote"`
 }
-

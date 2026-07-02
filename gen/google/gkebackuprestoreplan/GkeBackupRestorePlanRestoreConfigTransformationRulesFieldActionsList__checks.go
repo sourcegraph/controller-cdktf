@@ -34,7 +34,7 @@ func (g *jsiiProxy_GkeBackupRestorePlanRestoreConfigTransformationRulesFieldActi
 	return nil
 }
 
-func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigTransformationRulesFieldActionsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigTransformationRulesFieldActionsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGkeBackupRestorePlanRestoreConfigTransformationRulesFieldActions
 
 	return nil
 }
-

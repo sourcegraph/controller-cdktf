@@ -98,7 +98,7 @@ func (a *jsiiProxy_ApikeysKeyRestrictionsApiTargetsOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_ApikeysKeyRestrictionsApiTargetsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ApikeysKeyRestrictionsApiTargetsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ApikeysKeyRestrictionsApiTargetsOutputReference) validateSetC
 	return nil
 }
 
-func (j *jsiiProxy_ApikeysKeyRestrictionsApiTargetsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ApikeysKeyRestrictionsApiTargetsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewApikeysKeyRestrictionsApiTargetsOutputReferenceParameters(terraf
 
 	return nil
 }
-

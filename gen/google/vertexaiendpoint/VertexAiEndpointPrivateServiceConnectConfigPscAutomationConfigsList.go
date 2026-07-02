@@ -17,8 +17,8 @@ type VertexAiEndpointPrivateServiceConnectConfigPscAutomationConfigsList interfa
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type VertexAiEndpointPrivateServiceConnectConfigPscAutomationConfigsList interfa
 	Get(index *float64) VertexAiEndpointPrivateServiceConnectConfigPscAutomationConfigsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_VertexAiEndpointPrivateServiceConnectConfigPscAutomationConfi
 	return returns
 }
 
-func (j *jsiiProxy_VertexAiEndpointPrivateServiceConnectConfigPscAutomationConfigsList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VertexAiEndpointPrivateServiceConnectConfigPscAutomationConfigsList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_VertexAiEndpointPrivateServiceConnectConfigPscAutomationConfi
 	return returns
 }
 
-
 func NewVertexAiEndpointPrivateServiceConnectConfigPscAutomationConfigsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VertexAiEndpointPrivateServiceConnectConfigPscAutomationConfigsList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewVertexAiEndpointPrivateServiceConnectConfigPscAutomationConfigsList(terr
 
 	_jsii_.Create(
 		"@cdktf/provider-google.vertexAiEndpoint.VertexAiEndpointPrivateServiceConnectConfigPscAutomationConfigsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewVertexAiEndpointPrivateServiceConnectConfigPscAutomationConfigsList_Over
 
 	_jsii_.Create(
 		"@cdktf/provider-google.vertexAiEndpoint.VertexAiEndpointPrivateServiceConnectConfigPscAutomationConfigsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		v,
 	)
 }
 
-func (j *jsiiProxy_VertexAiEndpointPrivateServiceConnectConfigPscAutomationConfigsList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_VertexAiEndpointPrivateServiceConnectConfigPscAutomationConfigsList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_VertexAiEndpointPrivateServiceConnectConfigPscAutomationConfi
 	)
 }
 
-func (j *jsiiProxy_VertexAiEndpointPrivateServiceConnectConfigPscAutomationConfigsList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_VertexAiEndpointPrivateServiceConnectConfigPscAutomationConfigsList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_VertexAiEndpointPrivateServiceConnectConfigPscAutomationConfi
 	)
 }
 
-func (j *jsiiProxy_VertexAiEndpointPrivateServiceConnectConfigPscAutomationConfigsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_VertexAiEndpointPrivateServiceConnectConfigPscAutomationConfigsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_VertexAiEndpointPrivateServiceConnectConfigPscAutomationConfi
 	)
 }
 
-func (j *jsiiProxy_VertexAiEndpointPrivateServiceConnectConfigPscAutomationConfigsList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_VertexAiEndpointPrivateServiceConnectConfigPscAutomationConfigsList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (v *jsiiProxy_VertexAiEndpointPrivateServiceConnectConfigPscAutomationConfi
 	_jsii_.Invoke(
 		v,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (v *jsiiProxy_VertexAiEndpointPrivateServiceConnectConfigPscAutomationConfi
 	_jsii_.Invoke(
 		v,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (v *jsiiProxy_VertexAiEndpointPrivateServiceConnectConfigPscAutomationConfigsList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (v *jsiiProxy_VertexAiEndpointPrivateServiceConnectConfigPscAutomationConfigsList) Resolve(_context cdktf.IResolveContext) any {
 	if err := v.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		v,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (v *jsiiProxy_VertexAiEndpointPrivateServiceConnectConfigPscAutomationConfi
 
 	return returns
 }
-

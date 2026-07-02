@@ -25,17 +25,17 @@ type ContainerAwsCluster interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	ControlPlane() ContainerAwsClusterControlPlaneOutputReference
 	ControlPlaneInput() *ContainerAwsClusterControlPlane
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -82,21 +82,21 @@ type ContainerAwsCluster interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Reconciling() cdktf.IResolvable
 	State() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() ContainerAwsClusterTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Uid() *string
 	UpdateTime() *string
 	WorkloadIdentityConfig() ContainerAwsClusterWorkloadIdentityConfigList
@@ -104,9 +104,9 @@ type ContainerAwsCluster interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -124,7 +124,7 @@ type ContainerAwsCluster interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -136,7 +136,7 @@ type ContainerAwsCluster interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -158,17 +158,17 @@ type ContainerAwsCluster interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ContainerAwsCluster
@@ -266,8 +266,8 @@ func (j *jsiiProxy_ContainerAwsCluster) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_ContainerAwsCluster) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerAwsCluster) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -276,8 +276,8 @@ func (j *jsiiProxy_ContainerAwsCluster) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ContainerAwsCluster) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ContainerAwsCluster) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -306,8 +306,8 @@ func (j *jsiiProxy_ContainerAwsCluster) ControlPlaneInput() *ContainerAwsCluster
 	return returns
 }
 
-func (j *jsiiProxy_ContainerAwsCluster) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerAwsCluster) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -566,8 +566,8 @@ func (j *jsiiProxy_ContainerAwsCluster) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_ContainerAwsCluster) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ContainerAwsCluster) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -576,8 +576,8 @@ func (j *jsiiProxy_ContainerAwsCluster) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ContainerAwsCluster) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerAwsCluster) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -616,8 +616,8 @@ func (j *jsiiProxy_ContainerAwsCluster) TerraformGeneratorMetadata() *cdktf.Terr
 	return returns
 }
 
-func (j *jsiiProxy_ContainerAwsCluster) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ContainerAwsCluster) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -646,8 +646,8 @@ func (j *jsiiProxy_ContainerAwsCluster) Timeouts() ContainerAwsClusterTimeoutsOu
 	return returns
 }
 
-func (j *jsiiProxy_ContainerAwsCluster) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerAwsCluster) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -686,7 +686,6 @@ func (j *jsiiProxy_ContainerAwsCluster) WorkloadIdentityConfig() ContainerAwsClu
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_aws_cluster google_container_aws_cluster} Resource.
 func NewContainerAwsCluster(scope constructs.Construct, id *string, config *ContainerAwsClusterConfig) ContainerAwsCluster {
 	_init_.Initialize()
@@ -698,7 +697,7 @@ func NewContainerAwsCluster(scope constructs.Construct, id *string, config *Cont
 
 	_jsii_.Create(
 		"@cdktf/provider-google.containerAwsCluster.ContainerAwsCluster",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -711,12 +710,12 @@ func NewContainerAwsCluster_Override(c ContainerAwsCluster, scope constructs.Con
 
 	_jsii_.Create(
 		"@cdktf/provider-google.containerAwsCluster.ContainerAwsCluster",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ContainerAwsCluster)SetAnnotations(val *map[string]*string) {
+func (j *jsiiProxy_ContainerAwsCluster) SetAnnotations(val *map[string]*string) {
 	if err := j.validateSetAnnotationsParameters(val); err != nil {
 		panic(err)
 	}
@@ -727,7 +726,7 @@ func (j *jsiiProxy_ContainerAwsCluster)SetAnnotations(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_ContainerAwsCluster)SetAwsRegion(val *string) {
+func (j *jsiiProxy_ContainerAwsCluster) SetAwsRegion(val *string) {
 	if err := j.validateSetAwsRegionParameters(val); err != nil {
 		panic(err)
 	}
@@ -738,7 +737,7 @@ func (j *jsiiProxy_ContainerAwsCluster)SetAwsRegion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ContainerAwsCluster)SetConnection(val interface{}) {
+func (j *jsiiProxy_ContainerAwsCluster) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -749,7 +748,7 @@ func (j *jsiiProxy_ContainerAwsCluster)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ContainerAwsCluster)SetCount(val interface{}) {
+func (j *jsiiProxy_ContainerAwsCluster) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -760,7 +759,7 @@ func (j *jsiiProxy_ContainerAwsCluster)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ContainerAwsCluster)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ContainerAwsCluster) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -768,7 +767,7 @@ func (j *jsiiProxy_ContainerAwsCluster)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ContainerAwsCluster)SetDescription(val *string) {
+func (j *jsiiProxy_ContainerAwsCluster) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -779,7 +778,7 @@ func (j *jsiiProxy_ContainerAwsCluster)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ContainerAwsCluster)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ContainerAwsCluster) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -787,7 +786,7 @@ func (j *jsiiProxy_ContainerAwsCluster)SetForEach(val cdktf.ITerraformIterator) 
 	)
 }
 
-func (j *jsiiProxy_ContainerAwsCluster)SetId(val *string) {
+func (j *jsiiProxy_ContainerAwsCluster) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -798,7 +797,7 @@ func (j *jsiiProxy_ContainerAwsCluster)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ContainerAwsCluster)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ContainerAwsCluster) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -809,7 +808,7 @@ func (j *jsiiProxy_ContainerAwsCluster)SetLifecycle(val *cdktf.TerraformResource
 	)
 }
 
-func (j *jsiiProxy_ContainerAwsCluster)SetLocation(val *string) {
+func (j *jsiiProxy_ContainerAwsCluster) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -820,7 +819,7 @@ func (j *jsiiProxy_ContainerAwsCluster)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ContainerAwsCluster)SetName(val *string) {
+func (j *jsiiProxy_ContainerAwsCluster) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -831,7 +830,7 @@ func (j *jsiiProxy_ContainerAwsCluster)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ContainerAwsCluster)SetProject(val *string) {
+func (j *jsiiProxy_ContainerAwsCluster) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -842,7 +841,7 @@ func (j *jsiiProxy_ContainerAwsCluster)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ContainerAwsCluster)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ContainerAwsCluster) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -850,7 +849,7 @@ func (j *jsiiProxy_ContainerAwsCluster)SetProvider(val cdktf.TerraformProvider) 
 	)
 }
 
-func (j *jsiiProxy_ContainerAwsCluster)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ContainerAwsCluster) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -873,7 +872,7 @@ func ContainerAwsCluster_GenerateConfigForImport(scope constructs.Construct, imp
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.containerAwsCluster.ContainerAwsCluster",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -897,7 +896,7 @@ func ContainerAwsCluster_GenerateConfigForImport(scope constructs.Construct, imp
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ContainerAwsCluster_IsConstruct(x interface{}) *bool {
+func ContainerAwsCluster_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateContainerAwsCluster_IsConstructParameters(x); err != nil {
@@ -908,7 +907,7 @@ func ContainerAwsCluster_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.containerAwsCluster.ContainerAwsCluster",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -916,7 +915,7 @@ func ContainerAwsCluster_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ContainerAwsCluster_IsTerraformElement(x interface{}) *bool {
+func ContainerAwsCluster_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateContainerAwsCluster_IsTerraformElementParameters(x); err != nil {
@@ -927,7 +926,7 @@ func ContainerAwsCluster_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.containerAwsCluster.ContainerAwsCluster",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -935,7 +934,7 @@ func ContainerAwsCluster_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ContainerAwsCluster_IsTerraformResource(x interface{}) *bool {
+func ContainerAwsCluster_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateContainerAwsCluster_IsTerraformResourceParameters(x); err != nil {
@@ -946,7 +945,7 @@ func ContainerAwsCluster_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.containerAwsCluster.ContainerAwsCluster",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -971,31 +970,31 @@ func (c *jsiiProxy_ContainerAwsCluster) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_ContainerAwsCluster) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_ContainerAwsCluster) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_ContainerAwsCluster) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ContainerAwsCluster) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1011,7 +1010,7 @@ func (c *jsiiProxy_ContainerAwsCluster) GetBooleanAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1027,7 +1026,7 @@ func (c *jsiiProxy_ContainerAwsCluster) GetBooleanMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1043,7 +1042,7 @@ func (c *jsiiProxy_ContainerAwsCluster) GetListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1059,7 +1058,7 @@ func (c *jsiiProxy_ContainerAwsCluster) GetNumberAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1075,7 +1074,7 @@ func (c *jsiiProxy_ContainerAwsCluster) GetNumberListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1091,7 +1090,7 @@ func (c *jsiiProxy_ContainerAwsCluster) GetNumberMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1107,7 +1106,7 @@ func (c *jsiiProxy_ContainerAwsCluster) GetStringAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1123,15 +1122,15 @@ func (c *jsiiProxy_ContainerAwsCluster) GetStringMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ContainerAwsCluster) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ContainerAwsCluster) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1150,7 +1149,7 @@ func (c *jsiiProxy_ContainerAwsCluster) ImportFrom(id *string, provider cdktf.Te
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1163,7 +1162,7 @@ func (c *jsiiProxy_ContainerAwsCluster) InterpolationForAttribute(terraformAttri
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1177,18 +1176,18 @@ func (c *jsiiProxy_ContainerAwsCluster) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_ContainerAwsCluster) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_ContainerAwsCluster) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1199,7 +1198,7 @@ func (c *jsiiProxy_ContainerAwsCluster) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1210,7 +1209,7 @@ func (c *jsiiProxy_ContainerAwsCluster) OverrideLogicalId(newLogicalId *string) 
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1221,7 +1220,7 @@ func (c *jsiiProxy_ContainerAwsCluster) PutAuthorization(value *ContainerAwsClus
 	_jsii_.InvokeVoid(
 		c,
 		"putAuthorization",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1232,7 +1231,7 @@ func (c *jsiiProxy_ContainerAwsCluster) PutBinaryAuthorization(value *ContainerA
 	_jsii_.InvokeVoid(
 		c,
 		"putBinaryAuthorization",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1243,7 +1242,7 @@ func (c *jsiiProxy_ContainerAwsCluster) PutControlPlane(value *ContainerAwsClust
 	_jsii_.InvokeVoid(
 		c,
 		"putControlPlane",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1254,7 +1253,7 @@ func (c *jsiiProxy_ContainerAwsCluster) PutFleet(value *ContainerAwsClusterFleet
 	_jsii_.InvokeVoid(
 		c,
 		"putFleet",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1265,7 +1264,7 @@ func (c *jsiiProxy_ContainerAwsCluster) PutNetworking(value *ContainerAwsCluster
 	_jsii_.InvokeVoid(
 		c,
 		"putNetworking",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1276,7 +1275,7 @@ func (c *jsiiProxy_ContainerAwsCluster) PutTimeouts(value *ContainerAwsClusterTi
 	_jsii_.InvokeVoid(
 		c,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1336,8 +1335,8 @@ func (c *jsiiProxy_ContainerAwsCluster) ResetTimeouts() {
 	)
 }
 
-func (c *jsiiProxy_ContainerAwsCluster) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ContainerAwsCluster) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1349,8 +1348,8 @@ func (c *jsiiProxy_ContainerAwsCluster) SynthesizeAttributes() *map[string]inter
 	return returns
 }
 
-func (c *jsiiProxy_ContainerAwsCluster) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ContainerAwsCluster) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1362,8 +1361,8 @@ func (c *jsiiProxy_ContainerAwsCluster) SynthesizeHclAttributes() *map[string]in
 	return returns
 }
 
-func (c *jsiiProxy_ContainerAwsCluster) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ContainerAwsCluster) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1375,8 +1374,8 @@ func (c *jsiiProxy_ContainerAwsCluster) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_ContainerAwsCluster) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ContainerAwsCluster) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1401,8 +1400,8 @@ func (c *jsiiProxy_ContainerAwsCluster) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_ContainerAwsCluster) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ContainerAwsCluster) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1413,4 +1412,3 @@ func (c *jsiiProxy_ContainerAwsCluster) ToTerraform() interface{} {
 
 	return returns
 }
-

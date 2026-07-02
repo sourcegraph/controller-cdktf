@@ -98,7 +98,7 @@ func (h *jsiiProxy_HealthcareHl7V2StoreIamMemberConditionOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_HealthcareHl7V2StoreIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_HealthcareHl7V2StoreIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewHealthcareHl7V2StoreIamMemberConditionOutputReferenceParameters(
 
 	return nil
 }
-

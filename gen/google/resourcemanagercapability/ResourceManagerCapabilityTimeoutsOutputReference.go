@@ -12,9 +12,9 @@ type ResourceManagerCapabilityTimeoutsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,8 +33,8 @@ type ResourceManagerCapabilityTimeoutsOutputReference interface {
 	DeleteInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -49,7 +49,7 @@ type ResourceManagerCapabilityTimeoutsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type ResourceManagerCapabilityTimeoutsOutputReference interface {
 	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_ResourceManagerCapabilityTimeoutsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ResourceManagerCapabilityTimeoutsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ResourceManagerCapabilityTimeoutsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_ResourceManagerCapabilityTimeoutsOutputReference) Fqn() *stri
 	return returns
 }
 
-func (j *jsiiProxy_ResourceManagerCapabilityTimeoutsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ResourceManagerCapabilityTimeoutsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_ResourceManagerCapabilityTimeoutsOutputReference) UpdateInput
 	return returns
 }
 
-
 func NewResourceManagerCapabilityTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ResourceManagerCapabilityTimeoutsOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewResourceManagerCapabilityTimeoutsOutputReference(terraformResource cdktf
 
 	_jsii_.Create(
 		"@cdktf/provider-google.resourceManagerCapability.ResourceManagerCapabilityTimeoutsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewResourceManagerCapabilityTimeoutsOutputReference_Override(r ResourceMana
 
 	_jsii_.Create(
 		"@cdktf/provider-google.resourceManagerCapability.ResourceManagerCapabilityTimeoutsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		r,
 	)
 }
 
-func (j *jsiiProxy_ResourceManagerCapabilityTimeoutsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ResourceManagerCapabilityTimeoutsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_ResourceManagerCapabilityTimeoutsOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_ResourceManagerCapabilityTimeoutsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ResourceManagerCapabilityTimeoutsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_ResourceManagerCapabilityTimeoutsOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_ResourceManagerCapabilityTimeoutsOutputReference)SetCreate(val *string) {
+func (j *jsiiProxy_ResourceManagerCapabilityTimeoutsOutputReference) SetCreate(val *string) {
 	if err := j.validateSetCreateParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_ResourceManagerCapabilityTimeoutsOutputReference)SetCreate(va
 	)
 }
 
-func (j *jsiiProxy_ResourceManagerCapabilityTimeoutsOutputReference)SetDelete(val *string) {
+func (j *jsiiProxy_ResourceManagerCapabilityTimeoutsOutputReference) SetDelete(val *string) {
 	if err := j.validateSetDeleteParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_ResourceManagerCapabilityTimeoutsOutputReference)SetDelete(va
 	)
 }
 
-func (j *jsiiProxy_ResourceManagerCapabilityTimeoutsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ResourceManagerCapabilityTimeoutsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_ResourceManagerCapabilityTimeoutsOutputReference)SetInternalV
 	)
 }
 
-func (j *jsiiProxy_ResourceManagerCapabilityTimeoutsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ResourceManagerCapabilityTimeoutsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_ResourceManagerCapabilityTimeoutsOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_ResourceManagerCapabilityTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ResourceManagerCapabilityTimeoutsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_ResourceManagerCapabilityTimeoutsOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_ResourceManagerCapabilityTimeoutsOutputReference)SetUpdate(val *string) {
+func (j *jsiiProxy_ResourceManagerCapabilityTimeoutsOutputReference) SetUpdate(val *string) {
 	if err := j.validateSetUpdateParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (r *jsiiProxy_ResourceManagerCapabilityTimeoutsOutputReference) ComputeFqn(
 	return returns
 }
 
-func (r *jsiiProxy_ResourceManagerCapabilityTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_ResourceManagerCapabilityTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (r *jsiiProxy_ResourceManagerCapabilityTimeoutsOutputReference) GetBooleanA
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (r *jsiiProxy_ResourceManagerCapabilityTimeoutsOutputReference) GetBooleanM
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (r *jsiiProxy_ResourceManagerCapabilityTimeoutsOutputReference) GetListAttr
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (r *jsiiProxy_ResourceManagerCapabilityTimeoutsOutputReference) GetNumberAt
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (r *jsiiProxy_ResourceManagerCapabilityTimeoutsOutputReference) GetNumberLi
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (r *jsiiProxy_ResourceManagerCapabilityTimeoutsOutputReference) GetNumberMa
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (r *jsiiProxy_ResourceManagerCapabilityTimeoutsOutputReference) GetStringAt
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (r *jsiiProxy_ResourceManagerCapabilityTimeoutsOutputReference) GetStringMa
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (r *jsiiProxy_ResourceManagerCapabilityTimeoutsOutputReference) Interpolati
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (r *jsiiProxy_ResourceManagerCapabilityTimeoutsOutputReference) ResetUpdate
 	)
 }
 
-func (r *jsiiProxy_ResourceManagerCapabilityTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (r *jsiiProxy_ResourceManagerCapabilityTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := r.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (r *jsiiProxy_ResourceManagerCapabilityTimeoutsOutputReference) ToString() 
 
 	return returns
 }
-

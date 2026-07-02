@@ -34,7 +34,7 @@ func (o *jsiiProxy_OrganizationAccessApprovalSettingsEnrolledServicesList) valid
 	return nil
 }
 
-func (j *jsiiProxy_OrganizationAccessApprovalSettingsEnrolledServicesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_OrganizationAccessApprovalSettingsEnrolledServicesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewOrganizationAccessApprovalSettingsEnrolledServicesListParameters
 
 	return nil
 }
-

@@ -19,7 +19,7 @@ func (n *jsiiProxy_NetworkServicesWasmPlugin) validateAddMoveTargetParameters(mo
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesWasmPlugin) validateAddOverrideParameters(path *string, value interface{}) error {
+func (n *jsiiProxy_NetworkServicesWasmPlugin) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (n *jsiiProxy_NetworkServicesWasmPlugin) validateMoveFromIdParameters(id *s
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesWasmPlugin) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (n *jsiiProxy_NetworkServicesWasmPlugin) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -226,7 +226,7 @@ func (n *jsiiProxy_NetworkServicesWasmPlugin) validatePutTimeoutsParameters(valu
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesWasmPlugin) validatePutVersionsParameters(value interface{}) error {
+func (n *jsiiProxy_NetworkServicesWasmPlugin) validatePutVersionsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -273,7 +273,7 @@ func validateNetworkServicesWasmPlugin_GenerateConfigForImportParameters(scope c
 	return nil
 }
 
-func validateNetworkServicesWasmPlugin_IsConstructParameters(x interface{}) error {
+func validateNetworkServicesWasmPlugin_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -281,7 +281,7 @@ func validateNetworkServicesWasmPlugin_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
-func validateNetworkServicesWasmPlugin_IsTerraformElementParameters(x interface{}) error {
+func validateNetworkServicesWasmPlugin_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -289,7 +289,7 @@ func validateNetworkServicesWasmPlugin_IsTerraformElementParameters(x interface{
 	return nil
 }
 
-func validateNetworkServicesWasmPlugin_IsTerraformResourceParameters(x interface{}) error {
+func validateNetworkServicesWasmPlugin_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -297,7 +297,7 @@ func validateNetworkServicesWasmPlugin_IsTerraformResourceParameters(x interface
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesWasmPlugin) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkServicesWasmPlugin) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -330,7 +330,7 @@ func (j *jsiiProxy_NetworkServicesWasmPlugin) validateSetConnectionParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesWasmPlugin) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkServicesWasmPlugin) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -451,7 +451,7 @@ func (j *jsiiProxy_NetworkServicesWasmPlugin) validateSetProjectParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesWasmPlugin) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_NetworkServicesWasmPlugin) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -515,4 +515,3 @@ func validateNewNetworkServicesWasmPluginParameters(scope constructs.Construct, 
 
 	return nil
 }
-

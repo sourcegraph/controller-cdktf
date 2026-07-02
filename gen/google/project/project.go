@@ -12,24 +12,24 @@ import (
 // Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project google_project}.
 type Project interface {
 	cdktf.TerraformResource
-	AutoCreateNetwork() interface{}
-	SetAutoCreateNetwork(val interface{})
-	AutoCreateNetworkInput() interface{}
+	AutoCreateNetwork() any
+	SetAutoCreateNetwork(val any)
+	AutoCreateNetworkInput() any
 	BillingAccount() *string
 	SetBillingAccount(val *string)
 	BillingAccountInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DeletionPolicy() *string
 	SetDeletionPolicy(val *string)
 	DeletionPolicyInput() *string
@@ -76,11 +76,11 @@ type Project interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsInput() *map[string]*string
@@ -88,18 +88,18 @@ type Project interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() ProjectTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -117,7 +117,7 @@ type Project interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -129,7 +129,7 @@ type Project interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -149,17 +149,17 @@ type Project interface {
 	ResetOverrideLogicalId()
 	ResetTags()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for Project
@@ -167,8 +167,8 @@ type jsiiProxy_Project struct {
 	internal.Type__cdktfTerraformResource
 }
 
-func (j *jsiiProxy_Project) AutoCreateNetwork() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Project) AutoCreateNetwork() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"autoCreateNetwork",
@@ -177,8 +177,8 @@ func (j *jsiiProxy_Project) AutoCreateNetwork() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Project) AutoCreateNetworkInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Project) AutoCreateNetworkInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"autoCreateNetworkInput",
@@ -217,8 +217,8 @@ func (j *jsiiProxy_Project) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_Project) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Project) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -227,8 +227,8 @@ func (j *jsiiProxy_Project) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Project) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Project) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -237,8 +237,8 @@ func (j *jsiiProxy_Project) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Project) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Project) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -477,8 +477,8 @@ func (j *jsiiProxy_Project) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_Project) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_Project) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -487,8 +487,8 @@ func (j *jsiiProxy_Project) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Project) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Project) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -537,8 +537,8 @@ func (j *jsiiProxy_Project) TerraformLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_Project) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Project) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -567,8 +567,8 @@ func (j *jsiiProxy_Project) Timeouts() ProjectTimeoutsOutputReference {
 	return returns
 }
 
-func (j *jsiiProxy_Project) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Project) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -576,7 +576,6 @@ func (j *jsiiProxy_Project) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project google_project} Resource.
 func NewProject(scope constructs.Construct, id *string, config *ProjectConfig) Project {
@@ -589,7 +588,7 @@ func NewProject(scope constructs.Construct, id *string, config *ProjectConfig) P
 
 	_jsii_.Create(
 		"@cdktf/provider-google.project.Project",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -602,12 +601,12 @@ func NewProject_Override(p Project, scope constructs.Construct, id *string, conf
 
 	_jsii_.Create(
 		"@cdktf/provider-google.project.Project",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		p,
 	)
 }
 
-func (j *jsiiProxy_Project)SetAutoCreateNetwork(val interface{}) {
+func (j *jsiiProxy_Project) SetAutoCreateNetwork(val any) {
 	if err := j.validateSetAutoCreateNetworkParameters(val); err != nil {
 		panic(err)
 	}
@@ -618,7 +617,7 @@ func (j *jsiiProxy_Project)SetAutoCreateNetwork(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Project)SetBillingAccount(val *string) {
+func (j *jsiiProxy_Project) SetBillingAccount(val *string) {
 	if err := j.validateSetBillingAccountParameters(val); err != nil {
 		panic(err)
 	}
@@ -629,7 +628,7 @@ func (j *jsiiProxy_Project)SetBillingAccount(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Project)SetConnection(val interface{}) {
+func (j *jsiiProxy_Project) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -640,7 +639,7 @@ func (j *jsiiProxy_Project)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Project)SetCount(val interface{}) {
+func (j *jsiiProxy_Project) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -651,7 +650,7 @@ func (j *jsiiProxy_Project)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Project)SetDeletionPolicy(val *string) {
+func (j *jsiiProxy_Project) SetDeletionPolicy(val *string) {
 	if err := j.validateSetDeletionPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -662,7 +661,7 @@ func (j *jsiiProxy_Project)SetDeletionPolicy(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Project)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_Project) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -670,7 +669,7 @@ func (j *jsiiProxy_Project)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Project)SetFolderId(val *string) {
+func (j *jsiiProxy_Project) SetFolderId(val *string) {
 	if err := j.validateSetFolderIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -681,7 +680,7 @@ func (j *jsiiProxy_Project)SetFolderId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Project)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Project) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -689,7 +688,7 @@ func (j *jsiiProxy_Project)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_Project)SetId(val *string) {
+func (j *jsiiProxy_Project) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -700,7 +699,7 @@ func (j *jsiiProxy_Project)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Project)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_Project) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -711,7 +710,7 @@ func (j *jsiiProxy_Project)SetLabels(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_Project)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Project) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -722,7 +721,7 @@ func (j *jsiiProxy_Project)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	)
 }
 
-func (j *jsiiProxy_Project)SetName(val *string) {
+func (j *jsiiProxy_Project) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -733,7 +732,7 @@ func (j *jsiiProxy_Project)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Project)SetOrgId(val *string) {
+func (j *jsiiProxy_Project) SetOrgId(val *string) {
 	if err := j.validateSetOrgIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -744,7 +743,7 @@ func (j *jsiiProxy_Project)SetOrgId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Project)SetProjectId(val *string) {
+func (j *jsiiProxy_Project) SetProjectId(val *string) {
 	if err := j.validateSetProjectIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -755,7 +754,7 @@ func (j *jsiiProxy_Project)SetProjectId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Project)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Project) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -763,7 +762,7 @@ func (j *jsiiProxy_Project)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_Project)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_Project) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -774,7 +773,7 @@ func (j *jsiiProxy_Project)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Project)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_Project) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -797,7 +796,7 @@ func Project_GenerateConfigForImport(scope constructs.Construct, importToId *str
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.project.Project",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -821,7 +820,7 @@ func Project_GenerateConfigForImport(scope constructs.Construct, importToId *str
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func Project_IsConstruct(x interface{}) *bool {
+func Project_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateProject_IsConstructParameters(x); err != nil {
@@ -832,7 +831,7 @@ func Project_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.project.Project",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -840,7 +839,7 @@ func Project_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func Project_IsTerraformElement(x interface{}) *bool {
+func Project_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateProject_IsTerraformElementParameters(x); err != nil {
@@ -851,7 +850,7 @@ func Project_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.project.Project",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -859,7 +858,7 @@ func Project_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func Project_IsTerraformResource(x interface{}) *bool {
+func Project_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateProject_IsTerraformResourceParameters(x); err != nil {
@@ -870,7 +869,7 @@ func Project_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.project.Project",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -895,31 +894,31 @@ func (p *jsiiProxy_Project) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (p *jsiiProxy_Project) AddOverride(path *string, value interface{}) {
+func (p *jsiiProxy_Project) AddOverride(path *string, value any) {
 	if err := p.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (p *jsiiProxy_Project) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_Project) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -935,7 +934,7 @@ func (p *jsiiProxy_Project) GetBooleanAttribute(terraformAttribute *string) cdkt
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -951,7 +950,7 @@ func (p *jsiiProxy_Project) GetBooleanMapAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -967,7 +966,7 @@ func (p *jsiiProxy_Project) GetListAttribute(terraformAttribute *string) *[]*str
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -983,7 +982,7 @@ func (p *jsiiProxy_Project) GetNumberAttribute(terraformAttribute *string) *floa
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -999,7 +998,7 @@ func (p *jsiiProxy_Project) GetNumberListAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1015,7 +1014,7 @@ func (p *jsiiProxy_Project) GetNumberMapAttribute(terraformAttribute *string) *m
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1031,7 +1030,7 @@ func (p *jsiiProxy_Project) GetStringAttribute(terraformAttribute *string) *stri
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1047,15 +1046,15 @@ func (p *jsiiProxy_Project) GetStringMapAttribute(terraformAttribute *string) *m
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (p *jsiiProxy_Project) HasResourceMove() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_Project) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1074,7 +1073,7 @@ func (p *jsiiProxy_Project) ImportFrom(id *string, provider cdktf.TerraformProvi
 	_jsii_.InvokeVoid(
 		p,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1087,7 +1086,7 @@ func (p *jsiiProxy_Project) InterpolationForAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1101,18 +1100,18 @@ func (p *jsiiProxy_Project) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (p *jsiiProxy_Project) MoveTo(moveTarget *string, index interface{}) {
+func (p *jsiiProxy_Project) MoveTo(moveTarget *string, index any) {
 	if err := p.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1123,7 +1122,7 @@ func (p *jsiiProxy_Project) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1134,7 +1133,7 @@ func (p *jsiiProxy_Project) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1145,7 +1144,7 @@ func (p *jsiiProxy_Project) PutTimeouts(value *ProjectTimeouts) {
 	_jsii_.InvokeVoid(
 		p,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1229,8 +1228,8 @@ func (p *jsiiProxy_Project) ResetTimeouts() {
 	)
 }
 
-func (p *jsiiProxy_Project) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (p *jsiiProxy_Project) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
@@ -1242,8 +1241,8 @@ func (p *jsiiProxy_Project) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (p *jsiiProxy_Project) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (p *jsiiProxy_Project) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
@@ -1255,8 +1254,8 @@ func (p *jsiiProxy_Project) SynthesizeHclAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (p *jsiiProxy_Project) ToHclTerraform() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_Project) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1268,8 +1267,8 @@ func (p *jsiiProxy_Project) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (p *jsiiProxy_Project) ToMetadata() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_Project) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1294,8 +1293,8 @@ func (p *jsiiProxy_Project) ToString() *string {
 	return returns
 }
 
-func (p *jsiiProxy_Project) ToTerraform() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_Project) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1306,4 +1305,3 @@ func (p *jsiiProxy_Project) ToTerraform() interface{} {
 
 	return returns
 }
-

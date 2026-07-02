@@ -90,7 +90,7 @@ func (c *jsiiProxy_ComputePacketMirroringMirroredResourcesOutputReference) valid
 	return nil
 }
 
-func (c *jsiiProxy_ComputePacketMirroringMirroredResourcesOutputReference) validatePutInstancesParameters(value interface{}) error {
+func (c *jsiiProxy_ComputePacketMirroringMirroredResourcesOutputReference) validatePutInstancesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (c *jsiiProxy_ComputePacketMirroringMirroredResourcesOutputReference) valid
 	return nil
 }
 
-func (c *jsiiProxy_ComputePacketMirroringMirroredResourcesOutputReference) validatePutSubnetworksParameters(value interface{}) error {
+func (c *jsiiProxy_ComputePacketMirroringMirroredResourcesOutputReference) validatePutSubnetworksParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -160,7 +160,7 @@ func (c *jsiiProxy_ComputePacketMirroringMirroredResourcesOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_ComputePacketMirroringMirroredResourcesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputePacketMirroringMirroredResourcesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -268,4 +268,3 @@ func validateNewComputePacketMirroringMirroredResourcesOutputReferenceParameters
 
 	return nil
 }
-

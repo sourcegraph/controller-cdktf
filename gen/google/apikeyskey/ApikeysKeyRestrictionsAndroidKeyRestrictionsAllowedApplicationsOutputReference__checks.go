@@ -98,7 +98,7 @@ func (a *jsiiProxy_ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplicatio
 	return nil
 }
 
-func (j *jsiiProxy_ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplicationsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplicationsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplicatio
 	return nil
 }
 
-func (j *jsiiProxy_ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplicationsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplicationsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplicationsO
 
 	return nil
 }
-

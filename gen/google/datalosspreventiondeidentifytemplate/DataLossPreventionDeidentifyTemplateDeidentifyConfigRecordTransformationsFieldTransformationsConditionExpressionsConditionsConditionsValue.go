@@ -1,11 +1,10 @@
 package datalosspreventiondeidentifytemplate
 
-
 type DataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsConditionExpressionsConditionsConditionsValue struct {
 	// A boolean value.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_loss_prevention_deidentify_template#boolean_value DataLossPreventionDeidentifyTemplate#boolean_value}
-	BooleanValue interface{} `field:"optional" json:"booleanValue" yaml:"booleanValue"`
+	BooleanValue any `field:"optional" json:"booleanValue" yaml:"booleanValue"`
 	// date_value block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_loss_prevention_deidentify_template#date_value DataLossPreventionDeidentifyTemplate#date_value}
@@ -37,4 +36,3 @@ type DataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFi
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_loss_prevention_deidentify_template#time_value DataLossPreventionDeidentifyTemplate#time_value}
 	TimeValue *DataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsConditionExpressionsConditionsConditionsValueTimeValue `field:"optional" json:"timeValue" yaml:"timeValue"`
 }
-

@@ -109,7 +109,7 @@ func (c *jsiiProxy_CloudIdentityGroupMembershipRolesOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_CloudIdentityGroupMembershipRolesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudIdentityGroupMembershipRolesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -174,7 +174,7 @@ func (j *jsiiProxy_CloudIdentityGroupMembershipRolesOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_CloudIdentityGroupMembershipRolesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CloudIdentityGroupMembershipRolesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -241,4 +241,3 @@ func validateNewCloudIdentityGroupMembershipRolesOutputReferenceParameters(terra
 
 	return nil
 }
-

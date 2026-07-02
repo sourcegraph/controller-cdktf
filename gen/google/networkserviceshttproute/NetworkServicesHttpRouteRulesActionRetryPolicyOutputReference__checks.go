@@ -98,7 +98,7 @@ func (n *jsiiProxy_NetworkServicesHttpRouteRulesActionRetryPolicyOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesHttpRouteRulesActionRetryPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkServicesHttpRouteRulesActionRetryPolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewNetworkServicesHttpRouteRulesActionRetryPolicyOutputReferencePar
 
 	return nil
 }
-

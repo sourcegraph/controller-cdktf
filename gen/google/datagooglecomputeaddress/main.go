@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleComputeAddress.DataGoogleComputeAddress",
-		reflect.TypeOf((*DataGoogleComputeAddress)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleComputeAddress](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "address", GoGetter: "Address"},
@@ -66,7 +66,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "users", GoGetter: "Users"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleComputeAddress{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -74,6 +74,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleComputeAddress.DataGoogleComputeAddressConfig",
-		reflect.TypeOf((*DataGoogleComputeAddressConfig)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleComputeAddressConfig](),
 	)
 }

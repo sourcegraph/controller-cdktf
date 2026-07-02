@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleBigqueryTables.DataGoogleBigqueryTables",
-		reflect.TypeOf((*DataGoogleBigqueryTables)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleBigqueryTables](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -54,7 +54,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleBigqueryTables{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -62,15 +62,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleBigqueryTables.DataGoogleBigqueryTablesConfig",
-		reflect.TypeOf((*DataGoogleBigqueryTablesConfig)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleBigqueryTablesConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleBigqueryTables.DataGoogleBigqueryTablesTables",
-		reflect.TypeOf((*DataGoogleBigqueryTablesTables)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleBigqueryTablesTables](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleBigqueryTables.DataGoogleBigqueryTablesTablesList",
-		reflect.TypeOf((*DataGoogleBigqueryTablesTablesList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleBigqueryTablesTablesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -83,7 +83,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleBigqueryTablesTablesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -91,7 +91,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleBigqueryTables.DataGoogleBigqueryTablesTablesOutputReference",
-		reflect.TypeOf((*DataGoogleBigqueryTablesTablesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleBigqueryTablesTablesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -117,7 +117,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleBigqueryTablesTablesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -19,7 +19,7 @@ func (i *jsiiProxy_IamWorkloadIdentityPool) validateAddMoveTargetParameters(move
 	return nil
 }
 
-func (i *jsiiProxy_IamWorkloadIdentityPool) validateAddOverrideParameters(path *string, value interface{}) error {
+func (i *jsiiProxy_IamWorkloadIdentityPool) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (i *jsiiProxy_IamWorkloadIdentityPool) validateMoveFromIdParameters(id *str
 	return nil
 }
 
-func (i *jsiiProxy_IamWorkloadIdentityPool) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (i *jsiiProxy_IamWorkloadIdentityPool) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (i *jsiiProxy_IamWorkloadIdentityPool) validateOverrideLogicalIdParameters(
 	return nil
 }
 
-func (i *jsiiProxy_IamWorkloadIdentityPool) validatePutAttestationRulesParameters(value interface{}) error {
+func (i *jsiiProxy_IamWorkloadIdentityPool) validatePutAttestationRulesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -284,7 +284,7 @@ func validateIamWorkloadIdentityPool_GenerateConfigForImportParameters(scope con
 	return nil
 }
 
-func validateIamWorkloadIdentityPool_IsConstructParameters(x interface{}) error {
+func validateIamWorkloadIdentityPool_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -292,7 +292,7 @@ func validateIamWorkloadIdentityPool_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
-func validateIamWorkloadIdentityPool_IsTerraformElementParameters(x interface{}) error {
+func validateIamWorkloadIdentityPool_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -300,7 +300,7 @@ func validateIamWorkloadIdentityPool_IsTerraformElementParameters(x interface{})
 	return nil
 }
 
-func validateIamWorkloadIdentityPool_IsTerraformResourceParameters(x interface{}) error {
+func validateIamWorkloadIdentityPool_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -308,7 +308,7 @@ func validateIamWorkloadIdentityPool_IsTerraformResourceParameters(x interface{}
 	return nil
 }
 
-func (j *jsiiProxy_IamWorkloadIdentityPool) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_IamWorkloadIdentityPool) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -341,7 +341,7 @@ func (j *jsiiProxy_IamWorkloadIdentityPool) validateSetConnectionParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_IamWorkloadIdentityPool) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_IamWorkloadIdentityPool) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -406,7 +406,7 @@ func (j *jsiiProxy_IamWorkloadIdentityPool) validateSetDescriptionParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_IamWorkloadIdentityPool) validateSetDisabledParameters(val interface{}) error {
+func (j *jsiiProxy_IamWorkloadIdentityPool) validateSetDisabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -466,7 +466,7 @@ func (j *jsiiProxy_IamWorkloadIdentityPool) validateSetProjectParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_IamWorkloadIdentityPool) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_IamWorkloadIdentityPool) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -538,4 +538,3 @@ func validateNewIamWorkloadIdentityPoolParameters(scope constructs.Construct, id
 
 	return nil
 }
-

@@ -18,15 +18,15 @@ type ComputeTargetPool interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -71,11 +71,11 @@ type ComputeTargetPool interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
@@ -86,18 +86,18 @@ type ComputeTargetPool interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() ComputeTargetPoolTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -115,7 +115,7 @@ type ComputeTargetPool interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -127,7 +127,7 @@ type ComputeTargetPool interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -148,17 +148,17 @@ type ComputeTargetPool interface {
 	ResetRegion()
 	ResetSessionAffinity()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ComputeTargetPool
@@ -196,8 +196,8 @@ func (j *jsiiProxy_ComputeTargetPool) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeTargetPool) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeTargetPool) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -206,8 +206,8 @@ func (j *jsiiProxy_ComputeTargetPool) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeTargetPool) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ComputeTargetPool) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -216,8 +216,8 @@ func (j *jsiiProxy_ComputeTargetPool) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_ComputeTargetPool) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeTargetPool) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -436,8 +436,8 @@ func (j *jsiiProxy_ComputeTargetPool) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeTargetPool) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ComputeTargetPool) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -446,8 +446,8 @@ func (j *jsiiProxy_ComputeTargetPool) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeTargetPool) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeTargetPool) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -516,8 +516,8 @@ func (j *jsiiProxy_ComputeTargetPool) TerraformGeneratorMetadata() *cdktf.Terraf
 	return returns
 }
 
-func (j *jsiiProxy_ComputeTargetPool) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ComputeTargetPool) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -546,8 +546,8 @@ func (j *jsiiProxy_ComputeTargetPool) Timeouts() ComputeTargetPoolTimeoutsOutput
 	return returns
 }
 
-func (j *jsiiProxy_ComputeTargetPool) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeTargetPool) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -555,7 +555,6 @@ func (j *jsiiProxy_ComputeTargetPool) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_target_pool google_compute_target_pool} Resource.
 func NewComputeTargetPool(scope constructs.Construct, id *string, config *ComputeTargetPoolConfig) ComputeTargetPool {
@@ -568,7 +567,7 @@ func NewComputeTargetPool(scope constructs.Construct, id *string, config *Comput
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeTargetPool.ComputeTargetPool",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -581,12 +580,12 @@ func NewComputeTargetPool_Override(c ComputeTargetPool, scope constructs.Constru
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeTargetPool.ComputeTargetPool",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputeTargetPool)SetBackupPool(val *string) {
+func (j *jsiiProxy_ComputeTargetPool) SetBackupPool(val *string) {
 	if err := j.validateSetBackupPoolParameters(val); err != nil {
 		panic(err)
 	}
@@ -597,7 +596,7 @@ func (j *jsiiProxy_ComputeTargetPool)SetBackupPool(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeTargetPool)SetConnection(val interface{}) {
+func (j *jsiiProxy_ComputeTargetPool) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -608,7 +607,7 @@ func (j *jsiiProxy_ComputeTargetPool)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeTargetPool)SetCount(val interface{}) {
+func (j *jsiiProxy_ComputeTargetPool) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -619,7 +618,7 @@ func (j *jsiiProxy_ComputeTargetPool)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeTargetPool)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ComputeTargetPool) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -627,7 +626,7 @@ func (j *jsiiProxy_ComputeTargetPool)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeTargetPool)SetDescription(val *string) {
+func (j *jsiiProxy_ComputeTargetPool) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -638,7 +637,7 @@ func (j *jsiiProxy_ComputeTargetPool)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeTargetPool)SetFailoverRatio(val *float64) {
+func (j *jsiiProxy_ComputeTargetPool) SetFailoverRatio(val *float64) {
 	if err := j.validateSetFailoverRatioParameters(val); err != nil {
 		panic(err)
 	}
@@ -649,7 +648,7 @@ func (j *jsiiProxy_ComputeTargetPool)SetFailoverRatio(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ComputeTargetPool)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ComputeTargetPool) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -657,7 +656,7 @@ func (j *jsiiProxy_ComputeTargetPool)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_ComputeTargetPool)SetHealthChecks(val *[]*string) {
+func (j *jsiiProxy_ComputeTargetPool) SetHealthChecks(val *[]*string) {
 	if err := j.validateSetHealthChecksParameters(val); err != nil {
 		panic(err)
 	}
@@ -668,7 +667,7 @@ func (j *jsiiProxy_ComputeTargetPool)SetHealthChecks(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeTargetPool)SetId(val *string) {
+func (j *jsiiProxy_ComputeTargetPool) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -679,7 +678,7 @@ func (j *jsiiProxy_ComputeTargetPool)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeTargetPool)SetInstances(val *[]*string) {
+func (j *jsiiProxy_ComputeTargetPool) SetInstances(val *[]*string) {
 	if err := j.validateSetInstancesParameters(val); err != nil {
 		panic(err)
 	}
@@ -690,7 +689,7 @@ func (j *jsiiProxy_ComputeTargetPool)SetInstances(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeTargetPool)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ComputeTargetPool) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -701,7 +700,7 @@ func (j *jsiiProxy_ComputeTargetPool)SetLifecycle(val *cdktf.TerraformResourceLi
 	)
 }
 
-func (j *jsiiProxy_ComputeTargetPool)SetName(val *string) {
+func (j *jsiiProxy_ComputeTargetPool) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -712,7 +711,7 @@ func (j *jsiiProxy_ComputeTargetPool)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeTargetPool)SetProject(val *string) {
+func (j *jsiiProxy_ComputeTargetPool) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -723,7 +722,7 @@ func (j *jsiiProxy_ComputeTargetPool)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeTargetPool)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ComputeTargetPool) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -731,7 +730,7 @@ func (j *jsiiProxy_ComputeTargetPool)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_ComputeTargetPool)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ComputeTargetPool) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -742,7 +741,7 @@ func (j *jsiiProxy_ComputeTargetPool)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeTargetPool)SetRegion(val *string) {
+func (j *jsiiProxy_ComputeTargetPool) SetRegion(val *string) {
 	if err := j.validateSetRegionParameters(val); err != nil {
 		panic(err)
 	}
@@ -753,7 +752,7 @@ func (j *jsiiProxy_ComputeTargetPool)SetRegion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeTargetPool)SetSessionAffinity(val *string) {
+func (j *jsiiProxy_ComputeTargetPool) SetSessionAffinity(val *string) {
 	if err := j.validateSetSessionAffinityParameters(val); err != nil {
 		panic(err)
 	}
@@ -776,7 +775,7 @@ func ComputeTargetPool_GenerateConfigForImport(scope constructs.Construct, impor
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeTargetPool.ComputeTargetPool",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -800,7 +799,7 @@ func ComputeTargetPool_GenerateConfigForImport(scope constructs.Construct, impor
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ComputeTargetPool_IsConstruct(x interface{}) *bool {
+func ComputeTargetPool_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeTargetPool_IsConstructParameters(x); err != nil {
@@ -811,7 +810,7 @@ func ComputeTargetPool_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeTargetPool.ComputeTargetPool",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -819,7 +818,7 @@ func ComputeTargetPool_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ComputeTargetPool_IsTerraformElement(x interface{}) *bool {
+func ComputeTargetPool_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeTargetPool_IsTerraformElementParameters(x); err != nil {
@@ -830,7 +829,7 @@ func ComputeTargetPool_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeTargetPool.ComputeTargetPool",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -838,7 +837,7 @@ func ComputeTargetPool_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ComputeTargetPool_IsTerraformResource(x interface{}) *bool {
+func ComputeTargetPool_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeTargetPool_IsTerraformResourceParameters(x); err != nil {
@@ -849,7 +848,7 @@ func ComputeTargetPool_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeTargetPool.ComputeTargetPool",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -874,31 +873,31 @@ func (c *jsiiProxy_ComputeTargetPool) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_ComputeTargetPool) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_ComputeTargetPool) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_ComputeTargetPool) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComputeTargetPool) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -914,7 +913,7 @@ func (c *jsiiProxy_ComputeTargetPool) GetBooleanAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -930,7 +929,7 @@ func (c *jsiiProxy_ComputeTargetPool) GetBooleanMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -946,7 +945,7 @@ func (c *jsiiProxy_ComputeTargetPool) GetListAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -962,7 +961,7 @@ func (c *jsiiProxy_ComputeTargetPool) GetNumberAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -978,7 +977,7 @@ func (c *jsiiProxy_ComputeTargetPool) GetNumberListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -994,7 +993,7 @@ func (c *jsiiProxy_ComputeTargetPool) GetNumberMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1010,7 +1009,7 @@ func (c *jsiiProxy_ComputeTargetPool) GetStringAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1026,15 +1025,15 @@ func (c *jsiiProxy_ComputeTargetPool) GetStringMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ComputeTargetPool) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeTargetPool) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1053,7 +1052,7 @@ func (c *jsiiProxy_ComputeTargetPool) ImportFrom(id *string, provider cdktf.Terr
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1066,7 +1065,7 @@ func (c *jsiiProxy_ComputeTargetPool) InterpolationForAttribute(terraformAttribu
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1080,18 +1079,18 @@ func (c *jsiiProxy_ComputeTargetPool) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_ComputeTargetPool) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_ComputeTargetPool) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1102,7 +1101,7 @@ func (c *jsiiProxy_ComputeTargetPool) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1113,7 +1112,7 @@ func (c *jsiiProxy_ComputeTargetPool) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1124,7 +1123,7 @@ func (c *jsiiProxy_ComputeTargetPool) PutTimeouts(value *ComputeTargetPoolTimeou
 	_jsii_.InvokeVoid(
 		c,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1216,8 +1215,8 @@ func (c *jsiiProxy_ComputeTargetPool) ResetTimeouts() {
 	)
 }
 
-func (c *jsiiProxy_ComputeTargetPool) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ComputeTargetPool) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1229,8 +1228,8 @@ func (c *jsiiProxy_ComputeTargetPool) SynthesizeAttributes() *map[string]interfa
 	return returns
 }
 
-func (c *jsiiProxy_ComputeTargetPool) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ComputeTargetPool) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1242,8 +1241,8 @@ func (c *jsiiProxy_ComputeTargetPool) SynthesizeHclAttributes() *map[string]inte
 	return returns
 }
 
-func (c *jsiiProxy_ComputeTargetPool) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeTargetPool) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1255,8 +1254,8 @@ func (c *jsiiProxy_ComputeTargetPool) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_ComputeTargetPool) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeTargetPool) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1281,8 +1280,8 @@ func (c *jsiiProxy_ComputeTargetPool) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_ComputeTargetPool) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeTargetPool) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1293,4 +1292,3 @@ func (c *jsiiProxy_ComputeTargetPool) ToTerraform() interface{} {
 
 	return returns
 }
-

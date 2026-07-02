@@ -17,15 +17,15 @@ type NetworkConnectivityInternalRange interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -48,9 +48,9 @@ type NetworkConnectivityInternalRange interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	Immutable() interface{}
-	SetImmutable(val interface{})
-	ImmutableInput() interface{}
+	Immutable() any
+	SetImmutable(val any)
+	ImmutableInput() any
 	IpCidrRange() *string
 	SetIpCidrRange(val *string)
 	IpCidrRangeInput() *string
@@ -88,11 +88,11 @@ type NetworkConnectivityInternalRange interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	TargetCidrRange() *[]*string
 	SetTargetCidrRange(val *[]*string)
 	TargetCidrRangeInput() *[]*string
@@ -100,11 +100,11 @@ type NetworkConnectivityInternalRange interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() NetworkConnectivityInternalRangeTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Usage() *string
 	SetUsage(val *string)
 	UsageInput() *string
@@ -113,9 +113,9 @@ type NetworkConnectivityInternalRange interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -133,7 +133,7 @@ type NetworkConnectivityInternalRange interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -145,7 +145,7 @@ type NetworkConnectivityInternalRange interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -171,17 +171,17 @@ type NetworkConnectivityInternalRange interface {
 	ResetProject()
 	ResetTargetCidrRange()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for NetworkConnectivityInternalRange
@@ -219,8 +219,8 @@ func (j *jsiiProxy_NetworkConnectivityInternalRange) CdktfStack() cdktf.Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_NetworkConnectivityInternalRange) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkConnectivityInternalRange) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -229,8 +229,8 @@ func (j *jsiiProxy_NetworkConnectivityInternalRange) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NetworkConnectivityInternalRange) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_NetworkConnectivityInternalRange) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -239,8 +239,8 @@ func (j *jsiiProxy_NetworkConnectivityInternalRange) ConstructNodeMetadata() *ma
 	return returns
 }
 
-func (j *jsiiProxy_NetworkConnectivityInternalRange) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkConnectivityInternalRange) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -359,8 +359,8 @@ func (j *jsiiProxy_NetworkConnectivityInternalRange) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_NetworkConnectivityInternalRange) Immutable() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkConnectivityInternalRange) Immutable() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"immutable",
@@ -369,8 +369,8 @@ func (j *jsiiProxy_NetworkConnectivityInternalRange) Immutable() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NetworkConnectivityInternalRange) ImmutableInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkConnectivityInternalRange) ImmutableInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"immutableInput",
@@ -589,8 +589,8 @@ func (j *jsiiProxy_NetworkConnectivityInternalRange) Provider() cdktf.TerraformP
 	return returns
 }
 
-func (j *jsiiProxy_NetworkConnectivityInternalRange) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_NetworkConnectivityInternalRange) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -599,8 +599,8 @@ func (j *jsiiProxy_NetworkConnectivityInternalRange) Provisioners() *[]interface
 	return returns
 }
 
-func (j *jsiiProxy_NetworkConnectivityInternalRange) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkConnectivityInternalRange) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -649,8 +649,8 @@ func (j *jsiiProxy_NetworkConnectivityInternalRange) TerraformLabels() cdktf.Str
 	return returns
 }
 
-func (j *jsiiProxy_NetworkConnectivityInternalRange) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_NetworkConnectivityInternalRange) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -679,8 +679,8 @@ func (j *jsiiProxy_NetworkConnectivityInternalRange) Timeouts() NetworkConnectiv
 	return returns
 }
 
-func (j *jsiiProxy_NetworkConnectivityInternalRange) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkConnectivityInternalRange) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -719,7 +719,6 @@ func (j *jsiiProxy_NetworkConnectivityInternalRange) Users() *[]*string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_connectivity_internal_range google_network_connectivity_internal_range} Resource.
 func NewNetworkConnectivityInternalRange(scope constructs.Construct, id *string, config *NetworkConnectivityInternalRangeConfig) NetworkConnectivityInternalRange {
 	_init_.Initialize()
@@ -731,7 +730,7 @@ func NewNetworkConnectivityInternalRange(scope constructs.Construct, id *string,
 
 	_jsii_.Create(
 		"@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -744,12 +743,12 @@ func NewNetworkConnectivityInternalRange_Override(n NetworkConnectivityInternalR
 
 	_jsii_.Create(
 		"@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivityInternalRange)SetConnection(val interface{}) {
+func (j *jsiiProxy_NetworkConnectivityInternalRange) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -760,7 +759,7 @@ func (j *jsiiProxy_NetworkConnectivityInternalRange)SetConnection(val interface{
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivityInternalRange)SetCount(val interface{}) {
+func (j *jsiiProxy_NetworkConnectivityInternalRange) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -771,7 +770,7 @@ func (j *jsiiProxy_NetworkConnectivityInternalRange)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivityInternalRange)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_NetworkConnectivityInternalRange) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -779,7 +778,7 @@ func (j *jsiiProxy_NetworkConnectivityInternalRange)SetDependsOn(val *[]*string)
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivityInternalRange)SetDescription(val *string) {
+func (j *jsiiProxy_NetworkConnectivityInternalRange) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -790,7 +789,7 @@ func (j *jsiiProxy_NetworkConnectivityInternalRange)SetDescription(val *string) 
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivityInternalRange)SetExcludeCidrRanges(val *[]*string) {
+func (j *jsiiProxy_NetworkConnectivityInternalRange) SetExcludeCidrRanges(val *[]*string) {
 	if err := j.validateSetExcludeCidrRangesParameters(val); err != nil {
 		panic(err)
 	}
@@ -801,7 +800,7 @@ func (j *jsiiProxy_NetworkConnectivityInternalRange)SetExcludeCidrRanges(val *[]
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivityInternalRange)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_NetworkConnectivityInternalRange) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -809,7 +808,7 @@ func (j *jsiiProxy_NetworkConnectivityInternalRange)SetForEach(val cdktf.ITerraf
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivityInternalRange)SetId(val *string) {
+func (j *jsiiProxy_NetworkConnectivityInternalRange) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -820,7 +819,7 @@ func (j *jsiiProxy_NetworkConnectivityInternalRange)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivityInternalRange)SetImmutable(val interface{}) {
+func (j *jsiiProxy_NetworkConnectivityInternalRange) SetImmutable(val any) {
 	if err := j.validateSetImmutableParameters(val); err != nil {
 		panic(err)
 	}
@@ -831,7 +830,7 @@ func (j *jsiiProxy_NetworkConnectivityInternalRange)SetImmutable(val interface{}
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivityInternalRange)SetIpCidrRange(val *string) {
+func (j *jsiiProxy_NetworkConnectivityInternalRange) SetIpCidrRange(val *string) {
 	if err := j.validateSetIpCidrRangeParameters(val); err != nil {
 		panic(err)
 	}
@@ -842,7 +841,7 @@ func (j *jsiiProxy_NetworkConnectivityInternalRange)SetIpCidrRange(val *string) 
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivityInternalRange)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_NetworkConnectivityInternalRange) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -853,7 +852,7 @@ func (j *jsiiProxy_NetworkConnectivityInternalRange)SetLabels(val *map[string]*s
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivityInternalRange)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_NetworkConnectivityInternalRange) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -864,7 +863,7 @@ func (j *jsiiProxy_NetworkConnectivityInternalRange)SetLifecycle(val *cdktf.Terr
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivityInternalRange)SetName(val *string) {
+func (j *jsiiProxy_NetworkConnectivityInternalRange) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -875,7 +874,7 @@ func (j *jsiiProxy_NetworkConnectivityInternalRange)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivityInternalRange)SetNetwork(val *string) {
+func (j *jsiiProxy_NetworkConnectivityInternalRange) SetNetwork(val *string) {
 	if err := j.validateSetNetworkParameters(val); err != nil {
 		panic(err)
 	}
@@ -886,7 +885,7 @@ func (j *jsiiProxy_NetworkConnectivityInternalRange)SetNetwork(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivityInternalRange)SetOverlaps(val *[]*string) {
+func (j *jsiiProxy_NetworkConnectivityInternalRange) SetOverlaps(val *[]*string) {
 	if err := j.validateSetOverlapsParameters(val); err != nil {
 		panic(err)
 	}
@@ -897,7 +896,7 @@ func (j *jsiiProxy_NetworkConnectivityInternalRange)SetOverlaps(val *[]*string) 
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivityInternalRange)SetPeering(val *string) {
+func (j *jsiiProxy_NetworkConnectivityInternalRange) SetPeering(val *string) {
 	if err := j.validateSetPeeringParameters(val); err != nil {
 		panic(err)
 	}
@@ -908,7 +907,7 @@ func (j *jsiiProxy_NetworkConnectivityInternalRange)SetPeering(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivityInternalRange)SetPrefixLength(val *float64) {
+func (j *jsiiProxy_NetworkConnectivityInternalRange) SetPrefixLength(val *float64) {
 	if err := j.validateSetPrefixLengthParameters(val); err != nil {
 		panic(err)
 	}
@@ -919,7 +918,7 @@ func (j *jsiiProxy_NetworkConnectivityInternalRange)SetPrefixLength(val *float64
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivityInternalRange)SetProject(val *string) {
+func (j *jsiiProxy_NetworkConnectivityInternalRange) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -930,7 +929,7 @@ func (j *jsiiProxy_NetworkConnectivityInternalRange)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivityInternalRange)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_NetworkConnectivityInternalRange) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -938,7 +937,7 @@ func (j *jsiiProxy_NetworkConnectivityInternalRange)SetProvider(val cdktf.Terraf
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivityInternalRange)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_NetworkConnectivityInternalRange) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -949,7 +948,7 @@ func (j *jsiiProxy_NetworkConnectivityInternalRange)SetProvisioners(val *[]inter
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivityInternalRange)SetTargetCidrRange(val *[]*string) {
+func (j *jsiiProxy_NetworkConnectivityInternalRange) SetTargetCidrRange(val *[]*string) {
 	if err := j.validateSetTargetCidrRangeParameters(val); err != nil {
 		panic(err)
 	}
@@ -960,7 +959,7 @@ func (j *jsiiProxy_NetworkConnectivityInternalRange)SetTargetCidrRange(val *[]*s
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivityInternalRange)SetUsage(val *string) {
+func (j *jsiiProxy_NetworkConnectivityInternalRange) SetUsage(val *string) {
 	if err := j.validateSetUsageParameters(val); err != nil {
 		panic(err)
 	}
@@ -983,7 +982,7 @@ func NetworkConnectivityInternalRange_GenerateConfigForImport(scope constructs.C
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1007,7 +1006,7 @@ func NetworkConnectivityInternalRange_GenerateConfigForImport(scope constructs.C
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func NetworkConnectivityInternalRange_IsConstruct(x interface{}) *bool {
+func NetworkConnectivityInternalRange_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetworkConnectivityInternalRange_IsConstructParameters(x); err != nil {
@@ -1018,7 +1017,7 @@ func NetworkConnectivityInternalRange_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1026,7 +1025,7 @@ func NetworkConnectivityInternalRange_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func NetworkConnectivityInternalRange_IsTerraformElement(x interface{}) *bool {
+func NetworkConnectivityInternalRange_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetworkConnectivityInternalRange_IsTerraformElementParameters(x); err != nil {
@@ -1037,7 +1036,7 @@ func NetworkConnectivityInternalRange_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1045,7 +1044,7 @@ func NetworkConnectivityInternalRange_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func NetworkConnectivityInternalRange_IsTerraformResource(x interface{}) *bool {
+func NetworkConnectivityInternalRange_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetworkConnectivityInternalRange_IsTerraformResourceParameters(x); err != nil {
@@ -1056,7 +1055,7 @@ func NetworkConnectivityInternalRange_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1081,31 +1080,31 @@ func (n *jsiiProxy_NetworkConnectivityInternalRange) AddMoveTarget(moveTarget *s
 	_jsii_.InvokeVoid(
 		n,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (n *jsiiProxy_NetworkConnectivityInternalRange) AddOverride(path *string, value interface{}) {
+func (n *jsiiProxy_NetworkConnectivityInternalRange) AddOverride(path *string, value any) {
 	if err := n.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (n *jsiiProxy_NetworkConnectivityInternalRange) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (n *jsiiProxy_NetworkConnectivityInternalRange) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1121,7 +1120,7 @@ func (n *jsiiProxy_NetworkConnectivityInternalRange) GetBooleanAttribute(terrafo
 	_jsii_.Invoke(
 		n,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1137,7 +1136,7 @@ func (n *jsiiProxy_NetworkConnectivityInternalRange) GetBooleanMapAttribute(terr
 	_jsii_.Invoke(
 		n,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1153,7 +1152,7 @@ func (n *jsiiProxy_NetworkConnectivityInternalRange) GetListAttribute(terraformA
 	_jsii_.Invoke(
 		n,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1169,7 +1168,7 @@ func (n *jsiiProxy_NetworkConnectivityInternalRange) GetNumberAttribute(terrafor
 	_jsii_.Invoke(
 		n,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1185,7 +1184,7 @@ func (n *jsiiProxy_NetworkConnectivityInternalRange) GetNumberListAttribute(terr
 	_jsii_.Invoke(
 		n,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1201,7 +1200,7 @@ func (n *jsiiProxy_NetworkConnectivityInternalRange) GetNumberMapAttribute(terra
 	_jsii_.Invoke(
 		n,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1217,7 +1216,7 @@ func (n *jsiiProxy_NetworkConnectivityInternalRange) GetStringAttribute(terrafor
 	_jsii_.Invoke(
 		n,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1233,15 +1232,15 @@ func (n *jsiiProxy_NetworkConnectivityInternalRange) GetStringMapAttribute(terra
 	_jsii_.Invoke(
 		n,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (n *jsiiProxy_NetworkConnectivityInternalRange) HasResourceMove() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkConnectivityInternalRange) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1260,7 +1259,7 @@ func (n *jsiiProxy_NetworkConnectivityInternalRange) ImportFrom(id *string, prov
 	_jsii_.InvokeVoid(
 		n,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1273,7 +1272,7 @@ func (n *jsiiProxy_NetworkConnectivityInternalRange) InterpolationForAttribute(t
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1287,18 +1286,18 @@ func (n *jsiiProxy_NetworkConnectivityInternalRange) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (n *jsiiProxy_NetworkConnectivityInternalRange) MoveTo(moveTarget *string, index interface{}) {
+func (n *jsiiProxy_NetworkConnectivityInternalRange) MoveTo(moveTarget *string, index any) {
 	if err := n.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1309,7 +1308,7 @@ func (n *jsiiProxy_NetworkConnectivityInternalRange) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1320,7 +1319,7 @@ func (n *jsiiProxy_NetworkConnectivityInternalRange) OverrideLogicalId(newLogica
 	_jsii_.InvokeVoid(
 		n,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1331,7 +1330,7 @@ func (n *jsiiProxy_NetworkConnectivityInternalRange) PutAllocationOptions(value 
 	_jsii_.InvokeVoid(
 		n,
 		"putAllocationOptions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1342,7 +1341,7 @@ func (n *jsiiProxy_NetworkConnectivityInternalRange) PutMigration(value *Network
 	_jsii_.InvokeVoid(
 		n,
 		"putMigration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1353,7 +1352,7 @@ func (n *jsiiProxy_NetworkConnectivityInternalRange) PutTimeouts(value *NetworkC
 	_jsii_.InvokeVoid(
 		n,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1469,8 +1468,8 @@ func (n *jsiiProxy_NetworkConnectivityInternalRange) ResetTimeouts() {
 	)
 }
 
-func (n *jsiiProxy_NetworkConnectivityInternalRange) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (n *jsiiProxy_NetworkConnectivityInternalRange) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
@@ -1482,8 +1481,8 @@ func (n *jsiiProxy_NetworkConnectivityInternalRange) SynthesizeAttributes() *map
 	return returns
 }
 
-func (n *jsiiProxy_NetworkConnectivityInternalRange) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (n *jsiiProxy_NetworkConnectivityInternalRange) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
@@ -1495,8 +1494,8 @@ func (n *jsiiProxy_NetworkConnectivityInternalRange) SynthesizeHclAttributes() *
 	return returns
 }
 
-func (n *jsiiProxy_NetworkConnectivityInternalRange) ToHclTerraform() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkConnectivityInternalRange) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1508,8 +1507,8 @@ func (n *jsiiProxy_NetworkConnectivityInternalRange) ToHclTerraform() interface{
 	return returns
 }
 
-func (n *jsiiProxy_NetworkConnectivityInternalRange) ToMetadata() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkConnectivityInternalRange) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1534,8 +1533,8 @@ func (n *jsiiProxy_NetworkConnectivityInternalRange) ToString() *string {
 	return returns
 }
 
-func (n *jsiiProxy_NetworkConnectivityInternalRange) ToTerraform() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkConnectivityInternalRange) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1546,4 +1545,3 @@ func (n *jsiiProxy_NetworkConnectivityInternalRange) ToTerraform() interface{} {
 
 	return returns
 }
-

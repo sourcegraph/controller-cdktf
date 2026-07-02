@@ -98,7 +98,7 @@ func (a *jsiiProxy_ApigeeOrganizationPropertiesPropertyOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_ApigeeOrganizationPropertiesPropertyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ApigeeOrganizationPropertiesPropertyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ApigeeOrganizationPropertiesPropertyOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_ApigeeOrganizationPropertiesPropertyOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ApigeeOrganizationPropertiesPropertyOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewApigeeOrganizationPropertiesPropertyOutputReferenceParameters(te
 
 	return nil
 }
-

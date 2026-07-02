@@ -98,7 +98,7 @@ func (a *jsiiProxy_AppEngineStandardAppVersionVpcAccessConnectorOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_AppEngineStandardAppVersionVpcAccessConnectorOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppEngineStandardAppVersionVpcAccessConnectorOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewAppEngineStandardAppVersionVpcAccessConnectorOutputReferencePara
 
 	return nil
 }
-

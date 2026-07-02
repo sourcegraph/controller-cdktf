@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleMonitoringUptimeCheckIps.DataGoogleMonitoringUptimeCheckIps",
-		reflect.TypeOf((*DataGoogleMonitoringUptimeCheckIps)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleMonitoringUptimeCheckIps](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -49,7 +49,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "uptimeCheckIps", GoGetter: "UptimeCheckIps"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleMonitoringUptimeCheckIps{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -57,15 +57,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleMonitoringUptimeCheckIps.DataGoogleMonitoringUptimeCheckIpsConfig",
-		reflect.TypeOf((*DataGoogleMonitoringUptimeCheckIpsConfig)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleMonitoringUptimeCheckIpsConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleMonitoringUptimeCheckIps.DataGoogleMonitoringUptimeCheckIpsUptimeCheckIps",
-		reflect.TypeOf((*DataGoogleMonitoringUptimeCheckIpsUptimeCheckIps)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleMonitoringUptimeCheckIpsUptimeCheckIps](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleMonitoringUptimeCheckIps.DataGoogleMonitoringUptimeCheckIpsUptimeCheckIpsList",
-		reflect.TypeOf((*DataGoogleMonitoringUptimeCheckIpsUptimeCheckIpsList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleMonitoringUptimeCheckIpsUptimeCheckIpsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -78,7 +78,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleMonitoringUptimeCheckIpsUptimeCheckIpsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -86,7 +86,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleMonitoringUptimeCheckIps.DataGoogleMonitoringUptimeCheckIpsUptimeCheckIpsOutputReference",
-		reflect.TypeOf((*DataGoogleMonitoringUptimeCheckIpsUptimeCheckIpsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleMonitoringUptimeCheckIpsUptimeCheckIpsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -113,7 +113,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleMonitoringUptimeCheckIpsUptimeCheckIpsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

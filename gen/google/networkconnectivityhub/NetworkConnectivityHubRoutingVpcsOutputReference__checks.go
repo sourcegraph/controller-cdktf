@@ -98,7 +98,7 @@ func (n *jsiiProxy_NetworkConnectivityHubRoutingVpcsOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_NetworkConnectivityHubRoutingVpcsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkConnectivityHubRoutingVpcsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewNetworkConnectivityHubRoutingVpcsOutputReferenceParameters(terra
 
 	return nil
 }
-

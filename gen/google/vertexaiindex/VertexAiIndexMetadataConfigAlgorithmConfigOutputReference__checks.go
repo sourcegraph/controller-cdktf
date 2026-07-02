@@ -120,7 +120,7 @@ func (v *jsiiProxy_VertexAiIndexMetadataConfigAlgorithmConfigOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_VertexAiIndexMetadataConfigAlgorithmConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_VertexAiIndexMetadataConfigAlgorithmConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -220,4 +220,3 @@ func validateNewVertexAiIndexMetadataConfigAlgorithmConfigOutputReferenceParamet
 
 	return nil
 }
-

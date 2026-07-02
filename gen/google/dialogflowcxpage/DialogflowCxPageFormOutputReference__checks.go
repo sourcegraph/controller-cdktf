@@ -90,7 +90,7 @@ func (d *jsiiProxy_DialogflowCxPageFormOutputReference) validateInterpolationFor
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxPageFormOutputReference) validatePutParametersParameters(value interface{}) error {
+func (d *jsiiProxy_DialogflowCxPageFormOutputReference) validatePutParametersParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (d *jsiiProxy_DialogflowCxPageFormOutputReference) validateResolveParameter
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxPageFormOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxPageFormOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -229,4 +229,3 @@ func validateNewDialogflowCxPageFormOutputReferenceParameters(terraformResource 
 
 	return nil
 }
-

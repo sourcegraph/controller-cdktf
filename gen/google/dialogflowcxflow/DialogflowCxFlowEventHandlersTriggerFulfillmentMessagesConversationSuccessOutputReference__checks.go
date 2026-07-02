@@ -98,7 +98,7 @@ func (d *jsiiProxy_DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesConver
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesConversationSuccessOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesConversationSuccessOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDialogflowCxFlowEventHandlersTriggerFulfillmentMessagesConversat
 
 	return nil
 }
-

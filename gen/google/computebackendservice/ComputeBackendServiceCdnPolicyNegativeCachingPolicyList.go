@@ -17,8 +17,8 @@ type ComputeBackendServiceCdnPolicyNegativeCachingPolicyList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type ComputeBackendServiceCdnPolicyNegativeCachingPolicyList interface {
 	Get(index *float64) ComputeBackendServiceCdnPolicyNegativeCachingPolicyOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_ComputeBackendServiceCdnPolicyNegativeCachingPolicyList) Fqn(
 	return returns
 }
 
-func (j *jsiiProxy_ComputeBackendServiceCdnPolicyNegativeCachingPolicyList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeBackendServiceCdnPolicyNegativeCachingPolicyList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_ComputeBackendServiceCdnPolicyNegativeCachingPolicyList) Wrap
 	return returns
 }
 
-
 func NewComputeBackendServiceCdnPolicyNegativeCachingPolicyList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeBackendServiceCdnPolicyNegativeCachingPolicyList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewComputeBackendServiceCdnPolicyNegativeCachingPolicyList(terraformResourc
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyNegativeCachingPolicyList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewComputeBackendServiceCdnPolicyNegativeCachingPolicyList_Override(c Compu
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyNegativeCachingPolicyList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputeBackendServiceCdnPolicyNegativeCachingPolicyList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ComputeBackendServiceCdnPolicyNegativeCachingPolicyList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_ComputeBackendServiceCdnPolicyNegativeCachingPolicyList)SetIn
 	)
 }
 
-func (j *jsiiProxy_ComputeBackendServiceCdnPolicyNegativeCachingPolicyList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ComputeBackendServiceCdnPolicyNegativeCachingPolicyList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_ComputeBackendServiceCdnPolicyNegativeCachingPolicyList)SetTe
 	)
 }
 
-func (j *jsiiProxy_ComputeBackendServiceCdnPolicyNegativeCachingPolicyList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeBackendServiceCdnPolicyNegativeCachingPolicyList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_ComputeBackendServiceCdnPolicyNegativeCachingPolicyList)SetTe
 	)
 }
 
-func (j *jsiiProxy_ComputeBackendServiceCdnPolicyNegativeCachingPolicyList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ComputeBackendServiceCdnPolicyNegativeCachingPolicyList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (c *jsiiProxy_ComputeBackendServiceCdnPolicyNegativeCachingPolicyList) AllW
 	_jsii_.Invoke(
 		c,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (c *jsiiProxy_ComputeBackendServiceCdnPolicyNegativeCachingPolicyList) Get(
 	_jsii_.Invoke(
 		c,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ComputeBackendServiceCdnPolicyNegativeCachingPolicyList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ComputeBackendServiceCdnPolicyNegativeCachingPolicyList) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (c *jsiiProxy_ComputeBackendServiceCdnPolicyNegativeCachingPolicyList) ToSt
 
 	return returns
 }
-

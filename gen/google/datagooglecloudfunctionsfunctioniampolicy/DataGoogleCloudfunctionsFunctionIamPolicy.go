@@ -18,11 +18,11 @@ type DataGoogleCloudfunctionsFunctionIamPolicy interface {
 	SetCloudFunction(val *string)
 	CloudFunctionInput() *string
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -54,20 +54,20 @@ type DataGoogleCloudfunctionsFunctionIamPolicy interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -95,18 +95,18 @@ type DataGoogleCloudfunctionsFunctionIamPolicy interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetRegion()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataGoogleCloudfunctionsFunctionIamPolicy
@@ -144,8 +144,8 @@ func (j *jsiiProxy_DataGoogleCloudfunctionsFunctionIamPolicy) CloudFunctionInput
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleCloudfunctionsFunctionIamPolicy) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleCloudfunctionsFunctionIamPolicy) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -154,8 +154,8 @@ func (j *jsiiProxy_DataGoogleCloudfunctionsFunctionIamPolicy) ConstructNodeMetad
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleCloudfunctionsFunctionIamPolicy) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleCloudfunctionsFunctionIamPolicy) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -294,8 +294,8 @@ func (j *jsiiProxy_DataGoogleCloudfunctionsFunctionIamPolicy) Provider() cdktf.T
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleCloudfunctionsFunctionIamPolicy) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleCloudfunctionsFunctionIamPolicy) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -334,8 +334,8 @@ func (j *jsiiProxy_DataGoogleCloudfunctionsFunctionIamPolicy) TerraformGenerator
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleCloudfunctionsFunctionIamPolicy) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleCloudfunctionsFunctionIamPolicy) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -354,7 +354,6 @@ func (j *jsiiProxy_DataGoogleCloudfunctionsFunctionIamPolicy) TerraformResourceT
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/cloudfunctions_function_iam_policy google_cloudfunctions_function_iam_policy} Data Source.
 func NewDataGoogleCloudfunctionsFunctionIamPolicy(scope constructs.Construct, id *string, config *DataGoogleCloudfunctionsFunctionIamPolicyConfig) DataGoogleCloudfunctionsFunctionIamPolicy {
 	_init_.Initialize()
@@ -366,7 +365,7 @@ func NewDataGoogleCloudfunctionsFunctionIamPolicy(scope constructs.Construct, id
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleCloudfunctionsFunctionIamPolicy.DataGoogleCloudfunctionsFunctionIamPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -379,12 +378,12 @@ func NewDataGoogleCloudfunctionsFunctionIamPolicy_Override(d DataGoogleCloudfunc
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleCloudfunctionsFunctionIamPolicy.DataGoogleCloudfunctionsFunctionIamPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataGoogleCloudfunctionsFunctionIamPolicy)SetCloudFunction(val *string) {
+func (j *jsiiProxy_DataGoogleCloudfunctionsFunctionIamPolicy) SetCloudFunction(val *string) {
 	if err := j.validateSetCloudFunctionParameters(val); err != nil {
 		panic(err)
 	}
@@ -395,7 +394,7 @@ func (j *jsiiProxy_DataGoogleCloudfunctionsFunctionIamPolicy)SetCloudFunction(va
 	)
 }
 
-func (j *jsiiProxy_DataGoogleCloudfunctionsFunctionIamPolicy)SetCount(val interface{}) {
+func (j *jsiiProxy_DataGoogleCloudfunctionsFunctionIamPolicy) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -406,7 +405,7 @@ func (j *jsiiProxy_DataGoogleCloudfunctionsFunctionIamPolicy)SetCount(val interf
 	)
 }
 
-func (j *jsiiProxy_DataGoogleCloudfunctionsFunctionIamPolicy)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataGoogleCloudfunctionsFunctionIamPolicy) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -414,7 +413,7 @@ func (j *jsiiProxy_DataGoogleCloudfunctionsFunctionIamPolicy)SetDependsOn(val *[
 	)
 }
 
-func (j *jsiiProxy_DataGoogleCloudfunctionsFunctionIamPolicy)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGoogleCloudfunctionsFunctionIamPolicy) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -422,7 +421,7 @@ func (j *jsiiProxy_DataGoogleCloudfunctionsFunctionIamPolicy)SetForEach(val cdkt
 	)
 }
 
-func (j *jsiiProxy_DataGoogleCloudfunctionsFunctionIamPolicy)SetId(val *string) {
+func (j *jsiiProxy_DataGoogleCloudfunctionsFunctionIamPolicy) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -433,7 +432,7 @@ func (j *jsiiProxy_DataGoogleCloudfunctionsFunctionIamPolicy)SetId(val *string) 
 	)
 }
 
-func (j *jsiiProxy_DataGoogleCloudfunctionsFunctionIamPolicy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGoogleCloudfunctionsFunctionIamPolicy) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -444,7 +443,7 @@ func (j *jsiiProxy_DataGoogleCloudfunctionsFunctionIamPolicy)SetLifecycle(val *c
 	)
 }
 
-func (j *jsiiProxy_DataGoogleCloudfunctionsFunctionIamPolicy)SetProject(val *string) {
+func (j *jsiiProxy_DataGoogleCloudfunctionsFunctionIamPolicy) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -455,7 +454,7 @@ func (j *jsiiProxy_DataGoogleCloudfunctionsFunctionIamPolicy)SetProject(val *str
 	)
 }
 
-func (j *jsiiProxy_DataGoogleCloudfunctionsFunctionIamPolicy)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGoogleCloudfunctionsFunctionIamPolicy) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -463,7 +462,7 @@ func (j *jsiiProxy_DataGoogleCloudfunctionsFunctionIamPolicy)SetProvider(val cdk
 	)
 }
 
-func (j *jsiiProxy_DataGoogleCloudfunctionsFunctionIamPolicy)SetRegion(val *string) {
+func (j *jsiiProxy_DataGoogleCloudfunctionsFunctionIamPolicy) SetRegion(val *string) {
 	if err := j.validateSetRegionParameters(val); err != nil {
 		panic(err)
 	}
@@ -486,7 +485,7 @@ func DataGoogleCloudfunctionsFunctionIamPolicy_GenerateConfigForImport(scope con
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleCloudfunctionsFunctionIamPolicy.DataGoogleCloudfunctionsFunctionIamPolicy",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -510,7 +509,7 @@ func DataGoogleCloudfunctionsFunctionIamPolicy_GenerateConfigForImport(scope con
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataGoogleCloudfunctionsFunctionIamPolicy_IsConstruct(x interface{}) *bool {
+func DataGoogleCloudfunctionsFunctionIamPolicy_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleCloudfunctionsFunctionIamPolicy_IsConstructParameters(x); err != nil {
@@ -521,7 +520,7 @@ func DataGoogleCloudfunctionsFunctionIamPolicy_IsConstruct(x interface{}) *bool 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleCloudfunctionsFunctionIamPolicy.DataGoogleCloudfunctionsFunctionIamPolicy",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -529,7 +528,7 @@ func DataGoogleCloudfunctionsFunctionIamPolicy_IsConstruct(x interface{}) *bool 
 }
 
 // Experimental.
-func DataGoogleCloudfunctionsFunctionIamPolicy_IsTerraformDataSource(x interface{}) *bool {
+func DataGoogleCloudfunctionsFunctionIamPolicy_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleCloudfunctionsFunctionIamPolicy_IsTerraformDataSourceParameters(x); err != nil {
@@ -540,7 +539,7 @@ func DataGoogleCloudfunctionsFunctionIamPolicy_IsTerraformDataSource(x interface
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleCloudfunctionsFunctionIamPolicy.DataGoogleCloudfunctionsFunctionIamPolicy",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -548,7 +547,7 @@ func DataGoogleCloudfunctionsFunctionIamPolicy_IsTerraformDataSource(x interface
 }
 
 // Experimental.
-func DataGoogleCloudfunctionsFunctionIamPolicy_IsTerraformElement(x interface{}) *bool {
+func DataGoogleCloudfunctionsFunctionIamPolicy_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleCloudfunctionsFunctionIamPolicy_IsTerraformElementParameters(x); err != nil {
@@ -559,7 +558,7 @@ func DataGoogleCloudfunctionsFunctionIamPolicy_IsTerraformElement(x interface{})
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleCloudfunctionsFunctionIamPolicy.DataGoogleCloudfunctionsFunctionIamPolicy",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -577,27 +576,27 @@ func DataGoogleCloudfunctionsFunctionIamPolicy_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleCloudfunctionsFunctionIamPolicy) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataGoogleCloudfunctionsFunctionIamPolicy) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataGoogleCloudfunctionsFunctionIamPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataGoogleCloudfunctionsFunctionIamPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -613,7 +612,7 @@ func (d *jsiiProxy_DataGoogleCloudfunctionsFunctionIamPolicy) GetBooleanAttribut
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -629,7 +628,7 @@ func (d *jsiiProxy_DataGoogleCloudfunctionsFunctionIamPolicy) GetBooleanMapAttri
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -645,7 +644,7 @@ func (d *jsiiProxy_DataGoogleCloudfunctionsFunctionIamPolicy) GetListAttribute(t
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -661,7 +660,7 @@ func (d *jsiiProxy_DataGoogleCloudfunctionsFunctionIamPolicy) GetNumberAttribute
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -677,7 +676,7 @@ func (d *jsiiProxy_DataGoogleCloudfunctionsFunctionIamPolicy) GetNumberListAttri
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -693,7 +692,7 @@ func (d *jsiiProxy_DataGoogleCloudfunctionsFunctionIamPolicy) GetNumberMapAttrib
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -709,7 +708,7 @@ func (d *jsiiProxy_DataGoogleCloudfunctionsFunctionIamPolicy) GetStringAttribute
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -725,7 +724,7 @@ func (d *jsiiProxy_DataGoogleCloudfunctionsFunctionIamPolicy) GetStringMapAttrib
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -741,7 +740,7 @@ func (d *jsiiProxy_DataGoogleCloudfunctionsFunctionIamPolicy) InterpolationForAt
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -755,7 +754,7 @@ func (d *jsiiProxy_DataGoogleCloudfunctionsFunctionIamPolicy) OverrideLogicalId(
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -791,8 +790,8 @@ func (d *jsiiProxy_DataGoogleCloudfunctionsFunctionIamPolicy) ResetRegion() {
 	)
 }
 
-func (d *jsiiProxy_DataGoogleCloudfunctionsFunctionIamPolicy) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleCloudfunctionsFunctionIamPolicy) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -804,8 +803,8 @@ func (d *jsiiProxy_DataGoogleCloudfunctionsFunctionIamPolicy) SynthesizeAttribut
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleCloudfunctionsFunctionIamPolicy) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleCloudfunctionsFunctionIamPolicy) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -817,8 +816,8 @@ func (d *jsiiProxy_DataGoogleCloudfunctionsFunctionIamPolicy) SynthesizeHclAttri
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleCloudfunctionsFunctionIamPolicy) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleCloudfunctionsFunctionIamPolicy) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -830,8 +829,8 @@ func (d *jsiiProxy_DataGoogleCloudfunctionsFunctionIamPolicy) ToHclTerraform() i
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleCloudfunctionsFunctionIamPolicy) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleCloudfunctionsFunctionIamPolicy) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -856,8 +855,8 @@ func (d *jsiiProxy_DataGoogleCloudfunctionsFunctionIamPolicy) ToString() *string
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleCloudfunctionsFunctionIamPolicy) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleCloudfunctionsFunctionIamPolicy) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -868,4 +867,3 @@ func (d *jsiiProxy_DataGoogleCloudfunctionsFunctionIamPolicy) ToTerraform() inte
 
 	return returns
 }
-

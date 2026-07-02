@@ -98,7 +98,7 @@ func (n *jsiiProxy_NetworkServicesHttpRouteRulesActionFaultInjectionPolicyDelayO
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesHttpRouteRulesActionFaultInjectionPolicyDelayOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkServicesHttpRouteRulesActionFaultInjectionPolicyDelayOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewNetworkServicesHttpRouteRulesActionFaultInjectionPolicyDelayOutp
 
 	return nil
 }
-

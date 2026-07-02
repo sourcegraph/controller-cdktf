@@ -98,7 +98,7 @@ func (c *jsiiProxy_ColabNotebookExecutionCustomEnvironmentSpecNetworkSpecOutputR
 	return nil
 }
 
-func (j *jsiiProxy_ColabNotebookExecutionCustomEnvironmentSpecNetworkSpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ColabNotebookExecutionCustomEnvironmentSpecNetworkSpecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ColabNotebookExecutionCustomEnvironmentSpecNetworkSpecOutputR
 	return nil
 }
 
-func (j *jsiiProxy_ColabNotebookExecutionCustomEnvironmentSpecNetworkSpecOutputReference) validateSetEnableInternetAccessParameters(val interface{}) error {
+func (j *jsiiProxy_ColabNotebookExecutionCustomEnvironmentSpecNetworkSpecOutputReference) validateSetEnableInternetAccessParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -234,4 +234,3 @@ func validateNewColabNotebookExecutionCustomEnvironmentSpecNetworkSpecOutputRefe
 
 	return nil
 }
-

@@ -16,15 +16,15 @@ type DataplexLake interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -74,31 +74,31 @@ type DataplexLake interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ServiceAccount() *string
 	State() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() DataplexLakeTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Uid() *string
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -116,7 +116,7 @@ type DataplexLake interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -128,7 +128,7 @@ type DataplexLake interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -147,17 +147,17 @@ type DataplexLake interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataplexLake
@@ -185,8 +185,8 @@ func (j *jsiiProxy_DataplexLake) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DataplexLake) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataplexLake) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -195,8 +195,8 @@ func (j *jsiiProxy_DataplexLake) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataplexLake) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataplexLake) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -205,8 +205,8 @@ func (j *jsiiProxy_DataplexLake) ConstructNodeMetadata() *map[string]interface{}
 	return returns
 }
 
-func (j *jsiiProxy_DataplexLake) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataplexLake) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -475,8 +475,8 @@ func (j *jsiiProxy_DataplexLake) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DataplexLake) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_DataplexLake) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -485,8 +485,8 @@ func (j *jsiiProxy_DataplexLake) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataplexLake) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataplexLake) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -535,8 +535,8 @@ func (j *jsiiProxy_DataplexLake) TerraformLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_DataplexLake) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataplexLake) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -565,8 +565,8 @@ func (j *jsiiProxy_DataplexLake) Timeouts() DataplexLakeTimeoutsOutputReference 
 	return returns
 }
 
-func (j *jsiiProxy_DataplexLake) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataplexLake) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -595,7 +595,6 @@ func (j *jsiiProxy_DataplexLake) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_lake google_dataplex_lake} Resource.
 func NewDataplexLake(scope constructs.Construct, id *string, config *DataplexLakeConfig) DataplexLake {
 	_init_.Initialize()
@@ -607,7 +606,7 @@ func NewDataplexLake(scope constructs.Construct, id *string, config *DataplexLak
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataplexLake.DataplexLake",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -620,12 +619,12 @@ func NewDataplexLake_Override(d DataplexLake, scope constructs.Construct, id *st
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataplexLake.DataplexLake",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataplexLake)SetConnection(val interface{}) {
+func (j *jsiiProxy_DataplexLake) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -636,7 +635,7 @@ func (j *jsiiProxy_DataplexLake)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataplexLake)SetCount(val interface{}) {
+func (j *jsiiProxy_DataplexLake) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -647,7 +646,7 @@ func (j *jsiiProxy_DataplexLake)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataplexLake)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataplexLake) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -655,7 +654,7 @@ func (j *jsiiProxy_DataplexLake)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataplexLake)SetDescription(val *string) {
+func (j *jsiiProxy_DataplexLake) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -666,7 +665,7 @@ func (j *jsiiProxy_DataplexLake)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataplexLake)SetDisplayName(val *string) {
+func (j *jsiiProxy_DataplexLake) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -677,7 +676,7 @@ func (j *jsiiProxy_DataplexLake)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataplexLake)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataplexLake) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -685,7 +684,7 @@ func (j *jsiiProxy_DataplexLake)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_DataplexLake)SetId(val *string) {
+func (j *jsiiProxy_DataplexLake) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -696,7 +695,7 @@ func (j *jsiiProxy_DataplexLake)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataplexLake)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_DataplexLake) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -707,7 +706,7 @@ func (j *jsiiProxy_DataplexLake)SetLabels(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataplexLake)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataplexLake) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -718,7 +717,7 @@ func (j *jsiiProxy_DataplexLake)SetLifecycle(val *cdktf.TerraformResourceLifecyc
 	)
 }
 
-func (j *jsiiProxy_DataplexLake)SetLocation(val *string) {
+func (j *jsiiProxy_DataplexLake) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -729,7 +728,7 @@ func (j *jsiiProxy_DataplexLake)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataplexLake)SetName(val *string) {
+func (j *jsiiProxy_DataplexLake) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -740,7 +739,7 @@ func (j *jsiiProxy_DataplexLake)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataplexLake)SetProject(val *string) {
+func (j *jsiiProxy_DataplexLake) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -751,7 +750,7 @@ func (j *jsiiProxy_DataplexLake)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataplexLake)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataplexLake) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -759,7 +758,7 @@ func (j *jsiiProxy_DataplexLake)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_DataplexLake)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_DataplexLake) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -782,7 +781,7 @@ func DataplexLake_GenerateConfigForImport(scope constructs.Construct, importToId
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataplexLake.DataplexLake",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -806,7 +805,7 @@ func DataplexLake_GenerateConfigForImport(scope constructs.Construct, importToId
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataplexLake_IsConstruct(x interface{}) *bool {
+func DataplexLake_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataplexLake_IsConstructParameters(x); err != nil {
@@ -817,7 +816,7 @@ func DataplexLake_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataplexLake.DataplexLake",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -825,7 +824,7 @@ func DataplexLake_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataplexLake_IsTerraformElement(x interface{}) *bool {
+func DataplexLake_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataplexLake_IsTerraformElementParameters(x); err != nil {
@@ -836,7 +835,7 @@ func DataplexLake_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataplexLake.DataplexLake",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -844,7 +843,7 @@ func DataplexLake_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func DataplexLake_IsTerraformResource(x interface{}) *bool {
+func DataplexLake_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataplexLake_IsTerraformResourceParameters(x); err != nil {
@@ -855,7 +854,7 @@ func DataplexLake_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataplexLake.DataplexLake",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -880,31 +879,31 @@ func (d *jsiiProxy_DataplexLake) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (d *jsiiProxy_DataplexLake) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataplexLake) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataplexLake) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataplexLake) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -920,7 +919,7 @@ func (d *jsiiProxy_DataplexLake) GetBooleanAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -936,7 +935,7 @@ func (d *jsiiProxy_DataplexLake) GetBooleanMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -952,7 +951,7 @@ func (d *jsiiProxy_DataplexLake) GetListAttribute(terraformAttribute *string) *[
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -968,7 +967,7 @@ func (d *jsiiProxy_DataplexLake) GetNumberAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -984,7 +983,7 @@ func (d *jsiiProxy_DataplexLake) GetNumberListAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1000,7 +999,7 @@ func (d *jsiiProxy_DataplexLake) GetNumberMapAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1016,7 +1015,7 @@ func (d *jsiiProxy_DataplexLake) GetStringAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1032,15 +1031,15 @@ func (d *jsiiProxy_DataplexLake) GetStringMapAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataplexLake) HasResourceMove() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataplexLake) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1059,7 +1058,7 @@ func (d *jsiiProxy_DataplexLake) ImportFrom(id *string, provider cdktf.Terraform
 	_jsii_.InvokeVoid(
 		d,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1072,7 +1071,7 @@ func (d *jsiiProxy_DataplexLake) InterpolationForAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1086,18 +1085,18 @@ func (d *jsiiProxy_DataplexLake) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (d *jsiiProxy_DataplexLake) MoveTo(moveTarget *string, index interface{}) {
+func (d *jsiiProxy_DataplexLake) MoveTo(moveTarget *string, index any) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1108,7 +1107,7 @@ func (d *jsiiProxy_DataplexLake) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1119,7 +1118,7 @@ func (d *jsiiProxy_DataplexLake) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1130,7 +1129,7 @@ func (d *jsiiProxy_DataplexLake) PutMetastore(value *DataplexLakeMetastore) {
 	_jsii_.InvokeVoid(
 		d,
 		"putMetastore",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1141,7 +1140,7 @@ func (d *jsiiProxy_DataplexLake) PutTimeouts(value *DataplexLakeTimeouts) {
 	_jsii_.InvokeVoid(
 		d,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1209,8 +1208,8 @@ func (d *jsiiProxy_DataplexLake) ResetTimeouts() {
 	)
 }
 
-func (d *jsiiProxy_DataplexLake) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataplexLake) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1222,8 +1221,8 @@ func (d *jsiiProxy_DataplexLake) SynthesizeAttributes() *map[string]interface{} 
 	return returns
 }
 
-func (d *jsiiProxy_DataplexLake) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataplexLake) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1235,8 +1234,8 @@ func (d *jsiiProxy_DataplexLake) SynthesizeHclAttributes() *map[string]interface
 	return returns
 }
 
-func (d *jsiiProxy_DataplexLake) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataplexLake) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1248,8 +1247,8 @@ func (d *jsiiProxy_DataplexLake) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataplexLake) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataplexLake) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1274,8 +1273,8 @@ func (d *jsiiProxy_DataplexLake) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataplexLake) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataplexLake) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1286,4 +1285,3 @@ func (d *jsiiProxy_DataplexLake) ToTerraform() interface{} {
 
 	return returns
 }
-

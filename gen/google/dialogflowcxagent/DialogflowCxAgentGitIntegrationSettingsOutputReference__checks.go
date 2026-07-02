@@ -109,7 +109,7 @@ func (d *jsiiProxy_DialogflowCxAgentGitIntegrationSettingsOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxAgentGitIntegrationSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxAgentGitIntegrationSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewDialogflowCxAgentGitIntegrationSettingsOutputReferenceParameters
 
 	return nil
 }
-

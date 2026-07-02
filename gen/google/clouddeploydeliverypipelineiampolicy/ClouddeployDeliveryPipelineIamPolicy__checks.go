@@ -19,7 +19,7 @@ func (c *jsiiProxy_ClouddeployDeliveryPipelineIamPolicy) validateAddMoveTargetPa
 	return nil
 }
 
-func (c *jsiiProxy_ClouddeployDeliveryPipelineIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_ClouddeployDeliveryPipelineIamPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_ClouddeployDeliveryPipelineIamPolicy) validateMoveFromIdParam
 	return nil
 }
 
-func (c *jsiiProxy_ClouddeployDeliveryPipelineIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_ClouddeployDeliveryPipelineIamPolicy) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateClouddeployDeliveryPipelineIamPolicy_GenerateConfigForImportParamet
 	return nil
 }
 
-func validateClouddeployDeliveryPipelineIamPolicy_IsConstructParameters(x interface{}) error {
+func validateClouddeployDeliveryPipelineIamPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateClouddeployDeliveryPipelineIamPolicy_IsConstructParameters(x interf
 	return nil
 }
 
-func validateClouddeployDeliveryPipelineIamPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateClouddeployDeliveryPipelineIamPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateClouddeployDeliveryPipelineIamPolicy_IsTerraformElementParameters(x
 	return nil
 }
 
-func validateClouddeployDeliveryPipelineIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+func validateClouddeployDeliveryPipelineIamPolicy_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateClouddeployDeliveryPipelineIamPolicy_IsTerraformResourceParameters(
 	return nil
 }
 
-func (j *jsiiProxy_ClouddeployDeliveryPipelineIamPolicy) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ClouddeployDeliveryPipelineIamPolicy) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_ClouddeployDeliveryPipelineIamPolicy) validateSetConnectionPa
 	return nil
 }
 
-func (j *jsiiProxy_ClouddeployDeliveryPipelineIamPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ClouddeployDeliveryPipelineIamPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -382,7 +382,7 @@ func (j *jsiiProxy_ClouddeployDeliveryPipelineIamPolicy) validateSetProjectParam
 	return nil
 }
 
-func (j *jsiiProxy_ClouddeployDeliveryPipelineIamPolicy) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ClouddeployDeliveryPipelineIamPolicy) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -446,4 +446,3 @@ func validateNewClouddeployDeliveryPipelineIamPolicyParameters(scope constructs.
 
 	return nil
 }
-

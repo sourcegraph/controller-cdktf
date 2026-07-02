@@ -98,7 +98,7 @@ func (i *jsiiProxy_IamWorkforcePoolTimeoutsOutputReference) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_IamWorkforcePoolTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IamWorkforcePoolTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_IamWorkforcePoolTimeoutsOutputReference) validateSetDeletePar
 	return nil
 }
 
-func (j *jsiiProxy_IamWorkforcePoolTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_IamWorkforcePoolTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewIamWorkforcePoolTimeoutsOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (s *jsiiProxy_SpannerInstanceConfigTimeoutsOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_SpannerInstanceConfigTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SpannerInstanceConfigTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_SpannerInstanceConfigTimeoutsOutputReference) validateSetDele
 	return nil
 }
 
-func (j *jsiiProxy_SpannerInstanceConfigTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SpannerInstanceConfigTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewSpannerInstanceConfigTimeoutsOutputReferenceParameters(terraform
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (n *jsiiProxy_NetworkConnectivitySpokeTimeoutsOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_NetworkConnectivitySpokeTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkConnectivitySpokeTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_NetworkConnectivitySpokeTimeoutsOutputReference) validateSetD
 	return nil
 }
 
-func (j *jsiiProxy_NetworkConnectivitySpokeTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkConnectivitySpokeTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewNetworkConnectivitySpokeTimeoutsOutputReferenceParameters(terraf
 
 	return nil
 }
-

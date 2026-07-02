@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleDataLineageConfig.DataGoogleDataLineageConfig",
-		reflect.TypeOf((*DataGoogleDataLineageConfig)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleDataLineageConfig](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -55,7 +55,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleDataLineageConfig{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -63,15 +63,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleDataLineageConfig.DataGoogleDataLineageConfigConfig",
-		reflect.TypeOf((*DataGoogleDataLineageConfigConfig)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleDataLineageConfigConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleDataLineageConfig.DataGoogleDataLineageConfigIngestion",
-		reflect.TypeOf((*DataGoogleDataLineageConfigIngestion)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleDataLineageConfigIngestion](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleDataLineageConfig.DataGoogleDataLineageConfigIngestionList",
-		reflect.TypeOf((*DataGoogleDataLineageConfigIngestionList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleDataLineageConfigIngestionList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -84,7 +84,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleDataLineageConfigIngestionList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -92,7 +92,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleDataLineageConfig.DataGoogleDataLineageConfigIngestionOutputReference",
-		reflect.TypeOf((*DataGoogleDataLineageConfigIngestionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleDataLineageConfigIngestionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -117,7 +117,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleDataLineageConfigIngestionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -125,15 +125,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleDataLineageConfig.DataGoogleDataLineageConfigIngestionRule",
-		reflect.TypeOf((*DataGoogleDataLineageConfigIngestionRule)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleDataLineageConfigIngestionRule](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleDataLineageConfig.DataGoogleDataLineageConfigIngestionRuleIntegrationSelector",
-		reflect.TypeOf((*DataGoogleDataLineageConfigIngestionRuleIntegrationSelector)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleDataLineageConfigIngestionRuleIntegrationSelector](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleDataLineageConfig.DataGoogleDataLineageConfigIngestionRuleIntegrationSelectorList",
-		reflect.TypeOf((*DataGoogleDataLineageConfigIngestionRuleIntegrationSelectorList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleDataLineageConfigIngestionRuleIntegrationSelectorList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -146,7 +146,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleDataLineageConfigIngestionRuleIntegrationSelectorList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -154,7 +154,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleDataLineageConfig.DataGoogleDataLineageConfigIngestionRuleIntegrationSelectorOutputReference",
-		reflect.TypeOf((*DataGoogleDataLineageConfigIngestionRuleIntegrationSelectorOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleDataLineageConfigIngestionRuleIntegrationSelectorOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -179,7 +179,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleDataLineageConfigIngestionRuleIntegrationSelectorOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -187,11 +187,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleDataLineageConfig.DataGoogleDataLineageConfigIngestionRuleLineageEnablement",
-		reflect.TypeOf((*DataGoogleDataLineageConfigIngestionRuleLineageEnablement)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleDataLineageConfigIngestionRuleLineageEnablement](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleDataLineageConfig.DataGoogleDataLineageConfigIngestionRuleLineageEnablementList",
-		reflect.TypeOf((*DataGoogleDataLineageConfigIngestionRuleLineageEnablementList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleDataLineageConfigIngestionRuleLineageEnablementList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -204,7 +204,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleDataLineageConfigIngestionRuleLineageEnablementList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -212,7 +212,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleDataLineageConfig.DataGoogleDataLineageConfigIngestionRuleLineageEnablementOutputReference",
-		reflect.TypeOf((*DataGoogleDataLineageConfigIngestionRuleLineageEnablementOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleDataLineageConfigIngestionRuleLineageEnablementOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -237,7 +237,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleDataLineageConfigIngestionRuleLineageEnablementOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -245,7 +245,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleDataLineageConfig.DataGoogleDataLineageConfigIngestionRuleList",
-		reflect.TypeOf((*DataGoogleDataLineageConfigIngestionRuleList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleDataLineageConfigIngestionRuleList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -258,7 +258,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleDataLineageConfigIngestionRuleList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -266,7 +266,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleDataLineageConfig.DataGoogleDataLineageConfigIngestionRuleOutputReference",
-		reflect.TypeOf((*DataGoogleDataLineageConfigIngestionRuleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleDataLineageConfigIngestionRuleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -292,7 +292,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleDataLineageConfigIngestionRuleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

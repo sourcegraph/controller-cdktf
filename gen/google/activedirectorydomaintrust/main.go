@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.activeDirectoryDomainTrust.ActiveDirectoryDomainTrust",
-		reflect.TypeOf((*ActiveDirectoryDomainTrust)(nil)).Elem(),
+		reflect.TypeFor[ActiveDirectoryDomainTrust](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -78,7 +78,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "trustType", GoGetter: "TrustType"},
 			_jsii_.MemberProperty{JsiiProperty: "trustTypeInput", GoGetter: "TrustTypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ActiveDirectoryDomainTrust{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -86,15 +86,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.activeDirectoryDomainTrust.ActiveDirectoryDomainTrustConfig",
-		reflect.TypeOf((*ActiveDirectoryDomainTrustConfig)(nil)).Elem(),
+		reflect.TypeFor[ActiveDirectoryDomainTrustConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.activeDirectoryDomainTrust.ActiveDirectoryDomainTrustTimeouts",
-		reflect.TypeOf((*ActiveDirectoryDomainTrustTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ActiveDirectoryDomainTrustTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.activeDirectoryDomainTrust.ActiveDirectoryDomainTrustTimeoutsOutputReference",
-		reflect.TypeOf((*ActiveDirectoryDomainTrustTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ActiveDirectoryDomainTrustTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -127,7 +127,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ActiveDirectoryDomainTrustTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

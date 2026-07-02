@@ -98,7 +98,7 @@ func (b *jsiiProxy_BigqueryConnectionSparkMetastoreServiceConfigOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryConnectionSparkMetastoreServiceConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryConnectionSparkMetastoreServiceConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewBigqueryConnectionSparkMetastoreServiceConfigOutputReferencePara
 
 	return nil
 }
-

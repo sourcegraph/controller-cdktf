@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleDnsRecordSets.DataGoogleDnsRecordSets",
-		reflect.TypeOf((*DataGoogleDnsRecordSets)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleDnsRecordSets](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -60,7 +60,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleDnsRecordSets{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -68,15 +68,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleDnsRecordSets.DataGoogleDnsRecordSetsConfig",
-		reflect.TypeOf((*DataGoogleDnsRecordSetsConfig)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleDnsRecordSetsConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleDnsRecordSets.DataGoogleDnsRecordSetsRrsets",
-		reflect.TypeOf((*DataGoogleDnsRecordSetsRrsets)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleDnsRecordSetsRrsets](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleDnsRecordSets.DataGoogleDnsRecordSetsRrsetsList",
-		reflect.TypeOf((*DataGoogleDnsRecordSetsRrsetsList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleDnsRecordSetsRrsetsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -89,7 +89,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleDnsRecordSetsRrsetsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -97,7 +97,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleDnsRecordSets.DataGoogleDnsRecordSetsRrsetsOutputReference",
-		reflect.TypeOf((*DataGoogleDnsRecordSetsRrsetsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleDnsRecordSetsRrsetsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -125,7 +125,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "ttl", GoGetter: "Ttl"},
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleDnsRecordSetsRrsetsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

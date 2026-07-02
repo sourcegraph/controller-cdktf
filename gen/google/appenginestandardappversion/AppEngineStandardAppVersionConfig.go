@@ -6,9 +6,9 @@ import (
 
 type AppEngineStandardAppVersionConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type AppEngineStandardAppVersionConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// deployment block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/app_engine_standard_app_version#deployment AppEngineStandardAppVersion#deployment}
@@ -38,7 +38,7 @@ type AppEngineStandardAppVersionConfig struct {
 	// Allows App Engine second generation runtimes to access the legacy bundled services.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/app_engine_standard_app_version#app_engine_apis AppEngineStandardAppVersion#app_engine_apis}
-	AppEngineApis interface{} `field:"optional" json:"appEngineApis" yaml:"appEngineApis"`
+	AppEngineApis any `field:"optional" json:"appEngineApis" yaml:"appEngineApis"`
 	// automatic_scaling block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/app_engine_standard_app_version#automatic_scaling AppEngineStandardAppVersion#automatic_scaling}
@@ -50,7 +50,7 @@ type AppEngineStandardAppVersionConfig struct {
 	// If set to 'true', the service will be deleted if it is the last version.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/app_engine_standard_app_version#delete_service_on_destroy AppEngineStandardAppVersion#delete_service_on_destroy}
-	DeleteServiceOnDestroy interface{} `field:"optional" json:"deleteServiceOnDestroy" yaml:"deleteServiceOnDestroy"`
+	DeleteServiceOnDestroy any `field:"optional" json:"deleteServiceOnDestroy" yaml:"deleteServiceOnDestroy"`
 	// Environment variables available to the application.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/app_engine_standard_app_version#env_variables AppEngineStandardAppVersion#env_variables}
@@ -58,7 +58,7 @@ type AppEngineStandardAppVersionConfig struct {
 	// handlers block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/app_engine_standard_app_version#handlers AppEngineStandardAppVersion#handlers}
-	Handlers interface{} `field:"optional" json:"handlers" yaml:"handlers"`
+	Handlers any `field:"optional" json:"handlers" yaml:"handlers"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/app_engine_standard_app_version#id AppEngineStandardAppVersion#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -82,7 +82,7 @@ type AppEngineStandardAppVersionConfig struct {
 	// libraries block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/app_engine_standard_app_version#libraries AppEngineStandardAppVersion#libraries}
-	Libraries interface{} `field:"optional" json:"libraries" yaml:"libraries"`
+	Libraries any `field:"optional" json:"libraries" yaml:"libraries"`
 	// manual_scaling block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/app_engine_standard_app_version#manual_scaling AppEngineStandardAppVersion#manual_scaling}
@@ -90,7 +90,7 @@ type AppEngineStandardAppVersionConfig struct {
 	// If set to 'true', the application version will not be deleted.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/app_engine_standard_app_version#noop_on_destroy AppEngineStandardAppVersion#noop_on_destroy}
-	NoopOnDestroy interface{} `field:"optional" json:"noopOnDestroy" yaml:"noopOnDestroy"`
+	NoopOnDestroy any `field:"optional" json:"noopOnDestroy" yaml:"noopOnDestroy"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/app_engine_standard_app_version#project AppEngineStandardAppVersion#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// The version of the API in the given runtime environment.
@@ -109,7 +109,7 @@ type AppEngineStandardAppVersionConfig struct {
 	// Whether multiple requests can be dispatched to this version at once.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/app_engine_standard_app_version#threadsafe AppEngineStandardAppVersion#threadsafe}
-	Threadsafe interface{} `field:"optional" json:"threadsafe" yaml:"threadsafe"`
+	Threadsafe any `field:"optional" json:"threadsafe" yaml:"threadsafe"`
 	// timeouts block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/app_engine_standard_app_version#timeouts AppEngineStandardAppVersion#timeouts}
@@ -125,4 +125,3 @@ type AppEngineStandardAppVersionConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/app_engine_standard_app_version#vpc_access_connector AppEngineStandardAppVersion#vpc_access_connector}
 	VpcAccessConnector *AppEngineStandardAppVersionVpcAccessConnector `field:"optional" json:"vpcAccessConnector" yaml:"vpcAccessConnector"`
 }
-

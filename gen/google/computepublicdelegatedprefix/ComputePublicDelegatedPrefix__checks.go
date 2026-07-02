@@ -19,7 +19,7 @@ func (c *jsiiProxy_ComputePublicDelegatedPrefix) validateAddMoveTargetParameters
 	return nil
 }
 
-func (c *jsiiProxy_ComputePublicDelegatedPrefix) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_ComputePublicDelegatedPrefix) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_ComputePublicDelegatedPrefix) validateMoveFromIdParameters(id
 	return nil
 }
 
-func (c *jsiiProxy_ComputePublicDelegatedPrefix) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_ComputePublicDelegatedPrefix) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateComputePublicDelegatedPrefix_GenerateConfigForImportParameters(scop
 	return nil
 }
 
-func validateComputePublicDelegatedPrefix_IsConstructParameters(x interface{}) error {
+func validateComputePublicDelegatedPrefix_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateComputePublicDelegatedPrefix_IsConstructParameters(x interface{}) e
 	return nil
 }
 
-func validateComputePublicDelegatedPrefix_IsTerraformElementParameters(x interface{}) error {
+func validateComputePublicDelegatedPrefix_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateComputePublicDelegatedPrefix_IsTerraformElementParameters(x interfa
 	return nil
 }
 
-func validateComputePublicDelegatedPrefix_IsTerraformResourceParameters(x interface{}) error {
+func validateComputePublicDelegatedPrefix_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_ComputePublicDelegatedPrefix) validateSetAllocatablePrefixLen
 	return nil
 }
 
-func (j *jsiiProxy_ComputePublicDelegatedPrefix) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ComputePublicDelegatedPrefix) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_ComputePublicDelegatedPrefix) validateSetConnectionParameters
 	return nil
 }
 
-func (j *jsiiProxy_ComputePublicDelegatedPrefix) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ComputePublicDelegatedPrefix) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -377,7 +377,7 @@ func (j *jsiiProxy_ComputePublicDelegatedPrefix) validateSetIpCidrRangeParameter
 	return nil
 }
 
-func (j *jsiiProxy_ComputePublicDelegatedPrefix) validateSetIsLiveMigrationParameters(val interface{}) error {
+func (j *jsiiProxy_ComputePublicDelegatedPrefix) validateSetIsLiveMigrationParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -437,7 +437,7 @@ func (j *jsiiProxy_ComputePublicDelegatedPrefix) validateSetProjectParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_ComputePublicDelegatedPrefix) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ComputePublicDelegatedPrefix) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -509,4 +509,3 @@ func validateNewComputePublicDelegatedPrefixParameters(scope constructs.Construc
 
 	return nil
 }
-

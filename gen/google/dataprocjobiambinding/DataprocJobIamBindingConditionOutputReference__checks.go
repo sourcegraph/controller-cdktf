@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataprocJobIamBindingConditionOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_DataprocJobIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocJobIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewDataprocJobIamBindingConditionOutputReferenceParameters(terrafor
 
 	return nil
 }
-

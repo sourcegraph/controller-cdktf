@@ -90,7 +90,7 @@ func (c *jsiiProxy_ComputeRegionSecurityPolicyRulesPreconfiguredWafConfigOutputR
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionSecurityPolicyRulesPreconfiguredWafConfigOutputReference) validatePutExclusionParameters(value interface{}) error {
+func (c *jsiiProxy_ComputeRegionSecurityPolicyRulesPreconfiguredWafConfigOutputReference) validatePutExclusionParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (c *jsiiProxy_ComputeRegionSecurityPolicyRulesPreconfiguredWafConfigOutputR
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionSecurityPolicyRulesPreconfiguredWafConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionSecurityPolicyRulesPreconfiguredWafConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -229,4 +229,3 @@ func validateNewComputeRegionSecurityPolicyRulesPreconfiguredWafConfigOutputRefe
 
 	return nil
 }
-

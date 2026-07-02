@@ -109,7 +109,7 @@ func (f *jsiiProxy_FirebaseAppHostingDomainServeOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_FirebaseAppHostingDomainServeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_FirebaseAppHostingDomainServeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewFirebaseAppHostingDomainServeOutputReferenceParameters(terraform
 
 	return nil
 }
-

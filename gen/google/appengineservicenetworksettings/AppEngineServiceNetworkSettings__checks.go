@@ -19,7 +19,7 @@ func (a *jsiiProxy_AppEngineServiceNetworkSettings) validateAddMoveTargetParamet
 	return nil
 }
 
-func (a *jsiiProxy_AppEngineServiceNetworkSettings) validateAddOverrideParameters(path *string, value interface{}) error {
+func (a *jsiiProxy_AppEngineServiceNetworkSettings) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (a *jsiiProxy_AppEngineServiceNetworkSettings) validateMoveFromIdParameters
 	return nil
 }
 
-func (a *jsiiProxy_AppEngineServiceNetworkSettings) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (a *jsiiProxy_AppEngineServiceNetworkSettings) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateAppEngineServiceNetworkSettings_GenerateConfigForImportParameters(s
 	return nil
 }
 
-func validateAppEngineServiceNetworkSettings_IsConstructParameters(x interface{}) error {
+func validateAppEngineServiceNetworkSettings_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateAppEngineServiceNetworkSettings_IsConstructParameters(x interface{}
 	return nil
 }
 
-func validateAppEngineServiceNetworkSettings_IsTerraformElementParameters(x interface{}) error {
+func validateAppEngineServiceNetworkSettings_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateAppEngineServiceNetworkSettings_IsTerraformElementParameters(x inte
 	return nil
 }
 
-func validateAppEngineServiceNetworkSettings_IsTerraformResourceParameters(x interface{}) error {
+func validateAppEngineServiceNetworkSettings_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func validateAppEngineServiceNetworkSettings_IsTerraformResourceParameters(x int
 	return nil
 }
 
-func (j *jsiiProxy_AppEngineServiceNetworkSettings) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_AppEngineServiceNetworkSettings) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -299,7 +299,7 @@ func (j *jsiiProxy_AppEngineServiceNetworkSettings) validateSetConnectionParamet
 	return nil
 }
 
-func (j *jsiiProxy_AppEngineServiceNetworkSettings) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_AppEngineServiceNetworkSettings) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -380,7 +380,7 @@ func (j *jsiiProxy_AppEngineServiceNetworkSettings) validateSetProjectParameters
 	return nil
 }
 
-func (j *jsiiProxy_AppEngineServiceNetworkSettings) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_AppEngineServiceNetworkSettings) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -452,4 +452,3 @@ func validateNewAppEngineServiceNetworkSettingsParameters(scope constructs.Const
 
 	return nil
 }
-

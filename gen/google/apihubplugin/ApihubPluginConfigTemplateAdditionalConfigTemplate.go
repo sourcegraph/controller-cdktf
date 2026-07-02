@@ -1,6 +1,5 @@
 package apihubplugin
 
-
 type ApihubPluginConfigTemplateAdditionalConfigTemplate struct {
 	// ID of the config variable. Must be unique within the configuration.
 	//
@@ -20,18 +19,17 @@ type ApihubPluginConfigTemplateAdditionalConfigTemplate struct {
 	// enum_options block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apihub_plugin#enum_options ApihubPlugin#enum_options}
-	EnumOptions interface{} `field:"optional" json:"enumOptions" yaml:"enumOptions"`
+	EnumOptions any `field:"optional" json:"enumOptions" yaml:"enumOptions"`
 	// multi_select_options block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apihub_plugin#multi_select_options ApihubPlugin#multi_select_options}
-	MultiSelectOptions interface{} `field:"optional" json:"multiSelectOptions" yaml:"multiSelectOptions"`
+	MultiSelectOptions any `field:"optional" json:"multiSelectOptions" yaml:"multiSelectOptions"`
 	// Flag represents that this 'ConfigVariable' must be provided for a PluginInstance.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apihub_plugin#required ApihubPlugin#required}
-	Required interface{} `field:"optional" json:"required" yaml:"required"`
+	Required any `field:"optional" json:"required" yaml:"required"`
 	// Regular expression in RE2 syntax used for validating the 'value' of a 'ConfigVariable'.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apihub_plugin#validation_regex ApihubPlugin#validation_regex}
 	ValidationRegex *string `field:"optional" json:"validationRegex" yaml:"validationRegex"`
 }
-

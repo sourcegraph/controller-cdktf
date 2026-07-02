@@ -34,7 +34,7 @@ func (c *jsiiProxy_CloudbuildTriggerBuildOptionsVolumesList) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_CloudbuildTriggerBuildOptionsVolumesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CloudbuildTriggerBuildOptionsVolumesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewCloudbuildTriggerBuildOptionsVolumesListParameters(terraformReso
 
 	return nil
 }
-

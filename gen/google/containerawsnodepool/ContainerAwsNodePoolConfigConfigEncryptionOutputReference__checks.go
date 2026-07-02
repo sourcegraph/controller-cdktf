@@ -98,7 +98,7 @@ func (c *jsiiProxy_ContainerAwsNodePoolConfigConfigEncryptionOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_ContainerAwsNodePoolConfigConfigEncryptionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerAwsNodePoolConfigConfigEncryptionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewContainerAwsNodePoolConfigConfigEncryptionOutputReferenceParamet
 
 	return nil
 }
-

@@ -19,7 +19,7 @@ func (h *jsiiProxy_HealthcareDicomStoreIamPolicy) validateAddMoveTargetParameter
 	return nil
 }
 
-func (h *jsiiProxy_HealthcareDicomStoreIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (h *jsiiProxy_HealthcareDicomStoreIamPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (h *jsiiProxy_HealthcareDicomStoreIamPolicy) validateMoveFromIdParameters(i
 	return nil
 }
 
-func (h *jsiiProxy_HealthcareDicomStoreIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (h *jsiiProxy_HealthcareDicomStoreIamPolicy) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateHealthcareDicomStoreIamPolicy_GenerateConfigForImportParameters(sco
 	return nil
 }
 
-func validateHealthcareDicomStoreIamPolicy_IsConstructParameters(x interface{}) error {
+func validateHealthcareDicomStoreIamPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateHealthcareDicomStoreIamPolicy_IsConstructParameters(x interface{}) 
 	return nil
 }
 
-func validateHealthcareDicomStoreIamPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateHealthcareDicomStoreIamPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateHealthcareDicomStoreIamPolicy_IsTerraformElementParameters(x interf
 	return nil
 }
 
-func validateHealthcareDicomStoreIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+func validateHealthcareDicomStoreIamPolicy_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateHealthcareDicomStoreIamPolicy_IsTerraformResourceParameters(x inter
 	return nil
 }
 
-func (j *jsiiProxy_HealthcareDicomStoreIamPolicy) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_HealthcareDicomStoreIamPolicy) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_HealthcareDicomStoreIamPolicy) validateSetConnectionParameter
 	return nil
 }
 
-func (j *jsiiProxy_HealthcareDicomStoreIamPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_HealthcareDicomStoreIamPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -366,7 +366,7 @@ func (j *jsiiProxy_HealthcareDicomStoreIamPolicy) validateSetPolicyDataParameter
 	return nil
 }
 
-func (j *jsiiProxy_HealthcareDicomStoreIamPolicy) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_HealthcareDicomStoreIamPolicy) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -430,4 +430,3 @@ func validateNewHealthcareDicomStoreIamPolicyParameters(scope constructs.Constru
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleComputeBackendServiceCdnPolicyBypassCacheOnRequestH
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeBackendServiceCdnPolicyBypassCacheOnRequestHeadersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleComputeBackendServiceCdnPolicyBypassCacheOnRequestHeadersOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleComputeBackendServiceCdnPolicyBypassCacheOnRequestHead
 
 	return nil
 }
-

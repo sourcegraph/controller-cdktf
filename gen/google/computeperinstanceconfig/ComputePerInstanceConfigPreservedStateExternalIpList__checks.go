@@ -34,7 +34,7 @@ func (c *jsiiProxy_ComputePerInstanceConfigPreservedStateExternalIpList) validat
 	return nil
 }
 
-func (j *jsiiProxy_ComputePerInstanceConfigPreservedStateExternalIpList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputePerInstanceConfigPreservedStateExternalIpList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewComputePerInstanceConfigPreservedStateExternalIpListParameters(t
 
 	return nil
 }
-

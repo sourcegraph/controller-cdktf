@@ -98,7 +98,7 @@ func (b *jsiiProxy_BiglakeDatabaseHiveOptionsOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_BiglakeDatabaseHiveOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BiglakeDatabaseHiveOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewBiglakeDatabaseHiveOptionsOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

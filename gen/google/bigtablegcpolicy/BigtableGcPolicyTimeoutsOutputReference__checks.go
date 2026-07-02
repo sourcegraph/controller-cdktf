@@ -98,7 +98,7 @@ func (b *jsiiProxy_BigtableGcPolicyTimeoutsOutputReference) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_BigtableGcPolicyTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BigtableGcPolicyTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_BigtableGcPolicyTimeoutsOutputReference) validateSetDeletePar
 	return nil
 }
 
-func (j *jsiiProxy_BigtableGcPolicyTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_BigtableGcPolicyTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewBigtableGcPolicyTimeoutsOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

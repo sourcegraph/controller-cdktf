@@ -98,7 +98,7 @@ func (o *jsiiProxy_OsConfigV2PolicyOrchestratorOrchestrationStatePreviousIterati
 	return nil
 }
 
-func (j *jsiiProxy_OsConfigV2PolicyOrchestratorOrchestrationStatePreviousIterationStateErrorOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_OsConfigV2PolicyOrchestratorOrchestrationStatePreviousIterationStateErrorOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewOsConfigV2PolicyOrchestratorOrchestrationStatePreviousIterationS
 
 	return nil
 }
-

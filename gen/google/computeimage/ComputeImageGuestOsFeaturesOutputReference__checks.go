@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeImageGuestOsFeaturesOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_ComputeImageGuestOsFeaturesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeImageGuestOsFeaturesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ComputeImageGuestOsFeaturesOutputReference) validateSetComple
 	return nil
 }
 
-func (j *jsiiProxy_ComputeImageGuestOsFeaturesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeImageGuestOsFeaturesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewComputeImageGuestOsFeaturesOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (n *jsiiProxy_NetworkServicesWasmPluginVersionsOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesWasmPluginVersionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkServicesWasmPluginVersionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_NetworkServicesWasmPluginVersionsOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesWasmPluginVersionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkServicesWasmPluginVersionsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -270,4 +270,3 @@ func validateNewNetworkServicesWasmPluginVersionsOutputReferenceParameters(terra
 
 	return nil
 }
-

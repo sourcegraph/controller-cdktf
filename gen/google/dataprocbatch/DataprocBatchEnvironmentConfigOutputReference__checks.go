@@ -120,7 +120,7 @@ func (d *jsiiProxy_DataprocBatchEnvironmentConfigOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_DataprocBatchEnvironmentConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocBatchEnvironmentConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -220,4 +220,3 @@ func validateNewDataprocBatchEnvironmentConfigOutputReferenceParameters(terrafor
 
 	return nil
 }
-

@@ -12,9 +12,9 @@ type DiscoveryEngineControlBoostActionOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -51,7 +51,7 @@ type DiscoveryEngineControlBoostActionOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -77,7 +77,7 @@ type DiscoveryEngineControlBoostActionOutputReference interface {
 	ResetInterpolationBoostSpec()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -90,8 +90,8 @@ type jsiiProxy_DiscoveryEngineControlBoostActionOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DiscoveryEngineControlBoostActionOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DiscoveryEngineControlBoostActionOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -240,7 +240,6 @@ func (j *jsiiProxy_DiscoveryEngineControlBoostActionOutputReference) TerraformRe
 	return returns
 }
 
-
 func NewDiscoveryEngineControlBoostActionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DiscoveryEngineControlBoostActionOutputReference {
 	_init_.Initialize()
 
@@ -251,7 +250,7 @@ func NewDiscoveryEngineControlBoostActionOutputReference(terraformResource cdktf
 
 	_jsii_.Create(
 		"@cdktf/provider-google.discoveryEngineControl.DiscoveryEngineControlBoostActionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -263,12 +262,12 @@ func NewDiscoveryEngineControlBoostActionOutputReference_Override(d DiscoveryEng
 
 	_jsii_.Create(
 		"@cdktf/provider-google.discoveryEngineControl.DiscoveryEngineControlBoostActionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineControlBoostActionOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DiscoveryEngineControlBoostActionOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_DiscoveryEngineControlBoostActionOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineControlBoostActionOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DiscoveryEngineControlBoostActionOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_DiscoveryEngineControlBoostActionOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineControlBoostActionOutputReference)SetDataStore(val *string) {
+func (j *jsiiProxy_DiscoveryEngineControlBoostActionOutputReference) SetDataStore(val *string) {
 	if err := j.validateSetDataStoreParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_DiscoveryEngineControlBoostActionOutputReference)SetDataStore
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineControlBoostActionOutputReference)SetFilter(val *string) {
+func (j *jsiiProxy_DiscoveryEngineControlBoostActionOutputReference) SetFilter(val *string) {
 	if err := j.validateSetFilterParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_DiscoveryEngineControlBoostActionOutputReference)SetFilter(va
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineControlBoostActionOutputReference)SetFixedBoost(val *float64) {
+func (j *jsiiProxy_DiscoveryEngineControlBoostActionOutputReference) SetFixedBoost(val *float64) {
 	if err := j.validateSetFixedBoostParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_DiscoveryEngineControlBoostActionOutputReference)SetFixedBoos
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineControlBoostActionOutputReference)SetInternalValue(val *DiscoveryEngineControlBoostAction) {
+func (j *jsiiProxy_DiscoveryEngineControlBoostActionOutputReference) SetInternalValue(val *DiscoveryEngineControlBoostAction) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -334,7 +333,7 @@ func (j *jsiiProxy_DiscoveryEngineControlBoostActionOutputReference)SetInternalV
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineControlBoostActionOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DiscoveryEngineControlBoostActionOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -345,7 +344,7 @@ func (j *jsiiProxy_DiscoveryEngineControlBoostActionOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineControlBoostActionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DiscoveryEngineControlBoostActionOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -369,16 +368,16 @@ func (d *jsiiProxy_DiscoveryEngineControlBoostActionOutputReference) ComputeFqn(
 	return returns
 }
 
-func (d *jsiiProxy_DiscoveryEngineControlBoostActionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DiscoveryEngineControlBoostActionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -394,7 +393,7 @@ func (d *jsiiProxy_DiscoveryEngineControlBoostActionOutputReference) GetBooleanA
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -410,7 +409,7 @@ func (d *jsiiProxy_DiscoveryEngineControlBoostActionOutputReference) GetBooleanM
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -426,7 +425,7 @@ func (d *jsiiProxy_DiscoveryEngineControlBoostActionOutputReference) GetListAttr
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -442,7 +441,7 @@ func (d *jsiiProxy_DiscoveryEngineControlBoostActionOutputReference) GetNumberAt
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -458,7 +457,7 @@ func (d *jsiiProxy_DiscoveryEngineControlBoostActionOutputReference) GetNumberLi
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -474,7 +473,7 @@ func (d *jsiiProxy_DiscoveryEngineControlBoostActionOutputReference) GetNumberMa
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -490,7 +489,7 @@ func (d *jsiiProxy_DiscoveryEngineControlBoostActionOutputReference) GetStringAt
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -506,7 +505,7 @@ func (d *jsiiProxy_DiscoveryEngineControlBoostActionOutputReference) GetStringMa
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -535,7 +534,7 @@ func (d *jsiiProxy_DiscoveryEngineControlBoostActionOutputReference) Interpolati
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -549,7 +548,7 @@ func (d *jsiiProxy_DiscoveryEngineControlBoostActionOutputReference) PutInterpol
 	_jsii_.InvokeVoid(
 		d,
 		"putInterpolationBoostSpec",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -569,16 +568,16 @@ func (d *jsiiProxy_DiscoveryEngineControlBoostActionOutputReference) ResetInterp
 	)
 }
 
-func (d *jsiiProxy_DiscoveryEngineControlBoostActionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DiscoveryEngineControlBoostActionOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -597,4 +596,3 @@ func (d *jsiiProxy_DiscoveryEngineControlBoostActionOutputReference) ToString() 
 
 	return returns
 }
-

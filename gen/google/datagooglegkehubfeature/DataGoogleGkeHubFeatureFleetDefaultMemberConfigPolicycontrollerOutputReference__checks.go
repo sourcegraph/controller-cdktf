@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontroll
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerO
 
 	return nil
 }
-

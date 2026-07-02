@@ -120,7 +120,7 @@ func (n *jsiiProxy_NetworkSecurityAuthzPolicyCustomProviderOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_NetworkSecurityAuthzPolicyCustomProviderOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkSecurityAuthzPolicyCustomProviderOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -220,4 +220,3 @@ func validateNewNetworkSecurityAuthzPolicyCustomProviderOutputReferenceParameter
 
 	return nil
 }
-

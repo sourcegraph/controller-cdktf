@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleComputeBackendServiceCustomMetricsOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeBackendServiceCustomMetricsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleComputeBackendServiceCustomMetricsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleComputeBackendServiceCustomMetricsOutputReferenceParam
 
 	return nil
 }
-

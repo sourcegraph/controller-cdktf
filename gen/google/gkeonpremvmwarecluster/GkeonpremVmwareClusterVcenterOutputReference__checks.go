@@ -114,7 +114,7 @@ func (j *jsiiProxy_GkeonpremVmwareClusterVcenterOutputReference) validateSetClus
 	return nil
 }
 
-func (j *jsiiProxy_GkeonpremVmwareClusterVcenterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GkeonpremVmwareClusterVcenterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -254,4 +254,3 @@ func validateNewGkeonpremVmwareClusterVcenterOutputReferenceParameters(terraform
 
 	return nil
 }
-

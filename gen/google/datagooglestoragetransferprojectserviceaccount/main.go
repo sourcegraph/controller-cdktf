@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleStorageTransferProjectServiceAccount.DataGoogleStorageTransferProjectServiceAccount",
-		reflect.TypeOf((*DataGoogleStorageTransferProjectServiceAccount)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleStorageTransferProjectServiceAccount](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -54,7 +54,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleStorageTransferProjectServiceAccount{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -62,6 +62,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleStorageTransferProjectServiceAccount.DataGoogleStorageTransferProjectServiceAccountConfig",
-		reflect.TypeOf((*DataGoogleStorageTransferProjectServiceAccountConfig)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleStorageTransferProjectServiceAccountConfig](),
 	)
 }

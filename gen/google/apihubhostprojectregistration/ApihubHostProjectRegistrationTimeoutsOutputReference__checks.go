@@ -98,7 +98,7 @@ func (a *jsiiProxy_ApihubHostProjectRegistrationTimeoutsOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_ApihubHostProjectRegistrationTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ApihubHostProjectRegistrationTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_ApihubHostProjectRegistrationTimeoutsOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_ApihubHostProjectRegistrationTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ApihubHostProjectRegistrationTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewApihubHostProjectRegistrationTimeoutsOutputReferenceParameters(t
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleFolderOrganizationPolicyListPolicyAllowOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleFolderOrganizationPolicyListPolicyAllowOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleFolderOrganizationPolicyListPolicyAllowOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleFolderOrganizationPolicyListPolicyAllowOutputReference
 
 	return nil
 }
-

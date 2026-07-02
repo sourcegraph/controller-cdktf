@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeBackendServiceLogConfigOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_ComputeBackendServiceLogConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeBackendServiceLogConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ComputeBackendServiceLogConfigOutputReference) validateSetCom
 	return nil
 }
 
-func (j *jsiiProxy_ComputeBackendServiceLogConfigOutputReference) validateSetEnableParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeBackendServiceLogConfigOutputReference) validateSetEnableParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -242,4 +242,3 @@ func validateNewComputeBackendServiceLogConfigOutputReferenceParameters(terrafor
 
 	return nil
 }
-

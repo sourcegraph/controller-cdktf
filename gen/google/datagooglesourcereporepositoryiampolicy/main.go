@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleSourcerepoRepositoryIamPolicy.DataGoogleSourcerepoRepositoryIamPolicy",
-		reflect.TypeOf((*DataGoogleSourcerepoRepositoryIamPolicy)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleSourcerepoRepositoryIamPolicy](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -55,7 +55,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleSourcerepoRepositoryIamPolicy{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -63,6 +63,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleSourcerepoRepositoryIamPolicy.DataGoogleSourcerepoRepositoryIamPolicyConfig",
-		reflect.TypeOf((*DataGoogleSourcerepoRepositoryIamPolicyConfig)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleSourcerepoRepositoryIamPolicyConfig](),
 	)
 }

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleApphubDiscoveredWorkload.DataGoogleApphubDiscoveredWorkload",
-		reflect.TypeOf((*DataGoogleApphubDiscoveredWorkload)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleApphubDiscoveredWorkload](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -58,7 +58,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workloadUri", GoGetter: "WorkloadUri"},
 			_jsii_.MemberProperty{JsiiProperty: "workloadUriInput", GoGetter: "WorkloadUriInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleApphubDiscoveredWorkload{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -66,15 +66,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleApphubDiscoveredWorkload.DataGoogleApphubDiscoveredWorkloadConfig",
-		reflect.TypeOf((*DataGoogleApphubDiscoveredWorkloadConfig)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleApphubDiscoveredWorkloadConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleApphubDiscoveredWorkload.DataGoogleApphubDiscoveredWorkloadWorkloadProperties",
-		reflect.TypeOf((*DataGoogleApphubDiscoveredWorkloadWorkloadProperties)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleApphubDiscoveredWorkloadWorkloadProperties](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleApphubDiscoveredWorkload.DataGoogleApphubDiscoveredWorkloadWorkloadPropertiesList",
-		reflect.TypeOf((*DataGoogleApphubDiscoveredWorkloadWorkloadPropertiesList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleApphubDiscoveredWorkloadWorkloadPropertiesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -87,7 +87,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleApphubDiscoveredWorkloadWorkloadPropertiesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -95,7 +95,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleApphubDiscoveredWorkload.DataGoogleApphubDiscoveredWorkloadWorkloadPropertiesOutputReference",
-		reflect.TypeOf((*DataGoogleApphubDiscoveredWorkloadWorkloadPropertiesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleApphubDiscoveredWorkloadWorkloadPropertiesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -122,7 +122,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "zone", GoGetter: "Zone"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleApphubDiscoveredWorkloadWorkloadPropertiesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -130,11 +130,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleApphubDiscoveredWorkload.DataGoogleApphubDiscoveredWorkloadWorkloadReference",
-		reflect.TypeOf((*DataGoogleApphubDiscoveredWorkloadWorkloadReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleApphubDiscoveredWorkloadWorkloadReference](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleApphubDiscoveredWorkload.DataGoogleApphubDiscoveredWorkloadWorkloadReferenceList",
-		reflect.TypeOf((*DataGoogleApphubDiscoveredWorkloadWorkloadReferenceList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleApphubDiscoveredWorkloadWorkloadReferenceList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -147,7 +147,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleApphubDiscoveredWorkloadWorkloadReferenceList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -155,7 +155,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleApphubDiscoveredWorkload.DataGoogleApphubDiscoveredWorkloadWorkloadReferenceOutputReference",
-		reflect.TypeOf((*DataGoogleApphubDiscoveredWorkloadWorkloadReferenceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleApphubDiscoveredWorkloadWorkloadReferenceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -180,7 +180,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "uri", GoGetter: "Uri"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleApphubDiscoveredWorkloadWorkloadReferenceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

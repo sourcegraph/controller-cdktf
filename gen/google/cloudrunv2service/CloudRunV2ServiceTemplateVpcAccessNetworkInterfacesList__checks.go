@@ -34,7 +34,7 @@ func (c *jsiiProxy_CloudRunV2ServiceTemplateVpcAccessNetworkInterfacesList) vali
 	return nil
 }
 
-func (j *jsiiProxy_CloudRunV2ServiceTemplateVpcAccessNetworkInterfacesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CloudRunV2ServiceTemplateVpcAccessNetworkInterfacesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewCloudRunV2ServiceTemplateVpcAccessNetworkInterfacesListParameter
 
 	return nil
 }
-

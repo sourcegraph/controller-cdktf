@@ -6,9 +6,9 @@ import (
 
 type Cloudbuildv2ConnectionConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type Cloudbuildv2ConnectionConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The location for the resource.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuildv2_connection#location Cloudbuildv2Connection#location}
@@ -47,7 +47,7 @@ type Cloudbuildv2ConnectionConfig struct {
 	// Repository based API methods and webhooks processing for repositories in this connection will be disabled.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuildv2_connection#disabled Cloudbuildv2Connection#disabled}
-	Disabled interface{} `field:"optional" json:"disabled" yaml:"disabled"`
+	Disabled any `field:"optional" json:"disabled" yaml:"disabled"`
 	// github_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuildv2_connection#github_config Cloudbuildv2Connection#github_config}
@@ -72,4 +72,3 @@ type Cloudbuildv2ConnectionConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuildv2_connection#timeouts Cloudbuildv2Connection#timeouts}
 	Timeouts *Cloudbuildv2ConnectionTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

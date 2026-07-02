@@ -34,7 +34,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsConnectionPoolConfigFlagsList) val
 	return nil
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsConnectionPoolConfigFlagsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsConnectionPoolConfigFlagsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewSqlDatabaseInstanceSettingsConnectionPoolConfigFlagsListParamete
 
 	return nil
 }
-

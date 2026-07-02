@@ -98,7 +98,7 @@ func (b *jsiiProxy_BigqueryDataTransferConfigSensitiveParamsOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryDataTransferConfigSensitiveParamsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryDataTransferConfigSensitiveParamsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewBigqueryDataTransferConfigSensitiveParamsOutputReferenceParamete
 
 	return nil
 }
-

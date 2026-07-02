@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.pubsubLiteSubscription.PubsubLiteSubscription",
-		reflect.TypeOf((*PubsubLiteSubscription)(nil)).Elem(),
+		reflect.TypeFor[PubsubLiteSubscription](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,7 +77,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zone", GoGetter: "Zone"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneInput", GoGetter: "ZoneInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PubsubLiteSubscription{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -85,15 +85,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.pubsubLiteSubscription.PubsubLiteSubscriptionConfig",
-		reflect.TypeOf((*PubsubLiteSubscriptionConfig)(nil)).Elem(),
+		reflect.TypeFor[PubsubLiteSubscriptionConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.pubsubLiteSubscription.PubsubLiteSubscriptionDeliveryConfig",
-		reflect.TypeOf((*PubsubLiteSubscriptionDeliveryConfig)(nil)).Elem(),
+		reflect.TypeFor[PubsubLiteSubscriptionDeliveryConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.pubsubLiteSubscription.PubsubLiteSubscriptionDeliveryConfigOutputReference",
-		reflect.TypeOf((*PubsubLiteSubscriptionDeliveryConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PubsubLiteSubscriptionDeliveryConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -119,7 +119,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PubsubLiteSubscriptionDeliveryConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -127,11 +127,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.pubsubLiteSubscription.PubsubLiteSubscriptionTimeouts",
-		reflect.TypeOf((*PubsubLiteSubscriptionTimeouts)(nil)).Elem(),
+		reflect.TypeFor[PubsubLiteSubscriptionTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.pubsubLiteSubscription.PubsubLiteSubscriptionTimeoutsOutputReference",
-		reflect.TypeOf((*PubsubLiteSubscriptionTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PubsubLiteSubscriptionTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -164,7 +164,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PubsubLiteSubscriptionTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

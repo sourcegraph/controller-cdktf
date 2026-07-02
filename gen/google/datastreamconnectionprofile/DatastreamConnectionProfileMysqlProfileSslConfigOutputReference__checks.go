@@ -122,7 +122,7 @@ func (j *jsiiProxy_DatastreamConnectionProfileMysqlProfileSslConfigOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_DatastreamConnectionProfileMysqlProfileSslConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DatastreamConnectionProfileMysqlProfileSslConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewDatastreamConnectionProfileMysqlProfileSslConfigOutputReferenceP
 
 	return nil
 }
-

@@ -21,15 +21,15 @@ type NetworkServicesEndpointPolicy interface {
 	SetClientTlsPolicy(val *string)
 	ClientTlsPolicyInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -72,11 +72,11 @@ type NetworkServicesEndpointPolicy interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ServerTlsPolicy() *string
 	SetServerTlsPolicy(val *string)
 	ServerTlsPolicyInput() *string
@@ -84,11 +84,11 @@ type NetworkServicesEndpointPolicy interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() NetworkServicesEndpointPolicyTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	TrafficPortSelector() NetworkServicesEndpointPolicyTrafficPortSelectorOutputReference
 	TrafficPortSelectorInput() *NetworkServicesEndpointPolicyTrafficPortSelector
 	Type() *string
@@ -99,9 +99,9 @@ type NetworkServicesEndpointPolicy interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -119,7 +119,7 @@ type NetworkServicesEndpointPolicy interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -131,7 +131,7 @@ type NetworkServicesEndpointPolicy interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -153,17 +153,17 @@ type NetworkServicesEndpointPolicy interface {
 	ResetServerTlsPolicy()
 	ResetTimeouts()
 	ResetTrafficPortSelector()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for NetworkServicesEndpointPolicy
@@ -221,8 +221,8 @@ func (j *jsiiProxy_NetworkServicesEndpointPolicy) ClientTlsPolicyInput() *string
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesEndpointPolicy) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkServicesEndpointPolicy) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -231,8 +231,8 @@ func (j *jsiiProxy_NetworkServicesEndpointPolicy) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesEndpointPolicy) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_NetworkServicesEndpointPolicy) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -241,8 +241,8 @@ func (j *jsiiProxy_NetworkServicesEndpointPolicy) ConstructNodeMetadata() *map[s
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesEndpointPolicy) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkServicesEndpointPolicy) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -461,8 +461,8 @@ func (j *jsiiProxy_NetworkServicesEndpointPolicy) Provider() cdktf.TerraformProv
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesEndpointPolicy) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_NetworkServicesEndpointPolicy) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -471,8 +471,8 @@ func (j *jsiiProxy_NetworkServicesEndpointPolicy) Provisioners() *[]interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesEndpointPolicy) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkServicesEndpointPolicy) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -521,8 +521,8 @@ func (j *jsiiProxy_NetworkServicesEndpointPolicy) TerraformLabels() cdktf.String
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesEndpointPolicy) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_NetworkServicesEndpointPolicy) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -551,8 +551,8 @@ func (j *jsiiProxy_NetworkServicesEndpointPolicy) Timeouts() NetworkServicesEndp
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesEndpointPolicy) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkServicesEndpointPolicy) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -611,7 +611,6 @@ func (j *jsiiProxy_NetworkServicesEndpointPolicy) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_endpoint_policy google_network_services_endpoint_policy} Resource.
 func NewNetworkServicesEndpointPolicy(scope constructs.Construct, id *string, config *NetworkServicesEndpointPolicyConfig) NetworkServicesEndpointPolicy {
 	_init_.Initialize()
@@ -623,7 +622,7 @@ func NewNetworkServicesEndpointPolicy(scope constructs.Construct, id *string, co
 
 	_jsii_.Create(
 		"@cdktf/provider-google.networkServicesEndpointPolicy.NetworkServicesEndpointPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -636,12 +635,12 @@ func NewNetworkServicesEndpointPolicy_Override(n NetworkServicesEndpointPolicy, 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.networkServicesEndpointPolicy.NetworkServicesEndpointPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesEndpointPolicy)SetAuthorizationPolicy(val *string) {
+func (j *jsiiProxy_NetworkServicesEndpointPolicy) SetAuthorizationPolicy(val *string) {
 	if err := j.validateSetAuthorizationPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -652,7 +651,7 @@ func (j *jsiiProxy_NetworkServicesEndpointPolicy)SetAuthorizationPolicy(val *str
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesEndpointPolicy)SetClientTlsPolicy(val *string) {
+func (j *jsiiProxy_NetworkServicesEndpointPolicy) SetClientTlsPolicy(val *string) {
 	if err := j.validateSetClientTlsPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -663,7 +662,7 @@ func (j *jsiiProxy_NetworkServicesEndpointPolicy)SetClientTlsPolicy(val *string)
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesEndpointPolicy)SetConnection(val interface{}) {
+func (j *jsiiProxy_NetworkServicesEndpointPolicy) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -674,7 +673,7 @@ func (j *jsiiProxy_NetworkServicesEndpointPolicy)SetConnection(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesEndpointPolicy)SetCount(val interface{}) {
+func (j *jsiiProxy_NetworkServicesEndpointPolicy) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -685,7 +684,7 @@ func (j *jsiiProxy_NetworkServicesEndpointPolicy)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesEndpointPolicy)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_NetworkServicesEndpointPolicy) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -693,7 +692,7 @@ func (j *jsiiProxy_NetworkServicesEndpointPolicy)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesEndpointPolicy)SetDescription(val *string) {
+func (j *jsiiProxy_NetworkServicesEndpointPolicy) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -704,7 +703,7 @@ func (j *jsiiProxy_NetworkServicesEndpointPolicy)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesEndpointPolicy)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_NetworkServicesEndpointPolicy) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -712,7 +711,7 @@ func (j *jsiiProxy_NetworkServicesEndpointPolicy)SetForEach(val cdktf.ITerraform
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesEndpointPolicy)SetId(val *string) {
+func (j *jsiiProxy_NetworkServicesEndpointPolicy) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -723,7 +722,7 @@ func (j *jsiiProxy_NetworkServicesEndpointPolicy)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesEndpointPolicy)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_NetworkServicesEndpointPolicy) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -734,7 +733,7 @@ func (j *jsiiProxy_NetworkServicesEndpointPolicy)SetLabels(val *map[string]*stri
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesEndpointPolicy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_NetworkServicesEndpointPolicy) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -745,7 +744,7 @@ func (j *jsiiProxy_NetworkServicesEndpointPolicy)SetLifecycle(val *cdktf.Terrafo
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesEndpointPolicy)SetName(val *string) {
+func (j *jsiiProxy_NetworkServicesEndpointPolicy) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -756,7 +755,7 @@ func (j *jsiiProxy_NetworkServicesEndpointPolicy)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesEndpointPolicy)SetProject(val *string) {
+func (j *jsiiProxy_NetworkServicesEndpointPolicy) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -767,7 +766,7 @@ func (j *jsiiProxy_NetworkServicesEndpointPolicy)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesEndpointPolicy)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_NetworkServicesEndpointPolicy) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -775,7 +774,7 @@ func (j *jsiiProxy_NetworkServicesEndpointPolicy)SetProvider(val cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesEndpointPolicy)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_NetworkServicesEndpointPolicy) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -786,7 +785,7 @@ func (j *jsiiProxy_NetworkServicesEndpointPolicy)SetProvisioners(val *[]interfac
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesEndpointPolicy)SetServerTlsPolicy(val *string) {
+func (j *jsiiProxy_NetworkServicesEndpointPolicy) SetServerTlsPolicy(val *string) {
 	if err := j.validateSetServerTlsPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -797,7 +796,7 @@ func (j *jsiiProxy_NetworkServicesEndpointPolicy)SetServerTlsPolicy(val *string)
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesEndpointPolicy)SetType(val *string) {
+func (j *jsiiProxy_NetworkServicesEndpointPolicy) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -820,7 +819,7 @@ func NetworkServicesEndpointPolicy_GenerateConfigForImport(scope constructs.Cons
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.networkServicesEndpointPolicy.NetworkServicesEndpointPolicy",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -844,7 +843,7 @@ func NetworkServicesEndpointPolicy_GenerateConfigForImport(scope constructs.Cons
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func NetworkServicesEndpointPolicy_IsConstruct(x interface{}) *bool {
+func NetworkServicesEndpointPolicy_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetworkServicesEndpointPolicy_IsConstructParameters(x); err != nil {
@@ -855,7 +854,7 @@ func NetworkServicesEndpointPolicy_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.networkServicesEndpointPolicy.NetworkServicesEndpointPolicy",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -863,7 +862,7 @@ func NetworkServicesEndpointPolicy_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func NetworkServicesEndpointPolicy_IsTerraformElement(x interface{}) *bool {
+func NetworkServicesEndpointPolicy_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetworkServicesEndpointPolicy_IsTerraformElementParameters(x); err != nil {
@@ -874,7 +873,7 @@ func NetworkServicesEndpointPolicy_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.networkServicesEndpointPolicy.NetworkServicesEndpointPolicy",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -882,7 +881,7 @@ func NetworkServicesEndpointPolicy_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func NetworkServicesEndpointPolicy_IsTerraformResource(x interface{}) *bool {
+func NetworkServicesEndpointPolicy_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetworkServicesEndpointPolicy_IsTerraformResourceParameters(x); err != nil {
@@ -893,7 +892,7 @@ func NetworkServicesEndpointPolicy_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.networkServicesEndpointPolicy.NetworkServicesEndpointPolicy",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -918,31 +917,31 @@ func (n *jsiiProxy_NetworkServicesEndpointPolicy) AddMoveTarget(moveTarget *stri
 	_jsii_.InvokeVoid(
 		n,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (n *jsiiProxy_NetworkServicesEndpointPolicy) AddOverride(path *string, value interface{}) {
+func (n *jsiiProxy_NetworkServicesEndpointPolicy) AddOverride(path *string, value any) {
 	if err := n.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (n *jsiiProxy_NetworkServicesEndpointPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (n *jsiiProxy_NetworkServicesEndpointPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -958,7 +957,7 @@ func (n *jsiiProxy_NetworkServicesEndpointPolicy) GetBooleanAttribute(terraformA
 	_jsii_.Invoke(
 		n,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -974,7 +973,7 @@ func (n *jsiiProxy_NetworkServicesEndpointPolicy) GetBooleanMapAttribute(terrafo
 	_jsii_.Invoke(
 		n,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -990,7 +989,7 @@ func (n *jsiiProxy_NetworkServicesEndpointPolicy) GetListAttribute(terraformAttr
 	_jsii_.Invoke(
 		n,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1006,7 +1005,7 @@ func (n *jsiiProxy_NetworkServicesEndpointPolicy) GetNumberAttribute(terraformAt
 	_jsii_.Invoke(
 		n,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1022,7 +1021,7 @@ func (n *jsiiProxy_NetworkServicesEndpointPolicy) GetNumberListAttribute(terrafo
 	_jsii_.Invoke(
 		n,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1038,7 +1037,7 @@ func (n *jsiiProxy_NetworkServicesEndpointPolicy) GetNumberMapAttribute(terrafor
 	_jsii_.Invoke(
 		n,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1054,7 +1053,7 @@ func (n *jsiiProxy_NetworkServicesEndpointPolicy) GetStringAttribute(terraformAt
 	_jsii_.Invoke(
 		n,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1070,15 +1069,15 @@ func (n *jsiiProxy_NetworkServicesEndpointPolicy) GetStringMapAttribute(terrafor
 	_jsii_.Invoke(
 		n,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (n *jsiiProxy_NetworkServicesEndpointPolicy) HasResourceMove() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkServicesEndpointPolicy) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1097,7 +1096,7 @@ func (n *jsiiProxy_NetworkServicesEndpointPolicy) ImportFrom(id *string, provide
 	_jsii_.InvokeVoid(
 		n,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1110,7 +1109,7 @@ func (n *jsiiProxy_NetworkServicesEndpointPolicy) InterpolationForAttribute(terr
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1124,18 +1123,18 @@ func (n *jsiiProxy_NetworkServicesEndpointPolicy) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (n *jsiiProxy_NetworkServicesEndpointPolicy) MoveTo(moveTarget *string, index interface{}) {
+func (n *jsiiProxy_NetworkServicesEndpointPolicy) MoveTo(moveTarget *string, index any) {
 	if err := n.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1146,7 +1145,7 @@ func (n *jsiiProxy_NetworkServicesEndpointPolicy) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1157,7 +1156,7 @@ func (n *jsiiProxy_NetworkServicesEndpointPolicy) OverrideLogicalId(newLogicalId
 	_jsii_.InvokeVoid(
 		n,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1168,7 +1167,7 @@ func (n *jsiiProxy_NetworkServicesEndpointPolicy) PutEndpointMatcher(value *Netw
 	_jsii_.InvokeVoid(
 		n,
 		"putEndpointMatcher",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1179,7 +1178,7 @@ func (n *jsiiProxy_NetworkServicesEndpointPolicy) PutTimeouts(value *NetworkServ
 	_jsii_.InvokeVoid(
 		n,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1190,7 +1189,7 @@ func (n *jsiiProxy_NetworkServicesEndpointPolicy) PutTrafficPortSelector(value *
 	_jsii_.InvokeVoid(
 		n,
 		"putTrafficPortSelector",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1274,8 +1273,8 @@ func (n *jsiiProxy_NetworkServicesEndpointPolicy) ResetTrafficPortSelector() {
 	)
 }
 
-func (n *jsiiProxy_NetworkServicesEndpointPolicy) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (n *jsiiProxy_NetworkServicesEndpointPolicy) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
@@ -1287,8 +1286,8 @@ func (n *jsiiProxy_NetworkServicesEndpointPolicy) SynthesizeAttributes() *map[st
 	return returns
 }
 
-func (n *jsiiProxy_NetworkServicesEndpointPolicy) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (n *jsiiProxy_NetworkServicesEndpointPolicy) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
@@ -1300,8 +1299,8 @@ func (n *jsiiProxy_NetworkServicesEndpointPolicy) SynthesizeHclAttributes() *map
 	return returns
 }
 
-func (n *jsiiProxy_NetworkServicesEndpointPolicy) ToHclTerraform() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkServicesEndpointPolicy) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1313,8 +1312,8 @@ func (n *jsiiProxy_NetworkServicesEndpointPolicy) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (n *jsiiProxy_NetworkServicesEndpointPolicy) ToMetadata() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkServicesEndpointPolicy) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1339,8 +1338,8 @@ func (n *jsiiProxy_NetworkServicesEndpointPolicy) ToString() *string {
 	return returns
 }
 
-func (n *jsiiProxy_NetworkServicesEndpointPolicy) ToTerraform() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkServicesEndpointPolicy) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1351,4 +1350,3 @@ func (n *jsiiProxy_NetworkServicesEndpointPolicy) ToTerraform() interface{} {
 
 	return returns
 }
-

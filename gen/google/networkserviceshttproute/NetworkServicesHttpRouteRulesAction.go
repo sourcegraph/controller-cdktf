@@ -1,6 +1,5 @@
 package networkserviceshttproute
 
-
 type NetworkServicesHttpRouteRulesAction struct {
 	// cors_policy block.
 	//
@@ -9,7 +8,7 @@ type NetworkServicesHttpRouteRulesAction struct {
 	// destinations block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#destinations NetworkServicesHttpRoute#destinations}
-	Destinations interface{} `field:"optional" json:"destinations" yaml:"destinations"`
+	Destinations any `field:"optional" json:"destinations" yaml:"destinations"`
 	// fault_injection_policy block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#fault_injection_policy NetworkServicesHttpRoute#fault_injection_policy}
@@ -43,4 +42,3 @@ type NetworkServicesHttpRouteRulesAction struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#url_rewrite NetworkServicesHttpRoute#url_rewrite}
 	UrlRewrite *NetworkServicesHttpRouteRulesActionUrlRewrite `field:"optional" json:"urlRewrite" yaml:"urlRewrite"`
 }
-

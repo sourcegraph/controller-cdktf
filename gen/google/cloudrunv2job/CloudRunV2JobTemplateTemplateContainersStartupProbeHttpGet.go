@@ -1,11 +1,10 @@
 package cloudrunv2job
 
-
 type CloudRunV2JobTemplateTemplateContainersStartupProbeHttpGet struct {
 	// http_headers block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_job#http_headers CloudRunV2Job#http_headers}
-	HttpHeaders interface{} `field:"optional" json:"httpHeaders" yaml:"httpHeaders"`
+	HttpHeaders any `field:"optional" json:"httpHeaders" yaml:"httpHeaders"`
 	// Path to access on the HTTP server. If set, it should not be empty string.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_job#path CloudRunV2Job#path}
@@ -18,4 +17,3 @@ type CloudRunV2JobTemplateTemplateContainersStartupProbeHttpGet struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_job#port CloudRunV2Job#port}
 	Port *float64 `field:"optional" json:"port" yaml:"port"`
 }
-

@@ -34,7 +34,7 @@ func (c *jsiiProxy_ComputeFirewallPolicyWithRulesRuleTargetSecureTagList) valida
 	return nil
 }
 
-func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleTargetSecureTagList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleTargetSecureTagList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewComputeFirewallPolicyWithRulesRuleTargetSecureTagListParameters(
 
 	return nil
 }
-

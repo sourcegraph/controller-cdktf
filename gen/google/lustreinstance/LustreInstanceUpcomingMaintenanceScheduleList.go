@@ -36,7 +36,7 @@ type LustreInstanceUpcomingMaintenanceScheduleList interface {
 	Get(index *float64) LustreInstanceUpcomingMaintenanceScheduleOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,7 +99,6 @@ func (j *jsiiProxy_LustreInstanceUpcomingMaintenanceScheduleList) WrapsSet() *bo
 	return returns
 }
 
-
 func NewLustreInstanceUpcomingMaintenanceScheduleList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LustreInstanceUpcomingMaintenanceScheduleList {
 	_init_.Initialize()
 
@@ -110,7 +109,7 @@ func NewLustreInstanceUpcomingMaintenanceScheduleList(terraformResource cdktf.II
 
 	_jsii_.Create(
 		"@cdktf/provider-google.lustreInstance.LustreInstanceUpcomingMaintenanceScheduleList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -122,12 +121,12 @@ func NewLustreInstanceUpcomingMaintenanceScheduleList_Override(l LustreInstanceU
 
 	_jsii_.Create(
 		"@cdktf/provider-google.lustreInstance.LustreInstanceUpcomingMaintenanceScheduleList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LustreInstanceUpcomingMaintenanceScheduleList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_LustreInstanceUpcomingMaintenanceScheduleList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -138,7 +137,7 @@ func (j *jsiiProxy_LustreInstanceUpcomingMaintenanceScheduleList)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_LustreInstanceUpcomingMaintenanceScheduleList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LustreInstanceUpcomingMaintenanceScheduleList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -149,7 +148,7 @@ func (j *jsiiProxy_LustreInstanceUpcomingMaintenanceScheduleList)SetTerraformRes
 	)
 }
 
-func (j *jsiiProxy_LustreInstanceUpcomingMaintenanceScheduleList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_LustreInstanceUpcomingMaintenanceScheduleList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -169,7 +168,7 @@ func (l *jsiiProxy_LustreInstanceUpcomingMaintenanceScheduleList) AllWithMapKey(
 	_jsii_.Invoke(
 		l,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -198,23 +197,23 @@ func (l *jsiiProxy_LustreInstanceUpcomingMaintenanceScheduleList) Get(index *flo
 	_jsii_.Invoke(
 		l,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (l *jsiiProxy_LustreInstanceUpcomingMaintenanceScheduleList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (l *jsiiProxy_LustreInstanceUpcomingMaintenanceScheduleList) Resolve(_context cdktf.IResolveContext) any {
 	if err := l.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -233,4 +232,3 @@ func (l *jsiiProxy_LustreInstanceUpcomingMaintenanceScheduleList) ToString() *st
 
 	return returns
 }
-

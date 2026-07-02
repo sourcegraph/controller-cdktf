@@ -34,7 +34,7 @@ func (g *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigTagsList) validateR
 	return nil
 }
 
-func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigTagsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigTagsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGkeonpremVmwareNodePoolConfigVsphereConfigTagsListParameters(ter
 
 	return nil
 }
-

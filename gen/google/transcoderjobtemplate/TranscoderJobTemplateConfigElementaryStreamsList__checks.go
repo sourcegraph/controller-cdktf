@@ -34,7 +34,7 @@ func (t *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsList) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewTranscoderJobTemplateConfigElementaryStreamsListParameters(terra
 
 	return nil
 }
-

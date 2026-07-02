@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleSqlCaCerts.DataGoogleSqlCaCerts",
-		reflect.TypeOf((*DataGoogleSqlCaCerts)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleSqlCaCerts](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "activeVersion", GoGetter: "ActiveVersion"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -55,7 +55,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleSqlCaCerts{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -63,11 +63,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleSqlCaCerts.DataGoogleSqlCaCertsCerts",
-		reflect.TypeOf((*DataGoogleSqlCaCertsCerts)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleSqlCaCertsCerts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleSqlCaCerts.DataGoogleSqlCaCertsCertsList",
-		reflect.TypeOf((*DataGoogleSqlCaCertsCertsList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleSqlCaCertsCertsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -80,7 +80,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleSqlCaCertsCertsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -88,7 +88,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleSqlCaCerts.DataGoogleSqlCaCertsCertsOutputReference",
-		reflect.TypeOf((*DataGoogleSqlCaCertsCertsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleSqlCaCertsCertsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cert", GoGetter: "Cert"},
 			_jsii_.MemberProperty{JsiiProperty: "commonName", GoGetter: "CommonName"},
@@ -117,7 +117,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleSqlCaCertsCertsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -125,6 +125,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleSqlCaCerts.DataGoogleSqlCaCertsConfig",
-		reflect.TypeOf((*DataGoogleSqlCaCertsConfig)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleSqlCaCertsConfig](),
 	)
 }

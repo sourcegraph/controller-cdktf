@@ -109,7 +109,7 @@ func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileAlloydbSettingsPrima
 	return nil
 }
 
-func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfileAlloydbSettingsPrimaryInstanceSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfileAlloydbSettingsPrimaryInstanceSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -233,4 +233,3 @@ func validateNewDatabaseMigrationServiceConnectionProfileAlloydbSettingsPrimaryI
 
 	return nil
 }
-

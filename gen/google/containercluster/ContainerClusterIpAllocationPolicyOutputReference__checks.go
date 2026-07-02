@@ -90,7 +90,7 @@ func (c *jsiiProxy_ContainerClusterIpAllocationPolicyOutputReference) validateIn
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterIpAllocationPolicyOutputReference) validatePutAdditionalIpRangesConfigParameters(value interface{}) error {
+func (c *jsiiProxy_ContainerClusterIpAllocationPolicyOutputReference) validatePutAdditionalIpRangesConfigParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -189,7 +189,7 @@ func (j *jsiiProxy_ContainerClusterIpAllocationPolicyOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterIpAllocationPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterIpAllocationPolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -313,4 +313,3 @@ func validateNewContainerClusterIpAllocationPolicyOutputReferenceParameters(terr
 
 	return nil
 }
-

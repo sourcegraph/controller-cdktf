@@ -1,15 +1,14 @@
 package dataplexdatascan
 
-
 type DataplexDatascanDataQualitySpec struct {
 	// If set, the latest DataScan job result will be published to Dataplex Catalog.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_datascan#catalog_publishing_enabled DataplexDatascan#catalog_publishing_enabled}
-	CatalogPublishingEnabled interface{} `field:"optional" json:"catalogPublishingEnabled" yaml:"catalogPublishingEnabled"`
+	CatalogPublishingEnabled any `field:"optional" json:"catalogPublishingEnabled" yaml:"catalogPublishingEnabled"`
 	// If set to true, the scan will retrieve rules defined in Data Catalog for the resource.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_datascan#enable_catalog_based_rules DataplexDatascan#enable_catalog_based_rules}
-	EnableCatalogBasedRules interface{} `field:"optional" json:"enableCatalogBasedRules" yaml:"enableCatalogBasedRules"`
+	EnableCatalogBasedRules any `field:"optional" json:"enableCatalogBasedRules" yaml:"enableCatalogBasedRules"`
 	// A filter to selectively run a subset of rules.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_datascan#filter DataplexDatascan#filter}
@@ -27,7 +26,7 @@ type DataplexDatascanDataQualitySpec struct {
 	// rules block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_datascan#rules DataplexDatascan#rules}
-	Rules interface{} `field:"optional" json:"rules" yaml:"rules"`
+	Rules any `field:"optional" json:"rules" yaml:"rules"`
 	// The percentage of the records to be selected from the dataset for DataScan.
 	//
 	// Value can range between 0.0 and 100.0 with up to 3 significant decimal digits.
@@ -36,4 +35,3 @@ type DataplexDatascanDataQualitySpec struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_datascan#sampling_percent DataplexDatascan#sampling_percent}
 	SamplingPercent *float64 `field:"optional" json:"samplingPercent" yaml:"samplingPercent"`
 }
-

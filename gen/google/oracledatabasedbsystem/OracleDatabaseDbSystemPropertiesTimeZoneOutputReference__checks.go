@@ -98,7 +98,7 @@ func (o *jsiiProxy_OracleDatabaseDbSystemPropertiesTimeZoneOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesTimeZoneOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesTimeZoneOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewOracleDatabaseDbSystemPropertiesTimeZoneOutputReferenceParameter
 
 	return nil
 }
-

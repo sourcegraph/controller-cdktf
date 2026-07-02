@@ -90,7 +90,7 @@ func (d *jsiiProxy_DnsResponsePolicyRuleLocalDataOutputReference) validateInterp
 	return nil
 }
 
-func (d *jsiiProxy_DnsResponsePolicyRuleLocalDataOutputReference) validatePutLocalDatasParameters(value interface{}) error {
+func (d *jsiiProxy_DnsResponsePolicyRuleLocalDataOutputReference) validatePutLocalDatasParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (d *jsiiProxy_DnsResponsePolicyRuleLocalDataOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_DnsResponsePolicyRuleLocalDataOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DnsResponsePolicyRuleLocalDataOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -229,4 +229,3 @@ func validateNewDnsResponsePolicyRuleLocalDataOutputReferenceParameters(terrafor
 
 	return nil
 }
-

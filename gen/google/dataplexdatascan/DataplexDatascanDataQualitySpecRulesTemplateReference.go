@@ -1,6 +1,5 @@
 package dataplexdatascan
 
-
 type DataplexDatascanDataQualitySpecRulesTemplateReference struct {
 	// The resource name of the template entry.
 	//
@@ -9,6 +8,5 @@ type DataplexDatascanDataQualitySpecRulesTemplateReference struct {
 	// values block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_datascan#values DataplexDatascan#values}
-	Values interface{} `field:"optional" json:"values" yaml:"values"`
+	Values any `field:"optional" json:"values" yaml:"values"`
 }
-

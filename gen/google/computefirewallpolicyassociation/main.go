@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeFirewallPolicyAssociation.ComputeFirewallPolicyAssociation",
-		reflect.TypeOf((*ComputeFirewallPolicyAssociation)(nil)).Elem(),
+		reflect.TypeFor[ComputeFirewallPolicyAssociation](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -67,7 +67,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeFirewallPolicyAssociation{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -75,15 +75,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeFirewallPolicyAssociation.ComputeFirewallPolicyAssociationConfig",
-		reflect.TypeOf((*ComputeFirewallPolicyAssociationConfig)(nil)).Elem(),
+		reflect.TypeFor[ComputeFirewallPolicyAssociationConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeFirewallPolicyAssociation.ComputeFirewallPolicyAssociationTimeouts",
-		reflect.TypeOf((*ComputeFirewallPolicyAssociationTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ComputeFirewallPolicyAssociationTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeFirewallPolicyAssociation.ComputeFirewallPolicyAssociationTimeoutsOutputReference",
-		reflect.TypeOf((*ComputeFirewallPolicyAssociationTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeFirewallPolicyAssociationTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -116,7 +116,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeFirewallPolicyAssociationTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

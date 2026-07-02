@@ -12,9 +12,9 @@ type KmsKeyRingIamBindingConditionOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -49,7 +49,7 @@ type KmsKeyRingIamBindingConditionOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -73,7 +73,7 @@ type KmsKeyRingIamBindingConditionOutputReference interface {
 	ResetDescription()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -86,8 +86,8 @@ type jsiiProxy_KmsKeyRingIamBindingConditionOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_KmsKeyRingIamBindingConditionOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KmsKeyRingIamBindingConditionOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -216,7 +216,6 @@ func (j *jsiiProxy_KmsKeyRingIamBindingConditionOutputReference) TitleInput() *s
 	return returns
 }
 
-
 func NewKmsKeyRingIamBindingConditionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) KmsKeyRingIamBindingConditionOutputReference {
 	_init_.Initialize()
 
@@ -227,7 +226,7 @@ func NewKmsKeyRingIamBindingConditionOutputReference(terraformResource cdktf.IIn
 
 	_jsii_.Create(
 		"@cdktf/provider-google.kmsKeyRingIamBinding.KmsKeyRingIamBindingConditionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -239,12 +238,12 @@ func NewKmsKeyRingIamBindingConditionOutputReference_Override(k KmsKeyRingIamBin
 
 	_jsii_.Create(
 		"@cdktf/provider-google.kmsKeyRingIamBinding.KmsKeyRingIamBindingConditionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		k,
 	)
 }
 
-func (j *jsiiProxy_KmsKeyRingIamBindingConditionOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_KmsKeyRingIamBindingConditionOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_KmsKeyRingIamBindingConditionOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_KmsKeyRingIamBindingConditionOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_KmsKeyRingIamBindingConditionOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_KmsKeyRingIamBindingConditionOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_KmsKeyRingIamBindingConditionOutputReference)SetDescription(val *string) {
+func (j *jsiiProxy_KmsKeyRingIamBindingConditionOutputReference) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_KmsKeyRingIamBindingConditionOutputReference)SetDescription(v
 	)
 }
 
-func (j *jsiiProxy_KmsKeyRingIamBindingConditionOutputReference)SetExpression(val *string) {
+func (j *jsiiProxy_KmsKeyRingIamBindingConditionOutputReference) SetExpression(val *string) {
 	if err := j.validateSetExpressionParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_KmsKeyRingIamBindingConditionOutputReference)SetExpression(va
 	)
 }
 
-func (j *jsiiProxy_KmsKeyRingIamBindingConditionOutputReference)SetInternalValue(val *KmsKeyRingIamBindingCondition) {
+func (j *jsiiProxy_KmsKeyRingIamBindingConditionOutputReference) SetInternalValue(val *KmsKeyRingIamBindingCondition) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -299,7 +298,7 @@ func (j *jsiiProxy_KmsKeyRingIamBindingConditionOutputReference)SetInternalValue
 	)
 }
 
-func (j *jsiiProxy_KmsKeyRingIamBindingConditionOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_KmsKeyRingIamBindingConditionOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -310,7 +309,7 @@ func (j *jsiiProxy_KmsKeyRingIamBindingConditionOutputReference)SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_KmsKeyRingIamBindingConditionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_KmsKeyRingIamBindingConditionOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -321,7 +320,7 @@ func (j *jsiiProxy_KmsKeyRingIamBindingConditionOutputReference)SetTerraformReso
 	)
 }
 
-func (j *jsiiProxy_KmsKeyRingIamBindingConditionOutputReference)SetTitle(val *string) {
+func (j *jsiiProxy_KmsKeyRingIamBindingConditionOutputReference) SetTitle(val *string) {
 	if err := j.validateSetTitleParameters(val); err != nil {
 		panic(err)
 	}
@@ -345,16 +344,16 @@ func (k *jsiiProxy_KmsKeyRingIamBindingConditionOutputReference) ComputeFqn() *s
 	return returns
 }
 
-func (k *jsiiProxy_KmsKeyRingIamBindingConditionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (k *jsiiProxy_KmsKeyRingIamBindingConditionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := k.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		k,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -370,7 +369,7 @@ func (k *jsiiProxy_KmsKeyRingIamBindingConditionOutputReference) GetBooleanAttri
 	_jsii_.Invoke(
 		k,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -386,7 +385,7 @@ func (k *jsiiProxy_KmsKeyRingIamBindingConditionOutputReference) GetBooleanMapAt
 	_jsii_.Invoke(
 		k,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -402,7 +401,7 @@ func (k *jsiiProxy_KmsKeyRingIamBindingConditionOutputReference) GetListAttribut
 	_jsii_.Invoke(
 		k,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -418,7 +417,7 @@ func (k *jsiiProxy_KmsKeyRingIamBindingConditionOutputReference) GetNumberAttrib
 	_jsii_.Invoke(
 		k,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -434,7 +433,7 @@ func (k *jsiiProxy_KmsKeyRingIamBindingConditionOutputReference) GetNumberListAt
 	_jsii_.Invoke(
 		k,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -450,7 +449,7 @@ func (k *jsiiProxy_KmsKeyRingIamBindingConditionOutputReference) GetNumberMapAtt
 	_jsii_.Invoke(
 		k,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -466,7 +465,7 @@ func (k *jsiiProxy_KmsKeyRingIamBindingConditionOutputReference) GetStringAttrib
 	_jsii_.Invoke(
 		k,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -482,7 +481,7 @@ func (k *jsiiProxy_KmsKeyRingIamBindingConditionOutputReference) GetStringMapAtt
 	_jsii_.Invoke(
 		k,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -511,7 +510,7 @@ func (k *jsiiProxy_KmsKeyRingIamBindingConditionOutputReference) InterpolationFo
 	_jsii_.Invoke(
 		k,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -526,16 +525,16 @@ func (k *jsiiProxy_KmsKeyRingIamBindingConditionOutputReference) ResetDescriptio
 	)
 }
 
-func (k *jsiiProxy_KmsKeyRingIamBindingConditionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (k *jsiiProxy_KmsKeyRingIamBindingConditionOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := k.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		k,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -554,4 +553,3 @@ func (k *jsiiProxy_KmsKeyRingIamBindingConditionOutputReference) ToString() *str
 
 	return returns
 }
-

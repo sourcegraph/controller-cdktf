@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.lustreInstance.LustreInstance",
-		reflect.TypeOf((*LustreInstance)(nil)).Elem(),
+		reflect.TypeFor[LustreInstance](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessRulesOptions", GoGetter: "AccessRulesOptions"},
 			_jsii_.MemberProperty{JsiiProperty: "accessRulesOptionsInput", GoGetter: "AccessRulesOptionsInput"},
@@ -113,7 +113,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "upcomingMaintenanceSchedule", GoGetter: "UpcomingMaintenanceSchedule"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LustreInstance{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -121,15 +121,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.lustreInstance.LustreInstanceAccessRulesOptions",
-		reflect.TypeOf((*LustreInstanceAccessRulesOptions)(nil)).Elem(),
+		reflect.TypeFor[LustreInstanceAccessRulesOptions](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.lustreInstance.LustreInstanceAccessRulesOptionsAccessRules",
-		reflect.TypeOf((*LustreInstanceAccessRulesOptionsAccessRules)(nil)).Elem(),
+		reflect.TypeFor[LustreInstanceAccessRulesOptionsAccessRules](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.lustreInstance.LustreInstanceAccessRulesOptionsAccessRulesList",
-		reflect.TypeOf((*LustreInstanceAccessRulesOptionsAccessRulesList)(nil)).Elem(),
+		reflect.TypeFor[LustreInstanceAccessRulesOptionsAccessRulesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -143,7 +143,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LustreInstanceAccessRulesOptionsAccessRulesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -151,7 +151,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.lustreInstance.LustreInstanceAccessRulesOptionsAccessRulesOutputReference",
-		reflect.TypeOf((*LustreInstanceAccessRulesOptionsAccessRulesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LustreInstanceAccessRulesOptionsAccessRulesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -181,7 +181,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LustreInstanceAccessRulesOptionsAccessRulesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -189,7 +189,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.lustreInstance.LustreInstanceAccessRulesOptionsOutputReference",
-		reflect.TypeOf((*LustreInstanceAccessRulesOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LustreInstanceAccessRulesOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessRules", GoGetter: "AccessRules"},
 			_jsii_.MemberProperty{JsiiProperty: "accessRulesInput", GoGetter: "AccessRulesInput"},
@@ -225,7 +225,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LustreInstanceAccessRulesOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -233,15 +233,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.lustreInstance.LustreInstanceConfig",
-		reflect.TypeOf((*LustreInstanceConfig)(nil)).Elem(),
+		reflect.TypeFor[LustreInstanceConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.lustreInstance.LustreInstanceDynamicTierOptions",
-		reflect.TypeOf((*LustreInstanceDynamicTierOptions)(nil)).Elem(),
+		reflect.TypeFor[LustreInstanceDynamicTierOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.lustreInstance.LustreInstanceDynamicTierOptionsOutputReference",
-		reflect.TypeOf((*LustreInstanceDynamicTierOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LustreInstanceDynamicTierOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -267,7 +267,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LustreInstanceDynamicTierOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -275,19 +275,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.lustreInstance.LustreInstanceMaintenancePolicy",
-		reflect.TypeOf((*LustreInstanceMaintenancePolicy)(nil)).Elem(),
+		reflect.TypeFor[LustreInstanceMaintenancePolicy](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.lustreInstance.LustreInstanceMaintenancePolicyMaintenanceExclusionWindow",
-		reflect.TypeOf((*LustreInstanceMaintenancePolicyMaintenanceExclusionWindow)(nil)).Elem(),
+		reflect.TypeFor[LustreInstanceMaintenancePolicyMaintenanceExclusionWindow](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.lustreInstance.LustreInstanceMaintenancePolicyMaintenanceExclusionWindowEndDate",
-		reflect.TypeOf((*LustreInstanceMaintenancePolicyMaintenanceExclusionWindowEndDate)(nil)).Elem(),
+		reflect.TypeFor[LustreInstanceMaintenancePolicyMaintenanceExclusionWindowEndDate](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.lustreInstance.LustreInstanceMaintenancePolicyMaintenanceExclusionWindowEndDateOutputReference",
-		reflect.TypeOf((*LustreInstanceMaintenancePolicyMaintenanceExclusionWindowEndDateOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LustreInstanceMaintenancePolicyMaintenanceExclusionWindowEndDateOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -320,7 +320,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "year", GoGetter: "Year"},
 			_jsii_.MemberProperty{JsiiProperty: "yearInput", GoGetter: "YearInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LustreInstanceMaintenancePolicyMaintenanceExclusionWindowEndDateOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -328,7 +328,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.lustreInstance.LustreInstanceMaintenancePolicyMaintenanceExclusionWindowOutputReference",
-		reflect.TypeOf((*LustreInstanceMaintenancePolicyMaintenanceExclusionWindowOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LustreInstanceMaintenancePolicyMaintenanceExclusionWindowOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -361,7 +361,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "timeInput", GoGetter: "TimeInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LustreInstanceMaintenancePolicyMaintenanceExclusionWindowOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -369,11 +369,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.lustreInstance.LustreInstanceMaintenancePolicyMaintenanceExclusionWindowStartDate",
-		reflect.TypeOf((*LustreInstanceMaintenancePolicyMaintenanceExclusionWindowStartDate)(nil)).Elem(),
+		reflect.TypeFor[LustreInstanceMaintenancePolicyMaintenanceExclusionWindowStartDate](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.lustreInstance.LustreInstanceMaintenancePolicyMaintenanceExclusionWindowStartDateOutputReference",
-		reflect.TypeOf((*LustreInstanceMaintenancePolicyMaintenanceExclusionWindowStartDateOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LustreInstanceMaintenancePolicyMaintenanceExclusionWindowStartDateOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -406,7 +406,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "year", GoGetter: "Year"},
 			_jsii_.MemberProperty{JsiiProperty: "yearInput", GoGetter: "YearInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LustreInstanceMaintenancePolicyMaintenanceExclusionWindowStartDateOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -414,11 +414,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.lustreInstance.LustreInstanceMaintenancePolicyMaintenanceExclusionWindowTime",
-		reflect.TypeOf((*LustreInstanceMaintenancePolicyMaintenanceExclusionWindowTime)(nil)).Elem(),
+		reflect.TypeFor[LustreInstanceMaintenancePolicyMaintenanceExclusionWindowTime](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.lustreInstance.LustreInstanceMaintenancePolicyMaintenanceExclusionWindowTimeOutputReference",
-		reflect.TypeOf((*LustreInstanceMaintenancePolicyMaintenanceExclusionWindowTimeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LustreInstanceMaintenancePolicyMaintenanceExclusionWindowTimeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -454,7 +454,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LustreInstanceMaintenancePolicyMaintenanceExclusionWindowTimeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -462,7 +462,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.lustreInstance.LustreInstanceMaintenancePolicyOutputReference",
-		reflect.TypeOf((*LustreInstanceMaintenancePolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LustreInstanceMaintenancePolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -493,7 +493,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "weeklyMaintenanceWindows", GoGetter: "WeeklyMaintenanceWindows"},
 			_jsii_.MemberProperty{JsiiProperty: "weeklyMaintenanceWindowsInput", GoGetter: "WeeklyMaintenanceWindowsInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LustreInstanceMaintenancePolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -501,11 +501,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.lustreInstance.LustreInstanceMaintenancePolicyWeeklyMaintenanceWindows",
-		reflect.TypeOf((*LustreInstanceMaintenancePolicyWeeklyMaintenanceWindows)(nil)).Elem(),
+		reflect.TypeFor[LustreInstanceMaintenancePolicyWeeklyMaintenanceWindows](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.lustreInstance.LustreInstanceMaintenancePolicyWeeklyMaintenanceWindowsOutputReference",
-		reflect.TypeOf((*LustreInstanceMaintenancePolicyWeeklyMaintenanceWindowsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LustreInstanceMaintenancePolicyWeeklyMaintenanceWindowsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -534,7 +534,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LustreInstanceMaintenancePolicyWeeklyMaintenanceWindowsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -542,11 +542,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.lustreInstance.LustreInstanceMaintenancePolicyWeeklyMaintenanceWindowsStartTime",
-		reflect.TypeOf((*LustreInstanceMaintenancePolicyWeeklyMaintenanceWindowsStartTime)(nil)).Elem(),
+		reflect.TypeFor[LustreInstanceMaintenancePolicyWeeklyMaintenanceWindowsStartTime](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.lustreInstance.LustreInstanceMaintenancePolicyWeeklyMaintenanceWindowsStartTimeOutputReference",
-		reflect.TypeOf((*LustreInstanceMaintenancePolicyWeeklyMaintenanceWindowsStartTimeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LustreInstanceMaintenancePolicyWeeklyMaintenanceWindowsStartTimeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -582,7 +582,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LustreInstanceMaintenancePolicyWeeklyMaintenanceWindowsStartTimeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -590,11 +590,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.lustreInstance.LustreInstanceTimeouts",
-		reflect.TypeOf((*LustreInstanceTimeouts)(nil)).Elem(),
+		reflect.TypeFor[LustreInstanceTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.lustreInstance.LustreInstanceTimeoutsOutputReference",
-		reflect.TypeOf((*LustreInstanceTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LustreInstanceTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -627,7 +627,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LustreInstanceTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -635,11 +635,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.lustreInstance.LustreInstanceUpcomingMaintenanceSchedule",
-		reflect.TypeOf((*LustreInstanceUpcomingMaintenanceSchedule)(nil)).Elem(),
+		reflect.TypeFor[LustreInstanceUpcomingMaintenanceSchedule](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.lustreInstance.LustreInstanceUpcomingMaintenanceScheduleList",
-		reflect.TypeOf((*LustreInstanceUpcomingMaintenanceScheduleList)(nil)).Elem(),
+		reflect.TypeFor[LustreInstanceUpcomingMaintenanceScheduleList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -652,7 +652,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LustreInstanceUpcomingMaintenanceScheduleList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -660,7 +660,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.lustreInstance.LustreInstanceUpcomingMaintenanceScheduleOutputReference",
-		reflect.TypeOf((*LustreInstanceUpcomingMaintenanceScheduleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LustreInstanceUpcomingMaintenanceScheduleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -686,7 +686,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LustreInstanceUpcomingMaintenanceScheduleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

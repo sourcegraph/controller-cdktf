@@ -16,9 +16,9 @@ type DeveloperConnectConnectionHttpConfigOutputReference interface {
 	BearerTokenAuthenticationInput() *DeveloperConnectConnectionHttpConfigBearerTokenAuthentication
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -52,7 +52,7 @@ type DeveloperConnectConnectionHttpConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -82,7 +82,7 @@ type DeveloperConnectConnectionHttpConfigOutputReference interface {
 	ResetSslCaCertificate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -135,8 +135,8 @@ func (j *jsiiProxy_DeveloperConnectConnectionHttpConfigOutputReference) BearerTo
 	return returns
 }
 
-func (j *jsiiProxy_DeveloperConnectConnectionHttpConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DeveloperConnectConnectionHttpConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -265,7 +265,6 @@ func (j *jsiiProxy_DeveloperConnectConnectionHttpConfigOutputReference) Terrafor
 	return returns
 }
 
-
 func NewDeveloperConnectConnectionHttpConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DeveloperConnectConnectionHttpConfigOutputReference {
 	_init_.Initialize()
 
@@ -276,7 +275,7 @@ func NewDeveloperConnectConnectionHttpConfigOutputReference(terraformResource cd
 
 	_jsii_.Create(
 		"@cdktf/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -288,12 +287,12 @@ func NewDeveloperConnectConnectionHttpConfigOutputReference_Override(d Developer
 
 	_jsii_.Create(
 		"@cdktf/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DeveloperConnectConnectionHttpConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DeveloperConnectConnectionHttpConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -304,7 +303,7 @@ func (j *jsiiProxy_DeveloperConnectConnectionHttpConfigOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_DeveloperConnectConnectionHttpConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DeveloperConnectConnectionHttpConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -315,7 +314,7 @@ func (j *jsiiProxy_DeveloperConnectConnectionHttpConfigOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_DeveloperConnectConnectionHttpConfigOutputReference)SetHostUri(val *string) {
+func (j *jsiiProxy_DeveloperConnectConnectionHttpConfigOutputReference) SetHostUri(val *string) {
 	if err := j.validateSetHostUriParameters(val); err != nil {
 		panic(err)
 	}
@@ -326,7 +325,7 @@ func (j *jsiiProxy_DeveloperConnectConnectionHttpConfigOutputReference)SetHostUr
 	)
 }
 
-func (j *jsiiProxy_DeveloperConnectConnectionHttpConfigOutputReference)SetInternalValue(val *DeveloperConnectConnectionHttpConfig) {
+func (j *jsiiProxy_DeveloperConnectConnectionHttpConfigOutputReference) SetInternalValue(val *DeveloperConnectConnectionHttpConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -337,7 +336,7 @@ func (j *jsiiProxy_DeveloperConnectConnectionHttpConfigOutputReference)SetIntern
 	)
 }
 
-func (j *jsiiProxy_DeveloperConnectConnectionHttpConfigOutputReference)SetSslCaCertificate(val *string) {
+func (j *jsiiProxy_DeveloperConnectConnectionHttpConfigOutputReference) SetSslCaCertificate(val *string) {
 	if err := j.validateSetSslCaCertificateParameters(val); err != nil {
 		panic(err)
 	}
@@ -348,7 +347,7 @@ func (j *jsiiProxy_DeveloperConnectConnectionHttpConfigOutputReference)SetSslCaC
 	)
 }
 
-func (j *jsiiProxy_DeveloperConnectConnectionHttpConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DeveloperConnectConnectionHttpConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -359,7 +358,7 @@ func (j *jsiiProxy_DeveloperConnectConnectionHttpConfigOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_DeveloperConnectConnectionHttpConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DeveloperConnectConnectionHttpConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -383,16 +382,16 @@ func (d *jsiiProxy_DeveloperConnectConnectionHttpConfigOutputReference) ComputeF
 	return returns
 }
 
-func (d *jsiiProxy_DeveloperConnectConnectionHttpConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DeveloperConnectConnectionHttpConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -408,7 +407,7 @@ func (d *jsiiProxy_DeveloperConnectConnectionHttpConfigOutputReference) GetBoole
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -424,7 +423,7 @@ func (d *jsiiProxy_DeveloperConnectConnectionHttpConfigOutputReference) GetBoole
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -440,7 +439,7 @@ func (d *jsiiProxy_DeveloperConnectConnectionHttpConfigOutputReference) GetListA
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -456,7 +455,7 @@ func (d *jsiiProxy_DeveloperConnectConnectionHttpConfigOutputReference) GetNumbe
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -472,7 +471,7 @@ func (d *jsiiProxy_DeveloperConnectConnectionHttpConfigOutputReference) GetNumbe
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -488,7 +487,7 @@ func (d *jsiiProxy_DeveloperConnectConnectionHttpConfigOutputReference) GetNumbe
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -504,7 +503,7 @@ func (d *jsiiProxy_DeveloperConnectConnectionHttpConfigOutputReference) GetStrin
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -520,7 +519,7 @@ func (d *jsiiProxy_DeveloperConnectConnectionHttpConfigOutputReference) GetStrin
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -549,7 +548,7 @@ func (d *jsiiProxy_DeveloperConnectConnectionHttpConfigOutputReference) Interpol
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -563,7 +562,7 @@ func (d *jsiiProxy_DeveloperConnectConnectionHttpConfigOutputReference) PutBasic
 	_jsii_.InvokeVoid(
 		d,
 		"putBasicAuthentication",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -574,7 +573,7 @@ func (d *jsiiProxy_DeveloperConnectConnectionHttpConfigOutputReference) PutBeare
 	_jsii_.InvokeVoid(
 		d,
 		"putBearerTokenAuthentication",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -585,7 +584,7 @@ func (d *jsiiProxy_DeveloperConnectConnectionHttpConfigOutputReference) PutServi
 	_jsii_.InvokeVoid(
 		d,
 		"putServiceDirectoryConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -621,16 +620,16 @@ func (d *jsiiProxy_DeveloperConnectConnectionHttpConfigOutputReference) ResetSsl
 	)
 }
 
-func (d *jsiiProxy_DeveloperConnectConnectionHttpConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DeveloperConnectConnectionHttpConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -649,4 +648,3 @@ func (d *jsiiProxy_DeveloperConnectConnectionHttpConfigOutputReference) ToString
 
 	return returns
 }
-

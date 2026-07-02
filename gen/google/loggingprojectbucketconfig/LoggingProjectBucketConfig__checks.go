@@ -19,7 +19,7 @@ func (l *jsiiProxy_LoggingProjectBucketConfig) validateAddMoveTargetParameters(m
 	return nil
 }
 
-func (l *jsiiProxy_LoggingProjectBucketConfig) validateAddOverrideParameters(path *string, value interface{}) error {
+func (l *jsiiProxy_LoggingProjectBucketConfig) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (l *jsiiProxy_LoggingProjectBucketConfig) validateMoveFromIdParameters(id *
 	return nil
 }
 
-func (l *jsiiProxy_LoggingProjectBucketConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (l *jsiiProxy_LoggingProjectBucketConfig) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -215,7 +215,7 @@ func (l *jsiiProxy_LoggingProjectBucketConfig) validatePutCmekSettingsParameters
 	return nil
 }
 
-func (l *jsiiProxy_LoggingProjectBucketConfig) validatePutIndexConfigsParameters(value interface{}) error {
+func (l *jsiiProxy_LoggingProjectBucketConfig) validatePutIndexConfigsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -262,7 +262,7 @@ func validateLoggingProjectBucketConfig_GenerateConfigForImportParameters(scope 
 	return nil
 }
 
-func validateLoggingProjectBucketConfig_IsConstructParameters(x interface{}) error {
+func validateLoggingProjectBucketConfig_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -270,7 +270,7 @@ func validateLoggingProjectBucketConfig_IsConstructParameters(x interface{}) err
 	return nil
 }
 
-func validateLoggingProjectBucketConfig_IsTerraformElementParameters(x interface{}) error {
+func validateLoggingProjectBucketConfig_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -278,7 +278,7 @@ func validateLoggingProjectBucketConfig_IsTerraformElementParameters(x interface
 	return nil
 }
 
-func validateLoggingProjectBucketConfig_IsTerraformResourceParameters(x interface{}) error {
+func validateLoggingProjectBucketConfig_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -294,7 +294,7 @@ func (j *jsiiProxy_LoggingProjectBucketConfig) validateSetBucketIdParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_LoggingProjectBucketConfig) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_LoggingProjectBucketConfig) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -327,7 +327,7 @@ func (j *jsiiProxy_LoggingProjectBucketConfig) validateSetConnectionParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_LoggingProjectBucketConfig) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_LoggingProjectBucketConfig) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -392,7 +392,7 @@ func (j *jsiiProxy_LoggingProjectBucketConfig) validateSetDescriptionParameters(
 	return nil
 }
 
-func (j *jsiiProxy_LoggingProjectBucketConfig) validateSetEnableAnalyticsParameters(val interface{}) error {
+func (j *jsiiProxy_LoggingProjectBucketConfig) validateSetEnableAnalyticsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -436,7 +436,7 @@ func (j *jsiiProxy_LoggingProjectBucketConfig) validateSetLocationParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_LoggingProjectBucketConfig) validateSetLockedParameters(val interface{}) error {
+func (j *jsiiProxy_LoggingProjectBucketConfig) validateSetLockedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -464,7 +464,7 @@ func (j *jsiiProxy_LoggingProjectBucketConfig) validateSetProjectParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_LoggingProjectBucketConfig) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_LoggingProjectBucketConfig) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -536,4 +536,3 @@ func validateNewLoggingProjectBucketConfigParameters(scope constructs.Construct,
 
 	return nil
 }
-

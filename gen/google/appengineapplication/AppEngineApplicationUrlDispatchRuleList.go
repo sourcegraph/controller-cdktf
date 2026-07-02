@@ -36,7 +36,7 @@ type AppEngineApplicationUrlDispatchRuleList interface {
 	Get(index *float64) AppEngineApplicationUrlDispatchRuleOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,7 +99,6 @@ func (j *jsiiProxy_AppEngineApplicationUrlDispatchRuleList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewAppEngineApplicationUrlDispatchRuleList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppEngineApplicationUrlDispatchRuleList {
 	_init_.Initialize()
 
@@ -110,7 +109,7 @@ func NewAppEngineApplicationUrlDispatchRuleList(terraformResource cdktf.IInterpo
 
 	_jsii_.Create(
 		"@cdktf/provider-google.appEngineApplication.AppEngineApplicationUrlDispatchRuleList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -122,12 +121,12 @@ func NewAppEngineApplicationUrlDispatchRuleList_Override(a AppEngineApplicationU
 
 	_jsii_.Create(
 		"@cdktf/provider-google.appEngineApplication.AppEngineApplicationUrlDispatchRuleList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AppEngineApplicationUrlDispatchRuleList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AppEngineApplicationUrlDispatchRuleList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -138,7 +137,7 @@ func (j *jsiiProxy_AppEngineApplicationUrlDispatchRuleList)SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_AppEngineApplicationUrlDispatchRuleList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AppEngineApplicationUrlDispatchRuleList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -149,7 +148,7 @@ func (j *jsiiProxy_AppEngineApplicationUrlDispatchRuleList)SetTerraformResource(
 	)
 }
 
-func (j *jsiiProxy_AppEngineApplicationUrlDispatchRuleList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_AppEngineApplicationUrlDispatchRuleList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -169,7 +168,7 @@ func (a *jsiiProxy_AppEngineApplicationUrlDispatchRuleList) AllWithMapKey(mapKey
 	_jsii_.Invoke(
 		a,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -198,23 +197,23 @@ func (a *jsiiProxy_AppEngineApplicationUrlDispatchRuleList) Get(index *float64) 
 	_jsii_.Invoke(
 		a,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_AppEngineApplicationUrlDispatchRuleList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AppEngineApplicationUrlDispatchRuleList) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -233,4 +232,3 @@ func (a *jsiiProxy_AppEngineApplicationUrlDispatchRuleList) ToString() *string {
 
 	return returns
 }
-

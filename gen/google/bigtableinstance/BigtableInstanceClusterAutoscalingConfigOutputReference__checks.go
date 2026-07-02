@@ -98,7 +98,7 @@ func (b *jsiiProxy_BigtableInstanceClusterAutoscalingConfigOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_BigtableInstanceClusterAutoscalingConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BigtableInstanceClusterAutoscalingConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewBigtableInstanceClusterAutoscalingConfigOutputReferenceParameter
 
 	return nil
 }
-

@@ -6,9 +6,9 @@ import (
 
 type DialogflowCxEnvironmentConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type DialogflowCxEnvironmentConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The human-readable name of the environment (unique in an agent). Limit of 64 characters.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_environment#display_name DialogflowCxEnvironment#display_name}
@@ -26,7 +26,7 @@ type DialogflowCxEnvironmentConfig struct {
 	// version_configs block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_environment#version_configs DialogflowCxEnvironment#version_configs}
-	VersionConfigs interface{} `field:"required" json:"versionConfigs" yaml:"versionConfigs"`
+	VersionConfigs any `field:"required" json:"versionConfigs" yaml:"versionConfigs"`
 	// The human-readable description of the environment. The maximum length is 500 characters. If exceeded, the request is rejected.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_environment#description DialogflowCxEnvironment#description}
@@ -45,4 +45,3 @@ type DialogflowCxEnvironmentConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_environment#timeouts DialogflowCxEnvironment#timeouts}
 	Timeouts *DialogflowCxEnvironmentTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

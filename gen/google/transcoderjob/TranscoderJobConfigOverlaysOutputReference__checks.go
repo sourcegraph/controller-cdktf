@@ -90,7 +90,7 @@ func (t *jsiiProxy_TranscoderJobConfigOverlaysOutputReference) validateInterpola
 	return nil
 }
 
-func (t *jsiiProxy_TranscoderJobConfigOverlaysOutputReference) validatePutAnimationsParameters(value interface{}) error {
+func (t *jsiiProxy_TranscoderJobConfigOverlaysOutputReference) validatePutAnimationsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -140,7 +140,7 @@ func (t *jsiiProxy_TranscoderJobConfigOverlaysOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_TranscoderJobConfigOverlaysOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_TranscoderJobConfigOverlaysOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -205,7 +205,7 @@ func (j *jsiiProxy_TranscoderJobConfigOverlaysOutputReference) validateSetComple
 	return nil
 }
 
-func (j *jsiiProxy_TranscoderJobConfigOverlaysOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_TranscoderJobConfigOverlaysOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -264,4 +264,3 @@ func validateNewTranscoderJobConfigOverlaysOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

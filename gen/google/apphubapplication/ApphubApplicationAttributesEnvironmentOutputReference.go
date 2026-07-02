@@ -12,9 +12,9 @@ type ApphubApplicationAttributesEnvironmentOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -43,7 +43,7 @@ type ApphubApplicationAttributesEnvironmentOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -66,7 +66,7 @@ type ApphubApplicationAttributesEnvironmentOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,8 +79,8 @@ type jsiiProxy_ApphubApplicationAttributesEnvironmentOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ApphubApplicationAttributesEnvironmentOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApphubApplicationAttributesEnvironmentOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -169,7 +169,6 @@ func (j *jsiiProxy_ApphubApplicationAttributesEnvironmentOutputReference) TypeIn
 	return returns
 }
 
-
 func NewApphubApplicationAttributesEnvironmentOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ApphubApplicationAttributesEnvironmentOutputReference {
 	_init_.Initialize()
 
@@ -180,7 +179,7 @@ func NewApphubApplicationAttributesEnvironmentOutputReference(terraformResource 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.apphubApplication.ApphubApplicationAttributesEnvironmentOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -192,12 +191,12 @@ func NewApphubApplicationAttributesEnvironmentOutputReference_Override(a ApphubA
 
 	_jsii_.Create(
 		"@cdktf/provider-google.apphubApplication.ApphubApplicationAttributesEnvironmentOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		a,
 	)
 }
 
-func (j *jsiiProxy_ApphubApplicationAttributesEnvironmentOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ApphubApplicationAttributesEnvironmentOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -208,7 +207,7 @@ func (j *jsiiProxy_ApphubApplicationAttributesEnvironmentOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_ApphubApplicationAttributesEnvironmentOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ApphubApplicationAttributesEnvironmentOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -219,7 +218,7 @@ func (j *jsiiProxy_ApphubApplicationAttributesEnvironmentOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_ApphubApplicationAttributesEnvironmentOutputReference)SetInternalValue(val *ApphubApplicationAttributesEnvironment) {
+func (j *jsiiProxy_ApphubApplicationAttributesEnvironmentOutputReference) SetInternalValue(val *ApphubApplicationAttributesEnvironment) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -230,7 +229,7 @@ func (j *jsiiProxy_ApphubApplicationAttributesEnvironmentOutputReference)SetInte
 	)
 }
 
-func (j *jsiiProxy_ApphubApplicationAttributesEnvironmentOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ApphubApplicationAttributesEnvironmentOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -241,7 +240,7 @@ func (j *jsiiProxy_ApphubApplicationAttributesEnvironmentOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_ApphubApplicationAttributesEnvironmentOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ApphubApplicationAttributesEnvironmentOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -252,7 +251,7 @@ func (j *jsiiProxy_ApphubApplicationAttributesEnvironmentOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_ApphubApplicationAttributesEnvironmentOutputReference)SetType(val *string) {
+func (j *jsiiProxy_ApphubApplicationAttributesEnvironmentOutputReference) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,16 +275,16 @@ func (a *jsiiProxy_ApphubApplicationAttributesEnvironmentOutputReference) Comput
 	return returns
 }
 
-func (a *jsiiProxy_ApphubApplicationAttributesEnvironmentOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_ApphubApplicationAttributesEnvironmentOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -301,7 +300,7 @@ func (a *jsiiProxy_ApphubApplicationAttributesEnvironmentOutputReference) GetBoo
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -317,7 +316,7 @@ func (a *jsiiProxy_ApphubApplicationAttributesEnvironmentOutputReference) GetBoo
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -333,7 +332,7 @@ func (a *jsiiProxy_ApphubApplicationAttributesEnvironmentOutputReference) GetLis
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -349,7 +348,7 @@ func (a *jsiiProxy_ApphubApplicationAttributesEnvironmentOutputReference) GetNum
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -365,7 +364,7 @@ func (a *jsiiProxy_ApphubApplicationAttributesEnvironmentOutputReference) GetNum
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -381,7 +380,7 @@ func (a *jsiiProxy_ApphubApplicationAttributesEnvironmentOutputReference) GetNum
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -397,7 +396,7 @@ func (a *jsiiProxy_ApphubApplicationAttributesEnvironmentOutputReference) GetStr
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -413,7 +412,7 @@ func (a *jsiiProxy_ApphubApplicationAttributesEnvironmentOutputReference) GetStr
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -442,23 +441,23 @@ func (a *jsiiProxy_ApphubApplicationAttributesEnvironmentOutputReference) Interp
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_ApphubApplicationAttributesEnvironmentOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_ApphubApplicationAttributesEnvironmentOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -477,4 +476,3 @@ func (a *jsiiProxy_ApphubApplicationAttributesEnvironmentOutputReference) ToStri
 
 	return returns
 }
-

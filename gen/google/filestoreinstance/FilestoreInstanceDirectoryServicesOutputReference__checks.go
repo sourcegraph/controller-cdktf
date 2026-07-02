@@ -109,7 +109,7 @@ func (f *jsiiProxy_FilestoreInstanceDirectoryServicesOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_FilestoreInstanceDirectoryServicesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_FilestoreInstanceDirectoryServicesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewFilestoreInstanceDirectoryServicesOutputReferenceParameters(terr
 
 	return nil
 }
-

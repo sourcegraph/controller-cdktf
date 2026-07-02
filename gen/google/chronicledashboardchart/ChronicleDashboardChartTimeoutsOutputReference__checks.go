@@ -98,7 +98,7 @@ func (c *jsiiProxy_ChronicleDashboardChartTimeoutsOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_ChronicleDashboardChartTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ChronicleDashboardChartTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_ChronicleDashboardChartTimeoutsOutputReference) validateSetDe
 	return nil
 }
 
-func (j *jsiiProxy_ChronicleDashboardChartTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ChronicleDashboardChartTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewChronicleDashboardChartTimeoutsOutputReferenceParameters(terrafo
 
 	return nil
 }
-

@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataGoogleServiceAccount) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataGoogleServiceAccount) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataGoogleServiceAccount_GenerateConfigForImportParameters(scope co
 	return nil
 }
 
-func validateDataGoogleServiceAccount_IsConstructParameters(x interface{}) error {
+func validateDataGoogleServiceAccount_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataGoogleServiceAccount_IsConstructParameters(x interface{}) error
 	return nil
 }
 
-func validateDataGoogleServiceAccount_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataGoogleServiceAccount_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataGoogleServiceAccount_IsTerraformDataSourceParameters(x interfac
 	return nil
 }
 
-func validateDataGoogleServiceAccount_IsTerraformElementParameters(x interface{}) error {
+func validateDataGoogleServiceAccount_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -159,7 +159,7 @@ func (j *jsiiProxy_DataGoogleServiceAccount) validateSetAccountIdParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleServiceAccount) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleServiceAccount) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -258,4 +258,3 @@ func validateNewDataGoogleServiceAccountParameters(scope constructs.Construct, i
 
 	return nil
 }
-

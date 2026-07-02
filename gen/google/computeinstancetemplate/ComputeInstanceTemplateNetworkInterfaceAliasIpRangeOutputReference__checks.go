@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceAliasIpRangeOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceAliasIpRangeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceAliasIpRangeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceAliasIpRangeOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceAliasIpRangeOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceAliasIpRangeOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewComputeInstanceTemplateNetworkInterfaceAliasIpRangeOutputReferen
 
 	return nil
 }
-

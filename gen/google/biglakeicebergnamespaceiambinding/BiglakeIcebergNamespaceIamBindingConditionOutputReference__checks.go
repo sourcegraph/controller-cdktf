@@ -98,7 +98,7 @@ func (b *jsiiProxy_BiglakeIcebergNamespaceIamBindingConditionOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_BiglakeIcebergNamespaceIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BiglakeIcebergNamespaceIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewBiglakeIcebergNamespaceIamBindingConditionOutputReferenceParamet
 
 	return nil
 }
-

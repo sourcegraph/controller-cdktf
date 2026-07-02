@@ -1,6 +1,5 @@
 package monitoringalertpolicy
 
-
 type MonitoringAlertPolicyAlertStrategy struct {
 	// If an alert policy that was active has no data for this long, any open incidents will close.
 	//
@@ -9,7 +8,7 @@ type MonitoringAlertPolicyAlertStrategy struct {
 	// notification_channel_strategy block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_alert_policy#notification_channel_strategy MonitoringAlertPolicy#notification_channel_strategy}
-	NotificationChannelStrategy interface{} `field:"optional" json:"notificationChannelStrategy" yaml:"notificationChannelStrategy"`
+	NotificationChannelStrategy any `field:"optional" json:"notificationChannelStrategy" yaml:"notificationChannelStrategy"`
 	// Control when notifications will be sent out. Possible values: ["NOTIFICATION_PROMPT_UNSPECIFIED", "OPENED", "CLOSED"].
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_alert_policy#notification_prompts MonitoringAlertPolicy#notification_prompts}
@@ -19,4 +18,3 @@ type MonitoringAlertPolicyAlertStrategy struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_alert_policy#notification_rate_limit MonitoringAlertPolicy#notification_rate_limit}
 	NotificationRateLimit *MonitoringAlertPolicyAlertStrategyNotificationRateLimit `field:"optional" json:"notificationRateLimit" yaml:"notificationRateLimit"`
 }
-

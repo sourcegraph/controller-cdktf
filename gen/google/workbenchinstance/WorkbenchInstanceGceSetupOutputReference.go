@@ -11,14 +11,14 @@ import (
 type WorkbenchInstanceGceSetupOutputReference interface {
 	cdktf.ComplexObject
 	AcceleratorConfigs() WorkbenchInstanceGceSetupAcceleratorConfigsList
-	AcceleratorConfigsInput() interface{}
+	AcceleratorConfigsInput() any
 	BootDisk() WorkbenchInstanceGceSetupBootDiskOutputReference
 	BootDiskInput() *WorkbenchInstanceGceSetupBootDisk
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -35,12 +35,12 @@ type WorkbenchInstanceGceSetupOutputReference interface {
 	CreationStack() *[]*string
 	DataDisks() WorkbenchInstanceGceSetupDataDisksOutputReference
 	DataDisksInput() *WorkbenchInstanceGceSetupDataDisks
-	DisablePublicIp() interface{}
-	SetDisablePublicIp(val interface{})
-	DisablePublicIpInput() interface{}
-	EnableIpForwarding() interface{}
-	SetEnableIpForwarding(val interface{})
-	EnableIpForwardingInput() interface{}
+	DisablePublicIp() any
+	SetDisablePublicIp(val any)
+	DisablePublicIpInput() any
+	EnableIpForwarding() any
+	SetEnableIpForwarding(val any)
+	EnableIpForwardingInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *WorkbenchInstanceGceSetup
@@ -52,11 +52,11 @@ type WorkbenchInstanceGceSetupOutputReference interface {
 	SetMetadata(val *map[string]*string)
 	MetadataInput() *map[string]*string
 	NetworkInterfaces() WorkbenchInstanceGceSetupNetworkInterfacesList
-	NetworkInterfacesInput() interface{}
+	NetworkInterfacesInput() any
 	ReservationAffinity() WorkbenchInstanceGceSetupReservationAffinityOutputReference
 	ReservationAffinityInput() *WorkbenchInstanceGceSetupReservationAffinity
 	ServiceAccounts() WorkbenchInstanceGceSetupServiceAccountsList
-	ServiceAccountsInput() interface{}
+	ServiceAccountsInput() any
 	ShieldedInstanceConfig() WorkbenchInstanceGceSetupShieldedInstanceConfigOutputReference
 	ShieldedInstanceConfigInput() *WorkbenchInstanceGceSetupShieldedInstanceConfig
 	Tags() *[]*string
@@ -75,7 +75,7 @@ type WorkbenchInstanceGceSetupOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -96,14 +96,14 @@ type WorkbenchInstanceGceSetupOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutAcceleratorConfigs(value interface{})
+	PutAcceleratorConfigs(value any)
 	PutBootDisk(value *WorkbenchInstanceGceSetupBootDisk)
 	PutConfidentialInstanceConfig(value *WorkbenchInstanceGceSetupConfidentialInstanceConfig)
 	PutContainerImage(value *WorkbenchInstanceGceSetupContainerImage)
 	PutDataDisks(value *WorkbenchInstanceGceSetupDataDisks)
-	PutNetworkInterfaces(value interface{})
+	PutNetworkInterfaces(value any)
 	PutReservationAffinity(value *WorkbenchInstanceGceSetupReservationAffinity)
-	PutServiceAccounts(value interface{})
+	PutServiceAccounts(value any)
 	PutShieldedInstanceConfig(value *WorkbenchInstanceGceSetupShieldedInstanceConfig)
 	PutVmImage(value *WorkbenchInstanceGceSetupVmImage)
 	ResetAcceleratorConfigs()
@@ -123,7 +123,7 @@ type WorkbenchInstanceGceSetupOutputReference interface {
 	ResetVmImage()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -146,8 +146,8 @@ func (j *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) AcceleratorConfigs(
 	return returns
 }
 
-func (j *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) AcceleratorConfigsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) AcceleratorConfigsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"acceleratorConfigsInput",
@@ -176,8 +176,8 @@ func (j *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) BootDiskInput() *Wo
 	return returns
 }
 
-func (j *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -266,8 +266,8 @@ func (j *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) DataDisksInput() *W
 	return returns
 }
 
-func (j *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) DisablePublicIp() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) DisablePublicIp() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disablePublicIp",
@@ -276,8 +276,8 @@ func (j *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) DisablePublicIp() i
 	return returns
 }
 
-func (j *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) DisablePublicIpInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) DisablePublicIpInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disablePublicIpInput",
@@ -286,8 +286,8 @@ func (j *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) DisablePublicIpInpu
 	return returns
 }
 
-func (j *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) EnableIpForwarding() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) EnableIpForwarding() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableIpForwarding",
@@ -296,8 +296,8 @@ func (j *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) EnableIpForwarding(
 	return returns
 }
 
-func (j *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) EnableIpForwardingInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) EnableIpForwardingInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableIpForwardingInput",
@@ -376,8 +376,8 @@ func (j *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) NetworkInterfaces()
 	return returns
 }
 
-func (j *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) NetworkInterfacesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) NetworkInterfacesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"networkInterfacesInput",
@@ -416,8 +416,8 @@ func (j *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) ServiceAccounts() W
 	return returns
 }
 
-func (j *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) ServiceAccountsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) ServiceAccountsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"serviceAccountsInput",
@@ -506,7 +506,6 @@ func (j *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) VmImageInput() *Wor
 	return returns
 }
 
-
 func NewWorkbenchInstanceGceSetupOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) WorkbenchInstanceGceSetupOutputReference {
 	_init_.Initialize()
 
@@ -517,7 +516,7 @@ func NewWorkbenchInstanceGceSetupOutputReference(terraformResource cdktf.IInterp
 
 	_jsii_.Create(
 		"@cdktf/provider-google.workbenchInstance.WorkbenchInstanceGceSetupOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -529,12 +528,12 @@ func NewWorkbenchInstanceGceSetupOutputReference_Override(w WorkbenchInstanceGce
 
 	_jsii_.Create(
 		"@cdktf/provider-google.workbenchInstance.WorkbenchInstanceGceSetupOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		w,
 	)
 }
 
-func (j *jsiiProxy_WorkbenchInstanceGceSetupOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -545,7 +544,7 @@ func (j *jsiiProxy_WorkbenchInstanceGceSetupOutputReference)SetComplexObjectInde
 	)
 }
 
-func (j *jsiiProxy_WorkbenchInstanceGceSetupOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -556,7 +555,7 @@ func (j *jsiiProxy_WorkbenchInstanceGceSetupOutputReference)SetComplexObjectIsFr
 	)
 }
 
-func (j *jsiiProxy_WorkbenchInstanceGceSetupOutputReference)SetDisablePublicIp(val interface{}) {
+func (j *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) SetDisablePublicIp(val any) {
 	if err := j.validateSetDisablePublicIpParameters(val); err != nil {
 		panic(err)
 	}
@@ -567,7 +566,7 @@ func (j *jsiiProxy_WorkbenchInstanceGceSetupOutputReference)SetDisablePublicIp(v
 	)
 }
 
-func (j *jsiiProxy_WorkbenchInstanceGceSetupOutputReference)SetEnableIpForwarding(val interface{}) {
+func (j *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) SetEnableIpForwarding(val any) {
 	if err := j.validateSetEnableIpForwardingParameters(val); err != nil {
 		panic(err)
 	}
@@ -578,7 +577,7 @@ func (j *jsiiProxy_WorkbenchInstanceGceSetupOutputReference)SetEnableIpForwardin
 	)
 }
 
-func (j *jsiiProxy_WorkbenchInstanceGceSetupOutputReference)SetInternalValue(val *WorkbenchInstanceGceSetup) {
+func (j *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) SetInternalValue(val *WorkbenchInstanceGceSetup) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -589,7 +588,7 @@ func (j *jsiiProxy_WorkbenchInstanceGceSetupOutputReference)SetInternalValue(val
 	)
 }
 
-func (j *jsiiProxy_WorkbenchInstanceGceSetupOutputReference)SetMachineType(val *string) {
+func (j *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) SetMachineType(val *string) {
 	if err := j.validateSetMachineTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -600,7 +599,7 @@ func (j *jsiiProxy_WorkbenchInstanceGceSetupOutputReference)SetMachineType(val *
 	)
 }
 
-func (j *jsiiProxy_WorkbenchInstanceGceSetupOutputReference)SetMetadata(val *map[string]*string) {
+func (j *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) SetMetadata(val *map[string]*string) {
 	if err := j.validateSetMetadataParameters(val); err != nil {
 		panic(err)
 	}
@@ -611,7 +610,7 @@ func (j *jsiiProxy_WorkbenchInstanceGceSetupOutputReference)SetMetadata(val *map
 	)
 }
 
-func (j *jsiiProxy_WorkbenchInstanceGceSetupOutputReference)SetTags(val *[]*string) {
+func (j *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) SetTags(val *[]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -622,7 +621,7 @@ func (j *jsiiProxy_WorkbenchInstanceGceSetupOutputReference)SetTags(val *[]*stri
 	)
 }
 
-func (j *jsiiProxy_WorkbenchInstanceGceSetupOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -633,7 +632,7 @@ func (j *jsiiProxy_WorkbenchInstanceGceSetupOutputReference)SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_WorkbenchInstanceGceSetupOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -657,16 +656,16 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) ComputeFqn() *strin
 	return returns
 }
 
-func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := w.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -682,7 +681,7 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) GetBooleanAttribute
 	_jsii_.Invoke(
 		w,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -698,7 +697,7 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) GetBooleanMapAttrib
 	_jsii_.Invoke(
 		w,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -714,7 +713,7 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) GetListAttribute(te
 	_jsii_.Invoke(
 		w,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -730,7 +729,7 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) GetNumberAttribute(
 	_jsii_.Invoke(
 		w,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -746,7 +745,7 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) GetNumberListAttrib
 	_jsii_.Invoke(
 		w,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -762,7 +761,7 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) GetNumberMapAttribu
 	_jsii_.Invoke(
 		w,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -778,7 +777,7 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) GetStringAttribute(
 	_jsii_.Invoke(
 		w,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -794,7 +793,7 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) GetStringMapAttribu
 	_jsii_.Invoke(
 		w,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -823,21 +822,21 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) InterpolationForAtt
 	_jsii_.Invoke(
 		w,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) PutAcceleratorConfigs(value interface{}) {
+func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) PutAcceleratorConfigs(value any) {
 	if err := w.validatePutAcceleratorConfigsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		w,
 		"putAcceleratorConfigs",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -848,7 +847,7 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) PutBootDisk(value *
 	_jsii_.InvokeVoid(
 		w,
 		"putBootDisk",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -859,7 +858,7 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) PutConfidentialInst
 	_jsii_.InvokeVoid(
 		w,
 		"putConfidentialInstanceConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -870,7 +869,7 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) PutContainerImage(v
 	_jsii_.InvokeVoid(
 		w,
 		"putContainerImage",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -881,18 +880,18 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) PutDataDisks(value 
 	_jsii_.InvokeVoid(
 		w,
 		"putDataDisks",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) PutNetworkInterfaces(value interface{}) {
+func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) PutNetworkInterfaces(value any) {
 	if err := w.validatePutNetworkInterfacesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		w,
 		"putNetworkInterfaces",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -903,18 +902,18 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) PutReservationAffin
 	_jsii_.InvokeVoid(
 		w,
 		"putReservationAffinity",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) PutServiceAccounts(value interface{}) {
+func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) PutServiceAccounts(value any) {
 	if err := w.validatePutServiceAccountsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		w,
 		"putServiceAccounts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -925,7 +924,7 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) PutShieldedInstance
 	_jsii_.InvokeVoid(
 		w,
 		"putShieldedInstanceConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -936,7 +935,7 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) PutVmImage(value *W
 	_jsii_.InvokeVoid(
 		w,
 		"putVmImage",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1060,16 +1059,16 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) ResetVmImage() {
 	)
 }
 
-func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := w.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		w,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -1088,4 +1087,3 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) ToString() *string 
 
 	return returns
 }
-

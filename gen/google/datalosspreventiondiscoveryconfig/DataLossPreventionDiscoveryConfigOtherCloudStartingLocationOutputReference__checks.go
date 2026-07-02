@@ -109,7 +109,7 @@ func (d *jsiiProxy_DataLossPreventionDiscoveryConfigOtherCloudStartingLocationOu
 	return nil
 }
 
-func (j *jsiiProxy_DataLossPreventionDiscoveryConfigOtherCloudStartingLocationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataLossPreventionDiscoveryConfigOtherCloudStartingLocationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewDataLossPreventionDiscoveryConfigOtherCloudStartingLocationOutpu
 
 	return nil
 }
-

@@ -36,7 +36,7 @@ type DataplexAssetSecurityStatusList interface {
 	Get(index *float64) DataplexAssetSecurityStatusOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,7 +99,6 @@ func (j *jsiiProxy_DataplexAssetSecurityStatusList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewDataplexAssetSecurityStatusList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataplexAssetSecurityStatusList {
 	_init_.Initialize()
 
@@ -110,7 +109,7 @@ func NewDataplexAssetSecurityStatusList(terraformResource cdktf.IInterpolatingPa
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataplexAsset.DataplexAssetSecurityStatusList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -122,12 +121,12 @@ func NewDataplexAssetSecurityStatusList_Override(d DataplexAssetSecurityStatusLi
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataplexAsset.DataplexAssetSecurityStatusList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataplexAssetSecurityStatusList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataplexAssetSecurityStatusList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -138,7 +137,7 @@ func (j *jsiiProxy_DataplexAssetSecurityStatusList)SetTerraformAttribute(val *st
 	)
 }
 
-func (j *jsiiProxy_DataplexAssetSecurityStatusList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataplexAssetSecurityStatusList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -149,7 +148,7 @@ func (j *jsiiProxy_DataplexAssetSecurityStatusList)SetTerraformResource(val cdkt
 	)
 }
 
-func (j *jsiiProxy_DataplexAssetSecurityStatusList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataplexAssetSecurityStatusList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -169,7 +168,7 @@ func (d *jsiiProxy_DataplexAssetSecurityStatusList) AllWithMapKey(mapKeyAttribut
 	_jsii_.Invoke(
 		d,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -198,23 +197,23 @@ func (d *jsiiProxy_DataplexAssetSecurityStatusList) Get(index *float64) Dataplex
 	_jsii_.Invoke(
 		d,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataplexAssetSecurityStatusList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataplexAssetSecurityStatusList) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -233,4 +232,3 @@ func (d *jsiiProxy_DataplexAssetSecurityStatusList) ToString() *string {
 
 	return returns
 }
-

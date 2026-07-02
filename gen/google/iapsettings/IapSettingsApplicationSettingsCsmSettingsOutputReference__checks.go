@@ -98,7 +98,7 @@ func (i *jsiiProxy_IapSettingsApplicationSettingsCsmSettingsOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_IapSettingsApplicationSettingsCsmSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IapSettingsApplicationSettingsCsmSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewIapSettingsApplicationSettingsCsmSettingsOutputReferenceParamete
 
 	return nil
 }
-

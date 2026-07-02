@@ -12,9 +12,9 @@ type KmsEkmConnectionServiceResolversOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,10 +33,10 @@ type KmsEkmConnectionServiceResolversOutputReference interface {
 	Hostname() *string
 	SetHostname(val *string)
 	HostnameInput() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	ServerCertificates() KmsEkmConnectionServiceResolversServerCertificatesList
-	ServerCertificatesInput() interface{}
+	ServerCertificatesInput() any
 	ServiceDirectoryService() *string
 	SetServiceDirectoryService(val *string)
 	ServiceDirectoryServiceInput() *string
@@ -51,7 +51,7 @@ type KmsEkmConnectionServiceResolversOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -72,11 +72,11 @@ type KmsEkmConnectionServiceResolversOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutServerCertificates(value interface{})
+	PutServerCertificates(value any)
 	ResetEndpointFilter()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -89,8 +89,8 @@ type jsiiProxy_KmsEkmConnectionServiceResolversOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_KmsEkmConnectionServiceResolversOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KmsEkmConnectionServiceResolversOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -169,8 +169,8 @@ func (j *jsiiProxy_KmsEkmConnectionServiceResolversOutputReference) HostnameInpu
 	return returns
 }
 
-func (j *jsiiProxy_KmsEkmConnectionServiceResolversOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KmsEkmConnectionServiceResolversOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -189,8 +189,8 @@ func (j *jsiiProxy_KmsEkmConnectionServiceResolversOutputReference) ServerCertif
 	return returns
 }
 
-func (j *jsiiProxy_KmsEkmConnectionServiceResolversOutputReference) ServerCertificatesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KmsEkmConnectionServiceResolversOutputReference) ServerCertificatesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"serverCertificatesInput",
@@ -239,7 +239,6 @@ func (j *jsiiProxy_KmsEkmConnectionServiceResolversOutputReference) TerraformRes
 	return returns
 }
 
-
 func NewKmsEkmConnectionServiceResolversOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) KmsEkmConnectionServiceResolversOutputReference {
 	_init_.Initialize()
 
@@ -250,7 +249,7 @@ func NewKmsEkmConnectionServiceResolversOutputReference(terraformResource cdktf.
 
 	_jsii_.Create(
 		"@cdktf/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -262,12 +261,12 @@ func NewKmsEkmConnectionServiceResolversOutputReference_Override(k KmsEkmConnect
 
 	_jsii_.Create(
 		"@cdktf/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		k,
 	)
 }
 
-func (j *jsiiProxy_KmsEkmConnectionServiceResolversOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_KmsEkmConnectionServiceResolversOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -278,7 +277,7 @@ func (j *jsiiProxy_KmsEkmConnectionServiceResolversOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_KmsEkmConnectionServiceResolversOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_KmsEkmConnectionServiceResolversOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -289,7 +288,7 @@ func (j *jsiiProxy_KmsEkmConnectionServiceResolversOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_KmsEkmConnectionServiceResolversOutputReference)SetEndpointFilter(val *string) {
+func (j *jsiiProxy_KmsEkmConnectionServiceResolversOutputReference) SetEndpointFilter(val *string) {
 	if err := j.validateSetEndpointFilterParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,7 +299,7 @@ func (j *jsiiProxy_KmsEkmConnectionServiceResolversOutputReference)SetEndpointFi
 	)
 }
 
-func (j *jsiiProxy_KmsEkmConnectionServiceResolversOutputReference)SetHostname(val *string) {
+func (j *jsiiProxy_KmsEkmConnectionServiceResolversOutputReference) SetHostname(val *string) {
 	if err := j.validateSetHostnameParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,7 +310,7 @@ func (j *jsiiProxy_KmsEkmConnectionServiceResolversOutputReference)SetHostname(v
 	)
 }
 
-func (j *jsiiProxy_KmsEkmConnectionServiceResolversOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_KmsEkmConnectionServiceResolversOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -322,7 +321,7 @@ func (j *jsiiProxy_KmsEkmConnectionServiceResolversOutputReference)SetInternalVa
 	)
 }
 
-func (j *jsiiProxy_KmsEkmConnectionServiceResolversOutputReference)SetServiceDirectoryService(val *string) {
+func (j *jsiiProxy_KmsEkmConnectionServiceResolversOutputReference) SetServiceDirectoryService(val *string) {
 	if err := j.validateSetServiceDirectoryServiceParameters(val); err != nil {
 		panic(err)
 	}
@@ -333,7 +332,7 @@ func (j *jsiiProxy_KmsEkmConnectionServiceResolversOutputReference)SetServiceDir
 	)
 }
 
-func (j *jsiiProxy_KmsEkmConnectionServiceResolversOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_KmsEkmConnectionServiceResolversOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -344,7 +343,7 @@ func (j *jsiiProxy_KmsEkmConnectionServiceResolversOutputReference)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_KmsEkmConnectionServiceResolversOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_KmsEkmConnectionServiceResolversOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -368,16 +367,16 @@ func (k *jsiiProxy_KmsEkmConnectionServiceResolversOutputReference) ComputeFqn()
 	return returns
 }
 
-func (k *jsiiProxy_KmsEkmConnectionServiceResolversOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (k *jsiiProxy_KmsEkmConnectionServiceResolversOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := k.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		k,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -393,7 +392,7 @@ func (k *jsiiProxy_KmsEkmConnectionServiceResolversOutputReference) GetBooleanAt
 	_jsii_.Invoke(
 		k,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -409,7 +408,7 @@ func (k *jsiiProxy_KmsEkmConnectionServiceResolversOutputReference) GetBooleanMa
 	_jsii_.Invoke(
 		k,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -425,7 +424,7 @@ func (k *jsiiProxy_KmsEkmConnectionServiceResolversOutputReference) GetListAttri
 	_jsii_.Invoke(
 		k,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -441,7 +440,7 @@ func (k *jsiiProxy_KmsEkmConnectionServiceResolversOutputReference) GetNumberAtt
 	_jsii_.Invoke(
 		k,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -457,7 +456,7 @@ func (k *jsiiProxy_KmsEkmConnectionServiceResolversOutputReference) GetNumberLis
 	_jsii_.Invoke(
 		k,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -473,7 +472,7 @@ func (k *jsiiProxy_KmsEkmConnectionServiceResolversOutputReference) GetNumberMap
 	_jsii_.Invoke(
 		k,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -489,7 +488,7 @@ func (k *jsiiProxy_KmsEkmConnectionServiceResolversOutputReference) GetStringAtt
 	_jsii_.Invoke(
 		k,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -505,7 +504,7 @@ func (k *jsiiProxy_KmsEkmConnectionServiceResolversOutputReference) GetStringMap
 	_jsii_.Invoke(
 		k,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -534,21 +533,21 @@ func (k *jsiiProxy_KmsEkmConnectionServiceResolversOutputReference) Interpolatio
 	_jsii_.Invoke(
 		k,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (k *jsiiProxy_KmsEkmConnectionServiceResolversOutputReference) PutServerCertificates(value interface{}) {
+func (k *jsiiProxy_KmsEkmConnectionServiceResolversOutputReference) PutServerCertificates(value any) {
 	if err := k.validatePutServerCertificatesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		k,
 		"putServerCertificates",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -560,16 +559,16 @@ func (k *jsiiProxy_KmsEkmConnectionServiceResolversOutputReference) ResetEndpoin
 	)
 }
 
-func (k *jsiiProxy_KmsEkmConnectionServiceResolversOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (k *jsiiProxy_KmsEkmConnectionServiceResolversOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := k.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		k,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -588,4 +587,3 @@ func (k *jsiiProxy_KmsEkmConnectionServiceResolversOutputReference) ToString() *
 
 	return returns
 }
-

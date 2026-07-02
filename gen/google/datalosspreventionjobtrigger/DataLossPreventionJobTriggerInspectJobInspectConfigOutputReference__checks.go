@@ -90,7 +90,7 @@ func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputRefe
 	return nil
 }
 
-func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputReference) validatePutCustomInfoTypesParameters(value interface{}) error {
+func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputReference) validatePutCustomInfoTypesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputRefe
 	return nil
 }
 
-func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputReference) validatePutInfoTypesParameters(value interface{}) error {
+func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputReference) validatePutInfoTypesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -163,7 +163,7 @@ func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputRefe
 	return nil
 }
 
-func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputReference) validatePutRuleSetParameters(value interface{}) error {
+func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputReference) validatePutRuleSetParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -202,7 +202,7 @@ func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -267,7 +267,7 @@ func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputReference) validateSetExcludeInfoTypesParameters(val interface{}) error {
+func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputReference) validateSetExcludeInfoTypesParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -287,7 +287,7 @@ func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputReference) validateSetIncludeQuoteParameters(val interface{}) error {
+func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigOutputReference) validateSetIncludeQuoteParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -350,4 +350,3 @@ func validateNewDataLossPreventionJobTriggerInspectJobInspectConfigOutputReferen
 
 	return nil
 }
-

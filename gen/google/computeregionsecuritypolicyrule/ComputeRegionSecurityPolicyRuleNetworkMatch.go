@@ -1,6 +1,5 @@
 package computeregionsecuritypolicyrule
 
-
 type ComputeRegionSecurityPolicyRuleNetworkMatch struct {
 	// Destination IPv4/IPv6 addresses or CIDR prefixes, in standard text format.
 	//
@@ -39,6 +38,5 @@ type ComputeRegionSecurityPolicyRuleNetworkMatch struct {
 	// user_defined_fields block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_security_policy_rule#user_defined_fields ComputeRegionSecurityPolicyRule#user_defined_fields}
-	UserDefinedFields interface{} `field:"optional" json:"userDefinedFields" yaml:"userDefinedFields"`
+	UserDefinedFields any `field:"optional" json:"userDefinedFields" yaml:"userDefinedFields"`
 }
-

@@ -12,9 +12,9 @@ type LookerInstanceEncryptionConfigOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -45,7 +45,7 @@ type LookerInstanceEncryptionConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -69,7 +69,7 @@ type LookerInstanceEncryptionConfigOutputReference interface {
 	ResetKmsKeyName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -82,8 +82,8 @@ type jsiiProxy_LookerInstanceEncryptionConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_LookerInstanceEncryptionConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LookerInstanceEncryptionConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -192,7 +192,6 @@ func (j *jsiiProxy_LookerInstanceEncryptionConfigOutputReference) TerraformResou
 	return returns
 }
 
-
 func NewLookerInstanceEncryptionConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) LookerInstanceEncryptionConfigOutputReference {
 	_init_.Initialize()
 
@@ -203,7 +202,7 @@ func NewLookerInstanceEncryptionConfigOutputReference(terraformResource cdktf.II
 
 	_jsii_.Create(
 		"@cdktf/provider-google.lookerInstance.LookerInstanceEncryptionConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -215,12 +214,12 @@ func NewLookerInstanceEncryptionConfigOutputReference_Override(l LookerInstanceE
 
 	_jsii_.Create(
 		"@cdktf/provider-google.lookerInstance.LookerInstanceEncryptionConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LookerInstanceEncryptionConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_LookerInstanceEncryptionConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_LookerInstanceEncryptionConfigOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_LookerInstanceEncryptionConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_LookerInstanceEncryptionConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_LookerInstanceEncryptionConfigOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_LookerInstanceEncryptionConfigOutputReference)SetInternalValue(val *LookerInstanceEncryptionConfig) {
+func (j *jsiiProxy_LookerInstanceEncryptionConfigOutputReference) SetInternalValue(val *LookerInstanceEncryptionConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_LookerInstanceEncryptionConfigOutputReference)SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_LookerInstanceEncryptionConfigOutputReference)SetKmsKeyName(val *string) {
+func (j *jsiiProxy_LookerInstanceEncryptionConfigOutputReference) SetKmsKeyName(val *string) {
 	if err := j.validateSetKmsKeyNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -264,7 +263,7 @@ func (j *jsiiProxy_LookerInstanceEncryptionConfigOutputReference)SetKmsKeyName(v
 	)
 }
 
-func (j *jsiiProxy_LookerInstanceEncryptionConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_LookerInstanceEncryptionConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -275,7 +274,7 @@ func (j *jsiiProxy_LookerInstanceEncryptionConfigOutputReference)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_LookerInstanceEncryptionConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LookerInstanceEncryptionConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -299,16 +298,16 @@ func (l *jsiiProxy_LookerInstanceEncryptionConfigOutputReference) ComputeFqn() *
 	return returns
 }
 
-func (l *jsiiProxy_LookerInstanceEncryptionConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_LookerInstanceEncryptionConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -324,7 +323,7 @@ func (l *jsiiProxy_LookerInstanceEncryptionConfigOutputReference) GetBooleanAttr
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -340,7 +339,7 @@ func (l *jsiiProxy_LookerInstanceEncryptionConfigOutputReference) GetBooleanMapA
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -356,7 +355,7 @@ func (l *jsiiProxy_LookerInstanceEncryptionConfigOutputReference) GetListAttribu
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (l *jsiiProxy_LookerInstanceEncryptionConfigOutputReference) GetNumberAttri
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (l *jsiiProxy_LookerInstanceEncryptionConfigOutputReference) GetNumberListA
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (l *jsiiProxy_LookerInstanceEncryptionConfigOutputReference) GetNumberMapAt
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (l *jsiiProxy_LookerInstanceEncryptionConfigOutputReference) GetStringAttri
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (l *jsiiProxy_LookerInstanceEncryptionConfigOutputReference) GetStringMapAt
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -465,7 +464,7 @@ func (l *jsiiProxy_LookerInstanceEncryptionConfigOutputReference) InterpolationF
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -480,16 +479,16 @@ func (l *jsiiProxy_LookerInstanceEncryptionConfigOutputReference) ResetKmsKeyNam
 	)
 }
 
-func (l *jsiiProxy_LookerInstanceEncryptionConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (l *jsiiProxy_LookerInstanceEncryptionConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := l.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -508,4 +507,3 @@ func (l *jsiiProxy_LookerInstanceEncryptionConfigOutputReference) ToString() *st
 
 	return returns
 }
-

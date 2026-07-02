@@ -98,7 +98,7 @@ func (c *jsiiProxy_CloudRunServiceIamMemberConditionOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_CloudRunServiceIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudRunServiceIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewCloudRunServiceIamMemberConditionOutputReferenceParameters(terra
 
 	return nil
 }
-

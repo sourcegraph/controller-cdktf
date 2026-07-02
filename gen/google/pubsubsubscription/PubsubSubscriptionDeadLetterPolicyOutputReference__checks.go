@@ -98,7 +98,7 @@ func (p *jsiiProxy_PubsubSubscriptionDeadLetterPolicyOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_PubsubSubscriptionDeadLetterPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PubsubSubscriptionDeadLetterPolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewPubsubSubscriptionDeadLetterPolicyOutputReferenceParameters(terr
 
 	return nil
 }
-

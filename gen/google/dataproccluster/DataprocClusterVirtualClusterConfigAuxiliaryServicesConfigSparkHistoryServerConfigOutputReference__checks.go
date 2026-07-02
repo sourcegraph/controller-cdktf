@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSpa
 	return nil
 }
 
-func (j *jsiiProxy_DataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkH
 
 	return nil
 }
-

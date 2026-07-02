@@ -98,7 +98,7 @@ func (l *jsiiProxy_LoggingFolderSinkExclusionsOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_LoggingFolderSinkExclusionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LoggingFolderSinkExclusionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_LoggingFolderSinkExclusionsOutputReference) validateSetDescri
 	return nil
 }
 
-func (j *jsiiProxy_LoggingFolderSinkExclusionsOutputReference) validateSetDisabledParameters(val interface{}) error {
+func (j *jsiiProxy_LoggingFolderSinkExclusionsOutputReference) validateSetDisabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -199,7 +199,7 @@ func (j *jsiiProxy_LoggingFolderSinkExclusionsOutputReference) validateSetFilter
 	return nil
 }
 
-func (j *jsiiProxy_LoggingFolderSinkExclusionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LoggingFolderSinkExclusionsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -266,4 +266,3 @@ func validateNewLoggingFolderSinkExclusionsOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

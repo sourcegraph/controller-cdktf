@@ -98,7 +98,7 @@ func (h *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference) validateSetDisableFhirpathValidationParameters(val interface{}) error {
+func (j *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference) validateSetDisableFhirpathValidationParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (j *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference) validateSetDisableProfileValidationParameters(val interface{}) error {
+func (j *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference) validateSetDisableProfileValidationParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -203,7 +203,7 @@ func (j *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference) validateSetDisableReferenceTypeValidationParameters(val interface{}) error {
+func (j *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference) validateSetDisableReferenceTypeValidationParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -223,7 +223,7 @@ func (j *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference) validateSetDisableRequiredFieldValidationParameters(val interface{}) error {
+func (j *jsiiProxy_HealthcareFhirStoreValidationConfigOutputReference) validateSetDisableRequiredFieldValidationParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -286,4 +286,3 @@ func validateNewHealthcareFhirStoreValidationConfigOutputReferenceParameters(ter
 
 	return nil
 }
-

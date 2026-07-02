@@ -1,6 +1,5 @@
 package computebackendservice
 
-
 type ComputeBackendServiceBackend struct {
 	// The fully-qualified URL of an Instance Group or Network Endpoint Group resource.
 	//
@@ -46,7 +45,7 @@ type ComputeBackendServiceBackend struct {
 	// custom_metrics block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_backend_service#custom_metrics ComputeBackendService#custom_metrics}
-	CustomMetrics interface{} `field:"optional" json:"customMetrics" yaml:"customMetrics"`
+	CustomMetrics any `field:"optional" json:"customMetrics" yaml:"customMetrics"`
 	// An optional description of this resource. Provide this property when you create the resource.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_backend_service#description ComputeBackendService#description}
@@ -121,4 +120,3 @@ type ComputeBackendServiceBackend struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_backend_service#preference ComputeBackendService#preference}
 	Preference *string `field:"optional" json:"preference" yaml:"preference"`
 }
-

@@ -18,11 +18,11 @@ type DataGoogleCloudAssetSearchAllResources interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -52,7 +52,7 @@ type DataGoogleCloudAssetSearchAllResources interface {
 	SetQuery(val *string)
 	QueryInput() *string
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Results() DataGoogleCloudAssetSearchAllResourcesResultsList
 	Scope() *string
 	SetScope(val *string)
@@ -60,13 +60,13 @@ type DataGoogleCloudAssetSearchAllResources interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -94,18 +94,18 @@ type DataGoogleCloudAssetSearchAllResources interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetQuery()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataGoogleCloudAssetSearchAllResources
@@ -143,8 +143,8 @@ func (j *jsiiProxy_DataGoogleCloudAssetSearchAllResources) CdktfStack() cdktf.Te
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleCloudAssetSearchAllResources) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleCloudAssetSearchAllResources) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -153,8 +153,8 @@ func (j *jsiiProxy_DataGoogleCloudAssetSearchAllResources) ConstructNodeMetadata
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleCloudAssetSearchAllResources) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleCloudAssetSearchAllResources) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -273,8 +273,8 @@ func (j *jsiiProxy_DataGoogleCloudAssetSearchAllResources) QueryInput() *string 
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleCloudAssetSearchAllResources) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleCloudAssetSearchAllResources) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -323,8 +323,8 @@ func (j *jsiiProxy_DataGoogleCloudAssetSearchAllResources) TerraformGeneratorMet
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleCloudAssetSearchAllResources) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleCloudAssetSearchAllResources) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -343,7 +343,6 @@ func (j *jsiiProxy_DataGoogleCloudAssetSearchAllResources) TerraformResourceType
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/cloud_asset_search_all_resources google_cloud_asset_search_all_resources} Data Source.
 func NewDataGoogleCloudAssetSearchAllResources(scope constructs.Construct, id *string, config *DataGoogleCloudAssetSearchAllResourcesConfig) DataGoogleCloudAssetSearchAllResources {
 	_init_.Initialize()
@@ -355,7 +354,7 @@ func NewDataGoogleCloudAssetSearchAllResources(scope constructs.Construct, id *s
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleCloudAssetSearchAllResources.DataGoogleCloudAssetSearchAllResources",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -368,12 +367,12 @@ func NewDataGoogleCloudAssetSearchAllResources_Override(d DataGoogleCloudAssetSe
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleCloudAssetSearchAllResources.DataGoogleCloudAssetSearchAllResources",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataGoogleCloudAssetSearchAllResources)SetAssetTypes(val *[]*string) {
+func (j *jsiiProxy_DataGoogleCloudAssetSearchAllResources) SetAssetTypes(val *[]*string) {
 	if err := j.validateSetAssetTypesParameters(val); err != nil {
 		panic(err)
 	}
@@ -384,7 +383,7 @@ func (j *jsiiProxy_DataGoogleCloudAssetSearchAllResources)SetAssetTypes(val *[]*
 	)
 }
 
-func (j *jsiiProxy_DataGoogleCloudAssetSearchAllResources)SetCount(val interface{}) {
+func (j *jsiiProxy_DataGoogleCloudAssetSearchAllResources) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -395,7 +394,7 @@ func (j *jsiiProxy_DataGoogleCloudAssetSearchAllResources)SetCount(val interface
 	)
 }
 
-func (j *jsiiProxy_DataGoogleCloudAssetSearchAllResources)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataGoogleCloudAssetSearchAllResources) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -403,7 +402,7 @@ func (j *jsiiProxy_DataGoogleCloudAssetSearchAllResources)SetDependsOn(val *[]*s
 	)
 }
 
-func (j *jsiiProxy_DataGoogleCloudAssetSearchAllResources)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGoogleCloudAssetSearchAllResources) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -411,7 +410,7 @@ func (j *jsiiProxy_DataGoogleCloudAssetSearchAllResources)SetForEach(val cdktf.I
 	)
 }
 
-func (j *jsiiProxy_DataGoogleCloudAssetSearchAllResources)SetId(val *string) {
+func (j *jsiiProxy_DataGoogleCloudAssetSearchAllResources) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -422,7 +421,7 @@ func (j *jsiiProxy_DataGoogleCloudAssetSearchAllResources)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleCloudAssetSearchAllResources)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGoogleCloudAssetSearchAllResources) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -433,7 +432,7 @@ func (j *jsiiProxy_DataGoogleCloudAssetSearchAllResources)SetLifecycle(val *cdkt
 	)
 }
 
-func (j *jsiiProxy_DataGoogleCloudAssetSearchAllResources)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGoogleCloudAssetSearchAllResources) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -441,7 +440,7 @@ func (j *jsiiProxy_DataGoogleCloudAssetSearchAllResources)SetProvider(val cdktf.
 	)
 }
 
-func (j *jsiiProxy_DataGoogleCloudAssetSearchAllResources)SetQuery(val *string) {
+func (j *jsiiProxy_DataGoogleCloudAssetSearchAllResources) SetQuery(val *string) {
 	if err := j.validateSetQueryParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,7 +451,7 @@ func (j *jsiiProxy_DataGoogleCloudAssetSearchAllResources)SetQuery(val *string) 
 	)
 }
 
-func (j *jsiiProxy_DataGoogleCloudAssetSearchAllResources)SetScope(val *string) {
+func (j *jsiiProxy_DataGoogleCloudAssetSearchAllResources) SetScope(val *string) {
 	if err := j.validateSetScopeParameters(val); err != nil {
 		panic(err)
 	}
@@ -475,7 +474,7 @@ func DataGoogleCloudAssetSearchAllResources_GenerateConfigForImport(scope constr
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleCloudAssetSearchAllResources.DataGoogleCloudAssetSearchAllResources",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -499,7 +498,7 @@ func DataGoogleCloudAssetSearchAllResources_GenerateConfigForImport(scope constr
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataGoogleCloudAssetSearchAllResources_IsConstruct(x interface{}) *bool {
+func DataGoogleCloudAssetSearchAllResources_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleCloudAssetSearchAllResources_IsConstructParameters(x); err != nil {
@@ -510,7 +509,7 @@ func DataGoogleCloudAssetSearchAllResources_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleCloudAssetSearchAllResources.DataGoogleCloudAssetSearchAllResources",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -518,7 +517,7 @@ func DataGoogleCloudAssetSearchAllResources_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGoogleCloudAssetSearchAllResources_IsTerraformDataSource(x interface{}) *bool {
+func DataGoogleCloudAssetSearchAllResources_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleCloudAssetSearchAllResources_IsTerraformDataSourceParameters(x); err != nil {
@@ -529,7 +528,7 @@ func DataGoogleCloudAssetSearchAllResources_IsTerraformDataSource(x interface{})
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleCloudAssetSearchAllResources.DataGoogleCloudAssetSearchAllResources",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -537,7 +536,7 @@ func DataGoogleCloudAssetSearchAllResources_IsTerraformDataSource(x interface{})
 }
 
 // Experimental.
-func DataGoogleCloudAssetSearchAllResources_IsTerraformElement(x interface{}) *bool {
+func DataGoogleCloudAssetSearchAllResources_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleCloudAssetSearchAllResources_IsTerraformElementParameters(x); err != nil {
@@ -548,7 +547,7 @@ func DataGoogleCloudAssetSearchAllResources_IsTerraformElement(x interface{}) *b
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleCloudAssetSearchAllResources.DataGoogleCloudAssetSearchAllResources",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -566,27 +565,27 @@ func DataGoogleCloudAssetSearchAllResources_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleCloudAssetSearchAllResources) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataGoogleCloudAssetSearchAllResources) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataGoogleCloudAssetSearchAllResources) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataGoogleCloudAssetSearchAllResources) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -602,7 +601,7 @@ func (d *jsiiProxy_DataGoogleCloudAssetSearchAllResources) GetBooleanAttribute(t
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -618,7 +617,7 @@ func (d *jsiiProxy_DataGoogleCloudAssetSearchAllResources) GetBooleanMapAttribut
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -634,7 +633,7 @@ func (d *jsiiProxy_DataGoogleCloudAssetSearchAllResources) GetListAttribute(terr
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -650,7 +649,7 @@ func (d *jsiiProxy_DataGoogleCloudAssetSearchAllResources) GetNumberAttribute(te
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -666,7 +665,7 @@ func (d *jsiiProxy_DataGoogleCloudAssetSearchAllResources) GetNumberListAttribut
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -682,7 +681,7 @@ func (d *jsiiProxy_DataGoogleCloudAssetSearchAllResources) GetNumberMapAttribute
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -698,7 +697,7 @@ func (d *jsiiProxy_DataGoogleCloudAssetSearchAllResources) GetStringAttribute(te
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -714,7 +713,7 @@ func (d *jsiiProxy_DataGoogleCloudAssetSearchAllResources) GetStringMapAttribute
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -730,7 +729,7 @@ func (d *jsiiProxy_DataGoogleCloudAssetSearchAllResources) InterpolationForAttri
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -744,7 +743,7 @@ func (d *jsiiProxy_DataGoogleCloudAssetSearchAllResources) OverrideLogicalId(new
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -780,8 +779,8 @@ func (d *jsiiProxy_DataGoogleCloudAssetSearchAllResources) ResetQuery() {
 	)
 }
 
-func (d *jsiiProxy_DataGoogleCloudAssetSearchAllResources) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleCloudAssetSearchAllResources) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -793,8 +792,8 @@ func (d *jsiiProxy_DataGoogleCloudAssetSearchAllResources) SynthesizeAttributes(
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleCloudAssetSearchAllResources) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleCloudAssetSearchAllResources) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -806,8 +805,8 @@ func (d *jsiiProxy_DataGoogleCloudAssetSearchAllResources) SynthesizeHclAttribut
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleCloudAssetSearchAllResources) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleCloudAssetSearchAllResources) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -819,8 +818,8 @@ func (d *jsiiProxy_DataGoogleCloudAssetSearchAllResources) ToHclTerraform() inte
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleCloudAssetSearchAllResources) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleCloudAssetSearchAllResources) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -845,8 +844,8 @@ func (d *jsiiProxy_DataGoogleCloudAssetSearchAllResources) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleCloudAssetSearchAllResources) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleCloudAssetSearchAllResources) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -857,4 +856,3 @@ func (d *jsiiProxy_DataGoogleCloudAssetSearchAllResources) ToTerraform() interfa
 
 	return returns
 }
-

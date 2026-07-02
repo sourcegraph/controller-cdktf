@@ -98,7 +98,7 @@ func (m *jsiiProxy_ModelArmorFloorsettingFilterConfigMaliciousUriFilterSettingsO
 	return nil
 }
 
-func (j *jsiiProxy_ModelArmorFloorsettingFilterConfigMaliciousUriFilterSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ModelArmorFloorsettingFilterConfigMaliciousUriFilterSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewModelArmorFloorsettingFilterConfigMaliciousUriFilterSettingsOutp
 
 	return nil
 }
-

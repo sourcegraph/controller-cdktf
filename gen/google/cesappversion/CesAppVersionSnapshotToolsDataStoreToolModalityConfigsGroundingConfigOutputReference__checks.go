@@ -98,7 +98,7 @@ func (c *jsiiProxy_CesAppVersionSnapshotToolsDataStoreToolModalityConfigsGroundi
 	return nil
 }
 
-func (j *jsiiProxy_CesAppVersionSnapshotToolsDataStoreToolModalityConfigsGroundingConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CesAppVersionSnapshotToolsDataStoreToolModalityConfigsGroundingConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewCesAppVersionSnapshotToolsDataStoreToolModalityConfigsGroundingC
 
 	return nil
 }
-

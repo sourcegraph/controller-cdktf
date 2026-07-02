@@ -98,7 +98,7 @@ func (d *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutp
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputCurrentPageOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputCurrentPageOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputC
 
 	return nil
 }
-

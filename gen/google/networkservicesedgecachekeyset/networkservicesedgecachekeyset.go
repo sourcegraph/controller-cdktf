@@ -15,15 +15,15 @@ type NetworkServicesEdgeCacheKeyset interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -63,31 +63,31 @@ type NetworkServicesEdgeCacheKeyset interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	PublicKey() NetworkServicesEdgeCacheKeysetPublicKeyList
-	PublicKeyInput() interface{}
+	PublicKeyInput() any
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() NetworkServicesEdgeCacheKeysetTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	ValidationSharedKeys() NetworkServicesEdgeCacheKeysetValidationSharedKeysList
-	ValidationSharedKeysInput() interface{}
+	ValidationSharedKeysInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -105,7 +105,7 @@ type NetworkServicesEdgeCacheKeyset interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -117,16 +117,16 @@ type NetworkServicesEdgeCacheKeyset interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutPublicKey(value interface{})
+	PutPublicKey(value any)
 	PutTimeouts(value *NetworkServicesEdgeCacheKeysetTimeouts)
-	PutValidationSharedKeys(value interface{})
+	PutValidationSharedKeys(value any)
 	ResetDescription()
 	ResetId()
 	ResetLabels()
@@ -137,17 +137,17 @@ type NetworkServicesEdgeCacheKeyset interface {
 	ResetPublicKey()
 	ResetTimeouts()
 	ResetValidationSharedKeys()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for NetworkServicesEdgeCacheKeyset
@@ -165,8 +165,8 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheKeyset) CdktfStack() cdktf.TerraformS
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesEdgeCacheKeyset) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkServicesEdgeCacheKeyset) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -175,8 +175,8 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheKeyset) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesEdgeCacheKeyset) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_NetworkServicesEdgeCacheKeyset) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -185,8 +185,8 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheKeyset) ConstructNodeMetadata() *map[
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesEdgeCacheKeyset) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkServicesEdgeCacheKeyset) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -375,8 +375,8 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheKeyset) Provider() cdktf.TerraformPro
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesEdgeCacheKeyset) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_NetworkServicesEdgeCacheKeyset) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -395,8 +395,8 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheKeyset) PublicKey() NetworkServicesEd
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesEdgeCacheKeyset) PublicKeyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkServicesEdgeCacheKeyset) PublicKeyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"publicKeyInput",
@@ -405,8 +405,8 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheKeyset) PublicKeyInput() interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesEdgeCacheKeyset) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkServicesEdgeCacheKeyset) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -435,8 +435,8 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheKeyset) TerraformLabels() cdktf.Strin
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesEdgeCacheKeyset) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_NetworkServicesEdgeCacheKeyset) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -465,8 +465,8 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheKeyset) Timeouts() NetworkServicesEdg
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesEdgeCacheKeyset) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkServicesEdgeCacheKeyset) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -485,8 +485,8 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheKeyset) ValidationSharedKeys() Networ
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesEdgeCacheKeyset) ValidationSharedKeysInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkServicesEdgeCacheKeyset) ValidationSharedKeysInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"validationSharedKeysInput",
@@ -494,7 +494,6 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheKeyset) ValidationSharedKeysInput() i
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_edge_cache_keyset google_network_services_edge_cache_keyset} Resource.
 func NewNetworkServicesEdgeCacheKeyset(scope constructs.Construct, id *string, config *NetworkServicesEdgeCacheKeysetConfig) NetworkServicesEdgeCacheKeyset {
@@ -507,7 +506,7 @@ func NewNetworkServicesEdgeCacheKeyset(scope constructs.Construct, id *string, c
 
 	_jsii_.Create(
 		"@cdktf/provider-google.networkServicesEdgeCacheKeyset.NetworkServicesEdgeCacheKeyset",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -520,12 +519,12 @@ func NewNetworkServicesEdgeCacheKeyset_Override(n NetworkServicesEdgeCacheKeyset
 
 	_jsii_.Create(
 		"@cdktf/provider-google.networkServicesEdgeCacheKeyset.NetworkServicesEdgeCacheKeyset",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesEdgeCacheKeyset)SetConnection(val interface{}) {
+func (j *jsiiProxy_NetworkServicesEdgeCacheKeyset) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -536,7 +535,7 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheKeyset)SetConnection(val interface{})
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesEdgeCacheKeyset)SetCount(val interface{}) {
+func (j *jsiiProxy_NetworkServicesEdgeCacheKeyset) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -547,7 +546,7 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheKeyset)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesEdgeCacheKeyset)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_NetworkServicesEdgeCacheKeyset) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -555,7 +554,7 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheKeyset)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesEdgeCacheKeyset)SetDescription(val *string) {
+func (j *jsiiProxy_NetworkServicesEdgeCacheKeyset) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -566,7 +565,7 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheKeyset)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesEdgeCacheKeyset)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_NetworkServicesEdgeCacheKeyset) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -574,7 +573,7 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheKeyset)SetForEach(val cdktf.ITerrafor
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesEdgeCacheKeyset)SetId(val *string) {
+func (j *jsiiProxy_NetworkServicesEdgeCacheKeyset) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -585,7 +584,7 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheKeyset)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesEdgeCacheKeyset)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_NetworkServicesEdgeCacheKeyset) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -596,7 +595,7 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheKeyset)SetLabels(val *map[string]*str
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesEdgeCacheKeyset)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_NetworkServicesEdgeCacheKeyset) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -607,7 +606,7 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheKeyset)SetLifecycle(val *cdktf.Terraf
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesEdgeCacheKeyset)SetName(val *string) {
+func (j *jsiiProxy_NetworkServicesEdgeCacheKeyset) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -618,7 +617,7 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheKeyset)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesEdgeCacheKeyset)SetProject(val *string) {
+func (j *jsiiProxy_NetworkServicesEdgeCacheKeyset) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -629,7 +628,7 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheKeyset)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesEdgeCacheKeyset)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_NetworkServicesEdgeCacheKeyset) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -637,7 +636,7 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheKeyset)SetProvider(val cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesEdgeCacheKeyset)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_NetworkServicesEdgeCacheKeyset) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -660,7 +659,7 @@ func NetworkServicesEdgeCacheKeyset_GenerateConfigForImport(scope constructs.Con
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.networkServicesEdgeCacheKeyset.NetworkServicesEdgeCacheKeyset",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -684,7 +683,7 @@ func NetworkServicesEdgeCacheKeyset_GenerateConfigForImport(scope constructs.Con
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func NetworkServicesEdgeCacheKeyset_IsConstruct(x interface{}) *bool {
+func NetworkServicesEdgeCacheKeyset_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetworkServicesEdgeCacheKeyset_IsConstructParameters(x); err != nil {
@@ -695,7 +694,7 @@ func NetworkServicesEdgeCacheKeyset_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.networkServicesEdgeCacheKeyset.NetworkServicesEdgeCacheKeyset",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -703,7 +702,7 @@ func NetworkServicesEdgeCacheKeyset_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func NetworkServicesEdgeCacheKeyset_IsTerraformElement(x interface{}) *bool {
+func NetworkServicesEdgeCacheKeyset_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetworkServicesEdgeCacheKeyset_IsTerraformElementParameters(x); err != nil {
@@ -714,7 +713,7 @@ func NetworkServicesEdgeCacheKeyset_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.networkServicesEdgeCacheKeyset.NetworkServicesEdgeCacheKeyset",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -722,7 +721,7 @@ func NetworkServicesEdgeCacheKeyset_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func NetworkServicesEdgeCacheKeyset_IsTerraformResource(x interface{}) *bool {
+func NetworkServicesEdgeCacheKeyset_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetworkServicesEdgeCacheKeyset_IsTerraformResourceParameters(x); err != nil {
@@ -733,7 +732,7 @@ func NetworkServicesEdgeCacheKeyset_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.networkServicesEdgeCacheKeyset.NetworkServicesEdgeCacheKeyset",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -758,31 +757,31 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheKeyset) AddMoveTarget(moveTarget *str
 	_jsii_.InvokeVoid(
 		n,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (n *jsiiProxy_NetworkServicesEdgeCacheKeyset) AddOverride(path *string, value interface{}) {
+func (n *jsiiProxy_NetworkServicesEdgeCacheKeyset) AddOverride(path *string, value any) {
 	if err := n.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (n *jsiiProxy_NetworkServicesEdgeCacheKeyset) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (n *jsiiProxy_NetworkServicesEdgeCacheKeyset) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -798,7 +797,7 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheKeyset) GetBooleanAttribute(terraform
 	_jsii_.Invoke(
 		n,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -814,7 +813,7 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheKeyset) GetBooleanMapAttribute(terraf
 	_jsii_.Invoke(
 		n,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -830,7 +829,7 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheKeyset) GetListAttribute(terraformAtt
 	_jsii_.Invoke(
 		n,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -846,7 +845,7 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheKeyset) GetNumberAttribute(terraformA
 	_jsii_.Invoke(
 		n,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -862,7 +861,7 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheKeyset) GetNumberListAttribute(terraf
 	_jsii_.Invoke(
 		n,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -878,7 +877,7 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheKeyset) GetNumberMapAttribute(terrafo
 	_jsii_.Invoke(
 		n,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -894,7 +893,7 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheKeyset) GetStringAttribute(terraformA
 	_jsii_.Invoke(
 		n,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -910,15 +909,15 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheKeyset) GetStringMapAttribute(terrafo
 	_jsii_.Invoke(
 		n,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (n *jsiiProxy_NetworkServicesEdgeCacheKeyset) HasResourceMove() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkServicesEdgeCacheKeyset) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -937,7 +936,7 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheKeyset) ImportFrom(id *string, provid
 	_jsii_.InvokeVoid(
 		n,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -950,7 +949,7 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheKeyset) InterpolationForAttribute(ter
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -964,18 +963,18 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheKeyset) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (n *jsiiProxy_NetworkServicesEdgeCacheKeyset) MoveTo(moveTarget *string, index interface{}) {
+func (n *jsiiProxy_NetworkServicesEdgeCacheKeyset) MoveTo(moveTarget *string, index any) {
 	if err := n.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -986,7 +985,7 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheKeyset) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -997,18 +996,18 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheKeyset) OverrideLogicalId(newLogicalI
 	_jsii_.InvokeVoid(
 		n,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (n *jsiiProxy_NetworkServicesEdgeCacheKeyset) PutPublicKey(value interface{}) {
+func (n *jsiiProxy_NetworkServicesEdgeCacheKeyset) PutPublicKey(value any) {
 	if err := n.validatePutPublicKeyParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"putPublicKey",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1019,18 +1018,18 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheKeyset) PutTimeouts(value *NetworkSer
 	_jsii_.InvokeVoid(
 		n,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (n *jsiiProxy_NetworkServicesEdgeCacheKeyset) PutValidationSharedKeys(value interface{}) {
+func (n *jsiiProxy_NetworkServicesEdgeCacheKeyset) PutValidationSharedKeys(value any) {
 	if err := n.validatePutValidationSharedKeysParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"putValidationSharedKeys",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1098,8 +1097,8 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheKeyset) ResetValidationSharedKeys() {
 	)
 }
 
-func (n *jsiiProxy_NetworkServicesEdgeCacheKeyset) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (n *jsiiProxy_NetworkServicesEdgeCacheKeyset) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
@@ -1111,8 +1110,8 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheKeyset) SynthesizeAttributes() *map[s
 	return returns
 }
 
-func (n *jsiiProxy_NetworkServicesEdgeCacheKeyset) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (n *jsiiProxy_NetworkServicesEdgeCacheKeyset) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
@@ -1124,8 +1123,8 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheKeyset) SynthesizeHclAttributes() *ma
 	return returns
 }
 
-func (n *jsiiProxy_NetworkServicesEdgeCacheKeyset) ToHclTerraform() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkServicesEdgeCacheKeyset) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1137,8 +1136,8 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheKeyset) ToHclTerraform() interface{} 
 	return returns
 }
 
-func (n *jsiiProxy_NetworkServicesEdgeCacheKeyset) ToMetadata() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkServicesEdgeCacheKeyset) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1163,8 +1162,8 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheKeyset) ToString() *string {
 	return returns
 }
 
-func (n *jsiiProxy_NetworkServicesEdgeCacheKeyset) ToTerraform() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkServicesEdgeCacheKeyset) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1175,4 +1174,3 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheKeyset) ToTerraform() interface{} {
 
 	return returns
 }
-

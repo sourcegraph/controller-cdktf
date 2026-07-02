@@ -6,9 +6,9 @@ import (
 
 type BigqueryRoutineConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type BigqueryRoutineConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The ID of the dataset containing this routine.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_routine#dataset_id BigqueryRoutine#dataset_id}
@@ -43,7 +43,7 @@ type BigqueryRoutineConfig struct {
 	// arguments block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_routine#arguments BigqueryRoutine#arguments}
-	Arguments interface{} `field:"optional" json:"arguments" yaml:"arguments"`
+	Arguments any `field:"optional" json:"arguments" yaml:"arguments"`
 	// If set to DATA_MASKING, the function is validated and made available as a masking function.
 	//
 	// For more information, see https://cloud.google.com/bigquery/docs/user-defined-functions#custom-mask Possible values: ["DATA_MASKING"]
@@ -114,4 +114,3 @@ type BigqueryRoutineConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_routine#timeouts BigqueryRoutine#timeouts}
 	Timeouts *BigqueryRoutineTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

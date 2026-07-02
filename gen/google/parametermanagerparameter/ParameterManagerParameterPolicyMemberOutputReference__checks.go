@@ -98,7 +98,7 @@ func (p *jsiiProxy_ParameterManagerParameterPolicyMemberOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_ParameterManagerParameterPolicyMemberOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ParameterManagerParameterPolicyMemberOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewParameterManagerParameterPolicyMemberOutputReferenceParameters(t
 
 	return nil
 }
-

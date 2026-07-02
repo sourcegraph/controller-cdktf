@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleComputeSecurityPolicyRuleRateLimitOptionsEnforceOnK
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyC
 
 	return nil
 }
-

@@ -106,7 +106,7 @@ func (j *jsiiProxy_NetworkConnectivityServiceConnectionPolicyPscConfigOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_NetworkConnectivityServiceConnectionPolicyPscConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkConnectivityServiceConnectionPolicyPscConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewNetworkConnectivityServiceConnectionPolicyPscConfigOutputReferen
 
 	return nil
 }
-

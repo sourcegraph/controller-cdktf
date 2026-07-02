@@ -101,7 +101,7 @@ func (c *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference) validatePu
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference) validatePutResourceLimitsParameters(value interface{}) error {
+func (c *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference) validatePutResourceLimitsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -156,7 +156,7 @@ func (j *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -221,7 +221,7 @@ func (j *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference) validateSetDefaultComputeClassEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference) validateSetDefaultComputeClassEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -241,7 +241,7 @@ func (j *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -296,4 +296,3 @@ func validateNewContainerClusterClusterAutoscalingOutputReferenceParameters(terr
 
 	return nil
 }
-

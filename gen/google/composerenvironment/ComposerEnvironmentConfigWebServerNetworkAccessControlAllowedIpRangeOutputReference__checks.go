@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComposerEnvironmentConfigWebServerNetworkAccessControlAllowed
 	return nil
 }
 
-func (j *jsiiProxy_ComposerEnvironmentConfigWebServerNetworkAccessControlAllowedIpRangeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComposerEnvironmentConfigWebServerNetworkAccessControlAllowedIpRangeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_ComposerEnvironmentConfigWebServerNetworkAccessControlAllowed
 	return nil
 }
 
-func (j *jsiiProxy_ComposerEnvironmentConfigWebServerNetworkAccessControlAllowedIpRangeOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComposerEnvironmentConfigWebServerNetworkAccessControlAllowedIpRangeOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewComposerEnvironmentConfigWebServerNetworkAccessControlAllowedIpR
 
 	return nil
 }
-

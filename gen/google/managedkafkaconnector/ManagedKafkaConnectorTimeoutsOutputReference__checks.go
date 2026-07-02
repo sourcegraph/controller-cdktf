@@ -98,7 +98,7 @@ func (m *jsiiProxy_ManagedKafkaConnectorTimeoutsOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_ManagedKafkaConnectorTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ManagedKafkaConnectorTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_ManagedKafkaConnectorTimeoutsOutputReference) validateSetDele
 	return nil
 }
 
-func (j *jsiiProxy_ManagedKafkaConnectorTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ManagedKafkaConnectorTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewManagedKafkaConnectorTimeoutsOutputReferenceParameters(terraform
 
 	return nil
 }
-

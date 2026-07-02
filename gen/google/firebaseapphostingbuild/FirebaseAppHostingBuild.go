@@ -25,15 +25,15 @@ type FirebaseAppHostingBuild interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -81,11 +81,11 @@ type FirebaseAppHostingBuild interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Source() FirebaseAppHostingBuildSourceOutputReference
 	SourceInput() *FirebaseAppHostingBuildSource
 	State() *string
@@ -93,20 +93,20 @@ type FirebaseAppHostingBuild interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() FirebaseAppHostingBuildTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Uid() *string
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -124,7 +124,7 @@ type FirebaseAppHostingBuild interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -136,7 +136,7 @@ type FirebaseAppHostingBuild interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -154,17 +154,17 @@ type FirebaseAppHostingBuild interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for FirebaseAppHostingBuild
@@ -252,8 +252,8 @@ func (j *jsiiProxy_FirebaseAppHostingBuild) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_FirebaseAppHostingBuild) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FirebaseAppHostingBuild) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -262,8 +262,8 @@ func (j *jsiiProxy_FirebaseAppHostingBuild) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_FirebaseAppHostingBuild) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_FirebaseAppHostingBuild) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -272,8 +272,8 @@ func (j *jsiiProxy_FirebaseAppHostingBuild) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_FirebaseAppHostingBuild) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FirebaseAppHostingBuild) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -542,8 +542,8 @@ func (j *jsiiProxy_FirebaseAppHostingBuild) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_FirebaseAppHostingBuild) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_FirebaseAppHostingBuild) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -552,8 +552,8 @@ func (j *jsiiProxy_FirebaseAppHostingBuild) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_FirebaseAppHostingBuild) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FirebaseAppHostingBuild) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -612,8 +612,8 @@ func (j *jsiiProxy_FirebaseAppHostingBuild) TerraformLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_FirebaseAppHostingBuild) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_FirebaseAppHostingBuild) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -642,8 +642,8 @@ func (j *jsiiProxy_FirebaseAppHostingBuild) Timeouts() FirebaseAppHostingBuildTi
 	return returns
 }
 
-func (j *jsiiProxy_FirebaseAppHostingBuild) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FirebaseAppHostingBuild) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -672,7 +672,6 @@ func (j *jsiiProxy_FirebaseAppHostingBuild) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebase_app_hosting_build google_firebase_app_hosting_build} Resource.
 func NewFirebaseAppHostingBuild(scope constructs.Construct, id *string, config *FirebaseAppHostingBuildConfig) FirebaseAppHostingBuild {
 	_init_.Initialize()
@@ -684,7 +683,7 @@ func NewFirebaseAppHostingBuild(scope constructs.Construct, id *string, config *
 
 	_jsii_.Create(
 		"@cdktf/provider-google.firebaseAppHostingBuild.FirebaseAppHostingBuild",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -697,12 +696,12 @@ func NewFirebaseAppHostingBuild_Override(f FirebaseAppHostingBuild, scope constr
 
 	_jsii_.Create(
 		"@cdktf/provider-google.firebaseAppHostingBuild.FirebaseAppHostingBuild",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		f,
 	)
 }
 
-func (j *jsiiProxy_FirebaseAppHostingBuild)SetAnnotations(val *map[string]*string) {
+func (j *jsiiProxy_FirebaseAppHostingBuild) SetAnnotations(val *map[string]*string) {
 	if err := j.validateSetAnnotationsParameters(val); err != nil {
 		panic(err)
 	}
@@ -713,7 +712,7 @@ func (j *jsiiProxy_FirebaseAppHostingBuild)SetAnnotations(val *map[string]*strin
 	)
 }
 
-func (j *jsiiProxy_FirebaseAppHostingBuild)SetBackend(val *string) {
+func (j *jsiiProxy_FirebaseAppHostingBuild) SetBackend(val *string) {
 	if err := j.validateSetBackendParameters(val); err != nil {
 		panic(err)
 	}
@@ -724,7 +723,7 @@ func (j *jsiiProxy_FirebaseAppHostingBuild)SetBackend(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FirebaseAppHostingBuild)SetBuildId(val *string) {
+func (j *jsiiProxy_FirebaseAppHostingBuild) SetBuildId(val *string) {
 	if err := j.validateSetBuildIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -735,7 +734,7 @@ func (j *jsiiProxy_FirebaseAppHostingBuild)SetBuildId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FirebaseAppHostingBuild)SetConnection(val interface{}) {
+func (j *jsiiProxy_FirebaseAppHostingBuild) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -746,7 +745,7 @@ func (j *jsiiProxy_FirebaseAppHostingBuild)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_FirebaseAppHostingBuild)SetCount(val interface{}) {
+func (j *jsiiProxy_FirebaseAppHostingBuild) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -757,7 +756,7 @@ func (j *jsiiProxy_FirebaseAppHostingBuild)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_FirebaseAppHostingBuild)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_FirebaseAppHostingBuild) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -765,7 +764,7 @@ func (j *jsiiProxy_FirebaseAppHostingBuild)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_FirebaseAppHostingBuild)SetDisplayName(val *string) {
+func (j *jsiiProxy_FirebaseAppHostingBuild) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -776,7 +775,7 @@ func (j *jsiiProxy_FirebaseAppHostingBuild)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FirebaseAppHostingBuild)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_FirebaseAppHostingBuild) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -784,7 +783,7 @@ func (j *jsiiProxy_FirebaseAppHostingBuild)SetForEach(val cdktf.ITerraformIterat
 	)
 }
 
-func (j *jsiiProxy_FirebaseAppHostingBuild)SetId(val *string) {
+func (j *jsiiProxy_FirebaseAppHostingBuild) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -795,7 +794,7 @@ func (j *jsiiProxy_FirebaseAppHostingBuild)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FirebaseAppHostingBuild)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_FirebaseAppHostingBuild) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -806,7 +805,7 @@ func (j *jsiiProxy_FirebaseAppHostingBuild)SetLabels(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_FirebaseAppHostingBuild)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_FirebaseAppHostingBuild) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -817,7 +816,7 @@ func (j *jsiiProxy_FirebaseAppHostingBuild)SetLifecycle(val *cdktf.TerraformReso
 	)
 }
 
-func (j *jsiiProxy_FirebaseAppHostingBuild)SetLocation(val *string) {
+func (j *jsiiProxy_FirebaseAppHostingBuild) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -828,7 +827,7 @@ func (j *jsiiProxy_FirebaseAppHostingBuild)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FirebaseAppHostingBuild)SetProject(val *string) {
+func (j *jsiiProxy_FirebaseAppHostingBuild) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -839,7 +838,7 @@ func (j *jsiiProxy_FirebaseAppHostingBuild)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FirebaseAppHostingBuild)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_FirebaseAppHostingBuild) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -847,7 +846,7 @@ func (j *jsiiProxy_FirebaseAppHostingBuild)SetProvider(val cdktf.TerraformProvid
 	)
 }
 
-func (j *jsiiProxy_FirebaseAppHostingBuild)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_FirebaseAppHostingBuild) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -870,7 +869,7 @@ func FirebaseAppHostingBuild_GenerateConfigForImport(scope constructs.Construct,
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.firebaseAppHostingBuild.FirebaseAppHostingBuild",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -894,7 +893,7 @@ func FirebaseAppHostingBuild_GenerateConfigForImport(scope constructs.Construct,
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func FirebaseAppHostingBuild_IsConstruct(x interface{}) *bool {
+func FirebaseAppHostingBuild_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateFirebaseAppHostingBuild_IsConstructParameters(x); err != nil {
@@ -905,7 +904,7 @@ func FirebaseAppHostingBuild_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.firebaseAppHostingBuild.FirebaseAppHostingBuild",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -913,7 +912,7 @@ func FirebaseAppHostingBuild_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func FirebaseAppHostingBuild_IsTerraformElement(x interface{}) *bool {
+func FirebaseAppHostingBuild_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateFirebaseAppHostingBuild_IsTerraformElementParameters(x); err != nil {
@@ -924,7 +923,7 @@ func FirebaseAppHostingBuild_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.firebaseAppHostingBuild.FirebaseAppHostingBuild",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -932,7 +931,7 @@ func FirebaseAppHostingBuild_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func FirebaseAppHostingBuild_IsTerraformResource(x interface{}) *bool {
+func FirebaseAppHostingBuild_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateFirebaseAppHostingBuild_IsTerraformResourceParameters(x); err != nil {
@@ -943,7 +942,7 @@ func FirebaseAppHostingBuild_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.firebaseAppHostingBuild.FirebaseAppHostingBuild",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -968,31 +967,31 @@ func (f *jsiiProxy_FirebaseAppHostingBuild) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		f,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (f *jsiiProxy_FirebaseAppHostingBuild) AddOverride(path *string, value interface{}) {
+func (f *jsiiProxy_FirebaseAppHostingBuild) AddOverride(path *string, value any) {
 	if err := f.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		f,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (f *jsiiProxy_FirebaseAppHostingBuild) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (f *jsiiProxy_FirebaseAppHostingBuild) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := f.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1008,7 +1007,7 @@ func (f *jsiiProxy_FirebaseAppHostingBuild) GetBooleanAttribute(terraformAttribu
 	_jsii_.Invoke(
 		f,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1024,7 +1023,7 @@ func (f *jsiiProxy_FirebaseAppHostingBuild) GetBooleanMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		f,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1040,7 +1039,7 @@ func (f *jsiiProxy_FirebaseAppHostingBuild) GetListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		f,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1056,7 +1055,7 @@ func (f *jsiiProxy_FirebaseAppHostingBuild) GetNumberAttribute(terraformAttribut
 	_jsii_.Invoke(
 		f,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1072,7 +1071,7 @@ func (f *jsiiProxy_FirebaseAppHostingBuild) GetNumberListAttribute(terraformAttr
 	_jsii_.Invoke(
 		f,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1088,7 +1087,7 @@ func (f *jsiiProxy_FirebaseAppHostingBuild) GetNumberMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		f,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1104,7 +1103,7 @@ func (f *jsiiProxy_FirebaseAppHostingBuild) GetStringAttribute(terraformAttribut
 	_jsii_.Invoke(
 		f,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1120,15 +1119,15 @@ func (f *jsiiProxy_FirebaseAppHostingBuild) GetStringMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		f,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (f *jsiiProxy_FirebaseAppHostingBuild) HasResourceMove() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FirebaseAppHostingBuild) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -1147,7 +1146,7 @@ func (f *jsiiProxy_FirebaseAppHostingBuild) ImportFrom(id *string, provider cdkt
 	_jsii_.InvokeVoid(
 		f,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1160,7 +1159,7 @@ func (f *jsiiProxy_FirebaseAppHostingBuild) InterpolationForAttribute(terraformA
 	_jsii_.Invoke(
 		f,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1174,18 +1173,18 @@ func (f *jsiiProxy_FirebaseAppHostingBuild) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		f,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (f *jsiiProxy_FirebaseAppHostingBuild) MoveTo(moveTarget *string, index interface{}) {
+func (f *jsiiProxy_FirebaseAppHostingBuild) MoveTo(moveTarget *string, index any) {
 	if err := f.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		f,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1196,7 +1195,7 @@ func (f *jsiiProxy_FirebaseAppHostingBuild) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		f,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1207,7 +1206,7 @@ func (f *jsiiProxy_FirebaseAppHostingBuild) OverrideLogicalId(newLogicalId *stri
 	_jsii_.InvokeVoid(
 		f,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1218,7 +1217,7 @@ func (f *jsiiProxy_FirebaseAppHostingBuild) PutSource(value *FirebaseAppHostingB
 	_jsii_.InvokeVoid(
 		f,
 		"putSource",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1229,7 +1228,7 @@ func (f *jsiiProxy_FirebaseAppHostingBuild) PutTimeouts(value *FirebaseAppHostin
 	_jsii_.InvokeVoid(
 		f,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1289,8 +1288,8 @@ func (f *jsiiProxy_FirebaseAppHostingBuild) ResetTimeouts() {
 	)
 }
 
-func (f *jsiiProxy_FirebaseAppHostingBuild) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (f *jsiiProxy_FirebaseAppHostingBuild) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
@@ -1302,8 +1301,8 @@ func (f *jsiiProxy_FirebaseAppHostingBuild) SynthesizeAttributes() *map[string]i
 	return returns
 }
 
-func (f *jsiiProxy_FirebaseAppHostingBuild) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (f *jsiiProxy_FirebaseAppHostingBuild) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
@@ -1315,8 +1314,8 @@ func (f *jsiiProxy_FirebaseAppHostingBuild) SynthesizeHclAttributes() *map[strin
 	return returns
 }
 
-func (f *jsiiProxy_FirebaseAppHostingBuild) ToHclTerraform() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FirebaseAppHostingBuild) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -1328,8 +1327,8 @@ func (f *jsiiProxy_FirebaseAppHostingBuild) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (f *jsiiProxy_FirebaseAppHostingBuild) ToMetadata() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FirebaseAppHostingBuild) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -1354,8 +1353,8 @@ func (f *jsiiProxy_FirebaseAppHostingBuild) ToString() *string {
 	return returns
 }
 
-func (f *jsiiProxy_FirebaseAppHostingBuild) ToTerraform() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FirebaseAppHostingBuild) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -1366,4 +1365,3 @@ func (f *jsiiProxy_FirebaseAppHostingBuild) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocAutoscalingPolicy.DataprocAutoscalingPolicy",
-		reflect.TypeOf((*DataprocAutoscalingPolicy)(nil)).Elem(),
+		reflect.TypeFor[DataprocAutoscalingPolicy](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -81,7 +81,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workerConfig", GoGetter: "WorkerConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "workerConfigInput", GoGetter: "WorkerConfigInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocAutoscalingPolicy{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -89,11 +89,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocAutoscalingPolicy.DataprocAutoscalingPolicyBasicAlgorithm",
-		reflect.TypeOf((*DataprocAutoscalingPolicyBasicAlgorithm)(nil)).Elem(),
+		reflect.TypeFor[DataprocAutoscalingPolicyBasicAlgorithm](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocAutoscalingPolicy.DataprocAutoscalingPolicyBasicAlgorithmOutputReference",
-		reflect.TypeOf((*DataprocAutoscalingPolicyBasicAlgorithmOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocAutoscalingPolicyBasicAlgorithmOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -123,7 +123,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "yarnConfig", GoGetter: "YarnConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "yarnConfigInput", GoGetter: "YarnConfigInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocAutoscalingPolicyBasicAlgorithmOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -131,11 +131,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocAutoscalingPolicy.DataprocAutoscalingPolicyBasicAlgorithmYarnConfig",
-		reflect.TypeOf((*DataprocAutoscalingPolicyBasicAlgorithmYarnConfig)(nil)).Elem(),
+		reflect.TypeFor[DataprocAutoscalingPolicyBasicAlgorithmYarnConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocAutoscalingPolicy.DataprocAutoscalingPolicyBasicAlgorithmYarnConfigOutputReference",
-		reflect.TypeOf((*DataprocAutoscalingPolicyBasicAlgorithmYarnConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocAutoscalingPolicyBasicAlgorithmYarnConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -171,7 +171,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocAutoscalingPolicyBasicAlgorithmYarnConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -179,15 +179,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocAutoscalingPolicy.DataprocAutoscalingPolicyConfig",
-		reflect.TypeOf((*DataprocAutoscalingPolicyConfig)(nil)).Elem(),
+		reflect.TypeFor[DataprocAutoscalingPolicyConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocAutoscalingPolicy.DataprocAutoscalingPolicySecondaryWorkerConfig",
-		reflect.TypeOf((*DataprocAutoscalingPolicySecondaryWorkerConfig)(nil)).Elem(),
+		reflect.TypeFor[DataprocAutoscalingPolicySecondaryWorkerConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocAutoscalingPolicy.DataprocAutoscalingPolicySecondaryWorkerConfigOutputReference",
-		reflect.TypeOf((*DataprocAutoscalingPolicySecondaryWorkerConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocAutoscalingPolicySecondaryWorkerConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -220,7 +220,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "weight", GoGetter: "Weight"},
 			_jsii_.MemberProperty{JsiiProperty: "weightInput", GoGetter: "WeightInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocAutoscalingPolicySecondaryWorkerConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -228,11 +228,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocAutoscalingPolicy.DataprocAutoscalingPolicyTimeouts",
-		reflect.TypeOf((*DataprocAutoscalingPolicyTimeouts)(nil)).Elem(),
+		reflect.TypeFor[DataprocAutoscalingPolicyTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocAutoscalingPolicy.DataprocAutoscalingPolicyTimeoutsOutputReference",
-		reflect.TypeOf((*DataprocAutoscalingPolicyTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocAutoscalingPolicyTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -265,7 +265,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocAutoscalingPolicyTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -273,11 +273,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocAutoscalingPolicy.DataprocAutoscalingPolicyWorkerConfig",
-		reflect.TypeOf((*DataprocAutoscalingPolicyWorkerConfig)(nil)).Elem(),
+		reflect.TypeFor[DataprocAutoscalingPolicyWorkerConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocAutoscalingPolicy.DataprocAutoscalingPolicyWorkerConfigOutputReference",
-		reflect.TypeOf((*DataprocAutoscalingPolicyWorkerConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocAutoscalingPolicyWorkerConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -309,7 +309,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "weight", GoGetter: "Weight"},
 			_jsii_.MemberProperty{JsiiProperty: "weightInput", GoGetter: "WeightInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocAutoscalingPolicyWorkerConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

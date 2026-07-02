@@ -14,9 +14,9 @@ type HealthcareFhirStoreStreamConfigsOutputReference interface {
 	BigqueryDestinationInput() *HealthcareFhirStoreStreamConfigsBigqueryDestination
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -29,8 +29,8 @@ type HealthcareFhirStoreStreamConfigsOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	ResourceTypes() *[]*string
 	SetResourceTypes(val *[]*string)
 	ResourceTypesInput() *[]*string
@@ -45,7 +45,7 @@ type HealthcareFhirStoreStreamConfigsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -70,7 +70,7 @@ type HealthcareFhirStoreStreamConfigsOutputReference interface {
 	ResetResourceTypes()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -103,8 +103,8 @@ func (j *jsiiProxy_HealthcareFhirStoreStreamConfigsOutputReference) BigqueryDest
 	return returns
 }
 
-func (j *jsiiProxy_HealthcareFhirStoreStreamConfigsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HealthcareFhirStoreStreamConfigsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -143,8 +143,8 @@ func (j *jsiiProxy_HealthcareFhirStoreStreamConfigsOutputReference) Fqn() *strin
 	return returns
 }
 
-func (j *jsiiProxy_HealthcareFhirStoreStreamConfigsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HealthcareFhirStoreStreamConfigsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -193,7 +193,6 @@ func (j *jsiiProxy_HealthcareFhirStoreStreamConfigsOutputReference) TerraformRes
 	return returns
 }
 
-
 func NewHealthcareFhirStoreStreamConfigsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) HealthcareFhirStoreStreamConfigsOutputReference {
 	_init_.Initialize()
 
@@ -204,7 +203,7 @@ func NewHealthcareFhirStoreStreamConfigsOutputReference(terraformResource cdktf.
 
 	_jsii_.Create(
 		"@cdktf/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -216,12 +215,12 @@ func NewHealthcareFhirStoreStreamConfigsOutputReference_Override(h HealthcareFhi
 
 	_jsii_.Create(
 		"@cdktf/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		h,
 	)
 }
 
-func (j *jsiiProxy_HealthcareFhirStoreStreamConfigsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_HealthcareFhirStoreStreamConfigsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -232,7 +231,7 @@ func (j *jsiiProxy_HealthcareFhirStoreStreamConfigsOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_HealthcareFhirStoreStreamConfigsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_HealthcareFhirStoreStreamConfigsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -243,7 +242,7 @@ func (j *jsiiProxy_HealthcareFhirStoreStreamConfigsOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_HealthcareFhirStoreStreamConfigsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_HealthcareFhirStoreStreamConfigsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_HealthcareFhirStoreStreamConfigsOutputReference)SetInternalVa
 	)
 }
 
-func (j *jsiiProxy_HealthcareFhirStoreStreamConfigsOutputReference)SetResourceTypes(val *[]*string) {
+func (j *jsiiProxy_HealthcareFhirStoreStreamConfigsOutputReference) SetResourceTypes(val *[]*string) {
 	if err := j.validateSetResourceTypesParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_HealthcareFhirStoreStreamConfigsOutputReference)SetResourceTy
 	)
 }
 
-func (j *jsiiProxy_HealthcareFhirStoreStreamConfigsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_HealthcareFhirStoreStreamConfigsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_HealthcareFhirStoreStreamConfigsOutputReference)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_HealthcareFhirStoreStreamConfigsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_HealthcareFhirStoreStreamConfigsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,16 +299,16 @@ func (h *jsiiProxy_HealthcareFhirStoreStreamConfigsOutputReference) ComputeFqn()
 	return returns
 }
 
-func (h *jsiiProxy_HealthcareFhirStoreStreamConfigsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (h *jsiiProxy_HealthcareFhirStoreStreamConfigsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := h.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		h,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -325,7 +324,7 @@ func (h *jsiiProxy_HealthcareFhirStoreStreamConfigsOutputReference) GetBooleanAt
 	_jsii_.Invoke(
 		h,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -341,7 +340,7 @@ func (h *jsiiProxy_HealthcareFhirStoreStreamConfigsOutputReference) GetBooleanMa
 	_jsii_.Invoke(
 		h,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -357,7 +356,7 @@ func (h *jsiiProxy_HealthcareFhirStoreStreamConfigsOutputReference) GetListAttri
 	_jsii_.Invoke(
 		h,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -373,7 +372,7 @@ func (h *jsiiProxy_HealthcareFhirStoreStreamConfigsOutputReference) GetNumberAtt
 	_jsii_.Invoke(
 		h,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -389,7 +388,7 @@ func (h *jsiiProxy_HealthcareFhirStoreStreamConfigsOutputReference) GetNumberLis
 	_jsii_.Invoke(
 		h,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -405,7 +404,7 @@ func (h *jsiiProxy_HealthcareFhirStoreStreamConfigsOutputReference) GetNumberMap
 	_jsii_.Invoke(
 		h,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -421,7 +420,7 @@ func (h *jsiiProxy_HealthcareFhirStoreStreamConfigsOutputReference) GetStringAtt
 	_jsii_.Invoke(
 		h,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -437,7 +436,7 @@ func (h *jsiiProxy_HealthcareFhirStoreStreamConfigsOutputReference) GetStringMap
 	_jsii_.Invoke(
 		h,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -466,7 +465,7 @@ func (h *jsiiProxy_HealthcareFhirStoreStreamConfigsOutputReference) Interpolatio
 	_jsii_.Invoke(
 		h,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -480,7 +479,7 @@ func (h *jsiiProxy_HealthcareFhirStoreStreamConfigsOutputReference) PutBigqueryD
 	_jsii_.InvokeVoid(
 		h,
 		"putBigqueryDestination",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -492,16 +491,16 @@ func (h *jsiiProxy_HealthcareFhirStoreStreamConfigsOutputReference) ResetResourc
 	)
 }
 
-func (h *jsiiProxy_HealthcareFhirStoreStreamConfigsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (h *jsiiProxy_HealthcareFhirStoreStreamConfigsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := h.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		h,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -520,4 +519,3 @@ func (h *jsiiProxy_HealthcareFhirStoreStreamConfigsOutputReference) ToString() *
 
 	return returns
 }
-

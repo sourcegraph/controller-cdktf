@@ -34,7 +34,7 @@ func (s *jsiiProxy_SecretManagerSecretReplicationUserManagedReplicasList) valida
 	return nil
 }
 
-func (j *jsiiProxy_SecretManagerSecretReplicationUserManagedReplicasList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SecretManagerSecretReplicationUserManagedReplicasList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewSecretManagerSecretReplicationUserManagedReplicasListParameters(
 
 	return nil
 }
-

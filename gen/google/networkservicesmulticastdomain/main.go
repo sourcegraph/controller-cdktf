@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkServicesMulticastDomain.NetworkServicesMulticastDomain",
-		reflect.TypeOf((*NetworkServicesMulticastDomain)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesMulticastDomain](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -92,7 +92,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uniqueId", GoGetter: "UniqueId"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkServicesMulticastDomain{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -100,15 +100,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkServicesMulticastDomain.NetworkServicesMulticastDomainConfig",
-		reflect.TypeOf((*NetworkServicesMulticastDomainConfig)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesMulticastDomainConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkServicesMulticastDomain.NetworkServicesMulticastDomainConnectionConfig",
-		reflect.TypeOf((*NetworkServicesMulticastDomainConnectionConfig)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesMulticastDomainConnectionConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkServicesMulticastDomain.NetworkServicesMulticastDomainConnectionConfigOutputReference",
-		reflect.TypeOf((*NetworkServicesMulticastDomainConnectionConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesMulticastDomainConnectionConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -137,7 +137,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkServicesMulticastDomainConnectionConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -145,11 +145,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkServicesMulticastDomain.NetworkServicesMulticastDomainState",
-		reflect.TypeOf((*NetworkServicesMulticastDomainState)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesMulticastDomainState](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkServicesMulticastDomain.NetworkServicesMulticastDomainStateList",
-		reflect.TypeOf((*NetworkServicesMulticastDomainStateList)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesMulticastDomainStateList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -162,7 +162,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkServicesMulticastDomainStateList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -170,7 +170,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkServicesMulticastDomain.NetworkServicesMulticastDomainStateOutputReference",
-		reflect.TypeOf((*NetworkServicesMulticastDomainStateOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesMulticastDomainStateOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -195,7 +195,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkServicesMulticastDomainStateOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -203,11 +203,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkServicesMulticastDomain.NetworkServicesMulticastDomainTimeouts",
-		reflect.TypeOf((*NetworkServicesMulticastDomainTimeouts)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesMulticastDomainTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkServicesMulticastDomain.NetworkServicesMulticastDomainTimeoutsOutputReference",
-		reflect.TypeOf((*NetworkServicesMulticastDomainTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesMulticastDomainTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -240,7 +240,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkServicesMulticastDomainTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -248,11 +248,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkServicesMulticastDomain.NetworkServicesMulticastDomainUllMulticastDomain",
-		reflect.TypeOf((*NetworkServicesMulticastDomainUllMulticastDomain)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesMulticastDomainUllMulticastDomain](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkServicesMulticastDomain.NetworkServicesMulticastDomainUllMulticastDomainOutputReference",
-		reflect.TypeOf((*NetworkServicesMulticastDomainUllMulticastDomainOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesMulticastDomainUllMulticastDomainOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -279,7 +279,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkServicesMulticastDomainUllMulticastDomainOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

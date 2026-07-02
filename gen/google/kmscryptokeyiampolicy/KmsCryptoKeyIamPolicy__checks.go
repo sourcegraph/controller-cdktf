@@ -19,7 +19,7 @@ func (k *jsiiProxy_KmsCryptoKeyIamPolicy) validateAddMoveTargetParameters(moveTa
 	return nil
 }
 
-func (k *jsiiProxy_KmsCryptoKeyIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (k *jsiiProxy_KmsCryptoKeyIamPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (k *jsiiProxy_KmsCryptoKeyIamPolicy) validateMoveFromIdParameters(id *strin
 	return nil
 }
 
-func (k *jsiiProxy_KmsCryptoKeyIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (k *jsiiProxy_KmsCryptoKeyIamPolicy) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateKmsCryptoKeyIamPolicy_GenerateConfigForImportParameters(scope const
 	return nil
 }
 
-func validateKmsCryptoKeyIamPolicy_IsConstructParameters(x interface{}) error {
+func validateKmsCryptoKeyIamPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateKmsCryptoKeyIamPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateKmsCryptoKeyIamPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateKmsCryptoKeyIamPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateKmsCryptoKeyIamPolicy_IsTerraformElementParameters(x interface{}) e
 	return nil
 }
 
-func validateKmsCryptoKeyIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+func validateKmsCryptoKeyIamPolicy_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateKmsCryptoKeyIamPolicy_IsTerraformResourceParameters(x interface{}) 
 	return nil
 }
 
-func (j *jsiiProxy_KmsCryptoKeyIamPolicy) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_KmsCryptoKeyIamPolicy) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_KmsCryptoKeyIamPolicy) validateSetConnectionParameters(val in
 	return nil
 }
 
-func (j *jsiiProxy_KmsCryptoKeyIamPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_KmsCryptoKeyIamPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -366,7 +366,7 @@ func (j *jsiiProxy_KmsCryptoKeyIamPolicy) validateSetPolicyDataParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_KmsCryptoKeyIamPolicy) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_KmsCryptoKeyIamPolicy) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -430,4 +430,3 @@ func validateNewKmsCryptoKeyIamPolicyParameters(scope constructs.Construct, id *
 
 	return nil
 }
-

@@ -18,15 +18,15 @@ type NetworkManagementOrganizationVpcFlowLogsConfig interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	CrossProjectMetadata() *string
 	SetCrossProjectMetadata(val *string)
@@ -83,11 +83,11 @@ type NetworkManagementOrganizationVpcFlowLogsConfig interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	State() *string
 	SetState(val *string)
 	StateInput() *string
@@ -95,11 +95,11 @@ type NetworkManagementOrganizationVpcFlowLogsConfig interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() NetworkManagementOrganizationVpcFlowLogsConfigTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UpdateTime() *string
 	VpcFlowLogsConfigId() *string
 	SetVpcFlowLogsConfigId(val *string)
@@ -108,9 +108,9 @@ type NetworkManagementOrganizationVpcFlowLogsConfig interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -128,7 +128,7 @@ type NetworkManagementOrganizationVpcFlowLogsConfig interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -140,7 +140,7 @@ type NetworkManagementOrganizationVpcFlowLogsConfig interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -162,17 +162,17 @@ type NetworkManagementOrganizationVpcFlowLogsConfig interface {
 	ResetOverrideLogicalId()
 	ResetState()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for NetworkManagementOrganizationVpcFlowLogsConfig
@@ -210,8 +210,8 @@ func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) CdktfStack() 
 	return returns
 }
 
-func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -220,8 +220,8 @@ func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) Connection() 
 	return returns
 }
 
-func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -230,8 +230,8 @@ func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) ConstructNode
 	return returns
 }
 
-func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -540,8 +540,8 @@ func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) Provider() cd
 	return returns
 }
 
-func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -550,8 +550,8 @@ func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) Provisioners(
 	return returns
 }
 
-func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -600,8 +600,8 @@ func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) TerraformLabe
 	return returns
 }
 
-func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -630,8 +630,8 @@ func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) Timeouts() Ne
 	return returns
 }
 
-func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -670,7 +670,6 @@ func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) VpcFlowLogsCo
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_management_organization_vpc_flow_logs_config google_network_management_organization_vpc_flow_logs_config} Resource.
 func NewNetworkManagementOrganizationVpcFlowLogsConfig(scope constructs.Construct, id *string, config *NetworkManagementOrganizationVpcFlowLogsConfigConfig) NetworkManagementOrganizationVpcFlowLogsConfig {
 	_init_.Initialize()
@@ -682,7 +681,7 @@ func NewNetworkManagementOrganizationVpcFlowLogsConfig(scope constructs.Construc
 
 	_jsii_.Create(
 		"@cdktf/provider-google.networkManagementOrganizationVpcFlowLogsConfig.NetworkManagementOrganizationVpcFlowLogsConfig",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -695,12 +694,12 @@ func NewNetworkManagementOrganizationVpcFlowLogsConfig_Override(n NetworkManagem
 
 	_jsii_.Create(
 		"@cdktf/provider-google.networkManagementOrganizationVpcFlowLogsConfig.NetworkManagementOrganizationVpcFlowLogsConfig",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig)SetAggregationInterval(val *string) {
+func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) SetAggregationInterval(val *string) {
 	if err := j.validateSetAggregationIntervalParameters(val); err != nil {
 		panic(err)
 	}
@@ -711,7 +710,7 @@ func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig)SetAggregation
 	)
 }
 
-func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig)SetConnection(val interface{}) {
+func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -722,7 +721,7 @@ func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig)SetConnection(
 	)
 }
 
-func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig)SetCount(val interface{}) {
+func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -733,7 +732,7 @@ func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig)SetCount(val i
 	)
 }
 
-func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig)SetCrossProjectMetadata(val *string) {
+func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) SetCrossProjectMetadata(val *string) {
 	if err := j.validateSetCrossProjectMetadataParameters(val); err != nil {
 		panic(err)
 	}
@@ -744,7 +743,7 @@ func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig)SetCrossProjec
 	)
 }
 
-func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -752,7 +751,7 @@ func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig)SetDependsOn(v
 	)
 }
 
-func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig)SetDescription(val *string) {
+func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -763,7 +762,7 @@ func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig)SetDescription
 	)
 }
 
-func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig)SetFilterExpr(val *string) {
+func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) SetFilterExpr(val *string) {
 	if err := j.validateSetFilterExprParameters(val); err != nil {
 		panic(err)
 	}
@@ -774,7 +773,7 @@ func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig)SetFilterExpr(
 	)
 }
 
-func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig)SetFlowSampling(val *float64) {
+func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) SetFlowSampling(val *float64) {
 	if err := j.validateSetFlowSamplingParameters(val); err != nil {
 		panic(err)
 	}
@@ -785,7 +784,7 @@ func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig)SetFlowSamplin
 	)
 }
 
-func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -793,7 +792,7 @@ func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig)SetForEach(val
 	)
 }
 
-func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig)SetId(val *string) {
+func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -804,7 +803,7 @@ func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig)SetId(val *str
 	)
 }
 
-func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -815,7 +814,7 @@ func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig)SetLabels(val 
 	)
 }
 
-func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -826,7 +825,7 @@ func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig)SetLifecycle(v
 	)
 }
 
-func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig)SetLocation(val *string) {
+func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -837,7 +836,7 @@ func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig)SetLocation(va
 	)
 }
 
-func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig)SetMetadata(val *string) {
+func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) SetMetadata(val *string) {
 	if err := j.validateSetMetadataParameters(val); err != nil {
 		panic(err)
 	}
@@ -848,7 +847,7 @@ func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig)SetMetadata(va
 	)
 }
 
-func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig)SetMetadataFields(val *[]*string) {
+func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) SetMetadataFields(val *[]*string) {
 	if err := j.validateSetMetadataFieldsParameters(val); err != nil {
 		panic(err)
 	}
@@ -859,7 +858,7 @@ func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig)SetMetadataFie
 	)
 }
 
-func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig)SetOrganization(val *string) {
+func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) SetOrganization(val *string) {
 	if err := j.validateSetOrganizationParameters(val); err != nil {
 		panic(err)
 	}
@@ -870,7 +869,7 @@ func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig)SetOrganizatio
 	)
 }
 
-func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -878,7 +877,7 @@ func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig)SetProvider(va
 	)
 }
 
-func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -889,7 +888,7 @@ func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig)SetProvisioner
 	)
 }
 
-func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig)SetState(val *string) {
+func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) SetState(val *string) {
 	if err := j.validateSetStateParameters(val); err != nil {
 		panic(err)
 	}
@@ -900,7 +899,7 @@ func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig)SetState(val *
 	)
 }
 
-func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig)SetVpcFlowLogsConfigId(val *string) {
+func (j *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) SetVpcFlowLogsConfigId(val *string) {
 	if err := j.validateSetVpcFlowLogsConfigIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -923,7 +922,7 @@ func NetworkManagementOrganizationVpcFlowLogsConfig_GenerateConfigForImport(scop
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.networkManagementOrganizationVpcFlowLogsConfig.NetworkManagementOrganizationVpcFlowLogsConfig",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -947,7 +946,7 @@ func NetworkManagementOrganizationVpcFlowLogsConfig_GenerateConfigForImport(scop
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func NetworkManagementOrganizationVpcFlowLogsConfig_IsConstruct(x interface{}) *bool {
+func NetworkManagementOrganizationVpcFlowLogsConfig_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetworkManagementOrganizationVpcFlowLogsConfig_IsConstructParameters(x); err != nil {
@@ -958,7 +957,7 @@ func NetworkManagementOrganizationVpcFlowLogsConfig_IsConstruct(x interface{}) *
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.networkManagementOrganizationVpcFlowLogsConfig.NetworkManagementOrganizationVpcFlowLogsConfig",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -966,7 +965,7 @@ func NetworkManagementOrganizationVpcFlowLogsConfig_IsConstruct(x interface{}) *
 }
 
 // Experimental.
-func NetworkManagementOrganizationVpcFlowLogsConfig_IsTerraformElement(x interface{}) *bool {
+func NetworkManagementOrganizationVpcFlowLogsConfig_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetworkManagementOrganizationVpcFlowLogsConfig_IsTerraformElementParameters(x); err != nil {
@@ -977,7 +976,7 @@ func NetworkManagementOrganizationVpcFlowLogsConfig_IsTerraformElement(x interfa
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.networkManagementOrganizationVpcFlowLogsConfig.NetworkManagementOrganizationVpcFlowLogsConfig",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -985,7 +984,7 @@ func NetworkManagementOrganizationVpcFlowLogsConfig_IsTerraformElement(x interfa
 }
 
 // Experimental.
-func NetworkManagementOrganizationVpcFlowLogsConfig_IsTerraformResource(x interface{}) *bool {
+func NetworkManagementOrganizationVpcFlowLogsConfig_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetworkManagementOrganizationVpcFlowLogsConfig_IsTerraformResourceParameters(x); err != nil {
@@ -996,7 +995,7 @@ func NetworkManagementOrganizationVpcFlowLogsConfig_IsTerraformResource(x interf
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.networkManagementOrganizationVpcFlowLogsConfig.NetworkManagementOrganizationVpcFlowLogsConfig",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1021,31 +1020,31 @@ func (n *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) AddMoveTarget
 	_jsii_.InvokeVoid(
 		n,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (n *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) AddOverride(path *string, value interface{}) {
+func (n *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) AddOverride(path *string, value any) {
 	if err := n.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (n *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (n *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1061,7 +1060,7 @@ func (n *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) GetBooleanAtt
 	_jsii_.Invoke(
 		n,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1077,7 +1076,7 @@ func (n *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) GetBooleanMap
 	_jsii_.Invoke(
 		n,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1093,7 +1092,7 @@ func (n *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) GetListAttrib
 	_jsii_.Invoke(
 		n,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1109,7 +1108,7 @@ func (n *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) GetNumberAttr
 	_jsii_.Invoke(
 		n,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1125,7 +1124,7 @@ func (n *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) GetNumberList
 	_jsii_.Invoke(
 		n,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1141,7 +1140,7 @@ func (n *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) GetNumberMapA
 	_jsii_.Invoke(
 		n,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1157,7 +1156,7 @@ func (n *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) GetStringAttr
 	_jsii_.Invoke(
 		n,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1173,15 +1172,15 @@ func (n *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) GetStringMapA
 	_jsii_.Invoke(
 		n,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (n *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) HasResourceMove() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1200,7 +1199,7 @@ func (n *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) ImportFrom(id
 	_jsii_.InvokeVoid(
 		n,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1213,7 +1212,7 @@ func (n *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) Interpolation
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1227,18 +1226,18 @@ func (n *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) MoveFromId(id
 	_jsii_.InvokeVoid(
 		n,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (n *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) MoveTo(moveTarget *string, index interface{}) {
+func (n *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) MoveTo(moveTarget *string, index any) {
 	if err := n.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1249,7 +1248,7 @@ func (n *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) MoveToId(id *
 	_jsii_.InvokeVoid(
 		n,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1260,7 +1259,7 @@ func (n *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) OverrideLogic
 	_jsii_.InvokeVoid(
 		n,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1271,7 +1270,7 @@ func (n *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) PutTimeouts(v
 	_jsii_.InvokeVoid(
 		n,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1371,8 +1370,8 @@ func (n *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) ResetTimeouts
 	)
 }
 
-func (n *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (n *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
@@ -1384,8 +1383,8 @@ func (n *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) SynthesizeAtt
 	return returns
 }
 
-func (n *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (n *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
@@ -1397,8 +1396,8 @@ func (n *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) SynthesizeHcl
 	return returns
 }
 
-func (n *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) ToHclTerraform() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1410,8 +1409,8 @@ func (n *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) ToHclTerrafor
 	return returns
 }
 
-func (n *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) ToMetadata() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1436,8 +1435,8 @@ func (n *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) ToString() *s
 	return returns
 }
 
-func (n *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) ToTerraform() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1448,4 +1447,3 @@ func (n *jsiiProxy_NetworkManagementOrganizationVpcFlowLogsConfig) ToTerraform()
 
 	return returns
 }
-

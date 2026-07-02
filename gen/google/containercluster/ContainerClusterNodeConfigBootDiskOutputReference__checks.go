@@ -98,7 +98,7 @@ func (c *jsiiProxy_ContainerClusterNodeConfigBootDiskOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterNodeConfigBootDiskOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterNodeConfigBootDiskOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewContainerClusterNodeConfigBootDiskOutputReferenceParameters(terr
 
 	return nil
 }
-

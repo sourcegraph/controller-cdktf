@@ -22,9 +22,9 @@ type ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyOutputReference interf
 	ClientTtlInput() *ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyClientTtl
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -43,14 +43,14 @@ type ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyOutputReference interf
 	SetInternalValue(val *ComputeUrlMapPathMatcherDefaultRouteActionCachePolicy)
 	MaxTtl() ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyMaxTtlOutputReference
 	MaxTtlInput() *ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyMaxTtl
-	NegativeCaching() interface{}
-	SetNegativeCaching(val interface{})
-	NegativeCachingInput() interface{}
+	NegativeCaching() any
+	SetNegativeCaching(val any)
+	NegativeCachingInput() any
 	NegativeCachingPolicy() ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyNegativeCachingPolicyList
-	NegativeCachingPolicyInput() interface{}
-	RequestCoalescing() interface{}
-	SetRequestCoalescing(val interface{})
-	RequestCoalescingInput() interface{}
+	NegativeCachingPolicyInput() any
+	RequestCoalescing() any
+	SetRequestCoalescing(val any)
+	RequestCoalescingInput() any
 	ServeWhileStale() ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyServeWhileStaleOutputReference
 	ServeWhileStaleInput() *ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyServeWhileStale
 	// Experimental.
@@ -64,7 +64,7 @@ type ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyOutputReference interf
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -89,7 +89,7 @@ type ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyOutputReference interf
 	PutClientTtl(value *ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyClientTtl)
 	PutDefaultTtl(value *ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyDefaultTtl)
 	PutMaxTtl(value *ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyMaxTtl)
-	PutNegativeCachingPolicy(value interface{})
+	PutNegativeCachingPolicy(value any)
 	PutServeWhileStale(value *ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyServeWhileStale)
 	ResetCacheBypassRequestHeaderNames()
 	ResetCacheKeyPolicy()
@@ -103,7 +103,7 @@ type ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyOutputReference interf
 	ResetServeWhileStale()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -196,8 +196,8 @@ func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -286,8 +286,8 @@ func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyOutputReference) NegativeCaching() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyOutputReference) NegativeCaching() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"negativeCaching",
@@ -296,8 +296,8 @@ func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyOutputReference) NegativeCachingInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyOutputReference) NegativeCachingInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"negativeCachingInput",
@@ -316,8 +316,8 @@ func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyOutputReference) NegativeCachingPolicyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyOutputReference) NegativeCachingPolicyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"negativeCachingPolicyInput",
@@ -326,8 +326,8 @@ func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyOutputReference) RequestCoalescing() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyOutputReference) RequestCoalescing() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requestCoalescing",
@@ -336,8 +336,8 @@ func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyOutputReference) RequestCoalescingInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyOutputReference) RequestCoalescingInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requestCoalescingInput",
@@ -386,7 +386,6 @@ func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyOutputRe
 	return returns
 }
 
-
 func NewComputeUrlMapPathMatcherDefaultRouteActionCachePolicyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyOutputReference {
 	_init_.Initialize()
 
@@ -397,7 +396,7 @@ func NewComputeUrlMapPathMatcherDefaultRouteActionCachePolicyOutputReference(ter
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeUrlMap.ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -409,12 +408,12 @@ func NewComputeUrlMapPathMatcherDefaultRouteActionCachePolicyOutputReference_Ove
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeUrlMap.ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyOutputReference)SetCacheBypassRequestHeaderNames(val *[]*string) {
+func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyOutputReference) SetCacheBypassRequestHeaderNames(val *[]*string) {
 	if err := j.validateSetCacheBypassRequestHeaderNamesParameters(val); err != nil {
 		panic(err)
 	}
@@ -425,7 +424,7 @@ func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyOutputRe
 	)
 }
 
-func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyOutputReference)SetCacheMode(val *string) {
+func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyOutputReference) SetCacheMode(val *string) {
 	if err := j.validateSetCacheModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -436,7 +435,7 @@ func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyOutputRe
 	)
 }
 
-func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -447,7 +446,7 @@ func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyOutputRe
 	)
 }
 
-func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -458,7 +457,7 @@ func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyOutputRe
 	)
 }
 
-func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyOutputReference)SetInternalValue(val *ComputeUrlMapPathMatcherDefaultRouteActionCachePolicy) {
+func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyOutputReference) SetInternalValue(val *ComputeUrlMapPathMatcherDefaultRouteActionCachePolicy) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -469,7 +468,7 @@ func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyOutputRe
 	)
 }
 
-func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyOutputReference)SetNegativeCaching(val interface{}) {
+func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyOutputReference) SetNegativeCaching(val any) {
 	if err := j.validateSetNegativeCachingParameters(val); err != nil {
 		panic(err)
 	}
@@ -480,7 +479,7 @@ func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyOutputRe
 	)
 }
 
-func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyOutputReference)SetRequestCoalescing(val interface{}) {
+func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyOutputReference) SetRequestCoalescing(val any) {
 	if err := j.validateSetRequestCoalescingParameters(val); err != nil {
 		panic(err)
 	}
@@ -491,7 +490,7 @@ func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyOutputRe
 	)
 }
 
-func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -502,7 +501,7 @@ func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyOutputRe
 	)
 }
 
-func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -526,16 +525,16 @@ func (c *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyOutputRe
 	return returns
 }
 
-func (c *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -551,7 +550,7 @@ func (c *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyOutputRe
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -567,7 +566,7 @@ func (c *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyOutputRe
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -583,7 +582,7 @@ func (c *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyOutputRe
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -599,7 +598,7 @@ func (c *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyOutputRe
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -615,7 +614,7 @@ func (c *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyOutputRe
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -631,7 +630,7 @@ func (c *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyOutputRe
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -647,7 +646,7 @@ func (c *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyOutputRe
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -663,7 +662,7 @@ func (c *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyOutputRe
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -692,7 +691,7 @@ func (c *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyOutputRe
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -706,7 +705,7 @@ func (c *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyOutputRe
 	_jsii_.InvokeVoid(
 		c,
 		"putCacheKeyPolicy",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -717,7 +716,7 @@ func (c *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyOutputRe
 	_jsii_.InvokeVoid(
 		c,
 		"putClientTtl",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -728,7 +727,7 @@ func (c *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyOutputRe
 	_jsii_.InvokeVoid(
 		c,
 		"putDefaultTtl",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -739,18 +738,18 @@ func (c *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyOutputRe
 	_jsii_.InvokeVoid(
 		c,
 		"putMaxTtl",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyOutputReference) PutNegativeCachingPolicy(value interface{}) {
+func (c *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyOutputReference) PutNegativeCachingPolicy(value any) {
 	if err := c.validatePutNegativeCachingPolicyParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putNegativeCachingPolicy",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -761,7 +760,7 @@ func (c *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyOutputRe
 	_jsii_.InvokeVoid(
 		c,
 		"putServeWhileStale",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -845,16 +844,16 @@ func (c *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyOutputRe
 	)
 }
 
-func (c *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -873,4 +872,3 @@ func (c *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyOutputRe
 
 	return returns
 }
-

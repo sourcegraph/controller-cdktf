@@ -90,7 +90,7 @@ func (c *jsiiProxy_ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdC
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigRegistryHostsHostsOutputReference) validatePutCaParameters(value interface{}) error {
+func (c *jsiiProxy_ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigRegistryHostsHostsOutputReference) validatePutCaParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (c *jsiiProxy_ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdC
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigRegistryHostsHostsOutputReference) validatePutClientParameters(value interface{}) error {
+func (c *jsiiProxy_ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigRegistryHostsHostsOutputReference) validatePutClientParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -152,7 +152,7 @@ func (c *jsiiProxy_ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdC
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigRegistryHostsHostsOutputReference) validatePutHeaderParameters(value interface{}) error {
+func (c *jsiiProxy_ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigRegistryHostsHostsOutputReference) validatePutHeaderParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -199,7 +199,7 @@ func (j *jsiiProxy_ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdC
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigRegistryHostsHostsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigRegistryHostsHostsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -280,7 +280,7 @@ func (j *jsiiProxy_ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdC
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigRegistryHostsHostsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigRegistryHostsHostsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -304,7 +304,7 @@ func (j *jsiiProxy_ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdC
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigRegistryHostsHostsOutputReference) validateSetOverridePathParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigRegistryHostsHostsOutputReference) validateSetOverridePathParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -359,4 +359,3 @@ func validateNewContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConf
 
 	return nil
 }
-

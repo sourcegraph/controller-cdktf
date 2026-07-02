@@ -98,7 +98,7 @@ func (c *jsiiProxy_ChronicleWatchlistEntityCountOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_ChronicleWatchlistEntityCountOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ChronicleWatchlistEntityCountOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewChronicleWatchlistEntityCountOutputReferenceParameters(terraform
 
 	return nil
 }
-

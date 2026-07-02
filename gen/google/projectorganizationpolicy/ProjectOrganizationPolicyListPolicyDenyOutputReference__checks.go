@@ -98,7 +98,7 @@ func (p *jsiiProxy_ProjectOrganizationPolicyListPolicyDenyOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_ProjectOrganizationPolicyListPolicyDenyOutputReference) validateSetAllParameters(val interface{}) error {
+func (j *jsiiProxy_ProjectOrganizationPolicyListPolicyDenyOutputReference) validateSetAllParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -118,7 +118,7 @@ func (j *jsiiProxy_ProjectOrganizationPolicyListPolicyDenyOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_ProjectOrganizationPolicyListPolicyDenyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ProjectOrganizationPolicyListPolicyDenyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -226,4 +226,3 @@ func validateNewProjectOrganizationPolicyListPolicyDenyOutputReferenceParameters
 
 	return nil
 }
-

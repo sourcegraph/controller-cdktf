@@ -98,7 +98,7 @@ func (b *jsiiProxy_BackupDrBackupPlanAssociationRulesConfigInfoLastBackupErrorOu
 	return nil
 }
 
-func (j *jsiiProxy_BackupDrBackupPlanAssociationRulesConfigInfoLastBackupErrorOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BackupDrBackupPlanAssociationRulesConfigInfoLastBackupErrorOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewBackupDrBackupPlanAssociationRulesConfigInfoLastBackupErrorOutpu
 
 	return nil
 }
-

@@ -109,7 +109,7 @@ func (b *jsiiProxy_BigqueryTableExternalCatalogTableOptionsOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryTableExternalCatalogTableOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryTableExternalCatalogTableOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -225,4 +225,3 @@ func validateNewBigqueryTableExternalCatalogTableOptionsOutputReferenceParameter
 
 	return nil
 }
-

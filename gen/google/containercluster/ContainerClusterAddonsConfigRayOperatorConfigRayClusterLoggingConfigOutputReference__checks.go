@@ -98,7 +98,7 @@ func (c *jsiiProxy_ContainerClusterAddonsConfigRayOperatorConfigRayClusterLoggin
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterAddonsConfigRayOperatorConfigRayClusterLoggingConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterAddonsConfigRayOperatorConfigRayClusterLoggingConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ContainerClusterAddonsConfigRayOperatorConfigRayClusterLoggin
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterAddonsConfigRayOperatorConfigRayClusterLoggingConfigOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterAddonsConfigRayOperatorConfigRayClusterLoggingConfigOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -218,4 +218,3 @@ func validateNewContainerClusterAddonsConfigRayOperatorConfigRayClusterLoggingCo
 
 	return nil
 }
-

@@ -90,7 +90,7 @@ func (t *jsiiProxy_TranscoderJobConfigAOutputReference) validateInterpolationFor
 	return nil
 }
 
-func (t *jsiiProxy_TranscoderJobConfigAOutputReference) validatePutAdBreaksParameters(value interface{}) error {
+func (t *jsiiProxy_TranscoderJobConfigAOutputReference) validatePutAdBreaksParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (t *jsiiProxy_TranscoderJobConfigAOutputReference) validatePutAdBreaksParam
 	return nil
 }
 
-func (t *jsiiProxy_TranscoderJobConfigAOutputReference) validatePutEditListParameters(value interface{}) error {
+func (t *jsiiProxy_TranscoderJobConfigAOutputReference) validatePutEditListParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -152,7 +152,7 @@ func (t *jsiiProxy_TranscoderJobConfigAOutputReference) validatePutEditListParam
 	return nil
 }
 
-func (t *jsiiProxy_TranscoderJobConfigAOutputReference) validatePutElementaryStreamsParameters(value interface{}) error {
+func (t *jsiiProxy_TranscoderJobConfigAOutputReference) validatePutElementaryStreamsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (t *jsiiProxy_TranscoderJobConfigAOutputReference) validatePutElementaryStr
 	return nil
 }
 
-func (t *jsiiProxy_TranscoderJobConfigAOutputReference) validatePutEncryptionsParameters(value interface{}) error {
+func (t *jsiiProxy_TranscoderJobConfigAOutputReference) validatePutEncryptionsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -214,7 +214,7 @@ func (t *jsiiProxy_TranscoderJobConfigAOutputReference) validatePutEncryptionsPa
 	return nil
 }
 
-func (t *jsiiProxy_TranscoderJobConfigAOutputReference) validatePutInputsParameters(value interface{}) error {
+func (t *jsiiProxy_TranscoderJobConfigAOutputReference) validatePutInputsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -245,7 +245,7 @@ func (t *jsiiProxy_TranscoderJobConfigAOutputReference) validatePutInputsParamet
 	return nil
 }
 
-func (t *jsiiProxy_TranscoderJobConfigAOutputReference) validatePutManifestsParameters(value interface{}) error {
+func (t *jsiiProxy_TranscoderJobConfigAOutputReference) validatePutManifestsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -276,7 +276,7 @@ func (t *jsiiProxy_TranscoderJobConfigAOutputReference) validatePutManifestsPara
 	return nil
 }
 
-func (t *jsiiProxy_TranscoderJobConfigAOutputReference) validatePutMuxStreamsParameters(value interface{}) error {
+func (t *jsiiProxy_TranscoderJobConfigAOutputReference) validatePutMuxStreamsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -318,7 +318,7 @@ func (t *jsiiProxy_TranscoderJobConfigAOutputReference) validatePutOutputParamet
 	return nil
 }
 
-func (t *jsiiProxy_TranscoderJobConfigAOutputReference) validatePutOverlaysParameters(value interface{}) error {
+func (t *jsiiProxy_TranscoderJobConfigAOutputReference) validatePutOverlaysParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -368,7 +368,7 @@ func (t *jsiiProxy_TranscoderJobConfigAOutputReference) validateResolveParameter
 	return nil
 }
 
-func (j *jsiiProxy_TranscoderJobConfigAOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_TranscoderJobConfigAOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -468,4 +468,3 @@ func validateNewTranscoderJobConfigAOutputReferenceParameters(terraformResource 
 
 	return nil
 }
-

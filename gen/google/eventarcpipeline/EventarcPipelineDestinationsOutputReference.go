@@ -14,9 +14,9 @@ type EventarcPipelineDestinationsOutputReference interface {
 	AuthenticationConfigInput() *EventarcPipelineDestinationsAuthenticationConfig
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -31,8 +31,8 @@ type EventarcPipelineDestinationsOutputReference interface {
 	Fqn() *string
 	HttpEndpoint() EventarcPipelineDestinationsHttpEndpointOutputReference
 	HttpEndpointInput() *EventarcPipelineDestinationsHttpEndpoint
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	MessageBus() *string
 	SetMessageBus(val *string)
 	MessageBusInput() *string
@@ -57,7 +57,7 @@ type EventarcPipelineDestinationsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -91,7 +91,7 @@ type EventarcPipelineDestinationsOutputReference interface {
 	ResetWorkflow()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -124,8 +124,8 @@ func (j *jsiiProxy_EventarcPipelineDestinationsOutputReference) AuthenticationCo
 	return returns
 }
 
-func (j *jsiiProxy_EventarcPipelineDestinationsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EventarcPipelineDestinationsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -184,8 +184,8 @@ func (j *jsiiProxy_EventarcPipelineDestinationsOutputReference) HttpEndpointInpu
 	return returns
 }
 
-func (j *jsiiProxy_EventarcPipelineDestinationsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EventarcPipelineDestinationsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -314,7 +314,6 @@ func (j *jsiiProxy_EventarcPipelineDestinationsOutputReference) WorkflowInput() 
 	return returns
 }
 
-
 func NewEventarcPipelineDestinationsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) EventarcPipelineDestinationsOutputReference {
 	_init_.Initialize()
 
@@ -325,7 +324,7 @@ func NewEventarcPipelineDestinationsOutputReference(terraformResource cdktf.IInt
 
 	_jsii_.Create(
 		"@cdktf/provider-google.eventarcPipeline.EventarcPipelineDestinationsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -337,12 +336,12 @@ func NewEventarcPipelineDestinationsOutputReference_Override(e EventarcPipelineD
 
 	_jsii_.Create(
 		"@cdktf/provider-google.eventarcPipeline.EventarcPipelineDestinationsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)
 }
 
-func (j *jsiiProxy_EventarcPipelineDestinationsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_EventarcPipelineDestinationsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -353,7 +352,7 @@ func (j *jsiiProxy_EventarcPipelineDestinationsOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_EventarcPipelineDestinationsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_EventarcPipelineDestinationsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -364,7 +363,7 @@ func (j *jsiiProxy_EventarcPipelineDestinationsOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_EventarcPipelineDestinationsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_EventarcPipelineDestinationsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -375,7 +374,7 @@ func (j *jsiiProxy_EventarcPipelineDestinationsOutputReference)SetInternalValue(
 	)
 }
 
-func (j *jsiiProxy_EventarcPipelineDestinationsOutputReference)SetMessageBus(val *string) {
+func (j *jsiiProxy_EventarcPipelineDestinationsOutputReference) SetMessageBus(val *string) {
 	if err := j.validateSetMessageBusParameters(val); err != nil {
 		panic(err)
 	}
@@ -386,7 +385,7 @@ func (j *jsiiProxy_EventarcPipelineDestinationsOutputReference)SetMessageBus(val
 	)
 }
 
-func (j *jsiiProxy_EventarcPipelineDestinationsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_EventarcPipelineDestinationsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -397,7 +396,7 @@ func (j *jsiiProxy_EventarcPipelineDestinationsOutputReference)SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_EventarcPipelineDestinationsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EventarcPipelineDestinationsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -408,7 +407,7 @@ func (j *jsiiProxy_EventarcPipelineDestinationsOutputReference)SetTerraformResou
 	)
 }
 
-func (j *jsiiProxy_EventarcPipelineDestinationsOutputReference)SetTopic(val *string) {
+func (j *jsiiProxy_EventarcPipelineDestinationsOutputReference) SetTopic(val *string) {
 	if err := j.validateSetTopicParameters(val); err != nil {
 		panic(err)
 	}
@@ -419,7 +418,7 @@ func (j *jsiiProxy_EventarcPipelineDestinationsOutputReference)SetTopic(val *str
 	)
 }
 
-func (j *jsiiProxy_EventarcPipelineDestinationsOutputReference)SetWorkflow(val *string) {
+func (j *jsiiProxy_EventarcPipelineDestinationsOutputReference) SetWorkflow(val *string) {
 	if err := j.validateSetWorkflowParameters(val); err != nil {
 		panic(err)
 	}
@@ -443,16 +442,16 @@ func (e *jsiiProxy_EventarcPipelineDestinationsOutputReference) ComputeFqn() *st
 	return returns
 }
 
-func (e *jsiiProxy_EventarcPipelineDestinationsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_EventarcPipelineDestinationsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (e *jsiiProxy_EventarcPipelineDestinationsOutputReference) GetBooleanAttrib
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (e *jsiiProxy_EventarcPipelineDestinationsOutputReference) GetBooleanMapAtt
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -500,7 +499,7 @@ func (e *jsiiProxy_EventarcPipelineDestinationsOutputReference) GetListAttribute
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -516,7 +515,7 @@ func (e *jsiiProxy_EventarcPipelineDestinationsOutputReference) GetNumberAttribu
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -532,7 +531,7 @@ func (e *jsiiProxy_EventarcPipelineDestinationsOutputReference) GetNumberListAtt
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -548,7 +547,7 @@ func (e *jsiiProxy_EventarcPipelineDestinationsOutputReference) GetNumberMapAttr
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -564,7 +563,7 @@ func (e *jsiiProxy_EventarcPipelineDestinationsOutputReference) GetStringAttribu
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -580,7 +579,7 @@ func (e *jsiiProxy_EventarcPipelineDestinationsOutputReference) GetStringMapAttr
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -609,7 +608,7 @@ func (e *jsiiProxy_EventarcPipelineDestinationsOutputReference) InterpolationFor
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -623,7 +622,7 @@ func (e *jsiiProxy_EventarcPipelineDestinationsOutputReference) PutAuthenticatio
 	_jsii_.InvokeVoid(
 		e,
 		"putAuthenticationConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -634,7 +633,7 @@ func (e *jsiiProxy_EventarcPipelineDestinationsOutputReference) PutHttpEndpoint(
 	_jsii_.InvokeVoid(
 		e,
 		"putHttpEndpoint",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -645,7 +644,7 @@ func (e *jsiiProxy_EventarcPipelineDestinationsOutputReference) PutNetworkConfig
 	_jsii_.InvokeVoid(
 		e,
 		"putNetworkConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -656,7 +655,7 @@ func (e *jsiiProxy_EventarcPipelineDestinationsOutputReference) PutOutputPayload
 	_jsii_.InvokeVoid(
 		e,
 		"putOutputPayloadFormat",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -716,16 +715,16 @@ func (e *jsiiProxy_EventarcPipelineDestinationsOutputReference) ResetWorkflow() 
 	)
 }
 
-func (e *jsiiProxy_EventarcPipelineDestinationsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (e *jsiiProxy_EventarcPipelineDestinationsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := e.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -744,4 +743,3 @@ func (e *jsiiProxy_EventarcPipelineDestinationsOutputReference) ToString() *stri
 
 	return returns
 }
-

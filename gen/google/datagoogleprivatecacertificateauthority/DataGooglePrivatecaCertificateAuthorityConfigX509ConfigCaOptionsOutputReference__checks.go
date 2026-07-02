@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGooglePrivatecaCertificateAuthorityConfigX509ConfigCaOpti
 	return nil
 }
 
-func (j *jsiiProxy_DataGooglePrivatecaCertificateAuthorityConfigX509ConfigCaOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGooglePrivatecaCertificateAuthorityConfigX509ConfigCaOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGooglePrivatecaCertificateAuthorityConfigX509ConfigCaOptions
 
 	return nil
 }
-

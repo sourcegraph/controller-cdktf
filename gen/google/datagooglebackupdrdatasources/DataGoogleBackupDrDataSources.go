@@ -18,11 +18,11 @@ type DataGoogleBackupDrDataSources interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DataSources() DataGoogleBackupDrDataSourcesDataSourcesList
 	// Experimental.
 	DependsOn() *[]*string
@@ -62,17 +62,17 @@ type DataGoogleBackupDrDataSources interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -101,18 +101,18 @@ type DataGoogleBackupDrDataSources interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataGoogleBackupDrDataSources
@@ -150,8 +150,8 @@ func (j *jsiiProxy_DataGoogleBackupDrDataSources) CdktfStack() cdktf.TerraformSt
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleBackupDrDataSources) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleBackupDrDataSources) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -160,8 +160,8 @@ func (j *jsiiProxy_DataGoogleBackupDrDataSources) ConstructNodeMetadata() *map[s
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleBackupDrDataSources) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleBackupDrDataSources) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -350,8 +350,8 @@ func (j *jsiiProxy_DataGoogleBackupDrDataSources) Provider() cdktf.TerraformProv
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleBackupDrDataSources) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleBackupDrDataSources) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -370,8 +370,8 @@ func (j *jsiiProxy_DataGoogleBackupDrDataSources) TerraformGeneratorMetadata() *
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleBackupDrDataSources) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleBackupDrDataSources) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -390,7 +390,6 @@ func (j *jsiiProxy_DataGoogleBackupDrDataSources) TerraformResourceType() *strin
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/backup_dr_data_sources google_backup_dr_data_sources} Data Source.
 func NewDataGoogleBackupDrDataSources(scope constructs.Construct, id *string, config *DataGoogleBackupDrDataSourcesConfig) DataGoogleBackupDrDataSources {
 	_init_.Initialize()
@@ -402,7 +401,7 @@ func NewDataGoogleBackupDrDataSources(scope constructs.Construct, id *string, co
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleBackupDrDataSources.DataGoogleBackupDrDataSources",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -415,12 +414,12 @@ func NewDataGoogleBackupDrDataSources_Override(d DataGoogleBackupDrDataSources, 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleBackupDrDataSources.DataGoogleBackupDrDataSources",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataGoogleBackupDrDataSources)SetBackupVaultId(val *string) {
+func (j *jsiiProxy_DataGoogleBackupDrDataSources) SetBackupVaultId(val *string) {
 	if err := j.validateSetBackupVaultIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -431,7 +430,7 @@ func (j *jsiiProxy_DataGoogleBackupDrDataSources)SetBackupVaultId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleBackupDrDataSources)SetCount(val interface{}) {
+func (j *jsiiProxy_DataGoogleBackupDrDataSources) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -442,7 +441,7 @@ func (j *jsiiProxy_DataGoogleBackupDrDataSources)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleBackupDrDataSources)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataGoogleBackupDrDataSources) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -450,7 +449,7 @@ func (j *jsiiProxy_DataGoogleBackupDrDataSources)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleBackupDrDataSources)SetFilter(val *string) {
+func (j *jsiiProxy_DataGoogleBackupDrDataSources) SetFilter(val *string) {
 	if err := j.validateSetFilterParameters(val); err != nil {
 		panic(err)
 	}
@@ -461,7 +460,7 @@ func (j *jsiiProxy_DataGoogleBackupDrDataSources)SetFilter(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleBackupDrDataSources)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGoogleBackupDrDataSources) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -469,7 +468,7 @@ func (j *jsiiProxy_DataGoogleBackupDrDataSources)SetForEach(val cdktf.ITerraform
 	)
 }
 
-func (j *jsiiProxy_DataGoogleBackupDrDataSources)SetId(val *string) {
+func (j *jsiiProxy_DataGoogleBackupDrDataSources) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -480,7 +479,7 @@ func (j *jsiiProxy_DataGoogleBackupDrDataSources)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleBackupDrDataSources)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGoogleBackupDrDataSources) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -491,7 +490,7 @@ func (j *jsiiProxy_DataGoogleBackupDrDataSources)SetLifecycle(val *cdktf.Terrafo
 	)
 }
 
-func (j *jsiiProxy_DataGoogleBackupDrDataSources)SetLocation(val *string) {
+func (j *jsiiProxy_DataGoogleBackupDrDataSources) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -502,7 +501,7 @@ func (j *jsiiProxy_DataGoogleBackupDrDataSources)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleBackupDrDataSources)SetOrderBy(val *string) {
+func (j *jsiiProxy_DataGoogleBackupDrDataSources) SetOrderBy(val *string) {
 	if err := j.validateSetOrderByParameters(val); err != nil {
 		panic(err)
 	}
@@ -513,7 +512,7 @@ func (j *jsiiProxy_DataGoogleBackupDrDataSources)SetOrderBy(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleBackupDrDataSources)SetProject(val *string) {
+func (j *jsiiProxy_DataGoogleBackupDrDataSources) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -524,7 +523,7 @@ func (j *jsiiProxy_DataGoogleBackupDrDataSources)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleBackupDrDataSources)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGoogleBackupDrDataSources) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -544,7 +543,7 @@ func DataGoogleBackupDrDataSources_GenerateConfigForImport(scope constructs.Cons
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleBackupDrDataSources.DataGoogleBackupDrDataSources",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -568,7 +567,7 @@ func DataGoogleBackupDrDataSources_GenerateConfigForImport(scope constructs.Cons
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataGoogleBackupDrDataSources_IsConstruct(x interface{}) *bool {
+func DataGoogleBackupDrDataSources_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleBackupDrDataSources_IsConstructParameters(x); err != nil {
@@ -579,7 +578,7 @@ func DataGoogleBackupDrDataSources_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleBackupDrDataSources.DataGoogleBackupDrDataSources",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -587,7 +586,7 @@ func DataGoogleBackupDrDataSources_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGoogleBackupDrDataSources_IsTerraformDataSource(x interface{}) *bool {
+func DataGoogleBackupDrDataSources_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleBackupDrDataSources_IsTerraformDataSourceParameters(x); err != nil {
@@ -598,7 +597,7 @@ func DataGoogleBackupDrDataSources_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleBackupDrDataSources.DataGoogleBackupDrDataSources",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -606,7 +605,7 @@ func DataGoogleBackupDrDataSources_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGoogleBackupDrDataSources_IsTerraformElement(x interface{}) *bool {
+func DataGoogleBackupDrDataSources_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleBackupDrDataSources_IsTerraformElementParameters(x); err != nil {
@@ -617,7 +616,7 @@ func DataGoogleBackupDrDataSources_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleBackupDrDataSources.DataGoogleBackupDrDataSources",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -635,27 +634,27 @@ func DataGoogleBackupDrDataSources_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleBackupDrDataSources) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataGoogleBackupDrDataSources) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataGoogleBackupDrDataSources) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataGoogleBackupDrDataSources) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -671,7 +670,7 @@ func (d *jsiiProxy_DataGoogleBackupDrDataSources) GetBooleanAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -687,7 +686,7 @@ func (d *jsiiProxy_DataGoogleBackupDrDataSources) GetBooleanMapAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -703,7 +702,7 @@ func (d *jsiiProxy_DataGoogleBackupDrDataSources) GetListAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -719,7 +718,7 @@ func (d *jsiiProxy_DataGoogleBackupDrDataSources) GetNumberAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -735,7 +734,7 @@ func (d *jsiiProxy_DataGoogleBackupDrDataSources) GetNumberListAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -751,7 +750,7 @@ func (d *jsiiProxy_DataGoogleBackupDrDataSources) GetNumberMapAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -767,7 +766,7 @@ func (d *jsiiProxy_DataGoogleBackupDrDataSources) GetStringAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -783,7 +782,7 @@ func (d *jsiiProxy_DataGoogleBackupDrDataSources) GetStringMapAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -799,7 +798,7 @@ func (d *jsiiProxy_DataGoogleBackupDrDataSources) InterpolationForAttribute(terr
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -813,7 +812,7 @@ func (d *jsiiProxy_DataGoogleBackupDrDataSources) OverrideLogicalId(newLogicalId
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -857,8 +856,8 @@ func (d *jsiiProxy_DataGoogleBackupDrDataSources) ResetProject() {
 	)
 }
 
-func (d *jsiiProxy_DataGoogleBackupDrDataSources) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleBackupDrDataSources) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -870,8 +869,8 @@ func (d *jsiiProxy_DataGoogleBackupDrDataSources) SynthesizeAttributes() *map[st
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleBackupDrDataSources) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleBackupDrDataSources) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -883,8 +882,8 @@ func (d *jsiiProxy_DataGoogleBackupDrDataSources) SynthesizeHclAttributes() *map
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleBackupDrDataSources) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleBackupDrDataSources) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -896,8 +895,8 @@ func (d *jsiiProxy_DataGoogleBackupDrDataSources) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleBackupDrDataSources) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleBackupDrDataSources) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -922,8 +921,8 @@ func (d *jsiiProxy_DataGoogleBackupDrDataSources) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleBackupDrDataSources) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleBackupDrDataSources) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -934,4 +933,3 @@ func (d *jsiiProxy_DataGoogleBackupDrDataSources) ToTerraform() interface{} {
 
 	return returns
 }
-

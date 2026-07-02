@@ -114,7 +114,7 @@ func (j *jsiiProxy_ContainerAttachedClusterAuthorizationOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_ContainerAttachedClusterAuthorizationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerAttachedClusterAuthorizationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewContainerAttachedClusterAuthorizationOutputReferenceParameters(t
 
 	return nil
 }
-

@@ -6,9 +6,9 @@ import (
 
 type DialogflowCxAgentConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type DialogflowCxAgentConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The default language of the agent as a language tag.
 	//
 	// [See Language Support](https://cloud.google.com/dialogflow/cx/docs/reference/language)
@@ -77,7 +77,7 @@ type DialogflowCxAgentConfig struct {
 	// The ID of the implicitly created engine is stored in the 'genAppBuilderSettings' field of the [agent](https://cloud.google.com/dialogflow/cx/docs/reference/rest/v3/projects.locations.agents#resource:-agent).
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_agent#delete_chat_engine_on_destroy DialogflowCxAgent#delete_chat_engine_on_destroy}
-	DeleteChatEngineOnDestroy interface{} `field:"optional" json:"deleteChatEngineOnDestroy" yaml:"deleteChatEngineOnDestroy"`
+	DeleteChatEngineOnDestroy any `field:"optional" json:"deleteChatEngineOnDestroy" yaml:"deleteChatEngineOnDestroy"`
 	// The description of this agent. The maximum length is 500 characters. If exceeded, the request is rejected.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_agent#description DialogflowCxAgent#description}
@@ -87,15 +87,15 @@ type DialogflowCxAgentConfig struct {
 	// These models will be trained on all the languages supported by the agent.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_agent#enable_multi_language_training DialogflowCxAgent#enable_multi_language_training}
-	EnableMultiLanguageTraining interface{} `field:"optional" json:"enableMultiLanguageTraining" yaml:"enableMultiLanguageTraining"`
+	EnableMultiLanguageTraining any `field:"optional" json:"enableMultiLanguageTraining" yaml:"enableMultiLanguageTraining"`
 	// Indicates if automatic spell correction is enabled in detect intent requests.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_agent#enable_spell_correction DialogflowCxAgent#enable_spell_correction}
-	EnableSpellCorrection interface{} `field:"optional" json:"enableSpellCorrection" yaml:"enableSpellCorrection"`
+	EnableSpellCorrection any `field:"optional" json:"enableSpellCorrection" yaml:"enableSpellCorrection"`
 	// Determines whether this agent should log conversation queries.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_agent#enable_stackdriver_logging DialogflowCxAgent#enable_stackdriver_logging}
-	EnableStackdriverLogging interface{} `field:"optional" json:"enableStackdriverLogging" yaml:"enableStackdriverLogging"`
+	EnableStackdriverLogging any `field:"optional" json:"enableStackdriverLogging" yaml:"enableStackdriverLogging"`
 	// gen_app_builder_settings block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_agent#gen_app_builder_settings DialogflowCxAgent#gen_app_builder_settings}
@@ -114,7 +114,7 @@ type DialogflowCxAgentConfig struct {
 	// If the agent is locked, modifications to the agent will be rejected except for [agents.restore][].
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_agent#locked DialogflowCxAgent#locked}
-	Locked interface{} `field:"optional" json:"locked" yaml:"locked"`
+	Locked any `field:"optional" json:"locked" yaml:"locked"`
 	// personalization_settings block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_agent#personalization_settings DialogflowCxAgent#personalization_settings}
@@ -148,4 +148,3 @@ type DialogflowCxAgentConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_agent#timeouts DialogflowCxAgent#timeouts}
 	Timeouts *DialogflowCxAgentTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

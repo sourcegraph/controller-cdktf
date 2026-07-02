@@ -98,7 +98,7 @@ func (f *jsiiProxy_FirebaseAppHostingTrafficCurrentOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_FirebaseAppHostingTrafficCurrentOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_FirebaseAppHostingTrafficCurrentOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewFirebaseAppHostingTrafficCurrentOutputReferenceParameters(terraf
 
 	return nil
 }
-

@@ -106,7 +106,7 @@ func (j *jsiiProxy_CloudQuotasQuotaPreferenceQuotaConfigOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_CloudQuotasQuotaPreferenceQuotaConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudQuotasQuotaPreferenceQuotaConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewCloudQuotasQuotaPreferenceQuotaConfigOutputReferenceParameters(t
 
 	return nil
 }
-

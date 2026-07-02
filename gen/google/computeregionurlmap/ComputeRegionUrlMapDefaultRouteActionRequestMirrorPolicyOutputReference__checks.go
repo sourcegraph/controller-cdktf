@@ -106,7 +106,7 @@ func (j *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionRequestMirrorPolicyOutpu
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionRequestMirrorPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionRequestMirrorPolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewComputeRegionUrlMapDefaultRouteActionRequestMirrorPolicyOutputRe
 
 	return nil
 }
-

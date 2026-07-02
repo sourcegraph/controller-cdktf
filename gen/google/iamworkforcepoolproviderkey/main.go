@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.iamWorkforcePoolProviderKey.IamWorkforcePoolProviderKey",
-		reflect.TypeOf((*IamWorkforcePoolProviderKey)(nil)).Elem(),
+		reflect.TypeFor[IamWorkforcePoolProviderKey](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -76,7 +76,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workforcePoolId", GoGetter: "WorkforcePoolId"},
 			_jsii_.MemberProperty{JsiiProperty: "workforcePoolIdInput", GoGetter: "WorkforcePoolIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IamWorkforcePoolProviderKey{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -84,15 +84,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.iamWorkforcePoolProviderKey.IamWorkforcePoolProviderKeyConfig",
-		reflect.TypeOf((*IamWorkforcePoolProviderKeyConfig)(nil)).Elem(),
+		reflect.TypeFor[IamWorkforcePoolProviderKeyConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.iamWorkforcePoolProviderKey.IamWorkforcePoolProviderKeyKeyData",
-		reflect.TypeOf((*IamWorkforcePoolProviderKeyKeyData)(nil)).Elem(),
+		reflect.TypeFor[IamWorkforcePoolProviderKeyKeyData](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.iamWorkforcePoolProviderKey.IamWorkforcePoolProviderKeyKeyDataOutputReference",
-		reflect.TypeOf((*IamWorkforcePoolProviderKeyKeyDataOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IamWorkforcePoolProviderKeyKeyDataOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -122,7 +122,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IamWorkforcePoolProviderKeyKeyDataOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -130,11 +130,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.iamWorkforcePoolProviderKey.IamWorkforcePoolProviderKeyTimeouts",
-		reflect.TypeOf((*IamWorkforcePoolProviderKeyTimeouts)(nil)).Elem(),
+		reflect.TypeFor[IamWorkforcePoolProviderKeyTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.iamWorkforcePoolProviderKey.IamWorkforcePoolProviderKeyTimeoutsOutputReference",
-		reflect.TypeOf((*IamWorkforcePoolProviderKeyTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IamWorkforcePoolProviderKeyTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -164,7 +164,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IamWorkforcePoolProviderKeyTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

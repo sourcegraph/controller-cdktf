@@ -98,7 +98,7 @@ func (i *jsiiProxy_IdentityPlatformConfigMonitoringRequestLoggingOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_IdentityPlatformConfigMonitoringRequestLoggingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IdentityPlatformConfigMonitoringRequestLoggingOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_IdentityPlatformConfigMonitoringRequestLoggingOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_IdentityPlatformConfigMonitoringRequestLoggingOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_IdentityPlatformConfigMonitoringRequestLoggingOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -218,4 +218,3 @@ func validateNewIdentityPlatformConfigMonitoringRequestLoggingOutputReferencePar
 
 	return nil
 }
-

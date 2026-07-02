@@ -98,7 +98,7 @@ func (l *jsiiProxy_LoggingMetricMetricDescriptorLabelsOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_LoggingMetricMetricDescriptorLabelsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LoggingMetricMetricDescriptorLabelsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_LoggingMetricMetricDescriptorLabelsOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_LoggingMetricMetricDescriptorLabelsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LoggingMetricMetricDescriptorLabelsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewLoggingMetricMetricDescriptorLabelsOutputReferenceParameters(ter
 
 	return nil
 }
-

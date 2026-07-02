@@ -98,7 +98,7 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigContainerdConfigPrivateRegistryAcc
 	return nil
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewContainerNodePoolNodeConfigContainerdConfigPrivateRegistryAccess
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.folderAccessApprovalSettings.FolderAccessApprovalSettings",
-		reflect.TypeOf((*FolderAccessApprovalSettings)(nil)).Elem(),
+		reflect.TypeFor[FolderAccessApprovalSettings](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "activeKeyVersion", GoGetter: "ActiveKeyVersion"},
 			_jsii_.MemberProperty{JsiiProperty: "activeKeyVersionInput", GoGetter: "ActiveKeyVersionInput"},
@@ -75,7 +75,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FolderAccessApprovalSettings{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -83,15 +83,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.folderAccessApprovalSettings.FolderAccessApprovalSettingsConfig",
-		reflect.TypeOf((*FolderAccessApprovalSettingsConfig)(nil)).Elem(),
+		reflect.TypeFor[FolderAccessApprovalSettingsConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.folderAccessApprovalSettings.FolderAccessApprovalSettingsEnrolledServices",
-		reflect.TypeOf((*FolderAccessApprovalSettingsEnrolledServices)(nil)).Elem(),
+		reflect.TypeFor[FolderAccessApprovalSettingsEnrolledServices](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.folderAccessApprovalSettings.FolderAccessApprovalSettingsEnrolledServicesList",
-		reflect.TypeOf((*FolderAccessApprovalSettingsEnrolledServicesList)(nil)).Elem(),
+		reflect.TypeFor[FolderAccessApprovalSettingsEnrolledServicesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -105,7 +105,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FolderAccessApprovalSettingsEnrolledServicesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -113,7 +113,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.folderAccessApprovalSettings.FolderAccessApprovalSettingsEnrolledServicesOutputReference",
-		reflect.TypeOf((*FolderAccessApprovalSettingsEnrolledServicesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FolderAccessApprovalSettingsEnrolledServicesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cloudProduct", GoGetter: "CloudProduct"},
 			_jsii_.MemberProperty{JsiiProperty: "cloudProductInput", GoGetter: "CloudProductInput"},
@@ -142,7 +142,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FolderAccessApprovalSettingsEnrolledServicesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -150,11 +150,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.folderAccessApprovalSettings.FolderAccessApprovalSettingsTimeouts",
-		reflect.TypeOf((*FolderAccessApprovalSettingsTimeouts)(nil)).Elem(),
+		reflect.TypeFor[FolderAccessApprovalSettingsTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.folderAccessApprovalSettings.FolderAccessApprovalSettingsTimeoutsOutputReference",
-		reflect.TypeOf((*FolderAccessApprovalSettingsTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FolderAccessApprovalSettingsTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -187,7 +187,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FolderAccessApprovalSettingsTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

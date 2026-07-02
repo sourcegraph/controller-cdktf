@@ -98,7 +98,7 @@ func (o *jsiiProxy_OracleDatabaseExascaleDbStorageVaultPropertiesTimeZoneOutputR
 	return nil
 }
 
-func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVaultPropertiesTimeZoneOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVaultPropertiesTimeZoneOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewOracleDatabaseExascaleDbStorageVaultPropertiesTimeZoneOutputRefe
 
 	return nil
 }
-

@@ -12,9 +12,9 @@ type ManagedKafkaConnectClusterTimeoutsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,8 +33,8 @@ type ManagedKafkaConnectClusterTimeoutsOutputReference interface {
 	DeleteInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -49,7 +49,7 @@ type ManagedKafkaConnectClusterTimeoutsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type ManagedKafkaConnectClusterTimeoutsOutputReference interface {
 	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_ManagedKafkaConnectClusterTimeoutsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ManagedKafkaConnectClusterTimeoutsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ManagedKafkaConnectClusterTimeoutsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_ManagedKafkaConnectClusterTimeoutsOutputReference) Fqn() *str
 	return returns
 }
 
-func (j *jsiiProxy_ManagedKafkaConnectClusterTimeoutsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ManagedKafkaConnectClusterTimeoutsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_ManagedKafkaConnectClusterTimeoutsOutputReference) UpdateInpu
 	return returns
 }
 
-
 func NewManagedKafkaConnectClusterTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ManagedKafkaConnectClusterTimeoutsOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewManagedKafkaConnectClusterTimeoutsOutputReference(terraformResource cdkt
 
 	_jsii_.Create(
 		"@cdktf/provider-google.managedKafkaConnectCluster.ManagedKafkaConnectClusterTimeoutsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewManagedKafkaConnectClusterTimeoutsOutputReference_Override(m ManagedKafk
 
 	_jsii_.Create(
 		"@cdktf/provider-google.managedKafkaConnectCluster.ManagedKafkaConnectClusterTimeoutsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		m,
 	)
 }
 
-func (j *jsiiProxy_ManagedKafkaConnectClusterTimeoutsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ManagedKafkaConnectClusterTimeoutsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_ManagedKafkaConnectClusterTimeoutsOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_ManagedKafkaConnectClusterTimeoutsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ManagedKafkaConnectClusterTimeoutsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_ManagedKafkaConnectClusterTimeoutsOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_ManagedKafkaConnectClusterTimeoutsOutputReference)SetCreate(val *string) {
+func (j *jsiiProxy_ManagedKafkaConnectClusterTimeoutsOutputReference) SetCreate(val *string) {
 	if err := j.validateSetCreateParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_ManagedKafkaConnectClusterTimeoutsOutputReference)SetCreate(v
 	)
 }
 
-func (j *jsiiProxy_ManagedKafkaConnectClusterTimeoutsOutputReference)SetDelete(val *string) {
+func (j *jsiiProxy_ManagedKafkaConnectClusterTimeoutsOutputReference) SetDelete(val *string) {
 	if err := j.validateSetDeleteParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_ManagedKafkaConnectClusterTimeoutsOutputReference)SetDelete(v
 	)
 }
 
-func (j *jsiiProxy_ManagedKafkaConnectClusterTimeoutsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ManagedKafkaConnectClusterTimeoutsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_ManagedKafkaConnectClusterTimeoutsOutputReference)SetInternal
 	)
 }
 
-func (j *jsiiProxy_ManagedKafkaConnectClusterTimeoutsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ManagedKafkaConnectClusterTimeoutsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_ManagedKafkaConnectClusterTimeoutsOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_ManagedKafkaConnectClusterTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ManagedKafkaConnectClusterTimeoutsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_ManagedKafkaConnectClusterTimeoutsOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_ManagedKafkaConnectClusterTimeoutsOutputReference)SetUpdate(val *string) {
+func (j *jsiiProxy_ManagedKafkaConnectClusterTimeoutsOutputReference) SetUpdate(val *string) {
 	if err := j.validateSetUpdateParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (m *jsiiProxy_ManagedKafkaConnectClusterTimeoutsOutputReference) ComputeFqn
 	return returns
 }
 
-func (m *jsiiProxy_ManagedKafkaConnectClusterTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (m *jsiiProxy_ManagedKafkaConnectClusterTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (m *jsiiProxy_ManagedKafkaConnectClusterTimeoutsOutputReference) GetBoolean
 	_jsii_.Invoke(
 		m,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (m *jsiiProxy_ManagedKafkaConnectClusterTimeoutsOutputReference) GetBoolean
 	_jsii_.Invoke(
 		m,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (m *jsiiProxy_ManagedKafkaConnectClusterTimeoutsOutputReference) GetListAtt
 	_jsii_.Invoke(
 		m,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (m *jsiiProxy_ManagedKafkaConnectClusterTimeoutsOutputReference) GetNumberA
 	_jsii_.Invoke(
 		m,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (m *jsiiProxy_ManagedKafkaConnectClusterTimeoutsOutputReference) GetNumberL
 	_jsii_.Invoke(
 		m,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (m *jsiiProxy_ManagedKafkaConnectClusterTimeoutsOutputReference) GetNumberM
 	_jsii_.Invoke(
 		m,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (m *jsiiProxy_ManagedKafkaConnectClusterTimeoutsOutputReference) GetStringA
 	_jsii_.Invoke(
 		m,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (m *jsiiProxy_ManagedKafkaConnectClusterTimeoutsOutputReference) GetStringM
 	_jsii_.Invoke(
 		m,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (m *jsiiProxy_ManagedKafkaConnectClusterTimeoutsOutputReference) Interpolat
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (m *jsiiProxy_ManagedKafkaConnectClusterTimeoutsOutputReference) ResetUpdat
 	)
 }
 
-func (m *jsiiProxy_ManagedKafkaConnectClusterTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_ManagedKafkaConnectClusterTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := m.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (m *jsiiProxy_ManagedKafkaConnectClusterTimeoutsOutputReference) ToString()
 
 	return returns
 }
-

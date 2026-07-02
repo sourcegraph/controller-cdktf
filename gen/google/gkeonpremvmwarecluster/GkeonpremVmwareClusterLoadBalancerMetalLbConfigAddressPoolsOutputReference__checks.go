@@ -106,7 +106,7 @@ func (j *jsiiProxy_GkeonpremVmwareClusterLoadBalancerMetalLbConfigAddressPoolsOu
 	return nil
 }
 
-func (j *jsiiProxy_GkeonpremVmwareClusterLoadBalancerMetalLbConfigAddressPoolsOutputReference) validateSetAvoidBuggyIpsParameters(val interface{}) error {
+func (j *jsiiProxy_GkeonpremVmwareClusterLoadBalancerMetalLbConfigAddressPoolsOutputReference) validateSetAvoidBuggyIpsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -126,7 +126,7 @@ func (j *jsiiProxy_GkeonpremVmwareClusterLoadBalancerMetalLbConfigAddressPoolsOu
 	return nil
 }
 
-func (j *jsiiProxy_GkeonpremVmwareClusterLoadBalancerMetalLbConfigAddressPoolsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GkeonpremVmwareClusterLoadBalancerMetalLbConfigAddressPoolsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -191,7 +191,7 @@ func (j *jsiiProxy_GkeonpremVmwareClusterLoadBalancerMetalLbConfigAddressPoolsOu
 	return nil
 }
 
-func (j *jsiiProxy_GkeonpremVmwareClusterLoadBalancerMetalLbConfigAddressPoolsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GkeonpremVmwareClusterLoadBalancerMetalLbConfigAddressPoolsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -215,7 +215,7 @@ func (j *jsiiProxy_GkeonpremVmwareClusterLoadBalancerMetalLbConfigAddressPoolsOu
 	return nil
 }
 
-func (j *jsiiProxy_GkeonpremVmwareClusterLoadBalancerMetalLbConfigAddressPoolsOutputReference) validateSetManualAssignParameters(val interface{}) error {
+func (j *jsiiProxy_GkeonpremVmwareClusterLoadBalancerMetalLbConfigAddressPoolsOutputReference) validateSetManualAssignParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -278,4 +278,3 @@ func validateNewGkeonpremVmwareClusterLoadBalancerMetalLbConfigAddressPoolsOutpu
 
 	return nil
 }
-

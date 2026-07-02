@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleOracleDatabaseCloudVmClusterPropertiesOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleOracleDatabaseCloudVmClusterPropertiesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleOracleDatabaseCloudVmClusterPropertiesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleOracleDatabaseCloudVmClusterPropertiesOutputReferenceP
 
 	return nil
 }
-

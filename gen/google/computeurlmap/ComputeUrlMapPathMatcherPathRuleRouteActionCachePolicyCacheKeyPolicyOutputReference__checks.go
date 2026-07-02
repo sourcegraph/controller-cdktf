@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeUrlMapPathMatcherPathRuleRouteActionCachePolicyCacheKe
 	return nil
 }
 
-func (j *jsiiProxy_ComputeUrlMapPathMatcherPathRuleRouteActionCachePolicyCacheKeyPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeUrlMapPathMatcherPathRuleRouteActionCachePolicyCacheKeyPolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -195,7 +195,7 @@ func (j *jsiiProxy_ComputeUrlMapPathMatcherPathRuleRouteActionCachePolicyCacheKe
 	return nil
 }
 
-func (j *jsiiProxy_ComputeUrlMapPathMatcherPathRuleRouteActionCachePolicyCacheKeyPolicyOutputReference) validateSetIncludeHostParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeUrlMapPathMatcherPathRuleRouteActionCachePolicyCacheKeyPolicyOutputReference) validateSetIncludeHostParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -215,7 +215,7 @@ func (j *jsiiProxy_ComputeUrlMapPathMatcherPathRuleRouteActionCachePolicyCacheKe
 	return nil
 }
 
-func (j *jsiiProxy_ComputeUrlMapPathMatcherPathRuleRouteActionCachePolicyCacheKeyPolicyOutputReference) validateSetIncludeProtocolParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeUrlMapPathMatcherPathRuleRouteActionCachePolicyCacheKeyPolicyOutputReference) validateSetIncludeProtocolParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -235,7 +235,7 @@ func (j *jsiiProxy_ComputeUrlMapPathMatcherPathRuleRouteActionCachePolicyCacheKe
 	return nil
 }
 
-func (j *jsiiProxy_ComputeUrlMapPathMatcherPathRuleRouteActionCachePolicyCacheKeyPolicyOutputReference) validateSetIncludeQueryStringParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeUrlMapPathMatcherPathRuleRouteActionCachePolicyCacheKeyPolicyOutputReference) validateSetIncludeQueryStringParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -290,4 +290,3 @@ func validateNewComputeUrlMapPathMatcherPathRuleRouteActionCachePolicyCacheKeyPo
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.iamWorkforcePoolIamBinding.IamWorkforcePoolIamBinding",
-		reflect.TypeOf((*IamWorkforcePoolIamBinding)(nil)).Elem(),
+		reflect.TypeFor[IamWorkforcePoolIamBinding](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,7 +70,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workforcePoolId", GoGetter: "WorkforcePoolId"},
 			_jsii_.MemberProperty{JsiiProperty: "workforcePoolIdInput", GoGetter: "WorkforcePoolIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IamWorkforcePoolIamBinding{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -78,11 +78,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.iamWorkforcePoolIamBinding.IamWorkforcePoolIamBindingCondition",
-		reflect.TypeOf((*IamWorkforcePoolIamBindingCondition)(nil)).Elem(),
+		reflect.TypeFor[IamWorkforcePoolIamBindingCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.iamWorkforcePoolIamBinding.IamWorkforcePoolIamBindingConditionOutputReference",
-		reflect.TypeOf((*IamWorkforcePoolIamBindingConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IamWorkforcePoolIamBindingConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -113,7 +113,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IamWorkforcePoolIamBindingConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -121,6 +121,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.iamWorkforcePoolIamBinding.IamWorkforcePoolIamBindingConfig",
-		reflect.TypeOf((*IamWorkforcePoolIamBindingConfig)(nil)).Elem(),
+		reflect.TypeFor[IamWorkforcePoolIamBindingConfig](),
 	)
 }

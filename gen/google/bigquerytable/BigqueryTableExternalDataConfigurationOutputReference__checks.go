@@ -175,7 +175,7 @@ func (b *jsiiProxy_BigqueryTableExternalDataConfigurationOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryTableExternalDataConfigurationOutputReference) validateSetAutodetectParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryTableExternalDataConfigurationOutputReference) validateSetAutodetectParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -195,7 +195,7 @@ func (j *jsiiProxy_BigqueryTableExternalDataConfigurationOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryTableExternalDataConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryTableExternalDataConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -292,7 +292,7 @@ func (j *jsiiProxy_BigqueryTableExternalDataConfigurationOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryTableExternalDataConfigurationOutputReference) validateSetIgnoreUnknownValuesParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryTableExternalDataConfigurationOutputReference) validateSetIgnoreUnknownValuesParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -411,4 +411,3 @@ func validateNewBigqueryTableExternalDataConfigurationOutputReferenceParameters(
 
 	return nil
 }
-

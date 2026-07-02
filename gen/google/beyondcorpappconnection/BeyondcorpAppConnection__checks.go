@@ -19,7 +19,7 @@ func (b *jsiiProxy_BeyondcorpAppConnection) validateAddMoveTargetParameters(move
 	return nil
 }
 
-func (b *jsiiProxy_BeyondcorpAppConnection) validateAddOverrideParameters(path *string, value interface{}) error {
+func (b *jsiiProxy_BeyondcorpAppConnection) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (b *jsiiProxy_BeyondcorpAppConnection) validateMoveFromIdParameters(id *str
 	return nil
 }
 
-func (b *jsiiProxy_BeyondcorpAppConnection) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (b *jsiiProxy_BeyondcorpAppConnection) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -253,7 +253,7 @@ func validateBeyondcorpAppConnection_GenerateConfigForImportParameters(scope con
 	return nil
 }
 
-func validateBeyondcorpAppConnection_IsConstructParameters(x interface{}) error {
+func validateBeyondcorpAppConnection_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -261,7 +261,7 @@ func validateBeyondcorpAppConnection_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
-func validateBeyondcorpAppConnection_IsTerraformElementParameters(x interface{}) error {
+func validateBeyondcorpAppConnection_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -269,7 +269,7 @@ func validateBeyondcorpAppConnection_IsTerraformElementParameters(x interface{})
 	return nil
 }
 
-func validateBeyondcorpAppConnection_IsTerraformResourceParameters(x interface{}) error {
+func validateBeyondcorpAppConnection_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -277,7 +277,7 @@ func validateBeyondcorpAppConnection_IsTerraformResourceParameters(x interface{}
 	return nil
 }
 
-func (j *jsiiProxy_BeyondcorpAppConnection) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_BeyondcorpAppConnection) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -318,7 +318,7 @@ func (j *jsiiProxy_BeyondcorpAppConnection) validateSetConnectorsParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_BeyondcorpAppConnection) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_BeyondcorpAppConnection) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -423,7 +423,7 @@ func (j *jsiiProxy_BeyondcorpAppConnection) validateSetProjectParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_BeyondcorpAppConnection) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_BeyondcorpAppConnection) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -503,4 +503,3 @@ func validateNewBeyondcorpAppConnectionParameters(scope constructs.Construct, id
 
 	return nil
 }
-

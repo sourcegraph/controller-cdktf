@@ -12,32 +12,32 @@ import (
 // Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/secure_source_manager_branch_rule google_secure_source_manager_branch_rule}.
 type SecureSourceManagerBranchRule interface {
 	cdktf.TerraformResource
-	AllowStaleReviews() interface{}
-	SetAllowStaleReviews(val interface{})
-	AllowStaleReviewsInput() interface{}
+	AllowStaleReviews() any
+	SetAllowStaleReviews(val any)
+	AllowStaleReviewsInput() any
 	BranchRuleId() *string
 	SetBranchRuleId(val *string)
 	BranchRuleIdInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	Disabled() interface{}
-	SetDisabled(val interface{})
-	DisabledInput() interface{}
+	Disabled() any
+	SetDisabled(val any)
+	DisabledInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -76,40 +76,40 @@ type SecureSourceManagerBranchRule interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RepositoryId() *string
 	SetRepositoryId(val *string)
 	RepositoryIdInput() *string
-	RequireCommentsResolved() interface{}
-	SetRequireCommentsResolved(val interface{})
-	RequireCommentsResolvedInput() interface{}
-	RequireLinearHistory() interface{}
-	SetRequireLinearHistory(val interface{})
-	RequireLinearHistoryInput() interface{}
-	RequirePullRequest() interface{}
-	SetRequirePullRequest(val interface{})
-	RequirePullRequestInput() interface{}
+	RequireCommentsResolved() any
+	SetRequireCommentsResolved(val any)
+	RequireCommentsResolvedInput() any
+	RequireLinearHistory() any
+	SetRequireLinearHistory(val any)
+	RequireLinearHistoryInput() any
+	RequirePullRequest() any
+	SetRequirePullRequest(val any)
+	RequirePullRequestInput() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() SecureSourceManagerBranchRuleTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Uid() *string
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -127,7 +127,7 @@ type SecureSourceManagerBranchRule interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -139,7 +139,7 @@ type SecureSourceManagerBranchRule interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -160,17 +160,17 @@ type SecureSourceManagerBranchRule interface {
 	ResetRequireLinearHistory()
 	ResetRequirePullRequest()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for SecureSourceManagerBranchRule
@@ -178,8 +178,8 @@ type jsiiProxy_SecureSourceManagerBranchRule struct {
 	internal.Type__cdktfTerraformResource
 }
 
-func (j *jsiiProxy_SecureSourceManagerBranchRule) AllowStaleReviews() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SecureSourceManagerBranchRule) AllowStaleReviews() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowStaleReviews",
@@ -188,8 +188,8 @@ func (j *jsiiProxy_SecureSourceManagerBranchRule) AllowStaleReviews() interface{
 	return returns
 }
 
-func (j *jsiiProxy_SecureSourceManagerBranchRule) AllowStaleReviewsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SecureSourceManagerBranchRule) AllowStaleReviewsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowStaleReviewsInput",
@@ -228,8 +228,8 @@ func (j *jsiiProxy_SecureSourceManagerBranchRule) CdktfStack() cdktf.TerraformSt
 	return returns
 }
 
-func (j *jsiiProxy_SecureSourceManagerBranchRule) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SecureSourceManagerBranchRule) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -238,8 +238,8 @@ func (j *jsiiProxy_SecureSourceManagerBranchRule) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SecureSourceManagerBranchRule) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SecureSourceManagerBranchRule) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -248,8 +248,8 @@ func (j *jsiiProxy_SecureSourceManagerBranchRule) ConstructNodeMetadata() *map[s
 	return returns
 }
 
-func (j *jsiiProxy_SecureSourceManagerBranchRule) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SecureSourceManagerBranchRule) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -278,8 +278,8 @@ func (j *jsiiProxy_SecureSourceManagerBranchRule) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_SecureSourceManagerBranchRule) Disabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SecureSourceManagerBranchRule) Disabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disabled",
@@ -288,8 +288,8 @@ func (j *jsiiProxy_SecureSourceManagerBranchRule) Disabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SecureSourceManagerBranchRule) DisabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SecureSourceManagerBranchRule) DisabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disabledInput",
@@ -488,8 +488,8 @@ func (j *jsiiProxy_SecureSourceManagerBranchRule) Provider() cdktf.TerraformProv
 	return returns
 }
 
-func (j *jsiiProxy_SecureSourceManagerBranchRule) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_SecureSourceManagerBranchRule) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -498,8 +498,8 @@ func (j *jsiiProxy_SecureSourceManagerBranchRule) Provisioners() *[]interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_SecureSourceManagerBranchRule) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SecureSourceManagerBranchRule) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -528,8 +528,8 @@ func (j *jsiiProxy_SecureSourceManagerBranchRule) RepositoryIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SecureSourceManagerBranchRule) RequireCommentsResolved() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SecureSourceManagerBranchRule) RequireCommentsResolved() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requireCommentsResolved",
@@ -538,8 +538,8 @@ func (j *jsiiProxy_SecureSourceManagerBranchRule) RequireCommentsResolved() inte
 	return returns
 }
 
-func (j *jsiiProxy_SecureSourceManagerBranchRule) RequireCommentsResolvedInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SecureSourceManagerBranchRule) RequireCommentsResolvedInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requireCommentsResolvedInput",
@@ -548,8 +548,8 @@ func (j *jsiiProxy_SecureSourceManagerBranchRule) RequireCommentsResolvedInput()
 	return returns
 }
 
-func (j *jsiiProxy_SecureSourceManagerBranchRule) RequireLinearHistory() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SecureSourceManagerBranchRule) RequireLinearHistory() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requireLinearHistory",
@@ -558,8 +558,8 @@ func (j *jsiiProxy_SecureSourceManagerBranchRule) RequireLinearHistory() interfa
 	return returns
 }
 
-func (j *jsiiProxy_SecureSourceManagerBranchRule) RequireLinearHistoryInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SecureSourceManagerBranchRule) RequireLinearHistoryInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requireLinearHistoryInput",
@@ -568,8 +568,8 @@ func (j *jsiiProxy_SecureSourceManagerBranchRule) RequireLinearHistoryInput() in
 	return returns
 }
 
-func (j *jsiiProxy_SecureSourceManagerBranchRule) RequirePullRequest() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SecureSourceManagerBranchRule) RequirePullRequest() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requirePullRequest",
@@ -578,8 +578,8 @@ func (j *jsiiProxy_SecureSourceManagerBranchRule) RequirePullRequest() interface
 	return returns
 }
 
-func (j *jsiiProxy_SecureSourceManagerBranchRule) RequirePullRequestInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SecureSourceManagerBranchRule) RequirePullRequestInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requirePullRequestInput",
@@ -598,8 +598,8 @@ func (j *jsiiProxy_SecureSourceManagerBranchRule) TerraformGeneratorMetadata() *
 	return returns
 }
 
-func (j *jsiiProxy_SecureSourceManagerBranchRule) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SecureSourceManagerBranchRule) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -628,8 +628,8 @@ func (j *jsiiProxy_SecureSourceManagerBranchRule) Timeouts() SecureSourceManager
 	return returns
 }
 
-func (j *jsiiProxy_SecureSourceManagerBranchRule) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SecureSourceManagerBranchRule) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -658,7 +658,6 @@ func (j *jsiiProxy_SecureSourceManagerBranchRule) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/secure_source_manager_branch_rule google_secure_source_manager_branch_rule} Resource.
 func NewSecureSourceManagerBranchRule(scope constructs.Construct, id *string, config *SecureSourceManagerBranchRuleConfig) SecureSourceManagerBranchRule {
 	_init_.Initialize()
@@ -670,7 +669,7 @@ func NewSecureSourceManagerBranchRule(scope constructs.Construct, id *string, co
 
 	_jsii_.Create(
 		"@cdktf/provider-google.secureSourceManagerBranchRule.SecureSourceManagerBranchRule",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -683,12 +682,12 @@ func NewSecureSourceManagerBranchRule_Override(s SecureSourceManagerBranchRule, 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.secureSourceManagerBranchRule.SecureSourceManagerBranchRule",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SecureSourceManagerBranchRule)SetAllowStaleReviews(val interface{}) {
+func (j *jsiiProxy_SecureSourceManagerBranchRule) SetAllowStaleReviews(val any) {
 	if err := j.validateSetAllowStaleReviewsParameters(val); err != nil {
 		panic(err)
 	}
@@ -699,7 +698,7 @@ func (j *jsiiProxy_SecureSourceManagerBranchRule)SetAllowStaleReviews(val interf
 	)
 }
 
-func (j *jsiiProxy_SecureSourceManagerBranchRule)SetBranchRuleId(val *string) {
+func (j *jsiiProxy_SecureSourceManagerBranchRule) SetBranchRuleId(val *string) {
 	if err := j.validateSetBranchRuleIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -710,7 +709,7 @@ func (j *jsiiProxy_SecureSourceManagerBranchRule)SetBranchRuleId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SecureSourceManagerBranchRule)SetConnection(val interface{}) {
+func (j *jsiiProxy_SecureSourceManagerBranchRule) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -721,7 +720,7 @@ func (j *jsiiProxy_SecureSourceManagerBranchRule)SetConnection(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_SecureSourceManagerBranchRule)SetCount(val interface{}) {
+func (j *jsiiProxy_SecureSourceManagerBranchRule) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -732,7 +731,7 @@ func (j *jsiiProxy_SecureSourceManagerBranchRule)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SecureSourceManagerBranchRule)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_SecureSourceManagerBranchRule) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -740,7 +739,7 @@ func (j *jsiiProxy_SecureSourceManagerBranchRule)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SecureSourceManagerBranchRule)SetDisabled(val interface{}) {
+func (j *jsiiProxy_SecureSourceManagerBranchRule) SetDisabled(val any) {
 	if err := j.validateSetDisabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -751,7 +750,7 @@ func (j *jsiiProxy_SecureSourceManagerBranchRule)SetDisabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SecureSourceManagerBranchRule)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SecureSourceManagerBranchRule) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -759,7 +758,7 @@ func (j *jsiiProxy_SecureSourceManagerBranchRule)SetForEach(val cdktf.ITerraform
 	)
 }
 
-func (j *jsiiProxy_SecureSourceManagerBranchRule)SetId(val *string) {
+func (j *jsiiProxy_SecureSourceManagerBranchRule) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -770,7 +769,7 @@ func (j *jsiiProxy_SecureSourceManagerBranchRule)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SecureSourceManagerBranchRule)SetIncludePattern(val *string) {
+func (j *jsiiProxy_SecureSourceManagerBranchRule) SetIncludePattern(val *string) {
 	if err := j.validateSetIncludePatternParameters(val); err != nil {
 		panic(err)
 	}
@@ -781,7 +780,7 @@ func (j *jsiiProxy_SecureSourceManagerBranchRule)SetIncludePattern(val *string) 
 	)
 }
 
-func (j *jsiiProxy_SecureSourceManagerBranchRule)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SecureSourceManagerBranchRule) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -792,7 +791,7 @@ func (j *jsiiProxy_SecureSourceManagerBranchRule)SetLifecycle(val *cdktf.Terrafo
 	)
 }
 
-func (j *jsiiProxy_SecureSourceManagerBranchRule)SetLocation(val *string) {
+func (j *jsiiProxy_SecureSourceManagerBranchRule) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -803,7 +802,7 @@ func (j *jsiiProxy_SecureSourceManagerBranchRule)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SecureSourceManagerBranchRule)SetMinimumApprovalsCount(val *float64) {
+func (j *jsiiProxy_SecureSourceManagerBranchRule) SetMinimumApprovalsCount(val *float64) {
 	if err := j.validateSetMinimumApprovalsCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -814,7 +813,7 @@ func (j *jsiiProxy_SecureSourceManagerBranchRule)SetMinimumApprovalsCount(val *f
 	)
 }
 
-func (j *jsiiProxy_SecureSourceManagerBranchRule)SetMinimumReviewsCount(val *float64) {
+func (j *jsiiProxy_SecureSourceManagerBranchRule) SetMinimumReviewsCount(val *float64) {
 	if err := j.validateSetMinimumReviewsCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -825,7 +824,7 @@ func (j *jsiiProxy_SecureSourceManagerBranchRule)SetMinimumReviewsCount(val *flo
 	)
 }
 
-func (j *jsiiProxy_SecureSourceManagerBranchRule)SetProject(val *string) {
+func (j *jsiiProxy_SecureSourceManagerBranchRule) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -836,7 +835,7 @@ func (j *jsiiProxy_SecureSourceManagerBranchRule)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SecureSourceManagerBranchRule)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SecureSourceManagerBranchRule) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -844,7 +843,7 @@ func (j *jsiiProxy_SecureSourceManagerBranchRule)SetProvider(val cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_SecureSourceManagerBranchRule)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_SecureSourceManagerBranchRule) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -855,7 +854,7 @@ func (j *jsiiProxy_SecureSourceManagerBranchRule)SetProvisioners(val *[]interfac
 	)
 }
 
-func (j *jsiiProxy_SecureSourceManagerBranchRule)SetRepositoryId(val *string) {
+func (j *jsiiProxy_SecureSourceManagerBranchRule) SetRepositoryId(val *string) {
 	if err := j.validateSetRepositoryIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -866,7 +865,7 @@ func (j *jsiiProxy_SecureSourceManagerBranchRule)SetRepositoryId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SecureSourceManagerBranchRule)SetRequireCommentsResolved(val interface{}) {
+func (j *jsiiProxy_SecureSourceManagerBranchRule) SetRequireCommentsResolved(val any) {
 	if err := j.validateSetRequireCommentsResolvedParameters(val); err != nil {
 		panic(err)
 	}
@@ -877,7 +876,7 @@ func (j *jsiiProxy_SecureSourceManagerBranchRule)SetRequireCommentsResolved(val 
 	)
 }
 
-func (j *jsiiProxy_SecureSourceManagerBranchRule)SetRequireLinearHistory(val interface{}) {
+func (j *jsiiProxy_SecureSourceManagerBranchRule) SetRequireLinearHistory(val any) {
 	if err := j.validateSetRequireLinearHistoryParameters(val); err != nil {
 		panic(err)
 	}
@@ -888,7 +887,7 @@ func (j *jsiiProxy_SecureSourceManagerBranchRule)SetRequireLinearHistory(val int
 	)
 }
 
-func (j *jsiiProxy_SecureSourceManagerBranchRule)SetRequirePullRequest(val interface{}) {
+func (j *jsiiProxy_SecureSourceManagerBranchRule) SetRequirePullRequest(val any) {
 	if err := j.validateSetRequirePullRequestParameters(val); err != nil {
 		panic(err)
 	}
@@ -911,7 +910,7 @@ func SecureSourceManagerBranchRule_GenerateConfigForImport(scope constructs.Cons
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.secureSourceManagerBranchRule.SecureSourceManagerBranchRule",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -935,7 +934,7 @@ func SecureSourceManagerBranchRule_GenerateConfigForImport(scope constructs.Cons
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func SecureSourceManagerBranchRule_IsConstruct(x interface{}) *bool {
+func SecureSourceManagerBranchRule_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSecureSourceManagerBranchRule_IsConstructParameters(x); err != nil {
@@ -946,7 +945,7 @@ func SecureSourceManagerBranchRule_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.secureSourceManagerBranchRule.SecureSourceManagerBranchRule",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -954,7 +953,7 @@ func SecureSourceManagerBranchRule_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func SecureSourceManagerBranchRule_IsTerraformElement(x interface{}) *bool {
+func SecureSourceManagerBranchRule_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSecureSourceManagerBranchRule_IsTerraformElementParameters(x); err != nil {
@@ -965,7 +964,7 @@ func SecureSourceManagerBranchRule_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.secureSourceManagerBranchRule.SecureSourceManagerBranchRule",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -973,7 +972,7 @@ func SecureSourceManagerBranchRule_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func SecureSourceManagerBranchRule_IsTerraformResource(x interface{}) *bool {
+func SecureSourceManagerBranchRule_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSecureSourceManagerBranchRule_IsTerraformResourceParameters(x); err != nil {
@@ -984,7 +983,7 @@ func SecureSourceManagerBranchRule_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.secureSourceManagerBranchRule.SecureSourceManagerBranchRule",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1009,31 +1008,31 @@ func (s *jsiiProxy_SecureSourceManagerBranchRule) AddMoveTarget(moveTarget *stri
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_SecureSourceManagerBranchRule) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_SecureSourceManagerBranchRule) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_SecureSourceManagerBranchRule) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SecureSourceManagerBranchRule) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1049,7 +1048,7 @@ func (s *jsiiProxy_SecureSourceManagerBranchRule) GetBooleanAttribute(terraformA
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1065,7 +1064,7 @@ func (s *jsiiProxy_SecureSourceManagerBranchRule) GetBooleanMapAttribute(terrafo
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1081,7 +1080,7 @@ func (s *jsiiProxy_SecureSourceManagerBranchRule) GetListAttribute(terraformAttr
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1097,7 +1096,7 @@ func (s *jsiiProxy_SecureSourceManagerBranchRule) GetNumberAttribute(terraformAt
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1113,7 +1112,7 @@ func (s *jsiiProxy_SecureSourceManagerBranchRule) GetNumberListAttribute(terrafo
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1129,7 +1128,7 @@ func (s *jsiiProxy_SecureSourceManagerBranchRule) GetNumberMapAttribute(terrafor
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1145,7 +1144,7 @@ func (s *jsiiProxy_SecureSourceManagerBranchRule) GetStringAttribute(terraformAt
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1161,15 +1160,15 @@ func (s *jsiiProxy_SecureSourceManagerBranchRule) GetStringMapAttribute(terrafor
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SecureSourceManagerBranchRule) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SecureSourceManagerBranchRule) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1188,7 +1187,7 @@ func (s *jsiiProxy_SecureSourceManagerBranchRule) ImportFrom(id *string, provide
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1201,7 +1200,7 @@ func (s *jsiiProxy_SecureSourceManagerBranchRule) InterpolationForAttribute(terr
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1215,18 +1214,18 @@ func (s *jsiiProxy_SecureSourceManagerBranchRule) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_SecureSourceManagerBranchRule) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_SecureSourceManagerBranchRule) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1237,7 +1236,7 @@ func (s *jsiiProxy_SecureSourceManagerBranchRule) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1248,7 +1247,7 @@ func (s *jsiiProxy_SecureSourceManagerBranchRule) OverrideLogicalId(newLogicalId
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1259,7 +1258,7 @@ func (s *jsiiProxy_SecureSourceManagerBranchRule) PutTimeouts(value *SecureSourc
 	_jsii_.InvokeVoid(
 		s,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1351,8 +1350,8 @@ func (s *jsiiProxy_SecureSourceManagerBranchRule) ResetTimeouts() {
 	)
 }
 
-func (s *jsiiProxy_SecureSourceManagerBranchRule) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SecureSourceManagerBranchRule) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1364,8 +1363,8 @@ func (s *jsiiProxy_SecureSourceManagerBranchRule) SynthesizeAttributes() *map[st
 	return returns
 }
 
-func (s *jsiiProxy_SecureSourceManagerBranchRule) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SecureSourceManagerBranchRule) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1377,8 +1376,8 @@ func (s *jsiiProxy_SecureSourceManagerBranchRule) SynthesizeHclAttributes() *map
 	return returns
 }
 
-func (s *jsiiProxy_SecureSourceManagerBranchRule) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SecureSourceManagerBranchRule) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1390,8 +1389,8 @@ func (s *jsiiProxy_SecureSourceManagerBranchRule) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_SecureSourceManagerBranchRule) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SecureSourceManagerBranchRule) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1416,8 +1415,8 @@ func (s *jsiiProxy_SecureSourceManagerBranchRule) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_SecureSourceManagerBranchRule) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SecureSourceManagerBranchRule) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1428,4 +1427,3 @@ func (s *jsiiProxy_SecureSourceManagerBranchRule) ToTerraform() interface{} {
 
 	return returns
 }
-

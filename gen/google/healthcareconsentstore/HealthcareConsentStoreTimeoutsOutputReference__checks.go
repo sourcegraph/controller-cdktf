@@ -98,7 +98,7 @@ func (h *jsiiProxy_HealthcareConsentStoreTimeoutsOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_HealthcareConsentStoreTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_HealthcareConsentStoreTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_HealthcareConsentStoreTimeoutsOutputReference) validateSetDel
 	return nil
 }
 
-func (j *jsiiProxy_HealthcareConsentStoreTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_HealthcareConsentStoreTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewHealthcareConsentStoreTimeoutsOutputReferenceParameters(terrafor
 
 	return nil
 }
-

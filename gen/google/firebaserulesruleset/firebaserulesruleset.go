@@ -15,15 +15,15 @@ type FirebaserulesRuleset interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -56,28 +56,28 @@ type FirebaserulesRuleset interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Source() FirebaserulesRulesetSourceOutputReference
 	SourceInput() *FirebaserulesRulesetSource
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() FirebaserulesRulesetTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -95,7 +95,7 @@ type FirebaserulesRuleset interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -107,7 +107,7 @@ type FirebaserulesRuleset interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -122,17 +122,17 @@ type FirebaserulesRuleset interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for FirebaserulesRuleset
@@ -150,8 +150,8 @@ func (j *jsiiProxy_FirebaserulesRuleset) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_FirebaserulesRuleset) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FirebaserulesRuleset) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -160,8 +160,8 @@ func (j *jsiiProxy_FirebaserulesRuleset) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_FirebaserulesRuleset) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_FirebaserulesRuleset) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -170,8 +170,8 @@ func (j *jsiiProxy_FirebaserulesRuleset) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_FirebaserulesRuleset) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FirebaserulesRuleset) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -320,8 +320,8 @@ func (j *jsiiProxy_FirebaserulesRuleset) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_FirebaserulesRuleset) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_FirebaserulesRuleset) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -330,8 +330,8 @@ func (j *jsiiProxy_FirebaserulesRuleset) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_FirebaserulesRuleset) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FirebaserulesRuleset) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -370,8 +370,8 @@ func (j *jsiiProxy_FirebaserulesRuleset) TerraformGeneratorMetadata() *cdktf.Ter
 	return returns
 }
 
-func (j *jsiiProxy_FirebaserulesRuleset) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_FirebaserulesRuleset) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -400,8 +400,8 @@ func (j *jsiiProxy_FirebaserulesRuleset) Timeouts() FirebaserulesRulesetTimeouts
 	return returns
 }
 
-func (j *jsiiProxy_FirebaserulesRuleset) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FirebaserulesRuleset) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -409,7 +409,6 @@ func (j *jsiiProxy_FirebaserulesRuleset) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebaserules_ruleset google_firebaserules_ruleset} Resource.
 func NewFirebaserulesRuleset(scope constructs.Construct, id *string, config *FirebaserulesRulesetConfig) FirebaserulesRuleset {
@@ -422,7 +421,7 @@ func NewFirebaserulesRuleset(scope constructs.Construct, id *string, config *Fir
 
 	_jsii_.Create(
 		"@cdktf/provider-google.firebaserulesRuleset.FirebaserulesRuleset",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -435,12 +434,12 @@ func NewFirebaserulesRuleset_Override(f FirebaserulesRuleset, scope constructs.C
 
 	_jsii_.Create(
 		"@cdktf/provider-google.firebaserulesRuleset.FirebaserulesRuleset",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		f,
 	)
 }
 
-func (j *jsiiProxy_FirebaserulesRuleset)SetConnection(val interface{}) {
+func (j *jsiiProxy_FirebaserulesRuleset) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -451,7 +450,7 @@ func (j *jsiiProxy_FirebaserulesRuleset)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_FirebaserulesRuleset)SetCount(val interface{}) {
+func (j *jsiiProxy_FirebaserulesRuleset) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -462,7 +461,7 @@ func (j *jsiiProxy_FirebaserulesRuleset)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_FirebaserulesRuleset)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_FirebaserulesRuleset) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -470,7 +469,7 @@ func (j *jsiiProxy_FirebaserulesRuleset)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_FirebaserulesRuleset)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_FirebaserulesRuleset) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -478,7 +477,7 @@ func (j *jsiiProxy_FirebaserulesRuleset)SetForEach(val cdktf.ITerraformIterator)
 	)
 }
 
-func (j *jsiiProxy_FirebaserulesRuleset)SetId(val *string) {
+func (j *jsiiProxy_FirebaserulesRuleset) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -489,7 +488,7 @@ func (j *jsiiProxy_FirebaserulesRuleset)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FirebaserulesRuleset)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_FirebaserulesRuleset) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -500,7 +499,7 @@ func (j *jsiiProxy_FirebaserulesRuleset)SetLifecycle(val *cdktf.TerraformResourc
 	)
 }
 
-func (j *jsiiProxy_FirebaserulesRuleset)SetProject(val *string) {
+func (j *jsiiProxy_FirebaserulesRuleset) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -511,7 +510,7 @@ func (j *jsiiProxy_FirebaserulesRuleset)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FirebaserulesRuleset)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_FirebaserulesRuleset) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -519,7 +518,7 @@ func (j *jsiiProxy_FirebaserulesRuleset)SetProvider(val cdktf.TerraformProvider)
 	)
 }
 
-func (j *jsiiProxy_FirebaserulesRuleset)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_FirebaserulesRuleset) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -542,7 +541,7 @@ func FirebaserulesRuleset_GenerateConfigForImport(scope constructs.Construct, im
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.firebaserulesRuleset.FirebaserulesRuleset",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -566,7 +565,7 @@ func FirebaserulesRuleset_GenerateConfigForImport(scope constructs.Construct, im
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func FirebaserulesRuleset_IsConstruct(x interface{}) *bool {
+func FirebaserulesRuleset_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateFirebaserulesRuleset_IsConstructParameters(x); err != nil {
@@ -577,7 +576,7 @@ func FirebaserulesRuleset_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.firebaserulesRuleset.FirebaserulesRuleset",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -585,7 +584,7 @@ func FirebaserulesRuleset_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func FirebaserulesRuleset_IsTerraformElement(x interface{}) *bool {
+func FirebaserulesRuleset_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateFirebaserulesRuleset_IsTerraformElementParameters(x); err != nil {
@@ -596,7 +595,7 @@ func FirebaserulesRuleset_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.firebaserulesRuleset.FirebaserulesRuleset",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -604,7 +603,7 @@ func FirebaserulesRuleset_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func FirebaserulesRuleset_IsTerraformResource(x interface{}) *bool {
+func FirebaserulesRuleset_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateFirebaserulesRuleset_IsTerraformResourceParameters(x); err != nil {
@@ -615,7 +614,7 @@ func FirebaserulesRuleset_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.firebaserulesRuleset.FirebaserulesRuleset",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -640,31 +639,31 @@ func (f *jsiiProxy_FirebaserulesRuleset) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		f,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (f *jsiiProxy_FirebaserulesRuleset) AddOverride(path *string, value interface{}) {
+func (f *jsiiProxy_FirebaserulesRuleset) AddOverride(path *string, value any) {
 	if err := f.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		f,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (f *jsiiProxy_FirebaserulesRuleset) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (f *jsiiProxy_FirebaserulesRuleset) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := f.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -680,7 +679,7 @@ func (f *jsiiProxy_FirebaserulesRuleset) GetBooleanAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		f,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -696,7 +695,7 @@ func (f *jsiiProxy_FirebaserulesRuleset) GetBooleanMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		f,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -712,7 +711,7 @@ func (f *jsiiProxy_FirebaserulesRuleset) GetListAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		f,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -728,7 +727,7 @@ func (f *jsiiProxy_FirebaserulesRuleset) GetNumberAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		f,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -744,7 +743,7 @@ func (f *jsiiProxy_FirebaserulesRuleset) GetNumberListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		f,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -760,7 +759,7 @@ func (f *jsiiProxy_FirebaserulesRuleset) GetNumberMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		f,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -776,7 +775,7 @@ func (f *jsiiProxy_FirebaserulesRuleset) GetStringAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		f,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -792,15 +791,15 @@ func (f *jsiiProxy_FirebaserulesRuleset) GetStringMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		f,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (f *jsiiProxy_FirebaserulesRuleset) HasResourceMove() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FirebaserulesRuleset) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -819,7 +818,7 @@ func (f *jsiiProxy_FirebaserulesRuleset) ImportFrom(id *string, provider cdktf.T
 	_jsii_.InvokeVoid(
 		f,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -832,7 +831,7 @@ func (f *jsiiProxy_FirebaserulesRuleset) InterpolationForAttribute(terraformAttr
 	_jsii_.Invoke(
 		f,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -846,18 +845,18 @@ func (f *jsiiProxy_FirebaserulesRuleset) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		f,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (f *jsiiProxy_FirebaserulesRuleset) MoveTo(moveTarget *string, index interface{}) {
+func (f *jsiiProxy_FirebaserulesRuleset) MoveTo(moveTarget *string, index any) {
 	if err := f.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		f,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -868,7 +867,7 @@ func (f *jsiiProxy_FirebaserulesRuleset) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		f,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -879,7 +878,7 @@ func (f *jsiiProxy_FirebaserulesRuleset) OverrideLogicalId(newLogicalId *string)
 	_jsii_.InvokeVoid(
 		f,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -890,7 +889,7 @@ func (f *jsiiProxy_FirebaserulesRuleset) PutSource(value *FirebaserulesRulesetSo
 	_jsii_.InvokeVoid(
 		f,
 		"putSource",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -901,7 +900,7 @@ func (f *jsiiProxy_FirebaserulesRuleset) PutTimeouts(value *FirebaserulesRuleset
 	_jsii_.InvokeVoid(
 		f,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -937,8 +936,8 @@ func (f *jsiiProxy_FirebaserulesRuleset) ResetTimeouts() {
 	)
 }
 
-func (f *jsiiProxy_FirebaserulesRuleset) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (f *jsiiProxy_FirebaserulesRuleset) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
@@ -950,8 +949,8 @@ func (f *jsiiProxy_FirebaserulesRuleset) SynthesizeAttributes() *map[string]inte
 	return returns
 }
 
-func (f *jsiiProxy_FirebaserulesRuleset) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (f *jsiiProxy_FirebaserulesRuleset) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
@@ -963,8 +962,8 @@ func (f *jsiiProxy_FirebaserulesRuleset) SynthesizeHclAttributes() *map[string]i
 	return returns
 }
 
-func (f *jsiiProxy_FirebaserulesRuleset) ToHclTerraform() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FirebaserulesRuleset) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -976,8 +975,8 @@ func (f *jsiiProxy_FirebaserulesRuleset) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (f *jsiiProxy_FirebaserulesRuleset) ToMetadata() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FirebaserulesRuleset) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -1002,8 +1001,8 @@ func (f *jsiiProxy_FirebaserulesRuleset) ToString() *string {
 	return returns
 }
 
-func (f *jsiiProxy_FirebaserulesRuleset) ToTerraform() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FirebaserulesRuleset) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -1014,4 +1013,3 @@ func (f *jsiiProxy_FirebaserulesRuleset) ToTerraform() interface{} {
 
 	return returns
 }
-

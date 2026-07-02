@@ -1,6 +1,5 @@
 package osconfigpatchdeployment
 
-
 type OsConfigPatchDeploymentPatchConfig struct {
 	// apt block.
 	//
@@ -13,7 +12,7 @@ type OsConfigPatchDeploymentPatchConfig struct {
 	// Allows the patch job to run on Managed instance groups (MIGs).
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/os_config_patch_deployment#mig_instances_allowed OsConfigPatchDeployment#mig_instances_allowed}
-	MigInstancesAllowed interface{} `field:"optional" json:"migInstancesAllowed" yaml:"migInstancesAllowed"`
+	MigInstancesAllowed any `field:"optional" json:"migInstancesAllowed" yaml:"migInstancesAllowed"`
 	// post_step block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/os_config_patch_deployment#post_step OsConfigPatchDeployment#post_step}
@@ -35,7 +34,7 @@ type OsConfigPatchDeploymentPatchConfig struct {
 	// 3. The patch job is reported as 'COMPLETED_WITH_INACTIVE_VMS' if it completes without errors, but does not patch instances that are 'INACTIVE'.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/os_config_patch_deployment#skip_unpatchable_vms OsConfigPatchDeployment#skip_unpatchable_vms}
-	SkipUnpatchableVms interface{} `field:"optional" json:"skipUnpatchableVms" yaml:"skipUnpatchableVms"`
+	SkipUnpatchableVms any `field:"optional" json:"skipUnpatchableVms" yaml:"skipUnpatchableVms"`
 	// windows_update block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/os_config_patch_deployment#windows_update OsConfigPatchDeployment#windows_update}
@@ -49,4 +48,3 @@ type OsConfigPatchDeploymentPatchConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/os_config_patch_deployment#zypper OsConfigPatchDeployment#zypper}
 	Zypper *OsConfigPatchDeploymentPatchConfigZypper `field:"optional" json:"zypper" yaml:"zypper"`
 }
-

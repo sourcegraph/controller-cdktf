@@ -12,9 +12,9 @@ type DataCatalogEntryGroupTimeoutsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,8 +33,8 @@ type DataCatalogEntryGroupTimeoutsOutputReference interface {
 	DeleteInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -49,7 +49,7 @@ type DataCatalogEntryGroupTimeoutsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type DataCatalogEntryGroupTimeoutsOutputReference interface {
 	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_DataCatalogEntryGroupTimeoutsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DataCatalogEntryGroupTimeoutsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCatalogEntryGroupTimeoutsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_DataCatalogEntryGroupTimeoutsOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCatalogEntryGroupTimeoutsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCatalogEntryGroupTimeoutsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_DataCatalogEntryGroupTimeoutsOutputReference) UpdateInput() *
 	return returns
 }
 
-
 func NewDataCatalogEntryGroupTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataCatalogEntryGroupTimeoutsOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewDataCatalogEntryGroupTimeoutsOutputReference(terraformResource cdktf.IIn
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroupTimeoutsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewDataCatalogEntryGroupTimeoutsOutputReference_Override(d DataCatalogEntry
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroupTimeoutsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataCatalogEntryGroupTimeoutsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataCatalogEntryGroupTimeoutsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_DataCatalogEntryGroupTimeoutsOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_DataCatalogEntryGroupTimeoutsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataCatalogEntryGroupTimeoutsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_DataCatalogEntryGroupTimeoutsOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_DataCatalogEntryGroupTimeoutsOutputReference)SetCreate(val *string) {
+func (j *jsiiProxy_DataCatalogEntryGroupTimeoutsOutputReference) SetCreate(val *string) {
 	if err := j.validateSetCreateParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_DataCatalogEntryGroupTimeoutsOutputReference)SetCreate(val *s
 	)
 }
 
-func (j *jsiiProxy_DataCatalogEntryGroupTimeoutsOutputReference)SetDelete(val *string) {
+func (j *jsiiProxy_DataCatalogEntryGroupTimeoutsOutputReference) SetDelete(val *string) {
 	if err := j.validateSetDeleteParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_DataCatalogEntryGroupTimeoutsOutputReference)SetDelete(val *s
 	)
 }
 
-func (j *jsiiProxy_DataCatalogEntryGroupTimeoutsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataCatalogEntryGroupTimeoutsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_DataCatalogEntryGroupTimeoutsOutputReference)SetInternalValue
 	)
 }
 
-func (j *jsiiProxy_DataCatalogEntryGroupTimeoutsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataCatalogEntryGroupTimeoutsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_DataCatalogEntryGroupTimeoutsOutputReference)SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_DataCatalogEntryGroupTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataCatalogEntryGroupTimeoutsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_DataCatalogEntryGroupTimeoutsOutputReference)SetTerraformReso
 	)
 }
 
-func (j *jsiiProxy_DataCatalogEntryGroupTimeoutsOutputReference)SetUpdate(val *string) {
+func (j *jsiiProxy_DataCatalogEntryGroupTimeoutsOutputReference) SetUpdate(val *string) {
 	if err := j.validateSetUpdateParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (d *jsiiProxy_DataCatalogEntryGroupTimeoutsOutputReference) ComputeFqn() *s
 	return returns
 }
 
-func (d *jsiiProxy_DataCatalogEntryGroupTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataCatalogEntryGroupTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (d *jsiiProxy_DataCatalogEntryGroupTimeoutsOutputReference) GetBooleanAttri
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (d *jsiiProxy_DataCatalogEntryGroupTimeoutsOutputReference) GetBooleanMapAt
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (d *jsiiProxy_DataCatalogEntryGroupTimeoutsOutputReference) GetListAttribut
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (d *jsiiProxy_DataCatalogEntryGroupTimeoutsOutputReference) GetNumberAttrib
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (d *jsiiProxy_DataCatalogEntryGroupTimeoutsOutputReference) GetNumberListAt
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (d *jsiiProxy_DataCatalogEntryGroupTimeoutsOutputReference) GetNumberMapAtt
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (d *jsiiProxy_DataCatalogEntryGroupTimeoutsOutputReference) GetStringAttrib
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (d *jsiiProxy_DataCatalogEntryGroupTimeoutsOutputReference) GetStringMapAtt
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (d *jsiiProxy_DataCatalogEntryGroupTimeoutsOutputReference) InterpolationFo
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (d *jsiiProxy_DataCatalogEntryGroupTimeoutsOutputReference) ResetUpdate() {
 	)
 }
 
-func (d *jsiiProxy_DataCatalogEntryGroupTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataCatalogEntryGroupTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (d *jsiiProxy_DataCatalogEntryGroupTimeoutsOutputReference) ToString() *str
 
 	return returns
 }
-

@@ -34,7 +34,7 @@ func (s *jsiiProxy_SccManagementFolderSecurityHealthAnalyticsCustomModuleCustomC
 	return nil
 }
 
-func (j *jsiiProxy_SccManagementFolderSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputPropertiesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SccManagementFolderSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputPropertiesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewSccManagementFolderSecurityHealthAnalyticsCustomModuleCustomConf
 
 	return nil
 }
-

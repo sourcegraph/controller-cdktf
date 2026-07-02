@@ -106,7 +106,7 @@ func (j *jsiiProxy_ContainerClusterReleaseChannelOutputReference) validateSetCha
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterReleaseChannelOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterReleaseChannelOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewContainerClusterReleaseChannelOutputReferenceParameters(terrafor
 
 	return nil
 }
-

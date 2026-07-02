@@ -98,7 +98,7 @@ func (s *jsiiProxy_SqlUserTimeoutsOutputReference) validateResolveParameters(_co
 	return nil
 }
 
-func (j *jsiiProxy_SqlUserTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SqlUserTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_SqlUserTimeoutsOutputReference) validateSetDeleteParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_SqlUserTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SqlUserTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewSqlUserTimeoutsOutputReferenceParameters(terraformResource cdktf
 
 	return nil
 }
-

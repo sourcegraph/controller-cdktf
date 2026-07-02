@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleComputeBackendBucketCdnPolicyCacheKeyPolicyOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeBackendBucketCdnPolicyCacheKeyPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleComputeBackendBucketCdnPolicyCacheKeyPolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleComputeBackendBucketCdnPolicyCacheKeyPolicyOutputRefer
 
 	return nil
 }
-

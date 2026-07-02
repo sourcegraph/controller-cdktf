@@ -120,7 +120,7 @@ func (c *jsiiProxy_CloudSecurityComplianceCloudControlParameterSpecSubParameters
 	return nil
 }
 
-func (j *jsiiProxy_CloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOutputReference) validateSetBoolValueParameters(val interface{}) error {
+func (j *jsiiProxy_CloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOutputReference) validateSetBoolValueParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -140,7 +140,7 @@ func (j *jsiiProxy_CloudSecurityComplianceCloudControlParameterSpecSubParameters
 	return nil
 }
 
-func (j *jsiiProxy_CloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -256,4 +256,3 @@ func validateNewCloudSecurityComplianceCloudControlParameterSpecSubParametersDef
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (s *jsiiProxy_SecretManagerRegionalSecretTopicsOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_SecretManagerRegionalSecretTopicsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SecretManagerRegionalSecretTopicsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_SecretManagerRegionalSecretTopicsOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_SecretManagerRegionalSecretTopicsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SecretManagerRegionalSecretTopicsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewSecretManagerRegionalSecretTopicsOutputReferenceParameters(terra
 
 	return nil
 }
-

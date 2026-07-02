@@ -98,7 +98,7 @@ func (c *jsiiProxy_ContainerAwsClusterNetworkingOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_ContainerAwsClusterNetworkingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerAwsClusterNetworkingOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_ContainerAwsClusterNetworkingOutputReference) validateSetInte
 	return nil
 }
 
-func (j *jsiiProxy_ContainerAwsClusterNetworkingOutputReference) validateSetPerNodePoolSgRulesDisabledParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerAwsClusterNetworkingOutputReference) validateSetPerNodePoolSgRulesDisabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -242,4 +242,3 @@ func validateNewContainerAwsClusterNetworkingOutputReferenceParameters(terraform
 
 	return nil
 }
-

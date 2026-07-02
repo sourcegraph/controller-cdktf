@@ -12,9 +12,9 @@ type ComputeStoragePoolResourceStatusOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -50,7 +50,7 @@ type ComputeStoragePoolResourceStatusOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -73,7 +73,7 @@ type ComputeStoragePoolResourceStatusOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -86,8 +86,8 @@ type jsiiProxy_ComputeStoragePoolResourceStatusOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ComputeStoragePoolResourceStatusOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeStoragePoolResourceStatusOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -256,7 +256,6 @@ func (j *jsiiProxy_ComputeStoragePoolResourceStatusOutputReference) TotalProvisi
 	return returns
 }
 
-
 func NewComputeStoragePoolResourceStatusOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ComputeStoragePoolResourceStatusOutputReference {
 	_init_.Initialize()
 
@@ -267,7 +266,7 @@ func NewComputeStoragePoolResourceStatusOutputReference(terraformResource cdktf.
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeStoragePool.ComputeStoragePoolResourceStatusOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -279,12 +278,12 @@ func NewComputeStoragePoolResourceStatusOutputReference_Override(c ComputeStorag
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeStoragePool.ComputeStoragePoolResourceStatusOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputeStoragePoolResourceStatusOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ComputeStoragePoolResourceStatusOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -295,7 +294,7 @@ func (j *jsiiProxy_ComputeStoragePoolResourceStatusOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_ComputeStoragePoolResourceStatusOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ComputeStoragePoolResourceStatusOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -306,7 +305,7 @@ func (j *jsiiProxy_ComputeStoragePoolResourceStatusOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_ComputeStoragePoolResourceStatusOutputReference)SetInternalValue(val *ComputeStoragePoolResourceStatus) {
+func (j *jsiiProxy_ComputeStoragePoolResourceStatusOutputReference) SetInternalValue(val *ComputeStoragePoolResourceStatus) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -317,7 +316,7 @@ func (j *jsiiProxy_ComputeStoragePoolResourceStatusOutputReference)SetInternalVa
 	)
 }
 
-func (j *jsiiProxy_ComputeStoragePoolResourceStatusOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ComputeStoragePoolResourceStatusOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -328,7 +327,7 @@ func (j *jsiiProxy_ComputeStoragePoolResourceStatusOutputReference)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_ComputeStoragePoolResourceStatusOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeStoragePoolResourceStatusOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -352,16 +351,16 @@ func (c *jsiiProxy_ComputeStoragePoolResourceStatusOutputReference) ComputeFqn()
 	return returns
 }
 
-func (c *jsiiProxy_ComputeStoragePoolResourceStatusOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComputeStoragePoolResourceStatusOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -377,7 +376,7 @@ func (c *jsiiProxy_ComputeStoragePoolResourceStatusOutputReference) GetBooleanAt
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -393,7 +392,7 @@ func (c *jsiiProxy_ComputeStoragePoolResourceStatusOutputReference) GetBooleanMa
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -409,7 +408,7 @@ func (c *jsiiProxy_ComputeStoragePoolResourceStatusOutputReference) GetListAttri
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -425,7 +424,7 @@ func (c *jsiiProxy_ComputeStoragePoolResourceStatusOutputReference) GetNumberAtt
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -441,7 +440,7 @@ func (c *jsiiProxy_ComputeStoragePoolResourceStatusOutputReference) GetNumberLis
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -457,7 +456,7 @@ func (c *jsiiProxy_ComputeStoragePoolResourceStatusOutputReference) GetNumberMap
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -473,7 +472,7 @@ func (c *jsiiProxy_ComputeStoragePoolResourceStatusOutputReference) GetStringAtt
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -489,7 +488,7 @@ func (c *jsiiProxy_ComputeStoragePoolResourceStatusOutputReference) GetStringMap
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -518,23 +517,23 @@ func (c *jsiiProxy_ComputeStoragePoolResourceStatusOutputReference) Interpolatio
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ComputeStoragePoolResourceStatusOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ComputeStoragePoolResourceStatusOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -553,4 +552,3 @@ func (c *jsiiProxy_ComputeStoragePoolResourceStatusOutputReference) ToString() *
 
 	return returns
 }
-

@@ -98,7 +98,7 @@ func (c *jsiiProxy_CloudSchedulerJobRetryConfigOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_CloudSchedulerJobRetryConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudSchedulerJobRetryConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -238,4 +238,3 @@ func validateNewCloudSchedulerJobRetryConfigOutputReferenceParameters(terraformR
 
 	return nil
 }
-

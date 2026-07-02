@@ -109,7 +109,7 @@ func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionMonitoringQueryLangua
 	return nil
 }
 
-func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionMonitoringQueryLanguageOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionMonitoringQueryLanguageOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -233,4 +233,3 @@ func validateNewMonitoringAlertPolicyConditionsConditionMonitoringQueryLanguageO
 
 	return nil
 }
-

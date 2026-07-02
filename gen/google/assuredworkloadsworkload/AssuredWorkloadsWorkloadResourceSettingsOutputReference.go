@@ -12,9 +12,9 @@ type AssuredWorkloadsWorkloadResourceSettingsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,8 +30,8 @@ type AssuredWorkloadsWorkloadResourceSettingsOutputReference interface {
 	DisplayNameInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	ResourceId() *string
 	SetResourceId(val *string)
 	ResourceIdInput() *string
@@ -49,7 +49,7 @@ type AssuredWorkloadsWorkloadResourceSettingsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type AssuredWorkloadsWorkloadResourceSettingsOutputReference interface {
 	ResetResourceType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_AssuredWorkloadsWorkloadResourceSettingsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_AssuredWorkloadsWorkloadResourceSettingsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AssuredWorkloadsWorkloadResourceSettingsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -148,8 +148,8 @@ func (j *jsiiProxy_AssuredWorkloadsWorkloadResourceSettingsOutputReference) Fqn(
 	return returns
 }
 
-func (j *jsiiProxy_AssuredWorkloadsWorkloadResourceSettingsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AssuredWorkloadsWorkloadResourceSettingsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_AssuredWorkloadsWorkloadResourceSettingsOutputReference) Terr
 	return returns
 }
 
-
 func NewAssuredWorkloadsWorkloadResourceSettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AssuredWorkloadsWorkloadResourceSettingsOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewAssuredWorkloadsWorkloadResourceSettingsOutputReference(terraformResourc
 
 	_jsii_.Create(
 		"@cdktf/provider-google.assuredWorkloadsWorkload.AssuredWorkloadsWorkloadResourceSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewAssuredWorkloadsWorkloadResourceSettingsOutputReference_Override(a Assur
 
 	_jsii_.Create(
 		"@cdktf/provider-google.assuredWorkloadsWorkload.AssuredWorkloadsWorkloadResourceSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AssuredWorkloadsWorkloadResourceSettingsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AssuredWorkloadsWorkloadResourceSettingsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_AssuredWorkloadsWorkloadResourceSettingsOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_AssuredWorkloadsWorkloadResourceSettingsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AssuredWorkloadsWorkloadResourceSettingsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_AssuredWorkloadsWorkloadResourceSettingsOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_AssuredWorkloadsWorkloadResourceSettingsOutputReference)SetDisplayName(val *string) {
+func (j *jsiiProxy_AssuredWorkloadsWorkloadResourceSettingsOutputReference) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_AssuredWorkloadsWorkloadResourceSettingsOutputReference)SetDi
 	)
 }
 
-func (j *jsiiProxy_AssuredWorkloadsWorkloadResourceSettingsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AssuredWorkloadsWorkloadResourceSettingsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_AssuredWorkloadsWorkloadResourceSettingsOutputReference)SetIn
 	)
 }
 
-func (j *jsiiProxy_AssuredWorkloadsWorkloadResourceSettingsOutputReference)SetResourceId(val *string) {
+func (j *jsiiProxy_AssuredWorkloadsWorkloadResourceSettingsOutputReference) SetResourceId(val *string) {
 	if err := j.validateSetResourceIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_AssuredWorkloadsWorkloadResourceSettingsOutputReference)SetRe
 	)
 }
 
-func (j *jsiiProxy_AssuredWorkloadsWorkloadResourceSettingsOutputReference)SetResourceType(val *string) {
+func (j *jsiiProxy_AssuredWorkloadsWorkloadResourceSettingsOutputReference) SetResourceType(val *string) {
 	if err := j.validateSetResourceTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_AssuredWorkloadsWorkloadResourceSettingsOutputReference)SetRe
 	)
 }
 
-func (j *jsiiProxy_AssuredWorkloadsWorkloadResourceSettingsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AssuredWorkloadsWorkloadResourceSettingsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_AssuredWorkloadsWorkloadResourceSettingsOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_AssuredWorkloadsWorkloadResourceSettingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AssuredWorkloadsWorkloadResourceSettingsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (a *jsiiProxy_AssuredWorkloadsWorkloadResourceSettingsOutputReference) Comp
 	return returns
 }
 
-func (a *jsiiProxy_AssuredWorkloadsWorkloadResourceSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AssuredWorkloadsWorkloadResourceSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (a *jsiiProxy_AssuredWorkloadsWorkloadResourceSettingsOutputReference) GetB
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (a *jsiiProxy_AssuredWorkloadsWorkloadResourceSettingsOutputReference) GetB
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (a *jsiiProxy_AssuredWorkloadsWorkloadResourceSettingsOutputReference) GetL
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (a *jsiiProxy_AssuredWorkloadsWorkloadResourceSettingsOutputReference) GetN
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (a *jsiiProxy_AssuredWorkloadsWorkloadResourceSettingsOutputReference) GetN
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (a *jsiiProxy_AssuredWorkloadsWorkloadResourceSettingsOutputReference) GetN
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (a *jsiiProxy_AssuredWorkloadsWorkloadResourceSettingsOutputReference) GetS
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (a *jsiiProxy_AssuredWorkloadsWorkloadResourceSettingsOutputReference) GetS
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (a *jsiiProxy_AssuredWorkloadsWorkloadResourceSettingsOutputReference) Inte
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (a *jsiiProxy_AssuredWorkloadsWorkloadResourceSettingsOutputReference) Rese
 	)
 }
 
-func (a *jsiiProxy_AssuredWorkloadsWorkloadResourceSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AssuredWorkloadsWorkloadResourceSettingsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (a *jsiiProxy_AssuredWorkloadsWorkloadResourceSettingsOutputReference) ToSt
 
 	return returns
 }
-

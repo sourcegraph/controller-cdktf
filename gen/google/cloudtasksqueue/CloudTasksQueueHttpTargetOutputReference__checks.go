@@ -90,7 +90,7 @@ func (c *jsiiProxy_CloudTasksQueueHttpTargetOutputReference) validateInterpolati
 	return nil
 }
 
-func (c *jsiiProxy_CloudTasksQueueHttpTargetOutputReference) validatePutHeaderOverridesParameters(value interface{}) error {
+func (c *jsiiProxy_CloudTasksQueueHttpTargetOutputReference) validatePutHeaderOverridesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -162,7 +162,7 @@ func (c *jsiiProxy_CloudTasksQueueHttpTargetOutputReference) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_CloudTasksQueueHttpTargetOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudTasksQueueHttpTargetOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -270,4 +270,3 @@ func validateNewCloudTasksQueueHttpTargetOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

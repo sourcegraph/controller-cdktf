@@ -6,9 +6,9 @@ import (
 
 type DialogflowCxIntentConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type DialogflowCxIntentConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The human-readable name of the intent, unique within the agent.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_intent#display_name DialogflowCxIntent#display_name}
@@ -37,13 +37,13 @@ type DialogflowCxIntentConfig struct {
 	// ~> Avoid having multiple 'google_dialogflow_cx_intent' resources linked to the same agent with 'is_default_negative_intent = true' because they will compete to control a single Default Negative Intent resource in GCP.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_intent#is_default_negative_intent DialogflowCxIntent#is_default_negative_intent}
-	IsDefaultNegativeIntent interface{} `field:"optional" json:"isDefaultNegativeIntent" yaml:"isDefaultNegativeIntent"`
+	IsDefaultNegativeIntent any `field:"optional" json:"isDefaultNegativeIntent" yaml:"isDefaultNegativeIntent"`
 	// Marks this as the [Default Welcome Intent](https://cloud.google.com/dialogflow/cx/docs/concept/intent#welcome) for an agent. When you create an agent, a Default Welcome Intent is created automatically. The Default Welcome Intent cannot be deleted; deleting the 'google_dialogflow_cx_intent' resource does nothing to the underlying GCP resources.
 	//
 	// ~> Avoid having multiple 'google_dialogflow_cx_intent' resources linked to the same agent with 'is_default_welcome_intent = true' because they will compete to control a single Default Welcome Intent resource in GCP.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_intent#is_default_welcome_intent DialogflowCxIntent#is_default_welcome_intent}
-	IsDefaultWelcomeIntent interface{} `field:"optional" json:"isDefaultWelcomeIntent" yaml:"isDefaultWelcomeIntent"`
+	IsDefaultWelcomeIntent any `field:"optional" json:"isDefaultWelcomeIntent" yaml:"isDefaultWelcomeIntent"`
 	// Indicates whether this is a fallback intent.
 	//
 	// Currently only default fallback intent is allowed in the agent, which is added upon agent creation.
@@ -51,7 +51,7 @@ type DialogflowCxIntentConfig struct {
 	// To manage the fallback intent, set 'is_default_negative_intent = true'
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_intent#is_fallback DialogflowCxIntent#is_fallback}
-	IsFallback interface{} `field:"optional" json:"isFallback" yaml:"isFallback"`
+	IsFallback any `field:"optional" json:"isFallback" yaml:"isFallback"`
 	// The key/value metadata to label an intent.
 	//
 	// Labels can contain lowercase letters, digits and the symbols '-' and '_'. International characters are allowed, including letters from unicase alphabets. Keys must start with a letter. Keys and values can be no longer than 63 characters and no more than 128 bytes.
@@ -71,7 +71,7 @@ type DialogflowCxIntentConfig struct {
 	// parameters block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_intent#parameters DialogflowCxIntent#parameters}
-	Parameters interface{} `field:"optional" json:"parameters" yaml:"parameters"`
+	Parameters any `field:"optional" json:"parameters" yaml:"parameters"`
 	// The agent to create an intent for. Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_intent#parent DialogflowCxIntent#parent}
@@ -91,6 +91,5 @@ type DialogflowCxIntentConfig struct {
 	// training_phrases block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_intent#training_phrases DialogflowCxIntent#training_phrases}
-	TrainingPhrases interface{} `field:"optional" json:"trainingPhrases" yaml:"trainingPhrases"`
+	TrainingPhrases any `field:"optional" json:"trainingPhrases" yaml:"trainingPhrases"`
 }
-

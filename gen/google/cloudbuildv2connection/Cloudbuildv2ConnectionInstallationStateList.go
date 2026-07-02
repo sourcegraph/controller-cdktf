@@ -36,7 +36,7 @@ type Cloudbuildv2ConnectionInstallationStateList interface {
 	Get(index *float64) Cloudbuildv2ConnectionInstallationStateOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,7 +99,6 @@ func (j *jsiiProxy_Cloudbuildv2ConnectionInstallationStateList) WrapsSet() *bool
 	return returns
 }
 
-
 func NewCloudbuildv2ConnectionInstallationStateList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Cloudbuildv2ConnectionInstallationStateList {
 	_init_.Initialize()
 
@@ -110,7 +109,7 @@ func NewCloudbuildv2ConnectionInstallationStateList(terraformResource cdktf.IInt
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cloudbuildv2Connection.Cloudbuildv2ConnectionInstallationStateList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -122,12 +121,12 @@ func NewCloudbuildv2ConnectionInstallationStateList_Override(c Cloudbuildv2Conne
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cloudbuildv2Connection.Cloudbuildv2ConnectionInstallationStateList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)
 }
 
-func (j *jsiiProxy_Cloudbuildv2ConnectionInstallationStateList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_Cloudbuildv2ConnectionInstallationStateList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -138,7 +137,7 @@ func (j *jsiiProxy_Cloudbuildv2ConnectionInstallationStateList)SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_Cloudbuildv2ConnectionInstallationStateList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_Cloudbuildv2ConnectionInstallationStateList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -149,7 +148,7 @@ func (j *jsiiProxy_Cloudbuildv2ConnectionInstallationStateList)SetTerraformResou
 	)
 }
 
-func (j *jsiiProxy_Cloudbuildv2ConnectionInstallationStateList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_Cloudbuildv2ConnectionInstallationStateList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -169,7 +168,7 @@ func (c *jsiiProxy_Cloudbuildv2ConnectionInstallationStateList) AllWithMapKey(ma
 	_jsii_.Invoke(
 		c,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -198,23 +197,23 @@ func (c *jsiiProxy_Cloudbuildv2ConnectionInstallationStateList) Get(index *float
 	_jsii_.Invoke(
 		c,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_Cloudbuildv2ConnectionInstallationStateList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_Cloudbuildv2ConnectionInstallationStateList) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -233,4 +232,3 @@ func (c *jsiiProxy_Cloudbuildv2ConnectionInstallationStateList) ToString() *stri
 
 	return returns
 }
-

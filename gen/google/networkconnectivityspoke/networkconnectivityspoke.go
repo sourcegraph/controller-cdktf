@@ -15,15 +15,15 @@ type NetworkConnectivitySpoke interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -83,31 +83,31 @@ type NetworkConnectivitySpoke interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Reasons() NetworkConnectivitySpokeReasonsList
 	State() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() NetworkConnectivitySpokeTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UniqueId() *string
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -125,7 +125,7 @@ type NetworkConnectivitySpoke interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -137,7 +137,7 @@ type NetworkConnectivitySpoke interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -164,17 +164,17 @@ type NetworkConnectivitySpoke interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for NetworkConnectivitySpoke
@@ -192,8 +192,8 @@ func (j *jsiiProxy_NetworkConnectivitySpoke) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_NetworkConnectivitySpoke) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkConnectivitySpoke) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -202,8 +202,8 @@ func (j *jsiiProxy_NetworkConnectivitySpoke) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NetworkConnectivitySpoke) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_NetworkConnectivitySpoke) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -212,8 +212,8 @@ func (j *jsiiProxy_NetworkConnectivitySpoke) ConstructNodeMetadata() *map[string
 	return returns
 }
 
-func (j *jsiiProxy_NetworkConnectivitySpoke) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkConnectivitySpoke) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -572,8 +572,8 @@ func (j *jsiiProxy_NetworkConnectivitySpoke) Provider() cdktf.TerraformProvider 
 	return returns
 }
 
-func (j *jsiiProxy_NetworkConnectivitySpoke) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_NetworkConnectivitySpoke) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -582,8 +582,8 @@ func (j *jsiiProxy_NetworkConnectivitySpoke) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NetworkConnectivitySpoke) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkConnectivitySpoke) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -632,8 +632,8 @@ func (j *jsiiProxy_NetworkConnectivitySpoke) TerraformLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_NetworkConnectivitySpoke) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_NetworkConnectivitySpoke) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -662,8 +662,8 @@ func (j *jsiiProxy_NetworkConnectivitySpoke) Timeouts() NetworkConnectivitySpoke
 	return returns
 }
 
-func (j *jsiiProxy_NetworkConnectivitySpoke) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkConnectivitySpoke) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -692,7 +692,6 @@ func (j *jsiiProxy_NetworkConnectivitySpoke) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_connectivity_spoke google_network_connectivity_spoke} Resource.
 func NewNetworkConnectivitySpoke(scope constructs.Construct, id *string, config *NetworkConnectivitySpokeConfig) NetworkConnectivitySpoke {
 	_init_.Initialize()
@@ -704,7 +703,7 @@ func NewNetworkConnectivitySpoke(scope constructs.Construct, id *string, config 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.networkConnectivitySpoke.NetworkConnectivitySpoke",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -717,12 +716,12 @@ func NewNetworkConnectivitySpoke_Override(n NetworkConnectivitySpoke, scope cons
 
 	_jsii_.Create(
 		"@cdktf/provider-google.networkConnectivitySpoke.NetworkConnectivitySpoke",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivitySpoke)SetConnection(val interface{}) {
+func (j *jsiiProxy_NetworkConnectivitySpoke) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -733,7 +732,7 @@ func (j *jsiiProxy_NetworkConnectivitySpoke)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivitySpoke)SetCount(val interface{}) {
+func (j *jsiiProxy_NetworkConnectivitySpoke) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -744,7 +743,7 @@ func (j *jsiiProxy_NetworkConnectivitySpoke)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivitySpoke)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_NetworkConnectivitySpoke) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -752,7 +751,7 @@ func (j *jsiiProxy_NetworkConnectivitySpoke)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivitySpoke)SetDescription(val *string) {
+func (j *jsiiProxy_NetworkConnectivitySpoke) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -763,7 +762,7 @@ func (j *jsiiProxy_NetworkConnectivitySpoke)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivitySpoke)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_NetworkConnectivitySpoke) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -771,7 +770,7 @@ func (j *jsiiProxy_NetworkConnectivitySpoke)SetForEach(val cdktf.ITerraformItera
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivitySpoke)SetGroup(val *string) {
+func (j *jsiiProxy_NetworkConnectivitySpoke) SetGroup(val *string) {
 	if err := j.validateSetGroupParameters(val); err != nil {
 		panic(err)
 	}
@@ -782,7 +781,7 @@ func (j *jsiiProxy_NetworkConnectivitySpoke)SetGroup(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivitySpoke)SetHub(val *string) {
+func (j *jsiiProxy_NetworkConnectivitySpoke) SetHub(val *string) {
 	if err := j.validateSetHubParameters(val); err != nil {
 		panic(err)
 	}
@@ -793,7 +792,7 @@ func (j *jsiiProxy_NetworkConnectivitySpoke)SetHub(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivitySpoke)SetId(val *string) {
+func (j *jsiiProxy_NetworkConnectivitySpoke) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -804,7 +803,7 @@ func (j *jsiiProxy_NetworkConnectivitySpoke)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivitySpoke)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_NetworkConnectivitySpoke) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -815,7 +814,7 @@ func (j *jsiiProxy_NetworkConnectivitySpoke)SetLabels(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivitySpoke)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_NetworkConnectivitySpoke) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -826,7 +825,7 @@ func (j *jsiiProxy_NetworkConnectivitySpoke)SetLifecycle(val *cdktf.TerraformRes
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivitySpoke)SetLocation(val *string) {
+func (j *jsiiProxy_NetworkConnectivitySpoke) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -837,7 +836,7 @@ func (j *jsiiProxy_NetworkConnectivitySpoke)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivitySpoke)SetName(val *string) {
+func (j *jsiiProxy_NetworkConnectivitySpoke) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -848,7 +847,7 @@ func (j *jsiiProxy_NetworkConnectivitySpoke)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivitySpoke)SetProject(val *string) {
+func (j *jsiiProxy_NetworkConnectivitySpoke) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -859,7 +858,7 @@ func (j *jsiiProxy_NetworkConnectivitySpoke)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivitySpoke)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_NetworkConnectivitySpoke) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -867,7 +866,7 @@ func (j *jsiiProxy_NetworkConnectivitySpoke)SetProvider(val cdktf.TerraformProvi
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivitySpoke)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_NetworkConnectivitySpoke) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -890,7 +889,7 @@ func NetworkConnectivitySpoke_GenerateConfigForImport(scope constructs.Construct
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.networkConnectivitySpoke.NetworkConnectivitySpoke",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -914,7 +913,7 @@ func NetworkConnectivitySpoke_GenerateConfigForImport(scope constructs.Construct
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func NetworkConnectivitySpoke_IsConstruct(x interface{}) *bool {
+func NetworkConnectivitySpoke_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetworkConnectivitySpoke_IsConstructParameters(x); err != nil {
@@ -925,7 +924,7 @@ func NetworkConnectivitySpoke_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.networkConnectivitySpoke.NetworkConnectivitySpoke",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -933,7 +932,7 @@ func NetworkConnectivitySpoke_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func NetworkConnectivitySpoke_IsTerraformElement(x interface{}) *bool {
+func NetworkConnectivitySpoke_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetworkConnectivitySpoke_IsTerraformElementParameters(x); err != nil {
@@ -944,7 +943,7 @@ func NetworkConnectivitySpoke_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.networkConnectivitySpoke.NetworkConnectivitySpoke",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -952,7 +951,7 @@ func NetworkConnectivitySpoke_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func NetworkConnectivitySpoke_IsTerraformResource(x interface{}) *bool {
+func NetworkConnectivitySpoke_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetworkConnectivitySpoke_IsTerraformResourceParameters(x); err != nil {
@@ -963,7 +962,7 @@ func NetworkConnectivitySpoke_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.networkConnectivitySpoke.NetworkConnectivitySpoke",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -988,31 +987,31 @@ func (n *jsiiProxy_NetworkConnectivitySpoke) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (n *jsiiProxy_NetworkConnectivitySpoke) AddOverride(path *string, value interface{}) {
+func (n *jsiiProxy_NetworkConnectivitySpoke) AddOverride(path *string, value any) {
 	if err := n.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (n *jsiiProxy_NetworkConnectivitySpoke) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (n *jsiiProxy_NetworkConnectivitySpoke) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1028,7 +1027,7 @@ func (n *jsiiProxy_NetworkConnectivitySpoke) GetBooleanAttribute(terraformAttrib
 	_jsii_.Invoke(
 		n,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1044,7 +1043,7 @@ func (n *jsiiProxy_NetworkConnectivitySpoke) GetBooleanMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		n,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1060,7 +1059,7 @@ func (n *jsiiProxy_NetworkConnectivitySpoke) GetListAttribute(terraformAttribute
 	_jsii_.Invoke(
 		n,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1076,7 +1075,7 @@ func (n *jsiiProxy_NetworkConnectivitySpoke) GetNumberAttribute(terraformAttribu
 	_jsii_.Invoke(
 		n,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1092,7 +1091,7 @@ func (n *jsiiProxy_NetworkConnectivitySpoke) GetNumberListAttribute(terraformAtt
 	_jsii_.Invoke(
 		n,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1108,7 +1107,7 @@ func (n *jsiiProxy_NetworkConnectivitySpoke) GetNumberMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		n,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1124,7 +1123,7 @@ func (n *jsiiProxy_NetworkConnectivitySpoke) GetStringAttribute(terraformAttribu
 	_jsii_.Invoke(
 		n,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1140,15 +1139,15 @@ func (n *jsiiProxy_NetworkConnectivitySpoke) GetStringMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		n,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (n *jsiiProxy_NetworkConnectivitySpoke) HasResourceMove() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkConnectivitySpoke) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1167,7 +1166,7 @@ func (n *jsiiProxy_NetworkConnectivitySpoke) ImportFrom(id *string, provider cdk
 	_jsii_.InvokeVoid(
 		n,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1180,7 +1179,7 @@ func (n *jsiiProxy_NetworkConnectivitySpoke) InterpolationForAttribute(terraform
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1194,18 +1193,18 @@ func (n *jsiiProxy_NetworkConnectivitySpoke) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (n *jsiiProxy_NetworkConnectivitySpoke) MoveTo(moveTarget *string, index interface{}) {
+func (n *jsiiProxy_NetworkConnectivitySpoke) MoveTo(moveTarget *string, index any) {
 	if err := n.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1216,7 +1215,7 @@ func (n *jsiiProxy_NetworkConnectivitySpoke) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1227,7 +1226,7 @@ func (n *jsiiProxy_NetworkConnectivitySpoke) OverrideLogicalId(newLogicalId *str
 	_jsii_.InvokeVoid(
 		n,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1238,7 +1237,7 @@ func (n *jsiiProxy_NetworkConnectivitySpoke) PutLinkedInterconnectAttachments(va
 	_jsii_.InvokeVoid(
 		n,
 		"putLinkedInterconnectAttachments",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1249,7 +1248,7 @@ func (n *jsiiProxy_NetworkConnectivitySpoke) PutLinkedProducerVpcNetwork(value *
 	_jsii_.InvokeVoid(
 		n,
 		"putLinkedProducerVpcNetwork",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1260,7 +1259,7 @@ func (n *jsiiProxy_NetworkConnectivitySpoke) PutLinkedRouterApplianceInstances(v
 	_jsii_.InvokeVoid(
 		n,
 		"putLinkedRouterApplianceInstances",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1271,7 +1270,7 @@ func (n *jsiiProxy_NetworkConnectivitySpoke) PutLinkedVpcNetwork(value *NetworkC
 	_jsii_.InvokeVoid(
 		n,
 		"putLinkedVpcNetwork",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1282,7 +1281,7 @@ func (n *jsiiProxy_NetworkConnectivitySpoke) PutLinkedVpnTunnels(value *NetworkC
 	_jsii_.InvokeVoid(
 		n,
 		"putLinkedVpnTunnels",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1293,7 +1292,7 @@ func (n *jsiiProxy_NetworkConnectivitySpoke) PutTimeouts(value *NetworkConnectiv
 	_jsii_.InvokeVoid(
 		n,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1393,8 +1392,8 @@ func (n *jsiiProxy_NetworkConnectivitySpoke) ResetTimeouts() {
 	)
 }
 
-func (n *jsiiProxy_NetworkConnectivitySpoke) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (n *jsiiProxy_NetworkConnectivitySpoke) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
@@ -1406,8 +1405,8 @@ func (n *jsiiProxy_NetworkConnectivitySpoke) SynthesizeAttributes() *map[string]
 	return returns
 }
 
-func (n *jsiiProxy_NetworkConnectivitySpoke) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (n *jsiiProxy_NetworkConnectivitySpoke) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
@@ -1419,8 +1418,8 @@ func (n *jsiiProxy_NetworkConnectivitySpoke) SynthesizeHclAttributes() *map[stri
 	return returns
 }
 
-func (n *jsiiProxy_NetworkConnectivitySpoke) ToHclTerraform() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkConnectivitySpoke) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1432,8 +1431,8 @@ func (n *jsiiProxy_NetworkConnectivitySpoke) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (n *jsiiProxy_NetworkConnectivitySpoke) ToMetadata() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkConnectivitySpoke) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1458,8 +1457,8 @@ func (n *jsiiProxy_NetworkConnectivitySpoke) ToString() *string {
 	return returns
 }
 
-func (n *jsiiProxy_NetworkConnectivitySpoke) ToTerraform() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkConnectivitySpoke) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1470,4 +1469,3 @@ func (n *jsiiProxy_NetworkConnectivitySpoke) ToTerraform() interface{} {
 
 	return returns
 }
-

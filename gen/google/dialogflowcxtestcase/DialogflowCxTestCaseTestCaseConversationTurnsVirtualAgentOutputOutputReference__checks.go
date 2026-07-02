@@ -101,7 +101,7 @@ func (d *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutp
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputOutputReference) validatePutTextResponsesParameters(value interface{}) error {
+func (d *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputOutputReference) validatePutTextResponsesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func (d *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutp
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -259,4 +259,3 @@ func validateNewDialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputO
 
 	return nil
 }
-

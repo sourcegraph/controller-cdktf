@@ -98,7 +98,7 @@ func (g *jsiiProxy_GkeonpremVmwareAdminClusterControlPlaneNodeOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_GkeonpremVmwareAdminClusterControlPlaneNodeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GkeonpremVmwareAdminClusterControlPlaneNodeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGkeonpremVmwareAdminClusterControlPlaneNodeOutputReferenceParame
 
 	return nil
 }
-

@@ -1,11 +1,10 @@
 package gkebackuprestoreplan
 
-
 type GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilter struct {
 	// group_kinds block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_backup_restore_plan#group_kinds GkeBackupRestorePlan#group_kinds}
-	GroupKinds interface{} `field:"optional" json:"groupKinds" yaml:"groupKinds"`
+	GroupKinds any `field:"optional" json:"groupKinds" yaml:"groupKinds"`
 	// This is a JSONPath expression that matches specific fields of candidate resources and it operates as a filtering parameter (resources that are not matched with this expression will not be candidates for transformation).
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_backup_restore_plan#json_path GkeBackupRestorePlan#json_path}
@@ -21,4 +20,3 @@ type GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilter struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_backup_restore_plan#namespaces GkeBackupRestorePlan#namespaces}
 	Namespaces *[]*string `field:"optional" json:"namespaces" yaml:"namespaces"`
 }
-

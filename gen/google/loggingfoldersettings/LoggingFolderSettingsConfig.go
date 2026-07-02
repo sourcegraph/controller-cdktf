@@ -6,9 +6,9 @@ import (
 
 type LoggingFolderSettingsConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type LoggingFolderSettingsConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The folder for which to retrieve settings.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_folder_settings#folder LoggingFolderSettings#folder}
@@ -28,7 +28,7 @@ type LoggingFolderSettingsConfig struct {
 	// This can be used to automatically disable log storage if there is already an aggregated sink configured in the hierarchy. The _Default sink can be re-enabled manually if needed.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_folder_settings#disable_default_sink LoggingFolderSettings#disable_default_sink}
-	DisableDefaultSink interface{} `field:"optional" json:"disableDefaultSink" yaml:"disableDefaultSink"`
+	DisableDefaultSink any `field:"optional" json:"disableDefaultSink" yaml:"disableDefaultSink"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_folder_settings#id LoggingFolderSettings#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -47,4 +47,3 @@ type LoggingFolderSettingsConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_folder_settings#timeouts LoggingFolderSettings#timeouts}
 	Timeouts *LoggingFolderSettingsTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

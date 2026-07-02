@@ -98,7 +98,7 @@ func (l *jsiiProxy_LustreInstanceAccessRulesOptionsAccessRulesOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_LustreInstanceAccessRulesOptionsAccessRulesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LustreInstanceAccessRulesOptionsAccessRulesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_LustreInstanceAccessRulesOptionsAccessRulesOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_LustreInstanceAccessRulesOptionsAccessRulesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LustreInstanceAccessRulesOptionsAccessRulesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewLustreInstanceAccessRulesOptionsAccessRulesOutputReferenceParame
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigEncrypti
 	return nil
 }
 
-func (j *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigEncryptionConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigEncryptionConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataprocWorkflowTemplatePlacementManagedClusterConfigEncryptionC
 
 	return nil
 }
-

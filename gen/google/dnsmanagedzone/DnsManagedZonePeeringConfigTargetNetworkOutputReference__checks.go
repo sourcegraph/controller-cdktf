@@ -98,7 +98,7 @@ func (d *jsiiProxy_DnsManagedZonePeeringConfigTargetNetworkOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_DnsManagedZonePeeringConfigTargetNetworkOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DnsManagedZonePeeringConfigTargetNetworkOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDnsManagedZonePeeringConfigTargetNetworkOutputReferenceParameter
 
 	return nil
 }
-

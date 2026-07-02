@@ -12,9 +12,9 @@ type DataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutputReference int
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -49,13 +49,13 @@ type DataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutputReference int
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	TypeInferenceDisabled() interface{}
-	SetTypeInferenceDisabled(val interface{})
-	TypeInferenceDisabledInput() interface{}
+	TypeInferenceDisabled() any
+	SetTypeInferenceDisabled(val any)
+	TypeInferenceDisabledInput() any
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -83,7 +83,7 @@ type DataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutputReference int
 	ResetTypeInferenceDisabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -96,8 +96,8 @@ type jsiiProxy_DataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutputRef
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -246,8 +246,8 @@ func (j *jsiiProxy_DataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutpu
 	return returns
 }
 
-func (j *jsiiProxy_DataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutputReference) TypeInferenceDisabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutputReference) TypeInferenceDisabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"typeInferenceDisabled",
@@ -256,8 +256,8 @@ func (j *jsiiProxy_DataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutpu
 	return returns
 }
 
-func (j *jsiiProxy_DataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutputReference) TypeInferenceDisabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutputReference) TypeInferenceDisabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"typeInferenceDisabledInput",
@@ -265,7 +265,6 @@ func (j *jsiiProxy_DataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutpu
 	)
 	return returns
 }
-
 
 func NewDataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutputReference {
 	_init_.Initialize()
@@ -277,7 +276,7 @@ func NewDataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutputReference(
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -289,12 +288,12 @@ func NewDataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutputReference_
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -305,7 +304,7 @@ func (j *jsiiProxy_DataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutpu
 	)
 }
 
-func (j *jsiiProxy_DataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -316,7 +315,7 @@ func (j *jsiiProxy_DataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutpu
 	)
 }
 
-func (j *jsiiProxy_DataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutputReference)SetDelimiter(val *string) {
+func (j *jsiiProxy_DataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutputReference) SetDelimiter(val *string) {
 	if err := j.validateSetDelimiterParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,7 +326,7 @@ func (j *jsiiProxy_DataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutpu
 	)
 }
 
-func (j *jsiiProxy_DataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutputReference)SetEncoding(val *string) {
+func (j *jsiiProxy_DataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutputReference) SetEncoding(val *string) {
 	if err := j.validateSetEncodingParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,7 +337,7 @@ func (j *jsiiProxy_DataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutpu
 	)
 }
 
-func (j *jsiiProxy_DataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutputReference)SetHeaderRows(val *float64) {
+func (j *jsiiProxy_DataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutputReference) SetHeaderRows(val *float64) {
 	if err := j.validateSetHeaderRowsParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,7 +348,7 @@ func (j *jsiiProxy_DataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutpu
 	)
 }
 
-func (j *jsiiProxy_DataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutputReference)SetInternalValue(val *DataplexDatascanDataDiscoverySpecStorageConfigCsvOptions) {
+func (j *jsiiProxy_DataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutputReference) SetInternalValue(val *DataplexDatascanDataDiscoverySpecStorageConfigCsvOptions) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,7 +359,7 @@ func (j *jsiiProxy_DataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutpu
 	)
 }
 
-func (j *jsiiProxy_DataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutputReference)SetQuote(val *string) {
+func (j *jsiiProxy_DataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutputReference) SetQuote(val *string) {
 	if err := j.validateSetQuoteParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,7 +370,7 @@ func (j *jsiiProxy_DataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutpu
 	)
 }
 
-func (j *jsiiProxy_DataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,7 +381,7 @@ func (j *jsiiProxy_DataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutpu
 	)
 }
 
-func (j *jsiiProxy_DataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,7 +392,7 @@ func (j *jsiiProxy_DataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutpu
 	)
 }
 
-func (j *jsiiProxy_DataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutputReference)SetTypeInferenceDisabled(val interface{}) {
+func (j *jsiiProxy_DataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutputReference) SetTypeInferenceDisabled(val any) {
 	if err := j.validateSetTypeInferenceDisabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,16 +416,16 @@ func (d *jsiiProxy_DataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutpu
 	return returns
 }
 
-func (d *jsiiProxy_DataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -442,7 +441,7 @@ func (d *jsiiProxy_DataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutpu
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -458,7 +457,7 @@ func (d *jsiiProxy_DataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutpu
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -474,7 +473,7 @@ func (d *jsiiProxy_DataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutpu
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -490,7 +489,7 @@ func (d *jsiiProxy_DataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutpu
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -506,7 +505,7 @@ func (d *jsiiProxy_DataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutpu
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -522,7 +521,7 @@ func (d *jsiiProxy_DataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutpu
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -538,7 +537,7 @@ func (d *jsiiProxy_DataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutpu
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -554,7 +553,7 @@ func (d *jsiiProxy_DataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutpu
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -583,7 +582,7 @@ func (d *jsiiProxy_DataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutpu
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -630,16 +629,16 @@ func (d *jsiiProxy_DataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutpu
 	)
 }
 
-func (d *jsiiProxy_DataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -658,4 +657,3 @@ func (d *jsiiProxy_DataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutpu
 
 	return returns
 }
-

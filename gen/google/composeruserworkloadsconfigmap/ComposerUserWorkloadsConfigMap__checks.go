@@ -19,7 +19,7 @@ func (c *jsiiProxy_ComposerUserWorkloadsConfigMap) validateAddMoveTargetParamete
 	return nil
 }
 
-func (c *jsiiProxy_ComposerUserWorkloadsConfigMap) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_ComposerUserWorkloadsConfigMap) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_ComposerUserWorkloadsConfigMap) validateMoveFromIdParameters(
 	return nil
 }
 
-func (c *jsiiProxy_ComposerUserWorkloadsConfigMap) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_ComposerUserWorkloadsConfigMap) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateComposerUserWorkloadsConfigMap_GenerateConfigForImportParameters(sc
 	return nil
 }
 
-func validateComposerUserWorkloadsConfigMap_IsConstructParameters(x interface{}) error {
+func validateComposerUserWorkloadsConfigMap_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateComposerUserWorkloadsConfigMap_IsConstructParameters(x interface{})
 	return nil
 }
 
-func validateComposerUserWorkloadsConfigMap_IsTerraformElementParameters(x interface{}) error {
+func validateComposerUserWorkloadsConfigMap_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateComposerUserWorkloadsConfigMap_IsTerraformElementParameters(x inter
 	return nil
 }
 
-func validateComposerUserWorkloadsConfigMap_IsTerraformResourceParameters(x interface{}) error {
+func validateComposerUserWorkloadsConfigMap_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateComposerUserWorkloadsConfigMap_IsTerraformResourceParameters(x inte
 	return nil
 }
 
-func (j *jsiiProxy_ComposerUserWorkloadsConfigMap) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ComposerUserWorkloadsConfigMap) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_ComposerUserWorkloadsConfigMap) validateSetConnectionParamete
 	return nil
 }
 
-func (j *jsiiProxy_ComposerUserWorkloadsConfigMap) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ComposerUserWorkloadsConfigMap) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -393,7 +393,7 @@ func (j *jsiiProxy_ComposerUserWorkloadsConfigMap) validateSetProjectParameters(
 	return nil
 }
 
-func (j *jsiiProxy_ComposerUserWorkloadsConfigMap) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ComposerUserWorkloadsConfigMap) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -465,4 +465,3 @@ func validateNewComposerUserWorkloadsConfigMapParameters(scope constructs.Constr
 
 	return nil
 }
-

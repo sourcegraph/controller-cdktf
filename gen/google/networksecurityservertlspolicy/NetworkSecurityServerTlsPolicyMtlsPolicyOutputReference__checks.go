@@ -90,7 +90,7 @@ func (n *jsiiProxy_NetworkSecurityServerTlsPolicyMtlsPolicyOutputReference) vali
 	return nil
 }
 
-func (n *jsiiProxy_NetworkSecurityServerTlsPolicyMtlsPolicyOutputReference) validatePutClientValidationCaParameters(value interface{}) error {
+func (n *jsiiProxy_NetworkSecurityServerTlsPolicyMtlsPolicyOutputReference) validatePutClientValidationCaParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -145,7 +145,7 @@ func (j *jsiiProxy_NetworkSecurityServerTlsPolicyMtlsPolicyOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_NetworkSecurityServerTlsPolicyMtlsPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkSecurityServerTlsPolicyMtlsPolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -245,4 +245,3 @@ func validateNewNetworkSecurityServerTlsPolicyMtlsPolicyOutputReferenceParameter
 
 	return nil
 }
-

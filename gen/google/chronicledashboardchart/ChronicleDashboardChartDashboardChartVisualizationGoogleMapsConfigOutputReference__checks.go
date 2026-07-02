@@ -131,7 +131,7 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationGoogleMapsC
 	return nil
 }
 
-func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationGoogleMapsConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationGoogleMapsConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -239,4 +239,3 @@ func validateNewChronicleDashboardChartDashboardChartVisualizationGoogleMapsConf
 
 	return nil
 }
-

@@ -109,7 +109,7 @@ func (d *jsiiProxy_DataprocAutoscalingPolicyBasicAlgorithmOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_DataprocAutoscalingPolicyBasicAlgorithmOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocAutoscalingPolicyBasicAlgorithmOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -217,4 +217,3 @@ func validateNewDataprocAutoscalingPolicyBasicAlgorithmOutputReferenceParameters
 
 	return nil
 }
-

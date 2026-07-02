@@ -98,7 +98,7 @@ func (i *jsiiProxy_IamFoldersPolicyBindingConditionOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_IamFoldersPolicyBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IamFoldersPolicyBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewIamFoldersPolicyBindingConditionOutputReferenceParameters(terraf
 
 	return nil
 }
-

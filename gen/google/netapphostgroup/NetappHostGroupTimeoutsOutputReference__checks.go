@@ -98,7 +98,7 @@ func (n *jsiiProxy_NetappHostGroupTimeoutsOutputReference) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_NetappHostGroupTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetappHostGroupTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_NetappHostGroupTimeoutsOutputReference) validateSetDeletePara
 	return nil
 }
 
-func (j *jsiiProxy_NetappHostGroupTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NetappHostGroupTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewNetappHostGroupTimeoutsOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

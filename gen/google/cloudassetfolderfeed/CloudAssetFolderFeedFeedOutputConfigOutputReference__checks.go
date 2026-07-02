@@ -109,7 +109,7 @@ func (c *jsiiProxy_CloudAssetFolderFeedFeedOutputConfigOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_CloudAssetFolderFeedFeedOutputConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudAssetFolderFeedFeedOutputConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewCloudAssetFolderFeedFeedOutputConfigOutputReferenceParameters(te
 
 	return nil
 }
-

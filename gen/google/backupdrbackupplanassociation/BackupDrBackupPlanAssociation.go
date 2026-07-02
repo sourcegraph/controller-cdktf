@@ -21,15 +21,15 @@ type BackupDrBackupPlanAssociation interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	DataSource() *string
 	// Experimental.
@@ -65,11 +65,11 @@ type BackupDrBackupPlanAssociation interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Resource() *string
 	SetResource(val *string)
 	ResourceInput() *string
@@ -80,19 +80,19 @@ type BackupDrBackupPlanAssociation interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() BackupDrBackupPlanAssociationTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -110,7 +110,7 @@ type BackupDrBackupPlanAssociation interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -122,7 +122,7 @@ type BackupDrBackupPlanAssociation interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -136,17 +136,17 @@ type BackupDrBackupPlanAssociation interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for BackupDrBackupPlanAssociation
@@ -204,8 +204,8 @@ func (j *jsiiProxy_BackupDrBackupPlanAssociation) CdktfStack() cdktf.TerraformSt
 	return returns
 }
 
-func (j *jsiiProxy_BackupDrBackupPlanAssociation) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BackupDrBackupPlanAssociation) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -214,8 +214,8 @@ func (j *jsiiProxy_BackupDrBackupPlanAssociation) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_BackupDrBackupPlanAssociation) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_BackupDrBackupPlanAssociation) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -224,8 +224,8 @@ func (j *jsiiProxy_BackupDrBackupPlanAssociation) ConstructNodeMetadata() *map[s
 	return returns
 }
 
-func (j *jsiiProxy_BackupDrBackupPlanAssociation) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BackupDrBackupPlanAssociation) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -394,8 +394,8 @@ func (j *jsiiProxy_BackupDrBackupPlanAssociation) Provider() cdktf.TerraformProv
 	return returns
 }
 
-func (j *jsiiProxy_BackupDrBackupPlanAssociation) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_BackupDrBackupPlanAssociation) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -404,8 +404,8 @@ func (j *jsiiProxy_BackupDrBackupPlanAssociation) Provisioners() *[]interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_BackupDrBackupPlanAssociation) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BackupDrBackupPlanAssociation) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -474,8 +474,8 @@ func (j *jsiiProxy_BackupDrBackupPlanAssociation) TerraformGeneratorMetadata() *
 	return returns
 }
 
-func (j *jsiiProxy_BackupDrBackupPlanAssociation) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_BackupDrBackupPlanAssociation) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -504,8 +504,8 @@ func (j *jsiiProxy_BackupDrBackupPlanAssociation) Timeouts() BackupDrBackupPlanA
 	return returns
 }
 
-func (j *jsiiProxy_BackupDrBackupPlanAssociation) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BackupDrBackupPlanAssociation) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -524,7 +524,6 @@ func (j *jsiiProxy_BackupDrBackupPlanAssociation) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_backup_plan_association google_backup_dr_backup_plan_association} Resource.
 func NewBackupDrBackupPlanAssociation(scope constructs.Construct, id *string, config *BackupDrBackupPlanAssociationConfig) BackupDrBackupPlanAssociation {
 	_init_.Initialize()
@@ -536,7 +535,7 @@ func NewBackupDrBackupPlanAssociation(scope constructs.Construct, id *string, co
 
 	_jsii_.Create(
 		"@cdktf/provider-google.backupDrBackupPlanAssociation.BackupDrBackupPlanAssociation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -549,12 +548,12 @@ func NewBackupDrBackupPlanAssociation_Override(b BackupDrBackupPlanAssociation, 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.backupDrBackupPlanAssociation.BackupDrBackupPlanAssociation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		b,
 	)
 }
 
-func (j *jsiiProxy_BackupDrBackupPlanAssociation)SetBackupPlan(val *string) {
+func (j *jsiiProxy_BackupDrBackupPlanAssociation) SetBackupPlan(val *string) {
 	if err := j.validateSetBackupPlanParameters(val); err != nil {
 		panic(err)
 	}
@@ -565,7 +564,7 @@ func (j *jsiiProxy_BackupDrBackupPlanAssociation)SetBackupPlan(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BackupDrBackupPlanAssociation)SetBackupPlanAssociationId(val *string) {
+func (j *jsiiProxy_BackupDrBackupPlanAssociation) SetBackupPlanAssociationId(val *string) {
 	if err := j.validateSetBackupPlanAssociationIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -576,7 +575,7 @@ func (j *jsiiProxy_BackupDrBackupPlanAssociation)SetBackupPlanAssociationId(val 
 	)
 }
 
-func (j *jsiiProxy_BackupDrBackupPlanAssociation)SetConnection(val interface{}) {
+func (j *jsiiProxy_BackupDrBackupPlanAssociation) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -587,7 +586,7 @@ func (j *jsiiProxy_BackupDrBackupPlanAssociation)SetConnection(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_BackupDrBackupPlanAssociation)SetCount(val interface{}) {
+func (j *jsiiProxy_BackupDrBackupPlanAssociation) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -598,7 +597,7 @@ func (j *jsiiProxy_BackupDrBackupPlanAssociation)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_BackupDrBackupPlanAssociation)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_BackupDrBackupPlanAssociation) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -606,7 +605,7 @@ func (j *jsiiProxy_BackupDrBackupPlanAssociation)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_BackupDrBackupPlanAssociation)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_BackupDrBackupPlanAssociation) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -614,7 +613,7 @@ func (j *jsiiProxy_BackupDrBackupPlanAssociation)SetForEach(val cdktf.ITerraform
 	)
 }
 
-func (j *jsiiProxy_BackupDrBackupPlanAssociation)SetId(val *string) {
+func (j *jsiiProxy_BackupDrBackupPlanAssociation) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -625,7 +624,7 @@ func (j *jsiiProxy_BackupDrBackupPlanAssociation)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BackupDrBackupPlanAssociation)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_BackupDrBackupPlanAssociation) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -636,7 +635,7 @@ func (j *jsiiProxy_BackupDrBackupPlanAssociation)SetLifecycle(val *cdktf.Terrafo
 	)
 }
 
-func (j *jsiiProxy_BackupDrBackupPlanAssociation)SetLocation(val *string) {
+func (j *jsiiProxy_BackupDrBackupPlanAssociation) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -647,7 +646,7 @@ func (j *jsiiProxy_BackupDrBackupPlanAssociation)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BackupDrBackupPlanAssociation)SetProject(val *string) {
+func (j *jsiiProxy_BackupDrBackupPlanAssociation) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -658,7 +657,7 @@ func (j *jsiiProxy_BackupDrBackupPlanAssociation)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BackupDrBackupPlanAssociation)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_BackupDrBackupPlanAssociation) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -666,7 +665,7 @@ func (j *jsiiProxy_BackupDrBackupPlanAssociation)SetProvider(val cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_BackupDrBackupPlanAssociation)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_BackupDrBackupPlanAssociation) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -677,7 +676,7 @@ func (j *jsiiProxy_BackupDrBackupPlanAssociation)SetProvisioners(val *[]interfac
 	)
 }
 
-func (j *jsiiProxy_BackupDrBackupPlanAssociation)SetResource(val *string) {
+func (j *jsiiProxy_BackupDrBackupPlanAssociation) SetResource(val *string) {
 	if err := j.validateSetResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -688,7 +687,7 @@ func (j *jsiiProxy_BackupDrBackupPlanAssociation)SetResource(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BackupDrBackupPlanAssociation)SetResourceType(val *string) {
+func (j *jsiiProxy_BackupDrBackupPlanAssociation) SetResourceType(val *string) {
 	if err := j.validateSetResourceTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -711,7 +710,7 @@ func BackupDrBackupPlanAssociation_GenerateConfigForImport(scope constructs.Cons
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.backupDrBackupPlanAssociation.BackupDrBackupPlanAssociation",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -735,7 +734,7 @@ func BackupDrBackupPlanAssociation_GenerateConfigForImport(scope constructs.Cons
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func BackupDrBackupPlanAssociation_IsConstruct(x interface{}) *bool {
+func BackupDrBackupPlanAssociation_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateBackupDrBackupPlanAssociation_IsConstructParameters(x); err != nil {
@@ -746,7 +745,7 @@ func BackupDrBackupPlanAssociation_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.backupDrBackupPlanAssociation.BackupDrBackupPlanAssociation",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -754,7 +753,7 @@ func BackupDrBackupPlanAssociation_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func BackupDrBackupPlanAssociation_IsTerraformElement(x interface{}) *bool {
+func BackupDrBackupPlanAssociation_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateBackupDrBackupPlanAssociation_IsTerraformElementParameters(x); err != nil {
@@ -765,7 +764,7 @@ func BackupDrBackupPlanAssociation_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.backupDrBackupPlanAssociation.BackupDrBackupPlanAssociation",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -773,7 +772,7 @@ func BackupDrBackupPlanAssociation_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func BackupDrBackupPlanAssociation_IsTerraformResource(x interface{}) *bool {
+func BackupDrBackupPlanAssociation_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateBackupDrBackupPlanAssociation_IsTerraformResourceParameters(x); err != nil {
@@ -784,7 +783,7 @@ func BackupDrBackupPlanAssociation_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.backupDrBackupPlanAssociation.BackupDrBackupPlanAssociation",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -809,31 +808,31 @@ func (b *jsiiProxy_BackupDrBackupPlanAssociation) AddMoveTarget(moveTarget *stri
 	_jsii_.InvokeVoid(
 		b,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (b *jsiiProxy_BackupDrBackupPlanAssociation) AddOverride(path *string, value interface{}) {
+func (b *jsiiProxy_BackupDrBackupPlanAssociation) AddOverride(path *string, value any) {
 	if err := b.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		b,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (b *jsiiProxy_BackupDrBackupPlanAssociation) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (b *jsiiProxy_BackupDrBackupPlanAssociation) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := b.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -849,7 +848,7 @@ func (b *jsiiProxy_BackupDrBackupPlanAssociation) GetBooleanAttribute(terraformA
 	_jsii_.Invoke(
 		b,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -865,7 +864,7 @@ func (b *jsiiProxy_BackupDrBackupPlanAssociation) GetBooleanMapAttribute(terrafo
 	_jsii_.Invoke(
 		b,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -881,7 +880,7 @@ func (b *jsiiProxy_BackupDrBackupPlanAssociation) GetListAttribute(terraformAttr
 	_jsii_.Invoke(
 		b,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -897,7 +896,7 @@ func (b *jsiiProxy_BackupDrBackupPlanAssociation) GetNumberAttribute(terraformAt
 	_jsii_.Invoke(
 		b,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -913,7 +912,7 @@ func (b *jsiiProxy_BackupDrBackupPlanAssociation) GetNumberListAttribute(terrafo
 	_jsii_.Invoke(
 		b,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -929,7 +928,7 @@ func (b *jsiiProxy_BackupDrBackupPlanAssociation) GetNumberMapAttribute(terrafor
 	_jsii_.Invoke(
 		b,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -945,7 +944,7 @@ func (b *jsiiProxy_BackupDrBackupPlanAssociation) GetStringAttribute(terraformAt
 	_jsii_.Invoke(
 		b,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -961,15 +960,15 @@ func (b *jsiiProxy_BackupDrBackupPlanAssociation) GetStringMapAttribute(terrafor
 	_jsii_.Invoke(
 		b,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (b *jsiiProxy_BackupDrBackupPlanAssociation) HasResourceMove() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BackupDrBackupPlanAssociation) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -988,7 +987,7 @@ func (b *jsiiProxy_BackupDrBackupPlanAssociation) ImportFrom(id *string, provide
 	_jsii_.InvokeVoid(
 		b,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1001,7 +1000,7 @@ func (b *jsiiProxy_BackupDrBackupPlanAssociation) InterpolationForAttribute(terr
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1015,18 +1014,18 @@ func (b *jsiiProxy_BackupDrBackupPlanAssociation) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		b,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (b *jsiiProxy_BackupDrBackupPlanAssociation) MoveTo(moveTarget *string, index interface{}) {
+func (b *jsiiProxy_BackupDrBackupPlanAssociation) MoveTo(moveTarget *string, index any) {
 	if err := b.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		b,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1037,7 +1036,7 @@ func (b *jsiiProxy_BackupDrBackupPlanAssociation) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		b,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1048,7 +1047,7 @@ func (b *jsiiProxy_BackupDrBackupPlanAssociation) OverrideLogicalId(newLogicalId
 	_jsii_.InvokeVoid(
 		b,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1059,7 +1058,7 @@ func (b *jsiiProxy_BackupDrBackupPlanAssociation) PutTimeouts(value *BackupDrBac
 	_jsii_.InvokeVoid(
 		b,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1095,8 +1094,8 @@ func (b *jsiiProxy_BackupDrBackupPlanAssociation) ResetTimeouts() {
 	)
 }
 
-func (b *jsiiProxy_BackupDrBackupPlanAssociation) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (b *jsiiProxy_BackupDrBackupPlanAssociation) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
@@ -1108,8 +1107,8 @@ func (b *jsiiProxy_BackupDrBackupPlanAssociation) SynthesizeAttributes() *map[st
 	return returns
 }
 
-func (b *jsiiProxy_BackupDrBackupPlanAssociation) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (b *jsiiProxy_BackupDrBackupPlanAssociation) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
@@ -1121,8 +1120,8 @@ func (b *jsiiProxy_BackupDrBackupPlanAssociation) SynthesizeHclAttributes() *map
 	return returns
 }
 
-func (b *jsiiProxy_BackupDrBackupPlanAssociation) ToHclTerraform() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BackupDrBackupPlanAssociation) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -1134,8 +1133,8 @@ func (b *jsiiProxy_BackupDrBackupPlanAssociation) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (b *jsiiProxy_BackupDrBackupPlanAssociation) ToMetadata() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BackupDrBackupPlanAssociation) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -1160,8 +1159,8 @@ func (b *jsiiProxy_BackupDrBackupPlanAssociation) ToString() *string {
 	return returns
 }
 
-func (b *jsiiProxy_BackupDrBackupPlanAssociation) ToTerraform() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BackupDrBackupPlanAssociation) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -1172,4 +1171,3 @@ func (b *jsiiProxy_BackupDrBackupPlanAssociation) ToTerraform() interface{} {
 
 	return returns
 }
-

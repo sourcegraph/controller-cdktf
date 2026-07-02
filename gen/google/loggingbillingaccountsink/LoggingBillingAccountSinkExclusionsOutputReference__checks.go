@@ -98,7 +98,7 @@ func (l *jsiiProxy_LoggingBillingAccountSinkExclusionsOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_LoggingBillingAccountSinkExclusionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LoggingBillingAccountSinkExclusionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_LoggingBillingAccountSinkExclusionsOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_LoggingBillingAccountSinkExclusionsOutputReference) validateSetDisabledParameters(val interface{}) error {
+func (j *jsiiProxy_LoggingBillingAccountSinkExclusionsOutputReference) validateSetDisabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -199,7 +199,7 @@ func (j *jsiiProxy_LoggingBillingAccountSinkExclusionsOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_LoggingBillingAccountSinkExclusionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LoggingBillingAccountSinkExclusionsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -266,4 +266,3 @@ func validateNewLoggingBillingAccountSinkExclusionsOutputReferenceParameters(ter
 
 	return nil
 }
-

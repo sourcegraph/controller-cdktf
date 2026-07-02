@@ -14,9 +14,9 @@ type HypercomputeclusterClusterOrchestratorSlurmNodeSetsComputeInstanceOutputRef
 	BootDiskInput() *HypercomputeclusterClusterOrchestratorSlurmNodeSetsComputeInstanceBootDisk
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -48,7 +48,7 @@ type HypercomputeclusterClusterOrchestratorSlurmNodeSetsComputeInstanceOutputRef
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type HypercomputeclusterClusterOrchestratorSlurmNodeSetsComputeInstanceOutputRef
 	ResetStartupScript()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -108,8 +108,8 @@ func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsComputeIns
 	return returns
 }
 
-func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsComputeInstanceOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsComputeInstanceOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsComputeIns
 	return returns
 }
 
-
 func NewHypercomputeclusterClusterOrchestratorSlurmNodeSetsComputeInstanceOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) HypercomputeclusterClusterOrchestratorSlurmNodeSetsComputeInstanceOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewHypercomputeclusterClusterOrchestratorSlurmNodeSetsComputeInstanceOutput
 
 	_jsii_.Create(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterOrchestratorSlurmNodeSetsComputeInstanceOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewHypercomputeclusterClusterOrchestratorSlurmNodeSetsComputeInstanceOutput
 
 	_jsii_.Create(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterOrchestratorSlurmNodeSetsComputeInstanceOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		h,
 	)
 }
 
-func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsComputeInstanceOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsComputeInstanceOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsComputeIns
 	)
 }
 
-func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsComputeInstanceOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsComputeInstanceOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsComputeIns
 	)
 }
 
-func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsComputeInstanceOutputReference)SetInternalValue(val *HypercomputeclusterClusterOrchestratorSlurmNodeSetsComputeInstance) {
+func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsComputeInstanceOutputReference) SetInternalValue(val *HypercomputeclusterClusterOrchestratorSlurmNodeSetsComputeInstance) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsComputeIns
 	)
 }
 
-func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsComputeInstanceOutputReference)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsComputeInstanceOutputReference) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsComputeIns
 	)
 }
 
-func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsComputeInstanceOutputReference)SetStartupScript(val *string) {
+func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsComputeInstanceOutputReference) SetStartupScript(val *string) {
 	if err := j.validateSetStartupScriptParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsComputeIns
 	)
 }
 
-func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsComputeInstanceOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsComputeInstanceOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsComputeIns
 	)
 }
 
-func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsComputeInstanceOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsComputeInstanceOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,16 +335,16 @@ func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsComputeIns
 	return returns
 }
 
-func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsComputeInstanceOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsComputeInstanceOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := h.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		h,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -361,7 +360,7 @@ func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsComputeIns
 	_jsii_.Invoke(
 		h,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -377,7 +376,7 @@ func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsComputeIns
 	_jsii_.Invoke(
 		h,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -393,7 +392,7 @@ func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsComputeIns
 	_jsii_.Invoke(
 		h,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -409,7 +408,7 @@ func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsComputeIns
 	_jsii_.Invoke(
 		h,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -425,7 +424,7 @@ func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsComputeIns
 	_jsii_.Invoke(
 		h,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -441,7 +440,7 @@ func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsComputeIns
 	_jsii_.Invoke(
 		h,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -457,7 +456,7 @@ func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsComputeIns
 	_jsii_.Invoke(
 		h,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -473,7 +472,7 @@ func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsComputeIns
 	_jsii_.Invoke(
 		h,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -502,7 +501,7 @@ func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsComputeIns
 	_jsii_.Invoke(
 		h,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -516,7 +515,7 @@ func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsComputeIns
 	_jsii_.InvokeVoid(
 		h,
 		"putBootDisk",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -544,16 +543,16 @@ func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsComputeIns
 	)
 }
 
-func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsComputeInstanceOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsComputeInstanceOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := h.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		h,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsComputeIns
 
 	return returns
 }
-

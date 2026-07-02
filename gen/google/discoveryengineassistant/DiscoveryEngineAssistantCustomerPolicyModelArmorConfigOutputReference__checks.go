@@ -98,7 +98,7 @@ func (d *jsiiProxy_DiscoveryEngineAssistantCustomerPolicyModelArmorConfigOutputR
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineAssistantCustomerPolicyModelArmorConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DiscoveryEngineAssistantCustomerPolicyModelArmorConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewDiscoveryEngineAssistantCustomerPolicyModelArmorConfigOutputRefe
 
 	return nil
 }
-

@@ -17,9 +17,9 @@ type PubsubSubscriptionCloudStorageConfigOutputReference interface {
 	BucketInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -69,7 +69,7 @@ type PubsubSubscriptionCloudStorageConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -103,7 +103,7 @@ type PubsubSubscriptionCloudStorageConfigOutputReference interface {
 	ResetTextConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -156,8 +156,8 @@ func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) BucketIn
 	return returns
 }
 
-func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -396,7 +396,6 @@ func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) TextConf
 	return returns
 }
 
-
 func NewPubsubSubscriptionCloudStorageConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PubsubSubscriptionCloudStorageConfigOutputReference {
 	_init_.Initialize()
 
@@ -407,7 +406,7 @@ func NewPubsubSubscriptionCloudStorageConfigOutputReference(terraformResource cd
 
 	_jsii_.Create(
 		"@cdktf/provider-google.pubsubSubscription.PubsubSubscriptionCloudStorageConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -419,12 +418,12 @@ func NewPubsubSubscriptionCloudStorageConfigOutputReference_Override(p PubsubSub
 
 	_jsii_.Create(
 		"@cdktf/provider-google.pubsubSubscription.PubsubSubscriptionCloudStorageConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference)SetBucket(val *string) {
+func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) SetBucket(val *string) {
 	if err := j.validateSetBucketParameters(val); err != nil {
 		panic(err)
 	}
@@ -435,7 +434,7 @@ func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference)SetBucket
 	)
 }
 
-func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -446,7 +445,7 @@ func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -457,7 +456,7 @@ func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference)SetFilenameDatetimeFormat(val *string) {
+func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) SetFilenameDatetimeFormat(val *string) {
 	if err := j.validateSetFilenameDatetimeFormatParameters(val); err != nil {
 		panic(err)
 	}
@@ -468,7 +467,7 @@ func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference)SetFilena
 	)
 }
 
-func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference)SetFilenamePrefix(val *string) {
+func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) SetFilenamePrefix(val *string) {
 	if err := j.validateSetFilenamePrefixParameters(val); err != nil {
 		panic(err)
 	}
@@ -479,7 +478,7 @@ func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference)SetFilena
 	)
 }
 
-func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference)SetFilenameSuffix(val *string) {
+func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) SetFilenameSuffix(val *string) {
 	if err := j.validateSetFilenameSuffixParameters(val); err != nil {
 		panic(err)
 	}
@@ -490,7 +489,7 @@ func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference)SetFilena
 	)
 }
 
-func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference)SetInternalValue(val *PubsubSubscriptionCloudStorageConfig) {
+func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) SetInternalValue(val *PubsubSubscriptionCloudStorageConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -501,7 +500,7 @@ func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference)SetIntern
 	)
 }
 
-func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference)SetMaxBytes(val *float64) {
+func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) SetMaxBytes(val *float64) {
 	if err := j.validateSetMaxBytesParameters(val); err != nil {
 		panic(err)
 	}
@@ -512,7 +511,7 @@ func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference)SetMaxByt
 	)
 }
 
-func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference)SetMaxDuration(val *string) {
+func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) SetMaxDuration(val *string) {
 	if err := j.validateSetMaxDurationParameters(val); err != nil {
 		panic(err)
 	}
@@ -523,7 +522,7 @@ func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference)SetMaxDur
 	)
 }
 
-func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference)SetMaxMessages(val *float64) {
+func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) SetMaxMessages(val *float64) {
 	if err := j.validateSetMaxMessagesParameters(val); err != nil {
 		panic(err)
 	}
@@ -534,7 +533,7 @@ func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference)SetMaxMes
 	)
 }
 
-func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference)SetServiceAccountEmail(val *string) {
+func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) SetServiceAccountEmail(val *string) {
 	if err := j.validateSetServiceAccountEmailParameters(val); err != nil {
 		panic(err)
 	}
@@ -545,7 +544,7 @@ func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference)SetServic
 	)
 }
 
-func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -556,7 +555,7 @@ func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -580,16 +579,16 @@ func (p *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) ComputeF
 	return returns
 }
 
-func (p *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -605,7 +604,7 @@ func (p *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) GetBoole
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -621,7 +620,7 @@ func (p *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) GetBoole
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -637,7 +636,7 @@ func (p *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) GetListA
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -653,7 +652,7 @@ func (p *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) GetNumbe
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -669,7 +668,7 @@ func (p *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) GetNumbe
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -685,7 +684,7 @@ func (p *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) GetNumbe
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -701,7 +700,7 @@ func (p *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) GetStrin
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -717,7 +716,7 @@ func (p *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) GetStrin
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -746,7 +745,7 @@ func (p *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) Interpol
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -760,7 +759,7 @@ func (p *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) PutAvroC
 	_jsii_.InvokeVoid(
 		p,
 		"putAvroConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -771,7 +770,7 @@ func (p *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) PutTextC
 	_jsii_.InvokeVoid(
 		p,
 		"putTextConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -847,16 +846,16 @@ func (p *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) ResetTex
 	)
 }
 
-func (p *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := p.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -875,4 +874,3 @@ func (p *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) ToString
 
 	return returns
 }
-

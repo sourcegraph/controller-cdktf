@@ -15,9 +15,9 @@ type DialogflowCxPageEntryFulfillmentMessagesOutputReference interface {
 	ChannelInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -32,8 +32,8 @@ type DialogflowCxPageEntryFulfillmentMessagesOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	LiveAgentHandoff() DialogflowCxPageEntryFulfillmentMessagesLiveAgentHandoffOutputReference
 	LiveAgentHandoffInput() *DialogflowCxPageEntryFulfillmentMessagesLiveAgentHandoff
 	OutputAudioText() DialogflowCxPageEntryFulfillmentMessagesOutputAudioTextOutputReference
@@ -58,7 +58,7 @@ type DialogflowCxPageEntryFulfillmentMessagesOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -95,7 +95,7 @@ type DialogflowCxPageEntryFulfillmentMessagesOutputReference interface {
 	ResetText()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -128,8 +128,8 @@ func (j *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesOutputReference) Chan
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -188,8 +188,8 @@ func (j *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesOutputReference) Fqn(
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -338,7 +338,6 @@ func (j *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesOutputReference) Text
 	return returns
 }
 
-
 func NewDialogflowCxPageEntryFulfillmentMessagesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DialogflowCxPageEntryFulfillmentMessagesOutputReference {
 	_init_.Initialize()
 
@@ -349,7 +348,7 @@ func NewDialogflowCxPageEntryFulfillmentMessagesOutputReference(terraformResourc
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dialogflowCxPage.DialogflowCxPageEntryFulfillmentMessagesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -361,12 +360,12 @@ func NewDialogflowCxPageEntryFulfillmentMessagesOutputReference_Override(d Dialo
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dialogflowCxPage.DialogflowCxPageEntryFulfillmentMessagesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesOutputReference)SetChannel(val *string) {
+func (j *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesOutputReference) SetChannel(val *string) {
 	if err := j.validateSetChannelParameters(val); err != nil {
 		panic(err)
 	}
@@ -377,7 +376,7 @@ func (j *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesOutputReference)SetCh
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -388,7 +387,7 @@ func (j *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -399,7 +398,7 @@ func (j *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -410,7 +409,7 @@ func (j *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesOutputReference)SetIn
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesOutputReference)SetPayload(val *string) {
+func (j *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesOutputReference) SetPayload(val *string) {
 	if err := j.validateSetPayloadParameters(val); err != nil {
 		panic(err)
 	}
@@ -421,7 +420,7 @@ func (j *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesOutputReference)SetPa
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -432,7 +431,7 @@ func (j *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -456,16 +455,16 @@ func (d *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesOutputReference) Comp
 	return returns
 }
 
-func (d *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -481,7 +480,7 @@ func (d *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesOutputReference) GetB
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -497,7 +496,7 @@ func (d *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesOutputReference) GetB
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (d *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesOutputReference) GetL
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -529,7 +528,7 @@ func (d *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesOutputReference) GetN
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -545,7 +544,7 @@ func (d *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesOutputReference) GetN
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -561,7 +560,7 @@ func (d *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesOutputReference) GetN
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -577,7 +576,7 @@ func (d *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesOutputReference) GetS
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -593,7 +592,7 @@ func (d *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesOutputReference) GetS
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -622,7 +621,7 @@ func (d *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesOutputReference) Inte
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -636,7 +635,7 @@ func (d *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesOutputReference) PutC
 	_jsii_.InvokeVoid(
 		d,
 		"putConversationSuccess",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -647,7 +646,7 @@ func (d *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesOutputReference) PutL
 	_jsii_.InvokeVoid(
 		d,
 		"putLiveAgentHandoff",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -658,7 +657,7 @@ func (d *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesOutputReference) PutO
 	_jsii_.InvokeVoid(
 		d,
 		"putOutputAudioText",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -669,7 +668,7 @@ func (d *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesOutputReference) PutP
 	_jsii_.InvokeVoid(
 		d,
 		"putPlayAudio",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -680,7 +679,7 @@ func (d *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesOutputReference) PutT
 	_jsii_.InvokeVoid(
 		d,
 		"putTelephonyTransferCall",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -691,7 +690,7 @@ func (d *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesOutputReference) PutT
 	_jsii_.InvokeVoid(
 		d,
 		"putText",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -759,16 +758,16 @@ func (d *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesOutputReference) Rese
 	)
 }
 
-func (d *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -787,4 +786,3 @@ func (d *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesOutputReference) ToSt
 
 	return returns
 }
-

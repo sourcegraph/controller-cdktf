@@ -12,9 +12,9 @@ type AlloydbInstanceClientConnectionConfigOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -29,9 +29,9 @@ type AlloydbInstanceClientConnectionConfigOutputReference interface {
 	Fqn() *string
 	InternalValue() *AlloydbInstanceClientConnectionConfig
 	SetInternalValue(val *AlloydbInstanceClientConnectionConfig)
-	RequireConnectors() interface{}
-	SetRequireConnectors(val interface{})
-	RequireConnectorsInput() interface{}
+	RequireConnectors() any
+	SetRequireConnectors(val any)
+	RequireConnectorsInput() any
 	SslConfig() AlloydbInstanceClientConnectionConfigSslConfigOutputReference
 	SslConfigInput() *AlloydbInstanceClientConnectionConfigSslConfig
 	// Experimental.
@@ -45,7 +45,7 @@ type AlloydbInstanceClientConnectionConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type AlloydbInstanceClientConnectionConfigOutputReference interface {
 	ResetSslConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_AlloydbInstanceClientConnectionConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_AlloydbInstanceClientConnectionConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AlloydbInstanceClientConnectionConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -134,8 +134,8 @@ func (j *jsiiProxy_AlloydbInstanceClientConnectionConfigOutputReference) Interna
 	return returns
 }
 
-func (j *jsiiProxy_AlloydbInstanceClientConnectionConfigOutputReference) RequireConnectors() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AlloydbInstanceClientConnectionConfigOutputReference) RequireConnectors() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requireConnectors",
@@ -144,8 +144,8 @@ func (j *jsiiProxy_AlloydbInstanceClientConnectionConfigOutputReference) Require
 	return returns
 }
 
-func (j *jsiiProxy_AlloydbInstanceClientConnectionConfigOutputReference) RequireConnectorsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AlloydbInstanceClientConnectionConfigOutputReference) RequireConnectorsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requireConnectorsInput",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_AlloydbInstanceClientConnectionConfigOutputReference) Terrafo
 	return returns
 }
 
-
 func NewAlloydbInstanceClientConnectionConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AlloydbInstanceClientConnectionConfigOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewAlloydbInstanceClientConnectionConfigOutputReference(terraformResource c
 
 	_jsii_.Create(
 		"@cdktf/provider-google.alloydbInstance.AlloydbInstanceClientConnectionConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewAlloydbInstanceClientConnectionConfigOutputReference_Override(a AlloydbI
 
 	_jsii_.Create(
 		"@cdktf/provider-google.alloydbInstance.AlloydbInstanceClientConnectionConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AlloydbInstanceClientConnectionConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AlloydbInstanceClientConnectionConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_AlloydbInstanceClientConnectionConfigOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_AlloydbInstanceClientConnectionConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AlloydbInstanceClientConnectionConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_AlloydbInstanceClientConnectionConfigOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_AlloydbInstanceClientConnectionConfigOutputReference)SetInternalValue(val *AlloydbInstanceClientConnectionConfig) {
+func (j *jsiiProxy_AlloydbInstanceClientConnectionConfigOutputReference) SetInternalValue(val *AlloydbInstanceClientConnectionConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_AlloydbInstanceClientConnectionConfigOutputReference)SetInter
 	)
 }
 
-func (j *jsiiProxy_AlloydbInstanceClientConnectionConfigOutputReference)SetRequireConnectors(val interface{}) {
+func (j *jsiiProxy_AlloydbInstanceClientConnectionConfigOutputReference) SetRequireConnectors(val any) {
 	if err := j.validateSetRequireConnectorsParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_AlloydbInstanceClientConnectionConfigOutputReference)SetRequi
 	)
 }
 
-func (j *jsiiProxy_AlloydbInstanceClientConnectionConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AlloydbInstanceClientConnectionConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_AlloydbInstanceClientConnectionConfigOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_AlloydbInstanceClientConnectionConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AlloydbInstanceClientConnectionConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,16 +300,16 @@ func (a *jsiiProxy_AlloydbInstanceClientConnectionConfigOutputReference) Compute
 	return returns
 }
 
-func (a *jsiiProxy_AlloydbInstanceClientConnectionConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AlloydbInstanceClientConnectionConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -326,7 +325,7 @@ func (a *jsiiProxy_AlloydbInstanceClientConnectionConfigOutputReference) GetBool
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -342,7 +341,7 @@ func (a *jsiiProxy_AlloydbInstanceClientConnectionConfigOutputReference) GetBool
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -358,7 +357,7 @@ func (a *jsiiProxy_AlloydbInstanceClientConnectionConfigOutputReference) GetList
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -374,7 +373,7 @@ func (a *jsiiProxy_AlloydbInstanceClientConnectionConfigOutputReference) GetNumb
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -390,7 +389,7 @@ func (a *jsiiProxy_AlloydbInstanceClientConnectionConfigOutputReference) GetNumb
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -406,7 +405,7 @@ func (a *jsiiProxy_AlloydbInstanceClientConnectionConfigOutputReference) GetNumb
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -422,7 +421,7 @@ func (a *jsiiProxy_AlloydbInstanceClientConnectionConfigOutputReference) GetStri
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -438,7 +437,7 @@ func (a *jsiiProxy_AlloydbInstanceClientConnectionConfigOutputReference) GetStri
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -467,7 +466,7 @@ func (a *jsiiProxy_AlloydbInstanceClientConnectionConfigOutputReference) Interpo
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -481,7 +480,7 @@ func (a *jsiiProxy_AlloydbInstanceClientConnectionConfigOutputReference) PutSslC
 	_jsii_.InvokeVoid(
 		a,
 		"putSslConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -501,16 +500,16 @@ func (a *jsiiProxy_AlloydbInstanceClientConnectionConfigOutputReference) ResetSs
 	)
 }
 
-func (a *jsiiProxy_AlloydbInstanceClientConnectionConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AlloydbInstanceClientConnectionConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (a *jsiiProxy_AlloydbInstanceClientConnectionConfigOutputReference) ToStrin
 
 	return returns
 }
-

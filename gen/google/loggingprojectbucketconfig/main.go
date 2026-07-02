@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig",
-		reflect.TypeOf((*LoggingProjectBucketConfig)(nil)).Elem(),
+		reflect.TypeFor[LoggingProjectBucketConfig](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -84,7 +84,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LoggingProjectBucketConfig{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -92,11 +92,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigCmekSettings",
-		reflect.TypeOf((*LoggingProjectBucketConfigCmekSettings)(nil)).Elem(),
+		reflect.TypeFor[LoggingProjectBucketConfigCmekSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigCmekSettingsOutputReference",
-		reflect.TypeOf((*LoggingProjectBucketConfigCmekSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LoggingProjectBucketConfigCmekSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -125,7 +125,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LoggingProjectBucketConfigCmekSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -133,15 +133,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigConfig",
-		reflect.TypeOf((*LoggingProjectBucketConfigConfig)(nil)).Elem(),
+		reflect.TypeFor[LoggingProjectBucketConfigConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigIndexConfigs",
-		reflect.TypeOf((*LoggingProjectBucketConfigIndexConfigs)(nil)).Elem(),
+		reflect.TypeFor[LoggingProjectBucketConfigIndexConfigs](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigIndexConfigsList",
-		reflect.TypeOf((*LoggingProjectBucketConfigIndexConfigsList)(nil)).Elem(),
+		reflect.TypeFor[LoggingProjectBucketConfigIndexConfigsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -155,7 +155,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LoggingProjectBucketConfigIndexConfigsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -163,7 +163,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigIndexConfigsOutputReference",
-		reflect.TypeOf((*LoggingProjectBucketConfigIndexConfigsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LoggingProjectBucketConfigIndexConfigsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -191,7 +191,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LoggingProjectBucketConfigIndexConfigsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

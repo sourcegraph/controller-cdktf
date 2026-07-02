@@ -12,9 +12,9 @@ type BillingBudgetAllUpdatesRuleOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,12 +25,12 @@ type BillingBudgetAllUpdatesRuleOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	DisableDefaultIamRecipients() interface{}
-	SetDisableDefaultIamRecipients(val interface{})
-	DisableDefaultIamRecipientsInput() interface{}
-	EnableProjectLevelRecipients() interface{}
-	SetEnableProjectLevelRecipients(val interface{})
-	EnableProjectLevelRecipientsInput() interface{}
+	DisableDefaultIamRecipients() any
+	SetDisableDefaultIamRecipients(val any)
+	DisableDefaultIamRecipientsInput() any
+	EnableProjectLevelRecipients() any
+	SetEnableProjectLevelRecipients(val any)
+	EnableProjectLevelRecipientsInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *BillingBudgetAllUpdatesRule
@@ -55,7 +55,7 @@ type BillingBudgetAllUpdatesRuleOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -83,7 +83,7 @@ type BillingBudgetAllUpdatesRuleOutputReference interface {
 	ResetSchemaVersion()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -96,8 +96,8 @@ type jsiiProxy_BillingBudgetAllUpdatesRuleOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_BillingBudgetAllUpdatesRuleOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BillingBudgetAllUpdatesRuleOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -126,8 +126,8 @@ func (j *jsiiProxy_BillingBudgetAllUpdatesRuleOutputReference) CreationStack() *
 	return returns
 }
 
-func (j *jsiiProxy_BillingBudgetAllUpdatesRuleOutputReference) DisableDefaultIamRecipients() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BillingBudgetAllUpdatesRuleOutputReference) DisableDefaultIamRecipients() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableDefaultIamRecipients",
@@ -136,8 +136,8 @@ func (j *jsiiProxy_BillingBudgetAllUpdatesRuleOutputReference) DisableDefaultIam
 	return returns
 }
 
-func (j *jsiiProxy_BillingBudgetAllUpdatesRuleOutputReference) DisableDefaultIamRecipientsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BillingBudgetAllUpdatesRuleOutputReference) DisableDefaultIamRecipientsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableDefaultIamRecipientsInput",
@@ -146,8 +146,8 @@ func (j *jsiiProxy_BillingBudgetAllUpdatesRuleOutputReference) DisableDefaultIam
 	return returns
 }
 
-func (j *jsiiProxy_BillingBudgetAllUpdatesRuleOutputReference) EnableProjectLevelRecipients() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BillingBudgetAllUpdatesRuleOutputReference) EnableProjectLevelRecipients() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableProjectLevelRecipients",
@@ -156,8 +156,8 @@ func (j *jsiiProxy_BillingBudgetAllUpdatesRuleOutputReference) EnableProjectLeve
 	return returns
 }
 
-func (j *jsiiProxy_BillingBudgetAllUpdatesRuleOutputReference) EnableProjectLevelRecipientsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BillingBudgetAllUpdatesRuleOutputReference) EnableProjectLevelRecipientsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableProjectLevelRecipientsInput",
@@ -266,7 +266,6 @@ func (j *jsiiProxy_BillingBudgetAllUpdatesRuleOutputReference) TerraformResource
 	return returns
 }
 
-
 func NewBillingBudgetAllUpdatesRuleOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) BillingBudgetAllUpdatesRuleOutputReference {
 	_init_.Initialize()
 
@@ -277,7 +276,7 @@ func NewBillingBudgetAllUpdatesRuleOutputReference(terraformResource cdktf.IInte
 
 	_jsii_.Create(
 		"@cdktf/provider-google.billingBudget.BillingBudgetAllUpdatesRuleOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -289,12 +288,12 @@ func NewBillingBudgetAllUpdatesRuleOutputReference_Override(b BillingBudgetAllUp
 
 	_jsii_.Create(
 		"@cdktf/provider-google.billingBudget.BillingBudgetAllUpdatesRuleOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		b,
 	)
 }
 
-func (j *jsiiProxy_BillingBudgetAllUpdatesRuleOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_BillingBudgetAllUpdatesRuleOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -305,7 +304,7 @@ func (j *jsiiProxy_BillingBudgetAllUpdatesRuleOutputReference)SetComplexObjectIn
 	)
 }
 
-func (j *jsiiProxy_BillingBudgetAllUpdatesRuleOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_BillingBudgetAllUpdatesRuleOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -316,7 +315,7 @@ func (j *jsiiProxy_BillingBudgetAllUpdatesRuleOutputReference)SetComplexObjectIs
 	)
 }
 
-func (j *jsiiProxy_BillingBudgetAllUpdatesRuleOutputReference)SetDisableDefaultIamRecipients(val interface{}) {
+func (j *jsiiProxy_BillingBudgetAllUpdatesRuleOutputReference) SetDisableDefaultIamRecipients(val any) {
 	if err := j.validateSetDisableDefaultIamRecipientsParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,7 +326,7 @@ func (j *jsiiProxy_BillingBudgetAllUpdatesRuleOutputReference)SetDisableDefaultI
 	)
 }
 
-func (j *jsiiProxy_BillingBudgetAllUpdatesRuleOutputReference)SetEnableProjectLevelRecipients(val interface{}) {
+func (j *jsiiProxy_BillingBudgetAllUpdatesRuleOutputReference) SetEnableProjectLevelRecipients(val any) {
 	if err := j.validateSetEnableProjectLevelRecipientsParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,7 +337,7 @@ func (j *jsiiProxy_BillingBudgetAllUpdatesRuleOutputReference)SetEnableProjectLe
 	)
 }
 
-func (j *jsiiProxy_BillingBudgetAllUpdatesRuleOutputReference)SetInternalValue(val *BillingBudgetAllUpdatesRule) {
+func (j *jsiiProxy_BillingBudgetAllUpdatesRuleOutputReference) SetInternalValue(val *BillingBudgetAllUpdatesRule) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,7 +348,7 @@ func (j *jsiiProxy_BillingBudgetAllUpdatesRuleOutputReference)SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_BillingBudgetAllUpdatesRuleOutputReference)SetMonitoringNotificationChannels(val *[]*string) {
+func (j *jsiiProxy_BillingBudgetAllUpdatesRuleOutputReference) SetMonitoringNotificationChannels(val *[]*string) {
 	if err := j.validateSetMonitoringNotificationChannelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,7 +359,7 @@ func (j *jsiiProxy_BillingBudgetAllUpdatesRuleOutputReference)SetMonitoringNotif
 	)
 }
 
-func (j *jsiiProxy_BillingBudgetAllUpdatesRuleOutputReference)SetPubsubTopic(val *string) {
+func (j *jsiiProxy_BillingBudgetAllUpdatesRuleOutputReference) SetPubsubTopic(val *string) {
 	if err := j.validateSetPubsubTopicParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,7 +370,7 @@ func (j *jsiiProxy_BillingBudgetAllUpdatesRuleOutputReference)SetPubsubTopic(val
 	)
 }
 
-func (j *jsiiProxy_BillingBudgetAllUpdatesRuleOutputReference)SetSchemaVersion(val *string) {
+func (j *jsiiProxy_BillingBudgetAllUpdatesRuleOutputReference) SetSchemaVersion(val *string) {
 	if err := j.validateSetSchemaVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,7 +381,7 @@ func (j *jsiiProxy_BillingBudgetAllUpdatesRuleOutputReference)SetSchemaVersion(v
 	)
 }
 
-func (j *jsiiProxy_BillingBudgetAllUpdatesRuleOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_BillingBudgetAllUpdatesRuleOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,7 +392,7 @@ func (j *jsiiProxy_BillingBudgetAllUpdatesRuleOutputReference)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_BillingBudgetAllUpdatesRuleOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BillingBudgetAllUpdatesRuleOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,16 +416,16 @@ func (b *jsiiProxy_BillingBudgetAllUpdatesRuleOutputReference) ComputeFqn() *str
 	return returns
 }
 
-func (b *jsiiProxy_BillingBudgetAllUpdatesRuleOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (b *jsiiProxy_BillingBudgetAllUpdatesRuleOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := b.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -442,7 +441,7 @@ func (b *jsiiProxy_BillingBudgetAllUpdatesRuleOutputReference) GetBooleanAttribu
 	_jsii_.Invoke(
 		b,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -458,7 +457,7 @@ func (b *jsiiProxy_BillingBudgetAllUpdatesRuleOutputReference) GetBooleanMapAttr
 	_jsii_.Invoke(
 		b,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -474,7 +473,7 @@ func (b *jsiiProxy_BillingBudgetAllUpdatesRuleOutputReference) GetListAttribute(
 	_jsii_.Invoke(
 		b,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -490,7 +489,7 @@ func (b *jsiiProxy_BillingBudgetAllUpdatesRuleOutputReference) GetNumberAttribut
 	_jsii_.Invoke(
 		b,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -506,7 +505,7 @@ func (b *jsiiProxy_BillingBudgetAllUpdatesRuleOutputReference) GetNumberListAttr
 	_jsii_.Invoke(
 		b,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -522,7 +521,7 @@ func (b *jsiiProxy_BillingBudgetAllUpdatesRuleOutputReference) GetNumberMapAttri
 	_jsii_.Invoke(
 		b,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -538,7 +537,7 @@ func (b *jsiiProxy_BillingBudgetAllUpdatesRuleOutputReference) GetStringAttribut
 	_jsii_.Invoke(
 		b,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -554,7 +553,7 @@ func (b *jsiiProxy_BillingBudgetAllUpdatesRuleOutputReference) GetStringMapAttri
 	_jsii_.Invoke(
 		b,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -583,7 +582,7 @@ func (b *jsiiProxy_BillingBudgetAllUpdatesRuleOutputReference) InterpolationForA
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -630,16 +629,16 @@ func (b *jsiiProxy_BillingBudgetAllUpdatesRuleOutputReference) ResetSchemaVersio
 	)
 }
 
-func (b *jsiiProxy_BillingBudgetAllUpdatesRuleOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (b *jsiiProxy_BillingBudgetAllUpdatesRuleOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := b.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -658,4 +657,3 @@ func (b *jsiiProxy_BillingBudgetAllUpdatesRuleOutputReference) ToString() *strin
 
 	return returns
 }
-

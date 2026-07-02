@@ -106,7 +106,7 @@ func (j *jsiiProxy_CloudRunV2WorkerPoolBinaryAuthorizationOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_CloudRunV2WorkerPoolBinaryAuthorizationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudRunV2WorkerPoolBinaryAuthorizationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -203,7 +203,7 @@ func (j *jsiiProxy_CloudRunV2WorkerPoolBinaryAuthorizationOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_CloudRunV2WorkerPoolBinaryAuthorizationOutputReference) validateSetUseDefaultParameters(val interface{}) error {
+func (j *jsiiProxy_CloudRunV2WorkerPoolBinaryAuthorizationOutputReference) validateSetUseDefaultParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -234,4 +234,3 @@ func validateNewCloudRunV2WorkerPoolBinaryAuthorizationOutputReferenceParameters
 
 	return nil
 }
-

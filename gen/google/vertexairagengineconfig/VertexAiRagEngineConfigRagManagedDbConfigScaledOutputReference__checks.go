@@ -98,7 +98,7 @@ func (v *jsiiProxy_VertexAiRagEngineConfigRagManagedDbConfigScaledOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_VertexAiRagEngineConfigRagManagedDbConfigScaledOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_VertexAiRagEngineConfigRagManagedDbConfigScaledOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewVertexAiRagEngineConfigRagManagedDbConfigScaledOutputReferencePa
 
 	return nil
 }
-

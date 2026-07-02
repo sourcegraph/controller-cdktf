@@ -12,9 +12,9 @@ type EventarcPipelineTimeoutsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,8 +33,8 @@ type EventarcPipelineTimeoutsOutputReference interface {
 	DeleteInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -49,7 +49,7 @@ type EventarcPipelineTimeoutsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type EventarcPipelineTimeoutsOutputReference interface {
 	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_EventarcPipelineTimeoutsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_EventarcPipelineTimeoutsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EventarcPipelineTimeoutsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_EventarcPipelineTimeoutsOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_EventarcPipelineTimeoutsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EventarcPipelineTimeoutsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_EventarcPipelineTimeoutsOutputReference) UpdateInput() *strin
 	return returns
 }
 
-
 func NewEventarcPipelineTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) EventarcPipelineTimeoutsOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewEventarcPipelineTimeoutsOutputReference(terraformResource cdktf.IInterpo
 
 	_jsii_.Create(
 		"@cdktf/provider-google.eventarcPipeline.EventarcPipelineTimeoutsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewEventarcPipelineTimeoutsOutputReference_Override(e EventarcPipelineTimeo
 
 	_jsii_.Create(
 		"@cdktf/provider-google.eventarcPipeline.EventarcPipelineTimeoutsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		e,
 	)
 }
 
-func (j *jsiiProxy_EventarcPipelineTimeoutsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_EventarcPipelineTimeoutsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_EventarcPipelineTimeoutsOutputReference)SetComplexObjectIndex
 	)
 }
 
-func (j *jsiiProxy_EventarcPipelineTimeoutsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_EventarcPipelineTimeoutsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_EventarcPipelineTimeoutsOutputReference)SetComplexObjectIsFro
 	)
 }
 
-func (j *jsiiProxy_EventarcPipelineTimeoutsOutputReference)SetCreate(val *string) {
+func (j *jsiiProxy_EventarcPipelineTimeoutsOutputReference) SetCreate(val *string) {
 	if err := j.validateSetCreateParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_EventarcPipelineTimeoutsOutputReference)SetCreate(val *string
 	)
 }
 
-func (j *jsiiProxy_EventarcPipelineTimeoutsOutputReference)SetDelete(val *string) {
+func (j *jsiiProxy_EventarcPipelineTimeoutsOutputReference) SetDelete(val *string) {
 	if err := j.validateSetDeleteParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_EventarcPipelineTimeoutsOutputReference)SetDelete(val *string
 	)
 }
 
-func (j *jsiiProxy_EventarcPipelineTimeoutsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_EventarcPipelineTimeoutsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_EventarcPipelineTimeoutsOutputReference)SetInternalValue(val 
 	)
 }
 
-func (j *jsiiProxy_EventarcPipelineTimeoutsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_EventarcPipelineTimeoutsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_EventarcPipelineTimeoutsOutputReference)SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_EventarcPipelineTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EventarcPipelineTimeoutsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_EventarcPipelineTimeoutsOutputReference)SetTerraformResource(
 	)
 }
 
-func (j *jsiiProxy_EventarcPipelineTimeoutsOutputReference)SetUpdate(val *string) {
+func (j *jsiiProxy_EventarcPipelineTimeoutsOutputReference) SetUpdate(val *string) {
 	if err := j.validateSetUpdateParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (e *jsiiProxy_EventarcPipelineTimeoutsOutputReference) ComputeFqn() *string
 	return returns
 }
 
-func (e *jsiiProxy_EventarcPipelineTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_EventarcPipelineTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (e *jsiiProxy_EventarcPipelineTimeoutsOutputReference) GetBooleanAttribute(
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (e *jsiiProxy_EventarcPipelineTimeoutsOutputReference) GetBooleanMapAttribu
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (e *jsiiProxy_EventarcPipelineTimeoutsOutputReference) GetListAttribute(ter
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (e *jsiiProxy_EventarcPipelineTimeoutsOutputReference) GetNumberAttribute(t
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (e *jsiiProxy_EventarcPipelineTimeoutsOutputReference) GetNumberListAttribu
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (e *jsiiProxy_EventarcPipelineTimeoutsOutputReference) GetNumberMapAttribut
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (e *jsiiProxy_EventarcPipelineTimeoutsOutputReference) GetStringAttribute(t
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (e *jsiiProxy_EventarcPipelineTimeoutsOutputReference) GetStringMapAttribut
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (e *jsiiProxy_EventarcPipelineTimeoutsOutputReference) InterpolationForAttr
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (e *jsiiProxy_EventarcPipelineTimeoutsOutputReference) ResetUpdate() {
 	)
 }
 
-func (e *jsiiProxy_EventarcPipelineTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (e *jsiiProxy_EventarcPipelineTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := e.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (e *jsiiProxy_EventarcPipelineTimeoutsOutputReference) ToString() *string {
 
 	return returns
 }
-

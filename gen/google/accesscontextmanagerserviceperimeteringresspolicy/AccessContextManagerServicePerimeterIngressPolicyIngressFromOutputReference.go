@@ -12,9 +12,9 @@ type AccessContextManagerServicePerimeterIngressPolicyIngressFromOutputReference
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -36,7 +36,7 @@ type AccessContextManagerServicePerimeterIngressPolicyIngressFromOutputReference
 	InternalValue() *AccessContextManagerServicePerimeterIngressPolicyIngressFrom
 	SetInternalValue(val *AccessContextManagerServicePerimeterIngressPolicyIngressFrom)
 	Sources() AccessContextManagerServicePerimeterIngressPolicyIngressFromSourcesList
-	SourcesInput() interface{}
+	SourcesInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -48,7 +48,7 @@ type AccessContextManagerServicePerimeterIngressPolicyIngressFromOutputReference
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -69,13 +69,13 @@ type AccessContextManagerServicePerimeterIngressPolicyIngressFromOutputReference
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutSources(value interface{})
+	PutSources(value any)
 	ResetIdentities()
 	ResetIdentityType()
 	ResetSources()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_AccessContextManagerServicePerimeterIngressPolicyIngressFromOutpu
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_AccessContextManagerServicePerimeterIngressPolicyIngressFromOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccessContextManagerServicePerimeterIngressPolicyIngressFromOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -188,8 +188,8 @@ func (j *jsiiProxy_AccessContextManagerServicePerimeterIngressPolicyIngressFromO
 	return returns
 }
 
-func (j *jsiiProxy_AccessContextManagerServicePerimeterIngressPolicyIngressFromOutputReference) SourcesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccessContextManagerServicePerimeterIngressPolicyIngressFromOutputReference) SourcesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"sourcesInput",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_AccessContextManagerServicePerimeterIngressPolicyIngressFromO
 	return returns
 }
 
-
 func NewAccessContextManagerServicePerimeterIngressPolicyIngressFromOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AccessContextManagerServicePerimeterIngressPolicyIngressFromOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewAccessContextManagerServicePerimeterIngressPolicyIngressFromOutputRefere
 
 	_jsii_.Create(
 		"@cdktf/provider-google.accessContextManagerServicePerimeterIngressPolicy.AccessContextManagerServicePerimeterIngressPolicyIngressFromOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewAccessContextManagerServicePerimeterIngressPolicyIngressFromOutputRefere
 
 	_jsii_.Create(
 		"@cdktf/provider-google.accessContextManagerServicePerimeterIngressPolicy.AccessContextManagerServicePerimeterIngressPolicyIngressFromOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AccessContextManagerServicePerimeterIngressPolicyIngressFromOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AccessContextManagerServicePerimeterIngressPolicyIngressFromOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_AccessContextManagerServicePerimeterIngressPolicyIngressFromO
 	)
 }
 
-func (j *jsiiProxy_AccessContextManagerServicePerimeterIngressPolicyIngressFromOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AccessContextManagerServicePerimeterIngressPolicyIngressFromOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_AccessContextManagerServicePerimeterIngressPolicyIngressFromO
 	)
 }
 
-func (j *jsiiProxy_AccessContextManagerServicePerimeterIngressPolicyIngressFromOutputReference)SetIdentities(val *[]*string) {
+func (j *jsiiProxy_AccessContextManagerServicePerimeterIngressPolicyIngressFromOutputReference) SetIdentities(val *[]*string) {
 	if err := j.validateSetIdentitiesParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_AccessContextManagerServicePerimeterIngressPolicyIngressFromO
 	)
 }
 
-func (j *jsiiProxy_AccessContextManagerServicePerimeterIngressPolicyIngressFromOutputReference)SetIdentityType(val *string) {
+func (j *jsiiProxy_AccessContextManagerServicePerimeterIngressPolicyIngressFromOutputReference) SetIdentityType(val *string) {
 	if err := j.validateSetIdentityTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_AccessContextManagerServicePerimeterIngressPolicyIngressFromO
 	)
 }
 
-func (j *jsiiProxy_AccessContextManagerServicePerimeterIngressPolicyIngressFromOutputReference)SetInternalValue(val *AccessContextManagerServicePerimeterIngressPolicyIngressFrom) {
+func (j *jsiiProxy_AccessContextManagerServicePerimeterIngressPolicyIngressFromOutputReference) SetInternalValue(val *AccessContextManagerServicePerimeterIngressPolicyIngressFrom) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_AccessContextManagerServicePerimeterIngressPolicyIngressFromO
 	)
 }
 
-func (j *jsiiProxy_AccessContextManagerServicePerimeterIngressPolicyIngressFromOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AccessContextManagerServicePerimeterIngressPolicyIngressFromOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_AccessContextManagerServicePerimeterIngressPolicyIngressFromO
 	)
 }
 
-func (j *jsiiProxy_AccessContextManagerServicePerimeterIngressPolicyIngressFromOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AccessContextManagerServicePerimeterIngressPolicyIngressFromOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,16 +335,16 @@ func (a *jsiiProxy_AccessContextManagerServicePerimeterIngressPolicyIngressFromO
 	return returns
 }
 
-func (a *jsiiProxy_AccessContextManagerServicePerimeterIngressPolicyIngressFromOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AccessContextManagerServicePerimeterIngressPolicyIngressFromOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -361,7 +360,7 @@ func (a *jsiiProxy_AccessContextManagerServicePerimeterIngressPolicyIngressFromO
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -377,7 +376,7 @@ func (a *jsiiProxy_AccessContextManagerServicePerimeterIngressPolicyIngressFromO
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -393,7 +392,7 @@ func (a *jsiiProxy_AccessContextManagerServicePerimeterIngressPolicyIngressFromO
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -409,7 +408,7 @@ func (a *jsiiProxy_AccessContextManagerServicePerimeterIngressPolicyIngressFromO
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -425,7 +424,7 @@ func (a *jsiiProxy_AccessContextManagerServicePerimeterIngressPolicyIngressFromO
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -441,7 +440,7 @@ func (a *jsiiProxy_AccessContextManagerServicePerimeterIngressPolicyIngressFromO
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -457,7 +456,7 @@ func (a *jsiiProxy_AccessContextManagerServicePerimeterIngressPolicyIngressFromO
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -473,7 +472,7 @@ func (a *jsiiProxy_AccessContextManagerServicePerimeterIngressPolicyIngressFromO
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -502,21 +501,21 @@ func (a *jsiiProxy_AccessContextManagerServicePerimeterIngressPolicyIngressFromO
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_AccessContextManagerServicePerimeterIngressPolicyIngressFromOutputReference) PutSources(value interface{}) {
+func (a *jsiiProxy_AccessContextManagerServicePerimeterIngressPolicyIngressFromOutputReference) PutSources(value any) {
 	if err := a.validatePutSourcesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"putSources",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -544,16 +543,16 @@ func (a *jsiiProxy_AccessContextManagerServicePerimeterIngressPolicyIngressFromO
 	)
 }
 
-func (a *jsiiProxy_AccessContextManagerServicePerimeterIngressPolicyIngressFromOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AccessContextManagerServicePerimeterIngressPolicyIngressFromOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (a *jsiiProxy_AccessContextManagerServicePerimeterIngressPolicyIngressFromO
 
 	return returns
 }
-

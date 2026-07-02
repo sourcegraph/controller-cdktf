@@ -1,6 +1,5 @@
 package appengineflexibleappversion
 
-
 type AppEngineFlexibleAppVersionDeployment struct {
 	// cloud_build_options block.
 	//
@@ -13,10 +12,9 @@ type AppEngineFlexibleAppVersionDeployment struct {
 	// files block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/app_engine_flexible_app_version#files AppEngineFlexibleAppVersion#files}
-	Files interface{} `field:"optional" json:"files" yaml:"files"`
+	Files any `field:"optional" json:"files" yaml:"files"`
 	// zip block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/app_engine_flexible_app_version#zip AppEngineFlexibleAppVersion#zip}
 	Zip *AppEngineFlexibleAppVersionDeploymentZip `field:"optional" json:"zip" yaml:"zip"`
 }
-

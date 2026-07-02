@@ -34,7 +34,7 @@ func (n *jsiiProxy_NotebooksRuntimeSoftwareConfigKernelsList) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_NotebooksRuntimeSoftwareConfigKernelsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NotebooksRuntimeSoftwareConfigKernelsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewNotebooksRuntimeSoftwareConfigKernelsListParameters(terraformRes
 
 	return nil
 }
-

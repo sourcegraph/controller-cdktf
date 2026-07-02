@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleBillingAccount.DataGoogleBillingAccount",
-		reflect.TypeOf((*DataGoogleBillingAccount)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleBillingAccount](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "billingAccount", GoGetter: "BillingAccount"},
@@ -63,7 +63,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleBillingAccount{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -71,6 +71,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleBillingAccount.DataGoogleBillingAccountConfig",
-		reflect.TypeOf((*DataGoogleBillingAccountConfig)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleBillingAccountConfig](),
 	)
 }

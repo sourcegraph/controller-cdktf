@@ -19,7 +19,7 @@ func (c *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy) validateAddMoveTargetP
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy) validateMoveFromIdPara
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateComputeRegionInstantSnapshotIamPolicy_GenerateConfigForImportParame
 	return nil
 }
 
-func validateComputeRegionInstantSnapshotIamPolicy_IsConstructParameters(x interface{}) error {
+func validateComputeRegionInstantSnapshotIamPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateComputeRegionInstantSnapshotIamPolicy_IsConstructParameters(x inter
 	return nil
 }
 
-func validateComputeRegionInstantSnapshotIamPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateComputeRegionInstantSnapshotIamPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateComputeRegionInstantSnapshotIamPolicy_IsTerraformElementParameters(
 	return nil
 }
 
-func validateComputeRegionInstantSnapshotIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+func validateComputeRegionInstantSnapshotIamPolicy_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateComputeRegionInstantSnapshotIamPolicy_IsTerraformResourceParameters
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy) validateSetConnectionP
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -374,7 +374,7 @@ func (j *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy) validateSetProjectPara
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ComputeRegionInstantSnapshotIamPolicy) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -446,4 +446,3 @@ func validateNewComputeRegionInstantSnapshotIamPolicyParameters(scope constructs
 
 	return nil
 }
-

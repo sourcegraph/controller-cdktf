@@ -12,9 +12,9 @@ type VertexAiReasoningEngineSpecSourceCodeSpecPythonSpecOutputReference interfac
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -52,7 +52,7 @@ type VertexAiReasoningEngineSpecSourceCodeSpecPythonSpecOutputReference interfac
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -79,7 +79,7 @@ type VertexAiReasoningEngineSpecSourceCodeSpecPythonSpecOutputReference interfac
 	ResetVersion()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,8 +92,8 @@ type jsiiProxy_VertexAiReasoningEngineSpecSourceCodeSpecPythonSpecOutputReferenc
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_VertexAiReasoningEngineSpecSourceCodeSpecPythonSpecOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VertexAiReasoningEngineSpecSourceCodeSpecPythonSpecOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -242,7 +242,6 @@ func (j *jsiiProxy_VertexAiReasoningEngineSpecSourceCodeSpecPythonSpecOutputRefe
 	return returns
 }
 
-
 func NewVertexAiReasoningEngineSpecSourceCodeSpecPythonSpecOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) VertexAiReasoningEngineSpecSourceCodeSpecPythonSpecOutputReference {
 	_init_.Initialize()
 
@@ -253,7 +252,7 @@ func NewVertexAiReasoningEngineSpecSourceCodeSpecPythonSpecOutputReference(terra
 
 	_jsii_.Create(
 		"@cdktf/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecSourceCodeSpecPythonSpecOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -265,12 +264,12 @@ func NewVertexAiReasoningEngineSpecSourceCodeSpecPythonSpecOutputReference_Overr
 
 	_jsii_.Create(
 		"@cdktf/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecSourceCodeSpecPythonSpecOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		v,
 	)
 }
 
-func (j *jsiiProxy_VertexAiReasoningEngineSpecSourceCodeSpecPythonSpecOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_VertexAiReasoningEngineSpecSourceCodeSpecPythonSpecOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,7 +280,7 @@ func (j *jsiiProxy_VertexAiReasoningEngineSpecSourceCodeSpecPythonSpecOutputRefe
 	)
 }
 
-func (j *jsiiProxy_VertexAiReasoningEngineSpecSourceCodeSpecPythonSpecOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_VertexAiReasoningEngineSpecSourceCodeSpecPythonSpecOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,7 +291,7 @@ func (j *jsiiProxy_VertexAiReasoningEngineSpecSourceCodeSpecPythonSpecOutputRefe
 	)
 }
 
-func (j *jsiiProxy_VertexAiReasoningEngineSpecSourceCodeSpecPythonSpecOutputReference)SetEntrypointModule(val *string) {
+func (j *jsiiProxy_VertexAiReasoningEngineSpecSourceCodeSpecPythonSpecOutputReference) SetEntrypointModule(val *string) {
 	if err := j.validateSetEntrypointModuleParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_VertexAiReasoningEngineSpecSourceCodeSpecPythonSpecOutputRefe
 	)
 }
 
-func (j *jsiiProxy_VertexAiReasoningEngineSpecSourceCodeSpecPythonSpecOutputReference)SetEntrypointObject(val *string) {
+func (j *jsiiProxy_VertexAiReasoningEngineSpecSourceCodeSpecPythonSpecOutputReference) SetEntrypointObject(val *string) {
 	if err := j.validateSetEntrypointObjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_VertexAiReasoningEngineSpecSourceCodeSpecPythonSpecOutputRefe
 	)
 }
 
-func (j *jsiiProxy_VertexAiReasoningEngineSpecSourceCodeSpecPythonSpecOutputReference)SetInternalValue(val *VertexAiReasoningEngineSpecSourceCodeSpecPythonSpec) {
+func (j *jsiiProxy_VertexAiReasoningEngineSpecSourceCodeSpecPythonSpecOutputReference) SetInternalValue(val *VertexAiReasoningEngineSpecSourceCodeSpecPythonSpec) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_VertexAiReasoningEngineSpecSourceCodeSpecPythonSpecOutputRefe
 	)
 }
 
-func (j *jsiiProxy_VertexAiReasoningEngineSpecSourceCodeSpecPythonSpecOutputReference)SetRequirementsFile(val *string) {
+func (j *jsiiProxy_VertexAiReasoningEngineSpecSourceCodeSpecPythonSpecOutputReference) SetRequirementsFile(val *string) {
 	if err := j.validateSetRequirementsFileParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_VertexAiReasoningEngineSpecSourceCodeSpecPythonSpecOutputRefe
 	)
 }
 
-func (j *jsiiProxy_VertexAiReasoningEngineSpecSourceCodeSpecPythonSpecOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_VertexAiReasoningEngineSpecSourceCodeSpecPythonSpecOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_VertexAiReasoningEngineSpecSourceCodeSpecPythonSpecOutputRefe
 	)
 }
 
-func (j *jsiiProxy_VertexAiReasoningEngineSpecSourceCodeSpecPythonSpecOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_VertexAiReasoningEngineSpecSourceCodeSpecPythonSpecOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -358,7 +357,7 @@ func (j *jsiiProxy_VertexAiReasoningEngineSpecSourceCodeSpecPythonSpecOutputRefe
 	)
 }
 
-func (j *jsiiProxy_VertexAiReasoningEngineSpecSourceCodeSpecPythonSpecOutputReference)SetVersion(val *string) {
+func (j *jsiiProxy_VertexAiReasoningEngineSpecSourceCodeSpecPythonSpecOutputReference) SetVersion(val *string) {
 	if err := j.validateSetVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,16 +381,16 @@ func (v *jsiiProxy_VertexAiReasoningEngineSpecSourceCodeSpecPythonSpecOutputRefe
 	return returns
 }
 
-func (v *jsiiProxy_VertexAiReasoningEngineSpecSourceCodeSpecPythonSpecOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (v *jsiiProxy_VertexAiReasoningEngineSpecSourceCodeSpecPythonSpecOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := v.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		v,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -407,7 +406,7 @@ func (v *jsiiProxy_VertexAiReasoningEngineSpecSourceCodeSpecPythonSpecOutputRefe
 	_jsii_.Invoke(
 		v,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -423,7 +422,7 @@ func (v *jsiiProxy_VertexAiReasoningEngineSpecSourceCodeSpecPythonSpecOutputRefe
 	_jsii_.Invoke(
 		v,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -439,7 +438,7 @@ func (v *jsiiProxy_VertexAiReasoningEngineSpecSourceCodeSpecPythonSpecOutputRefe
 	_jsii_.Invoke(
 		v,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -455,7 +454,7 @@ func (v *jsiiProxy_VertexAiReasoningEngineSpecSourceCodeSpecPythonSpecOutputRefe
 	_jsii_.Invoke(
 		v,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -471,7 +470,7 @@ func (v *jsiiProxy_VertexAiReasoningEngineSpecSourceCodeSpecPythonSpecOutputRefe
 	_jsii_.Invoke(
 		v,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -487,7 +486,7 @@ func (v *jsiiProxy_VertexAiReasoningEngineSpecSourceCodeSpecPythonSpecOutputRefe
 	_jsii_.Invoke(
 		v,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -503,7 +502,7 @@ func (v *jsiiProxy_VertexAiReasoningEngineSpecSourceCodeSpecPythonSpecOutputRefe
 	_jsii_.Invoke(
 		v,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -519,7 +518,7 @@ func (v *jsiiProxy_VertexAiReasoningEngineSpecSourceCodeSpecPythonSpecOutputRefe
 	_jsii_.Invoke(
 		v,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -548,7 +547,7 @@ func (v *jsiiProxy_VertexAiReasoningEngineSpecSourceCodeSpecPythonSpecOutputRefe
 	_jsii_.Invoke(
 		v,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -587,16 +586,16 @@ func (v *jsiiProxy_VertexAiReasoningEngineSpecSourceCodeSpecPythonSpecOutputRefe
 	)
 }
 
-func (v *jsiiProxy_VertexAiReasoningEngineSpecSourceCodeSpecPythonSpecOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (v *jsiiProxy_VertexAiReasoningEngineSpecSourceCodeSpecPythonSpecOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := v.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		v,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -615,4 +614,3 @@ func (v *jsiiProxy_VertexAiReasoningEngineSpecSourceCodeSpecPythonSpecOutputRefe
 
 	return returns
 }
-

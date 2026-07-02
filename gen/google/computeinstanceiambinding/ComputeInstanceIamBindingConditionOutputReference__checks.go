@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeInstanceIamBindingConditionOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInstanceIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInstanceIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewComputeInstanceIamBindingConditionOutputReferenceParameters(terr
 
 	return nil
 }
-

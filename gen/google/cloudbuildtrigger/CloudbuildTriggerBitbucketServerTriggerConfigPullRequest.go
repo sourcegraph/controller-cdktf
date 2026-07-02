@@ -1,6 +1,5 @@
 package cloudbuildtrigger
 
-
 type CloudbuildTriggerBitbucketServerTriggerConfigPullRequest struct {
 	// Regex of branches to match.
 	//
@@ -15,6 +14,5 @@ type CloudbuildTriggerBitbucketServerTriggerConfigPullRequest struct {
 	// If true, branches that do NOT match the git_ref will trigger a build.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuild_trigger#invert_regex CloudbuildTrigger#invert_regex}
-	InvertRegex interface{} `field:"optional" json:"invertRegex" yaml:"invertRegex"`
+	InvertRegex any `field:"optional" json:"invertRegex" yaml:"invertRegex"`
 }
-

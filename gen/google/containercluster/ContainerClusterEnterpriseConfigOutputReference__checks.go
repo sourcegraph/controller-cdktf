@@ -98,7 +98,7 @@ func (c *jsiiProxy_ContainerClusterEnterpriseConfigOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterEnterpriseConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterEnterpriseConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewContainerClusterEnterpriseConfigOutputReferenceParameters(terraf
 
 	return nil
 }
-

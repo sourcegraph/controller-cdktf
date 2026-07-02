@@ -98,7 +98,7 @@ func (n *jsiiProxy_NetworkSecurityMirroringDeploymentGroupConnectedEndpointGroup
 	return nil
 }
 
-func (j *jsiiProxy_NetworkSecurityMirroringDeploymentGroupConnectedEndpointGroupsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkSecurityMirroringDeploymentGroupConnectedEndpointGroupsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewNetworkSecurityMirroringDeploymentGroupConnectedEndpointGroupsOu
 
 	return nil
 }
-

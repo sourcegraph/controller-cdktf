@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataGoogleApphubDiscoveredService) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataGoogleApphubDiscoveredService) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataGoogleApphubDiscoveredService_GenerateConfigForImportParameters
 	return nil
 }
 
-func validateDataGoogleApphubDiscoveredService_IsConstructParameters(x interface{}) error {
+func validateDataGoogleApphubDiscoveredService_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataGoogleApphubDiscoveredService_IsConstructParameters(x interface
 	return nil
 }
 
-func validateDataGoogleApphubDiscoveredService_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataGoogleApphubDiscoveredService_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataGoogleApphubDiscoveredService_IsTerraformDataSourceParameters(x
 	return nil
 }
 
-func validateDataGoogleApphubDiscoveredService_IsTerraformElementParameters(x interface{}) error {
+func validateDataGoogleApphubDiscoveredService_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func validateDataGoogleApphubDiscoveredService_IsTerraformElementParameters(x in
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleApphubDiscoveredService) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleApphubDiscoveredService) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -266,4 +266,3 @@ func validateNewDataGoogleApphubDiscoveredServiceParameters(scope constructs.Con
 
 	return nil
 }
-

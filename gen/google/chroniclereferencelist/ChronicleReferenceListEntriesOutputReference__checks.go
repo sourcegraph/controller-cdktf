@@ -98,7 +98,7 @@ func (c *jsiiProxy_ChronicleReferenceListEntriesOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_ChronicleReferenceListEntriesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ChronicleReferenceListEntriesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ChronicleReferenceListEntriesOutputReference) validateSetComp
 	return nil
 }
 
-func (j *jsiiProxy_ChronicleReferenceListEntriesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ChronicleReferenceListEntriesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewChronicleReferenceListEntriesOutputReferenceParameters(terraform
 
 	return nil
 }
-

@@ -1,6 +1,5 @@
 package vmwareengineprivatecloud
 
-
 type VmwareenginePrivateCloudManagementCluster struct {
 	// The user-provided identifier of the new Cluster.
 	//
@@ -20,10 +19,9 @@ type VmwareenginePrivateCloudManagementCluster struct {
 	// node_type_configs block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_private_cloud#node_type_configs VmwareenginePrivateCloud#node_type_configs}
-	NodeTypeConfigs interface{} `field:"optional" json:"nodeTypeConfigs" yaml:"nodeTypeConfigs"`
+	NodeTypeConfigs any `field:"optional" json:"nodeTypeConfigs" yaml:"nodeTypeConfigs"`
 	// stretched_cluster_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vmwareengine_private_cloud#stretched_cluster_config VmwareenginePrivateCloud#stretched_cluster_config}
 	StretchedClusterConfig *VmwareenginePrivateCloudManagementClusterStretchedClusterConfig `field:"optional" json:"stretchedClusterConfig" yaml:"stretchedClusterConfig"`
 }
-

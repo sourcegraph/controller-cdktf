@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleCloudRunServiceMetadataOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleCloudRunServiceMetadataOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleCloudRunServiceMetadataOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleCloudRunServiceMetadataOutputReferenceParameters(terra
 
 	return nil
 }
-

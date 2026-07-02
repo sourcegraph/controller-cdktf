@@ -10,14 +10,14 @@ import (
 
 type ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference interface {
 	cdktf.ComplexObject
-	AllowExternalTraffic() interface{}
-	SetAllowExternalTraffic(val interface{})
-	AllowExternalTrafficInput() interface{}
+	AllowExternalTraffic() any
+	SetAllowExternalTraffic(val any)
+	AllowExternalTrafficInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -28,12 +28,12 @@ type ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	EnableK8SCertsViaDns() interface{}
-	SetEnableK8SCertsViaDns(val interface{})
-	EnableK8SCertsViaDnsInput() interface{}
-	EnableK8STokensViaDns() interface{}
-	SetEnableK8STokensViaDns(val interface{})
-	EnableK8STokensViaDnsInput() interface{}
+	EnableK8SCertsViaDns() any
+	SetEnableK8SCertsViaDns(val any)
+	EnableK8SCertsViaDnsInput() any
+	EnableK8STokensViaDns() any
+	SetEnableK8STokensViaDns(val any)
+	EnableK8STokensViaDnsInput() any
 	Endpoint() *string
 	SetEndpoint(val *string)
 	EndpointInput() *string
@@ -52,7 +52,7 @@ type ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -79,7 +79,7 @@ type ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference
 	ResetEndpoint()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,8 +92,8 @@ type jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutpu
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference) AllowExternalTraffic() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference) AllowExternalTraffic() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowExternalTraffic",
@@ -102,8 +102,8 @@ func (j *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigO
 	return returns
 }
 
-func (j *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference) AllowExternalTrafficInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference) AllowExternalTrafficInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowExternalTrafficInput",
@@ -112,8 +112,8 @@ func (j *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigO
 	return returns
 }
 
-func (j *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -142,8 +142,8 @@ func (j *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigO
 	return returns
 }
 
-func (j *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference) EnableK8SCertsViaDns() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference) EnableK8SCertsViaDns() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableK8SCertsViaDns",
@@ -152,8 +152,8 @@ func (j *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigO
 	return returns
 }
 
-func (j *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference) EnableK8SCertsViaDnsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference) EnableK8SCertsViaDnsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableK8SCertsViaDnsInput",
@@ -162,8 +162,8 @@ func (j *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigO
 	return returns
 }
 
-func (j *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference) EnableK8STokensViaDns() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference) EnableK8STokensViaDns() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableK8STokensViaDns",
@@ -172,8 +172,8 @@ func (j *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigO
 	return returns
 }
 
-func (j *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference) EnableK8STokensViaDnsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference) EnableK8STokensViaDnsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableK8STokensViaDnsInput",
@@ -242,7 +242,6 @@ func (j *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigO
 	return returns
 }
 
-
 func NewContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference {
 	_init_.Initialize()
 
@@ -253,7 +252,7 @@ func NewContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputRefere
 
 	_jsii_.Create(
 		"@cdktf/provider-google.containerCluster.ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -265,12 +264,12 @@ func NewContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputRefere
 
 	_jsii_.Create(
 		"@cdktf/provider-google.containerCluster.ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference)SetAllowExternalTraffic(val interface{}) {
+func (j *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference) SetAllowExternalTraffic(val any) {
 	if err := j.validateSetAllowExternalTrafficParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,7 +280,7 @@ func (j *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigO
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,7 +291,7 @@ func (j *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigO
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigO
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference)SetEnableK8SCertsViaDns(val interface{}) {
+func (j *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference) SetEnableK8SCertsViaDns(val any) {
 	if err := j.validateSetEnableK8SCertsViaDnsParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigO
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference)SetEnableK8STokensViaDns(val interface{}) {
+func (j *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference) SetEnableK8STokensViaDns(val any) {
 	if err := j.validateSetEnableK8STokensViaDnsParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigO
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference)SetEndpoint(val *string) {
+func (j *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference) SetEndpoint(val *string) {
 	if err := j.validateSetEndpointParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigO
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference)SetInternalValue(val *ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfig) {
+func (j *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference) SetInternalValue(val *ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigO
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -358,7 +357,7 @@ func (j *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigO
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,16 +381,16 @@ func (c *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigO
 	return returns
 }
 
-func (c *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -407,7 +406,7 @@ func (c *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigO
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -423,7 +422,7 @@ func (c *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigO
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -439,7 +438,7 @@ func (c *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigO
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -455,7 +454,7 @@ func (c *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigO
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -471,7 +470,7 @@ func (c *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigO
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -487,7 +486,7 @@ func (c *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigO
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -503,7 +502,7 @@ func (c *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigO
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -519,7 +518,7 @@ func (c *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigO
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -548,7 +547,7 @@ func (c *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigO
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -587,16 +586,16 @@ func (c *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigO
 	)
 }
 
-func (c *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -615,4 +614,3 @@ func (c *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigO
 
 	return returns
 }
-

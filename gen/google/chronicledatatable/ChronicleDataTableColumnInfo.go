@@ -1,6 +1,5 @@
 package chronicledatatable
 
-
 type ChronicleDataTableColumnInfo struct {
 	// Column Index. 0,1,2...
 	//
@@ -26,7 +25,7 @@ type ChronicleDataTableColumnInfo struct {
 	// calculation of the row ID.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_data_table#key_column ChronicleDataTable#key_column}
-	KeyColumn interface{} `field:"optional" json:"keyColumn" yaml:"keyColumn"`
+	KeyColumn any `field:"optional" json:"keyColumn" yaml:"keyColumn"`
 	// Entity proto field path that the column is mapped to.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_data_table#mapped_column_path ChronicleDataTable#mapped_column_path}
@@ -34,6 +33,5 @@ type ChronicleDataTableColumnInfo struct {
 	// Whether the column is a repeated values column.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_data_table#repeated_values ChronicleDataTable#repeated_values}
-	RepeatedValues interface{} `field:"optional" json:"repeatedValues" yaml:"repeatedValues"`
+	RepeatedValues any `field:"optional" json:"repeatedValues" yaml:"repeatedValues"`
 }
-

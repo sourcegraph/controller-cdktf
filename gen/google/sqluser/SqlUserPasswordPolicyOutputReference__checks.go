@@ -106,7 +106,7 @@ func (j *jsiiProxy_SqlUserPasswordPolicyOutputReference) validateSetAllowedFaile
 	return nil
 }
 
-func (j *jsiiProxy_SqlUserPasswordPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SqlUserPasswordPolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_SqlUserPasswordPolicyOutputReference) validateSetComplexObjec
 	return nil
 }
 
-func (j *jsiiProxy_SqlUserPasswordPolicyOutputReference) validateSetEnableFailedAttemptsCheckParameters(val interface{}) error {
+func (j *jsiiProxy_SqlUserPasswordPolicyOutputReference) validateSetEnableFailedAttemptsCheckParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -191,7 +191,7 @@ func (j *jsiiProxy_SqlUserPasswordPolicyOutputReference) validateSetEnableFailed
 	return nil
 }
 
-func (j *jsiiProxy_SqlUserPasswordPolicyOutputReference) validateSetEnablePasswordVerificationParameters(val interface{}) error {
+func (j *jsiiProxy_SqlUserPasswordPolicyOutputReference) validateSetEnablePasswordVerificationParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -254,4 +254,3 @@ func validateNewSqlUserPasswordPolicyOutputReferenceParameters(terraformResource
 
 	return nil
 }
-

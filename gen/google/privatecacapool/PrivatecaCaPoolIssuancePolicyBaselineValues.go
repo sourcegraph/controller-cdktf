@@ -1,6 +1,5 @@
 package privatecacapool
 
-
 type PrivatecaCaPoolIssuancePolicyBaselineValues struct {
 	// ca_options block.
 	//
@@ -13,7 +12,7 @@ type PrivatecaCaPoolIssuancePolicyBaselineValues struct {
 	// additional_extensions block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/privateca_ca_pool#additional_extensions PrivatecaCaPool#additional_extensions}
-	AdditionalExtensions interface{} `field:"optional" json:"additionalExtensions" yaml:"additionalExtensions"`
+	AdditionalExtensions any `field:"optional" json:"additionalExtensions" yaml:"additionalExtensions"`
 	// Describes Online Certificate Status Protocol (OCSP) endpoint addresses that appear in the "Authority Information Access" extension in the certificate.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/privateca_ca_pool#aia_ocsp_servers PrivatecaCaPool#aia_ocsp_servers}
@@ -25,6 +24,5 @@ type PrivatecaCaPoolIssuancePolicyBaselineValues struct {
 	// policy_ids block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/privateca_ca_pool#policy_ids PrivatecaCaPool#policy_ids}
-	PolicyIds interface{} `field:"optional" json:"policyIds" yaml:"policyIds"`
+	PolicyIds any `field:"optional" json:"policyIds" yaml:"policyIds"`
 }
-

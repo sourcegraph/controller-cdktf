@@ -1,6 +1,5 @@
 package cesapp
 
-
 type CesAppDefaultChannelProfile struct {
 	// The type of the channel profile. Possible values: UNKNOWN WEB_UI API TWILIO GOOGLE_TELEPHONY_PLATFORM CONTACT_CENTER_AS_A_SERVICE.
 	//
@@ -12,11 +11,11 @@ type CesAppDefaultChannelProfile struct {
 	// - false: The agent retains automatic control over when the user can interrupt.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_app#disable_barge_in_control CesApp#disable_barge_in_control}
-	DisableBargeInControl interface{} `field:"optional" json:"disableBargeInControl" yaml:"disableBargeInControl"`
+	DisableBargeInControl any `field:"optional" json:"disableBargeInControl" yaml:"disableBargeInControl"`
 	// Whether to disable DTMF (dual-tone multi-frequency).
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_app#disable_dtmf CesApp#disable_dtmf}
-	DisableDtmf interface{} `field:"optional" json:"disableDtmf" yaml:"disableDtmf"`
+	DisableDtmf any `field:"optional" json:"disableDtmf" yaml:"disableDtmf"`
 	// persona_property block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_app#persona_property CesApp#persona_property}
@@ -30,4 +29,3 @@ type CesAppDefaultChannelProfile struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_app#web_widget_config CesApp#web_widget_config}
 	WebWidgetConfig *CesAppDefaultChannelProfileWebWidgetConfig `field:"optional" json:"webWidgetConfig" yaml:"webWidgetConfig"`
 }
-

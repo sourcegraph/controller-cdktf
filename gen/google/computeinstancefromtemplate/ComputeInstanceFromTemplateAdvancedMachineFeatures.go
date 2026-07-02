@@ -1,15 +1,14 @@
 package computeinstancefromtemplate
 
-
 type ComputeInstanceFromTemplateAdvancedMachineFeatures struct {
 	// Whether to enable nested virtualization or not.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_instance_from_template#enable_nested_virtualization ComputeInstanceFromTemplate#enable_nested_virtualization}
-	EnableNestedVirtualization interface{} `field:"optional" json:"enableNestedVirtualization" yaml:"enableNestedVirtualization"`
+	EnableNestedVirtualization any `field:"optional" json:"enableNestedVirtualization" yaml:"enableNestedVirtualization"`
 	// Whether to enable UEFI networking for the instance.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_instance_from_template#enable_uefi_networking ComputeInstanceFromTemplate#enable_uefi_networking}
-	EnableUefiNetworking interface{} `field:"optional" json:"enableUefiNetworking" yaml:"enableUefiNetworking"`
+	EnableUefiNetworking any `field:"optional" json:"enableUefiNetworking" yaml:"enableUefiNetworking"`
 	// The PMU is a hardware component within the CPU core that monitors how the processor runs code.
 	//
 	// Valid values for the level of PMU are "STANDARD", "ENHANCED", and "ARCHITECTURAL".
@@ -33,4 +32,3 @@ type ComputeInstanceFromTemplateAdvancedMachineFeatures struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_instance_from_template#visible_core_count ComputeInstanceFromTemplate#visible_core_count}
 	VisibleCoreCount *float64 `field:"optional" json:"visibleCoreCount" yaml:"visibleCoreCount"`
 }
-

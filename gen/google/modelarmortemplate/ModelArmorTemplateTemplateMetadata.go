@@ -1,6 +1,5 @@
 package modelarmortemplate
 
-
 type ModelArmorTemplateTemplateMetadata struct {
 	// Indicates the custom error code set by the user to be returned to the end user if the LLM response trips Model Armor filters.
 	//
@@ -25,18 +24,17 @@ type ModelArmorTemplateTemplateMetadata struct {
 	// If true, partial detector failures should be ignored.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/model_armor_template#ignore_partial_invocation_failures ModelArmorTemplate#ignore_partial_invocation_failures}
-	IgnorePartialInvocationFailures interface{} `field:"optional" json:"ignorePartialInvocationFailures" yaml:"ignorePartialInvocationFailures"`
+	IgnorePartialInvocationFailures any `field:"optional" json:"ignorePartialInvocationFailures" yaml:"ignorePartialInvocationFailures"`
 	// If true, log sanitize operations.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/model_armor_template#log_sanitize_operations ModelArmorTemplate#log_sanitize_operations}
-	LogSanitizeOperations interface{} `field:"optional" json:"logSanitizeOperations" yaml:"logSanitizeOperations"`
+	LogSanitizeOperations any `field:"optional" json:"logSanitizeOperations" yaml:"logSanitizeOperations"`
 	// If true, log template crud operations.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/model_armor_template#log_template_operations ModelArmorTemplate#log_template_operations}
-	LogTemplateOperations interface{} `field:"optional" json:"logTemplateOperations" yaml:"logTemplateOperations"`
+	LogTemplateOperations any `field:"optional" json:"logTemplateOperations" yaml:"logTemplateOperations"`
 	// multi_language_detection block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/model_armor_template#multi_language_detection ModelArmorTemplate#multi_language_detection}
 	MultiLanguageDetection *ModelArmorTemplateTemplateMetadataMultiLanguageDetection `field:"optional" json:"multiLanguageDetection" yaml:"multiLanguageDetection"`
 }
-

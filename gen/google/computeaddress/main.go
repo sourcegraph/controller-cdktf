@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeAddress.ComputeAddress",
-		reflect.TypeOf((*ComputeAddress)(nil)).Elem(),
+		reflect.TypeFor[ComputeAddress](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -111,7 +111,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "users", GoGetter: "Users"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeAddress{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -119,15 +119,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeAddress.ComputeAddressConfig",
-		reflect.TypeOf((*ComputeAddressConfig)(nil)).Elem(),
+		reflect.TypeFor[ComputeAddressConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeAddress.ComputeAddressTimeouts",
-		reflect.TypeOf((*ComputeAddressTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ComputeAddressTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeAddress.ComputeAddressTimeoutsOutputReference",
-		reflect.TypeOf((*ComputeAddressTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeAddressTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -160,7 +160,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeAddressTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

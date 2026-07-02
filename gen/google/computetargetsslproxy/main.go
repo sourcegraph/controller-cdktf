@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeTargetSslProxy.ComputeTargetSslProxy",
-		reflect.TypeOf((*ComputeTargetSslProxy)(nil)).Elem(),
+		reflect.TypeFor[ComputeTargetSslProxy](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -85,7 +85,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeTargetSslProxy{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -93,15 +93,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeTargetSslProxy.ComputeTargetSslProxyConfig",
-		reflect.TypeOf((*ComputeTargetSslProxyConfig)(nil)).Elem(),
+		reflect.TypeFor[ComputeTargetSslProxyConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeTargetSslProxy.ComputeTargetSslProxyTimeouts",
-		reflect.TypeOf((*ComputeTargetSslProxyTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ComputeTargetSslProxyTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeTargetSslProxy.ComputeTargetSslProxyTimeoutsOutputReference",
-		reflect.TypeOf((*ComputeTargetSslProxyTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeTargetSslProxyTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -134,7 +134,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeTargetSslProxyTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleIamWorkloadIdentityPoolAttestationRulesOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleIamWorkloadIdentityPoolAttestationRulesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleIamWorkloadIdentityPoolAttestationRulesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleIamWorkloadIdentityPoolAttestationRulesOutputReference
 
 	return nil
 }
-

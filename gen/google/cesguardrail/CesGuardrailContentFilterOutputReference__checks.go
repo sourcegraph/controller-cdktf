@@ -122,7 +122,7 @@ func (j *jsiiProxy_CesGuardrailContentFilterOutputReference) validateSetBannedCo
 	return nil
 }
 
-func (j *jsiiProxy_CesGuardrailContentFilterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CesGuardrailContentFilterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -187,7 +187,7 @@ func (j *jsiiProxy_CesGuardrailContentFilterOutputReference) validateSetComplexO
 	return nil
 }
 
-func (j *jsiiProxy_CesGuardrailContentFilterOutputReference) validateSetDisregardDiacriticsParameters(val interface{}) error {
+func (j *jsiiProxy_CesGuardrailContentFilterOutputReference) validateSetDisregardDiacriticsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -250,4 +250,3 @@ func validateNewCesGuardrailContentFilterOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

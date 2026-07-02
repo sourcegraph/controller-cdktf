@@ -98,7 +98,7 @@ func (c *jsiiProxy_ContainerClusterMasterAuthClientCertificateConfigOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterMasterAuthClientCertificateConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterMasterAuthClientCertificateConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_ContainerClusterMasterAuthClientCertificateConfigOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterMasterAuthClientCertificateConfigOutputReference) validateSetIssueClientCertificateParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterMasterAuthClientCertificateConfigOutputReference) validateSetIssueClientCertificateParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -218,4 +218,3 @@ func validateNewContainerClusterMasterAuthClientCertificateConfigOutputReference
 
 	return nil
 }
-

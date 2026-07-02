@@ -98,7 +98,7 @@ func (g *jsiiProxy_GkeHubMembershipIamBindingConditionOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_GkeHubMembershipIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GkeHubMembershipIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGkeHubMembershipIamBindingConditionOutputReferenceParameters(ter
 
 	return nil
 }
-

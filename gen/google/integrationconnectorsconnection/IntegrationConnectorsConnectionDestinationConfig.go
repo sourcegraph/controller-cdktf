@@ -1,6 +1,5 @@
 package integrationconnectorsconnection
 
-
 type IntegrationConnectorsConnectionDestinationConfig struct {
 	// The key is the destination identifier that is supported by the Connector.
 	//
@@ -9,6 +8,5 @@ type IntegrationConnectorsConnectionDestinationConfig struct {
 	// destination block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/integration_connectors_connection#destination IntegrationConnectorsConnection#destination}
-	Destination interface{} `field:"optional" json:"destination" yaml:"destination"`
+	Destination any `field:"optional" json:"destination" yaml:"destination"`
 }
-

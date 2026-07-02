@@ -98,7 +98,7 @@ func (g *jsiiProxy_GkeonpremVmwareClusterAutoRepairConfigOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_GkeonpremVmwareClusterAutoRepairConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GkeonpremVmwareClusterAutoRepairConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_GkeonpremVmwareClusterAutoRepairConfigOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_GkeonpremVmwareClusterAutoRepairConfigOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_GkeonpremVmwareClusterAutoRepairConfigOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -218,4 +218,3 @@ func validateNewGkeonpremVmwareClusterAutoRepairConfigOutputReferenceParameters(
 
 	return nil
 }
-

@@ -13,16 +13,16 @@ type ApigeeTargetServerSSlInfoOutputReference interface {
 	Ciphers() *[]*string
 	SetCiphers(val *[]*string)
 	CiphersInput() *[]*string
-	ClientAuthEnabled() interface{}
-	SetClientAuthEnabled(val interface{})
-	ClientAuthEnabledInput() interface{}
+	ClientAuthEnabled() any
+	SetClientAuthEnabled(val any)
+	ClientAuthEnabledInput() any
 	CommonName() ApigeeTargetServerSSlInfoCommonNameOutputReference
 	CommonNameInput() *ApigeeTargetServerSSlInfoCommonName
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,17 +33,17 @@ type ApigeeTargetServerSSlInfoOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
-	Enforce() interface{}
-	SetEnforce(val interface{})
-	EnforceInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
+	Enforce() any
+	SetEnforce(val any)
+	EnforceInput() any
 	// Experimental.
 	Fqn() *string
-	IgnoreValidationErrors() interface{}
-	SetIgnoreValidationErrors(val interface{})
-	IgnoreValidationErrorsInput() interface{}
+	IgnoreValidationErrors() any
+	SetIgnoreValidationErrors(val any)
+	IgnoreValidationErrorsInput() any
 	InternalValue() *ApigeeTargetServerSSlInfo
 	SetInternalValue(val *ApigeeTargetServerSSlInfo)
 	KeyAlias() *string
@@ -69,7 +69,7 @@ type ApigeeTargetServerSSlInfoOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -102,7 +102,7 @@ type ApigeeTargetServerSSlInfoOutputReference interface {
 	ResetTrustStore()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -135,8 +135,8 @@ func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) CiphersInput() *[]*
 	return returns
 }
 
-func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) ClientAuthEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) ClientAuthEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"clientAuthEnabled",
@@ -145,8 +145,8 @@ func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) ClientAuthEnabled()
 	return returns
 }
 
-func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) ClientAuthEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) ClientAuthEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"clientAuthEnabledInput",
@@ -175,8 +175,8 @@ func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) CommonNameInput() *
 	return returns
 }
 
-func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -205,8 +205,8 @@ func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) CreationStack() *[]
 	return returns
 }
 
-func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -215,8 +215,8 @@ func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) Enabled() interface
 	return returns
 }
 
-func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -225,8 +225,8 @@ func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) EnabledInput() inte
 	return returns
 }
 
-func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) Enforce() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) Enforce() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enforce",
@@ -235,8 +235,8 @@ func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) Enforce() interface
 	return returns
 }
 
-func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) EnforceInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) EnforceInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enforceInput",
@@ -255,8 +255,8 @@ func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) IgnoreValidationErrors() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) IgnoreValidationErrors() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ignoreValidationErrors",
@@ -265,8 +265,8 @@ func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) IgnoreValidationErr
 	return returns
 }
 
-func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) IgnoreValidationErrorsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) IgnoreValidationErrorsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ignoreValidationErrorsInput",
@@ -385,7 +385,6 @@ func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) TrustStoreInput() *
 	return returns
 }
 
-
 func NewApigeeTargetServerSSlInfoOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ApigeeTargetServerSSlInfoOutputReference {
 	_init_.Initialize()
 
@@ -396,7 +395,7 @@ func NewApigeeTargetServerSSlInfoOutputReference(terraformResource cdktf.IInterp
 
 	_jsii_.Create(
 		"@cdktf/provider-google.apigeeTargetServer.ApigeeTargetServerSSlInfoOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -408,12 +407,12 @@ func NewApigeeTargetServerSSlInfoOutputReference_Override(a ApigeeTargetServerSS
 
 	_jsii_.Create(
 		"@cdktf/provider-google.apigeeTargetServer.ApigeeTargetServerSSlInfoOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		a,
 	)
 }
 
-func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference)SetCiphers(val *[]*string) {
+func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) SetCiphers(val *[]*string) {
 	if err := j.validateSetCiphersParameters(val); err != nil {
 		panic(err)
 	}
@@ -424,7 +423,7 @@ func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference)SetCiphers(val *[]*s
 	)
 }
 
-func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference)SetClientAuthEnabled(val interface{}) {
+func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) SetClientAuthEnabled(val any) {
 	if err := j.validateSetClientAuthEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -435,7 +434,7 @@ func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference)SetClientAuthEnabled
 	)
 }
 
-func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -446,7 +445,7 @@ func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference)SetComplexObjectInde
 	)
 }
 
-func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -457,7 +456,7 @@ func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference)SetComplexObjectIsFr
 	)
 }
 
-func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference)SetEnabled(val interface{}) {
+func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -468,7 +467,7 @@ func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference)SetEnabled(val inter
 	)
 }
 
-func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference)SetEnforce(val interface{}) {
+func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) SetEnforce(val any) {
 	if err := j.validateSetEnforceParameters(val); err != nil {
 		panic(err)
 	}
@@ -479,7 +478,7 @@ func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference)SetEnforce(val inter
 	)
 }
 
-func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference)SetIgnoreValidationErrors(val interface{}) {
+func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) SetIgnoreValidationErrors(val any) {
 	if err := j.validateSetIgnoreValidationErrorsParameters(val); err != nil {
 		panic(err)
 	}
@@ -490,7 +489,7 @@ func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference)SetIgnoreValidationE
 	)
 }
 
-func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference)SetInternalValue(val *ApigeeTargetServerSSlInfo) {
+func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) SetInternalValue(val *ApigeeTargetServerSSlInfo) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -501,7 +500,7 @@ func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference)SetInternalValue(val
 	)
 }
 
-func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference)SetKeyAlias(val *string) {
+func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) SetKeyAlias(val *string) {
 	if err := j.validateSetKeyAliasParameters(val); err != nil {
 		panic(err)
 	}
@@ -512,7 +511,7 @@ func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference)SetKeyAlias(val *str
 	)
 }
 
-func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference)SetKeyStore(val *string) {
+func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) SetKeyStore(val *string) {
 	if err := j.validateSetKeyStoreParameters(val); err != nil {
 		panic(err)
 	}
@@ -523,7 +522,7 @@ func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference)SetKeyStore(val *str
 	)
 }
 
-func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference)SetProtocols(val *[]*string) {
+func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) SetProtocols(val *[]*string) {
 	if err := j.validateSetProtocolsParameters(val); err != nil {
 		panic(err)
 	}
@@ -534,7 +533,7 @@ func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference)SetProtocols(val *[]
 	)
 }
 
-func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -545,7 +544,7 @@ func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference)SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -556,7 +555,7 @@ func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference)SetTerraformResource
 	)
 }
 
-func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference)SetTrustStore(val *string) {
+func (j *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) SetTrustStore(val *string) {
 	if err := j.validateSetTrustStoreParameters(val); err != nil {
 		panic(err)
 	}
@@ -580,16 +579,16 @@ func (a *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) ComputeFqn() *strin
 	return returns
 }
 
-func (a *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -605,7 +604,7 @@ func (a *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) GetBooleanAttribute
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -621,7 +620,7 @@ func (a *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) GetBooleanMapAttrib
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -637,7 +636,7 @@ func (a *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) GetListAttribute(te
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -653,7 +652,7 @@ func (a *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) GetNumberAttribute(
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -669,7 +668,7 @@ func (a *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) GetNumberListAttrib
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -685,7 +684,7 @@ func (a *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) GetNumberMapAttribu
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -701,7 +700,7 @@ func (a *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) GetStringAttribute(
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -717,7 +716,7 @@ func (a *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) GetStringMapAttribu
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -746,7 +745,7 @@ func (a *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) InterpolationForAtt
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -760,7 +759,7 @@ func (a *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) PutCommonName(value
 	_jsii_.InvokeVoid(
 		a,
 		"putCommonName",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -836,16 +835,16 @@ func (a *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) ResetTrustStore() {
 	)
 }
 
-func (a *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -864,4 +863,3 @@ func (a *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) ToString() *string 
 
 	return returns
 }
-

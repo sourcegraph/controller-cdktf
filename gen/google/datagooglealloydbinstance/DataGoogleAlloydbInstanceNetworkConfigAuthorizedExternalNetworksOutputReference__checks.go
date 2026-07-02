@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleAlloydbInstanceNetworkConfigAuthorizedExternalNetwo
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleAlloydbInstanceNetworkConfigAuthorizedExternalNetworksOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleAlloydbInstanceNetworkConfigAuthorizedExternalNetworksOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleAlloydbInstanceNetworkConfigAuthorizedExternalNetworks
 
 	return nil
 }
-

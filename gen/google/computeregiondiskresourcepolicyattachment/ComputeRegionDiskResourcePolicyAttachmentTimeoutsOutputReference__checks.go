@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeRegionDiskResourcePolicyAttachmentTimeoutsOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionDiskResourcePolicyAttachmentTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionDiskResourcePolicyAttachmentTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_ComputeRegionDiskResourcePolicyAttachmentTimeoutsOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionDiskResourcePolicyAttachmentTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionDiskResourcePolicyAttachmentTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewComputeRegionDiskResourcePolicyAttachmentTimeoutsOutputReference
 
 	return nil
 }
-

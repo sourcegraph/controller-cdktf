@@ -16,9 +16,9 @@ type CesAppAudioProcessingConfigOutputReference interface {
 	BargeInConfigInput() *CesAppAudioProcessingConfigBargeInConfig
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -37,7 +37,7 @@ type CesAppAudioProcessingConfigOutputReference interface {
 	InternalValue() *CesAppAudioProcessingConfig
 	SetInternalValue(val *CesAppAudioProcessingConfig)
 	SynthesizeSpeechConfigs() CesAppAudioProcessingConfigSynthesizeSpeechConfigsList
-	SynthesizeSpeechConfigsInput() interface{}
+	SynthesizeSpeechConfigsInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -49,7 +49,7 @@ type CesAppAudioProcessingConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -72,14 +72,14 @@ type CesAppAudioProcessingConfigOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAmbientSoundConfig(value *CesAppAudioProcessingConfigAmbientSoundConfig)
 	PutBargeInConfig(value *CesAppAudioProcessingConfigBargeInConfig)
-	PutSynthesizeSpeechConfigs(value interface{})
+	PutSynthesizeSpeechConfigs(value any)
 	ResetAmbientSoundConfig()
 	ResetBargeInConfig()
 	ResetInactivityTimeout()
 	ResetSynthesizeSpeechConfigs()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -132,8 +132,8 @@ func (j *jsiiProxy_CesAppAudioProcessingConfigOutputReference) BargeInConfigInpu
 	return returns
 }
 
-func (j *jsiiProxy_CesAppAudioProcessingConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CesAppAudioProcessingConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -212,8 +212,8 @@ func (j *jsiiProxy_CesAppAudioProcessingConfigOutputReference) SynthesizeSpeechC
 	return returns
 }
 
-func (j *jsiiProxy_CesAppAudioProcessingConfigOutputReference) SynthesizeSpeechConfigsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CesAppAudioProcessingConfigOutputReference) SynthesizeSpeechConfigsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"synthesizeSpeechConfigsInput",
@@ -242,7 +242,6 @@ func (j *jsiiProxy_CesAppAudioProcessingConfigOutputReference) TerraformResource
 	return returns
 }
 
-
 func NewCesAppAudioProcessingConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CesAppAudioProcessingConfigOutputReference {
 	_init_.Initialize()
 
@@ -253,7 +252,7 @@ func NewCesAppAudioProcessingConfigOutputReference(terraformResource cdktf.IInte
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cesApp.CesAppAudioProcessingConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -265,12 +264,12 @@ func NewCesAppAudioProcessingConfigOutputReference_Override(c CesAppAudioProcess
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cesApp.CesAppAudioProcessingConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CesAppAudioProcessingConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CesAppAudioProcessingConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,7 +280,7 @@ func (j *jsiiProxy_CesAppAudioProcessingConfigOutputReference)SetComplexObjectIn
 	)
 }
 
-func (j *jsiiProxy_CesAppAudioProcessingConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CesAppAudioProcessingConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,7 +291,7 @@ func (j *jsiiProxy_CesAppAudioProcessingConfigOutputReference)SetComplexObjectIs
 	)
 }
 
-func (j *jsiiProxy_CesAppAudioProcessingConfigOutputReference)SetInactivityTimeout(val *string) {
+func (j *jsiiProxy_CesAppAudioProcessingConfigOutputReference) SetInactivityTimeout(val *string) {
 	if err := j.validateSetInactivityTimeoutParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_CesAppAudioProcessingConfigOutputReference)SetInactivityTimeo
 	)
 }
 
-func (j *jsiiProxy_CesAppAudioProcessingConfigOutputReference)SetInternalValue(val *CesAppAudioProcessingConfig) {
+func (j *jsiiProxy_CesAppAudioProcessingConfigOutputReference) SetInternalValue(val *CesAppAudioProcessingConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_CesAppAudioProcessingConfigOutputReference)SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_CesAppAudioProcessingConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CesAppAudioProcessingConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_CesAppAudioProcessingConfigOutputReference)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_CesAppAudioProcessingConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CesAppAudioProcessingConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,16 +348,16 @@ func (c *jsiiProxy_CesAppAudioProcessingConfigOutputReference) ComputeFqn() *str
 	return returns
 }
 
-func (c *jsiiProxy_CesAppAudioProcessingConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CesAppAudioProcessingConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -374,7 +373,7 @@ func (c *jsiiProxy_CesAppAudioProcessingConfigOutputReference) GetBooleanAttribu
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -390,7 +389,7 @@ func (c *jsiiProxy_CesAppAudioProcessingConfigOutputReference) GetBooleanMapAttr
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -406,7 +405,7 @@ func (c *jsiiProxy_CesAppAudioProcessingConfigOutputReference) GetListAttribute(
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -422,7 +421,7 @@ func (c *jsiiProxy_CesAppAudioProcessingConfigOutputReference) GetNumberAttribut
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -438,7 +437,7 @@ func (c *jsiiProxy_CesAppAudioProcessingConfigOutputReference) GetNumberListAttr
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -454,7 +453,7 @@ func (c *jsiiProxy_CesAppAudioProcessingConfigOutputReference) GetNumberMapAttri
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -470,7 +469,7 @@ func (c *jsiiProxy_CesAppAudioProcessingConfigOutputReference) GetStringAttribut
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -486,7 +485,7 @@ func (c *jsiiProxy_CesAppAudioProcessingConfigOutputReference) GetStringMapAttri
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -515,7 +514,7 @@ func (c *jsiiProxy_CesAppAudioProcessingConfigOutputReference) InterpolationForA
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -529,7 +528,7 @@ func (c *jsiiProxy_CesAppAudioProcessingConfigOutputReference) PutAmbientSoundCo
 	_jsii_.InvokeVoid(
 		c,
 		"putAmbientSoundConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -540,18 +539,18 @@ func (c *jsiiProxy_CesAppAudioProcessingConfigOutputReference) PutBargeInConfig(
 	_jsii_.InvokeVoid(
 		c,
 		"putBargeInConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_CesAppAudioProcessingConfigOutputReference) PutSynthesizeSpeechConfigs(value interface{}) {
+func (c *jsiiProxy_CesAppAudioProcessingConfigOutputReference) PutSynthesizeSpeechConfigs(value any) {
 	if err := c.validatePutSynthesizeSpeechConfigsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putSynthesizeSpeechConfigs",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -587,16 +586,16 @@ func (c *jsiiProxy_CesAppAudioProcessingConfigOutputReference) ResetSynthesizeSp
 	)
 }
 
-func (c *jsiiProxy_CesAppAudioProcessingConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_CesAppAudioProcessingConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -615,4 +614,3 @@ func (c *jsiiProxy_CesAppAudioProcessingConfigOutputReference) ToString() *strin
 
 	return returns
 }
-

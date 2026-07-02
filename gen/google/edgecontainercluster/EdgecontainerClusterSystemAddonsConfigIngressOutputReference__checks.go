@@ -98,7 +98,7 @@ func (e *jsiiProxy_EdgecontainerClusterSystemAddonsConfigIngressOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_EdgecontainerClusterSystemAddonsConfigIngressOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EdgecontainerClusterSystemAddonsConfigIngressOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_EdgecontainerClusterSystemAddonsConfigIngressOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_EdgecontainerClusterSystemAddonsConfigIngressOutputReference) validateSetDisabledParameters(val interface{}) error {
+func (j *jsiiProxy_EdgecontainerClusterSystemAddonsConfigIngressOutputReference) validateSetDisabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -226,4 +226,3 @@ func validateNewEdgecontainerClusterSystemAddonsConfigIngressOutputReferencePara
 
 	return nil
 }
-

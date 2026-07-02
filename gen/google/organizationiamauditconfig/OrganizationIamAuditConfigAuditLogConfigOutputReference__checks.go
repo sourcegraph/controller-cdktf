@@ -98,7 +98,7 @@ func (o *jsiiProxy_OrganizationIamAuditConfigAuditLogConfigOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_OrganizationIamAuditConfigAuditLogConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_OrganizationIamAuditConfigAuditLogConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_OrganizationIamAuditConfigAuditLogConfigOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_OrganizationIamAuditConfigAuditLogConfigOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_OrganizationIamAuditConfigAuditLogConfigOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewOrganizationIamAuditConfigAuditLogConfigOutputReferenceParameter
 
 	return nil
 }
-

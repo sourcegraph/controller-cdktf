@@ -12,9 +12,9 @@ type DatastreamStreamRuleSetsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -26,11 +26,11 @@ type DatastreamStreamRuleSetsOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	CustomizationRules() DatastreamStreamRuleSetsCustomizationRulesList
-	CustomizationRulesInput() interface{}
+	CustomizationRulesInput() any
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	ObjectFilter() DatastreamStreamRuleSetsObjectFilterOutputReference
 	ObjectFilterInput() *DatastreamStreamRuleSetsObjectFilter
 	// Experimental.
@@ -44,7 +44,7 @@ type DatastreamStreamRuleSetsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -65,11 +65,11 @@ type DatastreamStreamRuleSetsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutCustomizationRules(value interface{})
+	PutCustomizationRules(value any)
 	PutObjectFilter(value *DatastreamStreamRuleSetsObjectFilter)
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -82,8 +82,8 @@ type jsiiProxy_DatastreamStreamRuleSetsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DatastreamStreamRuleSetsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DatastreamStreamRuleSetsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -122,8 +122,8 @@ func (j *jsiiProxy_DatastreamStreamRuleSetsOutputReference) CustomizationRules()
 	return returns
 }
 
-func (j *jsiiProxy_DatastreamStreamRuleSetsOutputReference) CustomizationRulesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DatastreamStreamRuleSetsOutputReference) CustomizationRulesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"customizationRulesInput",
@@ -142,8 +142,8 @@ func (j *jsiiProxy_DatastreamStreamRuleSetsOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DatastreamStreamRuleSetsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DatastreamStreamRuleSetsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -192,7 +192,6 @@ func (j *jsiiProxy_DatastreamStreamRuleSetsOutputReference) TerraformResource() 
 	return returns
 }
 
-
 func NewDatastreamStreamRuleSetsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DatastreamStreamRuleSetsOutputReference {
 	_init_.Initialize()
 
@@ -203,7 +202,7 @@ func NewDatastreamStreamRuleSetsOutputReference(terraformResource cdktf.IInterpo
 
 	_jsii_.Create(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamRuleSetsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -215,12 +214,12 @@ func NewDatastreamStreamRuleSetsOutputReference_Override(d DatastreamStreamRuleS
 
 	_jsii_.Create(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamRuleSetsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DatastreamStreamRuleSetsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DatastreamStreamRuleSetsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_DatastreamStreamRuleSetsOutputReference)SetComplexObjectIndex
 	)
 }
 
-func (j *jsiiProxy_DatastreamStreamRuleSetsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DatastreamStreamRuleSetsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_DatastreamStreamRuleSetsOutputReference)SetComplexObjectIsFro
 	)
 }
 
-func (j *jsiiProxy_DatastreamStreamRuleSetsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DatastreamStreamRuleSetsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_DatastreamStreamRuleSetsOutputReference)SetInternalValue(val 
 	)
 }
 
-func (j *jsiiProxy_DatastreamStreamRuleSetsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DatastreamStreamRuleSetsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -264,7 +263,7 @@ func (j *jsiiProxy_DatastreamStreamRuleSetsOutputReference)SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_DatastreamStreamRuleSetsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DatastreamStreamRuleSetsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,16 +287,16 @@ func (d *jsiiProxy_DatastreamStreamRuleSetsOutputReference) ComputeFqn() *string
 	return returns
 }
 
-func (d *jsiiProxy_DatastreamStreamRuleSetsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DatastreamStreamRuleSetsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -313,7 +312,7 @@ func (d *jsiiProxy_DatastreamStreamRuleSetsOutputReference) GetBooleanAttribute(
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -329,7 +328,7 @@ func (d *jsiiProxy_DatastreamStreamRuleSetsOutputReference) GetBooleanMapAttribu
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -345,7 +344,7 @@ func (d *jsiiProxy_DatastreamStreamRuleSetsOutputReference) GetListAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -361,7 +360,7 @@ func (d *jsiiProxy_DatastreamStreamRuleSetsOutputReference) GetNumberAttribute(t
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -377,7 +376,7 @@ func (d *jsiiProxy_DatastreamStreamRuleSetsOutputReference) GetNumberListAttribu
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -393,7 +392,7 @@ func (d *jsiiProxy_DatastreamStreamRuleSetsOutputReference) GetNumberMapAttribut
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -409,7 +408,7 @@ func (d *jsiiProxy_DatastreamStreamRuleSetsOutputReference) GetStringAttribute(t
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -425,7 +424,7 @@ func (d *jsiiProxy_DatastreamStreamRuleSetsOutputReference) GetStringMapAttribut
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -454,21 +453,21 @@ func (d *jsiiProxy_DatastreamStreamRuleSetsOutputReference) InterpolationForAttr
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DatastreamStreamRuleSetsOutputReference) PutCustomizationRules(value interface{}) {
+func (d *jsiiProxy_DatastreamStreamRuleSetsOutputReference) PutCustomizationRules(value any) {
 	if err := d.validatePutCustomizationRulesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putCustomizationRules",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -479,20 +478,20 @@ func (d *jsiiProxy_DatastreamStreamRuleSetsOutputReference) PutObjectFilter(valu
 	_jsii_.InvokeVoid(
 		d,
 		"putObjectFilter",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (d *jsiiProxy_DatastreamStreamRuleSetsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DatastreamStreamRuleSetsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -511,4 +510,3 @@ func (d *jsiiProxy_DatastreamStreamRuleSetsOutputReference) ToString() *string {
 
 	return returns
 }
-

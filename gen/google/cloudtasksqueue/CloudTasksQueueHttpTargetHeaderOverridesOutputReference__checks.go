@@ -109,7 +109,7 @@ func (c *jsiiProxy_CloudTasksQueueHttpTargetHeaderOverridesOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_CloudTasksQueueHttpTargetHeaderOverridesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudTasksQueueHttpTargetHeaderOverridesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -174,7 +174,7 @@ func (j *jsiiProxy_CloudTasksQueueHttpTargetHeaderOverridesOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_CloudTasksQueueHttpTargetHeaderOverridesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CloudTasksQueueHttpTargetHeaderOverridesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -233,4 +233,3 @@ func validateNewCloudTasksQueueHttpTargetHeaderOverridesOutputReferenceParameter
 
 	return nil
 }
-

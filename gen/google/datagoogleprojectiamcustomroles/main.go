@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleProjectIamCustomRoles.DataGoogleProjectIamCustomRoles",
-		reflect.TypeOf((*DataGoogleProjectIamCustomRoles)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleProjectIamCustomRoles](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -58,7 +58,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "view", GoGetter: "View"},
 			_jsii_.MemberProperty{JsiiProperty: "viewInput", GoGetter: "ViewInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleProjectIamCustomRoles{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -66,15 +66,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleProjectIamCustomRoles.DataGoogleProjectIamCustomRolesConfig",
-		reflect.TypeOf((*DataGoogleProjectIamCustomRolesConfig)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleProjectIamCustomRolesConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleProjectIamCustomRoles.DataGoogleProjectIamCustomRolesRoles",
-		reflect.TypeOf((*DataGoogleProjectIamCustomRolesRoles)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleProjectIamCustomRolesRoles](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleProjectIamCustomRoles.DataGoogleProjectIamCustomRolesRolesList",
-		reflect.TypeOf((*DataGoogleProjectIamCustomRolesRolesList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleProjectIamCustomRolesRolesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -87,7 +87,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleProjectIamCustomRolesRolesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -95,7 +95,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleProjectIamCustomRoles.DataGoogleProjectIamCustomRolesRolesOutputReference",
-		reflect.TypeOf((*DataGoogleProjectIamCustomRolesRolesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleProjectIamCustomRolesRolesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -127,7 +127,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "title", GoGetter: "Title"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleProjectIamCustomRolesRolesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

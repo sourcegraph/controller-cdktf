@@ -98,7 +98,7 @@ func (a *jsiiProxy_AccessContextManagerAccessPolicyIamBindingConditionOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_AccessContextManagerAccessPolicyIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AccessContextManagerAccessPolicyIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewAccessContextManagerAccessPolicyIamBindingConditionOutputReferen
 
 	return nil
 }
-

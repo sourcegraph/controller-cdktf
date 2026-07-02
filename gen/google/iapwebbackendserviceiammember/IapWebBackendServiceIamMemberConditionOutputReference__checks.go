@@ -98,7 +98,7 @@ func (i *jsiiProxy_IapWebBackendServiceIamMemberConditionOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_IapWebBackendServiceIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IapWebBackendServiceIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewIapWebBackendServiceIamMemberConditionOutputReferenceParameters(
 
 	return nil
 }
-

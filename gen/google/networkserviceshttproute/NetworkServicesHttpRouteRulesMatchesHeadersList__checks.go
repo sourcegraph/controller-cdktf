@@ -34,7 +34,7 @@ func (n *jsiiProxy_NetworkServicesHttpRouteRulesMatchesHeadersList) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesHttpRouteRulesMatchesHeadersList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkServicesHttpRouteRulesMatchesHeadersList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewNetworkServicesHttpRouteRulesMatchesHeadersListParameters(terraf
 
 	return nil
 }
-

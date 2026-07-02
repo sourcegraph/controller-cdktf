@@ -12,9 +12,9 @@ type ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference interface 
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,15 +25,15 @@ type ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference interface 
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	DisableMultiNic() interface{}
-	SetDisableMultiNic(val interface{})
-	DisableMultiNicInput() interface{}
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
-	EnableLegacyLustrePort() interface{}
-	SetEnableLegacyLustrePort(val interface{})
-	EnableLegacyLustrePortInput() interface{}
+	DisableMultiNic() any
+	SetDisableMultiNic(val any)
+	DisableMultiNicInput() any
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
+	EnableLegacyLustrePort() any
+	SetEnableLegacyLustrePort(val any)
+	EnableLegacyLustrePortInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *ContainerClusterAddonsConfigLustreCsiDriverConfig
@@ -49,7 +49,7 @@ type ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference interface 
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -74,7 +74,7 @@ type ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference interface 
 	ResetEnableLegacyLustrePort()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -87,8 +87,8 @@ type jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference 
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -117,8 +117,8 @@ func (j *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference) DisableMultiNic() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference) DisableMultiNic() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableMultiNic",
@@ -127,8 +127,8 @@ func (j *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference) DisableMultiNicInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference) DisableMultiNicInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableMultiNicInput",
@@ -137,8 +137,8 @@ func (j *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -147,8 +147,8 @@ func (j *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -157,8 +157,8 @@ func (j *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference) EnableLegacyLustrePort() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference) EnableLegacyLustrePort() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableLegacyLustrePort",
@@ -167,8 +167,8 @@ func (j *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference) EnableLegacyLustrePortInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference) EnableLegacyLustrePortInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableLegacyLustrePortInput",
@@ -217,7 +217,6 @@ func (j *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputRefere
 	return returns
 }
 
-
 func NewContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference {
 	_init_.Initialize()
 
@@ -228,7 +227,7 @@ func NewContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference(terrafo
 
 	_jsii_.Create(
 		"@cdktf/provider-google.containerCluster.ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -240,12 +239,12 @@ func NewContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference_Overrid
 
 	_jsii_.Create(
 		"@cdktf/provider-google.containerCluster.ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -256,7 +255,7 @@ func (j *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputRefere
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -267,7 +266,7 @@ func (j *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputRefere
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference)SetDisableMultiNic(val interface{}) {
+func (j *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference) SetDisableMultiNic(val any) {
 	if err := j.validateSetDisableMultiNicParameters(val); err != nil {
 		panic(err)
 	}
@@ -278,7 +277,7 @@ func (j *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputRefere
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference)SetEnabled(val interface{}) {
+func (j *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -289,7 +288,7 @@ func (j *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputRefere
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference)SetEnableLegacyLustrePort(val interface{}) {
+func (j *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference) SetEnableLegacyLustrePort(val any) {
 	if err := j.validateSetEnableLegacyLustrePortParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,7 +299,7 @@ func (j *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputRefere
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference)SetInternalValue(val *ContainerClusterAddonsConfigLustreCsiDriverConfig) {
+func (j *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference) SetInternalValue(val *ContainerClusterAddonsConfigLustreCsiDriverConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,7 +310,7 @@ func (j *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputRefere
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -322,7 +321,7 @@ func (j *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputRefere
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -346,16 +345,16 @@ func (c *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputRefere
 	return returns
 }
 
-func (c *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -371,7 +370,7 @@ func (c *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputRefere
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -387,7 +386,7 @@ func (c *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputRefere
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -403,7 +402,7 @@ func (c *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputRefere
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -419,7 +418,7 @@ func (c *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputRefere
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -435,7 +434,7 @@ func (c *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputRefere
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -451,7 +450,7 @@ func (c *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputRefere
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -467,7 +466,7 @@ func (c *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputRefere
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -483,7 +482,7 @@ func (c *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputRefere
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -512,7 +511,7 @@ func (c *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputRefere
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -535,16 +534,16 @@ func (c *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputRefere
 	)
 }
 
-func (c *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -563,4 +562,3 @@ func (c *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputRefere
 
 	return returns
 }
-

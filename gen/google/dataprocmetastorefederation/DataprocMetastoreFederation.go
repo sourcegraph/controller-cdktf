@@ -13,23 +13,23 @@ import (
 type DataprocMetastoreFederation interface {
 	cdktf.TerraformResource
 	BackendMetastores() DataprocMetastoreFederationBackendMetastoresList
-	BackendMetastoresInput() interface{}
+	BackendMetastoresInput() any
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
-	DeletionProtection() interface{}
-	SetDeletionProtection(val interface{})
-	DeletionProtectionInput() interface{}
+	DeletionProtection() any
+	SetDeletionProtection(val any)
+	DeletionProtectionInput() any
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -71,11 +71,11 @@ type DataprocMetastoreFederation interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	State() *string
 	StateMessage() *string
 	Tags() *map[string]*string
@@ -85,11 +85,11 @@ type DataprocMetastoreFederation interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() DataprocMetastoreFederationTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Uid() *string
 	UpdateTime() *string
 	Version() *string
@@ -99,9 +99,9 @@ type DataprocMetastoreFederation interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -119,7 +119,7 @@ type DataprocMetastoreFederation interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -131,14 +131,14 @@ type DataprocMetastoreFederation interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutBackendMetastores(value interface{})
+	PutBackendMetastores(value any)
 	PutTimeouts(value *DataprocMetastoreFederationTimeouts)
 	ResetDeletionProtection()
 	ResetId()
@@ -150,17 +150,17 @@ type DataprocMetastoreFederation interface {
 	ResetProject()
 	ResetTags()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataprocMetastoreFederation
@@ -178,8 +178,8 @@ func (j *jsiiProxy_DataprocMetastoreFederation) BackendMetastores() DataprocMeta
 	return returns
 }
 
-func (j *jsiiProxy_DataprocMetastoreFederation) BackendMetastoresInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataprocMetastoreFederation) BackendMetastoresInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"backendMetastoresInput",
@@ -198,8 +198,8 @@ func (j *jsiiProxy_DataprocMetastoreFederation) CdktfStack() cdktf.TerraformStac
 	return returns
 }
 
-func (j *jsiiProxy_DataprocMetastoreFederation) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataprocMetastoreFederation) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -208,8 +208,8 @@ func (j *jsiiProxy_DataprocMetastoreFederation) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataprocMetastoreFederation) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataprocMetastoreFederation) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -218,8 +218,8 @@ func (j *jsiiProxy_DataprocMetastoreFederation) ConstructNodeMetadata() *map[str
 	return returns
 }
 
-func (j *jsiiProxy_DataprocMetastoreFederation) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataprocMetastoreFederation) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -238,8 +238,8 @@ func (j *jsiiProxy_DataprocMetastoreFederation) CreateTime() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataprocMetastoreFederation) DeletionProtection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataprocMetastoreFederation) DeletionProtection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deletionProtection",
@@ -248,8 +248,8 @@ func (j *jsiiProxy_DataprocMetastoreFederation) DeletionProtection() interface{}
 	return returns
 }
 
-func (j *jsiiProxy_DataprocMetastoreFederation) DeletionProtectionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataprocMetastoreFederation) DeletionProtectionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deletionProtectionInput",
@@ -458,8 +458,8 @@ func (j *jsiiProxy_DataprocMetastoreFederation) Provider() cdktf.TerraformProvid
 	return returns
 }
 
-func (j *jsiiProxy_DataprocMetastoreFederation) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_DataprocMetastoreFederation) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -468,8 +468,8 @@ func (j *jsiiProxy_DataprocMetastoreFederation) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataprocMetastoreFederation) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataprocMetastoreFederation) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -538,8 +538,8 @@ func (j *jsiiProxy_DataprocMetastoreFederation) TerraformLabels() cdktf.StringMa
 	return returns
 }
 
-func (j *jsiiProxy_DataprocMetastoreFederation) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataprocMetastoreFederation) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -568,8 +568,8 @@ func (j *jsiiProxy_DataprocMetastoreFederation) Timeouts() DataprocMetastoreFede
 	return returns
 }
 
-func (j *jsiiProxy_DataprocMetastoreFederation) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataprocMetastoreFederation) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -618,7 +618,6 @@ func (j *jsiiProxy_DataprocMetastoreFederation) VersionInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_metastore_federation google_dataproc_metastore_federation} Resource.
 func NewDataprocMetastoreFederation(scope constructs.Construct, id *string, config *DataprocMetastoreFederationConfig) DataprocMetastoreFederation {
 	_init_.Initialize()
@@ -630,7 +629,7 @@ func NewDataprocMetastoreFederation(scope constructs.Construct, id *string, conf
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataprocMetastoreFederation.DataprocMetastoreFederation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -643,12 +642,12 @@ func NewDataprocMetastoreFederation_Override(d DataprocMetastoreFederation, scop
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataprocMetastoreFederation.DataprocMetastoreFederation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataprocMetastoreFederation)SetConnection(val interface{}) {
+func (j *jsiiProxy_DataprocMetastoreFederation) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -659,7 +658,7 @@ func (j *jsiiProxy_DataprocMetastoreFederation)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataprocMetastoreFederation)SetCount(val interface{}) {
+func (j *jsiiProxy_DataprocMetastoreFederation) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -670,7 +669,7 @@ func (j *jsiiProxy_DataprocMetastoreFederation)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataprocMetastoreFederation)SetDeletionProtection(val interface{}) {
+func (j *jsiiProxy_DataprocMetastoreFederation) SetDeletionProtection(val any) {
 	if err := j.validateSetDeletionProtectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -681,7 +680,7 @@ func (j *jsiiProxy_DataprocMetastoreFederation)SetDeletionProtection(val interfa
 	)
 }
 
-func (j *jsiiProxy_DataprocMetastoreFederation)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataprocMetastoreFederation) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -689,7 +688,7 @@ func (j *jsiiProxy_DataprocMetastoreFederation)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataprocMetastoreFederation)SetFederationId(val *string) {
+func (j *jsiiProxy_DataprocMetastoreFederation) SetFederationId(val *string) {
 	if err := j.validateSetFederationIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -700,7 +699,7 @@ func (j *jsiiProxy_DataprocMetastoreFederation)SetFederationId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataprocMetastoreFederation)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataprocMetastoreFederation) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -708,7 +707,7 @@ func (j *jsiiProxy_DataprocMetastoreFederation)SetForEach(val cdktf.ITerraformIt
 	)
 }
 
-func (j *jsiiProxy_DataprocMetastoreFederation)SetId(val *string) {
+func (j *jsiiProxy_DataprocMetastoreFederation) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -719,7 +718,7 @@ func (j *jsiiProxy_DataprocMetastoreFederation)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataprocMetastoreFederation)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_DataprocMetastoreFederation) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -730,7 +729,7 @@ func (j *jsiiProxy_DataprocMetastoreFederation)SetLabels(val *map[string]*string
 	)
 }
 
-func (j *jsiiProxy_DataprocMetastoreFederation)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataprocMetastoreFederation) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -741,7 +740,7 @@ func (j *jsiiProxy_DataprocMetastoreFederation)SetLifecycle(val *cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_DataprocMetastoreFederation)SetLocation(val *string) {
+func (j *jsiiProxy_DataprocMetastoreFederation) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -752,7 +751,7 @@ func (j *jsiiProxy_DataprocMetastoreFederation)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataprocMetastoreFederation)SetProject(val *string) {
+func (j *jsiiProxy_DataprocMetastoreFederation) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -763,7 +762,7 @@ func (j *jsiiProxy_DataprocMetastoreFederation)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataprocMetastoreFederation)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataprocMetastoreFederation) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -771,7 +770,7 @@ func (j *jsiiProxy_DataprocMetastoreFederation)SetProvider(val cdktf.TerraformPr
 	)
 }
 
-func (j *jsiiProxy_DataprocMetastoreFederation)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_DataprocMetastoreFederation) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -782,7 +781,7 @@ func (j *jsiiProxy_DataprocMetastoreFederation)SetProvisioners(val *[]interface{
 	)
 }
 
-func (j *jsiiProxy_DataprocMetastoreFederation)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_DataprocMetastoreFederation) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -793,7 +792,7 @@ func (j *jsiiProxy_DataprocMetastoreFederation)SetTags(val *map[string]*string) 
 	)
 }
 
-func (j *jsiiProxy_DataprocMetastoreFederation)SetVersion(val *string) {
+func (j *jsiiProxy_DataprocMetastoreFederation) SetVersion(val *string) {
 	if err := j.validateSetVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -816,7 +815,7 @@ func DataprocMetastoreFederation_GenerateConfigForImport(scope constructs.Constr
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataprocMetastoreFederation.DataprocMetastoreFederation",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -840,7 +839,7 @@ func DataprocMetastoreFederation_GenerateConfigForImport(scope constructs.Constr
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataprocMetastoreFederation_IsConstruct(x interface{}) *bool {
+func DataprocMetastoreFederation_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataprocMetastoreFederation_IsConstructParameters(x); err != nil {
@@ -851,7 +850,7 @@ func DataprocMetastoreFederation_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataprocMetastoreFederation.DataprocMetastoreFederation",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -859,7 +858,7 @@ func DataprocMetastoreFederation_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataprocMetastoreFederation_IsTerraformElement(x interface{}) *bool {
+func DataprocMetastoreFederation_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataprocMetastoreFederation_IsTerraformElementParameters(x); err != nil {
@@ -870,7 +869,7 @@ func DataprocMetastoreFederation_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataprocMetastoreFederation.DataprocMetastoreFederation",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -878,7 +877,7 @@ func DataprocMetastoreFederation_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func DataprocMetastoreFederation_IsTerraformResource(x interface{}) *bool {
+func DataprocMetastoreFederation_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataprocMetastoreFederation_IsTerraformResourceParameters(x); err != nil {
@@ -889,7 +888,7 @@ func DataprocMetastoreFederation_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataprocMetastoreFederation.DataprocMetastoreFederation",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -914,31 +913,31 @@ func (d *jsiiProxy_DataprocMetastoreFederation) AddMoveTarget(moveTarget *string
 	_jsii_.InvokeVoid(
 		d,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (d *jsiiProxy_DataprocMetastoreFederation) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataprocMetastoreFederation) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataprocMetastoreFederation) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataprocMetastoreFederation) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -954,7 +953,7 @@ func (d *jsiiProxy_DataprocMetastoreFederation) GetBooleanAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -970,7 +969,7 @@ func (d *jsiiProxy_DataprocMetastoreFederation) GetBooleanMapAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -986,7 +985,7 @@ func (d *jsiiProxy_DataprocMetastoreFederation) GetListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1002,7 +1001,7 @@ func (d *jsiiProxy_DataprocMetastoreFederation) GetNumberAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1018,7 +1017,7 @@ func (d *jsiiProxy_DataprocMetastoreFederation) GetNumberListAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1034,7 +1033,7 @@ func (d *jsiiProxy_DataprocMetastoreFederation) GetNumberMapAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1050,7 +1049,7 @@ func (d *jsiiProxy_DataprocMetastoreFederation) GetStringAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1066,15 +1065,15 @@ func (d *jsiiProxy_DataprocMetastoreFederation) GetStringMapAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataprocMetastoreFederation) HasResourceMove() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataprocMetastoreFederation) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1093,7 +1092,7 @@ func (d *jsiiProxy_DataprocMetastoreFederation) ImportFrom(id *string, provider 
 	_jsii_.InvokeVoid(
 		d,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1106,7 +1105,7 @@ func (d *jsiiProxy_DataprocMetastoreFederation) InterpolationForAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1120,18 +1119,18 @@ func (d *jsiiProxy_DataprocMetastoreFederation) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (d *jsiiProxy_DataprocMetastoreFederation) MoveTo(moveTarget *string, index interface{}) {
+func (d *jsiiProxy_DataprocMetastoreFederation) MoveTo(moveTarget *string, index any) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1142,7 +1141,7 @@ func (d *jsiiProxy_DataprocMetastoreFederation) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1153,18 +1152,18 @@ func (d *jsiiProxy_DataprocMetastoreFederation) OverrideLogicalId(newLogicalId *
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (d *jsiiProxy_DataprocMetastoreFederation) PutBackendMetastores(value interface{}) {
+func (d *jsiiProxy_DataprocMetastoreFederation) PutBackendMetastores(value any) {
 	if err := d.validatePutBackendMetastoresParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putBackendMetastores",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1175,7 +1174,7 @@ func (d *jsiiProxy_DataprocMetastoreFederation) PutTimeouts(value *DataprocMetas
 	_jsii_.InvokeVoid(
 		d,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1243,8 +1242,8 @@ func (d *jsiiProxy_DataprocMetastoreFederation) ResetTimeouts() {
 	)
 }
 
-func (d *jsiiProxy_DataprocMetastoreFederation) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataprocMetastoreFederation) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1256,8 +1255,8 @@ func (d *jsiiProxy_DataprocMetastoreFederation) SynthesizeAttributes() *map[stri
 	return returns
 }
 
-func (d *jsiiProxy_DataprocMetastoreFederation) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataprocMetastoreFederation) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1269,8 +1268,8 @@ func (d *jsiiProxy_DataprocMetastoreFederation) SynthesizeHclAttributes() *map[s
 	return returns
 }
 
-func (d *jsiiProxy_DataprocMetastoreFederation) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataprocMetastoreFederation) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1282,8 +1281,8 @@ func (d *jsiiProxy_DataprocMetastoreFederation) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataprocMetastoreFederation) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataprocMetastoreFederation) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1308,8 +1307,8 @@ func (d *jsiiProxy_DataprocMetastoreFederation) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataprocMetastoreFederation) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataprocMetastoreFederation) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1320,4 +1319,3 @@ func (d *jsiiProxy_DataprocMetastoreFederation) ToTerraform() interface{} {
 
 	return returns
 }
-

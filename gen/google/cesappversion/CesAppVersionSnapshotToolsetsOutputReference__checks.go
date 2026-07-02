@@ -98,7 +98,7 @@ func (c *jsiiProxy_CesAppVersionSnapshotToolsetsOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_CesAppVersionSnapshotToolsetsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CesAppVersionSnapshotToolsetsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewCesAppVersionSnapshotToolsetsOutputReferenceParameters(terraform
 
 	return nil
 }
-

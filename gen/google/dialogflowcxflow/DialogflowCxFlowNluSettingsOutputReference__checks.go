@@ -106,7 +106,7 @@ func (j *jsiiProxy_DialogflowCxFlowNluSettingsOutputReference) validateSetClassi
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxFlowNluSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxFlowNluSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewDialogflowCxFlowNluSettingsOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

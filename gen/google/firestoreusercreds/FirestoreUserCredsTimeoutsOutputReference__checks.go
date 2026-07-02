@@ -98,7 +98,7 @@ func (f *jsiiProxy_FirestoreUserCredsTimeoutsOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_FirestoreUserCredsTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_FirestoreUserCredsTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_FirestoreUserCredsTimeoutsOutputReference) validateSetDeleteP
 	return nil
 }
 
-func (j *jsiiProxy_FirestoreUserCredsTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_FirestoreUserCredsTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewFirestoreUserCredsTimeoutsOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

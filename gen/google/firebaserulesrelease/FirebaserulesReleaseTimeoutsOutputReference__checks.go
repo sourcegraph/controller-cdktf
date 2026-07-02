@@ -98,7 +98,7 @@ func (f *jsiiProxy_FirebaserulesReleaseTimeoutsOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_FirebaserulesReleaseTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_FirebaserulesReleaseTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_FirebaserulesReleaseTimeoutsOutputReference) validateSetDelet
 	return nil
 }
 
-func (j *jsiiProxy_FirebaserulesReleaseTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_FirebaserulesReleaseTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewFirebaserulesReleaseTimeoutsOutputReferenceParameters(terraformR
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (c *jsiiProxy_CesToolDataStoreToolModalityConfigsRewriterConfigModelSetting
 	return nil
 }
 
-func (j *jsiiProxy_CesToolDataStoreToolModalityConfigsRewriterConfigModelSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CesToolDataStoreToolModalityConfigsRewriterConfigModelSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewCesToolDataStoreToolModalityConfigsRewriterConfigModelSettingsOu
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (k *jsiiProxy_KmsKeyRingIamBindingConditionOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_KmsKeyRingIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_KmsKeyRingIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewKmsKeyRingIamBindingConditionOutputReferenceParameters(terraform
 
 	return nil
 }
-

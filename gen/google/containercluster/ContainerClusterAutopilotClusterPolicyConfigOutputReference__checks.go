@@ -98,7 +98,7 @@ func (c *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference) validateSetNoStandardNodePoolsParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference) validateSetNoStandardNodePoolsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -191,7 +191,7 @@ func (j *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference) validateSetNoSystemImpersonationParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference) validateSetNoSystemImpersonationParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -211,7 +211,7 @@ func (j *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference) validateSetNoSystemMutationParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference) validateSetNoSystemMutationParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func (j *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference) validateSetNoUnsafeWebhooksParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference) validateSetNoUnsafeWebhooksParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -278,4 +278,3 @@ func validateNewContainerClusterAutopilotClusterPolicyConfigOutputReferenceParam
 
 	return nil
 }
-

@@ -12,9 +12,9 @@ type ComputeRegionSecurityPolicyRuleNetworkMatchOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -59,11 +59,11 @@ type ComputeRegionSecurityPolicyRuleNetworkMatchOutputReference interface {
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	UserDefinedFields() ComputeRegionSecurityPolicyRuleNetworkMatchUserDefinedFieldsList
-	UserDefinedFieldsInput() interface{}
+	UserDefinedFieldsInput() any
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -84,7 +84,7 @@ type ComputeRegionSecurityPolicyRuleNetworkMatchOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutUserDefinedFields(value interface{})
+	PutUserDefinedFields(value any)
 	ResetDestIpRanges()
 	ResetDestPorts()
 	ResetIpProtocols()
@@ -95,7 +95,7 @@ type ComputeRegionSecurityPolicyRuleNetworkMatchOutputReference interface {
 	ResetUserDefinedFields()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -108,8 +108,8 @@ type jsiiProxy_ComputeRegionSecurityPolicyRuleNetworkMatchOutputReference struct
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ComputeRegionSecurityPolicyRuleNetworkMatchOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRegionSecurityPolicyRuleNetworkMatchOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -328,8 +328,8 @@ func (j *jsiiProxy_ComputeRegionSecurityPolicyRuleNetworkMatchOutputReference) U
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionSecurityPolicyRuleNetworkMatchOutputReference) UserDefinedFieldsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRegionSecurityPolicyRuleNetworkMatchOutputReference) UserDefinedFieldsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"userDefinedFieldsInput",
@@ -337,7 +337,6 @@ func (j *jsiiProxy_ComputeRegionSecurityPolicyRuleNetworkMatchOutputReference) U
 	)
 	return returns
 }
-
 
 func NewComputeRegionSecurityPolicyRuleNetworkMatchOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ComputeRegionSecurityPolicyRuleNetworkMatchOutputReference {
 	_init_.Initialize()
@@ -349,7 +348,7 @@ func NewComputeRegionSecurityPolicyRuleNetworkMatchOutputReference(terraformReso
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeRegionSecurityPolicyRule.ComputeRegionSecurityPolicyRuleNetworkMatchOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -361,12 +360,12 @@ func NewComputeRegionSecurityPolicyRuleNetworkMatchOutputReference_Override(c Co
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeRegionSecurityPolicyRule.ComputeRegionSecurityPolicyRuleNetworkMatchOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionSecurityPolicyRuleNetworkMatchOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ComputeRegionSecurityPolicyRuleNetworkMatchOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -377,7 +376,7 @@ func (j *jsiiProxy_ComputeRegionSecurityPolicyRuleNetworkMatchOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionSecurityPolicyRuleNetworkMatchOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ComputeRegionSecurityPolicyRuleNetworkMatchOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -388,7 +387,7 @@ func (j *jsiiProxy_ComputeRegionSecurityPolicyRuleNetworkMatchOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionSecurityPolicyRuleNetworkMatchOutputReference)SetDestIpRanges(val *[]*string) {
+func (j *jsiiProxy_ComputeRegionSecurityPolicyRuleNetworkMatchOutputReference) SetDestIpRanges(val *[]*string) {
 	if err := j.validateSetDestIpRangesParameters(val); err != nil {
 		panic(err)
 	}
@@ -399,7 +398,7 @@ func (j *jsiiProxy_ComputeRegionSecurityPolicyRuleNetworkMatchOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionSecurityPolicyRuleNetworkMatchOutputReference)SetDestPorts(val *[]*string) {
+func (j *jsiiProxy_ComputeRegionSecurityPolicyRuleNetworkMatchOutputReference) SetDestPorts(val *[]*string) {
 	if err := j.validateSetDestPortsParameters(val); err != nil {
 		panic(err)
 	}
@@ -410,7 +409,7 @@ func (j *jsiiProxy_ComputeRegionSecurityPolicyRuleNetworkMatchOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionSecurityPolicyRuleNetworkMatchOutputReference)SetInternalValue(val *ComputeRegionSecurityPolicyRuleNetworkMatch) {
+func (j *jsiiProxy_ComputeRegionSecurityPolicyRuleNetworkMatchOutputReference) SetInternalValue(val *ComputeRegionSecurityPolicyRuleNetworkMatch) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -421,7 +420,7 @@ func (j *jsiiProxy_ComputeRegionSecurityPolicyRuleNetworkMatchOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionSecurityPolicyRuleNetworkMatchOutputReference)SetIpProtocols(val *[]*string) {
+func (j *jsiiProxy_ComputeRegionSecurityPolicyRuleNetworkMatchOutputReference) SetIpProtocols(val *[]*string) {
 	if err := j.validateSetIpProtocolsParameters(val); err != nil {
 		panic(err)
 	}
@@ -432,7 +431,7 @@ func (j *jsiiProxy_ComputeRegionSecurityPolicyRuleNetworkMatchOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionSecurityPolicyRuleNetworkMatchOutputReference)SetSrcAsns(val *[]*float64) {
+func (j *jsiiProxy_ComputeRegionSecurityPolicyRuleNetworkMatchOutputReference) SetSrcAsns(val *[]*float64) {
 	if err := j.validateSetSrcAsnsParameters(val); err != nil {
 		panic(err)
 	}
@@ -443,7 +442,7 @@ func (j *jsiiProxy_ComputeRegionSecurityPolicyRuleNetworkMatchOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionSecurityPolicyRuleNetworkMatchOutputReference)SetSrcIpRanges(val *[]*string) {
+func (j *jsiiProxy_ComputeRegionSecurityPolicyRuleNetworkMatchOutputReference) SetSrcIpRanges(val *[]*string) {
 	if err := j.validateSetSrcIpRangesParameters(val); err != nil {
 		panic(err)
 	}
@@ -454,7 +453,7 @@ func (j *jsiiProxy_ComputeRegionSecurityPolicyRuleNetworkMatchOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionSecurityPolicyRuleNetworkMatchOutputReference)SetSrcPorts(val *[]*string) {
+func (j *jsiiProxy_ComputeRegionSecurityPolicyRuleNetworkMatchOutputReference) SetSrcPorts(val *[]*string) {
 	if err := j.validateSetSrcPortsParameters(val); err != nil {
 		panic(err)
 	}
@@ -465,7 +464,7 @@ func (j *jsiiProxy_ComputeRegionSecurityPolicyRuleNetworkMatchOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionSecurityPolicyRuleNetworkMatchOutputReference)SetSrcRegionCodes(val *[]*string) {
+func (j *jsiiProxy_ComputeRegionSecurityPolicyRuleNetworkMatchOutputReference) SetSrcRegionCodes(val *[]*string) {
 	if err := j.validateSetSrcRegionCodesParameters(val); err != nil {
 		panic(err)
 	}
@@ -476,7 +475,7 @@ func (j *jsiiProxy_ComputeRegionSecurityPolicyRuleNetworkMatchOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionSecurityPolicyRuleNetworkMatchOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ComputeRegionSecurityPolicyRuleNetworkMatchOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -487,7 +486,7 @@ func (j *jsiiProxy_ComputeRegionSecurityPolicyRuleNetworkMatchOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionSecurityPolicyRuleNetworkMatchOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeRegionSecurityPolicyRuleNetworkMatchOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -511,16 +510,16 @@ func (c *jsiiProxy_ComputeRegionSecurityPolicyRuleNetworkMatchOutputReference) C
 	return returns
 }
 
-func (c *jsiiProxy_ComputeRegionSecurityPolicyRuleNetworkMatchOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComputeRegionSecurityPolicyRuleNetworkMatchOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -536,7 +535,7 @@ func (c *jsiiProxy_ComputeRegionSecurityPolicyRuleNetworkMatchOutputReference) G
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -552,7 +551,7 @@ func (c *jsiiProxy_ComputeRegionSecurityPolicyRuleNetworkMatchOutputReference) G
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -568,7 +567,7 @@ func (c *jsiiProxy_ComputeRegionSecurityPolicyRuleNetworkMatchOutputReference) G
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -584,7 +583,7 @@ func (c *jsiiProxy_ComputeRegionSecurityPolicyRuleNetworkMatchOutputReference) G
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -600,7 +599,7 @@ func (c *jsiiProxy_ComputeRegionSecurityPolicyRuleNetworkMatchOutputReference) G
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -616,7 +615,7 @@ func (c *jsiiProxy_ComputeRegionSecurityPolicyRuleNetworkMatchOutputReference) G
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -632,7 +631,7 @@ func (c *jsiiProxy_ComputeRegionSecurityPolicyRuleNetworkMatchOutputReference) G
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -648,7 +647,7 @@ func (c *jsiiProxy_ComputeRegionSecurityPolicyRuleNetworkMatchOutputReference) G
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -677,21 +676,21 @@ func (c *jsiiProxy_ComputeRegionSecurityPolicyRuleNetworkMatchOutputReference) I
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ComputeRegionSecurityPolicyRuleNetworkMatchOutputReference) PutUserDefinedFields(value interface{}) {
+func (c *jsiiProxy_ComputeRegionSecurityPolicyRuleNetworkMatchOutputReference) PutUserDefinedFields(value any) {
 	if err := c.validatePutUserDefinedFieldsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putUserDefinedFields",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -759,16 +758,16 @@ func (c *jsiiProxy_ComputeRegionSecurityPolicyRuleNetworkMatchOutputReference) R
 	)
 }
 
-func (c *jsiiProxy_ComputeRegionSecurityPolicyRuleNetworkMatchOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ComputeRegionSecurityPolicyRuleNetworkMatchOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -787,4 +786,3 @@ func (c *jsiiProxy_ComputeRegionSecurityPolicyRuleNetworkMatchOutputReference) T
 
 	return returns
 }
-

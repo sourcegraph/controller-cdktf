@@ -1,6 +1,5 @@
 package cestool
 
-
 type CesToolClientFunctionResponse struct {
 	// The type of the data. Possible values: STRING INTEGER NUMBER BOOLEAN OBJECT ARRAY.
 	//
@@ -67,7 +66,7 @@ type CesToolClientFunctionResponse struct {
 	// Indicates if the value may be null.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_tool#nullable CesTool#nullable}
-	Nullable interface{} `field:"optional" json:"nullable" yaml:"nullable"`
+	Nullable any `field:"optional" json:"nullable" yaml:"nullable"`
 	// Schemas of initial elements of Type.ARRAY.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_tool#prefix_items CesTool#prefix_items}
@@ -110,6 +109,5 @@ type CesToolClientFunctionResponse struct {
 	// Indicate the items in the array must be unique. Only applies to TYPE.ARRAY.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_tool#unique_items CesTool#unique_items}
-	UniqueItems interface{} `field:"optional" json:"uniqueItems" yaml:"uniqueItems"`
+	UniqueItems any `field:"optional" json:"uniqueItems" yaml:"uniqueItems"`
 }
-

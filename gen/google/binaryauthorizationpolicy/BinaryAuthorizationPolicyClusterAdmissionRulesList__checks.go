@@ -34,7 +34,7 @@ func (b *jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesList) validateR
 	return nil
 }
 
-func (j *jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewBinaryAuthorizationPolicyClusterAdmissionRulesListParameters(ter
 
 	return nil
 }
-

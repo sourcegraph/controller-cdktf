@@ -90,7 +90,7 @@ func (c *jsiiProxy_ComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendS
 	return nil
 }
 
-func (c *jsiiProxy_ComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionOutputReference) validatePutRequestHeadersToAddParameters(value interface{}) error {
+func (c *jsiiProxy_ComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionOutputReference) validatePutRequestHeadersToAddParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (c *jsiiProxy_ComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendS
 	return nil
 }
 
-func (c *jsiiProxy_ComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionOutputReference) validatePutResponseHeadersToAddParameters(value interface{}) error {
+func (c *jsiiProxy_ComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionOutputReference) validatePutResponseHeadersToAddParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -160,7 +160,7 @@ func (c *jsiiProxy_ComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendS
 	return nil
 }
 
-func (j *jsiiProxy_ComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -276,4 +276,3 @@ func validateNewComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServ
 
 	return nil
 }
-

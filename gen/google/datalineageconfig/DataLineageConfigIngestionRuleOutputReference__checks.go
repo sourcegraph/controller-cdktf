@@ -120,7 +120,7 @@ func (d *jsiiProxy_DataLineageConfigIngestionRuleOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_DataLineageConfigIngestionRuleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataLineageConfigIngestionRuleOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -185,7 +185,7 @@ func (j *jsiiProxy_DataLineageConfigIngestionRuleOutputReference) validateSetCom
 	return nil
 }
 
-func (j *jsiiProxy_DataLineageConfigIngestionRuleOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataLineageConfigIngestionRuleOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -244,4 +244,3 @@ func validateNewDataLineageConfigIngestionRuleOutputReferenceParameters(terrafor
 
 	return nil
 }
-

@@ -12,9 +12,9 @@ type ComputeBackendBucketParamsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -43,7 +43,7 @@ type ComputeBackendBucketParamsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -67,7 +67,7 @@ type ComputeBackendBucketParamsOutputReference interface {
 	ResetResourceManagerTags()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,8 +80,8 @@ type jsiiProxy_ComputeBackendBucketParamsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ComputeBackendBucketParamsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeBackendBucketParamsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -170,7 +170,6 @@ func (j *jsiiProxy_ComputeBackendBucketParamsOutputReference) TerraformResource(
 	return returns
 }
 
-
 func NewComputeBackendBucketParamsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ComputeBackendBucketParamsOutputReference {
 	_init_.Initialize()
 
@@ -181,7 +180,7 @@ func NewComputeBackendBucketParamsOutputReference(terraformResource cdktf.IInter
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeBackendBucket.ComputeBackendBucketParamsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -193,12 +192,12 @@ func NewComputeBackendBucketParamsOutputReference_Override(c ComputeBackendBucke
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeBackendBucket.ComputeBackendBucketParamsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputeBackendBucketParamsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ComputeBackendBucketParamsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -209,7 +208,7 @@ func (j *jsiiProxy_ComputeBackendBucketParamsOutputReference)SetComplexObjectInd
 	)
 }
 
-func (j *jsiiProxy_ComputeBackendBucketParamsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ComputeBackendBucketParamsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -220,7 +219,7 @@ func (j *jsiiProxy_ComputeBackendBucketParamsOutputReference)SetComplexObjectIsF
 	)
 }
 
-func (j *jsiiProxy_ComputeBackendBucketParamsOutputReference)SetInternalValue(val *ComputeBackendBucketParams) {
+func (j *jsiiProxy_ComputeBackendBucketParamsOutputReference) SetInternalValue(val *ComputeBackendBucketParams) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_ComputeBackendBucketParamsOutputReference)SetInternalValue(va
 	)
 }
 
-func (j *jsiiProxy_ComputeBackendBucketParamsOutputReference)SetResourceManagerTags(val *map[string]*string) {
+func (j *jsiiProxy_ComputeBackendBucketParamsOutputReference) SetResourceManagerTags(val *map[string]*string) {
 	if err := j.validateSetResourceManagerTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_ComputeBackendBucketParamsOutputReference)SetResourceManagerT
 	)
 }
 
-func (j *jsiiProxy_ComputeBackendBucketParamsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ComputeBackendBucketParamsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_ComputeBackendBucketParamsOutputReference)SetTerraformAttribu
 	)
 }
 
-func (j *jsiiProxy_ComputeBackendBucketParamsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeBackendBucketParamsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,16 +276,16 @@ func (c *jsiiProxy_ComputeBackendBucketParamsOutputReference) ComputeFqn() *stri
 	return returns
 }
 
-func (c *jsiiProxy_ComputeBackendBucketParamsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComputeBackendBucketParamsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -302,7 +301,7 @@ func (c *jsiiProxy_ComputeBackendBucketParamsOutputReference) GetBooleanAttribut
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -318,7 +317,7 @@ func (c *jsiiProxy_ComputeBackendBucketParamsOutputReference) GetBooleanMapAttri
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -334,7 +333,7 @@ func (c *jsiiProxy_ComputeBackendBucketParamsOutputReference) GetListAttribute(t
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -350,7 +349,7 @@ func (c *jsiiProxy_ComputeBackendBucketParamsOutputReference) GetNumberAttribute
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -366,7 +365,7 @@ func (c *jsiiProxy_ComputeBackendBucketParamsOutputReference) GetNumberListAttri
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -382,7 +381,7 @@ func (c *jsiiProxy_ComputeBackendBucketParamsOutputReference) GetNumberMapAttrib
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -398,7 +397,7 @@ func (c *jsiiProxy_ComputeBackendBucketParamsOutputReference) GetStringAttribute
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -414,7 +413,7 @@ func (c *jsiiProxy_ComputeBackendBucketParamsOutputReference) GetStringMapAttrib
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -443,7 +442,7 @@ func (c *jsiiProxy_ComputeBackendBucketParamsOutputReference) InterpolationForAt
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -458,16 +457,16 @@ func (c *jsiiProxy_ComputeBackendBucketParamsOutputReference) ResetResourceManag
 	)
 }
 
-func (c *jsiiProxy_ComputeBackendBucketParamsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ComputeBackendBucketParamsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -486,4 +485,3 @@ func (c *jsiiProxy_ComputeBackendBucketParamsOutputReference) ToString() *string
 
 	return returns
 }
-

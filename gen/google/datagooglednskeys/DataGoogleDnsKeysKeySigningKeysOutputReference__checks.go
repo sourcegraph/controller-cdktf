@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleDnsKeysKeySigningKeysOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleDnsKeysKeySigningKeysOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleDnsKeysKeySigningKeysOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleDnsKeysKeySigningKeysOutputReferenceParameters(terrafo
 
 	return nil
 }
-

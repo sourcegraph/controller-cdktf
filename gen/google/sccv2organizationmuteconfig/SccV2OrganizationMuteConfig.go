@@ -15,15 +15,15 @@ type SccV2OrganizationMuteConfig interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -68,19 +68,19 @@ type SccV2OrganizationMuteConfig interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() SccV2OrganizationMuteConfigTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
@@ -89,9 +89,9 @@ type SccV2OrganizationMuteConfig interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -109,7 +109,7 @@ type SccV2OrganizationMuteConfig interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -121,7 +121,7 @@ type SccV2OrganizationMuteConfig interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -136,17 +136,17 @@ type SccV2OrganizationMuteConfig interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for SccV2OrganizationMuteConfig
@@ -164,8 +164,8 @@ func (j *jsiiProxy_SccV2OrganizationMuteConfig) CdktfStack() cdktf.TerraformStac
 	return returns
 }
 
-func (j *jsiiProxy_SccV2OrganizationMuteConfig) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SccV2OrganizationMuteConfig) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -174,8 +174,8 @@ func (j *jsiiProxy_SccV2OrganizationMuteConfig) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SccV2OrganizationMuteConfig) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SccV2OrganizationMuteConfig) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -184,8 +184,8 @@ func (j *jsiiProxy_SccV2OrganizationMuteConfig) ConstructNodeMetadata() *map[str
 	return returns
 }
 
-func (j *jsiiProxy_SccV2OrganizationMuteConfig) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SccV2OrganizationMuteConfig) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -414,8 +414,8 @@ func (j *jsiiProxy_SccV2OrganizationMuteConfig) Provider() cdktf.TerraformProvid
 	return returns
 }
 
-func (j *jsiiProxy_SccV2OrganizationMuteConfig) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_SccV2OrganizationMuteConfig) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -424,8 +424,8 @@ func (j *jsiiProxy_SccV2OrganizationMuteConfig) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SccV2OrganizationMuteConfig) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SccV2OrganizationMuteConfig) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -444,8 +444,8 @@ func (j *jsiiProxy_SccV2OrganizationMuteConfig) TerraformGeneratorMetadata() *cd
 	return returns
 }
 
-func (j *jsiiProxy_SccV2OrganizationMuteConfig) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SccV2OrganizationMuteConfig) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -474,8 +474,8 @@ func (j *jsiiProxy_SccV2OrganizationMuteConfig) Timeouts() SccV2OrganizationMute
 	return returns
 }
 
-func (j *jsiiProxy_SccV2OrganizationMuteConfig) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SccV2OrganizationMuteConfig) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -514,7 +514,6 @@ func (j *jsiiProxy_SccV2OrganizationMuteConfig) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_v2_organization_mute_config google_scc_v2_organization_mute_config} Resource.
 func NewSccV2OrganizationMuteConfig(scope constructs.Construct, id *string, config *SccV2OrganizationMuteConfigConfig) SccV2OrganizationMuteConfig {
 	_init_.Initialize()
@@ -526,7 +525,7 @@ func NewSccV2OrganizationMuteConfig(scope constructs.Construct, id *string, conf
 
 	_jsii_.Create(
 		"@cdktf/provider-google.sccV2OrganizationMuteConfig.SccV2OrganizationMuteConfig",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -539,12 +538,12 @@ func NewSccV2OrganizationMuteConfig_Override(s SccV2OrganizationMuteConfig, scop
 
 	_jsii_.Create(
 		"@cdktf/provider-google.sccV2OrganizationMuteConfig.SccV2OrganizationMuteConfig",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SccV2OrganizationMuteConfig)SetConnection(val interface{}) {
+func (j *jsiiProxy_SccV2OrganizationMuteConfig) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -555,7 +554,7 @@ func (j *jsiiProxy_SccV2OrganizationMuteConfig)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SccV2OrganizationMuteConfig)SetCount(val interface{}) {
+func (j *jsiiProxy_SccV2OrganizationMuteConfig) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -566,7 +565,7 @@ func (j *jsiiProxy_SccV2OrganizationMuteConfig)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SccV2OrganizationMuteConfig)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_SccV2OrganizationMuteConfig) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -574,7 +573,7 @@ func (j *jsiiProxy_SccV2OrganizationMuteConfig)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SccV2OrganizationMuteConfig)SetDescription(val *string) {
+func (j *jsiiProxy_SccV2OrganizationMuteConfig) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -585,7 +584,7 @@ func (j *jsiiProxy_SccV2OrganizationMuteConfig)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SccV2OrganizationMuteConfig)SetFilter(val *string) {
+func (j *jsiiProxy_SccV2OrganizationMuteConfig) SetFilter(val *string) {
 	if err := j.validateSetFilterParameters(val); err != nil {
 		panic(err)
 	}
@@ -596,7 +595,7 @@ func (j *jsiiProxy_SccV2OrganizationMuteConfig)SetFilter(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SccV2OrganizationMuteConfig)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SccV2OrganizationMuteConfig) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -604,7 +603,7 @@ func (j *jsiiProxy_SccV2OrganizationMuteConfig)SetForEach(val cdktf.ITerraformIt
 	)
 }
 
-func (j *jsiiProxy_SccV2OrganizationMuteConfig)SetId(val *string) {
+func (j *jsiiProxy_SccV2OrganizationMuteConfig) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -615,7 +614,7 @@ func (j *jsiiProxy_SccV2OrganizationMuteConfig)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SccV2OrganizationMuteConfig)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SccV2OrganizationMuteConfig) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -626,7 +625,7 @@ func (j *jsiiProxy_SccV2OrganizationMuteConfig)SetLifecycle(val *cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_SccV2OrganizationMuteConfig)SetLocation(val *string) {
+func (j *jsiiProxy_SccV2OrganizationMuteConfig) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -637,7 +636,7 @@ func (j *jsiiProxy_SccV2OrganizationMuteConfig)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SccV2OrganizationMuteConfig)SetMuteConfigId(val *string) {
+func (j *jsiiProxy_SccV2OrganizationMuteConfig) SetMuteConfigId(val *string) {
 	if err := j.validateSetMuteConfigIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -648,7 +647,7 @@ func (j *jsiiProxy_SccV2OrganizationMuteConfig)SetMuteConfigId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SccV2OrganizationMuteConfig)SetOrganization(val *string) {
+func (j *jsiiProxy_SccV2OrganizationMuteConfig) SetOrganization(val *string) {
 	if err := j.validateSetOrganizationParameters(val); err != nil {
 		panic(err)
 	}
@@ -659,7 +658,7 @@ func (j *jsiiProxy_SccV2OrganizationMuteConfig)SetOrganization(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SccV2OrganizationMuteConfig)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SccV2OrganizationMuteConfig) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -667,7 +666,7 @@ func (j *jsiiProxy_SccV2OrganizationMuteConfig)SetProvider(val cdktf.TerraformPr
 	)
 }
 
-func (j *jsiiProxy_SccV2OrganizationMuteConfig)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_SccV2OrganizationMuteConfig) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -678,7 +677,7 @@ func (j *jsiiProxy_SccV2OrganizationMuteConfig)SetProvisioners(val *[]interface{
 	)
 }
 
-func (j *jsiiProxy_SccV2OrganizationMuteConfig)SetType(val *string) {
+func (j *jsiiProxy_SccV2OrganizationMuteConfig) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -701,7 +700,7 @@ func SccV2OrganizationMuteConfig_GenerateConfigForImport(scope constructs.Constr
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.sccV2OrganizationMuteConfig.SccV2OrganizationMuteConfig",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -725,7 +724,7 @@ func SccV2OrganizationMuteConfig_GenerateConfigForImport(scope constructs.Constr
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func SccV2OrganizationMuteConfig_IsConstruct(x interface{}) *bool {
+func SccV2OrganizationMuteConfig_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSccV2OrganizationMuteConfig_IsConstructParameters(x); err != nil {
@@ -736,7 +735,7 @@ func SccV2OrganizationMuteConfig_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.sccV2OrganizationMuteConfig.SccV2OrganizationMuteConfig",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -744,7 +743,7 @@ func SccV2OrganizationMuteConfig_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func SccV2OrganizationMuteConfig_IsTerraformElement(x interface{}) *bool {
+func SccV2OrganizationMuteConfig_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSccV2OrganizationMuteConfig_IsTerraformElementParameters(x); err != nil {
@@ -755,7 +754,7 @@ func SccV2OrganizationMuteConfig_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.sccV2OrganizationMuteConfig.SccV2OrganizationMuteConfig",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -763,7 +762,7 @@ func SccV2OrganizationMuteConfig_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func SccV2OrganizationMuteConfig_IsTerraformResource(x interface{}) *bool {
+func SccV2OrganizationMuteConfig_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSccV2OrganizationMuteConfig_IsTerraformResourceParameters(x); err != nil {
@@ -774,7 +773,7 @@ func SccV2OrganizationMuteConfig_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.sccV2OrganizationMuteConfig.SccV2OrganizationMuteConfig",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -799,31 +798,31 @@ func (s *jsiiProxy_SccV2OrganizationMuteConfig) AddMoveTarget(moveTarget *string
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_SccV2OrganizationMuteConfig) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_SccV2OrganizationMuteConfig) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_SccV2OrganizationMuteConfig) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SccV2OrganizationMuteConfig) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -839,7 +838,7 @@ func (s *jsiiProxy_SccV2OrganizationMuteConfig) GetBooleanAttribute(terraformAtt
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -855,7 +854,7 @@ func (s *jsiiProxy_SccV2OrganizationMuteConfig) GetBooleanMapAttribute(terraform
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -871,7 +870,7 @@ func (s *jsiiProxy_SccV2OrganizationMuteConfig) GetListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -887,7 +886,7 @@ func (s *jsiiProxy_SccV2OrganizationMuteConfig) GetNumberAttribute(terraformAttr
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -903,7 +902,7 @@ func (s *jsiiProxy_SccV2OrganizationMuteConfig) GetNumberListAttribute(terraform
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -919,7 +918,7 @@ func (s *jsiiProxy_SccV2OrganizationMuteConfig) GetNumberMapAttribute(terraformA
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -935,7 +934,7 @@ func (s *jsiiProxy_SccV2OrganizationMuteConfig) GetStringAttribute(terraformAttr
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -951,15 +950,15 @@ func (s *jsiiProxy_SccV2OrganizationMuteConfig) GetStringMapAttribute(terraformA
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SccV2OrganizationMuteConfig) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SccV2OrganizationMuteConfig) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -978,7 +977,7 @@ func (s *jsiiProxy_SccV2OrganizationMuteConfig) ImportFrom(id *string, provider 
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -991,7 +990,7 @@ func (s *jsiiProxy_SccV2OrganizationMuteConfig) InterpolationForAttribute(terraf
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1005,18 +1004,18 @@ func (s *jsiiProxy_SccV2OrganizationMuteConfig) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_SccV2OrganizationMuteConfig) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_SccV2OrganizationMuteConfig) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1027,7 +1026,7 @@ func (s *jsiiProxy_SccV2OrganizationMuteConfig) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1038,7 +1037,7 @@ func (s *jsiiProxy_SccV2OrganizationMuteConfig) OverrideLogicalId(newLogicalId *
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1049,7 +1048,7 @@ func (s *jsiiProxy_SccV2OrganizationMuteConfig) PutTimeouts(value *SccV2Organiza
 	_jsii_.InvokeVoid(
 		s,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1093,8 +1092,8 @@ func (s *jsiiProxy_SccV2OrganizationMuteConfig) ResetTimeouts() {
 	)
 }
 
-func (s *jsiiProxy_SccV2OrganizationMuteConfig) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SccV2OrganizationMuteConfig) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1106,8 +1105,8 @@ func (s *jsiiProxy_SccV2OrganizationMuteConfig) SynthesizeAttributes() *map[stri
 	return returns
 }
 
-func (s *jsiiProxy_SccV2OrganizationMuteConfig) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SccV2OrganizationMuteConfig) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1119,8 +1118,8 @@ func (s *jsiiProxy_SccV2OrganizationMuteConfig) SynthesizeHclAttributes() *map[s
 	return returns
 }
 
-func (s *jsiiProxy_SccV2OrganizationMuteConfig) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SccV2OrganizationMuteConfig) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1132,8 +1131,8 @@ func (s *jsiiProxy_SccV2OrganizationMuteConfig) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_SccV2OrganizationMuteConfig) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SccV2OrganizationMuteConfig) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1158,8 +1157,8 @@ func (s *jsiiProxy_SccV2OrganizationMuteConfig) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_SccV2OrganizationMuteConfig) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SccV2OrganizationMuteConfig) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1170,4 +1169,3 @@ func (s *jsiiProxy_SccV2OrganizationMuteConfig) ToTerraform() interface{} {
 
 	return returns
 }
-

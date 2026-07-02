@@ -12,9 +12,9 @@ type DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputOutputRefere
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -43,13 +43,13 @@ type DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputOutputRefere
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	TextResponses() DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputTextResponsesList
-	TextResponsesInput() interface{}
+	TextResponsesInput() any
 	TriggeredIntent() DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputTriggeredIntentOutputReference
 	TriggeredIntentInput() *DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputTriggeredIntent
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputOutputRefere
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutCurrentPage(value *DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputCurrentPage)
-	PutTextResponses(value interface{})
+	PutTextResponses(value any)
 	PutTriggeredIntent(value *DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputTriggeredIntent)
 	ResetCurrentPage()
 	ResetSessionParameters()
@@ -79,7 +79,7 @@ type DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputOutputRefere
 	ResetTriggeredIntent()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,8 +92,8 @@ type jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputOu
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -212,8 +212,8 @@ func (j *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutp
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputOutputReference) TextResponsesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputOutputReference) TextResponsesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"textResponsesInput",
@@ -242,7 +242,6 @@ func (j *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutp
 	return returns
 }
 
-
 func NewDialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputOutputReference {
 	_init_.Initialize()
 
@@ -253,7 +252,7 @@ func NewDialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputOutputRef
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -265,12 +264,12 @@ func NewDialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputOutputRef
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,7 +280,7 @@ func (j *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutp
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,7 +291,7 @@ func (j *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutp
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputOutputReference)SetInternalValue(val *DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutput) {
+func (j *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputOutputReference) SetInternalValue(val *DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutput) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutp
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputOutputReference)SetSessionParameters(val *string) {
+func (j *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputOutputReference) SetSessionParameters(val *string) {
 	if err := j.validateSetSessionParametersParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutp
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutp
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,16 +348,16 @@ func (d *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutp
 	return returns
 }
 
-func (d *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -374,7 +373,7 @@ func (d *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutp
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -390,7 +389,7 @@ func (d *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutp
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -406,7 +405,7 @@ func (d *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutp
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -422,7 +421,7 @@ func (d *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutp
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -438,7 +437,7 @@ func (d *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutp
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -454,7 +453,7 @@ func (d *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutp
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -470,7 +469,7 @@ func (d *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutp
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -486,7 +485,7 @@ func (d *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutp
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -515,7 +514,7 @@ func (d *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutp
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -529,18 +528,18 @@ func (d *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutp
 	_jsii_.InvokeVoid(
 		d,
 		"putCurrentPage",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (d *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputOutputReference) PutTextResponses(value interface{}) {
+func (d *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputOutputReference) PutTextResponses(value any) {
 	if err := d.validatePutTextResponsesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putTextResponses",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -551,7 +550,7 @@ func (d *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutp
 	_jsii_.InvokeVoid(
 		d,
 		"putTriggeredIntent",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -587,16 +586,16 @@ func (d *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutp
 	)
 }
 
-func (d *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -615,4 +614,3 @@ func (d *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutp
 
 	return returns
 }
-

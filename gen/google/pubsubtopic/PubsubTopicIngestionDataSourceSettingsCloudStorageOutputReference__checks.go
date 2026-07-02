@@ -139,7 +139,7 @@ func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsCloudStorageOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsCloudStorageOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsCloudStorageOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -255,4 +255,3 @@ func validateNewPubsubTopicIngestionDataSourceSettingsCloudStorageOutputReferenc
 
 	return nil
 }
-

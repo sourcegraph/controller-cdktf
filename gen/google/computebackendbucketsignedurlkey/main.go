@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeBackendBucketSignedUrlKey.ComputeBackendBucketSignedUrlKey",
-		reflect.TypeOf((*ComputeBackendBucketSignedUrlKey)(nil)).Elem(),
+		reflect.TypeFor[ComputeBackendBucketSignedUrlKey](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -69,7 +69,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeBackendBucketSignedUrlKey{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -77,15 +77,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeBackendBucketSignedUrlKey.ComputeBackendBucketSignedUrlKeyConfig",
-		reflect.TypeOf((*ComputeBackendBucketSignedUrlKeyConfig)(nil)).Elem(),
+		reflect.TypeFor[ComputeBackendBucketSignedUrlKeyConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeBackendBucketSignedUrlKey.ComputeBackendBucketSignedUrlKeyTimeouts",
-		reflect.TypeOf((*ComputeBackendBucketSignedUrlKeyTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ComputeBackendBucketSignedUrlKeyTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeBackendBucketSignedUrlKey.ComputeBackendBucketSignedUrlKeyTimeoutsOutputReference",
-		reflect.TypeOf((*ComputeBackendBucketSignedUrlKeyTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeBackendBucketSignedUrlKeyTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -115,7 +115,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeBackendBucketSignedUrlKeyTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

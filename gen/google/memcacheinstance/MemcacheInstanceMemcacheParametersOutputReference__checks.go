@@ -98,7 +98,7 @@ func (m *jsiiProxy_MemcacheInstanceMemcacheParametersOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_MemcacheInstanceMemcacheParametersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MemcacheInstanceMemcacheParametersOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewMemcacheInstanceMemcacheParametersOutputReferenceParameters(terr
 
 	return nil
 }
-

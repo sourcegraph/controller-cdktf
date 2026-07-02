@@ -98,7 +98,7 @@ func (g *jsiiProxy_GkeonpremVmwareClusterDataplaneV2OutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_GkeonpremVmwareClusterDataplaneV2OutputReference) validateSetAdvancedNetworkingParameters(val interface{}) error {
+func (j *jsiiProxy_GkeonpremVmwareClusterDataplaneV2OutputReference) validateSetAdvancedNetworkingParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -118,7 +118,7 @@ func (j *jsiiProxy_GkeonpremVmwareClusterDataplaneV2OutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_GkeonpremVmwareClusterDataplaneV2OutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GkeonpremVmwareClusterDataplaneV2OutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -183,7 +183,7 @@ func (j *jsiiProxy_GkeonpremVmwareClusterDataplaneV2OutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_GkeonpremVmwareClusterDataplaneV2OutputReference) validateSetDataplaneV2EnabledParameters(val interface{}) error {
+func (j *jsiiProxy_GkeonpremVmwareClusterDataplaneV2OutputReference) validateSetDataplaneV2EnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -227,7 +227,7 @@ func (j *jsiiProxy_GkeonpremVmwareClusterDataplaneV2OutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_GkeonpremVmwareClusterDataplaneV2OutputReference) validateSetWindowsDataplaneV2EnabledParameters(val interface{}) error {
+func (j *jsiiProxy_GkeonpremVmwareClusterDataplaneV2OutputReference) validateSetWindowsDataplaneV2EnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -258,4 +258,3 @@ func validateNewGkeonpremVmwareClusterDataplaneV2OutputReferenceParameters(terra
 
 	return nil
 }
-

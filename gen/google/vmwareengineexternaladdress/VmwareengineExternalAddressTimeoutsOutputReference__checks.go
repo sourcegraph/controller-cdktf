@@ -98,7 +98,7 @@ func (v *jsiiProxy_VmwareengineExternalAddressTimeoutsOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_VmwareengineExternalAddressTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_VmwareengineExternalAddressTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_VmwareengineExternalAddressTimeoutsOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_VmwareengineExternalAddressTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_VmwareengineExternalAddressTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewVmwareengineExternalAddressTimeoutsOutputReferenceParameters(ter
 
 	return nil
 }
-

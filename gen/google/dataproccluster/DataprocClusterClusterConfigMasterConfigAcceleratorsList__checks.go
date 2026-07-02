@@ -34,7 +34,7 @@ func (d *jsiiProxy_DataprocClusterClusterConfigMasterConfigAcceleratorsList) val
 	return nil
 }
 
-func (j *jsiiProxy_DataprocClusterClusterConfigMasterConfigAcceleratorsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocClusterClusterConfigMasterConfigAcceleratorsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDataprocClusterClusterConfigMasterConfigAcceleratorsListParamete
 
 	return nil
 }
-

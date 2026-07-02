@@ -10,17 +10,17 @@ import (
 
 type ComputeInstanceTemplateSchedulingOutputReference interface {
 	cdktf.ComplexObject
-	AutomaticRestart() interface{}
-	SetAutomaticRestart(val interface{})
-	AutomaticRestartInput() interface{}
+	AutomaticRestart() any
+	SetAutomaticRestart(val any)
+	AutomaticRestartInput() any
 	AvailabilityDomain() *float64
 	SetAvailabilityDomain(val *float64)
 	AvailabilityDomainInput() *float64
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -39,22 +39,22 @@ type ComputeInstanceTemplateSchedulingOutputReference interface {
 	InternalValue() *ComputeInstanceTemplateScheduling
 	SetInternalValue(val *ComputeInstanceTemplateScheduling)
 	LocalSsdRecoveryTimeout() ComputeInstanceTemplateSchedulingLocalSsdRecoveryTimeoutList
-	LocalSsdRecoveryTimeoutInput() interface{}
+	LocalSsdRecoveryTimeoutInput() any
 	MaxRunDuration() ComputeInstanceTemplateSchedulingMaxRunDurationOutputReference
 	MaxRunDurationInput() *ComputeInstanceTemplateSchedulingMaxRunDuration
 	MinNodeCpus() *float64
 	SetMinNodeCpus(val *float64)
 	MinNodeCpusInput() *float64
 	NodeAffinities() ComputeInstanceTemplateSchedulingNodeAffinitiesList
-	NodeAffinitiesInput() interface{}
+	NodeAffinitiesInput() any
 	OnHostMaintenance() *string
 	SetOnHostMaintenance(val *string)
 	OnHostMaintenanceInput() *string
 	OnInstanceStopAction() ComputeInstanceTemplateSchedulingOnInstanceStopActionOutputReference
 	OnInstanceStopActionInput() *ComputeInstanceTemplateSchedulingOnInstanceStopAction
-	Preemptible() interface{}
-	SetPreemptible(val interface{})
-	PreemptibleInput() interface{}
+	Preemptible() any
+	SetPreemptible(val any)
+	PreemptibleInput() any
 	ProvisioningModel() *string
 	SetProvisioningModel(val *string)
 	ProvisioningModelInput() *string
@@ -72,7 +72,7 @@ type ComputeInstanceTemplateSchedulingOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -93,9 +93,9 @@ type ComputeInstanceTemplateSchedulingOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutLocalSsdRecoveryTimeout(value interface{})
+	PutLocalSsdRecoveryTimeout(value any)
 	PutMaxRunDuration(value *ComputeInstanceTemplateSchedulingMaxRunDuration)
-	PutNodeAffinities(value interface{})
+	PutNodeAffinities(value any)
 	PutOnInstanceStopAction(value *ComputeInstanceTemplateSchedulingOnInstanceStopAction)
 	ResetAutomaticRestart()
 	ResetAvailabilityDomain()
@@ -111,7 +111,7 @@ type ComputeInstanceTemplateSchedulingOutputReference interface {
 	ResetTerminationTime()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -124,8 +124,8 @@ type jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference) AutomaticRestart() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference) AutomaticRestart() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"automaticRestart",
@@ -134,8 +134,8 @@ func (j *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference) AutomaticRe
 	return returns
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference) AutomaticRestartInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference) AutomaticRestartInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"automaticRestartInput",
@@ -164,8 +164,8 @@ func (j *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference) Availabilit
 	return returns
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -244,8 +244,8 @@ func (j *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference) LocalSsdRec
 	return returns
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference) LocalSsdRecoveryTimeoutInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference) LocalSsdRecoveryTimeoutInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"localSsdRecoveryTimeoutInput",
@@ -304,8 +304,8 @@ func (j *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference) NodeAffinit
 	return returns
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference) NodeAffinitiesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference) NodeAffinitiesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"nodeAffinitiesInput",
@@ -354,8 +354,8 @@ func (j *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference) OnInstanceS
 	return returns
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference) Preemptible() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference) Preemptible() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"preemptible",
@@ -364,8 +364,8 @@ func (j *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference) Preemptible
 	return returns
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference) PreemptibleInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference) PreemptibleInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"preemptibleInput",
@@ -434,7 +434,6 @@ func (j *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference) TerraformRe
 	return returns
 }
 
-
 func NewComputeInstanceTemplateSchedulingOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ComputeInstanceTemplateSchedulingOutputReference {
 	_init_.Initialize()
 
@@ -445,7 +444,7 @@ func NewComputeInstanceTemplateSchedulingOutputReference(terraformResource cdktf
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeInstanceTemplate.ComputeInstanceTemplateSchedulingOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -457,12 +456,12 @@ func NewComputeInstanceTemplateSchedulingOutputReference_Override(c ComputeInsta
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeInstanceTemplate.ComputeInstanceTemplateSchedulingOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference)SetAutomaticRestart(val interface{}) {
+func (j *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference) SetAutomaticRestart(val any) {
 	if err := j.validateSetAutomaticRestartParameters(val); err != nil {
 		panic(err)
 	}
@@ -473,7 +472,7 @@ func (j *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference)SetAutomatic
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference)SetAvailabilityDomain(val *float64) {
+func (j *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference) SetAvailabilityDomain(val *float64) {
 	if err := j.validateSetAvailabilityDomainParameters(val); err != nil {
 		panic(err)
 	}
@@ -484,7 +483,7 @@ func (j *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference)SetAvailabil
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -495,7 +494,7 @@ func (j *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -506,7 +505,7 @@ func (j *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference)SetInstanceTerminationAction(val *string) {
+func (j *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference) SetInstanceTerminationAction(val *string) {
 	if err := j.validateSetInstanceTerminationActionParameters(val); err != nil {
 		panic(err)
 	}
@@ -517,7 +516,7 @@ func (j *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference)SetInstanceT
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference)SetInternalValue(val *ComputeInstanceTemplateScheduling) {
+func (j *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference) SetInternalValue(val *ComputeInstanceTemplateScheduling) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -528,7 +527,7 @@ func (j *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference)SetInternalV
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference)SetMinNodeCpus(val *float64) {
+func (j *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference) SetMinNodeCpus(val *float64) {
 	if err := j.validateSetMinNodeCpusParameters(val); err != nil {
 		panic(err)
 	}
@@ -539,7 +538,7 @@ func (j *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference)SetMinNodeCp
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference)SetOnHostMaintenance(val *string) {
+func (j *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference) SetOnHostMaintenance(val *string) {
 	if err := j.validateSetOnHostMaintenanceParameters(val); err != nil {
 		panic(err)
 	}
@@ -550,7 +549,7 @@ func (j *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference)SetOnHostMai
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference)SetPreemptible(val interface{}) {
+func (j *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference) SetPreemptible(val any) {
 	if err := j.validateSetPreemptibleParameters(val); err != nil {
 		panic(err)
 	}
@@ -561,7 +560,7 @@ func (j *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference)SetPreemptib
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference)SetProvisioningModel(val *string) {
+func (j *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference) SetProvisioningModel(val *string) {
 	if err := j.validateSetProvisioningModelParameters(val); err != nil {
 		panic(err)
 	}
@@ -572,7 +571,7 @@ func (j *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference)SetProvision
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference)SetTerminationTime(val *string) {
+func (j *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference) SetTerminationTime(val *string) {
 	if err := j.validateSetTerminationTimeParameters(val); err != nil {
 		panic(err)
 	}
@@ -583,7 +582,7 @@ func (j *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference)SetTerminati
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -594,7 +593,7 @@ func (j *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -618,16 +617,16 @@ func (c *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference) ComputeFqn(
 	return returns
 }
 
-func (c *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -643,7 +642,7 @@ func (c *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference) GetBooleanA
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -659,7 +658,7 @@ func (c *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference) GetBooleanM
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -675,7 +674,7 @@ func (c *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference) GetListAttr
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -691,7 +690,7 @@ func (c *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference) GetNumberAt
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -707,7 +706,7 @@ func (c *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference) GetNumberLi
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -723,7 +722,7 @@ func (c *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference) GetNumberMa
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -739,7 +738,7 @@ func (c *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference) GetStringAt
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -755,7 +754,7 @@ func (c *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference) GetStringMa
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -784,21 +783,21 @@ func (c *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference) Interpolati
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference) PutLocalSsdRecoveryTimeout(value interface{}) {
+func (c *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference) PutLocalSsdRecoveryTimeout(value any) {
 	if err := c.validatePutLocalSsdRecoveryTimeoutParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putLocalSsdRecoveryTimeout",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -809,18 +808,18 @@ func (c *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference) PutMaxRunDu
 	_jsii_.InvokeVoid(
 		c,
 		"putMaxRunDuration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference) PutNodeAffinities(value interface{}) {
+func (c *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference) PutNodeAffinities(value any) {
 	if err := c.validatePutNodeAffinitiesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putNodeAffinities",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -831,7 +830,7 @@ func (c *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference) PutOnInstan
 	_jsii_.InvokeVoid(
 		c,
 		"putOnInstanceStopAction",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -931,16 +930,16 @@ func (c *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference) ResetTermin
 	)
 }
 
-func (c *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -959,4 +958,3 @@ func (c *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference) ToString() 
 
 	return returns
 }
-

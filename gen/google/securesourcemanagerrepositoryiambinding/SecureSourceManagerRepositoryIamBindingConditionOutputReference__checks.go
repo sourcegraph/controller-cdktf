@@ -98,7 +98,7 @@ func (s *jsiiProxy_SecureSourceManagerRepositoryIamBindingConditionOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_SecureSourceManagerRepositoryIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SecureSourceManagerRepositoryIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewSecureSourceManagerRepositoryIamBindingConditionOutputReferenceP
 
 	return nil
 }
-

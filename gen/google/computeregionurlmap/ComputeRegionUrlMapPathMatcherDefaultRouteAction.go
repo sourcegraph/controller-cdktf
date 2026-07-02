@@ -1,6 +1,5 @@
 package computeregionurlmap
 
-
 type ComputeRegionUrlMapPathMatcherDefaultRouteAction struct {
 	// cors_policy block.
 	//
@@ -33,6 +32,5 @@ type ComputeRegionUrlMapPathMatcherDefaultRouteAction struct {
 	// weighted_backend_services block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_url_map#weighted_backend_services ComputeRegionUrlMap#weighted_backend_services}
-	WeightedBackendServices interface{} `field:"optional" json:"weightedBackendServices" yaml:"weightedBackendServices"`
+	WeightedBackendServices any `field:"optional" json:"weightedBackendServices" yaml:"weightedBackendServices"`
 }
-

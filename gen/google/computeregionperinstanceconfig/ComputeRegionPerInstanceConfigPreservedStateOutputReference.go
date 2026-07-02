@@ -12,9 +12,9 @@ type ComputeRegionPerInstanceConfigPreservedStateOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -26,13 +26,13 @@ type ComputeRegionPerInstanceConfigPreservedStateOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	Disk() ComputeRegionPerInstanceConfigPreservedStateDiskList
-	DiskInput() interface{}
+	DiskInput() any
 	ExternalIp() ComputeRegionPerInstanceConfigPreservedStateExternalIpList
-	ExternalIpInput() interface{}
+	ExternalIpInput() any
 	// Experimental.
 	Fqn() *string
 	InternalIp() ComputeRegionPerInstanceConfigPreservedStateInternalIpList
-	InternalIpInput() interface{}
+	InternalIpInput() any
 	InternalValue() *ComputeRegionPerInstanceConfigPreservedState
 	SetInternalValue(val *ComputeRegionPerInstanceConfigPreservedState)
 	Metadata() *map[string]*string
@@ -49,7 +49,7 @@ type ComputeRegionPerInstanceConfigPreservedStateOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -70,16 +70,16 @@ type ComputeRegionPerInstanceConfigPreservedStateOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutDisk(value interface{})
-	PutExternalIp(value interface{})
-	PutInternalIp(value interface{})
+	PutDisk(value any)
+	PutExternalIp(value any)
+	PutInternalIp(value any)
 	ResetDisk()
 	ResetExternalIp()
 	ResetInternalIp()
 	ResetMetadata()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,8 +92,8 @@ type jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateOutputReference struc
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -132,8 +132,8 @@ func (j *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateOutputReference) DiskInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateOutputReference) DiskInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"diskInput",
@@ -152,8 +152,8 @@ func (j *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateOutputReference) ExternalIpInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateOutputReference) ExternalIpInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"externalIpInput",
@@ -182,8 +182,8 @@ func (j *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateOutputReference) InternalIpInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateOutputReference) InternalIpInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalIpInput",
@@ -242,7 +242,6 @@ func (j *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateOutputReference) 
 	return returns
 }
 
-
 func NewComputeRegionPerInstanceConfigPreservedStateOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ComputeRegionPerInstanceConfigPreservedStateOutputReference {
 	_init_.Initialize()
 
@@ -253,7 +252,7 @@ func NewComputeRegionPerInstanceConfigPreservedStateOutputReference(terraformRes
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeRegionPerInstanceConfig.ComputeRegionPerInstanceConfigPreservedStateOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -265,12 +264,12 @@ func NewComputeRegionPerInstanceConfigPreservedStateOutputReference_Override(c C
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeRegionPerInstanceConfig.ComputeRegionPerInstanceConfigPreservedStateOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,7 +280,7 @@ func (j *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,7 +291,7 @@ func (j *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateOutputReference)SetInternalValue(val *ComputeRegionPerInstanceConfigPreservedState) {
+func (j *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateOutputReference) SetInternalValue(val *ComputeRegionPerInstanceConfigPreservedState) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateOutputReference)SetMetadata(val *map[string]*string) {
+func (j *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateOutputReference) SetMetadata(val *map[string]*string) {
 	if err := j.validateSetMetadataParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,16 +348,16 @@ func (c *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateOutputReference) 
 	return returns
 }
 
-func (c *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -374,7 +373,7 @@ func (c *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateOutputReference) 
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -390,7 +389,7 @@ func (c *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateOutputReference) 
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -406,7 +405,7 @@ func (c *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateOutputReference) 
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -422,7 +421,7 @@ func (c *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateOutputReference) 
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -438,7 +437,7 @@ func (c *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateOutputReference) 
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -454,7 +453,7 @@ func (c *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateOutputReference) 
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -470,7 +469,7 @@ func (c *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateOutputReference) 
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -486,7 +485,7 @@ func (c *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateOutputReference) 
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -515,43 +514,43 @@ func (c *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateOutputReference) 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateOutputReference) PutDisk(value interface{}) {
+func (c *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateOutputReference) PutDisk(value any) {
 	if err := c.validatePutDiskParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putDisk",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateOutputReference) PutExternalIp(value interface{}) {
+func (c *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateOutputReference) PutExternalIp(value any) {
 	if err := c.validatePutExternalIpParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putExternalIp",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateOutputReference) PutInternalIp(value interface{}) {
+func (c *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateOutputReference) PutInternalIp(value any) {
 	if err := c.validatePutInternalIpParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putInternalIp",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -587,16 +586,16 @@ func (c *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateOutputReference) 
 	)
 }
 
-func (c *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -615,4 +614,3 @@ func (c *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateOutputReference) 
 
 	return returns
 }
-

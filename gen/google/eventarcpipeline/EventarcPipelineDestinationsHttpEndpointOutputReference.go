@@ -12,9 +12,9 @@ type EventarcPipelineDestinationsHttpEndpointOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -46,7 +46,7 @@ type EventarcPipelineDestinationsHttpEndpointOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -70,7 +70,7 @@ type EventarcPipelineDestinationsHttpEndpointOutputReference interface {
 	ResetMessageBindingTemplate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,8 +83,8 @@ type jsiiProxy_EventarcPipelineDestinationsHttpEndpointOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_EventarcPipelineDestinationsHttpEndpointOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EventarcPipelineDestinationsHttpEndpointOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -193,7 +193,6 @@ func (j *jsiiProxy_EventarcPipelineDestinationsHttpEndpointOutputReference) UriI
 	return returns
 }
 
-
 func NewEventarcPipelineDestinationsHttpEndpointOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) EventarcPipelineDestinationsHttpEndpointOutputReference {
 	_init_.Initialize()
 
@@ -204,7 +203,7 @@ func NewEventarcPipelineDestinationsHttpEndpointOutputReference(terraformResourc
 
 	_jsii_.Create(
 		"@cdktf/provider-google.eventarcPipeline.EventarcPipelineDestinationsHttpEndpointOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -216,12 +215,12 @@ func NewEventarcPipelineDestinationsHttpEndpointOutputReference_Override(e Event
 
 	_jsii_.Create(
 		"@cdktf/provider-google.eventarcPipeline.EventarcPipelineDestinationsHttpEndpointOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		e,
 	)
 }
 
-func (j *jsiiProxy_EventarcPipelineDestinationsHttpEndpointOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_EventarcPipelineDestinationsHttpEndpointOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -232,7 +231,7 @@ func (j *jsiiProxy_EventarcPipelineDestinationsHttpEndpointOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_EventarcPipelineDestinationsHttpEndpointOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_EventarcPipelineDestinationsHttpEndpointOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -243,7 +242,7 @@ func (j *jsiiProxy_EventarcPipelineDestinationsHttpEndpointOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_EventarcPipelineDestinationsHttpEndpointOutputReference)SetInternalValue(val *EventarcPipelineDestinationsHttpEndpoint) {
+func (j *jsiiProxy_EventarcPipelineDestinationsHttpEndpointOutputReference) SetInternalValue(val *EventarcPipelineDestinationsHttpEndpoint) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_EventarcPipelineDestinationsHttpEndpointOutputReference)SetIn
 	)
 }
 
-func (j *jsiiProxy_EventarcPipelineDestinationsHttpEndpointOutputReference)SetMessageBindingTemplate(val *string) {
+func (j *jsiiProxy_EventarcPipelineDestinationsHttpEndpointOutputReference) SetMessageBindingTemplate(val *string) {
 	if err := j.validateSetMessageBindingTemplateParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_EventarcPipelineDestinationsHttpEndpointOutputReference)SetMe
 	)
 }
 
-func (j *jsiiProxy_EventarcPipelineDestinationsHttpEndpointOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_EventarcPipelineDestinationsHttpEndpointOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_EventarcPipelineDestinationsHttpEndpointOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_EventarcPipelineDestinationsHttpEndpointOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EventarcPipelineDestinationsHttpEndpointOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,7 +286,7 @@ func (j *jsiiProxy_EventarcPipelineDestinationsHttpEndpointOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_EventarcPipelineDestinationsHttpEndpointOutputReference)SetUri(val *string) {
+func (j *jsiiProxy_EventarcPipelineDestinationsHttpEndpointOutputReference) SetUri(val *string) {
 	if err := j.validateSetUriParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,16 +310,16 @@ func (e *jsiiProxy_EventarcPipelineDestinationsHttpEndpointOutputReference) Comp
 	return returns
 }
 
-func (e *jsiiProxy_EventarcPipelineDestinationsHttpEndpointOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_EventarcPipelineDestinationsHttpEndpointOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -336,7 +335,7 @@ func (e *jsiiProxy_EventarcPipelineDestinationsHttpEndpointOutputReference) GetB
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -352,7 +351,7 @@ func (e *jsiiProxy_EventarcPipelineDestinationsHttpEndpointOutputReference) GetB
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -368,7 +367,7 @@ func (e *jsiiProxy_EventarcPipelineDestinationsHttpEndpointOutputReference) GetL
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -384,7 +383,7 @@ func (e *jsiiProxy_EventarcPipelineDestinationsHttpEndpointOutputReference) GetN
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -400,7 +399,7 @@ func (e *jsiiProxy_EventarcPipelineDestinationsHttpEndpointOutputReference) GetN
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -416,7 +415,7 @@ func (e *jsiiProxy_EventarcPipelineDestinationsHttpEndpointOutputReference) GetN
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -432,7 +431,7 @@ func (e *jsiiProxy_EventarcPipelineDestinationsHttpEndpointOutputReference) GetS
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -448,7 +447,7 @@ func (e *jsiiProxy_EventarcPipelineDestinationsHttpEndpointOutputReference) GetS
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -477,7 +476,7 @@ func (e *jsiiProxy_EventarcPipelineDestinationsHttpEndpointOutputReference) Inte
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -492,16 +491,16 @@ func (e *jsiiProxy_EventarcPipelineDestinationsHttpEndpointOutputReference) Rese
 	)
 }
 
-func (e *jsiiProxy_EventarcPipelineDestinationsHttpEndpointOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (e *jsiiProxy_EventarcPipelineDestinationsHttpEndpointOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := e.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -520,4 +519,3 @@ func (e *jsiiProxy_EventarcPipelineDestinationsHttpEndpointOutputReference) ToSt
 
 	return returns
 }
-

@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataFusionInstanceIamBindingConditionOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_DataFusionInstanceIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataFusionInstanceIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewDataFusionInstanceIamBindingConditionOutputReferenceParameters(t
 
 	return nil
 }
-

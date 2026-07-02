@@ -36,7 +36,7 @@ type MemorystoreInstanceManagedServerCaList interface {
 	Get(index *float64) MemorystoreInstanceManagedServerCaOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,7 +99,6 @@ func (j *jsiiProxy_MemorystoreInstanceManagedServerCaList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewMemorystoreInstanceManagedServerCaList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MemorystoreInstanceManagedServerCaList {
 	_init_.Initialize()
 
@@ -110,7 +109,7 @@ func NewMemorystoreInstanceManagedServerCaList(terraformResource cdktf.IInterpol
 
 	_jsii_.Create(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceManagedServerCaList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -122,12 +121,12 @@ func NewMemorystoreInstanceManagedServerCaList_Override(m MemorystoreInstanceMan
 
 	_jsii_.Create(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceManagedServerCaList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		m,
 	)
 }
 
-func (j *jsiiProxy_MemorystoreInstanceManagedServerCaList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MemorystoreInstanceManagedServerCaList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -138,7 +137,7 @@ func (j *jsiiProxy_MemorystoreInstanceManagedServerCaList)SetTerraformAttribute(
 	)
 }
 
-func (j *jsiiProxy_MemorystoreInstanceManagedServerCaList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MemorystoreInstanceManagedServerCaList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -149,7 +148,7 @@ func (j *jsiiProxy_MemorystoreInstanceManagedServerCaList)SetTerraformResource(v
 	)
 }
 
-func (j *jsiiProxy_MemorystoreInstanceManagedServerCaList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_MemorystoreInstanceManagedServerCaList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -169,7 +168,7 @@ func (m *jsiiProxy_MemorystoreInstanceManagedServerCaList) AllWithMapKey(mapKeyA
 	_jsii_.Invoke(
 		m,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -198,23 +197,23 @@ func (m *jsiiProxy_MemorystoreInstanceManagedServerCaList) Get(index *float64) M
 	_jsii_.Invoke(
 		m,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (m *jsiiProxy_MemorystoreInstanceManagedServerCaList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_MemorystoreInstanceManagedServerCaList) Resolve(_context cdktf.IResolveContext) any {
 	if err := m.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -233,4 +232,3 @@ func (m *jsiiProxy_MemorystoreInstanceManagedServerCaList) ToString() *string {
 
 	return returns
 }
-

@@ -34,7 +34,7 @@ func (d *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesList) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDialogflowCxPageEntryFulfillmentMessagesListParameters(terraform
 
 	return nil
 }
-

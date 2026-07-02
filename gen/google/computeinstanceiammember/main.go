@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeInstanceIamMember.ComputeInstanceIamMember",
-		reflect.TypeOf((*ComputeInstanceIamMember)(nil)).Elem(),
+		reflect.TypeFor[ComputeInstanceIamMember](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,7 +73,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zone", GoGetter: "Zone"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneInput", GoGetter: "ZoneInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeInstanceIamMember{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -81,11 +81,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeInstanceIamMember.ComputeInstanceIamMemberCondition",
-		reflect.TypeOf((*ComputeInstanceIamMemberCondition)(nil)).Elem(),
+		reflect.TypeFor[ComputeInstanceIamMemberCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeInstanceIamMember.ComputeInstanceIamMemberConditionOutputReference",
-		reflect.TypeOf((*ComputeInstanceIamMemberConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeInstanceIamMemberConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -116,7 +116,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeInstanceIamMemberConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -124,6 +124,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeInstanceIamMember.ComputeInstanceIamMemberConfig",
-		reflect.TypeOf((*ComputeInstanceIamMemberConfig)(nil)).Elem(),
+		reflect.TypeFor[ComputeInstanceIamMemberConfig](),
 	)
 }

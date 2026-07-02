@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleSecretManagerRegionalSecrets.DataGoogleSecretManagerRegionalSecrets",
-		reflect.TypeOf((*DataGoogleSecretManagerRegionalSecrets)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleSecretManagerRegionalSecrets](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -57,7 +57,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleSecretManagerRegionalSecrets{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -65,19 +65,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleSecretManagerRegionalSecrets.DataGoogleSecretManagerRegionalSecretsConfig",
-		reflect.TypeOf((*DataGoogleSecretManagerRegionalSecretsConfig)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleSecretManagerRegionalSecretsConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleSecretManagerRegionalSecrets.DataGoogleSecretManagerRegionalSecretsSecrets",
-		reflect.TypeOf((*DataGoogleSecretManagerRegionalSecretsSecrets)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleSecretManagerRegionalSecretsSecrets](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleSecretManagerRegionalSecrets.DataGoogleSecretManagerRegionalSecretsSecretsCustomerManagedEncryption",
-		reflect.TypeOf((*DataGoogleSecretManagerRegionalSecretsSecretsCustomerManagedEncryption)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleSecretManagerRegionalSecretsSecretsCustomerManagedEncryption](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleSecretManagerRegionalSecrets.DataGoogleSecretManagerRegionalSecretsSecretsCustomerManagedEncryptionList",
-		reflect.TypeOf((*DataGoogleSecretManagerRegionalSecretsSecretsCustomerManagedEncryptionList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleSecretManagerRegionalSecretsSecretsCustomerManagedEncryptionList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -90,7 +90,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleSecretManagerRegionalSecretsSecretsCustomerManagedEncryptionList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -98,7 +98,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleSecretManagerRegionalSecrets.DataGoogleSecretManagerRegionalSecretsSecretsCustomerManagedEncryptionOutputReference",
-		reflect.TypeOf((*DataGoogleSecretManagerRegionalSecretsSecretsCustomerManagedEncryptionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleSecretManagerRegionalSecretsSecretsCustomerManagedEncryptionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -123,7 +123,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleSecretManagerRegionalSecretsSecretsCustomerManagedEncryptionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -131,7 +131,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleSecretManagerRegionalSecrets.DataGoogleSecretManagerRegionalSecretsSecretsList",
-		reflect.TypeOf((*DataGoogleSecretManagerRegionalSecretsSecretsList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleSecretManagerRegionalSecretsSecretsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -144,7 +144,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleSecretManagerRegionalSecretsSecretsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -152,7 +152,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleSecretManagerRegionalSecrets.DataGoogleSecretManagerRegionalSecretsSecretsOutputReference",
-		reflect.TypeOf((*DataGoogleSecretManagerRegionalSecretsSecretsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleSecretManagerRegionalSecretsSecretsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "annotations", GoGetter: "Annotations"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -195,7 +195,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "versionAliases", GoGetter: "VersionAliases"},
 			_jsii_.MemberProperty{JsiiProperty: "versionDestroyTtl", GoGetter: "VersionDestroyTtl"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleSecretManagerRegionalSecretsSecretsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -203,11 +203,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleSecretManagerRegionalSecrets.DataGoogleSecretManagerRegionalSecretsSecretsRotation",
-		reflect.TypeOf((*DataGoogleSecretManagerRegionalSecretsSecretsRotation)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleSecretManagerRegionalSecretsSecretsRotation](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleSecretManagerRegionalSecrets.DataGoogleSecretManagerRegionalSecretsSecretsRotationList",
-		reflect.TypeOf((*DataGoogleSecretManagerRegionalSecretsSecretsRotationList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleSecretManagerRegionalSecretsSecretsRotationList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -220,7 +220,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleSecretManagerRegionalSecretsSecretsRotationList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -228,7 +228,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleSecretManagerRegionalSecrets.DataGoogleSecretManagerRegionalSecretsSecretsRotationOutputReference",
-		reflect.TypeOf((*DataGoogleSecretManagerRegionalSecretsSecretsRotationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleSecretManagerRegionalSecretsSecretsRotationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -254,7 +254,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleSecretManagerRegionalSecretsSecretsRotationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -262,11 +262,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleSecretManagerRegionalSecrets.DataGoogleSecretManagerRegionalSecretsSecretsTopics",
-		reflect.TypeOf((*DataGoogleSecretManagerRegionalSecretsSecretsTopics)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleSecretManagerRegionalSecretsSecretsTopics](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleSecretManagerRegionalSecrets.DataGoogleSecretManagerRegionalSecretsSecretsTopicsList",
-		reflect.TypeOf((*DataGoogleSecretManagerRegionalSecretsSecretsTopicsList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleSecretManagerRegionalSecretsSecretsTopicsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -279,7 +279,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleSecretManagerRegionalSecretsSecretsTopicsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -287,7 +287,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleSecretManagerRegionalSecrets.DataGoogleSecretManagerRegionalSecretsSecretsTopicsOutputReference",
-		reflect.TypeOf((*DataGoogleSecretManagerRegionalSecretsSecretsTopicsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleSecretManagerRegionalSecretsSecretsTopicsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -312,7 +312,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleSecretManagerRegionalSecretsSecretsTopicsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

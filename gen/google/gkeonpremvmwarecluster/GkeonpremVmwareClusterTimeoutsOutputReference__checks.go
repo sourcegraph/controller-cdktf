@@ -98,7 +98,7 @@ func (g *jsiiProxy_GkeonpremVmwareClusterTimeoutsOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_GkeonpremVmwareClusterTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GkeonpremVmwareClusterTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GkeonpremVmwareClusterTimeoutsOutputReference) validateSetDel
 	return nil
 }
 
-func (j *jsiiProxy_GkeonpremVmwareClusterTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GkeonpremVmwareClusterTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGkeonpremVmwareClusterTimeoutsOutputReferenceParameters(terrafor
 
 	return nil
 }
-

@@ -117,7 +117,7 @@ func (j *jsiiProxy_ComputeBackendServiceSecuritySettingsOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_ComputeBackendServiceSecuritySettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeBackendServiceSecuritySettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -225,4 +225,3 @@ func validateNewComputeBackendServiceSecuritySettingsOutputReferenceParameters(t
 
 	return nil
 }
-

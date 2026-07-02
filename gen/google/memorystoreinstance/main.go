@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstance",
-		reflect.TypeOf((*MemorystoreInstance)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstance](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -162,7 +162,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zoneDistributionConfig", GoGetter: "ZoneDistributionConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneDistributionConfigInput", GoGetter: "ZoneDistributionConfigInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MemorystoreInstance{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -170,15 +170,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceAutomatedBackupConfig",
-		reflect.TypeOf((*MemorystoreInstanceAutomatedBackupConfig)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstanceAutomatedBackupConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceAutomatedBackupConfigFixedFrequencySchedule",
-		reflect.TypeOf((*MemorystoreInstanceAutomatedBackupConfigFixedFrequencySchedule)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstanceAutomatedBackupConfigFixedFrequencySchedule](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceAutomatedBackupConfigFixedFrequencyScheduleOutputReference",
-		reflect.TypeOf((*MemorystoreInstanceAutomatedBackupConfigFixedFrequencyScheduleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstanceAutomatedBackupConfigFixedFrequencyScheduleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -205,7 +205,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MemorystoreInstanceAutomatedBackupConfigFixedFrequencyScheduleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -213,11 +213,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceAutomatedBackupConfigFixedFrequencyScheduleStartTime",
-		reflect.TypeOf((*MemorystoreInstanceAutomatedBackupConfigFixedFrequencyScheduleStartTime)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstanceAutomatedBackupConfigFixedFrequencyScheduleStartTime](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceAutomatedBackupConfigFixedFrequencyScheduleStartTimeOutputReference",
-		reflect.TypeOf((*MemorystoreInstanceAutomatedBackupConfigFixedFrequencyScheduleStartTimeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstanceAutomatedBackupConfigFixedFrequencyScheduleStartTimeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -243,7 +243,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MemorystoreInstanceAutomatedBackupConfigFixedFrequencyScheduleStartTimeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -251,7 +251,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceAutomatedBackupConfigOutputReference",
-		reflect.TypeOf((*MemorystoreInstanceAutomatedBackupConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstanceAutomatedBackupConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -280,7 +280,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MemorystoreInstanceAutomatedBackupConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -288,19 +288,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceConfig",
-		reflect.TypeOf((*MemorystoreInstanceConfig)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstanceConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceCrossInstanceReplicationConfig",
-		reflect.TypeOf((*MemorystoreInstanceCrossInstanceReplicationConfig)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstanceCrossInstanceReplicationConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceCrossInstanceReplicationConfigMembership",
-		reflect.TypeOf((*MemorystoreInstanceCrossInstanceReplicationConfigMembership)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstanceCrossInstanceReplicationConfigMembership](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceCrossInstanceReplicationConfigMembershipList",
-		reflect.TypeOf((*MemorystoreInstanceCrossInstanceReplicationConfigMembershipList)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstanceCrossInstanceReplicationConfigMembershipList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -313,7 +313,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MemorystoreInstanceCrossInstanceReplicationConfigMembershipList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -321,7 +321,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceCrossInstanceReplicationConfigMembershipOutputReference",
-		reflect.TypeOf((*MemorystoreInstanceCrossInstanceReplicationConfigMembershipOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstanceCrossInstanceReplicationConfigMembershipOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -347,7 +347,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MemorystoreInstanceCrossInstanceReplicationConfigMembershipOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -355,11 +355,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceCrossInstanceReplicationConfigMembershipPrimaryInstance",
-		reflect.TypeOf((*MemorystoreInstanceCrossInstanceReplicationConfigMembershipPrimaryInstance)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstanceCrossInstanceReplicationConfigMembershipPrimaryInstance](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceCrossInstanceReplicationConfigMembershipPrimaryInstanceList",
-		reflect.TypeOf((*MemorystoreInstanceCrossInstanceReplicationConfigMembershipPrimaryInstanceList)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstanceCrossInstanceReplicationConfigMembershipPrimaryInstanceList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -372,7 +372,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MemorystoreInstanceCrossInstanceReplicationConfigMembershipPrimaryInstanceList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -380,7 +380,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceCrossInstanceReplicationConfigMembershipPrimaryInstanceOutputReference",
-		reflect.TypeOf((*MemorystoreInstanceCrossInstanceReplicationConfigMembershipPrimaryInstanceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstanceCrossInstanceReplicationConfigMembershipPrimaryInstanceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -406,7 +406,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MemorystoreInstanceCrossInstanceReplicationConfigMembershipPrimaryInstanceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -414,11 +414,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceCrossInstanceReplicationConfigMembershipSecondaryInstance",
-		reflect.TypeOf((*MemorystoreInstanceCrossInstanceReplicationConfigMembershipSecondaryInstance)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstanceCrossInstanceReplicationConfigMembershipSecondaryInstance](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceCrossInstanceReplicationConfigMembershipSecondaryInstanceList",
-		reflect.TypeOf((*MemorystoreInstanceCrossInstanceReplicationConfigMembershipSecondaryInstanceList)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstanceCrossInstanceReplicationConfigMembershipSecondaryInstanceList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -431,7 +431,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MemorystoreInstanceCrossInstanceReplicationConfigMembershipSecondaryInstanceList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -439,7 +439,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceCrossInstanceReplicationConfigMembershipSecondaryInstanceOutputReference",
-		reflect.TypeOf((*MemorystoreInstanceCrossInstanceReplicationConfigMembershipSecondaryInstanceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstanceCrossInstanceReplicationConfigMembershipSecondaryInstanceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -465,7 +465,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MemorystoreInstanceCrossInstanceReplicationConfigMembershipSecondaryInstanceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -473,7 +473,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceCrossInstanceReplicationConfigOutputReference",
-		reflect.TypeOf((*MemorystoreInstanceCrossInstanceReplicationConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstanceCrossInstanceReplicationConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -510,7 +510,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MemorystoreInstanceCrossInstanceReplicationConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -518,11 +518,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceCrossInstanceReplicationConfigPrimaryInstance",
-		reflect.TypeOf((*MemorystoreInstanceCrossInstanceReplicationConfigPrimaryInstance)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstanceCrossInstanceReplicationConfigPrimaryInstance](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceCrossInstanceReplicationConfigPrimaryInstanceOutputReference",
-		reflect.TypeOf((*MemorystoreInstanceCrossInstanceReplicationConfigPrimaryInstanceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstanceCrossInstanceReplicationConfigPrimaryInstanceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -550,7 +550,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MemorystoreInstanceCrossInstanceReplicationConfigPrimaryInstanceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -558,11 +558,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceCrossInstanceReplicationConfigSecondaryInstances",
-		reflect.TypeOf((*MemorystoreInstanceCrossInstanceReplicationConfigSecondaryInstances)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstanceCrossInstanceReplicationConfigSecondaryInstances](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceCrossInstanceReplicationConfigSecondaryInstancesList",
-		reflect.TypeOf((*MemorystoreInstanceCrossInstanceReplicationConfigSecondaryInstancesList)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstanceCrossInstanceReplicationConfigSecondaryInstancesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -576,7 +576,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MemorystoreInstanceCrossInstanceReplicationConfigSecondaryInstancesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -584,7 +584,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceCrossInstanceReplicationConfigSecondaryInstancesOutputReference",
-		reflect.TypeOf((*MemorystoreInstanceCrossInstanceReplicationConfigSecondaryInstancesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstanceCrossInstanceReplicationConfigSecondaryInstancesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -612,7 +612,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MemorystoreInstanceCrossInstanceReplicationConfigSecondaryInstancesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -620,11 +620,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceDesiredAutoCreatedEndpoints",
-		reflect.TypeOf((*MemorystoreInstanceDesiredAutoCreatedEndpoints)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstanceDesiredAutoCreatedEndpoints](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceDesiredAutoCreatedEndpointsList",
-		reflect.TypeOf((*MemorystoreInstanceDesiredAutoCreatedEndpointsList)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstanceDesiredAutoCreatedEndpointsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -638,7 +638,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MemorystoreInstanceDesiredAutoCreatedEndpointsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -646,7 +646,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceDesiredAutoCreatedEndpointsOutputReference",
-		reflect.TypeOf((*MemorystoreInstanceDesiredAutoCreatedEndpointsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstanceDesiredAutoCreatedEndpointsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -674,7 +674,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MemorystoreInstanceDesiredAutoCreatedEndpointsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -682,11 +682,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceDesiredPscAutoConnections",
-		reflect.TypeOf((*MemorystoreInstanceDesiredPscAutoConnections)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstanceDesiredPscAutoConnections](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceDesiredPscAutoConnectionsList",
-		reflect.TypeOf((*MemorystoreInstanceDesiredPscAutoConnectionsList)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstanceDesiredPscAutoConnectionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -700,7 +700,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MemorystoreInstanceDesiredPscAutoConnectionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -708,7 +708,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceDesiredPscAutoConnectionsOutputReference",
-		reflect.TypeOf((*MemorystoreInstanceDesiredPscAutoConnectionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstanceDesiredPscAutoConnectionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -736,7 +736,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MemorystoreInstanceDesiredPscAutoConnectionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -744,11 +744,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceDiscoveryEndpoints",
-		reflect.TypeOf((*MemorystoreInstanceDiscoveryEndpoints)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstanceDiscoveryEndpoints](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceDiscoveryEndpointsList",
-		reflect.TypeOf((*MemorystoreInstanceDiscoveryEndpointsList)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstanceDiscoveryEndpointsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -761,7 +761,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MemorystoreInstanceDiscoveryEndpointsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -769,7 +769,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceDiscoveryEndpointsOutputReference",
-		reflect.TypeOf((*MemorystoreInstanceDiscoveryEndpointsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstanceDiscoveryEndpointsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "address", GoGetter: "Address"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -796,7 +796,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MemorystoreInstanceDiscoveryEndpointsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -804,15 +804,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceEndpoints",
-		reflect.TypeOf((*MemorystoreInstanceEndpoints)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstanceEndpoints](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceEndpointsConnections",
-		reflect.TypeOf((*MemorystoreInstanceEndpointsConnections)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstanceEndpointsConnections](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceEndpointsConnectionsList",
-		reflect.TypeOf((*MemorystoreInstanceEndpointsConnectionsList)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstanceEndpointsConnectionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -825,7 +825,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MemorystoreInstanceEndpointsConnectionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -833,7 +833,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceEndpointsConnectionsOutputReference",
-		reflect.TypeOf((*MemorystoreInstanceEndpointsConnectionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstanceEndpointsConnectionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -858,7 +858,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MemorystoreInstanceEndpointsConnectionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -866,11 +866,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceEndpointsConnectionsPscAutoConnection",
-		reflect.TypeOf((*MemorystoreInstanceEndpointsConnectionsPscAutoConnection)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstanceEndpointsConnectionsPscAutoConnection](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceEndpointsConnectionsPscAutoConnectionList",
-		reflect.TypeOf((*MemorystoreInstanceEndpointsConnectionsPscAutoConnectionList)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstanceEndpointsConnectionsPscAutoConnectionList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -883,7 +883,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MemorystoreInstanceEndpointsConnectionsPscAutoConnectionList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -891,7 +891,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceEndpointsConnectionsPscAutoConnectionOutputReference",
-		reflect.TypeOf((*MemorystoreInstanceEndpointsConnectionsPscAutoConnectionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstanceEndpointsConnectionsPscAutoConnectionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -923,7 +923,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MemorystoreInstanceEndpointsConnectionsPscAutoConnectionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -931,7 +931,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceEndpointsList",
-		reflect.TypeOf((*MemorystoreInstanceEndpointsList)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstanceEndpointsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -944,7 +944,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MemorystoreInstanceEndpointsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -952,7 +952,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceEndpointsOutputReference",
-		reflect.TypeOf((*MemorystoreInstanceEndpointsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstanceEndpointsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -977,7 +977,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MemorystoreInstanceEndpointsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -985,11 +985,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceGcsSource",
-		reflect.TypeOf((*MemorystoreInstanceGcsSource)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstanceGcsSource](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceGcsSourceOutputReference",
-		reflect.TypeOf((*MemorystoreInstanceGcsSourceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstanceGcsSourceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1015,7 +1015,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uris", GoGetter: "Uris"},
 			_jsii_.MemberProperty{JsiiProperty: "urisInput", GoGetter: "UrisInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MemorystoreInstanceGcsSourceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1023,11 +1023,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceMaintenancePolicy",
-		reflect.TypeOf((*MemorystoreInstanceMaintenancePolicy)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstanceMaintenancePolicy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceMaintenancePolicyOutputReference",
-		reflect.TypeOf((*MemorystoreInstanceMaintenancePolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstanceMaintenancePolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1057,7 +1057,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "weeklyMaintenanceWindow", GoGetter: "WeeklyMaintenanceWindow"},
 			_jsii_.MemberProperty{JsiiProperty: "weeklyMaintenanceWindowInput", GoGetter: "WeeklyMaintenanceWindowInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MemorystoreInstanceMaintenancePolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1065,11 +1065,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindow",
-		reflect.TypeOf((*MemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindow)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindow](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindowList",
-		reflect.TypeOf((*MemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindowList)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindowList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1083,7 +1083,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindowList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1091,7 +1091,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference",
-		reflect.TypeOf((*MemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1121,7 +1121,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1129,11 +1129,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTime",
-		reflect.TypeOf((*MemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTime)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTime](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeOutputReference",
-		reflect.TypeOf((*MemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1169,7 +1169,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1177,11 +1177,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceMaintenanceSchedule",
-		reflect.TypeOf((*MemorystoreInstanceMaintenanceSchedule)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstanceMaintenanceSchedule](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceMaintenanceScheduleList",
-		reflect.TypeOf((*MemorystoreInstanceMaintenanceScheduleList)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstanceMaintenanceScheduleList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1194,7 +1194,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MemorystoreInstanceMaintenanceScheduleList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1202,7 +1202,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceMaintenanceScheduleOutputReference",
-		reflect.TypeOf((*MemorystoreInstanceMaintenanceScheduleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstanceMaintenanceScheduleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1229,7 +1229,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MemorystoreInstanceMaintenanceScheduleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1237,11 +1237,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceManagedBackupSource",
-		reflect.TypeOf((*MemorystoreInstanceManagedBackupSource)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstanceManagedBackupSource](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceManagedBackupSourceOutputReference",
-		reflect.TypeOf((*MemorystoreInstanceManagedBackupSourceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstanceManagedBackupSourceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "backup", GoGetter: "Backup"},
 			_jsii_.MemberProperty{JsiiProperty: "backupInput", GoGetter: "BackupInput"},
@@ -1267,7 +1267,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MemorystoreInstanceManagedBackupSourceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1275,15 +1275,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceManagedServerCa",
-		reflect.TypeOf((*MemorystoreInstanceManagedServerCa)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstanceManagedServerCa](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceManagedServerCaCaCerts",
-		reflect.TypeOf((*MemorystoreInstanceManagedServerCaCaCerts)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstanceManagedServerCaCaCerts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceManagedServerCaCaCertsList",
-		reflect.TypeOf((*MemorystoreInstanceManagedServerCaCaCertsList)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstanceManagedServerCaCaCertsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1296,7 +1296,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MemorystoreInstanceManagedServerCaCaCertsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1304,7 +1304,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceManagedServerCaCaCertsOutputReference",
-		reflect.TypeOf((*MemorystoreInstanceManagedServerCaCaCertsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstanceManagedServerCaCaCertsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "certificates", GoGetter: "Certificates"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1329,7 +1329,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MemorystoreInstanceManagedServerCaCaCertsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1337,7 +1337,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceManagedServerCaList",
-		reflect.TypeOf((*MemorystoreInstanceManagedServerCaList)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstanceManagedServerCaList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1350,7 +1350,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MemorystoreInstanceManagedServerCaList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1358,7 +1358,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceManagedServerCaOutputReference",
-		reflect.TypeOf((*MemorystoreInstanceManagedServerCaOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstanceManagedServerCaOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "caCerts", GoGetter: "CaCerts"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1383,7 +1383,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MemorystoreInstanceManagedServerCaOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1391,11 +1391,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceNodeConfig",
-		reflect.TypeOf((*MemorystoreInstanceNodeConfig)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstanceNodeConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceNodeConfigList",
-		reflect.TypeOf((*MemorystoreInstanceNodeConfigList)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstanceNodeConfigList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1408,7 +1408,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MemorystoreInstanceNodeConfigList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1416,7 +1416,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceNodeConfigOutputReference",
-		reflect.TypeOf((*MemorystoreInstanceNodeConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstanceNodeConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1441,7 +1441,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MemorystoreInstanceNodeConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1449,15 +1449,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstancePersistenceConfig",
-		reflect.TypeOf((*MemorystoreInstancePersistenceConfig)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstancePersistenceConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstancePersistenceConfigAofConfig",
-		reflect.TypeOf((*MemorystoreInstancePersistenceConfigAofConfig)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstancePersistenceConfigAofConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstancePersistenceConfigAofConfigOutputReference",
-		reflect.TypeOf((*MemorystoreInstancePersistenceConfigAofConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstancePersistenceConfigAofConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "appendFsync", GoGetter: "AppendFsync"},
 			_jsii_.MemberProperty{JsiiProperty: "appendFsyncInput", GoGetter: "AppendFsyncInput"},
@@ -1484,7 +1484,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MemorystoreInstancePersistenceConfigAofConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1492,7 +1492,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstancePersistenceConfigOutputReference",
-		reflect.TypeOf((*MemorystoreInstancePersistenceConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstancePersistenceConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aofConfig", GoGetter: "AofConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "aofConfigInput", GoGetter: "AofConfigInput"},
@@ -1527,7 +1527,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MemorystoreInstancePersistenceConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1535,11 +1535,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstancePersistenceConfigRdbConfig",
-		reflect.TypeOf((*MemorystoreInstancePersistenceConfigRdbConfig)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstancePersistenceConfigRdbConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstancePersistenceConfigRdbConfigOutputReference",
-		reflect.TypeOf((*MemorystoreInstancePersistenceConfigRdbConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstancePersistenceConfigRdbConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1569,7 +1569,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MemorystoreInstancePersistenceConfigRdbConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1577,11 +1577,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstancePscAttachmentDetails",
-		reflect.TypeOf((*MemorystoreInstancePscAttachmentDetails)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstancePscAttachmentDetails](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstancePscAttachmentDetailsList",
-		reflect.TypeOf((*MemorystoreInstancePscAttachmentDetailsList)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstancePscAttachmentDetailsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1594,7 +1594,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MemorystoreInstancePscAttachmentDetailsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1602,7 +1602,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstancePscAttachmentDetailsOutputReference",
-		reflect.TypeOf((*MemorystoreInstancePscAttachmentDetailsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstancePscAttachmentDetailsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1628,7 +1628,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MemorystoreInstancePscAttachmentDetailsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1636,11 +1636,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstancePscAutoConnections",
-		reflect.TypeOf((*MemorystoreInstancePscAutoConnections)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstancePscAutoConnections](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstancePscAutoConnectionsList",
-		reflect.TypeOf((*MemorystoreInstancePscAutoConnectionsList)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstancePscAutoConnectionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1653,7 +1653,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MemorystoreInstancePscAutoConnectionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1661,7 +1661,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstancePscAutoConnectionsOutputReference",
-		reflect.TypeOf((*MemorystoreInstancePscAutoConnectionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstancePscAutoConnectionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1694,7 +1694,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MemorystoreInstancePscAutoConnectionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1702,11 +1702,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceStateInfo",
-		reflect.TypeOf((*MemorystoreInstanceStateInfo)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstanceStateInfo](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceStateInfoList",
-		reflect.TypeOf((*MemorystoreInstanceStateInfoList)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstanceStateInfoList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1719,7 +1719,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MemorystoreInstanceStateInfoList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1727,7 +1727,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceStateInfoOutputReference",
-		reflect.TypeOf((*MemorystoreInstanceStateInfoOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstanceStateInfoOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1752,7 +1752,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInfo", GoGetter: "UpdateInfo"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MemorystoreInstanceStateInfoOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1760,11 +1760,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceStateInfoUpdateInfo",
-		reflect.TypeOf((*MemorystoreInstanceStateInfoUpdateInfo)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstanceStateInfoUpdateInfo](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceStateInfoUpdateInfoList",
-		reflect.TypeOf((*MemorystoreInstanceStateInfoUpdateInfoList)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstanceStateInfoUpdateInfoList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1777,7 +1777,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MemorystoreInstanceStateInfoUpdateInfoList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1785,7 +1785,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceStateInfoUpdateInfoOutputReference",
-		reflect.TypeOf((*MemorystoreInstanceStateInfoUpdateInfoOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstanceStateInfoUpdateInfoOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1813,7 +1813,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MemorystoreInstanceStateInfoUpdateInfoOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1821,11 +1821,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceTimeouts",
-		reflect.TypeOf((*MemorystoreInstanceTimeouts)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstanceTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceTimeoutsOutputReference",
-		reflect.TypeOf((*MemorystoreInstanceTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstanceTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1858,7 +1858,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MemorystoreInstanceTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1866,11 +1866,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceZoneDistributionConfig",
-		reflect.TypeOf((*MemorystoreInstanceZoneDistributionConfig)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstanceZoneDistributionConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceZoneDistributionConfigOutputReference",
-		reflect.TypeOf((*MemorystoreInstanceZoneDistributionConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MemorystoreInstanceZoneDistributionConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1900,7 +1900,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zone", GoGetter: "Zone"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneInput", GoGetter: "ZoneInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MemorystoreInstanceZoneDistributionConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

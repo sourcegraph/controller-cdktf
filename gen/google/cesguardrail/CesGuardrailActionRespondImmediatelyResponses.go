@@ -1,6 +1,5 @@
 package cesguardrail
 
-
 type CesGuardrailActionRespondImmediatelyResponses struct {
 	// Text for the agent to respond with.
 	//
@@ -9,6 +8,5 @@ type CesGuardrailActionRespondImmediatelyResponses struct {
 	// Whether the response is disabled. Disabled responses are not used by the agent.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_guardrail#disabled CesGuardrail#disabled}
-	Disabled interface{} `field:"optional" json:"disabled" yaml:"disabled"`
+	Disabled any `field:"optional" json:"disabled" yaml:"disabled"`
 }
-

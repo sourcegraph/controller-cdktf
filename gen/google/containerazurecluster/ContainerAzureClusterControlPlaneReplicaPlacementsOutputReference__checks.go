@@ -106,7 +106,7 @@ func (j *jsiiProxy_ContainerAzureClusterControlPlaneReplicaPlacementsOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_ContainerAzureClusterControlPlaneReplicaPlacementsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerAzureClusterControlPlaneReplicaPlacementsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_ContainerAzureClusterControlPlaneReplicaPlacementsOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_ContainerAzureClusterControlPlaneReplicaPlacementsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerAzureClusterControlPlaneReplicaPlacementsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewContainerAzureClusterControlPlaneReplicaPlacementsOutputReferenc
 
 	return nil
 }
-

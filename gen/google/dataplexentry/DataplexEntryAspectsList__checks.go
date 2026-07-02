@@ -34,7 +34,7 @@ func (d *jsiiProxy_DataplexEntryAspectsList) validateResolveParameters(_context 
 	return nil
 }
 
-func (j *jsiiProxy_DataplexEntryAspectsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataplexEntryAspectsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDataplexEntryAspectsListParameters(terraformResource cdktf.IInte
 
 	return nil
 }
-

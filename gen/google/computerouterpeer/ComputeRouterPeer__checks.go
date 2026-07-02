@@ -19,7 +19,7 @@ func (c *jsiiProxy_ComputeRouterPeer) validateAddMoveTargetParameters(moveTarget
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRouterPeer) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_ComputeRouterPeer) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_ComputeRouterPeer) validateMoveFromIdParameters(id *string) e
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRouterPeer) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_ComputeRouterPeer) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (c *jsiiProxy_ComputeRouterPeer) validateOverrideLogicalIdParameters(newLog
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRouterPeer) validatePutAdvertisedIpRangesParameters(value interface{}) error {
+func (c *jsiiProxy_ComputeRouterPeer) validatePutAdvertisedIpRangesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -246,7 +246,7 @@ func (c *jsiiProxy_ComputeRouterPeer) validatePutBfdParameters(value *ComputeRou
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRouterPeer) validatePutCustomLearnedIpRangesParameters(value interface{}) error {
+func (c *jsiiProxy_ComputeRouterPeer) validatePutCustomLearnedIpRangesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -315,7 +315,7 @@ func validateComputeRouterPeer_GenerateConfigForImportParameters(scope construct
 	return nil
 }
 
-func validateComputeRouterPeer_IsConstructParameters(x interface{}) error {
+func validateComputeRouterPeer_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -323,7 +323,7 @@ func validateComputeRouterPeer_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateComputeRouterPeer_IsTerraformElementParameters(x interface{}) error {
+func validateComputeRouterPeer_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -331,7 +331,7 @@ func validateComputeRouterPeer_IsTerraformElementParameters(x interface{}) error
 	return nil
 }
 
-func validateComputeRouterPeer_IsTerraformResourceParameters(x interface{}) error {
+func validateComputeRouterPeer_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -363,7 +363,7 @@ func (j *jsiiProxy_ComputeRouterPeer) validateSetAdvertiseModeParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRouterPeer) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRouterPeer) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -396,7 +396,7 @@ func (j *jsiiProxy_ComputeRouterPeer) validateSetConnectionParameters(val interf
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRouterPeer) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRouterPeer) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -461,7 +461,7 @@ func (j *jsiiProxy_ComputeRouterPeer) validateSetCustomLearnedRoutePriorityParam
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRouterPeer) validateSetEnableParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRouterPeer) validateSetEnableParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -481,7 +481,7 @@ func (j *jsiiProxy_ComputeRouterPeer) validateSetEnableParameters(val interface{
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRouterPeer) validateSetEnableIpv4Parameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRouterPeer) validateSetEnableIpv4Parameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -501,7 +501,7 @@ func (j *jsiiProxy_ComputeRouterPeer) validateSetEnableIpv4Parameters(val interf
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRouterPeer) validateSetEnableIpv6Parameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRouterPeer) validateSetEnableIpv6Parameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -633,7 +633,7 @@ func (j *jsiiProxy_ComputeRouterPeer) validateSetProjectParameters(val *string) 
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRouterPeer) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ComputeRouterPeer) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -703,7 +703,7 @@ func (j *jsiiProxy_ComputeRouterPeer) validateSetRouterApplianceInstanceParamete
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRouterPeer) validateSetZeroAdvertisedRoutePriorityParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRouterPeer) validateSetZeroAdvertisedRoutePriorityParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -723,7 +723,7 @@ func (j *jsiiProxy_ComputeRouterPeer) validateSetZeroAdvertisedRoutePriorityPara
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRouterPeer) validateSetZeroCustomLearnedRoutePriorityParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRouterPeer) validateSetZeroCustomLearnedRoutePriorityParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -761,4 +761,3 @@ func validateNewComputeRouterPeerParameters(scope constructs.Construct, id *stri
 
 	return nil
 }
-

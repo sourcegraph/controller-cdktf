@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeWireGroupWiresWirePropertiesOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_ComputeWireGroupWiresWirePropertiesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeWireGroupWiresWirePropertiesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewComputeWireGroupWiresWirePropertiesOutputReferenceParameters(ter
 
 	return nil
 }
-

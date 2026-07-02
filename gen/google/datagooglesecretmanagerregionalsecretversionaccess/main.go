@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleSecretManagerRegionalSecretVersionAccess.DataGoogleSecretManagerRegionalSecretVersionAccess",
-		reflect.TypeOf((*DataGoogleSecretManagerRegionalSecretVersionAccess)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleSecretManagerRegionalSecretVersionAccess](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -64,7 +64,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 			_jsii_.MemberProperty{JsiiProperty: "versionInput", GoGetter: "VersionInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleSecretManagerRegionalSecretVersionAccess{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -72,6 +72,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleSecretManagerRegionalSecretVersionAccess.DataGoogleSecretManagerRegionalSecretVersionAccessConfig",
-		reflect.TypeOf((*DataGoogleSecretManagerRegionalSecretVersionAccessConfig)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleSecretManagerRegionalSecretVersionAccessConfig](),
 	)
 }

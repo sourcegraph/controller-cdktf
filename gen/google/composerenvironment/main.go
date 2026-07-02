@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.composerEnvironment.ComposerEnvironment",
-		reflect.TypeOf((*ComposerEnvironment)(nil)).Elem(),
+		reflect.TypeFor[ComposerEnvironment](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -81,7 +81,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComposerEnvironment{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -89,15 +89,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfig",
-		reflect.TypeOf((*ComposerEnvironmentConfig)(nil)).Elem(),
+		reflect.TypeFor[ComposerEnvironmentConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigA",
-		reflect.TypeOf((*ComposerEnvironmentConfigA)(nil)).Elem(),
+		reflect.TypeFor[ComposerEnvironmentConfigA](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigAOutputReference",
-		reflect.TypeOf((*ComposerEnvironmentConfigAOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComposerEnvironmentConfigAOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "airflowUri", GoGetter: "AirflowUri"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -187,7 +187,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workloadsConfig", GoGetter: "WorkloadsConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "workloadsConfigInput", GoGetter: "WorkloadsConfigInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComposerEnvironmentConfigAOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -195,15 +195,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigDataRetentionConfig",
-		reflect.TypeOf((*ComposerEnvironmentConfigDataRetentionConfig)(nil)).Elem(),
+		reflect.TypeFor[ComposerEnvironmentConfigDataRetentionConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigDataRetentionConfigAirflowMetadataRetentionConfig",
-		reflect.TypeOf((*ComposerEnvironmentConfigDataRetentionConfigAirflowMetadataRetentionConfig)(nil)).Elem(),
+		reflect.TypeFor[ComposerEnvironmentConfigDataRetentionConfigAirflowMetadataRetentionConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigDataRetentionConfigAirflowMetadataRetentionConfigList",
-		reflect.TypeOf((*ComposerEnvironmentConfigDataRetentionConfigAirflowMetadataRetentionConfigList)(nil)).Elem(),
+		reflect.TypeFor[ComposerEnvironmentConfigDataRetentionConfigAirflowMetadataRetentionConfigList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -217,7 +217,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComposerEnvironmentConfigDataRetentionConfigAirflowMetadataRetentionConfigList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -225,7 +225,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigDataRetentionConfigAirflowMetadataRetentionConfigOutputReference",
-		reflect.TypeOf((*ComposerEnvironmentConfigDataRetentionConfigAirflowMetadataRetentionConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComposerEnvironmentConfigDataRetentionConfigAirflowMetadataRetentionConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -255,7 +255,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComposerEnvironmentConfigDataRetentionConfigAirflowMetadataRetentionConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -263,7 +263,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigDataRetentionConfigOutputReference",
-		reflect.TypeOf((*ComposerEnvironmentConfigDataRetentionConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComposerEnvironmentConfigDataRetentionConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "airflowMetadataRetentionConfig", GoGetter: "AirflowMetadataRetentionConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "airflowMetadataRetentionConfigInput", GoGetter: "AirflowMetadataRetentionConfigInput"},
@@ -295,7 +295,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComposerEnvironmentConfigDataRetentionConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -303,11 +303,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigDataRetentionConfigTaskLogsRetentionConfig",
-		reflect.TypeOf((*ComposerEnvironmentConfigDataRetentionConfigTaskLogsRetentionConfig)(nil)).Elem(),
+		reflect.TypeFor[ComposerEnvironmentConfigDataRetentionConfigTaskLogsRetentionConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigDataRetentionConfigTaskLogsRetentionConfigList",
-		reflect.TypeOf((*ComposerEnvironmentConfigDataRetentionConfigTaskLogsRetentionConfigList)(nil)).Elem(),
+		reflect.TypeFor[ComposerEnvironmentConfigDataRetentionConfigTaskLogsRetentionConfigList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -321,7 +321,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComposerEnvironmentConfigDataRetentionConfigTaskLogsRetentionConfigList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -329,7 +329,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigDataRetentionConfigTaskLogsRetentionConfigOutputReference",
-		reflect.TypeOf((*ComposerEnvironmentConfigDataRetentionConfigTaskLogsRetentionConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComposerEnvironmentConfigDataRetentionConfigTaskLogsRetentionConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -356,7 +356,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComposerEnvironmentConfigDataRetentionConfigTaskLogsRetentionConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -364,11 +364,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigDatabaseConfig",
-		reflect.TypeOf((*ComposerEnvironmentConfigDatabaseConfig)(nil)).Elem(),
+		reflect.TypeFor[ComposerEnvironmentConfigDatabaseConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigDatabaseConfigOutputReference",
-		reflect.TypeOf((*ComposerEnvironmentConfigDatabaseConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComposerEnvironmentConfigDatabaseConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -398,7 +398,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zone", GoGetter: "Zone"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneInput", GoGetter: "ZoneInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComposerEnvironmentConfigDatabaseConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -406,11 +406,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigEncryptionConfig",
-		reflect.TypeOf((*ComposerEnvironmentConfigEncryptionConfig)(nil)).Elem(),
+		reflect.TypeFor[ComposerEnvironmentConfigEncryptionConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigEncryptionConfigOutputReference",
-		reflect.TypeOf((*ComposerEnvironmentConfigEncryptionConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComposerEnvironmentConfigEncryptionConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -436,7 +436,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComposerEnvironmentConfigEncryptionConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -444,11 +444,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigMaintenanceWindow",
-		reflect.TypeOf((*ComposerEnvironmentConfigMaintenanceWindow)(nil)).Elem(),
+		reflect.TypeFor[ComposerEnvironmentConfigMaintenanceWindow](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigMaintenanceWindowOutputReference",
-		reflect.TypeOf((*ComposerEnvironmentConfigMaintenanceWindowOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComposerEnvironmentConfigMaintenanceWindowOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -478,7 +478,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComposerEnvironmentConfigMaintenanceWindowOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -486,15 +486,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigMasterAuthorizedNetworksConfig",
-		reflect.TypeOf((*ComposerEnvironmentConfigMasterAuthorizedNetworksConfig)(nil)).Elem(),
+		reflect.TypeFor[ComposerEnvironmentConfigMasterAuthorizedNetworksConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigMasterAuthorizedNetworksConfigCidrBlocks",
-		reflect.TypeOf((*ComposerEnvironmentConfigMasterAuthorizedNetworksConfigCidrBlocks)(nil)).Elem(),
+		reflect.TypeFor[ComposerEnvironmentConfigMasterAuthorizedNetworksConfigCidrBlocks](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigMasterAuthorizedNetworksConfigCidrBlocksList",
-		reflect.TypeOf((*ComposerEnvironmentConfigMasterAuthorizedNetworksConfigCidrBlocksList)(nil)).Elem(),
+		reflect.TypeFor[ComposerEnvironmentConfigMasterAuthorizedNetworksConfigCidrBlocksList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -508,7 +508,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComposerEnvironmentConfigMasterAuthorizedNetworksConfigCidrBlocksList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -516,7 +516,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigMasterAuthorizedNetworksConfigCidrBlocksOutputReference",
-		reflect.TypeOf((*ComposerEnvironmentConfigMasterAuthorizedNetworksConfigCidrBlocksOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComposerEnvironmentConfigMasterAuthorizedNetworksConfigCidrBlocksOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cidrBlock", GoGetter: "CidrBlock"},
 			_jsii_.MemberProperty{JsiiProperty: "cidrBlockInput", GoGetter: "CidrBlockInput"},
@@ -545,7 +545,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComposerEnvironmentConfigMasterAuthorizedNetworksConfigCidrBlocksOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -553,7 +553,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigMasterAuthorizedNetworksConfigOutputReference",
-		reflect.TypeOf((*ComposerEnvironmentConfigMasterAuthorizedNetworksConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComposerEnvironmentConfigMasterAuthorizedNetworksConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cidrBlocks", GoGetter: "CidrBlocks"},
 			_jsii_.MemberProperty{JsiiProperty: "cidrBlocksInput", GoGetter: "CidrBlocksInput"},
@@ -583,7 +583,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComposerEnvironmentConfigMasterAuthorizedNetworksConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -591,15 +591,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigNodeConfig",
-		reflect.TypeOf((*ComposerEnvironmentConfigNodeConfig)(nil)).Elem(),
+		reflect.TypeFor[ComposerEnvironmentConfigNodeConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigNodeConfigIpAllocationPolicy",
-		reflect.TypeOf((*ComposerEnvironmentConfigNodeConfigIpAllocationPolicy)(nil)).Elem(),
+		reflect.TypeFor[ComposerEnvironmentConfigNodeConfigIpAllocationPolicy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigNodeConfigIpAllocationPolicyOutputReference",
-		reflect.TypeOf((*ComposerEnvironmentConfigNodeConfigIpAllocationPolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComposerEnvironmentConfigNodeConfigIpAllocationPolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clusterIpv4CidrBlock", GoGetter: "ClusterIpv4CidrBlock"},
 			_jsii_.MemberProperty{JsiiProperty: "clusterIpv4CidrBlockInput", GoGetter: "ClusterIpv4CidrBlockInput"},
@@ -638,7 +638,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "useIpAliases", GoGetter: "UseIpAliases"},
 			_jsii_.MemberProperty{JsiiProperty: "useIpAliasesInput", GoGetter: "UseIpAliasesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComposerEnvironmentConfigNodeConfigIpAllocationPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -646,7 +646,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigNodeConfigOutputReference",
-		reflect.TypeOf((*ComposerEnvironmentConfigNodeConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComposerEnvironmentConfigNodeConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -707,7 +707,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zone", GoGetter: "Zone"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneInput", GoGetter: "ZoneInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComposerEnvironmentConfigNodeConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -715,11 +715,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigPrivateEnvironmentConfig",
-		reflect.TypeOf((*ComposerEnvironmentConfigPrivateEnvironmentConfig)(nil)).Elem(),
+		reflect.TypeFor[ComposerEnvironmentConfigPrivateEnvironmentConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference",
-		reflect.TypeOf((*ComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cloudComposerConnectionSubnetwork", GoGetter: "CloudComposerConnectionSubnetwork"},
 			_jsii_.MemberProperty{JsiiProperty: "cloudComposerConnectionSubnetworkInput", GoGetter: "CloudComposerConnectionSubnetworkInput"},
@@ -767,7 +767,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "webServerIpv4CidrBlock", GoGetter: "WebServerIpv4CidrBlock"},
 			_jsii_.MemberProperty{JsiiProperty: "webServerIpv4CidrBlockInput", GoGetter: "WebServerIpv4CidrBlockInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -775,11 +775,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigRecoveryConfig",
-		reflect.TypeOf((*ComposerEnvironmentConfigRecoveryConfig)(nil)).Elem(),
+		reflect.TypeFor[ComposerEnvironmentConfigRecoveryConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigRecoveryConfigOutputReference",
-		reflect.TypeOf((*ComposerEnvironmentConfigRecoveryConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComposerEnvironmentConfigRecoveryConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -807,7 +807,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComposerEnvironmentConfigRecoveryConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -815,11 +815,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConfig",
-		reflect.TypeOf((*ComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConfig)(nil)).Elem(),
+		reflect.TypeFor[ComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConfigOutputReference",
-		reflect.TypeOf((*ComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -854,7 +854,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "timeZoneInput", GoGetter: "TimeZoneInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -862,15 +862,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigSoftwareConfig",
-		reflect.TypeOf((*ComposerEnvironmentConfigSoftwareConfig)(nil)).Elem(),
+		reflect.TypeFor[ComposerEnvironmentConfigSoftwareConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigSoftwareConfigCloudDataLineageIntegration",
-		reflect.TypeOf((*ComposerEnvironmentConfigSoftwareConfigCloudDataLineageIntegration)(nil)).Elem(),
+		reflect.TypeFor[ComposerEnvironmentConfigSoftwareConfigCloudDataLineageIntegration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigSoftwareConfigCloudDataLineageIntegrationOutputReference",
-		reflect.TypeOf((*ComposerEnvironmentConfigSoftwareConfigCloudDataLineageIntegrationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComposerEnvironmentConfigSoftwareConfigCloudDataLineageIntegrationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -896,7 +896,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComposerEnvironmentConfigSoftwareConfigCloudDataLineageIntegrationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -904,7 +904,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigSoftwareConfigOutputReference",
-		reflect.TypeOf((*ComposerEnvironmentConfigSoftwareConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComposerEnvironmentConfigSoftwareConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "airflowConfigOverrides", GoGetter: "AirflowConfigOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "airflowConfigOverridesInput", GoGetter: "AirflowConfigOverridesInput"},
@@ -953,7 +953,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "webServerPluginsMode", GoGetter: "WebServerPluginsMode"},
 			_jsii_.MemberProperty{JsiiProperty: "webServerPluginsModeInput", GoGetter: "WebServerPluginsModeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComposerEnvironmentConfigSoftwareConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -961,11 +961,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigWebServerConfig",
-		reflect.TypeOf((*ComposerEnvironmentConfigWebServerConfig)(nil)).Elem(),
+		reflect.TypeFor[ComposerEnvironmentConfigWebServerConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigWebServerConfigOutputReference",
-		reflect.TypeOf((*ComposerEnvironmentConfigWebServerConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComposerEnvironmentConfigWebServerConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -991,7 +991,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComposerEnvironmentConfigWebServerConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -999,15 +999,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigWebServerNetworkAccessControl",
-		reflect.TypeOf((*ComposerEnvironmentConfigWebServerNetworkAccessControl)(nil)).Elem(),
+		reflect.TypeFor[ComposerEnvironmentConfigWebServerNetworkAccessControl](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigWebServerNetworkAccessControlAllowedIpRange",
-		reflect.TypeOf((*ComposerEnvironmentConfigWebServerNetworkAccessControlAllowedIpRange)(nil)).Elem(),
+		reflect.TypeFor[ComposerEnvironmentConfigWebServerNetworkAccessControlAllowedIpRange](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigWebServerNetworkAccessControlAllowedIpRangeList",
-		reflect.TypeOf((*ComposerEnvironmentConfigWebServerNetworkAccessControlAllowedIpRangeList)(nil)).Elem(),
+		reflect.TypeFor[ComposerEnvironmentConfigWebServerNetworkAccessControlAllowedIpRangeList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1021,7 +1021,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComposerEnvironmentConfigWebServerNetworkAccessControlAllowedIpRangeList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1029,7 +1029,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigWebServerNetworkAccessControlAllowedIpRangeOutputReference",
-		reflect.TypeOf((*ComposerEnvironmentConfigWebServerNetworkAccessControlAllowedIpRangeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComposerEnvironmentConfigWebServerNetworkAccessControlAllowedIpRangeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1058,7 +1058,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComposerEnvironmentConfigWebServerNetworkAccessControlAllowedIpRangeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1066,7 +1066,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigWebServerNetworkAccessControlOutputReference",
-		reflect.TypeOf((*ComposerEnvironmentConfigWebServerNetworkAccessControlOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComposerEnvironmentConfigWebServerNetworkAccessControlOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedIpRange", GoGetter: "AllowedIpRange"},
 			_jsii_.MemberProperty{JsiiProperty: "allowedIpRangeInput", GoGetter: "AllowedIpRangeInput"},
@@ -1094,7 +1094,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComposerEnvironmentConfigWebServerNetworkAccessControlOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1102,15 +1102,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigWorkloadsConfig",
-		reflect.TypeOf((*ComposerEnvironmentConfigWorkloadsConfig)(nil)).Elem(),
+		reflect.TypeFor[ComposerEnvironmentConfigWorkloadsConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigWorkloadsConfigDagProcessor",
-		reflect.TypeOf((*ComposerEnvironmentConfigWorkloadsConfigDagProcessor)(nil)).Elem(),
+		reflect.TypeFor[ComposerEnvironmentConfigWorkloadsConfigDagProcessor](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigWorkloadsConfigDagProcessorOutputReference",
-		reflect.TypeOf((*ComposerEnvironmentConfigWorkloadsConfigDagProcessorOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComposerEnvironmentConfigWorkloadsConfigDagProcessorOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1146,7 +1146,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComposerEnvironmentConfigWorkloadsConfigDagProcessorOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1154,7 +1154,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigWorkloadsConfigOutputReference",
-		reflect.TypeOf((*ComposerEnvironmentConfigWorkloadsConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComposerEnvironmentConfigWorkloadsConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1198,7 +1198,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "worker", GoGetter: "Worker"},
 			_jsii_.MemberProperty{JsiiProperty: "workerInput", GoGetter: "WorkerInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComposerEnvironmentConfigWorkloadsConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1206,11 +1206,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigWorkloadsConfigScheduler",
-		reflect.TypeOf((*ComposerEnvironmentConfigWorkloadsConfigScheduler)(nil)).Elem(),
+		reflect.TypeFor[ComposerEnvironmentConfigWorkloadsConfigScheduler](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigWorkloadsConfigSchedulerOutputReference",
-		reflect.TypeOf((*ComposerEnvironmentConfigWorkloadsConfigSchedulerOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComposerEnvironmentConfigWorkloadsConfigSchedulerOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1246,7 +1246,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComposerEnvironmentConfigWorkloadsConfigSchedulerOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1254,11 +1254,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigWorkloadsConfigTriggerer",
-		reflect.TypeOf((*ComposerEnvironmentConfigWorkloadsConfigTriggerer)(nil)).Elem(),
+		reflect.TypeFor[ComposerEnvironmentConfigWorkloadsConfigTriggerer](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigWorkloadsConfigTriggererOutputReference",
-		reflect.TypeOf((*ComposerEnvironmentConfigWorkloadsConfigTriggererOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComposerEnvironmentConfigWorkloadsConfigTriggererOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1288,7 +1288,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComposerEnvironmentConfigWorkloadsConfigTriggererOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1296,11 +1296,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigWorkloadsConfigWebServer",
-		reflect.TypeOf((*ComposerEnvironmentConfigWorkloadsConfigWebServer)(nil)).Elem(),
+		reflect.TypeFor[ComposerEnvironmentConfigWorkloadsConfigWebServer](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigWorkloadsConfigWebServerOutputReference",
-		reflect.TypeOf((*ComposerEnvironmentConfigWorkloadsConfigWebServerOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComposerEnvironmentConfigWorkloadsConfigWebServerOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1333,7 +1333,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComposerEnvironmentConfigWorkloadsConfigWebServerOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1341,11 +1341,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigWorkloadsConfigWorker",
-		reflect.TypeOf((*ComposerEnvironmentConfigWorkloadsConfigWorker)(nil)).Elem(),
+		reflect.TypeFor[ComposerEnvironmentConfigWorkloadsConfigWorker](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigWorkloadsConfigWorkerOutputReference",
-		reflect.TypeOf((*ComposerEnvironmentConfigWorkloadsConfigWorkerOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComposerEnvironmentConfigWorkloadsConfigWorkerOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1384,7 +1384,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComposerEnvironmentConfigWorkloadsConfigWorkerOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1392,11 +1392,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentStorageConfig",
-		reflect.TypeOf((*ComposerEnvironmentStorageConfig)(nil)).Elem(),
+		reflect.TypeFor[ComposerEnvironmentStorageConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentStorageConfigOutputReference",
-		reflect.TypeOf((*ComposerEnvironmentStorageConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComposerEnvironmentStorageConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucket", GoGetter: "Bucket"},
 			_jsii_.MemberProperty{JsiiProperty: "bucketInput", GoGetter: "BucketInput"},
@@ -1422,7 +1422,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComposerEnvironmentStorageConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1430,11 +1430,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentTimeouts",
-		reflect.TypeOf((*ComposerEnvironmentTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ComposerEnvironmentTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentTimeoutsOutputReference",
-		reflect.TypeOf((*ComposerEnvironmentTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComposerEnvironmentTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1467,7 +1467,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComposerEnvironmentTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

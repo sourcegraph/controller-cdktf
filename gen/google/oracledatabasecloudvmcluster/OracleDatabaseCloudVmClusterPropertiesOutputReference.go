@@ -16,9 +16,9 @@ type OracleDatabaseCloudVmClusterPropertiesOutputReference interface {
 	CompartmentId() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -62,9 +62,9 @@ type OracleDatabaseCloudVmClusterPropertiesOutputReference interface {
 	LicenseType() *string
 	SetLicenseType(val *string)
 	LicenseTypeInput() *string
-	LocalBackupEnabled() interface{}
-	SetLocalBackupEnabled(val interface{})
-	LocalBackupEnabledInput() interface{}
+	LocalBackupEnabled() any
+	SetLocalBackupEnabled(val any)
+	LocalBackupEnabledInput() any
 	MemorySizeGb() *float64
 	SetMemorySizeGb(val *float64)
 	MemorySizeGbInput() *float64
@@ -82,9 +82,9 @@ type OracleDatabaseCloudVmClusterPropertiesOutputReference interface {
 	ScanListenerPortTcp() *float64
 	ScanListenerPortTcpSsl() *float64
 	Shape() *string
-	SparseDiskgroupEnabled() interface{}
-	SetSparseDiskgroupEnabled(val interface{})
-	SparseDiskgroupEnabledInput() interface{}
+	SparseDiskgroupEnabled() any
+	SetSparseDiskgroupEnabled(val any)
+	SparseDiskgroupEnabledInput() any
 	SshPublicKeys() *[]*string
 	SetSshPublicKeys(val *[]*string)
 	SshPublicKeysInput() *[]*string
@@ -104,7 +104,7 @@ type OracleDatabaseCloudVmClusterPropertiesOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -144,7 +144,7 @@ type OracleDatabaseCloudVmClusterPropertiesOutputReference interface {
 	ResetTimeZone()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -187,8 +187,8 @@ func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference) Compar
 	return returns
 }
 
-func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -447,8 +447,8 @@ func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference) Licens
 	return returns
 }
 
-func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference) LocalBackupEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference) LocalBackupEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"localBackupEnabled",
@@ -457,8 +457,8 @@ func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference) LocalB
 	return returns
 }
 
-func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference) LocalBackupEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference) LocalBackupEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"localBackupEnabledInput",
@@ -607,8 +607,8 @@ func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference) Shape(
 	return returns
 }
 
-func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference) SparseDiskgroupEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference) SparseDiskgroupEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"sparseDiskgroupEnabled",
@@ -617,8 +617,8 @@ func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference) Sparse
 	return returns
 }
 
-func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference) SparseDiskgroupEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference) SparseDiskgroupEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"sparseDiskgroupEnabledInput",
@@ -717,7 +717,6 @@ func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference) TimeZo
 	return returns
 }
 
-
 func NewOracleDatabaseCloudVmClusterPropertiesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) OracleDatabaseCloudVmClusterPropertiesOutputReference {
 	_init_.Initialize()
 
@@ -728,7 +727,7 @@ func NewOracleDatabaseCloudVmClusterPropertiesOutputReference(terraformResource 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.oracleDatabaseCloudVmCluster.OracleDatabaseCloudVmClusterPropertiesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -740,12 +739,12 @@ func NewOracleDatabaseCloudVmClusterPropertiesOutputReference_Override(o OracleD
 
 	_jsii_.Create(
 		"@cdktf/provider-google.oracleDatabaseCloudVmCluster.OracleDatabaseCloudVmClusterPropertiesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		o,
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference)SetClusterName(val *string) {
+func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference) SetClusterName(val *string) {
 	if err := j.validateSetClusterNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -756,7 +755,7 @@ func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference)SetClus
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -767,7 +766,7 @@ func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -778,7 +777,7 @@ func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference)SetCpuCoreCount(val *float64) {
+func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference) SetCpuCoreCount(val *float64) {
 	if err := j.validateSetCpuCoreCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -789,7 +788,7 @@ func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference)SetCpuC
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference)SetDataStorageSizeTb(val *float64) {
+func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference) SetDataStorageSizeTb(val *float64) {
 	if err := j.validateSetDataStorageSizeTbParameters(val); err != nil {
 		panic(err)
 	}
@@ -800,7 +799,7 @@ func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference)SetData
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference)SetDbNodeStorageSizeGb(val *float64) {
+func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference) SetDbNodeStorageSizeGb(val *float64) {
 	if err := j.validateSetDbNodeStorageSizeGbParameters(val); err != nil {
 		panic(err)
 	}
@@ -811,7 +810,7 @@ func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference)SetDbNo
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference)SetDbServerOcids(val *[]*string) {
+func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference) SetDbServerOcids(val *[]*string) {
 	if err := j.validateSetDbServerOcidsParameters(val); err != nil {
 		panic(err)
 	}
@@ -822,7 +821,7 @@ func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference)SetDbSe
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference)SetDiskRedundancy(val *string) {
+func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference) SetDiskRedundancy(val *string) {
 	if err := j.validateSetDiskRedundancyParameters(val); err != nil {
 		panic(err)
 	}
@@ -833,7 +832,7 @@ func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference)SetDisk
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference)SetGiVersion(val *string) {
+func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference) SetGiVersion(val *string) {
 	if err := j.validateSetGiVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -844,7 +843,7 @@ func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference)SetGiVe
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference)SetHostnamePrefix(val *string) {
+func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference) SetHostnamePrefix(val *string) {
 	if err := j.validateSetHostnamePrefixParameters(val); err != nil {
 		panic(err)
 	}
@@ -855,7 +854,7 @@ func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference)SetHost
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference)SetInternalValue(val *OracleDatabaseCloudVmClusterProperties) {
+func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference) SetInternalValue(val *OracleDatabaseCloudVmClusterProperties) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -866,7 +865,7 @@ func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference)SetInte
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference)SetLicenseType(val *string) {
+func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference) SetLicenseType(val *string) {
 	if err := j.validateSetLicenseTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -877,7 +876,7 @@ func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference)SetLice
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference)SetLocalBackupEnabled(val interface{}) {
+func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference) SetLocalBackupEnabled(val any) {
 	if err := j.validateSetLocalBackupEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -888,7 +887,7 @@ func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference)SetLoca
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference)SetMemorySizeGb(val *float64) {
+func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference) SetMemorySizeGb(val *float64) {
 	if err := j.validateSetMemorySizeGbParameters(val); err != nil {
 		panic(err)
 	}
@@ -899,7 +898,7 @@ func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference)SetMemo
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference)SetNodeCount(val *float64) {
+func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference) SetNodeCount(val *float64) {
 	if err := j.validateSetNodeCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -910,7 +909,7 @@ func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference)SetNode
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference)SetOcpuCount(val *float64) {
+func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference) SetOcpuCount(val *float64) {
 	if err := j.validateSetOcpuCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -921,7 +920,7 @@ func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference)SetOcpu
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference)SetSparseDiskgroupEnabled(val interface{}) {
+func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference) SetSparseDiskgroupEnabled(val any) {
 	if err := j.validateSetSparseDiskgroupEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -932,7 +931,7 @@ func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference)SetSpar
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference)SetSshPublicKeys(val *[]*string) {
+func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference) SetSshPublicKeys(val *[]*string) {
 	if err := j.validateSetSshPublicKeysParameters(val); err != nil {
 		panic(err)
 	}
@@ -943,7 +942,7 @@ func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference)SetSshP
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -954,7 +953,7 @@ func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -978,16 +977,16 @@ func (o *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference) Comput
 	return returns
 }
 
-func (o *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (o *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1003,7 +1002,7 @@ func (o *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference) GetBoo
 	_jsii_.Invoke(
 		o,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1019,7 +1018,7 @@ func (o *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference) GetBoo
 	_jsii_.Invoke(
 		o,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1035,7 +1034,7 @@ func (o *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference) GetLis
 	_jsii_.Invoke(
 		o,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1051,7 +1050,7 @@ func (o *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference) GetNum
 	_jsii_.Invoke(
 		o,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1067,7 +1066,7 @@ func (o *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference) GetNum
 	_jsii_.Invoke(
 		o,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1083,7 +1082,7 @@ func (o *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference) GetNum
 	_jsii_.Invoke(
 		o,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1099,7 +1098,7 @@ func (o *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference) GetStr
 	_jsii_.Invoke(
 		o,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1115,7 +1114,7 @@ func (o *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference) GetStr
 	_jsii_.Invoke(
 		o,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1144,7 +1143,7 @@ func (o *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference) Interp
 	_jsii_.Invoke(
 		o,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -1158,7 +1157,7 @@ func (o *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference) PutDia
 	_jsii_.InvokeVoid(
 		o,
 		"putDiagnosticsDataCollectionOptions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1169,7 +1168,7 @@ func (o *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference) PutTim
 	_jsii_.InvokeVoid(
 		o,
 		"putTimeZone",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1293,16 +1292,16 @@ func (o *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference) ResetT
 	)
 }
 
-func (o *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (o *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := o.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		o,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -1321,4 +1320,3 @@ func (o *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesOutputReference) ToStri
 
 	return returns
 }
-

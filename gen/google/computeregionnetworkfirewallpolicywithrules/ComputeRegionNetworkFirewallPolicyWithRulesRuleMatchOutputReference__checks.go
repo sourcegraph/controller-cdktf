@@ -90,7 +90,7 @@ func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicyWithRulesRuleMatchOutputRef
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicyWithRulesRuleMatchOutputReference) validatePutLayer4ConfigParameters(value interface{}) error {
+func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicyWithRulesRuleMatchOutputReference) validatePutLayer4ConfigParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicyWithRulesRuleMatchOutputRef
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicyWithRulesRuleMatchOutputReference) validatePutSrcSecureTagParameters(value interface{}) error {
+func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicyWithRulesRuleMatchOutputReference) validatePutSrcSecureTagParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -160,7 +160,7 @@ func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicyWithRulesRuleMatchOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyWithRulesRuleMatchOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyWithRulesRuleMatchOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -340,4 +340,3 @@ func validateNewComputeRegionNetworkFirewallPolicyWithRulesRuleMatchOutputRefere
 
 	return nil
 }
-

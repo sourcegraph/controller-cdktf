@@ -12,9 +12,9 @@ type LoggingFolderSettingsTimeoutsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,8 +33,8 @@ type LoggingFolderSettingsTimeoutsOutputReference interface {
 	DeleteInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -49,7 +49,7 @@ type LoggingFolderSettingsTimeoutsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type LoggingFolderSettingsTimeoutsOutputReference interface {
 	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_LoggingFolderSettingsTimeoutsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_LoggingFolderSettingsTimeoutsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoggingFolderSettingsTimeoutsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_LoggingFolderSettingsTimeoutsOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_LoggingFolderSettingsTimeoutsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoggingFolderSettingsTimeoutsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_LoggingFolderSettingsTimeoutsOutputReference) UpdateInput() *
 	return returns
 }
 
-
 func NewLoggingFolderSettingsTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) LoggingFolderSettingsTimeoutsOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewLoggingFolderSettingsTimeoutsOutputReference(terraformResource cdktf.IIn
 
 	_jsii_.Create(
 		"@cdktf/provider-google.loggingFolderSettings.LoggingFolderSettingsTimeoutsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewLoggingFolderSettingsTimeoutsOutputReference_Override(l LoggingFolderSet
 
 	_jsii_.Create(
 		"@cdktf/provider-google.loggingFolderSettings.LoggingFolderSettingsTimeoutsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LoggingFolderSettingsTimeoutsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_LoggingFolderSettingsTimeoutsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_LoggingFolderSettingsTimeoutsOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_LoggingFolderSettingsTimeoutsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_LoggingFolderSettingsTimeoutsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_LoggingFolderSettingsTimeoutsOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_LoggingFolderSettingsTimeoutsOutputReference)SetCreate(val *string) {
+func (j *jsiiProxy_LoggingFolderSettingsTimeoutsOutputReference) SetCreate(val *string) {
 	if err := j.validateSetCreateParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_LoggingFolderSettingsTimeoutsOutputReference)SetCreate(val *s
 	)
 }
 
-func (j *jsiiProxy_LoggingFolderSettingsTimeoutsOutputReference)SetDelete(val *string) {
+func (j *jsiiProxy_LoggingFolderSettingsTimeoutsOutputReference) SetDelete(val *string) {
 	if err := j.validateSetDeleteParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_LoggingFolderSettingsTimeoutsOutputReference)SetDelete(val *s
 	)
 }
 
-func (j *jsiiProxy_LoggingFolderSettingsTimeoutsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_LoggingFolderSettingsTimeoutsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_LoggingFolderSettingsTimeoutsOutputReference)SetInternalValue
 	)
 }
 
-func (j *jsiiProxy_LoggingFolderSettingsTimeoutsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_LoggingFolderSettingsTimeoutsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_LoggingFolderSettingsTimeoutsOutputReference)SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_LoggingFolderSettingsTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LoggingFolderSettingsTimeoutsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_LoggingFolderSettingsTimeoutsOutputReference)SetTerraformReso
 	)
 }
 
-func (j *jsiiProxy_LoggingFolderSettingsTimeoutsOutputReference)SetUpdate(val *string) {
+func (j *jsiiProxy_LoggingFolderSettingsTimeoutsOutputReference) SetUpdate(val *string) {
 	if err := j.validateSetUpdateParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (l *jsiiProxy_LoggingFolderSettingsTimeoutsOutputReference) ComputeFqn() *s
 	return returns
 }
 
-func (l *jsiiProxy_LoggingFolderSettingsTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_LoggingFolderSettingsTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (l *jsiiProxy_LoggingFolderSettingsTimeoutsOutputReference) GetBooleanAttri
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (l *jsiiProxy_LoggingFolderSettingsTimeoutsOutputReference) GetBooleanMapAt
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (l *jsiiProxy_LoggingFolderSettingsTimeoutsOutputReference) GetListAttribut
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (l *jsiiProxy_LoggingFolderSettingsTimeoutsOutputReference) GetNumberAttrib
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (l *jsiiProxy_LoggingFolderSettingsTimeoutsOutputReference) GetNumberListAt
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (l *jsiiProxy_LoggingFolderSettingsTimeoutsOutputReference) GetNumberMapAtt
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (l *jsiiProxy_LoggingFolderSettingsTimeoutsOutputReference) GetStringAttrib
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (l *jsiiProxy_LoggingFolderSettingsTimeoutsOutputReference) GetStringMapAtt
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (l *jsiiProxy_LoggingFolderSettingsTimeoutsOutputReference) InterpolationFo
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (l *jsiiProxy_LoggingFolderSettingsTimeoutsOutputReference) ResetUpdate() {
 	)
 }
 
-func (l *jsiiProxy_LoggingFolderSettingsTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (l *jsiiProxy_LoggingFolderSettingsTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := l.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (l *jsiiProxy_LoggingFolderSettingsTimeoutsOutputReference) ToString() *str
 
 	return returns
 }
-

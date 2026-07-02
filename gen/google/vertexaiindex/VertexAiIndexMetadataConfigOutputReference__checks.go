@@ -117,7 +117,7 @@ func (j *jsiiProxy_VertexAiIndexMetadataConfigOutputReference) validateSetApprox
 	return nil
 }
 
-func (j *jsiiProxy_VertexAiIndexMetadataConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_VertexAiIndexMetadataConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -249,4 +249,3 @@ func validateNewVertexAiIndexMetadataConfigOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

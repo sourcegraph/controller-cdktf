@@ -18,11 +18,11 @@ type DataGoogleBiglakeIcebergNamespaceIamPolicy interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -57,17 +57,17 @@ type DataGoogleBiglakeIcebergNamespaceIamPolicy interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -94,18 +94,18 @@ type DataGoogleBiglakeIcebergNamespaceIamPolicy interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataGoogleBiglakeIcebergNamespaceIamPolicy
@@ -143,8 +143,8 @@ func (j *jsiiProxy_DataGoogleBiglakeIcebergNamespaceIamPolicy) CdktfStack() cdkt
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleBiglakeIcebergNamespaceIamPolicy) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleBiglakeIcebergNamespaceIamPolicy) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -153,8 +153,8 @@ func (j *jsiiProxy_DataGoogleBiglakeIcebergNamespaceIamPolicy) ConstructNodeMeta
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleBiglakeIcebergNamespaceIamPolicy) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleBiglakeIcebergNamespaceIamPolicy) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -313,8 +313,8 @@ func (j *jsiiProxy_DataGoogleBiglakeIcebergNamespaceIamPolicy) Provider() cdktf.
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleBiglakeIcebergNamespaceIamPolicy) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleBiglakeIcebergNamespaceIamPolicy) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -333,8 +333,8 @@ func (j *jsiiProxy_DataGoogleBiglakeIcebergNamespaceIamPolicy) TerraformGenerato
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleBiglakeIcebergNamespaceIamPolicy) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleBiglakeIcebergNamespaceIamPolicy) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -353,7 +353,6 @@ func (j *jsiiProxy_DataGoogleBiglakeIcebergNamespaceIamPolicy) TerraformResource
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/biglake_iceberg_namespace_iam_policy google_biglake_iceberg_namespace_iam_policy} Data Source.
 func NewDataGoogleBiglakeIcebergNamespaceIamPolicy(scope constructs.Construct, id *string, config *DataGoogleBiglakeIcebergNamespaceIamPolicyConfig) DataGoogleBiglakeIcebergNamespaceIamPolicy {
 	_init_.Initialize()
@@ -365,7 +364,7 @@ func NewDataGoogleBiglakeIcebergNamespaceIamPolicy(scope constructs.Construct, i
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleBiglakeIcebergNamespaceIamPolicy.DataGoogleBiglakeIcebergNamespaceIamPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -378,12 +377,12 @@ func NewDataGoogleBiglakeIcebergNamespaceIamPolicy_Override(d DataGoogleBiglakeI
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleBiglakeIcebergNamespaceIamPolicy.DataGoogleBiglakeIcebergNamespaceIamPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataGoogleBiglakeIcebergNamespaceIamPolicy)SetCatalog(val *string) {
+func (j *jsiiProxy_DataGoogleBiglakeIcebergNamespaceIamPolicy) SetCatalog(val *string) {
 	if err := j.validateSetCatalogParameters(val); err != nil {
 		panic(err)
 	}
@@ -394,7 +393,7 @@ func (j *jsiiProxy_DataGoogleBiglakeIcebergNamespaceIamPolicy)SetCatalog(val *st
 	)
 }
 
-func (j *jsiiProxy_DataGoogleBiglakeIcebergNamespaceIamPolicy)SetCount(val interface{}) {
+func (j *jsiiProxy_DataGoogleBiglakeIcebergNamespaceIamPolicy) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -405,7 +404,7 @@ func (j *jsiiProxy_DataGoogleBiglakeIcebergNamespaceIamPolicy)SetCount(val inter
 	)
 }
 
-func (j *jsiiProxy_DataGoogleBiglakeIcebergNamespaceIamPolicy)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataGoogleBiglakeIcebergNamespaceIamPolicy) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -413,7 +412,7 @@ func (j *jsiiProxy_DataGoogleBiglakeIcebergNamespaceIamPolicy)SetDependsOn(val *
 	)
 }
 
-func (j *jsiiProxy_DataGoogleBiglakeIcebergNamespaceIamPolicy)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGoogleBiglakeIcebergNamespaceIamPolicy) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -421,7 +420,7 @@ func (j *jsiiProxy_DataGoogleBiglakeIcebergNamespaceIamPolicy)SetForEach(val cdk
 	)
 }
 
-func (j *jsiiProxy_DataGoogleBiglakeIcebergNamespaceIamPolicy)SetId(val *string) {
+func (j *jsiiProxy_DataGoogleBiglakeIcebergNamespaceIamPolicy) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -432,7 +431,7 @@ func (j *jsiiProxy_DataGoogleBiglakeIcebergNamespaceIamPolicy)SetId(val *string)
 	)
 }
 
-func (j *jsiiProxy_DataGoogleBiglakeIcebergNamespaceIamPolicy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGoogleBiglakeIcebergNamespaceIamPolicy) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -443,7 +442,7 @@ func (j *jsiiProxy_DataGoogleBiglakeIcebergNamespaceIamPolicy)SetLifecycle(val *
 	)
 }
 
-func (j *jsiiProxy_DataGoogleBiglakeIcebergNamespaceIamPolicy)SetNamespaceId(val *string) {
+func (j *jsiiProxy_DataGoogleBiglakeIcebergNamespaceIamPolicy) SetNamespaceId(val *string) {
 	if err := j.validateSetNamespaceIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -454,7 +453,7 @@ func (j *jsiiProxy_DataGoogleBiglakeIcebergNamespaceIamPolicy)SetNamespaceId(val
 	)
 }
 
-func (j *jsiiProxy_DataGoogleBiglakeIcebergNamespaceIamPolicy)SetProject(val *string) {
+func (j *jsiiProxy_DataGoogleBiglakeIcebergNamespaceIamPolicy) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -465,7 +464,7 @@ func (j *jsiiProxy_DataGoogleBiglakeIcebergNamespaceIamPolicy)SetProject(val *st
 	)
 }
 
-func (j *jsiiProxy_DataGoogleBiglakeIcebergNamespaceIamPolicy)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGoogleBiglakeIcebergNamespaceIamPolicy) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -485,7 +484,7 @@ func DataGoogleBiglakeIcebergNamespaceIamPolicy_GenerateConfigForImport(scope co
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleBiglakeIcebergNamespaceIamPolicy.DataGoogleBiglakeIcebergNamespaceIamPolicy",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -509,7 +508,7 @@ func DataGoogleBiglakeIcebergNamespaceIamPolicy_GenerateConfigForImport(scope co
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataGoogleBiglakeIcebergNamespaceIamPolicy_IsConstruct(x interface{}) *bool {
+func DataGoogleBiglakeIcebergNamespaceIamPolicy_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleBiglakeIcebergNamespaceIamPolicy_IsConstructParameters(x); err != nil {
@@ -520,7 +519,7 @@ func DataGoogleBiglakeIcebergNamespaceIamPolicy_IsConstruct(x interface{}) *bool
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleBiglakeIcebergNamespaceIamPolicy.DataGoogleBiglakeIcebergNamespaceIamPolicy",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -528,7 +527,7 @@ func DataGoogleBiglakeIcebergNamespaceIamPolicy_IsConstruct(x interface{}) *bool
 }
 
 // Experimental.
-func DataGoogleBiglakeIcebergNamespaceIamPolicy_IsTerraformDataSource(x interface{}) *bool {
+func DataGoogleBiglakeIcebergNamespaceIamPolicy_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleBiglakeIcebergNamespaceIamPolicy_IsTerraformDataSourceParameters(x); err != nil {
@@ -539,7 +538,7 @@ func DataGoogleBiglakeIcebergNamespaceIamPolicy_IsTerraformDataSource(x interfac
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleBiglakeIcebergNamespaceIamPolicy.DataGoogleBiglakeIcebergNamespaceIamPolicy",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -547,7 +546,7 @@ func DataGoogleBiglakeIcebergNamespaceIamPolicy_IsTerraformDataSource(x interfac
 }
 
 // Experimental.
-func DataGoogleBiglakeIcebergNamespaceIamPolicy_IsTerraformElement(x interface{}) *bool {
+func DataGoogleBiglakeIcebergNamespaceIamPolicy_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleBiglakeIcebergNamespaceIamPolicy_IsTerraformElementParameters(x); err != nil {
@@ -558,7 +557,7 @@ func DataGoogleBiglakeIcebergNamespaceIamPolicy_IsTerraformElement(x interface{}
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleBiglakeIcebergNamespaceIamPolicy.DataGoogleBiglakeIcebergNamespaceIamPolicy",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -576,27 +575,27 @@ func DataGoogleBiglakeIcebergNamespaceIamPolicy_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleBiglakeIcebergNamespaceIamPolicy) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataGoogleBiglakeIcebergNamespaceIamPolicy) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataGoogleBiglakeIcebergNamespaceIamPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataGoogleBiglakeIcebergNamespaceIamPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -612,7 +611,7 @@ func (d *jsiiProxy_DataGoogleBiglakeIcebergNamespaceIamPolicy) GetBooleanAttribu
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -628,7 +627,7 @@ func (d *jsiiProxy_DataGoogleBiglakeIcebergNamespaceIamPolicy) GetBooleanMapAttr
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -644,7 +643,7 @@ func (d *jsiiProxy_DataGoogleBiglakeIcebergNamespaceIamPolicy) GetListAttribute(
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -660,7 +659,7 @@ func (d *jsiiProxy_DataGoogleBiglakeIcebergNamespaceIamPolicy) GetNumberAttribut
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -676,7 +675,7 @@ func (d *jsiiProxy_DataGoogleBiglakeIcebergNamespaceIamPolicy) GetNumberListAttr
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -692,7 +691,7 @@ func (d *jsiiProxy_DataGoogleBiglakeIcebergNamespaceIamPolicy) GetNumberMapAttri
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -708,7 +707,7 @@ func (d *jsiiProxy_DataGoogleBiglakeIcebergNamespaceIamPolicy) GetStringAttribut
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -724,7 +723,7 @@ func (d *jsiiProxy_DataGoogleBiglakeIcebergNamespaceIamPolicy) GetStringMapAttri
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -740,7 +739,7 @@ func (d *jsiiProxy_DataGoogleBiglakeIcebergNamespaceIamPolicy) InterpolationForA
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -754,7 +753,7 @@ func (d *jsiiProxy_DataGoogleBiglakeIcebergNamespaceIamPolicy) OverrideLogicalId
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -782,8 +781,8 @@ func (d *jsiiProxy_DataGoogleBiglakeIcebergNamespaceIamPolicy) ResetProject() {
 	)
 }
 
-func (d *jsiiProxy_DataGoogleBiglakeIcebergNamespaceIamPolicy) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleBiglakeIcebergNamespaceIamPolicy) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -795,8 +794,8 @@ func (d *jsiiProxy_DataGoogleBiglakeIcebergNamespaceIamPolicy) SynthesizeAttribu
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleBiglakeIcebergNamespaceIamPolicy) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleBiglakeIcebergNamespaceIamPolicy) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -808,8 +807,8 @@ func (d *jsiiProxy_DataGoogleBiglakeIcebergNamespaceIamPolicy) SynthesizeHclAttr
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleBiglakeIcebergNamespaceIamPolicy) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleBiglakeIcebergNamespaceIamPolicy) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -821,8 +820,8 @@ func (d *jsiiProxy_DataGoogleBiglakeIcebergNamespaceIamPolicy) ToHclTerraform() 
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleBiglakeIcebergNamespaceIamPolicy) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleBiglakeIcebergNamespaceIamPolicy) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -847,8 +846,8 @@ func (d *jsiiProxy_DataGoogleBiglakeIcebergNamespaceIamPolicy) ToString() *strin
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleBiglakeIcebergNamespaceIamPolicy) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleBiglakeIcebergNamespaceIamPolicy) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -859,4 +858,3 @@ func (d *jsiiProxy_DataGoogleBiglakeIcebergNamespaceIamPolicy) ToTerraform() int
 
 	return returns
 }
-

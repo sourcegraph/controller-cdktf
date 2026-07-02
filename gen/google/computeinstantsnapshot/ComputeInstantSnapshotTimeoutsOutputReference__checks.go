@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeInstantSnapshotTimeoutsOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInstantSnapshotTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInstantSnapshotTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_ComputeInstantSnapshotTimeoutsOutputReference) validateSetDel
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInstantSnapshotTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInstantSnapshotTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewComputeInstantSnapshotTimeoutsOutputReferenceParameters(terrafor
 
 	return nil
 }
-

@@ -120,7 +120,7 @@ func (c *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -220,4 +220,3 @@ func validateNewContainerClusterControlPlaneEndpointsConfigOutputReferenceParame
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.migrationCenterPreferenceSet.MigrationCenterPreferenceSet",
-		reflect.TypeOf((*MigrationCenterPreferenceSet)(nil)).Elem(),
+		reflect.TypeFor[MigrationCenterPreferenceSet](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -80,7 +80,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "virtualMachinePreferences", GoGetter: "VirtualMachinePreferences"},
 			_jsii_.MemberProperty{JsiiProperty: "virtualMachinePreferencesInput", GoGetter: "VirtualMachinePreferencesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MigrationCenterPreferenceSet{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -88,15 +88,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.migrationCenterPreferenceSet.MigrationCenterPreferenceSetConfig",
-		reflect.TypeOf((*MigrationCenterPreferenceSetConfig)(nil)).Elem(),
+		reflect.TypeFor[MigrationCenterPreferenceSetConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.migrationCenterPreferenceSet.MigrationCenterPreferenceSetTimeouts",
-		reflect.TypeOf((*MigrationCenterPreferenceSetTimeouts)(nil)).Elem(),
+		reflect.TypeFor[MigrationCenterPreferenceSetTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.migrationCenterPreferenceSet.MigrationCenterPreferenceSetTimeoutsOutputReference",
-		reflect.TypeOf((*MigrationCenterPreferenceSetTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MigrationCenterPreferenceSetTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -129,7 +129,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MigrationCenterPreferenceSetTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -137,23 +137,23 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.migrationCenterPreferenceSet.MigrationCenterPreferenceSetVirtualMachinePreferences",
-		reflect.TypeOf((*MigrationCenterPreferenceSetVirtualMachinePreferences)(nil)).Elem(),
+		reflect.TypeFor[MigrationCenterPreferenceSetVirtualMachinePreferences](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.migrationCenterPreferenceSet.MigrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePreferences",
-		reflect.TypeOf((*MigrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePreferences)(nil)).Elem(),
+		reflect.TypeFor[MigrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePreferences](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.migrationCenterPreferenceSet.MigrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePreferencesMachinePreferences",
-		reflect.TypeOf((*MigrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePreferencesMachinePreferences)(nil)).Elem(),
+		reflect.TypeFor[MigrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePreferencesMachinePreferences](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.migrationCenterPreferenceSet.MigrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePreferencesMachinePreferencesAllowedMachineSeries",
-		reflect.TypeOf((*MigrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePreferencesMachinePreferencesAllowedMachineSeries)(nil)).Elem(),
+		reflect.TypeFor[MigrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePreferencesMachinePreferencesAllowedMachineSeries](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.migrationCenterPreferenceSet.MigrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePreferencesMachinePreferencesAllowedMachineSeriesList",
-		reflect.TypeOf((*MigrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePreferencesMachinePreferencesAllowedMachineSeriesList)(nil)).Elem(),
+		reflect.TypeFor[MigrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePreferencesMachinePreferencesAllowedMachineSeriesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -167,7 +167,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MigrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePreferencesMachinePreferencesAllowedMachineSeriesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -175,7 +175,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.migrationCenterPreferenceSet.MigrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePreferencesMachinePreferencesAllowedMachineSeriesOutputReference",
-		reflect.TypeOf((*MigrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePreferencesMachinePreferencesAllowedMachineSeriesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MigrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePreferencesMachinePreferencesAllowedMachineSeriesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "code", GoGetter: "Code"},
 			_jsii_.MemberProperty{JsiiProperty: "codeInput", GoGetter: "CodeInput"},
@@ -202,7 +202,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MigrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePreferencesMachinePreferencesAllowedMachineSeriesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -210,7 +210,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.migrationCenterPreferenceSet.MigrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePreferencesMachinePreferencesOutputReference",
-		reflect.TypeOf((*MigrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePreferencesMachinePreferencesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MigrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePreferencesMachinePreferencesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedMachineSeries", GoGetter: "AllowedMachineSeries"},
 			_jsii_.MemberProperty{JsiiProperty: "allowedMachineSeriesInput", GoGetter: "AllowedMachineSeriesInput"},
@@ -238,7 +238,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MigrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePreferencesMachinePreferencesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -246,7 +246,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.migrationCenterPreferenceSet.MigrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePreferencesOutputReference",
-		reflect.TypeOf((*MigrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePreferencesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MigrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePreferencesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -280,7 +280,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MigrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePreferencesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -288,7 +288,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.migrationCenterPreferenceSet.MigrationCenterPreferenceSetVirtualMachinePreferencesOutputReference",
-		reflect.TypeOf((*MigrationCenterPreferenceSetVirtualMachinePreferencesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MigrationCenterPreferenceSetVirtualMachinePreferencesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "commitmentPlan", GoGetter: "CommitmentPlan"},
 			_jsii_.MemberProperty{JsiiProperty: "commitmentPlanInput", GoGetter: "CommitmentPlanInput"},
@@ -337,7 +337,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vmwareEnginePreferences", GoGetter: "VmwareEnginePreferences"},
 			_jsii_.MemberProperty{JsiiProperty: "vmwareEnginePreferencesInput", GoGetter: "VmwareEnginePreferencesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MigrationCenterPreferenceSetVirtualMachinePreferencesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -345,11 +345,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.migrationCenterPreferenceSet.MigrationCenterPreferenceSetVirtualMachinePreferencesRegionPreferences",
-		reflect.TypeOf((*MigrationCenterPreferenceSetVirtualMachinePreferencesRegionPreferences)(nil)).Elem(),
+		reflect.TypeFor[MigrationCenterPreferenceSetVirtualMachinePreferencesRegionPreferences](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.migrationCenterPreferenceSet.MigrationCenterPreferenceSetVirtualMachinePreferencesRegionPreferencesOutputReference",
-		reflect.TypeOf((*MigrationCenterPreferenceSetVirtualMachinePreferencesRegionPreferencesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MigrationCenterPreferenceSetVirtualMachinePreferencesRegionPreferencesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -376,7 +376,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MigrationCenterPreferenceSetVirtualMachinePreferencesRegionPreferencesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -384,15 +384,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.migrationCenterPreferenceSet.MigrationCenterPreferenceSetVirtualMachinePreferencesSoleTenancyPreferences",
-		reflect.TypeOf((*MigrationCenterPreferenceSetVirtualMachinePreferencesSoleTenancyPreferences)(nil)).Elem(),
+		reflect.TypeFor[MigrationCenterPreferenceSetVirtualMachinePreferencesSoleTenancyPreferences](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.migrationCenterPreferenceSet.MigrationCenterPreferenceSetVirtualMachinePreferencesSoleTenancyPreferencesNodeTypes",
-		reflect.TypeOf((*MigrationCenterPreferenceSetVirtualMachinePreferencesSoleTenancyPreferencesNodeTypes)(nil)).Elem(),
+		reflect.TypeFor[MigrationCenterPreferenceSetVirtualMachinePreferencesSoleTenancyPreferencesNodeTypes](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.migrationCenterPreferenceSet.MigrationCenterPreferenceSetVirtualMachinePreferencesSoleTenancyPreferencesNodeTypesList",
-		reflect.TypeOf((*MigrationCenterPreferenceSetVirtualMachinePreferencesSoleTenancyPreferencesNodeTypesList)(nil)).Elem(),
+		reflect.TypeFor[MigrationCenterPreferenceSetVirtualMachinePreferencesSoleTenancyPreferencesNodeTypesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -406,7 +406,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MigrationCenterPreferenceSetVirtualMachinePreferencesSoleTenancyPreferencesNodeTypesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -414,7 +414,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.migrationCenterPreferenceSet.MigrationCenterPreferenceSetVirtualMachinePreferencesSoleTenancyPreferencesNodeTypesOutputReference",
-		reflect.TypeOf((*MigrationCenterPreferenceSetVirtualMachinePreferencesSoleTenancyPreferencesNodeTypesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MigrationCenterPreferenceSetVirtualMachinePreferencesSoleTenancyPreferencesNodeTypesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -441,7 +441,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MigrationCenterPreferenceSetVirtualMachinePreferencesSoleTenancyPreferencesNodeTypesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -449,7 +449,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.migrationCenterPreferenceSet.MigrationCenterPreferenceSetVirtualMachinePreferencesSoleTenancyPreferencesOutputReference",
-		reflect.TypeOf((*MigrationCenterPreferenceSetVirtualMachinePreferencesSoleTenancyPreferencesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MigrationCenterPreferenceSetVirtualMachinePreferencesSoleTenancyPreferencesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "commitmentPlan", GoGetter: "CommitmentPlan"},
 			_jsii_.MemberProperty{JsiiProperty: "commitmentPlanInput", GoGetter: "CommitmentPlanInput"},
@@ -486,7 +486,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MigrationCenterPreferenceSetVirtualMachinePreferencesSoleTenancyPreferencesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -494,11 +494,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.migrationCenterPreferenceSet.MigrationCenterPreferenceSetVirtualMachinePreferencesVmwareEnginePreferences",
-		reflect.TypeOf((*MigrationCenterPreferenceSetVirtualMachinePreferencesVmwareEnginePreferences)(nil)).Elem(),
+		reflect.TypeFor[MigrationCenterPreferenceSetVirtualMachinePreferencesVmwareEnginePreferences](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.migrationCenterPreferenceSet.MigrationCenterPreferenceSetVirtualMachinePreferencesVmwareEnginePreferencesOutputReference",
-		reflect.TypeOf((*MigrationCenterPreferenceSetVirtualMachinePreferencesVmwareEnginePreferencesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MigrationCenterPreferenceSetVirtualMachinePreferencesVmwareEnginePreferencesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "commitmentPlan", GoGetter: "CommitmentPlan"},
 			_jsii_.MemberProperty{JsiiProperty: "commitmentPlanInput", GoGetter: "CommitmentPlanInput"},
@@ -534,7 +534,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MigrationCenterPreferenceSetVirtualMachinePreferencesVmwareEnginePreferencesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

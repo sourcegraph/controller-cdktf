@@ -14,12 +14,12 @@ type SqlDatabaseInstanceSettingsIpConfigurationOutputReference interface {
 	SetAllocatedIpRange(val *string)
 	AllocatedIpRangeInput() *string
 	AuthorizedNetworks() SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksList
-	AuthorizedNetworksInput() interface{}
+	AuthorizedNetworksInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,21 +33,21 @@ type SqlDatabaseInstanceSettingsIpConfigurationOutputReference interface {
 	CustomSubjectAlternativeNames() *[]*string
 	SetCustomSubjectAlternativeNames(val *[]*string)
 	CustomSubjectAlternativeNamesInput() *[]*string
-	EnablePrivatePathForGoogleCloudServices() interface{}
-	SetEnablePrivatePathForGoogleCloudServices(val interface{})
-	EnablePrivatePathForGoogleCloudServicesInput() interface{}
+	EnablePrivatePathForGoogleCloudServices() any
+	SetEnablePrivatePathForGoogleCloudServices(val any)
+	EnablePrivatePathForGoogleCloudServicesInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *SqlDatabaseInstanceSettingsIpConfiguration
 	SetInternalValue(val *SqlDatabaseInstanceSettingsIpConfiguration)
-	Ipv4Enabled() interface{}
-	SetIpv4Enabled(val interface{})
-	Ipv4EnabledInput() interface{}
+	Ipv4Enabled() any
+	SetIpv4Enabled(val any)
+	Ipv4EnabledInput() any
 	PrivateNetwork() *string
 	SetPrivateNetwork(val *string)
 	PrivateNetworkInput() *string
 	PscConfig() SqlDatabaseInstanceSettingsIpConfigurationPscConfigList
-	PscConfigInput() interface{}
+	PscConfigInput() any
 	ServerCaMode() *string
 	SetServerCaMode(val *string)
 	ServerCaModeInput() *string
@@ -71,7 +71,7 @@ type SqlDatabaseInstanceSettingsIpConfigurationOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -92,8 +92,8 @@ type SqlDatabaseInstanceSettingsIpConfigurationOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutAuthorizedNetworks(value interface{})
-	PutPscConfig(value interface{})
+	PutAuthorizedNetworks(value any)
+	PutPscConfig(value any)
 	ResetAllocatedIpRange()
 	ResetAuthorizedNetworks()
 	ResetCustomSubjectAlternativeNames()
@@ -107,7 +107,7 @@ type SqlDatabaseInstanceSettingsIpConfigurationOutputReference interface {
 	ResetSslMode()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -150,8 +150,8 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) Au
 	return returns
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) AuthorizedNetworksInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) AuthorizedNetworksInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"authorizedNetworksInput",
@@ -160,8 +160,8 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) Au
 	return returns
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -210,8 +210,8 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) Cu
 	return returns
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) EnablePrivatePathForGoogleCloudServices() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) EnablePrivatePathForGoogleCloudServices() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enablePrivatePathForGoogleCloudServices",
@@ -220,8 +220,8 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) En
 	return returns
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) EnablePrivatePathForGoogleCloudServicesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) EnablePrivatePathForGoogleCloudServicesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enablePrivatePathForGoogleCloudServicesInput",
@@ -250,8 +250,8 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) In
 	return returns
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) Ipv4Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) Ipv4Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ipv4Enabled",
@@ -260,8 +260,8 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) Ip
 	return returns
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) Ipv4EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) Ipv4EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ipv4EnabledInput",
@@ -300,8 +300,8 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) Ps
 	return returns
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) PscConfigInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) PscConfigInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"pscConfigInput",
@@ -410,7 +410,6 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) Te
 	return returns
 }
 
-
 func NewSqlDatabaseInstanceSettingsIpConfigurationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) SqlDatabaseInstanceSettingsIpConfigurationOutputReference {
 	_init_.Initialize()
 
@@ -421,7 +420,7 @@ func NewSqlDatabaseInstanceSettingsIpConfigurationOutputReference(terraformResou
 
 	_jsii_.Create(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -433,12 +432,12 @@ func NewSqlDatabaseInstanceSettingsIpConfigurationOutputReference_Override(s Sql
 
 	_jsii_.Create(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference)SetAllocatedIpRange(val *string) {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) SetAllocatedIpRange(val *string) {
 	if err := j.validateSetAllocatedIpRangeParameters(val); err != nil {
 		panic(err)
 	}
@@ -449,7 +448,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -460,7 +459,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -471,7 +470,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference)SetCustomSubjectAlternativeNames(val *[]*string) {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) SetCustomSubjectAlternativeNames(val *[]*string) {
 	if err := j.validateSetCustomSubjectAlternativeNamesParameters(val); err != nil {
 		panic(err)
 	}
@@ -482,7 +481,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference)SetEnablePrivatePathForGoogleCloudServices(val interface{}) {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) SetEnablePrivatePathForGoogleCloudServices(val any) {
 	if err := j.validateSetEnablePrivatePathForGoogleCloudServicesParameters(val); err != nil {
 		panic(err)
 	}
@@ -493,7 +492,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference)SetInternalValue(val *SqlDatabaseInstanceSettingsIpConfiguration) {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) SetInternalValue(val *SqlDatabaseInstanceSettingsIpConfiguration) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -504,7 +503,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference)SetIpv4Enabled(val interface{}) {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) SetIpv4Enabled(val any) {
 	if err := j.validateSetIpv4EnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -515,7 +514,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference)SetPrivateNetwork(val *string) {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) SetPrivateNetwork(val *string) {
 	if err := j.validateSetPrivateNetworkParameters(val); err != nil {
 		panic(err)
 	}
@@ -526,7 +525,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference)SetServerCaMode(val *string) {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) SetServerCaMode(val *string) {
 	if err := j.validateSetServerCaModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -537,7 +536,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference)SetServerCaPool(val *string) {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) SetServerCaPool(val *string) {
 	if err := j.validateSetServerCaPoolParameters(val); err != nil {
 		panic(err)
 	}
@@ -548,7 +547,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference)SetServerCertificateRotationMode(val *string) {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) SetServerCertificateRotationMode(val *string) {
 	if err := j.validateSetServerCertificateRotationModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -559,7 +558,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference)SetSslMode(val *string) {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) SetSslMode(val *string) {
 	if err := j.validateSetSslModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -570,7 +569,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -581,7 +580,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -605,16 +604,16 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) Co
 	return returns
 }
 
-func (s *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -630,7 +629,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) Ge
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -646,7 +645,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) Ge
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -662,7 +661,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) Ge
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -678,7 +677,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) Ge
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -694,7 +693,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) Ge
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -710,7 +709,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) Ge
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -726,7 +725,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) Ge
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -742,7 +741,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) Ge
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -771,32 +770,32 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) In
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) PutAuthorizedNetworks(value interface{}) {
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) PutAuthorizedNetworks(value any) {
 	if err := s.validatePutAuthorizedNetworksParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putAuthorizedNetworks",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (s *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) PutPscConfig(value interface{}) {
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) PutPscConfig(value any) {
 	if err := s.validatePutPscConfigParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putPscConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -888,16 +887,16 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) Re
 	)
 }
 
-func (s *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -916,4 +915,3 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) To
 
 	return returns
 }
-

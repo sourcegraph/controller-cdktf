@@ -34,7 +34,7 @@ func (g *jsiiProxy_GkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespac
 	return nil
 }
 
-func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNamesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNamesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedN
 
 	return nil
 }
-

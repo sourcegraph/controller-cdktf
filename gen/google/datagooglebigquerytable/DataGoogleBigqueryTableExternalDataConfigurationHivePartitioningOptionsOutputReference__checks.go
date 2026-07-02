@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleBigqueryTableExternalDataConfigurationHivePartition
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleBigqueryTableExternalDataConfigurationHivePartitioningOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleBigqueryTableExternalDataConfigurationHivePartitioningOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleBigqueryTableExternalDataConfigurationHivePartitioning
 
 	return nil
 }
-

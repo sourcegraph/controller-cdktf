@@ -117,7 +117,7 @@ func (j *jsiiProxy_ChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_ChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -190,7 +190,7 @@ func (j *jsiiProxy_ChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_ChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -257,4 +257,3 @@ func validateNewChronicleDataAccessScopeDeniedDataAccessLabelsOutputReferencePar
 
 	return nil
 }
-

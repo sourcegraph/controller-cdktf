@@ -34,7 +34,7 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheKeysetPublicKeyList) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesEdgeCacheKeysetPublicKeyList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkServicesEdgeCacheKeysetPublicKeyList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewNetworkServicesEdgeCacheKeysetPublicKeyListParameters(terraformR
 
 	return nil
 }
-

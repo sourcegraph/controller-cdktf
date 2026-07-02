@@ -98,7 +98,7 @@ func (o *jsiiProxy_OracleDatabaseDbSystemPropertiesDbSystemOptionsOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesDbSystemOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesDbSystemOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewOracleDatabaseDbSystemPropertiesDbSystemOptionsOutputReferencePa
 
 	return nil
 }
-

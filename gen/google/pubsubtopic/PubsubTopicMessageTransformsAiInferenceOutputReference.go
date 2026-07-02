@@ -12,9 +12,9 @@ type PubsubTopicMessageTransformsAiInferenceOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -48,7 +48,7 @@ type PubsubTopicMessageTransformsAiInferenceOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -74,7 +74,7 @@ type PubsubTopicMessageTransformsAiInferenceOutputReference interface {
 	ResetUnstructuredInference()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -87,8 +87,8 @@ type jsiiProxy_PubsubTopicMessageTransformsAiInferenceOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_PubsubTopicMessageTransformsAiInferenceOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PubsubTopicMessageTransformsAiInferenceOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -217,7 +217,6 @@ func (j *jsiiProxy_PubsubTopicMessageTransformsAiInferenceOutputReference) Unstr
 	return returns
 }
 
-
 func NewPubsubTopicMessageTransformsAiInferenceOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PubsubTopicMessageTransformsAiInferenceOutputReference {
 	_init_.Initialize()
 
@@ -228,7 +227,7 @@ func NewPubsubTopicMessageTransformsAiInferenceOutputReference(terraformResource
 
 	_jsii_.Create(
 		"@cdktf/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -240,12 +239,12 @@ func NewPubsubTopicMessageTransformsAiInferenceOutputReference_Override(p Pubsub
 
 	_jsii_.Create(
 		"@cdktf/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PubsubTopicMessageTransformsAiInferenceOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_PubsubTopicMessageTransformsAiInferenceOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -256,7 +255,7 @@ func (j *jsiiProxy_PubsubTopicMessageTransformsAiInferenceOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_PubsubTopicMessageTransformsAiInferenceOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_PubsubTopicMessageTransformsAiInferenceOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -267,7 +266,7 @@ func (j *jsiiProxy_PubsubTopicMessageTransformsAiInferenceOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_PubsubTopicMessageTransformsAiInferenceOutputReference)SetEndpoint(val *string) {
+func (j *jsiiProxy_PubsubTopicMessageTransformsAiInferenceOutputReference) SetEndpoint(val *string) {
 	if err := j.validateSetEndpointParameters(val); err != nil {
 		panic(err)
 	}
@@ -278,7 +277,7 @@ func (j *jsiiProxy_PubsubTopicMessageTransformsAiInferenceOutputReference)SetEnd
 	)
 }
 
-func (j *jsiiProxy_PubsubTopicMessageTransformsAiInferenceOutputReference)SetInternalValue(val *PubsubTopicMessageTransformsAiInference) {
+func (j *jsiiProxy_PubsubTopicMessageTransformsAiInferenceOutputReference) SetInternalValue(val *PubsubTopicMessageTransformsAiInference) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -289,7 +288,7 @@ func (j *jsiiProxy_PubsubTopicMessageTransformsAiInferenceOutputReference)SetInt
 	)
 }
 
-func (j *jsiiProxy_PubsubTopicMessageTransformsAiInferenceOutputReference)SetServiceAccountEmail(val *string) {
+func (j *jsiiProxy_PubsubTopicMessageTransformsAiInferenceOutputReference) SetServiceAccountEmail(val *string) {
 	if err := j.validateSetServiceAccountEmailParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,7 +299,7 @@ func (j *jsiiProxy_PubsubTopicMessageTransformsAiInferenceOutputReference)SetSer
 	)
 }
 
-func (j *jsiiProxy_PubsubTopicMessageTransformsAiInferenceOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_PubsubTopicMessageTransformsAiInferenceOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,7 +310,7 @@ func (j *jsiiProxy_PubsubTopicMessageTransformsAiInferenceOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_PubsubTopicMessageTransformsAiInferenceOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PubsubTopicMessageTransformsAiInferenceOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -335,16 +334,16 @@ func (p *jsiiProxy_PubsubTopicMessageTransformsAiInferenceOutputReference) Compu
 	return returns
 }
 
-func (p *jsiiProxy_PubsubTopicMessageTransformsAiInferenceOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_PubsubTopicMessageTransformsAiInferenceOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -360,7 +359,7 @@ func (p *jsiiProxy_PubsubTopicMessageTransformsAiInferenceOutputReference) GetBo
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -376,7 +375,7 @@ func (p *jsiiProxy_PubsubTopicMessageTransformsAiInferenceOutputReference) GetBo
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -392,7 +391,7 @@ func (p *jsiiProxy_PubsubTopicMessageTransformsAiInferenceOutputReference) GetLi
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -408,7 +407,7 @@ func (p *jsiiProxy_PubsubTopicMessageTransformsAiInferenceOutputReference) GetNu
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -424,7 +423,7 @@ func (p *jsiiProxy_PubsubTopicMessageTransformsAiInferenceOutputReference) GetNu
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -440,7 +439,7 @@ func (p *jsiiProxy_PubsubTopicMessageTransformsAiInferenceOutputReference) GetNu
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -456,7 +455,7 @@ func (p *jsiiProxy_PubsubTopicMessageTransformsAiInferenceOutputReference) GetSt
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -472,7 +471,7 @@ func (p *jsiiProxy_PubsubTopicMessageTransformsAiInferenceOutputReference) GetSt
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -501,7 +500,7 @@ func (p *jsiiProxy_PubsubTopicMessageTransformsAiInferenceOutputReference) Inter
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -515,7 +514,7 @@ func (p *jsiiProxy_PubsubTopicMessageTransformsAiInferenceOutputReference) PutUn
 	_jsii_.InvokeVoid(
 		p,
 		"putUnstructuredInference",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -535,16 +534,16 @@ func (p *jsiiProxy_PubsubTopicMessageTransformsAiInferenceOutputReference) Reset
 	)
 }
 
-func (p *jsiiProxy_PubsubTopicMessageTransformsAiInferenceOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PubsubTopicMessageTransformsAiInferenceOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := p.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -563,4 +562,3 @@ func (p *jsiiProxy_PubsubTopicMessageTransformsAiInferenceOutputReference) ToStr
 
 	return returns
 }
-

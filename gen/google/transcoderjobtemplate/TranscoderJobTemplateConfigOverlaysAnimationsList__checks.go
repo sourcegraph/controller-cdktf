@@ -34,7 +34,7 @@ func (t *jsiiProxy_TranscoderJobTemplateConfigOverlaysAnimationsList) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_TranscoderJobTemplateConfigOverlaysAnimationsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_TranscoderJobTemplateConfigOverlaysAnimationsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewTranscoderJobTemplateConfigOverlaysAnimationsListParameters(terr
 
 	return nil
 }
-

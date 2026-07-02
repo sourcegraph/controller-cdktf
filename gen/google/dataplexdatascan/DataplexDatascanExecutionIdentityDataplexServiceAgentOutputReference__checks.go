@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataplexDatascanExecutionIdentityDataplexServiceAgentOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_DataplexDatascanExecutionIdentityDataplexServiceAgentOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataplexDatascanExecutionIdentityDataplexServiceAgentOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewDataplexDatascanExecutionIdentityDataplexServiceAgentOutputRefer
 
 	return nil
 }
-

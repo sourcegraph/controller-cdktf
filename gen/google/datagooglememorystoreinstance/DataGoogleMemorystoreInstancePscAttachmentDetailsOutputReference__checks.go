@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleMemorystoreInstancePscAttachmentDetailsOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleMemorystoreInstancePscAttachmentDetailsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleMemorystoreInstancePscAttachmentDetailsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleMemorystoreInstancePscAttachmentDetailsOutputReference
 
 	return nil
 }
-

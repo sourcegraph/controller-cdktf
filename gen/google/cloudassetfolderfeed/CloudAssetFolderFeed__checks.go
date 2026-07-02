@@ -19,7 +19,7 @@ func (c *jsiiProxy_CloudAssetFolderFeed) validateAddMoveTargetParameters(moveTar
 	return nil
 }
 
-func (c *jsiiProxy_CloudAssetFolderFeed) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_CloudAssetFolderFeed) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_CloudAssetFolderFeed) validateMoveFromIdParameters(id *string
 	return nil
 }
 
-func (c *jsiiProxy_CloudAssetFolderFeed) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_CloudAssetFolderFeed) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -253,7 +253,7 @@ func validateCloudAssetFolderFeed_GenerateConfigForImportParameters(scope constr
 	return nil
 }
 
-func validateCloudAssetFolderFeed_IsConstructParameters(x interface{}) error {
+func validateCloudAssetFolderFeed_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -261,7 +261,7 @@ func validateCloudAssetFolderFeed_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateCloudAssetFolderFeed_IsTerraformElementParameters(x interface{}) error {
+func validateCloudAssetFolderFeed_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -269,7 +269,7 @@ func validateCloudAssetFolderFeed_IsTerraformElementParameters(x interface{}) er
 	return nil
 }
 
-func validateCloudAssetFolderFeed_IsTerraformResourceParameters(x interface{}) error {
+func validateCloudAssetFolderFeed_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -301,7 +301,7 @@ func (j *jsiiProxy_CloudAssetFolderFeed) validateSetBillingProjectParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_CloudAssetFolderFeed) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_CloudAssetFolderFeed) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -342,7 +342,7 @@ func (j *jsiiProxy_CloudAssetFolderFeed) validateSetContentTypeParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_CloudAssetFolderFeed) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_CloudAssetFolderFeed) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -431,7 +431,7 @@ func (j *jsiiProxy_CloudAssetFolderFeed) validateSetLifecycleParameters(val *cdk
 	return nil
 }
 
-func (j *jsiiProxy_CloudAssetFolderFeed) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_CloudAssetFolderFeed) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -495,4 +495,3 @@ func validateNewCloudAssetFolderFeedParameters(scope constructs.Construct, id *s
 
 	return nil
 }
-

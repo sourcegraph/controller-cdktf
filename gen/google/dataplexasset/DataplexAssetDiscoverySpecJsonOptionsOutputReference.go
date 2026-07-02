@@ -12,9 +12,9 @@ type DataplexAssetDiscoverySpecJsonOptionsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,9 +25,9 @@ type DataplexAssetDiscoverySpecJsonOptionsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	DisableTypeInference() interface{}
-	SetDisableTypeInference(val interface{})
-	DisableTypeInferenceInput() interface{}
+	DisableTypeInference() any
+	SetDisableTypeInference(val any)
+	DisableTypeInferenceInput() any
 	Encoding() *string
 	SetEncoding(val *string)
 	EncodingInput() *string
@@ -46,7 +46,7 @@ type DataplexAssetDiscoverySpecJsonOptionsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type DataplexAssetDiscoverySpecJsonOptionsOutputReference interface {
 	ResetEncoding()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_DataplexAssetDiscoverySpecJsonOptionsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DataplexAssetDiscoverySpecJsonOptionsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataplexAssetDiscoverySpecJsonOptionsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -114,8 +114,8 @@ func (j *jsiiProxy_DataplexAssetDiscoverySpecJsonOptionsOutputReference) Creatio
 	return returns
 }
 
-func (j *jsiiProxy_DataplexAssetDiscoverySpecJsonOptionsOutputReference) DisableTypeInference() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataplexAssetDiscoverySpecJsonOptionsOutputReference) DisableTypeInference() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableTypeInference",
@@ -124,8 +124,8 @@ func (j *jsiiProxy_DataplexAssetDiscoverySpecJsonOptionsOutputReference) Disable
 	return returns
 }
 
-func (j *jsiiProxy_DataplexAssetDiscoverySpecJsonOptionsOutputReference) DisableTypeInferenceInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataplexAssetDiscoverySpecJsonOptionsOutputReference) DisableTypeInferenceInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableTypeInferenceInput",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_DataplexAssetDiscoverySpecJsonOptionsOutputReference) Terrafo
 	return returns
 }
 
-
 func NewDataplexAssetDiscoverySpecJsonOptionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataplexAssetDiscoverySpecJsonOptionsOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewDataplexAssetDiscoverySpecJsonOptionsOutputReference(terraformResource c
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataplexAsset.DataplexAssetDiscoverySpecJsonOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewDataplexAssetDiscoverySpecJsonOptionsOutputReference_Override(d Dataplex
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataplexAsset.DataplexAssetDiscoverySpecJsonOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataplexAssetDiscoverySpecJsonOptionsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataplexAssetDiscoverySpecJsonOptionsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_DataplexAssetDiscoverySpecJsonOptionsOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_DataplexAssetDiscoverySpecJsonOptionsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataplexAssetDiscoverySpecJsonOptionsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_DataplexAssetDiscoverySpecJsonOptionsOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_DataplexAssetDiscoverySpecJsonOptionsOutputReference)SetDisableTypeInference(val interface{}) {
+func (j *jsiiProxy_DataplexAssetDiscoverySpecJsonOptionsOutputReference) SetDisableTypeInference(val any) {
 	if err := j.validateSetDisableTypeInferenceParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_DataplexAssetDiscoverySpecJsonOptionsOutputReference)SetDisab
 	)
 }
 
-func (j *jsiiProxy_DataplexAssetDiscoverySpecJsonOptionsOutputReference)SetEncoding(val *string) {
+func (j *jsiiProxy_DataplexAssetDiscoverySpecJsonOptionsOutputReference) SetEncoding(val *string) {
 	if err := j.validateSetEncodingParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_DataplexAssetDiscoverySpecJsonOptionsOutputReference)SetEncod
 	)
 }
 
-func (j *jsiiProxy_DataplexAssetDiscoverySpecJsonOptionsOutputReference)SetInternalValue(val *DataplexAssetDiscoverySpecJsonOptions) {
+func (j *jsiiProxy_DataplexAssetDiscoverySpecJsonOptionsOutputReference) SetInternalValue(val *DataplexAssetDiscoverySpecJsonOptions) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_DataplexAssetDiscoverySpecJsonOptionsOutputReference)SetInter
 	)
 }
 
-func (j *jsiiProxy_DataplexAssetDiscoverySpecJsonOptionsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataplexAssetDiscoverySpecJsonOptionsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_DataplexAssetDiscoverySpecJsonOptionsOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_DataplexAssetDiscoverySpecJsonOptionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataplexAssetDiscoverySpecJsonOptionsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,16 +311,16 @@ func (d *jsiiProxy_DataplexAssetDiscoverySpecJsonOptionsOutputReference) Compute
 	return returns
 }
 
-func (d *jsiiProxy_DataplexAssetDiscoverySpecJsonOptionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataplexAssetDiscoverySpecJsonOptionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -337,7 +336,7 @@ func (d *jsiiProxy_DataplexAssetDiscoverySpecJsonOptionsOutputReference) GetBool
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -353,7 +352,7 @@ func (d *jsiiProxy_DataplexAssetDiscoverySpecJsonOptionsOutputReference) GetBool
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (d *jsiiProxy_DataplexAssetDiscoverySpecJsonOptionsOutputReference) GetList
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (d *jsiiProxy_DataplexAssetDiscoverySpecJsonOptionsOutputReference) GetNumb
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (d *jsiiProxy_DataplexAssetDiscoverySpecJsonOptionsOutputReference) GetNumb
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (d *jsiiProxy_DataplexAssetDiscoverySpecJsonOptionsOutputReference) GetNumb
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (d *jsiiProxy_DataplexAssetDiscoverySpecJsonOptionsOutputReference) GetStri
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (d *jsiiProxy_DataplexAssetDiscoverySpecJsonOptionsOutputReference) GetStri
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func (d *jsiiProxy_DataplexAssetDiscoverySpecJsonOptionsOutputReference) Interpo
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -501,16 +500,16 @@ func (d *jsiiProxy_DataplexAssetDiscoverySpecJsonOptionsOutputReference) ResetEn
 	)
 }
 
-func (d *jsiiProxy_DataplexAssetDiscoverySpecJsonOptionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataplexAssetDiscoverySpecJsonOptionsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (d *jsiiProxy_DataplexAssetDiscoverySpecJsonOptionsOutputReference) ToStrin
 
 	return returns
 }
-

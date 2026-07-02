@@ -1,6 +1,5 @@
 package cesdeployment
 
-
 type CesDeploymentChannelProfile struct {
 	// The type of the channel profile. Possible values: UNKNOWN WEB_UI API TWILIO GOOGLE_TELEPHONY_PLATFORM CONTACT_CENTER_AS_A_SERVICE.
 	//
@@ -13,11 +12,11 @@ type CesDeploymentChannelProfile struct {
 	// interrupt.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_deployment#disable_barge_in_control CesDeployment#disable_barge_in_control}
-	DisableBargeInControl interface{} `field:"optional" json:"disableBargeInControl" yaml:"disableBargeInControl"`
+	DisableBargeInControl any `field:"optional" json:"disableBargeInControl" yaml:"disableBargeInControl"`
 	// Whether to disable DTMF (dual-tone multi-frequency).
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_deployment#disable_dtmf CesDeployment#disable_dtmf}
-	DisableDtmf interface{} `field:"optional" json:"disableDtmf" yaml:"disableDtmf"`
+	DisableDtmf any `field:"optional" json:"disableDtmf" yaml:"disableDtmf"`
 	// persona_property block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_deployment#persona_property CesDeployment#persona_property}
@@ -31,4 +30,3 @@ type CesDeploymentChannelProfile struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_deployment#web_widget_config CesDeployment#web_widget_config}
 	WebWidgetConfig *CesDeploymentChannelProfileWebWidgetConfig `field:"optional" json:"webWidgetConfig" yaml:"webWidgetConfig"`
 }
-

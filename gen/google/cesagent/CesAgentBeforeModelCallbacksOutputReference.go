@@ -12,9 +12,9 @@ type CesAgentBeforeModelCallbacksOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -28,13 +28,13 @@ type CesAgentBeforeModelCallbacksOutputReference interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
-	Disabled() interface{}
-	SetDisabled(val interface{})
-	DisabledInput() interface{}
+	Disabled() any
+	SetDisabled(val any)
+	DisabledInput() any
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	PythonCode() *string
 	SetPythonCode(val *string)
 	PythonCodeInput() *string
@@ -49,7 +49,7 @@ type CesAgentBeforeModelCallbacksOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -74,7 +74,7 @@ type CesAgentBeforeModelCallbacksOutputReference interface {
 	ResetDisabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -87,8 +87,8 @@ type jsiiProxy_CesAgentBeforeModelCallbacksOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_CesAgentBeforeModelCallbacksOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CesAgentBeforeModelCallbacksOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -137,8 +137,8 @@ func (j *jsiiProxy_CesAgentBeforeModelCallbacksOutputReference) DescriptionInput
 	return returns
 }
 
-func (j *jsiiProxy_CesAgentBeforeModelCallbacksOutputReference) Disabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CesAgentBeforeModelCallbacksOutputReference) Disabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disabled",
@@ -147,8 +147,8 @@ func (j *jsiiProxy_CesAgentBeforeModelCallbacksOutputReference) Disabled() inter
 	return returns
 }
 
-func (j *jsiiProxy_CesAgentBeforeModelCallbacksOutputReference) DisabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CesAgentBeforeModelCallbacksOutputReference) DisabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disabledInput",
@@ -167,8 +167,8 @@ func (j *jsiiProxy_CesAgentBeforeModelCallbacksOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CesAgentBeforeModelCallbacksOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CesAgentBeforeModelCallbacksOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -217,7 +217,6 @@ func (j *jsiiProxy_CesAgentBeforeModelCallbacksOutputReference) TerraformResourc
 	return returns
 }
 
-
 func NewCesAgentBeforeModelCallbacksOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) CesAgentBeforeModelCallbacksOutputReference {
 	_init_.Initialize()
 
@@ -228,7 +227,7 @@ func NewCesAgentBeforeModelCallbacksOutputReference(terraformResource cdktf.IInt
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cesAgent.CesAgentBeforeModelCallbacksOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -240,12 +239,12 @@ func NewCesAgentBeforeModelCallbacksOutputReference_Override(c CesAgentBeforeMod
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cesAgent.CesAgentBeforeModelCallbacksOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CesAgentBeforeModelCallbacksOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CesAgentBeforeModelCallbacksOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -256,7 +255,7 @@ func (j *jsiiProxy_CesAgentBeforeModelCallbacksOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_CesAgentBeforeModelCallbacksOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CesAgentBeforeModelCallbacksOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -267,7 +266,7 @@ func (j *jsiiProxy_CesAgentBeforeModelCallbacksOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_CesAgentBeforeModelCallbacksOutputReference)SetDescription(val *string) {
+func (j *jsiiProxy_CesAgentBeforeModelCallbacksOutputReference) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -278,7 +277,7 @@ func (j *jsiiProxy_CesAgentBeforeModelCallbacksOutputReference)SetDescription(va
 	)
 }
 
-func (j *jsiiProxy_CesAgentBeforeModelCallbacksOutputReference)SetDisabled(val interface{}) {
+func (j *jsiiProxy_CesAgentBeforeModelCallbacksOutputReference) SetDisabled(val any) {
 	if err := j.validateSetDisabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -289,7 +288,7 @@ func (j *jsiiProxy_CesAgentBeforeModelCallbacksOutputReference)SetDisabled(val i
 	)
 }
 
-func (j *jsiiProxy_CesAgentBeforeModelCallbacksOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_CesAgentBeforeModelCallbacksOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,7 +299,7 @@ func (j *jsiiProxy_CesAgentBeforeModelCallbacksOutputReference)SetInternalValue(
 	)
 }
 
-func (j *jsiiProxy_CesAgentBeforeModelCallbacksOutputReference)SetPythonCode(val *string) {
+func (j *jsiiProxy_CesAgentBeforeModelCallbacksOutputReference) SetPythonCode(val *string) {
 	if err := j.validateSetPythonCodeParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,7 +310,7 @@ func (j *jsiiProxy_CesAgentBeforeModelCallbacksOutputReference)SetPythonCode(val
 	)
 }
 
-func (j *jsiiProxy_CesAgentBeforeModelCallbacksOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CesAgentBeforeModelCallbacksOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -322,7 +321,7 @@ func (j *jsiiProxy_CesAgentBeforeModelCallbacksOutputReference)SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_CesAgentBeforeModelCallbacksOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CesAgentBeforeModelCallbacksOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -346,16 +345,16 @@ func (c *jsiiProxy_CesAgentBeforeModelCallbacksOutputReference) ComputeFqn() *st
 	return returns
 }
 
-func (c *jsiiProxy_CesAgentBeforeModelCallbacksOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CesAgentBeforeModelCallbacksOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -371,7 +370,7 @@ func (c *jsiiProxy_CesAgentBeforeModelCallbacksOutputReference) GetBooleanAttrib
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -387,7 +386,7 @@ func (c *jsiiProxy_CesAgentBeforeModelCallbacksOutputReference) GetBooleanMapAtt
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -403,7 +402,7 @@ func (c *jsiiProxy_CesAgentBeforeModelCallbacksOutputReference) GetListAttribute
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -419,7 +418,7 @@ func (c *jsiiProxy_CesAgentBeforeModelCallbacksOutputReference) GetNumberAttribu
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -435,7 +434,7 @@ func (c *jsiiProxy_CesAgentBeforeModelCallbacksOutputReference) GetNumberListAtt
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -451,7 +450,7 @@ func (c *jsiiProxy_CesAgentBeforeModelCallbacksOutputReference) GetNumberMapAttr
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -467,7 +466,7 @@ func (c *jsiiProxy_CesAgentBeforeModelCallbacksOutputReference) GetStringAttribu
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -483,7 +482,7 @@ func (c *jsiiProxy_CesAgentBeforeModelCallbacksOutputReference) GetStringMapAttr
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -512,7 +511,7 @@ func (c *jsiiProxy_CesAgentBeforeModelCallbacksOutputReference) InterpolationFor
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -535,16 +534,16 @@ func (c *jsiiProxy_CesAgentBeforeModelCallbacksOutputReference) ResetDisabled() 
 	)
 }
 
-func (c *jsiiProxy_CesAgentBeforeModelCallbacksOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_CesAgentBeforeModelCallbacksOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -563,4 +562,3 @@ func (c *jsiiProxy_CesAgentBeforeModelCallbacksOutputReference) ToString() *stri
 
 	return returns
 }
-

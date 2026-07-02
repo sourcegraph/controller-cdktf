@@ -1,6 +1,5 @@
 package accesscontextmanagerserviceperimeter
 
-
 type AccessContextManagerServicePerimeterSpec struct {
 	// A list of AccessLevel resource names that allow resources within the ServicePerimeter to be accessed from the internet.
 	//
@@ -18,11 +17,11 @@ type AccessContextManagerServicePerimeterSpec struct {
 	// egress_policies block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/access_context_manager_service_perimeter#egress_policies AccessContextManagerServicePerimeter#egress_policies}
-	EgressPolicies interface{} `field:"optional" json:"egressPolicies" yaml:"egressPolicies"`
+	EgressPolicies any `field:"optional" json:"egressPolicies" yaml:"egressPolicies"`
 	// ingress_policies block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/access_context_manager_service_perimeter#ingress_policies AccessContextManagerServicePerimeter#ingress_policies}
-	IngressPolicies interface{} `field:"optional" json:"ingressPolicies" yaml:"ingressPolicies"`
+	IngressPolicies any `field:"optional" json:"ingressPolicies" yaml:"ingressPolicies"`
 	// A list of GCP resources that are inside of the service perimeter. Currently only projects are allowed. Format: projects/{project_number}.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/access_context_manager_service_perimeter#resources AccessContextManagerServicePerimeter#resources}
@@ -41,4 +40,3 @@ type AccessContextManagerServicePerimeterSpec struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/access_context_manager_service_perimeter#vpc_accessible_services AccessContextManagerServicePerimeter#vpc_accessible_services}
 	VpcAccessibleServices *AccessContextManagerServicePerimeterSpecVpcAccessibleServices `field:"optional" json:"vpcAccessibleServices" yaml:"vpcAccessibleServices"`
 }
-

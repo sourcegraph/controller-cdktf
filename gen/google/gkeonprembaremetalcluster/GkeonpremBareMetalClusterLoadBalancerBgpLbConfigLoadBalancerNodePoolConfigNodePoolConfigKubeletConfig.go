@@ -1,6 +1,5 @@
 package gkeonprembaremetalcluster
 
-
 type GkeonpremBareMetalClusterLoadBalancerBgpLbConfigLoadBalancerNodePoolConfigNodePoolConfigKubeletConfig struct {
 	// The maximum size of bursty pulls, temporarily allows pulls to burst to this number, while still not exceeding registry_pull_qps.
 	//
@@ -28,6 +27,5 @@ type GkeonpremBareMetalClusterLoadBalancerBgpLbConfigLoadBalancerNodePoolConfigN
 	// more details.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gkeonprem_bare_metal_cluster#serialize_image_pulls_disabled GkeonpremBareMetalCluster#serialize_image_pulls_disabled}
-	SerializeImagePullsDisabled interface{} `field:"optional" json:"serializeImagePullsDisabled" yaml:"serializeImagePullsDisabled"`
+	SerializeImagePullsDisabled any `field:"optional" json:"serializeImagePullsDisabled" yaml:"serializeImagePullsDisabled"`
 }
-

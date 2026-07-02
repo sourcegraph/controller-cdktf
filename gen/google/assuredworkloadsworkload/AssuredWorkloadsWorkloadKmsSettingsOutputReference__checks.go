@@ -98,7 +98,7 @@ func (a *jsiiProxy_AssuredWorkloadsWorkloadKmsSettingsOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_AssuredWorkloadsWorkloadKmsSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AssuredWorkloadsWorkloadKmsSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewAssuredWorkloadsWorkloadKmsSettingsOutputReferenceParameters(ter
 
 	return nil
 }
-

@@ -12,9 +12,9 @@ type DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShield
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,15 +25,15 @@ type DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShield
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	EnableIntegrityMonitoring() interface{}
-	SetEnableIntegrityMonitoring(val interface{})
-	EnableIntegrityMonitoringInput() interface{}
-	EnableSecureBoot() interface{}
-	SetEnableSecureBoot(val interface{})
-	EnableSecureBootInput() interface{}
-	EnableVtpm() interface{}
-	SetEnableVtpm(val interface{})
-	EnableVtpmInput() interface{}
+	EnableIntegrityMonitoring() any
+	SetEnableIntegrityMonitoring(val any)
+	EnableIntegrityMonitoringInput() any
+	EnableSecureBoot() any
+	SetEnableSecureBoot(val any)
+	EnableSecureBootInput() any
+	EnableVtpm() any
+	SetEnableVtpm(val any)
+	EnableVtpmInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfig
@@ -49,7 +49,7 @@ type DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShield
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShield
 	ResetEnableVtpm()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterCo
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -118,8 +118,8 @@ func (j *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigGceClust
 	return returns
 }
 
-func (j *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference) EnableIntegrityMonitoring() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference) EnableIntegrityMonitoring() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableIntegrityMonitoring",
@@ -128,8 +128,8 @@ func (j *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigGceClust
 	return returns
 }
 
-func (j *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference) EnableIntegrityMonitoringInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference) EnableIntegrityMonitoringInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableIntegrityMonitoringInput",
@@ -138,8 +138,8 @@ func (j *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigGceClust
 	return returns
 }
 
-func (j *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference) EnableSecureBoot() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference) EnableSecureBoot() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableSecureBoot",
@@ -148,8 +148,8 @@ func (j *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigGceClust
 	return returns
 }
 
-func (j *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference) EnableSecureBootInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference) EnableSecureBootInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableSecureBootInput",
@@ -158,8 +158,8 @@ func (j *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigGceClust
 	return returns
 }
 
-func (j *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference) EnableVtpm() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference) EnableVtpm() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableVtpm",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigGceClust
 	return returns
 }
 
-func (j *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference) EnableVtpmInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference) EnableVtpmInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableVtpmInput",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigGceClust
 	return returns
 }
 
-
 func NewDataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewDataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShi
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewDataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShi
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigGceClust
 	)
 }
 
-func (j *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigGceClust
 	)
 }
 
-func (j *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference)SetEnableIntegrityMonitoring(val interface{}) {
+func (j *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference) SetEnableIntegrityMonitoring(val any) {
 	if err := j.validateSetEnableIntegrityMonitoringParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigGceClust
 	)
 }
 
-func (j *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference)SetEnableSecureBoot(val interface{}) {
+func (j *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference) SetEnableSecureBoot(val any) {
 	if err := j.validateSetEnableSecureBootParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigGceClust
 	)
 }
 
-func (j *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference)SetEnableVtpm(val interface{}) {
+func (j *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference) SetEnableVtpm(val any) {
 	if err := j.validateSetEnableVtpmParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigGceClust
 	)
 }
 
-func (j *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference)SetInternalValue(val *DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfig) {
+func (j *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference) SetInternalValue(val *DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigGceClust
 	)
 }
 
-func (j *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigGceClust
 	)
 }
 
-func (j *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (d *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigGceClust
 	return returns
 }
 
-func (d *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (d *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigGceClust
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (d *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigGceClust
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (d *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigGceClust
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (d *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigGceClust
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (d *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigGceClust
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (d *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigGceClust
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (d *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigGceClust
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (d *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigGceClust
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (d *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigGceClust
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (d *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigGceClust
 	)
 }
 
-func (d *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (d *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigGceClust
 
 	return returns
 }
-

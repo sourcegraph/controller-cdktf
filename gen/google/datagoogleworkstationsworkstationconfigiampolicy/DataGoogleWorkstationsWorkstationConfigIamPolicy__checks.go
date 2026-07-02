@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataGoogleWorkstationsWorkstationConfigIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataGoogleWorkstationsWorkstationConfigIamPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataGoogleWorkstationsWorkstationConfigIamPolicy_GenerateConfigForI
 	return nil
 }
 
-func validateDataGoogleWorkstationsWorkstationConfigIamPolicy_IsConstructParameters(x interface{}) error {
+func validateDataGoogleWorkstationsWorkstationConfigIamPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataGoogleWorkstationsWorkstationConfigIamPolicy_IsConstructParamet
 	return nil
 }
 
-func validateDataGoogleWorkstationsWorkstationConfigIamPolicy_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataGoogleWorkstationsWorkstationConfigIamPolicy_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataGoogleWorkstationsWorkstationConfigIamPolicy_IsTerraformDataSou
 	return nil
 }
 
-func validateDataGoogleWorkstationsWorkstationConfigIamPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateDataGoogleWorkstationsWorkstationConfigIamPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func validateDataGoogleWorkstationsWorkstationConfigIamPolicy_IsTerraformElement
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleWorkstationsWorkstationConfigIamPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleWorkstationsWorkstationConfigIamPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -274,4 +274,3 @@ func validateNewDataGoogleWorkstationsWorkstationConfigIamPolicyParameters(scope
 
 	return nil
 }
-

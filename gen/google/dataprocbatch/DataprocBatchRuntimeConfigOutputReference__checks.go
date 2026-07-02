@@ -117,7 +117,7 @@ func (j *jsiiProxy_DataprocBatchRuntimeConfigOutputReference) validateSetCohortP
 	return nil
 }
 
-func (j *jsiiProxy_DataprocBatchRuntimeConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocBatchRuntimeConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -241,4 +241,3 @@ func validateNewDataprocBatchRuntimeConfigOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

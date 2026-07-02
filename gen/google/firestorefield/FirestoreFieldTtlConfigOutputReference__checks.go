@@ -98,7 +98,7 @@ func (f *jsiiProxy_FirestoreFieldTtlConfigOutputReference) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_FirestoreFieldTtlConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_FirestoreFieldTtlConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewFirestoreFieldTtlConfigOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

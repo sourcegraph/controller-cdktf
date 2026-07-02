@@ -98,7 +98,7 @@ func (m *jsiiProxy_MonitoringMetricDescriptorTimeoutsOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_MonitoringMetricDescriptorTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MonitoringMetricDescriptorTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_MonitoringMetricDescriptorTimeoutsOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_MonitoringMetricDescriptorTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_MonitoringMetricDescriptorTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewMonitoringMetricDescriptorTimeoutsOutputReferenceParameters(terr
 
 	return nil
 }
-
