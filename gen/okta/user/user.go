@@ -18,18 +18,18 @@ type User interface {
 	SetCity(val *string)
 	CityInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	CostCenter() *string
 	SetCostCenter(val *string)
 	CostCenterInput() *string
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CountryCode() *string
 	SetCountryCode(val *string)
 	CountryCodeInput() *string
@@ -58,9 +58,9 @@ type User interface {
 	EmployeeNumber() *string
 	SetEmployeeNumber(val *string)
 	EmployeeNumberInput() *string
-	ExpirePasswordOnCreate() interface{}
-	SetExpirePasswordOnCreate(val interface{})
-	ExpirePasswordOnCreateInput() interface{}
+	ExpirePasswordOnCreate() any
+	SetExpirePasswordOnCreate(val any)
+	ExpirePasswordOnCreateInput() any
 	FirstName() *string
 	SetFirstName(val *string)
 	FirstNameInput() *string
@@ -142,11 +142,11 @@ type User interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RawStatus() *string
 	RecoveryAnswer() *string
 	SetRecoveryAnswer(val *string)
@@ -157,9 +157,9 @@ type User interface {
 	SecondEmail() *string
 	SetSecondEmail(val *string)
 	SecondEmailInput() *string
-	SkipRoles() interface{}
-	SetSkipRoles(val interface{})
-	SkipRolesInput() interface{}
+	SkipRoles() any
+	SetSkipRoles(val any)
+	SkipRolesInput() any
 	State() *string
 	SetState(val *string)
 	StateInput() *string
@@ -172,7 +172,7 @@ type User interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timezone() *string
@@ -191,9 +191,9 @@ type User interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -211,7 +211,7 @@ type User interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -223,7 +223,7 @@ type User interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -273,17 +273,17 @@ type User interface {
 	ResetTitle()
 	ResetUserType()
 	ResetZipCode()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for User
@@ -321,8 +321,8 @@ func (j *jsiiProxy_User) CityInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_User) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_User) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -331,8 +331,8 @@ func (j *jsiiProxy_User) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_User) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_User) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -361,8 +361,8 @@ func (j *jsiiProxy_User) CostCenterInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_User) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_User) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -541,8 +541,8 @@ func (j *jsiiProxy_User) EmployeeNumberInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_User) ExpirePasswordOnCreate() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_User) ExpirePasswordOnCreate() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"expirePasswordOnCreate",
@@ -551,8 +551,8 @@ func (j *jsiiProxy_User) ExpirePasswordOnCreate() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_User) ExpirePasswordOnCreateInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_User) ExpirePasswordOnCreateInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"expirePasswordOnCreateInput",
@@ -1041,8 +1041,8 @@ func (j *jsiiProxy_User) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_User) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_User) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -1051,8 +1051,8 @@ func (j *jsiiProxy_User) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_User) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_User) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -1131,8 +1131,8 @@ func (j *jsiiProxy_User) SecondEmailInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_User) SkipRoles() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_User) SkipRoles() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"skipRoles",
@@ -1141,8 +1141,8 @@ func (j *jsiiProxy_User) SkipRoles() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_User) SkipRolesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_User) SkipRolesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"skipRolesInput",
@@ -1221,8 +1221,8 @@ func (j *jsiiProxy_User) TerraformGeneratorMetadata() *cdktf.TerraformProviderGe
 	return returns
 }
 
-func (j *jsiiProxy_User) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_User) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -1321,7 +1321,6 @@ func (j *jsiiProxy_User) ZipCodeInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/user okta_user} Resource.
 func NewUser(scope constructs.Construct, id *string, config *UserConfig) User {
 	_init_.Initialize()
@@ -1333,7 +1332,7 @@ func NewUser(scope constructs.Construct, id *string, config *UserConfig) User {
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.user.User",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -1346,12 +1345,12 @@ func NewUser_Override(u User, scope constructs.Construct, id *string, config *Us
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.user.User",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		u,
 	)
 }
 
-func (j *jsiiProxy_User)SetCity(val *string) {
+func (j *jsiiProxy_User) SetCity(val *string) {
 	if err := j.validateSetCityParameters(val); err != nil {
 		panic(err)
 	}
@@ -1362,7 +1361,7 @@ func (j *jsiiProxy_User)SetCity(val *string) {
 	)
 }
 
-func (j *jsiiProxy_User)SetConnection(val interface{}) {
+func (j *jsiiProxy_User) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1373,7 +1372,7 @@ func (j *jsiiProxy_User)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_User)SetCostCenter(val *string) {
+func (j *jsiiProxy_User) SetCostCenter(val *string) {
 	if err := j.validateSetCostCenterParameters(val); err != nil {
 		panic(err)
 	}
@@ -1384,7 +1383,7 @@ func (j *jsiiProxy_User)SetCostCenter(val *string) {
 	)
 }
 
-func (j *jsiiProxy_User)SetCount(val interface{}) {
+func (j *jsiiProxy_User) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -1395,7 +1394,7 @@ func (j *jsiiProxy_User)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_User)SetCountryCode(val *string) {
+func (j *jsiiProxy_User) SetCountryCode(val *string) {
 	if err := j.validateSetCountryCodeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1406,7 +1405,7 @@ func (j *jsiiProxy_User)SetCountryCode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_User)SetCustomProfileAttributes(val *string) {
+func (j *jsiiProxy_User) SetCustomProfileAttributes(val *string) {
 	if err := j.validateSetCustomProfileAttributesParameters(val); err != nil {
 		panic(err)
 	}
@@ -1417,7 +1416,7 @@ func (j *jsiiProxy_User)SetCustomProfileAttributes(val *string) {
 	)
 }
 
-func (j *jsiiProxy_User)SetCustomProfileAttributesToIgnore(val *[]*string) {
+func (j *jsiiProxy_User) SetCustomProfileAttributesToIgnore(val *[]*string) {
 	if err := j.validateSetCustomProfileAttributesToIgnoreParameters(val); err != nil {
 		panic(err)
 	}
@@ -1428,7 +1427,7 @@ func (j *jsiiProxy_User)SetCustomProfileAttributesToIgnore(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_User)SetDepartment(val *string) {
+func (j *jsiiProxy_User) SetDepartment(val *string) {
 	if err := j.validateSetDepartmentParameters(val); err != nil {
 		panic(err)
 	}
@@ -1439,7 +1438,7 @@ func (j *jsiiProxy_User)SetDepartment(val *string) {
 	)
 }
 
-func (j *jsiiProxy_User)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_User) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -1447,7 +1446,7 @@ func (j *jsiiProxy_User)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_User)SetDisplayName(val *string) {
+func (j *jsiiProxy_User) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1458,7 +1457,7 @@ func (j *jsiiProxy_User)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_User)SetDivision(val *string) {
+func (j *jsiiProxy_User) SetDivision(val *string) {
 	if err := j.validateSetDivisionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1469,7 +1468,7 @@ func (j *jsiiProxy_User)SetDivision(val *string) {
 	)
 }
 
-func (j *jsiiProxy_User)SetEmail(val *string) {
+func (j *jsiiProxy_User) SetEmail(val *string) {
 	if err := j.validateSetEmailParameters(val); err != nil {
 		panic(err)
 	}
@@ -1480,7 +1479,7 @@ func (j *jsiiProxy_User)SetEmail(val *string) {
 	)
 }
 
-func (j *jsiiProxy_User)SetEmployeeNumber(val *string) {
+func (j *jsiiProxy_User) SetEmployeeNumber(val *string) {
 	if err := j.validateSetEmployeeNumberParameters(val); err != nil {
 		panic(err)
 	}
@@ -1491,7 +1490,7 @@ func (j *jsiiProxy_User)SetEmployeeNumber(val *string) {
 	)
 }
 
-func (j *jsiiProxy_User)SetExpirePasswordOnCreate(val interface{}) {
+func (j *jsiiProxy_User) SetExpirePasswordOnCreate(val any) {
 	if err := j.validateSetExpirePasswordOnCreateParameters(val); err != nil {
 		panic(err)
 	}
@@ -1502,7 +1501,7 @@ func (j *jsiiProxy_User)SetExpirePasswordOnCreate(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_User)SetFirstName(val *string) {
+func (j *jsiiProxy_User) SetFirstName(val *string) {
 	if err := j.validateSetFirstNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1513,7 +1512,7 @@ func (j *jsiiProxy_User)SetFirstName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_User)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_User) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1521,7 +1520,7 @@ func (j *jsiiProxy_User)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_User)SetHonorificPrefix(val *string) {
+func (j *jsiiProxy_User) SetHonorificPrefix(val *string) {
 	if err := j.validateSetHonorificPrefixParameters(val); err != nil {
 		panic(err)
 	}
@@ -1532,7 +1531,7 @@ func (j *jsiiProxy_User)SetHonorificPrefix(val *string) {
 	)
 }
 
-func (j *jsiiProxy_User)SetHonorificSuffix(val *string) {
+func (j *jsiiProxy_User) SetHonorificSuffix(val *string) {
 	if err := j.validateSetHonorificSuffixParameters(val); err != nil {
 		panic(err)
 	}
@@ -1543,7 +1542,7 @@ func (j *jsiiProxy_User)SetHonorificSuffix(val *string) {
 	)
 }
 
-func (j *jsiiProxy_User)SetId(val *string) {
+func (j *jsiiProxy_User) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1554,7 +1553,7 @@ func (j *jsiiProxy_User)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_User)SetLastName(val *string) {
+func (j *jsiiProxy_User) SetLastName(val *string) {
 	if err := j.validateSetLastNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1565,7 +1564,7 @@ func (j *jsiiProxy_User)SetLastName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_User)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_User) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1576,7 +1575,7 @@ func (j *jsiiProxy_User)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	)
 }
 
-func (j *jsiiProxy_User)SetLocale(val *string) {
+func (j *jsiiProxy_User) SetLocale(val *string) {
 	if err := j.validateSetLocaleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1587,7 +1586,7 @@ func (j *jsiiProxy_User)SetLocale(val *string) {
 	)
 }
 
-func (j *jsiiProxy_User)SetLogin(val *string) {
+func (j *jsiiProxy_User) SetLogin(val *string) {
 	if err := j.validateSetLoginParameters(val); err != nil {
 		panic(err)
 	}
@@ -1598,7 +1597,7 @@ func (j *jsiiProxy_User)SetLogin(val *string) {
 	)
 }
 
-func (j *jsiiProxy_User)SetManager(val *string) {
+func (j *jsiiProxy_User) SetManager(val *string) {
 	if err := j.validateSetManagerParameters(val); err != nil {
 		panic(err)
 	}
@@ -1609,7 +1608,7 @@ func (j *jsiiProxy_User)SetManager(val *string) {
 	)
 }
 
-func (j *jsiiProxy_User)SetManagerId(val *string) {
+func (j *jsiiProxy_User) SetManagerId(val *string) {
 	if err := j.validateSetManagerIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1620,7 +1619,7 @@ func (j *jsiiProxy_User)SetManagerId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_User)SetMiddleName(val *string) {
+func (j *jsiiProxy_User) SetMiddleName(val *string) {
 	if err := j.validateSetMiddleNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1631,7 +1630,7 @@ func (j *jsiiProxy_User)SetMiddleName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_User)SetMobilePhone(val *string) {
+func (j *jsiiProxy_User) SetMobilePhone(val *string) {
 	if err := j.validateSetMobilePhoneParameters(val); err != nil {
 		panic(err)
 	}
@@ -1642,7 +1641,7 @@ func (j *jsiiProxy_User)SetMobilePhone(val *string) {
 	)
 }
 
-func (j *jsiiProxy_User)SetNickName(val *string) {
+func (j *jsiiProxy_User) SetNickName(val *string) {
 	if err := j.validateSetNickNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1653,7 +1652,7 @@ func (j *jsiiProxy_User)SetNickName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_User)SetOldPassword(val *string) {
+func (j *jsiiProxy_User) SetOldPassword(val *string) {
 	if err := j.validateSetOldPasswordParameters(val); err != nil {
 		panic(err)
 	}
@@ -1664,7 +1663,7 @@ func (j *jsiiProxy_User)SetOldPassword(val *string) {
 	)
 }
 
-func (j *jsiiProxy_User)SetOrganization(val *string) {
+func (j *jsiiProxy_User) SetOrganization(val *string) {
 	if err := j.validateSetOrganizationParameters(val); err != nil {
 		panic(err)
 	}
@@ -1675,7 +1674,7 @@ func (j *jsiiProxy_User)SetOrganization(val *string) {
 	)
 }
 
-func (j *jsiiProxy_User)SetPassword(val *string) {
+func (j *jsiiProxy_User) SetPassword(val *string) {
 	if err := j.validateSetPasswordParameters(val); err != nil {
 		panic(err)
 	}
@@ -1686,7 +1685,7 @@ func (j *jsiiProxy_User)SetPassword(val *string) {
 	)
 }
 
-func (j *jsiiProxy_User)SetPasswordInlineHook(val *string) {
+func (j *jsiiProxy_User) SetPasswordInlineHook(val *string) {
 	if err := j.validateSetPasswordInlineHookParameters(val); err != nil {
 		panic(err)
 	}
@@ -1697,7 +1696,7 @@ func (j *jsiiProxy_User)SetPasswordInlineHook(val *string) {
 	)
 }
 
-func (j *jsiiProxy_User)SetPostalAddress(val *string) {
+func (j *jsiiProxy_User) SetPostalAddress(val *string) {
 	if err := j.validateSetPostalAddressParameters(val); err != nil {
 		panic(err)
 	}
@@ -1708,7 +1707,7 @@ func (j *jsiiProxy_User)SetPostalAddress(val *string) {
 	)
 }
 
-func (j *jsiiProxy_User)SetPreferredLanguage(val *string) {
+func (j *jsiiProxy_User) SetPreferredLanguage(val *string) {
 	if err := j.validateSetPreferredLanguageParameters(val); err != nil {
 		panic(err)
 	}
@@ -1719,7 +1718,7 @@ func (j *jsiiProxy_User)SetPreferredLanguage(val *string) {
 	)
 }
 
-func (j *jsiiProxy_User)SetPrimaryPhone(val *string) {
+func (j *jsiiProxy_User) SetPrimaryPhone(val *string) {
 	if err := j.validateSetPrimaryPhoneParameters(val); err != nil {
 		panic(err)
 	}
@@ -1730,7 +1729,7 @@ func (j *jsiiProxy_User)SetPrimaryPhone(val *string) {
 	)
 }
 
-func (j *jsiiProxy_User)SetProfileUrl(val *string) {
+func (j *jsiiProxy_User) SetProfileUrl(val *string) {
 	if err := j.validateSetProfileUrlParameters(val); err != nil {
 		panic(err)
 	}
@@ -1741,7 +1740,7 @@ func (j *jsiiProxy_User)SetProfileUrl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_User)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_User) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1749,7 +1748,7 @@ func (j *jsiiProxy_User)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_User)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_User) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1760,7 +1759,7 @@ func (j *jsiiProxy_User)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_User)SetRecoveryAnswer(val *string) {
+func (j *jsiiProxy_User) SetRecoveryAnswer(val *string) {
 	if err := j.validateSetRecoveryAnswerParameters(val); err != nil {
 		panic(err)
 	}
@@ -1771,7 +1770,7 @@ func (j *jsiiProxy_User)SetRecoveryAnswer(val *string) {
 	)
 }
 
-func (j *jsiiProxy_User)SetRecoveryQuestion(val *string) {
+func (j *jsiiProxy_User) SetRecoveryQuestion(val *string) {
 	if err := j.validateSetRecoveryQuestionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1782,7 +1781,7 @@ func (j *jsiiProxy_User)SetRecoveryQuestion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_User)SetSecondEmail(val *string) {
+func (j *jsiiProxy_User) SetSecondEmail(val *string) {
 	if err := j.validateSetSecondEmailParameters(val); err != nil {
 		panic(err)
 	}
@@ -1793,7 +1792,7 @@ func (j *jsiiProxy_User)SetSecondEmail(val *string) {
 	)
 }
 
-func (j *jsiiProxy_User)SetSkipRoles(val interface{}) {
+func (j *jsiiProxy_User) SetSkipRoles(val any) {
 	if err := j.validateSetSkipRolesParameters(val); err != nil {
 		panic(err)
 	}
@@ -1804,7 +1803,7 @@ func (j *jsiiProxy_User)SetSkipRoles(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_User)SetState(val *string) {
+func (j *jsiiProxy_User) SetState(val *string) {
 	if err := j.validateSetStateParameters(val); err != nil {
 		panic(err)
 	}
@@ -1815,7 +1814,7 @@ func (j *jsiiProxy_User)SetState(val *string) {
 	)
 }
 
-func (j *jsiiProxy_User)SetStatus(val *string) {
+func (j *jsiiProxy_User) SetStatus(val *string) {
 	if err := j.validateSetStatusParameters(val); err != nil {
 		panic(err)
 	}
@@ -1826,7 +1825,7 @@ func (j *jsiiProxy_User)SetStatus(val *string) {
 	)
 }
 
-func (j *jsiiProxy_User)SetStreetAddress(val *string) {
+func (j *jsiiProxy_User) SetStreetAddress(val *string) {
 	if err := j.validateSetStreetAddressParameters(val); err != nil {
 		panic(err)
 	}
@@ -1837,7 +1836,7 @@ func (j *jsiiProxy_User)SetStreetAddress(val *string) {
 	)
 }
 
-func (j *jsiiProxy_User)SetTimezone(val *string) {
+func (j *jsiiProxy_User) SetTimezone(val *string) {
 	if err := j.validateSetTimezoneParameters(val); err != nil {
 		panic(err)
 	}
@@ -1848,7 +1847,7 @@ func (j *jsiiProxy_User)SetTimezone(val *string) {
 	)
 }
 
-func (j *jsiiProxy_User)SetTitle(val *string) {
+func (j *jsiiProxy_User) SetTitle(val *string) {
 	if err := j.validateSetTitleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1859,7 +1858,7 @@ func (j *jsiiProxy_User)SetTitle(val *string) {
 	)
 }
 
-func (j *jsiiProxy_User)SetUserType(val *string) {
+func (j *jsiiProxy_User) SetUserType(val *string) {
 	if err := j.validateSetUserTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1870,7 +1869,7 @@ func (j *jsiiProxy_User)SetUserType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_User)SetZipCode(val *string) {
+func (j *jsiiProxy_User) SetZipCode(val *string) {
 	if err := j.validateSetZipCodeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1893,7 +1892,7 @@ func User_GenerateConfigForImport(scope constructs.Construct, importToId *string
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.user.User",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1917,7 +1916,7 @@ func User_GenerateConfigForImport(scope constructs.Construct, importToId *string
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func User_IsConstruct(x interface{}) *bool {
+func User_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateUser_IsConstructParameters(x); err != nil {
@@ -1928,7 +1927,7 @@ func User_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.user.User",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1936,7 +1935,7 @@ func User_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func User_IsTerraformElement(x interface{}) *bool {
+func User_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateUser_IsTerraformElementParameters(x); err != nil {
@@ -1947,7 +1946,7 @@ func User_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.user.User",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1955,7 +1954,7 @@ func User_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func User_IsTerraformResource(x interface{}) *bool {
+func User_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateUser_IsTerraformResourceParameters(x); err != nil {
@@ -1966,7 +1965,7 @@ func User_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.user.User",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1991,31 +1990,31 @@ func (u *jsiiProxy_User) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		u,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (u *jsiiProxy_User) AddOverride(path *string, value interface{}) {
+func (u *jsiiProxy_User) AddOverride(path *string, value any) {
 	if err := u.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		u,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (u *jsiiProxy_User) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (u *jsiiProxy_User) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := u.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		u,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -2031,7 +2030,7 @@ func (u *jsiiProxy_User) GetBooleanAttribute(terraformAttribute *string) cdktf.I
 	_jsii_.Invoke(
 		u,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -2047,7 +2046,7 @@ func (u *jsiiProxy_User) GetBooleanMapAttribute(terraformAttribute *string) *map
 	_jsii_.Invoke(
 		u,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -2063,7 +2062,7 @@ func (u *jsiiProxy_User) GetListAttribute(terraformAttribute *string) *[]*string
 	_jsii_.Invoke(
 		u,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -2079,7 +2078,7 @@ func (u *jsiiProxy_User) GetNumberAttribute(terraformAttribute *string) *float64
 	_jsii_.Invoke(
 		u,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -2095,7 +2094,7 @@ func (u *jsiiProxy_User) GetNumberListAttribute(terraformAttribute *string) *[]*
 	_jsii_.Invoke(
 		u,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -2111,7 +2110,7 @@ func (u *jsiiProxy_User) GetNumberMapAttribute(terraformAttribute *string) *map[
 	_jsii_.Invoke(
 		u,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -2127,7 +2126,7 @@ func (u *jsiiProxy_User) GetStringAttribute(terraformAttribute *string) *string 
 	_jsii_.Invoke(
 		u,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -2143,15 +2142,15 @@ func (u *jsiiProxy_User) GetStringMapAttribute(terraformAttribute *string) *map[
 	_jsii_.Invoke(
 		u,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (u *jsiiProxy_User) HasResourceMove() interface{} {
-	var returns interface{}
+func (u *jsiiProxy_User) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		u,
@@ -2170,7 +2169,7 @@ func (u *jsiiProxy_User) ImportFrom(id *string, provider cdktf.TerraformProvider
 	_jsii_.InvokeVoid(
 		u,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -2183,7 +2182,7 @@ func (u *jsiiProxy_User) InterpolationForAttribute(terraformAttribute *string) c
 	_jsii_.Invoke(
 		u,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -2197,18 +2196,18 @@ func (u *jsiiProxy_User) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		u,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (u *jsiiProxy_User) MoveTo(moveTarget *string, index interface{}) {
+func (u *jsiiProxy_User) MoveTo(moveTarget *string, index any) {
 	if err := u.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		u,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -2219,7 +2218,7 @@ func (u *jsiiProxy_User) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		u,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -2230,7 +2229,7 @@ func (u *jsiiProxy_User) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		u,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -2241,7 +2240,7 @@ func (u *jsiiProxy_User) PutPasswordHash(value *UserPasswordHash) {
 	_jsii_.InvokeVoid(
 		u,
 		"putPasswordHash",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -2565,8 +2564,8 @@ func (u *jsiiProxy_User) ResetZipCode() {
 	)
 }
 
-func (u *jsiiProxy_User) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (u *jsiiProxy_User) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		u,
@@ -2578,8 +2577,8 @@ func (u *jsiiProxy_User) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (u *jsiiProxy_User) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (u *jsiiProxy_User) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		u,
@@ -2591,8 +2590,8 @@ func (u *jsiiProxy_User) SynthesizeHclAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (u *jsiiProxy_User) ToHclTerraform() interface{} {
-	var returns interface{}
+func (u *jsiiProxy_User) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		u,
@@ -2604,8 +2603,8 @@ func (u *jsiiProxy_User) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (u *jsiiProxy_User) ToMetadata() interface{} {
-	var returns interface{}
+func (u *jsiiProxy_User) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		u,
@@ -2630,8 +2629,8 @@ func (u *jsiiProxy_User) ToString() *string {
 	return returns
 }
 
-func (u *jsiiProxy_User) ToTerraform() interface{} {
-	var returns interface{}
+func (u *jsiiProxy_User) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		u,
@@ -2642,4 +2641,3 @@ func (u *jsiiProxy_User) ToTerraform() interface{} {
 
 	return returns
 }
-

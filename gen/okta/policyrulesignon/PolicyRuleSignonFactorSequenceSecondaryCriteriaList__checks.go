@@ -34,7 +34,7 @@ func (p *jsiiProxy_PolicyRuleSignonFactorSequenceSecondaryCriteriaList) validate
 	return nil
 }
 
-func (j *jsiiProxy_PolicyRuleSignonFactorSequenceSecondaryCriteriaList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PolicyRuleSignonFactorSequenceSecondaryCriteriaList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewPolicyRuleSignonFactorSequenceSecondaryCriteriaListParameters(te
 
 	return nil
 }
-

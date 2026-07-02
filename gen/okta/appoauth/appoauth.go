@@ -18,9 +18,9 @@ type AppOauth interface {
 	AccessibilityLoginRedirectUrl() *string
 	SetAccessibilityLoginRedirectUrl(val *string)
 	AccessibilityLoginRedirectUrlInput() *string
-	AccessibilitySelfService() interface{}
-	SetAccessibilitySelfService(val interface{})
-	AccessibilitySelfServiceInput() interface{}
+	AccessibilitySelfService() any
+	SetAccessibilitySelfService(val any)
+	AccessibilitySelfServiceInput() any
 	AdminNote() *string
 	SetAdminNote(val *string)
 	AdminNoteInput() *string
@@ -33,12 +33,12 @@ type AppOauth interface {
 	AuthenticationPolicy() *string
 	SetAuthenticationPolicy(val *string)
 	AuthenticationPolicyInput() *string
-	AutoKeyRotation() interface{}
-	SetAutoKeyRotation(val interface{})
-	AutoKeyRotationInput() interface{}
-	AutoSubmitToolbar() interface{}
-	SetAutoSubmitToolbar(val interface{})
-	AutoSubmitToolbarInput() interface{}
+	AutoKeyRotation() any
+	SetAutoKeyRotation(val any)
+	AutoKeyRotationInput() any
+	AutoSubmitToolbar() any
+	SetAutoSubmitToolbar(val any)
+	AutoSubmitToolbarInput() any
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	ClientBasicSecret() *string
@@ -52,18 +52,18 @@ type AppOauth interface {
 	SetClientUri(val *string)
 	ClientUriInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	ConsentMethod() *string
 	SetConsentMethod(val *string)
 	ConsentMethodInput() *string
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -84,23 +84,23 @@ type AppOauth interface {
 	GrantTypesInput() *[]*string
 	GroupsClaim() AppOauthGroupsClaimOutputReference
 	GroupsClaimInput() *AppOauthGroupsClaim
-	HideIos() interface{}
-	SetHideIos(val interface{})
-	HideIosInput() interface{}
-	HideWeb() interface{}
-	SetHideWeb(val interface{})
-	HideWebInput() interface{}
+	HideIos() any
+	SetHideIos(val any)
+	HideIosInput() any
+	HideWeb() any
+	SetHideWeb(val any)
+	HideWebInput() any
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	ImplicitAssignment() interface{}
-	SetImplicitAssignment(val interface{})
-	ImplicitAssignmentInput() interface{}
+	ImplicitAssignment() any
+	SetImplicitAssignment(val any)
+	ImplicitAssignmentInput() any
 	IssuerMode() *string
 	SetIssuerMode(val *string)
 	IssuerModeInput() *string
 	Jwks() AppOauthJwksList
-	JwksInput() interface{}
+	JwksInput() any
 	JwksUri() *string
 	SetJwksUri(val *string)
 	JwksUriInput() *string
@@ -130,12 +130,12 @@ type AppOauth interface {
 	Name() *string
 	// The tree node.
 	Node() constructs.Node
-	OmitSecret() interface{}
-	SetOmitSecret(val interface{})
-	OmitSecretInput() interface{}
-	PkceRequired() interface{}
-	SetPkceRequired(val interface{})
-	PkceRequiredInput() interface{}
+	OmitSecret() any
+	SetOmitSecret(val any)
+	OmitSecretInput() any
+	PkceRequired() any
+	SetPkceRequired(val any)
+	PkceRequiredInput() any
 	PolicyUri() *string
 	SetPolicyUri(val *string)
 	PolicyUriInput() *string
@@ -150,11 +150,11 @@ type AppOauth interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RedirectUris() *[]*string
 	SetRedirectUris(val *[]*string)
 	RedirectUrisInput() *[]*string
@@ -174,11 +174,11 @@ type AppOauth interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() AppOauthTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	TokenEndpointAuthMethod() *string
 	SetTokenEndpointAuthMethod(val *string)
 	TokenEndpointAuthMethodInput() *string
@@ -207,9 +207,9 @@ type AppOauth interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -227,7 +227,7 @@ type AppOauth interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -239,7 +239,7 @@ type AppOauth interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -247,7 +247,7 @@ type AppOauth interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutGroupsClaim(value *AppOauthGroupsClaim)
-	PutJwks(value interface{})
+	PutJwks(value any)
 	PutTimeouts(value *AppOauthTimeouts)
 	ResetAccessibilityErrorRedirectUrl()
 	ResetAccessibilityLoginRedirectUrl()
@@ -298,17 +298,17 @@ type AppOauth interface {
 	ResetUserNameTemplateSuffix()
 	ResetUserNameTemplateType()
 	ResetWildcardRedirect()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for AppOauth
@@ -356,8 +356,8 @@ func (j *jsiiProxy_AppOauth) AccessibilityLoginRedirectUrlInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AppOauth) AccessibilitySelfService() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppOauth) AccessibilitySelfService() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"accessibilitySelfService",
@@ -366,8 +366,8 @@ func (j *jsiiProxy_AppOauth) AccessibilitySelfService() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AppOauth) AccessibilitySelfServiceInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppOauth) AccessibilitySelfServiceInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"accessibilitySelfServiceInput",
@@ -456,8 +456,8 @@ func (j *jsiiProxy_AppOauth) AuthenticationPolicyInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AppOauth) AutoKeyRotation() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppOauth) AutoKeyRotation() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"autoKeyRotation",
@@ -466,8 +466,8 @@ func (j *jsiiProxy_AppOauth) AutoKeyRotation() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AppOauth) AutoKeyRotationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppOauth) AutoKeyRotationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"autoKeyRotationInput",
@@ -476,8 +476,8 @@ func (j *jsiiProxy_AppOauth) AutoKeyRotationInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AppOauth) AutoSubmitToolbar() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppOauth) AutoSubmitToolbar() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"autoSubmitToolbar",
@@ -486,8 +486,8 @@ func (j *jsiiProxy_AppOauth) AutoSubmitToolbar() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AppOauth) AutoSubmitToolbarInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppOauth) AutoSubmitToolbarInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"autoSubmitToolbarInput",
@@ -576,8 +576,8 @@ func (j *jsiiProxy_AppOauth) ClientUriInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AppOauth) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppOauth) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -606,8 +606,8 @@ func (j *jsiiProxy_AppOauth) ConsentMethodInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AppOauth) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AppOauth) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -616,8 +616,8 @@ func (j *jsiiProxy_AppOauth) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AppOauth) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppOauth) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -726,8 +726,8 @@ func (j *jsiiProxy_AppOauth) GroupsClaimInput() *AppOauthGroupsClaim {
 	return returns
 }
 
-func (j *jsiiProxy_AppOauth) HideIos() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppOauth) HideIos() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"hideIos",
@@ -736,8 +736,8 @@ func (j *jsiiProxy_AppOauth) HideIos() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AppOauth) HideIosInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppOauth) HideIosInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"hideIosInput",
@@ -746,8 +746,8 @@ func (j *jsiiProxy_AppOauth) HideIosInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AppOauth) HideWeb() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppOauth) HideWeb() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"hideWeb",
@@ -756,8 +756,8 @@ func (j *jsiiProxy_AppOauth) HideWeb() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AppOauth) HideWebInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppOauth) HideWebInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"hideWebInput",
@@ -786,8 +786,8 @@ func (j *jsiiProxy_AppOauth) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AppOauth) ImplicitAssignment() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppOauth) ImplicitAssignment() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"implicitAssignment",
@@ -796,8 +796,8 @@ func (j *jsiiProxy_AppOauth) ImplicitAssignment() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AppOauth) ImplicitAssignmentInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppOauth) ImplicitAssignmentInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"implicitAssignmentInput",
@@ -836,8 +836,8 @@ func (j *jsiiProxy_AppOauth) Jwks() AppOauthJwksList {
 	return returns
 }
 
-func (j *jsiiProxy_AppOauth) JwksInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppOauth) JwksInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"jwksInput",
@@ -1026,8 +1026,8 @@ func (j *jsiiProxy_AppOauth) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_AppOauth) OmitSecret() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppOauth) OmitSecret() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"omitSecret",
@@ -1036,8 +1036,8 @@ func (j *jsiiProxy_AppOauth) OmitSecret() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AppOauth) OmitSecretInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppOauth) OmitSecretInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"omitSecretInput",
@@ -1046,8 +1046,8 @@ func (j *jsiiProxy_AppOauth) OmitSecretInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AppOauth) PkceRequired() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppOauth) PkceRequired() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"pkceRequired",
@@ -1056,8 +1056,8 @@ func (j *jsiiProxy_AppOauth) PkceRequired() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AppOauth) PkceRequiredInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppOauth) PkceRequiredInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"pkceRequiredInput",
@@ -1136,8 +1136,8 @@ func (j *jsiiProxy_AppOauth) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_AppOauth) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_AppOauth) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -1146,8 +1146,8 @@ func (j *jsiiProxy_AppOauth) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AppOauth) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppOauth) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -1276,8 +1276,8 @@ func (j *jsiiProxy_AppOauth) TerraformGeneratorMetadata() *cdktf.TerraformProvid
 	return returns
 }
 
-func (j *jsiiProxy_AppOauth) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AppOauth) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -1306,8 +1306,8 @@ func (j *jsiiProxy_AppOauth) Timeouts() AppOauthTimeoutsOutputReference {
 	return returns
 }
 
-func (j *jsiiProxy_AppOauth) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppOauth) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -1476,7 +1476,6 @@ func (j *jsiiProxy_AppOauth) WildcardRedirectInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_oauth okta_app_oauth} Resource.
 func NewAppOauth(scope constructs.Construct, id *string, config *AppOauthConfig) AppOauth {
 	_init_.Initialize()
@@ -1488,7 +1487,7 @@ func NewAppOauth(scope constructs.Construct, id *string, config *AppOauthConfig)
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.appOauth.AppOauth",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -1501,12 +1500,12 @@ func NewAppOauth_Override(a AppOauth, scope constructs.Construct, id *string, co
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.appOauth.AppOauth",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AppOauth)SetAccessibilityErrorRedirectUrl(val *string) {
+func (j *jsiiProxy_AppOauth) SetAccessibilityErrorRedirectUrl(val *string) {
 	if err := j.validateSetAccessibilityErrorRedirectUrlParameters(val); err != nil {
 		panic(err)
 	}
@@ -1517,7 +1516,7 @@ func (j *jsiiProxy_AppOauth)SetAccessibilityErrorRedirectUrl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppOauth)SetAccessibilityLoginRedirectUrl(val *string) {
+func (j *jsiiProxy_AppOauth) SetAccessibilityLoginRedirectUrl(val *string) {
 	if err := j.validateSetAccessibilityLoginRedirectUrlParameters(val); err != nil {
 		panic(err)
 	}
@@ -1528,7 +1527,7 @@ func (j *jsiiProxy_AppOauth)SetAccessibilityLoginRedirectUrl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppOauth)SetAccessibilitySelfService(val interface{}) {
+func (j *jsiiProxy_AppOauth) SetAccessibilitySelfService(val any) {
 	if err := j.validateSetAccessibilitySelfServiceParameters(val); err != nil {
 		panic(err)
 	}
@@ -1539,7 +1538,7 @@ func (j *jsiiProxy_AppOauth)SetAccessibilitySelfService(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppOauth)SetAdminNote(val *string) {
+func (j *jsiiProxy_AppOauth) SetAdminNote(val *string) {
 	if err := j.validateSetAdminNoteParameters(val); err != nil {
 		panic(err)
 	}
@@ -1550,7 +1549,7 @@ func (j *jsiiProxy_AppOauth)SetAdminNote(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppOauth)SetAppLinksJson(val *string) {
+func (j *jsiiProxy_AppOauth) SetAppLinksJson(val *string) {
 	if err := j.validateSetAppLinksJsonParameters(val); err != nil {
 		panic(err)
 	}
@@ -1561,7 +1560,7 @@ func (j *jsiiProxy_AppOauth)SetAppLinksJson(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppOauth)SetAppSettingsJson(val *string) {
+func (j *jsiiProxy_AppOauth) SetAppSettingsJson(val *string) {
 	if err := j.validateSetAppSettingsJsonParameters(val); err != nil {
 		panic(err)
 	}
@@ -1572,7 +1571,7 @@ func (j *jsiiProxy_AppOauth)SetAppSettingsJson(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppOauth)SetAuthenticationPolicy(val *string) {
+func (j *jsiiProxy_AppOauth) SetAuthenticationPolicy(val *string) {
 	if err := j.validateSetAuthenticationPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -1583,7 +1582,7 @@ func (j *jsiiProxy_AppOauth)SetAuthenticationPolicy(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppOauth)SetAutoKeyRotation(val interface{}) {
+func (j *jsiiProxy_AppOauth) SetAutoKeyRotation(val any) {
 	if err := j.validateSetAutoKeyRotationParameters(val); err != nil {
 		panic(err)
 	}
@@ -1594,7 +1593,7 @@ func (j *jsiiProxy_AppOauth)SetAutoKeyRotation(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppOauth)SetAutoSubmitToolbar(val interface{}) {
+func (j *jsiiProxy_AppOauth) SetAutoSubmitToolbar(val any) {
 	if err := j.validateSetAutoSubmitToolbarParameters(val); err != nil {
 		panic(err)
 	}
@@ -1605,7 +1604,7 @@ func (j *jsiiProxy_AppOauth)SetAutoSubmitToolbar(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppOauth)SetClientBasicSecret(val *string) {
+func (j *jsiiProxy_AppOauth) SetClientBasicSecret(val *string) {
 	if err := j.validateSetClientBasicSecretParameters(val); err != nil {
 		panic(err)
 	}
@@ -1616,7 +1615,7 @@ func (j *jsiiProxy_AppOauth)SetClientBasicSecret(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppOauth)SetClientId(val *string) {
+func (j *jsiiProxy_AppOauth) SetClientId(val *string) {
 	if err := j.validateSetClientIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1627,7 +1626,7 @@ func (j *jsiiProxy_AppOauth)SetClientId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppOauth)SetClientUri(val *string) {
+func (j *jsiiProxy_AppOauth) SetClientUri(val *string) {
 	if err := j.validateSetClientUriParameters(val); err != nil {
 		panic(err)
 	}
@@ -1638,7 +1637,7 @@ func (j *jsiiProxy_AppOauth)SetClientUri(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppOauth)SetConnection(val interface{}) {
+func (j *jsiiProxy_AppOauth) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1649,7 +1648,7 @@ func (j *jsiiProxy_AppOauth)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppOauth)SetConsentMethod(val *string) {
+func (j *jsiiProxy_AppOauth) SetConsentMethod(val *string) {
 	if err := j.validateSetConsentMethodParameters(val); err != nil {
 		panic(err)
 	}
@@ -1660,7 +1659,7 @@ func (j *jsiiProxy_AppOauth)SetConsentMethod(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppOauth)SetCount(val interface{}) {
+func (j *jsiiProxy_AppOauth) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -1671,7 +1670,7 @@ func (j *jsiiProxy_AppOauth)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppOauth)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_AppOauth) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -1679,7 +1678,7 @@ func (j *jsiiProxy_AppOauth)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AppOauth)SetEnduserNote(val *string) {
+func (j *jsiiProxy_AppOauth) SetEnduserNote(val *string) {
 	if err := j.validateSetEnduserNoteParameters(val); err != nil {
 		panic(err)
 	}
@@ -1690,7 +1689,7 @@ func (j *jsiiProxy_AppOauth)SetEnduserNote(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppOauth)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_AppOauth) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1698,7 +1697,7 @@ func (j *jsiiProxy_AppOauth)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_AppOauth)SetGrantTypes(val *[]*string) {
+func (j *jsiiProxy_AppOauth) SetGrantTypes(val *[]*string) {
 	if err := j.validateSetGrantTypesParameters(val); err != nil {
 		panic(err)
 	}
@@ -1709,7 +1708,7 @@ func (j *jsiiProxy_AppOauth)SetGrantTypes(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AppOauth)SetHideIos(val interface{}) {
+func (j *jsiiProxy_AppOauth) SetHideIos(val any) {
 	if err := j.validateSetHideIosParameters(val); err != nil {
 		panic(err)
 	}
@@ -1720,7 +1719,7 @@ func (j *jsiiProxy_AppOauth)SetHideIos(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppOauth)SetHideWeb(val interface{}) {
+func (j *jsiiProxy_AppOauth) SetHideWeb(val any) {
 	if err := j.validateSetHideWebParameters(val); err != nil {
 		panic(err)
 	}
@@ -1731,7 +1730,7 @@ func (j *jsiiProxy_AppOauth)SetHideWeb(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppOauth)SetId(val *string) {
+func (j *jsiiProxy_AppOauth) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1742,7 +1741,7 @@ func (j *jsiiProxy_AppOauth)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppOauth)SetImplicitAssignment(val interface{}) {
+func (j *jsiiProxy_AppOauth) SetImplicitAssignment(val any) {
 	if err := j.validateSetImplicitAssignmentParameters(val); err != nil {
 		panic(err)
 	}
@@ -1753,7 +1752,7 @@ func (j *jsiiProxy_AppOauth)SetImplicitAssignment(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppOauth)SetIssuerMode(val *string) {
+func (j *jsiiProxy_AppOauth) SetIssuerMode(val *string) {
 	if err := j.validateSetIssuerModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1764,7 +1763,7 @@ func (j *jsiiProxy_AppOauth)SetIssuerMode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppOauth)SetJwksUri(val *string) {
+func (j *jsiiProxy_AppOauth) SetJwksUri(val *string) {
 	if err := j.validateSetJwksUriParameters(val); err != nil {
 		panic(err)
 	}
@@ -1775,7 +1774,7 @@ func (j *jsiiProxy_AppOauth)SetJwksUri(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppOauth)SetLabel(val *string) {
+func (j *jsiiProxy_AppOauth) SetLabel(val *string) {
 	if err := j.validateSetLabelParameters(val); err != nil {
 		panic(err)
 	}
@@ -1786,7 +1785,7 @@ func (j *jsiiProxy_AppOauth)SetLabel(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppOauth)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_AppOauth) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1797,7 +1796,7 @@ func (j *jsiiProxy_AppOauth)SetLifecycle(val *cdktf.TerraformResourceLifecycle) 
 	)
 }
 
-func (j *jsiiProxy_AppOauth)SetLoginMode(val *string) {
+func (j *jsiiProxy_AppOauth) SetLoginMode(val *string) {
 	if err := j.validateSetLoginModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1808,7 +1807,7 @@ func (j *jsiiProxy_AppOauth)SetLoginMode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppOauth)SetLoginScopes(val *[]*string) {
+func (j *jsiiProxy_AppOauth) SetLoginScopes(val *[]*string) {
 	if err := j.validateSetLoginScopesParameters(val); err != nil {
 		panic(err)
 	}
@@ -1819,7 +1818,7 @@ func (j *jsiiProxy_AppOauth)SetLoginScopes(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AppOauth)SetLoginUri(val *string) {
+func (j *jsiiProxy_AppOauth) SetLoginUri(val *string) {
 	if err := j.validateSetLoginUriParameters(val); err != nil {
 		panic(err)
 	}
@@ -1830,7 +1829,7 @@ func (j *jsiiProxy_AppOauth)SetLoginUri(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppOauth)SetLogo(val *string) {
+func (j *jsiiProxy_AppOauth) SetLogo(val *string) {
 	if err := j.validateSetLogoParameters(val); err != nil {
 		panic(err)
 	}
@@ -1841,7 +1840,7 @@ func (j *jsiiProxy_AppOauth)SetLogo(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppOauth)SetLogoUri(val *string) {
+func (j *jsiiProxy_AppOauth) SetLogoUri(val *string) {
 	if err := j.validateSetLogoUriParameters(val); err != nil {
 		panic(err)
 	}
@@ -1852,7 +1851,7 @@ func (j *jsiiProxy_AppOauth)SetLogoUri(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppOauth)SetOmitSecret(val interface{}) {
+func (j *jsiiProxy_AppOauth) SetOmitSecret(val any) {
 	if err := j.validateSetOmitSecretParameters(val); err != nil {
 		panic(err)
 	}
@@ -1863,7 +1862,7 @@ func (j *jsiiProxy_AppOauth)SetOmitSecret(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppOauth)SetPkceRequired(val interface{}) {
+func (j *jsiiProxy_AppOauth) SetPkceRequired(val any) {
 	if err := j.validateSetPkceRequiredParameters(val); err != nil {
 		panic(err)
 	}
@@ -1874,7 +1873,7 @@ func (j *jsiiProxy_AppOauth)SetPkceRequired(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppOauth)SetPolicyUri(val *string) {
+func (j *jsiiProxy_AppOauth) SetPolicyUri(val *string) {
 	if err := j.validateSetPolicyUriParameters(val); err != nil {
 		panic(err)
 	}
@@ -1885,7 +1884,7 @@ func (j *jsiiProxy_AppOauth)SetPolicyUri(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppOauth)SetPostLogoutRedirectUris(val *[]*string) {
+func (j *jsiiProxy_AppOauth) SetPostLogoutRedirectUris(val *[]*string) {
 	if err := j.validateSetPostLogoutRedirectUrisParameters(val); err != nil {
 		panic(err)
 	}
@@ -1896,7 +1895,7 @@ func (j *jsiiProxy_AppOauth)SetPostLogoutRedirectUris(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AppOauth)SetProfile(val *string) {
+func (j *jsiiProxy_AppOauth) SetProfile(val *string) {
 	if err := j.validateSetProfileParameters(val); err != nil {
 		panic(err)
 	}
@@ -1907,7 +1906,7 @@ func (j *jsiiProxy_AppOauth)SetProfile(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppOauth)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_AppOauth) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1915,7 +1914,7 @@ func (j *jsiiProxy_AppOauth)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_AppOauth)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_AppOauth) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1926,7 +1925,7 @@ func (j *jsiiProxy_AppOauth)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppOauth)SetRedirectUris(val *[]*string) {
+func (j *jsiiProxy_AppOauth) SetRedirectUris(val *[]*string) {
 	if err := j.validateSetRedirectUrisParameters(val); err != nil {
 		panic(err)
 	}
@@ -1937,7 +1936,7 @@ func (j *jsiiProxy_AppOauth)SetRedirectUris(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AppOauth)SetRefreshTokenLeeway(val *float64) {
+func (j *jsiiProxy_AppOauth) SetRefreshTokenLeeway(val *float64) {
 	if err := j.validateSetRefreshTokenLeewayParameters(val); err != nil {
 		panic(err)
 	}
@@ -1948,7 +1947,7 @@ func (j *jsiiProxy_AppOauth)SetRefreshTokenLeeway(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_AppOauth)SetRefreshTokenRotation(val *string) {
+func (j *jsiiProxy_AppOauth) SetRefreshTokenRotation(val *string) {
 	if err := j.validateSetRefreshTokenRotationParameters(val); err != nil {
 		panic(err)
 	}
@@ -1959,7 +1958,7 @@ func (j *jsiiProxy_AppOauth)SetRefreshTokenRotation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppOauth)SetResponseTypes(val *[]*string) {
+func (j *jsiiProxy_AppOauth) SetResponseTypes(val *[]*string) {
 	if err := j.validateSetResponseTypesParameters(val); err != nil {
 		panic(err)
 	}
@@ -1970,7 +1969,7 @@ func (j *jsiiProxy_AppOauth)SetResponseTypes(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AppOauth)SetStatus(val *string) {
+func (j *jsiiProxy_AppOauth) SetStatus(val *string) {
 	if err := j.validateSetStatusParameters(val); err != nil {
 		panic(err)
 	}
@@ -1981,7 +1980,7 @@ func (j *jsiiProxy_AppOauth)SetStatus(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppOauth)SetTokenEndpointAuthMethod(val *string) {
+func (j *jsiiProxy_AppOauth) SetTokenEndpointAuthMethod(val *string) {
 	if err := j.validateSetTokenEndpointAuthMethodParameters(val); err != nil {
 		panic(err)
 	}
@@ -1992,7 +1991,7 @@ func (j *jsiiProxy_AppOauth)SetTokenEndpointAuthMethod(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppOauth)SetTosUri(val *string) {
+func (j *jsiiProxy_AppOauth) SetTosUri(val *string) {
 	if err := j.validateSetTosUriParameters(val); err != nil {
 		panic(err)
 	}
@@ -2003,7 +2002,7 @@ func (j *jsiiProxy_AppOauth)SetTosUri(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppOauth)SetType(val *string) {
+func (j *jsiiProxy_AppOauth) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -2014,7 +2013,7 @@ func (j *jsiiProxy_AppOauth)SetType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppOauth)SetUserNameTemplate(val *string) {
+func (j *jsiiProxy_AppOauth) SetUserNameTemplate(val *string) {
 	if err := j.validateSetUserNameTemplateParameters(val); err != nil {
 		panic(err)
 	}
@@ -2025,7 +2024,7 @@ func (j *jsiiProxy_AppOauth)SetUserNameTemplate(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppOauth)SetUserNameTemplatePushStatus(val *string) {
+func (j *jsiiProxy_AppOauth) SetUserNameTemplatePushStatus(val *string) {
 	if err := j.validateSetUserNameTemplatePushStatusParameters(val); err != nil {
 		panic(err)
 	}
@@ -2036,7 +2035,7 @@ func (j *jsiiProxy_AppOauth)SetUserNameTemplatePushStatus(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppOauth)SetUserNameTemplateSuffix(val *string) {
+func (j *jsiiProxy_AppOauth) SetUserNameTemplateSuffix(val *string) {
 	if err := j.validateSetUserNameTemplateSuffixParameters(val); err != nil {
 		panic(err)
 	}
@@ -2047,7 +2046,7 @@ func (j *jsiiProxy_AppOauth)SetUserNameTemplateSuffix(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppOauth)SetUserNameTemplateType(val *string) {
+func (j *jsiiProxy_AppOauth) SetUserNameTemplateType(val *string) {
 	if err := j.validateSetUserNameTemplateTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -2058,7 +2057,7 @@ func (j *jsiiProxy_AppOauth)SetUserNameTemplateType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppOauth)SetWildcardRedirect(val *string) {
+func (j *jsiiProxy_AppOauth) SetWildcardRedirect(val *string) {
 	if err := j.validateSetWildcardRedirectParameters(val); err != nil {
 		panic(err)
 	}
@@ -2081,7 +2080,7 @@ func AppOauth_GenerateConfigForImport(scope constructs.Construct, importToId *st
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.appOauth.AppOauth",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -2105,7 +2104,7 @@ func AppOauth_GenerateConfigForImport(scope constructs.Construct, importToId *st
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func AppOauth_IsConstruct(x interface{}) *bool {
+func AppOauth_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAppOauth_IsConstructParameters(x); err != nil {
@@ -2116,7 +2115,7 @@ func AppOauth_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.appOauth.AppOauth",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -2124,7 +2123,7 @@ func AppOauth_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func AppOauth_IsTerraformElement(x interface{}) *bool {
+func AppOauth_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAppOauth_IsTerraformElementParameters(x); err != nil {
@@ -2135,7 +2134,7 @@ func AppOauth_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.appOauth.AppOauth",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -2143,7 +2142,7 @@ func AppOauth_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func AppOauth_IsTerraformResource(x interface{}) *bool {
+func AppOauth_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAppOauth_IsTerraformResourceParameters(x); err != nil {
@@ -2154,7 +2153,7 @@ func AppOauth_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.appOauth.AppOauth",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -2179,31 +2178,31 @@ func (a *jsiiProxy_AppOauth) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (a *jsiiProxy_AppOauth) AddOverride(path *string, value interface{}) {
+func (a *jsiiProxy_AppOauth) AddOverride(path *string, value any) {
 	if err := a.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (a *jsiiProxy_AppOauth) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AppOauth) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -2219,7 +2218,7 @@ func (a *jsiiProxy_AppOauth) GetBooleanAttribute(terraformAttribute *string) cdk
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -2235,7 +2234,7 @@ func (a *jsiiProxy_AppOauth) GetBooleanMapAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -2251,7 +2250,7 @@ func (a *jsiiProxy_AppOauth) GetListAttribute(terraformAttribute *string) *[]*st
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -2267,7 +2266,7 @@ func (a *jsiiProxy_AppOauth) GetNumberAttribute(terraformAttribute *string) *flo
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -2283,7 +2282,7 @@ func (a *jsiiProxy_AppOauth) GetNumberListAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -2299,7 +2298,7 @@ func (a *jsiiProxy_AppOauth) GetNumberMapAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -2315,7 +2314,7 @@ func (a *jsiiProxy_AppOauth) GetStringAttribute(terraformAttribute *string) *str
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -2331,15 +2330,15 @@ func (a *jsiiProxy_AppOauth) GetStringMapAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_AppOauth) HasResourceMove() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AppOauth) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -2358,7 +2357,7 @@ func (a *jsiiProxy_AppOauth) ImportFrom(id *string, provider cdktf.TerraformProv
 	_jsii_.InvokeVoid(
 		a,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -2371,7 +2370,7 @@ func (a *jsiiProxy_AppOauth) InterpolationForAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -2385,18 +2384,18 @@ func (a *jsiiProxy_AppOauth) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (a *jsiiProxy_AppOauth) MoveTo(moveTarget *string, index interface{}) {
+func (a *jsiiProxy_AppOauth) MoveTo(moveTarget *string, index any) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -2407,7 +2406,7 @@ func (a *jsiiProxy_AppOauth) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -2418,7 +2417,7 @@ func (a *jsiiProxy_AppOauth) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -2429,18 +2428,18 @@ func (a *jsiiProxy_AppOauth) PutGroupsClaim(value *AppOauthGroupsClaim) {
 	_jsii_.InvokeVoid(
 		a,
 		"putGroupsClaim",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (a *jsiiProxy_AppOauth) PutJwks(value interface{}) {
+func (a *jsiiProxy_AppOauth) PutJwks(value any) {
 	if err := a.validatePutJwksParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"putJwks",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -2451,7 +2450,7 @@ func (a *jsiiProxy_AppOauth) PutTimeouts(value *AppOauthTimeouts) {
 	_jsii_.InvokeVoid(
 		a,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -2831,8 +2830,8 @@ func (a *jsiiProxy_AppOauth) ResetWildcardRedirect() {
 	)
 }
 
-func (a *jsiiProxy_AppOauth) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AppOauth) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -2844,8 +2843,8 @@ func (a *jsiiProxy_AppOauth) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_AppOauth) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AppOauth) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -2857,8 +2856,8 @@ func (a *jsiiProxy_AppOauth) SynthesizeHclAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_AppOauth) ToHclTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AppOauth) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -2870,8 +2869,8 @@ func (a *jsiiProxy_AppOauth) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_AppOauth) ToMetadata() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AppOauth) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -2896,8 +2895,8 @@ func (a *jsiiProxy_AppOauth) ToString() *string {
 	return returns
 }
 
-func (a *jsiiProxy_AppOauth) ToTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AppOauth) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -2908,4 +2907,3 @@ func (a *jsiiProxy_AppOauth) ToTerraform() interface{} {
 
 	return returns
 }
-

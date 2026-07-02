@@ -16,22 +16,22 @@ type GroupSchemaProperty interface {
 	SetArrayEnum(val *[]*string)
 	ArrayEnumInput() *[]*string
 	ArrayOneOf() GroupSchemaPropertyArrayOneOfList
-	ArrayOneOfInput() interface{}
+	ArrayOneOfInput() any
 	ArrayType() *string
 	SetArrayType(val *string)
 	ArrayTypeInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -70,7 +70,7 @@ type GroupSchemaProperty interface {
 	SetMaster(val *string)
 	MasterInput() *string
 	MasterOverridePriority() GroupSchemaPropertyMasterOverridePriorityList
-	MasterOverridePriorityInput() interface{}
+	MasterOverridePriorityInput() any
 	MaxLength() *float64
 	SetMaxLength(val *float64)
 	MaxLengthInput() *float64
@@ -80,7 +80,7 @@ type GroupSchemaProperty interface {
 	// The tree node.
 	Node() constructs.Node
 	OneOf() GroupSchemaPropertyOneOfList
-	OneOfInput() interface{}
+	OneOfInput() any
 	Permissions() *string
 	SetPermissions(val *string)
 	PermissionsInput() *string
@@ -89,21 +89,21 @@ type GroupSchemaProperty interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
-	Required() interface{}
-	SetRequired(val interface{})
-	RequiredInput() interface{}
+	RawOverrides() any
+	Required() any
+	SetRequired(val any)
+	RequiredInput() any
 	Scope() *string
 	SetScope(val *string)
 	ScopeInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Title() *string
@@ -119,9 +119,9 @@ type GroupSchemaProperty interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -139,7 +139,7 @@ type GroupSchemaProperty interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -151,16 +151,16 @@ type GroupSchemaProperty interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutArrayOneOf(value interface{})
-	PutMasterOverridePriority(value interface{})
-	PutOneOf(value interface{})
+	PutArrayOneOf(value any)
+	PutMasterOverridePriority(value any)
+	PutOneOf(value any)
 	ResetArrayEnum()
 	ResetArrayOneOf()
 	ResetArrayType()
@@ -181,17 +181,17 @@ type GroupSchemaProperty interface {
 	ResetRequired()
 	ResetScope()
 	ResetUnique()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GroupSchemaProperty
@@ -229,8 +229,8 @@ func (j *jsiiProxy_GroupSchemaProperty) ArrayOneOf() GroupSchemaPropertyArrayOne
 	return returns
 }
 
-func (j *jsiiProxy_GroupSchemaProperty) ArrayOneOfInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GroupSchemaProperty) ArrayOneOfInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"arrayOneOfInput",
@@ -269,8 +269,8 @@ func (j *jsiiProxy_GroupSchemaProperty) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_GroupSchemaProperty) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GroupSchemaProperty) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -279,8 +279,8 @@ func (j *jsiiProxy_GroupSchemaProperty) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GroupSchemaProperty) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GroupSchemaProperty) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -289,8 +289,8 @@ func (j *jsiiProxy_GroupSchemaProperty) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_GroupSchemaProperty) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GroupSchemaProperty) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -499,8 +499,8 @@ func (j *jsiiProxy_GroupSchemaProperty) MasterOverridePriority() GroupSchemaProp
 	return returns
 }
 
-func (j *jsiiProxy_GroupSchemaProperty) MasterOverridePriorityInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GroupSchemaProperty) MasterOverridePriorityInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"masterOverridePriorityInput",
@@ -569,8 +569,8 @@ func (j *jsiiProxy_GroupSchemaProperty) OneOf() GroupSchemaPropertyOneOfList {
 	return returns
 }
 
-func (j *jsiiProxy_GroupSchemaProperty) OneOfInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GroupSchemaProperty) OneOfInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"oneOfInput",
@@ -609,8 +609,8 @@ func (j *jsiiProxy_GroupSchemaProperty) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_GroupSchemaProperty) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GroupSchemaProperty) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -619,8 +619,8 @@ func (j *jsiiProxy_GroupSchemaProperty) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GroupSchemaProperty) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GroupSchemaProperty) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -629,8 +629,8 @@ func (j *jsiiProxy_GroupSchemaProperty) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GroupSchemaProperty) Required() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GroupSchemaProperty) Required() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"required",
@@ -639,8 +639,8 @@ func (j *jsiiProxy_GroupSchemaProperty) Required() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GroupSchemaProperty) RequiredInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GroupSchemaProperty) RequiredInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requiredInput",
@@ -679,8 +679,8 @@ func (j *jsiiProxy_GroupSchemaProperty) TerraformGeneratorMetadata() *cdktf.Terr
 	return returns
 }
 
-func (j *jsiiProxy_GroupSchemaProperty) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GroupSchemaProperty) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -759,7 +759,6 @@ func (j *jsiiProxy_GroupSchemaProperty) UniqueInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/group_schema_property okta_group_schema_property} Resource.
 func NewGroupSchemaProperty(scope constructs.Construct, id *string, config *GroupSchemaPropertyConfig) GroupSchemaProperty {
 	_init_.Initialize()
@@ -771,7 +770,7 @@ func NewGroupSchemaProperty(scope constructs.Construct, id *string, config *Grou
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.groupSchemaProperty.GroupSchemaProperty",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -784,12 +783,12 @@ func NewGroupSchemaProperty_Override(g GroupSchemaProperty, scope constructs.Con
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.groupSchemaProperty.GroupSchemaProperty",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GroupSchemaProperty)SetArrayEnum(val *[]*string) {
+func (j *jsiiProxy_GroupSchemaProperty) SetArrayEnum(val *[]*string) {
 	if err := j.validateSetArrayEnumParameters(val); err != nil {
 		panic(err)
 	}
@@ -800,7 +799,7 @@ func (j *jsiiProxy_GroupSchemaProperty)SetArrayEnum(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GroupSchemaProperty)SetArrayType(val *string) {
+func (j *jsiiProxy_GroupSchemaProperty) SetArrayType(val *string) {
 	if err := j.validateSetArrayTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -811,7 +810,7 @@ func (j *jsiiProxy_GroupSchemaProperty)SetArrayType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GroupSchemaProperty)SetConnection(val interface{}) {
+func (j *jsiiProxy_GroupSchemaProperty) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -822,7 +821,7 @@ func (j *jsiiProxy_GroupSchemaProperty)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GroupSchemaProperty)SetCount(val interface{}) {
+func (j *jsiiProxy_GroupSchemaProperty) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -833,7 +832,7 @@ func (j *jsiiProxy_GroupSchemaProperty)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GroupSchemaProperty)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GroupSchemaProperty) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -841,7 +840,7 @@ func (j *jsiiProxy_GroupSchemaProperty)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GroupSchemaProperty)SetDescription(val *string) {
+func (j *jsiiProxy_GroupSchemaProperty) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -852,7 +851,7 @@ func (j *jsiiProxy_GroupSchemaProperty)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GroupSchemaProperty)SetEnum(val *[]*string) {
+func (j *jsiiProxy_GroupSchemaProperty) SetEnum(val *[]*string) {
 	if err := j.validateSetEnumParameters(val); err != nil {
 		panic(err)
 	}
@@ -863,7 +862,7 @@ func (j *jsiiProxy_GroupSchemaProperty)SetEnum(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GroupSchemaProperty)SetExternalName(val *string) {
+func (j *jsiiProxy_GroupSchemaProperty) SetExternalName(val *string) {
 	if err := j.validateSetExternalNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -874,7 +873,7 @@ func (j *jsiiProxy_GroupSchemaProperty)SetExternalName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GroupSchemaProperty)SetExternalNamespace(val *string) {
+func (j *jsiiProxy_GroupSchemaProperty) SetExternalNamespace(val *string) {
 	if err := j.validateSetExternalNamespaceParameters(val); err != nil {
 		panic(err)
 	}
@@ -885,7 +884,7 @@ func (j *jsiiProxy_GroupSchemaProperty)SetExternalNamespace(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GroupSchemaProperty)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GroupSchemaProperty) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -893,7 +892,7 @@ func (j *jsiiProxy_GroupSchemaProperty)SetForEach(val cdktf.ITerraformIterator) 
 	)
 }
 
-func (j *jsiiProxy_GroupSchemaProperty)SetId(val *string) {
+func (j *jsiiProxy_GroupSchemaProperty) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -904,7 +903,7 @@ func (j *jsiiProxy_GroupSchemaProperty)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GroupSchemaProperty)SetIndex(val *string) {
+func (j *jsiiProxy_GroupSchemaProperty) SetIndex(val *string) {
 	if err := j.validateSetIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -915,7 +914,7 @@ func (j *jsiiProxy_GroupSchemaProperty)SetIndex(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GroupSchemaProperty)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GroupSchemaProperty) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -926,7 +925,7 @@ func (j *jsiiProxy_GroupSchemaProperty)SetLifecycle(val *cdktf.TerraformResource
 	)
 }
 
-func (j *jsiiProxy_GroupSchemaProperty)SetMaster(val *string) {
+func (j *jsiiProxy_GroupSchemaProperty) SetMaster(val *string) {
 	if err := j.validateSetMasterParameters(val); err != nil {
 		panic(err)
 	}
@@ -937,7 +936,7 @@ func (j *jsiiProxy_GroupSchemaProperty)SetMaster(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GroupSchemaProperty)SetMaxLength(val *float64) {
+func (j *jsiiProxy_GroupSchemaProperty) SetMaxLength(val *float64) {
 	if err := j.validateSetMaxLengthParameters(val); err != nil {
 		panic(err)
 	}
@@ -948,7 +947,7 @@ func (j *jsiiProxy_GroupSchemaProperty)SetMaxLength(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_GroupSchemaProperty)SetMinLength(val *float64) {
+func (j *jsiiProxy_GroupSchemaProperty) SetMinLength(val *float64) {
 	if err := j.validateSetMinLengthParameters(val); err != nil {
 		panic(err)
 	}
@@ -959,7 +958,7 @@ func (j *jsiiProxy_GroupSchemaProperty)SetMinLength(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_GroupSchemaProperty)SetPermissions(val *string) {
+func (j *jsiiProxy_GroupSchemaProperty) SetPermissions(val *string) {
 	if err := j.validateSetPermissionsParameters(val); err != nil {
 		panic(err)
 	}
@@ -970,7 +969,7 @@ func (j *jsiiProxy_GroupSchemaProperty)SetPermissions(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GroupSchemaProperty)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GroupSchemaProperty) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -978,7 +977,7 @@ func (j *jsiiProxy_GroupSchemaProperty)SetProvider(val cdktf.TerraformProvider) 
 	)
 }
 
-func (j *jsiiProxy_GroupSchemaProperty)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GroupSchemaProperty) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -989,7 +988,7 @@ func (j *jsiiProxy_GroupSchemaProperty)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GroupSchemaProperty)SetRequired(val interface{}) {
+func (j *jsiiProxy_GroupSchemaProperty) SetRequired(val any) {
 	if err := j.validateSetRequiredParameters(val); err != nil {
 		panic(err)
 	}
@@ -1000,7 +999,7 @@ func (j *jsiiProxy_GroupSchemaProperty)SetRequired(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GroupSchemaProperty)SetScope(val *string) {
+func (j *jsiiProxy_GroupSchemaProperty) SetScope(val *string) {
 	if err := j.validateSetScopeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1011,7 +1010,7 @@ func (j *jsiiProxy_GroupSchemaProperty)SetScope(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GroupSchemaProperty)SetTitle(val *string) {
+func (j *jsiiProxy_GroupSchemaProperty) SetTitle(val *string) {
 	if err := j.validateSetTitleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1022,7 +1021,7 @@ func (j *jsiiProxy_GroupSchemaProperty)SetTitle(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GroupSchemaProperty)SetType(val *string) {
+func (j *jsiiProxy_GroupSchemaProperty) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1033,7 +1032,7 @@ func (j *jsiiProxy_GroupSchemaProperty)SetType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GroupSchemaProperty)SetUnique(val *string) {
+func (j *jsiiProxy_GroupSchemaProperty) SetUnique(val *string) {
 	if err := j.validateSetUniqueParameters(val); err != nil {
 		panic(err)
 	}
@@ -1056,7 +1055,7 @@ func GroupSchemaProperty_GenerateConfigForImport(scope constructs.Construct, imp
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.groupSchemaProperty.GroupSchemaProperty",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1080,7 +1079,7 @@ func GroupSchemaProperty_GenerateConfigForImport(scope constructs.Construct, imp
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GroupSchemaProperty_IsConstruct(x interface{}) *bool {
+func GroupSchemaProperty_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGroupSchemaProperty_IsConstructParameters(x); err != nil {
@@ -1091,7 +1090,7 @@ func GroupSchemaProperty_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.groupSchemaProperty.GroupSchemaProperty",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1099,7 +1098,7 @@ func GroupSchemaProperty_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GroupSchemaProperty_IsTerraformElement(x interface{}) *bool {
+func GroupSchemaProperty_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGroupSchemaProperty_IsTerraformElementParameters(x); err != nil {
@@ -1110,7 +1109,7 @@ func GroupSchemaProperty_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.groupSchemaProperty.GroupSchemaProperty",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1118,7 +1117,7 @@ func GroupSchemaProperty_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GroupSchemaProperty_IsTerraformResource(x interface{}) *bool {
+func GroupSchemaProperty_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGroupSchemaProperty_IsTerraformResourceParameters(x); err != nil {
@@ -1129,7 +1128,7 @@ func GroupSchemaProperty_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.groupSchemaProperty.GroupSchemaProperty",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1154,31 +1153,31 @@ func (g *jsiiProxy_GroupSchemaProperty) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GroupSchemaProperty) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GroupSchemaProperty) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GroupSchemaProperty) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GroupSchemaProperty) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1194,7 +1193,7 @@ func (g *jsiiProxy_GroupSchemaProperty) GetBooleanAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1210,7 +1209,7 @@ func (g *jsiiProxy_GroupSchemaProperty) GetBooleanMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1226,7 +1225,7 @@ func (g *jsiiProxy_GroupSchemaProperty) GetListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1242,7 +1241,7 @@ func (g *jsiiProxy_GroupSchemaProperty) GetNumberAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1258,7 +1257,7 @@ func (g *jsiiProxy_GroupSchemaProperty) GetNumberListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1274,7 +1273,7 @@ func (g *jsiiProxy_GroupSchemaProperty) GetNumberMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1290,7 +1289,7 @@ func (g *jsiiProxy_GroupSchemaProperty) GetStringAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1306,15 +1305,15 @@ func (g *jsiiProxy_GroupSchemaProperty) GetStringMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GroupSchemaProperty) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GroupSchemaProperty) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1333,7 +1332,7 @@ func (g *jsiiProxy_GroupSchemaProperty) ImportFrom(id *string, provider cdktf.Te
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1346,7 +1345,7 @@ func (g *jsiiProxy_GroupSchemaProperty) InterpolationForAttribute(terraformAttri
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1360,18 +1359,18 @@ func (g *jsiiProxy_GroupSchemaProperty) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GroupSchemaProperty) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GroupSchemaProperty) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1382,7 +1381,7 @@ func (g *jsiiProxy_GroupSchemaProperty) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1393,40 +1392,40 @@ func (g *jsiiProxy_GroupSchemaProperty) OverrideLogicalId(newLogicalId *string) 
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (g *jsiiProxy_GroupSchemaProperty) PutArrayOneOf(value interface{}) {
+func (g *jsiiProxy_GroupSchemaProperty) PutArrayOneOf(value any) {
 	if err := g.validatePutArrayOneOfParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putArrayOneOf",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GroupSchemaProperty) PutMasterOverridePriority(value interface{}) {
+func (g *jsiiProxy_GroupSchemaProperty) PutMasterOverridePriority(value any) {
 	if err := g.validatePutMasterOverridePriorityParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putMasterOverridePriority",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GroupSchemaProperty) PutOneOf(value interface{}) {
+func (g *jsiiProxy_GroupSchemaProperty) PutOneOf(value any) {
 	if err := g.validatePutOneOfParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putOneOf",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1574,8 +1573,8 @@ func (g *jsiiProxy_GroupSchemaProperty) ResetUnique() {
 	)
 }
 
-func (g *jsiiProxy_GroupSchemaProperty) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GroupSchemaProperty) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1587,8 +1586,8 @@ func (g *jsiiProxy_GroupSchemaProperty) SynthesizeAttributes() *map[string]inter
 	return returns
 }
 
-func (g *jsiiProxy_GroupSchemaProperty) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GroupSchemaProperty) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1600,8 +1599,8 @@ func (g *jsiiProxy_GroupSchemaProperty) SynthesizeHclAttributes() *map[string]in
 	return returns
 }
 
-func (g *jsiiProxy_GroupSchemaProperty) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GroupSchemaProperty) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1613,8 +1612,8 @@ func (g *jsiiProxy_GroupSchemaProperty) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GroupSchemaProperty) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GroupSchemaProperty) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1639,8 +1638,8 @@ func (g *jsiiProxy_GroupSchemaProperty) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GroupSchemaProperty) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GroupSchemaProperty) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1651,4 +1650,3 @@ func (g *jsiiProxy_GroupSchemaProperty) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -12,24 +12,24 @@ import (
 // Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/profile_mapping okta_profile_mapping}.
 type ProfileMapping interface {
 	cdktf.TerraformResource
-	AlwaysApply() interface{}
-	SetAlwaysApply(val interface{})
-	AlwaysApplyInput() interface{}
+	AlwaysApply() any
+	SetAlwaysApply(val any)
+	AlwaysApplyInput() any
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
-	DeleteWhenAbsent() interface{}
-	SetDeleteWhenAbsent(val interface{})
-	DeleteWhenAbsentInput() interface{}
+	SetCount(val any)
+	DeleteWhenAbsent() any
+	SetDeleteWhenAbsent(val any)
+	DeleteWhenAbsentInput() any
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -50,7 +50,7 @@ type ProfileMapping interface {
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	Mappings() ProfileMappingMappingsList
-	MappingsInput() interface{}
+	MappingsInput() any
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -58,11 +58,11 @@ type ProfileMapping interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SourceId() *string
 	SetSourceId(val *string)
 	SourceIdInput() *string
@@ -76,16 +76,16 @@ type ProfileMapping interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -103,7 +103,7 @@ type ProfileMapping interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -115,14 +115,14 @@ type ProfileMapping interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutMappings(value interface{})
+	PutMappings(value any)
 	ResetAlwaysApply()
 	ResetDeleteWhenAbsent()
 	ResetId()
@@ -130,17 +130,17 @@ type ProfileMapping interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ProfileMapping
@@ -148,8 +148,8 @@ type jsiiProxy_ProfileMapping struct {
 	internal.Type__cdktfTerraformResource
 }
 
-func (j *jsiiProxy_ProfileMapping) AlwaysApply() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ProfileMapping) AlwaysApply() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"alwaysApply",
@@ -158,8 +158,8 @@ func (j *jsiiProxy_ProfileMapping) AlwaysApply() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ProfileMapping) AlwaysApplyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ProfileMapping) AlwaysApplyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"alwaysApplyInput",
@@ -178,8 +178,8 @@ func (j *jsiiProxy_ProfileMapping) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_ProfileMapping) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ProfileMapping) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -188,8 +188,8 @@ func (j *jsiiProxy_ProfileMapping) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ProfileMapping) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ProfileMapping) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -198,8 +198,8 @@ func (j *jsiiProxy_ProfileMapping) ConstructNodeMetadata() *map[string]interface
 	return returns
 }
 
-func (j *jsiiProxy_ProfileMapping) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ProfileMapping) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -208,8 +208,8 @@ func (j *jsiiProxy_ProfileMapping) Count() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ProfileMapping) DeleteWhenAbsent() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ProfileMapping) DeleteWhenAbsent() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deleteWhenAbsent",
@@ -218,8 +218,8 @@ func (j *jsiiProxy_ProfileMapping) DeleteWhenAbsent() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ProfileMapping) DeleteWhenAbsentInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ProfileMapping) DeleteWhenAbsentInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deleteWhenAbsentInput",
@@ -308,8 +308,8 @@ func (j *jsiiProxy_ProfileMapping) Mappings() ProfileMappingMappingsList {
 	return returns
 }
 
-func (j *jsiiProxy_ProfileMapping) MappingsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ProfileMapping) MappingsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"mappingsInput",
@@ -338,8 +338,8 @@ func (j *jsiiProxy_ProfileMapping) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_ProfileMapping) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ProfileMapping) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -348,8 +348,8 @@ func (j *jsiiProxy_ProfileMapping) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ProfileMapping) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ProfileMapping) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -448,8 +448,8 @@ func (j *jsiiProxy_ProfileMapping) TerraformGeneratorMetadata() *cdktf.Terraform
 	return returns
 }
 
-func (j *jsiiProxy_ProfileMapping) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ProfileMapping) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -468,7 +468,6 @@ func (j *jsiiProxy_ProfileMapping) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/profile_mapping okta_profile_mapping} Resource.
 func NewProfileMapping(scope constructs.Construct, id *string, config *ProfileMappingConfig) ProfileMapping {
 	_init_.Initialize()
@@ -480,7 +479,7 @@ func NewProfileMapping(scope constructs.Construct, id *string, config *ProfileMa
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.profileMapping.ProfileMapping",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -493,12 +492,12 @@ func NewProfileMapping_Override(p ProfileMapping, scope constructs.Construct, id
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.profileMapping.ProfileMapping",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		p,
 	)
 }
 
-func (j *jsiiProxy_ProfileMapping)SetAlwaysApply(val interface{}) {
+func (j *jsiiProxy_ProfileMapping) SetAlwaysApply(val any) {
 	if err := j.validateSetAlwaysApplyParameters(val); err != nil {
 		panic(err)
 	}
@@ -509,7 +508,7 @@ func (j *jsiiProxy_ProfileMapping)SetAlwaysApply(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ProfileMapping)SetConnection(val interface{}) {
+func (j *jsiiProxy_ProfileMapping) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -520,7 +519,7 @@ func (j *jsiiProxy_ProfileMapping)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ProfileMapping)SetCount(val interface{}) {
+func (j *jsiiProxy_ProfileMapping) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -531,7 +530,7 @@ func (j *jsiiProxy_ProfileMapping)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ProfileMapping)SetDeleteWhenAbsent(val interface{}) {
+func (j *jsiiProxy_ProfileMapping) SetDeleteWhenAbsent(val any) {
 	if err := j.validateSetDeleteWhenAbsentParameters(val); err != nil {
 		panic(err)
 	}
@@ -542,7 +541,7 @@ func (j *jsiiProxy_ProfileMapping)SetDeleteWhenAbsent(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ProfileMapping)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ProfileMapping) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -550,7 +549,7 @@ func (j *jsiiProxy_ProfileMapping)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ProfileMapping)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ProfileMapping) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -558,7 +557,7 @@ func (j *jsiiProxy_ProfileMapping)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_ProfileMapping)SetId(val *string) {
+func (j *jsiiProxy_ProfileMapping) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -569,7 +568,7 @@ func (j *jsiiProxy_ProfileMapping)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ProfileMapping)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ProfileMapping) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -580,7 +579,7 @@ func (j *jsiiProxy_ProfileMapping)SetLifecycle(val *cdktf.TerraformResourceLifec
 	)
 }
 
-func (j *jsiiProxy_ProfileMapping)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ProfileMapping) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -588,7 +587,7 @@ func (j *jsiiProxy_ProfileMapping)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_ProfileMapping)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ProfileMapping) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -599,7 +598,7 @@ func (j *jsiiProxy_ProfileMapping)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ProfileMapping)SetSourceId(val *string) {
+func (j *jsiiProxy_ProfileMapping) SetSourceId(val *string) {
 	if err := j.validateSetSourceIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -610,7 +609,7 @@ func (j *jsiiProxy_ProfileMapping)SetSourceId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ProfileMapping)SetTargetId(val *string) {
+func (j *jsiiProxy_ProfileMapping) SetTargetId(val *string) {
 	if err := j.validateSetTargetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -633,7 +632,7 @@ func ProfileMapping_GenerateConfigForImport(scope constructs.Construct, importTo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.profileMapping.ProfileMapping",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -657,7 +656,7 @@ func ProfileMapping_GenerateConfigForImport(scope constructs.Construct, importTo
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ProfileMapping_IsConstruct(x interface{}) *bool {
+func ProfileMapping_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateProfileMapping_IsConstructParameters(x); err != nil {
@@ -668,7 +667,7 @@ func ProfileMapping_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.profileMapping.ProfileMapping",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -676,7 +675,7 @@ func ProfileMapping_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ProfileMapping_IsTerraformElement(x interface{}) *bool {
+func ProfileMapping_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateProfileMapping_IsTerraformElementParameters(x); err != nil {
@@ -687,7 +686,7 @@ func ProfileMapping_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.profileMapping.ProfileMapping",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -695,7 +694,7 @@ func ProfileMapping_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ProfileMapping_IsTerraformResource(x interface{}) *bool {
+func ProfileMapping_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateProfileMapping_IsTerraformResourceParameters(x); err != nil {
@@ -706,7 +705,7 @@ func ProfileMapping_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.profileMapping.ProfileMapping",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -731,31 +730,31 @@ func (p *jsiiProxy_ProfileMapping) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (p *jsiiProxy_ProfileMapping) AddOverride(path *string, value interface{}) {
+func (p *jsiiProxy_ProfileMapping) AddOverride(path *string, value any) {
 	if err := p.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (p *jsiiProxy_ProfileMapping) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_ProfileMapping) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -771,7 +770,7 @@ func (p *jsiiProxy_ProfileMapping) GetBooleanAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -787,7 +786,7 @@ func (p *jsiiProxy_ProfileMapping) GetBooleanMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -803,7 +802,7 @@ func (p *jsiiProxy_ProfileMapping) GetListAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -819,7 +818,7 @@ func (p *jsiiProxy_ProfileMapping) GetNumberAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -835,7 +834,7 @@ func (p *jsiiProxy_ProfileMapping) GetNumberListAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -851,7 +850,7 @@ func (p *jsiiProxy_ProfileMapping) GetNumberMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -867,7 +866,7 @@ func (p *jsiiProxy_ProfileMapping) GetStringAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -883,15 +882,15 @@ func (p *jsiiProxy_ProfileMapping) GetStringMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (p *jsiiProxy_ProfileMapping) HasResourceMove() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_ProfileMapping) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -910,7 +909,7 @@ func (p *jsiiProxy_ProfileMapping) ImportFrom(id *string, provider cdktf.Terrafo
 	_jsii_.InvokeVoid(
 		p,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -923,7 +922,7 @@ func (p *jsiiProxy_ProfileMapping) InterpolationForAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -937,18 +936,18 @@ func (p *jsiiProxy_ProfileMapping) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (p *jsiiProxy_ProfileMapping) MoveTo(moveTarget *string, index interface{}) {
+func (p *jsiiProxy_ProfileMapping) MoveTo(moveTarget *string, index any) {
 	if err := p.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -959,7 +958,7 @@ func (p *jsiiProxy_ProfileMapping) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -970,18 +969,18 @@ func (p *jsiiProxy_ProfileMapping) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (p *jsiiProxy_ProfileMapping) PutMappings(value interface{}) {
+func (p *jsiiProxy_ProfileMapping) PutMappings(value any) {
 	if err := p.validatePutMappingsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"putMappings",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1025,8 +1024,8 @@ func (p *jsiiProxy_ProfileMapping) ResetOverrideLogicalId() {
 	)
 }
 
-func (p *jsiiProxy_ProfileMapping) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (p *jsiiProxy_ProfileMapping) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
@@ -1038,8 +1037,8 @@ func (p *jsiiProxy_ProfileMapping) SynthesizeAttributes() *map[string]interface{
 	return returns
 }
 
-func (p *jsiiProxy_ProfileMapping) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (p *jsiiProxy_ProfileMapping) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
@@ -1051,8 +1050,8 @@ func (p *jsiiProxy_ProfileMapping) SynthesizeHclAttributes() *map[string]interfa
 	return returns
 }
 
-func (p *jsiiProxy_ProfileMapping) ToHclTerraform() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_ProfileMapping) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1064,8 +1063,8 @@ func (p *jsiiProxy_ProfileMapping) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (p *jsiiProxy_ProfileMapping) ToMetadata() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_ProfileMapping) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1090,8 +1089,8 @@ func (p *jsiiProxy_ProfileMapping) ToString() *string {
 	return returns
 }
 
-func (p *jsiiProxy_ProfileMapping) ToTerraform() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_ProfileMapping) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1102,4 +1101,3 @@ func (p *jsiiProxy_ProfileMapping) ToTerraform() interface{} {
 
 	return returns
 }
-

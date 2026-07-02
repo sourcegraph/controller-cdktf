@@ -12,9 +12,9 @@ type AppSamlAttributeStatementsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,8 +33,8 @@ type AppSamlAttributeStatementsOutputReference interface {
 	FilterValueInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -58,7 +58,7 @@ type AppSamlAttributeStatementsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -86,7 +86,7 @@ type AppSamlAttributeStatementsOutputReference interface {
 	ResetValues()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,8 +99,8 @@ type jsiiProxy_AppSamlAttributeStatementsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_AppSamlAttributeStatementsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppSamlAttributeStatementsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -179,8 +179,8 @@ func (j *jsiiProxy_AppSamlAttributeStatementsOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AppSamlAttributeStatementsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppSamlAttributeStatementsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -289,7 +289,6 @@ func (j *jsiiProxy_AppSamlAttributeStatementsOutputReference) ValuesInput() *[]*
 	return returns
 }
 
-
 func NewAppSamlAttributeStatementsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AppSamlAttributeStatementsOutputReference {
 	_init_.Initialize()
 
@@ -300,7 +299,7 @@ func NewAppSamlAttributeStatementsOutputReference(terraformResource cdktf.IInter
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.appSaml.AppSamlAttributeStatementsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -312,12 +311,12 @@ func NewAppSamlAttributeStatementsOutputReference_Override(a AppSamlAttributeSta
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.appSaml.AppSamlAttributeStatementsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AppSamlAttributeStatementsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AppSamlAttributeStatementsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -328,7 +327,7 @@ func (j *jsiiProxy_AppSamlAttributeStatementsOutputReference)SetComplexObjectInd
 	)
 }
 
-func (j *jsiiProxy_AppSamlAttributeStatementsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AppSamlAttributeStatementsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -339,7 +338,7 @@ func (j *jsiiProxy_AppSamlAttributeStatementsOutputReference)SetComplexObjectIsF
 	)
 }
 
-func (j *jsiiProxy_AppSamlAttributeStatementsOutputReference)SetFilterType(val *string) {
+func (j *jsiiProxy_AppSamlAttributeStatementsOutputReference) SetFilterType(val *string) {
 	if err := j.validateSetFilterTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -350,7 +349,7 @@ func (j *jsiiProxy_AppSamlAttributeStatementsOutputReference)SetFilterType(val *
 	)
 }
 
-func (j *jsiiProxy_AppSamlAttributeStatementsOutputReference)SetFilterValue(val *string) {
+func (j *jsiiProxy_AppSamlAttributeStatementsOutputReference) SetFilterValue(val *string) {
 	if err := j.validateSetFilterValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -361,7 +360,7 @@ func (j *jsiiProxy_AppSamlAttributeStatementsOutputReference)SetFilterValue(val 
 	)
 }
 
-func (j *jsiiProxy_AppSamlAttributeStatementsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AppSamlAttributeStatementsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -372,7 +371,7 @@ func (j *jsiiProxy_AppSamlAttributeStatementsOutputReference)SetInternalValue(va
 	)
 }
 
-func (j *jsiiProxy_AppSamlAttributeStatementsOutputReference)SetName(val *string) {
+func (j *jsiiProxy_AppSamlAttributeStatementsOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -383,7 +382,7 @@ func (j *jsiiProxy_AppSamlAttributeStatementsOutputReference)SetName(val *string
 	)
 }
 
-func (j *jsiiProxy_AppSamlAttributeStatementsOutputReference)SetNamespace(val *string) {
+func (j *jsiiProxy_AppSamlAttributeStatementsOutputReference) SetNamespace(val *string) {
 	if err := j.validateSetNamespaceParameters(val); err != nil {
 		panic(err)
 	}
@@ -394,7 +393,7 @@ func (j *jsiiProxy_AppSamlAttributeStatementsOutputReference)SetNamespace(val *s
 	)
 }
 
-func (j *jsiiProxy_AppSamlAttributeStatementsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AppSamlAttributeStatementsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -405,7 +404,7 @@ func (j *jsiiProxy_AppSamlAttributeStatementsOutputReference)SetTerraformAttribu
 	)
 }
 
-func (j *jsiiProxy_AppSamlAttributeStatementsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AppSamlAttributeStatementsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -416,7 +415,7 @@ func (j *jsiiProxy_AppSamlAttributeStatementsOutputReference)SetTerraformResourc
 	)
 }
 
-func (j *jsiiProxy_AppSamlAttributeStatementsOutputReference)SetType(val *string) {
+func (j *jsiiProxy_AppSamlAttributeStatementsOutputReference) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -427,7 +426,7 @@ func (j *jsiiProxy_AppSamlAttributeStatementsOutputReference)SetType(val *string
 	)
 }
 
-func (j *jsiiProxy_AppSamlAttributeStatementsOutputReference)SetValues(val *[]*string) {
+func (j *jsiiProxy_AppSamlAttributeStatementsOutputReference) SetValues(val *[]*string) {
 	if err := j.validateSetValuesParameters(val); err != nil {
 		panic(err)
 	}
@@ -451,16 +450,16 @@ func (a *jsiiProxy_AppSamlAttributeStatementsOutputReference) ComputeFqn() *stri
 	return returns
 }
 
-func (a *jsiiProxy_AppSamlAttributeStatementsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AppSamlAttributeStatementsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -476,7 +475,7 @@ func (a *jsiiProxy_AppSamlAttributeStatementsOutputReference) GetBooleanAttribut
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -492,7 +491,7 @@ func (a *jsiiProxy_AppSamlAttributeStatementsOutputReference) GetBooleanMapAttri
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -508,7 +507,7 @@ func (a *jsiiProxy_AppSamlAttributeStatementsOutputReference) GetListAttribute(t
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -524,7 +523,7 @@ func (a *jsiiProxy_AppSamlAttributeStatementsOutputReference) GetNumberAttribute
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -540,7 +539,7 @@ func (a *jsiiProxy_AppSamlAttributeStatementsOutputReference) GetNumberListAttri
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -556,7 +555,7 @@ func (a *jsiiProxy_AppSamlAttributeStatementsOutputReference) GetNumberMapAttrib
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -572,7 +571,7 @@ func (a *jsiiProxy_AppSamlAttributeStatementsOutputReference) GetStringAttribute
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -588,7 +587,7 @@ func (a *jsiiProxy_AppSamlAttributeStatementsOutputReference) GetStringMapAttrib
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -617,7 +616,7 @@ func (a *jsiiProxy_AppSamlAttributeStatementsOutputReference) InterpolationForAt
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -664,16 +663,16 @@ func (a *jsiiProxy_AppSamlAttributeStatementsOutputReference) ResetValues() {
 	)
 }
 
-func (a *jsiiProxy_AppSamlAttributeStatementsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AppSamlAttributeStatementsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -692,4 +691,3 @@ func (a *jsiiProxy_AppSamlAttributeStatementsOutputReference) ToString() *string
 
 	return returns
 }
-

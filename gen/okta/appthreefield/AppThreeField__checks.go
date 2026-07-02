@@ -19,7 +19,7 @@ func (a *jsiiProxy_AppThreeField) validateAddMoveTargetParameters(moveTarget *st
 	return nil
 }
 
-func (a *jsiiProxy_AppThreeField) validateAddOverrideParameters(path *string, value interface{}) error {
+func (a *jsiiProxy_AppThreeField) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (a *jsiiProxy_AppThreeField) validateMoveFromIdParameters(id *string) error
 	return nil
 }
 
-func (a *jsiiProxy_AppThreeField) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (a *jsiiProxy_AppThreeField) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateAppThreeField_GenerateConfigForImportParameters(scope constructs.Co
 	return nil
 }
 
-func validateAppThreeField_IsConstructParameters(x interface{}) error {
+func validateAppThreeField_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateAppThreeField_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateAppThreeField_IsTerraformElementParameters(x interface{}) error {
+func validateAppThreeField_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateAppThreeField_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateAppThreeField_IsTerraformResourceParameters(x interface{}) error {
+func validateAppThreeField_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -271,7 +271,7 @@ func (j *jsiiProxy_AppThreeField) validateSetAccessibilityLoginRedirectUrlParame
 	return nil
 }
 
-func (j *jsiiProxy_AppThreeField) validateSetAccessibilitySelfServiceParameters(val interface{}) error {
+func (j *jsiiProxy_AppThreeField) validateSetAccessibilitySelfServiceParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -307,7 +307,7 @@ func (j *jsiiProxy_AppThreeField) validateSetAppLinksJsonParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_AppThreeField) validateSetAutoSubmitToolbarParameters(val interface{}) error {
+func (j *jsiiProxy_AppThreeField) validateSetAutoSubmitToolbarParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -335,7 +335,7 @@ func (j *jsiiProxy_AppThreeField) validateSetButtonSelectorParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_AppThreeField) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_AppThreeField) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -368,7 +368,7 @@ func (j *jsiiProxy_AppThreeField) validateSetConnectionParameters(val interface{
 	return nil
 }
 
-func (j *jsiiProxy_AppThreeField) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_AppThreeField) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -457,7 +457,7 @@ func (j *jsiiProxy_AppThreeField) validateSetExtraFieldValueParameters(val *stri
 	return nil
 }
 
-func (j *jsiiProxy_AppThreeField) validateSetHideIosParameters(val interface{}) error {
+func (j *jsiiProxy_AppThreeField) validateSetHideIosParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -477,7 +477,7 @@ func (j *jsiiProxy_AppThreeField) validateSetHideIosParameters(val interface{}) 
 	return nil
 }
 
-func (j *jsiiProxy_AppThreeField) validateSetHideWebParameters(val interface{}) error {
+func (j *jsiiProxy_AppThreeField) validateSetHideWebParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -537,7 +537,7 @@ func (j *jsiiProxy_AppThreeField) validateSetPasswordSelectorParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_AppThreeField) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_AppThreeField) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -583,7 +583,7 @@ func (j *jsiiProxy_AppThreeField) validateSetProvisionersParameters(val *[]inter
 	return nil
 }
 
-func (j *jsiiProxy_AppThreeField) validateSetRevealPasswordParameters(val interface{}) error {
+func (j *jsiiProxy_AppThreeField) validateSetRevealPasswordParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -701,4 +701,3 @@ func validateNewAppThreeFieldParameters(scope constructs.Construct, id *string, 
 
 	return nil
 }
-

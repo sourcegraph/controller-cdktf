@@ -19,7 +19,7 @@ func (p *jsiiProxy_PolicyRuleMfa) validateAddMoveTargetParameters(moveTarget *st
 	return nil
 }
 
-func (p *jsiiProxy_PolicyRuleMfa) validateAddOverrideParameters(path *string, value interface{}) error {
+func (p *jsiiProxy_PolicyRuleMfa) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (p *jsiiProxy_PolicyRuleMfa) validateMoveFromIdParameters(id *string) error
 	return nil
 }
 
-func (p *jsiiProxy_PolicyRuleMfa) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (p *jsiiProxy_PolicyRuleMfa) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (p *jsiiProxy_PolicyRuleMfa) validateOverrideLogicalIdParameters(newLogical
 	return nil
 }
 
-func (p *jsiiProxy_PolicyRuleMfa) validatePutAppExcludeParameters(value interface{}) error {
+func (p *jsiiProxy_PolicyRuleMfa) validatePutAppExcludeParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -235,7 +235,7 @@ func (p *jsiiProxy_PolicyRuleMfa) validatePutAppExcludeParameters(value interfac
 	return nil
 }
 
-func (p *jsiiProxy_PolicyRuleMfa) validatePutAppIncludeParameters(value interface{}) error {
+func (p *jsiiProxy_PolicyRuleMfa) validatePutAppIncludeParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -282,7 +282,7 @@ func validatePolicyRuleMfa_GenerateConfigForImportParameters(scope constructs.Co
 	return nil
 }
 
-func validatePolicyRuleMfa_IsConstructParameters(x interface{}) error {
+func validatePolicyRuleMfa_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -290,7 +290,7 @@ func validatePolicyRuleMfa_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validatePolicyRuleMfa_IsTerraformElementParameters(x interface{}) error {
+func validatePolicyRuleMfa_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -298,7 +298,7 @@ func validatePolicyRuleMfa_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validatePolicyRuleMfa_IsTerraformResourceParameters(x interface{}) error {
+func validatePolicyRuleMfa_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -306,7 +306,7 @@ func validatePolicyRuleMfa_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_PolicyRuleMfa) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_PolicyRuleMfa) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -339,7 +339,7 @@ func (j *jsiiProxy_PolicyRuleMfa) validateSetConnectionParameters(val interface{
 	return nil
 }
 
-func (j *jsiiProxy_PolicyRuleMfa) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_PolicyRuleMfa) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -468,7 +468,7 @@ func (j *jsiiProxy_PolicyRuleMfa) validateSetPriorityParameters(val *float64) er
 	return nil
 }
 
-func (j *jsiiProxy_PolicyRuleMfa) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_PolicyRuleMfa) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -548,4 +548,3 @@ func validateNewPolicyRuleMfaParameters(scope constructs.Construct, id *string, 
 
 	return nil
 }
-

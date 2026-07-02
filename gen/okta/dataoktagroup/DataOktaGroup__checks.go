@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataOktaGroup) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataOktaGroup) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataOktaGroup_GenerateConfigForImportParameters(scope constructs.Co
 	return nil
 }
 
-func validateDataOktaGroup_IsConstructParameters(x interface{}) error {
+func validateDataOktaGroup_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataOktaGroup_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateDataOktaGroup_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataOktaGroup_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataOktaGroup_IsTerraformDataSourceParameters(x interface{}) error 
 	return nil
 }
 
-func validateDataOktaGroup_IsTerraformElementParameters(x interface{}) error {
+func validateDataOktaGroup_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func validateDataOktaGroup_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_DataOktaGroup) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataOktaGroup) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -224,7 +224,7 @@ func (j *jsiiProxy_DataOktaGroup) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_DataOktaGroup) validateSetIncludeUsersParameters(val interface{}) error {
+func (j *jsiiProxy_DataOktaGroup) validateSetIncludeUsersParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -283,4 +283,3 @@ func validateNewDataOktaGroupParameters(scope constructs.Construct, id *string, 
 
 	return nil
 }
-

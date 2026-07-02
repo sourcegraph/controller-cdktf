@@ -15,15 +15,15 @@ type SecurityNotificationEmails interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -50,39 +50,39 @@ type SecurityNotificationEmails interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
-	ReportSuspiciousActivityEnabled() interface{}
-	SetReportSuspiciousActivityEnabled(val interface{})
-	ReportSuspiciousActivityEnabledInput() interface{}
-	SendEmailForFactorEnrollmentEnabled() interface{}
-	SetSendEmailForFactorEnrollmentEnabled(val interface{})
-	SendEmailForFactorEnrollmentEnabledInput() interface{}
-	SendEmailForFactorResetEnabled() interface{}
-	SetSendEmailForFactorResetEnabled(val interface{})
-	SendEmailForFactorResetEnabledInput() interface{}
-	SendEmailForNewDeviceEnabled() interface{}
-	SetSendEmailForNewDeviceEnabled(val interface{})
-	SendEmailForNewDeviceEnabledInput() interface{}
-	SendEmailForPasswordChangedEnabled() interface{}
-	SetSendEmailForPasswordChangedEnabled(val interface{})
-	SendEmailForPasswordChangedEnabledInput() interface{}
+	RawOverrides() any
+	ReportSuspiciousActivityEnabled() any
+	SetReportSuspiciousActivityEnabled(val any)
+	ReportSuspiciousActivityEnabledInput() any
+	SendEmailForFactorEnrollmentEnabled() any
+	SetSendEmailForFactorEnrollmentEnabled(val any)
+	SendEmailForFactorEnrollmentEnabledInput() any
+	SendEmailForFactorResetEnabled() any
+	SetSendEmailForFactorResetEnabled(val any)
+	SendEmailForFactorResetEnabledInput() any
+	SendEmailForNewDeviceEnabled() any
+	SetSendEmailForNewDeviceEnabled(val any)
+	SendEmailForNewDeviceEnabledInput() any
+	SendEmailForPasswordChangedEnabled() any
+	SetSendEmailForPasswordChangedEnabled(val any)
+	SendEmailForPasswordChangedEnabledInput() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -100,7 +100,7 @@ type SecurityNotificationEmails interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -112,7 +112,7 @@ type SecurityNotificationEmails interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -128,17 +128,17 @@ type SecurityNotificationEmails interface {
 	ResetSendEmailForFactorResetEnabled()
 	ResetSendEmailForNewDeviceEnabled()
 	ResetSendEmailForPasswordChangedEnabled()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for SecurityNotificationEmails
@@ -156,8 +156,8 @@ func (j *jsiiProxy_SecurityNotificationEmails) CdktfStack() cdktf.TerraformStack
 	return returns
 }
 
-func (j *jsiiProxy_SecurityNotificationEmails) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SecurityNotificationEmails) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -166,8 +166,8 @@ func (j *jsiiProxy_SecurityNotificationEmails) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SecurityNotificationEmails) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SecurityNotificationEmails) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -176,8 +176,8 @@ func (j *jsiiProxy_SecurityNotificationEmails) ConstructNodeMetadata() *map[stri
 	return returns
 }
 
-func (j *jsiiProxy_SecurityNotificationEmails) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SecurityNotificationEmails) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -276,8 +276,8 @@ func (j *jsiiProxy_SecurityNotificationEmails) Provider() cdktf.TerraformProvide
 	return returns
 }
 
-func (j *jsiiProxy_SecurityNotificationEmails) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_SecurityNotificationEmails) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -286,8 +286,8 @@ func (j *jsiiProxy_SecurityNotificationEmails) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SecurityNotificationEmails) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SecurityNotificationEmails) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -296,8 +296,8 @@ func (j *jsiiProxy_SecurityNotificationEmails) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SecurityNotificationEmails) ReportSuspiciousActivityEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SecurityNotificationEmails) ReportSuspiciousActivityEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"reportSuspiciousActivityEnabled",
@@ -306,8 +306,8 @@ func (j *jsiiProxy_SecurityNotificationEmails) ReportSuspiciousActivityEnabled()
 	return returns
 }
 
-func (j *jsiiProxy_SecurityNotificationEmails) ReportSuspiciousActivityEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SecurityNotificationEmails) ReportSuspiciousActivityEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"reportSuspiciousActivityEnabledInput",
@@ -316,8 +316,8 @@ func (j *jsiiProxy_SecurityNotificationEmails) ReportSuspiciousActivityEnabledIn
 	return returns
 }
 
-func (j *jsiiProxy_SecurityNotificationEmails) SendEmailForFactorEnrollmentEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SecurityNotificationEmails) SendEmailForFactorEnrollmentEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"sendEmailForFactorEnrollmentEnabled",
@@ -326,8 +326,8 @@ func (j *jsiiProxy_SecurityNotificationEmails) SendEmailForFactorEnrollmentEnabl
 	return returns
 }
 
-func (j *jsiiProxy_SecurityNotificationEmails) SendEmailForFactorEnrollmentEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SecurityNotificationEmails) SendEmailForFactorEnrollmentEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"sendEmailForFactorEnrollmentEnabledInput",
@@ -336,8 +336,8 @@ func (j *jsiiProxy_SecurityNotificationEmails) SendEmailForFactorEnrollmentEnabl
 	return returns
 }
 
-func (j *jsiiProxy_SecurityNotificationEmails) SendEmailForFactorResetEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SecurityNotificationEmails) SendEmailForFactorResetEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"sendEmailForFactorResetEnabled",
@@ -346,8 +346,8 @@ func (j *jsiiProxy_SecurityNotificationEmails) SendEmailForFactorResetEnabled() 
 	return returns
 }
 
-func (j *jsiiProxy_SecurityNotificationEmails) SendEmailForFactorResetEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SecurityNotificationEmails) SendEmailForFactorResetEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"sendEmailForFactorResetEnabledInput",
@@ -356,8 +356,8 @@ func (j *jsiiProxy_SecurityNotificationEmails) SendEmailForFactorResetEnabledInp
 	return returns
 }
 
-func (j *jsiiProxy_SecurityNotificationEmails) SendEmailForNewDeviceEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SecurityNotificationEmails) SendEmailForNewDeviceEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"sendEmailForNewDeviceEnabled",
@@ -366,8 +366,8 @@ func (j *jsiiProxy_SecurityNotificationEmails) SendEmailForNewDeviceEnabled() in
 	return returns
 }
 
-func (j *jsiiProxy_SecurityNotificationEmails) SendEmailForNewDeviceEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SecurityNotificationEmails) SendEmailForNewDeviceEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"sendEmailForNewDeviceEnabledInput",
@@ -376,8 +376,8 @@ func (j *jsiiProxy_SecurityNotificationEmails) SendEmailForNewDeviceEnabledInput
 	return returns
 }
 
-func (j *jsiiProxy_SecurityNotificationEmails) SendEmailForPasswordChangedEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SecurityNotificationEmails) SendEmailForPasswordChangedEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"sendEmailForPasswordChangedEnabled",
@@ -386,8 +386,8 @@ func (j *jsiiProxy_SecurityNotificationEmails) SendEmailForPasswordChangedEnable
 	return returns
 }
 
-func (j *jsiiProxy_SecurityNotificationEmails) SendEmailForPasswordChangedEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SecurityNotificationEmails) SendEmailForPasswordChangedEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"sendEmailForPasswordChangedEnabledInput",
@@ -406,8 +406,8 @@ func (j *jsiiProxy_SecurityNotificationEmails) TerraformGeneratorMetadata() *cdk
 	return returns
 }
 
-func (j *jsiiProxy_SecurityNotificationEmails) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SecurityNotificationEmails) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -426,7 +426,6 @@ func (j *jsiiProxy_SecurityNotificationEmails) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/security_notification_emails okta_security_notification_emails} Resource.
 func NewSecurityNotificationEmails(scope constructs.Construct, id *string, config *SecurityNotificationEmailsConfig) SecurityNotificationEmails {
 	_init_.Initialize()
@@ -438,7 +437,7 @@ func NewSecurityNotificationEmails(scope constructs.Construct, id *string, confi
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.securityNotificationEmails.SecurityNotificationEmails",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -451,12 +450,12 @@ func NewSecurityNotificationEmails_Override(s SecurityNotificationEmails, scope 
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.securityNotificationEmails.SecurityNotificationEmails",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SecurityNotificationEmails)SetConnection(val interface{}) {
+func (j *jsiiProxy_SecurityNotificationEmails) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -467,7 +466,7 @@ func (j *jsiiProxy_SecurityNotificationEmails)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SecurityNotificationEmails)SetCount(val interface{}) {
+func (j *jsiiProxy_SecurityNotificationEmails) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -478,7 +477,7 @@ func (j *jsiiProxy_SecurityNotificationEmails)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SecurityNotificationEmails)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_SecurityNotificationEmails) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -486,7 +485,7 @@ func (j *jsiiProxy_SecurityNotificationEmails)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SecurityNotificationEmails)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SecurityNotificationEmails) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -494,7 +493,7 @@ func (j *jsiiProxy_SecurityNotificationEmails)SetForEach(val cdktf.ITerraformIte
 	)
 }
 
-func (j *jsiiProxy_SecurityNotificationEmails)SetId(val *string) {
+func (j *jsiiProxy_SecurityNotificationEmails) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -505,7 +504,7 @@ func (j *jsiiProxy_SecurityNotificationEmails)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SecurityNotificationEmails)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SecurityNotificationEmails) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -516,7 +515,7 @@ func (j *jsiiProxy_SecurityNotificationEmails)SetLifecycle(val *cdktf.TerraformR
 	)
 }
 
-func (j *jsiiProxy_SecurityNotificationEmails)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SecurityNotificationEmails) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -524,7 +523,7 @@ func (j *jsiiProxy_SecurityNotificationEmails)SetProvider(val cdktf.TerraformPro
 	)
 }
 
-func (j *jsiiProxy_SecurityNotificationEmails)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_SecurityNotificationEmails) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -535,7 +534,7 @@ func (j *jsiiProxy_SecurityNotificationEmails)SetProvisioners(val *[]interface{}
 	)
 }
 
-func (j *jsiiProxy_SecurityNotificationEmails)SetReportSuspiciousActivityEnabled(val interface{}) {
+func (j *jsiiProxy_SecurityNotificationEmails) SetReportSuspiciousActivityEnabled(val any) {
 	if err := j.validateSetReportSuspiciousActivityEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -546,7 +545,7 @@ func (j *jsiiProxy_SecurityNotificationEmails)SetReportSuspiciousActivityEnabled
 	)
 }
 
-func (j *jsiiProxy_SecurityNotificationEmails)SetSendEmailForFactorEnrollmentEnabled(val interface{}) {
+func (j *jsiiProxy_SecurityNotificationEmails) SetSendEmailForFactorEnrollmentEnabled(val any) {
 	if err := j.validateSetSendEmailForFactorEnrollmentEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -557,7 +556,7 @@ func (j *jsiiProxy_SecurityNotificationEmails)SetSendEmailForFactorEnrollmentEna
 	)
 }
 
-func (j *jsiiProxy_SecurityNotificationEmails)SetSendEmailForFactorResetEnabled(val interface{}) {
+func (j *jsiiProxy_SecurityNotificationEmails) SetSendEmailForFactorResetEnabled(val any) {
 	if err := j.validateSetSendEmailForFactorResetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -568,7 +567,7 @@ func (j *jsiiProxy_SecurityNotificationEmails)SetSendEmailForFactorResetEnabled(
 	)
 }
 
-func (j *jsiiProxy_SecurityNotificationEmails)SetSendEmailForNewDeviceEnabled(val interface{}) {
+func (j *jsiiProxy_SecurityNotificationEmails) SetSendEmailForNewDeviceEnabled(val any) {
 	if err := j.validateSetSendEmailForNewDeviceEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -579,7 +578,7 @@ func (j *jsiiProxy_SecurityNotificationEmails)SetSendEmailForNewDeviceEnabled(va
 	)
 }
 
-func (j *jsiiProxy_SecurityNotificationEmails)SetSendEmailForPasswordChangedEnabled(val interface{}) {
+func (j *jsiiProxy_SecurityNotificationEmails) SetSendEmailForPasswordChangedEnabled(val any) {
 	if err := j.validateSetSendEmailForPasswordChangedEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -602,7 +601,7 @@ func SecurityNotificationEmails_GenerateConfigForImport(scope constructs.Constru
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.securityNotificationEmails.SecurityNotificationEmails",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -626,7 +625,7 @@ func SecurityNotificationEmails_GenerateConfigForImport(scope constructs.Constru
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func SecurityNotificationEmails_IsConstruct(x interface{}) *bool {
+func SecurityNotificationEmails_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSecurityNotificationEmails_IsConstructParameters(x); err != nil {
@@ -637,7 +636,7 @@ func SecurityNotificationEmails_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.securityNotificationEmails.SecurityNotificationEmails",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -645,7 +644,7 @@ func SecurityNotificationEmails_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func SecurityNotificationEmails_IsTerraformElement(x interface{}) *bool {
+func SecurityNotificationEmails_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSecurityNotificationEmails_IsTerraformElementParameters(x); err != nil {
@@ -656,7 +655,7 @@ func SecurityNotificationEmails_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.securityNotificationEmails.SecurityNotificationEmails",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -664,7 +663,7 @@ func SecurityNotificationEmails_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func SecurityNotificationEmails_IsTerraformResource(x interface{}) *bool {
+func SecurityNotificationEmails_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSecurityNotificationEmails_IsTerraformResourceParameters(x); err != nil {
@@ -675,7 +674,7 @@ func SecurityNotificationEmails_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.securityNotificationEmails.SecurityNotificationEmails",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -700,31 +699,31 @@ func (s *jsiiProxy_SecurityNotificationEmails) AddMoveTarget(moveTarget *string)
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_SecurityNotificationEmails) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_SecurityNotificationEmails) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_SecurityNotificationEmails) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SecurityNotificationEmails) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -740,7 +739,7 @@ func (s *jsiiProxy_SecurityNotificationEmails) GetBooleanAttribute(terraformAttr
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -756,7 +755,7 @@ func (s *jsiiProxy_SecurityNotificationEmails) GetBooleanMapAttribute(terraformA
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -772,7 +771,7 @@ func (s *jsiiProxy_SecurityNotificationEmails) GetListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -788,7 +787,7 @@ func (s *jsiiProxy_SecurityNotificationEmails) GetNumberAttribute(terraformAttri
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -804,7 +803,7 @@ func (s *jsiiProxy_SecurityNotificationEmails) GetNumberListAttribute(terraformA
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -820,7 +819,7 @@ func (s *jsiiProxy_SecurityNotificationEmails) GetNumberMapAttribute(terraformAt
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -836,7 +835,7 @@ func (s *jsiiProxy_SecurityNotificationEmails) GetStringAttribute(terraformAttri
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -852,15 +851,15 @@ func (s *jsiiProxy_SecurityNotificationEmails) GetStringMapAttribute(terraformAt
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SecurityNotificationEmails) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SecurityNotificationEmails) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -879,7 +878,7 @@ func (s *jsiiProxy_SecurityNotificationEmails) ImportFrom(id *string, provider c
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -892,7 +891,7 @@ func (s *jsiiProxy_SecurityNotificationEmails) InterpolationForAttribute(terrafo
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -906,18 +905,18 @@ func (s *jsiiProxy_SecurityNotificationEmails) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_SecurityNotificationEmails) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_SecurityNotificationEmails) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -928,7 +927,7 @@ func (s *jsiiProxy_SecurityNotificationEmails) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -939,7 +938,7 @@ func (s *jsiiProxy_SecurityNotificationEmails) OverrideLogicalId(newLogicalId *s
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -999,8 +998,8 @@ func (s *jsiiProxy_SecurityNotificationEmails) ResetSendEmailForPasswordChangedE
 	)
 }
 
-func (s *jsiiProxy_SecurityNotificationEmails) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SecurityNotificationEmails) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1012,8 +1011,8 @@ func (s *jsiiProxy_SecurityNotificationEmails) SynthesizeAttributes() *map[strin
 	return returns
 }
 
-func (s *jsiiProxy_SecurityNotificationEmails) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SecurityNotificationEmails) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1025,8 +1024,8 @@ func (s *jsiiProxy_SecurityNotificationEmails) SynthesizeHclAttributes() *map[st
 	return returns
 }
 
-func (s *jsiiProxy_SecurityNotificationEmails) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SecurityNotificationEmails) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1038,8 +1037,8 @@ func (s *jsiiProxy_SecurityNotificationEmails) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_SecurityNotificationEmails) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SecurityNotificationEmails) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1064,8 +1063,8 @@ func (s *jsiiProxy_SecurityNotificationEmails) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_SecurityNotificationEmails) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SecurityNotificationEmails) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1076,4 +1075,3 @@ func (s *jsiiProxy_SecurityNotificationEmails) ToTerraform() interface{} {
 
 	return returns
 }
-

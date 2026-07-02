@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataOktaBrand) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataOktaBrand) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataOktaBrand_GenerateConfigForImportParameters(scope constructs.Co
 	return nil
 }
 
-func validateDataOktaBrand_IsConstructParameters(x interface{}) error {
+func validateDataOktaBrand_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataOktaBrand_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateDataOktaBrand_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataOktaBrand_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataOktaBrand_IsTerraformDataSourceParameters(x interface{}) error 
 	return nil
 }
 
-func validateDataOktaBrand_IsTerraformElementParameters(x interface{}) error {
+func validateDataOktaBrand_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -159,7 +159,7 @@ func (j *jsiiProxy_DataOktaBrand) validateSetBrandIdParameters(val *string) erro
 	return nil
 }
 
-func (j *jsiiProxy_DataOktaBrand) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataOktaBrand) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -242,4 +242,3 @@ func validateNewDataOktaBrandParameters(scope constructs.Construct, id *string, 
 
 	return nil
 }
-

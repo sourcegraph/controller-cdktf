@@ -6,9 +6,9 @@ import (
 
 type AuthenticatorConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type AuthenticatorConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// A human-readable string that identifies the authenticator.
 	//
 	// Some authenticators are available by feature flag on the organization. Possible values inclue: `duo`, `external_idp`, `google_otp`, `okta_email`, `okta_password`, `okta_verify`, `onprem_mfa`, `phone_number`, `rsa_token`, `security_question`, `webauthn`
@@ -37,7 +37,7 @@ type AuthenticatorConfig struct {
 	// Name does not trigger change detection (legacy behavior).
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/authenticator#legacy_ignore_name Authenticator#legacy_ignore_name}
-	LegacyIgnoreName interface{} `field:"optional" json:"legacyIgnoreName" yaml:"legacyIgnoreName"`
+	LegacyIgnoreName any `field:"optional" json:"legacyIgnoreName" yaml:"legacyIgnoreName"`
 	// The RADIUS server port (for example 1812).
 	//
 	// This is defined when the On-Prem RADIUS server is configured. Used only for authenticators with type `security_key`.  Conflicts with `provider_json` argument.
@@ -89,4 +89,3 @@ type AuthenticatorConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/authenticator#status Authenticator#status}
 	Status *string `field:"optional" json:"status" yaml:"status"`
 }
-

@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataOktaUserSecurityQuestionsQuestionsOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_DataOktaUserSecurityQuestionsQuestionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataOktaUserSecurityQuestionsQuestionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataOktaUserSecurityQuestionsQuestionsOutputReferenceParameters(
 
 	return nil
 }
-

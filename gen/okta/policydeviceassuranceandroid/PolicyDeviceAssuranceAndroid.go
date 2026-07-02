@@ -15,15 +15,15 @@ type PolicyDeviceAssuranceAndroid interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreatedBy() *string
 	CreatedDate() *string
 	// Experimental.
@@ -42,9 +42,9 @@ type PolicyDeviceAssuranceAndroid interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	Jailbreak() interface{}
-	SetJailbreak(val interface{})
-	JailbreakInput() interface{}
+	Jailbreak() any
+	SetJailbreak(val any)
+	JailbreakInput() any
 	LastUpdate() *string
 	LastUpdatedBy() *string
 	// Experimental.
@@ -65,30 +65,30 @@ type PolicyDeviceAssuranceAndroid interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ScreenlockType() *[]*string
 	SetScreenlockType(val *[]*string)
 	ScreenlockTypeInput() *[]*string
-	SecureHardwarePresent() interface{}
-	SetSecureHardwarePresent(val interface{})
-	SecureHardwarePresentInput() interface{}
+	SecureHardwarePresent() any
+	SetSecureHardwarePresent(val any)
+	SecureHardwarePresentInput() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -106,7 +106,7 @@ type PolicyDeviceAssuranceAndroid interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -118,7 +118,7 @@ type PolicyDeviceAssuranceAndroid interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -133,17 +133,17 @@ type PolicyDeviceAssuranceAndroid interface {
 	ResetOverrideLogicalId()
 	ResetScreenlockType()
 	ResetSecureHardwarePresent()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for PolicyDeviceAssuranceAndroid
@@ -161,8 +161,8 @@ func (j *jsiiProxy_PolicyDeviceAssuranceAndroid) CdktfStack() cdktf.TerraformSta
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceAndroid) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyDeviceAssuranceAndroid) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -171,8 +171,8 @@ func (j *jsiiProxy_PolicyDeviceAssuranceAndroid) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceAndroid) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_PolicyDeviceAssuranceAndroid) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -181,8 +181,8 @@ func (j *jsiiProxy_PolicyDeviceAssuranceAndroid) ConstructNodeMetadata() *map[st
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceAndroid) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyDeviceAssuranceAndroid) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -281,8 +281,8 @@ func (j *jsiiProxy_PolicyDeviceAssuranceAndroid) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceAndroid) Jailbreak() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyDeviceAssuranceAndroid) Jailbreak() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"jailbreak",
@@ -291,8 +291,8 @@ func (j *jsiiProxy_PolicyDeviceAssuranceAndroid) Jailbreak() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceAndroid) JailbreakInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyDeviceAssuranceAndroid) JailbreakInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"jailbreakInput",
@@ -401,8 +401,8 @@ func (j *jsiiProxy_PolicyDeviceAssuranceAndroid) Provider() cdktf.TerraformProvi
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceAndroid) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_PolicyDeviceAssuranceAndroid) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -411,8 +411,8 @@ func (j *jsiiProxy_PolicyDeviceAssuranceAndroid) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceAndroid) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyDeviceAssuranceAndroid) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -441,8 +441,8 @@ func (j *jsiiProxy_PolicyDeviceAssuranceAndroid) ScreenlockTypeInput() *[]*strin
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceAndroid) SecureHardwarePresent() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyDeviceAssuranceAndroid) SecureHardwarePresent() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"secureHardwarePresent",
@@ -451,8 +451,8 @@ func (j *jsiiProxy_PolicyDeviceAssuranceAndroid) SecureHardwarePresent() interfa
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceAndroid) SecureHardwarePresentInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyDeviceAssuranceAndroid) SecureHardwarePresentInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"secureHardwarePresentInput",
@@ -471,8 +471,8 @@ func (j *jsiiProxy_PolicyDeviceAssuranceAndroid) TerraformGeneratorMetadata() *c
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceAndroid) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_PolicyDeviceAssuranceAndroid) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -491,7 +491,6 @@ func (j *jsiiProxy_PolicyDeviceAssuranceAndroid) TerraformResourceType() *string
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_device_assurance_android okta_policy_device_assurance_android} Resource.
 func NewPolicyDeviceAssuranceAndroid(scope constructs.Construct, id *string, config *PolicyDeviceAssuranceAndroidConfig) PolicyDeviceAssuranceAndroid {
 	_init_.Initialize()
@@ -503,7 +502,7 @@ func NewPolicyDeviceAssuranceAndroid(scope constructs.Construct, id *string, con
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.policyDeviceAssuranceAndroid.PolicyDeviceAssuranceAndroid",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -516,12 +515,12 @@ func NewPolicyDeviceAssuranceAndroid_Override(p PolicyDeviceAssuranceAndroid, sc
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.policyDeviceAssuranceAndroid.PolicyDeviceAssuranceAndroid",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceAndroid)SetConnection(val interface{}) {
+func (j *jsiiProxy_PolicyDeviceAssuranceAndroid) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -532,7 +531,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceAndroid)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceAndroid)SetCount(val interface{}) {
+func (j *jsiiProxy_PolicyDeviceAssuranceAndroid) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -543,7 +542,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceAndroid)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceAndroid)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_PolicyDeviceAssuranceAndroid) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -551,7 +550,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceAndroid)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceAndroid)SetDiskEncryptionType(val *[]*string) {
+func (j *jsiiProxy_PolicyDeviceAssuranceAndroid) SetDiskEncryptionType(val *[]*string) {
 	if err := j.validateSetDiskEncryptionTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -562,7 +561,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceAndroid)SetDiskEncryptionType(val *[]*st
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceAndroid)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_PolicyDeviceAssuranceAndroid) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -570,7 +569,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceAndroid)SetForEach(val cdktf.ITerraformI
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceAndroid)SetJailbreak(val interface{}) {
+func (j *jsiiProxy_PolicyDeviceAssuranceAndroid) SetJailbreak(val any) {
 	if err := j.validateSetJailbreakParameters(val); err != nil {
 		panic(err)
 	}
@@ -581,7 +580,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceAndroid)SetJailbreak(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceAndroid)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_PolicyDeviceAssuranceAndroid) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -592,7 +591,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceAndroid)SetLifecycle(val *cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceAndroid)SetName(val *string) {
+func (j *jsiiProxy_PolicyDeviceAssuranceAndroid) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -603,7 +602,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceAndroid)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceAndroid)SetOsVersion(val *string) {
+func (j *jsiiProxy_PolicyDeviceAssuranceAndroid) SetOsVersion(val *string) {
 	if err := j.validateSetOsVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -614,7 +613,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceAndroid)SetOsVersion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceAndroid)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_PolicyDeviceAssuranceAndroid) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -622,7 +621,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceAndroid)SetProvider(val cdktf.TerraformP
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceAndroid)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_PolicyDeviceAssuranceAndroid) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -633,7 +632,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceAndroid)SetProvisioners(val *[]interface
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceAndroid)SetScreenlockType(val *[]*string) {
+func (j *jsiiProxy_PolicyDeviceAssuranceAndroid) SetScreenlockType(val *[]*string) {
 	if err := j.validateSetScreenlockTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -644,7 +643,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceAndroid)SetScreenlockType(val *[]*string
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceAndroid)SetSecureHardwarePresent(val interface{}) {
+func (j *jsiiProxy_PolicyDeviceAssuranceAndroid) SetSecureHardwarePresent(val any) {
 	if err := j.validateSetSecureHardwarePresentParameters(val); err != nil {
 		panic(err)
 	}
@@ -667,7 +666,7 @@ func PolicyDeviceAssuranceAndroid_GenerateConfigForImport(scope constructs.Const
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.policyDeviceAssuranceAndroid.PolicyDeviceAssuranceAndroid",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -691,7 +690,7 @@ func PolicyDeviceAssuranceAndroid_GenerateConfigForImport(scope constructs.Const
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func PolicyDeviceAssuranceAndroid_IsConstruct(x interface{}) *bool {
+func PolicyDeviceAssuranceAndroid_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePolicyDeviceAssuranceAndroid_IsConstructParameters(x); err != nil {
@@ -702,7 +701,7 @@ func PolicyDeviceAssuranceAndroid_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.policyDeviceAssuranceAndroid.PolicyDeviceAssuranceAndroid",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -710,7 +709,7 @@ func PolicyDeviceAssuranceAndroid_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func PolicyDeviceAssuranceAndroid_IsTerraformElement(x interface{}) *bool {
+func PolicyDeviceAssuranceAndroid_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePolicyDeviceAssuranceAndroid_IsTerraformElementParameters(x); err != nil {
@@ -721,7 +720,7 @@ func PolicyDeviceAssuranceAndroid_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.policyDeviceAssuranceAndroid.PolicyDeviceAssuranceAndroid",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -729,7 +728,7 @@ func PolicyDeviceAssuranceAndroid_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func PolicyDeviceAssuranceAndroid_IsTerraformResource(x interface{}) *bool {
+func PolicyDeviceAssuranceAndroid_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePolicyDeviceAssuranceAndroid_IsTerraformResourceParameters(x); err != nil {
@@ -740,7 +739,7 @@ func PolicyDeviceAssuranceAndroid_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.policyDeviceAssuranceAndroid.PolicyDeviceAssuranceAndroid",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -765,31 +764,31 @@ func (p *jsiiProxy_PolicyDeviceAssuranceAndroid) AddMoveTarget(moveTarget *strin
 	_jsii_.InvokeVoid(
 		p,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (p *jsiiProxy_PolicyDeviceAssuranceAndroid) AddOverride(path *string, value interface{}) {
+func (p *jsiiProxy_PolicyDeviceAssuranceAndroid) AddOverride(path *string, value any) {
 	if err := p.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (p *jsiiProxy_PolicyDeviceAssuranceAndroid) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_PolicyDeviceAssuranceAndroid) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -805,7 +804,7 @@ func (p *jsiiProxy_PolicyDeviceAssuranceAndroid) GetBooleanAttribute(terraformAt
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -821,7 +820,7 @@ func (p *jsiiProxy_PolicyDeviceAssuranceAndroid) GetBooleanMapAttribute(terrafor
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -837,7 +836,7 @@ func (p *jsiiProxy_PolicyDeviceAssuranceAndroid) GetListAttribute(terraformAttri
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -853,7 +852,7 @@ func (p *jsiiProxy_PolicyDeviceAssuranceAndroid) GetNumberAttribute(terraformAtt
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -869,7 +868,7 @@ func (p *jsiiProxy_PolicyDeviceAssuranceAndroid) GetNumberListAttribute(terrafor
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -885,7 +884,7 @@ func (p *jsiiProxy_PolicyDeviceAssuranceAndroid) GetNumberMapAttribute(terraform
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -901,7 +900,7 @@ func (p *jsiiProxy_PolicyDeviceAssuranceAndroid) GetStringAttribute(terraformAtt
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -917,15 +916,15 @@ func (p *jsiiProxy_PolicyDeviceAssuranceAndroid) GetStringMapAttribute(terraform
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (p *jsiiProxy_PolicyDeviceAssuranceAndroid) HasResourceMove() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PolicyDeviceAssuranceAndroid) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -944,7 +943,7 @@ func (p *jsiiProxy_PolicyDeviceAssuranceAndroid) ImportFrom(id *string, provider
 	_jsii_.InvokeVoid(
 		p,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -957,7 +956,7 @@ func (p *jsiiProxy_PolicyDeviceAssuranceAndroid) InterpolationForAttribute(terra
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -971,18 +970,18 @@ func (p *jsiiProxy_PolicyDeviceAssuranceAndroid) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (p *jsiiProxy_PolicyDeviceAssuranceAndroid) MoveTo(moveTarget *string, index interface{}) {
+func (p *jsiiProxy_PolicyDeviceAssuranceAndroid) MoveTo(moveTarget *string, index any) {
 	if err := p.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -993,7 +992,7 @@ func (p *jsiiProxy_PolicyDeviceAssuranceAndroid) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1004,7 +1003,7 @@ func (p *jsiiProxy_PolicyDeviceAssuranceAndroid) OverrideLogicalId(newLogicalId 
 	_jsii_.InvokeVoid(
 		p,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1056,8 +1055,8 @@ func (p *jsiiProxy_PolicyDeviceAssuranceAndroid) ResetSecureHardwarePresent() {
 	)
 }
 
-func (p *jsiiProxy_PolicyDeviceAssuranceAndroid) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (p *jsiiProxy_PolicyDeviceAssuranceAndroid) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
@@ -1069,8 +1068,8 @@ func (p *jsiiProxy_PolicyDeviceAssuranceAndroid) SynthesizeAttributes() *map[str
 	return returns
 }
 
-func (p *jsiiProxy_PolicyDeviceAssuranceAndroid) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (p *jsiiProxy_PolicyDeviceAssuranceAndroid) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
@@ -1082,8 +1081,8 @@ func (p *jsiiProxy_PolicyDeviceAssuranceAndroid) SynthesizeHclAttributes() *map[
 	return returns
 }
 
-func (p *jsiiProxy_PolicyDeviceAssuranceAndroid) ToHclTerraform() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PolicyDeviceAssuranceAndroid) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1095,8 +1094,8 @@ func (p *jsiiProxy_PolicyDeviceAssuranceAndroid) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (p *jsiiProxy_PolicyDeviceAssuranceAndroid) ToMetadata() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PolicyDeviceAssuranceAndroid) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1121,8 +1120,8 @@ func (p *jsiiProxy_PolicyDeviceAssuranceAndroid) ToString() *string {
 	return returns
 }
 
-func (p *jsiiProxy_PolicyDeviceAssuranceAndroid) ToTerraform() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PolicyDeviceAssuranceAndroid) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1133,4 +1132,3 @@ func (p *jsiiProxy_PolicyDeviceAssuranceAndroid) ToTerraform() interface{} {
 
 	return returns
 }
-

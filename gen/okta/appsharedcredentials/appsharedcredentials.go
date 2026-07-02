@@ -18,18 +18,18 @@ type AppSharedCredentials interface {
 	AccessibilityLoginRedirectUrl() *string
 	SetAccessibilityLoginRedirectUrl(val *string)
 	AccessibilityLoginRedirectUrlInput() *string
-	AccessibilitySelfService() interface{}
-	SetAccessibilitySelfService(val interface{})
-	AccessibilitySelfServiceInput() interface{}
+	AccessibilitySelfService() any
+	SetAccessibilitySelfService(val any)
+	AccessibilitySelfServiceInput() any
 	AdminNote() *string
 	SetAdminNote(val *string)
 	AdminNoteInput() *string
 	AppLinksJson() *string
 	SetAppLinksJson(val *string)
 	AppLinksJsonInput() *string
-	AutoSubmitToolbar() interface{}
-	SetAutoSubmitToolbar(val interface{})
-	AutoSubmitToolbarInput() interface{}
+	AutoSubmitToolbar() any
+	SetAutoSubmitToolbar(val any)
+	AutoSubmitToolbarInput() any
 	ButtonField() *string
 	SetButtonField(val *string)
 	ButtonFieldInput() *string
@@ -39,15 +39,15 @@ type AppSharedCredentials interface {
 	SetCheckbox(val *string)
 	CheckboxInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -63,12 +63,12 @@ type AppSharedCredentials interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
-	HideIos() interface{}
-	SetHideIos(val interface{})
-	HideIosInput() interface{}
-	HideWeb() interface{}
-	SetHideWeb(val interface{})
-	HideWebInput() interface{}
+	HideIos() any
+	SetHideIos(val any)
+	HideIosInput() any
+	HideWeb() any
+	SetHideWeb(val any)
+	HideWebInput() any
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -97,11 +97,11 @@ type AppSharedCredentials interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RedirectUrl() *string
 	SetRedirectUrl(val *string)
 	RedirectUrlInput() *string
@@ -118,11 +118,11 @@ type AppSharedCredentials interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() AppSharedCredentialsTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Url() *string
 	SetUrl(val *string)
 	UrlInput() *string
@@ -148,9 +148,9 @@ type AppSharedCredentials interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -168,7 +168,7 @@ type AppSharedCredentials interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -180,7 +180,7 @@ type AppSharedCredentials interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -218,17 +218,17 @@ type AppSharedCredentials interface {
 	ResetUserNameTemplatePushStatus()
 	ResetUserNameTemplateSuffix()
 	ResetUserNameTemplateType()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for AppSharedCredentials
@@ -276,8 +276,8 @@ func (j *jsiiProxy_AppSharedCredentials) AccessibilityLoginRedirectUrlInput() *s
 	return returns
 }
 
-func (j *jsiiProxy_AppSharedCredentials) AccessibilitySelfService() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppSharedCredentials) AccessibilitySelfService() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"accessibilitySelfService",
@@ -286,8 +286,8 @@ func (j *jsiiProxy_AppSharedCredentials) AccessibilitySelfService() interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_AppSharedCredentials) AccessibilitySelfServiceInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppSharedCredentials) AccessibilitySelfServiceInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"accessibilitySelfServiceInput",
@@ -336,8 +336,8 @@ func (j *jsiiProxy_AppSharedCredentials) AppLinksJsonInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AppSharedCredentials) AutoSubmitToolbar() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppSharedCredentials) AutoSubmitToolbar() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"autoSubmitToolbar",
@@ -346,8 +346,8 @@ func (j *jsiiProxy_AppSharedCredentials) AutoSubmitToolbar() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AppSharedCredentials) AutoSubmitToolbarInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppSharedCredentials) AutoSubmitToolbarInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"autoSubmitToolbarInput",
@@ -406,8 +406,8 @@ func (j *jsiiProxy_AppSharedCredentials) CheckboxInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AppSharedCredentials) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppSharedCredentials) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -416,8 +416,8 @@ func (j *jsiiProxy_AppSharedCredentials) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AppSharedCredentials) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AppSharedCredentials) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -426,8 +426,8 @@ func (j *jsiiProxy_AppSharedCredentials) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_AppSharedCredentials) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppSharedCredentials) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -496,8 +496,8 @@ func (j *jsiiProxy_AppSharedCredentials) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AppSharedCredentials) HideIos() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppSharedCredentials) HideIos() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"hideIos",
@@ -506,8 +506,8 @@ func (j *jsiiProxy_AppSharedCredentials) HideIos() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AppSharedCredentials) HideIosInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppSharedCredentials) HideIosInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"hideIosInput",
@@ -516,8 +516,8 @@ func (j *jsiiProxy_AppSharedCredentials) HideIosInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AppSharedCredentials) HideWeb() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppSharedCredentials) HideWeb() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"hideWeb",
@@ -526,8 +526,8 @@ func (j *jsiiProxy_AppSharedCredentials) HideWeb() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AppSharedCredentials) HideWebInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppSharedCredentials) HideWebInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"hideWebInput",
@@ -686,8 +686,8 @@ func (j *jsiiProxy_AppSharedCredentials) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_AppSharedCredentials) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_AppSharedCredentials) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -696,8 +696,8 @@ func (j *jsiiProxy_AppSharedCredentials) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AppSharedCredentials) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppSharedCredentials) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -806,8 +806,8 @@ func (j *jsiiProxy_AppSharedCredentials) TerraformGeneratorMetadata() *cdktf.Ter
 	return returns
 }
 
-func (j *jsiiProxy_AppSharedCredentials) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AppSharedCredentials) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -836,8 +836,8 @@ func (j *jsiiProxy_AppSharedCredentials) Timeouts() AppSharedCredentialsTimeouts
 	return returns
 }
 
-func (j *jsiiProxy_AppSharedCredentials) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppSharedCredentials) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -986,7 +986,6 @@ func (j *jsiiProxy_AppSharedCredentials) UserNameTemplateTypeInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_shared_credentials okta_app_shared_credentials} Resource.
 func NewAppSharedCredentials(scope constructs.Construct, id *string, config *AppSharedCredentialsConfig) AppSharedCredentials {
 	_init_.Initialize()
@@ -998,7 +997,7 @@ func NewAppSharedCredentials(scope constructs.Construct, id *string, config *App
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.appSharedCredentials.AppSharedCredentials",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -1011,12 +1010,12 @@ func NewAppSharedCredentials_Override(a AppSharedCredentials, scope constructs.C
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.appSharedCredentials.AppSharedCredentials",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AppSharedCredentials)SetAccessibilityErrorRedirectUrl(val *string) {
+func (j *jsiiProxy_AppSharedCredentials) SetAccessibilityErrorRedirectUrl(val *string) {
 	if err := j.validateSetAccessibilityErrorRedirectUrlParameters(val); err != nil {
 		panic(err)
 	}
@@ -1027,7 +1026,7 @@ func (j *jsiiProxy_AppSharedCredentials)SetAccessibilityErrorRedirectUrl(val *st
 	)
 }
 
-func (j *jsiiProxy_AppSharedCredentials)SetAccessibilityLoginRedirectUrl(val *string) {
+func (j *jsiiProxy_AppSharedCredentials) SetAccessibilityLoginRedirectUrl(val *string) {
 	if err := j.validateSetAccessibilityLoginRedirectUrlParameters(val); err != nil {
 		panic(err)
 	}
@@ -1038,7 +1037,7 @@ func (j *jsiiProxy_AppSharedCredentials)SetAccessibilityLoginRedirectUrl(val *st
 	)
 }
 
-func (j *jsiiProxy_AppSharedCredentials)SetAccessibilitySelfService(val interface{}) {
+func (j *jsiiProxy_AppSharedCredentials) SetAccessibilitySelfService(val any) {
 	if err := j.validateSetAccessibilitySelfServiceParameters(val); err != nil {
 		panic(err)
 	}
@@ -1049,7 +1048,7 @@ func (j *jsiiProxy_AppSharedCredentials)SetAccessibilitySelfService(val interfac
 	)
 }
 
-func (j *jsiiProxy_AppSharedCredentials)SetAdminNote(val *string) {
+func (j *jsiiProxy_AppSharedCredentials) SetAdminNote(val *string) {
 	if err := j.validateSetAdminNoteParameters(val); err != nil {
 		panic(err)
 	}
@@ -1060,7 +1059,7 @@ func (j *jsiiProxy_AppSharedCredentials)SetAdminNote(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppSharedCredentials)SetAppLinksJson(val *string) {
+func (j *jsiiProxy_AppSharedCredentials) SetAppLinksJson(val *string) {
 	if err := j.validateSetAppLinksJsonParameters(val); err != nil {
 		panic(err)
 	}
@@ -1071,7 +1070,7 @@ func (j *jsiiProxy_AppSharedCredentials)SetAppLinksJson(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppSharedCredentials)SetAutoSubmitToolbar(val interface{}) {
+func (j *jsiiProxy_AppSharedCredentials) SetAutoSubmitToolbar(val any) {
 	if err := j.validateSetAutoSubmitToolbarParameters(val); err != nil {
 		panic(err)
 	}
@@ -1082,7 +1081,7 @@ func (j *jsiiProxy_AppSharedCredentials)SetAutoSubmitToolbar(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppSharedCredentials)SetButtonField(val *string) {
+func (j *jsiiProxy_AppSharedCredentials) SetButtonField(val *string) {
 	if err := j.validateSetButtonFieldParameters(val); err != nil {
 		panic(err)
 	}
@@ -1093,7 +1092,7 @@ func (j *jsiiProxy_AppSharedCredentials)SetButtonField(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppSharedCredentials)SetCheckbox(val *string) {
+func (j *jsiiProxy_AppSharedCredentials) SetCheckbox(val *string) {
 	if err := j.validateSetCheckboxParameters(val); err != nil {
 		panic(err)
 	}
@@ -1104,7 +1103,7 @@ func (j *jsiiProxy_AppSharedCredentials)SetCheckbox(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppSharedCredentials)SetConnection(val interface{}) {
+func (j *jsiiProxy_AppSharedCredentials) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1115,7 +1114,7 @@ func (j *jsiiProxy_AppSharedCredentials)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppSharedCredentials)SetCount(val interface{}) {
+func (j *jsiiProxy_AppSharedCredentials) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -1126,7 +1125,7 @@ func (j *jsiiProxy_AppSharedCredentials)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppSharedCredentials)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_AppSharedCredentials) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -1134,7 +1133,7 @@ func (j *jsiiProxy_AppSharedCredentials)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AppSharedCredentials)SetEnduserNote(val *string) {
+func (j *jsiiProxy_AppSharedCredentials) SetEnduserNote(val *string) {
 	if err := j.validateSetEnduserNoteParameters(val); err != nil {
 		panic(err)
 	}
@@ -1145,7 +1144,7 @@ func (j *jsiiProxy_AppSharedCredentials)SetEnduserNote(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppSharedCredentials)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_AppSharedCredentials) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1153,7 +1152,7 @@ func (j *jsiiProxy_AppSharedCredentials)SetForEach(val cdktf.ITerraformIterator)
 	)
 }
 
-func (j *jsiiProxy_AppSharedCredentials)SetHideIos(val interface{}) {
+func (j *jsiiProxy_AppSharedCredentials) SetHideIos(val any) {
 	if err := j.validateSetHideIosParameters(val); err != nil {
 		panic(err)
 	}
@@ -1164,7 +1163,7 @@ func (j *jsiiProxy_AppSharedCredentials)SetHideIos(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppSharedCredentials)SetHideWeb(val interface{}) {
+func (j *jsiiProxy_AppSharedCredentials) SetHideWeb(val any) {
 	if err := j.validateSetHideWebParameters(val); err != nil {
 		panic(err)
 	}
@@ -1175,7 +1174,7 @@ func (j *jsiiProxy_AppSharedCredentials)SetHideWeb(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppSharedCredentials)SetId(val *string) {
+func (j *jsiiProxy_AppSharedCredentials) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1186,7 +1185,7 @@ func (j *jsiiProxy_AppSharedCredentials)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppSharedCredentials)SetLabel(val *string) {
+func (j *jsiiProxy_AppSharedCredentials) SetLabel(val *string) {
 	if err := j.validateSetLabelParameters(val); err != nil {
 		panic(err)
 	}
@@ -1197,7 +1196,7 @@ func (j *jsiiProxy_AppSharedCredentials)SetLabel(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppSharedCredentials)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_AppSharedCredentials) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1208,7 +1207,7 @@ func (j *jsiiProxy_AppSharedCredentials)SetLifecycle(val *cdktf.TerraformResourc
 	)
 }
 
-func (j *jsiiProxy_AppSharedCredentials)SetLogo(val *string) {
+func (j *jsiiProxy_AppSharedCredentials) SetLogo(val *string) {
 	if err := j.validateSetLogoParameters(val); err != nil {
 		panic(err)
 	}
@@ -1219,7 +1218,7 @@ func (j *jsiiProxy_AppSharedCredentials)SetLogo(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppSharedCredentials)SetPasswordField(val *string) {
+func (j *jsiiProxy_AppSharedCredentials) SetPasswordField(val *string) {
 	if err := j.validateSetPasswordFieldParameters(val); err != nil {
 		panic(err)
 	}
@@ -1230,7 +1229,7 @@ func (j *jsiiProxy_AppSharedCredentials)SetPasswordField(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppSharedCredentials)SetPreconfiguredApp(val *string) {
+func (j *jsiiProxy_AppSharedCredentials) SetPreconfiguredApp(val *string) {
 	if err := j.validateSetPreconfiguredAppParameters(val); err != nil {
 		panic(err)
 	}
@@ -1241,7 +1240,7 @@ func (j *jsiiProxy_AppSharedCredentials)SetPreconfiguredApp(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppSharedCredentials)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_AppSharedCredentials) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1249,7 +1248,7 @@ func (j *jsiiProxy_AppSharedCredentials)SetProvider(val cdktf.TerraformProvider)
 	)
 }
 
-func (j *jsiiProxy_AppSharedCredentials)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_AppSharedCredentials) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1260,7 +1259,7 @@ func (j *jsiiProxy_AppSharedCredentials)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppSharedCredentials)SetRedirectUrl(val *string) {
+func (j *jsiiProxy_AppSharedCredentials) SetRedirectUrl(val *string) {
 	if err := j.validateSetRedirectUrlParameters(val); err != nil {
 		panic(err)
 	}
@@ -1271,7 +1270,7 @@ func (j *jsiiProxy_AppSharedCredentials)SetRedirectUrl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppSharedCredentials)SetSharedPassword(val *string) {
+func (j *jsiiProxy_AppSharedCredentials) SetSharedPassword(val *string) {
 	if err := j.validateSetSharedPasswordParameters(val); err != nil {
 		panic(err)
 	}
@@ -1282,7 +1281,7 @@ func (j *jsiiProxy_AppSharedCredentials)SetSharedPassword(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppSharedCredentials)SetSharedUsername(val *string) {
+func (j *jsiiProxy_AppSharedCredentials) SetSharedUsername(val *string) {
 	if err := j.validateSetSharedUsernameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1293,7 +1292,7 @@ func (j *jsiiProxy_AppSharedCredentials)SetSharedUsername(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppSharedCredentials)SetStatus(val *string) {
+func (j *jsiiProxy_AppSharedCredentials) SetStatus(val *string) {
 	if err := j.validateSetStatusParameters(val); err != nil {
 		panic(err)
 	}
@@ -1304,7 +1303,7 @@ func (j *jsiiProxy_AppSharedCredentials)SetStatus(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppSharedCredentials)SetUrl(val *string) {
+func (j *jsiiProxy_AppSharedCredentials) SetUrl(val *string) {
 	if err := j.validateSetUrlParameters(val); err != nil {
 		panic(err)
 	}
@@ -1315,7 +1314,7 @@ func (j *jsiiProxy_AppSharedCredentials)SetUrl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppSharedCredentials)SetUrlRegex(val *string) {
+func (j *jsiiProxy_AppSharedCredentials) SetUrlRegex(val *string) {
 	if err := j.validateSetUrlRegexParameters(val); err != nil {
 		panic(err)
 	}
@@ -1326,7 +1325,7 @@ func (j *jsiiProxy_AppSharedCredentials)SetUrlRegex(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppSharedCredentials)SetUsernameField(val *string) {
+func (j *jsiiProxy_AppSharedCredentials) SetUsernameField(val *string) {
 	if err := j.validateSetUsernameFieldParameters(val); err != nil {
 		panic(err)
 	}
@@ -1337,7 +1336,7 @@ func (j *jsiiProxy_AppSharedCredentials)SetUsernameField(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppSharedCredentials)SetUserNameTemplate(val *string) {
+func (j *jsiiProxy_AppSharedCredentials) SetUserNameTemplate(val *string) {
 	if err := j.validateSetUserNameTemplateParameters(val); err != nil {
 		panic(err)
 	}
@@ -1348,7 +1347,7 @@ func (j *jsiiProxy_AppSharedCredentials)SetUserNameTemplate(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppSharedCredentials)SetUserNameTemplatePushStatus(val *string) {
+func (j *jsiiProxy_AppSharedCredentials) SetUserNameTemplatePushStatus(val *string) {
 	if err := j.validateSetUserNameTemplatePushStatusParameters(val); err != nil {
 		panic(err)
 	}
@@ -1359,7 +1358,7 @@ func (j *jsiiProxy_AppSharedCredentials)SetUserNameTemplatePushStatus(val *strin
 	)
 }
 
-func (j *jsiiProxy_AppSharedCredentials)SetUserNameTemplateSuffix(val *string) {
+func (j *jsiiProxy_AppSharedCredentials) SetUserNameTemplateSuffix(val *string) {
 	if err := j.validateSetUserNameTemplateSuffixParameters(val); err != nil {
 		panic(err)
 	}
@@ -1370,7 +1369,7 @@ func (j *jsiiProxy_AppSharedCredentials)SetUserNameTemplateSuffix(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppSharedCredentials)SetUserNameTemplateType(val *string) {
+func (j *jsiiProxy_AppSharedCredentials) SetUserNameTemplateType(val *string) {
 	if err := j.validateSetUserNameTemplateTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1393,7 +1392,7 @@ func AppSharedCredentials_GenerateConfigForImport(scope constructs.Construct, im
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.appSharedCredentials.AppSharedCredentials",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1417,7 +1416,7 @@ func AppSharedCredentials_GenerateConfigForImport(scope constructs.Construct, im
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func AppSharedCredentials_IsConstruct(x interface{}) *bool {
+func AppSharedCredentials_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAppSharedCredentials_IsConstructParameters(x); err != nil {
@@ -1428,7 +1427,7 @@ func AppSharedCredentials_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.appSharedCredentials.AppSharedCredentials",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1436,7 +1435,7 @@ func AppSharedCredentials_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func AppSharedCredentials_IsTerraformElement(x interface{}) *bool {
+func AppSharedCredentials_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAppSharedCredentials_IsTerraformElementParameters(x); err != nil {
@@ -1447,7 +1446,7 @@ func AppSharedCredentials_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.appSharedCredentials.AppSharedCredentials",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1455,7 +1454,7 @@ func AppSharedCredentials_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func AppSharedCredentials_IsTerraformResource(x interface{}) *bool {
+func AppSharedCredentials_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAppSharedCredentials_IsTerraformResourceParameters(x); err != nil {
@@ -1466,7 +1465,7 @@ func AppSharedCredentials_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.appSharedCredentials.AppSharedCredentials",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1491,31 +1490,31 @@ func (a *jsiiProxy_AppSharedCredentials) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (a *jsiiProxy_AppSharedCredentials) AddOverride(path *string, value interface{}) {
+func (a *jsiiProxy_AppSharedCredentials) AddOverride(path *string, value any) {
 	if err := a.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (a *jsiiProxy_AppSharedCredentials) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AppSharedCredentials) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1531,7 +1530,7 @@ func (a *jsiiProxy_AppSharedCredentials) GetBooleanAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1547,7 +1546,7 @@ func (a *jsiiProxy_AppSharedCredentials) GetBooleanMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1563,7 +1562,7 @@ func (a *jsiiProxy_AppSharedCredentials) GetListAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1579,7 +1578,7 @@ func (a *jsiiProxy_AppSharedCredentials) GetNumberAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1595,7 +1594,7 @@ func (a *jsiiProxy_AppSharedCredentials) GetNumberListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1611,7 +1610,7 @@ func (a *jsiiProxy_AppSharedCredentials) GetNumberMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1627,7 +1626,7 @@ func (a *jsiiProxy_AppSharedCredentials) GetStringAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1643,15 +1642,15 @@ func (a *jsiiProxy_AppSharedCredentials) GetStringMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_AppSharedCredentials) HasResourceMove() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AppSharedCredentials) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1670,7 +1669,7 @@ func (a *jsiiProxy_AppSharedCredentials) ImportFrom(id *string, provider cdktf.T
 	_jsii_.InvokeVoid(
 		a,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1683,7 +1682,7 @@ func (a *jsiiProxy_AppSharedCredentials) InterpolationForAttribute(terraformAttr
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1697,18 +1696,18 @@ func (a *jsiiProxy_AppSharedCredentials) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (a *jsiiProxy_AppSharedCredentials) MoveTo(moveTarget *string, index interface{}) {
+func (a *jsiiProxy_AppSharedCredentials) MoveTo(moveTarget *string, index any) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1719,7 +1718,7 @@ func (a *jsiiProxy_AppSharedCredentials) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1730,7 +1729,7 @@ func (a *jsiiProxy_AppSharedCredentials) OverrideLogicalId(newLogicalId *string)
 	_jsii_.InvokeVoid(
 		a,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1741,7 +1740,7 @@ func (a *jsiiProxy_AppSharedCredentials) PutTimeouts(value *AppSharedCredentials
 	_jsii_.InvokeVoid(
 		a,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1969,8 +1968,8 @@ func (a *jsiiProxy_AppSharedCredentials) ResetUserNameTemplateType() {
 	)
 }
 
-func (a *jsiiProxy_AppSharedCredentials) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AppSharedCredentials) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1982,8 +1981,8 @@ func (a *jsiiProxy_AppSharedCredentials) SynthesizeAttributes() *map[string]inte
 	return returns
 }
 
-func (a *jsiiProxy_AppSharedCredentials) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AppSharedCredentials) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1995,8 +1994,8 @@ func (a *jsiiProxy_AppSharedCredentials) SynthesizeHclAttributes() *map[string]i
 	return returns
 }
 
-func (a *jsiiProxy_AppSharedCredentials) ToHclTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AppSharedCredentials) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -2008,8 +2007,8 @@ func (a *jsiiProxy_AppSharedCredentials) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_AppSharedCredentials) ToMetadata() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AppSharedCredentials) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -2034,8 +2033,8 @@ func (a *jsiiProxy_AppSharedCredentials) ToString() *string {
 	return returns
 }
 
-func (a *jsiiProxy_AppSharedCredentials) ToTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AppSharedCredentials) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -2046,4 +2045,3 @@ func (a *jsiiProxy_AppSharedCredentials) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -98,7 +98,7 @@ func (t *jsiiProxy_TemplateSmsTranslationsOutputReference) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_TemplateSmsTranslationsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_TemplateSmsTranslationsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_TemplateSmsTranslationsOutputReference) validateSetComplexObj
 	return nil
 }
 
-func (j *jsiiProxy_TemplateSmsTranslationsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_TemplateSmsTranslationsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewTemplateSmsTranslationsOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

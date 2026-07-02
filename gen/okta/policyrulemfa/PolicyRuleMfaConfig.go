@@ -6,9 +6,9 @@ import (
 
 type PolicyRuleMfaConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type PolicyRuleMfaConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Policy Rule Name.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_rule_mfa#name PolicyRuleMfa#name}
@@ -26,11 +26,11 @@ type PolicyRuleMfaConfig struct {
 	// app_exclude block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_rule_mfa#app_exclude PolicyRuleMfa#app_exclude}
-	AppExclude interface{} `field:"optional" json:"appExclude" yaml:"appExclude"`
+	AppExclude any `field:"optional" json:"appExclude" yaml:"appExclude"`
 	// app_include block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_rule_mfa#app_include PolicyRuleMfa#app_include}
-	AppInclude interface{} `field:"optional" json:"appInclude" yaml:"appInclude"`
+	AppInclude any `field:"optional" json:"appInclude" yaml:"appInclude"`
 	// When a user should be prompted for MFA. It can be `CHALLENGE`, `LOGIN`, or `NEVER`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_rule_mfa#enroll PolicyRuleMfa#enroll}
@@ -71,4 +71,3 @@ type PolicyRuleMfaConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_rule_mfa#users_excluded PolicyRuleMfa#users_excluded}
 	UsersExcluded *[]*string `field:"optional" json:"usersExcluded" yaml:"usersExcluded"`
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.dataOktaEmailCustomizations.DataOktaEmailCustomizations",
-		reflect.TypeOf((*DataOktaEmailCustomizations)(nil)).Elem(),
+		reflect.TypeFor[DataOktaEmailCustomizations](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "brandId", GoGetter: "BrandId"},
@@ -53,7 +53,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataOktaEmailCustomizations{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -61,15 +61,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.dataOktaEmailCustomizations.DataOktaEmailCustomizationsConfig",
-		reflect.TypeOf((*DataOktaEmailCustomizationsConfig)(nil)).Elem(),
+		reflect.TypeFor[DataOktaEmailCustomizationsConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.dataOktaEmailCustomizations.DataOktaEmailCustomizationsEmailCustomizations",
-		reflect.TypeOf((*DataOktaEmailCustomizationsEmailCustomizations)(nil)).Elem(),
+		reflect.TypeFor[DataOktaEmailCustomizationsEmailCustomizations](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.dataOktaEmailCustomizations.DataOktaEmailCustomizationsEmailCustomizationsList",
-		reflect.TypeOf((*DataOktaEmailCustomizationsEmailCustomizationsList)(nil)).Elem(),
+		reflect.TypeFor[DataOktaEmailCustomizationsEmailCustomizationsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -82,7 +82,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataOktaEmailCustomizationsEmailCustomizationsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -90,7 +90,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.dataOktaEmailCustomizations.DataOktaEmailCustomizationsEmailCustomizationsOutputReference",
-		reflect.TypeOf((*DataOktaEmailCustomizationsEmailCustomizationsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataOktaEmailCustomizationsEmailCustomizationsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "body", GoGetter: "Body"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -120,7 +120,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataOktaEmailCustomizationsEmailCustomizationsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

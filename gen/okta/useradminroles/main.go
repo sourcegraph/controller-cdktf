@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.userAdminRoles.UserAdminRoles",
-		reflect.TypeOf((*UserAdminRoles)(nil)).Elem(),
+		reflect.TypeFor[UserAdminRoles](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -63,7 +63,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userId", GoGetter: "UserId"},
 			_jsii_.MemberProperty{JsiiProperty: "userIdInput", GoGetter: "UserIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_UserAdminRoles{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -71,6 +71,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.userAdminRoles.UserAdminRolesConfig",
-		reflect.TypeOf((*UserAdminRolesConfig)(nil)).Elem(),
+		reflect.TypeFor[UserAdminRolesConfig](),
 	)
 }

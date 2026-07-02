@@ -21,15 +21,15 @@ type EventHook interface {
 	SetChannel(val *map[string]*string)
 	ChannelInput() *map[string]*string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -46,7 +46,7 @@ type EventHook interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Headers() EventHookHeadersList
-	HeadersInput() interface{}
+	HeadersInput() any
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -64,27 +64,27 @@ type EventHook interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Status() *string
 	SetStatus(val *string)
 	StatusInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -102,7 +102,7 @@ type EventHook interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -114,14 +114,14 @@ type EventHook interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutHeaders(value interface{})
+	PutHeaders(value any)
 	ResetAuth()
 	ResetHeaders()
 	ResetId()
@@ -129,17 +129,17 @@ type EventHook interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetStatus()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for EventHook
@@ -197,8 +197,8 @@ func (j *jsiiProxy_EventHook) ChannelInput() *map[string]*string {
 	return returns
 }
 
-func (j *jsiiProxy_EventHook) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EventHook) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -207,8 +207,8 @@ func (j *jsiiProxy_EventHook) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EventHook) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_EventHook) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -217,8 +217,8 @@ func (j *jsiiProxy_EventHook) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EventHook) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EventHook) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -297,8 +297,8 @@ func (j *jsiiProxy_EventHook) Headers() EventHookHeadersList {
 	return returns
 }
 
-func (j *jsiiProxy_EventHook) HeadersInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EventHook) HeadersInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"headersInput",
@@ -377,8 +377,8 @@ func (j *jsiiProxy_EventHook) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_EventHook) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_EventHook) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -387,8 +387,8 @@ func (j *jsiiProxy_EventHook) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EventHook) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EventHook) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -427,8 +427,8 @@ func (j *jsiiProxy_EventHook) TerraformGeneratorMetadata() *cdktf.TerraformProvi
 	return returns
 }
 
-func (j *jsiiProxy_EventHook) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_EventHook) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -447,7 +447,6 @@ func (j *jsiiProxy_EventHook) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/event_hook okta_event_hook} Resource.
 func NewEventHook(scope constructs.Construct, id *string, config *EventHookConfig) EventHook {
 	_init_.Initialize()
@@ -459,7 +458,7 @@ func NewEventHook(scope constructs.Construct, id *string, config *EventHookConfi
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.eventHook.EventHook",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -472,12 +471,12 @@ func NewEventHook_Override(e EventHook, scope constructs.Construct, id *string, 
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.eventHook.EventHook",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		e,
 	)
 }
 
-func (j *jsiiProxy_EventHook)SetAuth(val *map[string]*string) {
+func (j *jsiiProxy_EventHook) SetAuth(val *map[string]*string) {
 	if err := j.validateSetAuthParameters(val); err != nil {
 		panic(err)
 	}
@@ -488,7 +487,7 @@ func (j *jsiiProxy_EventHook)SetAuth(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_EventHook)SetChannel(val *map[string]*string) {
+func (j *jsiiProxy_EventHook) SetChannel(val *map[string]*string) {
 	if err := j.validateSetChannelParameters(val); err != nil {
 		panic(err)
 	}
@@ -499,7 +498,7 @@ func (j *jsiiProxy_EventHook)SetChannel(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_EventHook)SetConnection(val interface{}) {
+func (j *jsiiProxy_EventHook) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -510,7 +509,7 @@ func (j *jsiiProxy_EventHook)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EventHook)SetCount(val interface{}) {
+func (j *jsiiProxy_EventHook) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -521,7 +520,7 @@ func (j *jsiiProxy_EventHook)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EventHook)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_EventHook) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -529,7 +528,7 @@ func (j *jsiiProxy_EventHook)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_EventHook)SetEvents(val *[]*string) {
+func (j *jsiiProxy_EventHook) SetEvents(val *[]*string) {
 	if err := j.validateSetEventsParameters(val); err != nil {
 		panic(err)
 	}
@@ -540,7 +539,7 @@ func (j *jsiiProxy_EventHook)SetEvents(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_EventHook)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_EventHook) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -548,7 +547,7 @@ func (j *jsiiProxy_EventHook)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_EventHook)SetId(val *string) {
+func (j *jsiiProxy_EventHook) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -559,7 +558,7 @@ func (j *jsiiProxy_EventHook)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EventHook)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_EventHook) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -570,7 +569,7 @@ func (j *jsiiProxy_EventHook)SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	)
 }
 
-func (j *jsiiProxy_EventHook)SetName(val *string) {
+func (j *jsiiProxy_EventHook) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -581,7 +580,7 @@ func (j *jsiiProxy_EventHook)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EventHook)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_EventHook) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -589,7 +588,7 @@ func (j *jsiiProxy_EventHook)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_EventHook)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_EventHook) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -600,7 +599,7 @@ func (j *jsiiProxy_EventHook)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EventHook)SetStatus(val *string) {
+func (j *jsiiProxy_EventHook) SetStatus(val *string) {
 	if err := j.validateSetStatusParameters(val); err != nil {
 		panic(err)
 	}
@@ -623,7 +622,7 @@ func EventHook_GenerateConfigForImport(scope constructs.Construct, importToId *s
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.eventHook.EventHook",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -647,7 +646,7 @@ func EventHook_GenerateConfigForImport(scope constructs.Construct, importToId *s
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func EventHook_IsConstruct(x interface{}) *bool {
+func EventHook_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEventHook_IsConstructParameters(x); err != nil {
@@ -658,7 +657,7 @@ func EventHook_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.eventHook.EventHook",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -666,7 +665,7 @@ func EventHook_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func EventHook_IsTerraformElement(x interface{}) *bool {
+func EventHook_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEventHook_IsTerraformElementParameters(x); err != nil {
@@ -677,7 +676,7 @@ func EventHook_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.eventHook.EventHook",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -685,7 +684,7 @@ func EventHook_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func EventHook_IsTerraformResource(x interface{}) *bool {
+func EventHook_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEventHook_IsTerraformResourceParameters(x); err != nil {
@@ -696,7 +695,7 @@ func EventHook_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.eventHook.EventHook",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -721,31 +720,31 @@ func (e *jsiiProxy_EventHook) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (e *jsiiProxy_EventHook) AddOverride(path *string, value interface{}) {
+func (e *jsiiProxy_EventHook) AddOverride(path *string, value any) {
 	if err := e.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (e *jsiiProxy_EventHook) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_EventHook) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -761,7 +760,7 @@ func (e *jsiiProxy_EventHook) GetBooleanAttribute(terraformAttribute *string) cd
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -777,7 +776,7 @@ func (e *jsiiProxy_EventHook) GetBooleanMapAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -793,7 +792,7 @@ func (e *jsiiProxy_EventHook) GetListAttribute(terraformAttribute *string) *[]*s
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -809,7 +808,7 @@ func (e *jsiiProxy_EventHook) GetNumberAttribute(terraformAttribute *string) *fl
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -825,7 +824,7 @@ func (e *jsiiProxy_EventHook) GetNumberListAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -841,7 +840,7 @@ func (e *jsiiProxy_EventHook) GetNumberMapAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -857,7 +856,7 @@ func (e *jsiiProxy_EventHook) GetStringAttribute(terraformAttribute *string) *st
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -873,15 +872,15 @@ func (e *jsiiProxy_EventHook) GetStringMapAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (e *jsiiProxy_EventHook) HasResourceMove() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EventHook) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -900,7 +899,7 @@ func (e *jsiiProxy_EventHook) ImportFrom(id *string, provider cdktf.TerraformPro
 	_jsii_.InvokeVoid(
 		e,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -913,7 +912,7 @@ func (e *jsiiProxy_EventHook) InterpolationForAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -927,18 +926,18 @@ func (e *jsiiProxy_EventHook) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (e *jsiiProxy_EventHook) MoveTo(moveTarget *string, index interface{}) {
+func (e *jsiiProxy_EventHook) MoveTo(moveTarget *string, index any) {
 	if err := e.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -949,7 +948,7 @@ func (e *jsiiProxy_EventHook) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -960,18 +959,18 @@ func (e *jsiiProxy_EventHook) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (e *jsiiProxy_EventHook) PutHeaders(value interface{}) {
+func (e *jsiiProxy_EventHook) PutHeaders(value any) {
 	if err := e.validatePutHeadersParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"putHeaders",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1015,8 +1014,8 @@ func (e *jsiiProxy_EventHook) ResetStatus() {
 	)
 }
 
-func (e *jsiiProxy_EventHook) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_EventHook) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -1028,8 +1027,8 @@ func (e *jsiiProxy_EventHook) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (e *jsiiProxy_EventHook) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_EventHook) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -1041,8 +1040,8 @@ func (e *jsiiProxy_EventHook) SynthesizeHclAttributes() *map[string]interface{} 
 	return returns
 }
 
-func (e *jsiiProxy_EventHook) ToHclTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EventHook) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1054,8 +1053,8 @@ func (e *jsiiProxy_EventHook) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (e *jsiiProxy_EventHook) ToMetadata() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EventHook) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1080,8 +1079,8 @@ func (e *jsiiProxy_EventHook) ToString() *string {
 	return returns
 }
 
-func (e *jsiiProxy_EventHook) ToTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EventHook) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1092,4 +1091,3 @@ func (e *jsiiProxy_EventHook) ToTerraform() interface{} {
 
 	return returns
 }
-

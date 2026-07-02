@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.appGroupAssignments.AppGroupAssignments",
-		reflect.TypeOf((*AppGroupAssignments)(nil)).Elem(),
+		reflect.TypeFor[AppGroupAssignments](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -61,7 +61,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppGroupAssignments{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -69,15 +69,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.appGroupAssignments.AppGroupAssignmentsConfig",
-		reflect.TypeOf((*AppGroupAssignmentsConfig)(nil)).Elem(),
+		reflect.TypeFor[AppGroupAssignmentsConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.appGroupAssignments.AppGroupAssignmentsGroup",
-		reflect.TypeOf((*AppGroupAssignmentsGroup)(nil)).Elem(),
+		reflect.TypeFor[AppGroupAssignmentsGroup](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.appGroupAssignments.AppGroupAssignmentsGroupList",
-		reflect.TypeOf((*AppGroupAssignmentsGroupList)(nil)).Elem(),
+		reflect.TypeFor[AppGroupAssignmentsGroupList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -91,7 +91,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppGroupAssignmentsGroupList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -99,7 +99,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.appGroupAssignments.AppGroupAssignmentsGroupOutputReference",
-		reflect.TypeOf((*AppGroupAssignmentsGroupOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppGroupAssignmentsGroupOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -131,7 +131,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppGroupAssignmentsGroupOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

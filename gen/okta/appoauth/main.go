@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.appOauth.AppOauth",
-		reflect.TypeOf((*AppOauth)(nil)).Elem(),
+		reflect.TypeFor[AppOauth](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessibilityErrorRedirectUrl", GoGetter: "AccessibilityErrorRedirectUrl"},
 			_jsii_.MemberProperty{JsiiProperty: "accessibilityErrorRedirectUrlInput", GoGetter: "AccessibilityErrorRedirectUrlInput"},
@@ -202,7 +202,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "wildcardRedirect", GoGetter: "WildcardRedirect"},
 			_jsii_.MemberProperty{JsiiProperty: "wildcardRedirectInput", GoGetter: "WildcardRedirectInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppOauth{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -210,15 +210,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.appOauth.AppOauthConfig",
-		reflect.TypeOf((*AppOauthConfig)(nil)).Elem(),
+		reflect.TypeFor[AppOauthConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.appOauth.AppOauthGroupsClaim",
-		reflect.TypeOf((*AppOauthGroupsClaim)(nil)).Elem(),
+		reflect.TypeFor[AppOauthGroupsClaim](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.appOauth.AppOauthGroupsClaimOutputReference",
-		reflect.TypeOf((*AppOauthGroupsClaimOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppOauthGroupsClaimOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -252,7 +252,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppOauthGroupsClaimOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -260,11 +260,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.appOauth.AppOauthJwks",
-		reflect.TypeOf((*AppOauthJwks)(nil)).Elem(),
+		reflect.TypeFor[AppOauthJwks](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.appOauth.AppOauthJwksList",
-		reflect.TypeOf((*AppOauthJwksList)(nil)).Elem(),
+		reflect.TypeFor[AppOauthJwksList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -278,7 +278,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppOauthJwksList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -286,7 +286,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.appOauth.AppOauthJwksOutputReference",
-		reflect.TypeOf((*AppOauthJwksOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppOauthJwksOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -326,7 +326,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "y", GoGetter: "Y"},
 			_jsii_.MemberProperty{JsiiProperty: "yInput", GoGetter: "YInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppOauthJwksOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -334,11 +334,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.appOauth.AppOauthTimeouts",
-		reflect.TypeOf((*AppOauthTimeouts)(nil)).Elem(),
+		reflect.TypeFor[AppOauthTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.appOauth.AppOauthTimeoutsOutputReference",
-		reflect.TypeOf((*AppOauthTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppOauthTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -371,7 +371,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppOauthTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

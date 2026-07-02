@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.dataOktaOrgMetadata.DataOktaOrgMetadata",
-		reflect.TypeOf((*DataOktaOrgMetadata)(nil)).Elem(),
+		reflect.TypeFor[DataOktaOrgMetadata](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -49,7 +49,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataOktaOrgMetadata{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -57,15 +57,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.dataOktaOrgMetadata.DataOktaOrgMetadataConfig",
-		reflect.TypeOf((*DataOktaOrgMetadataConfig)(nil)).Elem(),
+		reflect.TypeFor[DataOktaOrgMetadataConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.dataOktaOrgMetadata.DataOktaOrgMetadataDomains",
-		reflect.TypeOf((*DataOktaOrgMetadataDomains)(nil)).Elem(),
+		reflect.TypeFor[DataOktaOrgMetadataDomains](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.dataOktaOrgMetadata.DataOktaOrgMetadataDomainsOutputReference",
-		reflect.TypeOf((*DataOktaOrgMetadataDomainsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataOktaOrgMetadataDomainsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "alternate", GoGetter: "Alternate"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -91,7 +91,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataOktaOrgMetadataDomainsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -99,11 +99,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.dataOktaOrgMetadata.DataOktaOrgMetadataSettings",
-		reflect.TypeOf((*DataOktaOrgMetadataSettings)(nil)).Elem(),
+		reflect.TypeFor[DataOktaOrgMetadataSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.dataOktaOrgMetadata.DataOktaOrgMetadataSettingsOutputReference",
-		reflect.TypeOf((*DataOktaOrgMetadataSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataOktaOrgMetadataSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "analyticsCollectionEnabled", GoGetter: "AnalyticsCollectionEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "bugReportingEnabled", GoGetter: "BugReportingEnabled"},
@@ -130,7 +130,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataOktaOrgMetadataSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

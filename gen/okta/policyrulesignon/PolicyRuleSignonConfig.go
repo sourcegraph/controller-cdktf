@@ -6,9 +6,9 @@ import (
 
 type PolicyRuleSignonConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type PolicyRuleSignonConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Policy Rule Name.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_rule_signon#name PolicyRuleSignon#name}
@@ -38,7 +38,7 @@ type PolicyRuleSignonConfig struct {
 	// factor_sequence block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_rule_signon#factor_sequence PolicyRuleSignon#factor_sequence}
-	FactorSequence interface{} `field:"optional" json:"factorSequence" yaml:"factorSequence"`
+	FactorSequence any `field:"optional" json:"factorSequence" yaml:"factorSequence"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_rule_signon#id PolicyRuleSignon#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -65,11 +65,11 @@ type PolicyRuleSignonConfig struct {
 	// Remember MFA device. Default: `false`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_rule_signon#mfa_remember_device PolicyRuleSignon#mfa_remember_device}
-	MfaRememberDevice interface{} `field:"optional" json:"mfaRememberDevice" yaml:"mfaRememberDevice"`
+	MfaRememberDevice any `field:"optional" json:"mfaRememberDevice" yaml:"mfaRememberDevice"`
 	// Require MFA. Default: `false`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_rule_signon#mfa_required PolicyRuleSignon#mfa_required}
-	MfaRequired interface{} `field:"optional" json:"mfaRequired" yaml:"mfaRequired"`
+	MfaRequired any `field:"optional" json:"mfaRequired" yaml:"mfaRequired"`
 	// Network selection mode: `ANYWHERE`, `ZONE`, `ON_NETWORK`, or `OFF_NETWORK`. Default: `ANYWHERE`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_rule_signon#network_connection PolicyRuleSignon#network_connection}
@@ -115,7 +115,7 @@ type PolicyRuleSignonConfig struct {
 	// Whether session cookies will last across browser sessions. Okta Administrators can never have persistent session cookies. Default: `false`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_rule_signon#session_persistent PolicyRuleSignon#session_persistent}
-	SessionPersistent interface{} `field:"optional" json:"sessionPersistent" yaml:"sessionPersistent"`
+	SessionPersistent any `field:"optional" json:"sessionPersistent" yaml:"sessionPersistent"`
 	// Policy Rule Status: `ACTIVE` or `INACTIVE`. Default: `ACTIVE`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_rule_signon#status PolicyRuleSignon#status}
@@ -125,4 +125,3 @@ type PolicyRuleSignonConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_rule_signon#users_excluded PolicyRuleSignon#users_excluded}
 	UsersExcluded *[]*string `field:"optional" json:"usersExcluded" yaml:"usersExcluded"`
 }
-

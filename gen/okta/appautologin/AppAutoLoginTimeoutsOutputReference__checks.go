@@ -98,7 +98,7 @@ func (a *jsiiProxy_AppAutoLoginTimeoutsOutputReference) validateResolveParameter
 	return nil
 }
 
-func (j *jsiiProxy_AppAutoLoginTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppAutoLoginTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_AppAutoLoginTimeoutsOutputReference) validateSetCreateParamet
 	return nil
 }
 
-func (j *jsiiProxy_AppAutoLoginTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AppAutoLoginTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewAppAutoLoginTimeoutsOutputReferenceParameters(terraformResource 
 
 	return nil
 }
-

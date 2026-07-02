@@ -19,7 +19,7 @@ func (l *jsiiProxy_LogStream) validateAddMoveTargetParameters(moveTarget *string
 	return nil
 }
 
-func (l *jsiiProxy_LogStream) validateAddOverrideParameters(path *string, value interface{}) error {
+func (l *jsiiProxy_LogStream) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (l *jsiiProxy_LogStream) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LogStream) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (l *jsiiProxy_LogStream) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateLogStream_GenerateConfigForImportParameters(scope constructs.Constr
 	return nil
 }
 
-func validateLogStream_IsConstructParameters(x interface{}) error {
+func validateLogStream_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateLogStream_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateLogStream_IsTerraformElementParameters(x interface{}) error {
+func validateLogStream_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateLogStream_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateLogStream_IsTerraformResourceParameters(x interface{}) error {
+func validateLogStream_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateLogStream_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_LogStream) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_LogStream) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_LogStream) validateSetConnectionParameters(val interface{}) e
 	return nil
 }
 
-func (j *jsiiProxy_LogStream) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_LogStream) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -361,7 +361,7 @@ func (j *jsiiProxy_LogStream) validateSetNameParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_LogStream) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_LogStream) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -441,4 +441,3 @@ func validateNewLogStreamParameters(scope constructs.Construct, id *string, conf
 
 	return nil
 }
-

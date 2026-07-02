@@ -98,7 +98,7 @@ func (e *jsiiProxy_EventHookHeadersOutputReference) validateResolveParameters(_c
 	return nil
 }
 
-func (j *jsiiProxy_EventHookHeadersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EventHookHeadersOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_EventHookHeadersOutputReference) validateSetComplexObjectIsFr
 	return nil
 }
 
-func (j *jsiiProxy_EventHookHeadersOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EventHookHeadersOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewEventHookHeadersOutputReferenceParameters(terraformResource cdkt
 
 	return nil
 }
-

@@ -6,9 +6,9 @@ import (
 
 type GroupRoleConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GroupRoleConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// ID of group to attach admin roles to.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/group_role#group_id GroupRole#group_id}
@@ -47,7 +47,7 @@ type GroupRoleConfig struct {
 	// These admins also won't have access to contact Okta Support and open support cases on behalf of your org.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/group_role#disable_notifications GroupRole#disable_notifications}
-	DisableNotifications interface{} `field:"optional" json:"disableNotifications" yaml:"disableNotifications"`
+	DisableNotifications any `field:"optional" json:"disableNotifications" yaml:"disableNotifications"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/group_role#id GroupRole#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -72,4 +72,3 @@ type GroupRoleConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/group_role#target_group_list GroupRole#target_group_list}
 	TargetGroupList *[]*string `field:"optional" json:"targetGroupList" yaml:"targetGroupList"`
 }
-

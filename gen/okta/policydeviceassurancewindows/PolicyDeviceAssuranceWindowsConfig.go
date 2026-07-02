@@ -6,9 +6,9 @@ import (
 
 type PolicyDeviceAssuranceWindowsConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type PolicyDeviceAssuranceWindowsConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Name of the device assurance policy.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_device_assurance_windows#name PolicyDeviceAssuranceWindows#name}
@@ -38,11 +38,11 @@ type PolicyDeviceAssuranceWindowsConfig struct {
 	// Is the device secure with hardware in the device assurance policy.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_device_assurance_windows#secure_hardware_present PolicyDeviceAssuranceWindows#secure_hardware_present}
-	SecureHardwarePresent interface{} `field:"optional" json:"secureHardwarePresent" yaml:"secureHardwarePresent"`
+	SecureHardwarePresent any `field:"optional" json:"secureHardwarePresent" yaml:"secureHardwarePresent"`
 	// Check to include third party signal provider.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_device_assurance_windows#third_party_signal_providers PolicyDeviceAssuranceWindows#third_party_signal_providers}
-	ThirdPartySignalProviders interface{} `field:"optional" json:"thirdPartySignalProviders" yaml:"thirdPartySignalProviders"`
+	ThirdPartySignalProviders any `field:"optional" json:"thirdPartySignalProviders" yaml:"thirdPartySignalProviders"`
 	// Third party signal provider minimum browser version.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_device_assurance_windows#tpsp_browser_version PolicyDeviceAssuranceWindows#tpsp_browser_version}
@@ -50,11 +50,11 @@ type PolicyDeviceAssuranceWindowsConfig struct {
 	// Third party signal provider builtin dns client enable.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_device_assurance_windows#tpsp_builtin_dns_client_enabled PolicyDeviceAssuranceWindows#tpsp_builtin_dns_client_enabled}
-	TpspBuiltinDnsClientEnabled interface{} `field:"optional" json:"tpspBuiltinDnsClientEnabled" yaml:"tpspBuiltinDnsClientEnabled"`
+	TpspBuiltinDnsClientEnabled any `field:"optional" json:"tpspBuiltinDnsClientEnabled" yaml:"tpspBuiltinDnsClientEnabled"`
 	// Third party signal provider chrome remote desktop app blocked.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_device_assurance_windows#tpsp_chrome_remote_desktop_app_blocked PolicyDeviceAssuranceWindows#tpsp_chrome_remote_desktop_app_blocked}
-	TpspChromeRemoteDesktopAppBlocked interface{} `field:"optional" json:"tpspChromeRemoteDesktopAppBlocked" yaml:"tpspChromeRemoteDesktopAppBlocked"`
+	TpspChromeRemoteDesktopAppBlocked any `field:"optional" json:"tpspChromeRemoteDesktopAppBlocked" yaml:"tpspChromeRemoteDesktopAppBlocked"`
 	// Third party signal provider crowdstrike agent id.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_device_assurance_windows#tpsp_crowd_strike_agent_id PolicyDeviceAssuranceWindows#tpsp_crowd_strike_agent_id}
@@ -70,7 +70,7 @@ type PolicyDeviceAssuranceWindowsConfig struct {
 	// Third party signal provider disk encrypted.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_device_assurance_windows#tpsp_disk_encrypted PolicyDeviceAssuranceWindows#tpsp_disk_encrypted}
-	TpspDiskEncrypted interface{} `field:"optional" json:"tpspDiskEncrypted" yaml:"tpspDiskEncrypted"`
+	TpspDiskEncrypted any `field:"optional" json:"tpspDiskEncrypted" yaml:"tpspDiskEncrypted"`
 	// Third party signal provider key trust level.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_device_assurance_windows#tpsp_key_trust_level PolicyDeviceAssuranceWindows#tpsp_key_trust_level}
@@ -78,7 +78,7 @@ type PolicyDeviceAssuranceWindowsConfig struct {
 	// Third party signal provider os firewall.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_device_assurance_windows#tpsp_os_firewall PolicyDeviceAssuranceWindows#tpsp_os_firewall}
-	TpspOsFirewall interface{} `field:"optional" json:"tpspOsFirewall" yaml:"tpspOsFirewall"`
+	TpspOsFirewall any `field:"optional" json:"tpspOsFirewall" yaml:"tpspOsFirewall"`
 	// Third party signal provider minimum os version.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_device_assurance_windows#tpsp_os_version PolicyDeviceAssuranceWindows#tpsp_os_version}
@@ -90,7 +90,7 @@ type PolicyDeviceAssuranceWindowsConfig struct {
 	// Third party signal provider realtime url check mode.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_device_assurance_windows#tpsp_realtime_url_check_mode PolicyDeviceAssuranceWindows#tpsp_realtime_url_check_mode}
-	TpspRealtimeUrlCheckMode interface{} `field:"optional" json:"tpspRealtimeUrlCheckMode" yaml:"tpspRealtimeUrlCheckMode"`
+	TpspRealtimeUrlCheckMode any `field:"optional" json:"tpspRealtimeUrlCheckMode" yaml:"tpspRealtimeUrlCheckMode"`
 	// Third party signal provider safe browsing protection level.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_device_assurance_windows#tpsp_safe_browsing_protection_level PolicyDeviceAssuranceWindows#tpsp_safe_browsing_protection_level}
@@ -98,19 +98,19 @@ type PolicyDeviceAssuranceWindowsConfig struct {
 	// Third party signal provider screen lock secure.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_device_assurance_windows#tpsp_screen_lock_secured PolicyDeviceAssuranceWindows#tpsp_screen_lock_secured}
-	TpspScreenLockSecured interface{} `field:"optional" json:"tpspScreenLockSecured" yaml:"tpspScreenLockSecured"`
+	TpspScreenLockSecured any `field:"optional" json:"tpspScreenLockSecured" yaml:"tpspScreenLockSecured"`
 	// Third party signal provider secure boot enabled.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_device_assurance_windows#tpsp_secure_boot_enabled PolicyDeviceAssuranceWindows#tpsp_secure_boot_enabled}
-	TpspSecureBootEnabled interface{} `field:"optional" json:"tpspSecureBootEnabled" yaml:"tpspSecureBootEnabled"`
+	TpspSecureBootEnabled any `field:"optional" json:"tpspSecureBootEnabled" yaml:"tpspSecureBootEnabled"`
 	// Third party signal provider site isolation enabled.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_device_assurance_windows#tpsp_site_isolation_enabled PolicyDeviceAssuranceWindows#tpsp_site_isolation_enabled}
-	TpspSiteIsolationEnabled interface{} `field:"optional" json:"tpspSiteIsolationEnabled" yaml:"tpspSiteIsolationEnabled"`
+	TpspSiteIsolationEnabled any `field:"optional" json:"tpspSiteIsolationEnabled" yaml:"tpspSiteIsolationEnabled"`
 	// Third party signal provider third party blocking enabled.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_device_assurance_windows#tpsp_third_party_blocking_enabled PolicyDeviceAssuranceWindows#tpsp_third_party_blocking_enabled}
-	TpspThirdPartyBlockingEnabled interface{} `field:"optional" json:"tpspThirdPartyBlockingEnabled" yaml:"tpspThirdPartyBlockingEnabled"`
+	TpspThirdPartyBlockingEnabled any `field:"optional" json:"tpspThirdPartyBlockingEnabled" yaml:"tpspThirdPartyBlockingEnabled"`
 	// Third party signal provider windows machine domain.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_device_assurance_windows#tpsp_windows_machine_domain PolicyDeviceAssuranceWindows#tpsp_windows_machine_domain}
@@ -120,4 +120,3 @@ type PolicyDeviceAssuranceWindowsConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_device_assurance_windows#tpsp_windows_user_domain PolicyDeviceAssuranceWindows#tpsp_windows_user_domain}
 	TpspWindowsUserDomain *string `field:"optional" json:"tpspWindowsUserDomain" yaml:"tpspWindowsUserDomain"`
 }
-

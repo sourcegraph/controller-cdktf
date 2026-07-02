@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.policyDeviceAssuranceMacos.PolicyDeviceAssuranceMacos",
-		reflect.TypeOf((*PolicyDeviceAssuranceMacos)(nil)).Elem(),
+		reflect.TypeFor[PolicyDeviceAssuranceMacos](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -115,7 +115,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "tpspSiteIsolationEnabled", GoGetter: "TpspSiteIsolationEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "tpspSiteIsolationEnabledInput", GoGetter: "TpspSiteIsolationEnabledInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PolicyDeviceAssuranceMacos{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -123,6 +123,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.policyDeviceAssuranceMacos.PolicyDeviceAssuranceMacosConfig",
-		reflect.TypeOf((*PolicyDeviceAssuranceMacosConfig)(nil)).Elem(),
+		reflect.TypeFor[PolicyDeviceAssuranceMacosConfig](),
 	)
 }

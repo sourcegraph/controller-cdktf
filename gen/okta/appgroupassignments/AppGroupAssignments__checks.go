@@ -19,7 +19,7 @@ func (a *jsiiProxy_AppGroupAssignments) validateAddMoveTargetParameters(moveTarg
 	return nil
 }
 
-func (a *jsiiProxy_AppGroupAssignments) validateAddOverrideParameters(path *string, value interface{}) error {
+func (a *jsiiProxy_AppGroupAssignments) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (a *jsiiProxy_AppGroupAssignments) validateMoveFromIdParameters(id *string)
 	return nil
 }
 
-func (a *jsiiProxy_AppGroupAssignments) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (a *jsiiProxy_AppGroupAssignments) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (a *jsiiProxy_AppGroupAssignments) validateOverrideLogicalIdParameters(newL
 	return nil
 }
 
-func (a *jsiiProxy_AppGroupAssignments) validatePutGroupParameters(value interface{}) error {
+func (a *jsiiProxy_AppGroupAssignments) validatePutGroupParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -251,7 +251,7 @@ func validateAppGroupAssignments_GenerateConfigForImportParameters(scope constru
 	return nil
 }
 
-func validateAppGroupAssignments_IsConstructParameters(x interface{}) error {
+func validateAppGroupAssignments_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -259,7 +259,7 @@ func validateAppGroupAssignments_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateAppGroupAssignments_IsTerraformElementParameters(x interface{}) error {
+func validateAppGroupAssignments_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -267,7 +267,7 @@ func validateAppGroupAssignments_IsTerraformElementParameters(x interface{}) err
 	return nil
 }
 
-func validateAppGroupAssignments_IsTerraformResourceParameters(x interface{}) error {
+func validateAppGroupAssignments_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -283,7 +283,7 @@ func (j *jsiiProxy_AppGroupAssignments) validateSetAppIdParameters(val *string) 
 	return nil
 }
 
-func (j *jsiiProxy_AppGroupAssignments) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_AppGroupAssignments) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -316,7 +316,7 @@ func (j *jsiiProxy_AppGroupAssignments) validateSetConnectionParameters(val inte
 	return nil
 }
 
-func (j *jsiiProxy_AppGroupAssignments) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_AppGroupAssignments) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -389,7 +389,7 @@ func (j *jsiiProxy_AppGroupAssignments) validateSetLifecycleParameters(val *cdkt
 	return nil
 }
 
-func (j *jsiiProxy_AppGroupAssignments) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_AppGroupAssignments) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -453,4 +453,3 @@ func validateNewAppGroupAssignmentsParameters(scope constructs.Construct, id *st
 
 	return nil
 }
-

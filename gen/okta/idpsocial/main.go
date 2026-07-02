@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.idpSocial.IdpSocial",
-		reflect.TypeOf((*IdpSocial)(nil)).Elem(),
+		reflect.TypeFor[IdpSocial](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountLinkAction", GoGetter: "AccountLinkAction"},
 			_jsii_.MemberProperty{JsiiProperty: "accountLinkActionInput", GoGetter: "AccountLinkActionInput"},
@@ -137,7 +137,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "usernameTemplate", GoGetter: "UsernameTemplate"},
 			_jsii_.MemberProperty{JsiiProperty: "usernameTemplateInput", GoGetter: "UsernameTemplateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IdpSocial{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -145,6 +145,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.idpSocial.IdpSocialConfig",
-		reflect.TypeOf((*IdpSocialConfig)(nil)).Elem(),
+		reflect.TypeFor[IdpSocialConfig](),
 	)
 }

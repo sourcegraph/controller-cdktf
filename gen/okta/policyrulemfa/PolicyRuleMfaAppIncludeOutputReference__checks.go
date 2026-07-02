@@ -98,7 +98,7 @@ func (p *jsiiProxy_PolicyRuleMfaAppIncludeOutputReference) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_PolicyRuleMfaAppIncludeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PolicyRuleMfaAppIncludeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_PolicyRuleMfaAppIncludeOutputReference) validateSetIdParamete
 	return nil
 }
 
-func (j *jsiiProxy_PolicyRuleMfaAppIncludeOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PolicyRuleMfaAppIncludeOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewPolicyRuleMfaAppIncludeOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

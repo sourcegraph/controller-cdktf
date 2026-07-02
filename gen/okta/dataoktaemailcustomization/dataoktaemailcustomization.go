@@ -19,11 +19,11 @@ type DataOktaEmailCustomization interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CustomizationId() *string
 	SetCustomizationId(val *string)
 	CustomizationIdInput() *string
@@ -54,7 +54,7 @@ type DataOktaEmailCustomization interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Subject() *string
 	TemplateName() *string
 	SetTemplateName(val *string)
@@ -62,13 +62,13 @@ type DataOktaEmailCustomization interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -93,18 +93,18 @@ type DataOktaEmailCustomization interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataOktaEmailCustomization
@@ -152,8 +152,8 @@ func (j *jsiiProxy_DataOktaEmailCustomization) CdktfStack() cdktf.TerraformStack
 	return returns
 }
 
-func (j *jsiiProxy_DataOktaEmailCustomization) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataOktaEmailCustomization) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -162,8 +162,8 @@ func (j *jsiiProxy_DataOktaEmailCustomization) ConstructNodeMetadata() *map[stri
 	return returns
 }
 
-func (j *jsiiProxy_DataOktaEmailCustomization) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataOktaEmailCustomization) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -302,8 +302,8 @@ func (j *jsiiProxy_DataOktaEmailCustomization) Provider() cdktf.TerraformProvide
 	return returns
 }
 
-func (j *jsiiProxy_DataOktaEmailCustomization) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataOktaEmailCustomization) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -352,8 +352,8 @@ func (j *jsiiProxy_DataOktaEmailCustomization) TerraformGeneratorMetadata() *cdk
 	return returns
 }
 
-func (j *jsiiProxy_DataOktaEmailCustomization) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataOktaEmailCustomization) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -372,7 +372,6 @@ func (j *jsiiProxy_DataOktaEmailCustomization) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/email_customization okta_email_customization} Data Source.
 func NewDataOktaEmailCustomization(scope constructs.Construct, id *string, config *DataOktaEmailCustomizationConfig) DataOktaEmailCustomization {
 	_init_.Initialize()
@@ -384,7 +383,7 @@ func NewDataOktaEmailCustomization(scope constructs.Construct, id *string, confi
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.dataOktaEmailCustomization.DataOktaEmailCustomization",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -397,12 +396,12 @@ func NewDataOktaEmailCustomization_Override(d DataOktaEmailCustomization, scope 
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.dataOktaEmailCustomization.DataOktaEmailCustomization",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataOktaEmailCustomization)SetBrandId(val *string) {
+func (j *jsiiProxy_DataOktaEmailCustomization) SetBrandId(val *string) {
 	if err := j.validateSetBrandIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -413,7 +412,7 @@ func (j *jsiiProxy_DataOktaEmailCustomization)SetBrandId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataOktaEmailCustomization)SetCount(val interface{}) {
+func (j *jsiiProxy_DataOktaEmailCustomization) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -424,7 +423,7 @@ func (j *jsiiProxy_DataOktaEmailCustomization)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataOktaEmailCustomization)SetCustomizationId(val *string) {
+func (j *jsiiProxy_DataOktaEmailCustomization) SetCustomizationId(val *string) {
 	if err := j.validateSetCustomizationIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -435,7 +434,7 @@ func (j *jsiiProxy_DataOktaEmailCustomization)SetCustomizationId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataOktaEmailCustomization)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataOktaEmailCustomization) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -443,7 +442,7 @@ func (j *jsiiProxy_DataOktaEmailCustomization)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataOktaEmailCustomization)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataOktaEmailCustomization) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -451,7 +450,7 @@ func (j *jsiiProxy_DataOktaEmailCustomization)SetForEach(val cdktf.ITerraformIte
 	)
 }
 
-func (j *jsiiProxy_DataOktaEmailCustomization)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataOktaEmailCustomization) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -462,7 +461,7 @@ func (j *jsiiProxy_DataOktaEmailCustomization)SetLifecycle(val *cdktf.TerraformR
 	)
 }
 
-func (j *jsiiProxy_DataOktaEmailCustomization)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataOktaEmailCustomization) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -470,7 +469,7 @@ func (j *jsiiProxy_DataOktaEmailCustomization)SetProvider(val cdktf.TerraformPro
 	)
 }
 
-func (j *jsiiProxy_DataOktaEmailCustomization)SetTemplateName(val *string) {
+func (j *jsiiProxy_DataOktaEmailCustomization) SetTemplateName(val *string) {
 	if err := j.validateSetTemplateNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -493,7 +492,7 @@ func DataOktaEmailCustomization_GenerateConfigForImport(scope constructs.Constru
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.dataOktaEmailCustomization.DataOktaEmailCustomization",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -517,7 +516,7 @@ func DataOktaEmailCustomization_GenerateConfigForImport(scope constructs.Constru
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataOktaEmailCustomization_IsConstruct(x interface{}) *bool {
+func DataOktaEmailCustomization_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataOktaEmailCustomization_IsConstructParameters(x); err != nil {
@@ -528,7 +527,7 @@ func DataOktaEmailCustomization_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.dataOktaEmailCustomization.DataOktaEmailCustomization",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -536,7 +535,7 @@ func DataOktaEmailCustomization_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataOktaEmailCustomization_IsTerraformDataSource(x interface{}) *bool {
+func DataOktaEmailCustomization_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataOktaEmailCustomization_IsTerraformDataSourceParameters(x); err != nil {
@@ -547,7 +546,7 @@ func DataOktaEmailCustomization_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.dataOktaEmailCustomization.DataOktaEmailCustomization",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -555,7 +554,7 @@ func DataOktaEmailCustomization_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataOktaEmailCustomization_IsTerraformElement(x interface{}) *bool {
+func DataOktaEmailCustomization_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataOktaEmailCustomization_IsTerraformElementParameters(x); err != nil {
@@ -566,7 +565,7 @@ func DataOktaEmailCustomization_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.dataOktaEmailCustomization.DataOktaEmailCustomization",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -584,27 +583,27 @@ func DataOktaEmailCustomization_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataOktaEmailCustomization) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataOktaEmailCustomization) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataOktaEmailCustomization) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataOktaEmailCustomization) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -620,7 +619,7 @@ func (d *jsiiProxy_DataOktaEmailCustomization) GetBooleanAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -636,7 +635,7 @@ func (d *jsiiProxy_DataOktaEmailCustomization) GetBooleanMapAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -652,7 +651,7 @@ func (d *jsiiProxy_DataOktaEmailCustomization) GetListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -668,7 +667,7 @@ func (d *jsiiProxy_DataOktaEmailCustomization) GetNumberAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -684,7 +683,7 @@ func (d *jsiiProxy_DataOktaEmailCustomization) GetNumberListAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -700,7 +699,7 @@ func (d *jsiiProxy_DataOktaEmailCustomization) GetNumberMapAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -716,7 +715,7 @@ func (d *jsiiProxy_DataOktaEmailCustomization) GetStringAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -732,7 +731,7 @@ func (d *jsiiProxy_DataOktaEmailCustomization) GetStringMapAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -748,7 +747,7 @@ func (d *jsiiProxy_DataOktaEmailCustomization) InterpolationForAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -762,7 +761,7 @@ func (d *jsiiProxy_DataOktaEmailCustomization) OverrideLogicalId(newLogicalId *s
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -774,8 +773,8 @@ func (d *jsiiProxy_DataOktaEmailCustomization) ResetOverrideLogicalId() {
 	)
 }
 
-func (d *jsiiProxy_DataOktaEmailCustomization) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataOktaEmailCustomization) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -787,8 +786,8 @@ func (d *jsiiProxy_DataOktaEmailCustomization) SynthesizeAttributes() *map[strin
 	return returns
 }
 
-func (d *jsiiProxy_DataOktaEmailCustomization) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataOktaEmailCustomization) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -800,8 +799,8 @@ func (d *jsiiProxy_DataOktaEmailCustomization) SynthesizeHclAttributes() *map[st
 	return returns
 }
 
-func (d *jsiiProxy_DataOktaEmailCustomization) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataOktaEmailCustomization) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -813,8 +812,8 @@ func (d *jsiiProxy_DataOktaEmailCustomization) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataOktaEmailCustomization) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataOktaEmailCustomization) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -839,8 +838,8 @@ func (d *jsiiProxy_DataOktaEmailCustomization) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataOktaEmailCustomization) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataOktaEmailCustomization) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -851,4 +850,3 @@ func (d *jsiiProxy_DataOktaEmailCustomization) ToTerraform() interface{} {
 
 	return returns
 }
-

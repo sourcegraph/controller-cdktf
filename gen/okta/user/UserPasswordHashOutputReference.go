@@ -15,9 +15,9 @@ type UserPasswordHashOutputReference interface {
 	AlgorithmInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -55,7 +55,7 @@ type UserPasswordHashOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -81,7 +81,7 @@ type UserPasswordHashOutputReference interface {
 	ResetWorkFactor()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -114,8 +114,8 @@ func (j *jsiiProxy_UserPasswordHashOutputReference) AlgorithmInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_UserPasswordHashOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_UserPasswordHashOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -264,7 +264,6 @@ func (j *jsiiProxy_UserPasswordHashOutputReference) WorkFactorInput() *float64 {
 	return returns
 }
 
-
 func NewUserPasswordHashOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) UserPasswordHashOutputReference {
 	_init_.Initialize()
 
@@ -275,7 +274,7 @@ func NewUserPasswordHashOutputReference(terraformResource cdktf.IInterpolatingPa
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.user.UserPasswordHashOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -287,12 +286,12 @@ func NewUserPasswordHashOutputReference_Override(u UserPasswordHashOutputReferen
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.user.UserPasswordHashOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		u,
 	)
 }
 
-func (j *jsiiProxy_UserPasswordHashOutputReference)SetAlgorithm(val *string) {
+func (j *jsiiProxy_UserPasswordHashOutputReference) SetAlgorithm(val *string) {
 	if err := j.validateSetAlgorithmParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_UserPasswordHashOutputReference)SetAlgorithm(val *string) {
 	)
 }
 
-func (j *jsiiProxy_UserPasswordHashOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_UserPasswordHashOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_UserPasswordHashOutputReference)SetComplexObjectIndex(val int
 	)
 }
 
-func (j *jsiiProxy_UserPasswordHashOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_UserPasswordHashOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_UserPasswordHashOutputReference)SetComplexObjectIsFromSet(val
 	)
 }
 
-func (j *jsiiProxy_UserPasswordHashOutputReference)SetInternalValue(val *UserPasswordHash) {
+func (j *jsiiProxy_UserPasswordHashOutputReference) SetInternalValue(val *UserPasswordHash) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_UserPasswordHashOutputReference)SetInternalValue(val *UserPas
 	)
 }
 
-func (j *jsiiProxy_UserPasswordHashOutputReference)SetSalt(val *string) {
+func (j *jsiiProxy_UserPasswordHashOutputReference) SetSalt(val *string) {
 	if err := j.validateSetSaltParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_UserPasswordHashOutputReference)SetSalt(val *string) {
 	)
 }
 
-func (j *jsiiProxy_UserPasswordHashOutputReference)SetSaltOrder(val *string) {
+func (j *jsiiProxy_UserPasswordHashOutputReference) SetSaltOrder(val *string) {
 	if err := j.validateSetSaltOrderParameters(val); err != nil {
 		panic(err)
 	}
@@ -358,7 +357,7 @@ func (j *jsiiProxy_UserPasswordHashOutputReference)SetSaltOrder(val *string) {
 	)
 }
 
-func (j *jsiiProxy_UserPasswordHashOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_UserPasswordHashOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -369,7 +368,7 @@ func (j *jsiiProxy_UserPasswordHashOutputReference)SetTerraformAttribute(val *st
 	)
 }
 
-func (j *jsiiProxy_UserPasswordHashOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_UserPasswordHashOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -380,7 +379,7 @@ func (j *jsiiProxy_UserPasswordHashOutputReference)SetTerraformResource(val cdkt
 	)
 }
 
-func (j *jsiiProxy_UserPasswordHashOutputReference)SetValue(val *string) {
+func (j *jsiiProxy_UserPasswordHashOutputReference) SetValue(val *string) {
 	if err := j.validateSetValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -391,7 +390,7 @@ func (j *jsiiProxy_UserPasswordHashOutputReference)SetValue(val *string) {
 	)
 }
 
-func (j *jsiiProxy_UserPasswordHashOutputReference)SetWorkFactor(val *float64) {
+func (j *jsiiProxy_UserPasswordHashOutputReference) SetWorkFactor(val *float64) {
 	if err := j.validateSetWorkFactorParameters(val); err != nil {
 		panic(err)
 	}
@@ -415,16 +414,16 @@ func (u *jsiiProxy_UserPasswordHashOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (u *jsiiProxy_UserPasswordHashOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (u *jsiiProxy_UserPasswordHashOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := u.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		u,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -440,7 +439,7 @@ func (u *jsiiProxy_UserPasswordHashOutputReference) GetBooleanAttribute(terrafor
 	_jsii_.Invoke(
 		u,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -456,7 +455,7 @@ func (u *jsiiProxy_UserPasswordHashOutputReference) GetBooleanMapAttribute(terra
 	_jsii_.Invoke(
 		u,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -472,7 +471,7 @@ func (u *jsiiProxy_UserPasswordHashOutputReference) GetListAttribute(terraformAt
 	_jsii_.Invoke(
 		u,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -488,7 +487,7 @@ func (u *jsiiProxy_UserPasswordHashOutputReference) GetNumberAttribute(terraform
 	_jsii_.Invoke(
 		u,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -504,7 +503,7 @@ func (u *jsiiProxy_UserPasswordHashOutputReference) GetNumberListAttribute(terra
 	_jsii_.Invoke(
 		u,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -520,7 +519,7 @@ func (u *jsiiProxy_UserPasswordHashOutputReference) GetNumberMapAttribute(terraf
 	_jsii_.Invoke(
 		u,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -536,7 +535,7 @@ func (u *jsiiProxy_UserPasswordHashOutputReference) GetStringAttribute(terraform
 	_jsii_.Invoke(
 		u,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -552,7 +551,7 @@ func (u *jsiiProxy_UserPasswordHashOutputReference) GetStringMapAttribute(terraf
 	_jsii_.Invoke(
 		u,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -581,7 +580,7 @@ func (u *jsiiProxy_UserPasswordHashOutputReference) InterpolationForAttribute(pr
 	_jsii_.Invoke(
 		u,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -612,16 +611,16 @@ func (u *jsiiProxy_UserPasswordHashOutputReference) ResetWorkFactor() {
 	)
 }
 
-func (u *jsiiProxy_UserPasswordHashOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (u *jsiiProxy_UserPasswordHashOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := u.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		u,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -640,4 +639,3 @@ func (u *jsiiProxy_UserPasswordHashOutputReference) ToString() *string {
 
 	return returns
 }
-

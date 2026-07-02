@@ -98,7 +98,7 @@ func (a *jsiiProxy_AppSharedCredentialsTimeoutsOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_AppSharedCredentialsTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppSharedCredentialsTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_AppSharedCredentialsTimeoutsOutputReference) validateSetCreat
 	return nil
 }
 
-func (j *jsiiProxy_AppSharedCredentialsTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AppSharedCredentialsTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewAppSharedCredentialsTimeoutsOutputReferenceParameters(terraformR
 
 	return nil
 }
-

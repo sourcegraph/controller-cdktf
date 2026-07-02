@@ -6,9 +6,9 @@ import (
 
 type DataOktaAppSamlConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,11 +18,11 @@ type DataOktaAppSamlConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Search only ACTIVE applications.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/app_saml#active_only DataOktaAppSaml#active_only}
-	ActiveOnly interface{} `field:"optional" json:"activeOnly" yaml:"activeOnly"`
+	ActiveOnly any `field:"optional" json:"activeOnly" yaml:"activeOnly"`
 	// Id of application to retrieve, conflicts with label and label_prefix.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/app_saml#id DataOktaAppSaml#id}
@@ -48,14 +48,13 @@ type DataOktaAppSamlConfig struct {
 	// Denotes whether the request is compressed or not.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/app_saml#request_compressed DataOktaAppSaml#request_compressed}
-	RequestCompressed interface{} `field:"optional" json:"requestCompressed" yaml:"requestCompressed"`
+	RequestCompressed any `field:"optional" json:"requestCompressed" yaml:"requestCompressed"`
 	// Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/app_saml#skip_groups DataOktaAppSaml#skip_groups}
-	SkipGroups interface{} `field:"optional" json:"skipGroups" yaml:"skipGroups"`
+	SkipGroups any `field:"optional" json:"skipGroups" yaml:"skipGroups"`
 	// Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/app_saml#skip_users DataOktaAppSaml#skip_users}
-	SkipUsers interface{} `field:"optional" json:"skipUsers" yaml:"skipUsers"`
+	SkipUsers any `field:"optional" json:"skipUsers" yaml:"skipUsers"`
 }
-

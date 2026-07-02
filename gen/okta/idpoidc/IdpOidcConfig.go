@@ -6,9 +6,9 @@ import (
 
 type IdpOidcConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type IdpOidcConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The method of making an authorization request. It can be set to `HTTP-POST` or `HTTP-REDIRECT`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/idp_oidc#authorization_binding IdpOidc#authorization_binding}
@@ -109,11 +109,11 @@ type IdpOidcConfig struct {
 	// Require Proof Key for Code Exchange (PKCE) for additional verification key rotation mode. See: https://developer.okta.com/docs/reference/api/idps/#oauth-2-0-and-openid-connect-client-object.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/idp_oidc#pkce_required IdpOidc#pkce_required}
-	PkceRequired interface{} `field:"optional" json:"pkceRequired" yaml:"pkceRequired"`
+	PkceRequired any `field:"optional" json:"pkceRequired" yaml:"pkceRequired"`
 	// Determines if the IdP should act as a source of truth for user profile attributes.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/idp_oidc#profile_master IdpOidc#profile_master}
-	ProfileMaster interface{} `field:"optional" json:"profileMaster" yaml:"profileMaster"`
+	ProfileMaster any `field:"optional" json:"profileMaster" yaml:"profileMaster"`
 	// The type of protocol to use. It can be `OIDC` or `OAUTH2`. Default: `OIDC`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/idp_oidc#protocol_type IdpOidc#protocol_type}
@@ -163,4 +163,3 @@ type IdpOidcConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/idp_oidc#username_template IdpOidc#username_template}
 	UsernameTemplate *string `field:"optional" json:"usernameTemplate" yaml:"usernameTemplate"`
 }
-

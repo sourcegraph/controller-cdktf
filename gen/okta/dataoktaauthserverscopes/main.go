@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.dataOktaAuthServerScopes.DataOktaAuthServerScopes",
-		reflect.TypeOf((*DataOktaAuthServerScopes)(nil)).Elem(),
+		reflect.TypeFor[DataOktaAuthServerScopes](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "authServerId", GoGetter: "AuthServerId"},
@@ -51,7 +51,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataOktaAuthServerScopes{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -59,15 +59,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.dataOktaAuthServerScopes.DataOktaAuthServerScopesConfig",
-		reflect.TypeOf((*DataOktaAuthServerScopesConfig)(nil)).Elem(),
+		reflect.TypeFor[DataOktaAuthServerScopesConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.dataOktaAuthServerScopes.DataOktaAuthServerScopesScopes",
-		reflect.TypeOf((*DataOktaAuthServerScopesScopes)(nil)).Elem(),
+		reflect.TypeFor[DataOktaAuthServerScopesScopes](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.dataOktaAuthServerScopes.DataOktaAuthServerScopesScopesList",
-		reflect.TypeOf((*DataOktaAuthServerScopesScopesList)(nil)).Elem(),
+		reflect.TypeFor[DataOktaAuthServerScopesScopesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -80,7 +80,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataOktaAuthServerScopesScopesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -88,7 +88,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.dataOktaAuthServerScopes.DataOktaAuthServerScopesScopesOutputReference",
-		reflect.TypeOf((*DataOktaAuthServerScopesScopesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataOktaAuthServerScopesScopesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -121,7 +121,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataOktaAuthServerScopesScopesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

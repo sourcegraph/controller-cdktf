@@ -6,9 +6,9 @@ import (
 
 type AppSamlConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type AppSamlConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The Application's display name.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_saml#label AppSaml#label}
@@ -34,7 +34,7 @@ type AppSamlConfig struct {
 	// Enable self service. Default is `false`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_saml#accessibility_self_service AppSaml#accessibility_self_service}
-	AccessibilitySelfService interface{} `field:"optional" json:"accessibilitySelfService" yaml:"accessibilitySelfService"`
+	AccessibilitySelfService any `field:"optional" json:"accessibilitySelfService" yaml:"accessibilitySelfService"`
 	// An array of ACS endpoints. You can configure a maximum of 100 endpoints.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_saml#acs_endpoints AppSaml#acs_endpoints}
@@ -54,11 +54,11 @@ type AppSamlConfig struct {
 	// Determines whether the SAML assertion is digitally signed.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_saml#assertion_signed AppSaml#assertion_signed}
-	AssertionSigned interface{} `field:"optional" json:"assertionSigned" yaml:"assertionSigned"`
+	AssertionSigned any `field:"optional" json:"assertionSigned" yaml:"assertionSigned"`
 	// attribute_statements block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_saml#attribute_statements AppSaml#attribute_statements}
-	AttributeStatements interface{} `field:"optional" json:"attributeStatements" yaml:"attributeStatements"`
+	AttributeStatements any `field:"optional" json:"attributeStatements" yaml:"attributeStatements"`
 	// Audience Restriction.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_saml#audience AppSaml#audience}
@@ -76,7 +76,7 @@ type AppSamlConfig struct {
 	// Display auto submit toolbar. Default is: `false`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_saml#auto_submit_toolbar AppSaml#auto_submit_toolbar}
-	AutoSubmitToolbar interface{} `field:"optional" json:"autoSubmitToolbar" yaml:"autoSubmitToolbar"`
+	AutoSubmitToolbar any `field:"optional" json:"autoSubmitToolbar" yaml:"autoSubmitToolbar"`
 	// Identifies a specific application resource in an IDP initiated SSO scenario.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_saml#default_relay_state AppSaml#default_relay_state}
@@ -96,15 +96,15 @@ type AppSamlConfig struct {
 	// Do not display application icon on mobile app.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_saml#hide_ios AppSaml#hide_ios}
-	HideIos interface{} `field:"optional" json:"hideIos" yaml:"hideIos"`
+	HideIos any `field:"optional" json:"hideIos" yaml:"hideIos"`
 	// Do not display application icon to users.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_saml#hide_web AppSaml#hide_web}
-	HideWeb interface{} `field:"optional" json:"hideWeb" yaml:"hideWeb"`
+	HideWeb any `field:"optional" json:"hideWeb" yaml:"hideWeb"`
 	// Prompt user to re-authenticate if SP asks for it. Default is: `false`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_saml#honor_force_authn AppSaml#honor_force_authn}
-	HonorForceAuthn interface{} `field:"optional" json:"honorForceAuthn" yaml:"honorForceAuthn"`
+	HonorForceAuthn any `field:"optional" json:"honorForceAuthn" yaml:"honorForceAuthn"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_saml#id AppSaml#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -117,7 +117,7 @@ type AppSamlConfig struct {
 	// *Early Access Property*. Enable Federation Broker Mode.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_saml#implicit_assignment AppSaml#implicit_assignment}
-	ImplicitAssignment interface{} `field:"optional" json:"implicitAssignment" yaml:"implicitAssignment"`
+	ImplicitAssignment any `field:"optional" json:"implicitAssignment" yaml:"implicitAssignment"`
 	// Saml Inline Hook setting.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_saml#inline_hook_id AppSaml#inline_hook_id}
@@ -158,15 +158,15 @@ type AppSamlConfig struct {
 	// Denotes whether the request is compressed or not.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_saml#request_compressed AppSaml#request_compressed}
-	RequestCompressed interface{} `field:"optional" json:"requestCompressed" yaml:"requestCompressed"`
+	RequestCompressed any `field:"optional" json:"requestCompressed" yaml:"requestCompressed"`
 	// Determines whether the SAML auth response message is digitally signed.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_saml#response_signed AppSaml#response_signed}
-	ResponseSigned interface{} `field:"optional" json:"responseSigned" yaml:"responseSigned"`
+	ResponseSigned any `field:"optional" json:"responseSigned" yaml:"responseSigned"`
 	// SAML Signed Request enabled.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_saml#saml_signed_request_enabled AppSaml#saml_signed_request_enabled}
-	SamlSignedRequestEnabled interface{} `field:"optional" json:"samlSignedRequestEnabled" yaml:"samlSignedRequestEnabled"`
+	SamlSignedRequestEnabled any `field:"optional" json:"samlSignedRequestEnabled" yaml:"samlSignedRequestEnabled"`
 	// SAML version for the app's sign-on mode. Valid values are: `2.0` or `1.1`. Default is `2.0`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_saml#saml_version AppSaml#saml_version}
@@ -230,4 +230,3 @@ type AppSamlConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_saml#user_name_template_type AppSaml#user_name_template_type}
 	UserNameTemplateType *string `field:"optional" json:"userNameTemplateType" yaml:"userNameTemplateType"`
 }
-

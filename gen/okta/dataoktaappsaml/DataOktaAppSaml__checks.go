@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataOktaAppSaml) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataOktaAppSaml) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataOktaAppSaml_GenerateConfigForImportParameters(scope constructs.
 	return nil
 }
 
-func validateDataOktaAppSaml_IsConstructParameters(x interface{}) error {
+func validateDataOktaAppSaml_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataOktaAppSaml_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateDataOktaAppSaml_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataOktaAppSaml_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataOktaAppSaml_IsTerraformDataSourceParameters(x interface{}) erro
 	return nil
 }
 
-func validateDataOktaAppSaml_IsTerraformElementParameters(x interface{}) error {
+func validateDataOktaAppSaml_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func validateDataOktaAppSaml_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_DataOktaAppSaml) validateSetActiveOnlyParameters(val interface{}) error {
+func (j *jsiiProxy_DataOktaAppSaml) validateSetActiveOnlyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -171,7 +171,7 @@ func (j *jsiiProxy_DataOktaAppSaml) validateSetActiveOnlyParameters(val interfac
 	return nil
 }
 
-func (j *jsiiProxy_DataOktaAppSaml) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataOktaAppSaml) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -260,7 +260,7 @@ func (j *jsiiProxy_DataOktaAppSaml) validateSetLifecycleParameters(val *cdktf.Te
 	return nil
 }
 
-func (j *jsiiProxy_DataOktaAppSaml) validateSetRequestCompressedParameters(val interface{}) error {
+func (j *jsiiProxy_DataOktaAppSaml) validateSetRequestCompressedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -280,7 +280,7 @@ func (j *jsiiProxy_DataOktaAppSaml) validateSetRequestCompressedParameters(val i
 	return nil
 }
 
-func (j *jsiiProxy_DataOktaAppSaml) validateSetSkipGroupsParameters(val interface{}) error {
+func (j *jsiiProxy_DataOktaAppSaml) validateSetSkipGroupsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -300,7 +300,7 @@ func (j *jsiiProxy_DataOktaAppSaml) validateSetSkipGroupsParameters(val interfac
 	return nil
 }
 
-func (j *jsiiProxy_DataOktaAppSaml) validateSetSkipUsersParameters(val interface{}) error {
+func (j *jsiiProxy_DataOktaAppSaml) validateSetSkipUsersParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -335,4 +335,3 @@ func validateNewDataOktaAppSamlParameters(scope constructs.Construct, id *string
 
 	return nil
 }
-

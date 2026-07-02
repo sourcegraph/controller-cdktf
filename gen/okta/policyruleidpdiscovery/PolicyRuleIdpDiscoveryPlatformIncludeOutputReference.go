@@ -12,9 +12,9 @@ type PolicyRuleIdpDiscoveryPlatformIncludeOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,8 +27,8 @@ type PolicyRuleIdpDiscoveryPlatformIncludeOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	OsExpression() *string
 	SetOsExpression(val *string)
 	OsExpressionInput() *string
@@ -49,7 +49,7 @@ type PolicyRuleIdpDiscoveryPlatformIncludeOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type PolicyRuleIdpDiscoveryPlatformIncludeOutputReference interface {
 	ResetType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -128,8 +128,8 @@ func (j *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) Fqn() *
 	return returns
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) TypeInp
 	return returns
 }
 
-
 func NewPolicyRuleIdpDiscoveryPlatformIncludeOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) PolicyRuleIdpDiscoveryPlatformIncludeOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewPolicyRuleIdpDiscoveryPlatformIncludeOutputReference(terraformResource c
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscoveryPlatformIncludeOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewPolicyRuleIdpDiscoveryPlatformIncludeOutputReference_Override(p PolicyRu
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscoveryPlatformIncludeOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference)SetInter
 	)
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference)SetOsExpression(val *string) {
+func (j *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) SetOsExpression(val *string) {
 	if err := j.validateSetOsExpressionParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference)SetOsExp
 	)
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference)SetOsType(val *string) {
+func (j *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) SetOsType(val *string) {
 	if err := j.validateSetOsTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference)SetOsTyp
 	)
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference)SetType(val *string) {
+func (j *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (p *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) Compute
 	return returns
 }
 
-func (p *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (p *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) GetBool
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (p *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) GetBool
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (p *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) GetList
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (p *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) GetNumb
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (p *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) GetNumb
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (p *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) GetNumb
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (p *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) GetStri
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (p *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) GetStri
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (p *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) Interpo
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (p *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) ResetTy
 	)
 }
 
-func (p *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := p.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (p *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) ToStrin
 
 	return returns
 }
-

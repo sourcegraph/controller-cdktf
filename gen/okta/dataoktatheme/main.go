@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.dataOktaTheme.DataOktaTheme",
-		reflect.TypeOf((*DataOktaTheme)(nil)).Elem(),
+		reflect.TypeFor[DataOktaTheme](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "backgroundImageUrl", GoGetter: "BackgroundImageUrl"},
@@ -62,7 +62,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataOktaTheme{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -70,6 +70,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.dataOktaTheme.DataOktaThemeConfig",
-		reflect.TypeOf((*DataOktaThemeConfig)(nil)).Elem(),
+		reflect.TypeFor[DataOktaThemeConfig](),
 	)
 }

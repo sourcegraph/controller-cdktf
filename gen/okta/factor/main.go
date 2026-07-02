@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.factor.Factor",
-		reflect.TypeOf((*Factor)(nil)).Elem(),
+		reflect.TypeFor[Factor](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "active", GoGetter: "Active"},
 			_jsii_.MemberProperty{JsiiProperty: "activeInput", GoGetter: "ActiveInput"},
@@ -61,7 +61,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Factor{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -69,6 +69,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.factor.FactorConfig",
-		reflect.TypeOf((*FactorConfig)(nil)).Elem(),
+		reflect.TypeFor[FactorConfig](),
 	)
 }

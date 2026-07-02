@@ -19,7 +19,7 @@ func (p *jsiiProxy_PolicyDeviceAssuranceChromeos) validateAddMoveTargetParameter
 	return nil
 }
 
-func (p *jsiiProxy_PolicyDeviceAssuranceChromeos) validateAddOverrideParameters(path *string, value interface{}) error {
+func (p *jsiiProxy_PolicyDeviceAssuranceChromeos) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (p *jsiiProxy_PolicyDeviceAssuranceChromeos) validateMoveFromIdParameters(i
 	return nil
 }
 
-func (p *jsiiProxy_PolicyDeviceAssuranceChromeos) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (p *jsiiProxy_PolicyDeviceAssuranceChromeos) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validatePolicyDeviceAssuranceChromeos_GenerateConfigForImportParameters(sco
 	return nil
 }
 
-func validatePolicyDeviceAssuranceChromeos_IsConstructParameters(x interface{}) error {
+func validatePolicyDeviceAssuranceChromeos_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validatePolicyDeviceAssuranceChromeos_IsConstructParameters(x interface{}) 
 	return nil
 }
 
-func validatePolicyDeviceAssuranceChromeos_IsTerraformElementParameters(x interface{}) error {
+func validatePolicyDeviceAssuranceChromeos_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validatePolicyDeviceAssuranceChromeos_IsTerraformElementParameters(x interf
 	return nil
 }
 
-func validatePolicyDeviceAssuranceChromeos_IsTerraformResourceParameters(x interface{}) error {
+func validatePolicyDeviceAssuranceChromeos_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validatePolicyDeviceAssuranceChromeos_IsTerraformResourceParameters(x inter
 	return nil
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) validateSetConnectionParameter
 	return nil
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -350,7 +350,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) validateSetNameParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -396,7 +396,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) validateSetProvisionersParamet
 	return nil
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) validateSetTpspAllowScreenLockParameters(val interface{}) error {
+func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) validateSetTpspAllowScreenLockParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -424,7 +424,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) validateSetTpspBrowserVersionP
 	return nil
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) validateSetTpspBuiltinDnsClientEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) validateSetTpspBuiltinDnsClientEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -444,7 +444,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) validateSetTpspBuiltinDnsClien
 	return nil
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) validateSetTpspChromeRemoteDesktopAppBlockedParameters(val interface{}) error {
+func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) validateSetTpspChromeRemoteDesktopAppBlockedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -472,7 +472,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) validateSetTpspDeviceEnrollmen
 	return nil
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) validateSetTpspDiskEncryptedParameters(val interface{}) error {
+func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) validateSetTpspDiskEncryptedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -500,7 +500,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) validateSetTpspKeyTrustLevelPa
 	return nil
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) validateSetTpspOsFirewallParameters(val interface{}) error {
+func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) validateSetTpspOsFirewallParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -536,7 +536,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) validateSetTpspPasswordProctec
 	return nil
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) validateSetTpspRealtimeUrlCheckModeParameters(val interface{}) error {
+func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) validateSetTpspRealtimeUrlCheckModeParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -564,7 +564,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) validateSetTpspSafeBrowsingPro
 	return nil
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) validateSetTpspScreenLockSecuredParameters(val interface{}) error {
+func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) validateSetTpspScreenLockSecuredParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -584,7 +584,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) validateSetTpspScreenLockSecur
 	return nil
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) validateSetTpspSiteIsolationEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) validateSetTpspSiteIsolationEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -622,4 +622,3 @@ func validateNewPolicyDeviceAssuranceChromeosParameters(scope constructs.Constru
 
 	return nil
 }
-

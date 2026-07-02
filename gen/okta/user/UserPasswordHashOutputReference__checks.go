@@ -106,7 +106,7 @@ func (j *jsiiProxy_UserPasswordHashOutputReference) validateSetAlgorithmParamete
 	return nil
 }
 
-func (j *jsiiProxy_UserPasswordHashOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_UserPasswordHashOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -238,4 +238,3 @@ func validateNewUserPasswordHashOutputReferenceParameters(terraformResource cdkt
 
 	return nil
 }
-

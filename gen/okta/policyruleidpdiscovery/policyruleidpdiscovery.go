@@ -13,21 +13,21 @@ import (
 type PolicyRuleIdpDiscovery interface {
 	cdktf.TerraformResource
 	AppExclude() PolicyRuleIdpDiscoveryAppExcludeList
-	AppExcludeInput() interface{}
+	AppExcludeInput() any
 	AppInclude() PolicyRuleIdpDiscoveryAppIncludeList
-	AppIncludeInput() interface{}
+	AppIncludeInput() any
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -68,7 +68,7 @@ type PolicyRuleIdpDiscovery interface {
 	// The tree node.
 	Node() constructs.Node
 	PlatformInclude() PolicyRuleIdpDiscoveryPlatformIncludeList
-	PlatformIncludeInput() interface{}
+	PlatformIncludeInput() any
 	PolicyId() *string
 	SetPolicyId(val *string)
 	PolicyIdInput() *string
@@ -80,25 +80,25 @@ type PolicyRuleIdpDiscovery interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Status() *string
 	SetStatus(val *string)
 	StatusInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	UserIdentifierAttribute() *string
 	SetUserIdentifierAttribute(val *string)
 	UserIdentifierAttributeInput() *string
 	UserIdentifierPatterns() PolicyRuleIdpDiscoveryUserIdentifierPatternsList
-	UserIdentifierPatternsInput() interface{}
+	UserIdentifierPatternsInput() any
 	UserIdentifierType() *string
 	SetUserIdentifierType(val *string)
 	UserIdentifierTypeInput() *string
@@ -106,9 +106,9 @@ type PolicyRuleIdpDiscovery interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -126,7 +126,7 @@ type PolicyRuleIdpDiscovery interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -138,17 +138,17 @@ type PolicyRuleIdpDiscovery interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutAppExclude(value interface{})
-	PutAppInclude(value interface{})
-	PutPlatformInclude(value interface{})
-	PutUserIdentifierPatterns(value interface{})
+	PutAppExclude(value any)
+	PutAppInclude(value any)
+	PutPlatformInclude(value any)
+	PutUserIdentifierPatterns(value any)
 	ResetAppExclude()
 	ResetAppInclude()
 	ResetId()
@@ -167,17 +167,17 @@ type PolicyRuleIdpDiscovery interface {
 	ResetUserIdentifierAttribute()
 	ResetUserIdentifierPatterns()
 	ResetUserIdentifierType()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for PolicyRuleIdpDiscovery
@@ -195,8 +195,8 @@ func (j *jsiiProxy_PolicyRuleIdpDiscovery) AppExclude() PolicyRuleIdpDiscoveryAp
 	return returns
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscovery) AppExcludeInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyRuleIdpDiscovery) AppExcludeInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"appExcludeInput",
@@ -215,8 +215,8 @@ func (j *jsiiProxy_PolicyRuleIdpDiscovery) AppInclude() PolicyRuleIdpDiscoveryAp
 	return returns
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscovery) AppIncludeInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyRuleIdpDiscovery) AppIncludeInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"appIncludeInput",
@@ -235,8 +235,8 @@ func (j *jsiiProxy_PolicyRuleIdpDiscovery) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscovery) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyRuleIdpDiscovery) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -245,8 +245,8 @@ func (j *jsiiProxy_PolicyRuleIdpDiscovery) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscovery) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_PolicyRuleIdpDiscovery) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -255,8 +255,8 @@ func (j *jsiiProxy_PolicyRuleIdpDiscovery) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscovery) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyRuleIdpDiscovery) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -475,8 +475,8 @@ func (j *jsiiProxy_PolicyRuleIdpDiscovery) PlatformInclude() PolicyRuleIdpDiscov
 	return returns
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscovery) PlatformIncludeInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyRuleIdpDiscovery) PlatformIncludeInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"platformIncludeInput",
@@ -535,8 +535,8 @@ func (j *jsiiProxy_PolicyRuleIdpDiscovery) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscovery) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_PolicyRuleIdpDiscovery) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -545,8 +545,8 @@ func (j *jsiiProxy_PolicyRuleIdpDiscovery) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscovery) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyRuleIdpDiscovery) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -585,8 +585,8 @@ func (j *jsiiProxy_PolicyRuleIdpDiscovery) TerraformGeneratorMetadata() *cdktf.T
 	return returns
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscovery) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_PolicyRuleIdpDiscovery) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -635,8 +635,8 @@ func (j *jsiiProxy_PolicyRuleIdpDiscovery) UserIdentifierPatterns() PolicyRuleId
 	return returns
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscovery) UserIdentifierPatternsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyRuleIdpDiscovery) UserIdentifierPatternsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"userIdentifierPatternsInput",
@@ -665,7 +665,6 @@ func (j *jsiiProxy_PolicyRuleIdpDiscovery) UserIdentifierTypeInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_rule_idp_discovery okta_policy_rule_idp_discovery} Resource.
 func NewPolicyRuleIdpDiscovery(scope constructs.Construct, id *string, config *PolicyRuleIdpDiscoveryConfig) PolicyRuleIdpDiscovery {
 	_init_.Initialize()
@@ -677,7 +676,7 @@ func NewPolicyRuleIdpDiscovery(scope constructs.Construct, id *string, config *P
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscovery",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -690,12 +689,12 @@ func NewPolicyRuleIdpDiscovery_Override(p PolicyRuleIdpDiscovery, scope construc
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscovery",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscovery)SetConnection(val interface{}) {
+func (j *jsiiProxy_PolicyRuleIdpDiscovery) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -706,7 +705,7 @@ func (j *jsiiProxy_PolicyRuleIdpDiscovery)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscovery)SetCount(val interface{}) {
+func (j *jsiiProxy_PolicyRuleIdpDiscovery) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -717,7 +716,7 @@ func (j *jsiiProxy_PolicyRuleIdpDiscovery)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscovery)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_PolicyRuleIdpDiscovery) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -725,7 +724,7 @@ func (j *jsiiProxy_PolicyRuleIdpDiscovery)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscovery)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_PolicyRuleIdpDiscovery) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -733,7 +732,7 @@ func (j *jsiiProxy_PolicyRuleIdpDiscovery)SetForEach(val cdktf.ITerraformIterato
 	)
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscovery)SetId(val *string) {
+func (j *jsiiProxy_PolicyRuleIdpDiscovery) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -744,7 +743,7 @@ func (j *jsiiProxy_PolicyRuleIdpDiscovery)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscovery)SetIdpId(val *string) {
+func (j *jsiiProxy_PolicyRuleIdpDiscovery) SetIdpId(val *string) {
 	if err := j.validateSetIdpIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -755,7 +754,7 @@ func (j *jsiiProxy_PolicyRuleIdpDiscovery)SetIdpId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscovery)SetIdpType(val *string) {
+func (j *jsiiProxy_PolicyRuleIdpDiscovery) SetIdpType(val *string) {
 	if err := j.validateSetIdpTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -766,7 +765,7 @@ func (j *jsiiProxy_PolicyRuleIdpDiscovery)SetIdpType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscovery)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_PolicyRuleIdpDiscovery) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -777,7 +776,7 @@ func (j *jsiiProxy_PolicyRuleIdpDiscovery)SetLifecycle(val *cdktf.TerraformResou
 	)
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscovery)SetName(val *string) {
+func (j *jsiiProxy_PolicyRuleIdpDiscovery) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -788,7 +787,7 @@ func (j *jsiiProxy_PolicyRuleIdpDiscovery)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscovery)SetNetworkConnection(val *string) {
+func (j *jsiiProxy_PolicyRuleIdpDiscovery) SetNetworkConnection(val *string) {
 	if err := j.validateSetNetworkConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -799,7 +798,7 @@ func (j *jsiiProxy_PolicyRuleIdpDiscovery)SetNetworkConnection(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscovery)SetNetworkExcludes(val *[]*string) {
+func (j *jsiiProxy_PolicyRuleIdpDiscovery) SetNetworkExcludes(val *[]*string) {
 	if err := j.validateSetNetworkExcludesParameters(val); err != nil {
 		panic(err)
 	}
@@ -810,7 +809,7 @@ func (j *jsiiProxy_PolicyRuleIdpDiscovery)SetNetworkExcludes(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscovery)SetNetworkIncludes(val *[]*string) {
+func (j *jsiiProxy_PolicyRuleIdpDiscovery) SetNetworkIncludes(val *[]*string) {
 	if err := j.validateSetNetworkIncludesParameters(val); err != nil {
 		panic(err)
 	}
@@ -821,7 +820,7 @@ func (j *jsiiProxy_PolicyRuleIdpDiscovery)SetNetworkIncludes(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscovery)SetPolicyId(val *string) {
+func (j *jsiiProxy_PolicyRuleIdpDiscovery) SetPolicyId(val *string) {
 	if err := j.validateSetPolicyIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -832,7 +831,7 @@ func (j *jsiiProxy_PolicyRuleIdpDiscovery)SetPolicyId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscovery)SetPriority(val *float64) {
+func (j *jsiiProxy_PolicyRuleIdpDiscovery) SetPriority(val *float64) {
 	if err := j.validateSetPriorityParameters(val); err != nil {
 		panic(err)
 	}
@@ -843,7 +842,7 @@ func (j *jsiiProxy_PolicyRuleIdpDiscovery)SetPriority(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscovery)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_PolicyRuleIdpDiscovery) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -851,7 +850,7 @@ func (j *jsiiProxy_PolicyRuleIdpDiscovery)SetProvider(val cdktf.TerraformProvide
 	)
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscovery)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_PolicyRuleIdpDiscovery) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -862,7 +861,7 @@ func (j *jsiiProxy_PolicyRuleIdpDiscovery)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscovery)SetStatus(val *string) {
+func (j *jsiiProxy_PolicyRuleIdpDiscovery) SetStatus(val *string) {
 	if err := j.validateSetStatusParameters(val); err != nil {
 		panic(err)
 	}
@@ -873,7 +872,7 @@ func (j *jsiiProxy_PolicyRuleIdpDiscovery)SetStatus(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscovery)SetUserIdentifierAttribute(val *string) {
+func (j *jsiiProxy_PolicyRuleIdpDiscovery) SetUserIdentifierAttribute(val *string) {
 	if err := j.validateSetUserIdentifierAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -884,7 +883,7 @@ func (j *jsiiProxy_PolicyRuleIdpDiscovery)SetUserIdentifierAttribute(val *string
 	)
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscovery)SetUserIdentifierType(val *string) {
+func (j *jsiiProxy_PolicyRuleIdpDiscovery) SetUserIdentifierType(val *string) {
 	if err := j.validateSetUserIdentifierTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -907,7 +906,7 @@ func PolicyRuleIdpDiscovery_GenerateConfigForImport(scope constructs.Construct, 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscovery",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -931,7 +930,7 @@ func PolicyRuleIdpDiscovery_GenerateConfigForImport(scope constructs.Construct, 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func PolicyRuleIdpDiscovery_IsConstruct(x interface{}) *bool {
+func PolicyRuleIdpDiscovery_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePolicyRuleIdpDiscovery_IsConstructParameters(x); err != nil {
@@ -942,7 +941,7 @@ func PolicyRuleIdpDiscovery_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscovery",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -950,7 +949,7 @@ func PolicyRuleIdpDiscovery_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func PolicyRuleIdpDiscovery_IsTerraformElement(x interface{}) *bool {
+func PolicyRuleIdpDiscovery_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePolicyRuleIdpDiscovery_IsTerraformElementParameters(x); err != nil {
@@ -961,7 +960,7 @@ func PolicyRuleIdpDiscovery_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscovery",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -969,7 +968,7 @@ func PolicyRuleIdpDiscovery_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func PolicyRuleIdpDiscovery_IsTerraformResource(x interface{}) *bool {
+func PolicyRuleIdpDiscovery_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePolicyRuleIdpDiscovery_IsTerraformResourceParameters(x); err != nil {
@@ -980,7 +979,7 @@ func PolicyRuleIdpDiscovery_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscovery",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1005,31 +1004,31 @@ func (p *jsiiProxy_PolicyRuleIdpDiscovery) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (p *jsiiProxy_PolicyRuleIdpDiscovery) AddOverride(path *string, value interface{}) {
+func (p *jsiiProxy_PolicyRuleIdpDiscovery) AddOverride(path *string, value any) {
 	if err := p.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (p *jsiiProxy_PolicyRuleIdpDiscovery) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_PolicyRuleIdpDiscovery) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1045,7 +1044,7 @@ func (p *jsiiProxy_PolicyRuleIdpDiscovery) GetBooleanAttribute(terraformAttribut
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1061,7 +1060,7 @@ func (p *jsiiProxy_PolicyRuleIdpDiscovery) GetBooleanMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1077,7 +1076,7 @@ func (p *jsiiProxy_PolicyRuleIdpDiscovery) GetListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1093,7 +1092,7 @@ func (p *jsiiProxy_PolicyRuleIdpDiscovery) GetNumberAttribute(terraformAttribute
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1109,7 +1108,7 @@ func (p *jsiiProxy_PolicyRuleIdpDiscovery) GetNumberListAttribute(terraformAttri
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1125,7 +1124,7 @@ func (p *jsiiProxy_PolicyRuleIdpDiscovery) GetNumberMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1141,7 +1140,7 @@ func (p *jsiiProxy_PolicyRuleIdpDiscovery) GetStringAttribute(terraformAttribute
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1157,15 +1156,15 @@ func (p *jsiiProxy_PolicyRuleIdpDiscovery) GetStringMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (p *jsiiProxy_PolicyRuleIdpDiscovery) HasResourceMove() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PolicyRuleIdpDiscovery) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1184,7 +1183,7 @@ func (p *jsiiProxy_PolicyRuleIdpDiscovery) ImportFrom(id *string, provider cdktf
 	_jsii_.InvokeVoid(
 		p,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1197,7 +1196,7 @@ func (p *jsiiProxy_PolicyRuleIdpDiscovery) InterpolationForAttribute(terraformAt
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1211,18 +1210,18 @@ func (p *jsiiProxy_PolicyRuleIdpDiscovery) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (p *jsiiProxy_PolicyRuleIdpDiscovery) MoveTo(moveTarget *string, index interface{}) {
+func (p *jsiiProxy_PolicyRuleIdpDiscovery) MoveTo(moveTarget *string, index any) {
 	if err := p.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1233,7 +1232,7 @@ func (p *jsiiProxy_PolicyRuleIdpDiscovery) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1244,51 +1243,51 @@ func (p *jsiiProxy_PolicyRuleIdpDiscovery) OverrideLogicalId(newLogicalId *strin
 	_jsii_.InvokeVoid(
 		p,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (p *jsiiProxy_PolicyRuleIdpDiscovery) PutAppExclude(value interface{}) {
+func (p *jsiiProxy_PolicyRuleIdpDiscovery) PutAppExclude(value any) {
 	if err := p.validatePutAppExcludeParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"putAppExclude",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (p *jsiiProxy_PolicyRuleIdpDiscovery) PutAppInclude(value interface{}) {
+func (p *jsiiProxy_PolicyRuleIdpDiscovery) PutAppInclude(value any) {
 	if err := p.validatePutAppIncludeParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"putAppInclude",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (p *jsiiProxy_PolicyRuleIdpDiscovery) PutPlatformInclude(value interface{}) {
+func (p *jsiiProxy_PolicyRuleIdpDiscovery) PutPlatformInclude(value any) {
 	if err := p.validatePutPlatformIncludeParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"putPlatformInclude",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (p *jsiiProxy_PolicyRuleIdpDiscovery) PutUserIdentifierPatterns(value interface{}) {
+func (p *jsiiProxy_PolicyRuleIdpDiscovery) PutUserIdentifierPatterns(value any) {
 	if err := p.validatePutUserIdentifierPatternsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"putUserIdentifierPatterns",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1420,8 +1419,8 @@ func (p *jsiiProxy_PolicyRuleIdpDiscovery) ResetUserIdentifierType() {
 	)
 }
 
-func (p *jsiiProxy_PolicyRuleIdpDiscovery) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (p *jsiiProxy_PolicyRuleIdpDiscovery) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
@@ -1433,8 +1432,8 @@ func (p *jsiiProxy_PolicyRuleIdpDiscovery) SynthesizeAttributes() *map[string]in
 	return returns
 }
 
-func (p *jsiiProxy_PolicyRuleIdpDiscovery) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (p *jsiiProxy_PolicyRuleIdpDiscovery) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
@@ -1446,8 +1445,8 @@ func (p *jsiiProxy_PolicyRuleIdpDiscovery) SynthesizeHclAttributes() *map[string
 	return returns
 }
 
-func (p *jsiiProxy_PolicyRuleIdpDiscovery) ToHclTerraform() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PolicyRuleIdpDiscovery) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1459,8 +1458,8 @@ func (p *jsiiProxy_PolicyRuleIdpDiscovery) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (p *jsiiProxy_PolicyRuleIdpDiscovery) ToMetadata() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PolicyRuleIdpDiscovery) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1485,8 +1484,8 @@ func (p *jsiiProxy_PolicyRuleIdpDiscovery) ToString() *string {
 	return returns
 }
 
-func (p *jsiiProxy_PolicyRuleIdpDiscovery) ToTerraform() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PolicyRuleIdpDiscovery) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1497,4 +1496,3 @@ func (p *jsiiProxy_PolicyRuleIdpDiscovery) ToTerraform() interface{} {
 
 	return returns
 }
-

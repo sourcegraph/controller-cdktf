@@ -18,11 +18,11 @@ type DataOktaAppSignonPolicy interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -50,17 +50,17 @@ type DataOktaAppSignonPolicy interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -86,18 +86,18 @@ type DataOktaAppSignonPolicy interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataOktaAppSignonPolicy
@@ -135,8 +135,8 @@ func (j *jsiiProxy_DataOktaAppSignonPolicy) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DataOktaAppSignonPolicy) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataOktaAppSignonPolicy) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -145,8 +145,8 @@ func (j *jsiiProxy_DataOktaAppSignonPolicy) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_DataOktaAppSignonPolicy) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataOktaAppSignonPolicy) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -255,8 +255,8 @@ func (j *jsiiProxy_DataOktaAppSignonPolicy) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DataOktaAppSignonPolicy) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataOktaAppSignonPolicy) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -275,8 +275,8 @@ func (j *jsiiProxy_DataOktaAppSignonPolicy) TerraformGeneratorMetadata() *cdktf.
 	return returns
 }
 
-func (j *jsiiProxy_DataOktaAppSignonPolicy) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataOktaAppSignonPolicy) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -295,7 +295,6 @@ func (j *jsiiProxy_DataOktaAppSignonPolicy) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/app_signon_policy okta_app_signon_policy} Data Source.
 func NewDataOktaAppSignonPolicy(scope constructs.Construct, id *string, config *DataOktaAppSignonPolicyConfig) DataOktaAppSignonPolicy {
 	_init_.Initialize()
@@ -307,7 +306,7 @@ func NewDataOktaAppSignonPolicy(scope constructs.Construct, id *string, config *
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.dataOktaAppSignonPolicy.DataOktaAppSignonPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -320,12 +319,12 @@ func NewDataOktaAppSignonPolicy_Override(d DataOktaAppSignonPolicy, scope constr
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.dataOktaAppSignonPolicy.DataOktaAppSignonPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataOktaAppSignonPolicy)SetAppId(val *string) {
+func (j *jsiiProxy_DataOktaAppSignonPolicy) SetAppId(val *string) {
 	if err := j.validateSetAppIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_DataOktaAppSignonPolicy)SetAppId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataOktaAppSignonPolicy)SetCount(val interface{}) {
+func (j *jsiiProxy_DataOktaAppSignonPolicy) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_DataOktaAppSignonPolicy)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataOktaAppSignonPolicy)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataOktaAppSignonPolicy) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -355,7 +354,7 @@ func (j *jsiiProxy_DataOktaAppSignonPolicy)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataOktaAppSignonPolicy)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataOktaAppSignonPolicy) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -363,7 +362,7 @@ func (j *jsiiProxy_DataOktaAppSignonPolicy)SetForEach(val cdktf.ITerraformIterat
 	)
 }
 
-func (j *jsiiProxy_DataOktaAppSignonPolicy)SetId(val *string) {
+func (j *jsiiProxy_DataOktaAppSignonPolicy) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -374,7 +373,7 @@ func (j *jsiiProxy_DataOktaAppSignonPolicy)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataOktaAppSignonPolicy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataOktaAppSignonPolicy) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -385,7 +384,7 @@ func (j *jsiiProxy_DataOktaAppSignonPolicy)SetLifecycle(val *cdktf.TerraformReso
 	)
 }
 
-func (j *jsiiProxy_DataOktaAppSignonPolicy)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataOktaAppSignonPolicy) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -405,7 +404,7 @@ func DataOktaAppSignonPolicy_GenerateConfigForImport(scope constructs.Construct,
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.dataOktaAppSignonPolicy.DataOktaAppSignonPolicy",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -429,7 +428,7 @@ func DataOktaAppSignonPolicy_GenerateConfigForImport(scope constructs.Construct,
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataOktaAppSignonPolicy_IsConstruct(x interface{}) *bool {
+func DataOktaAppSignonPolicy_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataOktaAppSignonPolicy_IsConstructParameters(x); err != nil {
@@ -440,7 +439,7 @@ func DataOktaAppSignonPolicy_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.dataOktaAppSignonPolicy.DataOktaAppSignonPolicy",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -448,7 +447,7 @@ func DataOktaAppSignonPolicy_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataOktaAppSignonPolicy_IsTerraformDataSource(x interface{}) *bool {
+func DataOktaAppSignonPolicy_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataOktaAppSignonPolicy_IsTerraformDataSourceParameters(x); err != nil {
@@ -459,7 +458,7 @@ func DataOktaAppSignonPolicy_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.dataOktaAppSignonPolicy.DataOktaAppSignonPolicy",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -467,7 +466,7 @@ func DataOktaAppSignonPolicy_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataOktaAppSignonPolicy_IsTerraformElement(x interface{}) *bool {
+func DataOktaAppSignonPolicy_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataOktaAppSignonPolicy_IsTerraformElementParameters(x); err != nil {
@@ -478,7 +477,7 @@ func DataOktaAppSignonPolicy_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.dataOktaAppSignonPolicy.DataOktaAppSignonPolicy",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -496,27 +495,27 @@ func DataOktaAppSignonPolicy_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataOktaAppSignonPolicy) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataOktaAppSignonPolicy) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataOktaAppSignonPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataOktaAppSignonPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -532,7 +531,7 @@ func (d *jsiiProxy_DataOktaAppSignonPolicy) GetBooleanAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -548,7 +547,7 @@ func (d *jsiiProxy_DataOktaAppSignonPolicy) GetBooleanMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -564,7 +563,7 @@ func (d *jsiiProxy_DataOktaAppSignonPolicy) GetListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -580,7 +579,7 @@ func (d *jsiiProxy_DataOktaAppSignonPolicy) GetNumberAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -596,7 +595,7 @@ func (d *jsiiProxy_DataOktaAppSignonPolicy) GetNumberListAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -612,7 +611,7 @@ func (d *jsiiProxy_DataOktaAppSignonPolicy) GetNumberMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -628,7 +627,7 @@ func (d *jsiiProxy_DataOktaAppSignonPolicy) GetStringAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -644,7 +643,7 @@ func (d *jsiiProxy_DataOktaAppSignonPolicy) GetStringMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -660,7 +659,7 @@ func (d *jsiiProxy_DataOktaAppSignonPolicy) InterpolationForAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -674,7 +673,7 @@ func (d *jsiiProxy_DataOktaAppSignonPolicy) OverrideLogicalId(newLogicalId *stri
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -694,8 +693,8 @@ func (d *jsiiProxy_DataOktaAppSignonPolicy) ResetOverrideLogicalId() {
 	)
 }
 
-func (d *jsiiProxy_DataOktaAppSignonPolicy) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataOktaAppSignonPolicy) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -707,8 +706,8 @@ func (d *jsiiProxy_DataOktaAppSignonPolicy) SynthesizeAttributes() *map[string]i
 	return returns
 }
 
-func (d *jsiiProxy_DataOktaAppSignonPolicy) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataOktaAppSignonPolicy) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -720,8 +719,8 @@ func (d *jsiiProxy_DataOktaAppSignonPolicy) SynthesizeHclAttributes() *map[strin
 	return returns
 }
 
-func (d *jsiiProxy_DataOktaAppSignonPolicy) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataOktaAppSignonPolicy) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -733,8 +732,8 @@ func (d *jsiiProxy_DataOktaAppSignonPolicy) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataOktaAppSignonPolicy) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataOktaAppSignonPolicy) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -759,8 +758,8 @@ func (d *jsiiProxy_DataOktaAppSignonPolicy) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataOktaAppSignonPolicy) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataOktaAppSignonPolicy) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -771,4 +770,3 @@ func (d *jsiiProxy_DataOktaAppSignonPolicy) ToTerraform() interface{} {
 
 	return returns
 }
-

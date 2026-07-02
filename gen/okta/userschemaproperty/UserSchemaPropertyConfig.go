@@ -6,9 +6,9 @@ import (
 
 type UserSchemaPropertyConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type UserSchemaPropertyConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Subschema unique string identifier.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/user_schema_property#index UserSchemaProperty#index}
@@ -38,7 +38,7 @@ type UserSchemaPropertyConfig struct {
 	// array_one_of block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/user_schema_property#array_one_of UserSchemaProperty#array_one_of}
-	ArrayOneOf interface{} `field:"optional" json:"arrayOneOf" yaml:"arrayOneOf"`
+	ArrayOneOf any `field:"optional" json:"arrayOneOf" yaml:"arrayOneOf"`
 	// The type of the array elements if `type` is set to `array`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/user_schema_property#array_type UserSchemaProperty#array_type}
@@ -71,7 +71,7 @@ type UserSchemaPropertyConfig struct {
 	// master_override_priority block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/user_schema_property#master_override_priority UserSchemaProperty#master_override_priority}
-	MasterOverridePriority interface{} `field:"optional" json:"masterOverridePriority" yaml:"masterOverridePriority"`
+	MasterOverridePriority any `field:"optional" json:"masterOverridePriority" yaml:"masterOverridePriority"`
 	// The maximum length of the user property value. Only applies to type `string`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/user_schema_property#max_length UserSchemaProperty#max_length}
@@ -83,7 +83,7 @@ type UserSchemaPropertyConfig struct {
 	// one_of block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/user_schema_property#one_of UserSchemaProperty#one_of}
-	OneOf interface{} `field:"optional" json:"oneOf" yaml:"oneOf"`
+	OneOf any `field:"optional" json:"oneOf" yaml:"oneOf"`
 	// The validation pattern to use for the subschema. Must be in form of '.+', or '[<pattern>]+' if present.'.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/user_schema_property#pattern UserSchemaProperty#pattern}
@@ -95,7 +95,7 @@ type UserSchemaPropertyConfig struct {
 	// Whether the subschema is required.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/user_schema_property#required UserSchemaProperty#required}
-	Required interface{} `field:"optional" json:"required" yaml:"required"`
+	Required any `field:"optional" json:"required" yaml:"required"`
 	// determines whether an app user attribute can be set at the Individual or Group Level. Default: `NONE`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/user_schema_property#scope UserSchemaProperty#scope}
@@ -109,4 +109,3 @@ type UserSchemaPropertyConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/user_schema_property#user_type UserSchemaProperty#user_type}
 	UserType *string `field:"optional" json:"userType" yaml:"userType"`
 }
-

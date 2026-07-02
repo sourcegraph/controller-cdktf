@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.dataOktaAppSignonPolicy.DataOktaAppSignonPolicy",
-		reflect.TypeOf((*DataOktaAppSignonPolicy)(nil)).Elem(),
+		reflect.TypeFor[DataOktaAppSignonPolicy](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "appId", GoGetter: "AppId"},
@@ -51,7 +51,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataOktaAppSignonPolicy{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -59,6 +59,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.dataOktaAppSignonPolicy.DataOktaAppSignonPolicyConfig",
-		reflect.TypeOf((*DataOktaAppSignonPolicyConfig)(nil)).Elem(),
+		reflect.TypeFor[DataOktaAppSignonPolicyConfig](),
 	)
 }

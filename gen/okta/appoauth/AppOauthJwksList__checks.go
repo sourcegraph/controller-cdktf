@@ -34,7 +34,7 @@ func (a *jsiiProxy_AppOauthJwksList) validateResolveParameters(_context cdktf.IR
 	return nil
 }
 
-func (j *jsiiProxy_AppOauthJwksList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AppOauthJwksList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewAppOauthJwksListParameters(terraformResource cdktf.IInterpolatin
 
 	return nil
 }
-

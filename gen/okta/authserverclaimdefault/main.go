@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.authServerClaimDefault.AuthServerClaimDefault",
-		reflect.TypeOf((*AuthServerClaimDefault)(nil)).Elem(),
+		reflect.TypeFor[AuthServerClaimDefault](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,7 +70,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 			_jsii_.MemberProperty{JsiiProperty: "valueType", GoGetter: "ValueType"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AuthServerClaimDefault{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -78,6 +78,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.authServerClaimDefault.AuthServerClaimDefaultConfig",
-		reflect.TypeOf((*AuthServerClaimDefaultConfig)(nil)).Elem(),
+		reflect.TypeFor[AuthServerClaimDefaultConfig](),
 	)
 }

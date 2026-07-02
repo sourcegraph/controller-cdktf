@@ -15,11 +15,11 @@ type DataOktaTrustedOrigins interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -49,18 +49,18 @@ type DataOktaTrustedOrigins interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	TrustedOrigins() DataOktaTrustedOriginsTrustedOriginsList
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -87,18 +87,18 @@ type DataOktaTrustedOrigins interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataOktaTrustedOrigins
@@ -116,8 +116,8 @@ func (j *jsiiProxy_DataOktaTrustedOrigins) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DataOktaTrustedOrigins) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataOktaTrustedOrigins) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -126,8 +126,8 @@ func (j *jsiiProxy_DataOktaTrustedOrigins) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_DataOktaTrustedOrigins) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataOktaTrustedOrigins) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -246,8 +246,8 @@ func (j *jsiiProxy_DataOktaTrustedOrigins) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DataOktaTrustedOrigins) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataOktaTrustedOrigins) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -266,8 +266,8 @@ func (j *jsiiProxy_DataOktaTrustedOrigins) TerraformGeneratorMetadata() *cdktf.T
 	return returns
 }
 
-func (j *jsiiProxy_DataOktaTrustedOrigins) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataOktaTrustedOrigins) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -296,7 +296,6 @@ func (j *jsiiProxy_DataOktaTrustedOrigins) TrustedOrigins() DataOktaTrustedOrigi
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/trusted_origins okta_trusted_origins} Data Source.
 func NewDataOktaTrustedOrigins(scope constructs.Construct, id *string, config *DataOktaTrustedOriginsConfig) DataOktaTrustedOrigins {
 	_init_.Initialize()
@@ -308,7 +307,7 @@ func NewDataOktaTrustedOrigins(scope constructs.Construct, id *string, config *D
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.dataOktaTrustedOrigins.DataOktaTrustedOrigins",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -321,12 +320,12 @@ func NewDataOktaTrustedOrigins_Override(d DataOktaTrustedOrigins, scope construc
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.dataOktaTrustedOrigins.DataOktaTrustedOrigins",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataOktaTrustedOrigins)SetCount(val interface{}) {
+func (j *jsiiProxy_DataOktaTrustedOrigins) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -337,7 +336,7 @@ func (j *jsiiProxy_DataOktaTrustedOrigins)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataOktaTrustedOrigins)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataOktaTrustedOrigins) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -345,7 +344,7 @@ func (j *jsiiProxy_DataOktaTrustedOrigins)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataOktaTrustedOrigins)SetFilter(val *string) {
+func (j *jsiiProxy_DataOktaTrustedOrigins) SetFilter(val *string) {
 	if err := j.validateSetFilterParameters(val); err != nil {
 		panic(err)
 	}
@@ -356,7 +355,7 @@ func (j *jsiiProxy_DataOktaTrustedOrigins)SetFilter(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataOktaTrustedOrigins)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataOktaTrustedOrigins) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -364,7 +363,7 @@ func (j *jsiiProxy_DataOktaTrustedOrigins)SetForEach(val cdktf.ITerraformIterato
 	)
 }
 
-func (j *jsiiProxy_DataOktaTrustedOrigins)SetId(val *string) {
+func (j *jsiiProxy_DataOktaTrustedOrigins) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -375,7 +374,7 @@ func (j *jsiiProxy_DataOktaTrustedOrigins)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataOktaTrustedOrigins)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataOktaTrustedOrigins) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -386,7 +385,7 @@ func (j *jsiiProxy_DataOktaTrustedOrigins)SetLifecycle(val *cdktf.TerraformResou
 	)
 }
 
-func (j *jsiiProxy_DataOktaTrustedOrigins)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataOktaTrustedOrigins) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -406,7 +405,7 @@ func DataOktaTrustedOrigins_GenerateConfigForImport(scope constructs.Construct, 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.dataOktaTrustedOrigins.DataOktaTrustedOrigins",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -430,7 +429,7 @@ func DataOktaTrustedOrigins_GenerateConfigForImport(scope constructs.Construct, 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataOktaTrustedOrigins_IsConstruct(x interface{}) *bool {
+func DataOktaTrustedOrigins_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataOktaTrustedOrigins_IsConstructParameters(x); err != nil {
@@ -441,7 +440,7 @@ func DataOktaTrustedOrigins_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.dataOktaTrustedOrigins.DataOktaTrustedOrigins",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func DataOktaTrustedOrigins_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataOktaTrustedOrigins_IsTerraformDataSource(x interface{}) *bool {
+func DataOktaTrustedOrigins_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataOktaTrustedOrigins_IsTerraformDataSourceParameters(x); err != nil {
@@ -460,7 +459,7 @@ func DataOktaTrustedOrigins_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.dataOktaTrustedOrigins.DataOktaTrustedOrigins",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func DataOktaTrustedOrigins_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataOktaTrustedOrigins_IsTerraformElement(x interface{}) *bool {
+func DataOktaTrustedOrigins_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataOktaTrustedOrigins_IsTerraformElementParameters(x); err != nil {
@@ -479,7 +478,7 @@ func DataOktaTrustedOrigins_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.dataOktaTrustedOrigins.DataOktaTrustedOrigins",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -497,27 +496,27 @@ func DataOktaTrustedOrigins_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataOktaTrustedOrigins) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataOktaTrustedOrigins) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataOktaTrustedOrigins) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataOktaTrustedOrigins) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -533,7 +532,7 @@ func (d *jsiiProxy_DataOktaTrustedOrigins) GetBooleanAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -549,7 +548,7 @@ func (d *jsiiProxy_DataOktaTrustedOrigins) GetBooleanMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -565,7 +564,7 @@ func (d *jsiiProxy_DataOktaTrustedOrigins) GetListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -581,7 +580,7 @@ func (d *jsiiProxy_DataOktaTrustedOrigins) GetNumberAttribute(terraformAttribute
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -597,7 +596,7 @@ func (d *jsiiProxy_DataOktaTrustedOrigins) GetNumberListAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -613,7 +612,7 @@ func (d *jsiiProxy_DataOktaTrustedOrigins) GetNumberMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -629,7 +628,7 @@ func (d *jsiiProxy_DataOktaTrustedOrigins) GetStringAttribute(terraformAttribute
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -645,7 +644,7 @@ func (d *jsiiProxy_DataOktaTrustedOrigins) GetStringMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -661,7 +660,7 @@ func (d *jsiiProxy_DataOktaTrustedOrigins) InterpolationForAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -675,7 +674,7 @@ func (d *jsiiProxy_DataOktaTrustedOrigins) OverrideLogicalId(newLogicalId *strin
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -703,8 +702,8 @@ func (d *jsiiProxy_DataOktaTrustedOrigins) ResetOverrideLogicalId() {
 	)
 }
 
-func (d *jsiiProxy_DataOktaTrustedOrigins) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataOktaTrustedOrigins) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -716,8 +715,8 @@ func (d *jsiiProxy_DataOktaTrustedOrigins) SynthesizeAttributes() *map[string]in
 	return returns
 }
 
-func (d *jsiiProxy_DataOktaTrustedOrigins) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataOktaTrustedOrigins) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -729,8 +728,8 @@ func (d *jsiiProxy_DataOktaTrustedOrigins) SynthesizeHclAttributes() *map[string
 	return returns
 }
 
-func (d *jsiiProxy_DataOktaTrustedOrigins) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataOktaTrustedOrigins) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -742,8 +741,8 @@ func (d *jsiiProxy_DataOktaTrustedOrigins) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataOktaTrustedOrigins) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataOktaTrustedOrigins) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -768,8 +767,8 @@ func (d *jsiiProxy_DataOktaTrustedOrigins) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataOktaTrustedOrigins) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataOktaTrustedOrigins) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -780,4 +779,3 @@ func (d *jsiiProxy_DataOktaTrustedOrigins) ToTerraform() interface{} {
 
 	return returns
 }
-

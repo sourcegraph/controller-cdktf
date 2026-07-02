@@ -98,7 +98,7 @@ func (p *jsiiProxy_PolicyRuleIdpDiscoveryAppExcludeOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscoveryAppExcludeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PolicyRuleIdpDiscoveryAppExcludeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_PolicyRuleIdpDiscoveryAppExcludeOutputReference) validateSetI
 	return nil
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscoveryAppExcludeOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PolicyRuleIdpDiscoveryAppExcludeOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewPolicyRuleIdpDiscoveryAppExcludeOutputReferenceParameters(terraf
 
 	return nil
 }
-

@@ -34,7 +34,7 @@ func (p *jsiiProxy_PolicyRuleMfaAppExcludeList) validateResolveParameters(_conte
 	return nil
 }
 
-func (j *jsiiProxy_PolicyRuleMfaAppExcludeList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PolicyRuleMfaAppExcludeList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewPolicyRuleMfaAppExcludeListParameters(terraformResource cdktf.II
 
 	return nil
 }
-

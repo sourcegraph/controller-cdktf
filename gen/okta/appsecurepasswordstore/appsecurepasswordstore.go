@@ -18,30 +18,30 @@ type AppSecurePasswordStore interface {
 	AccessibilityLoginRedirectUrl() *string
 	SetAccessibilityLoginRedirectUrl(val *string)
 	AccessibilityLoginRedirectUrlInput() *string
-	AccessibilitySelfService() interface{}
-	SetAccessibilitySelfService(val interface{})
-	AccessibilitySelfServiceInput() interface{}
+	AccessibilitySelfService() any
+	SetAccessibilitySelfService(val any)
+	AccessibilitySelfServiceInput() any
 	AdminNote() *string
 	SetAdminNote(val *string)
 	AdminNoteInput() *string
 	AppLinksJson() *string
 	SetAppLinksJson(val *string)
 	AppLinksJsonInput() *string
-	AutoSubmitToolbar() interface{}
-	SetAutoSubmitToolbar(val interface{})
-	AutoSubmitToolbarInput() interface{}
+	AutoSubmitToolbar() any
+	SetAutoSubmitToolbar(val any)
+	AutoSubmitToolbarInput() any
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CredentialsScheme() *string
 	SetCredentialsScheme(val *string)
 	CredentialsSchemeInput() *string
@@ -60,12 +60,12 @@ type AppSecurePasswordStore interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
-	HideIos() interface{}
-	SetHideIos(val interface{})
-	HideIosInput() interface{}
-	HideWeb() interface{}
-	SetHideWeb(val interface{})
-	HideWebInput() interface{}
+	HideIos() any
+	SetHideIos(val any)
+	HideIosInput() any
+	HideWeb() any
+	SetHideWeb(val any)
+	HideWebInput() any
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -109,14 +109,14 @@ type AppSecurePasswordStore interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
-	RevealPassword() interface{}
-	SetRevealPassword(val interface{})
-	RevealPasswordInput() interface{}
+	RawOverrides() any
+	RevealPassword() any
+	SetRevealPassword(val any)
+	RevealPasswordInput() any
 	SharedPassword() *string
 	SetSharedPassword(val *string)
 	SharedPasswordInput() *string
@@ -130,11 +130,11 @@ type AppSecurePasswordStore interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() AppSecurePasswordStoreTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Url() *string
 	SetUrl(val *string)
 	UrlInput() *string
@@ -157,9 +157,9 @@ type AppSecurePasswordStore interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -177,7 +177,7 @@ type AppSecurePasswordStore interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -189,7 +189,7 @@ type AppSecurePasswordStore interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -227,17 +227,17 @@ type AppSecurePasswordStore interface {
 	ResetUserNameTemplatePushStatus()
 	ResetUserNameTemplateSuffix()
 	ResetUserNameTemplateType()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for AppSecurePasswordStore
@@ -285,8 +285,8 @@ func (j *jsiiProxy_AppSecurePasswordStore) AccessibilityLoginRedirectUrlInput() 
 	return returns
 }
 
-func (j *jsiiProxy_AppSecurePasswordStore) AccessibilitySelfService() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppSecurePasswordStore) AccessibilitySelfService() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"accessibilitySelfService",
@@ -295,8 +295,8 @@ func (j *jsiiProxy_AppSecurePasswordStore) AccessibilitySelfService() interface{
 	return returns
 }
 
-func (j *jsiiProxy_AppSecurePasswordStore) AccessibilitySelfServiceInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppSecurePasswordStore) AccessibilitySelfServiceInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"accessibilitySelfServiceInput",
@@ -345,8 +345,8 @@ func (j *jsiiProxy_AppSecurePasswordStore) AppLinksJsonInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AppSecurePasswordStore) AutoSubmitToolbar() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppSecurePasswordStore) AutoSubmitToolbar() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"autoSubmitToolbar",
@@ -355,8 +355,8 @@ func (j *jsiiProxy_AppSecurePasswordStore) AutoSubmitToolbar() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AppSecurePasswordStore) AutoSubmitToolbarInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppSecurePasswordStore) AutoSubmitToolbarInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"autoSubmitToolbarInput",
@@ -375,8 +375,8 @@ func (j *jsiiProxy_AppSecurePasswordStore) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_AppSecurePasswordStore) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppSecurePasswordStore) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -385,8 +385,8 @@ func (j *jsiiProxy_AppSecurePasswordStore) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AppSecurePasswordStore) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AppSecurePasswordStore) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -395,8 +395,8 @@ func (j *jsiiProxy_AppSecurePasswordStore) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_AppSecurePasswordStore) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppSecurePasswordStore) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -485,8 +485,8 @@ func (j *jsiiProxy_AppSecurePasswordStore) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AppSecurePasswordStore) HideIos() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppSecurePasswordStore) HideIos() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"hideIos",
@@ -495,8 +495,8 @@ func (j *jsiiProxy_AppSecurePasswordStore) HideIos() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AppSecurePasswordStore) HideIosInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppSecurePasswordStore) HideIosInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"hideIosInput",
@@ -505,8 +505,8 @@ func (j *jsiiProxy_AppSecurePasswordStore) HideIosInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AppSecurePasswordStore) HideWeb() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppSecurePasswordStore) HideWeb() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"hideWeb",
@@ -515,8 +515,8 @@ func (j *jsiiProxy_AppSecurePasswordStore) HideWeb() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AppSecurePasswordStore) HideWebInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppSecurePasswordStore) HideWebInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"hideWebInput",
@@ -775,8 +775,8 @@ func (j *jsiiProxy_AppSecurePasswordStore) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_AppSecurePasswordStore) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_AppSecurePasswordStore) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -785,8 +785,8 @@ func (j *jsiiProxy_AppSecurePasswordStore) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AppSecurePasswordStore) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppSecurePasswordStore) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -795,8 +795,8 @@ func (j *jsiiProxy_AppSecurePasswordStore) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AppSecurePasswordStore) RevealPassword() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppSecurePasswordStore) RevealPassword() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"revealPassword",
@@ -805,8 +805,8 @@ func (j *jsiiProxy_AppSecurePasswordStore) RevealPassword() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AppSecurePasswordStore) RevealPasswordInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppSecurePasswordStore) RevealPasswordInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"revealPasswordInput",
@@ -895,8 +895,8 @@ func (j *jsiiProxy_AppSecurePasswordStore) TerraformGeneratorMetadata() *cdktf.T
 	return returns
 }
 
-func (j *jsiiProxy_AppSecurePasswordStore) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AppSecurePasswordStore) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -925,8 +925,8 @@ func (j *jsiiProxy_AppSecurePasswordStore) Timeouts() AppSecurePasswordStoreTime
 	return returns
 }
 
-func (j *jsiiProxy_AppSecurePasswordStore) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppSecurePasswordStore) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -1055,7 +1055,6 @@ func (j *jsiiProxy_AppSecurePasswordStore) UserNameTemplateTypeInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_secure_password_store okta_app_secure_password_store} Resource.
 func NewAppSecurePasswordStore(scope constructs.Construct, id *string, config *AppSecurePasswordStoreConfig) AppSecurePasswordStore {
 	_init_.Initialize()
@@ -1067,7 +1066,7 @@ func NewAppSecurePasswordStore(scope constructs.Construct, id *string, config *A
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.appSecurePasswordStore.AppSecurePasswordStore",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -1080,12 +1079,12 @@ func NewAppSecurePasswordStore_Override(a AppSecurePasswordStore, scope construc
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.appSecurePasswordStore.AppSecurePasswordStore",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AppSecurePasswordStore)SetAccessibilityErrorRedirectUrl(val *string) {
+func (j *jsiiProxy_AppSecurePasswordStore) SetAccessibilityErrorRedirectUrl(val *string) {
 	if err := j.validateSetAccessibilityErrorRedirectUrlParameters(val); err != nil {
 		panic(err)
 	}
@@ -1096,7 +1095,7 @@ func (j *jsiiProxy_AppSecurePasswordStore)SetAccessibilityErrorRedirectUrl(val *
 	)
 }
 
-func (j *jsiiProxy_AppSecurePasswordStore)SetAccessibilityLoginRedirectUrl(val *string) {
+func (j *jsiiProxy_AppSecurePasswordStore) SetAccessibilityLoginRedirectUrl(val *string) {
 	if err := j.validateSetAccessibilityLoginRedirectUrlParameters(val); err != nil {
 		panic(err)
 	}
@@ -1107,7 +1106,7 @@ func (j *jsiiProxy_AppSecurePasswordStore)SetAccessibilityLoginRedirectUrl(val *
 	)
 }
 
-func (j *jsiiProxy_AppSecurePasswordStore)SetAccessibilitySelfService(val interface{}) {
+func (j *jsiiProxy_AppSecurePasswordStore) SetAccessibilitySelfService(val any) {
 	if err := j.validateSetAccessibilitySelfServiceParameters(val); err != nil {
 		panic(err)
 	}
@@ -1118,7 +1117,7 @@ func (j *jsiiProxy_AppSecurePasswordStore)SetAccessibilitySelfService(val interf
 	)
 }
 
-func (j *jsiiProxy_AppSecurePasswordStore)SetAdminNote(val *string) {
+func (j *jsiiProxy_AppSecurePasswordStore) SetAdminNote(val *string) {
 	if err := j.validateSetAdminNoteParameters(val); err != nil {
 		panic(err)
 	}
@@ -1129,7 +1128,7 @@ func (j *jsiiProxy_AppSecurePasswordStore)SetAdminNote(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppSecurePasswordStore)SetAppLinksJson(val *string) {
+func (j *jsiiProxy_AppSecurePasswordStore) SetAppLinksJson(val *string) {
 	if err := j.validateSetAppLinksJsonParameters(val); err != nil {
 		panic(err)
 	}
@@ -1140,7 +1139,7 @@ func (j *jsiiProxy_AppSecurePasswordStore)SetAppLinksJson(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppSecurePasswordStore)SetAutoSubmitToolbar(val interface{}) {
+func (j *jsiiProxy_AppSecurePasswordStore) SetAutoSubmitToolbar(val any) {
 	if err := j.validateSetAutoSubmitToolbarParameters(val); err != nil {
 		panic(err)
 	}
@@ -1151,7 +1150,7 @@ func (j *jsiiProxy_AppSecurePasswordStore)SetAutoSubmitToolbar(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_AppSecurePasswordStore)SetConnection(val interface{}) {
+func (j *jsiiProxy_AppSecurePasswordStore) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1162,7 +1161,7 @@ func (j *jsiiProxy_AppSecurePasswordStore)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppSecurePasswordStore)SetCount(val interface{}) {
+func (j *jsiiProxy_AppSecurePasswordStore) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -1173,7 +1172,7 @@ func (j *jsiiProxy_AppSecurePasswordStore)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppSecurePasswordStore)SetCredentialsScheme(val *string) {
+func (j *jsiiProxy_AppSecurePasswordStore) SetCredentialsScheme(val *string) {
 	if err := j.validateSetCredentialsSchemeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1184,7 +1183,7 @@ func (j *jsiiProxy_AppSecurePasswordStore)SetCredentialsScheme(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppSecurePasswordStore)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_AppSecurePasswordStore) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -1192,7 +1191,7 @@ func (j *jsiiProxy_AppSecurePasswordStore)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AppSecurePasswordStore)SetEnduserNote(val *string) {
+func (j *jsiiProxy_AppSecurePasswordStore) SetEnduserNote(val *string) {
 	if err := j.validateSetEnduserNoteParameters(val); err != nil {
 		panic(err)
 	}
@@ -1203,7 +1202,7 @@ func (j *jsiiProxy_AppSecurePasswordStore)SetEnduserNote(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppSecurePasswordStore)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_AppSecurePasswordStore) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1211,7 +1210,7 @@ func (j *jsiiProxy_AppSecurePasswordStore)SetForEach(val cdktf.ITerraformIterato
 	)
 }
 
-func (j *jsiiProxy_AppSecurePasswordStore)SetHideIos(val interface{}) {
+func (j *jsiiProxy_AppSecurePasswordStore) SetHideIos(val any) {
 	if err := j.validateSetHideIosParameters(val); err != nil {
 		panic(err)
 	}
@@ -1222,7 +1221,7 @@ func (j *jsiiProxy_AppSecurePasswordStore)SetHideIos(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppSecurePasswordStore)SetHideWeb(val interface{}) {
+func (j *jsiiProxy_AppSecurePasswordStore) SetHideWeb(val any) {
 	if err := j.validateSetHideWebParameters(val); err != nil {
 		panic(err)
 	}
@@ -1233,7 +1232,7 @@ func (j *jsiiProxy_AppSecurePasswordStore)SetHideWeb(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppSecurePasswordStore)SetId(val *string) {
+func (j *jsiiProxy_AppSecurePasswordStore) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1244,7 +1243,7 @@ func (j *jsiiProxy_AppSecurePasswordStore)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppSecurePasswordStore)SetLabel(val *string) {
+func (j *jsiiProxy_AppSecurePasswordStore) SetLabel(val *string) {
 	if err := j.validateSetLabelParameters(val); err != nil {
 		panic(err)
 	}
@@ -1255,7 +1254,7 @@ func (j *jsiiProxy_AppSecurePasswordStore)SetLabel(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppSecurePasswordStore)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_AppSecurePasswordStore) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1266,7 +1265,7 @@ func (j *jsiiProxy_AppSecurePasswordStore)SetLifecycle(val *cdktf.TerraformResou
 	)
 }
 
-func (j *jsiiProxy_AppSecurePasswordStore)SetLogo(val *string) {
+func (j *jsiiProxy_AppSecurePasswordStore) SetLogo(val *string) {
 	if err := j.validateSetLogoParameters(val); err != nil {
 		panic(err)
 	}
@@ -1277,7 +1276,7 @@ func (j *jsiiProxy_AppSecurePasswordStore)SetLogo(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppSecurePasswordStore)SetOptionalField1(val *string) {
+func (j *jsiiProxy_AppSecurePasswordStore) SetOptionalField1(val *string) {
 	if err := j.validateSetOptionalField1Parameters(val); err != nil {
 		panic(err)
 	}
@@ -1288,7 +1287,7 @@ func (j *jsiiProxy_AppSecurePasswordStore)SetOptionalField1(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppSecurePasswordStore)SetOptionalField1Value(val *string) {
+func (j *jsiiProxy_AppSecurePasswordStore) SetOptionalField1Value(val *string) {
 	if err := j.validateSetOptionalField1ValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -1299,7 +1298,7 @@ func (j *jsiiProxy_AppSecurePasswordStore)SetOptionalField1Value(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppSecurePasswordStore)SetOptionalField2(val *string) {
+func (j *jsiiProxy_AppSecurePasswordStore) SetOptionalField2(val *string) {
 	if err := j.validateSetOptionalField2Parameters(val); err != nil {
 		panic(err)
 	}
@@ -1310,7 +1309,7 @@ func (j *jsiiProxy_AppSecurePasswordStore)SetOptionalField2(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppSecurePasswordStore)SetOptionalField2Value(val *string) {
+func (j *jsiiProxy_AppSecurePasswordStore) SetOptionalField2Value(val *string) {
 	if err := j.validateSetOptionalField2ValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -1321,7 +1320,7 @@ func (j *jsiiProxy_AppSecurePasswordStore)SetOptionalField2Value(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppSecurePasswordStore)SetOptionalField3(val *string) {
+func (j *jsiiProxy_AppSecurePasswordStore) SetOptionalField3(val *string) {
 	if err := j.validateSetOptionalField3Parameters(val); err != nil {
 		panic(err)
 	}
@@ -1332,7 +1331,7 @@ func (j *jsiiProxy_AppSecurePasswordStore)SetOptionalField3(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppSecurePasswordStore)SetOptionalField3Value(val *string) {
+func (j *jsiiProxy_AppSecurePasswordStore) SetOptionalField3Value(val *string) {
 	if err := j.validateSetOptionalField3ValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -1343,7 +1342,7 @@ func (j *jsiiProxy_AppSecurePasswordStore)SetOptionalField3Value(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppSecurePasswordStore)SetPasswordField(val *string) {
+func (j *jsiiProxy_AppSecurePasswordStore) SetPasswordField(val *string) {
 	if err := j.validateSetPasswordFieldParameters(val); err != nil {
 		panic(err)
 	}
@@ -1354,7 +1353,7 @@ func (j *jsiiProxy_AppSecurePasswordStore)SetPasswordField(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppSecurePasswordStore)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_AppSecurePasswordStore) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1362,7 +1361,7 @@ func (j *jsiiProxy_AppSecurePasswordStore)SetProvider(val cdktf.TerraformProvide
 	)
 }
 
-func (j *jsiiProxy_AppSecurePasswordStore)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_AppSecurePasswordStore) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1373,7 +1372,7 @@ func (j *jsiiProxy_AppSecurePasswordStore)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppSecurePasswordStore)SetRevealPassword(val interface{}) {
+func (j *jsiiProxy_AppSecurePasswordStore) SetRevealPassword(val any) {
 	if err := j.validateSetRevealPasswordParameters(val); err != nil {
 		panic(err)
 	}
@@ -1384,7 +1383,7 @@ func (j *jsiiProxy_AppSecurePasswordStore)SetRevealPassword(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppSecurePasswordStore)SetSharedPassword(val *string) {
+func (j *jsiiProxy_AppSecurePasswordStore) SetSharedPassword(val *string) {
 	if err := j.validateSetSharedPasswordParameters(val); err != nil {
 		panic(err)
 	}
@@ -1395,7 +1394,7 @@ func (j *jsiiProxy_AppSecurePasswordStore)SetSharedPassword(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppSecurePasswordStore)SetSharedUsername(val *string) {
+func (j *jsiiProxy_AppSecurePasswordStore) SetSharedUsername(val *string) {
 	if err := j.validateSetSharedUsernameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1406,7 +1405,7 @@ func (j *jsiiProxy_AppSecurePasswordStore)SetSharedUsername(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppSecurePasswordStore)SetStatus(val *string) {
+func (j *jsiiProxy_AppSecurePasswordStore) SetStatus(val *string) {
 	if err := j.validateSetStatusParameters(val); err != nil {
 		panic(err)
 	}
@@ -1417,7 +1416,7 @@ func (j *jsiiProxy_AppSecurePasswordStore)SetStatus(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppSecurePasswordStore)SetUrl(val *string) {
+func (j *jsiiProxy_AppSecurePasswordStore) SetUrl(val *string) {
 	if err := j.validateSetUrlParameters(val); err != nil {
 		panic(err)
 	}
@@ -1428,7 +1427,7 @@ func (j *jsiiProxy_AppSecurePasswordStore)SetUrl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppSecurePasswordStore)SetUsernameField(val *string) {
+func (j *jsiiProxy_AppSecurePasswordStore) SetUsernameField(val *string) {
 	if err := j.validateSetUsernameFieldParameters(val); err != nil {
 		panic(err)
 	}
@@ -1439,7 +1438,7 @@ func (j *jsiiProxy_AppSecurePasswordStore)SetUsernameField(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppSecurePasswordStore)SetUserNameTemplate(val *string) {
+func (j *jsiiProxy_AppSecurePasswordStore) SetUserNameTemplate(val *string) {
 	if err := j.validateSetUserNameTemplateParameters(val); err != nil {
 		panic(err)
 	}
@@ -1450,7 +1449,7 @@ func (j *jsiiProxy_AppSecurePasswordStore)SetUserNameTemplate(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppSecurePasswordStore)SetUserNameTemplatePushStatus(val *string) {
+func (j *jsiiProxy_AppSecurePasswordStore) SetUserNameTemplatePushStatus(val *string) {
 	if err := j.validateSetUserNameTemplatePushStatusParameters(val); err != nil {
 		panic(err)
 	}
@@ -1461,7 +1460,7 @@ func (j *jsiiProxy_AppSecurePasswordStore)SetUserNameTemplatePushStatus(val *str
 	)
 }
 
-func (j *jsiiProxy_AppSecurePasswordStore)SetUserNameTemplateSuffix(val *string) {
+func (j *jsiiProxy_AppSecurePasswordStore) SetUserNameTemplateSuffix(val *string) {
 	if err := j.validateSetUserNameTemplateSuffixParameters(val); err != nil {
 		panic(err)
 	}
@@ -1472,7 +1471,7 @@ func (j *jsiiProxy_AppSecurePasswordStore)SetUserNameTemplateSuffix(val *string)
 	)
 }
 
-func (j *jsiiProxy_AppSecurePasswordStore)SetUserNameTemplateType(val *string) {
+func (j *jsiiProxy_AppSecurePasswordStore) SetUserNameTemplateType(val *string) {
 	if err := j.validateSetUserNameTemplateTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1495,7 +1494,7 @@ func AppSecurePasswordStore_GenerateConfigForImport(scope constructs.Construct, 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.appSecurePasswordStore.AppSecurePasswordStore",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1519,7 +1518,7 @@ func AppSecurePasswordStore_GenerateConfigForImport(scope constructs.Construct, 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func AppSecurePasswordStore_IsConstruct(x interface{}) *bool {
+func AppSecurePasswordStore_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAppSecurePasswordStore_IsConstructParameters(x); err != nil {
@@ -1530,7 +1529,7 @@ func AppSecurePasswordStore_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.appSecurePasswordStore.AppSecurePasswordStore",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1538,7 +1537,7 @@ func AppSecurePasswordStore_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func AppSecurePasswordStore_IsTerraformElement(x interface{}) *bool {
+func AppSecurePasswordStore_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAppSecurePasswordStore_IsTerraformElementParameters(x); err != nil {
@@ -1549,7 +1548,7 @@ func AppSecurePasswordStore_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.appSecurePasswordStore.AppSecurePasswordStore",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1557,7 +1556,7 @@ func AppSecurePasswordStore_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func AppSecurePasswordStore_IsTerraformResource(x interface{}) *bool {
+func AppSecurePasswordStore_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAppSecurePasswordStore_IsTerraformResourceParameters(x); err != nil {
@@ -1568,7 +1567,7 @@ func AppSecurePasswordStore_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.appSecurePasswordStore.AppSecurePasswordStore",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1593,31 +1592,31 @@ func (a *jsiiProxy_AppSecurePasswordStore) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (a *jsiiProxy_AppSecurePasswordStore) AddOverride(path *string, value interface{}) {
+func (a *jsiiProxy_AppSecurePasswordStore) AddOverride(path *string, value any) {
 	if err := a.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (a *jsiiProxy_AppSecurePasswordStore) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AppSecurePasswordStore) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1633,7 +1632,7 @@ func (a *jsiiProxy_AppSecurePasswordStore) GetBooleanAttribute(terraformAttribut
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1649,7 +1648,7 @@ func (a *jsiiProxy_AppSecurePasswordStore) GetBooleanMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1665,7 +1664,7 @@ func (a *jsiiProxy_AppSecurePasswordStore) GetListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1681,7 +1680,7 @@ func (a *jsiiProxy_AppSecurePasswordStore) GetNumberAttribute(terraformAttribute
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1697,7 +1696,7 @@ func (a *jsiiProxy_AppSecurePasswordStore) GetNumberListAttribute(terraformAttri
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1713,7 +1712,7 @@ func (a *jsiiProxy_AppSecurePasswordStore) GetNumberMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1729,7 +1728,7 @@ func (a *jsiiProxy_AppSecurePasswordStore) GetStringAttribute(terraformAttribute
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1745,15 +1744,15 @@ func (a *jsiiProxy_AppSecurePasswordStore) GetStringMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_AppSecurePasswordStore) HasResourceMove() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AppSecurePasswordStore) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1772,7 +1771,7 @@ func (a *jsiiProxy_AppSecurePasswordStore) ImportFrom(id *string, provider cdktf
 	_jsii_.InvokeVoid(
 		a,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1785,7 +1784,7 @@ func (a *jsiiProxy_AppSecurePasswordStore) InterpolationForAttribute(terraformAt
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1799,18 +1798,18 @@ func (a *jsiiProxy_AppSecurePasswordStore) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (a *jsiiProxy_AppSecurePasswordStore) MoveTo(moveTarget *string, index interface{}) {
+func (a *jsiiProxy_AppSecurePasswordStore) MoveTo(moveTarget *string, index any) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1821,7 +1820,7 @@ func (a *jsiiProxy_AppSecurePasswordStore) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1832,7 +1831,7 @@ func (a *jsiiProxy_AppSecurePasswordStore) OverrideLogicalId(newLogicalId *strin
 	_jsii_.InvokeVoid(
 		a,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1843,7 +1842,7 @@ func (a *jsiiProxy_AppSecurePasswordStore) PutTimeouts(value *AppSecurePasswordS
 	_jsii_.InvokeVoid(
 		a,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -2071,8 +2070,8 @@ func (a *jsiiProxy_AppSecurePasswordStore) ResetUserNameTemplateType() {
 	)
 }
 
-func (a *jsiiProxy_AppSecurePasswordStore) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AppSecurePasswordStore) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -2084,8 +2083,8 @@ func (a *jsiiProxy_AppSecurePasswordStore) SynthesizeAttributes() *map[string]in
 	return returns
 }
 
-func (a *jsiiProxy_AppSecurePasswordStore) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AppSecurePasswordStore) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -2097,8 +2096,8 @@ func (a *jsiiProxy_AppSecurePasswordStore) SynthesizeHclAttributes() *map[string
 	return returns
 }
 
-func (a *jsiiProxy_AppSecurePasswordStore) ToHclTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AppSecurePasswordStore) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -2110,8 +2109,8 @@ func (a *jsiiProxy_AppSecurePasswordStore) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_AppSecurePasswordStore) ToMetadata() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AppSecurePasswordStore) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -2136,8 +2135,8 @@ func (a *jsiiProxy_AppSecurePasswordStore) ToString() *string {
 	return returns
 }
 
-func (a *jsiiProxy_AppSecurePasswordStore) ToTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AppSecurePasswordStore) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -2148,4 +2147,3 @@ func (a *jsiiProxy_AppSecurePasswordStore) ToTerraform() interface{} {
 
 	return returns
 }
-

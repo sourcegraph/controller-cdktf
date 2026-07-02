@@ -6,9 +6,9 @@ import (
 
 type AppUserSchemaPropertyConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type AppUserSchemaPropertyConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The Application's ID the user custom schema property should be assigned to.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user_schema_property#app_id AppUserSchemaProperty#app_id}
@@ -42,7 +42,7 @@ type AppUserSchemaPropertyConfig struct {
 	// array_one_of block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user_schema_property#array_one_of AppUserSchemaProperty#array_one_of}
-	ArrayOneOf interface{} `field:"optional" json:"arrayOneOf" yaml:"arrayOneOf"`
+	ArrayOneOf any `field:"optional" json:"arrayOneOf" yaml:"arrayOneOf"`
 	// The type of the array elements if `type` is set to `array`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user_schema_property#array_type AppUserSchemaProperty#array_type}
@@ -83,7 +83,7 @@ type AppUserSchemaPropertyConfig struct {
 	// one_of block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user_schema_property#one_of AppUserSchemaProperty#one_of}
-	OneOf interface{} `field:"optional" json:"oneOf" yaml:"oneOf"`
+	OneOf any `field:"optional" json:"oneOf" yaml:"oneOf"`
 	// Access control permissions for the property. It can be set to `READ_WRITE`, `READ_ONLY`, `HIDE`. Default: `READ_ONLY`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user_schema_property#permissions AppUserSchemaProperty#permissions}
@@ -91,7 +91,7 @@ type AppUserSchemaPropertyConfig struct {
 	// Whether the subschema is required.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user_schema_property#required AppUserSchemaProperty#required}
-	Required interface{} `field:"optional" json:"required" yaml:"required"`
+	Required any `field:"optional" json:"required" yaml:"required"`
 	// determines whether an app user attribute can be set at the Personal `SELF` or Group `NONE` level.
 	//
 	// Default value is `NONE`.
@@ -103,7 +103,7 @@ type AppUserSchemaPropertyConfig struct {
 	// Can not be set to `true` if `scope` is set to `SELF`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user_schema_property#union AppUserSchemaProperty#union}
-	Union interface{} `field:"optional" json:"union" yaml:"union"`
+	Union any `field:"optional" json:"union" yaml:"union"`
 	// Whether the property should be unique. It can be set to `UNIQUE_VALIDATED` or `NOT_UNIQUE`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user_schema_property#unique AppUserSchemaProperty#unique}
@@ -113,4 +113,3 @@ type AppUserSchemaPropertyConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user_schema_property#user_type AppUserSchemaProperty#user_type}
 	UserType *string `field:"optional" json:"userType" yaml:"userType"`
 }
-

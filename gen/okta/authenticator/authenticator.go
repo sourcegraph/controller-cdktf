@@ -15,15 +15,15 @@ type Authenticator interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -42,9 +42,9 @@ type Authenticator interface {
 	Key() *string
 	SetKey(val *string)
 	KeyInput() *string
-	LegacyIgnoreName() interface{}
-	SetLegacyIgnoreName(val interface{})
-	LegacyIgnoreNameInput() interface{}
+	LegacyIgnoreName() any
+	SetLegacyIgnoreName(val any)
+	LegacyIgnoreNameInput() any
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -85,11 +85,11 @@ type Authenticator interface {
 	SetProviderUserNameTemplate(val *string)
 	ProviderUserNameTemplateInput() *string
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Settings() *string
 	SetSettings(val *string)
 	SettingsInput() *string
@@ -99,7 +99,7 @@ type Authenticator interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Type() *string
@@ -107,9 +107,9 @@ type Authenticator interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -127,7 +127,7 @@ type Authenticator interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -139,7 +139,7 @@ type Authenticator interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -161,17 +161,17 @@ type Authenticator interface {
 	ResetProviderUserNameTemplate()
 	ResetSettings()
 	ResetStatus()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for Authenticator
@@ -189,8 +189,8 @@ func (j *jsiiProxy_Authenticator) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_Authenticator) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Authenticator) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -199,8 +199,8 @@ func (j *jsiiProxy_Authenticator) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Authenticator) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Authenticator) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -209,8 +209,8 @@ func (j *jsiiProxy_Authenticator) ConstructNodeMetadata() *map[string]interface{
 	return returns
 }
 
-func (j *jsiiProxy_Authenticator) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Authenticator) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -299,8 +299,8 @@ func (j *jsiiProxy_Authenticator) KeyInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Authenticator) LegacyIgnoreName() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Authenticator) LegacyIgnoreName() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"legacyIgnoreName",
@@ -309,8 +309,8 @@ func (j *jsiiProxy_Authenticator) LegacyIgnoreName() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Authenticator) LegacyIgnoreNameInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Authenticator) LegacyIgnoreNameInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"legacyIgnoreNameInput",
@@ -549,8 +549,8 @@ func (j *jsiiProxy_Authenticator) ProviderUserNameTemplateInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Authenticator) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_Authenticator) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -559,8 +559,8 @@ func (j *jsiiProxy_Authenticator) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Authenticator) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Authenticator) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -619,8 +619,8 @@ func (j *jsiiProxy_Authenticator) TerraformGeneratorMetadata() *cdktf.TerraformP
 	return returns
 }
 
-func (j *jsiiProxy_Authenticator) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Authenticator) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -649,7 +649,6 @@ func (j *jsiiProxy_Authenticator) Type() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/authenticator okta_authenticator} Resource.
 func NewAuthenticator(scope constructs.Construct, id *string, config *AuthenticatorConfig) Authenticator {
 	_init_.Initialize()
@@ -661,7 +660,7 @@ func NewAuthenticator(scope constructs.Construct, id *string, config *Authentica
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.authenticator.Authenticator",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -674,12 +673,12 @@ func NewAuthenticator_Override(a Authenticator, scope constructs.Construct, id *
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.authenticator.Authenticator",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		a,
 	)
 }
 
-func (j *jsiiProxy_Authenticator)SetConnection(val interface{}) {
+func (j *jsiiProxy_Authenticator) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -690,7 +689,7 @@ func (j *jsiiProxy_Authenticator)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Authenticator)SetCount(val interface{}) {
+func (j *jsiiProxy_Authenticator) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -701,7 +700,7 @@ func (j *jsiiProxy_Authenticator)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Authenticator)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_Authenticator) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -709,7 +708,7 @@ func (j *jsiiProxy_Authenticator)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Authenticator)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Authenticator) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -717,7 +716,7 @@ func (j *jsiiProxy_Authenticator)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_Authenticator)SetId(val *string) {
+func (j *jsiiProxy_Authenticator) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -728,7 +727,7 @@ func (j *jsiiProxy_Authenticator)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Authenticator)SetKey(val *string) {
+func (j *jsiiProxy_Authenticator) SetKey(val *string) {
 	if err := j.validateSetKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -739,7 +738,7 @@ func (j *jsiiProxy_Authenticator)SetKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Authenticator)SetLegacyIgnoreName(val interface{}) {
+func (j *jsiiProxy_Authenticator) SetLegacyIgnoreName(val any) {
 	if err := j.validateSetLegacyIgnoreNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -750,7 +749,7 @@ func (j *jsiiProxy_Authenticator)SetLegacyIgnoreName(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Authenticator)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Authenticator) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -761,7 +760,7 @@ func (j *jsiiProxy_Authenticator)SetLifecycle(val *cdktf.TerraformResourceLifecy
 	)
 }
 
-func (j *jsiiProxy_Authenticator)SetName(val *string) {
+func (j *jsiiProxy_Authenticator) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -772,7 +771,7 @@ func (j *jsiiProxy_Authenticator)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Authenticator)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Authenticator) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -780,7 +779,7 @@ func (j *jsiiProxy_Authenticator)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_Authenticator)SetProviderAuthPort(val *float64) {
+func (j *jsiiProxy_Authenticator) SetProviderAuthPort(val *float64) {
 	if err := j.validateSetProviderAuthPortParameters(val); err != nil {
 		panic(err)
 	}
@@ -791,7 +790,7 @@ func (j *jsiiProxy_Authenticator)SetProviderAuthPort(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Authenticator)SetProviderHost(val *string) {
+func (j *jsiiProxy_Authenticator) SetProviderHost(val *string) {
 	if err := j.validateSetProviderHostParameters(val); err != nil {
 		panic(err)
 	}
@@ -802,7 +801,7 @@ func (j *jsiiProxy_Authenticator)SetProviderHost(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Authenticator)SetProviderHostname(val *string) {
+func (j *jsiiProxy_Authenticator) SetProviderHostname(val *string) {
 	if err := j.validateSetProviderHostnameParameters(val); err != nil {
 		panic(err)
 	}
@@ -813,7 +812,7 @@ func (j *jsiiProxy_Authenticator)SetProviderHostname(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Authenticator)SetProviderIntegrationKey(val *string) {
+func (j *jsiiProxy_Authenticator) SetProviderIntegrationKey(val *string) {
 	if err := j.validateSetProviderIntegrationKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -824,7 +823,7 @@ func (j *jsiiProxy_Authenticator)SetProviderIntegrationKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Authenticator)SetProviderJson(val *string) {
+func (j *jsiiProxy_Authenticator) SetProviderJson(val *string) {
 	if err := j.validateSetProviderJsonParameters(val); err != nil {
 		panic(err)
 	}
@@ -835,7 +834,7 @@ func (j *jsiiProxy_Authenticator)SetProviderJson(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Authenticator)SetProviderSecretKey(val *string) {
+func (j *jsiiProxy_Authenticator) SetProviderSecretKey(val *string) {
 	if err := j.validateSetProviderSecretKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -846,7 +845,7 @@ func (j *jsiiProxy_Authenticator)SetProviderSecretKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Authenticator)SetProviderSharedSecret(val *string) {
+func (j *jsiiProxy_Authenticator) SetProviderSharedSecret(val *string) {
 	if err := j.validateSetProviderSharedSecretParameters(val); err != nil {
 		panic(err)
 	}
@@ -857,7 +856,7 @@ func (j *jsiiProxy_Authenticator)SetProviderSharedSecret(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Authenticator)SetProviderUserNameTemplate(val *string) {
+func (j *jsiiProxy_Authenticator) SetProviderUserNameTemplate(val *string) {
 	if err := j.validateSetProviderUserNameTemplateParameters(val); err != nil {
 		panic(err)
 	}
@@ -868,7 +867,7 @@ func (j *jsiiProxy_Authenticator)SetProviderUserNameTemplate(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Authenticator)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_Authenticator) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -879,7 +878,7 @@ func (j *jsiiProxy_Authenticator)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Authenticator)SetSettings(val *string) {
+func (j *jsiiProxy_Authenticator) SetSettings(val *string) {
 	if err := j.validateSetSettingsParameters(val); err != nil {
 		panic(err)
 	}
@@ -890,7 +889,7 @@ func (j *jsiiProxy_Authenticator)SetSettings(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Authenticator)SetStatus(val *string) {
+func (j *jsiiProxy_Authenticator) SetStatus(val *string) {
 	if err := j.validateSetStatusParameters(val); err != nil {
 		panic(err)
 	}
@@ -913,7 +912,7 @@ func Authenticator_GenerateConfigForImport(scope constructs.Construct, importToI
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.authenticator.Authenticator",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -937,7 +936,7 @@ func Authenticator_GenerateConfigForImport(scope constructs.Construct, importToI
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func Authenticator_IsConstruct(x interface{}) *bool {
+func Authenticator_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAuthenticator_IsConstructParameters(x); err != nil {
@@ -948,7 +947,7 @@ func Authenticator_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.authenticator.Authenticator",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -956,7 +955,7 @@ func Authenticator_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func Authenticator_IsTerraformElement(x interface{}) *bool {
+func Authenticator_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAuthenticator_IsTerraformElementParameters(x); err != nil {
@@ -967,7 +966,7 @@ func Authenticator_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.authenticator.Authenticator",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -975,7 +974,7 @@ func Authenticator_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func Authenticator_IsTerraformResource(x interface{}) *bool {
+func Authenticator_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAuthenticator_IsTerraformResourceParameters(x); err != nil {
@@ -986,7 +985,7 @@ func Authenticator_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.authenticator.Authenticator",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1011,31 +1010,31 @@ func (a *jsiiProxy_Authenticator) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (a *jsiiProxy_Authenticator) AddOverride(path *string, value interface{}) {
+func (a *jsiiProxy_Authenticator) AddOverride(path *string, value any) {
 	if err := a.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (a *jsiiProxy_Authenticator) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_Authenticator) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1051,7 +1050,7 @@ func (a *jsiiProxy_Authenticator) GetBooleanAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1067,7 +1066,7 @@ func (a *jsiiProxy_Authenticator) GetBooleanMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1083,7 +1082,7 @@ func (a *jsiiProxy_Authenticator) GetListAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1099,7 +1098,7 @@ func (a *jsiiProxy_Authenticator) GetNumberAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1115,7 +1114,7 @@ func (a *jsiiProxy_Authenticator) GetNumberListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1131,7 +1130,7 @@ func (a *jsiiProxy_Authenticator) GetNumberMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1147,7 +1146,7 @@ func (a *jsiiProxy_Authenticator) GetStringAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1163,15 +1162,15 @@ func (a *jsiiProxy_Authenticator) GetStringMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_Authenticator) HasResourceMove() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_Authenticator) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1190,7 +1189,7 @@ func (a *jsiiProxy_Authenticator) ImportFrom(id *string, provider cdktf.Terrafor
 	_jsii_.InvokeVoid(
 		a,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1203,7 +1202,7 @@ func (a *jsiiProxy_Authenticator) InterpolationForAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1217,18 +1216,18 @@ func (a *jsiiProxy_Authenticator) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (a *jsiiProxy_Authenticator) MoveTo(moveTarget *string, index interface{}) {
+func (a *jsiiProxy_Authenticator) MoveTo(moveTarget *string, index any) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1239,7 +1238,7 @@ func (a *jsiiProxy_Authenticator) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1250,7 +1249,7 @@ func (a *jsiiProxy_Authenticator) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1358,8 +1357,8 @@ func (a *jsiiProxy_Authenticator) ResetStatus() {
 	)
 }
 
-func (a *jsiiProxy_Authenticator) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_Authenticator) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1371,8 +1370,8 @@ func (a *jsiiProxy_Authenticator) SynthesizeAttributes() *map[string]interface{}
 	return returns
 }
 
-func (a *jsiiProxy_Authenticator) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_Authenticator) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1384,8 +1383,8 @@ func (a *jsiiProxy_Authenticator) SynthesizeHclAttributes() *map[string]interfac
 	return returns
 }
 
-func (a *jsiiProxy_Authenticator) ToHclTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_Authenticator) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1397,8 +1396,8 @@ func (a *jsiiProxy_Authenticator) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_Authenticator) ToMetadata() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_Authenticator) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1423,8 +1422,8 @@ func (a *jsiiProxy_Authenticator) ToString() *string {
 	return returns
 }
 
-func (a *jsiiProxy_Authenticator) ToTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_Authenticator) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1435,4 +1434,3 @@ func (a *jsiiProxy_Authenticator) ToTerraform() interface{} {
 
 	return returns
 }
-

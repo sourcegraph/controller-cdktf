@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.adminRoleTargets.AdminRoleTargets",
-		reflect.TypeOf((*AdminRoleTargets)(nil)).Elem(),
+		reflect.TypeFor[AdminRoleTargets](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -67,7 +67,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userId", GoGetter: "UserId"},
 			_jsii_.MemberProperty{JsiiProperty: "userIdInput", GoGetter: "UserIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AdminRoleTargets{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -75,6 +75,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.adminRoleTargets.AdminRoleTargetsConfig",
-		reflect.TypeOf((*AdminRoleTargetsConfig)(nil)).Elem(),
+		reflect.TypeFor[AdminRoleTargetsConfig](),
 	)
 }

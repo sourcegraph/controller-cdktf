@@ -6,9 +6,9 @@ import (
 
 type AuthServerClaimConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type AuthServerClaimConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// ID of the authorization server.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/auth_server_claim#auth_server_id AuthServerClaim#auth_server_id}
@@ -38,7 +38,7 @@ type AuthServerClaimConfig struct {
 	// Specifies whether to include claims in token, by default it is set to `true`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/auth_server_claim#always_include_in_token AuthServerClaim#always_include_in_token}
-	AlwaysIncludeInToken interface{} `field:"optional" json:"alwaysIncludeInToken" yaml:"alwaysIncludeInToken"`
+	AlwaysIncludeInToken any `field:"optional" json:"alwaysIncludeInToken" yaml:"alwaysIncludeInToken"`
 	// Specifies the type of group filter if `value_type` is `GROUPS`.
 	//
 	// Can be set to one of the following `STARTS_WITH`, `EQUALS`, `CONTAINS`, `REGEX`.
@@ -63,4 +63,3 @@ type AuthServerClaimConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/auth_server_claim#value_type AuthServerClaim#value_type}
 	ValueType *string `field:"optional" json:"valueType" yaml:"valueType"`
 }
-

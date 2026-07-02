@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.profileMapping.ProfileMapping",
-		reflect.TypeOf((*ProfileMapping)(nil)).Elem(),
+		reflect.TypeFor[ProfileMapping](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -74,7 +74,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ProfileMapping{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -82,15 +82,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.profileMapping.ProfileMappingConfig",
-		reflect.TypeOf((*ProfileMappingConfig)(nil)).Elem(),
+		reflect.TypeFor[ProfileMappingConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.profileMapping.ProfileMappingMappings",
-		reflect.TypeOf((*ProfileMappingMappings)(nil)).Elem(),
+		reflect.TypeFor[ProfileMappingMappings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.profileMapping.ProfileMappingMappingsList",
-		reflect.TypeOf((*ProfileMappingMappingsList)(nil)).Elem(),
+		reflect.TypeFor[ProfileMappingMappingsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -104,7 +104,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ProfileMappingMappingsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -112,7 +112,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.profileMapping.ProfileMappingMappingsOutputReference",
-		reflect.TypeOf((*ProfileMappingMappingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ProfileMappingMappingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -143,7 +143,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ProfileMappingMappingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

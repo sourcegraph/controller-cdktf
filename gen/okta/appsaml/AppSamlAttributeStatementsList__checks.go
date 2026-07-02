@@ -34,7 +34,7 @@ func (a *jsiiProxy_AppSamlAttributeStatementsList) validateResolveParameters(_co
 	return nil
 }
 
-func (j *jsiiProxy_AppSamlAttributeStatementsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AppSamlAttributeStatementsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewAppSamlAttributeStatementsListParameters(terraformResource cdktf
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.dataOktaLogStream.DataOktaLogStream",
-		reflect.TypeOf((*DataOktaLogStream)(nil)).Elem(),
+		reflect.TypeFor[DataOktaLogStream](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -54,7 +54,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataOktaLogStream{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -62,15 +62,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.dataOktaLogStream.DataOktaLogStreamConfig",
-		reflect.TypeOf((*DataOktaLogStreamConfig)(nil)).Elem(),
+		reflect.TypeFor[DataOktaLogStreamConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.dataOktaLogStream.DataOktaLogStreamSettings",
-		reflect.TypeOf((*DataOktaLogStreamSettings)(nil)).Elem(),
+		reflect.TypeFor[DataOktaLogStreamSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.dataOktaLogStream.DataOktaLogStreamSettingsOutputReference",
-		reflect.TypeOf((*DataOktaLogStreamSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataOktaLogStreamSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -100,7 +100,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "token", GoGetter: "Token"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataOktaLogStreamSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

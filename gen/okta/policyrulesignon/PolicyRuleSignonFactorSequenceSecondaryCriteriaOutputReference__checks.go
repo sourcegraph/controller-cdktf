@@ -98,7 +98,7 @@ func (p *jsiiProxy_PolicyRuleSignonFactorSequenceSecondaryCriteriaOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_PolicyRuleSignonFactorSequenceSecondaryCriteriaOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PolicyRuleSignonFactorSequenceSecondaryCriteriaOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_PolicyRuleSignonFactorSequenceSecondaryCriteriaOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_PolicyRuleSignonFactorSequenceSecondaryCriteriaOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PolicyRuleSignonFactorSequenceSecondaryCriteriaOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewPolicyRuleSignonFactorSequenceSecondaryCriteriaOutputReferencePa
 
 	return nil
 }
-

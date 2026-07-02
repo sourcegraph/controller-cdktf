@@ -12,9 +12,9 @@ import (
 // Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/auth_server_claim okta_auth_server_claim}.
 type AuthServerClaim interface {
 	cdktf.TerraformResource
-	AlwaysIncludeInToken() interface{}
-	SetAlwaysIncludeInToken(val interface{})
-	AlwaysIncludeInTokenInput() interface{}
+	AlwaysIncludeInToken() any
+	SetAlwaysIncludeInToken(val any)
+	AlwaysIncludeInTokenInput() any
 	AuthServerId() *string
 	SetAuthServerId(val *string)
 	AuthServerIdInput() *string
@@ -24,15 +24,15 @@ type AuthServerClaim interface {
 	SetClaimType(val *string)
 	ClaimTypeInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -65,11 +65,11 @@ type AuthServerClaim interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Scopes() *[]*string
 	SetScopes(val *[]*string)
 	ScopesInput() *[]*string
@@ -79,7 +79,7 @@ type AuthServerClaim interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Value() *string
@@ -92,9 +92,9 @@ type AuthServerClaim interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -112,7 +112,7 @@ type AuthServerClaim interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -124,7 +124,7 @@ type AuthServerClaim interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -140,17 +140,17 @@ type AuthServerClaim interface {
 	ResetScopes()
 	ResetStatus()
 	ResetValueType()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for AuthServerClaim
@@ -158,8 +158,8 @@ type jsiiProxy_AuthServerClaim struct {
 	internal.Type__cdktfTerraformResource
 }
 
-func (j *jsiiProxy_AuthServerClaim) AlwaysIncludeInToken() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AuthServerClaim) AlwaysIncludeInToken() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"alwaysIncludeInToken",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_AuthServerClaim) AlwaysIncludeInToken() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AuthServerClaim) AlwaysIncludeInTokenInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AuthServerClaim) AlwaysIncludeInTokenInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"alwaysIncludeInTokenInput",
@@ -228,8 +228,8 @@ func (j *jsiiProxy_AuthServerClaim) ClaimTypeInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AuthServerClaim) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AuthServerClaim) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -238,8 +238,8 @@ func (j *jsiiProxy_AuthServerClaim) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AuthServerClaim) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AuthServerClaim) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -248,8 +248,8 @@ func (j *jsiiProxy_AuthServerClaim) ConstructNodeMetadata() *map[string]interfac
 	return returns
 }
 
-func (j *jsiiProxy_AuthServerClaim) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AuthServerClaim) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -388,8 +388,8 @@ func (j *jsiiProxy_AuthServerClaim) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_AuthServerClaim) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_AuthServerClaim) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -398,8 +398,8 @@ func (j *jsiiProxy_AuthServerClaim) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AuthServerClaim) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AuthServerClaim) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -458,8 +458,8 @@ func (j *jsiiProxy_AuthServerClaim) TerraformGeneratorMetadata() *cdktf.Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_AuthServerClaim) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AuthServerClaim) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -518,7 +518,6 @@ func (j *jsiiProxy_AuthServerClaim) ValueTypeInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/auth_server_claim okta_auth_server_claim} Resource.
 func NewAuthServerClaim(scope constructs.Construct, id *string, config *AuthServerClaimConfig) AuthServerClaim {
 	_init_.Initialize()
@@ -530,7 +529,7 @@ func NewAuthServerClaim(scope constructs.Construct, id *string, config *AuthServ
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.authServerClaim.AuthServerClaim",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -543,12 +542,12 @@ func NewAuthServerClaim_Override(a AuthServerClaim, scope constructs.Construct, 
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.authServerClaim.AuthServerClaim",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AuthServerClaim)SetAlwaysIncludeInToken(val interface{}) {
+func (j *jsiiProxy_AuthServerClaim) SetAlwaysIncludeInToken(val any) {
 	if err := j.validateSetAlwaysIncludeInTokenParameters(val); err != nil {
 		panic(err)
 	}
@@ -559,7 +558,7 @@ func (j *jsiiProxy_AuthServerClaim)SetAlwaysIncludeInToken(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AuthServerClaim)SetAuthServerId(val *string) {
+func (j *jsiiProxy_AuthServerClaim) SetAuthServerId(val *string) {
 	if err := j.validateSetAuthServerIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -570,7 +569,7 @@ func (j *jsiiProxy_AuthServerClaim)SetAuthServerId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AuthServerClaim)SetClaimType(val *string) {
+func (j *jsiiProxy_AuthServerClaim) SetClaimType(val *string) {
 	if err := j.validateSetClaimTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -581,7 +580,7 @@ func (j *jsiiProxy_AuthServerClaim)SetClaimType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AuthServerClaim)SetConnection(val interface{}) {
+func (j *jsiiProxy_AuthServerClaim) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -592,7 +591,7 @@ func (j *jsiiProxy_AuthServerClaim)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AuthServerClaim)SetCount(val interface{}) {
+func (j *jsiiProxy_AuthServerClaim) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -603,7 +602,7 @@ func (j *jsiiProxy_AuthServerClaim)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AuthServerClaim)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_AuthServerClaim) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -611,7 +610,7 @@ func (j *jsiiProxy_AuthServerClaim)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AuthServerClaim)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_AuthServerClaim) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -619,7 +618,7 @@ func (j *jsiiProxy_AuthServerClaim)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_AuthServerClaim)SetGroupFilterType(val *string) {
+func (j *jsiiProxy_AuthServerClaim) SetGroupFilterType(val *string) {
 	if err := j.validateSetGroupFilterTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -630,7 +629,7 @@ func (j *jsiiProxy_AuthServerClaim)SetGroupFilterType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AuthServerClaim)SetId(val *string) {
+func (j *jsiiProxy_AuthServerClaim) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -641,7 +640,7 @@ func (j *jsiiProxy_AuthServerClaim)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AuthServerClaim)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_AuthServerClaim) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -652,7 +651,7 @@ func (j *jsiiProxy_AuthServerClaim)SetLifecycle(val *cdktf.TerraformResourceLife
 	)
 }
 
-func (j *jsiiProxy_AuthServerClaim)SetName(val *string) {
+func (j *jsiiProxy_AuthServerClaim) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -663,7 +662,7 @@ func (j *jsiiProxy_AuthServerClaim)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AuthServerClaim)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_AuthServerClaim) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -671,7 +670,7 @@ func (j *jsiiProxy_AuthServerClaim)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_AuthServerClaim)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_AuthServerClaim) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -682,7 +681,7 @@ func (j *jsiiProxy_AuthServerClaim)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AuthServerClaim)SetScopes(val *[]*string) {
+func (j *jsiiProxy_AuthServerClaim) SetScopes(val *[]*string) {
 	if err := j.validateSetScopesParameters(val); err != nil {
 		panic(err)
 	}
@@ -693,7 +692,7 @@ func (j *jsiiProxy_AuthServerClaim)SetScopes(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AuthServerClaim)SetStatus(val *string) {
+func (j *jsiiProxy_AuthServerClaim) SetStatus(val *string) {
 	if err := j.validateSetStatusParameters(val); err != nil {
 		panic(err)
 	}
@@ -704,7 +703,7 @@ func (j *jsiiProxy_AuthServerClaim)SetStatus(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AuthServerClaim)SetValue(val *string) {
+func (j *jsiiProxy_AuthServerClaim) SetValue(val *string) {
 	if err := j.validateSetValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -715,7 +714,7 @@ func (j *jsiiProxy_AuthServerClaim)SetValue(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AuthServerClaim)SetValueType(val *string) {
+func (j *jsiiProxy_AuthServerClaim) SetValueType(val *string) {
 	if err := j.validateSetValueTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -738,7 +737,7 @@ func AuthServerClaim_GenerateConfigForImport(scope constructs.Construct, importT
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.authServerClaim.AuthServerClaim",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -762,7 +761,7 @@ func AuthServerClaim_GenerateConfigForImport(scope constructs.Construct, importT
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func AuthServerClaim_IsConstruct(x interface{}) *bool {
+func AuthServerClaim_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAuthServerClaim_IsConstructParameters(x); err != nil {
@@ -773,7 +772,7 @@ func AuthServerClaim_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.authServerClaim.AuthServerClaim",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -781,7 +780,7 @@ func AuthServerClaim_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func AuthServerClaim_IsTerraformElement(x interface{}) *bool {
+func AuthServerClaim_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAuthServerClaim_IsTerraformElementParameters(x); err != nil {
@@ -792,7 +791,7 @@ func AuthServerClaim_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.authServerClaim.AuthServerClaim",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -800,7 +799,7 @@ func AuthServerClaim_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func AuthServerClaim_IsTerraformResource(x interface{}) *bool {
+func AuthServerClaim_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAuthServerClaim_IsTerraformResourceParameters(x); err != nil {
@@ -811,7 +810,7 @@ func AuthServerClaim_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.authServerClaim.AuthServerClaim",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -836,31 +835,31 @@ func (a *jsiiProxy_AuthServerClaim) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (a *jsiiProxy_AuthServerClaim) AddOverride(path *string, value interface{}) {
+func (a *jsiiProxy_AuthServerClaim) AddOverride(path *string, value any) {
 	if err := a.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (a *jsiiProxy_AuthServerClaim) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AuthServerClaim) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -876,7 +875,7 @@ func (a *jsiiProxy_AuthServerClaim) GetBooleanAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -892,7 +891,7 @@ func (a *jsiiProxy_AuthServerClaim) GetBooleanMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -908,7 +907,7 @@ func (a *jsiiProxy_AuthServerClaim) GetListAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -924,7 +923,7 @@ func (a *jsiiProxy_AuthServerClaim) GetNumberAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -940,7 +939,7 @@ func (a *jsiiProxy_AuthServerClaim) GetNumberListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -956,7 +955,7 @@ func (a *jsiiProxy_AuthServerClaim) GetNumberMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -972,7 +971,7 @@ func (a *jsiiProxy_AuthServerClaim) GetStringAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -988,15 +987,15 @@ func (a *jsiiProxy_AuthServerClaim) GetStringMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_AuthServerClaim) HasResourceMove() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AuthServerClaim) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1015,7 +1014,7 @@ func (a *jsiiProxy_AuthServerClaim) ImportFrom(id *string, provider cdktf.Terraf
 	_jsii_.InvokeVoid(
 		a,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1028,7 +1027,7 @@ func (a *jsiiProxy_AuthServerClaim) InterpolationForAttribute(terraformAttribute
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1042,18 +1041,18 @@ func (a *jsiiProxy_AuthServerClaim) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (a *jsiiProxy_AuthServerClaim) MoveTo(moveTarget *string, index interface{}) {
+func (a *jsiiProxy_AuthServerClaim) MoveTo(moveTarget *string, index any) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1064,7 +1063,7 @@ func (a *jsiiProxy_AuthServerClaim) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1075,7 +1074,7 @@ func (a *jsiiProxy_AuthServerClaim) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1135,8 +1134,8 @@ func (a *jsiiProxy_AuthServerClaim) ResetValueType() {
 	)
 }
 
-func (a *jsiiProxy_AuthServerClaim) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AuthServerClaim) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1148,8 +1147,8 @@ func (a *jsiiProxy_AuthServerClaim) SynthesizeAttributes() *map[string]interface
 	return returns
 }
 
-func (a *jsiiProxy_AuthServerClaim) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AuthServerClaim) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1161,8 +1160,8 @@ func (a *jsiiProxy_AuthServerClaim) SynthesizeHclAttributes() *map[string]interf
 	return returns
 }
 
-func (a *jsiiProxy_AuthServerClaim) ToHclTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AuthServerClaim) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1174,8 +1173,8 @@ func (a *jsiiProxy_AuthServerClaim) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_AuthServerClaim) ToMetadata() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AuthServerClaim) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1200,8 +1199,8 @@ func (a *jsiiProxy_AuthServerClaim) ToString() *string {
 	return returns
 }
 
-func (a *jsiiProxy_AuthServerClaim) ToTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AuthServerClaim) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1212,4 +1211,3 @@ func (a *jsiiProxy_AuthServerClaim) ToTerraform() interface{} {
 
 	return returns
 }
-

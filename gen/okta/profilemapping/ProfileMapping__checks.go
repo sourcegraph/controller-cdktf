@@ -19,7 +19,7 @@ func (p *jsiiProxy_ProfileMapping) validateAddMoveTargetParameters(moveTarget *s
 	return nil
 }
 
-func (p *jsiiProxy_ProfileMapping) validateAddOverrideParameters(path *string, value interface{}) error {
+func (p *jsiiProxy_ProfileMapping) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (p *jsiiProxy_ProfileMapping) validateMoveFromIdParameters(id *string) erro
 	return nil
 }
 
-func (p *jsiiProxy_ProfileMapping) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (p *jsiiProxy_ProfileMapping) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (p *jsiiProxy_ProfileMapping) validateOverrideLogicalIdParameters(newLogica
 	return nil
 }
 
-func (p *jsiiProxy_ProfileMapping) validatePutMappingsParameters(value interface{}) error {
+func (p *jsiiProxy_ProfileMapping) validatePutMappingsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -251,7 +251,7 @@ func validateProfileMapping_GenerateConfigForImportParameters(scope constructs.C
 	return nil
 }
 
-func validateProfileMapping_IsConstructParameters(x interface{}) error {
+func validateProfileMapping_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -259,7 +259,7 @@ func validateProfileMapping_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateProfileMapping_IsTerraformElementParameters(x interface{}) error {
+func validateProfileMapping_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -267,7 +267,7 @@ func validateProfileMapping_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateProfileMapping_IsTerraformResourceParameters(x interface{}) error {
+func validateProfileMapping_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -275,7 +275,7 @@ func validateProfileMapping_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_ProfileMapping) validateSetAlwaysApplyParameters(val interface{}) error {
+func (j *jsiiProxy_ProfileMapping) validateSetAlwaysApplyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -295,7 +295,7 @@ func (j *jsiiProxy_ProfileMapping) validateSetAlwaysApplyParameters(val interfac
 	return nil
 }
 
-func (j *jsiiProxy_ProfileMapping) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ProfileMapping) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -328,7 +328,7 @@ func (j *jsiiProxy_ProfileMapping) validateSetConnectionParameters(val interface
 	return nil
 }
 
-func (j *jsiiProxy_ProfileMapping) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ProfileMapping) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -385,7 +385,7 @@ func (j *jsiiProxy_ProfileMapping) validateSetCountParameters(val interface{}) e
 	return nil
 }
 
-func (j *jsiiProxy_ProfileMapping) validateSetDeleteWhenAbsentParameters(val interface{}) error {
+func (j *jsiiProxy_ProfileMapping) validateSetDeleteWhenAbsentParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -421,7 +421,7 @@ func (j *jsiiProxy_ProfileMapping) validateSetLifecycleParameters(val *cdktf.Ter
 	return nil
 }
 
-func (j *jsiiProxy_ProfileMapping) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ProfileMapping) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -501,4 +501,3 @@ func validateNewProfileMappingParameters(scope constructs.Construct, id *string,
 
 	return nil
 }
-

@@ -18,11 +18,11 @@ type DataOktaBrand interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CustomPrivacyPolicyUrl() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -50,18 +50,18 @@ type DataOktaBrand interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RemovePoweredByOkta() cdktf.IResolvable
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -86,18 +86,18 @@ type DataOktaBrand interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataOktaBrand
@@ -135,8 +135,8 @@ func (j *jsiiProxy_DataOktaBrand) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DataOktaBrand) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataOktaBrand) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -145,8 +145,8 @@ func (j *jsiiProxy_DataOktaBrand) ConstructNodeMetadata() *map[string]interface{
 	return returns
 }
 
-func (j *jsiiProxy_DataOktaBrand) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataOktaBrand) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -265,8 +265,8 @@ func (j *jsiiProxy_DataOktaBrand) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DataOktaBrand) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataOktaBrand) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -295,8 +295,8 @@ func (j *jsiiProxy_DataOktaBrand) TerraformGeneratorMetadata() *cdktf.TerraformP
 	return returns
 }
 
-func (j *jsiiProxy_DataOktaBrand) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataOktaBrand) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -315,7 +315,6 @@ func (j *jsiiProxy_DataOktaBrand) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/brand okta_brand} Data Source.
 func NewDataOktaBrand(scope constructs.Construct, id *string, config *DataOktaBrandConfig) DataOktaBrand {
 	_init_.Initialize()
@@ -327,7 +326,7 @@ func NewDataOktaBrand(scope constructs.Construct, id *string, config *DataOktaBr
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.dataOktaBrand.DataOktaBrand",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -340,12 +339,12 @@ func NewDataOktaBrand_Override(d DataOktaBrand, scope constructs.Construct, id *
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.dataOktaBrand.DataOktaBrand",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataOktaBrand)SetBrandId(val *string) {
+func (j *jsiiProxy_DataOktaBrand) SetBrandId(val *string) {
 	if err := j.validateSetBrandIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -356,7 +355,7 @@ func (j *jsiiProxy_DataOktaBrand)SetBrandId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataOktaBrand)SetCount(val interface{}) {
+func (j *jsiiProxy_DataOktaBrand) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -367,7 +366,7 @@ func (j *jsiiProxy_DataOktaBrand)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataOktaBrand)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataOktaBrand) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -375,7 +374,7 @@ func (j *jsiiProxy_DataOktaBrand)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataOktaBrand)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataOktaBrand) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -383,7 +382,7 @@ func (j *jsiiProxy_DataOktaBrand)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_DataOktaBrand)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataOktaBrand) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -394,7 +393,7 @@ func (j *jsiiProxy_DataOktaBrand)SetLifecycle(val *cdktf.TerraformResourceLifecy
 	)
 }
 
-func (j *jsiiProxy_DataOktaBrand)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataOktaBrand) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -414,7 +413,7 @@ func DataOktaBrand_GenerateConfigForImport(scope constructs.Construct, importToI
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.dataOktaBrand.DataOktaBrand",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -438,7 +437,7 @@ func DataOktaBrand_GenerateConfigForImport(scope constructs.Construct, importToI
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataOktaBrand_IsConstruct(x interface{}) *bool {
+func DataOktaBrand_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataOktaBrand_IsConstructParameters(x); err != nil {
@@ -449,7 +448,7 @@ func DataOktaBrand_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.dataOktaBrand.DataOktaBrand",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -457,7 +456,7 @@ func DataOktaBrand_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataOktaBrand_IsTerraformDataSource(x interface{}) *bool {
+func DataOktaBrand_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataOktaBrand_IsTerraformDataSourceParameters(x); err != nil {
@@ -468,7 +467,7 @@ func DataOktaBrand_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.dataOktaBrand.DataOktaBrand",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -476,7 +475,7 @@ func DataOktaBrand_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataOktaBrand_IsTerraformElement(x interface{}) *bool {
+func DataOktaBrand_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataOktaBrand_IsTerraformElementParameters(x); err != nil {
@@ -487,7 +486,7 @@ func DataOktaBrand_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.dataOktaBrand.DataOktaBrand",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -505,27 +504,27 @@ func DataOktaBrand_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataOktaBrand) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataOktaBrand) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataOktaBrand) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataOktaBrand) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -541,7 +540,7 @@ func (d *jsiiProxy_DataOktaBrand) GetBooleanAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -557,7 +556,7 @@ func (d *jsiiProxy_DataOktaBrand) GetBooleanMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -573,7 +572,7 @@ func (d *jsiiProxy_DataOktaBrand) GetListAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -589,7 +588,7 @@ func (d *jsiiProxy_DataOktaBrand) GetNumberAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -605,7 +604,7 @@ func (d *jsiiProxy_DataOktaBrand) GetNumberListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -621,7 +620,7 @@ func (d *jsiiProxy_DataOktaBrand) GetNumberMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -637,7 +636,7 @@ func (d *jsiiProxy_DataOktaBrand) GetStringAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -653,7 +652,7 @@ func (d *jsiiProxy_DataOktaBrand) GetStringMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -669,7 +668,7 @@ func (d *jsiiProxy_DataOktaBrand) InterpolationForAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -683,7 +682,7 @@ func (d *jsiiProxy_DataOktaBrand) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -695,8 +694,8 @@ func (d *jsiiProxy_DataOktaBrand) ResetOverrideLogicalId() {
 	)
 }
 
-func (d *jsiiProxy_DataOktaBrand) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataOktaBrand) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -708,8 +707,8 @@ func (d *jsiiProxy_DataOktaBrand) SynthesizeAttributes() *map[string]interface{}
 	return returns
 }
 
-func (d *jsiiProxy_DataOktaBrand) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataOktaBrand) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -721,8 +720,8 @@ func (d *jsiiProxy_DataOktaBrand) SynthesizeHclAttributes() *map[string]interfac
 	return returns
 }
 
-func (d *jsiiProxy_DataOktaBrand) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataOktaBrand) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -734,8 +733,8 @@ func (d *jsiiProxy_DataOktaBrand) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataOktaBrand) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataOktaBrand) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -760,8 +759,8 @@ func (d *jsiiProxy_DataOktaBrand) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataOktaBrand) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataOktaBrand) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -772,4 +771,3 @@ func (d *jsiiProxy_DataOktaBrand) ToTerraform() interface{} {
 
 	return returns
 }
-

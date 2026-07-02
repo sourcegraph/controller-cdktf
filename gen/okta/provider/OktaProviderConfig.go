@@ -1,6 +1,5 @@
 package provider
 
-
 type OktaProviderConfig struct {
 	// Bearer token granting privileges to Okta API.
 	//
@@ -17,7 +16,7 @@ type OktaProviderConfig struct {
 	// Use exponential back off strategy for rate limits.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs#backoff OktaProvider#backoff}
-	Backoff interface{} `field:"optional" json:"backoff" yaml:"backoff"`
+	Backoff any `field:"optional" json:"backoff" yaml:"backoff"`
 	// The Okta url. (Use 'oktapreview.com' for Okta testing).
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs#base_url OktaProvider#base_url}
@@ -79,4 +78,3 @@ type OktaProviderConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs#scopes OktaProvider#scopes}
 	Scopes *[]*string `field:"optional" json:"scopes" yaml:"scopes"`
 }
-

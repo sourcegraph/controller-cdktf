@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.dataOktaIdpSaml.DataOktaIdpSaml",
-		reflect.TypeOf((*DataOktaIdpSaml)(nil)).Elem(),
+		reflect.TypeFor[DataOktaIdpSaml](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "acsBinding", GoGetter: "AcsBinding"},
 			_jsii_.MemberProperty{JsiiProperty: "acsType", GoGetter: "AcsType"},
@@ -63,7 +63,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataOktaIdpSaml{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -71,6 +71,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.dataOktaIdpSaml.DataOktaIdpSamlConfig",
-		reflect.TypeOf((*DataOktaIdpSamlConfig)(nil)).Elem(),
+		reflect.TypeFor[DataOktaIdpSamlConfig](),
 	)
 }

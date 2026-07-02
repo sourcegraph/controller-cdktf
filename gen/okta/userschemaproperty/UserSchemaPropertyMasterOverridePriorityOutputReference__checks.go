@@ -98,7 +98,7 @@ func (u *jsiiProxy_UserSchemaPropertyMasterOverridePriorityOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_UserSchemaPropertyMasterOverridePriorityOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_UserSchemaPropertyMasterOverridePriorityOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_UserSchemaPropertyMasterOverridePriorityOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_UserSchemaPropertyMasterOverridePriorityOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_UserSchemaPropertyMasterOverridePriorityOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewUserSchemaPropertyMasterOverridePriorityOutputReferenceParameter
 
 	return nil
 }
-

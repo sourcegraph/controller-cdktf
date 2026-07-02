@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataOktaAuthServerScopesScopesOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_DataOktaAuthServerScopesScopesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataOktaAuthServerScopesScopesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataOktaAuthServerScopesScopesOutputReferenceParameters(terrafor
 
 	return nil
 }
-
