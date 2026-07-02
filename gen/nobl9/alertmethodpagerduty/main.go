@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.alertMethodPagerduty.AlertMethodPagerduty",
-		reflect.TypeOf((*AlertMethodPagerduty)(nil)).Elem(),
+		reflect.TypeFor[AlertMethodPagerduty](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,7 +73,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AlertMethodPagerduty{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -81,15 +81,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.alertMethodPagerduty.AlertMethodPagerdutyConfig",
-		reflect.TypeOf((*AlertMethodPagerdutyConfig)(nil)).Elem(),
+		reflect.TypeFor[AlertMethodPagerdutyConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.alertMethodPagerduty.AlertMethodPagerdutySendResolution",
-		reflect.TypeOf((*AlertMethodPagerdutySendResolution)(nil)).Elem(),
+		reflect.TypeFor[AlertMethodPagerdutySendResolution](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.alertMethodPagerduty.AlertMethodPagerdutySendResolutionOutputReference",
-		reflect.TypeOf((*AlertMethodPagerdutySendResolutionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AlertMethodPagerdutySendResolutionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -116,7 +116,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AlertMethodPagerdutySendResolutionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

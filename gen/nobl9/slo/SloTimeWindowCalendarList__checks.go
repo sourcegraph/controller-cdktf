@@ -34,7 +34,7 @@ func (s *jsiiProxy_SloTimeWindowCalendarList) validateResolveParameters(_context
 	return nil
 }
 
-func (j *jsiiProxy_SloTimeWindowCalendarList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SloTimeWindowCalendarList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewSloTimeWindowCalendarListParameters(terraformResource cdktf.IInt
 
 	return nil
 }
-

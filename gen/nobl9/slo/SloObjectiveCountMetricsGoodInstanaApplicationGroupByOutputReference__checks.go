@@ -98,7 +98,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodInstanaApplicationGroupByOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodInstanaApplicationGroupByOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodInstanaApplicationGroupByOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodInstanaApplicationGroupByOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodInstanaApplicationGroupByOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodInstanaApplicationGroupByOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewSloObjectiveCountMetricsGoodInstanaApplicationGroupByOutputRefer
 
 	return nil
 }
-

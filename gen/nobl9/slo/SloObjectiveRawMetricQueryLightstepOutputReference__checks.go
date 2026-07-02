@@ -98,7 +98,7 @@ func (s *jsiiProxy_SloObjectiveRawMetricQueryLightstepOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveRawMetricQueryLightstepOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveRawMetricQueryLightstepOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_SloObjectiveRawMetricQueryLightstepOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveRawMetricQueryLightstepOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveRawMetricQueryLightstepOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -254,4 +254,3 @@ func validateNewSloObjectiveRawMetricQueryLightstepOutputReferenceParameters(ter
 
 	return nil
 }
-

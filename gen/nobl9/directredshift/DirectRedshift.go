@@ -15,15 +15,15 @@ type DirectRedshift interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -49,9 +49,9 @@ type DirectRedshift interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
-	LogCollectionEnabled() interface{}
-	SetLogCollectionEnabled(val interface{})
-	LogCollectionEnabledInput() interface{}
+	LogCollectionEnabled() any
+	SetLogCollectionEnabled(val any)
+	LogCollectionEnabledInput() any
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -65,13 +65,13 @@ type DirectRedshift interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	QueryDelay() DirectRedshiftQueryDelayOutputReference
 	QueryDelayInput() *DirectRedshiftQueryDelay
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ReleaseChannel() *string
 	SetReleaseChannel(val *string)
 	ReleaseChannelInput() *string
@@ -88,16 +88,16 @@ type DirectRedshift interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -115,7 +115,7 @@ type DirectRedshift interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -127,7 +127,7 @@ type DirectRedshift interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -147,17 +147,17 @@ type DirectRedshift interface {
 	ResetRoleArn()
 	ResetSecretArn()
 	ResetSourceOf()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DirectRedshift
@@ -175,8 +175,8 @@ func (j *jsiiProxy_DirectRedshift) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DirectRedshift) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DirectRedshift) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -185,8 +185,8 @@ func (j *jsiiProxy_DirectRedshift) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DirectRedshift) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DirectRedshift) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -195,8 +195,8 @@ func (j *jsiiProxy_DirectRedshift) ConstructNodeMetadata() *map[string]interface
 	return returns
 }
 
-func (j *jsiiProxy_DirectRedshift) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DirectRedshift) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -315,8 +315,8 @@ func (j *jsiiProxy_DirectRedshift) Lifecycle() *cdktf.TerraformResourceLifecycle
 	return returns
 }
 
-func (j *jsiiProxy_DirectRedshift) LogCollectionEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DirectRedshift) LogCollectionEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"logCollectionEnabled",
@@ -325,8 +325,8 @@ func (j *jsiiProxy_DirectRedshift) LogCollectionEnabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DirectRedshift) LogCollectionEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DirectRedshift) LogCollectionEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"logCollectionEnabledInput",
@@ -395,8 +395,8 @@ func (j *jsiiProxy_DirectRedshift) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DirectRedshift) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_DirectRedshift) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -425,8 +425,8 @@ func (j *jsiiProxy_DirectRedshift) QueryDelayInput() *DirectRedshiftQueryDelay {
 	return returns
 }
 
-func (j *jsiiProxy_DirectRedshift) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DirectRedshift) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -535,8 +535,8 @@ func (j *jsiiProxy_DirectRedshift) TerraformGeneratorMetadata() *cdktf.Terraform
 	return returns
 }
 
-func (j *jsiiProxy_DirectRedshift) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DirectRedshift) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -555,7 +555,6 @@ func (j *jsiiProxy_DirectRedshift) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/direct_redshift nobl9_direct_redshift} Resource.
 func NewDirectRedshift(scope constructs.Construct, id *string, config *DirectRedshiftConfig) DirectRedshift {
 	_init_.Initialize()
@@ -567,7 +566,7 @@ func NewDirectRedshift(scope constructs.Construct, id *string, config *DirectRed
 
 	_jsii_.Create(
 		"@cdktf/provider-nobl9.directRedshift.DirectRedshift",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -580,12 +579,12 @@ func NewDirectRedshift_Override(d DirectRedshift, scope constructs.Construct, id
 
 	_jsii_.Create(
 		"@cdktf/provider-nobl9.directRedshift.DirectRedshift",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DirectRedshift)SetConnection(val interface{}) {
+func (j *jsiiProxy_DirectRedshift) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -596,7 +595,7 @@ func (j *jsiiProxy_DirectRedshift)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DirectRedshift)SetCount(val interface{}) {
+func (j *jsiiProxy_DirectRedshift) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -607,7 +606,7 @@ func (j *jsiiProxy_DirectRedshift)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DirectRedshift)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DirectRedshift) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -615,7 +614,7 @@ func (j *jsiiProxy_DirectRedshift)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DirectRedshift)SetDescription(val *string) {
+func (j *jsiiProxy_DirectRedshift) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -626,7 +625,7 @@ func (j *jsiiProxy_DirectRedshift)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DirectRedshift)SetDisplayName(val *string) {
+func (j *jsiiProxy_DirectRedshift) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -637,7 +636,7 @@ func (j *jsiiProxy_DirectRedshift)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DirectRedshift)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DirectRedshift) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -645,7 +644,7 @@ func (j *jsiiProxy_DirectRedshift)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_DirectRedshift)SetId(val *string) {
+func (j *jsiiProxy_DirectRedshift) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -656,7 +655,7 @@ func (j *jsiiProxy_DirectRedshift)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DirectRedshift)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DirectRedshift) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -667,7 +666,7 @@ func (j *jsiiProxy_DirectRedshift)SetLifecycle(val *cdktf.TerraformResourceLifec
 	)
 }
 
-func (j *jsiiProxy_DirectRedshift)SetLogCollectionEnabled(val interface{}) {
+func (j *jsiiProxy_DirectRedshift) SetLogCollectionEnabled(val any) {
 	if err := j.validateSetLogCollectionEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -678,7 +677,7 @@ func (j *jsiiProxy_DirectRedshift)SetLogCollectionEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DirectRedshift)SetName(val *string) {
+func (j *jsiiProxy_DirectRedshift) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -689,7 +688,7 @@ func (j *jsiiProxy_DirectRedshift)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DirectRedshift)SetProject(val *string) {
+func (j *jsiiProxy_DirectRedshift) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -700,7 +699,7 @@ func (j *jsiiProxy_DirectRedshift)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DirectRedshift)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DirectRedshift) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -708,7 +707,7 @@ func (j *jsiiProxy_DirectRedshift)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_DirectRedshift)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_DirectRedshift) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -719,7 +718,7 @@ func (j *jsiiProxy_DirectRedshift)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DirectRedshift)SetReleaseChannel(val *string) {
+func (j *jsiiProxy_DirectRedshift) SetReleaseChannel(val *string) {
 	if err := j.validateSetReleaseChannelParameters(val); err != nil {
 		panic(err)
 	}
@@ -730,7 +729,7 @@ func (j *jsiiProxy_DirectRedshift)SetReleaseChannel(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DirectRedshift)SetRoleArn(val *string) {
+func (j *jsiiProxy_DirectRedshift) SetRoleArn(val *string) {
 	if err := j.validateSetRoleArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -741,7 +740,7 @@ func (j *jsiiProxy_DirectRedshift)SetRoleArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DirectRedshift)SetSecretArn(val *string) {
+func (j *jsiiProxy_DirectRedshift) SetSecretArn(val *string) {
 	if err := j.validateSetSecretArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -752,7 +751,7 @@ func (j *jsiiProxy_DirectRedshift)SetSecretArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DirectRedshift)SetSourceOf(val *[]*string) {
+func (j *jsiiProxy_DirectRedshift) SetSourceOf(val *[]*string) {
 	if err := j.validateSetSourceOfParameters(val); err != nil {
 		panic(err)
 	}
@@ -775,7 +774,7 @@ func DirectRedshift_GenerateConfigForImport(scope constructs.Construct, importTo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-nobl9.directRedshift.DirectRedshift",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -799,7 +798,7 @@ func DirectRedshift_GenerateConfigForImport(scope constructs.Construct, importTo
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DirectRedshift_IsConstruct(x interface{}) *bool {
+func DirectRedshift_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDirectRedshift_IsConstructParameters(x); err != nil {
@@ -810,7 +809,7 @@ func DirectRedshift_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-nobl9.directRedshift.DirectRedshift",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -818,7 +817,7 @@ func DirectRedshift_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DirectRedshift_IsTerraformElement(x interface{}) *bool {
+func DirectRedshift_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDirectRedshift_IsTerraformElementParameters(x); err != nil {
@@ -829,7 +828,7 @@ func DirectRedshift_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-nobl9.directRedshift.DirectRedshift",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -837,7 +836,7 @@ func DirectRedshift_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func DirectRedshift_IsTerraformResource(x interface{}) *bool {
+func DirectRedshift_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDirectRedshift_IsTerraformResourceParameters(x); err != nil {
@@ -848,7 +847,7 @@ func DirectRedshift_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-nobl9.directRedshift.DirectRedshift",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -873,31 +872,31 @@ func (d *jsiiProxy_DirectRedshift) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (d *jsiiProxy_DirectRedshift) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DirectRedshift) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DirectRedshift) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DirectRedshift) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -913,7 +912,7 @@ func (d *jsiiProxy_DirectRedshift) GetBooleanAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -929,7 +928,7 @@ func (d *jsiiProxy_DirectRedshift) GetBooleanMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -945,7 +944,7 @@ func (d *jsiiProxy_DirectRedshift) GetListAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -961,7 +960,7 @@ func (d *jsiiProxy_DirectRedshift) GetNumberAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -977,7 +976,7 @@ func (d *jsiiProxy_DirectRedshift) GetNumberListAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -993,7 +992,7 @@ func (d *jsiiProxy_DirectRedshift) GetNumberMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1009,7 +1008,7 @@ func (d *jsiiProxy_DirectRedshift) GetStringAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1025,15 +1024,15 @@ func (d *jsiiProxy_DirectRedshift) GetStringMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DirectRedshift) HasResourceMove() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DirectRedshift) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1052,7 +1051,7 @@ func (d *jsiiProxy_DirectRedshift) ImportFrom(id *string, provider cdktf.Terrafo
 	_jsii_.InvokeVoid(
 		d,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1065,7 +1064,7 @@ func (d *jsiiProxy_DirectRedshift) InterpolationForAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1079,18 +1078,18 @@ func (d *jsiiProxy_DirectRedshift) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (d *jsiiProxy_DirectRedshift) MoveTo(moveTarget *string, index interface{}) {
+func (d *jsiiProxy_DirectRedshift) MoveTo(moveTarget *string, index any) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1101,7 +1100,7 @@ func (d *jsiiProxy_DirectRedshift) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1112,7 +1111,7 @@ func (d *jsiiProxy_DirectRedshift) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1123,7 +1122,7 @@ func (d *jsiiProxy_DirectRedshift) PutQueryDelay(value *DirectRedshiftQueryDelay
 	_jsii_.InvokeVoid(
 		d,
 		"putQueryDelay",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1207,8 +1206,8 @@ func (d *jsiiProxy_DirectRedshift) ResetSourceOf() {
 	)
 }
 
-func (d *jsiiProxy_DirectRedshift) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DirectRedshift) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1220,8 +1219,8 @@ func (d *jsiiProxy_DirectRedshift) SynthesizeAttributes() *map[string]interface{
 	return returns
 }
 
-func (d *jsiiProxy_DirectRedshift) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DirectRedshift) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1233,8 +1232,8 @@ func (d *jsiiProxy_DirectRedshift) SynthesizeHclAttributes() *map[string]interfa
 	return returns
 }
 
-func (d *jsiiProxy_DirectRedshift) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DirectRedshift) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1246,8 +1245,8 @@ func (d *jsiiProxy_DirectRedshift) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DirectRedshift) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DirectRedshift) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1272,8 +1271,8 @@ func (d *jsiiProxy_DirectRedshift) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DirectRedshift) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DirectRedshift) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1284,4 +1283,3 @@ func (d *jsiiProxy_DirectRedshift) ToTerraform() interface{} {
 
 	return returns
 }
-

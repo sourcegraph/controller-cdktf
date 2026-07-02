@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.alertMethodSlack.AlertMethodSlack",
-		reflect.TypeOf((*AlertMethodSlack)(nil)).Elem(),
+		reflect.TypeFor[AlertMethodSlack](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -69,7 +69,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
 			_jsii_.MemberProperty{JsiiProperty: "urlInput", GoGetter: "UrlInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AlertMethodSlack{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -77,6 +77,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.alertMethodSlack.AlertMethodSlackConfig",
-		reflect.TypeOf((*AlertMethodSlackConfig)(nil)).Elem(),
+		reflect.TypeFor[AlertMethodSlackConfig](),
 	)
 }

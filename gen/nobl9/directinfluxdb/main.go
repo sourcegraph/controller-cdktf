@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.directInfluxdb.DirectInfluxdb",
-		reflect.TypeOf((*DirectInfluxdb)(nil)).Elem(),
+		reflect.TypeFor[DirectInfluxdb](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -88,7 +88,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
 			_jsii_.MemberProperty{JsiiProperty: "urlInput", GoGetter: "UrlInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DirectInfluxdb{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -96,15 +96,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.directInfluxdb.DirectInfluxdbConfig",
-		reflect.TypeOf((*DirectInfluxdbConfig)(nil)).Elem(),
+		reflect.TypeFor[DirectInfluxdbConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.directInfluxdb.DirectInfluxdbQueryDelay",
-		reflect.TypeOf((*DirectInfluxdbQueryDelay)(nil)).Elem(),
+		reflect.TypeFor[DirectInfluxdbQueryDelay](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.directInfluxdb.DirectInfluxdbQueryDelayOutputReference",
-		reflect.TypeOf((*DirectInfluxdbQueryDelayOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DirectInfluxdbQueryDelayOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -132,7 +132,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DirectInfluxdbQueryDelayOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

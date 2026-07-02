@@ -34,7 +34,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodTotalThousandeyesList) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodTotalThousandeyesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodTotalThousandeyesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewSloObjectiveCountMetricsGoodTotalThousandeyesListParameters(terr
 
 	return nil
 }
-

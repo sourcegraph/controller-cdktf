@@ -34,7 +34,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodDynatraceList) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodDynatraceList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodDynatraceList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewSloObjectiveCountMetricsGoodDynatraceListParameters(terraformRes
 
 	return nil
 }
-

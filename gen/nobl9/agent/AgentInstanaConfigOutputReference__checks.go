@@ -98,7 +98,7 @@ func (a *jsiiProxy_AgentInstanaConfigOutputReference) validateResolveParameters(
 	return nil
 }
 
-func (j *jsiiProxy_AgentInstanaConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AgentInstanaConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewAgentInstanaConfigOutputReferenceParameters(terraformResource cd
 
 	return nil
 }
-

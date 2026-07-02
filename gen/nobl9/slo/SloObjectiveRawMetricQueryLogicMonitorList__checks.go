@@ -34,7 +34,7 @@ func (s *jsiiProxy_SloObjectiveRawMetricQueryLogicMonitorList) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveRawMetricQueryLogicMonitorList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveRawMetricQueryLogicMonitorList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewSloObjectiveRawMetricQueryLogicMonitorListParameters(terraformRe
 
 	return nil
 }
-

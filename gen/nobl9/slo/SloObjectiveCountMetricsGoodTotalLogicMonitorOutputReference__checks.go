@@ -106,7 +106,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodTotalLogicMonitorOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodTotalLogicMonitorOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodTotalLogicMonitorOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -195,7 +195,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodTotalLogicMonitorOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodTotalLogicMonitorOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodTotalLogicMonitorOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -278,4 +278,3 @@ func validateNewSloObjectiveCountMetricsGoodTotalLogicMonitorOutputReferencePara
 
 	return nil
 }
-

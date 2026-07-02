@@ -1,6 +1,5 @@
 package slo
 
-
 type SloObjectiveCountMetricsBadAzureMonitor struct {
 	// Specifies source: 'metrics' or 'logs'.
 	//
@@ -13,7 +12,7 @@ type SloObjectiveCountMetricsBadAzureMonitor struct {
 	// dimensions block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/slo#dimensions Slo#dimensions}
-	Dimensions interface{} `field:"optional" json:"dimensions" yaml:"dimensions"`
+	Dimensions any `field:"optional" json:"dimensions" yaml:"dimensions"`
 	// Logs query in Kusto Query Language [Required for logs].
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/slo#kql_query Slo#kql_query}
@@ -33,6 +32,5 @@ type SloObjectiveCountMetricsBadAzureMonitor struct {
 	// workspace block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/slo#workspace Slo#workspace}
-	Workspace interface{} `field:"optional" json:"workspace" yaml:"workspace"`
+	Workspace any `field:"optional" json:"workspace" yaml:"workspace"`
 }
-

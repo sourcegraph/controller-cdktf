@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.directDatadog.DirectDatadog",
-		reflect.TypeOf((*DirectDatadog)(nil)).Elem(),
+		reflect.TypeFor[DirectDatadog](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -92,7 +92,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DirectDatadog{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -100,19 +100,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.directDatadog.DirectDatadogConfig",
-		reflect.TypeOf((*DirectDatadogConfig)(nil)).Elem(),
+		reflect.TypeFor[DirectDatadogConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.directDatadog.DirectDatadogHistoricalDataRetrieval",
-		reflect.TypeOf((*DirectDatadogHistoricalDataRetrieval)(nil)).Elem(),
+		reflect.TypeFor[DirectDatadogHistoricalDataRetrieval](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.directDatadog.DirectDatadogHistoricalDataRetrievalDefaultDuration",
-		reflect.TypeOf((*DirectDatadogHistoricalDataRetrievalDefaultDuration)(nil)).Elem(),
+		reflect.TypeFor[DirectDatadogHistoricalDataRetrievalDefaultDuration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.directDatadog.DirectDatadogHistoricalDataRetrievalDefaultDurationList",
-		reflect.TypeOf((*DirectDatadogHistoricalDataRetrievalDefaultDurationList)(nil)).Elem(),
+		reflect.TypeFor[DirectDatadogHistoricalDataRetrievalDefaultDurationList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -126,7 +126,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DirectDatadogHistoricalDataRetrievalDefaultDurationList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -134,7 +134,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.directDatadog.DirectDatadogHistoricalDataRetrievalDefaultDurationOutputReference",
-		reflect.TypeOf((*DirectDatadogHistoricalDataRetrievalDefaultDurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DirectDatadogHistoricalDataRetrievalDefaultDurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -162,7 +162,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DirectDatadogHistoricalDataRetrievalDefaultDurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -170,11 +170,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.directDatadog.DirectDatadogHistoricalDataRetrievalMaxDuration",
-		reflect.TypeOf((*DirectDatadogHistoricalDataRetrievalMaxDuration)(nil)).Elem(),
+		reflect.TypeFor[DirectDatadogHistoricalDataRetrievalMaxDuration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.directDatadog.DirectDatadogHistoricalDataRetrievalMaxDurationList",
-		reflect.TypeOf((*DirectDatadogHistoricalDataRetrievalMaxDurationList)(nil)).Elem(),
+		reflect.TypeFor[DirectDatadogHistoricalDataRetrievalMaxDurationList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -188,7 +188,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DirectDatadogHistoricalDataRetrievalMaxDurationList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -196,7 +196,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.directDatadog.DirectDatadogHistoricalDataRetrievalMaxDurationOutputReference",
-		reflect.TypeOf((*DirectDatadogHistoricalDataRetrievalMaxDurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DirectDatadogHistoricalDataRetrievalMaxDurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -224,7 +224,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DirectDatadogHistoricalDataRetrievalMaxDurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -232,7 +232,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.directDatadog.DirectDatadogHistoricalDataRetrievalOutputReference",
-		reflect.TypeOf((*DirectDatadogHistoricalDataRetrievalOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DirectDatadogHistoricalDataRetrievalOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -262,7 +262,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DirectDatadogHistoricalDataRetrievalOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -270,11 +270,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.directDatadog.DirectDatadogQueryDelay",
-		reflect.TypeOf((*DirectDatadogQueryDelay)(nil)).Elem(),
+		reflect.TypeFor[DirectDatadogQueryDelay](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.directDatadog.DirectDatadogQueryDelayOutputReference",
-		reflect.TypeOf((*DirectDatadogQueryDelayOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DirectDatadogQueryDelayOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -302,7 +302,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DirectDatadogQueryDelayOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

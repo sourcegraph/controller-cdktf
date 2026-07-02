@@ -98,7 +98,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsTotalGcmOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsTotalGcmOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveCountMetricsTotalGcmOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsTotalGcmOutputReference) validateSetC
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsTotalGcmOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveCountMetricsTotalGcmOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewSloObjectiveCountMetricsTotalGcmOutputReferenceParameters(terraf
 
 	return nil
 }
-

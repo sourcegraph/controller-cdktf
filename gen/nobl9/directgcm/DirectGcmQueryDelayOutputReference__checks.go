@@ -98,7 +98,7 @@ func (d *jsiiProxy_DirectGcmQueryDelayOutputReference) validateResolveParameters
 	return nil
 }
 
-func (j *jsiiProxy_DirectGcmQueryDelayOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DirectGcmQueryDelayOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewDirectGcmQueryDelayOutputReferenceParameters(terraformResource c
 
 	return nil
 }
-

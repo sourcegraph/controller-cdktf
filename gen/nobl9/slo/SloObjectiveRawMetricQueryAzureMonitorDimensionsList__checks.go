@@ -34,7 +34,7 @@ func (s *jsiiProxy_SloObjectiveRawMetricQueryAzureMonitorDimensionsList) validat
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveRawMetricQueryAzureMonitorDimensionsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveRawMetricQueryAzureMonitorDimensionsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewSloObjectiveRawMetricQueryAzureMonitorDimensionsListParameters(t
 
 	return nil
 }
-

@@ -17,8 +17,8 @@ type DirectHoneycombHistoricalDataRetrievalMaxDurationList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type DirectHoneycombHistoricalDataRetrievalMaxDurationList interface {
 	Get(index *float64) DirectHoneycombHistoricalDataRetrievalMaxDurationOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_DirectHoneycombHistoricalDataRetrievalMaxDurationList) Fqn() 
 	return returns
 }
 
-func (j *jsiiProxy_DirectHoneycombHistoricalDataRetrievalMaxDurationList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DirectHoneycombHistoricalDataRetrievalMaxDurationList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_DirectHoneycombHistoricalDataRetrievalMaxDurationList) WrapsS
 	return returns
 }
 
-
 func NewDirectHoneycombHistoricalDataRetrievalMaxDurationList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DirectHoneycombHistoricalDataRetrievalMaxDurationList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewDirectHoneycombHistoricalDataRetrievalMaxDurationList(terraformResource 
 
 	_jsii_.Create(
 		"@cdktf/provider-nobl9.directHoneycomb.DirectHoneycombHistoricalDataRetrievalMaxDurationList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewDirectHoneycombHistoricalDataRetrievalMaxDurationList_Override(d DirectH
 
 	_jsii_.Create(
 		"@cdktf/provider-nobl9.directHoneycomb.DirectHoneycombHistoricalDataRetrievalMaxDurationList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DirectHoneycombHistoricalDataRetrievalMaxDurationList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DirectHoneycombHistoricalDataRetrievalMaxDurationList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_DirectHoneycombHistoricalDataRetrievalMaxDurationList)SetInte
 	)
 }
 
-func (j *jsiiProxy_DirectHoneycombHistoricalDataRetrievalMaxDurationList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DirectHoneycombHistoricalDataRetrievalMaxDurationList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_DirectHoneycombHistoricalDataRetrievalMaxDurationList)SetTerr
 	)
 }
 
-func (j *jsiiProxy_DirectHoneycombHistoricalDataRetrievalMaxDurationList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DirectHoneycombHistoricalDataRetrievalMaxDurationList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_DirectHoneycombHistoricalDataRetrievalMaxDurationList)SetTerr
 	)
 }
 
-func (j *jsiiProxy_DirectHoneycombHistoricalDataRetrievalMaxDurationList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DirectHoneycombHistoricalDataRetrievalMaxDurationList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (d *jsiiProxy_DirectHoneycombHistoricalDataRetrievalMaxDurationList) AllWit
 	_jsii_.Invoke(
 		d,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (d *jsiiProxy_DirectHoneycombHistoricalDataRetrievalMaxDurationList) Get(in
 	_jsii_.Invoke(
 		d,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DirectHoneycombHistoricalDataRetrievalMaxDurationList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DirectHoneycombHistoricalDataRetrievalMaxDurationList) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (d *jsiiProxy_DirectHoneycombHistoricalDataRetrievalMaxDurationList) ToStri
 
 	return returns
 }
-

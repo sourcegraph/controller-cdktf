@@ -98,7 +98,7 @@ func (d *jsiiProxy_DirectSplunkObservabilityQueryDelayOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_DirectSplunkObservabilityQueryDelayOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DirectSplunkObservabilityQueryDelayOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewDirectSplunkObservabilityQueryDelayOutputReferenceParameters(ter
 
 	return nil
 }
-

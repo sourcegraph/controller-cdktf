@@ -34,7 +34,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodGraphiteList) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodGraphiteList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodGraphiteList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewSloObjectiveCountMetricsGoodGraphiteListParameters(terraformReso
 
 	return nil
 }
-

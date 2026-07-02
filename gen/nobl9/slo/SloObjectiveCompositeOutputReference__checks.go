@@ -109,7 +109,7 @@ func (s *jsiiProxy_SloObjectiveCompositeOutputReference) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveCompositeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveCompositeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -217,4 +217,3 @@ func validateNewSloObjectiveCompositeOutputReferenceParameters(terraformResource
 
 	return nil
 }
-

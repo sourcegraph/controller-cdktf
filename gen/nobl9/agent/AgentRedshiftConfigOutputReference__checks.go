@@ -98,7 +98,7 @@ func (a *jsiiProxy_AgentRedshiftConfigOutputReference) validateResolveParameters
 	return nil
 }
 
-func (j *jsiiProxy_AgentRedshiftConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AgentRedshiftConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewAgentRedshiftConfigOutputReferenceParameters(terraformResource c
 
 	return nil
 }
-

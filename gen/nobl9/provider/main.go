@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.provider.Nobl9Provider",
-		reflect.TypeOf((*Nobl9Provider)(nil)).Elem(),
+		reflect.TypeFor[Nobl9Provider](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "alias", GoGetter: "Alias"},
@@ -55,7 +55,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Nobl9Provider{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformProvider)
 			return &j
@@ -63,6 +63,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.provider.Nobl9ProviderConfig",
-		reflect.TypeOf((*Nobl9ProviderConfig)(nil)).Elem(),
+		reflect.TypeFor[Nobl9ProviderConfig](),
 	)
 }

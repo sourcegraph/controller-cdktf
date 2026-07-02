@@ -17,8 +17,8 @@ type SloObjectiveCountMetricsGoodTotalAzureMonitorList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type SloObjectiveCountMetricsGoodTotalAzureMonitorList interface {
 	Get(index *float64) SloObjectiveCountMetricsGoodTotalAzureMonitorOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodTotalAzureMonitorList) Fqn() *str
 	return returns
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodTotalAzureMonitorList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodTotalAzureMonitorList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodTotalAzureMonitorList) WrapsSet()
 	return returns
 }
 
-
 func NewSloObjectiveCountMetricsGoodTotalAzureMonitorList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SloObjectiveCountMetricsGoodTotalAzureMonitorList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewSloObjectiveCountMetricsGoodTotalAzureMonitorList(terraformResource cdkt
 
 	_jsii_.Create(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalAzureMonitorList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewSloObjectiveCountMetricsGoodTotalAzureMonitorList_Override(s SloObjectiv
 
 	_jsii_.Create(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalAzureMonitorList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodTotalAzureMonitorList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodTotalAzureMonitorList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodTotalAzureMonitorList)SetInternal
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodTotalAzureMonitorList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodTotalAzureMonitorList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodTotalAzureMonitorList)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodTotalAzureMonitorList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodTotalAzureMonitorList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodTotalAzureMonitorList)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodTotalAzureMonitorList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodTotalAzureMonitorList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodTotalAzureMonitorList) AllWithMap
 	_jsii_.Invoke(
 		s,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodTotalAzureMonitorList) Get(index 
 	_jsii_.Invoke(
 		s,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsGoodTotalAzureMonitorList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_SloObjectiveCountMetricsGoodTotalAzureMonitorList) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodTotalAzureMonitorList) ToString()
 
 	return returns
 }
-

@@ -106,7 +106,7 @@ func (j *jsiiProxy_AlertPolicyConditionOutputReference) validateSetAlertingWindo
 	return nil
 }
 
-func (j *jsiiProxy_AlertPolicyConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AlertPolicyConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_AlertPolicyConditionOutputReference) validateSetComplexObject
 	return nil
 }
 
-func (j *jsiiProxy_AlertPolicyConditionOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AlertPolicyConditionOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -270,4 +270,3 @@ func validateNewAlertPolicyConditionOutputReferenceParameters(terraformResource 
 
 	return nil
 }
-

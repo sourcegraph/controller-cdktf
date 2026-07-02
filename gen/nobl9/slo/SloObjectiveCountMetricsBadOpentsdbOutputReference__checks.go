@@ -98,7 +98,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadOpentsdbOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsBadOpentsdbOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveCountMetricsBadOpentsdbOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsBadOpentsdbOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsBadOpentsdbOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveCountMetricsBadOpentsdbOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewSloObjectiveCountMetricsBadOpentsdbOutputReferenceParameters(ter
 
 	return nil
 }
-

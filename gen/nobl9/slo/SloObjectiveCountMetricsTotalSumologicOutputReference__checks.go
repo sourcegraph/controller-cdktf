@@ -98,7 +98,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsTotalSumologicOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsTotalSumologicOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveCountMetricsTotalSumologicOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsTotalSumologicOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsTotalSumologicOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveCountMetricsTotalSumologicOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -254,4 +254,3 @@ func validateNewSloObjectiveCountMetricsTotalSumologicOutputReferenceParameters(
 
 	return nil
 }
-

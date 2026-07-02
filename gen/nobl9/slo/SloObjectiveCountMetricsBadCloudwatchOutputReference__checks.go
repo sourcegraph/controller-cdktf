@@ -90,7 +90,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadCloudwatchOutputReference) validat
 	return nil
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsBadCloudwatchOutputReference) validatePutDimensionsParameters(value interface{}) error {
+func (s *jsiiProxy_SloObjectiveCountMetricsBadCloudwatchOutputReference) validatePutDimensionsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -137,7 +137,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsBadCloudwatchOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsBadCloudwatchOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveCountMetricsBadCloudwatchOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -202,7 +202,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsBadCloudwatchOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsBadCloudwatchOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveCountMetricsBadCloudwatchOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -309,4 +309,3 @@ func validateNewSloObjectiveCountMetricsBadCloudwatchOutputReferenceParameters(t
 
 	return nil
 }
-

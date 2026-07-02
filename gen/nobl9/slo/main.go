@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.Slo",
-		reflect.TypeOf((*Slo)(nil)).Elem(),
+		reflect.TypeFor[Slo](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -112,7 +112,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Slo{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -120,19 +120,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloAnomalyConfig",
-		reflect.TypeOf((*SloAnomalyConfig)(nil)).Elem(),
+		reflect.TypeFor[SloAnomalyConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloAnomalyConfigNoData",
-		reflect.TypeOf((*SloAnomalyConfigNoData)(nil)).Elem(),
+		reflect.TypeFor[SloAnomalyConfigNoData](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloAnomalyConfigNoDataAlertMethod",
-		reflect.TypeOf((*SloAnomalyConfigNoDataAlertMethod)(nil)).Elem(),
+		reflect.TypeFor[SloAnomalyConfigNoDataAlertMethod](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloAnomalyConfigNoDataAlertMethodList",
-		reflect.TypeOf((*SloAnomalyConfigNoDataAlertMethodList)(nil)).Elem(),
+		reflect.TypeFor[SloAnomalyConfigNoDataAlertMethodList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -146,7 +146,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloAnomalyConfigNoDataAlertMethodList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -154,7 +154,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloAnomalyConfigNoDataAlertMethodOutputReference",
-		reflect.TypeOf((*SloAnomalyConfigNoDataAlertMethodOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloAnomalyConfigNoDataAlertMethodOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -182,7 +182,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloAnomalyConfigNoDataAlertMethodOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -190,7 +190,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloAnomalyConfigNoDataOutputReference",
-		reflect.TypeOf((*SloAnomalyConfigNoDataOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloAnomalyConfigNoDataOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "alertMethod", GoGetter: "AlertMethod"},
 			_jsii_.MemberProperty{JsiiProperty: "alertMethodInput", GoGetter: "AlertMethodInput"},
@@ -217,7 +217,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloAnomalyConfigNoDataOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -225,7 +225,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloAnomalyConfigOutputReference",
-		reflect.TypeOf((*SloAnomalyConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloAnomalyConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -252,7 +252,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloAnomalyConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -260,11 +260,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloAttachment",
-		reflect.TypeOf((*SloAttachment)(nil)).Elem(),
+		reflect.TypeFor[SloAttachment](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloAttachmentList",
-		reflect.TypeOf((*SloAttachmentList)(nil)).Elem(),
+		reflect.TypeFor[SloAttachmentList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -278,7 +278,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloAttachmentList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -286,7 +286,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloAttachmentOutputReference",
-		reflect.TypeOf((*SloAttachmentOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloAttachmentOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -315,7 +315,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
 			_jsii_.MemberProperty{JsiiProperty: "urlInput", GoGetter: "UrlInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloAttachmentOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -323,11 +323,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloAttachments",
-		reflect.TypeOf((*SloAttachments)(nil)).Elem(),
+		reflect.TypeFor[SloAttachments](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloAttachmentsList",
-		reflect.TypeOf((*SloAttachmentsList)(nil)).Elem(),
+		reflect.TypeFor[SloAttachmentsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -341,7 +341,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloAttachmentsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -349,7 +349,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloAttachmentsOutputReference",
-		reflect.TypeOf((*SloAttachmentsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloAttachmentsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -378,7 +378,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
 			_jsii_.MemberProperty{JsiiProperty: "urlInput", GoGetter: "UrlInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloAttachmentsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -386,15 +386,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloComposite",
-		reflect.TypeOf((*SloComposite)(nil)).Elem(),
+		reflect.TypeFor[SloComposite](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloCompositeBurnRateCondition",
-		reflect.TypeOf((*SloCompositeBurnRateCondition)(nil)).Elem(),
+		reflect.TypeFor[SloCompositeBurnRateCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloCompositeBurnRateConditionList",
-		reflect.TypeOf((*SloCompositeBurnRateConditionList)(nil)).Elem(),
+		reflect.TypeFor[SloCompositeBurnRateConditionList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -408,7 +408,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloCompositeBurnRateConditionList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -416,7 +416,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloCompositeBurnRateConditionOutputReference",
-		reflect.TypeOf((*SloCompositeBurnRateConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloCompositeBurnRateConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -444,7 +444,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloCompositeBurnRateConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -452,7 +452,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloCompositeOutputReference",
-		reflect.TypeOf((*SloCompositeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloCompositeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "burnRateCondition", GoGetter: "BurnRateCondition"},
 			_jsii_.MemberProperty{JsiiProperty: "burnRateConditionInput", GoGetter: "BurnRateConditionInput"},
@@ -482,7 +482,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloCompositeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -490,15 +490,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloConfig",
-		reflect.TypeOf((*SloConfig)(nil)).Elem(),
+		reflect.TypeFor[SloConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloIndicator",
-		reflect.TypeOf((*SloIndicator)(nil)).Elem(),
+		reflect.TypeFor[SloIndicator](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloIndicatorOutputReference",
-		reflect.TypeOf((*SloIndicatorOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloIndicatorOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -530,7 +530,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloIndicatorOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -538,11 +538,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloLabel",
-		reflect.TypeOf((*SloLabel)(nil)).Elem(),
+		reflect.TypeFor[SloLabel](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloLabelList",
-		reflect.TypeOf((*SloLabelList)(nil)).Elem(),
+		reflect.TypeFor[SloLabelList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -556,7 +556,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloLabelList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -564,7 +564,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloLabelOutputReference",
-		reflect.TypeOf((*SloLabelOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloLabelOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -592,7 +592,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloLabelOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -600,27 +600,27 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjective",
-		reflect.TypeOf((*SloObjective)(nil)).Elem(),
+		reflect.TypeFor[SloObjective](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveComposite",
-		reflect.TypeOf((*SloObjectiveComposite)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveComposite](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCompositeComponents",
-		reflect.TypeOf((*SloObjectiveCompositeComponents)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCompositeComponents](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCompositeComponentsObjectives",
-		reflect.TypeOf((*SloObjectiveCompositeComponentsObjectives)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCompositeComponentsObjectives](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCompositeComponentsObjectivesCompositeObjective",
-		reflect.TypeOf((*SloObjectiveCompositeComponentsObjectivesCompositeObjective)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCompositeComponentsObjectivesCompositeObjective](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCompositeComponentsObjectivesCompositeObjectiveList",
-		reflect.TypeOf((*SloObjectiveCompositeComponentsObjectivesCompositeObjectiveList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCompositeComponentsObjectivesCompositeObjectiveList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -634,7 +634,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCompositeComponentsObjectivesCompositeObjectiveList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -642,7 +642,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCompositeComponentsObjectivesCompositeObjectiveOutputReference",
-		reflect.TypeOf((*SloObjectiveCompositeComponentsObjectivesCompositeObjectiveOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCompositeComponentsObjectivesCompositeObjectiveOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -676,7 +676,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "whenDelayed", GoGetter: "WhenDelayed"},
 			_jsii_.MemberProperty{JsiiProperty: "whenDelayedInput", GoGetter: "WhenDelayedInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCompositeComponentsObjectivesCompositeObjectiveOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -684,7 +684,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCompositeComponentsObjectivesOutputReference",
-		reflect.TypeOf((*SloObjectiveCompositeComponentsObjectivesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCompositeComponentsObjectivesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -712,7 +712,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCompositeComponentsObjectivesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -720,7 +720,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCompositeComponentsOutputReference",
-		reflect.TypeOf((*SloObjectiveCompositeComponentsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCompositeComponentsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -748,7 +748,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCompositeComponentsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -756,7 +756,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCompositeOutputReference",
-		reflect.TypeOf((*SloObjectiveCompositeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCompositeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -786,7 +786,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCompositeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -794,19 +794,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetrics",
-		reflect.TypeOf((*SloObjectiveCountMetrics)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetrics](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBad",
-		reflect.TypeOf((*SloObjectiveCountMetricsBad)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBad](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadAmazonPrometheus",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadAmazonPrometheus)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadAmazonPrometheus](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadAmazonPrometheusList",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadAmazonPrometheusList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadAmazonPrometheusList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -820,7 +820,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsBadAmazonPrometheusList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -828,7 +828,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadAmazonPrometheusOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadAmazonPrometheusOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadAmazonPrometheusOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -854,7 +854,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsBadAmazonPrometheusOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -862,11 +862,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadAppdynamics",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadAppdynamics)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadAppdynamics](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadAppdynamicsList",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadAppdynamicsList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadAppdynamicsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -880,7 +880,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsBadAppdynamicsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -888,7 +888,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadAppdynamicsOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadAppdynamicsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadAppdynamicsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "applicationName", GoGetter: "ApplicationName"},
 			_jsii_.MemberProperty{JsiiProperty: "applicationNameInput", GoGetter: "ApplicationNameInput"},
@@ -916,7 +916,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsBadAppdynamicsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -924,15 +924,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadAzureMonitor",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadAzureMonitor)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadAzureMonitor](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadAzureMonitorDimensions",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadAzureMonitorDimensions)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadAzureMonitorDimensions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadAzureMonitorDimensionsList",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadAzureMonitorDimensionsList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadAzureMonitorDimensionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -946,7 +946,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsBadAzureMonitorDimensionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -954,7 +954,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadAzureMonitorDimensionsOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadAzureMonitorDimensionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadAzureMonitorDimensionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -982,7 +982,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsBadAzureMonitorDimensionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -990,7 +990,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadAzureMonitorList",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadAzureMonitorList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadAzureMonitorList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1004,7 +1004,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsBadAzureMonitorList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1012,7 +1012,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadAzureMonitorOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadAzureMonitorOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadAzureMonitorOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
 			_jsii_.MemberProperty{JsiiProperty: "aggregationInput", GoGetter: "AggregationInput"},
@@ -1061,7 +1061,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workspace", GoGetter: "Workspace"},
 			_jsii_.MemberProperty{JsiiProperty: "workspaceInput", GoGetter: "WorkspaceInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsBadAzureMonitorOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1069,11 +1069,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadAzureMonitorWorkspace",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadAzureMonitorWorkspace)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadAzureMonitorWorkspace](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadAzureMonitorWorkspaceList",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadAzureMonitorWorkspaceList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadAzureMonitorWorkspaceList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1087,7 +1087,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsBadAzureMonitorWorkspaceList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1095,7 +1095,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadAzureMonitorWorkspaceOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadAzureMonitorWorkspaceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadAzureMonitorWorkspaceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1125,7 +1125,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workspaceId", GoGetter: "WorkspaceId"},
 			_jsii_.MemberProperty{JsiiProperty: "workspaceIdInput", GoGetter: "WorkspaceIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsBadAzureMonitorWorkspaceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1133,11 +1133,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadBigquery",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadBigquery)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadBigquery](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadBigqueryList",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadBigqueryList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadBigqueryList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1151,7 +1151,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsBadBigqueryList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1159,7 +1159,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadBigqueryOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadBigqueryOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadBigqueryOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1189,7 +1189,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsBadBigqueryOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1197,15 +1197,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadCloudwatch",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadCloudwatch)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadCloudwatch](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadCloudwatchDimensions",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadCloudwatchDimensions)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadCloudwatchDimensions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadCloudwatchDimensionsList",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadCloudwatchDimensionsList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadCloudwatchDimensionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1219,7 +1219,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsBadCloudwatchDimensionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1227,7 +1227,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadCloudwatchDimensionsOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadCloudwatchDimensionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadCloudwatchDimensionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1255,7 +1255,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsBadCloudwatchDimensionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1263,7 +1263,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadCloudwatchList",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadCloudwatchList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadCloudwatchList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1277,7 +1277,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsBadCloudwatchList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1285,7 +1285,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadCloudwatchOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadCloudwatchOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadCloudwatchOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -1333,7 +1333,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsBadCloudwatchOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1341,11 +1341,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadDatadog",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadDatadog)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadDatadog](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadDatadogList",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadDatadogList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadDatadogList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1359,7 +1359,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsBadDatadogList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1367,7 +1367,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadDatadogOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadDatadogOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadDatadogOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1393,7 +1393,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsBadDatadogOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1401,11 +1401,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadDynatrace",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadDynatrace)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadDynatrace](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadDynatraceList",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadDynatraceList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadDynatraceList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1419,7 +1419,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsBadDynatraceList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1427,7 +1427,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadDynatraceOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadDynatraceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadDynatraceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1453,7 +1453,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsBadDynatraceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1461,11 +1461,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadElasticsearch",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadElasticsearch)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadElasticsearch](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadElasticsearchList",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadElasticsearchList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadElasticsearchList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1479,7 +1479,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsBadElasticsearchList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1487,7 +1487,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadElasticsearchOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadElasticsearchOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadElasticsearchOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1515,7 +1515,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsBadElasticsearchOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1523,11 +1523,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadGcm",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadGcm)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadGcm](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadGcmList",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadGcmList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadGcmList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1541,7 +1541,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsBadGcmList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1549,7 +1549,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadGcmOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadGcmOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadGcmOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1581,7 +1581,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsBadGcmOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1589,11 +1589,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadGrafanaLoki",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadGrafanaLoki)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadGrafanaLoki](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadGrafanaLokiList",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadGrafanaLokiList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadGrafanaLokiList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1607,7 +1607,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsBadGrafanaLokiList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1615,7 +1615,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadGrafanaLokiOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadGrafanaLokiOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadGrafanaLokiOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1641,7 +1641,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsBadGrafanaLokiOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1649,11 +1649,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadGraphite",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadGraphite)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadGraphite](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadGraphiteList",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadGraphiteList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadGraphiteList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1667,7 +1667,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsBadGraphiteList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1675,7 +1675,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadGraphiteOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadGraphiteOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadGraphiteOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1701,7 +1701,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsBadGraphiteOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1709,11 +1709,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadHoneycomb",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadHoneycomb)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadHoneycomb](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadHoneycombList",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadHoneycombList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadHoneycombList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1727,7 +1727,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsBadHoneycombList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1735,7 +1735,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadHoneycombOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadHoneycombOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadHoneycombOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "attribute", GoGetter: "Attribute"},
 			_jsii_.MemberProperty{JsiiProperty: "attributeInput", GoGetter: "AttributeInput"},
@@ -1764,7 +1764,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsBadHoneycombOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1772,11 +1772,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadInfluxdb",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadInfluxdb)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadInfluxdb](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadInfluxdbList",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadInfluxdbList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadInfluxdbList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1790,7 +1790,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsBadInfluxdbList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1798,7 +1798,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadInfluxdbOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadInfluxdbOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadInfluxdbOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1824,7 +1824,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsBadInfluxdbOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1832,19 +1832,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadInstana",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadInstana)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadInstana](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadInstanaApplication",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadInstanaApplication)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadInstanaApplication](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadInstanaApplicationGroupBy",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadInstanaApplicationGroupBy)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadInstanaApplicationGroupBy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadInstanaApplicationGroupByList",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadInstanaApplicationGroupByList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadInstanaApplicationGroupByList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1858,7 +1858,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsBadInstanaApplicationGroupByList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1866,7 +1866,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadInstanaApplicationGroupByOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadInstanaApplicationGroupByOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadInstanaApplicationGroupByOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1897,7 +1897,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsBadInstanaApplicationGroupByOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1905,7 +1905,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadInstanaApplicationList",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadInstanaApplicationList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadInstanaApplicationList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1919,7 +1919,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsBadInstanaApplicationList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1927,7 +1927,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadInstanaApplicationOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadInstanaApplicationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadInstanaApplicationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
 			_jsii_.MemberProperty{JsiiProperty: "aggregationInput", GoGetter: "AggregationInput"},
@@ -1966,7 +1966,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsBadInstanaApplicationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1974,11 +1974,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadInstanaInfrastructure",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadInstanaInfrastructure)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadInstanaInfrastructure](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadInstanaInfrastructureList",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadInstanaInfrastructureList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadInstanaInfrastructureList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1992,7 +1992,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsBadInstanaInfrastructureList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2000,7 +2000,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadInstanaInfrastructureOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadInstanaInfrastructureOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadInstanaInfrastructureOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2036,7 +2036,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsBadInstanaInfrastructureOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2044,7 +2044,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadInstanaList",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadInstanaList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadInstanaList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2058,7 +2058,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsBadInstanaList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2066,7 +2066,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadInstanaOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadInstanaOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadInstanaOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "application", GoGetter: "Application"},
 			_jsii_.MemberProperty{JsiiProperty: "applicationInput", GoGetter: "ApplicationInput"},
@@ -2100,7 +2100,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsBadInstanaOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2108,11 +2108,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadLightstep",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadLightstep)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadLightstep](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadLightstepList",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadLightstepList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadLightstepList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2126,7 +2126,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsBadLightstepList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2134,7 +2134,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadLightstepOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadLightstepOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadLightstepOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2169,7 +2169,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uql", GoGetter: "Uql"},
 			_jsii_.MemberProperty{JsiiProperty: "uqlInput", GoGetter: "UqlInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsBadLightstepOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2177,7 +2177,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadList",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2191,7 +2191,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsBadList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2199,11 +2199,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadLogicMonitor",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadLogicMonitor)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadLogicMonitor](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadLogicMonitorList",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadLogicMonitorList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadLogicMonitorList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2217,7 +2217,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsBadLogicMonitorList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2225,7 +2225,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadLogicMonitorOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadLogicMonitorOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadLogicMonitorOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "checkpointId", GoGetter: "CheckpointId"},
 			_jsii_.MemberProperty{JsiiProperty: "checkpointIdInput", GoGetter: "CheckpointIdInput"},
@@ -2268,7 +2268,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "websiteId", GoGetter: "WebsiteId"},
 			_jsii_.MemberProperty{JsiiProperty: "websiteIdInput", GoGetter: "WebsiteIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsBadLogicMonitorOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2276,11 +2276,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadNewrelic",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadNewrelic)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadNewrelic](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadNewrelicList",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadNewrelicList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadNewrelicList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2294,7 +2294,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsBadNewrelicList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2302,7 +2302,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadNewrelicOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadNewrelicOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadNewrelicOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2328,7 +2328,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsBadNewrelicOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2336,11 +2336,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadOpentsdb",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadOpentsdb)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadOpentsdb](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadOpentsdbList",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadOpentsdbList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadOpentsdbList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2354,7 +2354,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsBadOpentsdbList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2362,7 +2362,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadOpentsdbOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadOpentsdbOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadOpentsdbOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2388,7 +2388,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsBadOpentsdbOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2396,7 +2396,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "amazonPrometheus", GoGetter: "AmazonPrometheus"},
 			_jsii_.MemberProperty{JsiiProperty: "amazonPrometheusInput", GoGetter: "AmazonPrometheusInput"},
@@ -2520,7 +2520,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "thousandeyesInput", GoGetter: "ThousandeyesInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsBadOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2528,11 +2528,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadPingdom",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadPingdom)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadPingdom](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadPingdomList",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadPingdomList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadPingdomList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2546,7 +2546,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsBadPingdomList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2554,7 +2554,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadPingdomOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadPingdomOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadPingdomOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "checkId", GoGetter: "CheckId"},
 			_jsii_.MemberProperty{JsiiProperty: "checkIdInput", GoGetter: "CheckIdInput"},
@@ -2586,7 +2586,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsBadPingdomOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2594,11 +2594,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadPrometheus",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadPrometheus)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadPrometheus](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadPrometheusList",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadPrometheusList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadPrometheusList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2612,7 +2612,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsBadPrometheusList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2620,7 +2620,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadPrometheusOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadPrometheusOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadPrometheusOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2646,7 +2646,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsBadPrometheusOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2654,11 +2654,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadRedshift",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadRedshift)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadRedshift](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadRedshiftList",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadRedshiftList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadRedshiftList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2672,7 +2672,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsBadRedshiftList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2680,7 +2680,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadRedshiftOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadRedshiftOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadRedshiftOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clusterId", GoGetter: "ClusterId"},
 			_jsii_.MemberProperty{JsiiProperty: "clusterIdInput", GoGetter: "ClusterIdInput"},
@@ -2712,7 +2712,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsBadRedshiftOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2720,11 +2720,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadSplunk",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadSplunk)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadSplunk](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadSplunkList",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadSplunkList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadSplunkList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2738,7 +2738,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsBadSplunkList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2746,11 +2746,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadSplunkObservability",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadSplunkObservability)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadSplunkObservability](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadSplunkObservabilityList",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadSplunkObservabilityList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadSplunkObservabilityList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2764,7 +2764,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsBadSplunkObservabilityList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2772,7 +2772,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadSplunkObservabilityOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadSplunkObservabilityOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadSplunkObservabilityOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2798,7 +2798,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsBadSplunkObservabilityOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2806,7 +2806,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadSplunkOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadSplunkOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadSplunkOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2832,7 +2832,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsBadSplunkOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2840,11 +2840,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadSumologic",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadSumologic)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadSumologic](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadSumologicList",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadSumologicList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadSumologicList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2858,7 +2858,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsBadSumologicList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2866,7 +2866,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadSumologicOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadSumologicOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadSumologicOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2900,7 +2900,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsBadSumologicOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2908,11 +2908,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadThousandeyes",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadThousandeyes)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadThousandeyes](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadThousandeyesList",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadThousandeyesList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadThousandeyesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2926,7 +2926,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsBadThousandeyesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2934,7 +2934,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadThousandeyesOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsBadThousandeyesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsBadThousandeyesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2963,7 +2963,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "testTypeInput", GoGetter: "TestTypeInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsBadThousandeyesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2971,15 +2971,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGood",
-		reflect.TypeOf((*SloObjectiveCountMetricsGood)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGood](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodAmazonPrometheus",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodAmazonPrometheus)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodAmazonPrometheus](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodAmazonPrometheusList",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodAmazonPrometheusList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodAmazonPrometheusList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2993,7 +2993,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodAmazonPrometheusList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3001,7 +3001,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodAmazonPrometheusOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodAmazonPrometheusOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodAmazonPrometheusOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3027,7 +3027,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodAmazonPrometheusOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3035,11 +3035,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodAppdynamics",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodAppdynamics)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodAppdynamics](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodAppdynamicsList",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodAppdynamicsList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodAppdynamicsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3053,7 +3053,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodAppdynamicsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3061,7 +3061,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodAppdynamicsOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodAppdynamicsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodAppdynamicsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "applicationName", GoGetter: "ApplicationName"},
 			_jsii_.MemberProperty{JsiiProperty: "applicationNameInput", GoGetter: "ApplicationNameInput"},
@@ -3089,7 +3089,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodAppdynamicsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3097,15 +3097,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodAzureMonitor",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodAzureMonitor)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodAzureMonitor](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodAzureMonitorDimensions",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodAzureMonitorDimensions)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodAzureMonitorDimensions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodAzureMonitorDimensionsList",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodAzureMonitorDimensionsList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodAzureMonitorDimensionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3119,7 +3119,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodAzureMonitorDimensionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3127,7 +3127,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodAzureMonitorDimensionsOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodAzureMonitorDimensionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodAzureMonitorDimensionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3155,7 +3155,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodAzureMonitorDimensionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3163,7 +3163,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodAzureMonitorList",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodAzureMonitorList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodAzureMonitorList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3177,7 +3177,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodAzureMonitorList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3185,7 +3185,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodAzureMonitorOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodAzureMonitorOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodAzureMonitorOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
 			_jsii_.MemberProperty{JsiiProperty: "aggregationInput", GoGetter: "AggregationInput"},
@@ -3234,7 +3234,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workspace", GoGetter: "Workspace"},
 			_jsii_.MemberProperty{JsiiProperty: "workspaceInput", GoGetter: "WorkspaceInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodAzureMonitorOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3242,11 +3242,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodAzureMonitorWorkspace",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodAzureMonitorWorkspace)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodAzureMonitorWorkspace](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodAzureMonitorWorkspaceList",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodAzureMonitorWorkspaceList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodAzureMonitorWorkspaceList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3260,7 +3260,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodAzureMonitorWorkspaceList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3268,7 +3268,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodAzureMonitorWorkspaceOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodAzureMonitorWorkspaceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodAzureMonitorWorkspaceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3298,7 +3298,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workspaceId", GoGetter: "WorkspaceId"},
 			_jsii_.MemberProperty{JsiiProperty: "workspaceIdInput", GoGetter: "WorkspaceIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodAzureMonitorWorkspaceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3306,11 +3306,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodBigquery",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodBigquery)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodBigquery](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodBigqueryList",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodBigqueryList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodBigqueryList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3324,7 +3324,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodBigqueryList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3332,7 +3332,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodBigqueryOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodBigqueryOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodBigqueryOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3362,7 +3362,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodBigqueryOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3370,15 +3370,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodCloudwatch",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodCloudwatch)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodCloudwatch](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodCloudwatchDimensions",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodCloudwatchDimensions)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodCloudwatchDimensions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodCloudwatchDimensionsList",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodCloudwatchDimensionsList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodCloudwatchDimensionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3392,7 +3392,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodCloudwatchDimensionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3400,7 +3400,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodCloudwatchDimensionsOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodCloudwatchDimensionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodCloudwatchDimensionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3428,7 +3428,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodCloudwatchDimensionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3436,7 +3436,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodCloudwatchList",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodCloudwatchList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodCloudwatchList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3450,7 +3450,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodCloudwatchList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3458,7 +3458,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodCloudwatchOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodCloudwatchOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodCloudwatchOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -3506,7 +3506,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodCloudwatchOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3514,11 +3514,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodDatadog",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodDatadog)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodDatadog](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodDatadogList",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodDatadogList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodDatadogList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3532,7 +3532,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodDatadogList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3540,7 +3540,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodDatadogOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodDatadogOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodDatadogOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3566,7 +3566,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodDatadogOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3574,11 +3574,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodDynatrace",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodDynatrace)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodDynatrace](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodDynatraceList",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodDynatraceList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodDynatraceList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3592,7 +3592,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodDynatraceList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3600,7 +3600,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodDynatraceOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodDynatraceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodDynatraceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3626,7 +3626,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodDynatraceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3634,11 +3634,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodElasticsearch",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodElasticsearch)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodElasticsearch](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodElasticsearchList",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodElasticsearchList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodElasticsearchList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3652,7 +3652,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodElasticsearchList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3660,7 +3660,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodElasticsearchOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodElasticsearchOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodElasticsearchOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3688,7 +3688,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodElasticsearchOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3696,11 +3696,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodGcm",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodGcm)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodGcm](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodGcmList",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodGcmList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodGcmList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3714,7 +3714,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodGcmList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3722,7 +3722,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodGcmOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodGcmOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodGcmOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3754,7 +3754,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodGcmOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3762,11 +3762,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodGrafanaLoki",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodGrafanaLoki)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodGrafanaLoki](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodGrafanaLokiList",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodGrafanaLokiList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodGrafanaLokiList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3780,7 +3780,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodGrafanaLokiList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3788,7 +3788,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodGrafanaLokiOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodGrafanaLokiOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodGrafanaLokiOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3814,7 +3814,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodGrafanaLokiOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3822,11 +3822,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodGraphite",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodGraphite)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodGraphite](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodGraphiteList",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodGraphiteList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodGraphiteList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3840,7 +3840,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodGraphiteList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3848,7 +3848,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodGraphiteOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodGraphiteOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodGraphiteOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3874,7 +3874,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodGraphiteOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3882,11 +3882,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodHoneycomb",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodHoneycomb)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodHoneycomb](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodHoneycombList",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodHoneycombList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodHoneycombList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3900,7 +3900,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodHoneycombList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3908,7 +3908,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodHoneycombOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodHoneycombOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodHoneycombOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "attribute", GoGetter: "Attribute"},
 			_jsii_.MemberProperty{JsiiProperty: "attributeInput", GoGetter: "AttributeInput"},
@@ -3937,7 +3937,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodHoneycombOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3945,11 +3945,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodInfluxdb",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodInfluxdb)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodInfluxdb](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodInfluxdbList",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodInfluxdbList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodInfluxdbList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3963,7 +3963,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodInfluxdbList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3971,7 +3971,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodInfluxdbOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodInfluxdbOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodInfluxdbOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3997,7 +3997,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodInfluxdbOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4005,19 +4005,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodInstana",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodInstana)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodInstana](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodInstanaApplication",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodInstanaApplication)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodInstanaApplication](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodInstanaApplicationGroupBy",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodInstanaApplicationGroupBy)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodInstanaApplicationGroupBy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodInstanaApplicationGroupByList",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodInstanaApplicationGroupByList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodInstanaApplicationGroupByList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4031,7 +4031,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodInstanaApplicationGroupByList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4039,7 +4039,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodInstanaApplicationGroupByOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodInstanaApplicationGroupByOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodInstanaApplicationGroupByOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4070,7 +4070,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodInstanaApplicationGroupByOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4078,7 +4078,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodInstanaApplicationList",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodInstanaApplicationList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodInstanaApplicationList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4092,7 +4092,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodInstanaApplicationList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4100,7 +4100,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodInstanaApplicationOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodInstanaApplicationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodInstanaApplicationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
 			_jsii_.MemberProperty{JsiiProperty: "aggregationInput", GoGetter: "AggregationInput"},
@@ -4139,7 +4139,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodInstanaApplicationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4147,11 +4147,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodInstanaInfrastructure",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodInstanaInfrastructure)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodInstanaInfrastructure](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodInstanaInfrastructureList",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodInstanaInfrastructureList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodInstanaInfrastructureList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4165,7 +4165,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodInstanaInfrastructureList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4173,7 +4173,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodInstanaInfrastructureOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodInstanaInfrastructureOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodInstanaInfrastructureOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4209,7 +4209,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodInstanaInfrastructureOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4217,7 +4217,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodInstanaList",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodInstanaList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodInstanaList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4231,7 +4231,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodInstanaList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4239,7 +4239,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodInstanaOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodInstanaOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodInstanaOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "application", GoGetter: "Application"},
 			_jsii_.MemberProperty{JsiiProperty: "applicationInput", GoGetter: "ApplicationInput"},
@@ -4273,7 +4273,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodInstanaOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4281,11 +4281,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodLightstep",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodLightstep)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodLightstep](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodLightstepList",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodLightstepList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodLightstepList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4299,7 +4299,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodLightstepList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4307,7 +4307,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodLightstepOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodLightstepOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodLightstepOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4342,7 +4342,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uql", GoGetter: "Uql"},
 			_jsii_.MemberProperty{JsiiProperty: "uqlInput", GoGetter: "UqlInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodLightstepOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4350,7 +4350,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodList",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4364,7 +4364,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4372,11 +4372,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodLogicMonitor",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodLogicMonitor)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodLogicMonitor](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodLogicMonitorList",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodLogicMonitorList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodLogicMonitorList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4390,7 +4390,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodLogicMonitorList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4398,7 +4398,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodLogicMonitorOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodLogicMonitorOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodLogicMonitorOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "checkpointId", GoGetter: "CheckpointId"},
 			_jsii_.MemberProperty{JsiiProperty: "checkpointIdInput", GoGetter: "CheckpointIdInput"},
@@ -4441,7 +4441,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "websiteId", GoGetter: "WebsiteId"},
 			_jsii_.MemberProperty{JsiiProperty: "websiteIdInput", GoGetter: "WebsiteIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodLogicMonitorOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4449,11 +4449,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodNewrelic",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodNewrelic)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodNewrelic](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodNewrelicList",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodNewrelicList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodNewrelicList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4467,7 +4467,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodNewrelicList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4475,7 +4475,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodNewrelicOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodNewrelicOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodNewrelicOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4501,7 +4501,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodNewrelicOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4509,11 +4509,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodOpentsdb",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodOpentsdb)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodOpentsdb](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodOpentsdbList",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodOpentsdbList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodOpentsdbList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4527,7 +4527,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodOpentsdbList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4535,7 +4535,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodOpentsdbOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodOpentsdbOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodOpentsdbOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4561,7 +4561,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodOpentsdbOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4569,7 +4569,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "amazonPrometheus", GoGetter: "AmazonPrometheus"},
 			_jsii_.MemberProperty{JsiiProperty: "amazonPrometheusInput", GoGetter: "AmazonPrometheusInput"},
@@ -4693,7 +4693,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "thousandeyesInput", GoGetter: "ThousandeyesInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4701,11 +4701,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodPingdom",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodPingdom)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodPingdom](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodPingdomList",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodPingdomList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodPingdomList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4719,7 +4719,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodPingdomList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4727,7 +4727,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodPingdomOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodPingdomOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodPingdomOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "checkId", GoGetter: "CheckId"},
 			_jsii_.MemberProperty{JsiiProperty: "checkIdInput", GoGetter: "CheckIdInput"},
@@ -4759,7 +4759,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodPingdomOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4767,11 +4767,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodPrometheus",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodPrometheus)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodPrometheus](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodPrometheusList",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodPrometheusList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodPrometheusList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4785,7 +4785,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodPrometheusList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4793,7 +4793,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodPrometheusOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodPrometheusOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodPrometheusOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4819,7 +4819,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodPrometheusOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4827,11 +4827,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodRedshift",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodRedshift)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodRedshift](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodRedshiftList",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodRedshiftList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodRedshiftList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4845,7 +4845,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodRedshiftList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4853,7 +4853,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodRedshiftOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodRedshiftOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodRedshiftOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clusterId", GoGetter: "ClusterId"},
 			_jsii_.MemberProperty{JsiiProperty: "clusterIdInput", GoGetter: "ClusterIdInput"},
@@ -4885,7 +4885,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodRedshiftOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4893,11 +4893,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodSplunk",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodSplunk)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodSplunk](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodSplunkList",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodSplunkList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodSplunkList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4911,7 +4911,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodSplunkList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4919,11 +4919,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodSplunkObservability",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodSplunkObservability)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodSplunkObservability](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodSplunkObservabilityList",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodSplunkObservabilityList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodSplunkObservabilityList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4937,7 +4937,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodSplunkObservabilityList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4945,7 +4945,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodSplunkObservabilityOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodSplunkObservabilityOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodSplunkObservabilityOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4971,7 +4971,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodSplunkObservabilityOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4979,7 +4979,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodSplunkOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodSplunkOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodSplunkOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -5005,7 +5005,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodSplunkOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -5013,11 +5013,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodSumologic",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodSumologic)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodSumologic](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodSumologicList",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodSumologicList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodSumologicList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5031,7 +5031,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodSumologicList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -5039,7 +5039,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodSumologicOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodSumologicOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodSumologicOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -5073,7 +5073,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodSumologicOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -5081,11 +5081,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodThousandeyes",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodThousandeyes)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodThousandeyes](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodThousandeyesList",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodThousandeyesList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodThousandeyesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5099,7 +5099,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodThousandeyesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -5107,7 +5107,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodThousandeyesOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodThousandeyesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodThousandeyesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -5136,7 +5136,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "testTypeInput", GoGetter: "TestTypeInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodThousandeyesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -5144,15 +5144,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotal",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotal)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotal](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalAmazonPrometheus",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalAmazonPrometheus)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalAmazonPrometheus](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalAmazonPrometheusList",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalAmazonPrometheusList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalAmazonPrometheusList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5166,7 +5166,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalAmazonPrometheusList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -5174,7 +5174,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalAmazonPrometheusOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalAmazonPrometheusOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalAmazonPrometheusOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -5200,7 +5200,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalAmazonPrometheusOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -5208,11 +5208,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalAppdynamics",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalAppdynamics)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalAppdynamics](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalAppdynamicsList",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalAppdynamicsList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalAppdynamicsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5226,7 +5226,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalAppdynamicsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -5234,7 +5234,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalAppdynamicsOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalAppdynamicsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalAppdynamicsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "applicationName", GoGetter: "ApplicationName"},
 			_jsii_.MemberProperty{JsiiProperty: "applicationNameInput", GoGetter: "ApplicationNameInput"},
@@ -5262,7 +5262,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalAppdynamicsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -5270,15 +5270,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalAzureMonitor",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalAzureMonitor)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalAzureMonitor](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalAzureMonitorDimensions",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalAzureMonitorDimensions)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalAzureMonitorDimensions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalAzureMonitorDimensionsList",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalAzureMonitorDimensionsList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalAzureMonitorDimensionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5292,7 +5292,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalAzureMonitorDimensionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -5300,7 +5300,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalAzureMonitorDimensionsOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalAzureMonitorDimensionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalAzureMonitorDimensionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -5328,7 +5328,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalAzureMonitorDimensionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -5336,7 +5336,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalAzureMonitorList",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalAzureMonitorList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalAzureMonitorList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5350,7 +5350,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalAzureMonitorList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -5358,7 +5358,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalAzureMonitorOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalAzureMonitorOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalAzureMonitorOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
 			_jsii_.MemberProperty{JsiiProperty: "aggregationInput", GoGetter: "AggregationInput"},
@@ -5407,7 +5407,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workspace", GoGetter: "Workspace"},
 			_jsii_.MemberProperty{JsiiProperty: "workspaceInput", GoGetter: "WorkspaceInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalAzureMonitorOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -5415,11 +5415,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalAzureMonitorWorkspace",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalAzureMonitorWorkspace)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalAzureMonitorWorkspace](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalAzureMonitorWorkspaceList",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalAzureMonitorWorkspaceList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalAzureMonitorWorkspaceList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5433,7 +5433,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalAzureMonitorWorkspaceList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -5441,7 +5441,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalAzureMonitorWorkspaceOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalAzureMonitorWorkspaceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalAzureMonitorWorkspaceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -5471,7 +5471,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workspaceId", GoGetter: "WorkspaceId"},
 			_jsii_.MemberProperty{JsiiProperty: "workspaceIdInput", GoGetter: "WorkspaceIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalAzureMonitorWorkspaceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -5479,11 +5479,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalBigquery",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalBigquery)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalBigquery](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalBigqueryList",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalBigqueryList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalBigqueryList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5497,7 +5497,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalBigqueryList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -5505,7 +5505,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalBigqueryOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalBigqueryOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalBigqueryOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -5535,7 +5535,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalBigqueryOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -5543,15 +5543,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalCloudwatch",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalCloudwatch)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalCloudwatch](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalCloudwatchDimensions",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalCloudwatchDimensions)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalCloudwatchDimensions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalCloudwatchDimensionsList",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalCloudwatchDimensionsList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalCloudwatchDimensionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5565,7 +5565,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalCloudwatchDimensionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -5573,7 +5573,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalCloudwatchDimensionsOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalCloudwatchDimensionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalCloudwatchDimensionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -5601,7 +5601,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalCloudwatchDimensionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -5609,7 +5609,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalCloudwatchList",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalCloudwatchList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalCloudwatchList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5623,7 +5623,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalCloudwatchList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -5631,7 +5631,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalCloudwatchOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalCloudwatchOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalCloudwatchOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -5679,7 +5679,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalCloudwatchOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -5687,11 +5687,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalDatadog",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalDatadog)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalDatadog](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalDatadogList",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalDatadogList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalDatadogList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5705,7 +5705,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalDatadogList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -5713,7 +5713,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalDatadogOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalDatadogOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalDatadogOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -5739,7 +5739,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalDatadogOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -5747,11 +5747,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalDynatrace",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalDynatrace)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalDynatrace](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalDynatraceList",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalDynatraceList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalDynatraceList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5765,7 +5765,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalDynatraceList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -5773,7 +5773,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalDynatraceOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalDynatraceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalDynatraceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -5799,7 +5799,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalDynatraceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -5807,11 +5807,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalElasticsearch",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalElasticsearch)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalElasticsearch](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalElasticsearchList",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalElasticsearchList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalElasticsearchList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5825,7 +5825,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalElasticsearchList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -5833,7 +5833,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalElasticsearchOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalElasticsearchOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalElasticsearchOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -5861,7 +5861,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalElasticsearchOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -5869,11 +5869,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalGcm",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalGcm)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalGcm](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalGcmList",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalGcmList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalGcmList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5887,7 +5887,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalGcmList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -5895,7 +5895,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalGcmOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalGcmOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalGcmOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -5927,7 +5927,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalGcmOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -5935,11 +5935,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalGrafanaLoki",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalGrafanaLoki)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalGrafanaLoki](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalGrafanaLokiList",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalGrafanaLokiList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalGrafanaLokiList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5953,7 +5953,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalGrafanaLokiList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -5961,7 +5961,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalGrafanaLokiOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalGrafanaLokiOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalGrafanaLokiOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -5987,7 +5987,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalGrafanaLokiOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -5995,11 +5995,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalGraphite",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalGraphite)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalGraphite](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalGraphiteList",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalGraphiteList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalGraphiteList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -6013,7 +6013,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalGraphiteList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -6021,7 +6021,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalGraphiteOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalGraphiteOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalGraphiteOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -6047,7 +6047,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalGraphiteOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -6055,11 +6055,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalHoneycomb",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalHoneycomb)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalHoneycomb](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalHoneycombList",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalHoneycombList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalHoneycombList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -6073,7 +6073,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalHoneycombList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -6081,7 +6081,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalHoneycombOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalHoneycombOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalHoneycombOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "attribute", GoGetter: "Attribute"},
 			_jsii_.MemberProperty{JsiiProperty: "attributeInput", GoGetter: "AttributeInput"},
@@ -6110,7 +6110,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalHoneycombOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -6118,11 +6118,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalInfluxdb",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalInfluxdb)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalInfluxdb](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalInfluxdbList",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalInfluxdbList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalInfluxdbList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -6136,7 +6136,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalInfluxdbList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -6144,7 +6144,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalInfluxdbOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalInfluxdbOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalInfluxdbOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -6170,7 +6170,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalInfluxdbOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -6178,19 +6178,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalInstana",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalInstana)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalInstana](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalInstanaApplication",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalInstanaApplication)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalInstanaApplication](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalInstanaApplicationGroupBy",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalInstanaApplicationGroupBy)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalInstanaApplicationGroupBy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalInstanaApplicationGroupByList",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalInstanaApplicationGroupByList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalInstanaApplicationGroupByList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -6204,7 +6204,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalInstanaApplicationGroupByList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -6212,7 +6212,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalInstanaApplicationGroupByOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalInstanaApplicationGroupByOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalInstanaApplicationGroupByOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -6243,7 +6243,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalInstanaApplicationGroupByOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -6251,7 +6251,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalInstanaApplicationList",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalInstanaApplicationList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalInstanaApplicationList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -6265,7 +6265,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalInstanaApplicationList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -6273,7 +6273,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalInstanaApplicationOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalInstanaApplicationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalInstanaApplicationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
 			_jsii_.MemberProperty{JsiiProperty: "aggregationInput", GoGetter: "AggregationInput"},
@@ -6312,7 +6312,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalInstanaApplicationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -6320,11 +6320,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalInstanaInfrastructure",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalInstanaInfrastructure)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalInstanaInfrastructure](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalInstanaInfrastructureList",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalInstanaInfrastructureList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalInstanaInfrastructureList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -6338,7 +6338,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalInstanaInfrastructureList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -6346,7 +6346,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalInstanaInfrastructureOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalInstanaInfrastructureOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalInstanaInfrastructureOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -6382,7 +6382,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalInstanaInfrastructureOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -6390,7 +6390,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalInstanaList",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalInstanaList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalInstanaList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -6404,7 +6404,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalInstanaList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -6412,7 +6412,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalInstanaOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalInstanaOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalInstanaOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "application", GoGetter: "Application"},
 			_jsii_.MemberProperty{JsiiProperty: "applicationInput", GoGetter: "ApplicationInput"},
@@ -6446,7 +6446,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalInstanaOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -6454,11 +6454,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalLightstep",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalLightstep)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalLightstep](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalLightstepList",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalLightstepList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalLightstepList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -6472,7 +6472,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalLightstepList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -6480,7 +6480,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalLightstepOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalLightstepOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalLightstepOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -6515,7 +6515,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uql", GoGetter: "Uql"},
 			_jsii_.MemberProperty{JsiiProperty: "uqlInput", GoGetter: "UqlInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalLightstepOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -6523,7 +6523,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalList",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -6537,7 +6537,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -6545,11 +6545,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalLogicMonitor",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalLogicMonitor)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalLogicMonitor](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalLogicMonitorList",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalLogicMonitorList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalLogicMonitorList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -6563,7 +6563,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalLogicMonitorList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -6571,7 +6571,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalLogicMonitorOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalLogicMonitorOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalLogicMonitorOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "checkpointId", GoGetter: "CheckpointId"},
 			_jsii_.MemberProperty{JsiiProperty: "checkpointIdInput", GoGetter: "CheckpointIdInput"},
@@ -6614,7 +6614,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "websiteId", GoGetter: "WebsiteId"},
 			_jsii_.MemberProperty{JsiiProperty: "websiteIdInput", GoGetter: "WebsiteIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalLogicMonitorOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -6622,11 +6622,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalNewrelic",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalNewrelic)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalNewrelic](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalNewrelicList",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalNewrelicList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalNewrelicList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -6640,7 +6640,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalNewrelicList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -6648,7 +6648,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalNewrelicOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalNewrelicOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalNewrelicOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -6674,7 +6674,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalNewrelicOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -6682,11 +6682,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalOpentsdb",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalOpentsdb)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalOpentsdb](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalOpentsdbList",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalOpentsdbList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalOpentsdbList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -6700,7 +6700,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalOpentsdbList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -6708,7 +6708,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalOpentsdbOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalOpentsdbOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalOpentsdbOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -6734,7 +6734,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalOpentsdbOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -6742,7 +6742,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "amazonPrometheus", GoGetter: "AmazonPrometheus"},
 			_jsii_.MemberProperty{JsiiProperty: "amazonPrometheusInput", GoGetter: "AmazonPrometheusInput"},
@@ -6866,7 +6866,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "thousandeyesInput", GoGetter: "ThousandeyesInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -6874,11 +6874,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalPingdom",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalPingdom)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalPingdom](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalPingdomList",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalPingdomList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalPingdomList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -6892,7 +6892,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalPingdomList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -6900,7 +6900,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalPingdomOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalPingdomOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalPingdomOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "checkId", GoGetter: "CheckId"},
 			_jsii_.MemberProperty{JsiiProperty: "checkIdInput", GoGetter: "CheckIdInput"},
@@ -6932,7 +6932,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalPingdomOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -6940,11 +6940,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalPrometheus",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalPrometheus)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalPrometheus](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalPrometheusList",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalPrometheusList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalPrometheusList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -6958,7 +6958,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalPrometheusList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -6966,7 +6966,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalPrometheusOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalPrometheusOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalPrometheusOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -6992,7 +6992,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalPrometheusOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -7000,11 +7000,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalRedshift",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalRedshift)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalRedshift](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalRedshiftList",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalRedshiftList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalRedshiftList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -7018,7 +7018,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalRedshiftList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -7026,7 +7026,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalRedshiftOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalRedshiftOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalRedshiftOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clusterId", GoGetter: "ClusterId"},
 			_jsii_.MemberProperty{JsiiProperty: "clusterIdInput", GoGetter: "ClusterIdInput"},
@@ -7058,7 +7058,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalRedshiftOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -7066,11 +7066,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalSplunk",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalSplunk)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalSplunk](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalSplunkList",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalSplunkList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalSplunkList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -7084,7 +7084,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalSplunkList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -7092,11 +7092,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalSplunkObservability",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalSplunkObservability)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalSplunkObservability](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalSplunkObservabilityList",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalSplunkObservabilityList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalSplunkObservabilityList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -7110,7 +7110,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalSplunkObservabilityList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -7118,7 +7118,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalSplunkObservabilityOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalSplunkObservabilityOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalSplunkObservabilityOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -7144,7 +7144,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalSplunkObservabilityOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -7152,7 +7152,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalSplunkOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalSplunkOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalSplunkOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -7178,7 +7178,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalSplunkOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -7186,11 +7186,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalSumologic",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalSumologic)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalSumologic](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalSumologicList",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalSumologicList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalSumologicList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -7204,7 +7204,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalSumologicList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -7212,7 +7212,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalSumologicOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalSumologicOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalSumologicOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -7246,7 +7246,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalSumologicOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -7254,11 +7254,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalThousandeyes",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalThousandeyes)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalThousandeyes](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalThousandeyesList",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalThousandeyesList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalThousandeyesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -7272,7 +7272,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalThousandeyesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -7280,7 +7280,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodTotalThousandeyesOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsGoodTotalThousandeyesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsGoodTotalThousandeyesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -7309,7 +7309,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "testTypeInput", GoGetter: "TestTypeInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsGoodTotalThousandeyesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -7317,7 +7317,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsList",
-		reflect.TypeOf((*SloObjectiveCountMetricsList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -7331,7 +7331,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -7339,7 +7339,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bad", GoGetter: "Bad"},
 			_jsii_.MemberProperty{JsiiProperty: "badInput", GoGetter: "BadInput"},
@@ -7381,7 +7381,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "total", GoGetter: "Total"},
 			_jsii_.MemberProperty{JsiiProperty: "totalInput", GoGetter: "TotalInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -7389,15 +7389,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotal",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotal)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotal](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalAmazonPrometheus",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalAmazonPrometheus)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalAmazonPrometheus](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalAmazonPrometheusList",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalAmazonPrometheusList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalAmazonPrometheusList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -7411,7 +7411,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsTotalAmazonPrometheusList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -7419,7 +7419,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalAmazonPrometheusOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalAmazonPrometheusOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalAmazonPrometheusOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -7445,7 +7445,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsTotalAmazonPrometheusOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -7453,11 +7453,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalAppdynamics",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalAppdynamics)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalAppdynamics](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalAppdynamicsList",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalAppdynamicsList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalAppdynamicsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -7471,7 +7471,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsTotalAppdynamicsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -7479,7 +7479,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalAppdynamicsOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalAppdynamicsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalAppdynamicsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "applicationName", GoGetter: "ApplicationName"},
 			_jsii_.MemberProperty{JsiiProperty: "applicationNameInput", GoGetter: "ApplicationNameInput"},
@@ -7507,7 +7507,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsTotalAppdynamicsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -7515,15 +7515,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalAzureMonitor",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalAzureMonitor)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalAzureMonitor](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalAzureMonitorDimensions",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalAzureMonitorDimensions)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalAzureMonitorDimensions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalAzureMonitorDimensionsList",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalAzureMonitorDimensionsList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalAzureMonitorDimensionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -7537,7 +7537,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsTotalAzureMonitorDimensionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -7545,7 +7545,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalAzureMonitorDimensionsOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalAzureMonitorDimensionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalAzureMonitorDimensionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -7573,7 +7573,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsTotalAzureMonitorDimensionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -7581,7 +7581,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalAzureMonitorList",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalAzureMonitorList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalAzureMonitorList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -7595,7 +7595,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsTotalAzureMonitorList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -7603,7 +7603,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalAzureMonitorOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalAzureMonitorOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalAzureMonitorOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
 			_jsii_.MemberProperty{JsiiProperty: "aggregationInput", GoGetter: "AggregationInput"},
@@ -7652,7 +7652,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workspace", GoGetter: "Workspace"},
 			_jsii_.MemberProperty{JsiiProperty: "workspaceInput", GoGetter: "WorkspaceInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsTotalAzureMonitorOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -7660,11 +7660,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalAzureMonitorWorkspace",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalAzureMonitorWorkspace)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalAzureMonitorWorkspace](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalAzureMonitorWorkspaceList",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalAzureMonitorWorkspaceList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalAzureMonitorWorkspaceList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -7678,7 +7678,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsTotalAzureMonitorWorkspaceList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -7686,7 +7686,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalAzureMonitorWorkspaceOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalAzureMonitorWorkspaceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalAzureMonitorWorkspaceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -7716,7 +7716,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workspaceId", GoGetter: "WorkspaceId"},
 			_jsii_.MemberProperty{JsiiProperty: "workspaceIdInput", GoGetter: "WorkspaceIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsTotalAzureMonitorWorkspaceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -7724,11 +7724,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalBigquery",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalBigquery)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalBigquery](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalBigqueryList",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalBigqueryList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalBigqueryList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -7742,7 +7742,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsTotalBigqueryList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -7750,7 +7750,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalBigqueryOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalBigqueryOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalBigqueryOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -7780,7 +7780,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsTotalBigqueryOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -7788,15 +7788,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalCloudwatch",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalCloudwatch)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalCloudwatch](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalCloudwatchDimensions",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalCloudwatchDimensions)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalCloudwatchDimensions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalCloudwatchDimensionsList",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalCloudwatchDimensionsList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalCloudwatchDimensionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -7810,7 +7810,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsTotalCloudwatchDimensionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -7818,7 +7818,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalCloudwatchDimensionsOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalCloudwatchDimensionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalCloudwatchDimensionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -7846,7 +7846,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsTotalCloudwatchDimensionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -7854,7 +7854,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalCloudwatchList",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalCloudwatchList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalCloudwatchList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -7868,7 +7868,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsTotalCloudwatchList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -7876,7 +7876,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalCloudwatchOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalCloudwatchOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalCloudwatchOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -7924,7 +7924,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsTotalCloudwatchOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -7932,11 +7932,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalDatadog",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalDatadog)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalDatadog](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalDatadogList",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalDatadogList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalDatadogList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -7950,7 +7950,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsTotalDatadogList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -7958,7 +7958,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalDatadogOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalDatadogOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalDatadogOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -7984,7 +7984,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsTotalDatadogOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -7992,11 +7992,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalDynatrace",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalDynatrace)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalDynatrace](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalDynatraceList",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalDynatraceList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalDynatraceList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -8010,7 +8010,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsTotalDynatraceList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -8018,7 +8018,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalDynatraceOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalDynatraceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalDynatraceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -8044,7 +8044,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsTotalDynatraceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -8052,11 +8052,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalElasticsearch",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalElasticsearch)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalElasticsearch](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalElasticsearchList",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalElasticsearchList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalElasticsearchList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -8070,7 +8070,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsTotalElasticsearchList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -8078,7 +8078,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalElasticsearchOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalElasticsearchOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalElasticsearchOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -8106,7 +8106,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsTotalElasticsearchOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -8114,11 +8114,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalGcm",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalGcm)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalGcm](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalGcmList",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalGcmList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalGcmList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -8132,7 +8132,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsTotalGcmList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -8140,7 +8140,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalGcmOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalGcmOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalGcmOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -8172,7 +8172,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsTotalGcmOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -8180,11 +8180,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalGrafanaLoki",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalGrafanaLoki)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalGrafanaLoki](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalGrafanaLokiList",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalGrafanaLokiList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalGrafanaLokiList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -8198,7 +8198,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsTotalGrafanaLokiList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -8206,7 +8206,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalGrafanaLokiOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalGrafanaLokiOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalGrafanaLokiOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -8232,7 +8232,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsTotalGrafanaLokiOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -8240,11 +8240,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalGraphite",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalGraphite)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalGraphite](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalGraphiteList",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalGraphiteList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalGraphiteList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -8258,7 +8258,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsTotalGraphiteList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -8266,7 +8266,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalGraphiteOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalGraphiteOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalGraphiteOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -8292,7 +8292,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsTotalGraphiteOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -8300,11 +8300,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalHoneycomb",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalHoneycomb)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalHoneycomb](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalHoneycombList",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalHoneycombList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalHoneycombList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -8318,7 +8318,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsTotalHoneycombList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -8326,7 +8326,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalHoneycombOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalHoneycombOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalHoneycombOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "attribute", GoGetter: "Attribute"},
 			_jsii_.MemberProperty{JsiiProperty: "attributeInput", GoGetter: "AttributeInput"},
@@ -8355,7 +8355,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsTotalHoneycombOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -8363,11 +8363,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalInfluxdb",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalInfluxdb)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalInfluxdb](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalInfluxdbList",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalInfluxdbList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalInfluxdbList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -8381,7 +8381,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsTotalInfluxdbList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -8389,7 +8389,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalInfluxdbOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalInfluxdbOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalInfluxdbOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -8415,7 +8415,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsTotalInfluxdbOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -8423,19 +8423,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalInstana",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalInstana)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalInstana](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalInstanaApplication",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalInstanaApplication)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalInstanaApplication](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalInstanaApplicationGroupBy",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalInstanaApplicationGroupBy)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalInstanaApplicationGroupBy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalInstanaApplicationGroupByList",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalInstanaApplicationGroupByList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalInstanaApplicationGroupByList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -8449,7 +8449,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsTotalInstanaApplicationGroupByList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -8457,7 +8457,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalInstanaApplicationGroupByOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalInstanaApplicationGroupByOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalInstanaApplicationGroupByOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -8488,7 +8488,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsTotalInstanaApplicationGroupByOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -8496,7 +8496,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalInstanaApplicationList",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalInstanaApplicationList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalInstanaApplicationList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -8510,7 +8510,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsTotalInstanaApplicationList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -8518,7 +8518,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalInstanaApplicationOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalInstanaApplicationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalInstanaApplicationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
 			_jsii_.MemberProperty{JsiiProperty: "aggregationInput", GoGetter: "AggregationInput"},
@@ -8557,7 +8557,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsTotalInstanaApplicationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -8565,11 +8565,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalInstanaInfrastructure",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalInstanaInfrastructure)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalInstanaInfrastructure](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalInstanaInfrastructureList",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalInstanaInfrastructureList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalInstanaInfrastructureList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -8583,7 +8583,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsTotalInstanaInfrastructureList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -8591,7 +8591,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalInstanaInfrastructureOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalInstanaInfrastructureOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalInstanaInfrastructureOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -8627,7 +8627,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsTotalInstanaInfrastructureOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -8635,7 +8635,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalInstanaList",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalInstanaList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalInstanaList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -8649,7 +8649,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsTotalInstanaList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -8657,7 +8657,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalInstanaOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalInstanaOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalInstanaOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "application", GoGetter: "Application"},
 			_jsii_.MemberProperty{JsiiProperty: "applicationInput", GoGetter: "ApplicationInput"},
@@ -8691,7 +8691,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsTotalInstanaOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -8699,11 +8699,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalLightstep",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalLightstep)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalLightstep](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalLightstepList",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalLightstepList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalLightstepList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -8717,7 +8717,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsTotalLightstepList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -8725,7 +8725,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalLightstepOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalLightstepOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalLightstepOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -8760,7 +8760,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uql", GoGetter: "Uql"},
 			_jsii_.MemberProperty{JsiiProperty: "uqlInput", GoGetter: "UqlInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsTotalLightstepOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -8768,7 +8768,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalList",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -8782,7 +8782,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsTotalList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -8790,11 +8790,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalLogicMonitor",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalLogicMonitor)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalLogicMonitor](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalLogicMonitorList",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalLogicMonitorList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalLogicMonitorList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -8808,7 +8808,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsTotalLogicMonitorList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -8816,7 +8816,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalLogicMonitorOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalLogicMonitorOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalLogicMonitorOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "checkpointId", GoGetter: "CheckpointId"},
 			_jsii_.MemberProperty{JsiiProperty: "checkpointIdInput", GoGetter: "CheckpointIdInput"},
@@ -8859,7 +8859,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "websiteId", GoGetter: "WebsiteId"},
 			_jsii_.MemberProperty{JsiiProperty: "websiteIdInput", GoGetter: "WebsiteIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsTotalLogicMonitorOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -8867,11 +8867,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalNewrelic",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalNewrelic)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalNewrelic](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalNewrelicList",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalNewrelicList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalNewrelicList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -8885,7 +8885,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsTotalNewrelicList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -8893,7 +8893,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalNewrelicOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalNewrelicOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalNewrelicOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -8919,7 +8919,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsTotalNewrelicOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -8927,11 +8927,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalOpentsdb",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalOpentsdb)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalOpentsdb](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalOpentsdbList",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalOpentsdbList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalOpentsdbList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -8945,7 +8945,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsTotalOpentsdbList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -8953,7 +8953,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalOpentsdbOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalOpentsdbOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalOpentsdbOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -8979,7 +8979,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsTotalOpentsdbOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -8987,7 +8987,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "amazonPrometheus", GoGetter: "AmazonPrometheus"},
 			_jsii_.MemberProperty{JsiiProperty: "amazonPrometheusInput", GoGetter: "AmazonPrometheusInput"},
@@ -9111,7 +9111,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "thousandeyesInput", GoGetter: "ThousandeyesInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsTotalOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -9119,11 +9119,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalPingdom",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalPingdom)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalPingdom](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalPingdomList",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalPingdomList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalPingdomList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -9137,7 +9137,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsTotalPingdomList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -9145,7 +9145,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalPingdomOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalPingdomOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalPingdomOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "checkId", GoGetter: "CheckId"},
 			_jsii_.MemberProperty{JsiiProperty: "checkIdInput", GoGetter: "CheckIdInput"},
@@ -9177,7 +9177,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsTotalPingdomOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -9185,11 +9185,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalPrometheus",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalPrometheus)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalPrometheus](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalPrometheusList",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalPrometheusList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalPrometheusList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -9203,7 +9203,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsTotalPrometheusList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -9211,7 +9211,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalPrometheusOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalPrometheusOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalPrometheusOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -9237,7 +9237,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsTotalPrometheusOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -9245,11 +9245,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalRedshift",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalRedshift)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalRedshift](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalRedshiftList",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalRedshiftList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalRedshiftList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -9263,7 +9263,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsTotalRedshiftList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -9271,7 +9271,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalRedshiftOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalRedshiftOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalRedshiftOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clusterId", GoGetter: "ClusterId"},
 			_jsii_.MemberProperty{JsiiProperty: "clusterIdInput", GoGetter: "ClusterIdInput"},
@@ -9303,7 +9303,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsTotalRedshiftOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -9311,11 +9311,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalSplunk",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalSplunk)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalSplunk](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalSplunkList",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalSplunkList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalSplunkList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -9329,7 +9329,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsTotalSplunkList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -9337,11 +9337,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalSplunkObservability",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalSplunkObservability)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalSplunkObservability](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalSplunkObservabilityList",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalSplunkObservabilityList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalSplunkObservabilityList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -9355,7 +9355,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsTotalSplunkObservabilityList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -9363,7 +9363,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalSplunkObservabilityOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalSplunkObservabilityOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalSplunkObservabilityOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -9389,7 +9389,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsTotalSplunkObservabilityOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -9397,7 +9397,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalSplunkOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalSplunkOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalSplunkOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -9423,7 +9423,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsTotalSplunkOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -9431,11 +9431,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalSumologic",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalSumologic)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalSumologic](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalSumologicList",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalSumologicList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalSumologicList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -9449,7 +9449,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsTotalSumologicList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -9457,7 +9457,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalSumologicOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalSumologicOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalSumologicOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -9491,7 +9491,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsTotalSumologicOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -9499,11 +9499,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalThousandeyes",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalThousandeyes)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalThousandeyes](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalThousandeyesList",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalThousandeyesList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalThousandeyesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -9517,7 +9517,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsTotalThousandeyesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -9525,7 +9525,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalThousandeyesOutputReference",
-		reflect.TypeOf((*SloObjectiveCountMetricsTotalThousandeyesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveCountMetricsTotalThousandeyesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -9554,7 +9554,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "testTypeInput", GoGetter: "TestTypeInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveCountMetricsTotalThousandeyesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -9562,7 +9562,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveList",
-		reflect.TypeOf((*SloObjectiveList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -9576,7 +9576,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -9584,7 +9584,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveOutputReference",
-		reflect.TypeOf((*SloObjectiveOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -9640,7 +9640,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -9648,11 +9648,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetric",
-		reflect.TypeOf((*SloObjectiveRawMetric)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetric](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricList",
-		reflect.TypeOf((*SloObjectiveRawMetricList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -9666,7 +9666,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveRawMetricList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -9674,7 +9674,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricOutputReference",
-		reflect.TypeOf((*SloObjectiveRawMetricOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -9701,7 +9701,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveRawMetricOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -9709,15 +9709,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQuery",
-		reflect.TypeOf((*SloObjectiveRawMetricQuery)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQuery](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryAmazonPrometheus",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryAmazonPrometheus)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryAmazonPrometheus](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryAmazonPrometheusList",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryAmazonPrometheusList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryAmazonPrometheusList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -9731,7 +9731,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveRawMetricQueryAmazonPrometheusList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -9739,7 +9739,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryAmazonPrometheusOutputReference",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryAmazonPrometheusOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryAmazonPrometheusOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -9765,7 +9765,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveRawMetricQueryAmazonPrometheusOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -9773,11 +9773,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryAppdynamics",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryAppdynamics)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryAppdynamics](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryAppdynamicsList",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryAppdynamicsList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryAppdynamicsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -9791,7 +9791,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveRawMetricQueryAppdynamicsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -9799,7 +9799,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryAppdynamicsOutputReference",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryAppdynamicsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryAppdynamicsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "applicationName", GoGetter: "ApplicationName"},
 			_jsii_.MemberProperty{JsiiProperty: "applicationNameInput", GoGetter: "ApplicationNameInput"},
@@ -9827,7 +9827,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveRawMetricQueryAppdynamicsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -9835,15 +9835,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryAzureMonitor",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryAzureMonitor)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryAzureMonitor](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryAzureMonitorDimensions",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryAzureMonitorDimensions)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryAzureMonitorDimensions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryAzureMonitorDimensionsList",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryAzureMonitorDimensionsList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryAzureMonitorDimensionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -9857,7 +9857,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveRawMetricQueryAzureMonitorDimensionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -9865,7 +9865,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryAzureMonitorDimensionsOutputReference",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryAzureMonitorDimensionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryAzureMonitorDimensionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -9893,7 +9893,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveRawMetricQueryAzureMonitorDimensionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -9901,7 +9901,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryAzureMonitorList",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryAzureMonitorList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryAzureMonitorList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -9915,7 +9915,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveRawMetricQueryAzureMonitorList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -9923,7 +9923,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryAzureMonitorOutputReference",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryAzureMonitorOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryAzureMonitorOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
 			_jsii_.MemberProperty{JsiiProperty: "aggregationInput", GoGetter: "AggregationInput"},
@@ -9972,7 +9972,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workspace", GoGetter: "Workspace"},
 			_jsii_.MemberProperty{JsiiProperty: "workspaceInput", GoGetter: "WorkspaceInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveRawMetricQueryAzureMonitorOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -9980,11 +9980,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryAzureMonitorWorkspace",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryAzureMonitorWorkspace)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryAzureMonitorWorkspace](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryAzureMonitorWorkspaceList",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryAzureMonitorWorkspaceList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryAzureMonitorWorkspaceList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -9998,7 +9998,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveRawMetricQueryAzureMonitorWorkspaceList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -10006,7 +10006,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryAzureMonitorWorkspaceOutputReference",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryAzureMonitorWorkspaceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryAzureMonitorWorkspaceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -10036,7 +10036,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workspaceId", GoGetter: "WorkspaceId"},
 			_jsii_.MemberProperty{JsiiProperty: "workspaceIdInput", GoGetter: "WorkspaceIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveRawMetricQueryAzureMonitorWorkspaceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -10044,11 +10044,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryBigquery",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryBigquery)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryBigquery](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryBigqueryList",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryBigqueryList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryBigqueryList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -10062,7 +10062,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveRawMetricQueryBigqueryList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -10070,7 +10070,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryBigqueryOutputReference",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryBigqueryOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryBigqueryOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -10100,7 +10100,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveRawMetricQueryBigqueryOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -10108,15 +10108,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryCloudwatch",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryCloudwatch)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryCloudwatch](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryCloudwatchDimensions",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryCloudwatchDimensions)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryCloudwatchDimensions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryCloudwatchDimensionsList",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryCloudwatchDimensionsList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryCloudwatchDimensionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -10130,7 +10130,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveRawMetricQueryCloudwatchDimensionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -10138,7 +10138,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryCloudwatchDimensionsOutputReference",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryCloudwatchDimensionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryCloudwatchDimensionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -10166,7 +10166,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveRawMetricQueryCloudwatchDimensionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -10174,7 +10174,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryCloudwatchList",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryCloudwatchList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryCloudwatchList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -10188,7 +10188,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveRawMetricQueryCloudwatchList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -10196,7 +10196,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryCloudwatchOutputReference",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryCloudwatchOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryCloudwatchOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -10244,7 +10244,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveRawMetricQueryCloudwatchOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -10252,11 +10252,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryDatadog",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryDatadog)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryDatadog](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryDatadogList",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryDatadogList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryDatadogList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -10270,7 +10270,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveRawMetricQueryDatadogList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -10278,7 +10278,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryDatadogOutputReference",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryDatadogOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryDatadogOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -10304,7 +10304,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveRawMetricQueryDatadogOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -10312,11 +10312,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryDynatrace",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryDynatrace)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryDynatrace](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryDynatraceList",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryDynatraceList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryDynatraceList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -10330,7 +10330,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveRawMetricQueryDynatraceList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -10338,7 +10338,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryDynatraceOutputReference",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryDynatraceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryDynatraceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -10364,7 +10364,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveRawMetricQueryDynatraceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -10372,11 +10372,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryElasticsearch",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryElasticsearch)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryElasticsearch](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryElasticsearchList",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryElasticsearchList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryElasticsearchList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -10390,7 +10390,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveRawMetricQueryElasticsearchList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -10398,7 +10398,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryElasticsearchOutputReference",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryElasticsearchOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryElasticsearchOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -10426,7 +10426,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveRawMetricQueryElasticsearchOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -10434,11 +10434,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryGcm",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryGcm)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryGcm](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryGcmList",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryGcmList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryGcmList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -10452,7 +10452,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveRawMetricQueryGcmList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -10460,7 +10460,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryGcmOutputReference",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryGcmOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryGcmOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -10492,7 +10492,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveRawMetricQueryGcmOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -10500,11 +10500,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryGrafanaLoki",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryGrafanaLoki)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryGrafanaLoki](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryGrafanaLokiList",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryGrafanaLokiList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryGrafanaLokiList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -10518,7 +10518,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveRawMetricQueryGrafanaLokiList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -10526,7 +10526,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryGrafanaLokiOutputReference",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryGrafanaLokiOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryGrafanaLokiOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -10552,7 +10552,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveRawMetricQueryGrafanaLokiOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -10560,11 +10560,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryGraphite",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryGraphite)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryGraphite](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryGraphiteList",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryGraphiteList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryGraphiteList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -10578,7 +10578,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveRawMetricQueryGraphiteList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -10586,7 +10586,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryGraphiteOutputReference",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryGraphiteOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryGraphiteOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -10612,7 +10612,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveRawMetricQueryGraphiteOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -10620,11 +10620,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryHoneycomb",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryHoneycomb)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryHoneycomb](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryHoneycombList",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryHoneycombList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryHoneycombList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -10638,7 +10638,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveRawMetricQueryHoneycombList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -10646,7 +10646,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryHoneycombOutputReference",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryHoneycombOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryHoneycombOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "attribute", GoGetter: "Attribute"},
 			_jsii_.MemberProperty{JsiiProperty: "attributeInput", GoGetter: "AttributeInput"},
@@ -10675,7 +10675,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveRawMetricQueryHoneycombOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -10683,11 +10683,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryInfluxdb",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryInfluxdb)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryInfluxdb](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryInfluxdbList",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryInfluxdbList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryInfluxdbList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -10701,7 +10701,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveRawMetricQueryInfluxdbList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -10709,7 +10709,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryInfluxdbOutputReference",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryInfluxdbOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryInfluxdbOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -10735,7 +10735,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveRawMetricQueryInfluxdbOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -10743,19 +10743,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryInstana",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryInstana)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryInstana](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryInstanaApplication",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryInstanaApplication)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryInstanaApplication](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryInstanaApplicationGroupBy",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryInstanaApplicationGroupBy)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryInstanaApplicationGroupBy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryInstanaApplicationGroupByList",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryInstanaApplicationGroupByList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryInstanaApplicationGroupByList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -10769,7 +10769,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveRawMetricQueryInstanaApplicationGroupByList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -10777,7 +10777,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryInstanaApplicationGroupByOutputReference",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryInstanaApplicationGroupByOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryInstanaApplicationGroupByOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -10808,7 +10808,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveRawMetricQueryInstanaApplicationGroupByOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -10816,7 +10816,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryInstanaApplicationList",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryInstanaApplicationList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryInstanaApplicationList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -10830,7 +10830,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveRawMetricQueryInstanaApplicationList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -10838,7 +10838,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryInstanaApplicationOutputReference",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryInstanaApplicationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryInstanaApplicationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregation", GoGetter: "Aggregation"},
 			_jsii_.MemberProperty{JsiiProperty: "aggregationInput", GoGetter: "AggregationInput"},
@@ -10877,7 +10877,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveRawMetricQueryInstanaApplicationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -10885,11 +10885,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryInstanaInfrastructure",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryInstanaInfrastructure)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryInstanaInfrastructure](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryInstanaInfrastructureList",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryInstanaInfrastructureList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryInstanaInfrastructureList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -10903,7 +10903,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveRawMetricQueryInstanaInfrastructureList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -10911,7 +10911,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryInstanaInfrastructureOutputReference",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryInstanaInfrastructureOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryInstanaInfrastructureOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -10947,7 +10947,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveRawMetricQueryInstanaInfrastructureOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -10955,7 +10955,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryInstanaList",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryInstanaList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryInstanaList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -10969,7 +10969,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveRawMetricQueryInstanaList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -10977,7 +10977,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryInstanaOutputReference",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryInstanaOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryInstanaOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "application", GoGetter: "Application"},
 			_jsii_.MemberProperty{JsiiProperty: "applicationInput", GoGetter: "ApplicationInput"},
@@ -11011,7 +11011,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveRawMetricQueryInstanaOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -11019,11 +11019,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryLightstep",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryLightstep)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryLightstep](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryLightstepList",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryLightstepList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryLightstepList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -11037,7 +11037,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveRawMetricQueryLightstepList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -11045,7 +11045,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryLightstepOutputReference",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryLightstepOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryLightstepOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -11080,7 +11080,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uql", GoGetter: "Uql"},
 			_jsii_.MemberProperty{JsiiProperty: "uqlInput", GoGetter: "UqlInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveRawMetricQueryLightstepOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -11088,7 +11088,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryList",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -11102,7 +11102,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveRawMetricQueryList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -11110,11 +11110,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryLogicMonitor",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryLogicMonitor)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryLogicMonitor](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryLogicMonitorList",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryLogicMonitorList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryLogicMonitorList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -11128,7 +11128,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveRawMetricQueryLogicMonitorList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -11136,7 +11136,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryLogicMonitorOutputReference",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryLogicMonitorOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryLogicMonitorOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "checkpointId", GoGetter: "CheckpointId"},
 			_jsii_.MemberProperty{JsiiProperty: "checkpointIdInput", GoGetter: "CheckpointIdInput"},
@@ -11179,7 +11179,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "websiteId", GoGetter: "WebsiteId"},
 			_jsii_.MemberProperty{JsiiProperty: "websiteIdInput", GoGetter: "WebsiteIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveRawMetricQueryLogicMonitorOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -11187,11 +11187,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryNewrelic",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryNewrelic)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryNewrelic](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryNewrelicList",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryNewrelicList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryNewrelicList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -11205,7 +11205,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveRawMetricQueryNewrelicList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -11213,7 +11213,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryNewrelicOutputReference",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryNewrelicOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryNewrelicOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -11239,7 +11239,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveRawMetricQueryNewrelicOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -11247,11 +11247,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryOpentsdb",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryOpentsdb)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryOpentsdb](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryOpentsdbList",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryOpentsdbList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryOpentsdbList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -11265,7 +11265,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveRawMetricQueryOpentsdbList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -11273,7 +11273,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryOpentsdbOutputReference",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryOpentsdbOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryOpentsdbOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -11299,7 +11299,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveRawMetricQueryOpentsdbOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -11307,7 +11307,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryOutputReference",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "amazonPrometheus", GoGetter: "AmazonPrometheus"},
 			_jsii_.MemberProperty{JsiiProperty: "amazonPrometheusInput", GoGetter: "AmazonPrometheusInput"},
@@ -11431,7 +11431,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "thousandeyesInput", GoGetter: "ThousandeyesInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveRawMetricQueryOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -11439,11 +11439,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryPingdom",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryPingdom)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryPingdom](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryPingdomList",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryPingdomList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryPingdomList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -11457,7 +11457,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveRawMetricQueryPingdomList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -11465,7 +11465,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryPingdomOutputReference",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryPingdomOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryPingdomOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "checkId", GoGetter: "CheckId"},
 			_jsii_.MemberProperty{JsiiProperty: "checkIdInput", GoGetter: "CheckIdInput"},
@@ -11497,7 +11497,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveRawMetricQueryPingdomOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -11505,11 +11505,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryPrometheus",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryPrometheus)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryPrometheus](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryPrometheusList",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryPrometheusList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryPrometheusList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -11523,7 +11523,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveRawMetricQueryPrometheusList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -11531,7 +11531,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryPrometheusOutputReference",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryPrometheusOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryPrometheusOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -11557,7 +11557,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveRawMetricQueryPrometheusOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -11565,11 +11565,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryRedshift",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryRedshift)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryRedshift](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryRedshiftList",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryRedshiftList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryRedshiftList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -11583,7 +11583,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveRawMetricQueryRedshiftList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -11591,7 +11591,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryRedshiftOutputReference",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryRedshiftOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryRedshiftOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clusterId", GoGetter: "ClusterId"},
 			_jsii_.MemberProperty{JsiiProperty: "clusterIdInput", GoGetter: "ClusterIdInput"},
@@ -11623,7 +11623,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveRawMetricQueryRedshiftOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -11631,11 +11631,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQuerySplunk",
-		reflect.TypeOf((*SloObjectiveRawMetricQuerySplunk)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQuerySplunk](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQuerySplunkList",
-		reflect.TypeOf((*SloObjectiveRawMetricQuerySplunkList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQuerySplunkList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -11649,7 +11649,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveRawMetricQuerySplunkList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -11657,11 +11657,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQuerySplunkObservability",
-		reflect.TypeOf((*SloObjectiveRawMetricQuerySplunkObservability)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQuerySplunkObservability](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQuerySplunkObservabilityList",
-		reflect.TypeOf((*SloObjectiveRawMetricQuerySplunkObservabilityList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQuerySplunkObservabilityList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -11675,7 +11675,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveRawMetricQuerySplunkObservabilityList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -11683,7 +11683,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQuerySplunkObservabilityOutputReference",
-		reflect.TypeOf((*SloObjectiveRawMetricQuerySplunkObservabilityOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQuerySplunkObservabilityOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -11709,7 +11709,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveRawMetricQuerySplunkObservabilityOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -11717,7 +11717,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQuerySplunkOutputReference",
-		reflect.TypeOf((*SloObjectiveRawMetricQuerySplunkOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQuerySplunkOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -11743,7 +11743,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveRawMetricQuerySplunkOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -11751,11 +11751,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQuerySumologic",
-		reflect.TypeOf((*SloObjectiveRawMetricQuerySumologic)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQuerySumologic](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQuerySumologicList",
-		reflect.TypeOf((*SloObjectiveRawMetricQuerySumologicList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQuerySumologicList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -11769,7 +11769,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveRawMetricQuerySumologicList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -11777,7 +11777,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQuerySumologicOutputReference",
-		reflect.TypeOf((*SloObjectiveRawMetricQuerySumologicOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQuerySumologicOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -11811,7 +11811,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveRawMetricQuerySumologicOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -11819,11 +11819,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryThousandeyes",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryThousandeyes)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryThousandeyes](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryThousandeyesList",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryThousandeyesList)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryThousandeyesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -11837,7 +11837,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveRawMetricQueryThousandeyesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -11845,7 +11845,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryThousandeyesOutputReference",
-		reflect.TypeOf((*SloObjectiveRawMetricQueryThousandeyesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloObjectiveRawMetricQueryThousandeyesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -11874,7 +11874,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "testTypeInput", GoGetter: "TestTypeInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloObjectiveRawMetricQueryThousandeyesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -11882,15 +11882,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloTimeWindow",
-		reflect.TypeOf((*SloTimeWindow)(nil)).Elem(),
+		reflect.TypeFor[SloTimeWindow](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.slo.SloTimeWindowCalendar",
-		reflect.TypeOf((*SloTimeWindowCalendar)(nil)).Elem(),
+		reflect.TypeFor[SloTimeWindowCalendar](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloTimeWindowCalendarList",
-		reflect.TypeOf((*SloTimeWindowCalendarList)(nil)).Elem(),
+		reflect.TypeFor[SloTimeWindowCalendarList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -11904,7 +11904,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloTimeWindowCalendarList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -11912,7 +11912,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloTimeWindowCalendarOutputReference",
-		reflect.TypeOf((*SloTimeWindowCalendarOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloTimeWindowCalendarOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -11940,7 +11940,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "timeZoneInput", GoGetter: "TimeZoneInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloTimeWindowCalendarOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -11948,7 +11948,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.slo.SloTimeWindowOutputReference",
-		reflect.TypeOf((*SloTimeWindowOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SloTimeWindowOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "calendar", GoGetter: "Calendar"},
 			_jsii_.MemberProperty{JsiiProperty: "calendarInput", GoGetter: "CalendarInput"},
@@ -11984,7 +11984,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "unit", GoGetter: "Unit"},
 			_jsii_.MemberProperty{JsiiProperty: "unitInput", GoGetter: "UnitInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SloTimeWindowOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

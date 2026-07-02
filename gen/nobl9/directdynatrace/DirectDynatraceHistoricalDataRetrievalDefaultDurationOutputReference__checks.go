@@ -98,7 +98,7 @@ func (d *jsiiProxy_DirectDynatraceHistoricalDataRetrievalDefaultDurationOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_DirectDynatraceHistoricalDataRetrievalDefaultDurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DirectDynatraceHistoricalDataRetrievalDefaultDurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DirectDynatraceHistoricalDataRetrievalDefaultDurationOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_DirectDynatraceHistoricalDataRetrievalDefaultDurationOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DirectDynatraceHistoricalDataRetrievalDefaultDurationOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewDirectDynatraceHistoricalDataRetrievalDefaultDurationOutputRefer
 
 	return nil
 }
-

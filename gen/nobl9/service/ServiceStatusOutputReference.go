@@ -12,9 +12,9 @@ type ServiceStatusOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,8 +27,8 @@ type ServiceStatusOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	SloCount() *float64
 	SetSloCount(val *float64)
 	SloCountInput() *float64
@@ -43,7 +43,7 @@ type ServiceStatusOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -67,7 +67,7 @@ type ServiceStatusOutputReference interface {
 	ResetSloCount()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,8 +80,8 @@ type jsiiProxy_ServiceStatusOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ServiceStatusOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ServiceStatusOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -120,8 +120,8 @@ func (j *jsiiProxy_ServiceStatusOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ServiceStatusOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ServiceStatusOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -170,7 +170,6 @@ func (j *jsiiProxy_ServiceStatusOutputReference) TerraformResource() cdktf.IInte
 	return returns
 }
 
-
 func NewServiceStatusOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ServiceStatusOutputReference {
 	_init_.Initialize()
 
@@ -181,7 +180,7 @@ func NewServiceStatusOutputReference(terraformResource cdktf.IInterpolatingParen
 
 	_jsii_.Create(
 		"@cdktf/provider-nobl9.service.ServiceStatusOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -193,12 +192,12 @@ func NewServiceStatusOutputReference_Override(s ServiceStatusOutputReference, te
 
 	_jsii_.Create(
 		"@cdktf/provider-nobl9.service.ServiceStatusOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		s,
 	)
 }
 
-func (j *jsiiProxy_ServiceStatusOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ServiceStatusOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -209,7 +208,7 @@ func (j *jsiiProxy_ServiceStatusOutputReference)SetComplexObjectIndex(val interf
 	)
 }
 
-func (j *jsiiProxy_ServiceStatusOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ServiceStatusOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -220,7 +219,7 @@ func (j *jsiiProxy_ServiceStatusOutputReference)SetComplexObjectIsFromSet(val *b
 	)
 }
 
-func (j *jsiiProxy_ServiceStatusOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ServiceStatusOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_ServiceStatusOutputReference)SetInternalValue(val interface{}
 	)
 }
 
-func (j *jsiiProxy_ServiceStatusOutputReference)SetSloCount(val *float64) {
+func (j *jsiiProxy_ServiceStatusOutputReference) SetSloCount(val *float64) {
 	if err := j.validateSetSloCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_ServiceStatusOutputReference)SetSloCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ServiceStatusOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ServiceStatusOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_ServiceStatusOutputReference)SetTerraformAttribute(val *strin
 	)
 }
 
-func (j *jsiiProxy_ServiceStatusOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ServiceStatusOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,16 +276,16 @@ func (s *jsiiProxy_ServiceStatusOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (s *jsiiProxy_ServiceStatusOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_ServiceStatusOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -302,7 +301,7 @@ func (s *jsiiProxy_ServiceStatusOutputReference) GetBooleanAttribute(terraformAt
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -318,7 +317,7 @@ func (s *jsiiProxy_ServiceStatusOutputReference) GetBooleanMapAttribute(terrafor
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -334,7 +333,7 @@ func (s *jsiiProxy_ServiceStatusOutputReference) GetListAttribute(terraformAttri
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -350,7 +349,7 @@ func (s *jsiiProxy_ServiceStatusOutputReference) GetNumberAttribute(terraformAtt
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -366,7 +365,7 @@ func (s *jsiiProxy_ServiceStatusOutputReference) GetNumberListAttribute(terrafor
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -382,7 +381,7 @@ func (s *jsiiProxy_ServiceStatusOutputReference) GetNumberMapAttribute(terraform
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -398,7 +397,7 @@ func (s *jsiiProxy_ServiceStatusOutputReference) GetStringAttribute(terraformAtt
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -414,7 +413,7 @@ func (s *jsiiProxy_ServiceStatusOutputReference) GetStringMapAttribute(terraform
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -443,7 +442,7 @@ func (s *jsiiProxy_ServiceStatusOutputReference) InterpolationForAttribute(prope
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -458,16 +457,16 @@ func (s *jsiiProxy_ServiceStatusOutputReference) ResetSloCount() {
 	)
 }
 
-func (s *jsiiProxy_ServiceStatusOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_ServiceStatusOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -486,4 +485,3 @@ func (s *jsiiProxy_ServiceStatusOutputReference) ToString() *string {
 
 	return returns
 }
-

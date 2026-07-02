@@ -98,7 +98,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadAzureMonitorWorkspaceOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsBadAzureMonitorWorkspaceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveCountMetricsBadAzureMonitorWorkspaceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsBadAzureMonitorWorkspaceOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsBadAzureMonitorWorkspaceOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveCountMetricsBadAzureMonitorWorkspaceOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewSloObjectiveCountMetricsBadAzureMonitorWorkspaceOutputReferenceP
 
 	return nil
 }
-

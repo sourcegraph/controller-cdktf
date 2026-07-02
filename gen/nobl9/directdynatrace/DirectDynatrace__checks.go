@@ -19,7 +19,7 @@ func (d *jsiiProxy_DirectDynatrace) validateAddMoveTargetParameters(moveTarget *
 	return nil
 }
 
-func (d *jsiiProxy_DirectDynatrace) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DirectDynatrace) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (d *jsiiProxy_DirectDynatrace) validateMoveFromIdParameters(id *string) err
 	return nil
 }
 
-func (d *jsiiProxy_DirectDynatrace) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (d *jsiiProxy_DirectDynatrace) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateDirectDynatrace_GenerateConfigForImportParameters(scope constructs.
 	return nil
 }
 
-func validateDirectDynatrace_IsConstructParameters(x interface{}) error {
+func validateDirectDynatrace_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateDirectDynatrace_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateDirectDynatrace_IsTerraformElementParameters(x interface{}) error {
+func validateDirectDynatrace_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateDirectDynatrace_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateDirectDynatrace_IsTerraformResourceParameters(x interface{}) error {
+func validateDirectDynatrace_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func validateDirectDynatrace_IsTerraformResourceParameters(x interface{}) error 
 	return nil
 }
 
-func (j *jsiiProxy_DirectDynatrace) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_DirectDynatrace) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -299,7 +299,7 @@ func (j *jsiiProxy_DirectDynatrace) validateSetConnectionParameters(val interfac
 	return nil
 }
 
-func (j *jsiiProxy_DirectDynatrace) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DirectDynatrace) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -396,7 +396,7 @@ func (j *jsiiProxy_DirectDynatrace) validateSetLifecycleParameters(val *cdktf.Te
 	return nil
 }
 
-func (j *jsiiProxy_DirectDynatrace) validateSetLogCollectionEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_DirectDynatrace) validateSetLogCollectionEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -432,7 +432,7 @@ func (j *jsiiProxy_DirectDynatrace) validateSetProjectParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_DirectDynatrace) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_DirectDynatrace) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -520,4 +520,3 @@ func validateNewDirectDynatraceParameters(scope constructs.Construct, id *string
 
 	return nil
 }
-

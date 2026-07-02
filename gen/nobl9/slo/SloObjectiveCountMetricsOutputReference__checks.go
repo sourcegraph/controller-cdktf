@@ -90,7 +90,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsOutputReference) validateInterpolatio
 	return nil
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsOutputReference) validatePutBadParameters(value interface{}) error {
+func (s *jsiiProxy_SloObjectiveCountMetricsOutputReference) validatePutBadParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsOutputReference) validatePutBadParame
 	return nil
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsOutputReference) validatePutGoodParameters(value interface{}) error {
+func (s *jsiiProxy_SloObjectiveCountMetricsOutputReference) validatePutGoodParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -152,7 +152,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsOutputReference) validatePutGoodParam
 	return nil
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsOutputReference) validatePutGoodTotalParameters(value interface{}) error {
+func (s *jsiiProxy_SloObjectiveCountMetricsOutputReference) validatePutGoodTotalParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsOutputReference) validatePutGoodTotal
 	return nil
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsOutputReference) validatePutTotalParameters(value interface{}) error {
+func (s *jsiiProxy_SloObjectiveCountMetricsOutputReference) validatePutTotalParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -222,7 +222,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsOutputReference) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveCountMetricsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -287,7 +287,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsOutputReference) validateSetComplexOb
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsOutputReference) validateSetIncrementalParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveCountMetricsOutputReference) validateSetIncrementalParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -307,7 +307,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsOutputReference) validateSetIncrement
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveCountMetricsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -366,4 +366,3 @@ func validateNewSloObjectiveCountMetricsOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

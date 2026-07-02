@@ -19,7 +19,7 @@ func (d *jsiiProxy_DirectLogicMonitor) validateAddMoveTargetParameters(moveTarge
 	return nil
 }
 
-func (d *jsiiProxy_DirectLogicMonitor) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DirectLogicMonitor) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (d *jsiiProxy_DirectLogicMonitor) validateMoveFromIdParameters(id *string) 
 	return nil
 }
 
-func (d *jsiiProxy_DirectLogicMonitor) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (d *jsiiProxy_DirectLogicMonitor) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateDirectLogicMonitor_GenerateConfigForImportParameters(scope construc
 	return nil
 }
 
-func validateDirectLogicMonitor_IsConstructParameters(x interface{}) error {
+func validateDirectLogicMonitor_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateDirectLogicMonitor_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateDirectLogicMonitor_IsTerraformElementParameters(x interface{}) error {
+func validateDirectLogicMonitor_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateDirectLogicMonitor_IsTerraformElementParameters(x interface{}) erro
 	return nil
 }
 
-func validateDirectLogicMonitor_IsTerraformResourceParameters(x interface{}) error {
+func validateDirectLogicMonitor_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -290,7 +290,7 @@ func (j *jsiiProxy_DirectLogicMonitor) validateSetAccountIdParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_DirectLogicMonitor) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_DirectLogicMonitor) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -323,7 +323,7 @@ func (j *jsiiProxy_DirectLogicMonitor) validateSetConnectionParameters(val inter
 	return nil
 }
 
-func (j *jsiiProxy_DirectLogicMonitor) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DirectLogicMonitor) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -412,7 +412,7 @@ func (j *jsiiProxy_DirectLogicMonitor) validateSetLifecycleParameters(val *cdktf
 	return nil
 }
 
-func (j *jsiiProxy_DirectLogicMonitor) validateSetLogCollectionEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_DirectLogicMonitor) validateSetLogCollectionEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -448,7 +448,7 @@ func (j *jsiiProxy_DirectLogicMonitor) validateSetProjectParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_DirectLogicMonitor) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_DirectLogicMonitor) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -528,4 +528,3 @@ func validateNewDirectLogicMonitorParameters(scope constructs.Construct, id *str
 
 	return nil
 }
-

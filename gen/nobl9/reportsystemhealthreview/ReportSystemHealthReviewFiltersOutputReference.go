@@ -12,9 +12,9 @@ type ReportSystemHealthReviewFiltersOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,14 +30,14 @@ type ReportSystemHealthReviewFiltersOutputReference interface {
 	InternalValue() *ReportSystemHealthReviewFilters
 	SetInternalValue(val *ReportSystemHealthReviewFilters)
 	Label() ReportSystemHealthReviewFiltersLabelList
-	LabelInput() interface{}
+	LabelInput() any
 	Projects() *[]*string
 	SetProjects(val *[]*string)
 	ProjectsInput() *[]*string
 	Service() ReportSystemHealthReviewFiltersServiceList
-	ServiceInput() interface{}
+	ServiceInput() any
 	Slo() ReportSystemHealthReviewFiltersSloList
-	SloInput() interface{}
+	SloInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -49,7 +49,7 @@ type ReportSystemHealthReviewFiltersOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -70,16 +70,16 @@ type ReportSystemHealthReviewFiltersOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutLabel(value interface{})
-	PutService(value interface{})
-	PutSlo(value interface{})
+	PutLabel(value any)
+	PutService(value any)
+	PutSlo(value any)
 	ResetLabel()
 	ResetProjects()
 	ResetService()
 	ResetSlo()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,8 +92,8 @@ type jsiiProxy_ReportSystemHealthReviewFiltersOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ReportSystemHealthReviewFiltersOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ReportSystemHealthReviewFiltersOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -152,8 +152,8 @@ func (j *jsiiProxy_ReportSystemHealthReviewFiltersOutputReference) Label() Repor
 	return returns
 }
 
-func (j *jsiiProxy_ReportSystemHealthReviewFiltersOutputReference) LabelInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ReportSystemHealthReviewFiltersOutputReference) LabelInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"labelInput",
@@ -192,8 +192,8 @@ func (j *jsiiProxy_ReportSystemHealthReviewFiltersOutputReference) Service() Rep
 	return returns
 }
 
-func (j *jsiiProxy_ReportSystemHealthReviewFiltersOutputReference) ServiceInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ReportSystemHealthReviewFiltersOutputReference) ServiceInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"serviceInput",
@@ -212,8 +212,8 @@ func (j *jsiiProxy_ReportSystemHealthReviewFiltersOutputReference) Slo() ReportS
 	return returns
 }
 
-func (j *jsiiProxy_ReportSystemHealthReviewFiltersOutputReference) SloInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ReportSystemHealthReviewFiltersOutputReference) SloInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"sloInput",
@@ -242,7 +242,6 @@ func (j *jsiiProxy_ReportSystemHealthReviewFiltersOutputReference) TerraformReso
 	return returns
 }
 
-
 func NewReportSystemHealthReviewFiltersOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ReportSystemHealthReviewFiltersOutputReference {
 	_init_.Initialize()
 
@@ -253,7 +252,7 @@ func NewReportSystemHealthReviewFiltersOutputReference(terraformResource cdktf.I
 
 	_jsii_.Create(
 		"@cdktf/provider-nobl9.reportSystemHealthReview.ReportSystemHealthReviewFiltersOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -265,12 +264,12 @@ func NewReportSystemHealthReviewFiltersOutputReference_Override(r ReportSystemHe
 
 	_jsii_.Create(
 		"@cdktf/provider-nobl9.reportSystemHealthReview.ReportSystemHealthReviewFiltersOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		r,
 	)
 }
 
-func (j *jsiiProxy_ReportSystemHealthReviewFiltersOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ReportSystemHealthReviewFiltersOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,7 +280,7 @@ func (j *jsiiProxy_ReportSystemHealthReviewFiltersOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_ReportSystemHealthReviewFiltersOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ReportSystemHealthReviewFiltersOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,7 +291,7 @@ func (j *jsiiProxy_ReportSystemHealthReviewFiltersOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_ReportSystemHealthReviewFiltersOutputReference)SetInternalValue(val *ReportSystemHealthReviewFilters) {
+func (j *jsiiProxy_ReportSystemHealthReviewFiltersOutputReference) SetInternalValue(val *ReportSystemHealthReviewFilters) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_ReportSystemHealthReviewFiltersOutputReference)SetInternalVal
 	)
 }
 
-func (j *jsiiProxy_ReportSystemHealthReviewFiltersOutputReference)SetProjects(val *[]*string) {
+func (j *jsiiProxy_ReportSystemHealthReviewFiltersOutputReference) SetProjects(val *[]*string) {
 	if err := j.validateSetProjectsParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_ReportSystemHealthReviewFiltersOutputReference)SetProjects(va
 	)
 }
 
-func (j *jsiiProxy_ReportSystemHealthReviewFiltersOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ReportSystemHealthReviewFiltersOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_ReportSystemHealthReviewFiltersOutputReference)SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_ReportSystemHealthReviewFiltersOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ReportSystemHealthReviewFiltersOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,16 +348,16 @@ func (r *jsiiProxy_ReportSystemHealthReviewFiltersOutputReference) ComputeFqn() 
 	return returns
 }
 
-func (r *jsiiProxy_ReportSystemHealthReviewFiltersOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_ReportSystemHealthReviewFiltersOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -374,7 +373,7 @@ func (r *jsiiProxy_ReportSystemHealthReviewFiltersOutputReference) GetBooleanAtt
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -390,7 +389,7 @@ func (r *jsiiProxy_ReportSystemHealthReviewFiltersOutputReference) GetBooleanMap
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -406,7 +405,7 @@ func (r *jsiiProxy_ReportSystemHealthReviewFiltersOutputReference) GetListAttrib
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -422,7 +421,7 @@ func (r *jsiiProxy_ReportSystemHealthReviewFiltersOutputReference) GetNumberAttr
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -438,7 +437,7 @@ func (r *jsiiProxy_ReportSystemHealthReviewFiltersOutputReference) GetNumberList
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -454,7 +453,7 @@ func (r *jsiiProxy_ReportSystemHealthReviewFiltersOutputReference) GetNumberMapA
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -470,7 +469,7 @@ func (r *jsiiProxy_ReportSystemHealthReviewFiltersOutputReference) GetStringAttr
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -486,7 +485,7 @@ func (r *jsiiProxy_ReportSystemHealthReviewFiltersOutputReference) GetStringMapA
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -515,43 +514,43 @@ func (r *jsiiProxy_ReportSystemHealthReviewFiltersOutputReference) Interpolation
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (r *jsiiProxy_ReportSystemHealthReviewFiltersOutputReference) PutLabel(value interface{}) {
+func (r *jsiiProxy_ReportSystemHealthReviewFiltersOutputReference) PutLabel(value any) {
 	if err := r.validatePutLabelParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"putLabel",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (r *jsiiProxy_ReportSystemHealthReviewFiltersOutputReference) PutService(value interface{}) {
+func (r *jsiiProxy_ReportSystemHealthReviewFiltersOutputReference) PutService(value any) {
 	if err := r.validatePutServiceParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"putService",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (r *jsiiProxy_ReportSystemHealthReviewFiltersOutputReference) PutSlo(value interface{}) {
+func (r *jsiiProxy_ReportSystemHealthReviewFiltersOutputReference) PutSlo(value any) {
 	if err := r.validatePutSloParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"putSlo",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -587,16 +586,16 @@ func (r *jsiiProxy_ReportSystemHealthReviewFiltersOutputReference) ResetSlo() {
 	)
 }
 
-func (r *jsiiProxy_ReportSystemHealthReviewFiltersOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (r *jsiiProxy_ReportSystemHealthReviewFiltersOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := r.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -615,4 +614,3 @@ func (r *jsiiProxy_ReportSystemHealthReviewFiltersOutputReference) ToString() *s
 
 	return returns
 }
-

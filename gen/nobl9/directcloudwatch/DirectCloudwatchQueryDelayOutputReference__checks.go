@@ -98,7 +98,7 @@ func (d *jsiiProxy_DirectCloudwatchQueryDelayOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_DirectCloudwatchQueryDelayOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DirectCloudwatchQueryDelayOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewDirectCloudwatchQueryDelayOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

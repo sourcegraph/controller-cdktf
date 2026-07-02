@@ -19,7 +19,7 @@ func (r *jsiiProxy_ReportSystemHealthReview) validateAddMoveTargetParameters(mov
 	return nil
 }
 
-func (r *jsiiProxy_ReportSystemHealthReview) validateAddOverrideParameters(path *string, value interface{}) error {
+func (r *jsiiProxy_ReportSystemHealthReview) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (r *jsiiProxy_ReportSystemHealthReview) validateMoveFromIdParameters(id *st
 	return nil
 }
 
-func (r *jsiiProxy_ReportSystemHealthReview) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (r *jsiiProxy_ReportSystemHealthReview) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (r *jsiiProxy_ReportSystemHealthReview) validateOverrideLogicalIdParameters
 	return nil
 }
 
-func (r *jsiiProxy_ReportSystemHealthReview) validatePutColumnParameters(value interface{}) error {
+func (r *jsiiProxy_ReportSystemHealthReview) validatePutColumnParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -284,7 +284,7 @@ func validateReportSystemHealthReview_GenerateConfigForImportParameters(scope co
 	return nil
 }
 
-func validateReportSystemHealthReview_IsConstructParameters(x interface{}) error {
+func validateReportSystemHealthReview_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -292,7 +292,7 @@ func validateReportSystemHealthReview_IsConstructParameters(x interface{}) error
 	return nil
 }
 
-func validateReportSystemHealthReview_IsTerraformElementParameters(x interface{}) error {
+func validateReportSystemHealthReview_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -300,7 +300,7 @@ func validateReportSystemHealthReview_IsTerraformElementParameters(x interface{}
 	return nil
 }
 
-func validateReportSystemHealthReview_IsTerraformResourceParameters(x interface{}) error {
+func validateReportSystemHealthReview_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -308,7 +308,7 @@ func validateReportSystemHealthReview_IsTerraformResourceParameters(x interface{
 	return nil
 }
 
-func (j *jsiiProxy_ReportSystemHealthReview) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ReportSystemHealthReview) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -341,7 +341,7 @@ func (j *jsiiProxy_ReportSystemHealthReview) validateSetConnectionParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_ReportSystemHealthReview) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ReportSystemHealthReview) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -430,7 +430,7 @@ func (j *jsiiProxy_ReportSystemHealthReview) validateSetNameParameters(val *stri
 	return nil
 }
 
-func (j *jsiiProxy_ReportSystemHealthReview) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ReportSystemHealthReview) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -484,7 +484,7 @@ func (j *jsiiProxy_ReportSystemHealthReview) validateSetRowGroupByParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_ReportSystemHealthReview) validateSetSharedParameters(val interface{}) error {
+func (j *jsiiProxy_ReportSystemHealthReview) validateSetSharedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -522,4 +522,3 @@ func validateNewReportSystemHealthReviewParameters(scope constructs.Construct, i
 
 	return nil
 }
-

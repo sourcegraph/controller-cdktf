@@ -98,7 +98,7 @@ func (a *jsiiProxy_AgentAzureMonitorConfigOutputReference) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_AgentAzureMonitorConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AgentAzureMonitorConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewAgentAzureMonitorConfigOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

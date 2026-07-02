@@ -98,7 +98,7 @@ func (a *jsiiProxy_AgentBigqueryConfigOutputReference) validateResolveParameters
 	return nil
 }
 
-func (j *jsiiProxy_AgentBigqueryConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AgentBigqueryConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewAgentBigqueryConfigOutputReferenceParameters(terraformResource c
 
 	return nil
 }
-

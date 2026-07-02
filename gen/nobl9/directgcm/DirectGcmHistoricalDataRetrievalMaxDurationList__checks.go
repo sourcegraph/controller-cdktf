@@ -34,7 +34,7 @@ func (d *jsiiProxy_DirectGcmHistoricalDataRetrievalMaxDurationList) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_DirectGcmHistoricalDataRetrievalMaxDurationList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DirectGcmHistoricalDataRetrievalMaxDurationList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDirectGcmHistoricalDataRetrievalMaxDurationListParameters(terraf
 
 	return nil
 }
-

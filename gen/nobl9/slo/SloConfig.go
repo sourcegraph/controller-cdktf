@@ -6,9 +6,9 @@ import (
 
 type SloConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type SloConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Method which will be use to calculate budget.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/slo#budgeting_method Slo#budgeting_method}
@@ -30,7 +30,7 @@ type SloConfig struct {
 	// objective block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/slo#objective Slo#objective}
-	Objective interface{} `field:"required" json:"objective" yaml:"objective"`
+	Objective any `field:"required" json:"objective" yaml:"objective"`
 	// Name of the Nobl9 project the resource sits in, must conform to the naming convention from [DNS RFC1123](https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names).
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/slo#project Slo#project}
@@ -58,11 +58,11 @@ type SloConfig struct {
 	// attachment block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/slo#attachment Slo#attachment}
-	Attachment interface{} `field:"optional" json:"attachment" yaml:"attachment"`
+	Attachment any `field:"optional" json:"attachment" yaml:"attachment"`
 	// attachments block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/slo#attachments Slo#attachments}
-	Attachments interface{} `field:"optional" json:"attachments" yaml:"attachments"`
+	Attachments any `field:"optional" json:"attachments" yaml:"attachments"`
 	// composite block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/slo#composite Slo#composite}
@@ -89,7 +89,7 @@ type SloConfig struct {
 	// label block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/slo#label Slo#label}
-	Label interface{} `field:"optional" json:"label" yaml:"label"`
+	Label any `field:"optional" json:"label" yaml:"label"`
 	// If set, the retrieval of historical data for a newly created SLO will be triggered, starting from the specified date.
 	//
 	// Needs to be RFC3339 format.
@@ -101,4 +101,3 @@ type SloConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/slo#tier Slo#tier}
 	Tier *string `field:"optional" json:"tier" yaml:"tier"`
 }
-

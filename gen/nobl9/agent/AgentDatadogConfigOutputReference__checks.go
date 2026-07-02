@@ -98,7 +98,7 @@ func (a *jsiiProxy_AgentDatadogConfigOutputReference) validateResolveParameters(
 	return nil
 }
 
-func (j *jsiiProxy_AgentDatadogConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AgentDatadogConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewAgentDatadogConfigOutputReferenceParameters(terraformResource cd
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (r *jsiiProxy_ReportSystemHealthReviewFiltersLabelOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_ReportSystemHealthReviewFiltersLabelOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ReportSystemHealthReviewFiltersLabelOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ReportSystemHealthReviewFiltersLabelOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_ReportSystemHealthReviewFiltersLabelOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ReportSystemHealthReviewFiltersLabelOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewReportSystemHealthReviewFiltersLabelOutputReferenceParameters(te
 
 	return nil
 }
-

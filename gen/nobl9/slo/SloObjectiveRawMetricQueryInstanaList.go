@@ -17,8 +17,8 @@ type SloObjectiveRawMetricQueryInstanaList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type SloObjectiveRawMetricQueryInstanaList interface {
 	Get(index *float64) SloObjectiveRawMetricQueryInstanaOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_SloObjectiveRawMetricQueryInstanaList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SloObjectiveRawMetricQueryInstanaList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SloObjectiveRawMetricQueryInstanaList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_SloObjectiveRawMetricQueryInstanaList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewSloObjectiveRawMetricQueryInstanaList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SloObjectiveRawMetricQueryInstanaList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewSloObjectiveRawMetricQueryInstanaList(terraformResource cdktf.IInterpola
 
 	_jsii_.Create(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryInstanaList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewSloObjectiveRawMetricQueryInstanaList_Override(s SloObjectiveRawMetricQu
 
 	_jsii_.Create(
 		"@cdktf/provider-nobl9.slo.SloObjectiveRawMetricQueryInstanaList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveRawMetricQueryInstanaList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_SloObjectiveRawMetricQueryInstanaList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_SloObjectiveRawMetricQueryInstanaList)SetInternalValue(val in
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveRawMetricQueryInstanaList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SloObjectiveRawMetricQueryInstanaList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_SloObjectiveRawMetricQueryInstanaList)SetTerraformAttribute(v
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveRawMetricQueryInstanaList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SloObjectiveRawMetricQueryInstanaList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_SloObjectiveRawMetricQueryInstanaList)SetTerraformResource(va
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveRawMetricQueryInstanaList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_SloObjectiveRawMetricQueryInstanaList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (s *jsiiProxy_SloObjectiveRawMetricQueryInstanaList) AllWithMapKey(mapKeyAt
 	_jsii_.Invoke(
 		s,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (s *jsiiProxy_SloObjectiveRawMetricQueryInstanaList) Get(index *float64) Sl
 	_jsii_.Invoke(
 		s,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SloObjectiveRawMetricQueryInstanaList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_SloObjectiveRawMetricQueryInstanaList) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (s *jsiiProxy_SloObjectiveRawMetricQueryInstanaList) ToString() *string {
 
 	return returns
 }
-

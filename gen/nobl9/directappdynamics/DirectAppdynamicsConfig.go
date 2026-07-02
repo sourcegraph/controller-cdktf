@@ -6,9 +6,9 @@ import (
 
 type DirectAppdynamicsConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type DirectAppdynamicsConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// AppDynamics Account Name.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/direct_appdynamics#account_name DirectAppdynamics#account_name}
@@ -65,7 +65,7 @@ type DirectAppdynamicsConfig struct {
 	// [Logs documentation](https://docs.nobl9.com/features/slo-troubleshooting/event-logs).
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/direct_appdynamics#log_collection_enabled DirectAppdynamics#log_collection_enabled}
-	LogCollectionEnabled interface{} `field:"optional" json:"logCollectionEnabled" yaml:"logCollectionEnabled"`
+	LogCollectionEnabled any `field:"optional" json:"logCollectionEnabled" yaml:"logCollectionEnabled"`
 	// query_delay block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/direct_appdynamics#query_delay DirectAppdynamics#query_delay}
@@ -81,4 +81,3 @@ type DirectAppdynamicsConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/direct_appdynamics#source_of DirectAppdynamics#source_of}
 	SourceOf *[]*string `field:"optional" json:"sourceOf" yaml:"sourceOf"`
 }
-

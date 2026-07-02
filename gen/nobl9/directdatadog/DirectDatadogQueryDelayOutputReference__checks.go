@@ -98,7 +98,7 @@ func (d *jsiiProxy_DirectDatadogQueryDelayOutputReference) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_DirectDatadogQueryDelayOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DirectDatadogQueryDelayOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewDirectDatadogQueryDelayOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

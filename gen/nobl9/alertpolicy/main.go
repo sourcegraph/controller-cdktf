@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.alertPolicy.AlertPolicy",
-		reflect.TypeOf((*AlertPolicy)(nil)).Elem(),
+		reflect.TypeFor[AlertPolicy](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -81,7 +81,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AlertPolicy{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -89,11 +89,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.alertPolicy.AlertPolicyAlertMethod",
-		reflect.TypeOf((*AlertPolicyAlertMethod)(nil)).Elem(),
+		reflect.TypeFor[AlertPolicyAlertMethod](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.alertPolicy.AlertPolicyAlertMethodList",
-		reflect.TypeOf((*AlertPolicyAlertMethodList)(nil)).Elem(),
+		reflect.TypeFor[AlertPolicyAlertMethodList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -107,7 +107,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AlertPolicyAlertMethodList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -115,7 +115,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.alertPolicy.AlertPolicyAlertMethodOutputReference",
-		reflect.TypeOf((*AlertPolicyAlertMethodOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AlertPolicyAlertMethodOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -144,7 +144,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AlertPolicyAlertMethodOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -152,11 +152,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.alertPolicy.AlertPolicyCondition",
-		reflect.TypeOf((*AlertPolicyCondition)(nil)).Elem(),
+		reflect.TypeFor[AlertPolicyCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.alertPolicy.AlertPolicyConditionList",
-		reflect.TypeOf((*AlertPolicyConditionList)(nil)).Elem(),
+		reflect.TypeFor[AlertPolicyConditionList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -170,7 +170,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AlertPolicyConditionList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -178,7 +178,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.alertPolicy.AlertPolicyConditionOutputReference",
-		reflect.TypeOf((*AlertPolicyConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AlertPolicyConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "alertingWindow", GoGetter: "AlertingWindow"},
 			_jsii_.MemberProperty{JsiiProperty: "alertingWindowInput", GoGetter: "AlertingWindowInput"},
@@ -219,7 +219,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "valueString", GoGetter: "ValueString"},
 			_jsii_.MemberProperty{JsiiProperty: "valueStringInput", GoGetter: "ValueStringInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AlertPolicyConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -227,6 +227,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.alertPolicy.AlertPolicyConfig",
-		reflect.TypeOf((*AlertPolicyConfig)(nil)).Elem(),
+		reflect.TypeFor[AlertPolicyConfig](),
 	)
 }

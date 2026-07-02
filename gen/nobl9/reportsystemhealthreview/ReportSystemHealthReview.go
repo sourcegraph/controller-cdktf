@@ -15,17 +15,17 @@ type ReportSystemHealthReview interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Column() ReportSystemHealthReviewColumnList
-	ColumnInput() interface{}
+	ColumnInput() any
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -60,21 +60,21 @@ type ReportSystemHealthReview interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RowGroupBy() *string
 	SetRowGroupBy(val *string)
 	RowGroupByInput() *string
-	Shared() interface{}
-	SetShared(val interface{})
-	SharedInput() interface{}
+	Shared() any
+	SetShared(val any)
+	SharedInput() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Thresholds() ReportSystemHealthReviewThresholdsOutputReference
@@ -85,9 +85,9 @@ type ReportSystemHealthReview interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -105,7 +105,7 @@ type ReportSystemHealthReview interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -117,14 +117,14 @@ type ReportSystemHealthReview interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutColumn(value interface{})
+	PutColumn(value any)
 	PutFilters(value *ReportSystemHealthReviewFilters)
 	PutThresholds(value *ReportSystemHealthReviewThresholds)
 	PutTimeFrame(value *ReportSystemHealthReviewTimeFrame)
@@ -135,17 +135,17 @@ type ReportSystemHealthReview interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetShared()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ReportSystemHealthReview
@@ -173,8 +173,8 @@ func (j *jsiiProxy_ReportSystemHealthReview) Column() ReportSystemHealthReviewCo
 	return returns
 }
 
-func (j *jsiiProxy_ReportSystemHealthReview) ColumnInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ReportSystemHealthReview) ColumnInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"columnInput",
@@ -183,8 +183,8 @@ func (j *jsiiProxy_ReportSystemHealthReview) ColumnInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ReportSystemHealthReview) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ReportSystemHealthReview) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -193,8 +193,8 @@ func (j *jsiiProxy_ReportSystemHealthReview) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ReportSystemHealthReview) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ReportSystemHealthReview) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -203,8 +203,8 @@ func (j *jsiiProxy_ReportSystemHealthReview) ConstructNodeMetadata() *map[string
 	return returns
 }
 
-func (j *jsiiProxy_ReportSystemHealthReview) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ReportSystemHealthReview) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -363,8 +363,8 @@ func (j *jsiiProxy_ReportSystemHealthReview) Provider() cdktf.TerraformProvider 
 	return returns
 }
 
-func (j *jsiiProxy_ReportSystemHealthReview) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ReportSystemHealthReview) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -373,8 +373,8 @@ func (j *jsiiProxy_ReportSystemHealthReview) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ReportSystemHealthReview) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ReportSystemHealthReview) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -403,8 +403,8 @@ func (j *jsiiProxy_ReportSystemHealthReview) RowGroupByInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ReportSystemHealthReview) Shared() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ReportSystemHealthReview) Shared() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"shared",
@@ -413,8 +413,8 @@ func (j *jsiiProxy_ReportSystemHealthReview) Shared() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ReportSystemHealthReview) SharedInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ReportSystemHealthReview) SharedInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"sharedInput",
@@ -433,8 +433,8 @@ func (j *jsiiProxy_ReportSystemHealthReview) TerraformGeneratorMetadata() *cdktf
 	return returns
 }
 
-func (j *jsiiProxy_ReportSystemHealthReview) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ReportSystemHealthReview) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -493,7 +493,6 @@ func (j *jsiiProxy_ReportSystemHealthReview) TimeFrameInput() *ReportSystemHealt
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/report_system_health_review nobl9_report_system_health_review} Resource.
 func NewReportSystemHealthReview(scope constructs.Construct, id *string, config *ReportSystemHealthReviewConfig) ReportSystemHealthReview {
 	_init_.Initialize()
@@ -505,7 +504,7 @@ func NewReportSystemHealthReview(scope constructs.Construct, id *string, config 
 
 	_jsii_.Create(
 		"@cdktf/provider-nobl9.reportSystemHealthReview.ReportSystemHealthReview",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -518,12 +517,12 @@ func NewReportSystemHealthReview_Override(r ReportSystemHealthReview, scope cons
 
 	_jsii_.Create(
 		"@cdktf/provider-nobl9.reportSystemHealthReview.ReportSystemHealthReview",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		r,
 	)
 }
 
-func (j *jsiiProxy_ReportSystemHealthReview)SetConnection(val interface{}) {
+func (j *jsiiProxy_ReportSystemHealthReview) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -534,7 +533,7 @@ func (j *jsiiProxy_ReportSystemHealthReview)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ReportSystemHealthReview)SetCount(val interface{}) {
+func (j *jsiiProxy_ReportSystemHealthReview) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -545,7 +544,7 @@ func (j *jsiiProxy_ReportSystemHealthReview)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ReportSystemHealthReview)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ReportSystemHealthReview) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -553,7 +552,7 @@ func (j *jsiiProxy_ReportSystemHealthReview)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ReportSystemHealthReview)SetDisplayName(val *string) {
+func (j *jsiiProxy_ReportSystemHealthReview) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -564,7 +563,7 @@ func (j *jsiiProxy_ReportSystemHealthReview)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ReportSystemHealthReview)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ReportSystemHealthReview) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -572,7 +571,7 @@ func (j *jsiiProxy_ReportSystemHealthReview)SetForEach(val cdktf.ITerraformItera
 	)
 }
 
-func (j *jsiiProxy_ReportSystemHealthReview)SetId(val *string) {
+func (j *jsiiProxy_ReportSystemHealthReview) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -583,7 +582,7 @@ func (j *jsiiProxy_ReportSystemHealthReview)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ReportSystemHealthReview)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ReportSystemHealthReview) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -594,7 +593,7 @@ func (j *jsiiProxy_ReportSystemHealthReview)SetLifecycle(val *cdktf.TerraformRes
 	)
 }
 
-func (j *jsiiProxy_ReportSystemHealthReview)SetName(val *string) {
+func (j *jsiiProxy_ReportSystemHealthReview) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -605,7 +604,7 @@ func (j *jsiiProxy_ReportSystemHealthReview)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ReportSystemHealthReview)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ReportSystemHealthReview) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -613,7 +612,7 @@ func (j *jsiiProxy_ReportSystemHealthReview)SetProvider(val cdktf.TerraformProvi
 	)
 }
 
-func (j *jsiiProxy_ReportSystemHealthReview)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ReportSystemHealthReview) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -624,7 +623,7 @@ func (j *jsiiProxy_ReportSystemHealthReview)SetProvisioners(val *[]interface{}) 
 	)
 }
 
-func (j *jsiiProxy_ReportSystemHealthReview)SetRowGroupBy(val *string) {
+func (j *jsiiProxy_ReportSystemHealthReview) SetRowGroupBy(val *string) {
 	if err := j.validateSetRowGroupByParameters(val); err != nil {
 		panic(err)
 	}
@@ -635,7 +634,7 @@ func (j *jsiiProxy_ReportSystemHealthReview)SetRowGroupBy(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ReportSystemHealthReview)SetShared(val interface{}) {
+func (j *jsiiProxy_ReportSystemHealthReview) SetShared(val any) {
 	if err := j.validateSetSharedParameters(val); err != nil {
 		panic(err)
 	}
@@ -658,7 +657,7 @@ func ReportSystemHealthReview_GenerateConfigForImport(scope constructs.Construct
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-nobl9.reportSystemHealthReview.ReportSystemHealthReview",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -682,7 +681,7 @@ func ReportSystemHealthReview_GenerateConfigForImport(scope constructs.Construct
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ReportSystemHealthReview_IsConstruct(x interface{}) *bool {
+func ReportSystemHealthReview_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateReportSystemHealthReview_IsConstructParameters(x); err != nil {
@@ -693,7 +692,7 @@ func ReportSystemHealthReview_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-nobl9.reportSystemHealthReview.ReportSystemHealthReview",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -701,7 +700,7 @@ func ReportSystemHealthReview_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ReportSystemHealthReview_IsTerraformElement(x interface{}) *bool {
+func ReportSystemHealthReview_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateReportSystemHealthReview_IsTerraformElementParameters(x); err != nil {
@@ -712,7 +711,7 @@ func ReportSystemHealthReview_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-nobl9.reportSystemHealthReview.ReportSystemHealthReview",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -720,7 +719,7 @@ func ReportSystemHealthReview_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ReportSystemHealthReview_IsTerraformResource(x interface{}) *bool {
+func ReportSystemHealthReview_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateReportSystemHealthReview_IsTerraformResourceParameters(x); err != nil {
@@ -731,7 +730,7 @@ func ReportSystemHealthReview_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-nobl9.reportSystemHealthReview.ReportSystemHealthReview",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -756,31 +755,31 @@ func (r *jsiiProxy_ReportSystemHealthReview) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (r *jsiiProxy_ReportSystemHealthReview) AddOverride(path *string, value interface{}) {
+func (r *jsiiProxy_ReportSystemHealthReview) AddOverride(path *string, value any) {
 	if err := r.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (r *jsiiProxy_ReportSystemHealthReview) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_ReportSystemHealthReview) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -796,7 +795,7 @@ func (r *jsiiProxy_ReportSystemHealthReview) GetBooleanAttribute(terraformAttrib
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -812,7 +811,7 @@ func (r *jsiiProxy_ReportSystemHealthReview) GetBooleanMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -828,7 +827,7 @@ func (r *jsiiProxy_ReportSystemHealthReview) GetListAttribute(terraformAttribute
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -844,7 +843,7 @@ func (r *jsiiProxy_ReportSystemHealthReview) GetNumberAttribute(terraformAttribu
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -860,7 +859,7 @@ func (r *jsiiProxy_ReportSystemHealthReview) GetNumberListAttribute(terraformAtt
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -876,7 +875,7 @@ func (r *jsiiProxy_ReportSystemHealthReview) GetNumberMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -892,7 +891,7 @@ func (r *jsiiProxy_ReportSystemHealthReview) GetStringAttribute(terraformAttribu
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -908,15 +907,15 @@ func (r *jsiiProxy_ReportSystemHealthReview) GetStringMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (r *jsiiProxy_ReportSystemHealthReview) HasResourceMove() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_ReportSystemHealthReview) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -935,7 +934,7 @@ func (r *jsiiProxy_ReportSystemHealthReview) ImportFrom(id *string, provider cdk
 	_jsii_.InvokeVoid(
 		r,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -948,7 +947,7 @@ func (r *jsiiProxy_ReportSystemHealthReview) InterpolationForAttribute(terraform
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -962,18 +961,18 @@ func (r *jsiiProxy_ReportSystemHealthReview) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (r *jsiiProxy_ReportSystemHealthReview) MoveTo(moveTarget *string, index interface{}) {
+func (r *jsiiProxy_ReportSystemHealthReview) MoveTo(moveTarget *string, index any) {
 	if err := r.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -984,7 +983,7 @@ func (r *jsiiProxy_ReportSystemHealthReview) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -995,18 +994,18 @@ func (r *jsiiProxy_ReportSystemHealthReview) OverrideLogicalId(newLogicalId *str
 	_jsii_.InvokeVoid(
 		r,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (r *jsiiProxy_ReportSystemHealthReview) PutColumn(value interface{}) {
+func (r *jsiiProxy_ReportSystemHealthReview) PutColumn(value any) {
 	if err := r.validatePutColumnParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"putColumn",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1017,7 +1016,7 @@ func (r *jsiiProxy_ReportSystemHealthReview) PutFilters(value *ReportSystemHealt
 	_jsii_.InvokeVoid(
 		r,
 		"putFilters",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1028,7 +1027,7 @@ func (r *jsiiProxy_ReportSystemHealthReview) PutThresholds(value *ReportSystemHe
 	_jsii_.InvokeVoid(
 		r,
 		"putThresholds",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1039,7 +1038,7 @@ func (r *jsiiProxy_ReportSystemHealthReview) PutTimeFrame(value *ReportSystemHea
 	_jsii_.InvokeVoid(
 		r,
 		"putTimeFrame",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1083,8 +1082,8 @@ func (r *jsiiProxy_ReportSystemHealthReview) ResetShared() {
 	)
 }
 
-func (r *jsiiProxy_ReportSystemHealthReview) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (r *jsiiProxy_ReportSystemHealthReview) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
@@ -1096,8 +1095,8 @@ func (r *jsiiProxy_ReportSystemHealthReview) SynthesizeAttributes() *map[string]
 	return returns
 }
 
-func (r *jsiiProxy_ReportSystemHealthReview) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (r *jsiiProxy_ReportSystemHealthReview) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
@@ -1109,8 +1108,8 @@ func (r *jsiiProxy_ReportSystemHealthReview) SynthesizeHclAttributes() *map[stri
 	return returns
 }
 
-func (r *jsiiProxy_ReportSystemHealthReview) ToHclTerraform() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_ReportSystemHealthReview) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -1122,8 +1121,8 @@ func (r *jsiiProxy_ReportSystemHealthReview) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (r *jsiiProxy_ReportSystemHealthReview) ToMetadata() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_ReportSystemHealthReview) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -1148,8 +1147,8 @@ func (r *jsiiProxy_ReportSystemHealthReview) ToString() *string {
 	return returns
 }
 
-func (r *jsiiProxy_ReportSystemHealthReview) ToTerraform() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_ReportSystemHealthReview) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -1160,4 +1159,3 @@ func (r *jsiiProxy_ReportSystemHealthReview) ToTerraform() interface{} {
 
 	return returns
 }
-

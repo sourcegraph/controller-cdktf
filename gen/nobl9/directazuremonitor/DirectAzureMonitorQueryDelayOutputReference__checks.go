@@ -98,7 +98,7 @@ func (d *jsiiProxy_DirectAzureMonitorQueryDelayOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_DirectAzureMonitorQueryDelayOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DirectAzureMonitorQueryDelayOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewDirectAzureMonitorQueryDelayOutputReferenceParameters(terraformR
 
 	return nil
 }
-

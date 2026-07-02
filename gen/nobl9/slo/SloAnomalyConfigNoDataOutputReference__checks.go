@@ -90,7 +90,7 @@ func (s *jsiiProxy_SloAnomalyConfigNoDataOutputReference) validateInterpolationF
 	return nil
 }
 
-func (s *jsiiProxy_SloAnomalyConfigNoDataOutputReference) validatePutAlertMethodParameters(value interface{}) error {
+func (s *jsiiProxy_SloAnomalyConfigNoDataOutputReference) validatePutAlertMethodParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (s *jsiiProxy_SloAnomalyConfigNoDataOutputReference) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_SloAnomalyConfigNoDataOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SloAnomalyConfigNoDataOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -229,4 +229,3 @@ func validateNewSloAnomalyConfigNoDataOutputReferenceParameters(terraformResourc
 
 	return nil
 }
-

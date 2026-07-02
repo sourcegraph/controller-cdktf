@@ -34,7 +34,7 @@ func (s *jsiiProxy_SloObjectiveRawMetricQueryAmazonPrometheusList) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveRawMetricQueryAmazonPrometheusList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveRawMetricQueryAmazonPrometheusList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewSloObjectiveRawMetricQueryAmazonPrometheusListParameters(terrafo
 
 	return nil
 }
-

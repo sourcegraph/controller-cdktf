@@ -98,7 +98,7 @@ func (d *jsiiProxy_DirectNewrelicHistoricalDataRetrievalDefaultDurationOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_DirectNewrelicHistoricalDataRetrievalDefaultDurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DirectNewrelicHistoricalDataRetrievalDefaultDurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DirectNewrelicHistoricalDataRetrievalDefaultDurationOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_DirectNewrelicHistoricalDataRetrievalDefaultDurationOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DirectNewrelicHistoricalDataRetrievalDefaultDurationOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewDirectNewrelicHistoricalDataRetrievalDefaultDurationOutputRefere
 
 	return nil
 }
-

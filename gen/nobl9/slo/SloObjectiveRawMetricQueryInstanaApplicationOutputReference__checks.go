@@ -90,7 +90,7 @@ func (s *jsiiProxy_SloObjectiveRawMetricQueryInstanaApplicationOutputReference) 
 	return nil
 }
 
-func (s *jsiiProxy_SloObjectiveRawMetricQueryInstanaApplicationOutputReference) validatePutGroupByParameters(value interface{}) error {
+func (s *jsiiProxy_SloObjectiveRawMetricQueryInstanaApplicationOutputReference) validatePutGroupByParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -145,7 +145,7 @@ func (j *jsiiProxy_SloObjectiveRawMetricQueryInstanaApplicationOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveRawMetricQueryInstanaApplicationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveRawMetricQueryInstanaApplicationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -210,7 +210,7 @@ func (j *jsiiProxy_SloObjectiveRawMetricQueryInstanaApplicationOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveRawMetricQueryInstanaApplicationOutputReference) validateSetIncludeInternalParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveRawMetricQueryInstanaApplicationOutputReference) validateSetIncludeInternalParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -230,7 +230,7 @@ func (j *jsiiProxy_SloObjectiveRawMetricQueryInstanaApplicationOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveRawMetricQueryInstanaApplicationOutputReference) validateSetIncludeSyntheticParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveRawMetricQueryInstanaApplicationOutputReference) validateSetIncludeSyntheticParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func (j *jsiiProxy_SloObjectiveRawMetricQueryInstanaApplicationOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveRawMetricQueryInstanaApplicationOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveRawMetricQueryInstanaApplicationOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -317,4 +317,3 @@ func validateNewSloObjectiveRawMetricQueryInstanaApplicationOutputReferenceParam
 
 	return nil
 }
-

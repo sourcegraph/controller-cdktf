@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.directSplunk.DirectSplunk",
-		reflect.TypeOf((*DirectSplunk)(nil)).Elem(),
+		reflect.TypeFor[DirectSplunk](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessToken", GoGetter: "AccessToken"},
 			_jsii_.MemberProperty{JsiiProperty: "accessTokenInput", GoGetter: "AccessTokenInput"},
@@ -89,7 +89,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
 			_jsii_.MemberProperty{JsiiProperty: "urlInput", GoGetter: "UrlInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DirectSplunk{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -97,19 +97,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.directSplunk.DirectSplunkConfig",
-		reflect.TypeOf((*DirectSplunkConfig)(nil)).Elem(),
+		reflect.TypeFor[DirectSplunkConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.directSplunk.DirectSplunkHistoricalDataRetrieval",
-		reflect.TypeOf((*DirectSplunkHistoricalDataRetrieval)(nil)).Elem(),
+		reflect.TypeFor[DirectSplunkHistoricalDataRetrieval](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.directSplunk.DirectSplunkHistoricalDataRetrievalDefaultDuration",
-		reflect.TypeOf((*DirectSplunkHistoricalDataRetrievalDefaultDuration)(nil)).Elem(),
+		reflect.TypeFor[DirectSplunkHistoricalDataRetrievalDefaultDuration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.directSplunk.DirectSplunkHistoricalDataRetrievalDefaultDurationList",
-		reflect.TypeOf((*DirectSplunkHistoricalDataRetrievalDefaultDurationList)(nil)).Elem(),
+		reflect.TypeFor[DirectSplunkHistoricalDataRetrievalDefaultDurationList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -123,7 +123,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DirectSplunkHistoricalDataRetrievalDefaultDurationList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -131,7 +131,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.directSplunk.DirectSplunkHistoricalDataRetrievalDefaultDurationOutputReference",
-		reflect.TypeOf((*DirectSplunkHistoricalDataRetrievalDefaultDurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DirectSplunkHistoricalDataRetrievalDefaultDurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -159,7 +159,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DirectSplunkHistoricalDataRetrievalDefaultDurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -167,11 +167,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.directSplunk.DirectSplunkHistoricalDataRetrievalMaxDuration",
-		reflect.TypeOf((*DirectSplunkHistoricalDataRetrievalMaxDuration)(nil)).Elem(),
+		reflect.TypeFor[DirectSplunkHistoricalDataRetrievalMaxDuration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.directSplunk.DirectSplunkHistoricalDataRetrievalMaxDurationList",
-		reflect.TypeOf((*DirectSplunkHistoricalDataRetrievalMaxDurationList)(nil)).Elem(),
+		reflect.TypeFor[DirectSplunkHistoricalDataRetrievalMaxDurationList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -185,7 +185,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DirectSplunkHistoricalDataRetrievalMaxDurationList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -193,7 +193,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.directSplunk.DirectSplunkHistoricalDataRetrievalMaxDurationOutputReference",
-		reflect.TypeOf((*DirectSplunkHistoricalDataRetrievalMaxDurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DirectSplunkHistoricalDataRetrievalMaxDurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -221,7 +221,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DirectSplunkHistoricalDataRetrievalMaxDurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -229,7 +229,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.directSplunk.DirectSplunkHistoricalDataRetrievalOutputReference",
-		reflect.TypeOf((*DirectSplunkHistoricalDataRetrievalOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DirectSplunkHistoricalDataRetrievalOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -259,7 +259,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DirectSplunkHistoricalDataRetrievalOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -267,11 +267,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.directSplunk.DirectSplunkQueryDelay",
-		reflect.TypeOf((*DirectSplunkQueryDelay)(nil)).Elem(),
+		reflect.TypeFor[DirectSplunkQueryDelay](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.directSplunk.DirectSplunkQueryDelayOutputReference",
-		reflect.TypeOf((*DirectSplunkQueryDelayOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DirectSplunkQueryDelayOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -299,7 +299,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DirectSplunkQueryDelayOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

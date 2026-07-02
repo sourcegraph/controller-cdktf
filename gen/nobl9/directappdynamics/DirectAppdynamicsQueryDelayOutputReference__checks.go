@@ -98,7 +98,7 @@ func (d *jsiiProxy_DirectAppdynamicsQueryDelayOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_DirectAppdynamicsQueryDelayOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DirectAppdynamicsQueryDelayOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewDirectAppdynamicsQueryDelayOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

@@ -18,9 +18,9 @@ type SloObjectiveCountMetricsTotalPingdomOutputReference interface {
 	CheckTypeInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,8 +33,8 @@ type SloObjectiveCountMetricsTotalPingdomOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Status() *string
 	SetStatus(val *string)
 	StatusInput() *string
@@ -49,7 +49,7 @@ type SloObjectiveCountMetricsTotalPingdomOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -74,7 +74,7 @@ type SloObjectiveCountMetricsTotalPingdomOutputReference interface {
 	ResetStatus()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -127,8 +127,8 @@ func (j *jsiiProxy_SloObjectiveCountMetricsTotalPingdomOutputReference) CheckTyp
 	return returns
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsTotalPingdomOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SloObjectiveCountMetricsTotalPingdomOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -167,8 +167,8 @@ func (j *jsiiProxy_SloObjectiveCountMetricsTotalPingdomOutputReference) Fqn() *s
 	return returns
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsTotalPingdomOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SloObjectiveCountMetricsTotalPingdomOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -217,7 +217,6 @@ func (j *jsiiProxy_SloObjectiveCountMetricsTotalPingdomOutputReference) Terrafor
 	return returns
 }
 
-
 func NewSloObjectiveCountMetricsTotalPingdomOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SloObjectiveCountMetricsTotalPingdomOutputReference {
 	_init_.Initialize()
 
@@ -228,7 +227,7 @@ func NewSloObjectiveCountMetricsTotalPingdomOutputReference(terraformResource cd
 
 	_jsii_.Create(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalPingdomOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -240,12 +239,12 @@ func NewSloObjectiveCountMetricsTotalPingdomOutputReference_Override(s SloObject
 
 	_jsii_.Create(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalPingdomOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsTotalPingdomOutputReference)SetCheckId(val *string) {
+func (j *jsiiProxy_SloObjectiveCountMetricsTotalPingdomOutputReference) SetCheckId(val *string) {
 	if err := j.validateSetCheckIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -256,7 +255,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsTotalPingdomOutputReference)SetCheckI
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsTotalPingdomOutputReference)SetCheckType(val *string) {
+func (j *jsiiProxy_SloObjectiveCountMetricsTotalPingdomOutputReference) SetCheckType(val *string) {
 	if err := j.validateSetCheckTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -267,7 +266,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsTotalPingdomOutputReference)SetCheckT
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsTotalPingdomOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_SloObjectiveCountMetricsTotalPingdomOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -278,7 +277,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsTotalPingdomOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsTotalPingdomOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_SloObjectiveCountMetricsTotalPingdomOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -289,7 +288,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsTotalPingdomOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsTotalPingdomOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_SloObjectiveCountMetricsTotalPingdomOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,7 +299,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsTotalPingdomOutputReference)SetIntern
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsTotalPingdomOutputReference)SetStatus(val *string) {
+func (j *jsiiProxy_SloObjectiveCountMetricsTotalPingdomOutputReference) SetStatus(val *string) {
 	if err := j.validateSetStatusParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,7 +310,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsTotalPingdomOutputReference)SetStatus
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsTotalPingdomOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SloObjectiveCountMetricsTotalPingdomOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -322,7 +321,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsTotalPingdomOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsTotalPingdomOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SloObjectiveCountMetricsTotalPingdomOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -346,16 +345,16 @@ func (s *jsiiProxy_SloObjectiveCountMetricsTotalPingdomOutputReference) ComputeF
 	return returns
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsTotalPingdomOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SloObjectiveCountMetricsTotalPingdomOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -371,7 +370,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsTotalPingdomOutputReference) GetBoole
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -387,7 +386,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsTotalPingdomOutputReference) GetBoole
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -403,7 +402,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsTotalPingdomOutputReference) GetListA
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -419,7 +418,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsTotalPingdomOutputReference) GetNumbe
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -435,7 +434,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsTotalPingdomOutputReference) GetNumbe
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -451,7 +450,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsTotalPingdomOutputReference) GetNumbe
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -467,7 +466,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsTotalPingdomOutputReference) GetStrin
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -483,7 +482,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsTotalPingdomOutputReference) GetStrin
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -512,7 +511,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsTotalPingdomOutputReference) Interpol
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -535,16 +534,16 @@ func (s *jsiiProxy_SloObjectiveCountMetricsTotalPingdomOutputReference) ResetSta
 	)
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsTotalPingdomOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_SloObjectiveCountMetricsTotalPingdomOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -563,4 +562,3 @@ func (s *jsiiProxy_SloObjectiveCountMetricsTotalPingdomOutputReference) ToString
 
 	return returns
 }
-

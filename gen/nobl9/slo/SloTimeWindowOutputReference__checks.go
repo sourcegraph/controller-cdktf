@@ -90,7 +90,7 @@ func (s *jsiiProxy_SloTimeWindowOutputReference) validateInterpolationForAttribu
 	return nil
 }
 
-func (s *jsiiProxy_SloTimeWindowOutputReference) validatePutCalendarParameters(value interface{}) error {
+func (s *jsiiProxy_SloTimeWindowOutputReference) validatePutCalendarParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (s *jsiiProxy_SloTimeWindowOutputReference) validateResolveParameters(_cont
 	return nil
 }
 
-func (j *jsiiProxy_SloTimeWindowOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SloTimeWindowOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -210,7 +210,7 @@ func (j *jsiiProxy_SloTimeWindowOutputReference) validateSetInternalValueParamet
 	return nil
 }
 
-func (j *jsiiProxy_SloTimeWindowOutputReference) validateSetIsRollingParameters(val interface{}) error {
+func (j *jsiiProxy_SloTimeWindowOutputReference) validateSetIsRollingParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -265,4 +265,3 @@ func validateNewSloTimeWindowOutputReferenceParameters(terraformResource cdktf.I
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (s *jsiiProxy_SloObjectiveRawMetricQueryAzureMonitorWorkspaceOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveRawMetricQueryAzureMonitorWorkspaceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveRawMetricQueryAzureMonitorWorkspaceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_SloObjectiveRawMetricQueryAzureMonitorWorkspaceOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveRawMetricQueryAzureMonitorWorkspaceOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveRawMetricQueryAzureMonitorWorkspaceOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewSloObjectiveRawMetricQueryAzureMonitorWorkspaceOutputReferencePa
 
 	return nil
 }
-

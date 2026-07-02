@@ -10,7 +10,7 @@ import (
 	"github.com/aws/constructs-go/constructs/v10"
 )
 
-func (n *jsiiProxy_Nobl9Provider) validateAddOverrideParameters(path *string, value interface{}) error {
+func (n *jsiiProxy_Nobl9Provider) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -46,7 +46,7 @@ func validateNobl9Provider_GenerateConfigForImportParameters(scope constructs.Co
 	return nil
 }
 
-func validateNobl9Provider_IsConstructParameters(x interface{}) error {
+func validateNobl9Provider_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -54,7 +54,7 @@ func validateNobl9Provider_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateNobl9Provider_IsTerraformElementParameters(x interface{}) error {
+func validateNobl9Provider_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -62,7 +62,7 @@ func validateNobl9Provider_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateNobl9Provider_IsTerraformProviderParameters(x interface{}) error {
+func validateNobl9Provider_IsTerraformProviderParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -85,4 +85,3 @@ func validateNewNobl9ProviderParameters(scope constructs.Construct, id *string, 
 
 	return nil
 }
-

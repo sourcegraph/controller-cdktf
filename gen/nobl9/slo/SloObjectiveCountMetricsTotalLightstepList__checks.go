@@ -34,7 +34,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsTotalLightstepList) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsTotalLightstepList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveCountMetricsTotalLightstepList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewSloObjectiveCountMetricsTotalLightstepListParameters(terraformRe
 
 	return nil
 }
-

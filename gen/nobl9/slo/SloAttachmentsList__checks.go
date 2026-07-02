@@ -34,7 +34,7 @@ func (s *jsiiProxy_SloAttachmentsList) validateResolveParameters(_context cdktf.
 	return nil
 }
 
-func (j *jsiiProxy_SloAttachmentsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SloAttachmentsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewSloAttachmentsListParameters(terraformResource cdktf.IInterpolat
 
 	return nil
 }
-

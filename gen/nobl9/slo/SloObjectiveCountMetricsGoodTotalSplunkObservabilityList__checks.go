@@ -34,7 +34,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodTotalSplunkObservabilityList) val
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodTotalSplunkObservabilityList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodTotalSplunkObservabilityList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewSloObjectiveCountMetricsGoodTotalSplunkObservabilityListParamete
 
 	return nil
 }
-

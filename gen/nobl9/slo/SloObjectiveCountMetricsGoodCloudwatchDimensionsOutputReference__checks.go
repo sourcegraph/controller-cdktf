@@ -98,7 +98,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodCloudwatchDimensionsOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodCloudwatchDimensionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodCloudwatchDimensionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodCloudwatchDimensionsOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodCloudwatchDimensionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodCloudwatchDimensionsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewSloObjectiveCountMetricsGoodCloudwatchDimensionsOutputReferenceP
 
 	return nil
 }
-

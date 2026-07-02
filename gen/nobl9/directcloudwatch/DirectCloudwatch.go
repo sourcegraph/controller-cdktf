@@ -15,15 +15,15 @@ type DirectCloudwatch interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -51,9 +51,9 @@ type DirectCloudwatch interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
-	LogCollectionEnabled() interface{}
-	SetLogCollectionEnabled(val interface{})
-	LogCollectionEnabledInput() interface{}
+	LogCollectionEnabled() any
+	SetLogCollectionEnabled(val any)
+	LogCollectionEnabledInput() any
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -67,13 +67,13 @@ type DirectCloudwatch interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	QueryDelay() DirectCloudwatchQueryDelayOutputReference
 	QueryDelayInput() *DirectCloudwatchQueryDelay
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ReleaseChannel() *string
 	SetReleaseChannel(val *string)
 	ReleaseChannelInput() *string
@@ -87,16 +87,16 @@ type DirectCloudwatch interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -114,7 +114,7 @@ type DirectCloudwatch interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -126,7 +126,7 @@ type DirectCloudwatch interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -147,17 +147,17 @@ type DirectCloudwatch interface {
 	ResetReleaseChannel()
 	ResetRoleArn()
 	ResetSourceOf()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DirectCloudwatch
@@ -175,8 +175,8 @@ func (j *jsiiProxy_DirectCloudwatch) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DirectCloudwatch) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DirectCloudwatch) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -185,8 +185,8 @@ func (j *jsiiProxy_DirectCloudwatch) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DirectCloudwatch) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DirectCloudwatch) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -195,8 +195,8 @@ func (j *jsiiProxy_DirectCloudwatch) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_DirectCloudwatch) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DirectCloudwatch) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -335,8 +335,8 @@ func (j *jsiiProxy_DirectCloudwatch) Lifecycle() *cdktf.TerraformResourceLifecyc
 	return returns
 }
 
-func (j *jsiiProxy_DirectCloudwatch) LogCollectionEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DirectCloudwatch) LogCollectionEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"logCollectionEnabled",
@@ -345,8 +345,8 @@ func (j *jsiiProxy_DirectCloudwatch) LogCollectionEnabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DirectCloudwatch) LogCollectionEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DirectCloudwatch) LogCollectionEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"logCollectionEnabledInput",
@@ -415,8 +415,8 @@ func (j *jsiiProxy_DirectCloudwatch) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DirectCloudwatch) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_DirectCloudwatch) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -445,8 +445,8 @@ func (j *jsiiProxy_DirectCloudwatch) QueryDelayInput() *DirectCloudwatchQueryDel
 	return returns
 }
 
-func (j *jsiiProxy_DirectCloudwatch) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DirectCloudwatch) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -535,8 +535,8 @@ func (j *jsiiProxy_DirectCloudwatch) TerraformGeneratorMetadata() *cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_DirectCloudwatch) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DirectCloudwatch) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -555,7 +555,6 @@ func (j *jsiiProxy_DirectCloudwatch) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/direct_cloudwatch nobl9_direct_cloudwatch} Resource.
 func NewDirectCloudwatch(scope constructs.Construct, id *string, config *DirectCloudwatchConfig) DirectCloudwatch {
 	_init_.Initialize()
@@ -567,7 +566,7 @@ func NewDirectCloudwatch(scope constructs.Construct, id *string, config *DirectC
 
 	_jsii_.Create(
 		"@cdktf/provider-nobl9.directCloudwatch.DirectCloudwatch",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -580,12 +579,12 @@ func NewDirectCloudwatch_Override(d DirectCloudwatch, scope constructs.Construct
 
 	_jsii_.Create(
 		"@cdktf/provider-nobl9.directCloudwatch.DirectCloudwatch",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DirectCloudwatch)SetConnection(val interface{}) {
+func (j *jsiiProxy_DirectCloudwatch) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -596,7 +595,7 @@ func (j *jsiiProxy_DirectCloudwatch)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DirectCloudwatch)SetCount(val interface{}) {
+func (j *jsiiProxy_DirectCloudwatch) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -607,7 +606,7 @@ func (j *jsiiProxy_DirectCloudwatch)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DirectCloudwatch)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DirectCloudwatch) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -615,7 +614,7 @@ func (j *jsiiProxy_DirectCloudwatch)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DirectCloudwatch)SetDescription(val *string) {
+func (j *jsiiProxy_DirectCloudwatch) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -626,7 +625,7 @@ func (j *jsiiProxy_DirectCloudwatch)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DirectCloudwatch)SetDisplayName(val *string) {
+func (j *jsiiProxy_DirectCloudwatch) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -637,7 +636,7 @@ func (j *jsiiProxy_DirectCloudwatch)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DirectCloudwatch)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DirectCloudwatch) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -645,7 +644,7 @@ func (j *jsiiProxy_DirectCloudwatch)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_DirectCloudwatch)SetId(val *string) {
+func (j *jsiiProxy_DirectCloudwatch) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -656,7 +655,7 @@ func (j *jsiiProxy_DirectCloudwatch)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DirectCloudwatch)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DirectCloudwatch) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -667,7 +666,7 @@ func (j *jsiiProxy_DirectCloudwatch)SetLifecycle(val *cdktf.TerraformResourceLif
 	)
 }
 
-func (j *jsiiProxy_DirectCloudwatch)SetLogCollectionEnabled(val interface{}) {
+func (j *jsiiProxy_DirectCloudwatch) SetLogCollectionEnabled(val any) {
 	if err := j.validateSetLogCollectionEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -678,7 +677,7 @@ func (j *jsiiProxy_DirectCloudwatch)SetLogCollectionEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DirectCloudwatch)SetName(val *string) {
+func (j *jsiiProxy_DirectCloudwatch) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -689,7 +688,7 @@ func (j *jsiiProxy_DirectCloudwatch)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DirectCloudwatch)SetProject(val *string) {
+func (j *jsiiProxy_DirectCloudwatch) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -700,7 +699,7 @@ func (j *jsiiProxy_DirectCloudwatch)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DirectCloudwatch)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DirectCloudwatch) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -708,7 +707,7 @@ func (j *jsiiProxy_DirectCloudwatch)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_DirectCloudwatch)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_DirectCloudwatch) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -719,7 +718,7 @@ func (j *jsiiProxy_DirectCloudwatch)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DirectCloudwatch)SetReleaseChannel(val *string) {
+func (j *jsiiProxy_DirectCloudwatch) SetReleaseChannel(val *string) {
 	if err := j.validateSetReleaseChannelParameters(val); err != nil {
 		panic(err)
 	}
@@ -730,7 +729,7 @@ func (j *jsiiProxy_DirectCloudwatch)SetReleaseChannel(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DirectCloudwatch)SetRoleArn(val *string) {
+func (j *jsiiProxy_DirectCloudwatch) SetRoleArn(val *string) {
 	if err := j.validateSetRoleArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -741,7 +740,7 @@ func (j *jsiiProxy_DirectCloudwatch)SetRoleArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DirectCloudwatch)SetSourceOf(val *[]*string) {
+func (j *jsiiProxy_DirectCloudwatch) SetSourceOf(val *[]*string) {
 	if err := j.validateSetSourceOfParameters(val); err != nil {
 		panic(err)
 	}
@@ -764,7 +763,7 @@ func DirectCloudwatch_GenerateConfigForImport(scope constructs.Construct, import
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-nobl9.directCloudwatch.DirectCloudwatch",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -788,7 +787,7 @@ func DirectCloudwatch_GenerateConfigForImport(scope constructs.Construct, import
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DirectCloudwatch_IsConstruct(x interface{}) *bool {
+func DirectCloudwatch_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDirectCloudwatch_IsConstructParameters(x); err != nil {
@@ -799,7 +798,7 @@ func DirectCloudwatch_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-nobl9.directCloudwatch.DirectCloudwatch",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -807,7 +806,7 @@ func DirectCloudwatch_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DirectCloudwatch_IsTerraformElement(x interface{}) *bool {
+func DirectCloudwatch_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDirectCloudwatch_IsTerraformElementParameters(x); err != nil {
@@ -818,7 +817,7 @@ func DirectCloudwatch_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-nobl9.directCloudwatch.DirectCloudwatch",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -826,7 +825,7 @@ func DirectCloudwatch_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func DirectCloudwatch_IsTerraformResource(x interface{}) *bool {
+func DirectCloudwatch_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDirectCloudwatch_IsTerraformResourceParameters(x); err != nil {
@@ -837,7 +836,7 @@ func DirectCloudwatch_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-nobl9.directCloudwatch.DirectCloudwatch",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -862,31 +861,31 @@ func (d *jsiiProxy_DirectCloudwatch) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (d *jsiiProxy_DirectCloudwatch) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DirectCloudwatch) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DirectCloudwatch) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DirectCloudwatch) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -902,7 +901,7 @@ func (d *jsiiProxy_DirectCloudwatch) GetBooleanAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -918,7 +917,7 @@ func (d *jsiiProxy_DirectCloudwatch) GetBooleanMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -934,7 +933,7 @@ func (d *jsiiProxy_DirectCloudwatch) GetListAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -950,7 +949,7 @@ func (d *jsiiProxy_DirectCloudwatch) GetNumberAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -966,7 +965,7 @@ func (d *jsiiProxy_DirectCloudwatch) GetNumberListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -982,7 +981,7 @@ func (d *jsiiProxy_DirectCloudwatch) GetNumberMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -998,7 +997,7 @@ func (d *jsiiProxy_DirectCloudwatch) GetStringAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1014,15 +1013,15 @@ func (d *jsiiProxy_DirectCloudwatch) GetStringMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DirectCloudwatch) HasResourceMove() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DirectCloudwatch) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1041,7 +1040,7 @@ func (d *jsiiProxy_DirectCloudwatch) ImportFrom(id *string, provider cdktf.Terra
 	_jsii_.InvokeVoid(
 		d,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1054,7 +1053,7 @@ func (d *jsiiProxy_DirectCloudwatch) InterpolationForAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1068,18 +1067,18 @@ func (d *jsiiProxy_DirectCloudwatch) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (d *jsiiProxy_DirectCloudwatch) MoveTo(moveTarget *string, index interface{}) {
+func (d *jsiiProxy_DirectCloudwatch) MoveTo(moveTarget *string, index any) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1090,7 +1089,7 @@ func (d *jsiiProxy_DirectCloudwatch) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1101,7 +1100,7 @@ func (d *jsiiProxy_DirectCloudwatch) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1112,7 +1111,7 @@ func (d *jsiiProxy_DirectCloudwatch) PutHistoricalDataRetrieval(value *DirectClo
 	_jsii_.InvokeVoid(
 		d,
 		"putHistoricalDataRetrieval",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1123,7 +1122,7 @@ func (d *jsiiProxy_DirectCloudwatch) PutQueryDelay(value *DirectCloudwatchQueryD
 	_jsii_.InvokeVoid(
 		d,
 		"putQueryDelay",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1207,8 +1206,8 @@ func (d *jsiiProxy_DirectCloudwatch) ResetSourceOf() {
 	)
 }
 
-func (d *jsiiProxy_DirectCloudwatch) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DirectCloudwatch) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1220,8 +1219,8 @@ func (d *jsiiProxy_DirectCloudwatch) SynthesizeAttributes() *map[string]interfac
 	return returns
 }
 
-func (d *jsiiProxy_DirectCloudwatch) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DirectCloudwatch) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1233,8 +1232,8 @@ func (d *jsiiProxy_DirectCloudwatch) SynthesizeHclAttributes() *map[string]inter
 	return returns
 }
 
-func (d *jsiiProxy_DirectCloudwatch) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DirectCloudwatch) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1246,8 +1245,8 @@ func (d *jsiiProxy_DirectCloudwatch) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DirectCloudwatch) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DirectCloudwatch) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1272,8 +1271,8 @@ func (d *jsiiProxy_DirectCloudwatch) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DirectCloudwatch) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DirectCloudwatch) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1284,4 +1283,3 @@ func (d *jsiiProxy_DirectCloudwatch) ToTerraform() interface{} {
 
 	return returns
 }
-

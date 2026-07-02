@@ -11,12 +11,12 @@ import (
 type SloTimeWindowOutputReference interface {
 	cdktf.ComplexObject
 	Calendar() SloTimeWindowCalendarList
-	CalendarInput() interface{}
+	CalendarInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -34,9 +34,9 @@ type SloTimeWindowOutputReference interface {
 	Fqn() *string
 	InternalValue() *SloTimeWindow
 	SetInternalValue(val *SloTimeWindow)
-	IsRolling() interface{}
-	SetIsRolling(val interface{})
-	IsRollingInput() interface{}
+	IsRolling() any
+	SetIsRolling(val any)
+	IsRollingInput() any
 	Period() cdktf.StringMap
 	// Experimental.
 	TerraformAttribute() *string
@@ -52,7 +52,7 @@ type SloTimeWindowOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -73,12 +73,12 @@ type SloTimeWindowOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutCalendar(value interface{})
+	PutCalendar(value any)
 	ResetCalendar()
 	ResetIsRolling()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -101,8 +101,8 @@ func (j *jsiiProxy_SloTimeWindowOutputReference) Calendar() SloTimeWindowCalenda
 	return returns
 }
 
-func (j *jsiiProxy_SloTimeWindowOutputReference) CalendarInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SloTimeWindowOutputReference) CalendarInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"calendarInput",
@@ -111,8 +111,8 @@ func (j *jsiiProxy_SloTimeWindowOutputReference) CalendarInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SloTimeWindowOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SloTimeWindowOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -181,8 +181,8 @@ func (j *jsiiProxy_SloTimeWindowOutputReference) InternalValue() *SloTimeWindow 
 	return returns
 }
 
-func (j *jsiiProxy_SloTimeWindowOutputReference) IsRolling() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SloTimeWindowOutputReference) IsRolling() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isRolling",
@@ -191,8 +191,8 @@ func (j *jsiiProxy_SloTimeWindowOutputReference) IsRolling() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SloTimeWindowOutputReference) IsRollingInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SloTimeWindowOutputReference) IsRollingInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isRollingInput",
@@ -251,7 +251,6 @@ func (j *jsiiProxy_SloTimeWindowOutputReference) UnitInput() *string {
 	return returns
 }
 
-
 func NewSloTimeWindowOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) SloTimeWindowOutputReference {
 	_init_.Initialize()
 
@@ -262,7 +261,7 @@ func NewSloTimeWindowOutputReference(terraformResource cdktf.IInterpolatingParen
 
 	_jsii_.Create(
 		"@cdktf/provider-nobl9.slo.SloTimeWindowOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -274,12 +273,12 @@ func NewSloTimeWindowOutputReference_Override(s SloTimeWindowOutputReference, te
 
 	_jsii_.Create(
 		"@cdktf/provider-nobl9.slo.SloTimeWindowOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SloTimeWindowOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_SloTimeWindowOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_SloTimeWindowOutputReference)SetComplexObjectIndex(val interf
 	)
 }
 
-func (j *jsiiProxy_SloTimeWindowOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_SloTimeWindowOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_SloTimeWindowOutputReference)SetComplexObjectIsFromSet(val *b
 	)
 }
 
-func (j *jsiiProxy_SloTimeWindowOutputReference)SetCount(val *float64) {
+func (j *jsiiProxy_SloTimeWindowOutputReference) SetCount(val *float64) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_SloTimeWindowOutputReference)SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_SloTimeWindowOutputReference)SetInternalValue(val *SloTimeWindow) {
+func (j *jsiiProxy_SloTimeWindowOutputReference) SetInternalValue(val *SloTimeWindow) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_SloTimeWindowOutputReference)SetInternalValue(val *SloTimeWin
 	)
 }
 
-func (j *jsiiProxy_SloTimeWindowOutputReference)SetIsRolling(val interface{}) {
+func (j *jsiiProxy_SloTimeWindowOutputReference) SetIsRolling(val any) {
 	if err := j.validateSetIsRollingParameters(val); err != nil {
 		panic(err)
 	}
@@ -334,7 +333,7 @@ func (j *jsiiProxy_SloTimeWindowOutputReference)SetIsRolling(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SloTimeWindowOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SloTimeWindowOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -345,7 +344,7 @@ func (j *jsiiProxy_SloTimeWindowOutputReference)SetTerraformAttribute(val *strin
 	)
 }
 
-func (j *jsiiProxy_SloTimeWindowOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SloTimeWindowOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -356,7 +355,7 @@ func (j *jsiiProxy_SloTimeWindowOutputReference)SetTerraformResource(val cdktf.I
 	)
 }
 
-func (j *jsiiProxy_SloTimeWindowOutputReference)SetUnit(val *string) {
+func (j *jsiiProxy_SloTimeWindowOutputReference) SetUnit(val *string) {
 	if err := j.validateSetUnitParameters(val); err != nil {
 		panic(err)
 	}
@@ -380,16 +379,16 @@ func (s *jsiiProxy_SloTimeWindowOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (s *jsiiProxy_SloTimeWindowOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SloTimeWindowOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -405,7 +404,7 @@ func (s *jsiiProxy_SloTimeWindowOutputReference) GetBooleanAttribute(terraformAt
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -421,7 +420,7 @@ func (s *jsiiProxy_SloTimeWindowOutputReference) GetBooleanMapAttribute(terrafor
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -437,7 +436,7 @@ func (s *jsiiProxy_SloTimeWindowOutputReference) GetListAttribute(terraformAttri
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -453,7 +452,7 @@ func (s *jsiiProxy_SloTimeWindowOutputReference) GetNumberAttribute(terraformAtt
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -469,7 +468,7 @@ func (s *jsiiProxy_SloTimeWindowOutputReference) GetNumberListAttribute(terrafor
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -485,7 +484,7 @@ func (s *jsiiProxy_SloTimeWindowOutputReference) GetNumberMapAttribute(terraform
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -501,7 +500,7 @@ func (s *jsiiProxy_SloTimeWindowOutputReference) GetStringAttribute(terraformAtt
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -517,7 +516,7 @@ func (s *jsiiProxy_SloTimeWindowOutputReference) GetStringMapAttribute(terraform
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -546,21 +545,21 @@ func (s *jsiiProxy_SloTimeWindowOutputReference) InterpolationForAttribute(prope
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SloTimeWindowOutputReference) PutCalendar(value interface{}) {
+func (s *jsiiProxy_SloTimeWindowOutputReference) PutCalendar(value any) {
 	if err := s.validatePutCalendarParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putCalendar",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -580,16 +579,16 @@ func (s *jsiiProxy_SloTimeWindowOutputReference) ResetIsRolling() {
 	)
 }
 
-func (s *jsiiProxy_SloTimeWindowOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_SloTimeWindowOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -608,4 +607,3 @@ func (s *jsiiProxy_SloTimeWindowOutputReference) ToString() *string {
 
 	return returns
 }
-

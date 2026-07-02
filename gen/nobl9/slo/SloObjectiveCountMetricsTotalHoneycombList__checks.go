@@ -34,7 +34,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsTotalHoneycombList) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsTotalHoneycombList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveCountMetricsTotalHoneycombList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewSloObjectiveCountMetricsTotalHoneycombListParameters(terraformRe
 
 	return nil
 }
-

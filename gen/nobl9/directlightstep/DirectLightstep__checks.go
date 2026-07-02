@@ -19,7 +19,7 @@ func (d *jsiiProxy_DirectLightstep) validateAddMoveTargetParameters(moveTarget *
 	return nil
 }
 
-func (d *jsiiProxy_DirectLightstep) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DirectLightstep) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (d *jsiiProxy_DirectLightstep) validateMoveFromIdParameters(id *string) err
 	return nil
 }
 
-func (d *jsiiProxy_DirectLightstep) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (d *jsiiProxy_DirectLightstep) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateDirectLightstep_GenerateConfigForImportParameters(scope constructs.
 	return nil
 }
 
-func validateDirectLightstep_IsConstructParameters(x interface{}) error {
+func validateDirectLightstep_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateDirectLightstep_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateDirectLightstep_IsTerraformElementParameters(x interface{}) error {
+func validateDirectLightstep_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateDirectLightstep_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateDirectLightstep_IsTerraformResourceParameters(x interface{}) error {
+func validateDirectLightstep_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -274,7 +274,7 @@ func (j *jsiiProxy_DirectLightstep) validateSetAppTokenParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_DirectLightstep) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_DirectLightstep) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -307,7 +307,7 @@ func (j *jsiiProxy_DirectLightstep) validateSetConnectionParameters(val interfac
 	return nil
 }
 
-func (j *jsiiProxy_DirectLightstep) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DirectLightstep) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -412,7 +412,7 @@ func (j *jsiiProxy_DirectLightstep) validateSetLightstepProjectParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_DirectLightstep) validateSetLogCollectionEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_DirectLightstep) validateSetLogCollectionEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -448,7 +448,7 @@ func (j *jsiiProxy_DirectLightstep) validateSetProjectParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_DirectLightstep) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_DirectLightstep) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -536,4 +536,3 @@ func validateNewDirectLightstepParameters(scope constructs.Construct, id *string
 
 	return nil
 }
-

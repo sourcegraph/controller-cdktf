@@ -34,7 +34,7 @@ func (s *jsiiProxy_SloObjectiveRawMetricQuerySplunkList) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveRawMetricQuerySplunkList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SloObjectiveRawMetricQuerySplunkList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewSloObjectiveRawMetricQuerySplunkListParameters(terraformResource
 
 	return nil
 }
-

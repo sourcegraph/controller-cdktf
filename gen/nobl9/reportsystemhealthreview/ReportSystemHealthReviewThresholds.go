@@ -1,6 +1,5 @@
 package reportsystemhealthreview
 
-
 type ReportSystemHealthReviewThresholds struct {
 	// Min value for the Green status (e.g. healthy).
 	//
@@ -13,6 +12,5 @@ type ReportSystemHealthReviewThresholds struct {
 	// ShowNoData customizes the report to either show or hide rows with no data.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs/resources/report_system_health_review#show_no_data ReportSystemHealthReview#show_no_data}
-	ShowNoData interface{} `field:"optional" json:"showNoData" yaml:"showNoData"`
+	ShowNoData any `field:"optional" json:"showNoData" yaml:"showNoData"`
 }
-

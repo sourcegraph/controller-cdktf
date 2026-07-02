@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-nobl9.dataNobl9AwsIamRoleExternalId.DataNobl9AwsIamRoleExternalId",
-		reflect.TypeOf((*DataNobl9AwsIamRoleExternalId)(nil)).Elem(),
+		reflect.TypeFor[DataNobl9AwsIamRoleExternalId](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -52,7 +52,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataNobl9AwsIamRoleExternalId{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -60,6 +60,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-nobl9.dataNobl9AwsIamRoleExternalId.DataNobl9AwsIamRoleExternalIdConfig",
-		reflect.TypeOf((*DataNobl9AwsIamRoleExternalIdConfig)(nil)).Elem(),
+		reflect.TypeFor[DataNobl9AwsIamRoleExternalIdConfig](),
 	)
 }

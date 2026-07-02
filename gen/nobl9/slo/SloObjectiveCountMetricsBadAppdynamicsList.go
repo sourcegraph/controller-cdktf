@@ -17,8 +17,8 @@ type SloObjectiveCountMetricsBadAppdynamicsList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type SloObjectiveCountMetricsBadAppdynamicsList interface {
 	Get(index *float64) SloObjectiveCountMetricsBadAppdynamicsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_SloObjectiveCountMetricsBadAppdynamicsList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsBadAppdynamicsList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SloObjectiveCountMetricsBadAppdynamicsList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_SloObjectiveCountMetricsBadAppdynamicsList) WrapsSet() *bool 
 	return returns
 }
 
-
 func NewSloObjectiveCountMetricsBadAppdynamicsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SloObjectiveCountMetricsBadAppdynamicsList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewSloObjectiveCountMetricsBadAppdynamicsList(terraformResource cdktf.IInte
 
 	_jsii_.Create(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadAppdynamicsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewSloObjectiveCountMetricsBadAppdynamicsList_Override(s SloObjectiveCountM
 
 	_jsii_.Create(
 		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadAppdynamicsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsBadAppdynamicsList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_SloObjectiveCountMetricsBadAppdynamicsList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsBadAppdynamicsList)SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsBadAppdynamicsList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SloObjectiveCountMetricsBadAppdynamicsList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsBadAppdynamicsList)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsBadAppdynamicsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SloObjectiveCountMetricsBadAppdynamicsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsBadAppdynamicsList)SetTerraformResour
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsBadAppdynamicsList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_SloObjectiveCountMetricsBadAppdynamicsList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadAppdynamicsList) AllWithMapKey(map
 	_jsii_.Invoke(
 		s,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadAppdynamicsList) Get(index *float6
 	_jsii_.Invoke(
 		s,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsBadAppdynamicsList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_SloObjectiveCountMetricsBadAppdynamicsList) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadAppdynamicsList) ToString() *strin
 
 	return returns
 }
-
