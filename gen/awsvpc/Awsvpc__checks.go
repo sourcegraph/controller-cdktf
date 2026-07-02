@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (a *jsiiProxy_Awsvpc) validateAddOverrideParameters(path *string, value interface{}) error {
+func (a *jsiiProxy_Awsvpc) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -23,7 +23,7 @@ func (a *jsiiProxy_Awsvpc) validateAddOverrideParameters(path *string, value int
 	return nil
 }
 
-func (a *jsiiProxy_Awsvpc) validateAddProviderParameters(provider interface{}) error {
+func (a *jsiiProxy_Awsvpc) validateAddProviderParameters(provider any) error {
 	if provider == nil {
 		return fmt.Errorf("parameter provider is required, but nil was provided")
 	}
@@ -74,7 +74,7 @@ func (a *jsiiProxy_Awsvpc) validateOverrideLogicalIdParameters(newLogicalId *str
 	return nil
 }
 
-func validateAwsvpc_IsConstructParameters(x interface{}) error {
+func validateAwsvpc_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -82,7 +82,7 @@ func validateAwsvpc_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateAwsvpc_IsTerraformElementParameters(x interface{}) error {
+func validateAwsvpc_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -105,4 +105,3 @@ func validateNewAwsvpcParameters(scope constructs.Construct, id *string, config 
 
 	return nil
 }
-

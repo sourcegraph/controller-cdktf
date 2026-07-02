@@ -28,7 +28,7 @@ type Awsvpc interface {
 	Cidr() *string
 	SetCidr(val *string)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	CreateDatabaseInternetGatewayRoute() *bool
 	SetCreateDatabaseInternetGatewayRoute(val *bool)
 	CreateDatabaseNatGatewayRoute() *bool
@@ -55,8 +55,8 @@ type Awsvpc interface {
 	SetCreateRedshiftSubnetRouteTable(val *bool)
 	CreateVpc() *bool
 	SetCreateVpc(val *bool)
-	CustomerGateways() *map[string]*map[string]interface{}
-	SetCustomerGateways(val *map[string]*map[string]interface{})
+	CustomerGateways() *map[string]*map[string]any
+	SetCustomerGateways(val *map[string]*map[string]any)
 	CustomerGatewayTags() *map[string]*string
 	SetCustomerGatewayTags(val *map[string]*string)
 	DatabaseAclTags() *map[string]*string
@@ -400,7 +400,7 @@ type Awsvpc interface {
 	PropagatePublicRouteTablesVgw() *bool
 	SetPropagatePublicRouteTablesVgw(val *bool)
 	// Experimental.
-	Providers() *[]interface{}
+	Providers() *[]any
 	PublicAclTags() *map[string]*string
 	SetPublicAclTags(val *map[string]*string)
 	PublicDedicatedNetworkAcl() *bool
@@ -438,7 +438,7 @@ type Awsvpc interface {
 	PutinKhuylo() *bool
 	SetPutinKhuylo(val *bool)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RedshiftAclTags() *map[string]*string
 	SetRedshiftAclTags(val *map[string]*string)
 	RedshiftDedicatedNetworkAcl() *bool
@@ -522,9 +522,9 @@ type Awsvpc interface {
 	VpnGatewayTags() *map[string]*string
 	SetVpnGatewayTags(val *map[string]*string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	AddProvider(provider interface{})
+	AddProvider(provider any)
 	// Experimental.
 	GetString(output *string) *string
 	// Experimental.
@@ -535,16 +535,16 @@ type Awsvpc interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for Awsvpc
@@ -632,8 +632,8 @@ func (j *jsiiProxy_Awsvpc) Cidr() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Awsvpc) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Awsvpc) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -772,8 +772,8 @@ func (j *jsiiProxy_Awsvpc) CreateVpc() *bool {
 	return returns
 }
 
-func (j *jsiiProxy_Awsvpc) CustomerGateways() *map[string]*map[string]interface{} {
-	var returns *map[string]*map[string]interface{}
+func (j *jsiiProxy_Awsvpc) CustomerGateways() *map[string]*map[string]any {
+	var returns *map[string]*map[string]any
 	_jsii_.Get(
 		j,
 		"customerGateways",
@@ -2812,8 +2812,8 @@ func (j *jsiiProxy_Awsvpc) PropagatePublicRouteTablesVgw() *bool {
 	return returns
 }
 
-func (j *jsiiProxy_Awsvpc) Providers() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_Awsvpc) Providers() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"providers",
@@ -3052,8 +3052,8 @@ func (j *jsiiProxy_Awsvpc) PutinKhuylo() *bool {
 	return returns
 }
 
-func (j *jsiiProxy_Awsvpc) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Awsvpc) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -3612,7 +3612,6 @@ func (j *jsiiProxy_Awsvpc) VpnGatewayTags() *map[string]*string {
 	return returns
 }
 
-
 func NewAwsvpc(scope constructs.Construct, id *string, config *AwsvpcConfig) Awsvpc {
 	_init_.Initialize()
 
@@ -3623,7 +3622,7 @@ func NewAwsvpc(scope constructs.Construct, id *string, config *AwsvpcConfig) Aws
 
 	_jsii_.Create(
 		"@cdktf/provider-awsvpc.Awsvpc",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -3635,12 +3634,12 @@ func NewAwsvpc_Override(a Awsvpc, scope constructs.Construct, id *string, config
 
 	_jsii_.Create(
 		"@cdktf/provider-awsvpc.Awsvpc",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		a,
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetAmazonSideAsn(val *string) {
+func (j *jsiiProxy_Awsvpc) SetAmazonSideAsn(val *string) {
 	_jsii_.Set(
 		j,
 		"amazonSideAsn",
@@ -3648,7 +3647,7 @@ func (j *jsiiProxy_Awsvpc)SetAmazonSideAsn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetAssignIpv6AddressOnCreation(val *bool) {
+func (j *jsiiProxy_Awsvpc) SetAssignIpv6AddressOnCreation(val *bool) {
 	_jsii_.Set(
 		j,
 		"assignIpv6AddressOnCreation",
@@ -3656,7 +3655,7 @@ func (j *jsiiProxy_Awsvpc)SetAssignIpv6AddressOnCreation(val *bool) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetAzs(val *[]*string) {
+func (j *jsiiProxy_Awsvpc) SetAzs(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"azs",
@@ -3664,7 +3663,7 @@ func (j *jsiiProxy_Awsvpc)SetAzs(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetCidr(val *string) {
+func (j *jsiiProxy_Awsvpc) SetCidr(val *string) {
 	_jsii_.Set(
 		j,
 		"cidr",
@@ -3672,7 +3671,7 @@ func (j *jsiiProxy_Awsvpc)SetCidr(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetCreateDatabaseInternetGatewayRoute(val *bool) {
+func (j *jsiiProxy_Awsvpc) SetCreateDatabaseInternetGatewayRoute(val *bool) {
 	_jsii_.Set(
 		j,
 		"createDatabaseInternetGatewayRoute",
@@ -3680,7 +3679,7 @@ func (j *jsiiProxy_Awsvpc)SetCreateDatabaseInternetGatewayRoute(val *bool) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetCreateDatabaseNatGatewayRoute(val *bool) {
+func (j *jsiiProxy_Awsvpc) SetCreateDatabaseNatGatewayRoute(val *bool) {
 	_jsii_.Set(
 		j,
 		"createDatabaseNatGatewayRoute",
@@ -3688,7 +3687,7 @@ func (j *jsiiProxy_Awsvpc)SetCreateDatabaseNatGatewayRoute(val *bool) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetCreateDatabaseSubnetGroup(val *bool) {
+func (j *jsiiProxy_Awsvpc) SetCreateDatabaseSubnetGroup(val *bool) {
 	_jsii_.Set(
 		j,
 		"createDatabaseSubnetGroup",
@@ -3696,7 +3695,7 @@ func (j *jsiiProxy_Awsvpc)SetCreateDatabaseSubnetGroup(val *bool) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetCreateDatabaseSubnetRouteTable(val *bool) {
+func (j *jsiiProxy_Awsvpc) SetCreateDatabaseSubnetRouteTable(val *bool) {
 	_jsii_.Set(
 		j,
 		"createDatabaseSubnetRouteTable",
@@ -3704,7 +3703,7 @@ func (j *jsiiProxy_Awsvpc)SetCreateDatabaseSubnetRouteTable(val *bool) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetCreateEgressOnlyIgw(val *bool) {
+func (j *jsiiProxy_Awsvpc) SetCreateEgressOnlyIgw(val *bool) {
 	_jsii_.Set(
 		j,
 		"createEgressOnlyIgw",
@@ -3712,7 +3711,7 @@ func (j *jsiiProxy_Awsvpc)SetCreateEgressOnlyIgw(val *bool) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetCreateElasticacheSubnetGroup(val *bool) {
+func (j *jsiiProxy_Awsvpc) SetCreateElasticacheSubnetGroup(val *bool) {
 	_jsii_.Set(
 		j,
 		"createElasticacheSubnetGroup",
@@ -3720,7 +3719,7 @@ func (j *jsiiProxy_Awsvpc)SetCreateElasticacheSubnetGroup(val *bool) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetCreateElasticacheSubnetRouteTable(val *bool) {
+func (j *jsiiProxy_Awsvpc) SetCreateElasticacheSubnetRouteTable(val *bool) {
 	_jsii_.Set(
 		j,
 		"createElasticacheSubnetRouteTable",
@@ -3728,7 +3727,7 @@ func (j *jsiiProxy_Awsvpc)SetCreateElasticacheSubnetRouteTable(val *bool) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetCreateFlowLogCloudwatchIamRole(val *bool) {
+func (j *jsiiProxy_Awsvpc) SetCreateFlowLogCloudwatchIamRole(val *bool) {
 	_jsii_.Set(
 		j,
 		"createFlowLogCloudwatchIamRole",
@@ -3736,7 +3735,7 @@ func (j *jsiiProxy_Awsvpc)SetCreateFlowLogCloudwatchIamRole(val *bool) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetCreateFlowLogCloudwatchLogGroup(val *bool) {
+func (j *jsiiProxy_Awsvpc) SetCreateFlowLogCloudwatchLogGroup(val *bool) {
 	_jsii_.Set(
 		j,
 		"createFlowLogCloudwatchLogGroup",
@@ -3744,7 +3743,7 @@ func (j *jsiiProxy_Awsvpc)SetCreateFlowLogCloudwatchLogGroup(val *bool) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetCreateIgw(val *bool) {
+func (j *jsiiProxy_Awsvpc) SetCreateIgw(val *bool) {
 	_jsii_.Set(
 		j,
 		"createIgw",
@@ -3752,7 +3751,7 @@ func (j *jsiiProxy_Awsvpc)SetCreateIgw(val *bool) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetCreateRedshiftSubnetGroup(val *bool) {
+func (j *jsiiProxy_Awsvpc) SetCreateRedshiftSubnetGroup(val *bool) {
 	_jsii_.Set(
 		j,
 		"createRedshiftSubnetGroup",
@@ -3760,7 +3759,7 @@ func (j *jsiiProxy_Awsvpc)SetCreateRedshiftSubnetGroup(val *bool) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetCreateRedshiftSubnetRouteTable(val *bool) {
+func (j *jsiiProxy_Awsvpc) SetCreateRedshiftSubnetRouteTable(val *bool) {
 	_jsii_.Set(
 		j,
 		"createRedshiftSubnetRouteTable",
@@ -3768,7 +3767,7 @@ func (j *jsiiProxy_Awsvpc)SetCreateRedshiftSubnetRouteTable(val *bool) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetCreateVpc(val *bool) {
+func (j *jsiiProxy_Awsvpc) SetCreateVpc(val *bool) {
 	_jsii_.Set(
 		j,
 		"createVpc",
@@ -3776,7 +3775,7 @@ func (j *jsiiProxy_Awsvpc)SetCreateVpc(val *bool) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetCustomerGateways(val *map[string]*map[string]interface{}) {
+func (j *jsiiProxy_Awsvpc) SetCustomerGateways(val *map[string]*map[string]any) {
 	_jsii_.Set(
 		j,
 		"customerGateways",
@@ -3784,7 +3783,7 @@ func (j *jsiiProxy_Awsvpc)SetCustomerGateways(val *map[string]*map[string]interf
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetCustomerGatewayTags(val *map[string]*string) {
+func (j *jsiiProxy_Awsvpc) SetCustomerGatewayTags(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"customerGatewayTags",
@@ -3792,7 +3791,7 @@ func (j *jsiiProxy_Awsvpc)SetCustomerGatewayTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetDatabaseAclTags(val *map[string]*string) {
+func (j *jsiiProxy_Awsvpc) SetDatabaseAclTags(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"databaseAclTags",
@@ -3800,7 +3799,7 @@ func (j *jsiiProxy_Awsvpc)SetDatabaseAclTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetDatabaseDedicatedNetworkAcl(val *bool) {
+func (j *jsiiProxy_Awsvpc) SetDatabaseDedicatedNetworkAcl(val *bool) {
 	_jsii_.Set(
 		j,
 		"databaseDedicatedNetworkAcl",
@@ -3808,7 +3807,7 @@ func (j *jsiiProxy_Awsvpc)SetDatabaseDedicatedNetworkAcl(val *bool) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetDatabaseInboundAclRules(val *[]*map[string]*string) {
+func (j *jsiiProxy_Awsvpc) SetDatabaseInboundAclRules(val *[]*map[string]*string) {
 	_jsii_.Set(
 		j,
 		"databaseInboundAclRules",
@@ -3816,7 +3815,7 @@ func (j *jsiiProxy_Awsvpc)SetDatabaseInboundAclRules(val *[]*map[string]*string)
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetDatabaseOutboundAclRules(val *[]*map[string]*string) {
+func (j *jsiiProxy_Awsvpc) SetDatabaseOutboundAclRules(val *[]*map[string]*string) {
 	_jsii_.Set(
 		j,
 		"databaseOutboundAclRules",
@@ -3824,7 +3823,7 @@ func (j *jsiiProxy_Awsvpc)SetDatabaseOutboundAclRules(val *[]*map[string]*string
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetDatabaseRouteTableTags(val *map[string]*string) {
+func (j *jsiiProxy_Awsvpc) SetDatabaseRouteTableTags(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"databaseRouteTableTags",
@@ -3832,7 +3831,7 @@ func (j *jsiiProxy_Awsvpc)SetDatabaseRouteTableTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetDatabaseSubnetAssignIpv6AddressOnCreation(val *bool) {
+func (j *jsiiProxy_Awsvpc) SetDatabaseSubnetAssignIpv6AddressOnCreation(val *bool) {
 	_jsii_.Set(
 		j,
 		"databaseSubnetAssignIpv6AddressOnCreation",
@@ -3840,7 +3839,7 @@ func (j *jsiiProxy_Awsvpc)SetDatabaseSubnetAssignIpv6AddressOnCreation(val *bool
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetDatabaseSubnetGroupName(val *string) {
+func (j *jsiiProxy_Awsvpc) SetDatabaseSubnetGroupName(val *string) {
 	_jsii_.Set(
 		j,
 		"databaseSubnetGroupName",
@@ -3848,7 +3847,7 @@ func (j *jsiiProxy_Awsvpc)SetDatabaseSubnetGroupName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetDatabaseSubnetGroupTags(val *map[string]*string) {
+func (j *jsiiProxy_Awsvpc) SetDatabaseSubnetGroupTags(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"databaseSubnetGroupTags",
@@ -3856,7 +3855,7 @@ func (j *jsiiProxy_Awsvpc)SetDatabaseSubnetGroupTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetDatabaseSubnetIpv6Prefixes(val *[]*string) {
+func (j *jsiiProxy_Awsvpc) SetDatabaseSubnetIpv6Prefixes(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"databaseSubnetIpv6Prefixes",
@@ -3864,7 +3863,7 @@ func (j *jsiiProxy_Awsvpc)SetDatabaseSubnetIpv6Prefixes(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetDatabaseSubnetNames(val *[]*string) {
+func (j *jsiiProxy_Awsvpc) SetDatabaseSubnetNames(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"databaseSubnetNames",
@@ -3872,7 +3871,7 @@ func (j *jsiiProxy_Awsvpc)SetDatabaseSubnetNames(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetDatabaseSubnets(val *[]*string) {
+func (j *jsiiProxy_Awsvpc) SetDatabaseSubnets(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"databaseSubnets",
@@ -3880,7 +3879,7 @@ func (j *jsiiProxy_Awsvpc)SetDatabaseSubnets(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetDatabaseSubnetSuffix(val *string) {
+func (j *jsiiProxy_Awsvpc) SetDatabaseSubnetSuffix(val *string) {
 	_jsii_.Set(
 		j,
 		"databaseSubnetSuffix",
@@ -3888,7 +3887,7 @@ func (j *jsiiProxy_Awsvpc)SetDatabaseSubnetSuffix(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetDatabaseSubnetTags(val *map[string]*string) {
+func (j *jsiiProxy_Awsvpc) SetDatabaseSubnetTags(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"databaseSubnetTags",
@@ -3896,7 +3895,7 @@ func (j *jsiiProxy_Awsvpc)SetDatabaseSubnetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetDefaultNetworkAclEgress(val *[]*map[string]*string) {
+func (j *jsiiProxy_Awsvpc) SetDefaultNetworkAclEgress(val *[]*map[string]*string) {
 	_jsii_.Set(
 		j,
 		"defaultNetworkAclEgress",
@@ -3904,7 +3903,7 @@ func (j *jsiiProxy_Awsvpc)SetDefaultNetworkAclEgress(val *[]*map[string]*string)
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetDefaultNetworkAclIngress(val *[]*map[string]*string) {
+func (j *jsiiProxy_Awsvpc) SetDefaultNetworkAclIngress(val *[]*map[string]*string) {
 	_jsii_.Set(
 		j,
 		"defaultNetworkAclIngress",
@@ -3912,7 +3911,7 @@ func (j *jsiiProxy_Awsvpc)SetDefaultNetworkAclIngress(val *[]*map[string]*string
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetDefaultNetworkAclName(val *string) {
+func (j *jsiiProxy_Awsvpc) SetDefaultNetworkAclName(val *string) {
 	_jsii_.Set(
 		j,
 		"defaultNetworkAclName",
@@ -3920,7 +3919,7 @@ func (j *jsiiProxy_Awsvpc)SetDefaultNetworkAclName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetDefaultNetworkAclTags(val *map[string]*string) {
+func (j *jsiiProxy_Awsvpc) SetDefaultNetworkAclTags(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"defaultNetworkAclTags",
@@ -3928,7 +3927,7 @@ func (j *jsiiProxy_Awsvpc)SetDefaultNetworkAclTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetDefaultRouteTableName(val *string) {
+func (j *jsiiProxy_Awsvpc) SetDefaultRouteTableName(val *string) {
 	_jsii_.Set(
 		j,
 		"defaultRouteTableName",
@@ -3936,7 +3935,7 @@ func (j *jsiiProxy_Awsvpc)SetDefaultRouteTableName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetDefaultRouteTablePropagatingVgws(val *[]*string) {
+func (j *jsiiProxy_Awsvpc) SetDefaultRouteTablePropagatingVgws(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"defaultRouteTablePropagatingVgws",
@@ -3944,7 +3943,7 @@ func (j *jsiiProxy_Awsvpc)SetDefaultRouteTablePropagatingVgws(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetDefaultRouteTableRoutes(val *[]*map[string]*string) {
+func (j *jsiiProxy_Awsvpc) SetDefaultRouteTableRoutes(val *[]*map[string]*string) {
 	_jsii_.Set(
 		j,
 		"defaultRouteTableRoutes",
@@ -3952,7 +3951,7 @@ func (j *jsiiProxy_Awsvpc)SetDefaultRouteTableRoutes(val *[]*map[string]*string)
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetDefaultRouteTableTags(val *map[string]*string) {
+func (j *jsiiProxy_Awsvpc) SetDefaultRouteTableTags(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"defaultRouteTableTags",
@@ -3960,7 +3959,7 @@ func (j *jsiiProxy_Awsvpc)SetDefaultRouteTableTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetDefaultSecurityGroupEgress(val *[]*map[string]*string) {
+func (j *jsiiProxy_Awsvpc) SetDefaultSecurityGroupEgress(val *[]*map[string]*string) {
 	_jsii_.Set(
 		j,
 		"defaultSecurityGroupEgress",
@@ -3968,7 +3967,7 @@ func (j *jsiiProxy_Awsvpc)SetDefaultSecurityGroupEgress(val *[]*map[string]*stri
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetDefaultSecurityGroupIngress(val *[]*map[string]*string) {
+func (j *jsiiProxy_Awsvpc) SetDefaultSecurityGroupIngress(val *[]*map[string]*string) {
 	_jsii_.Set(
 		j,
 		"defaultSecurityGroupIngress",
@@ -3976,7 +3975,7 @@ func (j *jsiiProxy_Awsvpc)SetDefaultSecurityGroupIngress(val *[]*map[string]*str
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetDefaultSecurityGroupName(val *string) {
+func (j *jsiiProxy_Awsvpc) SetDefaultSecurityGroupName(val *string) {
 	_jsii_.Set(
 		j,
 		"defaultSecurityGroupName",
@@ -3984,7 +3983,7 @@ func (j *jsiiProxy_Awsvpc)SetDefaultSecurityGroupName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetDefaultSecurityGroupTags(val *map[string]*string) {
+func (j *jsiiProxy_Awsvpc) SetDefaultSecurityGroupTags(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"defaultSecurityGroupTags",
@@ -3992,7 +3991,7 @@ func (j *jsiiProxy_Awsvpc)SetDefaultSecurityGroupTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetDefaultVpcEnableClassiclink(val *bool) {
+func (j *jsiiProxy_Awsvpc) SetDefaultVpcEnableClassiclink(val *bool) {
 	_jsii_.Set(
 		j,
 		"defaultVpcEnableClassiclink",
@@ -4000,7 +3999,7 @@ func (j *jsiiProxy_Awsvpc)SetDefaultVpcEnableClassiclink(val *bool) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetDefaultVpcEnableDnsHostnames(val *bool) {
+func (j *jsiiProxy_Awsvpc) SetDefaultVpcEnableDnsHostnames(val *bool) {
 	_jsii_.Set(
 		j,
 		"defaultVpcEnableDnsHostnames",
@@ -4008,7 +4007,7 @@ func (j *jsiiProxy_Awsvpc)SetDefaultVpcEnableDnsHostnames(val *bool) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetDefaultVpcEnableDnsSupport(val *bool) {
+func (j *jsiiProxy_Awsvpc) SetDefaultVpcEnableDnsSupport(val *bool) {
 	_jsii_.Set(
 		j,
 		"defaultVpcEnableDnsSupport",
@@ -4016,7 +4015,7 @@ func (j *jsiiProxy_Awsvpc)SetDefaultVpcEnableDnsSupport(val *bool) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetDefaultVpcName(val *string) {
+func (j *jsiiProxy_Awsvpc) SetDefaultVpcName(val *string) {
 	_jsii_.Set(
 		j,
 		"defaultVpcName",
@@ -4024,7 +4023,7 @@ func (j *jsiiProxy_Awsvpc)SetDefaultVpcName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetDefaultVpcTags(val *map[string]*string) {
+func (j *jsiiProxy_Awsvpc) SetDefaultVpcTags(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"defaultVpcTags",
@@ -4032,7 +4031,7 @@ func (j *jsiiProxy_Awsvpc)SetDefaultVpcTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_Awsvpc) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -4040,7 +4039,7 @@ func (j *jsiiProxy_Awsvpc)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetDhcpOptionsDomainName(val *string) {
+func (j *jsiiProxy_Awsvpc) SetDhcpOptionsDomainName(val *string) {
 	_jsii_.Set(
 		j,
 		"dhcpOptionsDomainName",
@@ -4048,7 +4047,7 @@ func (j *jsiiProxy_Awsvpc)SetDhcpOptionsDomainName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetDhcpOptionsDomainNameServers(val *[]*string) {
+func (j *jsiiProxy_Awsvpc) SetDhcpOptionsDomainNameServers(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dhcpOptionsDomainNameServers",
@@ -4056,7 +4055,7 @@ func (j *jsiiProxy_Awsvpc)SetDhcpOptionsDomainNameServers(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetDhcpOptionsNetbiosNameServers(val *[]*string) {
+func (j *jsiiProxy_Awsvpc) SetDhcpOptionsNetbiosNameServers(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dhcpOptionsNetbiosNameServers",
@@ -4064,7 +4063,7 @@ func (j *jsiiProxy_Awsvpc)SetDhcpOptionsNetbiosNameServers(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetDhcpOptionsNetbiosNodeType(val *string) {
+func (j *jsiiProxy_Awsvpc) SetDhcpOptionsNetbiosNodeType(val *string) {
 	_jsii_.Set(
 		j,
 		"dhcpOptionsNetbiosNodeType",
@@ -4072,7 +4071,7 @@ func (j *jsiiProxy_Awsvpc)SetDhcpOptionsNetbiosNodeType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetDhcpOptionsNtpServers(val *[]*string) {
+func (j *jsiiProxy_Awsvpc) SetDhcpOptionsNtpServers(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dhcpOptionsNtpServers",
@@ -4080,7 +4079,7 @@ func (j *jsiiProxy_Awsvpc)SetDhcpOptionsNtpServers(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetDhcpOptionsTags(val *map[string]*string) {
+func (j *jsiiProxy_Awsvpc) SetDhcpOptionsTags(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"dhcpOptionsTags",
@@ -4088,7 +4087,7 @@ func (j *jsiiProxy_Awsvpc)SetDhcpOptionsTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetElasticacheAclTags(val *map[string]*string) {
+func (j *jsiiProxy_Awsvpc) SetElasticacheAclTags(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"elasticacheAclTags",
@@ -4096,7 +4095,7 @@ func (j *jsiiProxy_Awsvpc)SetElasticacheAclTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetElasticacheDedicatedNetworkAcl(val *bool) {
+func (j *jsiiProxy_Awsvpc) SetElasticacheDedicatedNetworkAcl(val *bool) {
 	_jsii_.Set(
 		j,
 		"elasticacheDedicatedNetworkAcl",
@@ -4104,7 +4103,7 @@ func (j *jsiiProxy_Awsvpc)SetElasticacheDedicatedNetworkAcl(val *bool) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetElasticacheInboundAclRules(val *[]*map[string]*string) {
+func (j *jsiiProxy_Awsvpc) SetElasticacheInboundAclRules(val *[]*map[string]*string) {
 	_jsii_.Set(
 		j,
 		"elasticacheInboundAclRules",
@@ -4112,7 +4111,7 @@ func (j *jsiiProxy_Awsvpc)SetElasticacheInboundAclRules(val *[]*map[string]*stri
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetElasticacheOutboundAclRules(val *[]*map[string]*string) {
+func (j *jsiiProxy_Awsvpc) SetElasticacheOutboundAclRules(val *[]*map[string]*string) {
 	_jsii_.Set(
 		j,
 		"elasticacheOutboundAclRules",
@@ -4120,7 +4119,7 @@ func (j *jsiiProxy_Awsvpc)SetElasticacheOutboundAclRules(val *[]*map[string]*str
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetElasticacheRouteTableTags(val *map[string]*string) {
+func (j *jsiiProxy_Awsvpc) SetElasticacheRouteTableTags(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"elasticacheRouteTableTags",
@@ -4128,7 +4127,7 @@ func (j *jsiiProxy_Awsvpc)SetElasticacheRouteTableTags(val *map[string]*string) 
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetElasticacheSubnetAssignIpv6AddressOnCreation(val *bool) {
+func (j *jsiiProxy_Awsvpc) SetElasticacheSubnetAssignIpv6AddressOnCreation(val *bool) {
 	_jsii_.Set(
 		j,
 		"elasticacheSubnetAssignIpv6AddressOnCreation",
@@ -4136,7 +4135,7 @@ func (j *jsiiProxy_Awsvpc)SetElasticacheSubnetAssignIpv6AddressOnCreation(val *b
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetElasticacheSubnetGroupName(val *string) {
+func (j *jsiiProxy_Awsvpc) SetElasticacheSubnetGroupName(val *string) {
 	_jsii_.Set(
 		j,
 		"elasticacheSubnetGroupName",
@@ -4144,7 +4143,7 @@ func (j *jsiiProxy_Awsvpc)SetElasticacheSubnetGroupName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetElasticacheSubnetGroupTags(val *map[string]*string) {
+func (j *jsiiProxy_Awsvpc) SetElasticacheSubnetGroupTags(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"elasticacheSubnetGroupTags",
@@ -4152,7 +4151,7 @@ func (j *jsiiProxy_Awsvpc)SetElasticacheSubnetGroupTags(val *map[string]*string)
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetElasticacheSubnetIpv6Prefixes(val *[]*string) {
+func (j *jsiiProxy_Awsvpc) SetElasticacheSubnetIpv6Prefixes(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"elasticacheSubnetIpv6Prefixes",
@@ -4160,7 +4159,7 @@ func (j *jsiiProxy_Awsvpc)SetElasticacheSubnetIpv6Prefixes(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetElasticacheSubnetNames(val *[]*string) {
+func (j *jsiiProxy_Awsvpc) SetElasticacheSubnetNames(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"elasticacheSubnetNames",
@@ -4168,7 +4167,7 @@ func (j *jsiiProxy_Awsvpc)SetElasticacheSubnetNames(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetElasticacheSubnets(val *[]*string) {
+func (j *jsiiProxy_Awsvpc) SetElasticacheSubnets(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"elasticacheSubnets",
@@ -4176,7 +4175,7 @@ func (j *jsiiProxy_Awsvpc)SetElasticacheSubnets(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetElasticacheSubnetSuffix(val *string) {
+func (j *jsiiProxy_Awsvpc) SetElasticacheSubnetSuffix(val *string) {
 	_jsii_.Set(
 		j,
 		"elasticacheSubnetSuffix",
@@ -4184,7 +4183,7 @@ func (j *jsiiProxy_Awsvpc)SetElasticacheSubnetSuffix(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetElasticacheSubnetTags(val *map[string]*string) {
+func (j *jsiiProxy_Awsvpc) SetElasticacheSubnetTags(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"elasticacheSubnetTags",
@@ -4192,7 +4191,7 @@ func (j *jsiiProxy_Awsvpc)SetElasticacheSubnetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetEnableClassiclink(val *bool) {
+func (j *jsiiProxy_Awsvpc) SetEnableClassiclink(val *bool) {
 	_jsii_.Set(
 		j,
 		"enableClassiclink",
@@ -4200,7 +4199,7 @@ func (j *jsiiProxy_Awsvpc)SetEnableClassiclink(val *bool) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetEnableClassiclinkDnsSupport(val *bool) {
+func (j *jsiiProxy_Awsvpc) SetEnableClassiclinkDnsSupport(val *bool) {
 	_jsii_.Set(
 		j,
 		"enableClassiclinkDnsSupport",
@@ -4208,7 +4207,7 @@ func (j *jsiiProxy_Awsvpc)SetEnableClassiclinkDnsSupport(val *bool) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetEnableDhcpOptions(val *bool) {
+func (j *jsiiProxy_Awsvpc) SetEnableDhcpOptions(val *bool) {
 	_jsii_.Set(
 		j,
 		"enableDhcpOptions",
@@ -4216,7 +4215,7 @@ func (j *jsiiProxy_Awsvpc)SetEnableDhcpOptions(val *bool) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetEnableDnsHostnames(val *bool) {
+func (j *jsiiProxy_Awsvpc) SetEnableDnsHostnames(val *bool) {
 	_jsii_.Set(
 		j,
 		"enableDnsHostnames",
@@ -4224,7 +4223,7 @@ func (j *jsiiProxy_Awsvpc)SetEnableDnsHostnames(val *bool) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetEnableDnsSupport(val *bool) {
+func (j *jsiiProxy_Awsvpc) SetEnableDnsSupport(val *bool) {
 	_jsii_.Set(
 		j,
 		"enableDnsSupport",
@@ -4232,7 +4231,7 @@ func (j *jsiiProxy_Awsvpc)SetEnableDnsSupport(val *bool) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetEnableFlowLog(val *bool) {
+func (j *jsiiProxy_Awsvpc) SetEnableFlowLog(val *bool) {
 	_jsii_.Set(
 		j,
 		"enableFlowLog",
@@ -4240,7 +4239,7 @@ func (j *jsiiProxy_Awsvpc)SetEnableFlowLog(val *bool) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetEnableIpv6(val *bool) {
+func (j *jsiiProxy_Awsvpc) SetEnableIpv6(val *bool) {
 	_jsii_.Set(
 		j,
 		"enableIpv6",
@@ -4248,7 +4247,7 @@ func (j *jsiiProxy_Awsvpc)SetEnableIpv6(val *bool) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetEnableNatGateway(val *bool) {
+func (j *jsiiProxy_Awsvpc) SetEnableNatGateway(val *bool) {
 	_jsii_.Set(
 		j,
 		"enableNatGateway",
@@ -4256,7 +4255,7 @@ func (j *jsiiProxy_Awsvpc)SetEnableNatGateway(val *bool) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetEnablePublicRedshift(val *bool) {
+func (j *jsiiProxy_Awsvpc) SetEnablePublicRedshift(val *bool) {
 	_jsii_.Set(
 		j,
 		"enablePublicRedshift",
@@ -4264,7 +4263,7 @@ func (j *jsiiProxy_Awsvpc)SetEnablePublicRedshift(val *bool) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetEnableVpnGateway(val *bool) {
+func (j *jsiiProxy_Awsvpc) SetEnableVpnGateway(val *bool) {
 	_jsii_.Set(
 		j,
 		"enableVpnGateway",
@@ -4272,7 +4271,7 @@ func (j *jsiiProxy_Awsvpc)SetEnableVpnGateway(val *bool) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetExternalNatIpIds(val *[]*string) {
+func (j *jsiiProxy_Awsvpc) SetExternalNatIpIds(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"externalNatIpIds",
@@ -4280,7 +4279,7 @@ func (j *jsiiProxy_Awsvpc)SetExternalNatIpIds(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetExternalNatIps(val *[]*string) {
+func (j *jsiiProxy_Awsvpc) SetExternalNatIps(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"externalNatIps",
@@ -4288,7 +4287,7 @@ func (j *jsiiProxy_Awsvpc)SetExternalNatIps(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetFlowLogCloudwatchIamRoleArn(val *string) {
+func (j *jsiiProxy_Awsvpc) SetFlowLogCloudwatchIamRoleArn(val *string) {
 	_jsii_.Set(
 		j,
 		"flowLogCloudwatchIamRoleArn",
@@ -4296,7 +4295,7 @@ func (j *jsiiProxy_Awsvpc)SetFlowLogCloudwatchIamRoleArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetFlowLogCloudwatchLogGroupKmsKeyId(val *string) {
+func (j *jsiiProxy_Awsvpc) SetFlowLogCloudwatchLogGroupKmsKeyId(val *string) {
 	_jsii_.Set(
 		j,
 		"flowLogCloudwatchLogGroupKmsKeyId",
@@ -4304,7 +4303,7 @@ func (j *jsiiProxy_Awsvpc)SetFlowLogCloudwatchLogGroupKmsKeyId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetFlowLogCloudwatchLogGroupNamePrefix(val *string) {
+func (j *jsiiProxy_Awsvpc) SetFlowLogCloudwatchLogGroupNamePrefix(val *string) {
 	_jsii_.Set(
 		j,
 		"flowLogCloudwatchLogGroupNamePrefix",
@@ -4312,7 +4311,7 @@ func (j *jsiiProxy_Awsvpc)SetFlowLogCloudwatchLogGroupNamePrefix(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetFlowLogCloudwatchLogGroupNameSuffix(val *string) {
+func (j *jsiiProxy_Awsvpc) SetFlowLogCloudwatchLogGroupNameSuffix(val *string) {
 	_jsii_.Set(
 		j,
 		"flowLogCloudwatchLogGroupNameSuffix",
@@ -4320,7 +4319,7 @@ func (j *jsiiProxy_Awsvpc)SetFlowLogCloudwatchLogGroupNameSuffix(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetFlowLogCloudwatchLogGroupRetentionInDays(val *float64) {
+func (j *jsiiProxy_Awsvpc) SetFlowLogCloudwatchLogGroupRetentionInDays(val *float64) {
 	_jsii_.Set(
 		j,
 		"flowLogCloudwatchLogGroupRetentionInDays",
@@ -4328,7 +4327,7 @@ func (j *jsiiProxy_Awsvpc)SetFlowLogCloudwatchLogGroupRetentionInDays(val *float
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetFlowLogDestinationArn(val *string) {
+func (j *jsiiProxy_Awsvpc) SetFlowLogDestinationArn(val *string) {
 	_jsii_.Set(
 		j,
 		"flowLogDestinationArn",
@@ -4336,7 +4335,7 @@ func (j *jsiiProxy_Awsvpc)SetFlowLogDestinationArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetFlowLogDestinationType(val *string) {
+func (j *jsiiProxy_Awsvpc) SetFlowLogDestinationType(val *string) {
 	_jsii_.Set(
 		j,
 		"flowLogDestinationType",
@@ -4344,7 +4343,7 @@ func (j *jsiiProxy_Awsvpc)SetFlowLogDestinationType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetFlowLogFileFormat(val *string) {
+func (j *jsiiProxy_Awsvpc) SetFlowLogFileFormat(val *string) {
 	_jsii_.Set(
 		j,
 		"flowLogFileFormat",
@@ -4352,7 +4351,7 @@ func (j *jsiiProxy_Awsvpc)SetFlowLogFileFormat(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetFlowLogHiveCompatiblePartitions(val *bool) {
+func (j *jsiiProxy_Awsvpc) SetFlowLogHiveCompatiblePartitions(val *bool) {
 	_jsii_.Set(
 		j,
 		"flowLogHiveCompatiblePartitions",
@@ -4360,7 +4359,7 @@ func (j *jsiiProxy_Awsvpc)SetFlowLogHiveCompatiblePartitions(val *bool) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetFlowLogLogFormat(val *string) {
+func (j *jsiiProxy_Awsvpc) SetFlowLogLogFormat(val *string) {
 	_jsii_.Set(
 		j,
 		"flowLogLogFormat",
@@ -4368,7 +4367,7 @@ func (j *jsiiProxy_Awsvpc)SetFlowLogLogFormat(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetFlowLogMaxAggregationInterval(val *float64) {
+func (j *jsiiProxy_Awsvpc) SetFlowLogMaxAggregationInterval(val *float64) {
 	_jsii_.Set(
 		j,
 		"flowLogMaxAggregationInterval",
@@ -4376,7 +4375,7 @@ func (j *jsiiProxy_Awsvpc)SetFlowLogMaxAggregationInterval(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetFlowLogPerHourPartition(val *bool) {
+func (j *jsiiProxy_Awsvpc) SetFlowLogPerHourPartition(val *bool) {
 	_jsii_.Set(
 		j,
 		"flowLogPerHourPartition",
@@ -4384,7 +4383,7 @@ func (j *jsiiProxy_Awsvpc)SetFlowLogPerHourPartition(val *bool) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetFlowLogTrafficType(val *string) {
+func (j *jsiiProxy_Awsvpc) SetFlowLogTrafficType(val *string) {
 	_jsii_.Set(
 		j,
 		"flowLogTrafficType",
@@ -4392,7 +4391,7 @@ func (j *jsiiProxy_Awsvpc)SetFlowLogTrafficType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Awsvpc) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -4400,7 +4399,7 @@ func (j *jsiiProxy_Awsvpc)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetIgwTags(val *map[string]*string) {
+func (j *jsiiProxy_Awsvpc) SetIgwTags(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"igwTags",
@@ -4408,7 +4407,7 @@ func (j *jsiiProxy_Awsvpc)SetIgwTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetInstanceTenancy(val *string) {
+func (j *jsiiProxy_Awsvpc) SetInstanceTenancy(val *string) {
 	_jsii_.Set(
 		j,
 		"instanceTenancy",
@@ -4416,7 +4415,7 @@ func (j *jsiiProxy_Awsvpc)SetInstanceTenancy(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetIntraAclTags(val *map[string]*string) {
+func (j *jsiiProxy_Awsvpc) SetIntraAclTags(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"intraAclTags",
@@ -4424,7 +4423,7 @@ func (j *jsiiProxy_Awsvpc)SetIntraAclTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetIntraDedicatedNetworkAcl(val *bool) {
+func (j *jsiiProxy_Awsvpc) SetIntraDedicatedNetworkAcl(val *bool) {
 	_jsii_.Set(
 		j,
 		"intraDedicatedNetworkAcl",
@@ -4432,7 +4431,7 @@ func (j *jsiiProxy_Awsvpc)SetIntraDedicatedNetworkAcl(val *bool) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetIntraInboundAclRules(val *[]*map[string]*string) {
+func (j *jsiiProxy_Awsvpc) SetIntraInboundAclRules(val *[]*map[string]*string) {
 	_jsii_.Set(
 		j,
 		"intraInboundAclRules",
@@ -4440,7 +4439,7 @@ func (j *jsiiProxy_Awsvpc)SetIntraInboundAclRules(val *[]*map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetIntraOutboundAclRules(val *[]*map[string]*string) {
+func (j *jsiiProxy_Awsvpc) SetIntraOutboundAclRules(val *[]*map[string]*string) {
 	_jsii_.Set(
 		j,
 		"intraOutboundAclRules",
@@ -4448,7 +4447,7 @@ func (j *jsiiProxy_Awsvpc)SetIntraOutboundAclRules(val *[]*map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetIntraRouteTableTags(val *map[string]*string) {
+func (j *jsiiProxy_Awsvpc) SetIntraRouteTableTags(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"intraRouteTableTags",
@@ -4456,7 +4455,7 @@ func (j *jsiiProxy_Awsvpc)SetIntraRouteTableTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetIntraSubnetAssignIpv6AddressOnCreation(val *bool) {
+func (j *jsiiProxy_Awsvpc) SetIntraSubnetAssignIpv6AddressOnCreation(val *bool) {
 	_jsii_.Set(
 		j,
 		"intraSubnetAssignIpv6AddressOnCreation",
@@ -4464,7 +4463,7 @@ func (j *jsiiProxy_Awsvpc)SetIntraSubnetAssignIpv6AddressOnCreation(val *bool) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetIntraSubnetIpv6Prefixes(val *[]*string) {
+func (j *jsiiProxy_Awsvpc) SetIntraSubnetIpv6Prefixes(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"intraSubnetIpv6Prefixes",
@@ -4472,7 +4471,7 @@ func (j *jsiiProxy_Awsvpc)SetIntraSubnetIpv6Prefixes(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetIntraSubnetNames(val *[]*string) {
+func (j *jsiiProxy_Awsvpc) SetIntraSubnetNames(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"intraSubnetNames",
@@ -4480,7 +4479,7 @@ func (j *jsiiProxy_Awsvpc)SetIntraSubnetNames(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetIntraSubnets(val *[]*string) {
+func (j *jsiiProxy_Awsvpc) SetIntraSubnets(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"intraSubnets",
@@ -4488,7 +4487,7 @@ func (j *jsiiProxy_Awsvpc)SetIntraSubnets(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetIntraSubnetSuffix(val *string) {
+func (j *jsiiProxy_Awsvpc) SetIntraSubnetSuffix(val *string) {
 	_jsii_.Set(
 		j,
 		"intraSubnetSuffix",
@@ -4496,7 +4495,7 @@ func (j *jsiiProxy_Awsvpc)SetIntraSubnetSuffix(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetIntraSubnetTags(val *map[string]*string) {
+func (j *jsiiProxy_Awsvpc) SetIntraSubnetTags(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"intraSubnetTags",
@@ -4504,7 +4503,7 @@ func (j *jsiiProxy_Awsvpc)SetIntraSubnetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetIpv4IpamPoolId(val *string) {
+func (j *jsiiProxy_Awsvpc) SetIpv4IpamPoolId(val *string) {
 	_jsii_.Set(
 		j,
 		"ipv4IpamPoolId",
@@ -4512,7 +4511,7 @@ func (j *jsiiProxy_Awsvpc)SetIpv4IpamPoolId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetIpv4NetmaskLength(val *float64) {
+func (j *jsiiProxy_Awsvpc) SetIpv4NetmaskLength(val *float64) {
 	_jsii_.Set(
 		j,
 		"ipv4NetmaskLength",
@@ -4520,7 +4519,7 @@ func (j *jsiiProxy_Awsvpc)SetIpv4NetmaskLength(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetIpv6Cidr(val *string) {
+func (j *jsiiProxy_Awsvpc) SetIpv6Cidr(val *string) {
 	_jsii_.Set(
 		j,
 		"ipv6Cidr",
@@ -4528,7 +4527,7 @@ func (j *jsiiProxy_Awsvpc)SetIpv6Cidr(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetIpv6IpamPoolId(val *string) {
+func (j *jsiiProxy_Awsvpc) SetIpv6IpamPoolId(val *string) {
 	_jsii_.Set(
 		j,
 		"ipv6IpamPoolId",
@@ -4536,7 +4535,7 @@ func (j *jsiiProxy_Awsvpc)SetIpv6IpamPoolId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetIpv6NetmaskLength(val *float64) {
+func (j *jsiiProxy_Awsvpc) SetIpv6NetmaskLength(val *float64) {
 	_jsii_.Set(
 		j,
 		"ipv6NetmaskLength",
@@ -4544,7 +4543,7 @@ func (j *jsiiProxy_Awsvpc)SetIpv6NetmaskLength(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetManageDefaultNetworkAcl(val *bool) {
+func (j *jsiiProxy_Awsvpc) SetManageDefaultNetworkAcl(val *bool) {
 	_jsii_.Set(
 		j,
 		"manageDefaultNetworkAcl",
@@ -4552,7 +4551,7 @@ func (j *jsiiProxy_Awsvpc)SetManageDefaultNetworkAcl(val *bool) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetManageDefaultRouteTable(val *bool) {
+func (j *jsiiProxy_Awsvpc) SetManageDefaultRouteTable(val *bool) {
 	_jsii_.Set(
 		j,
 		"manageDefaultRouteTable",
@@ -4560,7 +4559,7 @@ func (j *jsiiProxy_Awsvpc)SetManageDefaultRouteTable(val *bool) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetManageDefaultSecurityGroup(val *bool) {
+func (j *jsiiProxy_Awsvpc) SetManageDefaultSecurityGroup(val *bool) {
 	_jsii_.Set(
 		j,
 		"manageDefaultSecurityGroup",
@@ -4568,7 +4567,7 @@ func (j *jsiiProxy_Awsvpc)SetManageDefaultSecurityGroup(val *bool) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetManageDefaultVpc(val *bool) {
+func (j *jsiiProxy_Awsvpc) SetManageDefaultVpc(val *bool) {
 	_jsii_.Set(
 		j,
 		"manageDefaultVpc",
@@ -4576,7 +4575,7 @@ func (j *jsiiProxy_Awsvpc)SetManageDefaultVpc(val *bool) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetMapPublicIpOnLaunch(val *bool) {
+func (j *jsiiProxy_Awsvpc) SetMapPublicIpOnLaunch(val *bool) {
 	_jsii_.Set(
 		j,
 		"mapPublicIpOnLaunch",
@@ -4584,7 +4583,7 @@ func (j *jsiiProxy_Awsvpc)SetMapPublicIpOnLaunch(val *bool) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetName(val *string) {
+func (j *jsiiProxy_Awsvpc) SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
@@ -4592,7 +4591,7 @@ func (j *jsiiProxy_Awsvpc)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetNatEipTags(val *map[string]*string) {
+func (j *jsiiProxy_Awsvpc) SetNatEipTags(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"natEipTags",
@@ -4600,7 +4599,7 @@ func (j *jsiiProxy_Awsvpc)SetNatEipTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetNatGatewayDestinationCidrBlock(val *string) {
+func (j *jsiiProxy_Awsvpc) SetNatGatewayDestinationCidrBlock(val *string) {
 	_jsii_.Set(
 		j,
 		"natGatewayDestinationCidrBlock",
@@ -4608,7 +4607,7 @@ func (j *jsiiProxy_Awsvpc)SetNatGatewayDestinationCidrBlock(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetNatGatewayTags(val *map[string]*string) {
+func (j *jsiiProxy_Awsvpc) SetNatGatewayTags(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"natGatewayTags",
@@ -4616,7 +4615,7 @@ func (j *jsiiProxy_Awsvpc)SetNatGatewayTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetOneNatGatewayPerAz(val *bool) {
+func (j *jsiiProxy_Awsvpc) SetOneNatGatewayPerAz(val *bool) {
 	_jsii_.Set(
 		j,
 		"oneNatGatewayPerAz",
@@ -4624,7 +4623,7 @@ func (j *jsiiProxy_Awsvpc)SetOneNatGatewayPerAz(val *bool) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetOutpostAclTags(val *map[string]*string) {
+func (j *jsiiProxy_Awsvpc) SetOutpostAclTags(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"outpostAclTags",
@@ -4632,7 +4631,7 @@ func (j *jsiiProxy_Awsvpc)SetOutpostAclTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetOutpostArn(val *string) {
+func (j *jsiiProxy_Awsvpc) SetOutpostArn(val *string) {
 	_jsii_.Set(
 		j,
 		"outpostArn",
@@ -4640,7 +4639,7 @@ func (j *jsiiProxy_Awsvpc)SetOutpostArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetOutpostAz(val *string) {
+func (j *jsiiProxy_Awsvpc) SetOutpostAz(val *string) {
 	_jsii_.Set(
 		j,
 		"outpostAz",
@@ -4648,7 +4647,7 @@ func (j *jsiiProxy_Awsvpc)SetOutpostAz(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetOutpostDedicatedNetworkAcl(val *bool) {
+func (j *jsiiProxy_Awsvpc) SetOutpostDedicatedNetworkAcl(val *bool) {
 	_jsii_.Set(
 		j,
 		"outpostDedicatedNetworkAcl",
@@ -4656,7 +4655,7 @@ func (j *jsiiProxy_Awsvpc)SetOutpostDedicatedNetworkAcl(val *bool) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetOutpostInboundAclRules(val *[]*map[string]*string) {
+func (j *jsiiProxy_Awsvpc) SetOutpostInboundAclRules(val *[]*map[string]*string) {
 	_jsii_.Set(
 		j,
 		"outpostInboundAclRules",
@@ -4664,7 +4663,7 @@ func (j *jsiiProxy_Awsvpc)SetOutpostInboundAclRules(val *[]*map[string]*string) 
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetOutpostOutboundAclRules(val *[]*map[string]*string) {
+func (j *jsiiProxy_Awsvpc) SetOutpostOutboundAclRules(val *[]*map[string]*string) {
 	_jsii_.Set(
 		j,
 		"outpostOutboundAclRules",
@@ -4672,7 +4671,7 @@ func (j *jsiiProxy_Awsvpc)SetOutpostOutboundAclRules(val *[]*map[string]*string)
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetOutpostSubnetAssignIpv6AddressOnCreation(val *bool) {
+func (j *jsiiProxy_Awsvpc) SetOutpostSubnetAssignIpv6AddressOnCreation(val *bool) {
 	_jsii_.Set(
 		j,
 		"outpostSubnetAssignIpv6AddressOnCreation",
@@ -4680,7 +4679,7 @@ func (j *jsiiProxy_Awsvpc)SetOutpostSubnetAssignIpv6AddressOnCreation(val *bool)
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetOutpostSubnetIpv6Prefixes(val *[]*string) {
+func (j *jsiiProxy_Awsvpc) SetOutpostSubnetIpv6Prefixes(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"outpostSubnetIpv6Prefixes",
@@ -4688,7 +4687,7 @@ func (j *jsiiProxy_Awsvpc)SetOutpostSubnetIpv6Prefixes(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetOutpostSubnetNames(val *[]*string) {
+func (j *jsiiProxy_Awsvpc) SetOutpostSubnetNames(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"outpostSubnetNames",
@@ -4696,7 +4695,7 @@ func (j *jsiiProxy_Awsvpc)SetOutpostSubnetNames(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetOutpostSubnets(val *[]*string) {
+func (j *jsiiProxy_Awsvpc) SetOutpostSubnets(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"outpostSubnets",
@@ -4704,7 +4703,7 @@ func (j *jsiiProxy_Awsvpc)SetOutpostSubnets(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetOutpostSubnetSuffix(val *string) {
+func (j *jsiiProxy_Awsvpc) SetOutpostSubnetSuffix(val *string) {
 	_jsii_.Set(
 		j,
 		"outpostSubnetSuffix",
@@ -4712,7 +4711,7 @@ func (j *jsiiProxy_Awsvpc)SetOutpostSubnetSuffix(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetOutpostSubnetTags(val *map[string]*string) {
+func (j *jsiiProxy_Awsvpc) SetOutpostSubnetTags(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"outpostSubnetTags",
@@ -4720,7 +4719,7 @@ func (j *jsiiProxy_Awsvpc)SetOutpostSubnetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetPrivateAclTags(val *map[string]*string) {
+func (j *jsiiProxy_Awsvpc) SetPrivateAclTags(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"privateAclTags",
@@ -4728,7 +4727,7 @@ func (j *jsiiProxy_Awsvpc)SetPrivateAclTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetPrivateDedicatedNetworkAcl(val *bool) {
+func (j *jsiiProxy_Awsvpc) SetPrivateDedicatedNetworkAcl(val *bool) {
 	_jsii_.Set(
 		j,
 		"privateDedicatedNetworkAcl",
@@ -4736,7 +4735,7 @@ func (j *jsiiProxy_Awsvpc)SetPrivateDedicatedNetworkAcl(val *bool) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetPrivateInboundAclRules(val *[]*map[string]*string) {
+func (j *jsiiProxy_Awsvpc) SetPrivateInboundAclRules(val *[]*map[string]*string) {
 	_jsii_.Set(
 		j,
 		"privateInboundAclRules",
@@ -4744,7 +4743,7 @@ func (j *jsiiProxy_Awsvpc)SetPrivateInboundAclRules(val *[]*map[string]*string) 
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetPrivateOutboundAclRules(val *[]*map[string]*string) {
+func (j *jsiiProxy_Awsvpc) SetPrivateOutboundAclRules(val *[]*map[string]*string) {
 	_jsii_.Set(
 		j,
 		"privateOutboundAclRules",
@@ -4752,7 +4751,7 @@ func (j *jsiiProxy_Awsvpc)SetPrivateOutboundAclRules(val *[]*map[string]*string)
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetPrivateRouteTableTags(val *map[string]*string) {
+func (j *jsiiProxy_Awsvpc) SetPrivateRouteTableTags(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"privateRouteTableTags",
@@ -4760,7 +4759,7 @@ func (j *jsiiProxy_Awsvpc)SetPrivateRouteTableTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetPrivateSubnetAssignIpv6AddressOnCreation(val *bool) {
+func (j *jsiiProxy_Awsvpc) SetPrivateSubnetAssignIpv6AddressOnCreation(val *bool) {
 	_jsii_.Set(
 		j,
 		"privateSubnetAssignIpv6AddressOnCreation",
@@ -4768,7 +4767,7 @@ func (j *jsiiProxy_Awsvpc)SetPrivateSubnetAssignIpv6AddressOnCreation(val *bool)
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetPrivateSubnetIpv6Prefixes(val *[]*string) {
+func (j *jsiiProxy_Awsvpc) SetPrivateSubnetIpv6Prefixes(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"privateSubnetIpv6Prefixes",
@@ -4776,7 +4775,7 @@ func (j *jsiiProxy_Awsvpc)SetPrivateSubnetIpv6Prefixes(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetPrivateSubnetNames(val *[]*string) {
+func (j *jsiiProxy_Awsvpc) SetPrivateSubnetNames(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"privateSubnetNames",
@@ -4784,7 +4783,7 @@ func (j *jsiiProxy_Awsvpc)SetPrivateSubnetNames(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetPrivateSubnets(val *[]*string) {
+func (j *jsiiProxy_Awsvpc) SetPrivateSubnets(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"privateSubnets",
@@ -4792,7 +4791,7 @@ func (j *jsiiProxy_Awsvpc)SetPrivateSubnets(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetPrivateSubnetSuffix(val *string) {
+func (j *jsiiProxy_Awsvpc) SetPrivateSubnetSuffix(val *string) {
 	_jsii_.Set(
 		j,
 		"privateSubnetSuffix",
@@ -4800,7 +4799,7 @@ func (j *jsiiProxy_Awsvpc)SetPrivateSubnetSuffix(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetPrivateSubnetTags(val *map[string]*string) {
+func (j *jsiiProxy_Awsvpc) SetPrivateSubnetTags(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"privateSubnetTags",
@@ -4808,7 +4807,7 @@ func (j *jsiiProxy_Awsvpc)SetPrivateSubnetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetPrivateSubnetTagsPerAz(val *map[string]*map[string]*string) {
+func (j *jsiiProxy_Awsvpc) SetPrivateSubnetTagsPerAz(val *map[string]*map[string]*string) {
 	_jsii_.Set(
 		j,
 		"privateSubnetTagsPerAz",
@@ -4816,7 +4815,7 @@ func (j *jsiiProxy_Awsvpc)SetPrivateSubnetTagsPerAz(val *map[string]*map[string]
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetPropagateIntraRouteTablesVgw(val *bool) {
+func (j *jsiiProxy_Awsvpc) SetPropagateIntraRouteTablesVgw(val *bool) {
 	_jsii_.Set(
 		j,
 		"propagateIntraRouteTablesVgw",
@@ -4824,7 +4823,7 @@ func (j *jsiiProxy_Awsvpc)SetPropagateIntraRouteTablesVgw(val *bool) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetPropagatePrivateRouteTablesVgw(val *bool) {
+func (j *jsiiProxy_Awsvpc) SetPropagatePrivateRouteTablesVgw(val *bool) {
 	_jsii_.Set(
 		j,
 		"propagatePrivateRouteTablesVgw",
@@ -4832,7 +4831,7 @@ func (j *jsiiProxy_Awsvpc)SetPropagatePrivateRouteTablesVgw(val *bool) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetPropagatePublicRouteTablesVgw(val *bool) {
+func (j *jsiiProxy_Awsvpc) SetPropagatePublicRouteTablesVgw(val *bool) {
 	_jsii_.Set(
 		j,
 		"propagatePublicRouteTablesVgw",
@@ -4840,7 +4839,7 @@ func (j *jsiiProxy_Awsvpc)SetPropagatePublicRouteTablesVgw(val *bool) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetPublicAclTags(val *map[string]*string) {
+func (j *jsiiProxy_Awsvpc) SetPublicAclTags(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"publicAclTags",
@@ -4848,7 +4847,7 @@ func (j *jsiiProxy_Awsvpc)SetPublicAclTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetPublicDedicatedNetworkAcl(val *bool) {
+func (j *jsiiProxy_Awsvpc) SetPublicDedicatedNetworkAcl(val *bool) {
 	_jsii_.Set(
 		j,
 		"publicDedicatedNetworkAcl",
@@ -4856,7 +4855,7 @@ func (j *jsiiProxy_Awsvpc)SetPublicDedicatedNetworkAcl(val *bool) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetPublicInboundAclRules(val *[]*map[string]*string) {
+func (j *jsiiProxy_Awsvpc) SetPublicInboundAclRules(val *[]*map[string]*string) {
 	_jsii_.Set(
 		j,
 		"publicInboundAclRules",
@@ -4864,7 +4863,7 @@ func (j *jsiiProxy_Awsvpc)SetPublicInboundAclRules(val *[]*map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetPublicOutboundAclRules(val *[]*map[string]*string) {
+func (j *jsiiProxy_Awsvpc) SetPublicOutboundAclRules(val *[]*map[string]*string) {
 	_jsii_.Set(
 		j,
 		"publicOutboundAclRules",
@@ -4872,7 +4871,7 @@ func (j *jsiiProxy_Awsvpc)SetPublicOutboundAclRules(val *[]*map[string]*string) 
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetPublicRouteTableTags(val *map[string]*string) {
+func (j *jsiiProxy_Awsvpc) SetPublicRouteTableTags(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"publicRouteTableTags",
@@ -4880,7 +4879,7 @@ func (j *jsiiProxy_Awsvpc)SetPublicRouteTableTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetPublicSubnetAssignIpv6AddressOnCreation(val *bool) {
+func (j *jsiiProxy_Awsvpc) SetPublicSubnetAssignIpv6AddressOnCreation(val *bool) {
 	_jsii_.Set(
 		j,
 		"publicSubnetAssignIpv6AddressOnCreation",
@@ -4888,7 +4887,7 @@ func (j *jsiiProxy_Awsvpc)SetPublicSubnetAssignIpv6AddressOnCreation(val *bool) 
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetPublicSubnetIpv6Prefixes(val *[]*string) {
+func (j *jsiiProxy_Awsvpc) SetPublicSubnetIpv6Prefixes(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"publicSubnetIpv6Prefixes",
@@ -4896,7 +4895,7 @@ func (j *jsiiProxy_Awsvpc)SetPublicSubnetIpv6Prefixes(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetPublicSubnetNames(val *[]*string) {
+func (j *jsiiProxy_Awsvpc) SetPublicSubnetNames(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"publicSubnetNames",
@@ -4904,7 +4903,7 @@ func (j *jsiiProxy_Awsvpc)SetPublicSubnetNames(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetPublicSubnets(val *[]*string) {
+func (j *jsiiProxy_Awsvpc) SetPublicSubnets(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"publicSubnets",
@@ -4912,7 +4911,7 @@ func (j *jsiiProxy_Awsvpc)SetPublicSubnets(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetPublicSubnetSuffix(val *string) {
+func (j *jsiiProxy_Awsvpc) SetPublicSubnetSuffix(val *string) {
 	_jsii_.Set(
 		j,
 		"publicSubnetSuffix",
@@ -4920,7 +4919,7 @@ func (j *jsiiProxy_Awsvpc)SetPublicSubnetSuffix(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetPublicSubnetTags(val *map[string]*string) {
+func (j *jsiiProxy_Awsvpc) SetPublicSubnetTags(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"publicSubnetTags",
@@ -4928,7 +4927,7 @@ func (j *jsiiProxy_Awsvpc)SetPublicSubnetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetPublicSubnetTagsPerAz(val *map[string]*map[string]*string) {
+func (j *jsiiProxy_Awsvpc) SetPublicSubnetTagsPerAz(val *map[string]*map[string]*string) {
 	_jsii_.Set(
 		j,
 		"publicSubnetTagsPerAz",
@@ -4936,7 +4935,7 @@ func (j *jsiiProxy_Awsvpc)SetPublicSubnetTagsPerAz(val *map[string]*map[string]*
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetPutinKhuylo(val *bool) {
+func (j *jsiiProxy_Awsvpc) SetPutinKhuylo(val *bool) {
 	_jsii_.Set(
 		j,
 		"putinKhuylo",
@@ -4944,7 +4943,7 @@ func (j *jsiiProxy_Awsvpc)SetPutinKhuylo(val *bool) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetRedshiftAclTags(val *map[string]*string) {
+func (j *jsiiProxy_Awsvpc) SetRedshiftAclTags(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"redshiftAclTags",
@@ -4952,7 +4951,7 @@ func (j *jsiiProxy_Awsvpc)SetRedshiftAclTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetRedshiftDedicatedNetworkAcl(val *bool) {
+func (j *jsiiProxy_Awsvpc) SetRedshiftDedicatedNetworkAcl(val *bool) {
 	_jsii_.Set(
 		j,
 		"redshiftDedicatedNetworkAcl",
@@ -4960,7 +4959,7 @@ func (j *jsiiProxy_Awsvpc)SetRedshiftDedicatedNetworkAcl(val *bool) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetRedshiftInboundAclRules(val *[]*map[string]*string) {
+func (j *jsiiProxy_Awsvpc) SetRedshiftInboundAclRules(val *[]*map[string]*string) {
 	_jsii_.Set(
 		j,
 		"redshiftInboundAclRules",
@@ -4968,7 +4967,7 @@ func (j *jsiiProxy_Awsvpc)SetRedshiftInboundAclRules(val *[]*map[string]*string)
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetRedshiftOutboundAclRules(val *[]*map[string]*string) {
+func (j *jsiiProxy_Awsvpc) SetRedshiftOutboundAclRules(val *[]*map[string]*string) {
 	_jsii_.Set(
 		j,
 		"redshiftOutboundAclRules",
@@ -4976,7 +4975,7 @@ func (j *jsiiProxy_Awsvpc)SetRedshiftOutboundAclRules(val *[]*map[string]*string
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetRedshiftRouteTableTags(val *map[string]*string) {
+func (j *jsiiProxy_Awsvpc) SetRedshiftRouteTableTags(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"redshiftRouteTableTags",
@@ -4984,7 +4983,7 @@ func (j *jsiiProxy_Awsvpc)SetRedshiftRouteTableTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetRedshiftSubnetAssignIpv6AddressOnCreation(val *bool) {
+func (j *jsiiProxy_Awsvpc) SetRedshiftSubnetAssignIpv6AddressOnCreation(val *bool) {
 	_jsii_.Set(
 		j,
 		"redshiftSubnetAssignIpv6AddressOnCreation",
@@ -4992,7 +4991,7 @@ func (j *jsiiProxy_Awsvpc)SetRedshiftSubnetAssignIpv6AddressOnCreation(val *bool
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetRedshiftSubnetGroupName(val *string) {
+func (j *jsiiProxy_Awsvpc) SetRedshiftSubnetGroupName(val *string) {
 	_jsii_.Set(
 		j,
 		"redshiftSubnetGroupName",
@@ -5000,7 +4999,7 @@ func (j *jsiiProxy_Awsvpc)SetRedshiftSubnetGroupName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetRedshiftSubnetGroupTags(val *map[string]*string) {
+func (j *jsiiProxy_Awsvpc) SetRedshiftSubnetGroupTags(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"redshiftSubnetGroupTags",
@@ -5008,7 +5007,7 @@ func (j *jsiiProxy_Awsvpc)SetRedshiftSubnetGroupTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetRedshiftSubnetIpv6Prefixes(val *[]*string) {
+func (j *jsiiProxy_Awsvpc) SetRedshiftSubnetIpv6Prefixes(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"redshiftSubnetIpv6Prefixes",
@@ -5016,7 +5015,7 @@ func (j *jsiiProxy_Awsvpc)SetRedshiftSubnetIpv6Prefixes(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetRedshiftSubnetNames(val *[]*string) {
+func (j *jsiiProxy_Awsvpc) SetRedshiftSubnetNames(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"redshiftSubnetNames",
@@ -5024,7 +5023,7 @@ func (j *jsiiProxy_Awsvpc)SetRedshiftSubnetNames(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetRedshiftSubnets(val *[]*string) {
+func (j *jsiiProxy_Awsvpc) SetRedshiftSubnets(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"redshiftSubnets",
@@ -5032,7 +5031,7 @@ func (j *jsiiProxy_Awsvpc)SetRedshiftSubnets(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetRedshiftSubnetSuffix(val *string) {
+func (j *jsiiProxy_Awsvpc) SetRedshiftSubnetSuffix(val *string) {
 	_jsii_.Set(
 		j,
 		"redshiftSubnetSuffix",
@@ -5040,7 +5039,7 @@ func (j *jsiiProxy_Awsvpc)SetRedshiftSubnetSuffix(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetRedshiftSubnetTags(val *map[string]*string) {
+func (j *jsiiProxy_Awsvpc) SetRedshiftSubnetTags(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"redshiftSubnetTags",
@@ -5048,7 +5047,7 @@ func (j *jsiiProxy_Awsvpc)SetRedshiftSubnetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetReuseNatIps(val *bool) {
+func (j *jsiiProxy_Awsvpc) SetReuseNatIps(val *bool) {
 	_jsii_.Set(
 		j,
 		"reuseNatIps",
@@ -5056,7 +5055,7 @@ func (j *jsiiProxy_Awsvpc)SetReuseNatIps(val *bool) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetSecondaryCidrBlocks(val *[]*string) {
+func (j *jsiiProxy_Awsvpc) SetSecondaryCidrBlocks(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"secondaryCidrBlocks",
@@ -5064,7 +5063,7 @@ func (j *jsiiProxy_Awsvpc)SetSecondaryCidrBlocks(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetSingleNatGateway(val *bool) {
+func (j *jsiiProxy_Awsvpc) SetSingleNatGateway(val *bool) {
 	_jsii_.Set(
 		j,
 		"singleNatGateway",
@@ -5072,7 +5071,7 @@ func (j *jsiiProxy_Awsvpc)SetSingleNatGateway(val *bool) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_Awsvpc) SetTags(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"tags",
@@ -5080,7 +5079,7 @@ func (j *jsiiProxy_Awsvpc)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetUseIpamPool(val *bool) {
+func (j *jsiiProxy_Awsvpc) SetUseIpamPool(val *bool) {
 	_jsii_.Set(
 		j,
 		"useIpamPool",
@@ -5088,7 +5087,7 @@ func (j *jsiiProxy_Awsvpc)SetUseIpamPool(val *bool) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetVpcFlowLogPermissionsBoundary(val *string) {
+func (j *jsiiProxy_Awsvpc) SetVpcFlowLogPermissionsBoundary(val *string) {
 	_jsii_.Set(
 		j,
 		"vpcFlowLogPermissionsBoundary",
@@ -5096,7 +5095,7 @@ func (j *jsiiProxy_Awsvpc)SetVpcFlowLogPermissionsBoundary(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetVpcFlowLogTags(val *map[string]*string) {
+func (j *jsiiProxy_Awsvpc) SetVpcFlowLogTags(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"vpcFlowLogTags",
@@ -5104,7 +5103,7 @@ func (j *jsiiProxy_Awsvpc)SetVpcFlowLogTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetVpcTags(val *map[string]*string) {
+func (j *jsiiProxy_Awsvpc) SetVpcTags(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"vpcTags",
@@ -5112,7 +5111,7 @@ func (j *jsiiProxy_Awsvpc)SetVpcTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetVpnGatewayAz(val *string) {
+func (j *jsiiProxy_Awsvpc) SetVpnGatewayAz(val *string) {
 	_jsii_.Set(
 		j,
 		"vpnGatewayAz",
@@ -5120,7 +5119,7 @@ func (j *jsiiProxy_Awsvpc)SetVpnGatewayAz(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetVpnGatewayId(val *string) {
+func (j *jsiiProxy_Awsvpc) SetVpnGatewayId(val *string) {
 	_jsii_.Set(
 		j,
 		"vpnGatewayId",
@@ -5128,7 +5127,7 @@ func (j *jsiiProxy_Awsvpc)SetVpnGatewayId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Awsvpc)SetVpnGatewayTags(val *map[string]*string) {
+func (j *jsiiProxy_Awsvpc) SetVpnGatewayTags(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"vpnGatewayTags",
@@ -5153,7 +5152,7 @@ func (j *jsiiProxy_Awsvpc)SetVpnGatewayTags(val *map[string]*string) {
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func Awsvpc_IsConstruct(x interface{}) *bool {
+func Awsvpc_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAwsvpc_IsConstructParameters(x); err != nil {
@@ -5164,7 +5163,7 @@ func Awsvpc_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-awsvpc.Awsvpc",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -5172,7 +5171,7 @@ func Awsvpc_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func Awsvpc_IsTerraformElement(x interface{}) *bool {
+func Awsvpc_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAwsvpc_IsTerraformElementParameters(x); err != nil {
@@ -5183,32 +5182,32 @@ func Awsvpc_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-awsvpc.Awsvpc",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_Awsvpc) AddOverride(path *string, value interface{}) {
+func (a *jsiiProxy_Awsvpc) AddOverride(path *string, value any) {
 	if err := a.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (a *jsiiProxy_Awsvpc) AddProvider(provider interface{}) {
+func (a *jsiiProxy_Awsvpc) AddProvider(provider any) {
 	if err := a.validateAddProviderParameters(provider); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"addProvider",
-		[]interface{}{provider},
+		[]any{provider},
 	)
 }
 
@@ -5221,7 +5220,7 @@ func (a *jsiiProxy_Awsvpc) GetString(output *string) *string {
 	_jsii_.Invoke(
 		a,
 		"getString",
-		[]interface{}{output},
+		[]any{output},
 		&returns,
 	)
 
@@ -5237,7 +5236,7 @@ func (a *jsiiProxy_Awsvpc) InterpolationForOutput(moduleOutput *string) cdktf.IR
 	_jsii_.Invoke(
 		a,
 		"interpolationForOutput",
-		[]interface{}{moduleOutput},
+		[]any{moduleOutput},
 		&returns,
 	)
 
@@ -5251,7 +5250,7 @@ func (a *jsiiProxy_Awsvpc) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -5263,8 +5262,8 @@ func (a *jsiiProxy_Awsvpc) ResetOverrideLogicalId() {
 	)
 }
 
-func (a *jsiiProxy_Awsvpc) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_Awsvpc) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -5276,8 +5275,8 @@ func (a *jsiiProxy_Awsvpc) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_Awsvpc) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_Awsvpc) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -5289,8 +5288,8 @@ func (a *jsiiProxy_Awsvpc) SynthesizeHclAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_Awsvpc) ToHclTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_Awsvpc) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -5302,8 +5301,8 @@ func (a *jsiiProxy_Awsvpc) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_Awsvpc) ToMetadata() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_Awsvpc) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -5328,8 +5327,8 @@ func (a *jsiiProxy_Awsvpc) ToString() *string {
 	return returns
 }
 
-func (a *jsiiProxy_Awsvpc) ToTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_Awsvpc) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -5340,4 +5339,3 @@ func (a *jsiiProxy_Awsvpc) ToTerraform() interface{} {
 
 	return returns
 }
-
