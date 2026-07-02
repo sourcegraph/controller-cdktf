@@ -24,15 +24,15 @@ type LinkDefinition interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -68,24 +68,24 @@ type LinkDefinition interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -103,7 +103,7 @@ type LinkDefinition interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -115,7 +115,7 @@ type LinkDefinition interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -126,17 +126,17 @@ type LinkDefinition interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for LinkDefinition
@@ -214,8 +214,8 @@ func (j *jsiiProxy_LinkDefinition) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_LinkDefinition) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LinkDefinition) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -224,8 +224,8 @@ func (j *jsiiProxy_LinkDefinition) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LinkDefinition) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_LinkDefinition) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -234,8 +234,8 @@ func (j *jsiiProxy_LinkDefinition) ConstructNodeMetadata() *map[string]interface
 	return returns
 }
 
-func (j *jsiiProxy_LinkDefinition) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LinkDefinition) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -394,8 +394,8 @@ func (j *jsiiProxy_LinkDefinition) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_LinkDefinition) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_LinkDefinition) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -404,8 +404,8 @@ func (j *jsiiProxy_LinkDefinition) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LinkDefinition) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LinkDefinition) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -424,8 +424,8 @@ func (j *jsiiProxy_LinkDefinition) TerraformGeneratorMetadata() *cdktf.Terraform
 	return returns
 }
 
-func (j *jsiiProxy_LinkDefinition) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_LinkDefinition) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -444,7 +444,6 @@ func (j *jsiiProxy_LinkDefinition) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/link_definition okta_link_definition} Resource.
 func NewLinkDefinition(scope constructs.Construct, id *string, config *LinkDefinitionConfig) LinkDefinition {
 	_init_.Initialize()
@@ -456,7 +455,7 @@ func NewLinkDefinition(scope constructs.Construct, id *string, config *LinkDefin
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.linkDefinition.LinkDefinition",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -469,12 +468,12 @@ func NewLinkDefinition_Override(l LinkDefinition, scope constructs.Construct, id
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.linkDefinition.LinkDefinition",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LinkDefinition)SetAssociatedDescription(val *string) {
+func (j *jsiiProxy_LinkDefinition) SetAssociatedDescription(val *string) {
 	if err := j.validateSetAssociatedDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -485,7 +484,7 @@ func (j *jsiiProxy_LinkDefinition)SetAssociatedDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LinkDefinition)SetAssociatedName(val *string) {
+func (j *jsiiProxy_LinkDefinition) SetAssociatedName(val *string) {
 	if err := j.validateSetAssociatedNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -496,7 +495,7 @@ func (j *jsiiProxy_LinkDefinition)SetAssociatedName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LinkDefinition)SetAssociatedTitle(val *string) {
+func (j *jsiiProxy_LinkDefinition) SetAssociatedTitle(val *string) {
 	if err := j.validateSetAssociatedTitleParameters(val); err != nil {
 		panic(err)
 	}
@@ -507,7 +506,7 @@ func (j *jsiiProxy_LinkDefinition)SetAssociatedTitle(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LinkDefinition)SetConnection(val interface{}) {
+func (j *jsiiProxy_LinkDefinition) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -518,7 +517,7 @@ func (j *jsiiProxy_LinkDefinition)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LinkDefinition)SetCount(val interface{}) {
+func (j *jsiiProxy_LinkDefinition) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -529,7 +528,7 @@ func (j *jsiiProxy_LinkDefinition)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LinkDefinition)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_LinkDefinition) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -537,7 +536,7 @@ func (j *jsiiProxy_LinkDefinition)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_LinkDefinition)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_LinkDefinition) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -545,7 +544,7 @@ func (j *jsiiProxy_LinkDefinition)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_LinkDefinition)SetId(val *string) {
+func (j *jsiiProxy_LinkDefinition) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -556,7 +555,7 @@ func (j *jsiiProxy_LinkDefinition)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LinkDefinition)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_LinkDefinition) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -567,7 +566,7 @@ func (j *jsiiProxy_LinkDefinition)SetLifecycle(val *cdktf.TerraformResourceLifec
 	)
 }
 
-func (j *jsiiProxy_LinkDefinition)SetPrimaryDescription(val *string) {
+func (j *jsiiProxy_LinkDefinition) SetPrimaryDescription(val *string) {
 	if err := j.validateSetPrimaryDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -578,7 +577,7 @@ func (j *jsiiProxy_LinkDefinition)SetPrimaryDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LinkDefinition)SetPrimaryName(val *string) {
+func (j *jsiiProxy_LinkDefinition) SetPrimaryName(val *string) {
 	if err := j.validateSetPrimaryNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -589,7 +588,7 @@ func (j *jsiiProxy_LinkDefinition)SetPrimaryName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LinkDefinition)SetPrimaryTitle(val *string) {
+func (j *jsiiProxy_LinkDefinition) SetPrimaryTitle(val *string) {
 	if err := j.validateSetPrimaryTitleParameters(val); err != nil {
 		panic(err)
 	}
@@ -600,7 +599,7 @@ func (j *jsiiProxy_LinkDefinition)SetPrimaryTitle(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LinkDefinition)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_LinkDefinition) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -608,7 +607,7 @@ func (j *jsiiProxy_LinkDefinition)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_LinkDefinition)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_LinkDefinition) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -631,7 +630,7 @@ func LinkDefinition_GenerateConfigForImport(scope constructs.Construct, importTo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.linkDefinition.LinkDefinition",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -655,7 +654,7 @@ func LinkDefinition_GenerateConfigForImport(scope constructs.Construct, importTo
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func LinkDefinition_IsConstruct(x interface{}) *bool {
+func LinkDefinition_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLinkDefinition_IsConstructParameters(x); err != nil {
@@ -666,7 +665,7 @@ func LinkDefinition_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.linkDefinition.LinkDefinition",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -674,7 +673,7 @@ func LinkDefinition_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func LinkDefinition_IsTerraformElement(x interface{}) *bool {
+func LinkDefinition_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLinkDefinition_IsTerraformElementParameters(x); err != nil {
@@ -685,7 +684,7 @@ func LinkDefinition_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.linkDefinition.LinkDefinition",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -693,7 +692,7 @@ func LinkDefinition_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func LinkDefinition_IsTerraformResource(x interface{}) *bool {
+func LinkDefinition_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLinkDefinition_IsTerraformResourceParameters(x); err != nil {
@@ -704,7 +703,7 @@ func LinkDefinition_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.linkDefinition.LinkDefinition",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -729,31 +728,31 @@ func (l *jsiiProxy_LinkDefinition) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (l *jsiiProxy_LinkDefinition) AddOverride(path *string, value interface{}) {
+func (l *jsiiProxy_LinkDefinition) AddOverride(path *string, value any) {
 	if err := l.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (l *jsiiProxy_LinkDefinition) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_LinkDefinition) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -769,7 +768,7 @@ func (l *jsiiProxy_LinkDefinition) GetBooleanAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -785,7 +784,7 @@ func (l *jsiiProxy_LinkDefinition) GetBooleanMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -801,7 +800,7 @@ func (l *jsiiProxy_LinkDefinition) GetListAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -817,7 +816,7 @@ func (l *jsiiProxy_LinkDefinition) GetNumberAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -833,7 +832,7 @@ func (l *jsiiProxy_LinkDefinition) GetNumberListAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -849,7 +848,7 @@ func (l *jsiiProxy_LinkDefinition) GetNumberMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -865,7 +864,7 @@ func (l *jsiiProxy_LinkDefinition) GetStringAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -881,15 +880,15 @@ func (l *jsiiProxy_LinkDefinition) GetStringMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (l *jsiiProxy_LinkDefinition) HasResourceMove() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LinkDefinition) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -908,7 +907,7 @@ func (l *jsiiProxy_LinkDefinition) ImportFrom(id *string, provider cdktf.Terrafo
 	_jsii_.InvokeVoid(
 		l,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -921,7 +920,7 @@ func (l *jsiiProxy_LinkDefinition) InterpolationForAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -935,18 +934,18 @@ func (l *jsiiProxy_LinkDefinition) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (l *jsiiProxy_LinkDefinition) MoveTo(moveTarget *string, index interface{}) {
+func (l *jsiiProxy_LinkDefinition) MoveTo(moveTarget *string, index any) {
 	if err := l.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -957,7 +956,7 @@ func (l *jsiiProxy_LinkDefinition) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -968,7 +967,7 @@ func (l *jsiiProxy_LinkDefinition) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -988,8 +987,8 @@ func (l *jsiiProxy_LinkDefinition) ResetOverrideLogicalId() {
 	)
 }
 
-func (l *jsiiProxy_LinkDefinition) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (l *jsiiProxy_LinkDefinition) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
@@ -1001,8 +1000,8 @@ func (l *jsiiProxy_LinkDefinition) SynthesizeAttributes() *map[string]interface{
 	return returns
 }
 
-func (l *jsiiProxy_LinkDefinition) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (l *jsiiProxy_LinkDefinition) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
@@ -1014,8 +1013,8 @@ func (l *jsiiProxy_LinkDefinition) SynthesizeHclAttributes() *map[string]interfa
 	return returns
 }
 
-func (l *jsiiProxy_LinkDefinition) ToHclTerraform() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LinkDefinition) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1027,8 +1026,8 @@ func (l *jsiiProxy_LinkDefinition) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (l *jsiiProxy_LinkDefinition) ToMetadata() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LinkDefinition) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1053,8 +1052,8 @@ func (l *jsiiProxy_LinkDefinition) ToString() *string {
 	return returns
 }
 
-func (l *jsiiProxy_LinkDefinition) ToTerraform() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LinkDefinition) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1065,4 +1064,3 @@ func (l *jsiiProxy_LinkDefinition) ToTerraform() interface{} {
 
 	return returns
 }
-

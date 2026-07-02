@@ -15,15 +15,15 @@ type EmailDomainVerification interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -53,24 +53,24 @@ type EmailDomainVerification interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -88,7 +88,7 @@ type EmailDomainVerification interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -100,7 +100,7 @@ type EmailDomainVerification interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -111,17 +111,17 @@ type EmailDomainVerification interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for EmailDomainVerification
@@ -139,8 +139,8 @@ func (j *jsiiProxy_EmailDomainVerification) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_EmailDomainVerification) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EmailDomainVerification) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -149,8 +149,8 @@ func (j *jsiiProxy_EmailDomainVerification) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EmailDomainVerification) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_EmailDomainVerification) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -159,8 +159,8 @@ func (j *jsiiProxy_EmailDomainVerification) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_EmailDomainVerification) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EmailDomainVerification) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -279,8 +279,8 @@ func (j *jsiiProxy_EmailDomainVerification) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_EmailDomainVerification) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_EmailDomainVerification) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -289,8 +289,8 @@ func (j *jsiiProxy_EmailDomainVerification) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EmailDomainVerification) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EmailDomainVerification) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -309,8 +309,8 @@ func (j *jsiiProxy_EmailDomainVerification) TerraformGeneratorMetadata() *cdktf.
 	return returns
 }
 
-func (j *jsiiProxy_EmailDomainVerification) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_EmailDomainVerification) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -329,7 +329,6 @@ func (j *jsiiProxy_EmailDomainVerification) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/email_domain_verification okta_email_domain_verification} Resource.
 func NewEmailDomainVerification(scope constructs.Construct, id *string, config *EmailDomainVerificationConfig) EmailDomainVerification {
 	_init_.Initialize()
@@ -341,7 +340,7 @@ func NewEmailDomainVerification(scope constructs.Construct, id *string, config *
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.emailDomainVerification.EmailDomainVerification",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -354,12 +353,12 @@ func NewEmailDomainVerification_Override(e EmailDomainVerification, scope constr
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.emailDomainVerification.EmailDomainVerification",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		e,
 	)
 }
 
-func (j *jsiiProxy_EmailDomainVerification)SetConnection(val interface{}) {
+func (j *jsiiProxy_EmailDomainVerification) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -370,7 +369,7 @@ func (j *jsiiProxy_EmailDomainVerification)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EmailDomainVerification)SetCount(val interface{}) {
+func (j *jsiiProxy_EmailDomainVerification) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -381,7 +380,7 @@ func (j *jsiiProxy_EmailDomainVerification)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EmailDomainVerification)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_EmailDomainVerification) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -389,7 +388,7 @@ func (j *jsiiProxy_EmailDomainVerification)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_EmailDomainVerification)SetEmailDomainId(val *string) {
+func (j *jsiiProxy_EmailDomainVerification) SetEmailDomainId(val *string) {
 	if err := j.validateSetEmailDomainIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -400,7 +399,7 @@ func (j *jsiiProxy_EmailDomainVerification)SetEmailDomainId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EmailDomainVerification)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_EmailDomainVerification) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -408,7 +407,7 @@ func (j *jsiiProxy_EmailDomainVerification)SetForEach(val cdktf.ITerraformIterat
 	)
 }
 
-func (j *jsiiProxy_EmailDomainVerification)SetId(val *string) {
+func (j *jsiiProxy_EmailDomainVerification) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -419,7 +418,7 @@ func (j *jsiiProxy_EmailDomainVerification)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EmailDomainVerification)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_EmailDomainVerification) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -430,7 +429,7 @@ func (j *jsiiProxy_EmailDomainVerification)SetLifecycle(val *cdktf.TerraformReso
 	)
 }
 
-func (j *jsiiProxy_EmailDomainVerification)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_EmailDomainVerification) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -438,7 +437,7 @@ func (j *jsiiProxy_EmailDomainVerification)SetProvider(val cdktf.TerraformProvid
 	)
 }
 
-func (j *jsiiProxy_EmailDomainVerification)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_EmailDomainVerification) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -461,7 +460,7 @@ func EmailDomainVerification_GenerateConfigForImport(scope constructs.Construct,
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.emailDomainVerification.EmailDomainVerification",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -485,7 +484,7 @@ func EmailDomainVerification_GenerateConfigForImport(scope constructs.Construct,
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func EmailDomainVerification_IsConstruct(x interface{}) *bool {
+func EmailDomainVerification_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEmailDomainVerification_IsConstructParameters(x); err != nil {
@@ -496,7 +495,7 @@ func EmailDomainVerification_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.emailDomainVerification.EmailDomainVerification",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -504,7 +503,7 @@ func EmailDomainVerification_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func EmailDomainVerification_IsTerraformElement(x interface{}) *bool {
+func EmailDomainVerification_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEmailDomainVerification_IsTerraformElementParameters(x); err != nil {
@@ -515,7 +514,7 @@ func EmailDomainVerification_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.emailDomainVerification.EmailDomainVerification",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -523,7 +522,7 @@ func EmailDomainVerification_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func EmailDomainVerification_IsTerraformResource(x interface{}) *bool {
+func EmailDomainVerification_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEmailDomainVerification_IsTerraformResourceParameters(x); err != nil {
@@ -534,7 +533,7 @@ func EmailDomainVerification_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.emailDomainVerification.EmailDomainVerification",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -559,31 +558,31 @@ func (e *jsiiProxy_EmailDomainVerification) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (e *jsiiProxy_EmailDomainVerification) AddOverride(path *string, value interface{}) {
+func (e *jsiiProxy_EmailDomainVerification) AddOverride(path *string, value any) {
 	if err := e.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (e *jsiiProxy_EmailDomainVerification) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_EmailDomainVerification) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -599,7 +598,7 @@ func (e *jsiiProxy_EmailDomainVerification) GetBooleanAttribute(terraformAttribu
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -615,7 +614,7 @@ func (e *jsiiProxy_EmailDomainVerification) GetBooleanMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -631,7 +630,7 @@ func (e *jsiiProxy_EmailDomainVerification) GetListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -647,7 +646,7 @@ func (e *jsiiProxy_EmailDomainVerification) GetNumberAttribute(terraformAttribut
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -663,7 +662,7 @@ func (e *jsiiProxy_EmailDomainVerification) GetNumberListAttribute(terraformAttr
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -679,7 +678,7 @@ func (e *jsiiProxy_EmailDomainVerification) GetNumberMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -695,7 +694,7 @@ func (e *jsiiProxy_EmailDomainVerification) GetStringAttribute(terraformAttribut
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -711,15 +710,15 @@ func (e *jsiiProxy_EmailDomainVerification) GetStringMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (e *jsiiProxy_EmailDomainVerification) HasResourceMove() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EmailDomainVerification) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -738,7 +737,7 @@ func (e *jsiiProxy_EmailDomainVerification) ImportFrom(id *string, provider cdkt
 	_jsii_.InvokeVoid(
 		e,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -751,7 +750,7 @@ func (e *jsiiProxy_EmailDomainVerification) InterpolationForAttribute(terraformA
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -765,18 +764,18 @@ func (e *jsiiProxy_EmailDomainVerification) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (e *jsiiProxy_EmailDomainVerification) MoveTo(moveTarget *string, index interface{}) {
+func (e *jsiiProxy_EmailDomainVerification) MoveTo(moveTarget *string, index any) {
 	if err := e.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -787,7 +786,7 @@ func (e *jsiiProxy_EmailDomainVerification) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -798,7 +797,7 @@ func (e *jsiiProxy_EmailDomainVerification) OverrideLogicalId(newLogicalId *stri
 	_jsii_.InvokeVoid(
 		e,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -818,8 +817,8 @@ func (e *jsiiProxy_EmailDomainVerification) ResetOverrideLogicalId() {
 	)
 }
 
-func (e *jsiiProxy_EmailDomainVerification) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_EmailDomainVerification) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -831,8 +830,8 @@ func (e *jsiiProxy_EmailDomainVerification) SynthesizeAttributes() *map[string]i
 	return returns
 }
 
-func (e *jsiiProxy_EmailDomainVerification) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_EmailDomainVerification) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -844,8 +843,8 @@ func (e *jsiiProxy_EmailDomainVerification) SynthesizeHclAttributes() *map[strin
 	return returns
 }
 
-func (e *jsiiProxy_EmailDomainVerification) ToHclTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EmailDomainVerification) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -857,8 +856,8 @@ func (e *jsiiProxy_EmailDomainVerification) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (e *jsiiProxy_EmailDomainVerification) ToMetadata() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EmailDomainVerification) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -883,8 +882,8 @@ func (e *jsiiProxy_EmailDomainVerification) ToString() *string {
 	return returns
 }
 
-func (e *jsiiProxy_EmailDomainVerification) ToTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EmailDomainVerification) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -895,4 +894,3 @@ func (e *jsiiProxy_EmailDomainVerification) ToTerraform() interface{} {
 
 	return returns
 }
-

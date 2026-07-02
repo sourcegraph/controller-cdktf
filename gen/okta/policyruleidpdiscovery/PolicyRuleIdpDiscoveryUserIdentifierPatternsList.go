@@ -17,8 +17,8 @@ type PolicyRuleIdpDiscoveryUserIdentifierPatternsList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type PolicyRuleIdpDiscoveryUserIdentifierPatternsList interface {
 	Get(index *float64) PolicyRuleIdpDiscoveryUserIdentifierPatternsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_PolicyRuleIdpDiscoveryUserIdentifierPatternsList) Fqn() *stri
 	return returns
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscoveryUserIdentifierPatternsList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyRuleIdpDiscoveryUserIdentifierPatternsList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_PolicyRuleIdpDiscoveryUserIdentifierPatternsList) WrapsSet() 
 	return returns
 }
 
-
 func NewPolicyRuleIdpDiscoveryUserIdentifierPatternsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PolicyRuleIdpDiscoveryUserIdentifierPatternsList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewPolicyRuleIdpDiscoveryUserIdentifierPatternsList(terraformResource cdktf
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscoveryUserIdentifierPatternsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewPolicyRuleIdpDiscoveryUserIdentifierPatternsList_Override(p PolicyRuleId
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscoveryUserIdentifierPatternsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscoveryUserIdentifierPatternsList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_PolicyRuleIdpDiscoveryUserIdentifierPatternsList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_PolicyRuleIdpDiscoveryUserIdentifierPatternsList)SetInternalV
 	)
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscoveryUserIdentifierPatternsList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_PolicyRuleIdpDiscoveryUserIdentifierPatternsList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_PolicyRuleIdpDiscoveryUserIdentifierPatternsList)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscoveryUserIdentifierPatternsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PolicyRuleIdpDiscoveryUserIdentifierPatternsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_PolicyRuleIdpDiscoveryUserIdentifierPatternsList)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscoveryUserIdentifierPatternsList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_PolicyRuleIdpDiscoveryUserIdentifierPatternsList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (p *jsiiProxy_PolicyRuleIdpDiscoveryUserIdentifierPatternsList) AllWithMapK
 	_jsii_.Invoke(
 		p,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (p *jsiiProxy_PolicyRuleIdpDiscoveryUserIdentifierPatternsList) Get(index *
 	_jsii_.Invoke(
 		p,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (p *jsiiProxy_PolicyRuleIdpDiscoveryUserIdentifierPatternsList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PolicyRuleIdpDiscoveryUserIdentifierPatternsList) Resolve(_context cdktf.IResolveContext) any {
 	if err := p.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (p *jsiiProxy_PolicyRuleIdpDiscoveryUserIdentifierPatternsList) ToString() 
 
 	return returns
 }
-

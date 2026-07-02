@@ -19,22 +19,22 @@ type AppUserSchemaProperty interface {
 	SetArrayEnum(val *[]*string)
 	ArrayEnumInput() *[]*string
 	ArrayOneOf() AppUserSchemaPropertyArrayOneOfList
-	ArrayOneOfInput() interface{}
+	ArrayOneOfInput() any
 	ArrayType() *string
 	SetArrayType(val *string)
 	ArrayTypeInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -81,7 +81,7 @@ type AppUserSchemaProperty interface {
 	// The tree node.
 	Node() constructs.Node
 	OneOf() AppUserSchemaPropertyOneOfList
-	OneOfInput() interface{}
+	OneOfInput() any
 	Permissions() *string
 	SetPermissions(val *string)
 	PermissionsInput() *string
@@ -90,21 +90,21 @@ type AppUserSchemaProperty interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
-	Required() interface{}
-	SetRequired(val interface{})
-	RequiredInput() interface{}
+	RawOverrides() any
+	Required() any
+	SetRequired(val any)
+	RequiredInput() any
 	Scope() *string
 	SetScope(val *string)
 	ScopeInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Title() *string
@@ -113,9 +113,9 @@ type AppUserSchemaProperty interface {
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
-	Union() interface{}
-	SetUnion(val interface{})
-	UnionInput() interface{}
+	Union() any
+	SetUnion(val any)
+	UnionInput() any
 	Unique() *string
 	SetUnique(val *string)
 	UniqueInput() *string
@@ -126,9 +126,9 @@ type AppUserSchemaProperty interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -146,7 +146,7 @@ type AppUserSchemaProperty interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -158,15 +158,15 @@ type AppUserSchemaProperty interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutArrayOneOf(value interface{})
-	PutOneOf(value interface{})
+	PutArrayOneOf(value any)
+	PutOneOf(value any)
 	ResetArrayEnum()
 	ResetArrayOneOf()
 	ResetArrayType()
@@ -188,17 +188,17 @@ type AppUserSchemaProperty interface {
 	ResetUnion()
 	ResetUnique()
 	ResetUserType()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for AppUserSchemaProperty
@@ -256,8 +256,8 @@ func (j *jsiiProxy_AppUserSchemaProperty) ArrayOneOf() AppUserSchemaPropertyArra
 	return returns
 }
 
-func (j *jsiiProxy_AppUserSchemaProperty) ArrayOneOfInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppUserSchemaProperty) ArrayOneOfInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"arrayOneOfInput",
@@ -296,8 +296,8 @@ func (j *jsiiProxy_AppUserSchemaProperty) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_AppUserSchemaProperty) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppUserSchemaProperty) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -306,8 +306,8 @@ func (j *jsiiProxy_AppUserSchemaProperty) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AppUserSchemaProperty) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AppUserSchemaProperty) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -316,8 +316,8 @@ func (j *jsiiProxy_AppUserSchemaProperty) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_AppUserSchemaProperty) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppUserSchemaProperty) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -576,8 +576,8 @@ func (j *jsiiProxy_AppUserSchemaProperty) OneOf() AppUserSchemaPropertyOneOfList
 	return returns
 }
 
-func (j *jsiiProxy_AppUserSchemaProperty) OneOfInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppUserSchemaProperty) OneOfInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"oneOfInput",
@@ -616,8 +616,8 @@ func (j *jsiiProxy_AppUserSchemaProperty) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_AppUserSchemaProperty) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_AppUserSchemaProperty) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -626,8 +626,8 @@ func (j *jsiiProxy_AppUserSchemaProperty) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AppUserSchemaProperty) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppUserSchemaProperty) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -636,8 +636,8 @@ func (j *jsiiProxy_AppUserSchemaProperty) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AppUserSchemaProperty) Required() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppUserSchemaProperty) Required() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"required",
@@ -646,8 +646,8 @@ func (j *jsiiProxy_AppUserSchemaProperty) Required() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AppUserSchemaProperty) RequiredInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppUserSchemaProperty) RequiredInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requiredInput",
@@ -686,8 +686,8 @@ func (j *jsiiProxy_AppUserSchemaProperty) TerraformGeneratorMetadata() *cdktf.Te
 	return returns
 }
 
-func (j *jsiiProxy_AppUserSchemaProperty) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AppUserSchemaProperty) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -746,8 +746,8 @@ func (j *jsiiProxy_AppUserSchemaProperty) TypeInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AppUserSchemaProperty) Union() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppUserSchemaProperty) Union() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"union",
@@ -756,8 +756,8 @@ func (j *jsiiProxy_AppUserSchemaProperty) Union() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AppUserSchemaProperty) UnionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppUserSchemaProperty) UnionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"unionInput",
@@ -806,7 +806,6 @@ func (j *jsiiProxy_AppUserSchemaProperty) UserTypeInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user_schema_property okta_app_user_schema_property} Resource.
 func NewAppUserSchemaProperty(scope constructs.Construct, id *string, config *AppUserSchemaPropertyConfig) AppUserSchemaProperty {
 	_init_.Initialize()
@@ -818,7 +817,7 @@ func NewAppUserSchemaProperty(scope constructs.Construct, id *string, config *Ap
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.appUserSchemaProperty.AppUserSchemaProperty",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -831,12 +830,12 @@ func NewAppUserSchemaProperty_Override(a AppUserSchemaProperty, scope constructs
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.appUserSchemaProperty.AppUserSchemaProperty",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AppUserSchemaProperty)SetAppId(val *string) {
+func (j *jsiiProxy_AppUserSchemaProperty) SetAppId(val *string) {
 	if err := j.validateSetAppIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -847,7 +846,7 @@ func (j *jsiiProxy_AppUserSchemaProperty)SetAppId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppUserSchemaProperty)SetArrayEnum(val *[]*string) {
+func (j *jsiiProxy_AppUserSchemaProperty) SetArrayEnum(val *[]*string) {
 	if err := j.validateSetArrayEnumParameters(val); err != nil {
 		panic(err)
 	}
@@ -858,7 +857,7 @@ func (j *jsiiProxy_AppUserSchemaProperty)SetArrayEnum(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AppUserSchemaProperty)SetArrayType(val *string) {
+func (j *jsiiProxy_AppUserSchemaProperty) SetArrayType(val *string) {
 	if err := j.validateSetArrayTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -869,7 +868,7 @@ func (j *jsiiProxy_AppUserSchemaProperty)SetArrayType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppUserSchemaProperty)SetConnection(val interface{}) {
+func (j *jsiiProxy_AppUserSchemaProperty) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -880,7 +879,7 @@ func (j *jsiiProxy_AppUserSchemaProperty)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppUserSchemaProperty)SetCount(val interface{}) {
+func (j *jsiiProxy_AppUserSchemaProperty) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -891,7 +890,7 @@ func (j *jsiiProxy_AppUserSchemaProperty)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppUserSchemaProperty)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_AppUserSchemaProperty) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -899,7 +898,7 @@ func (j *jsiiProxy_AppUserSchemaProperty)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AppUserSchemaProperty)SetDescription(val *string) {
+func (j *jsiiProxy_AppUserSchemaProperty) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -910,7 +909,7 @@ func (j *jsiiProxy_AppUserSchemaProperty)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppUserSchemaProperty)SetEnum(val *[]*string) {
+func (j *jsiiProxy_AppUserSchemaProperty) SetEnum(val *[]*string) {
 	if err := j.validateSetEnumParameters(val); err != nil {
 		panic(err)
 	}
@@ -921,7 +920,7 @@ func (j *jsiiProxy_AppUserSchemaProperty)SetEnum(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AppUserSchemaProperty)SetExternalName(val *string) {
+func (j *jsiiProxy_AppUserSchemaProperty) SetExternalName(val *string) {
 	if err := j.validateSetExternalNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -932,7 +931,7 @@ func (j *jsiiProxy_AppUserSchemaProperty)SetExternalName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppUserSchemaProperty)SetExternalNamespace(val *string) {
+func (j *jsiiProxy_AppUserSchemaProperty) SetExternalNamespace(val *string) {
 	if err := j.validateSetExternalNamespaceParameters(val); err != nil {
 		panic(err)
 	}
@@ -943,7 +942,7 @@ func (j *jsiiProxy_AppUserSchemaProperty)SetExternalNamespace(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppUserSchemaProperty)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_AppUserSchemaProperty) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -951,7 +950,7 @@ func (j *jsiiProxy_AppUserSchemaProperty)SetForEach(val cdktf.ITerraformIterator
 	)
 }
 
-func (j *jsiiProxy_AppUserSchemaProperty)SetId(val *string) {
+func (j *jsiiProxy_AppUserSchemaProperty) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -962,7 +961,7 @@ func (j *jsiiProxy_AppUserSchemaProperty)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppUserSchemaProperty)SetIndex(val *string) {
+func (j *jsiiProxy_AppUserSchemaProperty) SetIndex(val *string) {
 	if err := j.validateSetIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -973,7 +972,7 @@ func (j *jsiiProxy_AppUserSchemaProperty)SetIndex(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppUserSchemaProperty)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_AppUserSchemaProperty) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -984,7 +983,7 @@ func (j *jsiiProxy_AppUserSchemaProperty)SetLifecycle(val *cdktf.TerraformResour
 	)
 }
 
-func (j *jsiiProxy_AppUserSchemaProperty)SetMaster(val *string) {
+func (j *jsiiProxy_AppUserSchemaProperty) SetMaster(val *string) {
 	if err := j.validateSetMasterParameters(val); err != nil {
 		panic(err)
 	}
@@ -995,7 +994,7 @@ func (j *jsiiProxy_AppUserSchemaProperty)SetMaster(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppUserSchemaProperty)SetMaxLength(val *float64) {
+func (j *jsiiProxy_AppUserSchemaProperty) SetMaxLength(val *float64) {
 	if err := j.validateSetMaxLengthParameters(val); err != nil {
 		panic(err)
 	}
@@ -1006,7 +1005,7 @@ func (j *jsiiProxy_AppUserSchemaProperty)SetMaxLength(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_AppUserSchemaProperty)SetMinLength(val *float64) {
+func (j *jsiiProxy_AppUserSchemaProperty) SetMinLength(val *float64) {
 	if err := j.validateSetMinLengthParameters(val); err != nil {
 		panic(err)
 	}
@@ -1017,7 +1016,7 @@ func (j *jsiiProxy_AppUserSchemaProperty)SetMinLength(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_AppUserSchemaProperty)SetPermissions(val *string) {
+func (j *jsiiProxy_AppUserSchemaProperty) SetPermissions(val *string) {
 	if err := j.validateSetPermissionsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1028,7 +1027,7 @@ func (j *jsiiProxy_AppUserSchemaProperty)SetPermissions(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppUserSchemaProperty)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_AppUserSchemaProperty) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1036,7 +1035,7 @@ func (j *jsiiProxy_AppUserSchemaProperty)SetProvider(val cdktf.TerraformProvider
 	)
 }
 
-func (j *jsiiProxy_AppUserSchemaProperty)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_AppUserSchemaProperty) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1047,7 +1046,7 @@ func (j *jsiiProxy_AppUserSchemaProperty)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppUserSchemaProperty)SetRequired(val interface{}) {
+func (j *jsiiProxy_AppUserSchemaProperty) SetRequired(val any) {
 	if err := j.validateSetRequiredParameters(val); err != nil {
 		panic(err)
 	}
@@ -1058,7 +1057,7 @@ func (j *jsiiProxy_AppUserSchemaProperty)SetRequired(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppUserSchemaProperty)SetScope(val *string) {
+func (j *jsiiProxy_AppUserSchemaProperty) SetScope(val *string) {
 	if err := j.validateSetScopeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1069,7 +1068,7 @@ func (j *jsiiProxy_AppUserSchemaProperty)SetScope(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppUserSchemaProperty)SetTitle(val *string) {
+func (j *jsiiProxy_AppUserSchemaProperty) SetTitle(val *string) {
 	if err := j.validateSetTitleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1080,7 +1079,7 @@ func (j *jsiiProxy_AppUserSchemaProperty)SetTitle(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppUserSchemaProperty)SetType(val *string) {
+func (j *jsiiProxy_AppUserSchemaProperty) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1091,7 +1090,7 @@ func (j *jsiiProxy_AppUserSchemaProperty)SetType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppUserSchemaProperty)SetUnion(val interface{}) {
+func (j *jsiiProxy_AppUserSchemaProperty) SetUnion(val any) {
 	if err := j.validateSetUnionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1102,7 +1101,7 @@ func (j *jsiiProxy_AppUserSchemaProperty)SetUnion(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppUserSchemaProperty)SetUnique(val *string) {
+func (j *jsiiProxy_AppUserSchemaProperty) SetUnique(val *string) {
 	if err := j.validateSetUniqueParameters(val); err != nil {
 		panic(err)
 	}
@@ -1113,7 +1112,7 @@ func (j *jsiiProxy_AppUserSchemaProperty)SetUnique(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppUserSchemaProperty)SetUserType(val *string) {
+func (j *jsiiProxy_AppUserSchemaProperty) SetUserType(val *string) {
 	if err := j.validateSetUserTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1136,7 +1135,7 @@ func AppUserSchemaProperty_GenerateConfigForImport(scope constructs.Construct, i
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.appUserSchemaProperty.AppUserSchemaProperty",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1160,7 +1159,7 @@ func AppUserSchemaProperty_GenerateConfigForImport(scope constructs.Construct, i
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func AppUserSchemaProperty_IsConstruct(x interface{}) *bool {
+func AppUserSchemaProperty_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAppUserSchemaProperty_IsConstructParameters(x); err != nil {
@@ -1171,7 +1170,7 @@ func AppUserSchemaProperty_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.appUserSchemaProperty.AppUserSchemaProperty",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1179,7 +1178,7 @@ func AppUserSchemaProperty_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func AppUserSchemaProperty_IsTerraformElement(x interface{}) *bool {
+func AppUserSchemaProperty_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAppUserSchemaProperty_IsTerraformElementParameters(x); err != nil {
@@ -1190,7 +1189,7 @@ func AppUserSchemaProperty_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.appUserSchemaProperty.AppUserSchemaProperty",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1198,7 +1197,7 @@ func AppUserSchemaProperty_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func AppUserSchemaProperty_IsTerraformResource(x interface{}) *bool {
+func AppUserSchemaProperty_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAppUserSchemaProperty_IsTerraformResourceParameters(x); err != nil {
@@ -1209,7 +1208,7 @@ func AppUserSchemaProperty_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.appUserSchemaProperty.AppUserSchemaProperty",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1234,31 +1233,31 @@ func (a *jsiiProxy_AppUserSchemaProperty) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (a *jsiiProxy_AppUserSchemaProperty) AddOverride(path *string, value interface{}) {
+func (a *jsiiProxy_AppUserSchemaProperty) AddOverride(path *string, value any) {
 	if err := a.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (a *jsiiProxy_AppUserSchemaProperty) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AppUserSchemaProperty) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1274,7 +1273,7 @@ func (a *jsiiProxy_AppUserSchemaProperty) GetBooleanAttribute(terraformAttribute
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1290,7 +1289,7 @@ func (a *jsiiProxy_AppUserSchemaProperty) GetBooleanMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1306,7 +1305,7 @@ func (a *jsiiProxy_AppUserSchemaProperty) GetListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1322,7 +1321,7 @@ func (a *jsiiProxy_AppUserSchemaProperty) GetNumberAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1338,7 +1337,7 @@ func (a *jsiiProxy_AppUserSchemaProperty) GetNumberListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1354,7 +1353,7 @@ func (a *jsiiProxy_AppUserSchemaProperty) GetNumberMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1370,7 +1369,7 @@ func (a *jsiiProxy_AppUserSchemaProperty) GetStringAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1386,15 +1385,15 @@ func (a *jsiiProxy_AppUserSchemaProperty) GetStringMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_AppUserSchemaProperty) HasResourceMove() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AppUserSchemaProperty) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1413,7 +1412,7 @@ func (a *jsiiProxy_AppUserSchemaProperty) ImportFrom(id *string, provider cdktf.
 	_jsii_.InvokeVoid(
 		a,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1426,7 +1425,7 @@ func (a *jsiiProxy_AppUserSchemaProperty) InterpolationForAttribute(terraformAtt
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1440,18 +1439,18 @@ func (a *jsiiProxy_AppUserSchemaProperty) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (a *jsiiProxy_AppUserSchemaProperty) MoveTo(moveTarget *string, index interface{}) {
+func (a *jsiiProxy_AppUserSchemaProperty) MoveTo(moveTarget *string, index any) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1462,7 +1461,7 @@ func (a *jsiiProxy_AppUserSchemaProperty) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1473,29 +1472,29 @@ func (a *jsiiProxy_AppUserSchemaProperty) OverrideLogicalId(newLogicalId *string
 	_jsii_.InvokeVoid(
 		a,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (a *jsiiProxy_AppUserSchemaProperty) PutArrayOneOf(value interface{}) {
+func (a *jsiiProxy_AppUserSchemaProperty) PutArrayOneOf(value any) {
 	if err := a.validatePutArrayOneOfParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"putArrayOneOf",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (a *jsiiProxy_AppUserSchemaProperty) PutOneOf(value interface{}) {
+func (a *jsiiProxy_AppUserSchemaProperty) PutOneOf(value any) {
 	if err := a.validatePutOneOfParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"putOneOf",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1651,8 +1650,8 @@ func (a *jsiiProxy_AppUserSchemaProperty) ResetUserType() {
 	)
 }
 
-func (a *jsiiProxy_AppUserSchemaProperty) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AppUserSchemaProperty) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1664,8 +1663,8 @@ func (a *jsiiProxy_AppUserSchemaProperty) SynthesizeAttributes() *map[string]int
 	return returns
 }
 
-func (a *jsiiProxy_AppUserSchemaProperty) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AppUserSchemaProperty) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1677,8 +1676,8 @@ func (a *jsiiProxy_AppUserSchemaProperty) SynthesizeHclAttributes() *map[string]
 	return returns
 }
 
-func (a *jsiiProxy_AppUserSchemaProperty) ToHclTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AppUserSchemaProperty) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1690,8 +1689,8 @@ func (a *jsiiProxy_AppUserSchemaProperty) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_AppUserSchemaProperty) ToMetadata() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AppUserSchemaProperty) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1716,8 +1715,8 @@ func (a *jsiiProxy_AppUserSchemaProperty) ToString() *string {
 	return returns
 }
 
-func (a *jsiiProxy_AppUserSchemaProperty) ToTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AppUserSchemaProperty) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1728,4 +1727,3 @@ func (a *jsiiProxy_AppUserSchemaProperty) ToTerraform() interface{} {
 
 	return returns
 }
-

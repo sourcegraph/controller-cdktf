@@ -15,15 +15,15 @@ type PolicyDeviceAssuranceWindows interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreatedBy() *string
 	CreatedDate() *string
 	// Experimental.
@@ -62,35 +62,35 @@ type PolicyDeviceAssuranceWindows interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ScreenlockType() *[]*string
 	SetScreenlockType(val *[]*string)
 	ScreenlockTypeInput() *[]*string
-	SecureHardwarePresent() interface{}
-	SetSecureHardwarePresent(val interface{})
-	SecureHardwarePresentInput() interface{}
+	SecureHardwarePresent() any
+	SetSecureHardwarePresent(val any)
+	SecureHardwarePresentInput() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
-	ThirdPartySignalProviders() interface{}
-	SetThirdPartySignalProviders(val interface{})
-	ThirdPartySignalProvidersInput() interface{}
+	ThirdPartySignalProviders() any
+	SetThirdPartySignalProviders(val any)
+	ThirdPartySignalProvidersInput() any
 	TpspBrowserVersion() *string
 	SetTpspBrowserVersion(val *string)
 	TpspBrowserVersionInput() *string
-	TpspBuiltinDnsClientEnabled() interface{}
-	SetTpspBuiltinDnsClientEnabled(val interface{})
-	TpspBuiltinDnsClientEnabledInput() interface{}
-	TpspChromeRemoteDesktopAppBlocked() interface{}
-	SetTpspChromeRemoteDesktopAppBlocked(val interface{})
-	TpspChromeRemoteDesktopAppBlockedInput() interface{}
+	TpspBuiltinDnsClientEnabled() any
+	SetTpspBuiltinDnsClientEnabled(val any)
+	TpspBuiltinDnsClientEnabledInput() any
+	TpspChromeRemoteDesktopAppBlocked() any
+	SetTpspChromeRemoteDesktopAppBlocked(val any)
+	TpspChromeRemoteDesktopAppBlockedInput() any
 	TpspCrowdStrikeAgentId() *string
 	SetTpspCrowdStrikeAgentId(val *string)
 	TpspCrowdStrikeAgentIdInput() *string
@@ -100,39 +100,39 @@ type PolicyDeviceAssuranceWindows interface {
 	TpspDeviceEnrollmentDomain() *string
 	SetTpspDeviceEnrollmentDomain(val *string)
 	TpspDeviceEnrollmentDomainInput() *string
-	TpspDiskEncrypted() interface{}
-	SetTpspDiskEncrypted(val interface{})
-	TpspDiskEncryptedInput() interface{}
+	TpspDiskEncrypted() any
+	SetTpspDiskEncrypted(val any)
+	TpspDiskEncryptedInput() any
 	TpspKeyTrustLevel() *string
 	SetTpspKeyTrustLevel(val *string)
 	TpspKeyTrustLevelInput() *string
-	TpspOsFirewall() interface{}
-	SetTpspOsFirewall(val interface{})
-	TpspOsFirewallInput() interface{}
+	TpspOsFirewall() any
+	SetTpspOsFirewall(val any)
+	TpspOsFirewallInput() any
 	TpspOsVersion() *string
 	SetTpspOsVersion(val *string)
 	TpspOsVersionInput() *string
 	TpspPasswordProctectionWarningTrigger() *string
 	SetTpspPasswordProctectionWarningTrigger(val *string)
 	TpspPasswordProctectionWarningTriggerInput() *string
-	TpspRealtimeUrlCheckMode() interface{}
-	SetTpspRealtimeUrlCheckMode(val interface{})
-	TpspRealtimeUrlCheckModeInput() interface{}
+	TpspRealtimeUrlCheckMode() any
+	SetTpspRealtimeUrlCheckMode(val any)
+	TpspRealtimeUrlCheckModeInput() any
 	TpspSafeBrowsingProtectionLevel() *string
 	SetTpspSafeBrowsingProtectionLevel(val *string)
 	TpspSafeBrowsingProtectionLevelInput() *string
-	TpspScreenLockSecured() interface{}
-	SetTpspScreenLockSecured(val interface{})
-	TpspScreenLockSecuredInput() interface{}
-	TpspSecureBootEnabled() interface{}
-	SetTpspSecureBootEnabled(val interface{})
-	TpspSecureBootEnabledInput() interface{}
-	TpspSiteIsolationEnabled() interface{}
-	SetTpspSiteIsolationEnabled(val interface{})
-	TpspSiteIsolationEnabledInput() interface{}
-	TpspThirdPartyBlockingEnabled() interface{}
-	SetTpspThirdPartyBlockingEnabled(val interface{})
-	TpspThirdPartyBlockingEnabledInput() interface{}
+	TpspScreenLockSecured() any
+	SetTpspScreenLockSecured(val any)
+	TpspScreenLockSecuredInput() any
+	TpspSecureBootEnabled() any
+	SetTpspSecureBootEnabled(val any)
+	TpspSecureBootEnabledInput() any
+	TpspSiteIsolationEnabled() any
+	SetTpspSiteIsolationEnabled(val any)
+	TpspSiteIsolationEnabledInput() any
+	TpspThirdPartyBlockingEnabled() any
+	SetTpspThirdPartyBlockingEnabled(val any)
+	TpspThirdPartyBlockingEnabledInput() any
 	TpspWindowsMachineDomain() *string
 	SetTpspWindowsMachineDomain(val *string)
 	TpspWindowsMachineDomainInput() *string
@@ -143,9 +143,9 @@ type PolicyDeviceAssuranceWindows interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -163,7 +163,7 @@ type PolicyDeviceAssuranceWindows interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -175,7 +175,7 @@ type PolicyDeviceAssuranceWindows interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -209,17 +209,17 @@ type PolicyDeviceAssuranceWindows interface {
 	ResetTpspThirdPartyBlockingEnabled()
 	ResetTpspWindowsMachineDomain()
 	ResetTpspWindowsUserDomain()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for PolicyDeviceAssuranceWindows
@@ -237,8 +237,8 @@ func (j *jsiiProxy_PolicyDeviceAssuranceWindows) CdktfStack() cdktf.TerraformSta
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceWindows) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyDeviceAssuranceWindows) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -247,8 +247,8 @@ func (j *jsiiProxy_PolicyDeviceAssuranceWindows) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceWindows) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_PolicyDeviceAssuranceWindows) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -257,8 +257,8 @@ func (j *jsiiProxy_PolicyDeviceAssuranceWindows) ConstructNodeMetadata() *map[st
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceWindows) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyDeviceAssuranceWindows) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -457,8 +457,8 @@ func (j *jsiiProxy_PolicyDeviceAssuranceWindows) Provider() cdktf.TerraformProvi
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceWindows) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_PolicyDeviceAssuranceWindows) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -467,8 +467,8 @@ func (j *jsiiProxy_PolicyDeviceAssuranceWindows) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceWindows) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyDeviceAssuranceWindows) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -497,8 +497,8 @@ func (j *jsiiProxy_PolicyDeviceAssuranceWindows) ScreenlockTypeInput() *[]*strin
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceWindows) SecureHardwarePresent() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyDeviceAssuranceWindows) SecureHardwarePresent() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"secureHardwarePresent",
@@ -507,8 +507,8 @@ func (j *jsiiProxy_PolicyDeviceAssuranceWindows) SecureHardwarePresent() interfa
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceWindows) SecureHardwarePresentInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyDeviceAssuranceWindows) SecureHardwarePresentInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"secureHardwarePresentInput",
@@ -527,8 +527,8 @@ func (j *jsiiProxy_PolicyDeviceAssuranceWindows) TerraformGeneratorMetadata() *c
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceWindows) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_PolicyDeviceAssuranceWindows) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -547,8 +547,8 @@ func (j *jsiiProxy_PolicyDeviceAssuranceWindows) TerraformResourceType() *string
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceWindows) ThirdPartySignalProviders() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyDeviceAssuranceWindows) ThirdPartySignalProviders() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"thirdPartySignalProviders",
@@ -557,8 +557,8 @@ func (j *jsiiProxy_PolicyDeviceAssuranceWindows) ThirdPartySignalProviders() int
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceWindows) ThirdPartySignalProvidersInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyDeviceAssuranceWindows) ThirdPartySignalProvidersInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"thirdPartySignalProvidersInput",
@@ -587,8 +587,8 @@ func (j *jsiiProxy_PolicyDeviceAssuranceWindows) TpspBrowserVersionInput() *stri
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceWindows) TpspBuiltinDnsClientEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyDeviceAssuranceWindows) TpspBuiltinDnsClientEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"tpspBuiltinDnsClientEnabled",
@@ -597,8 +597,8 @@ func (j *jsiiProxy_PolicyDeviceAssuranceWindows) TpspBuiltinDnsClientEnabled() i
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceWindows) TpspBuiltinDnsClientEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyDeviceAssuranceWindows) TpspBuiltinDnsClientEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"tpspBuiltinDnsClientEnabledInput",
@@ -607,8 +607,8 @@ func (j *jsiiProxy_PolicyDeviceAssuranceWindows) TpspBuiltinDnsClientEnabledInpu
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceWindows) TpspChromeRemoteDesktopAppBlocked() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyDeviceAssuranceWindows) TpspChromeRemoteDesktopAppBlocked() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"tpspChromeRemoteDesktopAppBlocked",
@@ -617,8 +617,8 @@ func (j *jsiiProxy_PolicyDeviceAssuranceWindows) TpspChromeRemoteDesktopAppBlock
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceWindows) TpspChromeRemoteDesktopAppBlockedInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyDeviceAssuranceWindows) TpspChromeRemoteDesktopAppBlockedInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"tpspChromeRemoteDesktopAppBlockedInput",
@@ -687,8 +687,8 @@ func (j *jsiiProxy_PolicyDeviceAssuranceWindows) TpspDeviceEnrollmentDomainInput
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceWindows) TpspDiskEncrypted() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyDeviceAssuranceWindows) TpspDiskEncrypted() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"tpspDiskEncrypted",
@@ -697,8 +697,8 @@ func (j *jsiiProxy_PolicyDeviceAssuranceWindows) TpspDiskEncrypted() interface{}
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceWindows) TpspDiskEncryptedInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyDeviceAssuranceWindows) TpspDiskEncryptedInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"tpspDiskEncryptedInput",
@@ -727,8 +727,8 @@ func (j *jsiiProxy_PolicyDeviceAssuranceWindows) TpspKeyTrustLevelInput() *strin
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceWindows) TpspOsFirewall() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyDeviceAssuranceWindows) TpspOsFirewall() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"tpspOsFirewall",
@@ -737,8 +737,8 @@ func (j *jsiiProxy_PolicyDeviceAssuranceWindows) TpspOsFirewall() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceWindows) TpspOsFirewallInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyDeviceAssuranceWindows) TpspOsFirewallInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"tpspOsFirewallInput",
@@ -787,8 +787,8 @@ func (j *jsiiProxy_PolicyDeviceAssuranceWindows) TpspPasswordProctectionWarningT
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceWindows) TpspRealtimeUrlCheckMode() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyDeviceAssuranceWindows) TpspRealtimeUrlCheckMode() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"tpspRealtimeUrlCheckMode",
@@ -797,8 +797,8 @@ func (j *jsiiProxy_PolicyDeviceAssuranceWindows) TpspRealtimeUrlCheckMode() inte
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceWindows) TpspRealtimeUrlCheckModeInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyDeviceAssuranceWindows) TpspRealtimeUrlCheckModeInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"tpspRealtimeUrlCheckModeInput",
@@ -827,8 +827,8 @@ func (j *jsiiProxy_PolicyDeviceAssuranceWindows) TpspSafeBrowsingProtectionLevel
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceWindows) TpspScreenLockSecured() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyDeviceAssuranceWindows) TpspScreenLockSecured() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"tpspScreenLockSecured",
@@ -837,8 +837,8 @@ func (j *jsiiProxy_PolicyDeviceAssuranceWindows) TpspScreenLockSecured() interfa
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceWindows) TpspScreenLockSecuredInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyDeviceAssuranceWindows) TpspScreenLockSecuredInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"tpspScreenLockSecuredInput",
@@ -847,8 +847,8 @@ func (j *jsiiProxy_PolicyDeviceAssuranceWindows) TpspScreenLockSecuredInput() in
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceWindows) TpspSecureBootEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyDeviceAssuranceWindows) TpspSecureBootEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"tpspSecureBootEnabled",
@@ -857,8 +857,8 @@ func (j *jsiiProxy_PolicyDeviceAssuranceWindows) TpspSecureBootEnabled() interfa
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceWindows) TpspSecureBootEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyDeviceAssuranceWindows) TpspSecureBootEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"tpspSecureBootEnabledInput",
@@ -867,8 +867,8 @@ func (j *jsiiProxy_PolicyDeviceAssuranceWindows) TpspSecureBootEnabledInput() in
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceWindows) TpspSiteIsolationEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyDeviceAssuranceWindows) TpspSiteIsolationEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"tpspSiteIsolationEnabled",
@@ -877,8 +877,8 @@ func (j *jsiiProxy_PolicyDeviceAssuranceWindows) TpspSiteIsolationEnabled() inte
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceWindows) TpspSiteIsolationEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyDeviceAssuranceWindows) TpspSiteIsolationEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"tpspSiteIsolationEnabledInput",
@@ -887,8 +887,8 @@ func (j *jsiiProxy_PolicyDeviceAssuranceWindows) TpspSiteIsolationEnabledInput()
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceWindows) TpspThirdPartyBlockingEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyDeviceAssuranceWindows) TpspThirdPartyBlockingEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"tpspThirdPartyBlockingEnabled",
@@ -897,8 +897,8 @@ func (j *jsiiProxy_PolicyDeviceAssuranceWindows) TpspThirdPartyBlockingEnabled()
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceWindows) TpspThirdPartyBlockingEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyDeviceAssuranceWindows) TpspThirdPartyBlockingEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"tpspThirdPartyBlockingEnabledInput",
@@ -947,7 +947,6 @@ func (j *jsiiProxy_PolicyDeviceAssuranceWindows) TpspWindowsUserDomainInput() *s
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_device_assurance_windows okta_policy_device_assurance_windows} Resource.
 func NewPolicyDeviceAssuranceWindows(scope constructs.Construct, id *string, config *PolicyDeviceAssuranceWindowsConfig) PolicyDeviceAssuranceWindows {
 	_init_.Initialize()
@@ -959,7 +958,7 @@ func NewPolicyDeviceAssuranceWindows(scope constructs.Construct, id *string, con
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.policyDeviceAssuranceWindows.PolicyDeviceAssuranceWindows",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -972,12 +971,12 @@ func NewPolicyDeviceAssuranceWindows_Override(p PolicyDeviceAssuranceWindows, sc
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.policyDeviceAssuranceWindows.PolicyDeviceAssuranceWindows",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceWindows)SetConnection(val interface{}) {
+func (j *jsiiProxy_PolicyDeviceAssuranceWindows) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -988,7 +987,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceWindows)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceWindows)SetCount(val interface{}) {
+func (j *jsiiProxy_PolicyDeviceAssuranceWindows) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -999,7 +998,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceWindows)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceWindows)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_PolicyDeviceAssuranceWindows) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -1007,7 +1006,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceWindows)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceWindows)SetDiskEncryptionType(val *[]*string) {
+func (j *jsiiProxy_PolicyDeviceAssuranceWindows) SetDiskEncryptionType(val *[]*string) {
 	if err := j.validateSetDiskEncryptionTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1018,7 +1017,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceWindows)SetDiskEncryptionType(val *[]*st
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceWindows)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_PolicyDeviceAssuranceWindows) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1026,7 +1025,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceWindows)SetForEach(val cdktf.ITerraformI
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceWindows)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_PolicyDeviceAssuranceWindows) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1037,7 +1036,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceWindows)SetLifecycle(val *cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceWindows)SetName(val *string) {
+func (j *jsiiProxy_PolicyDeviceAssuranceWindows) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1048,7 +1047,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceWindows)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceWindows)SetOsVersion(val *string) {
+func (j *jsiiProxy_PolicyDeviceAssuranceWindows) SetOsVersion(val *string) {
 	if err := j.validateSetOsVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1059,7 +1058,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceWindows)SetOsVersion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceWindows)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_PolicyDeviceAssuranceWindows) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1067,7 +1066,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceWindows)SetProvider(val cdktf.TerraformP
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceWindows)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_PolicyDeviceAssuranceWindows) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1078,7 +1077,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceWindows)SetProvisioners(val *[]interface
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceWindows)SetScreenlockType(val *[]*string) {
+func (j *jsiiProxy_PolicyDeviceAssuranceWindows) SetScreenlockType(val *[]*string) {
 	if err := j.validateSetScreenlockTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1089,7 +1088,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceWindows)SetScreenlockType(val *[]*string
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceWindows)SetSecureHardwarePresent(val interface{}) {
+func (j *jsiiProxy_PolicyDeviceAssuranceWindows) SetSecureHardwarePresent(val any) {
 	if err := j.validateSetSecureHardwarePresentParameters(val); err != nil {
 		panic(err)
 	}
@@ -1100,7 +1099,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceWindows)SetSecureHardwarePresent(val int
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceWindows)SetThirdPartySignalProviders(val interface{}) {
+func (j *jsiiProxy_PolicyDeviceAssuranceWindows) SetThirdPartySignalProviders(val any) {
 	if err := j.validateSetThirdPartySignalProvidersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1111,7 +1110,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceWindows)SetThirdPartySignalProviders(val
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceWindows)SetTpspBrowserVersion(val *string) {
+func (j *jsiiProxy_PolicyDeviceAssuranceWindows) SetTpspBrowserVersion(val *string) {
 	if err := j.validateSetTpspBrowserVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1122,7 +1121,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceWindows)SetTpspBrowserVersion(val *strin
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceWindows)SetTpspBuiltinDnsClientEnabled(val interface{}) {
+func (j *jsiiProxy_PolicyDeviceAssuranceWindows) SetTpspBuiltinDnsClientEnabled(val any) {
 	if err := j.validateSetTpspBuiltinDnsClientEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -1133,7 +1132,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceWindows)SetTpspBuiltinDnsClientEnabled(v
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceWindows)SetTpspChromeRemoteDesktopAppBlocked(val interface{}) {
+func (j *jsiiProxy_PolicyDeviceAssuranceWindows) SetTpspChromeRemoteDesktopAppBlocked(val any) {
 	if err := j.validateSetTpspChromeRemoteDesktopAppBlockedParameters(val); err != nil {
 		panic(err)
 	}
@@ -1144,7 +1143,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceWindows)SetTpspChromeRemoteDesktopAppBlo
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceWindows)SetTpspCrowdStrikeAgentId(val *string) {
+func (j *jsiiProxy_PolicyDeviceAssuranceWindows) SetTpspCrowdStrikeAgentId(val *string) {
 	if err := j.validateSetTpspCrowdStrikeAgentIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1155,7 +1154,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceWindows)SetTpspCrowdStrikeAgentId(val *s
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceWindows)SetTpspCrowdStrikeCustomerId(val *string) {
+func (j *jsiiProxy_PolicyDeviceAssuranceWindows) SetTpspCrowdStrikeCustomerId(val *string) {
 	if err := j.validateSetTpspCrowdStrikeCustomerIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1166,7 +1165,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceWindows)SetTpspCrowdStrikeCustomerId(val
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceWindows)SetTpspDeviceEnrollmentDomain(val *string) {
+func (j *jsiiProxy_PolicyDeviceAssuranceWindows) SetTpspDeviceEnrollmentDomain(val *string) {
 	if err := j.validateSetTpspDeviceEnrollmentDomainParameters(val); err != nil {
 		panic(err)
 	}
@@ -1177,7 +1176,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceWindows)SetTpspDeviceEnrollmentDomain(va
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceWindows)SetTpspDiskEncrypted(val interface{}) {
+func (j *jsiiProxy_PolicyDeviceAssuranceWindows) SetTpspDiskEncrypted(val any) {
 	if err := j.validateSetTpspDiskEncryptedParameters(val); err != nil {
 		panic(err)
 	}
@@ -1188,7 +1187,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceWindows)SetTpspDiskEncrypted(val interfa
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceWindows)SetTpspKeyTrustLevel(val *string) {
+func (j *jsiiProxy_PolicyDeviceAssuranceWindows) SetTpspKeyTrustLevel(val *string) {
 	if err := j.validateSetTpspKeyTrustLevelParameters(val); err != nil {
 		panic(err)
 	}
@@ -1199,7 +1198,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceWindows)SetTpspKeyTrustLevel(val *string
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceWindows)SetTpspOsFirewall(val interface{}) {
+func (j *jsiiProxy_PolicyDeviceAssuranceWindows) SetTpspOsFirewall(val any) {
 	if err := j.validateSetTpspOsFirewallParameters(val); err != nil {
 		panic(err)
 	}
@@ -1210,7 +1209,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceWindows)SetTpspOsFirewall(val interface{
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceWindows)SetTpspOsVersion(val *string) {
+func (j *jsiiProxy_PolicyDeviceAssuranceWindows) SetTpspOsVersion(val *string) {
 	if err := j.validateSetTpspOsVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1221,7 +1220,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceWindows)SetTpspOsVersion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceWindows)SetTpspPasswordProctectionWarningTrigger(val *string) {
+func (j *jsiiProxy_PolicyDeviceAssuranceWindows) SetTpspPasswordProctectionWarningTrigger(val *string) {
 	if err := j.validateSetTpspPasswordProctectionWarningTriggerParameters(val); err != nil {
 		panic(err)
 	}
@@ -1232,7 +1231,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceWindows)SetTpspPasswordProctectionWarnin
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceWindows)SetTpspRealtimeUrlCheckMode(val interface{}) {
+func (j *jsiiProxy_PolicyDeviceAssuranceWindows) SetTpspRealtimeUrlCheckMode(val any) {
 	if err := j.validateSetTpspRealtimeUrlCheckModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1243,7 +1242,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceWindows)SetTpspRealtimeUrlCheckMode(val 
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceWindows)SetTpspSafeBrowsingProtectionLevel(val *string) {
+func (j *jsiiProxy_PolicyDeviceAssuranceWindows) SetTpspSafeBrowsingProtectionLevel(val *string) {
 	if err := j.validateSetTpspSafeBrowsingProtectionLevelParameters(val); err != nil {
 		panic(err)
 	}
@@ -1254,7 +1253,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceWindows)SetTpspSafeBrowsingProtectionLev
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceWindows)SetTpspScreenLockSecured(val interface{}) {
+func (j *jsiiProxy_PolicyDeviceAssuranceWindows) SetTpspScreenLockSecured(val any) {
 	if err := j.validateSetTpspScreenLockSecuredParameters(val); err != nil {
 		panic(err)
 	}
@@ -1265,7 +1264,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceWindows)SetTpspScreenLockSecured(val int
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceWindows)SetTpspSecureBootEnabled(val interface{}) {
+func (j *jsiiProxy_PolicyDeviceAssuranceWindows) SetTpspSecureBootEnabled(val any) {
 	if err := j.validateSetTpspSecureBootEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -1276,7 +1275,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceWindows)SetTpspSecureBootEnabled(val int
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceWindows)SetTpspSiteIsolationEnabled(val interface{}) {
+func (j *jsiiProxy_PolicyDeviceAssuranceWindows) SetTpspSiteIsolationEnabled(val any) {
 	if err := j.validateSetTpspSiteIsolationEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -1287,7 +1286,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceWindows)SetTpspSiteIsolationEnabled(val 
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceWindows)SetTpspThirdPartyBlockingEnabled(val interface{}) {
+func (j *jsiiProxy_PolicyDeviceAssuranceWindows) SetTpspThirdPartyBlockingEnabled(val any) {
 	if err := j.validateSetTpspThirdPartyBlockingEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -1298,7 +1297,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceWindows)SetTpspThirdPartyBlockingEnabled
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceWindows)SetTpspWindowsMachineDomain(val *string) {
+func (j *jsiiProxy_PolicyDeviceAssuranceWindows) SetTpspWindowsMachineDomain(val *string) {
 	if err := j.validateSetTpspWindowsMachineDomainParameters(val); err != nil {
 		panic(err)
 	}
@@ -1309,7 +1308,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceWindows)SetTpspWindowsMachineDomain(val 
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceWindows)SetTpspWindowsUserDomain(val *string) {
+func (j *jsiiProxy_PolicyDeviceAssuranceWindows) SetTpspWindowsUserDomain(val *string) {
 	if err := j.validateSetTpspWindowsUserDomainParameters(val); err != nil {
 		panic(err)
 	}
@@ -1332,7 +1331,7 @@ func PolicyDeviceAssuranceWindows_GenerateConfigForImport(scope constructs.Const
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.policyDeviceAssuranceWindows.PolicyDeviceAssuranceWindows",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1356,7 +1355,7 @@ func PolicyDeviceAssuranceWindows_GenerateConfigForImport(scope constructs.Const
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func PolicyDeviceAssuranceWindows_IsConstruct(x interface{}) *bool {
+func PolicyDeviceAssuranceWindows_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePolicyDeviceAssuranceWindows_IsConstructParameters(x); err != nil {
@@ -1367,7 +1366,7 @@ func PolicyDeviceAssuranceWindows_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.policyDeviceAssuranceWindows.PolicyDeviceAssuranceWindows",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1375,7 +1374,7 @@ func PolicyDeviceAssuranceWindows_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func PolicyDeviceAssuranceWindows_IsTerraformElement(x interface{}) *bool {
+func PolicyDeviceAssuranceWindows_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePolicyDeviceAssuranceWindows_IsTerraformElementParameters(x); err != nil {
@@ -1386,7 +1385,7 @@ func PolicyDeviceAssuranceWindows_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.policyDeviceAssuranceWindows.PolicyDeviceAssuranceWindows",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1394,7 +1393,7 @@ func PolicyDeviceAssuranceWindows_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func PolicyDeviceAssuranceWindows_IsTerraformResource(x interface{}) *bool {
+func PolicyDeviceAssuranceWindows_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePolicyDeviceAssuranceWindows_IsTerraformResourceParameters(x); err != nil {
@@ -1405,7 +1404,7 @@ func PolicyDeviceAssuranceWindows_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.policyDeviceAssuranceWindows.PolicyDeviceAssuranceWindows",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1430,31 +1429,31 @@ func (p *jsiiProxy_PolicyDeviceAssuranceWindows) AddMoveTarget(moveTarget *strin
 	_jsii_.InvokeVoid(
 		p,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (p *jsiiProxy_PolicyDeviceAssuranceWindows) AddOverride(path *string, value interface{}) {
+func (p *jsiiProxy_PolicyDeviceAssuranceWindows) AddOverride(path *string, value any) {
 	if err := p.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (p *jsiiProxy_PolicyDeviceAssuranceWindows) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_PolicyDeviceAssuranceWindows) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1470,7 +1469,7 @@ func (p *jsiiProxy_PolicyDeviceAssuranceWindows) GetBooleanAttribute(terraformAt
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1486,7 +1485,7 @@ func (p *jsiiProxy_PolicyDeviceAssuranceWindows) GetBooleanMapAttribute(terrafor
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1502,7 +1501,7 @@ func (p *jsiiProxy_PolicyDeviceAssuranceWindows) GetListAttribute(terraformAttri
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1518,7 +1517,7 @@ func (p *jsiiProxy_PolicyDeviceAssuranceWindows) GetNumberAttribute(terraformAtt
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1534,7 +1533,7 @@ func (p *jsiiProxy_PolicyDeviceAssuranceWindows) GetNumberListAttribute(terrafor
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1550,7 +1549,7 @@ func (p *jsiiProxy_PolicyDeviceAssuranceWindows) GetNumberMapAttribute(terraform
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1566,7 +1565,7 @@ func (p *jsiiProxy_PolicyDeviceAssuranceWindows) GetStringAttribute(terraformAtt
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1582,15 +1581,15 @@ func (p *jsiiProxy_PolicyDeviceAssuranceWindows) GetStringMapAttribute(terraform
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (p *jsiiProxy_PolicyDeviceAssuranceWindows) HasResourceMove() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PolicyDeviceAssuranceWindows) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1609,7 +1608,7 @@ func (p *jsiiProxy_PolicyDeviceAssuranceWindows) ImportFrom(id *string, provider
 	_jsii_.InvokeVoid(
 		p,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1622,7 +1621,7 @@ func (p *jsiiProxy_PolicyDeviceAssuranceWindows) InterpolationForAttribute(terra
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1636,18 +1635,18 @@ func (p *jsiiProxy_PolicyDeviceAssuranceWindows) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (p *jsiiProxy_PolicyDeviceAssuranceWindows) MoveTo(moveTarget *string, index interface{}) {
+func (p *jsiiProxy_PolicyDeviceAssuranceWindows) MoveTo(moveTarget *string, index any) {
 	if err := p.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1658,7 +1657,7 @@ func (p *jsiiProxy_PolicyDeviceAssuranceWindows) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1669,7 +1668,7 @@ func (p *jsiiProxy_PolicyDeviceAssuranceWindows) OverrideLogicalId(newLogicalId 
 	_jsii_.InvokeVoid(
 		p,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1873,8 +1872,8 @@ func (p *jsiiProxy_PolicyDeviceAssuranceWindows) ResetTpspWindowsUserDomain() {
 	)
 }
 
-func (p *jsiiProxy_PolicyDeviceAssuranceWindows) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (p *jsiiProxy_PolicyDeviceAssuranceWindows) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
@@ -1886,8 +1885,8 @@ func (p *jsiiProxy_PolicyDeviceAssuranceWindows) SynthesizeAttributes() *map[str
 	return returns
 }
 
-func (p *jsiiProxy_PolicyDeviceAssuranceWindows) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (p *jsiiProxy_PolicyDeviceAssuranceWindows) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
@@ -1899,8 +1898,8 @@ func (p *jsiiProxy_PolicyDeviceAssuranceWindows) SynthesizeHclAttributes() *map[
 	return returns
 }
 
-func (p *jsiiProxy_PolicyDeviceAssuranceWindows) ToHclTerraform() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PolicyDeviceAssuranceWindows) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1912,8 +1911,8 @@ func (p *jsiiProxy_PolicyDeviceAssuranceWindows) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (p *jsiiProxy_PolicyDeviceAssuranceWindows) ToMetadata() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PolicyDeviceAssuranceWindows) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1938,8 +1937,8 @@ func (p *jsiiProxy_PolicyDeviceAssuranceWindows) ToString() *string {
 	return returns
 }
 
-func (p *jsiiProxy_PolicyDeviceAssuranceWindows) ToTerraform() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PolicyDeviceAssuranceWindows) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1950,4 +1949,3 @@ func (p *jsiiProxy_PolicyDeviceAssuranceWindows) ToTerraform() interface{} {
 
 	return returns
 }
-

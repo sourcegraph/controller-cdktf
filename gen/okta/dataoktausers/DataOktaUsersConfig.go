@@ -6,9 +6,9 @@ import (
 
 type DataOktaUsersConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type DataOktaUsersConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Search operator used when joining multiple search clauses.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/users#compound_search_operator DataOktaUsers#compound_search_operator}
@@ -41,14 +41,13 @@ type DataOktaUsersConfig struct {
 	// Fetch group memberships for each user.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/users#include_groups DataOktaUsers#include_groups}
-	IncludeGroups interface{} `field:"optional" json:"includeGroups" yaml:"includeGroups"`
+	IncludeGroups any `field:"optional" json:"includeGroups" yaml:"includeGroups"`
 	// Fetch user roles for each user.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/users#include_roles DataOktaUsers#include_roles}
-	IncludeRoles interface{} `field:"optional" json:"includeRoles" yaml:"includeRoles"`
+	IncludeRoles any `field:"optional" json:"includeRoles" yaml:"includeRoles"`
 	// search block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/users#search DataOktaUsers#search}
-	Search interface{} `field:"optional" json:"search" yaml:"search"`
+	Search any `field:"optional" json:"search" yaml:"search"`
 }
-

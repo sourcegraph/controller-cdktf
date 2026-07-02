@@ -6,9 +6,9 @@ import (
 
 type ProfileMappingConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type ProfileMappingConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The source id of the mapping to manage.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/profile_mapping#source_id ProfileMapping#source_id}
@@ -33,13 +33,13 @@ type ProfileMappingConfig struct {
 	// 	~> **WARNING:** 'always_apply' makes use of an internal/private Okta API endpoint that could change without notice rendering this resource inoperable.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/profile_mapping#always_apply ProfileMapping#always_apply}
-	AlwaysApply interface{} `field:"optional" json:"alwaysApply" yaml:"alwaysApply"`
+	AlwaysApply any `field:"optional" json:"alwaysApply" yaml:"alwaysApply"`
 	// When turned on this flag will trigger the provider to delete mapping properties that are not defined in config.
 	//
 	// By default, we do not delete missing properties.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/profile_mapping#delete_when_absent ProfileMapping#delete_when_absent}
-	DeleteWhenAbsent interface{} `field:"optional" json:"deleteWhenAbsent" yaml:"deleteWhenAbsent"`
+	DeleteWhenAbsent any `field:"optional" json:"deleteWhenAbsent" yaml:"deleteWhenAbsent"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/profile_mapping#id ProfileMapping#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -48,6 +48,5 @@ type ProfileMappingConfig struct {
 	// mappings block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/profile_mapping#mappings ProfileMapping#mappings}
-	Mappings interface{} `field:"optional" json:"mappings" yaml:"mappings"`
+	Mappings any `field:"optional" json:"mappings" yaml:"mappings"`
 }
-

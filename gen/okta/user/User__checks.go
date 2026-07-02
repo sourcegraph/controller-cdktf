@@ -19,7 +19,7 @@ func (u *jsiiProxy_User) validateAddMoveTargetParameters(moveTarget *string) err
 	return nil
 }
 
-func (u *jsiiProxy_User) validateAddOverrideParameters(path *string, value interface{}) error {
+func (u *jsiiProxy_User) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (u *jsiiProxy_User) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
 
-func (u *jsiiProxy_User) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (u *jsiiProxy_User) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateUser_GenerateConfigForImportParameters(scope constructs.Construct, 
 	return nil
 }
 
-func validateUser_IsConstructParameters(x interface{}) error {
+func validateUser_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateUser_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateUser_IsTerraformElementParameters(x interface{}) error {
+func validateUser_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateUser_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateUser_IsTerraformResourceParameters(x interface{}) error {
+func validateUser_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_User) validateSetCityParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_User) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_User) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -304,7 +304,7 @@ func (j *jsiiProxy_User) validateSetCostCenterParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_User) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_User) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -425,7 +425,7 @@ func (j *jsiiProxy_User) validateSetEmployeeNumberParameters(val *string) error 
 	return nil
 }
 
-func (j *jsiiProxy_User) validateSetExpirePasswordOnCreateParameters(val interface{}) error {
+func (j *jsiiProxy_User) validateSetExpirePasswordOnCreateParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -613,7 +613,7 @@ func (j *jsiiProxy_User) validateSetProfileUrlParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_User) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_User) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -683,7 +683,7 @@ func (j *jsiiProxy_User) validateSetSecondEmailParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_User) validateSetSkipRolesParameters(val interface{}) error {
+func (j *jsiiProxy_User) validateSetSkipRolesParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -777,4 +777,3 @@ func validateNewUserParameters(scope constructs.Construct, id *string, config *U
 
 	return nil
 }
-

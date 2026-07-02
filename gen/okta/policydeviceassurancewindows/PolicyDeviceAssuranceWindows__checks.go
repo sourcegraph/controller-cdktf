@@ -19,7 +19,7 @@ func (p *jsiiProxy_PolicyDeviceAssuranceWindows) validateAddMoveTargetParameters
 	return nil
 }
 
-func (p *jsiiProxy_PolicyDeviceAssuranceWindows) validateAddOverrideParameters(path *string, value interface{}) error {
+func (p *jsiiProxy_PolicyDeviceAssuranceWindows) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (p *jsiiProxy_PolicyDeviceAssuranceWindows) validateMoveFromIdParameters(id
 	return nil
 }
 
-func (p *jsiiProxy_PolicyDeviceAssuranceWindows) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (p *jsiiProxy_PolicyDeviceAssuranceWindows) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validatePolicyDeviceAssuranceWindows_GenerateConfigForImportParameters(scop
 	return nil
 }
 
-func validatePolicyDeviceAssuranceWindows_IsConstructParameters(x interface{}) error {
+func validatePolicyDeviceAssuranceWindows_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validatePolicyDeviceAssuranceWindows_IsConstructParameters(x interface{}) e
 	return nil
 }
 
-func validatePolicyDeviceAssuranceWindows_IsTerraformElementParameters(x interface{}) error {
+func validatePolicyDeviceAssuranceWindows_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validatePolicyDeviceAssuranceWindows_IsTerraformElementParameters(x interfa
 	return nil
 }
 
-func validatePolicyDeviceAssuranceWindows_IsTerraformResourceParameters(x interface{}) error {
+func validatePolicyDeviceAssuranceWindows_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validatePolicyDeviceAssuranceWindows_IsTerraformResourceParameters(x interf
 	return nil
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceWindows) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_PolicyDeviceAssuranceWindows) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceWindows) validateSetConnectionParameters
 	return nil
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceWindows) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_PolicyDeviceAssuranceWindows) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -366,7 +366,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceWindows) validateSetOsVersionParameters(
 	return nil
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceWindows) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_PolicyDeviceAssuranceWindows) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -420,7 +420,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceWindows) validateSetScreenlockTypeParame
 	return nil
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceWindows) validateSetSecureHardwarePresentParameters(val interface{}) error {
+func (j *jsiiProxy_PolicyDeviceAssuranceWindows) validateSetSecureHardwarePresentParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -440,7 +440,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceWindows) validateSetSecureHardwarePresen
 	return nil
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceWindows) validateSetThirdPartySignalProvidersParameters(val interface{}) error {
+func (j *jsiiProxy_PolicyDeviceAssuranceWindows) validateSetThirdPartySignalProvidersParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -468,7 +468,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceWindows) validateSetTpspBrowserVersionPa
 	return nil
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceWindows) validateSetTpspBuiltinDnsClientEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_PolicyDeviceAssuranceWindows) validateSetTpspBuiltinDnsClientEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -488,7 +488,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceWindows) validateSetTpspBuiltinDnsClient
 	return nil
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceWindows) validateSetTpspChromeRemoteDesktopAppBlockedParameters(val interface{}) error {
+func (j *jsiiProxy_PolicyDeviceAssuranceWindows) validateSetTpspChromeRemoteDesktopAppBlockedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -532,7 +532,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceWindows) validateSetTpspDeviceEnrollment
 	return nil
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceWindows) validateSetTpspDiskEncryptedParameters(val interface{}) error {
+func (j *jsiiProxy_PolicyDeviceAssuranceWindows) validateSetTpspDiskEncryptedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -560,7 +560,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceWindows) validateSetTpspKeyTrustLevelPar
 	return nil
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceWindows) validateSetTpspOsFirewallParameters(val interface{}) error {
+func (j *jsiiProxy_PolicyDeviceAssuranceWindows) validateSetTpspOsFirewallParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -596,7 +596,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceWindows) validateSetTpspPasswordProctect
 	return nil
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceWindows) validateSetTpspRealtimeUrlCheckModeParameters(val interface{}) error {
+func (j *jsiiProxy_PolicyDeviceAssuranceWindows) validateSetTpspRealtimeUrlCheckModeParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -624,7 +624,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceWindows) validateSetTpspSafeBrowsingProt
 	return nil
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceWindows) validateSetTpspScreenLockSecuredParameters(val interface{}) error {
+func (j *jsiiProxy_PolicyDeviceAssuranceWindows) validateSetTpspScreenLockSecuredParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -644,7 +644,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceWindows) validateSetTpspScreenLockSecure
 	return nil
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceWindows) validateSetTpspSecureBootEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_PolicyDeviceAssuranceWindows) validateSetTpspSecureBootEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -664,7 +664,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceWindows) validateSetTpspSecureBootEnable
 	return nil
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceWindows) validateSetTpspSiteIsolationEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_PolicyDeviceAssuranceWindows) validateSetTpspSiteIsolationEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -684,7 +684,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceWindows) validateSetTpspSiteIsolationEna
 	return nil
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceWindows) validateSetTpspThirdPartyBlockingEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_PolicyDeviceAssuranceWindows) validateSetTpspThirdPartyBlockingEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -738,4 +738,3 @@ func validateNewPolicyDeviceAssuranceWindowsParameters(scope constructs.Construc
 
 	return nil
 }
-

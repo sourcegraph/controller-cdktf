@@ -6,9 +6,9 @@ import (
 
 type AppSignonPolicyRuleConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type AppSignonPolicyRuleConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Policy Rule Name.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_signon_policy_rule#name AppSignonPolicyRule#name}
@@ -50,13 +50,13 @@ type AppSignonPolicyRuleConfig struct {
 	// A device is managed if it's managed by a device management system. When managed is passed, registered must also be included and must be set to true.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_signon_policy_rule#device_is_managed AppSignonPolicyRule#device_is_managed}
-	DeviceIsManaged interface{} `field:"optional" json:"deviceIsManaged" yaml:"deviceIsManaged"`
+	DeviceIsManaged any `field:"optional" json:"deviceIsManaged" yaml:"deviceIsManaged"`
 	// If the device is registered.
 	//
 	// A device is registered if the User enrolls with Okta Verify that is installed on the device.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_signon_policy_rule#device_is_registered AppSignonPolicyRule#device_is_registered}
-	DeviceIsRegistered interface{} `field:"optional" json:"deviceIsRegistered" yaml:"deviceIsRegistered"`
+	DeviceIsRegistered any `field:"optional" json:"deviceIsRegistered" yaml:"deviceIsRegistered"`
 	// The number of factors required to satisfy this assurance level.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_signon_policy_rule#factor_mode AppSignonPolicyRule#factor_mode}
@@ -95,7 +95,7 @@ type AppSignonPolicyRuleConfig struct {
 	// platform_include block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_signon_policy_rule#platform_include AppSignonPolicyRule#platform_include}
-	PlatformInclude interface{} `field:"optional" json:"platformInclude" yaml:"platformInclude"`
+	PlatformInclude any `field:"optional" json:"platformInclude" yaml:"platformInclude"`
 	// Priority of the rule.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_signon_policy_rule#priority AppSignonPolicyRule#priority}
@@ -135,4 +135,3 @@ type AppSignonPolicyRuleConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_signon_policy_rule#user_types_included AppSignonPolicyRule#user_types_included}
 	UserTypesIncluded *[]*string `field:"optional" json:"userTypesIncluded" yaml:"userTypesIncluded"`
 }
-

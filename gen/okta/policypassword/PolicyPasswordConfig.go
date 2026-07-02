@@ -6,9 +6,9 @@ import (
 
 type PolicyPasswordConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type PolicyPasswordConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Policy Name.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_password#name PolicyPassword#name}
@@ -55,19 +55,19 @@ type PolicyPasswordConfig struct {
 	// Check Passwords Against Common Password Dictionary. Default: `false`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_password#password_dictionary_lookup PolicyPassword#password_dictionary_lookup}
-	PasswordDictionaryLookup interface{} `field:"optional" json:"passwordDictionaryLookup" yaml:"passwordDictionaryLookup"`
+	PasswordDictionaryLookup any `field:"optional" json:"passwordDictionaryLookup" yaml:"passwordDictionaryLookup"`
 	// User firstName attribute must be excluded from the password.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_password#password_exclude_first_name PolicyPassword#password_exclude_first_name}
-	PasswordExcludeFirstName interface{} `field:"optional" json:"passwordExcludeFirstName" yaml:"passwordExcludeFirstName"`
+	PasswordExcludeFirstName any `field:"optional" json:"passwordExcludeFirstName" yaml:"passwordExcludeFirstName"`
 	// User lastName attribute must be excluded from the password.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_password#password_exclude_last_name PolicyPassword#password_exclude_last_name}
-	PasswordExcludeLastName interface{} `field:"optional" json:"passwordExcludeLastName" yaml:"passwordExcludeLastName"`
+	PasswordExcludeLastName any `field:"optional" json:"passwordExcludeLastName" yaml:"passwordExcludeLastName"`
 	// If the user name must be excluded from the password. Default: `true`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_password#password_exclude_username PolicyPassword#password_exclude_username}
-	PasswordExcludeUsername interface{} `field:"optional" json:"passwordExcludeUsername" yaml:"passwordExcludeUsername"`
+	PasswordExcludeUsername any `field:"optional" json:"passwordExcludeUsername" yaml:"passwordExcludeUsername"`
 	// Length in days a user will be warned before password expiry: 0 = no warning. Default: `0`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_password#password_expire_warn_days PolicyPassword#password_expire_warn_days}
@@ -115,7 +115,7 @@ type PolicyPasswordConfig struct {
 	// If a user should be informed when their account is locked. Default: `false`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_password#password_show_lockout_failures PolicyPassword#password_show_lockout_failures}
-	PasswordShowLockoutFailures interface{} `field:"optional" json:"passwordShowLockoutFailures" yaml:"passwordShowLockoutFailures"`
+	PasswordShowLockoutFailures any `field:"optional" json:"passwordShowLockoutFailures" yaml:"passwordShowLockoutFailures"`
 	// Policy Priority, this attribute can be set to a valid priority.
 	//
 	// To avoid endless diff situation we error if an invalid priority is provided. API defaults it to the last (lowest) if not there.
@@ -139,7 +139,7 @@ type PolicyPasswordConfig struct {
 	// Default: `false`
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_password#skip_unlock PolicyPassword#skip_unlock}
-	SkipUnlock interface{} `field:"optional" json:"skipUnlock" yaml:"skipUnlock"`
+	SkipUnlock any `field:"optional" json:"skipUnlock" yaml:"skipUnlock"`
 	// Enable or disable SMS password recovery: `ACTIVE` or `INACTIVE`. Default: `INACTIVE`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_password#sms_recovery PolicyPassword#sms_recovery}
@@ -149,4 +149,3 @@ type PolicyPasswordConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_password#status PolicyPassword#status}
 	Status *string `field:"optional" json:"status" yaml:"status"`
 }
-

@@ -19,7 +19,7 @@ func (u *jsiiProxy_UserAdminRoles) validateAddMoveTargetParameters(moveTarget *s
 	return nil
 }
 
-func (u *jsiiProxy_UserAdminRoles) validateAddOverrideParameters(path *string, value interface{}) error {
+func (u *jsiiProxy_UserAdminRoles) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (u *jsiiProxy_UserAdminRoles) validateMoveFromIdParameters(id *string) erro
 	return nil
 }
 
-func (u *jsiiProxy_UserAdminRoles) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (u *jsiiProxy_UserAdminRoles) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateUserAdminRoles_GenerateConfigForImportParameters(scope constructs.C
 	return nil
 }
 
-func validateUserAdminRoles_IsConstructParameters(x interface{}) error {
+func validateUserAdminRoles_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateUserAdminRoles_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateUserAdminRoles_IsTerraformElementParameters(x interface{}) error {
+func validateUserAdminRoles_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateUserAdminRoles_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateUserAdminRoles_IsTerraformResourceParameters(x interface{}) error {
+func validateUserAdminRoles_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -252,7 +252,7 @@ func (j *jsiiProxy_UserAdminRoles) validateSetAdminRolesParameters(val *[]*strin
 	return nil
 }
 
-func (j *jsiiProxy_UserAdminRoles) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_UserAdminRoles) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -285,7 +285,7 @@ func (j *jsiiProxy_UserAdminRoles) validateSetConnectionParameters(val interface
 	return nil
 }
 
-func (j *jsiiProxy_UserAdminRoles) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_UserAdminRoles) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -342,7 +342,7 @@ func (j *jsiiProxy_UserAdminRoles) validateSetCountParameters(val interface{}) e
 	return nil
 }
 
-func (j *jsiiProxy_UserAdminRoles) validateSetDisableNotificationsParameters(val interface{}) error {
+func (j *jsiiProxy_UserAdminRoles) validateSetDisableNotificationsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -378,7 +378,7 @@ func (j *jsiiProxy_UserAdminRoles) validateSetLifecycleParameters(val *cdktf.Ter
 	return nil
 }
 
-func (j *jsiiProxy_UserAdminRoles) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_UserAdminRoles) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -450,4 +450,3 @@ func validateNewUserAdminRolesParameters(scope constructs.Construct, id *string,
 
 	return nil
 }
-

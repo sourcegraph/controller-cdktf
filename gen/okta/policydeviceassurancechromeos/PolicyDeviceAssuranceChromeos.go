@@ -15,15 +15,15 @@ type PolicyDeviceAssuranceChromeos interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreatedBy() *string
 	CreatedDate() *string
 	// Experimental.
@@ -56,66 +56,66 @@ type PolicyDeviceAssuranceChromeos interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
-	TpspAllowScreenLock() interface{}
-	SetTpspAllowScreenLock(val interface{})
-	TpspAllowScreenLockInput() interface{}
+	TpspAllowScreenLock() any
+	SetTpspAllowScreenLock(val any)
+	TpspAllowScreenLockInput() any
 	TpspBrowserVersion() *string
 	SetTpspBrowserVersion(val *string)
 	TpspBrowserVersionInput() *string
-	TpspBuiltinDnsClientEnabled() interface{}
-	SetTpspBuiltinDnsClientEnabled(val interface{})
-	TpspBuiltinDnsClientEnabledInput() interface{}
-	TpspChromeRemoteDesktopAppBlocked() interface{}
-	SetTpspChromeRemoteDesktopAppBlocked(val interface{})
-	TpspChromeRemoteDesktopAppBlockedInput() interface{}
+	TpspBuiltinDnsClientEnabled() any
+	SetTpspBuiltinDnsClientEnabled(val any)
+	TpspBuiltinDnsClientEnabledInput() any
+	TpspChromeRemoteDesktopAppBlocked() any
+	SetTpspChromeRemoteDesktopAppBlocked(val any)
+	TpspChromeRemoteDesktopAppBlockedInput() any
 	TpspDeviceEnrollmentDomain() *string
 	SetTpspDeviceEnrollmentDomain(val *string)
 	TpspDeviceEnrollmentDomainInput() *string
-	TpspDiskEncrypted() interface{}
-	SetTpspDiskEncrypted(val interface{})
-	TpspDiskEncryptedInput() interface{}
+	TpspDiskEncrypted() any
+	SetTpspDiskEncrypted(val any)
+	TpspDiskEncryptedInput() any
 	TpspKeyTrustLevel() *string
 	SetTpspKeyTrustLevel(val *string)
 	TpspKeyTrustLevelInput() *string
-	TpspOsFirewall() interface{}
-	SetTpspOsFirewall(val interface{})
-	TpspOsFirewallInput() interface{}
+	TpspOsFirewall() any
+	SetTpspOsFirewall(val any)
+	TpspOsFirewallInput() any
 	TpspOsVersion() *string
 	SetTpspOsVersion(val *string)
 	TpspOsVersionInput() *string
 	TpspPasswordProctectionWarningTrigger() *string
 	SetTpspPasswordProctectionWarningTrigger(val *string)
 	TpspPasswordProctectionWarningTriggerInput() *string
-	TpspRealtimeUrlCheckMode() interface{}
-	SetTpspRealtimeUrlCheckMode(val interface{})
-	TpspRealtimeUrlCheckModeInput() interface{}
+	TpspRealtimeUrlCheckMode() any
+	SetTpspRealtimeUrlCheckMode(val any)
+	TpspRealtimeUrlCheckModeInput() any
 	TpspSafeBrowsingProtectionLevel() *string
 	SetTpspSafeBrowsingProtectionLevel(val *string)
 	TpspSafeBrowsingProtectionLevelInput() *string
-	TpspScreenLockSecured() interface{}
-	SetTpspScreenLockSecured(val interface{})
-	TpspScreenLockSecuredInput() interface{}
-	TpspSiteIsolationEnabled() interface{}
-	SetTpspSiteIsolationEnabled(val interface{})
-	TpspSiteIsolationEnabledInput() interface{}
+	TpspScreenLockSecured() any
+	SetTpspScreenLockSecured(val any)
+	TpspScreenLockSecuredInput() any
+	TpspSiteIsolationEnabled() any
+	SetTpspSiteIsolationEnabled(val any)
+	TpspSiteIsolationEnabledInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -133,7 +133,7 @@ type PolicyDeviceAssuranceChromeos interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -145,7 +145,7 @@ type PolicyDeviceAssuranceChromeos interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -169,17 +169,17 @@ type PolicyDeviceAssuranceChromeos interface {
 	ResetTpspSafeBrowsingProtectionLevel()
 	ResetTpspScreenLockSecured()
 	ResetTpspSiteIsolationEnabled()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for PolicyDeviceAssuranceChromeos
@@ -197,8 +197,8 @@ func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) CdktfStack() cdktf.TerraformSt
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -207,8 +207,8 @@ func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -217,8 +217,8 @@ func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) ConstructNodeMetadata() *map[s
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -377,8 +377,8 @@ func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) Provider() cdktf.TerraformProv
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -387,8 +387,8 @@ func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) Provisioners() *[]interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -407,8 +407,8 @@ func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) TerraformGeneratorMetadata() *
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -427,8 +427,8 @@ func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) TerraformResourceType() *strin
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) TpspAllowScreenLock() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) TpspAllowScreenLock() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"tpspAllowScreenLock",
@@ -437,8 +437,8 @@ func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) TpspAllowScreenLock() interfac
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) TpspAllowScreenLockInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) TpspAllowScreenLockInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"tpspAllowScreenLockInput",
@@ -467,8 +467,8 @@ func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) TpspBrowserVersionInput() *str
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) TpspBuiltinDnsClientEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) TpspBuiltinDnsClientEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"tpspBuiltinDnsClientEnabled",
@@ -477,8 +477,8 @@ func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) TpspBuiltinDnsClientEnabled() 
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) TpspBuiltinDnsClientEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) TpspBuiltinDnsClientEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"tpspBuiltinDnsClientEnabledInput",
@@ -487,8 +487,8 @@ func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) TpspBuiltinDnsClientEnabledInp
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) TpspChromeRemoteDesktopAppBlocked() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) TpspChromeRemoteDesktopAppBlocked() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"tpspChromeRemoteDesktopAppBlocked",
@@ -497,8 +497,8 @@ func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) TpspChromeRemoteDesktopAppBloc
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) TpspChromeRemoteDesktopAppBlockedInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) TpspChromeRemoteDesktopAppBlockedInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"tpspChromeRemoteDesktopAppBlockedInput",
@@ -527,8 +527,8 @@ func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) TpspDeviceEnrollmentDomainInpu
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) TpspDiskEncrypted() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) TpspDiskEncrypted() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"tpspDiskEncrypted",
@@ -537,8 +537,8 @@ func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) TpspDiskEncrypted() interface{
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) TpspDiskEncryptedInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) TpspDiskEncryptedInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"tpspDiskEncryptedInput",
@@ -567,8 +567,8 @@ func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) TpspKeyTrustLevelInput() *stri
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) TpspOsFirewall() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) TpspOsFirewall() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"tpspOsFirewall",
@@ -577,8 +577,8 @@ func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) TpspOsFirewall() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) TpspOsFirewallInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) TpspOsFirewallInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"tpspOsFirewallInput",
@@ -627,8 +627,8 @@ func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) TpspPasswordProctectionWarning
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) TpspRealtimeUrlCheckMode() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) TpspRealtimeUrlCheckMode() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"tpspRealtimeUrlCheckMode",
@@ -637,8 +637,8 @@ func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) TpspRealtimeUrlCheckMode() int
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) TpspRealtimeUrlCheckModeInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) TpspRealtimeUrlCheckModeInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"tpspRealtimeUrlCheckModeInput",
@@ -667,8 +667,8 @@ func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) TpspSafeBrowsingProtectionLeve
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) TpspScreenLockSecured() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) TpspScreenLockSecured() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"tpspScreenLockSecured",
@@ -677,8 +677,8 @@ func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) TpspScreenLockSecured() interf
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) TpspScreenLockSecuredInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) TpspScreenLockSecuredInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"tpspScreenLockSecuredInput",
@@ -687,8 +687,8 @@ func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) TpspScreenLockSecuredInput() i
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) TpspSiteIsolationEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) TpspSiteIsolationEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"tpspSiteIsolationEnabled",
@@ -697,8 +697,8 @@ func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) TpspSiteIsolationEnabled() int
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) TpspSiteIsolationEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) TpspSiteIsolationEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"tpspSiteIsolationEnabledInput",
@@ -706,7 +706,6 @@ func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) TpspSiteIsolationEnabledInput(
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_device_assurance_chromeos okta_policy_device_assurance_chromeos} Resource.
 func NewPolicyDeviceAssuranceChromeos(scope constructs.Construct, id *string, config *PolicyDeviceAssuranceChromeosConfig) PolicyDeviceAssuranceChromeos {
@@ -719,7 +718,7 @@ func NewPolicyDeviceAssuranceChromeos(scope constructs.Construct, id *string, co
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -732,12 +731,12 @@ func NewPolicyDeviceAssuranceChromeos_Override(p PolicyDeviceAssuranceChromeos, 
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceChromeos)SetConnection(val interface{}) {
+func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -748,7 +747,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceChromeos)SetConnection(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceChromeos)SetCount(val interface{}) {
+func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -759,7 +758,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceChromeos)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceChromeos)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -767,7 +766,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceChromeos)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceChromeos)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -775,7 +774,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceChromeos)SetForEach(val cdktf.ITerraform
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceChromeos)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -786,7 +785,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceChromeos)SetLifecycle(val *cdktf.Terrafo
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceChromeos)SetName(val *string) {
+func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -797,7 +796,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceChromeos)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceChromeos)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -805,7 +804,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceChromeos)SetProvider(val cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceChromeos)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -816,7 +815,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceChromeos)SetProvisioners(val *[]interfac
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceChromeos)SetTpspAllowScreenLock(val interface{}) {
+func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) SetTpspAllowScreenLock(val any) {
 	if err := j.validateSetTpspAllowScreenLockParameters(val); err != nil {
 		panic(err)
 	}
@@ -827,7 +826,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceChromeos)SetTpspAllowScreenLock(val inte
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceChromeos)SetTpspBrowserVersion(val *string) {
+func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) SetTpspBrowserVersion(val *string) {
 	if err := j.validateSetTpspBrowserVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -838,7 +837,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceChromeos)SetTpspBrowserVersion(val *stri
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceChromeos)SetTpspBuiltinDnsClientEnabled(val interface{}) {
+func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) SetTpspBuiltinDnsClientEnabled(val any) {
 	if err := j.validateSetTpspBuiltinDnsClientEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -849,7 +848,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceChromeos)SetTpspBuiltinDnsClientEnabled(
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceChromeos)SetTpspChromeRemoteDesktopAppBlocked(val interface{}) {
+func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) SetTpspChromeRemoteDesktopAppBlocked(val any) {
 	if err := j.validateSetTpspChromeRemoteDesktopAppBlockedParameters(val); err != nil {
 		panic(err)
 	}
@@ -860,7 +859,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceChromeos)SetTpspChromeRemoteDesktopAppBl
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceChromeos)SetTpspDeviceEnrollmentDomain(val *string) {
+func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) SetTpspDeviceEnrollmentDomain(val *string) {
 	if err := j.validateSetTpspDeviceEnrollmentDomainParameters(val); err != nil {
 		panic(err)
 	}
@@ -871,7 +870,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceChromeos)SetTpspDeviceEnrollmentDomain(v
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceChromeos)SetTpspDiskEncrypted(val interface{}) {
+func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) SetTpspDiskEncrypted(val any) {
 	if err := j.validateSetTpspDiskEncryptedParameters(val); err != nil {
 		panic(err)
 	}
@@ -882,7 +881,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceChromeos)SetTpspDiskEncrypted(val interf
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceChromeos)SetTpspKeyTrustLevel(val *string) {
+func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) SetTpspKeyTrustLevel(val *string) {
 	if err := j.validateSetTpspKeyTrustLevelParameters(val); err != nil {
 		panic(err)
 	}
@@ -893,7 +892,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceChromeos)SetTpspKeyTrustLevel(val *strin
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceChromeos)SetTpspOsFirewall(val interface{}) {
+func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) SetTpspOsFirewall(val any) {
 	if err := j.validateSetTpspOsFirewallParameters(val); err != nil {
 		panic(err)
 	}
@@ -904,7 +903,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceChromeos)SetTpspOsFirewall(val interface
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceChromeos)SetTpspOsVersion(val *string) {
+func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) SetTpspOsVersion(val *string) {
 	if err := j.validateSetTpspOsVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -915,7 +914,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceChromeos)SetTpspOsVersion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceChromeos)SetTpspPasswordProctectionWarningTrigger(val *string) {
+func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) SetTpspPasswordProctectionWarningTrigger(val *string) {
 	if err := j.validateSetTpspPasswordProctectionWarningTriggerParameters(val); err != nil {
 		panic(err)
 	}
@@ -926,7 +925,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceChromeos)SetTpspPasswordProctectionWarni
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceChromeos)SetTpspRealtimeUrlCheckMode(val interface{}) {
+func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) SetTpspRealtimeUrlCheckMode(val any) {
 	if err := j.validateSetTpspRealtimeUrlCheckModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -937,7 +936,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceChromeos)SetTpspRealtimeUrlCheckMode(val
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceChromeos)SetTpspSafeBrowsingProtectionLevel(val *string) {
+func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) SetTpspSafeBrowsingProtectionLevel(val *string) {
 	if err := j.validateSetTpspSafeBrowsingProtectionLevelParameters(val); err != nil {
 		panic(err)
 	}
@@ -948,7 +947,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceChromeos)SetTpspSafeBrowsingProtectionLe
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceChromeos)SetTpspScreenLockSecured(val interface{}) {
+func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) SetTpspScreenLockSecured(val any) {
 	if err := j.validateSetTpspScreenLockSecuredParameters(val); err != nil {
 		panic(err)
 	}
@@ -959,7 +958,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceChromeos)SetTpspScreenLockSecured(val in
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceChromeos)SetTpspSiteIsolationEnabled(val interface{}) {
+func (j *jsiiProxy_PolicyDeviceAssuranceChromeos) SetTpspSiteIsolationEnabled(val any) {
 	if err := j.validateSetTpspSiteIsolationEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -982,7 +981,7 @@ func PolicyDeviceAssuranceChromeos_GenerateConfigForImport(scope constructs.Cons
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1006,7 +1005,7 @@ func PolicyDeviceAssuranceChromeos_GenerateConfigForImport(scope constructs.Cons
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func PolicyDeviceAssuranceChromeos_IsConstruct(x interface{}) *bool {
+func PolicyDeviceAssuranceChromeos_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePolicyDeviceAssuranceChromeos_IsConstructParameters(x); err != nil {
@@ -1017,7 +1016,7 @@ func PolicyDeviceAssuranceChromeos_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1025,7 +1024,7 @@ func PolicyDeviceAssuranceChromeos_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func PolicyDeviceAssuranceChromeos_IsTerraformElement(x interface{}) *bool {
+func PolicyDeviceAssuranceChromeos_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePolicyDeviceAssuranceChromeos_IsTerraformElementParameters(x); err != nil {
@@ -1036,7 +1035,7 @@ func PolicyDeviceAssuranceChromeos_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1044,7 +1043,7 @@ func PolicyDeviceAssuranceChromeos_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func PolicyDeviceAssuranceChromeos_IsTerraformResource(x interface{}) *bool {
+func PolicyDeviceAssuranceChromeos_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePolicyDeviceAssuranceChromeos_IsTerraformResourceParameters(x); err != nil {
@@ -1055,7 +1054,7 @@ func PolicyDeviceAssuranceChromeos_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1080,31 +1079,31 @@ func (p *jsiiProxy_PolicyDeviceAssuranceChromeos) AddMoveTarget(moveTarget *stri
 	_jsii_.InvokeVoid(
 		p,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (p *jsiiProxy_PolicyDeviceAssuranceChromeos) AddOverride(path *string, value interface{}) {
+func (p *jsiiProxy_PolicyDeviceAssuranceChromeos) AddOverride(path *string, value any) {
 	if err := p.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (p *jsiiProxy_PolicyDeviceAssuranceChromeos) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_PolicyDeviceAssuranceChromeos) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1120,7 +1119,7 @@ func (p *jsiiProxy_PolicyDeviceAssuranceChromeos) GetBooleanAttribute(terraformA
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1136,7 +1135,7 @@ func (p *jsiiProxy_PolicyDeviceAssuranceChromeos) GetBooleanMapAttribute(terrafo
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1152,7 +1151,7 @@ func (p *jsiiProxy_PolicyDeviceAssuranceChromeos) GetListAttribute(terraformAttr
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1168,7 +1167,7 @@ func (p *jsiiProxy_PolicyDeviceAssuranceChromeos) GetNumberAttribute(terraformAt
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1184,7 +1183,7 @@ func (p *jsiiProxy_PolicyDeviceAssuranceChromeos) GetNumberListAttribute(terrafo
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1200,7 +1199,7 @@ func (p *jsiiProxy_PolicyDeviceAssuranceChromeos) GetNumberMapAttribute(terrafor
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1216,7 +1215,7 @@ func (p *jsiiProxy_PolicyDeviceAssuranceChromeos) GetStringAttribute(terraformAt
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1232,15 +1231,15 @@ func (p *jsiiProxy_PolicyDeviceAssuranceChromeos) GetStringMapAttribute(terrafor
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (p *jsiiProxy_PolicyDeviceAssuranceChromeos) HasResourceMove() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PolicyDeviceAssuranceChromeos) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1259,7 +1258,7 @@ func (p *jsiiProxy_PolicyDeviceAssuranceChromeos) ImportFrom(id *string, provide
 	_jsii_.InvokeVoid(
 		p,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1272,7 +1271,7 @@ func (p *jsiiProxy_PolicyDeviceAssuranceChromeos) InterpolationForAttribute(terr
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1286,18 +1285,18 @@ func (p *jsiiProxy_PolicyDeviceAssuranceChromeos) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (p *jsiiProxy_PolicyDeviceAssuranceChromeos) MoveTo(moveTarget *string, index interface{}) {
+func (p *jsiiProxy_PolicyDeviceAssuranceChromeos) MoveTo(moveTarget *string, index any) {
 	if err := p.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1308,7 +1307,7 @@ func (p *jsiiProxy_PolicyDeviceAssuranceChromeos) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1319,7 +1318,7 @@ func (p *jsiiProxy_PolicyDeviceAssuranceChromeos) OverrideLogicalId(newLogicalId
 	_jsii_.InvokeVoid(
 		p,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1443,8 +1442,8 @@ func (p *jsiiProxy_PolicyDeviceAssuranceChromeos) ResetTpspSiteIsolationEnabled(
 	)
 }
 
-func (p *jsiiProxy_PolicyDeviceAssuranceChromeos) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (p *jsiiProxy_PolicyDeviceAssuranceChromeos) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
@@ -1456,8 +1455,8 @@ func (p *jsiiProxy_PolicyDeviceAssuranceChromeos) SynthesizeAttributes() *map[st
 	return returns
 }
 
-func (p *jsiiProxy_PolicyDeviceAssuranceChromeos) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (p *jsiiProxy_PolicyDeviceAssuranceChromeos) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
@@ -1469,8 +1468,8 @@ func (p *jsiiProxy_PolicyDeviceAssuranceChromeos) SynthesizeHclAttributes() *map
 	return returns
 }
 
-func (p *jsiiProxy_PolicyDeviceAssuranceChromeos) ToHclTerraform() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PolicyDeviceAssuranceChromeos) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1482,8 +1481,8 @@ func (p *jsiiProxy_PolicyDeviceAssuranceChromeos) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (p *jsiiProxy_PolicyDeviceAssuranceChromeos) ToMetadata() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PolicyDeviceAssuranceChromeos) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1508,8 +1507,8 @@ func (p *jsiiProxy_PolicyDeviceAssuranceChromeos) ToString() *string {
 	return returns
 }
 
-func (p *jsiiProxy_PolicyDeviceAssuranceChromeos) ToTerraform() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PolicyDeviceAssuranceChromeos) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1520,4 +1519,3 @@ func (p *jsiiProxy_PolicyDeviceAssuranceChromeos) ToTerraform() interface{} {
 
 	return returns
 }
-

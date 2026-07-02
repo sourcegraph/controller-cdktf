@@ -19,7 +19,7 @@ func (p *jsiiProxy_PolicyPassword) validateAddMoveTargetParameters(moveTarget *s
 	return nil
 }
 
-func (p *jsiiProxy_PolicyPassword) validateAddOverrideParameters(path *string, value interface{}) error {
+func (p *jsiiProxy_PolicyPassword) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (p *jsiiProxy_PolicyPassword) validateMoveFromIdParameters(id *string) erro
 	return nil
 }
 
-func (p *jsiiProxy_PolicyPassword) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (p *jsiiProxy_PolicyPassword) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validatePolicyPassword_GenerateConfigForImportParameters(scope constructs.C
 	return nil
 }
 
-func validatePolicyPassword_IsConstructParameters(x interface{}) error {
+func validatePolicyPassword_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validatePolicyPassword_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validatePolicyPassword_IsTerraformElementParameters(x interface{}) error {
+func validatePolicyPassword_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validatePolicyPassword_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validatePolicyPassword_IsTerraformResourceParameters(x interface{}) error {
+func validatePolicyPassword_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -260,7 +260,7 @@ func (j *jsiiProxy_PolicyPassword) validateSetCallRecoveryParameters(val *string
 	return nil
 }
 
-func (j *jsiiProxy_PolicyPassword) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_PolicyPassword) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -293,7 +293,7 @@ func (j *jsiiProxy_PolicyPassword) validateSetConnectionParameters(val interface
 	return nil
 }
 
-func (j *jsiiProxy_PolicyPassword) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_PolicyPassword) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -406,7 +406,7 @@ func (j *jsiiProxy_PolicyPassword) validateSetPasswordAutoUnlockMinutesParameter
 	return nil
 }
 
-func (j *jsiiProxy_PolicyPassword) validateSetPasswordDictionaryLookupParameters(val interface{}) error {
+func (j *jsiiProxy_PolicyPassword) validateSetPasswordDictionaryLookupParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -426,7 +426,7 @@ func (j *jsiiProxy_PolicyPassword) validateSetPasswordDictionaryLookupParameters
 	return nil
 }
 
-func (j *jsiiProxy_PolicyPassword) validateSetPasswordExcludeFirstNameParameters(val interface{}) error {
+func (j *jsiiProxy_PolicyPassword) validateSetPasswordExcludeFirstNameParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -446,7 +446,7 @@ func (j *jsiiProxy_PolicyPassword) validateSetPasswordExcludeFirstNameParameters
 	return nil
 }
 
-func (j *jsiiProxy_PolicyPassword) validateSetPasswordExcludeLastNameParameters(val interface{}) error {
+func (j *jsiiProxy_PolicyPassword) validateSetPasswordExcludeLastNameParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -466,7 +466,7 @@ func (j *jsiiProxy_PolicyPassword) validateSetPasswordExcludeLastNameParameters(
 	return nil
 }
 
-func (j *jsiiProxy_PolicyPassword) validateSetPasswordExcludeUsernameParameters(val interface{}) error {
+func (j *jsiiProxy_PolicyPassword) validateSetPasswordExcludeUsernameParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -574,7 +574,7 @@ func (j *jsiiProxy_PolicyPassword) validateSetPasswordMinUppercaseParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_PolicyPassword) validateSetPasswordShowLockoutFailuresParameters(val interface{}) error {
+func (j *jsiiProxy_PolicyPassword) validateSetPasswordShowLockoutFailuresParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -602,7 +602,7 @@ func (j *jsiiProxy_PolicyPassword) validateSetPriorityParameters(val *float64) e
 	return nil
 }
 
-func (j *jsiiProxy_PolicyPassword) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_PolicyPassword) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -672,7 +672,7 @@ func (j *jsiiProxy_PolicyPassword) validateSetRecoveryEmailTokenParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_PolicyPassword) validateSetSkipUnlockParameters(val interface{}) error {
+func (j *jsiiProxy_PolicyPassword) validateSetSkipUnlockParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -726,4 +726,3 @@ func validateNewPolicyPasswordParameters(scope constructs.Construct, id *string,
 
 	return nil
 }
-

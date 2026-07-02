@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.appSharedCredentials.AppSharedCredentials",
-		reflect.TypeOf((*AppSharedCredentials)(nil)).Elem(),
+		reflect.TypeFor[AppSharedCredentials](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessibilityErrorRedirectUrl", GoGetter: "AccessibilityErrorRedirectUrl"},
 			_jsii_.MemberProperty{JsiiProperty: "accessibilityErrorRedirectUrlInput", GoGetter: "AccessibilityErrorRedirectUrlInput"},
@@ -140,7 +140,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userNameTemplateType", GoGetter: "UserNameTemplateType"},
 			_jsii_.MemberProperty{JsiiProperty: "userNameTemplateTypeInput", GoGetter: "UserNameTemplateTypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppSharedCredentials{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -148,15 +148,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.appSharedCredentials.AppSharedCredentialsConfig",
-		reflect.TypeOf((*AppSharedCredentialsConfig)(nil)).Elem(),
+		reflect.TypeFor[AppSharedCredentialsConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.appSharedCredentials.AppSharedCredentialsTimeouts",
-		reflect.TypeOf((*AppSharedCredentialsTimeouts)(nil)).Elem(),
+		reflect.TypeFor[AppSharedCredentialsTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.appSharedCredentials.AppSharedCredentialsTimeoutsOutputReference",
-		reflect.TypeOf((*AppSharedCredentialsTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppSharedCredentialsTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -189,7 +189,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppSharedCredentialsTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

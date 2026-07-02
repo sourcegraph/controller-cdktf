@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.dataOktaDomain.DataOktaDomain",
-		reflect.TypeOf((*DataOktaDomain)(nil)).Elem(),
+		reflect.TypeFor[DataOktaDomain](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -53,7 +53,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "validationStatus", GoGetter: "ValidationStatus"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataOktaDomain{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -61,15 +61,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.dataOktaDomain.DataOktaDomainConfig",
-		reflect.TypeOf((*DataOktaDomainConfig)(nil)).Elem(),
+		reflect.TypeFor[DataOktaDomainConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.dataOktaDomain.DataOktaDomainDnsRecords",
-		reflect.TypeOf((*DataOktaDomainDnsRecords)(nil)).Elem(),
+		reflect.TypeFor[DataOktaDomainDnsRecords](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.dataOktaDomain.DataOktaDomainDnsRecordsList",
-		reflect.TypeOf((*DataOktaDomainDnsRecordsList)(nil)).Elem(),
+		reflect.TypeFor[DataOktaDomainDnsRecordsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -82,7 +82,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataOktaDomainDnsRecordsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -90,7 +90,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.dataOktaDomain.DataOktaDomainDnsRecordsOutputReference",
-		reflect.TypeOf((*DataOktaDomainDnsRecordsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataOktaDomainDnsRecordsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -118,7 +118,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataOktaDomainDnsRecordsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

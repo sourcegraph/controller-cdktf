@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.policyRuleProfileEnrollment.PolicyRuleProfileEnrollment",
-		reflect.TypeOf((*PolicyRuleProfileEnrollment)(nil)).Elem(),
+		reflect.TypeFor[PolicyRuleProfileEnrollment](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "access", GoGetter: "Access"},
 			_jsii_.MemberProperty{JsiiProperty: "accessInput", GoGetter: "AccessInput"},
@@ -84,7 +84,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "unknownUserAction", GoGetter: "UnknownUserAction"},
 			_jsii_.MemberProperty{JsiiProperty: "unknownUserActionInput", GoGetter: "UnknownUserActionInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PolicyRuleProfileEnrollment{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -92,15 +92,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.policyRuleProfileEnrollment.PolicyRuleProfileEnrollmentConfig",
-		reflect.TypeOf((*PolicyRuleProfileEnrollmentConfig)(nil)).Elem(),
+		reflect.TypeFor[PolicyRuleProfileEnrollmentConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.policyRuleProfileEnrollment.PolicyRuleProfileEnrollmentProfileAttributes",
-		reflect.TypeOf((*PolicyRuleProfileEnrollmentProfileAttributes)(nil)).Elem(),
+		reflect.TypeFor[PolicyRuleProfileEnrollmentProfileAttributes](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.policyRuleProfileEnrollment.PolicyRuleProfileEnrollmentProfileAttributesList",
-		reflect.TypeOf((*PolicyRuleProfileEnrollmentProfileAttributesList)(nil)).Elem(),
+		reflect.TypeFor[PolicyRuleProfileEnrollmentProfileAttributesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -114,7 +114,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PolicyRuleProfileEnrollmentProfileAttributesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -122,7 +122,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.policyRuleProfileEnrollment.PolicyRuleProfileEnrollmentProfileAttributesOutputReference",
-		reflect.TypeOf((*PolicyRuleProfileEnrollmentProfileAttributesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PolicyRuleProfileEnrollmentProfileAttributesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -153,7 +153,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PolicyRuleProfileEnrollmentProfileAttributesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

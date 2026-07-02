@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataOktaThemesThemesOutputReference) validateResolveParameter
 	return nil
 }
 
-func (j *jsiiProxy_DataOktaThemesThemesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataOktaThemesThemesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataOktaThemesThemesOutputReferenceParameters(terraformResource 
 
 	return nil
 }
-

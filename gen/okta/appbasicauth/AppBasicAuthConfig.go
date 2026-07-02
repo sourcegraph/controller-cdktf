@@ -6,9 +6,9 @@ import (
 
 type AppBasicAuthConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type AppBasicAuthConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The URL of the authenticating site for this app.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_basic_auth#auth_url AppBasicAuth#auth_url}
@@ -42,7 +42,7 @@ type AppBasicAuthConfig struct {
 	// Enable self service. Default is `false`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_basic_auth#accessibility_self_service AppBasicAuth#accessibility_self_service}
-	AccessibilitySelfService interface{} `field:"optional" json:"accessibilitySelfService" yaml:"accessibilitySelfService"`
+	AccessibilitySelfService any `field:"optional" json:"accessibilitySelfService" yaml:"accessibilitySelfService"`
 	// Application notes for admins.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_basic_auth#admin_note AppBasicAuth#admin_note}
@@ -54,7 +54,7 @@ type AppBasicAuthConfig struct {
 	// Display auto submit toolbar.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_basic_auth#auto_submit_toolbar AppBasicAuth#auto_submit_toolbar}
-	AutoSubmitToolbar interface{} `field:"optional" json:"autoSubmitToolbar" yaml:"autoSubmitToolbar"`
+	AutoSubmitToolbar any `field:"optional" json:"autoSubmitToolbar" yaml:"autoSubmitToolbar"`
 	// Application notes for end users.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_basic_auth#enduser_note AppBasicAuth#enduser_note}
@@ -62,11 +62,11 @@ type AppBasicAuthConfig struct {
 	// Do not display application icon on mobile app.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_basic_auth#hide_ios AppBasicAuth#hide_ios}
-	HideIos interface{} `field:"optional" json:"hideIos" yaml:"hideIos"`
+	HideIos any `field:"optional" json:"hideIos" yaml:"hideIos"`
 	// Do not display application icon to users.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_basic_auth#hide_web AppBasicAuth#hide_web}
-	HideWeb interface{} `field:"optional" json:"hideWeb" yaml:"hideWeb"`
+	HideWeb any `field:"optional" json:"hideWeb" yaml:"hideWeb"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_basic_auth#id AppBasicAuth#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -87,4 +87,3 @@ type AppBasicAuthConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_basic_auth#timeouts AppBasicAuth#timeouts}
 	Timeouts *AppBasicAuthTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

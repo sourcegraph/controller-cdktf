@@ -19,7 +19,7 @@ func (a *jsiiProxy_AppOauth) validateAddMoveTargetParameters(moveTarget *string)
 	return nil
 }
 
-func (a *jsiiProxy_AppOauth) validateAddOverrideParameters(path *string, value interface{}) error {
+func (a *jsiiProxy_AppOauth) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (a *jsiiProxy_AppOauth) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppOauth) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (a *jsiiProxy_AppOauth) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -215,7 +215,7 @@ func (a *jsiiProxy_AppOauth) validatePutGroupsClaimParameters(value *AppOauthGro
 	return nil
 }
 
-func (a *jsiiProxy_AppOauth) validatePutJwksParameters(value interface{}) error {
+func (a *jsiiProxy_AppOauth) validatePutJwksParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -273,7 +273,7 @@ func validateAppOauth_GenerateConfigForImportParameters(scope constructs.Constru
 	return nil
 }
 
-func validateAppOauth_IsConstructParameters(x interface{}) error {
+func validateAppOauth_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -281,7 +281,7 @@ func validateAppOauth_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateAppOauth_IsTerraformElementParameters(x interface{}) error {
+func validateAppOauth_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -289,7 +289,7 @@ func validateAppOauth_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateAppOauth_IsTerraformResourceParameters(x interface{}) error {
+func validateAppOauth_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -313,7 +313,7 @@ func (j *jsiiProxy_AppOauth) validateSetAccessibilityLoginRedirectUrlParameters(
 	return nil
 }
 
-func (j *jsiiProxy_AppOauth) validateSetAccessibilitySelfServiceParameters(val interface{}) error {
+func (j *jsiiProxy_AppOauth) validateSetAccessibilitySelfServiceParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -365,7 +365,7 @@ func (j *jsiiProxy_AppOauth) validateSetAuthenticationPolicyParameters(val *stri
 	return nil
 }
 
-func (j *jsiiProxy_AppOauth) validateSetAutoKeyRotationParameters(val interface{}) error {
+func (j *jsiiProxy_AppOauth) validateSetAutoKeyRotationParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -385,7 +385,7 @@ func (j *jsiiProxy_AppOauth) validateSetAutoKeyRotationParameters(val interface{
 	return nil
 }
 
-func (j *jsiiProxy_AppOauth) validateSetAutoSubmitToolbarParameters(val interface{}) error {
+func (j *jsiiProxy_AppOauth) validateSetAutoSubmitToolbarParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -429,7 +429,7 @@ func (j *jsiiProxy_AppOauth) validateSetClientUriParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_AppOauth) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_AppOauth) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -470,7 +470,7 @@ func (j *jsiiProxy_AppOauth) validateSetConsentMethodParameters(val *string) err
 	return nil
 }
 
-func (j *jsiiProxy_AppOauth) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_AppOauth) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -543,7 +543,7 @@ func (j *jsiiProxy_AppOauth) validateSetGrantTypesParameters(val *[]*string) err
 	return nil
 }
 
-func (j *jsiiProxy_AppOauth) validateSetHideIosParameters(val interface{}) error {
+func (j *jsiiProxy_AppOauth) validateSetHideIosParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -563,7 +563,7 @@ func (j *jsiiProxy_AppOauth) validateSetHideIosParameters(val interface{}) error
 	return nil
 }
 
-func (j *jsiiProxy_AppOauth) validateSetHideWebParameters(val interface{}) error {
+func (j *jsiiProxy_AppOauth) validateSetHideWebParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -591,7 +591,7 @@ func (j *jsiiProxy_AppOauth) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_AppOauth) validateSetImplicitAssignmentParameters(val interface{}) error {
+func (j *jsiiProxy_AppOauth) validateSetImplicitAssignmentParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -683,7 +683,7 @@ func (j *jsiiProxy_AppOauth) validateSetLogoUriParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_AppOauth) validateSetOmitSecretParameters(val interface{}) error {
+func (j *jsiiProxy_AppOauth) validateSetOmitSecretParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -703,7 +703,7 @@ func (j *jsiiProxy_AppOauth) validateSetOmitSecretParameters(val interface{}) er
 	return nil
 }
 
-func (j *jsiiProxy_AppOauth) validateSetPkceRequiredParameters(val interface{}) error {
+func (j *jsiiProxy_AppOauth) validateSetPkceRequiredParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -747,7 +747,7 @@ func (j *jsiiProxy_AppOauth) validateSetProfileParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_AppOauth) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_AppOauth) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -915,4 +915,3 @@ func validateNewAppOauthParameters(scope constructs.Construct, id *string, confi
 
 	return nil
 }
-

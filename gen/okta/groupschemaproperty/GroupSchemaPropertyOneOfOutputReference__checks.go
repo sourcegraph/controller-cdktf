@@ -98,7 +98,7 @@ func (g *jsiiProxy_GroupSchemaPropertyOneOfOutputReference) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_GroupSchemaPropertyOneOfOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GroupSchemaPropertyOneOfOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_GroupSchemaPropertyOneOfOutputReference) validateSetConstPara
 	return nil
 }
 
-func (j *jsiiProxy_GroupSchemaPropertyOneOfOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GroupSchemaPropertyOneOfOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGroupSchemaPropertyOneOfOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

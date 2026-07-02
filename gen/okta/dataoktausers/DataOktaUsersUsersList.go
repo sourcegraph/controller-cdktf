@@ -36,7 +36,7 @@ type DataOktaUsersUsersList interface {
 	Get(index *float64) DataOktaUsersUsersOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,7 +99,6 @@ func (j *jsiiProxy_DataOktaUsersUsersList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewDataOktaUsersUsersList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOktaUsersUsersList {
 	_init_.Initialize()
 
@@ -110,7 +109,7 @@ func NewDataOktaUsersUsersList(terraformResource cdktf.IInterpolatingParent, ter
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.dataOktaUsers.DataOktaUsersUsersList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -122,12 +121,12 @@ func NewDataOktaUsersUsersList_Override(d DataOktaUsersUsersList, terraformResou
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.dataOktaUsers.DataOktaUsersUsersList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataOktaUsersUsersList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataOktaUsersUsersList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -138,7 +137,7 @@ func (j *jsiiProxy_DataOktaUsersUsersList)SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataOktaUsersUsersList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataOktaUsersUsersList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -149,7 +148,7 @@ func (j *jsiiProxy_DataOktaUsersUsersList)SetTerraformResource(val cdktf.IInterp
 	)
 }
 
-func (j *jsiiProxy_DataOktaUsersUsersList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataOktaUsersUsersList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -169,7 +168,7 @@ func (d *jsiiProxy_DataOktaUsersUsersList) AllWithMapKey(mapKeyAttributeName *st
 	_jsii_.Invoke(
 		d,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -198,23 +197,23 @@ func (d *jsiiProxy_DataOktaUsersUsersList) Get(index *float64) DataOktaUsersUser
 	_jsii_.Invoke(
 		d,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataOktaUsersUsersList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataOktaUsersUsersList) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -233,4 +232,3 @@ func (d *jsiiProxy_DataOktaUsersUsersList) ToString() *string {
 
 	return returns
 }
-

@@ -21,9 +21,9 @@ type OktaProvider interface {
 	ApiToken() *string
 	SetApiToken(val *string)
 	ApiTokenInput() *string
-	Backoff() interface{}
-	SetBackoff(val interface{})
-	BackoffInput() interface{}
+	Backoff() any
+	SetBackoff(val any)
+	BackoffInput() any
 	BaseUrl() *string
 	SetBaseUrl(val *string)
 	BaseUrlInput() *string
@@ -33,7 +33,7 @@ type OktaProvider interface {
 	SetClientId(val *string)
 	ClientIdInput() *string
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -54,7 +54,7 @@ type OktaProvider interface {
 	SetMaxWaitSeconds(val *float64)
 	MaxWaitSecondsInput() *float64
 	// Experimental.
-	MetaAttributes() *map[string]interface{}
+	MetaAttributes() *map[string]any
 	MinWaitSeconds() *float64
 	SetMinWaitSeconds(val *float64)
 	MinWaitSecondsInput() *float64
@@ -73,7 +73,7 @@ type OktaProvider interface {
 	PrivateKeyIdInput() *string
 	PrivateKeyInput() *string
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RequestTimeout() *float64
 	SetRequestTimeout(val *float64)
 	RequestTimeoutInput() *float64
@@ -87,7 +87,7 @@ type OktaProvider interface {
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -112,17 +112,17 @@ type OktaProvider interface {
 	ResetPrivateKeyId()
 	ResetRequestTimeout()
 	ResetScopes()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for OktaProvider
@@ -190,8 +190,8 @@ func (j *jsiiProxy_OktaProvider) ApiTokenInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_OktaProvider) Backoff() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OktaProvider) Backoff() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"backoff",
@@ -200,8 +200,8 @@ func (j *jsiiProxy_OktaProvider) Backoff() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_OktaProvider) BackoffInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OktaProvider) BackoffInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"backoffInput",
@@ -260,8 +260,8 @@ func (j *jsiiProxy_OktaProvider) ClientIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_OktaProvider) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_OktaProvider) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -390,8 +390,8 @@ func (j *jsiiProxy_OktaProvider) MaxWaitSecondsInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_OktaProvider) MetaAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_OktaProvider) MetaAttributes() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"metaAttributes",
@@ -510,8 +510,8 @@ func (j *jsiiProxy_OktaProvider) PrivateKeyInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_OktaProvider) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OktaProvider) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -590,7 +590,6 @@ func (j *jsiiProxy_OktaProvider) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs okta} Resource.
 func NewOktaProvider(scope constructs.Construct, id *string, config *OktaProviderConfig) OktaProvider {
 	_init_.Initialize()
@@ -602,7 +601,7 @@ func NewOktaProvider(scope constructs.Construct, id *string, config *OktaProvide
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.provider.OktaProvider",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -615,12 +614,12 @@ func NewOktaProvider_Override(o OktaProvider, scope constructs.Construct, id *st
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.provider.OktaProvider",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		o,
 	)
 }
 
-func (j *jsiiProxy_OktaProvider)SetAccessToken(val *string) {
+func (j *jsiiProxy_OktaProvider) SetAccessToken(val *string) {
 	_jsii_.Set(
 		j,
 		"accessToken",
@@ -628,7 +627,7 @@ func (j *jsiiProxy_OktaProvider)SetAccessToken(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OktaProvider)SetAlias(val *string) {
+func (j *jsiiProxy_OktaProvider) SetAlias(val *string) {
 	_jsii_.Set(
 		j,
 		"alias",
@@ -636,7 +635,7 @@ func (j *jsiiProxy_OktaProvider)SetAlias(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OktaProvider)SetApiToken(val *string) {
+func (j *jsiiProxy_OktaProvider) SetApiToken(val *string) {
 	_jsii_.Set(
 		j,
 		"apiToken",
@@ -644,7 +643,7 @@ func (j *jsiiProxy_OktaProvider)SetApiToken(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OktaProvider)SetBackoff(val interface{}) {
+func (j *jsiiProxy_OktaProvider) SetBackoff(val any) {
 	if err := j.validateSetBackoffParameters(val); err != nil {
 		panic(err)
 	}
@@ -655,7 +654,7 @@ func (j *jsiiProxy_OktaProvider)SetBackoff(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OktaProvider)SetBaseUrl(val *string) {
+func (j *jsiiProxy_OktaProvider) SetBaseUrl(val *string) {
 	_jsii_.Set(
 		j,
 		"baseUrl",
@@ -663,7 +662,7 @@ func (j *jsiiProxy_OktaProvider)SetBaseUrl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OktaProvider)SetClientId(val *string) {
+func (j *jsiiProxy_OktaProvider) SetClientId(val *string) {
 	_jsii_.Set(
 		j,
 		"clientId",
@@ -671,7 +670,7 @@ func (j *jsiiProxy_OktaProvider)SetClientId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OktaProvider)SetHttpProxy(val *string) {
+func (j *jsiiProxy_OktaProvider) SetHttpProxy(val *string) {
 	_jsii_.Set(
 		j,
 		"httpProxy",
@@ -679,7 +678,7 @@ func (j *jsiiProxy_OktaProvider)SetHttpProxy(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OktaProvider)SetLogLevel(val *float64) {
+func (j *jsiiProxy_OktaProvider) SetLogLevel(val *float64) {
 	_jsii_.Set(
 		j,
 		"logLevel",
@@ -687,7 +686,7 @@ func (j *jsiiProxy_OktaProvider)SetLogLevel(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_OktaProvider)SetMaxApiCapacity(val *float64) {
+func (j *jsiiProxy_OktaProvider) SetMaxApiCapacity(val *float64) {
 	_jsii_.Set(
 		j,
 		"maxApiCapacity",
@@ -695,7 +694,7 @@ func (j *jsiiProxy_OktaProvider)SetMaxApiCapacity(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_OktaProvider)SetMaxRetries(val *float64) {
+func (j *jsiiProxy_OktaProvider) SetMaxRetries(val *float64) {
 	_jsii_.Set(
 		j,
 		"maxRetries",
@@ -703,7 +702,7 @@ func (j *jsiiProxy_OktaProvider)SetMaxRetries(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_OktaProvider)SetMaxWaitSeconds(val *float64) {
+func (j *jsiiProxy_OktaProvider) SetMaxWaitSeconds(val *float64) {
 	_jsii_.Set(
 		j,
 		"maxWaitSeconds",
@@ -711,7 +710,7 @@ func (j *jsiiProxy_OktaProvider)SetMaxWaitSeconds(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_OktaProvider)SetMinWaitSeconds(val *float64) {
+func (j *jsiiProxy_OktaProvider) SetMinWaitSeconds(val *float64) {
 	_jsii_.Set(
 		j,
 		"minWaitSeconds",
@@ -719,7 +718,7 @@ func (j *jsiiProxy_OktaProvider)SetMinWaitSeconds(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_OktaProvider)SetOrgName(val *string) {
+func (j *jsiiProxy_OktaProvider) SetOrgName(val *string) {
 	_jsii_.Set(
 		j,
 		"orgName",
@@ -727,7 +726,7 @@ func (j *jsiiProxy_OktaProvider)SetOrgName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OktaProvider)SetParallelism(val *float64) {
+func (j *jsiiProxy_OktaProvider) SetParallelism(val *float64) {
 	_jsii_.Set(
 		j,
 		"parallelism",
@@ -735,7 +734,7 @@ func (j *jsiiProxy_OktaProvider)SetParallelism(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_OktaProvider)SetPrivateKey(val *string) {
+func (j *jsiiProxy_OktaProvider) SetPrivateKey(val *string) {
 	_jsii_.Set(
 		j,
 		"privateKey",
@@ -743,7 +742,7 @@ func (j *jsiiProxy_OktaProvider)SetPrivateKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OktaProvider)SetPrivateKeyId(val *string) {
+func (j *jsiiProxy_OktaProvider) SetPrivateKeyId(val *string) {
 	_jsii_.Set(
 		j,
 		"privateKeyId",
@@ -751,7 +750,7 @@ func (j *jsiiProxy_OktaProvider)SetPrivateKeyId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OktaProvider)SetRequestTimeout(val *float64) {
+func (j *jsiiProxy_OktaProvider) SetRequestTimeout(val *float64) {
 	_jsii_.Set(
 		j,
 		"requestTimeout",
@@ -759,7 +758,7 @@ func (j *jsiiProxy_OktaProvider)SetRequestTimeout(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_OktaProvider)SetScopes(val *[]*string) {
+func (j *jsiiProxy_OktaProvider) SetScopes(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"scopes",
@@ -779,7 +778,7 @@ func OktaProvider_GenerateConfigForImport(scope constructs.Construct, importToId
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.provider.OktaProvider",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -803,7 +802,7 @@ func OktaProvider_GenerateConfigForImport(scope constructs.Construct, importToId
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func OktaProvider_IsConstruct(x interface{}) *bool {
+func OktaProvider_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateOktaProvider_IsConstructParameters(x); err != nil {
@@ -814,7 +813,7 @@ func OktaProvider_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.provider.OktaProvider",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -822,7 +821,7 @@ func OktaProvider_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func OktaProvider_IsTerraformElement(x interface{}) *bool {
+func OktaProvider_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateOktaProvider_IsTerraformElementParameters(x); err != nil {
@@ -833,7 +832,7 @@ func OktaProvider_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.provider.OktaProvider",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -841,7 +840,7 @@ func OktaProvider_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func OktaProvider_IsTerraformProvider(x interface{}) *bool {
+func OktaProvider_IsTerraformProvider(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateOktaProvider_IsTerraformProviderParameters(x); err != nil {
@@ -852,7 +851,7 @@ func OktaProvider_IsTerraformProvider(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.provider.OktaProvider",
 		"isTerraformProvider",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -870,14 +869,14 @@ func OktaProvider_TfResourceType() *string {
 	return returns
 }
 
-func (o *jsiiProxy_OktaProvider) AddOverride(path *string, value interface{}) {
+func (o *jsiiProxy_OktaProvider) AddOverride(path *string, value any) {
 	if err := o.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		o,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
@@ -888,7 +887,7 @@ func (o *jsiiProxy_OktaProvider) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		o,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1044,8 +1043,8 @@ func (o *jsiiProxy_OktaProvider) ResetScopes() {
 	)
 }
 
-func (o *jsiiProxy_OktaProvider) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (o *jsiiProxy_OktaProvider) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
@@ -1057,8 +1056,8 @@ func (o *jsiiProxy_OktaProvider) SynthesizeAttributes() *map[string]interface{} 
 	return returns
 }
 
-func (o *jsiiProxy_OktaProvider) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (o *jsiiProxy_OktaProvider) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
@@ -1070,8 +1069,8 @@ func (o *jsiiProxy_OktaProvider) SynthesizeHclAttributes() *map[string]interface
 	return returns
 }
 
-func (o *jsiiProxy_OktaProvider) ToHclTerraform() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OktaProvider) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -1083,8 +1082,8 @@ func (o *jsiiProxy_OktaProvider) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (o *jsiiProxy_OktaProvider) ToMetadata() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OktaProvider) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -1109,8 +1108,8 @@ func (o *jsiiProxy_OktaProvider) ToString() *string {
 	return returns
 }
 
-func (o *jsiiProxy_OktaProvider) ToTerraform() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OktaProvider) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -1121,4 +1120,3 @@ func (o *jsiiProxy_OktaProvider) ToTerraform() interface{} {
 
 	return returns
 }
-

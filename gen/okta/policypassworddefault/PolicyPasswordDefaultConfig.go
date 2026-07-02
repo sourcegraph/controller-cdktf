@@ -6,9 +6,9 @@ import (
 
 type PolicyPasswordDefaultConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type PolicyPasswordDefaultConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Enable or disable voice call recovery: ACTIVE or INACTIVE. Default: `INACTIVE`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_password_default#call_recovery PolicyPasswordDefault#call_recovery}
@@ -39,19 +39,19 @@ type PolicyPasswordDefaultConfig struct {
 	// Check Passwords Against Common Password Dictionary. Default: `false`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_password_default#password_dictionary_lookup PolicyPasswordDefault#password_dictionary_lookup}
-	PasswordDictionaryLookup interface{} `field:"optional" json:"passwordDictionaryLookup" yaml:"passwordDictionaryLookup"`
+	PasswordDictionaryLookup any `field:"optional" json:"passwordDictionaryLookup" yaml:"passwordDictionaryLookup"`
 	// User firstName attribute must be excluded from the password.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_password_default#password_exclude_first_name PolicyPasswordDefault#password_exclude_first_name}
-	PasswordExcludeFirstName interface{} `field:"optional" json:"passwordExcludeFirstName" yaml:"passwordExcludeFirstName"`
+	PasswordExcludeFirstName any `field:"optional" json:"passwordExcludeFirstName" yaml:"passwordExcludeFirstName"`
 	// User lastName attribute must be excluded from the password.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_password_default#password_exclude_last_name PolicyPasswordDefault#password_exclude_last_name}
-	PasswordExcludeLastName interface{} `field:"optional" json:"passwordExcludeLastName" yaml:"passwordExcludeLastName"`
+	PasswordExcludeLastName any `field:"optional" json:"passwordExcludeLastName" yaml:"passwordExcludeLastName"`
 	// If the user name must be excluded from the password. Default: `true`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_password_default#password_exclude_username PolicyPasswordDefault#password_exclude_username}
-	PasswordExcludeUsername interface{} `field:"optional" json:"passwordExcludeUsername" yaml:"passwordExcludeUsername"`
+	PasswordExcludeUsername any `field:"optional" json:"passwordExcludeUsername" yaml:"passwordExcludeUsername"`
 	// Length in days a user will be warned before password expiry: 0 = no warning. Default: `0`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_password_default#password_expire_warn_days PolicyPasswordDefault#password_expire_warn_days}
@@ -103,7 +103,7 @@ type PolicyPasswordDefaultConfig struct {
 	// If a user should be informed when their account is locked. Default: `false`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_password_default#password_show_lockout_failures PolicyPasswordDefault#password_show_lockout_failures}
-	PasswordShowLockoutFailures interface{} `field:"optional" json:"passwordShowLockoutFailures" yaml:"passwordShowLockoutFailures"`
+	PasswordShowLockoutFailures any `field:"optional" json:"passwordShowLockoutFailures" yaml:"passwordShowLockoutFailures"`
 	// Min length of the password recovery question answer. Default: `4`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_password_default#question_min_length PolicyPasswordDefault#question_min_length}
@@ -121,10 +121,9 @@ type PolicyPasswordDefaultConfig struct {
 	// Default: `false`
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_password_default#skip_unlock PolicyPasswordDefault#skip_unlock}
-	SkipUnlock interface{} `field:"optional" json:"skipUnlock" yaml:"skipUnlock"`
+	SkipUnlock any `field:"optional" json:"skipUnlock" yaml:"skipUnlock"`
 	// Enable or disable SMS password recovery: ACTIVE or INACTIVE. Default: `INACTIVE`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_password_default#sms_recovery PolicyPasswordDefault#sms_recovery}
 	SmsRecovery *string `field:"optional" json:"smsRecovery" yaml:"smsRecovery"`
 }
-

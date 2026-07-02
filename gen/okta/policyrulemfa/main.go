@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.policyRuleMfa.PolicyRuleMfa",
-		reflect.TypeOf((*PolicyRuleMfa)(nil)).Elem(),
+		reflect.TypeFor[PolicyRuleMfa](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -90,7 +90,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "usersExcluded", GoGetter: "UsersExcluded"},
 			_jsii_.MemberProperty{JsiiProperty: "usersExcludedInput", GoGetter: "UsersExcludedInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PolicyRuleMfa{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -98,11 +98,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.policyRuleMfa.PolicyRuleMfaAppExclude",
-		reflect.TypeOf((*PolicyRuleMfaAppExclude)(nil)).Elem(),
+		reflect.TypeFor[PolicyRuleMfaAppExclude](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.policyRuleMfa.PolicyRuleMfaAppExcludeList",
-		reflect.TypeOf((*PolicyRuleMfaAppExcludeList)(nil)).Elem(),
+		reflect.TypeFor[PolicyRuleMfaAppExcludeList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -116,7 +116,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PolicyRuleMfaAppExcludeList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -124,7 +124,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.policyRuleMfa.PolicyRuleMfaAppExcludeOutputReference",
-		reflect.TypeOf((*PolicyRuleMfaAppExcludeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PolicyRuleMfaAppExcludeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -156,7 +156,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PolicyRuleMfaAppExcludeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -164,11 +164,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.policyRuleMfa.PolicyRuleMfaAppInclude",
-		reflect.TypeOf((*PolicyRuleMfaAppInclude)(nil)).Elem(),
+		reflect.TypeFor[PolicyRuleMfaAppInclude](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.policyRuleMfa.PolicyRuleMfaAppIncludeList",
-		reflect.TypeOf((*PolicyRuleMfaAppIncludeList)(nil)).Elem(),
+		reflect.TypeFor[PolicyRuleMfaAppIncludeList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -182,7 +182,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PolicyRuleMfaAppIncludeList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -190,7 +190,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.policyRuleMfa.PolicyRuleMfaAppIncludeOutputReference",
-		reflect.TypeOf((*PolicyRuleMfaAppIncludeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PolicyRuleMfaAppIncludeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -222,7 +222,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PolicyRuleMfaAppIncludeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -230,6 +230,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.policyRuleMfa.PolicyRuleMfaConfig",
-		reflect.TypeOf((*PolicyRuleMfaConfig)(nil)).Elem(),
+		reflect.TypeFor[PolicyRuleMfaConfig](),
 	)
 }

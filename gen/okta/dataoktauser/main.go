@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.dataOktaUser.DataOktaUser",
-		reflect.TypeOf((*DataOktaUser)(nil)).Elem(),
+		reflect.TypeFor[DataOktaUser](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "adminRoles", GoGetter: "AdminRoles"},
@@ -103,7 +103,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userType", GoGetter: "UserType"},
 			_jsii_.MemberProperty{JsiiProperty: "zipCode", GoGetter: "ZipCode"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataOktaUser{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -111,15 +111,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.dataOktaUser.DataOktaUserConfig",
-		reflect.TypeOf((*DataOktaUserConfig)(nil)).Elem(),
+		reflect.TypeFor[DataOktaUserConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.dataOktaUser.DataOktaUserSearch",
-		reflect.TypeOf((*DataOktaUserSearch)(nil)).Elem(),
+		reflect.TypeFor[DataOktaUserSearch](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.dataOktaUser.DataOktaUserSearchList",
-		reflect.TypeOf((*DataOktaUserSearchList)(nil)).Elem(),
+		reflect.TypeFor[DataOktaUserSearchList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -133,7 +133,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataOktaUserSearchList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -141,7 +141,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.dataOktaUser.DataOktaUserSearchOutputReference",
-		reflect.TypeOf((*DataOktaUserSearchOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataOktaUserSearchOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparison", GoGetter: "Comparison"},
 			_jsii_.MemberProperty{JsiiProperty: "comparisonInput", GoGetter: "ComparisonInput"},
@@ -177,7 +177,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataOktaUserSearchOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

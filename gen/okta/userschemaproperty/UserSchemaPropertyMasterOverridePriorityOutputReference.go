@@ -12,9 +12,9 @@ type UserSchemaPropertyMasterOverridePriorityOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,8 +27,8 @@ type UserSchemaPropertyMasterOverridePriorityOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -46,7 +46,7 @@ type UserSchemaPropertyMasterOverridePriorityOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -70,7 +70,7 @@ type UserSchemaPropertyMasterOverridePriorityOutputReference interface {
 	ResetType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,8 +83,8 @@ type jsiiProxy_UserSchemaPropertyMasterOverridePriorityOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_UserSchemaPropertyMasterOverridePriorityOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_UserSchemaPropertyMasterOverridePriorityOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -123,8 +123,8 @@ func (j *jsiiProxy_UserSchemaPropertyMasterOverridePriorityOutputReference) Fqn(
 	return returns
 }
 
-func (j *jsiiProxy_UserSchemaPropertyMasterOverridePriorityOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_UserSchemaPropertyMasterOverridePriorityOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -193,7 +193,6 @@ func (j *jsiiProxy_UserSchemaPropertyMasterOverridePriorityOutputReference) Valu
 	return returns
 }
 
-
 func NewUserSchemaPropertyMasterOverridePriorityOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) UserSchemaPropertyMasterOverridePriorityOutputReference {
 	_init_.Initialize()
 
@@ -204,7 +203,7 @@ func NewUserSchemaPropertyMasterOverridePriorityOutputReference(terraformResourc
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.userSchemaProperty.UserSchemaPropertyMasterOverridePriorityOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -216,12 +215,12 @@ func NewUserSchemaPropertyMasterOverridePriorityOutputReference_Override(u UserS
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.userSchemaProperty.UserSchemaPropertyMasterOverridePriorityOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		u,
 	)
 }
 
-func (j *jsiiProxy_UserSchemaPropertyMasterOverridePriorityOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_UserSchemaPropertyMasterOverridePriorityOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -232,7 +231,7 @@ func (j *jsiiProxy_UserSchemaPropertyMasterOverridePriorityOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_UserSchemaPropertyMasterOverridePriorityOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_UserSchemaPropertyMasterOverridePriorityOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -243,7 +242,7 @@ func (j *jsiiProxy_UserSchemaPropertyMasterOverridePriorityOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_UserSchemaPropertyMasterOverridePriorityOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_UserSchemaPropertyMasterOverridePriorityOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_UserSchemaPropertyMasterOverridePriorityOutputReference)SetIn
 	)
 }
 
-func (j *jsiiProxy_UserSchemaPropertyMasterOverridePriorityOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_UserSchemaPropertyMasterOverridePriorityOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_UserSchemaPropertyMasterOverridePriorityOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_UserSchemaPropertyMasterOverridePriorityOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_UserSchemaPropertyMasterOverridePriorityOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_UserSchemaPropertyMasterOverridePriorityOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_UserSchemaPropertyMasterOverridePriorityOutputReference)SetType(val *string) {
+func (j *jsiiProxy_UserSchemaPropertyMasterOverridePriorityOutputReference) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,7 +286,7 @@ func (j *jsiiProxy_UserSchemaPropertyMasterOverridePriorityOutputReference)SetTy
 	)
 }
 
-func (j *jsiiProxy_UserSchemaPropertyMasterOverridePriorityOutputReference)SetValue(val *string) {
+func (j *jsiiProxy_UserSchemaPropertyMasterOverridePriorityOutputReference) SetValue(val *string) {
 	if err := j.validateSetValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,16 +310,16 @@ func (u *jsiiProxy_UserSchemaPropertyMasterOverridePriorityOutputReference) Comp
 	return returns
 }
 
-func (u *jsiiProxy_UserSchemaPropertyMasterOverridePriorityOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (u *jsiiProxy_UserSchemaPropertyMasterOverridePriorityOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := u.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		u,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -336,7 +335,7 @@ func (u *jsiiProxy_UserSchemaPropertyMasterOverridePriorityOutputReference) GetB
 	_jsii_.Invoke(
 		u,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -352,7 +351,7 @@ func (u *jsiiProxy_UserSchemaPropertyMasterOverridePriorityOutputReference) GetB
 	_jsii_.Invoke(
 		u,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -368,7 +367,7 @@ func (u *jsiiProxy_UserSchemaPropertyMasterOverridePriorityOutputReference) GetL
 	_jsii_.Invoke(
 		u,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -384,7 +383,7 @@ func (u *jsiiProxy_UserSchemaPropertyMasterOverridePriorityOutputReference) GetN
 	_jsii_.Invoke(
 		u,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -400,7 +399,7 @@ func (u *jsiiProxy_UserSchemaPropertyMasterOverridePriorityOutputReference) GetN
 	_jsii_.Invoke(
 		u,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -416,7 +415,7 @@ func (u *jsiiProxy_UserSchemaPropertyMasterOverridePriorityOutputReference) GetN
 	_jsii_.Invoke(
 		u,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -432,7 +431,7 @@ func (u *jsiiProxy_UserSchemaPropertyMasterOverridePriorityOutputReference) GetS
 	_jsii_.Invoke(
 		u,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -448,7 +447,7 @@ func (u *jsiiProxy_UserSchemaPropertyMasterOverridePriorityOutputReference) GetS
 	_jsii_.Invoke(
 		u,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -477,7 +476,7 @@ func (u *jsiiProxy_UserSchemaPropertyMasterOverridePriorityOutputReference) Inte
 	_jsii_.Invoke(
 		u,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -492,16 +491,16 @@ func (u *jsiiProxy_UserSchemaPropertyMasterOverridePriorityOutputReference) Rese
 	)
 }
 
-func (u *jsiiProxy_UserSchemaPropertyMasterOverridePriorityOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (u *jsiiProxy_UserSchemaPropertyMasterOverridePriorityOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := u.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		u,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -520,4 +519,3 @@ func (u *jsiiProxy_UserSchemaPropertyMasterOverridePriorityOutputReference) ToSt
 
 	return returns
 }
-

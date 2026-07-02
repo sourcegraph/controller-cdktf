@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.appOauthRoleAssignment.AppOauthRoleAssignment",
-		reflect.TypeOf((*AppOauthRoleAssignment)(nil)).Elem(),
+		reflect.TypeFor[AppOauthRoleAssignment](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,7 +66,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppOauthRoleAssignment{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -74,6 +74,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.appOauthRoleAssignment.AppOauthRoleAssignmentConfig",
-		reflect.TypeOf((*AppOauthRoleAssignmentConfig)(nil)).Elem(),
+		reflect.TypeFor[AppOauthRoleAssignmentConfig](),
 	)
 }

@@ -98,7 +98,7 @@ func (a *jsiiProxy_AppOauthJwksOutputReference) validateResolveParameters(_conte
 	return nil
 }
 
-func (j *jsiiProxy_AppOauthJwksOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppOauthJwksOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_AppOauthJwksOutputReference) validateSetEParameters(val *stri
 	return nil
 }
 
-func (j *jsiiProxy_AppOauthJwksOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AppOauthJwksOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -270,4 +270,3 @@ func validateNewAppOauthJwksOutputReferenceParameters(terraformResource cdktf.II
 
 	return nil
 }
-

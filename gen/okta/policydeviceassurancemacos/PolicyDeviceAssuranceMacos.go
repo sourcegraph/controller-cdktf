@@ -15,15 +15,15 @@ type PolicyDeviceAssuranceMacos interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreatedBy() *string
 	CreatedDate() *string
 	// Experimental.
@@ -62,72 +62,72 @@ type PolicyDeviceAssuranceMacos interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ScreenlockType() *[]*string
 	SetScreenlockType(val *[]*string)
 	ScreenlockTypeInput() *[]*string
-	SecureHardwarePresent() interface{}
-	SetSecureHardwarePresent(val interface{})
-	SecureHardwarePresentInput() interface{}
+	SecureHardwarePresent() any
+	SetSecureHardwarePresent(val any)
+	SecureHardwarePresentInput() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
-	ThirdPartySignalProviders() interface{}
-	SetThirdPartySignalProviders(val interface{})
-	ThirdPartySignalProvidersInput() interface{}
+	ThirdPartySignalProviders() any
+	SetThirdPartySignalProviders(val any)
+	ThirdPartySignalProvidersInput() any
 	TpspBrowserVersion() *string
 	SetTpspBrowserVersion(val *string)
 	TpspBrowserVersionInput() *string
-	TpspBuiltinDnsClientEnabled() interface{}
-	SetTpspBuiltinDnsClientEnabled(val interface{})
-	TpspBuiltinDnsClientEnabledInput() interface{}
-	TpspChromeRemoteDesktopAppBlocked() interface{}
-	SetTpspChromeRemoteDesktopAppBlocked(val interface{})
-	TpspChromeRemoteDesktopAppBlockedInput() interface{}
+	TpspBuiltinDnsClientEnabled() any
+	SetTpspBuiltinDnsClientEnabled(val any)
+	TpspBuiltinDnsClientEnabledInput() any
+	TpspChromeRemoteDesktopAppBlocked() any
+	SetTpspChromeRemoteDesktopAppBlocked(val any)
+	TpspChromeRemoteDesktopAppBlockedInput() any
 	TpspDeviceEnrollmentDomain() *string
 	SetTpspDeviceEnrollmentDomain(val *string)
 	TpspDeviceEnrollmentDomainInput() *string
-	TpspDiskEncrypted() interface{}
-	SetTpspDiskEncrypted(val interface{})
-	TpspDiskEncryptedInput() interface{}
+	TpspDiskEncrypted() any
+	SetTpspDiskEncrypted(val any)
+	TpspDiskEncryptedInput() any
 	TpspKeyTrustLevel() *string
 	SetTpspKeyTrustLevel(val *string)
 	TpspKeyTrustLevelInput() *string
-	TpspOsFirewall() interface{}
-	SetTpspOsFirewall(val interface{})
-	TpspOsFirewallInput() interface{}
+	TpspOsFirewall() any
+	SetTpspOsFirewall(val any)
+	TpspOsFirewallInput() any
 	TpspOsVersion() *string
 	SetTpspOsVersion(val *string)
 	TpspOsVersionInput() *string
 	TpspPasswordProctectionWarningTrigger() *string
 	SetTpspPasswordProctectionWarningTrigger(val *string)
 	TpspPasswordProctectionWarningTriggerInput() *string
-	TpspRealtimeUrlCheckMode() interface{}
-	SetTpspRealtimeUrlCheckMode(val interface{})
-	TpspRealtimeUrlCheckModeInput() interface{}
+	TpspRealtimeUrlCheckMode() any
+	SetTpspRealtimeUrlCheckMode(val any)
+	TpspRealtimeUrlCheckModeInput() any
 	TpspSafeBrowsingProtectionLevel() *string
 	SetTpspSafeBrowsingProtectionLevel(val *string)
 	TpspSafeBrowsingProtectionLevelInput() *string
-	TpspScreenLockSecured() interface{}
-	SetTpspScreenLockSecured(val interface{})
-	TpspScreenLockSecuredInput() interface{}
-	TpspSiteIsolationEnabled() interface{}
-	SetTpspSiteIsolationEnabled(val interface{})
-	TpspSiteIsolationEnabledInput() interface{}
+	TpspScreenLockSecured() any
+	SetTpspScreenLockSecured(val any)
+	TpspScreenLockSecuredInput() any
+	TpspSiteIsolationEnabled() any
+	SetTpspSiteIsolationEnabled(val any)
+	TpspSiteIsolationEnabledInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -145,7 +145,7 @@ type PolicyDeviceAssuranceMacos interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -157,7 +157,7 @@ type PolicyDeviceAssuranceMacos interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -185,17 +185,17 @@ type PolicyDeviceAssuranceMacos interface {
 	ResetTpspSafeBrowsingProtectionLevel()
 	ResetTpspScreenLockSecured()
 	ResetTpspSiteIsolationEnabled()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for PolicyDeviceAssuranceMacos
@@ -213,8 +213,8 @@ func (j *jsiiProxy_PolicyDeviceAssuranceMacos) CdktfStack() cdktf.TerraformStack
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceMacos) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyDeviceAssuranceMacos) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -223,8 +223,8 @@ func (j *jsiiProxy_PolicyDeviceAssuranceMacos) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceMacos) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_PolicyDeviceAssuranceMacos) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -233,8 +233,8 @@ func (j *jsiiProxy_PolicyDeviceAssuranceMacos) ConstructNodeMetadata() *map[stri
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceMacos) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyDeviceAssuranceMacos) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -433,8 +433,8 @@ func (j *jsiiProxy_PolicyDeviceAssuranceMacos) Provider() cdktf.TerraformProvide
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceMacos) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_PolicyDeviceAssuranceMacos) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -443,8 +443,8 @@ func (j *jsiiProxy_PolicyDeviceAssuranceMacos) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceMacos) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyDeviceAssuranceMacos) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -473,8 +473,8 @@ func (j *jsiiProxy_PolicyDeviceAssuranceMacos) ScreenlockTypeInput() *[]*string 
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceMacos) SecureHardwarePresent() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyDeviceAssuranceMacos) SecureHardwarePresent() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"secureHardwarePresent",
@@ -483,8 +483,8 @@ func (j *jsiiProxy_PolicyDeviceAssuranceMacos) SecureHardwarePresent() interface
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceMacos) SecureHardwarePresentInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyDeviceAssuranceMacos) SecureHardwarePresentInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"secureHardwarePresentInput",
@@ -503,8 +503,8 @@ func (j *jsiiProxy_PolicyDeviceAssuranceMacos) TerraformGeneratorMetadata() *cdk
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceMacos) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_PolicyDeviceAssuranceMacos) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -523,8 +523,8 @@ func (j *jsiiProxy_PolicyDeviceAssuranceMacos) TerraformResourceType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceMacos) ThirdPartySignalProviders() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyDeviceAssuranceMacos) ThirdPartySignalProviders() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"thirdPartySignalProviders",
@@ -533,8 +533,8 @@ func (j *jsiiProxy_PolicyDeviceAssuranceMacos) ThirdPartySignalProviders() inter
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceMacos) ThirdPartySignalProvidersInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyDeviceAssuranceMacos) ThirdPartySignalProvidersInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"thirdPartySignalProvidersInput",
@@ -563,8 +563,8 @@ func (j *jsiiProxy_PolicyDeviceAssuranceMacos) TpspBrowserVersionInput() *string
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceMacos) TpspBuiltinDnsClientEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyDeviceAssuranceMacos) TpspBuiltinDnsClientEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"tpspBuiltinDnsClientEnabled",
@@ -573,8 +573,8 @@ func (j *jsiiProxy_PolicyDeviceAssuranceMacos) TpspBuiltinDnsClientEnabled() int
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceMacos) TpspBuiltinDnsClientEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyDeviceAssuranceMacos) TpspBuiltinDnsClientEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"tpspBuiltinDnsClientEnabledInput",
@@ -583,8 +583,8 @@ func (j *jsiiProxy_PolicyDeviceAssuranceMacos) TpspBuiltinDnsClientEnabledInput(
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceMacos) TpspChromeRemoteDesktopAppBlocked() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyDeviceAssuranceMacos) TpspChromeRemoteDesktopAppBlocked() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"tpspChromeRemoteDesktopAppBlocked",
@@ -593,8 +593,8 @@ func (j *jsiiProxy_PolicyDeviceAssuranceMacos) TpspChromeRemoteDesktopAppBlocked
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceMacos) TpspChromeRemoteDesktopAppBlockedInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyDeviceAssuranceMacos) TpspChromeRemoteDesktopAppBlockedInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"tpspChromeRemoteDesktopAppBlockedInput",
@@ -623,8 +623,8 @@ func (j *jsiiProxy_PolicyDeviceAssuranceMacos) TpspDeviceEnrollmentDomainInput()
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceMacos) TpspDiskEncrypted() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyDeviceAssuranceMacos) TpspDiskEncrypted() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"tpspDiskEncrypted",
@@ -633,8 +633,8 @@ func (j *jsiiProxy_PolicyDeviceAssuranceMacos) TpspDiskEncrypted() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceMacos) TpspDiskEncryptedInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyDeviceAssuranceMacos) TpspDiskEncryptedInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"tpspDiskEncryptedInput",
@@ -663,8 +663,8 @@ func (j *jsiiProxy_PolicyDeviceAssuranceMacos) TpspKeyTrustLevelInput() *string 
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceMacos) TpspOsFirewall() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyDeviceAssuranceMacos) TpspOsFirewall() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"tpspOsFirewall",
@@ -673,8 +673,8 @@ func (j *jsiiProxy_PolicyDeviceAssuranceMacos) TpspOsFirewall() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceMacos) TpspOsFirewallInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyDeviceAssuranceMacos) TpspOsFirewallInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"tpspOsFirewallInput",
@@ -723,8 +723,8 @@ func (j *jsiiProxy_PolicyDeviceAssuranceMacos) TpspPasswordProctectionWarningTri
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceMacos) TpspRealtimeUrlCheckMode() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyDeviceAssuranceMacos) TpspRealtimeUrlCheckMode() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"tpspRealtimeUrlCheckMode",
@@ -733,8 +733,8 @@ func (j *jsiiProxy_PolicyDeviceAssuranceMacos) TpspRealtimeUrlCheckMode() interf
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceMacos) TpspRealtimeUrlCheckModeInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyDeviceAssuranceMacos) TpspRealtimeUrlCheckModeInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"tpspRealtimeUrlCheckModeInput",
@@ -763,8 +763,8 @@ func (j *jsiiProxy_PolicyDeviceAssuranceMacos) TpspSafeBrowsingProtectionLevelIn
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceMacos) TpspScreenLockSecured() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyDeviceAssuranceMacos) TpspScreenLockSecured() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"tpspScreenLockSecured",
@@ -773,8 +773,8 @@ func (j *jsiiProxy_PolicyDeviceAssuranceMacos) TpspScreenLockSecured() interface
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceMacos) TpspScreenLockSecuredInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyDeviceAssuranceMacos) TpspScreenLockSecuredInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"tpspScreenLockSecuredInput",
@@ -783,8 +783,8 @@ func (j *jsiiProxy_PolicyDeviceAssuranceMacos) TpspScreenLockSecuredInput() inte
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceMacos) TpspSiteIsolationEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyDeviceAssuranceMacos) TpspSiteIsolationEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"tpspSiteIsolationEnabled",
@@ -793,8 +793,8 @@ func (j *jsiiProxy_PolicyDeviceAssuranceMacos) TpspSiteIsolationEnabled() interf
 	return returns
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceMacos) TpspSiteIsolationEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PolicyDeviceAssuranceMacos) TpspSiteIsolationEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"tpspSiteIsolationEnabledInput",
@@ -802,7 +802,6 @@ func (j *jsiiProxy_PolicyDeviceAssuranceMacos) TpspSiteIsolationEnabledInput() i
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_device_assurance_macos okta_policy_device_assurance_macos} Resource.
 func NewPolicyDeviceAssuranceMacos(scope constructs.Construct, id *string, config *PolicyDeviceAssuranceMacosConfig) PolicyDeviceAssuranceMacos {
@@ -815,7 +814,7 @@ func NewPolicyDeviceAssuranceMacos(scope constructs.Construct, id *string, confi
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.policyDeviceAssuranceMacos.PolicyDeviceAssuranceMacos",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -828,12 +827,12 @@ func NewPolicyDeviceAssuranceMacos_Override(p PolicyDeviceAssuranceMacos, scope 
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.policyDeviceAssuranceMacos.PolicyDeviceAssuranceMacos",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceMacos)SetConnection(val interface{}) {
+func (j *jsiiProxy_PolicyDeviceAssuranceMacos) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -844,7 +843,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceMacos)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceMacos)SetCount(val interface{}) {
+func (j *jsiiProxy_PolicyDeviceAssuranceMacos) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -855,7 +854,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceMacos)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceMacos)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_PolicyDeviceAssuranceMacos) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -863,7 +862,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceMacos)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceMacos)SetDiskEncryptionType(val *[]*string) {
+func (j *jsiiProxy_PolicyDeviceAssuranceMacos) SetDiskEncryptionType(val *[]*string) {
 	if err := j.validateSetDiskEncryptionTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -874,7 +873,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceMacos)SetDiskEncryptionType(val *[]*stri
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceMacos)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_PolicyDeviceAssuranceMacos) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -882,7 +881,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceMacos)SetForEach(val cdktf.ITerraformIte
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceMacos)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_PolicyDeviceAssuranceMacos) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -893,7 +892,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceMacos)SetLifecycle(val *cdktf.TerraformR
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceMacos)SetName(val *string) {
+func (j *jsiiProxy_PolicyDeviceAssuranceMacos) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -904,7 +903,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceMacos)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceMacos)SetOsVersion(val *string) {
+func (j *jsiiProxy_PolicyDeviceAssuranceMacos) SetOsVersion(val *string) {
 	if err := j.validateSetOsVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -915,7 +914,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceMacos)SetOsVersion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceMacos)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_PolicyDeviceAssuranceMacos) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -923,7 +922,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceMacos)SetProvider(val cdktf.TerraformPro
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceMacos)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_PolicyDeviceAssuranceMacos) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -934,7 +933,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceMacos)SetProvisioners(val *[]interface{}
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceMacos)SetScreenlockType(val *[]*string) {
+func (j *jsiiProxy_PolicyDeviceAssuranceMacos) SetScreenlockType(val *[]*string) {
 	if err := j.validateSetScreenlockTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -945,7 +944,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceMacos)SetScreenlockType(val *[]*string) 
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceMacos)SetSecureHardwarePresent(val interface{}) {
+func (j *jsiiProxy_PolicyDeviceAssuranceMacos) SetSecureHardwarePresent(val any) {
 	if err := j.validateSetSecureHardwarePresentParameters(val); err != nil {
 		panic(err)
 	}
@@ -956,7 +955,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceMacos)SetSecureHardwarePresent(val inter
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceMacos)SetThirdPartySignalProviders(val interface{}) {
+func (j *jsiiProxy_PolicyDeviceAssuranceMacos) SetThirdPartySignalProviders(val any) {
 	if err := j.validateSetThirdPartySignalProvidersParameters(val); err != nil {
 		panic(err)
 	}
@@ -967,7 +966,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceMacos)SetThirdPartySignalProviders(val i
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceMacos)SetTpspBrowserVersion(val *string) {
+func (j *jsiiProxy_PolicyDeviceAssuranceMacos) SetTpspBrowserVersion(val *string) {
 	if err := j.validateSetTpspBrowserVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -978,7 +977,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceMacos)SetTpspBrowserVersion(val *string)
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceMacos)SetTpspBuiltinDnsClientEnabled(val interface{}) {
+func (j *jsiiProxy_PolicyDeviceAssuranceMacos) SetTpspBuiltinDnsClientEnabled(val any) {
 	if err := j.validateSetTpspBuiltinDnsClientEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -989,7 +988,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceMacos)SetTpspBuiltinDnsClientEnabled(val
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceMacos)SetTpspChromeRemoteDesktopAppBlocked(val interface{}) {
+func (j *jsiiProxy_PolicyDeviceAssuranceMacos) SetTpspChromeRemoteDesktopAppBlocked(val any) {
 	if err := j.validateSetTpspChromeRemoteDesktopAppBlockedParameters(val); err != nil {
 		panic(err)
 	}
@@ -1000,7 +999,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceMacos)SetTpspChromeRemoteDesktopAppBlock
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceMacos)SetTpspDeviceEnrollmentDomain(val *string) {
+func (j *jsiiProxy_PolicyDeviceAssuranceMacos) SetTpspDeviceEnrollmentDomain(val *string) {
 	if err := j.validateSetTpspDeviceEnrollmentDomainParameters(val); err != nil {
 		panic(err)
 	}
@@ -1011,7 +1010,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceMacos)SetTpspDeviceEnrollmentDomain(val 
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceMacos)SetTpspDiskEncrypted(val interface{}) {
+func (j *jsiiProxy_PolicyDeviceAssuranceMacos) SetTpspDiskEncrypted(val any) {
 	if err := j.validateSetTpspDiskEncryptedParameters(val); err != nil {
 		panic(err)
 	}
@@ -1022,7 +1021,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceMacos)SetTpspDiskEncrypted(val interface
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceMacos)SetTpspKeyTrustLevel(val *string) {
+func (j *jsiiProxy_PolicyDeviceAssuranceMacos) SetTpspKeyTrustLevel(val *string) {
 	if err := j.validateSetTpspKeyTrustLevelParameters(val); err != nil {
 		panic(err)
 	}
@@ -1033,7 +1032,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceMacos)SetTpspKeyTrustLevel(val *string) 
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceMacos)SetTpspOsFirewall(val interface{}) {
+func (j *jsiiProxy_PolicyDeviceAssuranceMacos) SetTpspOsFirewall(val any) {
 	if err := j.validateSetTpspOsFirewallParameters(val); err != nil {
 		panic(err)
 	}
@@ -1044,7 +1043,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceMacos)SetTpspOsFirewall(val interface{})
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceMacos)SetTpspOsVersion(val *string) {
+func (j *jsiiProxy_PolicyDeviceAssuranceMacos) SetTpspOsVersion(val *string) {
 	if err := j.validateSetTpspOsVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1055,7 +1054,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceMacos)SetTpspOsVersion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceMacos)SetTpspPasswordProctectionWarningTrigger(val *string) {
+func (j *jsiiProxy_PolicyDeviceAssuranceMacos) SetTpspPasswordProctectionWarningTrigger(val *string) {
 	if err := j.validateSetTpspPasswordProctectionWarningTriggerParameters(val); err != nil {
 		panic(err)
 	}
@@ -1066,7 +1065,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceMacos)SetTpspPasswordProctectionWarningT
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceMacos)SetTpspRealtimeUrlCheckMode(val interface{}) {
+func (j *jsiiProxy_PolicyDeviceAssuranceMacos) SetTpspRealtimeUrlCheckMode(val any) {
 	if err := j.validateSetTpspRealtimeUrlCheckModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1077,7 +1076,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceMacos)SetTpspRealtimeUrlCheckMode(val in
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceMacos)SetTpspSafeBrowsingProtectionLevel(val *string) {
+func (j *jsiiProxy_PolicyDeviceAssuranceMacos) SetTpspSafeBrowsingProtectionLevel(val *string) {
 	if err := j.validateSetTpspSafeBrowsingProtectionLevelParameters(val); err != nil {
 		panic(err)
 	}
@@ -1088,7 +1087,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceMacos)SetTpspSafeBrowsingProtectionLevel
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceMacos)SetTpspScreenLockSecured(val interface{}) {
+func (j *jsiiProxy_PolicyDeviceAssuranceMacos) SetTpspScreenLockSecured(val any) {
 	if err := j.validateSetTpspScreenLockSecuredParameters(val); err != nil {
 		panic(err)
 	}
@@ -1099,7 +1098,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceMacos)SetTpspScreenLockSecured(val inter
 	)
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceMacos)SetTpspSiteIsolationEnabled(val interface{}) {
+func (j *jsiiProxy_PolicyDeviceAssuranceMacos) SetTpspSiteIsolationEnabled(val any) {
 	if err := j.validateSetTpspSiteIsolationEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -1122,7 +1121,7 @@ func PolicyDeviceAssuranceMacos_GenerateConfigForImport(scope constructs.Constru
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.policyDeviceAssuranceMacos.PolicyDeviceAssuranceMacos",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1146,7 +1145,7 @@ func PolicyDeviceAssuranceMacos_GenerateConfigForImport(scope constructs.Constru
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func PolicyDeviceAssuranceMacos_IsConstruct(x interface{}) *bool {
+func PolicyDeviceAssuranceMacos_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePolicyDeviceAssuranceMacos_IsConstructParameters(x); err != nil {
@@ -1157,7 +1156,7 @@ func PolicyDeviceAssuranceMacos_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.policyDeviceAssuranceMacos.PolicyDeviceAssuranceMacos",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1165,7 +1164,7 @@ func PolicyDeviceAssuranceMacos_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func PolicyDeviceAssuranceMacos_IsTerraformElement(x interface{}) *bool {
+func PolicyDeviceAssuranceMacos_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePolicyDeviceAssuranceMacos_IsTerraformElementParameters(x); err != nil {
@@ -1176,7 +1175,7 @@ func PolicyDeviceAssuranceMacos_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.policyDeviceAssuranceMacos.PolicyDeviceAssuranceMacos",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1184,7 +1183,7 @@ func PolicyDeviceAssuranceMacos_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func PolicyDeviceAssuranceMacos_IsTerraformResource(x interface{}) *bool {
+func PolicyDeviceAssuranceMacos_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePolicyDeviceAssuranceMacos_IsTerraformResourceParameters(x); err != nil {
@@ -1195,7 +1194,7 @@ func PolicyDeviceAssuranceMacos_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.policyDeviceAssuranceMacos.PolicyDeviceAssuranceMacos",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1220,31 +1219,31 @@ func (p *jsiiProxy_PolicyDeviceAssuranceMacos) AddMoveTarget(moveTarget *string)
 	_jsii_.InvokeVoid(
 		p,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (p *jsiiProxy_PolicyDeviceAssuranceMacos) AddOverride(path *string, value interface{}) {
+func (p *jsiiProxy_PolicyDeviceAssuranceMacos) AddOverride(path *string, value any) {
 	if err := p.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (p *jsiiProxy_PolicyDeviceAssuranceMacos) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_PolicyDeviceAssuranceMacos) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1260,7 +1259,7 @@ func (p *jsiiProxy_PolicyDeviceAssuranceMacos) GetBooleanAttribute(terraformAttr
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1276,7 +1275,7 @@ func (p *jsiiProxy_PolicyDeviceAssuranceMacos) GetBooleanMapAttribute(terraformA
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1292,7 +1291,7 @@ func (p *jsiiProxy_PolicyDeviceAssuranceMacos) GetListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1308,7 +1307,7 @@ func (p *jsiiProxy_PolicyDeviceAssuranceMacos) GetNumberAttribute(terraformAttri
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1324,7 +1323,7 @@ func (p *jsiiProxy_PolicyDeviceAssuranceMacos) GetNumberListAttribute(terraformA
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1340,7 +1339,7 @@ func (p *jsiiProxy_PolicyDeviceAssuranceMacos) GetNumberMapAttribute(terraformAt
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1356,7 +1355,7 @@ func (p *jsiiProxy_PolicyDeviceAssuranceMacos) GetStringAttribute(terraformAttri
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1372,15 +1371,15 @@ func (p *jsiiProxy_PolicyDeviceAssuranceMacos) GetStringMapAttribute(terraformAt
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (p *jsiiProxy_PolicyDeviceAssuranceMacos) HasResourceMove() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PolicyDeviceAssuranceMacos) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1399,7 +1398,7 @@ func (p *jsiiProxy_PolicyDeviceAssuranceMacos) ImportFrom(id *string, provider c
 	_jsii_.InvokeVoid(
 		p,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1412,7 +1411,7 @@ func (p *jsiiProxy_PolicyDeviceAssuranceMacos) InterpolationForAttribute(terrafo
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1426,18 +1425,18 @@ func (p *jsiiProxy_PolicyDeviceAssuranceMacos) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (p *jsiiProxy_PolicyDeviceAssuranceMacos) MoveTo(moveTarget *string, index interface{}) {
+func (p *jsiiProxy_PolicyDeviceAssuranceMacos) MoveTo(moveTarget *string, index any) {
 	if err := p.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1448,7 +1447,7 @@ func (p *jsiiProxy_PolicyDeviceAssuranceMacos) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1459,7 +1458,7 @@ func (p *jsiiProxy_PolicyDeviceAssuranceMacos) OverrideLogicalId(newLogicalId *s
 	_jsii_.InvokeVoid(
 		p,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1615,8 +1614,8 @@ func (p *jsiiProxy_PolicyDeviceAssuranceMacos) ResetTpspSiteIsolationEnabled() {
 	)
 }
 
-func (p *jsiiProxy_PolicyDeviceAssuranceMacos) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (p *jsiiProxy_PolicyDeviceAssuranceMacos) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
@@ -1628,8 +1627,8 @@ func (p *jsiiProxy_PolicyDeviceAssuranceMacos) SynthesizeAttributes() *map[strin
 	return returns
 }
 
-func (p *jsiiProxy_PolicyDeviceAssuranceMacos) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (p *jsiiProxy_PolicyDeviceAssuranceMacos) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
@@ -1641,8 +1640,8 @@ func (p *jsiiProxy_PolicyDeviceAssuranceMacos) SynthesizeHclAttributes() *map[st
 	return returns
 }
 
-func (p *jsiiProxy_PolicyDeviceAssuranceMacos) ToHclTerraform() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PolicyDeviceAssuranceMacos) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1654,8 +1653,8 @@ func (p *jsiiProxy_PolicyDeviceAssuranceMacos) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (p *jsiiProxy_PolicyDeviceAssuranceMacos) ToMetadata() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PolicyDeviceAssuranceMacos) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1680,8 +1679,8 @@ func (p *jsiiProxy_PolicyDeviceAssuranceMacos) ToString() *string {
 	return returns
 }
 
-func (p *jsiiProxy_PolicyDeviceAssuranceMacos) ToTerraform() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PolicyDeviceAssuranceMacos) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1692,4 +1691,3 @@ func (p *jsiiProxy_PolicyDeviceAssuranceMacos) ToTerraform() interface{} {
 
 	return returns
 }
-

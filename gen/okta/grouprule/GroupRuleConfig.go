@@ -6,9 +6,9 @@ import (
 
 type GroupRuleConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GroupRuleConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The expression value.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/group_rule#expression_value GroupRule#expression_value}
@@ -43,7 +43,7 @@ type GroupRuleConfig struct {
 	// Remove users added by this rule from the assigned group after deleting this resource. Default is `false`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/group_rule#remove_assigned_users GroupRule#remove_assigned_users}
-	RemoveAssignedUsers interface{} `field:"optional" json:"removeAssignedUsers" yaml:"removeAssignedUsers"`
+	RemoveAssignedUsers any `field:"optional" json:"removeAssignedUsers" yaml:"removeAssignedUsers"`
 	// Default to `ACTIVE`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/group_rule#status GroupRule#status}
@@ -53,4 +53,3 @@ type GroupRuleConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/group_rule#users_excluded GroupRule#users_excluded}
 	UsersExcluded *[]*string `field:"optional" json:"usersExcluded" yaml:"usersExcluded"`
 }
-

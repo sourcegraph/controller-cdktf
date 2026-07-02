@@ -106,7 +106,7 @@ func (j *jsiiProxy_DataOktaUsersSearchOutputReference) validateSetComparisonPara
 	return nil
 }
 
-func (j *jsiiProxy_DataOktaUsersSearchOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataOktaUsersSearchOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_DataOktaUsersSearchOutputReference) validateSetExpressionPara
 	return nil
 }
 
-func (j *jsiiProxy_DataOktaUsersSearchOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataOktaUsersSearchOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -254,4 +254,3 @@ func validateNewDataOktaUsersSearchOutputReferenceParameters(terraformResource c
 
 	return nil
 }
-

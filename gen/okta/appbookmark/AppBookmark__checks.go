@@ -19,7 +19,7 @@ func (a *jsiiProxy_AppBookmark) validateAddMoveTargetParameters(moveTarget *stri
 	return nil
 }
 
-func (a *jsiiProxy_AppBookmark) validateAddOverrideParameters(path *string, value interface{}) error {
+func (a *jsiiProxy_AppBookmark) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (a *jsiiProxy_AppBookmark) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppBookmark) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (a *jsiiProxy_AppBookmark) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateAppBookmark_GenerateConfigForImportParameters(scope constructs.Cons
 	return nil
 }
 
-func validateAppBookmark_IsConstructParameters(x interface{}) error {
+func validateAppBookmark_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateAppBookmark_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateAppBookmark_IsTerraformElementParameters(x interface{}) error {
+func validateAppBookmark_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateAppBookmark_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateAppBookmark_IsTerraformResourceParameters(x interface{}) error {
+func validateAppBookmark_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -271,7 +271,7 @@ func (j *jsiiProxy_AppBookmark) validateSetAccessibilityLoginRedirectUrlParamete
 	return nil
 }
 
-func (j *jsiiProxy_AppBookmark) validateSetAccessibilitySelfServiceParameters(val interface{}) error {
+func (j *jsiiProxy_AppBookmark) validateSetAccessibilitySelfServiceParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -315,7 +315,7 @@ func (j *jsiiProxy_AppBookmark) validateSetAuthenticationPolicyParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_AppBookmark) validateSetAutoSubmitToolbarParameters(val interface{}) error {
+func (j *jsiiProxy_AppBookmark) validateSetAutoSubmitToolbarParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -335,7 +335,7 @@ func (j *jsiiProxy_AppBookmark) validateSetAutoSubmitToolbarParameters(val inter
 	return nil
 }
 
-func (j *jsiiProxy_AppBookmark) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_AppBookmark) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -368,7 +368,7 @@ func (j *jsiiProxy_AppBookmark) validateSetConnectionParameters(val interface{})
 	return nil
 }
 
-func (j *jsiiProxy_AppBookmark) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_AppBookmark) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -433,7 +433,7 @@ func (j *jsiiProxy_AppBookmark) validateSetEnduserNoteParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_AppBookmark) validateSetHideIosParameters(val interface{}) error {
+func (j *jsiiProxy_AppBookmark) validateSetHideIosParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -453,7 +453,7 @@ func (j *jsiiProxy_AppBookmark) validateSetHideIosParameters(val interface{}) er
 	return nil
 }
 
-func (j *jsiiProxy_AppBookmark) validateSetHideWebParameters(val interface{}) error {
+func (j *jsiiProxy_AppBookmark) validateSetHideWebParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -505,7 +505,7 @@ func (j *jsiiProxy_AppBookmark) validateSetLogoParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_AppBookmark) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_AppBookmark) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -551,7 +551,7 @@ func (j *jsiiProxy_AppBookmark) validateSetProvisionersParameters(val *[]interfa
 	return nil
 }
 
-func (j *jsiiProxy_AppBookmark) validateSetRequestIntegrationParameters(val interface{}) error {
+func (j *jsiiProxy_AppBookmark) validateSetRequestIntegrationParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -605,4 +605,3 @@ func validateNewAppBookmarkParameters(scope constructs.Construct, id *string, co
 
 	return nil
 }
-

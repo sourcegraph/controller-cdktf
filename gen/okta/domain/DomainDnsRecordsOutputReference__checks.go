@@ -98,7 +98,7 @@ func (d *jsiiProxy_DomainDnsRecordsOutputReference) validateResolveParameters(_c
 	return nil
 }
 
-func (j *jsiiProxy_DomainDnsRecordsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DomainDnsRecordsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDomainDnsRecordsOutputReferenceParameters(terraformResource cdkt
 
 	return nil
 }
-

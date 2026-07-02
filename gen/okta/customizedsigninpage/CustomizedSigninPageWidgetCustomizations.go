@@ -1,6 +1,5 @@
 package customizedsigninpage
 
-
 type CustomizedSigninPageWidgetCustomizations struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/customized_signin_page#widget_generation CustomizedSigninPage#widget_generation}.
 	WidgetGeneration *string `field:"required" json:"widgetGeneration" yaml:"widgetGeneration"`
@@ -31,9 +30,9 @@ type CustomizedSigninPageWidgetCustomizations struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/customized_signin_page#password_label CustomizedSigninPage#password_label}.
 	PasswordLabel *string `field:"optional" json:"passwordLabel" yaml:"passwordLabel"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/customized_signin_page#show_password_visibility_toggle CustomizedSigninPage#show_password_visibility_toggle}.
-	ShowPasswordVisibilityToggle interface{} `field:"optional" json:"showPasswordVisibilityToggle" yaml:"showPasswordVisibilityToggle"`
+	ShowPasswordVisibilityToggle any `field:"optional" json:"showPasswordVisibilityToggle" yaml:"showPasswordVisibilityToggle"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/customized_signin_page#show_user_identifier CustomizedSigninPage#show_user_identifier}.
-	ShowUserIdentifier interface{} `field:"optional" json:"showUserIdentifier" yaml:"showUserIdentifier"`
+	ShowUserIdentifier any `field:"optional" json:"showUserIdentifier" yaml:"showUserIdentifier"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/customized_signin_page#sign_in_label CustomizedSigninPage#sign_in_label}.
 	SignInLabel *string `field:"optional" json:"signInLabel" yaml:"signInLabel"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/customized_signin_page#unlock_account_label CustomizedSigninPage#unlock_account_label}.
@@ -45,4 +44,3 @@ type CustomizedSigninPageWidgetCustomizations struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/customized_signin_page#username_label CustomizedSigninPage#username_label}.
 	UsernameLabel *string `field:"optional" json:"usernameLabel" yaml:"usernameLabel"`
 }
-

@@ -34,7 +34,7 @@ func (d *jsiiProxy_DataOktaUserSearchList) validateResolveParameters(_context cd
 	return nil
 }
 
-func (j *jsiiProxy_DataOktaUserSearchList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataOktaUserSearchList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDataOktaUserSearchListParameters(terraformResource cdktf.IInterp
 
 	return nil
 }
-

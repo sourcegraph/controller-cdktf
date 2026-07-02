@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.dataOktaAuthServerClaims.DataOktaAuthServerClaims",
-		reflect.TypeOf((*DataOktaAuthServerClaims)(nil)).Elem(),
+		reflect.TypeFor[DataOktaAuthServerClaims](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "authServerId", GoGetter: "AuthServerId"},
@@ -51,7 +51,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataOktaAuthServerClaims{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -59,11 +59,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.dataOktaAuthServerClaims.DataOktaAuthServerClaimsClaims",
-		reflect.TypeOf((*DataOktaAuthServerClaimsClaims)(nil)).Elem(),
+		reflect.TypeFor[DataOktaAuthServerClaimsClaims](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.dataOktaAuthServerClaims.DataOktaAuthServerClaimsClaimsList",
-		reflect.TypeOf((*DataOktaAuthServerClaimsClaimsList)(nil)).Elem(),
+		reflect.TypeFor[DataOktaAuthServerClaimsClaimsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -76,7 +76,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataOktaAuthServerClaimsClaimsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -84,7 +84,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.dataOktaAuthServerClaims.DataOktaAuthServerClaimsClaimsOutputReference",
-		reflect.TypeOf((*DataOktaAuthServerClaimsClaimsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataOktaAuthServerClaimsClaimsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "alwaysIncludeInToken", GoGetter: "AlwaysIncludeInToken"},
 			_jsii_.MemberProperty{JsiiProperty: "claimType", GoGetter: "ClaimType"},
@@ -116,7 +116,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueType", GoGetter: "ValueType"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataOktaAuthServerClaimsClaimsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -124,6 +124,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.dataOktaAuthServerClaims.DataOktaAuthServerClaimsConfig",
-		reflect.TypeOf((*DataOktaAuthServerClaimsConfig)(nil)).Elem(),
+		reflect.TypeFor[DataOktaAuthServerClaimsConfig](),
 	)
 }

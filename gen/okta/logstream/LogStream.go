@@ -15,15 +15,15 @@ type LogStream interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -51,20 +51,20 @@ type LogStream interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Settings() LogStreamSettingsOutputReference
-	SettingsInput() interface{}
+	SettingsInput() any
 	Status() *string
 	SetStatus(val *string)
 	StatusInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Type() *string
@@ -74,9 +74,9 @@ type LogStream interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -94,7 +94,7 @@ type LogStream interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -106,7 +106,7 @@ type LogStream interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -119,17 +119,17 @@ type LogStream interface {
 	ResetOverrideLogicalId()
 	ResetSettings()
 	ResetStatus()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for LogStream
@@ -147,8 +147,8 @@ func (j *jsiiProxy_LogStream) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_LogStream) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LogStream) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -157,8 +157,8 @@ func (j *jsiiProxy_LogStream) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LogStream) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_LogStream) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -167,8 +167,8 @@ func (j *jsiiProxy_LogStream) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LogStream) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LogStream) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -277,8 +277,8 @@ func (j *jsiiProxy_LogStream) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_LogStream) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_LogStream) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -287,8 +287,8 @@ func (j *jsiiProxy_LogStream) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LogStream) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LogStream) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -307,8 +307,8 @@ func (j *jsiiProxy_LogStream) Settings() LogStreamSettingsOutputReference {
 	return returns
 }
 
-func (j *jsiiProxy_LogStream) SettingsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LogStream) SettingsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"settingsInput",
@@ -347,8 +347,8 @@ func (j *jsiiProxy_LogStream) TerraformGeneratorMetadata() *cdktf.TerraformProvi
 	return returns
 }
 
-func (j *jsiiProxy_LogStream) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_LogStream) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -387,7 +387,6 @@ func (j *jsiiProxy_LogStream) TypeInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/log_stream okta_log_stream} Resource.
 func NewLogStream(scope constructs.Construct, id *string, config *LogStreamConfig) LogStream {
 	_init_.Initialize()
@@ -399,7 +398,7 @@ func NewLogStream(scope constructs.Construct, id *string, config *LogStreamConfi
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.logStream.LogStream",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -412,12 +411,12 @@ func NewLogStream_Override(l LogStream, scope constructs.Construct, id *string, 
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.logStream.LogStream",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LogStream)SetConnection(val interface{}) {
+func (j *jsiiProxy_LogStream) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -428,7 +427,7 @@ func (j *jsiiProxy_LogStream)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LogStream)SetCount(val interface{}) {
+func (j *jsiiProxy_LogStream) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -439,7 +438,7 @@ func (j *jsiiProxy_LogStream)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LogStream)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_LogStream) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -447,7 +446,7 @@ func (j *jsiiProxy_LogStream)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_LogStream)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_LogStream) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -455,7 +454,7 @@ func (j *jsiiProxy_LogStream)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_LogStream)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_LogStream) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -466,7 +465,7 @@ func (j *jsiiProxy_LogStream)SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	)
 }
 
-func (j *jsiiProxy_LogStream)SetName(val *string) {
+func (j *jsiiProxy_LogStream) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -477,7 +476,7 @@ func (j *jsiiProxy_LogStream)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LogStream)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_LogStream) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -485,7 +484,7 @@ func (j *jsiiProxy_LogStream)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_LogStream)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_LogStream) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -496,7 +495,7 @@ func (j *jsiiProxy_LogStream)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LogStream)SetStatus(val *string) {
+func (j *jsiiProxy_LogStream) SetStatus(val *string) {
 	if err := j.validateSetStatusParameters(val); err != nil {
 		panic(err)
 	}
@@ -507,7 +506,7 @@ func (j *jsiiProxy_LogStream)SetStatus(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LogStream)SetType(val *string) {
+func (j *jsiiProxy_LogStream) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -530,7 +529,7 @@ func LogStream_GenerateConfigForImport(scope constructs.Construct, importToId *s
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.logStream.LogStream",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -554,7 +553,7 @@ func LogStream_GenerateConfigForImport(scope constructs.Construct, importToId *s
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func LogStream_IsConstruct(x interface{}) *bool {
+func LogStream_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLogStream_IsConstructParameters(x); err != nil {
@@ -565,7 +564,7 @@ func LogStream_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.logStream.LogStream",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -573,7 +572,7 @@ func LogStream_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func LogStream_IsTerraformElement(x interface{}) *bool {
+func LogStream_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLogStream_IsTerraformElementParameters(x); err != nil {
@@ -584,7 +583,7 @@ func LogStream_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.logStream.LogStream",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -592,7 +591,7 @@ func LogStream_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func LogStream_IsTerraformResource(x interface{}) *bool {
+func LogStream_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLogStream_IsTerraformResourceParameters(x); err != nil {
@@ -603,7 +602,7 @@ func LogStream_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.logStream.LogStream",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -628,31 +627,31 @@ func (l *jsiiProxy_LogStream) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (l *jsiiProxy_LogStream) AddOverride(path *string, value interface{}) {
+func (l *jsiiProxy_LogStream) AddOverride(path *string, value any) {
 	if err := l.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (l *jsiiProxy_LogStream) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_LogStream) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -668,7 +667,7 @@ func (l *jsiiProxy_LogStream) GetBooleanAttribute(terraformAttribute *string) cd
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -684,7 +683,7 @@ func (l *jsiiProxy_LogStream) GetBooleanMapAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -700,7 +699,7 @@ func (l *jsiiProxy_LogStream) GetListAttribute(terraformAttribute *string) *[]*s
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -716,7 +715,7 @@ func (l *jsiiProxy_LogStream) GetNumberAttribute(terraformAttribute *string) *fl
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -732,7 +731,7 @@ func (l *jsiiProxy_LogStream) GetNumberListAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -748,7 +747,7 @@ func (l *jsiiProxy_LogStream) GetNumberMapAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -764,7 +763,7 @@ func (l *jsiiProxy_LogStream) GetStringAttribute(terraformAttribute *string) *st
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -780,15 +779,15 @@ func (l *jsiiProxy_LogStream) GetStringMapAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (l *jsiiProxy_LogStream) HasResourceMove() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LogStream) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -807,7 +806,7 @@ func (l *jsiiProxy_LogStream) ImportFrom(id *string, provider cdktf.TerraformPro
 	_jsii_.InvokeVoid(
 		l,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -820,7 +819,7 @@ func (l *jsiiProxy_LogStream) InterpolationForAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -834,18 +833,18 @@ func (l *jsiiProxy_LogStream) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (l *jsiiProxy_LogStream) MoveTo(moveTarget *string, index interface{}) {
+func (l *jsiiProxy_LogStream) MoveTo(moveTarget *string, index any) {
 	if err := l.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -856,7 +855,7 @@ func (l *jsiiProxy_LogStream) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -867,7 +866,7 @@ func (l *jsiiProxy_LogStream) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -878,7 +877,7 @@ func (l *jsiiProxy_LogStream) PutSettings(value *LogStreamSettings) {
 	_jsii_.InvokeVoid(
 		l,
 		"putSettings",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -906,8 +905,8 @@ func (l *jsiiProxy_LogStream) ResetStatus() {
 	)
 }
 
-func (l *jsiiProxy_LogStream) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (l *jsiiProxy_LogStream) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
@@ -919,8 +918,8 @@ func (l *jsiiProxy_LogStream) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (l *jsiiProxy_LogStream) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (l *jsiiProxy_LogStream) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
@@ -932,8 +931,8 @@ func (l *jsiiProxy_LogStream) SynthesizeHclAttributes() *map[string]interface{} 
 	return returns
 }
 
-func (l *jsiiProxy_LogStream) ToHclTerraform() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LogStream) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -945,8 +944,8 @@ func (l *jsiiProxy_LogStream) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (l *jsiiProxy_LogStream) ToMetadata() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LogStream) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -971,8 +970,8 @@ func (l *jsiiProxy_LogStream) ToString() *string {
 	return returns
 }
 
-func (l *jsiiProxy_LogStream) ToTerraform() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LogStream) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -983,4 +982,3 @@ func (l *jsiiProxy_LogStream) ToTerraform() interface{} {
 
 	return returns
 }
-

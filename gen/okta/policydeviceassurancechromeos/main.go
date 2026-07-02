@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos",
-		reflect.TypeOf((*PolicyDeviceAssuranceChromeos)(nil)).Elem(),
+		reflect.TypeFor[PolicyDeviceAssuranceChromeos](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -103,7 +103,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "tpspSiteIsolationEnabled", GoGetter: "TpspSiteIsolationEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "tpspSiteIsolationEnabledInput", GoGetter: "TpspSiteIsolationEnabledInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PolicyDeviceAssuranceChromeos{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -111,6 +111,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeosConfig",
-		reflect.TypeOf((*PolicyDeviceAssuranceChromeosConfig)(nil)).Elem(),
+		reflect.TypeFor[PolicyDeviceAssuranceChromeosConfig](),
 	)
 }

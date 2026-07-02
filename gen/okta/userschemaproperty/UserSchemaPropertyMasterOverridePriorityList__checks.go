@@ -34,7 +34,7 @@ func (u *jsiiProxy_UserSchemaPropertyMasterOverridePriorityList) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_UserSchemaPropertyMasterOverridePriorityList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_UserSchemaPropertyMasterOverridePriorityList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewUserSchemaPropertyMasterOverridePriorityListParameters(terraform
 
 	return nil
 }
-

@@ -6,9 +6,9 @@ import (
 
 type GroupSchemaPropertyConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GroupSchemaPropertyConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Subschema unique string identifier.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/group_schema_property#index GroupSchemaProperty#index}
@@ -38,7 +38,7 @@ type GroupSchemaPropertyConfig struct {
 	// array_one_of block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/group_schema_property#array_one_of GroupSchemaProperty#array_one_of}
-	ArrayOneOf interface{} `field:"optional" json:"arrayOneOf" yaml:"arrayOneOf"`
+	ArrayOneOf any `field:"optional" json:"arrayOneOf" yaml:"arrayOneOf"`
 	// The type of the array elements if `type` is set to `array`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/group_schema_property#array_type GroupSchemaProperty#array_type}
@@ -71,7 +71,7 @@ type GroupSchemaPropertyConfig struct {
 	// master_override_priority block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/group_schema_property#master_override_priority GroupSchemaProperty#master_override_priority}
-	MasterOverridePriority interface{} `field:"optional" json:"masterOverridePriority" yaml:"masterOverridePriority"`
+	MasterOverridePriority any `field:"optional" json:"masterOverridePriority" yaml:"masterOverridePriority"`
 	// The maximum length of the user property value. Only applies to type `string`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/group_schema_property#max_length GroupSchemaProperty#max_length}
@@ -83,7 +83,7 @@ type GroupSchemaPropertyConfig struct {
 	// one_of block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/group_schema_property#one_of GroupSchemaProperty#one_of}
-	OneOf interface{} `field:"optional" json:"oneOf" yaml:"oneOf"`
+	OneOf any `field:"optional" json:"oneOf" yaml:"oneOf"`
 	// Access control permissions for the property. It can be set to `READ_WRITE`, `READ_ONLY`, `HIDE`. Default: `READ_ONLY`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/group_schema_property#permissions GroupSchemaProperty#permissions}
@@ -91,7 +91,7 @@ type GroupSchemaPropertyConfig struct {
 	// Whether the subschema is required.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/group_schema_property#required GroupSchemaProperty#required}
-	Required interface{} `field:"optional" json:"required" yaml:"required"`
+	Required any `field:"optional" json:"required" yaml:"required"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/group_schema_property#scope GroupSchemaProperty#scope}.
 	Scope *string `field:"optional" json:"scope" yaml:"scope"`
 	// Whether the property should be unique. It can be set to `UNIQUE_VALIDATED` or `NOT_UNIQUE`.
@@ -99,4 +99,3 @@ type GroupSchemaPropertyConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/group_schema_property#unique GroupSchemaProperty#unique}
 	Unique *string `field:"optional" json:"unique" yaml:"unique"`
 }
-

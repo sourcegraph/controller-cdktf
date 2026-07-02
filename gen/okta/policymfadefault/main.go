@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefault",
-		reflect.TypeOf((*PolicyMfaDefault)(nil)).Elem(),
+		reflect.TypeFor[PolicyMfaDefault](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -130,7 +130,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "yubikeyToken", GoGetter: "YubikeyToken"},
 			_jsii_.MemberProperty{JsiiProperty: "yubikeyTokenInput", GoGetter: "YubikeyTokenInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PolicyMfaDefault{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -138,6 +138,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefaultConfig",
-		reflect.TypeOf((*PolicyMfaDefaultConfig)(nil)).Elem(),
+		reflect.TypeFor[PolicyMfaDefaultConfig](),
 	)
 }

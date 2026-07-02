@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.domain.Domain",
-		reflect.TypeOf((*Domain)(nil)).Elem(),
+		reflect.TypeFor[Domain](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,7 +66,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "validationStatus", GoGetter: "ValidationStatus"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Domain{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -74,15 +74,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.domain.DomainConfig",
-		reflect.TypeOf((*DomainConfig)(nil)).Elem(),
+		reflect.TypeFor[DomainConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.domain.DomainDnsRecords",
-		reflect.TypeOf((*DomainDnsRecords)(nil)).Elem(),
+		reflect.TypeFor[DomainDnsRecords](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.domain.DomainDnsRecordsList",
-		reflect.TypeOf((*DomainDnsRecordsList)(nil)).Elem(),
+		reflect.TypeFor[DomainDnsRecordsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -95,7 +95,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DomainDnsRecordsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -103,7 +103,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.domain.DomainDnsRecordsOutputReference",
-		reflect.TypeOf((*DomainDnsRecordsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DomainDnsRecordsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -131,7 +131,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DomainDnsRecordsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

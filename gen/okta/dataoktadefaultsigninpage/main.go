@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.dataOktaDefaultSigninPage.DataOktaDefaultSigninPage",
-		reflect.TypeOf((*DataOktaDefaultSigninPage)(nil)).Elem(),
+		reflect.TypeFor[DataOktaDefaultSigninPage](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "brandId", GoGetter: "BrandId"},
@@ -52,7 +52,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "widgetCustomizations", GoGetter: "WidgetCustomizations"},
 			_jsii_.MemberProperty{JsiiProperty: "widgetVersion", GoGetter: "WidgetVersion"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataOktaDefaultSigninPage{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -60,15 +60,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.dataOktaDefaultSigninPage.DataOktaDefaultSigninPageConfig",
-		reflect.TypeOf((*DataOktaDefaultSigninPageConfig)(nil)).Elem(),
+		reflect.TypeFor[DataOktaDefaultSigninPageConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.dataOktaDefaultSigninPage.DataOktaDefaultSigninPageContentSecurityPolicySetting",
-		reflect.TypeOf((*DataOktaDefaultSigninPageContentSecurityPolicySetting)(nil)).Elem(),
+		reflect.TypeFor[DataOktaDefaultSigninPageContentSecurityPolicySetting](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.dataOktaDefaultSigninPage.DataOktaDefaultSigninPageContentSecurityPolicySettingOutputReference",
-		reflect.TypeOf((*DataOktaDefaultSigninPageContentSecurityPolicySettingOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataOktaDefaultSigninPageContentSecurityPolicySettingOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -95,7 +95,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataOktaDefaultSigninPageContentSecurityPolicySettingOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -103,11 +103,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.dataOktaDefaultSigninPage.DataOktaDefaultSigninPageWidgetCustomizations",
-		reflect.TypeOf((*DataOktaDefaultSigninPageWidgetCustomizations)(nil)).Elem(),
+		reflect.TypeFor[DataOktaDefaultSigninPageWidgetCustomizations](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.dataOktaDefaultSigninPage.DataOktaDefaultSigninPageWidgetCustomizationsOutputReference",
-		reflect.TypeOf((*DataOktaDefaultSigninPageWidgetCustomizationsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataOktaDefaultSigninPageWidgetCustomizationsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authenticatorPageCustomLinkLabel", GoGetter: "AuthenticatorPageCustomLinkLabel"},
 			_jsii_.MemberProperty{JsiiProperty: "authenticatorPageCustomLinkUrl", GoGetter: "AuthenticatorPageCustomLinkUrl"},
@@ -152,7 +152,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "usernameLabel", GoGetter: "UsernameLabel"},
 			_jsii_.MemberProperty{JsiiProperty: "widgetGeneration", GoGetter: "WidgetGeneration"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataOktaDefaultSigninPageWidgetCustomizationsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

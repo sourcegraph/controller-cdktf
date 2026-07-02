@@ -98,7 +98,7 @@ func (i *jsiiProxy_InlineHookHeadersOutputReference) validateResolveParameters(_
 	return nil
 }
 
-func (j *jsiiProxy_InlineHookHeadersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_InlineHookHeadersOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_InlineHookHeadersOutputReference) validateSetComplexObjectIsF
 	return nil
 }
 
-func (j *jsiiProxy_InlineHookHeadersOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_InlineHookHeadersOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewInlineHookHeadersOutputReferenceParameters(terraformResource cdk
 
 	return nil
 }
-

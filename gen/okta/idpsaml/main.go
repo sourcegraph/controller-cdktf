@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.idpSaml.IdpSaml",
-		reflect.TypeOf((*IdpSaml)(nil)).Elem(),
+		reflect.TypeFor[IdpSaml](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountLinkAction", GoGetter: "AccountLinkAction"},
 			_jsii_.MemberProperty{JsiiProperty: "accountLinkActionInput", GoGetter: "AccountLinkActionInput"},
@@ -146,7 +146,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "usernameTemplateInput", GoGetter: "UsernameTemplateInput"},
 			_jsii_.MemberProperty{JsiiProperty: "userTypeId", GoGetter: "UserTypeId"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IdpSaml{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -154,6 +154,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.idpSaml.IdpSamlConfig",
-		reflect.TypeOf((*IdpSamlConfig)(nil)).Elem(),
+		reflect.TypeFor[IdpSamlConfig](),
 	)
 }

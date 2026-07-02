@@ -17,8 +17,8 @@ type AppOauthJwksList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type AppOauthJwksList interface {
 	Get(index *float64) AppOauthJwksOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_AppOauthJwksList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AppOauthJwksList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppOauthJwksList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_AppOauthJwksList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewAppOauthJwksList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppOauthJwksList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewAppOauthJwksList(terraformResource cdktf.IInterpolatingParent, terraform
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.appOauth.AppOauthJwksList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewAppOauthJwksList_Override(a AppOauthJwksList, terraformResource cdktf.II
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.appOauth.AppOauthJwksList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AppOauthJwksList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AppOauthJwksList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_AppOauthJwksList)SetInternalValue(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppOauthJwksList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AppOauthJwksList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_AppOauthJwksList)SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppOauthJwksList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AppOauthJwksList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_AppOauthJwksList)SetTerraformResource(val cdktf.IInterpolatin
 	)
 }
 
-func (j *jsiiProxy_AppOauthJwksList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_AppOauthJwksList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (a *jsiiProxy_AppOauthJwksList) AllWithMapKey(mapKeyAttributeName *string) 
 	_jsii_.Invoke(
 		a,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (a *jsiiProxy_AppOauthJwksList) Get(index *float64) AppOauthJwksOutputRefer
 	_jsii_.Invoke(
 		a,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_AppOauthJwksList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AppOauthJwksList) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (a *jsiiProxy_AppOauthJwksList) ToString() *string {
 
 	return returns
 }
-

@@ -19,7 +19,7 @@ func (u *jsiiProxy_UserBaseSchemaProperty) validateAddMoveTargetParameters(moveT
 	return nil
 }
 
-func (u *jsiiProxy_UserBaseSchemaProperty) validateAddOverrideParameters(path *string, value interface{}) error {
+func (u *jsiiProxy_UserBaseSchemaProperty) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (u *jsiiProxy_UserBaseSchemaProperty) validateMoveFromIdParameters(id *stri
 	return nil
 }
 
-func (u *jsiiProxy_UserBaseSchemaProperty) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (u *jsiiProxy_UserBaseSchemaProperty) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateUserBaseSchemaProperty_GenerateConfigForImportParameters(scope cons
 	return nil
 }
 
-func validateUserBaseSchemaProperty_IsConstructParameters(x interface{}) error {
+func validateUserBaseSchemaProperty_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateUserBaseSchemaProperty_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateUserBaseSchemaProperty_IsTerraformElementParameters(x interface{}) error {
+func validateUserBaseSchemaProperty_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateUserBaseSchemaProperty_IsTerraformElementParameters(x interface{}) 
 	return nil
 }
 
-func validateUserBaseSchemaProperty_IsTerraformResourceParameters(x interface{}) error {
+func validateUserBaseSchemaProperty_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateUserBaseSchemaProperty_IsTerraformResourceParameters(x interface{})
 	return nil
 }
 
-func (j *jsiiProxy_UserBaseSchemaProperty) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_UserBaseSchemaProperty) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_UserBaseSchemaProperty) validateSetConnectionParameters(val i
 	return nil
 }
 
-func (j *jsiiProxy_UserBaseSchemaProperty) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_UserBaseSchemaProperty) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -382,7 +382,7 @@ func (j *jsiiProxy_UserBaseSchemaProperty) validateSetPermissionsParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_UserBaseSchemaProperty) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_UserBaseSchemaProperty) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -428,7 +428,7 @@ func (j *jsiiProxy_UserBaseSchemaProperty) validateSetProvisionersParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_UserBaseSchemaProperty) validateSetRequiredParameters(val interface{}) error {
+func (j *jsiiProxy_UserBaseSchemaProperty) validateSetRequiredParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -490,4 +490,3 @@ func validateNewUserBaseSchemaPropertyParameters(scope constructs.Construct, id 
 
 	return nil
 }
-

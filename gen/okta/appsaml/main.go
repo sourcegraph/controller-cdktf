@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.appSaml.AppSaml",
-		reflect.TypeOf((*AppSaml)(nil)).Elem(),
+		reflect.TypeFor[AppSaml](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessibilityErrorRedirectUrl", GoGetter: "AccessibilityErrorRedirectUrl"},
 			_jsii_.MemberProperty{JsiiProperty: "accessibilityErrorRedirectUrlInput", GoGetter: "AccessibilityErrorRedirectUrlInput"},
@@ -212,7 +212,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userNameTemplateType", GoGetter: "UserNameTemplateType"},
 			_jsii_.MemberProperty{JsiiProperty: "userNameTemplateTypeInput", GoGetter: "UserNameTemplateTypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppSaml{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -220,11 +220,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.appSaml.AppSamlAttributeStatements",
-		reflect.TypeOf((*AppSamlAttributeStatements)(nil)).Elem(),
+		reflect.TypeFor[AppSamlAttributeStatements](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.appSaml.AppSamlAttributeStatementsList",
-		reflect.TypeOf((*AppSamlAttributeStatementsList)(nil)).Elem(),
+		reflect.TypeFor[AppSamlAttributeStatementsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -238,7 +238,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppSamlAttributeStatementsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -246,7 +246,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.appSaml.AppSamlAttributeStatementsOutputReference",
-		reflect.TypeOf((*AppSamlAttributeStatementsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppSamlAttributeStatementsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -287,7 +287,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppSamlAttributeStatementsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -295,15 +295,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.appSaml.AppSamlConfig",
-		reflect.TypeOf((*AppSamlConfig)(nil)).Elem(),
+		reflect.TypeFor[AppSamlConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.appSaml.AppSamlKeys",
-		reflect.TypeOf((*AppSamlKeys)(nil)).Elem(),
+		reflect.TypeFor[AppSamlKeys](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.appSaml.AppSamlKeysList",
-		reflect.TypeOf((*AppSamlKeysList)(nil)).Elem(),
+		reflect.TypeFor[AppSamlKeysList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -316,7 +316,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppSamlKeysList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -324,7 +324,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.appSaml.AppSamlKeysOutputReference",
-		reflect.TypeOf((*AppSamlKeysOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppSamlKeysOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -358,7 +358,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "x5C", GoGetter: "X5C"},
 			_jsii_.MemberProperty{JsiiProperty: "x5TS256", GoGetter: "X5TS256"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppSamlKeysOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -366,11 +366,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.appSaml.AppSamlTimeouts",
-		reflect.TypeOf((*AppSamlTimeouts)(nil)).Elem(),
+		reflect.TypeFor[AppSamlTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.appSaml.AppSamlTimeoutsOutputReference",
-		reflect.TypeOf((*AppSamlTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppSamlTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -403,7 +403,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppSamlTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

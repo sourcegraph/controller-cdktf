@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.appSignonPolicyRule.AppSignonPolicyRule",
-		reflect.TypeOf((*AppSignonPolicyRule)(nil)).Elem(),
+		reflect.TypeFor[AppSignonPolicyRule](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "access", GoGetter: "Access"},
 			_jsii_.MemberProperty{JsiiProperty: "accessInput", GoGetter: "AccessInput"},
@@ -131,7 +131,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userTypesIncluded", GoGetter: "UserTypesIncluded"},
 			_jsii_.MemberProperty{JsiiProperty: "userTypesIncludedInput", GoGetter: "UserTypesIncludedInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppSignonPolicyRule{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -139,15 +139,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.appSignonPolicyRule.AppSignonPolicyRuleConfig",
-		reflect.TypeOf((*AppSignonPolicyRuleConfig)(nil)).Elem(),
+		reflect.TypeFor[AppSignonPolicyRuleConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.appSignonPolicyRule.AppSignonPolicyRulePlatformInclude",
-		reflect.TypeOf((*AppSignonPolicyRulePlatformInclude)(nil)).Elem(),
+		reflect.TypeFor[AppSignonPolicyRulePlatformInclude](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.appSignonPolicyRule.AppSignonPolicyRulePlatformIncludeList",
-		reflect.TypeOf((*AppSignonPolicyRulePlatformIncludeList)(nil)).Elem(),
+		reflect.TypeFor[AppSignonPolicyRulePlatformIncludeList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -161,7 +161,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppSignonPolicyRulePlatformIncludeList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -169,7 +169,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.appSignonPolicyRule.AppSignonPolicyRulePlatformIncludeOutputReference",
-		reflect.TypeOf((*AppSignonPolicyRulePlatformIncludeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppSignonPolicyRulePlatformIncludeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -202,7 +202,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppSignonPolicyRulePlatformIncludeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

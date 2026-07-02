@@ -98,7 +98,7 @@ func (g *jsiiProxy_GroupSchemaPropertyMasterOverridePriorityOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_GroupSchemaPropertyMasterOverridePriorityOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GroupSchemaPropertyMasterOverridePriorityOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_GroupSchemaPropertyMasterOverridePriorityOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_GroupSchemaPropertyMasterOverridePriorityOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GroupSchemaPropertyMasterOverridePriorityOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGroupSchemaPropertyMasterOverridePriorityOutputReferenceParamete
 
 	return nil
 }
-

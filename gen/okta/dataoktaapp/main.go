@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.dataOktaApp.DataOktaApp",
-		reflect.TypeOf((*DataOktaApp)(nil)).Elem(),
+		reflect.TypeFor[DataOktaApp](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "activeOnly", GoGetter: "ActiveOnly"},
 			_jsii_.MemberProperty{JsiiProperty: "activeOnlyInput", GoGetter: "ActiveOnlyInput"},
@@ -68,7 +68,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "users", GoGetter: "Users"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataOktaApp{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -76,6 +76,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.dataOktaApp.DataOktaAppConfig",
-		reflect.TypeOf((*DataOktaAppConfig)(nil)).Elem(),
+		reflect.TypeFor[DataOktaAppConfig](),
 	)
 }

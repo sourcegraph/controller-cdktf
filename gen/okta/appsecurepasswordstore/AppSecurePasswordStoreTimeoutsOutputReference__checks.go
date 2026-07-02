@@ -98,7 +98,7 @@ func (a *jsiiProxy_AppSecurePasswordStoreTimeoutsOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_AppSecurePasswordStoreTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppSecurePasswordStoreTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_AppSecurePasswordStoreTimeoutsOutputReference) validateSetCre
 	return nil
 }
 
-func (j *jsiiProxy_AppSecurePasswordStoreTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AppSecurePasswordStoreTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewAppSecurePasswordStoreTimeoutsOutputReferenceParameters(terrafor
 
 	return nil
 }
-

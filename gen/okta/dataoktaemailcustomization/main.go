@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.dataOktaEmailCustomization.DataOktaEmailCustomization",
-		reflect.TypeOf((*DataOktaEmailCustomization)(nil)).Elem(),
+		reflect.TypeFor[DataOktaEmailCustomization](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "body", GoGetter: "Body"},
@@ -57,7 +57,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataOktaEmailCustomization{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -65,6 +65,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.dataOktaEmailCustomization.DataOktaEmailCustomizationConfig",
-		reflect.TypeOf((*DataOktaEmailCustomizationConfig)(nil)).Elem(),
+		reflect.TypeFor[DataOktaEmailCustomizationConfig](),
 	)
 }

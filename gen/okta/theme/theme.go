@@ -22,15 +22,15 @@ type Theme interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -79,11 +79,11 @@ type Theme interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SecondaryColorContrastHex() *string
 	SetSecondaryColorContrastHex(val *string)
 	SecondaryColorContrastHexInput() *string
@@ -96,7 +96,7 @@ type Theme interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	ThemeId() *string
@@ -106,9 +106,9 @@ type Theme interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -126,7 +126,7 @@ type Theme interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -138,7 +138,7 @@ type Theme interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -160,17 +160,17 @@ type Theme interface {
 	ResetSecondaryColorHex()
 	ResetSignInPageTouchPointVariant()
 	ResetThemeId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for Theme
@@ -238,8 +238,8 @@ func (j *jsiiProxy_Theme) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_Theme) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Theme) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -248,8 +248,8 @@ func (j *jsiiProxy_Theme) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Theme) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Theme) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -258,8 +258,8 @@ func (j *jsiiProxy_Theme) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Theme) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Theme) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -518,8 +518,8 @@ func (j *jsiiProxy_Theme) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_Theme) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_Theme) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -528,8 +528,8 @@ func (j *jsiiProxy_Theme) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Theme) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Theme) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -608,8 +608,8 @@ func (j *jsiiProxy_Theme) TerraformGeneratorMetadata() *cdktf.TerraformProviderG
 	return returns
 }
 
-func (j *jsiiProxy_Theme) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Theme) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -648,7 +648,6 @@ func (j *jsiiProxy_Theme) ThemeIdInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/theme okta_theme} Resource.
 func NewTheme(scope constructs.Construct, id *string, config *ThemeConfig) Theme {
 	_init_.Initialize()
@@ -660,7 +659,7 @@ func NewTheme(scope constructs.Construct, id *string, config *ThemeConfig) Theme
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.theme.Theme",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -673,12 +672,12 @@ func NewTheme_Override(t Theme, scope constructs.Construct, id *string, config *
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.theme.Theme",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		t,
 	)
 }
 
-func (j *jsiiProxy_Theme)SetBackgroundImage(val *string) {
+func (j *jsiiProxy_Theme) SetBackgroundImage(val *string) {
 	if err := j.validateSetBackgroundImageParameters(val); err != nil {
 		panic(err)
 	}
@@ -689,7 +688,7 @@ func (j *jsiiProxy_Theme)SetBackgroundImage(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Theme)SetBrandId(val *string) {
+func (j *jsiiProxy_Theme) SetBrandId(val *string) {
 	if err := j.validateSetBrandIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -700,7 +699,7 @@ func (j *jsiiProxy_Theme)SetBrandId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Theme)SetConnection(val interface{}) {
+func (j *jsiiProxy_Theme) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -711,7 +710,7 @@ func (j *jsiiProxy_Theme)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Theme)SetCount(val interface{}) {
+func (j *jsiiProxy_Theme) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -722,7 +721,7 @@ func (j *jsiiProxy_Theme)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Theme)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_Theme) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -730,7 +729,7 @@ func (j *jsiiProxy_Theme)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Theme)SetEmailTemplateTouchPointVariant(val *string) {
+func (j *jsiiProxy_Theme) SetEmailTemplateTouchPointVariant(val *string) {
 	if err := j.validateSetEmailTemplateTouchPointVariantParameters(val); err != nil {
 		panic(err)
 	}
@@ -741,7 +740,7 @@ func (j *jsiiProxy_Theme)SetEmailTemplateTouchPointVariant(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Theme)SetEndUserDashboardTouchPointVariant(val *string) {
+func (j *jsiiProxy_Theme) SetEndUserDashboardTouchPointVariant(val *string) {
 	if err := j.validateSetEndUserDashboardTouchPointVariantParameters(val); err != nil {
 		panic(err)
 	}
@@ -752,7 +751,7 @@ func (j *jsiiProxy_Theme)SetEndUserDashboardTouchPointVariant(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Theme)SetErrorPageTouchPointVariant(val *string) {
+func (j *jsiiProxy_Theme) SetErrorPageTouchPointVariant(val *string) {
 	if err := j.validateSetErrorPageTouchPointVariantParameters(val); err != nil {
 		panic(err)
 	}
@@ -763,7 +762,7 @@ func (j *jsiiProxy_Theme)SetErrorPageTouchPointVariant(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Theme)SetFavicon(val *string) {
+func (j *jsiiProxy_Theme) SetFavicon(val *string) {
 	if err := j.validateSetFaviconParameters(val); err != nil {
 		panic(err)
 	}
@@ -774,7 +773,7 @@ func (j *jsiiProxy_Theme)SetFavicon(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Theme)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Theme) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -782,7 +781,7 @@ func (j *jsiiProxy_Theme)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_Theme)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Theme) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -793,7 +792,7 @@ func (j *jsiiProxy_Theme)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	)
 }
 
-func (j *jsiiProxy_Theme)SetLogo(val *string) {
+func (j *jsiiProxy_Theme) SetLogo(val *string) {
 	if err := j.validateSetLogoParameters(val); err != nil {
 		panic(err)
 	}
@@ -804,7 +803,7 @@ func (j *jsiiProxy_Theme)SetLogo(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Theme)SetPrimaryColorContrastHex(val *string) {
+func (j *jsiiProxy_Theme) SetPrimaryColorContrastHex(val *string) {
 	if err := j.validateSetPrimaryColorContrastHexParameters(val); err != nil {
 		panic(err)
 	}
@@ -815,7 +814,7 @@ func (j *jsiiProxy_Theme)SetPrimaryColorContrastHex(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Theme)SetPrimaryColorHex(val *string) {
+func (j *jsiiProxy_Theme) SetPrimaryColorHex(val *string) {
 	if err := j.validateSetPrimaryColorHexParameters(val); err != nil {
 		panic(err)
 	}
@@ -826,7 +825,7 @@ func (j *jsiiProxy_Theme)SetPrimaryColorHex(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Theme)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Theme) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -834,7 +833,7 @@ func (j *jsiiProxy_Theme)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_Theme)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_Theme) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -845,7 +844,7 @@ func (j *jsiiProxy_Theme)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Theme)SetSecondaryColorContrastHex(val *string) {
+func (j *jsiiProxy_Theme) SetSecondaryColorContrastHex(val *string) {
 	if err := j.validateSetSecondaryColorContrastHexParameters(val); err != nil {
 		panic(err)
 	}
@@ -856,7 +855,7 @@ func (j *jsiiProxy_Theme)SetSecondaryColorContrastHex(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Theme)SetSecondaryColorHex(val *string) {
+func (j *jsiiProxy_Theme) SetSecondaryColorHex(val *string) {
 	if err := j.validateSetSecondaryColorHexParameters(val); err != nil {
 		panic(err)
 	}
@@ -867,7 +866,7 @@ func (j *jsiiProxy_Theme)SetSecondaryColorHex(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Theme)SetSignInPageTouchPointVariant(val *string) {
+func (j *jsiiProxy_Theme) SetSignInPageTouchPointVariant(val *string) {
 	if err := j.validateSetSignInPageTouchPointVariantParameters(val); err != nil {
 		panic(err)
 	}
@@ -878,7 +877,7 @@ func (j *jsiiProxy_Theme)SetSignInPageTouchPointVariant(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Theme)SetThemeId(val *string) {
+func (j *jsiiProxy_Theme) SetThemeId(val *string) {
 	if err := j.validateSetThemeIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -901,7 +900,7 @@ func Theme_GenerateConfigForImport(scope constructs.Construct, importToId *strin
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.theme.Theme",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -925,7 +924,7 @@ func Theme_GenerateConfigForImport(scope constructs.Construct, importToId *strin
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func Theme_IsConstruct(x interface{}) *bool {
+func Theme_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateTheme_IsConstructParameters(x); err != nil {
@@ -936,7 +935,7 @@ func Theme_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.theme.Theme",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -944,7 +943,7 @@ func Theme_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func Theme_IsTerraformElement(x interface{}) *bool {
+func Theme_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateTheme_IsTerraformElementParameters(x); err != nil {
@@ -955,7 +954,7 @@ func Theme_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.theme.Theme",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -963,7 +962,7 @@ func Theme_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func Theme_IsTerraformResource(x interface{}) *bool {
+func Theme_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateTheme_IsTerraformResourceParameters(x); err != nil {
@@ -974,7 +973,7 @@ func Theme_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.theme.Theme",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -999,31 +998,31 @@ func (t *jsiiProxy_Theme) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		t,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (t *jsiiProxy_Theme) AddOverride(path *string, value interface{}) {
+func (t *jsiiProxy_Theme) AddOverride(path *string, value any) {
 	if err := t.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		t,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (t *jsiiProxy_Theme) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (t *jsiiProxy_Theme) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := t.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		t,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1039,7 +1038,7 @@ func (t *jsiiProxy_Theme) GetBooleanAttribute(terraformAttribute *string) cdktf.
 	_jsii_.Invoke(
 		t,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1055,7 +1054,7 @@ func (t *jsiiProxy_Theme) GetBooleanMapAttribute(terraformAttribute *string) *ma
 	_jsii_.Invoke(
 		t,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1071,7 +1070,7 @@ func (t *jsiiProxy_Theme) GetListAttribute(terraformAttribute *string) *[]*strin
 	_jsii_.Invoke(
 		t,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1087,7 +1086,7 @@ func (t *jsiiProxy_Theme) GetNumberAttribute(terraformAttribute *string) *float6
 	_jsii_.Invoke(
 		t,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1103,7 +1102,7 @@ func (t *jsiiProxy_Theme) GetNumberListAttribute(terraformAttribute *string) *[]
 	_jsii_.Invoke(
 		t,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1119,7 +1118,7 @@ func (t *jsiiProxy_Theme) GetNumberMapAttribute(terraformAttribute *string) *map
 	_jsii_.Invoke(
 		t,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1135,7 +1134,7 @@ func (t *jsiiProxy_Theme) GetStringAttribute(terraformAttribute *string) *string
 	_jsii_.Invoke(
 		t,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1151,15 +1150,15 @@ func (t *jsiiProxy_Theme) GetStringMapAttribute(terraformAttribute *string) *map
 	_jsii_.Invoke(
 		t,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (t *jsiiProxy_Theme) HasResourceMove() interface{} {
-	var returns interface{}
+func (t *jsiiProxy_Theme) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		t,
@@ -1178,7 +1177,7 @@ func (t *jsiiProxy_Theme) ImportFrom(id *string, provider cdktf.TerraformProvide
 	_jsii_.InvokeVoid(
 		t,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1191,7 +1190,7 @@ func (t *jsiiProxy_Theme) InterpolationForAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		t,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1205,18 +1204,18 @@ func (t *jsiiProxy_Theme) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		t,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (t *jsiiProxy_Theme) MoveTo(moveTarget *string, index interface{}) {
+func (t *jsiiProxy_Theme) MoveTo(moveTarget *string, index any) {
 	if err := t.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		t,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1227,7 +1226,7 @@ func (t *jsiiProxy_Theme) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		t,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1238,7 +1237,7 @@ func (t *jsiiProxy_Theme) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		t,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1346,8 +1345,8 @@ func (t *jsiiProxy_Theme) ResetThemeId() {
 	)
 }
 
-func (t *jsiiProxy_Theme) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (t *jsiiProxy_Theme) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		t,
@@ -1359,8 +1358,8 @@ func (t *jsiiProxy_Theme) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (t *jsiiProxy_Theme) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (t *jsiiProxy_Theme) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		t,
@@ -1372,8 +1371,8 @@ func (t *jsiiProxy_Theme) SynthesizeHclAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (t *jsiiProxy_Theme) ToHclTerraform() interface{} {
-	var returns interface{}
+func (t *jsiiProxy_Theme) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		t,
@@ -1385,8 +1384,8 @@ func (t *jsiiProxy_Theme) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (t *jsiiProxy_Theme) ToMetadata() interface{} {
-	var returns interface{}
+func (t *jsiiProxy_Theme) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		t,
@@ -1411,8 +1410,8 @@ func (t *jsiiProxy_Theme) ToString() *string {
 	return returns
 }
 
-func (t *jsiiProxy_Theme) ToTerraform() interface{} {
-	var returns interface{}
+func (t *jsiiProxy_Theme) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		t,
@@ -1423,4 +1422,3 @@ func (t *jsiiProxy_Theme) ToTerraform() interface{} {
 
 	return returns
 }
-

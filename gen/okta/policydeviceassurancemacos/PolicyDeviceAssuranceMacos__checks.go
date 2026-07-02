@@ -19,7 +19,7 @@ func (p *jsiiProxy_PolicyDeviceAssuranceMacos) validateAddMoveTargetParameters(m
 	return nil
 }
 
-func (p *jsiiProxy_PolicyDeviceAssuranceMacos) validateAddOverrideParameters(path *string, value interface{}) error {
+func (p *jsiiProxy_PolicyDeviceAssuranceMacos) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (p *jsiiProxy_PolicyDeviceAssuranceMacos) validateMoveFromIdParameters(id *
 	return nil
 }
 
-func (p *jsiiProxy_PolicyDeviceAssuranceMacos) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (p *jsiiProxy_PolicyDeviceAssuranceMacos) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validatePolicyDeviceAssuranceMacos_GenerateConfigForImportParameters(scope 
 	return nil
 }
 
-func validatePolicyDeviceAssuranceMacos_IsConstructParameters(x interface{}) error {
+func validatePolicyDeviceAssuranceMacos_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validatePolicyDeviceAssuranceMacos_IsConstructParameters(x interface{}) err
 	return nil
 }
 
-func validatePolicyDeviceAssuranceMacos_IsTerraformElementParameters(x interface{}) error {
+func validatePolicyDeviceAssuranceMacos_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validatePolicyDeviceAssuranceMacos_IsTerraformElementParameters(x interface
 	return nil
 }
 
-func validatePolicyDeviceAssuranceMacos_IsTerraformResourceParameters(x interface{}) error {
+func validatePolicyDeviceAssuranceMacos_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validatePolicyDeviceAssuranceMacos_IsTerraformResourceParameters(x interfac
 	return nil
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceMacos) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_PolicyDeviceAssuranceMacos) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceMacos) validateSetConnectionParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceMacos) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_PolicyDeviceAssuranceMacos) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -366,7 +366,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceMacos) validateSetOsVersionParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceMacos) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_PolicyDeviceAssuranceMacos) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -420,7 +420,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceMacos) validateSetScreenlockTypeParamete
 	return nil
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceMacos) validateSetSecureHardwarePresentParameters(val interface{}) error {
+func (j *jsiiProxy_PolicyDeviceAssuranceMacos) validateSetSecureHardwarePresentParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -440,7 +440,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceMacos) validateSetSecureHardwarePresentP
 	return nil
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceMacos) validateSetThirdPartySignalProvidersParameters(val interface{}) error {
+func (j *jsiiProxy_PolicyDeviceAssuranceMacos) validateSetThirdPartySignalProvidersParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -468,7 +468,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceMacos) validateSetTpspBrowserVersionPara
 	return nil
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceMacos) validateSetTpspBuiltinDnsClientEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_PolicyDeviceAssuranceMacos) validateSetTpspBuiltinDnsClientEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -488,7 +488,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceMacos) validateSetTpspBuiltinDnsClientEn
 	return nil
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceMacos) validateSetTpspChromeRemoteDesktopAppBlockedParameters(val interface{}) error {
+func (j *jsiiProxy_PolicyDeviceAssuranceMacos) validateSetTpspChromeRemoteDesktopAppBlockedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -516,7 +516,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceMacos) validateSetTpspDeviceEnrollmentDo
 	return nil
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceMacos) validateSetTpspDiskEncryptedParameters(val interface{}) error {
+func (j *jsiiProxy_PolicyDeviceAssuranceMacos) validateSetTpspDiskEncryptedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -544,7 +544,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceMacos) validateSetTpspKeyTrustLevelParam
 	return nil
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceMacos) validateSetTpspOsFirewallParameters(val interface{}) error {
+func (j *jsiiProxy_PolicyDeviceAssuranceMacos) validateSetTpspOsFirewallParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -580,7 +580,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceMacos) validateSetTpspPasswordProctectio
 	return nil
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceMacos) validateSetTpspRealtimeUrlCheckModeParameters(val interface{}) error {
+func (j *jsiiProxy_PolicyDeviceAssuranceMacos) validateSetTpspRealtimeUrlCheckModeParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -608,7 +608,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceMacos) validateSetTpspSafeBrowsingProtec
 	return nil
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceMacos) validateSetTpspScreenLockSecuredParameters(val interface{}) error {
+func (j *jsiiProxy_PolicyDeviceAssuranceMacos) validateSetTpspScreenLockSecuredParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -628,7 +628,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceMacos) validateSetTpspScreenLockSecuredP
 	return nil
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceMacos) validateSetTpspSiteIsolationEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_PolicyDeviceAssuranceMacos) validateSetTpspSiteIsolationEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -666,4 +666,3 @@ func validateNewPolicyDeviceAssuranceMacosParameters(scope constructs.Construct,
 
 	return nil
 }
-

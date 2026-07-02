@@ -18,15 +18,15 @@ type AdminRoleTargets interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -56,11 +56,11 @@ type AdminRoleTargets interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RoleId() *string
 	RoleType() *string
 	SetRoleType(val *string)
@@ -68,7 +68,7 @@ type AdminRoleTargets interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	UserId() *string
@@ -78,9 +78,9 @@ type AdminRoleTargets interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -98,7 +98,7 @@ type AdminRoleTargets interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -110,7 +110,7 @@ type AdminRoleTargets interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -123,17 +123,17 @@ type AdminRoleTargets interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for AdminRoleTargets
@@ -171,8 +171,8 @@ func (j *jsiiProxy_AdminRoleTargets) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_AdminRoleTargets) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AdminRoleTargets) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -181,8 +181,8 @@ func (j *jsiiProxy_AdminRoleTargets) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AdminRoleTargets) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AdminRoleTargets) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -191,8 +191,8 @@ func (j *jsiiProxy_AdminRoleTargets) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_AdminRoleTargets) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AdminRoleTargets) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -311,8 +311,8 @@ func (j *jsiiProxy_AdminRoleTargets) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_AdminRoleTargets) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_AdminRoleTargets) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -321,8 +321,8 @@ func (j *jsiiProxy_AdminRoleTargets) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AdminRoleTargets) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AdminRoleTargets) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -371,8 +371,8 @@ func (j *jsiiProxy_AdminRoleTargets) TerraformGeneratorMetadata() *cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_AdminRoleTargets) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AdminRoleTargets) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -411,7 +411,6 @@ func (j *jsiiProxy_AdminRoleTargets) UserIdInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/admin_role_targets okta_admin_role_targets} Resource.
 func NewAdminRoleTargets(scope constructs.Construct, id *string, config *AdminRoleTargetsConfig) AdminRoleTargets {
 	_init_.Initialize()
@@ -423,7 +422,7 @@ func NewAdminRoleTargets(scope constructs.Construct, id *string, config *AdminRo
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.adminRoleTargets.AdminRoleTargets",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -436,12 +435,12 @@ func NewAdminRoleTargets_Override(a AdminRoleTargets, scope constructs.Construct
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.adminRoleTargets.AdminRoleTargets",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AdminRoleTargets)SetApps(val *[]*string) {
+func (j *jsiiProxy_AdminRoleTargets) SetApps(val *[]*string) {
 	if err := j.validateSetAppsParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,7 +451,7 @@ func (j *jsiiProxy_AdminRoleTargets)SetApps(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AdminRoleTargets)SetConnection(val interface{}) {
+func (j *jsiiProxy_AdminRoleTargets) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -463,7 +462,7 @@ func (j *jsiiProxy_AdminRoleTargets)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AdminRoleTargets)SetCount(val interface{}) {
+func (j *jsiiProxy_AdminRoleTargets) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -474,7 +473,7 @@ func (j *jsiiProxy_AdminRoleTargets)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AdminRoleTargets)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_AdminRoleTargets) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -482,7 +481,7 @@ func (j *jsiiProxy_AdminRoleTargets)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AdminRoleTargets)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_AdminRoleTargets) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -490,7 +489,7 @@ func (j *jsiiProxy_AdminRoleTargets)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_AdminRoleTargets)SetGroups(val *[]*string) {
+func (j *jsiiProxy_AdminRoleTargets) SetGroups(val *[]*string) {
 	if err := j.validateSetGroupsParameters(val); err != nil {
 		panic(err)
 	}
@@ -501,7 +500,7 @@ func (j *jsiiProxy_AdminRoleTargets)SetGroups(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AdminRoleTargets)SetId(val *string) {
+func (j *jsiiProxy_AdminRoleTargets) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -512,7 +511,7 @@ func (j *jsiiProxy_AdminRoleTargets)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AdminRoleTargets)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_AdminRoleTargets) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -523,7 +522,7 @@ func (j *jsiiProxy_AdminRoleTargets)SetLifecycle(val *cdktf.TerraformResourceLif
 	)
 }
 
-func (j *jsiiProxy_AdminRoleTargets)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_AdminRoleTargets) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -531,7 +530,7 @@ func (j *jsiiProxy_AdminRoleTargets)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_AdminRoleTargets)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_AdminRoleTargets) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -542,7 +541,7 @@ func (j *jsiiProxy_AdminRoleTargets)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AdminRoleTargets)SetRoleType(val *string) {
+func (j *jsiiProxy_AdminRoleTargets) SetRoleType(val *string) {
 	if err := j.validateSetRoleTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -553,7 +552,7 @@ func (j *jsiiProxy_AdminRoleTargets)SetRoleType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AdminRoleTargets)SetUserId(val *string) {
+func (j *jsiiProxy_AdminRoleTargets) SetUserId(val *string) {
 	if err := j.validateSetUserIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -576,7 +575,7 @@ func AdminRoleTargets_GenerateConfigForImport(scope constructs.Construct, import
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.adminRoleTargets.AdminRoleTargets",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -600,7 +599,7 @@ func AdminRoleTargets_GenerateConfigForImport(scope constructs.Construct, import
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func AdminRoleTargets_IsConstruct(x interface{}) *bool {
+func AdminRoleTargets_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAdminRoleTargets_IsConstructParameters(x); err != nil {
@@ -611,7 +610,7 @@ func AdminRoleTargets_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.adminRoleTargets.AdminRoleTargets",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -619,7 +618,7 @@ func AdminRoleTargets_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func AdminRoleTargets_IsTerraformElement(x interface{}) *bool {
+func AdminRoleTargets_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAdminRoleTargets_IsTerraformElementParameters(x); err != nil {
@@ -630,7 +629,7 @@ func AdminRoleTargets_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.adminRoleTargets.AdminRoleTargets",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -638,7 +637,7 @@ func AdminRoleTargets_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func AdminRoleTargets_IsTerraformResource(x interface{}) *bool {
+func AdminRoleTargets_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAdminRoleTargets_IsTerraformResourceParameters(x); err != nil {
@@ -649,7 +648,7 @@ func AdminRoleTargets_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.adminRoleTargets.AdminRoleTargets",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -674,31 +673,31 @@ func (a *jsiiProxy_AdminRoleTargets) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (a *jsiiProxy_AdminRoleTargets) AddOverride(path *string, value interface{}) {
+func (a *jsiiProxy_AdminRoleTargets) AddOverride(path *string, value any) {
 	if err := a.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (a *jsiiProxy_AdminRoleTargets) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AdminRoleTargets) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -714,7 +713,7 @@ func (a *jsiiProxy_AdminRoleTargets) GetBooleanAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -730,7 +729,7 @@ func (a *jsiiProxy_AdminRoleTargets) GetBooleanMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -746,7 +745,7 @@ func (a *jsiiProxy_AdminRoleTargets) GetListAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -762,7 +761,7 @@ func (a *jsiiProxy_AdminRoleTargets) GetNumberAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -778,7 +777,7 @@ func (a *jsiiProxy_AdminRoleTargets) GetNumberListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -794,7 +793,7 @@ func (a *jsiiProxy_AdminRoleTargets) GetNumberMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -810,7 +809,7 @@ func (a *jsiiProxy_AdminRoleTargets) GetStringAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -826,15 +825,15 @@ func (a *jsiiProxy_AdminRoleTargets) GetStringMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_AdminRoleTargets) HasResourceMove() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AdminRoleTargets) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -853,7 +852,7 @@ func (a *jsiiProxy_AdminRoleTargets) ImportFrom(id *string, provider cdktf.Terra
 	_jsii_.InvokeVoid(
 		a,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -866,7 +865,7 @@ func (a *jsiiProxy_AdminRoleTargets) InterpolationForAttribute(terraformAttribut
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -880,18 +879,18 @@ func (a *jsiiProxy_AdminRoleTargets) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (a *jsiiProxy_AdminRoleTargets) MoveTo(moveTarget *string, index interface{}) {
+func (a *jsiiProxy_AdminRoleTargets) MoveTo(moveTarget *string, index any) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -902,7 +901,7 @@ func (a *jsiiProxy_AdminRoleTargets) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -913,7 +912,7 @@ func (a *jsiiProxy_AdminRoleTargets) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -949,8 +948,8 @@ func (a *jsiiProxy_AdminRoleTargets) ResetOverrideLogicalId() {
 	)
 }
 
-func (a *jsiiProxy_AdminRoleTargets) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AdminRoleTargets) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -962,8 +961,8 @@ func (a *jsiiProxy_AdminRoleTargets) SynthesizeAttributes() *map[string]interfac
 	return returns
 }
 
-func (a *jsiiProxy_AdminRoleTargets) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AdminRoleTargets) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -975,8 +974,8 @@ func (a *jsiiProxy_AdminRoleTargets) SynthesizeHclAttributes() *map[string]inter
 	return returns
 }
 
-func (a *jsiiProxy_AdminRoleTargets) ToHclTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AdminRoleTargets) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -988,8 +987,8 @@ func (a *jsiiProxy_AdminRoleTargets) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_AdminRoleTargets) ToMetadata() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AdminRoleTargets) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1014,8 +1013,8 @@ func (a *jsiiProxy_AdminRoleTargets) ToString() *string {
 	return returns
 }
 
-func (a *jsiiProxy_AdminRoleTargets) ToTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AdminRoleTargets) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1026,4 +1025,3 @@ func (a *jsiiProxy_AdminRoleTargets) ToTerraform() interface{} {
 
 	return returns
 }
-

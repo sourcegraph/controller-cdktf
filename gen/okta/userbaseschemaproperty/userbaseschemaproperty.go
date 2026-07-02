@@ -15,15 +15,15 @@ type UserBaseSchemaProperty interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -62,18 +62,18 @@ type UserBaseSchemaProperty interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
-	Required() interface{}
-	SetRequired(val interface{})
-	RequiredInput() interface{}
+	RawOverrides() any
+	Required() any
+	SetRequired(val any)
+	RequiredInput() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Title() *string
@@ -89,9 +89,9 @@ type UserBaseSchemaProperty interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -109,7 +109,7 @@ type UserBaseSchemaProperty interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -121,7 +121,7 @@ type UserBaseSchemaProperty interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -137,17 +137,17 @@ type UserBaseSchemaProperty interface {
 	ResetPermissions()
 	ResetRequired()
 	ResetUserType()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for UserBaseSchemaProperty
@@ -165,8 +165,8 @@ func (j *jsiiProxy_UserBaseSchemaProperty) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_UserBaseSchemaProperty) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_UserBaseSchemaProperty) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -175,8 +175,8 @@ func (j *jsiiProxy_UserBaseSchemaProperty) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_UserBaseSchemaProperty) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_UserBaseSchemaProperty) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -185,8 +185,8 @@ func (j *jsiiProxy_UserBaseSchemaProperty) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_UserBaseSchemaProperty) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_UserBaseSchemaProperty) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -365,8 +365,8 @@ func (j *jsiiProxy_UserBaseSchemaProperty) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_UserBaseSchemaProperty) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_UserBaseSchemaProperty) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -375,8 +375,8 @@ func (j *jsiiProxy_UserBaseSchemaProperty) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_UserBaseSchemaProperty) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_UserBaseSchemaProperty) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -385,8 +385,8 @@ func (j *jsiiProxy_UserBaseSchemaProperty) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_UserBaseSchemaProperty) Required() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_UserBaseSchemaProperty) Required() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"required",
@@ -395,8 +395,8 @@ func (j *jsiiProxy_UserBaseSchemaProperty) Required() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_UserBaseSchemaProperty) RequiredInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_UserBaseSchemaProperty) RequiredInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requiredInput",
@@ -415,8 +415,8 @@ func (j *jsiiProxy_UserBaseSchemaProperty) TerraformGeneratorMetadata() *cdktf.T
 	return returns
 }
 
-func (j *jsiiProxy_UserBaseSchemaProperty) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_UserBaseSchemaProperty) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -495,7 +495,6 @@ func (j *jsiiProxy_UserBaseSchemaProperty) UserTypeInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/user_base_schema_property okta_user_base_schema_property} Resource.
 func NewUserBaseSchemaProperty(scope constructs.Construct, id *string, config *UserBaseSchemaPropertyConfig) UserBaseSchemaProperty {
 	_init_.Initialize()
@@ -507,7 +506,7 @@ func NewUserBaseSchemaProperty(scope constructs.Construct, id *string, config *U
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.userBaseSchemaProperty.UserBaseSchemaProperty",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -520,12 +519,12 @@ func NewUserBaseSchemaProperty_Override(u UserBaseSchemaProperty, scope construc
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.userBaseSchemaProperty.UserBaseSchemaProperty",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		u,
 	)
 }
 
-func (j *jsiiProxy_UserBaseSchemaProperty)SetConnection(val interface{}) {
+func (j *jsiiProxy_UserBaseSchemaProperty) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -536,7 +535,7 @@ func (j *jsiiProxy_UserBaseSchemaProperty)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_UserBaseSchemaProperty)SetCount(val interface{}) {
+func (j *jsiiProxy_UserBaseSchemaProperty) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -547,7 +546,7 @@ func (j *jsiiProxy_UserBaseSchemaProperty)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_UserBaseSchemaProperty)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_UserBaseSchemaProperty) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -555,7 +554,7 @@ func (j *jsiiProxy_UserBaseSchemaProperty)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_UserBaseSchemaProperty)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_UserBaseSchemaProperty) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -563,7 +562,7 @@ func (j *jsiiProxy_UserBaseSchemaProperty)SetForEach(val cdktf.ITerraformIterato
 	)
 }
 
-func (j *jsiiProxy_UserBaseSchemaProperty)SetId(val *string) {
+func (j *jsiiProxy_UserBaseSchemaProperty) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -574,7 +573,7 @@ func (j *jsiiProxy_UserBaseSchemaProperty)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_UserBaseSchemaProperty)SetIndex(val *string) {
+func (j *jsiiProxy_UserBaseSchemaProperty) SetIndex(val *string) {
 	if err := j.validateSetIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -585,7 +584,7 @@ func (j *jsiiProxy_UserBaseSchemaProperty)SetIndex(val *string) {
 	)
 }
 
-func (j *jsiiProxy_UserBaseSchemaProperty)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_UserBaseSchemaProperty) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -596,7 +595,7 @@ func (j *jsiiProxy_UserBaseSchemaProperty)SetLifecycle(val *cdktf.TerraformResou
 	)
 }
 
-func (j *jsiiProxy_UserBaseSchemaProperty)SetMaster(val *string) {
+func (j *jsiiProxy_UserBaseSchemaProperty) SetMaster(val *string) {
 	if err := j.validateSetMasterParameters(val); err != nil {
 		panic(err)
 	}
@@ -607,7 +606,7 @@ func (j *jsiiProxy_UserBaseSchemaProperty)SetMaster(val *string) {
 	)
 }
 
-func (j *jsiiProxy_UserBaseSchemaProperty)SetPattern(val *string) {
+func (j *jsiiProxy_UserBaseSchemaProperty) SetPattern(val *string) {
 	if err := j.validateSetPatternParameters(val); err != nil {
 		panic(err)
 	}
@@ -618,7 +617,7 @@ func (j *jsiiProxy_UserBaseSchemaProperty)SetPattern(val *string) {
 	)
 }
 
-func (j *jsiiProxy_UserBaseSchemaProperty)SetPermissions(val *string) {
+func (j *jsiiProxy_UserBaseSchemaProperty) SetPermissions(val *string) {
 	if err := j.validateSetPermissionsParameters(val); err != nil {
 		panic(err)
 	}
@@ -629,7 +628,7 @@ func (j *jsiiProxy_UserBaseSchemaProperty)SetPermissions(val *string) {
 	)
 }
 
-func (j *jsiiProxy_UserBaseSchemaProperty)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_UserBaseSchemaProperty) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -637,7 +636,7 @@ func (j *jsiiProxy_UserBaseSchemaProperty)SetProvider(val cdktf.TerraformProvide
 	)
 }
 
-func (j *jsiiProxy_UserBaseSchemaProperty)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_UserBaseSchemaProperty) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -648,7 +647,7 @@ func (j *jsiiProxy_UserBaseSchemaProperty)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_UserBaseSchemaProperty)SetRequired(val interface{}) {
+func (j *jsiiProxy_UserBaseSchemaProperty) SetRequired(val any) {
 	if err := j.validateSetRequiredParameters(val); err != nil {
 		panic(err)
 	}
@@ -659,7 +658,7 @@ func (j *jsiiProxy_UserBaseSchemaProperty)SetRequired(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_UserBaseSchemaProperty)SetTitle(val *string) {
+func (j *jsiiProxy_UserBaseSchemaProperty) SetTitle(val *string) {
 	if err := j.validateSetTitleParameters(val); err != nil {
 		panic(err)
 	}
@@ -670,7 +669,7 @@ func (j *jsiiProxy_UserBaseSchemaProperty)SetTitle(val *string) {
 	)
 }
 
-func (j *jsiiProxy_UserBaseSchemaProperty)SetType(val *string) {
+func (j *jsiiProxy_UserBaseSchemaProperty) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -681,7 +680,7 @@ func (j *jsiiProxy_UserBaseSchemaProperty)SetType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_UserBaseSchemaProperty)SetUserType(val *string) {
+func (j *jsiiProxy_UserBaseSchemaProperty) SetUserType(val *string) {
 	if err := j.validateSetUserTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -704,7 +703,7 @@ func UserBaseSchemaProperty_GenerateConfigForImport(scope constructs.Construct, 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.userBaseSchemaProperty.UserBaseSchemaProperty",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -728,7 +727,7 @@ func UserBaseSchemaProperty_GenerateConfigForImport(scope constructs.Construct, 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func UserBaseSchemaProperty_IsConstruct(x interface{}) *bool {
+func UserBaseSchemaProperty_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateUserBaseSchemaProperty_IsConstructParameters(x); err != nil {
@@ -739,7 +738,7 @@ func UserBaseSchemaProperty_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.userBaseSchemaProperty.UserBaseSchemaProperty",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -747,7 +746,7 @@ func UserBaseSchemaProperty_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func UserBaseSchemaProperty_IsTerraformElement(x interface{}) *bool {
+func UserBaseSchemaProperty_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateUserBaseSchemaProperty_IsTerraformElementParameters(x); err != nil {
@@ -758,7 +757,7 @@ func UserBaseSchemaProperty_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.userBaseSchemaProperty.UserBaseSchemaProperty",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -766,7 +765,7 @@ func UserBaseSchemaProperty_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func UserBaseSchemaProperty_IsTerraformResource(x interface{}) *bool {
+func UserBaseSchemaProperty_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateUserBaseSchemaProperty_IsTerraformResourceParameters(x); err != nil {
@@ -777,7 +776,7 @@ func UserBaseSchemaProperty_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.userBaseSchemaProperty.UserBaseSchemaProperty",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -802,31 +801,31 @@ func (u *jsiiProxy_UserBaseSchemaProperty) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		u,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (u *jsiiProxy_UserBaseSchemaProperty) AddOverride(path *string, value interface{}) {
+func (u *jsiiProxy_UserBaseSchemaProperty) AddOverride(path *string, value any) {
 	if err := u.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		u,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (u *jsiiProxy_UserBaseSchemaProperty) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (u *jsiiProxy_UserBaseSchemaProperty) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := u.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		u,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -842,7 +841,7 @@ func (u *jsiiProxy_UserBaseSchemaProperty) GetBooleanAttribute(terraformAttribut
 	_jsii_.Invoke(
 		u,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -858,7 +857,7 @@ func (u *jsiiProxy_UserBaseSchemaProperty) GetBooleanMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		u,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -874,7 +873,7 @@ func (u *jsiiProxy_UserBaseSchemaProperty) GetListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		u,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -890,7 +889,7 @@ func (u *jsiiProxy_UserBaseSchemaProperty) GetNumberAttribute(terraformAttribute
 	_jsii_.Invoke(
 		u,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -906,7 +905,7 @@ func (u *jsiiProxy_UserBaseSchemaProperty) GetNumberListAttribute(terraformAttri
 	_jsii_.Invoke(
 		u,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -922,7 +921,7 @@ func (u *jsiiProxy_UserBaseSchemaProperty) GetNumberMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		u,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -938,7 +937,7 @@ func (u *jsiiProxy_UserBaseSchemaProperty) GetStringAttribute(terraformAttribute
 	_jsii_.Invoke(
 		u,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -954,15 +953,15 @@ func (u *jsiiProxy_UserBaseSchemaProperty) GetStringMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		u,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (u *jsiiProxy_UserBaseSchemaProperty) HasResourceMove() interface{} {
-	var returns interface{}
+func (u *jsiiProxy_UserBaseSchemaProperty) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		u,
@@ -981,7 +980,7 @@ func (u *jsiiProxy_UserBaseSchemaProperty) ImportFrom(id *string, provider cdktf
 	_jsii_.InvokeVoid(
 		u,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -994,7 +993,7 @@ func (u *jsiiProxy_UserBaseSchemaProperty) InterpolationForAttribute(terraformAt
 	_jsii_.Invoke(
 		u,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1008,18 +1007,18 @@ func (u *jsiiProxy_UserBaseSchemaProperty) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		u,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (u *jsiiProxy_UserBaseSchemaProperty) MoveTo(moveTarget *string, index interface{}) {
+func (u *jsiiProxy_UserBaseSchemaProperty) MoveTo(moveTarget *string, index any) {
 	if err := u.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		u,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1030,7 +1029,7 @@ func (u *jsiiProxy_UserBaseSchemaProperty) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		u,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1041,7 +1040,7 @@ func (u *jsiiProxy_UserBaseSchemaProperty) OverrideLogicalId(newLogicalId *strin
 	_jsii_.InvokeVoid(
 		u,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1101,8 +1100,8 @@ func (u *jsiiProxy_UserBaseSchemaProperty) ResetUserType() {
 	)
 }
 
-func (u *jsiiProxy_UserBaseSchemaProperty) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (u *jsiiProxy_UserBaseSchemaProperty) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		u,
@@ -1114,8 +1113,8 @@ func (u *jsiiProxy_UserBaseSchemaProperty) SynthesizeAttributes() *map[string]in
 	return returns
 }
 
-func (u *jsiiProxy_UserBaseSchemaProperty) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (u *jsiiProxy_UserBaseSchemaProperty) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		u,
@@ -1127,8 +1126,8 @@ func (u *jsiiProxy_UserBaseSchemaProperty) SynthesizeHclAttributes() *map[string
 	return returns
 }
 
-func (u *jsiiProxy_UserBaseSchemaProperty) ToHclTerraform() interface{} {
-	var returns interface{}
+func (u *jsiiProxy_UserBaseSchemaProperty) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		u,
@@ -1140,8 +1139,8 @@ func (u *jsiiProxy_UserBaseSchemaProperty) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (u *jsiiProxy_UserBaseSchemaProperty) ToMetadata() interface{} {
-	var returns interface{}
+func (u *jsiiProxy_UserBaseSchemaProperty) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		u,
@@ -1166,8 +1165,8 @@ func (u *jsiiProxy_UserBaseSchemaProperty) ToString() *string {
 	return returns
 }
 
-func (u *jsiiProxy_UserBaseSchemaProperty) ToTerraform() interface{} {
-	var returns interface{}
+func (u *jsiiProxy_UserBaseSchemaProperty) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		u,
@@ -1178,4 +1177,3 @@ func (u *jsiiProxy_UserBaseSchemaProperty) ToTerraform() interface{} {
 
 	return returns
 }
-

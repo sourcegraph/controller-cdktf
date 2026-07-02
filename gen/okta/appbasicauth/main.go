@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.appBasicAuth.AppBasicAuth",
-		reflect.TypeOf((*AppBasicAuth)(nil)).Elem(),
+		reflect.TypeFor[AppBasicAuth](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessibilityErrorRedirectUrl", GoGetter: "AccessibilityErrorRedirectUrl"},
 			_jsii_.MemberProperty{JsiiProperty: "accessibilityErrorRedirectUrlInput", GoGetter: "AccessibilityErrorRedirectUrlInput"},
@@ -102,7 +102,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
 			_jsii_.MemberProperty{JsiiProperty: "urlInput", GoGetter: "UrlInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppBasicAuth{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -110,15 +110,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.appBasicAuth.AppBasicAuthConfig",
-		reflect.TypeOf((*AppBasicAuthConfig)(nil)).Elem(),
+		reflect.TypeFor[AppBasicAuthConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.appBasicAuth.AppBasicAuthTimeouts",
-		reflect.TypeOf((*AppBasicAuthTimeouts)(nil)).Elem(),
+		reflect.TypeFor[AppBasicAuthTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.appBasicAuth.AppBasicAuthTimeoutsOutputReference",
-		reflect.TypeOf((*AppBasicAuthTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppBasicAuthTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -151,7 +151,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppBasicAuthTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

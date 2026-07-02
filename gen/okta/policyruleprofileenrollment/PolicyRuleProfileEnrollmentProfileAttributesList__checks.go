@@ -34,7 +34,7 @@ func (p *jsiiProxy_PolicyRuleProfileEnrollmentProfileAttributesList) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_PolicyRuleProfileEnrollmentProfileAttributesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PolicyRuleProfileEnrollmentProfileAttributesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewPolicyRuleProfileEnrollmentProfileAttributesListParameters(terra
 
 	return nil
 }
-

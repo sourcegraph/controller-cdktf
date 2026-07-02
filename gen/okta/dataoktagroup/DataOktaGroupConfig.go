@@ -6,9 +6,9 @@ import (
 
 type DataOktaGroupConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type DataOktaGroupConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Force delay of the group read by N seconds.
 	//
 	// Useful when eventual consistency of group information needs to be allowed for; for instance, when group rules are known to have been applied.
@@ -35,7 +35,7 @@ type DataOktaGroupConfig struct {
 	// Fetch group users, having default off cuts down on API calls.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/group#include_users DataOktaGroup#include_users}
-	IncludeUsers interface{} `field:"optional" json:"includeUsers" yaml:"includeUsers"`
+	IncludeUsers any `field:"optional" json:"includeUsers" yaml:"includeUsers"`
 	// Name of group.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/group#name DataOktaGroup#name}
@@ -47,4 +47,3 @@ type DataOktaGroupConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/group#type DataOktaGroup#type}
 	Type *string `field:"optional" json:"type" yaml:"type"`
 }
-

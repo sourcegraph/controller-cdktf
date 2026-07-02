@@ -6,9 +6,9 @@ import (
 
 type PolicyDeviceAssuranceIosConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type PolicyDeviceAssuranceIosConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Name of the device assurance policy.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_device_assurance_ios#name PolicyDeviceAssuranceIos#name}
@@ -26,7 +26,7 @@ type PolicyDeviceAssuranceIosConfig struct {
 	// Is the device jailbroken in the device assurance policy.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_device_assurance_ios#jailbreak PolicyDeviceAssuranceIos#jailbreak}
-	Jailbreak interface{} `field:"optional" json:"jailbreak" yaml:"jailbreak"`
+	Jailbreak any `field:"optional" json:"jailbreak" yaml:"jailbreak"`
 	// Minimum os version of the device in the device assurance policy.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_device_assurance_ios#os_version PolicyDeviceAssuranceIos#os_version}
@@ -36,4 +36,3 @@ type PolicyDeviceAssuranceIosConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/policy_device_assurance_ios#screenlock_type PolicyDeviceAssuranceIos#screenlock_type}
 	ScreenlockType *[]*string `field:"optional" json:"screenlockType" yaml:"screenlockType"`
 }
-

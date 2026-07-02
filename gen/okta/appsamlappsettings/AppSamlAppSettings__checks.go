@@ -19,7 +19,7 @@ func (a *jsiiProxy_AppSamlAppSettings) validateAddMoveTargetParameters(moveTarge
 	return nil
 }
 
-func (a *jsiiProxy_AppSamlAppSettings) validateAddOverrideParameters(path *string, value interface{}) error {
+func (a *jsiiProxy_AppSamlAppSettings) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (a *jsiiProxy_AppSamlAppSettings) validateMoveFromIdParameters(id *string) 
 	return nil
 }
 
-func (a *jsiiProxy_AppSamlAppSettings) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (a *jsiiProxy_AppSamlAppSettings) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateAppSamlAppSettings_GenerateConfigForImportParameters(scope construc
 	return nil
 }
 
-func validateAppSamlAppSettings_IsConstructParameters(x interface{}) error {
+func validateAppSamlAppSettings_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateAppSamlAppSettings_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateAppSamlAppSettings_IsTerraformElementParameters(x interface{}) error {
+func validateAppSamlAppSettings_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateAppSamlAppSettings_IsTerraformElementParameters(x interface{}) erro
 	return nil
 }
 
-func validateAppSamlAppSettings_IsTerraformResourceParameters(x interface{}) error {
+func validateAppSamlAppSettings_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -252,7 +252,7 @@ func (j *jsiiProxy_AppSamlAppSettings) validateSetAppIdParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_AppSamlAppSettings) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_AppSamlAppSettings) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -285,7 +285,7 @@ func (j *jsiiProxy_AppSamlAppSettings) validateSetConnectionParameters(val inter
 	return nil
 }
 
-func (j *jsiiProxy_AppSamlAppSettings) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_AppSamlAppSettings) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -358,7 +358,7 @@ func (j *jsiiProxy_AppSamlAppSettings) validateSetLifecycleParameters(val *cdktf
 	return nil
 }
 
-func (j *jsiiProxy_AppSamlAppSettings) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_AppSamlAppSettings) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -430,4 +430,3 @@ func validateNewAppSamlAppSettingsParameters(scope constructs.Construct, id *str
 
 	return nil
 }
-

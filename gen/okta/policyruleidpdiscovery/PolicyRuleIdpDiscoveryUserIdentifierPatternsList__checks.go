@@ -34,7 +34,7 @@ func (p *jsiiProxy_PolicyRuleIdpDiscoveryUserIdentifierPatternsList) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscoveryUserIdentifierPatternsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PolicyRuleIdpDiscoveryUserIdentifierPatternsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewPolicyRuleIdpDiscoveryUserIdentifierPatternsListParameters(terra
 
 	return nil
 }
-

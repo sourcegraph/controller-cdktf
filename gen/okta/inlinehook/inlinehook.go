@@ -21,15 +21,15 @@ type InlineHook interface {
 	SetChannel(val *map[string]*string)
 	ChannelInput() *map[string]*string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -43,7 +43,7 @@ type InlineHook interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Headers() InlineHookHeadersList
-	HeadersInput() interface{}
+	HeadersInput() any
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -61,18 +61,18 @@ type InlineHook interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Status() *string
 	SetStatus(val *string)
 	StatusInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Type() *string
@@ -85,9 +85,9 @@ type InlineHook interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -105,7 +105,7 @@ type InlineHook interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -117,14 +117,14 @@ type InlineHook interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutHeaders(value interface{})
+	PutHeaders(value any)
 	ResetAuth()
 	ResetHeaders()
 	ResetId()
@@ -132,17 +132,17 @@ type InlineHook interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetStatus()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for InlineHook
@@ -200,8 +200,8 @@ func (j *jsiiProxy_InlineHook) ChannelInput() *map[string]*string {
 	return returns
 }
 
-func (j *jsiiProxy_InlineHook) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_InlineHook) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -210,8 +210,8 @@ func (j *jsiiProxy_InlineHook) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_InlineHook) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_InlineHook) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -220,8 +220,8 @@ func (j *jsiiProxy_InlineHook) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_InlineHook) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_InlineHook) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -280,8 +280,8 @@ func (j *jsiiProxy_InlineHook) Headers() InlineHookHeadersList {
 	return returns
 }
 
-func (j *jsiiProxy_InlineHook) HeadersInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_InlineHook) HeadersInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"headersInput",
@@ -360,8 +360,8 @@ func (j *jsiiProxy_InlineHook) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_InlineHook) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_InlineHook) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -370,8 +370,8 @@ func (j *jsiiProxy_InlineHook) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_InlineHook) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_InlineHook) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -410,8 +410,8 @@ func (j *jsiiProxy_InlineHook) TerraformGeneratorMetadata() *cdktf.TerraformProv
 	return returns
 }
 
-func (j *jsiiProxy_InlineHook) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_InlineHook) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -470,7 +470,6 @@ func (j *jsiiProxy_InlineHook) VersionInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/inline_hook okta_inline_hook} Resource.
 func NewInlineHook(scope constructs.Construct, id *string, config *InlineHookConfig) InlineHook {
 	_init_.Initialize()
@@ -482,7 +481,7 @@ func NewInlineHook(scope constructs.Construct, id *string, config *InlineHookCon
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.inlineHook.InlineHook",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -495,12 +494,12 @@ func NewInlineHook_Override(i InlineHook, scope constructs.Construct, id *string
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.inlineHook.InlineHook",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		i,
 	)
 }
 
-func (j *jsiiProxy_InlineHook)SetAuth(val *map[string]*string) {
+func (j *jsiiProxy_InlineHook) SetAuth(val *map[string]*string) {
 	if err := j.validateSetAuthParameters(val); err != nil {
 		panic(err)
 	}
@@ -511,7 +510,7 @@ func (j *jsiiProxy_InlineHook)SetAuth(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_InlineHook)SetChannel(val *map[string]*string) {
+func (j *jsiiProxy_InlineHook) SetChannel(val *map[string]*string) {
 	if err := j.validateSetChannelParameters(val); err != nil {
 		panic(err)
 	}
@@ -522,7 +521,7 @@ func (j *jsiiProxy_InlineHook)SetChannel(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_InlineHook)SetConnection(val interface{}) {
+func (j *jsiiProxy_InlineHook) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -533,7 +532,7 @@ func (j *jsiiProxy_InlineHook)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_InlineHook)SetCount(val interface{}) {
+func (j *jsiiProxy_InlineHook) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -544,7 +543,7 @@ func (j *jsiiProxy_InlineHook)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_InlineHook)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_InlineHook) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -552,7 +551,7 @@ func (j *jsiiProxy_InlineHook)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_InlineHook)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_InlineHook) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -560,7 +559,7 @@ func (j *jsiiProxy_InlineHook)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_InlineHook)SetId(val *string) {
+func (j *jsiiProxy_InlineHook) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -571,7 +570,7 @@ func (j *jsiiProxy_InlineHook)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_InlineHook)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_InlineHook) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -582,7 +581,7 @@ func (j *jsiiProxy_InlineHook)SetLifecycle(val *cdktf.TerraformResourceLifecycle
 	)
 }
 
-func (j *jsiiProxy_InlineHook)SetName(val *string) {
+func (j *jsiiProxy_InlineHook) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -593,7 +592,7 @@ func (j *jsiiProxy_InlineHook)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_InlineHook)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_InlineHook) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -601,7 +600,7 @@ func (j *jsiiProxy_InlineHook)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_InlineHook)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_InlineHook) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -612,7 +611,7 @@ func (j *jsiiProxy_InlineHook)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_InlineHook)SetStatus(val *string) {
+func (j *jsiiProxy_InlineHook) SetStatus(val *string) {
 	if err := j.validateSetStatusParameters(val); err != nil {
 		panic(err)
 	}
@@ -623,7 +622,7 @@ func (j *jsiiProxy_InlineHook)SetStatus(val *string) {
 	)
 }
 
-func (j *jsiiProxy_InlineHook)SetType(val *string) {
+func (j *jsiiProxy_InlineHook) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -634,7 +633,7 @@ func (j *jsiiProxy_InlineHook)SetType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_InlineHook)SetVersion(val *string) {
+func (j *jsiiProxy_InlineHook) SetVersion(val *string) {
 	if err := j.validateSetVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -657,7 +656,7 @@ func InlineHook_GenerateConfigForImport(scope constructs.Construct, importToId *
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.inlineHook.InlineHook",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -681,7 +680,7 @@ func InlineHook_GenerateConfigForImport(scope constructs.Construct, importToId *
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func InlineHook_IsConstruct(x interface{}) *bool {
+func InlineHook_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateInlineHook_IsConstructParameters(x); err != nil {
@@ -692,7 +691,7 @@ func InlineHook_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.inlineHook.InlineHook",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -700,7 +699,7 @@ func InlineHook_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func InlineHook_IsTerraformElement(x interface{}) *bool {
+func InlineHook_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateInlineHook_IsTerraformElementParameters(x); err != nil {
@@ -711,7 +710,7 @@ func InlineHook_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.inlineHook.InlineHook",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -719,7 +718,7 @@ func InlineHook_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func InlineHook_IsTerraformResource(x interface{}) *bool {
+func InlineHook_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateInlineHook_IsTerraformResourceParameters(x); err != nil {
@@ -730,7 +729,7 @@ func InlineHook_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.inlineHook.InlineHook",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -755,31 +754,31 @@ func (i *jsiiProxy_InlineHook) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (i *jsiiProxy_InlineHook) AddOverride(path *string, value interface{}) {
+func (i *jsiiProxy_InlineHook) AddOverride(path *string, value any) {
 	if err := i.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (i *jsiiProxy_InlineHook) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_InlineHook) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -795,7 +794,7 @@ func (i *jsiiProxy_InlineHook) GetBooleanAttribute(terraformAttribute *string) c
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -811,7 +810,7 @@ func (i *jsiiProxy_InlineHook) GetBooleanMapAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -827,7 +826,7 @@ func (i *jsiiProxy_InlineHook) GetListAttribute(terraformAttribute *string) *[]*
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -843,7 +842,7 @@ func (i *jsiiProxy_InlineHook) GetNumberAttribute(terraformAttribute *string) *f
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -859,7 +858,7 @@ func (i *jsiiProxy_InlineHook) GetNumberListAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -875,7 +874,7 @@ func (i *jsiiProxy_InlineHook) GetNumberMapAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -891,7 +890,7 @@ func (i *jsiiProxy_InlineHook) GetStringAttribute(terraformAttribute *string) *s
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -907,15 +906,15 @@ func (i *jsiiProxy_InlineHook) GetStringMapAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (i *jsiiProxy_InlineHook) HasResourceMove() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_InlineHook) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -934,7 +933,7 @@ func (i *jsiiProxy_InlineHook) ImportFrom(id *string, provider cdktf.TerraformPr
 	_jsii_.InvokeVoid(
 		i,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -947,7 +946,7 @@ func (i *jsiiProxy_InlineHook) InterpolationForAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -961,18 +960,18 @@ func (i *jsiiProxy_InlineHook) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (i *jsiiProxy_InlineHook) MoveTo(moveTarget *string, index interface{}) {
+func (i *jsiiProxy_InlineHook) MoveTo(moveTarget *string, index any) {
 	if err := i.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -983,7 +982,7 @@ func (i *jsiiProxy_InlineHook) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -994,18 +993,18 @@ func (i *jsiiProxy_InlineHook) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (i *jsiiProxy_InlineHook) PutHeaders(value interface{}) {
+func (i *jsiiProxy_InlineHook) PutHeaders(value any) {
 	if err := i.validatePutHeadersParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"putHeaders",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1049,8 +1048,8 @@ func (i *jsiiProxy_InlineHook) ResetStatus() {
 	)
 }
 
-func (i *jsiiProxy_InlineHook) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (i *jsiiProxy_InlineHook) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
@@ -1062,8 +1061,8 @@ func (i *jsiiProxy_InlineHook) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (i *jsiiProxy_InlineHook) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (i *jsiiProxy_InlineHook) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
@@ -1075,8 +1074,8 @@ func (i *jsiiProxy_InlineHook) SynthesizeHclAttributes() *map[string]interface{}
 	return returns
 }
 
-func (i *jsiiProxy_InlineHook) ToHclTerraform() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_InlineHook) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -1088,8 +1087,8 @@ func (i *jsiiProxy_InlineHook) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (i *jsiiProxy_InlineHook) ToMetadata() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_InlineHook) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -1114,8 +1113,8 @@ func (i *jsiiProxy_InlineHook) ToString() *string {
 	return returns
 }
 
-func (i *jsiiProxy_InlineHook) ToTerraform() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_InlineHook) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -1126,4 +1125,3 @@ func (i *jsiiProxy_InlineHook) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -18,15 +18,15 @@ type AppOauthRoleAssignment interface {
 	SetClientId(val *string)
 	ClientIdInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -52,11 +52,11 @@ type AppOauthRoleAssignment interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ResourceSet() *string
 	SetResourceSet(val *string)
 	ResourceSetInput() *string
@@ -67,7 +67,7 @@ type AppOauthRoleAssignment interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Type() *string
@@ -77,9 +77,9 @@ type AppOauthRoleAssignment interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -97,7 +97,7 @@ type AppOauthRoleAssignment interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -109,7 +109,7 @@ type AppOauthRoleAssignment interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -121,17 +121,17 @@ type AppOauthRoleAssignment interface {
 	ResetOverrideLogicalId()
 	ResetResourceSet()
 	ResetRole()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for AppOauthRoleAssignment
@@ -169,8 +169,8 @@ func (j *jsiiProxy_AppOauthRoleAssignment) ClientIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AppOauthRoleAssignment) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppOauthRoleAssignment) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -179,8 +179,8 @@ func (j *jsiiProxy_AppOauthRoleAssignment) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AppOauthRoleAssignment) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AppOauthRoleAssignment) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -189,8 +189,8 @@ func (j *jsiiProxy_AppOauthRoleAssignment) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_AppOauthRoleAssignment) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppOauthRoleAssignment) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -289,8 +289,8 @@ func (j *jsiiProxy_AppOauthRoleAssignment) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_AppOauthRoleAssignment) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_AppOauthRoleAssignment) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -299,8 +299,8 @@ func (j *jsiiProxy_AppOauthRoleAssignment) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AppOauthRoleAssignment) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppOauthRoleAssignment) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -369,8 +369,8 @@ func (j *jsiiProxy_AppOauthRoleAssignment) TerraformGeneratorMetadata() *cdktf.T
 	return returns
 }
 
-func (j *jsiiProxy_AppOauthRoleAssignment) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AppOauthRoleAssignment) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -409,7 +409,6 @@ func (j *jsiiProxy_AppOauthRoleAssignment) TypeInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_oauth_role_assignment okta_app_oauth_role_assignment} Resource.
 func NewAppOauthRoleAssignment(scope constructs.Construct, id *string, config *AppOauthRoleAssignmentConfig) AppOauthRoleAssignment {
 	_init_.Initialize()
@@ -421,7 +420,7 @@ func NewAppOauthRoleAssignment(scope constructs.Construct, id *string, config *A
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.appOauthRoleAssignment.AppOauthRoleAssignment",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -434,12 +433,12 @@ func NewAppOauthRoleAssignment_Override(a AppOauthRoleAssignment, scope construc
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.appOauthRoleAssignment.AppOauthRoleAssignment",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AppOauthRoleAssignment)SetClientId(val *string) {
+func (j *jsiiProxy_AppOauthRoleAssignment) SetClientId(val *string) {
 	if err := j.validateSetClientIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -450,7 +449,7 @@ func (j *jsiiProxy_AppOauthRoleAssignment)SetClientId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppOauthRoleAssignment)SetConnection(val interface{}) {
+func (j *jsiiProxy_AppOauthRoleAssignment) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -461,7 +460,7 @@ func (j *jsiiProxy_AppOauthRoleAssignment)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppOauthRoleAssignment)SetCount(val interface{}) {
+func (j *jsiiProxy_AppOauthRoleAssignment) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -472,7 +471,7 @@ func (j *jsiiProxy_AppOauthRoleAssignment)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppOauthRoleAssignment)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_AppOauthRoleAssignment) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -480,7 +479,7 @@ func (j *jsiiProxy_AppOauthRoleAssignment)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AppOauthRoleAssignment)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_AppOauthRoleAssignment) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -488,7 +487,7 @@ func (j *jsiiProxy_AppOauthRoleAssignment)SetForEach(val cdktf.ITerraformIterato
 	)
 }
 
-func (j *jsiiProxy_AppOauthRoleAssignment)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_AppOauthRoleAssignment) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -499,7 +498,7 @@ func (j *jsiiProxy_AppOauthRoleAssignment)SetLifecycle(val *cdktf.TerraformResou
 	)
 }
 
-func (j *jsiiProxy_AppOauthRoleAssignment)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_AppOauthRoleAssignment) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -507,7 +506,7 @@ func (j *jsiiProxy_AppOauthRoleAssignment)SetProvider(val cdktf.TerraformProvide
 	)
 }
 
-func (j *jsiiProxy_AppOauthRoleAssignment)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_AppOauthRoleAssignment) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -518,7 +517,7 @@ func (j *jsiiProxy_AppOauthRoleAssignment)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppOauthRoleAssignment)SetResourceSet(val *string) {
+func (j *jsiiProxy_AppOauthRoleAssignment) SetResourceSet(val *string) {
 	if err := j.validateSetResourceSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -529,7 +528,7 @@ func (j *jsiiProxy_AppOauthRoleAssignment)SetResourceSet(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppOauthRoleAssignment)SetRole(val *string) {
+func (j *jsiiProxy_AppOauthRoleAssignment) SetRole(val *string) {
 	if err := j.validateSetRoleParameters(val); err != nil {
 		panic(err)
 	}
@@ -540,7 +539,7 @@ func (j *jsiiProxy_AppOauthRoleAssignment)SetRole(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppOauthRoleAssignment)SetType(val *string) {
+func (j *jsiiProxy_AppOauthRoleAssignment) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -563,7 +562,7 @@ func AppOauthRoleAssignment_GenerateConfigForImport(scope constructs.Construct, 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.appOauthRoleAssignment.AppOauthRoleAssignment",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -587,7 +586,7 @@ func AppOauthRoleAssignment_GenerateConfigForImport(scope constructs.Construct, 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func AppOauthRoleAssignment_IsConstruct(x interface{}) *bool {
+func AppOauthRoleAssignment_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAppOauthRoleAssignment_IsConstructParameters(x); err != nil {
@@ -598,7 +597,7 @@ func AppOauthRoleAssignment_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.appOauthRoleAssignment.AppOauthRoleAssignment",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -606,7 +605,7 @@ func AppOauthRoleAssignment_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func AppOauthRoleAssignment_IsTerraformElement(x interface{}) *bool {
+func AppOauthRoleAssignment_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAppOauthRoleAssignment_IsTerraformElementParameters(x); err != nil {
@@ -617,7 +616,7 @@ func AppOauthRoleAssignment_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.appOauthRoleAssignment.AppOauthRoleAssignment",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -625,7 +624,7 @@ func AppOauthRoleAssignment_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func AppOauthRoleAssignment_IsTerraformResource(x interface{}) *bool {
+func AppOauthRoleAssignment_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAppOauthRoleAssignment_IsTerraformResourceParameters(x); err != nil {
@@ -636,7 +635,7 @@ func AppOauthRoleAssignment_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.appOauthRoleAssignment.AppOauthRoleAssignment",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -661,31 +660,31 @@ func (a *jsiiProxy_AppOauthRoleAssignment) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (a *jsiiProxy_AppOauthRoleAssignment) AddOverride(path *string, value interface{}) {
+func (a *jsiiProxy_AppOauthRoleAssignment) AddOverride(path *string, value any) {
 	if err := a.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (a *jsiiProxy_AppOauthRoleAssignment) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AppOauthRoleAssignment) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -701,7 +700,7 @@ func (a *jsiiProxy_AppOauthRoleAssignment) GetBooleanAttribute(terraformAttribut
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -717,7 +716,7 @@ func (a *jsiiProxy_AppOauthRoleAssignment) GetBooleanMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -733,7 +732,7 @@ func (a *jsiiProxy_AppOauthRoleAssignment) GetListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -749,7 +748,7 @@ func (a *jsiiProxy_AppOauthRoleAssignment) GetNumberAttribute(terraformAttribute
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -765,7 +764,7 @@ func (a *jsiiProxy_AppOauthRoleAssignment) GetNumberListAttribute(terraformAttri
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -781,7 +780,7 @@ func (a *jsiiProxy_AppOauthRoleAssignment) GetNumberMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -797,7 +796,7 @@ func (a *jsiiProxy_AppOauthRoleAssignment) GetStringAttribute(terraformAttribute
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -813,15 +812,15 @@ func (a *jsiiProxy_AppOauthRoleAssignment) GetStringMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_AppOauthRoleAssignment) HasResourceMove() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AppOauthRoleAssignment) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -840,7 +839,7 @@ func (a *jsiiProxy_AppOauthRoleAssignment) ImportFrom(id *string, provider cdktf
 	_jsii_.InvokeVoid(
 		a,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -853,7 +852,7 @@ func (a *jsiiProxy_AppOauthRoleAssignment) InterpolationForAttribute(terraformAt
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -867,18 +866,18 @@ func (a *jsiiProxy_AppOauthRoleAssignment) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (a *jsiiProxy_AppOauthRoleAssignment) MoveTo(moveTarget *string, index interface{}) {
+func (a *jsiiProxy_AppOauthRoleAssignment) MoveTo(moveTarget *string, index any) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -889,7 +888,7 @@ func (a *jsiiProxy_AppOauthRoleAssignment) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -900,7 +899,7 @@ func (a *jsiiProxy_AppOauthRoleAssignment) OverrideLogicalId(newLogicalId *strin
 	_jsii_.InvokeVoid(
 		a,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -928,8 +927,8 @@ func (a *jsiiProxy_AppOauthRoleAssignment) ResetRole() {
 	)
 }
 
-func (a *jsiiProxy_AppOauthRoleAssignment) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AppOauthRoleAssignment) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -941,8 +940,8 @@ func (a *jsiiProxy_AppOauthRoleAssignment) SynthesizeAttributes() *map[string]in
 	return returns
 }
 
-func (a *jsiiProxy_AppOauthRoleAssignment) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AppOauthRoleAssignment) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -954,8 +953,8 @@ func (a *jsiiProxy_AppOauthRoleAssignment) SynthesizeHclAttributes() *map[string
 	return returns
 }
 
-func (a *jsiiProxy_AppOauthRoleAssignment) ToHclTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AppOauthRoleAssignment) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -967,8 +966,8 @@ func (a *jsiiProxy_AppOauthRoleAssignment) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_AppOauthRoleAssignment) ToMetadata() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AppOauthRoleAssignment) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -993,8 +992,8 @@ func (a *jsiiProxy_AppOauthRoleAssignment) ToString() *string {
 	return returns
 }
 
-func (a *jsiiProxy_AppOauthRoleAssignment) ToTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AppOauthRoleAssignment) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1005,4 +1004,3 @@ func (a *jsiiProxy_AppOauthRoleAssignment) ToTerraform() interface{} {
 
 	return returns
 }
-

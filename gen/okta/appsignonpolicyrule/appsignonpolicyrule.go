@@ -18,18 +18,18 @@ type AppSignonPolicyRule interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	Constraints() *[]*string
 	SetConstraints(val *[]*string)
 	ConstraintsInput() *[]*string
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CustomExpression() *string
 	SetCustomExpression(val *string)
 	CustomExpressionInput() *string
@@ -40,12 +40,12 @@ type AppSignonPolicyRule interface {
 	DeviceAssurancesIncluded() *[]*string
 	SetDeviceAssurancesIncluded(val *[]*string)
 	DeviceAssurancesIncludedInput() *[]*string
-	DeviceIsManaged() interface{}
-	SetDeviceIsManaged(val interface{})
-	DeviceIsManagedInput() interface{}
-	DeviceIsRegistered() interface{}
-	SetDeviceIsRegistered(val interface{})
-	DeviceIsRegisteredInput() interface{}
+	DeviceIsManaged() any
+	SetDeviceIsManaged(val any)
+	DeviceIsManagedInput() any
+	DeviceIsRegistered() any
+	SetDeviceIsRegistered(val any)
+	DeviceIsRegisteredInput() any
 	FactorMode() *string
 	SetFactorMode(val *string)
 	FactorModeInput() *string
@@ -88,7 +88,7 @@ type AppSignonPolicyRule interface {
 	// The tree node.
 	Node() constructs.Node
 	PlatformInclude() AppSignonPolicyRulePlatformIncludeList
-	PlatformIncludeInput() interface{}
+	PlatformIncludeInput() any
 	PolicyId() *string
 	SetPolicyId(val *string)
 	PolicyIdInput() *string
@@ -100,11 +100,11 @@ type AppSignonPolicyRule interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ReAuthenticationFrequency() *string
 	SetReAuthenticationFrequency(val *string)
 	ReAuthenticationFrequencyInput() *string
@@ -118,7 +118,7 @@ type AppSignonPolicyRule interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Type() *string
@@ -140,9 +140,9 @@ type AppSignonPolicyRule interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -160,7 +160,7 @@ type AppSignonPolicyRule interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -172,14 +172,14 @@ type AppSignonPolicyRule interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutPlatformInclude(value interface{})
+	PutPlatformInclude(value any)
 	ResetAccess()
 	ResetConstraints()
 	ResetCustomExpression()
@@ -207,17 +207,17 @@ type AppSignonPolicyRule interface {
 	ResetUsersIncluded()
 	ResetUserTypesExcluded()
 	ResetUserTypesIncluded()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for AppSignonPolicyRule
@@ -255,8 +255,8 @@ func (j *jsiiProxy_AppSignonPolicyRule) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_AppSignonPolicyRule) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppSignonPolicyRule) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -285,8 +285,8 @@ func (j *jsiiProxy_AppSignonPolicyRule) ConstraintsInput() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_AppSignonPolicyRule) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AppSignonPolicyRule) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -295,8 +295,8 @@ func (j *jsiiProxy_AppSignonPolicyRule) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_AppSignonPolicyRule) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppSignonPolicyRule) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -355,8 +355,8 @@ func (j *jsiiProxy_AppSignonPolicyRule) DeviceAssurancesIncludedInput() *[]*stri
 	return returns
 }
 
-func (j *jsiiProxy_AppSignonPolicyRule) DeviceIsManaged() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppSignonPolicyRule) DeviceIsManaged() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deviceIsManaged",
@@ -365,8 +365,8 @@ func (j *jsiiProxy_AppSignonPolicyRule) DeviceIsManaged() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AppSignonPolicyRule) DeviceIsManagedInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppSignonPolicyRule) DeviceIsManagedInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deviceIsManagedInput",
@@ -375,8 +375,8 @@ func (j *jsiiProxy_AppSignonPolicyRule) DeviceIsManagedInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AppSignonPolicyRule) DeviceIsRegistered() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppSignonPolicyRule) DeviceIsRegistered() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deviceIsRegistered",
@@ -385,8 +385,8 @@ func (j *jsiiProxy_AppSignonPolicyRule) DeviceIsRegistered() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AppSignonPolicyRule) DeviceIsRegisteredInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppSignonPolicyRule) DeviceIsRegisteredInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deviceIsRegisteredInput",
@@ -635,8 +635,8 @@ func (j *jsiiProxy_AppSignonPolicyRule) PlatformInclude() AppSignonPolicyRulePla
 	return returns
 }
 
-func (j *jsiiProxy_AppSignonPolicyRule) PlatformIncludeInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppSignonPolicyRule) PlatformIncludeInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"platformIncludeInput",
@@ -695,8 +695,8 @@ func (j *jsiiProxy_AppSignonPolicyRule) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_AppSignonPolicyRule) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_AppSignonPolicyRule) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -705,8 +705,8 @@ func (j *jsiiProxy_AppSignonPolicyRule) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AppSignonPolicyRule) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppSignonPolicyRule) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -795,8 +795,8 @@ func (j *jsiiProxy_AppSignonPolicyRule) TerraformGeneratorMetadata() *cdktf.Terr
 	return returns
 }
 
-func (j *jsiiProxy_AppSignonPolicyRule) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AppSignonPolicyRule) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -915,7 +915,6 @@ func (j *jsiiProxy_AppSignonPolicyRule) UserTypesIncludedInput() *[]*string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_signon_policy_rule okta_app_signon_policy_rule} Resource.
 func NewAppSignonPolicyRule(scope constructs.Construct, id *string, config *AppSignonPolicyRuleConfig) AppSignonPolicyRule {
 	_init_.Initialize()
@@ -927,7 +926,7 @@ func NewAppSignonPolicyRule(scope constructs.Construct, id *string, config *AppS
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.appSignonPolicyRule.AppSignonPolicyRule",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -940,12 +939,12 @@ func NewAppSignonPolicyRule_Override(a AppSignonPolicyRule, scope constructs.Con
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.appSignonPolicyRule.AppSignonPolicyRule",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AppSignonPolicyRule)SetAccess(val *string) {
+func (j *jsiiProxy_AppSignonPolicyRule) SetAccess(val *string) {
 	if err := j.validateSetAccessParameters(val); err != nil {
 		panic(err)
 	}
@@ -956,7 +955,7 @@ func (j *jsiiProxy_AppSignonPolicyRule)SetAccess(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppSignonPolicyRule)SetConnection(val interface{}) {
+func (j *jsiiProxy_AppSignonPolicyRule) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -967,7 +966,7 @@ func (j *jsiiProxy_AppSignonPolicyRule)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppSignonPolicyRule)SetConstraints(val *[]*string) {
+func (j *jsiiProxy_AppSignonPolicyRule) SetConstraints(val *[]*string) {
 	if err := j.validateSetConstraintsParameters(val); err != nil {
 		panic(err)
 	}
@@ -978,7 +977,7 @@ func (j *jsiiProxy_AppSignonPolicyRule)SetConstraints(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AppSignonPolicyRule)SetCount(val interface{}) {
+func (j *jsiiProxy_AppSignonPolicyRule) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -989,7 +988,7 @@ func (j *jsiiProxy_AppSignonPolicyRule)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppSignonPolicyRule)SetCustomExpression(val *string) {
+func (j *jsiiProxy_AppSignonPolicyRule) SetCustomExpression(val *string) {
 	if err := j.validateSetCustomExpressionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1000,7 +999,7 @@ func (j *jsiiProxy_AppSignonPolicyRule)SetCustomExpression(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppSignonPolicyRule)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_AppSignonPolicyRule) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -1008,7 +1007,7 @@ func (j *jsiiProxy_AppSignonPolicyRule)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AppSignonPolicyRule)SetDeviceAssurancesIncluded(val *[]*string) {
+func (j *jsiiProxy_AppSignonPolicyRule) SetDeviceAssurancesIncluded(val *[]*string) {
 	if err := j.validateSetDeviceAssurancesIncludedParameters(val); err != nil {
 		panic(err)
 	}
@@ -1019,7 +1018,7 @@ func (j *jsiiProxy_AppSignonPolicyRule)SetDeviceAssurancesIncluded(val *[]*strin
 	)
 }
 
-func (j *jsiiProxy_AppSignonPolicyRule)SetDeviceIsManaged(val interface{}) {
+func (j *jsiiProxy_AppSignonPolicyRule) SetDeviceIsManaged(val any) {
 	if err := j.validateSetDeviceIsManagedParameters(val); err != nil {
 		panic(err)
 	}
@@ -1030,7 +1029,7 @@ func (j *jsiiProxy_AppSignonPolicyRule)SetDeviceIsManaged(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppSignonPolicyRule)SetDeviceIsRegistered(val interface{}) {
+func (j *jsiiProxy_AppSignonPolicyRule) SetDeviceIsRegistered(val any) {
 	if err := j.validateSetDeviceIsRegisteredParameters(val); err != nil {
 		panic(err)
 	}
@@ -1041,7 +1040,7 @@ func (j *jsiiProxy_AppSignonPolicyRule)SetDeviceIsRegistered(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppSignonPolicyRule)SetFactorMode(val *string) {
+func (j *jsiiProxy_AppSignonPolicyRule) SetFactorMode(val *string) {
 	if err := j.validateSetFactorModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1052,7 +1051,7 @@ func (j *jsiiProxy_AppSignonPolicyRule)SetFactorMode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppSignonPolicyRule)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_AppSignonPolicyRule) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1060,7 +1059,7 @@ func (j *jsiiProxy_AppSignonPolicyRule)SetForEach(val cdktf.ITerraformIterator) 
 	)
 }
 
-func (j *jsiiProxy_AppSignonPolicyRule)SetGroupsExcluded(val *[]*string) {
+func (j *jsiiProxy_AppSignonPolicyRule) SetGroupsExcluded(val *[]*string) {
 	if err := j.validateSetGroupsExcludedParameters(val); err != nil {
 		panic(err)
 	}
@@ -1071,7 +1070,7 @@ func (j *jsiiProxy_AppSignonPolicyRule)SetGroupsExcluded(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AppSignonPolicyRule)SetGroupsIncluded(val *[]*string) {
+func (j *jsiiProxy_AppSignonPolicyRule) SetGroupsIncluded(val *[]*string) {
 	if err := j.validateSetGroupsIncludedParameters(val); err != nil {
 		panic(err)
 	}
@@ -1082,7 +1081,7 @@ func (j *jsiiProxy_AppSignonPolicyRule)SetGroupsIncluded(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AppSignonPolicyRule)SetId(val *string) {
+func (j *jsiiProxy_AppSignonPolicyRule) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1093,7 +1092,7 @@ func (j *jsiiProxy_AppSignonPolicyRule)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppSignonPolicyRule)SetInactivityPeriod(val *string) {
+func (j *jsiiProxy_AppSignonPolicyRule) SetInactivityPeriod(val *string) {
 	if err := j.validateSetInactivityPeriodParameters(val); err != nil {
 		panic(err)
 	}
@@ -1104,7 +1103,7 @@ func (j *jsiiProxy_AppSignonPolicyRule)SetInactivityPeriod(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppSignonPolicyRule)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_AppSignonPolicyRule) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1115,7 +1114,7 @@ func (j *jsiiProxy_AppSignonPolicyRule)SetLifecycle(val *cdktf.TerraformResource
 	)
 }
 
-func (j *jsiiProxy_AppSignonPolicyRule)SetName(val *string) {
+func (j *jsiiProxy_AppSignonPolicyRule) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1126,7 +1125,7 @@ func (j *jsiiProxy_AppSignonPolicyRule)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppSignonPolicyRule)SetNetworkConnection(val *string) {
+func (j *jsiiProxy_AppSignonPolicyRule) SetNetworkConnection(val *string) {
 	if err := j.validateSetNetworkConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1137,7 +1136,7 @@ func (j *jsiiProxy_AppSignonPolicyRule)SetNetworkConnection(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppSignonPolicyRule)SetNetworkExcludes(val *[]*string) {
+func (j *jsiiProxy_AppSignonPolicyRule) SetNetworkExcludes(val *[]*string) {
 	if err := j.validateSetNetworkExcludesParameters(val); err != nil {
 		panic(err)
 	}
@@ -1148,7 +1147,7 @@ func (j *jsiiProxy_AppSignonPolicyRule)SetNetworkExcludes(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AppSignonPolicyRule)SetNetworkIncludes(val *[]*string) {
+func (j *jsiiProxy_AppSignonPolicyRule) SetNetworkIncludes(val *[]*string) {
 	if err := j.validateSetNetworkIncludesParameters(val); err != nil {
 		panic(err)
 	}
@@ -1159,7 +1158,7 @@ func (j *jsiiProxy_AppSignonPolicyRule)SetNetworkIncludes(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AppSignonPolicyRule)SetPolicyId(val *string) {
+func (j *jsiiProxy_AppSignonPolicyRule) SetPolicyId(val *string) {
 	if err := j.validateSetPolicyIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1170,7 +1169,7 @@ func (j *jsiiProxy_AppSignonPolicyRule)SetPolicyId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppSignonPolicyRule)SetPriority(val *float64) {
+func (j *jsiiProxy_AppSignonPolicyRule) SetPriority(val *float64) {
 	if err := j.validateSetPriorityParameters(val); err != nil {
 		panic(err)
 	}
@@ -1181,7 +1180,7 @@ func (j *jsiiProxy_AppSignonPolicyRule)SetPriority(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_AppSignonPolicyRule)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_AppSignonPolicyRule) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1189,7 +1188,7 @@ func (j *jsiiProxy_AppSignonPolicyRule)SetProvider(val cdktf.TerraformProvider) 
 	)
 }
 
-func (j *jsiiProxy_AppSignonPolicyRule)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_AppSignonPolicyRule) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1200,7 +1199,7 @@ func (j *jsiiProxy_AppSignonPolicyRule)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppSignonPolicyRule)SetReAuthenticationFrequency(val *string) {
+func (j *jsiiProxy_AppSignonPolicyRule) SetReAuthenticationFrequency(val *string) {
 	if err := j.validateSetReAuthenticationFrequencyParameters(val); err != nil {
 		panic(err)
 	}
@@ -1211,7 +1210,7 @@ func (j *jsiiProxy_AppSignonPolicyRule)SetReAuthenticationFrequency(val *string)
 	)
 }
 
-func (j *jsiiProxy_AppSignonPolicyRule)SetRiskScore(val *string) {
+func (j *jsiiProxy_AppSignonPolicyRule) SetRiskScore(val *string) {
 	if err := j.validateSetRiskScoreParameters(val); err != nil {
 		panic(err)
 	}
@@ -1222,7 +1221,7 @@ func (j *jsiiProxy_AppSignonPolicyRule)SetRiskScore(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppSignonPolicyRule)SetStatus(val *string) {
+func (j *jsiiProxy_AppSignonPolicyRule) SetStatus(val *string) {
 	if err := j.validateSetStatusParameters(val); err != nil {
 		panic(err)
 	}
@@ -1233,7 +1232,7 @@ func (j *jsiiProxy_AppSignonPolicyRule)SetStatus(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppSignonPolicyRule)SetType(val *string) {
+func (j *jsiiProxy_AppSignonPolicyRule) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1244,7 +1243,7 @@ func (j *jsiiProxy_AppSignonPolicyRule)SetType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppSignonPolicyRule)SetUsersExcluded(val *[]*string) {
+func (j *jsiiProxy_AppSignonPolicyRule) SetUsersExcluded(val *[]*string) {
 	if err := j.validateSetUsersExcludedParameters(val); err != nil {
 		panic(err)
 	}
@@ -1255,7 +1254,7 @@ func (j *jsiiProxy_AppSignonPolicyRule)SetUsersExcluded(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AppSignonPolicyRule)SetUsersIncluded(val *[]*string) {
+func (j *jsiiProxy_AppSignonPolicyRule) SetUsersIncluded(val *[]*string) {
 	if err := j.validateSetUsersIncludedParameters(val); err != nil {
 		panic(err)
 	}
@@ -1266,7 +1265,7 @@ func (j *jsiiProxy_AppSignonPolicyRule)SetUsersIncluded(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AppSignonPolicyRule)SetUserTypesExcluded(val *[]*string) {
+func (j *jsiiProxy_AppSignonPolicyRule) SetUserTypesExcluded(val *[]*string) {
 	if err := j.validateSetUserTypesExcludedParameters(val); err != nil {
 		panic(err)
 	}
@@ -1277,7 +1276,7 @@ func (j *jsiiProxy_AppSignonPolicyRule)SetUserTypesExcluded(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AppSignonPolicyRule)SetUserTypesIncluded(val *[]*string) {
+func (j *jsiiProxy_AppSignonPolicyRule) SetUserTypesIncluded(val *[]*string) {
 	if err := j.validateSetUserTypesIncludedParameters(val); err != nil {
 		panic(err)
 	}
@@ -1300,7 +1299,7 @@ func AppSignonPolicyRule_GenerateConfigForImport(scope constructs.Construct, imp
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.appSignonPolicyRule.AppSignonPolicyRule",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1324,7 +1323,7 @@ func AppSignonPolicyRule_GenerateConfigForImport(scope constructs.Construct, imp
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func AppSignonPolicyRule_IsConstruct(x interface{}) *bool {
+func AppSignonPolicyRule_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAppSignonPolicyRule_IsConstructParameters(x); err != nil {
@@ -1335,7 +1334,7 @@ func AppSignonPolicyRule_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.appSignonPolicyRule.AppSignonPolicyRule",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1343,7 +1342,7 @@ func AppSignonPolicyRule_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func AppSignonPolicyRule_IsTerraformElement(x interface{}) *bool {
+func AppSignonPolicyRule_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAppSignonPolicyRule_IsTerraformElementParameters(x); err != nil {
@@ -1354,7 +1353,7 @@ func AppSignonPolicyRule_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.appSignonPolicyRule.AppSignonPolicyRule",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1362,7 +1361,7 @@ func AppSignonPolicyRule_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func AppSignonPolicyRule_IsTerraformResource(x interface{}) *bool {
+func AppSignonPolicyRule_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAppSignonPolicyRule_IsTerraformResourceParameters(x); err != nil {
@@ -1373,7 +1372,7 @@ func AppSignonPolicyRule_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.appSignonPolicyRule.AppSignonPolicyRule",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1398,31 +1397,31 @@ func (a *jsiiProxy_AppSignonPolicyRule) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (a *jsiiProxy_AppSignonPolicyRule) AddOverride(path *string, value interface{}) {
+func (a *jsiiProxy_AppSignonPolicyRule) AddOverride(path *string, value any) {
 	if err := a.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (a *jsiiProxy_AppSignonPolicyRule) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AppSignonPolicyRule) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1438,7 +1437,7 @@ func (a *jsiiProxy_AppSignonPolicyRule) GetBooleanAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1454,7 +1453,7 @@ func (a *jsiiProxy_AppSignonPolicyRule) GetBooleanMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1470,7 +1469,7 @@ func (a *jsiiProxy_AppSignonPolicyRule) GetListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1486,7 +1485,7 @@ func (a *jsiiProxy_AppSignonPolicyRule) GetNumberAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1502,7 +1501,7 @@ func (a *jsiiProxy_AppSignonPolicyRule) GetNumberListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1518,7 +1517,7 @@ func (a *jsiiProxy_AppSignonPolicyRule) GetNumberMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1534,7 +1533,7 @@ func (a *jsiiProxy_AppSignonPolicyRule) GetStringAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1550,15 +1549,15 @@ func (a *jsiiProxy_AppSignonPolicyRule) GetStringMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_AppSignonPolicyRule) HasResourceMove() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AppSignonPolicyRule) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1577,7 +1576,7 @@ func (a *jsiiProxy_AppSignonPolicyRule) ImportFrom(id *string, provider cdktf.Te
 	_jsii_.InvokeVoid(
 		a,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1590,7 +1589,7 @@ func (a *jsiiProxy_AppSignonPolicyRule) InterpolationForAttribute(terraformAttri
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1604,18 +1603,18 @@ func (a *jsiiProxy_AppSignonPolicyRule) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (a *jsiiProxy_AppSignonPolicyRule) MoveTo(moveTarget *string, index interface{}) {
+func (a *jsiiProxy_AppSignonPolicyRule) MoveTo(moveTarget *string, index any) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1626,7 +1625,7 @@ func (a *jsiiProxy_AppSignonPolicyRule) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1637,18 +1636,18 @@ func (a *jsiiProxy_AppSignonPolicyRule) OverrideLogicalId(newLogicalId *string) 
 	_jsii_.InvokeVoid(
 		a,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (a *jsiiProxy_AppSignonPolicyRule) PutPlatformInclude(value interface{}) {
+func (a *jsiiProxy_AppSignonPolicyRule) PutPlatformInclude(value any) {
 	if err := a.validatePutPlatformIncludeParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"putPlatformInclude",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1852,8 +1851,8 @@ func (a *jsiiProxy_AppSignonPolicyRule) ResetUserTypesIncluded() {
 	)
 }
 
-func (a *jsiiProxy_AppSignonPolicyRule) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AppSignonPolicyRule) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1865,8 +1864,8 @@ func (a *jsiiProxy_AppSignonPolicyRule) SynthesizeAttributes() *map[string]inter
 	return returns
 }
 
-func (a *jsiiProxy_AppSignonPolicyRule) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AppSignonPolicyRule) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1878,8 +1877,8 @@ func (a *jsiiProxy_AppSignonPolicyRule) SynthesizeHclAttributes() *map[string]in
 	return returns
 }
 
-func (a *jsiiProxy_AppSignonPolicyRule) ToHclTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AppSignonPolicyRule) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1891,8 +1890,8 @@ func (a *jsiiProxy_AppSignonPolicyRule) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_AppSignonPolicyRule) ToMetadata() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AppSignonPolicyRule) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1917,8 +1916,8 @@ func (a *jsiiProxy_AppSignonPolicyRule) ToString() *string {
 	return returns
 }
 
-func (a *jsiiProxy_AppSignonPolicyRule) ToTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AppSignonPolicyRule) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1929,4 +1928,3 @@ func (a *jsiiProxy_AppSignonPolicyRule) ToTerraform() interface{} {
 
 	return returns
 }
-

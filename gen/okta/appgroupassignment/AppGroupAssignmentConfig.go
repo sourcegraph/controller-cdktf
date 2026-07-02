@@ -6,9 +6,9 @@ import (
 
 type AppGroupAssignmentConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type AppGroupAssignmentConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// App to associate group with.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_group_assignment#app_id AppGroupAssignment#app_id}
@@ -45,10 +45,9 @@ type AppGroupAssignmentConfig struct {
 	// If set to true, the resource will be removed from state but not from the Okta app.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_group_assignment#retain_assignment AppGroupAssignment#retain_assignment}
-	RetainAssignment interface{} `field:"optional" json:"retainAssignment" yaml:"retainAssignment"`
+	RetainAssignment any `field:"optional" json:"retainAssignment" yaml:"retainAssignment"`
 	// timeouts block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_group_assignment#timeouts AppGroupAssignment#timeouts}
 	Timeouts *AppGroupAssignmentTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

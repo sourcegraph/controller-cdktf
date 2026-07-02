@@ -6,9 +6,9 @@ import (
 
 type UserConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type UserConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// User primary email address.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/user#email User#email}
@@ -78,7 +78,7 @@ type UserConfig struct {
 	// This property will be used when user is being created and works only when `password` field is set. Default: `false`
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/user#expire_password_on_create User#expire_password_on_create}
-	ExpirePasswordOnCreate interface{} `field:"optional" json:"expirePasswordOnCreate" yaml:"expirePasswordOnCreate"`
+	ExpirePasswordOnCreate any `field:"optional" json:"expirePasswordOnCreate" yaml:"expirePasswordOnCreate"`
 	// User honorific prefix.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/user#honorific_prefix User#honorific_prefix}
@@ -171,7 +171,7 @@ type UserConfig struct {
 	// Do not populate user roles information (prevents additional API call).
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/user#skip_roles User#skip_roles}
-	SkipRoles interface{} `field:"optional" json:"skipRoles" yaml:"skipRoles"`
+	SkipRoles any `field:"optional" json:"skipRoles" yaml:"skipRoles"`
 	// User state or region.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/user#state User#state}
@@ -201,4 +201,3 @@ type UserConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/user#zip_code User#zip_code}
 	ZipCode *string `field:"optional" json:"zipCode" yaml:"zipCode"`
 }
-

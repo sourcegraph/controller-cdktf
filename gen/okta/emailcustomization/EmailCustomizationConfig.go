@@ -6,9 +6,9 @@ import (
 
 type EmailCustomizationConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type EmailCustomizationConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Brand ID.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/email_customization#brand_id EmailCustomization#brand_id}
@@ -40,7 +40,7 @@ type EmailCustomizationConfig struct {
 	// Whether the customization is the default.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/email_customization#is_default EmailCustomization#is_default}
-	IsDefault interface{} `field:"optional" json:"isDefault" yaml:"isDefault"`
+	IsDefault any `field:"optional" json:"isDefault" yaml:"isDefault"`
 	// The language supported by the customization - Example values from [supported languages](https://developer.okta.com/docs/reference/api/brands/#supported-languages).
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/email_customization#language EmailCustomization#language}
@@ -50,4 +50,3 @@ type EmailCustomizationConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/email_customization#subject EmailCustomization#subject}
 	Subject *string `field:"optional" json:"subject" yaml:"subject"`
 }
-

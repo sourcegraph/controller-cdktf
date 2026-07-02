@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.templateSms.TemplateSms",
-		reflect.TypeOf((*TemplateSms)(nil)).Elem(),
+		reflect.TypeFor[TemplateSms](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -64,7 +64,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TemplateSms{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -72,15 +72,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.templateSms.TemplateSmsConfig",
-		reflect.TypeOf((*TemplateSmsConfig)(nil)).Elem(),
+		reflect.TypeFor[TemplateSmsConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.templateSms.TemplateSmsTranslations",
-		reflect.TypeOf((*TemplateSmsTranslations)(nil)).Elem(),
+		reflect.TypeFor[TemplateSmsTranslations](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.templateSms.TemplateSmsTranslationsList",
-		reflect.TypeOf((*TemplateSmsTranslationsList)(nil)).Elem(),
+		reflect.TypeFor[TemplateSmsTranslationsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -94,7 +94,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TemplateSmsTranslationsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -102,7 +102,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.templateSms.TemplateSmsTranslationsOutputReference",
-		reflect.TypeOf((*TemplateSmsTranslationsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TemplateSmsTranslationsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -130,7 +130,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TemplateSmsTranslationsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

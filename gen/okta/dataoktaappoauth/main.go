@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-okta.dataOktaAppOauth.DataOktaAppOauth",
-		reflect.TypeOf((*DataOktaAppOauth)(nil)).Elem(),
+		reflect.TypeFor[DataOktaAppOauth](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "activeOnly", GoGetter: "ActiveOnly"},
 			_jsii_.MemberProperty{JsiiProperty: "activeOnlyInput", GoGetter: "ActiveOnlyInput"},
@@ -83,7 +83,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "wildcardRedirect", GoGetter: "WildcardRedirect"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataOktaAppOauth{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -91,6 +91,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-okta.dataOktaAppOauth.DataOktaAppOauthConfig",
-		reflect.TypeOf((*DataOktaAppOauthConfig)(nil)).Elem(),
+		reflect.TypeFor[DataOktaAppOauthConfig](),
 	)
 }

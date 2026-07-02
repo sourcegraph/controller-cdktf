@@ -19,7 +19,7 @@ func (e *jsiiProxy_EventHook) validateAddMoveTargetParameters(moveTarget *string
 	return nil
 }
 
-func (e *jsiiProxy_EventHook) validateAddOverrideParameters(path *string, value interface{}) error {
+func (e *jsiiProxy_EventHook) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (e *jsiiProxy_EventHook) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EventHook) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (e *jsiiProxy_EventHook) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (e *jsiiProxy_EventHook) validateOverrideLogicalIdParameters(newLogicalId *
 	return nil
 }
 
-func (e *jsiiProxy_EventHook) validatePutHeadersParameters(value interface{}) error {
+func (e *jsiiProxy_EventHook) validatePutHeadersParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -251,7 +251,7 @@ func validateEventHook_GenerateConfigForImportParameters(scope constructs.Constr
 	return nil
 }
 
-func validateEventHook_IsConstructParameters(x interface{}) error {
+func validateEventHook_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -259,7 +259,7 @@ func validateEventHook_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateEventHook_IsTerraformElementParameters(x interface{}) error {
+func validateEventHook_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -267,7 +267,7 @@ func validateEventHook_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateEventHook_IsTerraformResourceParameters(x interface{}) error {
+func validateEventHook_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -291,7 +291,7 @@ func (j *jsiiProxy_EventHook) validateSetChannelParameters(val *map[string]*stri
 	return nil
 }
 
-func (j *jsiiProxy_EventHook) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_EventHook) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -324,7 +324,7 @@ func (j *jsiiProxy_EventHook) validateSetConnectionParameters(val interface{}) e
 	return nil
 }
 
-func (j *jsiiProxy_EventHook) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_EventHook) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -413,7 +413,7 @@ func (j *jsiiProxy_EventHook) validateSetNameParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_EventHook) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_EventHook) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -485,4 +485,3 @@ func validateNewEventHookParameters(scope constructs.Construct, id *string, conf
 
 	return nil
 }
-

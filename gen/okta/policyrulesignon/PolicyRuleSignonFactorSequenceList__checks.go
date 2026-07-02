@@ -34,7 +34,7 @@ func (p *jsiiProxy_PolicyRuleSignonFactorSequenceList) validateResolveParameters
 	return nil
 }
 
-func (j *jsiiProxy_PolicyRuleSignonFactorSequenceList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PolicyRuleSignonFactorSequenceList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewPolicyRuleSignonFactorSequenceListParameters(terraformResource c
 
 	return nil
 }
-

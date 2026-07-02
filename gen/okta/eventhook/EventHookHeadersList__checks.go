@@ -34,7 +34,7 @@ func (e *jsiiProxy_EventHookHeadersList) validateResolveParameters(_context cdkt
 	return nil
 }
 
-func (j *jsiiProxy_EventHookHeadersList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EventHookHeadersList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewEventHookHeadersListParameters(terraformResource cdktf.IInterpol
 
 	return nil
 }
-

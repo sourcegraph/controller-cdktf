@@ -18,15 +18,15 @@ type TrustedServer interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -51,15 +51,15 @@ type TrustedServer interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Trusted() *[]*string
@@ -69,9 +69,9 @@ type TrustedServer interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -89,7 +89,7 @@ type TrustedServer interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -101,7 +101,7 @@ type TrustedServer interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -111,17 +111,17 @@ type TrustedServer interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for TrustedServer
@@ -159,8 +159,8 @@ func (j *jsiiProxy_TrustedServer) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_TrustedServer) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TrustedServer) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -169,8 +169,8 @@ func (j *jsiiProxy_TrustedServer) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_TrustedServer) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_TrustedServer) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -179,8 +179,8 @@ func (j *jsiiProxy_TrustedServer) ConstructNodeMetadata() *map[string]interface{
 	return returns
 }
 
-func (j *jsiiProxy_TrustedServer) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TrustedServer) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -269,8 +269,8 @@ func (j *jsiiProxy_TrustedServer) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_TrustedServer) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_TrustedServer) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -279,8 +279,8 @@ func (j *jsiiProxy_TrustedServer) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_TrustedServer) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TrustedServer) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -299,8 +299,8 @@ func (j *jsiiProxy_TrustedServer) TerraformGeneratorMetadata() *cdktf.TerraformP
 	return returns
 }
 
-func (j *jsiiProxy_TrustedServer) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_TrustedServer) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -339,7 +339,6 @@ func (j *jsiiProxy_TrustedServer) TrustedInput() *[]*string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/trusted_server okta_trusted_server} Resource.
 func NewTrustedServer(scope constructs.Construct, id *string, config *TrustedServerConfig) TrustedServer {
 	_init_.Initialize()
@@ -351,7 +350,7 @@ func NewTrustedServer(scope constructs.Construct, id *string, config *TrustedSer
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.trustedServer.TrustedServer",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -364,12 +363,12 @@ func NewTrustedServer_Override(t TrustedServer, scope constructs.Construct, id *
 
 	_jsii_.Create(
 		"@cdktf/provider-okta.trustedServer.TrustedServer",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		t,
 	)
 }
 
-func (j *jsiiProxy_TrustedServer)SetAuthServerId(val *string) {
+func (j *jsiiProxy_TrustedServer) SetAuthServerId(val *string) {
 	if err := j.validateSetAuthServerIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -380,7 +379,7 @@ func (j *jsiiProxy_TrustedServer)SetAuthServerId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TrustedServer)SetConnection(val interface{}) {
+func (j *jsiiProxy_TrustedServer) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -391,7 +390,7 @@ func (j *jsiiProxy_TrustedServer)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_TrustedServer)SetCount(val interface{}) {
+func (j *jsiiProxy_TrustedServer) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -402,7 +401,7 @@ func (j *jsiiProxy_TrustedServer)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_TrustedServer)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_TrustedServer) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -410,7 +409,7 @@ func (j *jsiiProxy_TrustedServer)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_TrustedServer)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_TrustedServer) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -418,7 +417,7 @@ func (j *jsiiProxy_TrustedServer)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_TrustedServer)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_TrustedServer) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -429,7 +428,7 @@ func (j *jsiiProxy_TrustedServer)SetLifecycle(val *cdktf.TerraformResourceLifecy
 	)
 }
 
-func (j *jsiiProxy_TrustedServer)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_TrustedServer) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -437,7 +436,7 @@ func (j *jsiiProxy_TrustedServer)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_TrustedServer)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_TrustedServer) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -448,7 +447,7 @@ func (j *jsiiProxy_TrustedServer)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_TrustedServer)SetTrusted(val *[]*string) {
+func (j *jsiiProxy_TrustedServer) SetTrusted(val *[]*string) {
 	if err := j.validateSetTrustedParameters(val); err != nil {
 		panic(err)
 	}
@@ -471,7 +470,7 @@ func TrustedServer_GenerateConfigForImport(scope constructs.Construct, importToI
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.trustedServer.TrustedServer",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -495,7 +494,7 @@ func TrustedServer_GenerateConfigForImport(scope constructs.Construct, importToI
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func TrustedServer_IsConstruct(x interface{}) *bool {
+func TrustedServer_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateTrustedServer_IsConstructParameters(x); err != nil {
@@ -506,7 +505,7 @@ func TrustedServer_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.trustedServer.TrustedServer",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -514,7 +513,7 @@ func TrustedServer_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func TrustedServer_IsTerraformElement(x interface{}) *bool {
+func TrustedServer_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateTrustedServer_IsTerraformElementParameters(x); err != nil {
@@ -525,7 +524,7 @@ func TrustedServer_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.trustedServer.TrustedServer",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -533,7 +532,7 @@ func TrustedServer_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func TrustedServer_IsTerraformResource(x interface{}) *bool {
+func TrustedServer_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateTrustedServer_IsTerraformResourceParameters(x); err != nil {
@@ -544,7 +543,7 @@ func TrustedServer_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-okta.trustedServer.TrustedServer",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -569,31 +568,31 @@ func (t *jsiiProxy_TrustedServer) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		t,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (t *jsiiProxy_TrustedServer) AddOverride(path *string, value interface{}) {
+func (t *jsiiProxy_TrustedServer) AddOverride(path *string, value any) {
 	if err := t.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		t,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (t *jsiiProxy_TrustedServer) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (t *jsiiProxy_TrustedServer) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := t.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		t,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -609,7 +608,7 @@ func (t *jsiiProxy_TrustedServer) GetBooleanAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		t,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -625,7 +624,7 @@ func (t *jsiiProxy_TrustedServer) GetBooleanMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		t,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -641,7 +640,7 @@ func (t *jsiiProxy_TrustedServer) GetListAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		t,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -657,7 +656,7 @@ func (t *jsiiProxy_TrustedServer) GetNumberAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		t,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -673,7 +672,7 @@ func (t *jsiiProxy_TrustedServer) GetNumberListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		t,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -689,7 +688,7 @@ func (t *jsiiProxy_TrustedServer) GetNumberMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		t,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -705,7 +704,7 @@ func (t *jsiiProxy_TrustedServer) GetStringAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		t,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -721,15 +720,15 @@ func (t *jsiiProxy_TrustedServer) GetStringMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		t,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (t *jsiiProxy_TrustedServer) HasResourceMove() interface{} {
-	var returns interface{}
+func (t *jsiiProxy_TrustedServer) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		t,
@@ -748,7 +747,7 @@ func (t *jsiiProxy_TrustedServer) ImportFrom(id *string, provider cdktf.Terrafor
 	_jsii_.InvokeVoid(
 		t,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -761,7 +760,7 @@ func (t *jsiiProxy_TrustedServer) InterpolationForAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		t,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -775,18 +774,18 @@ func (t *jsiiProxy_TrustedServer) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		t,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (t *jsiiProxy_TrustedServer) MoveTo(moveTarget *string, index interface{}) {
+func (t *jsiiProxy_TrustedServer) MoveTo(moveTarget *string, index any) {
 	if err := t.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		t,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -797,7 +796,7 @@ func (t *jsiiProxy_TrustedServer) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		t,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -808,7 +807,7 @@ func (t *jsiiProxy_TrustedServer) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		t,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -820,8 +819,8 @@ func (t *jsiiProxy_TrustedServer) ResetOverrideLogicalId() {
 	)
 }
 
-func (t *jsiiProxy_TrustedServer) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (t *jsiiProxy_TrustedServer) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		t,
@@ -833,8 +832,8 @@ func (t *jsiiProxy_TrustedServer) SynthesizeAttributes() *map[string]interface{}
 	return returns
 }
 
-func (t *jsiiProxy_TrustedServer) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (t *jsiiProxy_TrustedServer) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		t,
@@ -846,8 +845,8 @@ func (t *jsiiProxy_TrustedServer) SynthesizeHclAttributes() *map[string]interfac
 	return returns
 }
 
-func (t *jsiiProxy_TrustedServer) ToHclTerraform() interface{} {
-	var returns interface{}
+func (t *jsiiProxy_TrustedServer) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		t,
@@ -859,8 +858,8 @@ func (t *jsiiProxy_TrustedServer) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (t *jsiiProxy_TrustedServer) ToMetadata() interface{} {
-	var returns interface{}
+func (t *jsiiProxy_TrustedServer) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		t,
@@ -885,8 +884,8 @@ func (t *jsiiProxy_TrustedServer) ToString() *string {
 	return returns
 }
 
-func (t *jsiiProxy_TrustedServer) ToTerraform() interface{} {
-	var returns interface{}
+func (t *jsiiProxy_TrustedServer) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		t,
@@ -897,4 +896,3 @@ func (t *jsiiProxy_TrustedServer) ToTerraform() interface{} {
 
 	return returns
 }
-
